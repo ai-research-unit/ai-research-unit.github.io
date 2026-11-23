@@ -100,7 +100,7 @@ $$</p>
 \varphi(q+jq') = (q+q',\, q-q') = (Q_+, Q_-),
 $$</p>
 <p>is an isomorphism of $\mathbb{R}$-algebras onto the product ring with componentwise operations. Its inverse sends $(u,v)$ to $\tfrac{u+v}{2} + j\,\tfrac{u-v}{2}$.</p>
-<p><strong>Proof.</strong> The map is $\mathbb{R}$-linear and bijective because its matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$, of determinant $-2 \neq 0$. It is multiplicative because $(q+q')(c+c') = (qc+q'c') + (qc'+q'c)$ is the first coordinate of the product and $(q-q')(c-c') = (qc+q'c') - (qc'+q'c)$ its second; so $\varphi(QB) = \varphi(Q)\varphi(B)$ with the componentwise product, and $\varphi(1) = (1,1)$.</p>
+<p><strong>Proof.</strong> The map is $\mathbb{R}$-linear and bijective because its matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&amp;1\\1&amp;-1\end{smallmatrix}\right)$, of determinant $-2 \neq 0$. It is multiplicative because $(q+q')(c+c') = (qc+q'c') + (qc'+q'c)$ is the first coordinate of the product and $(q-q')(c-c') = (qc+q'c') - (qc'+q'c)$ its second; so $\varphi(QB) = \varphi(Q)\varphi(B)$ with the componentwise product, and $\varphi(1) = (1,1)$.</p>
 <p>The isomorphism is the ring property behind every specificity below. It transports the two field copies to the two <strong>idempotent lines</strong> $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, where</p>
 <p>$$
 \Pi_+ = \varphi^{-1}(1,0) = \tfrac12(1+j), \qquad \Pi_- = \varphi^{-1}(0,1) = \tfrac12(1-j),
@@ -147,24 +147,24 @@ $$</p>
 <p>The regular representation of $\mathbb{C}_{\mathrm{spl}}$ is faithful on the underlying real space of dimension two and lands in the $2\times2$ real matrices,</p>
 <p>$$
 \mathsf{M}_2 : \mathbb{C}_{\mathrm{spl}} \longrightarrow M_2(\mathbb{R}), \qquad
-\mathsf{M}_2(q+jq') = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix},
+\mathsf{M}_2(q+jq') = \begin{pmatrix} q &amp; q' \\ q' &amp; q \end{pmatrix},
 $$</p>
 <p>the matrix of multiplication by $Q = q+jq'$ in the basis $\{1,j\}$: the first column is the coordinates of $Q \cdot 1 = Q$ and the second those of $Q \cdot j = q'+jq$. These are the matrices of <strong>hyperbolic type</strong>, symmetric with equal diagonal entries, and their determinant and trace are</p>
 <p>$$
-\det\mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
+\det\mathsf{M}_2(Q) = q^2 - q'{}^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
 $$</p>
 <p>the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>.</p>
 <p><strong>Proposition (degeneracy).</strong> The image $\mathsf{M}_2(\mathbb{C}_{\mathrm{spl}})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:</p>
 <p>$$
-\boxed{\;\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ & 0 \\ 0 & Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q'\;}.
+\boxed{\;\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ &amp; 0 \\ 0 &amp; Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q'\;}.
 $$</p>
-<p><strong>Proof.</strong> The image is commutative because $\mathbb{C}_{\mathrm{spl}}$ is, and an $\mathbb{R}$-linear map $\mathsf{M}_2(B)$ commuting with every $\mathsf{M}_2(Q)$ commutes in particular with $\mathsf{M}_2(j) = \left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ and with $\mathsf{M}_2(1) = I$, which forces $B$ to have the same shape, so the commutant is the image. The conjugating basis is the idempotent basis $\{\Pi_+,\Pi_-\}$: in it the matrices are diagonal with entries $Q_\pm$, since $Q\Pi_+ = Q_+\Pi_+$ and $Q\Pi_- = Q_-\Pi_-$.</p>
+<p><strong>Proof.</strong> The image is commutative because $\mathbb{C}_{\mathrm{spl}}$ is, and an $\mathbb{R}$-linear map $\mathsf{M}_2(B)$ commuting with every $\mathsf{M}_2(Q)$ commutes in particular with $\mathsf{M}_2(j) = \left(\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}\right)$ and with $\mathsf{M}_2(1) = I$, which forces $B$ to have the same shape, so the commutant is the image. The conjugating basis is the idempotent basis $\{\Pi_+,\Pi_-\}$: in it the matrices are diagonal with entries $Q_\pm$, since $Q\Pi_+ = Q_+\Pi_+$ and $Q\Pi_- = Q_-\Pi_-$.</p>
 <p><strong>Corollary.</strong> The matrix model $\mathsf{M}_2$ is the algebra $\mathbb{R}\oplus\mathbb{R}$ in disguise: in the idempotent basis it is the diagonal subalgebra of $M_2(\mathbb{R})$, its centre is itself, and the image carries no idempotent other than the four diagonal projections and no nilpotent other than $0$.</p>
 <p>The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{C}_{\mathrm{spl}}$, the left regular representation on $\mathbb{C}_{\mathrm{spl}}\oplus\mathbb{C}_{\mathrm{spl}}$, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are <em>Comparison of Element Representations and Matrix Models</em>, and the element reading of the regular matrix is <em>Split-Complex Regular Element Representation</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$ is the two-dimensional commutative associative unital $\mathbb{R}$-algebra generated by an element of square $+1$. Its defining polynomial splits, and by the Chinese remainder theorem it is the product of two copies of its base, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, the isomorphism being $Q\mapsto(Q_+,Q_-)$ with $Q_\pm = q\pm q'$.</p>
 <p>Four properties single it out. It is <strong>reduced</strong>: it has no nonzero nilpotent, and $0$ is its only square-zero element. It is <strong>not a field</strong>: its nonzero non-invertibles are its zero divisors, the null cone $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$. It has exactly <strong>two nontrivial idempotents</strong> $\Pi_\pm$, central, orthogonal and complete, which a field cannot have. And it is <strong>semisimple and not simple</strong>: its only two-sided ideals are $\{0\}$, the two lines $\mathbb{R}\Pi_\pm$ and $\mathbb{C}_{\mathrm{spl}}$, and its radical vanishes.</p>
-<p>The consequences for the classes of element are that the positively defined classes grow and the negatively defined ones do not: the zero divisors are present and the idempotents are non-trivial because of the splitting, while the nilpotents and the square-zero elements of the plain product remain the single element $0$, and the roots of $+1$ gain the non-scalar pair $\pm j$ while the roots of $-1$ vanish. The regular representation degenerates to the commutative subalgebra $\left\{\begin{pmatrix}q&q'\\q'&q\end{pmatrix}\right\}$ of $M_2(\mathbb{R})$, isomorphic to the diagonal subalgebra, with determinant $q^2-q'^2$ and trace $2q$: a commutative algebra equal to its own commutant, and the $4\times4$ model adds nothing. Against the complex field, a field and simple with no idempotent but the trivial ones, the split-complex algebra is the product-of-fields case, the minimal one in which the zero divisors and the non-trivial idempotents of the family appear.</p>
+<p>The consequences for the classes of element are that the positively defined classes grow and the negatively defined ones do not: the zero divisors are present and the idempotents are non-trivial because of the splitting, while the nilpotents and the square-zero elements of the plain product remain the single element $0$, and the roots of $+1$ gain the non-scalar pair $\pm j$ while the roots of $-1$ vanish. The regular representation degenerates to the commutative subalgebra $\left\{\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix}\right\}$ of $M_2(\mathbb{R})$, isomorphic to the diagonal subalgebra, with determinant $q^2-q'{}^2$ and trace $2q$: a commutative algebra equal to its own commutant, and the $4\times4$ model adds nothing. Against the complex field, a field and simple with no idempotent but the trivial ones, the split-complex algebra is the product-of-fields case, the minimal one in which the zero divisors and the non-trivial idempotents of the family appear.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -207,7 +207,7 @@ $$</p>
 <td>Null cone, the set of nonzero non-invertibles</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$</td>
+<td>$\mathsf{M}_2(Q) = \begin{pmatrix} q &amp; q' \\ q' &amp; q \end{pmatrix}$</td>
 <td>Regular matrix of $Q$, of determinant $\langle Q\rangle_{*}$ and trace $2q$</td>
 </tr>
 <tr>

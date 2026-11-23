@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statement of Problem on Vortical Inviscid Flow of Barotropic and Incompressible Fluids — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Statement of problem on vortical inviscid flow of barotropic and incompressible fluids -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="statement-of-problem-on-vortical-inviscid-flow-of-barotropic-and-incompressible-fluids"><strong>Statement of Problem on Vortical Inviscid Flow of Barotropic and Incompressible Fluids</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0403010 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 March 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Statement of problem on vortical inviscid flow of barotropic and incompressible fluids - 0403010-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Statement of problem on vortical inviscid flow of barotropic and incompressible fluids - 0403010.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Statement of problem on vortical inviscid flow of barotropic and incompressible fluids - 0403010.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what data determine a unique solution of the ideal-fluid equations and finds the answer unwelcome. After the equations are integrated, the flow's information sits in the dynamic equations as indefinite functions, while the initial and boundary conditions carry the labelling of fluid particles. For a stationary flow of an incompressible fluid the vorticity must be prescribed on every streamline; boundary velocity does not fix it; and on closed streamlines no boundary condition can reach it at all. Hence different stationary vortical flows occur under identical boundary conditions, and this is not a pathology but the general case.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="where-the-information-sits">Where the information sits</h3>
+<p>"After integrating hydrodynamic equations, all information on the fluid flow is concentrated in dynamic equations in the form of indefinite functions, whereas the initial and boundary conditions contain information on the fluid particle labeling." The two are different kinds of information, which is why counting conditions does not count.</p>
+<h3 id="the-result-for-stationary-flow">The result for stationary flow</h3>
+<p>"for determination of the stationary flow of the incompressible fluid the vorticity on any stream line must be given." The negative statement is the useful one: "Giving the velocity on the boundary, one does not determine the vorticity, in general."</p>
+<p>And the case that settles it: "If there are closed stream lines, the vorticity cannot be given on them via boundary conditions. This circumstance explains existence of different stationary vortical flows under the same boundary conditions."</p>
+<h3 id="the-general-form-of-the-difficulty">The general form of the difficulty</h3>
+<p>"Stationary boundary conditions do not destine a unique stationary flow, even if they determine vorticity on any stream line crossing the boundary of the considered flow region." And a remark worth keeping: "the statement of the flow problem is more complicated for stationary flows, than for nonstationary ones, although dynamic equations for nonstationary flows are more complicated."</p>
+<p>The suggested way out: "There is a hope that the description of stationary flows of the ideal fluid may appear to be more effective in Lagrangian coordinates."</p>
+<h3 id="the-formalism">The formalism</h3>
+<p>Streamlines are labelled by two Clebsch potentials, and with $v=\nabla\phi+g^{\alpha}(\xi)\nabla\xi^{\alpha}$ the velocity splits into a potential part and a part carried by the labels. Setting $\xi^{1}_{,0}=-1$ gives $v=(\nabla\xi^{2}\times\nabla\xi^{3})$ together with the normalisation of the triple product to one, so the velocity field is fixed by the labelling functions alone and the remaining freedom is exactly the freedom in choosing them.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-boundary-data-cannot-reach-a-closed-streamline">1. Boundary data cannot reach a closed streamline</h3>
+<p><strong>The idea.</strong> A <strong>result</strong> with a topological character: information propagates along streamlines, so a streamline that closes on itself receives nothing from the boundary; the vorticity on it is a constant of the motion that must be supplied independently. Non-uniqueness is generic wherever closed streamlines exist.</p>
+<p><strong>What it would add.</strong> The corpus's non-uniqueness article lists three choices that leave the spin-half fluid underdetermined — density normalisation, current split, spin transport — and treats each as a free parametrisation. This is a fourth kind of freedom with a different character: not a choice of convention but a datum that cannot be measured at the edge. The distinction between free because conventional and free because unreachable is one the article does not draw, and it changes what a reader should expect a measurement to fix.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> Real fluids are viscous, and viscosity smooths the vorticity that the ideal case leaves free; the non-uniqueness is a property of the idealisation. The paper treats inviscid flow only and does not argue that the freedom survives a small viscosity.</p>
+<h3 id="2-two-kinds-of-information-in-a-flow-problem">2. Two kinds of information in a flow problem</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: the dynamic equations, once integrated, carry the flow's physics as indefinite functions, while boundary and initial conditions carry the particle labelling. A well-posed problem needs both, and they are not interchangeable.</p>
+<p><strong>What it would add.</strong> The corpus's fluid articles pass from a field equation to a fluid by choosing a density and a velocity, and they never separate what is dynamics from what is labelling. Stating the split would let the corpus ask of each of its fluids which parts are fixed by the equation and which are bookkeeping — the same question the non-uniqueness article raises, but with a reason for the answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is made for the ideal fluid in a Lagrangian description, and it is not obvious what plays the role of labelling in a quantum fluid, where particles are not individually labelled. The analogy may not survive the translation.</p>
+<h3 id="3-stationary-problems-are-worse-posed-than-non-stationary-ones">3. Stationary problems are worse posed than non-stationary ones</h3>
+<p><strong>The idea.</strong> A <strong>counterintuitive claim</strong>: the elliptic stationary problem is harder to pose than the hyperbolic non-stationary one, even though its equations are simpler, because the stationary case loses the initial data that would otherwise pin the vorticity.</p>
+<p><strong>What it would add.</strong> The corpus's own boundary-value work — the hydrogen atom, the confined modes — is stationary throughout, and the corpus treats stationarity as the simplifying assumption. This says stationarity is where the underdetermination lives. That is a caution the corpus's eigenvalue articles do not carry, and it costs a sentence to state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.md</code>.</p>
+<p><strong>What stands in the way.</strong> In the quantum case the eigenvalue condition supplies what the boundary condition does not, so the analogy to a classical stationary flow is loose. The claim is about Euler flows with vorticity, and the transcription to an eigenvalue problem is not made.</p>
+<p>The rank: the closed-streamline obstruction first, because it is sharp and transferable; the two kinds of information second, because the corpus can use it; the stationary/non-stationary inversion last, because the analogy is loose.</p>
+<p>The remaining items in one line each: the Clebsch decomposition $v=\nabla\phi+g^{\alpha}(\xi)\nabla\xi^{\alpha}$, which is the tool the companion paper 0303065 turns into a generalised stream function; the observation that the dynamic equations contain the labelling as arbitrary functions of the labels, which is why the flow is not determined by them; and the reference to the 1857 Clebsch paper, which places the calculation in a line of work on vortical flow that predates any of the quantum material.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

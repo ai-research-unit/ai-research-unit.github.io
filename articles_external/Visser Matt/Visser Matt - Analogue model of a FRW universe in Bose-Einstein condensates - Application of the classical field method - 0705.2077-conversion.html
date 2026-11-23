@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue model of a FRW universe in Bose–Einstein condensates: application of the classical field method — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model of a FRW universe in Bose-Einstein condensates - Application of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-model-of-a-frw-universe-in-boseeinstein-condensates-application-of-the-classical-field-method"><strong>Analogue model of a FRW universe in Bose–Einstein condensates: application of the classical field method</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0705.2077v1 [cond-mat.other]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Piyush Jain, Silke Weinfurtner, Matt Visser, C. W. Gardiner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 May 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; Phys. Rev. A</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue model of a FRW universe in Bose-Einstein condensates - Application of the classical field method - 0705.2077-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model of a FRW universe in Bose-Einstein condensates - Application of the classical field method - 0705.2077.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model of a FRW universe in Bose-Einstein condensates - Application of the classical field method - 0705.2077.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Simulates cosmological particle creation in a two-dimensional homogeneous Bose–Einstein condensate whose scattering length is made time-dependent — the analogue of an expanding FRW universe. The method is the truncated Wigner approximation, a classical-field technique that samples the quantum state with stochastic initial conditions and evolves each sample by the Gross–Pitaevskii equation. Three expansion histories are studied: de Sitter, a smooth tanh interpolation, and a cyclic (oscillating) universe. For the smooth expansion the numerical quasiparticle spectrum matches the Bogoliubov prediction in the long-wavelength limit and yields a thermal spectrum with temperature $k_BT=1/(4\pi t_s)$, matching the standard cosmological result. Beyond the acoustic approximation the paper computes the sudden limit exactly and shows that a cyclic universe produces particles by parametric resonance alone, at $\omega(k)=\Omega/2$, with no net change of effective spacetime.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose">The purpose</h3>
+<p>"Analogue models of gravity have been motivated by the possibility of investigating phenomena not readily accessible in their cosmological counterparts. In this paper, we investigate the analogue of cosmological particle creation in a Friedmann–Robertson–Walker universe by numerically simulating a Bose–Einstein condensate with a time-dependent scattering length."</p>
+<h3 id="the-method">The method</h3>
+<p>The truncated Wigner approximation, "based on the Wigner representation of the density matrix", in which "a multimode quantum field is approximated by the trajectories of classical variables in phase space." Each trajectory is a Gross–Pitaevskii evolution; observables are averages over the ensemble.</p>
+<h3 id="the-main-positive-result">The main positive result</h3>
+<p>"for various forms of the scaling function the particle production is consistent with the underlying theory in the long wavelength limit." And quantitatively: "the particle production approaches the usual cosmological result of a thermal spectrum for a sufficiently large expansion that proceeds sufficiently slowly", with</p>
+<p>$$N_k\to\frac{1}{4\pi t_s\,\omega_k(0)},\qquad k_BT=\frac{1}{4\pi t_s}, \qquad (paper\ 122\text{–}124)$$</p>
+<p>recovered from the low-$k$ limit of the Bose–Einstein distribution.</p>
+<h3 id="the-trends">The trends</h3>
+<p>"$N_k$ is enhanced for faster expansions (small $t_s$) and larger expansions (large $X$). In the limit of a very fast expansion, the results approach the sudden result ... since the field does not evolve for a sufficiently fast change in the nonlinearity. Quasiparticle production is always suppressed below the sudden prediction." And "$N_k$ is larger for small momenta, since each mode is strongly coupled to the effective spacetime in this case. Alternatively stated, the field equation becomes adiabatic for large momenta, so that these modes are not strongly excited."</p>
+<h3 id="the-acoustic-compton-boundary-in-the-numerics">The acoustic-Compton boundary in the numerics</h3>
+<p>The plots mark the crossover explicitly: "the vertical solid red line shows the crossover from phonon to free-particle behaviour (as defined by $k_c/2=\sqrt{C_{NL}}$)". Above it the Bogoliubov analytic curve and the simulation diverge.</p>
+<h3 id="the-cyclic-case">The cyclic case</h3>
+<p>"for the case of a cyclic universe, quasiparticle production is entirely attributed to parametric excitation of the modes as there is no net change to the effective spacetime. In particular, parametric resonance is observed for a mode satisfying $\omega(k)=\Omega/2$ where $\Omega$ is the driving frequency. The parametric resonance peak broadens in momentum space for larger driving amplitude $\Delta$."</p>
+<h3 id="the-non-acoustic-regime-and-its-cost">The non-acoustic regime and its cost</h3>
+<p>"In general the usual calculations become unmanageable in this regime, and so, we present only two expansion scenarios here" — the sudden transition, where an exact solution exists, and the cyclic model, where general statements can be made.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-temperature-that-comes-out-of-an-expansion-rate">1. A temperature that comes out of an expansion rate</h3>
+<p><strong>The idea.</strong> $k_BT=1/(4\pi t_s)$: the temperature of the produced particles is set by the timescale of the expansion, with no other parameter. Slow expansion gives a thermal spectrum; fast expansion undershoots it.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> describes an FLRW metric with a missing source. This paper supplies the missing dynamical content for one observable: particle production with a computable temperature, verified numerically. That is a concrete, checkable prediction of the kind the corpus's cosmology lacks, and it does not depend on the corpus's framework — which makes it a benchmark.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation is for a two-dimensional condensate with a time-dependent scattering length. Two dimensions matters for the exponent, so the formula is not directly transplantable.</p>
+<h3 id="2-the-same-phenomenon-from-two-different-causes">2. The same phenomenon from two different causes</h3>
+<p><strong>The idea.</strong> A sudden change of parameters produces particles by projection into a new basis. A cyclic change produces particles by parametric resonance with no net change of geometry. Observationally similar spectra, entirely different mechanisms.</p>
+<p><strong>What it would add.</strong> A caution the corpus needs. <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats particle production as evidence of geometry. This paper shows two mechanisms giving similar outcomes, one of which involves no geometry change at all. Any inference from observed quanta to cosmological history has to exclude the parametric route first.</p>
+<p><strong>Where it lands.</strong> The same cosmology article, as a stated degeneracy.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a logical point about inference. Ranked second.</p>
+<h3 id="3-simulation-as-a-check-on-an-analytic-approximation">3. Simulation as a check on an analytic approximation</h3>
+<p><strong>The idea.</strong> The Bogoliubov prediction and the truncated-Wigner simulation agree below the acoustic Compton scale and diverge above it, and the divergence is where the effective metric stops being valid — not a numerical error.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> relies on a coarse-graining scale it chooses. This paper shows what happens when the scale is chosen wrongly: the answer is not wrong everywhere, it is wrong above a computable momentum. That is the correct form of a coarse-graining error, and the corpus currently has no worked example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The comparison needs a stochastic classical-field method. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

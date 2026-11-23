@@ -77,7 +77,7 @@
 <h2 id="the-coordinates">The Coordinates</h2>
 <p><strong>Definition.</strong> Write an element in the matrix units,</p>
 <p>$$
-A=\begin{pmatrix}a&b\\c&d\end{pmatrix}=aE_{11}+bE_{12}+cE_{21}+dE_{22},
+A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}=aE_{11}+bE_{12}+cE_{21}+dE_{22},
 \qquad a,b,c,d\in\mathbb{C}.
 $$</p>
 <p>The four numbers $a,b,c,d$ are the <strong>complex coordinates</strong> of $A$; the eight numbers $\operatorname{Re}a,\operatorname{Im}a,\dots,\operatorname{Im}d$ are its <strong>real coordinates</strong>. The element is a linear map $\mathbb{C}^{2}\to\mathbb{C}^{2}$, and it is also a bilinear form $(x,y)\mapsto x^{\mathsf T}Ay$ on $\mathbb{C}^{2}$.</p>
@@ -95,14 +95,14 @@ $$</p>
 <p>$$
 N^{2}=-\det(N)\,I .
 $$</p>
-<p><strong>Proof.</strong> Write $N=\begin{pmatrix}p&q\\ r&-p\end{pmatrix}$, which is the general traceless array. Then $N^{2}=(p^{2}+qr)I$ and $\det N=-p^{2}-qr$, so $N^{2}=-\det(N)I$. Both sides are polynomials in the entries, and every traceless element is of that form.</p>
+<p><strong>Proof.</strong> Write $N=\begin{pmatrix}p&amp;q\\ r&amp;-p\end{pmatrix}$, which is the general traceless array. Then $N^{2}=(p^{2}+qr)I$ and $\det N=-p^{2}-qr$, so $N^{2}=-\det(N)I$. Both sides are polynomials in the entries, and every traceless element is of that form.</p>
 <p><strong>Corollary (the discriminant).</strong> For any $A$,</p>
 <p>$$
 A_{0}^{2}=\tfrac14\bigl((\operatorname{tr}A)^{2}-4\det A\bigr)I ,
 $$</p>
 <p>so the discriminant of the characteristic polynomial is $-4\det(A_{0})$.</p>
 <p><strong>Proof.</strong> By Cayley–Hamilton for $A$, $\det A=\tfrac14\bigl((\operatorname{tr}A)^{2}-\operatorname{tr}(A^{2})\bigr)$; substituting $A=\tfrac12(\operatorname{tr}A)I+A_{0}$ and using $A_{0}^{2}=-\det(A_{0})I$ gives the identity.</p>
-<p><strong>Example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ the scalar part is $\tfrac52I$ and $A_{0}=\begin{pmatrix}-\tfrac32&2\\ 3&\tfrac32\end{pmatrix}$, with $\det A_{0}=-\tfrac{33}{4}$ and $A_{0}^{2}=\tfrac{33}{4}I$. The discriminant of $\chi_A=\lambda^{2}-5\lambda-2$ is $25+8=33$, which is $-4\det A_{0}$.</p>
+<p><strong>Example.</strong> For $A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}$ the scalar part is $\tfrac52I$ and $A_{0}=\begin{pmatrix}-\tfrac32&amp;2\\ 3&amp;\tfrac32\end{pmatrix}$, with $\det A_{0}=-\tfrac{33}{4}$ and $A_{0}^{2}=\tfrac{33}{4}I$. The discriminant of $\chi_A=\lambda^{2}-5\lambda-2$ is $25+8=33$, which is $-4\det A_{0}$.</p>
 <h2 id="the-rank">The Rank</h2>
 <p><strong>The rank is the dimension of the image, and at order two it takes three values.</strong> By rank–nullity,</p>
 <p>$$
@@ -121,7 +121,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The roots of $\chi_A$ are the eigenvalues of $A$, the sum of the roots is $\operatorname{tr}A$ and their product is $\det A$; the roots coincide exactly when $\Delta=0$.</p>
 <p><strong>Proof.</strong> An eigenvalue is a root of $\chi_A$ by definition of the determinant of $\lambda I-A$; the two statements about the roots are the Vieta formulas for a monic quadratic. A double root is exactly a vanishing discriminant.</p>
-<p><strong>The discriminant is a quadratic form in the entries, and it is not the determinant.</strong> For $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$,</p>
+<p><strong>The discriminant is a quadratic form in the entries, and it is not the determinant.</strong> For $A=\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}$,</p>
 <p>$$
 \Delta=(a-d)^{2}+4bc ,
 $$</p>

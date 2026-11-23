@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-algebraic-proof">The Algebraic Proof</h2>
 <p><strong>The real Schur form reduces $S$ to a block triangular matrix.</strong> By <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em>, there is an orthogonal $Q$ with $T=Q^{\mathsf T}SQ$ block upper triangular, with $1\times1$ and $2\times2$ blocks on the diagonal. Since $S$ is symmetric, $T$ is symmetric too.</p>
 <p><strong>A symmetric block triangular matrix is block diagonal.</strong> The blocks below the diagonal vanish by triangularity and the blocks above it vanish by symmetry, so $T$ is a direct sum of its diagonal blocks.</p>
-<p><strong>A symmetric $2\times2$ block is a scalar.</strong> A block $C(a,b)=\begin{pmatrix}a&-b\\ b&a\end{pmatrix}$ is symmetric exactly when $b=0$, and then $C(a,0)=a\mathrm{I}_2$. So no block of size two survives: every block reduces to a $1\times1$ block, that is, to a real number.</p>
+<p><strong>A symmetric $2\times2$ block is a scalar.</strong> A block $C(a,b)=\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix}$ is symmetric exactly when $b=0$, and then $C(a,0)=a\mathrm{I}_2$. So no block of size two survives: every block reduces to a $1\times1$ block, that is, to a real number.</p>
 <p><strong>Conclusion.</strong> $T$ is diagonal with real entries, and $S=QTQ^{\mathsf T}$ is the announced form. The proof uses the machinery of the general normal case and shows that symmetry is what removes the rotation blocks.</p>
 <h2 id="consequences">Consequences</h2>
 <p><strong>The spectrum is real and the eigenspaces are orthogonal.</strong> Real eigenvalues were proved above. For eigenvectors $u,v$ with distinct eigenvalues $\lambda\ne\mu$,</p>
@@ -120,7 +120,7 @@ $$</p>
 <h2 id="the-positive-semidefinite-case">The Positive Semidefinite Case</h2>
 <p><strong>Definition.</strong> A symmetric $S$ is <strong>positive semidefinite</strong>, written $S\ge0$, when $x^{\mathsf T}Sx\ge0$ for every $x$; it is positive definite when the inequality is strict for $x\ne0$.</p>
 <p><strong>Proposition.</strong> $S\ge0$ if and only if all its eigenvalues are nonnegative.</p>
-<p><em>Proof.</em> By the spectral theorem $x^{\mathsf T}Sx=\sum_k\lambda_k(x^{\mathsf T}q_k)^{2}$. If every $\lambda_k\ge0$ the sum is nonnegative. Conversely, if some $\lambda_j<0$ then $x=q_j$ gives $x^{\mathsf T}Sx=\lambda_j<0$, so $S$ is not semidefinite.</p>
+<p><em>Proof.</em> By the spectral theorem $x^{\mathsf T}Sx=\sum_k\lambda_k(x^{\mathsf T}q_k)^{2}$. If every $\lambda_k\ge0$ the sum is nonnegative. Conversely, if some $\lambda_j&lt;0$ then $x=q_j$ gives $x^{\mathsf T}Sx=\lambda_j&lt;0$, so $S$ is not semidefinite.</p>
 <p><strong>Proposition.</strong> $S\ge0$ if and only if $S=R^{\mathsf T}R$ for some real $R$.</p>
 <p><em>Proof.</em> If $S=R^{\mathsf T}R$ then $x^{\mathsf T}Sx=\|Rx\|^{2}\ge0$. Conversely, if $S\ge0$ write $S=Q\Lambda Q^{\mathsf T}$ with $\Lambda\ge0$ and put $R=\Lambda^{1/2}Q^{\mathsf T}$, where $\Lambda^{1/2}$ is the diagonal of the square roots. Then $R^{\mathsf T}R=Q\Lambda^{1/2}\Lambda^{1/2}Q^{\mathsf T}=S$.</p>
 <p><strong>The factor $R$ need not be square.</strong> The construction gives an $n\times n$ factor, but any $m\times n$ matrix with $R^{\mathsf T}R=S$ is allowed, and the rank of $R$ is the number of positive eigenvalues. A random $4\times3$ matrix $R$ gives a $3\times3$ semidefinite $S=R^{\mathsf T}R$ with eigenvalues $0.083836$, $1.879326$ and $3.04183$, all positive here because $R$ has rank $3$.</p>
@@ -152,7 +152,7 @@ $$</p>
 <p>$$
 \operatorname{tr}S=\sum_{k=1}^{n}\lambda_k,\qquad \det S=\prod_{k=1}^{n}\lambda_k .
 $$</p>
-<p><strong>The determinant detects the definiteness.</strong> The product of the eigenvalues is positive exactly when the number of negative eigenvalues is even, and it is zero exactly when some eigenvalue is zero. So a semidefinite matrix has $\det S\ge0$, and a positive definite one has $\det S>0$.</p>
+<p><strong>The determinant detects the definiteness.</strong> The product of the eigenvalues is positive exactly when the number of negative eigenvalues is even, and it is zero exactly when some eigenvalue is zero. So a semidefinite matrix has $\det S\ge0$, and a positive definite one has $\det S&gt;0$.</p>
 <p><strong>The measurement.</strong> For the $3\times3$ matrix above the eigenvalues sum to $7$ and multiply to $7$, and the trace and the determinant of the matrix are both $7$.</p>
 <p><strong>The two identities are the first and the last of the elementary symmetric functions.</strong> Every $e_k$ of $S$ is the $k$-th elementary symmetric function of the eigenvalues, and every one of them is real because the eigenvalues are. This is the symmetric case of <em>The Elementary Symmetric Functions and the Real Characteristic Polynomial</em>.</p>
 <h2 id="summary">Summary</h2>

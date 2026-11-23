@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuity Theory and Quantum Mechanics: Probability, Edges, Cats, Bell, and What the Math Really Does — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_5D_Framework_Of_Relativity_Solves_Quan.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="continuity-theory-and-quantum-mechanics-probability-edges-cats-bell-and-what-the-math-really-does"><strong>Continuity Theory and Quantum Mechanics: Probability, Edges, Cats, Bell, and What the Math Really Does</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>September 20, 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - A_5D_Framework_Of_Relativity_Solves_Quan-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_5D_Framework_Of_Relativity_Solves_Quan.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_5D_Framework_Of_Relativity_Solves_Quan.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that quantum probability is a calculus for ignorance and not the substance of the world, then re-reads the standard quantum examples inside Continuity Theory, a time-first scheme in which $h$ counts quanta of action, $c$ is the free-channel limit and $G$ encodes geometric hold. Interference is moved from self-interference to an edge-response field at the apertures, superposition becomes bookkeeping, and entanglement becomes correlation from a shared origin. The result is an interpretive programme, not a computation, with two stated predictions: fine fringes set by the incidence angle at the aperture, and a non-zero floor in the interference minima after background subtraction. Every unconventional claim is labelled working theory.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-status-of-probability">The status of probability</h3>
+<p>"Quantum probabilities are methods for counting outcomes when details are unknown." The Born rule is written
+$$P(\text{outcome})=\left|\langle\text{basis state}\mid\psi\rangle\right|^{2}$$
+and read as a counting rule. A weather forecast that says '30% chance of rain' is not rain. The stated "humility principle" forbids mistaking the calculus of ignorance for "an all-seeing, creator-level view"; the caricature offered is that "a photon could become an elephant".</p>
+<h3 id="three-constants-as-organizing-principles">Three constants as organizing principles</h3>
+<p>Time is "an active carrier", $h$ counts "discrete quanta of Wirkung", $c$ is "the free-channel speed limit of space-time" separating free from bound behaviour, and $G$ "encodes geometric hold". The author states that these are "not metaphors but organizing principles for modeling".</p>
+<h3 id="edges-instead-of-self-interference">Edges instead of self-interference</h3>
+<p>The aperture geometry enters as a cosine factor
+$$\cos\zeta_{\mathrm{geo}}=\sqrt{1-\left(\lambda/d_{\mathrm{eff}}\right)^{2}}$$
+(paper eq. 2), with $\lambda$ the wavelength, the de Broglie wavelength for matter beams, and $d_{\mathrm{eff}}$ an effective aperture measure that includes width, edge shape, roughness and thickness. Narrow openings "enforce stronger angular redistribution". Two predictions follow. First, fine sub-fringes from a lateral incidence angle at the slits, testable by translating the source and mapping fringe spacing and asymmetry. Second, "predicts a positive floor remainsŮan irreducible edge-field floorŮonce backgrounds are properly subtracted. Test", to be looked for by extending dynamic range in the minima.</p>
+<h3 id="cats-and-bell">Cats and Bell</h3>
+<p>Macroscopic alternatives lose coherence because "countless microscopic couplings constantly leak information to the environment", so "The cat is either alive or dead in the world; the superposed state is our summary of ignorance, not a physical chimera." Bell's result is stated as: no theory that is local, realist and measurement-independent reproduces all quantum statistics, with
+$$S=E(a,b)+E(a,b')+E(a',b)-E(a',b')$$
+(paper eq. 3) bounded by $|S|\le 2$, against $2\sqrt2$ for the singlet; the CT repair is placed on the measurement-independence assumption, not on locality.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-geometric-cosine-as-an-aperture-damping-factor">1. A geometric cosine as an aperture damping factor</h3>
+<p><strong>The idea.</strong> $\cos\zeta_{\mathrm{geo}}=\sqrt{1-(\lambda/d_{\mathrm{eff}})^2}$ is one dimensionless factor that turns aperture geometry into a rate, with the same functional shape as the Lorentz factor and the aperture standing where $c$ stands. It is a <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A closed form for how effective width damps a beam, where the corpus's double-slit article carries amplitudes, a Bloch vector and a visibility but no aperture factor of its own.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, which writes the pattern as $I=a_1^2+a_2^2+2a_1a_2\cos\delta$ and puts the visibility in the equatorial part of the Bloch vector.</p>
+<p><strong>What stands in the way.</strong> There the cross term is the whole physics, and a factor multiplying an intensity gives an envelope, not fringes. For the factor to change a pattern it must act on a phase, and the paper does not show it doing so.</p>
+<h3 id="2-probability-as-ignorance-against-a-derived-born-weight">2. Probability as ignorance against a derived Born weight</h3>
+<p><strong>The idea.</strong> Probability is a tool for reasoning under ignorance; the Born rule counts. That is a <strong>reading</strong>, and it collides with a corpus theorem: the Born weight there is obtained from a trace pairing on the Hermitian sector, so it is a property of the algebra's form rather than a remark about our knowledge.</p>
+<p><strong>What it would add.</strong> Nothing the corpus can use unless the pairing is given up; what it would cost is exactly the derivation that the corpus counts among its results.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> A definite form and a positive cone do the work in that article, and "ignorance" names neither.</p>
+<p>The rank is a judgement: the aperture factor first, because it is a formula that could be used; the reading second, because it removes a corpus result rather than adding one.</p>
+<p>This is a ten-page manuscript; probability, the cat, the double slit, Bell, a list of objections and a plain-language recap of each formula are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

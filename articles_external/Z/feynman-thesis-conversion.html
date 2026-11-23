@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feynman&#x27;s Thesis — A New Approach to Quantum Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/feynman-thesis.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="feynmans-thesis-a-new-approach-to-quantum-theory"><strong>Feynman's Thesis — A New Approach to Quantum Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>book (thesis with editorial commentary)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Richard P. Feynman; edited with a preface by Laurie M. Brown</td>
+</tr>
+<tr>
+<td>version</td>
+<td>reprint of the 1942 thesis, World Scientific 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>book, World Scientific, ISBN 981-256-366-0</td>
+</tr>
+<tr>
+<td>length</td>
+<td>142 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/feynman-thesis-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/feynman-thesis.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fermionic-path-integral-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/feynman-thesis.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reprints Feynman's 1942 Princeton thesis, "The Principle of Least Action in Quantum Mechanics", together with Laurie Brown's editorial preface. The thesis develops a quantum formulation for systems whose classical description is a principle of least action rather than Hamiltonian equations, and applies it to the Wheeler–Feynman action-at-a-distance electrodynamics.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-with-hamiltonians">The problem with Hamiltonians</h3>
+<p>"no method based upon the Hamiltonian could be used for the Wheeler–Feynman theory, either classically or quantum mechanically. The principal reason" half-retarded, half-advanced interaction. "The Hamiltonian method describes and keeps track of the state of the system of particles and ﬁelds at a given time. In the new theory, there are no ﬁeld variables, and every radiative process depends on contributions from the future as well as from the past! One is forced to view the entire process from start to ﬁnish."</p>
+<h3 id="the-programme">The programme</h3>
+<p>"Feynman's thesis project was to develop and generalize this approach so that it could be used to formulate the Wheeler–Feynman theory (a theory possessing an action, but without a Hamiltonian). If successful, he should then try to find a method to quantize the new theory."</p>
+<h3 id="the-scope-claimed">The scope claimed</h3>
+<p>"It is to be emphasized ... that the work described here is complete in itself without regard to its application to electrodynamics ... [The] present paper is concerned with the problem of finding a quantum mechanical description applicable to systems which in their classical analogue are expressible by a principle of least action, and not necessarily by Hamiltonian equations of motion."</p>
+<h3 id="the-limitation">The limitation</h3>
+<p>"All of the analysis will apply to non-relativistic systems. The generalization to the relativistic case is not at present known."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-action-not-the-hamiltonian-is-the-primary-object">1. The action, not the Hamiltonian, is the primary object</h3>
+<p><strong>The idea.</strong> A quantum formulation can be built from an action functional alone, with no Hamiltonian and no state at a time. The propagator is then the sum over all histories weighted by $e^{iS/\hbar}$, a functional of the whole trajectory rather than of an instantaneous state. This is a <strong>mechanism</strong> the corpus adopts in its path-integral articles.</p>
+<p><strong>What it would add.</strong> The historical and logical priority of the action, which explains why the corpus's propagator can be defined without a Hamiltonian at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fermionic-path-integral-in-biquaternionic-form.md</code>, at the definition.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus already takes this route and only lacks the reason.</p>
+<h3 id="2-time-symmetric-interactions-force-a-global-not-a-local-description">2. Time-symmetric interactions force a global, not a local, description</h3>
+<p><strong>The idea.</strong> If the interaction has an advanced half, the state at a time is not enough to predict the future; the whole interval must be considered. The formalism is forced by the physics, not chosen for elegance.</p>
+<p><strong>What it would add.</strong> A precedent for the corpus's own global constructions, which it presents as computational choices rather than as consequences of the physics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-retarded-potentials-and-the-greens-function.md</code>, on the boundary data.</p>
+<p><strong>What stands in the way.</strong> The corpus's equations are local and hyperbolic, so the global description is available but not required.</p>
+<h3 id="3-the-non-relativistic-restriction-is-explicit">3. The non-relativistic restriction is explicit</h3>
+<p><strong>The idea.</strong> The thesis states plainly that the relativistic generalisation is unknown at the time. A reader who takes the thesis as a relativistic result would be wrong.</p>
+<p><strong>What it would add.</strong> A caution about attributing relativistic scope to the path integral's original derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fermionic-path-integral-in-biquaternionic-form.md</code>, on the domain.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is a book of 142 pages; the Hamiltonian obstruction, the least-action programme, the claimed self-containment and the non-relativistic limitation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

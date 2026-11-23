@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue models of and for gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models of and for gravity - gr-qc_0111111.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-models-of-and-for-gravity"><strong>Analogue models of and for gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>plenary talk / mini-survey (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0111111v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Carlos Barceló, Stefano Liberati</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 30 November 2001</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Proceedings of the Australasian Relativity Conference, Perth, July 2001; General Relativity and Gravitation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue models of and for gravity - gr-qc_0111111-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models of and for gravity - gr-qc_0111111.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models of and for gravity - gr-qc_0111111.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A survey separating two claims that are usually run together. <em>Models of</em> gravity reproduce the kinematics: a metric, horizons, curved-space quantum field theory. <em>Models for</em> gravity would reproduce the dynamics: the Einstein–Hilbert action itself. The first is nearly generic; the second is not, and the paper says why with the heat-kernel argument — the first Seeley–DeWitt coefficient gives an Einstein–Hilbert term, but the zeroth gives an uncontrolled cosmological constant and the second gives curvature-squared terms, so the emergence is not clean. Along the way the survey covers acoustic metrics in Bose–Einstein condensates, the Laval nozzle as a way to build a horizon without fine-tuned potentials, light in moving dielectrics, superfluid quasiparticles in $^3$He-A, and the normal-modes argument for why Lorentzian effective metrics appear almost everywhere.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-distinction-in-the-title">The distinction in the title</h3>
+<p>"these systems (and others) provide experimentally accessible models of curved-space quantum field theory. As such they mimic kinematic aspects of general relativity, though typically they do not mimic the dynamics. Although these analogue models are thereby limited in their ability to duplicate all the effects of Einstein gravity they nevertheless are extremely important — they provide black hole analogues (some of which have already been seen experimentally) and lead to tests of basic principles of curved-space quantum field theory."</p>
+<h3 id="the-normal-modes-argument">The normal-modes argument</h3>
+<p>"The sheer number of different physical systems in which analogue models for general relativity may be found is indicative of a deep underlying principle. Indeed, finding an approximate Lorentzian geometry is really just a matter of picking an arbitrary physical system, isolating a particular degree of freedom that is approximately decoupled from the rest of the physics, and doing a low-momentum field-theory normal-modes analysis. Roughly speaking: in any hyperbolic system of differential equations (no matter how derived) there are by definition wave-like solutions. The set of admissible wavevectors associated with these wave-like solutions can be used to define ... a cone-like structure in momentum space, and hence a conformal class of Lorentzian-signature metrics. For this reason the emergence of Lorentzian-signature effective metrics is an almost generic aspect of low-momentum physics."</p>
+<h3 id="why-dynamics-is-harder">Why dynamics is harder</h3>
+<p>"Kine-matics is relatively easy, and is in some sense generic. Einstein–Hilbert dynamics is trickier — to get an 'emergent gravity' arising from these analogue models will require some variant of Sakharov's notion of 'induced gravity'. A useful observation in this regard is that any curved-space relativistic quantum field theory will automatically generate an Einstein–Hilbert counterterm through one-loop effects ... Unfortunately the same logic provides an uncontrolled cosmological constant from the zeroth Seeley–DeWitt coefficient, plus quadratic curvature-squared terms from the second Seeley–DeWitt coefficient, so the argument is not fully acceptable."</p>
+<h3 id="the-acoustic-metric">The acoustic metric</h3>
+<p>$$g^{\mu\nu}(t,\vec x)\equiv\frac{\rho_0}{c_s}\begin{pmatrix}-1&amp;\vdots&amp;-\vec v_0\\ \cdots\cdots&amp;\cdot&amp;\cdots\cdots\\ -\vec v_0&amp;\vdots&amp;(c_s^2I-\vec v_0\otimes\vec v_0)\end{pmatrix}, \qquad (2.11)$$</p>
+<p>$$ds^2=\frac{\rho_0}{c_s}\left[-c_s^2dt^2+\|d\vec x-\vec v_0dt\|^2\right], \qquad (2.12)$$</p>
+<p>and "the low-momentum phonon physics looks completely Lorentz invariant. (This is an acoustic Lorentz invariance mind you, with the speed of sound doing duty for the speed of light.)"</p>
+<h3 id="the-conformal-flatness-limitation-and-its-repair">The conformal-flatness limitation and its repair</h3>
+<p>"Although Eq. 2.12 seems to imply that a standard BEC can only simulate metrics with conformally flat spatial sections, it can nevertheless be shown that if the condensate is characterized by some anisotropic mass tensor (realized, e.g., via some doping gradient) then non-conformally flat spatial sections could also be simulated."</p>
+<h3 id="the-laval-nozzle">The Laval nozzle</h3>
+<p>"A general problem with the experimental construction of acoustic horizons is that many of the background fluid flows so far studied seem to require very special fine-tuned forms for the external potential ... a possible improvement toward the realizability of acoustic horizons is the construction of a flow in a trap which 'geometrically constrains' the flow in such a way as to replace the need for a special external potential." The nozzle equation</p>
+<p>$$a=-\frac{v^2}{c^2-v^2}\frac{A'}{A} \qquad (2.17)$$</p>
+<p>contains $c^2-v^2$ in the denominator, so "if the physical acceleration is to be finite at the acoustic horizon, we need $A'\to0$. This is a fine-tuning condition that forces the acoustic horizon ... to form at exactly the narrowest part of the nozzle."</p>
+<h3 id="the-scale-coincidence">The scale coincidence</h3>
+<p>"This particular model stands out for purely technological reasons — the condensation temperature, required to form the condensate in the first place, is of order 90 nK, which is considerably less than 1 order of magnitude away from the estimates of the relevant Hawking temperature. It is this congruence between two important physical scales that makes this particular system so interesting."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-distinct-claims-hide-under-one-word">1. Two distinct claims hide under one word</h3>
+<p><strong>The idea.</strong> "Emergent gravity" can mean emergent metric or emergent Einstein equations. The first is generic and cheap; the second requires an additional, and so far unclean, argument. Most discussions conflate them.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> derives a metric and then speaks of gravity. This survey supplies the exact place to draw the line and the reason: the metric comes from hyperbolicity of linearised equations, the field equations from a heat-kernel coefficient that comes bundled with two unwanted companions. The corpus should state which of the two claims it makes. It currently makes the stronger one implicitly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, opening claim.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a distinction, not a model. Ranked first, because it is a precision fix the corpus needs regardless of what else it does.</p>
+<h3 id="2-hyperbolicity-is-the-whole-engine">2. Hyperbolicity is the whole engine</h3>
+<p><strong>The idea.</strong> Any hyperbolic system has wave-like solutions; their wavevectors define a cone; the cone defines a conformal class of Lorentzian metrics. No further structure is required.</p>
+<p><strong>What it would add.</strong> The minimal hypothesis for a Lorentzian geometry, stated in one sentence. The corpus's <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> treats the geometry as a primitive. Here is the weakest condition that produces one, which means any framework claiming to <em>derive</em> the geometry must show its equations are hyperbolic and must say what the resulting conformal class is. That is a check the corpus can run on itself.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>.</p>
+<p><strong>What stands in the way.</strong> Only the conformal class comes out; the scale factor needs more. The corpus's conventions fix a scale, so the gap is real and should be named.</p>
+<h3 id="3-a-fine-tuning-condition-that-is-geometric-not-numerical">3. A fine-tuning condition that is geometric, not numerical</h3>
+<p><strong>The idea.</strong> For the horizon to be regular, the nozzle's area must be stationary there. The tuning is not a small number; it is a condition on the shape of the apparatus.</p>
+<p><strong>What it would add.</strong> A third kind of fine tuning, distinct from small parameters and from cancellations. The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> considers only the first two. Recording a geometric tuning condition expands the taxonomy, which matters because a geometric condition is often satisfiable by design while a numerical one is not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The condition is for a fluid apparatus. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

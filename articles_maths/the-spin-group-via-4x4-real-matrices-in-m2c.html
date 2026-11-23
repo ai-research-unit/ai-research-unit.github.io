@@ -86,19 +86,19 @@ $$
 and for real $q$ this is exactly the left regular matrix of the source,
 $$
 L(q)=\begin{pmatrix}
-q_t&-q_x&-q_y&-q_z\\
-q_x&q_t&-q_z&q_y\\
-q_y&q_z&q_t&-q_x\\
-q_z&-q_y&q_x&q_t
+q_t&amp;-q_x&amp;-q_y&amp;-q_z\\
+q_x&amp;q_t&amp;-q_z&amp;q_y\\
+q_y&amp;q_z&amp;q_t&amp;-q_x\\
+q_z&amp;-q_y&amp;q_x&amp;q_t
 \end{pmatrix}.
 $$
 Verified in two ways: the array of $L_A$ equals $q_t\mathrm I_4+q_xL_x+q_yL_y+q_zL_z$ with residual $0$, and the printed matrices $L_x,L_y,L_z$ equal the source's, entry for entry.</p>
 <p><strong>The reading.</strong> The first column of $L(q)$ is the coordinate column of $q$ itself, because $A\mathrm I_2=A$. Every other column is the coordinate column of a product. So the array is the multiplication table read aloud, with integer entries, and no entry is imaginary.</p>
 <p><strong>The three generators.</strong> With rows and columns indexed $(t,x,y,z)$,
 $$
-L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+L_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+L_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The four properties.</strong> Each generator is real and antisymmetric, $L_k^{\mathsf T}=-L_k$; each squares to minus the identity, $L_k^2=-\mathrm I_4$; the brackets are $[L_x,L_y]=2L_z$ and cyclically; and each has exactly one non-zero entry, equal to $\pm1$, in every row and every column, with zero diagonal. All four verified exactly, with residual $0$.</p>
 <p><strong>The last property, said carefully.</strong> None of the generators has a zero row or a zero column. The coordinate that a generator fixes does not appear as a zero line; it appears as the cut between two equal rotation blocks, as the isocliny section shows.</p>
@@ -119,7 +119,7 @@ The parameter $\theta$ is the half angle of the rotor, and the array is the full
 <h2 id="isocliny-and-the-doubled-spectrum">Isocliny and the Doubled Spectrum</h2>
 <p><strong>The block form.</strong> In the basis $(e_t,e_z,e_x,e_y)$ the generator $L_z$ is
 $$
-L_z=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}=\operatorname{diag}(R,R),\qquad R=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+L_z=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}=\operatorname{diag}(R,R),\qquad R=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},
 $$
 and the other two are the same after a cyclic relabelling, which is an automorphism of the algebra. Verified with residual $0$.</p>
 <p><strong>The consequence.</strong> Every element of the group is, in a suitable basis, $\operatorname{diag}(R_\theta,R_\theta)$: it rotates its two invariant planes by the same angle. That is the isoclinic property, and it is why the group is one of the two copies of $S^3$ inside the six-dimensional $SO(4)$.</p>
@@ -129,7 +129,7 @@ and the other two are the same after a cyclic relabelling, which is an automorph
 <p><strong>The proof.</strong> Every element of $\mathfrak{g}_L$ is real antisymmetric, and a real diagonal antisymmetric matrix is zero. A diagonal orthogonal matrix has entries $\pm1$; the array $L(q)$ for $q\neq\pm e_t$ has the non-real eigenvalues $e^{\pm i\theta}$, so it is not diagonal, and $L(\pm e_t)=\pm\mathrm I_4$.</p>
 <p><strong>The contrast with the $2\times2$ display.</strong> There the third generator is diagonal,
 $$
--i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+-i\sigma_3=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 $$
 so the $2\times2$ display marks the third axis, and the other two generators are not diagonal. The three generators pairwise fail to commute, so no display can make two of them diagonal at once; the mark is forced to be a single axis.</p>
 <p><strong>What the mark is.</strong> It is the choice of a complex structure on the real four-space, that is a point of $S^2$; different choices give conjugate displays. The real array makes no such choice.</p>
@@ -211,12 +211,12 @@ so the $2\times2$ display marks the third axis, and the other two generators are
 <p><strong>The rotor.</strong> $q=\tfrac1{\sqrt2}(e_t+e_z)$, of rotor angle $\pi/4$, inducing a rotation of angle $\pi/2$.</p>
 <p><strong>The real array.</strong> $L(q)=\tfrac1{\sqrt2}(\mathrm I_4+L_z)$, that is
 $$
-\frac1{\sqrt2}\begin{pmatrix}1&0&0&-1\\0&1&-1&0\\0&1&1&0\\1&0&0&1\end{pmatrix},
+\frac1{\sqrt2}\begin{pmatrix}1&amp;0&amp;0&amp;-1\\0&amp;1&amp;-1&amp;0\\0&amp;1&amp;1&amp;0\\1&amp;0&amp;0&amp;1\end{pmatrix},
 $$
 which rotates the plane $(e_t,e_z)$ and the plane $(e_x,e_y)$ each by $\pi/2$; the two blocks are equal, and the half-angle factor $\tfrac1{\sqrt2}$ sits in all eight non-zero entries.</p>
 <p><strong>The $2\times2$ array.</strong>
 $$
-A=\frac1{\sqrt2}\left(\mathrm I_2-i\sigma_3\right)=\frac1{\sqrt2}\begin{pmatrix}1-i&0\\0&1+i\end{pmatrix},
+A=\frac1{\sqrt2}\left(\mathrm I_2-i\sigma_3\right)=\frac1{\sqrt2}\begin{pmatrix}1-i&amp;0\\0&amp;1+i\end{pmatrix},
 $$
 diagonal, with the half-angle in the modulus. The two arrays are one group element in two displays; only the second marks an axis.</p>
 <h2 id="where-math162-differs">Where $n=2$ Differs</h2>

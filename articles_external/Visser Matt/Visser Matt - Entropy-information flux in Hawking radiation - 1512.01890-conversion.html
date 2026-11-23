@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy/information flux in Hawking radiation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy-information flux in Hawking radiation - 1512.01890.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entropyinformation-flux-in-hawking-radiation"><strong>Entropy/information flux in Hawking radiation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.01890v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ana Alonso-Serrano, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 25 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Physics Letters B 776 (2018) 10–16 — as printed on the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Entropy-information flux in Hawking radiation - 1512.01890-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy-information flux in Hawking radiation - 1512.01890.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy-information flux in Hawking radiation - 1512.01890.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper treats the evaporation of a black hole as bookkeeping. Blackbody radiation carries about 3.9 bits of entropy per photon, and unitarity requires the same amount to sit in correlations. The authors compute the classical Clausius entropy and the Bekenstein entropy of the hole and find that they sum to the initial Bekenstein entropy, as they must. They then compute von Neumann entropies for a tripartite pure system, black hole, radiation, and environment, and find agreement with the classical result to within one nat. The environment is the technical new ingredient: without it, a bipartite model gives a subsystem entropy that starts at zero, which conflicts with the large initial Bekenstein entropy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-number">The number</h3>
+<p>"Blackbody radiation contains (on average) an entropy of $3.9\pm2.5$ bits per photon. If the emission process is unitary, then this entropy is exactly compensated by 'hidden information' in the correlations."</p>
+<h3 id="the-framing">The framing</h3>
+<p>"Despite many claims to the contrary, (assuming unitarity and complete evaporation), the Hawking evaporation process is relatively benign, no worse than burning a lump of coal."</p>
+<h3 id="the-method">The method</h3>
+<p>"The key technical aspect of our calculation is a variant of the 'average subsystem' approach developed by Page, which we extend beyond bipartite pure systems, to a tripartite pure system that considers the influence of the environment."</p>
+<h3 id="the-classical-part">The classical part</h3>
+<p>"we explicitly calculated the classical thermodynamic (Clausius) entropy and the Bekenstein entropy. We found that they compensate perfectly, summing to the initial Bekenstein entropy of the hole. (As of course they must, given how Bekenstein entropy was originally defined.)"</p>
+<h3 id="the-quantum-part">The quantum part</h3>
+<p>"Once we had the classical behaviour under control, we proceeded with a quantum entropy argument based on the von Neumann entropy, realizing that on average we need to encode $3.9\pm2.5$ bits of information per emitted quantum to preserve unitarity."</p>
+<h3 id="the-page-curve">The Page curve</h3>
+<p>"It is the (symmetric) sawtooth shape of the Page curve that underlies much of the modern discussion surrounding the 'information puzzle', and in particular the asserted and much debated existence of firewalls."</p>
+<h3 id="the-defect-of-the-bipartite-model">The defect of the bipartite model</h3>
+<p>"One particularly disturbing feature of the current bipartite argument is that the subsystem entropy is initially zero. But this observation is in marked tension with the fact that the Bekenstein entropy of the black hole is initially enormous."</p>
+<h3 id="the-result">The result</h3>
+<p>"We have developed a tripartite system in which, assuming unitarity of the evolution of the (GR black hole) + (Hawking radiation) subsystem, we showed that, as long as it is suitably embedded in a tripartite system providing an environment to entangle with, there are no unusual physical effects; the results completely agree with the classically expected results, to within 1 nat."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-entropy-that-starts-at-zero-is-wrong">1. An entropy that starts at zero is wrong</h3>
+<p><strong>The idea.</strong> Any model whose subsystem entropy begins at zero cannot represent a black hole with a large Bekenstein entropy.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> should check whether its entropy is present from the start or generated by an evolution. This paper supplies a sharp test any entropy assignment must pass.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the entropy's meaning.</p>
+<p><strong>What stands in the way.</strong> The test assumes the Bekenstein identification. Ranked first, because it is a criterion, not a claim.</p>
+<h3 id="2-firewalls-follow-from-a-bookkeeping-error">2. Firewalls follow from a bookkeeping error</h3>
+<p><strong>The idea.</strong> The firewall argument rests on the shape of a Page curve computed without an environment.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizon puzzles as structural. This paper suggests one prominent puzzle is an artefact of a truncated model, which changes how seriously the article should take it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The claim is contested in the literature. Ranked second.</p>
+<h3 id="3-sum-rules-as-consistency-checks">3. Sum rules as consistency checks</h3>
+<p><strong>The idea.</strong> Entropy pieces must add up to a fixed total at every stage.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would be stronger if each obstruction came with a sum rule showing what cannot be reallocated.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The sum rules are quantum-information statements. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

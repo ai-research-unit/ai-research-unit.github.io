@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic thin-shell black-bounce traversable wormholes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic thin-shell black-bounce traversable wormholes - 2003.09419.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamic-thin-shell-black-bounce-traversable-wormholes"><strong>Dynamic thin-shell black-bounce traversable wormholes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2003.09419v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Francisco S. N. Lobo, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 March 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dynamic thin-shell black-bounce traversable wormholes - 2003.09419-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic thin-shell black-bounce traversable wormholes - 2003.09419.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic thin-shell black-bounce traversable wormholes - 2003.09419.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper builds traversable wormholes by cutting and pasting two black-bounce spacetimes and joining them with a thin shell. The black-bounce geometry contains one parameter, the bounce scale, and everything unusual is packed into it. The authors keep the construction as close to standard general relativity as possible, derive the shell's properties from the Einstein equations, and then perturb the throat radially to test stability. They find the wormhole is stable when the exotic material on the throat has suitable properties, and they map the stability regions in the parameter space of the two bulk masses and bounce scales.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"Based on the recently introduced black-bounce spacetimes, we shall consider the construction of the related spherically symmetric thin-shell traversable wormholes within the context of standard general relativity."</p>
+<h3 id="the-single-parameter">The single parameter</h3>
+<p>"All of the really unusual physics is encoded in one simple parameter $a$ which characterizes the scale of the bounce."</p>
+<h3 id="the-methodological-principle">The methodological principle</h3>
+<p>"Keeping the discussion as close as possible to standard general relativity is the theorist's version of only adjusting one feature of the model at a time."</p>
+<h3 id="what-is-modified">What is modified</h3>
+<p>"We shall modify the standard thin-shell traversable wormhole construction, each bulk region now being a black-bounce spacetime, and with the physics of the thin shell being (as much as possible) derivable from the Einstein equations."</p>
+<h3 id="the-stability-analysis">The stability analysis</h3>
+<p>"we shall apply a dynamical analysis to the throat by considering linearized radial perturbations around static solutions, and demonstrate that the stability of the wormhole is equivalent to choosing suitable properties for the exotic material residing on the wormhole throat."</p>
+<h3 id="the-assessment">The assessment</h3>
+<p>"The construction is sufficiently novel to be interesting, and sufficiently straightforward to be tractable."</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"We have [found the] existence of suitable stability regions in parameter space. Several of these models are particu[larly interesting]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-parameter-does-all-the-work">1. One parameter does all the work</h3>
+<p><strong>The idea.</strong> A whole family of unusual geometries is controlled by the bounce scale alone.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the framework has too many free functions. Here a one-parameter deformation covers a large class, which shows the value of parameter economy and gives a concrete standard for comparison.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on free functions.</p>
+<p><strong>What stands in the way.</strong> The parameter is dimensionful and physical. Ranked first, because it shows what the article's framework would need to look like to be testable.</p>
+<h3 id="2-stability-comes-from-the-shell">2. Stability comes from the shell</h3>
+<p><strong>The idea.</strong> Whether the wormhole is stable depends on the matter on the throat, not on the bulk.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code> describes a fluid locally. If stability is a property of the surface fluid, then a local description plus a perturbation analysis is enough, which is a result the article could use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, in the discussion of the state.</p>
+<p><strong>What stands in the way.</strong> The analysis is linear and restricted to the throat. Ranked second.</p>
+<h3 id="3-change-one-thing-at-a-time">3. Change one thing at a time</h3>
+<p><strong>The idea.</strong> The construction keeps general relativity fixed and varies a single geometric feature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> struggles because the framework changes many things at once. This paper's discipline is the remedy, and the article could adopt it as a programme rather than defending wholesale replacement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The framework's changes may not be separable. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

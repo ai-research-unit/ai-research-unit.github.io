@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheeler–Feynman Absorber Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Wheeler–Feynman absorber theory.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wheelerfeynman-absorber-theory"><strong>Wheeler–Feynman Absorber Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Wheeler–Feynman absorber theory</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Wheeler–Feynman absorber theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Wheeler–Feynman absorber theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-the-retarded-potentials-and-the-greens-function.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Wheeler–Feynman absorber theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Wheeler–Feynman absorber theory: the electrodynamics in which there is no independent field, interactions are half-retarded plus half-advanced action at a distance between charges, and radiation damping emerges only because the future absorber is opaque.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"The Wheeler–Feynman absorber theory (also called the Wheeler–Feynman time-symmetric theory), named" "is a theory of electrodynamics based on a relativistically correct extension of action at a distance electron particles. The theory postulates no independent electromagnetic field. Rather, the whole theory is encapsulated by the Lorentz-invariant action" of the particles alone.</p>
+<h3 id="the-symmetric-propagator">The symmetric propagator</h3>
+<p>Each charge's influence is taken as one half of the retarded plus one half of the advanced solution of the wave equation. The antisymmetric combination is what survives once all charges are included, so the observed retarded field is not put in but emerges from the sum.</p>
+<h3 id="the-role-of-the-absorber">The role of the absorber</h3>
+<p>The radiative damping term appears only if the universe is opaque to radiation: the advanced waves from the future absorber must reach the source. In a transparent universe the theory gives no damping, which is the theory's strongest empirical constraint and the reason it is not the standard account.</p>
+<p>"Wheeler–Feynman absorber theory The Wheeler–Feynman absorber theory (also called the Wheeler–Feynman time-symmetric theory), named after its originators, the physicists Richard Feynman and John Archibald Wheeler, is a theory of electrodynamics based on a relativistically correct extension of action at a distance electron particles."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-radiation-damping-can-be-a-boundary-condition-not-a-local-term">1. Radiation damping can be a boundary condition, not a local term</h3>
+<p><strong>The idea.</strong> The damping force is not added to the equation of motion; it follows from the future boundary condition through the advanced half of the interaction. This is a <strong>mechanism</strong> that changes what "dissipation" means: it is a consequence of the environment, not of the particle.</p>
+<p><strong>What it would add.</strong> A different origin for the dissipative terms the corpus's non-Hermitian articles insert, and a reason they might be boundary effects rather than algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>, at the damping term.</p>
+<p><strong>What stands in the way.</strong> The corpus's damping is a term in an equation of motion with no absorber and no future boundary; making the connection would require a cosmological assumption the corpus does not make.</p>
+<h3 id="2-time-symmetry-is-broken-by-the-initial-condition-not-by-the-law">2. Time symmetry is broken by the initial condition, not by the law</h3>
+<p><strong>The idea.</strong> The fundamental interaction is symmetric between retarded and advanced; the arrow appears because the absorbers are in the future. This is a <strong>reading</strong> with the same shape as the corpus's statement that the algebra is time-symmetric and the solution is not.</p>
+<p><strong>What it would add.</strong> A precedent for the corpus's treatment of the arrow of time, with a concrete mechanism for how the asymmetry enters.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-retarded-potentials-and-the-greens-function.md</code>, on the choice of solution.</p>
+<p><strong>What stands in the way.</strong> The absorber condition is a global property of the universe; the corpus's articles work locally and would have to import it.</p>
+<p>This is an encyclopedia article; the action-at-a-distance premise, the symmetric propagator, the absorber condition and the objections are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

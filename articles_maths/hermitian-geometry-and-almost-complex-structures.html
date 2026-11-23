@@ -105,10 +105,10 @@ $$</p>
 <p><strong>Proof.</strong> Antisymmetry is immediate from the antisymmetry of the Lie bracket. For the $C^\infty(M)$-linearity in the first slot compute directly:
 $$
 \begin{aligned}
-[J(fX), JY] &= f[JX,JY] - (JY)(f)\,JX,\\
-J[fX, JY] &= fJ[JX,JY] - (JY)(f)\,JX,\\
-J[J(fX), Y] &= fJ[JX,Y] - Y(f)\,J^2X,\\
-[fX, Y] &= f[X,Y] - Y(f)\,X .
+[J(fX), JY] &amp;= f[JX,JY] - (JY)(f)\,JX,\\
+J[fX, JY] &amp;= fJ[JX,JY] - (JY)(f)\,JX,\\
+J[J(fX), Y] &amp;= fJ[JX,Y] - Y(f)\,J^2X,\\
+[fX, Y] &amp;= f[X,Y] - Y(f)\,X .
 \end{aligned}
 $$
 Since $J^2 = -\mathrm{id}$, the correction $-(JY)(f)JX$ from the first line cancels against the correction $+(JY)(f)JX$ from the second, and the correction $-Y(f)J^2X = +Y(f)X$ from the third line cancels against the term $-Y(f)X$ carried by the fourth; the terms carrying $f$ reproduce $fN_J(X,Y)$. Hence $N_J(fX,Y)=fN_J(X,Y)$, and the same computation with the roles of the slots exchanged gives $N_J(X,fY) = fN_J(X,Y)$. Therefore $N_J$ is tensorial. Finally $N_J(X,JX) = [JX, J^2X] - J[X,J^2X] - J[JX,JX] - [X,JX] = -[JX,X] + J[X,X] - 0 - [X,JX] = [X,JX] - [X,JX] = 0$, and substituting $JX$ and $JY$ in the definition gives
@@ -124,7 +124,7 @@ J\partial/\partial x = \partial/\partial y + z\,\partial/\partial z, \quad J\par
 $$</p>
 <p>The matrix of $J$ in the coordinate frame is
 $$
-\begin{pmatrix} 0 & -1 & 0 & 0\\ 1 & 0 & 0 & 0\\ z & 0 & 0 & -1\\ 0 & -z & 1 & 0 \end{pmatrix},
+\begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0\\ 1 &amp; 0 &amp; 0 &amp; 0\\ z &amp; 0 &amp; 0 &amp; -1\\ 0 &amp; -z &amp; 1 &amp; 0 \end{pmatrix},
 $$
 and one checks $J^2 = -\mathrm{id}$ for every value of $z$. Computing the Nijenhuis tensor on the coordinate fields gives</p>
 <p>$$
@@ -165,10 +165,10 @@ $$</p>
 <p><strong>Proposition.</strong> Let $(M,J,g)$ be almost Hermitian. Then:</p>
 <p><strong>(a)</strong> $\Omega$ is a real $2$-form, alternating, and of type $(1,1)$; equivalently $\Omega(JX,JY) = \Omega(X,Y)$;</p>
 <p><strong>(b)</strong> the Hermitian metric is recovered from $\Omega$ and $J$ by $g(X,Y) = \Omega(X,JY)$;</p>
-<p><strong>(c)</strong> the <strong>Hermitian form</strong> $h : T^{1,0}M\times T^{1,0}M \to \mathbb{C}$, defined by $h(v,w) = g_{\mathbb{C}}(v,\bar w)$ where $g_{\mathbb{C}}$ is the $\mathbb{C}$-bilinear extension of $g$ to $T_{\mathbb{C}}M$ and $\bar w$ is the complex conjugate, is $\mathbb{C}$-linear in $v$ and conjugate-linear in $w$, satisfies $h(w,v) = \overline{h(v,w)}$, and is positive definite: $h(v,v) > 0$ for $v \neq 0$.</p>
+<p><strong>(c)</strong> the <strong>Hermitian form</strong> $h : T^{1,0}M\times T^{1,0}M \to \mathbb{C}$, defined by $h(v,w) = g_{\mathbb{C}}(v,\bar w)$ where $g_{\mathbb{C}}$ is the $\mathbb{C}$-bilinear extension of $g$ to $T_{\mathbb{C}}M$ and $\bar w$ is the complex conjugate, is $\mathbb{C}$-linear in $v$ and conjugate-linear in $w$, satisfies $h(w,v) = \overline{h(v,w)}$, and is positive definite: $h(v,v) &gt; 0$ for $v \neq 0$.</p>
 <p><strong>Proof.</strong> (a) Antisymmetry: $\Omega(Y,X) = g(JY,X) = -g(JY,J^2X) = -g(Y,JX) = -g(JX,Y) = -\Omega(X,Y)$, using symmetry of $g$ and $g(J\,\cdot\,,J\,\cdot\,) = g$. Type: for $v, w \in T^{1,0}$, $\Omega(v,w) = g(Jv,w) = g(iv,w) = i\,g(v,w)$ and antisymmetry gives $\Omega(v,w) = -\Omega(w,v) = -g(Jw,v) = -i\,g(w,v) = -i\,g(v,w)$; hence $g(v,w)=0$ and $\Omega$ has no $(2,0)$-part, and by conjugation no $(0,2)$-part either. (b) $\Omega(X,JY) = g(JX,JY) = g(X,Y)$. (c) Sesquilinearity and conjugate symmetry are immediate from the $\mathbb{C}$-bilinearity and symmetry of $g_{\mathbb{C}}$ together with $\overline{\bar w}=w$. For positivity, write $v = X - iJX$ with $X$ real; then $\bar v = X + iJX$ and</p>
 <p>$$
-h(v,v) = g_{\mathbb{C}}(X-iJX, X+iJX) = g(X,X) + i\,g(X,JX) - i\,g(JX,X) + g(JX,JX) = 2\,g(X,X) > 0
+h(v,v) = g_{\mathbb{C}}(X-iJX, X+iJX) = g(X,X) + i\,g(X,JX) - i\,g(JX,X) + g(JX,JX) = 2\,g(X,X) &gt; 0
 $$</p>
 <p>for $X \neq 0$: the two middle terms cancel, since $g(X,JX) = g(JX,X)$ by symmetry of $g$, and $g(JX,JX) = g(X,X)$ supplies the second copy of $g(X,X)$.</p>
 <p><strong>Proposition.</strong> Every almost complex manifold admits a Hermitian metric: if $g_0$ is any Riemannian metric, then</p>
@@ -207,7 +207,7 @@ $$</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (complex Euclidean space).</strong> On $\mathbb{C}^n$ with the standard $J$ and the Euclidean metric $g$, the fundamental form is $\Omega = \sum_i dx_i\wedge dy_i$: indeed $\Omega(\partial/\partial x_i,\partial/\partial y_i) = g(J\partial/\partial x_i,\partial/\partial y_i) = g(\partial/\partial y_i,\partial/\partial y_i) = 1$, and $\Omega$ is alternating. Since the coefficients are constant, $d\Omega=0$ and the structure is Kähler. This is the model Hermitian structure, and its Chern connection is the flat connection.</p>
 <p><strong>Example (complex tori).</strong> A quotient $M = \mathbb{C}^n/\Lambda$ by a lattice is a complex manifold with the induced flat Hermitian structure; the fundamental form and the Chern connection descend, and $d\Omega=0$, so a complex torus with the flat metric is Kähler. A torus that is not algebraic nevertheless carries this Hermitian structure, and the Hermitian geometry of a general compact complex manifold is not accessible from the algebraic theory alone.</p>
-<p><strong>Example (Hopf manifolds).</strong> Let $\lambda \in \mathbb{C}$ with $|\lambda| > 1$ and let $\Gamma$ be the infinite cyclic group generated by $z \mapsto \lambda z$ acting on $\mathbb{C}^n\setminus\{0\}$. The quotient is a compact complex manifold, the <strong>Hopf manifold</strong>; for $n = 2$ it is diffeomorphic to $S^1\times S^3$, so its second Betti number vanishes, and since a compact Kähler manifold has a nonzero class in $H^2$ — the class of its Kähler form — the Hopf manifold carries no Kähler metric. It is the standard example of a Hermitian manifold whose Hermitian geometry is not Kähler.</p>
+<p><strong>Example (Hopf manifolds).</strong> Let $\lambda \in \mathbb{C}$ with $|\lambda| &gt; 1$ and let $\Gamma$ be the infinite cyclic group generated by $z \mapsto \lambda z$ acting on $\mathbb{C}^n\setminus\{0\}$. The quotient is a compact complex manifold, the <strong>Hopf manifold</strong>; for $n = 2$ it is diffeomorphic to $S^1\times S^3$, so its second Betti number vanishes, and since a compact Kähler manifold has a nonzero class in $H^2$ — the class of its Kähler form — the Hopf manifold carries no Kähler metric. It is the standard example of a Hermitian manifold whose Hermitian geometry is not Kähler.</p>
 <p><strong>Example (Riemann surfaces).</strong> On an oriented surface every almost complex structure is integrable, so every Riemann surface is a complex curve; a Hermitian metric is a conformal class together with the orientation, that is, a Riemannian metric, and its fundamental form is the area form. Every Hermitian metric on a Riemann surface is Kähler, because a $2$-form on a surface is automatically closed; so the subject of this article is trivial in complex dimension one, and the study of the resulting space of complex structures on a fixed surface modulo the conformal ambiguity is not made here.</p>
 <p><strong>Example (a non-integrable almost Hermitian structure).</strong> On the almost complex manifold $(\mathbb{R}^4, J)$ of the non-integrable example above, take the Euclidean metric $g$. Then $(M,J,g)$ is almost Hermitian and not Hermitian, because $J$ is not integrable. The fundamental form is $\Omega(X,Y) = g(JX,Y)$, and its exterior derivative need not vanish; the structure lies in one of the Gray–Hervella classes other than $W_3\oplus W_4$, since it is not Hermitian. The example shows that the classes above are not formal: the almost Hermitian condition is strictly weaker than the Hermitian one.</p>
 <p><strong>Example (the six-sphere).</strong> On $S^6$ with the octonionic almost complex structure the round metric is nearly Kähler: the tensor $\nabla J$ is antisymmetric and nonzero, so $\nabla J \neq 0$ and the structure is not Kähler; its fundamental form satisfies $d\Omega \neq 0$. Since $S^6$ has no complex structure as far as is known, this is the most important example of a nearly Kähler structure that is not Hermitian.</p>

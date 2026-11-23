@@ -222,10 +222,10 @@ $$</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
 <p>A sequence $(\phi_n)$ in $L^1(\mathbb{C}_{\mathrm{dln}})$ is an <strong>approximate identity</strong> if</p>
 <p>$$
-\int_{\mathbb{C}_{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\| > \delta} |\phi_n(Q)| \, dQ \to 0
+\int_{\mathbb{C}_{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 &lt; \infty, \qquad \int_{\|Q\| &gt; \delta} |\phi_n(Q)| \, dQ \to 0
 $$</p>
-<p>for every $\delta > 0$.</p>
-<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 \leq p < \infty$, then</p>
+<p>for every $\delta &gt; 0$.</p>
+<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 \leq p &lt; \infty$, then</p>
 <p>$$
 \|f * \phi_n - f\|_p \to 0.
 $$</p>
@@ -273,7 +273,7 @@ Hf(Q) = Hf_r(q) + Hf_i(q) \varepsilon,
 $$</p>
 <p>where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual Hilbert transform is the ordinary real Hilbert transform applied to each component separately.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
-<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 < p < \infty$, with</p>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 &lt; p &lt; \infty$, with</p>
 <p>$$
 \|Hf\|_p \leq C_p \|f\|_p.
 $$</p>
@@ -286,22 +286,22 @@ $$</p>
 <h3 id="the-dual-maximal-function">The Dual Maximal Function</h3>
 <p>The <strong>dual Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{C}_{\mathrm{dln}})$ is</p>
 <p>$$
-Mf(Q_1) = \sup_{r > 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\| \, dQ_2,
+Mf(Q_1) = \sup_{r &gt; 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\| \, dQ_2,
 $$</p>
 <p>where $B(Q_1, r)$ is the Euclidean ball of radius $r$ centred at $Q_1$, and $|B(Q_1, r)|$ is its area.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
-<p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}_{\mathrm{dln}})$ and every $\lambda > 0$,</p>
+<p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C &gt; 0$ such that for every $f \in L^1(\mathbb{C}_{\mathrm{dln}})$ and every $\lambda &gt; 0$,</p>
 <p>$$
 \boxed{\;
-|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1
+|\{Q : Mf(Q) &gt; \lambda\}| \leq \frac{C}{\lambda} \|f\|_1
 \;}.
 $$</p>
-<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 < p \leq \infty$.</p>
-<p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 &lt; p \leq \infty$.</p>
+<p><strong>Theorem.</strong> For $1 &lt; p \leq \infty$, there exists $C_p &gt; 0$ such that</p>
 <p>$$
 \boxed{\; \|Mf\|_p \leq C_p \|f\|_p \;}.
 $$</p>
-<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 &lt; p &lt; \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
 <p>Because the additive group of $\mathbb{C}_{\mathrm{dln}}$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
 <h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
@@ -315,10 +315,10 @@ $$</p>
 \|K(Q_1, Q_2)\| \leq \frac{C}{\|Q_1 - Q_2\|},
 $$</p>
 <p>$$
-\|K(Q_1, Q_2) - K(Q_3, Q_2)\| \leq C \frac{\|Q_1 - Q_3\|^\delta}{\|Q_1 - Q_2\|^{1+\delta}}, \qquad \|Q_1 - Q_3\| < \frac{1}{2} \|Q_1 - Q_2\|,
+\|K(Q_1, Q_2) - K(Q_3, Q_2)\| \leq C \frac{\|Q_1 - Q_3\|^\delta}{\|Q_1 - Q_2\|^{1+\delta}}, \qquad \|Q_1 - Q_3\| &lt; \frac{1}{2} \|Q_1 - Q_2\|,
 $$</p>
-<p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
-<p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p>and the analogous estimate in the second variable, for some $\delta &gt; 0$.</p>
+<p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}_{\mathrm{dln}})$ for $1 &lt; p &lt; \infty$, and satisfies a weak $(1,1)$ estimate.</p>
 <p><strong>Examples.</strong> The dual Hilbert transform, the dual Riesz transforms, and the Beurling–Ahlfors transform are dual Calderón–Zygmund operators.</p>
 <h3 id="the-structure-of-the-theory">The Structure of the Theory</h3>
 <p>Because the additive group of $\mathbb{C}_{\mathrm{dln}}$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.</p>
@@ -368,7 +368,7 @@ W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\gamma$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta &lt; \infty,
 $$</p>
 <p>where $\hat{\gamma}$ is the ordinary Fourier transform.</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>

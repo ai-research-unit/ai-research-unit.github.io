@@ -93,7 +93,7 @@ L\varphi_n = \lambda_n\varphi_n , \qquad \varphi_n\in\mathrm{dom}\,L ,
 $$</p>
 <p>the eigenvalues real, of finite multiplicity and with $|\lambda_n|\to\infty$; the operator has the spectral representation</p>
 <p>$$
-\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\}\;} ,
+\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2&lt;\infty\Bigr\}\;} ,
 $$</p>
 <p>and for every bounded Borel function $g$ on the real line the functional calculus is</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof.</em> The expansion is the Parseval identity in the orthonormal basis; applying $S=L^{-1}$ gives the solution series, and the kernel of $S$ is the displayed sum by the expansion of the kernel in the basis $(\varphi_n\otimes\overline{\varphi_m})$.</p>
 <h2 id="the-discrete-spectrum">The Discrete Spectrum</h2>
 <p><strong>Theorem (discreteness and growth).</strong> Let the self-adjoint realisation be coercive and let the eigenvalues be ordered, $\lambda_1\le\lambda_2\le\cdots$. Then the spectrum is discrete, $\lambda_n\to+\infty$, and the counting function $N(\lambda)=\#\{n : \lambda_n\le\lambda\}$ is finite for every $\lambda$; the eigenvalues are characterised variationally by the min–max principle of <em>Variational Methods and the Hermitian Form</em>.</p>
-<p><em>Proof.</em> The compactness of the inverse gives $|\lambda_n|\to\infty$, and the coercivity gives $\lambda_n>0$ with $\lambda_1\ge c_*$; the count of the eigenvalues below a fixed $\lambda$ is finite because the eigenvalues tend to infinity. The variational characterisation is the min–max theorem, which needs the form coercive relative to the $L^2$ pairing, the hypothesis here.</p>
+<p><em>Proof.</em> The compactness of the inverse gives $|\lambda_n|\to\infty$, and the coercivity gives $\lambda_n&gt;0$ with $\lambda_1\ge c_*$; the count of the eigenvalues below a fixed $\lambda$ is finite because the eigenvalues tend to infinity. The variational characterisation is the min–max theorem, which needs the form coercive relative to the $L^2$ pairing, the hypothesis here.</p>
 <h2 id="the-weyl-law">The Weyl Law</h2>
 <p><strong>Theorem (Weyl's law for the Laplacian).</strong> Let $\Omega\subseteq\mathbb{R}^n$ be a bounded open set with smooth boundary, and let $N(\lambda)$ be the counting function of the eigenvalues of $-\Delta$ under the Dirichlet condition, ordered increasingly and counted with multiplicity. Then</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 \lambda_k \sim 4\pi^2\Bigl(\frac{k}{\omega_n|\Omega|}\Bigr)^{2/n} ,
 $$</p>
 <p>and the same leading term holds for the Neumann condition and for any self-adjoint elliptic realisation of the Laplacian.</p>
-<p><em>Proof.</em> The proof is the <strong>heat-kernel method</strong>. The trace of the heat semigroup is $\operatorname{tr}\exp(t\Delta)=\sum_n\exp(-\lambda_nt)$ for $t>0$, and the heat kernel of the Dirichlet problem satisfies $K(t,x,x)\sim(4\pi t)^{-n/2}$ as $t\downarrow0$ uniformly on compact subsets of $\Omega$ by <em>Distributions and Fundamental Solutions</em>; integrating over $\Omega$,</p>
+<p><em>Proof.</em> The proof is the <strong>heat-kernel method</strong>. The trace of the heat semigroup is $\operatorname{tr}\exp(t\Delta)=\sum_n\exp(-\lambda_nt)$ for $t&gt;0$, and the heat kernel of the Dirichlet problem satisfies $K(t,x,x)\sim(4\pi t)^{-n/2}$ as $t\downarrow0$ uniformly on compact subsets of $\Omega$ by <em>Distributions and Fundamental Solutions</em>; integrating over $\Omega$,</p>
 <p>$$
 \sum_{n\ge1}\exp(-\lambda_nt) = \int_\Omega K(t,x,x)\,dx \sim \frac{|\Omega|}{(4\pi t)^{n/2}} \qquad (t\downarrow0) .
 $$</p>

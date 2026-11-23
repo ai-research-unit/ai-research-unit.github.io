@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ray tracing Einstein–Æther black holes: universal versus Killing horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Ray tracing Einstein-ther black holes - Universal versus Killing horizons -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ray-tracing-einsteinther-black-holes-universal-versus-killing-horizons"><strong>Ray tracing Einstein–Æther black holes: universal versus Killing horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1312.0405v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Bethan Cropp, Stefano Liberati, Arif Mohd, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 March 2014</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Ray tracing Einstein-ther black holes - Universal versus Killing horizons - 1312.0405-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Ray tracing Einstein-ther black holes - Universal versus Killing horizons - 1312.0405.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Ray tracing Einstein-ther black holes - Universal versus Killing horizons - 1312.0405.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>In Einstein–Æther theory, signals can travel faster than light, and a black hole then has two horizons. One is the Killing horizon of the æther; the other is a universal horizon that traps any speed. The authors trace rays through these spacetimes. They find evidence that Hawking radiation comes from the universal horizon. Rays that linger near the Killing horizon suggest reprocessing there. The work also resolves a mismatch between the surface gravity and a temperature found by the tunnelling method.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>an outer region "which traps excitations of arbitrarily high velocities"</p>
+<h3 id="the-aim">The aim</h3>
+<p>"To better understand the nature of these black holes, and their Universal horizons, we study ray trajectories in these spacetimes."</p>
+<h3 id="the-finding">The finding</h3>
+<p>"We find evidence that Hawking radiation is associated with the Universal horizon, while the 'lingering' of ray trajectories near the Killing horizon hints at reprocessing there."</p>
+<h3 id="the-side-result">The side result</h3>
+<p>"In doing this we solve an apparent discrepancy between the surface gravity of the Universal horizon and the associated temperature derived by tunneling method."</p>
+<h3 id="the-outlook">The outlook</h3>
+<p>"These results advance the understanding of these exotic horizons, and provide hints for a full understanding of [the radiation]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-horizons-two-roles">1. Two horizons, two roles</h3>
+<p><strong>The idea.</strong> A horizon that traps slow signals and one that traps all signals do different jobs.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizons as a single kind of surface. A theory with two of them forces a finer classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of classification.</p>
+<p><strong>What stands in the way.</strong> The theory needs a preferred frame. Ranked first, because it reopens the definition question.</p>
+<h3 id="2-ray-tracing-as-evidence">2. Ray tracing as evidence</h3>
+<p><strong>The idea.</strong> Following rays shows which surface emits.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives radiation analytically. A ray picture is an independent check on where the emission originates.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the source.</p>
+<p><strong>What stands in the way.</strong> The evidence is numerical. Ranked second.</p>
+<h3 id="3-luminal-barrier-is-not-absolute">3. Luminal barrier is not absolute</h3>
+<p><strong>The idea.</strong> If signals can exceed light speed, the light cone is not the outer boundary.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> makes the light cone the barrier. A superluminal sector changes what the barrier means.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of the barrier.</p>
+<p><strong>What stands in the way.</strong> The framework keeps one speed. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

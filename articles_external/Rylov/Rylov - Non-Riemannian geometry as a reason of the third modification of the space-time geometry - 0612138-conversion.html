@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Riemannian Geometry as a Reason of the Third Modification of the Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Non-Riemannian geometry as a reason of the third modification of the space-time geometry -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-riemannian-geometry-as-a-reason-of-the-third-modification-of-the-space-time-geometry"><strong>Non-Riemannian Geometry as a Reason of the Third Modification of the Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0612138 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 14 December 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Non-Riemannian geometry as a reason of the third modification of the space-time geometry - 0612138-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Non-Riemannian geometry as a reason of the third modification of the space-time geometry - 0612138.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Non-Riemannian geometry as a reason of the third modification of the space-time geometry - 0612138.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A short, programmatic paper with one organising idea: dynamics has advanced twice by changing the space-time geometry, and the third change is available and has not been made. The first change gave Minkowski, the second gave Riemannian curvature, the third gives a geometry in which free motion is primordially stochastic. He calls it T-geometry, states the dynamics it forces — multivariant dynamics — and shows that the Schrödinger and Klein-Gordon equations come out of it as consequences rather than postulates. The compressed version of the argument that 0806.1716 develops at length.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-modifications">The three modifications</h3>
+<p>"The first modification solved the problem of motion with large velocities. It is known as the special relativity. The first modification led to Minkowski space-time as a result of replacement of two invariants of the event space by one invariant." Then: "The second modification is known as the general relativity. This modification led to the Riemannian space-time geometry, which is a result of influence of the matter distribution on the space-time curvature."</p>
+<p>The third: "The third modification has not yet a short name." It "led to non-Riemannian space-time geometry (T-geometry)", and in it "the quantum principles are not used."</p>
+<h3 id="why-stochasticity-follows-from-the-geometry">Why stochasticity follows from the geometry</h3>
+<p>"In the non-Riemannian space-time geometry the motion of free particles is multivariant (stochastic), and one needs a special multivariant dynamics, which must be compatible with the space-time geometry. Note that the space-time geometry in itself is single-variant (deterministic), whereas the motion of particles in the single-variant space-time is multivariant (stochastic). This is a corollary of the multivariance of the parallelism concept."</p>
+<p>The contrast with Minkowski is a statement about where the stochasticity comes from: "In the Minkowski space-time geometry the deterministic motion is natural in the sense, that there are no special reasons for the deterministic motion. The natural stochastic motion in the Minkowski geometry is impossible. The stochastic motion is artificial in the sense, that there must be some special reason for the stochasticity." And the reversal: "In the non-Riemannian space-time the motion of any particle is stochastic and there is no special reason for the stochasticity. In this sense the stochastic motion is natural."</p>
+<h3 id="the-mechanism-in-one-formula">The mechanism, in one formula</h3>
+<p>Dynamic quantization is the replacement of the mass in the ensemble action, "ik κi κk + ∂k κk ) (5.16) h̄ where λ = mc is the Compton wave length of the particle and the metric tensor 2 gik =diag{c , −1, −1, −1}." and</p>
+<p>$$K=\sqrt{1+\lambda^{2}(g^{ik}\kappa_{i}\kappa_{k}+\partial_{k}\kappa^{k})}.$$</p>
+<p>The effective mass is what the substitution produces: $m\to m_{\mathrm{eff}}^{2}=m^{2}\left(1+g_{ik}\frac{u^{i}u^{k}}{c^{2}}+\frac{\hbar}{mc^{2}}\partial_{k}u^{k}\right)$. In the non-relativistic limit the action becomes the one that "generates the Schrödinger equation for the irrotational flow of the fluid, described by this action. In the relativistic case we obtain the Klein-Gordon equation."</p>
+<h3 id="the-claim-about-status">The claim about status</h3>
+<p>"Thus, we see that the proper modification of the space-time geometry generates the multivariant dynamics, which describes quantum phenomena without any additional suppositions. It means, that we obtain a fundamental theory, which replaces the curtailed theory (conventional nonrelativistic quantum mechanics)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-third-modification-as-a-named-slot">1. The third modification as a named slot</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> of the history of dynamics as a sequence of three geometry changes, in which the third is identified by its signature — free motion becomes stochastic — rather than by its equations. A slot with a signature is a claim that a fourth change would have to look different in kind.</p>
+<p><strong>What it would add.</strong> The corpus's curved-spacetime article is a boundary report: curvature can be carried by a frame field, and nothing in the algebra determines it. Rylov's scheme supplies the missing selection criterion — the geometry is fixed by what it must make natural. Stated this way, the question "which geometry" becomes a question about which class of motion is to be primitive, and that is a question the corpus's frame article could pose without adopting the answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The sequence is a narrative, not a derivation; nothing forces the third slot to exist, and the pattern of two precedents is weak evidence for a third. It also ignores the changes that did not take: Weyl's, Kaluza's, and the many non-Riemannian programmes of the 1920s.</p>
+<h3 id="2-the-effective-mass-as-the-carrier-of-math11">2. The effective mass as the carrier of $\hbar$</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> in the form of a substitution: $m^{2}\to m^{2}\left(1+\lambda^{2}(\kappa^{2}+\partial\kappa)\right)$, where $\lambda=\hbar/mc$. Planck's constant enters as a length, and the quantum modification of a classical ensemble is a change in the mass term of its action.</p>
+<p><strong>What it would add.</strong> The corpus's mass term in its wave equation is a constant, and $\hbar$ enters as a coefficient in the derivative. Putting $\hbar$ inside the mass through the Compton length makes the quantum correction vanish as $m\to\infty$, which is the correspondence principle obtained without a limit being taken by hand — a structural gain the corpus's own account does not have, since it takes $\hbar\to0$ as an external operation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The substitution is presented, not derived: nothing in the geometry says the mass must be modified this way. As a derivation it is a guess that happens to reproduce two known equations — which is precisely the compensating-conception charge Rylov levels at others.</p>
+<h3 id="3-natural-versus-artificial-stochasticity">3. Natural versus artificial stochasticity</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong> with a criterion: a motion is natural if no special reason is needed for it, artificial if a reason must be supplied. In Minkowski space the stochastic motion is artificial; in T-geometry the deterministic one is the special case.</p>
+<p><strong>What it would add.</strong> The corpus takes a deterministic field theory as its base and adds a probabilistic rule, so by this criterion its stochasticity is artificial — and Rylov would say that is the tell. The distinction gives the corpus a way to state what kind of theory it is without appealing to its own axioms, which is exactly the kind of self-description the corpus's methodology articles try to supply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> Absence of a special reason for a motion is a judgement about explanation, not a property of a theory, and it cannot be formalised as stated. Two theories can each call the other's primitive motion artificial.</p>
+<p>The rank: the third modification first, because it gives a selection criterion; the effective mass second, because it is a concrete substitution; natural stochasticity last, because its criterion is not formal.</p>
+<p>The remaining items in one line each: the claim that the space-time geometry is single-variant while the motion in it is multivariant; the reduction of the two named equations to limits of one action; and the note that the quantum principles are not needed rather than being derived, which is the difference between this programme and a hidden-variable completion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

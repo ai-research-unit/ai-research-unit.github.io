@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probing Wigner Rotations for Any Group — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Probing Wigner Rotations for Any Group 1710.06883v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="probing-wigner-rotations-for-any-group"><strong>Probing Wigner Rotations for Any Group</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1710.06883v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Blagoje Oblak</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 October 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Probing Wigner Rotations for Any Group 1710.06883v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Probing Wigner Rotations for Any Group 1710.06883v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Probing Wigner Rotations for Any Group 1710.06883v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Generalises the Wigner rotation from the Poincaré group to any symmetry group that is a semidirect product of a Lorentz-like group acting on a vector group, and asks the only question that matters for the general case: does the corresponding particle precess, and at what rate? The answer is a criterion — precession happens exactly when a certain curvature does not vanish — and the identification of Thomas precession with the holonomy of a Berry connection built from the Maurer–Cartan form. Written for the BMS group (the asymptotic symmetry of a gravitating spacetime), with Poincaré and Bargmann as the worked examples.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"Wigner rotations are transformations that affect spinning particles and cause the observable phenomenon of Thomas precession. Here we study these rotations for arbitrary symmetry groups with a semi-direct product structure."</p>
+<p>The question, put plainly: "given any semi-direct product group, are the corresponding particles subject to Thomas precession? And if yes, what is the precession rate?" And the answer's form: "We shall formulate the answer in terms of a Berry connection (4.22) related to the Maurer-Cartan form of the symmetry group. Along the way we will derive eq."</p>
+<h3 id="why-the-general-case-is-worth-doing">Why the general case is worth doing</h3>
+<p>"While investigating this topic, it turned out that many of the required tools were not readily available in the literature. Indeed, it is widely known that Thomas precession follows from the presence of Wigner rotations in the transformation law of one-particle states, but most references on this subject in the physics literature only treat it for the very special case of Poincaré symmetry."</p>
+<p>The gap on the other side: "the mathematics literature mostly seems to focus on abstract structures rather than the concrete computations needed by physicists". The author also flags a nearby effect he does not pursue: "Wigner rotations are also responsible for entanglement between spin and momentum".</p>
+<h3 id="the-identification">The identification</h3>
+<p>"The observations of the last few pages show that Wigner rotations, Thomas precession and Berry phases are one and the same thing when it comes to Wigner-Mackey representations."</p>
+<p>And the criterion: "we now know that Thomas precession occurs if and only if the curvature of the connection (4.22) does not vanish identically. As argued around eq. (4.10), this curvature need not vanish thanks to the fact that it is a projection of the Maurer-Cartan form down to the stabilizer."</p>
+<h3 id="the-two-test-cases">The two test cases</h3>
+<p>The paper illustrates with "the Poincaré group (which does display Thomas precession) and the Bargmann group (which does not)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-thomas-precession-is-a-berry-phase">1. Thomas precession is a Berry phase</h3>
+<p><strong>The idea.</strong> An <strong>identification</strong>: the net rotation accumulated by a spin along a closed path in momentum space is the holonomy of a connection on that space, so Thomas precession is a geometric phase and not a separate kinematic effect.</p>
+<p><strong>What it would add.</strong> The corpus's Thomas precession exercise derives the precession rate from the composition of instantaneous rest frames and stops at the angular velocity. It never says that the quantity is a holonomy, or that the "connection" it is computing has a name and a curvature. The identification is not decorative: it explains why precession is path-dependent, why a closed loop in velocity space can return the particle with a rotated spin, and why the effect survives in any theory with the same semidirect structure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-thomas-precession.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's derivation is a differential statement in one frame; a holonomy is an integral statement over a path space. Bridging them needs the momentum-space connection written explicitly, which the corpus does not construct, and importing the Berry-phase language would add machinery the exercise's scope does not need.</p>
+<h3 id="2-the-criterion-curvature-or-nothing">2. The criterion: curvature or nothing</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: whether a particle precesses is decided by whether the curvature of the Wigner–Berry connection vanishes. For Poincaré it does not; for Bargmann it does; so the effect is a property of the group, computable before any dynamics.</p>
+<p><strong>What it would add.</strong> The corpus treats Thomas precession as an inevitable consequence of boosting, visible in the $\tfrac12$ of the spin–orbit coupling. This says it is contingent: a different semidirect structure gives no precession at all. For a corpus that repeatedly asks which features of relativistic quantum mechanics are kinematic and which are conventional, precession is a curvature is a clean answer of the first kind, and the Bargmann counterexample is the control case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus works in the Lorentz group itself and has no occassion to vary it; the criterion's value there is conceptual, and stating it without the general construction would be an unsupported slogan.</p>
+<h3 id="3-spinmomentum-entanglement-as-a-wigner-effect">3. Spin–momentum entanglement as a Wigner effect</h3>
+<p><strong>The idea.</strong> A <strong>pointer</strong>: the same rotation that precesses a spin also entangles spin with momentum, because the rotation applied depends on the momentum. The author names the effect and sets it aside.</p>
+<p><strong>What it would add.</strong> The corpus has a dedicated frame-dependent entanglement article that derives spin–momentum entanglement from boosts directly. This supplies the group-theoretic reason it must happen — the little-group element is momentum-dependent by construction — and would let the corpus's article state its result as an instance of a general theorem rather than as a property of one representation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper does not develop the point, so the citation would rest on a single sentence; and the corpus's article already derives the effect, so the addition is a reason rather than a result.</p>
+<p>The rank: the Berry-phase identification first, because it is a name for a quantity the corpus already computes; the curvature criterion second, because it is a decision procedure; the entanglement pointer last, because it is undeveloped here.</p>
+<p>The remaining items in one line each: the general Lie-algebra formula for infinitesimal transformations of one-particle states, which the author could not find in the literature and which is the paper's technical novelty; the cohomological treatment of the freedom in choosing standard boosts, which is a gauge choice and explains why different textbook conventions disagree; and the explicit statement that the BMS case is deferred to a separate paper, which is where the machinery is actually aimed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

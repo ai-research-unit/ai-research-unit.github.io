@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feynman Checkerboard — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Feynman checkerboard.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="feynman-checkerboard"><strong>Feynman Checkerboard</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Feynman checkerboard</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Feynman checkerboard-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Feynman checkerboard.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Feynman checkerboard.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on Feynman's checkerboard or relativistic chessboard model: the sum-over-paths formulation of the kernel for a free spin-$\tfrac12$ particle in one spatial dimension, in which the path integral becomes a discrete sum over left and right steps on a spacetime lattice, and the resulting object represents solutions of the Dirac equation in 1+1 dimensions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"The Feynman checkerboard, or relativistic chessboard model, was Richard Feynman's sum-over1 paths formulation of the kernel for a free spin- 2 particle moving in one spatial dimension. It provides a representation of solutions of the Dirac equation in (1+1)-dimensional spacetime as discrete sums. Feynman"</p>
+<h3 id="the-lattice-and-the-walk">The lattice and the walk</h3>
+<p>"The model can be visualised by considering relativistic random walks on a two-dimensional spacetime checkerboard. At each discrete timestep the particle of mass moves a distance to the left or right ( being the speed of light). For such a discrete motion, the Feynman path integral reduces to a sum over the possible paths. Feynman demonstrated that if each" turn " (change" is weighted by a factor, the sum reproduces the Dirac propagator. </p>
+<h3 id="what-the-weight-is">What the weight is</h3>
+<p>The turn weight is printed as an image and is not recoverable from the text layer; the prose says only that each turn "is weighted by" ed by (with denoting the reduced Planck constant), in the limit of infinitely small checkerboard squares "in the limit of infinitely small checkerboard squares the sum of all weighted paths yields a propagator that satisfies the one-dimensional Dirac equation. As a result, helicity (the one-dimensional equivalent of spin) is obtained from a simple cellular-automata-type rule."</p>
+<h3 id="the-discrete-phase">The discrete phase</h3>
+<p>"The checkerboard model is important because it connects aspects of spin and chirality with propagation in spacetime and is the only sum-over-path formulation in which quantum phase is discrete at the level of the paths, taking only values corresponding to the 4th roots of unity." </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-spin-is-the-bookkeeping-of-direction-changes">1. Spin is the bookkeeping of direction changes</h3>
+<p><strong>The idea.</strong> In one spatial dimension a path is a sequence of left and right steps, and a turn is a change of direction. The two-component structure of the Dirac spinor is the two directions, and the mass is the amplitude for switching between them.</p>
+<p><strong>What it would add.</strong> A discrete model of exactly the object the corpus treats continuously: the spinor's two components as two velocities, with the mass coupling them. The corpus's polar form writes the velocity and the spin as separate fields; the checkerboard makes them the two signs of one velocity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.md</code>, as the (1+1)-dimensional case.</p>
+<p><strong>What stands in the way.</strong> The model is one-dimensional and relies on a light-cone lattice; extending it to 3+1 dimensions is not a matter of relabelling, since the lattice no longer captures the Lorentz group.</p>
+<h3 id="2-zitterbewegung-becomes-literal">2. Zitterbewegung becomes literal</h3>
+<p><strong>The idea.</strong> The particle moves at the speed of light always, reversing direction; the average velocity is less than $c$ and the rapid reversals are the trembling motion.</p>
+<p><strong>What it would add.</strong> A concrete picture for the Zitterbewegung the corpus mentions only as a name.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's fluid has a smooth four-velocity; a light-speed zigzag is not a congruence, so the picture would have to be presented as a limit rather than a model of the fluid.</p>
+<p>This is an encyclopedia article; the model, the lattice walk and the turn weight are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

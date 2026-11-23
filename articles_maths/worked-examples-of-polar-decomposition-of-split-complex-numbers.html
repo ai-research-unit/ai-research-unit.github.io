@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-coordinates">The Coordinates</h3>
 <p>For $Q=q+jq'$ the two real coordinates are $q$ and $q'$. The modulus and the angle are</p>
 <p>$$
-\varrho=\sqrt{\lvert q^2-q'^2\rvert}
+\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}
 =\sqrt{\lvert(q+q')(q-q')\rvert},
 \qquad
 \theta=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
@@ -149,22 +149,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$q>\lvert q'\rvert$</td>
+<td>$q&gt;\lvert q'\rvert$</td>
 <td>$1$</td>
 <td>future cone $F$</td>
 </tr>
 <tr>
-<td>$q<-\lvert q'\rvert$</td>
+<td>$q&lt;-\lvert q'\rvert$</td>
 <td>$-1$</td>
 <td>past cone</td>
 </tr>
 <tr>
-<td>$q'>\lvert q\rvert$</td>
+<td>$q'&gt;\lvert q\rvert$</td>
 <td>$j$</td>
 <td>right wedge $R$</td>
 </tr>
 <tr>
-<td>$q'<-\lvert q\rvert$</td>
+<td>$q'&lt;-\lvert q\rvert$</td>
 <td>$-j$</td>
 <td>left wedge $L$</td>
 </tr>
@@ -189,11 +189,11 @@ $$</p>
 <h3 id="the-matrix-picture">The Matrix Picture</h3>
 <p>The matrix of multiplication by $Q$ in the basis $(1,j)$ is</p>
 <p>$$
-M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}.
+M_Q=\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix}.
 $$</p>
-<p>Its trace is $2q$ and its determinant is $q^2-q'^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is invertible. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.</p>
+<p>Its trace is $2q$ and its determinant is $q^2-q'{}^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is invertible. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.</p>
 <h3 id="the-null-cone">The Null Cone</h3>
-<p>For $q^2-q'^2=0$ the element is a nonzero zero divisor, of the form $Q=q(1\pm j)$ with $q\neq0$, and no polar word exists: the modulus vanishes, the angle diverges and the unit factor is undefined. The matrix has rank one, its determinant is zero, and $Q^2=2q\,Q$. Case 8 treats the boundary explicitly.</p>
+<p>For $q^2-q'{}^2=0$ the element is a nonzero zero divisor, of the form $Q=q(1\pm j)$ with $q\neq0$, and no polar word exists: the modulus vanishes, the angle diverges and the unit factor is undefined. The matrix has rank one, its determinant is zero, and $Q^2=2q\,Q$. Case 8 treats the boundary explicitly.</p>
 <h2 id="the-eight-cases">The Eight Cases</h2>
 <h3 id="case-1-a-generic-element-of-the-future-cone">Case 1: A Generic Element of the Future Cone</h3>
 <p><strong>Coordinates.</strong> For $Q=5+3j$,</p>
@@ -202,13 +202,13 @@ q=5,
 \qquad
 q'=3,
 \qquad
-q^2-q'^2=25-9=16,
+q^2-q'{}^2=25-9=16,
 \qquad
 q+q'=8,
 \qquad
 q-q'=2.
 $$</p>
-<p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
+<p>Since $q&gt;\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are</p>
 <p>$$
 \varrho=\sqrt{16}=4,
@@ -234,7 +234,7 @@ $$</p>
 $$</p>
 <p>and the error is $0$. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}5&3\\3&5\end{pmatrix}
+M_Q=\begin{pmatrix}5&amp;3\\3&amp;5\end{pmatrix}
 $$</p>
 <p>has trace $10$ and determinant $16$.</p>
 <h3 id="case-2-a-generic-element-of-the-right-wedge">Case 2: A Generic Element of the Right Wedge</h3>
@@ -244,13 +244,13 @@ q=3,
 \qquad
 q'=5,
 \qquad
-q^2-q'^2=9-25=-16,
+q^2-q'{}^2=9-25=-16,
 \qquad
 q+q'=8,
 \qquad
 q-q'=-2.
 $$</p>
-<p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
+<p>Since $q'&gt;\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are</p>
 <p>$$
 \varrho=\sqrt{\lvert-16\rvert}=4,
@@ -278,7 +278,7 @@ $$</p>
 $$</p>
 <p>The exponent is a logarithm of $\epsilon Q$, not of $Q$. The error in $Q$ is $0$. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}3&5\\5&3\end{pmatrix}
+M_Q=\begin{pmatrix}3&amp;5\\5&amp;3\end{pmatrix}
 $$</p>
 <p>has trace $6$ and determinant $-16$.</p>
 <h3 id="case-3-a-generic-element-of-the-past-cone">Case 3: A Generic Element of the Past Cone</h3>
@@ -288,13 +288,13 @@ q=-5,
 \qquad
 q'=-3,
 \qquad
-q^2-q'^2=25-9=16,
+q^2-q'{}^2=25-9=16,
 \qquad
 q+q'=-8,
 \qquad
 q-q'=-2.
 $$</p>
-<p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
+<p>Since $q&lt;-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are again</p>
 <p>$$
 \varrho=4,
@@ -314,7 +314,7 @@ Q=4\left(-\tfrac54-\tfrac34j\right)=-5-3j.
 $$</p>
 <p><strong>Check.</strong> The product $\epsilon Q=-Q=5+3j$ lies in $F$, and $\exp(Q_{\log})=5+3j=\epsilon Q$ with error $0$. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}-5&-3\\-3&-5\end{pmatrix}
+M_Q=\begin{pmatrix}-5&amp;-3\\-3&amp;-5\end{pmatrix}
 $$</p>
 <p>has trace $-10$ and determinant $16$.</p>
 <h3 id="case-4-a-generic-element-of-the-left-wedge">Case 4: A Generic Element of the Left Wedge</h3>
@@ -324,13 +324,13 @@ q=1,
 \qquad
 q'=-2,
 \qquad
-q^2-q'^2=1-4=-3,
+q^2-q'{}^2=1-4=-3,
 \qquad
 q+q'=-1,
 \qquad
 q-q'=3.
 $$</p>
-<p>Since $q'<-\lvert q\rvert$, the component sign is $\epsilon=-j$.</p>
+<p>Since $q'&lt;-\lvert q\rvert$, the component sign is $\epsilon=-j$.</p>
 <p><strong>Polar data.</strong> The modulus is $\sqrt3$ and the angle is negative:</p>
 <p>$$
 \varrho=\sqrt{\lvert-3\rvert}=\sqrt3,
@@ -359,7 +359,7 @@ $$</p>
 $$</p>
 <p>The error is $2.2\times10^{-16}$. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}1&-2\\-2&1\end{pmatrix}
+M_Q=\begin{pmatrix}1&amp;-2\\-2&amp;1\end{pmatrix}
 $$</p>
 <p>has trace $2$ and determinant $-3$.</p>
 <h3 id="case-5-the-discrete-unit">Case 5: The Discrete Unit</h3>
@@ -369,13 +369,13 @@ q=0,
 \qquad
 q'=1,
 \qquad
-q^2-q'^2=-1,
+q^2-q'{}^2=-1,
 \qquad
 q+q'=1,
 \qquad
 q-q'=-1.
 $$</p>
-<p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
+<p>Since $q'&gt;\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
 <p><strong>Polar data.</strong> The modulus is one and the angle vanishes:</p>
 <p>$$
 \varrho=1,
@@ -391,7 +391,7 @@ Q=1\cdot j=j.
 $$</p>
 <p><strong>Check.</strong> $\exp(0)=1$, so $\exp(Q_{\log})=1=\epsilon Q$, and the error is $0$. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+M_Q=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}
 $$</p>
 <p>has trace $0$ and determinant $-1$. The element is the pure component sign: no scale and no angle.</p>
 <h3 id="case-6-the-positive-scalar">Case 6: The Positive Scalar</h3>
@@ -401,13 +401,13 @@ q=2,
 \qquad
 q'=0,
 \qquad
-q^2-q'^2=4,
+q^2-q'{}^2=4,
 \qquad
 q+q'=2,
 \qquad
 q-q'=2.
 $$</p>
-<p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
+<p>Since $q&gt;\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
 <p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
 <p>$$
 \varrho=2,
@@ -433,13 +433,13 @@ q=-2,
 \qquad
 q'=0,
 \qquad
-q^2-q'^2=4,
+q^2-q'{}^2=4,
 \qquad
 q+q'=-2,
 \qquad
 q-q'=-2.
 $$</p>
-<p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
+<p>Since $q&lt;-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
 <p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
 <p>$$
 \varrho=2,
@@ -465,7 +465,7 @@ q=1,
 \qquad
 q'=1,
 \qquad
-q^2-q'^2=1-1=0,
+q^2-q'{}^2=1-1=0,
 \qquad
 q+q'=2,
 \qquad
@@ -474,7 +474,7 @@ $$</p>
 <p>The product $Q\bar Q$ vanishes, so there is no modulus, no angle and no component sign: the element is a zero divisor.</p>
 <p><strong>No polar word.</strong> The exponential has image $F$ and is injective, so $Q\notin F$ has no logarithm. The matrix</p>
 <p>$$
-M_Q=\begin{pmatrix}1&1\\1&1\end{pmatrix}
+M_Q=\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}
 $$</p>
 <p>has rank one and determinant $0$. Its square is</p>
 <p>$$
@@ -484,7 +484,7 @@ $$</p>
 <p>$$
 Q_\delta=(1+\delta)+j,
 \qquad
-\delta>0.
+\delta&gt;0.
 $$</p>
 <p>Its coordinates give</p>
 <p>$$
@@ -529,7 +529,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger combination tends to $2$; the word tends to the boundary value $1+j$. The polar decomposition exists on the open components and stops exactly at $q^2-q'^2=0$.</p>
+<p>As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger combination tends to $2$; the word tends to the boundary value $1+j$. The polar decomposition exists on the open components and stops exactly at $q^2-q'{}^2=0$.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
@@ -539,7 +539,7 @@ $$</p>
 <th>$Q$</th>
 <th>$q$</th>
 <th>$q'$</th>
-<th>$q^2-q'^2$</th>
+<th>$q^2-q'{}^2$</th>
 <th>$\epsilon$</th>
 <th>$\varrho$</th>
 <th>$\theta$</th>
@@ -711,7 +711,7 @@ $$</p>
 <ul>
 <li>Cases 1 to 3 share the modulus $\varrho=4$ and the angle $\theta=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.</li>
 <li>Cases 2 and 3 have $\exp(Q_{\log})=\epsilon Q$, not $Q$. The exponent is the logarithm of the element pushed into the future cone.</li>
-<li>Case 4 has $q>0$ but $q+q'<0$, so the component is the left wedge, not the future cone. The sign of $q$ does not determine the component.</li>
+<li>Case 4 has $q&gt;0$ but $q+q'&lt;0$, so the component is the left wedge, not the future cone. The sign of $q$ does not determine the component.</li>
 <li>Cases 6 and 7 have the same exponent $\ln2$ and differ only by $\epsilon$. The discrete factor is not a period: the kernel of the exponential is $\{0\}$.</li>
 <li>Case 5 is the pure discrete factor, with $\varrho=1$ and $\theta=0$.</li>
 <li>Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $\varrho\to0$, $\theta\to\infty$ with $\varrho e^{\theta}\to2$.</li>
@@ -738,7 +738,7 @@ $$</p>
 <td>the two real coordinates</td>
 </tr>
 <tr>
-<td>$q^2-q'^2=(q+q')(q-q')$</td>
+<td>$q^2-q'{}^2=(q+q')(q-q')$</td>
 <td>the product $Q\bar Q$</td>
 </tr>
 <tr>
@@ -746,7 +746,7 @@ $$</p>
 <td>the component sign</td>
 </tr>
 <tr>
-<td>$\varrho=\sqrt{\lvert q^2-q'^2\rvert}$</td>
+<td>$\varrho=\sqrt{\lvert q^2-q'{}^2\rvert}$</td>
 <td>the modulus</td>
 </tr>
 <tr>

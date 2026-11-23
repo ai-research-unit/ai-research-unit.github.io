@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic propagation in fluids: an unexpected example of Lorentzian geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic propagation in fluids - an unexpected example of Lorentzian geometry -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="acoustic-propagation-in-fluids-an-unexpected-example-of-lorentzian-geometry"><strong>Acoustic propagation in fluids: an unexpected example of Lorentzian geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>letter (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9311028v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 November 1993; dated 11 October 1993</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Acoustic propagation in fluids - an unexpected example of Lorentzian geometry - gr-qc_9311028-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic propagation in fluids - an unexpected example of Lorentzian geometry - gr-qc_9311028.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic propagation in fluids - an unexpected example of Lorentzian geometry - gr-qc_9311028.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The original short statement of the acoustic analogy. For a barotropic, inviscid, irrotational fluid with arbitrary time dependence, the velocity potential of a sound wave satisfies $\Delta\psi\equiv\partial_\mu(\sqrt{-g}\,g^{\mu\nu}\partial_\nu\psi)/\sqrt{-g}=0$ in a Lorentzian metric built from the density, the flow velocity and the local sound speed. The fluid is Newtonian, non-relativistic and lives in flat space plus time, yet the fluctuations see a curved Lorentzian geometry with a non-zero Riemann tensor. The paper derives the acoustic metric from the continuity and Euler equations in a handful of lines and draws out the two-way benefit: general-relativistic machinery becomes available to fluid dynamics, and fluid dynamics supplies a laboratory model of Lorentzian geometry.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"It is a deceptively simple question to ask how acoustic disturbances propagate in a non-homogeneous flowing fluid." For a static homogeneous fluid the answer is $\partial_t^2\psi=c^2\nabla^2\psi$; the paper asks what happens when the fluid moves, is inhomogeneous, and is unsteady.</p>
+<h3 id="the-result">The result</h3>
+<p>"If the fluid is barotropic and inviscid, and the flow is irrotational (though it may have an arbitrary time dependence) then the equation of motion for the velocity potential describing an acoustic disturbance can be put in the (3+1)-dimensional form" $\Delta\psi=0$, with acoustic metric</p>
+<p>$$g_{\mu\nu}(t,\vec x)\equiv\frac{\rho}{c}\begin{pmatrix}-(c^2-v^2)&amp;\vdots&amp;-\vec v\\ \cdots\cdots\cdots\cdots&amp;\cdot&amp;\cdots\cdots\cdots\cdots\\ -\vec v&amp;\vdots&amp;I\end{pmatrix}, \qquad (paper\ 3)$$</p>
+<p>depending on "the density, velocity of flow, and local speed of sound in the fluid."</p>
+<h3 id="why-the-curvature-is-real">Why the curvature is real</h3>
+<p>"In general, when the fluid is non-homogeneous and flowing, the acoustic Riemann tensor associated with this Lorentzian metric will be nonzero. It is quite remarkable that even though the underlying fluid dynamics is Newtonian, nonrelativistic, and takes place in flat space + time, the fluctuations (sound waves) are governed by a curved Lorentzian (pseudo-Riemannian) geometry."</p>
+<h3 id="the-derivations-shape">The derivation's shape</h3>
+<p>Continuity $\partial_t\rho+\nabla\cdot(\rho\vec v)=0$ and Euler $\rho\,d\vec v/dt=\vec F$ with $\vec F=-\nabla p-\rho\nabla\varphi$; barotropy gives $\zeta(p)=\int_0^p dp'/\rho(p')$ so that $\nabla\zeta=\nabla p/\rho$; irrotationality gives $\vec v=-\nabla\psi$. Euler then integrates to $-\partial_t\psi+\zeta+\frac12(\nabla\psi)^2+\varphi=0$. Linearising about $(\rho_0,p_0,\psi_0)$ gives $p_1=\rho_0(\partial_t\psi_1+\vec v_0\cdot\nabla\psi_1)$ and a single wave equation for $\psi_1$ with arbitrary background dependence.</p>
+<h3 id="the-two-way-trade">The two-way trade</h3>
+<p>"This connection between fluid dynamics and techniques more commonly encountered in the context of general relativity opens up many opportunities for cross-pollination between the two fields." And: "a large quantity of technical mathematical machinery currently utilized only within the context of general relativity may thus become of interest to the fluid dynamics community. On the other hand, the results of this letter give the general relativists a very down to earth physical model for certain classes of Lorentzian geometry."</p>
+<h3 id="the-priority-note">The priority note</h3>
+<p>"After this paper was submitted for publication I was informed that similar results can be found in the interesting but little-known work of Unruh. In that Letter, Unruh investigated the acoustic equivalent of Hawking radiation arising from the fluid dynamical analogue of a black hole."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-lorentzian-metric-from-a-non-relativistic-system">1. A Lorentzian metric from a non-relativistic system</h3>
+<p><strong>The idea.</strong> A Newtonian fluid in flat space produces, for its own fluctuations, a curved Lorentzian geometry with a non-zero Riemann tensor. Relativity of the <em>substrate</em> is not needed for relativity of the <em>excitations</em>.</p>
+<p><strong>What it would add.</strong> This is the strongest statement in the collection of a thesis the corpus's <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> assumes rather than argues: that a Lorentzian geometry can arise from something that is not one. The paper shows the emergence is algebraic — the metric is assembled from $\rho$, $\vec v$ and $c$ — and that the resulting curvature is genuine. The corpus's spacetime is put in by hand; here it comes out of a wave equation, and that difference is worth stating in one place.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, as an existence proof of an alternative route.</p>
+<p><strong>What stands in the way.</strong> The emergent metric depends on a fluid's state and is not universal; it is a metric for sound, not for light. The corpus's metric is for everything. The two claims are different in kind, and conflating them would be the error the corpus's discipline is designed to prevent.</p>
+<h3 id="2-cross-pollination-as-a-method">2. Cross-pollination as a method</h3>
+<p><strong>The idea.</strong> An isomorphism between two fields is valuable in both directions, and the paper says so explicitly: general-relativistic technique becomes available to acoustics, and acoustics becomes a model for geometry.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/a-brief-history-of-biquaternions-in-physics.md</code> records borrowings in one direction, from mathematics into physics. A worked case of a two-way transfer, with different machinery moving each way, is a different pattern and a corrective to a one-way narrative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/a-brief-history-of-biquaternions-in-physics.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a historiographic point. Ranked second.</p>
+<h3 id="3-one-wave-equation-carries-three-fields">3. One wave equation carries three fields</h3>
+<p><strong>The idea.</strong> The scalar equation for $\psi_1$ "completely determines the quantities $p_1$ and $\rho_1$": one degree of freedom, three physical fields, because the other two are tied to it by the linearised constitutive relations.</p>
+<p><strong>What it would add.</strong> A counting argument the corpus uses implicitly. <code>articles_physics/the-n-norm-mass-angle-and-the-cone.md</code> counts degrees of freedom in an algebraic setting; here the counting is done by the structure of the equations of motion, and the number of independent fields is smaller than the number of names. That distinction — names versus degrees of freedom — is a recurring hazard the corpus could name once.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-n-norm-mass-angle-and-the-cone.md</code>.</p>
+<p><strong>What stands in the way.</strong> The reduction uses the equation of state. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

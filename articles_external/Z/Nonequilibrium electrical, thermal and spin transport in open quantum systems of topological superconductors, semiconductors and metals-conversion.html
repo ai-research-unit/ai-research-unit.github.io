@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nonequilibrium Electrical, Thermal and Spin Transport in Open Quantum Systems of Topological Superconductors, Semiconductors and Metals — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Nonequilibrium electrical, thermal and spin transport in open quantum systems of topological…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nonequilibrium-electrical-thermal-and-spin-transport-in-open-quantum-systems-of-topological-superconductors-semiconductors-and-metals"><strong>Nonequilibrium Electrical, Thermal and Spin Transport in Open Quantum Systems of Topological Superconductors, Semiconductors and Metals</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2010.08336v2 [cond-mat.mes-hall]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nilanjan Bondyopadhaya (Visva-Bharati), Dibyendu Roy (Raman Research Institute)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 1 April 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>64 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Nonequilibrium electrical, thermal and spin transport in open quantum systems of topological superconductors, semiconductors and metals-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Nonequilibrium electrical, thermal and spin transport in open quantum systems of topological superconductors, semiconductors and metals.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Nonequilibrium electrical, thermal and spin transport in open quantum systems of topological superconductors, semiconductors and metals.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives exact steady-state electrical, thermal and spin currents for open quantum systems whose central region and leads are topological superconductors, semiconductors or metals, using quantum Langevin equations and the Green's function method, checks them against direct time-evolution simulations, and reports a quantised thermal conductance peak at the topological transition plus a differential spin conductance.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"We study nonequilibrium transport in various open quantum systems whose systems and leads/baths are made of topological superconductors (TSs), semiconductors, and metals. Using quantum Langevin equations and Green's function method, we derive exact expressions for steady-state electrical, thermal, and spin current[s]."</p>
+<h3 id="the-validation">The validation</h3>
+<p>"We validate these current expressions by comparing them with the results from direct time-evolution simulations."</p>
+<h3 id="the-two-part-current">The two-part current</h3>
+<p>"We then show how an electrical current injected in TS wires divides into two parts carried by single electronic excitations and Cooper pairs."</p>
+<h3 id="thermal-transport">Thermal transport</h3>
+<p>"We further show ballistic thermal transport in an open TS wire in the topological phase under temperature or voltage bias. The thermal current values grow significantly near the topological phase transition, where thermal conductance displays a sharp quantized peak as predicted earlier. We relate the quantized thermal conductance to the zero-frequency thermoelectric transmission coefficient."</p>
+<h3 id="spin-transport">Spin transport</h3>
+<p>"We introduce a differential spin conductance which displays" characteristic signature at the transition.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-current-splits-between-single-particles-and-pairs">1. A current splits between single particles and pairs</h3>
+<p><strong>The idea.</strong> In a topological superconductor wire the injected electrical current has two carriers — single electronic excitations and Cooper pairs — and the split is a property of the phase, not of the bias. This is a <strong>mechanism</strong> for separating charge from spin transport.</p>
+<p><strong>What it would add.</strong> A concrete case where the corpus's spin current and charge current are not proportional, which its spin-hydrodynamics article assumes in the non-relativistic limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>, at the current decomposition.</p>
+<p><strong>What stands in the way.</strong> The paper's formalism is a many-body open system with baths; the corpus's spin current is a bilinear of a single field, so the two notions of "spin current" are not the same object.</p>
+<h3 id="2-a-quantised-conductance-peak-marks-a-phase-transition">2. A quantised conductance peak marks a phase transition</h3>
+<p><strong>The idea.</strong> The thermal conductance has a sharp quantised peak exactly at the topological transition, tied to the zero-frequency transmission coefficient. The peak is the experimental signature.</p>
+<p><strong>What it would add.</strong> A measurable marker for a topological change, which the corpus's topological-charge articles discuss only as an invariant.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.md</code>, on observables.</p>
+<p><strong>What stands in the way.</strong> The corpus has no transport theory and no bath; the marker is a statement about an open system, which the corpus does not model.</p>
+<p>This is a twenty-page preprint; the exact currents, the validation, the two-carrier split, the quantised thermal peak and the spin conductance are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

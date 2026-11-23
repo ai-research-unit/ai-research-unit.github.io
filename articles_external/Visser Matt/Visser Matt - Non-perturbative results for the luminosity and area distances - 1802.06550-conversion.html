@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-perturbative results for the luminosity and area distances — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Non-perturbative results for the luminosity and area distances - 1802.06550.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-perturbative-results-for-the-luminosity-and-area-distances"><strong>Non-perturbative results for the luminosity and area distances</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1802.06550v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Dimitar Ivanov, Stefano Liberati, Matteo Viel, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 30 June 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Non-perturbative results for the luminosity and area distances - 1802.06550-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Non-perturbative results for the luminosity and area distances - 1802.06550.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Non-perturbative results for the luminosity and area distances - 1802.06550.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Luminosity distance is usually defined in FLRW or in perturbation theory. The authors define it in an arbitrary spacetime using a bundle of null geodesics. They write the distance in terms of the affine parameter separation and the van Vleck determinant. The affine parameter supplies the inverse square law; the determinant supplies the departure from it. They relate the van Vleck determinant to the Jacobi determinant and give explicit FLRW and conformally FLRW expressions. The result holds without perturbation theory, and they leave the near-FLRW perturbative case for later work.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"the abstract notion of luminosity distance is actually much more robust than this, and can be defined non-perturbatively in almost arbitrary spacetimes."</p>
+<h3 id="the-tool">The tool</h3>
+<p>"We shall reformulate these results in terms of a suitably normalized null geodesic affine parameter and the van Vleck determinant, $\Delta_{\mathrm{vV}}$."</p>
+<h3 id="the-split">The split</h3>
+<p>"The contribution due to the null geodesic affine parameter is effectively the inverse square law for luminosity, and the van Vleck determinant can be viewed as providing a measure of deviations from the inverse square law."</p>
+<h3 id="the-main-formulae">The main formulae</h3>
+<p>$$d_L=(1+z)^{-1/2}(\lambda_o-\lambda_s)\Delta_{\mathrm{vV}}^{-1/2},\qquad d_{\mathrm{area}}=(\lambda_o-\lambda_s)\Delta_{\mathrm{vV}}^{-1/2} \qquad (paper\ 4.1)$$</p>
+<h3 id="the-relation-to-jacobi">The relation to Jacobi</h3>
+<p>"we have also shown that in all generality the Jacobi determinant is related to the van Vleck determinant by $|\det(J)|=(\lambda_o-\lambda_s)^{2}\Delta_{\mathrm{vV}}^{-1}$."</p>
+<h3 id="what-the-determinant-separates">What the determinant separates</h3>
+<p>"the van Vleck determinant allows you to clearly separate the inverse square law contribution from the focussing/defocussing contribution; information which is obscured in the Jacobi determinant."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"In the current article we shall concentrate on non-perturbative results, leaving near-FLRW perturbative investigation for future work."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-distance-defined-without-a-background">1. A distance defined without a background</h3>
+<p><strong>The idea.</strong> Luminosity distance can be built from a geodesic spray and an affine parameter, with no metric ansatz.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> develops the framework on curved backgrounds. A quantity defined this generally is a candidate observable that does not need the FLRW reduction, which the target's discussion does not consider.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The van Vleck determinant is a scalar of the metric, not of the algebra. Ranked first, because it is an observable the target could carry.</p>
+<h3 id="2-focussing-separated-from-the-inverse-square-law">2. Focussing separated from the inverse square law</h3>
+<p><strong>The idea.</strong> One factor gives the inverse square and another gives the focussing, so the two can be read separately.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats the light cone as a barrier. Focussing is what a congruence of light cones does, and having it isolated as a determinant is the quantitative form the target's picture lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of congruences.</p>
+<p><strong>What stands in the way.</strong> The separation is formal. Ranked second.</p>
+<h3 id="3-affine-parameter-as-the-measure-of-distance">3. Affine parameter as the measure of distance</h3>
+<p><strong>The idea.</strong> The affine parameter along a null geodesic is the natural ruler, and redshift multiplies it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> deals with null propagation. An affine parameter normalisation is a convention that article needs and does not fix.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of null propagation.</p>
+<p><strong>What stands in the way.</strong> The normalisation is stated for a spray, not for a wave. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

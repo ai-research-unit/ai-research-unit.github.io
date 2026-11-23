@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braneworld gravity: influence of the moduli fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Braneworld gravity - Influence of the moduli fields - hep-th_0009032.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="braneworld-gravity-influence-of-the-moduli-fields"><strong>Braneworld gravity: influence of the moduli fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0009032v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 October 2000 (dated 4 September 2000)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Braneworld gravity - Influence of the moduli fields - hep-th_0009032-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Braneworld gravity - Influence of the moduli fields - hep-th_0009032.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Braneworld gravity - Influence of the moduli fields - hep-th_0009032.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper derives the effective gravitational equations on a brane when the bulk contains an arbitrary number of moduli fields. It works in an arbitrary conformal frame, uses generalised junction conditions and the Gauss–Codazzi equations, and allows an arbitrary sigma model, arbitrary curvature couplings, arbitrary self-interactions, and arbitrary bulk dimension, with the brane always of codimension one. The resulting on-brane system is not closed, because the bulk exchanges stress-energy and information with the brane. The authors report three changes from the frozen-dilaton case: an anomalous coupling between the trace of the stress-energy and brane gravity, an exchange channel through the moduli, and a more complicated relation between a moduli-dependent brane tension and the effective cosmological constant.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We consider the case of a generic braneworld geometry in the presence of one or more scalar fields (e.g., the dilaton) that vary throughout the bulk spacetime. Working in an arbitrary conformal frame, using the generalized junction conditions ... and the Gauss–Codazzi equations, we derive the effective 'induced' on-brane gravitational equations."</p>
+<h3 id="non-closure">Non-closure</h3>
+<p>"As usual in braneworld models these equations do not form a closed system in that the bulk can exchange both information and stress-energy with the braneworld."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"We find that while many of the results known from situations where the dilaton is frozen out by hand, or when one ab initio restricts attention to an Einstein frame formulation, continue to hold in this more general context."</p>
+<h3 id="what-changes">What changes</h3>
+<p>"On the other hand, several things change: (1) in general frames there is a possibility of an anomalous coupling between the trace of stress-energy and braneworld gravity; (2) there is the potential for the exchange of stress-energy and information between the bulk, the on-brane variations of the moduli fields, and the braneworld stress-energy; (3) for moduli-dependent brane tensions, the relationship to the effective cosmological constant is more complex, and in particular one can flip the sign of the brane-tension contribution to the effective Newton constant."</p>
+<h3 id="the-authors-own-caveat">The authors' own caveat</h3>
+<p>"While we have analyzed the behaviour of the gravity sector in some detail, it should be emphasised that there is a lot of flexibility in the class of models we consider. For instance, the use of a generic sigma model for the moduli fields gives you a lot of freedom. Likewise the bulk potential $V(\varphi)$ and moduli-dependent brane tension $\lambda(\varphi)$ are freely specifiable in this formalism."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-anomalous-trace-coupling">1. An anomalous trace coupling</h3>
+<p><strong>The idea.</strong> When the moduli are not frozen, the trace of the stress-energy couples to gravity in a frame-dependent way. A trace-free source therefore does not decouple.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats the massless limit as the stratum where the trace vanishes and the theory becomes conformally invariant. This paper shows a mechanism by which that implication can fail: an anomalous coupling renormalises the trace even when the classical source is traceless. The article's identification of "massless" with "conformally invariant" needs that qualification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the statement of the massless limit.</p>
+<p><strong>What stands in the way.</strong> The mechanism lives in a braneworld with extra dimensions, and the article has no extra dimensions. Ranked first, because it qualifies a definition the article uses as a premise.</p>
+<h3 id="2-induced-equations-are-not-fundamental-equations">2. Induced equations are not fundamental equations</h3>
+<p><strong>The idea.</strong> Gravity on the brane is not postulated; it follows from the bulk, and the result is an open system.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> obtains the metric from a frame field and has no field equations at all. This paper shows a middle case: equations that are derived, but incomplete because information leaves through the bulk. Naming that case would let the article say precisely what kind of incompleteness it suffers from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the passage on dynamics.</p>
+<p><strong>What stands in the way.</strong> The brane setting is far from the framework's, so the analogy may not persuade. Ranked second.</p>
+<h3 id="3-too-many-free-functions">3. Too many free functions</h3>
+<p><strong>The idea.</strong> The potential, the tension, the sigma model, and both Lagrangians are free. Nothing is predicted.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> criticises frameworks for unfixed functions. This paper is an example from mainstream physics of the same freedom, offered without apology. Including it would keep the article's criticism proportionate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of free functions.</p>
+<p><strong>What stands in the way.</strong> It cuts against the article's thesis and must be framed as a comparison, not a defence. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

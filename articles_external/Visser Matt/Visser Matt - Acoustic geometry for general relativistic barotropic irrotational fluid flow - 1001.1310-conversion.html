@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic geometry for general relativistic barotropic irrotational fluid flow — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic geometry for general relativistic barotropic irrotational fluid flow -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="acoustic-geometry-for-general-relativistic-barotropic-irrotational-fluid-flow"><strong>Acoustic geometry for general relativistic barotropic irrotational fluid flow</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1001.1310v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Carmen Molina-París</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 May 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Acoustic geometry for general relativistic barotropic irrotational fluid flow - 1001.1310-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic geometry for general relativistic barotropic irrotational fluid flow - 1001.1310.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic geometry for general relativistic barotropic irrotational fluid flow - 1001.1310.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives a minimal, pedagogical derivation of the acoustic metric for barotropic, irrotational fluid flow on an arbitrary curved $(d+1)$-dimensional background. The existing derivations were either restricted — Moncrief's to spherical flow on Schwarzschild, Bilić's hard to read for what is input and what is output — so the authors lay out the smallest set of assumptions that does the job and show exactly where each enters. The result is the contravariant acoustic metric of equation (1), with the relativistic Bernoulli equation and a flux conservation law as the two intermediate results, and thermodynamics deliberately postponed to an appendix. The discussion lists four situations where the relativistic treatment is genuinely needed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap-the-paper-fills">The gap the paper fills</h3>
+<p>"Most of the models currently considered in the literature are based on non-relativistic barotropic irrotational fluids, defined in a flat Newtonian background. The extension, first to special relativistic barotropic fluid flow, and then to general relativistic barotropic fluid flow in an arbitrary background, is less straightforward than it might at first appear." And: "the early 1980 analysis due to Moncrief is restricted to perturbations of a spherically symmetric fluid flow on a Schwarzschild background, and in the more recent 1999 derivation due to Bilić it can be somewhat difficult to discern what is truly fundamental input from what is derived output."</p>
+<h3 id="the-result">The result</h3>
+<p>The (contravariant) acoustic metric governing acoustic perturbations of an irrotational barotropic fluid flow in $d+1$ dimensions is</p>
+<p>$$G^{ab}=\left(\frac{n_0^2 c_s}{\varrho_0+p_0}\right)^{-2/(d-1)}\left[-\frac{c_s^2}{c^2}V_0^aV_0^b+h^{ab}\right], \qquad (paper\ 1)$$</p>
+<p>with $V_0^a$ the background four-velocity of the fluid and $h^{ab}$ the background metric.</p>
+<h3 id="what-each-assumption-buys">What each assumption buys</h3>
+<p>"From the relativistic Euler equation, using only the irrotational condition and the barotropic condition, we will derive the relativistic Bernoulli equation. From the relativistic energy equation, using only the barotropic condition, (that is, without using the irrotational condition), we shall derive a flux conservation law (continuity equation)." The two assumptions are independent and each has its own consequence.</p>
+<h3 id="thermodynamics-is-a-side-issue">Thermodynamics is a side issue</h3>
+<p>"We shall delay the introduction of thermodynamic arguments as long as practicable. (We would argue that thermodynamics is in fact a side issue not central to the derivation.)" The specific enthalpy enters only through the conformal factor, not through the causal structure.</p>
+<h3 id="the-four-cases-where-relativity-matters">The four cases where relativity matters</h3>
+<p>"The current analysis will be needed in four separate situations: When working in an arbitrary curved relativistic background; Whenever the fluid is flowing at relativistic speeds; Less obviously, whenever the speed of sound is relativistic, even if background flows are non-relativistic; (for example a near-equilibrium photon gas where $c_s^2=\frac13 c^2$ but flow velocities are all small) ... Even less obviously, when the internal degrees of freedom of the fluid are relativistic, even if the overall fluid flow and speed of sound are non-relativistic. (That is, in situations where it is necessary to distinguish the energy density $\varrho$ from the mass density $\rho$; this typically happens in situations where the fluid is strongly self coupled — for example in neutron star cores or in relativistic BECs.)"</p>
+<h3 id="the-conformal-structure">The conformal structure</h3>
+<p>The acoustic metric is conformal to $-V_0^aV_0^b\,c_s^2/c^2+h^{ab}$, with the conformal factor $(n_0^2c_s/(\varrho_0+p_0))^{-2/(d-1)}$ carrying the density and enthalpy. The causal structure — and hence the horizons — is untouched by that factor.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-causal-structure-is-conformal-so-the-factor-does-not-matter">1. Causal structure is conformal, so the factor does not matter</h3>
+<p><strong>The idea.</strong> The acoustic metric's causal structure is entirely in the conformal class; the density-dependent prefactor is irrelevant to horizons, ergospheres and Hawking temperature. Only the <em>volume</em> element, and hence the entropy count, sees the prefactor.</p>
+<p><strong>What it would add.</strong> A clean statement of what conformal invariance does and does not buy. The corpus's <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> uses conformal equivalence to relate massive to massless limits, but never states which physical questions are invariant under it. This paper's answer — causal questions yes, counting questions no — is a rule the corpus can adopt verbatim.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is about a Lorentzian metric in $(d+1)$ dimensions and its null cones. The corpus's conformal statements are about an algebra with no conformal factor of this shape. The cost is that the rule transfers but its proof does not.</p>
+<h3 id="2-assumptions-can-be-decoupled-and-audited">2. Assumptions can be decoupled and audited</h3>
+<p><strong>The idea.</strong> The derivation is organised so that each assumption produces exactly one intermediate result, and the paper says which one. Barotropy gives the Bernoulli equation and the flux law; irrotationality gives the velocity potential. Nothing else is used.</p>
+<p><strong>What it would add.</strong> A methodological standard for <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code>, where the corpus builds an action and asserts that it yields the field equations. Splitting a derivation into assumption–consequence pairs, each checkable, is a discipline the corpus would benefit from and does not practise.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a presentation standard. Ranked first, because it is free.</p>
+<h3 id="3-the-number-density-is-not-the-energy-density">3. The number density is not the energy density</h3>
+<p><strong>The idea.</strong> In a relativistic fluid the conserved tracked quantity is the number density $n$, while $\varrho$ is the energy density; the acoustic metric's prefactor uses $\varrho_0+p_0$ and $n_0$ separately, and conflating them is wrong whenever internal degrees of freedom are relativistic.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation laws for quantities whose identity as <em>number</em> or <em>energy</em> is never specified. This paper's distinction — that a conserved current counts something different from what the energy density measures — is exactly the clarification that article needs, and it comes with the physical criterion for when the difference matters.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is between two fluid variables. The corpus has no fluid. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

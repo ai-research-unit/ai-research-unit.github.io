@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conservative entropic forces — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservative entropic forces - 1108.5240.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conservative-entropic-forces"><strong>Conservative entropic forces</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1108.5240v4 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 20 October 2011 (first version 14 September 2011)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Conservative entropic forces - 1108.5240-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservative entropic forces - 1108.5240.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservative entropic forces - 1108.5240.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper takes Verlinde's proposal that gravity is an entropic force and asks the inverse question: if Newtonian gravity is an entropic force, what must the temperature and entropy functions be? It answers in two regimes. With a single heat bath, any conservative force can be written in entropic form, but the resulting model has little to do with Verlinde's. Keeping Verlinde's ingredients — an Unruh-like temperature and an entropy tied to holographic screens — forces a generalised thermodynamic force with several temperatures and entropies, in which the entropies are negative and the temperatures are positive for attraction and negative for repulsion.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"In this article I have not attempted to justify reinterpreting Newtonian gravity as an entropic force, instead I have asked the question: 'If we assume Newtonian gravity is an entropic force, what does this tell us about the relevant thermodynamic system?' What can we say about the relevant temperature and entropy functions? What constraints do they satisfy?"</p>
+<h3 id="the-first-result">The first result</h3>
+<p>"If we want to use a single heat bath, then any conservative force can be recast into entropic force form — but the resulting model is at best orthogonal to Verlinde's proposal."</p>
+<h3 id="the-second-result">The second result</h3>
+<p>"If we wish to retain key parts of Verlinde's proposal (an Unruh-like temperature, and entropy related to 'holographic screens'), then one is unavoidably forced into a more general 'thermodynamic force' scenario with multiple intensive and extensive thermodynamic variables. (Multiple 'temperatures' and 'entropies'.)"</p>
+<h3 id="the-odd-consequences">The odd consequences</h3>
+<p>"The relevant 'entropies' are negative, while the 'temperatures' are positive for attractive forces and negative for repulsive forces. These features are certainly odd, and certainly not what might naively be expected."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"The constraints I will establish are suffici[ent to rule out] any reasonable variant of Verlinde's entropic [gravity, and for related] reasons the constraints established herein do not [apply to Jacobson's] or Padmanabhan's versions of entropic gravity."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"There is no reasonable doubt concerning the physical reality of entropic forces, and no reasonable doubt t[hat they can be derived from statistical mechanics when the microphysics is known]; the open question is whether gravity is one of them."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-reversing-a-derivation-gives-constraints">1. Reversing a derivation gives constraints</h3>
+<p><strong>The idea.</strong> Instead of deriving a force from thermodynamics, assume the force and solve for the thermodynamics, then check whether the answer is acceptable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives thermodynamic quantities from a horizon. This paper runs the inference backwards and uses the implausibility of the answer as an argument against the premise. That is a form of argument the article's ledger does not contain, and it is available whenever a derivation is invertible.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the derivation.</p>
+<p><strong>What stands in the way.</strong> The inversion here is for Newtonian gravity, not for a horizon. Ranked first, because the method is new to the corpus.</p>
+<h3 id="2-negative-entropy-is-a-signal">2. Negative entropy is a signal</h3>
+<p><strong>The idea.</strong> The required entropy comes out negative, which the author reports rather than hides.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> requires a positive entropy for a temperature to make sense. A construction that produces a negative entropy is therefore excluded by the article's own assumptions, and this paper supplies the explicit case where that happens.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the definition of the entropy.</p>
+<p><strong>What stands in the way.</strong> The negative entropy arises in a generalised multi-bath model, not in a horizon calculation. Ranked second.</p>
+<h3 id="3-one-bath-is-too-weak-a-condition">3. One bath is too weak a condition</h3>
+<p><strong>The idea.</strong> With one heat bath the entropic form is vacuous, because every conservative force fits.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the algebra can express many things and cannot discriminate. This is the same failure in thermodynamics: a formalism with enough freedom describes everything and therefore predicts nothing. Naming the failure once, with an example, strengthens the catalogue's central point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is an analogy between two kinds of vacuity. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

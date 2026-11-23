@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum interest in (3+1)-dimensional Minkowski space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Interest in 3 1 dimensional Minkowski space - 0808.1931.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-interest-in-31-dimensional-minkowski-space"><strong>Quantum interest in (3+1)-dimensional Minkowski space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0808.1931v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 March 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum Interest in 3 1 dimensional Minkowski space - 0808.1931-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Interest in 3 1 dimensional Minkowski space - 0808.1931.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Interest in 3 1 dimensional Minkowski space - 0808.1931.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Quantum inequalities bound how negative an energy density can be, and for how long. The quantum interest conjecture says that a negative pulse must be paid for by a positive one, with interest. The authors test the conjecture in four-dimensional Minkowski space. They construct pulses and check whether the inequality forces a compensating positive region. The trade-off is between the size of the negative region and the size of the repayment.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-subject">The subject</h3>
+<p>"The so-called “Quantum Inequalities”, and the “Quantum Interest Conjecture”, use quantum field theory to impose significant restrictions on the temporal distribution of the energy density measured by a time-like observer"</p>
+<h3 id="the-stakes">The stakes</h3>
+<p>"potentially preventing the existence of exotic phenomena such as “Alcubierre warp-drives” or “traversable wormholes”"</p>
+<h3 id="the-method">The method</h3>
+<p>"Both the quantum inequalities and the quantum interest conjecture can be reduced to statements concerning the existence or non-existence of bound states for a certain one-dimensional quantum mechanical pseudo-Hamiltonian."</p>
+<h3 id="the-result">The result</h3>
+<p>"Using this approach, we shall provide a simple variational proof of one version of the Quantum Interest Conjecture in (3+1) dimensional Minkowski space."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-negative-energy-must-be-repaid">1. Negative energy must be repaid</h3>
+<p><strong>The idea.</strong> A negative energy pulse forces a larger positive one nearby.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> states conservation without a quantum bound. The repayment rule is exactly what a classical conservation law cannot supply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conservation.</p>
+<p><strong>What stands in the way.</strong> The proof is for flat space. Ranked first, because it adds a constraint the target lacks.</p>
+<h3 id="2-inequalities-bound-a-region">2. Inequalities bound a region</h3>
+<p><strong>The idea.</strong> A quantum inequality limits negative energy over a sampled region, not at a point.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> gives local laws. A smeared bound is a different kind of statement and would sit beside them.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, in the discussion of locality.</p>
+<p><strong>What stands in the way.</strong> The bound is for a scalar field. Ranked second.</p>
+<h3 id="3-free-choice-of-sampling-function">3. Free choice of sampling function</h3>
+<p><strong>The idea.</strong> The result must hold for any test function used to sample the energy.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses limits taken in different ways. A result that survives all sampling choices is a robustness statement the target could use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> The argument is technical. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

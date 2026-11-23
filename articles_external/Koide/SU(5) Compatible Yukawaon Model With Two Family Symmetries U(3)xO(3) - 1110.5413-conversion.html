@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)×O(3) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)xO(3) - 1110.5413.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="su5-compatible-yukawaon-model-with-two-family-symmetries-u3o3"><strong>SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)×O(3)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1110.5413v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 October 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the preprint numbers OU-HET-730/2011 and MISC-2011-16 are printed)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)xO(3) - 1110.5413-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)xO(3) - 1110.5413.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/SU(5) Compatible Yukawaon Model With Two Family Symmetries U(3)xO(3) - 1110.5413.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Puts the yukawaon construction inside an $SU(5)$ grand unified model and asks whether the family gauge symmetry can then be broken at a low scale. In the earlier $SU(5)$-compatible version the answer was no: $\Lambda_{\rm fam}$ could not go below $10^{13}$ GeV, so the family gauge bosons were unreachable. Splitting the family index between two groups, $U(3)$ for one set of $SU(5)$ components and $O(3)$ for another, allows $\Lambda_{O(3)}\sim10^{16}$ GeV and $\Lambda_{U(3)}\sim10^{3}$ GeV at once, with the lightest $U(3)$ boson $A^1_1$ near 1 TeV. The paper also obtains the up-quark masses from a double seesaw rather than from a direct Yukawa coupling.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-being-solved">The problem being solved</h3>
+<p>"In a previous $SU(5)$ compatible yukawaon model with a $U(3)$ family gauge symmetry, we could not build a model with a lower energy scale of the family gauge symmetry breaking scale $\Lambda_{\rm fam}$ than $10^{13}$ GeV, so the family gauge boson effects in the previous model were invisible."</p>
+<h3 id="the-device">The device</h3>
+<p>"In the present model, we consider two family symmetries $U(3)\times O(3)$, and we assume that the conventional quarks and leptons $(\bar5+10+1)$ of $SU(5)$ are described as $(\bar5_i+10_\alpha+1_\alpha)$ ($i=1,2,3$ and $\alpha=1,2,3$ are indices of $U(3)$ and $O(3)$, respectively)."</p>
+<h3 id="the-two-scales">The two scales</h3>
+<p>"As a result, we build a model with $\Lambda_{O3}\sim10^{16}$ GeV and $\Lambda_{U3}\sim10^3$ GeV. The lightest $U(3)$ family gauge boson $A^1_1$ will be observed with a mass of the order of 1 TeV."</p>
+<h3 id="what-is-preserved">What is preserved</h3>
+<p>"Since all of yukawaons are $SU(5)$ singlets, the existence of the yukawaons do not affect the $SU(5)$ GUT model, so that we can inherit the successful results in the $SU(5)$ GUT."</p>
+<h3 id="the-up-quark-mechanism">The up-quark mechanism</h3>
+<p>"The most notable result is that we have been able to consider a double seesaw mechanism for up-quark mass generation as shown in Fig.2 by introducing $O(3)$ family symmetry."</p>
+<h3 id="the-mass-ordering">The mass ordering</h3>
+<p>$$
+10^3\ \mathrm{GeV}\sim m(A^1_1)&lt;m(A^2_2)&lt;m(A^3_3)\sim10^4\ \mathrm{GeV}.
+\tag{paper 4.5}
+$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-family-groups-split-by-math44-component">1. Two family groups split by $SU(5)$ component</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: give the $\bar5$ and the $10$ different family groups, and the two breaking scales separate by thirteen orders of magnitude, so one sector's gauge bosons stay at the GUT scale while the other's are reachable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> notes that all fermions of one generation sit in different $SU(2)$ representations but never asks whether they could carry different family quantum numbers. The split is the only route in this folder to a visible family boson, and it uses exactly the component structure the article describes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, "The Three Yukawa Matrices".</p>
+<p><strong>What stands in the way.</strong> It needs a GUT embedding the corpus does not have, and the hierarchy between the two scales is put in by hand as two separate breaking scales. First, because it is the concrete answer to "why are family bosons invisible".</p>
+<h3 id="2-a-double-seesaw-for-up-type-masses">2. A double seesaw for up-type masses</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: the up-quark masses come from a two-stage seesaw, not from a renormalisable Yukawa coupling, which changes the expected relations among $m_u$, $m_c$, $m_t$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> writes one Yukawa matrix per charge sector and treats the top mass as the largest entry of one matrix. A double seesaw makes the top a derived quantity and would explain its separation from the others without a hierarchy in the entries.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, "The Mass Spectrum and Its Gaps".</p>
+<p><strong>What stands in the way.</strong> The mechanism needs extra vector-like fields at $10^{16}$ GeV and $10^4$ GeV, and no numerical mass ratios are given here. Second.</p>
+<h3 id="3-lightest-family-boson-at-1-tev-as-a-target">3. Lightest family boson at 1 TeV as a target</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $m(A^1_1)\sim1$ TeV, which is a specific collider target rather than a bound.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code> lists channels that cannot see certain operators; a 1 TeV family boson would put the corresponding operators within reach, so the list would gain a case where the blind channels are the only ones open.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code>.</p>
+<p><strong>What stands in the way.</strong> The value follows from the choice of breaking scales, not from a measurement. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

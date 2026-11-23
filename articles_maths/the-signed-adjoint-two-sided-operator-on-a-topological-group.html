@@ -100,13 +100,13 @@ $$</p>
 <p><strong>Definition.</strong> A signed two-sided operator is <strong>unitary</strong> when its adjoint is its inverse, $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \mathrm{id}$ and $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a,b}{}^\dagger = \mathrm{id}$; equivalently when it preserves the signed form, $B_\alpha(\Sigma^\alpha_{a,b}u,\Sigma^\alpha_{a,b}v) = B_\alpha(u,v)$ for all $u,v$.</p>
 <p><strong>Theorem (the inverse and the criterion).</strong> The inverse of the signed two-sided operator is $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1} = \Sigma^{\alpha}_{\sigma(a),\,\sigma(b)}$, and the identity criterion for signed two-sided operators is</p>
 <p>$$
-\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1}\;} .
+\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'{}^{-1}c \in Z(G) \ \text{and}\ c'{}^{-1}c = d'd^{-1}\;} .
 $$</p>
 <p>Consequently $\Sigma^{\alpha}_{a,b}$ is unitary if and only if</p>
 <p>$$
 a^{-1}\alpha(a) \in Z(G) \qquad\text{and}\qquad \alpha(b)\,b^{-1} = \alpha(a)^{-1}a .
 $$</p>
-<p><strong>Proof.</strong> Inverse: $\Sigma^\alpha_{a,b} = L_aR_bA$ has inverse $A^{-1}R_{b^{-1}}L_{a^{-1}} = A R_{b^{-1}}L_{a^{-1}}$, and applying it to $u$ gives $\alpha(a^{-1}ub^{-1}) = \alpha(a)^{-1}\alpha(u)\alpha(b)^{-1} = \sigma(a)\alpha(u)\sigma(b) = \Sigma^\alpha_{\sigma(a),\sigma(b)}(u)$. Identity criterion: $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'}$ exactly when $c'^{-1}c\,\alpha(u) = \alpha(u)\,d'd^{-1}$ for all $u$, and since $\alpha$ is onto this says $c'^{-1}c$ is central and equal to $d'd^{-1}$. Unitarity: $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a^{-1},b^{-1}}\Sigma^\alpha_{a,b} = \Sigma_{a^{-1}\alpha(a),\,\alpha(b)b^{-1}}$ by the composition law, and this is the identity exactly when $c = a^{-1}\alpha(a)$ is central and $c = d^{-1}$ with $d = \alpha(b)b^{-1}$, which is the stated condition; the second half of the unitarity is the mirror computation $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a^{-1},b^{-1}} = \Sigma_{a\alpha(a)^{-1},\,\alpha(b)^{-1}b}$.</p>
+<p><strong>Proof.</strong> Inverse: $\Sigma^\alpha_{a,b} = L_aR_bA$ has inverse $A^{-1}R_{b^{-1}}L_{a^{-1}} = A R_{b^{-1}}L_{a^{-1}}$, and applying it to $u$ gives $\alpha(a^{-1}ub^{-1}) = \alpha(a)^{-1}\alpha(u)\alpha(b)^{-1} = \sigma(a)\alpha(u)\sigma(b) = \Sigma^\alpha_{\sigma(a),\sigma(b)}(u)$. Identity criterion: $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'}$ exactly when $c'{}^{-1}c\,\alpha(u) = \alpha(u)\,d'd^{-1}$ for all $u$, and since $\alpha$ is onto this says $c'{}^{-1}c$ is central and equal to $d'd^{-1}$. Unitarity: $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a^{-1},b^{-1}}\Sigma^\alpha_{a,b} = \Sigma_{a^{-1}\alpha(a),\,\alpha(b)b^{-1}}$ by the composition law, and this is the identity exactly when $c = a^{-1}\alpha(a)$ is central and $c = d^{-1}$ with $d = \alpha(b)b^{-1}$, which is the stated condition; the second half of the unitarity is the mirror computation $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a^{-1},b^{-1}} = \Sigma_{a\alpha(a)^{-1},\,\alpha(b)^{-1}b}$.</p>
 <p><strong>Corollary (the fixed subgroup gives unitary two-sided operators).</strong> If $a, b \in G^\alpha$, the fixed subgroup of the grade involution, then $\Sigma^{\alpha}_{a,b}$ is unitary; the unitary signed two-sided operators with both parameters in $G^\alpha$ form a subgroup of the group of form-preserving operators, and it is the image of $G^\alpha\times G^\alpha$ under the two-sided map.</p>
 <p><strong>Proof.</strong> For $a \in G^\alpha$ one has $\alpha(a) = a$, so $a^{-1}\alpha(a) = e$ is central, and for $b \in G^\alpha$ one has $\alpha(b)b^{-1} = e$, so the criterion is satisfied. The set $G^\alpha\times G^\alpha$ is a group and the two-sided map is a homomorphism there because $\alpha$ is the identity on it, so the image is a subgroup of the unitary group.</p>
 <p><strong>Corollary (the trivial grade involution).</strong> If $\alpha = \mathrm{id}$ then every signed two-sided operator is an unsigned two-sided operator and every one of them is unitary with respect to the natural form, its adjoint being its inverse $\Sigma_{a^{-1},b^{-1}}$.</p>
@@ -149,7 +149,7 @@ $$</p>
 <td>the inverse</td>
 </tr>
 <tr>
-<td>$\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'} \iff c'^{-1}c\in Z(G),\ c'^{-1}c = d'd^{-1}$</td>
+<td>$\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'} \iff c'{}^{-1}c\in Z(G),\ c'{}^{-1}c = d'd^{-1}$</td>
 <td>the identity criterion</td>
 </tr>
 <tr>

@@ -153,7 +153,7 @@ the same splitting as before, because $S^{*}\cong\bar S$.
 The incidence relation $\omega_A=i\sum_{\bar A}x_{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a <strong>classical phase-space pair</strong>: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.</p>
 <p><strong>The Hermitian form is the pairing of the two spaces.</strong> The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega_0,\omega_1,\pi_{\bar 0},\pi_{\bar 1})$ its matrix is
 $$
-\begin{pmatrix}0&I_2\ I_2&0\end{pmatrix},
+\begin{pmatrix}0&amp;I_2\ I_2&amp;0\end{pmatrix},
 $$
 with eigenvalues $+1,+1,-1,-1$: complex inertia $(2,2)$. On the underlying real space the same form has inertia $(4,4)$, each complex dimension contributing one positive and one negative real direction. The conformal metric therefore comes from the <strong>pairing of the two spaces</strong>, not from counting chiralities. Remove either summand and the form has nothing to pair.</p>
 <p><strong>Why the two reasons coincide.</strong> In four dimensions with the $\varepsilon$ form, $S^{*}\cong\bar S$: the dual of a left-handed spinor is right-handed. That coincidence lets one object serve both purposes, and it is the technical trick of the programme. The biquaternion algebra encodes the same coincidence in its own way. A minimal left ideal is the column space $S$, a minimal right ideal is the row space $S^{*}$, and a row times a column is the scalar pairing whose conjugate gives the Hermitian form — one algebra carrying both spaces, where twistor theory carries two spaces and no product.</p>
@@ -214,12 +214,12 @@ $$</p>
 \qquad
 \varpi = \sqrt{|\vec\zeta - E|^2 - |H|^2},\quad \theta_{\mathrm{twt}}:=\tau\varpi,\quad \theta_{\mathrm{twv}}:=-(\vec r,\vec K),
 $$</p>
-<p>The two angles are real in the travelling regime: $\theta_{\mathrm{twt}}$ because $\tau$ and $\varpi$ are real there, $\theta_{\mathrm{twv}}$ because it is a scalar product of two real vectors. The wave vector $\vec K$ is the family's own: $\vec\zeta$ here, $H+\vec u_E\sqrt{\omega^2+|E|^2}$ for the $\omega$-twistors, $E+H$ for the static ones and $E$ for the $H$-twistor. The formula is a solution of the same homogeneous scalar equation whenever $|\vec\zeta - E| > |H|$. Applying the complementary operator to it gives the <strong>elementary $\vec\zeta$-twistor</strong></p>
+<p>The two angles are real in the travelling regime: $\theta_{\mathrm{twt}}$ because $\tau$ and $\varpi$ are real there, $\theta_{\mathrm{twv}}$ because it is a scalar product of two real vectors. The wave vector $\vec K$ is the family's own: $\vec\zeta$ here, $H+\vec u_E\sqrt{\omega^2+|E|^2}$ for the $\omega$-twistors, $E+H$ for the static ones and $E$ for the $H$-twistor. The formula is a solution of the same homogeneous scalar equation whenever $|\vec\zeta - E| &gt; |H|$. Applying the complementary operator to it gives the <strong>elementary $\vec\zeta$-twistor</strong></p>
 <p>$$
 \tilde{Ξ}_{\vec\zeta}^{\pm} = \frac{1}{\sqrt{2}\,|\vec\zeta - E|}\left(\pm i\varpi - (\vec\zeta - E) + iH\right)\tilde{Ξ}_{\vec\zeta}^{\pm},
 \qquad \vec\zeta \neq E ,
 $$</p>
-<p>a complex-vector-valued field on Minkowski space. Writing $\lVert\tilde{Q}\rVert^2 = \sum_{\imath} |Q_{\imath}|^2$ for the Euclidean norm of a biquaternion, so that its <strong>Euclidean difference</strong> is $|Q_t|^2 - \sum_{\imath\in\{x,y,z\}} |Q_\imath|^2$, the elementary twistor is characterised by the two invariants</p>
+<p>a complex-vector-valued field on Minkowski space. Writing $\lVert\tilde{Q}\rVert^2 = \sum_{\imath} |Q_{\imath}|^2$ for the Euclidean norm of a biquaternion, so that its <strong>Euclidean difference</strong> is $|Q_t|^2 - \sum_{\imath\in\{x,y,z\}} |Q_{\imath}|^2$, the elementary twistor is characterised by the two invariants</p>
 <p>$$
 \lVert\tilde{Ξ}_{\vec\zeta}^{\pm}\rVert = 1 ,
 \qquad
@@ -235,8 +235,8 @@ $$</p>
 <p>With $\gamma$ the angle between $\vec u_e$ and $H$, its norm is $\sqrt{1 + c}$ and its pseudonorm $\sqrt{1 - c}$, where $c = (|\vec\zeta - E|^2 - |H|^2\cos^2\gamma)/|\vec\zeta - E|^2$; so at $\gamma = \pm\pi/2$ the energy–momentum biquaternion is null in the pseudonorm, $\langle Ζ \rangle = 0$, with $\lVertΖ\rVert = \sqrt{2}$. This is the printed form of $Ζ$: the printed numerator is $[\vec u_e, H] \pm \varpi\vec u_e$, and the paper's bracket here is taken in the <strong>reverse</strong> order from the corpus's $[\vec Q, \vec R] = \vec Q\times\vec R$, so that in this formula $[\vec u_e, H] = H \times \vec u_e = -\vec u_e\times H$. Norm, pseudonorm and both invariants agree with a hundred random coefficients and wave vectors to better than $8\times 10^{-15}$. <strong>The symbol $Ζ$ is overloaded in the source</strong>: it denotes the biquaternion and, in the same formulas, its two invariants, so the source's "$Ζ = 1 + c$" and "$Ζ = 1 - c$" are the <em>squared</em> norm and the Euclidean difference of the biquaternion $Ζ = 1 + i(\varpi\vec u_e - \vec u_e\times H)/|\vec\zeta - E|$ displayed just above; the corpus keeps the biquaternion for $Ζ$ and names the two invariants in words. The overload matters in exactly one place, the $H$-twistor below, where "$Ζ = 2$" is the squared norm and $Ζ$ itself is $1 - i\vec u_H$. (In this article $\mathcal{S}_{\mathrm{rep}}$ continues to denote the Dirac module $S\oplus\bar{S}$.)</p>
 <p><strong>The cases of the same family.</strong> The label $\vec\zeta$ is unrestricted, and the character of the solution changes with $|\vec\zeta - E|$:</p>
 <ul>
-<li><strong>$|\vec\zeta - E| > |H|$:</strong> $\varpi$ is real; the potentials are travelling plane waves of wave vector $\vec\zeta$, wavelength $2\pi/|\vec\zeta|$ and phase velocity $\varpi/|\vec\zeta|$, and the twistors above are the elementary ones.</li>
-<li><strong>$|\vec\zeta - E| < |H|$:</strong> $\varpi$ is imaginary and the potential becomes $\alpha^{\pm}_{\vec\zeta} = \exp(\pm\kappa_{\mathrm{twv}}\tau)\exp(i\theta_{\mathrm{twv}})$ with $\kappa_{\mathrm{twv}}:=\sqrt{|H|^2-|\vec\zeta-E|^2}=|\varpi|$ real because the radicand is positive here. A standing harmonic wave with exponentially growing or decaying amplitude. A field built from such potentials is a driven or dissipative field rather than a travelling one.</li>
+<li><strong>$|\vec\zeta - E| &gt; |H|$:</strong> $\varpi$ is real; the potentials are travelling plane waves of wave vector $\vec\zeta$, wavelength $2\pi/|\vec\zeta|$ and phase velocity $\varpi/|\vec\zeta|$, and the twistors above are the elementary ones.</li>
+<li><strong>$|\vec\zeta - E| &lt; |H|$:</strong> $\varpi$ is imaginary and the potential becomes $\alpha^{\pm}_{\vec\zeta} = \exp(\pm\kappa_{\mathrm{twv}}\tau)\exp(i\theta_{\mathrm{twv}})$ with $\kappa_{\mathrm{twv}}:=\sqrt{|H|^2-|\vec\zeta-E|^2}=|\varpi|$ real because the radicand is positive here. A standing harmonic wave with exponentially growing or decaying amplitude. A field built from such potentials is a driven or dissipative field rather than a travelling one.</li>
 <li><strong>$|\vec\zeta - E| = |H|$:</strong> $\varpi = 0$; the two signs of the potential coincide and the amplitude is time-independent.</li>
 <li><strong>$\vec\zeta = E$:</strong> the potential degenerates to a phase and the twistor is the separate <strong>$H$-twistor</strong> $\tilde{Ξ}_{H}^{\pm} = \frac{\mp 1 + i\vec u_H}{\sqrt{2}}\exp(\mp\kappa_{\mathrm{twg}}\tau)\exp(i\theta_{\mathrm{twv}})$ with $\kappa_{\mathrm{twg}}:=|H|$ real, of unit norm and vanishing pseudonorm. Its amplitude is $\mp\sqrt{2}$ times a rank-one idempotent: writing $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for the corpus's Hermitian idempotents, the upper sign gives the amplitude $-\sqrt{2}\,\tilde\Pi_{\mathrm{id},2}(\vec u_H)$ and the lower $+\sqrt{2}\,\tilde\Pi_{\mathrm{id},1}(\vec u_H)$, the two idempotents being complex conjugates of one another. This is the one member of the family whose amplitude is an <strong>idempotent</strong> — Hermitian, hence in the informational sector $\mathbb{B}_{\Psi}$ — and it is null under the algebra's bilinear norm, $\langle \tilde{Ξ}_{H}\rangle = 0$. Its energy–momentum biquaternion follows: $Ζ = 1 - i\vec u_H = 2\tilde\Pi_{\mathrm{id},2}(\vec u_H)$, the same idempotent again, with squared norm $2$ — the source's printed "$Ζ = 2$", read as the squared norm — and vanishing Euclidean difference. The general twistor is not of this form: $\langle \tilde{Ξ}_{\vec\zeta}\rangle = -\varpi^2/|\vec\zeta - E|^2$ for the travelling family, so $\vec\zeta = E$ is the only member that is a zero divisor and the only one whose amplitude is a pure state of the algebra. This is the counterpart, on the informational side, of the finding recorded in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>, where the harmonic bispinor's amplitude is $i\tilde\Pi_{\mathrm{id},2}(\vec u_\zeta)$ and lies in the material sector instead.</li>
 </ul>
@@ -258,14 +258,14 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>non-stationary, $\lVert\vec\zeta-E\rVert > \lVert H\rVert$</td>
+<td>non-stationary, $\lVert\vec\zeta-E\rVert &gt; \lVert H\rVert$</td>
 <td>$\exp(\pm i\tau\varpi - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$</td>
 <td>$\vec\zeta$</td>
 <td>$1$</td>
 <td>$i\,\lVert H\rVert/\lVert\vec\zeta-E\rVert$</td>
 </tr>
 <tr>
-<td>non-stationary, $\lVert\vec\zeta-E\rVert < \lVert H\rVert$</td>
+<td>non-stationary, $\lVert\vec\zeta-E\rVert &lt; \lVert H\rVert$</td>
 <td>$\exp(\pm\tau\sqrt{\lVert H\rVert^2-\lVert\vec\zeta-E\rVert^2} - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$</td>
 <td>$\vec\zeta$</td>
 <td>$\lVert H\rVert/\lVert\vec\zeta-E\rVert$</td>
@@ -352,7 +352,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -360,7 +360,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
-<td>Matrix realization; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$ (read list)</td>
+<td>Matrix realization; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$ (read list)</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi}$</td>
@@ -476,7 +476,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\lVert\tilde{Q}\rVert^2$</td>
-<td>Euclidean norm $\sum_{\imath} \lvert Q_{\imath}\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_{\imath\in\{x,y,z\}} \lvert Q_\imath\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_{\imath\in\{x,y,z\}} \lvert Q_\imath\rvert^2 - \lvert Q_t\rvert^2}$</td>
+<td>Euclidean norm $\sum_{\imath} \lvert Q_{\imath}\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_{\imath\in\{x,y,z\}} \lvert Q_{\imath}\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_{\imath\in\{x,y,z\}} \lvert Q_{\imath}\rvert^2 - \lvert Q_t\rvert^2}$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_{\mathrm{id},1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>

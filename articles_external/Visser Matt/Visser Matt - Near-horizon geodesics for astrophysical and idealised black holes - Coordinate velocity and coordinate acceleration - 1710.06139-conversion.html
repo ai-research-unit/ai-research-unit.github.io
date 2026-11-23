@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Near-horizon geodesics for astrophysical and idealised black holes: coordinate velocity and coordinate acceleration — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Near-horizon geodesics for astrophysical and idealised black holes - Coordinate…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="near-horizon-geodesics-for-astrophysical-and-idealised-black-holes-coordinate-velocity-and-coordinate-acceleration"><strong>Near-horizon geodesics for astrophysical and idealised black holes: coordinate velocity and coordinate acceleration</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1710.06139v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Tritos Ngampitipan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Universe 4 (2018) 68</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Near-horizon geodesics for astrophysical and idealised black holes - Coordinate velocity and coordinate acceleration - 1710.06139-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Near-horizon geodesics for astrophysical and idealised black holes - Coordinate velocity and coordinate acceleration - 1710.06139.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Near-horizon geodesics for astrophysical and idealised black holes - Coordinate velocity and coordinate acceleration - 1710.06139.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A geodesic has zero four-acceleration. Its coordinate acceleration need not be zero, and near a horizon the coordinate velocity can exceed $c$ while the coordinate acceleration changes sign. The authors work through Schwarzschild in several coordinate systems: curvature, isotropic, and horizon-penetrating. They show that these quantities are coordinate artefacts and that statements about repulsive gravity near a horizon come from mixing Newtonian and relativistic notions. They recommend horizon-penetrating coordinates for near-horizon analysis.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Geodesics (by definition) have an intrinsic 4-acceleration zero. However, when expressed in terms of coordinates, the coordinate acceleration ... can very easily be non-zero, and the coordinate velocity ... can behave unexpectedly."</p>
+<h3 id="the-danger">The danger</h3>
+<p>"The situation becomes extremely delicate in the near-horizon limit—for both astrophysical and idealised black holes—where an inappropriate choice of coordinates can quite easily lead to significant confusion."</p>
+<h3 id="the-recommendation">The recommendation</h3>
+<p>"arguing that in the near-horizon limit the coordinate acceleration ... is best interpreted in terms of horizon-penetrating coordinates."</p>
+<h3 id="the-scope-of-the-conclusion">The scope of the conclusion</h3>
+<p>"While the specific computations in this article have been carried out for the Schwarzschild geometry, this is known to be a good approximation for slowly rotating astrophysical black holes ... so the overall conclusions are generic to a wide class of physically and observationally interesting black holes."</p>
+<h3 id="the-verdict-on-artefacts">The verdict on artefacts</h3>
+<p>"The most obvious conclusion we can draw is that the coordinate velocity, and coordinate acceleration, are (quite naturally) extremely coordinate dependent, and that no general physical conclusions can be drawn from the magnitude of the coordinate velocity, ($\dot r$ can easily exceed unity), or the sign of the coordinate acceleration $\ddot r$."</p>
+<h3 id="the-criticism">The criticism</h3>
+<p>"Claims that gravity in general relativity is 'repulsive' at high speeds and/or near the horizon are at best disingenuous — they are merely misinterpretations of coordinate artefacts."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"Indiscriminately mixing general relativistic and Newtonian concepts is dangerous and misleading."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-coordinate-can-create-a-fake-effect">1. A coordinate can create a fake effect</h3>
+<p><strong>The idea.</strong> The same spacetime yields opposite signs for an acceleration in different coordinates.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> says a quantity read in the wrong frame is an object of neither. This paper gives a physical case where the wrong frame produces a sign error that has been published, which is the strongest form of the target's warning.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on reading in a frame.</p>
+<p><strong>What stands in the way.</strong> The frames here are coordinate charts, not algebraic frames. Ranked first, because it is the target's central hazard with a worked failure.</p>
+<h3 id="2-horizon-penetrating-coordinates-are-the-right-default">2. Horizon-penetrating coordinates are the right default</h3>
+<p><strong>The idea.</strong> Near a horizon, only coordinates that cross it describe infalling motion without a coordinate singularity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that horizon language can mislead. This paper shows which coordinate choice keeps the description honest, which is the constructive companion to that argument.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on coordinate dependence.</p>
+<p><strong>What stands in the way.</strong> The result is Schwarzschild-specific. Ranked second.</p>
+<h3 id="3-mixing-two-theories-produces-artefacts">3. Mixing two theories produces artefacts</h3>
+<p><strong>The idea.</strong> Treating a coordinate acceleration as a Newtonian force gives a false conclusion.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> compares the framework to standard results. A worked example of a comparison error cautions that any such comparison must keep the definitions fixed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of comparison.</p>
+<p><strong>What stands in the way.</strong> It is a methodological remark. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

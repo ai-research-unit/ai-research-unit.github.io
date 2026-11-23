@@ -102,9 +102,9 @@ $$</p>
 <p>$$
 \det A=\prod_{\lambda\in\operatorname{spec}(A)}\lambda=\prod_{\lambda\in\mathbb{R}}\lambda\prod_{\{\mu,\bar\mu\}}|\mu|^{2},
 $$</p>
-<p>the nonreal pairs contribute positive factors, so the sign of the determinant is the product of the signs of the real eigenvalues, counted with multiplicity. In particular $\det A<0$ forces an odd number of negative real eigenvalues, and $\det A>0$ does not force the spectrum to be real.</p>
-<p><strong>The sign is what cuts the group of invertibles in two.</strong> $\det:\mathrm{GL}_n(\mathbb{R})\to\mathbb{R}^{\times}$ is continuous and surjective, so its two signs are the two components. A matrix with $\det>0$ may still have no real eigenvalue of either sign: the rotation $J$ at $n=2$ has $\det J=1$ and no real eigenvalue. So the sign of the determinant is not readable from the real spectrum unless the spectrum is real.</p>
-<p><strong>The determinant is multiplicative and vanishes exactly on the singular set.</strong> $\det(AB)=\det A\det B$, and $\det A=0$ exactly when $A$ is not invertible, which is exactly when $\operatorname{rk}A<n$. So the zero set of the determinant is the closed stratum $\Sigma_{\le n-1}$, of codimension one.</p>
+<p>the nonreal pairs contribute positive factors, so the sign of the determinant is the product of the signs of the real eigenvalues, counted with multiplicity. In particular $\det A&lt;0$ forces an odd number of negative real eigenvalues, and $\det A&gt;0$ does not force the spectrum to be real.</p>
+<p><strong>The sign is what cuts the group of invertibles in two.</strong> $\det:\mathrm{GL}_n(\mathbb{R})\to\mathbb{R}^{\times}$ is continuous and surjective, so its two signs are the two components. A matrix with $\det&gt;0$ may still have no real eigenvalue of either sign: the rotation $J$ at $n=2$ has $\det J=1$ and no real eigenvalue. So the sign of the determinant is not readable from the real spectrum unless the spectrum is real.</p>
+<p><strong>The determinant is multiplicative and vanishes exactly on the singular set.</strong> $\det(AB)=\det A\det B$, and $\det A=0$ exactly when $A$ is not invertible, which is exactly when $\operatorname{rk}A&lt;n$. So the zero set of the determinant is the closed stratum $\Sigma_{\le n-1}$, of codimension one.</p>
 <h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
 <p><strong>The characteristic polynomial has real coefficients and degree $n$.</strong> Define</p>
 <p>$$
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>A real root gives a real eigenvector and a real invariant line.</strong> If $\lambda\in\mathbb{R}$ is a root, then $A-\lambda\mathrm{I}$ is a real singular matrix, so it has a nonzero real kernel; a nonzero vector there is an eigenvector. The line it spans is a real invariant line, and the restriction of $A$ to it is $\lambda$.</p>
 <p><strong>A conjugate pair gives a real invariant plane and a rotation block.</strong> Let $\mu=a+bi$ with $b\ne0$ and let $z=u+iv$ be a complex eigenvector, with $u,v\in\mathbb{R}^{n}$. Then $Au=au-bv$ and $Av=bu+av$, so the real plane spanned by $u$ and $v$ is invariant, and the matrix of $A$ on the basis $(u,v)$ is</p>
 <p>$$
-\begin{pmatrix}a&-b\\ b&a\end{pmatrix}.
+\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix}.
 $$</p>
 <p>This block is a rotation by the angle $\theta$ with $\cos\theta=a/\sqrt{a^{2}+b^{2}}$ composed with the dilation $\sqrt{a^{2}+b^{2}}$. It has no real eigenvector, and its determinant $a^{2}+b^{2}=|\mu|^{2}$ is positive.</p>
 <p><strong>The two kinds of block account for the whole real dimension.</strong> A real matrix of size $n$ splits its spectrum into $r$ real eigenvalues and $s$ conjugate pairs with $r+2s=n$, and the real Jordan form is built from $1\times1$ blocks for the real roots and $2\times2$ blocks for the pairs, with nilpotent extensions. <em>The Real Jordan Form and the Rotation Blocks</em> proves the canonical form.</p>
@@ -140,8 +140,8 @@ $$</p>
 <h2 id="what-the-invariants-do-not-determine">What the Invariants Do Not Determine</h2>
 <p><strong>The characteristic polynomial does not determine the similarity class, and over $\mathbb{R}$ the failure is already visible at $n=3$.</strong> Take the two nilpotents</p>
 <p>$$
-N_{(2,1)}=\begin{pmatrix}0&1&0\\ 0&0&0\\ 0&0&0\end{pmatrix},\qquad
-N_{(3)}=\begin{pmatrix}0&1&0\\ 0&0&1\\ 0&0&0\end{pmatrix}.
+N_{(2,1)}=\begin{pmatrix}0&amp;1&amp;0\\ 0&amp;0&amp;0\\ 0&amp;0&amp;0\end{pmatrix},\qquad
+N_{(3)}=\begin{pmatrix}0&amp;1&amp;0\\ 0&amp;0&amp;1\\ 0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Both have $\chi(t)=t^{3}$, both have trace $0$ and determinant $0$, and they are not similar: their ranks are $1$ and $2$. So the four invariants of the title agree and the elements differ.</p>
 <p><strong>The rank is what separates them, and even the rank does not separate everything.</strong> At $n=4$ the nilpotents of type $(2,2)$ and $(3,1)$ both have rank $2$ and characteristic polynomial $t^{4}$, and they are not similar. The complete invariant is the Jordan type, that is the partition of $n$ given by the block sizes; over $\mathbb{R}$ the same statement holds with the rotation blocks added, and the partition is then a partition of the real dimension into the sizes of the real and the rotation blocks.</p>

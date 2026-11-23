@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deformation Principle and Further Geometrization of Physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle and further geometrization of physics - 0704.3003.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="deformation-principle-and-further-geometrization-of-physics"><strong>Deformation Principle and Further Geometrization of Physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0704.3003 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 23 April 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Deformation principle and further geometrization of physics - 0704.3003-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle and further geometrization of physics - 0704.3003.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle and further geometrization of physics - 0704.3003.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>States the deformation principle as a method for building any geometry: write the objects of Euclidean geometry in terms of its world function, then replace $\sigma_E$ by another world function $\sigma$ and keep the same expressions. Every theorem is already proved, because the theorems were Euclidean. The method admits geometries that the Riemannian construction cannot reach, and it introduces a property he calls multivariance: a vector has many equivalents that are not equivalent to each other. He argues that real space-time geometry is multivariant, that quantum effects are the multivariance, and that the corresponding metric fields cannot be imitated by a metric tensor.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-ways-to-build-a-geometry">Two ways to build a geometry</h3>
+<p>Axiomatic geometry has one defect: "impossibility of axiomatization of nonhomogeneous geometries", since axiomatisation "has been proved only for the proper Euclidean geometry". Klein's remark is quoted with approval, that the Riemannian geometry is "rather a geography or a topography, than a geometry".</p>
+<p>The alternative is the metric or physical geometry, "a science on mutual position of geometrical objects in the space or in the space-time", and its virtue is that "all relations of the metric geometry are finite, but not differential, and the metric geometry may be given on an arbitrary set of points, but not necessarily on a manifold". Its defect is poverty: the scalar product and linear dependence are not in it. The deformation principle repairs that by <em>importing</em> the Euclidean concepts, each rewritten through the world function:</p>
+<blockquote>
+<p>Describing Euclidean geometric objects $O(\sigma_E)$ and Euclidean relations $R(\sigma_E)$, one declares them to be objects $O(\sigma)$ and relations $R(\sigma)$ of the physical geometry, replacing $\sigma_E$ by $\sigma$.</p>
+</blockquote>
+<p>Two constraints are dropped with the replacement: the triangle axiom and the positivity of $\rho$. Hence $\sigma=\tfrac12\rho^2$ rather than $\rho$, "which is real even in the geometries with indefinite metric". The resulting class is the tubular geometries, so called "connected with the fact, that the straight in T-geometry is a tube, but not a one-dimensional line".</p>
+<h3 id="multivariance">Multivariance</h3>
+<p>The definition: "Multivariance of a T-geometry means, that there exist many vectors $Q_0Q_1$, $Q_0Q_1'$, $Q_0Q_1''$, ... which are equivalent (equal) to vector $P_0P_1$, but are not equivalent between themselves." In a one-dimensional line the equivalence class of a vector is that line; in a T-geometry it is a tube.</p>
+<p>Rylov's reading of the property is the point of the paper. "At first sight the multivariance is unexpected and undesirable property of geometry. However, multivariance is very important in application of geometry to physics. For instance, the real space-time geometry appears to be multivariant. In particular, multivariance of the space-time geometry explains freely quantum effects as geometrical effects." Also, "the multivariance admits one to set the problem of existence of geometrical objects in the form of physical bodies", which the Riemannian framework cannot do without answering that any object can be so realised.</p>
+<h3 id="metric-fields">Metric fields</h3>
+<p>Since the geometry of a multivariant space cannot be absorbed into $g_{ik}$, he introduces metric force fields. For a specific $\sigma$ of the form $\sigma=\sigma_M+d\cdot f(\sigma_0)$ he gets a metric tensor that "coincides with the metric tensor of the Minkowski space-time to within a constant factor", yet the world function does not satisfy the equation a Riemannian metric tensor would impose. The fields "form a complex of fields, which cannot be imitated by a one-point field of the type of metric tensor."</p>
+<p>The consequence is stated as a contrast: "e also may say, that the space-time geometry is imitated by means of some metric fields in the Minkowski space-time. However", the reason being that "the quantum principles take into account the property of multivariance, whereas the conventional force fields ignore multivariance." And the strategic conclusion, which is the paper's real claim: "At geometric approach we also have fitting. However, this fitting concerns only a choice of proper space-time geometry (proper world function). As soon as the world function is chosen, the fitting ceases."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-multivariance-as-the-missing-global-information">1. Multivariance as the missing global information</h3>
+<p><strong>The idea.</strong> A geometry in which the equivalence class of a vector is a tube rather than a line is <strong>one line of structure</strong> the corpus does not have, and it is what makes the geometry non-integrable in a way a metric cannot capture.</p>
+<p><strong>What it would add.</strong> The corpus's spacetime article states the limitation it works under: every result "is a statement about one fixed algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point", and "all of them are pointwise and flat". Multivariance is a precise name for what a pointwise treatment loses — not curvature, which is also pointwise computable from derivatives, but the failure of a vector to have a unique parallel copy. That is a sharper target than "flat", because it says which information is missing. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>. </p>
+<p><strong>What stands in the way.</strong> Multivariance is defined as a property of a world function, and no multivariant $\sigma$ is proposed for the real space-time in this paper — the example is a construction, with $d$ and $\sigma_0$ free. Nothing computes a number from it. And the corpus's geometry is derived from an algebra rather than posited as a function, so importing multivariance means either deriving it from $\mathbb{B}$ or adding a second, independent geometric postulate. </p>
+<h3 id="2-the-light-cone-as-a-tube">2. The light cone as a tube</h3>
+<p><strong>The idea.</strong> If equivalent vectors do not coincide, then the set of points reachable from $P_0$ along a null direction is not a sharp cone but a tube of finite width. Causality becomes a statement about the tube, and the boundary is fuzzy by construction rather than by an added uncertainty. </p>
+<p><strong>What it would add.</strong> The corpus's causality article treats the cone as "rigid, local, and independent of the particular interaction", with three regions and a sharp boundary, and the interpretation of that boundary is what it examines. A tube-shaped cone would make the information barrier a geometric object with a thickness, and the corpus could then ask whether the thickness is the same $\hbar$ that appears in its own algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> No width is computed and no relation to any constant is given; the paper does not even assert that the tube width is $\hbar$. And the corpus's light cone is the zero-divisor set of $\mathbb{B}$, an algebraic object with no free parameter, so a thickened cone would have to be derived from the algebra or it contradicts the derivation.</p>
+<h3 id="3-fitting-a-world-function-instead-of-fitting-a-lagrangian">3. Fitting a world function instead of fitting a Lagrangian</h3>
+<p><strong>The idea.</strong> The paper's strategic claim, an <strong>argument about method</strong>: in a geometric approach the fitting is confined to one choice, the world function, and after that choice everything is deduction. This is offered as an answer to the charge that the approach is curve-fitting.</p>
+<p><strong>What it would add.</strong> The corpus has an explicit article on how much of its own content is fitted, counted in parameters, and it is careful to separate derivation from input. Rylov's proposal is a different accounting: one function, chosen once, and then no further freedom. Whether that is better or worse than a finite list of parameters is a question the corpus's parameter count can answer, and it is a question the corpus has never had to ask because it has no functional degree of freedom.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> One arbitrary function of one argument is an infinite-dimensional space of choices, and the paper concedes the fitting without saying how the choice is constrained. By the corpus's counting, trading finitely many parameters for a free function is a loss, not a gain.</p>
+<p>The rank: multivariance first, because it names what the corpus says it lacks; the tube-shaped cone second, because it is the sharpest physical consequence; the methodological claim last, because it is an argument about accounting rather than a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -82,7 +82,7 @@ S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplu
 $$
 and in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ left multiplication by $\tilde Q$ has the matrix
 $$
-A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix},\qquad
+A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&amp;X_-\\X_+&amp;P_-\end{pmatrix},\qquad
 P_\pm=Q_t\mp iQ_z,\quad X_\pm=-iQ_x\pm Q_y,
 $$
 as in §<em>The Left and Right Matrices</em> of <em>$M_2(\mathbb{C})$ Pauli Representation</em>. Write $A_1$ and $A_2$ for the blocks of $\tilde Q_1$ and $\tilde Q_2$, and $\tilde Q_a=Q_{at}e_t+\vec Q_a$, $B_a^2=Q_{ax}^2+Q_{ay}^2+Q_{az}^2$.</p>
@@ -125,7 +125,7 @@ $$
 The first is the adjugate, the second is the congruence of the entrywise conjugate, and the third is the adjoint with no congruence. All three are proved in §<em>The Stitch Between the Left and the Right</em> and §<em>The Adjugate and the Inverse</em> of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, and §<em>The Two Elements in the Peirce Frame</em> of <em>$M_4(\mathbb{C})$ Pauli Representation : Products, Forms and Norms</em> repeats them at the full size.</p>
 <p><strong>The adjugate.</strong> For a $2\times2$ matrix,
 $$
-\operatorname{adj}\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix},\qquad
+\operatorname{adj}\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}=\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix},\qquad
 \operatorname{adj}A\,A=A\operatorname{adj}A=(\det A)\mathrm I_2,
 $$
 and the congruence $\sigma_2A^{\mathsf T}\sigma_2$ reproduces the four entries with their signs. The identity is the reason the quaternionic conjugation is the useful one: it is the map $A\mapsto(\det A)A^{-1}$, it exists for every matrix including the singular ones, and it multiplies the eigenvalues by nothing, since $\operatorname{adj}A$ has eigenvalues $\lambda_2$ and $\lambda_1$ when $A$ has $\lambda_1$ and $\lambda_2$. The trace of the adjugate is the trace of $A$ and its determinant is the determinant of $A$.</p>
@@ -314,10 +314,10 @@ $$
 and the four reduce to the four coordinate expressions $Q_{1t}Q_{2t}\mp(\vec Q_1,\vec Q_2)$ and their conjugates by $\operatorname{Tr}W_1W_2=2(\vec Q_1,\vec Q_2)$ and $\operatorname{Tr}\mathrm I_2=2$. The signs of the four rows are the four ways of signing the vector part, which is the content of the table of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, read as a trace.</p>
 <p><strong>The four Gram matrices on the plane.</strong> The Gram matrix of a form in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ is the array of its values on the two vectors, and the four arrays are
 $$
-[P]_{S_+}=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},\qquad
-[N]_{S_+}=\begin{pmatrix}0&0\\0&0\end{pmatrix},\qquad
-[H]_{S_+}=\begin{pmatrix}\tfrac12&0\\0&\tfrac12\end{pmatrix},\qquad
-[\mathrm{Kr}]_{S_+}=\begin{pmatrix}0&0\\0&-\tfrac12\end{pmatrix}.
+[P]_{S_+}=\begin{pmatrix}\tfrac12&amp;0\\0&amp;0\end{pmatrix},\qquad
+[N]_{S_+}=\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix},\qquad
+[H]_{S_+}=\begin{pmatrix}\tfrac12&amp;0\\0&amp;\tfrac12\end{pmatrix},\qquad
+[\mathrm{Kr}]_{S_+}=\begin{pmatrix}0&amp;0\\0&amp;-\tfrac12\end{pmatrix}.
 $$
 They are computed from the four words on the two vectors, or equivalently as the top-left blocks of the four Gram matrices of the $4\times4$ article.</p>
 <p><strong>Three of the four degenerate on the plane.</strong> The plain form vanishes on $\vec\Pi_{\mathrm{nil},+}$, the quaternionic form vanishes on both vectors, and the Krein form vanishes on $\tilde\Pi_{\mathrm{id},+}$. The reason is the coordinates of the two frame vectors: $\tilde\Pi_{\mathrm{id},+}$ has $Q_t=\tfrac12$ and $Q_z=\tfrac i2$, and $\vec\Pi_{\mathrm{nil},+}$ has $Q_x=\tfrac i2$ and $Q_y=\tfrac12$. Then $P(\vec\Pi_{\mathrm{nil},+})=0-(\tfrac i2)^2-(\tfrac12)^2=0$, while $N(\tilde\Pi_{\mathrm{id},+})=\tfrac14+(\tfrac i2)^2=0$ and $N(\vec\Pi_{\mathrm{nil},+})=(\tfrac i2)^2+(\tfrac12)^2=0$. Both frame vectors are therefore null for the quaternionic form, the first through the scalar part and the second through the vector part, and $\mathrm{Kr}(\tilde\Pi_{\mathrm{id},+})=\tfrac14-\tfrac14=0$ with $\mathrm{Kr}(\vec\Pi_{\mathrm{nil},+})=-\tfrac14-\tfrac14=-\tfrac12$.</p>
@@ -457,11 +457,11 @@ $$
 by the expansion of the two squares in the scalar and the vector parts. The defect is minus twice the square of the cross product, minus four times the two scalar parts times the dot product; the first term is minus twice the norm of the antisymmetric part, and the second vanishes when either element is a pure vector.</p>
 <p><strong>The two other defects, by witness.</strong> The Hermitian norm fails on $\vec e_x+i\vec e_y$, of block
 $$
-A=\begin{pmatrix}0&-2i\\0&0\end{pmatrix},\qquad \det A=0,\qquad H(\tilde Q)=2,
+A=\begin{pmatrix}0&amp;-2i\\0&amp;0\end{pmatrix},\qquad \det A=0,\qquad H(\tilde Q)=2,
 $$
 so $H(\tilde Q^2)=0\neq H(\tilde Q)^2$. The Krein norm fails on $e_t+\vec e_x$, of block
 $$
-A=\begin{pmatrix}1&-i\\-i&1\end{pmatrix},\qquad \det A=2,\qquad \mathrm{Kr}(\tilde Q)=0,
+A=\begin{pmatrix}1&amp;-i\\-i&amp;1\end{pmatrix},\qquad \det A=2,\qquad \mathrm{Kr}(\tilde Q)=0,
 $$
 and a multiplicative $\mathrm{Kr}$ would give $\mathrm{Kr}(e_t)=\mathrm{Kr}(\tilde Q)\mathrm{Kr}(\tilde Q^{-1})=0$ against $\mathrm{Kr}(e_t)=1$. The first witness is a zero divisor, as the vanishing of $N$ requires; the second is invertible, which is what makes the Krein defect a defect and not a coincidence.</p>
 <p><strong>Why only the quaternionic word collapses.</strong> The product $A^{\natural}A$ is scalar because $\operatorname{adj}A$ is the cofactor matrix of $A$ and the cofactor identity is $(\operatorname{adj}A)A=(\det A)\mathrm I_2$. The other three words contain $A$ itself, $A^{\dagger}$ and $A^{\natural}A^{\dagger}$, and none of the three has a cofactor identity. The frame's contribution is that the adjugate here is the congruence $\sigma_2A^{\mathsf T}\sigma_2$, so the collapse is written with the transpose of the block and one Pauli matrix.</p>

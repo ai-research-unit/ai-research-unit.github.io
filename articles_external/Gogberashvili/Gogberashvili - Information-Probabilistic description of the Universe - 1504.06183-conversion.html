@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information-Probabilistic Description of the Universe — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Information-Probabilistic description of the Universe - 1504.06183.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="information-probabilistic-description-of-the-universe"><strong>Information-Probabilistic Description of the Universe</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1504.06183 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 17 May 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Information-Probabilistic description of the Universe - 1504.06183-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Information-Probabilistic description of the Universe - 1504.06183.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Information-Probabilistic description of the Universe - 1504.06183.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Treats the universe as one entangled ensemble of quantum particles and assumes its total entropy vanishes, with the total written as the sum of an information, a thermodynamic and an entanglement part. Reading the thermodynamic part as action over $\hbar$ turns entropy neutrality into a zero-action principle. From that single assumption the paper derives an entropic time, energy and mass as ratios, three spatial dimensions from the three entropy ambiguities, an equivalence principle, and a gravitational potential proportional to the rate of change of the entanglement entropy. Everything after the first assumption is a chain of analogies; the last section offers a variational principle that unifies least action with maximum entropy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-zero-entropy-principle">The zero-entropy principle</h3>
+<p>The total entropy of the universe is taken to vanish:
+$$I+S+H=0$$
+(paper 7), with $I$ the information (Shannon) entropy, $S$ the thermodynamic (von Neumann) entropy and $H$ the conditional entanglement entropy $H=S_{\rm tot}-S$ (paper 6), which "can be negative. The justification given is that (7) is the special case of Schmidt's decomposition for the entangled composite system in pure state and it follows from Araki-Lieb inequalities", with the universe always in a pure state. Reading entropy as action,
+$$S\sim\frac{A}{\hbar},\qquad A_{\min}=\hbar$$
+(paper 8–9), turns (7) into "the null action principle - the sum of all components of the action for a physical system (including the boundary terms) is zero". Its consequences are stated as "the appearance of different conservation laws" and "the zero-energy condition for the whole universe, which implies that the universe can emerge without violation of the energy conservation".</p>
+<h3 id="entropic-time-energy-mass-space">Entropic time, energy, mass, space</h3>
+<p>For a quasi-isolated system with $H=$ const (paper 10), configurations carry probabilities $P_k\sim e^{S_k}$ (paper 11), and since no two weights coincide the entropies order the configurations: $k_1$ contains $k_2$ if $S_{k_1}&gt;S_{k_2}$ (paper 12). "Therefore, the entropy of the configuration $S_k$ can play the role of a time parameter" — the entropic time, with the largest entropy at the latest time. Bayes' theorem (paper 13) then gives
+$$I+S=\text{const}$$
+(paper 14). Energy and mass follow as ratios,
+$$E=\frac{A}{t},\qquad m=\frac{E}{c^2}$$
+(paper 17–18), and the three ambiguities of $I$, $S$ and $H$ require three parameters, which are the three spatial coordinates:
+$$A'=A+mv^ix_i,\qquad i=1,2,3$$
+(paper 20), with $v^i$ "average Lieb-Robinson velocities". The paper adds that "connected with $I$ dimension is subjective, while two other coordinates are objective, what can explain validity of the holography principle".</p>
+<h3 id="the-equivalence-principle-and-the-potential">The equivalence principle and the potential</h3>
+<p>For any isolated subsystem, $dI=-dH$ (paper 21), which "means that for any physical system there exists the special state (inertial frame) in which information about the rest of the universe looks similar". With $T$ the local temperature,
+$$dI=-dS-dH=-\frac{dE}{T}-dH$$
+(paper 22, which writes $dS=dE/T$), and then
+$$\frac{dE}{T}=\frac{dA}{\hbar}-dH=\left(1-\frac{\varphi}{c^2}\right)\frac{dA}{\hbar}$$
+(paper 23), where the "gravitational potential" is defined by
+$$\varphi=\hbar c^2\frac{dH}{dA}$$
+(paper 24). "al’, dH φ = ~c2 . (24) dA The case with constant entanglement, dH → 0, i.e. φ → 0, corresponds to the description of the universe by Minkowski space-time. 7"</p>
+<h3 id="the-variational-principle">The variational principle</h3>
+<p>With $S\sim\frac1\hbar\langle A\rangle=\frac1\hbar\sum_kP_kA_k$ (paper 25) and $P_k=\frac1Ze^{-A_k/\hbar}$ (paper 26), the stochastic action principle is
+$$\langle\delta A\rangle=\sum_kP_k\delta A_k=\delta\langle A\rangle-\hbar\,\delta S=0$$
+(paper 29). Written as $\delta S=\frac1\hbar(\delta\langle A\rangle-\langle\delta A\rangle)$ (paper 32) it "mimics the first law of thermodynamics" and unifies "the maximum entropy principle in thermodynamics [68] and the least action principle in field theory". Dissipation is added as an imaginary part, $S_{\rm tot}=S+i\sum_np_nH_n$ with $p_n\sim e^{iA_n/\hbar}$ (paper 33–34), and the final equation is
+$$\delta\left(S_{\rm tot}-\frac{\langle A\rangle}{\hbar}\right)=0$$
+(paper 35).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-identity-fixing-the-split-of-the-three-entropies">1. One identity fixing the split of the three entropies</h3>
+<p><strong>The idea.</strong> $I+S+H=0$ is not a dynamical law but an accounting identity, taken to hold for the universe at every stage, and everything else is read off it. A <strong>mechanism</strong>: an identity that generates conservation laws instead of assuming them.</p>
+<p><strong>What it would add.</strong> The corpus's article on energy and information derives four conservation laws from one algebraic identity between the two sectors; this is the same move made with entropies rather than with sector exchange, and it produces a different four — energy, momentum, mass and charge-free neutrality. Setting the two side by side would test whether the corpus's identity is one instance of a general pattern.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identity is borrowed from quantum information, where it holds for a pure bipartite state; applying it to the universe assumes the universe is such a state, which is the paper's hypothesis and not a result. The corpus's identity is algebraic and holds identically; this one holds for a restricted class of states, and the paper never states the class.</p>
+<h3 id="2-time-as-the-ordering-of-entropies">2. Time as the ordering of entropies</h3>
+<p><strong>The idea.</strong> A configuration labelling by entropy, $S_{k_1}&gt;S_{k_2}$, serves as the time parameter, and the Bayes relation between forward and reverse conditional probabilities becomes $I+S=$ const. A <strong>reading</strong> of time: not a coordinate but an order.</p>
+<p><strong>What it would add.</strong> The corpus's relational-time article has two clocks, a material one in the anti-Hermitian sector and an informational one in the Hermitian sector, exchanged by multiplication by the central $i$. Here there is a third proposal — an entropic clock that needs no algebra and no coordinate — which the corpus can compare against both.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction gives an order, not a rate: no interval, no metric, so it cannot be compared with the material clock's $i r'_t$ beyond the qualitative statement. It also assumes $H=$ const, which excludes exactly the entanglement change that the same paper later uses to produce gravity.</p>
+<h3 id="3-gravity-as-the-rate-of-change-of-entanglement">3. Gravity as the rate of change of entanglement</h3>
+<p><strong>The idea.</strong> The gravitational potential is $\varphi=\hbar c^2\,dH/dA$: a system is in an inertial frame when its conditional entanglement does not change with its action, and departs from it in proportion to that change. A <strong>formula</strong>, and the sharpest thing in the paper, since it makes $\varphi$ vanish for a definite condition.</p>
+<p><strong>What it would add.</strong> The corpus carries gravity as metric and as thermodynamics of horizons, but has no expression that produces a potential from an entanglement derivative. This one is dimensionally a potential and reduces to Minkowski in a stated limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> No equation of motion for $H$ is given, so $\varphi$ cannot be computed for any system. The identification $dS=dE/T$ used in (paper 22) is heat with no work term, so the chain describes a fixed-volume system only. And (paper 24) defines $\varphi$ so that (paper 23) holds, which makes the relation an identity rather than a prediction. The corpus would need $H$ as a field before the formula could be evaluated, and the paper does not supply it.</p>
+<p>The rank is a judgement: the identity first, because it is the generative move; the potential second, because it is the one formula with a checkable limit; the entropic clock third, because it is an order without a rate.</p>
+<p>Fourteen pages: the four entropies and their relations, the zero-entropy principle, entropic time, energy and mass, emergent space, the equivalence principle and the potential, the stochastic action principle with its dissipative extension, and the discussion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

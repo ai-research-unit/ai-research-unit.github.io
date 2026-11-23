@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorentz violating kinematics: Threshold theorems — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz violating kinematics - Threshold theorems - 1111.6340.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lorentz-violating-kinematics-threshold-theorems"><strong>Lorentz violating kinematics: Threshold theorems</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1111.6340v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Valentina Baccetti, Kyle Tate, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 December 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Lorentz violating kinematics - Threshold theorems - 1111.6340-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz violating kinematics - Threshold theorems - 1111.6340.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz violating kinematics - Threshold theorems - 1111.6340.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Once Lorentz invariance is broken, thresholds for scattering and decay stop behaving as they do in relativity. The authors derive general threshold theorems that assume only a dispersion relation $E(p)$. They do not assume isotropy or monotonicity. At threshold all final-state particles share a three-velocity, and initial particles must be parallel or antiparallel to them. Three-momenta can behave in ways that look impossible in the Lorentz-invariant case. The results are tabulated for increasing assumptions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"once one violates Lorentz invariance the analysis of thresholds in both scattering and decay processes becomes extremely subtle, with many new and naively unexpected effects."</p>
+<h3 id="the-method">The method</h3>
+<p>"we develop several extremely general threshold theorems that depend only on the existence of some energy momentum relation $E(p)$, eschewing even assumptions of isotropy or monotonicity."</p>
+<h3 id="the-general-result">The general result</h3>
+<p>"Even in this most general of settings, we show that at threshold all final state particles move with the same 3-velocity, while initial state particles must have 3-velocities parallel/anti-parallel to the final state particles. In contrast the various 3-momenta can behave in a complicated and counter-intuitive manner."</p>
+<h3 id="what-is-left">What is left</h3>
+<p>"of the kinematically allowed region, for both decay processes and 2-particle (elastic or inelastic) scattering, is much more complicated than in the Lorentz invariant case. There are some limited number of truly general statements that one can make, but most of one's intuition has to be reassessed on a case by case basis."</p>
+<h3 id="the-method-of-presentation">The method of presentation</h3>
+<p>"We have tried to carefully delineate exactly which assumptions are central to which results, concentrating on those results that depend only on the existence of a homogeneous spacetime, and adding extra assumptions only when essential to obtaining specific specialized results."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"The resulting framework is useful both in (an extremely wide class of) Lorentz violating extensions of the standard model of particle physics, and is also potentially of interest in quasi-particle settings where violations of Lorentz invariance (and even rotational invariance) are the norm rather than the exception."</p>
+<h3 id="the-choice-of-framework">The choice of framework</h3>
+<p>"In the spirit of classical particle physics we have taken the Hamiltonian framework as being more fundamental, and the Lagrangian framework as derivative."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-thresholds-depend-only-on-math14">1. Thresholds depend only on $E(p)$</h3>
+<p><strong>The idea.</strong> Kinematics alone, with no symmetry, still constrains what can happen at threshold.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> studies the massless dispersion relation and its limit. The threshold theorems are the apparatus for asking what changes when the relation is not the relativistic one, which the target lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of dispersion.</p>
+<p><strong>What stands in the way.</strong> The results are kinematic and say nothing about dynamics. Ranked first, because it is the tool the target needs for deformed dispersion.</p>
+<h3 id="2-intuition-fails-case-by-case">2. Intuition fails case by case</h3>
+<p><strong>The idea.</strong> Almost every Lorentz-invariant expectation about thresholds is false once the symmetry goes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> compares the framework to standard physics. Here the standard expectations themselves turn out to be symmetry artefacts, which is a caution for any comparison.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of comparison.</p>
+<p><strong>What stands in the way.</strong> The statement is a general warning, not a test. Ranked second.</p>
+<h3 id="3-tables-of-assumptions">3. Tables of assumptions</h3>
+<p><strong>The idea.</strong> Each conclusion is tagged with exactly the assumptions it needs.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues obstructions. A table that maps assumption to result is the same method applied to kinematics, and the target could adopt the format.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The format is expository. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

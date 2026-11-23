@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinor — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Spinor.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the full…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinor"><strong>Spinor</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Spinor</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Spinor-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Spinor.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-bispinor-spaces.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Spinor.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A long encyclopedia article on spinors: their definition as elements of a complex vector space associated with Euclidean space, their transformation by the double cover of the rotation group, the sign change under a full turn, the construction by ideals in a Clifford algebra, and their use in physics from the Dirac equation to general relativity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"ner"; /spɪnər/) are elements of a complex vector space that can be associated with Euclidean space. Spinors can be thought of as companion geometric objects to Euclidean space that, like Euclidean vectors, respond when the Euclidean space is subjected to a rotation."</p>
+<h3 id="the-defining-peculiarity">The defining peculiarity</h3>
+<p>"A spinor transforms linearly when the Euclidean space is subjected to a slight (infinitesimal) rotation, but unlike geometric vectors and tensors, a spinor transforms to its negative when the space" is rotated through a full turn of $2\pi$. That minus sign is the whole content of the double cover: the rotation group is recovered only after two turns.</p>
+<h3 id="the-algebraic-construction">The algebraic construction</h3>
+<p>A spinor is an element of a minimal left ideal of the Clifford algebra, which the algebra's idempotents provide. The article's geometric picture — a vector pointing out of a flag, with the flag's orientation as the extra structure — makes the same point: a spinor carries more than a direction, and the extra information is not a tensor.</p>
+<p>"For further details, see Dirac spinor, Weyl spinor, Majorana spinor, and spinor bundle."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-minus-sign-is-a-representation-property-not-a-physical-phase">1. The minus sign is a representation property, not a physical phase</h3>
+<p><strong>The idea.</strong> A $2\pi$ rotation acts as $-1$ on a spinor, so the representation is of the double cover and not of the group. This is not a global phase to be discarded: it is what distinguishes the two sheets.</p>
+<p><strong>What it would add.</strong> A precise statement of where the corpus's spinors live, which its bispinor article constructs as a subspace but describes in terms of components.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>, at the transformation law.</p>
+<p><strong>What stands in the way.</strong> In the corpus's real algebra there are no complex phases, so the $-1$ has to be produced by an element of the algebra squaring to $-1$; that element exists, but the statement is algebraic rather than topological.</p>
+<h3 id="2-minimal-left-ideals-are-how-spinors-are-built">2. Minimal left ideals are how spinors are built</h3>
+<p><strong>The idea.</strong> The spinor space is not postulated; it is an ideal generated by an idempotent of the Clifford algebra. The rank of the ideal fixes the dimension of the spinor space.</p>
+<p><strong>What it would add.</strong> A construction the corpus reaches by identifying a subspace, stated instead as an algebraic generation. The two should agree, and the article gives the criterion.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>, at the construction.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra has nilpotents and zero divisors, so the ideal structure is richer than the matrix-algebra case, and the idempotent argument would need care at the divisor cone.</p>
+<p>This is a long encyclopedia article; the definition, the double-turn sign, the flag picture and the ideal construction are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

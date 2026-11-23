@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounds on variable-length compound jumps — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on variable-length compound jumps - 1301.7524.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounds-on-variable-length-compound-jumps"><strong>Bounds on variable-length compound jumps</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1301.7524v2 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 September 2013 (dated 26 June 2013)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bounds on variable-length compound jumps - 1301.7524-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on variable-length compound jumps - 1301.7524.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/list-of-inequalities.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on variable-length compound jumps - 1301.7524.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper bounds the length of a compound walk made of variable-length jumps. In Euclidean space the upper bound is trivial and the lower bound is not: it follows from the triangle and polygon inequalities. The authors then transport the same bounds to two other settings where the composition law has the same algebraic shape. In rapidity space the bounds control the relativistic composition of velocities. In the space of transfer matrices the same inequalities bound the composition of scattering processes, and hence the Bogoliubov coefficients.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"In Euclidean space there is a trivial upper bound on the maximum length of a compound 'walk' built up of variable-length jumps, and a considerably less trivial lower bound on its minimum length. The existence of this non-trivial lower bound is intimately connected to the triangle inequalities, and the more general 'polygon inequalities'."</p>
+<h3 id="the-transfer-to-physics">The transfer to physics</h3>
+<p>"Moving beyond Euclidean space, when a modified version of these bounds is applied in 'rapidity space' they provide upper and lower bounds on the relativistic composition of velocities." The paper's third setting is the composition of transfer matrices, which is the same algebraic problem in another guise.</p>
+<h3 id="why-the-three-problems-are-one">Why the three problems are one</h3>
+<p>"That particle scattering in the spatial domain is mathematically intimately related to particle production in the temporal domain is a very standard result, ultimately going back to the relationship between scattering and transmission amplitudes and the Bogoliubov coefficients. The intimate mathematical relationship between particle scattering and relativistic composition of velocities is less well-known, but is quite standard. The SO(3,1) Lorentz group is locally isomorphic to SL(2,C), while the group of transfer matrices SU(1,1) is locally isomorphic to SL(2,R). Ultimately it is the fact that their Lie algebras are both isomorphic to Euclidean space that ties the three problems (physical Euclidean space, relativistic composition of velocities, and composition of scattering processes) together."</p>
+<h3 id="the-result">The result</h3>
+<p>"The overall result of the current article is to rigorously establish several clearly motivated and robust mathematical bounds on these three closely inter-related physical problems."</p>
+<h3 id="what-is-being-assumed">What is being assumed</h3>
+<p>The bounds are bounds on the composition law, not on any particular dynamics. The paper's inputs are the individual jump lengths, or the individual rapidities, or the individual transfer matrices; the output is an interval for the composite. Sharpness is inherited from the triangle inequality, which is saturated by collinear jumps.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-polygon-inequalities-as-a-tool">1. The polygon inequalities as a tool</h3>
+<p><strong>The idea.</strong> A list of inequalities acquires a physical application: the lower bound on a composite walk is a bound on a composed velocity and on a composed scattering amplitude.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/list-of-inequalities.md</code> is a list. This paper supplies the reason a particular entry matters: the polygon inequality is the exact statement that a composite of transformations cannot be shorter than the difference of its parts. Adding the application would turn an entry in a list into a used result.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/list-of-inequalities.md</code>, under the triangle and polygon inequalities.</p>
+<p><strong>What stands in the way.</strong> None; the inequality is standard and the application is a corollary. Ranked first, because it is a clean addition with no new machinery.</p>
+<h3 id="2-rapidity-composition-is-bounded">2. Rapidity composition is bounded</h3>
+<p><strong>The idea.</strong> Two boosts compose to a boost whose rapidity is bounded above and below by functions of the two rapidities and the angle between them.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code> computes the composition exactly and records its non-additivity. This paper adds the complementary statement: before computing, one can bracket the result. For the article's claim that the composition is non-additive, a bound is a quantitative form of the same fact.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The bound is weaker than the exact formula the article already has, so it adds interpretation rather than content. Ranked second.</p>
+<h3 id="3-composition-of-scattering-is-composition-of-matrices">3. Composition of scattering is composition of matrices</h3>
+<p><strong>The idea.</strong> A sequence of scattering regions composes by multiplying transfer matrices, and the same inequalities bound the product.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> treats one transformation. A compound of several regions is a product, and the paper's bound says how much the product can differ from the identity. That is the natural multi-region extension of the article's single-mode statement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, at the end of the canonical-conditions section.</p>
+<p><strong>What stands in the way.</strong> The bound is for $SU(1,1)$ transfer matrices, while the article's worked case is fermionic and uses a different group. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

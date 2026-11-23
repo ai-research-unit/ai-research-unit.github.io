@@ -118,12 +118,12 @@ $$</p>
 <h2 id="the-real-anti-hermitian-matrices-and-the-block-form">The Real Anti-Hermitian Matrices and the Block Form</h2>
 <p><strong>A real antisymmetric matrix is anti-Hermitian and its spectrum is purely imaginary, in conjugate pairs.</strong> For $K\in\mathfrak{so}(n)$ the characteristic polynomial has real coefficients, so its roots come in conjugate pairs; since all roots are purely imaginary, the spectrum is</p>
 <p>$$
-\operatorname{Spec}(K)=\{0,\dots,0,\pm i\theta_1,\dots,\pm i\theta_m\},\qquad \theta_j>0,
+\operatorname{Spec}(K)=\{0,\dots,0,\pm i\theta_1,\dots,\pm i\theta_m\},\qquad \theta_j&gt;0,
 $$</p>
 <p>with $2m\le n$. The computation at $n=4,5,6$ confirms the pairing and the reality of the $\theta_j$, which are the moduli of the nonzero eigenvalues.</p>
 <p><strong>The canonical form.</strong> There is an orthogonal $Q$ with</p>
 <p>$$
-Q^{\mathsf T}KQ=\operatorname{diag}\Big(\begin{pmatrix}0&-\theta_1\\ \theta_1&0\end{pmatrix},\dots,\begin{pmatrix}0&-\theta_m\\ \theta_m&0\end{pmatrix},0,\dots,0\Big),
+Q^{\mathsf T}KQ=\operatorname{diag}\Big(\begin{pmatrix}0&amp;-\theta_1\\ \theta_1&amp;0\end{pmatrix},\dots,\begin{pmatrix}0&amp;-\theta_m\\ \theta_m&amp;0\end{pmatrix},0,\dots,0\Big),
 $$</p>
 <p>the block diagonal of $m$ rotation blocks and $n-2m$ zeros. The form was verified at $n=4$ by computing the eigenvalues of a random antisymmetric matrix and comparing the characteristic polynomial of the block form with $\chi_K$.</p>
 <p><strong>The matrix is not diagonalisable over $\mathbb{R}$ when $m\ge1$.</strong> A real diagonalisable matrix has a real spectrum, and a nonzero $\theta_j$ gives the nonreal eigenvalues $\pm i\theta_j$; so a real antisymmetric matrix with $m\ge1$ has no real eigenbasis. Over $\mathbb{C}$ it is diagonalisable by a unitary, as the previous section shows. So the "reality of the spectrum" is the statement that the invariant data are the real numbers $\theta_j$, not the complex eigenvalues.</p>
@@ -133,12 +133,12 @@ $$</p>
 $$</p>
 <p>which was checked at $n=4,5,6$ on random antisymmetric matrices. So a real antisymmetric matrix of odd order is singular, and the corank has the same parity as $n$.</p>
 <h2 id="the-angles-as-the-invariants">The Angles as the Invariants</h2>
-<p><strong>The angles are determined by the spectrum and determine the orthogonal class.</strong> Two real antisymmetric matrices are orthogonally similar exactly when they have the same list $\theta_1\ge\dots\ge\theta_m>0$ together with the same $n$, by the uniqueness of the canonical form. So</p>
+<p><strong>The angles are determined by the spectrum and determine the orthogonal class.</strong> Two real antisymmetric matrices are orthogonally similar exactly when they have the same list $\theta_1\ge\dots\ge\theta_m&gt;0$ together with the same $n$, by the uniqueness of the canonical form. So</p>
 <p>$$
-\mathfrak{so}(n)\big/\mathrm{O}(n)\ \longleftrightarrow\ \{\theta_1\ge\dots\ge\theta_m>0,\ 2m\le n\},
+\mathfrak{so}(n)\big/\mathrm{O}(n)\ \longleftrightarrow\ \{\theta_1\ge\dots\ge\theta_m&gt;0,\ 2m\le n\},
 $$</p>
 <p>and the angles are the complete invariants of the orthogonal similarity class. The statement was verified at $n=4$ by comparing the sorted moduli of the eigenvalues of random antisymmetric matrices.</p>
-<p><strong>The angles are the lengths of the rotation in each invariant plane.</strong> The block $\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}$ rotates the plane by the angle $\theta$ in the sense of the exponential, so the $\theta_j$ are the angular velocities of the $m$ independent rotations that the matrix generates. So the canonical form exhibits the matrix as $m$ independent planar rotations plus a kernel, and the angles are their rates.</p>
+<p><strong>The angles are the lengths of the rotation in each invariant plane.</strong> The block $\begin{pmatrix}0&amp;-\theta\\ \theta&amp;0\end{pmatrix}$ rotates the plane by the angle $\theta$ in the sense of the exponential, so the $\theta_j$ are the angular velocities of the $m$ independent rotations that the matrix generates. So the canonical form exhibits the matrix as $m$ independent planar rotations plus a kernel, and the angles are their rates.</p>
 <p><strong>The Frobenius norm is the Euclidean norm of the angles.</strong> Since the block form is orthogonal, $\|K\|^{2}=\|Q^{\mathsf T}KQ\|^{2}$, and each rotation block has norm $2\theta_j^{2}$, so</p>
 <p>$$
 \|K\|^{2}=2\sum_{j=1}^{m}\theta_j^{2},
@@ -152,7 +152,7 @@ $$</p>
 <h2 id="the-case-math92">The Case $n=2$</h2>
 <p><strong>At $n=2$ the antisymmetric half is one line and the angle is its length.</strong> Every real antisymmetric matrix is</p>
 <p>$$
-K=\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}=\theta J,\qquad \theta\in\mathbb{R},
+K=\begin{pmatrix}0&amp;-\theta\\ \theta&amp;0\end{pmatrix}=\theta J,\qquad \theta\in\mathbb{R},
 $$</p>
 <p>and its canonical form is itself, with the single angle $|\theta|$ and the sign of $\theta$ as the orientation. The spectrum is $\{\pm i\theta\}$, the norm is $\sqrt2|\theta|$, and the determinant is $\theta^{2}$, all of which the computation confirms.</p>
 <p><strong>The complex anti-Hermitian matrices of size two are three-dimensional over $\mathbb{R}$.</strong> They are $i$ times the traceless Hermitian matrices, so</p>
@@ -162,7 +162,7 @@ $$</p>
 <p>with $K^{2}=-(a^{2}+b^{2}+c^{2})\mathrm{I}$ and $\operatorname{Spec}(K)=\{\pm i\sqrt{a^{2}+b^{2}+c^{2}}\}$. The computation confirms the square and the spectrum, and the single angle is the Euclidean norm of the triple.</p>
 <p><strong>The biquaternion reading gives the angle to the rotation direction.</strong> The line $\mathbb{R}J$ is the antisymmetric half of $M_2(\mathbb{R})$, and in the biquaternion frame the element $i\tilde{Ζ}$ is a pure root, whose square is $-\mathrm{I}$; so the anti-Hermitian elements of square $-1$ are the pure roots $\vec{Ζ}$ rotated by the angle $\pi/2$. So the spectrum theorem at $n=2$ is the statement that the pure roots of the biquaternion algebra form the unit sphere of the three-dimensional anti-Hermitian space, and the angle of an anti-Hermitian element is its distance from the origin in that sphere.</p>
 <h2 id="summary">Summary</h2>
-<p>The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real antisymmetric matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j>0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.</p>
+<p>The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real antisymmetric matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j&gt;0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -193,11 +193,11 @@ $$</p>
 <td>negative semidefiniteness of the square</td>
 </tr>
 <tr>
-<td>$\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}0&amp;-\theta\\ \theta&amp;0\end{pmatrix}$</td>
 <td>the rotation block</td>
 </tr>
 <tr>
-<td>$\theta_1\ge\dots\ge\theta_m>0$</td>
+<td>$\theta_1\ge\dots\ge\theta_m&gt;0$</td>
 <td>the angles, invariants of the orthogonal class</td>
 </tr>
 <tr>

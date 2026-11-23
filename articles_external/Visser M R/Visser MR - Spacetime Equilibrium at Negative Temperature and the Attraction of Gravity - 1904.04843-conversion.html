@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spacetime-equilibrium-at-negative-temperature-and-the-attraction-of-gravity"><strong>Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1904.04843v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ted Jacobson, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 13 June 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (essay for the Gravity Research Foundation 2019 Awards)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity - 1904.04843-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity - 1904.04843.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Spacetime Equilibrium at Negative Temperature and the Attraction of Gravity - 1904.04843.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the Einstein equation from a single postulate: every small causal diamond is, to first order in the variations, a variation of a flat empty diamond with the same free conformal energy. The fixed-volume condition of the earlier entanglement-equilibrium derivation is replaced by the stationarity of a free energy in which the volume plays the role of gravitational energy. The absolute temperature of a self-gravitating diamond turns out to be negative, and the authors argue that this sign is what makes gravity attractive. It is an essay, not a technical paper: eight pages, one postulate, one sign.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-postulate">The postulate</h3>
+<p>"Any small causal diamond in any spacetime is 'close' to being flat (Minkowski), in the sense that, to first order in metric and matter variations, it is the variation of a flat reference causal diamond with the same free energy in the canonical ensemble." A diamond qualifies as small when it is much smaller than both the local curvature scale and the scale of any field excitation.</p>
+<h3 id="the-free-energy">The free energy</h3>
+<p>$$F=H_\zeta-TS_{\text{UV}}, \qquad (paper\ 1)$$</p>
+<p>with $H_\zeta$ the Hamiltonian generating the conformal Killing flow, $T$ the diamond's temperature, and $S_{\text{UV}}=\eta A$ the entanglement entropy of the UV degrees of freedom (paper 2), with $\eta$ a universal constant of dimension $[\text{length}]^{2-d}$.</p>
+<h3 id="the-sign-of-the-temperature">The sign of the temperature</h3>
+<p>Varying at fixed $T$ gives $\delta F\supset T_U\delta S_m-T\,\delta S_{\text{UV}}$ (paper 3). "The two terms on the right should combine to form $-T\delta S_{\text{gen}}$, but this happens only if"</p>
+<p>$$T=-T_U=-\frac{\hbar}{2\pi}. \qquad (paper\ 4)$$</p>
+<p>The temperature is normalised so that the surface gravity of the conformal Killing vector is $\kappa=1$. The authors state the contrast plainly: "In the former [fixed diamond background] the temperature of the vacuum is positive, whereas in gravitational thermodynamics, as we see here, the temperature of a causal diamond is negative."</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>The negative sign, inserted into the equilibrium condition, gives the Einstein equation with the attractive sign of the coupling. The essay's claim is that attraction is a thermodynamic statement about the sign of a temperature, not an independent fact about the interaction.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-attraction-as-a-sign-of-temperature">1. Attraction as a sign of temperature</h3>
+<p><strong>The idea.</strong> The gravitational coupling's sign — attraction rather than repulsion — follows from $T&lt;0$ for a self-gravitating diamond. This is a <strong>reading</strong> that turns a sign into a physical fact.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code> and <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> take the modular temperature as positive and say nothing about why the gravitational interaction attracts. A statement that attraction is the negative-temperature branch would be the corpus's first account of the sign of gravity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code>, adjacent to <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation is four lines long and rests on the identification of the volume with a gravitational energy, which comes from the extrinsic-curvature Hamiltonian of general relativity. The corpus has no such Hamiltonian, and its temperature comes from the modular flow of an algebra element rather than from a free energy. The cost is the whole variational apparatus.</p>
+<h3 id="2-the-volume-as-an-energy">2. The volume as an energy</h3>
+<p><strong>The idea.</strong> In the free energy the spatial volume of the maximal slice plays the part played by energy elsewhere, and diffeomorphism invariance is what forces the volume term to be there. This is a <strong>mechanism</strong>, and it is the conceptual core of the essay.</p>
+<p><strong>What it would add.</strong> The corpus treats the metric's spatial volume as a geometric quantity only. A reason why a volume must appear in a thermodynamic potential — from diffeomorphism invariance rather than from a choice — would be a new structural statement, and one that connects to the corpus's own reading of the action as one-sided (<code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>).</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code> and <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is heuristic and the essay says so; it does not derive the coefficient. Ranked second.</p>
+<h3 id="3-a-postulate-that-replaces-a-fixed-boundary-condition">3. A postulate that replaces a fixed boundary condition</h3>
+<p><strong>The idea.</strong> Instead of maximising entropy at fixed volume — a condition with no independent justification — one requires equilibrium of a free energy, which is the ordinary criterion for a canonical ensemble. This is a <strong>reading</strong> of the earlier entanglement-equilibrium result, and it removes an arbitrary postulate.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> inherits the fixed-volume condition from the literature; this essay supplies the reason it was there and the way to replace it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import as a statement; using it requires the gravitational Hamiltonian the corpus does not have. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

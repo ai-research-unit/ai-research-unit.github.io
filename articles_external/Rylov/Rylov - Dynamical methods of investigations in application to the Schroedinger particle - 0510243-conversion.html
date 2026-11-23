@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamical Methods of Investigations in Application to the Schrödinger Particle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigations in application to the Schroedinger particle -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamical-methods-of-investigations-in-application-to-the-schrodinger-particle"><strong>Dynamical Methods of Investigations in Application to the Schrödinger Particle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0510243 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 9 November 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Dynamical methods of investigations in application to the Schroedinger particle - 0510243-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigations in application to the Schroedinger particle - 0510243.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-successive-measurements-of-spin.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigations in application to the Schroedinger particle - 0510243.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Treats the system described by the Schrödinger equation as a dynamical system and investigates it without the quantum principles — no linearity requirement, no linear transformation of the wave function, no superposition axiom. Two claims come out. The Copenhagen interpretation is incompatible with the quantum-mechanical formalism itself, and in some cases applying the quantum principles gives results that are wrong rather than merely incomplete.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>The premise is a definition: "Quantum systems are dynamic systems restricted by the principles of quantum mechanics (linearity of dynamic equations, linear transformation of the wave function etc.)." Since a restriction can be dropped, he drops it: "One suggests to investigate the quantum systems simply as dynamic systems, ignoring the quantum principles and constraints imposed by them."</p>
+<p>The payoff claimed is structural, not computational. A fundamental theory "must be a logical structure", with a few fundamental propositions from which the rest follows, whereas the quantum principles are a list: after the elimination, "The number of fundamental propositions is reduced essentially. The quantum theory ceases to be a list of prescriptions and becomes a logical structure."</p>
+<p>He also names what the linearity costs, in a phrase worth keeping: linearity "is based on a special gauge of the wave function. A use of such an artificial property of the wave function for construction of the relativistic quantum theory seems to be unjustified, although the linearity is very convenient, because the linear equations are simple for solution."</p>
+<h3 id="the-two-results">The two results</h3>
+<p>The first is a mismatch between interpretation and formalism: investigating $S_S$ as a dynamic system "admits one to prove that the Copenhagen interpretation is incompatible with quantum mechanics formalism." The argument is that the formalism's own content is a statistical description of an ensemble, while the Copenhagen reading assigns the wave function to the individual system — the same charge as in the stochastic-systems paper, now aimed at the interpretation rather than at the measurement act.</p>
+<p>The second is stronger and is stated in the abstract without qualification: "it is shown that sometimes the application of quantum principles leads to incorrect results." </p>
+<h3 id="what-he-wants-instead">What he wants instead</h3>
+<p>Not a new quantum theory but a change of accounting: the constancy of $\hbar$ "is explained by the quantum nature of all physical phenomena" only if one assumes it, and the alternative is a primordial stochastic motion of free particles whose intensity depends on the mass, which makes "the universal character of the quantum constant and the particle motion stochasticity" a consequence of space-time. From this he draws a conclusion about field quantisation, argued from the absence of evidence: "There are no experiments, which show directly or indirectly that the electromagnetic field exists in the form of quanta. (At least, such experiments are unknown for us)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-linearity-as-a-gauge-choice">1. Linearity as a gauge choice</h3>
+<p><strong>The idea.</strong> The linearity of the Schrödinger equation is not a physical principle but a consequence of a particular normalisation of the wave function — a <strong>claim</strong> with a precise target, since a change of gauge can be written down and its effect on an equation computed.</p>
+<p><strong>What it would add.</strong> The corpus derives linearity from the left action of $\mathbb{B}$ on itself, which is a structural fact and not a gauge. If linearity can be gauged away, then the corpus's derivation produces a linear representative of a class, and the class is the real object — a conclusion the corpus has not drawn and could test by writing the gauge transformation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-schrodinger-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper does not display the gauge transformation or the non-linear form the equation takes in another gauge, so the claim is programmatic here. And the corpus's superposition principle follows from linearity being structural: if linearity were a gauge, the superposition of two solutions would not be a solution, which is a strong and probably fatal reading.</p>
+<h3 id="2-the-mean-momentum-distribution">2. The mean momentum distribution</h3>
+<p><strong>The idea.</strong> What quantum mechanics calls the momentum distribution is a distribution of mean momenta over an ensemble, so a single-particle momentum measurement is measuring something the formalism does not predict.</p>
+<p><strong>What it would add.</strong> The corpus has an exercise on successive spin measurements, where the question is exactly what a single measurement does to a state and what the formalism licenses one to say about the outcome. The mean-momentum claim is a concrete instance of the same question for a continuous variable, and it would sharpen the exercise into a question about which distribution the apparatus sampled, rather than about what the postulate says.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-successive-measurements-of-spin.md</code>.</p>
+<p><strong>What stands in the way.</strong> No experiment is analysed and no distribution is computed; the claim rests on the general $S$ versus $\langle S\rangle$ distinction. And the distinction between a momentum distribution and a distribution of mean momenta is invisible in any experiment that measures many particles, which is every experiment.</p>
+<h3 id="3-not-all-fields-need-quantising">3. Not all fields need quantising</h3>
+<p><strong>The idea.</strong> If $\hbar$ is geometric, the metric fields do not carry it, and "There is no necessity to quantize these fields." Absorption and emission in quanta are then properties of the apparatus, not of the field.</p>
+<p><strong>What it would add.</strong> The corpus quantises its fields and has a Fujikawa-measure article on the anomaly, which presumes a functional integral over field configurations. A framework in which the electromagnetic field is classical and the quanta belong to the detector is a live alternative, and the corpus's anomaly calculation is exactly the kind of thing that would have to be redone without a measure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is from absence of evidence, which is the weakest form, and it does not engage the phenomena that forced field quantisation — the photoelectric threshold, the Compton shift, the Lamb shift. A classical field plus a quantum detector must reproduce those numbers, and no number is computed.</p>
+<p>The rank: linearity as gauge first, because it is the sharpest claim and the corpus can test it; mean momentum second, because it lands on an exercise built for exactly that question; the classical-field conclusion last, because it argues from absence.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

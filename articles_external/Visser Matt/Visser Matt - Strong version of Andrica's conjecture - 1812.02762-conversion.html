@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strong version of Andrica&#x27;s conjecture — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Strong version of Andrica&#x27;s conjecture - 1812.02762.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="strong-version-of-andricas-conjecture"><strong>Strong version of Andrica's conjecture</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1812.02762v3 [math.NT]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 9 May 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Strong version of Andrica's conjecture - 1812.02762-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Strong version of Andrica's conjecture - 1812.02762.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/analytic-number-theory.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Strong version of Andrica's conjecture - 1812.02762.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Andrica's conjecture bounds the difference of square roots of consecutive primes. The author proposes a stronger bound: the gap between consecutive primes is less than one half, with six exceptions. A proof is out of reach. He verifies the claim by computation up to the eighty-first maximal prime gap, which covers all primes below $2^{64}$. He also shows the new claim implies Oppermann's conjecture.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"A strong version of Andrica's conjecture can be formulated as follows: Except for $p_n\in\{3,7,13,23,31,113\}$, that is $n\in\{2,4,6,9,11,30\}$, one has $\sqrt{p_{n+1}}-\sqrt{p_n}&lt;\tfrac12$."</p>
+<h3 id="the-status">The status</h3>
+<p>"While a proof is far out of reach I shall show that this strong version of Andrica's conjecture is unconditionally and explicitly verified"</p>
+<h3 id="the-range">The range</h3>
+<p>"certainly for all primes $p&lt;2^{64}\approx 1.844\times10^{19}$"</p>
+<h3 id="the-relation">The relation</h3>
+<p>"this strong Andrica conjecture is slightly stronger than Oppermann's conjecture"</p>
+<h3 id="the-contrast">The contrast</h3>
+<p>"the Cramér conjecture ... impose significantly stronger constraints on the prime gaps of the form $g_n:=p_{n+1}-p_n=O(\ln p_n)^2$"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-verified-ranges-unproved-claims">1. Verified ranges, unproved claims</h3>
+<p><strong>The idea.</strong> A conjecture can be settled computationally over a huge range and still be open.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> distinguishes prediction from proof. This is a clean example of the gap between finite verification and a theorem.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> The subject is number theory. Ranked first, because it is a textbook case of the distinction.</p>
+<h3 id="2-conjectures-imply-conjectures">2. Conjectures imply conjectures</h3>
+<p><strong>The idea.</strong> The new statement is stronger than Oppermann's, so verifying one settles another.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/analytic-number-theory.md</code> would gain an implication chain among open problems.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/analytic-number-theory.md</code>, in the discussion of conjectures.</p>
+<p><strong>What stands in the way.</strong> The implication is one-directional. Ranked second.</p>
+<h3 id="3-maximal-gaps-as-milestones">3. Maximal gaps as milestones</h3>
+<p><strong>The idea.</strong> Computations are organised around known records rather than round numbers.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/dynamics-and-number-theory.md</code> treats discrete dynamics. Records give a natural discretisation of a search.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/dynamics-and-number-theory.md</code>, in the discussion of discrete structure.</p>
+<p><strong>What stands in the way.</strong> The link is methodological. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

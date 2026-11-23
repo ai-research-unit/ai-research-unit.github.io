@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrophysically viable Kerr-like spacetime — into the eye of the storm — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Astrophysically viable Kerr-like spacetime - into the eye of the storm -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="astrophysically-viable-kerr-like-spacetime-into-the-eye-of-the-storm"><strong>Astrophysically viable Kerr-like spacetime — into the eye of the storm</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2112.04647v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 9 December 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Astrophysically viable Kerr-like spacetime - into the eye of the storm - 2112.04647-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Astrophysically viable Kerr-like spacetime - into the eye of the storm - 2112.04647.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Astrophysically viable Kerr-like spacetime - into the eye of the storm - 2112.04647.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper presents a rotating regular black hole designed to be as tractable as Kerr. The geometry is asymptotically Kerr at large distance, has an asymptotically Minkowski core, and confines the energy-condition violation to an arbitrarily small region at the centre. It carries a principal tensor, a Killing–Yano tensor, and a Killing tensor — a "Killing tower" — which makes the Hamilton–Jacobi, Klein–Gordon, and Maxwell equations separable. The authors argue that this makes the extraction of observational predictions straightforward, and they propose quasi-normal mode analysis as the next step.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"We analyse a rotating regular black hole with asymptotically Minkowski core. This Kerr-like geometry possesses the full 'Killing tower' of nontrivial Killing tensor, Killing–Yano tensor, and principal tensor. The Hamilton-Jacobi equation, the Klein-Gordon equation, and Maxwell's equations are separable."</p>
+<h3 id="the-trade-off">The trade-off</h3>
+<p>"Energy-condition-violating physics is pushed into an arbitrarily small region in the deep core. The geometry has a very high level of mathematical tractability; extraction of astrophysical observables falsifiable/verifiable by the observational community is straightforward."</p>
+<h3 id="the-construction-criteria">The construction criteria</h3>
+<p>"Conclusions: The eye of the storm spacetime was constructed according to a set of carefully chosen theoretically and observationally motivated criteria. Analysing the geometry, it models a rotating regular black hole with asymptotically Minkowski core, is asymptotically Kerr at large distances, satisfies all of the standard energy conditions of GR in the regions of theoretical and observational validity, has integrable geodesics, and has the property of separability of both the Klein–Gordon and Maxwell's equations."</p>
+<h3 id="the-claim-of-tractability">The claim of tractability</h3>
+<p>"It possesses the full 'Killing tower' of principal tensor, Killing–Yano tensor, and non-trivial Killing tensor. The eye of the storm is seemingly the most mathematically tractable rotating RBH in the literature, and is readily amenable to the extraction of astrophysical observables in principle falsifiable/verifiable by the observational community."</p>
+<h3 id="the-next-step">The next step</h3>
+<p>"Separability of Klein–Gordon and Maxwell's equations indicates one can and should probe the geometry via quasi-normal mode analysis for spin zero" and higher spins. The paper does not compute those modes; it establishes that they can be computed.</p>
+<h3 id="the-limitations">The limitations</h3>
+<p>The energy conditions hold only "in the regions of theoretical and observational validity", which excludes the deep core by construction. The paper is a construction and a feasibility argument, not a comparison with data.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-tractable-pathology">1. Tractable pathology</h3>
+<p><strong>The idea.</strong> A model keeps all its unphysical behaviour inside a region small enough to be unobservable, and is otherwise as simple as Kerr.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what would count as evidence against a framework. This model shows a strategy for evading that question: localise the violation. The article should name the strategy, because a framework could use it too, and a reader should be able to recognise it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The paper does not discuss falsification in general, so the import is an interpretation. Ranked second.</p>
+<h3 id="2-separability-as-a-design-goal">2. Separability as a design goal</h3>
+<p><strong>The idea.</strong> The metric is chosen so that three wave equations separate, and that choice is what makes predictions possible.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> is about what a horizon is, and it notes that the algebra reaches some quantities and not others. This paper says which additional structure makes the reachable set larger: a Killing tower. That is a positive statement about what to add, which the ledger does not offer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> A Killing tower is a strong symmetry assumption, and generic metrics have none. Ranked first, because it is the only constructive suggestion here.</p>
+<h3 id="3-a-core-with-no-singularity">3. A core with no singularity</h3>
+<p><strong>The idea.</strong> The centre of the geometry is Minkowski, not singular, and the transition is confined.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra cannot express. The paper shows a metric that is perfectly regular as an algebra element and whose curvature is bounded, so the "singularity" is not a failure of the algebra at a point but a property of a solution. The catalogue should not claim singularities as an algebraic obstruction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on curvature.</p>
+<p><strong>What stands in the way.</strong> The catalogue may not make that claim, in which case the import is a caution rather than a correction. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

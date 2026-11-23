@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit Baker–Campbell–Hausdorff–Dynkin formula for spacetime via geometric algebra — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff-Dynkin formula for Spacetime via Geometric…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="explicit-bakercampbellhausdorffdynkin-formula-for-spacetime-via-geometric-algebra"><strong>Explicit Baker–Campbell–Hausdorff–Dynkin formula for spacetime via geometric algebra</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2107.00343v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joseph Wilson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 1 July 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff-Dynkin formula for Spacetime via Geometric Algebra - 2107.00343-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff-Dynkin formula for Spacetime via Geometric Algebra - 2107.00343.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff-Dynkin formula for Spacetime via Geometric Algebra - 2107.00343.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper derives a compact formula for composing Lorentz transformations written as rotors in the spin representation. The logarithm of a product of two exponentials is expressed through hyperbolic tangents and a commutator, with a denominator containing the anticommutator. The formula holds in real Clifford algebras of dimension at most four and reduces to Rodrigues' formula for ordinary rotations. The authors apply it to compose relativistic three-velocities and read off the resulting boost and Wigner angle, noting that the spin representation makes the result simpler than earlier two-form versions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We present a compact Baker–Campbell–Hausdorff–Dynkin formula for the composition of Lorentz transformations $e^{\sigma_i}$ in the spin representation (a.k.a. Lorentz rotors) in terms of their generators $\sigma^i$:"</p>
+<p>$$\ln(e^{\sigma_1}e^{\sigma_2})=\tanh^{-1}\!\left(\frac{\tanh\sigma_1+\tanh\sigma_2+\tfrac12[\tanh\sigma_1,\tanh\sigma_2]}{1+\tfrac12\{\tanh\sigma_1,\tanh\sigma_2\}}\right).$$</p>
+<h3 id="the-scope">The scope</h3>
+<p>"This formula is general to geometric algebras (a.k.a. real Clifford algebras) of dimension $\le4$, naturally generalising Rodrigues' formula for rotations in $\mathbb{R}^3$."</p>
+<h3 id="the-setting">The setting</h3>
+<p>"In particular, it applies to Lorentz rotors within the framework of Hestenes' spacetime algebra, and provides an efficient method for composing Lorentz generators."</p>
+<h3 id="the-computation">The computation</h3>
+<p>"Computer implementations are possible with a complex $2\times2$ matrix representation realised by the Pauli spin matrices."</p>
+<h3 id="the-application">The application</h3>
+<p>"The formula is applied to the composition of relativistic 3-velocities yielding simple expressions for the resulting boost and the concomitant Wigner angle."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"In geometric algebras of dimension $p+q\le4$, orthogonal transformations $a\mapsto e^\sigma a e^{-\sigma}\in SO^+(p,q)$ may be composed in terms of their generators using the geometric BCHD formula (2.6)."</p>
+<h3 id="why-geometric-algebra">Why geometric algebra</h3>
+<p>"The benefit of adopting geometric algebra here is the utility of the double-cover spin representation: the geometric BCHD formula is simpler than previous results formulated in terms of 2-forms. It is sufficiently simple to be of theoretical use: it easily reduces to well-known formulae in lower dimensions, and yields the composition law for relativistic 3-velocities and the associated Wigner angle."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-boosts-compose-by-a-closed-formula">1. Boosts compose by a closed formula</h3>
+<p><strong>The idea.</strong> Two Lorentz rotors multiply into one rotor given explicitly, with the Wigner angle included.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code> describes a single boost as a Möbius map. A closed composition law would let the article treat sequences of boosts exactly instead of composing maps numerically, and the Wigner angle appears as part of the answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code>, in the composition of boosts.</p>
+<p><strong>What stands in the way.</strong> The formula is stated for algebras of dimension at most four. Ranked first, because it closes an operation the article leaves open.</p>
+<h3 id="2-the-spin-representation-is-simpler">2. The spin representation is simpler</h3>
+<p><strong>The idea.</strong> Working with rotors rather than two-forms shortens the formula.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/algebra-and-element-conventions.md</code> fixes which representation the framework uses. This paper gives a concrete reason to prefer the spin representation for composition problems, which the conventions article could record.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/algebra-and-element-conventions.md</code>, in the section on representations.</p>
+<p><strong>What stands in the way.</strong> The advantage is shown only for composition. Ranked second.</p>
+<h3 id="3-anticommutator-in-the-denominator">3. Anticommutator in the denominator</h3>
+<p><strong>The idea.</strong> The composition law needs both the commutator and the anticommutator.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/norm-and-pairing-conventions.md</code> treats symmetric products as part of the norm structure. Here the symmetric product also governs composition, which links two things the article keeps apart.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/norm-and-pairing-conventions.md</code>, in the discussion of pairings.</p>
+<p><strong>What stands in the way.</strong> It is a technical observation about one formula. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

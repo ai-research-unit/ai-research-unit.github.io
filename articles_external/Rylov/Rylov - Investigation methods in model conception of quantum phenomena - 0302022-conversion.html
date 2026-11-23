@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigation Methods in Model Conception of Quantum Phenomena — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Investigation methods in model conception of quantum phenomena - 0302022.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="investigation-methods-in-model-conception-of-quantum-phenomena"><strong>Investigation Methods in Model Conception of Quantum Phenomena</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0302022 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 19 October 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Investigation methods in model conception of quantum phenomena - 0302022-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Investigation methods in model conception of quantum phenomena - 0302022.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Investigation methods in model conception of quantum phenomena - 0302022.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sets out the model conception of quantum phenomena (MCQP) as the statistical mechanics to the conventional quantum mechanics' thermodynamics, and compares the two method by method in a table. The comparison is the paper's substance: five rows, each naming a thing the axiomatic conception does by postulate and the model conception does dynamically. Two of the rows are procedures — dynamic quantization and dynamic disquantization — and one is a change of what a measurement is about. The paper ends with a worked criticism: a celebrated pair-production derivation is obtained from an overdetermined problem, and an overdetermined problem can produce any result one wants.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-to-quantum-mechanics">The relation to quantum mechanics</h3>
+<p>"One can construct the model conception of quantum phenomena (MCQP) which relates to the axiomatic conception of quantum phenomena (ACQP), (i.e. to the conventional quantum mechanics) in the same way, as the statistical physics relates to thermodynamics." The analogy carries the claim: thermodynamics is correct and incomplete, statistical mechanics explains it.</p>
+<p>The basis is geometric: a geometry "which admits one to construct such a deterministic space-time geometry, where motion of free particles is primordially stochastic", chosen so that "statistical description of random particle motion coincides with the quantum description." And the motive is methodological: "Methods of MCQP in investigation of quantum phenomena appear to be more subtle and effective than, that of ACQP."</p>
+<h3 id="the-table">The table</h3>
+<p>The scheme has five rows, ACQP against MCQP. The PDF sets them in two columns, so the extracted text interleaves them; the content is:</p>
+<ol>
+<li>Additional hypotheses (the QM principles) against no additional hypotheses.</li>
+<li>One kind of measurement, since only one statistical average object $\langle S\rangle$ is considered, against two kinds of measurement, because two objects (individual $S_{st}$ and statistical average $\langle S\rangle$) are considered.</li>
+<li>Quantization as a procedure on the conceptual level, with $p\to-\mathrm{i}\hbar\nabla$ and the rest, against dynamic quantization as a relativistic procedure on the dynamic level.</li>
+<li>Transition to the classical description as "procedure on conceptual level", with $\hbar	o0$ and $\psi	o(x,p)$, against dynamic disquantization, $\partial_k	o j^kj^l\partial_l$.</li>
+<li>Interpretation in terms of the wave function against interpretation in terms of statistical average world lines, with $\frac{dx^i}{d	au}=j^i(x)$.</li>
+</ol>
+<p>The fourth row carries the programme in one line: the classical limit is not $\hbar	o0$ but a change of the derivative operator along the current $j^k$.</p>
+<h3 id="the-two-conceptions-as-structures">The two conceptions as structures</h3>
+<p>"MCQP is essentially more flexible conception, than ACQP, as far as all in MCQP is determined by the space-time geometry, and the set of all possible geometries is described by a function of two arguments." So modifications are cheap: "all modifications of MCQP are restricted by a change of the world function, and possible modifications do not concern the structure of MCQP".</p>
+<p>The opposite is said of the conventional theory: "ACQP is founded on a set of rigid rules, considered as principles, although there is no logical connection between them. The only foundation for application of quantum principles is the fact that they explain nonrelativistic quantum phenomena very well." And the failure is located where relativity matters: "ACQP fails in explanation of essentially relativistic quantum phenomena (for instance, pair production)."</p>
+<h3 id="the-overdetermination-charge">The overdetermination charge</h3>
+<p>The worked example is pair production. A constraint imposed on a nonlinear field "leads to overdetermination of the problem. In the overdetermined (and hence, inconsistent) problem one can obtain practically any results, which one wishes. So, authors of [34, 35, 36, 37] wanted to obtain pair production, and they had obtained it." The references are Glimm and Jaffe's constructive-field papers.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-overdetermined-problems-prove-nothing">1. Overdetermined problems prove nothing</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> with a criterion behind it: if a problem is overdetermined it is inconsistent, and a result extracted from it reflects the extraction rather than the theory. The criterion is testable — count constraints against unknowns, as he does elsewhere — and it is applied to a famous derivation rather than to a straw man.</p>
+<p><strong>What it would add.</strong> The corpus's Fock-space article constructs creation and annihilation operators and takes the quantised field's existence as given. If the route to that object passes through an overdetermined problem, the corpus's object inherits a defect it has not examined. The criterion is also cheap to apply and does not need his geometry: a count of constraints is a count.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The charge is aimed at a specific class of constructions from the 1960s and 1970s, and modern quantisation does not proceed that way; the corpus's construction certainly does not. So the import is a warning about a historical route rather than a live objection, unless the same overdetermination can be shown in the corpus's own route.</p>
+<h3 id="2-the-classical-limit-as-a-change-of-derivative">2. The classical limit as a change of derivative</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $\partial_k\to j^kj^l\partial_l$ and $\frac{dx^i}{d\tau}=j^i(x)$, so the classical description is the quantum one rewritten along the current. Not a limit, a substitution.</p>
+<p><strong>What it would add.</strong> The corpus derives its classical equations by taking a limit in the algebra. The substitution is a different operator and it is explicit — it can be applied to the corpus's action and the result compared with the corpus's existing nonrelativistic equation. That is a check with a definite computation, and the corpus has an article built on the limit that could be checked against it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-coupled-dirac-equation-in-the-non-quantum-limit.md</code>.</p>
+<p><strong>What stands in the way.</strong> The formula is printed in a table with OCR damage and no derivation; the current $j^k$ is the Dirac current, so the substitution presupposes a conserved current, which the corpus has but with its own conventions. Applying it requires fixing those first.</p>
+<h3 id="3-statistical-mechanics-to-thermodynamics">3. Statistical mechanics to thermodynamics</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong>: quantum mechanics is a thermodynamics — correct where it applies, silent about what underlies it — and MCQP is the statistical mechanics that underlies it.</p>
+<p><strong>What it would add.</strong> The corpus derives quantum mechanics from a classical field and a projection, so it already has a "below". The analogy would let it state what its own relation to quantum mechanics is: not a correction but an explanation of the same data, with the same status statistical mechanics has to thermodynamics. That is a claim the corpus half makes and has never put in that form. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The analogy is only an analogy: thermodynamics is derivable from statistical mechanics as a limit, and no such derivation from his geometry to quantum mechanics is given. A relation asserted by analogy carries no theorem. The rank: the classical-limit substitution first, because it is the one item with a computation; overdetermination second, because it is a criterion the corpus can apply to itself; the analogy last, because it is an analogy. The remaining items in one line each: the five-row table as a template for comparing frameworks;"two kinds of measurement" (imported in full in the 0210003 note); the claim that a geometry is fixed by "a function of two arguments", which is a one-parameter family of theories.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

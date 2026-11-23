@@ -72,7 +72,7 @@
         <h1 id="the-spectral-theorem-the-antisymmetric-case-and-the-purely-imaginary-spectrum"><strong>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every real antisymmetric matrix has a purely imaginary spectrum, and its real form is a direct sum of planar rotations together with zeros.</strong> The zeros are forced by the size: the nonzero eigenvalues come in pairs $\pm bi$, and a matrix of odd size has a slot left over, which only the eigenvalue zero can fill.</p>
-<p>The article proves that the spectrum is purely imaginary, derives the canonical form $K=Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_i>0$, computes the rank and the corank, defines the Pfaffian and proves $\mathrm{Pf}(K)^{2}=\det K$, shows that $K^{2}$ is symmetric and negative semidefinite, proves that $\exp K$ is orthogonal, and counts the dimension of $\mathfrak{so}(n)$. It assumes <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> and <em>The Spectral Theorem: the Symmetric Case</em>, and it defers the exponential to the rotation articles.</p>
+<p>The article proves that the spectrum is purely imaginary, derives the canonical form $K=Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_i&gt;0$, computes the rank and the corank, defines the Pfaffian and proves $\mathrm{Pf}(K)^{2}=\det K$, shows that $K^{2}$ is symmetric and negative semidefinite, proves that $\exp K$ is orthogonal, and counts the dimension of $\mathfrak{so}(n)$. It assumes <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> and <em>The Spectral Theorem: the Symmetric Case</em>, and it defers the exponential to the rotation articles.</p>
 <h2 id="the-purely-imaginary-spectrum">The Purely Imaginary Spectrum</h2>
 <p><strong>Proposition.</strong> If $K^{\mathsf T}=-K$ then every eigenvalue of $K$ is purely imaginary.</p>
 <p><em>Proof.</em> Let $\lambda$ be an eigenvalue with eigenvector $z\ne0$ over $\mathbb{C}$. Then $Kz=\lambda z$, and the number</p>
@@ -83,7 +83,7 @@ $$</p>
 <p>$$
 \bar q=z^{\mathsf T}K\bar z=-\bar z^{\mathsf T}Kz=-q,
 $$</p>
-<p>because $(z^{\mathsf T}K\bar z)^{\mathsf T}=\bar z^{\mathsf T}K^{\mathsf T}z=-\bar z^{\mathsf T}Kz$. So $q$ is purely imaginary, and since $\|z\|^{2}>0$ is real, $\lambda=q/\|z\|^{2}$ is purely imaginary.</p>
+<p>because $(z^{\mathsf T}K\bar z)^{\mathsf T}=\bar z^{\mathsf T}K^{\mathsf T}z=-\bar z^{\mathsf T}Kz$. So $q$ is purely imaginary, and since $\|z\|^{2}&gt;0$ is real, $\lambda=q/\|z\|^{2}$ is purely imaginary.</p>
 <p><strong>The real eigenvector argument is the real case of the same identity.</strong> If $x\in\mathbb{R}^{n}$ is a real eigenvector with real eigenvalue $\lambda$, then</p>
 <p>$$
 x^{\mathsf T}Kx=\lambda x^{\mathsf T}x,
@@ -93,9 +93,9 @@ $$</p>
 <p><strong>The spectrum is a union of pairs.</strong> For a real matrix the spectrum is stable under conjugation, and $\bar{bi}=-bi$, so the nonzero eigenvalues come in pairs $\pm bi$ with equal multiplicities. This is the count $r+2s=n$ with $r$ equal to the multiplicity of $0$.</p>
 <p><strong>The measurement.</strong> On $100$ random antisymmetric matrices of size $2$, $3$ and $4$ the largest modulus of a real part of an eigenvalue is below $10^{-9}$ every time, that is, purely imaginary in all $300$ cases.</p>
 <h2 id="the-canonical-form">The Canonical Form</h2>
-<p><strong>Theorem.</strong> For every $K\in M_n(\mathbb{R})$ with $K^{\mathsf T}=-K$ there is an orthogonal $Q$ and real numbers $b_1\ge\cdots\ge b_s>0$ with</p>
+<p><strong>Theorem.</strong> For every $K\in M_n(\mathbb{R})$ with $K^{\mathsf T}=-K$ there is an orthogonal $Q$ and real numbers $b_1\ge\cdots\ge b_s&gt;0$ with</p>
 <p>$$
-K=Q\operatorname{diag}\bigl(0,\dots,0,\,b_1J,\dots,b_sJ\bigr)Q^{\mathsf T},\qquad J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}.
+K=Q\operatorname{diag}\bigl(0,\dots,0,\,b_1J,\dots,b_sJ\bigr)Q^{\mathsf T},\qquad J=\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The matrix $K$ is normal, because $KK^{\mathsf T}=-K^{2}=K^{\mathsf T}K$. By <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> there is an orthogonal $Q$ with $Q^{\mathsf T}KQ$ block diagonal in $1\times1$ and rotation blocks. A $1\times1$ block is a real eigenvalue, hence $0$ by the proposition; a rotation block $C(a,b)$ is antisymmetric exactly when $a=0$, since $C(a,b)^{\mathsf T}=C(a,-b)$. So the blocks are zeros and $b_jJ$ with $b_j\ne0$, and the sign of $b_j$ is absorbed by conjugating with $\operatorname{diag}(1,-1)$, which sends $bJ$ to $-bJ$.</p>
 <p><strong>The numbers $b_j$ are the moduli of the eigenvalues.</strong> The eigenvalues of $bJ$ are $\pm bi$, so $b_j$ is the modulus of the pair, and the ordered list $b_1\ge\cdots\ge b_s$ is unique. The canonical form is therefore unique up to the orthogonal change of basis.</p>
@@ -104,15 +104,15 @@ $$</p>
 <h2 id="rank-and-corank">Rank and Corank</h2>
 <p><strong>Proposition.</strong> The rank of $K$ is $2s$ and the corank is $n-2s$, the multiplicity of the zero eigenvalue.</p>
 <p><em>Proof.</em> In the canonical form the rank is the number of nonzero blocks, each of rank $2$, so $\operatorname{rk}K=2s$; the corank is $n-2s$ by the rank-nullity theorem, and the nullity is the multiplicity of $0$ because the zero blocks are exactly the kernel.</p>
-<p><strong>The rank is even.</strong> An antisymmetric matrix of odd size is singular, since $2s\le n$ forces $2s<n$ when $n$ is odd. On random antisymmetric matrices the computed ranks are $2$ at $n=3$ (corank $1$), $4$ at $n=4$ (corank $0$) and $4$ at $n=5$ (corank $1$).</p>
+<p><strong>The rank is even.</strong> An antisymmetric matrix of odd size is singular, since $2s\le n$ forces $2s&lt;n$ when $n$ is odd. On random antisymmetric matrices the computed ranks are $2$ at $n=3$ (corank $1$), $4$ at $n=4$ (corank $0$) and $4$ at $n=5$ (corank $1$).</p>
 <p><strong>The corank counts the zero eigenvalues, with multiplicity, and nothing else.</strong> So it measures how far the matrix is from invertible, and it is the same number that counts the zero blocks.</p>
-<p><strong>The determinant vanishes when $n$ is odd and is nonnegative when $n$ is even.</strong> In the canonical form the determinant is the product of the determinants of the blocks, each $b_j^{2}>0$, times the zero blocks; so $\det K=0$ for odd $n$, and $\det K=\prod_jb_j^{2}$ for even $n$, which is a square.</p>
+<p><strong>The determinant vanishes when $n$ is odd and is nonnegative when $n$ is even.</strong> In the canonical form the determinant is the product of the determinants of the blocks, each $b_j^{2}&gt;0$, times the zero blocks; so $\det K=0$ for odd $n$, and $\det K=\prod_jb_j^{2}$ for even $n$, which is a square.</p>
 <h2 id="the-pfaffian">The Pfaffian</h2>
 <p><strong>Definition.</strong> For even $n=2m$ and antisymmetric $K$, the <strong>Pfaffian</strong> is</p>
 <p>$$
 \operatorname{Pf}(K)=\sum_{\pi}\operatorname{sgn}(\pi)\prod_{r=1}^{m}K_{\pi(2r-1),\pi(2r)},
 $$</p>
-<p>the sum running over the permutations $\pi$ of $\{1,\dots,n\}$ with $\pi(1)<\pi(2)$, $\pi(3)<\pi(4)$, and so on.</p>
+<p>the sum running over the permutations $\pi$ of $\{1,\dots,n\}$ with $\pi(1)&lt;\pi(2)$, $\pi(3)&lt;\pi(4)$, and so on.</p>
 <p><strong>At $n=2$ and $n=4$ the formula is short.</strong> For $n=2$,</p>
 <p>$$
 \operatorname{Pf}(K)=K_{12},
@@ -156,7 +156,7 @@ $$</p>
 <p>So the orbit of $K$ has dimension $\binom{n}{2}-\binom{n-2s}{2}-s$, and adding the $s$ moduli $b_j$ gives $\binom{n}{2}-\binom{n-2s}{2}$. The count reads $3=2+1$ at $n=3$, $6=4+2$ at $n=4$ and $10=8+2$ at $n=5$, cases where the corank is at most one and the binomial term vanishes.</p>
 <p><strong>The zeros are constraints, not parameters.</strong> A zero eigenvalue is not a modulus: it is a condition that holds on a subset of codimension $\binom{n-2s}{2}$, which is zero only when the corank is $0$ or $1$. For corank $2$ and above the stratum of the matrix is strictly smaller than $\mathfrak{so}(n)$, and the deficit is the dimension of $\mathrm{O}(n-2s)$ acting on the zero space.</p>
 <h2 id="summary">Summary</h2>
-<p>An antisymmetric real matrix has a purely imaginary spectrum, because $\bar z^{\mathsf T}Kz$ is purely imaginary and equals $\lambda\|z\|^{2}$, and its only real eigenvalue is $0$, because $x^{\mathsf T}Kx=0$ for real $x$. Its canonical form is $Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_j>0$, so the rank is $2s$ and the corank is $n-2s$, the multiplicity of the zero eigenvalue. The Pfaffian is defined for even size and its square is the determinant; numerically the identity holds at $n=2$ and $n=4$. The square $K^{2}$ is symmetric and negative semidefinite, hence orthogonally diagonalisable with eigenvalues $-b_j^{2}$ and $0$, and it is $100$ of $100$ at $n=2,3,4$. The exponential is orthogonal of determinant one and acts as a rotation by the angle $b_j$ on each plane. The space has dimension $n(n-1)/2$, the generic element has $\lfloor n/2\rfloor$ pairs, and the orbit plus the moduli account for the whole dimension.</p>
+<p>An antisymmetric real matrix has a purely imaginary spectrum, because $\bar z^{\mathsf T}Kz$ is purely imaginary and equals $\lambda\|z\|^{2}$, and its only real eigenvalue is $0$, because $x^{\mathsf T}Kx=0$ for real $x$. Its canonical form is $Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_j&gt;0$, so the rank is $2s$ and the corank is $n-2s$, the multiplicity of the zero eigenvalue. The Pfaffian is defined for even size and its square is the determinant; numerically the identity holds at $n=2$ and $n=4$. The square $K^{2}$ is symmetric and negative semidefinite, hence orthogonally diagonalisable with eigenvalues $-b_j^{2}$ and $0$, and it is $100$ of $100$ at $n=2,3,4$. The exponential is orthogonal of determinant one and acts as a rotation by the angle $b_j$ on each plane. The space has dimension $n(n-1)/2$, the generic element has $\lfloor n/2\rfloor$ pairs, and the orbit plus the moduli account for the whole dimension.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -172,11 +172,11 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the rotation $\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$</td>
+<td>the rotation $\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$b_j$</td>
-<td>the moduli of the pairs, $b_j>0$</td>
+<td>the moduli of the pairs, $b_j&gt;0$</td>
 </tr>
 <tr>
 <td>$s$</td>

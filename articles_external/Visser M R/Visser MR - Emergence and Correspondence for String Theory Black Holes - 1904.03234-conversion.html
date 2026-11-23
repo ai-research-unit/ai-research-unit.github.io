@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergence and Correspondence for String Theory Black Holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergence and Correspondence for String Theory Black Holes - 1904.03234.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="emergence-and-correspondence-for-string-theory-black-holes"><strong>Emergence and Correspondence for String Theory Black Holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1904.03234v2 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jeroen van Dongen, Sebastian De Haro, Manus Visser, Jeremy Butterfield</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 March 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Studies in History and Philosophy of Modern Physics 69 (2020) 112–127</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Emergence and Correspondence for String Theory Black Holes - 1904.03234-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergence and Correspondence for String Theory Black Holes - 1904.03234.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergence and Correspondence for String Theory Black Holes - 1904.03234.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks whether the Strominger–Vafa black hole should be called emergent from its D-brane microstates, given that the identification runs through a duality. It sets out a conception of emergence as a balance of dependence, novelty and robustness, with the large-$N$ limit as the linkage, and applies it to the D-brane-to-black-hole relation and to AdS/CFT. It then identifies the uses of the quantum-to-classical correspondence principle in string-theory discussions of black holes and compares them with the heuristics of the old quantum theory, distinguishing upward correspondence from "downward extrapolation" to M-theory. The verdict is conditional, and the paper is a philosophy paper with no new calculation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-conception-of-emergence">The conception of emergence</h3>
+<p>Emergence is "a 'delicate balance' between dependence, or rootedness, and independence, or autonomy". Dependence is the linkage between a macroscopic and a microscopic theory; independence is "novelty in the macroscopic theory with respect to the microscopic theory"; and the significant cases are those where the linkage is robust, so that "the novelty at the top level ... is relatively independent of, or insensitive to, the details of the bottom level". The linkage condition used here is "the limit of a large number of degrees of freedom of the system, while keeping appropriate quantities fixed", which is "highly reminiscent of a thermodynamic limit".</p>
+<h3 id="applied-to-stromingervafa">Applied to Strominger–Vafa</h3>
+<p>The black-hole states are fixed by their charges $Q_H,Q_F$, which are large where supergravity is valid, $Q_H\gg Q_F\gg1$; since each D-brane carries one unit, this is the large-$N_1,N_5$ limit. The black-hole description is also a large-distance, low-energy approximation to a presumed M-theory system. Both moves point the same way, so that emergence would relate the top-right corner of the authors' diagram (semiclassical gravity) to the bottom-left (the D-brane worldvolume theory). The consequence, which the authors make explicit, is that the classical gravity side is then the <em>emergent</em> one.</p>
+<h3 id="the-correspondence-principle">The correspondence principle</h3>
+<p>The quantum-classical correspondence is used in the way Bohr's frequency theorem used it: a quantum treatment at large quantum number matches a classical computation of the same quantity. In Polchinski's D-brane-to-p-brane case and in Strominger–Vafa, "the quantum-classical correspondence is numerically accurate in key quantities, and is exhibited for large quantum numbers". What this is not is "downward extrapolation": inference about the details of M-theory from the semiclassical behaviour of supergravity.</p>
+<h3 id="what-the-analysis-leaves-open">What the analysis leaves open</h3>
+<p>Whether the black hole "emerges" depends on which relation one takes as the linkage and on whether the novelty at the gravity level survives the robustness requirement. The authors decline to give an unconditional yes, and their comparison with the old quantum theory is presented as a historical analogy that clarifies the strategy rather than settling it.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-dependence-novelty-robustness-as-a-test-for-the-corpuss-own-claim">1. Dependence, novelty, robustness as a test for the corpus's own claim</h3>
+<p><strong>The idea.</strong> "Emergent" means three things at once: a linkage, novelty at the top level, and insensitivity of that novelty to the details of the bottom level. This is a <strong>reading</strong>, and it is a test.</p>
+<p><strong>What it would add.</strong> The corpus claims that relativity and quantum mechanics emerge from one algebra (<code>articles_physics/why-biquaternions.md</code>, <code>articles_physics/ai-physics-review.md</code>). The three-part criterion says exactly what such a claim must show: a linkage from the algebra to each sector, novelty of each sector's laws, and robustness of that novelty against choices inside the algebra — for instance against the choice of basis or of the idempotent used to build the spinor module. The corpus does not currently state its claim in these terms.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/ai-physics-review.md</code>, in the statement of what the framework claims.</p>
+<p><strong>What stands in the way.</strong> The linkage condition here is a large-$N$ limit, which the corpus's finite algebra does not have; it would have to substitute its own linkage (a limit of states, or a classical projection) and justify it. The cost is that the criterion cannot be imported with its own linkage attached.</p>
+<h3 id="2-the-emergent-side-may-be-gravity">2. The emergent side may be gravity</h3>
+<p><strong>The idea.</strong> In the D-brane–black-hole relation, the semiclassical gravitational description is the emergent, macroscopic one, and the D-branes are the microstructure. This is a <strong>reading</strong> that reverses the intuitive order.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the horizon as a geometric object and the thermodynamics as its property. The reversal says the geometry is what the microstates look like at large $N$ — the reading the corpus's gaps section calls missing when it says there is no horizon Hilbert space.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, gaps section, and <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It presupposes a microstate count the corpus does not have; as a reading it can be recorded, not used. Ranked second.</p>
+<h3 id="3-correspondence-without-downward-extrapolation">3. Correspondence without downward extrapolation</h3>
+<p><strong>The idea.</strong> Numerical agreement of a quantum calculation with a classical one at large quantum number is a weaker and safer inference than extrapolating a classical result into an unknown quantum regime; the paper separates the two. This is a <strong>reading</strong> about inference, and it is a discipline the corpus needs.</p>
+<p><strong>What it would add.</strong> The corpus derives the Born rule and the Lorentz group from its algebra and then compares with established physics. The distinction between "matches at large quantum number" and "extrapolates into the unknown" is the distinction between what the corpus's derivations do and what they do not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a criterion of inference, not a physical statement. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

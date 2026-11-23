@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolman-like temperature gradients in stationary spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman-like temperature gradients in stationary spacetimes - 1807.02915.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tolman-like-temperature-gradients-in-stationary-spacetimes"><strong>Tolman-like temperature gradients in stationary spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1807.02915v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jessica Santiago, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, July 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Tolman-like temperature gradients in stationary spacetimes - 1807.02915-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman-like temperature gradients in stationary spacetimes - 1807.02915.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman-like temperature gradients in stationary spacetimes - 1807.02915.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A heat bath is specified by a temperature and a four-velocity, not by a temperature alone. In static spacetimes a natural rest frame exists. In stationary spacetimes it does not, because rotation introduces a preferred direction and frame dragging. The authors extend Tolman's relation to this case and identify the resulting temperature gradient. The result reduces to Tolman's when rotation vanishes.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"It is (or should be) well known that specification of a heat bath requires both a temperature and a 4-velocity, the rest frame of the heat bath."</p>
+<h3 id="the-static-case">The static case</h3>
+<p>"In static spacetimes there is a very [natural choice of frame]"</p>
+<h3 id="the-problem">The problem</h3>
+<p>stationary spacetimes lack a preferred rest frame</p>
+<h3 id="the-extension">The extension</h3>
+<p>a Tolman-like gradient with a frame-dependent part</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-temperature-needs-a-frame">1. A temperature needs a frame</h3>
+<p><strong>The idea.</strong> Temperature alone does not specify a thermal state; the frame does.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> assigns temperatures without naming an observer frame. The omission matters in rotating cases.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of frames.</p>
+<p><strong>What stands in the way.</strong> The result is a correction, not a replacement. Ranked first, because it repairs a silent assumption.</p>
+<h3 id="2-rotation-breaks-the-analogy">2. Rotation breaks the analogy</h3>
+<p><strong>The idea.</strong> Frame dragging makes the static Tolman argument fail.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> would gain a case where the frame choice changes a physical answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of stationary frames.</p>
+<p><strong>What stands in the way.</strong> The correction is small in practice. Ranked second.</p>
+<h3 id="3-equilibrium-is-subtle">3. Equilibrium is subtle</h3>
+<p><strong>The idea.</strong> Equilibrium in a rotating fluid is not the same as equilibrium in a static one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> would gain a qualification on its equilibrium statements.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of equilibrium.</p>
+<p><strong>What stands in the way.</strong> The paper is short. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

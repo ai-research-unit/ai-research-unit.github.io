@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causal structure of acoustic spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Causal structure of acoustic spacetimes - gr-qc_0408022.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="causal-structure-of-acoustic-spacetimes"><strong>Causal structure of acoustic spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0408022v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 1 September 2004 (first version 8 August 2004)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>51 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Causal structure of acoustic spacetimes - gr-qc_0408022-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Causal structure of acoustic spacetimes - gr-qc_0408022.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Causal structure of acoustic spacetimes - gr-qc_0408022.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper catalogues the causal structure of sound propagation in moving fluids. Acoustic disturbances obey an effective metric, so sonic horizons, ergospheres, and null rays can be treated with the tools of Lorentzian geometry even though the underlying physics is ordinary fluid mechanics. The authors classify one-dimensional acoustic spacetimes by whether they have one or two sonic points and by whether the horizons are eternal or appear at a finite time. For a representative profile in each class they compute the null coordinates explicitly and draw the Penrose–Carter diagrams, and they separate what carries over from general relativity from what does not.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"The so-called 'analogue models of general relativity' provide a number of specific physical systems, well outside the traditional realm of general relativity, that nevertheless are well-described by the differential geometry of curved spacetime. Specifically, the propagation of acoustic disturbances in moving fluids are described by 'effective metrics' that carry with them notions of 'causal structure' as determined by an exchange of sound signals."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"In this article we take a careful look at what can be said about the causal structure of acoustic spacetimes, focusing on [those containing] sonic points or horizons, both with a view to seeing what is different from general relativity, and to seeing what the similarities might be."</p>
+<h3 id="the-method">The method</h3>
+<p>"We have separated the different geometries into subclasses, depending on the existence of either one or two sonic points, and to their eternal or dynamical character. Then, we have chosen specific velocity profiles (that is, specific $1+1$ spacetime geometries), in such a way that they are easy-to-manipulate representatives of each subclass. Using these profiles, we have calculated the form of the null coordinates $u$ and $w$ as a function of the laboratory coordinates $t$ and $x$."</p>
+<h3 id="the-justification">The justification</h3>
+<p>"These acoustic causal structures [are] specific examples of what can be done in the presence of a Lorentzian [metric] without having recourse to the Einstein equations of general relativity. (The underlying fluid mechanics is governed by the equations of traditional [hydrodynamics], not by the Einstein equations.)"</p>
+<h3 id="the-result-and-the-follow-up">The result and the follow-up</h3>
+<p>"We have produced a rather complete catalogue of $1+1$ acoustic spacetimes taking into account their naturalness as models of acoustic effective manifolds in a condensed matter laboratory. The specific characteristics of each of these spacetimes will have important consequences regarding vacuum polarization effects. We will analyze this issue in a follow-up paper."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-geometry-without-field-equations">1. Geometry without field equations</h3>
+<p><strong>The idea.</strong> An effective metric, a light cone, and a horizon can be defined and analysed in a system whose dynamics has nothing to do with gravity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> presents the metric as emerging from an algebraic structure. This paper supplies a concrete external case where a Lorentzian metric emerges from hydrodynamics, with the causal structure intact and the Einstein equations absent. It is the strongest available evidence that emergent geometry is a real phenomenon and not a framework idiosyncrasy, and it says exactly which structures come along for free.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the passage on where the metric comes from.</p>
+<p><strong>What stands in the way.</strong> The acoustic metric is not the gravitational one, so the import supports the general possibility and not the specific construction. Ranked first, because it is direct evidence for the article's premise.</p>
+<h3 id="2-a-catalogue-of-horizon-types">2. A catalogue of horizon types</h3>
+<p><strong>The idea.</strong> One and two sonic points, eternal and dynamical, with explicit Penrose–Carter diagrams for each.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> classifies horizons in three ways and notes that the classification is complicated. This paper shows the same classification done completely in a controlled setting, where the diagrams can be drawn. The article could use it as the worked example it lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The spacetimes are one-dimensional in the propagation direction, so the catalogue is a reduced case. Ranked second.</p>
+<h3 id="3-which-structures-survive-the-loss-of-general-relativity">3. Which structures survive the loss of general relativity</h3>
+<p><strong>The idea.</strong> The light cone and the horizon survive; the Einstein equations and the field equations do not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists structures the algebra cannot supply, among them dynamics. This paper separates the kinematic structures, which are available in a much weaker setting, from the dynamical ones, which are not. That separation would let the catalogue say which of its entries are serious and which are mild.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a classification of the catalogue's own entries, which is a bigger job than one import. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

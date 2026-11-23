@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Quaternions and Particles in (2+1)-Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split Quaternions and Particles in 2+1-Space - 1410.4136.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-quaternions-and-particles-in-21-space"><strong>Split Quaternions and Particles in (2+1)-Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1410.4136 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 December 2014 (text dated 16 December 2014)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Split Quaternions and Particles in 2+1-Space - 1410.4136-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split Quaternions and Particles in 2+1-Space - 1410.4136.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/split-quaternion-rotations-and-the-lorentz-group.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split Quaternions and Particles in 2+1-Space - 1410.4136.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reads (2+1)-Minkowski geometry as the vector part of the split quaternions and then gives the fourth, scalar coordinate a physical meaning: it is the particle's wavelength. Boosts then shorten $\lambda$ as the momentum grows, so $\hbar$ appears as the second critical constant of the algebra, beside $c$, one for each of the two light cones of the (2+2) norm. The quaternionic analyticity condition $\partial\Phi/\partial s^*=0$ is shown to be the free (2+1) Dirac equation, with the four real components of the field forming the two complex components of the spinor. A free plane-wave solution is given. The identification of $\lambda$ with a wavelength and of $\hbar$ with a cone constant is an interpretation; the Dirac equivalence is a computed identity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-algebra-and-its-two-cones">The algebra and its two cones</h3>
+<p>With $i^2=j^2=1$ and $(ij)^2=-1$, $(ij)^*=-(ij)$, the norm is
+$$N=\sqrt{q_0^2-q_1^2-q_2^2+q_3^2}$$
+(paper 15), so "$N^2$ is not positively defined" and elements split into $N^2&gt;0$ ("time-like"), $N^2&lt;0$ ("space-like") and $N^2=0$ ("light-like"), the last having no inverse. Each of the two cones carries zero divisors: the projection operators and the Grassmann numbers $$D_i^\pm=\tfrac12(1\pm i),\qquad G_i^\pm=\tfrac12(1\pm i)j$$ (paper 27, 29), with $D^+D^-=0$, $G^\pm G^\pm=0$, and any quaternion written as $q=D^+(q_0+q_1)+G^+(q_2+q_3)+D^-(q_0-q_1)+G^-(q_2-q_3)$ (paper 33). The 2×2 real representation is $$i=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},\quad j=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\quad (ij)=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$$ (paper 34–35). Two printing slips sit in this section. The matrix of (paper 39) prints $q_0-q_2$ in its lower right corner where the product of the three matrices above gives $q_0-q_1$, and the determinant of (paper 40) prints $-q_3^2$ where the norm (paper 15) has $+q_3^2$. With those two signs corrected the determinant equals the norm, $q_0^2-q_1^2-q_2^2+q_3^2$; as printed, (39) and (40) do not reproduce (15). </p>
+<h3 id="rotations-and-why-the-double-cover-is-a-problem-here-unit-split-quaternions-act-as">Rotations, and why the double cover is a problem here Unit split quaternions act as</h3>
+<p>$q'=\alpha q\alpha^*$ with $\alpha=\cos\frac\theta2+\sin\frac\theta2\,\epsilon$ (paper 41, 42), and the paper is explicit about the cost:"This ’double cover’ property is potential problem in geometrical application of split quaternions, since (2+2)-signature of their norms should not be changed for each product." A single left multiplication rotates two independent planes at once, one of them always containing the real axis, so a single-plane rotation needs the two-sided product.</p>
+<h3 id="the-interval-and-the-scalar-coordinate">The interval and the scalar coordinate</h3>
+<p>$$s=\lambda+xi+yj+ct(ij),\qquad s^2=\lambda^2-x^2-y^2+c^2t^2\ge0$$ (paper 46–48). Boosts along $x$ use $\alpha_y=\cosh\frac\varphi2-\sinh\frac\varphi2 j$ with $\cosh\varphi=1/\sqrt{1-v_x^2/c^2}$ (paper 50–51), and under a boost $\lambda'=\cosh\frac\varphi2\lambda-\sinh\frac\varphi2 y$ (paper 53): $\lambda$ falls as the momentum rises. Hence "the scalar part of split quaternions can govern inertial properties of the reference frames of particles and can be interpreted as the wavelength". Interval invariance then gives two conditions that "must be obeyed simultaneously", $$\frac{d\tau}{dt}=\sqrt{1-\frac{v_x^2}{c^2}},\qquad \frac{d\Lambda}{d\lambda}=\sqrt{1-\left(\frac{dy}{d\lambda}\right)^2}$$ (paper 55), i.e. $v_x/c&lt;1$ and $dy/d\lambda&lt;1$ (paper 56). The second constant is $\hbar$, through $\lambda=\hbar/p$ (paper 57), and with $\Delta\lambda\sim-\hbar/\Delta p_y$ (paper 58) the paper concludes that the uncertainty principle "probably has the same geometrical meaning as the existence of the maximal velocity" (paper 59). The summary of the claim: the "two fundamental physical constants" $c$ and $\hbar$ "have the geometrical origin and correspond to two kinds of critical signals in (2+2)-space.".</p>
+<h3 id="analyticity-as-the-dirac-equation">Analyticity as the Dirac equation</h3>
+<p>The derivative is
+$$\frac{d}{ds}=\frac12\left(\frac{\partial}{\partial\lambda}+i\frac{\partial}{\partial x}+j\frac{\partial}{\partial y}+(ij)\frac{\partial}{c\,\partial t}\right)$$
+(paper 60), with $ds/ds=1$ and $ds^*/ds=0$, so the interval is automatically constant for these restricted gradients — "invariance of intervals in the space of split quaternions can be an algebraic property as well". Analyticity,
+$$\frac{d\Phi(s,s^*)}{ds^*}=0$$
+(paper 67), is four real equations (paper 68) which "can be understood as the quaternionic Dirac equations in (2+1)-space.". Separating $\varphi_\nu=e^{-m\lambda}\psi_\nu$ (paper 69) reduces them to
+$$(i\gamma^\alpha\partial_\alpha-m)\Psi=0,\qquad \gamma^0=\sigma^3,\ \gamma^1=\sigma^1,\ \gamma^2=i\sigma^2$$
+(paper 70–72), with the spinor assembled from the four real fields as
+$$\Psi=\begin{pmatrix}-\psi_\lambda-i\psi_t\\ \psi_x+i\psi_y\end{pmatrix}$$
+(paper 73). The free solution is $\Psi=(-\frac{p_y+ip_x}{E+m},1)^Te^{i(Et+p_xx+p_yy)}$ (paper 74), and the corresponding quaternionic potential flow is given in (paper 75).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-scalar-coordinate-that-is-a-length-not-a-time">1. A scalar coordinate that is a length, not a time</h3>
+<p><strong>The idea.</strong> The interval (paper 46) puts $\lambda$, with dimensions of length, where the corpus puts time, and a boost mixes $\lambda$ with a spatial coordinate. A <strong>formula</strong>, and one that conflicts with the corpus's own four-vector assembly. The corpus fixes the scalar slot as the time component; here the time sits in the $(ij)$ slot.</p>
+<p><strong>What it would add.</strong> A worked alternative four-vector whose scalar slot is a de Broglie wavelength, with the boost law (paper 53) for that slot computed.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/split-quaternion-four-vector-element-representation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's Lorentz action on $\mathbb{B}$ is built on one metric, the unit metric, with time in the real slot; moving time to the $(ij)$ slot changes which involution is the conjugation and therefore which subgroup is the little group. The paper does not reconcile its label $\lambda$ with the corpus's reading of the same slot, and it offers no dynamics for $\lambda$ beyond the boost.</p>
+<h3 id="2-analyticity-as-the-dirac-equation-linear-version">2. Analyticity as the Dirac equation, linear version</h3>
+<p><strong>The idea.</strong> $\partial\Phi/\partial s^*=0$ (paper 67) is shown, by explicit elimination, to be the free (2+1) Dirac equation. A <strong>mechanism</strong> the corpus already names in a nonlinear form.</p>
+<p><strong>What it would add.</strong> The linear case derived in the split algebra rather than assumed: the corpus's algebrodynamical article obtains Maxwell and Yang–Mills from a nonlinear Cauchy–Riemann condition, and here the same kind of condition, kept linear, gives the Dirac operator in one fewer dimension with the spinor read off the four real components.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification needs three dimensions: in (3+1) the linear condition on a biquaternion-valued function gives the Fueter equation, not the Dirac equation, and the corpus records both. The paper's (73) is a two-component spinor in a 2×2 representation, so the map does not lift to four components without a choice the paper does not make.</p>
+<h3 id="3-one-constant-per-cone">3. One constant per cone</h3>
+<p><strong>The idea.</strong> Because the split norm has two cones, each with its own zero divisors, "there must exist two fundamental constants characterizing this property of algebra", and the paper assigns $c$ to one and $\hbar$ to the other. A <strong>number</strong> in the sense that it fixes the two constants by an algebraic count, and a <strong>reading</strong> of what $\hbar$ is.</p>
+<p><strong>What it would add.</strong> A reason for exactly two constants of this kind, where the corpus's conventions state the unit metric and the units without deriving the constants at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The count of cones gives the count of constants, not their values: $c$ and $\hbar$ are inserted by the identifications $\lambda=\hbar/p$ and $s^2=\lambda^2-x^2-y^2+c^2t^2$, both of which presuppose the constants. Nothing in the paper derives a number, and the corpus's zero-divisor article treats the two loci as sets, not as scales.</p>
+<p>The rank is a judgement: the Dirac-from-analyticity identity first, because it is a computation that reproduces; the scalar-as-wavelength second, because it is a definite but conflicting assembly; the two-constants count third, because the count is algebraic and the values are not.</p>
+<p>Fifteen pages: the quaternion and split-quaternion algebras, the classification and polar forms, the zero divisors, the matrix representation, rotations, boosts and the wavelength reading, the two constants and the uncertainty relation, the quaternionic Dirac equation with its free solution, and the conclusions.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

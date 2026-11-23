@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Confined Particles as Extended Model of Hadrons — The Bilocal Case — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Confined Particles as Extended Model of Hadrons The…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-confined-particles-as-extended-model-of-hadrons-the-bilocal-case"><strong>Relativistic Mechanics of Confined Particles as Extended Model of Hadrons — The Bilocal Case</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier; DOI 10.1143/PTPS.67.1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of the Supplement</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Supplement of the Progress of Theoretical Physics</em>, No. 67 (1979), p. 1</td>
+</tr>
+<tr>
+<td>length</td>
+<td>68 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Mechanics of Confined Particles as Extended Model of Hadrons The Bilocal Case-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Confined Particles as Extended Model of Hadrons The Bilocal Case.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Confined Particles as Extended Model of Hadrons The Bilocal Case.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The definitive statement of the bilocal model the folder has been building towards. Two constituent particles are bound by instantaneous action-at-a-distance, viewed in the centre-of-mass rest frame; the scheme is obtained by <em>quantising the classical mechanics of that system</em>, not by postulating a wave equation. Consistency of the quantisation selects one potential — harmonic — and that choice yields automatic confinement, exactly linear trajectories, and no unphysical states. It also gives the history of bilocal models, a comparison with Yukawa's versions, and the extension to $N$ constituents: $N=3$ baryons, $N\to\infty$ the string.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-model-is">What the model is</h3>
+<p>"The theory has clear 'realistic' foundation since it is obtained as the quantization of classical mechanics for the relativistic two-body system, in which action-at-a-distance works instantaneously when viewed in the CM rest frame. It is shown that consistent quantization favors a distinct model to be called SROM (simple relativistic oscillator model), which is represented by a simple bilocal wave equation and an associated subsidiary condition, and implies automatic confinement of constituents."</p>
+<p>The model differs on one hand from the bilocal models by Yukawa in that it is interpretable as relativistic quantum mechanics of a bound system consisting of two constituent particles having well-defined common mass, and differs on the other from the usual composite models in that it implies a priori confinement of the constituents. It is defined by the pair of equations: a bilocal wave equation in $X$ and $\xi$ with a subsidiary condition, containing "two structure constants" $\kappa$ and $U_0'$ and oscillator 4-vectors $a$, $a^{\dagger}$.</p>
+<h3 id="against-the-qcd-inspired-potentials">Against the QCD-inspired potentials</h3>
+<p>Recently QCD is being developed as a theory of hadrons with considerable success. This is based on the local $SU_c(3)$ gauge symmetry in the framework of local field theory. This theory implies that force works between quarks via gluon exchange but it does not yet succeed in explaining the confinement itself. Nevertheless it suggests a non-relativistic confinement potential which is combination of linear and Coulomb types, associated with Breit and Fermi terms. Such models reproduce charmonium "fairly well", but "it is to be remarked ... that this kind of model does not lead to a precisely linear trajectory."</p>
+<p>"e conserved current, energy-momentum tensor can also be defined, 44 T. Takabayasi case of Klein-Gordon theory. Even though the norm is not positive-definite we can say that our wave equation and subsidiary condition, (3 ·19) and (3 · 20), define the one-body state-vector space of a relativistic composite system consist- ing of two confined constituents. The imperfectness of the probabilistic interpretation does not imply"</p>
+<h3 id="the-chain-of-constituents">The chain of constituents</h3>
+<p>"Our theory of SROM can be extended to the cases where the number of constituents is three and more generally the number is $N$. The $N=3$ case is regarded to describe baryonic states, while the limit $N\to\infty$ (with $N\kappa$ and $Nm_0$ fixed) reproduces just the theory of relativistic string. Anyway our theory of SROM for the bilocal case ($N=2$) ... provides the simplest example of a consistent theoretical model of relativistic extended object with internal movement, and it is seen that much of its characteristics is inherited by the relativistic string model."</p>
+<h3 id="interaction-between-bilocal-systems">Interaction between bilocal systems</h3>
+<p>After second quantisation, $\phi(x^{1},x^{2})$ is interpreted as an operator that annihilates a 'quark' (or creates an 'antiquark') at $x^{1}$ and also annihilates 'antiquark' (bound to the former) at $x^{2}$. Then the interaction of the bilocal field will be represented by the term — a trilinear coupling of three bilocal fields — which is non-vanishing only in the region where the three functions $\phi(x^{1},x^{2})$, $\phi(x^{2},x^{3})$ and $\phi(x^{3},x^{1})$ overlap, and is responsible to quark rearrangements that obey the rule of quark diagram. It can be understood that by the interaction a single quark does not run out and that the potential $U$ works only as 'constructive force'.</p>
+<h3 id="the-kinematical-group">The kinematical group</h3>
+<p>In the appendix: kinematically allowable internal movements are represented by those real linear canonical transformations on the set of $\xi^{\mu}$ and $\pi^{\mu}$ which are compatible with constraints. They form the fundamental representation of the 'group of relativistic internal motion' $G_{\text{in}}$. If there is no constraint this $G_{\text{in}}$ is 36-parameter real symplectic group $Sp(4\mathbb R)$, and the wave function $\phi(X,\xi)$ is base of the two (infinite-dimensional) unitary irreducible representation of $Sp(4\mathbb R)$. The reduction proceeds by the chains $Sp(4\mathbb R)\supset GL(4\mathbb R)\supset L_{\text{in}}$ and $Sp(4\mathbb R)\supset SO(2,1)\otimes L_{\text{in}}$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-consistency-of-quantisation-fixes-the-potential-the-potential-is-not-a-choice">1. Consistency of quantisation fixes the potential; the potential is not a choice</h3>
+<p><strong>The idea.</strong> The model is quantised from a classical two-body system with action-at-a-distance, and only one potential admits a consistent relativistic quantisation. The harmonic potential is then not an approximation to a confining force but the answer to a consistency requirement — and with it come confinement, linear trajectories and the absence of unphysical states in one package.</p>
+<p><strong>What it would add.</strong> A derivation where the corpus has a postulate. <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em> (<code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>) treats confinement in §<em>The Other Confinement Picture: A Linear Boundary Condition</em> as an imposed boundary condition; here it follows from the quantisation.</p>
+<p><strong>Where it lands.</strong> §<em>The Other Confinement Picture: A Linear Boundary Condition</em>, as the derived alternative.</p>
+<p><strong>What stands in the way.</strong> "Uniquely dictated" rests on requiring a consistent quantisation with a subsidiary condition; one may still ask why this class is the right one. </p>
+<h3 id="2-the-string-is-the-large-math42-limit-of-a-chain-of-constituents">2. The string is the large-$N$ limit of a chain of constituents</h3>
+<p><strong>The idea.</strong> $N$ constituents bound pairwise give $N=2$ the bilocal oscillator, $N=3$ the baryon, and $N\to\infty$ with $N\kappa$ and $Nm_0$ held fixed the relativistic string. The string is the continuum limit of an oscillator chain, inheriting its properties from finite $N$. </p>
+<p><strong>What it would add.</strong> A statement the corpus has nowhere: that the string's spectrum is a limit of a constituent model's. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) asks in §<em>What "Solving" the Bound-State Problem Would Mean</em> what a solution would look like; this is an existence proof of a solution for a restricted model class, with the scaling condition $N\kappa$ fixed. </p>
+<p><strong>Where it lands.</strong> §<em>What "Solving" the Bound-State Problem Would Mean</em>, as the solvable limit.</p>
+<p><strong>What stands in the way.</strong> The limit scales the coupling per constituent down, so the string is a double-scaling limit, not a strong-coupling one.</p>
+<h3 id="3-a-trilinear-coupling-whose-support-is-the-overlap-of-three-bilocals">3. A trilinear coupling whose support is the overlap of three bilocals</h3>
+<p><strong>The idea.</strong> The only allowed interaction is a term in three bilocal fields, nonzero only where all three overlap: a quark cannot leave its bilocal, so confinement survives at the level of the rules.</p>
+<p><strong>What it would add.</strong> A vertex with a geometric support condition. <em>The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet, and the Feynman Rules</em> (<code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code>) gives the QCD vertex with colour indices; this vertex has an overlap condition where QCD has colour, a different route to quark diagrams.</p>
+<p><strong>Where it lands.</strong> That article's discussion of the three-point vertex, as the composite alternative.</p>
+<p><strong>What stands in the way.</strong> We do not enter the interaction problem, so the vertex is written, not computed with.</p>
+<h3 id="4-math51-as-the-full-kinematical-group-of-a-bilocal">4. $Sp(4,\mathbb R)$ as the full kinematical group of a bilocal</h3>
+<p><strong>The idea.</strong> Without constraints the internal kinematics of a 4-vector relative coordinate and its momentum is the 36-parameter $Sp(4,\mathbb R)$, and the wave function carries two infinite-dimensional unitary irreducible representations of it. Every other internal group in the folder — $GL(4,\mathbb R)$, $L_{\text{in}}$, $SO(2,1)\otimes L_{\text{in}}$ — is a subgroup.</p>
+<p><strong>What it would add.</strong> One group containing the others, with the chains written. <em>The Lorentz Group in Biquaternionic Form: Structure and Representations</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>) derives the Lorentz group's representations; the bilocal's kinematics is a larger real form whose Lorentz subgroup is the one that article treats.</p>
+<p><strong>Where it lands.</strong> §<em>Where the Biquaternion Algebra Sits</em>, as the larger real form.</p>
+<p><strong>What stands in the way.</strong> The two components' physical interpretation is cited, not derived.</p>
+<p>The remainder, one line each. That the historical section distinguishes Yukawa's two models, the oscillator model and the group-theoretical line is the best short history in the folder. That §<em>Use of Indefinite Metric</em> is the technical core of the folder's pseudo-unitarity question.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

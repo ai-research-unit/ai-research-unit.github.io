@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associative Delusions and the Problem of Their Overcoming — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Associative delusions and problem of their overcoming - 0201065.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="associative-delusions-and-the-problem-of-their-overcoming"><strong>Associative Delusions and the Problem of Their Overcoming</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0201065 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 January 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>47 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Associative delusions and problem of their overcoming - 0201065-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Associative delusions and problem of their overcoming - 0201065.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Associative delusions and problem of their overcoming - 0201065.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that four habits of thought, which he calls associative delusions, block the construction of a correct geometry for the microworld, and that most difficulties of quantum field theory follow from them. An associative delusion is a mistake of association: a property of one object is attributed to another. Removing the first of them opens the purely metric conception of geometry, in which all information is a distance, and in which the free motion of a particle is stochastic although the geometry itself is deterministic.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-an-associative-delusion-is">What an associative delusion is</h3>
+<p>The definition is by example. The ancient Egyptians held that all rivers flow north, because the Nile does, tying the flow to "a preferred direction for ancient Egyptians" rather than to the slope of the plain. The mistake is not logical, and logic cannot repair it: "such associations appear before the logical analysis, and the subsequent logical analysis is carried out on the basis of the existing associations." Hence the stability of such delusions: an epicycle is added rather than the association questioned. Rylov calls the style of work that this produces "P-style", "simultaneously a style of investigations and a style of thinking".</p>
+<p>Seven are listed; three are closed, four open.</p>
+<ul>
+<li>AD.1. The antipodes paradox, from tying the direction of the gravitational field to a preferred direction in space rather than to the Earth's centre.</li>
+<li>AD.2. The Ptolemaic doctrine, from attributing to the Earth the property of being the centre.</li>
+<li>AD.3. Prejudice against Riemannian geometry in the nineteenth century, from treating the Cartesian coordinate system as an attribute of any geometry.</li>
+<li>AD.4. The refusal of the purely metric conception of geometry, from treating the curve as a fundamental concept.</li>
+<li>AD.5. The refusal of a dynamical conception of statistical description, from treating probability as a fundamental concept.</li>
+<li>AD.6. The identification of an individual particle $S$ with the averaged particle $\langle S\rangle$, which he says generates the Schrödinger cat paradox.</li>
+<li>AD.7. "The forced identification of energy and Hamiltonian, used in relativistic quantum field theory".</li>
+</ul>
+<h3 id="geometry-from-a-distance-alone">Geometry from a distance alone</h3>
+<p>The purely metric conception of geometry takes only numerical information: the world function $\sigma(P,Q)=\tfrac12\rho^2(P,Q)$ on $\Omega\times\Omega$. It "realizes the simple attractive idea, that for determination of a geometry on a set Ω of points P it is sufficient to give the distance ρ(P, Q) between all pairs {P, Q} of points of the set Ω. In fact, the distance". Menger's and Blumenthal's distance geometry is the earlier attempt, rejected as insufficient.</p>
+<p>The generated class is called tubular geometry, or T-geometry. Dimension, the metric tensor and coordinates are all to be derived from $\sigma$, not assumed. A straight line is defined as a set of points possessing a property of the Euclidean straight, and <em>not</em> as a curve; that definition permits the deformation of a Euclidean straight into an $(n-1)$-dimensional tube. This is the technical core of AD.4: defining the straight as a curve forbids the tube, and throws away the nondegenerate geometries.</p>
+<p>The topological-metric conception cannot serve for the space-time, "the space-time, because it sup- poses that σ (P, Q) = 21 ρ2 (P, Q) ≥ 0, whereas in the space-time there are spacelike intervals, for which σ (P, Q) &lt; 0. The purely". So the purely metric conception is the only one wide enough.</p>
+<h3 id="indeterminism-from-geometry">Indeterminism from geometry</h3>
+<p>The central claim: "If one considers nondegenerate T-geometry of the space-time, the motion of free particles in such a space-time appears to be stochastic, although the geometry in itself (i.e. the world function σ) is deterministic. In other words, nondegeneracy of the space-time geometry generates an indeterminism. In the Riemannian"</p>
+<p>The flat, uniform, isotropic T-geometries are labelled by one function of one argument,
+$$\sigma(x,x')=\sigma_M(x,x')+D\big(\sigma_M(x,x')\big)$$
+where $\sigma_M=\tfrac12\big(c^2(t-t')^2-({\bf x}-{\bf x}')^2\big)$ is Minkowski's. Minkowski is the case $D\equiv0$, and Rylov's argument is that $D\equiv0$ is the wrong choice: "in the Minkowski geometry the motion of particles is deterministic. But it is well known that the motion of real micro particles (electrons, positrons, etc.) is stochastic." Different $D$ give different tube shapes and hence different stochasticity.</p>
+<p>Everything else follows by his account. Quantum mechanics describes the regular component of a primordially stochastic motion, and its principles are compensating constructions: "AD.4 and AD.5 establish such a situation, when one is forced to use a series of additional hypotheses (quantum mechanics principles)". The Minkowski geometry "is incorrect geometry for small space-time scales, i.e. in the micro world." The revision is a change of outlook: "If earlier it was necessary to explain the stochasticity, starting from the determinism of the world, then now one should explain deterministic phenomena on the basis of primordial stochasticity of the world."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-geometry-specified-by-the-world-function-alone">1. Geometry specified by the world function alone</h3>
+<p><strong>The idea.</strong> $\sigma:\Omega\times\Omega\to\mathbb{R}$, one function, is the whole geometry; the metric tensor, the dimension, the straight lines and the tubes are all derived from it. A <strong>formula</strong> that replaces a list of objects by a single one.</p>
+<p><strong>What it would add.</strong> The corpus's spacetime article states the limitation: every result "is a statement about one fixed algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point", and "all of them are pointwise and flat". A scalar of two points is the smallest carrier of the global information the corpus admits it lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> No dynamics and no selection principle. $D$ is arbitrary, and the paper never says which $D$ the world has; the predictive content sits in a function the theory does not fix. It also competes with the corpus's account of where geometry comes from — emergent from the algebra's one-sided action — and a primitive world function would have to be shown to be that geometry rather than a second postulate.</p>
+<h3 id="2-nondegeneracy-as-the-origin-of-the-born-weight">2. Nondegeneracy as the origin of the Born weight</h3>
+<p><strong>The idea.</strong> Indeterminism is not added to a deterministic geometry; it is what a nondegenerate geometry <em>is</em>. The stochasticity of a particle's path is a property of the tube structure of the geometry, and the distribution of outcomes is the statistics of that stochasticity.</p>
+<p><strong>What it would add.</strong> The corpus's Born-weight entry states its own gap: "The link from the numbers to frequencies is an empirical postulate here exactly as it is in the standard formalism." Rylov offers a mechanism for that link that adds no axiom — it removes the assumption $D\equiv0$ that made the motion deterministic.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mechanism is asserted, not computed: no Born weight is derived from any $\sigma$, no candidate $D$ is offered, no distribution is worked out. The claim is that the class of geometries is wide enough to contain the stochasticity, which is weaker than exhibiting it. The corpus's weight comes from a pairing and a cone, and a geometric stochasticity would have to reproduce that pairing, not coexist with it.</p>
+<h3 id="3-the-principles-of-quantum-mechanics-as-compensating-constructions">3. The principles of quantum mechanics as compensating constructions</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong>, a deflationary one: the axioms of quantum mechanics are what one is forced to add when the geometry is wrong. The canonical commutation relation, superposition and the measurement postulate are the epicycles of a Minkowski microworld.</p>
+<p><strong>What it would add.</strong> The corpus carries the canonical relation as exactly this kind of object — its summary table lists "Canonical relation as an axiom — Postulated, not derived; its consequences are tested". If Rylov is right, the corpus's most careful statement of its own axiom is a statement about a choice of $D$. That is a sharper question than asking whether the relation can be derived, because it locates the missing input outside the algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing in the paper connects $D$ to $\hbar$, and the corpus's relation is a statement about one algebra at one point, with a fixed numerical commutator. Calling it an artefact would require explaining why the artefact is exactly $\hbar$ for every particle.</p>
+<p>The rank: the world function first, because it is a formula the corpus can hold and test; the Born weight second, because the corpus names the gap it would fill; the epicycle reading last, because it is polemic rather than result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

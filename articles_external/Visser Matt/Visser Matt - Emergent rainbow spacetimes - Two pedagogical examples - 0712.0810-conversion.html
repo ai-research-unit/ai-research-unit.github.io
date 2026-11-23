@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergent rainbow spacetimes: two pedagogical examples — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent rainbow spacetimes - Two pedagogical examples - 0712.0810.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="emergent-rainbow-spacetimes-two-pedagogical-examples"><strong>Emergent rainbow spacetimes: two pedagogical examples</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0712.0810v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 3 January 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Time and Matter 2007 Conference proceedings, as printed on the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Emergent rainbow spacetimes - Two pedagogical examples - 0712.0810-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent rainbow spacetimes - Two pedagogical examples - 0712.0810.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent rainbow spacetimes - Two pedagogical examples - 0712.0810.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper starts from the idea that spacetime may be emergent, a low-energy approximation like fluid mechanics, and that quantising it directly may therefore be aimed at the wrong degrees of freedom. That motivates energy-dependent, momentum-dependent "rainbow" geometries, a notion the author says is used inconsistently across the literature. Rather than reviewing those proposals, he gives two examples where an energy-dependent geometry is unproblematic: acoustic spacetimes with non-trivial dispersion, and a geometric reading of Newton's second law for a conservative force. The examples serve as templates, and the discussion locates the real difficulties in multi-particle kinematics and the equivalence principle.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"There is a possibility that spacetime itself is ultimately an emergent phenomenon, a near-universal 'low-energy long-distance approximation', similar to the way in which fluid mechanics is the near-universal low-energy long-distance approximation to quantum molecular dynamics. If so, then direct attempts to quantize spacetime are misguided — at least as far as fundamental physics is concerned."</p>
+<h3 id="the-confusion-in-the-literature">The confusion in the literature</h3>
+<p>"there has recently been a surge of interest in the notion of energy-dependent and momentum-dependent 'rainbow' geometries. ... All of these models suffer from the fact that there is considerable disagreement and confusion as to what exactly an energy-dependent 'rainbow' geometry might actually entail."</p>
+<h3 id="what-the-paper-does-instead">What the paper does instead</h3>
+<p>"In the present article I will not discuss these exotic ideas in any detail, instead I will present two specific and concrete examples of situations where an energy-dependent 'rainbow' geometry makes perfectly good mathematical and physical sense."</p>
+<h3 id="the-two-examples">The two examples</h3>
+<p>"the specific models I will deal with are (1) acoustic spacetimes in the presence of nontrivial dispersion, and (2) a mathematical reinterpretation of Newton's second law for a non-relativistic conservative force, which is well-known to be equivalent to the differential geometry of an energy-dependent conformally flat three-manifold."</p>
+<h3 id="the-claim-they-support">The claim they support</h3>
+<p>"These two models make it clear that there is nothing wrong with the concept of an energy-dependent 'rainbow' geometry per se."</p>
+<h3 id="the-virtue-of-the-examples">The virtue of the examples</h3>
+<p>"The acoustic rainbow geometries and the differential geometric version of Newton's second law have the great virtue that all relevant physics is clearly completely under control. Thus they provide an existence proof for the notion of an energy-dependent geometry, without the additional theoretical complications inherent in the running cosmology, DSR, or quantum gravity phenomenology frameworks."</p>
+<h3 id="where-the-difficulty-actually-lies">Where the difficulty actually lies</h3>
+<p>"it is not the kinematics of single-particle motion in an energy-dependent spacetime that is in any way questionable. The technical difficulties lie at a deeper level. Specifically: Multi-particle kinematics."</p>
+<h3 id="the-multi-particle-problem">The multi-particle problem</h3>
+<p>"In the Newton law scenario multi-particle kinematics was best dealt with by going to a $3N$ dimensional configuration space. This would be extremely unnatural in the context of general relativity, both mathematically and physically. Observationally the various Eötvös-inspired experiments now verify the universality of free fall to at least one part in $10^{13}$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-existence-proofs-before-mechanisms">1. Existence proofs before mechanisms</h3>
+<p><strong>The idea.</strong> Before asking whether a framework is fundamental, show that its central object can exist in a controlled setting.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> argues about status without any existence proof at the toy level. This paper's method — exhibit two fully controlled instances — is what the article lacks, and it is cheap to imitate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The examples are analogues, not the framework itself. Ranked first, because it is a concrete methodological import.</p>
+<h3 id="2-energy-dependent-geometry-is-not-the-problem">2. Energy-dependent geometry is not the problem</h3>
+<p><strong>The idea.</strong> What fails in rainbow models is multi-particle kinematics, not the single-particle picture.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses dispersion, which is where energy dependence would first show. This paper tells the article exactly where the difficulty will appear, so its dispersion section can be aimed at the right question.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the dispersion discussion.</p>
+<p><strong>What stands in the way.</strong> The conclusion is about analogues. Ranked second.</p>
+<h3 id="3-one-spacetime-for-all-particles">3. One spacetime for all particles</h3>
+<p><strong>The idea.</strong> The equivalence principle is imposed by insisting on a single spacetime, and a per-particle geometry breaks it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds one geometry from algebra. This paper supplies the reason that choice is not negotiable: the Eötvös bound. That is an empirical constraint the article can cite.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> It is a constraint rather than a construction. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

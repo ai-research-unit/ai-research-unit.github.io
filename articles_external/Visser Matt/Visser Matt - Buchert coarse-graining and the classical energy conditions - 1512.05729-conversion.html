@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buchert coarse-graining and the classical energy conditions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchert coarse-graining and the classical energy conditions - 1512.05729.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="buchert-coarse-graining-and-the-classical-energy-conditions"><strong>Buchert coarse-graining and the classical energy conditions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.05729v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 January 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Buchert coarse-graining and the classical energy conditions - 1512.05729-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchert coarse-graining and the classical energy conditions - 1512.05729.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchert coarse-graining and the classical energy conditions - 1512.05729.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper argues that "Buchert averaging" is misnamed: it is a coarse-graining, in which small-scale structure is smeared out because the observer has limited resolution. Because the Einstein tensor is nonlinear, the Einstein tensor of the coarse-grained metric differs from the coarse-grained Einstein tensor, and the difference acts as an effective stress-energy. To keep the calculation controlled, the author works with cosmologies that are locally FLRW (CFLRW), for which the coarse-graining satisfies closed differential identities. The result is an explicit effective stress-energy that is not traceless, and the classical energy conditions are satisfied by it.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-terminology">The terminology</h3>
+<p>"So-called 'Buchert averaging' is actually a coarse-graining procedure, where [structure] is 'smeared out' due to limited spatio-temporal resolution. For technical reasons (explained herein), 'averaging' is not really an appropriate term, and I shall describe the process as a 'coarse-graining'."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"Because Einstein gravity is nonlinear, the coarse-grained Einstein tensor is typically not equal to the Einstein tensor of the coarse-grained spacetime geometry. The discrepancy can be viewed as an 'effective' stress-energy."</p>
+<h3 id="the-tractable-model">The tractable model</h3>
+<p>"When studying Buchert coarse-graining, working with CFLRW spacetimes is a great technical help. Specifically, a FLRW background provides you with a very nicely controlled version of Buchert coarse-graining, and CFLRW coarse-graining satisfies some nice differential identities. Indeed CFLRW coarse-graining yields an explicit and tractable effective stress-energy."</p>
+<h3 id="the-result">The result</h3>
+<p>"The effective stress energy is not necessarily traceless. Furthermore for this form of coarse-graining the classical energy conditions are satisfied by the effective stress-energy."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"Finally I emphasize that Buchert coarse-graining $\neq$ ensemble average; several key properties are radically different."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-effective-source-from-nonlinearity">1. An effective source from nonlinearity</h3>
+<p><strong>The idea.</strong> Coarse-graining produces a stress-energy that is not in the microscopic theory. It is a bookkeeping artefact of the mismatch between the two Einstein tensors.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> needs a rank-two source and cannot make one. This paper shows a mechanism that manufactures one from the nonlinearity of the field equations plus a resolution scale. If the framework had any nonlinearity in its metric sector, the same mechanism would apply; if it does not, the absence is diagnostic. Either way the article gains a named candidate and a test of whether it can work.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs the Einstein equations and a coarse-graining scale, neither of which the framework has. Ranked first, because it is the only constructive source proposal in this batch.</p>
+<h3 id="2-averages-depend-on-resolution">2. Averages depend on resolution</h3>
+<p><strong>The idea.</strong> An averaged quantity is not a property of the geometry alone; it depends on the scale at which the observer smooths.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what an observer measures. Resolution is an observer-dependent input, and this paper makes it explicit in a cosmological setting. The article should record that some quantities it treats as geometric are scale-dependent.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The paper does not discuss observation directly. Ranked second.</p>
+<h3 id="3-energy-conditions-survive">3. Energy conditions survive</h3>
+<p><strong>The idea.</strong> The effective stress-energy satisfies the classical energy conditions, which is not automatic for a coarse-grained object.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses energy conditions implicitly when it assigns a positive temperature. A demonstration that a derived effective source can satisfy them is a useful counterexample to the assumption that effective sources are exotic.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the source.</p>
+<p><strong>What stands in the way.</strong> The connection to black-hole thermodynamics is loose. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

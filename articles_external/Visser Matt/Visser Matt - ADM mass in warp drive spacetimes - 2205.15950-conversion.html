@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADM mass in warp drive spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - ADM mass in warp drive spacetimes - 2205.15950.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="adm-mass-in-warp-drive-spacetimes"><strong>ADM mass in warp drive spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2205.15950v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Jessica Santiago, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 4 August 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - ADM mass in warp drive spacetimes - 2205.15950-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - ADM mass in warp drive spacetimes - 2205.15950.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-region-of-mass-in-motion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - ADM mass in warp drive spacetimes - 2205.15950.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what it means for a warp bubble to carry mass, and finds three answers rather than the usual one. The payload can have mass; the bubble itself can have mass; or the mass can sit in the background through which the bubble moves. The authors restrict to Natário warp drives with zero vorticity, which are simple enough for an exact and explicit computation of every component of the stress-energy tensor, and use that explicitness to show where the null, weak, strong and dominant energy conditions are violated. The asymptotic flatness of the spacetime is what licenses the ADM mass as the tool, and the paper closes with the open problem of a self-consistent sourcing of a warp drive.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"What happens when a warp bubble has mass? This seemingly innocent question forces one to carefully formalize exactly what one means by a warp bubble, exactly what one means by having the warp bubble 'move' with respect to the fixed stars, and forces one to more carefully examine the notion of mass in warp-drive spacetimes."</p>
+<h3 id="the-three-cases">The three cases</h3>
+<p>"there are two further, distinct yet subtle ways in which a mass can appear in connection with a warp drive space-time: One, that the warp bubble (not its payload) has the mass; two, that the mass is a background feature in front of which the warp drive moves." Adding the ordinary payload gives three, and the paper's conclusion restates them: "mass in warp drives is more than just a question of a 'payload' — there are two more cases to consider: The possibilities of a 'background' with mass or the possibility the 'warp bubble' itself being massive."</p>
+<h3 id="why-adm-mass-is-the-right-tool">Why ADM mass is the right tool</h3>
+<p>"Our guide for this discussion was that the assumed asymptotic flatness of a warp drive allows invoking the concept of an ADM mass, and hence, to studying how the ADM mass influences and is influenced by the presence of a warp drive."</p>
+<h3 id="the-energy-conditions">The energy conditions</h3>
+<p>"The resulting spacetimes are sufficiently simple to allow an exact and fully explicit computation of all of the stress-energy components, and verify that (as expected) the null energy condition (NEC) is violated. Likewise the weak, strong, and dominant energy conditions (WEC, SEC, DEC) are violated. Indeed, this confirms the community's folk wisdom ... However, folk wisdom should be carefully and critically examined before being believed, and the present examples for general results will greatly aid physical intuition."</p>
+<h3 id="why-explicitness-matters">Why explicitness matters</h3>
+<p>"Given that proofs of energy condition violations often involve implicit or indirect arguments (like the proofs by contradiction), this provides additional, helpful intuition about their location". The paper's contribution is not a new theorem but a case where a general result can be seen happening.</p>
+<h3 id="the-open-problem">The open problem</h3>
+<p>"A self-consistent formulation of warp drives. Simply calculating the stress-energy tensor by reverse-engineering the Einstein equations is telling us little about the actual matter sourcing the warp drive. We know that a more realistic scenario would entail reverse-engineering at the very least something like Einstein–Klein–Gordon or Einstein–Maxwell." And there is the trade-off: "If the construction is too general then not only are stress-energy computations increasingly infeasible, but it also becomes much trickier to even define what one means by the 'warp bubble', and how to disentangle the 'warp field' from the 'payload' from the 'rest of the universe'."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-not-localisable-by-inspection">1. Mass is not localisable by inspection</h3>
+<p><strong>The idea.</strong> In a spacetime with a moving deformation, "the mass of the object" has three inequivalent readings — the payload, the bubble, the background — and only an asymptotic construction (ADM) adjudicates between them. The ambiguity is not linguistic sloppiness; the spacetime genuinely admits three decompositions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-region-of-mass-in-motion.md</code> treats mass as a property of a moving state. This paper shows a case where the question "which mass" has no local answer, and where the honest statement is a decomposition into parts with different statuses. The corpus's article can state a definite mass because its object is a particle with a well-defined asymptotics; the paper marks what is lost when that is dropped.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-region-of-mass-in-motion.md</code>, as a scope note.</p>
+<p><strong>What stands in the way.</strong> ADM mass needs asymptotic flatness and a spacelike slice; the corpus's mass is an algebraic invariant. The two notions may not even be of the same kind, which is worth saying explicitly.</p>
+<h3 id="2-explicit-violation-beats-proof-by-contradiction">2. Explicit violation beats proof by contradiction</h3>
+<p><strong>The idea.</strong> A general proof that some energy condition must fail somewhere is weaker evidence than an explicit example where it fails in a computable place. The paper argues that explicitness supplies the intuition the proof cannot.</p>
+<p><strong>What it would add.</strong> A methodological claim that applies directly to the corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, whose entries are general impossibility claims. Each entry would be strengthened by one concrete case where the obstruction visibly bites, and the paper's argument is that this is not decoration but evidence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is about how to present an obstruction.</p>
+<h3 id="3-reverse-engineering-the-equations-is-not-a-source">3. Reverse-engineering the equations is not a source</h3>
+<p><strong>The idea.</strong> Computing $T_{\mu\nu}$ from a chosen metric tells you what the geometry requires, not what matter supplies it. Until the required stress-energy is realised by a field theory, the solution is a kinematic possibility, not a physical one.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code> insists that a field must come from a Lagrangian. The paper states the same demand for a spacetime, and names the intermediate step the corpus also lacks: reverse-engineer a Klein–Gordon or Maxwell system, not only the Einstein equations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; the corpus already insists on it, and this is independent confirmation from a different community. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="discovering-the-underlying-analytic-structure-within-standard-model-constants-using-artificial-intelligence"><strong>Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2507.00225v3 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>S. V. Chekanov, H. Kjellerstrand</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 1 December 2025 (preprint HEP-ANL-197373, 26 June 2025)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence 2507.00225v3-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence 2507.00225v3.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence 2507.00225v3.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Runs genetic programming over the Standard Model constants to generate analytic expressions ("snippets") that reproduce one constant from others to better than 1%, ranks them by a complexity measure, and filters the output with dimensional analysis and Standard Model constraints. The result is a lookup library of simple relations, offered explicitly as raw material for model builders rather than as evidence of a theory. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"a method for uncovering hidden analytic relationships among the fundamental parameters of the Standard" "lic regression and genetic programming. Using this approach, we identify the simplest analytic relationships connecting pairs of these constants and report several notable expressions obtained with relative precision better than 1%."</p>
+<h3 id="the-volume-of-output">The volume of output</h3>
+<p>"In total, more than 1 million relations were generated up to simplicity rank 50 for each input, both with and without physical units. All of these relations are available at [13]." Filtering by dimensional analysis, "proximately 12% of the generated relations are dimensionally consistent. Several"</p>
+<h3 id="the-rank">The rank</h3>
+<p>The simplicity rank is a sum of contributions: "or example, 𝛿 = 𝜋 − 2 has a rank of 6 because it includes the constant 𝜋 (contributing 1 to the rank), a plain integer (value 2) and a subtraction operation (contributing 3 to the rank). Table" Results are reported "to analytic rank 10, limiting the solutions to a relative precision of at most 1%.".</p>
+<h3 id="the-simplest-relations">The simplest relations</h3>
+<p>At rank 6: $\alpha_S=m_\mu/\delta$ ($\Delta_D=0.71\%$), $\delta=1+m_\mu$ ($0.93\%$), $\delta=\pi-2$ ($0.47\%$), $\delta=m_\mu/\alpha_S$ ($0.70\%$), $\theta_{23}=\theta_{12}/m_b$ ($0.30\%$). At rank 7: $\delta=\exp(m_\mu)$ ($0.08\%$), $\delta=\log(\pi)$ ($0.20\%$), $\delta=m_\tau/2$ ($0.09\%$). Here $\Delta_D$ is the relative difference between predicted and target values, in percent.</p>
+<h3 id="what-the-authors-refuse-to-conclude">What the authors refuse to conclude</h3>
+<p>"no evident patterns emerged from the relationships between the constants that could indicate an underlying simple mathematical structure with a limited number of free parameters. Although we expect that most of the expressions, undoubtedly, arise by pure chance, it is possible that some may hint at an underlying structure or deeper theory linking these fundamental constants—should such a theory exist."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-machine-generated-library-of-candidate-relations">1. A machine-generated library of candidate relations</h3>
+<p><strong>The idea.</strong> Rather than deriving relations from a theory, generate them from data and rank by complexity, then check which survive dimensional analysis. The method produces falsifiable candidates in bulk and grades them by how few symbols they need. This is a <strong>mechanism</strong> for hypothesis generation, and it is explicitly not a claim about nature.</p>
+<p><strong>What it would add.</strong> A method the corpus could apply to its own parameter list: which of its nineteen parameters admit a short relation, and which resist.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on relations among the parameters.</p>
+<p><strong>What stands in the way.</strong> The corpus's parameters are derived from a structure, not fitted; a short relation in the data would have to be matched to a short derivation in the algebra to mean anything, and the paper offers no such matching.</p>
+<h3 id="2-the-authors-own-negative-verdict-as-a-control">2. The authors' own negative verdict as a control</h3>
+<p><strong>The idea.</strong> A paper that generates a million relations and then says no pattern emerged is a useful calibration: the base rate of agreement within 1% is high enough that agreement proves nothing. The honest conclusion is as valuable as any individual snippet.</p>
+<p><strong>What it would add.</strong> A standard against which the corpus's own numerical claims can be judged. The CASMIR predictions in this collection are striking precisely because they were not selected from a million candidates.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on how a numerical agreement is earned.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; this is a reading the corpus can adopt immediately.</p>
+<p>This is a twenty-page preprint; the genetic-programming method, the rank definition, the rank-6 and rank-7 tables, the dimensional-analysis filter and the negative conclusion are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

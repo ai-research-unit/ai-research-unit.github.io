@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergent Gravity in a Holographic Universe — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergent Gravity in a Holographic Universe - 1908.05469.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="emergent-gravity-in-a-holographic-universe"><strong>Emergent Gravity in a Holographic Universe</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>PhD thesis</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1908.05469v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 August 2019 (defended 14 June 2019, University of Amsterdam)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (Academisch Proefschrift, University of Amsterdam)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>216 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Emergent Gravity in a Holographic Universe - 1908.05469-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergent Gravity in a Holographic Universe - 1908.05469.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Emergent Gravity in a Holographic Universe - 1908.05469.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A doctoral thesis, six chapters, that collects and connects four published lines of work: the gravitational thermodynamics of causal diamonds in (A)dS, entanglement equilibrium for higher-derivative gravity, holography for non-AdS spacetimes via the long-string phenomenon, and the thermodynamics of quantum extremal surfaces in Jackiw–Teitelboim gravity. Its theme is that gravity's thermodynamics is the handle on gravity's microstructure: each chapter derives a first law or a count for a region, and each takes the region, not the horizon, as the thermodynamic system. The thesis is the only document in this collection where the four arguments are stated in one place, so it is the natural entry point.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>The thesis asks for a microscopic description of gravity in which the thermodynamic laws of a region are not analogies but consequences. It states its own criterion: a result counts when it is a relation among quantities defined on a bounding surface, with the surface's size fixed by a functional and not by fiat.</p>
+<h3 id="chapter-2-causal-diamonds">Chapter 2: causal diamonds</h3>
+<p>The Smarr formula and the first law for causal diamonds in de Sitter, Minkowski and anti-de Sitter space, with the conformal Killing vector playing the role of the Killing field. This is the content of the paper <code>1812.01596</code>, and the thesis's own summary calls attention to the negative temperature and to the "redshifted volume" $V_\zeta=\int_\Sigma\zeta\cdot\varepsilon$ conjugate to the cosmological constant.</p>
+<h3 id="chapter-3-entanglement-equilibrium">Chapter 3: entanglement equilibrium</h3>
+<p>The extension of Jacobson's argument to higher-derivative gravity, with the Wald entropy on the entangling surface and the generalized volume held fixed. This is the content of <code>1612.04374</code>; the thesis adds the observation, made in that paper, that the fully non-linear equations cannot be recovered from the linearised ones on small balls.</p>
+<h3 id="chapter-4-holography-without-ads">Chapter 4: holography without AdS</h3>
+<p>The number of degrees of freedom $C=A/16\pi G$, the excitation energy per degree $\epsilon\sim1/\delta$ with $\delta=L^2/R$, and the inversion of the energy–distance relation for Minkowski, de Sitter and sub-AdS geometries, explained by the long-string phenomenon of symmetric product CFTs. This is the content of <code>1801.02589</code>. The thesis states the limits plainly: the definitions of excitation energy and excitation number are coordinate dependent, and finding covariant versions is listed as future work.</p>
+<h3 id="chapter-5-quantum-extremal-surfaces">Chapter 5: quantum extremal surfaces</h3>
+<p>The semi-classical thermodynamics of quantum extremal surfaces in Jackiw–Teitelboim gravity, where backreaction is exact and the Wald entropy of the semi-classical theory is shown to encapsulate the generalized entropy, time-dependent von Neumann term included. This is the content of <code>2107.10358</code>.</p>
+<h3 id="the-outlook">The outlook</h3>
+<p>The thesis lists open problems rather than conclusions: a variational relation in the CFT dual to area, maximal volume and thermodynamic volume; a Euclidean path-integral formulation of diamond thermodynamics in the canonical and microcanonical ensembles; and covariant definitions of the holographic microscopic quantities.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-region-not-the-horizon-as-the-thermodynamic-system">1. The region, not the horizon, as the thermodynamic system</h3>
+<p><strong>The idea.</strong> Every result in the thesis is about a bounded region with a conformal Killing vector, and the horizon is the degenerate case. This is a <strong>reading</strong>, and it is the thesis's organising choice.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> takes the horizon as its object throughout, and its first law is the horizon's. A region-based statement would let the corpus's entropy functional be applied to a finite diamond, which is the only place where a finite-dimensional $\mathbb{B}_\Psi$ state could plausibly correspond to a geometric entropy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 1, and <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction needs a conformal Killing vector, Wald's Noether charge and a volume functional; the corpus has none. The cost is the whole variational machinery, imported.</p>
+<h3 id="2-three-holographic-quantities-with-a-stated-coordinate-dependence">2. Three holographic quantities with a stated coordinate dependence</h3>
+<p><strong>The idea.</strong> $C$ has a covariant definition as the area at the edge of the diamond in Planck units, while $\epsilon$ and $N$ do not; the thesis says so and lists the covariant versions as open. This is a <strong>number</strong> claim with an honesty condition attached.</p>
+<p><strong>What it would add.</strong> The corpus's habit is to give a covariant statement or none. A case where two of three quantities in a dictionary are frame dependent, stated openly, is a useful counterexample to the assumption that a holographic dictionary is automatically covariant.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, as a caution about building dictionaries.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a statement about someone else's definitions. Ranked third.</p>
+<h3 id="3-a-single-document-that-holds-the-four-arguments-together">3. A single document that holds the four arguments together</h3>
+<p><strong>The idea.</strong> The thesis is the only place where diamond thermodynamics, entanglement equilibrium, non-AdS holography and quantum extremal surfaces are argued in one voice. This is a <strong>reading</strong> of the collection as a whole.</p>
+<p><strong>What it would add.</strong> For the corpus, a single source for four distinct mechanisms, with the cross-references already made; a reader who wants the argument rather than the paper opens one file.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, further reading.</p>
+<p><strong>What stands in the way.</strong> A thesis is not a paper and is not citable in the same way; the four underlying papers are separately present in this collection. Ranked second, as an aid and not an idea.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

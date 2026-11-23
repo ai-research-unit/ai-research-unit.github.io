@@ -80,7 +80,7 @@
 <p><strong>Proof.</strong> $\operatorname{tr}(AB)=\operatorname{tr}(BA)$ gives symmetry, and $\operatorname{tr}(PAP^{-1}PBP^{-1})=\operatorname{tr}(PABP^{-1})=\operatorname{tr}(AB)$.</p>
 <p><strong>Proposition.</strong> $\beta$ is non-degenerate.</p>
 <p><strong>Proof.</strong> If $\beta(A,B)=0$ for every $B$, take $B=E_{ji}$: then $\operatorname{tr}(AE_{ji})=A_{ij}=0$ for all $i,j$, so $A=0$.</p>
-<p><strong>Proposition.</strong> $\beta$ is indefinite: $\beta(\mathrm I_4,\mathrm I_4)=4>0$ and $\beta(E_{12}-E_{21},E_{12}-E_{21})=-2<0$.</p>
+<p><strong>Proposition.</strong> $\beta$ is indefinite: $\beta(\mathrm I_4,\mathrm I_4)=4&gt;0$ and $\beta(E_{12}-E_{21},E_{12}-E_{21})=-2&lt;0$.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(\mathrm I_4)=4$ and $(E_{12}-E_{21})^{2}=-E_{11}-E_{22}$, of trace $-2$.</p>
 <p><strong>Corollary.</strong> The form is not an inner product on the real algebra, and no scalar multiple of it is positive definite.</p>
 <p><strong>Proof.</strong> The two values above have opposite signs, and rescaling cannot make them agree in sign.</p>
@@ -89,8 +89,8 @@
 <p><strong>Corollary.</strong> The isometry group of $\beta$ contains $\mathrm{GL}_4$ acting by conjugation, and its Lie algebra of anti-self-adjoint endomorphisms contains every inner derivation.</p>
 <p><strong>Proof.</strong> The invariance under all of $\mathrm{GL}_4$ was proved above; differentiating gives the statement about derivations, which is the content of <em>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</em>.</p>
 <h2 id="the-two-halves-and-their-signs">The Two Halves and Their Signs</h2>
-<p><strong>Theorem.</strong> On the real symmetric half, $\beta(S,S)=\operatorname{tr}(S^{2})=\sum_{i,j}s_{ij}^{2}>0$ for $S\neq0$; on the real antisymmetric half, $\beta(K,K)=\operatorname{tr}(K^{2})=-2\sum_{i<j}k_{ij}^{2}<0$ for $K\neq0$.</p>
-<p><strong>Proof.</strong> The diagonal entry $(S^{2})_{ii}=\sum_j s_{ij}s_{ji}=\sum_j s_{ij}^{2}$ since $S$ is symmetric, and summing over $i$ counts every entry once. For antisymmetric $K$, $(K^{2})_{ii}=-\sum_j k_{ij}^{2}$ and summing gives $-2\sum_{i<j}k_{ij}^{2}$.</p>
+<p><strong>Theorem.</strong> On the real symmetric half, $\beta(S,S)=\operatorname{tr}(S^{2})=\sum_{i,j}s_{ij}^{2}&gt;0$ for $S\neq0$; on the real antisymmetric half, $\beta(K,K)=\operatorname{tr}(K^{2})=-2\sum_{i&lt;j}k_{ij}^{2}&lt;0$ for $K\neq0$.</p>
+<p><strong>Proof.</strong> The diagonal entry $(S^{2})_{ii}=\sum_j s_{ij}s_{ji}=\sum_j s_{ij}^{2}$ since $S$ is symmetric, and summing over $i$ counts every entry once. For antisymmetric $K$, $(K^{2})_{ii}=-\sum_j k_{ij}^{2}$ and summing gives $-2\sum_{i&lt;j}k_{ij}^{2}$.</p>
 <p><strong>Corollary.</strong> $\beta$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$, of dimension $10$, and negative definite on $\operatorname{Skew}_4(\mathbb{R})$, of dimension $6$.</p>
 <p><strong>Proof.</strong> The two displays, with the dimensions $10$ and $6$.</p>
 <p><strong>Corollary.</strong> The two halves are orthogonal for $\beta$, so the restriction to each is the orthogonal direct sum, and the inertia on the whole real algebra is $(10,6)$.</p>
@@ -119,7 +119,7 @@ $$</p>
 <p><strong>Proposition.</strong> $\beta(E_{ij},E_{kl})=\delta_{jk}\delta_{il}$, so the Gram matrix in the matrix-unit basis is a permutation matrix with four fixed points and six transpositions.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\operatorname{tr}(E_{il})=\delta_{jk}\delta_{il}$.</p>
 <p><strong>Corollary.</strong> The inertia is $(10,6)$ in this basis too, but it is not visible: the four fixed points contribute $+1$ each, and each of the six transpositions contributes a hyperbolic plane of inertia $(1,-1)$.</p>
-<p><strong>Proof.</strong> A fixed point gives the $1\times1$ block $[1]$; a transposition of $E_{ij}$ and $E_{ji}$ gives the block $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, whose eigenvalues are $\pm1$.</p>
+<p><strong>Proof.</strong> A fixed point gives the $1\times1$ block $[1]$; a transposition of $E_{ij}$ and $E_{ji}$ gives the block $\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$, whose eigenvalues are $\pm1$.</p>
 <p><strong>What the two bases show.</strong> In the axis-free basis the inertia is a diagonal of signs; in the matrix-unit basis it is a permutation, and reading it requires diagonalising six hyperbolic planes. The two bases are related by an invertible change of coordinates, which preserves the inertia and destroys or reveals its visibility.</p>
 <p><strong>Proof.</strong> Sylvester's law of inertia, and the two computations above.</p>
 <p><strong>Why the visibility matters.</strong> The axis-free basis answers the question "which elements are positive" by naming them: the ten symmetric ones. The matrix-unit basis answers it only after a change of coordinates, and the answer it gives is a mixture of unit matrices, not a recognisable subspace of the algebra.</p>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Geometry and the Dirac Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Complex Geometry and Dirac Equation - 9905124.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="complex-geometry-and-the-dirac-equation"><strong>Complex Geometry and the Dirac Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9905124v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano De Leo, W. A. Rodrigues, Jr., J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 17 May 1999</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Complex Geometry and Dirac Equation - 9905124-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Complex Geometry and Dirac Equation - 9905124.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Complex Geometry and Dirac Equation - 9905124.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sets out translation rules between the standard complex matrix Dirac theory and the multivector algebra, and then uses them to expose a choice that the standard theory hides: which element of the algebra plays the imaginary unit. Two answers are available — a bivector, $\sigma_{21}$, or the pseudoscalar, $\sigma_{123}$ — and the paper shows that they agree for a free particle and can be expected to differ once the electroweak group enters. A paper about a convention that turns out not to be one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"Complex geometry represents a fundamental ingredient in the formulation of the Dirac equation by the Clifford algebra. The choice of appropriate complex geometries is strictly related to the geometric interpretation of the complex imaginary unit i = √ −1. We discuss two possibilities which appear in the multivector algebra approach: the σ123 and σ21 complex geometries. Our formalism"</p>
+<h3 id="what-the-rules-buy">What the rules buy</h3>
+<p>"Our formalism permits to perform a set of rules which allows an immediate translation between the complex standard Dirac theory and its version within geometric algebra. The problem concerning a double geometric interpretation for the complex imaginary unit i = √ −1 is also discussed. PACS: 02.10.R, 03."</p>
+<p>And the discipline that comes with it: "In a pure translation nothing can be predicted which is not already in the original theory." What is gained instead: "some assumptions appear more natural, some calculations more rapid and new geometric interpretations for the complex imaginary unit i = √ −1 appear in the translated version for the first time. The matrix"</p>
+<h3 id="the-two-geometries">The two geometries</h3>
+<p>$$\sqrt{-1}\to\sigma_{21}\equiv\sigma_2\sigma_1\ \text{(bivector)}\quad\text{or}\quad \sigma_{123}\equiv\sigma_1\sigma_2\sigma_3\ \text{(volume element)}.$$</p>
+<p>"BV ) = Z d3 xΨ† Φ  (S,BV ) . Note that the algebra (1,σ21,σ23,σ31) is isomorphic to the quaternionic algebra. Thus, we have the mapping VCl3,0 × VCl3,0 → Cl0,2 ∼ H .", which is what makes the bivector choice the familiar one.</p>
+<p>The verdict: "In the standard literature, the unit scalar imaginary of quantum mechanics is replaced by a bivector. We showed that another possibility is also available, namely the identification of the unit scalar imaginary i = √ −1 by the pseudoscalar γ0123 of the spacetime algebra (σ123 in the Pauli algebra). These two geometric interpretations reflect the two possible choices in defining a complex geometry within the multivector formalism. At the free-particle level, there is an equivalence in using these two complex scalar products. We conclude"</p>
+<h3 id="where-the-choice-could-matter">Where the choice could matter</h3>
+<p>"We conclude by observing that a possible difference between the σ21 and σ123 complex geometries could appear in the formulation of the Salam-Weinberg model, where", since "how group SU(2) × U(1). It appears natural to use σ21 , σ23 , σ31 and 1 | σ21 , as generators of the electroweak group. In this case the right choice should be the adoption of a σ21 complex geometry. After"</p>
+<h3 id="the-device">The device</h3>
+<p>The translation is made mechanical by "the so-called barred operators, which permit to write down few translation rules which allow to quickly reproduce in the Cl3,0 formalism the standard results of the Dirac theory. All the relations can be manipulated without introducing a matrix representation, greatly simplifying the algebra involved."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-which-element-plays">1. Which element plays</h3>
+<p>$i$ is a choice, and a physical one</p>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: in a real Clifford algebra there is no imaginary unit, only elements that can do its job. A bivector and a pseudoscalar both square to minus one and both give a complex structure; they are indistinguishable for a free particle and separable once a chiral gauge group is present.</p>
+<p><strong>What it would add.</strong> The corpus's biquaternion articles take the central $i$ as given, with a fixed meaning in each layer. This says the same algebra offers at least two $i$'s, that the free theory cannot tell them apart, and that the difference is where to look for a physical signature of the choice. For a corpus that spends effort on which structures are conventional and which are forced, this is a clean example with a stated test — the electroweak generators.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's layers fix $i$ deliberately and the whole notation depends on that fixing; adding a second admissible $i$ would destabilise the notation of every article downstream, and the paper itself defers the test to a paper that was never conclusive.</p>
+<h3 id="2-translation-predicts-nothing">2. Translation predicts nothing</h3>
+<p><strong>The idea.</strong> A <strong>discipline</strong>: a faithful translation between two formalisms cannot produce a new prediction, only new reasons. The gain is speed, naturalness and geometric interpretation.</p>
+<p><strong>What it would add.</strong> The corpus's representation articles are full of claims that one formalism makes a result obvious or short. This sentence is the honest bound on all of them: obviousness is a gain in understanding, not in content, and a corpus that says so cannot be accused of overclaiming when it rewrites a known result in a fourth algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus earns its keep partly by showing that reformulation does sometimes expose a mistake or a gap — the conversions in this folder contain several such cases — so a blanket statement that translation predicts nothing would understate what the corpus does.</p>
+<h3 id="3-the-gauge-group-is-read-off-the-algebras-basis">3. The gauge group is read off the algebra's basis</h3>
+<p><strong>The idea.</strong> A <strong>heuristic</strong>: the generators of the electroweak group are already in the algebra as $\sigma_{21},\sigma_{23},\sigma_{31}$ together with $1|\sigma_{21}$, so the gauge structure is not imposed from outside but selected from the multiplication table.</p>
+<p><strong>What it would add.</strong> The corpus's non-Abelian article builds gauge fields by promoting a symmetry, which is the standard route and puts the group in by hand. This is the opposite route: look at what the algebra contains, find the largest sub-Lie-algebra of the right shape, and call it the gauge group. That is a real alternative and it explains the otherwise arbitrary generator list in the standard electroweak Lagrangian.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper states the identification in a conjecture and defers the model to a forthcoming paper; the corpus would be quoting a programme, not a result.</p>
+<p>The rank: the choice of $i$ first, because it is a distinction with a test; the translation bound second, because it is a discipline the corpus needs; the gauge-group heuristic last, because it is undeveloped here.</p>
+<p>The remaining items in one line each: the barred operators, which are the technical device that makes left and right multiplication into translation rules; the equivalence of the two complex scalar products at the free-particle level, which is the statement that the choice is not observable there; and the generalisation from the Pauli algebra to the spacetime algebra, which the authors note is immediate and which is the corpus's own setting.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A modified version of the Koide formula from flavor nonets in a scalar potential model and in a Yukawaon model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A modified version of the Koide formula from flavor nonets in a scalar potential model and in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-modified-version-of-the-koide-formula-from-flavor-nonets-in-a-scalar-potential-model-and-in-a-yukawaon-model"><strong>A modified version of the Koide formula from flavor nonets in a scalar potential model and in a Yukawaon model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2007.05878 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Zhengchen Liang, Zheng Sun</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 25 September 2021 (v1 11 July 2020)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Nucl. Phys. B 972 (2021) 115546</td>
+</tr>
+<tr>
+<td>doi</td>
+<td>10.1016/j.nuclphysb.2021.115546</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A modified version of the Koide formula from flavor nonets in a scalar potential model and in a Yukawaon model - 2007.05878-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A modified version of the Koide formula from flavor nonets in a scalar potential model and in a Yukawaon model - 2007.05878.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A modified version of the Koide formula from flavor nonets in a scalar potential model and in a Yukawaon model - 2007.05878.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Writes down the <em>complete</em> $SU(3)$-invariant scalar potential for a nonet field whose square gives the fermion mass matrix, and finds that the stationarity conditions do <strong>not</strong> give the closure: they give a one-parameter family of ratios $K$ containing it. The family covers $(1/3,1)$ and can fit charged leptons, up quarks and down quarks at once, with two effective parameters per sector. The same result comes out of a supersymmetric Yukawaon superpotential, where it is protected from radiative corrections. The paper's honest content is therefore negative for the "derive $2/3$ from a potential" programme and positive for a "fit the fermion spectrum with two parameters" programme.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-baseline">The baseline</h3>
+<p>With $m_e=0.5109989461(31)$, $m_\mu=105.6583745(24)$, $m_\tau=1776.86\pm0.12$ MeV,</p>
+<p>$$
+K=0.6666605\pm0.0000068=\frac23\times\left(0.999991\pm0.000010\right),
+\tag{paper 5}
+$$</p>
+<p>"which agrees with Eq. (1) within $10^{-5}$ precision and within the 1-$\sigma$ error. In addition, when QED radiative correction to charged lepton masses are taken into account, the value of $K$ deviates from $2/3$ by about $10^{-3}$, which is $10^2$ times larger than the present experimental error."</p>
+<h3 id="the-potential-and-what-it-actually-gives">The potential, and what it actually gives</h3>
+<p>"we take the scalar potential $V$ to include all $SU(3)$-invariant terms up to quartic. A $Z_2$ symmetry is imposed to eliminate linear and cubic terms, and a Higgs-like quadratic term is assumed to generate the non-zero VEV of $\Phi$. The equations for a stationary point lead to a modified version of the Koide formula." One coefficient must vanish, $a_1=0$, "in order to get a non-zero VEV of $\Phi$", and then</p>
+<p>$$
+K=\frac{[\Phi\Phi]}{[\Phi]^2}=\frac23\times\frac{(a_0+2a_{02})/6-a_2+3a_4}{(a_0+2a_{02})/3-a_2}
+=\frac23\times\left(1-\frac{a_0+2a_{02}-18a_4}{2\left(a_0+2a_{02}-3a_2\right)}\right).
+\tag{paper 41}
+$$</p>
+<p>"The modified formula Eq. (41) contains four free parameters $a_0$, $a_{02}$, $a_2$ and $a_4$. Among them, $a_0$ and $a_{02}$ appears in the fixed combination $a_0+2a_{02}$. In addition, $K$ only depends on ratios of the parameters. Hence there are only two effective parameters in the modified formula." Since $1/3\le K\le1$ for any positive masses, "the parameter range" is</p>
+<p>$$
+-\frac12\le\frac{a_{02}-9a_4}{2a_{02}-3a_2}\le\frac12 ,
+\tag{paper 65}
+$$</p>
+<p>and "the value $K=2/3$ for charged leptons corresponds to $a_{02}=9a_4$, which covers $a_{02}=a_4=0$ as a special case". So the closure is one surface in a two-parameter space, not a consequence of the symmetry.</p>
+<p>The Yukawaon version "does not get radiative corrections because of the non-renormalization theorem in SUSY. Thus the VEV of $\Phi$ and the modified formula are protected from radiative corrections", and the modification "may serve as an alternative way, compared to previous approaches using gauged flavor symmetries, to cancel the possible QED correction of $K$."</p>
+<h3 id="the-quark-fits">The quark fits</h3>
+<p>"Since QCD renormalization factors are identical for all quarks if the same scheme and scale are used, in mass ratios all these factors cancel exactly. Quark mass ratios are also calculated in lattice QCD with higher precision than individual quark masses." With $m_u/m_d=0.47^{+0.06}_{-0.07}$, $m_s/\bar m_{ud}=27.3^{+0.7}_{-1.3}$, $m_c/m_s=11.72\pm0.25$, $m_b/m_s=53.94\pm0.12$, $M_t=172.76\pm0.30$ GeV, $m_b(m_b)=4.18^{+0.03}_{-0.02}$ GeV, and the running to $m_t(m_t)=163.39\pm0.29$ GeV, $m_b(m_t)=2.737^{+0.015}_{-0.022}$ GeV giving $m_t/m_b=59.70^{+0.58}_{-0.42}$:</p>
+<p>$$
+K_{\rm up}=0.8882^{+0.0019}_{-0.0018}=\frac23\times\left(1.3322^{+0.0029}_{-0.0027}\right),
+\qquad
+K_{\rm down}=0.7491^{+0.0015}_{-0.0021}=\frac23\times\left(1.1237^{+0.0022}_{-0.0032}\right).
+\tag{paper 76, 77}
+$$</p>
+<p>"The mean values of $K$ can be fitted with $a_2=1.670a_{02}-9.029a_4$ for up quarks and $a_2=3.361a_{02}-24.25a_4$ for down quarks." And: "It is still a challenge to explore possible symmetry settings which may give the correct values of $a_{02}$, $a_2$ and $a_4$ for the mass formula in each sector."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-complete-potential-does-not-single-out-math60-it-contains-it">1. A complete potential does not single out $2/3$; it contains it</h3>
+<p><strong>The idea.</strong> A <strong>negative result with a formula</strong>: with every $SU(3)$-invariant term up to quartic included, the stationary conditions give $K=\frac23(1-\frac{a_0+2a_{02}-18a_4}{2(a_0+2a_{02}-3a_2)})$, a two-parameter family filling $(1/3,1)$, and $2/3$ is the surface $a_{02}=9a_4$.</p>
+<p><strong>What it would add.</strong> This is the sharpest available answer to "can a potential predict $2/3$": yes if the potential is truncated, no if it is complete. The corpus's §11 asks for a mechanism; here is a proof-by-construction that the obvious mechanism class is too wide, with the exact condition under which it narrows. It also gives the corpus a test to apply to any future potential claim: count the allowed terms <em>before</em> announcing $2/3$.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, and §9 among the routes that fail.</p>
+<p><strong>What stands in the way.</strong> The truncation is to quartic and the symmetry is $Z_2$-extended, which the authors choose; a different completion could differ. The claim is about this potential, not all potentials.</p>
+<h3 id="2-two-parameters-per-sector-three-sectors-one-functional-form">2. Two parameters per sector, three sectors, one functional form</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the same modified formula fits leptons ($K=0.66666$), up quarks ($0.8882$) and down quarks ($0.7491$), each with two parameter ratios, and the required fits are mutually consistent in the sense that each is a line in the same parameter plane.</p>
+<p><strong>What it would add.</strong> The corpus's §1 records the up and down sectors as failures at $0.849$ and $0.731$; this paper's numbers are $0.888$ and $0.749$ (different mass inputs), and its claim is not that the closure holds there but that a <em>deformation</em> of it does, with two parameters. That reframes the sector table from pass/fail to a distance in a parameter plane, which is a more informative bookkeeping.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, sector table.</p>
+<p><strong>What stands in the way.</strong> Two parameters per sector and three sectors is a fit with six numbers, and the paper does not derive the six. The corpus's standard of not adopting numerology applies.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The statement that $K$ depends only on mass ratios, so that QCD scheme factors cancel exactly in the quark sector, is the same point Hübner makes at one loop for QED, and it justifies quoting lattice mass ratios. The $K_{\rm up}=0.8882$ differs from Kartavtsev's $0.85$ only through the mass inputs and the running scale used for $m_t$. The Yukawaon non-renormalisation argument is the reason the authors regard the supersymmetric version as the better-founded of the two.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

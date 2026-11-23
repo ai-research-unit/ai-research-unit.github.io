@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-and-quantum-mechanics-of-a-one-dimensional-relativistic-elastic-continuum"><strong>Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>49</strong> (1973) 1724, No. 5; received 22 December 1972</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rebuilds the relativistic string from the classical side, in the parameter representation $x^{\mu}=x^{\mu}(\sigma,\tau)$ for the world strip, and then quantises it in the Heisenberg picture with respect to $\tau$. The parameter $\tau$ then <em>disappears</em> on passing to the Schrödinger picture, leaving a wave equation alone — which turns out to be exactly the "detailed wave equation" the author had previously postulated from the quantum side. The paper isolates what is usually glossed over: the many-time formalism needs extra conditions to be interpretable, the theory must be invariant under rescaling of the parameters, $\tau$ has a specific physical meaning, and a constraint beyond the variational principle is needed to exclude tachyons. In quantum mechanics that constraint is <em>weakened</em> to a normal-ordered form, and the weakened version is the detailed wave equation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-paper-exists">Why the paper exists</h3>
+<p>"When the Veneziano amplitude and the multi particle dual amplitude were proposed in terms of r functions, it was immediately suspected that such an amplitude_ may be derived based on a certain kind of oscillator model for hadrons because the T function has a sequence of poles starting at a certain .i. point and running equidistantly up to infinity. In fact Nambu1l and Susskind'l derived the dual amplitude ba~ed on a string-like model. 8l Their ar~uments, however, contain~d some ambiguous aspects in regard to the definition and physical interpretation of the model if one wanted to regard it as the relativistic quantum mechanics of a realis- tic string. Then Virasoro 4 l suggested the condition to suppress unphysic~l states occurring in the relativistic string model but the physical origin of the condition was not clear. From a different viewpoint we have given" detailed wave equation "(DWE)5 l which is defined at every material point of a one-dimensional elastic continuum, as the relativistic quantum mechanics of such an extended system. The physical"</p>
+<p>"Although we have formulated this theory at quantum-mechanica l level from the outset, we have held that the corresponding classical theory of the relativistic string is also iril.pliCit in that theory" "However, the notion of DWE is apparently unconventional, and there appeared interesting works by Classical and Quantum" "ts. Partly stimulated by these works we ha;e ,.reexamined the classical'fo~ndatlon of our theory together with its subsequent quantization" "Our general line is to construct a formulation in such a way that its physical interpretation contains no ambiguous Downloaded from academic.oup.com/ptp/article/49/5/1724/1919581 by guest on 12 November 2026 elements. In particular we explain the physical meaning and· role of the proper- time-like parameter r and its final disappearence in the Schrodinger picture"</p>
+<h3 id="the-extra-constraint-and-why-it-is-not-in-the-lagrangian">The extra constraint, and why it is not in the Lagrangian</h3>
+<p>"The necessity of the physically unam- biguous interpretation of this many-time formalism requires certain conditions. Invariance under the scale transformation of parameters is stressed. The physical meaning of 't' is clarified. Besides the .equation of motion and boundary condition which follow from the variational principle additional constraint equations are needed to ensure a well-defined model without tachyonic solutions."</p>
+<p>"Now in classical theory we introduc ed the constrain t (4·1)" "to ensure causality and thus to avoid tachyoni c solutions . Since this constrain t did not follow from the Lagrang ian the correspo nding equation in quantum mecha- nics should be imposed as subsidiar y condition s on the state vector. Moreove r in quantum mechanic s this condition is to be weakene d in the followin g way. That"</p>
+<h3 id="the-weakening-and-the-identification">The weakening, and the identification</h3>
+<p>"hanics corresponding to the classical mechanics with external interaction given in § 5." an infinite set of simultaneous equations, "Howeve r, they are incompa tible with the commuta tion relation among ( v" (A))' themselv es unless .52=0. Moreove r because we understa nd normal product for (vp(A))', compatib ility requires that the above equation should be replaced by [ v(A)2 + <strong>:"</strong> C v(A')' cot A' -AdA'+~] W=O. (6·16) 2n J_~ 2 n This means" a normal-ordered integral equation. "6) 2n J_~ 2 n This means that we extract from v (A)' its zero and positive frequenc y part 2 · (!Cn)-" "just as in the case of subsidiar y condition in quantum electro- dynamics . Thus"</p>
+<p>"18) incorporates (6·14) also, it represents the quantum mechanics of our relativistic string, and it is exactly the DWE which we have given previously. 5l Downloaded from academic."</p>
+<h3 id="tachyons-versus-negative-norm">Tachyons versus negative norm</h3>
+<p>"equivalent to (6·16) or to the set of (6·14) and (6·17). In classical theory the constraint Ar =0 works to exclude tachyonic solutions. This is weakened in quantum mechanics to (6 ·17) but still this is expected to suppress tachyonic states from correspondence-theoretical reasons. At the same time it ensures the convergence of (6 ·15). In quantum theory, however, one usually understands indefinite-metric Hilbert space with respect to relative times ~ 0 '. This then avoids tachyonic states from the outset but in compensation brings about negative-norm states, and the function of the condition (6·17) Is altered into the one to suppress negative norm states."</p>
+<p>"The slope (expressed in the usual dimension [M- 2] ) of trajectories Is a'= (2ntch.)-\ while the (dimensionless) intercept of the leading trajectory Is - tcf2/ (2nh) = - w0 /h. This is the same as in the classical theory. § 7. Quantum mechanics--interaction"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-parameter-disappears-the-quantum-theory-has-no-time-parameter">1. The parameter disappears; the quantum theory has no time parameter</h3>
+<p><strong>The idea.</strong> $\tau$ is needed classically to make the many-time formalism coherent — each material point has its own time, and $\tau$ organises them. But after quantisation, passing to the Schrödinger picture removes $\tau$ entirely and leaves only a wave equation. The reparametrisation parameter is a classical bookkeeping device with no quantum remnant.</p>
+<p><strong>What it would add.</strong> An answer to what happens to worldsheet time. <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>) treats a two-dimensional field theory with the worldsheet coordinates on one footing; here $\sigma$ survives as a label and $\tau$ does not survive at all, because $\tau$ parametrises a family of spacelike surfaces, not a coordinate of the system.</p>
+<p><strong>Where it lands.</strong> §<em>The Worldsheet and the Target</em>, as the parameter-that-vanishes.</p>
+<p><strong>What stands in the way.</strong> The disappearance is argued at the level of the Heisenberg-to-Schrödinger passage for this specific model; the general claim that a reparametrisation parameter never survives quantisation is not made.</p>
+<h3 id="2-scale-invariance-of-the-parameters-is-a-requirement-not-a-symmetry">2. Scale invariance of the parameters is a requirement, not a symmetry</h3>
+<p><strong>The idea.</strong> "Invariance under the scale transformation of parameters is stressed." A world-strip parametrisation has a rescaling freedom, and a physically unambiguous model must not depend on it. This is stronger than the usual statement that the action is reparametrisation invariant: it is a condition the <em>interpretation</em> must satisfy.</p>
+<p><strong>What it would add.</strong> A criterion for acceptable parametrisations. The corpus's gauge discussions treat invariance of the action; here the demand is on the interpretation, and it rules out parametrisations that would make the physical reading ambiguous even though the action is invariant.</p>
+<p><strong>Where it lands.</strong> The corpus's gauge-fixing discussions; natural home is §<em>The Gauge Field, and the Lorentz Force</em> of <em>Relativistic Mechanics from the Dirac Wave</em>.</p>
+<p><strong>What stands in the way.</strong> The paper asserts the necessity rather than deriving a theorem, and it does not exhibit a parametrisation that fails while the action remains invariant.</p>
+<h3 id="3-a-constraint-outside-the-variational-principle">3. A constraint outside the variational principle</h3>
+<p><strong>The idea.</strong> The tachyon-excluding constraint does <em>not</em> follow from the Lagrangian. It must be added. That is an admission the corpus rarely makes: the action principle does not generate the whole theory, and a separate condition is needed for the model to be well defined.</p>
+<p><strong>What it would add.</strong> A case where the Lagrangian is incomplete. Every other derivation in the folder presents the action as sufficient; here the author is explicit that one constraint has to be imposed from outside, and that in quantum mechanics it must be modified to remain compatible with normal ordering.</p>
+<p><strong>Where it lands.</strong> §<em>What the Subsidiary Condition Does</em> of the conversion of <em>Confinement and the Loss of Partonic Information</em> in this folder, as the constraint not from the action case.</p>
+<p><strong>What stands in the way.</strong> No principle is offered for <em>which</em> constraints may be added from outside, so the move looks ad hoc even though it is motivated by causality.</p>
+<h3 id="4-the-virasoro-condition-gets-a-physical-origin">4. The Virasoro condition gets a physical origin</h3>
+<p><strong>The idea.</strong> Virasoro "suggested the condition to suppress unphysic~l states occurring" "but the physical origin of the condition was not clear. From". Here it is derived: it is the quantum remnant of a classical causality constraint, weakened to a normal-ordered form so as to be compatible with the commutators. The condition is not a gauge choice but the shadow of a classical requirement.</p>
+<p><strong>What it would add.</strong> A derivation of a condition the corpus would otherwise quote. The incompatibility of the unweakened conditions with the commutators is what forces the normal ordering, and the normal ordering is what the condition becomes.</p>
+<p><strong>Where it lands.</strong> The corpus's treatment of constrained quantisation; natural home is §<em>The Reduction of a Numerator</em> of <em>The Anomalous Magnetic Moment in Biquaternionic Form</em>, as a contrast between algebraic and normal-ordering reductions.</p>
+<p><strong>What stands in the way.</strong> The derivation is for this model with this constraint, and the coincidence with Virasoro's condition is asserted by identification of forms rather than proved equivalent in all respects.</p>
+<p>The remainder, one line each. That the intercept comes out negative in both classical and quantum treatments is the paper's consistency check. That the interaction case is treated only briefly, with the equal-$\tau$ commutators unavailable at unequal $\tau$, is the honest limit of the paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

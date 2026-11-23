@@ -91,7 +91,7 @@ $$
 with the signed-permutation tables $M_x,M_y,M_z$ of <a href="introduction-to-the-operators-on-the-four-sectors-in-m2c.html">Introduction to the Operators on the Four Sectors in $M_2(\mathbb{C})$</a>. The verification of this identity on a random element gives residual $4\cdot10^{-16}$, and the entries are integral, so the array is the multiplication table read aloud.</p>
 <p><strong>The block form.</strong> The real space $M_2(\mathbb{C})$ splits as $\mathfrak{H}\oplus\mathfrak{K}$, each summand of real dimension four. In that splitting $L_A$ is a block matrix
 $$
-L_A=\begin{pmatrix}D_A & O_A\\ O_A & D_A\end{pmatrix},\qquad
+L_A=\begin{pmatrix}D_A &amp; O_A\\ O_A &amp; D_A\end{pmatrix},\qquad
 D_A(X)=\tfrac12\left(AX+XA^{\dagger}\right),\qquad
 O_A(X)=\tfrac12\left(AX-XA^{\dagger}\right).
 $$
@@ -151,7 +151,7 @@ $$
 So $L_i$ is a complex structure $J$ on the real eight-space, with $J^{-1}=L_{-i}$ and $J^3=-J$. The two-sided operator cancels it: $\mathrm{Sd}_i(Y)=iY(-i)=Y$.</p>
 <p><strong>The general phase.</strong> For $A=e^{i\theta}\mathrm I_2$ the blocks are $\cos\theta\,\mathrm{id}$ and $i\sin\theta\,\mathrm{id}$: at $\theta\equiv0$ both sectors are preserved, at $\theta\equiv\tfrac{\pi}{2}$ they are exchanged, and otherwise each sector is mixed with the other.</p>
 <h2 id="the-four-factors-as-matrices">The Four Factors as Matrices</h2>
-<p><strong>The scale.</strong> $A=\varrho\mathrm I_2$ with $\varrho>0$ gives $L_A=R_A=\varrho\,\mathrm{id}$, of determinant $\varrho^4$ on the complex four-space and $\varrho^8$ on the real eight-space.</p>
+<p><strong>The scale.</strong> $A=\varrho\mathrm I_2$ with $\varrho&gt;0$ gives $L_A=R_A=\varrho\,\mathrm{id}$, of determinant $\varrho^4$ on the complex four-space and $\varrho^8$ on the real eight-space.</p>
 <p><strong>The phase.</strong> $A=e^{i\theta}\mathrm I_2$ gives $e^{i\theta}\mathrm{id}$, of determinant $e^{4i\theta}$.</p>
 <p><strong>The boost.</strong> $A=\cosh\tfrac{\theta}{2}\mathrm I_2+\sinh\tfrac{\theta}{2}\,u\cdot\sigma$ for a real unit $u$, which is Hermitian, positive definite and of determinant $1$:
 $$
@@ -239,7 +239,7 @@ The scalar line is $N=0$; the Jordan part is $N\neq0$.</p>
 $$
 J_2(Q_t)\oplus J_2(Q_t).
 $$
-The computation is exact on $A=\begin{pmatrix}2+i&3\\0&2+i\end{pmatrix}$ and on a hundred random elements of the Jordan part.</p>
+The computation is exact on $A=\begin{pmatrix}2+i&amp;3\\0&amp;2+i\end{pmatrix}$ and on a hundred random elements of the Jordan part.</p>
 <p><strong>The shear.</strong> Because $L_N^2=0$,
 $$
 \exp\left(tL_A\right)=e^{tQ_t}\left(\mathrm I_4+tQ_tL_N\right),
@@ -256,7 +256,7 @@ a unipotent times a scalar: the one-parameter group is a shear, not a diagonal g
 <p><strong>What does not differ.</strong> $\det L_A=(\det A)^2$, $\operatorname{tr}L_A=n\operatorname{tr}A$, multiplicativity and the exponential theorem hold at every order.</p>
 <h2 id="summary">Summary</h2>
 <p>The one-sided operators on the N-regular sector are $L_A(Y)=AY$ and $R_A(Y)=YA$, with arrays $\mathrm I_2\otimes A$ and $A^{\mathsf T}\otimes\mathrm I_2$ in the matrix-unit frame, and $\sum_\mu Q_\mu M_\mu$ in the coefficient frame. Both have rank $4$, kernel $0$ and image $M_2(\mathbb{C})$, and they multiply the norm: $N(AY)=\det(A)\det(Y)$. Their determinant and trace are $\det_{\mathbb{C}}L_A=N^2$ and $\operatorname{tr}L_A=4Q_t$.</p>
-<p>The spectrum is $\lambda_\pm=Q_t\pm iB$ each twice, with the two eigenspaces the minimal right ideals $P_\pm M_2(\mathbb{C})$, which are the two spinor spaces. On the splitting $M_2=\mathfrak{H}\oplus\mathfrak{K}$ the operator is $\begin{pmatrix}D_A&O_A\\O_A&D_A\end{pmatrix}$ with $D_A$ the Hermitian and $O_A$ the skew part of the product; a one-sided operator preserves $\mathfrak{H}$ only for a real scalar, and $A=i\mathrm I_2$ gives the complex structure that exchanges the two sectors.</p>
+<p>The spectrum is $\lambda_\pm=Q_t\pm iB$ each twice, with the two eigenspaces the minimal right ideals $P_\pm M_2(\mathbb{C})$, which are the two spinor spaces. On the splitting $M_2=\mathfrak{H}\oplus\mathfrak{K}$ the operator is $\begin{pmatrix}D_A&amp;O_A\\O_A&amp;D_A\end{pmatrix}$ with $D_A$ the Hermitian and $O_A$ the skew part of the product; a one-sided operator preserves $\mathfrak{H}$ only for a real scalar, and $A=i\mathrm I_2$ gives the complex structure that exchanges the two sectors.</p>
 <p>The four factors are the scalar $\varrho\mathrm I_2$, the phase $e^{i\theta}\mathrm I_2$, the positive Hermitian matrix of determinant $1$ and the unitary matrix of determinant $1$, with exponents $\ln\varrho$, $i\theta$, $\pm\theta/2$ and $\pm i\theta/2$. The exponential identity is $\exp(tL_A)=L_{\exp(tA)}$, with $\operatorname{tr}\exp(tL_A)=4e^{tQ_t}\cos(tB)$. On the wall $B^2=0$ the operator is $Q_t(\mathrm I_4+L_N)$ with $L_N^2=0$, of Jordan type $J_2\oplus J_2$, and its group is the shear $e^{tQ_t}(\mathrm I_4+tQ_tL_N)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

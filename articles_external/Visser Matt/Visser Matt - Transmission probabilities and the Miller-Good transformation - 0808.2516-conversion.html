@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmission probabilities and the Miller–Good transformation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Transmission probabilities and the Miller-Good transformation - 0808.2516.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="transmission-probabilities-and-the-millergood-transformation"><strong>Transmission probabilities and the Miller–Good transformation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0808.2516v2 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 8 January 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Transmission probabilities and the Miller-Good transformation - 0808.2516-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Transmission probabilities and the Miller-Good transformation - 0808.2516.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Transmission probabilities and the Miller-Good transformation - 0808.2516.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors previously found general bounds on quantum transmission through a barrier. Here they apply the Miller–Good transformation to sharpen them. The transformation maps one Schrödinger problem to another with a different potential. Bounds that hold for the transformed problem transfer back. They give several applications, including a Schwarzian bound and a low-energy limit. They note the bounds are mostly not WKB-like.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Transmission through a potential barrier, and the related issue of particle production from a parametric resonance, are topics of considerable general interest in quantum physics."</p>
+<h3 id="the-earlier-work">The earlier work</h3>
+<p>"The authors have developed a rather general bound on quantum transmission probabilities, and recently applied it to bounding the greybody factors of a Schwarzschild black hole."</p>
+<h3 id="the-new-step">The new step</h3>
+<p>"we use the Miller–Good transformation (which m[aps one problem to another])"</p>
+<h3 id="the-character-of-the-bounds">The character of the bounds</h3>
+<p>"The bounds presented in this note are generally not 'WKB-like' — apart from the one case reported in equation (46) there is no need (nor does it seem useful) to separate the region of integration into classically allowed and classically forbidden regions."</p>
+<h3 id="the-open-question">The open question</h3>
+<p>"it is far from clear how closely these bounds might ultimately be related to WKB estimates of the transmission probabilities"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-transform-then-bound">1. Transform, then bound</h3>
+<p><strong>The idea.</strong> Solve a hard problem by mapping it to an easier one and carrying the bound back.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code> gives the bounds; this paper shows how to improve them by transformation.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code>, in the discussion of refinements.</p>
+<p><strong>What stands in the way.</strong> Each transformation is tailored. Ranked first, because it extends the target directly.</p>
+<h3 id="2-bounds-without-wkb">2. Bounds without WKB</h3>
+<p><strong>The idea.</strong> Rigorous bounds need not split space into allowed and forbidden regions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> would gain a technique that works across a turning point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of methods.</p>
+<p><strong>What stands in the way.</strong> The bounds are loose. Ranked second.</p>
+<h3 id="3-greybody-factors">3. Greybody factors</h3>
+<p><strong>The idea.</strong> Barrier bounds apply to black hole emission spectra.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> would gain a rigorous constraint on the greybody factor.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of spectra.</p>
+<p><strong>What stands in the way.</strong> The application is one-dimensional. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

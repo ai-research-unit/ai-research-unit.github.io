@@ -92,7 +92,7 @@ $$</p>
 \exp(i\theta) = \cos\theta + i \sin\theta.
 $$</p>
 <p>The exponential is $2\pi i$-periodic: $\exp(Q + 2\pi i) = \exp(Q)$.</p>
-<p>The modulus used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2+q'^2$.</p>
+<p>The modulus used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2+q'{}^2$.</p>
 <h3 id="the-complex-logarithm">The Complex Logarithm</h3>
 <p>A <strong>logarithm</strong> of $Q \in \mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The definition is an equation, not a formula; the formula is what solving the equation gives.</p>
 <p>The element and its logarithm carry two different pairs of real coordinates, and they must not be mixed:</p>
@@ -123,11 +123,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$q_{\log}=$</td>
-<td>$\tfrac12\ln(q^2+q'^2)$</td>
+<td>$\tfrac12\ln(q^2+q'{}^2)$</td>
 </tr>
 <tr>
 <td>$q'_{\log}=$</td>
-<td>$\arctan\dfrac{q'}{q}$ if $q>0$<br>$\arctan\dfrac{q'}{q}+\pi\operatorname{sgn}q'$ if $q<0$<br>$\operatorname{sgn}(q')\dfrac{\pi}{2}$ if $q=0$</td>
+<td>$\arctan\dfrac{q'}{q}$ if $q&gt;0$<br>$\arctan\dfrac{q'}{q}+\pi\operatorname{sgn}q'$ if $q&lt;0$<br>$\operatorname{sgn}(q')\dfrac{\pi}{2}$ if $q=0$</td>
 </tr>
 </tbody>
 </table></div>
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 \log(\exp(Q_{\log})) = Q_{\log} + 2\pi i k, \qquad k \in \mathbb{Z},
 $$</p>
-<p>where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = \ln r + i\theta$ with $r=\sqrt{\langle Q\rangle_{*}}>0$,</p>
+<p>where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = \ln r + i\theta$ with $r=\sqrt{\langle Q\rangle_{*}}&gt;0$,</p>
 <p>$$
 \operatorname{Log}(\exp(Q_{\log})) = \ln r + i\operatorname{Arg}(\exp(Q_{\log})), \qquad \operatorname{Arg}(\exp(Q_{\log})) \equiv \theta \pmod{2\pi}.
 $$</p>
@@ -186,12 +186,12 @@ $$</p>
 <h3 id="the-principal-logarithm">The Principal Logarithm</h3>
 <p>Single-valuedness is bought by restricting the target of the exponential. Define the <strong>principal strip</strong></p>
 <p>$$
-S = \{\ln r + i\theta : r > 0,\ -\pi < \theta \leq \pi\}.
+S = \{\ln r + i\theta : r &gt; 0,\ -\pi &lt; \theta \leq \pi\}.
 $$</p>
 <p>On $S$ the exponential is injective. If $\exp W_1 = \exp W_2$ with $W_1, W_2 \in S$, then $W_1 - W_2 \in 2\pi i\mathbb{Z}$; the imaginary part of $W_1 - W_2$ lies in $(-2\pi, 2\pi)$, and the only multiple of $2\pi$ in that interval is $0$. Therefore $W_1 = W_2$.</p>
 <p>The exponential maps $S$ onto $\mathbb{C}^\times$: for $Q \neq 0$, the number $\ln\sqrt{\langle Q\rangle_{*}} + i\operatorname{Arg} Q$ lies in $S$ and exponentiates to $Q$. The restriction is therefore a bijection, and its inverse is the <strong>principal logarithm</strong></p>
 <p>$$
-\operatorname{Log} Q = \ln\sqrt{\langle Q\rangle_{*}} + i \operatorname{Arg} Q, \qquad -\pi < \operatorname{Arg} Q \leq \pi.
+\operatorname{Log} Q = \ln\sqrt{\langle Q\rangle_{*}} + i \operatorname{Arg} Q, \qquad -\pi &lt; \operatorname{Arg} Q \leq \pi.
 $$</p>
 <p>By construction, $\exp(\operatorname{Log} Q) = Q$ for every $Q \neq 0$, and $\operatorname{Log}(\exp(Q_{\log})) = Q_{\log}$ exactly when $Q_{\log} \in S$.</p>
 <p>The inverse is discontinuous on the negative real axis. For $Q = -1$, the formula gives $\operatorname{Log}(-1) = i\pi$, the upper endpoint of the strip. Approaching $-1$ from the upper half-plane gives $\operatorname{Arg} Q \to \pi$ and $\operatorname{Log} Q \to i\pi$; approaching from the lower half-plane gives $\operatorname{Arg} Q \to -\pi$ and $\operatorname{Log} Q \to -i\pi$. The two limits differ by $2\pi i$, so the principal branch cannot be continued continuously across the negative real axis. That ray is the <strong>branch cut</strong>. It is an artefact of the strip, not of the exponential, and any ray from $0$ to $\infty$ can replace it. On the cut itself the principal value is still defined, and $\exp(\operatorname{Log} Q) = Q$ still holds; it is continuity, not the inverse identity, that fails.</p>
@@ -207,9 +207,9 @@ $$</p>
 \exp(\operatorname{Log} Q)\operatorname{Log}' Q = 1,
 $$</p>
 <p>hence $\operatorname{Log}' Q = 1/Q$. The same computation applies to any branch of $\log$, and it shows that all branches have the same derivative.</p>
-<p><strong>Cartesian check.</strong> Write $\operatorname{Log} Q = \ln r + i\theta$ with $Q = q+iq'$ and $r^2 = q^2+q'^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,</p>
+<p><strong>Cartesian check.</strong> Write $\operatorname{Log} Q = \ln r + i\theta$ with $Q = q+iq'$ and $r^2 = q^2+q'{}^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,</p>
 <p>$$
-\ln r = \tfrac12\ln(q^2+q'^2), \qquad \theta = \arctan\frac{q'}{q},
+\ln r = \tfrac12\ln(q^2+q'{}^2), \qquad \theta = \arctan\frac{q'}{q},
 $$</p>
 <p>and therefore</p>
 <p>$$
@@ -217,7 +217,7 @@ $$</p>
 $$</p>
 <p>The Cauchy–Riemann equations hold, $\partial\ln r/\partial q = \partial\theta/\partial q'$ and $\partial\ln r/\partial q' = -\partial\theta/\partial q$, and the derivative is</p>
 <p>$$
-\frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'^2} = \frac{1}{q+iq'} = \frac{1}{Q}.
+\frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'{}^2} = \frac{1}{q+iq'} = \frac{1}{Q}.
 $$</p>
 <p>The three computations agree: $\operatorname{Log}$ is holomorphic exactly where $\operatorname{Arg}$ is differentiable, that is, off the branch cut, and its derivative is $1/Q$.</p>
 <h3 id="complex-powers">Complex Powers</h3>
@@ -293,11 +293,11 @@ $$</p>
 <p>Both are multivalued, and both have branch cuts determined by the branch choices of the square root and logarithm.</p>
 <h2 id="the-gamma-function">The Gamma Function</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>gamma function</strong> is defined for $\operatorname{Re} Q > 0$ by</p>
+<p>The <strong>gamma function</strong> is defined for $\operatorname{Re} Q &gt; 0$ by</p>
 <p>$$
 \Gamma(Q) = \int_0^\infty t^{Q-1} \exp(-t) \, dt.
 $$</p>
-<p>The integral converges absolutely for $\operatorname{Re} Q > 0$ and defines a holomorphic function on that half-plane.</p>
+<p>The integral converges absolutely for $\operatorname{Re} Q &gt; 0$ and defines a holomorphic function on that half-plane.</p>
 <h3 id="analytic-continuation">Analytic Continuation</h3>
 <p>The functional equation</p>
 <p>$$
@@ -321,7 +321,7 @@ $$</p>
 $$</p>
 <p>The reflection formula shows that $\Gamma$ has no zeros, since $1/\Gamma$ is entire and the right side has no zeros.</p>
 <h3 id="the-beta-function">The Beta Function</h3>
-<p>The <strong>beta function</strong> is defined for $\operatorname{Re} a > 0$, $\operatorname{Re} b > 0$ by</p>
+<p>The <strong>beta function</strong> is defined for $\operatorname{Re} a &gt; 0$, $\operatorname{Re} b &gt; 0$ by</p>
 <p>$$
 B(a, b) = \int_0^1 t^{a-1} (1 - t)^{b-1} \, dt.
 $$</p>
@@ -332,25 +332,25 @@ $$</p>
 <p><strong>Proof.</strong> Substitute $t = u/(1+u)$ in the beta integral, then use the gamma integral representation for each factor.</p>
 <p>It is symmetric: $B(a, b) = B(b, a)$.</p>
 <h3 id="stirlings-formula">Stirling's Formula</h3>
-<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,</p>
+<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| &lt; \pi$,</p>
 <p>$$
 \Gamma(Q) \sim \sqrt{2\pi} \, Q^{Q - 1/2} \exp(-Q).
 $$</p>
 <p>This is the asymptotic expansion of the gamma function, and it is the source of most estimates involving factorials and binomial coefficients.</p>
 <h2 id="the-riemann-zeta-function">The Riemann Zeta Function</h2>
 <h3 id="definition_1">Definition</h3>
-<p>The <strong>Riemann zeta function</strong> is defined for $\operatorname{Re} s > 1$ by</p>
+<p>The <strong>Riemann zeta function</strong> is defined for $\operatorname{Re} s &gt; 1$ by</p>
 <p>$$
 \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}.
 $$</p>
-<p>The series converges absolutely for $\operatorname{Re} s > 1$ and defines a holomorphic function on that half-plane.</p>
+<p>The series converges absolutely for $\operatorname{Re} s &gt; 1$ and defines a holomorphic function on that half-plane.</p>
 <h3 id="analytic-continuation_1">Analytic Continuation</h3>
 <p>The zeta function extends meromorphically to all of $\mathbb{C}$, with a single simple pole at $s = 1$ with residue $1$. The continuation is given by the functional equation</p>
 <p>$$ \boxed{\;\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1 - s) \zeta(1 - s)\;},
 $$</p>
 <p>which relates $\zeta(s)$ to $\zeta(1-s)$.</p>
 <h3 id="the-euler-product">The Euler Product</h3>
-<p>For $\operatorname{Re} s > 1$,</p>
+<p>For $\operatorname{Re} s &gt; 1$,</p>
 <p>$$ \boxed{\;\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\;},
 $$</p>
 <p>where the product is over all primes $p$. This is the analytic form of the fundamental theorem of arithmetic, and it is the starting point of analytic number theory.</p>
@@ -369,11 +369,11 @@ $$</p>
 <h3 id="the-incomplete-gamma-function">The Incomplete Gamma Function</h3>
 <p>The <strong>lower incomplete gamma function</strong> is</p>
 <p>$$
-\gamma(s, Q) = \int_0^Q t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s > 0.
+\gamma(s, Q) = \int_0^Q t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s &gt; 0.
 $$</p>
 <p>The <strong>upper incomplete gamma function</strong> is</p>
 <p>$$
-\Gamma(s, Q) = \int_Q^\infty t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s > 0,
+\Gamma(s, Q) = \int_Q^\infty t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s &gt; 0,
 $$</p>
 <p>where the integral is along a ray from $Q$ to infinity avoiding the negative real axis. They satisfy</p>
 <p>$$
@@ -386,7 +386,7 @@ P(s, Q) = \frac{\gamma(s, Q)}{\Gamma(s)}, \qquad 1 - P(s, Q) = \frac{\Gamma(s, Q
 $$</p>
 <h3 id="the-incomplete-beta-function">The Incomplete Beta Function</h3>
 <p>$$
-B(Q; a, b) = \int_0^Q t^{a-1} (1 - t)^{b-1} \, dt, \qquad \operatorname{Re} a > 0, \; \operatorname{Re} b > 0,
+B(Q; a, b) = \int_0^Q t^{a-1} (1 - t)^{b-1} \, dt, \qquad \operatorname{Re} a &gt; 0, \; \operatorname{Re} b &gt; 0,
 $$</p>
 <p>where the integral is along a path from $0$ to $Q$ avoiding the branch points $0$ and $1$. The <strong>regularized incomplete beta function</strong> is</p>
 <p>$$
@@ -409,7 +409,7 @@ $$</p>
 $$</p>
 <p>The integral is along a ray from $Q$ to infinity avoiding the essential singularity at infinity.</p>
 <h3 id="asymptotics">Asymptotics</h3>
-<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < 3\pi/4$,</p>
+<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| &lt; 3\pi/4$,</p>
 <p>$$
 \operatorname{erfc}(Q) \sim \frac{\exp(-Q^2)}{\sqrt{\pi} Q}.
 $$</p>
@@ -418,7 +418,7 @@ $$</p>
 <h3 id="legendre-polynomials">Legendre Polynomials</h3>
 <p>The <strong>Legendre polynomials</strong> $P_n(Q)$ are defined by the generating function</p>
 <p>$$
-\frac{1}{\sqrt{1 - 2Qt + t^2}} = \sum_{n=0}^\infty P_n(Q) t^n, \qquad |t| < 1,
+\frac{1}{\sqrt{1 - 2Qt + t^2}} = \sum_{n=0}^\infty P_n(Q) t^n, \qquad |t| &lt; 1,
 $$</p>
 <p>where the square root is the principal branch. They satisfy the recurrence</p>
 <p>$$
@@ -443,7 +443,7 @@ T_{n+1}(Q) = 2Q T_n(Q) - T_{n-1}(Q),
 $$</p>
 <p>with $T_0 = 1$ and $T_1 = Q$. They are orthogonal on $[-1, 1]$ with respect to the weight $(1 - a^2)^{-1/2}$:</p>
 <p>$$
-\int_{-1}^1 \frac{T_m(a) T_n(a)}{\sqrt{1 - a^2}} \, da = \begin{cases} \pi & m = n = 0, \\ \pi/2 & m = n \geq 1, \\ 0 & m \neq n. \end{cases}
+\int_{-1}^1 \frac{T_m(a) T_n(a)}{\sqrt{1 - a^2}} \, da = \begin{cases} \pi &amp; m = n = 0, \\ \pi/2 &amp; m = n \geq 1, \\ 0 &amp; m \neq n. \end{cases}
 $$</p>
 <h3 id="hermite-polynomials">Hermite Polynomials</h3>
 <p>The <strong>Hermite polynomials</strong> $H_n(Q)$ are defined by</p>
@@ -496,18 +496,18 @@ $$</p>
 Q^2 w'' + Q w' - (Q^2 + \nu^2) w = 0.
 $$</p>
 <h3 id="integral-representations">Integral Representations</h3>
-<p>For $\operatorname{Re} \nu > -1/2$,</p>
+<p>For $\operatorname{Re} \nu &gt; -1/2$,</p>
 <p>$$
 J_\nu(Q) = \frac{1}{\sqrt{\pi} \, \Gamma(\nu + 1/2)} \left( \frac{Q}{2} \right)^\nu \int_{-1}^1 (1 - t^2)^{\nu - 1/2} \exp(iQt) \, dt.
 $$</p>
 <p>This representation is the source of most asymptotic estimates.</p>
 <h3 id="asymptotics_1">Asymptotics</h3>
-<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,</p>
+<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| &lt; \pi$,</p>
 <p>$$
 J_\nu(Q) \sim \sqrt{\frac{2}{\pi Q}} \cos\left(Q - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
 $$</p>
 <p>$$
-I_\nu(Q) \sim \frac{\exp(Q)}{\sqrt{2 \pi Q}}, \qquad |\arg Q| < \frac{\pi}{2}.
+I_\nu(Q) \sim \frac{\exp(Q)}{\sqrt{2 \pi Q}}, \qquad |\arg Q| &lt; \frac{\pi}{2}.
 $$</p>
 <h2 id="the-airy-functions">The Airy Functions</h2>
 <h3 id="definition_4">Definition</h3>
@@ -522,28 +522,28 @@ w'' - Q w = 0.
 $$</p>
 <p>The second solution $\operatorname{Bi}(Q)$ is defined by a similar contour integral with a different contour.</p>
 <h3 id="asymptotics_2">Asymptotics</h3>
-<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,</p>
+<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| &lt; \pi$,</p>
 <p>$$
 \operatorname{Ai}(Q) \sim \frac{1}{2 \sqrt{\pi} Q^{1/4}} \exp(-2 Q^{3/2}/3).
 $$</p>
-<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg(-Q)| < 2\pi/3$,</p>
+<p>As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg(-Q)| &lt; 2\pi/3$,</p>
 <p>$$
 \operatorname{Ai}(Q) \sim \frac{1}{\sqrt{\pi} (-Q)^{1/4}} \sin\left(\frac{2 (-Q)^{3/2}}{3} + \frac{\pi}{4}\right).
 $$</p>
 <p>The Airy functions are the simplest example of functions with a Stokes phenomenon: the asymptotic expansion changes form across certain rays in the complex plane.</p>
 <h2 id="the-hypergeometric-function">The Hypergeometric Function</h2>
 <h3 id="definition_5">Definition</h3>
-<p>The <strong>Gauss hypergeometric function</strong> is defined for $\sqrt{\langle Q\rangle_{*}} < 1$ by</p>
+<p>The <strong>Gauss hypergeometric function</strong> is defined for $\sqrt{\langle Q\rangle_{*}} &lt; 1$ by</p>
 <p>$$
 {}_2F_1(a, b; c; Q) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{Q^n}{n!},
 $$</p>
-<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $\sqrt{\langle Q\rangle_{*}} < 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $\sqrt{\langle Q\rangle_{*}} &lt; 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.</p>
 <p>It satisfies the hypergeometric differential equation</p>
 <p>$$
 Q(1 - Q) w'' + [c - (a + b + 1) Q] w' - ab w = 0.
 $$</p>
 <h3 id="integral-representation">Integral Representation</h3>
-<p>For $\operatorname{Re} c > \operatorname{Re} b > 0$,</p>
+<p>For $\operatorname{Re} c &gt; \operatorname{Re} b &gt; 0$,</p>
 <p>$$
 {}_2F_1(a, b; c; Q) = \frac{\Gamma(c)}{\Gamma(b) \Gamma(c - b)} \int_0^1 t^{b-1} (1 - t)^{c-b-1} (1 - Qt)^{-a} \, dt.
 $$</p>
@@ -567,7 +567,7 @@ $$</p>
 <h3 id="complete-elliptic-integrals">Complete Elliptic Integrals</h3>
 <p>The <strong>complete elliptic integral of the first kind</strong> is</p>
 <p>$$
-K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}, \qquad 0 \leq k < 1.
+K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}, \qquad 0 \leq k &lt; 1.
 $$</p>
 <p>The <strong>complete elliptic integral of the second kind</strong> is</p>
 <p>$$
@@ -610,7 +610,7 @@ $$</p>
 <p>The Lambert W function solves equations of the form $a \exp(Q) + b Q + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $c^c = a$, where $c = \exp(W(\ln a))$.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse: $\exp(Q_{\log}) = Q$ for every $Q \neq 0$, while $\log(\exp(Q_{\log}))$ recovers $Q_{\log}$ only modulo $2\pi i$.</p>
-<p>Integral representations supply the next family: the gamma function as $\Gamma(Q) = \int_0^\infty t^{Q-1}\exp(-t)\,dt$ for $\operatorname{Re} Q > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.</p>
+<p>Integral representations supply the next family: the gamma function as $\Gamma(Q) = \int_0^\infty t^{Q-1}\exp(-t)\,dt$ for $\operatorname{Re} Q &gt; 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.</p>
 <p>The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;Q)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $Q \mapsto Q\exp(Q)$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

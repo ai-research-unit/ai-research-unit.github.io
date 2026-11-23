@@ -114,11 +114,11 @@ $$</p>
 <p>$$
 H_t(A)=U\left((1-t)|A|+tI\right),\qquad 0\le t\le1,
 $$</p>
-<p>starts at $H_0(A)=U|A|=A$, ends at $H_1(A)=U$, and stays in $GL_5$ because $(1-t)|A|+tI$ is positive definite for $t>0$ and $|A|$ is positive definite at $t=0$. On $U(5)$, $|U|=I$ and $H_t(U)=U$. Hence $r$ is a deformation retraction.</p>
+<p>starts at $H_0(A)=U|A|=A$, ends at $H_1(A)=U$, and stays in $GL_5$ because $(1-t)|A|+tI$ is positive definite for $t&gt;0$ and $|A|$ is positive definite at $t=0$. On $U(5)$, $|U|=I$ and $H_t(U)=U$. Hence $r$ is a deformation retraction.</p>
 <p><strong>Corollary.</strong> $GL_5$ and $U(5)$ have the same homotopy groups, homology and cohomology.</p>
 <p><strong>Proof.</strong> A deformation retraction is a homotopy equivalence.</p>
 <p><strong>Corollary.</strong> $GL_5$ is homotopy equivalent to the compact group $U(5)$; the determinant map corresponds to the determinant $U(5)\to S^1$.</p>
-<p><strong>Proof.</strong> The determinant of $A=U|A|$ is $\det U\cdot\det|A|$ with $\det|A|>0$; the homotopy retraction sends $\det A$ to $\det U$, which lies on the unit circle.</p>
+<p><strong>Proof.</strong> The determinant of $A=U|A|$ is $\det U\cdot\det|A|$ with $\det|A|&gt;0$; the homotopy retraction sends $\det A$ to $\det U$, which lies on the unit circle.</p>
 <h3 id="the-math103-unitary-group">The $*$-Unitary Group</h3>
 <p><strong>Theorem.</strong> $U(5)$ is connected, compact, and homeomorphic to $SU(5)\times S^1$.</p>
 <p><strong>Proof.</strong> The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded in $M_5$, hence compact; it is connected because every $*$-unitary is $e^{iH}$ with $H$ Hermitian, and the Hermitian matrices are connected. The map</p>
@@ -154,8 +154,8 @@ $$</p>
 <p><strong>Proposition.</strong> The rank-$r$ matrices form a smooth submanifold of $M_5$ of complex dimension $10r-r^2$, for $r=0,\dots,5$.</p>
 <p><strong>Proof.</strong> The rank-$r$ matrices are the orbit of $\operatorname{diag}(I_r,0)$ under the equivalence $A\mapsto gAh^{-1}$ with $g,h\in GL_5$. The stabilizer consists of the pairs</p>
 <p>$$
-g=\begin{pmatrix}P^{-1}&B\\0&D\end{pmatrix},\qquad
-h^{-1}=\begin{pmatrix}P&0\\R&S\end{pmatrix},
+g=\begin{pmatrix}P^{-1}&amp;B\\0&amp;D\end{pmatrix},\qquad
+h^{-1}=\begin{pmatrix}P&amp;0\\R&amp;S\end{pmatrix},
 $$</p>
 <p>with $P\in GL_r$, $D,S\in GL_{5-r}$, $B$ of size $r\times(5-r)$ and $R$ of size $(5-r)\times r$; its dimension is $r^2+2r(5-r)+2(5-r)^2$. The orbit dimension is $50$ minus that, which simplifies to $10r-r^2$. Equivalently, a rank-$r$ matrix is $UV^*$ with $U,V$ of size $5\times r$ of rank $r$, giving $5r+5r-r^2=10r-r^2$ parameters.</p>
 <p><strong>Corollary.</strong> The dimensions are $r=4$: $24$ (the smooth locus of the determinant hypersurface); $r=3$: $21$ (the singular locus); $r=2$: $16$; $r=1$: $9$; $r=0$: $0$.</p>
@@ -226,7 +226,7 @@ $$</p>
 <h3 id="over-the-flag-variety">Over the Flag Variety</h3>
 <p><strong>Definition.</strong> The flag variety has the tautological line bundles $L_k=V_k/V_{k-1}$, for $k=1,\dots,5$; the <strong>determinant bundle of the tautological filtration</strong> is $\bigotimes_kL_k=\det V_5$, which is trivial because $V_5$ is the trivial rank-$5$ bundle.</p>
 <p><strong>Theorem.</strong> The determinant of the tautological filtration is trivial; its first Chern class is $0$. The determinant of the tangent bundle (the anticanonical bundle) has first Chern class $2\rho$, the sum of the positive roots; the canonical bundle has first Chern class $-2\rho$.</p>
-<p><strong>Proof.</strong> The top exterior power of the trivial rank-$5$ bundle is trivial; the tangent bundle of the flag variety has the decomposition $\bigoplus_{i<j}L_i^{-1}L_j$ (the sum of the positive root line bundles); the determinant is $\bigotimes_{i<j}L_i^{-1}L_j$, whose first Chern class is the sum of the positive roots, $2\rho$.</p>
+<p><strong>Proof.</strong> The top exterior power of the trivial rank-$5$ bundle is trivial; the tangent bundle of the flag variety has the decomposition $\bigoplus_{i&lt;j}L_i^{-1}L_j$ (the sum of the positive root line bundles); the determinant is $\bigotimes_{i&lt;j}L_i^{-1}L_j$, whose first Chern class is the sum of the positive roots, $2\rho$.</p>
 <p><strong>Corollary.</strong> The first Chern class of the anticanonical bundle is the sum of the positive roots; the anticanonical is ample, so the flag variety is Fano.</p>
 <p><strong>Proof.</strong> The anticanonical is the determinant of the tangent; the first Chern class is $2\rho$; the positivity of $2\rho$ gives the Fano property.</p>
 <p><strong>Remark.</strong> <strong>The determinant bundle depends on which determinant is meant.</strong> Over the Grassmannian, it is the dual of the top exterior power of the tautological subbundle, with first Chern class the positive generator. Over the group there is no nontrivial determinant bundle: $H^2(GL_5;\mathbb{Z})=0$ and the determinant is a nowhere-zero function. Over the flag variety, the determinant of the tautological filtration is trivial; the determinant of the tangent bundle is the anticanonical, with first Chern class $2\rho$. The three are different statements.</p>

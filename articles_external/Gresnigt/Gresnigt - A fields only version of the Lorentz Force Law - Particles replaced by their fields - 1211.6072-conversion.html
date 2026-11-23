@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A fields only version of the Lorentz Force Law: Particles Replaced by their Fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A fields only version of the Lorentz Force Law - Particles replaced by their fields -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-fields-only-version-of-the-lorentz-force-law-particles-replaced-by-their-fields"><strong>A fields only version of the Lorentz Force Law: Particles Replaced by their Fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (manuscript format)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1211.6072 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Philip H. Butler, Niels G. Gresnigt, Martin B. van der Mark, Peter F. Renaud</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 November 2012 (manuscript header dated 27 November 2024)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - A fields only version of the Lorentz Force Law - Particles replaced by their fields - 1211.6072-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A fields only version of the Lorentz Force Law - Particles replaced by their fields - 1211.6072.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A fields only version of the Lorentz Force Law - Particles replaced by their fields - 1211.6072.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Replaces the charge in the Lorentz force by the fields that produce it. The force on a charge is written as minus the gradient of the total electromagnetic energy of the whole system, so the statement involves only fields, evaluated over all of space, and the charges enter only as the sources that Gauss's law needs. The argument is assembled from three pieces: Maxwell's equations from special relativity alone (after Doughty), the energy density from the field-strength tensor, and Hamilton's principle applied to the interaction term of that energy density. The worked case is electrostatics with two charged spheres; the general law follows by boost.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>$$F_{L1}=q_1(E+v_1\times B)=-\nabla_1U^{\rm EM}$$
+(abstract, paper 11), where "on U EM is the total electromagnetic energy of the system of particle 1 and all other particles."; the paper's equations (7), (9) and (11) likewise carry no $c$ in the magnetic term, $F_M=q_1(v_1\times B_2)$. The two statements are not alternatives: the familiar local form is recovered as the gradient of the total field energy. "In our approach, the fields of all particles contribute to the electromagnetic interaction everywhere, over all of space. The charges of the particles do not enter the theory except incidentally, via Gauss's law."</p>
+<h3 id="maxwell-from-relativity">Maxwell from relativity</h3>
+<p>Following Doughty, one takes the simplest non-trivial vector field $A^\mu$, such that $A^\mu A_\mu$ is a Lorentz scalar and differentiates:
+$$F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu,\qquad \partial_\nu F^{\mu\nu}=\mu_0J^\mu,\qquad \partial_\nu\tilde F^{\mu\nu}=0$$
+(paper 12–13). The energy-momentum tensor must be built from $F$ alone, since "energy-momentum is a physical quantity that can be measured, it cannot have any gauge-freedom"; with $\eta^{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ the only two independent symmetric terms are
+$$T^{\mu\nu}=aF^{\mu\lambda}F_\lambda{}^\nu+b\,\eta^{\mu\nu}F_{\lambda\pi}F^{\lambda\pi}$$
+(paper 14), and conservation together with coupling to a known system fixes $a=1/\mu_0$, $b=-a/4$, giving
+$$T^{\mu\nu}=\frac{1}{\mu_0}\left(F^{\mu\lambda}F_\lambda{}^\nu-\frac14\eta^{\mu\nu}F_{\lambda\pi}F^{\lambda\pi}\right),\qquad T^{00}=\frac12\left(\epsilon_0E^2+\frac{1}{\mu_0}B^2\right)$$
+(paper 15–16). The conclusion drawn is symmetric: "Maxwell's equations imply special relativity, and vice versa."</p>
+<h3 id="the-interaction-energy">The interaction energy</h3>
+<p>For two charges the energy density splits as
+$$u_{12}=\frac{\epsilon_0}{2}(E_1+E_2)^2=\frac{\epsilon_0}{2}E_1^2+\frac{\epsilon_0}{2}E_2^2+\epsilon_0E_1\cdot E_2$$
+(paper 18), and the first two terms "are independent of the positions of q1 and q2" — they are the self-interactions of finite-radius spheres — so only
+$$u_{1,2}=\epsilon_0E_1\cdot E_2=\epsilon_0E_1E_2\cos\theta_{12}$$
+(paper 19) moves. Integrating over all space,
+$$U_{1,2}=\frac{q_1q_2}{4\pi\epsilon_0}\frac{1}{r_{12}},\qquad F_{12}=-\frac{\partial}{\partial r_{12}}U_{1,2}\,\hat r_{12}=\frac{q_1q_2}{4\pi\epsilon_0r_{12}^2}\hat r_{12}$$
+(paper 20–21). The force is "the ratio of the energy change to the position change", not the action of a field on a charge.</p>
+<h3 id="where-the-energy-sits">Where the energy sits</h3>
+<p>Four regions are reported. Inside the sphere of radius $R=\tfrac12r_{12}$ centred midway "The interaction energy density term is", printed as $U_{1,2}=\frac{1}{2R}-\frac{\pi}{4R}$, and contributes around $-23\%$ to the total energy; outside it "the volume outside radius $R$ contributes about $123\%$". On the midsphere the density vanishes "because the fields are orthogonal". A concentric sphere whose enclosed interaction energy vanishes has $R_0\approx1.62R$. The slab $-R\le z\le R$ contributes zero net energy, and so does a sphere of radius $2R$ centred on either charge.</p>
+<h3 id="what-follows-for-interpretation">What follows for interpretation</h3>
+<p>Two consequences are drawn. "It is symmetric with respect to the sources of the fields; and the force experienced by each of the sources is determined by the electromagnetic fields due to all charges throughout all space." Hence "our assumption is that fields act on fields, but we emphasise that it is not through their linear superposition properties, but rather through their non-linear, quadratic, contribution to energy density", and "the charges are essentially delocalized, and replaced by their electromagnetic fields in a manner similar to the delocalization of particles in quantum mechanics". The force is called non-local "in much the same sense that gravity is non-local in general relativity".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-force-as-the-gradient-of-the-total-field-energy">1. The force as the gradient of the total field energy</h3>
+<p><strong>The idea.</strong> $F=-\nabla U^{\rm EM}$ with $U$ the energy of the whole field configuration, so that the Lorentz force is a derived quantity, and the field-to-field term $\epsilon_0E_1\cdot E_2$ is what does the work. A <strong>mechanism</strong>, with a checkable number attached: the repulsion comes from the far field, not from the neighbourhood of the charges.</p>
+<p><strong>What it would add.</strong> The corpus's charged spin-half fluid puts the Lorentz force in as a coupling term in the covariant derivative, and records that the charge reaches the momentum and the rapidity and not the spin. Here the force is not a coupling at all but a derivative of an energy the corpus already constructs; the two accounts can be compared term by term, and the corpus's energy functional is the natural place to do it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's force acts on a fluid element at a point, with a local $E$ and $B$ taken from the field of everything else; the fields-only form needs the interaction energy of two field configurations over all space, which is a functional of two solutions at once. A fluid element has no second solution to pair with, so the two statements agree only for a two-body configuration, and the paper's own derivation is restricted to that case.</p>
+<h3 id="2-maxwell-from-the-transformation-law-not-from-the-algebra">2. Maxwell from the transformation law, not from the algebra</h3>
+<p><strong>The idea.</strong> A vector potential whose square is a Lorentz scalar, differentiated, is the field tensor; the energy-momentum tensor is then forced by symmetry and conservation into the two-term form $aF^{\mu\lambda}F_\lambda{}^\nu+b\eta^{\mu\nu}F^2$, and $a$, $b$ follow from conservation and one calibration. A <strong>derivation</strong>, and a claim about uniqueness: only two proper quadratic terms exist.</p>
+<p><strong>What it would add.</strong> The corpus gets Maxwell from the biquaternionic gradient acting on a potential, a construction internal to the algebra. This route gets it from Lorentz invariance alone, and says nothing about the algebra; the two derivations of the same four equations can be set side by side to see what the algebra adds. The corpus's claim that the biquaternion form is natural is a claim about economy; this derivation is the benchmark for how much economy is on offer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The counting argument — "there are a total of four second-rank tensors quadratic in F µν . However", two of them improper — is asserted in a footnote without the list, and the calibration of $a$ and $b$ uses a system "for which the energy details are known" that is not named. As a uniqueness proof it is a sketch, so it cannot settle which of the two derivations is the more economical.</p>
+<h3 id="3-charges-as-delocalised-field-configurations">3. Charges as delocalised field configurations</h3>
+<p><strong>The idea.</strong> A charge is replaced by its fields, as a particle is replaced by its wavefunction, and the interaction is a functional of the pair of field configurations; the charge value survives only through Gauss's law. A <strong>reading</strong> of what a source is.</p>
+<p><strong>What it would add.</strong> The corpus carries the opposite picture in its charge-quantisation article, where charge is a discrete, topologically protected quantity, one third per colour trace. A reading in which charge is incidental to the field is a direct challenge to that, and a useful one, because the corpus's version makes a prediction (quantisation) that this one does not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> The two charges are held at fixed positions in the derivation, and the energy of a single charge is discarded as "self-interaction" and assumed finite by giving the spheres a radius; nothing here produces charge, quantises it, or says what a charge is. The reading is an interpretation of a two-body electrostatic calculation, and it does not survive being asked where $q$ comes from. The rank is a judgement: the energy-gradient force first, because it is a formula the corpus can evaluate; Maxwell from invariance second, because it is a derivation with a uniqueness claim that can be checked; the delocalised charge last, because it is an interpretation that the paper's own calculation does not need. Nine pages: the historical introduction, the derivation of Maxwell's equations from relativity, the two-charge energy integral with its four regions, and the discussion of fields acting on fields. <strong>Numerical check (the converter's, not the paper's).</strong> The closed form printed for the mid-sphere, $U_{1,2}=\frac{1}{2R}-\frac{\pi}{4R}$ with $R=\tfrac12r_{12}$, evaluates to $(2-\pi)/(2r_{12})\approx-0.571/r_{12}$ against a total of $1/r_{12}$, that is $-57\%$, while the text quotes "around $-23\%$"; and the two quoted shares, $-23\%$ and $123\%$, sum to $100\%$, which the closed form does not.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

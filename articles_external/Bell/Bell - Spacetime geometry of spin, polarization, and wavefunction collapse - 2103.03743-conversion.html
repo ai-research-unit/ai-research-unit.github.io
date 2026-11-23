@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spacetime Geometry of Spin, Polarization, and Wavefunction Collapse — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Bell/Bell - Spacetime geometry of spin, polarization, and wavefunction collapse - 2103.03743.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spacetime-geometry-of-spin-polarization-and-wavefunction-collapse"><strong>Spacetime Geometry of Spin, Polarization, and Wavefunction Collapse</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2103.03743v2 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charlie Beil</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 31 October 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Bell/Bell - Spacetime geometry of spin, polarization, and wavefunction collapse - 2103.03743-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Bell/Bell - Spacetime geometry of spin, polarization, and wavefunction collapse - 2103.03743.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Bell/Bell - Spacetime geometry of spin, polarization, and wavefunction collapse - 2103.03743.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes a spacetime in which the worldlines of fundamental particles are single one-dimensional points, so that the metric degenerates along them and tangent spaces at different points have different dimensions. On this geometry, spin-$\tfrac12$ and the Born rule follow from a projection between tangent spaces, electric charge from an orientation choice, and a model of polarizers follows from the constraint a wire places on the interaction.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"To incorporate quantum nonlocality into general relativity, we pro pose that the preparation and measurement of a quantum system are simultaneous events. To make progress in realizing this proposal, we introduce a spacetime geom etry that is endowed with particles which have no distinct points in their worldlines; we call these particles ‘pointons’."</p>
+<p>"Simultaneity of preparation and measurement In this article we introduce the idea that the fundamental source of quantum phenomena is that clocks in the same inertial frame may tick at different rates. Specifically, we propose that time does not advance in a quantum system undergoing unitary evolution. Consequently, the preparation and measurement of a quantum system are simultaneous events. This simultaneity is then the origin of quantum nonlocality. Our aim here is to make this idea precise, both mathematically and physically, by modifying the geometry of classical general relativity."</p>
+<h3 id="what-replaces-the-hilbert-space">What replaces the Hilbert space</h3>
+<p>"In particular, we model quantum phenomena not with Hilbert spaces, but with degenerate spacetime metrics obtained from our new notion of simultaneity." The construction: "we call the set $M:=(\tilde M\setminus(\cup_i\beta_i))\cup(\cup_j\{\beta_j\})$, where each $\beta_j$ is a single point of $M$, an internal spacetime ... and the dust particles pointons."</p>
+<h3 id="spin-as-a-projection">Spin as a projection</h3>
+<p>At a point $p$ where $\dim M_p$ drops below its neighbours, an internal unit vector $s$ entering the lower-dimensional space is projected by the normalized internal metric $\hat h_p:\tilde M_p\to M_p$, and on exit a unit section $s'$ is chosen with $\hat h_p(s')=\hat h_p(s)$ (paper 5). "ĥp (s′ ) = ĥp (s). If ĥp (s) ̸= 0, then the probability that s′ is chosen is given by what we call the Kochen-Specker conditional probability: (6) p(s′ |hp (s)) = π1 ĥp (s)·s′ . We thus have (paper 6). The transports of $\hat h_p(s)$ and $s'$ are the epistemic and ontic spin vectors" (paper Definition 4.2).</p>
+<h3 id="the-born-rule">The Born rule</h3>
+<p>"S2 S2 Theorem 4.3. Our spacetime model of spin reproduces the Born rule for spin wavefunction collapse: p(hq (s)|hp (s)) = |⟨ĥq (s)|ĥp (s)⟩|2 . Proof. The assumptions (5) and (6) of our model are equivalent to the assumptions (9) and (8) of the Kochen-Specker model, with ĥp (s) = ψ, s = λ, ĥq (s) = ϕ."</p>
+<h3 id="charge">Charge</h3>
+<p>"The 4-velocities of pointons are necessarily replaced by their Hodge duals, and this transfer from vector to pseudo-tensor introduces a free choice of orientation that we identify with electric charge." Concretely, the internal 4-velocity is $\check v_{a\cdots b}:=o_{\ker h}\star\mathrm{vol}(\ker h)$.</p>
+<h3 id="photons">Photons</h3>
+<p>"Photons In this and the following two sections we will find that a consequence of internal spacetime geometry is that any particle with a null 4-velocity must be electrically neutral, have spin-1, and admit a trivalent interaction vertex similar to the electronphoton vertex." A photon is a bound state of two pointons of opposite timelike orientation. At an electron-photon vertex that conserves 4-momentum, $\dim M_p=1$ if $v$ is null, $2$ if $v$ is timelike (paper Lemma 7.1), because the three 4-velocities are linearly dependent and the projection of a null vector has rank 2.</p>
+<h3 id="a-polarizer-as-a-constraint">A polarizer as a constraint</h3>
+<p>"If there is an electron-photon vertex at $p$, then we say the photon is 'absorbed' by the electron; otherwise the photon is 'transmitted' at $p$." For a wire along $\pm e_1$, "Thus, if b ̸= b′ , then hp (e0 ) = hp (e1 ) = hp (e3 ) = 0, and so the only surviving direction is e2 : Mp = span{e2 } ⊂ M̃p .", so a circularly polarized photon is always absorbed, while a linearly polarized one "is transmitted at p if and only if (21) |∠(s1 + s2 , e2 )| &lt; π4 . Indeed, if |∠(s1 + s2" (paper 21); at exactly $\tfrac\pi4$ the photon has diagonal polarization and is absorbed.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-collapse-as-a-projection-between-spaces-of-different-dimension">1. Collapse as a projection between spaces of different dimension</h3>
+<p><strong>The idea.</strong> Nothing collapses in a Hilbert space. A lower-dimensional tangent space sits on the worldline, the spin vector is projected onto it, and the exit direction is chosen with a probability given by the projection's scalar product. The Born rule is then a geometric identity, and the Kochen-Specker model is realized rather than assumed. This is a <strong>mechanism</strong> for collapse.</p>
+<p><strong>What it would add.</strong> A geometric account of the projection postulate, where the corpus's measurement articles derive the Kraus form and the Born weights but take the projection as given.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.md</code>, on what the Kochen-Specker model assumes and what it would mean to realize it.</p>
+<p><strong>What stands in the way.</strong> The corpus's states are elements of $\mathbb{B}_\Psi$ evolving unitarily; here the state is a vector in a tangent space of variable dimension, and the two objects live in different categories. An identification would need the variable dimension to be expressible as a family of idempotents, which the paper does not attempt.</p>
+<h3 id="2-nonlocality-from-simultaneity-of-preparation-and-measurement">2. Nonlocality from simultaneity of preparation and measurement</h3>
+<p><strong>The idea.</strong> If time does not advance along a particle's worldline, preparation and measurement are one event, and the "spooky" correlation is a statement about a single point of spacetime rather than about two separated events. Entanglement becomes locality in the internal spacetime and nonlocality only in space. </p>
+<p><strong>What it would add.</strong> A third position between the corpus's ontological readings: neither a hidden variable added to the state nor a many-worlds branching, but a change in what "separated" means. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.md</code>, on what kind of entity the state is. </p>
+<p><strong>What stands in the way.</strong> The corpus's entanglement is a tensor-product structure with a partial trace; a shared worldline has no tensor factors to trace over, so the usual entropy measures have no counterpart here. </p>
+<h3 id="3-maluss-law-from-a-mechanical-constraint">3. Malus's law from a mechanical constraint</h3>
+<p><strong>The idea.</strong> The polarizer is a wire; the electron is confined to move along it; the constraint changes the rank of the projection, and the $\pi/4$ threshold emerges as the boundary between transmission and absorption. Polarization statistics are then a consequence of a boundary condition, not of a postulate about measurement. </p>
+<p><strong>What it would add.</strong> A classical-mechanical origin for the $\cos^2$ law, which the corpus's polarization articles derive from the coherence biquaternion and the Poincaré sphere. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.md</code>, on the polarization state and what selects a direction. </p>
+<p><strong>What stands in the way.</strong> The corpus's polarizer is a Jones matrix acting on a coherence matrix; here it is a constraint on one electron's 4-velocity. The $\pi/4$ threshold is not the $\cos^2\theta$ law, and the paper says the general case "We expect that this may be dealt with using pointon spinors, introduced in [B2, Section 3], though this requires further investigation.".</p>
+<p>The rank is a judgement: the projection mechanism first, because it is the paper's core and the only one stated as a theorem; simultaneity second, because it reframes the corpus's ontology question; the polarizer third, because its main case is a threshold rather than the full law.</p>
+<p>This is a twenty-four page paper; the degenerate metric and its variable tangent spaces, the internal 4-velocity and charge, the projection model of collapse and the Born rule, the composite photon, the pair-of-spin-vectors polarization model and the polarizer analysis are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -165,42 +165,42 @@
 <tbody>
 <tr>
 <td>$A_x=L_{\vec e_x}-R_{\vec e_x}$</td>
-<td>$\left(\begin{smallmatrix}0&0&0\\0&0&-2\\0&2&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;0&amp;0\\0&amp;0&amp;-2\\0&amp;2&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$8$</td>
 </tr>
 <tr>
 <td>$A_y$</td>
-<td>$\left(\begin{smallmatrix}0&0&2\\0&0&0\\-2&0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;0&amp;2\\0&amp;0&amp;0\\-2&amp;0&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$8$</td>
 </tr>
 <tr>
 <td>$A_z$</td>
-<td>$\left(\begin{smallmatrix}0&-2&0\\2&0&0\\0&0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;-2&amp;0\\2&amp;0&amp;0\\0&amp;0&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$8$</td>
 </tr>
 <tr>
 <td>$S_{xy}$</td>
-<td>$\left(\begin{smallmatrix}0&i&0\\ i&0&0\\0&0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;i&amp;0\\ i&amp;0&amp;0\\0&amp;0&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>$S_{xz}$</td>
-<td>$\left(\begin{smallmatrix}0&0&i\\0&0&0\\ i&0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;0&amp;i\\0&amp;0&amp;0\\ i&amp;0&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>$S_{yz}$</td>
-<td>$\left(\begin{smallmatrix}0&0&0\\0&0&i\\0&i&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;0&amp;0\\0&amp;0&amp;i\\0&amp;i&amp;0\end{smallmatrix}\right)$</td>
 <td>$2$</td>
 <td>$0$</td>
 <td>$2$</td>
@@ -231,19 +231,19 @@
 <p>The first six are exactly the generators of the companion note, unchanged. The last three are new, and they are the only ones of length $4$: the Conway ceiling is attained precisely by the equal-weight directions.</p>
 <p><strong>The Gram matrix is block diagonal</strong>, in the order $A,S,u$:</p>
 <p>$$
-G=\begin{pmatrix}8\,\mathrm{I}_3&0&0\\0&2\,\mathrm{I}_3&0\\0&0&4\,\mathrm{I}_3-J_3\end{pmatrix},
+G=\begin{pmatrix}8\,\mathrm{I}_3&amp;0&amp;0\\0&amp;2\,\mathrm{I}_3&amp;0\\0&amp;0&amp;4\,\mathrm{I}_3-J_3\end{pmatrix},
 $$</p>
 <p>so the three families are mutually orthogonal for $\langle X,Y\rangle=\operatorname{Re}\operatorname{tr}(X^{\dagger}Y)$, and the third block has eigenvalues $1,4,4$: the direction $u_x+u_y+u_z$ is the short one.</p>
 <p><strong>Rank.</strong> The nine are independent: rank $9$ over $\mathbb R$ by exact elimination, which is one more than the eight of $\mathfrak{su}(3)$ and matches $\dim_{\mathbb R}\mathfrak u(3)=9$.</p>
 <h2 id="2-the-new-generator-math86">2. The New Generator $iP_V$</h2>
 <p><strong>Three arrays.</strong></p>
 <p>$$
-iP_V=\begin{pmatrix}0&0&0&0\\0&i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}
+iP_V=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}
 =i\,\frac{3E_t+E_x+E_y+E_z}{4},
 \qquad E_{\imath}=L_{e_{\imath}}R_{e_{\imath}}.
 $$</p>
 <p>The Conway array has four nonzero entries, all on the diagonal words: the coefficients are $\tfrac34i,\tfrac14i,\tfrac14i,\tfrac14i$, so $\ell=4$. The identity behind it is $E_t=\mathrm I_4$ and $E_x+E_y+E_z=\operatorname{diag}(-3,1,1,1)$, giving $3E_t+\sum_aE_a=4P_V$.</p>
-<p><strong>Numbers.</strong> Trace $3i$; Hilbert–Schmidt norm squared $\operatorname{tr}(P_V^{2})=3$; central in $\mathfrak u(3)$, verified as $\lVert[iP_V,X]\rVert<10^{-15}$ for all nine basis elements; fixed by $P$, $\lVert PiP_VP^{-1}-iP_V\rVert=2.4\times10^{-16}$.</p>
+<p><strong>Numbers.</strong> Trace $3i$; Hilbert–Schmidt norm squared $\operatorname{tr}(P_V^{2})=3$; central in $\mathfrak u(3)$, verified as $\lVert[iP_V,X]\rVert&lt;10^{-15}$ for all nine basis elements; fixed by $P$, $\lVert PiP_VP^{-1}-iP_V\rVert=2.4\times10^{-16}$.</p>
 <p><strong>Why it is not a derivation.</strong> Every $L_{\tilde Q}-R_{\tilde Q}$ is of zero array trace — verified for all four $\tilde Q=e_{\imath}$ and true in general since $\operatorname{tr}L_{\tilde Q}=\operatorname{tr}R_{\tilde Q}=4Q_t$ — and $\operatorname{tr}iP_V=3i\neq0$. Hence $iP_V$ is not inner, and $\operatorname{Der}_{\mathbb C}(\mathbb B)=\mathbb B/\mathbb C e_t$ being all inner, it is not a derivation. It is an operator that rescales the carrier, not one that differentiates the product.</p>
 <h2 id="3-the-equal-weight-triple-three-ways">3. The Equal-Weight Triple, Three Ways</h2>
 <p><strong>Definition and arrays.</strong> With $(a,b,c)$ cyclic,</p>
@@ -296,7 +296,7 @@ $$</p>
 <p>$$
 X=i\sum_a\alpha_aE_a+\mu\,iP_V,\qquad \alpha_a\in\mathbb R,\ \sum_a\alpha_a=0,\ \mu\in\mathbb R,
 $$</p>
-<p>so its axis entries are $i(\mu-2\alpha_a)$ and the weights are $\lvert\mu-2\alpha_a\rvert$. Equal weights mean $\mu-2\alpha_a=s_ar$ for a common $r>0$ and signs $s_a=\pm1$.</p>
+<p>so its axis entries are $i(\mu-2\alpha_a)$ and the weights are $\lvert\mu-2\alpha_a\rvert$. Equal weights mean $\mu-2\alpha_a=s_ar$ for a common $r&gt;0$ and signs $s_a=\pm1$.</p>
 <p><strong>The lattice.</strong> Since $\sum_a\alpha_a=0$ forces $\mu=\tfrac13\sum_as_ar=\tfrac r3\sum_as_a$, each sign pattern determines the element, and the eight patterns give four lines, because negating all three signs negates the element:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -334,7 +334,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The pattern $(-,-,-)$ gives $r\,iP_V$ with $r<0$, the same line as the first, and the other three rows likewise carry their negatives. So there are exactly four equal-weight lines, one central and three in a single orbit under the cyclic permutation, and the diagonal part of $\mathfrak u(3)$ is exactly three-dimensional: as many dimensions as axes.</p>
+<p>The pattern $(-,-,-)$ gives $r\,iP_V$ with $r&lt;0$, the same line as the first, and the other three rows likewise carry their negatives. So there are exactly four equal-weight lines, one central and three in a single orbit under the cyclic permutation, and the diagonal part of $\mathfrak u(3)$ is exactly three-dimensional: as many dimensions as axes.</p>
 <p><strong>Checked against the triple.</strong> For $u_x$ the parametrisation gives $\alpha_x=\tfrac23$, $\alpha_y=\alpha_z=-\tfrac13$, $\mu=\tfrac13$, hence axis entries $\mu-2\alpha_x=-1$ and $\mu-2\alpha_y=\mu-2\alpha_z=+1$: the display $i\operatorname{diag}(0,-1,1,1)$ of §3, as it must be.</p>
 <p><strong>Contrast with $\mathfrak{su}(3)$.</strong> Setting $\mu=0$ kills the three transversal lines and leaves only $r=0$. That is the whole obstruction, and it is arithmetic: three real numbers of equal modulus cannot sum to zero.</p>
 <h2 id="5-the-cyclic-element-and-three-free-orbits">5. The Cyclic Element and Three Free Orbits</h2>
@@ -455,7 +455,7 @@ g_1=\exp\bigl(\tfrac{\pi}{3}u_x\bigr)=\operatorname{diag}\bigl(1,\ \zeta^{-1},\ 
 $$</p>
 <p>$$
 g_0=g_1\exp\bigl(\tfrac{\pi}{4}A_z\bigr)=\operatorname{diag}\Bigl(1,\
-\left(\begin{smallmatrix}0&\zeta^{2}&0\\ \zeta&0&0\\0&0&\zeta\end{smallmatrix}\right)\Bigr),
+\left(\begin{smallmatrix}0&amp;\zeta^{2}&amp;0\\ \zeta&amp;0&amp;0\\0&amp;0&amp;\zeta\end{smallmatrix}\right)\Bigr),
 \qquad
 \det g_0=\zeta,\quad \operatorname{spec}=\{-i,\ i,\ \zeta\}.
 $$</p>
@@ -502,9 +502,9 @@ $$</p>
 <h2 id="10-the-gram-and-the-tetrahedral-angle">10. The Gram and the Tetrahedral Angle</h2>
 <p><strong>The three Gram matrices</strong>, for the triples $h$, $K$, $u$:</p>
 <p>$$
-G_h=\begin{pmatrix}2&-1&-1\\-1&2&-1\\-1&-1&2\end{pmatrix},\quad
-G_K=\begin{pmatrix}\tfrac83&-\tfrac43&-\tfrac43\\-\tfrac43&\tfrac83&-\tfrac43\\-\tfrac43&-\tfrac43&\tfrac83\end{pmatrix},\quad
-G_u=\begin{pmatrix}3&-1&-1\\-1&3&-1\\-1&-1&3\end{pmatrix}.
+G_h=\begin{pmatrix}2&amp;-1&amp;-1\\-1&amp;2&amp;-1\\-1&amp;-1&amp;2\end{pmatrix},\quad
+G_K=\begin{pmatrix}\tfrac83&amp;-\tfrac43&amp;-\tfrac43\\-\tfrac43&amp;\tfrac83&amp;-\tfrac43\\-\tfrac43&amp;-\tfrac43&amp;\tfrac83\end{pmatrix},\quad
+G_u=\begin{pmatrix}3&amp;-1&amp;-1\\-1&amp;3&amp;-1\\-1&amp;-1&amp;3\end{pmatrix}.
 $$</p>
 <p>$G_h$ and $G_K$ are singular, with kernel the vector $(1,1,1)$: those triples sum to zero, and the three vectors span a plane with $120^{\circ}$ between neighbours. $G_u$ is nonsingular, with eigenvalues $1,4,4$: the triple is not coplanar with its own sum, and the angle is $\arccos(-\tfrac13)=109.47^{\circ}$.</p>
 <p><strong>One consequence.</strong> The symmetric triple cannot be replaced by two of its members plus the centre in a way that keeps equal weights: any sum $\alpha u_x+\beta u_y+\gamma u_z$ with real coefficients and equal weights on the three axes must be proportional to $iP_V$, as the lattice of §4 shows.</p>
@@ -545,7 +545,7 @@ $$</p>
 </tr>
 <tr>
 <td>anti-Hermitian, kill $e_t$, preserve $B_V$</td>
-<td>$<10^{-15}$</td>
+<td>$&lt;10^{-15}$</td>
 </tr>
 <tr>
 <td>traces: $0$ on $A,S$; $i$ on each $u_a$; $3i$ on $iP_V$</td>

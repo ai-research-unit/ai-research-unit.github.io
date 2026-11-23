@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic pressure and volume for black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic pressure and volume for black holes - 2602.05130.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-pressure-and-volume-for-black-holes"><strong>Holographic pressure and volume for black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2602.05130v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silvester G. A. Borsboom, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 27 October 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>60 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic pressure and volume for black holes - 2602.05130-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic pressure and volume for black holes - 2602.05130.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic pressure and volume for black holes - 2602.05130.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes a holographic definition of thermodynamic pressure and volume for black holes, based on quasi-local gravitational thermodynamics. Enclosing a black hole in a finite timelike boundary gives York's quasi-local first law, which contains a surface pressure conjugate to the boundary area; if a dual theory lives on that boundary, the geometric quantities become the pressure and volume of the dual thermal system. For static spherically symmetric holes these reduce to global thermodynamic variables. The holographic volume supplies a notion of system size, hence a definition of extensivity and of the large-system limit. The result: small Schwarzschild black holes are non-extensive, large ones become extensive in the large-system limit; the same holds for AdS–Schwarzschild, except that the quasi-local energy of the large hole also becomes extensive, and before the limit the energy splits into subextensive and extensive parts with an explicit formula for the extensive part.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"When a black hole is enclosed by a finite timelike boundary, York's quasi-local first law includes a surface pressure conjugate to the boundary area. Assuming the existence of a holographically dual theory living on this boundary, these geometric quantities correspond to the pressure and volume of the dual thermal system."</p>
+<h3 id="what-it-buys">What it buys</h3>
+<p>"The holographic volume provides a notion of system size, allowing extensivity to be defined in standard thermodynamic terms, and it yields a definition of the large-system limit."</p>
+<h3 id="the-result-for-flat-space">The result for flat space</h3>
+<p>"For the asymptotically flat case, we show that, in the canonical thermodynamic representation, small Schwarzschild black holes are non-extensive, whereas large black holes become extensive in the large-system limit."</p>
+<h3 id="the-result-for-ads">The result for AdS</h3>
+<p>"A similar conclusion applies to Anti-de Sitter Schwarzschild black holes, with the difference that the quasi-local energy of the large black hole also becomes extensive in the large-system limit. Before this limit, the energy decomposes into subextensive and extensive contributions, and we derive an explicit expression for the extensive part as a function of the finite volume and entropy."</p>
+<h3 id="the-contrast-with-earlier-proposals">The contrast with earlier proposals</h3>
+<p>The paper reviews Padmanabhan's proposal and extended thermodynamics, and argues that neither supplies a volume with the right scaling behaviour. Padmanabhan's uses the horizon as the boundary; extended thermodynamics varies $\Lambda$ and its conjugate is not an independent size. The cavity boundary is what makes the volume an actual size.</p>
+<h3 id="the-structure">The structure</h3>
+<p>Quasi-local first law and Smarr relation from covariant phase space, then the small/large split for flat and AdS, then a general treatment of extensivity — quasi-homogeneous scaling and generalised Euler relations — and finally the non-extensivity proof for asymptotically flat holes.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-extensivity-as-a-limit-with-a-proof">1. Extensivity as a limit, with a proof</h3>
+<p><strong>The idea.</strong> Extensivity is not a property of a system but a property of a regime: small holes are non-extensive, large holes become extensive in the large-system limit, and the crossover is computed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> uses additivity as a structural assumption. If extensivity is a limit rather than an axiom, then any derivation that assumes it is only valid in a regime the corpus never states. That is a qualification on the article's whole argument, and a sharp one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, opening assumptions.</p>
+<p><strong>What stands in the way.</strong> The proof uses the cavity and the quasi-local first law; the corpus has neither. But the <em>qualification</em> transfers as a caution.</p>
+<h3 id="2-a-volume-that-is-a-size-not-a-conjugate">2. A volume that is a size, not a conjugate</h3>
+<p><strong>The idea.</strong> The thermodynamic volume is the boundary area, which is genuinely how big the system is; the pressure is the surface pressure that holds it. Neither is defined by varying a coupling.</p>
+<p><strong>What it would add.</strong> A third distinct origin for the pressure, alongside brane tension and varying $\Lambda$. The corpus's <code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code> has a size (its metric normalisation) with no conjugate. This paper's identification suggests what a conjugate to that size would have to be: a boundary pressure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code>.</p>
+<p><strong>What stands in the way.</strong> The boundary is a cavity in a Lorentzian spacetime. Ranked second.</p>
+<h3 id="3-energy-splits-into-two-parts">3. Energy splits into two parts</h3>
+<p><strong>The idea.</strong> The quasi-local energy of a finite AdS hole is the sum of a subextensive and an extensive piece, with the extensive piece given explicitly as a function of $V$ and $S$.</p>
+<p><strong>What it would add.</strong> The corpus's energy expressions are not decomposed by scaling. An explicit split of a total energy into a part that grows with size and a part that does not is a pattern the corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> could use to identify which of its conserved quantities is additive.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The split is asymptotic and uses the AdS scale. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

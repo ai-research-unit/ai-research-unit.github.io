@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Quantization of a Covariant Relativistic Spacetime String in Stueckelberg–Horwitz–Piron Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Second quantization of a covariant relativistic spacetime string in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="second-quantization-of-a-covariant-relativistic-spacetime-string-in-stueckelberghorwitzpiron-theory"><strong>Second Quantization of a Covariant Relativistic Spacetime String in Stueckelberg–Horwitz–Piron Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1612.04193v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. Suleymanov, L. Horwitz, A. Yahalom</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 December 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Second quantization of a covariant relativistic spacetime string in Steuckelberg-Horwitz-Piron theory - 1612.04193-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Second quantization of a covariant relativistic spacetime string in Steuckelberg-Horwitz-Piron theory - 1612.04193.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Second quantization of a covariant relativistic spacetime string in Steuckelberg-Horwitz-Piron theory - 1612.04193.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Describes a closed relativistic string as a system of events evolving in world time, so that the string lives in four dimensions rather than in three plus a parameter. The motion separates into centre of mass, rotation and oscillation. Requiring a steady solution puts the string in a spacelike hyperplane as a rotating ring; the oscillations about that ring become a set of independent relativistic harmonic oscillators; quantising the mode variables gives the mass and energy spectrum. No extra dimensions are needed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framework">The framework</h3>
+<p>"A relativistic 4D string is described in the framework of the covariant quantum theory first introduced by Stueckelberg"</p>
+<h3 id="the-decomposition">The decomposition</h3>
+<p>"It was shown that the string motion can be separated into three independent parts: center of mass motion, rotation, and relative oscillations. The oscillations part is quantized, while, the other parts are treated classically."</p>
+<h3 id="the-equilibrium-shape">The equilibrium shape</h3>
+<p>"The rotational part of the Hamiltonian is obtained from a demand for a steady solution, which showed that the string's equilibrium configuration is found in the same hyperplane (a spacelike hyperplane for consistency with the nonrelativistic limit). Therefore, the system can be transformed to some Lorentz frame where the string is embedded in the usual R3. Assuming" Assuming equal spacing and constant distance to the centre, "the string's steady solution's shape turns out to be a rotating ring."</p>
+<h3 id="the-quantization">The quantization</h3>
+<p>"The Fourier expansion of the oscillation Hamiltonian behaves like a set of independent relativistic harmonic oscillators representing excitations of the string's modes. By defining the mode variables as coordinates (second quantization) and applying the methods of Arshansky and Horwitz, we find the spectrum of the oscillatory motion of the string."</p>
+<h3 id="the-comparison-with-string-theory">The comparison with string theory</h3>
+<p>"Current string models use a reparameterization invariant Lagrangian, while the present model uses a Hamiltonian formalism, providing a wider basis for application to dynamical models in terms of both particles and quantum field theory. In this framework there is no need for additional dimensions."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-string-is-a-set-of-events-so-it-needs-no-extra-dimension">1. A string is a set of events, so it needs no extra dimension</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: a relativistic string can be built in four dimensions if the evolution parameter is world time rather than a coordinate. The string's extent is spacelike; its history is a flow in $\tau$; no compactified dimensions are introduced.</p>
+<p><strong>What it would add.</strong> The corpus's articles on extended objects and on extra dimensions assume that a string requires a worldsheet, hence extra structure. This shows a covariant string with a Hamiltonian, no reparameterisation invariance, and no extra dimensions. Whether it reproduces the physics is a separate question, but as a counterexample to the assumption that strings need worldsheets it is decisive, and the corpus is the place where such a counterexample would matter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The model has no obvious tachyon-free spectrum or critical dimension; the paper compares to string theory qualitatively and does not compute string amplitudes.</p>
+<h3 id="2-second-quantisation-can-mean-treating-the-mode-as-a-coordinate">2. Second quantisation can mean treating the mode as a coordinate</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: the Fourier modes of the oscillation are promoted to coordinates, and the resulting theory is quantised in the same way as a particle in a potential. Second quantisation here does not mean field operators acting on a Fock space built from a classical field, but a change of variables in the Hamiltonian.</p>
+<p><strong>What it would add.</strong> The corpus uses "second quantisation" in the field-theoretic sense throughout. This is a different, older usage — quantise the collective coordinate — and it is the usage that makes the string tractable. Distinguishing the two would remove a recurring ambiguity in the corpus's articles, several of which say second quantisation when they mean promoting the mode.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The two usages agree for free fields, so the distinction only bites when interactions or constraints are present.</p>
+<h3 id="3-regge-behaviour-from-oscillator-excitations">3. Regge behaviour from oscillator excitations</h3>
+<p><strong>The idea.</strong> A <strong>claim of consistency</strong>: mass-squared rising linearly with angular momentum, the Regge pattern, comes out of a set of relativistic oscillators rather than out of a geometric string with tension.</p>
+<p><strong>What it would add.</strong> The corpus's articles on mass spectra and on the classification of states by Casimirs do not produce linear trajectories. If oscillator excitations give the same pattern as a Nambu–Goto string, then the Regge slope is a property of the oscillator spectrum rather than of geometry — a strong statement about what Regge behaviour actually encodes, and one the corpus could test with its own algebraic oscillator constructions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/wigners-classification-two-casimirs-three-orbits.md</code>.</p>
+<p><strong>What stands in the way.</strong> The comparison is qualitative; no slope is computed and matched to data, and the paper says the details are for future work.</p>
+<p>The rank: the event-string first, because it removes an assumption; mode-as-coordinate second, because it clarifies a term; Regge behaviour last, because it is a consistency check.</p>
+<p>The remaining items in one line each: the spacelike hyperplane condition, which is what makes the non-relativistic limit work; the rotating-ring equilibrium, which is the classical solution the quantisation is built around; and the comparison with the path-integral formulation, which is where the absence of a Hamiltonian representation for off-shell theories is raised.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

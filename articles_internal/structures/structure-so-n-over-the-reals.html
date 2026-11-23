@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-special-orthogonal-groups-over-the-reals-math0-math1-math2-math3-math4-math5-math6-math7-math8"><strong>The Special Orthogonal Groups over the Reals: $\mathrm{SO}(1)$, $\mathrm{SO}(2)$, $\mathrm{SO}(3)$, $\mathrm{SO}(4)$, $\mathrm{SO}(5)$, $\mathrm{SO}(6)$, $\mathrm{SO}(7)$, $\mathrm{SO}(8)$, $\mathrm{SO}(n)$</strong></h1>
+        <h1 id="the-special-orthogonal-groups-over-the-reals-math1-math2-math3-math4-math5-math6-math7-math8-math9"><strong>The Special Orthogonal Groups over the Reals: $\mathrm{SO}(1)$, $\mathrm{SO}(2)$, $\mathrm{SO}(3)$, $\mathrm{SO}(4)$, $\mathrm{SO}(5)$, $\mathrm{SO}(6)$, $\mathrm{SO}(7)$, $\mathrm{SO}(8)$, $\mathrm{SO}(n)$</strong></h1>
 <h2 id="the-plan">The Plan</h2>
 <p><strong>One equation, nine rungs.</strong> The whole ladder is cut by the single equation $A^{\mathsf T}A=\mathrm I$ together with $\det A=1$. This article walks that equation up the dimensions, and at every rung it asks the same four questions: what is the dimension, what is the centre, which elements are conjugate to which, and what is the topology. The rungs one to four are the classical ones; the rungs five to eight are the ones where the accidents run out; the general rung $\mathrm{SO}(n)$ closes the ladder.</p>
 <p><strong>Why the four questions.</strong> They are the four things that change with $n$, and each changes for its own reason. The dimension is quadratic and grows without surprise. The centre changes with the parity of $n$, because $-I$ is a rotation exactly in even dimension. The conjugacy classes change with the parity too, but for a different reason: an odd-dimensional real matrix always has a real eigenvalue, and on the unit circle that eigenvalue is forced to be $+1$. The topology changes at $n=3$, where the group stops being simply connected.</p>
@@ -127,16 +127,16 @@ $$</p>
 <h3 id="the-basis-and-the-count">The Basis and the Count</h3>
 <p>Write $E_{ij}$ for the matrix with a single $1$ in row $i$, column $j$. The antisymmetric matrices have the basis</p>
 <p>$$
-X_{ij}=E_{ij}-E_{ji},\qquad 1\le i<j\le n,
+X_{ij}=E_{ij}-E_{ji},\qquad 1\le i&lt;j\le n,
 $$</p>
 <p>and the number of pairs is $n(n-1)/2$. At $n=2,3,4$ the bases are explicitly</p>
 <p>$$
-\mathfrak{so}(2):\ \Bigl\{\begin{pmatrix}0&-1\\1&0\end{pmatrix}\Bigr\},
+\mathfrak{so}(2):\ \Bigl\{\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}\Bigr\},
 $$</p>
 <p>$$
-\mathfrak{so}(3):\ \Bigl\{\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix},
-\begin{pmatrix}0&0&-1\\0&0&0\\1&0&0\end{pmatrix},
-\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix}\Bigr\},
+\mathfrak{so}(3):\ \Bigl\{\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},
+\begin{pmatrix}0&amp;0&amp;-1\\0&amp;0&amp;0\\1&amp;0&amp;0\end{pmatrix},
+\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;-1\\0&amp;1&amp;0\end{pmatrix}\Bigr\},
 $$</p>
 <p>$$
 \mathfrak{so}(4):\ \bigl\{X_{12},X_{13},X_{14},X_{23},X_{24},X_{34}\bigr\}.
@@ -225,7 +225,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="math182-the-trivial-group">$\mathrm{SO}(1)$: The Trivial Group</h2>
+<h2 id="math183-the-trivial-group">$\mathrm{SO}(1)$: The Trivial Group</h2>
 <p>At $n=1$ the equation $A^{\mathsf T}A=1$ on a real scalar reads $a^{2}=1$, so $\mathrm O(1)=\{1,-1\}$ and the determinant condition selects the identity:</p>
 <p>$$
 \mathrm{SO}(1)=\bigl\{(1)\bigr\}.
@@ -237,28 +237,28 @@ $$</p>
 <p><strong>Topology.</strong> One point. It is connected, simply connected, compact, and its only homotopy groups vanish. $\pi_0=1$, $\pi_1=0$.</p>
 <p><strong>What is absent.</strong> No rotation, no reflection, no axis, no angle. The empty product of reflections is the identity, which is the base case of the Cartan–Dieudonné count. The exponential is the constant map $0\mapsto1$ on the zero algebra, hence a bijection onto the group: the only rung where the exponential is injective.</p>
 <p><strong>Why the rung is worth recording.</strong> Three later statements are true at $n=1$ and false for some larger $n$, so the ladder has to start here to show that they are not vacuous. Every element is central; every element is a square; the exponential is a bijection. At $n=2$ the first and third survive, the second survives, and at $n\ge3$ the exponential fails to be injective.</p>
-<h2 id="math197-the-circle">$\mathrm{SO}(2)$: The Circle</h2>
+<h2 id="math198-the-circle">$\mathrm{SO}(2)$: The Circle</h2>
 <h3 id="the-matrices">The Matrices</h3>
-<p>At $n=2$ orthogonality is two conditions on four entries, so the group is one-dimensional. Write $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The columns are orthonormal: $a^{2}+c^{2}=1$, $b^{2}+d^{2}=1$, $ab+cd=0$. The last two normalised columns are therefore related by a rotation of the pair, and with $\det A=1$ the solution is</p>
+<p>At $n=2$ orthogonality is two conditions on four entries, so the group is one-dimensional. Write $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$. The columns are orthonormal: $a^{2}+c^{2}=1$, $b^{2}+d^{2}=1$, $ab+cd=0$. The last two normalised columns are therefore related by a rotation of the pair, and with $\det A=1$ the solution is</p>
 <p>$$
-A=\begin{pmatrix}a&-b\\b&a\end{pmatrix},\qquad a^{2}+b^{2}=1 .
+A=\begin{pmatrix}a&amp;-b\\b&amp;a\end{pmatrix},\qquad a^{2}+b^{2}=1 .
 $$</p>
 <p>Putting $a=\cos\theta$, $b=\sin\theta$ gives the whole group:</p>
 <p>$$
-R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix},
+R(\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix},
 \qquad \theta\in\mathbb{R}/2\pi\mathbb{Z}.
 $$</p>
 <p>The other coset of $\mathrm O(2)$ is the set of reflections. Two representatives are</p>
 <p>$$
-\sigma_1=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\sigma_1=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},
 \qquad
-\sigma_1R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\-\sin\theta&-\cos\theta\end{pmatrix},
+\sigma_1R(\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\-\sin\theta&amp;-\cos\theta\end{pmatrix},
 $$</p>
 <p>and every element of $\mathrm O(2)$ is $R(\theta)$ or $\sigma_1R(\theta)$.</p>
 <h3 id="the-exponential-and-the-angle">The Exponential and the Angle</h3>
 <p>The generator is</p>
 <p>$$
-J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},
 \qquad J^{2}=-\mathrm I_2,
 $$</p>
 <p>and the exponential of $tJ$ is computed from the two series of $\cos$ and $\sin$:</p>
@@ -280,21 +280,21 @@ $$</p>
 <h3 id="the-cayley-chart">The Cayley Chart</h3>
 <p>The stereographic coordinate of the circle makes the group rational in the angle. Put $t=\tan(\theta/2)$, so that the point $(a,b)$ of the circle becomes</p>
 <p>$$
-R(t)=\frac{1}{1+t^{2}}\begin{pmatrix}1-t^{2}&-2t\\2t&1-t^{2}\end{pmatrix},
+R(t)=\frac{1}{1+t^{2}}\begin{pmatrix}1-t^{2}&amp;-2t\\2t&amp;1-t^{2}\end{pmatrix},
 \qquad t\in\mathbb{R},
 $$</p>
 <p>with the inverse $t=b/(1+a)$ and the missing point $t=\infty$, which is $R(\pi)=-\mathrm I_2$. The chart is the two-dimensional case of the general Cayley transform, read backwards:</p>
 <p>$$
-X=(\mathrm I-A)(\mathrm I+A)^{-1}=\frac{1}{1+a}\begin{pmatrix}0&-b\\ b&0\end{pmatrix}
-=\frac{t}{1+t^{2}}\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+X=(\mathrm I-A)(\mathrm I+A)^{-1}=\frac{1}{1+a}\begin{pmatrix}0&amp;-b\\ b&amp;0\end{pmatrix}
+=\frac{t}{1+t^{2}}\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},
 $$</p>
 <p>which for a general $n$ sends the group onto the antisymmetric matrices by a rational map, defined on the open dense set $\{\det(\mathrm I+A)\ne0\}$ and therefore missing exactly the rotations with eigenvalue $-1$. The coordinate $t$ is $\tan(\theta/2)$, since $\sin\theta/(1+\cos\theta)=\tan(\theta/2)$. <em>Rational-Chart Polar Decomposition of Complex Numbers</em> works the same chart on the unit circle of $\mathbb{C}$, and the two charts are the same map read in two algebras.</p>
 <h3 id="the-group-is-abelian-and-every-element-is-its-own-class">The Group Is Abelian, and Every Element Is Its Own Class</h3>
 <p>$R(\theta)R(\varphi)=R(\theta+\varphi)=R(\varphi)R(\theta)$, so $\mathrm{SO}(2)$ is abelian. Three consequences follow, and all three are warnings to the reader who knows only dimension three.</p>
 <p><strong>The centre is the whole group.</strong> There is no shortage of central elements; there are no others.</p>
 <p><strong>Every element is its own conjugacy class.</strong> Conjugation inside an abelian group is trivial, so the number of classes equals the number of elements and the class space is the circle itself. This is the exact opposite of dimension three, where the class space is the interval $[0,\pi]$.</p>
-<p><strong>No element has an axis in the sense of dimension three.</strong> The fixed set of $R(\theta)$ for $0<\theta<\pi$ is the origin alone, and there is no invariant line. The axis appears only from $n=3$ on.</p>
-<h3 id="the-two-readings-math243-and-math244">The Two Readings: $\mathrm U(1)$ and $\mathbb{C}^{\times}$</h3>
+<p><strong>No element has an axis in the sense of dimension three.</strong> The fixed set of $R(\theta)$ for $0&lt;\theta&lt;\pi$ is the origin alone, and there is no invariant line. The axis appears only from $n=3$ on.</p>
+<h3 id="the-two-readings-math244-and-math245">The Two Readings: $\mathrm U(1)$ and $\mathbb{C}^{\times}$</h3>
 <p>The circle is the group of invertibles of the complex field, and the identification is exact:</p>
 <p>$$
 \mathbb{C}\supset U(1)=\{z:|z|=1\}\longrightarrow \mathrm{SO}(2),
@@ -302,18 +302,18 @@ $$</p>
 $$</p>
 <p>and it is an isomorphism of groups, because multiplication of phases adds exponents exactly as the matrices add angles. Reading $R(\theta)$ as multiplication by the complex number $\cos\theta+i\sin\theta$ is the same statement, and it is the reason the two-dimensional rotation needs no axis, no angle convention and no ordering: complex multiplication is already a rotation.</p>
 <p>This is the base of the ladder of identifications. The circle is $\mathrm{SO}(2)$, it is $\mathrm U(1)$, and it is the unit sphere $S^{1}$; the three descriptions differ only in which structure is being used. The unit sphere of $\mathbb{R}^{2}$ carries a group law because $\mathbb{R}^{2}$ carries the algebra $\mathbb{C}$.</p>
-<p><strong>The place of the circle in the unitary ladder.</strong> $\mathrm U(1)$ is the maximal torus of $\mathrm{SU}(2)$, so the smallest nontrivial rung of this ladder is the Cartan subgroup of the smallest nontrivial rung of the unitary ladder. Two inclusions follow and both are recorded in §<em>The Dictionary with the Special Unitary Groups</em>. First, $\mathrm U(2)=(\mathrm{SU}(2)\times\mathrm U(1))/\mathbb{Z}_{2}$, so the circle is half of the maximal compact group of $\mathrm{GL}_{2}(\mathbb{C})$. Second, the chain $\mathrm{SO}(2)\subset\mathrm U(2)\subset\mathrm{SO}(4)$ has dimensions $1<4<6$, which is the smallest case of the nesting $\mathrm U(n)\subset\mathrm{SO}(2n)$.</p>
+<p><strong>The place of the circle in the unitary ladder.</strong> $\mathrm U(1)$ is the maximal torus of $\mathrm{SU}(2)$, so the smallest nontrivial rung of this ladder is the Cartan subgroup of the smallest nontrivial rung of the unitary ladder. Two inclusions follow and both are recorded in §<em>The Dictionary with the Special Unitary Groups</em>. First, $\mathrm U(2)=(\mathrm{SU}(2)\times\mathrm U(1))/\mathbb{Z}_{2}$, so the circle is half of the maximal compact group of $\mathrm{GL}_{2}(\mathbb{C})$. Second, the chain $\mathrm{SO}(2)\subset\mathrm U(2)\subset\mathrm{SO}(4)$ has dimensions $1&lt;4&lt;6$, which is the smallest case of the nesting $\mathrm U(n)\subset\mathrm{SO}(2n)$.</p>
 <h3 id="what-dimension-two-cannot-do">What Dimension Two Cannot Do</h3>
 <p>Four structures are impossible here, and naming them fixes what each higher rung adds.</p>
 <p><strong>No two angles.</strong> The group is one-dimensional, so one number, the angle, is the whole element.</p>
 <p><strong>No conjugation classes as an interval.</strong> Because the group is abelian, the trace does not classify: $\operatorname{tr}R(\theta)=2\cos\theta$ is two-to-one on the circle and does not separate $R(\theta)$ from $R(-\theta)$, which are different elements.</p>
 <p><strong>No covering of low degree other than the universal one.</strong> The exponential is a covering of degree countable, $\mathbb{R}\to S^{1}$; there is no finite double cover distinct from the identity, because a double cover of a circle is again a circle.</p>
 <p><strong>No nonabelian simplicity.</strong> The algebra is a line, and a line is abelian.</p>
-<h2 id="math265-the-rotation-group-of-space">$\mathrm{SO}(3)$: The Rotation Group of Space</h2>
-<h3 id="the-lie-algebra-is-math266-with-the-cross-product">The Lie Algebra Is $\mathbb{R}^{3}$ with the Cross Product</h3>
+<h2 id="math266-the-rotation-group-of-space">$\mathrm{SO}(3)$: The Rotation Group of Space</h2>
+<h3 id="the-lie-algebra-is-math267-with-the-cross-product">The Lie Algebra Is $\mathbb{R}^{3}$ with the Cross Product</h3>
 <p>Write an antisymmetric matrix as the hat of a vector:</p>
 <p>$$
-\hat u=\begin{pmatrix}0&-u_3&u_2\\u_3&0&-u_1\\-u_2&u_1&0\end{pmatrix},
+\hat u=\begin{pmatrix}0&amp;-u_3&amp;u_2\\u_3&amp;0&amp;-u_1\\-u_2&amp;u_1&amp;0\end{pmatrix},
 \qquad u=(u_1,u_2,u_3)\in\mathbb{R}^{3}.
 $$</p>
 <p>The three coordinate hatted vectors are the basis of $\mathfrak{so}(3)$, and the map $u\mapsto\hat u$ is a linear isomorphism onto the whole algebra because an antisymmetric $3\times3$ matrix has three free entries above the diagonal. Two identities make the algebra computable:</p>
@@ -339,23 +339,23 @@ $$</p>
 <p>$$
 R(u,\theta)=
 \begin{pmatrix}
-\cos\theta+u_1^{2}(1-\cos\theta)& u_1u_2(1-\cos\theta)-u_3\sin\theta& u_1u_3(1-\cos\theta)+u_2\sin\theta\\[2pt]
-u_2u_1(1-\cos\theta)+u_3\sin\theta& \cos\theta+u_2^{2}(1-\cos\theta)& u_2u_3(1-\cos\theta)-u_1\sin\theta\\[2pt]
-u_3u_1(1-\cos\theta)-u_2\sin\theta& u_3u_2(1-\cos\theta)+u_1\sin\theta& \cos\theta+u_3^{2}(1-\cos\theta)
+\cos\theta+u_1^{2}(1-\cos\theta)&amp; u_1u_2(1-\cos\theta)-u_3\sin\theta&amp; u_1u_3(1-\cos\theta)+u_2\sin\theta\\[2pt]
+u_2u_1(1-\cos\theta)+u_3\sin\theta&amp; \cos\theta+u_2^{2}(1-\cos\theta)&amp; u_2u_3(1-\cos\theta)-u_1\sin\theta\\[2pt]
+u_3u_1(1-\cos\theta)-u_2\sin\theta&amp; u_3u_2(1-\cos\theta)+u_1\sin\theta&amp; \cos\theta+u_3^{2}(1-\cos\theta)
 \end{pmatrix}.
 $$</p>
 <p>Three special cases are worth writing because they are the matrices every other article in the corpus uses.</p>
 <p>The rotation about the first axis:</p>
 <p>$$
-R(e_1,\theta)=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix}.
+R(e_1,\theta)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;\cos\theta&amp;-\sin\theta\\0&amp;\sin\theta&amp;\cos\theta\end{pmatrix}.
 $$</p>
 <p>The rotation about the third axis, which is the circle of dimension two sitting inside dimension three:</p>
 <p>$$
-R(e_3,\theta)=\begin{pmatrix}\cos\theta&-\sin\theta&0\\\sin\theta&\cos\theta&0\\0&0&1\end{pmatrix}.
+R(e_3,\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta&amp;0\\\sin\theta&amp;\cos\theta&amp;0\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>The rotation by $\pi$ about $e_1$, which is the diagonal sign matrix of determinant one:</p>
 <p>$$
-R(e_1,\pi)=\begin{pmatrix}1&0&0\\0&-1&0\\0&0&-1\end{pmatrix}.
+R(e_1,\pi)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;-1&amp;0\\0&amp;0&amp;-1\end{pmatrix}.
 $$</p>
 <p>The three matrices $R(e_1,\theta)$, $R(e_2,\varphi)$, $R(e_3,\psi)$ are the elementary rotations, and the three angles are the Euler angles of the mechanics texts.</p>
 <h3 id="every-element-has-an-axis">Every Element Has an Axis</h3>
@@ -374,7 +374,7 @@ $$</p>
 <p><strong>Theorem.</strong> Two elements of $\mathrm{SO}(3)$ are conjugate if and only if they have the same trace, that is, the same angle.</p>
 <p><strong>Proof.</strong> The angle is conjugation-invariant, so equal angles give conjugate elements by rotating one axis onto the other. Conversely, if the traces agree then $\cos\theta=\cos\theta'$, and since both angles lie in $[0,\pi]$ they are equal.</p>
 <p>The class space is therefore the closed interval $[0,\pi]$: the identity at $\theta=0$, the generic class at each interior angle, and the half-turns at $\theta=\pi$ forming a single class, the class of the reflections-through-a-line of the plane, which in space are half-turns about a line. The class of a half-turn is the real projective plane, a single class with a nontrivial topology; the generic class is a sphere.</p>
-<h3 id="the-double-cover-by-math327">The Double Cover by $\mathrm{SU}(2)$</h3>
+<h3 id="the-double-cover-by-math328">The Double Cover by $\mathrm{SU}(2)$</h3>
 <p>The group $\mathrm{SU}(2)$ of <em>Quaternion Rotations and Reflections</em> is the unit sphere $S^{3}$, being $\{(a,b):|a|^{2}+|b|^{2}=1\}$, and it covers $\mathrm{SO}(3)$ twice. The covering is the adjoint action, and its explicit form is the quaternion formula of the next subsection. Three statements summarise the cover.</p>
 <p><strong>The kernel is $\{\pm\mathrm I_2\}$.</strong> Both signs give the same rotation, because the action is by conjugation and the two signs cancel.</p>
 <p><strong>The cover is onto.</strong> The image of $\mathrm{SU}(2)$ is a compact connected subgroup of $\mathrm{SO}(3)$ of dimension three, hence all of it; equivalently, the derivative is an isomorphism of Lie algebras and the exponential of $\mathrm{SU}(2)$ reaches every rotation.</p>
@@ -382,7 +382,7 @@ $$</p>
 <h3 id="the-quaternion-formula">The Quaternion Formula</h3>
 <p>Let $q=q_0+q_1i+q_2j+q_3k$ be a unit quaternion, identified with the matrix</p>
 <p>$$
-Q(q)=\begin{pmatrix}q_0+iq_1&q_2+iq_3\\-q_2+iq_3&q_0-iq_1\end{pmatrix}\in\mathrm{SU}(2),
+Q(q)=\begin{pmatrix}q_0+iq_1&amp;q_2+iq_3\\-q_2+iq_3&amp;q_0-iq_1\end{pmatrix}\in\mathrm{SU}(2),
 $$</p>
 <p>so that $q=\cos(\theta/2)+\sin(\theta/2)u$ with $u$ a unit imaginary quaternion. The rotation attached to $q$ is</p>
 <p>$$
@@ -391,9 +391,9 @@ $$</p>
 <p>and in the basis $(i,j,k)$ its matrix is</p>
 <p>$$
 R(q)=\begin{pmatrix}
-q_0^{2}+q_1^{2}-q_2^{2}-q_3^{2}& 2(q_1q_2-q_0q_3)& 2(q_1q_3+q_0q_2)\\
-2(q_1q_2+q_0q_3)& q_0^{2}-q_1^{2}+q_2^{2}-q_3^{2}& 2(q_2q_3-q_0q_1)\\
-2(q_1q_3-q_0q_2)& 2(q_2q_3+q_0q_1)& q_0^{2}-q_1^{2}-q_2^{2}+q_3^{2}
+q_0^{2}+q_1^{2}-q_2^{2}-q_3^{2}&amp; 2(q_1q_2-q_0q_3)&amp; 2(q_1q_3+q_0q_2)\\
+2(q_1q_2+q_0q_3)&amp; q_0^{2}-q_1^{2}+q_2^{2}-q_3^{2}&amp; 2(q_2q_3-q_0q_1)\\
+2(q_1q_3-q_0q_2)&amp; 2(q_2q_3+q_0q_1)&amp; q_0^{2}-q_1^{2}-q_2^{2}+q_3^{2}
 \end{pmatrix},
 $$</p>
 <p>which is the Rodrigues formula with $u=(q_1,q_2,q_3)/\sin(\theta/2)$ and $\cos(\theta/2)=q_0$. The verification confirms that $q$ and $-q$ give the same matrix to machine accuracy, and that the map is multiplicative on the quaternion product.</p>
@@ -403,13 +403,13 @@ $$</p>
 <p>$$
 R=R(e_3,\alpha)\,R(e_1,\beta)\,R(e_3,\gamma)
 =\begin{pmatrix}
-\cos\alpha&-\sin\alpha&0\\ \sin\alpha&\cos\alpha&0\\ 0&0&1
+\cos\alpha&amp;-\sin\alpha&amp;0\\ \sin\alpha&amp;\cos\alpha&amp;0\\ 0&amp;0&amp;1
 \end{pmatrix}
 \begin{pmatrix}
-1&0&0\\0&\cos\beta&-\sin\beta\\0&\sin\beta&\cos\beta
+1&amp;0&amp;0\\0&amp;\cos\beta&amp;-\sin\beta\\0&amp;\sin\beta&amp;\cos\beta
 \end{pmatrix}
 \begin{pmatrix}
-\cos\gamma&-\sin\gamma&0\\ \sin\gamma&\cos\gamma&0\\ 0&0&1
+\cos\gamma&amp;-\sin\gamma&amp;0\\ \sin\gamma&amp;\cos\gamma&amp;0\\ 0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>The product is the statement that the three one-parameter subgroups generate, which is the statement that the three hatted generators span the algebra, which is the statement $\dim\mathfrak{so}(3)=3$. The singular points are the gimbal lock of the mechanics literature, and they are exactly the points where two of the three axes of the factorisation coincide.</p>
@@ -429,8 +429,8 @@ $$</p>
 <p><strong>No two independent rotations.</strong> Every element fixes a line, so there is no element that rotates two planes by different angles. In dimension four such elements exist and are the generic case.</p>
 <p><strong>No split of the algebra.</strong> $\mathfrak{so}(3)$ is simple, so nothing splits. The first split is at $n=4$.</p>
 <p><strong>No nontrivial centre.</strong> The only central element is the identity, because $-I$ has determinant $-1$ in odd dimension and therefore is not in the group at all.</p>
-<h2 id="math377-the-exceptional-dimension">$\mathrm{SO}(4)$: The Exceptional Dimension</h2>
-<h3 id="the-hodge-star-and-the-split-of-math378">The Hodge Star and the Split of $\Lambda^{2}$</h3>
+<h2 id="math378-the-exceptional-dimension">$\mathrm{SO}(4)$: The Exceptional Dimension</h2>
+<h3 id="the-hodge-star-and-the-split-of-math379">The Hodge Star and the Split of $\Lambda^{2}$</h3>
 <p>The exterior square of $\mathbb{R}^{4}$ has dimension six, and it is identified with the algebra itself by the map</p>
 <p>$$
 \Lambda^{2}\mathbb{R}^{4}\longrightarrow\mathfrak{so}(4),
@@ -466,9 +466,9 @@ $$</p>
 <h3 id="the-two-ideals-and-the-two-isoclinic-families">The Two Ideals and the Two Isoclinic Families</h3>
 <p>The split of the algebra corresponds to a split of the group into two three-parameter families, the <strong>left</strong> and the <strong>right</strong> isoclinic rotations. The simplest way to see them is to write</p>
 <p>$$
-L(q)=\begin{pmatrix}q_0&-q_1&-q_2&-q_3\\ q_1&q_0&-q_3&q_2\\ q_2&q_3&q_0&-q_1\\ q_3&-q_2&q_1&q_0\end{pmatrix},
+L(q)=\begin{pmatrix}q_0&amp;-q_1&amp;-q_2&amp;-q_3\\ q_1&amp;q_0&amp;-q_3&amp;q_2\\ q_2&amp;q_3&amp;q_0&amp;-q_1\\ q_3&amp;-q_2&amp;q_1&amp;q_0\end{pmatrix},
 \qquad
-R(p)=\begin{pmatrix}p_0&-p_1&-p_2&-p_3\\ p_1&p_0&p_3&-p_2\\ p_2&-p_3&p_0&p_1\\ p_3&p_2&-p_1&p_0\end{pmatrix},
+R(p)=\begin{pmatrix}p_0&amp;-p_1&amp;-p_2&amp;-p_3\\ p_1&amp;p_0&amp;p_3&amp;-p_2\\ p_2&amp;-p_3&amp;p_0&amp;p_1\\ p_3&amp;p_2&amp;-p_1&amp;p_0\end{pmatrix},
 $$</p>
 <p>which are the matrices of multiplication on the left by $q$ and on the right by $p$ on the quaternions $\mathbb{R}^{4}=\mathbb{H}$, written in the basis $(1,i,j,k)$. The left matrices form a group isomorphic to $\mathrm{SU}(2)$, the right matrices another, they commute with each other, and</p>
 <p>$$
@@ -495,7 +495,7 @@ R(\theta)\oplus R(\varphi)
 =\exp\Bigl(\tfrac{\theta+\varphi}{2}X^{1}_{+}+\tfrac{\theta-\varphi}{2}X^{1}_{-}\Bigr),
 $$</p>
 <p>which shows that the two isoclinic "angles" are $(\theta+\varphi)/2$ and $(\theta-\varphi)/2$ and that the planes of the two factors are tied to the decomposition of the two-form.</p>
-<h3 id="the-four-dimensional-matrices-of-math451">The Four-Dimensional Matrices of $\mathrm{Spin}(4)$</h3>
+<h3 id="the-four-dimensional-matrices-of-math452">The Four-Dimensional Matrices of $\mathrm{Spin}(4)$</h3>
 <p>The universal cover is</p>
 <p>$$
 \mathrm{Spin}(4)=S^{3}\times S^{3}=\mathrm{SU}(2)\times\mathrm{SU}(2),
@@ -507,17 +507,17 @@ $$</p>
 <h3 id="the-normal-form-and-the-two-angles">The Normal Form and the Two Angles</h3>
 <p>Every element of $\mathrm{SO}(4)$ is orthogonally conjugate to a block-diagonal matrix with two rotation blocks, and the two angles can be chosen with $\pi\ge\theta_1\ge\theta_2\ge0$ up to the symmetry that exchanges them:</p>
 <p>$$
-A\ \sim\ \begin{pmatrix}R(\theta_1)&0\\0&R(\theta_2)\end{pmatrix},
+A\ \sim\ \begin{pmatrix}R(\theta_1)&amp;0\\0&amp;R(\theta_2)\end{pmatrix},
 \qquad
-R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}.
+R(\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix}.
 $$</p>
 <p>Writing the blocks explicitly at the example values $\theta_1=0.4$ and $\theta_2=0.9$:</p>
 <p>$$
 A=\begin{pmatrix}
-\cos0.4&-\sin0.4&0&0\\
-\sin0.4&\cos0.4&0&0\\
-0&0&\cos0.9&-\sin0.9\\
-0&0&\sin0.9&\cos0.9
+\cos0.4&amp;-\sin0.4&amp;0&amp;0\\
+\sin0.4&amp;\cos0.4&amp;0&amp;0\\
+0&amp;0&amp;\cos0.9&amp;-\sin0.9\\
+0&amp;0&amp;\sin0.9&amp;\cos0.9
 \end{pmatrix}.
 $$</p>
 <p>The two angles are the complete invariant of the class, up to the exchange. Three degenerations matter.</p>
@@ -528,7 +528,7 @@ $$</p>
 <h3 id="the-centre-the-torus-and-the-weyl-group">The Centre, the Torus and the Weyl Group</h3>
 <p>The maximal torus is the group of block-diagonal matrices with two independent rotation blocks,</p>
 <p>$$
-T^{2}=\Bigl\{\begin{pmatrix}R(\theta_1)&0\\0&R(\theta_2)\end{pmatrix}\Bigr\}\cong S^{1}\times S^{1},
+T^{2}=\Bigl\{\begin{pmatrix}R(\theta_1)&amp;0\\0&amp;R(\theta_2)\end{pmatrix}\Bigr\}\cong S^{1}\times S^{1},
 $$</p>
 <p>of dimension two, which is the rank $\lfloor 4/2\rfloor=2$. The normaliser of the torus is generated by the torus and by the signed permutations of the four coordinates with an even number of sign changes, and the Weyl group is</p>
 <p>$$
@@ -539,14 +539,14 @@ $$</p>
 <p>$$
 \chi\bigl(S^{2}\times S^{2}\bigr)=2\cdot2=4=|W(D_2)| .
 $$</p>
-<h3 id="the-complex-structures-on-math495-are-a-sphere">The Complex Structures on $\mathbb{R}^{4}$ Are a Sphere</h3>
+<h3 id="the-complex-structures-on-math496-are-a-sphere">The Complex Structures on $\mathbb{R}^{4}$ Are a Sphere</h3>
 <p>The rung contains $\mathrm U(2)$ with quotient a sphere, and the sphere has a name worth writing. In the basis $(1,i,j,k)$ of $\mathbb{H}$, the left multiplications by the three imaginary units are</p>
 <p>$$
-L(i)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L(i)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
-L(j)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+L(j)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
 \qquad
-L(k)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+L(k)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>each of which is an isoclinic rotation and a complex structure, $L(i)^{2}=L(j)^{2}=L(k)^{2}=-\mathrm I_{4}$. Every unit combination is again a complex structure:</p>
 <p>$$
@@ -568,7 +568,7 @@ $$</p>
 <p><strong>No single angle.</strong> The trace is one number and the class needs two.</p>
 <p><strong>No "every class meets the diagonal form uniquely".</strong> The exchange of the two angles gives the same class twice, which is the Weyl group acting.</p>
 <p><strong>No rigidity of the class space.</strong> The class space is the closed triangle $\{(\theta_1,\theta_2):\pi\ge\theta_1\ge\theta_2\ge0\}$ modulo the exchange on the diagonal, a two-dimensional orbifold, in contrast with the interval at $n=3$.</p>
-<h2 id="math511-the-return-of-the-axis">$\mathrm{SO}(5)$: The Return of the Axis</h2>
+<h2 id="math512-the-return-of-the-axis">$\mathrm{SO}(5)$: The Return of the Axis</h2>
 <h3 id="the-normal-form-and-the-fixed-axis">The Normal Form and the Fixed Axis</h3>
 <p>At $n=5$ the dimension is $10$ and the rank is $2$, so the general element carries two angles and one fixed axis:</p>
 <p>$$
@@ -607,7 +607,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>Both are isoclinic rotations of $\mathbb{R}^{4}$, with equal plane angles, and the identity block sits on opposite sides; so no element of $\mathrm{SO}(4)$ conjugates one to the other. At $n=5$ the corresponding statement is empty, because there is no pair of invariant three-spaces to carry the two labels.</p>
-<h3 id="the-algebra-is-simple-again-and-it-is-math558">The Algebra Is Simple Again, and It Is $\mathfrak{sp}(2)$</h3>
+<h3 id="the-algebra-is-simple-again-and-it-is-math559">The Algebra Is Simple Again, and It Is $\mathfrak{sp}(2)$</h3>
 <p>The algebra does not split, and it does not stay merely simple: it acquires a second name. Besides $\mathfrak{so}(5)$, it is $\mathfrak{sp}(2)$, the compact symplectic algebra of rank two, by $B_2\cong C_2$. Both have eight roots and the Gram matrices of the two root systems agree, which the verification already confirms for the pair.</p>
 <p>$$
 \mathfrak{so}(5)\cong\mathfrak{sp}(2),
@@ -654,7 +654,7 @@ $$</p>
 <p><strong>No Pfaffian.</strong> The algebra is odd-dimensional, and the polynomial of even size has no home here.</p>
 <p><strong>No split of the algebra.</strong> Simplicity has returned at $n=5$ and does not leave again; the split at four is the only one on the ladder.</p>
 <p><strong>No distinction between the isoclinic families.</strong> The two families of dimension four are one family here, and that is a loss of structure rather than a gain.</p>
-<h2 id="math603-the-last-accidental-isomorphism">$\mathrm{SO}(6)$: The Last Accidental Isomorphism</h2>
+<h2 id="math604-the-last-accidental-isomorphism">$\mathrm{SO}(6)$: The Last Accidental Isomorphism</h2>
 <h3 id="the-normal-form-and-the-three-angles">The Normal Form and the Three Angles</h3>
 <p>At $n=6$ the dimension is $15$ and the rank is $3$, and the element is three independent rotations:</p>
 <p>$$
@@ -663,7 +663,7 @@ A\ \sim\ \operatorname{diag}\bigl(R(\theta_1),R(\theta_2),R(\theta_3)\bigr),
 \pi\ge\theta_1\ge\theta_2\ge\theta_3\ge0 .
 $$</p>
 <p>There is no fixed axis, because the dimension is even. The Weyl group is $W(D_3)$, of order $2^{3-1}\cdot3!=24$, acting by permutations of the three angles together with an even number of sign changes. It is isomorphic to $S_4$, and the class space is the tetrahedral chamber modulo that group.</p>
-<h3 id="the-isomorphism-math611">The Isomorphism $\mathfrak{so}(6)\cong\mathfrak{su}(4)$</h3>
+<h3 id="the-isomorphism-math612">The Isomorphism $\mathfrak{so}(6)\cong\mathfrak{su}(4)$</h3>
 <p>The root systems $D_3$ and $A_3$ both have twelve roots, and the verification matches them, Gram matrix against Gram matrix. The consequence at the level of groups is sharper than the algebra statement, and it is the one fact that ties this rung to the unitary ladder:</p>
 <p>$$
 \mathrm{Spin}(6)=\mathrm{SU}(4),
@@ -713,7 +713,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="math659-inside-math660-and-the-quotient-math661">$\mathrm{U}(3)$ inside $\mathrm{SO}(6)$ and the Quotient $\mathbb{CP}^{3}$</h3>
+<h3 id="math660-inside-math661-and-the-quotient-math662">$\mathrm{U}(3)$ inside $\mathrm{SO}(6)$ and the Quotient $\mathbb{CP}^{3}$</h3>
 <p>The rung contains a unitary group in the standard way. Let $J=\operatorname{diag}(J_2,J_2,J_2)$ be the complex structure of $\mathbb{C}^{3}$ read on $\mathbb{R}^{6}$; then</p>
 <p>$$
 \mathfrak{u}(3)=\{X\in\mathfrak{so}(6):XJ=JX\},
@@ -732,7 +732,7 @@ $$</p>
 <p><strong>No trace classification.</strong> Three angles and one trace.</p>
 <p><strong>No content in the Pfaffian.</strong> The polynomial exists, because the dimension is even, but it is one invariant on a fifteen-dimensional algebra and it separates nothing of the class data.</p>
 <p><strong>No purely orthogonal answer.</strong> The isomorphism with $\mathfrak{su}(4)$ means that a question asked in orthogonal language can have an answer that only the unitary language makes visible, and the reader has to know which language the answer is in.</p>
-<h2 id="math676-the-first-non-simply-laced-rung">$\mathrm{SO}(7)$: The First Non-Simply-Laced Rung</h2>
+<h2 id="math677-the-first-non-simply-laced-rung">$\mathrm{SO}(7)$: The First Non-Simply-Laced Rung</h2>
 <h3 id="the-normal-form">The Normal Form</h3>
 <p>At $n=7$ the dimension is $21$ and the rank is $3$. The element is three rotations plus a fixed axis:</p>
 <p>$$
@@ -784,7 +784,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="math712-inside-math713">$G_2$ inside $\mathrm{SO}(7)$</h3>
+<h3 id="math713-inside-math714">$G_2$ inside $\mathrm{SO}(7)$</h3>
 <p>There is an exceptional group inside the rung, and it is the stabiliser of a three-form. On $\mathbb{R}^{7}$ with the basis $e_1,\dots,e_7$ put</p>
 <p>$$
 \varphi=e_{123}+e_{145}+e_{167}+e_{246}-e_{257}-e_{347}-e_{356},
@@ -805,7 +805,7 @@ S^{6}=G_{2}/\mathrm{SU}(3),
 \dim=14-8=6,
 $$</p>
 <p>and the same count appears as $21-14=7$ for $\mathrm{SO}(7)/G_{2}=S^{6}$. The rung carries the smallest of the exceptional groups, and it carries it as a stabiliser, which is the sense in which $G_2$ belongs to the orthogonal ladder rather than beside it.</p>
-<h3 id="the-trap-math734-is-not-math735">The Trap: $\mathfrak{so}(7)$ Is Not $\mathfrak{sp}(3)$</h3>
+<h3 id="the-trap-math735-is-not-math736">The Trap: $\mathfrak{so}(7)$ Is Not $\mathfrak{sp}(3)$</h3>
 <p>Two algebras of dimension $21$, rank $3$ and eighteen roots exist, and they are not isomorphic. The counting invariants agree, so a proof of non-isomorphism has to use something else, and two such invariants are at hand.</p>
 <p><strong>The root lattice.</strong> The lattice spanned by the roots of $B_3$ is the cubic lattice $\mathbb{Z}^{3}$, of index $1$ in $\mathbb{Z}^{3}$. The lattice spanned by the roots of $C_3$ is the sublattice of integer vectors of even coordinate sum, of index $2$. The verification computes both indices as the gcd of the $3\times3$ minors of the generating sets and finds $1$ against $2$.</p>
 <p><strong>The centre.</strong> $\mathrm{SO}(7)$ has trivial centre, since $-\mathrm I$ has determinant $-1$; $\mathrm{Sp}(3)$ has centre $\{\pm\mathrm I\}$. A group isomorphism would carry one centre onto the other.</p>
@@ -816,7 +816,7 @@ $$</p>
 <p><strong>No unitary partner at all.</strong> There is no $m$ with $m^{2}-1=21$, because $22$ is not a square. The rung is orthogonal only.</p>
 <p><strong>No Pfaffian.</strong> Odd dimension, as at $n=1,3,5$.</p>
 <p><strong>No complex structure from the star.</strong> The star sends $\Lambda^{3}$ to $\Lambda^{4}$, both of dimension $35$, and the composite is the identity, which the verification confirms with defect $0$. A complex structure needs an endomorphism, and the star is not one at an odd rung.</p>
-<h2 id="math768-triality">$\mathrm{SO}(8)$: Triality</h2>
+<h2 id="math769-triality">$\mathrm{SO}(8)$: Triality</h2>
 <h3 id="the-normal-form_1">The Normal Form</h3>
 <p>At $n=8$ the dimension is $28$ and the rank is $4$, with four independent angles:</p>
 <p>$$
@@ -825,7 +825,7 @@ A\ \sim\ \operatorname{diag}\bigl(R(\theta_1),R(\theta_2),R(\theta_3),R(\theta_4
 \pi\ge\theta_1\ge\theta_2\ge\theta_3\ge\theta_4\ge0 .
 $$</p>
 <p>The Weyl group is $W(D_4)$ of order $2^{4-1}\cdot4!=192$, the roots number $24$, and the class space is the four-dimensional chamber modulo the permutations with an even number of sign changes.</p>
-<h3 id="the-four-form-and-the-split-of-math776">The Four-Form and the Split of $\Lambda^{4}$</h3>
+<h3 id="the-four-form-and-the-split-of-math777">The Four-Form and the Split of $\Lambda^{4}$</h3>
 <p>The middle degree is four, so the star is an involution of $\Lambda^{4}\mathbb{R}^{8}$, of dimension $70$:</p>
 <p>$$
 \star^{2}=+1,
@@ -851,7 +851,7 @@ $$</p>
 $$</p>
 <p>and no automorphism of $\mathrm{SO}(8)$ carries the vector representation to a half-spinor. The two halves $8_s$ and $8_c$ are exchanged, the vector is fixed, and the third of the three permutations is lost in the quotient.</p>
 <p><strong>What the reader should take from it.</strong> A statement about $\mathrm{SO}(8)$ is not a statement about its spin cover, because the cover has six times as many outer automorphisms. The rung is the only one on the ladder where the two automorphism groups differ in this way.</p>
-<h3 id="no-unitary-partner-and-the-quotient-by-math810">No Unitary Partner, and the Quotient by $\mathrm{U}(4)$</h3>
+<h3 id="no-unitary-partner-and-the-quotient-by-math811">No Unitary Partner, and the Quotient by $\mathrm{U}(4)$</h3>
 <p>There is no $m$ with $m^{2}-1=28$, because $29$ is not a square. The rung is orthogonal only, as at $n=7$. It does contain a unitary group, in the standard way:</p>
 <p>$$
 \mathrm{U}(4)\subset\mathrm{SO}(8),
@@ -867,7 +867,7 @@ $$</p>
 <p><strong>No single spinor.</strong> Three inequivalent eights, so "the" spinor of the rung is a choice among three, and triality is the statement that no choice is canonical.</p>
 <p><strong>No unitary partner.</strong> $29$ is not a square.</p>
 <p><strong>No order-three symmetry anywhere else.</strong> $D_4$ is the only diagram on the ladder whose symmetry group has order three, and the symmetry exists as an automorphism of the group rather than as conjugation.</p>
-<h2 id="math833-the-general-rung">$\mathrm{SO}(n)$: The General Rung</h2>
+<h2 id="math834-the-general-rung">$\mathrm{SO}(n)$: The General Rung</h2>
 <h3 id="rank-torus-and-normal-form">Rank, Torus and Normal Form</h3>
 <p>The <strong>rank</strong> is the dimension of a maximal torus, and it is the number of independent blocks in the block-diagonal normal form:</p>
 <p>$$
@@ -885,7 +885,7 @@ A\ \sim\
 \qquad\bigl(n=2r+1\bigr),
 $$</p>
 <p>with $R(\theta)$ the rotation block of dimension two and $\pi\ge\theta_1\ge\dots\ge\theta_r\ge0$. The list of angles is the complete invariant of the orthogonal conjugacy class, up to the exchange of equal angles.</p>
-<p><strong>Proof.</strong> The matrix is normal, so it is unitarily diagonalisable, and orthogonality puts every eigenvalue on the unit circle. The real eigenvalues are $\pm1$. Each conjugate pair $e^{\pm i\theta}$ with $0<\theta<\pi$ spans a real two-plane on which $A$ acts as $R(\theta)$; the eigenvalue $+1$ contributes a line fixed by $A$; the eigenvalue $-1$ occurs with even multiplicity, since $\det A=1$ and every conjugate pair contributes a positive factor, so the $-1$ eigenvalues pair up into rotation blocks with angle $\pi$, which are the $R(\pi)$ blocks of the list. Grouping the angles and ordering them gives the displayed form. The angles are conjugation-invariant, and two matrices with the same list are conjugate because each is conjugate to the same block-diagonal matrix.</p>
+<p><strong>Proof.</strong> The matrix is normal, so it is unitarily diagonalisable, and orthogonality puts every eigenvalue on the unit circle. The real eigenvalues are $\pm1$. Each conjugate pair $e^{\pm i\theta}$ with $0&lt;\theta&lt;\pi$ spans a real two-plane on which $A$ acts as $R(\theta)$; the eigenvalue $+1$ contributes a line fixed by $A$; the eigenvalue $-1$ occurs with even multiplicity, since $\det A=1$ and every conjugate pair contributes a positive factor, so the $-1$ eigenvalues pair up into rotation blocks with angle $\pi$, which are the $R(\pi)$ blocks of the list. Grouping the angles and ordering them gives the displayed form. The angles are conjugation-invariant, and two matrices with the same list are conjugate because each is conjugate to the same block-diagonal matrix.</p>
 <p>The maximal torus is obtained by letting all the angles vary, and it has dimension $r$:</p>
 <p>$$
 T^{r}=\bigl\{R(\theta_1)\oplus\dots\oplus R(\theta_r)\bigr\}\cong (S^{1})^{r}
@@ -894,25 +894,25 @@ $$</p>
 <p>with a last coordinate fixed to $1$ in odd dimension. In dimension one the torus is trivial, in dimension two it is the whole group, in dimension three one circle of rotations about a fixed axis, and in dimension four a two-torus. The only rung where the torus is the whole group is $n=2$.</p>
 <p><strong>Explicit matrices at $n=3$ and $n=4$, in the normal form.</strong> At $n=3$ with $\theta_1=0.4$:</p>
 <p>$$
-A_3=\begin{pmatrix}\cos0.4&-\sin0.4&0\\ \sin0.4&\cos0.4&0\\ 0&0&1\end{pmatrix}.
+A_3=\begin{pmatrix}\cos0.4&amp;-\sin0.4&amp;0\\ \sin0.4&amp;\cos0.4&amp;0\\ 0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>At $n=4$ with $\theta_1=0.4$, $\theta_2=1.2$:</p>
 <p>$$
 A_4=\begin{pmatrix}
-\cos0.4&-\sin0.4&0&0\\
-\sin0.4&\cos0.4&0&0\\
-0&0&\cos1.2&-\sin1.2\\
-0&0&\sin1.2&\cos1.2
+\cos0.4&amp;-\sin0.4&amp;0&amp;0\\
+\sin0.4&amp;\cos0.4&amp;0&amp;0\\
+0&amp;0&amp;\cos1.2&amp;-\sin1.2\\
+0&amp;0&amp;\sin1.2&amp;\cos1.2
 \end{pmatrix}.
 $$</p>
 <p>At $n=5$ with the same two angles and a trailing one:</p>
 <p>$$
 A_5=\begin{pmatrix}
-\cos0.4&-\sin0.4&0&0&0\\
-\sin0.4&\cos0.4&0&0&0\\
-0&0&\cos1.2&-\sin1.2&0\\
-0&0&\sin1.2&\cos1.2&0\\
-0&0&0&0&1
+\cos0.4&amp;-\sin0.4&amp;0&amp;0&amp;0\\
+\sin0.4&amp;\cos0.4&amp;0&amp;0&amp;0\\
+0&amp;0&amp;\cos1.2&amp;-\sin1.2&amp;0\\
+0&amp;0&amp;\sin1.2&amp;\cos1.2&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>The three matrices are the same object with a $1$ appended when $n$ is odd, and that appended $1$ is the fixed line which the axis theorem of dimension three produces for free at $n=3$.</p>
@@ -946,7 +946,7 @@ $$</p>
 <p>Two elements of $\mathrm{SO}(n)$ can be conjugate inside $\mathrm{O}(n)$ without being conjugate inside $\mathrm{SO}(n)$, because the conjugating isometry might be orientation-reversing. The criterion is exact and it is the central structural theorem of the ladder.</p>
 <p><strong>Theorem.</strong> Let $A,B\in\mathrm{SO}(n)$ be conjugate in $\mathrm{O}(n)$. Then they are conjugate in $\mathrm{SO}(n)$ if and only if $A$ has an eigenvalue $+1$ or an eigenvalue $-1$.</p>
 <p><strong>Proof of the easy direction.</strong> Suppose $gAg^{-1}=B$ with $\det g=-1$ and suppose $A$ has an eigenvalue $\varepsilon=\pm1$ with eigenvector $u$. The reflection $h$ in the line $\mathbb{R}u$, written $h=\mathrm I-2uu^{\mathsf T}$, commutes with $A$, because $A$ preserves the line and acts on it as $\pm1$. Then $gh$ also conjugates $A$ to $B$, and $\det(gh)=(-1)(-1)=1$.</p>
-<p><strong>Proof of the hard direction.</strong> Suppose two conjugators exist, $g$ with determinant $+1$ and $h$ with determinant $-1$. Then $c=g^{-1}h$ commutes with $A$ and has determinant $-1$. Suppose, for contradiction, that $A$ has no eigenvalue $\pm1$. Then $n$ is even and the spectrum consists of pairs $e^{\pm i\theta_{j}}$ with $0<\theta_{j}<\pi$. Put $J=p(A)$ where $p$ is the polynomial with $p(e^{\pm i\theta_{j}})=\pm i$; the matrix $J$ is real, satisfies $J^{2}=-\mathrm I$, and commutes with $A$. Since $c$ commutes with $A$, it commutes with $J$, so it is complex-linear for the complex structure $J$, and on each $J$-stable two-plane its real determinant is the squared modulus of a nonzero complex number, hence positive. The product over the planes is then $+1$, contradicting $\det c=-1$. So $A$ has an eigenvalue $\pm1$.</p>
+<p><strong>Proof of the hard direction.</strong> Suppose two conjugators exist, $g$ with determinant $+1$ and $h$ with determinant $-1$. Then $c=g^{-1}h$ commutes with $A$ and has determinant $-1$. Suppose, for contradiction, that $A$ has no eigenvalue $\pm1$. Then $n$ is even and the spectrum consists of pairs $e^{\pm i\theta_{j}}$ with $0&lt;\theta_{j}&lt;\pi$. Put $J=p(A)$ where $p$ is the polynomial with $p(e^{\pm i\theta_{j}})=\pm i$; the matrix $J$ is real, satisfies $J^{2}=-\mathrm I$, and commutes with $A$. Since $c$ commutes with $A$, it commutes with $J$, so it is complex-linear for the complex structure $J$, and on each $J$-stable two-plane its real determinant is the squared modulus of a nonzero complex number, hence positive. The product over the planes is then $+1$, contradicting $\det c=-1$. So $A$ has an eigenvalue $\pm1$.</p>
 <p><strong>Corollary (the counting consequence).</strong> The $\mathrm{O}(n)$-class of $A$ splits into two $\mathrm{SO}(n)$-classes exactly when the spectrum of $A$ avoids $\pm1$. In dimension two the class of $R(\theta)$ splits for every $\theta\notin\{0,\pi\}$, so $R(\theta)$ and $R(-\theta)$ are not conjugate in $\mathrm{SO}(2)$ even though they are conjugate by a reflection; this is the statement that the circle has two orientations. In dimension three no class splits, because every element is an axis rotation and therefore has eigenvalue $1$. In dimension four the classes with one angle zero do not split, while the classes with both angles in $(0,\pi)$ do: the verification finds that a generic element conjugated by a determinant-minus-one isometry is never $\mathrm{SO}(4)$-conjugate to the original ($0$ of $100$), while the corresponding count with an eigenvalue $1$ is $100$ of $100$.</p>
 <p><strong>A table at $n=4$.</strong> Three pairs, with the answer of the criterion:</p>
 <div class="table-scroll"><table>
@@ -983,7 +983,7 @@ $$</p>
 <h3 id="the-involutions">The Involutions</h3>
 <p>An involution is an element with $A^{2}=\mathrm I$. Its eigenvalues are $\pm1$, its fixed space is $\ker(A-\mathrm I)$, and the orthogonal complement is $\ker(A+\mathrm I)$, on which $A$ acts as $-\mathrm I$, so the dimension of the second space is even (it is a sum of rotation blocks with angle $\pi$).</p>
 <p><strong>Proposition.</strong> The number of conjugacy classes of involutions in $\mathrm{SO}(n)$ is $\lfloor n/2\rfloor+1$, indexed by the dimension $d$ of the fixed space, with $d\equiv n\pmod 2$.</p>
-<p><strong>Proof.</strong> An involution is determined up to orthogonal conjugacy by $d=\dim\ker(A-\mathrm I)$, with $n-d$ even. By the conjugacy theorem no class splits, because every involution has eigenvalue $1$ (when $d>0$) or eigenvalue $-1$ (when $d<n$), and the two extreme cases $d=n$ and $d=0$ are the identity and $-\mathrm I$, the second existing only for even $n$. The allowed values are $d=n,n-2,\dots$, which is $\lfloor n/2\rfloor+1$ values.</p>
+<p><strong>Proof.</strong> An involution is determined up to orthogonal conjugacy by $d=\dim\ker(A-\mathrm I)$, with $n-d$ even. By the conjugacy theorem no class splits, because every involution has eigenvalue $1$ (when $d&gt;0$) or eigenvalue $-1$ (when $d&lt;n$), and the two extreme cases $d=n$ and $d=0$ are the identity and $-\mathrm I$, the second existing only for even $n$. The allowed values are $d=n,n-2,\dots$, which is $\lfloor n/2\rfloor+1$ values.</p>
 <p><strong>The explicit matrices.</strong> The representatives are the diagonal matrices with $d$ entries $+1$ and $n-d$ entries $-1$, all of determinant $(-1)^{n-d}=1$:</p>
 <p>$$
 A_{n,d}=\operatorname{diag}(\underbrace{1,\dots,1}_{d},\underbrace{-1,\dots,-1}_{n-d}).
@@ -1011,7 +1011,7 @@ $$</p>
 $$</p>
 <p>At $r=2$ the polynomial is written out:</p>
 <p>$$
-\operatorname{Pf}\begin{pmatrix}0&k_{12}&k_{13}&k_{14}\\ -k_{12}&0&k_{23}&k_{24}\\ -k_{13}&-k_{23}&0&k_{34}\\ -k_{14}&-k_{24}&-k_{34}&0\end{pmatrix}
+\operatorname{Pf}\begin{pmatrix}0&amp;k_{12}&amp;k_{13}&amp;k_{14}\\ -k_{12}&amp;0&amp;k_{23}&amp;k_{24}\\ -k_{13}&amp;-k_{23}&amp;0&amp;k_{34}\\ -k_{14}&amp;-k_{24}&amp;-k_{34}&amp;0\end{pmatrix}
 =k_{12}k_{34}-k_{13}k_{24}+k_{14}k_{23}.
 $$</p>
 <p>The verification computes the Pfaffian by the recursive expansion and checks the identity $\det K=\operatorname{Pf}(K)^{2}$ at sizes two, four and six, with residuals at $10^{-15}$.</p>
@@ -1210,7 +1210,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-correspondences">The Correspondences</h2>
-<h3 id="the-chains-math1221">The Chains $1\to2\to3\to4\to n$</h3>
+<h3 id="the-chains-math1222">The Chains $1\to2\to3\to4\to n$</h3>
 <p>Five chains run through the ladder, and each chain is a single phenomenon seen at five sizes.</p>
 <p><strong>The chain of the axis.</strong> At $n=1$ there is nothing to rotate. At $n=2$ the rotation has no invariant line, and the angle alone is the element. At $n=3$ the odd degree of the characteristic polynomial forces an axis, and the element becomes a pair (axis, angle). At $n=4$ the axis can disappear: the element $\operatorname{diag}(R(\theta),R(\pi))$ fixes only the origin. At general $n$ the fixed space has dimension $0$, $1$ or more, with the parity of $n$, and the axis theorem is the special case $n$ odd together with the absence of eigenvalue $-1$.</p>
 <p><strong>The chain of the centre.</strong> At $n=1$ the group is trivial. At $n=2$ everything is central. At $n=3$ the centre collapses to the identity because $-\mathrm I$ has the wrong determinant. At $n=4$ the centre regains $-\mathrm I$ and nothing else. For general $n$ the centre is determined by the parity of $n$ through $\det(-\mathrm I)=(-1)^{n}$.</p>
@@ -1288,7 +1288,7 @@ $$</p>
 <p>The verification confirms the nullspace dimension as $n^{2}$, namely $4$, $9$ and $16$ at $n=2,3,4$, and the quotient dimensions $2$, $6$ and $12$. So each unitary rung sits inside an orthogonal rung two steps up, and the quotient is the space of orthogonal complex structures on $\mathbb{R}^{2n}$.</p>
 <p><strong>The four small rungs, spelled out.</strong> These are the correspondences the ladder tends to leave implicit, and each is one line of the identification above read at its own size.</p>
 <p><strong>$n=1$.</strong> Both groups are trivial, and the correspondence is empty. It is recorded because the ladder needs a base case that is not vacuous: the empty product of reflections, the zero algebra and the constant exponential are the same statement in both ladders.</p>
-<p><strong>$n=2$.</strong> The circle is $\mathrm U(1)$, and it is also the maximal torus of $\mathrm{SU}(2)$: the smallest nontrivial rung of this ladder is the Cartan subgroup of the smallest nontrivial rung of the unitary ladder. Two inclusions follow. First, $\mathrm U(2)=(\mathrm{SU}(2)\times\mathrm U(1))/\mathbb{Z}_{2}$, so the circle is half of the maximal compact group of $\mathrm{GL}_{2}(\mathbb{C})$. Second, the chain $\mathrm{SO}(2)\subset\mathrm U(2)\subset\mathrm{SO}(4)$ has dimensions $1<4<6$, the smallest case of the nesting $\mathrm U(n)\subset\mathrm{SO}(2n)$.</p>
+<p><strong>$n=2$.</strong> The circle is $\mathrm U(1)$, and it is also the maximal torus of $\mathrm{SU}(2)$: the smallest nontrivial rung of this ladder is the Cartan subgroup of the smallest nontrivial rung of the unitary ladder. Two inclusions follow. First, $\mathrm U(2)=(\mathrm{SU}(2)\times\mathrm U(1))/\mathbb{Z}_{2}$, so the circle is half of the maximal compact group of $\mathrm{GL}_{2}(\mathbb{C})$. Second, the chain $\mathrm{SO}(2)\subset\mathrm U(2)\subset\mathrm{SO}(4)$ has dimensions $1&lt;4&lt;6$, the smallest case of the nesting $\mathrm U(n)\subset\mathrm{SO}(2n)$.</p>
 <p><strong>$n=3$.</strong> $\mathrm{SO}(3)=\mathrm{PU}(2)=\mathrm{SU}(2)/\{\pm\mathrm I\}$, so the rung is the projective unitary group of the plane, and the double cover of the ladder is the quotient map of the unitary ladder. There is a second inclusion, in the other direction: $\mathrm{SO}(3)\subset\mathrm{SU}(3)$, by reading $\mathbb{R}^{3}$ as the real part of $\mathbb{C}^{3}$. The quotient has dimension $8-3=5$, and it is the space of complex structures on $\mathbb{C}^{3}$ that reverse the real structure.</p>
 <p><strong>$n=4$.</strong> The rung contains $\mathrm U(2)$ with quotient a sphere, and this is the four-dimensional face of the general nesting:</p>
 <p>$$
@@ -1305,7 +1305,7 @@ a^{2}+b^{2}+c^{2}=1,
 J(a,b,c)^{2}=-\mathrm I_{4}.
 $$</p>
 <p>The verification confirms $J^{2}=-\mathrm I$ and $JJ^{\mathsf T}=\mathrm I$ on one hundred random unit triples. So the sphere of complex structures is the sphere of unit imaginary quaternions, and the identification is the statement $\mathrm{SO}(4)/\mathrm{U}(2)=S^{2}=\mathrm{SU}(2)/\mathrm U(1)$. Also $\mathrm U(2)=(\mathrm{SU}(2)\times\mathrm U(1))/\mathbb{Z}_{2}$, so the rung, its cover and the maximal compact of $\mathrm{GL}_{2}(\mathbb{C})$ share the same $\mathrm U(2)$.</p>
-<p><strong>$n=5$ and $n=6$.</strong> The partner changes character at five. At $n=5$ the algebra isomorphism $\mathfrak{so}(5)\cong\mathfrak{sp}(2)$ gives a symplectic partner, not a unitary one: $\mathrm{Spin}(5)=\mathrm{Sp}(2)=\mathrm{USp}(4)$, and $\mathrm{USp}(4)\subset\mathrm{SU}(4)$ is a strict inclusion of dimensions $10<15$. At $n=6$ the partner becomes unitary again and exact: $\mathrm{Spin}(6)=\mathrm{SU}(4)$. So the ladder has one symplectic rung, and it sits between the two unitary ones.</p>
+<p><strong>$n=5$ and $n=6$.</strong> The partner changes character at five. At $n=5$ the algebra isomorphism $\mathfrak{so}(5)\cong\mathfrak{sp}(2)$ gives a symplectic partner, not a unitary one: $\mathrm{Spin}(5)=\mathrm{Sp}(2)=\mathrm{USp}(4)$, and $\mathrm{USp}(4)\subset\mathrm{SU}(4)$ is a strict inclusion of dimensions $10&lt;15$. At $n=6$ the partner becomes unitary again and exact: $\mathrm{Spin}(6)=\mathrm{SU}(4)$. So the ladder has one symplectic rung, and it sits between the two unitary ones.</p>
 <p><strong>$n=7$ and $n=8$.</strong> No partner. The equation $m^{2}-1=21$ has no integer solution, and neither has $m^{2}-1=28$. The two rungs are orthogonal only, and the unitary ladder continues beside them without meeting them.</p>
 <h3 id="the-clifford-and-spin-ladder">The Clifford and Spin Ladder</h3>
 <p>The double cover is the visible part of a ladder that continues inside the Clifford algebras of <em>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</em>.</p>

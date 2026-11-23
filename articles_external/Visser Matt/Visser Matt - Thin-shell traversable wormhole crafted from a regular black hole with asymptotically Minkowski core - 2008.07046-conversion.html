@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thin-shell traversable wormhole crafted from a regular black hole with asymptotically Minkowski core — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Thin-shell traversable wormhole crafted from a regular black hole with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="thin-shell-traversable-wormhole-crafted-from-a-regular-black-hole-with-asymptotically-minkowski-core"><strong>Thin-shell traversable wormhole crafted from a regular black hole with asymptotically Minkowski core</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2008.07046v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Francisco S. N. Lobo, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Thin-shell traversable wormhole crafted from a regular black hole with asymptotically Minkowski core - 2008.07046-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Thin-shell traversable wormhole crafted from a regular black hole with asymptotically Minkowski core - 2008.07046.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Thin-shell traversable wormhole crafted from a regular black hole with asymptotically Minkowski core - 2008.07046.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A regular black hole with a Minkowski core is used as a template. The authors cut two copies and paste them together, making a thin-shell wormhole. They compute the surface stress-energy at the throat. They then analyse stability against radial perturbations, using contour plots over the parameter space. The result is a black hole mimicker built from a known solution.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-template">The template</h3>
+<p>"Recently, a novel model for a regular black hole was advocated which possesses an asymptotically Minkowski core implemented via an exponential suppression (in the core region) of the Misner–Sharp quasi–local mass."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"Using this regular black hole as a template, we shall construct a spherically symmetric thin-shell traversable wormhole using the 'cut-and-paste' technique, thereby constructing yet another black hole mimicker."</p>
+<h3 id="the-surface-matter">The surface matter</h3>
+<p>"The surface stress-energy at the wormhole throat is calculated"</p>
+<h3 id="the-result">The result</h3>
+<p>"In this work we have used a novel regular black hole model based on exponential mass suppression to construct a thin-shell wormhole using the cut-and-paste technique."</p>
+<h3 id="the-stability-analysis">The stability analysis</h3>
+<p>"Stability analysis for the specific asymmetry $\max\{a_+,a_-\}=\beta\min\{a_+,a_-\}=\beta a_*$, with $\beta&gt;1$, $m_+=m_-=m$"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-cut-and-paste">1. Cut and paste</h3>
+<p><strong>The idea.</strong> A new solution is built by joining two copies of an old one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain a construction that produces new stress-energy from old geometry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of constructions.</p>
+<p><strong>What stands in the way.</strong> The shell is infinitely thin. Ranked first, because the technique is reusable.</p>
+<h3 id="2-mimickers">2. Mimickers</h3>
+<p><strong>The idea.</strong> An object can look like a black hole from outside without being one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain a whole class of horizonless objects with the same exterior.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of mimickers.</p>
+<p><strong>What stands in the way.</strong> The interior differs only inside the shell. Ranked second.</p>
+<h3 id="3-stability-is-a-parameter-question">3. Stability is a parameter question</h3>
+<p><strong>The idea.</strong> Stability depends on where in parameter space the shell sits.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> argues stability from thermodynamics alone. Here stability needs a dynamical analysis.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of stability.</p>
+<p><strong>What stands in the way.</strong> The analysis is linear. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

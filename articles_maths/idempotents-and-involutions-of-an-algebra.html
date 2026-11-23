@@ -159,7 +159,7 @@ $$</p>
 <h3 id="examples_1">Examples</h3>
 <p><strong>Example (the symplectic matrix algebra).</strong> Let $A=M_2(F)$ with the symplectic involution</p>
 <p>$$
-X^*=JX^{\mathsf T}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+X^*=JX^{\mathsf T}J^{-1}, \qquad J=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}.
 $$</p>
 <p>For $e=E_{11}$ one has $e^*=E_{22}=1-e$, so $e$ is complementary. The image of $e$ is the first coordinate line, the image of $e^*$ is the second, and the involution exchanges the two; the element $2e-1=\operatorname{diag}(1,-1)$ is anti-Hermitian and squares to $1$. The same algebra with the transpose involution has $E_{11}^*=E_{11}$, so the two involutions put the same idempotent in different classes.</p>
 <p><strong>Example (the split algebra).</strong> In $A=F\times F$ with the exchange involution, $e=(1,0)$ satisfies $e^*=(0,1)=1-e$. The element $2e-1=(1,-1)$ is anti-Hermitian and squares to $(1,1)=1$. This is the commutative model of the complementary case.</p>
@@ -185,20 +185,20 @@ X^*=DX^{\mathsf T}D^{-1}, \qquad D=\operatorname{diag}(1,-1),
 $$</p>
 <p>and let</p>
 <p>$$
-e=\begin{pmatrix}1&0\\1&0\end{pmatrix}, \qquad e^2=e .
+e=\begin{pmatrix}1&amp;0\\1&amp;0\end{pmatrix}, \qquad e^2=e .
 $$</p>
 <p>Then</p>
 <p>$$
-e^*=\begin{pmatrix}1&-1\\0&0\end{pmatrix}, \qquad
-e^*e=\begin{pmatrix}0&0\\0&0\end{pmatrix}, \qquad
-ee^*=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}\neq0 .
+e^*=\begin{pmatrix}1&amp;-1\\0&amp;0\end{pmatrix}, \qquad
+e^*e=\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}, \qquad
+ee^*=\begin{pmatrix}1&amp;-1\\1&amp;-1\end{pmatrix}\neq0 .
 $$</p>
 <p>So $e$ is left isotropic and not right isotropic. The idempotent $e$ is a zero divisor, and the element $e+e^*$ is not idempotent, since $ee^*\neq0$.</p>
 <p><strong>Example (the transpose over the complex numbers).</strong> Let $A=M_2(\mathbb{C})$ with the plain transpose $X^*=X^{\mathsf T}$, and let</p>
 <p>$$
-e=\begin{pmatrix}1&0\\ i&0\end{pmatrix}, \qquad e^2=e .
+e=\begin{pmatrix}1&amp;0\\ i&amp;0\end{pmatrix}, \qquad e^2=e .
 $$</p>
-<p>Then $e^*e=0$ and $ee^*=\begin{pmatrix}1&i\\ i&-1\end{pmatrix}\neq0$. The example uses no conjugate: the transpose alone produces isotropic idempotents over a field containing a square root of $-1$. With the conjugate transpose instead, $e^*e$ is positive semidefinite and nonzero for $e\neq0$, so no nonzero example exists.</p>
+<p>Then $e^*e=0$ and $ee^*=\begin{pmatrix}1&amp;i\\ i&amp;-1\end{pmatrix}\neq0$. The example uses no conjugate: the transpose alone produces isotropic idempotents over a field containing a square root of $-1$. With the conjugate transpose instead, $e^*e$ is positive semidefinite and nonzero for $e\neq0$, so no nonzero example exists.</p>
 <p><strong>Example (the symplectic matrix algebra).</strong> In $M_2(F)$ with the symplectic involution, $e=E_{11}$ satisfies $e^*=1-e$, so $e^*e=ee^*=0$: this is the complete two-sided case, and $e+e^*=1$. The same idempotent is left isotropic, right isotropic and complementary; the three notions overlap in this example but are not equivalent in general.</p>
 <p><strong>Example (a domain).</strong> If $A$ has no zero divisors, then $e^*e=0$ forces $e=0$ or $e^*=0$, hence $e=0$; a nonzero idempotent of a domain is necessarily $1$. So a domain has no nontrivial isotropic idempotent, and its only idempotents are $0$ and $1$. The dual numbers are not a domain, but they also have no nontrivial idempotent in characteristic not two; the example is <em>Roots of the Identity, Split Algebras and Nontrivial Idempotents</em>.</p>
 <h2 id="the-three-relations-together">The Three Relations Together</h2>
@@ -261,13 +261,13 @@ $$</p>
 <h2 id="examples_3">Examples</h2>
 <p><strong>Example (the matrix algebra with the transpose).</strong> In $M_n(F)$ with $X^*=X^{\mathsf T}$, the Hermitian idempotents are the symmetric idempotents. A complementary idempotent satisfies $e+e^{\mathsf T}=1$; writing $e=\tfrac12 I+N$ gives $N^{\mathsf T}=-N$ and $N^2=\tfrac14 I$. Over $\mathbb{C}$ the $2\times2$ example</p>
 <p>$$
-e=\begin{pmatrix}1/2&i/2\\-i/2&1/2\end{pmatrix}, \qquad
-e^{\mathsf T}=\begin{pmatrix}1/2&-i/2\\i/2&1/2\end{pmatrix}=1-e,
+e=\begin{pmatrix}1/2&amp;i/2\\-i/2&amp;1/2\end{pmatrix}, \qquad
+e^{\mathsf T}=\begin{pmatrix}1/2&amp;-i/2\\i/2&amp;1/2\end{pmatrix}=1-e,
 $$</p>
 <p>is a complementary idempotent, so the class is nonempty over a field containing a square root of $-1$. Over $\mathbb{R}$ there is no such $N$: a real antisymmetric matrix has no real eigenvalue, while $N^2=\tfrac14 I$ forces the eigenvalues $\pm\tfrac12$. The complementary idempotents are therefore not the symmetric idempotents; the symmetric ones are the Hermitian class, and the complementary class is a different class, empty over $\mathbb{R}$ for the transpose and nonempty over $\mathbb{C}$. The isotropic idempotents exist when $F$ contains a square root of $-1$ and $n\geq2$, as the $2\times2$ example above shows.</p>
 <p><strong>Example (the symplectic matrix algebra).</strong> In $M_2(F)$ with the symplectic involution, every nontrivial idempotent is complementary. Indeed a nontrivial idempotent of $M_2(F)$ has rank one, with a one-dimensional image $L$ and a one-dimensional kernel $K$, and the symplectic involution exchanges the two lines; the computation on $E_{11}$ is the model, and the general case is the same computation in a symplectic basis. The Hermitian idempotents are only $0$ and $1$, since a rank-one idempotent has $e^*=1-e\neq e$.</p>
 <p><strong>Example (the split algebra and its products).</strong> In $F\times F$ with the exchange involution, the nontrivial idempotents $(1,0)$ and $(0,1)$ are complementary and two-sided isotropic, and the only Hermitian idempotents are $0,1$. In $F\times F$ with the componentwise involution $(a,b)^*=(a,b)$, every idempotent is Hermitian, and there are no nontrivial complementary or isotropic idempotents. The two involutions on the same algebra therefore realize the two extreme behaviours.</p>
-<p><strong>Example (a Hermitian idempotent and an isotropic one in the same algebra).</strong> In $M_2(\mathbb{C})$ with the transpose, $E_{11}$ is Hermitian and $e=\begin{pmatrix}1&0\\ i&0\end{pmatrix}$ is left isotropic. The two idempotents have the same rank, so neither the rank nor the algebra determines the class; the involution and the idempotent together do.</p>
+<p><strong>Example (a Hermitian idempotent and an isotropic one in the same algebra).</strong> In $M_2(\mathbb{C})$ with the transpose, $E_{11}$ is Hermitian and $e=\begin{pmatrix}1&amp;0\\ i&amp;0\end{pmatrix}$ is left isotropic. The two idempotents have the same rank, so neither the rank nor the algebra determines the class; the involution and the idempotent together do.</p>
 <h2 id="summary">Summary</h2>
 <p>An involution $\sigma$ acts on the idempotents of $A$ by $e\mapsto e^*$, preserving orthogonality, completeness, primitivity and centrality. The complement map $e\mapsto1-e$ commutes with $\sigma$, and the two generate a Klein four action whose orbit of $e$ is contained in $\{e,e^*,1-e,1-e^*\}$. Three relations are distinguished, together with the two-sided form of the third. The <strong>Hermitian</strong> idempotents are the fixed points $e^*=e$; their Peirce corners are $*$-stable, the diagonal corners are $*$-subalgebras and the mixed corners are exchanged. The <strong>complementary</strong> idempotents are the fixed points of the conjugate complement, $e^*=1-e$; equivalently $e+e^*=1$ and $e^*e=ee^*=0$, and when $2$ is invertible they are in bijection with the anti-Hermitian roots of the identity by $e\mapsto2e-1$. The <strong>left isotropic</strong> idempotents satisfy $e^*e=0$; a nonzero one is a zero divisor, is not Hermitian, and the involution exchanges the left and the right forms. The <strong>two-sided isotropic</strong> idempotents satisfy $e^*e=ee^*=0$; when $2$ is invertible this is equivalent to $e+e^*$ being an idempotent, and the sum $e+e^*$ is then a Hermitian idempotent whose corner contains $e$ and $e^*$ as complementary idempotents. The complementary class is the complete two-sided isotropic class. The matrix algebras with the transpose, the conjugate transpose, the hyperbolic involution and the symplectic involution, and the split algebra with the exchange involution, are the worked examples. No form, norm or positivity is used.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

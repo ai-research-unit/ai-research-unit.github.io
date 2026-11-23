@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy scale independence of Koide&#x27;s relation for quark and lepton masses — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Energy scale independence of Koide&#x27;s relation for quark and lepton masses - hep-ph_0601031.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="energy-scale-independence-of-koides-relation-for-quark-and-lepton-masses"><strong>Energy scale independence of Koide's relation for quark and lepton masses</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0601031 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nan Li, Bo-Qiang Ma</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 January 2006 (v1 4 January 2006)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D 73 (2006) 013009</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Energy scale independence of Koide's relation for quark and lepton masses - hep-ph_0601031-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Energy scale independence of Koide's relation for quark and lepton masses - hep-ph_0601031.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Energy scale independence of Koide's relation for quark and lepton masses - hep-ph_0601031.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Runs the three masses of each sector from $1$ GeV to $2\times10^{16}$ GeV with the one-loop QCD and Yukawa equations, forms the closure ratio in each sector at every scale, and finds that the ratio moves little: $k_u$ stays near $1.33$, $k_d$ near $1.05$, $k_l$ near $1.0019$. The size of the move differs by sector — $6\times10^{-6}$ relative for the leptons, $0.15\%$ for the up quarks, $4\%$ for the down quarks — and the paper reads all three as stability. The reason is algebraic: the ratio depends only on the two mass ratios of the sector, and those ratios are almost scale-independent because the masses of a sector share one anomalous dimension to leading order. The paper then repeats the 2005 neutrino estimate. The conclusion is that the failure in quarks and neutrinos is a genuine failure of the relation rather than a scaling artefact.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-ratio-in-the-three-sectors-at-every-scale">The ratio in the three sectors, at every scale</h3>
+<p>$$
+k_l\equiv\frac{2}{3}\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2},
+\qquad
+k_u\equiv\frac23\frac{1+x_u+y_u}{\left(1+\sqrt{x_u}+\sqrt{y_u}\right)^2},
+\qquad
+k_d\equiv\frac23\frac{1+x_d+y_d}{\left(1+\sqrt{x_d}+\sqrt{y_d}\right)^2},
+\tag{paper 1, 3, 4}
+$$</p>
+<p>with $x_u=m_c/m_u$, $y_u=m_t/m_u$, $x_d=m_s/m_d$, $y_d=m_b/m_d$. "Both $x_u$ and $y_u$ decrease with the increase of $\mu$ at low energy scales and increase slightly at high energy scales. However, we find that in spite of the change of $x_u$ and $y_u$, $k_u$ is almost invariant (approximately $1.33$) at all energy scales, which means that $k_u$ is a constant independent of the running of quark masses."</p>
+<p>The running is that of Fusaoka and Koide, summarised in the paper's Table I:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\mu$</th>
+<th>$m_u$ (MeV)</th>
+<th>$m_c$ (MeV)</th>
+<th>$m_t$ (GeV)</th>
+<th>$m_d$ (MeV)</th>
+<th>$m_s$ (MeV)</th>
+<th>$m_b$ (GeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$ GeV</td>
+<td>$4.88$</td>
+<td>$1506$</td>
+<td>$475$</td>
+<td>$9.81$</td>
+<td>$195.4$</td>
+<td>$7.18$</td>
+</tr>
+<tr>
+<td>$m_Z=91.19$ GeV</td>
+<td>$2.33$</td>
+<td>$677$</td>
+<td>$181$</td>
+<td>$4.69$</td>
+<td>$93.4$</td>
+<td>$3.00$</td>
+</tr>
+<tr>
+<td>$2\times10^{16}$ GeV (SM)</td>
+<td>$0.94$</td>
+<td>$272$</td>
+<td>$84$</td>
+<td>$1.94$</td>
+<td>$38.7$</td>
+<td>$1.07$</td>
+</tr>
+<tr>
+<td>$2\times10^{16}$ GeV (MSSM)</td>
+<td>$1.04$</td>
+<td>$302$</td>
+<td>$129$</td>
+<td>$1.33$</td>
+<td>$26.5$</td>
+<td>$1.00$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the resulting ratios:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\mu$</th>
+<th>$k_u$</th>
+<th>$k_d$</th>
+<th>$k_l$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$ GeV</td>
+<td>$1.341$</td>
+<td>$1.068$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$m_Z$</td>
+<td>$1.328$</td>
+<td>$1.048$</td>
+<td>$1.001881$</td>
+</tr>
+<tr>
+<td>$2\times10^{16}$ GeV, SM</td>
+<td>$1.339$</td>
+<td>$1.025$</td>
+<td>$1.001888$</td>
+</tr>
+<tr>
+<td>$2\times10^{16}$ GeV, MSSM</td>
+<td>$1.359$</td>
+<td>$1.072$</td>
+<td>$1.002560$</td>
+</tr>
+</tbody>
+</table></div>
+<p>"$k_d$ also keeps invariant with the change of energy scales, just as $k_u$, and its approximate value is $1.05$." And "in Table IV ... $k_l$ at high energy scales is still quite close to $1$ as at the low energy scale, which means that Koide's relation is suitable for charged leptons at all the energy scales".</p>
+<p>The 2005 numbers are corrected: "In [11] we calculated the range of $k_u$, and got $1.1&lt;k_u&lt;1.4$ (with the mean value of $1.25$). However, in [11] we did not consider the renormalization effect of quark masses. With this effect taken into account, we find that $k_u$ changes a little, from $1.25$ to $1.33$."</p>
+<h3 id="why-it-does-not-move">Why it does not move</h3>
+<p>The ratio depends on the two mass ratios only; the ratio $m_i/m_j$ of two masses in one sector runs with the difference of their anomalous dimensions, and in QCD at one loop that difference vanishes because $\gamma_0=2$ for every flavour: $\mu\frac{d}{d\mu}m(\mu)=-\gamma(\alpha_s)m(\mu)$ with $\gamma(\alpha_s)=\gamma_0+\gamma_1\alpha_s/\pi+\ldots$. So the ratios are constant at leading order, and the residual motion in the tables is the higher-order and threshold effect. The paper states the analogous mechanism for leptons through the Yukawa evolution, where only the ratios involving $m_t$, $m_b$ and $m_\tau$ run.</p>
+<h3 id="the-neutrino-part">The neutrino part</h3>
+<p>Repeats the 2005 analysis unchanged: no real root for the exact relation, $0.50&lt;k_\nu&lt;0.85$ for the normal ordering and $0.50&lt;k_\nu&lt;0.65$ inverted, the conjecture $k_l+k_d\approx k_\nu+k_u\approx2$, and with $k_\nu\approx0.75$ the masses $m_1=1.0\times10^{-5}$, $m_2=8.4\times10^{-3}$, $m_3=0.05$ eV. The complementarity is asserted to be as scale-independent as the individual ratios.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-closure-is-scale-stable-because-the-ratios-are">1. The closure is scale-stable because the ratios are</h3>
+<p><strong>The idea.</strong> A <strong>result with a reason</strong>: $Q$ for a sector depends only on the sector's two mass ratios, and those ratios are invariant under the leading QCD running, so $Q$ moves only through higher orders and thresholds. Numerically, over sixteen decades, $k_l=1.001881\to1.001888$ (a relative drift of $7\times10^{-6}$), $k_u=1.341\to1.339$ ($0.15\%$), $k_d=1.068\to1.025$ ($4\%$). In $Q$ itself the drifts are $5\times10^{-6}$, $1.3\times10^{-3}$ and $2.9\times10^{-2}$.</p>
+<p><strong>What it would add.</strong> This answers the first task in <code>articles_internal/flavour-research.md</code> §11, "run the masses to a common scale and re-evaluate $Q$", whose stated test is whether $Q$ drifts by more than $10^{-3}$. The answer separates the sectors: the leptons pass by two orders of magnitude ($5\times10^{-6}$), the up quarks sit at the threshold ($1.3\times10^{-3}$), the down quarks fail it by a factor of thirty ($2.9\times10^{-2}$). So the closure's precision is not a scale artefact for the leptons, and the down-quark failure is partly a running effect at low scales. It also gives <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> a case where a dimensionless combination is one-loop invariant, which is the cleanest instance of the article's own subject.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first target, as the resolution; and §1's quark row, which carries $0.8489808$ and $0.7314277$ at $2$ GeV and asks about other scales.</p>
+<p><strong>What stands in the way.</strong> The corpus computes in mass, not in the ratio, so the invariance is not automatic in its own variables; the claim must be restated as "$Q$ is a function of ratios only" plus the one-loop equality of the $\gamma_0$, and the corpus has to import the one-loop coefficient $\gamma_0=2$. The paper's own tables show the statement is "stable to a few per cent at worst", not "exact", and the down-quark drift is large enough that the paper's word "invariant" overstates it there.</p>
+<h3 id="2-the-failure-in-quarks-is-not-a-scaling-artefact">2. The failure in quarks is not a scaling artefact</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: since $k_u$ and $k_d$ are constant along the flow, the fact that they are not $1$ cannot be removed by evaluating at another scale. The failure is in the spectrum, not in the scheme.</p>
+<p><strong>What it would add.</strong> The corpus's §11 keeps open the possibility that the quark failure is a matter of scale. The table shuts it for the up sector, where $k_u$ moves by $0.15\%$ while missing $1$ by $33\%$. The paper is also a correction of its own authors' 2005 paper, which had said that because the relation is not scale invariant the masses should be taken at high energy; here the scale dependence is measured and found small, so the earlier remark is withdrawn by evidence.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, and §9 where the quark towers are listed as failed routes.</p>
+<p><strong>What stands in the way.</strong> The invariance holds for the strong running; the electroweak and Yukawa contributions are not exactly flavour-blind, so the door is shut to a few per cent and not to all orders.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The neutrino mass estimate repeats the 2005 paper and inherits its conjecture. The 2005 statement that "Koide's relation is not energy-scale invariant" is corrected here for quarks and leptons; the two papers should be read as one, the later one superseding.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

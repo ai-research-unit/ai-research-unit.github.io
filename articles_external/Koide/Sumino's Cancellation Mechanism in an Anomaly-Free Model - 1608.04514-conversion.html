@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumino&#x27;s Cancellation Mechanism in an Anomaly-Free Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Sumino&#x27;s Cancellation Mechanism in an Anomaly-Free Model - 1608.04514.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="suminos-cancellation-mechanism-in-an-anomaly-free-model"><strong>Sumino's Cancellation Mechanism in an Anomaly-Free Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1608.04514v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 January 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Sumino's Cancellation Mechanism in an Anomaly-Free Model - 1608.04514-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Sumino's Cancellation Mechanism in an Anomaly-Free Model - 1608.04514.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Koide/Family Gauge Symmetry and Koide's Mass Formula - 0812.2090-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Sumino's Cancellation Mechanism in an Anomaly-Free Model - 1608.04514.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Repairs Sumino's family gauge model. The original (called Model A here) cancels the QED logarithm against a family-gauge logarithm and so keeps the lepton relation at the pole masses, but it is not anomaly free and it produces $|\Delta N_f|=2$ interactions. The first repair (Model B) is anomaly free but breaks the cancellation. This paper gives Model C, which keeps the inverted mass hierarchy of Model B, is anomaly free, and restores the cancellation exactly, at the price of a lower family-boson mass scale. It states which experiments would confirm or exclude it.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-model-a-does">What Model A does</h3>
+<p>"An interesting family gauge boson (FGB) model (Model A) has been proposed by Sumino. The model can give FGBs with a considerably low energy scale in spite of the severe constraints from the observed $K^0$–$\bar K^0$ mixing and so on. An essential idea in Model A is in the so-called Sumino cancellation mechanism between QED and FGB diagrams."</p>
+<h3 id="what-is-wrong-with-it">What is wrong with it</h3>
+<p>"However, Model A is not anomaly free and, besides, it causes effective interactions with $\Delta N_{\rm family}=2$. In order to avoid these problems, a revised Sumino model with an inverted mass hierarchy (Model B) has been proposed, but, in this time, it cannot satisfy the Sumino cancellation mechanism exactly."</p>
+<h3 id="what-is-added">What is added</h3>
+<p>"In this paper, we propose a revised version of Model B, where the model still keeps anomaly free, but it can exactly satisfy the Sumino mechanism."</p>
+<h3 id="the-tests">The tests</h3>
+<p>"An effect of the revised model will be confirmed by observations $K^+\to\pi^+e^-\mu^+$ and $\mu^-N\to e^-N$."</p>
+<h3 id="the-claim-of-completeness">The claim of completeness</h3>
+<p>"we have obtained a FGB model, where all merits in the original Sumino model are retained, but all problems in the original model disappear."</p>
+<h3 id="the-scope-of-the-cancellation">The scope of the cancellation</h3>
+<p>"As well as the Sumino model, this does not mean that the relation $K(\mu)=2/3$ holds in whole energy scale range. As we noted already, there are many neglected contributions to $K(\mu)$ in the Sumino model, so that Sumino has speculated that the relation $K(\mu)=2/3$ holds only within an energy scale range smaller than $10^3$ TeV. Our result (the largest FGB mass $M_{11}\sim10^3$ TeV) in Table 1 is consistent with the Sumino's speculation."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-anomaly-freedom-and-the-cancellation-are-independent-requirements">1. Anomaly freedom and the cancellation are independent requirements</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: the mechanism that makes the pole mass satisfy the relation has nothing to do with anomaly cancellation, and the two constraints pull in opposite directions — fixing one broke the other, and restoring both cost a decade in mass scale.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0812.2103-conversion.md</code> already records that in Sumino's original content "anomalies induced by the family gauge interactions do not cancel". What that conversion does not contain is the follow-up: that the repair exists, that it needed an inverted hierarchy, and what it cost. Adding it turns a known defect into a solved problem with a price.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0812.2103-conversion.md</code>, in the list of what the model leaves open.</p>
+<p><strong>What stands in the way.</strong> The comparison is between three models in one paper, and none of them is the corpus's own framework; the import is a piece of model-building history rather than a result. First, because it closes a defect the corpus already records.</p>
+<h3 id="2-a-decade-of-mass-scale-as-the-price-of-consistency">2. A decade of mass scale as the price of consistency</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $M_{11}\sim10^3$ TeV in Model C against a lower scale in Model B, so anomaly freedom plus exact cancellation costs roughly an order of magnitude in reach.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> has no example of a theoretical requirement raising a predicted scale beyond reach; this is one, stated in a single number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of predictions and their cost.</p>
+<p><strong>What stands in the way.</strong> The scales depend on the parameter $n$ and on the table entries, so the decade is approximate. Second.</p>
+<h3 id="3-two-channels-that-would-settle-it">3. Two channels that would settle it</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: pick the two processes whose rates differ between the models, here $K^+\to\pi^+e^-\mu^+$ and $\mu^-N\to e^-N$, rather than listing every flavour-violating channel.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code> argues that some operators evade some channels; the selection here is made from the model side, which is the complement of that article's operator-side analysis.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code>.</p>
+<p><strong>What stands in the way.</strong> No rate is computed, only the statement that an effect would appear. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

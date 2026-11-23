@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivalence between the Formulation of Quantum Mechanics in terms of Quantum Potential and the One in terms of Markoff-like Process — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equivalence between the Formulation of Quantum Mechanics in terms of Quantum…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivalence-between-the-formulation-of-quantum-mechanics-in-terms-of-quantum-potential-and-the-one-in-terms-of-markoff-like-process"><strong>Equivalence between the Formulation of Quantum Mechanics in terms of Quantum Potential and the One in terms of Markoff-like Process</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>10</strong> (1953) 121–122, No. 1, July 1953, Letters to the Editor; dated 29 June 1953</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Equivalence between the Formulation of Quantum Mechanics in terms of Quantum Potential and the One in terms of Markoff-like Process-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equivalence between the Formulation of Quantum Mechanics in terms of Quantum Potential and the One in terms of Markoff-like Process.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-schrodinger-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equivalence between the Formulation of Quantum Mechanics in terms of Quantum Potential and the One in terms of Markoff-like Process.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Two pages that settle a question of interpretation by a calculation. The quantum potential of the configuration-space picture is shown to be the <em>apparent force</em> that survives when a phase-space ensemble is projected onto configuration space: integrate the Liouville-like equation over momentum, and the stochastic momentum transfers cancel in the continuity equation while their second moment reappears in the momentum balance as the quantum stress. So the quantum potential is a projection artefact of a wider ensemble, and the two formulations are the same theory before and after a contraction. The note closes by arguing that the wider ensemble cannot be read as a real stochastic process either, because its transition probability is an <em>odd</em> function of momentum, so the even transition moments vanish — the opposite of a Brownian motion, where the second moment is what drives relaxation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-ensembles">The two ensembles</h3>
+<p>The configuration-space ensemble of the 1952 paper has a singular phase-space distribution:</p>
+<p>$$
+\psi=Re^{iS/\hbar},\quad P=R^{2},\quad \vec p=\nabla S,
+\qquad
+f_{0}(x,p)=R(x)^{2}\,\delta\!\left(p-\nabla S(x)\right),
+$$</p>
+<p>because the momentum is uniquely correlated with position. The phase-space ensemble of the Wigner–Moyal method has a spread distribution $f(x,p)$ obeying a Liouville-like equation with stochastic momentum transfers. The question is how the two relate.</p>
+<h3 id="the-projection-and-where-the-force-comes-from">The projection, and where the force comes from</h3>
+<p>"we can produce a coordinate-space ensemble from a phase-space ensemble by 'projecting' the latter on the coordinate space ... in other words we eliminate the momentum dispersion at each space point $x$, adopting the mean momentum and the total density."</p>
+<p>Projecting the Liouville-like equation gives the continuity equation with the stochastic effects cancelling exactly. Projecting the momentum balance gives</p>
+<p>$$
+\frac{\partial}{\partial x_{k}}\!\left(P\bar p_{i}\bar p_{k}\right)
+=\cdots-\frac{\partial}{\partial x_{k}}\sigma_{ik},
+$$</p>
+<p>where "nuity equation: term in the phase-space picture transforms to the 122 Letters to the Editor convection term in the coordinate-space picture, fashion, but the nature of his method can ." "systematic formulation of quantummeehanies in" terms of the phase-space ensemble. stress', taking into account the' quantum condition' Details will soon be published. I (15) for the original phase-space distribution."The second pure-state condition of the phase-space paper — the irrotationality condition — becomes the configuration-space subsidiary condition $\mathrm{curl}\,\vec p=0$. Hence: **" the quantum potential can be regarded as an apparent force appearing as the result of projecting on the coordinate space the phase-space ensemble which satisfies the quantum condition and changes according to a sort of Markoff process."</p>
+<p>** </p>
+<h3 id="why-the-wider-picture-is-not-more-real">Why the wider picture is not more real</h3>
+<p>"we cannot, however, regard the latter picture as a real one any more than the picture of trajectory ensemble under quantum potential, because of the inevitable appearance of negative probabilities. Furthermore in the phase-space formulation we had to put certain quantum condition ad hoc." And the transition structure is diagnostic:</p>
+<p>"the probability of momentum transitions is perfectly determined . by the external field and is moreover irrespective" present value of the particle momentum, and further that the transition probability J is an odd function and so the transition moments of even ~rders vanish while those of odd orders survive (eq. I (7», in contrast to the usual Brownian processes, where the second order moment plays the essential role," The conclusion: " We should only .accept our Markoff-like picture as a kinematical oQe without any attempt to derive it dynamically. Though "</p>
+<p>He notes that Weizel's attempt to derive the quantum potential from a stochastic model proceeds in a considerably different fashion, and that its nature is visible from this standpoint.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-quantum-stress-is-minus-the-momentum-covariance-the-projection-gives-the-stress-it-does-not-merely-resemble-it">1. The quantum stress <em>is</em> minus the momentum covariance — the projection gives the stress, it does not merely resemble it</h3>
+<p><strong>The idea.</strong> Put the phase-space purity identity together with the stress definition. The per-particle momentum covariance of the pure-state distribution is</p>
+<p>$$
+\mathrm{Cov}_{ik}=\frac{P_{ik}}{P}-\frac{P_{i}P_{k}}{P^{2}}=-\frac{\hbar^{2}}{4}\partial_{i}\partial_{k}\log P ,
+$$</p>
+<p>and the quantum stress of the configuration-space picture is</p>
+<p>$$
+\sigma_{ik}=\frac{\hbar^{2}}{4\mu}P\,\partial_{i}\partial_{k}\log P=-\mu\,\left(P_{ik}-\frac{P_{i}P_{k}}{P}\right).
+$$</p>
+<p><strong>So the stress is exactly minus the momentum covariance, times the mass density, and the projection in this note is what makes the two the same object.</strong> The extra momentum flow ascribable to the occurrence of the quantum stress is not an analogy: it is the covariance of the distribution one has just integrated out.</p>
+<p><strong>What it would add.</strong> A derivation for a definition. <em>The Schrödinger Fluid</em> (<code>articles_physics/the-schrodinger-fluid.md</code>) and <em>The Equation of State and the Barotropic Condition</em> (<code>articles_physics/the-equation-of-state-and-the-barotropic-condition.md</code>) define the quantum stress and show that it behaves as a stress; they do not say <em>what it is</em>. This note plus the phase-space paper say it: it is the Reynolds stress of the momentum dispersion that the configuration-space description throws away — with the sign that makes it a tension rather than a pressure, because the eliminated dispersion is the one the Wigner function carries as a negative covariance. <strong>That also explains, in one line, why only the Gaussian gives an isotropic stress: only for a Gaussian is the covariance proportional to the identity.</strong></p>
+<p><strong>Where it lands.</strong> The Schrödinger fluid article's §<em>The Quantum Term Is an Exact Stress</em>, as the derivation, and the barotropic article's discussion of the Gaussian.</p>
+<p><strong>What stands in the way.</strong> The two identities come from two different papers and the identification is mine, not his; it follows in three lines of algebra from his two results, and I checked it numerically on the same superposition used for the purity identity — at the point $x=0$ the stress is $-0.4260$ and minus the mass density times the per-particle covariance is also $-0.4260$. It should be presented as a synthesis and labelled as one.</p>
+<h3 id="2-the-quantum-potential-is-a-projection-artefact-and-that-is-a-fact-about-descriptions-not-about-physics">2. The quantum potential is a projection artefact, and that is a fact about descriptions, not about physics</h3>
+<p><strong>The idea.</strong> Eliminate a variable and a force appears. The quantum potential is the force that a description without momentum dispersion must invent to reproduce the momentum balance of the description with dispersion. It is therefore <em>exact in its own description</em> and <em>absent in the wider one</em>.</p>
+<p><strong>What it would add.</strong> A resolution of a standing tension in the corpus. <em>The Thermodynamics of a Quantum Fluid: Status of the Derivation</em> (<code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>) worries about whether the quantum term is a genuine thermodynamic pressure; <em>The Reverse Madelung Map: Fluid to Nonlinear Wave</em> (<code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>) asks what the map does to the notion of force. Takabayasi's answer applies to both: the term is a <em>projected</em> force, exact after the projection and not present before it, so questions of its thermodynamic reality are questions about which description one has chosen. <strong>That is not a dodge — it is the precise sense in which the quantum potential is real, and the corpus's articles argue around it without naming it.</strong></p>
+<p><strong>Where it lands.</strong> The thermodynamics article's §<em>Status of the Derivation</em>, and the reverse-Madelung article's introduction.</p>
+<p><strong>What stands in the way.</strong> The corpus's four-dimensional setting has no natural projection onto a configuration space with a preferred time, so the argument is intrinsically non-relativistic. It would need the corpus's own foliation to be transported, which the corpus has in its temporal-slot articles but not in a form ready for this. Ranked second for that reason.</p>
+<p>The remainder, one line each. The oddness of the transition kernel in momentum, which kills the even moments and so rules out a diffusion reading, belongs with <em>What the Biquaternion Algebra Cannot Do</em> (<code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>) and <em>Decoherence as Idempotent Projection</em> (<code>articles_physics/decoherence-as-idempotent-projection.md</code>). The equivalence of the two subsidiary conditions — the phase-space irrotationality becoming $\mathrm{curl}\,\vec p=0$ — is the mechanism by which the projection works and is covered by the phase-space conversion. The remark that negative probabilities make the wider picture no more real than the narrower one is the 1952 conclusion restated. The criticism of Weizel is a priority note.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

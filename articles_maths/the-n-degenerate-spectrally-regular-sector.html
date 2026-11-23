@@ -176,7 +176,7 @@ e_-\tilde Qe_-=0.
 $$</p>
 <p>In the Peirce basis $(\tilde\Pi_{\mathrm{id}},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id}}')$, with the nilpotents normalised by $\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id}}'$ and $\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id}}$, the $2\times2$ Peirce matrix on the two idempotents is</p>
 <p>$$
-\begin{pmatrix}c&0\\0&0\end{pmatrix}.
+\begin{pmatrix}c&amp;0\\0&amp;0\end{pmatrix}.
 $$</p>
 <p>The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.</p>
 <p><strong>The eigenbasis.</strong> Since $B^2\neq0$, the root $\vec{Ζ}=-i\vec Q/B$ and the pair $(\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-})$ are defined, and the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ exists. The pair is the pair $\{\tilde\Pi_{\mathrm{id}},\tilde\Pi_{\mathrm{id}}'\}$, with the labels fixed by the chosen square root; the construction in full generality is in <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>, §<em>The Eigenbasis</em>, and its specialisation to $\Sigma_{11}$ is in <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>. With the branch $B=-iQ_t$ one has $\lambda_+=c=2Q_t$, and the left action in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$ has the diagonal values $(c,c,0,0)$. The other branch exchanges the labels and gives $(0,0,c,c)$. The zero eigenvalue is carried by the two basis vectors of the $\lambda_-$-eigenspace $\tilde\Pi_{\mathrm{id},-}\mathbb{B}$, namely $\vec\Pi_{\mathrm{nil},+}$ and $\tilde\Pi_{\mathrm{id},-}$; the spectral decomposition, by contrast, has one zero coefficient.</p>
@@ -194,7 +194,7 @@ each of complex dimension two. A <strong>spinor of the first Peirce copy</strong
 <h3 id="the-left-action">The Left Action</h3>
 <p>Write a general element in the eigenbasis as
 $$
-\tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}e_-,
+\tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}e_-,
 \qquad Q_{2,ij}\in\mathbb{C}.
 $$
 A spinor of the first Peirce copy is
@@ -209,7 +209,7 @@ $$
 $$
 A spinor of the second Peirce copy is
 $$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}e_-,
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}e_-,
 $$
 with coordinates $(Q_{2,12},Q_{2,22})$ in the basis $(\vec\Pi_{\mathrm{nil},-},e_-)$. Since $\vec\Pi_{\mathrm{nil},-}\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
 $$
@@ -246,10 +246,10 @@ $$
 a general element is represented by
 $$
 \mathsf M_2^{Q}(\tilde Q_2)=
-\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
+\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix},
 \qquad
 \mathsf M_2^{Q}(\tilde Q)=
-\begin{pmatrix}c&0\\0&0\end{pmatrix}.
+\begin{pmatrix}c&amp;0\\0&amp;0\end{pmatrix}.
 $$
 The first column is $S_+$, the second is $S_-$, and the two rows are the two spectral eigenspaces of $L_{\tilde Q}$. A general element is a pair of spinors, one of each Peirce copy, and is not itself a spinor.</p>
 <h2 id="multiplication">Multiplication</h2>
@@ -269,11 +269,11 @@ $$</p>
 \tilde\Pi_{\mathrm{id},-}=\frac{e_t-i\vec e_z}{2},\qquad
 E_{12}=\frac{\vec e_x+i\vec e_y}{2},
 $$</p>
-<p>which satisfy $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $E_{12}^2=0$, and $\tilde\Pi_{\mathrm{id},+E}_{12}=E_{12}=E_{12}\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},-E}_{12}=0=E_{12}\tilde\Pi_{\mathrm{id},+}$. Then:</p>
+<p>which satisfy $\tilde\Pi_{\mathrm{id},\pm}^2=\tilde\Pi_{\mathrm{id},\pm}$, $E_{12}^2=0$, and $\tilde\Pi_{\mathrm{id},+E}{}_{12}=E_{12}=E_{12}\tilde\Pi_{\mathrm{id},-}$, $\tilde\Pi_{\mathrm{id},-E}{}_{12}=0=E_{12}\tilde\Pi_{\mathrm{id},+}$. Then:</p>
 <ul>
 <li>$\tilde\Pi_{\mathrm{id},+}^2=\tilde\Pi_{\mathrm{id},+}\in\Sigma_{01}$: the product stays in the sector.</li>
 <li>$\tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id},-}=0$: the product is the origin.</li>
-<li>with $\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id},-+bE}_{12}$ for $b\neq0$, the element $\tilde\Pi_{\mathrm{id}}'$ is a non-trivial idempotent, hence lies in $\Sigma_{01}$, and</li>
+<li>with $\tilde\Pi_{\mathrm{id}}'=\tilde\Pi_{\mathrm{id},-+bE}{}_{12}$ for $b\neq0$, the element $\tilde\Pi_{\mathrm{id}}'$ is a non-trivial idempotent, hence lies in $\Sigma_{01}$, and</li>
 </ul>
 <p>$$
 \tilde\Pi_{\mathrm{id},+}\tilde\Pi_{\mathrm{id}}'=bE_{12}=\frac{b}{2}(\vec e_x+i\vec e_y)

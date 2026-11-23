@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum blockchain using entanglement in time — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Blockchain using entanglement in time - 1804.05979.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-blockchain-using-entanglement-in-time"><strong>Quantum blockchain using entanglement in time</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1804.05979v2 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Del Rajan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 April 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Quantum Reports 1 (2019) 3–11 (as printed in the PDF)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum Blockchain using entanglement in time - 1804.05979-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Blockchain using entanglement in time - 1804.05979.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum Blockchain using entanglement in time - 1804.05979.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors propose a design for a blockchain that stores records in a temporal GHZ state of photons. Photons that never coexist can still be entangled, so the record is spread across time rather than kept in a sequence of blocks. The chain is read out by measurements at the end. The design is conceptual: it names the states and the operations, and leaves engineering aside.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"We propose a conceptual design for a quantum blockchain."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"Our method involves encoding the blockchain into a temporal GHZ (Greenberger–Horne–Zeilinger) state of photons that do not simultaneously exist"</p>
+<h3 id="the-advantage">The advantage</h3>
+<p>"It is shown that the entanglement in time, as opposed to an entanglement in space, provides the crucial quantum advantage."</p>
+<h3 id="the-reading">The reading</h3>
+<p>"our encoding procedure can be interpreted as nonclassically influencing the past."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-records-spread-across-time">1. Records spread across time</h3>
+<p><strong>The idea.</strong> Information can be stored in a state whose parts exist at different times.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code> treats entanglement across frames. Temporal entanglement is the sequence-of-frames case, which the target does not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>, in the discussion of frames.</p>
+<p><strong>What stands in the way.</strong> The design is conceptual. Ranked first, because it extends the target's frame argument.</p>
+<h3 id="2-no-simultaneous-carrier">2. No simultaneous carrier</h3>
+<p><strong>The idea.</strong> A record can exist without any single moment holding all of it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> states conservation laws locally. A record with no local carrier presses on how information is conserved.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, in the discussion of information.</p>
+<p><strong>What stands in the way.</strong> The state is fragile. Ranked second.</p>
+<h3 id="3-ghz-states-as-structure">3. GHZ states as structure</h3>
+<p><strong>The idea.</strong> A multi-party entangled state can serve as a data structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.md</code> organises entangled states into a basis. Using them as storage is an application the target's algebra could support.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.md</code>, in the discussion of bases.</p>
+<p><strong>What stands in the way.</strong> GHZ states are not Bell states. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

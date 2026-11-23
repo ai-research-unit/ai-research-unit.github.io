@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space-Time Approach to Non-Relativistic Quantum Mechanics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Feynman - Space-Time Approach to Non-Relativistic Quantum Mechanics.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="space-time-approach-to-non-relativistic-quantum-mechanics"><strong>Space-Time Approach to Non-Relativistic Quantum Mechanics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>journal</td>
+<td>Reviews of Modern Physics <strong>20</strong>, 367 (1948)</td>
+</tr>
+<tr>
+<td>author</td>
+<td>R. P. Feynman (Cornell University)</td>
+</tr>
+<tr>
+<td>reprinted in</td>
+<td><em>Quantum Electrodynamics</em>, ed. J. Schwinger</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — not stated</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. P. Feynman (Cornell University)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Feynman - Space-Time Approach to Non-Relativistic Quantum Mechanics-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Feynman - Space-Time Approach to Non-Relativistic Quantum Mechanics.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-path-integral-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Feynman - Space-Time Approach to Non-Relativistic Quantum Mechanics.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The 1948 paper that formulates non-relativistic quantum mechanics as a sum over paths. The formulation is presented as a reformulation, not a new theory: the amplitudes are the same, the rule for combining them is different. The probability of an event is the squared modulus of a sum of complex contributions, one per alternative way, and the probability that a particle follows a path within a region is the squared modulus of a sum over the paths in that region.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-of-equivalence">The claim of equivalence</h3>
+<p>"Non-relativistic quantum mechanics is formulated here in a different way. It is, however, mathematically equivalent to the familiar formulation."</p>
+<h3 id="the-rule">The rule</h3>
+<p>"In quantum mechanics the probability of an event which can happen in several dierent ways is the absolute square of a sum of complex contributions, one from each alternative way. The probability that a particle will be found to have a path x(t) lying somewhere within a region of space time is the square of a sum of contributions, one from each path in the region."</p>
+<h3 id="the-third-principle">The third principle</h3>
+<p>The paper's contribution is the addition of a third rule to the two familiar ones — amplitudes add, probabilities are squared moduli: the amplitude for a path is $\exp(iS/\hbar)$ with $S$ the classical action along that path. Every later statement in the paper is a consequence of that choice, including the recovery of the Schrödinger equation.</p>
+<p>"The contribution from a single path is postulated to be an exponential whose (imaginary) phase is the classical action (in units of ℏ) for the path in question."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-reformulation-can-be-exact-and-still-change-what-is-easy">1. A reformulation can be exact and still change what is easy</h3>
+<p><strong>The idea.</strong> The path integral is mathematically equivalent to the operator formulation and makes different things computable: the classical limit is a stationary-phase argument, and the coupling to an external field is a modification of the action along each path.</p>
+<p><strong>What it would add.</strong> A reason the corpus carries both formulations. Its path-integral articles and its operator articles compute the same objects; the paper shows the equivalence is exact while the calculational reach differs, which justifies keeping both rather than choosing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-path-integral-in-biquaternionic-form.md</code>, at the equivalence.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus already has both and the paper supplies the historical statement of their relation.</p>
+<h3 id="2-the-action-appears-as-a-phase-not-as-an-extremum">2. The action appears as a phase, not as an extremum</h3>
+<p><strong>The idea.</strong> In the sum over paths every path contributes, with weight $e^{iS/\hbar}$; the classical path is the one where the phase is stationary, so nearby paths add in phase. The classical principle is a consequence, not an axiom.</p>
+<p><strong>What it would add.</strong> The reverse derivation the corpus's action articles lack: the corpus begins with the Lagrangian and derives the equations, and this paper derives the dominance of the classical path.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/noethers-theorem-in-biquaternionic-form.md</code>, on the relation between action and equations of motion.</p>
+<p><strong>What stands in the way.</strong> The stationary-phase argument presupposes that the phase varies rapidly compared with the amplitude, which is an assumption the corpus would have to state for its own fields.</p>
+<p>This is a journal article of 1948; its content is the formulation and the derivation of the Schrödinger equation from it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

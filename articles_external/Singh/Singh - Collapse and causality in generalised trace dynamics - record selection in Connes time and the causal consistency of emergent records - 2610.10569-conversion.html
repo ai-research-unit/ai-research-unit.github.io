@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapse and Causality in Generalised Trace Dynamics: Record Selection in Connes Time and the Causal Consistency of Emergent Records — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Collapse and causality in generalised trace dynamics - record selection in Connes time and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="collapse-and-causality-in-generalised-trace-dynamics-record-selection-in-connes-time-and-the-causal-consistency-of-emergent-records"><strong>Collapse and Causality in Generalised Trace Dynamics: Record Selection in Connes Time and the Causal Consistency of Emergent Records</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2610.10569v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 October 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Collapse and causality in generalised trace dynamics - record selection in Connes time and the causal consistency of emergent records - 2610.10569-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Collapse and causality in generalised trace dynamics - record selection in Connes time and the causal consistency of emergent records - 2610.10569.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/decoherence-as-idempotent-projection.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Collapse and causality in generalised trace dynamics - record selection in Connes time and the causal consistency of emergent records - 2610.10569.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what has to be true of a collapse law that selects a single measurement record, when the selecting noise lives below spacetime and is ordered by Connes time rather than by a coordinate. The answer is that the question "uestion “in whose frame does the collapse happen?” is not posed at that level." does not arise at the selecting level; what remains is that the emergent records must not signal. The paper states that requirement operationally, applies the standard no-signalling theorem to a continuous-spontaneous-localisation type law, and turns it into a list of conditions: martingale weights, a drift with the right gain, a counter-term with unit coefficient, and a fluctuation–dissipation relation that fixes the gain at equilibrium.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"In generalized trace dynamics (GTD) the fluctuations proposed to select a measurement record come from unresolved pregeometric degrees of freedom and are ordered by Connes time rather than by a spacetime coordinate."</p>
+<p>"The hypersurface on which collapse occurs is then not a question posed at the level at which selection happens; it returns as the requirement that the emergent records do not signal."</p>
+<h3 id="what-a-naive-law-does">What a naive law does</h3>
+<p>"The norm-preserving but response-free law of a naive coarse-graining is solved exactly: it never selects a record, and for two records it erodes every initial weight towards one half; the Born-restoring correction is a drift tangent to the sphere of states, invisible to norm conservation."</p>
+<h3 id="what-selection-requires">What selection requires</h3>
+<p>"In history form, record weights are martingales only if the fluctuation history leans towards the leading record with gain twice its own diffusion and, for record operators with three or more collinear eigenvalues, the linear law carries its counter-term with unit coefficient."</p>
+<p>"A smooth coefficient drive gives the counter-term with the wrong sign, and any other gain is an ensemble nonlinearity that signals."</p>
+<h3 id="the-thermodynamic-reading">The thermodynamic reading</h3>
+<p>"For a sea in canonical equilibrium the fluctuation–dissipation relation fixes the gain, so the Born gain is an Einstein relation between coupling, temperature and the coefficient's correlation time."</p>
+<h3 id="what-is-still-missing">What is still missing</h3>
+<p>"What remains is the projection that supplies the counter-term and the gain for an interacting sector."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-no-signalling-is-what-replaces-the-collapse-hypersurface">1. No-signalling is what replaces the collapse hypersurface</h3>
+<p><strong>The idea.</strong> A <strong>reformulation</strong>: in a theory where the collapse mechanism sits below spacetime, there is no surface on which collapse happens, and asking for one is a category error. The physically meaningful requirement is that the emergent records cannot be used to send signals — and that requirement can be stated and checked.</p>
+<p><strong>What it would add.</strong> The corpus's decoherence articles treat collapse as an effective projection with a time parameter supplied from outside. This removes the need for that parameter at the fundamental level and replaces it with a constraint on correlations. It is a cleaner statement of what collapse has to satisfy, and it makes the question of when collapse happens disappear rather than get answered — which is a stronger resolution than any the corpus currently has.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>.</p>
+<p><strong>What stands in the way.</strong> No-signalling is necessary, not sufficient; a law that does not signal may still fail to select, and the paper's own example of a norm-preserving coarse-graining is exactly that case.</p>
+<h3 id="2-norm-conservation-and-record-selection-are-independent">2. Norm conservation and record selection are independent</h3>
+<p><strong>The idea.</strong> A <strong>result with a sharp counterexample</strong>: a law can preserve the norm exactly and be completely blind to records. For two records it drives every weight to one half — the maximal non-selection. Selecting requires a drift that is invisible to the norm, tangent to the state sphere.</p>
+<p><strong>What it would add.</strong> The corpus's collapse and decoherence articles use trace preservation as the marker of a legitimate dynamics. This shows the marker is empty: the least selective law available also preserves the trace perfectly. Any corpus argument of the form: the evolution preserves probability, therefore it is a consistent collapse dynamics, is refuted by this example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-entanglement-entropy-and-the-partial-trace.md</code>.</p>
+<p><strong>What stands in the way.</strong> The counterexample is for a specific two-record coarse-graining; a general theorem separating norm preservation from selection is not claimed.</p>
+<h3 id="3-born-probabilities-as-an-einstein-relation">3. Born probabilities as an Einstein relation</h3>
+<p><strong>The idea.</strong> A <strong>correspondence</strong>: the gain that makes record weights martingales and the diffusion of the same noise are tied by a fluctuation–dissipation relation, so the Born rule appears as the equilibrium condition of a noise-plus-friction balance, with temperature and correlation time as parameters.</p>
+<p><strong>What it would add.</strong> The corpus derives Born weights from the algebra of idempotents, which is a kinematic derivation. This is a thermodynamic one: the weights are what equilibrium forces them to be. Two derivations of the same numbers from unrelated principles is the kind of coincidence the corpus exists to collect, and if both survive they constrain each other — the algebra's weights would have to be the equilibrium weights of a specific noise.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification holds for a sea in canonical equilibrium; away from equilibrium the gain is free, and the paper says so.</p>
+<p>The rank: no-signalling replacing the hypersurface first, because it dissolves a question; the norm-versus-selection counterexample second, because it refutes a corpus habit; the Einstein relation last, because it is a correspondence that may or may not survive.</p>
+<p>The remaining items in one line each: the counter-term with unit coefficient for operators with three or more collinear eigenvalues, which is a condition on the shape of the law; the ban on state-dependent rates outside the unravelling, which says observable enhancement must come from fixed collective operators; and the Ohmic spectral density computed for the programme's Sutherland texture, which is where the abstract conditions meet a concrete bath.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -149,7 +149,7 @@ $$</p>
 <h3 id="the-discriminant">The Discriminant</h3>
 <p><strong>Proposition.</strong> The discriminant of $x^6-1$ is</p>
 <p>$$
-\operatorname{disc}(x^6-1)=\prod_{j<l}(\omega_l-\omega_j)^2=6^6=46656 .
+\operatorname{disc}(x^6-1)=\prod_{j&lt;l}(\omega_l-\omega_j)^2=6^6=46656 .
 $$</p>
 <p><strong>Proof.</strong> For $f(x)=x^n-a$ the discriminant is $(-1)^{(n-1)(n-2)/2}n^na^{n-1}$; at $n=6$, $a=1$ the sign is $(-1)^{10}=+1$ and the value is $6^6$. The product formula is the definition of the discriminant of a monic polynomial with simple roots.</p>
 <p>The discriminant is nonzero, which is the statement that the six roots are distinct. This is the arithmetic shadow of the hypothesis that $H$ has a simple spectrum.</p>
@@ -170,7 +170,7 @@ $$</p>
 </ul>
 <p><strong>Proof.</strong> The polynomial $x^6-1$ has the six distinct roots $\omega_k$ and annihilates $H$. A matrix annihilated by a polynomial with distinct roots is diagonalisable, and its eigenvalues are among those roots. Six distinct eigenvalues in dimension six exhaust the spectrum, so each root occurs once, the characteristic polynomial is $\prod_k(x-\omega_k)=x^6-1$, and the minimal polynomial, which has the same roots and divides $x^6-1$, is also $x^6-1$. The trace is the sum of the eigenvalues, which vanishes; the determinant is their product, which is $-1$.</p>
 <p><strong>Corollary.</strong> Every root is semisimple, hence is a semisimple element of $GL_6(\mathbb{C})$, and $H$ generates a cyclic subgroup of order six.</p>
-<p><strong>Proof.</strong> A diagonalisable matrix with eigenvalues of order dividing six satisfies $H^6=I$ and has $H^r\neq I$ for $0<r<6$, because $\omega^r\neq1$. So $\langle H\rangle\cong\mathbb{Z}/6$.</p>
+<p><strong>Proof.</strong> A diagonalisable matrix with eigenvalues of order dividing six satisfies $H^6=I$ and has $H^r\neq I$ for $0&lt;r&lt;6$, because $\omega^r\neq1$. So $\langle H\rangle\cong\mathbb{Z}/6$.</p>
 <h3 id="the-eigenlines">The Eigenlines</h3>
 <p><strong>Definition.</strong> For a root $H$ and $k\in\{1,\dots,6\}$ put</p>
 <p>$$
@@ -238,12 +238,12 @@ $$</p>
 <p>$$
 P_2=\frac16
 \begin{pmatrix}
-1&\omega^{-1}&\omega^{-2}&\omega^{-3}&\omega^{-4}&\omega^{-5}\\
-\omega&1&\omega^{-1}&\omega^{-2}&\omega^{-3}&\omega^{-4}\\
-\omega^2&\omega&1&\omega^{-1}&\omega^{-2}&\omega^{-3}\\
-\omega^3&\omega^2&\omega&1&\omega^{-1}&\omega^{-2}\\
-\omega^4&\omega^3&\omega^2&\omega&1&\omega^{-1}\\
-\omega^5&\omega^4&\omega^3&\omega^2&\omega&1
+1&amp;\omega^{-1}&amp;\omega^{-2}&amp;\omega^{-3}&amp;\omega^{-4}&amp;\omega^{-5}\\
+\omega&amp;1&amp;\omega^{-1}&amp;\omega^{-2}&amp;\omega^{-3}&amp;\omega^{-4}\\
+\omega^2&amp;\omega&amp;1&amp;\omega^{-1}&amp;\omega^{-2}&amp;\omega^{-3}\\
+\omega^3&amp;\omega^2&amp;\omega&amp;1&amp;\omega^{-1}&amp;\omega^{-2}\\
+\omega^4&amp;\omega^3&amp;\omega^2&amp;\omega&amp;1&amp;\omega^{-1}\\
+\omega^5&amp;\omega^4&amp;\omega^3&amp;\omega^2&amp;\omega&amp;1
 \end{pmatrix}.
 $$</p>
 <p>Each row is the previous row multiplied by $\omega$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\omega^{-r-s}\rho^{r+s}=\frac16\sum_t\omega^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.</p>

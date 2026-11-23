@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Euclidean Action of de Sitter Black Holes and Constrained Instantons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - On the Euclidean Action of de Sitter Black Holes and Constrained Instantons -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-euclidean-action-of-de-sitter-black-holes-and-constrained-instantons"><strong>On the Euclidean Action of de Sitter Black Holes and Constrained Instantons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2203.06155v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Edward K. Morvan, Jan Pieter van der Schaar, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 19 September 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>SciPost Phys. 14, 022 (2023)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - On the Euclidean Action of de Sitter Black Holes and Constrained Instantons - 2203.06155-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - On the Euclidean Action of de Sitter Black Holes and Constrained Instantons - 2203.06155.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - On the Euclidean Action of de Sitter Black Holes and Constrained Instantons - 2203.06155.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the on-shell Euclidean action of Schwarzschild–de Sitter black holes in arbitrary dimensions, in the presence of the conical singularities that a generic mass produces, and treats their contribution to the gravitational path integral as a constrained instanton. The action is finite, independent of the Euclidean time period, and equal to minus the sum of the black-hole and cosmological horizon entropies. The result is used to compute the nucleation rate of a neutral black hole of arbitrary mass in empty de Sitter space, which separates into a constant part and a non-perturbative part.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"Although Euclidean de Sitter black hole geometries have conical singularities for generic masses, their on-shell action is finite and is shown to be independent of the Euclidean time periodicity and equal to minus the sum of the black hole and cosmological horizon entropy."</p>
+<h3 id="how-it-is-obtained">How it is obtained</h3>
+<p>They compute the action "in the presence of conical singularities, in arbitrary dimensions, by just imposing the Smarr relation that relates the two conical deficits, yielding the expected answer as the sum of the horizon entropies." The Smarr relation, not a regularisation of the singularities, is what fixes the answer.</p>
+<h3 id="the-interpretation">The interpretation</h3>
+<p>The action "can be given a proper interpretation, either as the microcanonical partition function, directly giving the total entropy, or as a constrained instanton that can be used to compute the transition rate to spontaneously nucleate black holes of arbitrary mass in de Sitter space". The authors read this as support for a specific picture: "black holes in de Sitter should be thought of as constrained (localized) configurations of the available de Sitter degrees of freedom, lowering the entropy."</p>
+<h3 id="the-open-question">The open question</h3>
+<p>"An important remaining question in this regard is exactly why, and under what conditions, the presence of conical singularities nevertheless allows for a low-energy interpretation in terms of non-perturbative constrained instanton contributions." The authors flag it rather than resolve it.</p>
+<h3 id="the-nucleation-rate">The nucleation rate</h3>
+<p>The entropy deficit between Schwarzschild–de Sitter and empty de Sitter — "the relevant quantity describing the spontaneous nucleation of a black hole" — is shown to be well approximated by a simple form, so the nucleation probability separates into a constant and a non-perturbative contribution.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-black-hole-inside-de-sitter-is-a-constrained-configuration-of-the-same-degrees-of-freedom">1. A black hole inside de Sitter is a constrained configuration of the same degrees of freedom</h3>
+<p><strong>The idea.</strong> The black hole does not add entropy to de Sitter; it removes entropy from the total, being a localised configuration of de Sitter's own degrees of freedom. This is a <strong>reading</strong>, and its content is that the total entropy is the sum of two horizons and a black hole lowers it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the horizon's entropy as the hole's own property, added to the universe's. The claim that the sum is the fundamental object, and the hole a subtraction from it, is a different bookkeeping and one that the corpus's additivity assumption contradicts.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, "Beyond the asymptotically flat case", and <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim rests on the Euclidean path integral and on constrained instantons, neither of which the corpus has; and the precise justification is left open by the authors themselves. The cost is that the corpus would be adopting a picture whose own paper calls the mechanism unexplained.</p>
+<h3 id="2-smarr-fixes-the-action-despite-singularities">2. Smarr fixes the action despite singularities</h3>
+<p><strong>The idea.</strong> A relation between the two conical deficits, imposed as a constraint, is enough to make the singular Euclidean geometry give the right finite answer. This is a <strong>mechanism</strong>, and it is a statement about which identities carry information.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives Smarr by scaling and uses it as a check. Here Smarr does work: it is the input that determines the action. A relation used as a constraint rather than as a check is a technique the corpus has not tried.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the Smarr section.</p>
+<p><strong>What stands in the way.</strong> It needs the Euclidean geometry with two horizons and the conical deficits; the corpus has one horizon and no Euclidean section. Ranked second.</p>
+<h3 id="3-a-nucleation-rate-with-a-non-perturbative-piece">3. A nucleation rate with a non-perturbative piece</h3>
+<p><strong>The idea.</strong> The probability that a black hole appears in empty de Sitter separates into a constant and an exponentially suppressed part, and this is computed rather than modelled. This is a <strong>number</strong>.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> has no production mechanism for any object. A computed rate, even in a simplified setting, is a template for what a mechanism would look like.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The rate is for a neutral, non-rotating hole in exact de Sitter; the corpus's cosmology is FLRW with matter. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

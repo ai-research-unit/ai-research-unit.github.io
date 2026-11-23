@@ -228,7 +228,7 @@ $$</p>
 <li><code>k_B</code> and <code>K_B</code> are <code>kB</code>; <code>\epsilon_0</code> and <code>\varepsilon_0</code> are <code>eps0</code>; <code>\omega</code> and <code>\Omega</code> are <code>omega</code>.</li>
 <li>Face modifiers are stripped before the lookup: <code>\left</code>, <code>\right</code>, <code>\big</code>, <code>\Big</code>, <code>\bigg</code>, <code>\Bigg</code>, their <code>l</code> and <code>r</code> forms, and <code>\displaystyle</code>.</li>
 <li>Font commands are stripped too: <code>\mathrm</code>, <code>\text</code>, <code>\rm</code>, <code>\mathit</code>, <code>\mathsf</code>, <code>\mathcal</code>.</li>
-<li>Spacing is stripped: <code>\,</code>, <code>\;</code>, <code>\!</code>, <code>\:</code>, <code>\quad</code>, <code>\qquad</code> and <code>\</code>.</li>
+<li>Spacing is stripped: <code>\,</code>, <code>\;</code>, <code>\!</code>, <code>\:</code>, <code>\quad</code>, <code>\qquad</code> and <code>\ </code>.</li>
 <li>Braces, spaces and line breaks go, and a leading <code>_</code> or <code>^</code> goes with them.</li>
 </ul>
 <h2 id="5-detection-split-at-the-equals-sign">5. Detection: Split at the Equals Sign</h2>
@@ -294,7 +294,7 @@ python3 _reserve/py/detect-unit-declarations.py --self-test
 <p>The last two rows are the ones that matter: <code>\sigma^2=\hbar/(2m\omega)</code> and <code>\frac{h}{2\pi}=m</code> are constants in a formula, and a detector keyed on the glyph rather than on the chain would flag both.</p>
 <h2 id="11-the-listing">11. The Listing</h2>
 <pre><code class="language-python">#!/usr/bin/env python3
-&quot;&quot;&quot;Detect and patch unit declarations in a corpus of Markdown articles.
+"""Detect and patch unit declarations in a corpus of Markdown articles.
 
 A *unit declaration* is a chain of physical constants set to one:
 
@@ -329,7 +329,7 @@ arithmetic restored by hand, and the tool says so rather than guessing.
 
 Exit status is 1 when a site is found and 0 when there is none, so the default
 run is usable as a gate in a hook or a CI step.
-&quot;&quot;&quot;
+"""
 import argparse
 import glob
 import json
@@ -388,7 +388,7 @@ SPACE = re.compile(r'\\[,;!:]|\\q?quad|\\ ')
 
 
 def canon(atom):
-    &quot;&quot;&quot;Canonical constant name for one side of an `=`, or None.&quot;&quot;&quot;
+    """Canonical constant name for one side of an `=`, or None."""
     s = atom.replace('\u210f', '\\hbar')
     s = STRIP.sub('', s)
     s = FONT.sub('', s)
@@ -401,7 +401,7 @@ def canon(atom):
 
 
 def atomish(atom):
-    &quot;&quot;&quot;True when the piece could be one member of a chain (so a walk may cross it).&quot;&quot;&quot;
+    """True when the piece could be one member of a chain (so a walk may cross it)."""
     t = atom.strip()
     if not t or len(t) &gt; 30:
         return False
@@ -414,7 +414,7 @@ def atomish(atom):
         return False
     if re.search(r'[+\-*/&lt;&gt;]', t.replace('^', '')):
         return False
-    return bool(re.fullmatch(r&quot;[A-Za-z0-9\\{}_,'^.|\\ ]+&quot;, t))
+    return bool(re.fullmatch(r"[A-Za-z0-9\\{}_,'^.|\\ ]+", t))
 
 
 # ------------------------------------------------------------ the math spans
@@ -423,12 +423,12 @@ def spans(s):
     out = [(m.start(1), m.end(1)) for m in re.finditer(r'\$\$(.+?)\$\$', s, re.S)]
     masked = re.sub(r'\$\$(.+?)\$\$', lambda m: ' ' * len(m.group(0)), s, flags=re.S)
     out += [(m.start() + 1, m.end() - 1)
-            for m in re.finditer(r'(?&lt;!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)', masked, re.S)]
+            for m in re.finditer(r'(?&lt;!\$)\$(?!\$)(.+?)(?&lt;!\$)\$(?!\$)', masked, re.S)]
     return sorted(out)
 
 
 def wide(text, a, b):
-    &quot;&quot;&quot;The span with its delimiters, so a replacement can drop them.&quot;&quot;&quot;
+    """The span with its delimiters, so a replacement can drop them."""
     if text[a - 2:a] == '$$' and text[b:b + 2] == '$$':
         return a - 2, b + 2
     return a - 1, b + 1
@@ -444,7 +444,7 @@ def pieces(body):
 
 
 def chains(body):
-    &quot;&quot;&quot;Yield (start, end, names, run) for every run of constants ending in 1.&quot;&quot;&quot;
+    """Yield (start, end, names, run) for every run of constants ending in 1."""
     pcs = pieces(body)
     seen = set()
     for j, (txt, _, _) in enumerate(pcs):
@@ -468,31 +468,31 @@ def chains(body):
 
 
 def declaration(names, strict_ok=False):
-    &quot;&quot;&quot;The policy: a hard constant alone, or any two constants, or a lone
-    constant when the sentence itself is about units.&quot;&quot;&quot;
+    """The policy: a hard constant alone, or any two constants, or a lone
+    constant when the sentence itself is about units."""
     hard = any(CONST.get(n, ('', ''))[1] == 'hard' for n in names)
     known = [n for n in names if n in CONST]
     return hard or len(known) &gt;= 2 or (strict_ok and bool(known))
 
 
 def simple(atom):
-    &quot;&quot;&quot;An unknown atom a unit statement can still name: k_t', E, r, ...&quot;&quot;&quot;
+    """An unknown atom a unit statement can still name: k_t', E, r, ..."""
     t = atom.strip()
     return bool(t) and '\\' not in t and '|' not in t and '&amp;' not in t \
-        and bool(re.fullmatch(r&quot;[A-Za-z0-9_,'^ ]+&quot;, t))
+        and bool(re.fullmatch(r"[A-Za-z0-9_,'^ ]+", t))
 
 
 def patchable(names, run, body, chain):
-    &quot;&quot;&quot;Only a span that is the plain chain may be rewritten, and only when every
+    """Only a span that is the plain chain may be rewritten, and only when every
     atom is a known constant or a simple symbol.  A bar, a prefix or a fraction
-    means the surrounding arithmetic carries meaning the tool cannot see.&quot;&quot;&quot;
+    means the surrounding arithmetic carries meaning the tool cannot see."""
     if body.strip() != chain:
         return False
     return all(n in CONST or simple(txt) for n, (txt, _, _) in zip(names, run[:-1]))
 
 
 def render(names, run):
-    &quot;&quot;&quot;The unit statement that replaces a chain, as Markdown text.&quot;&quot;&quot;
+    """The unit statement that replaces a chain, as Markdown text."""
     parts = []
     for name, (txt, _, _) in zip(names, run[:-1]):
         parts.append('$%s$' % (CONST[name][0] if name in CONST else txt.strip()))
@@ -522,7 +522,7 @@ def quoted(text, a, b):
 
 
 def context_flags(text, a, b):
-    &quot;&quot;&quot;--strict: a lone soft constant counts when the sentence says 'units'.&quot;&quot;&quot;
+    """--strict: a lone soft constant counts when the sentence says 'units'."""
     lo = max(0, a - 120)
     hi = min(len(text), b + 80)
     return bool(CONTEXT.search(text[lo:hi]))
@@ -641,7 +641,7 @@ CASES = [
     (r'c=\hbar=m=1', True, True),
     (r'm=\hbar=\omega=1', True, True),
     (r'G=c=\hbar=k_B=1', True, True),
-    (r&quot;\hbar=m=k_t'=1&quot;, True, True),
+    (r"\hbar=m=k_t'=1", True, True),
     (r'm=c=1', True, True),
     (r'k_B=1', True, True),
     (r'\hbar=m=c=1', True, True),

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Texture of Leptons for the Koide and Alikhanov relations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A Texture of Leptons for the Koide and Alikhanov relations - 2610.10696.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-texture-of-leptons-for-the-koide-and-alikhanov-relations"><strong>A Texture of Leptons for the Koide and Alikhanov relations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2610.10696 [hep-ph, hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alessandro Strumia (Università di Pisa)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 October 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not stated in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A Texture of Leptons for the Koide and Alikhanov relations - 2610.10696-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A Texture of Leptons for the Koide and Alikhanov relations - 2610.10696.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A Texture of Leptons for the Koide and Alikhanov relations - 2610.10696.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Puts the charged-lepton and neutrino relations into one formula, $Q_N=(N+1)/2N$, with $N=3$ for the leptons and $N=2$ for the neutrino mass-squared differences, and notes that this is the arithmetic mean of the degenerate value $1/N$ and the hierarchical value $1$. It then exhibits explicit textures: a silver-ratio neutrino matrix whose masses $(0,\sqrt2-1,\sqrt2+1)$ satisfy Alikhanov exactly and give a $23$ mixing angle of $\pi/8$; and a circulant charged-lepton matrix $K_1$ with off-diagonal entries $e^{\pm i\varphi}/\sqrt2$ and $\varphi\approx2/9$, which satisfies Koide because the diagonal and off-diagonal parts have equal trace. Pairing the two textures fits all three mixing angles with two relative phases and predicts $\cos\delta\approx-0.858$ and $m_{\beta\beta}\approx3.6$ meV.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="one-formula-for-two-relations">One formula for two relations</h3>
+<p>"Defining $Q_N(z_i)=\sum z_i^2/(\sum z_i)^2$ for $z_{1,\dots,N}\ge0$, Alikhanov corresponds to $Q_2(\sqrt{\Delta m^2})=3/4$, Koide to $Q_3(\sqrt{m_\ell})=2/3$. They can be written in a common form as"</p>
+<p>$$
+Q_N=\frac{N+1}{2N},
+\tag{paper 1}
+$$</p>
+<p>"the average between the minimal degenerate value $1/N$ and the maximal hierarchical value $1$."</p>
+<h3 id="the-neutrino-texture">The neutrino texture</h3>
+<p>"Inspired by the golden-ratio texture, we consider its silver-ratio analogue"</p>
+<p>$$
+M_\nu=m_0A_1,\qquad
+A_1=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;1\\0&amp;1&amp;2\end{pmatrix},
+\tag{paper 2}
+$$</p>
+<p>"The resulting neutrino masses"</p>
+<p>$$
+\left(m_1,m_2,m_3\right)=m_0\left(0,\ \sqrt2-1,\ \sqrt2+1\right)
+\tag{paper 3}
+$$</p>
+<p>"satisfy the Alikhanov relation. $A_1$ is diagonalized in the $23$ sector by the 'silver angle' $\theta=\pi/8$". I checked that the relation holds exactly for these masses: $(m_3+m_2)/(m_3-m_2)=2\sqrt2/2=\sqrt2$; equivalently $m_3/m_2=3+2\sqrt2=(1+\sqrt2)^2$, and $4(m_2^2+m_3^2)=3(m_2+m_3)^2$ is the same statement.</p>
+<p>Two further textures give the same masses: $A_2=\begin{pmatrix}1&amp;1&amp;1\\1&amp;1&amp;1\\1&amp;1&amp;2\end{pmatrix}$, related to $A_1$ by a Majorana phase $\pi$ in the second eigenvalue, and $A_3=\begin{pmatrix}2&amp;1&amp;1\\1&amp;5&amp;5\\1&amp;5&amp;5\end{pmatrix}$. Both come from a two-singlet see-saw, $A_2=YY^\mathrm{T}$ with $Y=\begin{pmatrix}1&amp;0\\1&amp;0\\1&amp;1\end{pmatrix}$, and the Gram matrix</p>
+<p>$$
+G=Y^\mathrm{T}Y=\begin{pmatrix}3&amp;1\\1&amp;1\end{pmatrix},
+\tag{paper 6}
+$$</p>
+<p>so that "in terms of $G$ the Alikhanov condition is $\det G/(\mathrm{tr}\,G)^2=m_2m_3/(m_2+m_3)^2=1/8$."</p>
+<h3 id="the-charged-lepton-texture">The charged-lepton texture</h3>
+<p>"A first cyclic texture that realises this condition is"</p>
+<p>$$
+K_1=\begin{pmatrix}1&amp;e^{i\varphi}/\sqrt2&amp;e^{-i\varphi}/\sqrt2\\
+e^{-i\varphi}/\sqrt2&amp;1&amp;e^{i\varphi}/\sqrt2\\
+e^{i\varphi}/\sqrt2&amp;e^{-i\varphi}/\sqrt2&amp;1\end{pmatrix},
+\tag{paper 12}
+$$</p>
+<p>"All lepton masses are reproduced for $\varphi\approx2/9$. The squares of the diagonal and off-diagonal parts of $K_1$ have the same trace. This $M_e$ is diagonalised by the trimaximal Fourier matrix $(V_\ell)_{jk}=\omega^{(j-1)k}/\sqrt3$ with $\omega=e^{2\pi i/3}$."</p>
+<p>The trace identity is the whole content of Koide here: $\mathrm{tr}\,K_1=3$ and $\mathrm{tr}\,K_1^2=3+6\cdot\frac12=6$, so $\mathrm{tr}\,K_1^2/(\mathrm{tr}\,K_1)^2=6/9=2/3$ for <em>any</em> $\varphi$; the phase only moves the masses along the cone.</p>
+<h3 id="predictions">Predictions</h3>
+<p>"Pairing this $K_1$ Koide texture with the $A_3$ texture allows one to fit the three measured neutrino mixing angles in terms of the two relative phases $\phi\approx0.320$ and $\psi\approx-1.22$, for which" $\sin^2\theta_{12}\approx0.323$, $\sin^2\theta_{23}\approx0.467$, $\sin^2\theta_{13}\approx0.0225$. "The CP-violating angle in neutrino oscillations is predicted as $\cos\delta\approx-0.858\pm0.024$. The best-fit point has $\chi^2\approx4.7$, which is good but not perfect. This happens because the model predicts $|V_{e1}|^2\equiv\cos^2\theta_{12}\cos^2\theta_{13}=[1-\cos(\psi-2\pi/3)]/3\le2/3$ which needs mildly increasing $\theta_{12}$ above its central value." And "The Majorana mass relevant for neutrino-less double-beta decay is $m_{\beta\beta}\approx3.6$ meV."</p>
+<p>The alternative texture $K_2=\alpha\,\mathbb{1}_3+3(1-\alpha)bb^\mathrm{T}+\beta(bc^\mathrm{T}+cb^\mathrm{T})$, with $b=(0,0,1)^\mathrm{T}$ and $c=(2,-1,0)^\mathrm{T}$, fits without extra phases, requires</p>
+<p>$$
+\frac{\mathrm{tr}\,K_2^2}{(\mathrm{tr}\,K_2)^2}=\frac{3+6(1-\alpha)^2+10\beta^2}{9}=\frac23 ,
+\tag{paper 15}
+$$</p>
+<p>and uses $\alpha\approx0.5802$, $\beta\approx0.4408$ to reproduce the masses, with the Koide value of $m_\tau\approx1776.97$ MeV.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-formula-two-sectors-math79">1. One formula, two sectors: $Q_N=(N+1)/2N$</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $Q_N=\frac{N+1}{2N}$ is the arithmetic mean of the degenerate value $1/N$ and the hierarchical value $1$; $N=3$ gives the charged-lepton $2/3$, $N=2$ applied to $\sqrt{\Delta m^2}$ gives the Alikhanov $3/4$.</p>
+<p><strong>What it would add.</strong> This is the single most useful statement in the folder. <code>articles_internal/flavour-research.md</code> treats the lepton $2/3$ as an isolated fact and the neutrino sector as unrelated. Here the same closure, with the same "half-way between democracy and hierarchy" content, holds in both sectors at the values their $N$ dictates — and the neutrino one is applied to <em>differences of squares</em>, which is what experiment measures. It also explains why $2/3$ is not arbitrary: it is the midpoint of its own allowed interval, which is the arithmetic fact the Huang conversion notes for $N=3$ and this paper generalises to every $N$.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2 (meaning of $2/3$) and §11, plus <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing, for the arithmetic; the physics question becomes why nature picks the midpoint in both sectors, which the paper does not answer. The Alikhanov relation is only tested at $0.3\%$, so its status is weaker than Koide's $10^{-5}$.</p>
+<h3 id="2-a-texture-whose-koide-property-is-a-trace-identity-with-the-phase-free">2. A texture whose Koide property is a trace identity, with the phase free</h3>
+<p><strong>The idea.</strong> A <strong>matrix</strong>: the circulant $K_1$ with unit diagonal and off-diagonal magnitude $1/\sqrt2$ satisfies $\mathrm{tr}\,K^2/(\mathrm{tr}\,K)^2=2/3$ for every phase $\varphi$; the phase $\varphi\approx2/9$ then fixes the masses along the cone.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> describes the cone and the position on it but has no matrix that separates the two. Here the separation is explicit and exact: the cone is a normalisation statement about the diagonal and off-diagonal parts, the position is a single phase, and the diagonalising matrix is the trimaximal Fourier matrix — which is the same $Z_3$ structure as everywhere else in the folder. That gives the corpus a candidate answer to "what kind of matrix has this property", with the phase as the only free input.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2 and §5, and the Yukawa-sector article for the matrix-level statement.</p>
+<p><strong>What stands in the way.</strong> The phase is fitted, not derived, and the circulant form is chosen. The paper says of its alternative $K_2$ that it "arbitrarily assumes: equal first two diagonal entries, a vanishing 12 entry, and a $2:1$ ratio of the off-diagonal magnitudes", and the same honesty applies to $K_1$.</p>
+<h3 id="3-a-neutrino-texture-that-satisfies-alikhanov-exactly-with-math105">3. A neutrino texture that satisfies Alikhanov exactly, with $m_1=0$</h3>
+<p><strong>The idea.</strong> A <strong>texture and two numbers</strong>: $M_\nu=m_0A_1$ gives $(0,\sqrt2-1,\sqrt2+1)m_0$, hence $m_3/m_2=(1+\sqrt2)^2=3+2\sqrt2$ and a $23$ angle of $\pi/8$; pairing with $K_1$ predicts $\cos\delta\approx-0.858$ and $m_{\beta\beta}\approx3.6$ meV.</p>
+<p><strong>What it would add.</strong> The corpus's neutrino notes have masses as inputs and mixing as data. This gives a two-parameter origin for both, with a testable correlation between the CP phase and the mixing angles, and the smallest possible see-saw that produces it (two right-handed singlets). The prediction $m_{\beta\beta}\approx3.6$ meV is within reach of next-generation neutrinoless double-beta decay, which makes it a target rather than a fit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> and <code>articles_internal/flavour-research.md</code> §11.</p>
+<p><strong>What stands in the way.</strong> $m_1=0$ exactly is a strong assumption that the oscillation data do not require; the fit needs two relative phases between the charged-lepton and neutrino textures, which is a two-parameter adjustment; and $\chi^2\approx4.7$ for three angles is not a success.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The failure mode is stated precisely: $|V_{e1}|^2\le2/3$ forces $\sin^2\theta_{12}$ above its central value, so the texture is testable against improved $\theta_{12}$. The see-saw Gram-matrix form of the Alikhanov condition, $\det G/(\mathrm{tr}\,G)^2=1/8$, is the neutrino analogue of the lepton trace identity and is worth quoting alongside it. The paper's parenthetical, that QED corrections degrade Koide to $0.2\%$ at the electroweak scale, repeats the standard figure.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

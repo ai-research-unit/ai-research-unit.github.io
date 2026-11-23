@@ -89,7 +89,7 @@
 <h2 id="3-fixing-the-boundary">3. Fixing the Boundary</h2>
 <p><strong>Three inputs, one output.</strong> A list of articles, a section of <code>maths.md</code> or <code>physics.md</code>, and a whole category produce the same file. Only the boundary comes from the input. Everything after this section is identical.</p>
 <p><strong>Resolve the boundary physically.</strong> Do not trust the input string. Extract the anchors of the section:</p>
-<pre><code>awk '/^## /{sec=substr($0,4)} sec==&quot;&lt;Category&gt;&quot; &amp;&amp; /&lt;a href=/{print}' physics.md
+<pre><code>awk '/^## /{sec=substr($0,4)} sec=="&lt;Category&gt;" &amp;&amp; /&lt;a href=/{print}' physics.md
 </code></pre>
 <p>The count of anchors is the article count. State it in words, as the existing files do: <em>twenty-nine articles</em>, <em>eighty-two articles</em>, <em>one hundred and one articles</em>.</p>
 <p><strong>Recompute the count at the time of writing.</strong> The menus drift: an article is added, a block moves, a subsection is renamed. Recompute the count from the anchors at every write, and recompute a count taken by subtraction as well. The family has already carried both kinds of stale number, and a stale count is a defect the next reader inherits.</p>
@@ -160,7 +160,7 @@
 <pre><code>**&lt;Object name in bold.&gt;** One sentence of definition, only if the name does not fix it.
 
 $$
-<the display, copied from the article>
+&lt;the display, copied from the article&gt;
 $$
 
 **The non-trivial claim.** One paragraph: what the display says that a competent
@@ -185,7 +185,7 @@ model would not produce, and what it costs.
 <h2 id="8-the-formulas">8. The Formulas</h2>
 <p><strong>Copied, never reconstructed.</strong> A display is copied from the article named beside it, with the same symbols, hats, primes and order of factors. A formula retyped from memory is a new formula.</p>
 <p><strong>No formula is invented in the summary.</strong> If the map needs an equation no article writes, the map needs a sentence naming the gap. The one-sentence version is prose for this reason: prose cannot drift into a false identity.</p>
-<p><strong>Follow the corpus conventions.</strong> Display math in <code>$$`, indented four spaces inside a list. Never let `$...$` span a line break. A prime is a superscript on the letter and the subscript stays the index it names: $\tilde Q'_{\Phi}$, never a prime below.</code>\dddot<code>and</code>\slashed<code>are template macros. No</code>array` tables; a table is Markdown.</p>
+<p><strong>Follow the corpus conventions.</strong> Display math in <code>$$</code>, indented four spaces inside a list. Never let <code>$...$</code> span a line break. A prime is a superscript on the letter and the subscript stays the index it names: $\tilde Q'_{\Phi}$, never a prime below. <code>\dddot</code> and <code>\slashed</code> are template macros. No <code>array</code> tables; a table is Markdown.</p>
 <p><strong>One symbol, one meaning, across the file.</strong> The index convention holds here exactly as in the articles: low indices, no raised spacetime index, the weight $\sum_{\imath}\varepsilon_{\imath}$ for a contraction.</p>
 <p><strong>The recomputation rule.</strong> Every count, dimension and coefficient asserted in the summary is recomputed on at most one hundred elements before it is written. A claim no check reaches is left out, or is written with the word <em>recorded</em> in front of it.</p>
 <h2 id="9-what-must-be-quoted">9. What Must Be Quoted</h2>
@@ -201,7 +201,7 @@ model would not produce, and what it costs.
 <ul>
 <li><em>The vacuum is a minimal idempotent: "no particles" is a rank-one projection inside the algebra and not a vector added to the theory.</em></li>
 <li><em>The metric is the Gram matrix of a frame of four elements, so the algebra carries any Lorentzian metric at the price of a frame field.</em></li>
-<li><em>The unitary group of $\mathbb{B}_\Phi$ is $\mathrm{U}(2)$, and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8>4$ excludes colour.</em></li>
+<li><em>The unitary group of $\mathbb{B}_\Phi$ is $\mathrm{U}(2)$, and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8&gt;4$ excludes colour.</em></li>
 </ul>
 <p><strong>The load-bearing equation.</strong> The equation an agent must reproduce to work in the category, copied with its glyphs. Not every equation of the article: the one that states the result.</p>
 <ul>
@@ -256,7 +256,7 @@ grep -c '^\*\*Source\.\*\*' &lt;file&gt;         # sources, or none at all
 grep -o 'articles_[a-z]*/[a-z0-9-]*\.md' &lt;file&gt; | sort -u | wc -l   # coverage
 grep -c 'non-trivial claim' &lt;file&gt;         # one claim per block, or a list instead
 grep -nE '(\$\\square\$|\\\(\\square\\\))[ \t]*$' &lt;file&gt;           # no proof-end marks
-awk '{n=gsub(/\$/,&quot;&amp;&quot;); if (n%2) print NR&quot;: odd number of dollars&quot;}' &lt;file&gt;   # no open math, code blocks excluded
+awk '{n=gsub(/\$/,"&amp;"); if (n%2) print NR": odd number of dollars"}' &lt;file&gt;   # no open math, code blocks excluded
 </code></pre>
 <p><strong>The last check skips fenced blocks.</strong> A shell command inside a fence carries its own dollars and is not math.</p>
 <p><strong>Then read the file as the machine reader.</strong> Six questions. Does the Introduction state the count, the boundary and the structural fact? Is every block either a claim or a list? Is every quote short and auditable against one article? Does any line merely restate a definition the model already has? Does the Summary carry the formulas, the non-textbook results and the refusals? Does the file say what the category refuses?</p>

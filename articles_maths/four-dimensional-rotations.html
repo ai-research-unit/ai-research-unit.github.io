@@ -89,7 +89,7 @@
 <p><strong>Definition.</strong> The <strong>two angles</strong> of $T\in SO(4)$ are the numbers $\theta_{\mathrm{pla}}\ge\theta_{\mathrm{plb}}\ge0$ of the normal form; the <strong>angle pair</strong> is the unordered pair $\{\theta_{\mathrm{pla}},\theta_{\mathrm{plb}}\}$.</p>
 <p><strong>Remark (the two planes).</strong> The change of basis of the theorem is by an element of $O(4)$, so the two invariant planes of the normal form are orthonormal planes on which $T$ acts as $R(\theta_{\mathrm{pla}})$ and $R(\theta_{\mathrm{plb}})$ respectively, and they are completely orthogonal. The pair of planes is unique for a generic rotation and far from unique for an isoclinic one, as the next sections show.</p>
 <h3 id="the-three-types">The Three Types</h3>
-<p><strong>Definition.</strong> A rotation $T\in SO(4)$ is <strong>simple</strong> when $\theta_{\mathrm{plb}} = 0$, <strong>isoclinic</strong> when $0<\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$, and <strong>double</strong> when $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$.</p>
+<p><strong>Definition.</strong> A rotation $T\in SO(4)$ is <strong>simple</strong> when $\theta_{\mathrm{plb}} = 0$, <strong>isoclinic</strong> when $0&lt;\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$, and <strong>double</strong> when $0&lt;\theta_{\mathrm{plb}}&lt;\theta_{\mathrm{pla}}$.</p>
 <p>The degenerate cases are the identity, $\theta_{\mathrm{pla}} = \theta_{\mathrm{plb}} = 0$, whose angle pair is $\{0,0\}$, and the central inversion $-I$, whose angle pair is $\{\pi,\pi\}$; the central inversion is isoclinic and has no fixed vector.</p>
 <p>The three types are tabulated with their fixed spaces and their planes.</p>
 <div class="table-scroll"><table>
@@ -110,19 +110,19 @@
 </tr>
 <tr>
 <td>Simple</td>
-<td>$\{\theta_{\mathrm{pla}},0\}$, $0<\theta_{\mathrm{pla}}\le\pi$</td>
+<td>$\{\theta_{\mathrm{pla}},0\}$, $0&lt;\theta_{\mathrm{pla}}\le\pi$</td>
 <td>a plane</td>
 <td>the fixed plane and its complement</td>
 </tr>
 <tr>
 <td>Double</td>
-<td>$\{\theta_{\mathrm{pla}},\theta_{\mathrm{plb}}\}$, $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$</td>
+<td>$\{\theta_{\mathrm{pla}},\theta_{\mathrm{plb}}\}$, $0&lt;\theta_{\mathrm{plb}}&lt;\theta_{\mathrm{pla}}$</td>
 <td>$\{0\}$</td>
-<td>the only pair of invariant planes when $\theta_{\mathrm{pla}}<\pi$</td>
+<td>the only pair of invariant planes when $\theta_{\mathrm{pla}}&lt;\pi$</td>
 </tr>
 <tr>
 <td>Isoclinic</td>
-<td>$\{\theta,\theta\}$, $0<\theta<\pi$</td>
+<td>$\{\theta,\theta\}$, $0&lt;\theta&lt;\pi$</td>
 <td>$\{0\}$</td>
 <td>one pair among infinitely many</td>
 </tr>
@@ -134,7 +134,7 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proposition.</strong> Let $T$ be a double rotation with angles $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}<\pi$. Then the two planes of its normal form are the only invariant planes of $T$.</p>
+<p><strong>Proposition.</strong> Let $T$ be a double rotation with angles $0&lt;\theta_{\mathrm{plb}}&lt;\theta_{\mathrm{pla}}&lt;\pi$. Then the two planes of its normal form are the only invariant planes of $T$.</p>
 <p><em>Proof.</em> Let $P$ be an invariant plane and extend scalars to $\mathbb{C}$. Since the four eigenvalues $\exp(\pm i\theta_{\mathrm{pla}}), \exp(\pm i\theta_{\mathrm{plb}})$ are distinct, $T$ is diagonalisable with four eigenspaces of complex dimension one, and the invariant complex plane $P\otimes\mathbb{C}$ is the sum of two of them. A complex subspace comes from a real one exactly when it is stable under complex conjugation, so the two eigenvalues involved are conjugate, and the two possibilities are $\exp(i\theta_{\mathrm{pla}}), \exp(-i\theta_{\mathrm{pla}})$ and $\exp(i\theta_{\mathrm{plb}}), \exp(-i\theta_{\mathrm{plb}})$. The first gives the plane of the angle $\theta_{\mathrm{pla}}$ and the second the plane of the angle $\theta_{\mathrm{plb}}$.</p>
 <h2 id="the-quaternion-parametrisation-and-the-two-angles">The Quaternion Parametrisation and the Two Angles</h2>
 <h3 id="the-parametrising-pair">The Parametrising Pair</h3>
@@ -177,7 +177,7 @@ $$</p>
 <p><em>Proof.</em> The angle pair is obtained from $\theta+\phi$ and $\theta-\phi$, and a rotation is isoclinic when the two angles are equal and nonzero, which happens exactly when $\cos(\theta+\phi) = \cos(\theta-\phi)$, since the cosine is injective on $[0,\pi]$. The identity $\cos(\theta+\phi)-\cos(\theta-\phi) = -2\sin\theta\sin\phi$ vanishes with $\theta,\phi\in[0,\pi]$ exactly when $\theta\in\{0,\pi\}$ or $\phi\in\{0,\pi\}$, that is when $\tilde q = \pm1$ or $\tilde p = \pm1$. If $\tilde q = \pm1$ then $T = \rho_{\tilde p^{-1}}$ is a right multiplication and if $\tilde p = \pm1$ then $T = L_{\tilde q}$ is a left multiplication, and each of these is isoclinic by the two propositions on the factors.</p>
 <p><strong>Definition.</strong> An isoclinic rotation is <strong>left-isoclinic</strong> when it is a left multiplication and <strong>right-isoclinic</strong> when it is a right multiplication.</p>
 <p>A left-isoclinic rotation $L_{\tilde q}$ rotates every plane of a certain family through $\theta$ with the same sense; a right-isoclinic rotation $\rho_{\tilde p}$ rotates its two planes through $\phi$ and $-\phi$. Both have the angle pair $\{\theta,\theta\}$ and $\{\phi,\phi\}$ respectively, which is the reason the normal form alone cannot separate them.</p>
-<p><strong>Proposition (the four isoclinic rotations).</strong> Let $\nu$ be a unit imaginary quaternion and $0<\theta<\pi$. Then the four rotations</p>
+<p><strong>Proposition (the four isoclinic rotations).</strong> Let $\nu$ be a unit imaginary quaternion and $0&lt;\theta&lt;\pi$. Then the four rotations</p>
 <p>$$
 L_{\exp(\nu\theta)},\qquad L_{\exp(-\nu\theta)} = L_{\exp(\nu\theta)}^{-1},\qquad \rho_{\exp(\nu\theta)},\qquad \rho_{\exp(-\nu\theta)} = \rho_{\exp(\nu\theta)}^{-1}
 $$</p>
@@ -204,18 +204,18 @@ $$</p>
 </tr>
 <tr>
 <td>Simple, not the identity</td>
-<td>$\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ and $|\operatorname{Re}\tilde q|<1$</td>
-<td>$\{\theta_{\mathrm{pla}},0\}$ with $0<\theta_{\mathrm{pla}}\le\pi$</td>
+<td>$\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ and $|\operatorname{Re}\tilde q|&lt;1$</td>
+<td>$\{\theta_{\mathrm{pla}},0\}$ with $0&lt;\theta_{\mathrm{pla}}\le\pi$</td>
 </tr>
 <tr>
 <td>Left-isoclinic</td>
 <td>$\tilde p = \pm1$ and $\tilde q\neq\pm1$</td>
-<td>$\{\theta,\theta\}$ with $0<\theta<\pi$</td>
+<td>$\{\theta,\theta\}$ with $0&lt;\theta&lt;\pi$</td>
 </tr>
 <tr>
 <td>Right-isoclinic</td>
 <td>$\tilde q = \pm1$ and $\tilde p\neq\pm1$</td>
-<td>$\{\phi,\phi\}$ with $0<\phi<\pi$</td>
+<td>$\{\phi,\phi\}$ with $0&lt;\phi&lt;\pi$</td>
 </tr>
 <tr>
 <td>Central inversion</td>
@@ -248,7 +248,7 @@ $$</p>
 \tilde q = \sin\eta\;\exp(\vec e_x\zeta_x) + \cos\eta\;\exp(\vec e_x\zeta_y)\vec e_y, \qquad \eta\in\Bigl[0,\frac{\pi}{2}\Bigr], \quad \zeta_x,\zeta_y\in[0,2\pi),
 $$</p>
 <p>so that in the coordinates $(q_t,q_x,q_y,q_z)$ of $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ one has $q_t = \sin\eta\cos\zeta_x$, $q_x = \sin\eta\sin\zeta_x$, $q_y = \cos\eta\cos\zeta_y$ and $q_z = \cos\eta\sin\zeta_y$.</p>
-<p><strong>Proposition.</strong> The Hopf coordinates are coordinates on the unit sphere, and $|\tilde q_1| = \sin\eta$ while $|\tilde q_2| = \cos\eta$; consequently the level set $\eta = \mathrm{const}$ with $0<\eta<\frac{\pi}{2}$ is a torus, the sets $\eta = 0$ and $\eta = \frac{\pi}{2}$ are circles, and the level set $\eta = \frac{\pi}{4}$ is the <strong>Clifford torus</strong> $|\tilde q_1| = |\tilde q_2| = \frac{1}{\sqrt2}$.</p>
+<p><strong>Proposition.</strong> The Hopf coordinates are coordinates on the unit sphere, and $|\tilde q_1| = \sin\eta$ while $|\tilde q_2| = \cos\eta$; consequently the level set $\eta = \mathrm{const}$ with $0&lt;\eta&lt;\frac{\pi}{2}$ is a torus, the sets $\eta = 0$ and $\eta = \frac{\pi}{2}$ are circles, and the level set $\eta = \frac{\pi}{4}$ is the <strong>Clifford torus</strong> $|\tilde q_1| = |\tilde q_2| = \frac{1}{\sqrt2}$.</p>
 <p><em>Proof.</em> The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(\vec e_x\zeta_x)$ and $\tilde q_2 = \cos\eta\,\exp(\vec e_x\zeta_y)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.</p>
 <h3 id="the-rotation-as-a-translation">The Rotation as a Translation</h3>
 <p><strong>Theorem.</strong> Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as</p>
@@ -349,7 +349,7 @@ $$</p>
 </tr>
 <tr>
 <td>simple / double / isoclinic</td>
-<td>$\theta_{\mathrm{plb}} = 0$ / $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$ / $0<\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$</td>
+<td>$\theta_{\mathrm{plb}} = 0$ / $0&lt;\theta_{\mathrm{plb}}&lt;\theta_{\mathrm{pla}}$ / $0&lt;\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$</td>
 </tr>
 <tr>
 <td>$\theta = \arccos(\operatorname{Re}\tilde q)$, $\phi = \arccos(\operatorname{Re}\tilde p)$</td>

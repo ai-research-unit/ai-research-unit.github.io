@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards an information description of space-time — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Towards an information description of space-time - 2208.13738.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-an-information-description-of-space-time"><strong>Towards an information description of space-time</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2208.13738 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 July 2022 (text dated 30 August 2022)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Towards an information description of space-time - 2208.13738-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Towards an information description of space-time - 2208.13738.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fisher-information-and-the-biquaternion-norm.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Towards an information description of space-time - 2208.13738.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the kinematics of special relativity from an entropy-balance condition on a finite ensemble of correlated quantum particles: the sum of information, thermodynamic and entanglement entropies vanishes. The speed of light appears twice, as the information velocity that closes the entropy-flux equation into the second Friedmann equation, and as minus the gravitational potential of the whole ensemble acting on one particle. Spatial distance is replaced by the Fisher–Rao distance between particle distributions, and the two relativity postulates are restated as entropy universality and finite information density. The derivations use order-of-magnitude relations, and the paper says so: it ends by calling the programme a construction of a future information theory of gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-balance-condition">The balance condition</h3>
+<p>$$S_{\rm tot}=I+S+H=0$$
+(paper 2), read as "the conservation law for all kinds of information in the universe". The entropy is tied to the action by $S\sim S/\hbar$ (paper 3), where the same letter $S$ is used for the action in the numerator; when the entanglement entropy vanishes, $I(1+S/I)=0$ (paper 4). For systems with horizons the three components trade against each other, and the paper lists dark energy and the black-hole superluminal-motion controversy as targets.</p>
+<h3 id="information-speed-and-the-friedmann-equation">Information speed and the Friedmann equation</h3>
+<p>If the entropy inside a volume grows only by flux through its boundary,
+$$\frac{dS}{dt}=S_m\,v\frac{A}{V},\qquad S=S_m\,v\,t\frac{A}{V}$$
+(paper 5–6), where $S_m$ is the thermal entropy density of matter and $v$ the "information speed". At the Hubble horizon $R_H=c/H$, with the horizon entropy $$S_H=\frac{A_Hc^3}{4G\hbar}=\frac{\pi c^5}{G\hbar H^2}$$ (paper 7), the Euler relation $\rho+\frac{p}{c^2}=k_BT_H\frac{S_m}{V_H}$ (paper 8) and the de Sitter temperature $T_H=\frac{\hbar H}{2\pi k_Bc^2}$ (paper 9), equation (paper 5) "leads to the standard Raychaudhuri, or the second Friedmann equation", $$\frac{dH}{dt}=-4\pi G\left(\rho+\frac{p}{c^2}\right)$$ (paper 10),"but only if $v=c$ (paper 11). Hence the speed of light $c$ can be understood as the world ensemble parameter that corresponds to the information velocity", measuring "the response time of the world ensemble on the transfer of one bit of information".</p>
+<h3 id="the-metric-from-relative-entropy">The metric from relative entropy</h3>
+<p>Particles are labelled by informational coordinates with $P(x_i)\sim e^{-S(x_i)}$ (paper 12). Entropy of a region scales as its area, $R^2=g_{ij}x^ix^j\sim S(x^i)$ (paper 16), and the distance between neighbouring distributions is the variance
+$$dl^2=g_{ij}dx^idx^j,\qquad g_{nm}=-\frac{\partial S(x^i,x'^i)}{\partial x'^n\partial x'^m},\qquad S(x^i+dx^i,x^i)=-\tfrac12dl^2$$
+(paper 17–19). This is the Fisher–Rao metric, "unique: there is only one metric (up to rescaling) that is invariant under sufficient statistics", and it gives "the conformal geometry of space - the local shapes but not absolute local sizes". The count of coordinates comes from the entropy of the ensemble: the total action carries a factor $N^3$, $S_U\sim N^3\hbar$ (paper 13), and the maximal entropy of a random variable with $N^3$ realizations is $\ln N^3=3\ln N$, so "in local measurements an observer obtains three copies of the entropy, ∼ ln N , which is used to define information distances." and "three may be required ($i=1,2,3$)" (paper 14). Two Bekenstein bounds, $S_{\max}\sim MR$ and $S_{\max}\sim R^2/G$ (paper 7, 46), are then equated and give $2GM/R=c^2$ (paper 15), "which serves as the definition of Schwarzschild radius and also relates with each other the fundamental parameters $c$ and $G$".</p>
+<h3 id="the-postulates-restated">The postulates, restated</h3>
+<p>(A) "The laws of physics have the same form for the observers with the same information, but different thermodynamic and entanglement entropies"; (B) "A finite volume of space can only contain a finite amount of information". From (B) a maximal speed follows, and from (A) it is the same for all inertial observers: "The former considerations are enough to derive the whole theory of Special Relativity". Lorentz contraction follows from $dS\sim d(vt)$ (paper 26) with $dI\approx-dS$ (paper 27). The relativity principle is then called "a fictitious symmetry that has been artificially imposed in physical models".</p>
+<h3 id="gravity-as-the-potential-of-the-ensemble">Gravity as the potential of the ensemble</h3>
+<p>Mach's principle is made an equation:
+$$c^2=-\Phi=\frac{2GM_U}{R_H},\qquad E=mc^2=-m\Phi$$
+(paper 29–30), so that "the entire ensemble is engaged in any local interaction". A subsystem of $n\le N$ particles weakens the effective constant, $S/I\sim n/N$ (paper 31) and $c'^2\sim(1-f)c^2$ with $f\sim(N-n)/N$ (paper 32–33), which "imitates gravitation interaction locally and is a representation of the equivalence principle". The paper notes the possible bearing on the hierarchy problem. A measurement that loses one bit must emit $k_BT_{\rm CMB}\ln2\sim1.6\times10^{-13}$ GeV.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-distance-as-relative-entropy">1. Distance as relative entropy</h3>
+<p><strong>The idea.</strong> The metric is not an object of the geometry but the second derivative of a relative entropy, $g_{nm}=-\partial^2S/\partial x'^n\partial x'^m$, so that distance is distinguishability and the geometry is only conformal until a scale is supplied. A <strong>formula</strong>, with $c$ supplying the scale.</p>
+<p><strong>What it would add.</strong> The corpus's Fisher article establishes the Fisher information of the biquaternion state as a quadratic form and ties it to the norm. This paper pushes the same object to a metric on space, and states the two consequences the corpus does not: that the metric is unique up to scale, and that the scale must come from outside the information geometry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fisher-information-and-the-biquaternion-norm.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction needs the entropy as a function of position with a maximum at coincident points, which presupposes the space it is meant to build; the paper's own $S(x^i,x'^i)$ is thus a functional of an already given configuration. The corpus's Fisher form is computed on the state space, not on spacetime, and no map between the two is offered.</p>
+<h3 id="2-math47-as-the-information-velocity">2. $c$ as the information velocity</h3>
+<p><strong>The idea.</strong> The second Friedmann equation follows from entropy flux through the horizon only for one value of the flux velocity, and that value is $c$. A <strong>mechanism</strong>: the light speed is the response rate of the whole ensemble, not a property of the electromagnetic field.</p>
+<p><strong>What it would add.</strong> The corpus's light-cone article treats the cone as the information barrier, a kinematic statement. Here the same constant is derived from a thermodynamic identity at a horizon, which is a different logical position: the cone then follows from the entropy balance rather than being assumed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation fixes $v$ by matching a known equation, so $v=c$ is chosen rather than predicted; change the entropy assignment or the temperature and a different $v$ results. The horizon entropy used is the black-hole formula applied to a cosmological horizon, an identification the paper makes without argument.</p>
+<h3 id="3-math52-the-ensemble-as-the-inertial-frame">3. $c^2=-\Phi$: the ensemble as the inertial frame</h3>
+<p><strong>The idea.</strong> The speed constant is also minus the gravitational potential of the whole ensemble at a particle, so rest energy is binding energy to the universe, and a finite subsystem reduces the effective constant by its share of the particles. A <strong>reading</strong> of inertia, in the Machian tradition, made quantitative.</p>
+<p><strong>What it would add.</strong> The corpus's relativity articles treat inertial frames as structure; here they are a class of observers with equal information entropy, and $c$ becomes a potential. The factor $(N-n)/N$ is the one place where a number could be tested, since it is a small correction to $c^2$ of order the subsystem's share of the mass of the universe.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>.</p>
+<p><strong>What stands in the way.</strong> The correction of order $n/N$ is about $10^{-80}$ for any laboratory system, so it is not a prediction but a consistency requirement. The corpus's gravity is carried kinematically, and a potential fixed by cosmology rather than by a field equation does not enter it; importing this would require giving up the local field description the corpus's linearised dictionary rests on.</p>
+<p>The rank is a judgement: the entropy metric first, because it is a formula the corpus can compute with; $c$ as information velocity second, because it repositions a constant the corpus treats as given; the Machian potential third, because its only number is unmeasurably small.</p>
+<p>Fourteen pages: the entropy balance, entropy against action, the information speed and the Friedmann equation, the Fisher–Rao metric and the count of dimensions, the two restated postulates, and the gravitational potential of the ensemble.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

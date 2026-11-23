@@ -89,7 +89,7 @@ $$</p>
 <p><strong>Boundaries.</strong> The space, the two scalar structures, the complex structure $J$ and the Hermitian form are <em>Duo-Complex Numbers</em>. The algebra of operators, its units, its centre, its trace and its determinant, the conjugate-linear maps and the centraliser of $J$ are <em>The Endomorphisms of $\mathbb{C}^2$</em>. The space as the defining module of $M_2(\mathbb{C})$, the three canonical forms and the two cones as objects of the space are <em>$M_2(\mathbb{C})$ Defining Representation</em>; the rank-one family read as a semigroup, with its composition law, and the side-by-side comparison of the two cones, are its operators companion. <strong>This article takes nothing from either of them</strong>: the bilinear cone and the Hermitian cone are defined in place as the two sets of rank-one matrices that the decomposition produces, and the length is defined and proved here. The general SVD, the polar decomposition and the Eckart–Young theorem are likewise not imported: the article proves what it uses at size two, and it cites the general theory in §<em>Further Reading</em>.</p>
 <p><strong>Conventions.</strong> The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$, and an operator is written $A$ and identified with its matrix in that basis. The Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, linear in the first slot and conjugate-linear in the second, with norm $\lVert Q\rVert^2=H(Q,Q)$. The adjoint is defined by $H(AQ_1,Q_2)=H(Q_1,A^{\dagger}Q_2)$. The dagger is the conjugate transpose, the transpose is written ${}^{\mathsf T}$, and the entries of $A$ are</p>
 <p>$$
-A=\begin{pmatrix}a&b\\c&d\end{pmatrix}.
+A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}.
 $$</p>
 <h2 id="the-operator-and-the-adjoint">The Operator and the Adjoint</h2>
 <h3 id="the-operator-as-a-matrix">The Operator as a Matrix</h3>
@@ -156,7 +156,7 @@ $$</p>
 <h3 id="the-proof-at-size-two">The Proof at Size Two</h3>
 <p><strong>The characteristic polynomial.</strong> For</p>
 <p>$$
-S=\begin{pmatrix}\alpha&\beta\\\overline{\beta}&\delta\end{pmatrix},
+S=\begin{pmatrix}\alpha&amp;\beta\\\overline{\beta}&amp;\delta\end{pmatrix},
 \qquad
 \alpha,\delta\in\mathbb{R},
 $$</p>
@@ -169,7 +169,7 @@ $$</p>
 (\alpha+\delta)^2-4(\alpha\delta-\lvert\beta\rvert^2)=(\alpha-\delta)^2+4\lvert\beta\rvert^2\geq0,
 $$</p>
 <p>so the two roots are real. Write them $\lambda_1\geq\lambda_2$. Each root is an eigenvalue: at a root $\lambda$ the determinant of $S-\lambda\mathrm{I}_2$ vanishes, so $S-\lambda\mathrm{I}_2$ has a nonzero kernel.</p>
-<p><strong>The eigenbasis.</strong> If $\lambda_1>\lambda_2$, eigenvectors for distinct eigenvalues are orthogonal: from $Sx=\lambda_1x$ and $Sy=\lambda_2y$,</p>
+<p><strong>The eigenbasis.</strong> If $\lambda_1&gt;\lambda_2$, eigenvectors for distinct eigenvalues are orthogonal: from $Sx=\lambda_1x$ and $Sy=\lambda_2y$,</p>
 <p>$$
 \lambda_1H(x,y)=H(Sx,y)=H(x,Sy)=\lambda_2H(x,y),
 $$</p>
@@ -221,7 +221,7 @@ $$</p>
 <p>$$
 H(Av_i,Av_j)=H(A^{\dagger}Av_i,v_j)=\sigma_i^2H(v_i,v_j)=\sigma_i^2\delta_{ij}.
 $$</p>
-<p>Hence $\lVert Av_i\rVert=\sigma_i$, and the images of distinct right vectors are orthogonal. For each index with $\sigma_i>0$ define</p>
+<p>Hence $\lVert Av_i\rVert=\sigma_i$, and the images of distinct right vectors are orthogonal. For each index with $\sigma_i&gt;0$ define</p>
 <p>$$
 u_i=\frac{Av_i}{\sigma_i}.
 $$</p>
@@ -230,7 +230,7 @@ $$</p>
 <p>$$
 Av_i=\sigma_iu_i,
 $$</p>
-<p>by the definition where $\sigma_i>0$ and because both sides vanish where $\sigma_i=0$. Hence $AV=U\Sigma$, that is $A=U\Sigma V^{\dagger}$, and the two displays of the theorem are the same statement.</p>
+<p>by the definition where $\sigma_i&gt;0$ and because both sides vanish where $\sigma_i=0$. Hence $AV=U\Sigma$, that is $A=U\Sigma V^{\dagger}$, and the two displays of the theorem are the same statement.</p>
 <p><strong>The uniqueness of the weights.</strong> The numbers $\lambda_i=\sigma_i^2$ are the eigenvalues of $A^{\dagger}A$, hence are determined by $A$; the ordering then determines the pair $(\sigma_1,\sigma_2)$. The singular values are therefore intrinsic, and the two unitary families are not, as §<em>The Non-Uniqueness</em> shows.</p>
 <h3 id="the-rank-one-form">The Rank-One Form</h3>
 <p><strong>The sum of two atoms.</strong> The decomposition reads</p>
@@ -286,7 +286,7 @@ $$</p>
 <p>because $U^{\dagger}U=\mathrm{I}_2$. Hence $\Sigma=V^{\dagger}\lvert A\rvert V$, and the weights are the diagonal entries of the modulus in the basis of the right singular vectors. <strong>The modulus is intrinsic; the two unitaries are the choice of the two orthonormal bases.</strong></p>
 <h2 id="the-weights">The Weights</h2>
 <h3 id="the-rank-cases">The Rank Cases</h3>
-<p><strong>The number of positive weights is the rank.</strong> The image of $A$ is spanned by the vectors $u_i$ with $\sigma_i>0$, and the right vectors form a basis, so the image has dimension equal to the number of positive weights. The three cases are the following.</p>
+<p><strong>The number of positive weights is the rank.</strong> The image of $A$ is spanned by the vectors $u_i$ with $\sigma_i&gt;0$, and the right vectors form a basis, so the image has dimension equal to the number of positive weights. The three cases are the following.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -298,12 +298,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$2$</td>
-<td>$\sigma_1\geq\sigma_2>0$</td>
+<td>$\sigma_1\geq\sigma_2&gt;0$</td>
 <td>two terms, $A$ invertible</td>
 </tr>
 <tr>
 <td>$1$</td>
-<td>$\sigma_1>0$, $\sigma_2=0$</td>
+<td>$\sigma_1&gt;0$, $\sigma_2=0$</td>
 <td>one term, $A=\sigma_1u_1v_1^{\dagger}$</td>
 </tr>
 <tr>
@@ -352,7 +352,7 @@ $$</p>
 <h3 id="a-worked-example">A Worked Example</h3>
 <p><strong>The operator.</strong> Take the real matrix</p>
 <p>$$
-A=\begin{pmatrix}3&0\\4&5\end{pmatrix}.
+A=\begin{pmatrix}3&amp;0\\4&amp;5\end{pmatrix}.
 $$</p>
 <p><strong>The two invariants.</strong> $T=9+0+16+25=50$ and $\Delta=\lvert15\rvert^2=225$. Hence</p>
 <p>$$
@@ -360,7 +360,7 @@ $$</p>
 =\sqrt{\frac{50\pm40}{2}},
 $$</p>
 <p>that is $\sigma_1=\sqrt{45}=3\sqrt5$ and $\sigma_2=\sqrt5$.</p>
-<p><strong>The right vectors.</strong> The matrix $A^{\mathsf T}A=\begin{pmatrix}25&20\\20&25\end{pmatrix}$ has the eigenvectors $(1,1)$ and $(1,-1)$, normalised to</p>
+<p><strong>The right vectors.</strong> The matrix $A^{\mathsf T}A=\begin{pmatrix}25&amp;20\\20&amp;25\end{pmatrix}$ has the eigenvectors $(1,1)$ and $(1,-1)$, normalised to</p>
 <p>$$
 v_1=\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},
 \qquad
@@ -378,7 +378,7 @@ $$</p>
 <p><strong>The two unitary factors.</strong> The decomposition is a unitary motion of the source, a scaling of the two axes and a unitary motion of the target, in that order. The weights are the only part of the decomposition that is not a symmetry of the Hermitian form, and the two unitaries are the two symmetries.</p>
 <h3 id="the-non-uniqueness">The Non-Uniqueness</h3>
 <p><strong>Where the freedom is.</strong> The weights are determined by $A$. The two families are not, and the freedom has three regimes.</p>
-<p><strong>Distinct positive weights.</strong> If $\sigma_1>\sigma_2>0$, the eigenvalues of $A^{\dagger}A$ are distinct, so each eigenspace is a line and $v_i$ is determined up to a phase. The left vector $u_i=Av_i/\sigma_i$ inherits the same phase, so the freedom is</p>
+<p><strong>Distinct positive weights.</strong> If $\sigma_1&gt;\sigma_2&gt;0$, the eigenvalues of $A^{\dagger}A$ are distinct, so each eigenspace is a line and $v_i$ is determined up to a phase. The left vector $u_i=Av_i/\sigma_i$ inherits the same phase, so the freedom is</p>
 <p>$$
 u_i\mapsto e^{i\theta_i}u_i,
 \qquad
@@ -387,8 +387,8 @@ v_i\mapsto e^{i\theta_i}v_i,
 i=1,2,
 $$</p>
 <p>with two independent phases. In matrix form the freedom is $U\mapsto UP$ and $V\mapsto VP$ with $P=\operatorname{diag}(e^{i\theta_1},e^{i\theta_2})$, the same phase matrix on both sides. The phases do not mix the two terms.</p>
-<p><strong>Coincident positive weights.</strong> If $\sigma_1=\sigma_2=\sigma>0$, then $A^{\dagger}A=\sigma^2\mathrm{I}_2$ and every orthonormal basis is an eigenbasis. The freedom is $U\mapsto UW$ and $V\mapsto VW$ with $W\in\mathrm{U}(2)$, the same unitary on both sides, and $A=\sigma UV^{\dagger}$ is $\sigma$ times a unitary operator. The two terms are no longer distinguished, and the decomposition is unique only up to the common unitary mixing.</p>
-<p><strong>A vanishing weight.</strong> If $\sigma_1>0$ and $\sigma_2=0$, the vector $v_1$ is determined up to a phase, the vector $u_1$ follows, and $v_2$ is any unit vector in the kernel of $A$, that is any unit vector orthogonal to $v_1$. The vector $u_2$ is any unit vector orthogonal to $u_1$, and its phase is independent of the phase of $v_2$ because the second term vanishes. The completion is therefore a genuine choice and not a symmetry of the operator.</p>
+<p><strong>Coincident positive weights.</strong> If $\sigma_1=\sigma_2=\sigma&gt;0$, then $A^{\dagger}A=\sigma^2\mathrm{I}_2$ and every orthonormal basis is an eigenbasis. The freedom is $U\mapsto UW$ and $V\mapsto VW$ with $W\in\mathrm{U}(2)$, the same unitary on both sides, and $A=\sigma UV^{\dagger}$ is $\sigma$ times a unitary operator. The two terms are no longer distinguished, and the decomposition is unique only up to the common unitary mixing.</p>
+<p><strong>A vanishing weight.</strong> If $\sigma_1&gt;0$ and $\sigma_2=0$, the vector $v_1$ is determined up to a phase, the vector $u_1$ follows, and $v_2$ is any unit vector in the kernel of $A$, that is any unit vector orthogonal to $v_1$. The vector $u_2$ is any unit vector orthogonal to $u_1$, and its phase is independent of the phase of $v_2$ because the second term vanishes. The completion is therefore a genuine choice and not a symmetry of the operator.</p>
 <p><strong>The invariant summary.</strong> What the decomposition determines intrinsically is the unordered pair of weights, and the two lines of the right and left vectors when the weights are distinct and positive. The ordering, the phases and the completion of the zero-weight directions are the three choices.</p>
 <h3 id="the-truncation">The Truncation</h3>
 <p><strong>The nearest operator of smaller rank.</strong> Let</p>
@@ -413,11 +413,11 @@ $$</p>
 \lVert(A-B)w\rVert=\lVert Aw\rVert=\sqrt{\sigma_1^2\lvert\alpha\rvert^2+\sigma_2^2\lvert\beta\rvert^2}\geq\sigma_2,
 $$</p>
 <p>so the operator norm of the difference is at least $\sigma_2$, and the Frobenius norm is at least the operator norm. The first term attains the bound, because the difference is the second term and $\langle\sigma_2u_2v_2^{\dagger}\rangle_*^{1/2}=\sigma_2$.</p>
-<p><strong>Uniqueness when the two weights differ.</strong> Suppose $\sigma_1>\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\langle A\rangle_*^{1/2}>\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives</p>
+<p><strong>Uniqueness when the two weights differ.</strong> Suppose $\sigma_1&gt;\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\langle A\rangle_*^{1/2}&gt;\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives</p>
 <p>$$
 \sigma_2=\lVert A-B\rVert_{\mathrm{op}}\geq\lVert(A-B)w\rVert=\lVert Aw\rVert\geq\sigma_2,
 $$</p>
-<p>so equality holds throughout, and $\lVert Aw\rVert=\sigma_2$ with $\lVert w\rVert=1$ forces $w$ to be a unit multiple of $v_2$, because $\sigma_1>\sigma_2$. The kernel of $B$ is therefore the line of $v_2$, and $B=u'v_1^{\dagger}$ for some vector $u'$. Then</p>
+<p>so equality holds throughout, and $\lVert Aw\rVert=\sigma_2$ with $\lVert w\rVert=1$ forces $w$ to be a unit multiple of $v_2$, because $\sigma_1&gt;\sigma_2$. The kernel of $B$ is therefore the line of $v_2$, and $B=u'v_1^{\dagger}$ for some vector $u'$. Then</p>
 <p>$$
 \langle A-B\rangle_*=\lVert\sigma_1u_1-u'\rVert^2+\sigma_2^2,
 $$</p>
@@ -492,7 +492,7 @@ $$</p>
 <p>which is exactly the pair $\rho_1(\tilde Q),\rho_2(\tilde Q)$. <strong>The two weights of a biquaternion element in the biquaternion SVD are the two singular values of its $2\times2$ matrix in this article</strong>, and the doubling of the pair in the four weights of $L_{\tilde Q}$ is the doubling of the matrix block in the regular representation.</p>
 <p><strong>The lesson.</strong> A weight of an element and a singular value of an operator are the same number read in two carriers. The biquaternion article reads the element through the left multiplication on the four-dimensional algebra; this article reads the same matrix as an operator on the two-dimensional module. <strong>The singular values are intrinsic to the matrix, and the carrier decides how many times they are counted.</strong></p>
 <h3 id="the-reduced-biquaternion-element">The Reduced Biquaternion Element</h3>
-<p><strong>The block diagonal matrix.</strong> A reduced biquaternion $\breve Q$ is a pair of complex numbers $(Q_+,Q_-)$ in the idempotent basis, and its real regular representation $L_{\breve Q}$ is carried by the fixed matrix $P=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$, read blockwise, to the block diagonal matrix $\operatorname{diag}(\mathsf b(Q_+),\mathsf b(Q_-))$, where $\mathsf b$ is the real $2\times2$ block of the multiplication by a complex number. The matrix $P$ is orthogonal up to the factor $\sqrt2$, because $P^{\mathsf T}P=2\,\mathrm{I}_2$, so the conjugation preserves the singular values. The singular values of the regular representation are therefore</p>
+<p><strong>The block diagonal matrix.</strong> A reduced biquaternion $\breve Q$ is a pair of complex numbers $(Q_+,Q_-)$ in the idempotent basis, and its real regular representation $L_{\breve Q}$ is carried by the fixed matrix $P=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$, read blockwise, to the block diagonal matrix $\operatorname{diag}(\mathsf b(Q_+),\mathsf b(Q_-))$, where $\mathsf b$ is the real $2\times2$ block of the multiplication by a complex number. The matrix $P$ is orthogonal up to the factor $\sqrt2$, because $P^{\mathsf T}P=2\,\mathrm{I}_2$, so the conjugation preserves the singular values. The singular values of the regular representation are therefore</p>
 <p>$$
 \lvert Q_+\rvert,\ \lvert Q_+\rvert,\ \lvert Q_-\rvert,\ \lvert Q_-\rvert,
 $$</p>

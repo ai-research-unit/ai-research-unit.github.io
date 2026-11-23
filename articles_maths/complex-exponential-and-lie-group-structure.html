@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article develops the Lie theory of the complex algebra $\mathbb{C}$. <em>Complex Algebra</em> defined the algebra, its single nontrivial involution and its two distinguished subspaces; <em>Complex Norm and Invertibility</em> identified the norm $\langle Q\rangle_{*} = Q\bar{Q}$ and the group of invertibles $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$; and the companion articles on the elementary and polar structure computed the exponential and the polar form by power series. Here these are assembled into the standard theory of $\mathbb{C}$ as an abelian Lie algebra, of $\mathbb{C}^\times$ as a Lie group, and of the exponential map.</p>
 <p>The complex case is the degenerate base of the family and everything below is correspondingly simple. The algebra is commutative, so its commutator bracket vanishes identically, its Lie algebra is abelian, the Baker–Campbell–Hausdorff series terminates at the first term, the exponential is a homomorphism, and the exponential map is both surjective and locally bijective. The whole of the structure is the product of a line and a circle.</p>
-<p>Every statement is a special case of the standard theory of the abelian Lie group $\mathbb{R}^n$ and the circle group, and the passage to the real two-dimensional algebra is the identification $\mathbb{C} \cong \mathbb{R}^2$. Throughout, a complex number is written $Q = q + i q'$ with $q, q' \in \mathbb{R}$, the norm is $\langle Q\rangle_{*} = q^2+q'^2$, and the imaginary unit satisfies $i^2 = -1$. The dimension statements name the field, since $\mathbb{C}$ is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$.</p>
+<p>Every statement is a special case of the standard theory of the abelian Lie group $\mathbb{R}^n$ and the circle group, and the passage to the real two-dimensional algebra is the identification $\mathbb{C} \cong \mathbb{R}^2$. Throughout, a complex number is written $Q = q + i q'$ with $q, q' \in \mathbb{R}$, the norm is $\langle Q\rangle_{*} = q^2+q'{}^2$, and the imaginary unit satisfies $i^2 = -1$. The dimension statements name the field, since $\mathbb{C}$ is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$.</p>
 <h2 id="the-algebra-as-the-abelian-lie-algebra">The Algebra as the Abelian Lie Algebra</h2>
 <p><strong>The commutator bracket.</strong> The algebra $\mathbb{C}$ carries the commutator bracket</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 \exp(\mathbb{C}) = \mathbb{C}^\times, \qquad \mathbb{C}^\times = \{\exp(Q) : Q \in \mathbb{C}\}.
 $$</p>
-<p><strong>Proof.</strong> Every nonzero complex number has a polar form $Q = \varrho\exp(i\theta)$ with $\varrho = \sqrt{\langle Q\rangle_{*}} > 0$ and $\theta \in \mathbb{R}$, so with $Q_{\log} = \ln r + i\theta$ one has $\exp(Q_{\log}) = \exp(\ln \varrho)\exp(i\theta) = \varrho\exp(i\theta) = Q$.</p>
+<p><strong>Proof.</strong> Every nonzero complex number has a polar form $Q = \varrho\exp(i\theta)$ with $\varrho = \sqrt{\langle Q\rangle_{*}} &gt; 0$ and $\theta \in \mathbb{R}$, so with $Q_{\log} = \ln r + i\theta$ one has $\exp(Q_{\log}) = \exp(\ln \varrho)\exp(i\theta) = \varrho\exp(i\theta) = Q$.</p>
 <p>The element $Q_{\log}$ is a <strong>complex logarithm</strong> of $Q$. The construction is unique up to the kernel of $\exp$.</p>
 <p><strong>Theorem (kernel).</strong> For $Q \in \mathbb{C}$ one has $\exp(Q) = 1$ if and only if $Q \in 2\pi i\,\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> Write $Q = q+i q'$; then $\exp(Q) = \exp(q)\exp(i q') = 1$ forces $\exp(q) = 1$, hence $q = 0$, and $\exp(i q') = 1$, hence $q' \in 2\pi\mathbb{Z}$. Thus $Q = 2\pi i k$ for some integer $k$.</p>
@@ -144,12 +144,12 @@ $$</p>
 <p>Both parametrisations apply to an element of $\mathbb{C}^\times$, i.e. to a nonzero complex number; the only element with no parametrisation is $0$.</p>
 <p><strong>Polar form.</strong> Every $Q \neq 0$ is</p>
 <p>$$
-Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}, \qquad u = \frac{Q}{\sqrt{\langle Q\rangle_{*}}} \in \mathrm{U}(1),
+Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{&gt;0}, \qquad u = \frac{Q}{\sqrt{\langle Q\rangle_{*}}} \in \mathrm{U}(1),
 $$</p>
-<p>with $r$ the modulus and $u$ the phase, and the decomposition is unique. Writing $u = \exp(i\theta)$ gives $Q = \varrho\exp(i\theta)$. This is the splitting $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ of the group of invertibles, developed in <em>Complex Norm and Invertibility</em>.</p>
+<p>with $r$ the modulus and $u$ the phase, and the decomposition is unique. Writing $u = \exp(i\theta)$ gives $Q = \varrho\exp(i\theta)$. This is the splitting $\mathbb{C}^\times \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)$ of the group of invertibles, developed in <em>Complex Norm and Invertibility</em>.</p>
 <p><strong>Exponential parametrisation.</strong> By surjectivity, every $Q \in \mathbb{C}^\times$ is $Q = \exp(Q_{\log})$ with $Q_{\log} = \ln r + i\theta$ and the ambiguity of the kernel. In the two factors the logarithm splits as</p>
 <p>$$
-Q = \underbrace{\exp(\ln r)}_{r \in \mathbb{R}_{>0}} \underbrace{\exp(i\theta)}_{u \in \mathrm{U}(1)},
+Q = \underbrace{\exp(\ln r)}_{r \in \mathbb{R}_{&gt;0}} \underbrace{\exp(i\theta)}_{u \in \mathrm{U}(1)},
 $$</p>
 <p>the product of a positive real scale, obtained from the real part of $Q_{\log}$, and a phase, obtained from the imaginary part. The splitting is the polar decomposition written in exponential coordinates, and it is exact, not a local statement, because the exponential is a homomorphism.</p>
 <p><strong>The exponential is not one-to-one.</strong> It restricts to a bijection on the strip $|\operatorname{Im} Q| \le \pi$ with the identification $\operatorname{Im} Q = \pm\pi$, and to a bijection on a real line $\mathbb{R} 1$ of scales; the many-to-one character is entirely the kernel $2\pi i \mathbb{Z}$ along the imaginary axis.</p>
@@ -174,18 +174,18 @@ $$</p>
 \mathrm{U}(1) \cong SO(2).
 $$</p>
 <p><strong>The identification with $SO(2)$.</strong> The rotation of the plane through the angle $\theta$ is the multiplication map $Q \mapsto \exp(i\theta)Q$, so the map $\mathrm{U}(1) \to SO(2)$ sending $\exp(i\theta)$ to the rotation through $\theta$ is an isomorphism of Lie groups; it is an isomorphism and not a covering, because the rotation group of the plane is itself a circle. This is the elementary base case of the double covers of the higher-dimensional rotation groups, the circle covering $SO(2)$ once.</p>
-<p><strong>The scale subgroup.</strong> The subgroup generated by $X = 1$ is $\gamma_1(t) = \exp(t) \in \mathbb{R}_{>0}$, and $t \mapsto \exp(t)$ is an isomorphism $\mathbb{R} \cong \mathbb{R}_{>0}$ of Lie groups. Together,</p>
-<p>$$ \boxed{\;\mathbb{C}^\times \cong \mathbb{R} \times (\mathbb{R}/2\pi\mathbb{Z}) \cong \mathbb{R}_{>0} \times \mathrm{U}(1)\;},
+<p><strong>The scale subgroup.</strong> The subgroup generated by $X = 1$ is $\gamma_1(t) = \exp(t) \in \mathbb{R}_{&gt;0}$, and $t \mapsto \exp(t)$ is an isomorphism $\mathbb{R} \cong \mathbb{R}_{&gt;0}$ of Lie groups. Together,</p>
+<p>$$ \boxed{\;\mathbb{C}^\times \cong \mathbb{R} \times (\mathbb{R}/2\pi\mathbb{Z}) \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)\;},
 $$</p>
-<p>the product of the scale line and the phase circle, and the exponential $\exp : \mathbb{C} \to \mathbb{C}^\times$ is the product of the two isomorphisms $\mathbb{R} \cong \mathbb{R}_{>0}$ and $\mathbb{R} \to \mathrm{U}(1)$, with the second many-to-one.</p>
+<p>the product of the scale line and the phase circle, and the exponential $\exp : \mathbb{C} \to \mathbb{C}^\times$ is the product of the two isomorphisms $\mathbb{R} \cong \mathbb{R}_{&gt;0}$ and $\mathbb{R} \to \mathrm{U}(1)$, with the second many-to-one.</p>
 <h2 id="connectedness-and-the-compact-subgroup">Connectedness and the Compact Subgroup</h2>
-<p><strong>Theorem.</strong> $\mathbb{C}^\times$ is connected but not simply connected; its maximal compact subgroup is $\mathrm{U}(1)$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ deformation retracts onto $\mathrm{U}(1)$.</p>
-<p><strong>Proof.</strong> The product $\mathbb{R}_{>0} \times \mathrm{U}(1)$ of the connected groups $\mathbb{R}_{>0}$ and $\mathrm{U}(1)$ is connected, and the two factors are connected, so $\mathbb{C}^\times$ is connected. The map $(r, u) \mapsto u$ is a continuous retraction onto the compact subgroup $\mathrm{U}(1)$, and the homotopy $((r,u),t) \mapsto ((1-t)r + t, u)$ deforms the identity to it, so $\mathbb{C}^\times$ deformation retracts onto $\mathrm{U}(1)$. The circle is not simply connected, so neither is $\mathbb{C}^\times$.</p>
+<p><strong>Theorem.</strong> $\mathbb{C}^\times$ is connected but not simply connected; its maximal compact subgroup is $\mathrm{U}(1)$, and $\mathbb{C}^\times \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)$ deformation retracts onto $\mathrm{U}(1)$.</p>
+<p><strong>Proof.</strong> The product $\mathbb{R}_{&gt;0} \times \mathrm{U}(1)$ of the connected groups $\mathbb{R}_{&gt;0}$ and $\mathrm{U}(1)$ is connected, and the two factors are connected, so $\mathbb{C}^\times$ is connected. The map $(r, u) \mapsto u$ is a continuous retraction onto the compact subgroup $\mathrm{U}(1)$, and the homotopy $((r,u),t) \mapsto ((1-t)r + t, u)$ deforms the identity to it, so $\mathbb{C}^\times$ deformation retracts onto $\mathrm{U}(1)$. The circle is not simply connected, so neither is $\mathbb{C}^\times$.</p>
 <p>The fundamental group is computed in <em>Complex Topology</em>: $\pi_1(\mathbb{C}^\times) \cong \pi_1(\mathrm{U}(1)) \cong \mathbb{Z}$, generated by the loop $t \mapsto \exp(it)$, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$. The compact factor is the single circle, and only the first homotopy group survives.</p>
 <h2 id="summary">Summary</h2>
 <p>The commutator bracket of $\mathbb{C}$ vanishes identically, so $\mathbb{C} \cong \mathbb{R}^2$ is an abelian Lie algebra of real dimension $2$, with the universal enveloping algebra a polynomial algebra on two variables, and the group of invertibles is the abelian Lie group $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ of real dimension $2$, open and dense, with Lie algebra $\mathbb{C}$.</p>
 <p>The exponential $\exp(Q) = \sum Q^n/n!$ is entire, never zero, and a group homomorphism, $\exp(Q_1+Q_2) = \exp Q_1 \exp Q_2$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $\exp(q+i q') = \exp(q)(\cos q' + i\sin q')$, its norm is $\langle\exp Q\rangle_{*} = \exp(2q$, it is surjective onto $\mathbb{C}^\times$ with the polar logarithm $\ln\sqrt{\langle Q\rangle_{*}} + i\arg Q$, and its kernel is the discrete lattice $2\pi i\,\mathbb{Z} \cong \mathbb{Z}$.</p>
-<p>Every nonzero complex number has the polar parametrisation $Q = \varrho\exp(i\theta) = \exp(\ln \varrho + i\theta)$ with $\varrho \in \mathbb{R}_{>0}$ and $\theta \in \mathbb{R}$, the group of invertibles splitting as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. The one-parameter subgroups are $t \mapsto \exp(tX)$, the one generated by $i$ is the circle $\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z} \cong SO(2)$, and $\mathrm{U}(1)$ is the maximal compact subgroup, onto which $\mathbb{C}^\times$ deformation retracts. The complex case is the abelian base of the family: the whole structure is the product of a line and a circle.</p>
+<p>Every nonzero complex number has the polar parametrisation $Q = \varrho\exp(i\theta) = \exp(\ln \varrho + i\theta)$ with $\varrho \in \mathbb{R}_{&gt;0}$ and $\theta \in \mathbb{R}$, the group of invertibles splitting as $\mathbb{C}^\times \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)$. The one-parameter subgroups are $t \mapsto \exp(tX)$, the one generated by $i$ is the circle $\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z} \cong SO(2)$, and $\mathrm{U}(1)$ is the maximal compact subgroup, onto which $\mathbb{C}^\times$ deformation retracts. The complex case is the abelian base of the family: the whole structure is the product of a line and a circle.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -232,7 +232,7 @@ $$</p>
 <td>the norm-one group, the unit circle, $\cong SO(2)$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$</td>
+<td>$\mathbb{C}^\times \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)$</td>
 <td>the polar splitting, the product of scale and phase</td>
 </tr>
 <tr>

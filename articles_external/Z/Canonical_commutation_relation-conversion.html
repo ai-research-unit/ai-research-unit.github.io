@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canonical Commutation Relation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Canonical_commutation_relation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="canonical-commutation-relation"><strong>Canonical Commutation Relation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Canonical commutation relation</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Canonical_commutation_relation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Canonical_commutation_relation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Canonical_commutation_relation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the relation $[\hat x,\hat p_x]=i\hbar$: its definition, its attribution to Heisenberg, Born and Jordan in 1925 as a postulate, Kennard's derivation of the uncertainty principle from it in 1927, the Stone–von Neumann uniqueness theorem, and the classical analogue in terms of the Poisson bracket.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition-and-the-multidimensional-form">The definition and the multidimensional form</h3>
+<p>"the canonical commutation relation is the fundamental relation between canonical conjugate quantities (quantities which are related by definition such that one is the Fourier transform of another)". In one dimension $[\hat x,\hat p_x]=i\hbar\,\mathbb{I}$; "In finite dimensions, position and momentum are vectors of operators and their commutation relation between different components of position and momentum can be expressed as [ ̂𝑥𝑖 , 𝑝̂ 𝑗 ] = 𝑖ℏ𝛿𝑖𝑗 , where 𝛿𝑖𝑗 is the Kronecker delta.".</p>
+<h3 id="the-status-of-the-relation">The status of the relation</h3>
+<p>"This relation is attributed to Werner Heisenberg, Max Born and Pascual Jordan (1925),[1][2] who called" quantum condition "serving as a postulate of the theory; it was noted by E. Kennard (1927)[3] to imply the Heisenberg uncertainty principle. The Stone–von Neumann theorem gives a uniqueness result for operators satisfying (an exponentiated form of) the canonical commutation relation."</p>
+<p>That is the article's most useful sentence structure: postulate first, consequence second, uniqueness third. The relation is not derived from anything in the article; it is adopted, and then shown to pin the representation down.</p>
+<h3 id="the-classical-limit">The classical limit</h3>
+<p>"By contrast, in classical physics, all observables commute and the commutator would be zero. However, an analogous relation exists, which is obtained by replacing the commutator with the Poisson bracket" multiplied by $i\hbar$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-conjugacy-is-definitional-not-a-theorem">1. Conjugacy is definitional, not a theorem</h3>
+<p><strong>The idea.</strong> The article defines canonical conjugacy as being related by Fourier transform, <em>by definition</em>. That is stronger than the corpus's treatment, which derives the Fourier pairing from the commutator: here the pairing is the definition of the word and the commutator is the postulate that fixes the scale.</p>
+<p><strong>What it would add.</strong> A clean separation of definition from axiom, which the corpus blurs when it presents the Fourier chart and the commutator together. If conjugacy is definitional, then $[\hat x,\hat p]=i\hbar$ is a statement about the scale of the transform, not about which variables are conjugate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, in the opening definitions.</p>
+<p><strong>What stands in the way.</strong> The corpus's conjugacy is over one algebra element rather than a pair of operators, so related by Fourier transform needs a statement about which component is transformed.</p>
+<h3 id="2-stonevon-neumann-makes-the-postulate-almost-a-theorem">2. Stone–von Neumann makes the postulate almost a theorem</h3>
+<p><strong>The idea.</strong> Up to unitary equivalence there is one irreducible representation of the exponentiated relation, so the postulate leaves nothing to choose. Axiomatising the commutator is therefore cheap: the axiom has a unique representation.</p>
+<p><strong>What it would add.</strong> A reason the corpus's "independent axiom" is not ad hoc. The corpus states the relation as an axiom and derives consequences; the uniqueness theorem says any other axiom system producing the same algebra of observables is unitarily equivalent, so the axiom adds no freedom.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, as the closing remark.</p>
+<p><strong>What stands in the way.</strong> Stone–von Neumann is stated for a finite number of degrees of freedom in a Hilbert space; the corpus's algebra carries the position and momentum inside one element, and the theorem would have to be restated for that setting.</p>
+<h3 id="3-the-commutator-and-the-poisson-bracket-are-the-same-statement-at-different-math13">3. The commutator and the Poisson bracket are the same statement at different $\hbar$</h3>
+<p><strong>The idea.</strong> The classical bracket is the $\hbar\to0$ shadow: replacing the commutator by $i\hbar$ times the Poisson bracket is the correspondence, and it is exact for quadratic Hamiltonians.</p>
+<p><strong>What it would add.</strong> The corpus derives the Poisson bracket from the commutator in the quaternionic case; the article gives the reverse direction as the standard classical limit. Having both is a consistency check on the corpus's derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing; the corpus already contains both directions and the article supplies the textbook form of the classical one.</p>
+<p>This is an encyclopedia article; it states the relation, its history, its uniqueness theorem and its classical analogue, and derives none of them.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

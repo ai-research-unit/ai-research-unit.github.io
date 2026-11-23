@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical and quantum flux energy conditions for quantum vacuum states — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and quantum flux energy conditions for quantum vacuum states -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-and-quantum-flux-energy-conditions-for-quantum-vacuum-states"><strong>Classical and quantum flux energy conditions for quantum vacuum states</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1305.1993v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 17 September 2013 (dated 12 September 2013)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Classical and quantum flux energy conditions for quantum vacuum states - 1305.1993-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and quantum flux energy conditions for quantum vacuum states - 1305.1993.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and quantum flux energy conditions for quantum vacuum states - 1305.1993.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper defines a local condition on energy flux, rather than on energy density, and gives both a classical and a quantum version. The classical flux energy condition constrains the possible fluxes of a given stress-energy; the quantum version constrains the fluxes of a quantum state. The authors show that the classical condition holds in some cases where the standard pointwise conditions fail, that the quantum analogue holds for a wide range of states, and that the status of the remaining states is unclear.</p>
+<p>The extracted abstract is broken by the two-column layout; only the legible parts are quoted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-a-new-condition">Why a new condition</h3>
+<p>"The classical energy conditions are known to not be fundamental [but are] violated by semiclassical quantum effects. Consequently, some [authors have proposed] semiclassical replacements for the classical energy conditions, [for instance] nonlocal time-integrated Ford–Roman quantum inequalities."</p>
+<h3 id="what-the-paper-proposes">What the paper proposes</h3>
+<p>"In this [paper we] develop classical and quantum versions of a local 'flux energy [condition', based] on the notion of constraining the possible fluxes [carried by a state]." The condition is local and it constrains a current rather than a density.</p>
+<h3 id="the-result">The result</h3>
+<p>The flux energy condition "will be seen to be satisfied in some [situations where the pointwise conditions fail, and] its quantum analogue (the QFEC) is satisf[ied for] a rather wide range of [states]. The [status for all] states is less clear."</p>
+<h3 id="the-honest-limit">The honest limit</h3>
+<p>The paper does not establish the quantum flux condition for all states. It establishes it for a wide class and states the gap explicitly, which is the paper's own statement of its limitation.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-constrain-the-flux-not-the-density">1. Constrain the flux, not the density</h3>
+<p><strong>The idea.</strong> A local condition on energy flux is weaker than a condition on energy density, and it survives in cases where the density condition fails.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the algebra has no preferred time, so the energy density is frame-dependent while the flux is not, or is less so. A condition phrased on fluxes is therefore better suited to the framework's objects than the standard conditions are. The catalogue could note this as a route around one of its entries, which is rare.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The condition is stated with a chosen observer, so the frame dependence is reduced and not removed. Ranked first, because it offers a way past a catalogued obstruction.</p>
+<h3 id="2-local-versus-integrated">2. Local versus integrated</h3>
+<p><strong>The idea.</strong> The Ford–Roman inequalities are nonlocal in time; this paper's condition is local.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> distinguishes statements the framework can make pointwise from those it cannot. A local condition is within reach and an integrated one is not, so the pair gives the article a scale for how much of quantum inequality theory is accessible.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of what can be tested.</p>
+<p><strong>What stands in the way.</strong> Neither condition is derived in the framework. Ranked second.</p>
+<h3 id="3-an-open-case-stated-plainly">3. An open case stated plainly</h3>
+<p><strong>The idea.</strong> The quantum condition holds for a wide class and the rest is unknown, and the paper says so.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> catalogues degrees of support. A result that is partial and labelled as partial is a third category beside "established" and "absent", and the article's taxonomy has no place for it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> It is a bookkeeping refinement. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

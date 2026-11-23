@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-partite analysis of average-subsystem entropies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Multi-partite analysis of average-subsystem entropies - 1707.09755.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multi-partite-analysis-of-average-subsystem-entropies"><strong>Multi-partite analysis of average-subsystem entropies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1707.09755v3 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ana Alonso-Serrano, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 1 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Multi-partite analysis of average-subsystem entropies - 1707.09755-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Multi-partite analysis of average-subsystem entropies - 1707.09755.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-entanglement-entropy-and-the-partial-trace.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Multi-partite analysis of average-subsystem entropies - 1707.09755.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors study average subsystem entropies: trace out part of a random pure state, compute the entropy of the remainder, and average over states. They extend the standard bipartite results with the average tangle and a bound on average concurrence. They then treat tripartite systems and general multipartite ones. The main gain is that a third subsystem can act as an environment. They show that small subsystems are near maximally mixed, and that two small collections have average mutual information below one nat when the rest is large.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"So-called average subsystem entropies are defined by first taking partial traces over some pure state to define density matrices, then calculating the subsystem entropies, and finally averaging over the pure states to define the average subsystem entropies."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"This analysis takes the 'universe' to be in a random pure state, splits the universe into sub-systems which are not pure, (and so have non-zero subsystem entropies), and averages over the pure states."</p>
+<h3 id="why-tripartite">Why tripartite</h3>
+<p>"A particularly nice feature of tripartite and multi-partite analyses is that this framework allows one to introduce an 'environment' for small subsystems to couple to."</p>
+<h3 id="the-bipartite-result-used">The bipartite result used</h3>
+<p>$$S_{n_A,n_B}=\langle S_A\rangle=\langle S_B\rangle=H_m^{M}-H_M-\frac{m-1}{2M},\qquad m=\min\{n_A,n_B\},\ M=\max\{n_A,n_B\} \qquad (paper\ 3.2,\ 3.3)$$</p>
+<h3 id="the-general-bound">The general bound</h3>
+<p>$$\langle S(\rho_{ijk\ldots})\rangle=\ln(m_{ijk\ldots})+\Delta,\qquad \Delta\in\left[-\tfrac12,0\right] \qquad (paper\ 5.10)$$</p>
+<h3 id="the-reading-of-the-bound">The reading of the bound</h3>
+<p>"we see that any collection of these average subsystems is close to being maximally mixed, in fact within $\tfrac12$ a nat of maximal mixing."</p>
+<h3 id="the-mutual-information-bound">The mutual information bound</h3>
+<p>"the average mutual information between any two 'small' collections of subsystems, $A$ and $B$, in the multi-partite pure-state system never exceeds $\tfrac12$ nat as long as the subsystem collection $C$ is dominant"</p>
+<h3 id="the-thermodynamic-limit">The thermodynamic limit</h3>
+<p>"letting $n\to\infty$ while keeping $n_{ijk\ldots}$ fixed, we see $\lim_{n\to\infty}\langle S(\rho_{ijk\ldots})\rangle=\ln(n_{ijk\ldots})$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-environment-from-a-third-factor">1. An environment from a third factor</h3>
+<p><strong>The idea.</strong> A tripartite split gives small subsystems something to be entangled with, which a bipartite split cannot.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/exercise-entanglement-entropy-and-the-partial-trace.md</code> computes the entropy of one reduced state in a two-qubit system. Adding a third factor turns that exercise into a statement about decoherence, which the target's two-qubit setting cannot express.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-entanglement-entropy-and-the-partial-trace.md</code>, in the closing problems.</p>
+<p><strong>What stands in the way.</strong> The averages are over random states, not dynamics. Ranked first, because it is the same computation with the missing factor added.</p>
+<h3 id="2-almost-maximally-mixed-with-a-number">2. Almost maximally mixed, with a number</h3>
+<p><strong>The idea.</strong> Average subsystem entropies sit within half a nat of maximal mixing.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code> fixes the entropy functional. A generic-state statement with an explicit bound is a check that functional should pass, and the target does not state one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code>, in the discussion of the functional.</p>
+<p><strong>What stands in the way.</strong> The bound assumes a uniform average. Ranked second.</p>
+<h3 id="3-mutual-information-is-small-for-small-pairs">3. Mutual information is small for small pairs</h3>
+<p><strong>The idea.</strong> Two small subsystems share little, however large the rest is.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code> treats distinguishability of states. A generic-state suppression of correlations is a statement about typical states, and the target's relative entropy is defined state by state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code>, in the discussion of typicality.</p>
+<p><strong>What stands in the way.</strong> Typicality is not a property of the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

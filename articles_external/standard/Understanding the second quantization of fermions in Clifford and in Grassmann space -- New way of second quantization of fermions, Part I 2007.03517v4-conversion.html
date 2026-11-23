@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding the Second Quantization of Fermions in Clifford and in Grassmann Space — Part I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="understanding-the-second-quantization-of-fermions-in-clifford-and-in-grassmann-space-part-i"><strong>Understanding the Second Quantization of Fermions in Clifford and in Grassmann Space — Part I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2007.03517v4 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>N. S. Mankoč Borštnik, H. B. F. Nielsen</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 15 December 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>New way of second quantization of fermions, Part I</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part I 2007.03517v4-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part I 2007.03517v4.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part I 2007.03517v4.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that odd products of Grassmann co-ordinates $\theta^a$ and their derivatives, taken as superposition basis vectors on which a vacuum state is defined, anticommute as the creation and annihilation operators of Dirac fermions must. Anticommutation is then a consequence of the oddness of the algebra rather than a postulate. The fermions obtained this way carry integer spin, which the paper states up front.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-core-result">The core result</h3>
+<p>"in d-dimensional space the superposition of odd products of θa ’s exist, Eqs. (8, 10" "chosen to be the eigenvectors of the Cartan subalgebra of the Lorentz algebra in Grassmann space, Eq. (4), manifest 17 the anticommutation relations of Eq. (11) on the algebraic level. To compare the properties of creation" "the requirements for the anticommutation relations for the Dirac’s fermions. 27"</p>
+<h3 id="the-transfer-of-oddness">The transfer of oddness</h3>
+<p>"Since the creation and annihilation operators, which are superposition of odd products of θa ’s and ∂θ∂a ’s, respectively, anticommute algebraically when applying on the vacuum state, Eq. (11, 12) (while the corresponding even products of θa ’s and ∂θ∂a ’s commute, Eq." "while the corresponding even products of θa ’s and ∂θ∂a ’s commute, Eq. (16)), it follows that also" "it follows that also creation operators, defined on tensor products of the finite number of ”basis vectors” (describ-" "and on infinite basis of momentum space, together with their Hermitian conjugated partners annihilation operators, fulfill the anti- commutation relations of Eq."</p>
+<h3 id="the-claim-about-postulates">The claim about postulates</h3>
+<p>"The use of the Grassmann odd algebra to describe the internal space of ”Grassmann fermions” offers the anticommutation relations without postulating them" "Correspondingly we second quantized ”fermion fields” without postulating commutation relations of Dirac."</p>
+<h3 id="the-size-of-the-hilbert-space">The size of the Hilbert space</h3>
+<p>The Slater determinants "form the infinite dimensional Hilbert space of ”Slater determinants” of (continuous) infi- d−1 nite number of momenta, with 22 possibilities for each momentum p~, Eq. (34)). These" (paper 34).</p>
+<h3 id="the-limitation-stated-plainly">The limitation, stated plainly</h3>
+<p>"ns. The ”Grassmann fermions” carry the spin and charges, originated in d ≥ 5, in the adjoint representations. ”Grassmann fermions” offer no families, what" "No elementary ”Grassmann fermions” with the spins and charges in the adjoint representations 28 have been observed"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-anticommutation-from-oddness-not-from-a-postulate">1. Anticommutation from oddness, not from a postulate</h3>
+<p><strong>The idea.</strong> Dirac statistics is normally an input: one writes $\{b,b^\dagger\}=1$ and checks that it reproduces the spectrum. Here the odd grading of the algebra makes creation operators anticommute automatically, and the postulate becomes a theorem. This is a <strong>mechanism</strong> for producing the statistics.</p>
+<p><strong>What it would add.</strong> The reason the corpus's second-quantisation article otherwise supplies as a convention — a derivation of the anticommutator from the grading of the algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code>, at the anticommutator.</p>
+<p><strong>What stands in the way.</strong> The construction produces anticommutation on a vacuum and on Slater determinants, but the corpus's fields are already graded; the two derivations must be shown to be the same one, or the corpus must choose which to present.</p>
+<h3 id="2-the-integer-spin-branch-and-its-disappearance">2. The integer-spin branch, and its disappearance</h3>
+<p><strong>The idea.</strong> The same Grassmann construction also yields integer-spin fermions, which are unobserved; the paper then shows that the reduction needed to obtain half-integer spin removes the integer branch entirely. The unphysical branch is not discarded by hand, it is removed by the same step that makes the physical one possible.</p>
+<p><strong>What it would add.</strong> A case where an unwanted sector cancels out structurally rather than being projected away, which is the pattern the corpus uses in its own reduction arguments.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, on the allowed spins.</p>
+<p><strong>What stands in the way.</strong> The cancellation is proved within the $d$-dimensional construction, where $d\ge5$; the corpus works in four dimensions and would have to reproduce the reduction to use the argument.</p>
+<h3 id="3-math13-states-per-momentum">3. $2^{d/2-1}$ states per momentum</h3>
+<p><strong>The idea.</strong> The internal space contributes a fixed multiplicity per momentum, so the second-quantised Hilbert space is a tensor product of a finite internal factor and an infinite momentum factor. This is a <strong>number</strong> with a dependence on the dimension.</p>
+<p><strong>What it would add.</strong> A count the corpus can compare with its own state counting, which it does per article rather than per momentum.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code>, on the state count.</p>
+<p><strong>What stands in the way.</strong> The exponent depends on $d$ and the corpus fixes $d=4$, where the count is trivially small.</p>
+<p>This is a thirty-two page paper; the Grassmann basis vectors, the vacuum, the transfer of oddness, the Slater-determinant Hilbert space and the integer-spin limitation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standard Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Standard_Model.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="standard-model"><strong>Standard Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Standard Model</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Standard_Model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Standard_Model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Standard_Model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A long encyclopedia article on the Standard Model: the gauge theory of the electromagnetic, weak and strong interactions with group SU(3)×SU(2)×U(1), the classification of the elementary particles into quarks, leptons and gauge bosons, the Higgs mechanism giving the masses, and the known omissions — gravity, neutrino masses and dark matter.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"The Standard Model of particle physics is the theory describing three of the four known fundamental forces (electromagnetic, weak and strong interactions – excluding gravity) in the universe and classifying all known elementary particles."</p>
+<h3 id="the-construction">The construction</h3>
+<p>The theory is a gauge theory with the group SU(3)×SU(2)×U(1). The strong sector confines colour into hadrons, the electroweak sector is broken by the Higgs field to the electromagnetic U(1), and the fermions come in three generations with the chiral assignments that make the weak interaction parity-violating.</p>
+<h3 id="the-status">The status</h3>
+<p>"It was developed in stages throughout the latter half of the 20th century, through the work of many scientists worldwide,[1] with the current formulation being finalized in the mid-1970s upon experimental confirmation of the existence of quarks." quarks. The article is careful about the omissions: gravity is outside, and neutrino masses require an extension.</p>
+<p>"Standard Model The Standard Model of particle physics is the theory describing three of the four known fundamental forces (electromagnetic, weak and strong interactions – excluding gravity) in the universe and classifying all known elementary particles."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-group-three-factors-and-the-factors-do-not-unify">1. One group, three factors, and the factors do not unify</h3>
+<p><strong>The idea.</strong> SU(3)×SU(2)×U(1) is a product, not a simple group, so the Standard Model does not unify the three interactions; it unifies their description. Each factor has its own coupling. This is a <strong>reading</strong> that the unification literature sometimes blurs.</p>
+<p><strong>What it would add.</strong> A precise statement of what "unified" does and does not mean, which the corpus's grand-unification remarks need.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code>, at the group structure.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus already treats the factors separately.</p>
+<h3 id="2-chirality-is-an-input-not-a-result">2. Chirality is an input, not a result</h3>
+<p><strong>The idea.</strong> The fermion content is chiral — left-handed doublets and right-handed singlets — and this assignment is put in by hand. The Standard Model does not explain why the weak interaction couples only to one chirality.</p>
+<p><strong>What it would add.</strong> A statement of the largest unexplained input, which is exactly what the corpus's chiral-wall article is about.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, at the wall.</p>
+<p><strong>What stands in the way.</strong> The corpus's wall is a property of the algebra's dimension; whether the Standard Model's chiral assignment can be derived from it is the open question, not a settled import.</p>
+<p>This is a long encyclopedia article; the group, the particle content, the Higgs sector and the omissions are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

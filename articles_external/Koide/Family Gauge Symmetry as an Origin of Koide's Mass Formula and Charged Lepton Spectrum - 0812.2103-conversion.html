@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Gauge Symmetry as an Origin of Koide&#x27;s Mass Formula and Charged Lepton Spectrum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide&#x27;s Mass Formula and Charged Lepton Spectrum -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="family-gauge-symmetry-as-an-origin-of-koides-mass-formula-and-charged-lepton-spectrum"><strong>Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>0812.2103 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Y. Sumino</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 May 2009 (v1 11 December 2008)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>JHEP 0905 (2009) 075</td>
+</tr>
+<tr>
+<td>report</td>
+<td>TU–833</td>
+</tr>
+<tr>
+<td>length</td>
+<td>37 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0812.2103-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0812.2103.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0812.2103.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds the full model behind the cancellation mechanism: $U(3)\times SU(2)$ family gauge symmetry, the lepton mass matrix proportional to $\langle\Phi\rangle^2$, and an enlarged $SU(9)\times U(1)$ symmetry above the cutoff that fixes the shape of the potential. The vacuum of a simple potential then lands on the amplitude ratios $(0.01775,0.2352,0.9718)$ against the measured $(0.01647,0.2369,0.9714)$ — the largest component with an accuracy of $4\times10^{-4}$ — and a small perturbation of relative size $6\times10^{-3}$ puts the other two in place. The relation is thus "protected" by a hierarchy of couplings rather than tuned, and the residual one-parameter freedom makes a prediction: with only one operator switched on, $m_e/m_\tau$ comes out $15\%$ high and $m_\mu/m_\tau$ $1.5\%$ high.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-has-to-be-explained">What has to be explained</h3>
+<p>"Among various properties of elementary particles, the spectra of the quarks and leptons exhibit unique patterns, and their origin still remains as a profound mystery." The model implements three things: "(1) The radiative correction induced by family gauge interaction cancels the QED radiative correction to Koide's mass formula ... (2) A simple potential of $\Phi$ invariant under $U(3)\times SU(2)$ leads to a realistic charged lepton spectrum ... assuming that Koide's formula is protected; (3) Koide's formula is stabilized by embedding $U(3)\times SU(2)$ symmetry in a larger symmetry group."</p>
+<h3 id="the-setup">The setup</h3>
+<p>$$
+\psi_L:(\mathbf3,\mathbf1), \qquad e_R:(\bar{\mathbf3},\mathbf1), \qquad \Phi:(\mathbf3,\mathbf3), \qquad \phi:(\mathbf1,\mathbf1),
+\tag{paper 46}
+$$</p>
+<p>with $\Phi\to U\Phi O^T$ and the operators of the potential grouped into $V_{\Phi_1}$, $V_{\Phi_2}$, $V_{\Phi_3}$. The mass matrix is $M_\ell\propto\langle\Phi\rangle\langle\Phi\rangle$, so $\sqrt{m_i}\propto v_i$. Above the cutoff the symmetry is $SU(9)\times U(1)$, with $X$ in the $\mathbf{45}$; the $SU(9)\times U(1)$-invariant condition</p>
+<p>$$
+\Phi_\alpha X^{\alpha\beta}\Phi_\beta^*=0
+\tag{paper 51}
+$$</p>
+<p>reduces at $X_0=\mathrm{diag}(-1,+1,\dots,+1)$ to the first of the two conditions that produce the vacuum.</p>
+<h3 id="the-numbers">The numbers</h3>
+<p>"The three eigenvalues of $\Phi_0$ are given by"</p>
+<p>$$
+\left(v_1,v_2,v_3\right)\approx v_0\left(0.01775,\ 0.2352,\ 0.9718\right),
+\tag{paper 44}
+$$</p>
+<p>the closed form being written in terms of $x_0$, the real root of $8x^3+4x-2=0$, $x_0\approx0.38546$. The triple satisfies $\sum v_i^2=v_0^2$ and the constraint exactly. The measured values are</p>
+<p>$$
+\left(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau}\right)\approx\sqrt{m_\Sigma}\left(0.01647,\ 0.2369,\ 0.9714\right),\qquad m_\Sigma=m_e+m_\mu+m_\tau .
+\tag{paper 45}
+$$</p>
+<p>"We pay particular attention to the value of $v_3/v_0$, which approximates the corresponding experimental value with an accuracy of $4\times10^{-4}$." Since the constraint treats the three symmetrically, "some kind of fine tuning should be inherent in this vacuum configuration corresponding to a hierarchical spectrum ... a tiny perturbation to the potential can bring all $v_i/v_0$ to be consistent with the experimental values. For instance, turning on $V_{\Phi_2}$ with $\varepsilon_{\Phi_2}/\varepsilon_{\Phi_3}\approx-6\times10^{-3}$ will achieve this." A footnote: "if $v_3/v_0\approx0.9856$ ($1.5\%$ difference from the experimental value), $m_e$ and $m_\mu$ are predicted to be the same".</p>
+<p>"We find it quite intriguing that the vacuum of such a simple potential, which respects the $U(3)$ family symmetry, selects this particular value of $v_3/v_0$ very close to the realistic value." At the same time: "it is unclear what mechanism protects the condition (34). Furthermore, it is unclear why $V_{\Phi_2}$ should be so much suppressed compared to $V_{\Phi_3}$, $|\varepsilon_{\Phi_2}/\varepsilon_{\Phi_3}|\lesssim10^{-2}$."</p>
+<h3 id="what-protected-means">What "protected" means</h3>
+<p>"Koide's formula imposes one relation among the three charged lepton masses. Hence, apart from an overall dimensionful scale of the three masses, there remains one-parameter degree of freedom. Suppose this degree of freedom is fixed by minimizing the operator $V_{\Phi_3}=g_2\mathrm{tr}(\Phi\Phi^T\Phi^*\Phi^\dagger)$. Then, $m_e/m_\tau$ is predicted to be $15\%$ away from the experimental value, and $m_\mu/m_\tau$ is predicted to be $1.5\%$ away from the experimental value." Because the relation is held by the large couplings and only the last parameter is set by the small one, "this is not regarded as fine tuning".</p>
+<h3 id="phenomenology">Phenomenology</h3>
+<p>"A most characteristic prediction of the present model is the existence of lepton-flavor violating processes" at $10^2$–$10^3$ TeV; the $K_L\to e\mu$ estimate and the anomaly-cancelling fermions are as in the companion letter.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-relation-plus-one-potential-gives-three-mass-ratios">1. One relation plus one potential gives three mass ratios</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the relation removes one of the three mass ratios, an overall scale removes another, and the last is fixed by whichever operator dominates the potential; with the leading operator the answer is $(0.01775,0.2352,0.9718)$ against $(0.01647,0.2369,0.9714)$, so the largest component is right to $4\times10^{-4}$ and the other two to a few parts in $10^{3}$ in absolute terms, with one perturbation of relative size $6\times10^{-3}$ and no further fitting.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §9 and §11 keep asking for a fourth rung and for a boundary condition; this is the arithmetic that shows what a boundary condition buys — one extra number, and the payoff is a spectrum rather than a relation. The $4\times10^{-4}$ on $v_3/v_0$ is also the only case in the folder where a <em>third</em> quantity (not one of the three that define the relation) lands within an order of magnitude of a prediction.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §9, as the standard against which a new route must be judged, and §11.</p>
+<p><strong>What stands in the way.</strong> The $4\times10^{-4}$ comes from a vacuum of a potential whose two leading operators are chosen by hand, and the paper concedes that the symmetry does not forbid the operator that ruins it ($|\varepsilon_{\Phi_2}/\varepsilon_{\Phi_3}|\lesssim10^{-2}$ is unexplained). It is a fit with a promising shape, not a derivation.</p>
+<h3 id="2-amplitude-ratios-close-to-a-root-of-a-cubic">2. Amplitude ratios close to a root of a cubic</h3>
+<p><strong>The idea.</strong> A <strong>formula and three numbers</strong>: the vacuum satisfies $8x^3+4x-2=0$ with $x\approx0.3285$, and the amplitude ratios are explicit functions of that root; the measured ratios are reproduced to three or four digits.</p>
+<p><strong>What it would add.</strong> The corpus has the amplitude ratios as data; this gives them a generator — one algebraic number produces all three. If the number itself could be motivated (it is $\sin$ of a specific angle, $x_0=0.3285\approx1/3$), the corpus's "why this triple" question would acquire a concrete target: not a symmetry group but an algebraic equation.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, and §4 where the ratios are tabulated.</p>
+<p><strong>What stands in the way.</strong> The cubic is the stationarity condition of one particular potential with one particular set of couplings; change the potential and the number changes. Without the potential's justification from above the cutoff, the cubic is a coincidence of a fit.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The $SU(9)\times U(1)$ embedding is motivated by a geometric reading of the relation and is the least checkable part of the paper. The discussion of $1/\Lambda$ corrections and why they do not spoil the relation at tree level is a useful argument for taking effective theories seriously here. The stabilisation of the relation by the large couplings $(\tilde m^2,\lambda,\varepsilon_K,\tilde h_1)$ is the paper's central technical claim.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

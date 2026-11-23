@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partition function for a volume of space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Partition function for a volume of space - 2212.10607.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="partition-function-for-a-volume-of-space"><strong>Partition function for a volume of space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.10607v5 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ted Jacobson, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v5, 2 October 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Partition function for a volume of space - 2212.10607-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Partition function for a volume of space - 2212.10607.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Partition function for a volume of space - 2212.10607.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Evaluates the quantum gravity partition function that counts the dimension of the Hilbert space of a spatial region with ball topology and fixed proper volume, in the leading saddle-point approximation. The answer is the exponential of the Bekenstein–Hawking entropy of the saddle ball's boundary area. The computation generalises Gibbons–Hawking for positive cosmological constant and unconstrained volume, and is reliable within effective field theory provided the mild curvature singularity at the ball boundary is regulated by higher-curvature terms. The result is read as evidence for the maximal vacuum entanglement hypothesis.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We consider the quantum gravity partition function that counts the dimension of the Hilbert space of a spatial region with topology of a ball and fixed proper volume, and evaluate it in the leading order saddle point approximation. The result is the exponential of the Bekenstein-Hawking entropy associated with the area of the saddle ball boundary."</p>
+<h3 id="what-it-generalises">What it generalises</h3>
+<p>"This generalizes the classic Gibbons-Hawking computation of the de Sitter entropy for the case of positive cosmological constant and unconstrained volume." De Sitter is the case where the volume constraint is absent; imposing it selects a ball of a particular size, and the entropy is the area of that ball's edge.</p>
+<h3 id="the-condition-for-validity">The condition for validity</h3>
+<p>The result "is reliable within effective field theory provided the mild curvature singularity at the ball boundary is regulated by higher curvature terms." The saddle is singular at its own boundary; the authors do not hide this, and they need higher-curvature terms to make sense of it.</p>
+<h3 id="the-interpretation">The interpretation</h3>
+<p>The result "exhibits the holographic nature of nonperturbative quantum gravity in generic finite volumes of space." And the entropy match leads to the statement that "the semiclassical, gravitationally dressed vacuum state of such a causal diamond is close to a maximally mixed state, a notion that has already been advanced for the case of a de Sitter static patch."</p>
+<h3 id="the-evidential-status">The evidential status</h3>
+<p>"The entropy match discussed above thus lends nonperturbative quantum gravitational support to the 'maximal vacuum entanglement hypothesis' ... To elevate that support to full justification would require mastery of the corrections to the saddle point approximation." Support, not proof, and the authors say which step is missing.</p>
+<h3 id="on-matter">On matter</h3>
+<p>"We have explicitly considered only the states of the gravitational field, in a ball, but matter fields could be included without any modification of the saddle calculation, provided the matter fields vanish in the saddle configuration." Extra states would be accounted for at leading order by the value of $G$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-dimension-of-a-regions-hilbert-space-is-an-area">1. The dimension of a region's Hilbert space is an area</h3>
+<p><strong>The idea.</strong> $\dim\mathcal H_{\text{ball}}=\exp(A/4G\ell_P^2)$ for a ball at fixed volume: the number of states of a region is set by its boundary area, not its volume. This is a <strong>formula</strong>, and it is the sharpest statement of holography in finite volume in this collection.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> defines an entropy functional on $\mathbb{B}_\Psi$ without saying what the dimension of the corresponding state space is. The statement that the count is exponential in the boundary area is exactly the constraint such a functional must satisfy, and the corpus has never imposed it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, and <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The count is gravitational — it counts metrics, not biquaternion states — and the corpus's state space is finite-dimensional with no area in it. The cost is that the corpus would have to exhibit a map from its finite algebra to a geometry before the formula could bite.</p>
+<h3 id="2-the-vacuum-of-a-region-is-maximally-mixed">2. The vacuum of a region is maximally mixed</h3>
+<p><strong>The idea.</strong> The gravitationally dressed vacuum of a ball is close to maximally mixed, so a region's vacuum carries the largest entropy its dimension allows. This is a <strong>reading</strong> of the vacuum state.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> takes the vacuum as the reference state for the modular Hamiltonian and never asks how mixed it is. "Maximally mixed up to corrections" is a definite statement the article could adopt, and one that would explain why the modular temperature is universal.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is stated for the gravitational sector of a ball in the saddle approximation; the corpus's vacuum is algebraic. Ranked second.</p>
+<h3 id="3-a-singular-saddle-that-still-gives-the-right-answer">3. A singular saddle that still gives the right answer</h3>
+<p><strong>The idea.</strong> The saddle has a curvature singularity at the ball's boundary, regulated by higher-curvature terms, and the leading answer is nevertheless correct. This is a <strong>mechanism</strong>-level caution: the effective description's breakdown at the edge does not spoil the counting.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues places where its own constructions break. A precedent that a breakdown at the boundary of a region leaves the bulk answer intact is a useful pattern, and it is the reverse of the usual worry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The regulation is by higher-curvature terms the corpus does not have; the pattern can be cited, not used. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

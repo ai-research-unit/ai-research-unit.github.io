@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal conditions for the existence of a Hawking-like flux — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Minimal conditions for the existence of a Hawking-like flux - 1011.5593.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="minimal-conditions-for-the-existence-of-a-hawking-like-flux"><strong>Minimal conditions for the existence of a Hawking-like flux</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.5593v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 29 October 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Minimal conditions for the existence of a Hawking-like flux - 1011.5593-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Minimal conditions for the existence of a Hawking-like flux - 1011.5593.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Minimal conditions for the existence of a Hawking-like flux - 1011.5593.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Hawking's derivation assumes an event horizon and a static exterior. The authors keep neither. They ask what is really needed to get a Planckian flux at future null infinity. The answer is an approximate exponential relation between affine parameters on past and future null infinity, together with an adiabatic condition. The exponent can drift slowly, so the temperature evolves. They also separate the peeling of null geodesics from the inaffinity used in the standard definition of surface gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setup">The setup</h3>
+<p>"In the strict general relativistic scenario adopted in this paper (no modified dispersion relations), Hawking radiation is derived assuming (i) that an event horizon forms, and (ii) that the subsequent exterior geometry is static. ... We present a formalism where one can deal with both of these cases."</p>
+<h3 id="the-criterion">The criterion</h3>
+<p>"we focus on the existence of an (in our case, approximate) exponential relation between the affine parameters on past and future null infinities as the necessary and sufficient condition for generating a Hawking flux."</p>
+<h3 id="the-result">The result</h3>
+<p>"if ... the adiabaticity condition holds, then a Planck-distributed Hawking-like flux will arrive at future null infinity with temperature determined by the e-folding properties of the outgoing null geodesics."</p>
+<h3 id="the-evolution">The evolution</h3>
+<p>"The temperature of the Hawking-like flux can slowly evolve as a function of time."</p>
+<h3 id="the-distinction">The distinction</h3>
+<p>"we also show that the notion of 'peeling' of null geodesics is distinct, and in general different, from the usual notion of 'inaffinity' used in Hawking's definition of surface gravity."</p>
+<h3 id="the-general-claim">The general claim</h3>
+<p>"We have demonstrated that any collapsing compact object (regardless of whether or not any type of horizon ever forms) will, provided the exponential approximation and adiabatic condition hold, emit a slowly evolving Planckian flux of quanta."</p>
+<h3 id="the-caution-about-thermality">The caution about thermality</h3>
+<p>"Note that we have carefully described the Hawking flux as Planckian rather than thermal. To claim thermality one has to explicitly assume the formation of an event horizon (behind which one can hide correlations)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-flux-does-not-need-a-horizon">1. The flux does not need a horizon</h3>
+<p><strong>The idea.</strong> A Planckian spectrum follows from an exponential relation between null infinities, not from a horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives the radiation with a horizon in place. If the derivation can run without one, the target's dependence on the horizon is an assumption that should be named.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the derivation.</p>
+<p><strong>What stands in the way.</strong> The target works in a different formalism. Ranked first, because it removes a premise the target uses.</p>
+<h3 id="2-planckian-is-weaker-than-thermal">2. Planckian is weaker than thermal</h3>
+<p><strong>The idea.</strong> Thermality needs a horizon to hide correlations; a Planck spectrum alone does not give it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/covariant-local-equilibrium-and-tolman-temperature.md</code> treats temperature as a local notion. This paper says when a spectrum supports a temperature at all, which qualifies that treatment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/covariant-local-equilibrium-and-tolman-temperature.md</code>, in the discussion of equilibrium.</p>
+<p><strong>What stands in the way.</strong> The statement is a caution, not a construction. Ranked second.</p>
+<h3 id="3-peeling-is-not-inaffinity">3. Peeling is not inaffinity</h3>
+<p><strong>The idea.</strong> Two quantities that are often conflated are different in dynamical cases.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/inverse-temperature-as-a-rapidity.md</code> identifies a temperature with a rate. The paper's peeling function is another rate that plays that role, and the target should say which one it means.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/inverse-temperature-as-a-rapidity.md</code>, in the definition.</p>
+<p><strong>What stands in the way.</strong> The distinction is technical and local. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmographic Hubble fits to the supernova data — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic Hubble fits to the supernova data - 0809.0537.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmographic-hubble-fits-to-the-supernova-data"><strong>Cosmographic Hubble fits to the supernova data</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0809.0537v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 September 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmographic Hubble fits to the supernova data - 0809.0537-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic Hubble fits to the supernova data - 0809.0537.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic Hubble fits to the supernova data - 0809.0537.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper fits the Hubble relation to the legacy supernova data without assuming a dynamical model. The relation follows from the symmetries of FLRW alone, so its parameters can be extracted with no dark-energy assumption. The authors perform the fit in several distance variables, treat systematic uncertainties conservatively, and find that the case for cosmic acceleration is weaker than usually claimed: the data suggest acceleration, but not beyond reasonable doubt. They also show that the fitted deceleration parameter moves depending on which distance variable is used and how systematics are budgeted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"The Hubble relation between distance an[d redshift depends] only on the symmetries of a FLRW spacetime, [and not on dynamical] assumptions. This suggests that it should [be possible to fit the Hubble] relation without making any dynamical assu[mptions]."</p>
+<h3 id="what-the-paper-does_1">What the paper does</h3>
+<p>"[We perform] related cosmographic fits to the legacy [supernova] data, [and find that] the 'preponderance of evidence' c[ertainly suggests acceleration, but] argue that (unless one uses additional [assumptions] [this] is not currently supported 'beyond reas[onable doubt]'."</p>
+<h3 id="the-two-conclusions-that-must-be-separated">The two conclusions that must be separated</h3>
+<p>"While the 'preponderance of evidence' certainly suggests an [accelerating universe], we would argue that this conclusion is not currently supported 'beyond reasonable doubt' — [the data] (considered by itself) certainly rather strongly suggests an accelerating universe, but is [not enough to] allow us to reliably conclude that the universe is accelerating."</p>
+<h3 id="the-methodological-point">The methodological point</h3>
+<p>"Instead of simply picking a single model and fitting the data to it, we have tested the ov[erall] scenario by encoding the same physics ($H_0$, $q_0$, $j_0$) in multiple different ways ($d_L$, $d_F$ ... and $y$) to test the robustness of the data fitting procedures."</p>
+<h3 id="on-systematics">On systematics</h3>
+<p>"we have been much more explicit, and conservative, about the role of systematic uncertaint[ies] on estimates of the cosmological parameters. If we only use the statistical uncertainties and the 'known unknowns' added in quadrature, then [the evidence for cos]mological acceleration is much improved ... but this does not mean that such a conclusion is either robust or reliable."</p>
+<h3 id="the-caution-about-method">The caution about method</h3>
+<p>"By 'cherry picking' [a] particular way one analyzes the data, one can find statistical support for almost any conclusion." And: "there is an enormous difference between the two statements: 'the most likely value for the deceleration parameter is negative', and ['the deceleration parameter is negative beyond reasonable doubt']."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-symmetry-fixes-the-relation">1. Symmetry fixes the relation</h3>
+<p><strong>The idea.</strong> The distance–redshift relation follows from FLRW symmetry alone, without any dynamical equation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> has the FLRW metric and no source. This paper shows that a class of observable relations depends only on the metric and not on the source. The article can therefore make contact with supernova data without solving for a source, which changes its assessment of what is out of reach.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of what can be computed.</p>
+<p><strong>What stands in the way.</strong> The relation constrains kinematics and not the framework's content. Ranked first, because it opens a route the article currently treats as closed.</p>
+<h3 id="2-statistical-support-is-not-a-result">2. Statistical support is not a result</h3>
+<p><strong>The idea.</strong> A best-fit value and a reliable conclusion are different claims.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs evidence for and against a framework. This paper is a worked demonstration that the standard evidence for cosmic acceleration, the strongest empirical claim in cosmology, is weaker than its presentation. That calibrates how much any single dataset can decide.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The paper is about supernovae and not about the framework. Ranked second.</p>
+<h3 id="3-the-choice-of-variable-matters">3. The choice of variable matters</h3>
+<p><strong>The idea.</strong> Fitting the same physics through different distance variables gives different answers, and the spread measures the modelling uncertainty.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats a comparison as a comparison. Here the comparison itself has an uncertainty that depends on how it is done, which the article should allow for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a statistical technicality. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

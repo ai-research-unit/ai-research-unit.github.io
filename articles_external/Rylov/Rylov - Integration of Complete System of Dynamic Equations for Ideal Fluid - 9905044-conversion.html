@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integration of Complete System of Dynamic Equations for Ideal Fluid — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Integration of Complete System of Dynamic Equations for Ideal Fluid - 9905044.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="integration-of-complete-system-of-dynamic-equations-for-ideal-fluid"><strong>Integration of Complete System of Dynamic Equations for Ideal Fluid</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/9905044 [physics.flu-dyn]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 May 1999</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>42 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Integration of Complete System of Dynamic Equations for Ideal Fluid - 9905044-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Integration of Complete System of Dynamic Equations for Ideal Fluid - 9905044.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-local-thermal-state-of-a-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Integration of Complete System of Dynamic Equations for Ideal Fluid - 9905044.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Integrates the Euler equations for an ideal fluid, and in doing so separates two things usually conflated: the Eulerian system is closed but incomplete. Completing it requires the Lin constraints, which describe the motion of the fluid particles that carry the velocity field. The completed system can be integrated with the Jacobian technique, and the integration produces hydrodynamic potentials plus three indefinite functions of three arguments, which initial and boundary conditions are supposed to fix. The resulting description contains the flow's full information, including the shape of the stream lines, which the Euler system ignores.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="closed-but-incomplete">Closed but incomplete</h3>
+<p>The distinction is the paper's premise: "The Eulerian system of dynamic equations for the ideal (nondissipative) fluid is closed but incomplete. The complete system of dynamic equations arises after appending Lin constraints which describe motion of fluid particles in a given velocity field."</p>
+<p>The difference is not in the count of equations but in their content: "Although the integrated system and the curtailed Euler system contain the same number of equations, they differ in the relation that the integrtated system takes into account information contained in the Lin constraints, whereas the Euler system ignores it."</p>
+<h3 id="what-the-integration-produces">What the integration produces</h3>
+<p>"Description in terms of hydrodynamic potentials (DTHP) arises as a result of this integration. The integrated system contains indefinite functions of three arguments, which can be expressed via initial and boundary conditions." The conclusion states the count: three indefinite functions $g(\xi)$ of three arguments "arise as a result of this integration", and "These functions can be expressed vias initial and boundary conditions, and all essential information on the fluid flow appears to be concentrated in the integrated system of hydrodynamic equations."</p>
+<p>Two properties are claimed for the potentials. Some are material: "Some hydrodynamic potentials appear to be frozen into the fluid, and the Kelvin's" theorem applies to them. And the boundary conditions can be standardised: "The remaining initial and boundary conditions for the integrated system can be made universal (i.e. the same for all fluid flows), and the resulting system of equations contains full information about the fluid flow including initial and boundary conditions for the fluid flow."</p>
+<h3 id="where-it-matters">Where it matters</h3>
+<p>The difference is invisible in the case everyone studies: it "is of no importance for irrotational flows, when the fluid properties described by the Kelvin's theorem (and Lin constraints) are inessential, because they are fulfilled automatically. But this difference is essential in the case of irrotational flows." The final "irrotational" is printed in the PDF; from the argument it is the rotational case that is meant. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-closed-is-not-complete">1. Closed is not complete</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: a system of equations can be closed — as many equations as unknowns — and still not contain the information its own variables presuppose. The Euler system is closed in $\rho$ and $v$ and says nothing about which fluid element is where, and that omission is a loss of information, not a choice of variables. </p>
+<p><strong>What it would add.</strong> The corpus's fluids are written with a density and a velocity and no labelling, and the corpus's argument for its own completeness is a parameter count. This paper is a case where the count is satisfied and completeness fails, which is exactly the failure mode a counting argument cannot see. That is a genuine caution for the corpus's method, delivered on a fluid both sides treat. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>. </p>
+<p><strong>What stands in the way.</strong> Rylov's completeness criterion is his own — that the description include the labelling — and it presumes a Lagrangian ontology in which fluid elements are individuals. A corpus that treats the fluid as a field has no such individuals to track, and by that criterion is complete already. </p>
+<h3 id="2-three-free-functions-of-three-arguments">2. Three free functions of three arguments</h3>
+<p><strong>The idea.</strong> The integration of the completed system produces exactly Three indefinite functions $g(\xi)$ of three arguments, fixed by initial and boundary conditions. A <strong>count</strong> of what a flow's initial data must supply. </p>
+<p><strong>What it would add.</strong> The corpus counts constants per field, and a free function of three arguments is a much larger object than a constant — it is a whole initial condition. Naming it makes the difference between "a parameter" and "a function" explicit, and the corpus's own open items can be graded by which of the two they need: a missing constant is a much smaller gap than a missing function. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>. </p>
+<p><strong>What stands in the way.</strong> The functions are fixed by data, so they are not free parameters of the theory in the corpus's sense; the count says how much data a flow needs, not how much freedom the theory has. Comparing the two counts would be a category error unless the distinction is drawn first. </p>
+<h3 id="3-potentials-frozen-into-the-fluid">3. Potentials frozen into the fluid</h3>
+<p><strong>The idea.</strong> Some of the integrated potentials are materially conserved — they move with the fluid, in the sense of Kelvin's theorem — so they are labels of fluid elements rather than fields. </p>
+<p><strong>What it would add.</strong> The corpus's fluids carry a density and a phase; a materially conserved potential is a third kind of object, and its conservation is a constraint rather than an equation of motion. If the corpus has such an object, it has not been identified as one, and the identification would give its fluid a Lagrangian skeleton alongside the Eulerian description. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>. </p>
+<p><strong>What stands in the way.</strong> The statement is qualitative —"Some hydrodynamic potentials appear to be frozen into the fluid" — with no list of which potentials and no conservation equation. The claim cannot be checked without the list.</p>
+<p>The rank: closed versus complete first, because it is a caution about the corpus's own method; the function count second, because it grades the shape of an open item; frozen potentials last, because the paper does not name them.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravity&#x27;s universality: The physics underlying Tolman temperature gradients — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravity&#x27;s universality - The physics underlying Tolman temperature gradients -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitys-universality-the-physics-underlying-tolman-temperature-gradients"><strong>Gravity's universality: The physics underlying Tolman temperature gradients</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1805.05583v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jessica Santiago, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF says it is an essay for the Gravity Research Foundation 2018 competition)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravity's universality - The physics underlying Tolman temperature gradients - 1805.05583-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravity's universality - The physics underlying Tolman temperature gradients - 1805.05583.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravity's universality - The physics underlying Tolman temperature gradients - 1805.05583.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Tolman showed in 1930 that a fluid in equilibrium in a gravitational field must have a temperature gradient. This essay explains why that does not break thermodynamics. The argument is kinematic, using gravitational redshift and a relativistic version of Maxwell's two-column argument. The key point is that gravity is universal: it acts on every source of energy alike, so no heat engine can be built between two heights. For any non-universal force, the same construction would give a perpetual heat machine.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"We provide a simple and clear verification of the physical need for temperature gradients in equilibrium states when gravitational fields are present."</p>
+<h3 id="the-method">The method</h3>
+<p>"Our argument will be built in a completely kinematic manner, in terms of the gravitational red-shift/blue-shift of light, together with a relativistic extension of Maxwell's two column argument."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"We conclude by showing that it is the universality of the gravitational interaction (the uniqueness of free-fall) that ultimately permits Tolman's equilibrium temperature gradients without any violation of the laws of thermodynamics."</p>
+<h3 id="the-question">The question</h3>
+<p>"The question we will like to ask and answer in here is whether all the consequences of this universal character of gravity have already been fully explored. We believe that they have not."</p>
+<h3 id="the-contrast-with-other-forces">The contrast with other forces</h3>
+<p>"Given that temperature gradients created by any force that is not universal (e.g. dependent on charge, mass, spin,...) allow the creation of heat machines that violate the second law, these temperature gradients must not exist."</p>
+<h3 id="the-final-statement">The final statement</h3>
+<p>"up to date no force other than gravity seems to act on all sources of mass or energy in the same way regardless, so we can even state this as: Gravity is the only force capable of creating temperature gradients in equilibrium states without violating any law of thermodynamics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-equilibrium-needs-a-gradient">1. Equilibrium needs a gradient</h3>
+<p><strong>The idea.</strong> In a gravitational field, uniform temperature is not equilibrium.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats a horizon temperature as a single number. Tolman's result says a temperature field is needed, and the article should say how its single value relates to the field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of temperature.</p>
+<p><strong>What stands in the way.</strong> The essay concerns static equilibrium only. Ranked first, because it forces the article to distinguish a value from a field.</p>
+<h3 id="2-universality-is-the-reason-not-the-metric">2. Universality is the reason, not the metric</h3>
+<p><strong>The idea.</strong> The gradient is allowed because free fall is unique, not because spacetime is curved.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> grounds physics in geometry. Here the physical content comes from a symmetry of coupling, which is a different explanatory resource the article could use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The argument is qualitative. Ranked second.</p>
+<h3 id="3-non-universal-forces-would-allow-a-perpetual-machine">3. Non-universal forces would allow a perpetual machine</h3>
+<p><strong>The idea.</strong> Any force distinguishing particles by charge or spin would create an exploitable gradient.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what the framework forbids. A test on force universality would be a sharp new constraint.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The essay treats this as a consistency argument, not a measurement. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

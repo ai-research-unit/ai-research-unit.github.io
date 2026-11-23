@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards a Probabilistic Foundation of Relativistic Quantum Theory: The One-Body Born Rule in Curved Spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Towards a Probabilistic Foundation of Relativistic Quantum Theory 2012.05212v7.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-a-probabilistic-foundation-of-relativistic-quantum-theory-the-one-body-born-rule-in-curved-spacetime"><strong>Towards a Probabilistic Foundation of Relativistic Quantum Theory: The One-Body Born Rule in Curved Spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2012.05212v7 (as downloaded)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Maik Reddiger, Bill Poirier</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v7</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Quantum Studies: Mathematics and Foundations (2025) 12:5, doi 10.1007/s40509-024-00349-0</td>
+</tr>
+<tr>
+<td>length</td>
+<td>52 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Towards a Probabilistic Foundation of Relativistic Quantum Theory 2012.05212v7-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Towards a Probabilistic Foundation of Relativistic Quantum Theory 2012.05212v7.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Towards a Probabilistic Foundation of Relativistic Quantum Theory 2012.05212v7.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Generalises the Born rule for particle-position probabilities from flat to curved spacetime, as the foundation of a relativistic quantum theory that is probabilistic by construction. The one-body case is shown to be a special case of the general-relativistic continuity equation, with a transversality condition replacing the assumption of spacelike hypersurfaces and global hyperbolicity made obsolete.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"we establish a novel approach to the foundations of relativistic quantum theory, which is based on generalizing the quantum-mechanical Born rule for determining particle position probabilities to curved spacetime."</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>"A principal motivator for this research has been to overcome internal mathematical problems of relativistic quantum field theory (QFT) such as the 'problem of infinities' (renormalization), which axiomatic approaches to QFT have shown to be not only of mathematical but also of conceptual nature."</p>
+<h3 id="the-properties-claimed">The properties claimed</h3>
+<p>"The approach presented here is probabilistic by construction, can accommodate a wide array of dynamical models, does not rely on the symmetries of Minkowski spacetime, and respects the general principle of relativity."</p>
+<h3 id="the-technical-result">The technical result</h3>
+<p>"In the analytical part of this work, we consider the 1-body case under the assumption of smoothness of the mathematical quantities involved. This is identified as a special case of the theory of the general-relativistic continuity equation."</p>
+<h3 id="the-improvement-on-earlier-work">The improvement on earlier work</h3>
+<p>"e related approaches to the relativistic generalization of the Born rule assume the hypersurfaces of interest to be spacelike and the spacetime to be globally hyperbolic, we employ prior contributions by C. Eckart and J. Ehlers to show that the former condition is naturally replaced by a transversality condition and that the latter one is obsolete. We"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-born-rule-is-a-continuity-equation-with-a-specified-current">1. The Born rule is a continuity equation with a specified current</h3>
+<p><strong>The idea.</strong> A probability density on spacetime obeys a continuity equation with a current, and the Born rule amounts to choosing the current. Understood this way the rule generalises to any spacetime, because the continuity equation is a geometric object and needs no preferred time. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A derivation-shaped statement of the Born rule for the corpus, whose continuity-equation articles write the equation and then identify the density by analogy rather than by a rule.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.md</code>, at the identification of the density.</p>
+<p><strong>What stands in the way.</strong> The paper's rigour rests on a smooth current on a Lorentzian manifold; the corpus's current is algebraic and may fail smoothness precisely on the zero-divisor cone, which is where its interesting physics sits.</p>
+<h3 id="2-spacelike-hypersurfaces-are-not-needed-transversality-is">2. Spacelike hypersurfaces are not needed, transversality is</h3>
+<p><strong>The idea.</strong> Earlier formulations quantise on spacelike slices and require global hyperbolicity. The paper shows a transversality condition suffices, so the construction survives spacetimes with closed timelike curves or worse.</p>
+<p><strong>What it would add.</strong> A weaker hypothesis the corpus can adopt when it writes down a conserved density, removing an assumption it did not notice it was making.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.md</code>, on the hypotheses.</p>
+<p><strong>What stands in the way.</strong> The corpus is flat and has no slicing to worry about, so the gain is conceptual rather than practical.</p>
+<p>This is a thirty-four page article; the programme, the motivation, the continuity-equation reduction and the transversality result are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

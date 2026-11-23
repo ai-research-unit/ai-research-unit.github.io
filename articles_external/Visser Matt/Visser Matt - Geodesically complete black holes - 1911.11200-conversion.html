@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geodesically complete black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes - 1911.11200.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="geodesically-complete-black-holes"><strong>Geodesically complete black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1911.11200v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 November 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Geodesically complete black holes - 1911.11200-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes - 1911.11200.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes - 1911.11200.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Penrose's theorem shows singularities are unavoidable in general relativity, but says nothing about what replaces them. Taking that theorem as a guide, the authors classify spherically symmetric geometries that are geodesically complete, globally hyperbolic, and free of curvature singularities, without assuming any dynamics. The result is a short list: evanescent regular black holes, one-way hidden wormholes, everlasting regular black holes, and asymptotic hidden wormholes. Each has a defect — an instability, a topology change, or a conflict with semiclassical physics. The authors conclude there is no fully safe option.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"The 1965 Penrose singularity theorem demonstrates the utterly inevitable and unavoidable formation of spacetime singularities under physically reasonable assumptions, and it remains one of the main results in our understanding of black holes."</p>
+<h3 id="the-gap">The gap</h3>
+<p>"It is standard lore that quantum gravitational effects will always tame these singularities in black hole interiors. However, the Penrose's theorem provides no clue as to the possible (non-singular) geometries that may be realized in theories beyond general relativity as the result of singularity regularization."</p>
+<h3 id="the-method">The method</h3>
+<p>"we take a completely different approach, remaining agnostic to the particular quantization scheme of the gravitational field and using Penrose's theorem as guidance ... and perform a systematic analysis of the non-singular possibilities that is blind to the dynamics (classical, semi-classical, or quantum) and assumes a minimal set of kinematical requirements."</p>
+<h3 id="the-main-result">The main result</h3>
+<p>"Our main result is that, contrary to what one might expect, the set of regular geometries that arises is remarkably limited. We rederive geometries that have been analyzed before, but also uncover some new possibilities."</p>
+<h3 id="the-tradeoff">The tradeoff</h3>
+<p>"the complete catalogue of possibilities that we obtain allows us to draw the novel conclusion that there is a clear tradeoff between internal and external consistency: One has to choose between models that display internal inconsistencies, or models that include significant deviations with respect to general relativity, which should therefore be amenable to observational tests via multi-messenger astrophysics."</p>
+<h3 id="the-catalogue">The catalogue</h3>
+<p>"we were able to identify four classes of geometries, that can either be taken as they are or be combined, in order to yield the most general spherically symmetric spacetime satisfying our requirements"</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"we find the remarkable result that there is no fully 'safe' option: all classes of geometries display internal inconsistencies (instabilities, topology change or incompatibilities with semiclassical physics), except for the particular case of evanescent black holes in short time scales."</p>
+<h3 id="the-limit-of-the-analysis">The limit of the analysis</h3>
+<p>"although we have assumed an everywhere well defined geometry, our analysis is valuable also when this is not the case and it allows us to understand how to construct singularity regularization scenario that solves the self consistency issues raised in this paper by allowing for region where an effective geometry cannot be defined."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-finite-catalogue-of-regular-interiors">1. A finite catalogue of regular interiors</h3>
+<p><strong>The idea.</strong> With only geodesic completeness, global hyperbolicity, and curvature regularity, just four classes remain.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> classifies horizons but not interiors. A companion classification of regular interiors would complete the picture and let the article say what lies inside each horizon type.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The classification assumes spherical symmetry. Ranked first, because it supplies the missing half of the article's taxonomy.</p>
+<h3 id="2-every-option-has-a-defect">2. Every option has a defect</h3>
+<p><strong>The idea.</strong> Regularisation does not remove problems; it moves them into instability, topology change, or conflict with semiclassical physics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> should include a no-free-lunch entry. The pattern here is that avoiding one obstruction creates another, which is stronger than a single impossibility.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The tradeoff is argued within spherical symmetry. Ranked second.</p>
+<h3 id="3-short-timescales-as-the-only-escape">3. Short timescales as the only escape</h3>
+<p><strong>The idea.</strong> Only an evanescent black hole on a light-crossing timescale avoids the defects.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs to know which alternatives are observationally distinguishable. A process this fast is a specific, checkable prediction, and a template for stating one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The authors admit the timescale forces a rethink of what a black hole is. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

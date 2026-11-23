@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General class of &quot;quantum deformed&quot; regular black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General class of quantum deformed regular black holes - 2102.02471.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-class-of-quantum-deformed-regular-black-holes"><strong>General class of "quantum deformed" regular black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2102.02471v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 February 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - General class of quantum deformed regular black holes - 2102.02471-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General class of quantum deformed regular black holes - 2102.02471.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General class of quantum deformed regular black holes - 2102.02471.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper examines the Kazakov–Solodukhin quantum-deformed Schwarzschild metric and asks whether it really is regular. The authors separate three notions of regularity: metric components, Christoffel symbols, and curvature invariants. They find that only the first holds; the other two diverge at a two-sphere of finite area. They then embed the metric in a two-parameter family where the notions are separable, and show that some members are more regular. For this family they compute surface gravity, energy conditions, geodesics, and the locations of photon spheres and ISCOs.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"We discuss the 'quantum deformed Schwarzschild spacetime' as originally introduced by Kazakov and Solodukhin in 1993, and investigate the precise sense in which it does and does not satisfy the desiderata for being a 'regular black hole'."</p>
+<h3 id="the-three-levels">The three levels</h3>
+<p>"We shall carefully distinguish (i) regularity of the metric components, (ii) regularity of the Christoffel components, and (iii) regularity of the curvature."</p>
+<h3 id="the-finding">The finding</h3>
+<p>"The metric components are regular, both Christoffel symbols and curvature invariants diverge at the 'centre' of the spacetime, a 2-sphere where $r\to a$ with finite area $A=4\pi a^2$. The 'smearing out' of the 'centre' to $r\to a$ is not sufficient to guarantee curvature regularity."</p>
+<h3 id="the-verdict-on-the-original">The verdict on the original</h3>
+<p>"The original Kazakov–Solodukhin 'quantum deformed Schwarzschild spacetime' is slightly more 'regular' than Schwarzschild spacetime, but it is not 'regular' in the sense normally intended in the general relativity community."</p>
+<h3 id="the-extension">The extension</h3>
+<p>"We have generalized the original Kazakov–Solodukhin spacetime to a two-parameter class compatible with the ideas mooted in reference [1]. Our generalized two-parameter class of 'quantum corrected' Schwarzschild spacetimes contains exemplars which have much better regularity properties"</p>
+<h3 id="what-was-analyzed">What was analyzed</h3>
+<p>"we have analyzed the geometry, surface gravity, stress-energy, and classical energy conditions. We have also perturbatively analyzed the locations of ISCOs and photon spheres, and set up the appropriate Regge–Wheeler formalism for spin-1 and spin-0 excitations."</p>
+<h3 id="the-purpose">The purpose</h3>
+<p>"our generalized two-parameter class of models distorts Schwarzschild spacetime in a clear and controlled way — so providing yet more examples of black-hole 'mimickers' potentially of interest for observational purposes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-three-separate-notions-of-regularity">1. Three separate notions of regularity</h3>
+<p><strong>The idea.</strong> A metric can be regular while its connection and curvature are not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats regularity as one property. Splitting it into three levels is a distinction the article needs before it can say a configuration is non-singular.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The analysis is for a static spherically symmetric family. Ranked first, because it corrects an ambiguity the article would otherwise carry.</p>
+<h3 id="2-a-smeared-centre-is-still-singular">2. A smeared centre is still singular</h3>
+<p><strong>The idea.</strong> Replacing a point by a small sphere of finite area does not remove the curvature divergence.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would gain a concrete counterexample to a natural repair strategy. That is worth recording as a pattern.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on singularities.</p>
+<p><strong>What stands in the way.</strong> It concerns one specific metric family. Ranked second.</p>
+<h3 id="3-mimickers-with-computable-observables">3. Mimickers with computable observables</h3>
+<p><strong>The idea.</strong> The two-parameter family gives photon spheres and ISCOs that can be compared with data.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs observables of this kind. A family whose deviations from Schwarzschild are controlled is a template for how to present a testable alternative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The family is not derived from the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

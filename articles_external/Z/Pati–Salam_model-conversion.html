@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Pati–Salam_model.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-model"><strong>Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Pati–Salam model</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Pati–Salam_model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Pati–Salam_model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fourth-colour-left-right-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Pati–Salam_model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Pati–Salam grand unified theory of 1974: four quark colour charges instead of three, the fourth identified with lepton number, left–right symmetry, a predicted heavy right-handed neutrino and therefore massive neutrinos, and the group structure SU(4) times SU(2) times SU(2).</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"the Pati–Salam model is a Grand Unified Theory (GUT) proposed in 1974 by Jogesh Pati and Abdus Salam. Like other GUTs, its goal is to explain the seeming arbitrariness and complexity of the Standard Model in terms of a simpler, more fundamental theory that unifies, what are in the Standard Model, disparate particles and forces."</p>
+<h3 id="the-fourth-colour">The fourth colour</h3>
+<p>"The Pati–Salam unification is based on there being four quark color charges, dubbed red, green, blue and violet (or originally lilac), instead of the conventional three, with the new 'violet' quark being identified with the leptons."</p>
+<p>That identification is the model's whole idea: a lepton is a quark carrying the fourth colour, so the colour group is SU(4) and leptons are the fourth column of the same multiplet.</p>
+<h3 id="the-consequences">The consequences</h3>
+<p>"The model also has left–right symmetry and predicts the existence of a high energy right handed weak" coupling, which gives the neutrino a Dirac mass and makes the seesaw mechanism natural.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-lepton-number-is-a-fourth-colour">1. Lepton number is a fourth colour</h3>
+<p><strong>The idea.</strong> Rather than unifying coupling constants, Pati–Salam unifies the particle content: quarks and leptons sit in the same SU(4) multiplet and differ only by the value of the fourth colour. This is a <strong>mechanism</strong> for the lepton-quark correspondence.</p>
+<p><strong>What it would add.</strong> A structural account of why a lepton and a quark can be placed in one object, which is what the corpus's fourth-colour article builds and what its dimension-ceiling article says the algebra cannot do beyond a point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourth-colour-left-right-model.md</code>, at the multiplet.</p>
+<p><strong>What stands in the way.</strong> SU(4) is four-dimensional and the corpus's algebra reaches SU(2) only; the fourth colour has to be supplied by hand, which is precisely the gap the corpus's SU(3) article states.</p>
+<h3 id="2-leftright-symmetry-restores-parity-at-a-high-scale">2. Left–right symmetry restores parity at a high scale</h3>
+<p><strong>The idea.</strong> Parity is broken only because the right-handed SU(2) is broken at a high scale. Above that scale the theory is left–right symmetric, so the Standard Model's parity violation is a low-energy accident.</p>
+<p><strong>What it would add.</strong> A resolution of the tension the corpus's electroweak articles face: the algebra is parity-symmetric, and Pati–Salam shows how a symmetric high-energy theory can look asymmetric below a scale.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, at the chiral wall.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs a second SU(2) and a breaking scale; the corpus has one SU(2) and no scale, so the construction would have to be imported wholesale.</p>
+<p>This is an encyclopedia article; the group, the fourth colour, the left–right symmetry and the neutrino mass are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A minimization theorem for the Koide ratio and its Standard Model calibration — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A minimization theorem for the Koide ratio and its Standard Model calibration - 2605.09651.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-minimization-theorem-for-the-koide-ratio-and-its-standard-model-calibration"><strong>A minimization theorem for the Koide ratio and its Standard Model calibration</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2605.09651 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>K. Hübner (independent)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 17 May 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not stated in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A minimization theorem for the Koide ratio and its Standard Model calibration - 2605.09651-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A minimization theorem for the Koide ratio and its Standard Model calibration - 2605.09651.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A minimization theorem for the Koide ratio and its Standard Model calibration - 2605.09651.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proves an exact theorem: given a mass tuple and adding one further mass, the extended ratio $Q$ has a unique minimum, at $m_*=(\sum m_i)/(\sum\sqrt{m_i})^2$, with the value $Q_0/(1+Q_0)$. For the charged leptons this selects $m_*=1.25534(16)$ GeV and $Q_{4,\min}=0.3999978$; in the idealised case $Q_\ell=2/3$ the four-body minimum is exactly $2/5$. The theorem also gives two reformulations the corpus will want: $Q$ is a purity measure on the amplitude simplex, so $N_{\rm eff}\equiv1/Q$ counts participants and the optimal extension adds exactly one; and $Q_\ell$ is exactly invariant under one-loop QED running, because all three leptons share one anomalous dimension. The phenomenology — the charm mass sitting $1.4\%$ above $m_*$ and $Q(e,\mu,\tau,c)=0.4000025$, $6.2$ ppm from $2/5$ — is calibrated against a scan of $12{,}720$ trials and ranked, honestly, at $33/12{,}720$ raw and $6/756$ within fermions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-theorem">The theorem</h3>
+<p>With $R_1=\sum r_i$, $R_2=\sum r_i^2$, $Q_0=R_2/R_1^2$, and one added amplitude $r$, "$Q_{N+1}$ has a unique global minimum at"</p>
+<p>$$
+r^*=\frac{R_2}{R_1}=Q_0R_1,\qquad m^*=(r^*)^2=\frac{\left(\sum_im_i\right)^2}{\left(\sum_i\sqrt{m_i}\right)^2},
+\tag{paper 3}
+$$</p>
+<p>"and the minimum value is"</p>
+<p>$$
+Q_{\min}=\frac{Q_0}{1+Q_0}.
+\tag{paper 4}
+$$</p>
+<p>The proof is one derivative, $\mathrm dQ_{N+1}/\mathrm dr=2R_1(r-r^*)/(R_1+r)^3$. Since $Q_0\ge1/N$ for any positive $N$-tuple, "$Q_{\min}=Q_0/(1+Q_0)\ge1/(N+1)$, with equality only in the equal-mass limit". For $k$ added masses the same argument gives "$Q_{\min}^{(k)}=Q_0/(1+kQ_0)$", with all new amplitudes equal. "Thus repeated exact minimization keeps returning to the same optimal scale and approaches the large-$N$ lower bound $Q_N\sim1/N$ from above."</p>
+<p>Three readings of $r^*$: it is the $r_i$-weighted barycenter of the base amplitudes, $\sum_i r_i(r^*-r_i)=0$; it is the point where the extended line is least deviating from the democratic direction; and it is a purity statement, since with $p_i=r_i/R_1$,</p>
+<p>$$
+Q_0=\sum_i p_i^2=\mathrm{tr}\left(\rho^2\right),
+\qquad
+N_{\rm eff}\equiv\frac1Q,\qquad
+N_{\rm eff,max}=N_{\rm eff,0}+1 .
+\tag{paper 16, 17}
+$$</p>
+<p>"For the base tuple $N_{\rm eff,0}=1/Q_0$ ... in the idealised case $Q_\ell^K=2/3$ one has $N_{\rm eff,0}=3/2$; after the extension $N_{\rm eff,max}=5/2$." And a third: "the normalized peak is an exact Lorentzian, $N_{\rm eff}/N_{\rm eff,max}=1/(1+u^2)$", with $u$ the share-mismatch coordinate.</p>
+<h3 id="the-lepton-benchmark">The lepton benchmark</h3>
+<p>With PDG 2024 pole masses, "$m_*^\ell=1.25534(16)$ GeV" and</p>
+<p>$$
+Q_{4,\min}^{\exp}=0.3999978(43),\qquad
+Q_{4,\min}^{K}=\frac{2}{5}.
+$$</p>
+<h3 id="the-charm-coincidence-and-its-calibration">The charm coincidence, and its calibration</h3>
+<p>"Using charged-lepton pole masses together with the short-distance charm mass $m_c(m_c)$, the PDG 2024 charm input lies $1.4\%$ above $m_*^\ell$ and gives"</p>
+<p>$$
+Q(e,\mu,\tau,c)=0.4000025(64),
+\tag{paper 31}
+$$</p>
+<p>"which is $11.7$ ppm above $Q_{4,\min}^{\exp}$ and $6.2$ ppm above the idealised value $2/5$." The Lorentzian coordinate of the charm is $u_c=+0.0034(17)$, while $u$ for the $u,d,s$ quarks is $-0.76,-0.74,-0.50$ and for $W,Z,H,t$ it is $+0.90$ to $+0.99$. Scheme dependence: $m_c(2\ \mathrm{GeV})$ gives $+1119$ ppm, the pole mass $+5013$ ppm, $m_c(M_Z)$ $+27{,}429$ ppm, so "the observation must be treated as a mixed-definition phenomenological coincidence rather than a scheme-independent relation".</p>
+<p>The look-elsewhere scan of all non-neutrino two- and three-body seeds with one added mass places the lepton-plus-charm continuation "33/12,720 in the raw trial set, 24/2,640 after collapsing repeated scale realizations, and 6/756 within the fermion-only collapsed subset".</p>
+<h3 id="the-running">The running</h3>
+<p>"At one-loop QED, all three charged leptons share the same mass anomalous dimension ... because they carry the same electric charge. Their masses therefore run by a common multiplicative factor", so</p>
+<p>$$
+Q_\ell(\mu)=\frac{R_2(\mu)}{R_1(\mu)^2}=Q_\ell ,
+\qquad
+m_*^\ell(\mu)=R(\mu)^2m_*^\ell .
+\tag{paper 35}
+$$</p>
+<p>"The Koide ratio is thus exactly RG-invariant at one-loop QED" and "$m_*^\ell(\mu)$ varies monotonically from $1.255$ GeV at $\mu=1$ GeV to $1.213$ GeV at $\mu=10$ TeV, a $3\%$ excursion over four decades, and crosses no Standard Model mass within that range." The $1.9\times10^{-3}$ shift of $Q_\ell$ seen at $M_Z$ is "therefore a subleading effect (higher-loop QED, weak corrections, and pole-to-MS scheme conversion)".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math87-is-a-purity-and-the-optimal-extension-adds-one-participant">1. $Q$ is a purity, and the optimal extension adds one participant</h3>
+<p><strong>The idea.</strong> A <strong>theorem with three numbers</strong>: $Q=\sum p_i^2$ for amplitude shares $p_i$, so $N_{\rm eff}=1/Q$ is the effective number of participants; $2/3$ means $N_{\rm eff}=3/2$; adding one optimally chosen mass raises $N_{\rm eff}$ by exactly $1$, and adding $k$ equal ones by $k$, with minimum $Q_0/(1+kQ_0)$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> treats $2/3$ as a target and §5 counts members of a ladder. This gives both a meaning for the target ($3/2$ participants out of $3$) and an exact rule for what happens when the ladder grows — which is precisely the fourth-rung question, answered before any dynamics: an optimal rung moves the ratio to $2/5$, and $2/5$ is what the four-mass set with charm nearly achieves. It also gives the corpus a clean statement of why $Q&lt;1$ always and why $Q\ge1/N$.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2 (the meaning of $2/3$) and §9 (the fourth rung), with a mention in §5.</p>
+<p><strong>What stands in the way.</strong> Nothing: the theorem is elementary and exact, and it is checkable in three lines. The corpus should adopt it, with the caution that it is a statement about one particular functional and not about mass matrices.</p>
+<h3 id="2-the-running-puzzle-dissolves-one-loop-qed-leaves-math106-exactly-invariant">2. The running puzzle dissolves: one-loop QED leaves $Q$ exactly invariant</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: all three charged leptons have the same electric charge, hence the same one-loop QED anomalous dimension, hence a common multiplicative factor, hence $Q(\mu)=Q$ exactly. The $0.19\%$ drift seen at $M_Z$ is not QED running of $Q$ but the residual flavour-dependent pieces and the pole-to-MS conversion.</p>
+<p><strong>What it would add.</strong> This resolves an apparent contradiction the corpus currently carries: Li–Ma report scale independence, Xing–Zhang report a $0.19\%$ shift, and Sumino's $0.1\%$ is a pole-versus-$\overline{MS}$ effect. All three are consistent, and the corpus can now state the sharp version: the leading running is <em>flavour-blind</em> and cannot move $Q$; only flavour-dependent corrections can, and they are two-loop or Yukawa in origin, of relative size $10^{-3}$. That is a better question than "does it run".</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first item, and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The statement is one loop; the corpus should not overstate it. And it applies to the leptons because of the charge degeneracy — for quarks the QCD anomalous dimension is also common, so the same argument applies, which is the point Rivero makes about quotient tuples.</p>
+<h3 id="3-the-four-mass-target-math116-and-a-charm-coincidence-graded-honestly">3. The four-mass target $2/5$, and a charm coincidence graded honestly</h3>
+<p><strong>The idea.</strong> A <strong>number with a rank</strong>: $Q(e,\mu,\tau,c)=0.4000025$, $6.2$ ppm from $2/5$; among $756$ fermion-only continuations it ranks sixth; other charm schemes miss by $10^{3}$–$10^{4}$ ppm.</p>
+<p><strong>What it would add.</strong> The corpus has no instance where a physical mass sits within $10^{-5}$ of a target derived from a relation, and no instance of a look-elsewhere correction either. Both are worth having as a template: the claim is stated with its scheme, its uncertainty, its rank, and its refusal to be called a law. The corpus's own standard for admitting a numerical coincidence should look like this.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §9, as the best existing candidate for a fourth rung, and §11.</p>
+<p><strong>What stands in the way.</strong> The comparison mixes pole lepton masses with a short-distance charm mass; the author says so repeatedly, and the whole result moves by $10^{3}$ ppm under a different charm scheme. It is a benchmark, not a relation.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The Lorentzian coordinate $u$ is an exact reparameterisation and is a convenient way to quote "how close" for any candidate rung. The recursive application to the lepton-plus-charm set returns $m_{*,5}=1.2624(36)$ GeV, compatible with charm at $1.1\sigma$, so the fourth rung does not point at a fifth. The generalised functionals $R_{k,q}$ inherit the theorem by change of variables.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

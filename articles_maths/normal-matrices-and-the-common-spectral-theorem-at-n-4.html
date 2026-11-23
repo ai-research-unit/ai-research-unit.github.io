@@ -77,11 +77,11 @@
 <h2 id="normal-matrices">Normal Matrices</h2>
 <p><strong>Definition.</strong> $A$ is <strong>normal</strong> when $A^{\ast}A=AA^{\ast}$.</p>
 <p><strong>Proposition.</strong> Hermitian, anti-Hermitian and unitary matrices are normal; a scalar multiple of a unitary matrix is normal; sums and products of normal matrices need not be normal.</p>
-<p><strong>Proof.</strong> For $A^{\ast}=\pm A$ the two products $A^{\ast}A$ and $AA^{\ast}$ are equal because $A$ commutes with itself; for $A^{\ast}=A^{-1}$ both products are the identity. For the failure of additivity, the diagonal $D=\operatorname{diag}(1,i,1,i)$ and the symmetric $S=E_{12}+E_{21}$ are both normal, while $D+S$ has the upper-left block $\begin{pmatrix}1&1\\1&i\end{pmatrix}$, for which $X^{\ast}X$ and $XX^{\ast}$ differ in the off-diagonal entries.</p>
+<p><strong>Proof.</strong> For $A^{\ast}=\pm A$ the two products $A^{\ast}A$ and $AA^{\ast}$ are equal because $A$ commutes with itself; for $A^{\ast}=A^{-1}$ both products are the identity. For the failure of additivity, the diagonal $D=\operatorname{diag}(1,i,1,i)$ and the symmetric $S=E_{12}+E_{21}$ are both normal, while $D+S$ has the upper-left block $\begin{pmatrix}1&amp;1\\1&amp;i\end{pmatrix}$, for which $X^{\ast}X$ and $XX^{\ast}$ differ in the off-diagonal entries.</p>
 <p><strong>Corollary.</strong> Normality is not a linear condition, since the normal matrices do not form a subspace; it is a quadratic condition on the entries.</p>
 <p><strong>Proof.</strong> The display of the failure.</p>
 <p><strong>Proposition.</strong> $A$ is normal exactly when $\operatorname{tr}(A^{\ast}A)=\sum_k|\lambda_k|^{2}$ and the Frobenius norm of $A$ is the Euclidean norm of the spectrum.</p>
-<p><strong>Proof.</strong> The Schur triangular form gives $\operatorname{tr}(A^{\ast}A)=\sum_k|\lambda_k|^{2}+\sum_{i<j}|t_{ij}|^{2}$, so equality holds exactly when the strictly upper part vanishes.</p>
+<p><strong>Proof.</strong> The Schur triangular form gives $\operatorname{tr}(A^{\ast}A)=\sum_k|\lambda_k|^{2}+\sum_{i&lt;j}|t_{ij}|^{2}$, so equality holds exactly when the strictly upper part vanishes.</p>
 <p><strong>Corollary.</strong> Normality is the statement that the triangular form is diagonal, hence that the eigenbasis is orthonormal.</p>
 <p><strong>Proof.</strong> The Schur form is triangular in an orthonormal basis, and it is diagonal exactly when the basis consists of eigenvectors.</p>
 <h2 id="the-common-spectral-theorem">The Common Spectral Theorem</h2>
@@ -127,8 +127,8 @@ so the unitary $U$ diagonalises $A$ and $A^{\ast}$, and the conjugate unitary $\
 </tr>
 <tr>
 <td>positive definite</td>
-<td>$A^{\ast}=A$, $\langle v,Av\rangle>0$</td>
-<td>$\lambda_k>0$</td>
+<td>$A^{\ast}=A$, $\langle v,Av\rangle&gt;0$</td>
+<td>$\lambda_k&gt;0$</td>
 </tr>
 </tbody>
 </table></div>

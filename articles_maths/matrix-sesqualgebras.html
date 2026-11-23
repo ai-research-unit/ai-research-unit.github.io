@@ -135,13 +135,13 @@ $$</p>
 <h3 id="the-pauli-basis">The Pauli Basis</h3>
 <p><strong>Definition.</strong> The <strong>Pauli matrices</strong> are</p>
 <p>$$
-\sigma_{1}=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad \sigma_{2}=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad \sigma_{3}=\begin{pmatrix}1&0\\0&-1\end{pmatrix} .
+\sigma_{1}=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad \sigma_{2}=\begin{pmatrix}0&amp;-i\\ i&amp;0\end{pmatrix},\qquad \sigma_{3}=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix} .
 $$</p>
 <p><strong>Theorem (the multiplication table).</strong> With $I$ the unit, the Pauli matrices satisfy</p>
 <p>$$
 \sigma_{j}^{2}=I,\qquad \sigma_{j}\sigma_{k}=-\sigma_{k}\sigma_{j}\ (j\ne k),\qquad \sigma_{1}\sigma_{2}=i\sigma_{3},\quad \sigma_{2}\sigma_{3}=i\sigma_{1},\quad \sigma_{3}\sigma_{1}=i\sigma_{2} .
 $$</p>
-<p><strong>Proof.</strong> The three squares are the direct products $\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma_{3}^{2}=I$. The anticommutation and the cyclic products are the three products computed in order: $\sigma_{1}\sigma_{2}=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=i\sigma_{3}$, and the other two follow by the cyclic permutation of the indices.</p>
+<p><strong>Proof.</strong> The three squares are the direct products $\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma_{3}^{2}=I$. The anticommutation and the cyclic products are the three products computed in order: $\sigma_{1}\sigma_{2}=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}=i\sigma_{3}$, and the other two follow by the cyclic permutation of the indices.</p>
 <p><strong>Remark.</strong> The Pauli matrices are Hermitian, they have trace zero, and together with $I$ they span the real space of the Hermitian matrices of order two.</p>
 <h3 id="hermitian-and-unitary-matrices-of-order-two">Hermitian and Unitary Matrices of Order Two</h3>
 <p><strong>Proposition (the Hermitian matrices).</strong> Every Hermitian matrix of order two is</p>
@@ -149,9 +149,9 @@ $$</p>
 X=aI+b\,\sigma_{1}+c\,\sigma_{2}+d\,\sigma_{3},\qquad a,b,c,d\in\mathbb{R} ,
 $$</p>
 <p>and the four parameters are exactly the $2^{2}=4$ real parameters of the Hermitian matrix.</p>
-<p><strong>Proof.</strong> A Hermitian matrix has the form $\begin{pmatrix}a_{1}&z\\ \overline{z}&a_{2}\end{pmatrix}$ with $a_{1},a_{2}$ real and $z$ complex, and the display is that matrix with $a=\tfrac12(a_{1}+a_{2})$, $d=\tfrac12(a_{1}-a_{2})$, $b=\operatorname{Re}z$, $c=-\operatorname{Im}z$. The correspondence of the four real parameters with the four matrix entries is a bijection.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has the form $\begin{pmatrix}a_{1}&amp;z\\ \overline{z}&amp;a_{2}\end{pmatrix}$ with $a_{1},a_{2}$ real and $z$ complex, and the display is that matrix with $a=\tfrac12(a_{1}+a_{2})$, $d=\tfrac12(a_{1}-a_{2})$, $b=\operatorname{Re}z$, $c=-\operatorname{Im}z$. The correspondence of the four real parameters with the four matrix entries is a bijection.</p>
 <p><strong>Proposition (the unitary matrices and the unit quaternions).</strong> The unitary matrices of order two with determinant one are exactly the composites $aI+bi\,\sigma_{3}+ci\,\sigma_{2}+di\,\sigma_{1}$ with $a^{2}+b^{2}+c^{2}+d^{2}=1$, and they correspond to the unit quaternions.</p>
-<p><strong>Proof.</strong> Such a matrix has the shape $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ with $|\alpha|^{2}+|\beta|^{2}=1$, which is unimodular and unitary; conversely a unimodular unitary matrix of order two has this shape, since its two columns are perpendicular and each of modulus one. Writing $\alpha=a+bi$, $\beta=c+di$ gives the display with $a^{2}+b^{2}+c^{2}+d^{2}=1$, which is the unit sphere of the quaternions.</p>
+<p><strong>Proof.</strong> Such a matrix has the shape $\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix}$ with $|\alpha|^{2}+|\beta|^{2}=1$, which is unimodular and unitary; conversely a unimodular unitary matrix of order two has this shape, since its two columns are perpendicular and each of modulus one. Writing $\alpha=a+bi$, $\beta=c+di$ gives the display with $a^{2}+b^{2}+c^{2}+d^{2}=1$, which is the unit sphere of the quaternions.</p>
 <h3 id="the-identification-with-the-biquaternion-algebra">The Identification with the Biquaternion Algebra</h3>
 <p><strong>Theorem (the matrix model).</strong> The biquaternion algebra $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to $M_{2}(\mathbb{C})$ as a $\mathbb{C}$-algebra, by the assignment</p>
 <p>$$

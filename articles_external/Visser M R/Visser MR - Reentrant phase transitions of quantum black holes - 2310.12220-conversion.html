@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reentrant phase transitions of quantum black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Reentrant phase transitions of quantum black holes - 2310.12220.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reentrant-phase-transitions-of-quantum-black-holes"><strong>Reentrant phase transitions of quantum black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2310.12220v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Antonia M. Frassino, Juan F. Pedraza, Andrew Svesko, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 June 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Reentrant phase transitions of quantum black holes - 2310.12220-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Reentrant phase transitions of quantum black holes - 2310.12220.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Reentrant phase transitions of quantum black holes - 2310.12220.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that the backreaction of quantum conformal matter on a black hole can produce phase transitions that no classical black hole has. The object studied is the three-dimensional quantum-corrected static BTZ black hole, an exact solution of the semi-classical equations obtained through braneworld holography. In the canonical ensemble, and for large backreaction, the solution shows a quantum counterpart of the Hawking–Page transition and, in addition, zeroth-order transitions and a reentrant phase transition — a phase that disappears and reappears as the temperature is varied.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We show backreaction of quantum fields on black hole geometries can trigger new thermal phase transitions." The setting: "the three-dimensional quantum-corrected static BTZ black hole, an exact solution to specific semi-classical gravitational equations due to quantum conformal matter, discovered through braneworld holography."</p>
+<h3 id="what-is-new">What is new</h3>
+<p>"Aside from a quantum counterpart of the first-order Hawking-Page transition, the qBTZ black hole also undergoes zeroth order phase transitions – a feature solely due to semi-classical effects."</p>
+<h3 id="the-scepticism-the-authors-apply-to-themselves">The scepticism the authors apply to themselves</h3>
+<p>"The physical viability of the zeroth-order phase transition is questionable, since such transitions typically do not occur in nature, for thermodynamically stable systems. A zeroth-order phase transition may be indicating we are missing a novel phase with lower free energy. For instance, the black hole could transition into a system with additional degrees of freedom or 'hair' that are not captured by the qBTZ solution. We leave this for future investigation."</p>
+<h3 id="the-reentrant-transition">The reentrant transition</h3>
+<p>"The free energy of the braneworld black holes investigated here was previously derived in [25] from the four-dimensional bulk perspective, however, that analysis lacked a physical interpretation in terms of quantum black holes and reentrant phase transitions were not observed. Our analysis on the brane carries over to the bulk and thus suggests this is the first example of a semiclassical black hole undergoing such a thermal reentrant phase transition."</p>
+<h3 id="the-status">The status</h3>
+<p>Three dimensions, an exact semi-classical solution, large backreaction. The reentrant behaviour is established for this solution, and the authors do not claim it is generic.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-quantum-effects-create-phase-structure">1. Quantum effects create phase structure</h3>
+<p><strong>The idea.</strong> A classical solution has one phase; including backreaction produces several, with transitions between them. This is a <strong>mechanism</strong>, and it says that thermodynamics is not fixed by the classical geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the four laws as consequences of the classical metric, with quantum corrections entering only as an entropy functional it cannot connect. The claim that backreaction produces qualitatively new thermodynamics is the strongest available argument that quantum corrections are not small perturbations, and it bears directly on the corpus's gap about dynamics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, gaps section.</p>
+<p><strong>What stands in the way.</strong> It is three-dimensional and braneworld; the exact solution is what makes the calculation possible and the corpus has no equivalent. The cost is that the mechanism cannot be reproduced.</p>
+<h3 id="2-a-phase-that-disappears-and-reappears">2. A phase that disappears and reappears</h3>
+<p><strong>The idea.</strong> Reentrance: as a control parameter is varied monotonically, the system passes through a phase, leaves it, and returns. This is a <strong>reading</strong> of a free-energy landscape, and it is qualitatively different from a single first-order line.</p>
+<p><strong>What it would add.</strong> Nothing in the corpus has a free-energy landscape at all. Reentrance is the kind of structure that would distinguish the corpus's entropy functional from a simple monotone function, and its absence is worth noting as a testable shortfall.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> It needs the canonical ensemble and the free energy, neither of which the corpus has. Ranked third.</p>
+<h3 id="3-a-phase-transition-as-evidence-of-missing-states">3. A phase transition as evidence of missing states</h3>
+<p><strong>The idea.</strong> A thermodynamically questionable transition is a signal that the solution class is incomplete — that there are states with lower free energy not captured by the ansatz.</p>
+<p><strong>What it would add.</strong> This is a <strong>reading</strong> of an anomaly as an indication, and it is a pattern of inference the corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> could use: when a computed quantity misbehaves, the natural inference is that the space of solutions is too small, not that the physics is wrong.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a heuristic, and the authors present it as one. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

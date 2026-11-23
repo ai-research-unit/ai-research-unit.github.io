@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Velocity Space, Wigner Rotation and Thomas Precession — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Relativistic velocity space, Wigner rotation and Thomas precession 0501070v1.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-velocity-space-wigner-rotation-and-thomas-precession"><strong>Relativistic Velocity Space, Wigner Rotation and Thomas Precession</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0501070v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>John A. Rhodes, Mark D. Semon</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 24 January 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>42 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Relativistic velocity space, Wigner rotation and Thomas precession 0501070v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Relativistic velocity space, Wigner rotation and Thomas precession 0501070v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Relativistic velocity space, Wigner rotation and Thomas precession 0501070v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds velocity space as a geometric object — a hyperbolic disk with a particular metric — and then computes the Wigner rotation and the Thomas precession geometrically, as properties of hyperbolic triangles. The construction runs in parallel with the construction of spacetime from the invariance of the interval: the same demand, Lorentz invariance, fixes a metric on the set of velocities, and once that metric is in hand the composition of boosts becomes a statement about geodesics and angles. Long, careful, and deliberately pedagogical.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"We develop a relativistic velocity space called rapidity space from the single assumption of Lorentz invariance, and use it to visualize and calculate effects resulting from the successive application of non-colinear Lorentz boosts."</p>
+<p>The analogy that organises the paper: "just as many kinematic effects in special relativity are more easily and elegantly understood once the spacetime metric" is established, so the same holds for the velocity metric</p>
+<p>$$ds^{2}=\left(\frac{2}{1-x^{2}-y^{2}}\right)^{2}\left(dx^{2}+dy^{2}\right).$$</p>
+<p>The claim of value: "we have found relativistic velocity (rapidity) space to be as useful for understanding the relativistic addition of non-colinear velocities and Lorentz boosts as spacetime has been for understanding kinematic effects in special relativity."</p>
+<h3 id="the-geometry">The geometry</h3>
+<p>"relativistic velocity space is non-Euclidean, with a hyperbolic geometry." The historical note is that this was known early and then forgotten: Pauli's review already cites work relating velocity addition to "the analog of vector addition in a hyperbolic space", and the Poincaré disk was used by Variçak and others, but "neither explains this connection nor develops" it.</p>
+<h3 id="the-geodesics">The geodesics</h3>
+<p>"We shall see that these geodesics are straight lines if the origin (the point representing zero velocity) is one of the values taken on during the boost. In all other cases the geodesics are not straight lines but rather are the arcs of circles."</p>
+<p>And the physical meaning of the geodesic: a boost from one velocity to another "pass through the minimum number of velocities whose speeds are greater than v1 and less than v2 .", so the geodesic is the shortest path in the space of intermediate speeds.</p>
+<h3 id="the-payoff">The payoff</h3>
+<p>"once the main properties of rapidity space have been developed, exact expressions for the Thomas-Wigner rotation and Thomas precession can be found geometrically. Furthermore, working in rapidity space allows various qualitative aspects of these effects to be deduced geometrically, some of which are more difficult to prove with algebraic equations alone."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-velocity-space-has-a-metric-of-its-own">1. Velocity space has a metric of its own</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: the set of relativistic velocities carries the hyperbolic metric of the Poincaré disk, and a boost acts on it as a hyperbolic translation. Rapidity is then the geodesic distance from the origin, not a convenient parameter.</p>
+<p><strong>What it would add.</strong> The corpus's rapidity exercise introduces rapidity as the parameter that makes boosts additive, which is a statement about a formula. This gives the parameter a geometric meaning — distance in a space with constant negative curvature — and explains why the addition law is not associative in the naive sense: it is the composition of translations in a curved space, which commute only along one geodesic. The corpus would gain the reason behind its own computational trick.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's rapidity results are one-dimensional and the metric's curvature never enters them; adding the hyperbolic picture would be a change of viewpoint with no new numbers, and the two-dimensional construction here needs two spatial dimensions to show anything.</p>
+<h3 id="2-the-wigner-angle-as-a-hyperbolic-triangle-angle">2. The Wigner angle as a hyperbolic triangle angle</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the Thomas–Wigner angle of a closed sequence of boosts is the angle defect of the hyperbolic triangle whose vertices are the velocities, so it is fixed by the three rapidities and by nothing else.</p>
+<p><strong>What it would add.</strong> The corpus computes the Thomas–Wigner angle from the product of two rotors and the commutator structure. A triangle identity would give a second, frame-free expression and would make the angle's invariance under relabelling manifest. It also explains why the effect cannot be removed by choosing better axes: an angle defect is a property of the triangle, not of a coordinate choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's version of the angle is a rotation angle in a spatial plane, and the hyperbolic triangle angle is a deficit in velocity space; identifying them requires care about which angle is being compared, and the paper's own discussion of signs and orientations is a warning.</p>
+<h3 id="3-geodesics-in-velocity-space-are-the-paths-of-least-intermediate-speed">3. Geodesics in velocity space are the paths of least intermediate speed</h3>
+<p><strong>The idea.</strong> A <strong>variational principle</strong>: the path a boost sequence takes through velocity space is a geodesic, and the geodesic is the curve of least maximum intermediate speed between the endpoints.</p>
+<p><strong>What it would add.</strong> The corpus describes a boost as a Möbius flow on the sky. A variational characterisation of the flow would give the corpus a selection principle — why this path and not another — and connects the boost to the same kind of extremal argument that fixes geodesics in spacetime.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> The variational statement is about the intermediate velocities of a sequence, which is a statement about a family of boosts rather than about one; the corpus's Möbius flow is a single transformation, so the connection is indirect.</p>
+<p>The rank: the metric first, because it reinterprets a parameter the corpus already uses; the triangle second, because it is an alternative formula for a known quantity; the variational principle last, because it needs a family the corpus does not parametrise.</p>
+<p>The remaining items in one line each: the historical point that the hyperbolic structure of velocity space was found before 1912 and then lost, which is a case study in a correct result failing to propagate; the use of the Poincaré disk as the drawing surface, which is a concrete visual aid the corpus lacks; and the remark that the geometric method occasionally corrects results obtained algebraically, which is a claim about method rather than about physics.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

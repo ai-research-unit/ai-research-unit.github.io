@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperscaling violating black holes with spherical and hyperbolic horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hyperscaling violating black holes with spherical and hyperbolic horizons -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hyperscaling-violating-black-holes-with-spherical-and-hyperbolic-horizons"><strong>Hyperscaling violating black holes with spherical and hyperbolic horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1807.09770v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Juan F. Pedraza, Watse Sybesma, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 7 February 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Class. Quantum Grav. 36 (2019) 054002</td>
+</tr>
+<tr>
+<td>length</td>
+<td>51 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Hyperscaling violating black holes with spherical and hyperbolic horizons - 1807.09770-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hyperscaling violating black holes with spherical and hyperbolic horizons - 1807.09770.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hyperscaling violating black holes with spherical and hyperbolic horizons - 1807.09770.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs families of charged black holes in $d+2$ dimensions whose asymptotic geometry is hyperscaling violating, with arbitrary Lifshitz exponent $z$ and hyperscaling violation parameter $\theta$, and with spherical or hyperbolic horizon topology. The solutions require a generalised Einstein–Maxwell–dilaton theory plus an extra vector field supporting the horizon curvature. The hyperbolic branch is consistent with the null energy condition only for $1\le z&lt;2$ with $\theta=d(z-1)$, and the extended thermodynamics shows phase transitions only for spherical horizons with $1\le z\le2$. The critical exponents are those of a Van der Waals liquid.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-solutions">The solutions</h3>
+<p>Two related families are given: charged hyperscaling violating black holes with spherical horizons in a generalised EMD theory — "a natural extension of the planar hyperscaling violating black branes ... but also a generalization of the pure Lifshitz spherical black holes ... to arbitrary hyperscaling violating parameter $\theta$" — and a second family obtained by a subtle limit of the dilaton, giving spherical, planar and hyperbolic horizons for $1\le z&lt;2$ provided $\theta=d(z-1)$. The value $\theta=d(z-1)$ "seems singular in the former model", but the limit is shown to be physically well behaved.</p>
+<h3 id="the-energy-condition">The energy condition</h3>
+<p>The hyperbolic solutions survive the null energy condition only in the window $1\le z&lt;2$ with $\theta=d(z-1)$, "which explains why they are absent in the pure Lifshitz case" ($\theta=0$).</p>
+<h3 id="the-thermodynamics">The thermodynamics</h3>
+<p>Both the fixed-charge and the fixed-potential ensembles are treated, with the extended $(P,V)$ thermodynamics of the cosmological constant included. The finding: "only the spherical black hole exhibits phase transitions", and they occur for $1\le z\le2$, "as was already established for $\theta=0$, but now extended to other values of $\theta$". The qualitative behaviour of the transitions does not depend on $d$ or $\theta$, although most thermodynamic quantities depend on all parameters; the authors note the intuition that $\theta$ "effectively only reduces the dimensionality of the system, i.e. $d_{\text{eff}}=d-\theta$", while adding that on the detailed computations "this seems a fairly non-trivial outcome".</p>
+<h3 id="the-critical-exponents">The critical exponents</h3>
+<p>Four critical exponents are computed, analytically for one analogy and numerically for another, and the exponents at the critical point "are shown to be the same for both analogies as the critical exponents for a Van der Waals liquid", consistent with mean-field universality.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-horizon-topology-as-a-thermodynamic-selector">1. Horizon topology as a thermodynamic selector</h3>
+<p><strong>The idea.</strong> Of the three horizon topologies, only the spherical one gives phase transitions; the planar and hyperbolic cases do not. This is a <strong>number</strong> with a structural cause: topology selects whether the free energy has two branches to compare.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the horizon as a sphere implicitly and computes $T$, $S$, the first law and Smarr; it has no statement about what changes with the horizon's topology, and no phase structure at all. A statement that phase transitions are topologically selected would be the article's first piece of genuine phase structure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, "Beyond the asymptotically flat case", which currently carries only the $-2PV$ correction.</p>
+<p><strong>What stands in the way.</strong> The transition is between two black-hole branches of an AdS-like thermodynamic system; the corpus has no ensemble, no free energy and no $P$–$V$ diagram of its own. The cost is the whole Gibbsian machinery, imported.</p>
+<h3 id="2-effective-dimension-math38">2. Effective dimension $d-\theta$</h3>
+<p><strong>The idea.</strong> A hyperscaling violation parameter acts like a reduction of the dimension, $d_{\text{eff}}=d-\theta$, in the thermodynamics if not in every quantity. This is a <strong>reading</strong> of one parameter as another.</p>
+<p><strong>What it would add.</strong> The corpus's articles use $D$ and the spacetime dimension freely, with no notion of an effective dimension that differs from the counting of coordinates. A reading of one parameter as a change of dimension is the kind of statement its dimensional bookkeeping (<code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code>, the inertia $(3,1)$) would have to reconcile with.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, as an obstruction of dimension: the algebra fixes $4$, and any effective-dimension statement needs a map.</p>
+<p><strong>What stands in the way.</strong> The authors themselves call the outcome non-trivial and do not derive it. Ranked third: interesting, not importable as stated.</p>
+<h3 id="3-van-der-waals-universality-at-a-black-hole-critical-point">3. Van der Waals universality at a black-hole critical point</h3>
+<p><strong>The idea.</strong> The critical exponents of a charged black hole equal those of a Van der Waals fluid, for two different choices of the pressure–volume analogy. This is a <strong>number</strong>, and its content is the independence of the analogy.</p>
+<p><strong>What it would add.</strong> A universal statement about critical points that does not depend on which quantity is called volume — useful to the corpus because <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> leaves open (question 4) whether its thermodynamic volume is meaningful.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> The critical exponents are mean-field by construction; the corpus would inherit a result about ensembles, not about the algebra. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

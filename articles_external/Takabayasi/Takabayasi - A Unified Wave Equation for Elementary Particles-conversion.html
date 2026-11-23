@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Unified Wave Equation for Elementary Particles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Unified Wave Equation for Elementary Particles.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-unified-wave-equation-for-elementary-particles"><strong>A Unified Wave Equation for Elementary Particles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Hiromi Kase and Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>36</strong> (1966) 187, No. 1; dated 19 April 1966</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - A Unified Wave Equation for Elementary Particles-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Unified Wave Equation for Elementary Particles.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Unified Wave Equation for Elementary Particles.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The companion to <em>Equation of Motion of Elementary Particle from Unified Approach</em>: the same triad model, now with a wave equation. One equation in the grand wave function $\Psi(X,\xi,t)$ is shown to <em>be</em> the Dirac equation on its first shell and the Kemmer equation on its second — the $16$ operators $B^{*}\Gamma B$ act with the algebra of the $16$ Dirac matrices, and the $10$ Kemmer matrices appear on the second shell. The letter is candid about its own gap: Lorentz covariance is missing until $\xi^{a}$ is made the basis of $SL(2)$, after which two covariant equations replace the one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-grand-wave-function">The grand wave function</h3>
+<p>"hem one Downloaded from academic.oup.com/ptp/article/36/1/187/1920013 by guest on 12 November 2026 deduces the Klein-Gordon equation H 21JTCll where H is given by Eq. (6) of I, being =(P 2+m 2 )1JT 0 &gt; from (1), and for a defi- a differential operator with TCa = -i8/8~a, nite P, the energy H takes two eigenvalues, rc~= -i8/8~~- Equation (1) can also be positive and negative."</p>
+<p>$$
+\Big[\sum_\mu P_\mu(a^{*}\alpha_\mu b-b^{*}\alpha_\mu a)+m(a^{*}b+b^{*}a)\Big]\Psi=0 .
+$$</p>
+<h3 id="shells">Shells</h3>
+<p>First, the ground state ($N=0$) is defined equivalently by $a^{a}\Psi=b^{a}\Psi=0$, whose solution is $\Psi_0=f(X,t)\chi_0(\xi)$. "eneral state subject to the condi- by imposing the subsidiary condition N1JTC 2l tion (3) can be expanded as =21JTC 2 !, contains 10 orthonormal states given by the three vectors 1JTCll" A general state subject to that condition "can be expanded" in these four, whence $\Psi^{(1)}$ can be represented equivalently by the set of amplitudes $\psi=\binom{f}{g}$, forming a bispinor. With this correspondence one verifies $B^{*}\Gamma_\mu B\leftrightarrow B\gamma_\mu\psi$, so that the $16$ $U(4)$-generators have now the same complete algebraic properties as the $16$ Dirac matrices $\gamma_\mu$, in so far as they act on any $\pi^{a}\Psi$. Thus $J_iJ_j\Psi^{(1)}=(i\epsilon_{ijk}/4+\delta_{ij}/2)\Psi^{(1)}$."and for a defi- a differential operator with TCa = -i8/8~a, nite P, the energy H takes two eigenvalues, rc~= -i8/8~~- Equation (1) can also be positive and negative. It can also be shown written as that under the condition (3) the wave {L:Pp(a<em>apa-b</em>a'fb) equation (1) becomes equivalent to the p." $$ \big(\textstyle\sum_\mu P_\mu\,\alpha_\mu+m\big)\psi=0 $$"a a for the above bispinor amplitude 'o/. But (4) is the same as the Dirac equation in the representation which makes rs diagonal. First, the ground state (N=O) is defined Note that the method"</p>
+<h3 id="probability-interpretation-if-one-defines">Probability interpretation If one defines</h3>
+<p>$d=\int\Psi^{(1)}(X,\xi,t)^{*}\,\Psi^{(1)}(X,\xi,t)\,d\tau=\psi(X,t)^{*}\psi(X,t)$ and a current $j_k$,"l (X;, ~a, t) can be in- For the first shell, which is givn by terpreted as the probability amplitude for imposing the subsidiay condition the particle to have its" center-of-mass "location at X; and its internal configuration N1JTCI) = 1JTCI)' (3) (i.e. the radius and orientation of the triad) the basis states consist of four orthonormal at ~a, at time t."</p>
+<h3 id="second-shell-gives-kemmer">Second shell gives Kemmer</h3>
+<p>"Thus a general state subject to the condi- by imposing the subsidiary condition N1JTC 2l tion (3) can be expanded as =21JTC 2 !, contains", three vectors and one scalar. $\Psi^{(2)}$ can be expanded in them "ticular case of the ground state, quantities now satisfy many third-order Eq. (2) becomes trivial. relations, in so far as they act on 1JTC2l. Letters to the Editor 189 In particular the set of 4 quantities B;= (2:.P!+m 2 )1f!=O, ,.. -M~ and B4~ -K 1 effectively satisfy the Kemmer algebra, and it can be verified ,.. (~<em>a"~- rr: a~ rr:</em>) {2:.P. + vm} 1f! =0, that Eq. (1) now becomes equivalent to where v takes on integer values ;;;;z."$(\sum_kP_kM^{i}_{k}+P_4K_1+im)\psi^{(2)}=0$, i.e. $(\sum_\mu\beta_\mu P_\mu+m)\psi^{(2)}=0$. Further, one can verify the correspondence $B_\mu\Psi^{(2)}\leftrightarrow\beta_\mu\varphi$, where $\varphi$ is the above $10$-component amplitude (regarded as a column matrix) and $\beta_\mu$ are precisely the $10\times10$ matrices given by Kemmer, whence (5) is equivalent to his equation in its $10\times10$ representation. (In Eq. (5) $m\neq0$ is assumed, while the Maxwell equation can be reproduced by substituting $i(K_3)^{2}$ for $im$ in (5).)" of operators J;, Kr and MI acting on the parity and mass formulae, and comparison internal coordinates effectively realize the with the observed spectrum for the triple Dirac calculus for the case of the first triad model, will be given shortly. she!J and the Kemmer calculus for the second shell, and the single .equation (1) 1) T."</p>
+<h3 id="the-admitted-gap">The admitted gap</h3>
+<p>"hat it has not taken accoun_t ence on Elementary Particles, 1965, to be of Lorentz covariance. Thus, e.g., it is published. only ensured that the amplitudes fa and Ua are spinors \Vith respect to SU(2) only. *l Details of the covariant formulation will be However, Eq. (4) which we have obtained given separately. cf. also reference 3). for the amplitudes is identical with the covariant Dirac equation if one introduces the simple trick of regarding these fa and Ua as spinors under the whole group of proper"</p>
+<p>"To get a completely covariant formulation we assume from the outset that ~a is the basis of SL(2), and indeed on this basis we can set up the whole theory covariantly. Here the wave function 1f! CX1,. ··,X., ~1, ~2) is a scalar function obeying the two equa- tions" — a mass-shell equation and a subsidiary equation — "o where v takes on integer values ;;;;z.*l We have seen that our wave equation (2:."</p>
+<p>"nd symmetry basically by Kemmer,2l whence (5) is equivalent to originate from the internal movement and his equation in its 10 X 10 represention. (In" constructive forces ", 4l while the existence Eq. (5) m*O is assumed, while the Max- of the continuous coordinates with the char- well equation can."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-equation-many-field-equations-selected-by-a-subsidiary-condition">1. One equation, many field equations, selected by a subsidiary condition</h3>
+<p><strong>The idea.</strong> A single differential equation on a grand wave function contains the Dirac equation, the Kemmer equation and (by substituting $iK_3^{2}$ for $im$) the Maxwell equation as special cases, each picked out by the eigenvalue of $N$. The internal operators are the <em>same</em> operators in all cases; only the shell differs, and the Dirac matrices and Kemmer matrices are two representations of one algebra of internal bilinears.</p>
+<p><strong>What it would add.</strong> A reason for what the corpus only warns about. <em>Parras' Four Options of the Dirac Equation and the Discrete Symmetries</em> (<code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code>) notes in §<em>Why a Formalism of Components Mixes the Options</em> that a component formalism mixes the options; here the mixing is the mechanism — one equation over a shell tower contains several field equations, and the options are shells.</p>
+<p><strong>Where it lands.</strong> §<em>Why a Formalism of Components Mixes the Options</em>, as the shell explanation.</p>
+<p><strong>What stands in the way.</strong> The Kemmer algebra appears on the second shell by matching $10$ components to $10\times10$ matrices: an equivalence, not a derivation.</p>
+<h3 id="2-covariance-is-an-extra-assumption-about-what-the-internal-coordinate-is">2. Covariance is an extra assumption about what the internal coordinate <em>is</em></h3>
+<p><strong>The idea.</strong> The model is built on a real spinor with four real components. Nothing in the internal algebra forces Lorentz covariance; what does is declaring $\xi^{a}$ to transform as the basis of $SL(2)$. The author states the deficiency plainly — the amplitudes are spinors with respect to $SU(2)$ only — and repairs it by a change of what the coordinate means, not by changing the equation.</p>
+<p><strong>What it would add.</strong> A worked example of the corpus's recurring theme that the algebra does not supply the spacetime interpretation. <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (<code>articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.md</code>) supplies the action as part of the module's definition; here it has to be <em>added</em> after the fact, which shows what is lost if it is left implicit and what a module without it looks like.</p>
+<p><strong>Where it lands.</strong> §<em>The Two Halves</em>, as the covariance-as-input case.</p>
+<p><strong>What stands in the way.</strong> Once $\xi^{a}$ is declared an $SL(2)$ basis the covariance is straightforward; the letter does not display the two covariant equations in full, deferring to a longer paper.</p>
+<h3 id="3-a-probability-density-over-internal-configurations">3. A probability density over internal configurations</h3>
+<p><strong>The idea.</strong> $d=\psi^{*}\psi$ is a density in the centre-of-mass position <em>and</em> in the internal configuration — radius and orientation of the triad. The continuity equation holds in $X$, so the internal variables are integrated over, but the density itself is a function on configuration space.</p>
+<p><strong>What it would add.</strong> A probabilistic reading of internal variables. <em>Canonical Quantization of the Biquaternion Dirac Field</em> (<code>articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.md</code>) quantises a field over spacetime; here the density lives on a bundle whose fibre is the triad's shape and orientation.</p>
+<p><strong>Where it lands.</strong> The corpus's discussion of what the wave function is a function <em>of</em>; natural home is §<em>The Spin-Particle Bundle</em> of <em>Parras' Four Options</em>.</p>
+<p><strong>What stands in the way.</strong> The density is not normalisable in the internal variables without a measure, and the letter uses $d\tau=dx_1dx_2dy_1dy_2$ without discussing convergence.</p>
+<h3 id="4-the-maxwell-equation-as-a-shell-with-an-imaginary-mass-substitution">4. The Maxwell equation as a shell with an imaginary mass substitution</h3>
+<p><strong>The idea.</strong> The photon appears not as a separate theory but as the second-shell equation with $im$ replaced by $iK_3^{2}$: the mass term is swapped for a nilpotent internal operator, which is what makes the field massless and gauge-like.</p>
+<p><strong>What it would add.</strong> A mechanism for masslessness inside a massive tower: mass is an internal operator's eigenvalue, and one value of it is zero. <em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em> (<code>articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.md</code>) relates two wave equations by squaring; here by substitution.</p>
+<p><strong>Where it lands.</strong> The corpus's discussion of the massless limit; natural home is §<em>Order Zero: the Mass Shell</em> of <em>Relativistic Mechanics from the Dirac Wave</em>.</p>
+<p><strong>What stands in the way.</strong> The substitution is stated as a trick — "can. be reproduced by sub- acteristic" — with no derivation of why $K_3^{2}$ is the right operator.</p>
+<p>The remainder, one line each. That the letters I and II are dated the same day and cross-reference each other makes them a single two-part argument worth reading together. That the shell counts $1,4,10$ match the field-component counts of scalar, Dirac and Kemmer fields exactly is the numerical coincidence the whole scheme rests on.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

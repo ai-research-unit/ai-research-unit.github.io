@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slopes of Meson Trajectories — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Meson Trajectories.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="slopes-of-meson-trajectories"><strong>Slopes of Meson Trajectories</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>57</strong> (1977) 1806, No. 5; dated 12 February 1977</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Slopes of Meson Trajectories-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Meson Trajectories.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Meson Trajectories.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Uses the author's relativistic two-body model with spacelike action-at-a-distance, specialised to a Hooke-type force, to derive the Regge slope as a function of the constituent mass. Since the force constant is taken universal, the slope is not: $\alpha'\propto\mu^{-1/2}$, and the ratios for the $\rho$, $\varphi$ and $\psi$ families follow from the constituent masses. The predicted $K^{*}$ slope, $0.82$, agrees with the empirical value, and the model is offered as a realisation of a relativistic quark model in which confinement is built into the spacelike character of the binding force.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"seem are derind. Especially we can verify that to be emerging recently, especially in con- as its consequence the relation (1) itself nection with the new heavy mesons cf/s. is actually reproduced. This is essential In this note we present simple relations for the consistency and proper"</p>
+<h3 id="the-model">The model</h3>
+<p>"e case where theory of relativistic two-body system, where m 1 =m 2 =m 0 and showed that this m 0 the constituents are bound by spacelike denotes the rest mass of each constituent action-at-a-distance." A one-parameter family of spacelike surfaces $\{S_\tau\}$ intersects the two timelike world lines, with the gauge condition $\big(m_1\dot x^{(1)\mu}+m_2\dot x^{(2)\mu}\big)\big(x^{(1)}_\mu-x^{(2)}_\mu\big)=0$, and the action is $A=\int L\,d\tau$ with $L=-[-U\cdot\{X^{2}+\dot X^{2}-(\dot X^{0})^{2}\}]^{1/2}$ (as printed), where $U$ is a scalar function of $\xi^{2}$ alone having the dimension $[m^{2}]$. "em meson trajectories are not universal seem are derind. Especially we can verify that to be emerging recently, especially in con- as its consequence the relation (1) itself nection with the new heavy mesons cf/s. is actually reproduced."</p>
+<p>For equal masses $m_0$, "e-parameter sequ;:mce of space- lativistic limit just to Newtonian mzchanics like surfaces {.SJ and denote the intersec- for two particles moving under the mutual tions of each .S, with weal" $U(\xi^{2})=4m_0V(\xi^{2})+4m_0^{2}$. "Actually we take the case of Hooke-typc riness in the choice of {.", $V=\frac12 K\xi^{2}$, with $K$ "ddinition. The corresp::mding quan- be satisfied, where ma arc positive con- tum theory is represented by the bilocal stants. Then we postulate the action wave equation", namely a free wave equation in $X$ and $\xi$ together with a constraint linear in $\partial^{2}/\partial X\partial\xi$. "as supplying a tbe slopes are estimated to be*' simple realization of relativistic quark model (11) for mesonic states, where the quark con- finement is cnsurcd by the very nature of 111 GeV·'. For th3 tjl-trajxtory it is more our 'constructive force', which acts at a ambiguous: spacelike distance inside a hadron only; ct/ =0."</p>
+<h3 id="the-spectrum-and-the-slope">The spectrum and the slope</h3>
+<p>"em which nr = 1 state and employs (8) .) Ins:::rting are solutions to (6) and (7) lie on linearly- (11) and (12) into (10), we get th :o ratios rising leading trajectory and on its daughter mn: m 2 : mc=1: 1.24: 5.4--3.1, (13) traj;cctories."</p>
+<p>$$
+m_l^{2}=4\sqrt{2m_0K}\,\big(l+2n_r+1\big)+b,
+$$</p>
+<p>"ntum, whib nr (nr = 0, 1, 2, · · ·) is the gd the relation 3m/-m::,, =8mc', which radial quantum number, which is z:cro for yields mc=1.38 Ge V. the leading trajectory. We assume that Next, we consider the case where the the constituents have 1/2 spins thc" rnselv:cs constituent masses, m 1 and m 2 , are unequal. and consider the states where they are Since the potential (5) is assumed to be bound with parallel spins; then the total universal, the basic equations for the sys- spin J of the system is J=l+ 1, l, l-1. A tem remain to be the same "a function of $m_0$ and $K$ alone. Since we assume the universality of the force constant $K$, (9) implies that the slopes of $\rho$, $\varphi$, and $\psi$ trajectories stand in the ratios $$ \alpha'_\rho:\alpha'_\varphi:\alpha'_\psi=m_\rho^{-1/2}:m_\varphi^{-1/2}:m_c^{-1/2}, $$" nicatcd L: u~ b;r Jgi, \'ho obtained tbetn respectively, when tbey wen:; quasi-free. frurn crtref:_d cx.:-uninatlzJn uf data and i::~ pro- Empirically for vector m.eson trajectories pu:. :.ing hi:-; 0'77!.1 tb~ory concerning the:c_L 31 1808 Letters to the Editor 1) T."about $1.1$ GeV$^{-2}$ for $\rho$; for the $\psi$-trajectory it is more ambiguous: $\alpha'_\psi=0.38$–$0.50$. (The value $0.38$ is obtained when one identifies $\chi(3.55, 3.51, 3.41)$ as $1^{--}$ excited states of $\psi$, while the value $0.50$ is obtained when one identifies $\psi(3.7)$ as $n_r=1$ state and employs (8).) Inserting (11) and (12) into (10), we get the ratios $m_\rho:m_\varphi:m_c=1:1.24:5.4$–$3.1$, which appear to be reasonable numbers." l (l = 0, 1, 2, · · ·) is the orbital angular employed the further r:clation b=4m 0 2 we mom;cntum, whib nr (nr = 0, 1, 2, · · ·) is the gd the relation 3m/-m::,, =8mc', which radial quantum number, which is z:cro for yields mc=1."</p>
+<h3 id="unequal-constituents">Unequal constituents</h3>
+<p>"For this case the relation (9) is generalized" $\alpha'=1/(2\mu K)^{1/2}$-form, "where $\mu_{12}=m_1m_2/(m_1+m_2)$ is the reduced mass. ... If we put $m_1$ and $m_2$ as $m_\rho$ and $m_s$, Eq. (14) gives the slope of $K^{*}$ trajectory. If we employ there the values of $\alpha'_\rho$ and $\mu_\rho$ given in (11) (together with the relation (9)), this predicts for $\alpha'_{K^*}$ the value $0.82$, which is in good agreement with the value listed in (11). Similarly (14) predicts $\alpha'_\varphi=0.36$–$0.53$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-regge-slope-is-a-function-of-the-constituent-mass-so-it-is-not-universal">1. The Regge slope is a function of the constituent mass, so it is not universal</h3>
+<p><strong>The idea.</strong> With a universal force constant $K$ and a Hooke-type spacelike binding, $\alpha'$ comes out proportional to $\mu^{-1/2}$: $\alpha'_\rho:\alpha'_\varphi:\alpha'_\psi=m_\rho^{-1/2}:m_\varphi^{-1/2}:m_c^{-1/2}$. Non-universality is then not an anomaly but the signature of differing constituent masses under a shared coupling. </p>
+<p><strong>What it would add.</strong> A derivation of a relation the corpus treats as unexplained. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) discusses in §<em>The Counting Problem</em> and §<em>The Mass Gap and the Correlation Length</em> — in the companion confinement article — what sets the hadronic scale, and treats the slope as a single number; here the slope is a function of the reduced mass, with ratios tested against the $\rho$, $\varphi$ and $\psi$ families. That is a falsifiable statement where the corpus has a constant. </p>
+<p><strong>Where it lands.</strong> §<em>The Spin Decomposition</em>, as the trajectory-level comparison, and <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em> (<code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>) §<em>The Mass Gap and the Correlation Length</em>, where the scale enters. </p>
+<p><strong>What stands in the way.</strong> The extraction of $\alpha'_\psi$ is ambiguous by a factor of $1.3$ by the letter's own admission, and the ratio test then runs backwards, from the slopes to the constituent masses. The prediction is one number, $\alpha'_{K^*}=0.82$, against Igi's quoted value. </p>
+<h3 id="2-confinement-as-the-geometry-of-the-binding-a-spacelike-force-only">2. Confinement as the geometry of the binding: a spacelike force only</h3>
+<p><strong>The idea.</strong> The constituents are bound by a force that acts "ous: spacelike distance inside a hadron only; ct/ =0.", so confinement is not imposed as a boundary condition or a rising potential in time but is a property of the <em>character</em> of the force — spacelike separation only, and hence no propagation of the binding outside the hadron. Interactions between hadrons are then a separate, second-quantised coupling of bilocal fields.</p>
+<p><strong>What it would add.</strong> A third confinement picture. <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em> (<code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>) contrasts in §<em>The Other Confinement Picture: A Linear Boundary Condition</em> two pictures — the lossy-channel reading and the linear boundary condition; Takabayasi offers a third, where the force's <em>support</em> does the work. Three is the number at which a taxonomy becomes useful, and the corpus currently lists two.</p>
+<p><strong>Where it lands.</strong> §<em>The Other Confinement Picture</em>, as the third entry.</p>
+<p><strong>What stands in the way.</strong> The spacelike action-at-a-distance is a classical postulate about the action, not a consequence of any field theory, and the letter does not show that it forbids decay.</p>
+<h3 id="3-a-bilocal-wave-equation-with-a-subsidiary-condition-that-does-not-spoil-the-spectrum">3. A bilocal wave equation with a subsidiary condition that does not spoil the spectrum</h3>
+<p><strong>The idea.</strong> The quantum theory is a free wave equation in $X$ and $\xi$ plus a constraint linear in the mixed derivative. The constraint removes the relative-time degree without destroying the linear trajectories, so the subsidiary condition and the spectrum are compatible.</p>
+<p><strong>What it would add.</strong> A case where the constraint is benign, which sharpens the corpus's account of when constraints are not. <em>The Lagrangian and the Second Quantisation</em> (<code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code>) treats constraints through the Dirac bracket in §<em>The Constraints the Action Imposes</em>; the earlier Takabayasi letters in this folder argue that their tower has <em>no</em> subsidiary condition and is therefore easy to quantise. This letter has one, and it still works — which means the difficulty attributed to constraints is not the constraint as such.</p>
+<p><strong>Where it lands.</strong> §<em>The Constraints the Action Imposes: The Dirac Bracket</em>, as the benign case.</p>
+<p><strong>What stands in the way.</strong> Under the assumption of convergence appears in the norm; the constraint's consistency is shown by reproducing the spectrum, not by a general argument.</p>
+<p>The remainder, one line each. That $b$ should be equal to $4m_0^{2}$ yet is left free is a deliberately kept parameter; imposing it gives $m_c=1.38$ GeV. That the daughter trajectories are indexed by $n_r$, leading at $n_r=0$, is the cleanest statement of the tower's structure here.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -80,16 +80,16 @@
 <p>$$
 M_2(\mathbb{R})=UT_2\oplus\Lambda^{2}\mathbb{R}^{2},\qquad \dim=3+1=4 .
 $$</p>
-<p><strong>Proof.</strong> An upper triangular matrix has a zero lower-left entry, and the antisymmetric matrices are the multiples of $J=\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, whose lower-left entry is $-1$; an antisymmetric matrix that is also upper triangular is therefore zero. The dimensions then give the sum.</p>
+<p><strong>Proof.</strong> An upper triangular matrix has a zero lower-left entry, and the antisymmetric matrices are the multiples of $J=\begin{pmatrix}0&amp;1\\ -1&amp;0\end{pmatrix}$, whose lower-left entry is $-1$; an antisymmetric matrix that is also upper triangular is therefore zero. The dimensions then give the sum.</p>
 <p><strong>Corollary.</strong> $UT_2$ is a complement of the antisymmetric line, so every matrix splits as an upper triangular part plus a multiple of $J$ in exactly one way.</p>
 <p><strong>Proof.</strong> A direct sum decomposition gives existence and uniqueness of the two components.</p>
 <h2 id="the-projection-onto-math21">The Projection onto $UT_2$</h2>
 <p><strong>Proposition.</strong> The projection onto $UT_2$ along the antisymmetric line is</p>
 <p>$$
-P\begin{pmatrix}a&b\\ c&d\end{pmatrix}=\begin{pmatrix}a&b+c\\ 0&d\end{pmatrix},
+P\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}=\begin{pmatrix}a&amp;b+c\\ 0&amp;d\end{pmatrix},
 $$</p>
 <p>and the antisymmetric part of a matrix is $-cJ$.</p>
-<p><strong>Proof.</strong> $A-P(A)=\begin{pmatrix}0&-c\\ c&0\end{pmatrix}=-cJ$, which is antisymmetric; and $P(A)$ is upper triangular. The map $P$ is linear, its image is $UT_2$, and its kernel is the antisymmetric line.</p>
+<p><strong>Proof.</strong> $A-P(A)=\begin{pmatrix}0&amp;-c\\ c&amp;0\end{pmatrix}=-cJ$, which is antisymmetric; and $P(A)$ is upper triangular. The map $P$ is linear, its image is $UT_2$, and its kernel is the antisymmetric line.</p>
 <p><strong>Corollary.</strong> $P$ is a projection: $P^{2}=P$, its rank is $3$ and its kernel is one-dimensional.</p>
 <p><strong>Proof.</strong> For $U$ upper triangular one has $P(U)=U$, since the lower-left entry is zero and adds nothing to the upper-right one.</p>
 <p><strong>The projection changes an entry that the reader does not expect.</strong> The corner $(1,2)$ is modified: its new value is $b+c$, not $b$. The correction is exactly the antisymmetric part, which has to be moved into the symmetric direction of the off-diagonal plane.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-restricted-trace-form">The Restricted Trace Form</h2>
 <p><strong>Theorem.</strong> In the basis $E_{11},E_{22},E_{12}$ of $UT_2$ the Gram matrix of the trace form is</p>
 <p>$$
-\begin{pmatrix}1&0&0\\ 0&1&0\\ 0&0&0\end{pmatrix},
+\begin{pmatrix}1&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>so the restriction is degenerate and its radical is the line $n_+=\mathbb{R}E_{12}$.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, $\operatorname{tr}(E_{11}E_{22})=0$, and $E_{12}^{2}=0$ with $\operatorname{tr}(E_{11}E_{12})=\operatorname{tr}(E_{22}E_{12})=0$; so the last row and the last column vanish and the radical is spanned by $E_{12}$.</p>
@@ -115,9 +115,9 @@ $$</p>
 <h2 id="the-dimension-count-and-what-it-does-not-give">The Dimension Count and What It Does Not Give</h2>
 <p><strong>$UT_2$ and $\operatorname{Sym}_2$ have the same dimension.</strong> Both are three-dimensional real spaces, so there are linear isomorphisms between them, for example</p>
 <p>$$
-\begin{pmatrix}a&b\\ 0&d\end{pmatrix}\longmapsto\begin{pmatrix}a&b/2\\ b/2&d\end{pmatrix}.
+\begin{pmatrix}a&amp;b\\ 0&amp;d\end{pmatrix}\longmapsto\begin{pmatrix}a&amp;b/2\\ b/2&amp;d\end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> The map is linear, injective, and its image is the symmetric half; the inverse is $\begin{pmatrix}a&s\\ s&d\end{pmatrix}\mapsto\begin{pmatrix}a&2s\\ 0&d\end{pmatrix}$.</p>
+<p><strong>Proof.</strong> The map is linear, injective, and its image is the symmetric half; the inverse is $\begin{pmatrix}a&amp;s\\ s&amp;d\end{pmatrix}\mapsto\begin{pmatrix}a&amp;2s\\ 0&amp;d\end{pmatrix}$.</p>
 <p><strong>The isomorphism is not multiplicative.</strong> It carries the identity to the identity, but it does not carry products to products, so it is only a linear identification.</p>
 <p><strong>Proof.</strong> Take the upper triangular matrix $U=E_{12}$ and its image $S=\tfrac12(E_{12}+E_{21})$. In $UT_2$ one has $U^{2}=0$, while $S^{2}=\tfrac14 I$; the two products do not correspond.</p>
 <p><strong>Corollary.</strong> A common dimension is not a common algebra, and the comparison of the products is the subject of <em>$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product</em>.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><strong>The complement is the tangent space of the parabolic.</strong> The matrices preserving the line form the closed subgroup of the upper triangular matrices, of complex dimension $3$, and its tangent space at the identity is $UT_2$; the antisymmetric line lies outside that tangent space, since $J$ does not preserve the line.</p>
 <p><strong>The two complements answer two different questions.</strong> The symmetric complement answers the question of the orthogonal projection for the trace form; the triangular complement answers the question of the flag and of the parabolic subalgebra.</p>
 <h2 id="summary">Summary</h2>
-<p>$M_2(\mathbb{R})$ is the direct sum of the three-dimensional upper triangular algebra and the antisymmetric line, and the projection onto $UT_2$ along that line sends $\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ to $\begin{pmatrix}a&b+c\\ 0&d\end{pmatrix}$.</p>
+<p>$M_2(\mathbb{R})$ is the direct sum of the three-dimensional upper triangular algebra and the antisymmetric line, and the projection onto $UT_2$ along that line sends $\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}$ to $\begin{pmatrix}a&amp;b+c\\ 0&amp;d\end{pmatrix}$.</p>
 <p>The symmetric half is the orthogonal complement of the antisymmetric line, so the triangular complement is a non-orthogonal one; the two complements differ by a shear of the off-diagonal plane and meet in the diagonal. The trace form on $UT_2$ has Gram matrix $\operatorname{diag}(1,1,0)$, so its radical is the nilpotent line $n_+$, which is also the nilradical of the algebra, and $UT_2^{\perp}=\mathbb{R}E_{12}$. The linear isomorphism $UT_2\cong\operatorname{Sym}_2$ is not multiplicative.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -144,7 +144,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>$\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, spanning the antisymmetric line</td>
+<td>$\begin{pmatrix}0&amp;1\\ -1&amp;0\end{pmatrix}$, spanning the antisymmetric line</td>
 </tr>
 <tr>
 <td>$P$</td>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Classical Analogue to the Standard Model and General Relativity — Chapters 4–11: Particle Generations and Masses; Curved Space–Times; Heavy Weak Bosons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapters 4-11 Particle generations and masses; curved…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-classical-analogue-to-the-standard-model-and-general-relativity-chapters-411-particle-generations-and-masses-curved-spacetimes-heavy-weak-bosons"><strong>A Classical Analogue to the Standard Model and General Relativity — Chapters 4–11: Particle Generations and Masses; Curved Space–Times; Heavy Weak Bosons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (book, chapters 4–11)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2008.05893v10 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. N. C. Pfeifer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v10, 1 January 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>201 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/A Classical Analogue to the Standard Model, Chapters 4-11 Particle generations and masses; curved spacetimes and gravitation; heavy weak bosons 2008.05893v10-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapters 4-11 Particle generations and masses; curved spacetimes and gravitation; heavy weak bosons 2008.05893v10.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapters 4-11 Particle generations and masses; curved spacetimes and gravitation; heavy weak bosons 2008.05893v10.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The bulk of CASMIR. Chapters 4 and 5 derive fermion and boson masses at tree level in the $\mathbb{C}^{\wedge18}$ model; Chapter 6 adds higher-order corrections and obtains the tau, $W$, $Z$ and Higgs masses from $\alpha$, $m_e$ and $m_\mu$ alone; Chapter 7 converts the last ungauged freedom into space–time curvature and predicts Newton's constant; Chapters 8 to 11 treat the CDF II $W$ mass, muon $g-2$, LHCb leptoquarks, heavy weak-boson generations and Higgs production. The whole is a calculation from a model with three tunable parameters.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-parameter-count">The parameter count</h3>
+<p>"ermion masses in the C∧18 model Abstract The C∧18 model reproduces the particle spectrum and interactions of the Standard Model using only free scalar fields on a manifold with anticommuting co-ordinates. Solitonic exci- tations in a pseudovacuum state behave as coloured preons, forming"</p>
+<h3 id="the-masses-from-three-inputs">The masses, from three inputs</h3>
+<p>"the model values for the masses of the tau, the W and Z bosons, and a Higgs-like scalar boson are calculated as functions of α, me , and mµ , with no free fitting parameters. They are shown to be 1776.867413(43) MeV/c2 , 80.3587(22) GeV/c2 , 91.1877(35) GeV/c2 , and 125.1261(48) GeV/c2 respectively. All are within 0." of the observed $1776.86(12)$ MeV, $80.360(16)$ GeV, $91.1876(21)$ GeV and $125.11(11)$ GeV.</p>
+<h3 id="the-generation-mechanism-and-koide">The generation mechanism, and Koide</h3>
+<p>"ticle generations arising from diagonalisation of colour interactions within the triplet. 4" And: "An interesting feature of this model is its ability to approximately reproduce the Koide relationship between the charged lepton masses, and a preliminary calculation indicates that higher-order corrections to the mass process are of the correct magnitude to potentially improve upon this approximation."</p>
+<h3 id="heavy-boson-generations">Heavy boson generations</h3>
+<p>"The existence of higher-generation massive bosons is predicted (subject to limitations of the C∧18 analogue model), with the lightest being the second-generation W boson at almost 17 TeV/c2 . 5: 1 Introduction" — the listed value is $16.61320(46)$ TeV/$c^2$. "for the bosons there are instead three different mass-generating processes, whose eigenstates are distinguished by rest mass alone. Thus" "the generation labels merely describe the three on-shell rest energies.) 10: 1."</p>
+<h3 id="gravity-and-the-predicted-math24">Gravity, and the predicted $G_N$</h3>
+<p>"In this chapter the final ungauged freedom of the $\mathbb{C}^{\wedge18}$ analogue model is used to eliminate the right-handed weak interaction, while simultaneously introducing space–time curvature, and a gravitational interaction which emulates general relativity in experimentally observed regimes. The model is predictive of the value of Newton's constant, yielding $G_N=6.67426(230)\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ ... in agreement with the observed value of $G_N=6.67430(15)\times10^{-11}$ ... to a precision of $0.3\,\sigma_{\rm exp}$."</p>
+<h3 id="the-beyond-standard-model-record">The beyond-Standard-Model record</h3>
+<p>"CASMIR ... correctly predicts the anomalous value of the $W$ boson mass measured by CDF II, and the value of the muon gyromagnetic anomaly measured at Fermilab Muon $g-2$, with tensions $0.1\,\sigma$ and $0.2\,\sigma$ (upper bound $0.5\,\sigma$) respectively (compared with the Standard Model tensions of $6.9\,\sigma$ and $5.2\,\sigma$ respectively)."</p>
+<h3 id="leptoquarks">Leptoquarks</h3>
+<p>"CASMIR predicts the existence of effec- tive leptoquarks with lifetimes small compared to (3.09 TeV)−1 . The interactions mediated by these species do not violate lepton universality."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-three-tunable-parameters-and-the-rest-predicted">1. Three tunable parameters, and the rest predicted</h3>
+<p><strong>The idea.</strong> The model is fixed by $\alpha$, $m_e$ and $m_\mu$; every other mass follows. The comparison with observation is therefore a genuine prediction, not a fit, and the agreement is at the $0.1\,\sigma$ level for four independent quantities. This is the sharpest instance in the collection of a <strong>prediction</strong> with a small parameter count.</p>
+<p><strong>What it would add.</strong> A worked demonstration of the corpus's own thesis — that a framework is judged by how much it predicts per parameter — with numbers attached.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on the count.</p>
+<p><strong>What stands in the way.</strong> The prediction is conditional on the analogue model being the right description; the corpus's own parameter count would have to be stated the same way for the comparison to be fair, and the corpus does not yet do that.</p>
+<h3 id="2-generations-from-diagonalising-colour-interactions">2. Generations from diagonalising colour interactions</h3>
+<p><strong>The idea.</strong> The three generations are the eigenstates of a $3\times3$ matrix that arises when colour interactions inside a preon triplet are diagonalised. Generation number is then not a label but an eigenvalue index, and the Koide-like relation is a consequence of the same diagonalisation.</p>
+<p><strong>What it would add.</strong> A mechanism for the generation structure that also predicts the mass pattern, where the corpus records generations as an unexplained repetition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the generations.</p>
+<p><strong>What stands in the way.</strong> The corpus's generations come with its algebra, not with a colour triplet; the identification would require the corpus's fields to admit the same $3\times3$ structure.</p>
+<h3 id="3-heavy-weak-boson-generations">3. Heavy weak-boson generations</h3>
+<p><strong>The idea.</strong> Each weak boson has three mass eigenstates, distinguished by rest mass alone, with the second-generation $W$ near 17 TeV. These are not copies of the same particle but three separate mass-generating processes.</p>
+<p><strong>What it would add.</strong> A falsifiable prediction beyond the Standard Model spectrum, with a stated energy, which the corpus's open-problems article can cite as a live alternative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-w-and-z-bosons.md</code>, on the weak boson spectrum.</p>
+<p><strong>What stands in the way.</strong> The states lie above the preon scale, where the author himself says the analogue model ceases to be a good approximation; the prediction is therefore soft by the paper's own admission.</p>
+<h3 id="4-gravity-from-the-last-ungauged-freedom">4. Gravity from the last ungauged freedom</h3>
+<p><strong>The idea.</strong> The one gauge freedom left unfixed in the flat-space construction is used to remove the unobserved right-handed weak interaction, and that same choice introduces curvature. Gravity and the absence of a right-handed current are the same decision, and $G_N$ comes out as a number.</p>
+<p><strong>What it would add.</strong> A link between an internal gauge choice and a gravitational constant, which the corpus's gravity articles do not attempt.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>, on the origin of the coupling.</p>
+<p><strong>What stands in the way.</strong> The argument is specific to the analogue model's gauge freedom; the corpus fixes gauges for other reasons, and would have to show that its own residual freedom carries the same consequence.</p>
+<p>The rank is a judgement: the three-parameter prediction first, because it is the sharpest claim and the one the corpus can measure itself against; generations from colour second; heavy bosons third, as the falsifiable extension; gravity fourth, because it rests on a gauge argument the corpus cannot yet reproduce.</p>
+<p>This is a two-hundred-and-one page book; the tree-level mass mechanisms of Chapters 4 and 5, the corrected predictions of Chapter 6, the curved space–times and $G_N$ of Chapter 7, and the beyond-Standard-Model applications of Chapters 8 to 11 are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

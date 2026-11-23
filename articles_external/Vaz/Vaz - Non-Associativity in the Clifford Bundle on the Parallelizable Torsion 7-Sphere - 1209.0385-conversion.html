@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere - 1209.0385.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-associativity-in-the-clifford-bundle-on-the-parallelizable-torsion-7-sphere"><strong>Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1209.0385v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. da Rocha, M. A. Traesel, J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 September 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere - 1209.0385-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere - 1209.0385.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Non-Associativity in the Clifford Bundle on the Parallelizable Torsion 7-Sphere - 1209.0385.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds non-associative products on the parallelizable seven-sphere inside the Clifford algebra $\mathcal{C}\ell_{0,7}$, and then does the thing that makes such a construction usable: it exhibits a single product, the $\odot$-product, which encodes all of them. With it, the parallelizing torsion appears as the associator of the product, the transformations of spinor fields on $S^7$ are read off the deformation, and the Kač–Moody current algebra attached to those spinors changes accordingly. The setting matters because $S^7$ is the sphere whose tangent frame is parallelizable by the octonions, so the geometry and the non-associativity are the same fact.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"In this paper we discuss generalized properties of non-associativity in Clifford bundles on the 7-sphere $S^7$. Novel and prominent properties inherited from the non-associative structure of the Clifford bundle on $S^7$ are demonstrated. They naturally lead to general transformations of the spinor fields on $S^7$ and have dramatic consequences for the associated Kač-Moody current algebras."</p>
+<h3 id="the-setting">The setting</h3>
+<p>"an octonionic product is defined in the Clifford algebra Cℓ0,7 [3] which is closely related to the S7 sphere [8]. Using".</p>
+<h3 id="the-unifying-product">The unifying product</h3>
+<p>"rivative [4]. By means of the ⊙-product, all subsequent octonionic products are regarded as the ⊙-product involving the Clifford multivector associated with the given octonionic product as defined in (3.6), (3.7), and (3.17). Thus, the arbitrary number of octonionic products can be encoded in a unique product – the ⊙-product."</p>
+<h3 id="torsion-as-an-associator">Torsion as an associator</h3>
+<p>The parameter of the deformed product "is twice the parallelizing torsion", with components $T_{ijk}(X)=[(\bar e_i\circ\bar X)\circ(X\circ e_j)]\circ e_k$. Consequently the algebra can be written as a commutator of covariant derivatives, $[\delta_i,\delta_j]=2T_{ijk}(X)\delta_k$, where $\delta_AX=X\circ A$ is the parallelizing covariant derivative.</p>
+<h3 id="the-consequence-for-spinors">The consequence for spinors</h3>
+<p>"fermions cannot transform without the presence of a parameter field. A field (bosonic or fermionic) transforming according to such map is a spinor under S7 . Our formalism introduces a new transfor- mation of such spinor fields since the product ◦u requires more parameters than the X-product. The current"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-torsion-is-the-associator">1. Torsion is the associator</h3>
+<p><strong>The idea.</strong> A <strong>identification</strong>: on a parallelizable manifold with a non-associative product, the parallelizing torsion is exactly the failure of associativity of the product, written as $T_{ijk}(X)=[(\bar e_i\circ\bar X)\circ(X\circ e_j)]\circ e_k$. The commutator of two covariant derivatives reproduces it.</p>
+<p><strong>What it would add.</strong> The corpus's torsion article treats torsion as a tensor field added to a connection, and its non-associativity appears, if at all, as an algebraic nuisance. This says the two are one object: a manifold whose product is non-associative has torsion, and the amount is the associator. That is a statement of the kind the corpus is built on — an algebraic property identified with a geometric one — and it would let the corpus's torsion article say where torsion comes from rather than only where it goes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is made on $S^7$ with a specific product, and the corpus's torsion article works on a general spacetime; the generalisation from one parallelizable sphere to a general manifold is not in the paper.</p>
+<h3 id="2-one-product-can-encode-a-family-of-products">2. One product can encode a family of products</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: instead of choosing among many octonionic products, absorb the choice into a Clifford multivector and use a single $\odot$-product. The family becomes the argument of one operation.</p>
+<p><strong>What it would add.</strong> The corpus's algebra-comparison articles present families of products — the four products article is the clearest case — as a list. This says a list can be compressed into one parametrised operation, which is a smaller and more usable object, and it turns the claim that these products are one product into a statement with a parameter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-four-products-composition-probability-causality-and-gauge.md</code>.</p>
+<p><strong>What stands in the way.</strong> The compression works because the parameter is a multivector in a specific algebra, and the corpus's four products are distinguished by what they do to the conjugation, not by a parameter.</p>
+<h3 id="3-spinor-transformations-need-a-parameter-field">3. Spinor transformations need a parameter field</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: on $S^7$ a fermion cannot be transformed on its own; the transformation law is $\delta_A\eta=\eta\circ_X A$, and it requires the parameter field $X$ as well. The spinor and the parameter transform together.</p>
+<p><strong>What it would add.</strong> The corpus's gauge articles all have transformations of the form $\psi\mapsto g\psi$ with $g$ built from the gauge field alone. Here the transformation itself needs a second field, which is a structural departure: it says that on a non-associative background the gauge parameter is not free but tied to the geometry. That is the kind of constraint the corpus's model-building articles would want to know about, since it limits what a gauge principle can be on such a space.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The statement is specific to $S^7$ and to this product, and the corpus's gauge articles are on flat space; the constraint would be a footnote about a case the corpus does not treat.</p>
+<p>The rank: torsion-as-associator first, because it is an identification of two named objects; the single-product compression second, because it is a device; the parameter-field constraint last, because it is a local result.</p>
+<p>The remaining items in one line each: the Moufang-like generalisation of section 4, which is the paper's attempt to keep some associativity-like identity; the explicit component form $T_{abc}(X)=[(\bar e_a\circ\bar X)(X\circ e_b)\circ e_c]$, which is what a reader would compute with; and the dedication to Jaime Keller, which places the paper in the tradition that treats the seven-sphere as a physical internal space.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

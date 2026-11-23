@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: symmetries at stationary non-static horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Symmetries at stationary non-static horizons -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-symmetries-at-stationary-non-static-horizons"><strong>Dirty black holes: symmetries at stationary non-static horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0403026v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. J. M. Medved, Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 March 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Symmetries at stationary non-static horizons - gr-qc_0403026-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Symmetries at stationary non-static horizons - gr-qc_0403026.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Symmetries at stationary non-static horizons - gr-qc_0403026.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This paper extends the authors' earlier static result to stationary but rotating horizons. It shows the Einstein tensor block-diagonalises into transverse and parallel parts at any non-extremal Killing horizon, whatever the horizon geometry, and that the transverse part is proportional to the transverse metric. Two independent arguments establish this, one from regularity of the horizon geometry and one from the structure of a bifurcate Killing horizon. The consequence is that the stress-energy near the horizon is constrained, with the sum of energy density and transverse pressure going to zero.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We establish that the Einstein tensor takes on a highly symmetric form near the Killing horizon of any stationary but non-static (and non-extremal) black hole spacetime."</p>
+<h3 id="the-relation-to-the-earlier-paper">The relation to the earlier paper</h3>
+<p>"This follows up on a recent article by the current authors, gr-qc/0402069, which considered static black holes."</p>
+<h3 id="the-content">The content</h3>
+<p>"Specifically, at any such Killing horizon — irrespective of the horizon geometry — the Einstein tensor block-diagonalizes into 'transverse' and 'parallel' blocks, and its transverse components are proportional to the transverse metric."</p>
+<h3 id="the-two-arguments">The two arguments</h3>
+<p>"Our findings are supported by two independent procedures; one based on the regularity of the on-horizon geometry and another that directly utilizes the elegant nature of a bifurcate Killing horizon."</p>
+<h3 id="the-physical-consequence">The physical consequence</h3>
+<p>"It is then argued that geometrical symmetries will severely constrain the matter near any Killing horizon." And: "Most notably, the sum of the energy density and the transverse pressure will tend to zero as the horizon [is] approach[ed]. It should be re-emphasized that such constraints would apply to all forms of matter or energy in the proximity of the horizon; including any quantum-induced fluctuations."</p>
+<h3 id="the-honest-limit">The honest limit</h3>
+<p>"The present analysis, however, does not help in computing the actual value of the Einstein tensor. Such a computation would require something like the analysis of the previous section."</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>"Let us recall Carlip's proposal that the black hole entropy is controlled by an asymptotic near-horizon conformal symmetry, as this idea served as one of the principal motivation[s]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rotation-does-not-spoil-the-symmetry">1. Rotation does not spoil the symmetry</h3>
+<p><strong>The idea.</strong> The block structure holds for rotating horizons too, so it is a property of Killing horizons generally.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain a statement that a certain horizon regularity is universal across the stationary class. That is a strong constraint the article can use, and it contrasts with the framework's failure to produce constraints of its own.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> Non-extremal and stationary are both assumed. Ranked first, because it is the most general positive result in this group.</p>
+<h3 id="2-a-vanishing-combination">2. A vanishing combination</h3>
+<p><strong>The idea.</strong> Energy density plus transverse pressure goes to zero at the horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> needs the near-horizon stress-energy to derive a temperature. A fixed relation between two components is exactly the input such a derivation requires, and the article may not have it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the temperature.</p>
+<p><strong>What stands in the way.</strong> The relation assumes the Einstein equations. Ranked second.</p>
+<h3 id="3-two-independent-derivations">3. Two independent derivations</h3>
+<p><strong>The idea.</strong> Regularity and bifurcate structure give the same answer.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> should value results with independent support. This paper is an example of what that looks like in practice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a methodological remark. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

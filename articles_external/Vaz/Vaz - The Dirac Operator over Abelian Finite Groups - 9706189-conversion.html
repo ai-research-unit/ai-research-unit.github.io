@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dirac Operator over Abelian Finite Groups — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - The Dirac Operator over Abelian Finite Groups - 9706189.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dirac-operator-over-abelian-finite-groups"><strong>The Dirac Operator over Abelian Finite Groups</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9706189v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 June 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - The Dirac Operator over Abelian Finite Groups - 9706189-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - The Dirac Operator over Abelian Finite Groups - 9706189.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - The Dirac Operator over Abelian Finite Groups - 9706189.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Puts a Dirac operator on a lattice by the only route that respects the continuum construction: find objects that square to the translation operators, and build the operator from them as the continuum builds it from $\gamma^\mu$ and $\partial_\mu$. The setting is any finite abelian group, of which a lattice is the example. The algebra that results is a Clifford-like algebra that reduces to a Clifford algebra in the continuum limit, and it reproduces the relation $\partial=d-\delta$. The motivation is the fermion doubling problem, and the claim is that this structure is the mathematical basis of a doubling-free lattice fermion scheme.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"In this paper we show how to construct a Dirac operator on a lattice in complete analogy with the continuum. In fact we consider a more general problem, that is, the Dirac operator over an abelian finite group (for which a lattice is a particular example). Our results appear to be in direct connexion with the so called fermion doubling problem."</p>
+<p>The narrower complaint: "while in the continuum the Dirac operator can be written in the form ∂ = P µ γµ ∂µ as a square root of the Laplace-Beltrami operator , that is ∂2 = , the same appears to not happen on the lattice. In- deed, to the best of our knowledge, we don’t have an"</p>
+<h3 id="the-device">The device</h3>
+<p>"In order to find this Dirac operator we need to introduce an algebraic structure (that generalizes the Clifford algebras) where we have quantities that work as square-root of the translation operator."</p>
+<p>"The generators of this new Clifford-like algebra appear as square-root of the translation operators. These generators can be construct in exactly the same manner as in the continuum, from the operators of exterior (wedge) multiplication and (right) contraction."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"Moreover we still have the remarkable relation ∂ = d − δ in- volving the Dirac operator and the differential and codifferential operators. We have also shown"</p>
+<h3 id="the-use">The use</h3>
+<p>"We have also shown how these results can be applied to lattice field theories, and in particular to a recent proposed solution to the fermion doubling problem, where that generalized Clifford-like algebra seems to provide its mathematical basis."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-lattice-doubling-is-a-failure-to-take-a-square-root">1. Lattice doubling is a failure to take a square root</h3>
+<p><strong>The idea.</strong> A <strong>diagnosis</strong>: the fermion doubling problem is usually stated as a count of unwanted poles in the propagator. It can be stated instead as a structural failure: on a lattice nobody has written an operator that squares to the discrete Laplacian, and doubling is what fills the gap.</p>
+<p><strong>What it would add.</strong> The corpus's graphene article deals with two Dirac cones as a physical fact about a honeycomb lattice. This reframes the same mathematics as an algebraic obstruction: the number of species is tied to how the discrete derivative fails to have a single square root. That is a sharper statement than a statement about the shape of the Brillouin zone, and it identifies what a doubling-free scheme must accomplish.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's graphene treatment is about a physical material with a physical lattice, where two cones are wanted rather than unwanted; importing the doubling critique would need care to avoid contradicting the article's own reading.</p>
+<h3 id="2-a-clifford-like-algebra-whose-generators-are-shift-operators">2. A Clifford-like algebra whose generators are shift operators</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: on a finite abelian group, the analogues of $\gamma^\mu$ are elements that square to the translation operators, so the "gamma matrices" become difference operators rather than constants.</p>
+<p><strong>What it would add.</strong> Every Clifford algebra in the corpus has constant generators. An algebra whose generators are operators is the discrete counterpart of the same structure, and it is the object that a corpus built on algebra would need to say anything about a lattice at all. It also explains why the continuum limit is a Clifford algebra: as the lattice spacing shrinks the shifts become derivations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction is stated for abelian finite groups, and the corpus's applications are on the continuum or on a specific lattice; a general treatment would need a separate article.</p>
+<h3 id="3-the-relation-math13-survives-discretisation">3. The relation $\partial=d-\delta$ survives discretisation</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the identity that makes the Dirac operator the difference of the exterior derivative and its adjoint holds on a finite group, not only in the continuum.</p>
+<p><strong>What it would add.</strong> The corpus uses $\partial=d-\delta$ as the structural fact behind its Maxwell–Dirac correspondence. That the same identity survives discretisation is a strong statement about what is essential in it: not the derivative, but the pair of graded operators. It would let the corpus's correspondence claim be made on a lattice, which is where a numerical test would live.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-dirac-maxwell-correspondence-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The discrete proof uses the generalised algebra, so quoting the result without the algebra is quoting a conclusion whose hypothesis the corpus does not carry.</p>
+<p>The rank: the doubling-as-obstruction diagnosis first, because it reframes a known problem; the operator-valued generators second, because it is the construction; the discrete identity last, because it is a corollary.</p>
+<p>The remaining items in one line each: the use of wedge multiplication and right contraction to build the generators, which is the same pair the continuum construction uses and is what makes the analogy exact; the reduction to Clifford algebras in the continuum limit, which is the consistency check; and the reference to a lattice scheme free of doubling with chiral invariance in the massless limit, which is the application the paper is aimed at.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

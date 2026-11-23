@@ -81,17 +81,17 @@ $$</p>
 <p>These two facts divide the classical Cauchy theory cleanly. The <strong>vanishing</strong> statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is <em>soft</em>: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The <strong>reconstruction</strong> statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\omega - Q_0)^{-1}$ is defined only where $\omega - Q_0$ is invertible, that is only off the fibre $\pi^{-1}(\pi(Q_0))$; no contour of non-zero winding about $Q_0$ avoids that fibre.</p>
 <p>What replaces the reconstruction half is a <strong>derived</strong> statement. Because the infinitesimal direction is nilpotent, a dual differentiable function is determined by its restriction to the real axis together with one derivative, and integration along a fibre evaluates the real part rather than reconstructing a general value from a boundary integral. In this sense the derived variable — the nilpotent coordinate — carries the information that a Cauchy integral would carry in the complex case.</p>
 <p>No physics is invoked. The dual plane is used as the two-dimensional real algebra fixed in <em>Dual-Numbers Algebra</em>, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed in <em>Dual-Numbers Analysis</em>.</p>
-<p>Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.</p>
+<p>Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\| = \sqrt{q^2 + q'{}^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.</p>
 <h2 id="the-dual-integral">The Dual Integral</h2>
 <h3 id="paths-and-contours">Paths and Contours</h3>
-<p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is <strong>closed</strong> if $\gamma(a) = \gamma(b)$ and <strong>simple</strong> if it is injective on $[a,b)$; a simple closed path is a <strong>contour</strong>.</p>
+<p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 &lt; t_1 &lt; \cdots &lt; t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is <strong>closed</strong> if $\gamma(a) = \gamma(b)$ and <strong>simple</strong> if it is injective on $[a,b)$; a simple closed path is a <strong>contour</strong>.</p>
 <p>The <strong>trace</strong> of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The <strong>opposite</strong> path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ and $\gamma_2 : [b,c] \to \mathbb{C}_{\mathrm{dln}}$ agree at $b$, their <strong>concatenation</strong> $\gamma_1 + \gamma_2$ follows first one and then the other. The <strong>length</strong> of a piecewise $C^1$ path is</p>
 <p>$$
 L(\gamma) = \int_a^b \|\gamma'(t)\| \, dt,
 $$</p>
 <p>finite because $\gamma'$ is piecewise continuous on a compact interval. Two paths recur below: the Euclidean circle $\gamma(t) = Q_0 + r(\cos t + \varepsilon\sin t)$, a contour of length $2\pi r$, and the fibre segment $\sigma(t) = q_0 + t\varepsilon$, $t \in [b_0, b_1]$, which lies in the single fibre $\pi^{-1}(q_0)$ and has length $|b_1 - b_0|$.</p>
 <h3 id="construction-from-the-riemann-sum">Construction from the Riemann Sum</h3>
-<p><strong>Definition.</strong> Let $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the <strong>Riemann sum</strong></p>
+<p><strong>Definition.</strong> Let $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 &lt; t_1 &lt; \cdots &lt; t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the <strong>Riemann sum</strong></p>
 <p>$$
 S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(Q_k - Q_{k-1}).
 $$</p>
@@ -117,13 +117,13 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> The multiplication map $Q_1 \mapsto Q_1Q_2$ for $Q_2 = q_2 + \varepsilon q_2'$ has matrix</p>
 <p>$$
-M(Q_2) = \begin{pmatrix} q_2 & 0 \\ q_2' & q_2 \end{pmatrix}
+M(Q_2) = \begin{pmatrix} q_2 &amp; 0 \\ q_2' &amp; q_2 \end{pmatrix}
 $$</p>
 <p>in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\| \leq \|M(Q_2)\| \|Q_1\|$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are</p>
 <p>$$
-\lambda_\pm = \frac{2q_2^2 + q_2'^2 \pm \sqrt{q_2'^4 + 4q_2^2q_2'^2}}{2},
+\lambda_\pm = \frac{2q_2^2 + q_2'{}^2 \pm \sqrt{q_2'{}^4 + 4q_2^2q_2'{}^2}}{2},
 $$</p>
-<p>so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence</p>
+<p>so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|^2 = q_2^2 + q_2'{}^2$ and maximising over the ratio $q_2^2/q_2'{}^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'{}^2$; hence</p>
 <p>$$
 \|Q_1Q_2\| \leq \frac{2}{\sqrt3}\,\|Q_1\|\|Q_2\|
 $$</p>
@@ -268,7 +268,7 @@ $$</p>
 <p>The kernel is undefined on an entire line through $Q_0$, not merely at $Q_0$.</p>
 <h3 id="no-contour-avoids-the-fibre">No Contour Avoids the Fibre</h3>
 <p><strong>Theorem (obstruction).</strong> There is no Cauchy integral formula in $\mathbb{C}_{\mathrm{dln}}$ that recovers $f(Q_0)$ from a contour integral of $f$ against the kernel $(\omega - Q_0)^{-1}$ along a contour $\gamma$ winding once about $Q_0$.</p>
-<p><strong>Proof.</strong> A closed contour with non-zero winding number about $Q_0$ meets both open half-planes $\{\operatorname{Re}\omega > \operatorname{Re} Q_0\}$ and $\{\operatorname{Re}\omega < \operatorname{Re} Q_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Q_0$, a convex set in which $Q_0$ has no interior, and a curve in such a set has winding number zero about $Q_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Q_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Q_0}$. At that point $\omega - Q_0$ is not invertible, the kernel $(\omega - Q_0)^{-1}$ is undefined, and the contour integral does not exist.</p>
+<p><strong>Proof.</strong> A closed contour with non-zero winding number about $Q_0$ meets both open half-planes $\{\operatorname{Re}\omega &gt; \operatorname{Re} Q_0\}$ and $\{\operatorname{Re}\omega &lt; \operatorname{Re} Q_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Q_0$, a convex set in which $Q_0$ has no interior, and a curve in such a set has winding number zero about $Q_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Q_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Q_0}$. At that point $\omega - Q_0$ is not invertible, the kernel $(\omega - Q_0)^{-1}$ is undefined, and the contour integral does not exist.</p>
 <p>The obstruction is of the same kind as in the split complex case but simpler: there the non-invertible set was the union of two lines through $Q_0$, here it is the single fibre through $Q_0$. The complement of one line in the plane has two components, each convex, and a closed curve lying in one component is null-homotopic in the punctured plane and has winding number zero about $Q_0$.</p>
 <h3 id="what-fails">What Fails</h3>
 <p>The following are consequences of the obstruction. None of them has an analogue in $\mathbb{C}$, and each fails for the same reason: the singular set of the kernel is a whole fibre rather than a point, and a differentiable function is rigid, built from one ordinary differentiable function of one variable and its derivative.</p>
@@ -278,7 +278,7 @@ $$</p>
 <li><strong>No Cauchy estimates and no Liouville theorem.</strong> The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{C}_{\mathrm{dln}}$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\| = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.</li>
 <li><strong>No mean value property and no maximum principle.</strong> Both would be consequences of the integral formula. The real part of a differentiable function depends only on $q$, so its average over a circle of radius $r$ about a point of real part $q_0$ is the weighted average $\frac{1}{2\pi}\int_0^{2\pi}u(q_0 + r\cos t)\,dt$ of $u$ over the interval $[q_0-r, q_0+r]$, which need not equal $u(q_0)$: for $u(q) = q^2$ it is $q_0^2 + r^2/2$.</li>
 <li><strong>No Laurent expansion at a point.</strong> The negative powers $(\omega - Q_0)^{-n}$ are undefined on the whole fibre through $Q_0$, so a Laurent series in $(\omega - Q_0)$ does not exist. Power series in non-negative powers do exist wherever the two real functions are real-analytic.</li>
-<li><strong>No identity theorem.</strong> Distinctness of the zero set from the whole plane does not force a function to vanish. Let $c$ be a smooth function that vanishes for $|q| < 1$ and is positive outside that interval; then $f(Q) = c(q)\,\varepsilon$ is dual differentiable, because its real part vanishes and its infinitesimal part is independent of $q'$, and it vanishes on the open strip $|q| < 1$ while being non-zero outside it. So a differentiable function may vanish on a non-empty open set without vanishing identically, and no accumulation argument for zero sets is available.</li>
+<li><strong>No identity theorem.</strong> Distinctness of the zero set from the whole plane does not force a function to vanish. Let $c$ be a smooth function that vanishes for $|q| &lt; 1$ and is positive outside that interval; then $f(Q) = c(q)\,\varepsilon$ is dual differentiable, because its real part vanishes and its infinitesimal part is independent of $q'$, and it vanishes on the open strip $|q| &lt; 1$ while being non-zero outside it. So a differentiable function may vanish on a non-empty open set without vanishing identically, and no accumulation argument for zero sets is available.</li>
 </ul>
 <h3 id="the-fundamental-solution-is-not-point-supported">The Fundamental Solution Is Not Point-Supported</h3>
 <p>The obstruction has an equivalent analytic form. Let</p>
@@ -287,13 +287,13 @@ D = \frac{\partial}{\partial \bar Q} = \frac{\partial}{\partial q'} - \varepsilo
 $$</p>
 <p>be the dual Cauchy–Riemann operator, so that $Df = 0$ is dual differentiability. On $f = u + v\varepsilon$ it acts by $Df = u_{q'} + (v_{q'} - u_q)\varepsilon$. Squaring, the term $\varepsilon^2\partial^2/\partial q^2$ vanishes but the cross terms do not cancel, and</p>
 <p>$$
-D^2 = \partial^2/\partial q'^2 - 2\,\varepsilon\,\partial^2/\partial q\partial q' .
+D^2 = \partial^2/\partial q'{}^2 - 2\,\varepsilon\,\partial^2/\partial q\partial q' .
 $$</p>
 <p>So $D$ itself does not factor the Laplacian of the plane. With the conjugate operator $\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$ the two mixed terms cancel instead, and</p>
 <p>$$
-D\bar D = \bar D D = \partial^2/\partial q'^2 ,
+D\bar D = \bar D D = \partial^2/\partial q'{}^2 ,
 $$</p>
-<p>the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\zeta_{q'} - i\zeta_q\varepsilon$, is invertible exactly when $\zeta_{q'} \neq 0$, so the characteristic set of $D$ is the line $\zeta_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.</p>
+<p>the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\zeta_{q'} - i\zeta_q\varepsilon$, is invertible exactly when $\zeta_{q'} \neq 0$, so the characteristic set of $D$ is the line $\zeta_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.</p>
 <p><strong>Theorem.</strong> A fundamental solution of $D$ on the plane with Lebesgue measure is</p>
 <p>$$
 E(q + \varepsilon q') = H(q')\,\delta(q) + q'_+\,\delta'(q)\,\varepsilon,
@@ -394,7 +394,7 @@ $$</p>
 <tr>
 <td>Second-order square</td>
 <td>Laplacian $\Delta$</td>
-<td>$D\bar D = \bar D D = \partial^2/\partial q'^2$</td>
+<td>$D\bar D = \bar D D = \partial^2/\partial q'{}^2$</td>
 </tr>
 <tr>
 <td>Section of the singular set</td>
@@ -454,9 +454,9 @@ $$</p>
 <p><strong>Proof.</strong> Write $Q = q + \varepsilon q'$. Then $Q^2 = q^2 + 2qq'\,\varepsilon$. The equation $Q^2 = -1$ requires $q^2 = -1$, impossible for real $q$.</p>
 <p>Equivalently, putting the dual operator in the general form $D = \partial/\partial q' + B\,\partial/\partial q$ with $B = -\varepsilon$, one has $B^2 = \varepsilon^2 = 0$ and, for $\bar D = \partial/\partial q' - B\,\partial/\partial q = \partial/\partial q' + \varepsilon\partial/\partial q$,</p>
 <p>$$
-D\bar D = \bar D D = \partial^2/\partial q'^2,
+D\bar D = \bar D D = \partial^2/\partial q'{}^2,
 $$</p>
-<p>which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.</p>
+<p>which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'{}^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.</p>
 <p>The consequences are those of the preceding sections. The general <strong>Cauchy–Goursat</strong> theorem applies to the dual system, because $\mathbb{C}_{\mathrm{dln}}$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general <strong>residue theory</strong> and <strong>Cauchy integral formula</strong>, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\zeta = 0\}$, for $\mathbb{C}_{\mathrm{spl}}$ it is the null cone, and for $\mathbb{C}_{\mathrm{dln}}$ it is the line $\zeta_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of invertibles modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>dual integral</strong> $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the sharp estimate $\|\int_\gamma f\,dQ\| \leq (2/\sqrt3)\,m\,L(\gamma)$, the constant $2/\sqrt3$ being the operator-norm bound for multiplication, between the complex constant $1$ and the split complex constant $\sqrt2$.</p>
@@ -466,7 +466,7 @@ $$</p>
 $$</p>
 <p>which reduces a dual integral to a pair of real line integrals, with the real part seen only through $u\,dq$ and the infinitesimal part through both $u$ and $v$. Integration along a <strong>fibre</strong> — a coset of the maximal ideal — evaluates the real part, $\int_\sigma f\,dQ = (b_1-b_0)\operatorname{Re}f(q_0)\varepsilon$, and is blind to the infinitesimal part; the nilpotent direction is totally isotropic, so iterated fibre integration vanishes.</p>
 <p>The form $f\,dQ$ is <strong>closed</strong> exactly when $f$ is <strong>dual differentiable</strong>, that is when $u_{q'} = 0$ and $v_{q'} = u_q$; equivalently $\partial/\partial\bar Q f = 0$. Consequently the <strong>Cauchy–Goursat theorem</strong> $\oint_\gamma f\,dQ = 0$ holds on every domain, and every differentiable function has an explicit primitive; the theorem is nevertheless <strong>soft</strong>, because it excludes nothing and its truth is the existence of the primitive rather than a property of the domain. A <strong>rectangle criterion</strong> characterises the continuous densities that are derivatives of dual differentiable functions — one step short of differentiability itself, since that class is not closed under differentiation — and the conjugate $\bar Q$ supplies the detector $\oint_\gamma \bar Q\,dQ = 2\operatorname{Area}(\gamma)\varepsilon$.</p>
-<p>The <strong>obstruction</strong> to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\omega - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no <strong>Cauchy integral formula</strong>, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the <strong>fundamental solution</strong> of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.</p>
+<p>The <strong>obstruction</strong> to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\omega - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no <strong>Cauchy integral formula</strong>, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the <strong>fundamental solution</strong> of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'{}^2$ and not $\Delta$, so $D$ is not elliptic.</p>
 <p>What replaces the reconstruction half is the <strong>derived</strong> statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial_{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of <em>Hypercomplex Integration</em> — $\mathbb{C}_{\mathrm{dln}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -498,7 +498,7 @@ $$</p>
 <td>Degenerate norm</td>
 </tr>
 <tr>
-<td>$\|Q\| = \sqrt{q^2+q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2+q'{}^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>
@@ -535,11 +535,11 @@ $$</p>
 </tr>
 <tr>
 <td>$D = \partial/\partial\bar Q = \partial/\partial q' - \varepsilon\partial/\partial q$</td>
-<td>Cauchy–Riemann operator, $D^2 = \partial^2/\partial q'^2 - 2\varepsilon\partial^2/\partial q\partial q'$</td>
+<td>Cauchy–Riemann operator, $D^2 = \partial^2/\partial q'{}^2 - 2\varepsilon\partial^2/\partial q\partial q'$</td>
 </tr>
 <tr>
 <td>$\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$</td>
-<td>Conjugate operator, $D\bar D = \bar D D = \partial^2/\partial q'^2$</td>
+<td>Conjugate operator, $D\bar D = \bar D D = \partial^2/\partial q'{}^2$</td>
 </tr>
 <tr>
 <td>$\partial_{\mathrm{nil}}\,(q+\varepsilon q') = \varepsilon q'$</td>

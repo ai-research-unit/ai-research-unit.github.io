@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A novel approach to thin-shell wormholes and applications — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A novel approach to thin-shell wormholes and applications - 1512.08474.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-novel-approach-to-thin-shell-wormholes-and-applications"><strong>A novel approach to thin-shell wormholes and applications</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.08474v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Francisco S. N. Lobo, Mariam Bouhmadi-López, Prado Martín-Moruno, Nadiezhda Montelongo-García, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 28 December 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; WSPC proceedings, BH4 Lobo</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - A novel approach to thin-shell wormholes and applications - 1512.08474-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A novel approach to thin-shell wormholes and applications - 1512.08474.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A novel approach to thin-shell wormholes and applications - 1512.08474.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sets out a general framework for spherically symmetric thin-shell wormholes in four dimensions, built on the Darmois–Israel junction formalism, and analyses their stability under linearised spherically symmetric perturbations about a static solution. The central result is that the stability question is entirely a question about the material on the throat: choose the equation of state of the exotic surface layer and the stability follows. The framework also allows an external force, in the form of a momentum flux impinging on the shell — a term the authors say has been missing from the literature — and is applied to the thin-shell Ellis wormhole with vanishing and non-zero external flux.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"A novel framework is presented that can be adapted to a wide class of generic spherically symmetric thin-shell wormholes. By using the Darmois–Israel formalism, we analyze the stability of arbitrary spherically symmetric thin-shell wormholes to linearized perturbations around static solutions. We demonstrate in full generality that the stability of the wormhole is equivalent to choosing suitable properties for the exotic material residing on the wormhole throat."</p>
+<h3 id="the-construction">The construction</h3>
+<p>Two manifolds, an exterior $\mathcal M_+$ and an interior $\mathcal M_-$, joined across a surface layer $\Sigma$, each side carrying a static spherically symmetric line element with its own redshift function $\Phi_\pm$ and shape function $b_\pm$. All the exotic material is confined to the shell, which is what makes the analysis tractable: the bulk on each side is ordinary general relativity, and the junction conditions carry the entire violation of the energy conditions.</p>
+<h3 id="the-new-ingredient">The new ingredient</h3>
+<p>"the stability analysis can deal with the imposition of 'external forces', through a momentum flux term that impinges on the shell, which is a feature that has so far been missing from the published literature." The flux term enters the conservation law of the surface stresses as an external force coming from the discontinuity in bulk momentum flux across the shell.</p>
+<h3 id="the-criterion">The criterion</h3>
+<p>"The surface mass as a function of the potential, so that specifying the latter tells us how much surface mass needs to be placed on the transition layer. This procedure demonstrates in full generality that the stability of the thin shell is equivalent to choosing suitable properties for the material residing on the junction interface."</p>
+<h3 id="the-sign-subtlety">The sign subtlety</h3>
+<p>"The surface energy density is always negative for the (cut-and-paste) thin-shell traversable wormholes. Due to the definition of the normals on the junction interface, as compared to working with gravastars, a few strategic sign flips arise in the context of these thin-shell traversable wormhole configurations. Thus, the possibility of a vanishing surface energy density exists for a wide class of thin-shell configurations."</p>
+<h3 id="the-application">The application</h3>
+<p>The thin-shell Ellis wormhole, in two cases: vanishing momentum flux, and non-zero external flux. The second case is the novelty, since the flux term is what the framework adds.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-stability-is-a-property-of-a-surface-layer-not-of-a-spacetime">1. Stability is a property of a surface layer, not of a spacetime</h3>
+<p><strong>The idea.</strong> For a thin-shell wormhole the entire dynamical question reduces to the equation of state of a two-dimensional surface, because the bulk on each side is fixed. Stability is therefore a property of a lower-dimensional object embedded in the geometry.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/horizons-without-a-global-structure.md</code> records that it cannot formulate a global causal statement. Here is a construction where the global question is deliberately avoided: the geometry is cut and pasted, and everything that matters lives on the cut. That is a technique the corpus's ledger does not list, and it is the only technique in this collection that reduces a global question to a local one by construction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, as a recorded technique.</p>
+<p><strong>What stands in the way.</strong> The construction needs a manifold, a junction surface and normal vectors — a differential-topological apparatus the corpus does not have. The cost is that the technique can be described but not reproduced.</p>
+<h3 id="2-a-negative-surface-energy-density-is-generic">2. A negative surface energy density is generic</h3>
+<p><strong>The idea.</strong> For cut-and-paste traversable wormholes the surface energy density is always negative, so the exotic matter is not an awkward feature of particular models but a structural consequence of the construction. Sign flips relative to gravastars are conventional, arising from the choice of normals.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> treats energy as a positive quantity without saying so. A class of geometries where the energy density on the boundary is provably negative, by construction rather than by choice, is a sharp counterexample to any implicit positivity assumption, and it is worth recording as such.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, as a stated limitation of the conservation laws' interpretation.</p>
+<p><strong>What stands in the way.</strong> The negativity is a property of the junction conditions in general relativity. Ranked second.</p>
+<h3 id="3-an-external-force-term-in-a-conservation-law">3. An external force term in a conservation law</h3>
+<p><strong>The idea.</strong> A conservation law for surface stresses can carry a source term proportional to the discontinuity of bulk momentum flux, and that source is what allows the shell to be driven rather than merely to oscillate.</p>
+<p><strong>What it would add.</strong> The corpus's conservation laws are homogeneous: a quantity is conserved, full stop. A worked case where the honest statement is "conserved up to a flux through the boundary" is a refinement the corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> should acknowledge, because its derivations assume no such boundary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a qualifier on a conservation statement. Ranked first, because it costs nothing and corrects an unstated assumption.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

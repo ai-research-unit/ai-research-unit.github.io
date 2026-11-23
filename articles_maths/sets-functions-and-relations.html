@@ -201,8 +201,8 @@ $$</p>
 <p><strong>Proof.</strong> Injectivity: if two equivalence relations have the same classes then $x \sim y$ holds for the first exactly when $x$ lies in the same class as $y$, which is the same condition for the second. Surjectivity: given a partition $\mathcal{P}$, define $x \sim y$ to mean that $x$ and $y$ lie in a common member of $\mathcal{P}$. This is reflexive and symmetric immediately, and transitive because two members of $\mathcal{P}$ that meet a common element coincide, a partition being pairwise disjoint. Its classes are exactly the members of $\mathcal{P}$.</p>
 <p>The theorem gives two ways of presenting a quotient, by the relation or by the partition; in group theory the partition is into the cosets of a normal subgroup, in ring theory into the cosets of an ideal.</p>
 <h3 id="order-relations">Order Relations</h3>
-<p><strong>Definition.</strong> A <strong>partial order</strong> on a set $X$ is a relation $\leq$ that is reflexive, antisymmetric and transitive. A <strong>total order</strong> (or <strong>linear order</strong>) is a partial order in which any two elements are comparable, that is, $x \leq y$ or $y \leq x$ for all $x, y \in X$. A <strong>strict partial order</strong> is an irreflexive transitive relation, written $<$.</p>
-<p>The subset relation $\subseteq$ on $\mathcal{P}(X)$ is a partial order that is not total as soon as $X$ has two elements: $\{a\}$ and $\{b\}$ are incomparable. The usual order on $\mathbb{N}$ is total. Every partial order gives rise to a strict order by $x < y \iff x \leq y$ and $x \neq y$, and every strict order to a partial order by $x \leq y \iff x < y$ or $x = y$; the two notions carry the same information.</p>
+<p><strong>Definition.</strong> A <strong>partial order</strong> on a set $X$ is a relation $\leq$ that is reflexive, antisymmetric and transitive. A <strong>total order</strong> (or <strong>linear order</strong>) is a partial order in which any two elements are comparable, that is, $x \leq y$ or $y \leq x$ for all $x, y \in X$. A <strong>strict partial order</strong> is an irreflexive transitive relation, written $&lt;$.</p>
+<p>The subset relation $\subseteq$ on $\mathcal{P}(X)$ is a partial order that is not total as soon as $X$ has two elements: $\{a\}$ and $\{b\}$ are incomparable. The usual order on $\mathbb{N}$ is total. Every partial order gives rise to a strict order by $x &lt; y \iff x \leq y$ and $x \neq y$, and every strict order to a partial order by $x \leq y \iff x &lt; y$ or $x = y$; the two notions carry the same information.</p>
 <p>An element $m \in X$ is <strong>maximal</strong> if $m \leq x$ implies $x = m$, and <strong>maximum</strong> (or greatest) if $x \leq m$ for all $x$; the two differ when the order is partial, since a maximum is unique but maxima need not exist. A total order in which every nonempty subset has a least element is a <strong>well-order</strong>, the object on which transfinite induction is performed. The systematic theory of orders is the subject, and Zorn's lemma is treated with the axiom of choice.</p>
 <h2 id="functions">Functions</h2>
 <h3 id="functions-as-a-special-kind-of-relation">Functions as a Special Kind of Relation</h3>
@@ -336,7 +336,7 @@ $$</p>
 <td>Quotient map</td>
 </tr>
 <tr>
-<td>$\leq$, $<$, $\subseteq$</td>
+<td>$\leq$, $&lt;$, $\subseteq$</td>
 <td>Partial order; strict order; inclusion</td>
 </tr>
 <tr>

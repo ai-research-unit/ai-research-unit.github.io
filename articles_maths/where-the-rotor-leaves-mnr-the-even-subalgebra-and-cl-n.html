@@ -79,7 +79,7 @@
 e_ie_j+e_je_i=-2\delta_{ij},\qquad i,j=1,\dots,n .
 $$</p>
 <p>So $e_i^2=-1$ and $e_ie_j=-e_je_i$ for $i\ne j$.</p>
-<p><strong>The basis.</strong> A word $e_{i_1}\cdots e_{i_k}$ reduces, by the relations and by $e_i^2=-1$, to $\pm e_S$ with $S=\{i_1<\dots<i_k\}$, and $e_\emptyset=1$. The product of two basis elements is a basis element up to sign,</p>
+<p><strong>The basis.</strong> A word $e_{i_1}\cdots e_{i_k}$ reduces, by the relations and by $e_i^2=-1$, to $\pm e_S$ with $S=\{i_1&lt;\dots&lt;i_k\}$, and $e_\emptyset=1$. The product of two basis elements is a basis element up to sign,</p>
 <p>$$
 e_Se_T=\varepsilon(S,T)\,e_{S\triangle T},\qquad \varepsilon(S,T)=\pm1,
 $$</p>
@@ -93,16 +93,16 @@ $$</p>
 <p><strong>The algebra is $\mathbb{Z}/2$-graded by the length of the word.</strong> Write $Cl^0(n)$ for the span of the $e_S$ with $|S|$ even and $Cl^1(n)$ for the span with $|S|$ odd. Since $Cl^rCl^s\subseteq Cl^{r+s}$, the even part is a subalgebra and the odd part is a module over it.</p>
 <p><strong>The even part has half the dimension.</strong> The map $S\mapsto S\triangle\{n\}$ pairs each even subset with an odd one, so $\dim Cl^0(n)=2^{n-1}$.</p>
 <p><strong>Theorem.</strong> $Cl^0(n)$ is isomorphic to $Cl(n-1)$.</p>
-<p><em>Proof.</em> Put $f_i=e_ie_n$ for $i<n$. Because $e_n$ anticommutes with $e_i$ and $e_j$ and $e_n^2=-1$,</p>
+<p><em>Proof.</em> Put $f_i=e_ie_n$ for $i&lt;n$. Because $e_n$ anticommutes with $e_i$ and $e_j$ and $e_n^2=-1$,</p>
 <p>$$
 f_if_j+f_jf_i=e_ie_ne_je_n+e_je_ne_ie_n=e_ie_j+e_je_i=-2\delta_{ij}.
 $$</p>
-<p>So the $f_i$ obey the relations of $n-1$ generators, and they generate the even part, since $e_ie_j=-f_if_j$ for $i,j<n$ and $e_ie_n=f_i$. Hence $Cl^0(n)\cong Cl(n-1)$.</p>
+<p>So the $f_i$ obey the relations of $n-1$ generators, and they generate the even part, since $e_ie_j=-f_if_j$ for $i,j&lt;n$ and $e_ie_n=f_i$. Hence $Cl^0(n)\cong Cl(n-1)$.</p>
 <p><strong>The dimension $2^{n-1}$ is the source of every later count.</strong> It grows exponentially while $n^2$ grows quadratically, and the crossing of the two is the subject of the last three sections.</p>
 <h2 id="bivectors-and-anti-hermitian-matrices">Bivectors and Anti-Hermitian Matrices</h2>
-<p><strong>The bivectors are the degree-two elements.</strong> For $i<j$ put $e_{ij}=e_ie_j$. The $\binom n2$ bivectors are a basis of the degree-two part, of dimension $n(n-1)/2=\dim\operatorname{Skew}_n$. For $A\in\operatorname{Skew}_n$ define</p>
+<p><strong>The bivectors are the degree-two elements.</strong> For $i&lt;j$ put $e_{ij}=e_ie_j$. The $\binom n2$ bivectors are a basis of the degree-two part, of dimension $n(n-1)/2=\dim\operatorname{Skew}_n$. For $A\in\operatorname{Skew}_n$ define</p>
 <p>$$
-\omega(A)=\sum_{i<j}a_{ij}\,e_{ij}.
+\omega(A)=\sum_{i&lt;j}a_{ij}\,e_{ij}.
 $$</p>
 <p><strong>Theorem (the commutator).</strong> For $A,B\in\operatorname{Skew}_n$,</p>
 <p>$$
@@ -134,23 +134,23 @@ $$</p>
 <p><strong>The comparison is $2^{n-1}$ against $n^2$.</strong> A rotor lies in $Cl^0(n)$; a matrix lies in $M_n(\mathbb{R})$, of dimension $n^2$. An injective linear map $Cl^0(n)\to M_n(\mathbb{R})$ would need $2^{n-1}\le n^2$, and the values are</p>
 <p>$$
 \begin{array}{c|ccccccc}
-n & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ \hline
-2^{n-1} & 2 & 4 & 8 & 16 & 32 & 64 & 128\\
-n^2 & 4 & 9 & 16 & 25 & 36 & 49 & 64
+n &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8\\ \hline
+2^{n-1} &amp; 2 &amp; 4 &amp; 8 &amp; 16 &amp; 32 &amp; 64 &amp; 128\\
+n^2 &amp; 4 &amp; 9 &amp; 16 &amp; 25 &amp; 36 &amp; 49 &amp; 64
 \end{array}
 $$</p>
-<p><strong>The crossing is at $n=7$.</strong> The inequality holds for $n=2,\dots,6$ and fails at $n=7$, where $64>49$, and at every larger $n$, because the left side doubles at each step while the right side adds $2n+1$. For $n\ge7$ the even subalgebra is strictly larger than the matrix algebra, and no faithful representation of it on $\mathbb{R}^n$ exists.</p>
-<p><strong>The count is necessary but not sharp.</strong> At $n=5$ it gives $16<25$ and at $n=6$ it gives $32<36$, so the dimension alone does not exclude a representation. The sharper obstruction is the module.</p>
+<p><strong>The crossing is at $n=7$.</strong> The inequality holds for $n=2,\dots,6$ and fails at $n=7$, where $64&gt;49$, and at every larger $n$, because the left side doubles at each step while the right side adds $2n+1$. For $n\ge7$ the even subalgebra is strictly larger than the matrix algebra, and no faithful representation of it on $\mathbb{R}^n$ exists.</p>
+<p><strong>The count is necessary but not sharp.</strong> At $n=5$ it gives $16&lt;25$ and at $n=6$ it gives $32&lt;36$, so the dimension alone does not exclude a representation. The sharper obstruction is the module.</p>
 <h2 id="the-module-count">The Module Count</h2>
 <p><strong>The rotor must act somewhere.</strong> A faithful representation of $Cl^0(n)$ is a real space on which the algebra acts faithfully, and the smallest such space is the spinor space. The classification of the real Clifford algebras gives, for $n\le8$,</p>
 <p>$$
 \begin{array}{c|ccccccc}
-n & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ \hline
-Cl^0(n) & \mathbb{C} & \mathbb{H} & \mathbb{H}^2 & M_2(\mathbb{H}) & M_4(\mathbb{C}) & M_8(\mathbb{R}) & M_8(\mathbb{R})^2\\
-\text{module} & 2 & 4 & 8 & 8 & 8 & 8 & 16
+n &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8\\ \hline
+Cl^0(n) &amp; \mathbb{C} &amp; \mathbb{H} &amp; \mathbb{H}^2 &amp; M_2(\mathbb{H}) &amp; M_4(\mathbb{C}) &amp; M_8(\mathbb{R}) &amp; M_8(\mathbb{R})^2\\
+\text{module} &amp; 2 &amp; 4 &amp; 8 &amp; 8 &amp; 8 &amp; 8 &amp; 16
 \end{array}
 $$</p>
-<p><strong>From $n=5$ the module is bigger than $\mathbb{R}^n$.</strong> At $n=5$ the algebra is $M_2(\mathbb{H})$, whose unique simple module is $\mathbb{H}^2$ of real dimension $8>5$. At $n=6$ it is $M_4(\mathbb{C})$, with simple module $\mathbb{C}^4$ of real dimension $8>6$. At $n=7$ it is $M_8(\mathbb{R})$ with module $\mathbb{R}^8$, and $8>7$. Equality with $n$ occurs only at $n=2$, where $\mathbb{C}$ acts on $\mathbb{R}^2$ by rotations.</p>
+<p><strong>From $n=5$ the module is bigger than $\mathbb{R}^n$.</strong> At $n=5$ the algebra is $M_2(\mathbb{H})$, whose unique simple module is $\mathbb{H}^2$ of real dimension $8&gt;5$. At $n=6$ it is $M_4(\mathbb{C})$, with simple module $\mathbb{C}^4$ of real dimension $8&gt;6$. At $n=7$ it is $M_8(\mathbb{R})$ with module $\mathbb{R}^8$, and $8&gt;7$. Equality with $n$ occurs only at $n=2$, where $\mathbb{C}$ acts on $\mathbb{R}^2$ by rotations.</p>
 <h2 id="the-matrix-realisation-at-math192">The Matrix Realisation at $n\le4$</h2>
 <p><strong>Small $n$, small matrices.</strong> For $n\le4$ the even subalgebra is a matrix algebra over $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$ of size at most two: $\mathbb{C}$ at $n=2$, $\mathbb{H}$ at $n=3$, $\mathbb{H}\oplus\mathbb{H}$ at $n=4$. In each case the rotor is an ordinary matrix of bounded size.</p>
 <p><strong>At $n=2$ the rotor is a complex number.</strong> $Cl^0(2)=\mathbb{C}$ with basis $1,e_{12}$ and $e_{12}^2=-1$. A rotor is $R=a+be_{12}$ with $a^2+b^2=1$, and $R$ acts as the rotation with $\cos\theta=a^2-b^2$ and $\sin\theta=2ab$. The pair $\pm R$ gives one rotation, and $\mathrm{SO}(2)$ is the circle.</p>
@@ -186,11 +186,11 @@ $$</p>
 </tr>
 <tr>
 <td>$e_{ij}=e_ie_j$</td>
-<td>The bivector of the pair $i<j$</td>
+<td>The bivector of the pair $i&lt;j$</td>
 </tr>
 <tr>
 <td>$\omega(A)$</td>
-<td>The bivector $\sum_{i<j}a_{ij}e_{ij}$ of $A\in\operatorname{Skew}_n$</td>
+<td>The bivector $\sum_{i&lt;j}a_{ij}e_{ij}$ of $A\in\operatorname{Skew}_n$</td>
 </tr>
 <tr>
 <td>$\widetilde R$</td>

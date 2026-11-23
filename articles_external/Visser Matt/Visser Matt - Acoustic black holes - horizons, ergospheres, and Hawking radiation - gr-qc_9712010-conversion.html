@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic black holes: horizons, ergospheres, and Hawking radiation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - horizons, ergospheres, and Hawking radiation -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="acoustic-black-holes-horizons-ergospheres-and-hawking-radiation"><strong>Acoustic black holes: horizons, ergospheres, and Hawking radiation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9712010v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 December 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Class. Quantum Grav. 15 (1998) 1767–1791</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Acoustic black holes - horizons, ergospheres, and Hawking radiation - gr-qc_9712010-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - horizons, ergospheres, and Hawking radiation - gr-qc_9712010.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - horizons, ergospheres, and Hawking radiation - gr-qc_9712010.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the acoustic metric from first principles — barotropic, inviscid, irrotational flow, possibly time dependent — and shows the velocity potential of a sound wave obeys exactly the minimally coupled massless scalar equation $\Delta\psi=0$ in a $(3+1)$-dimensional Lorentzian geometry whose metric depends algebraically on density, flow velocity and local sound speed. It then defines, for supersonic flows, the ergo-region, trapped regions, acoustic apparent horizons and acoustic event horizons (past and future), and shows these notions must be kept distinct. The Schwarzschild correspondence is closest in Painlevé–Gullstrand form and is never exact: the best that can be achieved is conformal to Schwarzschild. The paper also derives the effect of viscosity as an explicit breaking of acoustic Lorentz invariance, and states the central lesson: Hawking radiation is kinematic, the laws of black hole mechanics are dynamical.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-derivation">The derivation</h3>
+<p>"If the fluid is barotropic and inviscid, and the flow is irrotational (though possibly time dependent), then the equation of motion for the velocity potential describing a sound wave is identical to that for a minimally coupled massless scalar field propagating in a (3+1)-dimensional Lorentzian geometry": $\Delta\psi\equiv\frac{1}{\sqrt{-g}}\partial_\mu(\sqrt{-g}\,g^{\mu\nu}\partial_\nu\psi)=0$. "The acoustic metric $g_{\mu\nu}(t,\vec x)$ governing the propagation of sound depends algebraically on the density, flow velocity, and local speed of sound."</p>
+<h3 id="why-it-is-surprising">Why it is surprising</h3>
+<p>"Even though the underlying fluid dynamics is Newtonian, non-relativistic, and takes place in flat space plus time, the fluctuations (sound waves) are governed by an effective (3+1)-dimensional Lorentzian space-time geometry."</p>
+<h3 id="the-four-notions">The four notions</h3>
+<p>"I will show how to define the notions of ergo-region, trapped regions, acoustic apparent horizons, and acoustic event horizons (both past and future) for supersonic fluid flows, and show that in general it is necessary to keep these notions distinct." A draining bathtub in $2+1$ dimensions and a vortex filament sink in $3+1$ are the worked examples.</p>
+<h3 id="the-painlevegullstrand-point">The Painlevé–Gullstrand point</h3>
+<p>"the relationship between the Schwarzschild geometry and the acoustic metric is clearest when the Schwarzschild metric is written in the Painlevé–Gullstrand form ... while the relationship is very close it is not exact. (It is in fact impossible to obtain an acoustic metric that is identical to the Schwarzschild metric, the best that one can achieve is to obtain an acoustic metric that is conformally related to the Schwarzschild metric.)"</p>
+<h3 id="the-viscosity-result">The viscosity result</h3>
+<p>"It is the explicit appearance of the fluid four-velocity in the above expressions that justifies my claim that viscosity breaks the acoustic Lorentz invariance", with the viscous dispersion relation</p>
+<p>$$\omega=\vec v\cdot\vec k\pm\sqrt{c^2k^2-\frac{2\nu k^2}{3}}-i\,\frac{2\nu k^2}{3}, \qquad (paper\ 113)$$</p>
+<p>whose first term is bulk motion, second is dispersive, third dissipative. "the violation of Lorentz invariance is suppressed at low momentum."</p>
+<h3 id="the-lesson">The lesson</h3>
+<p>"Hawking radiation from event horizons is a purely kinematic effect that occurs in any Lorentzian geometry with an event horizon and is independent of any dynamical equations imposed on the Lorentzian geometry. On the other hand, the classical laws of black hole mechanics are intrinsically results of the dynamical equations (Einstein equations) that have no analog in the acoustic model. Thus Hawking radiation persists even in the absence of the laws of black hole mechanics and, in particular, the existence or otherwise of Hawking radiation is now seen to be divorced from the issue of the existence or otherwise of the laws of black hole thermodynamics."</p>
+<h3 id="the-temperature">The temperature</h3>
+<p>An acoustic horizon emits phonons at $k T_H=\frac{\hbar g_H}{2\pi c}$ (paper 118), with "the speed of sound in the above equation" and $g_H$ a genuine acceleration. The numerical estimate $T_H\sim10^{-9}\,\mathrm{K}$ makes the effect hard but not impossible to see.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-four-distinct-notions-permanently-distinct">1. Four distinct notions, permanently distinct</h3>
+<p><strong>The idea.</strong> Ergo-region, trapped region, apparent horizon, event horizon. In general they differ, and one concrete physical system shows them differing, so the distinctions are not scholastic.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> separates exactly three notions — causal boundary, marginally trapped surface, Killing horizon — and says they coincide only in the stationary black holes the corpus's thermodynamics uses. This paper separates four and exhibits a laboratory system where all four come apart. The corpus's ledger is therefore incomplete: the ergo-region is missing, and its absence matters because the corpus's thermodynamics article is where an ergoregion would be needed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, the taxonomy section.</p>
+<p><strong>What stands in the way.</strong> The acoustic definitions are made for a specific class of fluid flows. But the taxonomy is independent of the realisation, and this paper is the best available worked example.</p>
+<h3 id="2-kinematics-survives-dynamics-does-not">2. Kinematics survives, dynamics does not</h3>
+<p><strong>The idea.</strong> Half of general relativity transfers to any Lorentzian geometry with a horizon; the other half is specific to the Einstein equations. The transferable half is the radiation; the non-transferable half is the thermodynamics.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> and <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> are separate articles that share a subject and never say which parts of it are structural. This paper supplies the criterion: if a result survives the acoustic model it is kinematic; if it does not, it came from the dynamics. Applying that criterion to the corpus's own results would sort them, and some would move.</p>
+<p><strong>Where it lands.</strong> Both articles, as a shared scope note.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a criterion for sorting results. Ranked first.</p>
+<h3 id="3-conformal-not-identical">3. Conformal, not identical</h3>
+<p><strong>The idea.</strong> No acoustic metric is exactly Schwarzschild; the best one can do is conformal equivalence. The obstruction is structural, not a matter of cleverness.</p>
+<p><strong>What it would add.</strong> A precise statement of how far an analogy reaches. The corpus's <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats conformal equivalence as a symmetry; here it is the ceiling of an analogy, and the reason is stated: the acoustic metric has a specific dependence on density and sound speed that cannot be tuned to match a vacuum solution.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is a statement about the acoustic metric's functional form. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - gr-qc_9901047.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="acoustic-black-holes"><strong>Acoustic black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>lecture notes (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9901047v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 January 1999</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Proceedings of the 1998 Peniscola Summer School on Particle Physics and Cosmology (Springer-Verlag)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Acoustic black holes - gr-qc_9901047-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - gr-qc_9901047.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Acoustic black holes - gr-qc_9901047.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A pedagogical account of the acoustic analogy: sound in a moving, irrotational, barotropic, inviscid fluid obeys the same equation as a minimally coupled massless scalar on a Lorentzian geometry. Kinematic features of general relativity — the event horizon in particular — transfer exactly; dynamical features, meaning the Einstein equations, do not. The paper's central claim is a sharp division of labour: Hawking radiation is kinematics, black hole entropy is dynamics. The entropy is computed from a general Lagrangian and shown to equal area plus corrections if and only if the Lagrangian is Einstein–Hilbert plus corrections. It closes with the near-term experimental status of acoustic Hawking radiation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-analogys-boundary">The analogy's boundary</h3>
+<p>"A sound wave propagating in a flowing fluid shares many of the properties of a minimally coupled massless scalar field propagating in a non-flat (3+1)-dimensional Lorentzian geometry. This partial isomorphism is the basis of a very useful analogy ... Kinematic aspects of GR, such as the existence of event horizons, carry over to fluid mechanics (event horizons map into the boundaries of regions of supersonic flow). Dynamic aspects of GR (the Einstein equations) do not carry over. The analogy is not an identity, nevertheless enough features are shared in common to make the model very useful."</p>
+<h3 id="the-headline-claim">The headline claim</h3>
+<p>"A key result that I would like the reader to appreciate is this: Hawking radiation is kinematics; Black hole entropy is dynamics." And in the abstract: "Hawking radiation is a purely kinematical effect, whereas black hole entropy is intrinsically dynamical."</p>
+<h3 id="why-radiation-is-kinematic">Why radiation is kinematic</h3>
+<p>"In contrast to Hawking radiation, which is a purely kinematic effect, the notion of black hole entropy is intimately tied up with the dynamics of the geometry." The radiation follows from the ray tracing on a fixed acoustic geometry and the behaviour of modes across the horizon; no field equations are needed, only the existence of the horizon and the dispersion relation.</p>
+<h3 id="the-entropy-formula">The entropy formula</h3>
+<p>If the dynamics come from a Lagrangian that depends only on the metric, then</p>
+<p>$$S=\frac{k}{\ell_P^2}\int_{\text{horizon}}\frac{\delta L}{\delta R_{abcd}}\,\epsilon_{ab}\epsilon_{cd}\,\sqrt{{}^{(2)}g}\;d^2x, \qquad (paper\ 23)$$</p>
+<p>and for $L=\frac{1}{8\pi G}R\left(1+\sum a_n R^n\right)$ the entropy is $S=\frac{k}{4\ell_p^2}A\left(1+\sum b_n A^{-n}\right)$ (paper 25). Hence:</p>
+<p>"Entropy equals area (plus corrections) if and only if the Lagrangian is Einstein–Hilbert (plus corrections). So calculations of black hole entropy are implicitly calculations of the Lagrangian governing the geometry."</p>
+<h3 id="the-historical-inversion">The historical inversion</h3>
+<p>"Historically Bekenstein's notion of black hole entropy came first, and Hawking radiation was discovered as a side effect of trying to make the notion of black hole entropy consistent with ordinary thermodynamics. But now we see that Hawking radiation is a much more primitive concept, one that is more fundamental than the black hole entropy it helped explain. In fact Hawking radiation makes perfectly good sense even in situations in which the notion of black hole entropy is entirely meaningless."</p>
+<h3 id="the-surface-gravity">The surface gravity</h3>
+<p>"Unruh showed that under certain conditions the surface gravity is related to the normal derivative of the fluid velocity as it crosses the event horizon, and is then equal to the physical acceleration of the fluid as it crosses the event horizon", $g_H=c_s\,\partial_n v=a_{\text{fluid}}$ (paper 19). Temperature, unlike entropy, needs no Lagrangian.</p>
+<h3 id="the-experiment">The experiment</h3>
+<p>"with present technology acoustic Hawking radiation is almost experimentally testable", and the paper explicitly rules out sonoluminescence as a candidate, giving three reasons: the wrong quanta, too small a temperature, and a horizon that lives less than a sound-crossing time.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-entropy-is-a-reading-of-the-lagrangian">1. Entropy is a reading of the Lagrangian</h3>
+<p><strong>The idea.</strong> The area law holds if and only if the gravitational Lagrangian is Einstein–Hilbert plus corrections; the entropy is a functional of the Lagrangian, so measuring entropy is measuring dynamics. This is a <strong>mechanism</strong> claim with an iff.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives entropy from a horizon area and treats the Einstein–Hilbert action as given. The Wald formula quoted here makes entropy a <em>probe</em> of the action, which reverses the direction: the corpus's entropy is a consequence of its action, and the paper says that is the only way it can be. That is confirmation of the corpus's ordering, from an argument the corpus does not make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the entropy-derivation section.</p>
+<p><strong>What stands in the way.</strong> The formula needs a diffeomorphism-invariant Lagrangian and a bifurcate horizon. The corpus's action is algebraic and has no Riemann tensor in it, so the formula cannot even be evaluated there. The cost is that the corpus cannot check the iff in its own terms.</p>
+<h3 id="2-radiation-is-more-primitive-than-entropy">2. Radiation is more primitive than entropy</h3>
+<p><strong>The idea.</strong> The thermal spectrum follows from the existence of a horizon and a dispersion relation alone, so it survives in settings where entropy is undefined. Entropy is the derived notion, not the primitive one.</p>
+<p><strong>What it would add.</strong> This is a <strong>reading</strong> with a direct consequence for the corpus's <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, which presents the radiation as a consequence of the horizon's modular structure and its entropy. The paper says the implication runs the other way. If both are right, the corpus's modular derivation and the kinematic derivation must agree for a reason the corpus has not identified — and that is a question worth recording, not a contradiction to be papered over.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, opening framing.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks recording the tension; resolving it needs the acoustic model, which the corpus does not have. Ranked first, because it names an unexamined dependency in the corpus's own argument.</p>
+<h3 id="3-a-kinematicdynamical-split-as-a-classification-tool">3. A kinematic/dynamical split as a classification tool</h3>
+<p><strong>The idea.</strong> Every statement about horizons can be sorted into those that need only the causal structure and those that need the field equations. The split is decisive: it says which results will survive a change of dynamics.</p>
+<p><strong>What it would add.</strong> The corpus has no such classification, and its articles mix the two freely — a temperature from a Killing field (kinematic) and an entropy from an action (dynamical) appear side by side. <code>articles_physics/horizons-without-a-global-structure.md</code> is a ledger of exactly this kind for horizons; this paper supplies the analogous ledger for thermodynamics, and the two should be linked.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, as a companion ledger.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a classification. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

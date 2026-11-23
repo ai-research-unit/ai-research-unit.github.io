@@ -77,21 +77,21 @@ E_n = -\frac{m\,\kappa^{2}}{2\,\frac{h^{2}}{4\pi^{2}}\,n^{2}},
 $$</p>
 <p>Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.</p>
 <p>the eigenstates are labelled by the quantum numbers $n,l,l_z$, and each orbital level carries a two-valued spin factor.</p>
-<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $L_{\mathrm{orb},k} e_t$, sitting in the scalar slot, the spin operators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$, sitting in the vector slots, and the eigenvalue $\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
+<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $L_{\mathrm{orb},k} e_t$, sitting in the scalar slot, the spin operators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$, sitting in the vector slots, and the eigenvalue $\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
 <p>The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a <strong>central scalar</strong> element of $\mathbb{B}_{\Psi}$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does <strong>not</strong> supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.</p>
 <p>The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.</p>
 <h2 id="the-coulomb-hamiltonian-in-math16">The Coulomb Hamiltonian in $\mathbb{B}_{\Psi}$</h2>
 <h3 id="the-kinetic-term-and-a-sign">The kinetic term and a sign</h3>
 <p>The momentum operator of the framework is</p>
 <p>$$
-\tilde p = -i\,\frac{h}{2\pi}\vec\nabla_\Phi  = \sum_{\imath\in\{x,y,z\}}  \vec e_\imath p_\imath, \qquad \vec\nabla_\Phi  = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z, \qquad p_\imath = -i\,\frac{h}{2\pi}\partial/\partial R_\imath .
+\tilde p = -i\,\frac{h}{2\pi}\vec\nabla_\Phi  = \sum_{\imath\in\{x,y,z\}}  \vec e_{\imath} p_{\imath}, \qquad \vec\nabla_\Phi  = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z, \qquad p_{\imath} = -i\,\frac{h}{2\pi}\partial/\partial R_{\imath} .
 $$</p>
 <p>Since $\tilde p$ has a purely imaginary vector part, it is Hermitian and lies in $\mathbb{B}_{\Psi}$: it is an observable, not a generator. It is the same element that the companion articles use to build the orbital angular momentum, $\vec r\tilde p\in\mathbb{B}$ for the material-sector position $\vec r\in\mathbb{B}_{H}$.</p>
 <p>The kinetic energy requires care with the quaternion square. The components $p_j$ commute, so the cross terms in the product $\tilde p\circ\tilde p$ cancel pairwise:</p>
 <p>$$
 \tilde p^{\,2} = \sum_{\imath,\jmath} \vec e_{\imath} \vec e_{\jmath}\,p_{\imath} p_{\jmath}
-= \sum_{\imath\in\{x,y,z\}} \vec e_\imath^2p_\imath^{\,2}
-= -\Big(\sum_{\imath\in\{x,y,z\}} p_\imath^{\,2}\Big)e_t
+= \sum_{\imath\in\{x,y,z\}} \vec e_{\imath}^2p_{\imath}^{\,2}
+= -\Big(\sum_{\imath\in\{x,y,z\}} p_{\imath}^{\,2}\Big)e_t
 = -p^{\,2}e_t ,
 $$</p>
 <p>because $\vec e_{\imath} \vec e_{\jmath}+\vec e_{\jmath} \vec e_{\imath}=0$ for ${\imath}\neq\jmath$. Here $p^{\,2}=p\cdot p=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and</p>
@@ -102,7 +102,7 @@ $$</p>
 <p>$$
 \boxed{\;T = -\frac{1}{2\,m}\tilde p^{\,2} =\frac{1}{2\,m}\tilde p\,\tilde p^{\natural} =\frac{p^{2}}{2\,m}e_t\;}.
 $$</p>
-<p>The explicit minus sign is not decoration. The quaternion square of a pure vector is <strong>minus</strong> its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_\imath^2=-e_t$ — that gives the biquaternion norm $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-|\vec h_\Psi|^2$ on $\mathbb{B}_{\Psi}$ its Lorentzian sign pattern; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_{\imath\in\{x,y,z\}} h_\imath^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.</p>
+<p>The explicit minus sign is not decoration. The quaternion square of a pure vector is <strong>minus</strong> its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_{\imath}^2=-e_t$ — that gives the biquaternion norm $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-|\vec h_\Psi|^2$ on $\mathbb{B}_{\Psi}$ its Lorentzian sign pattern; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_{\imath\in\{x,y,z\}} h_{\imath}^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.</p>
 <h3 id="the-potential">The potential</h3>
 <p>The Coulomb potential is the central scalar</p>
 <p>$$
@@ -129,7 +129,7 @@ $$</p>
 \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi_{\mathrm{id}} \cong \mathbb{C}^2,
 $$</p>
 <p>a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the <strong>argument</strong> of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.</p>
-<p>Under the isomorphism $\mathsf{M}_2$ the field $\tilde{Ξ}$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ act on its two components as $\frac{h}{4\pi}\sigma_\imath$, and the orbital operators $L_{\mathrm{orb},k} e_t$ act on the argument as $L_{\mathrm{orb},k}$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_t$; the spin operators occupy the <strong>vector</strong> slots $i\vec e_\imath$. Because a scalar multiple of $e_t$ is central, the two families commute:</p>
+<p>Under the isomorphism $\mathsf{M}_2$ the field $\tilde{Ξ}$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ act on its two components as $\frac{h}{4\pi}\sigma_{\imath}$, and the orbital operators $L_{\mathrm{orb},k} e_t$ act on the argument as $L_{\mathrm{orb},k}$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_t$; the spin operators occupy the <strong>vector</strong> slots $i\vec e_{\imath}$. Because a scalar multiple of $e_t$ is central, the two families commute:</p>
 <p>$$
 [L_{\mathrm{orb},i},\tilde S_{\Psi,j}]=0 .
 $$</p>
@@ -150,7 +150,7 @@ L^2\,Y_l^{l_z} =\frac{h^{2}}{4\pi^{2}}\,l\,(l+1)\,Y_{l}^{l_z}, \qquad L_{\mathrm
 $$</p>
 <p>with $Y_l^{l_z}$ the spherical harmonics. The spin operators satisfy $\tilde S_{\Psi}^2=\frac{3\,h^{2}}{16\pi^{2}}e_t$, which is $\frac{h^{2}}{4\pi^{2}}\,s\,(s+1)$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces</p>
 <p>$$
-\sum_{\imath\in\{x,y,z\}}  \vec u_\imath\tilde S_{\Psi,k}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u) = \pm\frac{h}{4\pi}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u),
+\sum_{\imath\in\{x,y,z\}}  \vec u_{\imath}\tilde S_{\Psi,k}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u) = \pm\frac{h}{4\pi}\,\tilde\Pi_{\mathrm{id}}(\pm\vec u),
 \qquad
 \tilde\Pi_{\mathrm{id}}(\pm\vec u)=\tfrac12(e_t\pm i\vec u),
 $$</p>
@@ -237,8 +237,8 @@ $$</p>
 <td>scalar</td>
 </tr>
 <tr>
-<td>Spin $S_\imath=\frac{h}{4\pi}\sigma_\imath$</td>
-<td>$\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$</td>
+<td>Spin $S_{\imath}=\frac{h}{4\pi}\sigma_{\imath}$</td>
+<td>$\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$</td>
 <td>vector</td>
 </tr>
 <tr>
@@ -276,7 +276,7 @@ $$</p>
 <p><strong>The Hamiltonian ceases to be central.</strong> The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde S_{\Psi,\mathrm{tot},k}=L_{\mathrm{orb},k}+\tilde S_{\Psi,k}$ replaces the separate factors. The spin–orbit operator $\sum_{\imath\in\{x,y,z\}} L_{\mathrm{orb},k}\tilde S_{\Psi,k}$ has the eigenvalues given in the angular-momentum article,</p>
 <p>$$
 \bigl(\sum_{\imath\in\{x,y,z\}}  L_{\mathrm{orb},k}\tilde S_{\Psi,k}\bigr)_{s_{\mathrm{tot}}=l\pm\frac12} =
-\begin{cases} +\frac{h^{2}\,l}{8\pi^{2}}, & s_{\mathrm{tot}}=l+\tfrac12,\\[6pt] -\frac{h^{2}\,(l+1)}{8\pi^{2}}, & s_{\mathrm{tot}}=l-\tfrac12, \end{cases}
+\begin{cases} +\frac{h^{2}\,l}{8\pi^{2}}, &amp; s_{\mathrm{tot}}=l+\tfrac12,\\[6pt] -\frac{h^{2}\,(l+1)}{8\pi^{2}}, &amp; s_{\mathrm{tot}}=l-\tfrac12, \end{cases}
 $$</p>
 <p>and the relevant basis is the coupled one, $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, built with the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.</p>
 <p><strong>The good quantum numbers change.</strong> In the non-relativistic problem the level depends on $n$ alone and $l,l_z,s_z$ are all good. Relativistically the level depends on $n$ and $s_{\mathrm{tot}}$, not on $l$: the $l$-degeneracy at fixed $n$ is lifted, and what survives is a degeneracy between the two $l=s_{\mathrm{tot}}\pm\tfrac12$ states at the same $s_{\mathrm{tot}}$ (with no partner for the extreme $s_{\mathrm{tot}}=n-\tfrac12$).</p>
@@ -320,7 +320,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmathk}\vec e_\imath$ $(\imath\neq\jmath)$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=\epsilon_{\imath\jmath k}\vec e_{\imath}$ $(\imath\neq\jmath)$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -343,11 +343,11 @@ $$</p>
 <td>Centre, $\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, $\mathsf{M}_2(i\vec e_\imath)=\sigma_\imath$</td>
+<td>$\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i\vec e_{\imath})=\sigma_{\imath}$</td>
 <td>Isomorphism with $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\tilde p=-i\,\frac{h}{2\pi}\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}  \vec e_\imath p_\imath$, $p_\imath=-i\,\frac{h}{2\pi}\partial/\partial R_\imath$</td>
+<td>$\tilde p=-i\,\frac{h}{2\pi}\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}  \vec e_{\imath} p_{\imath}$, $p_{\imath}=-i\,\frac{h}{2\pi}\partial/\partial R_{\imath}$</td>
 <td>Momentum, Hermitian, in $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ $$</p>
 <td>Orbital operators, scalar slot</td>
 </tr>
 <tr>
-<td>$\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$, $\tilde S_{\Psi}^2=\frac{3\,h^{2}}{16\pi^{2}}e_t$</td>
+<td>$\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$, $\tilde S_{\Psi}^2=\frac{3\,h^{2}}{16\pi^{2}}e_t$</td>
 <td>Spin operators, vector slots</td>
 </tr>
 <tr>

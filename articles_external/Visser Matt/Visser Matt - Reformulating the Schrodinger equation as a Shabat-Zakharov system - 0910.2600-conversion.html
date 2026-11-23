@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reformulating the Schrödinger equation as a Shabat–Zakharov system — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reformulating the Schrodinger equation as a Shabat-Zakharov system -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reformulating-the-schrodinger-equation-as-a-shabatzakharov-system"><strong>Reformulating the Schrödinger equation as a Shabat–Zakharov system</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0910.2600v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 14 October 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Reformulating the Schrodinger equation as a Shabat-Zakharov system - 0910.2600-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reformulating the Schrodinger equation as a Shabat-Zakharov system - 0910.2600.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reformulating the Schrodinger equation as a Shabat-Zakharov system - 0910.2600.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The second-order Schrödinger equation is rewritten as two coupled first-order equations. The authors add an auxiliary condition to remove the extra freedom. In this form the general solution can be written formally, using three arbitrary functions and a path-ordered exponential. They apply the system to one-dimensional scattering and derive bounds on transmission, reflection, and Bogoliubov coefficients. The bounds are compared with earlier results.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-rewrite">The rewrite</h3>
+<p>"We reformulate the second-order Schrödinger equation as a set of two coupled first order differential equations, a so-called 'Shabat–Zakharov system'"</p>
+<h3 id="the-flexibility">The flexibility</h3>
+<p>"There is considerable flexibility in this approach, and we emphasise the utility of introducing an 'auxiliary condition' or 'gauge condition' that is used to cut down the degrees of freedom."</p>
+<h3 id="the-general-solution">The general solution</h3>
+<p>"Using this formalism, we derive the explicit (but formal) general solution to the Schrödinger equation."</p>
+<h3 id="its-ingredients">Its ingredients</h3>
+<p>"The general solution depends on three arbitrarily chosen functions, and a path-ordered exponential matrix."</p>
+<h3 id="the-application">The application</h3>
+<p>"we have used the system to derive a number of rigourous bounds on transmission probabilities (and reflection probabilities and Bogoliubov coefficients) for one-dimensional scattering problems"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-first-order-by-choice">1. First order by choice</h3>
+<p><strong>The idea.</strong> A second-order equation becomes a system, and a gauge condition removes the redundancy.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code> derives bounds from transfer matrices. This route reaches the same bounds from a different starting point.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code>, in the discussion of the method.</p>
+<p><strong>What stands in the way.</strong> The solution is formal. Ranked first, because it is the same problem by another road.</p>
+<h3 id="2-three-arbitrary-functions">2. Three arbitrary functions</h3>
+<p><strong>The idea.</strong> The general solution carries three free functions, which encode the potential.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats free choices in solutions as physical. Here they are gauge, which draws the line.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> The division is formal. Ranked second.</p>
+<h3 id="3-bogoliubov-coefficients-bounded">3. Bogoliubov coefficients bounded</h3>
+<p><strong>The idea.</strong> The same machinery bounds how strongly modes mix.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> uses the coefficients without bounds. Bounds would constrain the transformations it allows.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, in the discussion of the coefficients.</p>
+<p><strong>What stands in the way.</strong> The bounds are for one-dimensional problems. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

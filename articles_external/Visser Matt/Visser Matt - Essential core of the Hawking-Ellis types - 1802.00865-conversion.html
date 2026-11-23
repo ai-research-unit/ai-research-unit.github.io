@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essential core of the Hawking–Ellis types — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential core of the Hawking-Ellis types - 1802.00865.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="essential-core-of-the-hawkingellis-types"><strong>Essential core of the Hawking–Ellis types</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1802.00865v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 11 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Essential core of the Hawking-Ellis types - 1802.00865-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential core of the Hawking-Ellis types - 1802.00865.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential core of the Hawking-Ellis types - 1802.00865.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Hawking–Ellis classification sorts stress-energy tensors into four Segre–Plebański types. This paper simplifies the non-diagonalizable types by subtracting as much of type I as possible without changing the eigenvector structure. The results are reduced representatives called type II$'$, III$'$, and IV$'$, which obey simpler algebraic rules and make the energy conditions easier to check. It then examines stability under small perturbations and argues that types II and III are unstable, decaying into type I or type IV, while types I and IV are stable. Type III$'$ is singled out as having no simple classical or semiclassical interpretation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose">The purpose</h3>
+<p>"The Hawking–Ellis (Segre–Plebański) classification of possible stress-energy tensors is an essential tool in analyzing the implications of the Einstein field equations in a more-or-less model-independent manner."</p>
+<h3 id="the-method">The method</h3>
+<p>"the basic idea is to simplify the Hawking–Ellis type I, II, III, and IV classification by isolating the 'essential core' of the type II, type III, and type IV stress-energy tensors; this being done by subtracting (special cases of) type I to simplify the (Lorentz invariant) eigenvalue structure as much as possible without disturbing the eigenvector structure."</p>
+<h3 id="the-new-types">The new types</h3>
+<p>"We will denote these 'simplified cores' type II$'$, type III$'$, and type IV$'$. These 'simplified cores' have very nice and simple algebraic properties."</p>
+<h3 id="the-interpretations">The interpretations</h3>
+<p>"types I and II$'$ have very simple classical interpretations, while type IV$'$ is known to arise semi-classically (in renormalized expectation values of standard stress-energy tensors). In contrast type III$'$ stands out in that it has neither a simple classical interpretation, nor even a simple semi-classical interpretation."</p>
+<h3 id="the-algebraic-gain">The algebraic gain</h3>
+<p>"all the essential core types, II$'$, III$'$, and IV$'$ are significantly simpler to work with than the full type II, III, IV, stress-energy tensors, and have rather nice algebraic properties. Physically they correspond to subtracting as much of type I as possible, to always make the eigenvalues as simple as possible (while preserving eigenvector structure)."</p>
+<h3 id="the-energy-conditions">The energy conditions</h3>
+<p>"We have also seen that the energy conditions are easier to deal with using essential core types, II$'$, III$'$, and IV$'$, and that it is easier to get a grasp of perturbative stability of the Hawking–Ellis classification using the essential core II$'$ and III$'$ types."</p>
+<h3 id="the-stability-result">The stability result</h3>
+<p>"We have shown that types II and III, which are those energy tensors that are non-diagonalizable, are unstable and generically decay into either type I or type IV. In contrast non-degenerate type I and generic type IV remain so under generic perturbations. Note that degenerate type I, which has a multiple eigenvalue but only one timelike eigenvector, is also unstable."</p>
+<h3 id="the-anomaly">The anomaly</h3>
+<p>"focussing on type III$'$, (rather than the full type III), makes it a little clearer just how physically odd type III really is. Type III stands out in that it does not seem to have any straightforward physical interpretation in either classical or quantum physics, a point we plan to address in future work."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-unstable-types-are-unreachable-in-practice">1. Unstable types are unreachable in practice</h3>
+<p><strong>The idea.</strong> Types II and III decay under any small perturbation into type I or IV.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists algebraic possibilities as if all were available. If two of the four classes are unstable, the catalogue should mark them as not physically realisable, which shrinks the obstruction list.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on stress-energy types.</p>
+<p><strong>What stands in the way.</strong> Stability is a statement about perturbations of a chosen tensor. Ranked first, because it prunes the catalogue with a theorem.</p>
+<h3 id="2-subtracting-the-trivial-part">2. Subtracting the trivial part</h3>
+<p><strong>The idea.</strong> Remove the type I piece and what remains is the essential structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> mixes genuine obstructions with removable artefacts. The method of subtracting the trivial part is exactly the filter the catalogue needs.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The subtraction is defined for stress tensors. Ranked second.</p>
+<h3 id="3-a-class-with-no-interpretation">3. A class with no interpretation</h3>
+<p><strong>The idea.</strong> Type III has no known classical or semiclassical realisation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> should be able to say which of its objects have no known realisation, and why that is tolerated. This paper is a model of stating such a gap plainly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of scope.</p>
+<p><strong>What stands in the way.</strong> It is an open problem in the source. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

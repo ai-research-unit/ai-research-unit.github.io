@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorentz Boosts and Wigner Rotations: Self-Adjoint Complexified Quaternions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Lorentz boosts and Wigner rotations 2101.05971v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lorentz-boosts-and-wigner-rotations-self-adjoint-complexified-quaternions"><strong>Lorentz Boosts and Wigner Rotations: Self-Adjoint Complexified Quaternions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2101.05971v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 January 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Lorentz boosts and Wigner rotations 2101.05971v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Lorentz boosts and Wigner rotations 2101.05971v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Lorentz boosts and Wigner rotations 2101.05971v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rewrites the whole of boost composition in complexified quaternions and finds that most of it becomes short algebra. A boost is conjugation by the square root of a four-velocity, the composition of two boosts is a three-factor sandwich, the Wigner rotation is the discrepancy between that sandwich and the square root of the composed velocity, and the failure of associativity for three boosts is the non-vanishing of a triple cross product. The paper is a methods paper, and its interest for a quaternionic corpus is direct: it does in the complexified quaternions what the corpus does in biquaternions, and it reaches the non-associativity result that the corpus's composition article states only as a commutator fact.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-about-the-formalism">The claim about the formalism</h3>
+<p>"Herein we shall consider Lorentz boosts and Wigner rotations from a (complexified) quaternionic point of view. We shall demonstrate that for a suitably defined self-adjoint complex quaternionic 4-velocity, pure Lorentz boosts can be phrased in terms of the quaternion square root of the relative 4-velocity connecting the two inertial frames."</p>
+<p>And the motive, stated as a complaint about the literature: "The use of Hamilton's quaternions as applied to special relativity has a very long, complicated, and rather fraught history — largely due to a significant number of rather sub-optimal notational choices being made in the early literature".</p>
+<h3 id="the-three-results">The three results</h3>
+<p>"General Lorentz transformations can be factorized into a boost times a rotation: L = B R = eiξn̂/2 eθm̂/2 . (8.1) Here n̂ is the direction of the boost B, while m̂ is the axis of the rotation R." And "Conjugation by the square root of a four velocity implements a Lorentz boost: √ √ (8.2) X → V X V. • The relativistic"</p>
+<p>The composition: "The relativistic combination of 4-velocities has the simple algebraic form"</p>
+<p>$$V_{1\oplus2}=\sqrt{V_{2}}\,V_{1}\sqrt{V_{2}},\qquad V_{2\oplus1}=\sqrt{V_{1}}\,V_{2}\sqrt{V_{1}},$$</p>
+<p>which "4) (4.15) This makes it obvious that V1⊕2 6= V2⊕1 unless [V1 , V2 ] = 0, which in turn requires the 3-velocities ~v1 and ~v2 to be parallel. In the special"</p>
+<h3 id="the-wigner-rotation">The Wigner rotation</h3>
+<p>"The Wigner rotation is given by" $R=\sqrt{V_{1\oplus2}^{-1}}\sqrt{V_{2}}\sqrt{V_{1}}$, and it satisfies two identities: $V_{2\oplus1}=R^{\dagger}V_{1\oplus2}R$ for two boosts, and $V_{(1\oplus2)\oplus3}=R_{2\oplus3}^{\dagger}V_{1\oplus(2\oplus3)}R_{2\oplus3}$ for three.</p>
+<h3 id="non-associativity">Non-associativity</h3>
+<p>"This explicitly verifies the general non-associativity of composition of 4-velocities, and furthermore demonstrates why left-composition is much nicer than right-composition."</p>
+<p>The condition: "the combination of velocities is associative V(1⊕2)⊕3 = V1⊕(2⊕3) if and only if the boost direction in V1 is parallel to the rotation axis in R2⊕3 . But this holds if and only if [v1 , [v2 , v3 ]] = 0 (6.", which "holds if and only if" $\vec v_{1}\times(\vec v_{2}\times\vec v_{3})=0$.</p>
+<h3 id="the-verdict-on-the-method">The verdict on the method</h3>
+<p>"Overall, some rather complicated linear algebra involving 4 × 4 matrices has been reduced to relatively simple algebra in the complexified quaternions C ⊗ H. Acknowledgments TB was supported" The authors are careful about the BCH route: "while certainly elegant, most results based on the Baker–Campbell–Hausdorff expansion seem to not always be computationally useful."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-boost-is-the-square-root-of-the-velocity">1. The boost is the square root of the velocity</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: the boost that takes one frame to another is conjugation by $\sqrt{V}$, so the boost rotor and the velocity are the same object at different powers. Composition is then a sandwich, not a product.</p>
+<p><strong>What it would add.</strong> The corpus's eigenspinor article already builds the Lorentz rotor as a function of proper time, which is a square-root-like construction, and the Cartan article splits transformations into factors. Neither states the identity that the boost is the square root of the four-velocity as the reason the split exists. Stating it would unify two of the corpus's articles and give the boost a square root that is itself a physical object rather than a parametrisation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>.</p>
+<p><strong>What stands in the way.</strong> In the corpus's algebra the rotor multiplies from both sides anyway, so the square-root form may be automatic there; if so the addition is cosmetic and the interesting content is only that the two conventions agree.</p>
+<h3 id="2-non-associativity-has-a-name-and-a-condition">2. Non-associativity has a name and a condition</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: composing four-velocities is not associative, and it is associative exactly when $\vec v_{1}\times(\vec v_{2}\times\vec v_{3})=0$. The Wigner rotation is the measure of the failure, appearing between the two bracketings.</p>
+<p><strong>What it would add.</strong> The corpus's composition article treats non-commutativity as the whole story, which is what the commutator table can see. Non-associativity is invisible to a bracket table and is a strictly stronger statement about the algebra of velocities. For a corpus that composes rotations routinely, the distinction between an associative product and a non-associative velocity composition is worth printing, and the condition names the special case where the two agree.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>.</p>
+<p><strong>What stands in the way.</strong> Associativity of the underlying group product is never in doubt; only the derived velocity composition fails to be associative. So the result is about the parametrisation, not the group, and calling it non-associativity invites a confusion the paper does not always avoid.</p>
+<h3 id="3-left-composition-is-natural-right-composition-is-not">3. Left composition is natural, right composition is not</h3>
+<p><strong>The idea.</strong> A <strong>remark</strong> with a reason: $V_{1\oplus2}=\sqrt{V_{2}}V_{1}\sqrt{V_{2}}$ is symmetric in appearance while $V_{2\oplus1}$ is not, so the composition convention that puts the new boost's square root on both sides is the one that composes cleanly for three or more boosts.</p>
+<p><strong>What it would add.</strong> The corpus's rapidity-composition exercise fixes a convention by fiat. This gives a criterion — the convention under which the triple product stays manifestly symmetric — which is the kind of reason the exercise could adopt instead of choosing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.md</code>.</p>
+<p><strong>What stands in the way.</strong> The asymmetry is a property of this particular quaternionic representation, and the paper concedes that the history of the subject is littered with conventions that looked canonical in their own notation.</p>
+<p>The rank: the square-root identity first, because it is a formula; non-associativity second, because the corpus cannot see it; the left-composition remark last, because it is a convention.</p>
+<p>The remaining items in one line each: the use of the relativistic half-velocity $w$ with $v=2w/(1+w^{2})$, which is the same parametrisation the corpus's rapidity articles use in another form; the explicit parallel and perpendicular limits, which check the general formula against the two cases with known answers; and the authors' own judgement that the BCH approach, elegant or not, is not the practical route — a rare instance in this set of an author arguing against the most sophisticated branch of his own formalism.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

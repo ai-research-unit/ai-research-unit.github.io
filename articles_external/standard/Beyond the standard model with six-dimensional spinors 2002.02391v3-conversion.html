@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Standard Model with Six-Dimensional Spinors — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Beyond the standard model with six-dimensional spinors 2002.02391v3.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="beyond-the-standard-model-with-six-dimensional-spinors"><strong>Beyond the Standard Model with Six-Dimensional Spinors</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2002.02391v3 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Chester, Alessio Marrani, Michael Rios</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 15 February 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Particles 2023, 6, 144–173, doi 10.3390/particles6010008</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Beyond the standard model with six-dimensional spinors 2002.02391v3-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Beyond the standard model with six-dimensional spinors 2002.02391v3.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Beyond the standard model with six-dimensional spinors 2002.02391v3.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Encodes three generations of Standard Model fermions in a single six-dimensional spinor of $\mathrm{Spin}(3,3)$, embeds the result in $E_{8(-24)}$, and reads off Pati-Salam, SU(5) and Spin(10) grand unified theories when one generation is isolated. The claim is a bookkeeping one: three generations fit in 128 degrees of freedom instead of the 192 usually required, because the extra time dimensions supply the generation index.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-encoding">The encoding</h3>
+<p>"tract: 6D spinors with Spin(3, 3) symmetry are utilized to efficiently encode three generations of matter." matter. "4) is shown to contain physically relevant subgroups with representations for GUT groups, spacetime symmetries, three generations of the standard model fermions, and Higgs bosons. Pati-Salam"</p>
+<h3 id="the-guts-recovered">The GUTs recovered</h3>
+<p>"ti-Salam, SU (5), and Spin(10) grand unified theories are found when a single generation is isolated. For" The breakings used are $\mathfrak{so}_{10}\to\mathfrak{su}_4\oplus\mathfrak{su}_2\oplus\mathfrak{su}_2$ for Pati-Salam and $\mathfrak{so}_{10}\oplus\mathfrak{u}_1$ for flipped Spin(10).</p>
+<h3 id="the-count">The count</h3>
+<p>"Using so3,3 spinor representations allow for e8(−24) to describe three generations of matter with only 128 degrees of freedom (dofs) instead of 192 dofs typically used to describe three" generations. $E_8$ contains 128 spinorial roots, 96 of which are outside of $e_6$. A 4D Dirac spinor has 8 off-shell degrees of freedom, "implying that three generations of a particle requires 24 off-shell dofs.", and $\mathfrak{so}_{3,3}$ holds them in 16.</p>
+<h3 id="how-the-generations-arise">How the generations arise</h3>
+<p>"pacetime from so3,3 more clearly allows for three so3,1 spacetimes as a subalgebra. The intuition for multiple time dimensions is to encode multiple mass generations. While so1 for a single time is a trivial algebra with no generators, so3 allows for an explanation for three generations [160–163], which we explore here". A 6D massive vector $p^{\bar\mu}$ with $\bar\mu=-3,-2,-1,1,2,3$ and $p^{\bar\mu}p_{\bar\mu}=-m_6^2$ contains three 4D momenta $p_i^\mu$, one per choice of which coordinate is time.</p>
+<h3 id="the-action-and-the-geometry">The action and the geometry</h3>
+<p>"An action for three generations of fermions in the Majorana-Weyl spinor 128 of Spin(4, 12) is found with Spin(3) flavor symmetry inside E8(−24) . The 128 of Spin(4, 12) can be regarded as the tangent space to a particular pseudo-Riemannian form of the octo-octonionic Rosenfeld projective plane E8(−24) /Spin(4, 12) = (Os × O)P2 . Keywords: Beyond"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-extra-time-dimension-as-a-generation-index">1. An extra time dimension as a generation index</h3>
+<p><strong>The idea.</strong> Generations are not replicated by hand and not distinguished by a flavour quantum number; they are the three ways of choosing which of three timelike directions plays the role of time. Three generations then follow from the signature $(3,3)$ and not from a family symmetry. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A counting argument for exactly three generations, which the corpus treats as an input when it lists the parameters.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the generation count.</p>
+<p><strong>What stands in the way.</strong> The corpus works in signature $(1,3)$; adding timelike dimensions changes the signature of the algebra, so this is not an extension but a replacement, and the corpus's Lorentz representation theory would not survive it.</p>
+<h3 id="2-three-generations-in-128-states-rather-than-192">2. Three generations in 128 states rather than 192</h3>
+<p><strong>The idea.</strong> The economy is a real count: 128 spinorial roots of $E_8$ hold what 192 Dirac components would hold, because the six-dimensional spinor is smaller than three four-dimensional ones. This is a <strong>number</strong>.</p>
+<p><strong>What it would add.</strong> A quantitative benchmark for how compactly the corpus's own generation structure could be written, and a check on whether the corpus's counting of states is minimal.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on the state count.</p>
+<p><strong>What stands in the way.</strong> The reduction relies on $E_8$'s specific root system; the corpus's algebra has no exceptional structure, so the count cannot be reproduced.</p>
+<h3 id="3-guts-as-subalgebras-not-as-breaking-chains">3. GUTs as subalgebras, not as breaking chains</h3>
+<p><strong>The idea.</strong> Pati-Salam, SU(5) and Spin(10) appear "when a single generation is isolated", so they are subalgebra readings of one algebra rather than stages of a symmetry-breaking history. Gauge unification is a statement about embeddings, not about a cooling universe.</p>
+<p><strong>What it would add.</strong> A static reading of unification that the corpus's articles, which discuss breaking chains, do not use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on unification.</p>
+<p><strong>What stands in the way.</strong> The corpus's group is a subgroup of a division algebra of fixed dimension; there is no larger algebra in which it sits as a subalgebra, so the reading has no target.</p>
+<p>This is a thirty-page article; the $\mathfrak{so}_{3,3}$ spinors, the $E_{8(-24)}$ embedding, the 128-state count, the three masses and the projective-plane geometry are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Representation Theory of the Lorentz Group — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Representation_theory_of_the_Lorentz_group.pdf — a PDF in a subfolder of /home/hp/Documents/Material/…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="representation-theory-of-the-lorentz-group"><strong>Representation Theory of the Lorentz Group</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Representation theory of the Lorentz group</td>
+</tr>
+<tr>
+<td>length</td>
+<td>44 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Representation_theory_of_the_Lorentz_group-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Representation_theory_of_the_Lorentz_group.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Representation_theory_of_the_Lorentz_group.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A long encyclopedia article on the representations of the Lorentz group: the group as symmetries of Minkowski spacetime, its realisations as matrices, linear transformations or unitary operators, the finite-dimensional non-unitary representations labelled by two half-integers, and the infinite-dimensional unitary ones that a relativistic quantum theory requires.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-group-and-the-question">The group and the question</h3>
+<p>"The Lorentz group is a Lie group of symmetries of the spacetime of special relativity. This group can be realized as a collection of matrices, linear transformations, or unitary operators on some Hilbert space; it has a variety of representations."</p>
+<h3 id="why-the-representations-matter">Why the representations matter</h3>
+<p>"special relativity together with quantum mechanics are the two physical theories that are most thoroughly established, and the conjunction of these two theories is the study of the infinite-dimensional unitary representations of the Lorentz group." The finite-dimensional representations are not unitary, so they cannot act on a Hilbert space of states directly; they label fields, not states.</p>
+<h3 id="the-labelling">The labelling</h3>
+<p>The complexified algebra splits into two commuting $\mathfrak{su}(2)$ factors, and the finite-dimensional representations are labelled by a pair $(m,n)$ of half-integers. The Lorentz scalars are $(0,0)$, the chiral spinors $(1/2,0)$ and $(0,1/2)$, the four-vector $(1/2,1/2)$, and the field strength $(1,0)\oplus(0,1)$.</p>
+<p>"Representation theory of the Lorentz group The Lorentz group is a Lie group of symmetries of the spacetime of special relativity."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-pair">1. The pair</h3>
+<p>$(m,n)$ is the honest label, not the spin</p>
+<p><strong>The idea.</strong> A Lorentz representation is labelled by two numbers, and "spin" is only the diagonal combination. A field's behaviour under boosts is fixed by the pair, so two fields of the same spin can transform differently.</p>
+<p><strong>What it would add.</strong> A labelling the corpus's Casimir article sets up and its applications sometimes abbreviate. The $(1,0)\oplus(0,1)$ identification of the field strength is the sharpest example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>, at the label.</p>
+<p><strong>What stands in the way.</strong> The corpus works in a real algebra, where the two $\mathfrak{su}(2)$ factors are the self-dual and anti-self-dual parts; the pair has to be read as a pair of bivector sectors, not as a pair of complex numbers.</p>
+<h3 id="2-the-finite-dimensional-representations-are-not-unitary-and-that-is-not-a-defect">2. The finite-dimensional representations are not unitary, and that is not a defect</h3>
+<p><strong>The idea.</strong> Non-unitarity of the finite-dimensional representations is why they describe fields and not states. A unitary representation of a non-compact group must be infinite-dimensional.</p>
+<p><strong>What it would add.</strong> A reason the corpus's field and state spaces are different objects, which its polar-form article uses but does not justify.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is a theorem about compactness; the corpus would have to state it for its own group, which is not presented as an abstract Lie group.</p>
+<p>This is a long encyclopedia article; the group, the two families of representations, the $(m,n)$ labelling and the field assignments are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

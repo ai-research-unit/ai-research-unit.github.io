@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generating perfect fluid spheres in general relativity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generating perfect fluid spheres in general relativity - gr-qc_0503007.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generating-perfect-fluid-spheres-in-general-relativity"><strong>Generating perfect fluid spheres in general relativity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0503007v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 March 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Generating perfect fluid spheres in general relativity - gr-qc_0503007-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generating perfect fluid spheres in general relativity - gr-qc_0503007.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generating perfect fluid spheres in general relativity - gr-qc_0503007.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Known static perfect fluid sphere solutions have accumulated for ninety years with no visible order. The authors develop transformation theorems that map one perfect fluid sphere into another, working in Schwarzschild coordinates. Applying the theorems to a known sphere produces new ones, some already in the literature and most not. They introduce a seed metric, meaning one that cannot be generated, and use it to organise solutions into graph structures. Numerical tests suggest the transformations converge quickly to fixed points.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Over the last 90 years a tangle of specific perfect fluid spheres has been discovered, with most of these specific examples seemingly independent from each other. To bring some order to this collection, in this article we develop several new transformation theorems that map perfect fluid spheres into perfect fluid spheres."</p>
+<h3 id="what-the-theorems-do">What the theorems do</h3>
+<p>"These transformation theorems sometimes lead to unexpected connections between previously known perfect fluid spheres, sometimes lead to new previously unknown perfect fluid spheres, and in general can be used to develop a systematic way of classifying the set of all perfect fluid spheres."</p>
+<h3 id="the-method">The method</h3>
+<p>"Using Schwarzschild coordinates we have developed several transformation theorems that map perfect fluid spheres into perfect fluid spheres, and have used these transformations as a basis for classifying different types of perfect fluid sphere solutions."</p>
+<h3 id="the-output">The output</h3>
+<p>"If we apply these theorems on a known perfect fluid sphere, different solutions are often obtained. While some of the solutions are already known in the literature, most of them are novel. Therefore, we have developed a tool to generate new solutions for a perfect fluid sphere, which does not require us to directly solve the Einstein equations."</p>
+<h3 id="the-seed-idea">The seed idea</h3>
+<p>"We have developed the concept of a seed metric, which is one that cannot be generated by our theorems. Starting with a seed metric and applying our theorems, it is possible to structure, therefore to visualize, the relationship between all metrics generated from a given seed metric in a graph."</p>
+<h3 id="the-numerical-check">The numerical check</h3>
+<p>"We also used a numeric program to investigate whether theorem 3 and theorem 4 have fixed point limits. Both seem to converge very quickly."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"the class of static perfect fluid sphere solutions to the Einstein equations exhibits a deep and somewhat unexpected structure — the transformation theorems of this article provide a new and distinct way of looking at the problem, and yield a new way of viewing the inter-relationships between different static fluid spheres."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-solutions-form-a-graph-from-seeds">1. Solutions form a graph from seeds</h3>
+<p><strong>The idea.</strong> Solutions are not a list but a graph, generated from seeds that cannot themselves be generated.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> presents its constructions case by case. A generating relation with seeds would let the article say which of its metrics are independent and which are derived.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the survey of constructions.</p>
+<p><strong>What stands in the way.</strong> The theorems hold in Schwarzschild coordinates for spherical symmetry. Ranked first, because it gives the article an independence criterion.</p>
+<h3 id="2-new-solutions-without-solving-the-equations">2. New solutions without solving the equations</h3>
+<p><strong>The idea.</strong> A transformation produces new metrics from known ones, so the field equations need not be solved again.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> implies each new configuration needs fresh work. A generating method shortens that work, which changes what the catalogue costs to build.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The transformation preserves only the perfect fluid form. Ranked second.</p>
+<h3 id="3-iteration-reaches-a-fixed-point">3. Iteration reaches a fixed point</h3>
+<p><strong>The idea.</strong> Repeated application of the transformations converges.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> studies limits. A fixed point of a solution-generating map is a limit of a different kind, and the article would need to say whether the two limits commute.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> Convergence is observed numerically, not proved. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

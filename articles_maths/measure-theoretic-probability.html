@@ -98,7 +98,7 @@
 $$</p>
 <p>For $S = \mathbb{R}^d$ the <strong>distribution function</strong> is $F_X(x) = \mu_X\bigl((-\infty, x]\bigr) = \mathbb{P}(X \leq x)$, where the inequality is coordinatewise.</p>
 <p>The distribution records everything probabilistic about $X$: two random variables with the same distribution have the same expectation of every measurable function, and one writes $X \stackrel{d}{=} Y$ for equality in distribution. The distribution function of a real random variable is nondecreasing, right-continuous, with limits $0$ at $-\infty$ and $1$ at $+\infty$, and every such function is the distribution function of a unique probability measure on $\mathbb{R}$; the correspondence between measures and distribution functions is a bijection.</p>
-<p><strong>Definition.</strong> A point $x \in \mathbb{R}$ is an <strong>atom</strong> of $\mu$ if $\mu(\{x\}) > 0$; the measure is <strong>discrete</strong> if it is a countable sum of atoms, <strong>absolutely continuous</strong> with density $f$ if $d\mu = f\,dx$ with $f \geq 0$ measurable and $\int f\,dx = 1$, and <strong>singular</strong> if it is supported on a Lebesgue-null set. By the Lebesgue decomposition theorem of <em>Measure Theory and Integration</em> every probability measure on $\mathbb{R}$ decomposes uniquely into an absolutely continuous part, a discrete part and a singular continuous part.</p>
+<p><strong>Definition.</strong> A point $x \in \mathbb{R}$ is an <strong>atom</strong> of $\mu$ if $\mu(\{x\}) &gt; 0$; the measure is <strong>discrete</strong> if it is a countable sum of atoms, <strong>absolutely continuous</strong> with density $f$ if $d\mu = f\,dx$ with $f \geq 0$ measurable and $\int f\,dx = 1$, and <strong>singular</strong> if it is supported on a Lebesgue-null set. By the Lebesgue decomposition theorem of <em>Measure Theory and Integration</em> every probability measure on $\mathbb{R}$ decomposes uniquely into an absolutely continuous part, a discrete part and a singular continuous part.</p>
 <p><strong>Example.</strong> The Bernoulli distribution with parameter $p$ is the measure $p\delta_1 + (1-p)\delta_0$ on $\{0,1\}$, discrete with atoms at $0$ and $1$. The binomial distribution $\mathrm{Bin}(n,p)$ is $\sum_{k=0}^{n}\binom{n}{k}p^k(1-p)^{n-k}\delta_k$. The uniform distribution on $[0,1]$ is absolutely continuous with density $\mathbf{1}_{[0,1]}$; the standard normal distribution $N(0,1)$ is absolutely continuous with density $(2\pi)^{-1/2}\exp(-x^2/2)$; and the Cantor distribution is singular continuous, with distribution function the Cantor function.</p>
 <h3 id="the-quantile-function-and-the-universal-model">The Quantile Function and the Universal Model</h3>
 <p><strong>Definition.</strong> For a distribution function $F$ the <strong>quantile function</strong> is $F^{-1}(u) = \inf\{x \in \mathbb{R} : F(x) \geq u\}$ for $u \in (0,1)$, and $F^{-1}(0) = -\infty$, $F^{-1}(1) = +\infty$.</p>
@@ -115,8 +115,8 @@ $$</p>
 <p>$$
 \mathbb{E}[X] = \int_\Omega X(\omega)\, d\mathbb{P}(\omega),
 $$</p>
-<p>defined when $\int |X| \, d\mathbb{P} < \infty$, in which case $X$ is <strong>integrable</strong>; and $\mathbb{E}[X] = \int_{\mathbb{R}} x\, d\mu_X(x)$ by the change-of-variables theorem, so the expectation is computed from the distribution alone.</p>
-<p><strong>Proposition (properties).</strong> Expectation is linear, positive and monotone; it satisfies $\mathbb{E}[c] = c$ for a constant, and $|\mathbb{E}[X]| \leq \mathbb{E}[|X|]$. If $X \geq 0$ a.s. and $\mathbb{E}[X] = 0$ then $X = 0$ a.s. If $\{X_n\}$ is a sequence of nonnegative random variables then the monotone convergence theorem gives $\mathbb{E}[\lim_n X_n] = \lim_n \mathbb{E}[X_n]$; if $|X_n| \leq Y$ with $\mathbb{E}[Y] < \infty$ and $X_n \to X$ a.s. then the dominated convergence theorem gives $\mathbb{E}[X_n] \to \mathbb{E}[X]$. These are the convergence theorems of <em>Measure Theory and Integration</em> translated into probabilistic language.</p>
+<p>defined when $\int |X| \, d\mathbb{P} &lt; \infty$, in which case $X$ is <strong>integrable</strong>; and $\mathbb{E}[X] = \int_{\mathbb{R}} x\, d\mu_X(x)$ by the change-of-variables theorem, so the expectation is computed from the distribution alone.</p>
+<p><strong>Proposition (properties).</strong> Expectation is linear, positive and monotone; it satisfies $\mathbb{E}[c] = c$ for a constant, and $|\mathbb{E}[X]| \leq \mathbb{E}[|X|]$. If $X \geq 0$ a.s. and $\mathbb{E}[X] = 0$ then $X = 0$ a.s. If $\{X_n\}$ is a sequence of nonnegative random variables then the monotone convergence theorem gives $\mathbb{E}[\lim_n X_n] = \lim_n \mathbb{E}[X_n]$; if $|X_n| \leq Y$ with $\mathbb{E}[Y] &lt; \infty$ and $X_n \to X$ a.s. then the dominated convergence theorem gives $\mathbb{E}[X_n] \to \mathbb{E}[X]$. These are the convergence theorems of <em>Measure Theory and Integration</em> translated into probabilistic language.</p>
 <h3 id="inequalities">Inequalities</h3>
 <p>The probabilistic inequalities are the quantitative content of the measure theory, and they are the tools of the limit theorems.</p>
 <p><strong>Theorem (Jensen).</strong> Let $\varphi : \mathbb{R} \to \mathbb{R}$ be convex and let $X$ be integrable with $\varphi(X)$ integrable. Then</p>
@@ -124,17 +124,17 @@ $$</p>
 \varphi(\mathbb{E}[X]) \leq \mathbb{E}[\varphi(X)];
 $$</p>
 <p>for $\varphi(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^{n} \subseteq L^1$.</p>
-<p><strong>Theorem (Markov).</strong> For a nonnegative random variable $X$ and $a > 0$,</p>
+<p><strong>Theorem (Markov).</strong> For a nonnegative random variable $X$ and $a &gt; 0$,</p>
 <p>$$
 \mathbb{P}(X \geq a) \leq \frac{\mathbb{E}[X]}{a}.
 $$</p>
 <p><strong>Theorem (Chebyshev).</strong> For a random variable with mean $\mu$ and finite variance $\sigma^2$,</p>
 <p>$$
-\mathbb{P}\bigl(|X - \mu| \geq a\bigr) \leq \frac{\sigma^2}{a^2}, \qquad a > 0.
+\mathbb{P}\bigl(|X - \mu| \geq a\bigr) \leq \frac{\sigma^2}{a^2}, \qquad a &gt; 0.
 $$</p>
 <p>The three inequalities are the standard quantitative bounds, and they are proved by elementary manipulations: Jensen by the supporting line of a convex function, Markov by integrating the inequality $a\mathbf{1}_{\{X\geq a\}} \leq X$, and Chebyshev by applying Markov to $(X-\mu)^2$. The Chebyshev inequality is the engine of the weak law of large numbers, and the Markov inequality is the engine of the first-moment bounds.</p>
 <p><strong>Definition.</strong> For $X,Y \in L^2$, the <strong>variance</strong> is $\operatorname{Var}(X) = \mathbb{E}[(X-\mathbb{E}X)^2] = \mathbb{E}[X^2] - (\mathbb{E}X)^2$, the <strong>covariance</strong> is $\operatorname{Cov}(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]$, the <strong>correlation</strong> is $\rho(X,Y) = \operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$, the <strong>moments</strong> are $\mathbb{E}[X^k]$, and the <strong>$L^{n}$ norm</strong> is $\|X\|_p = (\mathbb{E}[|X|^p])^{1/p}$.</p>
-<p><strong>Theorem (Hölder, Minkowski, Cauchy–Schwarz).</strong> For $p, q > 1$ with $1/n + 1/m = 1$,</p>
+<p><strong>Theorem (Hölder, Minkowski, Cauchy–Schwarz).</strong> For $p, q &gt; 1$ with $1/n + 1/m = 1$,</p>
 <p>$$
 \mathbb{E}[|XY|] \leq \|X\|_p\|Y\|_q, \qquad \|X + Y\|_p \leq \|X\|_p + \|Y\|_p, \qquad \left|\mathbb{E}[XY]\right| \leq \|X\|_2\|Y\|_2,
 $$</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $X, X_1, X_2, \dots$ be random variables on $(\Omega,\mathcal{F},\mathbb{P})$ with values in $\mathbb{R}^d$.</p>
 <ol>
 <li>$X_n \to X$ <strong>almost surely</strong> ($X_n \to X$ a.s.) if $\mathbb{P}(\lim_n X_n = X) = 1$.</li>
-<li>$X_n \to X$ <strong>in probability</strong> ($X_n \xrightarrow{\mathbb{P}} X$) if for every $\varepsilon > 0$, $\mathbb{P}(\|X_n - X\| > \varepsilon) \to 0$.</li>
+<li>$X_n \to X$ <strong>in probability</strong> ($X_n \xrightarrow{\mathbb{P}} X$) if for every $\varepsilon &gt; 0$, $\mathbb{P}(\|X_n - X\| &gt; \varepsilon) \to 0$.</li>
 <li>$X_n \to X$ <strong>in $L^{n}$</strong> for $p \geq 1$ if $\|X_n - X\|_p \to 0$.</li>
 <li>$X_n \to X$ <strong>in distribution</strong> ($X_n \xrightarrow{d} X$) if $\mathbb{E}[f(X_n)] \to \mathbb{E}[f(X)]$ for every bounded continuous $f$.</li>
 </ol>
@@ -185,12 +185,12 @@ $$</p>
 <p>and an infinite family is independent if every finite subfamily is. Equivalently, the joint distribution is the product of the marginal distributions, and the characteristic function factorises: $\varphi_{X_1+\cdots+X_n} = \prod_i \varphi_{X_i}$.</p>
 <p>Independence is the probabilistic content of the product measure, and it is developed elsewhere, where the product measure is constructed, the Borel–Cantelli lemmas and the Kolmogorov zero–one law are proved, and the conditional expectation is defined as a projection. This article uses only the factorisation of the characteristic function and the additivity of the cumulants.</p>
 <h3 id="the-statements">The Statements</h3>
-<p><strong>Theorem (weak law of large numbers; Khinchin).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then the sample means converge in probability:</p>
+<p><strong>Theorem (weak law of large numbers; Khinchin).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| &lt; \infty$ and mean $\mu$. Then the sample means converge in probability:</p>
 <p>$$
 \boxed{\;\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu\;}.
 $$</p>
 <p><strong>Theorem (strong law of large numbers; Kolmogorov).</strong> Under the same hypotheses the sample means converge almost surely: $\frac{1}{n}\sum_{i=1}^n X_i \to \mu$ a.s.</p>
-<p><strong>Theorem (central limit theorem; Lindeberg–Lévy).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite variance $\sigma^2 > 0$. Then</p>
+<p><strong>Theorem (central limit theorem; Lindeberg–Lévy).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite variance $\sigma^2 &gt; 0$. Then</p>
 <p>$$
 \boxed{\;\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1)\;},
 $$</p>

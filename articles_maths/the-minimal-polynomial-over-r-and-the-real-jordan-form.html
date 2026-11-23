@@ -106,11 +106,11 @@ $$</p>
 <h2 id="the-real-jordan-form">The Real Jordan Form</h2>
 <p><strong>The real Jordan form replaces each complex block by a real one of twice the size.</strong> For a real eigenvalue $\lambda$ and a block size $d$,</p>
 <p>$$
-J_d(\lambda)=\begin{pmatrix}\lambda&1&&\\&\ddots&\ddots&\\&&\ddots&1\\&&&\lambda\end{pmatrix},
+J_d(\lambda)=\begin{pmatrix}\lambda&amp;1&amp;&amp;\\&amp;\ddots&amp;\ddots&amp;\\&amp;&amp;\ddots&amp;1\\&amp;&amp;&amp;\lambda\end{pmatrix},
 $$</p>
 <p>which is the ordinary Jordan block. For a conjugate pair $a\pm bi$ and a block size $d$,</p>
 <p>$$
-R_d(a,b)=\begin{pmatrix}C&I&&\\&\ddots&\ddots&\\&&\ddots&I\\&&&C\end{pmatrix},\qquad C=\begin{pmatrix}a&-b\\ b&a\end{pmatrix},
+R_d(a,b)=\begin{pmatrix}C&amp;I&amp;&amp;\\&amp;\ddots&amp;\ddots&amp;\\&amp;&amp;\ddots&amp;I\\&amp;&amp;&amp;C\end{pmatrix},\qquad C=\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix},
 $$</p>
 <p>a block of size $2d$, built from the rotation $C$ and the identity in the superdiagonal position.</p>
 <p><strong>Theorem.</strong> Every real matrix is similar over $\mathbb{R}$ to a direct sum of blocks $J_d(\lambda)$ and $R_d(a,b)$, and the list of blocks is unique up to order.</p>
@@ -129,7 +129,7 @@ $$</p>
 <h2 id="the-companion-matrix">The Companion Matrix</h2>
 <p><strong>Every monic polynomial is the characteristic polynomial of a companion matrix, and over $\mathbb{R}$ the companion matrix is real.</strong> For $p(t)=t^{n}+c_{n-1}t^{n-1}+\cdots+c_0$ put</p>
 <p>$$
-C_p=\begin{pmatrix}0&0&\cdots&0&-c_0\\ 1&0&\cdots&0&-c_1\\ 0&1&\cdots&0&-c_2\\ \vdots&&\ddots&&\vdots\\ 0&0&\cdots&1&-c_{n-1}\end{pmatrix}.
+C_p=\begin{pmatrix}0&amp;0&amp;\cdots&amp;0&amp;-c_0\\ 1&amp;0&amp;\cdots&amp;0&amp;-c_1\\ 0&amp;1&amp;\cdots&amp;0&amp;-c_2\\ \vdots&amp;&amp;\ddots&amp;&amp;\vdots\\ 0&amp;0&amp;\cdots&amp;1&amp;-c_{n-1}\end{pmatrix}.
 $$</p>
 <p>Then $\chi_{C_p}=p=m_{C_p}$, so the companion matrix is nonderogatory and realises every real polynomial as a minimal polynomial.</p>
 <p><strong>The companion matrix is the multiplication operator on the quotient ring.</strong> On $\mathbb{R}[t]/(p)$ of dimension $n$, multiplication by $t$ has matrix $C_p$ in the basis $1,t,\dots,t^{n-1}$. This is the cleanest proof that $\chi_{C_p}=p$ and that the algebra generated is the whole quotient.</p>

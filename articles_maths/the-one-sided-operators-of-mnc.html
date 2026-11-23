@@ -84,13 +84,13 @@ $$
 $$
 the block matrix of $n^{2}$ blocks of size $n$, with $A$ on the diagonal and zeros elsewhere.</p>
 <p><em>Proof.</em> The column $\operatorname{vec}(AX)$ is the stack of the columns of $AX$. The $j$-th column of $AX$ is $A$ times the $j$-th column of $X$, so the operator acts as $A$ on each block of $n$ consecutive coordinates and does not mix the blocks. This is the block-diagonal matrix with $n$ copies of $A$.</p>
-<p><strong>The display.</strong> For $n=2$ and $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,
+<p><strong>The display.</strong> For $n=2$ and $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$,
 $$
 [L_{A}]=\begin{pmatrix}
-a&b&0&0\\
-c&d&0&0\\
-0&0&a&b\\
-0&0&c&d
+a&amp;b&amp;0&amp;0\\
+c&amp;d&amp;0&amp;0\\
+0&amp;0&amp;a&amp;b\\
+0&amp;0&amp;c&amp;d
 \end{pmatrix},
 $$
 which is the form used in the biquaternion articles, where $A=\mathsf M_{2}(\tilde Q)$ and the four entries are the coordinates of the element.</p>
@@ -126,10 +126,10 @@ $$</p>
 <p><strong>The display.</strong> For $n=2$,
 $$
 [R_{B}]=\begin{pmatrix}
-b_{11}&0&b_{21}&0\\
-0&b_{11}&0&b_{21}\\
-b_{12}&0&b_{22}&0\\
-0&b_{12}&0&b_{22}
+b_{11}&amp;0&amp;b_{21}&amp;0\\
+0&amp;b_{11}&amp;0&amp;b_{21}\\
+b_{12}&amp;0&amp;b_{22}&amp;0\\
+0&amp;b_{12}&amp;0&amp;b_{22}
 \end{pmatrix},
 $$
 a block matrix whose four blocks are scalar multiples of $\mathrm I_{2}$. The transpose is not cosmetic: it is the difference between the left copy and the right copy, and it disappears only in the scalar case.</p>
@@ -173,7 +173,7 @@ $$
 F(AX)-AF(X)=\sum_{i}Y_{i}A X Z_{i}-\sum_{i}AY_{i}XZ_{i}=\sum_{i}(Y_{i}A-AY_{i})XZ_{i},
 $$
 and $F$ commutes with $L_{A}$ exactly when $\sum_{i}(Y_{i}A-AY_{i})\otimes Z_{i}=0$. With the $Z_{i}$ independent this forces $Y_{i}\in C(A)$, and the space of such $F$ is $C(A)\otimes M_{n}$; the two factors give the same dimension.</p>
-<p><strong>The two extremes.</strong> For a cyclic element, $C(A)=\mathbb{C}[A]$ of dimension $n$, and the commutant of $L_{A}$ has dimension $n^{3}$. For a scalar element, $C(A)=M_{n}(\mathbb{C})$ of dimension $n^{2}$, and the commutant is the whole ambient space of dimension $n^{4}$. <strong>The commutant of a single left multiplication is strictly larger than the right copy for every $n\ge2$ and every $A$, since $n^{2}\dim C(A)\ge n^{3}>n^{2}$, and its size is the size of the centraliser.</strong></p>
+<p><strong>The two extremes.</strong> For a cyclic element, $C(A)=\mathbb{C}[A]$ of dimension $n$, and the commutant of $L_{A}$ has dimension $n^{3}$. For a scalar element, $C(A)=M_{n}(\mathbb{C})$ of dimension $n^{2}$, and the commutant is the whole ambient space of dimension $n^{4}$. <strong>The commutant of a single left multiplication is strictly larger than the right copy for every $n\ge2$ and every $A$, since $n^{2}\dim C(A)\ge n^{3}&gt;n^{2}$, and its size is the size of the centraliser.</strong></p>
 <p><strong>The table.</strong></p>
 <div class="table-scroll"><table>
 <thead>

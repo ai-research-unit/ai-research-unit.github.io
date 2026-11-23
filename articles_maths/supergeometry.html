@@ -80,7 +80,7 @@
 <p>$$
 \Lambda_q = \Lambda(\zeta_1, \ldots, \zeta_q) = K[\zeta_1,\ldots,\zeta_q]/(\zeta_i\zeta_j + \zeta_j\zeta_i,\ \zeta_i^{\,2}) ,
 $$</p>
-<p>of dimension $2^q$ over $K$, with basis the monomials $\zeta_{i_1}\cdots\zeta_{i_k}$ for $i_1 < \cdots < i_k$; it is supercommutative, and $\zeta_i^{\,2} = 0$. The algebra is that of <em>Superalgebras and Graded Structures</em> and <em>Grassmann Variables and Berezin Integration</em>, and its $\mathbb{Z}$-grading by the number of odd generators is the reduction to the $\mathbb{Z}/2$-grading by parity.</p>
+<p>of dimension $2^q$ over $K$, with basis the monomials $\zeta_{i_1}\cdots\zeta_{i_k}$ for $i_1 &lt; \cdots &lt; i_k$; it is supercommutative, and $\zeta_i^{\,2} = 0$. The algebra is that of <em>Superalgebras and Graded Structures</em> and <em>Grassmann Variables and Berezin Integration</em>, and its $\mathbb{Z}$-grading by the number of odd generators is the reduction to the $\mathbb{Z}/2$-grading by parity.</p>
 <p><strong>Definition.</strong> A supercommutative superalgebra $A$ is <strong>bicommutative</strong> (or <strong>super-Noetherian, with body</strong>) if it is the tensor product of a commutative algebra with a Grassmann algebra; the <strong>body map</strong> is the algebra homomorphism</p>
 <p>$$
 \beta : C^\infty(U)\otimes\Lambda_q \longrightarrow C^\infty(U), \qquad \beta(f)(x) = f(x)\ \text{for}\ f\ \text{even in the }\zeta\text{, and}\ \beta(\zeta_i) = 0 ,
@@ -95,7 +95,7 @@ $$</p>
 $$</p>
 <p>whose algebra of functions is $C^\infty(V) \otimes \Lambda_q$ for $V$ open in $\mathbb{R}^p$ and with an odd coordinate $\zeta_j$ for each $j \leq q$; the changes of coordinates have the form</p>
 <p>$$
-x_i' = g_i(x), \qquad \zeta_j' = \sum_{k} a_{jk}(x)\,\zeta_k + \sum_{k_1 < k_2} a_{jk_1k_2}(x)\zeta_{k_1}\zeta_{k_2} + \cdots ,
+x_i' = g_i(x), \qquad \zeta_j' = \sum_{k} a_{jk}(x)\,\zeta_k + \sum_{k_1 &lt; k_2} a_{jk_1k_2}(x)\zeta_{k_1}\zeta_{k_2} + \cdots ,
 $$</p>
 <p>with the $g_i$ smooth, the coefficients smooth, and the $\zeta_j'$ with no constant term; the number $p$ is the <strong>even dimension</strong> and $q$ the <strong>odd dimension</strong>. The <strong>structure sheaf</strong> $\mathcal{O}_M$ assigns to an open set $U$ the supercommutative algebra of functions locally of the form $f(x, \zeta) = \sum_I f_I(x)\zeta_I$, and the <strong>body</strong> of $M$ is the smooth manifold $M_{\mathrm{red}} = \beta(M)$ of dimension $p$ obtained by killing the odd coordinates; the thickening is along the odd directions, and $\mathcal{O}_M$ is a sheaf of bicommutative superalgebras with body $C^\infty_{M_{\mathrm{red}}}$.</p>
 <p><strong>Remark (the sheaf-theoretic definition).</strong> A supermanifold may equivalently be defined as a pair $(M_{\mathrm{red}}, \mathcal{O})$ of a smooth manifold and a sheaf of supercommutative algebras on it, locally isomorphic to $C^\infty(-)\otimes\Lambda_q$; a <strong>morphism</strong> of supermanifolds is a morphism of the underlying ringed spaces that respects the algebras, and every smooth map of the bodies lifts to a morphism exactly when it is compatible with the odd data. The two definitions are equivalent, and the concrete one is used here because it needs no sheaf theory. The equivalence is standard.</p>
@@ -149,7 +149,7 @@ $$</p>
 $$</p>
 <p>the top exterior power of the even part of the cotangent sheaf twisted by the dual of the top exterior power of the odd part, with a parity shift by $q$; its transition functions are the <strong>Berezinian</strong> of the Jacobian of the change of supercoordinates, the multiplicative super determinant of <em>Superalgebras and Graded Structures</em>,</p>
 <p>$$
-\operatorname{Ber}(X) = \det(A - B D^{-1} C)\,\det(D)^{-1} \quad \text{for } X = \begin{pmatrix} A & B \\ C & D \end{pmatrix},
+\operatorname{Ber}(X) = \det(A - B D^{-1} C)\,\det(D)^{-1} \quad \text{for } X = \begin{pmatrix} A &amp; B \\ C &amp; D \end{pmatrix},
 $$</p>
 <p>with $A$ the even-even, $B$ the even-odd, $C$ the odd-even and $D$ the odd-odd block, the formula applied when the matrices are invertible. For a smooth manifold read in odd dimension zero the Berezinian is the determinant line bundle $\Lambda^{\text{top}}T^*M$, so it is the graded generalisation of the canonical bundle.</p>
 <p><strong>Theorem (integration and change of variables).</strong> A section of the Berezinian line bundle with compact support on a supermanifold of dimension $(p \mid q)$ has a well-defined integral</p>

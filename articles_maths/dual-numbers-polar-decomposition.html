@@ -100,7 +100,7 @@ $$</p>
 <tr>
 <td>Scale</td>
 <td>$1$</td>
-<td>$\varrho > 0$</td>
+<td>$\varrho &gt; 0$</td>
 <td>modulus $|q|$</td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ $$</p>
 <td>$\exp(\ln\lvert q\rvert)$</td>
 <td>hyperbolic</td>
 <td>$\lvert q\rvert$</td>
-<td>$\lvert q\rvert > 0$</td>
+<td>$\lvert q\rvert &gt; 0$</td>
 <td>—</td>
 </tr>
 <tr>
@@ -215,18 +215,18 @@ $$</p>
 <p><strong>Theorem.</strong> Let $R$ be an ordered commutative ring with $2$ invertible, and let $Q = q + \varepsilon q'$ be an invertible element, so that $q \in R^\times$. Then $Q$ has a unique representation</p>
 <p>$$
 \boxed{\;
-Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho > 0, \quad u \in \{\pm 1\}, \quad s \in R
+Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho &gt; 0, \quad u \in \{\pm 1\}, \quad s \in R
 \;},
 $$</p>
 <p>with $\varrho = |q|$, $u = \operatorname{sgn}(q)$ and $s = q^{-1}q'$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $q \neq 0$.</p>
 <h3 id="existence">Existence</h3>
-<p>Since $q$ is invertible, one has $q = \varrho\,u$ with $\varrho = |q| > 0$ and $u = \operatorname{sgn}(q)$, a nonzero element of an ordered ring being positive or negative, and then</p>
+<p>Since $q$ is invertible, one has $q = \varrho\,u$ with $\varrho = |q| &gt; 0$ and $u = \operatorname{sgn}(q)$, a nonzero element of an ordered ring being positive or negative, and then</p>
 <p>$$
 Q = q\Bigl(1 + q^{-1}\varepsilon q'\Bigr) = \varrho\,u\,\exp\bigl(q^{-1}\varepsilon q'\bigr),
 $$</p>
 <p>using $\exp(s\varepsilon) = 1 + s\varepsilon$. So the polar data exist for every invertible element.</p>
 <h3 id="uniqueness">Uniqueness</h3>
-<p>Suppose $\varrho\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $\varrho, r' > 0$ and $u, u' \in \{\pm 1\}$. Comparing real parts gives $ru = r'u'$, hence $\varrho = r'$ and $u = u'$ by positivity and the sign; comparing infinitesimal parts gives $rus = r'u's'$, hence $s = s'$. So the data are unique.</p>
+<p>Suppose $\varrho\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $\varrho, r' &gt; 0$ and $u, u' \in \{\pm 1\}$. Comparing real parts gives $ru = r'u'$, hence $\varrho = r'$ and $u = u'$ by positivity and the sign; comparing infinitesimal parts gives $rus = r'u's'$, hence $s = s'$. So the data are unique.</p>
 <h3 id="the-domain-and-the-boundary">The Domain and the Boundary</h3>
 <p>The domain of the polar decomposition is the set of invertibles, $\mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(\varrho, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
@@ -271,7 +271,7 @@ $$</p>
 <tr>
 <td>Scale</td>
 <td>$\varrho = |q|$</td>
-<td>$\mathbb{R}_{>0}$</td>
+<td>$\mathbb{R}_{&gt;0}$</td>
 <td>the unique real modulus</td>
 </tr>
 <tr>
@@ -296,7 +296,7 @@ $$</p>
 </table></div>
 <p>The scale and the sign give the real factor $q = ru$; the shear gives the nilpotent factor $\exp(s\varepsilon)$. The two are independent, and their product is the whole unit.</p>
 <h3 id="the-scale">The Scale</h3>
-<p>The scale $\varrho = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.</p>
+<p>The scale $\varrho = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'{}^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'{}^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.</p>
 <h3 id="the-central-factor">The Central Factor</h3>
 <p>The factor $\exp(s\varepsilon)$ is central because the algebra is commutative, and it is nilpotent-off-the-identity because $\varepsilon$ is nilpotent. It plays the role that the complex phase $\exp(i\theta)$ plays in the complex polar form; the difference is that here the phase generator is nilpotent, so the "phase" is a shear and not a rotation.</p>
 <h2 id="degenerate-cases">Degenerate Cases</h2>
@@ -309,7 +309,7 @@ $$</p>
 <h3 id="the-negative-real-axis">The Negative Real Axis</h3>
 <p>For $Q = -1 + s\varepsilon$ the modulus is $\varrho = 1$ and the sign is $u = -1$; the element lies in the other component of the group of invertibles, and there is no continuous way to pass between the components, since the shear parameter does not distinguish them.</p>
 <h2 id="relation-to-the-two-partial-forms">Relation to the Two Partial Forms</h2>
-<p>The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\varrho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\varrho = \sqrt{|a^2 - a'^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:</p>
+<p>The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\varrho = \sqrt{a^2 + a'{}^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\varrho = \sqrt{|a^2 - a'{}^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:</p>
 <p>$$
 \boxed{\;
 \varrho \longrightarrow |q|, \qquad \theta \text{ or } \theta_{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta_{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
@@ -331,15 +331,15 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}$</td>
-<td>$a^2 + a'^2$</td>
-<td>$\sqrt{a^2+a'^2}$</td>
+<td>$a^2 + a'{}^2$</td>
+<td>$\sqrt{a^2+a'{}^2}$</td>
 <td>$\exp(i\theta)$</td>
 <td>elliptic</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$</td>
-<td>$a^2 - a'^2$</td>
-<td>$\sqrt{|a^2-a'^2|}$</td>
+<td>$a^2 - a'{}^2$</td>
+<td>$\sqrt{|a^2-a'{}^2|}$</td>
 <td>$\exp(\theta_{\mathrm{rpd}} j)$</td>
 <td>hyperbolic</td>
 </tr>
@@ -356,7 +356,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The polar decomposition of the dual-number algebra is</p>
 <p>$$
-Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho = |q| > 0, \quad u = \operatorname{sgn}(q) \in \{\pm 1\}, \quad s = \frac{q'}{q},
+Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho = |q| &gt; 0, \quad u = \operatorname{sgn}(q) \in \{\pm 1\}, \quad s = \frac{q'}{q},
 $$</p>
 <p>for every dual number $Q = q + \varepsilon q'$ with $q \neq 0$. It has a single positive scale $\varrho = |q|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single <strong>nilpotent central factor</strong> $\exp(s\varepsilon) = 1 + s\varepsilon$ whose parameter is the <strong>parabolic angle</strong> $s = q'/q$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of invertibles and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last case of the exponential rule — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

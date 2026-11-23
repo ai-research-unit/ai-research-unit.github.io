@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Proton Spin and the Wigner Rotation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/The Proton Spin and the Wigner Rotation 9306241v2.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-proton-spin-and-the-wigner-rotation"><strong>The Proton Spin and the Wigner Rotation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/9306241v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Bo-Qiang Ma, Qi-Ren Zhang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 10 June 1993</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>to be published in Z. Phys. C</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/The Proton Spin and the Wigner Rotation 9306241v2-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/The Proton Spin and the Wigner Rotation 9306241v2.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/helicity-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/The Proton Spin and the Wigner Rotation 9306241v2.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Resolves the 1988 "proton spin crisis" without adding gluon spin or orbital angular momentum. The EMC measurement was interpreted in the infinite-momentum frame, where a quark spin sum far below one half was read as a deficit. Ma and Zhang point out that a composite system's spin sum is not a Lorentz scalar — each constituent spin is Wigner-rotated when the proton is boosted — so the rest-frame sum and the infinite-momentum-frame sum are different numbers for the same state. In the rest frame the quarks can carry all of the proton spin, and the EMC number then costs nothing. A short paper with a single clean point.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-observation">The observation</h3>
+<p>"The key points for understanding the proton spin puzzle lie in the facts that the vector sum of the constituent spin for a composite system is not Lorentz invariant by taking into account the relativistic effect from the Wigner rotation, and that it is in the infinite momentum frame the small EMC result was interpreted as an indication that quarks and antiquarks carry a small amount of the total spin of the proton."</p>
+<p>Hence: "From the first fact we know that the vector spin structure of hadrons could be quite different in different frames from the relativistic viewpoint."</p>
+<h3 id="the-resolution">The resolution</h3>
+<p>"We thus can understand the proton spin crisis, because there is no need to require that the sum of the spin of quarks and antiquarks be equal to the proton spin in the infinite momentum frame, even if the vector sum of the spin of quarks and antiquarks equals to the proton spin in the rest frame."</p>
+<p>The mechanism, stated carefully: "When the proton is boosted, via a rotationless Lorentz transformation along its spin direction, from the rest frame to a frame where the proton is moving, each quark spin will undergo a Wigner rotation, and these spin rotations may produce, arising from the relativistic effect due to internal quark motions, a significant change in the vector sum of the spin of quarks and antiquarks."</p>
+<p>And the fixed point: "The proton spin, however, remains the same as that in the rest frame according to the spin definition. In consequence the vector sum of the spin of quarks and antiquarks may differ non-trivially from the proton spin in the new frame."</p>
+<h3 id="the-model">The model</h3>
+<p>"We will show, however, that the above understandings are not in contradiction with a simple quark model picture in which the spin of the proton, when viewed in its rest reference frame, is fully provided by the vector sum of the spin of quarks and antiquarks."</p>
+<p>The prior art is acknowledged: "this idea has already been presented in a light-cone language in which the effect of the Wigner rotation manifests itself as the effect of the Melosh rotation." The authors' contribution is to redo it in conventional language and to keep the hyperon decay data and the Ellis-Jaffe breaking in view, since the earlier work "consider neither the weak hyperon decay data used in previous analyses nor the mechanism that breaks the EJSR".</p>
+<p>The conclusion repeats the claim without weakening it: "We showed that the proton spin puzzle caused by the EMC polarized muon proton data could be understood within a simple quark model picture in which the proton spin, when viewed in its rest reference frame, is fully provided by quarks and antiquarks, taking into account the relativistic effect due to internal quark transversal motions."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-spin-sum-is-not-a-four-vector">1. A spin sum is not a four-vector</h3>
+<p><strong>The idea.</strong> A <strong>statement about an object</strong>: the total spin of a composite system is not a Lorentz vector, because it is built by adding constituent spins that each rotate differently under a boost. The sum is therefore a frame-dependent number, and quoting it without a frame is incomplete.</p>
+<p><strong>What it would add.</strong> The corpus's helicity article shows that helicity is frame-dependent and that a boost can flip it, and it derives this from the rotor acting on the eigenspinor. The proton case adds a second, independent frame dependence: not the projection of one spin on a direction but the arithmetic of several spins. A corpus article on multi-particle spin would have to say which of the two effects it is using, and the distinction is cheap to state and easy to get wrong.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/helicity-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> In the corpus's algebra the eigenspinor rotates as a rotor, so a spin sum inside one rotor is frame-covariant by construction and the effect appears only when the constituents are described in different frames. Transcribing the claim needs the multi-particle rotor, which the article does not build.</p>
+<h3 id="2-the-frame-must-be-printed-with-the-number">2. The frame must be printed with the number</h3>
+<p><strong>The idea.</strong> A <strong>reporting rule</strong>: a measured spin fraction is meaningless without the frame in which it was defined, and the two frames in common use — rest frame and infinite-momentum frame — give answers that differ by a finite rotation, not by a correction.</p>
+<p><strong>What it would add.</strong> The corpus quotes spin and helicity expectation values from its states and never states a frame, on the implicit assumption that the algebra's own frame is the physical one. The proton episode is a historical case where an entire research programme was built on the missing label. Stating the rule gives the corpus's helicity and entanglement articles a discipline they currently lack, at no cost.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The rule is a caution, not a result; it produces no new number. It also risks being trivially satisfied in a framework where everything is written in one frame and the transformation is explicit.</p>
+<h3 id="3-melosh-rotation-as-the-light-cone-wigner-rotation">3. Melosh rotation as the light-cone Wigner rotation</h3>
+<p><strong>The idea.</strong> A <strong>dictionary</strong>: on the light cone the Wigner rotation of a constituent spin appears as a Melosh rotation of the spinor basis, so the two names denote one object seen in two coordinatisations.</p>
+<p><strong>What it would add.</strong> The corpus's Cartan decomposition writes every Lorentz transformation as boost times rotation and is the natural place to identify which factor the Melosh rotation is. A named correspondence would let the corpus's light-cone and instant-form calculations be compared term by term, which is exactly the kind of translation the corpus's frame articles attempt for boosts.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is asserted here and not derived, and the Melosh rotation is a property of a particular spinor parametrisation, so the dictionary is convention-bound unless the convention is fixed first.</p>
+<p>The rank: the frame rule first, because it is free; the non-vector spin sum second, because it names an object; the Melosh dictionary last, because it is asserted.</p>
+<p>The remaining items in one line each: the treatment of the Ellis-Jaffe breaking as a separate question, which the authors deliberately decline to settle; the note that the earlier light-cone analysis was rejected as model-dependent, which is a remark about how a correct result can fail to persuade; and the observation that the effect grows with internal transverse motion, so a non-relativistic quark model would not see it at all.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

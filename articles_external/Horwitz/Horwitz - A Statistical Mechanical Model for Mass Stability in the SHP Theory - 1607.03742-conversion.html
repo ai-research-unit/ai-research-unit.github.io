@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Statistical Mechanical Model for Mass Stability in the SHP Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - A Statistical Mechanical Model for Mass Stability in the SHP Theory - 1607.03742.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-statistical-mechanical-model-for-mass-stability-in-the-shp-theory"><strong>A Statistical Mechanical Model for Mass Stability in the SHP Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1607.03742v2 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 July 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - A Statistical Mechanical Model for Mass Stability in the SHP Theory - 1607.03742-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - A Statistical Mechanical Model for Mass Stability in the SHP Theory - 1607.03742.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - A Statistical Mechanical Model for Mass Stability in the SHP Theory - 1607.03742.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the embarrassment of the Stueckelberg–Horwitz–Piron theory — that after a collision a particle's mass is not fixed, only bounded by kinematics and the conserved Hamiltonian — and turns it into a feature. The particle is treated as an ensemble of events at equilibrium, so the mass becomes a thermodynamic variable held at a value by a chemical potential. Perturbations then relax back. When the free energy has more than one maximum the system can settle into more than one mass, by a mechanism the author compares to the Maxwell construction.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"We construct a model for a particle in the framework of the theory of Stueckelberg, Horwitz and Piron (SHP) as an ensemble of events subject to the laws of covariant classical equilibrium statistical mechanics. The canonical and grand canonical ensembles are constructed without an a priori constraint on the total mass of the system."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"We show that the total mass of the system, corresponding the mass of this particle is determined by a chemical potential."</p>
+<p>"This model has the property that under perturbation, such as collisions in the SHP theory for which the final asymptotic mass of an elementary event is not constrained by the basic theory, the particle returns to its equilibrium mass value."</p>
+<h3 id="the-multiplicity">The multiplicity</h3>
+<p>"A mechanism similar to the Maxwell construction for more than one equilibrium mass state may result in several possible masses in the final state."</p>
+<p>The device is the canonical ensemble with variable total mass, $A=-\kappa T\ln Z$, in equilibrium with a grand canonical ensemble that fixes particle number. The condition the two must meet is that the free energy have a critical point in the mean Hamiltonian, $\partial A/\partial\langle K\rangle=0$, which with negative $\kappa$ gives $T/T_\kappa=-\mu_\kappa$.</p>
+<h3 id="the-question-it-answers">The question it answers</h3>
+<p>The mass of the particle "after a collision, may asymptotically take on a wide range of values, limited by kinematics and the conserved quantity" $K$. Yet "One sees that in experiment, the mass of a particle, such as the electron, is generally to be found very close to a definite value even after many collisions have taken place", and the question is how this stability is to be understood in the theory."The answer, in one sentence:" the 'particle' to be a statistical ensemble which has both an equilibrium energy and an equilibrium mass, controlled by the temperature and chemical potentials ". </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-a-thermodynamic-variable-not-a-label">1. Mass is a thermodynamic variable, not a label</h3>
+<p><strong>The idea.</strong> A <strong>model</strong>: in a theory whose mass shell is not fixed, the mass can be treated like volume or magnetisation — a variable whose equilibrium value is set by a potential, and which the system returns to after a perturbation. </p>
+<p><strong>What it would add.</strong> The corpus treats mass as a parameter of each layer, fixed by the equation and never fluctuating. Here it fluctuates, and the reason it looks fixed is thermodynamic rather than kinematic. That is a third answer to the question of why masses are what they are, alongside symmetry breaking and the corpus's algebraic identifications, and it is the only one that explains stability rather than value. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>. </p>
+<p><strong>What stands in the way.</strong> The corpus's mass shell is a constraint, not a variable; admitting fluctuations means changing the phase space, which every article's measure would inherit. </p>
+<h3 id="2-several-masses-from-one-model-by-phase-coexistence">2. Several masses from one model, by phase coexistence</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: when the free energy has several maxima in the mean Hamiltonian, the system has several stable masses, and transitions between them are phase transitions. The analogy is Maxwell's construction, where a plateau in the free energy means two phases coexist. </p>
+<p><strong>What it would add.</strong> The corpus has articles on why there are three generations and on mass ratios, all of them algebraic or symmetry-based. This offers a statistical origin for a discrete set of masses: they are the coexisting phases of one ensemble. It also predicts what to look for — a coexistence region, not a formula — which is a different kind of claim from anything the corpus carries. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>. </p>
+<p><strong>What stands in the way.</strong> The mechanism is stated, not computed: no free energy is evaluated for a real particle, and the paper says the dynamical study "is left for future research".</p>
+<h3 id="3-a-particle-is-an-ensemble-of-events">3. A particle is an ensemble of events</h3>
+<p><strong>The idea.</strong> A <strong>reinterpretation</strong>: the basic object of the theory is the event, and a particle is a statistical collection of events whose world line is an average. Individual events need not lie on any mass shell.</p>
+<p><strong>What it would add.</strong> The corpus's fluid articles already treat the wave function as a fluid of density and current, which is a statistical reading. This goes further: it says the entity called a particle is not fundamental in the theory at all, only the event is. That is a clean statement of what off-shell means, and it would let the corpus's off-shell articles say what the extra solutions are — other events in the ensemble — rather than treating them as an embarrassment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The ensemble reading needs a dynamics for the events, and the paper supplies only equilibrium statistics; the corpus's fluid articles are dynamical.</p>
+<p>The rank: mass-as-variable first, because it answers a corpus question; coexistence second, because it is a mechanism with a prediction; the event ensemble last, because it is an interpretation.</p>
+<p>The remaining items in one line each: the negative-temperature condition $T/T_\kappa=-\mu_\kappa$, which is what allows the equilibrium to sit at a nonzero mean mass; the maximisation of the integrand in the microcanonical ensemble with both energy and mass as parameters, which is the technical core; and the explicit comparison with measured masses, which the paper promises and does not perform.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

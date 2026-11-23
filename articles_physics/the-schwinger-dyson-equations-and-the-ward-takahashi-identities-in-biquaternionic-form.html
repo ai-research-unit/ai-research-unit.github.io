@@ -119,12 +119,12 @@ $$
 The classical equation is the statement that the integrand of the functional integral is stationary; the quantum statement is that the expectation value of the variation vanishes. The difference is not a correction but a change of object: the classical equation is an equation between fields, the quantum one an equation between expectation values, and it holds inside the integral, where the field is integrated over.</p>
 <p><strong>Contact terms.</strong> Set $F=\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)$ in the working identity. The first term is the variation of the product,
 $$
-\frac{\delta F}{\delta\tilde{Ξ}(x)}=\sum_{k=1}^{n}\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\;\delta(y_\imath-x)\;\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n),
+\frac{\delta F}{\delta\tilde{Ξ}(x)}=\sum_{k=1}^{n}\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\;\delta(y_{\imath}-x)\;\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n),
 $$
 a sum of products with one field removed and a delta at the point of variation. The working identity becomes
 $$
 \Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\,\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\Big\rangle_{\!J}
-=i\,\frac{h}{2\pi}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\imath\in\{x,y,z\}}\delta(y_\imath-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
+=i\,\frac{h}{2\pi}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\imath\in\{x,y,z\}}\delta(y_{\imath}-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
 $$
 which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde{Ξ}$ is a source term plus <strong>contact terms</strong>, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the gauge field, and the same structure appears for the scalar and the fermion below.</p>
 <h3 id="the-master-equation-and-the-hierarchy">The Master Equation and the Hierarchy</h3>
@@ -139,7 +139,7 @@ $$
 the <strong>master Schwinger–Dyson equation</strong>. Setting $F=1$ recovers the quantum equation of motion; expanding both sides in powers of $\tilde J_{\Phi}$ and using $Z=\exp(\frac{W}{i\,\frac{h}{2\pi}})$ generates the whole hierarchy of the connected correlation functions. The bracket in the box means that the classical variation $\delta S/\delta\tilde{Ξ}$ is evaluated with the field replaced by the operator $\delta/\delta\tilde J_{\Phi}$.</p>
 <p><strong>Finite-dimensional check.</strong> On the Hermitian positive-definite matrix
 $$
-K=\begin{pmatrix}2&0.3&0\\0.3&1.4&0.2\\0&0.2&1.1\end{pmatrix},
+K=\begin{pmatrix}2&amp;0.3&amp;0\\0.3&amp;1.4&amp;0.2\\0&amp;0.2&amp;1.1\end{pmatrix},
 \qquad J=(0.5,-0.4,0.9),
 $$
 For this matrix and source, $A_{\mathrm{gau}}^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(A_{\mathrm{gau}}^{-1}J)=J$ to machine precision; the two-point contact term $W_{\mathrm{kinetic}}\langle\tilde{Ξ}\tilde{Ξ}^{\mathsf T}\rangle_{\!J}=I+\tilde J_{\Phi}\langle\tilde{Ξ}\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $W_{\mathrm{kinetic}}{}^{-1}$ and not its negative.</p>
@@ -283,7 +283,7 @@ whose sign is fixed by the series convention $Z=\int\mathcal{D}\tilde{Ξ}\,\exp(
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

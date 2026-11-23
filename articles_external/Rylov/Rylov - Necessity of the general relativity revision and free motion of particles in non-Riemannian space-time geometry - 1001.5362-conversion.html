@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Necessity of the General Relativity Revision and Free Motion of Particles in Non-Riemannian Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Necessity of the general relativity revision and free motion of particles in non-Riemannian…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="necessity-of-the-general-relativity-revision-and-free-motion-of-particles-in-non-riemannian-space-time-geometry"><strong>Necessity of the General Relativity Revision and Free Motion of Particles in Non-Riemannian Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1001.5362 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 February 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Necessity of the general relativity revision and free motion of particles in non-Riemannian space-time geometry - 1001.5362-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Necessity of the general relativity revision and free motion of particles in non-Riemannian space-time geometry - 1001.5362.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Necessity of the general relativity revision and free motion of particles in non-Riemannian space-time geometry - 1001.5362.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the general theory of relativity must be revised, not replaced, and gives the reason as a defect of the Riemannian geometry it is written in: the Riemannian distance is many-valued, so the geometry is not a physical geometry at all. With the world function as the primary object, free motion of a microparticle in a gravitational field comes out multivariant, that is stochastic; a macroparticle's motion is the average and comes out deterministic, matching Newton where Newton was tested. The revision changes nothing about the geometrisation of physics, which is the point.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-defect-of-the-riemannian-distance">The defect of the Riemannian distance</h3>
+<p>The complaint is about a specific quantity and is stated as an absurdity:</p>
+<p>"ints x and x′ . The distance ρ as a function of two points contains much more information, than ten functions gik , which are functions of one point. To obtain the finite distance ρ from the infinitesimal distance dρ, a set of additional conditions (and additional information) is to be fulfilled. In particular, the obtained finite distance ρ is to be a single-valued function of any two points of the space-time. Construction of the space-time geometry by methods of the Riemannian geometry construction leads, in general, to a many-valued finite distance ρ. This fact is a nonsense. Besides"</p>
+<p>The mechanism is the geodesic: "ver, in the Riemannian geometry the distance ρ (P, Q) is defined as the length of the geodesic, connecting points P and Q. In the Riemannian geometry there are such points P and Q , which my be connected by several geodesics of different length. It leads to multiformity of the distance ρ (P, Q). Third"</p>
+<p>Two further defects are listed: parallel transport depends on the path, so "there is no absolute parallelism in the Riemannian geometry"; and the metric tensor underdetermines the geometry, since "Different nonaxiomatizable space-time geometries may have the same metric tensor. As a result metric tensor does not determine the space-time geometry uniquely."</p>
+<h3 id="revision-not-replacement">Revision, not replacement</h3>
+<p>"Let us stress, that it was just the problem of revision, but not a problem of a new gravitational theory construction, because the main idea of the general relativity (geometrization of physics) remains changeless."</p>
+<p>And the estimate of what Riemannian geometry is: "Riemannian geometries form a small subset of all possible physical space-time geometries, which are nonaxiomatizable, in general."</p>
+<h3 id="the-result-stochastic-free-fall">The result: stochastic free fall</h3>
+<p>The conclusion states the finding: the multivariance holds "for other gravitational fields also, because the gravitational field has been considered in the general form of gravitational potential." Then: "Free motion of a macroparticle appears to be single-variant (deterministic), because stochastic behavior of different microparticles inside the macroparticle is independent. Averaging over many microparticles, one obtains a deterministic free motion. In the nonrelativistic case this average motion of a macroparticle coincides with predictions of the Newtonian theory of gravitation, which have been tested experimentally."</p>
+<p>The status of the deviation: "In the relativistic case there are differences between predictions of the gravitational theory, based on physical space-time geometry, and predictions of the contemporary gravitational theory (general relativity), based on the Riemannian space-time geometry." No magnitude is given for the difference.</p>
+<h3 id="what-follows-for-the-contemporary-theory">What follows for the contemporary theory</h3>
+<p>"The contemporary theory of gravitation admits one to determine only metric tensor, which determines the world function only under supposition on the Riemannian space-time geometry." So the standard theory is not wrong within its domain; it is answering a smaller question than it claims to answer.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-distance-must-be-single-valued">1. A distance must be single-valued</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong> for a space-time geometry: the distance between two points must be one number. Riemannian geometry defined by geodesic length fails it wherever two points are joined by geodesics of different length, and the failure is not exotic — it happens in ordinary curved regions.</p>
+<p><strong>What it would add.</strong> The corpus's curved-spacetime article carries curvature in a frame field on a manifold and inherits the geodesic distance along with the manifold. If the geodesic distance is many-valued, so is the corpus's, and the corpus has not asked. This criterion is cheap to apply and it is a structural question about the corpus's own construction rather than a competing theory, which makes it a genuine check.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The criterion presumes that the distance is the fundamental object of the geometry, which is a choice. In a framework where the metric is primary, a many-valued geodesic length is a fact about closed geodesics, not an inconsistency — and the paper does not distinguish the two readings.</p>
+<h3 id="2-stochastic-free-fall-deterministic-averages">2. Stochastic free fall, deterministic averages</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> that makes gravity a source of quantum-like indeterminacy with no quantisation anywhere: free fall of a microparticle is multivariant because the geometry is, and the deterministic classical trajectory is the average over independent microparticles.</p>
+<p><strong>What it would add.</strong> The corpus has gravity and it has quantum indeterminacy, and the two are separate sectors joined by nothing. This is a proposal that one produces the other, and it is checkable in a specific way: the averaging must reproduce the tested Newtonian and relativistic predictions to the accuracy they have been tested, which fixes how large the stochastic spread can be. That bound is a number the corpus could compute and has not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-kms-and-modular-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> No spread is computed, so the agreement with Newton is asserted rather than shown, and free-fall experiments — the equivalence principle, torsion-balance tests — are extremely precise, which leaves very little room. The paper does not confront that precision.</p>
+<h3 id="3-the-metric-underdetermines-the-geometry">3. The metric underdetermines the geometry</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong> with a general form: ten functions of one point cannot encode a function of two points, so the metric cannot be the whole story, and geometries with the same metric can differ in their multivariance.</p>
+<p><strong>What it would add.</strong> The corpus builds its metric from an algebra and treats the algebra as the deeper object, which is a version of the same insight: something other than $g_{ik}$ is doing the work. Stating it in terms of information content would let the corpus say precisely what its algebra supplies that a metric cannot — a claim it has not made in those terms, and one that its own article on frames would benefit from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The information-count argument is suggestive but loose: a function of two points restricted to infinitesimally neighbouring points is exactly the metric, and the extra content is the global extension, which in the corpus's setting is fixed by the field equations. So the underdetermination may be benign.</p>
+<p>The rank: single-valuedness first, because it is a criterion the corpus can apply to itself; stochastic free fall second, because it links two of the corpus's sectors; the metric count last, because its force is rhetorical.</p>
+<p>The remaining items in one line each: the three Riemannian defects as a list of what a physical geometry must not do; the claim that the revision preserves the geometrisation of physics while changing the geometry, which is the same replace, do not add criterion as in 0310050; and the specific observation that the world function is many-valued already in the field of a heavy sphere, which is the least abstract of the charges.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

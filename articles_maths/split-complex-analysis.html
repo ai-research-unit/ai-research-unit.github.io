@@ -82,7 +82,7 @@ $$</p>
 <p>where $j^2 = +1$. The real number $q$ is the <strong>real part</strong>, and $q'$ is the <strong>imaginary part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Im} Q$.</p>
 <p>The <strong>Euclidean modulus</strong> of $Q$ is</p>
 <p>$$
-\|Q\| = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'{}^2},
 $$</p>
 <p>and the <strong>Euclidean distance</strong> between two split complex numbers $Q$ and $B$ is</p>
 <p>$$
@@ -91,17 +91,17 @@ $$</p>
 <p>This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
 <p>The <strong>split modulus</strong> is</p>
 <p>$$
-\rho = \sqrt{|q^2 - q'^2|},
+\rho = \sqrt{|q^2 - q'{}^2|},
 $$</p>
-<p>which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not subadditive; the quadratic form $q^2-q'^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.</p>
+<p>which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not subadditive; the quadratic form $q^2-q'{}^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
+<p>The <strong>open ball</strong> of radius $r &gt; 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\| < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\| &lt; r\}.
 $$</p>
 <p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
+<p>A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r &gt; 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>closed</strong> if its complement $\mathbb{C}_{\mathrm{spl}} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
@@ -113,9 +113,9 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous split-complex-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies \|Q_n - L\| < \epsilon.
+n \geq N \implies \|Q_n - L\| &lt; \epsilon.
 $$</p>
 <p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
@@ -131,9 +131,9 @@ Q_n + B_n \to L + M, \qquad Q_n B_n \to L M.
 $$</p>
 <p>There is no quotient rule in general, because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies \|Q_m - Q_n\| < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{C}_{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -141,9 +141,9 @@ $$</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = L
 $$</p>
-<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q \in D, \; 0 < \|Q - Q_0\| < \delta \implies \|f(Q) - L\| < \epsilon.
+Q \in D, \; 0 &lt; \|Q - Q_0\| &lt; \delta \implies \|f(Q) - L\| &lt; \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
@@ -153,18 +153,18 @@ $$</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = f(Q_0).
 $$</p>
-<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>Equivalently, for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q \in D, \; \|Q - Q_0\| < \delta \implies \|f(Q) - f(Q_0)\| < \epsilon.
+Q \in D, \; \|Q - Q_0\| &lt; \delta \implies \|f(Q) - f(Q_0)\| &lt; \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + j v(q, q')$. Then $f$ is continuous at $Q_0 = q_0 + j q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces split complex continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is <strong>uniformly continuous</strong> if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q, B \in D, \; \|Q - B\| < \delta \implies \|f(Q) - f(B)\| < \epsilon.
+Q, B \in D, \; \|Q - B\| &lt; \delta \implies \|f(Q) - f(B)\| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
@@ -189,7 +189,7 @@ $$</p>
 <p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.</p>
 <p><strong>Corollary.</strong> If $f$ is split complex differentiable, then $u$ and $v$ satisfy the <strong>wave equation</strong>:</p>
 <p>$$
-\boxed{\;\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'^2} = 0\;}.
+\boxed{\;\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'{}^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'{}^2} = 0\;}.
 $$</p>
 <p><strong>Proof.</strong> Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.</p>
 <p>This is the fundamental difference from complex analysis: the real and imaginary parts of a holomorphic function are harmonic in the complex case, and solutions of the wave equation in the split complex case. The change of sign in the Cauchy–Riemann equations changes the Laplacian into the d'Alembertian.</p>
@@ -276,8 +276,8 @@ $$</p>
 R_\pm = \frac{1}{\limsup_{n \to \infty} |c_{n,\pm}|^{1/n}},
 $$</p>
 <p>with the conventions $R_\pm = 0$ if the limsup is $\infty$ and $R_\pm = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $|Q_+ - Q_{0+}| < R_+$ and $|Q_- - Q_{0-}| < R_-$, and diverges if $|Q_+ - Q_{0+}| > R_+$ or $|Q_- - Q_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is split complex differentiable on the region $|Q_+ - Q_{0+}| < R_+$ and $|Q_- - Q_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|Q_+ - Q_{0+}| &lt; R_+$ and $|Q_- - Q_{0-}| &lt; R_-$, and diverges if $|Q_+ - Q_{0+}| &gt; R_+$ or $|Q_- - Q_{0-}| &gt; R_-$. Where both inequalities hold it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is split complex differentiable on the region $|Q_+ - Q_{0+}| &lt; R_+$ and $|Q_- - Q_{0-}| &lt; R_-$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
 \frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
 $$</p>
@@ -287,14 +287,14 @@ $$</p>
 <p>$$
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$</p>
-<p>valid for $\|Q - Q_0\| < r$.</p>
+<p>valid for $\|Q - Q_0\| &lt; r$.</p>
 <p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.</p>
 <p><strong>Corollary.</strong> A split complex differentiable function whose components are real-analytic is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\| < R$.</p>
-<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\| < R$.</p>
+<p>Let $f$ be split complex differentiable on a punctured disk $0 &lt; \|Q - Q_0\| &lt; R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\| &lt; R$.</p>
 <p><strong>Pole.</strong> $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.</p>
 <p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if it is neither removable nor a pole.</p>
 <p><strong>Caution.</strong> The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|^2 = (f_+^2 + f_-^2)/2$.</p>
@@ -395,11 +395,11 @@ $$</p>
 <td>Split complex conjugate</td>
 </tr>
 <tr>
-<td>$\|Q\| = \sqrt{q^2 + q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2 + q'{}^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>
-<td>$\rho = \sqrt{|q^2 - q'^2|}$</td>
+<td>$\rho = \sqrt{|q^2 - q'{}^2|}$</td>
 <td>Split modulus</td>
 </tr>
 <tr>
@@ -431,7 +431,7 @@ $$</p>
 <td>Contour integral</td>
 </tr>
 <tr>
-<td>$\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'^2$</td>
+<td>$\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'{}^2$</td>
 <td>d'Alembertian</td>
 </tr>
 </tbody>

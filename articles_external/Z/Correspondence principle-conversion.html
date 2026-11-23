@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correspondence Principle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Correspondence principle.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="correspondence-principle"><strong>Correspondence Principle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Correspondence principle</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Correspondence principle-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Correspondence principle.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Correspondence principle.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the correspondence principle: Bohr's coinage in 1920, Planck's earlier statement in 1906 that quantum theory should reproduce classical mechanics as $h$ becomes infinitesimal, the modern reading as agreement at large quantum numbers, and the generalised form as a continuity requirement between an old and a new theory.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition-and-the-attribution">The definition and the attribution</h3>
+<p>"a correspondence principle is any one of several premises or assertions about the relationship between classical and quantum mechanics. The physicist Niels Bohr coined the term in 1920[1] during the early development of quantum theory; he used it to explain how quantized classical orbitals connect to quantum radiation.[2]"</p>
+<h3 id="the-modern-reading">The modern reading</h3>
+<p>"Modern sources often use the term for the idea that the behavior of systems described by quantum theory reproduces classical physics in the limit of large quantum numbers: for large orbits and for large energies, quantum calculations must agree with classical calculations."</p>
+<h3 id="the-generalised-form">The generalised form</h3>
+<p>"A 'generalized' correspondence principle refers to the requirement for a broad set of connections between any old and new theory." That version has the widest reach and the least content: it asks only that the successor contain its predecessor in some regime, without saying which.</p>
+<h3 id="planck-came-first">Planck came first</h3>
+<p>"Max Planck was the first to introduce the idea of quanta of energy, while studying black-body radiation in 1900. In 1906, he was also the first to write that quantum theory should replicate classical mechanics at some limit, particularly if the Planck constant h were taken to be infinitesimal.[4][5] With this idea, he showed that Planck's law for thermal radiation leads to the Rayleigh–Jeans law, the classical prediction (valid for large wavelength).[4][5]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-principle-is-a-constraint-on-a-new-theory-not-a-result-of-it">1. The principle is a constraint on a new theory, not a result of it</h3>
+<p><strong>The idea.</strong> It does not derive classical mechanics; it forbids theories that fail to reproduce it. Its force is negative, and it applies to candidate formalisms before they are believed.</p>
+<p><strong>What it would add.</strong> A named test. Each corpus article that builds a quantum object and reads off a classical sector satisfies the principle without stating it; naming it turns a scattered practice into a criterion that a new construction can fail.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code>, where the classical limit is extracted.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus would only have to say which regime plays the role of large quantum numbers.</p>
+<h3 id="2-large-quantum-numbers-and-small">2. Large quantum numbers and small</h3>
+<p>$h$ are different limits that agree here</p>
+<p><strong>The idea.</strong> Bohr's statement is about large $n$; Planck's is about $h\to0$. They coincide because $nh$ is the action, which is a fact about the oscillator rather than a theorem.</p>
+<p><strong>What it would add.</strong> A caution about which limit a corpus derivation takes; the classical sector as a centre of the algebra corresponds to neither statement directly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra has no $n$; the large-quantum-number statement would have to become a semiclassical one.</p>
+<p>This is an encyclopedia article; it gives the history and both readings without deriving either limit. The same article appears twice in this folder.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarks on Mass Spectrum of Decuplet Baryons. I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on Mass Spectrum of Decuplet Baryons.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarks-on-mass-spectrum-of-decuplet-baryons-i"><strong>Remarks on Mass Spectrum of Decuplet Baryons. I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>31</strong> (1964) 1178, No. 6; dated 28 May 1964</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Remarks on Mass Spectrum of Decuplet Baryons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on Mass Spectrum of Decuplet Baryons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on Mass Spectrum of Decuplet Baryons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Refines the "equal-spacing rule" for the spin-$\tfrac32$ decuplet by including the isospin splittings. The measured $\Sigma^{*-}$–$\Sigma^{*+}$ difference being about twice the $\Xi^{-}$–$\Xi^{0}$ difference shows that the first-order rule is too coarse; adding second-order $SU(3)$ breaking and lowest-order electromagnetic self-energy gives seven-constant formulas for the decuplet and the octet, and one further mass equality for the decuplet. That equality, obtained by reflecting the triangular root diagram about one axis, is presented as the more precise form of equal spacing.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-first-order-rule-is-not-enough">Why the first-order rule is not enough</h3>
+<p>The suggestion "1178 Letters to the Editor N!;z, Y~, E'i.Jz, Q- (1) belongs- to the decuplet representation of SUa has gained a remarkable success by the recent experimental discovery 1 l of Q- with mass 1686±12 Mev; in part\cular the mass spectrum of (1) seems to agree with Downloaded from academic." "n 12 November 2026 the" equal,spacing rule."2 J However, it is necessary to make clear the meaning of this rule more precise by taking account of isotopic mass splittings. The necessity is indicated by the recent measuremental of the mass difference between Yl"- and Yt+ which is about twice as large as the corresponding mass difference between 2- and 2+. In "The premises are stated explicitly:" et. &amp;sed on the assumption of symmetry- breaking interaction transforming like hypercharge, one derived the Gell-Mann mass relation (N+E)/2=(3A+2)/4 for baryon octet "equal-spacing rule" for (1) in the fisrt order perturbation." " he particle symbol for its mass.) we then note that for both spectra the degree of SUa-violation is roughly the same, and also that for the baryon octet the Gell-Mann relation is empirically associated with an error of d=6.35 Mev (see Eq. (3)), which is of the same order as the mass splittings within an isomultiplet. Thus the mass formulas in the ne:x:t approximation should Remarks on Mass Spectrum of be obtained by considering the SUa-break- Decuplet Baryons. I ing (charge-independent) interaction to the second order 4 l and at the same time the Takehiko Takabayasi electromagnetic self-energy "</p>
+<h3 id="the-two-formulas">The two formulas</h3>
+<p>"a symmetrica l form such as the formula analogy directly shows up in the mass (2), it does mean a symmetrica l mass rela- formula, *J which becomes tion."</p>
+<p>$$
+m=m_0^{*}-b'Y+d'(P-1)-e'Q+f'(Q^{2}-1),
+$$</p>
+<p>"where Y and Q denote the hypercharg e and the charge. For the case of a unitary but this relation is invariant under reflec- octet the correspond"</p>
+<p>$$
+m=m_0-bY+c(T^{2}-Y^{2}/4-1)-d(P-\tfrac12)+a\,Y T_3-\{\,\beta T_3-\gamma(T^{2}-3T_3^{2})\,\},
+$$</p>
+<p>"tes isospin. I I I I In the formula (2i the constants d', e', ..e. N·- N<em>' N</em>+ N*++ and f' should be small compared with b', and so should d, a, {1 and r be compared 'p ~y··~ with**J b and c in (3). Note" The means are defined so that the formulas separate a degenerate mass from the splittings: "he average of the term T 2 - ¥ 2/4-1 over the octet vanishes, and likewise the average s·-1 s•• ,Q- of T 2 -3T~ over each isomultiple t. Thus mo represents the mean baryon mass: Fig.", and "Similarly m~ represents the mean mass oscillator8 &gt; m1. m2" "nerate masses of baryon octet and states. Three of them are given by decuplet, respectively , in the limit where (5) all SU 3 -breaking (charge-ind ependent and electromag netic) perturbatio ns are switched (6) off. Although"</p>
+<h3 id="the-symmetric-form-of-equal-spacing">The symmetric form of equal spacing</h3>
+<p>"the formula analogy directly shows up in the mass (2), it does mean a symmetrica l mass rela- formula, *J which becomes tion. Indeed, since it contains seven con- stants it implies only one mass equality m=m~-b'Y+d'(P-1) valid to the present approximat ion, which is7&gt; -e'Q+f'(Q 2-1), (2) Downloaded from academic." "the set of relations invariant under reflections regarding any axis 1, 2, or 3 in Fig. 1. Other relations contained in (2) are Downloaded from academic."</p>
+<p>For the decuplet, "we know that they are displayed in a tri- +c(T 2 - P/4-1)-d( P-+) angular root diagram (see Fig.", and the states can be written "onal Similarly m~ represents the mean mass oscillator8 &gt; m1. m2, and ms restricted by for the decuplet: m 1+m 2+ms=3, which are related to the usual quanhhes by m1=1+Q= T+Ts, m~=(B<em>)=-1~ (4N</em>+3 Y1* +2E*+JJ- ). m2=T-Ts , and ms=1- Y. Since the formula (2) contains five constants it im- Also mo and m~ may be regarded as the plies five mass relations", of which three are given, including</p>
+<p>$$
+Y_1^{*-}-Y_1^{*+}=(\Xi^{*-}-\Xi^{*0})+(N^{*0}-N^{*+}),
+$$</p>
+<p>"ig. 1, are empirically b=l89.7 and c=39.0 Mev. namely by Q~- Y, while Eq. (7) is the 1180 Letters to the Editor analogue of (4). Indeed Eqs. (5), (6) and (7) form the set of relations invariant under reflections regarding any axis 1, 2, or 3 in Fig. 1." The remaining relations "ins invariant under the axis-3 reflection only. The relations (5), (8) and (9) have been presented, 6 l while (6) has not. This relation (6) is regarded the more precise form" equal-spacing rule "for the decuplet. 1) V. E."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-second-order-breaking-turns-a-rule-into-a-reflection-symmetry-of-the-weight-diagram">1. Second-order breaking turns a rule into a reflection symmetry of the weight diagram</h3>
+<p><strong>The idea.</strong> To first order, equal spacing is a statement about arithmetic means of masses. To second order, with the electromagnetic term in lowest order, the same physics becomes a statement about <em>reflections of the root diagram</em>: the seven-constant formula implies exactly one relation, and that relation is the one invariant under reflections about all three axes. Equal spacing is the axis-3 specialisation; the symmetric form is the general statement.</p>
+<p><strong>What it would add.</strong> A geometric reading of a mass relation. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) writes GMO as a matrix element and derives it in §<em>The Gell-Mann–Okubo Mass Formula</em> from a breaking operator with one parameter; the present letter shows that the <em>number</em> of relations implied by a breaking scheme counts the constants and that the surviving relation can be characterised by a symmetry of the diagram. That is a check on the corpus's own derivation which it does not perform.</p>
+<p><strong>Where it lands.</strong> §<em>The Gell-Mann–Okubo Mass Formula</em>, as the relation-counting check, and §<em>Admissible Supermultiplets</em>.</p>
+<p><strong>What stands in the way.</strong> The reflection argument is stated for the triangular decuplet diagram and asserted for the octet; the letter gives the relations, not a proof that these exhaust the invariants.</p>
+<h3 id="2-su3-breaking-and-electromagnetism-have-the-same-shape-so-their-contributions-mimic-each-other">2. SU(3) breaking and electromagnetism have the same shape, so their contributions mimic each other</h3>
+<p><strong>The idea.</strong> Suppose the $SU(3)$-breaking interaction transforms like hypercharge and the electromagnetic self-energy is taken to lowest order, with no interference. Then both contribute in the same way, and the mass formula cannot distinguish them: the coefficient of $Y$ and the coefficient of $Q$ enter identically in form. This is why one formula in $Y$ and $Q$ suffices for the decuplet.</p>
+<p><strong>What it would add.</strong> The reason a single expansion covers both breakings. <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>) separates two masses by the conjugates they pair with, which is an algebraic separation; here the separation is empirical and shows the two contributions are <em>not</em> separable in the spectrum, only in their quantum numbers.</p>
+<p><strong>Where it lands.</strong> §<em>The Two Conjugates and the Two Masses</em>, as the contrast case: two masses distinguishable algebraically but not spectroscopically.</p>
+<p><strong>What stands in the way.</strong> "Neglecting the interference" is an assumption, and the measured violations are of the same size as the splittings being modelled, so the second-order formula is at the edge of its validity by the letter's own argument.</p>
+<h3 id="3-the-oscillator-coordinates-of-the-weight-diagram-are-the-labels">3. The oscillator coordinates of the weight diagram are the labels</h3>
+<p><strong>The idea.</strong> $m_1=1+Q=T+T_3$, $m_2=T-T_3$, $m_3=1-Y$, with $m_1+m_2+m_3=3$, are the three non-negative integers of a symmetric representation of $SU(3)$ — the weight diagram is a triangle of integer triples. The mass formula is then a function on those triples, which is why it has exactly five constants and five relations.</p>
+<p><strong>What it would add.</strong> A concrete coordinate system for the corpus's representation theory. <em>The Spin–Charge Hilbert Space and the $SU(3)$ Supermultiplets in Biquaternionic Form</em> (<code>articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.md</code>) builds multiplets from spin and charge labels; the triple $(m_1,m_2,m_3)$ is the most economical chart for the decuplet, and the constraint $m_1+m_2+m_3=3$ shows why the decuplet is ten states.</p>
+<p><strong>Where it lands.</strong> §<em>Charge Multiplets</em>, as the chart.</p>
+<p><strong>What stands in the way.</strong> The chart is for the decuplet and the octet only, and the letter does not extend it to higher representations, where the constraint would differ.</p>
+<p>The remainder, one line each. That the octet's Gell-Mann relation carries a residual of $6.35$ MeV, comparable to an isomultiplet splitting, is the quantitative reason for going to second order and is worth citing whenever GMO is quoted to three figures. That the relation (6) was obtained independently by Macfarlane and Sudarshan in the same year is recorded in a note added in proof.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

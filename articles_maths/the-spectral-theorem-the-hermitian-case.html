@@ -170,7 +170,7 @@ $$</p>
 <p>$$
 \langle Ax,x\rangle=\sum_i\lambda_i|c_i|^{2},
 $$</p>
-<p>so $A$ is positive semidefinite exactly when all $\lambda_i\ge0$, positive definite exactly when all $\lambda_i>0$, and indefinite exactly when the spectrum has both signs. The statement was verified on random Hermitian matrices at $n=3,4$ with spectra of both types.</p>
+<p>so $A$ is positive semidefinite exactly when all $\lambda_i\ge0$, positive definite exactly when all $\lambda_i&gt;0$, and indefinite exactly when the spectrum has both signs. The statement was verified on random Hermitian matrices at $n=3,4$ with spectra of both types.</p>
 <p><strong>So the positive semidefinite cone is the set of Hermitian matrices with nonnegative spectrum.</strong> It contains the zero matrix and is closed under addition and under congruence $A\mapsto M^{*}AM$. Its interior is the positive definite set, and its boundary consists of the matrices with a zero eigenvalue. The geometry of the set is the subject of <em>The Cone of Positive Semidefinite Matrices</em>.</p>
 <p><strong>The cone is the set of squares.</strong> $A$ is positive semidefinite exactly when $A=B^{*}B$ for some $B$, and then $B$ can be taken as $A^{1/2}=U\Lambda^{1/2}U^{*}$, which is Hermitian and positive semidefinite. So</p>
 <p>$$
@@ -179,12 +179,12 @@ $$</p>
 <p>which is the algebraic description of the cone and the complex analogue of the cone of the Jordan algebra.</p>
 <p><strong>The square root is unique in the cone.</strong> If $C$ is positive semidefinite and $C^{2}=A$, then $C$ commutes with $A$ and is diagonal in the eigenbasis of $A$, with nonnegative eigenvalues squaring to those of $A$; hence $C=A^{1/2}$. So the map $A\mapsto A^{1/2}$ is a well-defined continuous map of the cone onto itself, which is used in the polar decomposition.</p>
 <h2 id="the-case-math110">The Case $n=2$</h2>
-<p><strong>At $n=2$ the theorem is one rotation.</strong> For $S=\begin{pmatrix}a&b\\b&d\end{pmatrix}$ real symmetric, the eigenvalues are</p>
+<p><strong>At $n=2$ the theorem is one rotation.</strong> For $S=\begin{pmatrix}a&amp;b\\b&amp;d\end{pmatrix}$ real symmetric, the eigenvalues are</p>
 <p>$$
 \lambda_{\pm}=\frac{a+d}{2}\pm\sqrt{\Big(\frac{a-d}{2}\Big)^{2}+b^{2}},
 $$</p>
 <p>and the eigenvectors are at the angle $\theta$ with $\tan2\theta=\frac{2b}{a-d}$. The eigenvalues are real for all $a,b,d$, and the computation confirms the formula and the orthogonality of the two eigenvectors.</p>
-<p><strong>The sign of the determinant decides the type.</strong> Since $\lambda_+\lambda_-=\det S$ and $\lambda_++\lambda_-=\operatorname{tr}S$, the symmetric matrix is positive definite exactly when $\operatorname{tr}S>0$ and $\det S>0$, which is the $n=2$ description of the cone as the interior of a quadrant in the $(a,d)$-plane for each $b$.</p>
+<p><strong>The sign of the determinant decides the type.</strong> Since $\lambda_+\lambda_-=\det S$ and $\lambda_++\lambda_-=\operatorname{tr}S$, the symmetric matrix is positive definite exactly when $\operatorname{tr}S&gt;0$ and $\det S&gt;0$, which is the $n=2$ description of the cone as the interior of a quadrant in the $(a,d)$-plane for each $b$.</p>
 <p><strong>The biquaternion reading gives the spectral projections as idempotents.</strong> With $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(\mathrm{I}\pm\tilde{Ζ})$ and $\tilde{Ζ}$ any traceless Hermitian matrix of square $\mathrm{I}$, the spectral resolution reads</p>
 <p>$$
 S=\lambda_+\tilde\Pi_{\mathrm{id},++}\lambda_-\tilde\Pi_{\mathrm{id},-},

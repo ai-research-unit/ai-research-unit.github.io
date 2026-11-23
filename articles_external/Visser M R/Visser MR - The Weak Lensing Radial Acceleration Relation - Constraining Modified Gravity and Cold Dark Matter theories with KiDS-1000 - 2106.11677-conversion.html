@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The weak lensing radial acceleration relation: Constraining modified gravity and cold dark matter theories with KiDS-1000 — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - The Weak Lensing Radial Acceleration Relation - Constraining Modified Gravity and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-weak-lensing-radial-acceleration-relation-constraining-modified-gravity-and-cold-dark-matter-theories-with-kids-1000"><strong>The weak lensing radial acceleration relation: Constraining modified gravity and cold dark matter theories with KiDS-1000</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2106.11677v1 [astro-ph.GA]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Margot M. Brouwer, Kyle A. Oman, Edwin A. Valentijn, Maciej Bilicki, Catherine Heymans, Henk Hoekstra, Nicola R. Napolitano, Nivya Roy, Crescenzo Tortora, Angus H. Wright, Marika Asgari, Jan Luca van den Busch, Andrej Dvornik, Thomas Erben, Benjamin Giblin, Alister W. Graham, Hendrik Hildebrandt, Andrew M. Hopkins, Arun Kannawadi, Konrad Kuijken, Jochen Liske, HuanYuan Shan, Tilman Tröster, Erik Verlinde, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 22 June 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Astronomy &amp; Astrophysics 650 (2021) A113</td>
+</tr>
+<tr>
+<td>length</td>
+<td>31 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - The Weak Lensing Radial Acceleration Relation - Constraining Modified Gravity and Cold Dark Matter theories with KiDS-1000 - 2106.11677-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The Weak Lensing Radial Acceleration Relation - Constraining Modified Gravity and Cold Dark Matter theories with KiDS-1000 - 2106.11677.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The Weak Lensing Radial Acceleration Relation - Constraining Modified Gravity and Cold Dark Matter theories with KiDS-1000 - 2106.11677.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Measures the radial acceleration relation of isolated galaxies with galaxy–galaxy lensing from the KiDS-1000 data release, extending the relation by nearly two orders of magnitude in observed acceleration compared with earlier rotation-curve measurements. The measured excess surface density is converted into observed acceleration $g_{\text{obs}}$ and the photometric masses into $g_{\text{bar}}$, and the resulting curve is compared with MOND, with emergent gravity, and with two cold-dark-matter simulations. At low acceleration the data follow $g_{\text{obs}}\propto\sqrt{g_{\text{bar}}}$, as both modified-gravity models predict.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-measurement">The measurement</h3>
+<p>Galaxy–galaxy lensing gives the excess surface density $\Delta\Sigma(R)$, converted into $g_{\text{obs}}$, with $g_{\text{bar}}$ from nine-band KiDS+VIKING photometry. The probe spans $0.03&lt;R&lt;3\,h_{70}^{-1}$ Mpc, and at the scale of observable galaxy outskirts, $R\approx30\,h_{70}^{-1}$ kpc, "our lensing results are in excellent agreement with the SPARC rotation curves", two independent methods agreeing.</p>
+<h3 id="the-low-acceleration-law">The low-acceleration law</h3>
+<p>"At the low accelerations corresponding to GGL scales, the lensing RAR of isolated galaxies approximately follows a $g_{\text{obs}}\propto\sqrt{g_{\text{bar}}}$ relation", which is "in agreement with the expectations from EG (Eq. 17) and MOND (which we take to be the M16 fitting function, Eq. 11, extrapolated to larger scales)".</p>
+<h3 id="the-comparison">The comparison</h3>
+<p>Both modified-gravity models and both dark-matter simulations are confronted with the same curve. The paper's conclusions are stated as a list; the central one is that the relation persists, with the same slope, far outside the visible disc, and that at low acceleration the two modified-gravity predictions coincide with the data.</p>
+<h3 id="the-scope">The scope</h3>
+<p>The paper does not claim to distinguish the models. It reports the measured relation, the agreement of two independent probes, and the consistency of the low-acceleration slope with the two modified-gravity predictions; the discrimination between them is left to the discussion.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-single-relation-between-two-accelerations">1. A single relation between two accelerations</h3>
+<p><strong>The idea.</strong> The whole phenomenology is compressed into one function $g_{\text{obs}}(g_{\text{bar}})$, measured over two decades, with the low-acceleration branch $\sqrt{g_{\text{bar}}}$ and a high-acceleration branch approaching $g_{\text{obs}}=g_{\text{bar}}$. This is a <strong>number</strong> relation, and its virtue is that it is theory-neutral.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> carries the FLRW metric with the source missing. A relation between the observed and the baryonic acceleration is the kind of empirical constraint any proposed source would have to reproduce at galactic scales, and the corpus has no galactic-scale statement at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, as an external constraint on the missing source.</p>
+<p><strong>What stands in the way.</strong> The relation is inferred from lensing and rotation curves with mass-to-light assumptions; it is not a law, and the corpus would be importing a phenomenological fit. The cost is the photometric mass calibration, which is not a physics input the corpus can check.</p>
+<h3 id="2-two-independent-probes-agreeing">2. Two independent probes agreeing</h3>
+<p><strong>The idea.</strong> Lensing and rotation curves, methods with different systematics, give the same acceleration at the overlap scale. This is a <strong>reading</strong> of the evidence, and it is stronger than either measurement alone.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> lists what would count as evidence; a cross-probe agreement at a stated scale is a model of what such an entry looks like.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import as an example of method. Ranked third.</p>
+<h3 id="3-the-same-prediction-from-two-different-theories">3. The same prediction from two different theories</h3>
+<p><strong>The idea.</strong> Emergent gravity and MOND give the same low-acceleration slope from unrelated starting points, which is why the data cannot separate them. This is a <strong>reading</strong> with a warning: agreement with a prediction is not evidence for the theory that made it when another theory makes the same prediction.</p>
+<p><strong>What it would add.</strong> The corpus's claims of agreement with established physics need exactly this caution applied to them: where two frameworks predict the same number, the agreement does not discriminate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a discipline of inference. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

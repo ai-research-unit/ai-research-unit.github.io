@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weyl Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Weyl_equation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="weyl-equation"><strong>Weyl Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Weyl equation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Weyl_equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Weyl_equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Weyl_equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Weyl equation: the relativistic wave equation for a massless spin-½ particle of definite chirality, its two-component form, its helicity eigenstates, and its appearance as one half of the Dirac equation when the mass vanishes.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-equation">The equation</h3>
+<p>"uation (/vaɪl/ VILE) is a relativistic wave equation for describing massless spin-1/2 particles which have an inherent handedness, or chirality, called Weyl fermions. The equation is named after Hermann Weyl. The Weyl fermions are one of the three possible types of elementary fermions, the other two being the Dirac and the Majorana fermions." Majorana.</p>
+<h3 id="the-form">The form</h3>
+<p>For one chirality the equation reads $i\bar\sigma^\mu\partial_\mu\psi=0$ with $\bar\sigma^\mu=(1,-\sigma)$, and for the other $i\sigma^\mu\partial_\mu\psi=0$. Each is a two-component equation, and the two are not related by a mass term: adding a mass couples them into the four-component Dirac equation.</p>
+<h3 id="the-helicity">The helicity</h3>
+<p>Because the particle is massless, chirality and helicity coincide. The solutions are helicity eigenstates, and the sign of the helicity is fixed by which of the two equations is used. This is what makes the Weyl equation the natural home of chirality: in the massless limit there is nothing to flip.</p>
+<p>"Weyl equation In physics, particularly in quantum field theory, the Weyl equation (/vaɪl/ VILE) is a relativistic wave equation for describing massless spin-1/2 particles which have an inherent handedness, or chirality, called Weyl fermions."</p>
+<p>"The Weyl equation is invariant under the action of the Lorentz group."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-what-couples-the-two-chiralities">1. Mass is what couples the two chiralities</h3>
+<p><strong>The idea.</strong> The Weyl equation for one chirality is consistent on its own; only a mass term links it to the other. Chirality is therefore a property of the massless theory, and a massive fermion has both chiralities propagating together. This is a <strong>mechanism</strong> the corpus's chiral articles need stated.</p>
+<p><strong>What it would add.</strong> A precise statement of what the mass term does, which the corpus's chiral-fermion article assumes when it treats chirality as a decomposition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code>, at the mass term.</p>
+<p><strong>What stands in the way.</strong> The corpus's mass enters as a parameter of the Dirac equation; showing that it is exactly the chirality-mixing term requires writing the equation in the two-component basis, which the corpus does in its Weyl-spinor exercise.</p>
+<h3 id="2-two-component-equations-are-the-primitive-objects">2. Two-component equations are the primitive objects</h3>
+<p><strong>The idea.</strong> The four-component Dirac spinor is a direct sum of two Weyl spinors, and the Dirac equation is the coupled system. The four-component form is a convenience, not the fundamental object.</p>
+<p><strong>What it would add.</strong> A framing in which the corpus's bispinor is a pair rather than an irreducible object, which changes what its representation theory is representing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>, on the decomposition.</p>
+<p><strong>What stands in the way.</strong> In the corpus's real algebra the two chiral subspaces may be related by an element of the algebra rather than being independent complex spaces, so the direct-sum statement needs checking.</p>
+<p>This is an encyclopedia article; the equation, its two-component forms, the helicity eigenstates and the relation to the Dirac equation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

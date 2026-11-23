@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inertial frames without the relativity principle: breaking Lorentz symmetry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - breaking Lorentz symmetry -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="inertial-frames-without-the-relativity-principle-breaking-lorentz-symmetry"><strong>Inertial frames without the relativity principle: breaking Lorentz symmetry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1302.5989v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Valentina Baccetti, Kyle Tate, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 February 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the running header reads "MG13-proceedings-25feb2013")</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Inertial frames without the relativity principle - breaking Lorentz symmetry - 1302.5989-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - breaking Lorentz symmetry - 1302.5989.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - breaking Lorentz symmetry - 1302.5989.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a short conference version of the longer paper on inertial frames. It drops the relativity principle, keeps linearity, and finds that transformations between inertial frames form a groupoid. A preferred frame appears. Energy and momentum then transform affinely, and the invariant $E^2-\varpi\lVert p\rVert^2c^2$ acquires a factor depending on the motion of the rest frame. Rest energy is no longer intrinsic to the particle.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We investigate inertial frames in the absence of Lorentz invariance, reconsidering the usual group structure implied by the relativity principle."</p>
+<h3 id="the-structure-that-replaces-a-group">The structure that replaces a group</h3>
+<p>"In theories with a preferred frame (aether), the set of transformations between inertial frames forms a groupoid/pseudogroup instead of a group, a characteristic essential to evading the von Ignatowsky theorems."</p>
+<h3 id="the-asymmetry-of-velocities">The asymmetry of velocities</h3>
+<p>"it can easily be deduced that the velocity $v_{\text{aether}}$ of the aether as seen from the inertial frame $\bar F$, and the velocity $v_{\text{moving}}$ of the frame $\bar F$ as seen from the aether, are not equal-but-opposite and may not even be collinear."</p>
+<h3 id="the-momentum-rule">The momentum rule</h3>
+<p>"These are affine transformations, with the affine piece depending only on the intrinsic ambiguities. If we define the four component vector $P=(E,-p^T)$, we can see that it transforms in the dual space of the four-component vector $X=(t,x^T)^T$."</p>
+<h3 id="the-rest-frame">The rest frame</h3>
+<p>"we can associate a rest-energy $\bar E=E_0(\bar F)$ and a rest-momentum $\bar p=p_0(\bar F)$, that will depend on the state of motion of $\bar F$ with respect to the aether. The rest-momentum $p_0(\bar F)$ may in general not be equal to zero"</p>
+<h3 id="the-modified-invariant">The modified invariant</h3>
+<p>$$E^2-\varpi\lVert p\rVert^2c^2=\gamma^2(1-\varpi c^2\lVert u\rVert^2)E_0^2(\bar F) \qquad (paper\ 5)$$</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>"the concept of rest energy still exists but it now depends on the state of motion of $\bar F$ with respect to the aether, through $E_0(\bar F)$. This result is completely different from the special relativity case, where the rest-energy and the rest-momentum are intrinsic properties of the particle that cannot depend on its velocity with respect to the aether."</p>
+<h3 id="the-minimalist-model">The minimalist model</h3>
+<p>"we consider the spacetime to be Lorentz invariant, i.e. the physics of clocks and rulers is Lorentz invariant, while we allow for a Lorentz-violation in the energy-momentum sector, i.e. for one sub-sector of the particle spectrum (e.g. neutrinos)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-as-a-frame-dependent-label">1. Mass as a frame-dependent label</h3>
+<p><strong>The idea.</strong> A rest energy that depends on the motion of the rest frame is a mass that is not an intrinsic property.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code> treats mass as fixed by which conjugate the mass term uses. This paper shows a setting where the numerical value of the rest energy drifts, which the article's algebraic account does not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>, in the section on the two kinds of mass.</p>
+<p><strong>What stands in the way.</strong> The drift needs a preferred frame the target does not have. Ranked first, because it separates the algebraic origin of mass from its measured value.</p>
+<h3 id="2-the-dispersion-relation-gains-a-function">2. The dispersion relation gains a function</h3>
+<p><strong>The idea.</strong> The invariant becomes $E^2-\varpi\lVert p\rVert^2c^2$ with $\varpi$ an arbitrary function of the frame.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-three-wavenumbers-of-a-particle.md</code> writes the four-momentum with one mass. A dispersion relation with a free function is a deformation the article could use to state what its own relation would look like under violation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-three-wavenumbers-of-a-particle.md</code>, in the section on the dispersion relation.</p>
+<p><strong>What stands in the way.</strong> The function is not fixed by any theory. Ranked second.</p>
+<h3 id="3-only-the-particle-sector-is-violated">3. Only the particle sector is violated</h3>
+<p><strong>The idea.</strong> Clocks and rulers can stay Lorentz invariant while the energy-momentum relation for one species changes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> ties masslessness to a limit of the dispersion relation. If violation can be confined to one sector, masslessness in that sector becomes a separate question from masslessness of geometry, which the target treats as one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the massless limit.</p>
+<p><strong>What stands in the way.</strong> The model is presented without dynamics. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

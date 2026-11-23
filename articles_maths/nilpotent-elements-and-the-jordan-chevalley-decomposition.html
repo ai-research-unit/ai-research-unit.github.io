@@ -80,9 +80,9 @@
 <h3 id="sums-and-products">Sums and products</h3>
 <p>The set of nilpotent elements is not a linear subspace. In $M_2(k)$ the matrix units</p>
 <p>$$
-E_{12} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \qquad E_{21} = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}
+E_{12} = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}, \qquad E_{21} = \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix}
 $$</p>
-<p>are nilpotent of index two, but their sum $E_{12} + E_{21} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ has square $I$ and is not nilpotent. The sum of two nilpotents is therefore not nilpotent in general.</p>
+<p>are nilpotent of index two, but their sum $E_{12} + E_{21} = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}$ has square $I$ and is not nilpotent. The sum of two nilpotents is therefore not nilpotent in general.</p>
 <p>Two closure properties do hold.</p>
 <ul>
 <li>If $x$ and $y$ commute and are nilpotent, with $x^m = 0$ and $y^n = 0$, then $x+y$ is nilpotent: in the binomial expansion of $(x+y)^{m+n-1}$, every term has $x$-exponent at least $m$ or $y$-exponent at least $n$, so every term vanishes. The binomial coefficients are irrelevant; the vanishing comes from the exponents.</li>
@@ -235,11 +235,11 @@ $$</p>
 <h3 id="a-block-with-two-eigenvalues">A block with two eigenvalues</h3>
 <p>For</p>
 <p>$$
-a = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix},
+a = \begin{pmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix},
 $$</p>
 <p>the minimal polynomial is $(x-1)^2(x-2)$. The semisimple part is</p>
 <p>$$
-s = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix},
+s = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix},
 $$</p>
 <p>and the nilpotent part is $n = E_{12}$. Then $s+n = a$, $sn = ns$, $s$ is semisimple with minimal polynomial $(x-1)(x-2)$, and $n^2 = 0$. Both $s$ and $n$ are polynomials in $a$: the Lagrange idempotents of the eigenvalues $1$ and $2$ are $\varepsilon_1 = (a-2I)/(1-2) = 2I - a$ and $\varepsilon_2 = a - I$; the generalized eigenprojector of the repeated eigenvalue $1$ is $\varepsilon_1$, and</p>
 <p>$$
@@ -251,7 +251,7 @@ $$</p>
 <h3 id="the-biquaternion-case">The biquaternion case</h3>
 <p>Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, the element</p>
 <p>$$
-a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = I + E_{12}
+a = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix} = I + E_{12}
 $$</p>
 <p>is unipotent. Its Jordan–Chevalley decomposition is $s = I$ and $n = E_{12}$, and its multiplicative form is $a = I \cdot a$ with unipotent part $a$. The example is the smallest non-semisimple biquaternion: the semisimple part is scalar, the nilpotent part is the off-diagonal matrix unit, and the two commute. A biquaternion whose matrix is diagonalisable has $n = 0$; a biquaternion whose matrix has a repeated eigenvalue and a nontrivial Jordan block has $n \neq 0$. The biquaternion spectral theory of <em>The Biquaternion Eigenvalue Decomposition</em> reads the same decomposition through the conjugations.</p>
 <h2 id="summary">Summary</h2>

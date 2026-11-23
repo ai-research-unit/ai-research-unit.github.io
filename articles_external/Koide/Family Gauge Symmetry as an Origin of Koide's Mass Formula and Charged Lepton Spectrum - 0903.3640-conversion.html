@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Gauge Symmetry as an Origin of Koide&#x27;s Mass Formula and Charged Lepton Spectrum__ (review) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide&#x27;s Mass Formula and Charged Lepton Spectrum -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="family-gauge-symmetry-as-an-origin-of-koides-mass-formula-and-charged-lepton-spectrum-review"><strong>Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum</strong> (review)</h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>0903.3640 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Y. Sumino</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 March 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>talk at Karlsruhe University, February 2009 (not stated as proceedings)</td>
+</tr>
+<tr>
+<td>report</td>
+<td>TU–842</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0903.3640-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0903.3640.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Family Gauge Symmetry as an Origin of Koide's Mass Formula and Charged Lepton Spectrum - 0903.3640.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Restates, without the technical machinery, the two mechanisms of the companion papers — the cancellation of the QED correction by a $U(3)$ family gauge interaction, and the potential that produces the spectrum — and then lists, in its own words, what is still missing. The value of the note is that list: it is the most honest inventory of what a Koide mechanism must supply, written by the person who built the most complete one, and it distinguishes the parts that are explained from the parts that are assumed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-precision-and-where-it-is-measured">The precision, and where it is measured</h3>
+<p>$$
+\sqrt2\;\frac{\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}}{\sqrt{3\left(m_e+m_\mu+m_\tau\right)}}=1.000005\pm0.000007 .
+\tag{paper 5}
+$$</p>
+<p>"Thus, Koide's formula is valid within the current experimental accuracy of $7\times10^{-6}$! We emphasize that it is the pole masses that satisfy Koide's formula with this precision."</p>
+<h3 id="why-the-qed-correction-is-the-obstacle">Why the QED correction is the obstacle</h3>
+<p>"The most serious problem one faces, when speculating physics underlying Koide's formula, is caused by the QED radiative correction ... it seems more natural that the relation (1) is satisfied by the running masses $\bar m_i(\mu)$ ... renormalized at a high energy scale $\mu\gg M_W$ than by the pole masses. If this is the case, however, the QED radiative correction violates the relation between the pole masses." The correction "is corrected by approximately $0.1\%$, which is $120$ times larger than the present experimental error."</p>
+<p>Two structural remarks matter. First: "corrections of the form const. $\times\bar m_i$ only change the length of the vector $\left(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau}\right)$ but not the direction. As a result, the QED correction to Koide's mass formula turns out to be independent of the UV scale $\mu$." Second: "The $\bar m_i\log(\bar m_i^2)$ correction results from the fact that $\bar m_i$ plays a role of an infrared (IR) cut-off in the loop integral. Hence, the QED correction to Koide's mass formula stems from this IR region." The weak correction is $O(G_F\bar m_i^3/\pi)$ and negligible.</p>
+<h3 id="the-three-things-the-model-does">The three things the model does</h3>
+<p>"(1) Multiplicative renormalizability of the operator $O_1=\frac{\kappa}{\Lambda^2}\bar\psi_L\Phi\Phi^T\phi e_R$ ensures that only logarithmic corrections to the lepton mass matrix appear; furthermore, multiplicative renormalizability of $\langle\Phi\rangle$ ensures that the correction to Koide's formula is independent of the renormalization scale $\mu$ of the effective potential. (2) The symmetry breaking pattern $U(3)\to U(2)\to U(1)\to$ (nothing) essentially dictates how the IR cut-off enters the logarithmic correction at each stage of the symmetry breaking; this symmetry breaking pattern happens to be common to the family gauge sector and QED sector. (3) We assumed that $\langle\Phi\rangle$ can be brought to a diagonal form by symmetry transformation and also the tree-level Koide's relation for the diagonal elements."</p>
+<p>And the cancellation: "if $\psi_L$ and $e_R$ are assigned to mutually conjugate representations, the $U(3)$ radiative correction has the same form as the QED correction with opposite sign. In particular, if $\alpha=\frac14\alpha_F$, both corrections cancel."</p>
+<h3 id="the-list-of-what-is-not-done">The list of what is not done</h3>
+<p>"* Quarks and neutrinos are not included in the analysis. In relation to this, with the fermion content discussed in this analysis, anomalies induced by the family gauge interactions do not cancel.
+* $O(3)$ gauge symmetry needs to be broken spontaneously above the $U(3)$ symmetry breaking scale, in order to suppress mixing of gauge bosons of both gauge groups. We have not implemented a mechanism to achieve this.
+* The VEV $\langle\Phi\rangle$, which explains the realistic charged lepton spectrum, cannot be diagonalized by $U(3)\times O(3)$ symmetry transformation. In order to realize the scenario for the cancellation of QED correction, we need, for instance, to introduce another field $\Sigma$ and its potential with $\Phi$ and replace the operator ..."</p>
+<p>The note also states the residual freedom and its consequence: the relation fixes one combination, the scale fixes another, and "suppose this degree of freedom is fixed by minimizing the operator $V_{\Phi^3}=g_2\mathrm{tr}(\Phi\Phi^T\Phi^*\Phi^\dagger)$. Then, $m_e/m_\tau$ is predicted to be $15\%$ away from the experimental value, and $m_\mu/m_\tau$ is predicted to be $1.5\%$ away".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-checklist-a-mechanism-must-satisfy">1. The checklist a mechanism must satisfy</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: a mechanism for the relation has to supply three separable things — a correction that cancels the QED logarithm (same shape, opposite sign, coefficient $\alpha_F=4\alpha$), a symmetry-breaking pattern whose stages mimic the QED IR cutoffs ($U(3)\to U(2)\to U(1)$), and a potential whose vacuum satisfies the relation and does not destabilise it. The companion model supplies all three at the price of an $SU(9)\times U(1)$ embedding and of anomalies that do not cancel.</p>
+<p><strong>What it would add.</strong> The corpus's §11 is a list of open questions without a notion of what would count as an answer. This is a three-part specification with a worked example of each part, so a proposal in the corpus could be scored against it. In particular it separates "explains $2/3$" from "explains why the relation is stable at the pole", which the corpus currently treats as one question.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, as the structure of the item list.</p>
+<p><strong>What stands in the way.</strong> The specification is written by the author of the only model that meets it, so it is a description of that model rather than an independent standard; and it does not include the value $2/3$ itself, which it inherits from the potential.</p>
+<h3 id="2-the-qed-correction-is-an-infrared-effect-hence-independent-of-the-uv-scale">2. The QED correction is an infrared effect, hence independent of the UV scale</h3>
+<p><strong>The idea.</strong> A <strong>statement</strong>: the $m\log m^2$ term arises because the mass is the IR cutoff of the loop, so the offending correction is fixed by low-energy physics and cannot be changed by choosing a high-scale origin. Corollaries follow: the naive expectation "high-scale symmetry $\Rightarrow$ high-scale relation" is empty, and any cancellation must come with a second IR logarithm.</p>
+<p><strong>What it would add.</strong> This is the sharpest available statement of <em>why</em> the running is the enemy, and it is qualitative — no numbers needed. The corpus can state it in one paragraph and use it to filter proposals: a mechanism that shifts the relation by a constant multiple of $m_i$ changes the vector's length and is irrelevant; only a term with a logarithm changes the direction.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first item, and §3 where the circle is discussed.</p>
+<p><strong>What stands in the way.</strong> Nothing, for once: the argument is exact at one loop, and the paper checks that the weak, Higgs and Goldstone contributions are negligible. It is the cleanest piece of physics in the folder.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The $7\times10^{-6}$ precision statement is the sharpest version in the folder and supersedes the $\sim10^{-5}$ quoted elsewhere. The EFT philosophy section argues that fine tuning is avoided by moving the spectrum to boundary conditions at the cutoff, which is the corpus's question about a fourth rung answered by relocating it. The list of anomalies and unbroken symmetries is the reason this model is not a theory.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -122,7 +122,7 @@ $$</p>
 <h3 id="the-theorem">The Theorem</h3>
 <p>Every invertible complex matrix $A$ has a unique decomposition</p>
 <p>$$
-A=P\,U,\qquad P=P^{*}>0,\quad U^{*}U=I,
+A=P\,U,\qquad P=P^{*}&gt;0,\quad U^{*}U=I,
 $$</p>
 <p>with $P$ positive definite Hermitian and $U$ unitary. This is the <strong>left</strong> polar decomposition. Equivalently $P=(AA^{*})^{1/2}$ and $U=P^{-1}A$.</p>
 <p>There is also a right version, $A=U'P'$ with $P'=(A^{*}A)^{1/2}$, and the two differ whenever $A$ is not normal.</p>
@@ -169,8 +169,8 @@ $$</p>
 <h3 id="the-svd-route-and-the-split-that-fails">The SVD Route, and the Split That Fails</h3>
 <p>The four steps from a general matrix to the word are visible in the singular value decomposition. Let $A=U\Sigma V^{\dagger}$ with $U,V$ unitary and $\Sigma$ diagonal with positive entries.</p>
 <ol>
-<li>The decomposition exists for every invertible $A$, and $\Sigma>0$ by construction.</li>
-<li>The product $H=U\Sigma U^{\dagger}$ is Hermitian, because $\Sigma$ is real diagonal, and positive definite, because $\Sigma>0$.</li>
+<li>The decomposition exists for every invertible $A$, and $\Sigma&gt;0$ by construction.</li>
+<li>The product $H=U\Sigma U^{\dagger}$ is Hermitian, because $\Sigma$ is real diagonal, and positive definite, because $\Sigma&gt;0$.</li>
 <li>The product $K=UV^{\dagger}$ is unitary, and $\det K=\det U\det V^{\dagger}=\det A/\det\Sigma=\det A/\lvert\det A\rvert$: the phase of $\det A$, and nothing else, sits in $K$.</li>
 <li>The product reconstructs the matrix, $HK=U\Sigma U^{\dagger}UV^{\dagger}=U\Sigma V^{\dagger}=A$.</li>
 </ol>
@@ -190,7 +190,7 @@ $$</p>
 </ul>
 <p>Both factors lie in $G$, which is the statement that the word is a decomposition of the group and not of a larger set.</p>
 <h3 id="the-boost-reading">The Boost Reading</h3>
-<p>A Hermitian element of unit norm with positive-definite image is exactly $\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ for a unique $\theta_{\mathrm{rpd}}\ge0$ and a unique $\vec u_{\mathrm b}\in S^{2}$. Uniqueness of the parameters: the Hermitian element has a real scalar part $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\ge1$ and an imaginary vector part $i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, so the pair $(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})$ is read off, with the direction undefined only at $\theta_{\mathrm{rpd}}=0$. Positivity of the matrix is equivalent to $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}>0$, which is always true; the condition $\theta_{\mathrm{rpd}}\ge0$ is what removes the sign ambiguity.</p>
+<p>A Hermitian element of unit norm with positive-definite image is exactly $\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ for a unique $\theta_{\mathrm{rpd}}\ge0$ and a unique $\vec u_{\mathrm b}\in S^{2}$. Uniqueness of the parameters: the Hermitian element has a real scalar part $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\ge1$ and an imaginary vector part $i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, so the pair $(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})$ is read off, with the direction undefined only at $\theta_{\mathrm{rpd}}=0$. Positivity of the matrix is equivalent to $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}&gt;0$, which is always true; the condition $\theta_{\mathrm{rpd}}\ge0$ is what removes the sign ambiguity.</p>
 <h3 id="the-verification">The Verification</h3>
 <p>The construction is checked numerically on random unit-norm biquaternions: the left polar decomposition reproduces the element to $10^{-15}$, the Hermitian factor is Hermitian and positive with unit determinant, the unitary factor has real coefficients and unit norm, and the two determinants are both $1$. The right polar decomposition of the same elements gives different factors, which is the check that the two words are genuinely different.</p>
 <h2 id="uniqueness">Uniqueness</h2>
@@ -258,7 +258,7 @@ $$</p>
 <p>$\tilde U_{\mathrm{lor}}=e_t$ has $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$. The boost direction and the rotation axis are both undefined at that point, and the word's parameters are not coordinates there in the strict sense: the map from parameters to elements is not injective on a neighbourhood of the origin of the direction spheres. This is the usual defect of a spherical parametrisation and it is repaired by using the vector parameters $\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\theta_{\mathrm{axr}}\vec u_{\mathrm r}$, which are single-valued.</p>
 <h3 id="the-central-elements">The Central Elements</h3>
 <p>$\pm e_t$ both have $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}\in\{0,2\pi\}$. The element $-e_t$ is the rotation by $2\pi$, whose axis is arbitrary. The word is still unique — the boost factor is $e_t$ in both cases — but the rotation factor's axis is not.</p>
-<p><strong>The angle's range is closed at $2\pi$ for this reason.</strong> The endpoint is the element $-e_t$, and an element whose polar rotation is $-e_t$ has its word only there, so a half-open interval $[0,2\pi)$ would cut those elements out of the image of the word. Verified: on one hundred random unit elements the word reproduces the element with $\theta_{\mathrm{axr}}<2\pi$, while one hundred elements whose polar rotation is $-e_t$ all have $\theta_{\mathrm{axr}}=2\pi$, where the axis is not defined.</p>
+<p><strong>The angle's range is closed at $2\pi$ for this reason.</strong> The endpoint is the element $-e_t$, and an element whose polar rotation is $-e_t$ has its word only there, so a half-open interval $[0,2\pi)$ would cut those elements out of the image of the word. Verified: on one hundred random unit elements the word reproduces the element with $\theta_{\mathrm{axr}}&lt;2\pi$, while one hundred elements whose polar rotation is $-e_t$ all have $\theta_{\mathrm{axr}}=2\pi$, where the axis is not defined.</p>
 <h3 id="the-wall-elements">The Wall Elements</h3>
 <p>An element of the group is never null, since its norm is $1$. What can be null is the <em>generator</em>: a scalar-free $\tilde X$ with $\langle\tilde X\rangle_{\natural}=0$ is nilpotent, and its exponential is a unipotent element $e_t+\tilde X$. The word handles such an element without degenerating: it has ordinary polar factors, and its scalar part is only $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$. The null generator is the exceptional case of the exponential chart, not of the word.</p>
 <h3 id="the-rotation-at-math171">The Rotation at $\pi$</h3>

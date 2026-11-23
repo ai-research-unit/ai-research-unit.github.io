@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergent time and time travel in quantum physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent Time and Time Travel in Quantum Physics - 2312.05202.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="emergent-time-and-time-travel-in-quantum-physics"><strong>Emergent time and time travel in quantum physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2312.05202v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ana Alonso-Serrano, Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 February 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Preprints 2024, 10, 73 — as printed in the citation block</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Emergent Time and Time Travel in Quantum Physics - 2312.05202-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent Time and Time Travel in Quantum Physics - 2312.05202.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Emergent Time and Time Travel in Quantum Physics - 2312.05202.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper starts from the observation that arguments against time travel rely on a notion of time, while quantum gravity famously lacks one. It adopts the Page–Wootters formalism, in which time is relational and emergent, and studies a toy model of two harmonic oscillators subject to the Hamiltonian constraint. The model is solved with positive operator-valued measures and conditional probabilities, and the question is whether self-consistent time travel survives when time is emergent. The answer for this model is negative and the authors call the outcome boring, but they treat it as a proof of concept for a larger programme.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Entertaining the possibility of time travel will invariably challenge dearly held concepts of fundamental physics. It becomes relatively easy to construct multiple logical contradictions using differing starting points from various well-established fields of physics."</p>
+<h3 id="the-tension">The tension</h3>
+<p>"such a recourse to quantum gravity comes with its own, long-standing challenge to most of these counter-arguments to time travel: These arguments rely on time, while quantum gravity is (in)famously stuck with and dealing with the problem of time."</p>
+<h3 id="the-framework-chosen">The framework chosen</h3>
+<p>"One attempt to answer this problem within the canonical framework resulted in the Page–Wootters formalism, and its recent gauge-theoretic re-interpretation—as an emergent notion of time."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"we will begin a programme to study toy models implementing the Hamiltonian constraint in quantum theory, with an aim towards understanding what an emergent notion of time can tell us about the (im)possibility of time travel."</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"Despite the disappointingly boring outcome for our particular model, our toy model serves its purpose as a proof-of-concept study. It demonstrates the feasibility for future model building of quantum systems with periodic, emergent notions of time as a tool to study time travel."</p>
+<h3 id="the-stated-limitation">The stated limitation</h3>
+<p>"The obvious model-dependence of the PW formalism through its dependence on $|\Psi\rangle$, the 'state of the universe', means that different models might have very different conclusions as to what sort of time evolution is possible." And: "it is unlikely that the PW formalism can be fully general even when discussing whether time travel is possible based on first principles of quantum theory."</p>
+<h3 id="the-next-steps">The next steps</h3>
+<p>"More and different subsystems; more in the sense of more harmonic oscillators, differ[ent] in adding various combinations of other systems." And: "Ultimately, the combination of these two model building drives can try to investigate entropic arguments in the context of time travel."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-time-as-relational-not-background">1. Time as relational, not background</h3>
+<p><strong>The idea.</strong> If time is emergent from correlations between subsystems, causality claims must be restated in relational terms.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> assumes a background time with a light cone. This paper shows what happens when that assumption is dropped, and it asks the question the article never asks: what becomes of the barrier when time itself is derived?</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the definition of the barrier.</p>
+<p><strong>What stands in the way.</strong> The model is quantum and not geometric. Ranked first, because it attacks the article's presupposition directly.</p>
+<h3 id="2-a-constraint-replaces-an-evolution-equation">2. A constraint replaces an evolution equation</h3>
+<p><strong>The idea.</strong> The Hamiltonian constraint removes the external time parameter and leaves correlations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds evolution from an external parameter. A constraint-based formulation is an alternative the article could compare against, and it is the standard route in quantum gravity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of evolution.</p>
+<p><strong>What stands in the way.</strong> The framework is classical. Ranked second.</p>
+<h3 id="3-chronology-protection-as-a-test">3. Chronology protection as a test</h3>
+<p><strong>The idea.</strong> If emergent time forbids consistent time travel, that is a version of Hawking's conjecture.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra forbids without a mechanism. Here a mechanism is proposed and tested in a toy model, which is the shape an explanation would take.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on closed timelike curves.</p>
+<p><strong>What stands in the way.</strong> The result is one model and the authors call it boring. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

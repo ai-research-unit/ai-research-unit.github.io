@@ -83,7 +83,7 @@
 <p><strong>Proof.</strong> For $X\in M_2(\mathbb{R})$ the upper projection is $p_+(X)$, and $\sigma(p_+(X))$ keeps the diagonal entries and half the two off-diagonal entries, which is the symmetric part of $X$ read along the diagonal.</p>
 <h2 id="the-product-does-not-transport">The Product Does Not Transport</h2>
 <p><strong>Theorem.</strong> There are upper triangular $P,Q$ with $\sigma(PQ)\neq\sigma(P)\circ\sigma(Q)$.</p>
-<p><strong>Proof.</strong> Take $P=\begin{pmatrix}1&1\\ 0&0\end{pmatrix}$ and $Q=\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$. Then $PQ=\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ and $\sigma(PQ)=\begin{pmatrix}0&\tfrac12\\ \tfrac12&0\end{pmatrix}$, while $\sigma(P)=\begin{pmatrix}1&\tfrac12\\ \tfrac12&0\end{pmatrix}$ and $\sigma(Q)=\begin{pmatrix}0&\tfrac12\\ \tfrac12&0\end{pmatrix}$ give $\sigma(P)\circ\sigma(Q)=\begin{pmatrix}\tfrac14&\tfrac14\\ \tfrac14&\tfrac14\end{pmatrix}$.</p>
+<p><strong>Proof.</strong> Take $P=\begin{pmatrix}1&amp;1\\ 0&amp;0\end{pmatrix}$ and $Q=\begin{pmatrix}0&amp;1\\ 0&amp;0\end{pmatrix}$. Then $PQ=\begin{pmatrix}0&amp;1\\ 0&amp;0\end{pmatrix}$ and $\sigma(PQ)=\begin{pmatrix}0&amp;\tfrac12\\ \tfrac12&amp;0\end{pmatrix}$, while $\sigma(P)=\begin{pmatrix}1&amp;\tfrac12\\ \tfrac12&amp;0\end{pmatrix}$ and $\sigma(Q)=\begin{pmatrix}0&amp;\tfrac12\\ \tfrac12&amp;0\end{pmatrix}$ give $\sigma(P)\circ\sigma(Q)=\begin{pmatrix}\tfrac14&amp;\tfrac14\\ \tfrac14&amp;\tfrac14\end{pmatrix}$.</p>
 <p><strong>Corollary.</strong> The linear isomorphism is not an isomorphism of algebras, and $UT_2$ with the plain product and $\operatorname{Sym}_2$ with the Jordan product are different structures on the same three-dimensional space.</p>
 <p><strong>Proof.</strong> An isomorphism of algebras would carry products to products, and the two displays differ.</p>
 <p><strong>Corollary.</strong> The plain product on the symmetric half is not the Jordan product, because it is not even defined there; only the symmetrised product closes the half.</p>
@@ -92,13 +92,13 @@
 <p><strong>Proposition.</strong> On the diagonal algebra the two products agree: for $D=\operatorname{diag}(a,d)$ and $D'=\operatorname{diag}(a',d')$ one has $\sigma(DD')=\sigma(D)\circ\sigma(D')$.</p>
 <p><strong>Proof.</strong> Diagonal matrices are symmetric, so $\sigma$ is the identity on them and both products are the plain product.</p>
 <p><strong>Corollary.</strong> The defect vanishes when one of the two factors is a scalar matrix, and it can be nonzero as soon as the two diagonal entries differ.</p>
-<p><strong>Proof.</strong> For a scalar $aI$ one has $\sigma(aIX)=a\sigma(X)$ and $\sigma(aI)\circ\sigma(X)=a\sigma(X)$. For $D=\operatorname{diag}(2,5)$ and $P=\begin{pmatrix}3&5\\ 0&7\end{pmatrix}$ the transported product has off-diagonal entry $5$, while the Jordan product of the images has $\tfrac{35}{4}$.</p>
+<p><strong>Proof.</strong> For a scalar $aI$ one has $\sigma(aIX)=a\sigma(X)$ and $\sigma(aI)\circ\sigma(X)=a\sigma(X)$. For $D=\operatorname{diag}(2,5)$ and $P=\begin{pmatrix}3&amp;5\\ 0&amp;7\end{pmatrix}$ the transported product has off-diagonal entry $5$, while the Jordan product of the images has $\tfrac{35}{4}$.</p>
 <p><strong>The defect sits on the off-diagonal entries when the two sides share their diagonal.</strong> The two sides are bilinear, they agree on the diagonal algebra, and the failure comes from the product of the off-diagonal entry with the difference of the diagonal entries of the other factor.</p>
 <p><strong>Proof.</strong> Expand $\sigma(DP)$ and $\sigma(D)\circ\sigma(P)$ for $D=\operatorname{diag}(a,d)$: both have diagonal entries $ap$ and $dr$, while the off-diagonal entries are $\tfrac{aq}{2}$ and $\tfrac{(a+d)q}{4}$.</p>
 <h2 id="nilpotents-one-line-against-none">Nilpotents: One Line against None</h2>
 <p><strong>Proposition.</strong> The nilpotent elements of $UT_2$ are exactly the multiples of $E_{12}$, while $\operatorname{Sym}_2(\mathbb{R})$ has no nonzero nilpotent element.</p>
 <p><strong>Proof.</strong> An upper triangular matrix has the eigenvalues $a$ and $d$ on the diagonal, so it is nilpotent only if $a=d=0$, which leaves $bE_{12}$; in the symmetric half a nilpotent is positive semidefinite with zero square, hence zero.</p>
-<p><strong>Corollary.</strong> The isomorphism $\sigma$ carries the nilpotent line of $UT_2$ to the line of matrices $\tfrac b2\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$, all of which have square $\tfrac{b^{2}}{4}I\neq0$ unless $b=0$.</p>
+<p><strong>Corollary.</strong> The isomorphism $\sigma$ carries the nilpotent line of $UT_2$ to the line of matrices $\tfrac b2\begin{pmatrix}0&amp;1\\ 1&amp;0\end{pmatrix}$, all of which have square $\tfrac{b^{2}}{4}I\neq0$ unless $b=0$.</p>
 <p><strong>Proof.</strong> $\sigma(bE_{12})=\tfrac b2\sigma_{1}$ and $\sigma_{1}^{2}=I$.</p>
 <p><strong>Corollary.</strong> No linear isomorphism can repair the difference, because the two models differ in a property that is defined by the product alone.</p>
 <p><strong>Proof.</strong> Having a nonzero element with vanishing square is a property of the multiplicative structure, and the two models differ on it.</p>
@@ -110,8 +110,8 @@
 <p><strong>The form is only semidefinite on the triangular model.</strong> A sum of squares in $UT_2$ can vanish without every term vanishing, since $E_{12}$ is orthogonal to the whole algebra; in the symmetric half that cannot happen.</p>
 <p><strong>Proof.</strong> The radical is the line $n_+$, and a nonzero element of the radical has zero square in the form.</p>
 <h2 id="the-idempotents-of-both-models">The Idempotents of Both Models</h2>
-<p><strong>Proposition.</strong> The idempotents of $UT_2$ are $0$, $I$, and the two affine lines $\begin{pmatrix}1&b\\ 0&0\end{pmatrix}$ and $\begin{pmatrix}0&b\\ 0&1\end{pmatrix}$ with $b$ arbitrary.</p>
-<p><strong>Proof.</strong> From $\begin{pmatrix}a&b\\ 0&d\end{pmatrix}^{2}=\begin{pmatrix}a^{2}&b(a+d)\\ 0&d^{2}\end{pmatrix}$ one needs $a^{2}=a$ and $d^{2}=d$ and $b(a+d)=b$; the last condition is automatic exactly when $a+d=1$.</p>
+<p><strong>Proposition.</strong> The idempotents of $UT_2$ are $0$, $I$, and the two affine lines $\begin{pmatrix}1&amp;b\\ 0&amp;0\end{pmatrix}$ and $\begin{pmatrix}0&amp;b\\ 0&amp;1\end{pmatrix}$ with $b$ arbitrary.</p>
+<p><strong>Proof.</strong> From $\begin{pmatrix}a&amp;b\\ 0&amp;d\end{pmatrix}^{2}=\begin{pmatrix}a^{2}&amp;b(a+d)\\ 0&amp;d^{2}\end{pmatrix}$ one needs $a^{2}=a$ and $d^{2}=d$ and $b(a+d)=b$; the last condition is automatic exactly when $a+d=1$.</p>
 <p><strong>Corollary.</strong> Both models have infinitely many idempotents, but the model of the triangle has two affine lines of them and the symmetric model has a circle, so the two sets are not homeomorphic.</p>
 <p><strong>Proof.</strong> The set of idempotents of $UT_2$ is degenerate at the two extreme idempotents and opens into lines, while the rank-one idempotents of the symmetric half form the circle.</p>
 <p><strong>Corollary.</strong> $E_{11}$ is a primitive idempotent in both models, and its complement is $E_{22}$ in both, since $E_{11}+E_{22}=I$.</p>
@@ -129,14 +129,14 @@
 <p><strong>Corollary.</strong> The two models are distinguished by the size of their symmetry groups, and the triangular model has the larger one.</p>
 <p><strong>Proof.</strong> The dimensions $1$ and $2$ differ.</p>
 <p><strong>Corollary.</strong> The conjugation by an upper triangular matrix fixes the diagonal and rescales the off-diagonal entry by the ratio of the diagonal entries.</p>
-<p><strong>Proof.</strong> For $T=\begin{pmatrix}p&q\\ 0&s\end{pmatrix}$ one computes $T^{-1}E_{12}T=\tfrac{p}{s}E_{12}$ and $T^{-1}E_{11}T=E_{11}+\tfrac{q}{p}E_{12}$.</p>
+<p><strong>Proof.</strong> For $T=\begin{pmatrix}p&amp;q\\ 0&amp;s\end{pmatrix}$ one computes $T^{-1}E_{12}T=\tfrac{p}{s}E_{12}$ and $T^{-1}E_{11}T=E_{11}+\tfrac{q}{p}E_{12}$.</p>
 <h2 id="what-does-transport">What Does Transport</h2>
 <p><strong>Proposition.</strong> The dimension, the unit, the trace and the diagonal subalgebra transport along $\sigma$, and the product, the determinant, the trace form, the nilpotent cone and the automorphism group do not.</p>
 <p><strong>Proof.</strong> The first three are linear or diagonal data, and $\sigma$ keeps the diagonal. The determinant of $\sigma(U)$ is $ad-\tfrac{b^{2}}{4}$, which depends on $b$, while the determinant of $U$ is $ad$; and the failing items are the ones computed above.</p>
 <p><strong>Corollary.</strong> The linear model is a model of the space and not of the algebra, and it is useful exactly for the questions that see only the space.</p>
 <p><strong>Proof.</strong> The transports listed first are all linear invariants, and the ones listed second are all invariants of the product or of the form.</p>
 <h2 id="summary">Summary</h2>
-<p>The map $\sigma(U)=\tfrac12(U+U^{\mathsf T})$ is a linear isomorphism from $UT_2$ onto $\operatorname{Sym}_2(\mathbb{R})$, both of dimension $3$, and it does not carry the product: for $P=\begin{pmatrix}1&1\\ 0&0\end{pmatrix}$ and $Q=E_{12}$ the two sides differ.</p>
+<p>The map $\sigma(U)=\tfrac12(U+U^{\mathsf T})$ is a linear isomorphism from $UT_2$ onto $\operatorname{Sym}_2(\mathbb{R})$, both of dimension $3$, and it does not carry the product: for $P=\begin{pmatrix}1&amp;1\\ 0&amp;0\end{pmatrix}$ and $Q=E_{12}$ the two sides differ.</p>
 <p>The two models agree on the diagonal algebra and differ on the off-diagonal entry: $UT_2$ has a nilpotent line where the symmetric half has none, its trace form is semidefinite with radical $n_+$ where the symmetric form is definite, its idempotents form two affine lines rather than a circle, its symmetrised product gives a Jordan algebra with a nonzero nilpotent cone, and its inner automorphism group has dimension $2$ against the dimension $1$ of $\mathrm{O}(2)$. The dimension, the unit, the trace and the diagonal subalgebra do transport, so the model is faithful exactly for the questions that see only the space.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charged black-bounce spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Charged black-bounce spacetimes - 2104.11376.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charged-black-bounce-spacetimes"><strong>Charged black-bounce spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2104.11376v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Edgardo Franzin, Stefano Liberati, Jacopo Mazza, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 4 October 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Charged black-bounce spacetimes - 2104.11376-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Charged black-bounce spacetimes - 2104.11376.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Charged black-bounce spacetimes - 2104.11376.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper adds electric charge to the black-bounce family, producing black-bounce–Reissner–Nordström and black-bounce–Kerr–Newman spacetimes. These are one-parameter deformations of the whole Kerr–Newman family that stay regular everywhere, pass weak-field tests, and interpolate between regular black holes and charged traversable wormholes. The authors show that charge changes the symmetry structure: a Killing tensor survives without the full Killing tower of principal and Killing–Yano tensors. They also show that the charged stress-energy can be read two ways, as charged dust with a nonlinear modification of Maxwell theory, or as standard Maxwell theory with an anisotropic fluid.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"Given the recent development of rotating black-bounce–Kerr spacetimes, for both theoretical and observational purposes it becomes interesting to see whether it might be possible to construct black-bounce variants of the entire Kerr–Newman family. Specifically, herein we shall consider black-bounce–Reissner–Nordström and black-bounce–Kerr–Newman spacetimes as particularly simple and clean everywhere-regular black hole 'mimickers' that deviate from the Kerr–Newman [family] in a precisely controlled and minimal manner, and smoothly interpolate between black holes and traversable wormholes."</p>
+<h3 id="why-charge-matters">Why charge matters</h3>
+<p>"While observationally the [charges of] astrophysical black holes are likely to be extremely low, $|Q|/m\ll1$, non-zero electric charge has a significant theoretical impact."</p>
+<h3 id="the-three-properties">The three properties</h3>
+<p>"We have seen that adding an electromagnetic charge to the black-bounce–Schwarzschild and black-bounce–Kerr spacetimes leads to the black-bounce–Reissner–Nordström and black-bounce–Kerr–Newman spacetimes, which are minimalist, one-parameter, deformations of the entire Kerr–Newman family which have the desirable properties that they simultaneously (i) pass all weak-field observational tests, (ii) are globally regular (no curvature singularities), and (iii) neatly interpolate between regular black holes and charged traversable wormholes."</p>
+<h3 id="the-symmetry-finding">The symmetry finding</h3>
+<p>"we have seen that such geometries present interesting theoretical features such as the existence of a Killing tensor without the presence of the full Killing tower (principal tensor, Killing–Yano tensor)."</p>
+<h3 id="the-ambiguity-in-the-source">The ambiguity in the source</h3>
+<p>"the fact that the charge-dependent component of the stress-energy for the black-bounce–Kerr–Newman spacetime has a rather non-trivial physical interpretation. In particular, we found that it can either be interpreted as charged dust together with a non-linear modification to standard Maxwell electromagnetism, or as standard Maxwell electromagnetism together with an anisotropic fluid. While there is no simple way to remove this ambiguity, we can howev[er] ..." — the paper states the ambiguity plainly and does not resolve it.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-killing-tensor-is-not-a-killing-tower">1. A Killing tensor is not a Killing tower</h3>
+<p><strong>The idea.</strong> Charge breaks the chain from principal tensor to Killing–Yano tensor to Killing tensor; the last survives alone.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> notes that the algebra reaches some quantities and not others. Here the reachable set shrinks when a parameter is turned on, and the paper says exactly which element is lost. That is a precise, checkable statement about what a symmetry buys, and the ledger currently has only a general remark.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> The Killing tower is a special structure and generic metrics have none, so the point is about a privileged class. Ranked first, because it is the sharpest statement of the trade-off.</p>
+<h3 id="2-one-source-two-readings">2. One source, two readings</h3>
+<p><strong>The idea.</strong> The same stress-energy can be described as modified electrodynamics with dust, or as Maxwell theory with an anisotropic fluid. Neither is preferred.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code> and its siblings fix a matter interpretation for each field. This paper shows that an energy-momentum tensor does not determine its matter content, which is a limit on what those articles can conclude. The corpus should record that the map from field to fluid is many-to-one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The ambiguity is demonstrated for one metric, so the general lesson is an inference. Ranked second.</p>
+<h3 id="3-regularity-by-construction">3. Regularity by construction</h3>
+<p><strong>The idea.</strong> The deformation removes the singularity by replacing $r$ with $\sqrt{r^2+a^2}$ throughout.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues what the algebra cannot do. This paper shows that removing a curvature singularity is a substitution in the metric function, not an algebraic feat. The catalogue should be careful not to list singularities as an obstruction the algebra creates.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on curvature.</p>
+<p><strong>What stands in the way.</strong> It is a caution about framing rather than a new entry. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

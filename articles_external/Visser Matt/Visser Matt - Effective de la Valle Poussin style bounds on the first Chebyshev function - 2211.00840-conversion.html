@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective de la Vallée Poussin style bounds on the first Chebyshev function — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective de la Valle Poussin style bounds on the first Chebyshev function -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-de-la-vallee-poussin-style-bounds-on-the-first-chebyshev-function"><strong>Effective de la Vallée Poussin style bounds on the first Chebyshev function</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2211.00840v1 [math.NT]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 November 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Effective de la Valle Poussin style bounds on the first Chebyshev function - 2211.00840-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective de la Valle Poussin style bounds on the first Chebyshev function - 2211.00840.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective de la Valle Poussin style bounds on the first Chebyshev function - 2211.00840.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>De la Vallée Poussin's 1898 proof of the prime number theorem included a bound on the first Chebyshev function, but with unspecified constants. The paper makes that bound effective, giving explicit constants and explicit thresholds. The method uses effective results established over the previous fifty years, plus elementary calculus and numerical checking, and it produces two families of explicit bounds. A table lists asymptotically stringent versions with their constants and thresholds.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-original-bound">The original bound</h3>
+<p>"In 1898 Charles Jean de la Vallée Poussin, as part of his famed proof of the prime number theorem, developed an ineffective bound on the first Chebyshev function of the form"</p>
+<p>$$|\vartheta(x)-x|=O\!\left(\sqrt{x}\,\exp\left(-K\sqrt{\ln x}\right)\right).$$</p>
+<p>"This bound holds for $x$ sufficiently large, $x\ge x_0$, and $K$ some unspecified positive constant."</p>
+<h3 id="the-gap">The gap</h3>
+<p>"To the best of my knowledge this bound has never been made effective — I have never yet seen this bound made fully explicit, with precise values being given for $x_0$ and $K$."</p>
+<h3 id="what-the-paper-supplies">What the paper supplies</h3>
+<p>"using a number of effective results established over the past 50 years, I shall develop two very simple explicit fully effective bounds of this type"</p>
+<p>$$|\vartheta(x)-x|&lt;\tfrac14\sqrt{x}\,\exp\left(-\sqrt{\ln x}\right),\qquad (x\ge 2).$$</p>
+<h3 id="the-honest-assessment">The honest assessment</h3>
+<p>"With some hindsight, deriving effective bounds of the de la Vallée Poussin form is, (given various effective results obtained over the last 50 years), seen to be almost trivial. Certainly, (given the effective results reported in [2–6]), nothing deeper than elementary calculus and some slightly tedious numerical checking was required."</p>
+<h3 id="why-it-is-still-worth-doing">Why it is still worth doing</h3>
+<p>"conceptually it is very pleasant to see simple explicit and effective bounds of the de la Vallée Poussin form dropping out so nicely."</p>
+<h3 id="the-numerical-table">The numerical table</h3>
+<p>The paper tabulates asymptotically stringent bounds, giving constants $\tilde a$ and $\tilde c$ together with thresholds $x_*$ ranging from $\exp(3000)$ to $\exp(10^7)$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-making-an-ineffective-result-effective">1. Making an ineffective result effective</h3>
+<p><strong>The idea.</strong> A bound with unspecified constants can be made explicit, and the cost is only bookkeeping.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions in qualitative terms. This paper shows that qualitative statements often hide explicit versions. The catalogue should distinguish "impossible" from "not yet made explicit", which is a distinction it currently blurs.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The example is from number theory and not from the framework. Ranked first, because it corrects a conflation the catalogue makes.</p>
+<h3 id="2-thresholds-are-part-of-the-claim">2. Thresholds are part of the claim</h3>
+<p><strong>The idea.</strong> A bound is not complete until the range on which it holds is stated.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would benefit from the rule that every claim needs its domain. Here the thresholds are enormous, which honestly limits the result, and the paper says so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of scope.</p>
+<p><strong>What stands in the way.</strong> It is a presentational norm. Ranked second.</p>
+<h3 id="3-almost-trivial-yet-unpublished">3. Almost trivial, yet unpublished</h3>
+<p><strong>The idea.</strong> A result can be simple once the ingredients exist and still be worth writing down.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> could note that some gaps are assembly problems rather than discoveries. That changes what an obstruction means.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> It is a remark about the sociology of results. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

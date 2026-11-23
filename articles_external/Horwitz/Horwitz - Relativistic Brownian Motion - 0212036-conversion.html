@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Brownian Motion — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Brownian Motion - 0212036.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-brownian-motion"><strong>Relativistic Brownian Motion</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0212036v2 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>O. Oron, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 January 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Relativistic Brownian Motion - 0212036-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Brownian Motion - 0212036.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-klein-gordon-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Brownian Motion - 0212036.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs Brownian motion that respects Lorentz covariance. The trick is to use the invariant world time to order the steps, and to treat spacelike and timelike jumps separately with an analytic continuation between them. The result is a covariant Fokker–Planck equation whose operator has the d'Alembertian form, and an equilibrium limit that reproduces the massless wave equation — or, with an exponentially decaying distribution in $\tau$, the Klein–Gordon equation with an imaginary mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We solve the problem of formulating Brownian motion in a relativistically covariant framework in 1 + 1 and 3 + 1 dimensions. We obtain covariant Fokker-Planck equations with (for the isotropic case) a differential operator of invariant d’Alembert form."</p>
+<h3 id="the-essential-step">The essential step</h3>
+<p>"Treating the spacelike and timelike fluctuations separately, we show that it is essential to take into account the analytic continuation of 'unphysical' fluctuations in order to achieve these results."</p>
+<h3 id="the-equilibrium-limit">The equilibrium limit</h3>
+<p>"yperbolic variable). At equilbrium, where ∂D/∂τ = 0, the resulting diffusion equation turns into a classical wave equation which, in the absence of a drift term K µ , is the wave equation for a massless field. An exponentially decreasing distribution in τ of the form exp −κτ would correspond to a Klein-Gordon equation for a particle in a tachyonic state (mass squared −κ). We have considered"</p>
+<h3 id="the-choice-of-what-counts-as-physical">The choice of what counts as physical</h3>
+<p>"We have considered the spacelike jumps as 'physical' since they result in the usual Brownian motion in the nonrelativistic limit. If the timelike jumps were considered as 'physical', one would analytically continue the 'unphysical' spacelike process. The resulting diffusion equation would have the opposite sign for the d'Alembert operator, and an exponentially decreasing distribution would then result in a Klein-Gordon equation in a timelike particle state."</p>
+<h3 id="the-relation-to-nelson">The relation to Nelson</h3>
+<p>"Nelson has shown that non-relativistic Brownian motion can be associated with a Schrödinger equation. Equipped with the procedures we presented here, constructing relativistic Brownian motion" leads to relativistic equations of Schrödinger type.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-diffusion-equation-with-the-wave-operator-as-its-generator">1. A diffusion equation with the wave operator as its generator</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the covariant Fokker–Planck operator is the d'Alembertian, not the Laplacian. Diffusion in a world-time-parametrised theory therefore has the same principal symbol as the wave equation, and the sign of the operator is a physical choice rather than a convention.</p>
+<p><strong>What it would add.</strong> The corpus's Klein–Gordon articles treat the d'Alembertian as the kinetic operator of a free field. This says the same operator is a diffusion generator, which is a different reading of the same symbol and one that makes the mass term look like a decay rate in $\tau$. For the corpus's articles on the relation between wave equations and stochastic processes, this is the missing construction, and it is the relativistic counterpart of Nelson's result.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification of mass with a decay rate gives imaginary mass for real decay, which is the tachyonic branch; making it physical requires a choice the paper presents as a convention.</p>
+<h3 id="2-which-fluctuations-are-physical-is-a-choice-with-consequences">2. Which fluctuations are physical is a choice with consequences</h3>
+<p><strong>The idea.</strong> A <strong>structural observation</strong>: in a covariant diffusion there are spacelike and timelike jumps, and one must choose which to call physical and analytically continue the other. The two choices give opposite signs for the d'Alembert operator, hence different physics.</p>
+<p><strong>What it would add.</strong> The corpus's articles on analytic continuation and on the Wick rotation treat the continuation as a calculational device with no physical commitment. This shows that in a stochastic setting the continuation is a choice that determines whether the resulting particle is timelike or tachyonic. It is a rare case where a convention has a definite physical consequence, and it would sharpen the corpus's discussion of what a rotation to imaginary time means.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-paradox-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper argues for one choice on the grounds that it reproduces non-relativistic Brownian motion, which is a physical argument but not a uniqueness proof.</p>
+<h3 id="3-the-lorentz-factor-as-an-order-parameter">3. The Lorentz factor as an order parameter</h3>
+<p><strong>The idea.</strong> A <strong>suggestion</strong>: in $3+1$ dimensions the distribution over the velocity's hyperbolic variable $\gamma$ can be read as an order parameter, with the temperature of the underlying dynamics fixing the distribution.</p>
+<p><strong>What it would add.</strong> The corpus's thermodynamic articles use order parameters for phase structure. Borrowing the notion for a velocity distribution is unusual: it makes the boost parameter a state variable and lets one talk about phases of a relativistic gas in a way that is not just a change of frame. Whether that is more than a suggestive analogy would be worth knowing, and the corpus is the right place to test it, since it already treats $\gamma$ algebraically.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper calls it something "one may think of", and in $1+1$ dimensions the result is independent of the distribution, so the order-parameter reading has no content in the simplest case.</p>
+<p>The rank: the d'Alembertian generator first, because it is the main result; the choice of physical fluctuations second, because it is a convention with consequences; the order parameter last, because it is a suggestion.</p>
+<p>The remaining items in one line each: the analytic continuation between spacelike and timelike processes, which is the technical trick; the drift term $K^\mu$, whose absence turns diffusion into the free wave equation; and the extension to correlated fluctuations in a Riemannian spacetime, which is where the construction would meet the corpus's curved-space articles.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

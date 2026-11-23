@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisiting Schwarzschild&#x27;s constant density star in isotropic coordinates — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Revisiting Schwarzschild&#x27;s constant density star in isotropic coordinates -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="revisiting-schwarzschilds-constant-density-star-in-isotropic-coordinates"><strong>Revisiting Schwarzschild's constant density star in isotropic coordinates</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2606.01061v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Christopher Simmonds, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, June 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Revisiting Schwarzschild's constant density star in isotropic coordinates - 2606.01061-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Revisiting Schwarzschild's constant density star in isotropic coordinates - 2606.01061.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Revisiting Schwarzschild's constant density star in isotropic coordinates - 2606.01061.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Schwarzschild's interior solution for a star of constant density is a hundred and ten years old. The authors redo it in isotropic coordinates. In that gauge the line element contains two simple rational functions. The two parameters are the central density and the central pressure, which are easy to read off. They work through the energy conditions, the Misner–Sharp mass, the junction at the surface, and the speed of sound.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"we shall revisit the venerable 110-year-old topic of Schwarzschild's constant density star, emphasizing that for many (though not quite all) purposes it is much easier to analyze this spacetime in isotropic coordinates (versus the more usually adopted Hilbert–Droste area coordinates)"</p>
+<h3 id="the-gain">The gain</h3>
+<p>"The relevant line element is particularly transparent, containing two simple rational functions of the radial coordinate"</p>
+<h3 id="the-parameters">The parameters</h3>
+<p>"the two physical parameters appearing in this line element are easily and readily interpretable in terms of the central density and central pressure of the star"</p>
+<h3 id="why-it-is-done">Why it is done</h3>
+<p>"using isotropic coordinates makes the discussion a lot simpler, and, as we have seen above, is pedagogically interesting for a number of reasons"</p>
+<h3 id="the-horizon">The horizon</h3>
+<p>"with a view to the future, we very strongly suspect that the use of isotropic coordinates for generic perfect fluid spheres may also prove advantageous"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-coordinates-change-the-difficulty">1. Coordinates change the difficulty</h3>
+<p><strong>The idea.</strong> A hard problem becomes easy in the right chart.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> treats chart choice as convention. This paper shows it is also a computational tool.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on coordinates.</p>
+<p><strong>What stands in the way.</strong> The gain is pedagogical. Ranked first, because it is a direct statement about the target's topic.</p>
+<h3 id="2-interior-solutions-as-tests">2. Interior solutions as tests</h3>
+<p><strong>The idea.</strong> An exact star gives a controlled setting for energy conditions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> states the conservation law abstractly. An exact interior shows what it implies in practice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> Constant density is unrealistic. Ranked second.</p>
+<h3 id="3-the-buchdahl-bound">3. The Buchdahl bound</h3>
+<p><strong>The idea.</strong> Pressure diverges before the horizon can form, which caps the compactness.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizon formation. A bound on compactness is a constraint on when a horizon can appear at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of formation.</p>
+<p><strong>What stands in the way.</strong> The bound is for perfect fluids. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

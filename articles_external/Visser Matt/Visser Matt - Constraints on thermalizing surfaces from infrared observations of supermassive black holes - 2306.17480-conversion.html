@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constraints on thermalizing surfaces from infrared observations of supermassive black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on thermalizing surfaces from infrared observations of supermassive…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constraints-on-thermalizing-surfaces-from-infrared-observations-of-supermassive-black-holes"><strong>Constraints on thermalizing surfaces from infrared observations of supermassive black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2306.17480v1 [astro-ph.HE]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 30 June 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Constraints on thermalizing surfaces from infrared observations of supermassive black holes - 2306.17480-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on thermalizing surfaces from infrared observations of supermassive black holes - 2306.17480.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on thermalizing surfaces from infrared observations of supermassive black holes - 2306.17480.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Infrared observations of Sagittarius A* and M87* show no sign that the sources have physical surfaces in thermal equilibrium with their surroundings. The paper turns that absence into a constraint. It parameterises the interaction between a horizonless object and its accretion flow by an absorption coefficient and a re-emission timescale, and shows that temporary absorption is required for the object to adapt to its environment without forming a horizon. Because the thermalisation time can grow without bound for compact objects, the absence of equilibrium rules out the models whose thermalisation time is short enough for equilibrium to be expected.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-observation-used">The observation used</h3>
+<p>"Infrared observations of Sgr A* and M87* [show no evidence that these] sources have physical surfaces in thermal [equilibrium with their environment]."</p>
+<h3 id="what-the-paper-supplies">What the paper supplies</h3>
+<p>"In this paper we discuss a general parametrizatio[n of the interaction between a horizonless object and its accretion flow, which] permits [one] to quantify how close a horizonless [object is to equilibrium, through] the timescale in which its surface can th[ermalize]. [This timescale is] unbounded, growing large for objects that [are compact and effectively] infinite for the latter."</p>
+<h3 id="the-physical-requirement">The physical requirement</h3>
+<p>"Temporary absorption is necessary for the horizonless object to be [able to] adapt dynamically to its environment and eventually be able to reach a steady state. This is in particular necessary to avoid the formation of horizons. Hence, a non-zero value of $\tilde\kappa$ seems to be unavoidable based on known physics."</p>
+<h3 id="the-second-parameter">The second parameter</h3>
+<p>"The second parameter necessary to describe temporary absorption is the re-emission timescale, which we have parametrized in terms of $N$. We have shown that this parameter has an important impact on the thermalization timescale and that it can become arbitrarily large, preventing the [latter] from happening altogether for relatively compact horizonless objects."</p>
+<h3 id="the-constraint">The constraint</h3>
+<p>"that equilibrium is not observed in systems such as Sgr A* and M87* can be used to place constraints on horizonless objects, ruling out models in which this thermalization timescale is short enough so that expecting equilibrium is reasonable."</p>
+<h3 id="the-general-point">The general point</h3>
+<p>"Modeling the interactions between horizonless objects and their accreting environments is essential to cast constraints on these alternatives to black holes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-surface-needs-a-response-time">1. A surface needs a response time</h3>
+<p><strong>The idea.</strong> An object without a horizon must have a surface, and a surface that interacts must have a timescale. Without that timescale the object cannot come to equilibrium.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> contrasts objects with and without horizons and treats the difference as structural. This paper shows the contrast has a dynamical cost: the horizonless branch must respond, and the response is measurable in principle. The article's comparison of the two branches is incomplete without it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The argument needs an accretion model and is restricted to two observed sources. Ranked first, because it makes the structural distinction observationally consequential.</p>
+<h3 id="2-absence-of-evidence-as-a-bound">2. Absence of evidence as a bound</h3>
+<p><strong>The idea.</strong> Not seeing thermal equilibrium, where equilibrium would be expected, excludes a range of parameters.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> catalogues what would count as evidence. A null observation used as a bound is a distinct category, and it is the category most available for exotic objects. Naming it extends what the article can count.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The inference depends on the expectation being correct. Ranked second.</p>
+<h3 id="3-two-parameters-again">3. Two parameters again</h3>
+<p><strong>The idea.</strong> Absorption and re-emission timescale, with the allowed region a region and not a number.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes the framework has too many free functions to be constrained. Here two free parameters are constrained by one observation, which shows that a small number of parameters can still be pinned down. The catalogue's pessimism should be quantitative: it is about the count, not about freedom as such.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on free functions.</p>
+<p><strong>What stands in the way.</strong> The parameters are physically interpretable, unlike the framework's functions. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

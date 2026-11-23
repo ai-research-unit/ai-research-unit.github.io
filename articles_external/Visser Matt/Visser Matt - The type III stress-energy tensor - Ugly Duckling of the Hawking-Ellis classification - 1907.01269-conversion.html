@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The type III stress-energy tensor: ugly duckling of the Hawking–Ellis classification — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The type III stress-energy tensor - Ugly Duckling of the Hawking-Ellis…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-type-iii-stress-energy-tensor-ugly-duckling-of-the-hawkingellis-classification"><strong>The type III stress-energy tensor: ugly duckling of the Hawking–Ellis classification</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1907.01269v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 13 November 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - The type III stress-energy tensor - Ugly Duckling of the Hawking-Ellis classification - 1907.01269-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The type III stress-energy tensor - Ugly Duckling of the Hawking-Ellis classification - 1907.01269.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The type III stress-energy tensor - Ugly Duckling of the Hawking-Ellis classification - 1907.01269.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Hawking–Ellis classification sorts stress-energy tensors into four types. Types I and II appear classically, type IV appears in semiclassical gravity, and type III is the awkward case. The authors isolate type III$_0$, the essential core of type III. Using gyratons as known examples, they generalise the geometry such a tensor generates. The resulting spacetimes are Kundt metrics.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-classification">The classification</h3>
+<p>"tensors as per the Hawking–Ellis classification"</p>
+<h3 id="the-distribution-of-types">The distribution of types</h3>
+<p>"Type I and type II naturally appear in classical situations, and can also describe semiclassical effects. Type IV often shows up in semiclassical gravity. Type III is much more subtle."</p>
+<h3 id="the-focus">The focus</h3>
+<p>"We focus our attention on type III$_0$ stress-energy tensors, which capture the essence ('essential core') of type III."</p>
+<h3 id="the-examples">The examples</h3>
+<p>"Reflecting on known purely phenomenological examples, ('gyratons'), we are able to generalize the geometry generated by those type III$_0$ stress-ener[gy tensors]"</p>
+<h3 id="the-resulting-geometry">The resulting geometry</h3>
+<p>"we only need $\partial_r g_{ij}=0$ to have a Kundt spacetime"</p>
+<p>$$\theta_{ij}=\nabla_i\ell_j=\tfrac12\partial_r g_{ij},\qquad \omega_{ij}=\nabla_{[i}\ell_{j]}=0,\qquad \sigma_{ij}=\theta_{ij}-\tfrac13\theta\,h_{ij}\qquad (paper\ A.6)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-classification-of-matter">1. Classification of matter</h3>
+<p><strong>The idea.</strong> Stress-energy tensors fall into algebraic types, and the type fixes the geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> treats stress-energy generically. A classification would let it say which geometries each matter type can produce.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of matter types.</p>
+<p><strong>What stands in the way.</strong> Type III is rare in practice. Ranked first, because it supplies a missing classification.</p>
+<h3 id="2-algebraic-types-meet-algebraic-frameworks">2. Algebraic types meet algebraic frameworks</h3>
+<p><strong>The idea.</strong> Both the classification and the biquaternion programme are algebraic sorts of spacetimes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would gain a classification that is algebraic but not tied to a division algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The two classifications are unrelated. Ranked second.</p>
+<h3 id="3-gyratons">3. Gyratons</h3>
+<p><strong>The idea.</strong> A known phenomenological family can be generalised into a theorem.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain a case where examples come before the general result.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of examples.</p>
+<p><strong>What stands in the way.</strong> Gyratons are exotic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

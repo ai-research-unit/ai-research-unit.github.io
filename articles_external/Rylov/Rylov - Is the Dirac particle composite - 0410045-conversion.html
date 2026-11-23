@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is the Dirac Particle Composite? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Is the Dirac particle composite - 0410045.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="is-the-dirac-particle-composite"><strong>Is the Dirac Particle Composite?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0410045 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>not stated in the extraction</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>44 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Is the Dirac particle composite - 0410045-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Is the Dirac particle composite - 0410045.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Is the Dirac particle composite - 0410045.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs the classical model $S_{D\,cl}$ of the Dirac particle by dynamic disquantization, and then asks what the model is. Two interpretations are offered — dynamical and geometrical — and the second is argued to be the only consistent one. Geometrical interpretation means an inversion of the usual order: the world line is the physical object and the particle is its attribute. Making that literal requires geometrising the mass, which is done by replacing the world line with a broken line of segments of equal length measured by the world function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>The abstract gives the procedure and its properties. "Classical model $S_{D\,cl}$ of the Dirac particle $S_D$ is constructed", and for that "one uses a new dynamic method: dynamic disquantization. This relativistic purely dynamic procedure does not use principles of quantum mechanics." The result: "described by a system of ordinary differential equations, containing the quantum constant h̄ as a parameter. Dynamic", with "amic equations for SDcl are determined by the Dirac equation uniquely.", and "$S_{D\,cl}$ has ten degrees of freedom and cannot be a pointlike particle, because it has an internal structure."</p>
+<p>So the Dirac particle is composite in the precise sense that its classical limit has internal degrees of freedom, and the quantum constant survives in the classical description as a parameter rather than disappearing.</p>
+<h3 id="two-interpretations-one-survivor">Two interpretations, one survivor</h3>
+<p>"There are two ways of interpretation of the dynamic system $S_{D\,cl}$: (1) dynamical interpretation and (2) geometrical interpretation." The choice is not presented as a matter of taste: "We shall see that the only solution of this problem is the geometrical interpretation instead of the dynamical one."</p>
+<h3 id="the-inversion">The inversion</h3>
+<p>The geometrical reading rests on a statement about what is primary:</p>
+<p>"According to the principles of relativity the world line (WL) is a physical object, whereas the particle (pointlike object in 3-space) is an attribute of WL. We shall use abbreviation WL (instead of world line), when we want to stress that the world line is a physical object, but not an attribute of a particle (its history)."</p>
+<p>The obstacle is the mass: "WL is not a completely geometrical object, because it contains a non-geometric parameter: mass $m$. To make WL to be a geometrical object we are to geometrize the mass." The mass is then a length: the world line is replaced by a broken line $T_{br}=\bigcup_iT[P_iP_{i+1}]$ of straight segments "of the same length µ  q q q", with the segment length given by the world function, $[P_iP_{i+1}]=R\sqrt{2\sigma(P_i,P_{i+1})}$. A particle is then a chain of segments of one length, and its mass is that length.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-world-line-is-primary-the-particle-is-derived">1. The world line is primary, the particle is derived</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> that reverses the usual ontology: a particle is not an object that traces a world line, it is a feature of a world line. Positions and momenta are then properties of a curve, not of a thing.</p>
+<p><strong>What it would add.</strong> The corpus starts from a field and recovers particles as configurations, so it has a third option — neither object-first nor curve-first. Placing the corpus's own account against Rylov's inversion would clarify what the corpus's particles are, which is a question its derivations leave implicit. The corpus's curved-spacetime article is where world lines are treated as primary objects already, so the comparison has a home.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The inversion is asserted from "the principles of relativity", which is a large appeal for a small step; and the two views are empirically indistinguishable, since a particle and its world line carry the same data. Without an observable that separates them, the inversion is a preference.</p>
+<h3 id="2-mass-as-a-segment-length">2. Mass as a segment length</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: mass is the length $\mu$ of a link, with $[P_iP_{i+1}]=R\sqrt{2\sigma(P_i,P_{i+1})}$, and the world line is a chain of equal links. So the mass shell is a statement that every link has the same length.</p>
+<p><strong>What it would add.</strong> The corpus has two kinds of mass and derives both from the algebra. This gives a third reading — mass as a lattice spacing along a curve — and it is the only one of the three that is a length with a geometric construction rather than a norm in an algebra. Comparing the three would say whether the corpus's two masses are two norms or one spacing under two conventions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction needs a broken line, so it presupposes discreteness that the corpus does not have, and the factor $R$ is undetermined. A length fixed up to a constant is not yet a mass.</p>
+<h3 id="3-ten-degrees-of-freedom-as-the-definition-of-composite">3. Ten degrees of freedom as the definition of composite</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: composite means ten degrees of freedom, not "made of parts". The count is what makes the question in the title answerable.</p>
+<p><strong>What it would add.</strong> The corpus's articles on the Dirac field as a fluid count components, and a comparison of the two counts would decide whether the corpus's field carries the same internal structure or less. That is a check with a number at the end, and the corpus has no such count of its own for the Dirac particle's classical limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The ten are the degrees of freedom of his constructed system, and the count depends on what one counts — positions, velocities, internal angles. Without a stated rule for counting, agreement or disagreement proves nothing.</p>
+<p>The rank: mass as a length first, because it touches the corpus's two-mass article directly; the chain of equal links second, because it is the construction that makes the first one work; the degree count last, because counting rules differ.</p>
+<p>The remaining items in one line each: the dynamic-disquantization procedure (developed at length in the 0507183 note); the choice between dynamical and geometrical interpretations as forced rather than free, which is the paper's weakest step and its most interesting claim.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -137,11 +137,11 @@ E_{i,i+1}^2=0,\qquad \operatorname{rank}E_{i,i+1}=1,\qquad E_{i,i+1}\neq0 .
 $$</p>
 <p><strong>Proof.</strong> The square is $\delta_{i+1,i}E_{i,i+1}=0$. The rank is one because the image is the line $\mathbb{C}v_i$ and the kernel is the hyperplane spanned by the other five vectors. The unit is nonzero because it sends $v_{i+1}$ to $v_i\neq0$.</p>
 <h3 id="the-composites">The Composites</h3>
-<p><strong>Theorem.</strong> For $i<j$,</p>
+<p><strong>Theorem.</strong> For $i&lt;j$,</p>
 <p>$$
 E_{ij}=E_{i,i+1}E_{i+1,i+2}\cdots E_{j-1,j}.
 $$</p>
-<p>For $i>j$ the same formula with the reversed chain gives $E_{ij}$; for $i=j$ the empty product is $E_{ii}$.</p>
+<p>For $i&gt;j$ the same formula with the reversed chain gives $E_{ij}$; for $i=j$ the empty product is $E_{ii}$.</p>
 <p><strong>Proof.</strong> Apply the matrix-unit rule successively:</p>
 <p>$$
 E_{i,i+1}E_{i+1,i+2}=E_{i,i+2},\qquad
@@ -149,9 +149,9 @@ E_{i,i+2}E_{i+2,i+3}=E_{i,i+3},
 $$</p>
 <p>and so on. Each intermediate product is a matrix unit because the inner indices match, and the chain telescopes to $E_{ij}$.</p>
 <p><strong>Corollary.</strong> The five simple nilpotents generate, as an algebra without unit, the fifteen-dimensional algebra of strictly upper triangular matrices; with the six diagonal units they generate the twenty-one-dimensional upper triangular subalgebra; and adding the five negative simple units $E_{21},\dots,E_{65}$ generates all of $M_6(\mathbb{C})$.</p>
-<p><strong>Proof.</strong> The composites $E_{ij}$ with $i<j$ are the fifteen positive-root vectors and are obtained from the simple ones by the theorem; their span is the strictly upper triangular algebra. Adding the $E_{ii}$ gives the diagonal, hence the upper triangular subalgebra. The lower triangular units are the products of the negative simple units, obtained by the same telescoping with the indices reversed, and the upper, lower and diagonal units together span all thirty-six coordinates.</p>
+<p><strong>Proof.</strong> The composites $E_{ij}$ with $i&lt;j$ are the fifteen positive-root vectors and are obtained from the simple ones by the theorem; their span is the strictly upper triangular algebra. Adding the $E_{ii}$ gives the diagonal, hence the upper triangular subalgebra. The lower triangular units are the products of the negative simple units, obtained by the same telescoping with the indices reversed, and the upper, lower and diagonal units together span all thirty-six coordinates.</p>
 <h3 id="the-positive-and-the-negative-units">The Positive and the Negative Units</h3>
-<p><strong>Proposition.</strong> The off-diagonal units split into the fifteen positive ones $E_{ij}$ with $i<j$ and the fifteen negative ones with $i>j$. Each is nilpotent of index two, and the two sets are exchanged by the transpose in the frame.</p>
+<p><strong>Proposition.</strong> The off-diagonal units split into the fifteen positive ones $E_{ij}$ with $i&lt;j$ and the fifteen negative ones with $i&gt;j$. Each is nilpotent of index two, and the two sets are exchanged by the transpose in the frame.</p>
 <p><strong>Proof.</strong> $E_{ij}^2=\delta_{ji}E_{ij}=0$ whenever $i\neq j$. The transpose of $v_iv_j^{\vee}$ is $v_jv_i^{\vee}=E_{ji}$.</p>
 <p><strong>Remark.</strong> The words <em>simple</em> and <em>composite</em> refer to the length of the chain from $i$ to $j$: the simple ones have length one, the composites have length $j-i\ge2$. The algebra has five simple nilpotents and ten composite ones in the positive set, and the same numbers in the negative set.</p>
 <h2 id="the-gauge">The Gauge</h2>
@@ -177,7 +177,7 @@ E_{ii}\longmapsto E_{ii}.
 $$</p>
 <p><strong>Proof.</strong> $(t_iv_i)(t_jv_j)^{\vee}=t_iv_i\,t_j^{-1}v_j^{\vee}=(t_i/t_j)E_{ij}$. For $j=i+1$ the ratio is $\lambda_i$; for $j=i$ it is $1$.</p>
 <p><strong>Corollary (the gauge rescales the nilpotents and fixes the idempotents).</strong> The five parameters $\lambda_1,\dots,\lambda_5$ act one on each simple nilpotent, and the idempotents $E_{11},\dots,E_{66}$ are fixed. There is no parameter attached to an idempotent.</p>
-<p><strong>Corollary (the action on the composites).</strong> The composite $E_{ij}$ with $i<j$ is rescaled by the product of the simple parameters along the chain:</p>
+<p><strong>Corollary (the action on the composites).</strong> The composite $E_{ij}$ with $i&lt;j$ is rescaled by the product of the simple parameters along the chain:</p>
 <p>$$
 E_{ij}\longmapsto\lambda_i\lambda_{i+1}\cdots\lambda_{j-1}E_{ij}.
 $$</p>
@@ -304,7 +304,7 @@ $$</p>
 <p>The five simple nilpotents $E_{12},\dots,E_{56}$ generate the fifteen positive units by the composites</p>
 <p>$$
 E_{ij}=E_{i,i+1}E_{i+1,i+2}\cdots E_{j-1,j},
-\qquad i<j.
+\qquad i&lt;j.
 $$</p>
 <p>The gauge is the torus $(\mathbb{C}^\times)^5$ acting by $E_{ij}\mapsto(t_i/t_j)E_{ij}$; it rescales the simple nilpotents by $\lambda_i=t_i/t_{i+1}$, the composites by the products, and fixes every idempotent.</p>
 <p>$$
@@ -343,7 +343,7 @@ $$</p>
 <tr>
 <td>Composites</td>
 <td>$10$</td>
-<td>$E_{ij}$, $i<j$, $j-i\ge2$</td>
+<td>$E_{ij}$, $i&lt;j$, $j-i\ge2$</td>
 </tr>
 <tr>
 <td>Idempotents</td>

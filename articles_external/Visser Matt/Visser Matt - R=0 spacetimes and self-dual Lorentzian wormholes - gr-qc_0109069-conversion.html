@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R=0 spacetimes and self-dual Lorentzian wormholes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - R=0 spacetimes and self-dual Lorentzian wormholes - gr-qc_0109069.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="r0-spacetimes-and-self-dual-lorentzian-wormholes"><strong>R=0 spacetimes and self-dual Lorentzian wormholes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0109069v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Naresh Dadhich, Sayan Kar, Sailajananda Mukherjee, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 September 2001</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - R=0 spacetimes and self-dual Lorentzian wormholes - gr-qc_0109069-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - R=0 spacetimes and self-dual Lorentzian wormholes - gr-qc_0109069.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - R=0 spacetimes and self-dual Lorentzian wormholes - gr-qc_0109069.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors solve a condition on the stress-energy tensor for a timelike observer. The solutions have zero scalar curvature and are self-dual in the electrogravity sense. The family includes the Schwarzschild black hole, a set of naked singularities, and a separate set of wormholes. Using isotropic coordinates, the authors map which parameters give which geometry.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-equation">The equation</h3>
+<p>"the general solution of the equation $\rho=\rho_t=0$, where $\rho=T_{ij}u^iu^j$, $\rho_t=\left(T_{ij}-\tfrac12 Tg_{ij}\right)u^iu^j$, and $u_iu^i=-1$"</p>
+<h3 id="the-class">The class</h3>
+<p>"This equation characterizes a class of spacetimes which are 'self dual' (in the sense of electrogravity duality)."</p>
+<h3 id="the-contents">The contents</h3>
+<p>"The class includes the Schwarzschild black hole, a family of naked singularities, and a disjoint family of Lorentzian wormholes, all of which have vanishing scalar curvature ($R=0$)."</p>
+<h3 id="the-map">The map</h3>
+<p>"Using isotropic coordinates we delineate clearly the domains of parameter space for which wormholes, nakedly singular spacetimes and the Schwarzschild black hole can be obtained."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-condition-three-geometries">1. One condition, three geometries</h3>
+<p><strong>The idea.</strong> A single algebraic condition on the stress-energy produces black holes, naked singularities, and wormholes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> treats the tensor's conservation. Here a condition on its components sorts geometries.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conditions.</p>
+<p><strong>What stands in the way.</strong> The condition is a choice, not a law. Ranked first, because it links tensor algebra to global structure.</p>
+<h3 id="2-self-duality-beyond-electrodynamics">2. Self-duality beyond electrodynamics</h3>
+<p><strong>The idea.</strong> A duality notion from electromagnetism can classify spacetimes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code> uses the Lorentz-group structure behind field duality. Applying the same structure to curvature would connect the two.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code>, in the discussion of duality.</p>
+<p><strong>What stands in the way.</strong> The analogy is formal. Ranked second.</p>
+<h3 id="3-isotropic-coordinates-as-a-map">3. Isotropic coordinates as a map</h3>
+<p><strong>The idea.</strong> A coordinate choice makes the parameter domains visible.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> discusses coordinate choices. This is an example where a choice organises a classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on coordinates.</p>
+<p><strong>What stands in the way.</strong> The gain is presentational. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

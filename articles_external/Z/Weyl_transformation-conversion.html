@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weyl Transformation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Weyl_transformation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="weyl-transformation"><strong>Weyl Transformation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Weyl transformation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Weyl_transformation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Weyl_transformation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Weyl_transformation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Weyl transformation: the local rescaling of the metric that preserves the conformal class, the theories and expressions that are invariant under it, and the anomalies that spoil the invariance in quantum theory.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"the Weyl transformation, named after German mathematician Hermann Weyl, is a local rescaling of the metric tensor" $g_{\mu\nu}(x)\to e^{2\Omega(x)}g_{\mu\nu}(x)$, "which produces another metric in the same conformal class. A theory or an expression invariant under this transformation is called conformally invariant, or is said to possess Weyl invariance or Weyl symmetry."</p>
+<h3 id="what-is-invariant">What is invariant</h3>
+<p>The light cone is preserved by the rescaling, so causality is untouched. In $d$ dimensions the metric determinant brings a factor $e^{2d\Omega}$, which is why the Ricci scalar transforms with a term containing $\Box\Omega$, and why the Einstein–Hilbert action is not invariant for $d\neq2$.</p>
+<h3 id="the-anomaly">The anomaly</h3>
+<p>"The Weyl symmetry is an import[ant]" ingredient of string theory and of theories of gravity, and it is anomalous in most quantum field theories: the classical invariance does not survive regularisation, and the trace of the stress tensor acquires a non-zero value. That trace anomaly is a quantum effect with measurable consequences.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rescaling-the-metric-is-not-a-coordinate-change">1. Rescaling the metric is not a coordinate change</h3>
+<p><strong>The idea.</strong> A Weyl transformation changes lengths at each point while keeping angles and the light cone. It is a change of the metric, not of the chart, so it is a genuine degree of freedom and not a relabelling. This is a <strong>reading</strong> that separates two transformations often grouped as "conformal".</p>
+<p><strong>What it would add.</strong> A precise statement the corpus's gravity articles need, since they treat conformal structure and coordinate freedom together.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>, on the conformal part.</p>
+<p><strong>What stands in the way.</strong> The corpus's metric is built from the algebra's frame; a local rescaling corresponds to a position-dependent normalisation of the frame, which is available, but the transformation law of the algebra's own derivative has to be computed.</p>
+<h3 id="2-a-classical-symmetry-can-fail-quantum-mechanically">2. A classical symmetry can fail quantum mechanically</h3>
+<p><strong>The idea.</strong> The invariance holds for the action and fails for the measure. An anomaly is not a mistake; it is the statement that no regularisation preserves the symmetry.</p>
+<p><strong>What it would add.</strong> A model of how a symmetry of the classical algebra can fail after quantisation, which is the pattern the corpus's own quantisation articles should be alert to.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code>, on the measure.</p>
+<p><strong>What stands in the way.</strong> The corpus has no functional measure, so the anomaly can only be cited, not derived.</p>
+<p>This is an encyclopedia article; the definition, the invariants, the transformation of curvature and the anomaly are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

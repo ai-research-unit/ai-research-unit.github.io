@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counterexamples to the maximum force conjecture — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Counterexamples to the maximum force conjecture - 2102.01831.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="counterexamples-to-the-maximum-force-conjecture"><strong>Counterexamples to the maximum force conjecture</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2102.01831v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Aden Jowsey, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 March 2021 (dated 3 February 2021)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Counterexamples to the maximum force conjecture - 2102.01831-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Counterexamples to the maximum force conjecture - 2102.01831.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Counterexamples to the maximum force conjecture - 2102.01831.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The speed of light and Newton's constant combine into a quantity with the dimensions of force, and several authors have proposed that no force in nature can exceed it, in a strong form and in a weak form. The paper computes forces inside perfect fluid spheres in general relativity and finds counterexamples to both forms. The counterexamples include fluid spheres on the verge of gravitational collapse. The authors conclude that a maximum force principle can survive only if the class of allowed forces is restricted explicitly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-conjecture">The conjecture</h3>
+<p>"Dimensional analysis shows that the speed of light and [Newton's constant of gravi]tation can be combined to define a quantity $F_*=Gc_N$ [in appropriate units, a force] (equivalently, tension). Then in any physical si[tuation] where the quantity $f$ is some dimensionless funct[ion of the parameters,] many physical situations explicit calculation yiel[ds] $f$ [of order unity]. This has lead multiple authors to suggest a (weak or st[rong]) maximum force / maximum tension conjecture."</p>
+<h3 id="what-the-paper-does-instead">What the paper does instead</h3>
+<p>"Working within the framework [of general relativity we] will instead focus on counter-examples to this c[onjecture], [and on] the extent to which the counter-examples are [robust]. [The] counter-examples we shall explore strongly sugge[st that one should not place] credence into any universal maximum force/maximum [tension principle]."</p>
+<h3 id="where-the-counterexamples-are-found">Where the counterexamples are found</h3>
+<p>"[Within] fluid spheres on the verge of gravitational coll[apse]" the computed forces violate "both the weak (and strong) maximum force conjectures."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"Through the analysis of radial and equatorial forces within perfect fluid spheres in general relativity, we have produced a number of counter-examples to both the strong and weak forms of the maximum force conjecture. These counter-examples highlight significant issues with the current phrasing and understanding of this conjecture, as merely specifying that forces are bounded within the framework of general relativity is manifestly a falsehood."</p>
+<h3 id="what-would-be-needed">What would be needed</h3>
+<p>"should one wish some version of the maximum force conjecture to be considered viable as a potential physical principle, it must be very clearly specified as to what types of forces they pertain to." And: "If one w[ishes to retain a] 'maximum force' [principle] then one will have to very caref[ully specify which forces are] to be allowed within the domain of discourse."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-dimensional-argument-is-not-a-law">1. A dimensional argument is not a law</h3>
+<p><strong>The idea.</strong> Combining constants into a quantity with the right dimensions shows only that the quantity exists, not that anything is bounded by it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> considers whether a framework's dimensionless structures count as predictions. This paper is the clearest available case of a proposed principle resting on dimensional analysis and failing under calculation. The article should use it to state the standard its own constructions must meet.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The failure is demonstrated in fluid spheres and does not address the framework. Ranked first, because it is a sharp standard and an instructive failure.</p>
+<h3 id="2-counterexamples-need-a-specified-domain">2. Counterexamples need a specified domain</h3>
+<p><strong>The idea.</strong> A conjecture can be rescued by restricting its domain, but then it must say what the domain is.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions without saying over what domain they hold. This paper shows why that omission matters, since each restriction is a separate claim needing proof.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> It is a methodological point. Ranked second.</p>
+<h3 id="3-forces-in-a-collapsing-sphere">3. Forces in a collapsing sphere</h3>
+<p><strong>The idea.</strong> The largest forces in the paper occur in configurations on the verge of collapse.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code> treats fluid configurations without asking where the forces become extreme. A collapse threshold is a natural boundary of the fluid description, and the article could use it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, in the discussion of the state.</p>
+<p><strong>What stands in the way.</strong> The connection to the thermal state is indirect. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

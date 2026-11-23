@@ -85,7 +85,7 @@
 <p>The characteristic function is the tool that converts a statement about distributions into a statement about functions, and its usefulness rests on the converse of the elementary implication: convergence in distribution implies the pointwise convergence of the characteristic functions, and the converse holds provided the limit function is continuous.</p>
 <p><strong>Theorem (Lévy's continuity theorem).</strong> Let $\mu_n$ be probability measures on $\mathbb{R}$ with characteristic functions $\varphi_n$ and suppose $\varphi_n(t) \to \varphi(t)$ for every $t$ and $\varphi$ is continuous at $t=0$. Then $\varphi$ is the characteristic function of a probability measure $\mu$ and $\mu_n \to \mu$ weakly.</p>
 <p><em>Proof.</em> The measures $\mu_n$ are tight: by the estimate of the next lemma, a uniform bound of the integrals of $1-\Re\varphi_n$ over a neighbourhood of $0$ controls the mass outside a large compact set, and the assumed convergence to a function continuous at $0$ gives that bound. Tightness supplies a weakly convergent subsequence $\mu_{n_k} \to \mu$, whose characteristic function is $\varphi$ by the elementary direction; the limit is independent of the subsequence because the limit function $\varphi$ is the same, so the whole sequence converges.</p>
-<p><strong>Lemma (tail estimate).</strong> For a probability measure with characteristic function $\varphi$ and any $u > 0$,</p>
+<p><strong>Lemma (tail estimate).</strong> For a probability measure with characteristic function $\varphi$ and any $u &gt; 0$,</p>
 <p>$$
 \mu\bigl((-\infty, -2/u] \cup [2/u, \infty)\bigr) \leq \frac{2}{u}\int_{-u}^{u}\bigl(1 - \Re\varphi(t)\bigr)\, dt.
 $$</p>
@@ -98,30 +98,30 @@ $$</p>
 <p>$$
 \mathbb{P}\bigl(|\bar X_n - \mu| \geq \varepsilon\bigr) \leq \frac{\operatorname{Var}(\bar X_n)}{\varepsilon^2} = \frac{\sigma^2}{n\varepsilon^2} \longrightarrow 0
 $$</p>
-<p>for every $\varepsilon > 0$.</p>
+<p>for every $\varepsilon &gt; 0$.</p>
 <p>The proof shows that the weak law at finite variance is a variance computation, and that the rate is $O(1/n)$. The assumption of a common variance is unnecessary and the next theorem removes both it and the assumption of identical moments.</p>
 <h3 id="the-khinchin-theorem-and-truncation">The Khinchin Theorem and Truncation</h3>
-<p><strong>Theorem (Khinchin's weak law).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then $\bar X_n \xrightarrow{\mathbb{P}} \mu$.</p>
+<p><strong>Theorem (Khinchin's weak law).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| &lt; \infty$ and mean $\mu$. Then $\bar X_n \xrightarrow{\mathbb{P}} \mu$.</p>
 <p><em>Proof.</em> Truncate: let $Y_{n,i} = X_i\mathbf{1}_{\{|X_i| \le n\}}$. The truncated variables have $\mathbb{E}Y_{n,i} \to \mu$, and since $\bar Y_n$ is the average of $n$ such variables,</p>
 <p>$$
 \operatorname{Var}(\bar Y_n) = \frac{1}{n}\operatorname{Var}(Y_{n,1}) \leq \frac{1}{n}\mathbb{E}\bigl[X_1^2\mathbf{1}_{\{|X_1|\le n\}}\bigr] \leq \mathbb{E}\bigl[|X_1|\mathbf{1}_{\{|X_1|\le n\}}\bigr] \longrightarrow 0
 $$</p>
-<p>by dominated convergence, because $|X_1|\mathbf{1}_{\{|X_1|\le n\}}\le|X_1| \in L^1$; hence $\bar Y_n \xrightarrow{\mathbb{P}} \mu$ by Chebyshev. It remains to control the discarded mass: $\mathbb{P}(\bigcup_{i\le n}\{X_i \neq Y_{n,i}\}) \leq n\mathbb{P}(|X_1| > n) \to 0$ since $n\mathbf{1}_{\{|X_1|>n\}}\le|X_1|\mathbf{1}_{\{|X_1|>n\}}$ and $X_1$ is integrable, and on the complement the two averages coincide.</p>
+<p>by dominated convergence, because $|X_1|\mathbf{1}_{\{|X_1|\le n\}}\le|X_1| \in L^1$; hence $\bar Y_n \xrightarrow{\mathbb{P}} \mu$ by Chebyshev. It remains to control the discarded mass: $\mathbb{P}(\bigcup_{i\le n}\{X_i \neq Y_{n,i}\}) \leq n\mathbb{P}(|X_1| &gt; n) \to 0$ since $n\mathbf{1}_{\{|X_1|&gt;n\}}\le|X_1|\mathbf{1}_{\{|X_1|&gt;n\}}$ and $X_1$ is integrable, and on the complement the two averages coincide.</p>
 <p>The truncation argument is the standard method for extracting a law of large numbers from an integrability hypothesis, and it identifies the correct hypothesis: the weak law holds precisely when the truncated means converge to $\mu$, which fails exactly for the distributions with $\mathbb{E}|X_1| = \infty$ and a Cauchy-like tail. The prototypical failure is the Cauchy distribution, whose characteristic function is $\exp(-|t|)$ and for which the sample mean has the same Cauchy distribution for every $n$, so it does not converge.</p>
 <h2 id="the-strong-law-of-large-numbers">The Strong Law of Large Numbers</h2>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
-<p><strong>Theorem (Kolmogorov's maximal inequality).</strong> Let $X_1, \dots, X_n$ be independent with $\mathbb{E}X_i = 0$ and finite variance, and let $S_k = X_1 + \cdots + X_k$. Then for every $\lambda > 0$,</p>
+<p><strong>Theorem (Kolmogorov's maximal inequality).</strong> Let $X_1, \dots, X_n$ be independent with $\mathbb{E}X_i = 0$ and finite variance, and let $S_k = X_1 + \cdots + X_k$. Then for every $\lambda &gt; 0$,</p>
 <p>$$
 \mathbb{P}\!\left(\max_{1\leq k\leq n}|S_k| \geq \lambda\right) \leq \frac{1}{\lambda^2}\sum_{k=1}^{n}\mathbb{E}[X_k^2] = \frac{\mathbb{E}[S_n^2]}{\lambda^2}.
 $$</p>
-<p><em>Proof.</em> Let $A$ be the event that the maximum exceeds $\lambda$ and let $A_k$ be the event that the first crossing occurs at $k$: $A_k = \{|S_1| < \lambda, \dots, |S_{k-1}| < \lambda, |S_k| \geq \lambda\}$. Then $A$ is the disjoint union of the $A_k$ and</p>
+<p><em>Proof.</em> Let $A$ be the event that the maximum exceeds $\lambda$ and let $A_k$ be the event that the first crossing occurs at $k$: $A_k = \{|S_1| &lt; \lambda, \dots, |S_{k-1}| &lt; \lambda, |S_k| \geq \lambda\}$. Then $A$ is the disjoint union of the $A_k$ and</p>
 <p>$$
 \mathbb{E}[S_n^2] \geq \sum_{k=1}^{n}\mathbb{E}\bigl[S_n^2\mathbf{1}_{A_k}\bigr] = \sum_{k=1}^{n}\left(\mathbb{E}\bigl[S_k^2\mathbf{1}_{A_k}\bigr] + 2\mathbb{E}\bigl[S_k(S_n - S_k)\mathbf{1}_{A_k}\bigr] + \mathbb{E}\bigl[(S_n-S_k)^2\mathbf{1}_{A_k}\bigr]\right).
 $$</p>
 <p>The cross term vanishes because $S_k\mathbf{1}_{A_k}$ is $\sigma(X_1,\dots,X_k)$-measurable and $S_n - S_k$ is independent of that $\sigma$-algebra with mean zero; dropping the two nonnegative terms leaves $\mathbb{E}[S_n^2] \geq \sum_k \lambda^2\mathbb{P}(A_k) = \lambda^2\mathbb{P}(A)$.</p>
 <p>The inequality is the martingale-type maximal bound in its independent-sum form, and it is the reason the strong law can be proved before the martingale theory is available; the general maximal inequality of Doob, contains it. The proof uses the independence only through the orthogonality of the past and the future, which is exactly the property the martingale theory abstracts.</p>
 <h3 id="the-kolmogorov-strong-law">The Kolmogorov Strong Law</h3>
-<p><strong>Theorem (strong law of large numbers; Kolmogorov).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then</p>
+<p><strong>Theorem (strong law of large numbers; Kolmogorov).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| &lt; \infty$ and mean $\mu$. Then</p>
 <p>$$
 \boxed{\;\bar X_n \longrightarrow \mu \qquad \text{a.s.}\;}
 $$</p>
@@ -148,9 +148,9 @@ $$</p>
 <p>which is the characteristic function of $N(0,1)$; the limit is continuous at $0$, so Lévy's theorem applies.</p>
 <p><strong>Example (de Moivre–Laplace).</strong> For $X_i$ Bernoulli$(p)$ the statement is the convergence of the standardised binomial to the normal: if $S_n \sim \mathrm{Bin}(n,p)$ then $(S_n - np)/\sqrt{np(1-p)} \xrightarrow{d} N(0,1)$. The computation is the case $\sigma^2 = p(1-p)$ of the theorem, and it is the oldest form of the central limit theorem.</p>
 <h3 id="triangular-arrays-and-the-lindeberg-condition">Triangular Arrays and the Lindeberg Condition</h3>
-<p><strong>Theorem (Lindeberg–Feller).</strong> For each $n$ let $X_{n,1}, \dots, X_{n,k_n}$ be independent with mean zero and finite variances, let $s_n^2 = \sum_{i} \operatorname{Var}(X_{n,i})$ and let $S_n = \sum_i X_{n,i}$. If the <strong>Lindeberg condition</strong> holds — that for every $\varepsilon > 0$,</p>
+<p><strong>Theorem (Lindeberg–Feller).</strong> For each $n$ let $X_{n,1}, \dots, X_{n,k_n}$ be independent with mean zero and finite variances, let $s_n^2 = \sum_{i} \operatorname{Var}(X_{n,i})$ and let $S_n = \sum_i X_{n,i}$. If the <strong>Lindeberg condition</strong> holds — that for every $\varepsilon &gt; 0$,</p>
 <p>$$
-\frac{1}{s_n^2}\sum_{i=1}^{k_n}\mathbb{E}\!\left[X_{n,i}^2\,\mathbf{1}_{\{|X_{n,i}| > \varepsilon s_n\}}\right] \longrightarrow 0 \qquad \text{as } n\to\infty \text{ with } s_n\to\infty
+\frac{1}{s_n^2}\sum_{i=1}^{k_n}\mathbb{E}\!\left[X_{n,i}^2\,\mathbf{1}_{\{|X_{n,i}| &gt; \varepsilon s_n\}}\right] \longrightarrow 0 \qquad \text{as } n\to\infty \text{ with } s_n\to\infty
 $$</p>
 <p>— then $S_n/s_n \xrightarrow{d} N(0,1)$. Conversely, if in addition the <strong>Feller condition</strong> $\max_i \operatorname{Var}(X_{n,i})/s_n^2 \to 0$ holds and $S_n/s_n \xrightarrow{d} N(0,1)$, then the Lindeberg condition holds.</p>
 <p>The Lindeberg condition says that the individual terms are asymptotically negligible relative to the total fluctuation, and under the Feller condition it is exactly the hypothesis under which the normal law is the limit; when it fails, the limit is one of the stable laws of the next section. The sufficiency is proved by the characteristic-function computation of the i.i.d. case, applied term by term and using the Lindeberg condition to control the tails; the necessity is the statement that any other asymptotic behaviour of the tails prevents the normal limit.</p>
@@ -169,28 +169,28 @@ $$</p>
 <p>where $\lambda_3 = \mathbb{E}[(X_1-\mu)^3]/\sigma^3$ is the standardised third cumulant, so that the leading correction to the normal is a signed term measuring the skewness and vanishing identically for a symmetric distribution.</p>
 <p>The Edgeworth expansion is the systematic refinement of the central limit theorem, and it is the reason the cumulants of <em>Measure-Theoretic Probability</em> are the natural coefficients: the term of order $n^{-k/2}$ is a polynomial in the cumulants up to order $k+2$, and the expansion can be carried to any order at which the moments exist.</p>
 <h3 id="the-local-limit-theorem">The Local Limit Theorem</h3>
-<p><strong>Theorem (local limit theorem).</strong> Let $X_n$ be independent and identically distributed lattice-valued random variables with span $1$, mean $\mu$, finite variance $\sigma^2$, and suppose the characteristic function has $|\varphi(t)| < 1$ for $0 < |t| \le \pi$. Then</p>
+<p><strong>Theorem (local limit theorem).</strong> Let $X_n$ be independent and identically distributed lattice-valued random variables with span $1$, mean $\mu$, finite variance $\sigma^2$, and suppose the characteristic function has $|\varphi(t)| &lt; 1$ for $0 &lt; |t| \le \pi$. Then</p>
 <p>$$
 \sup_{k \in \mathbb{Z}}\left|\sigma\sqrt n\,\mathbb{P}\!\left(\sum_{i=1}^{n}X_i = k\right) - \frac{1}{\sqrt{2\pi}}\,\exp(-(k-n\mu)^2/(2n\sigma^2))\right| \longrightarrow 0.
 $$</p>
 <p>The local theorem is the strengthening of the central limit theorem from the distribution function to the point probabilities; the hypothesis on the characteristic function excludes the periodic distributions, for which the lattice has a proper sublattice as its support and the local statement holds on that sublattice. The proof is the inversion formula of the characteristic function, applied to the probability of a single value and estimated by splitting the range of integration near $0$ and away from it.</p>
 <h3 id="large-deviations">Large Deviations</h3>
-<p><strong>Theorem (Cramér).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with a finite moment generating function in a neighbourhood of the origin, and let $I(x) = \sup_{t}(tx - \log M(t))$ be the Legendre transform of the cumulant generating function $M(t) = \mathbb{E}[\exp(tX_1)]$. Then for $x > \mu$,</p>
+<p><strong>Theorem (Cramér).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with a finite moment generating function in a neighbourhood of the origin, and let $I(x) = \sup_{t}(tx - \log M(t))$ be the Legendre transform of the cumulant generating function $M(t) = \mathbb{E}[\exp(tX_1)]$. Then for $x &gt; \mu$,</p>
 <p>$$
 \frac{1}{n}\log\mathbb{P}\!\left(\bar X_n \geq x\right) \longrightarrow -I(x) \qquad \text{as } n \to \infty,
 $$</p>
-<p>and the analogous statement holds for $x < \mu$ with the reflected rate function.</p>
+<p>and the analogous statement holds for $x &lt; \mu$ with the reflected rate function.</p>
 <p>Cramér's theorem describes the probability of a deviation of the mean of order $1$, which lies outside the range of the central limit theorem, and it is the prototype of the large-deviation theory. The rate function $I$ is nonnegative, convex, vanishes exactly at $x = \mu$, and is strictly convex where it is finite; the proof is the exponential version of the Chebyshev inequality — the exponential tilt — together with a lower bound from the change of measure that concentrates the sum at the required value.</p>
 <h2 id="stable-and-infinitely-divisible-laws">Stable and Infinitely Divisible Laws</h2>
 <h3 id="the-levykhintchine-representation">The Lévy–Khintchine Representation</h3>
 <p>The central limit theorem describes the limit of sums with finite variance. The general question — which laws are the possible limits of sums of independent variables — is answered by the representation theorem of Lévy and Khintchine.</p>
-<p><strong>Definition.</strong> A probability measure $\mu$ is <strong>infinitely divisible</strong> if for every $n$ it is the $n$-fold convolution power of a probability measure. A measure $\mu$ is <strong>stable</strong> with exponent $\alpha \in (0,2]$ if for independent copies $X, X'$ of $\mu$ and all $a, b > 0$ there are $c>0$ and $d \in \mathbb{R}$ with $aX + bX' \stackrel{d}{=} cX + d$.</p>
+<p><strong>Definition.</strong> A probability measure $\mu$ is <strong>infinitely divisible</strong> if for every $n$ it is the $n$-fold convolution power of a probability measure. A measure $\mu$ is <strong>stable</strong> with exponent $\alpha \in (0,2]$ if for independent copies $X, X'$ of $\mu$ and all $a, b &gt; 0$ there are $c&gt;0$ and $d \in \mathbb{R}$ with $aX + bX' \stackrel{d}{=} cX + d$.</p>
 <p><strong>Theorem (Lévy–Khintchine).</strong> A probability measure $\mu$ on $\mathbb{R}$ is infinitely divisible if and only if its characteristic function has the form</p>
 <p>$$
 \varphi(t) = \exp\!\left(i\gamma t - \frac{\sigma^2 t^2}{2} + \int_{\mathbb{R}}\left(\exp(itx) - 1 - itx\,\mathbf{1}_{\{|x|\le1\}}\right)\nu(dx)\right)
 $$</p>
-<p>for a real $\gamma$, a $\sigma^2 \geq 0$ and a measure $\nu$ on $\mathbb{R}\setminus\{0\}$ with $\int \min(1,x^2)\,\nu(dx) < \infty$; the triple $(\gamma,\sigma^2,\nu)$ is unique, and $\nu$ is the <strong>Lévy measure</strong>.</p>
-<p>The normal law is the case $\nu = 0$, and the stable laws are the infinitely divisible laws with a scaling property, whose characteristic functions are $\exp(-c|t|^\alpha)$ up to drift for $\alpha \neq 1$ and $\exp(-c|t|(1 + i\beta\operatorname{sgn}(t)\log|t|))$ for $\alpha = 1$; they are the only possible limits in the central limit theorem without the finite-variance hypothesis. The Cauchy law is stable with exponent $1$, the normal with exponent $2$, and for $\alpha < 2$ the stable laws have heavy tails $\mathbb{P}(|X| > x) \sim Cx^{-\alpha}$; the classical central limit theorem is the statement that the finite-variance case has exponent $2$ with a finite second moment.</p>
+<p>for a real $\gamma$, a $\sigma^2 \geq 0$ and a measure $\nu$ on $\mathbb{R}\setminus\{0\}$ with $\int \min(1,x^2)\,\nu(dx) &lt; \infty$; the triple $(\gamma,\sigma^2,\nu)$ is unique, and $\nu$ is the <strong>Lévy measure</strong>.</p>
+<p>The normal law is the case $\nu = 0$, and the stable laws are the infinitely divisible laws with a scaling property, whose characteristic functions are $\exp(-c|t|^\alpha)$ up to drift for $\alpha \neq 1$ and $\exp(-c|t|(1 + i\beta\operatorname{sgn}(t)\log|t|))$ for $\alpha = 1$; they are the only possible limits in the central limit theorem without the finite-variance hypothesis. The Cauchy law is stable with exponent $1$, the normal with exponent $2$, and for $\alpha &lt; 2$ the stable laws have heavy tails $\mathbb{P}(|X| &gt; x) \sim Cx^{-\alpha}$; the classical central limit theorem is the statement that the finite-variance case has exponent $2$ with a finite second moment.</p>
 <h2 id="the-multidimensional-and-functional-versions">The Multidimensional and Functional Versions</h2>
 <h3 id="the-multivariate-central-limit-theorem">The Multivariate Central Limit Theorem</h3>
 <p><strong>Theorem (Cramér–Wold).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed random vectors in $\mathbb{R}^d$ with mean $\mu$ and covariance matrix $\Sigma$. Then $\sqrt n(\bar X_n - \mu) \xrightarrow{d} N(0,\Sigma)$; equivalently, for every $a \in \mathbb{R}^d$ the scalar sequence $a \cdot X_i$ satisfies the one-dimensional central limit theorem with variance $a^\top\Sigma a$.</p>

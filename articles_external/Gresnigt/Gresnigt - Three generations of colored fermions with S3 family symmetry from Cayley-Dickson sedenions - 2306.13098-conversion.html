@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Generations of Colored Fermions with $S_3$ Family Symmetry from Cayley–Dickson Sedenions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Three generations of colored fermions with S3 family symmetry from Cayley-Dickson…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="three-generations-of-colored-fermions-with-math9-family-symmetry-from-cayleydickson-sedenions"><strong>Three Generations of Colored Fermions with $S_3$ Family Symmetry from Cayley–Dickson Sedenions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2306.13098 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt, Liam Gourlay, Abhinav Varma</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 February 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - Three generations of colored fermions with S3 family symmetry from Cayley-Dickson sedenions - 2306.13098-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Three generations of colored fermions with S3 family symmetry from Cayley-Dickson sedenions - 2306.13098.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Three generations of colored fermions with S3 family symmetry from Cayley-Dickson sedenions - 2306.13098.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds three generations from the algebra one step past the octonions. The sedenions $\mathbb{S}$ contain three octonion subalgebras sharing a quaternion, and the paper uses all three at once to build <em>one</em> generation — each contributes a pair of ladder operators, and the three pairs give a single $Cl(6)$. Then the order-three automorphism $\psi$ of $\mathbb{S}$, which exists because $Aut(\mathbb{S})=G_2\times S_3$, is applied to those ladder operators to build the second and third generations. The result is three generations under one copy of $SU(3)_C$, so one set of gluon modes rather than three, and the $S_3$ gets a physical job. Two defects are reported honestly: the number operator gives the right charges for only one generation, and the three generations are not linearly independent.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-octonion-subalgebras-and-one-generation">The three octonion subalgebras and one generation</h3>
+<p>$Aut(\mathbb{S})=Aut(\mathbb{O})\times S_3=G_2\times S_3$ (paper 47), with $Aut(A_{n-1})\times S_3\subseteq Aut(A_n)$ (paper 45) and equality "for the cases where $n=4,5,6$" (paper 46). The three $H_i\subset\mathbb{O}$ containing the privileged $e_4$ generate three $\mathbb{O}_i\subset\mathbb{S}$ containing $e_8$, with $\mathbb{O}_1\cap\mathbb{O}_2\cap\mathbb{O}_3=\mathbb{H}$ generated by $\{e_0,e_4,e_8,e_{12}\}$ (paper 27). From each $\mathbb{O}_i$ one ladder pair, four terms each:
+$$A_1^\dagger\equiv\frac{1}{2\sqrt2}(e_1+ie_5+e_9+ie_{13}),\quad A_1\equiv\frac{1}{2\sqrt2}(-e_1+ie_5-e_9+ie_{13})$$
+(paper 59–61), satisfying $\{A_i,A_j\}w=\{A_i^\dagger,A_j^\dagger\}w=0$, $\{A_i,A_j^\dagger\}w=\delta_{ij}w$ (paper 62). "ticommutation relations: {Ai , Aj }w = {A†i , A†j }w = 0, {Ai , A†j }w = δij w, ∀w ∈ C ⊗ S. (62) Each Ai ∈ Oi ⊂ S in a generalization of αi ∈ Hi ⊂ O where now each ladder operators consists of four terms instead of just two. Subsequently" The left multiplication algebra of $\mathbb{C}\otimes\mathbb{S}$ does <em>not</em> give $Cl(14)$: "wo identities (29) and (30), crucial for generating a Clifford algebra, no longer hold in general. For", and $e_i$ fails to anticommute with $e_{i+8}$ (paper 34), so one takes $\{e_1,\dots,e_8\}$ as a $Cl(8)$ basis and writes $e_9,\dots,e_{15}$ as multivectors, e.g.
+$$e_9w=\tfrac12(-e_{123458}+e_{123678}+e_{145678}-e_{18})w$$
+(paper 35–41), where the subscripts are products of left actions.</p>
+<h3 id="the-two-further-generations">The two further generations</h3>
+<p>The order-three automorphism acts on the units as
+$$\psi(e_i)=-\tfrac12e_i-\tfrac{\sqrt3}{2}e_{i+8},\qquad \psi(e_{i+8})=-\tfrac12e_{i+8}+\tfrac{\sqrt3}{2}e_i,\qquad \psi(e_8)=e_8$$
+(paper 51–53), "a simultaneous rotations in the seven ei − ei+8 planes by 2π/3, and therefore does not correspond to an automorphism of C ⊗ O.", and it "does not correspond to an automorphism of C ⊗ O. It is also possible to write". Applied to the ladder operators it gives two more Witt bases, $B_i^\dagger=\psi(A_i^\dagger)$ and $C_i^\dagger=\psi^2(A_i^\dagger)$ (paper 72–75), with
+$$a=\frac{\sqrt3-1}{2},\qquad b=\frac{-\sqrt3-1}{2},\qquad a^2+b^2=2,\ a+b=-1,\ ab=-\tfrac12$$
+(paper 76). So $S^u_1,S^u_2,S^u_3$ are three generations, and "t is the order three automorphism ψ of the finite group S3 can be used to construct exactly two additional generations of color states. This automorphism then permutes between the three generations."</p>
+<h3 id="the-two-defects-stated">The two defects, stated</h3>
+<p>Charge: "the number operator only assigns the correct electric charge for one of the generations", and "although the number operator can be used to obtain the correct electric charge within the context of a single generation model, this approach fails to work in a three generation model", with a reference to a generalized action the authors do not adopt because "it remains unclear why this action takes the particular form that it does".</p>
+<p>Linearity: $\psi^2(e_i)+\psi(e_i)+e_i=0$ (paper 68), so
+$$A_i\omega_1^\dagger\omega_1+B_i\omega_2^\dagger\omega_2+C_i\omega_3^\dagger\omega_3=0,\qquad A_i^\dagger\omega_1\omega_1^\dagger+B_i^\dagger\omega_2\omega_2^\dagger+C_i^\dagger\omega_3\omega_3^\dagger=0$$
+(paper 81–82) for $i=1,2,3$, while "l 18 of the (anti) up-type quarks turn out to be linearly independent. This". The interpretation offered: "This might be related to the fact that the Yukawa couplings, and subsequent mass matrix for either the up-type or down-type quarks can be taken to be diagonal, but not both. Subsequently, one can say without loss of generality that only the down-type quarks mix via the CKM matrix."</p>
+<p>What the three generations share is the gauge group: a single $SU(3)$ acts correctly on all three, $[\Lambda_1,A_1\omega_1^\dagger\omega_1]=A_2\omega_1^\dagger\omega_1$, $[\Lambda_1,B_1\omega_1^\dagger\omega_1]=B_2\omega_1^\dagger\omega_1$, $[\Lambda_1,C_1\omega_1^\dagger\omega_1]=C_2\omega_1^\dagger\omega_1$ (paper 79), i.e. $\Lambda_1:d_r\to d_g$, $c_r\to c_g$, $t_r\to t_g$ (paper 80) — "only one copy of $SU(3)$, and hence one generation of gauge bosons is needed".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-exactly-one-sector-can-have-a-diagonal-mass-matrix">1. Exactly one sector can have a diagonal mass matrix</h3>
+<p><strong>The idea.</strong> The down-type states of the three generations are linearly dependent, $A_i\omega_1^\dagger\omega_1+B_i\omega_2^\dagger\omega_2+C_i\omega_3^\dagger\omega_3=0$, and the up-type are not. Hence the mass matrix can be diagonal in one sector only, so mixing appears in the other — the CKM structure follows from a linear dependence in the algebra, not from a parameter choice. A <strong>mechanism</strong> with a count: 18 independent up-type states, 9 dependent down-type triplets.</p>
+<p><strong>What it would add.</strong> The corpus's CKM article places the mixing on the generation label and states as a gap that "The framework does not produce the CKM angles, the CP phase, or the mass matrices". This offers something of a different kind: a structural reason why exactly one of the two quark sectors can have a diagonal mass matrix, hence must mix. It is checkable by a linear-algebra computation on the three-generation state space, and it would be the first statement in the corpus about <em>why</em> mixing at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The dependence is established by "some initial calculations (carried out using Mathematica)", not shown; the claim is that the sum vanishes, and a reader cannot verify it from the paper. And a reason why one sector mixes is not yet angles, a phase or a hierarchy — the CKM content is qualitative.</p>
+<h3 id="2-a-finite-family-symmetry-that-generates-generations">2. A finite family symmetry that generates generations</h3>
+<p><strong>The idea.</strong> The order-three automorphism of $\mathbb{S}$ acting on a Witt basis produces two further complete generations, and the order-two automorphism produces a set that does not. A <strong>mechanism</strong> in which "family" is a finite group acting on the algebra, so the number of generations is the order of an automorphism, and the family symmetry is not imposed but found. </p>
+<p><strong>What it would add.</strong> The corpus's generations article concludes that "The algebra does not fix $N_g$" — "The framework accommodates the three generations; it does not explain them" — and says a derivation would need a topological index, a non-generation-blind anomaly, or dynamics. This supplies a fourth route, and the family symmetry arrives as a by-product of it rather than as an input: the corpus has no $S_3$ flavour symmetry anywhere.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction produces three generations but not three <em>independent</em> ones, and it works in $\mathbb{C}\otimes\mathbb{S}$, not in $\mathbb{B}$. And "exactly two additional" is the order of $\psi$ minus one, so the count is a group order rather than a dynamical selection — the corpus article's third listed route is untouched.</p>
+<h3 id="3-zero-divisors-of-the-sedenions-and-the-octonions-math61">3. Zero divisors of the sedenions and the octonion's $G_2$</h3>
+<p><strong>The idea.</strong> $\mathbb{S}$ is not a division algebra; it has 84 zero divisors, and "the subspace of zero divisors of unit norm is homeomorphic to $G_2$" — the automorphism group of the octonions reappears as the shape of the sedenion's null set.</p>
+<p><strong>What it would add.</strong> The corpus's central object is the zero-divisor cone of $\mathbb{B}$, a null set that carries physical meaning (the light cone, the vacuum stratum). Here a null set in a larger algebra <em>is</em> a group manifold, which gives the corpus a precedent for reading a null set as a geometric object with a symmetry of its own.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.md</code>.</p>
+<p><strong>What stands in the way.</strong> The homeomorphism is quoted from another paper, not derived; the corpus's null set is defined by a quadratic form in four dimensions and the correspondence between the two constructions is not made.</p>
+<p>The rank is a judgement: the mass-matrix dependence first, because it is a statement about observed mixing with a computable test; the family symmetry second, because it gives three a reason; the zero-divisor geometry third, because it is a borrowed fact.</p>
+<p>Eighteen pages: the division algebras, the one-generation ideal construction, the Cayley–Dickson process and the sedenion multiplication, the octonion subalgebras and the left multiplication algebra of $\mathbb{C}\otimes\mathbb{S}$, the $Cl(8)$ basis and the automorphisms, the three-generation construction, the color action, the linear dependence, and an outlook with the multiplication table in an appendix.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

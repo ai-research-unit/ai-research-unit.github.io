@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phenomenologically viable Lorentz-violating quantum gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Phenomenologically viable Lorentz-violating quantum gravity - 0904.4464.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="phenomenologically-viable-lorentz-violating-quantum-gravity"><strong>Phenomenologically viable Lorentz-violating quantum gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0904.4464v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas P. Sotiriou, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 26 June 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Phenomenologically viable Lorentz-violating quantum gravity - 0904.4464-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Phenomenologically viable Lorentz-violating quantum gravity - 0904.4464.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Phenomenologically viable Lorentz-violating quantum gravity - 0904.4464.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors recast a Lorentz-violating gravity model in Hamiltonian form. The equations of motion are written in a way that resembles the ADM formulation of general relativity. This puts the model into a standard framework. The benefit is that precision tests can then be designed with familiar tools.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-done">What is done</h3>
+<p>"[we cast] the classical equations of motion in a form similar to the ADM formulation of general relativity."</p>
+<h3 id="why">Why</h3>
+<p>"This puts the model in a framework amenable to developing detailed precision tests."</p>
+<h3 id="the-subject">The subject</h3>
+<p>"Phenomenologically viable Lorentz-violating quantum gravity" — the model class under study is Lorentz-violating and intended to remain viable against observations</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-hamiltonian-form-makes-testing-possible">1. Hamiltonian form makes testing possible</h3>
+<p><strong>The idea.</strong> Rewriting a modified theory in ADM form opens the door to precision tests.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what tests exist. A canonical formulation is the prerequisite for such tests, and the target has none.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The reformulation is for a different model. Ranked first, because it supplies a testing route.</p>
+<h3 id="2-lorentz-violation-in-a-controlled-setting">2. Lorentz violation in a controlled setting</h3>
+<p><strong>The idea.</strong> A model can break Lorentz invariance and still be viable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> assumes exact Lorentz behaviour for null fields. A controlled violation changes the dispersion relation, which is what this note sets up.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of dispersion.</p>
+<p><strong>What stands in the way.</strong> The dispersion relation is not computed here. Ranked second.</p>
+<h3 id="3-a-standard-form-for-a-non-standard-theory">3. A standard form for a non-standard theory</h3>
+<p><strong>The idea.</strong> Writing unfamiliar dynamics in a familiar form is a way to compare theories.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> is about choosing a representation. This is a representation choice for a whole theory, not just a metric.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The mapping is formal. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

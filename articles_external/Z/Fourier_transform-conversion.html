@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fourier Transform — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Fourier_transform.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fourier-transform"><strong>Fourier Transform</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Fourier transform</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Fourier_transform-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Fourier_transform.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Fourier_transform.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The encyclopedia article on the Fourier transform: the integral transform mapping a function to a function of frequency, the conventions and their normalisation freedom, the inversion formula, the properties (linearity, shifting, convolution), and the extension to distributions and several variables.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-it-is">What it is</h3>
+<p>"the Fourier transform (FT) is an integral transform that takes a function as input and outputs another function that describes the extent to which various frequencies are present in the original function. The output of the transform is a complex valued function of frequency. The term Fourier transform refers to both the mathematical operation and to this complex-valued function. When a distinction needs to be made, the output of the operation is sometimes called the frequency domain representation of the original function."</p>
+<h3 id="the-kernel">The kernel</h3>
+<p>With the $2\pi$ in the exponent, $\hat f(\xi)=\int f(x)e^{-2\pi i x\xi}dx$, and the inverse carries the conjugate kernel with no normalising constant. The article is careful that other conventions put $2\pi$ in the exponent's denominator or a prefactor in front, and that the choice changes the constant in every formula that follows.</p>
+<p>"−∞ Older literature refers to the two transform functions, the Fourier cosine transform, a, and the Fourier sine transform, b."</p>
+<p>"Fourier transform for periodic functions The Fourier transform of a periodic function cannot be defined using the integral formula directly."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-convention-is-a-choice-and-the-corpus-must-fix-one">1. The convention is a choice, and the corpus must fix one</h3>
+<p><strong>The idea.</strong> Whether the $2\pi$ sits in the exponent or in the prefactor changes the convolution theorem's constant and the delta function's normalisation. The transform is unique only once the convention is fixed.</p>
+<p><strong>What it would add.</strong> A stated convention for the corpus's Fourier articles, which use the transform in several forms. Mixing them is the commonest source of a stray $2\pi$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, at the definition.</p>
+<p><strong>What stands in the way.</strong> Nothing; it is a matter of declaring the choice once.</p>
+<h3 id="2-the-transform-is-a-change-of-basis-so-it-preserves-the-norm">2. The transform is a change of basis, so it preserves the norm</h3>
+<p><strong>The idea.</strong> Plancherel's theorem says the transform is unitary up to normalisation: the total probability is the same in position and in momentum, which is why the two pictures are equivalent.</p>
+<p><strong>What it would add.</strong> A reason the corpus may compute in either space, which its articles do without comment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's transform acts on a non-commutative algebra, and unitarity is a statement about a Hilbert-space inner product the algebra does not automatically carry.</p>
+<p>This is an encyclopedia article; the definition, the conventions, the inversion and the standard properties are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

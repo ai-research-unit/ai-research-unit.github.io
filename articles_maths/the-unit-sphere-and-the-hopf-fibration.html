@@ -95,7 +95,7 @@ $$</p>
 <p><em>Proof.</em> The sphere is closed and bounded in $\mathbb{C}^2\cong\mathbb{R}^4$, hence compact; it is connected for dimension at least $1$ and simply connected for dimension at least $2$ (<em>The Fundamental Group and Covering Spaces</em>); its homology is computed by the cell decomposition $S^3=e^0\cup e^3$ (<em>Simplicial and Singular Homology</em>); and the Hurewicz theorem gives $\pi_3(S^3)\cong H_3(S^3)=\mathbb{Z}$ because the sphere is simply connected (<em>Homotopy Groups and Fibrations</em>).</p>
 <p><strong>Proposition (the unitary action).</strong> The unitary group $\mathrm{U}(2)$ acts transitively on $S^3$ by $A\cdot Q=AQ$, and the stabilizer of $e_1=(1,0)$ is the diagonal circle
 $$
-\left\{\begin{pmatrix}1&0\\0&\lambda\end{pmatrix}:\lvert\lambda\rvert=1\right\}\cong\mathrm{U}(1).
+\left\{\begin{pmatrix}1&amp;0\\0&amp;\lambda\end{pmatrix}:\lvert\lambda\rvert=1\right\}\cong\mathrm{U}(1).
 $$
 Hence $S^3\cong\mathrm{U}(2)/\mathrm{U}(1)$ as a homogeneous space. The special unitary group $\mathrm{SU}(2)$ acts transitively and freely, and $S^3\cong\mathrm{SU}(2)$ as a manifold.</p>
 <p><em>Proof.</em> Every unit vector is the first column of a unitary matrix, so the action is transitive. A unitary matrix fixing $e_1$ has first column $e_1$ and is diagonal with a unit entry in the second place. The special unitary group acts transitively because it contains the unitary matrices of determinant $1$ that send $e_1$ to any unit vector; the stabilizer is trivial because a special unitary matrix with first column $e_1$ is the identity.</p>
@@ -352,10 +352,10 @@ and the action is smooth and sends fibres to fibres, because $h(A\cdot Q)=[AQ]=A
 <p><strong>Theorem ($S^3\cong\mathrm{SU}(2)$).</strong> The map
 $$
 \mathrm{SU}(2)\longrightarrow S^3,\qquad
-\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}\longmapsto(\alpha,\beta),
+\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix}\longmapsto(\alpha,\beta),
 $$
 is a homeomorphism. With the quaternion multiplication on $S^3$, it is an isomorphism of Lie groups.</p>
-<p><em>Proof.</em> A matrix of the displayed form is unitary and has determinant $\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1$, so it lies in $\mathrm{SU}(2)$; conversely, the unitarity and the determinant condition force the form. The map is continuous, bijective, with continuous inverse $(\alpha,\beta)\mapsto\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$. The multiplication of these matrices is the multiplication of the quaternions $\alpha+\beta j$, so the map is a group isomorphism.</p>
+<p><em>Proof.</em> A matrix of the displayed form is unitary and has determinant $\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1$, so it lies in $\mathrm{SU}(2)$; conversely, the unitarity and the determinant condition force the form. The map is continuous, bijective, with continuous inverse $(\alpha,\beta)\mapsto\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix}$. The multiplication of these matrices is the multiplication of the quaternions $\alpha+\beta j$, so the map is a group isomorphism.</p>
 <p><strong>Proposition (the Hopf map in the quaternionic model).</strong> Under the identification $S^3\cong\mathrm{SU}(2)$, the Hopf map is
 $$
 h(q)=q\,i\,q^{-1},\qquad q\in S^3,
@@ -368,7 +368,7 @@ $$
 $$
 by the right action of the diagonal circle
 $$
-\lambda\longmapsto\begin{pmatrix}\lambda&0\\0&\overline{\lambda}\end{pmatrix},\qquad \lvert\lambda\rvert=1.
+\lambda\longmapsto\begin{pmatrix}\lambda&amp;0\\0&amp;\overline{\lambda}\end{pmatrix},\qquad \lvert\lambda\rvert=1.
 $$
 The right action is free, its orbits are the fibres of $q\mapsto qiq^{-1}$, and the map is equivariant for the conjugation action of $\mathrm{SU}(2)$ on the base.</p>
 <p><em>Proof.</em> The centraliser of $i$ in $\mathrm{SU}(2)$ is the diagonal circle, so the fibre of $q\mapsto qiq^{-1}$ over $i$ is this circle, and the fibre over $qiq^{-1}$ is the right coset $q\,\mathrm{U}(1)$. The right action is therefore free and its orbits are the fibres; the quotient is $\mathrm{SU}(2)/\mathrm{U}(1)\cong S^2$. The identity $(gq)i(gq)^{-1}=g(qiq^{-1})g^{-1}$ is the equivariance for the conjugation action.</p>

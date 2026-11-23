@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutrinos and $v&lt;c$ — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Neutrinos and v c - 1203.1632.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="neutrinos-and-math9"><strong>Neutrinos and $v&lt;c$</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1203.1632v9 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz, I. Aharonovich</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v9, 1 February 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Neutrinos and v c - 1203.1632-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Neutrinos and v c - 1203.1632.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Neutrinos and v c - 1203.1632.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the Stueckelberg framework gives a simple model of neutrino oscillations and, along the way, a possible explanation of the 2011 superluminal-neutrino anomaly as a small early arrival rather than a violation of causality. The oscillation is not a superposition of mass eigenstates with different phases propagating in ordinary time; it is the beating of mass components carried in a single wave function over world time, driven by the fifth gauge field. The paper derives the Lorentz force for spinless and spinning particles in a non-Abelian background and checks that the model survives that derivation, then discusses a first-quantised mechanism for CP violation based on the foliation that spin induces in the Hilbert space.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"The Stueckelberg formulation of a manifestly covariant relativistic classical and quantum mechanics is briefly reviewed and it is shown that in this framework a simple (semiclassical) model exists for the description of neutrino oscillations."</p>
+<h3 id="why-the-derivation-matters">Why the derivation matters</h3>
+<p>"The model is shown to be consistent with the field equations and the Lorentz force (developed here without and with spin by canonical methods) for Glashow-Salam-Weinberg type non-Abelian fields interacting with the leptons."</p>
+<h3 id="the-oscillation-mechanism">The oscillation mechanism</h3>
+<p>"We emphasize that, in the framework of the Stueckelberg model, the dynamics of the fifth gauge field, modulated by the particle mass spectrum contained in the wave function (as in Eq.(17)), plays an essential role for the oscillation process."</p>
+<h3 id="the-timing-claim">The timing claim</h3>
+<p>"The model also predicts a possibly small 'pull back,' i.e., early arrival of a neutrino beam, for which the neutrino motion is almost everywhere within the light cone."</p>
+<p>Empirically: "according to the derivation of the Landau-Peierls relation given in ref.[32], the vertices of the neutrino-antineutrino transitions may be very sharp, and provide for a rather precise 'pull back' of the time interval. Significantly higher precision than available in the present experiments would be necessary to see such an effect."</p>
+<h3 id="cp-violation">CP violation</h3>
+<p>"The presence of spin, described in the relativistic framework of Wigner" — an approach that "introduces a foliation in the Hilbert space and in the structure of the fields, both classical and quantum" — and since the spacelike surface defining local observables is orthogonal to the foliation vector, "the actions of the discrete CP or T transformations change the basis for the construction of the Hilbert space to essentially different spacelike surfaces", which "suggests a model for CP or T violation on the first quantized level."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-oscillation-is-beating-over-world-time-not-phase-difference-over-lab-time">1. Oscillation is beating over world time, not phase difference over lab time</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: in a theory where the evolution parameter is a universal time, a state can carry several mass components at once, and their relative phases evolve with $\tau$. Oscillation is the interference of those components in the same wave function, not the propagation of three distinct mass eigenstates.</p>
+<p><strong>What it would add.</strong> The corpus's neutrino article treats oscillation in the standard way, as a consequence of mass-eigenstate mixing with phases $e^{-iE_it}$. This gives a different ontology for the same phenomenon: one particle with a mass distribution, rather than three particles. If it works, the question of which mass eigenstate one has dissolves, and the oscillation length comes from the spread of the mass distribution rather than from mass differences.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The model is semiclassical, and reproducing the measured oscillation lengths would require the mass distribution to be fixed by something the paper does not supply.</p>
+<h3 id="2-early-arrival-without-superluminal-speed">2. Early arrival without superluminal speed</h3>
+<p><strong>The idea.</strong> A <strong>prediction</strong>: an off-shell particle can arrive slightly early while moving inside the light cone everywhere. The "pull back" comes from the spread of the mass distribution in the initial state, not from $v&gt;c$. </p>
+<p><strong>What it would add.</strong> The corpus has articles on superluminal propagation and on the light cone as a boundary. This is the opposite resolution: keep every trajectory timelike and let the arrival time shift because the state is not a single trajectory. It would let the corpus discuss the OPERA-type anomaly without conceding causality, and it is a general mechanism for any timing anomaly in a covariant theory with a mass distribution. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-mass-shell-and-the-scalar-part.md</code>. </p>
+<p><strong>What stands in the way.</strong> The effect is small and the prediction is only that it exists; the paper does not give a number for a realistic beam. </p>
+<h3 id="3-spin-foliates-the-hilbert-space-and-cp-changes-the-foliation">3. Spin foliates the Hilbert space, and CP changes the foliation</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: a relativistic spin state defines a timelike vector, hence a foliation into spacelike surfaces, hence a choice of basis for local observables. A discrete CP or T transformation maps one foliation to another, so the transformation acts on the space of states rather than only on the labels within it. </p>
+<p><strong>What it would add.</strong> The corpus's spin articles treat spin as an element of an algebra acting on states. This makes spin do something structural: it fixes the surface on which observables are defined. That is a much stronger role, and it gives CP violation an origin in the geometry of quantisation rather than in a complex phase in a mixing matrix. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> The suggestion is programmatic — the paper says "suggests a model" and defers the consequences — and no CP-violating observable is calculated.</p>
+<p>The rank: world-time beating first, because it changes the ontology of a measured effect; early arrival second, because it is a prediction; the foliation argument last, because it is a sketch.</p>
+<p>The remaining items in one line each: the non-Abelian Lorentz force derivation with and without spin, which is what makes the model consistent with the field equations; the applicability to $K$, $B$ and $D$ systems, which is the extension to other mesons; and the Landau–Peierls relation, which is the technical basis for the sharp vertices the timing argument needs.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

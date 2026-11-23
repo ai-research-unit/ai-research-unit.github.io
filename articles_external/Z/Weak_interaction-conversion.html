@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weak Interaction — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Weak_interaction.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="weak-interaction"><strong>Weak Interaction</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Weak interaction</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Weak_interaction-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Weak_interaction.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Weak_interaction.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A long encyclopedia article on the weak interaction: the force responsible for beta decay, its mediation by W and Z bosons, its short range and low strength compared with the strong force, its parity violation, and its unification with electromagnetism in the electroweak theory.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"the weak interaction, weak force or weak nuclear force, is one of the four known fundamental interactions, with the others being electromagnetism, the strong interaction, and gravitation. It is the mechanism of interaction between subatomic particles that is responsible for the radioactive beta decay of atoms."</p>
+<h3 id="the-properties">The properties</h3>
+<p>The interaction is mediated by the W and Z bosons, whose large masses confine it to distances of order $10^{-18}$ m. Its coupling is comparable to the electromagnetic one, but the propagator suppression by $m_W^2$ makes the effective strength small at low energy — that separation of coupling from effective strength is the article's most useful point.</p>
+<h3 id="the-symmetry-structure">The symmetry structure</h3>
+<p>The weak interaction couples only to left-handed fermions, which is the reason parity is violated. It is described by SU(2) times U(1), broken to the electromagnetic U(1), and the charged current changes flavour while the neutral current does not.</p>
+<p>"Weak interaction In nuclear physics and particle physics, the weak interaction, weak force or weak nuclear force, is one of the four known fundamental interactions, with the others being electromagnetism, the strong interaction, and gravitation."</p>
+<p>"The weak interaction is the only fundamental interaction that breaks parity symmetry, and similarly, but far more rarely, the only interaction to break charge–parity symmetry."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-coupling-and-effective-strength-are-different-quantities">1. Coupling and effective strength are different quantities</h3>
+<p><strong>The idea.</strong> The weak coupling is not small; the boson mass is large. The apparent weakness at low energy is a propagator effect, $g^2/m_W^2$. This is a <strong>reading</strong> that separates two things often conflated.</p>
+<p><strong>What it would add.</strong> A precise distinction for the corpus's electroweak articles, which treat the weak sector's smallness as a small coupling.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, at the coupling.</p>
+<p><strong>What stands in the way.</strong> The corpus has no boson mass and no propagator in that sense, so the distinction would enter as an external fact.</p>
+<h3 id="2-only-left-handed-fermions-couple">2. Only left-handed fermions couple</h3>
+<p><strong>The idea.</strong> Chirality is selected by the interaction, not by the fermion's mass. This is the structural fact behind parity violation and the reason the weak sector cannot be parity-symmetric.</p>
+<p><strong>What it would add.</strong> A statement the corpus's chiral-wall article needs to make contact with experiment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; it is a matter of stating the correspondence.</p>
+<p>This is a long encyclopedia article; the scope, the mediators, the coupling-versus-strength distinction, the parity violation and the unification are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

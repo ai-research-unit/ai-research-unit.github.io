@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinor Model of Baryons and Mesons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Spinor Model of Baryons and Mesons.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinor-model-of-baryons-and-mesons"><strong>Spinor Model of Baryons and Mesons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of the Yukawa anniversary supplement</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Supplement of the Progress of Theoretical Physics</em>, Commemoration Issue for the 30th Anniversary of the Meson Theory by Dr. H. Yukawa (1965) 339; received 28 June 1965</td>
+</tr>
+<tr>
+<td>length</td>
+<td>44 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Spinor Model of Baryons and Mesons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Spinor Model of Baryons and Mesons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Spinor Model of Baryons and Mesons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes that a hadron's internal configuration is three <em>triads</em>, where a triad is a light-like vector plus a rotational orientation about it, equivalently a two-component spinor. Three triads is not arbitrary: Minkowski space admits exactly three independent light-like vectors, so the count of internal coordinates — twelve real numbers — is fixed by the geometry of the light-cone. The symmetry that acts is then $SU(6)$, containing the $U(3)$ of unitary spin and the $SU(2)$ of spin, and it arises together with a three-dimensional Lorentz group $L(3)$ whose generators describe extension, dilatation and oscillation. These control which $SU(6)$ representations appear and set the mass operator. States are sorted into <em>shells</em> by a pair of oscillator quantum numbers $(K,L)$ and each shell splits into $SU(6)$ supermultiplets. The first mesonic shell, $(1,1)$, contains 36 states: an $SU(6)$ singlet identified with $X^0(958)$ and a 35-plet containing the pseudoscalar octet and vector nonet. The baryon shell $(3,0)$ gives exactly the 56, i.e. the decuplet and octet together. Meson charge parity obeys $U_C=(-1)^J$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-hypothesis">The hypothesis</h3>
+<p>A unified model of baryons and mesons is presented based on the hypothesis that a strongly interacting particle originally has the internal configuration represented by three 'triads', where a triad is by definition a light-like vector together with a rotational orientation around it, and the existence of three triads is related to the fact that our Minkowski space allows three independent light-like vectors. The assumed configuration implies twelve (real) independent internal coordinates. The $SU(6)$ symmetry is contained there in conformity with relativity, which requires kinematical couplings to exist between internal and external motions.</p>
+<p>Characteristic to the model is, besides the $SU(6)$, the existence of generators of a three-dimensional Lorentz group, which represents the extension, dilatation and vibration of the structure. These quantities play particularly important roles of controlling the IR (irreducible representation) of $SU(6)$ and determining the mass operator.</p>
+<p>"Eigenstates of the internal motion are first classified into 'shells' by a pair of oscillator quantum numbers, and then each shell is subgrouped into supermultiplets corresponding to IR's of $SU(6)$. The first mesonic shell has odd parity and contains 36 states which are divided into an $SU(6)$ singlet (identified as $X^0(958)$ meson) and an $SU(6)$ 35-plet. The predictions about spin, parity and charge-[parity] ... [some IR's] of $SU(6)$ do not occur in the shells of lower excitation."</p>
+<h3 id="why-the-triads-in-the-authors-argument">Why the triads, in the author's argument</h3>
+<p>We start from the fact that in our Minkowski space there exists a particular invariant three-dimensional surface, the light-cone, and one has a set of three independent real light-like vectors.</p>
+<p>We mean by 'triad' such a light-like axis associated with a rotational orientation around it. A triad is then represented equivalently by a 2-component spinor $\xi^\alpha$ $(\alpha=1,2)$. In fact the vector $\alpha^\mu=(\xi^*\sigma^\mu\xi)$ satisfies the light-like condition, and moreover two space-like axes of equal length, which are orthogonal to it and are mutually orthogonal, can be defined from $\xi$.</p>
+<p>We define the internal configuration in Minkowski space-time represented by the set of three triads, namely the three 2-component spinors $\xi^{\alpha r}$ $(r=1,2,3)$. All three triads are regarded as centered on the 'center-of-mass' coordinates $X^\mu$ of particle.</p>
+<h3 id="what-the-configuration-amounts-to-physically">What the configuration amounts to physically</h3>
+<p>Each spinor $\xi^{\alpha r}$ contains four real variables, which are equivalently represented by the four variables implied by the triad variables $a_\mu{}^{(r)a}$ satisfying orthonormality, namely the rotational orientation of the triad and the length $\alpha^{(r)}$ of axes. Thus the particle is regarded like a composite system of three spherical rotators, each of which can make isotropic dilatation, with variable radius $\alpha_0$, but cannot make torsion.</p>
+<h3 id="the-division-of-labour-among-the-symmetries">The division of labour among the symmetries</h3>
+<p>The unitary spins then originate from the relative displacements (including rotations and dilatations) among the three triads. The spin arises of course from the rotation of the system as a whole with respect to an inertial frame, while the mass is related to the total oscillation of the structure.</p>
+<p>The present model thus rests on 3+3 spinor oscillator variables, it may be regarded just as the generalization of the abstract oscillator model where 3+3 scalar oscillator variables, $a_r$ and $b_r$, are employed which also transform contragradiently under $U(3)$. The present doubling of internal variables from six to 12 is not excessive because the spin and baryon number are thus incorporated within the internal quantities. Indeed the presence of 12 quantum numbers is found to be just appropriate for a consistent classification of hadrons.</p>
+<h3 id="shells">Shells</h3>
+<p>Since our structure has twelve internal degrees of freedom, its internal eigenstates are to be classified in terms of the set of twelve mutually commuting quantities. Now we shall call the collection of states belonging to a specified pair of values of $(K,L)$ a shell. All states in a given shell have the same baryon number and intrinsic parity, given by $B=(K-L)/3$. A shell is subdivided into different IR's of $SU(6)$ according to the eigenvalues of $(\Omega,\Lambda',\Lambda'')$.</p>
+<p>Mesonic states are characterized by $K=L$, (i.e. $B=0$), which results in $U_t=e^{-i\pi K}$ according as $K$ is even or odd. This prediction just agrees with observations.</p>
+<h3 id="the-contents-of-the-low-shells">The contents of the low shells</h3>
+<p>We begin with the shells $(K,L)=(1,0)$ and $(0,1)$, which belong clearly to $\mathbf6$ and $\mathbf{6}^*$ of $SU(6)$, respectively, and have spin $J=1/2$. They have respective baryon numbers $1/3$ and $-1/3$, and correspond to quark and antiquark states.</p>
+<p>One may impose the subsidiary condition $U_t=1$, in terms of the multiplicative triality operator. The condition is equivalent to $K-L=3\nu$, $\nu=\text{integer}$, and restricts admissible states to those having integer baryon number. Then the above shells $(1,0)$ and $(2,0)$ are excluded. If we further limit our considerations to shells of lower excitations for which $K+L\le4$, we are left with only the shells $(K,L)=(1,1),(3,0),(0,3),(2,2)$.</p>
+<p>The shell $(K,L)=(1,1)$ consists of states of the form $a^{r*}b^{s*}\chi_0$, and has $\Lambda_s=4$, $B=0$, and odd parity, containing 36 mesonic states. Both the $0^-$ octet and the $1^-$ nonet have $\omega=0$ ($\Omega=0$), and it is verified that they are grouped into an $SU(6)$ supermultiplet $\mathbf{35}$, whereas the singlet state has $\omega=1$ and represents by itself an $SU(6)$ singlet since $a^{r*}\sigma_2b^{r*}$ is $SU(6)$ invariant. It is a feature of our model that the $SU(6)$ singlet $X^0$ and the $\mathbf{35}$-plet mesons are originally degenerate in the $(1,1)$ shell.</p>
+<p>"The $(3,0)$ shell ... has $B=1$ and $\Lambda_s=9/2$, and clearly represents baryonic states with the same intrinsic parity. We assign them even parity by convention. Further, $\omega$ can take the unique value $\omega=0$, so that $\Omega=0$, $\Lambda=9/2$, $G=63/4$, and the shell exactly gives the single IR $\mathbf{56}$ of $SU(6)$."</p>
+<p>We have thus obtained exactly the $SU(6)$ $\mathbf{56}$ consisting of the two multiplets $(\mathbf{10},\mathbf4)$ and $(\mathbf8,\mathbf2)$, which are just identified with the usual baryon decuplet and the octet, respectively.</p>
+<p>"The $(K,L)=(2,2)$ shell consisting of states of the form $a^*a^*b^*b^*\chi_0$ ... are mesonic states with even parity, and contain $J^P=2^+,1^+$ and $0^+$ states. Now $\omega$ ranges over $0,1,2$, and accordingly this shell is divided into three $SU(6)$ IR's, namely $\mathbf{405}$, $\mathbf{35}$, and $\mathbf1$."</p>
+<p>It is to be remarked that for the mesonic states with $J^P=0^-,1^-,2^+$ given above, the relation always holds between spin and charge-parity that $U_C=(-1)^J$. Thus our model lends support to this relation which was proposed formerly.</p>
+<h3 id="what-the-model-does-and-does-not-claim">What the model does and does not claim</h3>
+<p>Our model realizes all possible IR's of $SU(6)$, though not all of $U(6)$, but if we restrict ourselves to shells of lower excitation, e.g. to those under the limitation $K+L\le4$, the IR's $\mathbf{15}$, $\mathbf{20}$, and $\mathbf{70}$ of $SU(6)$ do not appear, regardless of the triality condition. Thus our theory has a much more specific character than the abstract $SU(6)$ symmetry approach.</p>
+<p>In our model quark-like states with fractional baryon number and charge may exist as possible states of excitation, but the existence of other normal baryonic and mesonic levels do not depend on the existence of quarks, in the sense that they are not composed of quarks and all quark-like states can be consistently excluded by the imposed triality condition, although within the scope of the present arguments this condition remains ad hoc.</p>
+<h3 id="the-mass-operator">The mass operator</h3>
+<p>Our assumption is that it is a generalized Klein–Gordon equation in which occur only the quantities $\Lambda_m$ of $L(3)$ algebra, which represent extension, dilatation and oscillation, to be responsible for the mass operator. The illustration used is $[P^2+\mu^2+aP(\Lambda_4^2+\Lambda_5^2+\Lambda_6)]\Psi=0$, "namely ... Evidently this equation is invariant under inhomogeneous Lorentz transformations and charge conjugation. It is also invariant under $U(6)_P\times U(1)_P$."</p>
+<p>Equation (8·15) yields, for the (mass)$^2$ of the 'ground state', the mesonic $SU(6)$ singlet, 35-plet, and the baryonic 56-plet, the respective values $m^2=\mu^2(1-12a)^{-1}$, $m(X)^2=\mu^2(1-26a)^{-1}$, $m^2=\mu^2(1-20a)^{-1}$, $m=\mu^2(1-99a/\ldots)$. On putting $a&gt;0.03$, this yields reasonable ratios for the $X^0$ mass and the symmetric masses of the 35-plet mesons and the 56-plet baryons.</p>
+<p>"In reality the $U(6)$ symmetry is reduced to $U(3)\supset SU(2)$ by the existence of spin-dependent terms. The simplest assumption is to add the term $bW$ ... to the operator, where $b$ is again a positive numerical constant. This modifies the formula to $M^2=\mu^2/[1-a(\Lambda_4^2+\Lambda_5^2+\Lambda_6)-bW(W+1)]$, giving the mass splittings between $SU(3)$ multiplets with different spin values, within an $SU(6)$ supermultiplet."</p>
+<p>We have presented the theory in one-particle level, where all hadrons are represented by various internal states of the unique structure, in such a way that baryons correspond to states of half-integer $J$ (and $\Lambda_s$) while mesons to states of integer $J$ (and $\Lambda_s$). It remains to show how this unified representation can be brought into accordance with the spin-statistics relation by going over to the formulation of many-particle problems.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The number of light-like directions fixes the size of the internal space</li>
+</ol>
+<p><strong>The idea.</strong> Minkowski space has exactly three independent light-like vectors. Take three triads, one per light-like direction, and you get $3\times4=12$ real internal coordinates, hence $SU(6)$ rather than $SU(3)$ or $U(9)$. The internal dimension is not chosen — it is counted off the light-cone.</p>
+<p><strong>What it would add.</strong> A kinematic reason for $SU(6)$ that competes with the dynamical reason (quarks in a potential). The corpus's $SU(6)$ and generation discussions take the rank as observed and ask what algebra produces it; here the rank follows from the signature of space-time, which is a different and stronger kind of explanation because it cannot be varied without changing the metric.</p>
+<p><strong>Where it lands.</strong> §<em>The Counting</em> of <em>The Number of Generations and the Biquaternion Algebra</em> (<code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>), as the light-cone count.</p>
+<p><strong>What stands in the way.</strong> Three light-like vectors is a statement about a point, not about a field; whether the count survives second quantisation is left open by the author.</p>
+<ol>
+<li>$SU(6)$ comes with $L(3)$, and</li>
+</ol>
+<p>$L(3)$ does the work</p>
+<p><strong>The idea.</strong> The symmetry algebra is not $SU(6)$ alone. A three-dimensional Lorentz group appears alongside it, generated by the extension, dilatation and oscillation of the triads. Its Casimirs are what select which $SU(6)$ representations occur and what the mass is.</p>
+<p><strong>What it would add.</strong> A resolution of a standing puzzle: $SU(6)$ alone over-predicts, giving the $\mathbf{15}$, $\mathbf{20}$, $\mathbf{70}$ in low shells. Here a noncompact partner group cuts them out. The corpus treats $SU(6)$ as a symmetry to be broken; here it is a symmetry that was never the whole story, and the part that was missing is noncompact.</p>
+<p><strong>Where it lands.</strong> §<em>The Algebra</em> of <em>$SO(n)$ over the Complexes in Physics</em> (<code>articles_internal/so-n-over-the-complexes-in-physics.md</code>), as the noncompact partner.</p>
+<p><strong>What stands in the way.</strong> The partner group's action is entangled with the mass operator, so "symmetry" here does not mean degeneracy.</p>
+<h3 id="3-shells-two-integers-label-a-whole-supermultiplet-tower">3. Shells: two integers label a whole supermultiplet tower</h3>
+<p><strong>The idea.</strong> Every internal state is labelled by $(K,L)$, a pair of oscillator quantum numbers, and all states with the same pair share baryon number and intrinsic parity. <strong>Where it lands.</strong> §<em>The Spectrum</em> of <em>The Isosinglet Meson Series</em> (<code>articles_external/Takabayasi/Takabayasi - The Isosinglet Meson Series-conversion.md</code>), as the shell label.</p>
+<h3 id="4-triality-as-the-integer-baryon-number-condition-admitted-to-be-ad-hoc">4. Triality as the integer-baryon-number condition, admitted to be ad hoc</h3>
+<p><strong>The idea.</strong> Imposing $U_t=1$, i.e. <strong>Where it lands.</strong> §<em>Triality</em> of <em>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</em> (<code>articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.md</code>), as the admitted postulate.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

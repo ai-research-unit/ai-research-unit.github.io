@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Phase Structures the Pattern — A Phase-First Reconstruction of Quantum Interference, The Geometry of Phase I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Phase_Structures_the_Pattern_A_Phase.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-phase-structures-the-pattern-a-phase-first-reconstruction-of-quantum-interference-the-geometry-of-phase-i"><strong>The Phase Structures the Pattern — A Phase-First Reconstruction of Quantum Interference, The Geometry of Phase I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer, ORCID iD 0000-0001-9160-6427</td>
+</tr>
+<tr>
+<td>version</td>
+<td>undated in the extracted text; first part of a series</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - The_Phase_Structures_the_Pattern_A_Phase-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Phase_Structures_the_Pattern_A_Phase.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Phase_Structures_the_Pattern_A_Phase.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives interference from three separate ingredients and keeps them separate: a density that is the observable, a relative phase that places the fringes, and a coherence factor that decides whether the cross term survives at all. The derivation is the standard one done carefully, extended to partial coherence by a complex degree of coherence. The paper's claim is about what does the work — the phase structures the pattern, it does not create it — and its conclusion is a division of labour between phase, coherence and density.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-density-and-the-cross-term">The density and the cross term</h3>
+<p>$$\rho=|\psi|^2$$
+(paper 4), and for two contributions
+$$\rho=\rho_1+\rho_2+2\sqrt{\rho_1\rho_2}\cos(\Delta\varphi)$$
+(paper 18). "tude √ ψ= ρ eiφ , (2) the density ρ = |ψ|2 is the observable quantity, while relative phase determines the constructive and destructive geometry of interference." and destructive placement; "among amplitudes, while visibility depends on density, amplitude balance, and coherence."</p>
+<h3 id="the-extrema-and-the-visibility">The extrema and the visibility</h3>
+<p>$$\rho_{\max}=\rho_1+\rho_2+2\sqrt{\rho_1\rho_2},\qquad \rho_{\min}=\rho_1+\rho_2-2\sqrt{\rho_1\rho_2}$$
+(paper 24–25), and
+$$V=\frac{\rho_{\max}-\rho_{\min}}{\rho_{\max}+\rho_{\min}}=\frac{2\sqrt{\rho_1\rho_2}}{\rho_1+\rho_2}$$
+(paper 26–27). Note what $V$ does not contain: no wavelength, no separation, no $L$ — it is a statement about amplitude balance alone.</p>
+<h3 id="partial-coherence">Partial coherence</h3>
+<p>With a complex degree of coherence, $0\le|\gamma|\le1$ (paper 28),
+$$\rho=\rho_1+\rho_2+2|\gamma|\sqrt{\rho_1\rho_2}\cos(\Delta\varphi+\arg\gamma),\qquad V=\frac{2|\gamma|\sqrt{\rho_1\rho_2}}{\rho_1+\rho_2}$$
+(paper 29–30). "This expression separates three roles. Relative phase determines fringe position, coherence determines whether cross terms survive, and density determines the observable strength of the pattern."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-visibility-as-a-product-of-two-factors">1. Visibility as a product of two factors</h3>
+<p><strong>The idea.</strong> $V=|\gamma|\cdot\frac{2\sqrt{\rho_1\rho_2}}{\rho_1+\rho_2}$: one factor for coherence, one for balance, and the pattern's depth is their product. That is a <strong>formula</strong>, and it is a factorization the corpus does not write.</p>
+<p><strong>What it would add.</strong> The corpus reads visibility off the length of the Bloch vector in its double-slit article; this splits that length into a coherence part and a balance part, which is what a which-path experiment varies separately.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> In the corpus both factors sit inside one idempotent, so the split is a re-labelling; and the factor $2\sqrt{\rho_1\rho_2}/(\rho_1+\rho_2)$ reaches 1 only for equal amplitudes, which means the corpus's "visibility one" case is a measure-zero slice of this formula.</p>
+<h3 id="2-a-complex-degree-of-coherence">2. A complex degree of coherence</h3>
+<p><strong>The idea.</strong> $|\gamma|$ with an argument that shifts the fringes is the only object in the batch that describes a state which is neither pure nor fully mixed, and the paper uses it without ceremony. That is a <strong>mechanism</strong> for partial coherence.</p>
+<p><strong>What it would add.</strong> A parameter between the corpus's two regimes (coherent element, idempotent projection) — the corpus has no continuous dial from one to the other.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>, whose decoherence is a complete projection.</p>
+<p><strong>What stands in the way.</strong> The corpus's states are idempotents, so $|\gamma|$ is either 1 or 0 there; introducing intermediate values needs a mixed state, i.e. a matrix rather than an element, which the corpus's representation deliberately avoids.</p>
+<h3 id="3-what-the-phase-does-not-do">3. What the phase does not do</h3>
+<p><strong>The idea.</strong> The phase moves fringes and cannot create them; the paper says so in the three-role sentence. That is a <strong>reading</strong> with a sharp boundary, and it is a useful guard against the batch's habit of attributing structure to phase alone.</p>
+<p><strong>What it would add.</strong> A limit on what any phase-first account may claim: without amplitude balance and coherence, phase has nothing to modulate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, on what the phase factor does and does not control.</p>
+<p><strong>What stands in the way.</strong> The statement is a truism of the standard formalism, so as an import it adds discipline rather than content, and the corpus already respects it.</p>
+<p>The rank is a judgement: the factorized visibility first, because it is an equation with two named parts; the degree of coherence second, because it names a missing dial; the boundary third, because it is a caution.</p>
+<p>This is an eight-page paper; the density, the cross term, the extrema, the visibility, the degree of coherence and the three-role separation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

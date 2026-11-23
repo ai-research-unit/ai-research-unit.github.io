@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The SI Base Dimensions — Biquaternion Universe</title>
+  <meta name="description" content="Status. One rule, one scan, one worklist. Every physical quantity in the physics corpus is written in the official SI base units and their powers. Nothing…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-si-base-dimensions"><strong>Audit: The SI Base Dimensions</strong></h1>
+<p><em>Status.</em> One rule, one scan, one worklist. Every physical quantity in the physics corpus is written in the official SI base units and their powers. Nothing is expressed in a unit whose definition hides a constant.</p>
+<h2 id="1-the-rule">1. The Rule</h2>
+<p><strong>The SI has seven base dimensions.</strong> Each has one base unit, and every other unit is a product of powers of those seven.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>base quantity</th>
+<th>dimension</th>
+<th>unit</th>
+<th>symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length</td>
+<td>$\mathrm{L}$</td>
+<td>metre</td>
+<td>$\mathrm{m}$</td>
+</tr>
+<tr>
+<td>mass</td>
+<td>$\mathrm{M}$</td>
+<td>kilogram</td>
+<td>$\mathrm{kg}$</td>
+</tr>
+<tr>
+<td>time</td>
+<td>$\mathrm{T}$</td>
+<td>second</td>
+<td>$\mathrm{s}$</td>
+</tr>
+<tr>
+<td>electric current</td>
+<td>$\mathrm{I}$</td>
+<td>ampere</td>
+<td>$\mathrm{A}$</td>
+</tr>
+<tr>
+<td>thermodynamic temperature</td>
+<td>$\Theta$</td>
+<td>kelvin</td>
+<td>$\mathrm{K}$</td>
+</tr>
+<tr>
+<td>amount of substance</td>
+<td>$\mathrm{N}$</td>
+<td>mole</td>
+<td>$\mathrm{mol}$</td>
+</tr>
+<tr>
+<td>luminous intensity</td>
+<td>$\mathrm{J}$</td>
+<td>candela</td>
+<td>$\mathrm{cd}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every article obeys it.</strong> A mass is a mass, in kilograms. A length is a length, in metres. A time is a time, in seconds. An energy is an energy, in joules, $\mathrm{J}=\mathrm{kg\,m^{2}\,s^{-2}}$. A momentum is $\mathrm{kg\,m\,s^{-1}}$. A cross-section is $\mathrm{m^{2}}$. A rate is $\mathrm{s^{-1}}$. A wavenumber is $\mathrm{m^{-1}}$. The corpus uses five of the seven base dimensions; the mole and the candela do not appear.</p>
+<p><strong>No unit that hides a constant.</strong> A unit is admitted only if its definition is a product of base units. The electronvolt is the charge of the proton times a volt, so it is a unit of energy and of nothing else: $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$, exact. The corpus therefore refuses it on any quantity but an energy:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>refused writing</th>
+<th>why</th>
+<th>repair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e=0.511\ \mathrm{MeV}$</td>
+<td>a mass in an energy unit; the $c^{2}$ is dropped</td>
+<td>$m_e=9.109\times10^{-31}\ \mathrm{kg}$</td>
+</tr>
+<tr>
+<td>$m_e=0.511\ \mathrm{MeV}/c^{2}$</td>
+<td>the conversion is hidden inside the label</td>
+<td>$m_e=9.109\times10^{-31}\ \mathrm{kg}$</td>
+</tr>
+<tr>
+<td>$\lambda_m=386\ \mathrm{fm}$</td>
+<td>a length in a unit that is not the metre</td>
+<td>$\lambda_m=3.86\times10^{-13}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$\tau=0.26\ \mathrm{ps}$</td>
+<td>a time in a unit that is not the second</td>
+<td>$\tau=2.6\times10^{-13}\ \mathrm{s}$</td>
+</tr>
+<tr>
+<td>$\Lambda=1\ \mathrm{GeV}$, $T=1\ \mathrm{eV}$</td>
+<td>an energy and a temperature shown in one unit</td>
+<td>$\Lambda=1.602\times10^{-10}\ \mathrm{J}$, $T=1.16\times10^{4}\ \mathrm{K}$</td>
+</tr>
+<tr>
+<td>$c=\hbar=1$</td>
+<td>the constants are set to one and never written</td>
+<td>$c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$ on the page</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A ratio is legal and is not required.</strong> A ratio of two masses is dimensionless, so $m_p/m_e=1836.15$ breaks no rule and needs no repair. What the rule forbids is the electronvolt standing where a mass, a length, a time or a temperature stands. The ratio is an option; the kilogram is the unit.</p>
+<p><strong>What does not change.</strong> The algebra, the glyphs, the dimension letters and the tables of <em>Physics Units and Common Elements Conventions</em> stay as they are. Only the unit attached to a number moves, and it moves to the base unit of its dimension.</p>
+<h2 id="2-the-constants-and-the-four-conversions">2. The Constants, and the Four Conversions</h2>
+<p>The SI fixes seven constants exactly, and every conversion below follows from them with no measured number in it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>constant</th>
+<th>value</th>
+<th>exact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta f_{\mathrm{Cs}}$</td>
+<td>$9\,192\,631\,770\ \mathrm{Hz}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>$299\,792\,458\ \mathrm{m\,s^{-1}}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>$6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>$1.602\,176\,634\times10^{-19}\ \mathrm{C}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$k_B$</td>
+<td>$1.380\,649\times10^{-23}\ \mathrm{J\,K^{-1}}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$N_A$</td>
+<td>$6.022\,140\,76\times10^{23}\ \mathrm{mol^{-1}}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathrm{Ki}_{\mathrm{cd}}$</td>
+<td>$683\ \mathrm{lm\,W^{-1}}$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>A number in electronvolts becomes a number in joules by one multiplication by $e$. A mass becomes a mass by the second conversion, and a length or a time by the two that follow.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>energy in eV</td>
+<td>joules</td>
+<td>$E[\mathrm{J}]=E[\mathrm{eV}]\times1.602\,176\,634\times10^{-19}$</td>
+</tr>
+<tr>
+<td>energy</td>
+<td>mass</td>
+<td>$m=E/c^{2}$</td>
+</tr>
+<tr>
+<td>mass</td>
+<td>Compton length</td>
+<td>$\lambda_m=h/(m\,c)$</td>
+</tr>
+<tr>
+<td>energy width</td>
+<td>lifetime</td>
+<td>$\tau=\hbar/\Gamma$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two working numbers.</strong> $1\ \mathrm{GeV}=1.602\,176\,634\times10^{-10}\ \mathrm{J}$ and $1\ \mathrm{GeV}/c^{2}=1.782\,661\,921\times10^{-27}\ \mathrm{kg}$. The second is the only one a mass needs: a mass read in GeV becomes a mass in kilograms by one multiplication by $1.782\,661\,921\times10^{-27}$, with no $c$ written.</p>
+<h2 id="3-the-si-values">3. The SI Values</h2>
+<p>Every number below is computed from the constants of §2. A table like this replaces the electronvolt column of an article, once, and the prose then quotes the kilogram.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>energy</th>
+<th>mass</th>
+<th>Compton length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_ec^{2}$</td>
+<td>$8.187\,11\times10^{-14}\ \mathrm{J}$</td>
+<td>$9.109\,4\times10^{-31}\ \mathrm{kg}$</td>
+<td>$2.426\,3\times10^{-12}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_\mu c^{2}$</td>
+<td>$1.692\,83\times10^{-11}\ \mathrm{J}$</td>
+<td>$1.883\,5\times10^{-28}\ \mathrm{kg}$</td>
+<td>$1.173\,4\times10^{-14}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_\tau c^{2}$</td>
+<td>$2.846\,84\times10^{-10}\ \mathrm{J}$</td>
+<td>$3.167\,5\times10^{-27}\ \mathrm{kg}$</td>
+<td>$6.977\,7\times10^{-16}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_pc^{2}$</td>
+<td>$1.503\,28\times10^{-10}\ \mathrm{J}$</td>
+<td>$1.672\,6\times10^{-27}\ \mathrm{kg}$</td>
+<td>$1.321\,4\times10^{-15}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_nc^{2}$</td>
+<td>$1.505\,35\times10^{-10}\ \mathrm{J}$</td>
+<td>$1.674\,9\times10^{-27}\ \mathrm{kg}$</td>
+<td>$1.319\,6\times10^{-15}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_\pi c^{2}$</td>
+<td>$2.236\,16\times10^{-11}\ \mathrm{J}$</td>
+<td>$2.488\,1\times10^{-28}\ \mathrm{kg}$</td>
+<td>$8.883\,3\times10^{-15}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$M_Hc^{2}$</td>
+<td>$2.004\,16\times10^{-8}\ \mathrm{J}$</td>
+<td>$2.229\,9\times10^{-25}\ \mathrm{kg}$</td>
+<td>$9.911\,6\times10^{-18}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$M_Wc^{2}$</td>
+<td>$1.287\,78\times10^{-8}\ \mathrm{J}$</td>
+<td>$1.432\,9\times10^{-25}\ \mathrm{kg}$</td>
+<td>$1.542\,5\times10^{-17}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$M_Zc^{2}$</td>
+<td>$1.460\,99\times10^{-8}\ \mathrm{J}$</td>
+<td>$1.625\,6\times10^{-25}\ \mathrm{kg}$</td>
+<td>$1.359\,7\times10^{-17}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$m_tc^{2}$</td>
+<td>$2.766\,8\times10^{-8}\ \mathrm{J}$</td>
+<td>$3.078\,5\times10^{-25}\ \mathrm{kg}$</td>
+<td>$7.179\,6\times10^{-18}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{vev}}$</td>
+<td>$3.944\,88\times10^{-8}\ \mathrm{J}$</td>
+<td>$4.389\,3\times10^{-25}\ \mathrm{kg}$</td>
+<td>$5.035\,5\times10^{-18}\ \mathrm{m}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The price, stated once.</strong> A particle mass in kilograms is a small number with a long exponent. That is a fact about the kilogram and not a defect of the rule. The article prints the exponent once, in a table like the one above, and the prose then uses the symbol.</p>
+<h2 id="4-the-scan">4. The Scan</h2>
+<p><strong>Save as <code>/tmp/si/scan_si.py</code> and run from the repository root.</strong> It splits every unit group into tokens and classifies a token by its dimension. A symbol that merely looks like a unit — $\Omega_{\mathrm{ps}}$ for the pseudoscalar density, $\varepsilon^{(\mathrm{h})}$ for helicity — is not counted, because a unit token must follow a space, a digit or a closing brace.</p>
+<pre><code class="language-python">import re, pathlib
+
+UNIT = r'\\(?:mathrm|text)\{([^{}]*)\}'
+# a unit token must be introduced by a space, a digit, or a closing brace, and end the group
+def units_in(line):
+    out = []
+    for m in re.finditer(r'(?&lt;!_\{)(?&lt;![_(])\\(?:mathrm|text)\{([^{}]*)\}', line):
+        out.append((m.start(), m.group(1)))
+    return out
+
+EVU   = re.compile(r'^(?:T|G|M|k|m|u|n|p)?eV(?:\^\{?-?[0-9/]+\}?)?$')
+EVBARE= re.compile(r'(?&lt;![A-Za-z\\{])(?:T|G|M|k|m|u|n|p)?eV\b')
+NONM  = re.compile(r'^(?:f|p|n|c|k|a|m|u|d|h)m(?:\^\{?-?[0-9]+\}?)?$')
+NONS  = re.compile(r'^(?:ps|ns|fs|ms|us|min|day|yr|h|hour|s\^\{?-1\}?)$')
+NONKG = re.compile(r'^(?:g|mg|ug|ng|t)$')
+MASSY = re.compile(r'(?:\\mathrm\{)?eV\}?\s*(?:/|\\,?/)\s*c')
+
+def classify(line):
+    hits = set()
+    for _, u in units_in(line):
+        if EVU.match(u):
+            hits.add('E-eV')
+        if NONM.match(u):
+            hits.add('L-nonm')
+        if NONS.match(u):
+            hits.add('T-nons')
+        if NONKG.match(u):
+            hits.add('M-nonkg')
+    if EVBARE.search(line):
+        hits.add('E-eV')
+    if MASSY.search(line):
+        hits.add('M-eV')
+    return hits
+
+def scan(root, skip=('audits', 'instructions', '__pycache__')):
+    out = {}
+    for p in sorted(pathlib.Path(root).rglob('*.md')):
+        if any(s in p.parts for s in skip):
+            continue
+        cls = {}
+        for i, line in enumerate(p.read_text(encoding='utf-8', errors='replace').split('\n'), 1):
+            for k in classify(line):
+                cls.setdefault(k, []).append(i)
+        if cls:
+            out[str(p)] = cls
+    return out
+
+if __name__ == '__main__':
+    h = scan('articles_physics')
+    for k in ('M-eV', 'E-eV', 'L-nonm', 'T-nons', 'M-nonkg'):
+        print(f'{k:9s} lines={sum(len(v.get(k,[])) for v in h.values()):5d} '
+              f'files={sum(1 for v in h.values() if k in v):3d}')
+    print('union files:', len(h))
+</code></pre>
+<p><strong>Measured on 2026-11-23.</strong> $75$ of the $679$ physics articles deviate, and no other file in <code>articles_physics</code> does.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>reading</th>
+<th>lines</th>
+<th>files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-eV</td>
+<td>an electronvolt somewhere in the line</td>
+<td>634</td>
+<td>68</td>
+</tr>
+<tr>
+<td>M-eV</td>
+<td>a mass written in eV or eV/$c^{2}$</td>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>L-nonm</td>
+<td>a length in fm, pm, nm, cm, mm or km</td>
+<td>80</td>
+<td>17</td>
+</tr>
+<tr>
+<td>T-nons</td>
+<td>a time in ps, ns or fs</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>M-nonkg</td>
+<td>a mass in grams</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>union</td>
+<td>the five classes together</td>
+<td>725</td>
+<td><strong>75</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A line can fall in two classes</strong>, so the columns do not add to the union. The scan is a candidate list. It cannot read a sentence, and a line that quotes a refused form in order to refuse it is a candidate here and legal in the corpus: <code>physics-units-and-common-elements-conventions</code> and the anchor both do that, and both stay.</p>
+<h2 id="5-the-articles-that-deviate">5. The Articles That Deviate</h2>
+<p>Every file below carries at least one line written outside the SI base dimensions. The count is the number of candidate lines, and the last column splits them by class.
+| article | lines | deviation |
+|---|---|---|
+| <code>the-three-wavenumbers-of-a-particle</code> | 86 | 45 eV, 39 len, 2 g |
+| <code>hadron-structure-from-qcd-the-bound-state-problem</code> | 47 | 47 eV |
+| <code>the-landau-pole-triviality-and-vacuum-stability</code> | 43 | 43 eV |
+| <code>the-hierarchy-problem-and-naturalness</code> | 40 | 40 eV |
+| <code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code> | 29 | 29 eV |
+| <code>electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses</code> | 27 | 27 eV |
+| <code>the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure</code> | 27 | 10 eV, 17 len |
+| <code>what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron</code> | 27 | 26 eV, 1 len |
+| <code>jets-the-qcd-cross-section-and-the-infrared-structure</code> | 25 | 25 eV |
+| <code>exercise-the-relativistic-kinematics-of-a-two-body-decay</code> | 22 | 22 eV |
+| <code>the-excitation-ladder-theory-of-flavour</code> | 20 | 20 eV |
+| <code>vacuum-value-normalization-energy-mass-wave-number-and-length</code> | 20 | 19 eV, 1 len |
+| <code>the-pmns-matrix-and-lepton-mixing</code> | 19 | 18 eV, 1 len |
+| <code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code> | 17 | 17 eV |
+| <code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters</code> | 15 | 15 eV |
+| <code>the-scalar-sector-and-the-leptoquark-bounds</code> | 13 | 13 eV |
+| <code>electroweak-precision-observables-the-oblique-parameters-s-t-u</code> | 12 | 12 eV |
+| <code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code> | 12 | 8 eV, 4 time |
+| <code>the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form</code> | 12 | 12 eV |
+| <code>energy-and-information-four-conservation-laws-from-one-identity</code> | 11 | 10 eV, 1 eV/c2 |
+| <code>the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form</code> | 11 | 11 eV |
+| <code>the-one-coupling-that-returns-the-standard-model</code> | 10 | 10 eV |
+| <code>particle-classification-three-grids-one-name-in-every-cell</code> | 9 | 9 eV |
+| <code>the-parton-model-and-deep-inelastic-scattering</code> | 9 | 9 eV |
+| <code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code> | 8 | 8 eV |
+| <code>the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form</code> | 8 | 8 eV |
+| <code>exercise-four-momentum-conservation-in-a-collision</code> | 7 | 7 eV |
+| <code>physics-units-and-common-elements-conventions</code> | 7 | 4 eV, 3 len |
+| <code>the-w-and-z-bosons-in-biquaternionic-form</code> | 7 | 7 eV |
+| <code>lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton</code> | 6 | 6 eV |
+| <code>subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form</code> | 6 | 6 eV |
+| <code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code> | 6 | 6 eV |
+| <code>the-weak-interaction-in-biquaternionic-form</code> | 6 | 6 eV |
+| <code>an-introduction-to-flavour</code> | 5 | 5 eV |
+| <code>su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form</code> | 5 | 5 eV |
+| <code>the-four-colours-left-right-model</code> | 5 | 5 eV |
+| <code>the-non-quantum-limit-of-the-biquaternion-model</code> | 5 | 5 len |
+| <code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code> | 5 | 2 eV, 3 eV/c2 |
+| <code>the-weinberg-angle-and-the-three-neutral-states</code> | 5 | 5 eV |
+| <code>spin-hydrodynamics-in-biquaternionic-form</code> | 4 | 2 eV, 2 len |
+| <code>the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant</code> | 4 | 4 eV |
+| <code>the-lagrangian-and-the-higgs-field</code> | 4 | 4 eV |
+| <code>the-lagrangian-and-the-weak-interaction</code> | 4 | 4 eV |
+| <code>the-proton-in-biquaternionic-form</code> | 4 | 4 eV |
+| <code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code> | 3 | 3 len |
+| <code>the-standard-model-and-the-lagrangian-four-sectors-in-one-expression</code> | 3 | 3 eV |
+| <code>ai-physics-review</code> | 2 | 2 eV |
+| <code>dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form</code> | 2 | 2 eV |
+| <code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation</code> | 2 | 1 eV, 1 eV/c2 |
+| <code>maxwells-theory-on-non-commutative-spaces-and-quaternions</code> | 2 | 2 eV |
+| <code>moller-scattering-in-biquaternionic-form</code> | 2 | 2 eV |
+| <code>relativistic-mechanics-from-the-dirac-wave</code> | 2 | 1 eV, 1 len |
+| <code>the-breaking-chain-and-the-boson-spectrum</code> | 2 | 2 eV |
+| <code>the-electron-in-biquaternionic-form</code> | 2 | 1 eV, 1 len |
+| <code>the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules</code> | 2 | 2 eV |
+| <code>the-lagrangian-and-the-nonlinear-sigma-model</code> | 2 | 2 eV |
+| <code>the-lagrangian-and-the-w-and-z-bosons</code> | 2 | 2 eV |
+| <code>the-neutron-in-biquaternionic-form</code> | 2 | 2 eV |
+| <code>the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form</code> | 2 | 2 eV |
+| <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code> | 2 | 1 eV, 1 len |
+| <code>the-two-fluid-model-in-biquaternionic-form</code> | 2 | 2 eV |
+| <code>thomson-and-compton-scattering-the-biquaternion-polarization-algebra</code> | 2 | 2 eV |
+| <code>bhabha-scattering-in-biquaternionic-form</code> | 1 | 1 eV |
+| <code>introduction-to-the-biquaternion-universe</code> | 1 | 1 eV |
+| <code>landau-levels-in-biquaternionic-form</code> | 1 | 1 eV |
+| <code>the-dirac-equation-in-biquaternionic-polar-variables</code> | 1 | 1 len |
+| <code>the-double-slit-experiment-in-biquaternionic-form</code> | 1 | 1 len |
+| <code>the-empirical-status-of-the-biquaternion-framework</code> | 1 | 1 eV |
+| <code>the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case</code> | 1 | 1 eV |
+| <code>the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form</code> | 1 | 1 eV |
+| <code>the-nonlinear-sigma-model-in-biquaternionic-form</code> | 1 | 1 eV |
+| <code>the-quantum-classical-divide-in-the-biquaternion-framework</code> | 1 | 1 len |
+| <code>the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form</code> | 1 | 1 len |
+| <code>wave-particle-duality-and-the-fourier-transform</code> | 1 | 1 len |
+| <code>zitterbewegung-in-biquaternionic-form</code> | 1 | 1 eV |</p>
+<h2 id="6-the-repair">6. The Repair</h2>
+<p><strong>One dimension at a time, one article at a time.</strong> The unit moves to the base unit of its dimension and the number is recomputed. No constant is dropped: the conversion is printed on the page, once, in the table the article already carries.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e=0.511\ \mathrm{MeV}$</td>
+<td>$m_e=9.109\times10^{-31}\ \mathrm{kg}$</td>
+</tr>
+<tr>
+<td>$\Gamma_H=4.1\ \mathrm{MeV}$</td>
+<td>$\Gamma_H=6.6\times10^{-22}\ \mathrm{J}$</td>
+</tr>
+<tr>
+<td>$\lambda_m=386\ \mathrm{fm}$</td>
+<td>$\lambda_m=3.86\times10^{-13}\ \mathrm{m}$</td>
+</tr>
+<tr>
+<td>$\tau=0.26\ \mathrm{ps}$</td>
+<td>$\tau=2.6\times10^{-13}\ \mathrm{s}$</td>
+</tr>
+<tr>
+<td>$\sigma&lt;2.6\times10^{-47}\ \mathrm{cm^{2}}$</td>
+<td>$\sigma&lt;2.6\times10^{-51}\ \mathrm{m^{2}}$</td>
+</tr>
+<tr>
+<td>a grain of $1\ \mathrm{g}$</td>
+<td>a grain of $1\times10^{-3}\ \mathrm{kg}$</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{Pl}}=1.22\times10^{19}\ \mathrm{GeV}$</td>
+<td>$M_{\mathrm{Pl}}=2.18\times10^{-8}\ \mathrm{kg}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Keep the conversion, not the shortcut.</strong> A line that says $M_W=80.377\ \mathrm{GeV}$ becomes a line that says $M_W=1.4329\times10^{-25}\ \mathrm{kg}$. A line that says $M_W=80.377\ \mathrm{GeV}/c^{2}$ becomes the same kilogram line. The two spellings differ in the corpus and agree in the repair, because both name the same mass.</p>
+<p><strong>Six traps.</strong></p>
+<ol>
+<li><strong>Dropping the exponent.</strong> $0.511$ MeV is $9.1\times10^{-31}$ kg, not $0.511\times10^{-27}$ kg. The exponent is where the error hides; write it in full.</li>
+<li><strong>Converting an energy into a mass by habit.</strong> $\sqrt{s}$, a width, a cutoff, a temperature and a coupling are energies or temperatures. They go to joules and kelvin, never to kilograms.</li>
+<li><strong>Leaving a derived unit half-converted.</strong> A cross-section in $\mathrm{cm^{2}}$ becomes $\mathrm{m^{2}}$; a rate in $\mathrm{ps^{-1}}$ becomes $\mathrm{s^{-1}}$; a wavenumber in $\mathrm{fm^{-1}}$ becomes $\mathrm{m^{-1}}$. A table that mixes the two is worse than the table it replaced.</li>
+<li><strong>Quoting a refused form in order to refuse it.</strong> The conventions article and the anchor must be able to print $\mathrm{MeV}$ and $\mathrm{fm}$ in the act of forbidding them. Those lines are legal and are not repaired.</li>
+<li><strong>Writing $c=1$.</strong> The constants are printed, and $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$ is exact, so there is no economy in setting it to one.</li>
+<li><strong>Repairing the number and not the sentence.</strong> "A light Higgs near $125$ GeV" must become "near $2.23\times10^{-25}$ kg", with no "energy" left in the sentence. A repaired number in an unrepaired sentence still claims that a mass is an energy.</li>
+</ol>
+<p><strong>Each repaired article carries a two-line Units note</strong> near the top: quantities are in SI base units, energy in joules, mass in kilograms, length in metres, time in seconds, and the constants used are $c$, $h$ and $e$ at their exact values.</p>
+<h2 id="7-the-gates">7. The Gates</h2>
+<p><strong>A gate detects a regression; it does not find new sites.</strong> Run all six after each article and record the output.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>gate</th>
+<th>measured today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the deviating-file count falls, by the script of §4</td>
+<td>$75$; never higher</td>
+</tr>
+<tr>
+<td>2</td>
+<td>no electronvolt outside the two rule articles</td>
+<td>$634$ lines in $68$ files</td>
+</tr>
+<tr>
+<td>3</td>
+<td>no length outside the metre</td>
+<td>$80$ lines in $17$ files</td>
+</tr>
+<tr>
+<td>4</td>
+<td>no time outside the second</td>
+<td>$4$ lines in $1$ file</td>
+</tr>
+<tr>
+<td>5</td>
+<td>no mass outside the kilogram</td>
+<td>$2$ lines in $1$ file</td>
+</tr>
+<tr>
+<td>6</td>
+<td>every article that prints a mass prints $c$</td>
+<td>rises by one per repaired article</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Gates 1 to 5 are the script, not a grep.</strong> A grep reads lower than the script on every class, because it sees a unit only inside a <code>\mathrm{}</code> group and misses a bare number in a sentence: it returns $154$ lines for the electronvolt where the script returns $634$, and a gate that certifies an article still carrying $480$ defects is no gate.</p>
+<p>Two commands, run from the repository root:</p>
+<pre><code class="language-bash">python3 scan_si.py                                              # gates 1 to 5
+grep -rl '2\.997\,924\,58' articles_physics/*.md | wc -l      # gate 6
+</code></pre>
+<p><strong>Gate 2 is the only one that matters by volume.</strong> Sixty-eight of the seventy-five files fail it and no other gate, and the electronvolt is the one unit that is right in one place and wrong in four.</p>
+<p><strong>Gate 6 is the definition of done for an article.</strong> An article that prints a mass in kilograms and does not print $c$ has hidden the conversion inside the number.</p>
+<h2 id="8-the-order-of-work">8. The Order of Work</h2>
+<ol>
+<li><strong>Freeze the base.</strong> Confirm the seven constants and the two working numbers of §2. Every later division depends on them.</li>
+<li><strong>Repair the rule articles first</strong>: <code>physics-units-and-common-elements-conventions</code>, <code>vacuum-value-normalization-energy-mass-wave-number-and-length</code>, <code>index-and-notation-conventions</code> and <code>algebra-and-element-conventions</code>. They legislate for the rest, and a rule article that contradicts the rule makes every later repair arguable.</li>
+<li><strong>Repair by weight, heaviest first</strong>: <code>the-three-wavenumbers-of-a-particle</code> ($86$), <code>hadron-structure-from-qcd-the-bound-state-problem</code> ($47$), <code>the-landau-pole-triviality-and-vacuum-stability</code> ($43$), <code>the-hierarchy-problem-and-naturalness</code> ($40$), then the rest of §5.</li>
+<li><strong>Run the gates after each article.</strong> A pass over seventy-five files that fails at the end has to be bisected.</li>
+<li><strong>Report, and stop.</strong> The acceptable sentence is: article, line numbers rewritten, gates that returned their measured value, lines read and found legal.</li>
+</ol>
+<p><strong>Done means</strong>: gate 1 at zero outside the rule articles; gates 2 to 5 returning only the lines that print a refused form in order to refuse it; gate 6 covering every article that carries a mass.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The rule: every quantity in the physics corpus is written in the official SI base units and their powers. Mass in kg, length in m, time in s, energy in J.</li>
+<li>The reason: a unit that hides a constant hides an error. The electronvolt on a mass, the electronvolt per $c^{2}$, the femtometre and the picosecond all hide one.</li>
+<li>The cost: a particle mass becomes a small number with a long exponent. That is a fact about the kilogram, not a defect of the rule.</li>
+<li>The size: $75$ of $679$ physics articles deviate, $725$ candidate lines, of which $634$ are electronvolts. Three articles carry a mass in an energy unit, seventeen carry a length outside the metre, one carries a time outside the second, one carries a mass in grams.</li>
+<li>The order: the rule articles first, then the heaviest, then the rest, gates after every article.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{kg}$</td>
+<td>the SI base unit of mass; the only unit a mass is written in</td>
+</tr>
+<tr>
+<td>$\mathrm{J}$</td>
+<td>$\mathrm{kg\,m^{2}\,s^{-2}}$, the SI derived unit of energy</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>$1.602\,176\,634\times10^{-19}\ \mathrm{C}$, exact; the conversion from electronvolts to joules</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{GeV}/c^{2}$</td>
+<td>$1.782\,661\,921\times10^{-27}\ \mathrm{kg}$; the conversion from a mass in GeV to a mass in kg</td>
+</tr>
+<tr>
+<td>E-eV, M-eV, L-nonm, T-nons, M-nonkg</td>
+<td>the five deviation classes of §4</td>
+</tr>
+<tr>
+<td>candidate</td>
+<td>a line the scan returns; not a verdict</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../../articles_physics/physics-units-and-common-elements-conventions.md">Physics Units and Common Elements Conventions</a>, which states the rule in words and carries the tables of base units.</li>
+<li><a href="../../articles_physics/index-and-notation-conventions.md">Index and Notation Conventions</a>, the glyphs a reader meets in every article.</li>
+<li><a href="../../articles_physics/vacuum-value-normalization-energy-mass-wave-number-and-length.html">Vacuum Value Normalization: Energy, Mass, Wave Number and Length</a>, the four readings of one number, all of them in SI units.</li>
+<li><a href="../../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>, the heaviest article of the worklist.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

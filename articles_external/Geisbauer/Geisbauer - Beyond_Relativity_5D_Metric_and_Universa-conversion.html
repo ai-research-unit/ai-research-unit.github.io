@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Angle Space Metric: A Geometric Reformulation of Relativity and Simultaneity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_5D_Metric_and_Universa.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-angle-space-metric-a-geometric-reformulation-of-relativity-and-simultaneity"><strong>The Angle Space Metric: A Geometric Reformulation of Relativity and Simultaneity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joerg Geisbauer, as printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>April 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Beyond_Relativity_5D_Metric_and_Universa-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_5D_Metric_and_Universa.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_5D_Metric_and_Universa.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Embeds four-dimensional spacetime in five dimensions and measures time dilation as an angle between a worldline and a normal, then builds the total angle as a product of a kinematic, a gravitational and an expansion cosine. A universal simultaneity time is defined as a weighted average of proper times, with the cosines as weights, and the construction is exercised on three hypothetical observers. The arithmetic is carried out; the interpretation of the average as a physical time is not tested.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-five-dimensional-setting">The five-dimensional setting</h3>
+<p>Coordinates are $x^A=(ct,x,y,z,x_5)$, with $x_5$ "the moment normal", and $$ds^2=-c^2dt^2+dx^2+dy^2+dz^2+dx_5dx_5$$ (paper 1), $g_{55}=1$ initially. The angle between the four-velocity $U^A$ and the normal $n^A$ is $$\cos\theta=\frac{U^An_A}{\sqrt{U^BU_B}\sqrt{n^Cn_C}}$$ (paper 2), giving $$\cos\theta_v=\sqrt{1-\frac{v^2}{c^2}},\qquad \Delta t=\frac{\Delta\tau}{\cos\theta_v},\qquad L=L_0\cos\theta_v$$ (paper 3–5)."t = . (4) cos(θv ) A larger θv slows time for a moving observer. 3.2 Length Contraction L = L0 cos(θv ).", and length contraction is the same cosine. </p>
+<h3 id="gravity-and-expansion-as-angles-with-the-schwarzschild-metric">Gravity and expansion as angles With the Schwarzschild metric,</h3>
+<p>$\cos\theta_{\rm grav}=\sqrt{1-2GM/rc^2}$ (paper 7) and $\cos\theta_{\rm total}=\cos\theta_v\cos\theta_{\rm grav}$ (paper 8). As $r\to r_s$ the cosine vanishes and $\Delta t\to\infty$; at $r=1.001\,r_s$ with $v=0$ the paper gets $\cos\theta_{\rm grav}=\sqrt{0.001/1.001}\approx0.0316$ and $\Delta t\approx31.6\,\Delta\tau$ (paper 11–12). Expansion enters as $\cos\theta_{\rm exp}=e^{-\alpha H_0t}$ with $\alpha$"a model parameter (here set to 1)."(paper 13), and the full angle is the triple product.</p>
+<h3 id="the-universal-time-as-a-weighted-average">The universal time as a weighted average</h3>
+<p>$$T_{\rm uni}=\frac{\sum_i t'_iW_i}{\sum_i W_i},\qquad W_i=\sqrt{1-\frac{v_i^2}{c^2}}\sqrt{1-\frac{2GM}{r_ic^2}}\,e^{-\alpha H_0t_i}$$ (paper 16), where $t'_i$ is the proper-time reading of observer $i$. Three observers are worked out with $H_0=2.27\times10^{-18}\,\mathrm{s^{-1}}$, $t=1$ Gyr $=3.156\times10^{16}$ s, hence $e^{-\alpha H_0t}\approx0.9309$: observer A at $v=0.6c$ in flat space has weight $0.7447$, observer B at rest at $r=10r_s$ has $0.8831$, and observer C at $v=0.8c$ and $r=1.001r_s$ has $0.0176$ (paper 17–27). With all three proper times set to $1$ s, $T_{\rm uni}=1.6454/1.6454=1$ s, and the paper says so:"The result is still 1 s because all proper time intervals $t'_i$ were chosen to be 1 s. The relative contributions (weights) have changed."</p>
+<p>"This paper introduces the Angle Space Metric, a theoretical framework designed to explore the possibility of deﬁning such a universal simultaneity time, denoted Tuni ."</p>
+<p>"The model proposes a method to <em>reconstruct</em> this universal time Tuni precisely from the observers’ individual proper times τ , weighted appropriately by the factors governing their relative time ﬂow."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-dilation-as-an-angle-on-a-fifth-axis">1. Dilation as an angle on a fifth axis</h3>
+<p><strong>The idea.</strong> $\cos\theta_v=\sqrt{1-\beta^2}$ reads a boost as a rotation in a plane containing a fifth direction, with $L=L_0\cos\theta$ for contraction and $\Delta t=\Delta\tau/\cos\theta$ for dilation. Since $\cos\theta_v=1/\gamma=\operatorname{sech}\Theta$, the "time angle" is the rapidity, written as a cosine. It is a <strong>reading</strong> of an object the corpus already has. </p>
+<p><strong>What it would add.</strong> A single geometric name for the two effects that the corpus keeps as two statements about which events are simultaneous, and a clean way to see that contraction and dilation are one cosine. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>, where the boost is already a rotor angle. </p>
+<p><strong>What stands in the way.</strong> Little: the correspondence is exact in flat space, so the import is a translation, not new content. The fifth axis does no work once $\cos\theta=\operatorname{sech}\Theta$ is recognised, and the paper's $g_{55}=1$"adjustable for dynamic effects" is not used.</p>
+<h3 id="2-a-global-time-defined-as-a-weighted-mean-of-proper-times">2. A global time defined as a weighted mean of proper times</h3>
+<p><strong>The idea.</strong> Given proper-time readings and the three factors for each observer, one number $T_{\rm uni}$ is formed by weighting each reading with its own rate. This is a <strong>mechanism</strong> for producing a global clock from local ones, and the only place in the paper where a number is produced.</p>
+<p><strong>What it would add.</strong> An explicit formula where the corpus has only the statement that the two times are the two parts of one central coordinate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<p><strong>What stands in the way.</strong> The weights are the very factors that say how far each clock is from the global frame, so the mean presupposes what it defines; and the worked example returns $1$ s for any choice of weights because every $t'_i$ is $1$ s — the numbers demonstrate the arithmetic, not the construction.</p>
+<p>The rank is a judgement: both are low, for different reasons — the first is a translation and the second is circular as stated. Nothing in this paper is refused outright.</p>
+<p>This is a six-page paper; the 5D line element, the three angle factors, the black-hole limits, the weighted average and a figure of the three-observer case are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

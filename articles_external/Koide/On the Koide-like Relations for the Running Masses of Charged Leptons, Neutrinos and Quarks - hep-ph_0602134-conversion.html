@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-koide-like-relations-for-the-running-masses-of-charged-leptons-neutrinos-and-quarks"><strong>On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0602134 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Zhi-zhong Xing, He Zhang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 February 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Lett. B 635 (2006) 107–111</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks - hep-ph_0602134-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks - hep-ph_0602134.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/On the Koide-like Relations for the Running Masses of Charged Leptons, Neutrinos and Quarks - hep-ph_0602134.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the closure ratio for each sector twice: once with the masses as measured at their own scales, once with all three masses run to $M_Z$. The leptons fail the relation at $M_Z$ by $0.2\%$, which is two hundred times their pole-mass precision, so the relation cannot hold for both the pole and the running masses; the pole masses win. The quark and neutrino ratios are then evaluated at $M_Z$ and followed to $M_R\sim10^{14}$ GeV, with the result that they are nearly stable, and an ordering $Q_U&gt;Q_D&gt;Q_l&gt;Q_\nu$ is recorded. The paper also states where the extremes are attained: $Q=1$ for an extreme hierarchy, $Q=1/3$ for degenerate masses.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-leptons-cannot-satisfy-both">The leptons cannot satisfy both</h3>
+<p>With $m_e=0.510998918\pm0.000000044$ MeV, $m_\mu=105.6583692\pm0.0000094$ MeV and $m_\tau=1776.99^{+0.29}_{-0.26}$ MeV, "the above experimental data yield $-0.00001\le Q_l^{pole}-2/3\le+0.00002$". The running masses are obtained from $m_l(\mu)=m_l(1-\Delta_l)$ with</p>
+<p>$$
+\Delta_l=\frac{\alpha(\mu)}{\pi}\left[\frac32\ln\frac{\mu}{m_l(\mu)}+1\right],
+\tag{paper 5, 6}
+$$</p>
+<p>giving at $M_Z$ with $\alpha(M_Z)=1/128.89$</p>
+<p>$$
+m_e(M_Z)=0.486755106\ \text{MeV},\quad
+m_\mu(M_Z)=102.740394\ \text{MeV},\quad
+m_\tau(M_Z)=1746.56\ \text{MeV},
+\tag{paper 8}
+$$</p>
+<p>and $\Delta_\mu=0.0276$, $\Delta_\tau=0.0171$, hence</p>
+<p>$$
+Q_l(M_Z)=1.00188\,Q_l^{pole}=0.66792 .
+\tag{paper 9}
+$$</p>
+<p>"The discrepancy between $Q_l(M_Z)$ and $Q_l^{pole}$ is only about $0.2\%$. This tiny difference makes sense in physics, because it is much larger than the accuracy of Eq. (2). In other words, the possibility of $Q_l(M_Z)=2/3$, which inversely leads to $Q_l^{pole}-2/3=-0.00188$, has been ruled out by the experimental data. We are therefore left with the conclusion that the running and pole masses of three charged leptons cannot simultaneously satisfy the Koide relation."</p>
+<p>The suppression is explained analytically: with $m_e\ll m_\mu\ll m_\tau$,</p>
+<p>$$
+Q_l(\mu)\simeq Q_l^{pole}\left[1+\sqrt{\frac{m_\mu}{m_\tau}}\left(\Delta_\mu-\Delta_\tau\right)\right].
+\tag{paper 7}
+$$</p>
+<p>"the deviation of $Q_l(\mu)$ from $Q_l^{pole}$ is strongly suppressed, due to the smallness of $m_\mu/m_\tau$ and that of $\Delta_l$" — $\sqrt{m_\mu/m_\tau}\approx0.244$ multiplies a difference of two dimensionless corrections of order $10^{-2}$.</p>
+<h3 id="quarks-at-math47-and-their-stability">Quarks at $M_Z$ and their stability</h3>
+<p>With $m_u=1.7\pm0.4$ MeV, $m_c=0.62\pm0.03$ GeV, $m_t=171\pm3$ GeV and $m_d=3.0\pm0.6$ MeV, $m_s=54\pm11$ MeV, $m_b=2.87\pm0.03$ GeV at $M_Z$:</p>
+<p>$$
+Q_U(M_Z)\approx0.89,\qquad Q_D(M_Z)\approx0.74 .
+\tag{paper 12}
+$$</p>
+<p>"We see that both numbers significantly deviate from $2/3$ at the electroweak scale." The evolution to $M_X$ is written with the one-loop Yukawa functions $\chi_f$, and reduces to the compact forms</p>
+<p>$$
+Q_U(M_X)\approx Q_U(M_Z)\left[1+2\left(1-\sqrt{\chi_U}\sqrt{\frac{m_c(M_Z)}{m_t(M_Z)}}\right)\right],
+\tag{paper 15}
+$$</p>
+<p>and the same with $m_s/m_b$ and $m_\mu/m_\tau$ for $D$ and $l$. "the deviation of $Q_f(M_X)$ from $Q_f(M_Z)$ is significantly suppressed, because of (i) the strong mass hierarchies of charged fermions and (ii) the small departure of $\chi_f$ from $1$." At $M_R\sim10^{14}$ GeV, $\sqrt{\chi_U}\approx0.97$, $\sqrt{\chi_D}\approx1.03$, $\sqrt{\chi_l}\approx1.00$ in the SM, or $0.86$, $0.91$, $0.98$ in the MSSM with $\tan\beta=50$; hence</p>
+<p>$$
+Q_f(M_R)-Q_f(M_Z)\approx 3.3\times10^{-3},\ -6.5\times10^{-3},\ 0
+\quad (U,D,l;\ \text{SM}),
+\tag{paper 16}
+$$</p>
+<p>or $1.4\times10^{-2}$, $1.8\times10^{-2}$, $4.8\times10^{-3}$ in the MSSM.</p>
+<h3 id="the-extremes-and-the-neutrinos">The extremes and the neutrinos</h3>
+<p>"$Q_f=1$ (maximum) would hold when three fermion masses had the extremely hierarchical spectrum (e.g. $m_x\ll m_y\ll m_z$), while $Q_f=1/3$ (minimum)" for degenerate masses, credited to Gérard et al. Hence "it may not be a puzzle that $Q_l^{pole}$ happens to take the mean value of $Q_f^{min}$ and $Q_f^{max}$".</p>
+<p>For neutrinos, $1/3&lt;Q_\nu(M_Z)&lt;0.6$: the maximum is reached at $m_1\to0$ for the normal hierarchy,</p>
+<p>$$
+Q_\nu(M_Z)\Big|_{m_1\to0}=\frac{1}{1+2\sqrt{\frac{\Delta m^2_{21}}{\Delta m^2_{21}+\sqrt{\Delta m^2_{21}\left(\Delta m^2_{21}+|\Delta m^2_{32}|\right)}}}},
+\tag{paper 18}
+$$</p>
+<p>giving $Q_\nu\approx0.6$ for $m_1\to0$, $0.5$ for $m_3\to0$, and $1/3$ for degenerate masses. The running is through $\chi_\nu^{(ij)}$ with $y_\tau^2/(8\pi^2)\approx1.3\times10^{-6}$, which leaves $Q_\nu$ nearly fixed. "In view of Fig. 2, we conclude that there is no hope to achieve the Koide-like relation $Q_\nu(\mu)\approx2/3$ for neutrino masses."</p>
+<p>The ordering closes the paper:</p>
+<p>$$
+Q_U(M_Z)&gt;Q_D(M_Z)&gt;Q_l(M_Z)&gt;Q_\nu(M_Z).
+\tag{paper 21}
+$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-analytic-formula-for-the-lepton-drift-and-why-it-is-so-small">1. An analytic formula for the lepton drift, and why it is so small</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $Q_l(\mu)\simeq Q_l^{pole}\left[1+\sqrt{m_\mu/m_\tau}\,(\Delta_\mu-\Delta_\tau)\right]$, with $\Delta_l$ the one-loop electromagnetic correction to the pole mass. The drift is the difference of two corrections, weighted by the square root of the mass ratio.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 asks for a scale test with a threshold of $10^{-3}$, and <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> runs masses but has no instance of a <em>combination</em> whose drift is computed in closed form. This expression says which combination is protected ($\Delta_\mu-\Delta_\tau$, not either alone) and why the protection is strong: the weight is $0.244$ and the difference is of order $10^{-2}$, so the drift is $2\times10^{-3}$ in relative terms.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first task, and <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> as a worked example of a nearly conserved quantity.</p>
+<p><strong>What stands in the way.</strong> The formula is an approximation that keeps only the leading logarithmic correction; in the corpus's biquaternionic variables the same statement has to be re-derived, and the corpus does not yet run the lepton masses at all.</p>
+<h3 id="2-the-running-and-the-pole-masses-cannot-both-satisfy-the-relation">2. The running and the pole masses cannot both satisfy the relation</h3>
+<p><strong>The idea.</strong> A <strong>falsification</strong>: the pole masses satisfy $Q=2/3$ to $2\times10^{-5}$, the running masses at $M_Z$ give $Q=0.66792$, and the value of $Q^{pole}$ needed for $Q(M_Z)=2/3$ would be $0.66479$, which the measured masses exclude. So the relation picks a scale.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11's first task is phrased as "if it holds only at the pole masses that is information". This paper turns that conditional into a definite answer for the leptons and locates the scale: the relation holds for the masses on the mass shell and for no others. Any mechanism must produce it there, which is a stronger constraint than "somewhere".</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11 and §2, beside the statement that the algebra is scale-free.</p>
+<p><strong>What stands in the way.</strong> The conclusion is negative, so it constrains mechanisms without suggesting one; and the corpus's own reference scale for quarks is $2$ GeV rather than $M_Z$, so the two comparisons are not on one footing.</p>
+<h3 id="3-the-two-extremes-and-the-meaning-of-math115">3. The two extremes and the meaning of $2/3$</h3>
+<p><strong>The idea.</strong> A <strong>formula with a reading</strong>: for three positive masses $1/3\le Q\le1$, the lower end attained for degenerate masses and the upper for an extreme hierarchy, so $2/3$ sits exactly midway between the two geometric extremes.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §2.1 proves $Q\le1$ and stops; the lower bound $1/N$ for $N$ masses is missing, and with it the reading that $2/3$ is the midpoint of the allowed interval, not an arbitrary small number. That reading makes $2/3$ natural rather than picked: for $N$ masses the bound is $[1/N,1]$, its midpoint is $(N+1)/(2N)$, and at $N=3$ that midpoint is $2/3$. The closure family $2/N$ and the midpoint family $(N+1)/(2N)$ coincide at $N=3$ and nowhere else, so the reading explains the one case it is meant to explain and predicts nothing for a fourth rung.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2.1, as the missing half of the bound.</p>
+<p><strong>What stands in the way.</strong> The earlier conversion of the Wikipedia article already records the same midpoint reading; this paper supplies the published source and the derivation of the $m_1\to0$ endpoint, but the idea is not new to the corpus.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The neutrino bound $1/3&lt;Q_\nu&lt;0.6$ is a sharper version of the 2005 pair of ranges, and it is refuted as a hint of $2/3$ by the same paper. The ordering $Q_U&gt;Q_D&gt;Q_l&gt;Q_\nu$ is a measured fact with no mechanism behind it. The MSSM numbers exist to show the SM result is not an artefact of the model.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

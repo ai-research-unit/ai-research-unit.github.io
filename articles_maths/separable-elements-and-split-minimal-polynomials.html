@@ -86,7 +86,7 @@
 </ol>
 <p><em>Proof.</em> Over a splitting field $K$, write $f = \prod_i (x-\alpha_i)$. A repeated root $\alpha$ means that $(x-\alpha)^2$ divides $f$, so $f(\alpha) = 0$ and $f'(\alpha) = 0$; the linear factor $x-\alpha$ then divides both $f$ and $f'$ over $K$, and hence over $k$ because the gcd is defined over $k$ and is unchanged by field extension. Conversely, if a nonconstant $g$ divides both $f$ and $f'$, then a root of $g$ in a splitting field is a repeated root of $f$. This proves the equivalence of 1 and 2. The discriminant is</p>
 <p>$$
-\boxed{\;\Delta(f) = \prod_{1 \le i < j \le n}(\alpha_j - \alpha_i)^2 = (-1)^{n(n-1)/2}\operatorname{Res}(f,f')\;},
+\boxed{\;\Delta(f) = \prod_{1 \le i &lt; j \le n}(\alpha_j - \alpha_i)^2 = (-1)^{n(n-1)/2}\operatorname{Res}(f,f')\;},
 $$</p>
 <p>a symmetric polynomial in the roots, hence an element of $k$; it vanishes exactly when two roots coincide. This proves the equivalence of 1 and 3.</p>
 <p>The sign in the resultant formula is the standard one; the corpus uses the discriminant only through its vanishing, so the sign never matters. For a quadratic $x^2 + bx + c$ the discriminant is $b^2 - 4c$; for a cubic $x^3 + px + q$ it is $-4p^3 - 27q^2$.</p>
@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-discriminant-as-a-determinant">The discriminant as a determinant</h3>
 <p>For a monic $f$ of degree $n$ with roots $\alpha_1, \dots, \alpha_n$, the Vandermonde matrix $V$ with entries $V_{i\alpha} = \alpha^{i}$ for $0 \le i \le n-1$ satisfies</p>
 <p>$$
-\det V = \prod_{1 \le i < j \le n}(\alpha_j - \alpha_i), \qquad \det(VV^{\mathsf T}) = \Delta(f).
+\det V = \prod_{1 \le i &lt; j \le n}(\alpha_j - \alpha_i), \qquad \det(VV^{\mathsf T}) = \Delta(f).
 $$</p>
 <p>Consequently $\Delta(f) \neq 0$ exactly when the roots are distinct, which is the separability of $f$. This determinant form is used in §<em>Separable Elements</em> to identify the discriminant with the determinant of the trace form.</p>
 <h2 id="separable-elements">Separable Elements</h2>
@@ -132,15 +132,15 @@ $$</p>
 <p>The theorem is a criterion for the element, not for the ambient algebra: the trace form is taken on $k[a]$ with its own regular representation. The trace form of $A$ itself may be degenerate even when $a$ is separable, for instance when $A = M_n(k)$ and the characteristic divides $n$.</p>
 <h3 id="examples">Examples</h3>
 <ul>
-<li><strong>The split quadratic.</strong> For $m = x^2 - 1$, the basis $1, a$ gives $T = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$, of determinant $4 = \Delta(x^2-1)$. The element is separable and split over any field of characteristic not $2$.</li>
-<li><strong>The repeated quadratic.</strong> For $m = x^2$, the basis $1, a$ gives $T = \begin{pmatrix} 2 & 0 \\ 0 & 0 \end{pmatrix}$, of determinant $0$. The element is not separable; the algebra $k[a]$ is the dual-number algebra.</li>
+<li><strong>The split quadratic.</strong> For $m = x^2 - 1$, the basis $1, a$ gives $T = \begin{pmatrix} 2 &amp; 0 \\ 0 &amp; 2 \end{pmatrix}$, of determinant $4 = \Delta(x^2-1)$. The element is separable and split over any field of characteristic not $2$.</li>
+<li><strong>The repeated quadratic.</strong> For $m = x^2$, the basis $1, a$ gives $T = \begin{pmatrix} 2 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}$, of determinant $0$. The element is not separable; the algebra $k[a]$ is the dual-number algebra.</li>
 <li><strong>The cubic with three roots.</strong> For $m = x^3 - x$, the basis $1, a, a^2$ gives</li>
 </ul>
 <p>$$
-T = \begin{pmatrix} 3 & 0 & 2 \\ 0 & 2 & 0 \\ 2 & 0 & 2 \end{pmatrix},
+T = \begin{pmatrix} 3 &amp; 0 &amp; 2 \\ 0 &amp; 2 &amp; 0 \\ 2 &amp; 0 &amp; 2 \end{pmatrix},
 $$</p>
 <p>of determinant $4 = \Delta(x^3-x)$. The element is separable and split over a field of characteristic not $2$; over $\mathbb{F}_2$ the polynomial becomes $x(x-1)^2$ and is not separable.
-- <strong>The rotation.</strong> For $m = x^2+1$ over $\mathbb{R}$, the trace form is $T = \begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix}$, of determinant $-4 = \Delta(x^2+1)$. The element is separable but not split.
+- <strong>The rotation.</strong> For $m = x^2+1$ over $\mathbb{R}$, the trace form is $T = \begin{pmatrix} 2 &amp; 0 \\ 0 &amp; -2 \end{pmatrix}$, of determinant $-4 = \Delta(x^2+1)$. The element is separable but not split.
 - <strong>A purely inseparable element.</strong> Over $k = \mathbb{F}_p(t)$ and $m = x^p - t$, the derivative vanishes, the discriminant vanishes and the trace form is degenerate. The element is not separable.</p>
 <h3 id="separability-and-semisimplicity">Separability and semisimplicity</h3>
 <p>Separability is stronger than the property of having a reduced subalgebra. The algebra $k[a]$ is reduced exactly when $m_a$ is squarefree, that is, when no irreducible factor of $m_a$ is repeated. A separable polynomial is squarefree, so a separable element generates a reduced algebra. The converse fails in characteristic $p$: the polynomial $x^p - t$ is irreducible over $\mathbb{F}_p(t)$, hence squarefree in the sense of having no repeated irreducible factor, so $k[a]$ is a field and is reduced, but it is inseparable: its single root over the algebraic closure has multiplicity $p$. In the terminology of <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>, such an element is semisimple but not separable. Over a perfect field the two notions coincide.</p>
@@ -232,7 +232,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Delta(f)$</td>
-<td>The discriminant $\prod_{i<j}(\alpha_j-\alpha_i)^2$, nonzero exactly when $f$ is separable</td>
+<td>The discriminant $\prod_{i&lt;j}(\alpha_j-\alpha_i)^2$, nonzero exactly when $f$ is separable</td>
 </tr>
 <tr>
 <td>$f'$</td>

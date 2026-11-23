@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Movement of Hadrons and Infinite-Component Wave Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Movement of Hadrons and Infinite component wave equation.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-movement-of-hadrons-and-infinite-component-wave-equation"><strong>Internal Movement of Hadrons and Infinite-Component Wave Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>37</strong> (1967) 767, No. 4; dated 13 January 1967</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Internal Movement of Hadrons and Infinite component wave equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Movement of Hadrons and Infinite component wave equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-majorana-representation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Movement of Hadrons and Infinite component wave equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Re-expresses the internal-polarisation theory of the preceding note as an infinite-component local field, then argues that field theory can be built from it by ordinary means because there is no subsidiary condition to enforce, and finally shows that a single "contraction" of the model — a degenerate limit of the internal spinor — reproduces Majorana's theory exactly. The point of the last part is that Majorana's spectrum, its missing antiparticles and its exclusion of the bilocal relative time are all consequences of that limit and not of the framework. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-equivalent-infinite-component-form">The equivalent infinite-component form</h3>
+<p>"ving local internal motion, to be called as I) we have given covariant quantum" rotator-oscillato r field ". Here we remark theory for the model with internal struc- the following." The ground state has in the rest frame the internal function $\chi_0$, and "te internal eigenfunc- ponent local field**) (3). tion is then constructed by operating a fixed number na of creation operator and a: Our model has analogy", denoted $\langle\xi|n_1n_2m_1m_2\rangle$. "elative coordinate the representation space of Ua(2) X Ub(2), vector rP&gt; with the wave function 1J1(X~, r~). the maximum compact subgroup of U(2, 2}." By the transform $\psi(X,\xi)=\sum\langle\xi|n_1n_2m_1m_2\rangle\psi(n_1n_2m_1m_2,X_{\mu})$, "oped a state function 1J1 (X,) satisfying (1) is equivalently tepresented by an infinite-com- theories similar", in which "re each v,. is now an infinite-dimensio nal matrix Internal Movement of Hadrons and &lt;n1n211l11ihlv,." "Then (3) is the base of an infinite-dimensio nal unitary Takehiko TAKABAYASI representations of 0(4,2)."</p>
+<h3 id="why-a-conventional-second-quantisation-is-available">Why a conventional second quantisation is available</h3>
+<p>"Our theory has been presented as one-particle theory ... the theory of the classical field $\psi(X,\xi)$ having local internal motion, to be called 'rotator-oscillator field'." Three remarks follow. "n 1J1(X,). In the pre- a,, where the positive-definite ao is not in- sent note we first give an equivalent re- ternal time. Second, our wave equation (1) presentation of the theory in terms of .an is not associated with any subsidiary con- infinite-compone nt wave function, and then dition, unifying all higher spin states in a make a few remarks on our theory viewed definite manner. This is in contrast to the as field theory. Finally, we show that a case of the usual higher spin theory where simple abbreviation of our model results in the presence of subsidiary condition brings the theory early proposed by Majorana. 2 ) difficulty in interactions. Those circum- i) First we note".</p>
+<p>The contrast with Yukawa's bilocal theory is drawn sharply: "The bilocal theory contains its L''' group but has not 0(3, 2), so that its 1J1 (X,)=~&lt;~ In1n2m1m2 &gt;1J1Cn1n2m1m2, X~), wave function is not of type (1). Also, ro Da,ma *) Recently Nambu 3 ) and Fronsdal 4 ) developed a state function 1J1 (X,) satisfying (1) is equivalently tepresented by an infinite-com- theories similar to ours, starting from infinite- component representation from the outset."</p>
+<h3 id="the-contraction-that-gives-majorana">The contraction that gives Majorana</h3>
+<p>"erty, the the" contraction "of our theory, by putting wave equation (1) has, for a fixed eigen- value of P, the infinite number of eigen- (4) solutions differing in spin-mass values. Each eigenstate is labeled by the eigen- and at the same time multiplying all right- values" The rest state is $\langle s,m_s,X|J,m_J,0\rangle=e^{-i\kappa X_0(J+1/2)}D^{s}_{s\,m_J}$, and a state with $m_J=0$ moving in the $z$-direction has $p_0=P_0$, $P_0^{2}-P_3^{2}=[\kappa/(J+\tfrac12)]^{2}$; this function really satisfies (1) and has non-vanishing components for $s-J=0,\pm1,\pm2,\dots$, since $R_a$ is a $J_s=\pm1$ operator.</p>
+<p>Now the limit: put $a_1\to0$, and at the same time multiply all right-hand sides of (3) of I by $1/2$, giving $R_k-iv_k=a_b^{\dagger}\sigma_k a_b/2$ and $V_{\mu}\to0$, $K\to0$, $a_0\to0$. "ators, mJ=O and moving in the z-direction with whence the wave equation is still (1), but momentum P' = (0, 0, PD is then 0(4,2) is now non-existent. The contraction ( 4) reduces the configuration to one describ- &lt;s, m., X. IJ, 0, P'&gt; ed by a 2-component real variable q,, so that aa= (qa+ipa)/,.", with $v_0=s+\tfrac12$, $S^{2}=v^{2}-\tfrac14$, $R^{2}=v_0^{2}+\tfrac12=s(s+1)+\tfrac34$, $\{v,R\}=0$. "Each of them con- tains infinite number of different irreducible representations of g}, and in fact one gets from (1) the mass spectrum m=JC/(J+ 1/2), J = 0, 1/2, 1, ·· ·. Clearly antiparticles are excluded by (4). The theory obtained is exactly that of Majorana. 2 ) Downloaded from https://academic.oup.com/ptp/article-abstract/37/4/767/1878420"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-no-subsidiary-condition-therefore-the-field-can-be-second-quantised-conventionally">1. No subsidiary condition, therefore the field can be second-quantised conventionally</h3>
+<p><strong>The idea.</strong> Higher-spin theories carry a constraint that removes unwanted components and obstructs interaction. Here the constraint is replaced by a <em>unitary</em> structure on a two-oscillator space, and the equation itself has no subsidiary condition, so the passage to a quantum field is the ordinary one. The absence of internal time — $a_0&gt;0$ by construction, so no relative-time degree exists — is what makes this possible.</p>
+<p><strong>What it would add.</strong> An argument the corpus asserts and does not construct. <em>The Lagrangian and the Second Quantisation</em> (<code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code>) promotes a classical element equation by a Peierls bracket and finds in §<em>The Constraints the Action Imposes: The Dirac Bracket</em> that constraints must be handled before promotion. Takabayasi's tower has constraints replaced by a positive norm and a light-like internal vector, so the promotion is unencumbered; that is a worked instance of the difficult case, and it is a <em>reason</em> why the framework's indefinite alternatives are harder.</p>
+<p><strong>Where it lands.</strong> §<em>The Constraints the Action Imposes</em>, as the case with no second-class constraints, and §<em>What the Principle Adds and What It Relabels</em> in the same article.</p>
+<p><strong>What stands in the way.</strong> The letter defers quantisation itself to later work and says only that "this is carried out more conveniently in its representation in terms of the infinite-com- An excited rest-state internal eigenfunc- ponent local field**) (3)."; the claim is an argument, and the renormalisability of the tower is untouched.</p>
+<h3 id="2-majoranas-theory-is-a-degenerate-limit-and-its-failures-come-from-the-limit">2. Majorana's theory is a degenerate limit, and its failures come from the limit</h3>
+<p><strong>The idea.</strong> Setting $a_1=0$ and halving the algebra contracts $0(4,2)$ away, leaving $0(3,2)$, and reduces the internal spinor to a real two-component $\varphi_a$. In that limit the spectrum becomes $m=\kappa/(J+\tfrac12)$, antiparticles disappear, and only the principal and supplementary series survive.</p>
+<p><strong>What it would add.</strong> A structural explanation of a corpus object. <em>The Majorana Representation in Biquaternionic Form</em> (<code>articles_physics/the-majorana-representation-in-biquaternionic-form.md</code>) uses the Majorana polynomial and the stereographic coordinate as a description of a spin-$\tfrac12$ star; what is missing there is why the Majorana <em>equation</em> of motion has the properties it has — descending spectrum, no antiparticles. Both are properties of the degenerate limit, not of the representation, and saying so prevents the corpus from attributing them to the representation.</p>
+<p><strong>Where it lands.</strong> That article's §<em>What the Algebra Adds and What It Does Not</em>, as the kinematic/dynamical separation, and <em>The Majorana Equation in Biquaternionic Form</em> (<code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code>) §<em>The Conjugation and the Count</em>, where antiparticles are counted.</p>
+<p><strong>What stands in the way.</strong> The contraction is a limit of a specific model's parameters, so the claim is about this tower and not about Majorana's equation in general; the letter says the same method can be applied to our original theory, which is an assertion of method, not a theorem.</p>
+<h3 id="3-a-single">3. A single</h3>
+<p>$U_a(2)\times U_b(2)$ shell already contains infinitely many Poincaré representations</p>
+<p><strong>The idea.</strong> One shell of the tower — one irreducible representation of the maximal compact subgroup of $0(4,2)$ — decomposes into infinitely many irreducible representations of the Poincaré group, with $m$ running over the spin–mass values. The tower is not one particle but a countable family, and the labels $(N_a,N_b)$ organise the family.</p>
+<p><strong>What it would add.</strong> A precise sense in which one representation contains many particles, which the corpus asserts in general terms. <em>The Modules: What the Algebra Acts On</em> (<code>articles_physics/the-modules-what-the-algebra-acts-on.md</code>) asks what a carrier can hold and answers with the module's decomposition; here the count is explicit — $(N_a+1)(N_b+1)$ states per shell, infinitely many Poincaré masses, one compact label.</p>
+<p><strong>Where it lands.</strong> That article's decomposition section, as the worked counting.</p>
+<p><strong>What stands in the way.</strong> The decomposition is stated and not written out; only the ground and first excited shells are exhibited with their spin content.</p>
+<p>The remainder, one line each. That the internal configuration is a light-like vector plus a rotation about it, with no relative time, is the cleanest statement in the folder of why the internal variable is not a coordinate. That Nambu and Fronsdal arrived at infinite-component theories "from the outset" is the contemporary context and dates the letter.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

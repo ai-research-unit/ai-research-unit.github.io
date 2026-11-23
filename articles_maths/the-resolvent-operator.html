@@ -89,12 +89,12 @@ $$</p>
 \boxed{\;R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda)\;} .
 $$</p>
 <p><em>Proof.</em> Write $R(\lambda)-R(\mu)=R(\lambda)\bigl((L-\mu)-(L-\lambda)\bigr)R(\mu)$ and observe that $(L-\mu)-(L-\lambda)=\lambda-\mu$; the second identity follows from the first by exchanging $\lambda$ and $\mu$, since the left-hand side changes sign and so does $\lambda-\mu$. The two resolvents therefore commute.</p>
-<p><strong>Theorem (analyticity and the Neumann series).</strong> The resolvent set is open, the spectrum is closed, and the resolvent is analytic on the resolvent set. If $\mu\in\rho(L)$ and $|\lambda-\mu|\,\|R(\mu)\|<1$, then $\lambda\in\rho(L)$ and</p>
+<p><strong>Theorem (analyticity and the Neumann series).</strong> The resolvent set is open, the spectrum is closed, and the resolvent is analytic on the resolvent set. If $\mu\in\rho(L)$ and $|\lambda-\mu|\,\|R(\mu)\|&lt;1$, then $\lambda\in\rho(L)$ and</p>
 <p>$$
 R(\lambda) = \sum_{n\ge0}(\lambda-\mu)^n R(\mu)^{n+1} ,
 $$</p>
 <p>the series converging in the operator norm; in particular $\|R(\lambda)\|\to0$ as $|\lambda|\to\infty$ along a ray in the resolvent set, and $\|R(\lambda)\| = O(|\lambda|^{-1})$.</p>
-<p><em>Proof.</em> From $L-\lambda = (L-\mu)-(\lambda-\mu) = \bigl(I-(\lambda-\mu)R(\mu)\bigr)(L-\mu)$ one inverts the first factor by the Neumann series, which converges because $\|(\lambda-\mu)R(\mu)\|<1$, and multiplies by $R(\mu)$; the same computation bounds $\|R(\lambda)\|$. The ball of radius $\|R(\mu)\|^{-1}$ about each $\mu$ of the resolvent set lies in it, so the set is open and the spectrum closed; the displayed series is a power series for $R$ and shows the analyticity. The estimate at infinity follows by taking $\mu$ with large $|\mu|$ in the resolvent set and reading the leading term.</p>
+<p><em>Proof.</em> From $L-\lambda = (L-\mu)-(\lambda-\mu) = \bigl(I-(\lambda-\mu)R(\mu)\bigr)(L-\mu)$ one inverts the first factor by the Neumann series, which converges because $\|(\lambda-\mu)R(\mu)\|&lt;1$, and multiplies by $R(\mu)$; the same computation bounds $\|R(\lambda)\|$. The ball of radius $\|R(\mu)\|^{-1}$ about each $\mu$ of the resolvent set lies in it, so the set is open and the spectrum closed; the displayed series is a power series for $R$ and shows the analyticity. The estimate at infinity follows by taking $\mu$ with large $|\mu|$ in the resolvent set and reading the leading term.</p>
 <p><strong>Corollary (derivative of the resolvent).</strong> The resolvent is differentiable on the resolvent set and</p>
 <p>$$
 R'(\lambda) = R(\lambda)^2 , \qquad R^{(n)}(\lambda) = n!\,R(\lambda)^{n+1} .
@@ -124,16 +124,16 @@ $$</p>
 <p>$$
 R(\lambda;x,y) = \frac{2}{\pi}\sum_{n\ge1}\frac{\sin(nx)\,\sin(ny)}{n^2-\lambda} \qquad (\lambda\neq n^2).
 $$</p>
-<p>For the special value $\lambda=-k^2$ with $k>0$, which lies in the resolvent set because $-k^2<0\le n^2$, the series sums in closed form to</p>
+<p>For the special value $\lambda=-k^2$ with $k&gt;0$, which lies in the resolvent set because $-k^2&lt;0\le n^2$, the series sums in closed form to</p>
 <p>$$
 R(-k^2;x,y) = \frac{\sinh\!\bigl(k\,(x\wedge y)\bigr)\,\sinh\!\bigl(k\,(\pi-(x\vee y))\bigr)}{k\sinh(k\pi)} ,
 $$</p>
-<p>which is exactly the Green function of $-u''+k^2u=f$ with the Dirichlet conditions, as the construction of <em>The Green Operator</em> from the solutions $u_<=\sinh(kx)$ and $u_>=\sinh(k(\pi-x))$ and the Wronskian $W=k\sinh(k\pi)$ returns. The example shows the two descriptions of the resolvent agreeing: the spectral series, which displays the poles at the eigenvalues, and the closed form, which displays the analytic dependence on $\lambda$.</p>
+<p>which is exactly the Green function of $-u''+k^2u=f$ with the Dirichlet conditions, as the construction of <em>The Green Operator</em> from the solutions $u_&lt;=\sinh(kx)$ and $u_&gt;=\sinh(k(\pi-x))$ and the Wronskian $W=k\sinh(k\pi)$ returns. The example shows the two descriptions of the resolvent agreeing: the spectral series, which displays the poles at the eigenvalues, and the closed form, which displays the analytic dependence on $\lambda$.</p>
 <p><strong>Example (the analytic continuation).</strong> The closed form is an expression in $k=\sqrt{-\lambda}$; as $\lambda$ travels in the plane avoiding $(0,\infty)$, the square root is single-valued, and the formula continues the resolvent analytically. The poles at $\lambda=n^2$ appear as the zeros of $\sinh(k\pi)$ at $k=in$; the resolvent therefore has poles exactly at the eigenvalues, and between them it is analytic, which is the meromorphic structure of the general theorem.</p>
 <h2 id="the-resolvent-of-a-two-block-operator">The Resolvent of a Two-Block Operator</h2>
 <p><strong>Definition.</strong> Let $\mathcal H=\mathcal H_1\oplus\mathcal H_2$ be a direct sum and let $L$ be the operator on $\mathcal H$ written in the corresponding blocks,</p>
 <p>$$
-L = \begin{pmatrix} A & B \\ C & D \end{pmatrix},
+L = \begin{pmatrix} A &amp; B \\ C &amp; D \end{pmatrix},
 $$</p>
 <p>with $A$ and $D$ acting on the summands and $B$ and $C$ the connecting parts. The <strong>Schur complement</strong> of the pair is the operator on $\mathcal H_1$</p>
 <p>$$
@@ -192,7 +192,7 @@ $$</p>
 $$</p>
 <p>as $\varepsilon\downarrow0$ for every continuous $g$ of compact support, the <strong>Stieltjes inversion formula</strong>; in particular $\langle E(B)\varphi,\varphi\rangle$ is recovered by taking $g$ to approximate the indicator of a Borel set $B$.</p>
 <p><em>Proof.</em> By the spectral theorem the pairing is the Stieltjes transform of the measure $\mu_E = \langle E(\cdot)\varphi,\varphi\rangle$, $\langle R(\lambda)\varphi,\varphi\rangle = \int(\mu-\lambda)^{-1}d\mu_E(\mu)$, and the difference of the two boundary values of $(\mu-\lambda)^{-1}$ across the real axis has the limit $2\pi i$ times the delta at $\mu$ in the distributional sense, by the Sokhotski–Plemelj formula; integrating against $g$ gives $2\pi i\int g\,d\mu_E = 2\pi i\langle g(L)\varphi,\varphi\rangle$. Dividing by $2\pi i$ gives the displayed limit, and the identification of the spectral measure follows on approximating the indicator of $B$ by continuous functions of compact support.</p>
-<p><strong>Theorem (the Dunford integral).</strong> Let $L$ generate a strongly continuous semigroup $\exp(tL)$, $t\ge0$, with $\|\exp(tL)\|\le M\exp(\omega t)$. Then for $a>\omega$ and $t>0$,</p>
+<p><strong>Theorem (the Dunford integral).</strong> Let $L$ generate a strongly continuous semigroup $\exp(tL)$, $t\ge0$, with $\|\exp(tL)\|\le M\exp(\omega t)$. Then for $a&gt;\omega$ and $t&gt;0$,</p>
 <p>$$
 \boxed{\;\exp(tL) = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} \exp(t\lambda)\,R(\lambda)\,d\lambda\;} ,
 $$</p>

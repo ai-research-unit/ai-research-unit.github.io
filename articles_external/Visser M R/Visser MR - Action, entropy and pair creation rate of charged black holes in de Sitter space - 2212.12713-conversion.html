@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action, entropy and pair creation rate of charged black holes in de Sitter space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Action, entropy and pair creation rate of charged black holes in de Sitter space -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="action-entropy-and-pair-creation-rate-of-charged-black-holes-in-de-sitter-space"><strong>Action, entropy and pair creation rate of charged black holes in de Sitter space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.12713v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Edward K. Morvan, Jan Pieter van der Schaar, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 14 February 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Action, entropy and pair creation rate of charged black holes in de Sitter space - 2212.12713-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Action, entropy and pair creation rate of charged black holes in de Sitter space - 2212.12713.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Action, entropy and pair creation rate of charged black holes in de Sitter space - 2212.12713.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the on-shell Euclidean action of Reissner–Nordström black holes in de Sitter space and shows it equals minus the sum of the black-hole and cosmological horizon entropies, for arbitrary mass and charge in any number of dimensions. The unifying expression clears up a confusion in the literature about the actions of extremal and ultracold black holes in de Sitter, which become limits of the general formula. The action is then used, in a constrained-instanton reading, to estimate the pair-creation probability of black holes of arbitrary mass and charge in an empty de Sitter background.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We show the on-shell action is minus the sum of the black hole and cosmological horizon entropy for arbitrary mass and charge in any number of dimensions. This unifying expression helps to clear up a confusion about the Euclidean actions of extremal and ultracold black holes in de Sitter, as they can be understood as special cases of the general expression."</p>
+<h3 id="the-subtlety-that-makes-it-work">The subtlety that makes it work</h3>
+<p>"That the presence of conical singularities implies the necessary inclusion of (gauge field) boundary terms, providing a localized contribution to the on-shell action on the conical singularities that precisely cancels the contribution to the action from the bulk term depending on the charge and the gauge potentials. As in the neutral case, this again emphasizes the intriguing role of conical singularities in Euclidean quantum gravity."</p>
+<h3 id="the-application">The application</h3>
+<p>"we used a saddle point approximation" to estimate the probability for the pair creation of black holes with arbitrary mass and charge in an empty de Sitter background, with the on-shell action understood as a constrained instanton.</p>
+<h3 id="the-relation-to-the-neutral-case">The relation to the neutral case</h3>
+<p>The techniques are "exactly the same general techniques as for the neutral, static de Sitter black hole", so this paper is the charged extension of the earlier Schwarzschild–de Sitter computation, and the result has the same form.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-charge-and-rotation-do-not-change-the-entropy-bookkeeping">1. Charge and rotation do not change the entropy bookkeeping</h3>
+<p><strong>The idea.</strong> The action is minus the sum of the two horizon entropies regardless of mass and charge; the details of the solution enter only through the areas. This is a <strong>formula</strong> with a universality claim.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> verifies the first law for the Reissner–Nordström case with explicit charge terms. The claim that the <em>action</em>, not just the first law, is universal in this way is a stronger statement, and one the article's Smarr section could use as a consistency target.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, Smarr section.</p>
+<p><strong>What stands in the way.</strong> The result is Euclidean and requires the conical singularity treatment and gauge boundary terms; the corpus has neither. The cost is that the universality cannot be checked in the corpus's own setting.</p>
+<h3 id="2-extremal-cases-as-limits-not-exceptions">2. Extremal cases as limits, not exceptions</h3>
+<p><strong>The idea.</strong> The confusion about extremal and ultracold black holes dissolves when they are treated as limits of the general expression rather than as separate cases. This is a <strong>reading</strong> of a literature disagreement.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the extremal case carefully because the temperature vanishes. A reading in which the extremal case is a limit of a formula that never divides by the temperature removes the special handling — a simplification the article could adopt if it had the formula.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the extremal paragraph.</p>
+<p><strong>What stands in the way.</strong> The formula is Euclidean and dimensional-generic; the corpus's derivation is Lorentzian and four-dimensional. Ranked second.</p>
+<h3 id="3-pair-creation-with-a-definite-rate">3. Pair creation with a definite rate</h3>
+<p><strong>The idea.</strong> The probability that a charged pair appears in de Sitter is computed, with the exponent given by the entropy deficit. This is a <strong>number</strong> for a process the corpus's cosmology article never considers.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> has a metric and a missing source. A computed creation rate for charged objects, controlled by an entropy difference, is one concrete candidate shape for a source term.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is a rate in exact de Sitter for a specific solution class; the corpus's FLRW background is not de Sitter. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

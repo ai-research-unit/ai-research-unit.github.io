@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic warp drives violate the null energy condition — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic warp drives violate the null energy condition - 2105.03079.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generic-warp-drives-violate-the-null-energy-condition"><strong>Generic warp drives violate the null energy condition</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2105.03079v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jessica Santiago, Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 25 February 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF says a close version is in press at PRD)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>46 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Generic warp drives violate the null energy condition - 2105.03079-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic warp drives violate the null energy condition - 2105.03079.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic warp drives violate the null energy condition - 2105.03079.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Three papers had claimed that warp drives could satisfy the weak energy condition, or at least reduce the violation. This paper argues that those claims only consider one set of observers, the comoving ones, while the condition requires all timelike observers. Re-examining the Natário class of warp drives, the authors show every member violates the null energy condition, and with it the weak, strong, and dominant conditions. The argument covers the Alcubierre, Natário zero-expansion, and Lentz/Fell–Heisenberg models. They also note that in modified gravity the purely geometric convergence conditions still fail.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-target">The target</h3>
+<p>"Three recent articles have claimed that it is possible to, at least in theory, either set up positive energy warp drives satisfying the weak energy condition (WEC), or at the very least, to minimize the WEC violations."</p>
+<h3 id="the-flaw">The flaw</h3>
+<p>"These claims are at best incomplete, since the arguments as presented only assert but do not prove the existence of one set of timelike observers, the co-moving Eulerian observers, who see relatively 'nice' physics. While these particular observers might arguably see a positive energy density, the WEC requires all timelike observers to see positive energy density."</p>
+<h3 id="the-result">The result</h3>
+<p>"within the framework adopted by those three papers all physically reasonable warp drives will certainly violate the WEC, and both the strong and dominant energy conditions. Under plausible subsidiary conditions the null energy condition is also violated."</p>
+<h3 id="the-reach-of-the-argument">The reach of the argument</h3>
+<p>"We have now demonstrated that all members of the general class of warp drives defined by Natário [10] violate the NEC. This significantly extends previously known results. This argument applies, in particular, to all three of the Alcubierre [9], Natário zero-expansion [10], and Lentz/Fell–Heisenberg zero-vorticity [1, 3] warp drives"</p>
+<h3 id="what-follows-from-the-nec">What follows from the NEC</h3>
+<p>"Because the NEC is violated then so are the WEC, SEC, and DEC."</p>
+<h3 id="the-list-of-options">The list of options</h3>
+<p>"one has no choice but to face the violation of the energy conditions head on. Several possibilities arise: (i) modify the theory of gravity, (ii) modify the definition of warp drive, (iii) modify the energy conditions, (iv) appeal to macroscopic quantum physics, (v) allow for singularities or CTCs (time travel). None of these options are particularly palatable. All of these options have serious draw-backs."</p>
+<h3 id="the-final-verdict">The final verdict</h3>
+<p>"Thus it is our melancholy duty to report that none of the recent claims of positive-mass physical warp drives survive careful inspection of the proffered arguments."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-all-observers-not-one">1. All observers, not one</h3>
+<p><strong>The idea.</strong> An energy condition is about every timelike observer; checking one frame proves nothing.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> states constraints without naming the observer. This paper gives a precise criterion: a constraint must hold for all observers, which sharpens what the article is claiming.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The point is made about one class of metrics. Ranked first, because it fixes an ambiguity in the article's constraints.</p>
+<h3 id="2-geometric-convergence-conditions-survive-theory-change">2. Geometric convergence conditions survive theory change</h3>
+<p><strong>The idea.</strong> Even without Einstein's equations, null and timelike convergence conditions still fail.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> makes a claim about light cones. A convergence condition is a statement about light cone focusing, so it supports the article's barrier without assuming general relativity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of enforcement.</p>
+<p><strong>What stands in the way.</strong> The authors state it briefly, without full development. Ranked second.</p>
+<h3 id="3-one-violation-brings-the-rest">3. One violation brings the rest</h3>
+<p><strong>The idea.</strong> Violating the null condition implies violating the weak, strong, and dominant ones.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists conditions one by one. An implication chain would let the catalogue be shortened, with one entry covering several.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The chain holds in the direction stated, not in reverse. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

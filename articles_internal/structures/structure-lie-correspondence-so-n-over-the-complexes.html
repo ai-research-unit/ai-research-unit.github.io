@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-lie-correspondence-over-the-complexes-math0"><strong>The Lie Correspondence over the Complexes: $\mathfrak{so}(n,\mathbb C)\leftrightarrow\mathrm{SO}(n,\mathbb C)$</strong></h1>
+        <h1 id="the-lie-correspondence-over-the-complexes-math1"><strong>The Lie Correspondence over the Complexes: $\mathfrak{so}(n,\mathbb C)\leftrightarrow\mathrm{SO}(n,\mathbb C)$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The correspondence is the pair</p>
 <p>$$
@@ -89,9 +89,9 @@ $$</p>
 </ul>
 <p><strong>Why T4 still holds, in one sentence.</strong> Because the two obstructions that the real case removes by compactness are removed here by algebra: the eigenvalues of a complex matrix have logarithms with no restriction of sign, and the unipotent part has a logarithm which is a finite polynomial. The price is that the logarithm has to be built block by block, and the trace then vanishes by itself rather than by adjustment.</p>
 <p><strong>What is taken as known.</strong> The complex orthogonal group and the ladder of real forms are <em>The Special Orthogonal Groups over the Complexes</em>. The real case, with its spectral proof of T4, is <em>The Lie Correspondence for the Rotations</em>. The general theory of the exponential is <em>The Lie Algebra and the Exponential Map</em>. The Jordan decomposition is quoted as a theorem of linear algebra, in the form that both factors are polynomials in the matrix; the construction that consumes it is proved here.</p>
-<p><strong>Conventions.</strong> The transpose $A^{\mathsf T}$ is the plain transpose, not the conjugate transpose; this is the whole difference from the unitary case, and it is why the invariant form below is symmetric and not Hermitian. The form is $b(x,y)=x^{\mathsf T}y$, symmetric and nondegenerate but not positive definite, and isotropic vectors exist. $\mathrm O(n,\mathbb C)$ is the group of isometries of $b$, and $\mathrm{SO}(n,\mathbb C)$ the subgroup of determinant one. The elementary matrices are $X_{ij}=E_{ij}-E_{ji}$. The maximal torus is spanned by the $X_{2i-1,2i}$, and the plane generator is $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$. No physics is invoked.</p>
+<p><strong>Conventions.</strong> The transpose $A^{\mathsf T}$ is the plain transpose, not the conjugate transpose; this is the whole difference from the unitary case, and it is why the invariant form below is symmetric and not Hermitian. The form is $b(x,y)=x^{\mathsf T}y$, symmetric and nondegenerate but not positive definite, and isotropic vectors exist. $\mathrm O(n,\mathbb C)$ is the group of isometries of $b$, and $\mathrm{SO}(n,\mathbb C)$ the subgroup of determinant one. The elementary matrices are $X_{ij}=E_{ij}-E_{ji}$. The maximal torus is spanned by the $X_{2i-1,2i}$, and the plane generator is $J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$. No physics is invoked.</p>
 <h2 id="the-two-objects">The Two Objects</h2>
-<h3 id="the-algebra-over-math26">The Algebra over $\mathbb C$</h3>
+<h3 id="the-algebra-over-math27">The Algebra over $\mathbb C$</h3>
 <p>$\mathfrak{so}(n,\mathbb C)$ is a complex vector space: the condition $X^{\mathsf T}=-X$ is complex linear. Its complex dimension is the number of entries above the diagonal, $n(n-1)/2$, and its real dimension is twice that, $n(n-1)$, because a complex matrix of that shape is described by that many real numbers:</p>
 <p>$$
 \dim_{\mathbb C}\mathfrak{so}(n,\mathbb C)=\frac{n(n-1)}{2},
@@ -100,18 +100,18 @@ $$</p>
 $$</p>
 <p><strong>Lemma.</strong> $\mathfrak{so}(n,\mathbb C)$ is closed under the bracket.</p>
 <p><strong>Proof.</strong> $(XY-YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=(-Y)(-X)-(-X)(-Y)=YX-XY$.</p>
-<p><strong>The real basis.</strong> For each pair $i<j$ the two matrices $X_{ij}$ and $iX_{ij}$ are complex antisymmetric and independent over $\mathbb R$, and they span; so a real basis has $n(n-1)$ elements, checked at $n=2,\dots,6$ to be $2,6,12,20,30$. The real subspace spanned by the $X_{ij}$ alone is $\mathfrak{so}(n,\mathbb R)$, the compact real form.</p>
+<p><strong>The real basis.</strong> For each pair $i&lt;j$ the two matrices $X_{ij}$ and $iX_{ij}$ are complex antisymmetric and independent over $\mathbb R$, and they span; so a real basis has $n(n-1)$ elements, checked at $n=2,\dots,6$ to be $2,6,12,20,30$. The real subspace spanned by the $X_{ij}$ alone is $\mathfrak{so}(n,\mathbb R)$, the compact real form.</p>
 <p><strong>The Killing form.</strong> For $n\ge3$, $\kappa(X,Y)=(n-2)\operatorname{tr}(XY)$; the identity was checked numerically at $n=2,\dots,5$ to $3\times10^{-14}$. Over $\mathbb R$ this form is negative definite, which is compactness in algebraic dress. Over $\mathbb C$ it is a complex bilinear form and has no sign: isotropic elements with $\operatorname{tr}(X^{2})=0$ exist, and they are exactly the elements of square zero.</p>
 <p><strong>Nilpotents exist here and not over $\mathbb R$.</strong> Take $N=X_{12}+iX_{13}$ in $\mathfrak{so}(3,\mathbb C)$. Then $N^{3}=0$ and $N^{2}\ne0$; the characteristic polynomial is $t^{3}$, and the computation was checked exactly, with $N^{3}$ vanishing to $0$ in floating point. Over $\mathbb R$ the corresponding statement is impossible:</p>
-<p><strong>Proposition.</strong> A real antisymmetric matrix $X\ne0$ has $\operatorname{tr}(X^{2})<0$, so no nonzero real antisymmetric matrix is nilpotent.</p>
+<p><strong>Proposition.</strong> A real antisymmetric matrix $X\ne0$ has $\operatorname{tr}(X^{2})&lt;0$, so no nonzero real antisymmetric matrix is nilpotent.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}X_{ji}=-\sum_{i,j}X_{ij}^{2}$, which is strictly negative unless $X=0$, while a nilpotent matrix has $\operatorname{tr}(X^{k})=0$ for every $k\ge1$. The identity was checked at a random element of $\mathfrak{so}(4)$, where both sides gave $-23.394790$.</p>
 <p>This is the structural difference that makes the complex case genuinely different and not merely a field extension. Over $\mathbb R$ every element of the algebra is semisimple, since an antisymmetric matrix is normal; over $\mathbb C$ there are nilpotents, so the group has unipotent elements other than the identity, and a proof of T4 must handle them.</p>
-<h3 id="the-group-over-math69">The Group over $\mathbb C$</h3>
+<h3 id="the-group-over-math70">The Group over $\mathbb C$</h3>
 <p>$\mathrm{SO}(n,\mathbb C)$ is the zero set of the polynomial equations $R^{\mathsf T}R=\mathrm I$ and $\det R=1$, so it is a complex algebraic group. Its complex dimension is $n(n-1)/2$ and its real dimension $n(n-1)$.</p>
 <p><strong>Proposition.</strong> $\mathrm{SO}(n,\mathbb C)$ is connected.</p>
 <p><strong>Proof.</strong> By T4 below, $\exp$ is onto; the algebra is a complex vector space, hence connected; the continuous image of a connected set is connected.</p>
 <p><strong>Proposition.</strong> $\mathrm{SO}(n,\mathbb C)$ is not compact for $n\ge2$.</p>
-<p><strong>Proof.</strong> The matrix $R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$ with $\theta=it$ has entries $\cosh t$ and $\pm i\sinh t$, is orthogonal because $\cos^{2}+\sin^{2}=1$ is an identity of polynomials, and is unbounded as $t\to\infty$. The values at $t=0.5,2,5$ gave entries of modulus $1.13,3.76,74.21$ with orthogonality defect at most $1.6\times10^{-12}$.</p>
+<p><strong>Proof.</strong> The matrix $R(\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix}$ with $\theta=it$ has entries $\cosh t$ and $\pm i\sinh t$, is orthogonal because $\cos^{2}+\sin^{2}=1$ is an identity of polynomials, and is unbounded as $t\to\infty$. The values at $t=0.5,2,5$ gave entries of modulus $1.13,3.76,74.21$ with orthogonality defect at most $1.6\times10^{-12}$.</p>
 <p>So the complex group is connected and non-compact, in contrast with the real orthogonal group, which is compact with two components. Neither property is used in T4; the connectivity is a consequence of it.</p>
 <p><strong>The involution.</strong> Put $\theta(R)=(R^{\mathsf T})^{-1}$.</p>
 <p><strong>Proposition.</strong> $\theta$ is an automorphism of $\mathrm{GL}_n(\mathbb C)$, its fixed subgroup is $\mathrm O(n,\mathbb C)$, and every $R\in\mathrm{SO}(n,\mathbb C)$ is fixed by it.</p>
@@ -123,7 +123,7 @@ $$</p>
 <p><strong>Theorem T1.</strong> If $X^{\mathsf T}=-X$ and $\operatorname{tr}X=0$ then $\exp X\in\mathrm{SO}(n,\mathbb C)$.</p>
 <p><strong>Proof.</strong> $\exp(X)^{\mathsf T}=\exp(X^{\mathsf T})=\exp(-X)=\exp(X)^{-1}$ by the first two identities, which is orthogonality; and $\det\exp X=e^{\operatorname{tr}X}=1$ by the third.</p>
 <p>Nothing in the proof refers to $\mathbb R$, to a positive definite form, or to compactness; this is why T1 is the same theorem in the two articles. The two hypotheses go to the two conclusions: antisymmetry to orthogonality, zero trace to unit determinant. That the two are independent is shown by $X=i\lambda\mathrm I$, which is antisymmetric with nonzero trace and gives a scalar matrix of determinant $e^{in\lambda}$.</p>
-<h2 id="t2-the-tangent-space-over-math114">T2: The Tangent Space over $\mathbb C$</h2>
+<h2 id="t2-the-tangent-space-over-math115">T2: The Tangent Space over $\mathbb C$</h2>
 <p><strong>Theorem T2.</strong> $T_{\mathrm I}\mathrm{SO}(n,\mathbb C)=\mathfrak{so}(n,\mathbb C)$, as complex vector spaces of dimension $n(n-1)/2$.</p>
 <p><strong>Proof of the first inclusion.</strong> For a complex path $\gamma$ in $\mathrm{SO}(n,\mathbb C)$ with $\gamma(0)=\mathrm I$, differentiating $\gamma^{\mathsf T}\gamma=\mathrm I$ gives $\dot\gamma(0)^{\mathsf T}+\dot\gamma(0)=0$, and differentiating $\det\gamma=1$ gives $\operatorname{tr}\dot\gamma(0)=0$. Both are $\mathbb C$-linear conditions, so the tangent space is a complex subspace of $\mathfrak{so}(n,\mathbb C)$.</p>
 <p><strong>Proof of the second inclusion.</strong> For $X$ antisymmetric the path $t\mapsto\exp(tX)$ is complex differentiable, lies in the group by T1, and has velocity $X$ at $0$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <h2 id="t3-the-differential">T3: The Differential</h2>
 <p><strong>Theorem T3.</strong> $d\exp_0=\mathrm{id}$ on $\mathfrak{so}(n,\mathbb C)$; $\exp$ is a biholomorphism of a neighbourhood of $0$ onto a neighbourhood of $\mathrm I$.</p>
 <p><strong>Proof.</strong> $\exp(tX)=\mathrm I+tX+O(t^{2})$ gives the identity derivative, and the inverse function theorem applies to the holomorphic map $\exp$ between the complex manifolds $M_n(\mathbb C)$ and $\mathrm{GL}_n(\mathbb C)$; the restriction to the subspace $\mathfrak{so}(n,\mathbb C)$ has image in $\mathrm{SO}(n,\mathbb C)$ by T1, with the same derivative.</p>
-<p><strong>The explicit neighbourhood.</strong> The estimates of the real case are unchanged: for $\lVert A\rVert<\log2$ the series $\log\exp A$ converges to $A$, because $\lVert e^{A}-\mathrm I\rVert\le e^{\lVert A\rVert}-1<1$. So the ball of radius $\log2$ is a domain of injectivity.</p>
+<p><strong>The explicit neighbourhood.</strong> The estimates of the real case are unchanged: for $\lVert A\rVert&lt;\log2$ the series $\log\exp A$ converges to $A$, because $\lVert e^{A}-\mathrm I\rVert\le e^{\lVert A\rVert}-1&lt;1$. So the ball of radius $\log2$ is a domain of injectivity.</p>
 <p><strong>The singular set.</strong> With $\varphi(z)=(1-e^{-z})/z$ and $d\exp_X=e^{X}\varphi(\operatorname{ad}_X)$, the differential is singular exactly where $\operatorname{ad}_X$ has an eigenvalue in $2\pi i\mathbb Z\smallsetminus\{0\}$. In $\mathfrak{so}(3,\mathbb C)$ at $X=2\pi J_{23}$ the eigenvalues of $\operatorname{ad}_X$ are $0,\pm2\pi i$ and the rank drops from $3$ to $1$; at $X=\pi J_{23}$ the eigenvalues are $0,\pm i\pi$ and the rank stays $3$. The rank was computed by finite differences on a basis, and the eigenvalues from the structure constants.</p>
 <p><strong>The contrast with $\mathfrak{su}(2)$.</strong> There the eigenvalue of $\operatorname{ad}_X$ is twice the eigenvalue of $X$, so $\pi$ already produces a singularity; here the eigenvalues of $X$ come in opposite pairs and the singularities sit at $2\pi$. The factor is the same factor two that distinguishes a group from its double cover, and it is why the singular set of the exponential is not an invariant of the abstract algebra alone.</p>
 <h2 id="t4-surjectivity-without-compactness">T4: Surjectivity without Compactness</h2>
@@ -266,7 +266,7 @@ $$</p>
 <h3 id="the-covers-and-the-case-of-dimension-two">The Covers, and the Case of Dimension Two</h3>
 <p><strong>The facts, quoted.</strong> $\mathrm{SO}(n,\mathbb C)$ has the homotopy type of its maximal compact subgroup $\mathrm{SO}(n)$, so its fundamental group is $\mathbb Z/2$ for $n\ge3$ and $\mathbb Z$ for $n=2$; its universal cover is the complex spin group $\mathrm{Spin}(n,\mathbb C)$. The details are <em>The Fundamental Group of a Lie Group</em>.</p>
 <p><strong>The global correspondence.</strong> Lie's third theorem attaches to $\mathfrak{so}(n,\mathbb C)$, read as a real Lie algebra, the simply connected group $\mathrm{Spin}(n,\mathbb C)$. So the global form of the correspondence is $\mathfrak{so}(n,\mathbb C)\leftrightarrow\mathrm{Spin}(n,\mathbb C)$, and the correspondence with $\mathrm{SO}(n,\mathbb C)$ is that one composed with a double cover. The complex case shares this feature with the real one, and differs from the unitary case, where the group is simply connected and the correspondence is global as it stands.</p>
-<p><strong>Dimension two, where the exponential is a cover.</strong> $\mathrm{SO}(2,\mathbb C)$ is $\mathbb C^{\times}$: the map $z\mapsto\begin{pmatrix}(z+z^{-1})/2&-(z-z^{-1})/(2i)\\ (z-z^{-1})/(2i)&(z+z^{-1})/2\end{pmatrix}$ is an isomorphism onto the group, checked to $2\times10^{-15}$ on one hundred random nonzero $z$. The exponential $\theta\mapsto\exp(\theta J)$ corresponds to $\theta\mapsto e^{i\theta}$ up to the identification of the algebra with $\mathbb C$, and in this dimension $\operatorname{ad}=0$, so $\varphi(0)=1$ and the differential never vanishes. Hence $\exp:\mathbb C\to\mathbb C^{\times}$ is a covering map with fibre $2\pi\mathbb Z$, and it is the universal cover. This is the same phenomenon as at $n=2$ over $\mathbb R$: the exponential is a cover exactly in dimension two.</p>
+<p><strong>Dimension two, where the exponential is a cover.</strong> $\mathrm{SO}(2,\mathbb C)$ is $\mathbb C^{\times}$: the map $z\mapsto\begin{pmatrix}(z+z^{-1})/2&amp;-(z-z^{-1})/(2i)\\ (z-z^{-1})/(2i)&amp;(z+z^{-1})/2\end{pmatrix}$ is an isomorphism onto the group, checked to $2\times10^{-15}$ on one hundred random nonzero $z$. The exponential $\theta\mapsto\exp(\theta J)$ corresponds to $\theta\mapsto e^{i\theta}$ up to the identification of the algebra with $\mathbb C$, and in this dimension $\operatorname{ad}=0$, so $\varphi(0)=1$ and the differential never vanishes. Hence $\exp:\mathbb C\to\mathbb C^{\times}$ is a covering map with fibre $2\pi\mathbb Z$, and it is the universal cover. This is the same phenomenon as at $n=2$ over $\mathbb R$: the exponential is a cover exactly in dimension two.</p>
 <h2 id="the-ladder">The Ladder</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -386,7 +386,7 @@ $$</p>
 <h3 id="triality-and-the-automorphism-group">Triality and the Automorphism Group</h3>
 <p><strong>The algebra has more automorphisms than the group.</strong> At $n=8$ the outer automorphism group of the algebra and of the spin group is $S_3$, and that of the quotient group is $\mathbb{Z}/2$. For the correspondence this is a statement about what the algebra determines: it determines $\mathrm{Spin}(8,\mathbb{C})$ up to isomorphism, and the isomorphism carries no canonical labelling of the three eights; only the quotient by the central involution fixes one of them. So a statement about $\mathrm{SO}(8,\mathbb{C})$ that uses the vector representation in an essential way is not an automorphism-invariant statement, and a statement about the algebra is.</p>
 <p><strong>The real forms inherit the count, not the symmetry.</strong> Each of the five real forms of the rung is a real slice, and the outer automorphism of order three does not preserve a generic slice, which is why the compact real form $\mathrm{SO}(8)$ has only the $\mathbb{Z}/2$ on its quotient, as the real companion records.</p>
-<h3 id="the-correspondences-with-math560-and-math561">The Correspondences with $\mathrm{GL}$ and $\mathrm{SL}$</h3>
+<h3 id="the-correspondences-with-math561-and-math562">The Correspondences with $\mathrm{GL}$ and $\mathrm{SL}$</h3>
 <p><strong>The complexified nesting.</strong> Over $\mathbb{R}$ the unitary group sits inside the orthogonal group of twice the size. Complexified, that inclusion becomes</p>
 <p>$$
 \mathrm{GL}(n,\mathbb{C})\subset\mathrm{SO}(2n,\mathbb{C}),
@@ -443,7 +443,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the plane generator $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>the plane generator $\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$X_{ij}$</td>

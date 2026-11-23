@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spacetime geometry of static fluid spheres — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Spacetime geometry of static fluid spheres - gr-qc_0103065.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spacetime-geometry-of-static-fluid-spheres"><strong>Spacetime geometry of static fluid spheres</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0103065v4</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Shahinur Rahman, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 14 February 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Spacetime geometry of static fluid spheres - gr-qc_0103065-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Spacetime geometry of static fluid spheres - gr-qc_0103065.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Spacetime geometry of static fluid spheres - gr-qc_0103065.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors give an explicit formula for the metric of any static spherically symmetric perfect fluid. The whole class depends on one monotone generating function. No equation of state is assumed, or even required. They then work through the regularity conditions: finiteness at the centre, positivity of density and pressure, monotonicity, and the matching to an exterior. Each condition restricts the generating function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We exhibit a simple and explicit formula for the metric of an arbitrary static spherically symmetric perfect fluid spacetime."</p>
+<h3 id="the-freedom">The freedom</h3>
+<p>"This class of metrics depends on one freely specifiable monotone non-increasing generating function."</p>
+<h3 id="the-regularity">The regularity</h3>
+<p>"We also investigate various regularity conditions, and the constraints they impose."</p>
+<h3 id="the-advantage">The advantage</h3>
+<p>"Because we never make any assumptions as to the nature (or even the existence) of an equation of state, this technique is useful in situations where the equation of state is for whatever reason uncertain or unknown."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"The first theorem we presented is applicable to all static spherically symmetric perfect fluid geometries without further restriction"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-geometry-before-matter">1. Geometry before matter</h3>
+<p><strong>The idea.</strong> The metric can be parametrised without choosing an equation of state.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619-conversion.md</code> also relaxes the equation of state. The generating-function form gives it a complete parametrisation rather than a family of cases.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619-conversion.md</code>, in the discussion of the parametrisation.</p>
+<p><strong>What stands in the way.</strong> The form covers static spheres only. Ranked first, because it completes the target's approach.</p>
+<h3 id="2-regularity-as-a-filter">2. Regularity as a filter</h3>
+<p><strong>The idea.</strong> Most generating functions give unphysical stars; the conditions cut them down.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects exclusions. Here the exclusions come from positivity and finiteness.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The criteria are classical. Ranked second.</p>
+<h3 id="3-one-function-all-stars">3. One function, all stars</h3>
+<p><strong>The idea.</strong> A single monotone function labels every solution.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain a compact way to write a large solution space.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> The label has no direct physical meaning. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

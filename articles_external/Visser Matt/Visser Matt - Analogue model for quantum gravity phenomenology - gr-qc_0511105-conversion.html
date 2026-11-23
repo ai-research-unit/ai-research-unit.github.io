@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue model for quantum gravity phenomenology — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model for quantum gravity phenomenology - gr-qc_0511105.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-model-for-quantum-gravity-phenomenology"><strong>Analogue model for quantum gravity phenomenology</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0511105v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silke Weinfurtner, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 November 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue model for quantum gravity phenomenology - gr-qc_0511105-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model for quantum gravity phenomenology - gr-qc_0511105.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue model for quantum gravity phenomenology - gr-qc_0511105.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends the analogue programme past the massless scalar. A two-component Bose–Einstein condensate with laser-induced transitions between the components is shown to reproduce, in the hydrodynamic regime, both massive and massless quasiparticles on an emergent spacetime — the massive Klein–Gordon equation in curved space, which is what a realistic analogue of particle physics needs. Beyond the hydrodynamic regime the dispersion relation acquires Lorentz-violating corrections, and the paper computes the dimensionless coefficients $\eta_2$ and $\eta_4$ in both sectors. The finding that matters for quantum-gravity phenomenology is that the quadratic corrections are Planck-suppressed while the quartic ones are order unity, so the model does not suffer the "naturalness problem"; and the coefficients are not universal between the two sectors, which raises the "universality issue".</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap-being-closed">The gap being closed</h3>
+<p>"Known analogue models typically lead to massless minimally coupled scalar fields. We present an extended 'analogue space-time' programme by investigating a condensed-matter system — in and beyond the hydrodynamic limit — that is in principle capable of simulating the massive Klein–Gordon equation in curved spacetime. Since many elementary particles have mass, this is an essential step in building realistic analogue models, and an essential first step towards simulating quantum gravity phenomenology."</p>
+<h3 id="why-two-components">Why two components</h3>
+<p>Two hyperfine states with slightly different energies give two masses $m_1\ne m_2$ — "to about one part in $10^{16}$" — three coupling constants $U_{11}$, $U_{22}$, $U_{12}$, and a laser field that drives transitions between them with Rabi frequency $\lambda=\hbar\omega_{\text{Rabi}}$. The mean-field theory is a pair of coupled Gross–Pitaevskii equations. The laser coupling is what produces a massive branch: without it the two sectors are separate and gapless.</p>
+<h3 id="what-the-model-shows">What the model shows</h3>
+<p>"we consider the class of two-component BECs subject to laser-induced transitions between the components, and we show that this model is an example for Lorentz invariance violation due to ultraviolet physics. Furthermore our model suggests constraints on quantum gravity phenomenology in terms of the 'naturalness problem' and 'universality issue'."</p>
+<h3 id="the-naturalness-result">The naturalness result</h3>
+<p>"the present model does not suffer from the naturalness problem, because the quadratic corrections are Planck suppressed, while at the same time the quartic coefficients $\eta_{4,I/II}$ have no further suppression, and are actually of order unity." And on the coefficients: "While one is always zero, $\eta_{2,I}\equiv0$, the second $\eta_{2,II}$ depends on the interaction constant $U_{12}$. For $U_{12}\ll(U_{11}+U_{22})$, which is equivalent to $m_{II}\ll\sqrt{m_1m_2}$, so $\eta_{2,II}$ is suppressed. However, there is no further suppression — after having pulled out a factor $(\hbar/M_{\text{Pl}})^2$ — for the quartic coefficients."</p>
+<h3 id="the-universality-issue">The universality issue</h3>
+<p>"From the expression it is clear, that the quadratic coefficients are non-universal" — they differ between sectors unless "$\gamma_I=\gamma_{II}$ and the underlying bosons have equal masses $m_1=m_2$". A quantum-gravity model that predicts universal Lorentz violation is therefore distinguishable from this kind of emergent scenario, which predicts sector-dependent violation.</p>
+<h3 id="the-parity-constraint">The parity constraint</h3>
+<p>"Due to parity of the GPE we only obtained terms with even exponents of $k$." The same observation as in the earlier BEC paper, now used as a constraint on the shape of the correction.</p>
+<h3 id="the-effective-planck-mass">The effective Planck mass</h3>
+<p>The analogue Planck mass is $M_{\text{eff}}=\sqrt{m_1m_2}$, and $\gamma_I=1$, $\gamma_{II}=\sqrt{m_1/m_2}$ are the dimensionless coefficients multiplying it in each sector.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-naturalness-is-a-property-a-model-can-have-or-lack-and-it-is-checkable">1. Naturalness is a property a model can have or lack, and it is checkable</h3>
+<p><strong>The idea.</strong> In a Lorentz-violating dispersion relation the correction terms are organised by powers of $(\hbar/M)^2$. If the quadratic term is suppressed and the quartic term is not, the model is "natural" in the technical sense: the small coefficient is small for a reason. The paper computes which is which and finds one sector protected, the other not.</p>
+<p><strong>What it would add.</strong> A worked example of the criterion, with the arithmetic done. The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what its framework costs in fine tuning and gets no answer. Here is what an answer looks like: name the expansion parameter, compute each coefficient, and say which are suppressed and why.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, as a template for the missing fine-tuning analysis.</p>
+<p><strong>What stands in the way.</strong> The expansion is in momentum over an analogue Planck mass derived from atomic masses. Nothing in the corpus plays that role, so the template transfers but the numbers do not.</p>
+<h3 id="2-lorentz-violation-need-not-be-universal">2. Lorentz violation need not be universal</h3>
+<p><strong>The idea.</strong> Different particle species can experience different violations, because the coefficients depend on sector-specific couplings. Universal violation is a special case, not the default.</p>
+<p><strong>What it would add.</strong> A sharp discriminator. <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> assumes one cone for everything. If violation is generically non-universal, then any framework predicting a single modified cone is making a strong, testable, and probably false claim — and the corpus should know that before asserting one. This is the most consequential import in the paper.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Non-universality is shown for one two-component system. Whether it is generic is a conjecture the paper states and does not prove. Ranked first anyway, because the corpus's opposite assumption is currently unexamined.</p>
+<h3 id="3-a-mass-from-a-coupling-not-from-a-parameter">3. A mass from a coupling, not from a parameter</h3>
+<p><strong>The idea.</strong> The massive branch appears because a laser couples two otherwise gapless sectors. The mass is a function of the Rabi frequency and the density imbalance, not a parameter put in by hand.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-dirac-pair-and-the-mass-term.md</code> treats the mass term as an object to be added to a Lagrangian. This paper's mechanism generates one from a mixing between two sectors, which is closer to the corpus's own two-sided structure than a bare mass term is. That parallel deserves to be stated: mixing produces mass, and the corpus already has mixing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-dirac-pair-and-the-mass-term.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mixing is a laser-induced Rabi coupling between hyperfine states, with a specific two-band structure. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

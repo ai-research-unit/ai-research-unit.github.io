@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawking–Ellis type III spacetime geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-Ellis type III spacetime geometry - 1806.02094.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hawkingellis-type-iii-spacetime-geometry"><strong>Hawking–Ellis type III spacetime geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1806.02094v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 6 June 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Hawking-Ellis type III spacetime geometry - 1806.02094-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-Ellis type III spacetime geometry - 1806.02094.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-Ellis type III spacetime geometry - 1806.02094.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Hawking–Ellis type III stress-energy has no known classical or semiclassical source, unlike types I, II, and IV. The authors invert the problem and ask what geometry would require it. Type III is incompatible with planar or spherical symmetry, so they look at low-symmetry metrics, compute Einstein tensors, and analyse the eigenvalue pattern. They exhibit four geometries with type III Einstein tensors and build a Lagangian model in Minkowski space. They cannot yet close the loop with a self-consistent source.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap">The gap</h3>
+<p>"The type III (and the 'essential core' type III$_0$) stress-energy tensors in the Hawking–Ellis (Segré–Plebański) classification stand out in that there is to date no known source (either classical or semi-classical) leading to type III stress-energy."</p>
+<h3 id="the-contrast-with-other-types">The contrast with other types</h3>
+<p>"(In contrast the Hawking–Ells types I and II occur classically, and type IV is known to occur semi-classically)."</p>
+<h3 id="the-inverted-question">The inverted question</h3>
+<p>"We instead start by asking the obverse question: What sort of spacetime (assuming the Einstein equations) needs a type III stress-energy to support it?"</p>
+<h3 id="the-symmetry-constraint">The symmetry constraint</h3>
+<p>"One key observation is that type III is incompatible with either planar or spherical symmetry, so one should be looking at spacetimes of low symmetry (or no symmetry)."</p>
+<h3 id="the-method">The method</h3>
+<p>"Finding such a type III spacetime is a matter of somehow finding an appropriate ansatz for the metric, calculating the Einstein tensor, and analyzing the pattern of (Lorentz invariant) eigenvalues and eigenvectors."</p>
+<h3 id="the-partial-success">The partial success</h3>
+<p>"we explicitly exhibit several (somewhat unnatural) spacetime geometries with a type III Einstein tensor. We then build an explicit but somewhat odd Lagrangian model leading (in Minkowski space) to type III stress-energy."</p>
+<h3 id="the-missing-step">The missing step</h3>
+<p>"Unfortunately we have not yet been able to 'close the loop', to self-consistently determine a type III spacetime geometry supported by an explicit Lagrangian-based type III matter source. This remaining part of the problem looks rather difficult"</p>
+<h3 id="the-practical-advice">The practical advice</h3>
+<p>"At this point we can already suggest that a robust assumption when investigating general relativistic spacetimes is to focus attention on type I, II and IV stress energy tensors."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-symmetry-rules-out-a-type">1. Symmetry rules out a type</h3>
+<p><strong>The idea.</strong> Type III cannot occur with planar or spherical symmetry, so a search for it must break symmetry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> could gain a rule connecting symmetry to admissible types, which is more informative than a bare prohibition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on stress-energy types.</p>
+<p><strong>What stands in the way.</strong> The constraint is stated but only partly proved. Ranked first, because it generalises beyond the single type.</p>
+<h3 id="2-work-backwards-from-geometry">2. Work backwards from geometry</h3>
+<p><strong>The idea.</strong> Ask which geometry needs an unusual source, then look for the source.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> starts from geometry. This is a worked method for using that starting point to constrain matter, and the article could apply it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of method.</p>
+<p><strong>What stands in the way.</strong> The loop is not closed. Ranked second.</p>
+<h3 id="3-a-recommended-default">3. A recommended default</h3>
+<p><strong>The idea.</strong> Focus on types I, II, and IV and set type III aside.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs to know which cases to discard. An explicit default from specialists is useful guidance and should be recorded with its reason.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> It is advice, not a theorem. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

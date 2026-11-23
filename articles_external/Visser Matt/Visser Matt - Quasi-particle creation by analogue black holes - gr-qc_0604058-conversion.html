@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quasi-particle creation by analogue black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quasi-particle creation by analogue black holes - gr-qc_0604058.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quasi-particle-creation-by-analogue-black-holes"><strong>Quasi-particle creation by analogue black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0604058v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 12 April 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quasi-particle creation by analogue black holes - gr-qc_0604058-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quasi-particle creation by analogue black holes - gr-qc_0604058.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quasi-particle creation by analogue black holes - gr-qc_0604058.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors ask what an analogue black hole must do to radiate like a black hole. They build simple acoustic models in one spatial dimension and compute the particle production. The surprise is that an ergoregion, meaning a supersonic flow, is not required. A flow that never forms a sonic region, or only reaches sound speed asymptotically, can still give stationary Planckian emission. They tabulate which flows have horizons and how much late-time radiation each produces.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"We discuss the issue of quasi-particle production by 'analogue black holes' with particular attention to the possibility of reproducing Hawking radiation in a laboratory."</p>
+<h3 id="the-result">The result</h3>
+<p>"By constructing simple geometric acoustic models, we obtain a somewhat unexpected result"</p>
+<h3 id="the-surprise">The surprise</h3>
+<p>"We show that in order to obtain a stationary and Planckian emission of quasi-particles, it is not necessary to create an ergoregion in the acoustic spacetime (corresponding to a supersonic regime in the flow)."</p>
+<h3 id="the-alternative">The alternative</h3>
+<p>"It is sufficient to set up a dynamically changing flow either eventually generating an arbitrarily small sonic region $v=c$, but without any ergoregion, or even just asym[ptotically approaching it]"</p>
+<h3 id="the-method">The method</h3>
+<p>"we have analyzed different dynamical black hole-like analogue geometries with regard to their properties in terms of quantum quasi-particle production"</p>
+<h3 id="the-bookkeeping">The bookkeeping</h3>
+<p>"for each of them we (i) have calculated whether it possesses an event horizon or not, and if the answer is 'yes', (ii) have calculated the asymptotic redshift function"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-emission-without-an-ergoregion">1. Emission without an ergoregion</h3>
+<p><strong>The idea.</strong> Planckian radiation can appear without a supersonic region.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> ties radiation to a horizon. This result separates radiation from one of the usual horizon properties.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of radiation.</p>
+<p><strong>What stands in the way.</strong> The models are one-dimensional. Ranked first, because it weakens a standard link.</p>
+<h3 id="2-redshift-function-as-the-carrier">2. Redshift function as the carrier</h3>
+<p><strong>The idea.</strong> The amount of radiation is fixed by the asymptotic redshift, not by the horizon's existence.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> computes a temperature from horizon data. A redshift-based account would apply more widely.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the temperature.</p>
+<p><strong>What stands in the way.</strong> The function is computed per model. Ranked second.</p>
+<h3 id="3-flow-dynamics-not-geometry">3. Flow dynamics, not geometry</h3>
+<p><strong>The idea.</strong> A time-dependent flow produces the effect.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds geometry from algebra. Here geometry is a consequence of flow history, which is a different causal order.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergence.</p>
+<p><strong>What stands in the way.</strong> The setting is acoustic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

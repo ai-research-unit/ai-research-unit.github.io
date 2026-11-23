@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black holes, white holes, and near-horizon physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes, white holes, and near-horizon physics - 2304.10692.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="black-holes-white-holes-and-near-horizon-physics"><strong>Black holes, white holes, and near-horizon physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2304.10692v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Rudeep Gaur, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 16 May 2024 (dated 10 May 2024)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>JHEP 2024 (2024) 172</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Black holes, white holes, and near-horizon physics - 2304.10692-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes, white holes, and near-horizon physics - 2304.10692.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes, white holes, and near-horizon physics - 2304.10692.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper constructs a classical model in which a black hole turns into a white hole. It begins with a one-parameter family of coordinate systems for Schwarzschild that interpolate between Painlevé–Gullstrand, Kerr–Schild, and Eddington–Finkelstein forms, and shows that the black-versus-white distinction is carried by the sign of a single function at the horizon. It then makes that function time-dependent, producing a metric that is no longer a coordinate transformation of Schwarzschild and in which the horizon character changes. The transition is confined to a compact region around $r=2m$, and the authors show it can be arranged to have zero action. They discuss the quantum implication: a superposition of black and white horizons, a "gray" horizon.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Black and white holes play remarkably contrasting roles in general relativity versus observational astrophysics. While there is observational evidence for the existence of compact objects that are 'cold, dark, and heavy', which thereby are natural candidates for black holes, the theoretically viable time-reversed variants — the 'white holes' — have nowhere near the same level of observational support."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"Herein we shall explore the theoretical possibility that the connection between black and white holes is much more intimate than commonly appreciated. We shall first construct 'horizon penetrating' coordinate systems that differ from the standard curvature coordinates only in a small near-horizon region, thereby emphasizing that ultimately the distinction between black and white horizons depends only on near-horizon physics."</p>
+<h3 id="the-metric-family">The metric family</h3>
+<p>The construction starts from</p>
+<p>$$ds^2=-\left(1-\frac{2m}{r}\right)dt^2-2h(r)\,dr\,dt+\frac{1-h(r)^2}{1-2m/r}\,dr^2+r^2d\Omega^2, \qquad (paper\ 6.1)$$</p>
+<p>which "for specific choices of $h(r)$ ... returns the Schwarzschild spacetime in other well known coordinates, such as the Painlevé–Gullstand, Kerr–Schild, and Eddington–Finkelstein coordinates."</p>
+<h3 id="the-blackwhite-switch">The black/white switch</h3>
+<p>"By imposing the restriction $h(2m)=\pm1$ we showed that this line element can model a classical black or white hole where one or the other of the null curves are horizon penetrating with nonzero coordinate velocity" $r_H'=\pm1/(2m\,h'(2m))$ (paper 6.2).</p>
+<h3 id="confining-the-transition">Confining the transition</h3>
+<p>"By choosing $h(r)$ to be of compact support, we demonstrated that we could confine the non-trivial aspects of black and white horizons to a compact radial region straddling the naïve horizon $r=2m$." Making $h$ time-dependent through a function $s(t)$ then gives a metric that is no longer a coordinate rewriting of Schwarzschild, with all the nontrivial physics in "a finite-duration finite-thickness, (in principle arbitrarily small), region".</p>
+<h3 id="zero-action-and-the-quantum-reading">Zero action and the quantum reading</h3>
+<p>"Moreover we shall show that it is possible to arrange the 'black-to-white transition' to have zero action — so that it will not be subject to destructive interference in the Feynman path integral. This then raises the very intriguing possibility that astrophysical black holes might be interpretable in terms of a quantum superposition of black and white horizons — a 'gray' horizon."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-black-versus-white-is-a-near-horizon-fact">1. Black versus white is a near-horizon fact</h3>
+<p><strong>The idea.</strong> The paper reduces a global causal distinction to the sign of $h(2m)$ in a coordinate system that differs from Schwarzschild only near the horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that the event horizon is defined by a global construction and cannot be recognised pointwise. This paper does not refute that, but it exhibits a family where the black/white distinction is encoded in local data near $r=2m$. The ledger should record the qualification: for Schwarzschild-like metrics the two characters differ by a local sign, so a local observer can distinguish them even though neither can verify that the surface is a causal boundary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on the three kinds of horizon.</p>
+<p><strong>What stands in the way.</strong> The construction is restricted to static, spherically symmetric metrics with a fixed horizon radius. Ranked first, because it gives the article a precise boundary case it does not currently have.</p>
+<h3 id="2-a-zero-action-process-and-the-euclidean-argument">2. A zero-action process and the Euclidean argument</h3>
+<p><strong>The idea.</strong> The transition can be arranged to have zero action, which is a statement about the weight of a history in a path integral.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> fixes the temperature from the Euclidean period and treats the Euclidean section as the source of the entropy. That argument assumes a definite sign of the Euclidean action. A zero-action transition is exactly the case where the sign and magnitude are degenerate, so the article should say what its period argument assumes. The question is well posed even though the corpus does not compute path integrals.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the Euclidean-period discussion.</p>
+<p><strong>What stands in the way.</strong> The corpus has no path-integral machinery, so the import is a stated assumption, not a calculation. Ranked second.</p>
+<h3 id="3-a-gray-horizon-as-an-external-candidate">3. A "gray horizon" as an external candidate</h3>
+<p><strong>The idea.</strong> If astrophysical black holes are superpositions of black and white horizons, there could be an observable difference in ringdown or in the horizon's response.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what would count as a test. This is a candidate of a kind the article does not list: a proposal from outside the framework that names an observable and a mechanism. Including it, clearly marked as external, would show what a test-shaped proposal looks like, which is the article's own standard.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The paper does not compute the observable, so the candidate is not yet a test. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

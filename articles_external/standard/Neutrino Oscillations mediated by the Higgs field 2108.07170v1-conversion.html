@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutrino Oscillations Mediated by the Higgs Field — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Neutrino Oscillations mediated by the Higgs field 2108.07170v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="neutrino-oscillations-mediated-by-the-higgs-field"><strong>Neutrino Oscillations Mediated by the Higgs Field</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal preprint (short paper)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2108.07170v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>W. Schmidt-Parzefall (Universität Hamburg)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 July 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Neutrino Oscillations mediated by the Higgs field 2108.07170v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Neutrino Oscillations mediated by the Higgs field 2108.07170v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Neutrino Oscillations mediated by the Higgs field 2108.07170v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Treats a neutrino, like a charged lepton, as a bound pair of a massless left-handed and a massless right-handed fermion coupled through a four-component Higgs field, and shows that the crossing-symmetry partner of the Yukawa diagram converts one neutrino into a neutrino of another generation. Oscillation proceeds through the Higgs field as the intermediate state, with no new physics beyond a changed description of what a neutrino is.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"Neutrino oscillations occur within the frame of the Standard Model, assuming that a neutrino is composed of a left handed and a right handed mass less fermion. Neutrino oscillations proceed via the 4-component Higgs field as intermediate state. PACS 12."</p>
+<h3 id="the-primary-lagrangian">The primary Lagrangian</h3>
+<p>The Standard Model Lagrangian is derived from a primary form "containing mass less fermions, mass less gauge bosons and the 4-component Higgs field", with the terms
+$$L=L_\psi+L_\chi+L_\phi+L_Y+L_W+L_B \quad \text{(paper 1)}$$
+where $L_Y=-\sum_i C_i(\psi_{iR}\phi^\dagger\chi_{iL}+\chi_{iL}\phi\psi_{iR})$ is the Yukawa coupling of the two massless constituents, and $m_H\approx125$ GeV, $v\approx246$ GeV.</p>
+<h3 id="the-charges">The charges</h3>
+<p>$\psi_{iR}$ carries the weak isospin $t_3=0$ and the U(1) charge $g'y_\psi$; $\chi_{iL}$ carries the weak isospin $t_3=\pm\tfrac12$ and the U(1) charge $g'y_\chi$. The two constituents carry the same electric charge after the rotation $q_\chi=\sin\theta_W\,g t_3+\cos\theta_W\,g'y_\chi=\cos\theta_W\,g'y_\psi=q_\psi$ (paper 7) with $\theta_W\approx28.6^\circ$, and the Higgs carries $q_\phi=q_\chi-q_\psi=0$ (paper 8).</p>
+<h3 id="the-two-diagrams">The two diagrams</h3>
+<p>Diagram 2a, $L_Y$ explicitly implied, is $\psi_{iR}+\phi\to\chi_{iL}$ and $\chi_{iL}\to\psi_{iR}+\phi$. Diagram 2b "occurs due to crossing symmetry. It transforms a νJ into a νk , j, k = e, µ, τ and thus represents the mechanism for neutrino oscillations. Actually, only"</p>
+<h3 id="the-consistency-condition">The consistency condition</h3>
+<p>Diagram 2b requires $U_\phi=U_\psi U_\chi$ (paper 9) while diagram 2a requires $U_\phi=U_\psi^{-1}U_\chi$ (paper 6). "Both 4 conditions together result in the requirement Uψ = 1. (10) This is fulfilled for neutrinos, but not for charged leptons or quarks. The ψR component of neutrinos does not carry any charge." The $\psi_R$ component of a neutrino carries no charge, so only neutrinos get both diagrams.</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"the observed neutrino oscillations can be explained within the frame of the Standard Model, assuming" "This picture allows to compute the neutrino oscillation rates, once the neutrino masses are known. 5 References [1] H."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-oscillation-needs-no-mixing-matrix">1. Oscillation needs no mixing matrix</h3>
+<p><strong>The idea.</strong> In the standard treatment, oscillation follows from a mismatch between mass and flavour eigenstates, encoded in the PMNS matrix. Here it follows from a single crossed Feynman diagram, and the generation change is a vertex property rather than a basis mismatch. This is a <strong>mechanism</strong>, and it removes a matrix of parameters.</p>
+<p><strong>What it would add.</strong> An alternative to the corpus's treatment of neutrino mixing, which the corpus inherits from the standard picture.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>, on the mixing.</p>
+<p><strong>What stands in the way.</strong> The mechanism requires the neutrino's right-handed component to carry no charge at all, which forces $U_\psi=1$; in the corpus's electroweak structure the right-handed component is defined by its hypercharge, so the condition would have to be re-derived and may fail.</p>
+<h3 id="2-the-neutrino-is-composite-in-the-same-sense-as-the-electron">2. The neutrino is composite in the same sense as the electron</h3>
+<p><strong>The idea.</strong> A neutrino is "composed of a left handed and a right handed mass less fermion, like a charged lepton". Its mass is $m_i=C_iv$, the same Yukawa origin as the electron's, and it is not a special case.</p>
+<p><strong>What it would add.</strong> Uniformity: one mass mechanism for all fermions, with no separate see-saw or Majorana term. The corpus's neutrino article treats the neutrino as requiring a distinct treatment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>, on the mass origin.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra distinguishes the neutrino by the absence of the charge, and a Dirac-type mass for it is exactly what the corpus's Majorana discussion sets aside; adopting this would settle a question the corpus leaves open.</p>
+<h3 id="3-a-falsifiable-consistency-condition-math30">3. A falsifiable consistency condition, $U_\psi=1$</h3>
+<p><strong>The idea.</strong> The two diagrams are compatible only if the right-handed constituent is uncharged. That is a sharp statement: it says which fermions oscillate and why — and it predicts that no charged lepton oscillation exists at any order, for a structural reason.</p>
+<p><strong>What it would add.</strong> A reason rather than a selection rule, which the corpus would otherwise state as an empirical fact.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>, on lepton flavour.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the condition is checkable inside either framework.</p>
+<p>This is a six-page paper; the composite-neutrino premise, the primary Lagrangian, the charge assignment, the two diagrams and the $U_\psi=1$ condition are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

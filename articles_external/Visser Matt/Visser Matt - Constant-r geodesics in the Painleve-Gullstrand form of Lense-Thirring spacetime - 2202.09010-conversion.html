@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constant-$r$ geodesics in the Painlevé–Gullstrand form of Lense–Thirring spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constant-r geodesics in the Painleve-Gullstrand form of Lense-Thirring spacetime…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constant-math12-geodesics-in-the-painlevegullstrand-form-of-lensethirring-spacetime"><strong>Constant-$r$ geodesics in the Painlevé–Gullstrand form of Lense–Thirring spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2202.09010v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Thomas Berry, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 19 July 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Constant-r geodesics in the Painleve-Gullstrand form of Lense-Thirring spacetime - 2202.09010-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constant-r geodesics in the Painleve-Gullstrand form of Lense-Thirring spacetime - 2202.09010.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constant-r geodesics in the Painleve-Gullstrand form of Lense-Thirring spacetime - 2202.09010.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper studies geodesics that stay at constant Boyer–Lindquist radius in the Painlevé–Gullstrand form of the Lense–Thirring spacetime. The spacetime is stationary and axisymmetric but not spherically symmetric, so Birkhoff's theorem does not apply, yet shells of constant-$r$ geodesics still exist. The angular motion on those shells combines precession and nutation, and generically fills a band on the sphere rather than closing into a curve. The authors attribute the persistence of the shells to a non-trivial Killing tensor and its Carter constant, and note that the spacetime has the same slow-rotation weak-field limit as Kerr.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We have explored the existence of and properties of the constant-$r$ ('quasi-circular') geodesics in the recently introduced Painlevé–Gullstrand variant of the Lense–Thirring spacetime."</p>
+<h3 id="the-surprising-feature">The surprising feature</h3>
+<p>"We emphasize that although the underlying spacetime is not spherically symmetric, (only stationary and axisymmetric), so that the Birkhoff theorem does not apply, one nevertheless encounters (partial) spherical shells of constant-$r$ geodesics; notably this behaviour is not limited to the (exact) Kerr spacetime, but also persists in the Painlevé–Gullstrand variant of the Lense–Thirring spacetime."</p>
+<h3 id="the-reason">The reason</h3>
+<p>"The persistence of existence of these constant-$r$ ('quasi-circular') geodesics is intimately related to the persistence of existence of a non-trivial Killing tensor and the associated Carter constant."</p>
+<h3 id="the-angular-motion">The angular motion</h3>
+<p>"Regarding the angular motion, these constant-$r$ geodesics exhibit both precession and nutation — typically with inc[lining orbits]; this constant-$r$ geodesic motion, though integrable, is generically surface-filling, with the orbits covering a [two-dimensional] band which is a segment of a spherical surface, and whose latitudinal extent is governed by delicate [relations among the] angular momentum and the Carter constant."</p>
+<h3 id="the-comparison-with-kerr">The comparison with Kerr</h3>
+<p>"The situation [is analogous] to that for the (exact) Kerr spacetime — but we n[ote that this spacetime has] the same slow-rotation weak-field limit as [Kerr]."</p>
+<h3 id="the-overall-assessment">The overall assessment</h3>
+<p>"Overall, we see that the Painlevé–Gullstrand variant of the Lense–Thirring spacetime exhibits many useful and interesting properties, and is well-adapted to direct confrontation with observational astrophysics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-hidden-symmetry-does-the-work">1. A hidden symmetry does the work</h3>
+<p><strong>The idea.</strong> The constant-$r$ shells exist because of a Killing tensor, not because of spherical symmetry. The symmetry is second order and does not show in the metric's isometries.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that horizons and their properties are fixed by structure the algebra does not carry. Here the relevant structure is a Killing tensor, which is invisible in the metric components and yet determines which orbits exist. That is a precise case for the article's point, and it gives a name to the missing object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> The Killing tensor is specific to a privileged class of metrics. Ranked first, because it gives the article's claim a concrete witness.</p>
+<h3 id="2-birkhoffs-theorem-is-not-available">2. Birkhoff's theorem is not available</h3>
+<p><strong>The idea.</strong> Without spherical symmetry there is no theorem forcing the exterior to be static, and yet a stationary rotating solution is written down.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds metrics from a frame field without a uniqueness theorem. This paper shows what replaces such a theorem in practice: a slow-rotation expansion matched to observation. The article could state that matching, rather than uniqueness, is what constrains a metric.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of dynamics.</p>
+<p><strong>What stands in the way.</strong> The paper does not discuss uniqueness directly. Ranked second.</p>
+<h3 id="3-orbits-that-fill-a-band">3. Orbits that fill a band</h3>
+<p><strong>The idea.</strong> Integrable motion can still be non-closed; the orbit covers a two-dimensional region.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> discusses trapped regions. A band-filling orbit is a case where a particle is confined in one coordinate and free in another, which is the same kind of partial trapping. The classification in the article has no entry for it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The band is not a horizon and the analogy is loose. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

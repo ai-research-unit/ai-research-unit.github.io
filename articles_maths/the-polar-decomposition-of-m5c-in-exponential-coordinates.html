@@ -149,7 +149,7 @@ $$</p>
 <h3 id="the-svd-in-group-form">The SVD in Group Form</h3>
 <p><strong>Theorem ($KAK$).</strong> Every $g\in GL_5(\mathbb{C})$ can be written as</p>
 <p>$$
-g=K_1AK_2,\qquad K_1,K_2\in U(5),\quad A=\operatorname{diag}(a_1,\dots,a_5),\quad a_k>0 .
+g=K_1AK_2,\qquad K_1,K_2\in U(5),\quad A=\operatorname{diag}(a_1,\dots,a_5),\quad a_k&gt;0 .
 $$</p>
 <p>The diagonal entries $a_k$ are the singular values of $g$, and they are unique up to permutation; if ordered $a_1\ge\cdots\ge a_5$, they are unique.</p>
 <p><strong>Proof.</strong> The singular value decomposition $g=V\Sigma W^*$ with $V,W$ $*$-unitary and $\Sigma$ positive diagonal gives $g=K_1AK_2$ with $K_1=V$, $A=\Sigma$, $K_2=W^*$. The singular values are unique; the ordering fixes the diagonal.</p>
@@ -157,7 +157,7 @@ $$</p>
 <p><strong>Proof.</strong> The positive diagonal matrix is the exponential of the real diagonal matrix of the logarithms.</p>
 <h3 id="the-weyl-group">The Weyl Group</h3>
 <p><strong>Proposition.</strong> The diagonal part $A$ is unique up to the action of the Weyl group $S_5$, which permutes the diagonal entries. The $K$-parts are not unique: they are determined only up to the centralizer of $A$ in $U(5)$, which contains the diagonal torus of phases and is larger when singular values coincide.</p>
-<p><strong>Proof.</strong> The SVD gives $g=V\Sigma W^*$. If $g=V'\Sigma W'^*$ with the same ordered $\Sigma$ and distinct $\sigma_k$, then $V'=VD$ and $W'=WD$ for a diagonal unitary $D$; if some singular values coincide, $D$ may mix within the corresponding eigenspaces. A permutation of the diagonal entries is compensated by permuting the columns of $V$ and $W$, which is the Weyl group. At $g=I$, every $K_1$ with $K_2=K_1^{-1}$ gives $K_1IK_2=I$, so the $K$-parts are arbitrary there.</p>
+<p><strong>Proof.</strong> The SVD gives $g=V\Sigma W^*$. If $g=V'\Sigma W'{}^*$ with the same ordered $\Sigma$ and distinct $\sigma_k$, then $V'=VD$ and $W'=WD$ for a diagonal unitary $D$; if some singular values coincide, $D$ may mix within the corresponding eigenspaces. A permutation of the diagonal entries is compensated by permuting the columns of $V$ and $W$, which is the Weyl group. At $g=I$, every $K_1$ with $K_2=K_1^{-1}$ gives $K_1IK_2=I$, so the $K$-parts are arbitrary there.</p>
 <p><strong>Corollary.</strong> The $KAK$ decomposition is unique up to the Weyl group and the centralizer of $A$; ordering the diagonal entries fixes $A$, not $K_1$ and $K_2$.</p>
 <p><strong>Proof.</strong> The ordering fixes the representative of the Weyl orbit; the centralizer ambiguity remains.</p>
 <h3 id="the-geodesic-polar-coordinates">The Geodesic Polar Coordinates</h3>
@@ -181,7 +181,7 @@ $$</p>
 <h3 id="the-gramschmidt-proof">The Gram–Schmidt Proof</h3>
 <p><strong>Proposition.</strong> The Gram–Schmidt decomposition of the columns $g_1,\dots,g_5$ gives</p>
 <p>$$
-g_k=\sum_{l\le k}r_{lk}q_l,\qquad r_{kk}>0,
+g_k=\sum_{l\le k}r_{lk}q_l,\qquad r_{kk}&gt;0,
 $$</p>
 <p>with $q_1,\dots,q_5$ orthonormal; the matrix $Q=(q_1,\dots,q_5)$ is $*$-unitary and $R=(r_{lk})$ is upper triangular with positive diagonal.</p>
 <p><strong>Proof.</strong> The Gram–Schmidt process orthogonalizes the columns; the coefficients $r_{lk}$ are the projections; the diagonal entries are the norms of the orthogonalized columns, positive.</p>
@@ -248,7 +248,7 @@ $$</p>
 <tr>
 <td>Polar</td>
 <td>$A=UP$</td>
-<td>$U\in U(5)$, $P>0$</td>
+<td>$U\in U(5)$, $P&gt;0$</td>
 </tr>
 <tr>
 <td>Exponential coordinates</td>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nonlocal Theories and Related Topics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Nonlocal Theories and Related Topics.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nonlocal-theories-and-related-topics"><strong>Nonlocal Theories and Related Topics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics Supplement</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics Supplement</em> No. 105 (1991) 270; expanded from a talk at the Tsukuba Workshop on Elementary Particle Theory in Japan, 1930–60, November 1984</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Nonlocal Theories and Related Topics-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Nonlocal Theories and Related Topics.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/a-brief-history-of-biquaternions-in-physics.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Nonlocal Theories and Related Topics.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A history of nonlocal field theory in the Yukawa school, written by a participant, from Yukawa's 1950 paper to about 1960. It traces three pre-war Japanese directions, the <em>maru</em> idea, Tomonaga's rival super-many-time reformulation, the postwar calculus of bilocal and nonlocal fields, and the parallel rise of the Sakata and Nagoya composite models. It closes with Takabayasi's own route to nonlocality from below — the hydrodynamical formulation, the relativistic rotator — and compares the two men's philosophies: Yukawa's search for a final theory against Sakata's endless strata.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-subject-is-worth-a-history">Why the subject is worth a history</h3>
+<p>"A lot of research has been done in the theory of elementary particles aiming at the solution of the divergence difficulty in the quantum theory of fields together with the explanation of the existence of the various kinds of elementary particles and interactions. The theory of nonlocal fields was an attempt to remove the divergences and to achieve a unified description of elementary particles by generalizing the conventional field concept in such a way that it assigns intrinsic extensions to elementary particles. Since this kind of theory is speculative and is difficult to establish in a consistent theoretical framework, it was not considered an orthodox theory. Nevertheless, the general direction of assuming an internal extension of elementary particles and of exploring the inside and background of them continually gave rise to ideas that influenced the development of the more conventional theory of elementary particles. Also a remarkable feature of this line of research is that it was pushed forward mainly by Yukawa and the Japanese school."</p>
+<h3 id="maru"><em>Maru</em></h3>
+<p>"Yukawa considered that we could not talk about the field at each geometrical point of space-time and therefore we should construct the (future) theory based on the notion of maru (meaning circle), which is a closed hypersurface in four-dimensional Minkowski space-time. I think that Yukawa was unwittingly influenced by the Japanese philosopher Kitaro Nishida, who drew circles as a zen philosophical image. In any event, while maru is helpful in making the quantum field theory manifestly relativistic invariant, it brings about at the same time a chaotic situation where cause and effect are inseparable. Yukawa welcomed this irrationality as a clue to the solution of the divergence difficulties, in suggesting the concept of a priori probability on maru."</p>
+<p>"Now Tomonaga criticized Yukawa's mysterious notion of maru, pressed it into a *&gt; In 1948, Richard Feynman took another hint from the same article of Dirac and constructed the path integral formalism. At a later time, during a seminar, Yukawa wrote the names of Dirac and Feynman on the blackboard, then crossed out the Feynman's name. By this action he wanted to suggest a deeper meaning from Dirac's article than Feynman did. 272 T. Takabayasi lens shape, and thus got rid of Yukawa's nonseparability of cause and effect. Indeed he employed it to generalize the many-time theory of Dirac et al., and in this way"</p>
+<h3 id="the-fundamental-length">The fundamental length</h3>
+<p>"Generally speaking, physics has three different dimensional units, and this fact suggests that Nature should have three universal constants of its own to regulate herself. Evidently the speed of light c, and Planck's constant h, represent two of them. One may adopt as the remaining universal constant the fundamental length. Heisenberg considers that this length l represents" minimum length ", i.e., the limit of applicability of QED and other relativistic quantum theories, and should play a similar role for the future theory as c played for the relativistic revolution and h played for the quantum-mechanical revolution. If one achieved"</p>
+<h3 id="why-points-are-almost-forced-and-why-they-fail">Why points are almost forced, and why they fail</h3>
+<p>"The treatment of elementary particles as geometric points, interacting by means of local fields is not just a convenient idealization, but is almost inevitable for satisfying the principles of relativity and quantum mechanics simultaneously. While it is true that elementary *&gt; In fact this paper was already transported to Japan during the wartime. **&gt; In the USA, Hans Bethe, Robert Oppenheimer, Abraham Pais and others worked on the divergence problem at this time."</p>
+<p>"Anyway the cutoff processes usually violated the relativistic invariance of the theory, unlike the subtraction method and also implied some kind of nonlocality. Thus it seemed more reasonable to introduce some sort of nonlocality from the outset relativistically in a consistent manner."</p>
+<h3 id="yukawas-generalized-field">Yukawa's generalized field</h3>
+<p>"obtained a clue from Markov's idea 14 &gt; that it is impossible to measure the position of a space-time point and simultaneously to measure a field quantity just at that point. That leads to the result that a field U is no longer a function of the space-time coordinate x, but is rather a matrix &lt;x'l Uix"&gt;. In other words, U should be regarded as a function of two points x' and x ". Yukawa called this a" generalized field ", and he started to seek the basic equations of this field. He noted the relation"</p>
+<p>"Yukawa's view on the renormalization theory was that it was essentially a pragmatic and conservative one, because it only evaded the divergences but did not exterminate them. He was also not satisfied with Sakata's substantialistic approach, which relied IV. Yukawa and Osaka-Kyoto Group 275 once more" change of models "in keeping to the conventional framework of quantum field theory. Yukawa pointed out that the method of mixed field theory could not give any criterion between those difficulties which could be solved by this method and the remaining difficulties, that should require the innovation of the field theory itself."</p>
+<h3 id="the-impasse-and-the-composite-turn">The impasse and the composite turn</h3>
+<p>"Field theoretical researches on the theory of nonlocal fields had arrived at an impasse. After his talk at the International Conference in 1953, Yukawa did not further develop his theory until the early 1960's, when he took it up again." Meanwhile "Sakata tried to set up a realistic composite model after the establishment of the Gell-Mann-Nishijima scheme for the strange particles, in extending the Fermi-Yang model and assuming the set (p, n, A) as basic particles. That"</p>
+<p>"One of the outstanding experimental results of that time was Hofstadter's measurement of the electromagnetic form factors of the nucleons, which was done by elastic electron scattering. To explain these form factors by field theory or by dispersion theoretical analysis, vector meson resonances were introduced. The analysis was not completely satisfactory; it seemed to suggest a more direct nonlocal structure of the nucleon. Since Sakata's model assumed that the nucleons remain elementary, the above form factor seemed to favor a nonlocal model of Yukawa type."</p>
+<p>"What I would like to remark here is that in composite models we require two kinds of strong interaction. One is a strong interaction of Yukawa type between hadrons and the other is the 'constructive force' needed to build the hadrons from the basic constituents, and thus the intrinsic relationship between both need be explored."</p>
+<h3 id="the-other-direction-nonlocality-from-a-classical-model">The other direction: nonlocality from a classical model</h3>
+<p>"As we have already seen, the Yukawa theory of nonlocal fields started with an abstract principle like Markov's nonlocality or Born's reciprocity and then moved toward more concrete field-theoretical models. There was also a path that proceeded in a reverse direction: Starting with a classical relativistic model, one proceeds to a model containing nonlocality."</p>
+<p>"I was involved for many years with a hydrodynamical formulation 42 &gt; of the Schrodinger and Dirac equations. Through discussions with Bohm and Vigier, 43 &gt; I tried to construct the theory of a relativistic rotator in connection with the above formalism. 44 &gt; That is viewed also as a modified extension of the theory of classical spins put forward by Frenkel and others in earlier days by means of the introduction of internal configurational variables, in such a way that it associates the symmetries to be identified as isospin."</p>
+<p>"This model starts at a one-particle level but has the following advantages: (a) States both with integral and half-integral spins are included, corresponding to topologically inequivalent representations. (b) Space-like solutions are absent from the outset. (c) The 'isospin space' is fitted into the physical space, unlike the case of Pais, whose $w$-space was introduced independently of the ordinary space. (d) The variables describing the internal configuration can be interpreted as gauge variables when the theory is considered at the level of field theory, and the isospin symmetry will become a local one."</p>
+<p>"On the other hand one of the difficulties is that the magnitudes of spin and isospin are correlated as ] - I =integer, though"</p>
+<h3 id="two-philosophies">Two philosophies</h3>
+<p>"Sakata now declared that" Elementary particles are not point-like."49&gt; That was also Yukawa's wording, so that in this respect the two were in agreement. But as for the prospects for future theory their views were opposite. Sakata's idea was con- nected with a statement of Lenin, whom he had long admired" Even the electron is inexhaustible."He insisted that there should be an infinity of strata of elementary particles. On the other hand, Yukawa's outlook is related to the Heisenberg's philosophy of the universal length, with the anticipation that his attempt, once it succeeded, would be the ultimate theory of elementary particles."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The nonlocal field is a matrix in position, not a function with a form factor</li>
+</ol>
+<p><strong>The idea.</strong> Two distinct ways to smear a point: modify the <em>interaction</em> with a form factor (Wataghin), or replace the field itself by a two-point object $\langle x'|U|x''\rangle$ (Yukawa). The second changes what a field <em>is</em>; the first only changes how it couples. The review keeps the distinction and says the second leads to internal motion, the first does not.</p>
+<p><strong>What it would add.</strong> A clean dichotomy for a corpus that uses "nonlocal" loosely. <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder is nonlocal in the field's argument, which is Yukawa's kind; the form-factor kind never appears in the folder at all, and its absence is worth noting because it is the version that survived into modern effective field theory. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder, as the dichotomy. </p>
+<p><strong>What stands in the way.</strong> The review reports the distinction historically and does not compare the two schemes' calculational power. </p>
+<ol>
+<li>One must decide which difficulties a change of model can fix</li>
+</ol>
+<p><strong>The idea.</strong> Yukawa's objection to Sakata's mixed-field method: it gives no criterion separating the difficulties a model change can remove from those requiring a change of law. That is a methodological demand — a theory of which problems are model problems. </p>
+<p><strong>What it would add.</strong> A criterion the corpus never states. Most of the folder's papers change the model and check the result; Yukawa's complaint is that this procedure cannot tell you in advance whether you are attacking the right layer, and the review reports it as a serious objection rather than a preference. </p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em> of <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>), as the methodological demand. </p>
+<p><strong>What stands in the way.</strong> Yukawa's own programme also failed to provide the criterion, so the objection is not accompanied by a working alternative. </p>
+<h3 id="3-composite-models-need-two-strong-interactions-and-this-is-usually-hidden">3. Composite models need two strong interactions, and this is usually hidden</h3>
+<p><strong>The idea.</strong> A composite hadron requires both the Yukawa-type force between hadrons and a separate "constructive force" binding the constituents. <strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the two-force gap.</p>
+<h3 id="4-nonlocality-built-upward-from-a-classical-model-not-downward-from-a-principle">4. Nonlocality built upward from a classical model, not downward from a principle</h3>
+<p><strong>The idea.</strong> Yukawa started from Markov's measurability argument and worked towards models. <strong>Where it lands.</strong> The conversion of <em>Group of Relativistic Internal Motion</em> in this folder, §<em>The Norm and the Invariant</em>, as the bottom-up route.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

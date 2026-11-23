@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Relativistic String and Super-Wave Equation. I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. I.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="theory-of-relativistic-string-and-super-wave-equation-i"><strong>Theory of Relativistic String and Super-Wave Equation. I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>51</strong> (1974) 262, No. 1; received 19 June 1973, revised 29 October 1973</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. I-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. I.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. I.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reconstructs the classical theory of the relativistic string from a standpoint the author calls the "realistic" one. The decisive distinction: on a given world strip, the <em>geometric</em> viewpoint admits all reparametrisations of $(\sigma,\tau)$, while the <em>realistic</em> viewpoint treats $\sigma$ as labelling material elements — parton number — and admits only transformations that keep it, so that longitudinal motion along the string remains meaningful. That restriction selects a more general model than the standard one. From the restricted-invariance action come the equations, covariant and non-covariant gauges, solutions, and an infinite set of conservation laws from conformal and internal-scale invariance. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-viewpoints">The two viewpoints</h3>
+<p>"Up to this point the statem ents are very gener al, 'Qut to proce ed furthe r we need to distin guish betwe en" geom etric viewp oint,. and the "reali stic view- point" . In the ·form er viewp oint, only the world strip togeth er with its two bound ary world lines (repre sentin g the motio ns of the ends) has physic al sense ~uch that one world strip is regard ed as repres enting one and the same motio n .of the string , where as in -the latter viewp oint one and the same world strip cor- respo nds to many differ ent motio ns of the ·string due to the situat ion that the same strip can be differ ently woven by world lines. The relativ istic the~ry in the geom etric viewp oint yields a uniqu e string mode l where longit udina l motio n along the string has no physi cal sens~. (See II.) This model is favou red re- cently , but obvio usly it is not true to say that this uniqu e ·model should be the only string model allow ed by relativ ity. In this paper we take the "reali stic viewp oint", which turns out to allow a more gener al relati vistic model. In the "</p>
+<h3 id="math10-is-particle-number">$\sigma$ is particle number</h3>
+<p>"el. In the realis tic viewp oint (f in (2 ·1) denot es the param eter to label each eleme ntary consti tuent of the string , and hence it must <em>always be a Loren tz scalar . The str~p is interp reted as a bunch of world lines, respec tively corres pondi ng to (f = const. (This interp retati on assum es the distin guish ability amon g consti tuents at least in classi cal theor y.) To preser ve</em>"</p>
+<p>"Even more specif ically we . may consid er the string as the N~oo limit oLthe linear multil ocal mode l which consis ts of N space- time points x,.<a>(a=l;, ···,N ) subjec t" relat ivisti c Hook e p~tential "betwe~n neigh bours . 3&gt;' 16&gt; Then (f is the relabe lling of a by (f= ((f 1 -(f0)a/N , and we can interp ret that d(fj(( f 1 -(f0) is the relati ve partic le numb er (or say" part on num- ber'') conta ined in d(f .. In .so far as ~e keep this physic al mean ing of (f, (f is essen tially fixed and we are not allow ed to make au arbitr ary transf ormat ion on (f. There fore we agree to take (f as dimen sionle ss and O&lt;d'&lt;n. On the other hand r is an arbitr ary param eter to .speci fy a· point along each world line. Thus any observable quant ities and physi cal relati ons must be invar iant under the "part ial gener al trans forma tion" r~r'((J, r). ((f'=( f) (2•5) Theory of Relativistic String and Super-Wave Equation. I 265 Note that r need not be a Lorentz scalar and that (2 · 5) contains a transforma- tioh which alters the dimension of r. It is important to note that the arbitrary parameter ."</p>
+<h3 id="math11-must-be-removable">$\tau$ must be removable</h3>
+<p>"It is important to note that the arbitrary parameter $\tau$ is also a redundant parameter so that it must be possible to eliminate $\tau$ without leading to any ambiguity in the physical interpretation. To see this we rewrite (2·1) ... and put $x_0=x_0(\sigma,\tau)=t$." Then the ordinary non-covariant representation follows, and "he ordinary velocity V, of a certain element of the string is given as V,(O", t) = ax,(O ", t) = (ax,(O", "£l)j·(ax0 (0", r) ). (2•7) at ar ar . Then the causality requires that I VI&lt; 1: (ax(O ", at t)) -&lt;1, i.". Causality requires $|V|&lt;1$. </p>
+<h3 id="the-equation-and-its-extra-conservation-laws">The equation and its extra conservation laws</h3>
+<p>"ly (2 · 32) is invariant under" partial general transformation "(2 · 5) and contains three independent equations. This corresponds to the fact that each eleme1it of the string has three degrees of freedom. Equation of motion (2 · 32) is highly nonlinear but we can derive therefrom. new physical conservation laws, aside from the conservation laws due to Poincare invariance."</p>
+<h3 id="conformal-constants-of-motion">Conformal constants of motion</h3>
+<p>"The conservation laws of 4-momentum and angular momentum tensor hold of course. They are (2·26) and (2·28), ~here p" and S# ~re now (3·6). There exist also an infinite number of conserved vectors*&gt; C/ = ( v2rr)- 1eir•g (~os r6 ·Bx "/ 8r+i sinr6·8x"/86)d6 (r=integer), each of which denotes the weighted am- plitude of each normal mode. except for C/=P "/(V'2mc). 6&gt; The invariance of A 1 under"</p>
+<p>"The invariance of A 1 under the conformal group gives an infinite numher · of constants of motion _(r=integer)" $A_r$, with $F=(G_{00}+G_{11})/2$. "Since the conformal transformation concerns the internal parameters it commutes· with the Poincare group acting on x". Therefore P "and M". are conformal invariant, while X "is not. The constant"</p>
+<p>"he constant of i:notion related to the invariance under internal scale trans- formation is (3·13) This is reexpressed as B =i Er' [ ( -1)' /r] A•." $B$, reexpressed as $B=i\sum_r(-1)^{r}/r\,A_r$.</p>
+<h3 id="the-non-covariant-gauge">The non-covariant gauge</h3>
+<p>The theory of realistic string model can also be represented in a Lorentz non-covariant formalism. This is obtained by either of the following methods: (i) Since the original theory is covariant under arbitrary transformation (2·5), we can choose $\tau'(\sigma,\tau)$ such that it equals $x_0(\sigma,\tau)$ in the Lorentz frame under consideration. "Thus in the present gauge $G_{\alpha\beta}$ becomes $\delta_{\alpha\beta}$ ... By (4·2) and (4·3) we see at once that the equation of motion (2·32) for the case $\omega\neq0$ goes over in the present gauge to the third-order equation" of third order in time. "he fundamental equations (2 · 21) and (2 · 22) 111 the Lorentz noncovariant gauge for the geometric theory"</p>
+<p>Though it is difficult to obtain general solutions for the fundamental equations in this gauge, solutions with purely transversal internal movement are obtained directly in this gauge (see II).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-which-reparametrisations-are-allowed-is-a-physical-question">1. Which reparametrisations are allowed is a physical question</h3>
+<p><strong>The idea.</strong> $\sigma$ labels matter and therefore cannot be redefined; $\tau$ labels nothing and can be chosen freely or removed. The symmetry group of the theory is a <em>subgroup</em> of the worldsheet diffeomorphisms, and the choice of subgroup is a physical decision — whether longitudinal motion means anything.</p>
+<p><strong>What it would add.</strong> The sharpest available statement that reparametrisation invariance is not automatic but optional, with a criterion. <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>) uses worldsheet covariance without discussing its justification; here the justification is examined and narrowed, and the narrowing changes the model.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em>, as the restricted-invariance case.</p>
+<p><strong>What stands in the way.</strong> The "realistic" restriction is argued from parton number, which is a classical notion; quantum mechanically constituents of a string are not individually identifiable, so the premise weakens. </p>
+<h3 id="2-partial-general-transformation-a-symmetry-group-that-is-not-a-diffeomorphism-group">2. "Partial general transformation" — a symmetry group that is not a diffeomorphism group</h3>
+<p><strong>The idea.</strong> Only $\tau\to\tau'(\sigma,\tau)$ with $\sigma$ fixed is permitted. This is a large group (it even allows $\tau$ to change dimension) but not the full two-dimensional one, and it is exactly large enough to remove $\tau$ and no larger.</p>
+<p><strong>What it would add.</strong> An intermediate symmetry group with a stated purpose. The corpus knows full covariance and fixed gauge; here is a group chosen to be precisely the redundancy that must be quotiented out, and the paper shows that its size is fixed by the requirement that $\tau$ be eliminable. That is a criterion the corpus lacks.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em>, as the minimal redundancy.</p>
+<p><strong>What stands in the way.</strong> No argument that a still smaller group would fail; the eliminability of $\tau$ is demonstrated, not shown to be maximal.</p>
+<h3 id="3-an-infinite-tower-of-conserved-quantities-from-conformal-invariance-commuting-with-poincare">3. An infinite tower of conserved quantities from conformal invariance, commuting with Poincaré</h3>
+<p><strong>The idea.</strong> Conformal transformations of the <em>internal</em> parameters give infinitely many constants of motion $A_r$, and because they act on $\sigma,\tau$ rather than on $x$, they commute with the Poincaré generators. $P^{\mu}$ and $M^{\mu\nu}$ are conformal invariant; the centre of mass $X^{\mu}$ is not.</p>
+<p><strong>What it would add.</strong> A concrete infinite symmetry algebra of the string with a clean separation from spacetime symmetries. The folder's conservation-law discussions are about $P$ and $M$; here the interesting algebra is the one that acts on the parameter space, and the statement that the centre of mass is the quantity that fails to be invariant is a precise and unusual claim.</p>
+<p><strong>Where it lands.</strong> §<em>The Gauge Symmetry and the Constraints</em> of <em>The Lagrangian and the Non-Abelian Gauge Fields</em> (<code>articles_physics/the-lagrangian-and-the-non-abelian-gauge-fields.md</code>), as the parameter-space symmetry.</p>
+<p><strong>What stands in the way.</strong> The $A_r$ are not given a physical interpretation; they are constants of motion whose meaning is left as weighted amplitudes of normal modes for the simpler $C_r^{\mu}$.</p>
+<h3 id="4-the-non-covariant-gauge-gives-a-third-order-equation-and-no-constraints">4. The non-covariant gauge gives a third-order equation and no constraints</h3>
+<p><strong>The idea.</strong> Fixing $\tau'=x_0$ removes the constraint entirely, at the price of an equation third order in time and explicit Lorentz non-covariance. Constraints and higher derivatives trade against each other.</p>
+<p><strong>What it would add.</strong> A precise trade-off statement. <em>Relativistic Bound State under the Hooke-Type Action-at-a-Distance</em> in this folder uses the same gauge-fixing device (time as parameter) and gets second-order equations; here the price is one extra derivative, and the difference is instructive about what the string's extra structure costs.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Relativistic Bound State under the Hooke-Type Action-at-a-Distance</em> in this folder, as the third-order case.</p>
+<p><strong>What stands in the way.</strong> Third-order equations need extra initial data, and the paper does not address whether the physical solutions are a subset — which is where Ostrogradsky-type problems would appear.</p>
+<p>The remainder, one line each. That the string is presented as the $N\to\infty$ limit of the neighbour-coupled multilocal chain ties this paper to the rest of the folder. That the conformal constants $A_r$ are expressed as a discrete sum over $r$ with coefficients $(-1)^{r}/r$ is the closest the folder comes to writing the Virasoro conditions as a conservation law.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

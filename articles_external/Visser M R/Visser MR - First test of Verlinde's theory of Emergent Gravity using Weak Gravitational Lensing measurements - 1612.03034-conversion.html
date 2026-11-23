@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First test of Verlinde&#x27;s theory of Emergent Gravity using Weak Gravitational Lensing measurements — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - First test of Verlinde&#x27;s theory of Emergent Gravity using Weak Gravitational…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="first-test-of-verlindes-theory-of-emergent-gravity-using-weak-gravitational-lensing-measurements"><strong>First test of Verlinde's theory of Emergent Gravity using Weak Gravitational Lensing measurements</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1612.03034v2 [astro-ph.CO]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Margot M. Brouwer, Manus R. Visser, Andrej Dvornik, Henk Hoekstra, Konrad Kuijken, Edwin A. Valentijn, Maciej Bilicki, Chris Blake, Sarah Brough, Hugo Buddelmeijer, Thomas Erben, Catherine Heymans, Hendrik Hildebrandt, Benne W. Holwerda, Andrew M. Hopkins, Dominik Klaes, Jochen Liske, Jon Loveday, John McFarland, Reiko Nakajima, Cristóbal Sifón, Edward N. Taylor</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 December 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>MNRAS 466 (2017) 2547–2559</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - First test of Verlinde's theory of Emergent Gravity using Weak Gravitational Lensing measurements - 1612.03034-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - First test of Verlinde's theory of Emergent Gravity using Weak Gravitational Lensing measurements - 1612.03034.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - First test of Verlinde's theory of Emergent Gravity using Weak Gravitational Lensing measurements - 1612.03034.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Measures the excess surface density around isolated central galaxies in the overlap of the KiDS lensing survey and the GAMA spectroscopic survey, $\sim180\ \deg^2$, and compares it with the apparent dark matter profile predicted by Verlinde's emergent gravity. The prediction contains no free parameter, only the measured baryonic mass and the Hubble constant, and is valid for static, spherically symmetric, isolated masses. The measured profiles agree with the prediction in slope and amplitude across four stellar-mass bins, with a fit quality comparable to an NFW halo with one free mass per bin.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-sample-and-the-regime-of-validity">The sample and the regime of validity</h3>
+<p>From the KiDS–GAMA overlap the authors select $33{,}613$ central galaxies that dominate their surrounding mass distribution and have no other central within the maximum measurement radius, $R_{\max}=3\,h_{70}^{-1}$ Mpc, with a minimum radius $R_{\min}=30\,h_{70}^{-1}$ kpc. The prediction is "currently only valid for static, spherically symmetric and isolated mass distributions", so this selection is what makes the test legitimate.</p>
+<h3 id="the-predicted-apparent-dark-matter">The predicted apparent dark matter</h3>
+<p>For a point mass with enclosed baryonic mass $M_b$, the apparent dark matter profile is</p>
+<p>$$M_D(r)=\sqrt{\frac{cH_0}{6G}}\;r\sqrt{M_b}\equiv C_D\,r\sqrt{M_b}, \qquad (paper\ 19)$$</p>
+<p>$$\rho_D(r)=\frac{1}{4\pi r^2}\frac{dM_D(r)}{dr}=\frac{C_DM_b}{4\pi r^2}, \qquad (paper\ 20)$$</p>
+<p>with $C_D$ fixed by $c$, $G$ and $H_0$; the surface density follows by line-of-sight integration, $\Sigma_D(R)=\int \rho_D(R,z)\,dz$ (paper 21). No parameter is fitted: the amplitude and the slope are both fixed once $M_b$ and $H_0$ are given. The authors assume $H_0=70\ \mathrm{km\,s^{-1}Mpc^{-1}}$, a constant $H(z)$ over $0.2&lt;z_s&lt;0.9$, and that lensing by the extra component follows the standard formalism.</p>
+<h3 id="the-result">The result</h3>
+<p>The measured excess surface density agrees with the prediction "in four different stellar mass bins", and the agreement is stated as remarkable because the prediction has no free parameters. The reduced $\chi^2$ of the point-mass EG prediction is $\chi^2_{\text{red,EG}}=1.121$ against $\chi^2_{\text{red,NFW}}=0.933$ for an NFW fit with four free parameters in total; by the Bayesian information criterion the EG prediction does at least as well, $\mathrm{BIC_{EG}}=44.82$ against $\mathrm{BIC_{NFW}}=48.33$.</p>
+<h3 id="what-is-and-is-not-concluded">What is and is not concluded</h3>
+<p>The authors state that a fair comparison with $\Lambda$CDM would need a more sophisticated implementation of both models and a full Bayesian analysis, and that future data should be able to separate them. They also note the coincidence that in the point-mass regime the EG lensing profile equals that of MOND for the specific value $a_0=cH_0/6$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-prediction-with-no-free-parameter-from-a-horizon-scale">1. A prediction with no free parameter from a horizon scale</h3>
+<p><strong>The idea.</strong> The excess gravity around a baryon mass is written as $\sqrt{cH_0/6G}\,r\sqrt{M_b}$: the size of the effect is set by the cosmic horizon, not by a new mass scale or a fitted coupling. This is a <strong>number</strong> with a status — a parameter-free prediction, tested against lensing.</p>
+<p><strong>What it would add.</strong> The corpus's cosmology article carries an FLRW metric with an imported source and no mechanism tying a local effect to the horizon scale; the corpus has no relation in which $H_0$ sets the amplitude of a gravitational anomaly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, where the missing source is exactly what this kind of relation would supply.</p>
+<p><strong>What stands in the way.</strong> The derivation of (paper 19) assumes a de Sitter static patch, a spherical isolated mass and a displacement of dark energy by baryons — three assumptions the corpus does not make, and one of them (the displacement of a vacuum energy by matter) has no biquaternion statement. The index of refraction for light is also assumed unchanged, which the corpus would have to derive rather than assume.</p>
+<h3 id="2-the-measured-agreement-as-an-empirical-anchor">2. The measured agreement as an empirical anchor</h3>
+<p><strong>The idea.</strong> Four stellar-mass bins, $33{,}613$ galaxies, one parameter-free curve, and a BIC that matches an NFW halo. This is a <strong>reading</strong>: evidence that ties a horizon-scale relation to galactic lensing.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> lists what would count as a test and has no galactic-scale entry; this paper supplies one, with its numbers and its caveats.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no galaxy, no lensing formalism and no dark sector, so the entry would be a reference and not a derivation. Ranked second: it constrains nothing in the algebra, but it fixes the scale at which any emergent reading must operate.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black holes embedded in FLRW cosmologies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes embedded in FLRW cosmologies - 2308.07374.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="black-holes-embedded-in-flrw-cosmologies"><strong>Black holes embedded in FLRW cosmologies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2308.07374v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Rudeep Gaur, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 August 2023 (dated 15 August 2023)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Black holes embedded in FLRW cosmologies - 2308.07374-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes embedded in FLRW cosmologies - 2308.07374.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes embedded in FLRW cosmologies - 2308.07374.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper is a cautionary note about a claim that black-hole masses grow with cosmic expansion without accretion or mergers. It collects three exact solutions in which a black hole is embedded in a Friedmann–Lemaître–Robertson–Walker background — Kottler, McVittie, and Kerr–de Sitter — and checks what each says about the relation between the black-hole mass and the expansion. None shows the claimed coupling. The authors then add a scale argument: black-hole physics at milli-parsec scales and cosmology at giga-parsec scales are separated by so many orders of magnitude that a direct coupling is implausible. They also examine the asymptotic behaviour of Kerr–de Sitter at small and large radius and the possibility of a Kerr–FLRW metric.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-being-examined">The claim being examined</h3>
+<p>"There has recently been some considerable interest expressed in a highly speculative model of black hole evolution — allegedly by a postulated direct coupling between black holes and cosmological expansion independently of accretion or mergers. We wish to make several cautionary comments in this regard." The introduction quotes the claims under scrutiny, including: "Black hole models with realistic behavior at infinity predict that the gravitating mass of a black hole can increase with the expansion of the universe independently of accretion or mergers."</p>
+<h3 id="the-three-exact-solutions">The three exact solutions</h3>
+<p>"at least three exact solutions corresponding to black holes embedded in a FLRW background are known, (Kottler, McVittie, Kerr-de Sitter), and they show no hint of this claimed effect — thereby implying that this claimed effect (if it exists at all) is certainly nowhere near ubiquitous." The paper treats Schwarzschild–de Sitter (Kottler) in section 3.1, Schwarzschild–FLRW (McVittie) in section 3.2, and Kerr–de Sitter in section 3.3.</p>
+<h3 id="the-scale-argument">The scale argument</h3>
+<p>"the enormous separation of scales between milli-parsec black hole physics and giga-parsec cosmological physics renders any such 'direct coupling' (independently of accretion or mergers) grossly implausible."</p>
+<h3 id="consistency-checks">Consistency checks</h3>
+<p>The paper does not only quote the three metrics. It checks that Kerr–de Sitter reduces correctly to Kerr when the cosmological constant vanishes and to Kottler when the spin vanishes, and it examines its small-$r$ and large-$r$ expansions. The point of these checks is that the exact solutions are being used correctly, so the absence of the effect is not an artefact of a mistreated metric.</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"What have we learnt from this discussion? Starting from three relatively well-known exact solutions to the Einstein equations (Kottler, McVittie, Kerr-de Sitter) all of which successfully embed black holes in suitable FLRW background, we have seen that these exact solutions exhibit no evidence of any 'direct coupliing' between the black hole mass and the cosmological expansion. Furthermore, several purely phenomenological investigations have similarly failed to find evidence for any 'direct coupliing' between the black hole mass and the cosmological expansion." And: "We, therefore, urge extreme caution and care when mooting such ideas."</p>
+<h3 id="the-limits">The limits</h3>
+<p>The argument is about three exact solutions and about orders of magnitude; it does not prove that no such coupling can exist in any model. The paper also records the absence of a known Kerr–FLRW solution, treating that as an open question rather than a result.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-candidate-source-is-ruled-out">1. One candidate source is ruled out</h3>
+<p><strong>The idea.</strong> If a cosmological model needs a source that tracks black-hole mass, the standard exact embeddings say it is not there.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> records that the framework cannot form the rank-two source the Friedmann equations need, and it classifies that as an obstacle without a route. This paper does not supply the source, but it removes one candidate: the effect cannot be imported from black-hole physics through the known embeddings. That narrows the space of routes the cosmology article is entitled to consider, which is a real change to its obstacle list.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> Nothing. The import is a negative constraint, and the article already has a place for it. Ranked first, because it is the only import here that removes a possibility rather than adding commentary.</p>
+<h3 id="2-embedding-is-a-global-construction">2. Embedding is a global construction</h3>
+<p><strong>The idea.</strong> Putting a black hole into an expanding universe is done by writing an exact solution, not by gluing a local patch onto a background.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> records that the framework reaches local horizon conditions and not the causal boundary. "Embedded in FLRW" is a still stronger global requirement: the metric must be a single exact solution on the whole manifold. The article can use the three solutions as examples of statements that no local construction delivers.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on the causal boundary.</p>
+<p><strong>What stands in the way.</strong> The article is about horizons, not embeddings, so the example needs a short bridge. Ranked second.</p>
+<h3 id="3-scale-separation-is-not-a-test">3. Scale separation is not a test</h3>
+<p><strong>The idea.</strong> The implausibility argument is quantitative but not experimental. It compares two length scales and concludes that a coupling would be unnatural.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> distinguishes a test from a consistency argument and insists that a candidate without a fixed scale is not a prediction. This paper's argument runs in the other direction: a fixed scale separation is used to dismiss a claim. The article should name this use of naturalness explicitly, because it is the same kind of reasoning that could be turned on framework claims.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of what counts as a test.</p>
+<p><strong>What stands in the way.</strong> It adds a methodological category rather than a result. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

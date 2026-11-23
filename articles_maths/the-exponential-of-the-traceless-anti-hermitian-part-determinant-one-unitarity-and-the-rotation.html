@@ -84,7 +84,7 @@
 <h3 id="the-conjugate-transpose-and-unitarity">The Conjugate Transpose and Unitarity</h3>
 <p><strong>Proposition.</strong> If $X^{*}=-X$ then $e^{X}$ is unitary.</p>
 <p><strong>Proof.</strong> Conjugation commutes with the exponential, since it is an anti-automorphism of order two and the series has real coefficients: $(e^{X})^{*}=e^{X^{*}}$. With $X^{*}=-X$ this reads $(e^{X})^{*}=e^{-X}$. The matrices $X$ and $-X$ commute, so $e^{X}e^{-X}=e^{0}=I$, and the two displays give $(e^{X})^{*}=(e^{X})^{-1}$.</p>
-<p><strong>Remark (the condition on the generator is sufficient and not necessary).</strong> The exponential is not injective, so a unitary exponential need not have an anti-Hermitian generator. The idempotent $P=\begin{pmatrix}1&1\\0&0\end{pmatrix}$ has eigenvalues $1$ and $0$, so $X=2\pi iP$ satisfies $e^{X}=I+(e^{2\pi i}-1)P=I$, while $X^{*}$ and $-X$ differ in the upper right corner. The defect is the period lattice and nothing else.</p>
+<p><strong>Remark (the condition on the generator is sufficient and not necessary).</strong> The exponential is not injective, so a unitary exponential need not have an anti-Hermitian generator. The idempotent $P=\begin{pmatrix}1&amp;1\\0&amp;0\end{pmatrix}$ has eigenvalues $1$ and $0$, so $X=2\pi iP$ satisfies $e^{X}=I+(e^{2\pi i}-1)P=I$, while $X^{*}$ and $-X$ differ in the upper right corner. The defect is the period lattice and nothing else.</p>
 <p><strong>Corollary (nothing is lost by the choice).</strong> The anti-Hermitian part maps onto the unitary group.</p>
 <p><strong>Proof.</strong> A unitary matrix is normal, so $U=V\operatorname{diag}(e^{i\theta_1},e^{i\theta_2})V^{*}$ with $V$ unitary and the arguments taken in $(-\pi,\pi]$. The matrix $L=V\operatorname{diag}(i\theta_1,i\theta_2)V^{*}$ is anti-Hermitian and $e^{L}=U$.</p>
 <h3 id="the-intersection-of-the-two-conditions">The Intersection of the Two Conditions</h3>
@@ -136,7 +136,7 @@ $$</p>
 <h3 id="the-square-of-a-generator">The Square of a Generator</h3>
 <p><strong>Lemma.</strong> A traceless matrix of order two satisfies $A^{2}=-\det(A)I$.</p>
 <p><strong>Proof.</strong> Cayley–Hamilton at order two reads $A^{2}-(\operatorname{tr}A)A+\det(A)I=0$, and the middle term vanishes. This is the traceless square $N^{2}=-\det(N)I$ of <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>.</p>
-<p><strong>Corollary.</strong> For $A\in\mathfrak{su}(2)$ nonzero one has $A^{2}=-r^{2}I$ with $r^{2}=\det A>0$.</p>
+<p><strong>Corollary.</strong> For $A\in\mathfrak{su}(2)$ nonzero one has $A^{2}=-r^{2}I$ with $r^{2}=\det A&gt;0$.</p>
 <p><strong>Proof.</strong> The eigenvalues of $A$ are purely imaginary, $i\rho$ and $-i\rho$ with $\rho$ real and nonzero, by the spectral theorem for the anti-Hermitian case, so the determinant is $\rho^{2}$. The determinant is also $-\tfrac12\operatorname{tr}(A^{2})$, so its positivity is the negative definiteness of the trace form on $\mathfrak{su}(2)$.</p>
 <h3 id="the-closed-form">The Closed Form</h3>
 <p><strong>Theorem.</strong> Let $A\in\mathfrak{su}(2)$ with $r=\sqrt{\det A}$. Then</p>
@@ -156,13 +156,13 @@ $$</p>
 <p><strong>Theorem.</strong> The exponential maps $\mathfrak{su}(2)$ onto $\mathrm{SU}(2)$.</p>
 <p><strong>Proof.</strong> The image is contained in $\mathrm{SU}(2)$ by the two propositions of the first part. For the converse, $U$ is normal, so by the common spectral theorem it is $V\operatorname{diag}(\lambda,\lambda^{-1})V^{*}$ with $V$ unitary and $|\lambda|=1$. Write $\lambda=e^{i\theta}$. Then $U=\cos\theta\,I+\sin\theta\,\hat A$ where $\hat A=iV\sigma_3V^{*}$. The matrix $V\sigma_3V^{*}$ is Hermitian, traceless and of square $I$, so $\hat A$ is anti-Hermitian, traceless and of square $-I$: it lies in $\mathfrak{su}(2)$. The closed form gives $U=e^{\theta\hat A}$.</p>
 <p><strong>Corollary.</strong> The exponential restricted to the open ball of radius $\pi$ in $\mathfrak{su}(2)$ is a bijection onto $\mathrm{SU}(2)\setminus\{-I\}$.</p>
-<p><strong>Proof.</strong> The closed form gives injectivity for $r<\pi$, since the angle $\theta$ is then read in $(-\pi,\pi)$ from $\cos$ and $\sin$; and the value $-I$ is attained exactly at $r=\pi$ on each ray.</p>
+<p><strong>Proof.</strong> The closed form gives injectivity for $r&lt;\pi$, since the angle $\theta$ is then read in $(-\pi,\pi)$ from $\cos$ and $\sin$; and the value $-I$ is attained exactly at $r=\pi$ on each ray.</p>
 <p><strong>Remark (the check).</strong> The computation confirms the three statements in the $2\times2$ case on one hundred random elements of $\mathfrak{su}(2)$: the generator is anti-Hermitian and traceless, its square is $-r^{2}I$, and its exponential is unitary of determinant one with the closed form, to $10^{-12}$.</p>
 <h3 id="the-pauli-coordinates-of-a-generator">The Pauli Coordinates of a Generator</h3>
 <p><strong>Definition.</strong> With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices and $a_1,a_2,a_3$ real, a generator of the intersection is</p>
 <p>$$
 A=i(a_1\sigma_1+a_2\sigma_2+a_3\sigma_3)
-=\begin{pmatrix}ia_3 & a_2+ia_1\\ -a_2+ia_1 & -ia_3\end{pmatrix}.
+=\begin{pmatrix}ia_3 &amp; a_2+ia_1\\ -a_2+ia_1 &amp; -ia_3\end{pmatrix}.
 $$</p>
 <p>The conjugate transpose is $-A$, the trace is zero, the square is $-r^{2}I$ with $r^{2}=a_1^{2}+a_2^{2}+a_3^{2}$, and the determinant is $r^{2}$.</p>
 <p>The three generators $A_k=i\sigma_k$ obey, with $\varepsilon_{abc}$ the alternating symbol,</p>
@@ -189,7 +189,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>so $[A_a,A_b]=-2\varepsilon_{abc}A_c$ and the structure constants are real numbers. The sign belongs to this normalisation of the generators: with the physicists' $J_k=\tfrac12\sigma_k$ the bracket is $[J_a,J_b]=i\varepsilon_{abc}J_c$, and $A_k=2iJ_k$ multiplies the bracket by $(2i)^{2}=-4$, which restores $-2\varepsilon_{abc}$. The algebra is closed under the bracket, and it is the compact real form of $\mathfrak{sl}_2(\mathbb{C})$.</p>
-<p><strong>Remark (the reading of the corner entries).</strong> The imaginary unit of the upper right corner belongs to the coefficient of $\sigma_1$, since $i\sigma_1=\begin{pmatrix}0&i\\i&0\end{pmatrix}$ carries $i$ in both off-diagonal slots while $i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ is real there. An entry written $u+iv$ with $u,v$ real in the upper right corner is therefore read as $a_2=u$ and $a_1=v$. A display that puts $\theta_x+i\theta_y$ in that corner has the coefficient of $\sigma_2$ equal to $\theta_x$ and the coefficient of $\sigma_1$ equal to $\theta_y$, not the other way round; the same display with the two labels exchanged is unchanged in every other respect.</p>
+<p><strong>Remark (the reading of the corner entries).</strong> The imaginary unit of the upper right corner belongs to the coefficient of $\sigma_1$, since $i\sigma_1=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}$ carries $i$ in both off-diagonal slots while $i\sigma_2=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$ is real there. An entry written $u+iv$ with $u,v$ real in the upper right corner is therefore read as $a_2=u$ and $a_1=v$. A display that puts $\theta_x+i\theta_y$ in that corner has the coefficient of $\sigma_2$ equal to $\theta_x$ and the coefficient of $\sigma_1$ equal to $\theta_y$, not the other way round; the same display with the two labels exchanged is unchanged in every other respect.</p>
 <p><strong>Remark (the angle is the norm).</strong> The radius $r$ of the closed form is the square root of the determinant, which is the Euclidean norm of the coefficient vector $(a_1,a_2,a_3)$. So the exponential of the generator of norm $r$ is the rotor of half-angle $r$, and that rotor acts as the rotation of angle $2r$ about the axis of its coefficients. The three coefficients are the axis of the rotation scaled by half its angle.</p>
 <h3 id="the-biquaternion-reading">The Biquaternion Reading</h3>
 <p><strong>Proposition.</strong> Under the Pauli representation $\mathsf M_2(\tilde Q)=Q_tI-i\sum_k q_k\sigma_k$ one has $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and the traceless anti-Hermitian matrices are exactly the images of the elements with $Q_t=0$ and $\vec q$ real.</p>

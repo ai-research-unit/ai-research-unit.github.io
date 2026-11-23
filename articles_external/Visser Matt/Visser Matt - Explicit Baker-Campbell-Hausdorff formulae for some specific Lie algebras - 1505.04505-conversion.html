@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit Baker–Campbell–Hausdorff formulae for some specific Lie algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff formulae for some specific Lie algebras -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="explicit-bakercampbellhausdorff-formulae-for-some-specific-lie-algebras"><strong>Explicit Baker–Campbell–Hausdorff formulae for some specific Lie algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1505.04505v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alexander Van-Brunt, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 May 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff formulae for some specific Lie algebras - 1505.04505-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff formulae for some specific Lie algebras - 1505.04505.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/algebra-and-element-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit Baker-Campbell-Hausdorff formulae for some specific Lie algebras - 1505.04505.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Earlier work by the authors gave a closed form for the Baker–Campbell–Hausdorff series when the commutator of two elements is a linear combination of them plus a central term. This paper weakens the assumptions in stages. It works with structure constants, then with Lie algebras whose commutator subalgebra is one dimensional, then Abelian, and finally with commutators lying in the centre or in the centralizer of the relevant brackets. In each case the series collapses to $X+Y$ plus a single commutator multiplied by an explicit symmetric function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-earlier-result">The earlier result</h3>
+<p>"In a previous article ... we demonstrated that whenever $[X,Y]=uX+vY+cI$ the Baker–Campbell–Hausdorff formula reduces to the tractable closed-form expression"</p>
+<p>$$Z(X,Y)=\ln(e^Xe^Y)=X+Y+f(u,v)\,[X,Y],$$</p>
+<p>"where $f(u,v)=f(v,u)$ is explicitly given by"</p>
+<p>$$f(u,v)=\frac{(u-v)e^{u+v}-(ue^u-ve^v)}{uv(e^u-e^v)}.$$</p>
+<h3 id="the-scope-of-the-earlier-result">The scope of the earlier result</h3>
+<p>"This is much more general than the results usually presented for either the Heisenberg commutator $[P,Q]=-i\hbar I$, or the creation-destruction commutator $[a,a^\dagger]=I$."</p>
+<h3 id="what-this-paper-does">What this paper does</h3>
+<p>"In the current article we shall further generalize and extend this result, primarily by relaxing the input assumptions. We shall work with the structure constants $f_{ab}{}^{c}$ of the Lie algebra, (defined by $[T_a,T_b]=f_{ab}{}^{c}T_c$), and identify suitable constraints one can place on the structure constants to make the Baker–Campbell–Hausdorff formula tractable."</p>
+<h3 id="the-abelian-case">The Abelian case</h3>
+<p>"More generally, whenever the commutator sub-algebra is Abelian, one has"</p>
+<p>$$\ln(e^Xe^Y)=X+Y+f(L_X,-L_Y)[X,Y].\qquad (paper\ 4.3)$$</p>
+<h3 id="the-explicit-form">The explicit form</h3>
+<p>"More specifically"</p>
+<p>$$\ln(e^Xe^Y)=X+Y+\left[\frac{I-e^{-L_X}}{e^{-L_X}-e^{+L_Y}}-\frac{I}{L_X}+\frac{I}{L_Y}\right][X,Y].\qquad (paper\ 4.4)$$</p>
+<h3 id="the-further-weakening">The further weakening</h3>
+<p>"This result furthermore extends to the weaker input condition $[X,Y]\in Z_{[\mathfrak{g},\mathfrak{g}]}$, that is, $[X,Y]$ being an element of the centre of the commutator algebra. Even more generally, this result extends to $[X,Y]$ being an element of the centralizer of those Lie brackets that appear in the Baker–Campbell–Hausdorff expansion."</p>
+<h3 id="the-self-assessment">The self-assessment</h3>
+<p>"Overall, we find it quite remarkable just how far we have been able to push this result. There are of course many other directions that one might also wish to explore — we have concentrated our efforts on directions in which it seems that relatively concrete and explicit results might be readily extractable."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-closed-form-for-composing-exponentials">1. A closed form for composing exponentials</h3>
+<p><strong>The idea.</strong> Products of exponentials reduce to a single commutator term when the algebra is constrained.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/algebra-and-element-conventions.md</code> fixes the product rules of the algebra. A closed composition law would let the framework compose finite transformations without series, which is a practical gain for every article that composes boosts or rotations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/algebra-and-element-conventions.md</code>, in the section on products.</p>
+<p><strong>What stands in the way.</strong> The condition on the commutator must hold in the algebra used. Ranked first, because it is directly usable in the framework.</p>
+<h3 id="2-constraints-that-make-a-series-finite">2. Constraints that make a series finite</h3>
+<p><strong>The idea.</strong> Tractable cases are characterised by where the commutator lands.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> can use this as a template: instead of listing failures, list the conditions under which the computation closes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The template is from Lie theory. Ranked second.</p>
+<h3 id="3-the-heisenberg-case-as-a-special-case">3. The Heisenberg case as a special case</h3>
+<p><strong>The idea.</strong> The canonical commutator is one instance of a family.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.md</code> uses the canonical commutator. Knowing it sits in a family with a uniform closed form could simplify the ordering questions in that article.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.md</code>, in the discussion of ordering.</p>
+<p><strong>What stands in the way.</strong> The simplification applies only when the commutator closes. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

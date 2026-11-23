@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical Radiation Reaction: Off-Shell Corrections to the Covariant Lorentz Force — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Classical Radiation Reaction Off-Shell Corrections to the Covariant Lorentz Force -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-radiation-reaction-off-shell-corrections-to-the-covariant-lorentz-force"><strong>Classical Radiation Reaction: Off-Shell Corrections to the Covariant Lorentz Force</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0007022v1 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>O. Oron, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, July 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Classical Radiation Reaction Off-Shell Corrections to the Covariant Lorentz Force - 0007022-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Classical Radiation Reaction Off-Shell Corrections to the Covariant Lorentz Force - 0007022.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Classical Radiation Reaction Off-Shell Corrections to the Covariant Lorentz Force - 0007022.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reproduces the Abraham–Lorentz–Dirac radiation reaction without a third derivative. The starting point is Gupta and Padmanabhan's observation that the reaction term can be obtained by a coordinate transformation from the accelerating charge's frame to the laboratory's. The authors embed this in five dimensions, with five gauge fields in the gauge-covariant Stueckelberg–Feynman–Schwinger mechanics, keep the particles off shell, and show that on shell the retarded Green's function of the five-dimensional field equations delivers the reaction terms with renormalised mass and charge.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-being-built-on">The claim being built on</h3>
+<p>"It has been shown by Gupta and Padmanabhan that the radiation reaction force of the Abraham-Lorentz-Dirac equation can be obtained by a coordinate transformation from the inertial frame of an accelerating charged particle to that of the laboratory."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"We show that the problem may be formulated in a flat space of five dimensions, with five corresponding gauge fields in the framework of the classical version of a fully gauge covariant form of the Stueckelberg-Feynman-Schwinger covariant mechanics (the zero mode fields of the 0, 1, 2, 3 components correspond to the Maxwell fields)."</p>
+<h3 id="the-off-shell-premise">The off-shell premise</h3>
+<p>"Without additional constraints, the particles and fields are not confined to their mass shells."</p>
+<h3 id="the-result">The result</h3>
+<p>"We show that in the mass-shell limit, the generalized Lorentz force obtained by means of the retarded Green's functions for the five dimensional field equations provides the classical Abraham-Lorentz-Dirac radiation reaction terms (with renormalized mass and charge)."</p>
+<h3 id="what-comes-for-free">What comes for free</h3>
+<p>"We also obtain general coupled equations" the fields and particles, which in the on-shell limit reduce to the standard set — so the reaction term is not inserted by hand but falls out of the five-dimensional Green's function.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-radiation-reaction-is-a-frame-transformation-not-an-extra-force">1. Radiation reaction is a frame transformation, not an extra force</h3>
+<p><strong>The idea.</strong> A <strong>reinterpretation</strong>: if the reaction term can be generated by passing from the accelerated charge's instantaneous rest frame to the lab frame, then it is a kinematic effect of the change of frame rather than an independent dynamical force. Nothing needs to be added to the Maxwell–Lorentz system except the frame relation.</p>
+<p><strong>What it would add.</strong> The corpus's Lorentz-force articles derive the equation of motion from a Lagrangian and get the Lorentz force with no reaction term at all. This says the missing term is hiding in a change of frame. That is a strong claim about the structure of classical electrodynamics, and it would let the corpus's articles on boosts and on the Lorentz force discuss where the radiative correction lives — in the transformation law — instead of treating it as an external addition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The frame transformation is of an accelerating frame, which is not a Lorentz boost; the corpus's boost articles are about inertial frames, and the extension to accelerated observers would be a different construction.</p>
+<h3 id="2-the-fifth-gauge-field-is-the-mass-changing-degree-of-freedom">2. The fifth gauge field is the mass-changing degree of freedom</h3>
+<p><strong>The idea.</strong> A <strong>structure</strong>: the fifth component of the gauge field is not a physical photon; it is the compensation field for local changes of the mass. That is why the theory can describe a particle whose mass varies while remaining gauge covariant.</p>
+<p><strong>What it would add.</strong> The corpus carries the Stueckelberg mechanism as a way of giving a vector boson a mass. This is the reverse use of the same field: the fifth component compensates a varying fermion mass. Naming it makes the two uses of one structure explicit, and it explains why five fields, not four, are needed in the off-shell theory.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's Stueckelberg articles are about a massive vector, where the fifth mode is absorbed; here the fifth mode is physical and the mass is the dynamical object.</p>
+<h3 id="3-off-shellness-removes-the-runaway">3. Off-shellness removes the runaway</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: the third-derivative term that produces runaway solutions exists only because the mass is constrained. Released from the mass shell, the recoil can go into the mass, and the equation stays second order in the trajectory.</p>
+<p><strong>What it would add.</strong> The corpus says nothing about the classical electron's runaway problem, and this is a clean resolution: the runaway is an artefact of imposing a constraint that the covariant theory does not impose. For a corpus that argues the mass-shell restriction should not be imposed a priori, this is the sharpest available piece of evidence that the restriction costs something.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim depends on the five-dimensional Green's function being the right one, and the paper's own companion work on self-force shows the off-shell equation has chaotic solutions, so simplicity is not the same as regularity.</p>
+<p>The rank: the frame-transformation reading first, because it is a claim about where the term lives; the fifth-field identification second, because it names a structure; the runaway resolution last, because it is the payoff.</p>
+<p>The remaining items in one line each: the coupled field-particle equations, which are what the five-dimensional formulation makes writable; the renormalised mass and charge in the on-shell limit, which are the price of the reduction; and the comparison with Barut and Unal's finding of non-vanishing $\dot x\cdot\ddot x$ contributions, which is the technical discrepancy the construction has to face.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

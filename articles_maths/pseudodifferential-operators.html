@@ -102,13 +102,13 @@ $$</p>
 <p>$$
 \mathfrak{a} \sim \sum_{j=0}^{\infty}\mathfrak{a}_j
 $$</p>
-<p>if $\mathfrak{a}-\sum_{j<N}\mathfrak{a}_j \in S^{m_N}$ for every $N$; the relation determines the class of $\mathfrak{a}$ modulo $S^{-\infty}$.</p>
+<p>if $\mathfrak{a}-\sum_{j&lt;N}\mathfrak{a}_j \in S^{m_N}$ for every $N$; the relation determines the class of $\mathfrak{a}$ modulo $S^{-\infty}$.</p>
 <p><strong>Theorem (asymptotic summation).</strong> Given $\mathfrak{a}_j \in S^{m_j}$ with $m_j \downarrow -\infty$, there exists $\mathfrak{a} \in S^{m_0}$ with $\mathfrak{a} \sim\sum_ja_j$; any two such $\mathfrak{a}$ differ by an element of $S^{-\infty}$.</p>
 <p><em>Proof (sketch).</em> Choose a cutoff $\chi \in C^\infty(\mathbb{R}^n)$, vanishing for $|\zeta|\le1$ and equal to $1$ for $|\zeta|\ge2$, and a sequence $t_j \downarrow0$ tending to $0$ fast enough that the series</p>
 <p>$$
 \mathfrak{a}(x,\zeta)=\sum_{j=0}^{\infty}\chi(t_j\zeta)\,\mathfrak{a}_j(x,\zeta)
 $$</p>
-<p>converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $\mathfrak{a}-\sum_{j<N}\mathfrak{a}_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$.</p>
+<p>converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $\mathfrak{a}-\sum_{j&lt;N}\mathfrak{a}_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$.</p>
 <p>The theorem is what makes the calculus possible: every computation below produces a formal series of symbols, and the series is summed by this device, with the resulting ambiguity confined to the smoothing class, which is harmless for all statements of a local or asymptotic nature.</p>
 <h2 id="quantisation">Quantisation</h2>
 <h3 id="the-fourier-definition">The Fourier Definition</h3>
@@ -178,7 +178,7 @@ $$</p>
 <p><strong>Corollary (the calculus is an algebra).</strong> The operators of the form $\mathfrak{a}(x,D)$ with $\mathfrak{a} \in S^\infty$, modulo the smoothing operators $S^{-\infty}(x,D)$, form an algebra with involution under composition and adjoint, filtered by the order, with associated graded algebra the symbols modulo lower order; the principal-symbol map is an isomorphism of the graded pieces onto the homogeneous functions on $T^*\mathbb{R}^n$ of the appropriate degree.</p>
 <h2 id="ellipticity-and-parametrices">Ellipticity and Parametrices</h2>
 <h3 id="elliptic-symbols">Elliptic Symbols</h3>
-<p><strong>Definition.</strong> A symbol $\mathfrak{a} \in S^m$ is <strong>elliptic</strong> if there is $c>0$ with</p>
+<p><strong>Definition.</strong> A symbol $\mathfrak{a} \in S^m$ is <strong>elliptic</strong> if there is $c&gt;0$ with</p>
 <p>$$
 |\mathfrak{a}(x,\zeta)| \ge c\,(1+|\zeta|)^m \qquad \text{for } |\zeta| \text{ large},
 $$</p>
@@ -193,12 +193,12 @@ $$</p>
 $$</p>
 <p>so the remainder improves by one order at each step. The recursion produces symbols $\mathfrak{b}_N$ with remainders in $S^{-N}$ for every $N$, and asymptotic summation gives $\mathfrak{b} \sim\sum_j(\mathfrak{b}_j-\mathfrak{b}_{j-1}) \in S^{-m}$ with $\mathfrak{a}\mathfrak{b}-1 \in S^{-\infty}$, which is the first identity. The second follows by the same argument on the other side, and the resulting left and right parametrices differ by a smoothing operator by associativity of composition.</p>
 <h3 id="elliptic-regularity">Elliptic Regularity</h3>
-<p><strong>Theorem (elliptic regularity, pseudodifferential form).</strong> Let $\mathfrak{a} \in S^m$ be elliptic, properly supported, with bounded derivatives $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$, and let $R$ be smoothing. Then for every $s \in \mathbb{R}$ and $1<p<\infty$ the operator $\mathfrak{a}(x,D)$ maps $H^{s}_{n}$ continuously into $H^{s-m}_p$, and for $p=2$ no boundedness of the derivatives is required; consequently</p>
+<p><strong>Theorem (elliptic regularity, pseudodifferential form).</strong> Let $\mathfrak{a} \in S^m$ be elliptic, properly supported, with bounded derivatives $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$, and let $R$ be smoothing. Then for every $s \in \mathbb{R}$ and $1&lt;p&lt;\infty$ the operator $\mathfrak{a}(x,D)$ maps $H^{s}_{n}$ continuously into $H^{s-m}_p$, and for $p=2$ no boundedness of the derivatives is required; consequently</p>
 <p>$$
 \mathfrak{a}(x,D)u \in H^{s-m}_p \implies u \in H^{s}_{n}, \qquad \mathfrak{a}(x,D)u \in C^\infty \implies u \in C^\infty ,
 $$</p>
 <p>the implications holding locally and, with proper support, globally.</p>
-<p><em>Proof.</em> The parametrix $\mathfrak{b} \in S^{-m}$ gives $u=\mathfrak{b}(au)+R_2u$; the first term is in $H^{s}_{n}$ because an operator of order at most $0$ whose symbol has bounded derivatives is bounded on $L^{n}$ for $1<p<\infty$ by the Calderón–Zygmund theory, and the $H^{s}_{n}$ norms are the $L^{n}$ norms of the Bessel potentials, so $\mathfrak{b}$ gains the $m$ orders of regularity; the second term is smoothing and lies in every $H^{s}_{n}$.</p>
+<p><em>Proof.</em> The parametrix $\mathfrak{b} \in S^{-m}$ gives $u=\mathfrak{b}(au)+R_2u$; the first term is in $H^{s}_{n}$ because an operator of order at most $0$ whose symbol has bounded derivatives is bounded on $L^{n}$ for $1&lt;p&lt;\infty$ by the Calderón–Zygmund theory, and the $H^{s}_{n}$ norms are the $L^{n}$ norms of the Bessel potentials, so $\mathfrak{b}$ gains the $m$ orders of regularity; the second term is smoothing and lies in every $H^{s}_{n}$.</p>
 <p><strong>Corollary (Fredholm property).</strong> An elliptic operator $\mathfrak{a}(x,D)$ of order $m$ on a closed manifold, acting between $H^s$ and $H^{s-m}$, is Fredholm, with a parametrix in the sense of <em>Fredholm Theory</em>; its index is invariant under perturbations in the smoothing class.</p>
 <h2 id="continuity-and-gardings-inequality">Continuity and Gårding's Inequality</h2>
 <h3 id="boundedness-on-math285-and-sobolev-spaces">Boundedness on $L^2$ and Sobolev Spaces</h3>
@@ -208,13 +208,13 @@ $$</p>
 $$</p>
 <p>for a constant $C$ and an integer $N$ depending only on the dimension.</p>
 <p><em>Proof (sketch).</em> Refine the symbol by a partition of the frequency space into dyadic annuli, write $\mathfrak{a}=\sum_ka_k$ with $\mathfrak{a}_k$ supported in $2^k\le|\zeta|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below.</p>
-<p><strong>Theorem (continuity on Sobolev spaces).</strong> Let $\mathfrak{a} \in S^m$. Then $\mathfrak{a}(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $\mathfrak{a}(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $\mathfrak{a}$ are bounded, $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^{s}_{n}$ for every $1<p<\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.</p>
+<p><strong>Theorem (continuity on Sobolev spaces).</strong> Let $\mathfrak{a} \in S^m$. Then $\mathfrak{a}(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $\mathfrak{a}(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $\mathfrak{a}$ are bounded, $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^{s}_{n}$ for every $1&lt;p&lt;\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.</p>
 <h3 id="gardings-inequality">Gårding's Inequality</h3>
 <p><strong>Theorem (Gårding).</strong> Let $\mathfrak{a} \in S^1$ with $\operatorname{Re}\mathfrak{a}(x,\zeta)\ge0$ for large $|\zeta|$, and suppose $\mathfrak{a}(x,D)$ is properly supported. Then there is $C$ with</p>
 <p>$$
 \boxed{\;\operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge -C\|u\|_{L^2}^2 \qquad \text{for all } u \in \mathcal S\;} .
 $$</p>
-<p>More generally, if $\mathfrak{a} \in S^m$ is elliptic with $\operatorname{Re}\mathfrak{a}\ge c(1+|\zeta|)^m>0$, then for all $u$,</p>
+<p>More generally, if $\mathfrak{a} \in S^m$ is elliptic with $\operatorname{Re}\mathfrak{a}\ge c(1+|\zeta|)^m&gt;0$, then for all $u$,</p>
 <p>$$
 \operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge c'\|u\|_{H^{m/2}}^2-C\|u\|_{L^2}^2 .
 $$</p>

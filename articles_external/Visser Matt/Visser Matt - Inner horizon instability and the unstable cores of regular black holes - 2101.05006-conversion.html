@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inner horizon instability and the unstable cores of regular black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inner horizon instability and the unstable cores of regular black holes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="inner-horizon-instability-and-the-unstable-cores-of-regular-black-holes"><strong>Inner horizon instability and the unstable cores of regular black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2101.05006v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Costantino Pacilio, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 April 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Inner horizon instability and the unstable cores of regular black holes - 2101.05006-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inner horizon instability and the unstable cores of regular black holes - 2101.05006.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inner horizon instability and the unstable cores of regular black holes - 2101.05006.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Regular black holes replace the singularity with a core bounded by an inner horizon. Two recent papers disagreed about whether that core is stable. The authors generalise Ori's perturbation model to any spherically symmetric metric and write the equations in terms of the Misner–Sharp mass. The mass grows exponentially at the inner horizon in every case they check. With the Bardeen metric the growth continues indefinitely; with Hayward it turns polynomial, but does not stop. A positive cosmological constant could in principle stabilise the core, but not in this universe.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"Regular black holes with nonsingular cores have been considered in several approaches to quantum gravity, and as agnostic frameworks to address the singularity problem and Hawking's information paradox."</p>
+<h3 id="the-disagreement">The disagreement</h3>
+<p>"While in a recent work we argued that the inner core is destabilized by linear perturbations, opposite claims were raised that regular black holes have in fact stable cores."</p>
+<h3 id="the-result">The result</h3>
+<p>"we discuss a generalization of the geometrical framework, originally applied to Reissner–Nordström black holes by Ori, and show that regular black holes have an exponentially growing Misner–Sharp mass at the inner horizon."</p>
+<h3 id="why-the-mass-variable-matters">Why the mass variable matters</h3>
+<p>"while the occurrence of mass-inflation might be obscured by the choice of parameterization, the phenomenon is evident when the equations are expressed in terms of the Misner–Sharp mass."</p>
+<h3 id="the-two-behaviours">The two behaviours</h3>
+<p>"We found that the Misner–Sharp mass always experiences a period of exponential instability which can either go on indefinitely (e.g., with the Bardeen metric) or be followed by a period of polynomial growth (e.g., with the Hayward metric). In both cases, the growth does not stop."</p>
+<h3 id="when-the-approximation-fails">When the approximation fails</h3>
+<p>"we argued that the onset of the polynomial instability is likely to occur when the approximation of linear perturbations has already broken down. Therefore, exponential mass-inflation appears to be the leading instability mechanism of regular black hole cores."</p>
+<h3 id="the-cosmological-constant-exception">The cosmological constant exception</h3>
+<p>"When a nonvanishing cosmological constant is allowed, we found that in principle the inner core might become stable. However, this occurs case-by-case and it is not a generic feature of the theory."</p>
+<h3 id="the-interpretation">The interpretation</h3>
+<p>"the instability of the inner horizon does not necessarily imply the formation of a physical singularity. What we have shown is that an initial linear perturbation has a huge effect on the geometry and leads to an unbounded growth of the Misner–Sharp mass."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-inner-horizon-is-not-a-quiet-place">1. The inner horizon is not a quiet place</h3>
+<p><strong>The idea.</strong> A small perturbation grows without bound at the inner horizon, so the core is not a stable end state.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizons as surfaces defined by the failure of global coordinates. This paper gives a dynamical statement about one of them, which the target's structural account does not include.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of inner horizons.</p>
+<p><strong>What stands in the way.</strong> The analysis is linear and the endpoint is unknown. Ranked first, because it adds dynamics to a static account.</p>
+<h3 id="2-choose-the-variable-that-shows-the-effect">2. Choose the variable that shows the effect</h3>
+<p><strong>The idea.</strong> Mass inflation is invisible in one parameterisation and obvious in another.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues obstructions. This is a case where a result is not absent but hidden by notation, which is a different failure mode worth adding.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The example is about coordinate choice, not algebra. Ranked second.</p>
+<h3 id="3-a-small-constant-cannot-rescue-a-mechanism">3. A small constant cannot rescue a mechanism</h3>
+<p><strong>The idea.</strong> Stability would need the late-time tail, which depends on the cosmological constant, to dominate; the observed value is too small.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats the cosmological term as a source it cannot form. Here the term's size decides whether a physical mechanism operates, which is a use of the term the target cannot reach.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The argument is specific to one instability. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

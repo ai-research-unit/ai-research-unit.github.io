@@ -90,7 +90,7 @@ E\longmapsto SES^{-1},
 $$</p>
 <p>and the stabiliser of the idempotent $E_p=\operatorname{diag}(I_p,0)$ is the block diagonal subgroup</p>
 <p>$$
-P_p=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:A\in GL_p(\mathbb{C}),\ D\in GL_{3-p}(\mathbb{C})\right\}.
+P_p=\left\{\begin{pmatrix}A&amp;0\\0&amp;D\end{pmatrix}:A\in GL_p(\mathbb{C}),\ D\in GL_{3-p}(\mathbb{C})\right\}.
 $$</p>
 <p>Hence the variety of idempotents of rank $p$ is</p>
 <p>$$
@@ -101,10 +101,10 @@ $$</p>
 \dim\mathcal{E}_p=9-\big(p^{2}+(3-p)^{2}\big)=2p(3-p).
 $$</p>
 <p><strong>Proof of transitivity.</strong> Two idempotents of rank $p$ have images of dimension $p$ and kernels of dimension $3-p$; choose bases adapted to the decompositions $\mathbb{C}^{3}=\operatorname{im}E\oplus\ker E$ and $\mathbb{C}^{3}=\operatorname{im}F\oplus\ker F$. The change of basis maps one decomposition to the other and conjugates $E$ to $F$.</p>
-<p><strong>Proof of the stabiliser.</strong> The condition $SE_p=E_pS$ in block form $S=\begin{pmatrix}A&B\\C&D\end{pmatrix}$ gives</p>
+<p><strong>Proof of the stabiliser.</strong> The condition $SE_p=E_pS$ in block form $S=\begin{pmatrix}A&amp;B\\C&amp;D\end{pmatrix}$ gives</p>
 <p>$$
-\begin{pmatrix}A&0\\C&0\end{pmatrix}
-=\begin{pmatrix}A&B\\0&0\end{pmatrix},
+\begin{pmatrix}A&amp;0\\C&amp;0\end{pmatrix}
+=\begin{pmatrix}A&amp;B\\0&amp;0\end{pmatrix},
 $$</p>
 <p>so $B=0$ and $C=0$. The blocks $A$ and $D$ must be invertible because $S$ is invertible. The dimension is $p^{2}+(3-p)^{2}$; subtracting from $9$ gives $2p(3-p)$.</p>
 <p><strong>The centre.</strong> The scalar matrices act trivially by conjugation, so the orbit is also the quotient of $PGL_3$ by the image of $P_p$. The dimension is the same because the centre is one-dimensional and is contained in $P_p$.</p>
@@ -131,9 +131,9 @@ $$</p>
 <p>$$
 u=\begin{pmatrix}1\\1\\0\end{pmatrix},
 \qquad
-\varphi=\begin{pmatrix}1&0&0\end{pmatrix},
+\varphi=\begin{pmatrix}1&amp;0&amp;0\end{pmatrix},
 \qquad
-E=u\varphi=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix}.
+E=u\varphi=\begin{pmatrix}1&amp;0&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Then $E^{2}=E$, $\operatorname{im}E=\mathbb{C}u$, and $\ker E=\ker\varphi=\{x:x_1=0\}=\operatorname{span}(e_2,e_3)$, a complement of the line $\mathbb{C}u$. The rank is $1$, the trace is $1$, and the point of $\mathbb{P}^{2}$ is $[1:1:0]$. The fibre coordinate is the functional $\varphi$ restricted to the quotient, with the normalisation $\varphi(u)=1$.</p>
 <p><strong>The zero and the identity.</strong> The idempotents of rank $0$ and $3$ are isolated: the zero matrix and the identity. The variety of all idempotents has four connected components. The rank-one and rank-two varieties are connected, and the zero and identity are points, so the total has four connected components, of dimensions $0,4,4,0$.</p>
@@ -166,16 +166,16 @@ $$</p>
 <p>says that $E$ is a subprojection of $F$: the image of $E$ is contained in the image of $F$, and the kernel of $F$ is contained in the kernel of $E$. The pair $(\operatorname{im}E,\operatorname{im}F)$ is a flag $L\subset V$. The variety of such pairs maps to the full flag variety; the map is surjective, and its fibres are the choices of the complementary kernels. The idempotent incidence is the linear realisation of the flag incidence.</p>
 <p><strong>Worked example.</strong> Let</p>
 <p>$$
-E=E_{11}=\begin{pmatrix}1&0&0\\0&0&0\\0&0&0\end{pmatrix},
+E=E_{11}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},
 \qquad
-F=E_{11}+E_{22}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&0\end{pmatrix}.
+F=E_{11}+E_{22}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Then $E^{2}=E$, $F^{2}=F$, and $EF=FE=E$. The images are $L=\langle e_1\rangle\subset V=\langle e_1,e_2\rangle$, and the kernels are $\ker E=\langle e_2,e_3\rangle$ and $\ker F=\langle e_3\rangle$, with $\ker F\subset\ker E$. The flag is the standard one.</p>
 <p><strong>The complement example.</strong> For</p>
 <p>$$
-E'=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix},
+E'=\begin{pmatrix}1&amp;0&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},
 \qquad
-F'=I-E'=\begin{pmatrix}0&0&0\\-1&1&0\\0&0&1\end{pmatrix},
+F'=I-E'=\begin{pmatrix}0&amp;0&amp;0\\-1&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>one has $E'F'=F'E'=0$ and $E'+F'=I$. The idempotents are complementary: the image of $E'$ is the kernel of $F'$ and the kernel of $E'$ is the image of $F'$. The pair is a decomposition of the identity, not a flag incidence.</p>
 <h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>

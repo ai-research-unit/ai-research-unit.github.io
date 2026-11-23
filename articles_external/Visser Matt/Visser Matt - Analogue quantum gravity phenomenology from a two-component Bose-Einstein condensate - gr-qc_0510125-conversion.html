@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue quantum gravity phenomenology from a two-component Bose–Einstein condensate — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue quantum gravity phenomenology from a two-component Bose-Einstein…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-quantum-gravity-phenomenology-from-a-two-component-boseeinstein-condensate"><strong>Analogue quantum gravity phenomenology from a two-component Bose–Einstein condensate</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0510125v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 March 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; Classical and Quantum Gravity</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue quantum gravity phenomenology from a two-component Bose-Einstein condensate - gr-qc_0510125-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue quantum gravity phenomenology from a two-component Bose-Einstein condensate - gr-qc_0510125.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue quantum gravity phenomenology from a two-component Bose-Einstein condensate - gr-qc_0510125.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The full version of the earlier letter. Two coupled Bose–Einstein condensates give a massive and a massless phonon mode sharing a limiting speed, so the low-energy theory is a relativistic doublet. Including the quantum-pressure term produces Lorentz-violating corrections at orders $k^2$ and $k^4$, with dimensionless coefficients $\eta_2$ and $\eta_4$ computed from the microscopic parameters via trace identities on $2\times2$ matrices. The central argument is that the absence of the naturalness problem has a symmetry explanation: in the limit of vanishing laser coupling the two phonons decouple into an $SO(2)$-symmetric pair, and non-zero coupling is a soft breaking of that symmetry, so the lowest-order violation is protected by an <em>emergent</em> symmetry that holds only at low energy. The paper draws the methodological lesson that naturalness may be solved by an accidental low-energy symmetry rather than a fundamental high-energy one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-model-reproduces">What the model reproduces</h3>
+<p>"We present an analogue emergent spacetime that reproduces the salient features of the most common ansätze used for quantum gravity phenomenology ... This system can be tuned to have two 'phonon' modes (one massive, one massless) which share the same limiting speed in the hydrodynamic approximation. The system nevertheless possesses (possibly non-universal) Lorentz violating terms once 'quantum pressure' becomes important."</p>
+<h3 id="monometricity-needs-tuning">Monometricity needs tuning</h3>
+<p>"In the 2-BEC system we found that only for some specific fine-tuned values of the laser coupling $\lambda$ is a single background relativistic kinematics ('mono-metricity') for the two phonon modes recovered. This is as expected as it is well known that for complex systems mono-metricity is not the only outcome for the propagation of linearized perturbations."</p>
+<h3 id="universality-depends-on-microphysics">Universality depends on microphysics</h3>
+<p>"we found that the issue of universality is fundamentally related to the complexity of the underlying microscopic system. As long as we keep the two atomic masses $m_A$ and $m_B$ distinct we generically have distinct $\eta_4$ coefficients (and the $\eta_2$ coefficients are unequal even [in] the limit $m_A=m_B$). However we can easily recover identical $\eta_4$ coefficients, for instance, as soon as we impose identical microphysics for the two BEC systems we couple."</p>
+<h3 id="why-the-quadratic-term-appears-at-all">Why the quadratic term appears at all</h3>
+<p>"due to the presence of the interactions between the two BEC components, the quantum-potential-dependent Lorentz violations not only induce terms at order $k^4$, but also at order $k^2$ ... Remarkably, we find that the $\eta_2$ coefficients are exactly of the form envisaged (within the context of standard quantum gravity phenomenology) in order to be subdominant with respect to the higher-order ones."</p>
+<h3 id="the-claim-of-realism">The claim of realism</h3>
+<p>"we did not merely perform a 'tree level' calculation in the quasi-particle EFT. The dispersion relations we obtained were computed directly from the true physical microscopic field theory describing the 2-BEC atomic system, and as such they already consistently take into account all the corrections due to higher loops in the quasi-particle EFT. In this sense the modified dispersion relations we found are those one would expect to observe if an actual experiment is set up."</p>
+<h3 id="the-symmetry-mechanism">The symmetry mechanism</h3>
+<p>"a non-zero $\lambda$ simultaneously produces a non-zero mass term for one of the phonons, and a corresponding non-zero LIV at order $k^2$ ... Let us now imagine driving $\lambda\to0$ but keeping the conditions ... valid at each stage ... one gets an EFT theory which at low energies describes two non-interacting phonons propagating on a common background ... This system possesses an $SO(2)$ symmetry corresponding to the invariance under rigid rotations of the doublet formed by the two phonon fields. Recovery of SR at low energies could then be seen as a by-product of imposing this symmetry on the system of two massless phonons. Hence non zero laser coupling $\lambda$ corresponds to a soft breaking of the $SO(2)$ symmetry and of the corresponding Lorentz invariance at low energies."</p>
+<h3 id="the-lesson-stated-against-the-usual-approach">The lesson, stated against the usual approach</h3>
+<p>"this analogue model seems to be telling us that in solving the naturalness problem a possible mechanism could be that of an EFT which in the low-energy limit exhibits an accidental/emergent symmetry, instead of a fundamental one. Note that this is an interesting and original suggestion which goes in the opposite direction with respect to other attempts at solving the naturalness problem by looking at symmetries which are supposed to be exact in the high energy regime."</p>
+<h3 id="the-speculative-closing">The speculative closing</h3>
+<p>"It might be that in this sense the smallness of the particle physics mass scales with respect to the Planck scale could be directly related to smallness of Lorentz violations in renormalizable operators of the low-energy effective field theory we live in."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-naturalness-solved-by-a-symmetry-that-only-exists-at-low-energy">1. Naturalness solved by a symmetry that only exists at low energy</h3>
+<p><strong>The idea.</strong> The usual strategy protects a small parameter with a symmetry exact at high energy, which then must be broken at low energy. This paper runs it backwards: the symmetry is accidental and holds only in the infrared, and that is enough to protect the lowest-dimension operators.</p>
+<p><strong>What it would add.</strong> A genuinely different mechanism, and one that fits the corpus's situation. <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs its framework to be stable without appealing to a high-energy symmetry nobody has found. An accidental low-energy symmetry is available precisely when the fundamental theory is unknown, which is the corpus's position. This is the single most useful import in the paper.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, as the recommended route.</p>
+<p><strong>What stands in the way.</strong> The mechanism is demonstrated for one $SO(2)$ doublet. Whether accidental symmetries can protect a framework with more structure is unshown, and the corpus's framework has more structure.</p>
+<h3 id="2-loop-corrections-are-already-included-because-the-microscopic-theory-was-used">2. Loop corrections are already included, because the microscopic theory was used</h3>
+<p><strong>The idea.</strong> The dispersion relation was computed from the atomic theory, not from the quasiparticle effective theory. So it is not a tree-level result dressed up; it is what the apparatus would show.</p>
+<p><strong>What it would add.</strong> A standard for what counts as a prediction. The corpus's <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code> works at the level of a Lagrangian and inherits whatever the loop expansion gives. This paper's point — that a result derived from the microscopic theory is immune to the objection "you only did tree level" — is a criterion the corpus can apply to its own derivations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no microscopic theory underneath its Lagrangian, so the standard can be stated but not met. That is itself worth recording.</p>
+<h3 id="3-monometricity-as-a-fine-tuned-outcome">3. Monometricity as a fine-tuned outcome</h3>
+<p><strong>The idea.</strong> A composite system generically gives each mode its own metric. One metric for all modes requires tuning.</p>
+<p><strong>What it would add.</strong> The counterpart to the earlier letter's universality point, now with the mechanism: multi-refringence is generic, monometricity is the exception. <code>articles_physics/the-null-cone-the-massless-boundary.md</code> presumes one cone; this paper says one cone is a coincidence to be explained, and gives the condition under which it happens. That is a stronger version of the point than the letter made.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-null-cone-the-massless-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The tuning condition is specific to two coupled condensates. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

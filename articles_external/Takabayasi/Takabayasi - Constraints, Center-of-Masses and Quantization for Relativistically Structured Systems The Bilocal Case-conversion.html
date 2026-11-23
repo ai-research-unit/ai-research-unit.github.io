@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constraints, Center-of-Masses and Quantization for Relativistically Structured Systems — The Bilocal Case — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constraints, Center-of-Masses and Quantization for Relativistically Structured…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constraints-center-of-masses-and-quantization-for-relativistically-structured-systems-the-bilocal-case"><strong>Constraints, Center-of-Masses and Quantization for Relativistically Structured Systems — The Bilocal Case</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi and Kenji Takeuchi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>59</strong> (1978) 2133, No. 6; received 6 January 1978</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Constraints, Center-of-Masses and Quantization for Relativistically Structured Systems The Bilocal Case-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constraints, Center-of-Masses and Quantization for Relativistically Structured Systems The Bilocal Case.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constraints, Center-of-Masses and Quantization for Relativistically Structured Systems The Bilocal Case.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Puts the bilocal theory on a Hamiltonian footing and finds that its algebra is <em>more specific</em> than the Poincaré algebra, being governed by the existence of a geometrical centre of mass and by the constraints of the covariant formalism. Boosting to the centre-of-mass rest frame isolates the constraints and produces a canonical but non-covariant centre of mass. That gives a second quantisation, non-covariant but needing no subsidiary condition, and the paper proves it is related to the original covariant quantisation by an explicit unitary transformation $\mathcal U=\exp[i\tanh^{-1}(|P|)P_kS_{k0}]$. The two schemes differ only in what they do with the relative-time mode: one suppresses it to its zero-point oscillation, the other removes it entirely.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Based on general Hamiltonian formalism the algebraic structure of bilocal theory is elucidated. This is much more specific than the general Poincaré algebra, being governed by the existence of geometrical center-of-mass and the occurrence of constraints in the original covariant formalism. The boost transformation bringing the internal variables to center-of-mass rest frame isolates the constraints and brings about the definition of canonical but non-covariant center-of-mass. This enables us the quantization of theory which is non-covariant but free from subsidiary condition. This quantization and the original covariant quantization accompanying subsidiary condition are shown to be connected by a definite unitary transformation."</p>
+<p>"A general feature of this theory is the presence of constraints which are essential in a covariant formalism for securing clear physical interpretation of theory. For quantization we took a covariant method where those constraints are substituted by subsidiary condition of the type 3l. 4l which works just to exclude tachyon or ghost states." "which works just to exclude tachyon or ghost states. The applicability of this quantization method is, however, limited to some simple, though important, systems (multilocal systems with harmonic force, relativistic rotator, 5l etc.). In this paper we treat the same problem on the basis of general Hamiltonian formalism in order to clarify the algebraic structure of theory and thereby to carry out quantization more systematically. Section 2 is devoted to general theory."</p>
+<h3 id="centre-of-mass-against-pryce">Centre of mass, against Pryce</h3>
+<p>"As to the problem of center-of-mass of relativistic systems there exists on one hand a general theory by Pryce which defines it en the basis of the generators of the Poincare group,m and on the other hand the analysis that provides the 'position operator' for each 'elementary system'.n However, for our Downloaded from academic.oup.com/ptp/article/59/6/2133/1931803 by guest on 12 November 2026 system, not only the problem of center-of-mass has more physical relevance than for elementary system, but also its more explicit analysis can be made compared with the general theory by Pryce." a geometrical centre of mass built from the constituent world lines, rather than one extracted from generators.</p>
+<h3 id="two-quantisations-and-the-transformation-between-them">Two quantisations and the transformation between them</h3>
+<p>"n the representation 2.3 the transition to quantum theory is immediately performed. (We are considering the 'simple case' PII =0." "However, in going over to the Schrodinger picture regarding r, this r disappears on account of (2 · 37) itself, and we are left with (2 · 35) and (2 · 37) ;n time is represented by the common time X 0 ' = X 0 • Note that by quanti- zation no ordering ambiguity occurs in the previous relations given in 2."</p>
+<p>"Now it is important to see the relationship between the convariant and the non-covariant formalisms directly at the quantum-mechanical level. In the original covariant formalism quantization is made by putting the canonical commutation relations (2. 38) and the wave equation ¢o (P", II 2 , !;', PII, Pt;, II!;) IP ") = 0 (2. 39) together with the subsidiary condition such as (1·1). Since the canonical transformation from the original variables to the primed variables is the boost bringing the internal variables to the C-M rest frame, this must be induced at the quantum-mechanical level by the unitary operator CU =exp[i tanh-l(IPI) PkSko]."</p>
+<p>$$
+\mathcal U=\exp\big[i\tanh^{-1}(|P|)\,P_kS_{k0}\big].
+$$</p>
+<p>"on with (3 ·10) \vitll thi::-~ CO','a ri-1nt qnantun1 theory \Ve can p:ractically derive the '1ull cm-,,o-ict•lt q,;,11:tum thcur- na the unitary transformation with (2· for timelike P 11 we apply this transformation; then (3 · 9) goes oYer to (3 ·11) *J Sec, e." and the wave equation goes over to a form containing the relative-time oscillator. "On the other hand, by this unitary transformation" the constraint equation becomes the wave equation with the internal oscillator term and the additive constant. "ticle/59/6/2133/1931803 by guest on 12 November 2026 with (3 · 5). Thus the difference between both quantizations is merely that (3 ·11) implies to suppress the timelike mode ~a' to its zero-point oscillation, while the non-covariant quantization implies to totally exclude the degrees of freedom ~0 '. *l 3.2."</p>
+<h3 id="spacelike-solutions">Spacelike solutions</h3>
+<p>"(1·1) does not allow spacelike solutions, while the non-covariant quantization based on the classical" theory removes the offending mode by construction — the equivalence of the two schemes therefore also shows where the spacelike sector sits in each.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-algebra-of-a-composite-is-smaller-than-the-poincare-algebra">1. The algebra of a composite is smaller than the Poincaré algebra</h3>
+<p><strong>The idea.</strong> A bilocal system's Hamiltonian algebra is "much more specific than the general Poincaré algebra": the existence of a geometrical centre of mass and the constraints of the covariant formalism cut the algebra down. Compositeness is not just extra coordinates added to a particle; it <em>reduces</em> the algebra of allowed transformations.</p>
+<p><strong>What it would add.</strong> A precise sense in which a composite is more constrained than an elementary system. <em>Relativistic Mechanics from the Dirac Wave</em> (<code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code>) extracts mechanics from a one-particle wave; here the many-particle kinematics has <em>less</em> freedom, which inverts the intuition that more constituents means more structure.</p>
+<p><strong>Where it lands.</strong> §<em>Order Zero: the Mass Shell</em>, as the composite-algebra remark.</p>
+<p><strong>What stands in the way.</strong> The reduction is exhibited for the bilocal case with a harmonic force; whether it holds in general is stated as a hope ("the method may be generalized").</p>
+<h3 id="2-two-quantisations-of-one-theory-related-by-an-explicit-unitary-operator">2. Two quantisations of one theory, related by an explicit unitary operator</h3>
+<p><strong>The idea.</strong> Covariant quantisation with a subsidiary condition, and non-covariant quantisation with the relative time removed, are the <em>same</em> quantum theory seen in two frames, connected by $\mathcal U=\exp[i\tanh^{-1}(|P|)P_kS_{k0}]$. Nothing is lost or added: one keeps the timelike mode at its zero-point value, the other deletes it.</p>
+<p><strong>What it would add.</strong> A resolution of the subsidiary-condition problem, which the folder otherwise treats as an unresolved trade-off. Earlier conversions in this folder record the choice between indefinite metric and degeneracy; here the choice is shown to be a unitary transformation, which is the cleanest outcome available and the one the corpus should cite.</p>
+<p><strong>Where it lands.</strong> §<em>The Norm and the Invariant</em> of the conversion of <em>Group of Relativistic Internal Motion</em> in this folder, as the resolution.</p>
+<p><strong>What stands in the way.</strong> The equivalence holds for timelike $P_\mu$ and for models where the transformation is well defined; the spacelike sector is explicitly not covered.</p>
+<h3 id="3-a-centre-of-mass-that-is-canonical-but-not-covariant">3. A centre of mass that is canonical but not covariant</h3>
+<p><strong>The idea.</strong> Boosting the internal variables to their rest frame produces a centre of mass that is canonical — its brackets are the standard ones, with no ordering ambiguities on quantisation — at the price of not being covariant. Covariance is recovered only through the unitary map.</p>
+<p><strong>What it would add.</strong> A worked example of the trade between canonicity and covariance. The corpus's discussions of position operators assume one wants both; here one is chosen deliberately and the other recovered afterwards, and the author notes that "no ordering ambiguity occurs" precisely because the variables are canonical.</p>
+<p><strong>Where it lands.</strong> §<em>The Spin-Particle Bundle</em> of <em>Parras' Four Options of the Dirac Equation and the Discrete Symmetries</em> (<code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code>), as the canonical-but-not-covariant case.</p>
+<p><strong>What stands in the way.</strong> The construction uses a specific boost and a specific model; the general Pryce programme is referenced but not compared term by term.</p>
+<h3 id="4-a-comparison-with-pryce-that-the-corpus-lacks">4. A comparison with Pryce that the corpus lacks</h3>
+<p><strong>The idea.</strong> Pryce defines the relativistic centre of mass from the Poincaré generators; this paper defines it geometrically from the constituent world lines. The paper claims its definition is more explicit and more physically relevant for composites.</p>
+<p><strong>What it would add.</strong> A second definition to set beside the generator-based one — a genuine comparison of two constructions of the same object. The corpus's position-operator material assumes the generator route; this gives the alternative and the argument for it.</p>
+<p><strong>Where it lands.</strong> §<em>The Spin-Particle Bundle</em>, as the second definition.</p>
+<p><strong>What stands in the way.</strong> The comparison is programmatic; the paper states the advantage but does not compute a case where the two definitions disagree numerically.</p>
+<p>The remainder, one line each. That unequal constituent masses enter by a single parameter $r$ inserted into the wave equation, keeping it second order, is the paper's economical generalisation. That the treatment of spin includes the $+i(\xi'\pi')$ term in $J^{2}$ shows the ordering care the canonical route buys.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

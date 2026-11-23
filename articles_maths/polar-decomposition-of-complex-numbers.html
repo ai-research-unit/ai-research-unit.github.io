@@ -75,10 +75,10 @@
 <p>$$
 Q = \exp(Q_{\log}), \qquad Q_{\log} = \ln \varrho + i\theta,
 $$</p>
-<p>with $\varrho>0$ the modulus, $\theta$ the angle, $\ln \varrho$ the logarithmic scale, and $\varrho\exp(i\theta)$ the product of the scale and the unit factor. The exponential and the logarithm are defined and studied in <em>Complex Special Functions</em>, §<em>The Complex Exponential and Logarithm</em>; this article does not define them again. It uses only the group law $\exp(Q_{1\log}+Q_{2\log})=\exp(Q_{1\log})\exp(Q_{2\log})$ and the description of the logarithms of $Q$ from that article.</p>
+<p>with $\varrho&gt;0$ the modulus, $\theta$ the angle, $\ln \varrho$ the logarithmic scale, and $\varrho\exp(i\theta)$ the product of the scale and the unit factor. The exponential and the logarithm are defined and studied in <em>Complex Special Functions</em>, §<em>The Complex Exponential and Logarithm</em>; this article does not define them again. It uses only the group law $\exp(Q_{1\log}+Q_{2\log})=\exp(Q_{1\log})\exp(Q_{2\log})$ and the description of the logarithms of $Q$ from that article.</p>
 <p>The decomposition is the exponential form of the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>, which writes every nonzero complex number as</p>
 <p>$$
-Q = \varrho\,u, \qquad \varrho \in \mathbb{R}, \quad \varrho > 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
+Q = \varrho\,u, \qquad \varrho \in \mathbb{R}, \quad \varrho &gt; 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
 $$</p>
 <p>with $\varrho$ the modulus and $u$ the unit factor. The unit factor is written $u=\exp(i\theta)$, and $\varrho=\sqrt{\langle Q\rangle_{*}}$. The rational-chart form of <em>Rational-Chart Polar Decomposition of Complex Numbers</em> is the third presentation. Since $\mathbb{C}$ is commutative, the scale and the unit factor are not two independent exponentials: their product is the single exponential $\exp(Q_{\log})$.</p>
 <p>The article states the decomposition and computes its data (§<em>The Decomposition</em>), identifies the exponent with the logarithm and separates the principal logarithm from the general one (§<em>The Logarithm</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), gives examples (§<em>Worked Examples</em>), and then treats the matrix picture (§<em>The Matrix Picture</em>), the comparison with the two other polar forms (§<em>The Three Polar Decompositions</em>) and the exponential coordinates (§<em>The Exponential Coordinates</em>).</p>
@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-data">The Data</h3>
 <p>Let $Q=q+iq'\neq0$. The <strong>modulus</strong> and the <strong>principal angle</strong> are</p>
 <p>$$
-\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'{}^2}&gt;0, \qquad
 \theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi].
 $$</p>
 <p>Euler's formula, $\exp(i\theta)=\cos\theta+i\sin\theta$, and $\varrho=\exp(\ln \varrho)$ give</p>
@@ -97,7 +97,7 @@ $$</p>
 <p>The three expressions are the same number. The middle one is the modulus–unit form; the last one is the polar decomposition.</p>
 <p><strong>Definition.</strong> A <strong>polar decomposition</strong> of $Q\neq0$ is a writing</p>
 <p>$$
-Q=\exp(Q_{\log}), \qquad Q_{\log}=\ln \varrho+i\theta, \quad \varrho>0,\quad \theta\in\mathbb{R},
+Q=\exp(Q_{\log}), \qquad Q_{\log}=\ln \varrho+i\theta, \quad \varrho&gt;0,\quad \theta\in\mathbb{R},
 $$</p>
 <p>equivalently $Q=\exp(\ln \varrho)\exp(i\theta)$, in which $\exp(\ln \varrho)=\varrho$ is the <strong>scale</strong> and $\exp(i\theta)$ is the <strong>unit factor</strong>. The <strong>exponent</strong> is the logarithm $Q_{\log}$, with coordinates $q_{\log}=\ln \varrho$ and $q'_{\log}=\theta$.</p>
 <p>The angle is defined modulo $2\pi$, because $\exp(i(\theta+2\pi k))=\exp(i\theta)$. The pair $(\varrho,\exp(i\theta))$ is the modulus–unit pair. The exponent $Q_{\log}$ is a logarithm of $Q$ in the sense of §<em>The Logarithm</em>.</p>
@@ -124,7 +124,7 @@ $$</p>
 <td>$\exp(\ln \varrho)=\varrho$</td>
 <td>$(0,\infty)$</td>
 <td>$q_{\log}=\ln \varrho$</td>
-<td>$\varrho>0$</td>
+<td>$\varrho&gt;0$</td>
 </tr>
 <tr>
 <td>unit factor</td>
@@ -145,14 +145,14 @@ $$</p>
 <p>The word <strong>polar</strong> names the two factors, not two independent exponentials. The single exponent $Q_{\log}=\ln \varrho+i\theta$ carries both the scale and the angle.</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every $Q\neq0$ has exactly one polar decomposition with the principal angle,</p>
-<p>$$ \boxed{\;Q=\exp(\ln \varrho)\exp(i\theta), \qquad \varrho>0,\quad \theta\in(-\pi,\pi]\;},
+<p>$$ \boxed{\;Q=\exp(\ln \varrho)\exp(i\theta), \qquad \varrho&gt;0,\quad \theta\in(-\pi,\pi]\;},
 $$</p>
 <p>namely</p>
 <p>$$
 \varrho=\sqrt{\langle Q\rangle_{*}}, \qquad \theta=\operatorname{Arg}Q,
 $$</p>
 <p>and exponent the principal logarithm $Q_{\log}=\operatorname{Log}Q=\ln \varrho+i\theta$.</p>
-<p><strong>Existence.</strong> The data above give $\varrho>0$ and $\theta\in(-\pi,\pi]$, and Euler's formula gives the identity.</p>
+<p><strong>Existence.</strong> The data above give $\varrho&gt;0$ and $\theta\in(-\pi,\pi]$, and Euler's formula gives the identity.</p>
 <p><strong>Uniqueness.</strong> Suppose $\exp(\ln r_1)\exp(i\theta_1)=\exp(\ln r_2)\exp(i\theta_2)$ with both angles in $(-\pi,\pi]$. Taking moduli gives $r_1=r_2$. Dividing gives $\exp(i(\theta_1-\theta_2))=1$, so $\theta_1-\theta_2\in2\pi\mathbb{Z}$. The difference lies in $(-2\pi,2\pi)$, so it is $0$. Hence $\theta_1=\theta_2$.</p>
 <p>Without the restriction on $\theta$ the exponent is not unique: the same pair of factors is written with every logarithm $Q_{\log}+2\pi i k$. The factors are unique; the exponent is unique only modulo the kernel. This distinction is the subject of §<em>The Logarithm</em>.</p>
 <p>The data of the principal decomposition are collected in one table.</p>
@@ -170,7 +170,7 @@ $$</p>
 </tr>
 <tr>
 <td>modulus</td>
-<td>$\varrho=\sqrt{q^2+q'^2}$</td>
+<td>$\varrho=\sqrt{q^2+q'{}^2}$</td>
 </tr>
 <tr>
 <td>angle</td>
@@ -214,7 +214,7 @@ Q_{\log}=\ln\sqrt{\langle Q\rangle_{*}}+i\bigl(\operatorname{Arg}Q+2\pi k\bigr),
 $$</p>
 <p>In coordinates,</p>
 <p>$$
-Q_{\log}=\tfrac12\ln(q^2+q'^2)+i\bigl(\operatorname{atan2}(q',q)+2\pi k\bigr).
+Q_{\log}=\tfrac12\ln(q^2+q'{}^2)+i\bigl(\operatorname{atan2}(q',q)+2\pi k\bigr).
 $$</p>
 <p>The two coordinates have different roles.</p>
 <div class="table-scroll"><table>
@@ -228,7 +228,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$q_{\log}=\operatorname{Re}Q_{\log}$</td>
-<td>$\tfrac12\ln(q^2+q'^2)$</td>
+<td>$\tfrac12\ln(q^2+q'{}^2)$</td>
 <td>logarithmic scale, unique</td>
 </tr>
 <tr>
@@ -246,12 +246,12 @@ $$</p>
 <h3 id="the-principal-logarithm">The Principal Logarithm</h3>
 <p>Single-valuedness is obtained by restricting the exponent to the <strong>principal strip</strong></p>
 <p>$$
-S=\{\ln \varrho+i\theta:\varrho>0,\ -\pi<\theta\le\pi\}.
+S=\{\ln \varrho+i\theta:\varrho&gt;0,\ -\pi&lt;\theta\le\pi\}.
 $$</p>
 <p>The exponential maps $S$ bijectively onto $\mathbb{C}^\times$, and its inverse is the <strong>principal logarithm</strong></p>
 <p>$$
 \operatorname{Log}Q=\ln\sqrt{\langle Q\rangle_{*}}+i\operatorname{Arg}Q,
-\qquad -\pi<\operatorname{Arg}Q\le\pi.
+\qquad -\pi&lt;\operatorname{Arg}Q\le\pi.
 $$</p>
 <p>This is the exponent of the principal decomposition. The proof of the bijection is in <em>Complex Special Functions</em>, §<em>The Principal Logarithm</em>; the content here is the reading as a decomposition.</p>
 <p>The inverse is discontinuous on the negative real axis, the <strong>branch cut</strong>. On the cut the principal value is still defined and still exponentiates to $Q$; it is continuity, not the identity, that fails. The strip is a fundamental domain for the translations by $2\pi i\mathbb{Z}$.</p>
@@ -394,7 +394,7 @@ $$</p>
 <p>In the real basis $\{1,i\}$ a complex number is $Q=q+iq'$, and multiplication by $Q$ is the matrix</p>
 <p>$$
 M_Q=qI+q'J, \qquad
-J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad J^2=-I.
+J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}, \qquad J^2=-I.
 $$</p>
 <p>The matrices $I$ and $J$ commute, so the exponential splits:</p>
 <p>$$
@@ -440,25 +440,25 @@ $$</p>
 <tr>
 <td>modulus–unit</td>
 <td>$Q=ru$</td>
-<td>$\varrho>0$, $u\in\mathrm{U}(1)$</td>
+<td>$\varrho&gt;0$, $u\in\mathrm{U}(1)$</td>
 <td>$\mathbb{C}^\times$</td>
 <td>unique</td>
 <td>square root</td>
-<td>$\mathbb{R}_{>0}\times\mathrm{U}(1)$</td>
+<td>$\mathbb{R}_{&gt;0}\times\mathrm{U}(1)$</td>
 </tr>
 <tr>
 <td>rational-chart</td>
 <td>$Q=\varrho\dfrac{1-is}{1+is}$</td>
-<td>$\varrho>0$, $s\in\mathbb{R}$</td>
+<td>$\varrho&gt;0$, $s\in\mathbb{R}$</td>
 <td>$\mathbb{C}\setminus(-\infty,0]$</td>
 <td>unique on the chart</td>
 <td>rational</td>
-<td>$\mathbb{R}_{>0}\times\mathbb{R}$, local</td>
+<td>$\mathbb{R}_{&gt;0}\times\mathbb{R}$, local</td>
 </tr>
 <tr>
 <td>exponential</td>
 <td>$Q=\exp(Q_{\log})$</td>
-<td>$\varrho>0$, $\theta\in\mathbb{R}$ modulo $2\pi$</td>
+<td>$\varrho&gt;0$, $\theta\in\mathbb{R}$ modulo $2\pi$</td>
 <td>$\mathbb{C}^\times$</td>
 <td>exponent modulo $2\pi i$; unique with the principal angle</td>
 <td>exponential and logarithm</td>
@@ -497,7 +497,7 @@ $$</p>
 <p>$$
 \arg Q=\theta_0 \pmod{2\pi}.
 $$</p>
-<p>The strip $-\pi<\theta\le\pi$ is a fundamental domain: its translates by $2\pi i$ tile the plane, and the exponential identifies the two edges. The real part $q_{\log}=\ln \varrho$ is the logarithmic scale, the imaginary part $q'_{\log}=\theta$ is the angle, and the exponential turns the flat strip into the punctured plane.</p>
+<p>The strip $-\pi&lt;\theta\le\pi$ is a fundamental domain: its translates by $2\pi i$ tile the plane, and the exponential identifies the two edges. The real part $q_{\log}=\ln \varrho$ is the logarithmic scale, the imaginary part $q'_{\log}=\theta$ is the angle, and the exponential turns the flat strip into the punctured plane.</p>
 <h3 id="the-conformal-factor">The Conformal Factor</h3>
 <p>The derivative of the exponential is multiplication by $\exp(Q_{\log})$, so the pullback of the Euclidean metric is</p>
 <p>$$
@@ -519,11 +519,11 @@ $$</p>
 <p>Every nonzero complex number has exactly one polar decomposition with the principal angle,</p>
 <p>$$
 Q=\exp(\ln \varrho)\exp(i\theta), \qquad
-\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\varrho=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'{}^2}&gt;0, \qquad
 \theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi],
 $$</p>
 <p>namely the modulus and the principal angle of $Q$. The exponent is the principal logarithm $Q_{\log}=\operatorname{Log}Q=\ln\sqrt{\langle Q\rangle_{*}}+i\operatorname{Arg}Q$, the scale is $\exp(\ln \varrho)=\varrho$, and the unit factor is $\exp(i\theta)=Q/\varrho$. Because $\mathbb{C}$ is commutative the two exponentials amalgamate into one, $Q=\exp(Q_{\log})$.</p>
-<p>The general logarithms of $Q$ are $Q_{\log}+2\pi i k$ with $k\in\mathbb{Z}$; the ambiguity is the kernel $2\pi i\mathbb{Z}$. The principal strip $-\pi<\theta\le\pi$ is a fundamental domain on which the exponential is a bijection onto $\mathbb{C}^\times$, and the quotient is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, the product of a line and a circle.</p>
+<p>The general logarithms of $Q$ are $Q_{\log}+2\pi i k$ with $k\in\mathbb{Z}$; the ambiguity is the kernel $2\pi i\mathbb{Z}$. The principal strip $-\pi&lt;\theta\le\pi$ is a fundamental domain on which the exponential is a bijection onto $\mathbb{C}^\times$, and the quotient is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, the product of a line and a circle.</p>
 <p>The matrix picture is the exponential of the conformal matrix: $M_Q=\exp(\ln \varrho\,I+\theta J)=rR_\theta$, with matrix logarithm $\ln \varrho\,I+\theta J$ on the principal branch, the angle defined modulo $2\pi$. The derivative is multiplication by $\exp(Q_{\log})$, the Jacobian determinant is $\langle Q\rangle_{*}$, and the exponential is conformal with scale $\sqrt{\langle Q\rangle_{*}}$.</p>
 <p>The exponential form is the third of the three polar decompositions of $\mathbb{C}$. The modulus–unit form is global, unique and algebraic; the rational-chart form is the rational Cayley chart, local and missing the negative real axis; the exponential form is global and transcendental, and it is unique once the principal representative of the angle is chosen, the exponent being unique modulo the kernel. The three are presentations of the same factorisation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -540,7 +540,7 @@ $$</p>
 <td>a complex number, $q$ the real part, $q'$ the imaginary part</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$</td>
+<td>$\langle Q\rangle_{*}=Q\bar Q=q^2+q'{}^2$</td>
 <td>the norm, positive definite</td>
 </tr>
 <tr>

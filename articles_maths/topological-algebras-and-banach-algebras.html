@@ -100,16 +100,16 @@ $$</p>
 <p><strong>Example.</strong> The real number-system algebras are topological algebras over $\mathbb{R}$: with the Euclidean topology on $\mathbb{R}^n$, the sum and the product are the polynomial maps given by the multiplication tables, hence continuous.</p>
 <h3 id="the-group-of-invertibles">The Group of Invertibles</h3>
 <p><strong>Proposition.</strong> Let $A$ be a unital topological algebra whose topology is induced by a norm. Then the group $A^\times$ of invertibles is an open subset of $A$, and the inversion map $A^\times \to A^\times$, $x \mapsto x^{-1}$, is continuous.</p>
-<p><em>Proof.</em> Let $a \in A^\times$ and set $c = \|a^{-1}\|$. If $\|x - a\| < c^{-1}$ then $\|a^{-1}(x - a)\| \leq c\|x-a\| < 1$, so by the Neumann series below the element $1 + a^{-1}(x-a) = a^{-1}x$ is invertible, hence $x = a(a^{-1}x)$ is invertible. Thus the ball of radius $c^{-1}$ around $a$ lies in $A^\times$, so $A^\times$ is open. For continuity, write</p>
+<p><em>Proof.</em> Let $a \in A^\times$ and set $c = \|a^{-1}\|$. If $\|x - a\| &lt; c^{-1}$ then $\|a^{-1}(x - a)\| \leq c\|x-a\| &lt; 1$, so by the Neumann series below the element $1 + a^{-1}(x-a) = a^{-1}x$ is invertible, hence $x = a(a^{-1}x)$ is invertible. Thus the ball of radius $c^{-1}$ around $a$ lies in $A^\times$, so $A^\times$ is open. For continuity, write</p>
 <p>$$
 x^{-1} - a^{-1} = x^{-1}(a - x)a^{-1},
 $$</p>
 <p>so that $\|x^{-1} - a^{-1}\| \leq \|x^{-1}\|\,\|a^{-1}\|\,\|a - x\|$; since $\|x^{-1}\|$ is bounded on a small neighbourhood of $a$ by the previous estimate, the right side tends to $0$ as $x \to a$.</p>
-<p><strong>Corollary.</strong> In a unital normed algebra, an element $x$ with $\|1 - x\| < 1$ is invertible, and</p>
+<p><strong>Corollary.</strong> In a unital normed algebra, an element $x$ with $\|1 - x\| &lt; 1$ is invertible, and</p>
 <p>$$
 \boxed{\;x^{-1} = \sum_{n \geq 0} (1 - x)^n, \qquad \|x^{-1}\| \leq \frac{1}{1 - \|1 - x\|}\;}.
 $$</p>
-<p><em>Proof.</em> This is the Neumann series, valid because the geometric series converges absolutely when $\|1 - x\| < 1$; the estimate follows from the submultiplicative inequality $\|(1-x)^n\| \leq \|1-x\|^n$.</p>
+<p><em>Proof.</em> This is the Neumann series, valid because the geometric series converges absolutely when $\|1 - x\| &lt; 1$; the estimate follows from the submultiplicative inequality $\|(1-x)^n\| \leq \|1-x\|^n$.</p>
 <p>The openness of $A^\times$ is the algebraic expression of the fact that invertibility is a stable condition, and it is used repeatedly in the hypercomplex analysis entries, where the set of invertibles is open and the set of zero divisors is its closed complement together with $0$: in a finite-dimensional algebra the left zero divisors are exactly the elements $x$ with $\det\lambda_x = 0$, a closed condition on $x$.</p>
 <h2 id="normed-algebras">Normed Algebras</h2>
 <p><strong>Definition.</strong> A <strong>normed algebra</strong> over $\mathbb{K}$ is a $\mathbb{K}$-algebra $A$ equipped with a norm $\|\cdot\| : A \to \mathbb{R}_{\geq 0}$ such that</p>
@@ -169,7 +169,7 @@ $$</p>
 \exp(x + y) = \exp(x)\exp(y) \quad \text{whenever } xy = yx.
 $$</p>
 <p>The derivative of $\exp$ at $0$ is the identity, so $\exp$ maps a neighbourhood of $0$ diffeomorphically onto a neighbourhood of $1$ in $A^\times$.</p>
-<p><em>Proof.</em> Absolute convergence follows from $\sum \|x\|^n/n! = \exp(\|x\|) < \infty$ and completeness. The functional equation is the binomial theorem, valid because $x$ and $y$ commute. For the last statement, expand</p>
+<p><em>Proof.</em> Absolute convergence follows from $\sum \|x\|^n/n! = \exp(\|x\|) &lt; \infty$ and completeness. The functional equation is the binomial theorem, valid because $x$ and $y$ commute. For the last statement, expand</p>
 <p>$$
 \exp(h) = 1 + h + O(\|h\|^2),
 $$</p>
@@ -201,7 +201,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{H}$</td>
-<td>$\mathbb{H}\setminus\{0\} \cong \mathbb{R}_{>0} \times SU(2)$</td>
+<td>$\mathbb{H}\setminus\{0\} \cong \mathbb{R}_{&gt;0} \times SU(2)$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -277,7 +277,7 @@ $$</p>
 <p><strong>Proposition.</strong> Let $A$ be a unital normed algebra. Then:</p>
 <ol>
 <li>$\|x^{-1}\| \geq \|x\|^{-1}$ for every invertible $x$;</li>
-<li>if $\|1 - x\| < 1$ then $x$ is invertible, and $\|x^{-1}\| \leq (1 - \|1-x\|)^{-1}$;</li>
+<li>if $\|1 - x\| &lt; 1$ then $x$ is invertible, and $\|x^{-1}\| \leq (1 - \|1-x\|)^{-1}$;</li>
 <li>if the norm is multiplicative, then $A$ has no zero divisors and $\|x^{-1}\| = \|x\|^{-1}$ for every invertible $x$;</li>
 <li>no norm can vanish on a nonzero element, so a norm never detects a zero divisor.</li>
 </ol>
@@ -325,7 +325,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(1-x)^{-1} = \sum_{n} x^n$</td>
-<td>Neumann series, valid for $\|x\| < 1$</td>
+<td>Neumann series, valid for $\|x\| &lt; 1$</td>
 </tr>
 <tr>
 <td>$\exp(x) = \sum_n x^n/n!$</td>
@@ -357,7 +357,7 @@ $$</p>
 </tr>
 <tr>
 <td>$SU(2)$</td>
-<td>Unit quaternions; $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times SU(2)$</td>
+<td>Unit quaternions; $\mathbb{H}^\times \cong \mathbb{R}_{&gt;0} \times SU(2)$</td>
 </tr>
 <tr>
 <td>$\mathbb{O}$</td>

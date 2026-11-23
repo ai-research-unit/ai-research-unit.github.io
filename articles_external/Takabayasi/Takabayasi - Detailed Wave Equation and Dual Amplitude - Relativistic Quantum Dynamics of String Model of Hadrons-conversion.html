@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Wave Equation and Dual Amplitude — Relativistic Quantum Dynamics of String Model of Hadrons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation and Dual Amplitude - Relativistic Quantum Dynamics of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="detailed-wave-equation-and-dual-amplitude-relativistic-quantum-dynamics-of-string-model-of-hadrons"><strong>Detailed Wave Equation and Dual Amplitude — Relativistic Quantum Dynamics of String Model of Hadrons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>46</strong> (1971) 1528, No. 5; received 21 May 1971</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Detailed Wave Equation and Dual Amplitude - Relativistic Quantum Dynamics of String Model of Hadrons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation and Dual Amplitude - Relativistic Quantum Dynamics of String Model of Hadrons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation and Dual Amplitude - Relativistic Quantum Dynamics of String Model of Hadrons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The founding paper of the detailed wave equation. A string's relativistic quantum dynamics is given by an equation holding at every point of the string, with local coupling to an external field at the end. The equation's form is "severely determined from its self-consistency", which is guaranteed by a closed algebra of the invariant Hamiltonian <em>density</em> operator — and that algebra is the gauge invariance of the theory. The density has a real part and an imaginary part; the imaginary part is a one-dimensional Coulomb-type nonlocal interaction <em>inside</em> the string and is exactly the Hilbert transform of the source intensity. The detailed equation splits into a global wave equation plus infinitely many subsidiary conditions, and with an unconventional definition of normal-mode operators the external and internal motions are handled uniformly and all wave operators factorise into convolutions. The theory yields the dual amplitude at one particular intercept.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"Relativistic quantum dynamics of a one-dimensional elastic continuum (string) is represented by a 'detailed wave equation' which is defined at every point of the string and has local coupling to an external field at the end of string. The actual form of this wave equation is severely determined from its self-consistency, which is guaranteed by the existence of a closed algebra for the 'invariant hamiltonian density operator'. The algebra in turn directly represents the 'gauge invariance' of the theory."</p>
+<p>"The invariant hamiltonian density operator consists of real and imaginary parts, of which the latter represents nonlocal interaction inside the string and exhibits a remarkable Hilbert transform relation. The detailed wave equation is brought to the set of the global wave equation corresponding to the wave equation in the usual sense and an infinite number of subsidiary conditions which work to suppress unphysical states."</p>
+<h3 id="the-three-features-of-the-density">The three features of the density</h3>
+<p>"te some features of the theory. (a) The invariant hamil- tonian density H(u) consists of real and imaginary parts which contain the weight factor 1-u2 (or 1-u'2) vanishing at both ends of the string. (b) The imaginary part is the sum of contributions, of the one-dimensional Coulomb-force type, from the source intensity {dxjdu', q(u')}+ at every point u' of the string; this implies the presence of a kind of nonlocal interaction working inside the string. This part Hb (u) is mathematically the Hilbert transform of the source intensity. (Note that though it is a finite Hilbert transform, the integrand vanishes at the ends.) Downloaded from academic."</p>
+<p>"The theory has a lot of symmetry properties, some of which are responsible for the mass degeneracy of high degree. The existence of the closed algebra (2 ·16) immediately means" gauge invariance "of the theory (see §§ 4 and 6). Peculiar symmetry properties are implied in the Hilbert transform relation mentioned above and also in the invariance under the interchange ~ dx (u) &lt;;-q ------?" of $\frac{dx(\sigma)}{d\sigma}$ with $q(\sigma)$.</p>
+<h3 id="the-algebra">The algebra</h3>
+<p>The last one means that $\{\Lambda_r; r=0,1,2,\dots\}$ form a closed algebra, again expressing the compatibility conditions of the fundamental equation.</p>
+<h3 id="uniform-treatment-and-factorisation">Uniform treatment and factorisation</h3>
+<p>"The unconventional definition of normal mode operators {C.~/} enables a uniform treatment of external and internal motions and the factorization of all wave operators into convolutions.. The theory ." Later: "we want to uniformly factorize all Ar given by (3 ·14), and we anticipate" and the operators are "026 factorized in terms of {C/} as the convolution (Faltung), as indicated in ( 4 · 24).".</p>
+<h3 id="scope">Scope</h3>
+<p>"The theory leads to dual amplitude for a particular value of intercept. A completely equivalent formulation of theory with the introduction of a proper-time like parameter is also given, which supplies further insights. Finally speculations are made for generalizing the model to more realistic cases."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-self-consistency-determines-the-equation-nothing-else-does">1. Self-consistency determines the equation; nothing else does</h3>
+<p><strong>The idea.</strong> The detailed wave equation's form is not postulated and then checked for compatibility. Requiring that the equations at different points be simultaneously solvable — that the Hamiltonian densities close into an algebra — fixes the equation. Consistency is the derivation.</p>
+<p><strong>What it would add.</strong> A case where the equation of motion is an <em>output</em> of an algebraic requirement. <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>) starts from a Lagrangian and derives equations; here the requirement is solvability of an overdetermined system, which is a different and much more restrictive starting point, and it explains why the resulting interaction is nonlocal in a specific way.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em>, as the consistency-derived equation.</p>
+<p><strong>What stands in the way.</strong> The algebra is found, not classified: the paper exhibits one closed set and does not show it is the only one admitting a local end-coupling.</p>
+<h3 id="2-gauge-invariance-and-integrability-are-the-same-statement">2. Gauge invariance and integrability are the same statement</h3>
+<p><strong>The idea.</strong> The closed algebra "immediately means the 'gauge invariance' of the theory." What normally appears as two facts — the equations are compatible, and the theory has a gauge symmetry — is one fact seen twice.</p>
+<p><strong>What it would add.</strong> An identity between two notions the corpus keeps separate. In <em>The Lagrangian and the Non-Abelian Gauge Fields</em> (<code>articles_physics/the-lagrangian-and-the-non-abelian-gauge-fields.md</code>) gauge invariance is a property of an action and consistency a separate matter; here they coincide, which is a stronger structural claim worth recording.</p>
+<p><strong>Where it lands.</strong> §<em>The Gauge Symmetry and the Constraints</em>, as the identity.</p>
+<p><strong>What stands in the way.</strong> The identification is made for this algebra; the general statement that constraint closure <em>is</em> gauge invariance requires the Dirac theory of constraints, which is not invoked here.</p>
+<h3 id="3-a-nonlocal-interaction-that-is-a-hilbert-transform">3. A nonlocal interaction that is a Hilbert transform</h3>
+<p><strong>The idea.</strong> The imaginary part of the Hamiltonian density is a one-dimensional Coulomb interaction among all points of the string, and it is exactly the Hilbert transform of the source intensity. The nonlocality is not a smearing; it is a specific singular integral with a known kernel, and the kernel's properties (vanishing at the ends, weight $1-\sigma^{2}$) are what make the algebra close.</p>
+<p><strong>What it would add.</strong> A nonlocality with a definite mathematical character, in a corpus that otherwise treats nonlocality as a formal device. <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder builds nonlocality into the wave equation's argument; here it is built into the interaction kernel, which is a different and more controlled kind of nonlocality.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder, as the kernel-based nonlocality.</p>
+<p><strong>What stands in the way.</strong> The Hilbert transform arises from the specific Coulomb-type ansatz; why that ansatz is the right one is argued from the weight factor rather than derived.</p>
+<h3 id="4-convolutions-factorise-everything-including-the-constraints">4. Convolutions factorise everything, including the constraints</h3>
+<p><strong>The idea.</strong> With a non-standard definition of the mode operators, every wave operator — the global equation and each of the infinitely many subsidiary conditions — becomes a convolution (Faltung). The infinite tower is then one object written in different Fourier components.</p>
+<p><strong>What it would add.</strong> A technique that turns an infinite set of conditions into a single algebraic structure. The corpus's treatments of infinite-component equations keep the components separate; here they are one convolution, which is why the subsidiary conditions can be handled at all.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum</em> in this folder, as the convolution technique.</p>
+<p><strong>What stands in the way.</strong> The factorisation depends on the unconventional mode definition, whose adoption is justified by its results rather than by a principle.</p>
+<p>The remainder, one line each. That the dual amplitude comes out only at one intercept is the constraint the later hybrid paper removes. That the proper-time-like formulation is given as an equivalent, not a replacement, is the earliest appearance in the folder of the parameter that later papers show disappears on quantisation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

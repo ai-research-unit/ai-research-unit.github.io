@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: quasinormal modes for &quot;squeezed&quot; horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes for squeezed horizons - gr-qc_0310097.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-quasinormal-modes-for-squeezed-horizons"><strong>Dirty black holes: quasinormal modes for "squeezed" horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0310097v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. J. M. Medved, Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 October 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes for squeezed horizons - gr-qc_0310097-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes for squeezed horizons - gr-qc_0310097.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes for squeezed horizons - gr-qc_0310097.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper treats quasinormal modes for spacetimes with two horizons close together, so that an observer sits between them. The authors note this is physically different from a near-extremal black hole seen from outside. Analytically they show the spacing of quasinormal frequencies equals the surface gravity at the squeezed horizons, and they compute the real part of the frequencies when the horizons are close enough, without requiring degeneracy. The calculation allows arbitrary matter in the region between the horizons, which generalises earlier work on a specific model.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-configuration">The configuration</h3>
+<p>"We consider the quasinormal modes for a class of black hole spacetimes that, informally speaking, contain a closely 'squeezed' pair of horizons. (This scenario, where the relevant observer is presumed to be 'trapped' between the horizons, is operationally distinct from near-extremal black holes with an external observer.)"</p>
+<h3 id="the-results">The results</h3>
+<p>"It is shown, by analytical means, that the spacing of the quasinormal frequencies equals the surface gravity at the squeezed horizons. Moreover, we can calculate the real part of these frequencies provided that the horizons are sufficiently close together (but not necessarily degenerate or even 'nearly degenerate')."</p>
+<h3 id="what-is-new">What is new</h3>
+<p>"The novelty of our analysis (which extends a model-specific treatment by Cardoso and Lemos) is that we consider 'dirty' black holes; that is, the observable portion of the (static and spherically symmetric) spacetime is allowed to contain an arbitrary distribution of matter."</p>
+<h3 id="the-perturbations-used">The perturbations used</h3>
+<p>"Allowing for the possibility of gravitational radiation, we will (closely following Chandrasekhar) consider small perturbations of the metric and characterize these by $q_r$, $q_t$ and $q_\theta$ ... The above equation describes the so-called axial perturbations, for which a change in the sign of $\phi$ necessitates that the perturbations must also change [sign]."</p>
+<h3 id="the-dependence-on-field-type">The dependence on field type</h3>
+<p>"the wave equation should, generally, depend on the type of field being discussed and not just its spin."</p>
+<h3 id="the-cross-check">The cross-check</h3>
+<p>"The computation reported below is an independent consistency check on that of Karlovini."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-horizons-an-observer-between">1. Two horizons, an observer between</h3>
+<p><strong>The idea.</strong> A squeezed pair of horizons is not the same as a near-extremal horizon; the observer's position matters.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> classifies horizons by structure. This paper shows that two horizons of the same local type can define different physical situations depending on where the observer is, which adds an observer-dependent entry to the classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The result is for a narrow class of spacetimes. Ranked first, because it adds a distinction the article's classification lacks.</p>
+<h3 id="2-spacing-again-equals-surface-gravity">2. Spacing again equals surface gravity</h3>
+<p><strong>The idea.</strong> The same spacing rule holds for squeezed horizons as for single ones.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain a second independent case where a horizon quantity is fixed by local data. Two cases are much better evidence than one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> The two cases share a method. Ranked second.</p>
+<h3 id="3-the-spectrum-depends-on-the-field">3. The spectrum depends on the field</h3>
+<p><strong>The idea.</strong> The wave equation depends on the field type, not only the spin.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code> treats one field. If the effective potential depends on field type, the article's single potential is a choice rather than a consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code>, in the definition of the potential.</p>
+<p><strong>What stands in the way.</strong> It is a remark, not a result. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

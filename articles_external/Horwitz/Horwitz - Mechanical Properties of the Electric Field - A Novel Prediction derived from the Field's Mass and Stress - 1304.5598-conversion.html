@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanical Properties of the Electric Field: A Novel Prediction Derived from the Field&#x27;s Mass and Stress — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Mechanical Properties of the Electric Field - A Novel Prediction derived from the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mechanical-properties-of-the-electric-field-a-novel-prediction-derived-from-the-fields-mass-and-stress"><strong>Mechanical Properties of the Electric Field: A Novel Prediction Derived from the Field's Mass and Stress</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1304.5598v1 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>E. Cohen, P. Beniamini, D. Grossman, L. P. Horwitz, A. C. Elitzur</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, April 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Mechanical Properties of the Electric Field - A Novel Prediction derived from the Field's Mass and Stress - 1304.5598-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Mechanical Properties of the Electric Field - A Novel Prediction derived from the Field's Mass and Stress - 1304.5598.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Mechanical Properties of the Electric Field - A Novel Prediction derived from the Field's Mass and Stress - 1304.5598.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Turns a philosophical question about field lines into an experiment. If the apparent bending of electric field lines is real — if the lines have mass and carry stress — then a charged pendulum swinging in the field of a larger charge will have its centre of mass displaced in proportion to the curvature of the lines. If the bending is only an artefact of drawing a superposition of two straight-line fields, there is no such displacement. The paper estimates the size of the effect and argues it is measurable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"An experiment is proposed which can distinguish between two approaches to the reality of the electric field, and whether it has mechanical properties such as mass and stress. A charged pendulum swings within the field of a much larger charge."</p>
+<h3 id="the-two-pictures">The two pictures</h3>
+<p>"The two fields manifest the familiar apparent curvature of their field-lines, 'bent' so as not to cross each other. If this phenomenon is real, the pendulum's center of mass must be proportionately shifted according to its lines' curvature. This prediction has no precise counterpart in the conventional interpretation, where this curvature is a mere superposition of the two fields' crossing lines."</p>
+<h3 id="the-stress-force">The stress force</h3>
+<p>Earlier work established that "the electric field carries also some of the charge's mass, and that, when the charge accelerates, its field produces stress force, manifested in the field-lines curvature", with the stress force related to the Maxwell stress tensor by $(F_s)_i=\partial\sigma_{ij}/\partial x_j$.</p>
+<h3 id="why-it-matters">Why it matters</h3>
+<p>"Classical electrodynamics is commonly believed to have exhausted its foundational questions, leaving further progress to relativity and quantum mechanics. This is far from being the case."</p>
+<p>"The present case in which the two possible answers give distinct predictions brings the question back to physics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-field-lines-can-be-taken-as-real-with-mass-and-stress">1. Field lines can be taken as real, with mass and stress</h3>
+<p><strong>The idea.</strong> A <strong>position</strong>: the lines of an electric field are not a drawing convention. They are parts of the field that carry energy, hence mass, and can exert stress. Their curvature is then a physical deformation, not an artefact of superposition.</p>
+<p><strong>What it would add.</strong> The corpus computes the Maxwell stress tensor and uses it as a bookkeeping device for momentum flux. This asserts that the tensor describes a material with mechanical properties, which changes what the tensor means: not a conserved current but a constitutive relation. For a corpus that takes the reality of its mathematical objects seriously, this is the consistent extension of that attitude to the field itself, and it is the only version of it with an experiment attached.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim needs the field's mass to be localisable, and the standard objection is that only total energy is defined; the paper's answer is the stress force, which is a local statement.</p>
+<h3 id="2-a-pendulum-test-for-the-reality-of-field-lines">2. A pendulum test for the reality of field lines</h3>
+<p><strong>The idea.</strong> A <strong>prediction</strong>: suspend a charged pendulum in the field of a much larger charge. If field-line curvature is physical, the pendulum's centre of mass shifts by an amount proportional to the curvature; if not, it does not.</p>
+<p><strong>What it would add.</strong> The corpus is almost entirely formal: derivations, identifications, limits. This is a laboratory proposal with a number attached, and it discriminates between two readings of the same formalism. Adding it gives the corpus at least one place where an interpretive choice is falsifiable, which is exactly what a reader sceptical of reinterpretation would ask for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The effect is small and competes with the ordinary force on the pendulum; the paper estimates it as measurable but not comfortably so.</p>
+<h3 id="3-interpretation-can-be-tested-not-just-argued">3. Interpretation can be tested, not just argued</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: when two interpretations of a formalism differ, look for a quantity one predicts and the other does not, rather than arguing about which is more natural.</p>
+<p><strong>What it would add.</strong> The corpus's interpretive articles argue for readings on grounds of consistency and elegance. This supplies the missing step: an interpretive difference that has an empirical consequence. It is a cheap and general recipe — ask what the interpretation predicts that the other forbids — and it would sharpen several of the corpus's existing interpretive claims about what a field or a wave function is.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> Most interpretive differences in the corpus do not have this structure, so the method is a template rather than a tool that applies everywhere.</p>
+<p>The rank: real field lines first, because it is the position; the pendulum test second, because it is a number; the method last, because it generalises.</p>
+<p>The remaining items in one line each: the stress-force formula, which is what makes the shift computable; the mass-in-the-field argument, which is the physical basis; and the extension to quantum mechanics and gravity promised as future work, which is where the position would be tested further.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

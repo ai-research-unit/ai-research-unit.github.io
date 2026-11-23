@@ -106,7 +106,7 @@ $$</p>
 <tbody>
 <tr>
 <td>scale</td>
-<td>$\varrho>0$</td>
+<td>$\varrho&gt;0$</td>
 <td>$\rho_{\mathrm{num}}=\varrho^{2}$</td>
 <td>proper density of the markers</td>
 </tr>
@@ -162,11 +162,11 @@ $$</p>
 $$</p>
 <p>The algebra is one line: $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec p)=m\nabla\cdot(\rho_{\mathrm{chg}}\vec v)$ because $\vec p=\gamma m\vec v$ and $\rho_{\mathrm{num}}\gamma=\rho_{\mathrm{chg}}$, and $\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi})=-mc\,\partial_{r'_t}\rho_{\mathrm{chg}}$.</p>
 <p>The marker density obeys a different equation, and the difference is the time dilation. $\rho_{\mathrm{num}}$ is the density in the fluid's own frame; $\rho_{\mathrm{chg}}$ is the density in the frame in which the flow is measured. They differ by $\gamma$, and $\gamma$ is not constant along the flow. A reader who writes $\partial_t\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$ has written the continuity equation of a different fluid; the correct statement carries $\rho_{\mathrm{chg}}$ on both occurrences.</p>
-<p>The scalar field has no boost factor, so $\gamma$ is signed. $\gamma=E/(mc^{2})$ and on the negative sheet $E<0$, so $\gamma<0$ and the four-velocity is past-directed. This is not a pathology of the notation; it is the sign defect of the charge density that the parent article records, in the fluid's own terms.</p>
+<p>The scalar field has no boost factor, so $\gamma$ is signed. $\gamma=E/(mc^{2})$ and on the negative sheet $E&lt;0$, so $\gamma&lt;0$ and the four-velocity is past-directed. This is not a pathology of the notation; it is the sign defect of the charge density that the parent article records, in the fluid's own terms.</p>
 <h2 id="the-euler-equation">The Euler Equation</h2>
-<p>A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line. Differentiating the mass shell in space, with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_\imath=\partial_\imathp_j$,</p>
+<p>A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line. Differentiating the mass shell in space, with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_{\imath}=\partial_{\imath} p_j$,</p>
 <p>$$
-\frac{E}{c^{2}}\partial_jE-p_\imath\partial_jp_\imath=m\partial_jQ_{\mathrm{qnt}}
+\frac{E}{c^{2}}\partial_jE-p_{\imath}\partial_jp_{\imath}=m\partial_jQ_{\mathrm{qnt}}
 \qquad\Longrightarrow\qquad
 \left(\partial_t+\vec v\cdot\nabla\right)p_j=-\frac{1}{\gamma}\partial_jQ_{\mathrm{qnt}} .
 $$</p>
@@ -177,7 +177,7 @@ $$</p>
 \frac{\mathrm{d}}{\mathrm{d}t}=\partial_t+\vec v\cdot\nabla,\quad \vec p=m\gamma\vec v .
 $$</p>
 <p><strong>The factor $1/\gamma$ is the relativistic inertia, and it is the point of the display.</strong> The force is the gradient of one scalar, so the flow is accelerated by a potential and by nothing else: no pressure gradient, no baroclinic term, no shear source. The inertia is $\gamma m$ rather than $m$, which is why the same gradient accelerates a fast flow less. At $\gamma\approx1$ the equation is the Bohm acceleration law of the non-relativistic fluid.</p>
-<p>The sign is the sign of a force down the potential. $Q_{\mathrm{qnt}}$ enters the mass shell with a plus sign, so the fluid is pushed towards lower $Q_{\mathrm{qnt}}$. A localised packet has $Q_{\mathrm{qnt}}>0$ inside its core and $Q_{\mathrm{qnt}}\to0$ far out, so the force points outward and the packet spreads. That is the quantum spreading, in the fluid's language.</p>
+<p>The sign is the sign of a force down the potential. $Q_{\mathrm{qnt}}$ enters the mass shell with a plus sign, so the fluid is pushed towards lower $Q_{\mathrm{qnt}}$. A localised packet has $Q_{\mathrm{qnt}}&gt;0$ inside its core and $Q_{\mathrm{qnt}}\to0$ far out, so the force points outward and the packet spreads. That is the quantum spreading, in the fluid's language.</p>
 <p>This is the third equation, and it is not an independent one. It is the gradient of the amplitude equation, so the pair plus this display is still the pair. The count is right: two real equations for two real unknowns, $\varrho$ and $S_{\tilde\Xi}$, with the acceleration law a consequence. A fluid whose equations are continuity, energy and acceleration over-determines itself; here the three are two.</p>
 <h2 id="the-vorticity">The Vorticity</h2>
 <p><strong>The velocity is a gradient, so the vorticity is zero wherever the action is twice differentiable.</strong> The vorticity is the 2-form of the four-velocity,</p>
@@ -198,7 +198,7 @@ $$</p>
 <p><strong>A fluid has an equation of state when its pressure is a function of its density at the same event.</strong> The scalar fluid has no such function, and the reason is the curvature in $Q_{\mathrm{qnt}}$.</p>
 <p>The objection is that the quantum term looks like a pressure. In the non-relativistic fluid the term $-\vec\nabla_\Phi Q$ is conventionally called the quantum pressure, and the name suggests a $p(\rho_{\mathrm{num}})$. The name is a misnomer twice over. First, $Q_{\mathrm{qnt}}$ depends on the density's first and second derivatives and not on its value, so a barotropic pressure would have to be a differential operator rather than a function: $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}[\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}]$. Second, the force is the gradient of an energy and not the gradient of a pressure over a density: $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is not $-\rho_{\mathrm{num}}^{-1}\vec\nabla_\Phi p$ for any function $p$ of the density's value.</p>
 <p>The class the fluid belongs to has a name, and naming it is the honest statement. A fluid whose stress depends on the gradients of its density rather than on the density alone is a Korteweg fluid, and a Korteweg fluid has no equation of state in the algebraic sense and a perfectly definite stress. This fluid is of that class, and the parent article's identity is what shows it: its pressure is a function of $\rho_{\mathrm{num}}$ and of the first two derivatives of $\rho_{\mathrm{num}}$, and of nothing else.</p>
-<p>What does exist is a stress, and the stress is not a pressure. The quantum force has the divergence form $\partial_\imath\sigma_{j\imath}$ with the tensor $\sigma$ exhibited in <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>, and that tensor is not isotropic: it is not $p\,\delta_{ij}$ for any scalar $p$. A divergence of an anisotropic stress is a force, not a pressure. So the fluid is one with a quantum stress and without an equation of state, and the two statements are consistent because a stress tensor carries more than a scalar pressure.</p>
+<p>What does exist is a stress, and the stress is not a pressure. The quantum force has the divergence form $\partial_{\imath}\sigma_{j\imath}$ with the tensor $\sigma$ exhibited in <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>, and that tensor is not isotropic: it is not $p\,\delta_{ij}$ for any scalar $p$. A divergence of an anisotropic stress is a force, not a pressure. So the fluid is one with a quantum stress and without an equation of state, and the two statements are consistent because a stress tensor carries more than a scalar pressure.</p>
 <p>The reader's check is the order of the derivatives. A barotropic pressure makes the force density $-\vec\nabla_\Phi p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\vec\nabla_\Phi\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.</p>
 <p>A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in <em>Biquaternion Relativistic Quantum Thermodynamics</em> and it is not anticipated here.</p>
 <h2 id="the-criterion-applied">The Criterion Applied</h2>
@@ -248,7 +248,7 @@ $$</p>
 \qquad
 \sum_{\jmath}V_{\jmath}V_{\jmath}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m} .
 $$</p>
-<p>The normalisation is invertible only where the quantum potential vanishes, and the display says so. The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is invertible on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert<c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}>-mc^{2}/2$. That is the qualification the first-order rung removes, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.</p>
+<p>The normalisation is invertible only where the quantum potential vanishes, and the display says so. The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is invertible on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert&lt;c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}&gt;-mc^{2}/2$. That is the qualification the first-order rung removes, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.</p>
 <p>The four-acceleration is minus the gradient of one scalar per unit mass, with no remainder. That is the criterion's third item verbatim, and the potential it names is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$: the quantum term alone, with $V=0$. The scalar fluid is therefore the pressureless member of the reverse map's family, and the family's nonlinear term is absent rather than small.</p>
 <p>The two frame failures carry $\gamma$ for one reason, and the reason is already in §The Vorticity. $\vec v$ is not the spatial part of a four-vector, $\gamma\vec v$ is, so a criterion written in $\vec v$ is a criterion written in a frame, and a projection costs a factor of $\gamma$ at each step. The four-velocity is $\tilde V_\Phi=\gamma\vec v+i\gamma c\,e_t$, so $\sum_{\jmath} V_{\jmath}\partial_{\jmath}=\gamma c\,\partial_{r'_t}+\gamma\vec v\cdot\nabla=\gamma\,\mathrm{D}$: the covariant derivative and the frame's differ by the single factor $\gamma$. Applying it to $p_j$ and then to $v_j=p_j/(m\gamma)$ gives</p>
 <p>$$
@@ -296,16 +296,16 @@ $$</p>
 <tbody>
 <tr>
 <td>positive frequency</td>
-<td>$>0$</td>
-<td>$>0$</td>
-<td>$>0$</td>
+<td>$&gt;0$</td>
+<td>$&gt;0$</td>
+<td>$&gt;0$</td>
 <td>future-directed</td>
 </tr>
 <tr>
 <td>negative frequency</td>
-<td>$<0$</td>
-<td>$<0$</td>
-<td>$>0$</td>
+<td>$&lt;0$</td>
+<td>$&lt;0$</td>
+<td>$&gt;0$</td>
 <td>past-directed</td>
 </tr>
 </tbody>
@@ -504,7 +504,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\varrho$</td>
-<td>Amplitude; $\varrho>0$</td>
+<td>Amplitude; $\varrho&gt;0$</td>
 </tr>
 <tr>
 <td>$\rho_{\mathrm{num}}=\varrho^{2}$</td>

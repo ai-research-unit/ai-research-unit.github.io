@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxwell and Dirac Theories as an Already Unified Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Maxwell and Dirac theories as an already unified theory - 9511181.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="maxwell-and-dirac-theories-as-an-already-unified-theory"><strong>Maxwell and Dirac Theories as an Already Unified Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9511181v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Vaz, Jr., W. A. Rodrigues, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 November 1995</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Maxwell and Dirac theories as an already unified theory - 9511181-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Maxwell and Dirac theories as an already unified theory - 9511181.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-dirac-maxwell-correspondence-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Maxwell and Dirac theories as an already unified theory - 9511181.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the phrase "already unified theory" from Misner and Wheeler, who made the electromagnetic field a square root of the Ricci tensor, and applies the same scheme to Maxwell and Dirac: the Faraday bivector is written as a Dirac spinor times a fixed bivector times the spinor's reverse, so a spinor field becomes a "Dirac square root" of the electromagnetic field. Maxwell's equation, rewritten for that spinor, is formally Dirac's equation. The rest of the paper asks when the formal identity deserves to be read as an identity, and finds the answer in the mass term. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"In this paper we formulate Maxwell and Dirac theories as an already unified theory (in the sense of Misner and Wheeler). We introduce Dirac spinors" Dirac square root "of the Faraday bivector, and use this in order to find a spinorial representation of Maxwell equations."</p>
+<p>"Then we show that under certain circumstances this spinor equation reduces to an equation formally identical to Dirac equation. Finally we discuss certain conditions under which this equation can be really interpreted as Dirac equation, and some other possible interpretations of this result."</p>
+<h3 id="the-theorem">The theorem</h3>
+<p>"n also prove that any R ∈ Spin+(1,3) can be written in the form R = ±eB with B ∈ V2 (I R1,3 ), and the choice of the sign can always be the positive one except when R = −eB with B2 = 0." The proof splits on the invariant: for $F^2\neq0$ it is the Rainich–Misner–Wheeler theorem, and the spinor is recovered in canonical form $\psi=\sqrt\rho\,e^{\gamma_5\beta/2}R$; the null cases are handled separately.</p>
+<h3 id="the-defect-of-the-obvious-construction">The defect of the obvious construction</h3>
+<p>Representations that put the field components into the spinor's slots fail, and the reason is transformation law, not counting: "The deficiency of this representations is obvious: the action of the Lorentz group on the spinor field does not give the correct transformation laws for the electric and magnetic fields – in fact, a spinor changes sign after a 2π rotation, while the electromagnetic field components does not. A detailed"</p>
+<h3 id="where-the-identity-stops">Where the identity stops</h3>
+<p>The spinor equation is read as Dirac's by interpreting the mass term. Writing $\phi=\phi_0e^{-\gamma_{21}\chi}$, the vector part of the equation "looks as a factorized Hamilton-Jacobi equation with χ playing the role of the action function. Indeed, consider the free case: A = 0.", and the mass that appears in it is $M=m\cos\beta$ — "which is just our variable mass". Since a variable mass needs a cause, "the natural interpretation of this first term is a quantum electromagnetic potential $A_Q$", with $eA_Q=\langle\partial\phi_0\gamma_{21}\phi_0^{-1}\rangle_1$.</p>
+<p>The leftover pseudo-vector part is offered a reading as "longitudinal and transversal masses", the paper's own words: an "interesting interpretation for mcosβ and msinβ in eqs.(99,100) and eqs." "would be that of longitudinal and transversal masses, respectively. Further"</p>
+<h3 id="the-precondition">The precondition</h3>
+<p>the construction rests on "the existence of non trivial solutions of the free Maxwell equations" with a non-zero invariant And those exist: "They correspond to subluminal and superluminal solutions of Maxwell equations in vacuum!" — the companion paper's result.</p>
+<p>One case is left open: "the above relationship between Maxwell and Dirac equations emerged from the free Maxwell equations. However, we have a current eψγ0ψ̃ which is a source of a self-field; that is, we have a feedback process. Studies in this case can be found in [Ca90]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-transformation-law-is-the-test-not-the-component-count">1. The transformation law is the test, not the component count</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: a spinorial representation of the electromagnetic field is correct only if the spinor's transformation law reproduces the field's. Counting components is not enough, and the sharpest failure is the sign under a $2\pi$ rotation, which a spinor has and a field does not.</p>
+<p><strong>What it would add.</strong> The corpus's Dirac–Maxwell article arrives at the spinor bilinear by construction and states the two constraints that reduce the degrees of freedom. It does not state the negative result — that the obvious construction fails — nor why. A negative result with a one-line diagnostic is worth having, because it tells a reader what to check before believing any future spinorial rewriting of a field equation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-dirac-maxwell-correspondence-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's formalism never represents a field by a bare spinor, so the failure mode is external to it; the diagnostic would be advice about other people's constructions.</p>
+<h3 id="2-mass-as">2. Mass as</h3>
+<p>$m\cos\beta$, with a quantum potential for the remainder</p>
+<p><strong>The idea.</strong> A <strong>construction</strong>: split the spinor into modulus and phase, and the mass term of the resulting Hamilton–Jacobi equation comes out as $m\cos\beta$, with $\beta$ the Takabayasi angle. What makes the mass vary is then read off as an extra potential, $eA_Q=\langle\partial\phi_0\gamma_{21}\phi_0^{-1}\rangle_1$, and the pseudo-vector companion as a second, longitudinal mass.</p>
+<p><strong>What it would add.</strong> The corpus's non-quantum limit derives the relativistic Hamilton–Jacobi equation and the Lorentz force, and its polar-variables article carries the mass as a four-vector factor. Neither gives the mass an angle. A mass that is $m\cos\beta$ and a companion $m\sin\beta$ is a concrete prediction-shaped statement: it says that a spinor with a non-zero Takabayasi angle has two masses, and that a potential term absorbs the difference. That is testable in principle against the corpus's own polar decomposition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper's own reading is a speculation: a quantum pseudo-potential is offered as one possibility, and the authors concede that <em>it is not clear what underlies it</em>, and the corpus would have to check the $m\cos\beta$ identification against its own mass-shell condition before quoting it.</p>
+<h3 id="3-the-correspondence-has-an-existence-precondition">3. The correspondence has an existence precondition</h3>
+<p><strong>The idea.</strong> A <strong>dependency</strong>: the Maxwell–Dirac identity holds only for fields with $F^2\neq0$, so it is only as available as non-null free solutions are. Null fields — every plane wave — cannot carry the identification.</p>
+<p><strong>What it would add.</strong> The corpus's article proves the identity and treats the null case as a limit. This says the limit is not a technicality: the whole construction rests on the existence of free solutions with non-zero invariant, which is exactly what the companion paper had to construct. That converts a theorem into a conditional with a visible hypothesis, and it explains why the Rodrigues–Vaz programme needed the subluminal family first.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-field-strength-biquaternion-and-its-invariants.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's identity is stated for a general field and the null case is handled; asserting a precondition would require checking whether the corpus's version really shares the restriction or has weakened it.</p>
+<p>The rank: the transformation-law test first, because it is a usable check; the two-mass reading second, because it is a quantitative proposal; the precondition last, because it is a remark about the programme's architecture.</p>
+<p>The remaining items in one line each: the Rainich–Misner–Wheeler theorem as the engine of the non-null case, which is the classical result that makes a square root possible at all; the canonical decomposition $\psi=\sqrt\rho e^{\gamma_5\beta/2}R$ used as the parameterisation, which is the same decomposition the corpus's polar articles use; and the admitted gap for sources, which turns the identity into an equation with a self-field and is where the programme stops.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards a non-singular paradigm of black hole physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Non-singular Paradigm of Black Hole Physics - 2501.05505.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-a-non-singular-paradigm-of-black-hole-physics"><strong>Towards a non-singular paradigm of black hole physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>review article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2501.05505v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser, and 19 further authors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 June 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Towards a Non-singular Paradigm of Black Hole Physics - 2501.05505-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Non-singular Paradigm of Black Hole Physics - 2501.05505.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Non-singular Paradigm of Black Hole Physics - 2501.05505.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a multi-author overview of regular black holes and black hole mimickers. The motivation is twofold: general relativity must be extended inside horizons, and observations now probe that region. The authors set out the open problems in classifying physically motivated regular models. They review the mathematical tools available, including outer horizons. They argue the programme is sound and the machinery is nearly ready.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"to standard black holes has recently gained significant attention, driven both by the need to extend general relativity to describe black hole interiors, and by recent advances in observational technologies"</p>
+<h3 id="the-problem">The problem</h3>
+<p>"significant challenges remain in identifying and characterizing physically well-motivated classes of regular black holes and black hole mimickers"</p>
+<h3 id="the-purpose">The purpose</h3>
+<p>"This paper provides an overview of these challenges"</p>
+<h3 id="the-thesis">The thesis</h3>
+<p>"The theoretical motivation to construct a non-singular paradigm of black hole physics, in which black holes are not described as the singular end state of gravitational collapse, but rather as regular and metastable bound states of the gravitational field, is sound."</p>
+<h3 id="the-readiness">The readiness</h3>
+<p>"the required mathematical machinery to develop such a new paradigm is reaching a mature stage, with concepts such as outer horizons providing suitable [tools]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-black-holes-as-bound-states">1. Black holes as bound states</h3>
+<p><strong>The idea.</strong> Replace a singular endpoint with a metastable bound state of the field.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> asks what a horizon is for. A bound-state picture answers with a different ontology.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of what replaces the singularity.</p>
+<p><strong>What stands in the way.</strong> No unique model is selected. Ranked first, because it frames the whole question.</p>
+<h3 id="2-outer-horizons-as-the-tool">2. Outer horizons as the tool</h3>
+<p><strong>The idea.</strong> A horizon notion can be defined without global structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain the specific technical notion the programme uses.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of definitions.</p>
+<p><strong>What stands in the way.</strong> The notion is still being sharpened. Ranked second.</p>
+<h3 id="3-twenty-two-authors">3. Twenty-two authors</h3>
+<p><strong>The idea.</strong> A consensus document shows where a field agrees and where it does not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a benchmark of mainstream positions for comparison.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of alternatives.</p>
+<p><strong>What stands in the way.</strong> Consensus documents blur disagreements. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body Problem — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lyapunov-vs-geometrical-stability-analysis-of-the-kepler-and-the-restricted-three-body-problem"><strong>Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body Problem</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0908.1124v4 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. Yahalom, J. Levitan, M. Lewkowicz, L. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 20 October 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body Problem - 0908.1124-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body Problem - 0908.1124.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Lyapunov vs. Geometrical Stability Analysis of the Kepler and the Restricted Three Body Problem - 0908.1124.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Puts two stability criteria side by side on the same systems and reports that they disagree where the answer is known. Standard Lyapunov analysis calls the Kepler problem unstable, although Kepler motion is integrable and observationally stable. The geometrical analysis of the conformal-metric programme calls it stable. The authors take the agreement with observation as evidence that the Lyapunov analysis is incomplete and the geometric one is right, and they extend the comparison to the restricted three-body problem.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"In this letter we show that although the application of standard Lyapunov analysis predicts that completely integrable Kepler motion is unstable, the geometrical analysis of Horwitz et al predicts the observed stability."</p>
+<h3 id="what-that-is-taken-to-establish">What that is taken to establish</h3>
+<p>"This seems to us to provide evidence for both the incompleteness of the standard Lyapunov analysis and the strength of the geometrical analysis."</p>
+<h3 id="the-earlier-literature-it-corrects">The earlier literature it corrects</h3>
+<p>Safaai and Saadat had applied the geometric method to the restricted three-body problem, finding that "the curvature of the manifold along the geodesics yield parametric instability of the trajectories", and "also calculated a positive Lyapunov exponent". The objection: a positive exponent computed for these orbits "demonstrates stability for these orbits" under the correct criterion — the two diagnostics point opposite ways.</p>
+<h3 id="why-the-new-criterion-should-be-preferred">Why the new criterion should be preferred</h3>
+<p>There is a possibility "to characterize instability in Hamiltonian systems by a geometrical approach which takes its point of origin in the curvature associated with a conformal Riemann metric tensor essentially different from the Jacobi metric". And: "This approach appears to be more sensitive than computing Lyapunov exponents or the use of the Jacobi metric."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-integrable-system-can-be-called-unstable">1. An integrable system can be called unstable</h3>
+<p><strong>The idea.</strong> A <strong>counterexample</strong>: Kepler motion is integrable, has closed orbits, and is stable in every observational sense, yet its Lyapunov exponent computed in the standard way is positive. The exponent therefore does not measure what "unstable" is supposed to mean.</p>
+<p><strong>What it would add.</strong> The corpus's Kepler and central-force articles describe closed orbits as a consequence of the hidden $\mathfrak{so}(4)$ symmetry, and its Lyapunov article treats the exponent as a diagnostic. Putting the two together gives a sharp internal warning: the corpus already possesses the argument that the exponent is unreliable, in the form of its own exactly solvable system. That is a stronger position than importing a foreign critique.</p>
+<p><strong>Where it lands.</strong> <code>central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The positive exponent for Kepler is an artefact of the coordinate system in which it is computed, so the corpus would have to say which coordinates it uses and why.</p>
+<h3 id="2-two-criteria-one-system-opposite-answers">2. Two criteria, one system, opposite answers</h3>
+<p><strong>The idea.</strong> A <strong>test</strong>: when two diagnostics disagree on a case with a known answer, the case decides between them. Kepler is the known case, and it selects the curvature criterion.</p>
+<p><strong>What it would add.</strong> The corpus's methodology articles compare formalisms by checking that they reproduce known results. This is a comparison of two <em>criteria</em> rather than two formalisms, settled by a third-party fact. It is a small but clean piece of scientific method, and it gives the corpus a template for adjudicating between competing diagnostics in its own work.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> One system is a thin basis for a general preference; the restricted three-body comparison in the same letter is the only other case.</p>
+<h3 id="3-bounded-orbits-and-chaotic-orbits-can-share-a-diagnosis">3. Bounded orbits and chaotic orbits can share a diagnosis</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: in the restricted three-body problem the geometric criterion finds instability while the motion remains bounded, so boundedness is not evidence of stability and instability is not evidence of escape.</p>
+<p><strong>What it would add.</strong> The corpus's orbital articles treat boundedness as the signature of a bound state. This separates boundedness from stability: an orbit can be trapped and unstable. That distinction matters wherever the corpus identifies bound states with closed or confined motion, and it is the kind of clarification that changes how a result is phrased.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is drawn from a numerical study of a specific problem, and the corpus's bound-state articles are analytic.</p>
+<p>The rank: the integrable-but-unstable counterexample first, because it is decisive; the two-criteria test second, because it is method; the boundedness distinction last, because it is a clarification.</p>
+<p>The remaining items in one line each: the Jacobi metric as the older geometric candidate, which the paper sets aside in favour of the conformal one; the sensitivity claim, that the conformal criterion detects instability earlier than the exponent; and the reference to a forthcoming paper on geometrically dual manifolds, which is where the construction is developed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

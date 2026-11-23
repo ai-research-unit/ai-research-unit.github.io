@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum vacuum radiation in optical glass — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-vacuum-radiation-in-optical-glass"><strong>Quantum vacuum radiation in optical glass</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1111.0214v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Angus Prain, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 1 November 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An experiment reported radiation from a rapidly changing refractive index in glass. The authors ask whether this is Hawking radiation or another form of vacuum radiation. Simple estimates of the dynamical Casimir effect look too small to explain it. They argue the estimates miss two effects: pulse steepening and pulse cresting. With plausible bounds on these, the predicted amount comes close to what was seen. They conclude the effect deserves more study.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Is this really Hawking radiation, or some other form of quantum vacuum radiation?"</p>
+<h3 id="the-problem">The problem</h3>
+<p>"Naive estimates of the amount of quantum vacuum radiation generated due to the rapidly changing refractive index — sometimes called the dynamical Casimir effect — are not encouraging."</p>
+<h3 id="the-doubt">The doubt</h3>
+<p>"However we feel that naive estimates could be misleading depending on the quantitative magnitude of two specific physical effects: 'pulse steepening' and 'pulse cresting'."</p>
+<h3 id="the-result">The result</h3>
+<p>"Plausible bounds on the maximum size of these two effects results in estimates much closer to the experimental observations"</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"we argue that the dynamical Casimir effect is now worth additional investigation"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-medium-that-mimics-a-horizon">1. A medium that mimics a horizon</h3>
+<p><strong>The idea.</strong> Light in a moving medium can see an effective horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code> separates subluminal from superluminal propagation. An effective horizon is exactly where the two meet.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>, in the discussion of speeds.</p>
+<p><strong>What stands in the way.</strong> The analogy is optical. Ranked first, because it makes the speed classification operational.</p>
+<h3 id="2-estimates-can-be-too-pessimistic">2. Estimates can be too pessimistic</h3>
+<p><strong>The idea.</strong> A crude estimate can miss the mechanism that makes an effect observable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> compares predictions with data. This is a case where the comparison turned on a neglected detail.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of predictions.</p>
+<p><strong>What stands in the way.</strong> The bound is plausible, not derived. Ranked second.</p>
+<h3 id="3-pulse-shape-matters">3. Pulse shape matters</h3>
+<p><strong>The idea.</strong> Steepening and cresting change the spectrum that is produced.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code> links field behaviour to fluid behaviour. A pulse in a medium is a case where shape controls the output.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>, in the discussion of the correspondence.</p>
+<p><strong>What stands in the way.</strong> The connection is loose. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

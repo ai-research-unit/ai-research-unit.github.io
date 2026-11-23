@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eikonal Approximation (second download) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Eikonal_approximation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="eikonal-approximation-second-download"><strong>Eikonal Approximation (second download)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Eikonal approximation</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Eikonal_approximation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Eikonal_approximation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Eikonal_approximation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is the same encyclopedia article as <code>Eikonal approximation.pdf</code> in the same folder, downloaded a second time under a filename with an underscore instead of a space. The two PDFs are the same length and the same text; the significance of this file is the duplication, not the content.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-it-is-for">What it is for</h3>
+<p>"the eikonal approximation (Greek εἰκών for likeness, icon or image) is an approximative method useful in wave scattering equations, which occur in optics, seismology, quantum mechanics, quantum electrodynamics, and partial wave expansion."</p>
+<h3 id="the-reduction">The reduction</h3>
+<p>"The main advantage that the eikonal approximation offers is that the equations reduce to a differential equation in a single variable. This reduction into a single variable is the result of the straight line approximation or the eikonal approximation, which allows us to choose the straight line as a special direction."</p>
+<h3 id="the-relation-to-wkb">The relation to WKB</h3>
+<p>"The early steps involved in the eikonal approximation in quantum mechanics are very closely related to the WKB approximation for one-dimensional waves."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-filename-collisions-hide-duplicates">1. Filename collisions hide duplicates</h3>
+<p><strong>The idea.</strong> A space and an underscore produce two files for one source. A migration that treated filenames as identity would count two publications.</p>
+<p><strong>What it would add.</strong> A rule for the corpus's own accounting: identity is the source, not the filename. Three such pairs appear in this folder.</p>
+<p><strong>Where it lands.</strong> Nowhere in the corpus; it is a remark on this folder.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-the-approximation-is-the-same-article-so-the-physics-is-recorded-once">2. The approximation is the same article, so the physics is recorded once</h3>
+<p><strong>The idea.</strong> Repeating a summary would inflate the corpus's coverage of a topic without adding a source.</p>
+<p><strong>What it would add.</strong> Nothing beyond the pointer.</p>
+<p><strong>Where it lands.</strong> The conversion of the longer-named file.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<p>No content here is new; the file duplicates <code>Eikonal approximation.pdf</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

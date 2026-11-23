@@ -95,12 +95,12 @@ $$</p>
 <h2 id="the-extension-by-zero">The Extension by Zero</h2>
 <p><strong>Definition.</strong> The <strong>extension by zero</strong> of a sheaf $\mathcal{M}$ on $\Omega$ is the sheaf $j_!\mathcal{M}$ on $X$ obtained by sheafifying the presheaf</p>
 <p>$$
-V\longmapsto \begin{cases}\mathcal{M}(V), & V\subseteq \Omega,\\ 0, & V\not\subseteq \Omega.\end{cases}
+V\longmapsto \begin{cases}\mathcal{M}(V), &amp; V\subseteq \Omega,\\ 0, &amp; V\not\subseteq \Omega.\end{cases}
 $$</p>
 <p>It is a functor $j_!:\mathrm{Sh}(\Omega)\to\mathrm{Sh}(X)$, and it is a subsheaf of the direct image $j_*\mathcal{M}$, namely the subsheaf of sections whose support is contained in $\Omega$, with support in the sense of <em>Presheaves and Sheaves</em>.</p>
 <p><strong>Proposition (stalks and support).</strong> For every $x\in X$,</p>
 <p>$$
-(j_!\mathcal{M})_x= \begin{cases}\mathcal{M}_x, & x\in \Omega,\\ 0, & x\notin \Omega,\end{cases}
+(j_!\mathcal{M})_x= \begin{cases}\mathcal{M}_x, &amp; x\in \Omega,\\ 0, &amp; x\notin \Omega,\end{cases}
 $$</p>
 <p>so that $\operatorname{Supp}(j_!\mathcal{M})$ is a closed subset of $X$ contained in $\Omega$, and $j_!\mathcal{M}$ is the unique sheaf on $X$ with these stalks and with a morphism $j_!\mathcal{M}\to j_*\mathcal{M}$ that is an isomorphism over $\Omega$. In particular $j_!\mathcal{M}$ is a subsheaf of $j_*\mathcal{M}$ and the quotient $j_*\mathcal{M}/j_!\mathcal{M}$ is supported in $X\setminus \Omega$.</p>
 <p><em>Proof.</em> The stalk of the sheafification at $x$ is the stalk of the presheaf, which is the colimit over the open neighbourhoods $V$ of $x$ of the values displayed; for $x\in \Omega$ the cofinal system of the $V\subseteq \Omega$ contributes $\mathcal{M}_x$, and for $x\notin \Omega$ every $V$ in the system contains points outside $\Omega$ and the colimit is $0$. The support statement is the complement of the vanishing locus, which is open by the first part. The identification with a subsheaf of $j_*\mathcal{M}$ is the universal property of the sheafification, and the stalk computation identifies the quotient.</p>
@@ -131,7 +131,7 @@ $$</p>
 <li>$j_*$ is left exact and not right exact in general: it preserves kernels and finite limits, and it does not preserve cokernels.</li>
 </ol>
 <p><em>Proof.</em> (1) is the sectionwise computation of <em>The Restriction Functor</em> and the adjoint-chain corollary. (2) is the stalk computation of <em>The Extension by Zero</em> and the left-adjoint property. (3) The preservation of limits is the right-adjoint property; the failure of right exactness is the failure of the direct image to commute with cokernels, recorded for a general continuous map in <em>Presheaves and Sheaves</em>, and exhibited there by the exponential sequence.</p>
-<p><strong>Corollary (derived functors).</strong> Since $j_!$ is exact, $R^p j_!=0$ for $p>0$, and the derived functors of the extension by zero are trivial; in particular the cohomology of $X$ with coefficients in $j_!\mathcal{M}$ is computed by the naive complex, $H^i(X,j_!\mathcal{M})=H^i\bigl(\Gamma(X,j_!\mathcal{M}^\bullet)\bigr)$ for any resolution $\mathcal{M}^\bullet$ of $\mathcal{M}$ by sheaves on $\Omega$. Since $j_*$ is left exact and not right exact, it has higher direct images $R^p j_*$, the sheaves on $X$ with stalk $(R^pj_*\mathcal{M})_x=\varinjlim_{V\ni x}H^p(V\cap \Omega,\mathcal{M})$, computed in <em>Sheaf Cohomology</em> and <em>Derived Functors and Sheaf Cohomology</em>.</p>
+<p><strong>Corollary (derived functors).</strong> Since $j_!$ is exact, $R^p j_!=0$ for $p&gt;0$, and the derived functors of the extension by zero are trivial; in particular the cohomology of $X$ with coefficients in $j_!\mathcal{M}$ is computed by the naive complex, $H^i(X,j_!\mathcal{M})=H^i\bigl(\Gamma(X,j_!\mathcal{M}^\bullet)\bigr)$ for any resolution $\mathcal{M}^\bullet$ of $\mathcal{M}$ by sheaves on $\Omega$. Since $j_*$ is left exact and not right exact, it has higher direct images $R^p j_*$, the sheaves on $X$ with stalk $(R^pj_*\mathcal{M})_x=\varinjlim_{V\ni x}H^p(V\cap \Omega,\mathcal{M})$, computed in <em>Sheaf Cohomology</em> and <em>Derived Functors and Sheaf Cohomology</em>.</p>
 <p><strong>Example (the failure of right exactness of the direct image).</strong> Let $X=\mathbb{C}^*$ and let $\Omega\subset X$ be a simply connected open subset; let $\mathcal{O}$ be the sheaf of continuous complex-valued functions on $\Omega$ and $\mathcal{O}^*$ the sheaf of nowhere-zero ones. The exponential map is a surjection of sheaves on $\Omega$, and $j_*$ preserves its kernel; but a global section of $j_*\mathcal{O}^*$ over $X$ need not lie in the image of $j_*\mathcal{O}\to j_*\mathcal{O}^*$, since the identity function of $X$ has no continuous logarithm. Hence $j_*$ does not preserve the cokernel of the first map, and it is not right exact.</p>
 <h2 id="the-operators-induced-on-cohomology">The Operators Induced on Cohomology</h2>
 <p><strong>Proposition (extension preserves cohomology of the open set).</strong> The exactness of $j_!$ gives, for every $i$,</p>
@@ -203,7 +203,7 @@ $$</p>
 </tr>
 <tr>
 <td>$R^pj_!$, $R^pj_*$</td>
-<td>derived functors; $R^pj_!=0$ for $p>0$, $R^pj_*$ the higher direct images</td>
+<td>derived functors; $R^pj_!=0$ for $p&gt;0$, $R^pj_*$ the higher direct images</td>
 </tr>
 <tr>
 <td>$H^i(X,j_!\mathcal{M})=H^i_c(\Omega,\mathcal{M})$</td>

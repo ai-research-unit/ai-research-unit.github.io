@@ -75,7 +75,7 @@
 <p>The spectral data are those of <em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Invertibles</em>; they are collected in §<em>The Eigenvalue Data</em> and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of <em>Split-Complex Algebra</em>; the norm and the group of invertibles are those of <em>Norm and Invertibility in the General Split-Complex Algebra</em>; the idempotents are those of <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>.</p>
 <p><strong>Plan.</strong> The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the real and complex cases close the theory (§<em>Relations to the Neighbouring Cases</em>). The results are collected in tables in §<em>Summary</em>, including the comparison with the reduced biquaternion and biquaternion cases.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
-<p><strong>Notation.</strong> A split-complex number is written $Q=q+jq'$ with $q,q'\in\mathbb{R}$ and $j^{2}=1$. The conjugate is $\bar Q=q-jq'$ and the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$.</p>
+<p><strong>Notation.</strong> A split-complex number is written $Q=q+jq'$ with $q,q'\in\mathbb{R}$ and $j^{2}=1$. The conjugate is $\bar Q=q-jq'$ and the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'{}^{2}$.</p>
 <h2 id="the-spectral-setting">The Spectral Setting</h2>
 <h3 id="the-eigenvalue-data">The Eigenvalue Data</h3>
 <p>The spectral data are those of <em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Invertibles</em>. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.</p>
@@ -113,7 +113,7 @@
 </tr>
 <tr>
 <td>Norm</td>
-<td>$\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$</td>
+<td>$\langle Q\rangle_{*}=q^2-q'{}^2=\lambda_+\lambda_-$</td>
 </tr>
 <tr>
 <td>Unit criterion</td>
@@ -131,7 +131,7 @@
 </table></div>
 <p>The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The pair $(\Pi_+,\Pi_-)$ is the only nontrivial pair of complementary orthogonal idempotents, and both members are primitive and central because the algebra is commutative.</p>
 <h3 id="the-regimes">The Regimes</h3>
-<p>The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the invertibles and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of <em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>, §<em>Degenerate Regimes</em>.</p>
+<p>The algebra has two spectral regimes, read from the discriminant $4q'{}^2$ of the characteristic polynomial; the distinct regime splits into the invertibles and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of <em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>, §<em>Degenerate Regimes</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -161,7 +161,7 @@
 <p>The algebra is reduced: the only nilpotent is $0$ (<em>The Specificities of the Split-Complex Algebra</em>). There is therefore no nilpotent regime. The distinct regime splits into the invertibles and the zero divisors according to whether the norm vanishes, and the scalar regime is the only spectral degeneration. In the scalar regime the eigenvalue decomposition has one term, and the two-term writing is a non-unique refinement; the functions below are unaffected, because their spectral form is continuous in $\lambda_\pm$.</p>
 <h3 id="the-idempotent-principle">The Idempotent Principle</h3>
 <p>Every elementary function of this article, and every higher special function of <em>Split-Complex Higher Special Functions</em>, is read on the two eigenvalues. The rule is stated once.</p>
-<p><strong>Theorem (Idempotent Principle).</strong> Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{C}_{\mathrm{spl}}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert<\rho$. Then the series $\sum c_nQ^n$ converges and</p>
+<p><strong>Theorem (Idempotent Principle).</strong> Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{C}_{\mathrm{spl}}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert&lt;\rho$. Then the series $\sum c_nQ^n$ converges and</p>
 <p>$$
 \Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-.
 $$</p>
@@ -195,7 +195,7 @@ $$</p>
 <p>$$
 \boxed{\; \exp(j\theta)=\cosh\theta+j\sinh\theta \;}.
 $$</p>
-<p>Both eigenvalues of $\exp Q$ are positive, $\exp(\lambda_\pm)>0$, so the image lies in the set $\{\lambda_+>0,\ \lambda_->0\}$, the future cone $F=\{Q:q>\lvert q'\rvert\}$.</p>
+<p>Both eigenvalues of $\exp Q$ are positive, $\exp(\lambda_\pm)&gt;0$, so the image lies in the set $\{\lambda_+&gt;0,\ \lambda_-&gt;0\}$, the future cone $F=\{Q:q&gt;\lvert q'\rvert\}$.</p>
 <h3 id="the-kernel-and-the-image">The Kernel and the Image</h3>
 <p>The exponential is injective. In the spectral form, $\exp(Q_1)=\exp(Q_2)$ forces $\exp(\lambda_{1+})=\exp(\lambda_{2+})$ and $\exp(\lambda_{1-})=\exp(\lambda_{2-})$, hence $\lambda_{1\pm}=\lambda_{2\pm}$ and $Q_1=Q_2$. There is no period to quotient out.</p>
 <div class="table-scroll"><table>
@@ -212,7 +212,7 @@ $$</p>
 </tr>
 <tr>
 <td>Image</td>
-<td>the future cone $F=\{Q:\lambda_+>0,\ \lambda_->0\}=\{Q:q>\lvert q'\rvert\}$</td>
+<td>the future cone $F=\{Q:\lambda_+&gt;0,\ \lambda_-&gt;0\}=\{Q:q&gt;\lvert q'\rvert\}$</td>
 </tr>
 <tr>
 <td>Periods</td>
@@ -248,7 +248,7 @@ $$</p>
 </tr>
 <tr>
 <td>Norm</td>
-<td>$\langle\exp Q\rangle_{*}=\exp(2q)>0$</td>
+<td>$\langle\exp Q\rangle_{*}=\exp(2q)&gt;0$</td>
 </tr>
 <tr>
 <td>Derivative</td>
@@ -264,7 +264,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The norm row uses the split-complex norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$.</p>
+<p>The norm row uses the split-complex norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$.</p>
 <h2 id="the-logarithm">The Logarithm</h2>
 <h3 id="definition_1">Definition</h3>
 <p>A <strong>logarithm</strong> of $Q\in\mathbb{C}_{\mathrm{spl}}$ is an element $Q_{\log}$ with $\exp(Q_{\log})=Q$. The exponential is injective (§<em>The Kernel and the Image</em>), so a logarithm is unique when it exists; the only question is its domain. Throughout, $\log$ applied to a positive real number is the ordinary real logarithm.</p>
@@ -291,14 +291,14 @@ and the split coefficient $q'_{\log}$ is the hyperbolic angle, computed in §<em
 \qquad
 \exp\bigl(q_{\log}-q'_{\log}\bigr)=\lambda_-,
 $$</p>
-<p>where $\lambda_\pm=q\pm q'$ are the eigenvalues of $Q$. Both left sides are positive, so a solution exists exactly when $\lambda_+>0$ and $\lambda_->0$. When it exists it is unique, because the two real exponentials are injective. Subtracting the two equations gives the split coordinate,
+<p>where $\lambda_\pm=q\pm q'$ are the eigenvalues of $Q$. Both left sides are positive, so a solution exists exactly when $\lambda_+&gt;0$ and $\lambda_-&gt;0$. When it exists it is unique, because the two real exponentials are injective. Subtracting the two equations gives the split coordinate,
 $$
 q'_{\log}=\tfrac12\ln\frac{\lambda_+}{\lambda_-},
 $$
 and §<em>The Scalar Part</em> gives $q_{\log}$. The logarithm is</p>
 <p>$$
 \boxed{\; \log Q=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-}
-=\frac{1}{2}\ln(q^2-q'^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right) \;},
+=\frac{1}{2}\ln(q^2-q'{}^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right) \;},
 $$</p>
 <p>and in the idempotent basis it is the single line</p>
 <p>$$
@@ -318,7 +318,7 @@ $$</p>
 <tr>
 <td>$q_{\log}$</td>
 <td>logarithmic scale</td>
-<td>$\tfrac12\ln(\lambda_+\lambda_-)=\tfrac12\ln(q^2-q'^2)$</td>
+<td>$\tfrac12\ln(\lambda_+\lambda_-)=\tfrac12\ln(q^2-q'{}^2)$</td>
 </tr>
 <tr>
 <td>$q'_{\log}$</td>
@@ -331,7 +331,7 @@ $$</p>
 <h3 id="the-domain-and-the-fibre">The Domain and the Fibre</h3>
 <p>The domain is the future cone</p>
 <p>$$
-\operatorname{dom}\log = \{Q = q+jq' : q > |q'|\} = \{Q : \lambda_+ > 0,\ \lambda_- > 0\},
+\operatorname{dom}\log = \{Q = q+jq' : q &gt; |q'|\} = \{Q : \lambda_+ &gt; 0,\ \lambda_- &gt; 0\},
 $$</p>
 <p>which is exactly the image of the exponential.</p>
 <div class="table-scroll"><table>
@@ -344,7 +344,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Domain</td>
-<td>the future cone $F=\{Q:q>\lvert q'\rvert\}=\{\lambda_+>0,\ \lambda_->0\}$</td>
+<td>the future cone $F=\{Q:q&gt;\lvert q'\rvert\}=\{\lambda_+&gt;0,\ \lambda_-&gt;0\}$</td>
 </tr>
 <tr>
 <td>Fibre over a point</td>
@@ -376,17 +376,17 @@ $$</p>
 <tbody>
 <tr>
 <td>future cone</td>
-<td>$q > \lvert q'\rvert$</td>
+<td>$q &gt; \lvert q'\rvert$</td>
 <td>exists, unique</td>
 </tr>
 <tr>
 <td>past cone</td>
-<td>$q < -\lvert q'\rvert$</td>
+<td>$q &lt; -\lvert q'\rvert$</td>
 <td>none</td>
 </tr>
 <tr>
 <td>spacelike wedges</td>
-<td>$\lvert q'\rvert > \lvert q\rvert$</td>
+<td>$\lvert q'\rvert &gt; \lvert q\rvert$</td>
 <td>none</td>
 </tr>
 <tr>
@@ -396,7 +396,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The past cone fails because both eigenvalues are negative. The spacelike wedges fail because $\langle Q\rangle_{*} < 0$, while every exponential has positive norm. The null cone fails because one eigenvalue is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $\lambda_-\to0^+$, for instance, $\log\lambda_-\to-\infty$ and the $j$-component of $\log Q$ tends to $+\infty$. Since the exponential is injective, the fibre over a point of $F$ is a single point.</p>
+<p>The past cone fails because both eigenvalues are negative. The spacelike wedges fail because $\langle Q\rangle_{*} &lt; 0$, while every exponential has positive norm. The null cone fails because one eigenvalue is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $\lambda_-\to0^+$, for instance, $\log\lambda_-\to-\infty$ and the $j$-component of $\log Q$ tends to $+\infty$. Since the exponential is injective, the fibre over a point of $F$ is a single point.</p>
 <p>The product identity follows at once from injectivity:</p>
 <p>$$
 \log(QB) = \log Q + \log B
@@ -443,7 +443,7 @@ $$</p>
 <p>$$
 \log(\exp(Q_{\log}))=Q_{\log}.
 $$</p>
-<p><strong>Proof.</strong> In the eigenvalue coordinates, $\exp(Q_{\log})$ has eigenvalues $\exp(q_{\log}\pm q'_{\log})>0$. The logarithm returns</p>
+<p><strong>Proof.</strong> In the eigenvalue coordinates, $\exp(Q_{\log})$ has eigenvalues $\exp(q_{\log}\pm q'_{\log})&gt;0$. The logarithm returns</p>
 <p>$$
 \tfrac12\ln\bigl(\exp(2q_{\log})\bigr)=q_{\log},
 \qquad
@@ -454,7 +454,7 @@ $$</p>
 <p>For instance, $Q = 5+3j$ has $Q_{\log} = \ln 4 + j\ln 2$, and $\exp(Q_{\log}) = 5+3j$. In the other direction, $Q_{\log} = -1+0.3j$ gives $Q = \exp(Q_{\log}) = 0.3845585 + 0.1120268\,j$, whose logarithm is $Q_{\log}$ again.</p>
 <h3 id="the-derivative">The Derivative</h3>
 <p>The derivative is forced by the inverse identity.</p>
-<p><strong>Inverse function theorem.</strong> The exponential is differentiable, and its derivative at $Q_{\log}$ is multiplication by $\exp(Q_{\log})$. The derivative is invertible everywhere, because $\langle \exp(Q_{\log})\rangle_{*} = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse $\log$ has derivative</p>
+<p><strong>Inverse function theorem.</strong> The exponential is differentiable, and its derivative at $Q_{\log}$ is multiplication by $\exp(Q_{\log})$. The derivative is invertible everywhere, because $\langle \exp(Q_{\log})\rangle_{*} = \exp(2q_{\log}) &gt; 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse $\log$ has derivative</p>
 <p>$$
 \frac{d}{dQ}\log Q = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
 $$</p>
@@ -476,19 +476,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Future cone, $q>\lvert q'\rvert$</td>
+<td>Future cone, $q&gt;\lvert q'\rvert$</td>
 <td>$\log\lambda_+\Pi_++\log\lambda_-\Pi_-$, unique</td>
 <td>the same</td>
 <td>one point</td>
 </tr>
 <tr>
-<td>Past cone, $q<-\lvert q'\rvert$</td>
+<td>Past cone, $q&lt;-\lvert q'\rvert$</td>
 <td>none</td>
 <td>none</td>
 <td>empty</td>
 </tr>
 <tr>
-<td>Spacelike wedges, $\lvert q'\rvert>\lvert q\rvert$</td>
+<td>Spacelike wedges, $\lvert q'\rvert&gt;\lvert q\rvert$</td>
 <td>none</td>
 <td>none</td>
 <td>empty</td>
@@ -569,12 +569,12 @@ $$</p>
 </tr>
 <tr>
 <td>$n$ even</td>
-<td>$\lambda_+>0$, $\lambda_->0$</td>
+<td>$\lambda_+&gt;0$, $\lambda_-&gt;0$</td>
 <td>$4$</td>
 </tr>
 <tr>
 <td>$n$ even</td>
-<td>one eigenvalue $0$, the other $>0$</td>
+<td>one eigenvalue $0$, the other $&gt;0$</td>
 <td>$2$</td>
 </tr>
 <tr>
@@ -584,7 +584,7 @@ $$</p>
 </tr>
 <tr>
 <td>$n$ even</td>
-<td>at least one eigenvalue $<0$</td>
+<td>at least one eigenvalue $&lt;0$</td>
 <td>$0$</td>
 </tr>
 </tbody>
@@ -774,17 +774,17 @@ $$</p>
 <tr>
 <td>$\operatorname{artanh}Q$</td>
 <td>$\dfrac{1}{2}\log\dfrac{1+Q}{1-Q}$</td>
-<td>$\lvert\lambda_+\rvert<1$ and $\lvert\lambda_-\rvert<1$</td>
+<td>$\lvert\lambda_+\rvert&lt;1$ and $\lvert\lambda_-\rvert&lt;1$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The square roots are the split-complex square roots of §<em>The Roots</em>, with the non-negative root in each eigenvalue. In each row the argument of the logarithm has positive eigenvalues: for $\operatorname{arsinh}$, the eigenvalues are $\lambda_\pm+\sqrt{\lambda_\pm^2+1}>0$; for $\operatorname{arcosh}$, they are $\lambda_\pm+\sqrt{\lambda_\pm^2-1}>0$ when $\lambda_\pm\geq1$; for $\operatorname{artanh}$, they are $(1+\lambda_\pm)/(1-\lambda_\pm)>0$ when $\lvert\lambda_\pm\rvert<1$. The inverse functions are therefore single-valued on their domains, like the logarithm.</p>
+<p>The square roots are the split-complex square roots of §<em>The Roots</em>, with the non-negative root in each eigenvalue. In each row the argument of the logarithm has positive eigenvalues: for $\operatorname{arsinh}$, the eigenvalues are $\lambda_\pm+\sqrt{\lambda_\pm^2+1}&gt;0$; for $\operatorname{arcosh}$, they are $\lambda_\pm+\sqrt{\lambda_\pm^2-1}&gt;0$ when $\lambda_\pm\geq1$; for $\operatorname{artanh}$, they are $(1+\lambda_\pm)/(1-\lambda_\pm)&gt;0$ when $\lvert\lambda_\pm\rvert&lt;1$. The inverse functions are therefore single-valued on their domains, like the logarithm.</p>
 <p>The circular inverses are not functions on $\mathbb{C}_{\mathrm{spl}}$: their formulas require the scalar imaginary $i$, which is not in the algebra. They belong to the complexification and are not listed.</p>
 <h2 id="relations-to-the-neighbouring-cases">Relations to the Neighbouring Cases</h2>
 <h3 id="the-real-case">The Real Case</h3>
 <p>The real axis is the fixed set of the conjugation, $q'=0$. There $\lambda_+=\lambda_-=q$, the two idempotent components coincide, and every function of this article restricts to its ordinary real counterpart:</p>
 <p>$$
-\exp(q)=\exp q,\quad \log q=\ln q\ (q>0),\quad \sin(q)=\sin q,\quad \cos(q)=\cos q,
+\exp(q)=\exp q,\quad \log q=\ln q\ (q&gt;0),\quad \sin(q)=\sin q,\quad \cos(q)=\cos q,
 $$</p>
 <p>$$
 \sinh(q)=\sinh q,\qquad \cosh(q)=\cosh q.
@@ -795,7 +795,7 @@ $$</p>
 <h3 id="the-relation-between-the-two">The Relation Between the Two</h3>
 <p>The real case is the fixed set of the conjugation inside $\mathbb{C}_{\mathrm{spl}}$; the complex case is the scalar extension. The two are the two ends of the comparison table of §<em>Summary</em>: the real eigenvalues are the diagonal of the complex pair, and the reduced biquaternion formulas reduce to the split-complex ones when both eigenvalues are real.</p>
 <h2 id="summary">Summary</h2>
-<p>Every elementary function of a split-complex variable is a pair of ordinary real functions of the two eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$, written in the idempotent basis. The exponential is injective, its kernel is $\{0\}$, and its image is the future cone $F=\{\lambda_\pm>0\}=\{q>\lvert q'\rvert\}$; the logarithm is its two-sided inverse on $F$, with no branch and no period. The powers are $Q^P=\exp(P\log Q)$ on $F$ for real $P$, single-valued because the logarithm is unique, and the roots are counted by the signs of the two eigenvalues. The hyperbolic functions are the intrinsic family, and the circular functions are the same power series read in the complexification. The Idempotent Principle reads every function at the two eigenvalues.</p>
+<p>Every elementary function of a split-complex variable is a pair of ordinary real functions of the two eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$, written in the idempotent basis. The exponential is injective, its kernel is $\{0\}$, and its image is the future cone $F=\{\lambda_\pm&gt;0\}=\{q&gt;\lvert q'\rvert\}$; the logarithm is its two-sided inverse on $F$, with no branch and no period. The powers are $Q^P=\exp(P\log Q)$ on $F$ for real $P$, single-valued because the logarithm is unique, and the roots are counted by the signs of the two eigenvalues. The hyperbolic functions are the intrinsic family, and the circular functions are the same power series read in the complexification. The Idempotent Principle reads every function at the two eigenvalues.</p>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -827,7 +827,7 @@ $$</p>
 </tr>
 <tr>
 <td>Kernel and image</td>
-<td>$\ker\exp=\{0\}$; $\operatorname{im}\exp=F=\{q>\lvert q'\rvert\}$</td>
+<td>$\ker\exp=\{0\}$; $\operatorname{im}\exp=F=\{q&gt;\lvert q'\rvert\}$</td>
 </tr>
 <tr>
 <td>Logarithm</td>
@@ -835,7 +835,7 @@ $$</p>
 </tr>
 <tr>
 <td>Principal domain</td>
-<td>$F=\{q>\lvert q'\rvert\}$: the domain of $\log$, and $\exp$ maps onto $F$</td>
+<td>$F=\{q&gt;\lvert q'\rvert\}$: the domain of $\log$, and $\exp$ maps onto $F$</td>
 </tr>
 <tr>
 <td>Fibre</td>
@@ -892,13 +892,13 @@ $$</p>
 </tr>
 <tr>
 <td>$\log Q$</td>
-<td>$\tfrac12\ln(q^2-q'^2)+\tfrac12 j\ln\dfrac{q+q'}{q-q'}$</td>
-<td>$q>\lvert q'\rvert$</td>
+<td>$\tfrac12\ln(q^2-q'{}^2)+\tfrac12 j\ln\dfrac{q+q'}{q-q'}$</td>
+<td>$q&gt;\lvert q'\rvert$</td>
 </tr>
 <tr>
 <td>$Q^P$</td>
 <td>$\exp(P\log Q)$</td>
-<td>$q>\lvert q'\rvert$</td>
+<td>$q&gt;\lvert q'\rvert$</td>
 </tr>
 <tr>
 <td>$\sin Q$</td>
@@ -953,7 +953,7 @@ $$</p>
 <tr>
 <td>$\operatorname{artanh}Q$</td>
 <td>$\tfrac12\log\dfrac{1+Q}{1-Q}$</td>
-<td>$\lvert\lambda_\pm\rvert<1$</td>
+<td>$\lvert\lambda_\pm\rvert&lt;1$</td>
 </tr>
 </tbody>
 </table></div>
@@ -1007,13 +1007,13 @@ $$</p>
 </tr>
 <tr>
 <td>Image</td>
-<td>$F=\{\lambda_\pm>0\}$</td>
+<td>$F=\{\lambda_\pm&gt;0\}$</td>
 <td>$\{\lambda_1\lambda_2\neq0\}$</td>
 <td>$\{\langle\tilde Q\rangle_{\natural}\neq0\}$</td>
 </tr>
 <tr>
 <td>Logarithm domain</td>
-<td>$q>\lvert q'\rvert$</td>
+<td>$q&gt;\lvert q'\rvert$</td>
 <td>$\lambda_1\lambda_2\neq0$</td>
 <td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
 </tr>
@@ -1079,7 +1079,7 @@ $$</p>
 <td>Eigenprojections, the standard idempotents</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$</td>
+<td>$\langle Q\rangle_{*}=q^2-q'{}^2=\lambda_+\lambda_-$</td>
 <td>Norm</td>
 </tr>
 <tr>

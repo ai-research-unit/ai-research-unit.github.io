@@ -77,18 +77,18 @@
 <p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds and metrics; <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em> for geodesics, curvature, the exponential map, the Gauss–Bonnet theorem and the classification of the space forms; <em>Pseudo-Riemannian and Lorentzian Geometry</em> for the quadric space forms, of which the hyperboloid model is the Riemannian member and the Lorentzian hyperboloid $H^{1,n-1}$ the indefinite one; <em>Euclidean Geometry</em> for the comparison; <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the split-complex case; and <em>Matrix Groups and Classical Groups</em> for $SL(2, \mathbb{R})$, $PSL(2, \mathbb{R})$ and the Möbius transformations. The analytic theory of the boundary, the limit set and the ergodic theory of the geodesic flow belongs to Part III, and it is cited rather than developed. No physics is invoked.</p>
 <h2 id="the-models-of-hyperbolic-space">The Models of Hyperbolic Space</h2>
 <h3 id="the-upper-half-plane-model">The Upper Half-Plane Model</h3>
-<p><strong>Definition.</strong> The <strong>upper half-plane</strong> is $\mathbb{H}^2 = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$ with the <strong>hyperbolic metric</strong></p>
+<p><strong>Definition.</strong> The <strong>upper half-plane</strong> is $\mathbb{H}^2 = \{z \in \mathbb{C} : \operatorname{Im} z &gt; 0\}$ with the <strong>hyperbolic metric</strong></p>
 <p>$$
-g = \frac{dx^2 + dy^2}{y^2}, \qquad z = x + iy, \quad y > 0 .
+g = \frac{dx^2 + dy^2}{y^2}, \qquad z = x + iy, \quad y &gt; 0 .
 $$</p>
-<p>The pair $(\mathbb{H}^2, g)$ is the <strong>Poincaré upper half-plane model</strong> of the hyperbolic plane. In $n$ dimensions the <strong>upper half-space model</strong> is $\mathbb{H}^n = \{(x_1, \ldots, x_n) : x_n > 0\}$ with the metric</p>
+<p>The pair $(\mathbb{H}^2, g)$ is the <strong>Poincaré upper half-plane model</strong> of the hyperbolic plane. In $n$ dimensions the <strong>upper half-space model</strong> is $\mathbb{H}^n = \{(x_1, \ldots, x_n) : x_n &gt; 0\}$ with the metric</p>
 <p>$$
 g = \frac{dx_1^2 + \cdots + dx_n^2}{x_n^2} .
 $$</p>
 <p><strong>Proposition.</strong> The metric $g$ is positive definite and conformal to the Euclidean metric: it is $y^{-2}$ times the Euclidean metric at the point $z = x + iy$. Its coefficients are $g_{11} = g_{22} = y^{-2}$, $g_{12} = 0$, and its determinant is $y^{-4}$.</p>
-<p><strong>Theorem.</strong> The upper half-plane model has constant sectional curvature $-1$; its geodesics are the vertical lines $x = \mathrm{const}$ and the semicircles with centres on the real axis and radius $r > 0$, and its isometries are the <strong>Möbius transformations</strong></p>
+<p><strong>Theorem.</strong> The upper half-plane model has constant sectional curvature $-1$; its geodesics are the vertical lines $x = \mathrm{const}$ and the semicircles with centres on the real axis and radius $r &gt; 0$, and its isometries are the <strong>Möbius transformations</strong></p>
 <p>$$
-z \longmapsto \frac{az + b}{cz + d}, \qquad a, b, c, d \in \mathbb{R}, \quad ad - bc > 0,
+z \longmapsto \frac{az + b}{cz + d}, \qquad a, b, c, d \in \mathbb{R}, \quad ad - bc &gt; 0,
 $$</p>
 <p>together with the reflection $z \mapsto -\bar z$. The orientation-preserving isometries form the group $PSL(2, \mathbb{R}) = SL(2, \mathbb{R})/\{\pm I\}$.</p>
 <p><strong>Proof sketch.</strong> The Christoffel symbols of $g$ give $\Gamma_{111} = \Gamma_{122} = \Gamma_{212} = 0$, $\Gamma_{112} = -1/y$, $\Gamma_{211} = 1/y$, $\Gamma_{222} = -1/y$, and the geodesic equation reduces to the statement that the curves are the lines and semicircles orthogonal to the boundary; the curvature is computed from the second derivatives of the metric and is $-1$. A Möbius transformation with real coefficients preserves the upper half-plane, and a direct computation gives</p>
@@ -109,10 +109,10 @@ $$</p>
 <p>$$
 d(it, is) = |\log(t/s)| .
 $$</p>
-<p><strong>Proof sketch.</strong> The distance along the imaginary axis is $\int_s^t dy/y = \log(t/s)$ for $t > s$; the group $PSL(2, \mathbb{R})$ acts transitively on pairs of points at a given distance, and any two points are carried to two points of a vertical geodesic, which gives the general formula; the displayed identity is checked directly.</p>
+<p><strong>Proof sketch.</strong> The distance along the imaginary axis is $\int_s^t dy/y = \log(t/s)$ for $t &gt; s$; the group $PSL(2, \mathbb{R})$ acts transitively on pairs of points at a given distance, and any two points are carried to two points of a vertical geodesic, which gives the general formula; the displayed identity is checked directly.</p>
 <p><strong>Corollary.</strong> The hyperbolic metric is complete and the hyperbolic distance is unbounded, so $\mathbb{H}^2$ has infinite diameter. Its area element is $dA = dx\,dy/y^2$, and the area of the region $\{x_0 \leq x \leq x_1,\ y \geq y_0\}$ is $(x_1 - x_0)/y_0$, finite in the horizontal direction and infinite in the vertical.</p>
 <h3 id="the-poincare-disk-model">The Poincaré Disk Model</h3>
-<p><strong>Definition.</strong> The <strong>Poincaré disk</strong> is the unit disk $\mathbb{U}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric</p>
+<p><strong>Definition.</strong> The <strong>Poincaré disk</strong> is the unit disk $\mathbb{U}^2 = \{z \in \mathbb{C} : |z| &lt; 1\}$ with the metric</p>
 <p>$$
 g_{\mathbb{U}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
 $$</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-hyperboloid-and-beltramiklein-models">The Hyperboloid and Beltrami–Klein Models</h3>
 <p><strong>Definition.</strong> The <strong>hyperboloid model</strong> of $\mathbb{H}^n$ is the quadric</p>
 <p>$$
-\mathcal{H}^n = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle_{1,n} = 1,\ x_0 > 0\}
+\mathcal{H}^n = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle_{1,n} = 1,\ x_0 &gt; 0\}
 $$</p>
 <p>in the pseudo-Euclidean space $\mathbb{R}^{1,n}$ with $\langle x, x\rangle_{1,n} = x_0^2 - x_1^2 - \cdots - x_n^2$, for the radius of curvature $1$; for general $R$ the quadric is $\langle x, x\rangle_{1,n} = R^2$. Its points are spacelike, and the positive direction of the form is the normal rather than a tangent direction, so the ambient form is negative definite on $x^\perp$ and its negative restricts to $\mathcal{H}^n$ as a Riemannian metric, complete of constant curvature $-1/R^2$. The companion quadric of the same pencil, $\langle x, x\rangle_{1,n} = -R^2$, is the one-sheeted hyperboloid, whose points are timelike and whose induced metric is indefinite of signature $(1, n-1)$; that member of the family is the Lorentzian hyperboloid $H^{1,n-1}$ of <em>Pseudo-Riemannian and Lorentzian Geometry</em>, of which $\mathcal{H}^n$ is the Riemannian counterpart.</p>
 <p><strong>Proposition.</strong> The hyperboloid model is complete with constant curvature $-1$, its isometry group is the group $O(1, n)^+$ of pseudo-orthogonal transformations preserving the upper sheet, and the orthogonal projection to the plane $x_0 = 1$ along the origin gives the <strong>Beltrami–Klein model</strong>, in which geodesics are the chords of the unit ball.</p>
@@ -183,7 +183,7 @@ $$</p>
 <p><strong>Proposition (area of an ideal triangle).</strong> Every ideal triangle has area $\pi$.</p>
 <p><strong>Proof.</strong> By the transitivity of $PSL(2, \mathbb{R})$ on triples of boundary points, it suffices to treat the ideal triangle with vertices $-1, 1, \infty$. Its sides are the semicircle $x^2 + y^2 = 1$ (the geodesic from $-1$ to $1$) and the vertical lines $x = \pm 1$, so it is the region</p>
 <p>$$
-D = \{(x, y) : -1 < x < 1,\ y > \sqrt{1 - x^2}\}.
+D = \{(x, y) : -1 &lt; x &lt; 1,\ y &gt; \sqrt{1 - x^2}\}.
 $$</p>
 <p>Its hyperbolic area is the integral of the area form $dA = y^{-2}dx\,dy$ over $D$:</p>
 <p>$$
@@ -224,12 +224,12 @@ $$</p>
 <h3 id="the-two-dimensional-case">The Two-Dimensional Case</h3>
 <p><strong>Theorem.</strong> The orientation-preserving isometry group of $\mathbb{H}^2$ is $PSL(2, \mathbb{R})$, acting by Möbius transformations; the full isometry group is $PSL(2, \mathbb{R}) \rtimes \mathbb{Z}/2$, where the $\mathbb{Z}/2$ acts by $z \mapsto -\bar z$. The action is transitive on points, and the stabiliser of a point is the compact group $SO(2)$, so $\mathbb{H}^2 \cong PSL(2, \mathbb{R})/SO(2)$ is a homogeneous space.</p>
 <p><strong>Proof sketch.</strong> The group $PSL(2, \mathbb{R})$ acts transitively on the boundary $\mathbb{R} \cup \{\infty\}$ and, given three boundary points, is determined; it acts transitively on pairs of boundary points and hence on geodesics; and the stabiliser of $i$ is the rotation group generated by $z \mapsto -1/z$ and the translations by the circle action, which is $SO(2)$.</p>
-<p><strong>Definition.</strong> A Möbius transformation $f \in PSL(2, \mathbb{R})$, other than the identity, is <strong>elliptic</strong> if it has a fixed point in $\mathbb{H}^2$, <strong>parabolic</strong> if it has exactly one fixed point on the boundary, and <strong>hyperbolic</strong> if it has two fixed points on the boundary and none in $\mathbb{H}^2$. The three cases are distinguished by the absolute value of the trace: $|\operatorname{tr}| < 2$ elliptic, $= 2$ parabolic, $> 2$ hyperbolic.</p>
+<p><strong>Definition.</strong> A Möbius transformation $f \in PSL(2, \mathbb{R})$, other than the identity, is <strong>elliptic</strong> if it has a fixed point in $\mathbb{H}^2$, <strong>parabolic</strong> if it has exactly one fixed point on the boundary, and <strong>hyperbolic</strong> if it has two fixed points on the boundary and none in $\mathbb{H}^2$. The three cases are distinguished by the absolute value of the trace: $|\operatorname{tr}| &lt; 2$ elliptic, $= 2$ parabolic, $&gt; 2$ hyperbolic.</p>
 <p><strong>Proposition.</strong> A hyperbolic element acts as a translation along its axis, the geodesic joining its two boundary fixed points, with a well-defined <strong>translation length</strong>; a parabolic element acts as a limit rotation about its single boundary fixed point; an elliptic element acts as a rotation about its fixed point in $\mathbb{H}^2$.</p>
-<p><strong>Proof sketch.</strong> Normalise the element by conjugacy: a hyperbolic element with fixed points $0, \infty$ is $z \mapsto \lambda z$ with $\lambda > 1$, a parabolic element with fixed point $\infty$ is $z \mapsto z + t$, and an elliptic element with fixed point $i$ is a rotation.</p>
+<p><strong>Proof sketch.</strong> Normalise the element by conjugacy: a hyperbolic element with fixed points $0, \infty$ is $z \mapsto \lambda z$ with $\lambda &gt; 1$, a parabolic element with fixed point $\infty$ is $z \mapsto z + t$, and an elliptic element with fixed point $i$ is a rotation.</p>
 <p><strong>Example (the hyperbolic rotation and the algebra $\mathbb{C}_{\mathrm{spl}}$).</strong> The hyperbolic element $z \mapsto \lambda z$ acts on the imaginary axis by $it \mapsto i\lambda t$, which is $d \mapsto d + \log\lambda$ in the distance; its infinitesimal generator is the <strong>hyperbolic rotation</strong> or <strong>Lorentz boost</strong> of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$ of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, in which $\omega^2 = +1$. The trace classification $\operatorname{tr}^2 - 4 \gtrless 0$ is the same sign trichotomy as the quadratic form $x^2 - y^2$ on the algebra, and it is the two-dimensional case of the correspondence between the three model geometries and the three real two-dimensional algebras.</p>
 <h3 id="the-three-dimensional-case">The Three-Dimensional Case</h3>
-<p><strong>Theorem.</strong> The orientation-preserving isometry group of $\mathbb{H}^3$, in the upper half-space model with coordinates $(z, t) \in \mathbb{C} \times \mathbb{R}_{>0}$, is $PSL(2, \mathbb{C})$, acting on the boundary $\mathbb{C} \cup \{\infty\} = S^2$ by Möbius transformations and extended to the interior by the <strong>Poincaré extension</strong>. The full isometry group is $PSL(2, \mathbb{C}) \rtimes \mathbb{Z}/2$.</p>
+<p><strong>Theorem.</strong> The orientation-preserving isometry group of $\mathbb{H}^3$, in the upper half-space model with coordinates $(z, t) \in \mathbb{C} \times \mathbb{R}_{&gt;0}$, is $PSL(2, \mathbb{C})$, acting on the boundary $\mathbb{C} \cup \{\infty\} = S^2$ by Möbius transformations and extended to the interior by the <strong>Poincaré extension</strong>. The full isometry group is $PSL(2, \mathbb{C}) \rtimes \mathbb{Z}/2$.</p>
 <p><strong>Proof sketch.</strong> An orientation-preserving isometry of $\mathbb{H}^3$ extends to a conformal map of the boundary sphere, and the conformal maps of $S^2$ are the Möbius transformations $PSL(2, \mathbb{C})$; conversely each Möbius transformation extends uniquely to an isometry of the hyperbolic three-space by the Poincaré extension.</p>
 <p><strong>Remark.</strong> In dimension two the boundary is the circle with its rotation group $PSL(2, \mathbb{R})$, and in dimension three the boundary is the Riemann sphere with its Möbius group $PSL(2, \mathbb{C})$; in both cases the isometry group of hyperbolic space is the Möbius group of the boundary. This is the geometric form of the fact that the hyperbolic isometries are exactly the conformal automorphisms of the boundary, and it is the reason hyperbolic geometry is the natural home of the theory of Kleinian groups.</p>
 <h3 id="fuchsian-and-kleinian-groups">Fuchsian and Kleinian Groups</h3>
@@ -245,7 +245,7 @@ $$</p>
 <p><strong>Corollary (surfaces).</strong> Every compact orientable surface of genus $g \geq 2$ admits a hyperbolic structure; the area is $-2\pi\chi(\Sigma) = 4\pi(g-1)$ and the structure is not unique — the Teichmüller space of a genus-$g$ surface has real dimension $6g - 6$.</p>
 <p><strong>Corollary (the trichotomy).</strong> The complete connected constant-curvature geometries are exactly the spherical case of quotients of $S^n$ (finite fundamental group), the Euclidean case of quotients of $\mathbb{R}^n$ (virtually abelian fundamental group, by the Bieberbach theorems), and the hyperbolic case of quotients of $\mathbb{H}^n$ (with fundamental group containing a free group of rank two whenever the quotient is non-compact of finite volume). The three differ by the sign of the curvature, by the parallel postulate, and by the growth of the fundamental group; the comparison is not covered here.</p>
 <h2 id="summary">Summary</h2>
-<p>Hyperbolic $n$-space is the complete simply connected Riemannian manifold of constant sectional curvature $-1$. It is realised by four isometric models: the upper half-plane or half-space with the metric $y^{-2}\sum dx_i^2$, the Poincaré disk with the metric $4|dz|^2/(1-|z|^2)^2$, the hyperboloid $\{x : \langle x,x\rangle_{1,n} = 1,\ x_0>0\}$ in pseudo-Euclidean space, and its Beltrami–Klein projective image. The geodesics are the lines and semicircles orthogonal to the boundary in the half-plane model, the diameters and orthogonal arcs in the disk, and the chords in the Beltrami–Klein model; the distance is given by the cross-ratio and by the formula $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$.</p>
+<p>Hyperbolic $n$-space is the complete simply connected Riemannian manifold of constant sectional curvature $-1$. It is realised by four isometric models: the upper half-plane or half-space with the metric $y^{-2}\sum dx_i^2$, the Poincaré disk with the metric $4|dz|^2/(1-|z|^2)^2$, the hyperboloid $\{x : \langle x,x\rangle_{1,n} = 1,\ x_0&gt;0\}$ in pseudo-Euclidean space, and its Beltrami–Klein projective image. The geodesics are the lines and semicircles orthogonal to the boundary in the half-plane model, the diameters and orthogonal arcs in the disk, and the chords in the Beltrami–Klein model; the distance is given by the cross-ratio and by the formula $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$.</p>
 <p>The hyperboloid of radius $R$ is parametrised by its <strong>Weierstrass coordinates</strong> $X_0 = R\cosh(\rho/R)$, $X_i = R\sinh(\rho/R)l_i$, in which the metric reads $d\rho^2 + R^2\sinh^2(\rho/R)\,d\Omega_{n-1}^2$ and the curvature appears as the sign of the $\rho^4/3R^2$ correction to the Euclidean metric of a small geodesic ball; the spherical counterpart follows by $R \mapsto iR$, the hyperbolic functions becoming circular. The Beltrami–Klein ball carries the <strong>Cayley–Klein metric</strong>, whose distance is the cross-ratio of the two points with the two boundary points of their chord, equivalently $\cosh(d/R) = (R^2 - p\cdot q)/\sqrt{(R^2-|p|^2)(R^2-|q|^2)}$, and this is the hyperbolic distance because it equals $\langle x,y\rangle_{1,n}/R^2$ for the two points of the hyperboloid that project to $p$ and $q$.</p>
 <p>The angles of a hyperbolic triangle sum to $\pi$ minus its area, the area is the defect, and the trigonometric laws are the spherical laws with the circular functions replaced by the hyperbolic ones: $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$, and $\sinh a/\sin A$ is constant. Small triangles recover Euclidean trigonometry, the deviation being measured by the area. The angle of parallelism satisfies $\tan(\Pi(d)/2) = \exp(-d)$, decaying exponentially, so through a point outside a line there are infinitely many parallels, two asymptotic rays and an open set of directions between them.</p>
 <p>The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension two and $PSL(2, \mathbb{C})$ in dimension three, acting on the half-space by Möbius transformations and their Poincaré extension; the elements are classified as elliptic, parabolic and hyperbolic by the trace, corresponding to the sign of the quadratic form of the algebra $\mathbb{C}_{\mathrm{spl}}$ and to the three kinds of two-dimensional rotation. The discrete subgroups — the Fuchsian and Kleinian groups — produce complete hyperbolic manifolds as quotients, and the hyperbolic area of a compact surface is $4\pi(g-1)$. Mostow rigidity makes the hyperbolic structure of a finite-volume manifold of dimension at least three unique, while in dimension two the structures deform, and that deformation is the Teichmüller theory of the sibling articles. Hyperbolic geometry completes the trichotomy of the model geometries and is the geometry in which the parallel postulate fails in the direction of infinitely many parallels.</p>
@@ -312,7 +312,7 @@ $$</p>
 </tr>
 <tr>
 <td>Elliptic, parabolic, hyperbolic element</td>
-<td>$|\operatorname{tr}| < 2$, $=2$, $>2$; rotation, limit rotation, translation</td>
+<td>$|\operatorname{tr}| &lt; 2$, $=2$, $&gt;2$; rotation, limit rotation, translation</td>
 </tr>
 <tr>
 <td>Fuchsian, Kleinian group</td>
@@ -328,7 +328,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{H}^n$</td>
-<td>Hyperboloid model: the quadric $\langle x,x\rangle_{1,n}=1$, $x_0>0$, in $\mathbb{R}^{1,n}$</td>
+<td>Hyperboloid model: the quadric $\langle x,x\rangle_{1,n}=1$, $x_0&gt;0$, in $\mathbb{R}^{1,n}$</td>
 </tr>
 <tr>
 <td>$X_0 = R\cosh(\rho/R)$, $X_i = R\sinh(\rho/R)l_i$</td>

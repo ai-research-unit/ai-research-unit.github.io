@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Continuity Theory and the ancient Mystery of Time — Part I: The Principle of Distributed Action — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Continuity_Theory_and_the_ancient_My.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-continuity-theory-and-the-ancient-mystery-of-time-part-i-the-principle-of-distributed-action"><strong>The Continuity Theory and the ancient Mystery of Time — Part I: The Principle of Distributed Action</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript — book part</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer, Munich</td>
+</tr>
+<tr>
+<td>version</td>
+<td>June 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - The_Continuity_Theory_and_the_ancient_My-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Continuity_Theory_and_the_ancient_My.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Continuity_Theory_and_the_ancient_My.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sets out the conceptual foundation of TUni in two parts: the distributed action, and the projection that turns a fifth temporal direction into observed proper time. One postulate — Planck's constant as a tension over the universe's surface — is the substrate; from it the paper derives a time angle, an energy balance, the light cone as an extreme projection, the horizon as an extreme misalignment, a Bell constraint, a 2:1 energy partition and the dark-energy scaling. This is the programmatic paper of the batch, and it still contains the $1/R^2$ dark-energy law and the $0.20$ mag offset that the later area-dilution paper retracts.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-postulate">The postulate</h3>
+<p>$$\sigma_h=\frac{h}{A(t)}$$
+— "Planck's constant $h$ is not a localized quantity but a structural tension distributed across the surface of the universe" — and "This field forms the substrate from which the flow of time, gravity, and quantum behavior naturally emerge."</p>
+<h3 id="the-projection">The projection</h3>
+<p>"the observed proper time arises as a projection from a higher-dimensional temporal axis ζ onto the local worldline of a system in spacetime. The time angle θ captures this projection geometrically. Time dilation" The extreme cases fix the scale: for light $\theta=90^\circ\Rightarrow\cos^2(\theta)=0\Rightarrow T_{\rm proper}=0$, and at a horizon "$\theta=90^\circ$" is replaced by "Time stops not because of singularity, but due to maximal geometric misalignment".</p>
+<h3 id="the-energy-balance">The energy balance</h3>
+<p>$$E_{\rm time}=mc^2+E_{\rm grav}+E_{\rm exp},\qquad \cos^2(\theta)=\frac{E_{\rm time}}{mc^2}=1+\frac{E_{\rm grav}+E_{\rm exp}}{mc^2}$$
+("the general energy equation"). With the horizon condition $E_{\rm grav}\to-mc^2$ this gives $\cos^2\theta\to0$ and $T_{\rm proper}\to0$.</p>
+<h3 id="the-quantum-sector-and-the-partition">The quantum sector and the partition</h3>
+<p>"Quantum states are described via time-angle orientation": $\psi(\theta)=A\,e^{i\phi(\theta)}$ with $\mathrm{Re}\,\psi=A\cos\theta$, $\mathrm{Im}\,\psi=A\sin\theta$, and "With: Re(ψ) = A cos(θ), Im(ψ) = A sin(θ) 9.2 Energy-Frequency Relation E = h̄ · ωθ Frequency of θ-oscillation defines energy — not postulated, but derived from geometry. 9.3". The partition follows from
+$$\tau=\frac{\hbar}{E_0}\ \Rightarrow\ E_{\min}=\frac{\hbar}{2\tau}=\frac{E_0}{2},\qquad E_0=2E_{\min},\qquad \cos^2(\theta)=\tfrac12\Rightarrow\theta=45^\circ$$
+so that $E_{\rm time}=E_{\rm space}=\frac12E_0$, which "confirms the TUni projection at neutral angle". For entanglement, "ntum Entanglement Bell Constraint θA + θB = const • No signal exchange • Joint projection constraint • Entanglement as pre-projection alignment 13".</p>
+<h3 id="the-cosmological-sector-as-it-stood-in-june-2025">The cosmological sector, as it stood in June 2025</h3>
+<p>ΛCDM: $\rho_\Lambda=\mathrm{const}$ / TUni: $\rho_\Lambda\propto1/R^2$, with Supernova offset at $z\approx1$: $\Delta\mu\approx-0.20$, "Detectable via DESI, LSST, Euclid". Also $S_{\rm universe}=E_{\rm universe}\cdot T_{\rm uni}$, and the uncertainty limit $\Delta E\cdot\Delta t\ge\hbar/2\Rightarrow S_{\min}=\hbar/2$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-angle-that-carries-dilation-gravity-the-horizon-and-the-light-cone">1. One angle that carries dilation, gravity, the horizon and the light cone</h3>
+<p><strong>The idea.</strong> $\theta$ with $\cos^2\theta=E_{\rm time}/mc^2=1+(E_{\rm grav}+E_{\rm exp})/mc^2$ is a single scalar that reproduces time dilation, gravitational redshift, the horizon and the null cone as limits of one function. That is a <strong>formula</strong> with claims attached to each limit.</p>
+<p><strong>What it would add.</strong> A compact statement of the corpus's own recurring structure — its Lorentz factor, its gravitational cosine and its null limit are the same function — made explicit in one variable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code>.</p>
+<p><strong>What stands in the way.</strong> Energies are not additive across frames, so $E_{\rm time}=mc^2+E_{\rm grav}+E_{\rm exp}$ is written in one frame and is not covariant; the same objection applies to $\cos^2\theta$ as a frame-independent statement. The horizon condition $E_{\rm grav}\to-mc^2$ is then an assumption about a bookkeeping that the framework has not defined covariantly.</p>
+<h3 id="2-a-bell-constraint-written-additively">2. A Bell constraint written additively</h3>
+<p><strong>The idea.</strong> $\theta_A+\theta_B=\mathrm{const}$ states the correlation as a fixed sum of two angles, with no signalling. That is a <strong>formula</strong>, and it is the only attempt in the batch to write entanglement as a constraint on the time angles.</p>
+<p><strong>What it would add.</strong> A candidate invariant for the corpus's Bell-basis section, which states the correlation as an idempotent and does not produce a scalar constraint.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.md</code>.</p>
+<p><strong>What stands in the way.</strong> A sum of two angles is a continuous constraint on a continuum of outcomes; a singlet gives perfectly anti-correlated results for matched settings and a cosine for mismatched ones, and an additive constraint reproduces neither without a rule for how settings map onto angles. No such rule is given.</p>
+<h3 id="3-the-21-partition">3. The 2:1 partition</h3>
+<p><strong>The idea.</strong> $\theta=45^\circ$ gives equal time and space parts, and the paper presents this as a derivation of the factor two.</p>
+<p><strong>What it would add.</strong> Nothing that survives inspection. $\tau=\hbar/E_0$ is the definition of a period, and $E_{\min}=\hbar/(2\tau)=E_0/2$ inserts the factor $\tfrac12$ by hand; the "partition" is the assumption, printed as its own conclusion, and $\theta=45^\circ$ is then chosen to match it. </p>
+<p><strong>Where it lands.</strong> No corpus article: the corpus's spin-statistics and energy-partition discussions use $\hbar\omega/2$ as a zero-point term, not as a cosmic split. </p>
+<p><strong>What stands in the way.</strong> Circularity. The step from $E_0=2E_{\min}$ to $\cos^2\theta=\tfrac12$ is a substitution, and the sentence that closes it —"e 2:1 energy partition confirms the TUni projection at neutral angle — equally split between time and space components." — takes the conclusion as its own evidence. Refused.</p>
+<p>The rank is a judgement: the single angle first, because the limits are real even if the bookkeeping is not covariant; the Bell constraint second, because it is a formula and not a picture; the partition is not ranked, only recorded.</p>
+<p>This is a fourteen-page paper in two parts; the postulate, the tension, the fifth direction, the projection, the general energy equation, the time-angle quantum mechanics, the light and dark-matter extremes, the horizon, the Bell constraint, the 2:1 partition, the uncertainty limit and the $1/R^2$ cosmology are its content. The $1/R^2$ law and the $0.20$ mag offset are withdrawn in <code>Geisbauer - Dark_Energy_the_Cosmological_Constant_an-conversion.md</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linearised stability analysis of generic thin shells — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Linearised stability analysis of generic thin shells - 1211.0605.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="linearised-stability-analysis-of-generic-thin-shells"><strong>Linearised stability analysis of generic thin shells</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1211.0605v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Francisco S. N. Lobo, Prado Martín-Moruno, Nadiezhda Montelongo García, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 November 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Linearised stability analysis of generic thin shells - 1211.0605-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Linearised stability analysis of generic thin shells - 1211.0605.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Linearised stability analysis of generic thin shells - 1211.0605.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a short conference contribution. Two static spherically symmetric spacetimes are glued across a thin shell, and the shell is allowed to move. The Darmois–Israel formalism gives the surface stress and the conservation law, which carries a flux term whenever the two lapse functions differ. The motion reduces to a one-dimensional problem with a potential, and linear stability is the condition that the potential has a minimum. The resulting inequality constrains the second derivative of the surface mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"We construct generic spherically symmetric thin shells by using the cut-and-paste procedure. We take considerable effort to make the analysis as general and unified as practicable; investigating both the internal physics of the transition layer and its interaction with 'external forces' arising due to interactions between the transition layer and the bulk spacetime."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"We demonstrate in full generality that stability of the thin shell is equivalent to choosing suitable properties for the material residing on the junction interface."</p>
+<h3 id="the-setup">The setup</h3>
+<p>"The bulk spacetimes (interior and exterior) on either side of the transition layer will be spherically symmetric and static but otherwise arbitrary. The thin shell (transition layer) will be permitted to move freely in the bulk spacetimes, permitting a fully dynamic analysis."</p>
+<h3 id="the-conservation-law">The conservation law</h3>
+<p>"The conservation equation is $\sigma'=-\frac{2}{a}(\sigma+P)+\Xi$ ... $\Xi$ is related to the energy-momentum flux that impinges on the shell"</p>
+<h3 id="the-flux-warning">The flux warning</h3>
+<p>"The flux term $\Xi$ is zero whenever $\Phi_\pm=0$; this is actually a quite common occurrence, for instance in either Schwarzschild or Reissner–Nordström geometries, or whenever $\rho+p_r=0$, so it is very easy for one to be mislead by those special cases."</p>
+<h3 id="the-stability-criterion">The stability criterion</h3>
+<p>"To analyse the stability of the thin shell, it is useful to rearrange the expression of $\sigma(a)$ into the form $\frac{1}{2}\dot a^2+V(a)=0$ ... The assumed static solution at $a_0$ is stable if and only if $V(a)$ has a local minimum at $a_0$, which requires $V''(a_0)&gt;0$."</p>
+<h3 id="the-reversed-logic">The reversed logic</h3>
+<p>"it is sometimes useful to reverse the logic flow and determine the surface mass as a function of the potential. Thus, if we specify $V(a)$, this tells us how much surface mass we need to put on the transition layer, which is implicitly making demands on the equation of state of the matter residing on the transition layer."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"We have developed a novel and extremely general and robust framework leading to the linearised stability analysis of dynamical spherically symmetric thin shells."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-matching-two-patches">1. Matching two patches</h3>
+<p><strong>The idea.</strong> Two solutions are joined across a surface, and the stress on that surface is fixed by the jump in extrinsic curvature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> works pointwise. Gluing is a condition between two points, which the target does not treat, and a shell is the simplest case of it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of what pointwise results cannot do.</p>
+<p><strong>What stands in the way.</strong> The junction conditions come from general relativity, not the algebra. Ranked first, because it names a gap the target already admits.</p>
+<h3 id="2-a-flux-term-is-easy-to-lose">2. A flux term is easy to lose</h3>
+<p><strong>The idea.</strong> In the common cases the flux vanishes, so a general treatment that drops it looks correct.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation laws from an identity. This paper shows a conservation law whose general form has a term that special cases hide, which is a caution worth stating there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, in the discussion of the laws.</p>
+<p><strong>What stands in the way.</strong> The example is about a surface stress, not the algebraic identity. Ranked second.</p>
+<h3 id="3-stability-is-not-a-property-of-the-geometry">3. Stability is not a property of the geometry</h3>
+<p><strong>The idea.</strong> The shell is stable exactly when the matter on it is chosen to make the potential a minimum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what the framework predicts. Here a geometric question has no answer until a material is specified, which is a clean example of underdetermination.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of prediction.</p>
+<p><strong>What stands in the way.</strong> Thin shells are an idealisation. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

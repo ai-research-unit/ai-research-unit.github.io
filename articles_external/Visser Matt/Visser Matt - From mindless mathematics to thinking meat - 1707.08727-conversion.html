@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From mindless mathematics to thinking meat? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From mindless mathematics to thinking meat - 1707.08727.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-mindless-mathematics-to-thinking-meat"><strong>From mindless mathematics to thinking meat?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1707.08727v1 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 July 2017 (dated 1 March 2017)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - From mindless mathematics to thinking meat - 1707.08727-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From mindless mathematics to thinking meat - 1707.08727.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From mindless mathematics to thinking meat - 1707.08727.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is an essay for the 2017 FQXi contest on whether mindless mathematical laws can give rise to aims and intentions. Visser dissects the question and finds several assumptions packed into it: teleology, consciousness, and the mind-body problem. He uses black hole event horizons as the one mainstream physics case of teleology, and scores it poorly, contrasting event horizons with apparent horizons that can be detected with finite resources. His conclusion is that the question is premature because no agreed framework for consciousness exists, and that facile answers will not do.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-point-of-the-essay">The point of the essay</h3>
+<p>"In this essay I will argue, simply because we do not yet have any really good mathematical or physical theory of consciousness, that the theme of this essay contest is premature, and unlikely to lead to any resolution that would be widely accepted in the mathematics or physics communities."</p>
+<h3 id="on-teleology-in-physics">On teleology in physics</h3>
+<p>"Teleology is rarely useful in physics — the only known mainstream physics example (black hole event horizons) has a very mixed score-card."</p>
+<h3 id="event-horizons-are-teleological">Event horizons are teleological</h3>
+<p>"Black hole event horizons in general relativity are teleological; one has to wait till the trump of doom, and then back-track from the infinite future, to know whether or not an event horizon is present right now."</p>
+<h3 id="the-detection-argument">The detection argument</h3>
+<p>"There is no finite-resource experiment that any physicist could possibly perform to unambiguously detect the presence or absence of an event horizon. In contrast apparent/trapping horizons are not teleological, and their presence or absence can, (at least for spherical horizons in spherically symmetric spacetimes), be unambiguously detected by finite-resource experiments, using quasi-local (ie, finite volume) measurements of tidal and related effects."</p>
+<h3 id="the-verdict-on-the-two-notions">The verdict on the two notions</h3>
+<p>"So in a very precise Popperian sense, event horizons are simply not physics, while apparent/trapping horizons certainly are physics."</p>
+<h3 id="why-event-horizons-dominate">Why event horizons dominate</h3>
+<p>"So why has so much attention been paid to event horizons over the last 50 years? Simply put, event horizons make it possible to prove nice general mathematical theorems, whereas the apparent/trapping horizon variants of those theorems are much trickier and subject to qualifying technical conditions."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"In view of this circumstance, potential resolutions of the question raised in the theme for this essay contest are unlikely (at this stage) to gain widespread support within the mathematics and physics communities. Do not give up on asking these questions, but do take cognizance of the fact that these questions are hard; facile answers will simply not be sufficient."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-undetectable-objects-are-not-physics">1. Undetectable objects are not physics</h3>
+<p><strong>The idea.</strong> An event horizon cannot be detected by any finite experiment, so it fails a strict empirical test.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that global definitions cause trouble. This essay supplies the sharpest version of the argument: not merely inconvenient, but outside empirical physics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The criterion is a philosophical choice, not a theorem. Ranked first, because it is the strongest form of the article's own thesis.</p>
+<h3 id="2-a-test-that-needs-no-horizon">2. A test that needs no horizon</h3>
+<p><strong>The idea.</strong> Quasi-local tidal measurements can establish whether a trapping horizon is present.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs operational tests. A finite-resource measurement procedure is a concrete model for how to test a geometric claim, which the article currently lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The procedure is stated only for spherical symmetry. Ranked second.</p>
+<h3 id="3-mathematical-convenience-drives-definitions">3. Mathematical convenience drives definitions</h3>
+<p><strong>The idea.</strong> Event horizons were preferred because theorems are easier, not because they are physical.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> should be alert to this pattern. An obstruction may reflect the chosen formalism rather than nature, and the catalogue needs a way to tell the two apart.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a historical observation, not a result. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global properties of physically interesting Lorentzian spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Global properties of physically interesting Lorentzian spacetimes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="global-properties-of-physically-interesting-lorentzian-spacetimes"><strong>Global properties of physically interesting Lorentzian spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1601.03355v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Deloshan Nawarajan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 January 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Global properties of physically interesting Lorentzian spacetimes - 1601.03355-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Global properties of physically interesting Lorentzian spacetimes - 1601.03355.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Global properties of physically interesting Lorentzian spacetimes - 1601.03355.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Most work in general relativity attends only to local properties. The authors argue that carrying the standard model of particle physics into curved space forces global structure: orientability in space, time, and spacetime, global causality, and a globally defined tetrad. If a global tetrad is needed, the metric is not the fundamental object. They then examine almost complex structure, which any tetrad suggests but which cannot be made compatible with a Hermitian structure in Lorentzian signature. The discussion also reports a mixed verdict on using this picture to understand the Newman–Janis ansatz.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-usual-focus">The usual focus</h3>
+<p>"Under normal circumstances most members of the general relativity community focus almost exclusively on the local properties of spacetime, such as the locally Euclidean structure of the manifold and the Lorentzian signature of the metric tensor."</p>
+<h3 id="the-complaint">The complaint</h3>
+<p>"this gives an extremely successful empirical model of classical gravity and classical matter — at least as long as one does not ask too many awkward questions about global issues, (such as global topology and global causal structure). We feel however that this is a tactical error"</p>
+<h3 id="the-argument">The argument</h3>
+<p>"we know that the standard model of particle physics is also an extremely good representation of some parts of empirical reality; and we had better be able to carry over all the good features of the standard model of particle physics — at least into the realm of semi-classical quantum gravity."</p>
+<h3 id="what-follows">What follows</h3>
+<p>"On physical grounds spacetime should be space-orientable, time-orientable, and spacetime-orientable, and it should possess a globally defined tetrad (vierbein, or in general a globally defined vielbein/n-bein). So on physical grounds spacetime should be parallelizable."</p>
+<h3 id="the-consequence-for-what-is-fundamental">The consequence for what is fundamental</h3>
+<p>"This strongly suggests that the metric is not the fundamental physical quantity; a very good case can be made for the tetrad being more fundamental than the metric."</p>
+<h3 id="the-stronger-proposal">The stronger proposal</h3>
+<p>"a globally-defined 'almost complex structure' is almost unavoidable."</p>
+<h3 id="the-verdict-on-complex-structure">The verdict on complex structure</h3>
+<p>"imposing complex structure is a much more ambitious proposal which is much less tied to empirical observations. While any tetrad leads naturally to an almost complex structure, this almost complex structure is tetrad dependent and (in terms of the metric) not unique. More troublingly, in Lorentzian signature the almost complex structure is not compatible with any almost Hermitian structure"</p>
+<h3 id="the-summary">The summary</h3>
+<p>"Extra global structure (orientability, stable causality, hyperbolicity, tetrads, parallelizability) are not just optional extras, they are automatically introduced as soon as one tries to incorporate parts of the standard model of particle physics into curved-space QFT."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-tetrad-comes-before-the-metric">1. The tetrad comes before the metric</h3>
+<p><strong>The idea.</strong> A globally defined tetrad is required by fermions, so it is more fundamental than the metric.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> fixes a convention in which the metric is primary. This paper argues the order should be reversed, which is a direct challenge to that article's starting point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The argument is physical motivation rather than a theorem. Ranked first, because it questions the article's foundational choice.</p>
+<h3 id="2-parallelizability-as-a-physical-requirement">2. Parallelizability as a physical requirement</h3>
+<p><strong>The idea.</strong> Spacetime should admit a global vielbein because particle physics needs one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> constructs geometry globally without checking this condition. Parallelizability would rule out some of its constructions and validate others.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of topology.</p>
+<p><strong>What stands in the way.</strong> The requirement is argued, not derived. Ranked second.</p>
+<h3 id="3-almost-complex-structure-does-not-fit-lorentzian-signature">3. Almost complex structure does not fit Lorentzian signature</h3>
+<p><strong>The idea.</strong> Any tetrad suggests an almost complex structure, but in Lorentzian signature it clashes with a Hermitian one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> gains a structural obstruction specific to signature, which is exactly the kind of entry it collects.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on complex structures.</p>
+<p><strong>What stands in the way.</strong> The article notes that workarounds create more problems, without proving impossibility. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

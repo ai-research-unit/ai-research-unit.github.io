@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartesian Kerr–Schild variation on the Newman–Janis trick — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cartesian Kerr-Schild variation on the Newman-Janis ansatz - 1601.03532.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cartesian-kerrschild-variation-on-the-newmanjanis-trick"><strong>Cartesian Kerr–Schild variation on the Newman–Janis trick</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1601.03532v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Del Rajan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 February 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cartesian Kerr-Schild variation on the Newman-Janis ansatz - 1601.03532-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cartesian Kerr-Schild variation on the Newman-Janis ansatz - 1601.03532.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cartesian Kerr-Schild variation on the Newman-Janis ansatz - 1601.03532.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper gives a shorter route from Schwarzschild to Kerr than the Newman–Janis procedure. It works directly with the Kerr–Schild form of the metric in Cartesian coordinates and reduces the usual four steps to two, avoiding null tetrads, metric inversion, and complex coordinate transformations. The authors do not claim to have turned the trick into an algorithm; they identify two distinct operations inside it, the complexification of a prefactor and the change from a spherical to an oblate spheroidal null congruence. They leave the second as the mysterious step and conclude that the procedure remains a trick.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-subject">The subject</h3>
+<p>"The Newman–Janis trick is a procedure, (not even really an ansatz), for obtaining the Kerr spacetime from the Schwarzschild spacetime. This 50 year old trick continues to generate heated discussion and debate even to this day. Most of the debate focusses on whether the Newman–Janis procedure can be upgraded to the status of an algorithm, or even an inspired ansatz, or is it just a random trick of no deep physical significance."</p>
+<h3 id="the-contribution">The contribution</h3>
+<p>"In the current article we will not answer these deeper questions, we shall instead present a much simpler alternative variation on the theme of the Newman–Janis trick that might be easier to work with. We shall present a 2-step version of the Newman–Janis trick that works directly with the Kerr–Schild 'Cartesian' metric presentation of the Kerr spacetime."</p>
+<h3 id="the-result">The result</h3>
+<p>"We have developed a very simple and direct version of the Newman–Janis trick, one that works directly on the (covariant) metric. (So we can avoid working with null tetrads, metric inversion, and even avoid complex coordinate transformations.) In doing so we have reduced the usual four-step process to a much more direct two-step process."</p>
+<h3 id="the-refusal-to-overclaim">The refusal to overclaim</h3>
+<p>"We do not claim to have upgraded the Newman–Janis procedure to an algorithm, the procedure still requires some motivated guesswork, so it is still at best a trick. It is the compact nature of the current two-step version of the Newman–Janis trick that is the primary issue of scientific interest in this article."</p>
+<h3 id="what-remains-unexplained">What remains unexplained</h3>
+<p>"Even with this simplified two-step process, there are still two radically different things going on. The complexification of the 'potential' prefactor is straightforward, and in Newtonian gravity has a history going back some 130 years. In contrast the transition from the Schwarzschild null geodesic congruence to the Kerr null geodesic congruence is much trickier. One route, via the deformation of spherical polar to oblate spheroidal coordinates is technically elementary, even pedestrian, but somewhat mysterious." And: "on balance we still feel that the Newman–Janis procedure is a trick rather than an algorithm."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-how-much-of-kerr-is-in-kerrschild">1. How much of Kerr is in Kerr–Schild</h3>
+<p><strong>The idea.</strong> The derivation needs only the Kerr–Schild form and one deformation of the null congruence. The full metric is reached from a scalar and a vector.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code> works inside the Kerr–Schild sub-class. This paper shows that the sub-class is not merely a convenient chart for known solutions: it is closed under the Newman–Janis step, so a rotating solution can be generated from a non-rotating one without leaving the class. Whether the article can use that depends on whether its vacuum wave equation is preserved under the same step, which is a question the article should answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code>, in the definition of the sub-class.</p>
+<p><strong>What stands in the way.</strong> The step is a trick with an unexplained ingredient, so it is not a symmetry the article can assume. Ranked first, because it poses a precise question about the article's own object.</p>
+<h3 id="2-a-trick-that-is-not-an-algorithm">2. A trick that is not an algorithm</h3>
+<p><strong>The idea.</strong> A procedure that works, is used for fifty years, and still requires guesswork.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues what cannot be done. Here is a case of something that is done and not understood, which is a different category. The catalogue should not conflate "no known construction" with "proved impossible", and this paper is the example to cite.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a distinction in bookkeeping, not a new entry. Ranked second.</p>
+<h3 id="3-oblate-spheroidal-coordinates-do-the-work">3. Oblate spheroidal coordinates do the work</h3>
+<p><strong>The idea.</strong> Rotation enters through a coordinate deformation, not through a dynamical degree of freedom.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds rotational content into the frame field. This paper suggests that in the Kerr–Schild representation, the same content can be carried by the coordinate map alone. That is a real alternative to the frame's role, and the article should say why it prefers one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> Coordinate artefacts are not physical degrees of freedom, so the parallel may be superficial. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

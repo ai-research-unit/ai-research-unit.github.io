@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regge–Wheeler equation, linear stability, and greybody factors for dirty black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Regge-Wheeler equation, linear stability, and greybody factors for dirty black…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reggewheeler-equation-linear-stability-and-greybody-factors-for-dirty-black-holes"><strong>Regge–Wheeler equation, linear stability, and greybody factors for dirty black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1305.1416v4 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Tritos Ngampitipan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 15 August 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Regge-Wheeler equation, linear stability, and greybody factors for dirty black holes - 1305.1416-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Regge-Wheeler equation, linear stability, and greybody factors for dirty black holes - 1305.1416.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Regge-Wheeler equation, linear stability, and greybody factors for dirty black holes - 1305.1416.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A dirty black hole is surrounded by matter. The authors write the Regge–Wheeler equation for spin 0, spin 1, and axial spin 2 perturbations on such a background. They use only general features of the background, chiefly the energy conditions on the surrounding matter. From these they get bounds on stability and on the greybody factors. The result holds without solving for the metric.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"we shall present general forms for the Regge–Wheeler equation for linearized spin 0, spin 1, and axial spin 2 perturbations on an arbitrary static spherically symmetric background spacetime"</p>
+<h3 id="the-inputs">The inputs</h3>
+<p>"Using very general features of the background spacetime, (in particular the classical energy conditions for the stress-energy surrounding the black hole)"</p>
+<h3 id="the-output">The output</h3>
+<p>"we extract several interesting and robust bounds on the behaviour of such systems, including rigorous bounds on the greybody factors for dirty black holes"</p>
+<h3 id="the-simplification">The simplification</h3>
+<p>"we are considering linearized scalar perturbations in the test-field limit"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-without-a-solution">1. Bounds without a solution</h3>
+<p><strong>The idea.</strong> Energy conditions alone bound the perturbation spectrum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> discusses horizon properties generally. A bound derived from energy conditions is exactly the kind of model-independent statement it wants.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of stability.</p>
+<p><strong>What stands in the way.</strong> The bounds are not tight. Ranked first, because it is model-independent.</p>
+<h3 id="2-greybody-factors">2. Greybody factors</h3>
+<p><strong>The idea.</strong> What escapes a horizon depends on the surrounding matter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> computes emission without an environment. Greybody factors are the correction it omits.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the spectrum.</p>
+<p><strong>What stands in the way.</strong> The bounds are inequalities. Ranked second.</p>
+<h3 id="3-spin-separated">3. Spin separated</h3>
+<p><strong>The idea.</strong> Each spin sector gets its own equation and its own bound.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code> treats the spin-2 sector alone. A unified treatment across spins would show what is generic.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>, in the discussion of perturbation equations.</p>
+<p><strong>What stands in the way.</strong> The paper only states the equations. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

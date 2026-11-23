@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic Composition of Boosts: An Elementary Derivation of the Wigner Rotation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Generic composition of boosts - an elementary derivation of the Wigner rotation 0211022v1.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generic-composition-of-boosts-an-elementary-derivation-of-the-wigner-rotation"><strong>Generic Composition of Boosts: An Elementary Derivation of the Wigner Rotation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0211022v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Rafael Ferraro, Marc Thibeault</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 November 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Generic composition of boosts - an elementary derivation of the Wigner rotation 0211022v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Generic composition of boosts - an elementary derivation of the Wigner rotation 0211022v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Generic composition of boosts - an elementary derivation of the Wigner rotation 0211022v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the Wigner angle of two arbitrary boosts with nothing but linear algebra, on the observation that a boost is a symmetric matrix. Symmetry is not a technicality here; it is the reason the product of two boosts is not a boost and the reason the rotation can be read off. The result is the closed formula for $\tan\theta_{W}$ in terms of the two rapidities, and the paper ends with an application to aberration, where the Wigner angle appears as the difference between two aberration angles that a naive composition would confuse.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-subject-has-a-reputation">Why the subject has a reputation</h3>
+<p>"Because of its apparent complexity, the discussion of Wigner rotation is usually reduced to the study of Thomas precession, which is too specific a case to allow a deep understanding of boost composition."</p>
+<p>And the diagnosis of the literature: "Sometimes the papers are aimed at the understanding of certain properties of the Lorentz group, instead of looking for a straightforward way to get the Wigner rotation, leaving in the reader the impression that this topic is complicated". The remedy: "The mathematical tool that we will use is simple linear algebra. After all, boosts are linear transformations. However, the key point is that boosts are symmetric linear transformations."</p>
+<h3 id="the-eigenvector-argument">The eigenvector argument</h3>
+<p>"One could give an answer to the question by starting from the fact that boosts are represented by symmetric matrices." Why they must be: "boosts leave four independent directions in spacetime invariant: namely, i) they do not modify the light-cones; on the light-cone there are two independent directions, belonging to light-rays travelling back and forth along the boost direction, that remain invariant (see Appendix A); ii) in addition, the spacelike directions that are perpendicular to the boost direction are also left unchanged (a further two independent directions). Then, boosts have four independent real eigen(four)-vectors, and their representative matrices must be symmetric".</p>
+<p>The conclusion: "Since the product of matrices representing boosts is non-symmetric (unless both boosts are parallel), then one can answer that the composition of two boosts is not, in general, equivalent to a single boost."</p>
+<h3 id="the-angle">The angle</h3>
+<p>The product is written $B^{(y)}B^{(x)}=RB_{f}$, and "0 0 . 0 1 (6) The angle θW can be obtained by demanding the symmetry of the matrix Bf : − γ2 sin θW = γ1 sin θW + γ2 γ1 β2 β1 cos θW , (7) i.", which gives</p>
+<p>$$\tan\theta_{W}=-\frac{\gamma_{1}\gamma_{2}\beta_{1}\beta_{2}}{\gamma_{1}+\gamma_{2}},\qquad \cos\theta_{W}=\frac{\gamma_{1}+\gamma_{2}}{\gamma_{1}\gamma_{2}+1}.$$</p>
+<p>The factors are the two boosts' parameters and nothing else — no angle between the directions appears, because for perpendicular boosts the directions are fixed by construction.</p>
+<h3 id="aberration">Aberration</h3>
+<p>The application: "ifference between (25) and (26) is due to the fact that the new x direction in both process is not the same. So" The reason is that the boost of the composed velocity has to be completed by a rotation before it reproduces the sequence's aberration, so The rotation angle $\delta-\delta_{c}$ is the Wigner angle. The two angles are $\cos\delta_{c}=\gamma_{2}^{-1}$ for the sequence and the composed-boost expression for $\delta$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-symmetry-as-the-whole-proof">1. Symmetry as the whole proof</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: the failure of boosts to close under composition is proved by counting eigenvectors, since every boost has four real invariant directions and a product of two non-parallel boosts does not. The rotation then follows from demanding that the residual factor be symmetric.</p>
+<p><strong>What it would add.</strong> The corpus's boost-composition article proves the same thing with the commutator table, which is a group-theoretic route: the bracket of two boost generators is a rotation generator. This route is matrix-theoretic and needs no Lie algebra. Having both would let the corpus say which structure is doing the work — the bracket, which is algebraic, or the symmetry, which is a property of one particular matrix representation — and the article's claim that the rotation "is a single term of a product" would be visibly representation-dependent.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The eigenvector count uses the fact that a boost's four invariant directions are real, which is true in the Lorentz signature and not a general statement about symmetric matrices. So the proof is less general than it looks, and importing it as an alternative route would need that caveat.</p>
+<h3 id="2-the-wigner-angle-as-a-difference-of-two-aberration-angles">2. The Wigner angle as a difference of two aberration angles</h3>
+<p><strong>The idea.</strong> An <strong>operational definition</strong>: the Wigner angle is what is left when the aberration produced by a sequence of boosts is compared with the aberration produced by the single boost of the composed velocity. Both are measurable, and their difference is the rotation.</p>
+<p><strong>What it would add.</strong> The corpus's aberration article treats the boost as a Möbius flow on the sky, which gives aberration as a conformal map. This gives a second observable — the residual rotation — and identifies it with a difference of two maps the corpus already computes. It would let the corpus's aberration machinery produce the Thomas–Wigner angle as a by-product rather than as a separate calculation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> The two aberration angles are defined with respect to different frames' axes, so their difference is only a rotation if the axes are compared in a fixed way. The paper fixes the convention implicitly by working with perpendicular boosts, and the general case would need the convention stated.</p>
+<h3 id="3-four-invariant-directions-as-a-characterisation">3. Four invariant directions as a characterisation</h3>
+<p><strong>The idea.</strong> A <strong>characterisation</strong>: a Lorentz transformation is a boost exactly when it has four independent real eigendirections — two null, two spacelike — and this is what distinguishes boosts from rotations and from mixed transformations.</p>
+<p><strong>What it would add.</strong> The corpus's Cartan decomposition splits a general transformation into a boost and a rotation and identifies the factors by their action. An eigenvalue criterion would identify the boost factor without decomposing first, which is a cleaner statement of what "the boost part" means and gives the corpus's decomposition a uniqueness test it does not currently state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The criterion holds for boosts and fails for products, so it characterises the set rather than providing an algorithm; the paper uses it to prove a negative, not to compute a decomposition.</p>
+<p>The rank: symmetry-as-proof first, because it is a rival method; the aberration difference second, because it is an observable; the eigenvector criterion last, because it is a test rather than a construction.</p>
+<p>The remaining items in one line each: the remark that the three inertial systems involved must be distinguished before any physical interpretation is attempted, which is a warning the corpus's frame articles also make; the observation that the composed boost is not the boost of the composed velocity plus a rotation in the naive order, since the rotation sits on the left; and the choice of perpendicular boosts for the worked example, which is what makes the formula collapse to two parameters.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

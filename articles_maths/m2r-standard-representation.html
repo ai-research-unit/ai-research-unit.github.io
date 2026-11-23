@@ -89,13 +89,13 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>defining representation</strong> is the linear map $\mathsf{M}_2:\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb{R})$ fixed on the basis by</p>
 <p>$$
 \mathsf{M}_2(e_t)=I,\qquad
-\mathsf{M}_2(\vec e_x)=J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\mathsf{M}_2(\vec e_y)=K=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
-\mathsf{M}_2(\vec e_z)=D=\begin{pmatrix}-1&0\\0&1\end{pmatrix}.
+\mathsf{M}_2(\vec e_x)=J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=K=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=D=\begin{pmatrix}-1&amp;0\\0&amp;1\end{pmatrix}.
 $$</p>
 <p><strong>The dictionary.</strong> On a general element the map is</p>
 <p>$$
-\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-q_z & q_y-q_x\\ q_x+q_y & q_t+q_z\end{pmatrix},
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-q_z &amp; q_y-q_x\\ q_x+q_y &amp; q_t+q_z\end{pmatrix},
 $$</p>
 <p>and it inverts by</p>
 <p>$$
@@ -207,12 +207,12 @@ $$</p>
 <p><strong>The image.</strong> The image of $\mathsf{M}_2$ is all of $M_2(\mathbb{R})$. This is the structural difference from the quaternion category, where the image is a proper subspace: for $\mathbb{H}$ inside $M_2(\mathbb{C})$ the image has real dimension four in eight, and the missing four dimensions are the ones a matrix model of the quaternions can never reach. Here nothing is missing, and consequently every matrix statement about a split quaternion is a statement about the algebra and conversely.</p>
 <p><strong>The four corners.</strong> Take the idempotent $\tilde\pi_{\mathrm{id},+}=\tfrac12(e_t+\vec e_y)$, its complement $\tilde\pi_{\mathrm{id},-}=\tfrac12(e_t-\vec e_y)$, and the four Peirce corners $A_{\epsilon\delta}=\tilde\pi_{\mathrm{id},\epsilon} A\tilde\pi_{\mathrm{id},\delta}$. In the model they are the four matrix units of the basis of lines $L_\pm=\operatorname{span}(1,\pm1)$, with</p>
 <p>$$
-\mathsf{M}_2(\tilde\pi_{\mathrm{id},+})=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
-\mathsf{M}_2(\tilde\pi_{\mathrm{id},-})=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+\mathsf{M}_2(\tilde\pi_{\mathrm{id},+})=\tfrac12\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},\qquad
+\mathsf{M}_2(\tilde\pi_{\mathrm{id},-})=\tfrac12\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix},
 $$</p>
 <p>$$
-\mathsf{M}_2\bigl(\tfrac14(\vec e_x-\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&-1\\1&-1\end{pmatrix},\qquad
-\mathsf{M}_2\bigl(-\tfrac14(\vec e_x+\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&1\\-1&-1\end{pmatrix}.
+\mathsf{M}_2\bigl(\tfrac14(\vec e_x-\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&amp;-1\\1&amp;-1\end{pmatrix},\qquad
+\mathsf{M}_2\bigl(-\tfrac14(\vec e_x+\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&amp;1\\-1&amp;-1\end{pmatrix}.
 $$</p>
 <p>The two off-diagonal corners are the matrix units $E_{12}$ and $E_{21}$ of that basis, they are nilpotent, and their vanishing square is the matrix form of the Peirce relations. So the algebra has a full system of matrix units, which the quaternion algebra and the split-biquaternion algebra do not have; that absence is the reason those two categories need a separate discussion of what a matrix model can and cannot show.</p>
 <p><strong>What the product does not preserve.</strong> The model is multiplicative but it is not an isometry for any form used below: the determinant of a product is the product of the determinants, but the trace of a product is not the product of the traces, and the Frobenius inner product of a product is not the product of the Frobenius inner products. Multiplicativity is a statement about the algebra, and the forms of the section on norms are statements about the space.</p>
@@ -293,7 +293,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$>0$</td>
+<td>$&gt;0$</td>
 <td>two distinct reals, $q_t\pm\sqrt{q_y^2+q_z^2-q_x^2}$</td>
 <td>split</td>
 <td>$\mathbb{R}\times\mathbb{R}$</td>
@@ -305,7 +305,7 @@ $$</p>
 <td>the dual numbers</td>
 </tr>
 <tr>
-<td>$<0$</td>
+<td>$&lt;0$</td>
 <td>the conjugate pair $q_t\pm i\sqrt{q_x^2-q_y^2-q_z^2}$</td>
 <td>complex</td>
 <td>$\mathbb{C}$</td>
@@ -328,7 +328,7 @@ $$</p>
 \operatorname{adj}\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q^{\natural}),
 $$</p>
 <p>and consequently $\mathsf{M}_2(\tilde q)^{-1}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$ on the invertibles.</p>
-<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ is $\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$, which on the dictionary matrix is $\begin{pmatrix}q_t+q_z&-(q_y-q_x)\\-(q_x+q_y)&q_t-q_z\end{pmatrix}$, and that is the dictionary matrix of $\tilde q^{\natural}$.</p>
+<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ is $\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}$, which on the dictionary matrix is $\begin{pmatrix}q_t+q_z&amp;-(q_y-q_x)\\-(q_x+q_y)&amp;q_t-q_z\end{pmatrix}$, and that is the dictionary matrix of $\tilde q^{\natural}$.</p>
 <p><strong>The identity is polynomial.</strong> The relation $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\langle\tilde q\rangle_{\natural}I$ holds for every element, invertible or not, because both sides are polynomial in the four coordinates. On the zero divisors it reads $AB=0$ with $A,B\neq0$, which is the matrix form of the zero-divisor cone.</p>
 <p><strong>The transpose.</strong> The transpose is not the conjugation. On the dictionary matrix,</p>
 <p>$$
@@ -459,7 +459,7 @@ $$</p>
 \mathrm{PGL}_2(\mathbb{R})=\operatorname{Aut}(\mathbb{H}_{\mathrm{spl}}),
 $$</p>
 <p>and the action of the algebra's automorphism group on its minimal left ideals is faithful. This is the geometric content of the previous section's abstract statement that the automorphisms are inner.</p>
-<p><strong>The chart and the Möbius formula.</strong> On the chart $t=\zeta_1/\zeta_2$ of a line $[\zeta]$ with $\zeta_2\neq0$, a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts by</p>
+<p><strong>The chart and the Möbius formula.</strong> On the chart $t=\zeta_1/\zeta_2$ of a line $[\zeta]$ with $\zeta_2\neq0$, a matrix $\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ acts by</p>
 <p>$$
 t\longmapsto\frac{at+b}{ct+d},
 $$</p>

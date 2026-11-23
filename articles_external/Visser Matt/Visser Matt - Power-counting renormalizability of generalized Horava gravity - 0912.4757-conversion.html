@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power-counting renormalizability of generalized Hořava gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power-counting renormalizability of generalized Horava gravity - 0912.4757.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="power-counting-renormalizability-of-generalized-horava-gravity"><strong>Power-counting renormalizability of generalized Hořava gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0912.4757v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 24 December 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Power-counting renormalizability of generalized Horava gravity - 0912.4757-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power-counting renormalizability of generalized Horava gravity - 0912.4757.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power-counting renormalizability of generalized Horava gravity - 0912.4757.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An earlier article argued that scalar theories with two time derivatives and many space derivatives are perturbatively finite. This note extends the counting to gravity. The author recalls how the superficial degree of divergence is read from one-particle-irreducible diagrams. He then checks whether the same bookkeeping survives when the metric is dynamical. The answer is a power-counting statement, not a proof of renormalizability.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-earlier-argument">The earlier argument</h3>
+<p>"In reference [1] I argued for the perturbative power-counting finiteness of the normal-ordered $:P(\phi)^z_{d+1}:$ scalar quantum field theories in $(d+1)$ dimensions"</p>
+<h3 id="the-defining-feature">The defining feature</h3>
+<p>"the central defining feature of these quantum field theories is that the kinetic term in the Lagrangian contains exactly two time derivatives and up to $2d=2z$ space derivatives."</p>
+<h3 id="the-method">The method</h3>
+<p>"To analyze the superficial degree of divergence one need only consider the one-particle-irreducible (1PI) sub-diagrams of the Feynman diagram."</p>
+<h3 id="the-extension">The extension</h3>
+<p>"the potential benefits of allowing Lorentz symmetry breaking" are examined for generalized Hořava gravity</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-anisotropic-scaling-as-a-regulator">1. Anisotropic scaling as a regulator</h3>
+<p><strong>The idea.</strong> Different powers of time and space derivatives change the divergence counting.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects limits that hold with Lorentz symmetry. Anisotropic scaling is a way around some of them, which the catalogue should record.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> Counting is not renormalizability. Ranked first, because it names an escape route from listed limits.</p>
+<h3 id="2-two-time-derivatives-stay">2. Two time derivatives stay</h3>
+<p><strong>The idea.</strong> The construction keeps the Hamiltonian bounded by allowing only two time derivatives.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> works with second-order equations. A rationale for insisting on two time derivatives supports that choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the equation.</p>
+<p><strong>What stands in the way.</strong> The rationale is technical. Ranked second.</p>
+<h3 id="3-power-counting-as-a-test">3. Power counting as a test</h3>
+<p><strong>The idea.</strong> A divergence count can be done before any calculation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use a formal viability test of this kind.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of criteria.</p>
+<p><strong>What stands in the way.</strong> The count applies to a specific class. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

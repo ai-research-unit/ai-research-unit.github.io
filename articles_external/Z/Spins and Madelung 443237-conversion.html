@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin and Madelung Fluid — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Spins and Madelung 443237.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-and-madelung-fluid"><strong>Spin and Madelung Fluid</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>INFN report (Frascati)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not printed in the PDF (report INFN/AE-95/18)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>G. Salesi (Universita di Catania, INFN Sezione di Catania)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>26 July 1995</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>INFN/AE-95/18, SIS-Pubblicazioni dei Laboratori Nazionali di Frascati</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Spins and Madelung 443237-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Spins and Madelung 443237.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Spins and Madelung 443237.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Splits the Pauli current into two parts, one parallel and one orthogonal to the momentum, identifies the first as the centre-of-mass velocity and the second as the velocity of motion in the centre-of-mass frame — the internal spin motion, or zitterbewegung — and inserts the composite velocity into the kinetic term of the non-relativistic Lagrangian, which produces the quantum potential of the Madelung fluid. The conclusion is that the quantum behaviour of a particle is tied to the existence of spin and zitterbewegung.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-decomposition">The decomposition</h3>
+<p>"Starting from the Pauli current we obtain (in the ordinary tensorial language) the decomposition of the non-relativistic local velocity in two parts: one parallel and the other orthogonal to the impulse. The former is recognized to be the ‘‘classical” part, that is, the center-of-mass (CM) velocity, and the latter the “quantum” one, that is, the velocity of the motion in the CM frame (namely, the internal “spin motion" or zitterbewegung)."</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>"Inserting this complete, composite expression of the velocity into the kinetic energy term of the classical non-relativistic (i.e. newtonian) lagrangian, we straightforwardly get the appearance of the socalled quantum potential associated as it is known, to the Madeliing fluid. In such a way, the quantum mechanical behaviour of particles appears to be strictly correlated to the existence of spin and zitterbewegung."</p>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"the lagrangian for a non-relativistic scalar particle may" the standard one with the potential $U$ of the external forces, from which varying with respect to $\psi$ and $\psi^*$ gives the Schrödinger equation. The spin case is built by replacing the scalar density with the Pauli spinor and the velocity with the composite one. The report's own disclaimer says that portions "may be illegible" in the scanned original; the formulas in the text layer are partly unreadable and are not reproduced here.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-quantum-potential-is-the-kinetic-energy-of-the-internal-motion">1. The quantum potential is the kinetic energy of the internal motion</h3>
+<p><strong>The idea.</strong> The Madelung quantum potential is not an added term; it is what the kinetic energy becomes when the velocity has a component orthogonal to the momentum. Spin produces that component, so the potential is a spin effect. This is a <strong>mechanism</strong>, and it is the paper's central claim.</p>
+<p><strong>What it would add.</strong> A derivation of the quantum potential from a velocity decomposition rather than from a substitution into the wave equation, which is what the corpus's Madelung articles do. It would give the corpus's spin-fluid potential term an origin.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, at the potential.</p>
+<p><strong>What stands in the way.</strong> The claim is made in the tensorial language of the Pauli current; the corpus works in an algebra where the velocity is a single algebraic object and there is no natural split into parallel and orthogonal parts without an inner product.</p>
+<h3 id="2-zitterbewegung-is-the-source-not-the-artefact">2. Zitterbewegung is the source, not the artefact</h3>
+<p><strong>The idea.</strong> The trembling motion is what the spin contributes to the velocity, and it is present in the non-relativistic Pauli theory, not only in the Dirac one. It is therefore not a relativistic curiosity.</p>
+<p><strong>What it would add.</strong> A demotion of zitterbewegung from a Dirac peculiarity to a generic spin phenomenon, which changes what the corpus's Dirac articles should say about it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/zitterbewegung-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The non-relativistic zitterbewegung here is defined through the current's orthogonal part, a definition that may not survive the passage to the relativistic algebra where the current is one object.</p>
+<p>This is a fourteen-page report; the current decomposition, the velocity split and the quantum potential are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

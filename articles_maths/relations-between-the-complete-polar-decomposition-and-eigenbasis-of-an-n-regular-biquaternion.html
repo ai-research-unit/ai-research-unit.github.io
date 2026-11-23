@@ -137,7 +137,7 @@ $$</p>
 $$</p>
 <p>with</p>
 <p>$$
-\varrho>0,\quad
+\varrho&gt;0,\quad
 \theta_{\mathrm{pha}}\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\quad
 \theta_{\mathrm{rpd}}\ge0,\quad
 \theta_{\mathrm{axr}}\in[0,2\pi],\quad
@@ -162,7 +162,7 @@ $$</p>
 </tr>
 <tr>
 <td>Scalar factor</td>
-<td>$\varrho>0$</td>
+<td>$\varrho&gt;0$</td>
 </tr>
 <tr>
 <td>Phase</td>
@@ -762,12 +762,12 @@ $$</p>
 </table></div>
 <p>In both rows the eigenvalues determine $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$: the modulus of $\lambda_+/(\varrho e^{i\theta_{\mathrm{pha}}})$ is $e^{-\theta_{\mathrm{rpd}}/2}$, and its argument is $+\theta_{\mathrm{axr}}/2$ for parallel axes and $-\theta_{\mathrm{axr}}/2$ for antiparallel axes. The common axis is not determined by the eigenvalues: it is the remaining spectral datum, read from the eigenprojection.</p>
 <h3 id="the-general-case-and-the-one-parameter-family">The General Case and the One-Parameter Family</h3>
-<p>When $0<\lvert\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\rvert<1$, the scalar-part formula is one complex equation for $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and it leaves a one-parameter family. A clean exact family is obtained by fixing $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$ and taking the rotor axis perpendicular to the boost axis, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. Then</p>
+<p>When $0&lt;\lvert\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\rvert&lt;1$, the scalar-part formula is one complex equation for $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and it leaves a one-parameter family. A clean exact family is obtained by fixing $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$ and taking the rotor axis perpendicular to the boost axis, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. Then</p>
 <p>$$
 \operatorname{Sc}\tilde U=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}
 $$</p>
 <p>is independent of the azimuth of $\vec u_{\mathrm r}$ around $\vec u_{\mathrm b}$. Rotating $\vec u_{\mathrm r}$ in the plane perpendicular to $\vec u_{\mathrm b}$ therefore changes $\tilde U$, and with it the eigenprojections and the polar word, while $\operatorname{Sc}\tilde U$ and the eigenvalues $\lambda_\pm$ stay fixed.</p>
-<p><strong>Proposition (the eigenvalues do not determine the word).</strong> For $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family</p>
+<p><strong>Proposition (the eigenvalues do not determine the word).</strong> For $\theta_{\mathrm{rpd}}&gt;0$, $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family</p>
 <p>$$
 \boxed{\; \tilde U(\varphi)=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}(\varphi)\Bigr),
@@ -953,8 +953,8 @@ $$</p>
 =
 Q_t
 \begin{pmatrix}
-1 & 1\\
-0 & 1
+1 &amp; 1\\
+0 &amp; 1
 \end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> In the matrix model choose $v\in\operatorname{im}N$ with $v\neq0$. Since $N^2=0$, $v\in\ker N$. Choose $w$ with $Nw=v$. Then $v\neq0$ and $w\notin\ker N$, so $(v,w)$ is a basis. The matrix of $N$ in that basis has first column $0$ and second column $v$, which is the nilpotent Jordan block.</p>
@@ -970,8 +970,8 @@ $$</p>
 =
 \varepsilon
 \begin{pmatrix}
-1 & 1\\
-0 & 1
+1 &amp; 1\\
+0 &amp; 1
 \end{pmatrix}.
 $$</p>
 <p>The polar factors do not preserve the flag in general.</p>
@@ -1036,7 +1036,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_{\mathrm{id},\sigma}=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; they are not repeated here.</p>
-<p>The polar word reaches the boundary with $\varrho\to0$ and $\theta_{\mathrm{rpd}}\to\infty$ at the rate $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ with $0<R<\infty$. The limit is</p>
+<p>The polar word reaches the boundary with $\varrho\to0$ and $\theta_{\mathrm{rpd}}\to\infty$ at the rate $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ with $0&lt;R&lt;\infty$. The limit is</p>
 <p>$$
 \frac{R\,e^{i\theta_{\mathrm{pha}}}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 $$</p>
@@ -1051,7 +1051,7 @@ $$</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <p>Under the matrix model $\mathsf M_2$, the eigenvalue decomposition is the diagonal form</p>
 <p>$$
-\mathsf M_2(\tilde Q)\sim\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
+\mathsf M_2(\tilde Q)\sim\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}
 $$</p>
 <p>in the distinct case. The complete polar decomposition is the matrix product</p>
 <p>$$
@@ -1260,8 +1260,8 @@ $$</p>
 <p>$$
 N=\mathsf M(\vec\Pi_{\mathrm{nil}})=
 \begin{pmatrix}
-0 & -2i\\
-0 & 0
+0 &amp; -2i\\
+0 &amp; 0
 \end{pmatrix}.
 $$</p>
 <p>A Jordan chain is $\zeta=(2i,0)$ and $\eta=(0,-1)$; then $\zeta=(2i,0)$ is the eigenvector and $N\eta=\zeta$. In the basis $(\zeta,\eta)$,</p>
@@ -1269,41 +1269,41 @@ $$</p>
 \mathsf M_{(\zeta,\eta)}(\tilde Q)
 =
 \begin{pmatrix}
-1 & 1\\
-0 & 1
+1 &amp; 1\\
+0 &amp; 1
 \end{pmatrix},
 \qquad
 \mathsf M_{(\zeta,\eta)}(\tilde U_{\mathrm b})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
-3 & \tfrac12\\
-2 & 1
+3 &amp; \tfrac12\\
+2 &amp; 1
 \end{pmatrix},
 \qquad
 \mathsf M_{(\zeta,\eta)}(\tilde u_{\mathrm r})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
-1 & \tfrac12\\
--2 & 1
+1 &amp; \tfrac12\\
+-2 &amp; 1
 \end{pmatrix}.
 $$</p>
 <p>The two factor matrices are not triangular, and neither preserves the eigenline $\mathbb{C}(1,0)$. Their product is</p>
 <p>$$
 \frac12
 \begin{pmatrix}
-3 & \tfrac12\\
-2 & 1
+3 &amp; \tfrac12\\
+2 &amp; 1
 \end{pmatrix}
 \begin{pmatrix}
-1 & \tfrac12\\
--2 & 1
+1 &amp; \tfrac12\\
+-2 &amp; 1
 \end{pmatrix}
 =
 \begin{pmatrix}
-1 & 1\\
-0 & 1
+1 &amp; 1\\
+0 &amp; 1
 \end{pmatrix},
 $$</p>
 <p>which is the unipotent block. The example shows the two readings side by side: the Jordan basis gives the element a triangular form, and the polar word gives it a positive and a $*$-unitary factor, neither of which is triangular in that basis.</p>
@@ -1428,7 +1428,7 @@ $$</p>
 </tr>
 <tr>
 <td>matrix form, wall</td>
-<td>$Q_t\begin{pmatrix}1&1\\0&1\end{pmatrix}$ in the chain</td>
+<td>$Q_t\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}$ in the chain</td>
 </tr>
 <tr>
 <td>polar factors, wall</td>
@@ -1499,7 +1499,7 @@ $$</p>
 </tr>
 <tr>
 <td>Polar domain</td>
-<td>$q^2-q'^2\neq0$</td>
+<td>$q^2-q'{}^2\neq0$</td>
 <td>$Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$</td>
 <td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$</td>
 </tr>

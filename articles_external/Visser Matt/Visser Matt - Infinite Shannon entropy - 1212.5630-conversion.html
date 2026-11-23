@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Shannon entropy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Infinite Shannon entropy - 1212.5630.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="infinite-shannon-entropy"><strong>Infinite Shannon entropy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1212.5630v2 [cond-mat.stat-mech]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Valentina Baccetti, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 January 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Infinite Shannon entropy - 1212.5630-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Infinite Shannon entropy - 1212.5630.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Infinite Shannon entropy - 1212.5630.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A normalised probability distribution can still have infinite Shannon entropy. The authors give conditions for this, several simple bounds, and asymptotic estimates. Infinite entropy requires infinitely many states of non-zero but arbitrarily small probability. A bound of the form $S \le -\ln p$ holds for a probability cutoff $p$, so the divergence is never worse than logarithmic. Large entropy cannot be localised; it needs exponentially many states.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-phenomenon">The phenomenon</h3>
+<p>"Even if a probability distribution is properly normalizable, its associated Shannon (or von Neumann) entropy can easily be infinite."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"Roughly speaking, this happens when arbitrarily small amounts of probability are dispersed into an infinite number of states; we shall quantify this observation and make it precise."</p>
+<h3 id="the-elementary-bound">The elementary bound</h3>
+<p>"If the total number of states is finite, $N=\sum_n 1&lt;\infty$, then an elementary computation leads to the upper bound $S\le\ln N$. ... even if the total number of states is infinite ... as long the total number of states of non-zero probability is finite, $N'=\sum_{n:p_n&gt;0}1&lt;\infty$, an equally elementary computation leads to the upper bound $S\le\ln N'$."</p>
+<h3 id="the-consequence-for-state-counts">The consequence for state counts</h3>
+<p>"These simple observations demonstrate that to obtain infinite Shannon entropy, an infinite number of states must have non-zero probability, in particular: $N'\ge\exp S$. But then, since the sum of the probabilities is unity, an infinite number of states must have non-zero but arbitrarily small probability."</p>
+<h3 id="a-worked-example">A worked example</h3>
+<p>$$p_n=\frac{1}{\Sigma(u)}\frac{1}{n(\ln n)^{1+u}},\qquad \Sigma(u)=\sum_{n=\lceil e\rceil}^{\infty}\frac{1}{n(\ln n)^{1+u}} \qquad (paper\ 7)$$</p>
+<p>"So this probability distribution is convergent but has infinite Shannon entropy over the entire range $u\in(0,1]$."</p>
+<h3 id="the-logarithmic-cutoff-bound">The logarithmic cutoff bound</h3>
+<p>$$S(p)\le -\ln p \qquad (paper\ 38)$$</p>
+<p>"so in some sense the total Shannon entropy can never be worse than 'logarithmically divergent' in the probability cutoff."</p>
+<h3 id="the-localisation-statement">The localisation statement</h3>
+<p>"The message to take from this logarithmic bound is that large Shannon entropies cannot be tightly localized in state space, large Shannon entropies must invariably come from exponentially large regions of the state space."</p>
+<h3 id="the-stated-scope">The stated scope</h3>
+<p>"We are for the time being interested in single-channel Shannon entropy in the information theoretic sense, not entropy in a stochastic field theory or QFT defined over some configuration space, on the grounds that this simple problem is a necessary precursor to understanding infinite entropy in a field theoretic context."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-entropy-can-diverge-on-a-normalised-state">1. Entropy can diverge on a normalised state</h3>
+<p><strong>The idea.</strong> A well-defined probability distribution may have no finite entropy, and that is not a pathology of the formalism but a property of slow decay.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code> treats the entropy as a function on the state space. If the state space is infinite-dimensional and the spectrum decays slowly, the function takes the value infinity, and the article should say whether its geometry permits that.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code>, in the definition of the entropy.</p>
+<p><strong>What stands in the way.</strong> The paper works with countable state spaces, not a normed algebra. Ranked first, because it is a boundary case the target does not consider.</p>
+<h3 id="2-entropy-is-spread-not-concentrated">2. Entropy is spread, not concentrated</h3>
+<p><strong>The idea.</strong> A large entropy forces an exponentially large support.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> explains why coarse-graining raises entropy. This bound adds a cost: raising entropy requires spreading over new states, so a coarse-graining that merges without spreading cannot raise it much.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, in the discussion of the entropy functional.</p>
+<p><strong>What stands in the way.</strong> The target's partitions are finite. Ranked second.</p>
+<h3 id="3-logarithmic-divergence-as-a-ceiling">3. Logarithmic divergence as a ceiling</h3>
+<p><strong>The idea.</strong> With a probability cutoff the entropy grows at most like $-\ln p$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code> deals with entropy that scales with an area. A logarithmic ceiling from a cutoff is a different kind of bound, and comparing the two would show which is tighter in the regime where both apply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>, in the discussion of bounds.</p>
+<p><strong>What stands in the way.</strong> The cutoff is a bookkeeping device, not a physical scale. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

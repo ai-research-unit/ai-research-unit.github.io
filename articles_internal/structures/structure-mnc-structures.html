@@ -417,10 +417,10 @@ $$</p>
 <p><strong>The maximum dimension is $\lfloor n^{2}/4\rfloor+1$, by Schur.</strong> A commutative subalgebra of $M_n(k)$ has dimension at most $\lfloor n^{2}/4\rfloor+1$, and the bound is attained.</p>
 <p><strong>The extremal algebra is a two-block algebra,</strong></p>
 <p>$$
-\mathcal{A}_k=\left\{\begin{pmatrix}\lambda I_k&B\\0&\lambda I_{n-k}\end{pmatrix}:\lambda\in\mathbb{C},\ B\in M_{k\times(n-k)}(\mathbb{C})\right\},\qquad \dim\mathcal{A}_k=1+k(n-k),
+\mathcal{A}_k=\left\{\begin{pmatrix}\lambda I_k&amp;B\\0&amp;\lambda I_{n-k}\end{pmatrix}:\lambda\in\mathbb{C},\ B\in M_{k\times(n-k)}(\mathbb{C})\right\},\qquad \dim\mathcal{A}_k=1+k(n-k),
 $$</p>
 <p>and $k(n-k)$ is maximised at $k=\lfloor n/2\rfloor$, where it equals $\lfloor n^{2}/4\rfloor$.</p>
-<p><strong>It is commutative.</strong> The product of two elements is $\begin{pmatrix}\lambda\mu I_k&\lambda B'+\mu B\\0&\lambda\mu I_{n-k}\end{pmatrix}$, which is symmetric in the pair of factors.</p>
+<p><strong>It is commutative.</strong> The product of two elements is $\begin{pmatrix}\lambda\mu I_k&amp;\lambda B'+\mu B\\0&amp;\lambda\mu I_{n-k}\end{pmatrix}$, which is symmetric in the pair of factors.</p>
 <p><strong>The bound exceeds $n$ from $n=4$ onwards.</strong> The diagonal algebra has dimension $n$, and it is maximal commutative, but it is not extremal for $n\ge4$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -455,7 +455,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>A cyclic algebra cannot reach the bound for $n\ge4$.</strong> The algebra $\mathbb{C}[A]$ is spanned by $I,A,\dots,A^{n-1}$, so its dimension is at most $n$; the extremal algebra of dimension $>n$ therefore needs two generators. So the phrase <em>the maximum is attained by polynomials in one matrix</em> is true only for $n\le3$.</p>
+<p><strong>A cyclic algebra cannot reach the bound for $n\ge4$.</strong> The algebra $\mathbb{C}[A]$ is spanned by $I,A,\dots,A^{n-1}$, so its dimension is at most $n$; the extremal algebra of dimension $&gt;n$ therefore needs two generators. So the phrase <em>the maximum is attained by polynomials in one matrix</em> is true only for $n\le3$.</p>
 <p><strong>The centraliser of a regular element is $n$-dimensional and cyclic.</strong> For $A$ with distinct eigenvalues the centraliser is the diagonal algebra; for a regular nilpotent with one Jordan block it is $\mathbb{C}[N]$; both have dimension $n$ and both equal their own maximal commutative subalgebra. The dimension jumps on the irregular locus: for $\operatorname{diag}(1,1,2,\dots)$ it is $n+2$, and for a Jordan block repeated it grows further.</p>
 <h2 id="the-lie-algebra">The Lie Algebra</h2>
 <p><strong>The bracket gives $\mathfrak{gl}_n(\mathbb{C})$, of dimension $n^{2}$, and the centre splits off.</strong></p>
@@ -487,7 +487,7 @@ $$</p>
 <p><strong>The simple roots are the consecutive differences $\alpha_{i}=\varepsilon_{i}-\varepsilon_{i+1}$, and the positive roots are the partial sums $\alpha_{i}+\alpha_{i+1}+\cdots+\alpha_{j-1}$.</strong> The number of positive roots is the number of intervals, $\binom{n}{2}$.</p>
 <p><strong>The Cartan matrix is the tridiagonal matrix of the path,</strong></p>
 <p>$$
-A_{ij}=\begin{cases}2&i=j\\-1&|i-j|=1\\0&|i-j|\ge2\end{cases},\qquad \det A_{n-1}=n .
+A_{ij}=\begin{cases}2&amp;i=j\\-1&amp;|i-j|=1\\0&amp;|i-j|\ge2\end{cases},\qquad \det A_{n-1}=n .
 $$</p>
 <p><strong>The determinant is $n$ at every order, and it computes three things at once.</strong></p>
 <p>$$
@@ -504,7 +504,7 @@ $$</p>
 <p><strong>The standard module has $n$ weights of multiplicity one,</strong> the functionals $\varepsilon_{1},\dots,\varepsilon_{n}$, and after projecting off the diagonal direction they are the vertices of a regular $(n-1)$-simplex: $n$ points, mutually equidistant, centred at the origin. At $n=2$ the simplex is a segment, at $n=3$ a triangle, at $n=4$ a tetrahedron.</p>
 <p><strong>The Weyl dimension formula gives every irreducible module,</strong></p>
 <p>$$
-\dim V_{\lambda}=\prod_{\alpha\in\Phi^{+}}\frac{\langle\lambda+\rho,\alpha^{\vee}\rangle}{\langle\rho,\alpha^{\vee}\rangle}=\prod_{1\le i<j\le n}\frac{\lambda_{i}-\lambda_{j}+j-i}{j-i},
+\dim V_{\lambda}=\prod_{\alpha\in\Phi^{+}}\frac{\langle\lambda+\rho,\alpha^{\vee}\rangle}{\langle\rho,\alpha^{\vee}\rangle}=\prod_{1\le i&lt;j\le n}\frac{\lambda_{i}-\lambda_{j}+j-i}{j-i},
 $$</p>
 <p>with $\lambda=\sum a_{k}\omega_{k}$ and $\rho$ the half-sum of the positive roots. The small values at $n=4$ are $1,4,6,4,10,15,20$, as in the previous article.</p>
 <p><strong>The two basic modules are the standard one and its dual,</strong> of dimensions $n$ each; they are non-isomorphic for $n\ge2$ and exchanged by the diagram automorphism when $n\ge3$.</p>
@@ -563,9 +563,9 @@ $$</p>
 <p>$$
 \dim\mathfrak{p}_{(b_{1},\dots,b_{k})}=\sum_{i\le j}b_{i}b_{j},\qquad \dim\text{(its flag variety)}=n^{2}-\sum_{i\le j}b_{i}b_{j}.
 $$</p>
-<p><strong>The dimension of the flag variety is the sum of the products $b_{i}b_{j}$ over $i<j$,</strong></p>
+<p><strong>The dimension of the flag variety is the sum of the products $b_{i}b_{j}$ over $i&lt;j$,</strong></p>
 <p>$$
-n^{2}-\sum_{i\le j}b_{i}b_{j}=\sum_{i<j}b_{i}b_{j},
+n^{2}-\sum_{i\le j}b_{i}b_{j}=\sum_{i&lt;j}b_{i}b_{j},
 $$</p>
 <p>so the complete flag $(1,1,\dots,1)$ gives $\binom{n}{2}=n(n-1)/2$, and the two-block parabolic $(k,n-k)$ gives $k(n-k)$, the dimension of the Grassmannian.</p>
 <div class="table-scroll"><table>
@@ -618,7 +618,7 @@ $$</p>
 \mathcal{F}=\mathrm{GL}_n(\mathbb{C})/B,\qquad \dim_{\mathbb{C}}\mathcal{F}=n^{2}-\frac{n(n+1)}{2}=\frac{n(n-1)}{2},
 $$</p>
 <p>which is the number of positive roots: the tangent space at the base point is $\mathfrak{gl}_n/\mathfrak{b}\cong\mathfrak{n}_{-}$.</p>
-<p><strong>Every partial flag variety is a quotient by a parabolic, and every one of them is an iterated Grassmannian bundle.</strong> For a composition $(b_{1},\dots,b_{k})$ the variety has dimension $\sum_{i<j}b_{i}b_{j}$, and the tower of bundles has fibres $\mathrm{Gr}(b_{j}, b_{j}+\cdots+b_{k})$.</p>
+<p><strong>Every partial flag variety is a quotient by a parabolic, and every one of them is an iterated Grassmannian bundle.</strong> For a composition $(b_{1},\dots,b_{k})$ the variety has dimension $\sum_{i&lt;j}b_{i}b_{j}$, and the tower of bundles has fibres $\mathrm{Gr}(b_{j}, b_{j}+\cdots+b_{k})$.</p>
 <p><strong>The Grassmannian itself is</strong></p>
 <p>$$
 \mathrm{Gr}(k,n)=\mathrm{GL}_n/P_{(k,n-k)},\qquad \dim_{\mathbb{C}}\mathrm{Gr}(k,n)=k(n-k),\qquad \mathrm{Gr}(1,n)=\mathbb{P}^{n-1},
@@ -643,7 +643,7 @@ $$</p>
 <p>which is Gaussian elimination: every invertible matrix factors as upper-triangular, permutation, upper-triangular, with the diagonal absorbed.</p>
 <p><strong>It descends to a cell decomposition of the flag variety,</strong></p>
 <p>$$
-\mathcal{F}=\bigsqcup_{w\in S_n}X_{w},\qquad X_{w}\cong\mathbb{C}^{\ell(w)},\qquad \ell(w)=\#\{(i,j):i<j,\ w(i)>w(j)\}.
+\mathcal{F}=\bigsqcup_{w\in S_n}X_{w},\qquad X_{w}\cong\mathbb{C}^{\ell(w)},\qquad \ell(w)=\#\{(i,j):i&lt;j,\ w(i)&gt;w(j)\}.
 $$</p>
 <p><strong>The lengths lie between $0$ and $\binom{n}{2}$, and the count at each length is a Mahonian number.</strong></p>
 <p>$$
@@ -733,15 +733,15 @@ $$</p>
 <h3 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h3>
 <p><strong>Every invertible matrix is a rotation followed by a stretch,</strong></p>
 <p>$$
-A=UP,\qquad U^{*}U=I,\qquad P=P^{*}>0,\qquad P=\sqrt{A^{*}A},
+A=UP,\qquad U^{*}U=I,\qquad P=P^{*}&gt;0,\qquad P=\sqrt{A^{*}A},
 $$</p>
 <p>and the factors are unique when $A$ is invertible. The square root is the positive-definite one, taken by the spectral theorem applied to $A^{*}A$, whose eigenvalues are the squares of the singular values.</p>
 <p><strong>For a singular matrix the decomposition still exists but the factor $U$ is only a partial isometry.</strong> Then $P=\sqrt{A^{*}A}$ is only positive semidefinite, $U$ is not unitary, and the factorisation is no longer unique on the kernel of $A$. So the clean statement <em>$A=UP$ with $U$ unitary</em> needs $A$ invertible, and the general statement needs a partial isometry.</p>
 <p><strong>The polar decomposition is a diffeomorphism, not a group isomorphism.</strong></p>
 <p>$$
-\mathrm{GL}_n(\mathbb{C})\;\cong_{\text{diffeo}}\;\mathrm{U}(n)\times\operatorname{Herm}^{>0}_{n},\qquad n^{2}=n^{2}+n^{2}-n^{2},
+\mathrm{GL}_n(\mathbb{C})\;\cong_{\text{diffeo}}\;\mathrm{U}(n)\times\operatorname{Herm}^{&gt;0}_{n},\qquad n^{2}=n^{2}+n^{2}-n^{2},
 $$</p>
-<p>and the right side is not a group: $\operatorname{Herm}^{>0}_{n}$ is not closed under multiplication in a way that makes the product a direct product of groups. Every element is written uniquely as a unitary times a positive Hermitian matrix, and that is a statement about the manifold.</p>
+<p>and the right side is not a group: $\operatorname{Herm}^{&gt;0}_{n}$ is not closed under multiplication in a way that makes the product a direct product of groups. Every element is written uniquely as a unitary times a positive Hermitian matrix, and that is a statement about the manifold.</p>
 <p><strong>At the Lie algebra level the split is real and clean,</strong></p>
 <p>$$
 \mathfrak{gl}_n(\mathbb{C})=\mathfrak{u}(n)\oplus i\,\mathfrak{u}(n),\qquad \dim_{\mathbb{R}}\mathfrak{u}(n)=n^{2},
@@ -999,8 +999,8 @@ $$</p>
 <p>Its left ideals form $n+1$ levels, of dimensions $n(n-d)$ for $d=0,\dots,n$, indexed by the Grassmannians $\mathrm{Gr}(d,n)$. The minimal ones have dimension $n$ and are parametrised by $\mathbb{P}^{n-1}$; the union of all of them is the rank-one cone, of dimension $2n-1$, and the sum is everything.</p>
 <p>Its maximal commutative subalgebras have dimension $\lfloor n^{2}/4\rfloor+1$, attained by the two-block algebra with a scalar on the diagonal blocks. The diagonal algebra has dimension $n$ and is maximal but not extremal for $n\ge4$, and no cyclic algebra reaches the bound for $n\ge4$.</p>
 <p>Its Lie algebra is $\mathfrak{sl}_n\oplus\mathbb{C}I$, with $\mathfrak{sl}_n$ simple of type $A_{n-1}$ and rank $n-1$. The Killing form has rank $n^{2}-1$ with radical the centre. The Cartan algebra has dimension $n-1$ in $\mathfrak{sl}_n$; the Borel has dimension $n(n+1)/2-1$ in $\mathfrak{sl}_n$ and $n(n+1)/2$ in $\mathfrak{gl}_n$; the nilradical has dimension $n(n-1)/2$ and derived length $n$. There are $n(n-1)$ roots and $n(n-1)/2$ positive ones, the Cartan matrix has determinant $n$, and that same $n$ is the order of the centre of $\mathrm{SL}_n$ and of the fundamental group of $\mathrm{PGL}_n$.</p>
-<p>There are $2^{n-1}$ parabolic subalgebras, indexed by the compositions of $n$, with flag varieties of dimension $\sum_{i<j}b_{i}b_{j}$; the maximal ones are $n-1$ in number and correspond to the Grassmannians. The complete flag variety has dimension $n(n-1)/2$ and $n!$ Schubert cells, of dimensions the lengths of the permutations; the Betti numbers are the Mahonian numbers, the Euler characteristic is $n!$, and the cohomology ring is the coinvariant algebra $\mathbb{Z}[x_{1},\dots,x_{n}]/(e_{1},\dots,e_{n})$, of rank $n!$, which is the product of the degrees $1,2,\dots,n$ of the invariant ring.</p>
-<p>The group is $\mathrm{GL}_n$, of dimension $n^{2}$, with torus of dimension $n$, Borel of dimension $n(n+1)/2$, special linear group of dimension $n^{2}-1$ and projective group of dimension $n^{2}-1$ with fundamental group $\mathbb{Z}/n$. The polar decomposition writes every invertible matrix uniquely as unitary times positive Hermitian, and it is a diffeomorphism onto $\mathrm{U}(n)\times\operatorname{Herm}^{>0}_{n}$, not a group isomorphism; the Cartan decomposition is $\mathfrak{gl}_n=\mathfrak{u}(n)\oplus i\mathfrak{u}(n)$ over $\mathbb{R}$. The SVD is the polar decomposition with the stretch diagonalised.</p>
+<p>There are $2^{n-1}$ parabolic subalgebras, indexed by the compositions of $n$, with flag varieties of dimension $\sum_{i&lt;j}b_{i}b_{j}$; the maximal ones are $n-1$ in number and correspond to the Grassmannians. The complete flag variety has dimension $n(n-1)/2$ and $n!$ Schubert cells, of dimensions the lengths of the permutations; the Betti numbers are the Mahonian numbers, the Euler characteristic is $n!$, and the cohomology ring is the coinvariant algebra $\mathbb{Z}[x_{1},\dots,x_{n}]/(e_{1},\dots,e_{n})$, of rank $n!$, which is the product of the degrees $1,2,\dots,n$ of the invariant ring.</p>
+<p>The group is $\mathrm{GL}_n$, of dimension $n^{2}$, with torus of dimension $n$, Borel of dimension $n(n+1)/2$, special linear group of dimension $n^{2}-1$ and projective group of dimension $n^{2}-1$ with fundamental group $\mathbb{Z}/n$. The polar decomposition writes every invertible matrix uniquely as unitary times positive Hermitian, and it is a diffeomorphism onto $\mathrm{U}(n)\times\operatorname{Herm}^{&gt;0}_{n}$, not a group isomorphism; the Cartan decomposition is $\mathfrak{gl}_n=\mathfrak{u}(n)\oplus i\mathfrak{u}(n)$ over $\mathbb{R}$. The SVD is the polar decomposition with the stretch diagonalised.</p>
 <p>Every algebra automorphism is inner and every derivation is inner, the derivation space being $\mathfrak{sl}_n$; but the Lie algebra $\mathfrak{sl}_n$ has an outer automorphism of order $2$ for $n\ge3$, given by $X\mapsto-X^{\mathsf T}$. There are one or two real forms, $M_n(\mathbb{R})$ always and $M_{n/2}(\mathbb{H})$ when $n$ is even, and one or two classes of complex-linear involution, the transpose always and the symplectic involution when $n$ is even.</p>
 <p>The finite subgroups are classified only up to order four, and every one of them is conjugate into $\mathrm{U}(n)$. The quantum deformation replaces commutativity by the $R$-matrix relations and the bracket by the $q$-bracket, with the Yang–Baxter equation as the associativity condition and the coproduct $\Delta(E_{i})=E_{i}\otimes K_{i}+1\otimes E_{i}$ as the source of the braiding.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

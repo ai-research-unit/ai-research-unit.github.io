@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microcanonical Action and the Entropy of Hawking Radiation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Microcanonical Action and the Entropy of Hawking Radiation - 2111.06912.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="microcanonical-action-and-the-entropy-of-hawking-radiation"><strong>Microcanonical Action and the Entropy of Hawking Radiation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2111.06912v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Juan F. Pedraza, Andrew Svesko, Watse Sybesma, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 June 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Microcanonical Action and the Entropy of Hawking Radiation - 2111.06912-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Microcanonical Action and the Entropy of Hawking Radiation - 2111.06912.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Microcanonical Action and the Entropy of Hawking Radiation - 2111.06912.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the island formula — the extremisation of generalized entropy that yields a unitary Page curve — without the replica trick, by minimising the microcanonical action of an entanglement wedge. For eternal anti-de Sitter black holes in Jackiw–Teitelboim gravity coupled to conformal matter, the on-shell action equals minus the entropy and appears as the saddle point of a non-replicated microcanonical path integral. The result is then shown to hold for any two-dimensional dilaton theory, where the on-shell action equals minus the generalized entropy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"The island formula – an extremization prescription for generalized entropy – is known to result in a unitary Page curve for the entropy of Hawking radiation." It had been derived "using the 'replica trick' to evaluate the Euclidean path integral". Here the authors "derive the extremization of generalized entropy from minimizing the microcanonical action of an entanglement wedge", noting that "the on-shell action is minus the entropy and arises in the saddle-point approximation of the (nonreplicated) microcanonical path integral".</p>
+<h3 id="why-this-is-an-improvement">Why this is an improvement</h3>
+<p>The replica trick requires replicating the geometry $n$ times and continuing in $n$, which is delicate for matter with backreaction and for the analytic continuation. A single non-replicated path integral has no such continuation. The authors state the advantage explicitly: applying the argument "would provide a derivation of the extremization of $S_{\text{gen}}$ for flat eternal black holes ... and 2D de Sitter space ... This is a distinct advantage over current techniques using the replica trick."</p>
+<h3 id="the-general-two-dimensional-result">The general two-dimensional result</h3>
+<p>For a generic dilaton theory</p>
+<p>$$\mathcal L=\mathcal L_0\big[Z(\phi)R+U(\phi)(\nabla\phi)^2-V(\phi)\big]+\mathcal L_{\text{Pol}},$$</p>
+<p>the microcanonical on-shell action generalises to</p>
+<p>$$I_E^{\text{mc}}=-\lim_{\epsilon\to0}\int_{\partial D\times\partial\Sigma}\frac{c\chi}{2\mathcal L_0Z(\phi)-12\pi}\,\sqrt h\,ds_E\,\sqrt\gamma\,K, \qquad (paper\ 21)$$</p>
+<p>and again $I_E^{\text{mc}}=-S_W$ with "the Wald entropy $S_W=4\pi\mathcal L_0Z(\phi)-c\chi/6$". "Since the Polyakov contribution may always be cast as the vN entropy, this yields $I_E^{\text{mc}}=-S_{\text{gen}}$ for any 2D dilaton gravity theory coupled to conformal matter."</p>
+<h3 id="the-limit-stated">The limit stated</h3>
+<p>"The island formula has not been derived for theories of gravity in higher dimensions." The authors note that the Hilbert-action boundary-term method and other approaches exist, but do not claim the generalisation.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-minus-the-entropy-is-the-action">1. Minus the entropy is the action</h3>
+<p><strong>The idea.</strong> For an entanglement wedge, the on-shell Euclidean action equals minus the generalized entropy. This is a <strong>formula</strong>: one line, and it identifies a geometric variational principle with a counting quantity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> computes the radiation's spectrum from the horizon's modular flow and has no action that yields an entropy. The identification $I=-S$ would let the corpus's entropy functional be read as the value of an action on a region — the missing link between <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code> and the entropy articles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>, and <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The equality is established in two-dimensional dilaton gravity; the four-dimensional case is open, as the authors state. The corpus is four-dimensional. The cost is that the import is a shape, not a theorem, at the dimension the corpus needs.</p>
+<h3 id="2-a-non-replicated-path-integral">2. A non-replicated path integral</h3>
+<p><strong>The idea.</strong> The same extremisation follows from a single path integral with fixed energy, so the replica continuation is not needed. This is a <strong>mechanism</strong>, and its content is that the analytic continuation was a convenience and not a necessity.</p>
+<p><strong>What it would add.</strong> The corpus has no path integral, but it has a recurring difficulty: its derivations that use a continuation in a parameter (<code>articles_physics/why-biquaternions.md</code>, the analytic continuation from the real algebra) would benefit from knowing when a continuation can be replaced by a constrained single integral.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, among the obstructions of method.</p>
+<p><strong>What stands in the way.</strong> The substitution works because the microcanonical ensemble fixes the energy exactly; the corpus has no ensemble. Ranked third.</p>
+<h3 id="3-the-island-as-an-entanglement-wedges-minimum">3. The island as an entanglement wedge's minimum</h3>
+<p><strong>The idea.</strong> The island is not an extra ingredient but the surface at which the wedge's action is stationary; it appears because the action, not the entropy alone, is varied. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code> treats a region's entropy as given. The reading that the region's boundary is determined by stationarity of a global quantity, not chosen, is a pattern the corpus has not used.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> It needs the action-entropy identity of idea 1. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

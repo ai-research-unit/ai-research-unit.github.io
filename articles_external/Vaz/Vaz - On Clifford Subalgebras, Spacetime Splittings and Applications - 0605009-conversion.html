@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Clifford Subalgebras, Spacetime Splittings and Applications — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - On Clifford Subalgebras, Spacetime Splittings and Applications - 0605009.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-clifford-subalgebras-spacetime-splittings-and-applications"><strong>On Clifford Subalgebras, Spacetime Splittings and Applications</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>math-ph/0605009v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. da Rocha, J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 May 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - On Clifford Subalgebras, Spacetime Splittings and Applications - 0605009-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - On Clifford Subalgebras, Spacetime Splittings and Applications - 0605009.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - On Clifford Subalgebras, Spacetime Splittings and Applications - 0605009.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds the $3+1$ split of a Clifford algebra out of a grading rather than out of coordinates. Fixing one vector $n$ — the normal to the slicing — and conjugating by it gives an inner automorphism whose $\pm1$ eigenspaces are the time and space parts. Gradings of this kind are called $\alpha$-gradings, and the paper shows that the Dirac operator splits along them into a part along $n$, which is a Lie derivative, and a part orthogonal to $n$, which carries the angular momentum bivector. The spinor comes out as a sum of two quaternions, and the same machinery is offered as a way to emulate symmetry-breaking chains such as $\mathfrak{so}(7)\to\mathfrak{so}(6)\to\mathfrak{su}(3)\oplus\mathfrak{u}(1)$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-device">The device</h3>
+<p>"z, Jr.† Abstract Z2-gradings of Clifford algebras are reviewed and we shall be concerned with an α-grading based on the structure of inner automorphisms, which is closely related to the spacetime splitting, if we consider the standard conjugation map automorphism by an arbitrary, but fixed, splitting vector. After"</p>
+<h3 id="the-projections">The projections</h3>
+<p>"After briefly sketching the orthogonal and parallel components of products of differential forms, where we introduce the parallel [orthogonal] part as the space [time] component, we provide a detailed exposition of the Dirac operator splitting and we show how the differential operator parallel and orthogonal components are related to the Lie derivative along the splitting vector and the angular momentum splitting bivector."</p>
+<h3 id="the-spinor">The spinor</h3>
+<p>"ector. We also introduce multivectorial-induced α-gradings and present the Dirac equation in terms of the spacetime splitting, where the Dirac spinor field is shown to be a direct sum of two quaternions. We"</p>
+<h3 id="the-side-results">The side results</h3>
+<p>That the split is a foliation: the arbitrary $\alpha$-gradings "generalize spacetime splitting in a superposition of infinite spacelike slices, each one in a fixed time. Such a decomposition consists of a local spacetime foliation."</p>
+<p>That symmetry chains can be emulated: "It can be shown that several symmetry break- ing mechanisms in quantum field theory can be emulated using our formalism, such as so(7) 7→ so(6) 7→ su(3) × u(1). The Dirac equation for an α-grading, associated"</p>
+<p>That the split has a physical test case: "We can show that relativistic kinematics and the evolution laws for the mass and spin of a test particle in the neighborhood of a Reissner-Nordstrøm black hole are described via the formalism of AC splittings."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the">1. The</h3>
+<p>$3+1$ split is an automorphism, not a coordinate choice</p>
+<p><strong>The idea.</strong> A <strong>construction</strong>: choose a timelike vector $n$, conjugate by it, and the algebra separates into the part that commutes and the part that anticommutes with $n$. The split needs no coordinates and no preferred frame beyond the single vector.</p>
+<p><strong>What it would add.</strong> The corpus splits its algebra in several places — scalar/vector, self-dual/anti-self-dual, even/odd — each time by an idempotent or a projector chosen for the purpose. This supplies a general recipe: any vector gives a split, the split is an involution, and the two halves are the time and space parts of whatever is being split. It would unify several of the corpus's ad hoc splits under one construction and would explain why the timelike direction plays the role it does.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's splits are chosen so that the pieces have physical names in each article, and a general recipe would have to be shown to reproduce each of them; that verification is more work than the recipe.</p>
+<h3 id="2-the-dirac-operator-splits-into-a-lie-derivative-and-an-angular-momentum-term">2. The Dirac operator splits into a Lie derivative and an angular momentum term</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: along the splitting vector the Dirac operator is the Lie derivative; orthogonal to it the operator carries the angular momentum bivector. The two halves are the transport and the rotation parts of the same derivative.</p>
+<p><strong>What it would add.</strong> The corpus's curved Dirac operator is treated as one object and squared. This says the first-order operator itself has a clean decomposition whose pieces have names in continuum mechanics — transport and rotation — which is exactly the structure the corpus's spin-fluid articles want when they split a derivative into a convective and a spin part. It would give those splits a Dirac-level justification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-curved-dirac-operator-and-its-square.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification uses the Lie derivative along a fixed $n$, so it holds for a foliation and not for a general frame field; the corpus's fluid splits are in a general flow.</p>
+<h3 id="3-the-spinor-is-a-sum-of-two-quaternions-and-that-is-a-theorem">3. The spinor is a sum of two quaternions, and that is a theorem</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: under the $\alpha$-grading the Dirac spinor field decomposes as a direct sum of two quaternions, so the eight real components split $4+4$ with each half quaternionic.</p>
+<p><strong>What it would add.</strong> The corpus's biquaternion spinor is already a complexified quaternion, which is two quaternions worth of real data, but the corpus presents this as a fact about the algebra rather than as a decomposition of the spinor driven by a splitting. Stating the decomposition as a theorem about gradings would let the corpus's spinor articles say which of the two quaternions is doing what — the even and odd parts under the splitting — rather than treating the eight components as a block.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's split into two quaternions is by the central $i$, while this one is by a vector; the two decompositions are different, and relating them is the work.</p>
+<p>The rank: the automorphism split first, because it generalises a device the corpus uses repeatedly; the Lie-derivative split second, because it names the pieces; the two-quaternion theorem last, because the corpus already has the count.</p>
+<p>The remaining items in one line each: the dual $\alpha$-grading built from the volume element, which gives a second splitting equivalent to the first; the explicit calculation of the decomposition for every element of $\mathcal{C}\ell_{1,3}$, which is the part a reader can check; and the Reissner-Nordstrøm application, which is a promise of a sequel rather than a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

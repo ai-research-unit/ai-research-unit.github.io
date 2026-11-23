@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceptual Analysis of Black Hole Entropy in String Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Conceptual Analysis of Black Hole Entropy in String Theory - 1904.03232.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conceptual-analysis-of-black-hole-entropy-in-string-theory"><strong>Conceptual Analysis of Black Hole Entropy in String Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1904.03232v2 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian De Haro, Jeroen van Dongen, Manus Visser, Jeremy Butterfield</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 March 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Studies in History and Philosophy of Modern Physics 69 (2020) 82–111</td>
+</tr>
+<tr>
+<td>length</td>
+<td>70 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Conceptual Analysis of Black Hole Entropy in String Theory - 1904.03232-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Conceptual Analysis of Black Hole Entropy in String Theory - 1904.03232.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Conceptual Analysis of Black Hole Entropy in String Theory - 1904.03232.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reconstructs the Strominger–Vafa 1996 count of the microstates of the extremal Reissner–Nordström black hole in a form a philosopher can audit, and factorises the argument into its inter-theoretic parts. The parts are a conjectured open–closed string duality, linkage relations between four theories — supergravity, string theory with D-branes, the D-brane worldvolume theory, and M-theory — as the probe distance and the string coupling are varied, and supersymmetry, which guarantees that the entropy is invariant under those variations. The paper then assesses the argument's weaknesses, its generalisations, its relation to AdS/CFT, and its heuristic role for the information paradox. It contains no new calculation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-factorisation">The factorisation</h3>
+<p>The argument is split into four theories: (1) supergravity, in which the black hole is a solution; (2) string theory with D-branes; (3) the theory of the D-branes alone; (4) the conjectured M-theory. The relations are "a conjectured duality between (1) and (2), and linkage relations among the others, as we vary two quantities: namely, a distance scale at which the system of interest is probed, and the string coupling constant."</p>
+<h3 id="the-count">The count</h3>
+<p>"First, it presents a calculation of the number of microstates of a system of D-branes as in (3), which are weakly interacting and which are probed at short distance scales. The calculation is then extrapolated and compared to the Bekenstein-Hawking formula for the corresponding black hole in supergravity (1), which is probed at large distances, and where the string coupling is strong (both calculations take place at low energies)."</p>
+<h3 id="what-carries-the-extrapolation">What carries the extrapolation</h3>
+<p>Two assumptions: the open–closed duality, which identifies (1) and (3) via (2) as "the same theories, for different ranges of the relevant quantities"; and supersymmetry, which "further justifies the comparison of their entropy at different values of the relevant quantities ... because the entropy is guaranteed to be invariant under suitable changes of distance scale and coupling". The black hole is extremal, and extremality is what supplies the invariance.</p>
+<h3 id="the-weaknesses">The weaknesses</h3>
+<p>The authors name three: the dependence on supersymmetry, hence on extremality; the use of five dimensions; and the approximations. Each is discussed rather than dismissed, and the generalisations to near-extremal, spinning and four-dimensional holes are presented as what strengthened the result's physical significance.</p>
+<h3 id="the-aftermath">The aftermath</h3>
+<p>The calculation is read as instrumental in the formulation of the AdS/CFT conjecture, and as reinterpreted by it; the authors also discuss the heuristic role the count played for the information paradox, where it "suggested to many that black hole evolution should be a unitary process".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-entropy-count-as-a-structure-of-inter-theoretic-relations">1. The entropy count as a structure of inter-theoretic relations</h3>
+<p><strong>The idea.</strong> A microscopic count of $S=A/4G$ is not one calculation but a chain: weak-coupling D-brane states, a duality, a linkage across coupling and distance, and an invariance argument. This is a <strong>reading</strong> of what a microstate count must consist of.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> states as its central gap that "the framework has no horizon Hilbert space and no counting of states", and asks at open question 1 whether a state exists whose entropy is the area. This paper supplies the anatomy any such count has had to have in the one case where it succeeded: a weak-coupling description, a protected quantity, and a relation that carries the answer to strong coupling.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 1.</p>
+<p><strong>What stands in the way.</strong> The count runs through string theory's specific objects — D-branes, an extremal five-dimensional hole, a duality that is conjectured and not proved. The corpus has none of them, and the import would be a template, not a mechanism. The cost is that a template cannot be instantiated without the microtheory.</p>
+<h3 id="2-supersymmetry-as-the-protector-of-the-comparison">2. Supersymmetry as the protector of the comparison</h3>
+<p><strong>The idea.</strong> The extrapolation from weak to strong coupling is legitimate because a protected quantity does not change. This is a <strong>mechanism</strong>: non-renormalisation instead of approximation.</p>
+<p><strong>What it would add.</strong> The corpus has no protected quantity and no argument that any of its numbers survives a change of regime; its <code>articles_physics/the-mass-shell-and-the-scalar-part.md</code> verifies invariance numerically, which is a different kind of statement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, under the obstructions of dynamics.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra has no supersymmetry and no grading that could play the role; its grading article (<code>articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.md</code>) grades by fermion parity, which protects nothing of this kind. Ranked third.</p>
+<h3 id="3-what-explaining-an-entropy-requires">3. What "explaining" an entropy requires</h3>
+<p><strong>The idea.</strong> The community accepted the count as an explanation because it was internally consistent with a web of already-accepted conjectures, not because it was derived from first principles. This is a <strong>reading</strong> about what counts as an explanation in this field.</p>
+<p><strong>What it would add.</strong> The corpus claims to derive the Born rule and the Lorentz group from its algebra; the standard of explanation this paper describes — coherence with a network of conjectures — is a standard the corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> should state it is or is not meeting.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper's analysis is historical; importing it as a criterion is an interpretation of the corpus's own method, not a physical claim. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

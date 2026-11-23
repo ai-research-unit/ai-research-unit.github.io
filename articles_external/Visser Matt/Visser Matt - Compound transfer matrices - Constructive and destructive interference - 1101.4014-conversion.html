@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound transfer matrices: constructive and destructive interference — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Compound transfer matrices - Constructive and destructive interference -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="compound-transfer-matrices-constructive-and-destructive-interference"><strong>Compound transfer matrices: constructive and destructive interference</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1101.4014v2 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 December 2011 (first version 20 January 2011)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Compound transfer matrices - Constructive and destructive interference - 1101.4014-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Compound transfer matrices - Constructive and destructive interference - 1101.4014.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Compound transfer matrices - Constructive and destructive interference - 1101.4014.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper extends transfer-matrix bounds from a single barrier to a system of several separated barriers. For a purely classical particle the transmission is the product of the individual transmissions, but for waves each barrier contributes a phase and the phases can interfere constructively or destructively. The paper uses the transfer-matrix formalism to derive rigorous upper and lower bounds on the total transmission probability without knowing the phases, and then applies the same machinery to bounds on particle production by parametric resonance.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Scattering from a compound barrier, one co[nsisting of several] non-overlapping sub-barriers, has a number of [nontrivial mathe]matical features. If one is scattering classical [particles, and the spin] of the particle can be ignored, the transmission [probability of the compound] barrier is simply given by the product of the [transmissions of the] individual sub-barriers."</p>
+<h3 id="what-changes-for-waves">What changes for waves</h3>
+<p>"In contrast if one is dealing with either purely classical waves or [quantum excita]tions, each sub-barrier contributes phase info[rmation], and these phases can lead to eith[er constructive or destructive] interference, with the transmission probabilit[y bounded by rigorous] upper and lower bounds."</p>
+<h3 id="the-result">The result</h3>
+<p>"We have seen how a rather nontrivial application of the transfer matrix formalism allows us to place rather nontrivial bounds on the physics of compound scattering systems — even in the absence of detailed information concerning their internal structure."</p>
+<h3 id="what-the-bounds-need">What the bounds need</h3>
+<p>The compound systems "are one-dimensional systems built up from a number of disjoint non-overlapping barriers; for such systems we have explicitly shown that the nett scattering properties (unsurprisingly) depend not only on the transmission probability, $T_i$, of each individual barrier, but also on a number of phases associated with these individual barriers and the separation between them."</p>
+<h3 id="the-surprising-part">The surprising part</h3>
+<p>"Surprisingly, even in the absence of quantitative information regarding the value of these phases it is nevertheless possible to place rigorous and nontrivial upper and lower bounds on the scattering properties of the compound system."</p>
+<h3 id="the-wider-application">The wider application</h3>
+<p>"The resulting bounds also apply (with suitable modification of the language) to bounds on the number of quanta excited via parametric resonance."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-survive-missing-phases">1. Bounds survive missing phases</h3>
+<p><strong>The idea.</strong> A bound can be derived from partial information: amplitudes known, phases unknown.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code> derives bounds for a single barrier. This paper shows the bounds compose, and that the composition costs only a widening and not a loss of rigour. That is exactly what a corpus built on partial algebraic information needs: a demonstration that partial data still yields inequalities.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code>, in the section on the general bound.</p>
+<p><strong>What stands in the way.</strong> The setting is one-dimensional and the phases are bounded by unitarity rather than by any physical input. Ranked first, because it is the natural continuation of the article's own method.</p>
+<h3 id="2-interference-is-a-source-of-bounds">2. Interference is a source of bounds</h3>
+<p><strong>The idea.</strong> The gap between coherent and incoherent composition is itself bounded.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> computes a spectrum and does not ask how uncertain the coherence of a multi-stage process makes the result. A bound on the interference correction would let it state the result with an error bar rather than as a number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the derivation of the spectrum.</p>
+<p><strong>What stands in the way.</strong> The connection requires recasting the emission as a sequence of scattering stages. Ranked second.</p>
+<h3 id="3-parametric-resonance-uses-the-same-algebra">3. Parametric resonance uses the same algebra</h3>
+<p><strong>The idea.</strong> The same product structure governs particle creation by a time-dependent frequency.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> bounds Bogoliubov coefficients directly. This paper reaches particle number bounds through a different route, and comparing the two would show whether either is tight.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, in the comparison of bounds.</p>
+<p><strong>What stands in the way.</strong> The comparison is a research task, not an import. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

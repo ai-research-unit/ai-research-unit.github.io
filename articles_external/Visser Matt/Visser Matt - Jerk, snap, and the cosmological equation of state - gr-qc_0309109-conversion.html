@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerk, snap, and the cosmological equation of state — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Jerk, snap, and the cosmological equation of state - gr-qc_0309109.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="jerk-snap-and-the-cosmological-equation-of-state"><strong>Jerk, snap, and the cosmological equation of state</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0309109v4</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 31 March 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Jerk, snap, and the cosmological equation of state - gr-qc_0309109-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Jerk, snap, and the cosmological equation of state - gr-qc_0309109.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Jerk, snap, and the cosmological equation of state - gr-qc_0309109.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Instead of assuming an equation of state and predicting the expansion, this paper takes the expansion history and infers the equation of state. A Taylor expansion of $p(\rho)$ about today is the most general choice. The coefficients of that expansion map onto time derivatives of the scale factor: the Hubble rate, the deceleration, the jerk, and the snap. The linear coefficient needs the jerk, which is poorly measured. That, the author argues, is why direct constraints on the cosmological equation of state remain weak.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-approach">The approach</h3>
+<p>"Taylor expanding the cosmological equation of state around the current epoch ... is the simplest model one can consider that does not make any a priori restrictions on the nature of the cosmological fluid."</p>
+<h3 id="predictive-versus-retrodictive">Predictive versus retrodictive</h3>
+<p>"Most popular cosmological models attempt to be 'predictive' ... In contrast, a 'retrodictive' approach might usefully take observational data concerning the scale factor, and use the Friedmann equations to infer an observed cosmological equation of state."</p>
+<h3 id="the-dictionary">The dictionary</h3>
+<p>"Determining the first three Taylor coefficients of the equation of state at the current epoch requires a measurement of the deceleration, jerk, and snap — the second, third, and fourth derivatives of the scale factor with respect to time."</p>
+<h3 id="the-main-formula">The main formula</h3>
+<p>$$\kappa_0=-\frac{1}{3}\frac{1-j_0+kc^2/(H_0^2a_0^2)}{1+q_0+kc^2/(H_0^2a_0^2)}\approx-\frac{1}{3}\frac{1-j_0}{1+q_0} \qquad (paper\ 26)$$</p>
+<h3 id="why-it-matters">Why it matters</h3>
+<p>"to obtain the linearized equation of state you need significantly more information than the deceleration parameter $q_0$; you also need to measure the jerk parameter $j_0$."</p>
+<h3 id="what-a-single-number-cannot-do">What a single number cannot do</h3>
+<p>"If the only observations you have are measurements of the deceleration parameter then you can of course determine $w_0=p_0/\rho_0$, but this is not an equation of state for the cosmological fluid. Determining $w_0$ merely provides information about the present-day value of $p/\rho$ but makes no prediction as to what this ratio will do in the future"</p>
+<h3 id="the-degeneracy">The degeneracy</h3>
+<p>"Though these models often make dramatically differing predictions in the distant past (e.g., a 'bounce') or future (e.g., a 'big rip') there is considerable degeneracy among the models in that many physically quite different models are compatible with present day observations."</p>
+<h3 id="the-limitation">The limitation</h3>
+<p>"the jerk is relatively poorly bounded, and as a consequence direct observational constraints on the cosmological EOS (in the form of measurements of $\kappa_0=[dp/d\rho]_0$) are currently extremely poor and are likely to remain poor for the foreseeable future."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-infer-the-source-from-the-history">1. Infer the source from the history</h3>
+<p><strong>The idea.</strong> The scale factor's derivatives fix the equation of state, if enough of them are measured.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> carries the FLRW metric and cannot form its source. This paper is a route from the carried metric to something source-like, without a stress tensor. That is a partial answer to the missing-source problem and should be stated as such.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the section on the missing source.</p>
+<p><strong>What stands in the way.</strong> The route needs a measured jerk that does not exist yet. Ranked first, because it is a constructive use of the target's exact result.</p>
+<h3 id="2-one-number-is-not-a-function">2. One number is not a function</h3>
+<p><strong>The idea.</strong> Knowing $w_0$ says nothing about how $w$ will change.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs single-number agreements. This paper is a clear argument that a single number cannot fix a function, which bears on how much such agreements are worth.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> The argument concerns a specific parameter count. Ranked second.</p>
+<h3 id="3-higher-derivatives-higher-coefficients">3. Higher derivatives, higher coefficients</h3>
+<p><strong>The idea.</strong> Each extra derivative of the scale factor buys one more coefficient of $p(\rho)$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code> counts parameters. This paper supplies a counting rule tied to observables, which is a sharper version of the same exercise.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, in the section on counting.</p>
+<p><strong>What stands in the way.</strong> The rule holds only near the present epoch. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

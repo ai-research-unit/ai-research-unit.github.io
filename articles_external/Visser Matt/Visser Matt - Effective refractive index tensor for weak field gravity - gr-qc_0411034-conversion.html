@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective refractive index tensor for weak-field gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective refractive index tensor for weak field gravity - gr-qc_0411034.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-refractive-index-tensor-for-weak-field-gravity"><strong>Effective refractive index tensor for weak-field gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0411034v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Céline Cattoën, Tristan Faber, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 March 2005 (first version 8 November 2004)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Effective refractive index tensor for weak field gravity - gr-qc_0411034-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective refractive index tensor for weak field gravity - gr-qc_0411034.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective refractive index tensor for weak field gravity - gr-qc_0411034.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gravitational lensing in a weak but arbitrary gravitational field can be described by a $3\times3$ refractive index tensor. The paper derives simple formulas for that tensor. If the sources have small internal fluxes, stresses, and pressures, the tensor is automatically isotropic and reduces to a scalar fixed by the Newtonian potential through a classical result. If anisotropic stresses matter, the gravitational field behaves like an anisotropic crystal. The authors give the general formulas and point to situations where the anisotropy is important.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"Gravitational lensing in a weak but otherwise arbitrary gravitational field can be described in terms of a $3\times3$ tensor, the 'effective refractive index'."</p>
+<h3 id="the-isotropic-case">The isotropic case</h3>
+<p>"If the sources generating the gravitational field all have small internal fluxes, stresses, and pressures, then this tensor is automatically isotropic and the 'effective refractive index' is simply a scalar that can be determined in terms of a classic result involving the Newtonian gravitational potential."</p>
+<h3 id="the-anisotropic-case">The anisotropic case</h3>
+<p>"In contrast if anisotropic stresses are ever important then the gravitational field acts similarly to an anisotropic crystal. We derive simple formulae for the refractive index tensor, and indicate some situations in which this will be important."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-lensing-as-a-medium-property">1. Lensing as a medium property</h3>
+<p><strong>The idea.</strong> A weak gravitational field is equivalent to an optical medium with a refractive index tensor.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats the cone as fixed by the metric. A refractive index tensor shows how the cone deforms in a weak field, and gives an explicit small-parameter description of the barrier. The article's abstract statement becomes a calculable one in this limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the definition of the barrier.</p>
+<p><strong>What stands in the way.</strong> The treatment is weak field only. Ranked first, because it makes the article's central object calculable in a limit.</p>
+<h3 id="2-anisotropy-from-the-source">2. Anisotropy from the source</h3>
+<p><strong>The idea.</strong> Anisotropic stresses make the lensing anisotropic, like a crystal.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds geometry without discussing source anisotropy. This paper shows the geometry responds to it in an observable way, which is a channel from matter to light the article does not have.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> It needs a source, which the framework lacks. Ranked second.</p>
+<h3 id="3-a-scalar-in-the-isotropic-limit">3. A scalar in the isotropic limit</h3>
+<p><strong>The idea.</strong> Under mild conditions the tensor collapses to a scalar fixed by the Newtonian potential.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats propagation without a medium. A scalar refractive index is the minimal correction, and the article could state it as the first weak-field effect.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the dispersion discussion.</p>
+<p><strong>What stands in the way.</strong> The scalar still needs the potential. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

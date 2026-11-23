@@ -77,7 +77,7 @@ A_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}
 $$</p>
 <p>is a two-dimensional complex algebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, and in it every complex number has a two-term spectral decomposition. Off the real axis the decomposition is unique, the two spectral idempotents are the two minimal idempotents of $A_{\mathbb{C}}$, and the eigenvectors are proportional to the two idempotents themselves.</p>
 <p>This article constructs that decomposition. It gives the eigenbasis $(1,-i),(1,i)$ of the regular representation, the diagonal form of the Cayley matrix, the idempotents $e_\pm$ and the isomorphism $A_{\mathbb{C}}\cong\mathbb{C}\oplus\mathbb{C}$, the degenerate case of the real axis, the matrix picture and the relation to the polar decomposition. It is the companion of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>, which proves the criterion $b\neq0$, and of <em>The Three Sectors of the Complex Algebra</em>, which counts the sectors.</p>
-<p><strong>Conventions.</strong> The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The regular representation is $L_z(v)=zv$ on $\mathbb{C}$, with matrix $A=\begin{pmatrix}t&-b\\ b&t\end{pmatrix}=tI+bJ$, $J^2=-I$, in the basis $1,i$. The complexification is $V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, with scalars acting on the first factor. The companion articles write the same element $Q=q+iq'$ and the same norm $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The eigenvalue criterion, the discriminant and semisimplicity are those of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>; the polar decomposition is <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>.</p>
+<p><strong>Conventions.</strong> The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The regular representation is $L_z(v)=zv$ on $\mathbb{C}$, with matrix $A=\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}=tI+bJ$, $J^2=-I$, in the basis $1,i$. The complexification is $V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, with scalars acting on the first factor. The companion articles write the same element $Q=q+iq'$ and the same norm $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The eigenvalue criterion, the discriminant and semisimplicity are those of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>; the polar decomposition is <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>.</p>
 <h2 id="the-eigenbasis-off-the-real-axis">The Eigenbasis Off the Real Axis</h2>
 <p><strong>Theorem (the eigenvectors).</strong> Let $b\neq0$ and $\lambda_\pm=t\pm ib$. Then</p>
 <p>$$
@@ -87,11 +87,11 @@ $$</p>
 <p><em>Proof.</em> For $v_+$, the first component of $Av_+$ is $t+(-b)(-i)=t+bi=\lambda_+$, and the second is $b+t(-i)=b-ti=-i(t+bi)=\lambda_+(-i)$. The computation for $v_-$ is the same with $i$ replaced by $-i$. The determinant of the matrix of the two vectors is $i+i=2i\neq0$, so they form a basis.</p>
 <p><strong>Corollary (the diagonal form).</strong> Let</p>
 <p>$$
-P=\begin{pmatrix}1&1\\ -i&i\end{pmatrix},\qquad P^{-1}=\frac{1}{2i}\begin{pmatrix}i&-1\\ i&1\end{pmatrix}.
+P=\begin{pmatrix}1&amp;1\\ -i&amp;i\end{pmatrix},\qquad P^{-1}=\frac{1}{2i}\begin{pmatrix}i&amp;-1\\ i&amp;1\end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$
-P^{-1}AP=\begin{pmatrix}\lambda_+&0\\ 0&\lambda_-\end{pmatrix}.
+P^{-1}AP=\begin{pmatrix}\lambda_+&amp;0\\ 0&amp;\lambda_-\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The columns of $P$ are the eigenvectors, so $AP=PD$ with $D=\operatorname{diag}(\lambda_+,\lambda_-)$; multiplying by $P^{-1}$ gives the display. The inverse is verified by $P^{-1}P=I$.</p>
 <p><strong>Remark (one eigenbasis for every non-real element).</strong> The matrix is $A=tI+bJ$. The eigenvectors are the eigenvectors of $J$, which do not depend on $t$, on $b$ or on the sign of $b$. Every element off the real axis therefore has the same eigenbasis, and the eigenbasis is the basis of the complexified algebra supplied by its two minimal idempotents. This is the exact analogue of the two standard idempotents of the split-complex algebra, which are also independent of the element; the difference is that they exist only after complexification.</p>
@@ -134,7 +134,7 @@ $$</p>
 <p><em>Proof.</em> The identities are the idempotent identities of the proposition, read under left multiplication; the last is the spectral decomposition. In the eigenbasis, $L_{e_+}$ fixes $e_+$ and kills $e_-$, and $e_\pm=\frac12v_\pm$.</p>
 <p><strong>Corollary (the Lagrange form).</strong> In matrices,</p>
 <p>$$
-E_+=\frac{A-\lambda_-I}{\lambda_+-\lambda_-}=\frac12\begin{pmatrix}1&i\\ -i&1\end{pmatrix},\qquad E_-=\frac{A-\lambda_+I}{\lambda_--\lambda_+}=\frac12\begin{pmatrix}1&-i\\ i&1\end{pmatrix},
+E_+=\frac{A-\lambda_-I}{\lambda_+-\lambda_-}=\frac12\begin{pmatrix}1&amp;i\\ -i&amp;1\end{pmatrix},\qquad E_-=\frac{A-\lambda_+I}{\lambda_--\lambda_+}=\frac12\begin{pmatrix}1&amp;-i\\ i&amp;1\end{pmatrix},
 $$</p>
 <p>and $E_\pm$ are the matrices of $L_{e_\pm}$ in the complex basis $1,i_2$ of $V_{\mathbb{C}}$.</p>
 <p><em>Proof.</em> Substituting $A=tI+bJ$, $\lambda_\pm=t\pm ib$ gives the displays; the identification with $L_{e_\pm}$ is the previous corollary.</p>
@@ -158,7 +158,7 @@ $$</p>
 <h2 id="the-relation-to-the-polar-decomposition">The Relation to the Polar Decomposition</h2>
 <p><strong>Theorem (the polar reading).</strong> Let $z\neq0$, $r=|z|$ and $u=z/r$. Then $z=ru$, $|u|=1$, and</p>
 <p>$$
-A=rR_\theta,\qquad R_\theta=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},\qquad \cos\theta=\frac{t}{r},\quad \sin\theta=\frac{b}{r}.
+A=rR_\theta,\qquad R_\theta=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix},\qquad \cos\theta=\frac{t}{r},\quad \sin\theta=\frac{b}{r}.
 $$</p>
 <p>The eigenvalues are $\lambda_\pm=re^{\pm i\theta}$, and $u$ has eigenvalues $e^{\pm i\theta}$.</p>
 <p><em>Proof.</em> The modulus is $r=\sqrt{t^2+b^2}$ and $u=(t+bi)/r=\cos\theta+i\sin\theta$ with the displayed cosine and sine. The matrix is $r(\cos\theta I+\sin\theta J)=rR_\theta$. Its eigenvalues are $r$ times those of $R_\theta$, namely $re^{\pm i\theta}$, and $u$ is the scalar $\cos\theta+i\sin\theta$.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p>The eigenbasis diagonalises the scale and the rotation at once, and it is the same basis for every nonzero element.</p>
 <p><em>Proof.</em> The eigenvalues of $L_z$ are $\lambda_\pm=re^{\pm i\theta}$ and those of $L_u$ are $e^{\pm i\theta}$; the eigenvectors are $v_\pm$ in both cases.</p>
 <p><strong>Corollary (the spectral condition in polar form).</strong> For $z\neq0$, the following are equivalent: $b\neq0$; $\sin\theta\neq0$; $\theta\notin\pi\mathbb{Z}$; $u\neq\pm1$; the two eigenvalues of $L_u$ are distinct.</p>
-<p><em>Proof.</em> $b=r\sin\theta$ and $r>0$, so $b\neq0$ is $\sin\theta\neq0$; this is $\theta\notin\pi\mathbb{Z}$, which is $u=e^{i\theta}\neq\pm1$. The eigenvalues $e^{\pm i\theta}$ coincide exactly when $e^{2i\theta}=1$, that is, at $\theta\in\pi\mathbb{Z}$.</p>
+<p><em>Proof.</em> $b=r\sin\theta$ and $r&gt;0$, so $b\neq0$ is $\sin\theta\neq0$; this is $\theta\notin\pi\mathbb{Z}$, which is $u=e^{i\theta}\neq\pm1$. The eigenvalues $e^{\pm i\theta}$ coincide exactly when $e^{2i\theta}=1$, that is, at $\theta\in\pi\mathbb{Z}$.</p>
 <p><strong>Remark (the two real points of the unit circle).</strong> The polar form shows that the spectral degeneration of an invertible element is exactly its coincidence with one of the two real units $\pm1$. The doubly regular points of the unit circle are the other points, on which $\theta$ is not a multiple of $\pi$ and the two eigenvalues $e^{\pm i\theta}$ are distinct. <em>Relations between the Modulus and Spectral Regularity and Degeneracy</em> develops this comparison.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex algebra is a field, and its complexification $A_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is the algebra in which the eigenvalue decomposition lives. Off the real axis, $z=t+bi$ with $b\neq0$ has the distinct eigenvalues $\lambda_\pm=t\pm ib$, the eigenvectors $v_+=(1,-i)$ and $v_-=(1,i)$, and the diagonal form $P^{-1}AP=\operatorname{diag}(\lambda_+,\lambda_-)$ with $P$ the matrix of the two eigenvectors. The same eigenbasis serves every non-real element, because it is the eigenbasis of $J$.</p>
@@ -198,7 +198,7 @@ $$</p>
 <td>a complex number</td>
 </tr>
 <tr>
-<td>$A=\begin{pmatrix}t&-b\\ b&t\end{pmatrix}=tI+bJ$</td>
+<td>$A=\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}=tI+bJ$</td>
 <td>the Cayley matrix, $J^2=-I$</td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ $$</p>
 <td>the eigenvectors</td>
 </tr>
 <tr>
-<td>$P=\begin{pmatrix}1&1\\ -i&i\end{pmatrix}$</td>
+<td>$P=\begin{pmatrix}1&amp;1\\ -i&amp;i\end{pmatrix}$</td>
 <td>the eigenbasis matrix, $\det P=2i$</td>
 </tr>
 <tr>

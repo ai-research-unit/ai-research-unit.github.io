@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generic spherically symmetric dynamic thin-shell traversable wormholes in standard general relativity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic spherically symmetric dynamic thin-shell traversable wormholes in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generic-spherically-symmetric-dynamic-thin-shell-traversable-wormholes-in-standard-general-relativity"><strong>Generic spherically symmetric dynamic thin-shell traversable wormholes in standard general relativity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1112.2057v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nadiezhda Montelongo Garcia, Francisco S. N. Lobo, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 15 August 2012 (dated 9 December 2011)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Generic spherically symmetric dynamic thin-shell traversable wormholes in standard general relativity - 1112.2057-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic spherically symmetric dynamic thin-shell traversable wormholes in standard general relativity - 1112.2057.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Generic spherically symmetric dynamic thin-shell traversable wormholes in standard general relativity - 1112.2057.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper builds thin-shell traversable wormholes by cutting and pasting two spherically symmetric spacetimes. It gives a unified linearised stability analysis for such shells under spherically symmetric perturbations. The exotic matter is confined to a thin shell, which is allowed to move in the bulk, so the shell is dynamic. A flux term is retained that the literature had mostly ignored. The authors invert the usual procedure: instead of parameterising by a speed of sound, they treat surface mass as a function of a potential and derive stability inequalities.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"We consider the construction of generic spherically symmetric thin-shell traversable wormhole spacetimes in standard general relativity. By using the cut-and-paste procedure, we comprehensively analyze the stability of arbitrary spherically symmetric thin-shell wormholes to linearized spherically symmetric perturbations around static solutions."</p>
+<h3 id="the-aim-of-generality">The aim of generality</h3>
+<p>"While a number of special cases have previously been dealt with in scattered parts of the literature, herein we take considerable effort to make the analysis as general and unified as practicable."</p>
+<h3 id="the-central-result">The central result</h3>
+<p>"We demonstrate in full generality that stability of the wormhole is equivalent to choosing suitable properties for the exotic material residing on the wormhole throat."</p>
+<h3 id="the-setup">The setup</h3>
+<p>"While constrained by spherical symmetry it is allowed to move freely within the bulk spacetimes, which permits a fully dynamic analysis. To this effect, we have considered in great detail the presence of a flux term, which has been widely ignored in the literature. This flux term corresponds to the net discontinuity in the conservation law of the surface stresses of the bulk momentum flux"</p>
+<h3 id="the-inverted-approach">The inverted approach</h3>
+<p>"rather than adopt the latter approach, we considered that the stability of the wormhole is fundamentally linked to the behaviour of the surface mass $m_s(a)$ of the thin shell of exotic matter, residing on the wormhole throat, via a pair of stability inequalities."</p>
+<h3 id="what-this-implies">What this implies</h3>
+<p>"This novel procedure implicitly makes demands on the equation of state of the matter residing on the transition layer, and demonstrates in full generality that the stability of thin shell wormholes is equivalent to choosing suitable properties for the material residing on the thin shell."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-stability-is-a-statement-about-shell-matter">1. Stability is a statement about shell matter</h3>
+<p><strong>The idea.</strong> A thin-shell wormhole is stable exactly when the shell's material properties are chosen correctly.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats the presence of a surface as a geometric fact. Here the surface's stability depends on matter, which means geometry alone does not settle whether a construction survives.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on constructions.</p>
+<p><strong>What stands in the way.</strong> The analysis is linearised and spherically symmetric. Ranked first, because it adds a dynamical condition the article lacks.</p>
+<h3 id="2-the-ignored-flux-term">2. The ignored flux term</h3>
+<p><strong>The idea.</strong> A discontinuity in the surface stress conservation law acts as external work on the shell.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats surfaces as ideal. Retaining the flux shows that an ideal treatment can discard a physically meaningful term.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of idealisations.</p>
+<p><strong>What stands in the way.</strong> The term's size is not estimated. Ranked second.</p>
+<h3 id="3-surface-mass-instead-of-an-equation-of-state">3. Surface mass instead of an equation of state</h3>
+<p><strong>The idea.</strong> Stability inequalities can replace the usual speed-of-sound parameter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses a parameterised matter model. A formulation that avoids one free function is a more economical starting point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of matter models.</p>
+<p><strong>What stands in the way.</strong> The reformulation is equivalent, not stronger. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casimir Element — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Casimir_element.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="casimir-element"><strong>Casimir Element</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Casimir element</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Casimir_element-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Casimir_element.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Casimir_element.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on Casimir elements: the invariant of a Lie algebra that lies in the centre of its universal enveloping algebra, the quadratic construction from an invariant bilinear form, the possibility of higher-order invariants, the Harish-Chandra isomorphism identifying the centre with a polynomial algebra, and the attribution to Casimir's 1931 work on rigid bodies.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-it-is">What it is</h3>
+<p>"a Casimir element (also known as a Casimir invariant or Casimir operator) is a distinguished element of the center of the universal enveloping algebra of a Lie algebra. A prototypical example is the squared angular momentum operator, which is a Casimir element of the three-dimensional rotation group."</p>
+<h3 id="the-general-statement">The general statement</h3>
+<p>"More generally, Casimir elements can be used to refer to any element of the center of the universal enveloping algebra. The algebra of these elements is known to be isomorphic to a polynomial algebra through the Harish-Chandra isomorphism."</p>
+<h3 id="the-quadratic-construction">The quadratic construction</h3>
+<p>With $\mathfrak{g}$ an $n$-dimensional Lie algebra and $B$ a nondegenerate bilinear form invariant under the adjoint action, $B(\mathrm{ad}_X Y,Z)+B(Y,\mathrm{ad}_X Z)=0$, and $\{X_i\}$, $\{X^i\}$ a basis and its $B$-dual, the Casimir element $\Omega$ for $B$ is the element of the [universal enveloping algebra] $X_iX^i$. The invariance of $B$ is what makes $\Omega$ commute with every generator, which is the whole mechanism.</p>
+<h3 id="higher-order-and-the-naming">Higher order and the naming</h3>
+<p>"The most commonly used Casimir invariant is the quadratic invariant. It is the simplest to define, and so is given first. However, one may also have Casimir invariants of higher order, which correspond to homogeneous symmetric polynomials of higher order." And: "The Casimir element is named after Hendrik Casimir, who identified them in his description of rigid body dynamics in 1931."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-centre-of-the-enveloping-algebra-is-a-polynomial-ring-and-that-count-is-a-constraint">1. The centre of the enveloping algebra is a polynomial ring, and that count is a constraint</h3>
+<p><strong>The idea.</strong> The Harish-Chandra isomorphism says the centre is a polynomial algebra in as many generators as the rank. So a semisimple algebra has exactly $\mathrm{rank}$ independent invariants, no more, and every "extra conserved quantity" one writes is a polynomial in them.</p>
+<p><strong>What it would add.</strong> A counting argument the corpus does not use. The corpus's articles on the Lorentz algebra give two Casimirs and note that they classify the orbits; the general statement is that the number is the rank, which explains why a third independent invariant cannot exist and turns each attempted one into a relation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>, as the reason there are two.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra is not the enveloping algebra of a semisimple Lie algebra but a real Clifford algebra; the isomorphism does not apply directly, and the rank count would need a Clifford analogue.</p>
+<h3 id="2-invariance-of-the-form-is-what-does-the-work">2. Invariance of the form is what does the work</h3>
+<p><strong>The idea.</strong> The Casimir is $X_iX^i$ summed against a form invariant under the adjoint action. Without that invariance the element is basis-dependent and commutes with nothing. The condition looks technical and is the entire content.</p>
+<p><strong>What it would add.</strong> A test for the corpus's own invariants: each one should be traceable to an invariant pairing. The corpus writes mass and spin invariants and checks them by computation; the article says which structural property makes such a check succeed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/wigners-classification-two-casimirs-three-orbits.md</code>, at the construction of the invariants.</p>
+<p><strong>What stands in the way.</strong> The corpus's pairing is the algebra's own trace form, which is invariant for a different reason (associativity, not adjoint invariance), so the argument would have to be restated.</p>
+<p>This is an encyclopedia article; it defines the object, gives the quadratic construction, states the Harish-Chandra isomorphism and the attribution, and computes no example in full.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

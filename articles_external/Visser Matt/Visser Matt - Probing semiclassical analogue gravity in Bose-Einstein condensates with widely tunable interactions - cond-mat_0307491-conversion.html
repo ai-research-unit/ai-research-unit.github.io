@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probing semiclassical analogue gravity in Bose–Einstein condensates with widely tunable interactions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Probing semiclassical analogue gravity in Bose-Einstein condensates with widely…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="probing-semiclassical-analogue-gravity-in-boseeinstein-condensates-with-widely-tunable-interactions"><strong>Probing semiclassical analogue gravity in Bose–Einstein condensates with widely tunable interactions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>cond-mat/0307491v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 August 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Probing semiclassical analogue gravity in Bose-Einstein condensates with widely tunable interactions - cond-mat_0307491-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Probing semiclassical analogue gravity in Bose-Einstein condensates with widely tunable interactions - cond-mat_0307491.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Probing semiclassical analogue gravity in Bose-Einstein condensates with widely tunable interactions - cond-mat_0307491.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A Bose–Einstein condensate with tunable interactions can be made to change its sound speed quickly. The authors argue that this makes it a laboratory for semiclassical gravity. Phonons in the condensate behave like quantum fields on an effective expanding geometry. Changing the interaction strength then produces particle creation analogous to cosmological production. The authors compute the phonon number in sudden and adiabatic limits. They argue these effects are far larger than Hawking radiation from a horizon, so they are more likely to be seen.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"In this article we shall discuss the prospects for the use of this particular experimental effect to test some of the predictions of semiclassical quantum gravity, for instance, particle production in an expanding universe."</p>
+<h3 id="the-advantage">The advantage</h3>
+<p>"We stress that these effects are generally much larger than the Hawking radiation expected from causal horizons, and so there are much better chances for their detection in the near future."</p>
+<h3 id="the-two-limits">The two limits</h3>
+<p>"Contrary to what happens in the sudden approximation, the adiabatic approximation is taking into account the rapidity with which the configuration changes."</p>
+<h3 id="the-suppression">The suppression</h3>
+<p>"the total number of phonons calculated by trusting the adiabatic approximation throughout the whole range of frequencies is suppressed with respect to the sudden approximation calculation by a factor of ... [(healing time)/(evolution time)]$^3$"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-bigger-effect-to-look-for">1. A bigger effect to look for</h3>
+<p><strong>The idea.</strong> Analogues produce more particles than horizons do, so they are easier to test.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats the idealised case. A realistic, amplified analogue is a practical route to testing particle creation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of production.</p>
+<p><strong>What stands in the way.</strong> The effect is not gravitational. Ranked first, because it makes a prediction testable.</p>
+<h3 id="2-sudden-versus-adiabatic">2. Sudden versus adiabatic</h3>
+<p><strong>The idea.</strong> How fast a medium changes decides how many phonons appear.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> uses Bogoliubov coefficients. Sudden and adiabatic limits are exactly where those coefficients differ, and a worked comparison is a useful check.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, in the discussion of coefficients.</p>
+<p><strong>What stands in the way.</strong> The comparison is for a condensate. Ranked second.</p>
+<h3 id="3-geometry-from-a-medium">3. Geometry from a medium</h3>
+<p><strong>The idea.</strong> An expanding effective geometry can be engineered.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> derives geometry from algebra. Here geometry is manufactured in a lab, which is a different origin for the same object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergence.</p>
+<p><strong>What stands in the way.</strong> The geometry is acoustic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

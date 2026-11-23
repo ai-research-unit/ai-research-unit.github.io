@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boyer–Lindquist space-times and beyond: metamaterial analogues for arbitrary space-times — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Boyer-Lindquist space-times and beyond - Meta-material analogues -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="boyerlindquist-space-times-and-beyond-metamaterial-analogues-for-arbitrary-space-times"><strong>Boyer–Lindquist space-times and beyond: metamaterial analogues for arbitrary space-times</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1802.09807v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 31 March 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Universe 2024, 10, 159</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Boyer-Lindquist space-times and beyond - Meta-material analogues - 1802.09807-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Boyer-Lindquist space-times and beyond - Meta-material analogues - 1802.09807.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Boyer-Lindquist space-times and beyond - Meta-material analogues - 1802.09807.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper gives a general recipe for turning a spacetime metric into a set of electromagnetic material tensors. Given any metric in some coordinate system, and any chosen flat laboratory metric in any curvilinear coordinates, it computes the $3\times3$ permittivity, permeability, and magnetoelectric tensors that reproduce the light propagation of the metric. It works the recipe out for Boyer–Lindquist coordinates, for generic spacetimes, and for spherical polar coordinates as a check. The authors report that the ADM formalism is not useful for this and that the threaded, Kaluza–Klein-like formalism is.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"Analogue space-times (and in particular metamaterial analogue space-times) have a long varied and rather complex history. Much of the previous related work to this field has focused on spherically symmetric models; however, axial symmetry is much more relevant for mimicking astrophysically interesting systems that are typically subject to rotation."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"The current article deals with three explicit themes: Boyer–Lindquist space-times (suitable for dealing with axisymmetric stationary space-times), generic space-times, and finally (as a consistency check) spherically symmetric space-times represented in spherical polar coordinates. In all of these situations, we have been able to present quite specific and easily applicable formulae specifying the constitutive tensors (the permittivity, permeability, and magnetoelectric tensors) required to mimic the given space-time geometry."</p>
+<h3 id="the-method">The method</h3>
+<p>"Given any explicit space-time metric (implicitly making a coordinate choice) and choosing any explicit Riemann-flat laboratory metric (background metric), the permeability, permittivity, and magnetoelectric tensors can be uniquely defined and extracted from the formalism."</p>
+<h3 id="the-formalism-that-works">The formalism that works</h3>
+<p>"Perhaps surprisingly, we find that the well-known ADM formalism proves to be not particularly useful, and that it is instead the dual 'threaded' (Kaluza–Klein–inspired) formalism that provides much more tractable results. While the background laboratory metric is (for mathematical simplicity and physical plausibility) always taken to be Riemann flat, we will allow for arbitrary curvilinear coordinate systems on the flat background space-time."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"The long-term goal is to apply these ideas to analogue Hawking radiation."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-frame-route-versus-threading">1. The frame route versus threading</h3>
+<p><strong>The idea.</strong> The paper tried the ADM decomposition, which is the natural home of a frame field, and found it unhelpful. The threaded decomposition worked.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds the metric from a frame field, which is an ADM-like choice. This paper reports that for the concrete problem of extracting material tensors, that choice is the awkward one. The article should record the finding, because it bears on whether the frame route is a convenience or a commitment. If threading is easier, the frame field is not forced.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The comparison is made for one problem, so the conclusion is local to it. Ranked first, because it is the only import here that questions a choice the corpus has already made.</p>
+<h3 id="2-any-metric-any-flat-background-any-coordinates">2. Any metric, any flat background, any coordinates</h3>
+<p><strong>The idea.</strong> The recipe is coordinate-free in its inputs and produces tensors in whichever coordinates are chosen.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code> fixes a frame and works the constitutive relations there. The general recipe says the answer depends on the coordinate choice, and gives the transformation between choices. That is a covariance statement the article does not make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, at the constitutive relations.</p>
+<p><strong>What stands in the way.</strong> It requires introducing a second, flat metric, which the article does not use. Ranked second.</p>
+<h3 id="3-a-tabletop-horizon">3. A tabletop horizon</h3>
+<p><strong>The idea.</strong> If the material tensors can mimic an arbitrary metric, then a horizon can be built in a laboratory.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives a temperature from the horizon geometry. An analogue medium would let that temperature be compared with a measured spectrum. That is the nearest thing to a test the article could have, even if the medium realises a different metric.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of observability.</p>
+<p><strong>What stands in the way.</strong> Realising a horizon in a medium is a materials problem the paper does not solve, and the analogy is not an equivalence. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

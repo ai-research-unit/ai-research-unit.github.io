@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence of Relationships Among Fundamental Constants of the Standard Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Evidence of Relationships Among Fundamental Constants of the Standard Model 2509.07713v1.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="evidence-of-relationships-among-fundamental-constants-of-the-standard-model"><strong>Evidence of Relationships Among Fundamental Constants of the Standard Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2509.07713v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>S. V. Chekanov, H. Kjellerstrand</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 9 September 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Evidence of Relationships Among Fundamental Constants of the Standard Model 2509.07713v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Evidence of Relationships Among Fundamental Constants of the Standard Model 2509.07713v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Evidence of Relationships Among Fundamental Constants of the Standard Model 2509.07713v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Follows the earlier genetic-programming search with a statistical test: it builds a system of analytic relations connecting quark and boson masses, measures its total complexity, and compares that complexity against the distribution obtained when the same search is run on randomized constants. The observed system is simpler than the random distribution at the sub-percent level in both of two solutions, which the authors read as evidence against the relations being numerical artefacts.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"associated with quark and boson masses are not randomly distributed, but instead follow a hierarchical structure within a high-dimensional functional space. The found analytic" "that could provide a foundation for developing a future theoretical framework to address the SM."</p>
+<h3 id="the-complexity-measure">The complexity measure</h3>
+<p>The analytic rank of an equation system "this physics imal number of free parameters. program" is denoted $C$. "son. 5 SM corresponds to a total complexity value of Ca + Cb = 565, connection to the vacuum expectation value, all other masses which was obtained adding 146 × 3 (for Eqs."</p>
+<h3 id="the-statistical-test">The statistical test</h3>
+<p>"vation is that the SM parameters prefer as 565 from the random tests, assuming a one-sided normal dis- to be related in a chain of equations, i.e. each mass is connected tribution, is 0.46%. For the most likely solution (b) and Fig. 1b, to a particle with a lower mass, rather"</p>
+<h3 id="the-conclusion-drawn">The conclusion drawn</h3>
+<p>"our tests provide evidence against the possibility of reproducing is also interesting that the dominant constant in Eq." "we conclude that the obtained GP relationships systems of equations. among the SM parameters are unlikely to be numerical arti- All of the above suggests that the SM parameters are not en- facts, but rather carry the signature of an underlying theory that tirely random."</p>
+<h3 id="the-lepton-sector-which-resisted">The lepton sector, which resisted</h3>
+<p>"The GP method could not identify connections of the electron reduction in the number of free parameters. It should be em- mass with the Higgs mass, unless the experimental uncertainty" With $m_e$ taken as input, the lowest-rank fits are
+$$m_\mu=m_t\,\alpha^{-1}\sqrt{5+\alpha^{-1}},\qquad m_\tau=m_H\left[\frac{1}{\alpha^{-1}}+\frac{1}{\alpha^{-1}+8}\right] \quad \text{(paper 26–27)}$$
+"f 105.659 MeV and Acknowledgments 1776.14 MeV. Although such masses are slightly outside the modern experimental uncertainties, their values are still quite The submitted manuscript has been created by UChicago Ar- precise."</p>
+<h3 id="the-two-parameter-claim">The two-parameter claim</h3>
+<p>"In the alternative solution, the eight masses of the SM par- ticles (six quarks and two vector bosons) are expressed using The lepton masses are the most difficult part of the analysis. only two constants: δ and me ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-complexity-as-a-test-statistic">1. Complexity as a test statistic</h3>
+<p><strong>The idea.</strong> The evidence is not that any single relation fits; it is that the whole system is simpler than random data allows. Randomization supplies the null distribution, and the observed complexity sits at the 0.46% tail. This is a <strong>mechanism</strong> for turning a pile of curve fits into a statistical claim.</p>
+<p><strong>What it would add.</strong> A way to test the corpus's own relations as a set rather than one at a time, which the corpus never does: its predictions are checked individually against experiment, not jointly against a null model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on how the count is justified.</p>
+<p><strong>What stands in the way.</strong> The corpus's relations are derived rather than searched, so a randomization null would test the wrong thing; the method applies to fitted relations and would need redefining for derived ones.</p>
+<h3 id="2-a-hierarchy-each-mass-tied-to-the-next-lighter-one">2. A hierarchy: each mass tied to the next lighter one</h3>
+<p><strong>The idea.</strong> "er mass, rather than to the Higgs boson the distribution of Cb has a mean of 304 and a width of 76. The mass directly. This “hierarchical” structure exhibits the lowest one-sided probability of observing Cb ≤ 118 is 0.". Masses form a chain, not a star.</p>
+<p><strong>What it would add.</strong> A structural observation about the mass spectrum the corpus states as a list but never as a graph.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the mass ordering.</p>
+<p><strong>What stands in the way.</strong> The chain is a property of the fits, which are dimensional-analysis-guided guesses; the corpus's masses come from one mechanism, and a chain of pairwise fits is not a mechanism.</p>
+<h3 id="3-the-lepton-masses-resist-the-method">3. The lepton masses resist the method</h3>
+<p><strong>The idea.</strong> The quark and boson masses admit a two-parameter description; the charged-lepton masses do not, and the fit that does exist lands outside experimental uncertainty. The failure is reported rather than hidden, and it marks where the pattern stops.</p>
+<p><strong>What it would add.</strong> A caution for the corpus, whose own lepton-mass relations would face the same test.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the lepton masses.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; it is a limit the corpus can cite.</p>
+<p>The rank of these three is a judgement: the complexity test first, because it is the only one that could be applied to the corpus as it stands; the hierarchy second; the lepton failure third, as a caution.</p>
+<p>This is a seven-page preprint; the complexity statistic, the two solutions, the randomization test, the lepton fits and the two-parameter reduction are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

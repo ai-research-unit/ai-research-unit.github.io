@@ -98,16 +98,16 @@ $$</p>
 <p><strong>The derivative is invertible on each half at every point.</strong> For the symmetric half this follows from the global bijectivity of $\exp$; for the antisymmetric half it follows from the covering property, since a local diffeomorphism has invertible derivative.</p>
 <p><strong>The exponential of the sum is not the product of the exponentials.</strong> For</p>
 <p>$$
-S=\begin{pmatrix}1&0.5\\0.5&-0.2\end{pmatrix},\qquad K=\begin{pmatrix}0&0.7\\-0.7&0\end{pmatrix},
+S=\begin{pmatrix}1&amp;0.5\\0.5&amp;-0.2\end{pmatrix},\qquad K=\begin{pmatrix}0&amp;0.7\\-0.7&amp;0\end{pmatrix},
 $$</p>
 <p>the two products differ substantially:</p>
 <p>$$
-e^{S}e^{K}=\begin{pmatrix}1.7325&2.5368\\ -0.0020&1.2816\end{pmatrix},\qquad e^{S+K}=\begin{pmatrix}2.4953&1.8262\\ -0.3044&0.6691\end{pmatrix},
+e^{S}e^{K}=\begin{pmatrix}1.7325&amp;2.5368\\ -0.0020&amp;1.2816\end{pmatrix},\qquad e^{S+K}=\begin{pmatrix}2.4953&amp;1.8262\\ -0.3044&amp;0.6691\end{pmatrix},
 $$</p>
-<p>with a largest entry difference of $0.7628$. The reason is that $SK-KS=\begin{pmatrix}-0.7&0.84\\0.84&0.7\end{pmatrix}\ne0$, so the Baker–Campbell–Hausdorff correction does not vanish.</p>
+<p>with a largest entry difference of $0.7628$. The reason is that $SK-KS=\begin{pmatrix}-0.7&amp;0.84\\0.84&amp;0.7\end{pmatrix}\ne0$, so the Baker–Campbell–Hausdorff correction does not vanish.</p>
 <h2 id="the-exponential-on-the-symmetric-half">The Exponential on the Symmetric Half</h2>
-<p><strong>Theorem.</strong> $\exp:\operatorname{Sym}_n\to\operatorname{Sym}_n^{>0}$ is an analytic diffeomorphism, with inverse $\log$.</p>
-<p><em>Proof.</em> Surjective: the spectral theorem writes $P=Q\Lambda Q^{\mathsf T}$ with $\Lambda$ positive diagonal, and then $P=e^{S}$ with $S=Q(\log\Lambda)Q^{\mathsf T}$ symmetric. Injective: if $e^{S}=e^{S'}$ with both symmetric then $S$ and $S'$ commute with $e^{S}$, hence are polynomials in it, hence are simultaneously diagonalisable and agree on the eigenvalues. Analytic with analytic inverse: the logarithm of a positive definite matrix is given by the convergent series in $P-\mathrm{I}$ when $\|P-\mathrm{I}\|<1$ and by the spectral formula in general.</p>
+<p><strong>Theorem.</strong> $\exp:\operatorname{Sym}_n\to\operatorname{Sym}_n^{&gt;0}$ is an analytic diffeomorphism, with inverse $\log$.</p>
+<p><em>Proof.</em> Surjective: the spectral theorem writes $P=Q\Lambda Q^{\mathsf T}$ with $\Lambda$ positive diagonal, and then $P=e^{S}$ with $S=Q(\log\Lambda)Q^{\mathsf T}$ symmetric. Injective: if $e^{S}=e^{S'}$ with both symmetric then $S$ and $S'$ commute with $e^{S}$, hence are polynomials in it, hence are simultaneously diagonalisable and agree on the eigenvalues. Analytic with analytic inverse: the logarithm of a positive definite matrix is given by the convergent series in $P-\mathrm{I}$ when $\|P-\mathrm{I}\|&lt;1$ and by the spectral formula in general.</p>
 <p><strong>So the symmetric half is a global chart for the cone.</strong> The cone is an open convex subset of a vector space of dimension $n(n+1)/2$, and the exponential is a diffeomorphism onto it, which is the strongest possible statement about the exponential on this half.</p>
 <p><strong>The derivative is everywhere invertible and the map is proper.</strong> Properness follows from the spectral formula: if $e^{S}$ stays in a compact set then the eigenvalues of $S$ stay bounded, so $S$ stays in a compact set. A proper local diffeomorphism that is injective is a diffeomorphism, which gives a second proof.</p>
 <h2 id="the-exponential-on-the-antisymmetric-half">The Exponential on the Antisymmetric Half</h2>

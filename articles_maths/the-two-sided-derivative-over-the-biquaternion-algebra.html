@@ -148,7 +148,7 @@ $$</p>
 <h3 id="the-matrix-form-of-the-condition">The Matrix Form of the Condition</h3>
 <p>The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, so the variable and the function are two-by-two matrices of complex functions. Writing the entries of $Z$ as</p>
 <p>$$
-Z=\begin{pmatrix}\upsilon & w\\ p & v\end{pmatrix},
+Z=\begin{pmatrix}\upsilon &amp; w\\ p &amp; v\end{pmatrix},
 $$</p>
 <p>the four complex coordinates are $\upsilon,v,w,p$ themselves, and $F$ is four functions $F_{CD}$ of those four variables. The differential is the four-by-four array whose entry is the derivative of one component with respect to one coordinate, $\partial F_{CD}/\partial Z_{AB}$, the indices $A,B$ naming the coordinate and $C,D$ the component.</p>
 <p>In these indices the two-sided condition reads</p>
@@ -159,7 +159,7 @@ $$</p>
 <h3 id="the-rank-one-criterion_1">The Rank-One Criterion</h3>
 <p><strong>Proposition 1 (the rank-one criterion).</strong> Let $F$ be $C^1$. If $F$ admits a two-sided derivative with multipliers $L$ and $R$, then for every component $\Sigma=F_{CD}$ the two-by-two matrix</p>
 <p>$$
-\mathsf D\Sigma:=\begin{pmatrix}\dfrac{\partial\Sigma}{\partial\upsilon} & \dfrac{\partial\Sigma}{\partial w}\\[2pt] \dfrac{\partial\Sigma}{\partial p} & \dfrac{\partial\Sigma}{\partial v}\end{pmatrix}
+\mathsf D\Sigma:=\begin{pmatrix}\dfrac{\partial\Sigma}{\partial\upsilon} &amp; \dfrac{\partial\Sigma}{\partial w}\\[2pt] \dfrac{\partial\Sigma}{\partial p} &amp; \dfrac{\partial\Sigma}{\partial v}\end{pmatrix}
 $$</p>
 <p>has rank at most one.</p>
 <p><em>Proof.</em> If $dF=L\,dZ\,R$ then, in the indices, $\partial\Sigma/\partial Z_{AB}=L_{CA}R_{BD}$ for the fixed pair $(C,D)$, which is a column times a row and therefore has rank at most one. Conversely, a two-by-two matrix of rank at most one is a column times a row; factorising the matrix of each component gives $\partial\Sigma/\partial Z_{AB}=\varphi_A\psi_B$ for that component, which is the condition with the multipliers depending on the component index. The two factorisations need not agree on a common pair $(L,R)$ across the four components. The criterion is therefore exact for the condition read <strong>component by component</strong>, and it is necessary and not sufficient for the condition with one pair shared by the four components.</p>

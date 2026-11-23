@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniform Formalism for Description of Dynamic, Quantum and Stochastic Systems — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Uniform formalism for description of dynamic quantum and stochastic systems - 0603237.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="uniform-formalism-for-description-of-dynamic-quantum-and-stochastic-systems"><strong>Uniform Formalism for Description of Dynamic, Quantum and Stochastic Systems</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0603237 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, not dated in the PDF</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Uniform formalism for description of dynamic quantum and stochastic systems - 0603237-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Uniform formalism for description of dynamic quantum and stochastic systems - 0603237.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-schrodinger-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Uniform formalism for description of dynamic quantum and stochastic systems - 0603237.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs one formalism that covers deterministic, stochastic and quantum systems, by making the statistical ensemble the basic object of dynamics. No probabilities appear anywhere: the ensemble is a continuous medium and its description is purely dynamical, with or without internal randomness. The same scheme is then written in four ways — Lagrange, Euler, Hamilton-Jacobi and wave function — and the four are shown to be descriptions of one object. The claim that matters is that the wave function is one of the four, and that its equation is linear only while the flow is irrotational.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-reloading">The reloading</h3>
+<p>"The conventional dynamic formalism, obtained for the space-time, where the motion of free particles is primordially deterministic, seems to be unsuitable. The statistical ensemble of stochastic (or deterministic) systems is considered to be the main object of dynamics. At such a logical reloading the statistical description becomes a component of dynamics."</p>
+<p>And the scope: "Such an approach admits one to describe quantum systems, considering them as stochastic system and using only principles of classical (not quantum) physics at this description. Besides, the developed technique may be applied for description of classical inviscid fluids."</p>
+<h3 id="four-descriptions-of-one-object">Four descriptions of one object</h3>
+<p>"We shall consider four different methods of the statistical ensemble description: (1) description in Lagrangian coordinates, (2) description in Eulerian coordinates, (3) Hamilton-Jacobi description, (4) description in terms of the wave function." And in the abstract the same list is given as "description in terms of the generalized stream function" for the third entry, which is the form the companion papers use.</p>
+<p>The listing is not a menu of alternatives but a set of coordinate choices on one object, and that is the paper's structural point: the wave function is a way of writing a fluid, not a new kind of entity.</p>
+<h3 id="the-quantum-potential-written-two-ways">The quantum potential, written two ways</h3>
+<p>After eliminating the stochastic velocity the equation of motion is $m\ddot{x}=-\nabla V(x)-\nabla U_{B}$ with</p>
+<p>$$U_{B}=\frac{\hbar^{2}}{8m\rho}\left(\frac{(\nabla\rho)^{2}}{\rho}-2\nabla^{2}\rho\right)=-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}\sqrt{\rho}}{\sqrt{\rho}},$$</p>
+<p>the two forms being the same object written in terms of the density and in terms of its square root. This is the standard quantum potential, derived here without a wave function, as the back-reaction of the stochastic component on the regular one.</p>
+<h3 id="the-linearity-claim">The linearity claim</h3>
+<p>"the quantum principles suppose a description in terms of linear dynamic equations for a wave function, which is introduced axiomatically. In the model conception, when the wave function is simply a way of description of an ideal continuous media (statistical ensemble), the dynamic equations appear to be linear only for nonrotational flow of the medium. In the case of a rotational flow the Schrödinger equation ceases to be linear differential equation."</p>
+<p>And the honest question he ends on: "The uniform method of the particle motion description admits one to refuse the quantum principles as needless ones. However, it puts the question: ''What is the nature of the particle motion stochasticity?''"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-linearity-is-a-consequence-of-irrotationality">1. Linearity is a consequence of irrotationality</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong> with a mechanism: the Schrödinger equation is linear because the flow it describes has no vorticity; give the flow vorticity and nonlinear terms appear in the same equation. Linearity is then a property of a special class of flows, not a principle.</p>
+<p><strong>What it would add.</strong> The corpus's Schrödinger-fluid article derives the fluid from the linear equation, so linearity is the starting point. This reverses the derivation and identifies the physical condition behind it — a condition the corpus can check, since its spin-half fluid is rotational and its spin-zero fluid is not. That asymmetry is exactly what the claim predicts, and stating it would turn a catalogue of fluids into an explanation of why they differ.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-schrodinger-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> Superposition is what makes quantum mechanics quantum, and a nonlinear equation loses it. If linearity is contingent on irrotationality, then rotational quantum systems would not superpose, which is not what is observed — so either the vortical case is not physical or the claim is too strong.</p>
+<h3 id="2-a-formalism-with-no-probabilities-in-it">2. A formalism with no probabilities in it</h3>
+<p><strong>The idea.</strong> A <strong>claim about foundations</strong>: a stochastic system's ensemble can be described by deterministic equations for a continuous medium, with the randomness absorbed into the medium's extra velocity field and never appearing as a probability.</p>
+<p><strong>What it would add.</strong> The corpus computes probabilities from amplitudes and takes the Born rule as an axiom. A purely dynamical ensemble description would make the amplitude a fluid variable and the probability a density, with no rule needed. Whether that is possible is a precise question, and the corpus's own $\rho=\psi^{*}\psi$ is the place to test it, since the density is already there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>.</p>
+<p><strong>What stands in the way.</strong> The formalism reproduces the quantum potential but not the Born rule's exclusion of other weights; any positive density could play the role. So probability is not eliminated, only renamed, unless a dynamical argument fixes the density.</p>
+<h3 id="3-four-descriptions-as-one-object">3. Four descriptions as one object</h3>
+<p><strong>The idea.</strong> A <strong>structural claim</strong>: Lagrange, Euler, Hamilton-Jacobi and wave-function descriptions are four coordinate systems on one fluid, and no one of them is more fundamental than another.</p>
+<p><strong>What it would add.</strong> The corpus's fluid series treats the wave-to-fluid map as a translation between two things, with the wave primary. Four coequal descriptions would make the map a change of variables, which is a stronger and cleaner statement, and it would explain why the corpus keeps finding the same structures under different names — the Fourier-transform articles in particular.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> The four descriptions are not equally convenient or equally general: the wave-function form requires a complex structure and a single-valued phase, so the equality is formal at best. The paper does not prove the four cover the same domain.</p>
+<p>The rank: linearity-from-irrotationality first, because it is a testable asymmetry; the probability-free formalism second, because it is a precise foundational claim; the four descriptions last, because the equality is loose.</p>
+<p>The remaining items in one line each: the quantum potential in its two equivalent forms, which is the standard Bohm expression reached without a wave function; the statement that quantum principles are refused rather than derived, which is this programme's constant posture; and the closing question about the nature of the stochasticity, which he leaves open and which no paper in this set answers.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

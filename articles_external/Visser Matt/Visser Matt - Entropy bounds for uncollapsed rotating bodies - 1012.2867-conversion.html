@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy bounds for uncollapsed rotating bodies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed rotating bodies - 1012.2867.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entropy-bounds-for-uncollapsed-rotating-bodies"><strong>Entropy bounds for uncollapsed rotating bodies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1012.2867v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 10 March 2011 (dated 14 December 2010)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Entropy bounds for uncollapsed rotating bodies - 1012.2867-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed rotating bodies - 1012.2867.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed rotating bodies - 1012.2867.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors previously bounded the entropy of a static spherically symmetric uncollapsed object by half its area. This paper extends the bound to rotating bodies, which the authors say is harder than it looks. The classical part uses only general relativity and elementary thermodynamics to bound entropy by an average surface gravity times area over temperature. A second step appeals to the Unruh effect to bound the temperature below, and the combination again gives entropy at most half the area. The appendix derives the non-geodesic timelike Raychaudhuri equation used in the argument.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Consider a rotating blob of matter that has not collapsed to a black hole. Can we nevertheless place a robust bound on its entropy using fundamental physics, without resorting to black hole physics (generalized second law, holographic bound, horizon entanglement entropy) or the Bekenstein bound?"</p>
+<h3 id="the-previous-result">The previous result</h3>
+<p>"In the case of non-rotating static configurations this was recently answered in the affirmative when the present authors derived a bound based only on classical general relativity, basic thermodynamics, and the Unruh effect, to the effect that (entropy) $\le\frac12$(area)."</p>
+<h3 id="why-the-half">Why the half</h3>
+<p>"The $\frac12$ is not a typo — ultimately one has $\frac12$ (rather than the $\frac14$ one might naively expect based on black hole physics) simply because the matter has not collapsed to a black hole."</p>
+<h3 id="what-this-paper-adds">What this paper adds</h3>
+<p>"We shall now extend this result to rotating systems. This extension is less simple than one might at first suppose."</p>
+<h3 id="the-classical-bound">The classical bound</h3>
+<p>"Purely classically, (using only classical general relativity and basic thermodynamics), it is possible to show that the entropy of uncollapsed matter inside a region enclosed by a surface of area $A$ is bounded from above by"</p>
+<p>$$S\le\frac{\|\vec\kappa\|_{\max(\text{surface})}A}{4\pi T_\infty}.$$</p>
+<h3 id="the-semiclassical-step">The semiclassical step</h3>
+<p>"By appealing to the Unruh effect, which is our only invocation of quantum physics, we argue that for a suitable class of fiducial observers there is a (quantitatively weak but qualitatively robust) lower bound on the temperature (as measured at spatial infinity)"</p>
+<p>$$T_\infty\ge\max_{\text{FIDOs}}\frac{\|\vec\kappa\|}{2\pi}.$$</p>
+<h3 id="the-final-result">The final result</h3>
+<p>"Thus, using only classical general relativity, basic thermodynamics, and the Unruh effect, we are able to argue that for uncollapsed matter"</p>
+<p>$$S\le\tfrac12 A.$$</p>
+<h3 id="the-overall-message">The overall message</h3>
+<p>"Useful (albeit sometimes quantitatively weak) entropy bounds can be derived from very basic physics without any recourse to the long sought for 'full theory of quantum gravity'. ... These are remarkably useful bounds based on an absolute minimum of physical assumptions."</p>
+<h3 id="the-honest-reservation">The honest reservation</h3>
+<p>"While we suspect that there might still be a number of ways in which (in specific situations) the bounds enunciated in this article can be improved, the overall message is (we think) clear."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rotation-does-not-break-the-bound">1. Rotation does not break the bound</h3>
+<p><strong>The idea.</strong> The half-area bound survives the loss of spherical symmetry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> works in the simplest symmetry. This paper shows the area bound is robust under rotation, which raises the question of whether the article's derivation uses spherical symmetry essentially or only for convenience.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the assumptions of the derivation.</p>
+<p><strong>What stands in the way.</strong> The bound is weaker than the article's equality. Ranked first, because it identifies which assumptions are load-bearing.</p>
+<h3 id="2-a-non-geodesic-raychaudhuri-equation">2. A non-geodesic Raychaudhuri equation</h3>
+<p><strong>The idea.</strong> The expansion of a non-geodesic congruence obeys an equation with an acceleration divergence term.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> uses congruences implicitly. An equation that holds for arbitrary fiducial observers is a tool the article could apply to observers not falling freely, which is exactly the awkward case for horizon definitions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> It is an appendix-level technical result. Ranked second.</p>
+<h3 id="3-quantum-input-kept-to-one-place">3. Quantum input kept to one place</h3>
+<p><strong>The idea.</strong> Only one step in the argument is quantum, and the authors say so.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain from identifying the single quantum assumption in any derivation, which makes the classical and quantum parts separable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of scope.</p>
+<p><strong>What stands in the way.</strong> It is a methodological observation. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

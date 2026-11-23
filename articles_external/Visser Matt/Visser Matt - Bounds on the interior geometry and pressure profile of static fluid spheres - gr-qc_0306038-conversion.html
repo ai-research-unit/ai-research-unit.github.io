@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounds on the interior geometry and pressure profile of static fluid spheres — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on the interior geometry and pressure profile of static fluid spheres -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounds-on-the-interior-geometry-and-pressure-profile-of-static-fluid-spheres"><strong>Bounds on the interior geometry and pressure profile of static fluid spheres</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0306038v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 June 2003 (LATEX-ed 17 November 2018)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bounds on the interior geometry and pressure profile of static fluid spheres - gr-qc_0306038-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on the interior geometry and pressure profile of static fluid spheres - gr-qc_0306038.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounds on the interior geometry and pressure profile of static fluid spheres - gr-qc_0306038.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper generalises the Buchdahl–Bondi bound on the compactness of a static fluid sphere. The comparison is with the interior Schwarzschild solution of the same mass and radius. Assuming that the average density does not increase outwards, the authors bound the metric coefficients, the local compactness, the local acceleration, and the pressure profile at every interior point, not only at the centre. The bounds are sharp, because the interior Schwarzschild solution saturates them. The paper is written partly as a pedagogical resource, since the authors found that no textbook collects these inequalities.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"It is a famous result of relativistic stellar structure that (under mild technical conditions) a static fluid sphere satisfies the Buchdahl–Bondi bound $2M/R\le8/9$; the surprise here being that the bound is not $2M/R\le1$. In this article we provide further generalizations of this bound by placing a number of constraints on the interior geometry (the metric components), on the local acceleration due to gravity, on various combinations of the internal density and pressure profiles, and on the internal compactness $2m(r)/r$ of static fluid spheres."</p>
+<h3 id="the-method">The method</h3>
+<p>"We do this by adapting the standard tool of comparing the generic fluid sphere with a Schwarzschild interior geometry of the same mass and radius — in particular we obtain several results for the pressure profile (not merely the central pressure) that are considerably more subtle than might first be expected."</p>
+<h3 id="the-shape-of-the-theorems">The shape of the theorems</h3>
+<p>"Many of the theorems in this present article are of the form 'If the average density is nonincreasing outwards, then generic stellar structure is in many ways bounded by the interior Schwarzschild solution of the same mass and radius'. While this is not unexpected, classic results typically refer to global aspects such as the overall compactness [= 2M/R] or the central pressure $p_c$ — in this article we have seen how to extend this to local information regarding the metric coefficients and, local compactness, and pressure profile at all points interior to the star."</p>
+<h3 id="sharpness">Sharpness</h3>
+<p>"The bounds we derive are sharp in the sense that they are saturated by the interior Schwarzschild geometry, so that in this sense they are the 'best possible'."</p>
+<h3 id="why-it-was-written">Why it was written</h3>
+<p>"Interest in these issues arose while teaching a course in general relativity and noting that while many textbooks discuss the Buchdahl–Bondi bound, most did not do so by name, and no extant textbook [or, so far as we are aware, the technical literature] covers all the inequalities derived herein."</p>
+<h3 id="the-open-questions">The open questions</h3>
+<p>The conclusion lists three: bounds under stronger hypotheses, a useful upper bound on the pressure that constrains the central value, and comparable bounds for solid objects such as planets, which "leads into the subject of 'anisotropic stars'".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-versus-construction">1. Bounds versus construction</h3>
+<p><strong>The idea.</strong> The corpus can construct perfect-fluid spheres algorithmically. This paper says what any such sphere must satisfy before the construction begins.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> says a general metric is carried by a frame field and none is determined. A static fluid sphere is the smallest case: two functions, restricted by inequalities. The article cannot state such a restriction, and this paper shows what the restriction looks like. It makes the boundary of the frame route visible in a two-function example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the passage on what the frame route does not supply.</p>
+<p><strong>What stands in the way.</strong> The bounds assume average density nonincreasing outwards, an assumption the construction does not impose. Ranked first, because it converts an unconstrained generator into a filtered one.</p>
+<h3 id="2-compactness-without-a-horizon">2. Compactness without a horizon</h3>
+<p><strong>The idea.</strong> The bound $2M/R\le8/9$ keeps a static sphere strictly larger than its horizon radius.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> is about what a horizon is. This paper gives a reason why a star cannot sit at its own horizon: the pressure would have to diverge. That is a dynamical statement about horizons that the ledger, which is mostly kinematic, does not contain.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of the Killing horizon.</p>
+<p><strong>What stands in the way.</strong> It requires the Einstein equations and an energy condition, so it is a statement the framework cannot derive. Ranked second.</p>
+<h3 id="3-sharpness-as-evidence-of-structure">3. Sharpness as evidence of structure</h3>
+<p><strong>The idea.</strong> Each bound is saturated by one known solution, so the inequality is not slack.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what fixes a number. Here a family of inequalities is fixed exactly, and the fixing solution is identified. It is a good example of a result whose content is a boundary rather than a value, a category the article's taxonomy omits.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> It is an illustration of method, not a framework claim. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

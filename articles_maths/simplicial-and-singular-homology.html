@@ -98,7 +98,7 @@ $$</p>
 $$</p>
 <p>where the hat omits the vertex; for $n = 0$ the boundary is $0$.</p>
 <p><strong>Lemma.</strong> $\partial \partial = 0$ on oriented simplices.</p>
-<p><em>Proof.</em> The terms of $\partial\partial[v_0,\ldots,v_n]$ are indexed by ordered pairs $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel.</p>
+<p><em>Proof.</em> The terms of $\partial\partial[v_0,\ldots,v_n]$ are indexed by ordered pairs $i &lt; j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel.</p>
 <p>This is the single computation that makes homology a functor; it is the simplicial instance of the general fact that a chain complex is a differential graded module, treated in the planned <em>Differential Graded Algebras</em> of Part I.</p>
 <h3 id="simplicial-homology">Simplicial Homology</h3>
 <p><strong>Definition.</strong> Let $K$ be a simplicial complex and $R$ a commutative ring with $1 \neq 0$. The <strong>simplicial chain module</strong> $C_n(K;R)$ is the free $R$-module on the oriented $n$-simplices of $K$, with the relation that reversing an orientation negates the generator; the boundary extends $R$-linearly to $\partial_n : C_n(K;R) \to C_{n-1}(K;R)$, and $\partial^2 = 0$. The <strong>simplicial homology</strong> is</p>
@@ -116,13 +116,13 @@ $$</p>
 C_n(X;R) = \bigoplus_{\sigma : \Delta_n \to X} R\,\sigma,
 $$</p>
 <p>the direct sum over all continuous maps.</p>
-<p><strong>Definition.</strong> The $i$-th <strong>face map</strong> is $\delta^i : \Delta_{n-1} \to \Delta_n$, the affine map sending $e_j$ to $e_j$ for $j < i$ and to $e_{j+1}$ for $j \geq i$; it identifies $\Delta_{n-1}$ with the facet opposite $e_i$. The <strong>boundary</strong> of a singular simplex is</p>
+<p><strong>Definition.</strong> The $i$-th <strong>face map</strong> is $\delta^i : \Delta_{n-1} \to \Delta_n$, the affine map sending $e_j$ to $e_j$ for $j &lt; i$ and to $e_{j+1}$ for $j \geq i$; it identifies $\Delta_{n-1}$ with the facet opposite $e_i$. The <strong>boundary</strong> of a singular simplex is</p>
 <p>$$
 \partial_n(\sigma) = \sum_{i=0}^n (-1)^i\, \sigma \circ \delta^i,
 $$</p>
 <p>extended $R$-linearly, and $\partial_0 = 0$.</p>
 <p><strong>Lemma.</strong> $\partial_{n-1} \circ \partial_n = 0$.</p>
-<p><em>Proof.</em> The composite is the sum over pairs $i,j$ of $(-1)^{i+j}\sigma \circ \delta^i \circ \delta^j$. The identities $\delta^i \delta^j = \delta^j \delta^{i-1}$ for $j < i$ pair the terms with $j < i$ against those with $j > i$, and the signs are opposite; the terms with $i = j$ do not occur since $\delta^i \delta^i$ is not defined.</p>
+<p><em>Proof.</em> The composite is the sum over pairs $i,j$ of $(-1)^{i+j}\sigma \circ \delta^i \circ \delta^j$. The identities $\delta^i \delta^j = \delta^j \delta^{i-1}$ for $j &lt; i$ pair the terms with $j &lt; i$ against those with $j &gt; i$, and the signs are opposite; the terms with $i = j$ do not occur since $\delta^i \delta^i$ is not defined.</p>
 <p><strong>Definition.</strong> The <strong>singular chain complex</strong> is the pair $(C_*(X;R), \partial_*)$; the <strong>singular homology</strong> is</p>
 <p>$$
 H_n(X;R) = \ker\partial_n / \operatorname{im}\partial_{n+1}.
@@ -158,9 +158,9 @@ $$</p>
 <p><strong>Corollary (excision, symmetric form).</strong> If $A, B$ are subspaces with $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ then the inclusion $(B, A \cap B) \hookrightarrow (X,A)$ induces isomorphisms in homology.</p>
 <p><strong>Corollary.</strong> For a CW pair $(X,A)$ the collapse $X \to X/A$ induces $H_n(X,A;R) \cong H_{\mathrm{red},n}(X/A;R)$, so the cellular computation of the previous article is a homology computation. In particular, for the $n$-disc pair $(D^n, S^{n-1})$,</p>
 <p>$$
-H_k(D^n, S^{n-1};R) \cong \begin{cases} R, & k = n, \\ 0, & k \neq n,\end{cases}
+H_k(D^n, S^{n-1};R) \cong \begin{cases} R, &amp; k = n, \\ 0, &amp; k \neq n,\end{cases}
 $$</p>
-<p>and hence $H_n(S^n;R) \cong R$ and $H_k(S^n;R) = 0$ for $0 < k < n$.</p>
+<p>and hence $H_n(S^n;R) \cong R$ and $H_k(S^n;R) = 0$ for $0 &lt; k &lt; n$.</p>
 <h3 id="mayervietoris">Mayer–Vietoris</h3>
 <p><strong>Theorem (Mayer–Vietoris).</strong> Let $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ for subspaces $A, B$. Then there is a long exact sequence</p>
 <p>$$

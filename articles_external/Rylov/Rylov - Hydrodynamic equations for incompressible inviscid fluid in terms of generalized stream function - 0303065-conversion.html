@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrodynamic Equations for Incompressible Inviscid Fluid in Terms of Generalized Stream Function — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamic equations for incompressible inviscid fluid in terms of generalized stream…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hydrodynamic-equations-for-incompressible-inviscid-fluid-in-terms-of-generalized-stream-function"><strong>Hydrodynamic Equations for Incompressible Inviscid Fluid in Terms of Generalized Stream Function</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0303065 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v7, 23 November 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>31 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Hydrodynamic equations for incompressible inviscid fluid in terms of generalized stream function - 0303065-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamic equations for incompressible inviscid fluid in terms of generalized stream function - 0303065.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamic equations for incompressible inviscid fluid in terms of generalized stream function - 0303065.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The one paper in this set with no quantum content. It writes the Euler equations for an ideal incompressible fluid in terms of Clebsch potentials and a generalized stream function, integrates the stationary two-dimensional case to a single equation for $\psi$, and finds that the resulting equation cannot be solved from the boundary data that hydrodynamics normally supplies. The finding is that vorticity must be given on the boundary as well as velocity, and that the theory of rotational flow has therefore never been properly posed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-equations">The two equations</h3>
+<p>Irrotational stationary two-dimensional flow obeys
+$$\psi_{xx}+\psi_{yy}=0,$$
+and rotational flow obeys
+$$\psi_{xx}+\psi_{yy}=\Omega(\psi),$$
+where "xx + ψ yy = Ω (ψ) (1.2) where Ω (ψ) is some function of argument ψ, describing the character and intensity of vorticity. The obtained equation distinguishes from (1.". Both are elliptic, and both need $\psi$ on the boundary $\Sigma$ for a unique solution — but the second needs more: "known. But the value of ψ on Σ does not admit one to determine the form of the function Ω (ψ). For determination of Ω (ψ) one needs some additional information, given on the boundary Σ. To state the problem"</p>
+<p>The conclusion he draws about the state of the subject is blunt: "Theory of rotational flows cannot exist without statement of this problem", and, since only single exact solutions are known, "It means that the theory of rotational flows does not exist."</p>
+<h3 id="why-it-was-missed">Why it was missed</h3>
+<p>His answer is that irrotational flow is the degenerate case and the degeneration hides the structure: "the irrotational flow is a special degenerate case of the rotational flow, when vorticity vanishes. Transition from the general case to the degenerate one is rather simple. The reverse transition from the degenerate case to the general one is much more difficult, because the general case contains additional information which is absent in the degenerate case." And the practical consequence: "ctically, we ignore dynamic equations (1.10) and boundary conditions for determination of vorticity. As a result we obtain imperfect theory, where some degrees of freedom are ignored."</p>
+<p>The interpretation offered is that "the fluid has more degrees of freedom, than it was believed", and he adds that "the vorticity is less observable quantity as compared with the velocity" — so the missing information is also the least accessible.</p>
+<h3 id="clebsch-potentials-are-not-optional">Clebsch potentials are not optional</h3>
+<p>A separate claim, stated as a discovery: "the effective description of the rotational flow cannot be carried out without introduction of the Clebsch potentials." In the contemporary literature "the Clebsch potentials are considered formally without connection" to the Jacobian technique that produced them, and he restores the connection.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rotational-flow-needs-vorticity-on-the-boundary">1. Rotational flow needs vorticity on the boundary</h3>
+<p><strong>The idea.</strong> A <strong>claim about well-posedness</strong>: for rotational two-dimensional flow the boundary data that determine a solution include the vorticity, and the standard statement of the problem omits it. An elliptic equation with an unknown function of $\psi$ in it is not determined by $\psi$ on the boundary.</p>
+<p><strong>What it would add.</strong> The corpus's hydrodynamics article writes dissipative equations in $\mathbb{B}$ and checks their causal structure; it does not examine whether its boundary-value problems are well posed. This paper says that in the inviscid rotational case they are not, and the reason is structural — the vorticity function is an extra unknown. For a corpus that derives fluid equations from a field equation, that is a question about what the derivation's boundary data should be, and it has never been asked.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is that the problem is not stated, not that a well-posed version is impossible; Rylov does not supply the missing boundary condition, only names the gap. And in the viscous case the difficulty may disappear, which would make it a statement about the idealisation rather than about fluids.</p>
+<h3 id="2-the-degenerate-case-hides-the-general-one">2. The degenerate case hides the general one</h3>
+<p><strong>The idea.</strong> A <strong>methodological observation with a worked example</strong>: irrotational flow is the degenerate case of rotational flow, and reasoning from the degenerate case loses the extra information the general one carries. This is the same argument he makes about Euclidean geometry, and here it is checkable.</p>
+<p><strong>What it would add.</strong> The corpus has an article on which of its elements are fundamental and which derived, and its derivations typically start from a general object (a bispinor) and degenerate it. This paper is a cautionary case: passing from general to degenerate is safe, and the return trip is where information is lost. That is a precise statement the corpus's own derivations could be audited against.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is supported by one example, and the example's loss is the unknown function $\Omega(\psi)$ — a specific object, not a general principle. Whether the corpus's degenerate limits lose anything comparable is not addressed and would need checking case by case.</p>
+<h3 id="3-clebsch-potentials-as-the-honest-variables">3. Clebsch potentials as the honest variables</h3>
+<p><strong>The idea.</strong> The velocity field is not the primary variable of a rotational flow; the Clebsch potentials are, and the stream function is one of them. A <strong>representation</strong> claim, and Rylov's use of it is that the potentials make the vorticity an independent object.</p>
+<p><strong>What it would add.</strong> The corpus's fluids are written in polar variables — a density, a phase, and angles — which is a Clebsch-like decomposition, and its spin-half fluid article notes the correspondence to Takabayasi's tensor set. Reading the polar decomposition as a Clebsch representation would connect the corpus's variables to a classical integrability technique with a long history, and the connection is exact enough to state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is formal: the corpus's phase is a Clebsch potential for the irrotational part, but the spin contribution is not a Clebsch potential in the classical sense, so the correspondence covers only part of the field content.</p>
+<p>The rank: well-posedness first, because it is a concrete gap with a diagnosis; the degenerate-case lesson second, because it audits the corpus's method; Clebsch potentials last, because it is a representation with a partial match.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

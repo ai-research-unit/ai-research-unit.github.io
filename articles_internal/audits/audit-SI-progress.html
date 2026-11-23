@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit SI — Repair Progress — Biquaternion Universe</title>
+  <meta name="description" content="Baseline (measured 2026-11-23, before any edit): M-eV 5/3, E-eV 634/68, L-nonm 80/17, T-nons 4/1, M-nonkg 2/1, union 75.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-si-repair-progress">Audit SI — Repair Progress</h1>
+<p>Baseline (measured 2026-11-23, before any edit): M-eV 5/3, E-eV 634/68, L-nonm 80/17, T-nons 4/1, M-nonkg 2/1, union 75.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>lines repaired</th>
+<th>before (file classes)</th>
+<th>after</th>
+<th>union</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code></td>
+<td>8</td>
+<td>M-eV 3, E-eV 2</td>
+<td>clean</td>
+<td>74</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>energy-and-information-four-conservation-laws-from-one-identity</code></td>
+<td>10</td>
+<td>M-eV 1, E-eV 10</td>
+<td>clean</td>
+<td>73</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation</code></td>
+<td>1</td>
+<td>M-eV 1, E-eV 1</td>
+<td>clean</td>
+<td>72</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code></td>
+<td>21</td>
+<td>T-nons 4, E-eV 8</td>
+<td>clean</td>
+<td>71</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>the-three-wavenumbers-of-a-particle</code></td>
+<td>86</td>
+<td>E-eV 45, L-nonm 39, M-nonkg 2</td>
+<td>clean</td>
+<td>70</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure</code></td>
+<td>29</td>
+<td>L-nonm 17, E-eV 7</td>
+<td>clean</td>
+<td>69</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code></td>
+<td>3</td>
+<td>L-nonm 3</td>
+<td>clean</td>
+<td>68</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>spin-hydrodynamics-in-biquaternionic-form</code></td>
+<td>4</td>
+<td>L-nonm 2, E-eV 2</td>
+<td>clean</td>
+<td>67</td>
+</tr>
+<tr>
+<td>9-18</td>
+<td><code>relativistic-mechanics-from-the-dirac-wave</code>, <code>the-dirac-equation-in-biquaternionic-polar-variables</code>, <code>the-double-slit-experiment-in-biquaternionic-form</code>, <code>the-electron-in-biquaternionic-form</code>, <code>the-quantum-classical-divide-in-the-biquaternion-framework</code>, <code>wave-particle-duality-and-the-fourier-transform</code>, <code>the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form</code>, <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code>, <code>the-non-quantum-limit-of-the-biquaternion-model</code>, <code>the-pmns-matrix-and-lepton-mixing</code></td>
+<td>27</td>
+<td>L-nonm 11, E-eV 22</td>
+<td>clean</td>
+<td>59</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

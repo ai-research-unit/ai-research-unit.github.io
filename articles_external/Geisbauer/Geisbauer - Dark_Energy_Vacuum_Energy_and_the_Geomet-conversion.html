@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Energy, Vacuum Energy, and the Geometric Structure of Spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_Vacuum_Energy_and_the_Geomet.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dark-energy-vacuum-energy-and-the-geometric-structure-of-spacetime"><strong>Dark Energy, Vacuum Energy, and the Geometric Structure of Spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joerg Geisbaauer, as printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>May 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Dark_Energy_Vacuum_Energy_and_the_Geomet-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_Vacuum_Energy_and_the_Geomet.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_Vacuum_Energy_and_the_Geomet.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Places the universe inside a spherical two-surface and reads the cosmological constant as the inverse of its area, so that the vacuum-energy ratio becomes the number of Planck areas that tile that surface. Four numbers are computed from $R=1.3\times10^{26}\,\mathrm{m}$: the area, the Planck-area count $8\times10^{122}$, the product $\Lambda\rho_\Lambda$ read as a tension, and the Schwarzschild radius of $10^{53}$ kg. The author labels the count "not an unambiguous proof—rather, it is an intriguing numerical coincidence", which is the most careful statement in this batch.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-identification">The identification</h3>
+<p>With $A=4\pi R^2\approx2.1\times10^{53}\ \mathrm{m^2}$, the paper writes
+$$\Lambda=\frac{1}{A}$$
+"in suitably chosen units", because $[\Lambda]=\mathrm{m^{-2}}$ and "a surface area also has the unit of m2 , it is suggestive to identify 1 Λ = (in suitably chosen units).". Read: "a global spherical 'horizon' exerts an effective tension that permeates the entire 3D volume", with
+$$\Lambda=8\pi G\rho_\Lambda\quad\Longrightarrow\quad\rho_\Lambda=\frac{\Lambda}{8\pi G}.$$</p>
+<h3 id="the-two-densities">The two densities</h3>
+<p>The observed dark-energy density is taken as $\rho_\Lambda\approx4.8\times10^{-10}\ \mathrm{J\,m^{-3}}$, and the QFT estimate as
+$$\rho_{\rm Planck}\approx\frac{c^7}{\hbar G^2}\approx5\times10^{113}\ \mathrm{J\,m^{-3}},$$
+Hence, the ratio is $\rho_{\rm Planck}/\rho_\Lambda\approx10^{122}$.</p>
+<h3 id="the-count">The count</h3>
+<p>$$N_{Pl}=\frac{A}{A_{Pl}}\approx\frac{2.1\times10^{53}}{2.6\times10^{-70}}\approx8\times10^{122},$$
+with $A_{Pl}=\ell_{Pl}^2\approx2.6\times10^{-70}\ \mathrm{m^2}$. So "the enormous Planck energy density is 'compensated' across the 3D volume, leaving effectively only one unit of vacuum energy per Planck area on the 2D boundary".</p>
+<h3 id="the-tension-and-the-horizon-test">The tension, and the horizon test</h3>
+<p>$[\Lambda\rho_\Lambda]=\mathrm{J\,m^{-5}}$, "a kind of tension that spans space", numerically $5.3\times10^{-62}\ \mathrm{J\,m^{-5}}$; distributing the energy over the boundary gives $E_{\rm surface}=\Lambda\rho_\Lambda R/3\approx2.3\times10^{-36}\ \mathrm{J\,m^{-2}}$. For $M\approx10^{53}$ kg, $R_s=2GM/c^2\approx1.5\times10^{26}$ m against $R\approx1.3\times10^{26}$ m, and the paper adds the caution that "the cosmic horizon is not necessarily the same as a black hole's event horizon in an asymptotically flat spacetime".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math28-as-an-inverse-area-with-one-order-unity-constant">1. $\Lambda$ as an inverse area with one order-unity constant</h3>
+<p><strong>The idea.</strong> $\Lambda=1/A$ turns a density problem into a counting problem: the ratio $10^{122}$ becomes $A/A_{Pl}$, a ratio of two areas. This is a <strong>formula</strong>, and the cleanest of the batch, because both sides are geometric.</p>
+<p><strong>What it would add.</strong> A definition of $\Lambda$ that does not require a vacuum energy at all — a boundary condition in place of a source. The corpus's cosmology article concludes that the source Friedmann needs cannot be formed; a boundary term is a different kind of object and might not need forming.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> Two numbers in the paper do not sit together: with $\Lambda=1/A=4.8\times10^{-54}\ \mathrm{m^{-2}}$ and $\rho_\Lambda=4.8\times10^{-10}$, the product is $2.3\times10^{-63}$, not the printed $5.3\times10^{-62}$; the printed value needs $\Lambda\approx1.1\times10^{-52}$, the standard one. So §7 uses a $\Lambda$ that is 23 times the §3 $\Lambda$. One of the two is not the paper's own.</p>
+<h3 id="2-the-schwarzschild-radius-of-the-mass-budget">2. The Schwarzschild radius of the mass budget</h3>
+<p><strong>The idea.</strong> $10^{53}$ kg gives $1.5\times10^{26}$ m against a horizon at $1.3\times10^{26}$ m — a factor 1.15. The paper is explicit that this is an order-of-magnitude remark and not a derivation, and it is right to be: the mass budget includes the dark energy it is meant to explain.</p>
+<p><strong>What it would add.</strong> A consistency check that a corpus with a horizon article but no global structure cannot perform.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, which distinguishes the three things the word "horizon" names and records that the framework reaches only the local one. </p>
+<p><strong>What stands in the way.</strong> The agreement is a coincidence of two order-one factors; the mass within the Hubble radius is not the mass of a Schwarzschild source, and the paper says so itself. </p>
+<h3 id="3-math43-as-a-tension">3. $\Lambda\rho_\Lambda$ as a tension</h3>
+<p><strong>The idea.</strong> The product of the two cosmological numbers is offered as a "spatial tension" in $\mathrm{J\,m^{-5}}$. No equation of motion uses it, and its value inherits the inconsistency above.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-equation-of-state-in-biquaternion-form.md</code> is the only place a pressure-like object could enter.</p>
+<p><strong>What stands in the way.</strong> A product of a parameter with a density is not a stress; $\mathrm{J\,m^{-5}}$ is a gradient of a pressure, and nothing in the paper differentiates anything. Refused as a unit-reading, not as physics.</p>
+<p>The rank is a judgement: the inverse-area law first, because it is a formula with no free parameter once $R$ is chosen; the horizon number second, as a check; the tension not at all.</p>
+<p>This is a seven-page paper; the surface, the inverse-area identification, the two densities, the Planck-area count, the tension, the horizon test and a conclusion in six points are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

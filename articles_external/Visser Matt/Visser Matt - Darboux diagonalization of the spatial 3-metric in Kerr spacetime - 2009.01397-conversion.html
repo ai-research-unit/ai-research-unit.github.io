@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darboux diagonalization of the spatial 3-metric in Kerr spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Darboux diagonalization of the spatial 3-metric in Kerr spacetime -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="darboux-diagonalization-of-the-spatial-3-metric-in-kerr-spacetime"><strong>Darboux diagonalization of the spatial 3-metric in Kerr spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2009.01397v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Thomas Berry, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 September 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Darboux diagonalization of the spatial 3-metric in Kerr spacetime - 2009.01397-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Darboux diagonalization of the spatial 3-metric in Kerr spacetime - 2009.01397.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Darboux diagonalization of the spatial 3-metric in Kerr spacetime - 2009.01397.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A classical theorem of Darboux says every three-dimensional metric can be put in diagonal form. Boyer–Lindquist coordinates do this for the spatial slices of Kerr. The paper shows a no-go result: one cannot simultaneously have a diagonal spatial three-metric, unit lapse, and manifest axial symmetry in Kerr. The result is specific to Kerr, but the authors note that unit-lapse spacetimes are common in analogue models and that rain geodesics follow immediately from the unit-lapse property, which is why the combination is worth wanting.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-facts">The two facts</h3>
+<p>"Of the currently known exact solutions to the Einstein field equations, the Kerr spacetime stands out in terms of its direct applicability to describing astronomical black hole candidates. In counterpoint, purely mathematically, there is an old classical result of differential geometry, due to Darboux, that all 3-manifolds can have their metrics recast into diagonal form. In the case of the Kerr spacetime the Boyer–Lindquist coordinates provide an explicit example of a diagonal spatial 3-metric."</p>
+<h3 id="the-no-go-result">The no-go result</h3>
+<p>"Unfortunately, as we demonstrate herein, Darboux diagonalization of the spatial 3-slices of the Kerr spacetime is incompatible with simultaneously putting the Kerr metric into unit-lapse form while retaining manifest axial symmetry."</p>
+<h3 id="the-comparison">The comparison</h3>
+<p>"This no-go theorem is somewhat reminiscent of the no-go theorem to the effect that the spatial 3-slices of the Kerr spacetime cannot be chosen to be conformally flat."</p>
+<h3 id="the-wider-relevance">The wider relevance</h3>
+<p>"the various ingredients that go into the discussion have a very much wider realm of applicability. For instance, the unit-lapse spacetimes occur quite commonly and very naturally in many specific examples of analogue spacetimes. In an analogue spacetime context the unit lapse condition physically corresponds to a constant signal propagation speed."</p>
+<h3 id="why-unit-lapse-is-wanted">Why unit lapse is wanted</h3>
+<p>"Astrophysically, unit lapse versions of stationary spacetimes, (even if they are not vacuum solutions of the Einstein equations), are extremely useful in [that] they immediately provide an enormous class of timelike geodesics, the 'rain geodesics'. These correspond to the zero angular momentum observers, ZAMOs, that are dropped from spatial infinity with zero initial velocity and zero angular momentum."</p>
+<h3 id="the-status-of-the-result">The status of the result</h3>
+<p>"On the one hand, this no-go theorem is a very specific mathematical result specifically for the Kerr spacetime."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-three-desirable-properties-that-cannot-coexist">1. Three desirable properties that cannot coexist</h3>
+<p><strong>The idea.</strong> Diagonal spatial metric, unit lapse, and axial symmetry can each be had, but not together.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code> works within a chart that has some of these properties and not others. This no-go theorem says exactly which combinations are available, which is the kind of constraint a sub-class article needs to state precisely.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code>, in the definition of the sub-class.</p>
+<p><strong>What stands in the way.</strong> The result is specific to Kerr. Ranked first, because it delimits the article's own object.</p>
+<h3 id="2-unit-lapse-gives-free-geodesics">2. Unit lapse gives free geodesics</h3>
+<p><strong>The idea.</strong> Setting the lapse to one makes the coordinate lines geodesics, so a large family of trajectories is read off rather than computed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> has no geodesic equation. A chart in which geodesics are visible by inspection is a partial substitute, and the article should record it as such.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of dynamics.</p>
+<p><strong>What stands in the way.</strong> The trick works for stationary metrics and not in general. Ranked second.</p>
+<h3 id="3-no-go-results-about-charts">3. No-go results about charts</h3>
+<p><strong>The idea.</strong> Some coordinate conveniences are mutually exclusive, and the exclusion is a theorem.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects obstructions. This is an obstruction of a different type, about presentations rather than about objects, and the catalogue should distinguish them.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a category distinction. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

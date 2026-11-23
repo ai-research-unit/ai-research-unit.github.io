@@ -342,33 +342,33 @@ text = open('physics.md').read()
 for name in ['Biquaternion Quantum Fields',
              'Biquaternion Particle Physics']:
     sec = re.search(r'(?ms)^## ' + re.escape(name) + r'\n(.*?)^## ', text).group(1)
-    slugs = re.findall(r'href=&quot;articles_physics/([^&quot;]+)\.html&quot;', sec)
+    slugs = re.findall(r'href="articles_physics/([^"]+)\.html"', sec)
     ok = all(os.path.exists(f'articles_physics/{s}.md') for s in slugs)
     print(name, '|', len(slugs), '| all files exist:', ok)
 PY
 </code></pre>
 <p>The output is <code>Biquaternion Quantum Fields | 63 | all files exist: True</code> and <code>Biquaternion Particle Physics | 83 | all files exist: True</code>.</p>
 <p><strong>Two: the quoted sentence and its location.</strong> This prints line 390 of the one-particle summary, inside the section <em>Three things the category refuses</em>.</p>
-<pre><code class="language-bash">grep -n &quot;the second quantisation is the next category&quot; \
+<pre><code class="language-bash">grep -n "the second quantisation is the next category" \
   articles_internal/internal-summary-of-the-biquaternion-relativistic-quantum-theory.md
 </code></pre>
 <p><strong>Three: the digest's silence.</strong> This returns <code>0</code>: the standalone digest contains no occurrence of <em>Fock</em>, <em>creation</em>, <em>annihilation</em> or <em>Standard Model</em>, in any case.</p>
-<pre><code class="language-bash">grep -c -i -E &quot;fock|creation|annihilation|standard model&quot; articles_physics/ai-physics-review.md
+<pre><code class="language-bash">grep -c -i -E "fock|creation|annihilation|standard model" articles_physics/ai-physics-review.md
 </code></pre>
 <p><strong>Four: the corpus's own disclaimer of a complete reformulation.</strong> This prints line 35 of the empirical-status article.</p>
-<pre><code class="language-bash">grep -n &quot;does not reformulate the Standard Model&quot; \
+<pre><code class="language-bash">grep -n "does not reformulate the Standard Model" \
   articles_physics/the-empirical-status-of-the-biquaternion-framework.md
 </code></pre>
 <p><strong>Five: the bosonic obstruction.</strong> The Fock-space article states the gap, and the Klein–Gordon quantisation article states the trace argument.</p>
-<pre><code class="language-bash">grep -n &quot;no Fock space in&quot; \
+<pre><code class="language-bash">grep -n "no Fock space in" \
   articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md
-grep -n &quot;no bosonic mode&quot; \
+grep -n "no bosonic mode" \
   articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.md
 </code></pre>
 <p>The first prints line 13, where the statement is bold. The second prints line 309, the notation row that reads $2\,\mathrm{Sc}(e_t)=2$ beside $2\,\mathrm{Sc}([\tilde Q_2,\tilde Q_1])=0$.</p>
 <p><strong>Six: the family's ceiling, in public.</strong> This prints the bridge's boundary sentence.</p>
-<pre><code class="language-bash">grep -n &quot;does not take the third&quot; articles_physics/the-lagrangian-and-the-second-quantisation.md
-grep -n &quot;It forbids calling the family&quot; articles_physics/the-lagrangian-and-the-second-quantisation.md
+<pre><code class="language-bash">grep -n "does not take the third" articles_physics/the-lagrangian-and-the-second-quantisation.md
+grep -n "It forbids calling the family" articles_physics/the-lagrangian-and-the-second-quantisation.md
 </code></pre>
 <p><strong>What the commands cannot show.</strong> They show that the articles exist and that the quotes are where this note says they are. They do not show that the articles are correct. That is a separate question, and it is the one the corpus answers in the "what was checked" section of each article.</p>
 <p><strong>On the trace argument.</strong> The obstruction is usually written as $\mathrm{Tr}[A,B]=0$ in a matrix algebra. The corpus writes it in its own terms: the scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$. For $\mathbb{B}\cong M_2(\mathbb{C})$ the scalar part is half the trace, so the two are the same argument. The corpus's form is the one native to the framework.</p>

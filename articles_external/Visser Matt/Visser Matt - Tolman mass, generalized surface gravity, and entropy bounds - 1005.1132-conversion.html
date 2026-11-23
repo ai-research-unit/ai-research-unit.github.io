@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolman mass, generalized surface gravity, and entropy bounds — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman mass, generalized surface gravity, and entropy bounds - 1005.1132.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tolman-mass-generalized-surface-gravity-and-entropy-bounds"><strong>Tolman mass, generalized surface gravity, and entropy bounds</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1005.1132v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 June 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Tolman mass, generalized surface gravity, and entropy bounds - 1005.1132-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman mass, generalized surface gravity, and entropy bounds - 1005.1132.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Tolman mass, generalized surface gravity, and entropy bounds - 1005.1132.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors rewrite the Tolman mass in a static spacetime as a flux integral. The integrand is a generalised surface gravity. This links quasi-local mass to the acceleration of static observers. From there they derive entropy bounds that separate a geometric part from a matter part. The result connects black hole thermodynamics to the thermodynamics of ordinary static matter.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-reduction">The reduction</h3>
+<p>"In any static spacetime the quasi-local Tolman mass contained within a volume can be reduced to a flux integral of (generalized) surface gravity across the boundary of the region"</p>
+<h3 id="the-context">The context</h3>
+<p>"(This is closely related to the classical laws of black hole mechanics.)"</p>
+<h3 id="the-observers">The observers</h3>
+<p>"the 4-acceleration of these FIDOs"</p>
+<p>$$A^a=(\nabla_V V)^a=V^b\nabla_b V^a=\sqrt{|g_{00}|}\,\Gamma^a{}_{00}\qquad (paper\ 5)$$</p>
+<h3 id="the-entropy-split">The entropy split</h3>
+<p>$$S(\Omega)=S(B)+\int_{\Omega-B}\sqrt{g_3}\,s\,d^3x\qquad (paper\ 47)$$</p>
+<h3 id="the-division">The division</h3>
+<p>"which we have divided into a geometrical ent[ropy and a matter entropy]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-temperature-is-an-acceleration">1. Temperature is an acceleration</h3>
+<p><strong>The idea.</strong> Surface gravity is the redshifted acceleration of static observers.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses surface gravity as a temperature. This paper shows it is a kinematical quantity across any static region, not only at a horizon.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of surface gravity.</p>
+<p><strong>What stands in the way.</strong> Only static regions are covered. Ranked first, because it generalises the target's key quantity.</p>
+<h3 id="2-entropy-has-two-parts">2. Entropy has two parts</h3>
+<p><strong>The idea.</strong> Total entropy splits into a boundary term and a bulk term.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the horizon entropy as primary. A bulk contribution changes the bookkeeping.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of entropy.</p>
+<p><strong>What stands in the way.</strong> The split depends on the foliation. Ranked second.</p>
+<h3 id="3-mass-as-a-flux">3. Mass as a flux</h3>
+<p><strong>The idea.</strong> Enclosed mass can be written as a surface integral.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain a conserved quantity defined on a surface.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conservation laws.</p>
+<p><strong>What stands in the way.</strong> The identity holds only in static spacetimes. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

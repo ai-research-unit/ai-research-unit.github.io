@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Object Does the Wave Function Describe? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - What object does the wave function describe - 0405117.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-object-does-the-wave-function-describe"><strong>What Object Does the Wave Function Describe?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0405117 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 9 November 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - What object does the wave function describe - 0405117-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - What object does the wave function describe - 0405117.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - What object does the wave function describe - 0405117.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Answers its title with an argument rather than a preference: the wave function describes a statistical ensemble or the statistical average particle, and the individual-particle reading is incompatible with the formalism. The argument is that in the classical limit the Schrödinger equation goes over into the dynamic equations of an ensemble of classical particles, which would be impossible if the wave function described one particle. He then does something more interesting than winning the interpretive point: he inverts which object is fundamental in dynamics, making the continuous average system primary and the discrete particle its degenerate case.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-readings-and-the-test">The two readings, and the test</h3>
+<p>"By definition the quantum system $S_{q}$ is a continuous dynamic system, whose state is described by the wave function. There are two different opinions about the quantum system $S_{q}$. Is the quantum system $S_{q}$ an individual dynamic (or stochastic) system $S$, or is it a statistical ensemble $E[S]$ of dynamic (or stochastic) systems $S$?" the conventional Copenhagen interpretation "of quantum mechanics $S_{q}=S$, whereas in" another version, what is known as statistical interpretation ", $S_{q}=E[S]$." His complaint about the debate is that it has been conducted without the formalism:"Discussion on this subject lasts many years on the verbal level without a visible progress." And the test he proposes is the classical limit: "hat in the classical limit h̄ = 0 the Schrödinger equation turns to the dynamic equations for the statistical ensemble of classi- cal particles. The statement that the wave function describes the state of an individual particle is incompatible with the quantum mechanics formalism. It"</p>
+<h3 id="why-the-action-settles-it">Why the action settles it</h3>
+<p>The decisive property is homogeneity in the density:"e action (1.3) possesses the main property of the statistical ensemble action AE AE [aρ, ." with $A_{E}[a\rho,\dots]=aA_{E}[\rho,\dots]$, $a=\mathrm{const}&gt;0$, "3.2) 8 where ρ is the density of elements (particles) in the statistical ensemble. In the case of the action (1.3) ρ = ψ ∗ ψ, and the action (1.".</p>
+<p>"e property (3.2) describes the fact that elements (particles) of the statistical ensemble are independent. The action of any quantum system has the property (3.2), because it is always bilinear with respect to the wave function ψ. The property (3." And the consequence he draws: "The statistical interpretation of quantum mechanics is conditioned by the special formalism which distinguishes from the orthodox QM technique. This formalism, generating the statistical interpretation, is the statistical ensemble technique (SET)."</p>
+<h3 id="the-inversion">The inversion</h3>
+<p>"Conventionally in the classical dynamics the discrete dynamic system $S_{cl}$ (individual particle) is considered to be the principal object of dynamics." He proposes the reverse: "a situation the continuous dynamic system hScl i may be considered to be the principal object of classical dynamics. Then the discrete dynamic system Scl may be regarded as a derivative object: the partial case of the statistical average dynamic system hScl i, when distributions of all quantities in hScl i are δ-like. Such a redefinition of the concept"</p>
+<p>The gain is a uniform definition: "In the dynamics of stochastic systems Sst the principal object of dynamics is the statistical average system hSst i, because Sst is not a dynamic system, and it cannot be an object of dynamics, whereas the statistical average system hSst i is always a continuous dynamic system.". Making the average primary in the classical case too gives one definition across both, and "allows one to consider the classical dynamics as a partial case of the stochastic dynamics (dynamics of stochastic systems), which appears, when the stochasticity intensity vanishes."</p>
+<h3 id="the-analogy-he-uses">The analogy he uses</h3>
+<p>"rticles. Any gas particle consists of N molecules (N → ∞) and has formally 6N degrees of freedom, but the gas dynamics ignores all these degrees of freedom except for those six of them, which describe the motion of the gas particle as a whole. Although" Hence "one may say, that the gas particle is the ''statistical average molecule''."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-statistical-average-object-as-the-primary-one">1. The statistical-average object as the primary one</h3>
+<p><strong>The idea.</strong> A <strong>redefinition</strong>: in any dynamics the primary object is the continuous statistical average, and the individual particle is the limiting case where all distributions are $\delta$-functions. The classical single particle is thus a degenerate ensemble, not an ensemble a derived thing.</p>
+<p><strong>What it would add.</strong> The corpus quantises a field and reads its solutions as one-particle states; the single particle is primary and the ensemble is built from it. The inversion reverses the construction, and it is cheap to state: the corpus's own density $\rho$ would become a parameter of the basic object rather than a probability computed from it. It also gives a reason why a continuous field, rather than a point, is the natural carrier.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> The inversion is a choice of description. A $\delta$-distribution is a legitimate element of the average space, so nothing observable changes; the claim is about which object the equations are written for, and physical content is indifferent to it.</p>
+<h3 id="2-homogeneity-in-the-density-as-the-ensemble-signature">2. Homogeneity in the density as the ensemble signature</h3>
+<p><strong>The idea.</strong> A <strong>test</strong>: an action is an ensemble action if and only if it scales linearly with the element density, $A[a\rho]=aA[\rho]$, and bilinearity of the quantum action in $\psi$ is exactly this property.</p>
+<p><strong>What it would add.</strong> The corpus's Born rule is imposed; this is a structural reason for a density at all — the action must be extensive in the number of elements. That is a different justification from the ones the states-and-observables article considers, and it is one the article could adopt without changing any formula, because $\rho=\psi^{*}\psi$ already satisfies it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> Extensivity is satisfied by any density, including ones that give different statistics, so it selects the form of the action and not the rule. It explains why a density appears, not why this one.</p>
+<h3 id="3-the-gas-particle-as-a-statistical-average-molecule">3. The gas particle as a statistical average molecule</h3>
+<p><strong>The idea.</strong> An <strong>analogy</strong> with a physical instance: a gas "particle" is a volume containing $N\to\infty$ molecules, its motion is deterministic although the molecular motion is random, and its six degrees of freedom are the only ones retained.</p>
+<p><strong>What it would add.</strong> The corpus's fluids are usually formal — a field rewritten in hydrodynamic variables. This is a case where the fluid object is a real coarse-graining of a real microscopic system, which gives the corpus's fluid language a referent and a scale. It also shows what a successful reduction looks like when the microscopic motion is genuinely random, which is the case the corpus's deterministic base does not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The analogy supports the claim that the average is deterministic but says nothing about phases or interference, which is where quantum mechanics differs from gas dynamics. The corpus's quantum fluid needs the phase, and a gas particle has none.</p>
+<p>The rank: the statistical-average inversion first, because it is a structural proposal; the homogeneity test second, because it is checkable; the gas analogy last, because it stops short of phase.</p>
+<p>The remaining items in one line each: the SET formalism as a generalisation of quantum technique obtained by dropping the quantum principles, which is the same move as the model conception everywhere else in this set; the observation that the quantum action stays bilinear even when the resulting equation is nonlinear, which is what allows the ensemble reading to survive; and the conclusion that $\hbar$ enters as the coefficient that sets the size of the stochastic component, which recurs in 0403077 and 0603237.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

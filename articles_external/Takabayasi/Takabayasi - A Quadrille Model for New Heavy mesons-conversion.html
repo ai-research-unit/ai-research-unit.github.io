@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Quadrille Model for New Heavy Mesons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Quadrille Model for New Heavy mesons.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-quadrille-model-for-new-heavy-mesons"><strong>A Quadrille Model for New Heavy Mesons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>53</strong> (1975) 1863, No. 6; dated 28 February 1975</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - A Quadrille Model for New Heavy mesons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Quadrille Model for New Heavy mesons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Quadrille Model for New Heavy mesons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes that the newly found narrow bosons $\psi(3105)$ and $\psi(3695)$ are not charmonium but closed <em>rings</em>: two ordinary mesons laid side by side with their ends joined by strings, giving a square loop of four string segments binding alternating quarks and antiquarks. This explains the masses additively — $m_\psi\simeq4m_\omega$, $m_{\psi'}\simeq2(m_\omega+m_\varphi)$, $m_{\psi''}\simeq4m_\varphi$ — against measured $3135$, $3607$, $4058$ MeV, needs no heavy quark, and accounts for the narrow widths by a conservation law for the number of closed rings.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-configuration">The configuration</h3>
+<p>"en discovered, l&gt; and moreover a to those configurations having the common broad resonance &lt;/J" at the mass m "-4.15 Ge V ·values of quantum numbers. (See below.) has been reported also in e+e- annihila- (i) For definiteness we assume that the tion.2&gt; The popular hypothesis that &lt;/J and spins of quarks and antiquarks are all &lt;/J' should be bound states of charmed parallel, with the resultant spin S=2 quark p' and its antiquark is a rather (" ferromagnetic state ") and that they align plausible one but it implies the introduc- in the direction normal to the configuration tion of a disproportionately heavy p'. In plane. Further we assume that the whole this note we pro."</p>
+<p>"estricted in this way but we assume the the usual quark model except· that we in- same L values.) Then parity and charge troduce a string.": an $\omega$ is a quark bound to its antiquark by a string with parallel spins, zero relative orbital momentum and vanishing isospin, a $\varphi$ the same with $\Lambda$, $\bar\Lambda$. "In these cases the string itself has zero system is J = 1. · Thus. we have three JPO angular ··momentum."</p>
+<p>"der a configuration where (a), (b) and (c) with &lt;/J, &lt;/J' and &lt;/J", re- two of such w's or if&gt;'s, or an w and a ¢, spectively. lie side by side with the opposite direc- In the quark-string model we consider tions. and their resp~ctive ends are then in general that the mass of the system joined by strings. The result is, speaking originates essentially from the string's mo- in the classical language, a plane square " " re regular quadrate February 28, 1975 structures, which are symmetric against a rr/2 rotation in the configuration plane fol- Recently massive neutral bosons &lt;/J (3105) lowed by charge conjugation."</p>
+<h3 id="quantum-numbers">Quantum numbers</h3>
+<p>For definiteness we assume that the spins of quarks and antiquarks are all parallel, with the resultant spin $S=2$ ('ferromagnetic state') and that they align in the direction normal to the configuration plane. Further we assume that the whole structure rotates rigidly. Taking the case (a) (or (c)) the (total) orbital angular momentum of this rotation must have an odd quantum number $L=1,3,\dots$, since the two $p$-quarks (or two $\bar p$) are in the same spin state. Then parity and charge parity of the system are $P=-1$ and $C=G=-1$. Further we assume an LS-coupling that favors an antiparallel $L$ and $S$ configuration. Then, if we take the lowest value $L=1$ for the ground state, the spin $J$ of the system is $J=1$. Thus we have three $J^{PC}=1^{--}$ isosinglets. We identify the states (a), (b) and (c) with $\psi$, $\psi'$ and $\psi''$, respectively.</p>
+<h3 id="masses-by-additivity">Masses by additivity</h3>
+<p>"essentially from the string's mo- in the classical language, a plane square tion, while quarks do not contribute to the loop of string binding the alternating quark mass of their own system but affect it' and antiquark. Such a configuration has through their interaction with the string. three isosinglet varieties. (See Fig. 1.) More specifically we make a naive and Downloaded from https://academic.oup.com/ptp/article-abstract/53/6/1863/1907914 by guest on 26 July 2018 1864 Letters to the Editor' ){ Y pretation s, on the basis of essentfally the ~II same model. (ii) As in (i) we continue to take the ferromag netic state (8=2), but now we . (a) (b) (c) adopt the configutation (a) in Fig.l alone Fig. 2." $m_{\psi'}\simeq2(m_\omega+m_\varphi)$, "mass rela- we now take the" antiferr omagne tic state "tions are fairly well satisfied: -Empirically in which the direction s of quark and anti- 4m.,=31 35 MeV, 2(m."</p>
+<h3 id="stability-from-counting-rings">Stability from counting rings</h3>
+<p>For strong interactions we assume an approximate conservation law of number $N$ of closed rings, besides the ordinary selection rules of strong interactions. Then the strong decays of $\psi$ and $\psi'$ into ordinary hadrons ($N=1\to N=0$) are suppressed, while the decay $\psi'\to\psi\pi\pi$ is not suppressed because it conserves $N$ (though its width is small by phase space). Other typical strong decay modes are $\psi\to\omega\pi\pi$ and $\psi'\to KK\pi\pi$, which are suppressed by the $N$ selection rule.</p>
+<p>A footnote adds: "y of 1/J and 1/J', 2) J.-E. Augustin et al., preprint (1975). having a closed ring structure, against strong 3) Y. Nambu, preprint (1970).' decays may also be qualitatively understood T. Takabayasi, Soryusiron Kenkyu (mimeo~ just from the fact that for a decay of them graphed circular"</p>
+<h3 id="the-alternatives">The alternatives</h3>
+<p>"As in (i) we continue to take the ferromagnetic state ($S=2$), but now we adopt the configuration (a) alone and consider its $L=1$ and $L=3$ states of rotation ... both states certainly have $J=1$, and we identify them with $\psi$ and $\psi'$ respectively", with a selection rule allowing the quark diagram responsible for $\psi'\to\psi\pi\pi$ and forbidding the one for decay into ordinary mesons.</p>
+<p>Instead of the ferromagnetic state we now take the 'antiferromagnetic state' in which the directions of quark and antiquark spins alternate such that $S=0$. Each of the four strings again ends in an isosinglet quark-antiquark pair, $\eta$ or $\eta'$; with $L=1$ rotation the quantum numbers $J^{PC}$ are still $1^{--}$, and there are again three varieties. In this case the same rule as in (i) gives their masses somewhat smaller values than in (i).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-string-length-and-it-adds">1. Mass is string length, and it adds</h3>
+<p><strong>The idea.</strong> Quarks contribute no mass of their own; the mass of a hadron is the sum of the masses of its constituent strings, and a composite of two mesons sharing a closed string has the sum of the two meson masses. Then $4m_\omega$, $2(m_\omega+m_\varphi)$, $4m_\varphi$ follow, and the three states are predicted in the right order and roughly the right places with no new quantum.</p>
+<p><strong>What it would add.</strong> A mass rule additive in <em>segments</em>. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) records in §<em>The Trace Anomaly, and Where the Mass Sits</em> that most of the mass sits in the field, not the quarks; this is a testable version of that statement.</p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the additive-string alternative.</p>
+<p><strong>What stands in the way.</strong> The relations are within $1-3\%$, but the $\psi'$ one uses the mean of $m_\omega$ and $m_\varphi$ "for simplicity"; and charmonium fits the same three states with one new quark mass. </p>
+<h3 id="2-a-conservation-law-for-the-number-of-closed-rings">2. A conservation law for the number of closed rings</h3>
+<p><strong>The idea.</strong> Strong interactions approximately conserve the number of closed string rings. A ring cannot decay into open strings, so $\psi\to$ ordinary hadrons is forbidden while $\psi'\to\psi\pi\pi$ is allowed; and $\psi\to B\bar B$ needs all four strings broken, which is why it is so narrow. </p>
+<p><strong>What it would add.</strong> A selection rule that is a count rather than a symmetry. <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em> (<code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>) discusses confinement in §<em>Confinement and the Order Parameter</em>; here the order parameter would be the ring number, a candidate that article does not consider. </p>
+<p><strong>Where it lands.</strong> §<em>Confinement and the Order Parameter</em>, as the ring-number candidate. </p>
+<p><strong>What stands in the way.</strong> The rule is "approximate" and is introduced to explain one narrow width; no dynamics forces it, and QCD gives the same narrowness from the Okubo–Zweig–Iizuka rule.</p>
+<h3 id="3-same">3. Same</h3>
+<p>$J^{PC}$ from $L=1$ and from $L=3$</p>
+<p><strong>The idea.</strong> With $S=2$ and antiparallel $LS$ coupling, both $L=1$ and $L=3$ give $J=1$. So $\psi$ and $\psi'$ can share every quantum number and differ only in rotational excitation — the same situation the isosinglet series met with $\omega$ and $\varphi$, now derived from the geometry rather than postulated.</p>
+<p><strong>What it would add.</strong> A mechanism for the two states, identical labels problem. <em>The Isosinglet Meson Series</em> conversion in this folder posits an ordering number with no dynamics; here $L$ supplies it.</p>
+<p><strong>Where it lands.</strong> The corpus's mass-spectrum articles have no section for this; the natural home is <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), where the question of when the labels underdetermine the state is posed.</p>
+<p><strong>What stands in the way.</strong> With $S=2$ the lowest state has $J=1$ only through a chosen $LS$ coupling, and the $L=3$ spacing is not computed.</p>
+<p>The remainder, one line each. That the model attributes the $\psi$'s heaviness to four strings and charmonium to one heavy quark is a clean experimental fork, decided for charmonium.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

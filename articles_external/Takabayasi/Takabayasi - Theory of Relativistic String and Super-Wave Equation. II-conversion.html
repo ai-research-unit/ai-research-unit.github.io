@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Relativistic String and Super-Wave Equation. II — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. II.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="theory-of-relativistic-string-and-super-wave-equation-ii"><strong>Theory of Relativistic String and Super-Wave Equation. II</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>51</strong> (1974) 571, No. 2; received 19 June 1973, revised 29 October 1973</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. II-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. II.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Super-Wave Equation. II.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The companion to Part I. It treats the "geometric" string — full worldsheet covariance, action forced to be the Nambu–Goto one — and places it as the <em>singular limit</em> $(\omega=0)$ of the realistic theory. The analogy the author offers is the one between the de Broglie–Proca field and the Maxwell field: the geometric string is what the realistic string degenerates into when a mass-like structure constant is switched off, and the passage is smooth only if the internal motion is restricted to be transversal. Solutions are illustrated, quantisation is sketched, and the algebra's loss of closure at the quantum level is stated with the central charge written out explicitly. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-between-the-two-theories">The relation between the two theories</h3>
+<p>"Theory of relativistic string in the 'geometric' viewpoint is analyzed and its physical interpretation is clarified. This theory is regarded as the singular limiting case of the relativistic string theory in the 'realistic' viewpoint treated in a preceding paper. If one restricts the internal motion of the realistic string theory to transversal ones alone by a certain physical constraint, both theories are smoothly connected. For this case concrete movements of relativistic string are explicitly displayed. The quantization and the introduction of external interaction are briefly stated to indicate the meaning of relativistic string theory as a model of hadrons leading to dual amplitude."</p>
+<p>"This relationship is analogous to the relationship between the de Broglie.Proca field for massive" photon "(or neutral vector mesonYl and the Maxwell field. We show that the geometric model can be regarded as the singular limiting case of the realistic model."</p>
+<h3 id="why-the-geometric-action-is-unique">Why the geometric action is unique</h3>
+<p>"In the geometric view- point, only the world strip (which is a relativisti c invariant concept), together Downloaded from academic.oup.com/ptp/article/51/2/571/1875890 by guest on 12 November 2026 with its boundary lines, has physical sense, so that a physical relation must be invariant under (2 ·1). Thus the equation of motion and boundary condition which a physically realizable strip has to satisfy should be covariant under (2 ·1), and be derived from an action integral invariant under (2 ·1). For the present we consider the free case. Then such an action"</p>
+<p>"iously (2 · 2) is the special case w = 0 -of the action integral (2 ·16) 1**l" realistic "model stated in I. However, the resulting theory has now new features. This is natural because we have started from a different viewpoint , and mathe- matically the new aspects emerge from the fact t1iat (2 · 2) is invariant against (2 ·1) which is a gauge group larger than the ~·partial general transform ation" (2 · 5) 1 for the realistic theory."</p>
+<h3 id="transversality-and-what-it-buys">Transversality, and what it buys</h3>
+<p>This theory is, as described in §§ 2–4 of I, complete in itself but we remark that this theory still allows the introduction of a certain physical constraint consistently. The interest in this constraint comes from the fact that it brings about a particular simplification of theory and also that with the introduction thereof the theory becomes common both for $\omega\neq0$ and for $\omega=0$ cases. Physically (3·1) restricts the internal motion to transversal ones (rotation, lateral vibration) alone, and thus reduces the degree of freedom of each 'parton' of the string from three to two. In terms of normal modes this is meaning that in CM rest frame all normal modes can have space components only. </p>
+<h3 id="quantisation-the-algebra-stops-closing">Quantisation: the algebra stops closing</h3>
+<p>"The conformal operators lose their closure property as a whole, such that [Ar, A'] =h(r-s)Ar+'+ h2(Jr+,,or(r 2 -1)/3. 8l On account of this fact and also of the fact that w is generally non-zero, the compatibility requires that we should restrict the subsidiary conditions (5·5) to the range of r=O,I, 2, ... , alone, as indicated. In classical theory the case ."</p>
+<p>"ated. In classical theory the case .(l) = 0 had a special feature that the whole theory is conformal-inva riant only in this case, whereas in quantum mechanics the whol.e theory is invariant under the non-unitary transformation s generated by Ar + tmcw ·(Jro (r = 0, 1, 2, · · ·) regardless of whether w=FO or w = 0. In this respect the w = 0 case loses its special position. *l When we assume (5 · 5), we are also understanding"</p>
+<p>"en we assume (5 · 5), we are also understanding in- definite metric with respect to relative-time degrees, and (5 · 5) determine the mass spectrum. In the Schrodinger picture regarding r, the wave functional is restricted to stationary solutions in r (or r= vwr) with fixed frequency such that 7JI', = exp (i7!" "J!', (0), and consequently r is just eliminated completely. 7l Hence we call this representation" 0' -formalism ",9 l where the theory is represented by (5 · 5), or equivalently by the super-wave equation defined at every point of the string [ <em>!</em> : (Ptt? +"(Oxp.) : + <em>i</em>.C {PI'(O''), ox~' (0'')} sin 0'' dO'' +E!!_] 7Ji'= O."— the DWE recovered." ing. It is important to note that the constants "and w appearing here (or in (5 · 5)) are structure constants originally contained in the Lagrangian (2 ·16) 1• It is expected from correspondence -theoretical reasons that the possible negative-norm states are suppressed just by (5 · 5). Recently this was actually verified 10l for the case n" w/2 = -h. (5·6) The condition (5 · 6) implies the quantization of the leading intercept as a (0) = 1."</p>
+<h3 id="closing-assessment">Closing assessment</h3>
+<p>Our string theory for hadrons implies a genuine space-time model. In our theory it is essential that the basic variables $x^{\mu}(\sigma,\tau)$ have the meaning of space-time coordinates, because it is based on this interpretation that we can properly identify the 4-momentum of the system, formulate causality and locate interactions. The variables $x^{\mu}$ play the dual role: They physically mean the 4-dimensional positional coordinates, but at the same time they are viewed like a field in the 2-dimensional space of Gauss coordinates $(\sigma,\tau)$. Thus our string theory which is still at the one-particle level is formally analogous to a field theory in 2-dimensional space-time."The realistic viewpoint has led us to the theory of relativistic string which is more general than the theory obtained from the geometrical viewpoint and includes the latter theory as a singular limiting case ($\omega=0$) where some special features arise in the classical level by higher symmetry. A drawback of the geometrical viewpoint is that in quantization and interaction one is obliged to amend arbitrarily the theory by introducing a non-zero $\omega$ ... Another drawback of the geometrical approach is that it does not lead to a suitable classical foundation for the quantum theory in the presence of coupling with external scalar field." The simple string theory treated in this paper is only an ideal one for a model of hadrons. Especially the result (5·6), which was necessary for ghost suppression as well as for deriving dual amplitude in quantum theory, indicates the occurrence of tachyonic ground state and violates the causality condition. Also the theory lacks the isospin, half-integer spin and baryon number properties. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The massless limit as a singular limit of a massive theory</li>
+</ol>
+<p><strong>The idea.</strong> The geometric string is <em>not</em> prior to the realistic one. It is what remains when a structure constant $\omega$ is taken to zero — the relationship being like Proca to Maxwell. The "simpler" theory is the degenerate case, and its extra symmetry is a symptom of the degeneration. </p>
+<p><strong>What it would add.</strong> A reversal of the usual priority. Textbooks treat the Nambu–Goto string as fundamental and $\omega$ as a later addition; here the reverse is argued explicitly and with consequences (two stated drawbacks of the geometric approach). <em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em> (<code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>) also treats a massless case as a limit, but with the massless theory as the simpler, more symmetric one; this paper says the extra symmetry is a liability for both quantisation and coupling. </p>
+<p><strong>Where it lands.</strong> §<em>The Massless Limit</em>, as the reversed priority. </p>
+<p><strong>What stands in the way.</strong> The claim that the geometric approach obliges arbitrary amendment is a judgement about practice; a different regularisation might not need $\omega$. </p>
+<ol>
+<li>The central charge, written out </li>
+</ol>
+<p><strong>The idea.</strong> $[\Lambda_r,\Lambda_s]=\hbar(r-s)\Lambda_{r+s}+\hbar^{2}\delta_{r+s,0}r(r^{2}-1)/3$. The anomaly appears only upon quantisation, it destroys closure, and the response is to truncate the conditions to $r\ge0$ — which is exactly the loss of half the algebra. </p>
+<p><strong>What it would add.</strong> The anomaly with its consequences spelled out: not just there is a central term but therefore the constraint set must be cut in half, and $\omega=0$ loses its special classical status. The corpus's discussions of anomalies treat them as obstructions to be cancelled; here the response is truncation, which is a different and cheaper strategy with its own cost (loss of the $r&lt;0$ conditions). </p>
+<p><strong>Where it lands.</strong> §<em>The Gauge Symmetry and the Constraints</em> of <em>The Lagrangian and the Non-Abelian Gauge Fields</em> (<code>articles_physics/the-lagrangian-and-the-non-abelian-gauge-fields.md</code>), as the truncation response. </p>
+<p><strong>What stands in the way.</strong> Whether truncation suffices to remove all negative-norm states is, in this paper, still an expectation verified only for one value. </p>
+<h3 id="3-math23-disappears-from-the-stationary-states">3. $\tau$ disappears from the stationary states</h3>
+<p><strong>The idea.</strong> In the Schrödinger picture with respect to $\tau$, the wave functional is restricted to stationary solutions $\Psi=\exp(i\pi\omega\tau/2\hbar)\Psi(0)$, so $\tau$ drops out entirely and the theory is a functional of $\sigma$ only. <strong>Where it lands.</strong> The conversion of <em>Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude</em> in this folder, §<em>The Separation and the Tower</em>, as the mechanism.</p>
+<h3 id="4-being-a-spacetime-model-is-what-makes-the-theory-testable">4. Being a spacetime model is what makes the theory testable</h3>
+<p><strong>The idea.</strong> $x^{\mu}(\sigma,\tau)$ is simultaneously a position in spacetime and a field on a two-dimensional parameter space. <strong>Where it lands.</strong> §<em>The Model and the Constraint</em> of <em>The Lagrangian and the Nonlinear Sigma Model</em>, as the interpretive criterion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -96,12 +96,12 @@ $$</p>
 BG = EG/G
 $$</p>
 <p>with $EG \to BG$ a principal $G$-bundle. The bundle so obtained is universal.</p>
-<p><em>Proof.</em> The action is free: if $\sum_i t_i g_i g = \sum_i t_i g_i$ as points of the join and the representations are reduced, then $g_i g = g_i$ for every index $i$ with $t_i > 0$, and such an index exists, so $g = 1$. For weak contractibility one uses the standard connectivity of the join. The join of two nonempty spaces is connected, and if $X$ and $Y$ are connected and nonempty then $X*Y$ is simply connected: it is the union of $CX \times Y$ and $X \times CY$, whose intersection is $X \times Y$, and van Kampen's theorem presents $\pi_1(X*Y)$ as the amalgamated product of $\pi_1(Y)$ and $\pi_1(X)$ over $\pi_1(X)\times\pi_1(Y)$, in which the map onto one of the two vertex groups is surjective, so the amalgam is trivial. By the standard formula $\mathrm{conn}(X*Y) = \mathrm{conn}(X) + \mathrm{conn}(Y) + 2$ the join of $r$ nonempty spaces is at least $(r-2)$-connected, so $\pi_k(G^{*n}) = 0$ for $n \geq k+3$, and since every class in $\pi_k(EG)$ is represented at some finite stage of the colimit, every homotopy group of $EG$ is killed at a finite stage and $EG$ has trivial homotopy in every degree. The quotient map $EG \to EG/G$ is a principal $G$-bundle: the action is free, and the reduced representation of a point of a join, in which one coordinate is nonzero at a chosen index, gives a slice on which the action is a product with $G$; the local trivialisations of the colimit are assembled from these.</p>
+<p><em>Proof.</em> The action is free: if $\sum_i t_i g_i g = \sum_i t_i g_i$ as points of the join and the representations are reduced, then $g_i g = g_i$ for every index $i$ with $t_i &gt; 0$, and such an index exists, so $g = 1$. For weak contractibility one uses the standard connectivity of the join. The join of two nonempty spaces is connected, and if $X$ and $Y$ are connected and nonempty then $X*Y$ is simply connected: it is the union of $CX \times Y$ and $X \times CY$, whose intersection is $X \times Y$, and van Kampen's theorem presents $\pi_1(X*Y)$ as the amalgamated product of $\pi_1(Y)$ and $\pi_1(X)$ over $\pi_1(X)\times\pi_1(Y)$, in which the map onto one of the two vertex groups is surjective, so the amalgam is trivial. By the standard formula $\mathrm{conn}(X*Y) = \mathrm{conn}(X) + \mathrm{conn}(Y) + 2$ the join of $r$ nonempty spaces is at least $(r-2)$-connected, so $\pi_k(G^{*n}) = 0$ for $n \geq k+3$, and since every class in $\pi_k(EG)$ is represented at some finite stage of the colimit, every homotopy group of $EG$ is killed at a finite stage and $EG$ has trivial homotopy in every degree. The quotient map $EG \to EG/G$ is a principal $G$-bundle: the action is free, and the reduced representation of a point of a join, in which one coordinate is nonzero at a chosen index, gives a slice on which the action is a product with $G$; the local trivialisations of the colimit are assembled from these.</p>
 <p><strong>Remark.</strong> The construction is concrete at every stage and the colimit is only used to kill the higher homotopy groups one at a time; this is why $EG$ can be taken to be a CW complex when $G$ is one, a point used in the computations below. For a product of groups the product $EG \times EH$ is contractible and carries a free action of $G\times H$ with quotient $BG\times BH$, so it is a universal principal $(G\times H)$-bundle and $B(G\times H)$ is homotopy equivalent to $BG\times BH$.</p>
 <h3 id="the-bar-construction">The Bar Construction</h3>
 <p><strong>Definition.</strong> Let $G$ be a topological group. The <strong>bar construction</strong> is the simplicial space $B_\bullet G$ with $B_n G = G^n$ and face maps</p>
 <p>$$
-\partial_i (g_1,\ldots,g_n) = \begin{cases} (g_2,\ldots,g_n), & i = 0,\\ (g_1,\ldots,g_{i}g_{i+1},\ldots,g_n), & 1 \leq i \leq n-1,\\ (g_1,\ldots,g_{n-1}), & i = n,\end{cases}
+\partial_i (g_1,\ldots,g_n) = \begin{cases} (g_2,\ldots,g_n), &amp; i = 0,\\ (g_1,\ldots,g_{i}g_{i+1},\ldots,g_n), &amp; 1 \leq i \leq n-1,\\ (g_1,\ldots,g_{n-1}), &amp; i = n,\end{cases}
 $$</p>
 <p>and degeneracies inserting the identity. Its geometric realisation is written $BG = |B_\bullet G|$; the same construction applied to the free $G$-set $G$ gives the simplicial space $E_\bullet G$ with $E_nG = G^{n+1}$, whose realisation $EG = |E_\bullet G|$ carries a free right action of $G$ with quotient $BG$.</p>
 <p><strong>Theorem.</strong> For every topological group $G$ the realisation $EG$ is weakly contractible, the action of $G$ is free, and $EG \to BG$ is a universal principal $G$-bundle. For a discrete group $H$ the space $BH$ is a CW complex with one $n$-cell for each element of $H^n$, and its homology and cohomology are the group homology and cohomology:</p>
@@ -300,7 +300,7 @@ $$</p>
 </tr>
 <tr>
 <td>instability</td>
-<td>$\mathrm{Sq}^i x = 0$ for $i > |x|$, and $\mathrm{Sq}^{|x|} x = x^2$</td>
+<td>$\mathrm{Sq}^i x = 0$ for $i &gt; |x|$, and $\mathrm{Sq}^{|x|} x = x^2$</td>
 </tr>
 <tr>
 <td>additivity</td>
@@ -321,15 +321,15 @@ $$</p>
 <p>$$
 \mathrm{Sq}^k(x^j) = \binom{j}{k} x^{j+k} \quad \text{in } \mathbb{F}_2,
 $$</p>
-<p>so that $\mathrm{Sq}^1(x^j)$ is $0$ for $j$ even and $x^{j+1}$ for $j$ odd. More generally, if $x$ is a generator of even degree $m$ with $\mathrm{Sq}^i x = 0$ for $0 < i < m$, then $\mathrm{Sq}^{mk}(x^j) = \binom{j}{k}x^{j+k}$ and $\mathrm{Sq}^i(x^j) = 0$ for $i$ not divisible by $m$.</p>
+<p>so that $\mathrm{Sq}^1(x^j)$ is $0$ for $j$ even and $x^{j+1}$ for $j$ odd. More generally, if $x$ is a generator of even degree $m$ with $\mathrm{Sq}^i x = 0$ for $0 &lt; i &lt; m$, then $\mathrm{Sq}^{mk}(x^j) = \binom{j}{k}x^{j+k}$ and $\mathrm{Sq}^i(x^j) = 0$ for $i$ not divisible by $m$.</p>
 <p><em>Derivation.</em> The total square $\mathrm{Sq} = \sum_i \mathrm{Sq}^i$ is multiplicative by the Cartan formula, so $\mathrm{Sq}(x^j) = \mathrm{Sq}(x)^j$; for a generator of even degree $m$ the instability axiom gives $\mathrm{Sq}(x) = x + x^2$, since $\mathrm{Sq}^0x = x$, $\mathrm{Sq}^m x = x^2$ and the remaining squares vanish, and expanding $(x + x^2)^j$ over $\mathbb{F}_2$ collects the terms with the binomial coefficients displayed. The cases $m = 1$ and $m = 2$ are the ones used below; for $m = 1$ the formula specialises to the statement for the generator of $H^*(\mathbb{RP}^\infty;\mathbb{F}_2)$.</p>
-<p><strong>Example.</strong> In $H^*(\mathbb{RP}^n;\mathbb{F}_2) = \mathbb{F}_2[x]/(x^{n+1})$ with $|x| = 1$ the squares act by $\mathrm{Sq}^i(x^j) = \binom{j}{i}x^{i+j}$; in particular $\mathrm{Sq}^1 x = x^2$, $\mathrm{Sq}^1(x^2) = 0$, and the pattern is the mod $2$ Pascal triangle read along the powers. Since $\mathrm{Sq}^1$ is the Bockstein, the square computes the integral cohomology of $\mathbb{RP}^n$: a mod $2$ class is the reduction of an integral class exactly when $\mathrm{Sq}^1$ annihilates it, which happens for the even-degree classes and fails in the odd degrees, and the reduced classes together with the top class recover $H^*(\mathbb{RP}^n;\mathbb{Z})$, with $\mathbb{Z}/2$ in the even degrees $0 < i < n$, nothing in the odd degrees below $n$, and $\mathbb{Z}$ at the top when $n$ is odd.</p>
+<p><strong>Example.</strong> In $H^*(\mathbb{RP}^n;\mathbb{F}_2) = \mathbb{F}_2[x]/(x^{n+1})$ with $|x| = 1$ the squares act by $\mathrm{Sq}^i(x^j) = \binom{j}{i}x^{i+j}$; in particular $\mathrm{Sq}^1 x = x^2$, $\mathrm{Sq}^1(x^2) = 0$, and the pattern is the mod $2$ Pascal triangle read along the powers. Since $\mathrm{Sq}^1$ is the Bockstein, the square computes the integral cohomology of $\mathbb{RP}^n$: a mod $2$ class is the reduction of an integral class exactly when $\mathrm{Sq}^1$ annihilates it, which happens for the even-degree classes and fails in the odd degrees, and the reduced classes together with the top class recover $H^*(\mathbb{RP}^n;\mathbb{Z})$, with $\mathbb{Z}/2$ in the even degrees $0 &lt; i &lt; n$, nothing in the odd degrees below $n$, and $\mathbb{Z}$ at the top when $n$ is odd.</p>
 <h3 id="the-adem-relations">The Adem Relations</h3>
-<p><strong>Theorem (Adem).</strong> For $a < 2b$ the squares satisfy the relations</p>
+<p><strong>Theorem (Adem).</strong> For $a &lt; 2b$ the squares satisfy the relations</p>
 <p>$$
 \mathrm{Sq}^a \mathrm{Sq}^b = \sum_{c=0}^{\lfloor a/2 \rfloor} \binom{b-c-1}{a-2c}\, \mathrm{Sq}^{a+b-c}\, \mathrm{Sq}^{c},
 $$</p>
-<p>a finite sum because the binomial coefficient vanishes for $c > \lfloor a/2 \rfloor$ under the usual convention. For $a \geq 2b$ the composite $\mathrm{Sq}^a \mathrm{Sq}^b$ is <strong>admissible</strong>, meaning that no relation is needed. The relations hold in every cohomology ring and define the Steenrod algebra as the quotient of the free associative algebra on the $\mathrm{Sq}^i$ by them.</p>
+<p>a finite sum because the binomial coefficient vanishes for $c &gt; \lfloor a/2 \rfloor$ under the usual convention. For $a \geq 2b$ the composite $\mathrm{Sq}^a \mathrm{Sq}^b$ is <strong>admissible</strong>, meaning that no relation is needed. The relations hold in every cohomology ring and define the Steenrod algebra as the quotient of the free associative algebra on the $\mathrm{Sq}^i$ by them.</p>
 <p><em>Proof sketch.</em> Both sides of a relation are natural operations of the same degree, so it suffices to check the relation on a class that generates all classes of its degree under pullback; the fundamental class $\iota_n \in H^n(K(\mathbb{Z}/2,n);\mathbb{F}_2)$ does this, since every class of degree $n$ on a CW complex is the pullback of $\iota_n$ along its classifying map. The check for all $n$ is the computation of the cohomology of the Eilenberg–MacLane spaces below, in which the Cartan formula and the instability $\mathrm{Sq}^n\iota_n = \iota_n^2$ determine the action; it cannot be made on a class of degree one, where the examples below show that the relations are invisible.</p>
 <p><strong>Example.</strong> The low-degree relations, obtained by evaluating the binomial coefficients in the formula, are</p>
 <p>$$
@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>instability</td>
-<td>$P^i x = 0$ for $2i > |x|$, and $P^i x = x^p$ for $2i = |x|$</td>
+<td>$P^i x = 0$ for $2i &gt; |x|$, and $P^i x = x^p$ for $2i = |x|$</td>
 </tr>
 <tr>
 <td>additivity</td>
@@ -376,7 +376,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The operation $\beta$ is the Bockstein of $0 \to \mathbb{Z}/p \to \mathbb{Z}/p^2 \to \mathbb{Z}/p \to 0$, and it is the odd-primary analogue of $\mathrm{Sq}^1$; the degree formula $|P^i| = 2i(p-1)$ is forced by the requirement that $P^i x = x^p$ when $2i = |x|$, since $x^p$ has degree $p|x| = |x| + 2i(p-1)$.</p>
-<p><strong>Theorem (Adem; odd primary).</strong> For $a < pb$,</p>
+<p><strong>Theorem (Adem; odd primary).</strong> For $a &lt; pb$,</p>
 <p>$$
 P^a P^b = \sum_{c=0}^{\lfloor a/p \rfloor} (-1)^{a+c} \binom{(p-1)(b-c)-1}{a-pc}\, P^{a+b-c} P^{c},
 $$</p>
@@ -398,11 +398,11 @@ $$</p>
 $$</p>
 <p>so that the dimensions in degrees $0$ to $12$ are $1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 6, 7$. For odd $p$ the admissible monomials of the form $\beta^{\epsilon_1}P^{i_1}\beta^{\epsilon_2}\cdots P^{i_k}\beta^{\epsilon_{k+1}}$ with $i_j \geq p\,i_{j+1} + \epsilon_{j+1}$ form a basis of $\mathcal{A}_p$.</p>
 <p><em>Proof sketch.</em> Admissibility is the normal form statement: the Adem relations rewrite every composite of two squares of the wrong shape into a sum of composites whose indices satisfy the inequality, and the rewriting terminates because the leading index decreases, so the admissible monomials span. Linear independence is proved by evaluating the monomials on the fundamental classes of the Eilenberg–MacLane spaces, or through Milnor's description of $\mathcal{A}_2$ as the dual of a polynomial algebra. The count of admissible monomials of degree $d$ is the coefficient of $t^d$ in the displayed product: the two counts agree through degree $24$, where both are $1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 9, 11, 12, 13, 15, 16, 17, 20, 22, 23, 26$ in degrees $0$ to $24$.</p>
-<p><strong>Example (the unstable condition).</strong> For an admissible $I$, telescoping the excess gives $e(I) = i_k + \sum_{j<k}(i_j - 2i_{j+1}) \geq i_k$, so $e(I) \geq 1$ whenever $I$ is nonempty, and the destabilisation axiom reads</p>
+<p><strong>Example (the unstable condition).</strong> For an admissible $I$, telescoping the excess gives $e(I) = i_k + \sum_{j&lt;k}(i_j - 2i_{j+1}) \geq i_k$, so $e(I) \geq 1$ whenever $I$ is nonempty, and the destabilisation axiom reads</p>
 <p>$$
-\mathrm{Sq}^I x = 0 \qquad \text{whenever } e(I) > |x| .
+\mathrm{Sq}^I x = 0 \qquad \text{whenever } e(I) &gt; |x| .
 $$</p>
-<p>On the fundamental class $\iota_1$ of $K(\mathbb{Z}/2,1) = \mathbb{RP}^\infty$ of degree one this leaves only $\mathrm{Sq}^1$ free to act, since $e(I) > 1$ for every nonempty admissible $I$ other than $(1)$; and $\mathrm{Sq}^1\iota_1 = \iota_1^2$ by instability. In the Serre theorem below the generators are the monomials of excess less than $n$, so for $n = 1$ only the empty monomial survives, giving $H^*(\mathbb{RP}^\infty;\mathbb{F}_2) = \mathbb{F}_2[\iota_1]$ with $\mathrm{Sq}^1\iota_1 = \iota_1^2$, which is exactly the cohomology of $\mathbb{RP}^\infty$.</p>
+<p>On the fundamental class $\iota_1$ of $K(\mathbb{Z}/2,1) = \mathbb{RP}^\infty$ of degree one this leaves only $\mathrm{Sq}^1$ free to act, since $e(I) &gt; 1$ for every nonempty admissible $I$ other than $(1)$; and $\mathrm{Sq}^1\iota_1 = \iota_1^2$ by instability. In the Serre theorem below the generators are the monomials of excess less than $n$, so for $n = 1$ only the empty monomial survives, giving $H^*(\mathbb{RP}^\infty;\mathbb{F}_2) = \mathbb{F}_2[\iota_1]$ with $\mathrm{Sq}^1\iota_1 = \iota_1^2$, which is exactly the cohomology of $\mathbb{RP}^\infty$.</p>
 <h2 id="computations">Computations</h2>
 <h3 id="projective-spaces">Projective Spaces</h3>
 <p><strong>Example.</strong> $H^*(\mathbb{RP}^\infty;\mathbb{F}_2) = \mathbb{F}_2[x]$ with $|x| = 1$, and $H^*(\mathbb{CP}^\infty;\mathbb{F}_2) = \mathbb{F}_2[y]$ with $|y| = 2$. The squares act on the powers by the binomial formula, and the total square of a class is the sum of its squares; the total Steenrod square is multiplicative by the Cartan formula, so $\mathrm{Sq}(x^j) = x^j(1+x)^j$ and</p>
@@ -414,11 +414,11 @@ $$</p>
 <h3 id="the-cohomology-of-eilenbergmaclane-spaces">The Cohomology of Eilenberg–MacLane Spaces</h3>
 <p><strong>Theorem (Serre).</strong> Let $n \geq 1$. The mod $2$ cohomology of the Eilenberg–MacLane space is a polynomial algebra,</p>
 <p>$$
-H^*(K(\mathbb{Z}/2\mathbb{Z},n);\mathbb{F}_2) = \mathbb{F}_2\big[\,\mathrm{Sq}^I \iota_n \ :\ I \text{ admissible},\ e(I) < n\,\big],
+H^*(K(\mathbb{Z}/2\mathbb{Z},n);\mathbb{F}_2) = \mathbb{F}_2\big[\,\mathrm{Sq}^I \iota_n \ :\ I \text{ admissible},\ e(I) &lt; n\,\big],
 $$</p>
 <p>the monomial $I$ empty contributing the fundamental class $\iota_n$; and for $n \geq 2$,</p>
 <p>$$
-H^*(K(\mathbb{Z},n);\mathbb{F}_2) = \mathbb{F}_2\big[\,\mathrm{Sq}^I \iota_n \ :\ I \text{ admissible},\ e(I) < n,\ i_k \neq 1\,\big].
+H^*(K(\mathbb{Z},n);\mathbb{F}_2) = \mathbb{F}_2\big[\,\mathrm{Sq}^I \iota_n \ :\ I \text{ admissible},\ e(I) &lt; n,\ i_k \neq 1\,\big].
 $$</p>
 <p><em>Proof sketch.</em> The classes $\mathrm{Sq}^I\iota_n$ with $I$ admissible are the candidates for polynomial generators, and the proof of the theorem is that they are algebraically independent and generate; the two statements are proved together with the analogous statements for the other coefficient groups and are quoted from the literature. The conditions on the excess are exactly the unstable conditions, and the additional condition $i_k \neq 1$ in the integral case reflects the presence of the Bockstein.</p>
 <p><strong>Example.</strong> For $n = 1$ the admissible monomials of excess less than one are only the empty one, since $e(I) \geq i_k \geq 1$ for nonempty $I$; hence $H^*(K(\mathbb{Z}/2,1);\mathbb{F}_2) = \mathbb{F}_2[\iota_1]$, which is $H^*(\mathbb{RP}^\infty;\mathbb{F}_2)$, as it must be. For $n = 2$ the admissible monomials of excess one are exactly $(1)$, $(2,1)$, $(4,2,1)$, $(8,4,2,1),\ldots$, so the polynomial generators of $H^*(K(\mathbb{Z}/2,2);\mathbb{F}_2)$ have degrees $2,3,5,9,17,33,\ldots$, that is $2^k+1$ for $k \geq 0$; and in the integral case the condition $i_k \neq 1$ removes them all, leaving $H^*(K(\mathbb{Z},2);\mathbb{F}_2) = \mathbb{F}_2[\iota_2]$, which is $H^*(\mathbb{CP}^\infty;\mathbb{F}_2)$, as it must be. For $n = 3$ the integral generators that survive have degrees $3,5,9,17,33,\ldots$, related to the fundamental class by $\iota_3$, $\mathrm{Sq}^2\iota_3$, $\mathrm{Sq}^4\mathrm{Sq}^2\iota_3$, and so on.</p>

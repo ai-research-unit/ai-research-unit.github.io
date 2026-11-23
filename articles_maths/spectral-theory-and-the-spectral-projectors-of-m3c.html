@@ -115,14 +115,14 @@ t_\pm=\frac{\tau\pm\sqrt{\tau^{2}-3\sigma}}{3}.
 $$</p>
 <p>The <strong>discriminant</strong> is</p>
 <p>$$
-\Delta=\prod_{i<j}(\lambda_i-\lambda_j)^{2}
+\Delta=\prod_{i&lt;j}(\lambda_i-\lambda_j)^{2}
 =\tau^{2}\sigma^{2}-4\sigma^{3}-4\tau^{3}\delta-27\delta^{2}+18\tau\sigma\delta .
 $$</p>
 <p>The spectrum is simple exactly when $\Delta\neq0$. When $\Delta=0$ two eigenvalues coincide, and the cubic has a double root; when in addition $\tau^{2}=3\sigma$ the three roots coincide and $\chi_A(t)=(t-\tau/3)^{3}$.</p>
-<p><strong>Proof of the discriminant formula.</strong> The resultant of $\chi$ and $\chi'$ is $\prod_i\chi'(\lambda_i)=\prod_i\prod_{j\neq i}(\lambda_i-\lambda_j)=(-1)^{3}\prod_{i<j}(\lambda_i-\lambda_j)^{2}$; evaluating the resultant of the cubic and its derivative gives the displayed polynomial. The sign is $(-1)^{3}=-1$ for degree $3$, and the formula is the standard one for a cubic.</p>
+<p><strong>Proof of the discriminant formula.</strong> The resultant of $\chi$ and $\chi'$ is $\prod_i\chi'(\lambda_i)=\prod_i\prod_{j\neq i}(\lambda_i-\lambda_j)=(-1)^{3}\prod_{i&lt;j}(\lambda_i-\lambda_j)^{2}$; evaluating the resultant of the cubic and its derivative gives the displayed polynomial. The sign is $(-1)^{3}=-1$ for degree $3$, and the formula is the standard one for a cubic.</p>
 <p><strong>Worked example.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}2&1&0\\0&2&1\\0&0&3\end{pmatrix}
+A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;3\end{pmatrix}
 $$</p>
 <p>one has $\tau=7$, $\sigma=16$, $\delta=12$, and</p>
 <p>$$
@@ -243,7 +243,7 @@ $$</p>
 <p>The spectral decomposition is the resolution of the identity into three rank-one projectors, and it is the matrix form of the Lagrange interpolation of <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em>.</p>
 <p><strong>Worked example.</strong> For $A=\operatorname{diag}(1,2,4)$ the three projectors are $E_{11}$, $E_{22}$, $E_{33}$, and $A=1\cdot E_{11}+2\cdot E_{22}+4\cdot E_{33}$. For</p>
 <p>$$
-A=\begin{pmatrix}1&1&0\\0&2&1\\0&0&4\end{pmatrix}
+A=\begin{pmatrix}1&amp;1&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;4\end{pmatrix}
 $$</p>
 <p>the projectors are not diagonal, but the identity $A=\sum\lambda_kP_k$ still holds, with each $P_k$ a polynomial in $A$ of degree $2$.</p>
 <h2 id="the-repeated-spectrum">The Repeated Spectrum</h2>
@@ -271,22 +271,22 @@ $$</p>
 <p><strong>Proof.</strong> The polynomial $p(t)=1-\big((t-\lambda)/(\lambda-\mu)\big)^{2}$ satisfies $p(\lambda)=1$, $p'(\lambda)=0$ and $p(\mu)=0$. On the generalised $\lambda$-eigenspace, $A-\lambda I$ is nilpotent of degree $2$, so $p(A)=I$ there; on the $\mu$-eigenspace, $p(\mu)=0$. Hence $p(A)$ is the projector onto the first generalised eigenspace along the second. The difference $A-\lambda P_\lambda-\mu P_\mu$ is $(A-\lambda I)P_\lambda$, supported on the generalised $\lambda$-eigenspace, and its square is $(A-\lambda I)^{2}P_\lambda=0$.</p>
 <p><strong>Worked example.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix}
+A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}
 $$</p>
-<p>one has $A-2I=\begin{pmatrix}0&1&0\\0&0&0\\0&0&1\end{pmatrix}$ and</p>
+<p>one has $A-2I=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}$ and</p>
 <p>$$
 \left(\frac{A-2I}{2-3}\right)^{2}=(2I-A)^{2}
-=\begin{pmatrix}0&0&0\\0&0&0\\0&0&1\end{pmatrix},
+=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>so</p>
 <p>$$
-P_2=I-(2I-A)^{2}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&0\end{pmatrix},
+P_2=I-(2I-A)^{2}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix},
 \qquad
-P_3=\begin{pmatrix}0&0&0\\0&0&0\\0&0&1\end{pmatrix}.
+P_3=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>Then $P_2^{2}=P_2$, $P_2P_3=0$, $P_2+P_3=I$, and</p>
 <p>$$
-2P_2+3P_3=\begin{pmatrix}2&0&0\\0&2&0\\0&0&3\end{pmatrix},
+2P_2+3P_3=\begin{pmatrix}2&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix},
 \qquad
 N=A-2P_2-3P_3=E_{12},
 \qquad
@@ -324,27 +324,27 @@ $$</p>
 <p>with the indices read modulo $3$. The dimension of each summand is $3$, because there are three pairs $(i,j)$ with $i-j\equiv r$, and each block $P_iM_3P_j$ is one-dimensional.</p>
 <p><strong>Worked example: the cyclic permutation.</strong> Take</p>
 <p>$$
-H=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix},
+H=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\1&amp;0&amp;0\end{pmatrix},
 \qquad
-H^{2}=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}.
+H^{2}=\begin{pmatrix}0&amp;0&amp;1\\1&amp;0&amp;0\\0&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$
 P_1=\frac{H^{2}+H+I}{3}
-=\frac{1}{3}\begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix},
+=\frac{1}{3}\begin{pmatrix}1&amp;1&amp;1\\1&amp;1&amp;1\\1&amp;1&amp;1\end{pmatrix},
 $$</p>
 <p>$$
 P_2=\frac{H^{2}+\omega H+\omega^{2}I}{3\omega^{2}}
-=\frac{1}{3}\begin{pmatrix}1&\omega^{2}&\omega\\ \omega&1&\omega^{2}\\ \omega^{2}&\omega&1\end{pmatrix},
+=\frac{1}{3}\begin{pmatrix}1&amp;\omega^{2}&amp;\omega\\ \omega&amp;1&amp;\omega^{2}\\ \omega^{2}&amp;\omega&amp;1\end{pmatrix},
 $$</p>
 <p>$$
 P_3=\frac{H^{2}+\omega^{2}H+\omega I}{3\omega}
-=\frac{1}{3}\begin{pmatrix}1&\omega&\omega^{2}\\ \omega^{2}&1&\omega\\ \omega&\omega^{2}&1\end{pmatrix}.
+=\frac{1}{3}\begin{pmatrix}1&amp;\omega&amp;\omega^{2}\\ \omega^{2}&amp;1&amp;\omega\\ \omega&amp;\omega^{2}&amp;1\end{pmatrix}.
 $$</p>
 <p>Each is idempotent, $P_kP_l=\delta_{kl}P_k$, $\sum_kP_k=I$, and</p>
 <p>$$
 P_1+\omega P_2+\omega^{2}P_3
-=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix}=H .
+=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\1&amp;0&amp;0\end{pmatrix}=H .
 $$</p>
 <p>The check of the $(1,2)$ entry is $1+\omega\cdot\omega^{2}+\omega^{2}\cdot\omega=1+1+1=3$, divided by $3$ gives $1$; the check of the $(1,3)$ entry is $1+\omega^{2}\cdot\omega^{2}+\omega\cdot\omega=1+\omega+\omega^{2}=0$. The three projectors are the Lagrange idempotents of <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em>, and their columns are the eigenvectors of $H$.</p>
 <p><strong>The diagonal root.</strong> For $H=\operatorname{diag}(1,\omega,\omega^{2})$ the projectors are $P_1=E_{11}$, $P_2=E_{22}$, $P_3=E_{33}$, and the identities above reduce to the diagonal entries. Every root is conjugate to this one, so every root has the same spectral decomposition up to the change of frame.</p>
@@ -376,7 +376,7 @@ $$</p>
 <p>$$
 W(A)=\{\langle v,Av\rangle:\|v\|=1\}\subset\mathbb{C}.
 $$</p>
-<p>It is a convex compact set containing the spectrum, by the Toeplitz–Hausdorff theorem. For a normal matrix it is the convex hull of the eigenvalues. For $A=\begin{pmatrix}0&2\\0&0\end{pmatrix}$ in $M_2$ it is the disk of radius $1$; in $M_3$ the nilpotent $E_{12}$ has numerical range the disk of radius $1/2$. These are the elementary cases of the general theory of numerical ranges; the relevant account for this algebra is in <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em>.</p>
+<p>It is a convex compact set containing the spectrum, by the Toeplitz–Hausdorff theorem. For a normal matrix it is the convex hull of the eigenvalues. For $A=\begin{pmatrix}0&amp;2\\0&amp;0\end{pmatrix}$ in $M_2$ it is the disk of radius $1$; in $M_3$ the nilpotent $E_{12}$ has numerical range the disk of radius $1/2$. These are the elementary cases of the general theory of numerical ranges; the relevant account for this algebra is in <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em>.</p>
 <h2 id="perturbation-and-the-discriminant">Perturbation and the Discriminant</h2>
 <p><strong>Theorem (analytic perturbation).</strong> On the open set where the discriminant $\Delta$ does not vanish, the eigenvalues $\lambda_k(A)$ and the projectors $P_k(A)$ are real-analytic (indeed holomorphic) functions of the entries of $A$. The derivative of an eigenvalue is</p>
 <p>$$
@@ -449,7 +449,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Delta$</td>
-<td>the discriminant $\prod_{i<j}(\lambda_i-\lambda_j)^{2}$</td>
+<td>the discriminant $\prod_{i&lt;j}(\lambda_i-\lambda_j)^{2}$</td>
 </tr>
 <tr>
 <td>$P_k$</td>

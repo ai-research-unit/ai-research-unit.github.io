@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuity Theory: Time as Directed Action — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Continuity_Theory_Time_as_Directed_Actio.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="continuity-theory-time-as-directed-action"><strong>Continuity Theory: Time as Directed Action</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>undated in the extracted text; cites a 2025 literature list</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Continuity_Theory_Time_as_Directed_Actio-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Continuity_Theory_Time_as_Directed_Actio.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/flrw-in-the-frame-route.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Continuity_Theory_Time_as_Directed_Actio.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rebuilds the cosine product of the earlier papers as a framework with named parts: a master time formula with an ADM derivation, a master action formula $W=E\cdot T_{\rm local}$, a logarithmic correction for non-stationary geometry, an operational inversion that solves the time-dilation formula for $G$, a quantum block called EMALT ($E\cdot T=h$) and a dimensional product $c\,h\,G$. It also lists the six standard GR tests as reproduced rather than predicted, and states its own predictions as scaling laws for a residual in interference minima.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-master-formula-and-why-it-is-a-product">The master formula, and why it is a product</h3>
+<p>$$T_{\rm local}(x)=T_0\cdot\cos\zeta_{\rm grav}\cdot\cos\zeta_{\rm kin}\cdot\cos\zeta_{\rm exp}\cdot[\cos\zeta_{\rm planck}]$$
+(paper 6). The product is justified by the 3+1 split: with lapse $\alpha$ and local speed $v_{\rm phys}$,
+$$\frac{d\tau}{dt}=\frac{\alpha(x)}{\gamma(v_{\rm phys})},\qquad \gamma=\left(1-v_{\rm phys}^2/c^2\right)^{-1/2}$$
+(paper 7), and "rate is dτ α(x) 1 = , γ(vphys ) = q , (7) dt γ(vphys ) 2 1 − vphys /c2 see [6, 7, 8, 9]. Identifying cos ζgrav ≡ α and cos ζkin ≡ 1/γ yields the product structure in Eq. (6). Frame-dragging". Frame dragging "dragging modiĄes α and vphys but does not destroy the multiplicative form when measured in the correct local frame. 6 Cross-Channel".</p>
+<h3 id="where-the-product-fails-and-what-is-added">Where the product fails, and what is added</h3>
+<p>"When stationarity or clean frame choices fail (time-dependent geometries, strong shear or vorticity), we supplement the product by invariant correction terms in logarithmic form":
+$$\ln\frac{T_{\rm local}}{T_0}=\ln\cos\zeta_{\rm grav}+\ln\cos\zeta_{\rm kin}+\ln\cos\zeta_{\rm exp}+\sum_k\kappa_kI_k$$
+(paper 8), with $I_k\in\{a_\mu a^\mu,\omega_{\mu\nu}\omega^{\mu\nu},\sigma_{\mu\nu}\sigma^{\mu\nu},\theta^2,C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma},\dots\}$ (paper 9) and "sor (see [12, 8]). The constants κk are to be Ątted or bounded experimentally.".</p>
+<h3 id="action-and-the-inversion-for-math19">Action, and the inversion for $G$</h3>
+<p>$$W_{\rm local}=E\cdot T_{\rm local}=E\cdot T_0\cdot\prod_\alpha\cos\zeta_\alpha$$
+(paper 10), glossed as "Action is directed realization of energy over time". Solving the same relation gives
+$$G=\frac{rc^2}{M}\left[1-\left(\frac{T_{\rm local}}{T_0\cos\zeta_{\rm kin}\cos\zeta_{\rm exp}}\right)^{2}\right]$$
+(paper 12, as printed), so that "Instead of assuming $G$ to predict time dilation, one can measure time dilation with clock networks and solve for $G$", valid "for non-rotating sources and stationary observers".</p>
+<h3 id="emalt">EMALT</h3>
+<p>$$E\cdot T=h$$
+(paper 21), "he structural reading beneath timeŰenergy uncertainty: a coupling scale, not mere noise. 6 Composition rule.", with the composition rule
+$$N\approx\frac{E_0}{h}\int C(t)\,dt,\qquad C(t)=\prod_\alpha\cos\zeta_\alpha(t)$$
+(paper 22), which "differs from additive correction models and is testable in combined kinematicŰ gravitational modulations.". The deep-structure product is $W_*:=c\,h\,G$ (paper 23), with $[c\,h\,G]=\mathrm{m^6\,s^{-4}}$ and the claim that "In suitable units, $c\,h\,G$ acts as an invariant benchmark for the possibility conditions of directed processes".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-lapse-as-the-gravitational-cosine">1. The lapse as the gravitational cosine</h3>
+<p><strong>The idea.</strong> $\cos\zeta_{\rm grav}\equiv\alpha$ is an identification, not a definition, and it is the one step in the paper that grounds the product in a standard object: the proper-time rate in a 3+1 split <em>is</em> lapse over gamma, so the product follows if the three channels are read as the three factors. This is a <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A derivation-shaped statement for a multiplicative time rate, in a corpus that carries a frame route with an arbitrary lapse and scale factor but writes no clock rate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, where the lapse is one of the free data of the frame.</p>
+<p><strong>What stands in the way.</strong> The identification covers only stationary spacetimes, and the paper says so; for the corpus's curved fields the correction terms in $\kappa_k$ carry the whole content, and those are fitted. What looks like a derivation is a derivation of the flat and Schwarzschild cases only.</p>
+<h3 id="2-solving-the-clock-for-math31">2. Solving the clock for $G$</h3>
+<p><strong>The idea.</strong> Every time-dilation formula can be read backwards: given $r$, $M$ and a measured rate, $G$ comes out. This is a <strong>mechanism</strong> for turning clock networks into a measurement of a constant, and the paper's only operationally novel proposal.</p>
+<p><strong>What it would add.</strong> A route to $G$ from timing alone, where the corpus carries $G$ as a constant of the frame and never as a measured output.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>, on which constant each field carries.</p>
+<p><strong>What stands in the way.</strong> The formula as printed has the bracket as $1-(T_{\rm local}/T_0\cos\zeta_{\rm kin}\cos\zeta_{\rm exp})^{2}$, whereas the Schwarzschild factor inverted from Eq. (11) gives $1-T_{\rm local}/(T_0\cos\zeta_{\rm kin}\cos\zeta_{\rm exp})$, without the square. One of the two is a typographical error, and the inversion's accuracy depends on which.</p>
+<h3 id="3-math39-as-a-product">3. $c\,h\,G$ as a product</h3>
+<p><strong>The idea.</strong> $[c\,h\,G]=\mathrm{m^6\,s^{-4}}$ is a dimension, not a quantity, and no prediction is attached to it. The paper calls it "an invariant benchmark", which is a <strong>reading</strong> with no formula behind it.</p>
+<p><strong>What it would add.</strong> Nothing checkable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-action-problem.md</code> would be the only candidate.</p>
+<p><strong>What stands in the way.</strong> A product of three constants is invariant under any choice of units and carries no information beyond the three constants; "possibility conditions" is not a quantity that can be compared to a measurement. Refused.</p>
+<p>The rank is a judgement: the lapse identification first, because it is the paper's one derivation-shaped step; the inversion second, because it is operational but has a printing defect; $c\,h\,G$ not at all.</p>
+<p>This is an eight-page paper; the channels, the master formulas, the correction terms, the $G$ inversion, EMALT, the energy equation, the GR-test list and six predictions are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

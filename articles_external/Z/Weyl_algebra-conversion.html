@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weyl Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Weyl_algebra.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="weyl-algebra"><strong>Weyl Algebra</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Weyl algebra</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Weyl_algebra-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Weyl_algebra.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Weyl_algebra.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Weyl algebra: the ring of differential operators with polynomial coefficients abstracted as a quotient of a free algebra by the commutation relation, its construction over a field in one and several variables, its simplicity, and the reason it carries the Heisenberg uncertainty principle.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"the Weyl algebras are abstracted from the ring of differential operators with polynomial coefficients. They are named after Hermann Weyl, who introduced them to study the Heisenberg uncertainty principle in quantum mechanics."</p>
+<h3 id="the-definition">The definition</h3>
+<p>"In the simplest case, these are differential operators. Let $F$ be a field, and let $F[x]$ be the ring of polynomials in one variable" — the first Weyl algebra $A_1$ is generated by $x$ and $\partial$ with the single relation $\partial x-x\partial=1$, and every element is a finite sum $\sum a_{ij}x^i\partial^j$.</p>
+<h3 id="the-properties">The properties</h3>
+<p>$A_1$ is a simple ring with no two-sided ideals, it has no finite-dimensional representations over a field of characteristic zero, and it is isomorphic to the algebra generated by two operators with the canonical commutation relation. That last property is the reason it is the algebraic skeleton of quantum mechanics: the commutator is the whole content, and everything else is a basis choice.</p>
+<p>"Weyl algebra In abstract algebra, the Weyl algebras are abstracted from the ring of differential operators with polynomial coefficients."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-commutation-relation-generates-the-algebra-and-nothing-else-is-needed">1. The commutation relation generates the algebra, and nothing else is needed</h3>
+<p><strong>The idea.</strong> $\partial x-x\partial=1$ plus associativity determine the entire ring of differential operators with polynomial coefficients. The relation is not a property of the algebra; it is its definition. This is a <strong>formula</strong> with a structural message.</p>
+<p><strong>What it would add.</strong> A model for how the corpus's canonical-commutation article could present its axiom: as the defining relation of an algebra rather than as a rule imposed on operators.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, at the definition.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra is finite-dimensional and its commutator is a consequence of the multiplication, not an added relation; the Weyl algebra's simplicity is therefore a property the corpus's algebra does not share, and the comparison has to be made with that difference visible.</p>
+<h3 id="2-a-simple-ring-with-no-finite-dimensional-representations">2. A simple ring with no finite-dimensional representations</h3>
+<p><strong>The idea.</strong> $A_1$ over a field of characteristic zero admits no finite-dimensional module. The canonical commutation relation cannot be represented by finite matrices with a trace, because taking the trace of both sides would give $0=1$.</p>
+<p><strong>What it would add.</strong> A short and decisive obstruction, which explains why the corpus's finite-dimensional algebra cannot host a canonical pair and must encode $\hbar$ differently.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, on the obstruction.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the argument is a one-line trace and can be stated directly.</p>
+<p>This is an encyclopedia article; the construction, the relation, simplicity and the representation theory are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical wavelets: Lorentz covariant, singularity-free, finite energy, zero action, localized solutions to the wave equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Physical wavelets - Lorentz covariant, singularity-free, finite energy, zero…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="physical-wavelets-lorentz-covariant-singularity-free-finite-energy-zero-action-localized-solutions-to-the-wave-equation"><strong>Physical wavelets: Lorentz covariant, singularity-free, finite energy, zero action, localized solutions to the wave equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0304081v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 9 April 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Physical wavelets - Lorentz covariant, singularity-free, finite energy, zero action, localized solutions to the wave equation - hep-th_0304081-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Physical wavelets - Lorentz covariant, singularity-free, finite energy, zero action, localized solutions to the wave equation - hep-th_0304081.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Physical wavelets - Lorentz covariant, singularity-free, finite energy, zero action, localized solutions to the wave equation - hep-th_0304081.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The author exhibits a localized solution of the wave equation in Minkowski space. The field is finite everywhere, falls off quadratically in space and time, has finite energy, and has zero action. He calls it a physical wavelet. The construction works for real and complex scalars and extends to Maxwell and Yang–Mills fields. Because the energy is finite, such configurations appear at any nonzero temperature. The wavelet is compared with solitons, instantons, and sphalerons.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-constructed">What is constructed</h3>
+<p>"I will exhibit a particularly simple 'physical wavelet' — it is a Lorentz covariant classical field configuration that lives in physical Minkowski space."</p>
+<h3 id="the-properties">The properties</h3>
+<p>"The field is everwhere finite and nonsingular, and has quadratic falloff in both space and time. The total energy is finite, the total action is zero, and the field configuration solves the wave equation."</p>
+<h3 id="the-extension">The extension</h3>
+<p>"These physical wavelets can be constructed for both complex and real scalar fields, and can be extended to the Maxwell and Yang–Mills fields in a straightforward manner."</p>
+<h3 id="the-thermal-consequence">The thermal consequence</h3>
+<p>"Since these wavelets are finite energy, they are guaranteed to be classically present at finite temperature"</p>
+<h3 id="the-comparison">The comparison</h3>
+<p>"The wavelet is neither a soliton, nor an instanton, nor a sphaleron though it shares properties with all three of these extended objects"</p>
+<h3 id="the-instability">The instability</h3>
+<p>"Like the sphaleron it is unstable to dispersal."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-zero-action-finite-energy">1. Zero action, finite energy</h3>
+<p><strong>The idea.</strong> A classical field can solve the wave equation with finite energy and vanishing action.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses massless solutions without this example. A zero-action solution is a borderline case for any action-based argument about stability.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> The solution is for flat space. Ranked first, because it is a counterexample the target should address.</p>
+<h3 id="2-localized-without-confinement">2. Localized without confinement</h3>
+<p><strong>The idea.</strong> A wave packet can stay localized without a potential or a soliton mechanism.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.md</code> treats propagation generally. A localized solution with no confining structure is a test case for any claim about spreading.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> The localization is not permanent. Ranked second.</p>
+<h3 id="3-finite-energy-means-finite-temperature">3. Finite energy means finite temperature</h3>
+<p><strong>The idea.</strong> Any finite-energy configuration is populated at nonzero temperature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> computes thermal quantities. A statement that a whole class of configurations must be thermally present is a constraint on such calculations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of ensembles.</p>
+<p><strong>What stands in the way.</strong> The argument is for flat space. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

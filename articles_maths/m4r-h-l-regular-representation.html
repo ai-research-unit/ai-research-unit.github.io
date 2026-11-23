@@ -92,10 +92,10 @@ $$</p>
 <p>$$
 \mathsf{M}_4(\tilde q)=\bigl(\ \tilde q e_t\ \big|\ \tilde q\vec e_x\ \big|\ \tilde q\vec e_y\ \big|\ \tilde q\vec e_z\ \bigr)
 =\begin{pmatrix}
-q_t&-q_x&-q_y&-q_z\\
-q_x&q_t&-q_z&q_y\\
-q_y&q_z&q_t&-q_x\\
-q_z&-q_y&q_x&q_t
+q_t&amp;-q_x&amp;-q_y&amp;-q_z\\
+q_x&amp;q_t&amp;-q_z&amp;q_y\\
+q_y&amp;q_z&amp;q_t&amp;-q_x\\
+q_z&amp;-q_y&amp;q_x&amp;q_t
 \end{pmatrix}.
 $$</p>
 <p><strong>The reading of the display.</strong> The first column is $\tilde q$ itself, so the map is injective by inspection: the element is recovered from the first column. The matrix is of the shape</p>
@@ -104,9 +104,9 @@ $$</p>
 $$</p>
 <p>with the three matrices</p>
 <p>$$
-A_1=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-A_2=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-A_3=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+A_1=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+A_2=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+A_3=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>which are antisymmetric and satisfy $A_1^{2}=A_2^{2}=A_3^{2}=-I_4$ and $A_1A_2=A_3$ cyclically. So the three generators behave as the imaginary units, and the four matrices $I_4,A_1,A_2,A_3$ span a four-dimensional subalgebra of the ambient.</p>
 <p><strong>The entries are the structure constants.</strong> Write the product as $e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}e_\rho$, with $\varepsilon_{\mu\nu}^{\ \ \rho}\in\{0,+1,-1\}$. Then the $\nu$-th column of $\mathsf{M}_4(e_\mu)$ is the array $\varepsilon_{\mu\nu}^{\ \ \cdot}$, so the sixteen displays of the units are the multiplication table read by columns, and no entry is rescaled or rotated. The display above is the same table read with the four weights $q_\mu$: its $\nu$-th column is the coordinate column of the product $\tilde q e_\nu$.</p>
@@ -260,12 +260,12 @@ $$</p>
 <p><strong>The eigenvalues.</strong> The roots are $q_t\pm i\lVert\vec v\rVert$, each with multiplicity two. Over $\mathbb{R}$ there are no eigenvalues at all unless the element is scalar; the model is therefore a real matrix with no real spectrum in general, which is the expected behaviour of a complex structure.</p>
 <p><strong>The two invariant planes.</strong> The multiplicity two is not a degeneracy: it is the complex dimension one of each eigenspace of the complex model, read as real dimension two. Concretely the carrier splits as a direct sum of two real planes on which $\mathsf{M}_4(\tilde q)$ acts by the same rotation-scaling block</p>
 <p>$$
-C=\begin{pmatrix}q_t&-\lVert\vec v\rVert\\ \lVert\vec v\rVert&q_t\end{pmatrix},
+C=\begin{pmatrix}q_t&amp;-\lVert\vec v\rVert\\ \lVert\vec v\rVert&amp;q_t\end{pmatrix},
 $$</p>
 <p>and the matrix is similar over $\mathbb{R}$ to $\operatorname{diag}(C,C)$. The two planes are the two copies of $\mathbb{C}$ that the realification creates, and the complex structure $J$ of the carrier exchanges them.</p>
 <p><strong>The displaying case.</strong> For $\tilde q=e_t+\vec e_x$, the block structure is visible in the basis itself:</p>
 <p>$$
-\mathsf{M}_4(e_t+\vec e_x)=\begin{pmatrix}1&-1&0&0\\1&1&0&0\\0&0&1&-1\\0&0&1&1\end{pmatrix},
+\mathsf{M}_4(e_t+\vec e_x)=\begin{pmatrix}1&amp;-1&amp;0&amp;0\\1&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;-1\\0&amp;0&amp;1&amp;1\end{pmatrix},
 $$</p>
 <p>the two identical blocks acting on $\operatorname{span}\{e_t,\vec e_x\}$ and on $\operatorname{span}\{\vec e_y,\vec e_z\}$. The first plane is the complex line of $\vec e_x$ and the second is its complement, and the equality of the two blocks is the statement that left multiplication by an element of a complex line acts identically on the line and on a complementary plane.</p>
 <p><strong>The diagonalisation over $\mathbb{C}$.</strong> Over $\mathbb{C}$ the matrix is diagonalisable, with diagonal form $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ where $\lambda_\pm=q_t\pm i\lVert\vec v\rVert$; the transition matrix is the matrix of the two complex eigenlines taken with their two real coordinates. So the model is diagonalisable over $\mathbb{C}$ for every element and never defective, and the whole of the spectral trichotomy of the split-quaternion category is absent: there is one spectral type, the elliptic one.</p>
@@ -292,7 +292,7 @@ $$</p>
 <p>So the conjugation is read by the adjugate and the reversal of the product by the transpose, and the two are not interchangeable: the first gives an element of $L(\mathbb{H})$, the second an element of $R(\mathbb{H})$.</p>
 <p><strong>The normality.</strong> Since $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$, every matrix of the image is <strong>normal and conformal</strong>, with all singular values equal to $\sqrt N$. The image of the invertibles is therefore a four-dimensional submanifold of $SO(4)$:</p>
 <p>$$
-\mathsf{M}_4(\mathbb{H}^{\times})=\mathbb{R}_{>0}\cdot\mathsf{M}_4(SU(2)),
+\mathsf{M}_4(\mathbb{H}^{\times})=\mathbb{R}_{&gt;0}\cdot\mathsf{M}_4(SU(2)),
 $$</p>
 <p>and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier by left multiplication.</p>
 <h2 id="the-norms">The Norms</h2>
@@ -380,7 +380,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The plain bracket.</strong> The square of the display has trace $4(q_t^{2}-\lVert\vec v\rVert^{2})$: each of the two rotation-scaling blocks contributes $2(q_t^{2}-\lVert\vec v\rVert^{2})$ to the trace, because the trace of the square of a $2\times2$ block $\begin{pmatrix}q_t&-b\\ b&q_t\end{pmatrix}$ is $2(q_t^{2}-b^{2})$. The word is the same as in the complex model, closed by one trace, and the factor $\tfrac14$ replaces the $\tfrac12$ because the real dimension is twice the complex one.</p>
+<p><strong>The plain bracket.</strong> The square of the display has trace $4(q_t^{2}-\lVert\vec v\rVert^{2})$: each of the two rotation-scaling blocks contributes $2(q_t^{2}-\lVert\vec v\rVert^{2})$ to the trace, because the trace of the square of a $2\times2$ block $\begin{pmatrix}q_t&amp;-b\\ b&amp;q_t\end{pmatrix}$ is $2(q_t^{2}-b^{2})$. The word is the same as in the complex model, closed by one trace, and the factor $\tfrac14$ replaces the $\tfrac12$ because the real dimension is twice the complex one.</p>
 <p><strong>The collapse to two.</strong> Over $\mathbb{R}$ the coefficients are real, so $\lvert q_\mu\rvert^{2}=q_\mu^{2}$ and the four brackets are two: $H=N$ and $K=P$, the matrix being real and $M^{\dagger}=M^{\mathsf T}$. What remains is the pair the article has already used, $N$ multiplicative and definite and $P$ indefinite of inertia $(1,3)$. On this model the two survivors are the two traces already met, $\tfrac14\operatorname{tr}(M^{\mathsf T}M)=N$ and $\tfrac14\operatorname{tr}(M^{2})=P$, and the other two are the same two numbers under another name. The collapse is the same in the companion model; it is caused by the reality of the coefficients and not by the size of the matrix, and it is undone by passing to the biquaternion algebra, where the coefficients are complex and the four are distinct.</p>
 <h2 id="the-subspaces">The Subspaces</h2>
 <p><strong>The tabulation.</strong> The distinguished subspaces of the algebra as matrix conditions in the regular model:</p>
@@ -571,7 +571,7 @@ $$</p>
 </tr>
 <tr>
 <td>$C$</td>
-<td>the rotation-scaling block $\begin{pmatrix}q_t&-\lVert\vec v\rVert\\ \lVert\vec v\rVert&q_t\end{pmatrix}$</td>
+<td>the rotation-scaling block $\begin{pmatrix}q_t&amp;-\lVert\vec v\rVert\\ \lVert\vec v\rVert&amp;q_t\end{pmatrix}$</td>
 <td>this article</td>
 </tr>
 <tr>

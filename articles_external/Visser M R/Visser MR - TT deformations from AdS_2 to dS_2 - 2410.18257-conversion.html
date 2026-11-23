@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TT deformations from AdS$_2$ to dS$_2$ — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - TT deformations from AdS_2 to dS_2 - 2410.18257.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tt-deformations-from-adsmath12-to-dsmath13"><strong>TT deformations from AdS$_2$ to dS$_2$</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2410.18257v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sergio E. Aguilar-Gutierrez, Andrew Svesko, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 January 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>47 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - TT deformations from AdS_2 to dS_2 - 2410.18257-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - TT deformations from AdS_2 to dS_2 - 2410.18257.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - TT deformations from AdS_2 to dS_2 - 2410.18257.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Revisits $\mathrm{T}\bar{\mathrm{T}}$ deformations for quantum theories holographically dual to two-dimensional dilaton gravity with Dirichlet boundary conditions, with the aim of understanding the microscopics of de Sitter space. The dual bulk geometry flows from anti-de Sitter to de Sitter in two ways: through centaur geometries that interpolate between $AdS_2$ and $dS_2$, or through a spherical dimensional reduction of $\mathrm{T}\bar{\mathrm{T}}+\Lambda_2$ theories. For both, the authors derive the microscopic energy spectrum, the heat capacity, and deformed Cardy formulas for the entropy in the canonical and microcanonical ensembles. In both, the heat capacity at fixed deformation parameter changes sign on the way from AdS to dS, signalling a thermodynamically unstable de Sitter patch.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"To better understand the microscopics of de Sitter space, we focus on deformations for which the dual bulk geometry flows from Anti-de Sitter to de Sitter space." The starting point is the entropy–area law for the cosmological horizon, $S_{GH}=A/4G$ (paper 1.1), and the difficulty that follows from it: "unlike black holes, adding positive energy to the dS static patch at fixed cosmological constant leads to an entropy reduction, as follows from an additional minus sign appearing in the first law of cosmological horizons. Moreover, spatial sections of dS space are spheres, having no asymptotic boundary."</p>
+<h3 id="the-two-routes">The two routes</h3>
+<p>"either through so-called centaur geometries that interpolate between $AdS_2$ and $dS_2$, or by a spherical dimensional reduction of $\mathrm{T}\bar{\mathrm{T}}+\Lambda_2$ theories". The reduction route "led us to a new type of flow connecting (A)dS$_2$ patches. Geometrically, the flow connects $AdS_2$ and $dS_2$ along their respective horizons, in contrast from the centaur model (where $dS_2$ is glued to a global $AdS_2$ region)."</p>
+<h3 id="the-microscopic-results">The microscopic results</h3>
+<p>"we uncovered many new formulae for the microscopic theory, including the energy spectrum, heat capacity, and found the entropy of the dual 1D theory obeys a deformed Cardy formula." Consequently "the thermal entropy of states dual to the $AdS_2$ region differs from the thermal entropy of states dual to the $AdS_2$ region in the centaur model, though both have a Cardy-like form. At the boundary of $AdS_2$ and at the event horizon the thermal entropy reduces to the standard Cardy formula."</p>
+<h3 id="the-instability">The instability</h3>
+<p>"In both setups a signature of the change from AdS to dS is that the heat capacity at a fixed deformation parameter of the boundary system changes sign, indicating the existence of a thermodynamically unstable de Sitter patch."</p>
+<h3 id="the-status">The status</h3>
+<p>Two dimensions, dilaton gravity, Dirichlet walls. "Our findings provide important consistency conditions for holographic models of the dS$_2$ static patch" — conditions, not a model.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-sign-change-in-the-heat-capacity-as-the-signal-of-de-sitter">1. A sign change in the heat capacity as the signal of de Sitter</h3>
+<p><strong>The idea.</strong> The heat capacity at fixed deformation parameter changes sign when the dual geometry becomes de Sitter, and the negative sign is an instability, not an error.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> computes a heat capacity for the Schwarzschild case and finds it negative, treating that as the usual black-hole peculiarity. Here a negative heat capacity is a diagnostic of a de Sitter region specifically, which gives the sign a geometric meaning the corpus's article does not have.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the specific-heat paragraph.</p>
+<p><strong>What stands in the way.</strong> It is a two-dimensional dilaton statement; the sign's meaning in four dimensions is not established here. Ranked second.</p>
+<h3 id="2-deformed-cardy-formulas-as-the-microscopic-count">2. Deformed Cardy formulas as the microscopic count</h3>
+<p><strong>The idea.</strong> The entropy of the deformed theory obeys a Cardy-like formula that reduces to the standard Cardy formula at the boundary and at the horizon, and differs in between.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> notes at open question 1 that no state count reproduces the area. A formula that reduces correctly at the horizon and is deformed away from it is a concrete candidate shape for a count, even in two dimensions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 1.</p>
+<p><strong>What stands in the way.</strong> Cardy's formula requires a two-dimensional CFT with a central charge; the corpus has neither. The cost is that only the shape, not the content, transfers.</p>
+<h3 id="3-an-entropy-that-depends-on-how-you-get-there">3. An entropy that depends on how you get there</h3>
+<p><strong>The idea.</strong> The same $AdS_2$ region reached by two different flows has two different thermal entropies, both Cardy-like.</p>
+<p><strong>What it would add.</strong> This is a sharp statement that entropy is not a function of the state alone when the state is defined by a flow; the path matters. The corpus's <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> treats its entropy as a function on states. A case where the functional would have to be path-dependent is a genuine difficulty, and it should be recorded.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The path dependence is a feature of the deformation, not of the state space; whether it is a difficulty for the corpus depends on how the corpus defines a state. Ranked first, because it touches the corpus's definition directly.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

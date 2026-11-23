@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Equation with Mass and Spin Spectrum Based on $0(3,3)$ Group for Relativistic Deformable Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Wave Equation with Mass and Spin Spectrum Based on O(3,3) Group for Relativistic…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wave-equation-with-mass-and-spin-spectrum-based-on-math9-group-for-relativistic-deformable-model"><strong>Wave Equation with Mass and Spin Spectrum Based on $0(3,3)$ Group for Relativistic Deformable Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>38</strong> (1967) 966, No. 4; received 24 May 1967</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Wave Equation with Mass and Spin Spectrum Based on O(3,3) Group for Relativistic Deformable Model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Wave Equation with Mass and Spin Spectrum Based on O(3,3) Group for Relativistic Deformable Model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Wave Equation with Mass and Spin Spectrum Based on O(3,3) Group for Relativistic Deformable Model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the bilocal model — a real 4-vector relative coordinate $x_{\mu}$ — whose natural internal group is the sixteen-parameter $GL(4,\mathbb R)$ of linear deformation-rotation, and chooses as the <em>physical</em> internal Lorentz group a non-standard $0(3,1)$ inside $GL(4,\mathbb R)\simeq 0(3,3)$ rather than the standard rotation-minus-boost one. Because the chosen generators mix rotation with spatial deformation, the internal spin spectrum acquires half-integer values, and the wave equation becomes first order. This is the paper's striking claim: half-integer spin from a bosonic coordinate, with no spinor index and no Dirac matrices.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-general-frame">The general frame</h3>
+<p>"The relativistic description of a model with internal movement must correspond to representations of the direct product group" $\mathcal P_{\text{orb}}\otimes G_{\text{in}}$, "rect product group (1) where porb denotes the orbital Poincare group acting" center-of-mass "co- ordinates x!L alone, and cin is a non-compact group containing as subgroup the inner (homogeneous) Lorentz group Lin whose generators Sp,v are responsible for the spin.*) The physical Lorentz group L LcLorbxLin Is generated by the angular momentum tensor (2) where PM is the translation" $M_{\mu\nu}=x_{[\mu}P_{\nu]}+S_{\mu\nu}$. In this frame "he early Majorana model 4 J and the Yukawa bilocal model m its original version 5) can be regarded as the simplest examples conforming to the above general framework.", with two internal degrees of freedom for $J$ and $J_3$ only.</p>
+<h3 id="why-the-standard-choice-gives-integer-spin-only">Why the standard choice gives integer spin only</h3>
+<p>For $x_{\mu}$ with canonical conjugate $p_{\mu}$, the "rotation-vibration tensor" $K_{\mu\nu}=a_{\mu}^{\dagger}a_{\nu}=\frac12[(x_{\mu}x_{\nu}+p_{\mu}p_{\nu})+i(x_{\mu}p_{\nu}-p_{\mu}x_{\nu})]$ "satisfies the U(3, 1) algebra: 11 ) K!" and "realizes its symmetric representations"; the $B_{\mu}^{\ \nu}=\frac12\{x_{\mu},p_{\nu}\}-x_{\mu}p_{\nu}-\frac{i}{2}\delta_{\mu}^{\ \nu}$ "represents the operator of linear deformation-rotation and they are generators of GL(4, R) : 11) (9) *) Here we are setting the scale factor of length as lo = 1.". Both contain $S_{\mu\nu}=-i(K_{\mu\nu}-K_{\nu\mu})$. With "ors. With the usual identification Lin=0.(3, 1), (19) s,.,.v represents the spin-tensor of the system. Thus" "The model then gives integer spin states alone."</p>
+<h3 id="the-new-choice-and-the-isomorphism">The new choice, and the isomorphism</h3>
+<p>"From the original standpoint of the usual bilocal theory, xM must transform under physical homogeneous Lorentz transformation in exactly the same way as XM, so that (19) is required." "However, if we take into account that the internal coordinates xM are not directly observable ones,*) the identification (19) is not the unique possibility for the structure." He starts from $G_{\text{in}}=GL(4,\mathbb R)$ instead, decomposes $B_{\mu}^{\ \nu}$ into $S_{\mu\nu}$, "the operator of pure dilatation" $A=B_{\mu}^{\ \mu}$, and "the deformation operator" $\Gamma_{\mu\nu}=\frac12(B_{\mu\nu}+B_{\nu\mu})-\frac14g_{\mu\nu}B_{\lambda}^{\ \lambda}$, all hermitian with $\Gamma_{\mu}^{\ \mu}=0$, and uses "the isomorphism" $$ SL(4,\mathbb R)=S0(3,3). $$ The fifteen generators recombine into $S_i^{\pm}$ and $R_{ij}$, the maximum compact subgroup $0^{+}(3)\times 0^{-}(3)=SU^{+}(2)\times SU^{-}(2)=0(4)$ of the $0(3,3)$ group, with $R_{ij}$ the non-compact generators. A new $0(3,1)$ is then chosen inside $0(3,3)$, with generators $$ \tilde S_{ik}=-\tfrac12\epsilon_{ijk}(x_0p_j+x_jp_0)+\tfrac12[x_ip_k+x_kp_i-a_0(x_ip_i-x_0p_0)], $$ so that "ote that s; combines rotation and" space-time deformation "while S~k combines boost and spatial deformation. We". "Under the physical Lorentz transfor- mation generated by (39), the internal coordinates xjJ. transforn1 according to the following unconventional linear transformation. First under space rotation, [S~, Xo] = - ~ x.": under a rotation $[\tilde S_{ij},x_0]=-\frac{i}{2}x_k$, so that $x_k$ and $x_0$ are mixed.</p>
+<h3 id="half-integer-spin-and-the-equation">Half-integer spin, and the equation</h3>
+<p>Because $\tilde S_{ij}$ "xo). Now St consists of two independent terms s,,/2 and ro"' each of which has the eigenvalue spectrum 0, +~,+1, ···, so that St also takes the same spectrum: sk+ = o+ ,<em>2</em>_!", it follows that" the spin J in this model takes integer and half-integer eigenvalues 0, !, 1, .... From (33) and (34) we also see that V,.". Further, $V_{\mu}$ defined by $V_k=R_{2k}$, $V_0=S_1^{-}$" behaves as a 4-vector "and with $\tilde S_{\mu\nu}$" gether the algebra of an 0(3, 2) subgroup of 0(3, 3), and accordingly we can assume the first order wave equation (47) "</p>
+<p>$$
+\big(V_{\mu}P^{\mu}+\kappa\big)\psi'=0,
+$$</p>
+<p>"quite analogous to the case of Majorana wave equation", with $\psi'$ "a single-component function". Space inversion is handled by a "peculiar reciprocity transformation" $x_k\to p_k$, $x_0\to p_0$, $p_k\to-x_k$, $p_0\to x_0$, "essentially the product of the normal internal reciprocity11) x/J.~pJ.I., pJ.I.~-xJ.I. and the conventional space inversion. Clearly", under which the equation is invariant.</p>
+<p>The norm "is not positive-definite. 3 Thus the infinite-dimensional representation is in fact" pseudo-unitary ". Still it is the advantage of the first order wave equation that the electromagnetic in- Downloaded from academic.oup.com/ptp/article/38/4/966/1879247". The mass spectrum is $\kappa^{2}=\kappa'^{2}\nu^{2}$ with "$\nu=1,2,3,\dots$"; "The appearance of double sign corresponds to particle-antiparticles. Each mass level is infinitely degenerate with respect to different spin values. On the other hand the wave equation ( 47) also allows space-like solutions. Thus this wave equation is not immediately a physically reasonable one. The wave equation (47) can be generalized, e."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-half-integer-spin-without-a-spinor-the-choice-of-the-internal-lorentz-subgroup">1. Half-integer spin without a spinor: the choice of the internal Lorentz subgroup</h3>
+<p><strong>The idea.</strong> A real 4-vector internal coordinate, quantised, carries only integer spin under the standard $0(3,1)$ generated by $x_{[\mu}p_{\nu]}$. Choose instead the $0(3,1)$ inside $GL(4,\mathbb R)$ whose rotations also deform, and the same bosonic coordinate carries half-integer spin, with a first-order equation and a single-component wave function.</p>
+<p><strong>What it would add.</strong> A counterexample to a reading the corpus is entitled to make. <em>The Lorentz Group in Biquaternionic Form: Structure and Representations</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>) derives in §<em>The Two $\mathrm{SU}(2)$ Halves</em> that half-integer spin needs the spinor module and that the integer-spin representations come from the vector and tensor carriers. Takabayasi's construction shows that the <em>carrier</em> does not decide the spin spectrum: the same carrier gives integer spin under one $0(3,1)$ and half-integer under another, the difference being which subalgebra of $0(3,3)$ is called the Lorentz group. Spin is a property of the pair (carrier, chosen $0(3,1)$), not of the carrier.</p>
+<p><strong>Where it lands.</strong> §<em>The Two $\mathrm{SU}(2)$ Halves</em>, as the qualification, and §<em>Where the Biquaternion Algebra Sits</em>, where the embedding is discussed.</p>
+<p><strong>What stands in the way.</strong> The new $0(3,1)$ is not the Lorentz group acting on spacetime indices: the internal coordinates then transform unconventionally, mixing space and time under rotations, and the identification is justified only by the internal coordinates' unobservability. The corpus's carriers are modules for a fixed Lorentz action, so the comparison is between a fixed action and a chosen one, and that must be said.</p>
+<h3 id="2-math64-the-deformation-group-is-a-pseudo-orthogonal-group">2. $SL(4,\mathbb R)=0(3,3)$: the deformation group is a pseudo-orthogonal group</h3>
+<p><strong>The idea.</strong> The sixteen-parameter group of linear deformation-rotation of a real 4-vector is $GL(4,\mathbb R)$; its unimodular part is $0(3,3)$, whose maximal compact subgroup is $0(4)=SU(2)\times SU(2)$ and whose fifteen generators split into two triplets of compact rotations and nine non-compact deformation generators.</p>
+<p><strong>What it would add.</strong> A real form with a physical name. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) counts carriers and finds three; the $0(3,3)$ here has the same compact part as the conformal group's $0(4,2)$ but a different signature, and it arises from a <em>real</em> $4\times4$ matrix group rather than from a complex one. That gives the corpus a fourth real form to place — not a fourth carrier, a fourth algebra.</p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the neighbouring real form.</p>
+<p><strong>What stands in the way.</strong> $0(3,3)$ appears here as an internal symmetry; the corpus's algebras act on modules over $\mathbb B$, and a real $4\times4$ group on $\mathbb R^{4}$ is not of that type.</p>
+<h3 id="3-pseudo-unitarity-is-enough-for-a-first-order-equation-with-a-minimal-coupling">3. Pseudo-unitarity is enough for a first-order equation with a minimal coupling</h3>
+<p><strong>The idea.</strong> The tower's norm is indefinite — the representation is "pseudo-unitary"— and yet the first-order equation admits the electromagnetic field by the single substitution $P_{\mu}\to P_{\mu}-eA_{\mu}$, because the current $j_{\mu}$ is explicit and conserved. The cost of indefiniteness is paid at the level of interpretation, not at the level of coupling. </p>
+<p><strong>What it would add.</strong> A concrete case for a trade the corpus discusses abstractly. <em>The Gauge Carrier of the Material Sector: Why the Action Is One-Sided</em> (<code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>) argues that minimal coupling selects a one-sided action; here minimal coupling works on a tower with an indefinite norm, so one-sidedness is not what protects positivity. </p>
+<p><strong>Where it lands.</strong> That article's section on minimal coupling, as the indefinite-norm control case. </p>
+<p><strong>What stands in the way.</strong> He calls the equation "not immediately a physically reasonable one" on account of space-like solutions, so the coupling's success is formal.</p>
+<p>The remainder, one line each. That the rest-frame symmetry is another Lorentz subgroup $0(3,1)''$ generated by $S_i^{-}$, and that adding $\kappa'S_1^{-}$ reduces it to $0(3)$, is a mass term breaking the rest symmetry. That the appendix works through bilocal models constrained by $x_{\mu}x^{\mu}=r^{2}$ or $P_{\mu}x^{\mu}=0$, reducing four internal degrees to two or three, is a catalogue for the corpus's constraint notes.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

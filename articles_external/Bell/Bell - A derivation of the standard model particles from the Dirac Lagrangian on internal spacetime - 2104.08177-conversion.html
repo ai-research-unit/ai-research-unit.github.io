@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Derivation of the Standard Model Particles from the Dirac Lagrangian on Internal Spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the standard model particles from the Dirac Lagrangian on internal spacetime -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-derivation-of-the-standard-model-particles-from-the-dirac-lagrangian-on-internal-spacetime"><strong>A Derivation of the Standard Model Particles from the Dirac Lagrangian on Internal Spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2104.08177v3 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charlie Beil</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 25 March 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Bell/Bell - A derivation of the standard model particles from the Dirac Lagrangian on internal spacetime - 2104.08177-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the standard model particles from the Dirac Lagrangian on internal spacetime - 2104.08177.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the standard model particles from the Dirac Lagrangian on internal spacetime - 2104.08177.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds spinors on a spacetime whose metric is degenerate along particle worldlines and writes the Dirac Lagrangian there. The bound states of its solutions turn out to be the Standard Model particle list, with the right spin, electric charge and colour charge for each entry, plus one state the Standard Model does not contain.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"A modification of general relativity that was recently introduced as an approximate spacetime geometric model of quantum nonlocality. In an internal spacetime, time is stationary along the worldlines of fundamental (dust) particles. Consequently, the dimensions of tangent spaces at different points of spacetime vary, and spin wavefunction collapse is modeled by the projection from one tangent space to another."</p>
+<h3 id="the-internal-metric">The internal metric</h3>
+<p>For pointon worldlines with tangent vectors $v_1,\dots,v_n$ at $p$, the internal metric is the composition of orthogonal projections
+$$h=h_p=h_{ab}:=[v_1]^a{}_c[v_2]^c{}_d\cdots[v_n]^e{}_b:\tilde M_p^*\otimes\tilde M_p\to\mathbb{R}$$
+and "The corresponding internal metric is the degenerate symmetric rank2 tensor given by the composition of projections (1) h = hp = hab := [v1 ]ac [v2 ]cd · · · [vn ]eb : M̃p∗ ⊗ M̃p → R. The (internal) tangent space at p is then the image of h at p, Mp := im h = {v a ∈ M̃p | hab v b = v a } ⊆ M̃p . Remark 1.3. A timelike geodesic β ⊂ M̃ is parameterized by its proper time." (paper Definition 1.2).</p>
+<h3 id="charge-from-an-orientation">Charge from an orientation</h3>
+<p>"Definition 1.4. The internal 4-velocity of a pointon with worldline β ⊂ M̃ and 4-velocity v is the pseudo-form ^ v̆a···b := oker h ⋆vol(ker h) ∈ dim Mβ(t) Mβ(t) ∗ , where oker h ∈ {±1} is a free parameter independent of any orientation of M̃β(t) , and ⋆vol(ker h) is the Hodge dual of the volume form of the kernel of h.", with $o_{\ker h}\in\{\pm1\}$ "The internal 4-velocity of a pointon with worldline β ⊂ M̃ and 4-velocity v is the pseudo-form ^ v̆a···b := oker h ⋆vol(ker h) ∈ dim Mβ(t) Mβ(t) ∗ , where oker h ∈ {±1} is a free parameter independent of any orientation of M̃β(t) , and ⋆vol(ker h) is the Hodge dual of the volume form of the kernel of h."</p>
+<h3 id="the-lagrangian">The Lagrangian</h3>
+<p>The paper constructs "In this article we develop spinors on an internal spacetime, and construct a new Dirac-like Lagrangian L = ψ̄(i∂/ − ω̂)ψ whose equations of motion describe their couplings and interactions. Furthermore, we show that hidden within L is the entire standard model: L contains precisely three generations of quarks and leptons, the electroweak gauge bosons, the Higgs boson, and one new massive spin-2 boson; gluons are considered in a companion article.", and finds that "$L$ contains precisely three generations of quarks and leptons, the electroweak gauge bosons, the Higgs boson, and one new massive spin-2 boson; gluons are considered in a companion article."</p>
+<h3 id="which-orbitals-fuse">Which orbitals fuse</h3>
+<p>"Theorem 5.9. The pairs of orbitals that may fuse are precisely {[a0], [0b]}, {[ab], [ab]}, {[ab], [ba]}, {[aa], [bb]}, {[↓ ∗], [∗ ↓]}, 8We nevertheless continue to call these spinors ‘pointon spinors’ for ease of notation.".</p>
+<h3 id="the-spectrum-exhaustively">The spectrum, exhaustively</h3>
+<p>"The set of all geoms partition precisely into spin/polarization bases for each standard model fermion, electroweak boson, and the Higgs boson, together with the new bosonic polarization basis ... $x_0=[\downarrow\ast,\ast\downarrow]$, $x_{ab}=[a0,0b]$" (paper Theorem 7.1). "Furthermore, each geom has the correct spin type (fermion or boson), electric charge, and color charge as the corresponding standard model particle." Gluons are "Furthermore, in [B2] we model gluons as extended objects similar to flux tubes or strings, 22 CHARLIE BEIL using internal spacetime geometry."</p>
+<p>"gluons are not point particles in our model, and thus are not geoms. Theorem"</p>
+<h3 id="the-new-state-and-how-to-remove-it">The new state, and how to remove it</h3>
+<p>The five states $x_0$, $x_{ab}$ are read as "These new polarization states partition into one of the following: (i) one massive spin-2 boson with polarization basis {x0 , x↑↓ , x↓↑ , x↑↑ , x↓↓ }; (ii) one massive spin-1 boson and one massless spin-1 boson, with respective bases {x0 , x↑↓ , x↓↑ }, {x↑↑ , x↓↓ }; or (iii) one spin-0 boson and two massless spin-1 bosons, with respective bases {x0 }, {x↑↓ , x↓↑ }, {x↑↑ , x↓↓ }." "Remark 7.2. The four polarization states xab , a, b ∈ {↑, ↓}, are excluded if we impose the condition that if a geom has two nonempty orbitals, then at least one must be ‘full’ (in the sense that both of its components are nonzero)."</p>
+<p>"The four polarization states xab , a, b ∈ {↑, ↓}, are excluded if we impose the condition that if a geom has two nonempty orbitals, then at least one must be ‘full’ (in the sense that both of its components are nonzero). The state x0 is excluded if we impose the condition that a geom may contain at most one ∗component. Although the standard model geoms would be unaffected by imposing either condition, we currently have no reason to assume these extra conditions."</p>
+<p>"Although the standard model geoms would be unaffected by imposing either condition, we currently have no reason to assume these extra conditions. Appendix A." (paper Remark 7.2).</p>
+<h3 id="why-compositeness-costs-nothing">Why compositeness costs nothing</h3>
+<p>the compositeness may be regarded as purely mathematical (similar to a direct sum decomposition of a representation into irreducibles), since the pointons in a bound state share the same worldline. In any case, this feature makes our model quite different from other composite (or preon) models and eliminates the preon problem of finite particle size.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-compositeness-without-a-size">1. Compositeness without a size</h3>
+<p><strong>The idea.</strong> The constituents share one worldline, so a composite particle has no internal separation and no form factor. The preon problem — why a composite electron shows no substructure — never arises, because there is no "inside". This is a <strong>mechanism</strong>, and it is the sharpest structural idea in the folder.</p>
+<p><strong>What it would add.</strong> A way to have a preonic spectrum without the size penalty that killed preon models, which is the standard objection the corpus's particle-content article does not need to answer because it does not posit constituents. The metric half of the construction is already in the corpus — <code>articles_physics/the-gram-matrix-as-the-only-metric.md</code> has $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ nondegenerate exactly when the four frame legs are independent — so what is new is not a degenerate metric but particles placed on the degenerate locus.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on whether the content is derived or assumed.</p>
+<p><strong>What stands in the way.</strong> The corpus's content comes from the ideal structure of its algebra, and adding a constituent layer would duplicate that derivation rather than complete it; the two would have to be shown to give the same list.</p>
+<h3 id="2-charge-as-the-orientation-of-a-vanishing-subspace">2. Charge as the orientation of a vanishing subspace</h3>
+<p><strong>The idea.</strong> Where the metric degenerates, a new $\mathbb{Z}_2$ freedom appears — the orientation of the kernel — and that bit is electric charge. Charge is then discrete by construction, and its sign is a choice of orientation rather than a quantum number assigned to a field.</p>
+<p><strong>What it would add.</strong> A reason for charge quantisation that is geometric rather than algebraic, in a corpus where charge comes from the $\mathrm{U}(1)$ factor of the algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/biquaternion-physical-interpretation-of-operator-chirality.md</code>, on the identification of a discrete algebraic choice with a physical label.</p>
+<p><strong>What stands in the way.</strong> A single $\mathbb{Z}_2$ gives a sign, not the observed ratios of $1/3$; the fractions here come from which orbitals are occupied, so the mechanism alone does not reproduce the charge lattice.</p>
+<h3 id="3-the-particle-list-is-an-exhaustive-partition">3. The particle list is an exhaustive partition</h3>
+<p><strong>The idea.</strong> The claim is not that the model contains the Standard Model particles but that it contains nothing else except the five $x$ states. A finite enumeration with no room left over is a strong kind of derivation.</p>
+<p><strong>What it would add.</strong> A model of what deriving the particle content would mean, which the corpus asserts in prose but does not exhibit as a closed list.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>, on closure of a spectrum.</p>
+<p><strong>What stands in the way.</strong> The exhaustiveness is exhaustive for geoms of at most four pointons; the bound is imposed, not derived, and a five-pointon bound state is not discussed.</p>
+<p>The rank is a judgement: compositeness without a size first, because it removes the standard objection; charge-from-orientation second, because it is the paper's most transferable identification; the exhaustive partition third, because its bound is assumed.</p>
+<p>This is a twenty-five page paper; the internal metric and its varying tangent spaces, the pointon spinor and its internal 4-momentum, the Dirac Lagrangian on the internal spacetime, colour charge, and the composite particle table are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

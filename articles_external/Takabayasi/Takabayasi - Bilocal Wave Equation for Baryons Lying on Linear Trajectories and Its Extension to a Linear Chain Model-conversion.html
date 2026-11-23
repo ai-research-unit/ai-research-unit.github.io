@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension to a Linear Chain Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bilocal-wave-equation-for-baryons-lying-on-linear-trajectories-and-its-extension-to-a-linear-chain-model"><strong>Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension to a Linear Chain Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>48</strong> (1972) 1718, No. 5; received 14 March 1972</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension to a Linear Chain Model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension to a Linear Chain Model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Bilocal Wave Equation for Baryons Lying on Linear Trajectories and Its Extension to a Linear Chain Model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>"Linearises" at works between neighbor s. The wave equation for the system for free case is N [l:(p&lt;al Y+.t 2 UN+.tN] if!=0, (3·2) 0:=1 where p&lt;al is the momentu m variable conjugat e to x&lt;al, satisfyin g (3·3) and operates on the wave function ifi(x&lt;1l, ···, x&lt;Nl) as p,.&lt;al= -ifi/fix&lt;a l,.. To show that the wave equation (3 · 2) gives again mesonic states lying on parallel linear trajector ies we proceed as follow~. In place of x,.&lt;al we employ the center-of -mass coordina te X,.= 2:.!1 x&lt;a) IN and the N -1 relative coordina te vectors N ~/= 2: Arax,.&lt;al, a=l (r=1, 2, ···, N-1) (3·4) where the coefficients Ara satisfy the relations N 2: AraAra=tJrs, a=l (3 ·5a) (r=1, 2, ···, N-1) (3·5b) The translatio n operator is P,. = 2::=1p,. &lt;al, which satisfies [~/."double Dirac string model", clarifying the continuous case's boundary conditions. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"The bilocal model represe nts a simple relativ istic oscilla tor model with in- ternal extension/&gt; and it has been known that a simple bilocal (or, more genera lly, multilo cal) wave equatio n associa ted with subsidi ary conditi on gives mesoni c states lying on linear trajectories'loB&gt; in gross accord with observ ation." The equation is second order in both $P$ and $\pi$, with a subsidiary condition that suppresses the relative-time degree. "the fundamental equations (that" "give mesonic states with normal parity lying on a linear trajectory with the slope (4../2JC)- 1 and on its parallel daughters spaced with JJ ~ -2. The leading intercept must be negative to avoid tachyons. A feature"</p>
+<h3 id="the-two-postulates">The two postulates</h3>
+<p>"I) as in the original model, a unified model for baryons (or mesons) is re- presente d by a bilocal model, which is defined by a relativist ic wave equa- Downloaded from academic.oup.com/ptp/article/48/5/1718/1886514 by guest on 12 November 2026" "At the same time we postulate that (II) for the model of baryons, the fundame ntal equation s should be linear in every momentu m variable p,.&lt;a', namely in P"' and 'lrw The latter "</p>
+<p>"The latter postulate is motivate d by admittin g the hypothes is that a relativist ic theory of a complex system should be represen ted" detailed wave equation "~hijl defined for each constitue nt point and by combinin g" princip le of Schrodin ger "that the wave equation should be of first order with respect to time-der ivation,* ' because then the fundame ntal equation s must be linear in Po &lt;aJ•s, whence must be so in all p,.&lt;a" s by relativist ic covarian ce."</p>
+<h3 id="why-three-dirac-matrices">Why three Dirac matrices</h3>
+<p>"Thus the envisage d new bilocal wave equation for baryons is attained only if we succeed" lineariz ing "the original mesonic equation (1·1) or (1· 2) rough- ly in the manner of Dirac. But this lineariza tion requires the introduc tion" three independent Dirac matrices $\Gamma^{(a)}$, one per bilocal point plus one for the internal extension. A first-order equation "containing three independent Dirac matrices, one of which is associated to the internal extension. The presence of three Dirac matrices assimilates three quark spins."</p>
+<h3 id="the-spectrum-and-the-intercept-bound">The spectrum and the intercept bound</h3>
+<p>For a fixed $K$, $J$ runs over $J=K+\tfrac12$, $K-\tfrac12,\dots,\tfrac12$, so that the maximum spin is given by $J_{\max}=K+\tfrac12$. Thus we have the highest trajectory, which is non-degenerate, with the trajectory function</p>
+<p>$$
+\alpha(s)=\frac{s-\mu_0^{2}}{\mu^{2}}+\frac12 .
+$$</p>
+<p>Parallel to this run the daughter trajectories with $\Delta J=-1,-2,\dots$. (2·35) exhibits the important consequence of our theory that the intercept $\alpha(0)$ of the leading trajectory is given by</p>
+<p>$$
+\alpha(0)=\frac12-\frac{\mu_0^{2}}{\mu^{2}}&lt;\frac12,
+$$</p>
+<p>in nice agreement with observations. For detailed comparison with empirical baryonic levels we need to take into account the unitary spin properties, which may be associated to our three $\Gamma$-matrices.</p>
+<p>In disregarding the isospin multiplicity, it is natural to identify the ground state ($\tfrac12^{+}$) as the nucleon.</p>
+<h3 id="the-chain-and-its-limit">The chain and its limit</h3>
+<p>"The generalization to the linear multilocal case which represen ts a one-dimensional chain consis- ting of N discrete points is perform ed and is analysed by the aid of normal mode expansion. The strong and electromagnetic interactions can be introduc ed to the model, though the theory is still at the non-second" quantized level. In the limit N~oo the chain model goes over to the "double Dirac string model" which is relevant to derivation of the dual ampli' tude, and this limiting transitio n from the discrete to the continuo us case clarifies the boundar y conditions and other subtleties for the latter model. §I. Introd "</p>
+<h3 id="mesons-in-the-same-scheme">Mesons in the same scheme</h3>
+<p>"The corresponding bilocal theory for mesons requirin g the introduc tion of two indepen dent Dirac matrices is stated briefiy." From the abstract: it is "a physically more realistic model for mesons" obtained by the same linearisation. </p>
+<h3 id="a-note-on-the-subsidiary-condition">A note on the subsidiary condition</h3>
+<p>"e alternative (1·7) is adopted when we understand indefinite-metric Hilbert space for the relative-time degree ~ 0 , where (1· 7) works to suppress negative- norm states. On the other hand the alternative (1· 8) is adopted when we do not resort to indefinite metric and (1· 8) works there to suppress the occurrence of infinite degeneracy of mass levels."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-first-order-in-every-momentum-is-a-constraint-strong-enough-to-fix-the-particle-content">1. First order in <em>every</em> momentum is a constraint strong enough to fix the particle content</h3>
+<p><strong>The idea.</strong> Demanding that the equation be first order in each constituent momentum is not a convenience. It is a filter: only a definite number of Dirac matrices can be introduced, the number is set by the number of points plus the extension, and so the <em>spin content</em> is fixed by the order of the equation rather than chosen. </p>
+<p><strong>What it would add.</strong> A derivation of the carrier count from an ordering requirement. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) counts what each carrier holds; here the count is forced by the demand that the equation be first order in each momentum, which is a different and stronger kind of argument — a physical principle about time evolution that ends up fixing an algebraic multiplicity. </p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the first-order requirement. </p>
+<p><strong>What stands in the way.</strong> Takabayasi's own justification is the "principle of Schrödinger", which is a hypothesis about how composite systems should be described, not a theorem; a second-order equation for baryons is not thereby excluded, only disfavoured. </p>
+<h3 id="2-the-intercept-bound-from-the-existence-of-a-conserved-current">2. The intercept bound from the existence of a conserved current</h3>
+<p><strong>The idea.</strong> $\alpha(0)=\tfrac12-\mu_0^{2}/\mu^{2}&lt;\tfrac12$ is not fitted; it follows from requiring that the model possess a conserved current and no tachyons. The observed baryon intercepts lie below $\tfrac12$, and the model says they must. </p>
+<p><strong>What it would add.</strong> An inequality rather than a value — a rarer and more robust kind of prediction. <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) asks what a spectrum leaves free; here the sign of one parameter is fixed while its magnitude is not, which is exactly the kind of partial determination that article's question is about. </p>
+<p><strong>Where it lands.</strong> §<em>What the Spectrum Fixes</em>, as the inequality case. </p>
+<p><strong>What stands in the way.</strong> The bound is strict only if $\mu_0^{2}&gt;0$, which is an assumption about the internal ground state; and in nice agreement with observations rests on intercepts extracted with Regge fits that carry their own systematics. </p>
+<h3 id="3-discrete-chain-to-continuous-string-and-the-boundary-conditions-it-clarifies">3. Discrete chain to continuous string, and the boundary conditions it clarifies</h3>
+<p><strong>The idea.</strong> $N$ points on a line with nearest-neighbour coupling, solved by normal modes, tends as $N\to\infty$ to a string. The discrete case has unambiguous boundary conditions; taking the limit tells you which conditions the continuous model must have, which is otherwise a matter of choice. </p>
+<p><strong>What it would add.</strong> A resolution of a technical ambiguity the continuous string leaves open. The corpus's string-related articles treat the continuum directly; the discrete-to-continuum route is a method the corpus lacks, and it explains <em>why</em> the string's boundary conditions are what they are. </p>
+<p><strong>Where it lands.</strong> The corpus's treatment of the string as a limit; the natural home is the conversion of <em>Theory of Relativistic String and Super-Wave Equation I</em> in this folder. </p>
+<p><strong>What stands in the way.</strong> The limit is asserted to clarify the boundary conditions; the paper's $N\to\infty$ analysis is at the level of the normal-mode expansion, and the "double Dirac string" it produces is a specific model, not the Nambu string.</p>
+<h3 id="4-two-subsidiary-conditions-with-different-jobs">4. Two subsidiary conditions with different jobs</h3>
+<p><strong>The idea.</strong> The same subsidiary condition appears in two forms, $P^{\mu}a_\mu\phi=0$ and $P^{\mu}a^{\dagger}_\mu\phi=0$. The first is used with an indefinite metric and removes negative-norm states; the second is used without one and removes infinite degeneracy. Which problem you have decides which form you need.</p>
+<p><strong>What it would add.</strong> A case where the choice of inner product determines the constraint, rather than the reverse. The whole folder worries about indefinite metric; here is a place where the author shows the two options side by side and states the price of each, which is the clearest statement of the trade in the set.</p>
+<p><strong>Where it lands.</strong> §<em>The Norm and the Invariant</em> of the conversion of <em>Group of Relativistic Internal Motion</em> in this folder, as the concrete fork.</p>
+<p><strong>What stands in the way.</strong> The two forms are not shown to give the same physics beyond the spectrum; the equivalence of the two routes is assumed rather than demonstrated.</p>
+<p>The remainder, one line each. That the meson model needs two $\Gamma$-matrices and the baryon three is the cleanest statement in the folder of why baryons are not just mesons with an extra point. That the chain's normal-mode analysis is the technical precursor of the string papers that follow.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

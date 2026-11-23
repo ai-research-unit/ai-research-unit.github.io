@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Conception of Quantum Phenomena: Logical Structure and Investigation Methods — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Model conception of quantum phenomena - logical structure and investigation methods -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="model-conception-of-quantum-phenomena-logical-structure-and-investigation-methods"><strong>Model Conception of Quantum Phenomena: Logical Structure and Investigation Methods</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0310050 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 January 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Model conception of quantum phenomena - logical structure and investigation methods - 0310050-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Model conception of quantum phenomena - logical structure and investigation methods - 0310050.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Model conception of quantum phenomena - logical structure and investigation methods - 0310050.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The long version of the model-conception paper, and the one that supplies its central concept. Its subject is logical structure: what kind of theory quantum mechanics is, and why a theory of that kind accumulates hypotheses instead of improving. He names the type — a compensating conception — and derives its pathology from the structure rather than from the people working in it. The rest is the programme: the geometry that replaces the quantum principles, and two results obtained with it that the conventional method cannot reach, the Dirac particle as a rotator and a force field responsible for pair production.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-compensating-conception">The compensating conception</h3>
+<p>The diagnosis is structural. Quantum theory keeps the Newtonian space-time model and blocks the consequences of that model wherever they conflict with experiment:</p>
+<p>"The space-time model remains to be Newtonian (nonrelativistic), but the logical and mathematical corollaries of this model which concern the quantum phenomena (motion of the small mass particles), are blocked. Corollaries of quantum principles are used instead of them." He names the resulting structure: a "logical construction, when corollaries of a false fundamental statement are replaced by the true corollaries" the true statement "will be referred to as a compensating conception."</p>
+<p>The consequence follows from the structure, not from sociology. Only consequences near the top can be guessed:</p>
+<p>"These unknown corollaries appear to be needed, when we consider a new set of physical phenomena. One can guess right the unknown corollary of the absent true fundamental statement, provided this corollary is located on the upper level of the conception statements", and so "the farther from the fundamental level are the new hypotheses located, the less is the predictability of the physical conception in the relation of the new experiments."</p>
+<p>Hence the pathology, stated as a law of the form: "if the true fundamental statement is unknown, the development of the physical conception is carried out in such a way, that the number of additional hypotheses increases, whereas the predictability of the compensating conception in the relation of new experiments decreases."</p>
+<h3 id="the-criterion-he-offers-instead">The criterion he offers instead</h3>
+<p>He is explicit that his own proposal cannot be tested the usual way: "to test the new hypothesis, which pretends to be a fundamental statement of the conception, one should use mainly such an argument, as absence of other additional hypotheses. Another criterion of the fundamental statement is the fact that it is introduced instead of a false fundamental statement, but not in addition to it."</p>
+<p>That pair of criteria is the paper's epistemology in two sentences: economy of hypotheses, and replacement rather than addition. By them, quantum mechanics fails and a geometry succeeds, since "the transition from ACQP to MCQP is to be accompanied mainly by a change of the space-time geometry."</p>
+<h3 id="two-results-the-conventional-method-cannot-reach">Two results the conventional method cannot reach</h3>
+<p>The rotator: "the Dirac particle is in reality a rotator, i.e. two particles rotating around their common center of inertia." From the body: "It may be interpreted as two classical particles, rotating around their common center of inertia. Angular momentum of this rotation forms spin of $S_{D\,cl}$." And the limit: "nstant ~. If ~ → 0, degrees of freedom, connected with rotation are suppressed. Radius of rotator tends to 0, and instead of rotator we obtain pointlike particle with spin and magnetic moment. This"</p>
+<p>The second result: "In the framework of MCQP one can discover the force field, responsible for pair production, that is impossible in the framework of ACQP."</p>
+<h3 id="why-the-conventional-method-cannot-get-there">Why the conventional method cannot get there</h3>
+<p>The reason is linearity, and it is put as a limit on what can be written at all: "One cannot imagine quantum mechanics which is nonlinear in terms of wave function, because in this case the quantum principles are violated." The model conception has no such wall, because its parameter is a function: "MCQP uses parameters of space-time geometry which can be changed fluently."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-compensating-conception">1. The compensating conception</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> of a theory's logical form: when a false fundamental statement is retained and its consequences replaced by independently guessed rules, the theory can be improved only by adding more of those rules, and its predictive power falls as it grows. The criterion for a replacement is "introduced instead of a false fundamental statement, but not in addition to it."</p>
+<p><strong>What it would add.</strong> The corpus's fundamental-elements article distinguishes what is derived from what is posited, and it treats that distinction as a bookkeeping matter with no consequence for the theory's prospects. Rylov's point is that the distinction has a consequence: a theory whose inputs are additions rather than replacements degrades. That is a testable claim about a theory's form, and the corpus can apply it to its own list — are its postulates replacing something or supplementing it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is not falsifiable in any direct way, and it is motivated by a specific historiography of quantum theory that many would contest. It also cuts at the corpus: a framework built by adding an algebra to standard quantum mechanics could be read as an addition rather than a replacement.</p>
+<h3 id="2-the-dirac-particle-as-a-rotator">2. The Dirac particle as a rotator</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> with a limit attached: the classical Dirac system is two particles rotating about their common centre, the spin is the angular momentum of that rotation, and the radius goes to zero as $\hbar\to0$, leaving a point particle with spin and magnetic moment.</p>
+<p><strong>What it would add.</strong> The corpus's spin-half fluid has vorticity but no rotation radius, and its correspondence article treats spin as a field property. A rotator gives the spin a size, and the size is set by $\hbar$ — so the model predicts that the spin's moment of inertia is not zero, which is a statement about the classical limit that the corpus has no counterpart for. That is the kind of object the corpus's fluid article would have to accommodate or exclude.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The rotator is two classical particles, so the model is not a single-particle model at all, and the two constituents are never identified with anything observable. The $\hbar\to0$ limit reproduces the point particle, so every observation at that limit agrees with the conventional account, and the difference lives only where the radius is non-zero — which is nowhere the paper computes.</p>
+<h3 id="3-fluency-of-the-parameter-as-the-advantage">3. Fluency of the parameter as the advantage</h3>
+<p><strong>The idea.</strong> A <strong>claim about method</strong>: the model conception's free input is a function of two points, so changing the theory is changing a function, whereas the axiomatic conception's free input is a rule, so changing the theory is changing its structure. Fluency, not truth, is the argument.</p>
+<p><strong>What it would add.</strong> The corpus's parameter count article measures how many constants a framework carries; this measures how hard they are to vary. Those are different quantities, and the second is the one that matters for a research programme: a constant that can be tuned lets a framework absorb data, which is a vice as much as a virtue. Stating both would let the corpus say which of its own inputs are tunable and whether that is good.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> Fluency is also the compensating conception's disease — a hypothesis added near the data is fluent too. The paper does not distinguish tuning that fits from tuning that explains, and without that distinction the argument proves too much.</p>
+<p>The rank: the compensating conception first, because it is the one idea with a criterion attached; the rotator second, because it is a concrete object; fluency last, because it argues in the wrong direction as easily as the right one.</p>
+<p>The remaining items in one line each: the five-row ACQP/MCQP table, already summarised from 0302022; the claim that the geometry, not the quantum principles, sets the boundary of the quantum domain; and the note that the hydrodynamic interpretation is primary in MCQP and secondary in ACQP, which reverses the usual derivation order.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trace Dynamics, Octonions, and Unification: An $E_8	imes E_8$ Theory of Unification — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, octonions, and unification An E8 x E8 theory of unification - 2501.18139.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="trace-dynamics-octonions-and-unification-an-math9-theory-of-unification"><strong>Trace Dynamics, Octonions, and Unification: An $E_8	imes E_8$ Theory of Unification</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2501.18139v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, January 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>J. Phys. Conf. Ser. 2912 (2024) 012009</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Trace dynamics, octonions, and unification An E8 x E8 theory of unification - 2501.18139-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, octonions, and unification An E8 x E8 theory of unification - 2501.18139.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, octonions, and unification An E8 x E8 theory of unification - 2501.18139.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A compressed statement of the whole programme in seven ingredients: trace dynamics, the spectral action, split bioctonions as coordinates, $E_8\times E_8$ and its branching, Clifford algebras for particle content, the exceptional Jordan algebra for the constants, and the recovery of the standard model plus general relativity. The payoff is six forces instead of four, with the two new ones — a gravitational analogue of the strong force and a dark electromagnetism sourced by the square root of mass — doing identifiable work.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"Quantum theory takes classical spacetime as a given. However, classical spacetime is produced by classical material bodies. These classical objects are a limiting case of quantum theory. Therefore, quantum theory depends on its own limit: this is an approximation."</p>
+<p>"There must exist a reformulation of quantum theory, which does not depend on classical spacetime."</p>
+<h3 id="the-seven-ingredients">The seven ingredients</h3>
+<p>Trace dynamics; a Lagrangian based on the spectral action; split bioctonions; $E_8\times E_8$ and its branching; Clifford algebras, spinors and particle content; the exceptional Jordan algebra and the derivation of dimensionless constants; and recovering the observed universe, with "two new forces, thus bringing the total number of fundamental forces to six."</p>
+<h3 id="why-this-branching">Why this branching</h3>
+<p>"Why this particular branching, in which each of the two $E_8$-s branches into four $SU(3)$s? This is motivated from the celebrated Freudenthal-Tits magic square."</p>
+<p>"Starting with E8 we ask what is the decomposition which preserves the complex structure? The answer is SU (3) × E6 . Next, what"</p>
+<h3 id="the-six-forces">The six forces</h3>
+<p>$SU(3)_C\otimes SU(2)_L\otimes U(1)_Y\otimes SU(3)_{grav}\otimes SU(2)_R\otimes U(1)_g$</p>
+<h3 id="the-new-charge">The new charge</h3>
+<p>"One key new feature of our theory is that we have introduced the charge square-root of mass for $U(1)_{grav}$, in analogy with electric charge for $U(1)_{em}$."</p>
+<p>"The motivation for introducing the charge" $\pm\sqrt{m}$ "is the experimental fact that the square roots of the masses of the electron, up quark, down quark are in the ratio" $(1/3,2/3,1)$.</p>
+<h3 id="the-six-dimensional-outcome">The six-dimensional outcome</h3>
+<p>"One time and one space direction is shared with ours, so that together they constitute a 6D spacetime with signature" $(3,3)$. And: "Only quantum systems access the 6D spacetime; classical systems live in 4D. The second 4D spacetime is curved by the weak force."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-magic-square-chooses-the-gauge-group">1. The magic square chooses the gauge group</h3>
+<p><strong>The idea.</strong> A <strong>selection principle</strong>: the branching of $E_8$ into four $SU(3)$s is not chosen for phenomenological convenience. It is the unique decomposition that iterates the step of preserving the complex structure down the Freudenthal–Tits square: $E_8\to SU(3)\times E_6$, then $E_6\to SU(3)\times F_4$, then $F_4\to SU(3)\times SU(3)$.</p>
+<p><strong>What it would add.</strong> The corpus's unification articles take the gauge group as given and ask what it predicts. This makes the group a consequence of an algebraic classification — the magic square is a finite table, and one row of it is being read off. That converts a choice into a derivation, which is exactly the kind of move the corpus values most.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/derivations-and-the-peirce-decomposition.md</code>.</p>
+<p><strong>What stands in the way.</strong> The iteration requires an additional criterion — preserving the complex structure — which is natural but not forced.</p>
+<h3 id="2-gravity-has-a-strong-force-analogue-and-dark-electromagnetism-has-a-mass-charge">2. Gravity has a strong-force analogue, and dark electromagnetism has a mass charge</h3>
+<p><strong>The idea.</strong> A <strong>prediction pair</strong>: the right-handed sector carries $SU(3)_{grav}$, confining like QCD but coupling to mass, and $U(1)_{grav}$ with charge $\pm\sqrt{m}$, whose like signs attract. Because our universe is matter-dominated, the dark electromagnetic force is essentially always attractive and can act as a dark matter fluid.</p>
+<p><strong>What it would add.</strong> The corpus contains MOND discussions and dark-sector discussions, usually as separate problems. This makes both consequences of one unbroken right-handed sector, and supplies the charge that MOND needs — the square root of mass — from the same ratios that fix the electric charges. Two problems, one structure, is a strong economy argument, and the corpus has no other proposal that does this.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> No confining scale for $SU(3)_{grav}$ is computed, so the force's range and strength are unconstrained.</p>
+<h3 id="3-the-extra-dimensions-are-large-and-holographic">3. The extra dimensions are large and holographic</h3>
+<p><strong>What the idea is.</strong> A <strong>number</strong>: the six-dimensional arena is not Planck-sized. The extra dimensions have modulus of order $10^{-18}$ to $10^{-15}$ m, consistent with $l\sim R^{1/3}$ in Planck units from the holographic bound.</p>
+<p><strong>What it would add.</strong> Extra dimensions in the corpus are usually assumed compact and small, which is why they are unobservable. Large extra dimensions change the phenomenology entirely and make the six-dimensional claims testable at collider and tabletop scales. The holographic scaling relation also ties the size of the extra dimensions to the cosmic horizon, which is a prediction no compactification scheme makes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper describes this as work still in progress; the $R^{1/3}$ scaling comes from the holographic bound by dimensional analysis rather than by a derivation.</p>
+<p>The rank: the magic-square selection first, because it removes a choice; the two-force prediction second, because it unifies two open problems; the large dimensions third, because they make the theory testable.</p>
+<p>The remaining items in one line each: the trace Lagrangian with two unequal Grassmann numbers, which is the dynamical core and recurs throughout; the $Cl(6)$ construction from complexified octonions with one imaginary held fixed, which yields one generation with correct charges; and the statement that the bosonic Lagrangian yields the weak mixing angle, which is the programme's most concrete numerical success.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

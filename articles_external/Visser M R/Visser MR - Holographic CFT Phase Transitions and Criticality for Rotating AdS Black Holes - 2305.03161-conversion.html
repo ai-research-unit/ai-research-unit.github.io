@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-cft-phase-transitions-and-criticality-for-rotating-ads-black-holes"><strong>Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2305.03161v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Moaathe Belhaj Ahmed, Wan Cong, David Kubizňák, Robert B. Mann, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 25 October 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes - 2305.03161-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes - 2305.03161.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Rotating AdS Black Holes - 2305.03161.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Applies the exact dictionary between extended black-hole thermodynamics and the thermodynamics of the dual conformal field theory to states dual to neutral singly spinning anti-de Sitter black holes. Two independent conjugate pairs are included on the field-theory side, the central charge with its potential and the pressure with the volume, which raises the count of distinct ensembles to eight. Three of the eight show interesting phase behaviour, including behaviour that the bulk thermodynamics alone does not exhibit. The authors argue that prescribing a volume and a central charge for the CFT requires a new scale — the radius $R$ of the CFT sphere — rather than keeping $R=L$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-count">The count</h3>
+<p>"The inclusion of the conjugate thermodynamic pair $(C,\mu)$ (the central charge and its associated chemical potential) increases the number of possible thermodynamic ensembles to eight – we have uncovered interesting phase behavior in three of them."</p>
+<h3 id="the-choice-of-dictionary">The choice of dictionary</h3>
+<p>In earlier work "it was argued that the (inverse) central charge plays a similar role to the thermodynamic pressure $P\propto1/L^2$ in the bulk thermodynamics of AdS black holes. However ... this does not lead to a satisfactory duality between the bulk and boundary thermodynamics. To achieve this latter goal, one needs to either view Newton's constant $G_N$ as a variable whose variation is related to variations in the CFT central charge, or introduce a new scale $R$ for the radius of the CFT sphere. We find the latter scenario much more plausible." A "reshuffling and rescaling of thermodynamic variables is needed to arrive at the holographic dictionary ... which gives a clean duality between bulk and boundary first laws and Smarr relations."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"In this new setting, we find that all the interesting phase behaviours in [earlier work] are preserved by the CFT" — so the rewrite is a clarification, not a revision. The bulk phases remain, and the CFT reproduces them, plus additional structure in three ensembles.</p>
+<h3 id="the-physics">The physics</h3>
+<p>Rotation adds a $\tilde\Omega\delta J$ term and makes the volume and central charge relations more involved. The qualitative result is that the rotating case has a richer ensemble structure than the charged case, where only one ensemble showed criticality.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-ensembles-multiply-once-two-pairs-are-independent">1. Ensembles multiply once two pairs are independent</h3>
+<p><strong>The idea.</strong> With $n$ independent conjugate pairs there are $2^n$ ensembles, and the phase structure differs among them. This is a <strong>number</strong> with a combinatorial cause.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> works with $(M,S,Q)$ and one imported pair, and never considers that holding different variables fixed changes the physics. The combinatorial statement is a structural fact about thermodynamic descriptions that the article's first law would need to acknowledge.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the ensemble caveat.</p>
+<p><strong>What stands in the way.</strong> It applies to five-dimensional rotating AdS with holographic variables; the corpus's variables are three. Ranked third.</p>
+<h3 id="2-the-bulk-is-not-always-richer-than-the-boundary">2. The bulk is not always richer than the boundary</h3>
+<p><strong>The idea.</strong> Some phase behaviour appears in the CFT ensembles that the bulk thermodynamics does not display; the boundary description is not merely a translation.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code> looks for two descriptions that are the same. A case where one description has structure the other lacks is a counterexample to the assumption that a duality preserves thermodynamic content, and it is worth recording.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The extra structure is ensemble-dependent, which is exactly why it appears on one side. Ranked second.</p>
+<h3 id="3-a-new-scale-is-needed-to-make-two-variables-independent">3. A new scale is needed to make two variables independent</h3>
+<p><strong>The idea.</strong> To have volume and central charge independently variable, the CFT needs its own radius $R$ distinct from the AdS radius $L$; without a second scale the two vary together.</p>
+<p><strong>What it would add.</strong> This is a <strong>reading</strong> with general content: two independent thermodynamic variables require two independent scales. The corpus's <code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code> builds its metric from the algebra with, in effect, one scale. The observation says what would be needed to have a richer thermodynamics, and it is a constraint the article could state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is a statement about holographic CFTs; the corpus's scale freedom is the overall normalisation of the algebra. Ranked first, because it is a clean structural observation that survives the change of setting.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

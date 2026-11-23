@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novel stability approach of thin-shell gravastars — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Novel stability approach of thin-shell gravastars - 1512.07659.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="novel-stability-approach-of-thin-shell-gravastars"><strong>Novel stability approach of thin-shell gravastars</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.07659v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Francisco S. N. Lobo, Prado Martín-Moruno, Nadiezhda Montelongo-García, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 23 December 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (WSPC proceedings format)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Novel stability approach of thin-shell gravastars - 1512.07659-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Novel stability approach of thin-shell gravastars - 1512.07659.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Novel stability approach of thin-shell gravastars - 1512.07659.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors set up a general framework for spherical thin-shell gravastars whose shell can move. They derive the junction conditions and the surface conservation law, which includes a flux term from the bulk momentum impinging on the shell. They then do a linearised stability analysis. The new step is to treat the surface mass as a function of the potential, so that choosing a potential fixes the mass needed on the shell. Stability then becomes a statement about the shell's material.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framework">The framework</h3>
+<p>"We develop an extremely general and robust framework that can be adapted to wide classes of generic spherically symmetric thin-shell gravastars."</p>
+<h3 id="the-dynamics">The dynamics</h3>
+<p>"The thin shell (transition layer) will be permitted to move freely in the bulk spacetimes, permitting a fully dynamic analysis."</p>
+<h3 id="the-stability-result">The stability result</h3>
+<p>"This will then allow us to perform a general stability analysis, where it is explicitly shown that stability of the gravastar is related to the properties of the matter residing in the thin-shell transition layer."</p>
+<h3 id="the-sign-issue">The sign issue</h3>
+<p>"Due to the definition of the normals on the junction interface, a few strategic sign flips arise when comparing thin-shell gravastars and traversable wormhole configurations."</p>
+<h3 id="the-flux">The flux</h3>
+<p>"an analysis of the conservation law of the surface stresses implies the presence of a flux term, corresponding to the net discontinuity in the (bulk) momentum flux which impinges on the shell."</p>
+<h3 id="the-new-step">The new step</h3>
+<p>"we introduced a novel approach, where we have considered the surface mass as a function of the potential, so that specifying the latter tells us how much surface mass we need to put on the transition layer."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"This procedure demonstrates in full generality that the stability of the thin shell is equivalent to choosing suitable properties for the material residing on the thin shell."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-conservation-on-a-surface-needs-a-flux">1. Conservation on a surface needs a flux</h3>
+<p><strong>The idea.</strong> A shell's own conservation law is not closed; the bulk momentum crossing it appears as a source.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> derives conservation in the bulk. A lower-dimensional conservation law with a flux from the ambient space is a structure the target's derivation does not produce.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conservation.</p>
+<p><strong>What stands in the way.</strong> The shell is an idealised surface. Ranked first, because it is a conservation law of a kind the target lacks.</p>
+<h3 id="2-stability-as-a-choice-of-material">2. Stability as a choice of material</h3>
+<p><strong>The idea.</strong> Once the potential is fixed, stability reduces to picking the right surface matter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what constrains a model. Here a physical requirement selects among materials, which is a selection principle the target does not have.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The selection is within a thin-shell ansatz. Ranked second.</p>
+<h3 id="3-signs-depend-on-the-normal">3. Signs depend on the normal</h3>
+<p><strong>The idea.</strong> Comparing a shell around a compact object with a wormhole throat flips signs because the normal is chosen differently.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> is about sign bookkeeping between conventions. A worked case where an orientation choice flips physical conclusions is a concrete example of the cost of a convention error.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on signs.</p>
+<p><strong>What stands in the way.</strong> The flip is geometric, not algebraic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

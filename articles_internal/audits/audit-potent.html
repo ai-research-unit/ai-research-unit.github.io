@@ -275,10 +275,10 @@
 </tbody>
 </table></div>
 <p>These are not one family. §<em>The Plain Capitals Are Not One Family</em> gives the evidence and the method. The sub-agent builds a file whitelist and never runs a substitution over the tree for these two.</p>
-<p><strong>Three spellings, counted once.</strong> Every glyph of these families is written in one of three ways: $\tilde\Pi$, $\tilde \Pi$ with a space, and $\tilde{\Pi}$ with braces. The spaced form is $44$ sites, $38$ of them $\tilde \Pi$ and $6$ of them $\vec \Upsilon$, and the braced form is $216$ across the six accented families. A pattern written for one spelling silently misses the others, and the braced form is the one that hides, because <code>\tilde{\Pi}</code> reads to a careless pattern as a plain $\Pi$. The numbers above come from the single pattern $\\(tilde|vec)\s*\{?\\<letter>\}?(?![A-Za-z])$, which catches all three; the plain-$\Pi$ figure of $8\,118$ also counts the $184$ braced or spaced accented sites that begin with that letter, so the truly plain count is about $7\,934$. The sub-agent re-measures with that pattern and does not trust any other.</p>
+<p><strong>Three spellings, counted once.</strong> Every glyph of these families is written in one of three ways: $\tilde\Pi$, $\tilde \Pi$ with a space, and $\tilde{\Pi}$ with braces. The spaced form is $44$ sites, $38$ of them $\tilde \Pi$ and $6$ of them $\vec \Upsilon$, and the braced form is $216$ across the six accented families. A pattern written for one spelling silently misses the others, and the braced form is the one that hides, because <code>\tilde{\Pi}</code> reads to a careless pattern as a plain $\Pi$. The numbers above come from the single pattern <code>\\(tilde|vec)\s*\{?\\&lt;letter&gt;\}?(?![A-Za-z])</code>, which catches all three; the plain-$\Pi$ figure of $8\,118$ also counts the $184$ braced or spaced accented sites that begin with that letter, so the truly plain count is about $7\,934$. The sub-agent re-measures with that pattern and does not trust any other.</p>
 <h2 id="5-the-plain-capitals-are-not-one-family">5. The Plain Capitals Are Not One Family</h2>
 <p>This section exists because a blanket rule for the plain $\Pi$ would corrupt the physics corpus. The audits below are complete for the forms they name; each is a <code>grep</code> the sub-agent can repeat.</p>
-<h3 id="the-plain-math161-in-the-physics-corpus">The plain $\Pi$ in the physics corpus</h3>
+<h3 id="the-plain-math523-in-the-physics-corpus">The plain $\Pi$ in the physics corpus</h3>
 <p>$992$ sites in $64$ distinct forms. Six meanings besides the idempotent:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -321,7 +321,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="the-plain-math185-in-the-mathematical-corpus">The plain $\Pi$ in the mathematical corpus</h3>
+<h3 id="the-plain-math547-in-the-mathematical-corpus">The plain $\Pi$ in the mathematical corpus</h3>
 <p>$7\,623$ sites, of which $5\,523$ are the sign pair ($\Pi_+$, $\Pi_-$, $\Pi_\pm$ in two spellings). The idempotent is the overwhelming majority, and two other meanings still exist:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -344,7 +344,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="the-plain-math195">The plain $\Upsilon$</h3>
+<h3 id="the-plain-math557">The plain $\Upsilon$</h3>
 <p>$104$ sites, measured: $14$ in physics and $90$ in mathematical. Three readings, and only one is the nilpotent. The plan's first figure of $83$, with $16$ and $67$, ran low on both corpora; and the pattern that produced it ended in <code>(?![A-Za-z_])</code>, which is also the defect of check 10 as first drafted: it cannot see <code>\Upsilon_{12}</code>, so it reports $27$ and $72$ where a bare <code>\Upsilon</code> reports $14$ and $90$. <strong>The counting pattern must be the bare letter, with the two accents subtracted</strong>, and that is what check 11 does.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -547,7 +547,7 @@ $$</p>
 <li><strong>Keep the register of the file.</strong> These files are written in short declarative sentences; a rewritten paragraph keeps that register. No new emphasis, no new bold beyond the existing use for a definition.</li>
 <li><strong>A row that says "where no tilde is written" carries the tag.</strong> The tag replaces the tilde distinction; it does not sit beside it. The pre-pass tables of the tilde-free layers read $\Pi$ and $\Upsilon$, and they are now $\Pi_{\mathrm{id}}$ and $\Pi_{\mathrm{nil}}$, with $\Pi_{\mathrm{id},\pm}$ for the pair of idempotents. The nilpotent row keeps the words <em>where no tilde is written</em>, because in those layers no tilde is written: only the letter changes. A table left in the pre-pass form is not a harmless survivor: it is the instruction the articles follow, so a file whose tables and prose still say $\Pi$ will grow new $\Pi$ long after the pass. This was the defect the review found in <code>physics/special-element-conventions.md</code>, whose three rows contradicted the mathematics file that had already been migrated. Check every table row, every case-rule sentence and every "Summary of Notation" row for the untagged spelling before the file is called finished.</li>
 </ol>
-<h3 id="physicsspecial-element-conventionsmd-198-lines-math336-sites">physics/special-element-conventions.md — 198 lines, $93$ sites</h3>
+<h3 id="physicsspecial-element-conventionsmd-198-lines-math698-sites">physics/special-element-conventions.md — 198 lines, $93$ sites</h3>
 <p>The primary file of the physics corpus, and the order of work is the order of its sections.</p>
 <p><strong>§The Special Elements: Root, Idempotent and Nilpotent, first paragraph.</strong> The sentence <code>A root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$</code> becomes <code>A root $\tilde{Ζ}$, an idempotent $\tilde\Pi_{\mathrm{id}}$ or a nilpotent $\tilde\Pi_{\mathrm{nil}}$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use</code>. The point of the sentence is unchanged and its three examples now show one letter in two kinds.</p>
 <p><strong>§The Potent Tag, a new subsection, placed immediately after that paragraph.</strong></p>
@@ -665,7 +665,7 @@ $$</p>
 </table></div>
 <p><strong>§The Spinor Convention, both definitions.</strong> <code>S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)</code> becomes <code>S_\pm(\vec u)=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u)</code>, and <code>\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)</code> becomes the same glyph. In the elementary-spinor paragraph, <code>$d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$</code> becomes <code>$d_0\tilde\Pi_{\mathrm{id},+}(\vec u)+d_1\vec\pi_{\mathrm{nil}}(\vec u)$</code>. The bare $\nu(\vec u)$ is the companion nilpotent of the ideal, pure, and it must not survive the pass: after the wave-number migration the bare $\nu$ is the wave number, so a bare $\nu$ here would become a false statement about a frequency.</p>
 <p><strong>§Summary and §Summary of Notation.</strong> Both carry the six glyphs and both are rewritten to the tagged forms. The sentence <code>a root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be</code> becomes <code>a root $\tilde{Ζ}$, an idempotent $\tilde\Pi_{\mathrm{id}}$ and a nilpotent $\tilde\Pi_{\mathrm{nil}}$ or $\tilde\pi_{\mathrm{nil}}$ are generic elements whose glyph records what they are known to be</code>. The summary table rows follow.</p>
-<h3 id="mathsspecial-element-and-peirce-conventionsmd-330-lines-math448-sites">maths/special-element-and-peirce-conventions.md — 330 lines, $159$ sites</h3>
+<h3 id="mathsspecial-element-and-peirce-conventionsmd-330-lines-math751-sites">maths/special-element-and-peirce-conventions.md — 330 lines, $159$ sites</h3>
 <p>The primary file of the mathematical corpus and the harder of the two, because it states the Peirce convention as well.</p>
 <p><strong>§The Special Elements, opening.</strong> The same rewrite as the physics file, with $\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{nil}}$. Add the §<em>The Potent Tag</em> subsection verbatim from the physics file except for one clause, which is added here and not there: <code>In the general Peirce convention the glyph is read for an arbitrary associative algebra with unit, and the tag applies there too: the family is $\Pi_{\mathrm{id},1},\dots,\Pi_{\mathrm{id},n}$ and a Peirce unit is $\Upsilon_{\mathrm{nil},ij}$.</code></p>
 <p><strong>§The Root Convention.</strong> The pointer sentence takes the tag; the root table does not change; add <code>The root is outside the potent family and carries no tag.</code></p>
@@ -699,7 +699,7 @@ $$</p>
 </ul>
 <p><strong>§The Spin and Spinor Convention.</strong> <code>$\tilde S_k=\tfrac12 i\vec e_k$</code> is <strong>not</strong> in the family and is untouched. The carriers <code>$S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$</code> and the idempotents <code>$\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$</code> take the tag. The companion in <code>$d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$</code> becomes <code>$d_1\vec\pi_{\mathrm{nil}}(\vec u)$</code>, for the reason given for the physics file.</p>
 <p><strong>§Summary and §Summary of Notation.</strong> Sixteen sites each. Rewrite both; the prose summary repeats the case rule in the sentence <code>The glyph is $\Pi$ in the tilde-free layers, $\tilde\pi$ in the quaternion and split-quaternion layers, $\tilde\Pi$ in the biquaternion and split-biquaternion layers</code>, which becomes <code>The case gives the layer and the tag gives the kind: $\Pi_{\mathrm{id}}$ and $\Pi_{\mathrm{nil}}$ in the tilde-free layers, $\tilde\pi_{\mathrm{id}}$ and $\tilde\pi_{\mathrm{nil}}$ in the quaternion and split-quaternion layers, $\tilde\Pi_{\mathrm{id}}$ and $\tilde\Pi_{\mathrm{nil}}$ in the biquaternion and split-biquaternion layers.</code></p>
-<h3 id="physicsphysics-units-and-common-elements-conventionsmd-292-lines-math526-sites">physics/physics-units-and-common-elements-conventions.md — 292 lines, $26$ sites</h3>
+<h3 id="physicsphysics-units-and-common-elements-conventionsmd-292-lines-math766-sites">physics/physics-units-and-common-elements-conventions.md — 292 lines, $26$ sites</h3>
 <p>This file is a catalogue, so it is edited row by row and the rows are the definition of the dimension.</p>
 <p><strong>§The Layer Glyphs, the row of $\tilde\Pi$.</strong> Becomes <code>$\tilde\Pi_{\mathrm{id}}$</code>, with the formula <code>$\Pi_{\mathrm{id},t}e_t+\vec\Pi_{\mathrm{id}}$, with $\tilde\Pi_{\mathrm{id}}^2=\tilde\Pi_{\mathrm{id}}$</code>, the space <code>$\mathbb{B}$; $\mathbb{B}_{\Psi}$ when $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{id}}$</code>, and the meaning cell <code>A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ is the minimal left ideal, the state module. The retarded pure state of the moving-charge exercise is $\tilde\Pi_{\mathrm{id}}(\vec u_R)=\tfrac12(e_t+i\vec u_R)$</code>.</p>
 <p><strong>The row of $\tilde\pi$ is split into two rows.</strong> This is the most important single edit in the file, because the row is the only place in the corpus where two meanings share a glyph and the row currently records the doubling without a mark.</p>
@@ -776,7 +776,7 @@ $$</p>
 <p><strong>§The Common Elements, the sector paragraph.</strong> The sentence <code>The sector precedes the role and the index, so $\tilde S_{\Psi,\mathrm{tot},\eta}$ and $\tilde J_{\Phi,\nu}$</code> gains one clause: <code>and the potent tag is a label of the same kind, so a sector, if one were ever written on a potent glyph, would precede the tag: the order is sector, kind, sign, index</code>.</p>
 <p><strong>§The Observables, the States and the Quantum Objects, the row of $\tilde{\mathcal E}_{\Psi}$.</strong> The meaning cell ends <code>a rank-one effect is the idempotent $\tilde\Pi$</code>, which becomes <code>a rank-one effect is the idempotent $\tilde\Pi_{\mathrm{id}}$</code>.</p>
 <p><strong>§The Most Common Quaternions and Biquaternions.</strong> Three sites; the glyphs take the tag and no dimension changes.</p>
-<h3 id="physicsalgebra-and-element-conventionsmd-446-lines-math579-sites">physics/algebra-and-element-conventions.md — 446 lines, $6$ sites</h3>
+<h3 id="physicsalgebra-and-element-conventionsmd-446-lines-math795-sites">physics/algebra-and-element-conventions.md — 446 lines, $6$ sites</h3>
 <p><strong>§The Centre and the Vector Subspace, the pure glyphs.</strong> <code>the pure nilpotent is $\vec\Upsilon$ in the biquaternion layer and $\vec\nu$ in the quaternion layer</code> becomes <code>the pure nilpotent is $\vec\Pi_{\mathrm{nil}}$ in the biquaternion layer and $\vec\pi_{\mathrm{nil}}$ in the quaternion layer</code>. The pure root $\vec{Ζ}$ and $\vec\zeta$ are untouched.</p>
 <p><strong>The same section, the arrow-over-tilde paragraph.</strong> Three sentences change and one must be replaced.</p>
 <ul>
@@ -785,28 +785,28 @@ $$</p>
 <li><code>The special conventions that write the root $\tilde{Ζ}$ or the nilpotent $\tilde\Upsilon$ name the general element of that class</code> becomes <code>... or the nilpotent $\tilde\Pi_{\mathrm{nil}}$ ...</code>.</li>
 <li><code>no glyph of the corpus carries both: the general element is $\vec Q$ and not an arrowed $\tilde Q$, and an idempotent has no arrowed form at all</code> becomes <code>no glyph of the corpus carries both: the general element is $\vec Q$ and not an arrowed $\tilde Q$, and the arrow falls on one tag only — $\vec\Pi_{\mathrm{nil}}$ and $\vec\pi_{\mathrm{nil}}$ are written and $\vec\Pi_{\mathrm{id}}$ and $\vec\pi_{\mathrm{id}}$ are not</code>. The replacement is not optional: without it the file contradicts the scheme, and the contradiction is exact, because the old sentence forbids an arrowed $\Pi$ while the new scheme writes one.</li>
 </ul>
-<h3 id="mathsalgebra-and-element-conventionsmd-385-lines-math608-sites">maths/algebra-and-element-conventions.md — 385 lines, $19$ sites</h3>
+<h3 id="mathsalgebra-and-element-conventionsmd-385-lines-math799-sites">maths/algebra-and-element-conventions.md — 385 lines, $19$ sites</h3>
 <p>The same two paragraphs as the physics file, with the split-biquaternion and split-quaternion layers added to every clause, and then the notation table.</p>
 <p><strong>§The Summary of Notation, four rows.</strong> <code>$\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer</code> becomes <code>$\tilde\pi_{\mathrm{nil}}$</code>; <code>$\tilde\Upsilon$</code> becomes <code>$\tilde\Pi_{\mathrm{nil}}$</code>; <code>$\Upsilon$</code> becomes <code>$\Pi_{\mathrm{nil}}$</code>; the row <code>$\vec{Ζ}$, $\vec\Upsilon$ | A pure root of $1$ and a pure nilpotent ...; $\vec\zeta$ and $\vec\nu$ in the quaternion and split-quaternion layers</code> becomes <code>$\vec{Ζ}$, $\vec\Pi_{\mathrm{nil}}$ | ...; $\vec\zeta$ and $\vec\pi_{\mathrm{nil}}$ in the quaternion and split-quaternion layers</code>.</p>
-<h3 id="mathsmatrix-representations-conventionsmd-965-lines-math624-sites">maths/matrix-representations-conventions.md — 965 lines, $125$ sites</h3>
+<h3 id="mathsmatrix-representations-conventionsmd-965-lines-math800-sites">maths/matrix-representations-conventions.md — 965 lines, $125$ sites</h3>
 <p>The largest site count outside the two special-element files, and the file that fixes the canonical frame.</p>
 <p><strong>§The Peirce Frame, $28$ sites.</strong> The four-element basis <code>(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)</code> becomes <code>(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})</code>. The products <code>\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-</code> and <code>\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+</code> become <code>$\vec\Pi_{\mathrm{nil},+}\vec\Pi_{\mathrm{nil},-}=\tilde\Pi_{\mathrm{id},-}$</code> and <code>$\vec\Pi_{\mathrm{nil},-}\vec\Pi_{\mathrm{nil},+}=\tilde\Pi_{\mathrm{id},+}$</code>. The squares $\vec\Upsilon_\pm^2=0$ become $\vec\Pi_{\mathrm{nil},\pm}^2=0$.</p>
 <p><strong>§The Switch Between the Two Frames, $64$ sites.</strong> The change of frame uses the four units; every glyph takes the tag, and <strong>$C_{\Pi}$ is a matrix and does not</strong>: its label names the change and not an element, and it is entered in the exclusion list of §<em>The Plain Capitals Are Not One Family</em>.</p>
 <p><strong>§The Two Tensor Factors, §The Bridge to the $4\times4$ Displays, §Summary, §Summary of Notation.</strong> The glyphs take the tag; the arrays, indices and labels do not.</p>
-<h3 id="physicsmatrix-representations-conventionsmd-1117-lines-math633-sites">physics/matrix-representations-conventions.md — 1117 lines, $136$ sites</h3>
+<h3 id="physicsmatrix-representations-conventionsmd-1117-lines-math807-sites">physics/matrix-representations-conventions.md — 1117 lines, $136$ sites</h3>
 <p>The same as the mathematical file, section by section, plus one that exists only here.</p>
 <p><strong>§The Legacy Pauli Gamma Formulation, $8$ sites.</strong> The Peirce pair appears in the gamma display. The glyphs take the tag and <strong>the display is not rearranged</strong>: a gamma array is read as it stands, and $\gamma_5$ keeps its index, which belongs to that display.</p>
 <p><strong>§The $M_4(\mathbb{C})$ Pauli Representation and §The Pauli Form, $6$ sites.</strong> The glyphs take the tag; the matrices $M_4$ do not.</p>
-<h3 id="mathsnorm-and-unitary-conventionsmd-and-physicsnorm-and-pairing-conventionsmd-math639-sites-each">maths/norm-and-unitary-conventions.md and physics/norm-and-pairing-conventions.md, $2$ sites each</h3>
+<h3 id="mathsnorm-and-unitary-conventionsmd-and-physicsnorm-and-pairing-conventionsmd-math813-sites-each">maths/norm-and-unitary-conventions.md and physics/norm-and-pairing-conventions.md, $2$ sites each</h3>
 <p>One sentence each, §<em>The Unitary Convention</em>: <code>beside the root $\tilde{Ζ}$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$</code> becomes <code>beside the root $\tilde{Ζ}$, the idempotent $\tilde\Pi_{\mathrm{id}}$ and the nilpotent $\tilde\pi_{\mathrm{nil}}$</code>. Nothing else in either file.</p>
-<h3 id="mathsindex-and-notation-conventionsmd-468-lines-math646-sites">maths/index-and-notation-conventions.md — 468 lines, $5$ sites</h3>
+<h3 id="mathsindex-and-notation-conventionsmd-468-lines-math814-sites">maths/index-and-notation-conventions.md — 468 lines, $5$ sites</h3>
 <p><strong>§The Subscripts.</strong> The sentence <code>as in $\tilde\Pi_+$ and $\tilde\Pi_-$</code> becomes <code>as in $\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},-}$</code>; the table row <code>a sign | $\tilde\Pi_\pm$</code> becomes <code>a sign | $\tilde\Pi_{\mathrm{id},\pm}$</code>; the reduced-biquaternion sentence keeps $\Pi_\pm$ in the prose and takes <code>$\Pi_{\mathrm{id},\pm}$</code> in the formula. <strong>Add one sentence to the paragraph on the label</strong>, because this file is where the rule lives: <code>The potent tag is the leading label of a potent glyph, and it precedes the sign and the index for the reason every label does: $\tilde\Pi_{\mathrm{id},1}$ and not $\tilde\Pi_{1,\mathrm{id}}$.</code></p>
-<h3 id="physicsindex-and-notation-conventionsmd-152-lines-math657-sites">physics/index-and-notation-conventions.md — 152 lines, $7$ sites</h3>
+<h3 id="physicsindex-and-notation-conventionsmd-152-lines-math816-sites">physics/index-and-notation-conventions.md — 152 lines, $7$ sites</h3>
 <p>The same sentence and the same addition, in §<em>The Subscripts</em>. In §<em>The Labels</em> the sentence <code>the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$</code> becomes <code>the truncated pair $\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$</code>, and it is worth one clause: <code>the pair is written with the arrow and the tag, and the letters $a$ and $a^{*}$ are the abstract ladder, which is not an element</code>.</p>
-<h3 id="mathsoperator-family-conventionsmd-252-lines-math662-sites">maths/operator-family-conventions.md — 252 lines, $11$ sites</h3>
+<h3 id="mathsoperator-family-conventionsmd-252-lines-math817-sites">maths/operator-family-conventions.md — 252 lines, $11$ sites</h3>
 <p><strong>§The Change $C_{\Pi}$, $7$ sites.</strong> The matrix $C_{\Pi}$ keeps its glyph throughout: it is a change of frame, its columns are the four Peirce units, and the label names the change. Add one sentence at its first use: <code>The label is the frame and not an element: the matrix stays $C_{\Pi}$, and $C_{\Pi_{\mathrm{id}}}$ is not written.</code></p>
 <p><strong>§$L$, $R$, $LR$, $\Theta$, $2$ sites, and the two summaries, $2$ sites.</strong> The glyphs take the tag.</p>
-<h3 id="physicsoperator-and-calculus-conventionsmd-math674-sites">physics/operator-and-calculus-conventions.md — $3$ sites</h3>
+<h3 id="physicsoperator-and-calculus-conventionsmd-math827-sites">physics/operator-and-calculus-conventions.md — $3$ sites</h3>
 <p><strong>§The Legacy Pauli Gamma Formulation.</strong> The Peirce pair in the gamma display takes the tag, and the display is not rearranged, as in the matrix file.</p>
 <h3 id="the-five-files-with-no-potent-glyph">The five files with no potent glyph</h3>
 <p><code>frame-and-metric-conventions.md</code> and <code>product-and-form-conventions.md</code> in both corpora, and <code>maths/operator-and-calculus-conventions.md</code>, carry none of the nine families and are not opened. Their checks are the corpus-wide checks and not edits. The sub-agent verifies the emptiness before skipping a file: <code>grep -c '\\Pi\|\\pi\|\\Upsilon\|\\nu' &lt;file&gt;</code> is not the test, because it counts $\pi$ the constant; the test is the pattern of §<em>Checks Before a Batch Is Closed</em>, check 1 and check 2.</p>
@@ -937,7 +937,7 @@ SITES = [('Pi', 'Pi', 'id', ('tilde',)), ('pi', 'pi', 'id', ('tilde',)),
          ('Upsilon', 'Pi', 'nil', ('tilde', 'vec')), ('nu', 'pi', 'nil', ('tilde', 'vec'))]
 
 def read_sub(s, i):
-    r&quot;&quot;&quot;s[i] == '_'. Return (content, end): balanced {...} or a single token.&quot;&quot;&quot;
+    r"""s[i] == '_'. Return (content, end): balanced {...} or a single token."""
     j = i + 1
     if j &lt; len(s) and s[j] == '{':
         depth, k = 0, j
@@ -959,18 +959,18 @@ def read_sub(s, i):
     return m.group(0), j + m.end()
 
 def first_word(sub):
-    r&quot;&quot;&quot;The first word of a \mathrm{...} subscript, or None. 'id,sym' gives 'id'.&quot;&quot;&quot;
+    r"""The first word of a \mathrm{...} subscript, or None. 'id,sym' gives 'id'."""
     m = re.match(r'\s*\\mathrm\{([A-Za-z]+)(?=[,}])', sub)
     return m.group(1) if m else None
 
 def unbrace(text, letter):
-    r&quot;&quot;&quot;\tilde{\Pi} to \tilde\Pi, so the three spellings meet one rule.&quot;&quot;&quot;
+    r"""\tilde{\Pi} to \tilde\Pi, so the three spellings meet one rule."""
     return re.sub(r'\\(tilde|vec)\s*\{\\%s\}' % letter,
                   lambda m: '\\' + m.group(1) + '\\' + letter, text)
 
 def convert(text, letter, kind, glyph, accents, optional=False, emit=None):
-    r&quot;&quot;&quot;optional: a site with no accent is a site too. emit: the accent written in
-    place of the one matched, '' for none. Step 4 is the only caller that sets either.&quot;&quot;&quot;
+    r"""optional: a site with no accent is a site too. emit: the accent written in
+    place of the one matched, '' for none. Step 4 is the only caller that sets either."""
     alt = '|'.join(accents)
     pat = re.compile((r'(?:\\(%s)\s*)?\\%s(?![A-Za-z])' if (optional or emit is not None)
                       else r'\\(%s)\s*\\%s(?![A-Za-z])') % (alt, letter))
@@ -1390,10 +1390,10 @@ out:  $\Pi_{\mathrm{id},12}$, $\Pi_{\mathrm{id}}$, $\Pi_{\mathrm{nil},12}$, $\Pi
 <h2 id="12-worked-examples">12. Worked Examples</h2>
 <p><strong>The exceptional point.</strong></p>
 <p>$$
-\mathsf M_2(\tilde Q)\sim\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}
+\mathsf M_2(\tilde Q)\sim\begin{pmatrix}Q_t&amp;1\\0&amp;Q_t\end{pmatrix}
 =Q_tI_2+\mathsf M_2(\tilde\Pi_{\mathrm{nil}}),
 \qquad
-\mathsf M_2(\tilde\Pi_{\mathrm{nil}})=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\mathsf M_2(\tilde\Pi_{\mathrm{nil}})=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix},
 \qquad
 \exp(\tilde\Pi_{\mathrm{nil}})=e_t+\tilde\Pi_{\mathrm{nil}} .
 $$</p>
@@ -1529,7 +1529,7 @@ grep -c 'tilde\\Pi_{\\mathrm{nil' articles_maths/the-classes-of-element-of-the-c
 <p><strong>Stage D must not be run by rule, and this file's own step 4 is what tempted the first run into it.</strong> The rule as stated — <em>a projector, a vacuum, a state, or a coordinate of one of those is an idempotent</em> — reads as a license to tag every <code>\Pi</code> in a paragraph that mentions a projector. It is not. Of $6\,996$ plain tags written by rule, $3\,904$ sat in paragraphs that mention no idempotent at all: the gauge propagator $\Pi\equiv-\sum p_\mu p_\mu$, the Pontryagin and Krein space $\Pi_1$, the polarisation operator, the transfer-operator density, the Hutchinson coding map, the Markov projection, and a symbol name in the operator-family conventions. In <code>time-reversal-and-the-transfer-operator.md</code> one side of $\Pi^{1/2}P\Pi^{-1/2}$ was tagged and the other was not, so one formula named two things. No check catches that, because every string is well formed. The whole stage was reverted and the tree rebuilt from <code>HEAD</code> with stage C only. <strong>A plain capital is tagged when the sentence that contains it says it is an idempotent, citing $\Pi^2=\Pi$, an ideal, a Peirce family, or a sign pair — and not otherwise.</strong></p>
 <p><strong>The arrow never falls on an idempotent, and that includes the coordinate vector.</strong> This file's own units row, <code>$\tilde\pi_{\mathrm{id}}=\pi_{\mathrm{id},t}e_t+\vec\pi_{\mathrm{id}}$</code>, writes the forbidden form: <code>\vec\pi_{\mathrm{id}}</code> is the vector part of the coordinates and not an element. The maths special-element file already has it right, <code>its vector part $\vec\Pi = \vec\pi + i\vec\pi'$</code>, untagged. Follow the maths file, or write the coordinates out in full.</p>
 <p><strong>The plan invented a third letter, and then a wrong tilde.</strong> The layer table carried $\Upsilon_{\mathrm{nil}}$ for the complex, split-complex and dual layers — a glyph that is not in the roster and that the author had never asked for. The first repair replaced it with $\tilde\Pi_{\mathrm{nil}}$, which is the same mistake in a different glyph: <strong>the tilde marks the quaternion and biquaternion layers only</strong>, so a tilde on the capital of the complex layer is false by the case rule that this pass is supposed to enforce. The correct glyph is the plain capital, $\Pi_{\mathrm{nil}}$. Both errors were well formed and neither was caught by a pattern check; the second was caught by the author reading the convention. The rule is now §<em>The Two Principles</em>, the paragraphs <strong>There is no third letter</strong> and <strong>The arrow is the third accent</strong>, checks 11 and 12. <strong>A glyph that exists only because the plan made it up is the one kind of error no pattern check finds.</strong></p>
-<p><strong>A stale table outranks a migrated article, and the review found one.</strong> The physics special-element file kept three rows in the pre-pass spelling — <code>| $\Pi$ | ... where no tilde is written |</code>, `| $\Pi_\pm | ... |`, `| $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |` — and its case-rule sentence and notation row with them, while the mathematics file of the same stage had already been migrated. $68$ article sites then wrote the retired glyph, which is what the review saw. The two files had each been checked against this plan and never against each other. Stage A is finished when the two files agree row for row, and rule 7 of §<em>General instructions</em> is the test.</p>
+<p><strong>A stale table outranks a migrated article, and the review found one.</strong> The physics special-element file kept three rows in the pre-pass spelling — <code>| $\Pi$ | ... where no tilde is written |</code>, <code>| $\Pi_\pm | ... |</code>, <code>| $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |</code> — and its case-rule sentence and notation row with them, while the mathematics file of the same stage had already been migrated. $68$ article sites then wrote the retired glyph, which is what the review saw. The two files had each been checked against this plan and never against each other. Stage A is finished when the two files agree row for row, and rule 7 of §<em>General instructions</em> is the test.</p>
 <p><strong><code>\mathrm{Sd}_{\mathrm{id},\mathrm{id},b,a}</code> is not a double tag.</strong> It is the signed-adjoint operator of the legacy corpus, with the automorphism $\alpha=\mathrm{id}$ in both slots; the subscript is a slot pair, not a kind. A double tag is a kind word repeated on a potent glyph, which is why check 3 names the glyph.</p>
 <p><strong>The plan's counts are approximations and the report's are measurements.</strong> The differences are not small: the momentum table listed a <code>special-element-conventions.md</code> row that never existed, and the direction-vector counts missed every <code>\vec{\nu}</code> because the pattern required a space. Correct the report, not this file, when they disagree — the numbers here are guides for ordering a batch and nothing else.</p>
 <h2 id="15-rollback">15. Rollback</h2>

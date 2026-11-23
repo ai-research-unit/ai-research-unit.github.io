@@ -116,7 +116,7 @@
 <p>$$
 \tilde Q=r\,\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
-<p>with $r>0$ the scale, $\varkappa_{\mathrm{phs}}$ the central phase of modulus one, $\tilde U_{\mathrm b}$ the boost, Hermitian positive definite of norm one, and $\tilde u_{\mathrm r}$ the rotor.</p>
+<p>with $r&gt;0$ the scale, $\varkappa_{\mathrm{phs}}$ the central phase of modulus one, $\tilde U_{\mathrm b}$ the boost, Hermitian positive definite of norm one, and $\tilde u_{\mathrm r}$ the rotor.</p>
 <p><strong>The rotor.</strong> It is</p>
 <p>$$
 \tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U,\qquad \tilde U=\tilde Q/\Rho,
@@ -193,9 +193,9 @@ $$</p>
 <p>$$
 T(\tilde u)=
 \begin{pmatrix}
-c_\theta+n_x^{2}(1-c_\theta)&n_xn_y(1-c_\theta)-n_zs_\theta&n_xn_z(1-c_\theta)+n_ys_\theta\\
-n_yn_x(1-c_\theta)+n_zs_\theta&c_\theta+n_y^{2}(1-c_\theta)&n_yn_z(1-c_\theta)-n_xs_\theta\\
-n_zn_x(1-c_\theta)-n_ys_\theta&n_zn_y(1-c_\theta)+n_xs_\theta&c_\theta+n_z^{2}(1-c_\theta)
+c_\theta+n_x^{2}(1-c_\theta)&amp;n_xn_y(1-c_\theta)-n_zs_\theta&amp;n_xn_z(1-c_\theta)+n_ys_\theta\\
+n_yn_x(1-c_\theta)+n_zs_\theta&amp;c_\theta+n_y^{2}(1-c_\theta)&amp;n_yn_z(1-c_\theta)-n_xs_\theta\\
+n_zn_x(1-c_\theta)-n_ys_\theta&amp;n_zn_y(1-c_\theta)+n_xs_\theta&amp;c_\theta+n_z^{2}(1-c_\theta)
 \end{pmatrix}.
 $$</p>
 <p>The diagonal carries the squares of the components of the axis; the off-diagonal carries the products and the single terms in $s_\theta$. The symmetric part of the array depends on $\vec n$ only through $\vec n\vec n^{\mathsf T}$, which is the projector on the axis, and the antisymmetric part is $\sin\theta$ times the generator of the axis.</p>
@@ -208,25 +208,25 @@ $$</p>
 <p>$$
 T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_x\Bigr)=
 \begin{pmatrix}
-1&0&0\\
-0&\cos\theta&-\sin\theta\\
-0&\sin\theta&\cos\theta
+1&amp;0&amp;0\\
+0&amp;\cos\theta&amp;-\sin\theta\\
+0&amp;\sin\theta&amp;\cos\theta
 \end{pmatrix},
 $$</p>
 <p>$$
 T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_y\Bigr)=
 \begin{pmatrix}
-\cos\theta&0&\sin\theta\\
-0&1&0\\
--\sin\theta&0&\cos\theta
+\cos\theta&amp;0&amp;\sin\theta\\
+0&amp;1&amp;0\\
+-\sin\theta&amp;0&amp;\cos\theta
 \end{pmatrix},
 $$</p>
 <p>$$
 T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_z\Bigr)=
 \begin{pmatrix}
-\cos\theta&-\sin\theta&0\\
-\sin\theta&\cos\theta&0\\
-0&0&1
+\cos\theta&amp;-\sin\theta&amp;0\\
+\sin\theta&amp;\cos\theta&amp;0\\
+0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>Each is the elementary rotation about one coordinate axis, and each leaves one coordinate untouched. The three are the same matrix with the letters permuted: the first fixes the $x$ coordinate, the second the $y$, the third the $z$.</p>
@@ -255,9 +255,9 @@ $$</p>
 <h3 id="the-matrices">The Matrices</h3>
 <p><strong>The generators.</strong> Put</p>
 <p>$$
-K_x=\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},\qquad
-K_y=\begin{pmatrix}0&0&1\\0&0&0\\-1&0&0\end{pmatrix},\qquad
-K_z=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix}.
+K_x=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;-1\\0&amp;1&amp;0\end{pmatrix},\qquad
+K_y=\begin{pmatrix}0&amp;0&amp;1\\0&amp;0&amp;0\\-1&amp;0&amp;0\end{pmatrix},\qquad
+K_z=\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Each is the matrix of the map $\vec v\mapsto\vec e_k\times\vec v$ in the basis $(\vec e_x,\vec e_y,\vec e_z)$, with the quaternion product $\vec e_x\vec e_y=\vec e_z$.</p>
 <p><strong>The bracket.</strong> They satisfy</p>
@@ -279,13 +279,13 @@ $$</p>
 <p><strong>The shape of the three.</strong> Each of the three matrices has exactly two nonzero entries, $+1$ and $-1$, placed symmetrically about the diagonal in the plane of the two coordinates it moves, and a zero row and a zero column in the coordinate it fixes. Each has zero diagonal. Each is antisymmetric. The three are the same array with the letters permuted, and no one of them occupies a distinguished place in the page.</p>
 <p><strong>The cyclic symmetry.</strong> Conjugation by the cyclic permutation matrix</p>
 <p>$$
-P=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},
+P=\begin{pmatrix}0&amp;0&amp;1\\1&amp;0&amp;0\\0&amp;1&amp;0\end{pmatrix},
 \qquad P^{-1}K_xP=K_z,\quad P^{-1}K_zP=K_y,\quad P^{-1}K_yP=K_x,
 $$</p>
 <p>permutes the three generators with no sign. The permutation is the relabelling $x\mapsto y\mapsto z\mapsto x$ of the three axes. Verified exactly.</p>
 <p><strong>The transposition reverses the orientation.</strong> Conjugation by the transposition</p>
 <p>$$
-S=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix},
+S=\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix},
 \qquad S^{-1}K_zS=-K_z,
 $$</p>
 <p>changes the sign of one generator, and only one. Verified exactly. The sign is not a defect of the display: it is the orientation of the quaternion product, which distinguishes a cyclic permutation from an anticyclic one. A display that made the three generators agree under transposition would have lost the orientation of $\mathbb{B}$.</p>
@@ -294,8 +294,8 @@ $$</p>
 <p>$$
 \mathsf M_2\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_z\Bigr)=
 \begin{pmatrix}
-e^{-i\theta/2}&0\\
-0&e^{i\theta/2}
+e^{-i\theta/2}&amp;0\\
+0&amp;e^{i\theta/2}
 \end{pmatrix},
 $$</p>
 <p>and a rotation about any other axis is not. That is the precise sense in which the spinor display in this frame writes one direction into the page: one of the three elementary rotations is diagonal and the other two are not.</p>
@@ -376,26 +376,26 @@ $$</p>
 <h3 id="the-embedding">The Embedding</h3>
 <p><strong>The padding.</strong> Extend by a trivial summand,</p>
 <p>$$
-\iota:\mathrm{SU}(3)\hookrightarrow\mathrm{SU}(4),\qquad U\longmapsto\begin{pmatrix}U&0\\0&1\end{pmatrix}.
+\iota:\mathrm{SU}(3)\hookrightarrow\mathrm{SU}(4),\qquad U\longmapsto\begin{pmatrix}U&amp;0\\0&amp;1\end{pmatrix}.
 $$</p>
 <p>Composing with the complexified defining representation,</p>
 <p>$$
 \iota\circ\rho_{\mathbb{C}}:\mathrm{SO}(3,\mathbb{R})\hookrightarrow\mathrm{SU}(4),\qquad
-R\longmapsto\begin{pmatrix}R&0\\0&1\end{pmatrix}.
+R\longmapsto\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}.
 $$</p>
 <p><strong>The three checks.</strong> Injective, because the top-left block recovers $R$. A homomorphism, because block-diagonal multiplication multiplies the blocks. Unitary and of determinant one, because</p>
 <p>$$
-\begin{pmatrix}R&0\\0&1\end{pmatrix}^{\dagger}\begin{pmatrix}R&0\\0&1\end{pmatrix}
-=\begin{pmatrix}R^{\dagger}R&0\\0&1\end{pmatrix}=\mathrm I_4,
+\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}^{\dagger}\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}
+=\begin{pmatrix}R^{\dagger}R&amp;0\\0&amp;1\end{pmatrix}=\mathrm I_4,
 \qquad
-\det\begin{pmatrix}R&0\\0&1\end{pmatrix}=\det R\cdot1=1 .
+\det\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}=\det R\cdot1=1 .
 $$</p>
 <p><strong>So the group sits in $SU(4)$ and not merely in $PU(4)$.</strong> There is no double cover and no quotient at this step: the map is one-to-one, the image is a three-dimensional real Lie subgroup of $SU(4)$ isomorphic to $\mathrm{SO}(3,\mathbb{R})$, and the whole of $\mathrm{SO}(3)$ is present.</p>
 <p><strong>The forced spectator.</strong> Suppose the fourth entry is a phase $\lambda$ instead of $1$. Unitarity gives $\lvert\lambda\rvert=1$, and the determinant gives $\det R\cdot\lambda=\lambda=1$. So $\lambda=1$: the padding entry is forced. Nothing else fills the slot in a unitary determinant-one way.</p>
 <p><strong>The spectrum of the padded matrix.</strong> For a rotation of angle $\theta$,</p>
 <p>$$
-\operatorname{spec}\begin{pmatrix}R&0\\0&1\end{pmatrix}=\{1,1,e^{i\theta},e^{-i\theta}\},\qquad
-\operatorname{tr}\begin{pmatrix}R&0\\0&1\end{pmatrix}=2+2\cos\theta=4\cos^{2}\frac{\theta}{2}.
+\operatorname{spec}\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}=\{1,1,e^{i\theta},e^{-i\theta}\},\qquad
+\operatorname{tr}\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}=2+2\cos\theta=4\cos^{2}\frac{\theta}{2}.
 $$</p>
 <p>The trace is the squared modulus of the spinor trace. The padding adds one eigenvalue $1$, and one only.</p>
 <h3 id="the-spectator-is-not-a-direction">The Spectator Is Not a Direction</h3>
@@ -407,14 +407,14 @@ $$</p>
 <h3 id="the-slot-is-a-frame-choice">The Slot Is a Frame Choice</h3>
 <p><strong>The two paddings.</strong> The matrices</p>
 <p>$$
-A=\begin{pmatrix}R&0\\0&1\end{pmatrix}
+A=\begin{pmatrix}R&amp;0\\0&amp;1\end{pmatrix}
 \qquad\text{and}\qquad
-B=\begin{pmatrix}1&0\\0&R\end{pmatrix}
+B=\begin{pmatrix}1&amp;0\\0&amp;R\end{pmatrix}
 $$</p>
 <p>are both in $SU(4)$ for every $R\in\mathrm{SO}(3)$. They are not equal, and they are conjugate.</p>
 <p><strong>The conjugation.</strong> Let $P$ be the cyclic permutation of the four slots,</p>
 <p>$$
-P=\begin{pmatrix}0&0&0&1\\1&0&0&0\\0&1&0&0\\0&0&1&0\end{pmatrix},
+P=\begin{pmatrix}0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad \det P=-1 .
 $$</p>
 <p>Then $P^{-1}AP$ is a matrix with a trivial block in a slot other than the last and the rotated block in the remaining three, and the three coordinates inside the block are relabelled by the same permutation. Verified on a generic rotation of angle $0.83$ about the axis $(0.3,1,-0.7)$: the conjugated matrix has determinant $1$, one coordinate untouched, and the other three carrying the same rotation in the relabelled order.</p>
@@ -434,8 +434,8 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde Q)\,R_{\mathrm{axf}}(\tilde Q^{\natural})=
 \begin{pmatrix}
-\langle\tilde Q\rangle_{\natural}&0\\
-0&T(\tilde Q)
+\langle\tilde Q\rangle_{\natural}&amp;0\\
+0&amp;T(\tilde Q)
 \end{pmatrix},
 $$</p>
 <p>with $T$ the $3\times3$ matrix of §<em>The Vector Image of the Rotor</em>, written in the coordinates $(\vec e_x,\vec e_y,\vec e_z)$.</p>
@@ -444,7 +444,7 @@ $$</p>
 <p><strong>The consequence for the rotor.</strong> For a rotor $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, so</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
-\begin{pmatrix}1&0\\0&R(\tilde u_{\mathrm r})\end{pmatrix},
+\begin{pmatrix}1&amp;0\\0&amp;R(\tilde u_{\mathrm r})\end{pmatrix},
 $$</p>
 <p>which is the padded matrix of §<em>The Padding to SU(4)</em> with the spectator in the first slot rather than the last. Checked on one hundred random rotors with residual $4.4\times10^{-16}$.</p>
 <p><strong>This is the point of the whole article.</strong> The corpus already prints the complexified defining representation of the rotor. It prints it as the bottom-right block of the axis-free matrix of a two-sided operator, and it prints the spectator as the top-left block, which for the rotor is the scalar $1$ because the conjugation fixes the scalar line.</p>
@@ -508,47 +508,47 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u_{\mathrm r})=
 \begin{pmatrix}
-c&0&0&-s\\
-0&c&-s&0\\
-0&s&c&0\\
-s&0&0&c
+c&amp;0&amp;0&amp;-s\\
+0&amp;c&amp;-s&amp;0\\
+0&amp;s&amp;c&amp;0\\
+s&amp;0&amp;0&amp;c
 \end{pmatrix},
 $$</p>
 <p>and, since $\tilde u_{\mathrm r}^{\natural}=c\,e_t-s\,\vec e_z$, the axis-free right matrix of the conjugate is</p>
 <p>$$
 R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
 \begin{pmatrix}
-c&0&0&s\\
-0&c&-s&0\\
-0&s&c&0\\
--s&0&0&c
+c&amp;0&amp;0&amp;s\\
+0&amp;c&amp;-s&amp;0\\
+0&amp;s&amp;c&amp;0\\
+-s&amp;0&amp;0&amp;c
 \end{pmatrix}.
 $$</p>
 <p><strong>The product is exact and integral.</strong></p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
 \begin{pmatrix}
-1&0&0&0\\
-0&0&-1&0\\
-0&1&0&0\\
-0&0&0&1
+1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1
 \end{pmatrix}
 =
 \begin{pmatrix}
-1&0\\
-0&R
+1&amp;0\\
+0&amp;R
 \end{pmatrix},
 \qquad
-R=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix}.
+R=\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>Every entry is an integer. The half-angle square roots of the two factors cancel in the product, and what remains is the exact quarter turn.</p>
 <p><strong>The padded form of the paper.</strong> In the paper's slot order the same rotation is</p>
 <p>$$
 \begin{pmatrix}
-0&-1&0&0\\
-1&0&0&0\\
-0&0&1&0\\
-0&0&0&1
+0&amp;-1&amp;0&amp;0\\
+1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1
 \end{pmatrix}\in\mathrm{SU}(4).
 $$</p>
 <p>The two arrays are the same element with the spectator at opposite ends.</p>
@@ -556,8 +556,8 @@ $$</p>
 <p>$$
 \mathsf M_2(\tilde u_{\mathrm r})=
 \begin{pmatrix}
-e^{-i\pi/4}&0\\
-0&e^{i\pi/4}
+e^{-i\pi/4}&amp;0\\
+0&amp;e^{i\pi/4}
 \end{pmatrix},
 $$</p>
 <p>with trace $\sqrt2=2\cos(\pi/4)$ and determinant one. The trace identity of §<em>The Rotor Case</em> reads, at this angle,</p>
@@ -566,7 +566,7 @@ $$</p>
 $$</p>
 <p><strong>The same rotor at twice the angle.</strong> At $\theta=2\pi$ the rotor is $-e_t$, the spinor block is $-\mathrm I_2$ of trace $-2$, and the vector block is</p>
 <p>$$
-T(-e_t)=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix},
+T(-e_t)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>of trace $3$. The half-angle and the sign are gone, and the trace identity still holds: $3+1=4=(-2)^{2}$.</p>
 <h3 id="a-second-worked-case-the-letters-permuted">A Second Worked Case, the Letters Permuted</h3>
@@ -574,43 +574,43 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u_{\mathrm r})=
 \begin{pmatrix}
-c&-s&0&0\\
-s&c&0&0\\
-0&0&c&-s\\
-0&0&s&c
+c&amp;-s&amp;0&amp;0\\
+s&amp;c&amp;0&amp;0\\
+0&amp;0&amp;c&amp;-s\\
+0&amp;0&amp;s&amp;c
 \end{pmatrix},
 \qquad
 R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
 \begin{pmatrix}
-c&s&0&0\\
--s&c&0&0\\
-0&0&c&-s\\
-0&0&s&c
+c&amp;s&amp;0&amp;0\\
+-s&amp;c&amp;0&amp;0\\
+0&amp;0&amp;c&amp;-s\\
+0&amp;0&amp;s&amp;c
 \end{pmatrix}.
 $$</p>
 <p><strong>The product.</strong> The block in the first two slots cancels, because the two factors turn that plane in opposite senses; the block in the last two doubles the angle,</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
 \begin{pmatrix}
-1&0&0&0\\
-0&1&0&0\\
-0&0&\cos\theta&-\sin\theta\\
-0&0&\sin\theta&\cos\theta
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;\cos\theta&amp;-\sin\theta\\
+0&amp;0&amp;\sin\theta&amp;\cos\theta
 \end{pmatrix}
-=\begin{pmatrix}1&0\\0&R_x(\theta)\end{pmatrix},
+=\begin{pmatrix}1&amp;0\\0&amp;R_x(\theta)\end{pmatrix},
 \qquad
-R_x(\theta)=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix}.
+R_x(\theta)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;\cos\theta&amp;-\sin\theta\\0&amp;\sin\theta&amp;\cos\theta\end{pmatrix}.
 $$</p>
 <p><strong>The quarter turn, in integers.</strong></p>
 <p>$$
 \begin{pmatrix}
-1&0&0&0\\
-0&1&0&0\\
-0&0&0&-1\\
-0&0&1&0
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;-1\\
+0&amp;0&amp;1&amp;0
 \end{pmatrix},
 \qquad
-R_x\Bigl(\frac{\pi}{2}\Bigr)=\begin{pmatrix}1&0&0\\0&0&-1\\0&1&0\end{pmatrix}.
+R_x\Bigl(\frac{\pi}{2}\Bigr)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;0&amp;-1\\0&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The comparison with the $z$ case.</strong> The scalar slot is the first in both products, and the difference is which coordinate of the rotation is left untouched: $z$ for the rotation about $\vec e_z$, $x$ for the rotation about $\vec e_x$. Because a rotation about $\vec e_x$ leaves the $x$ row and column of the $3\times3$ block trivial, the product happens to split into two $2\times2$ blocks; for a general axis it does not.</p>
 <h2 id="the-sign-and-where-it-goes">The Sign, and Where It Goes</h2>
@@ -714,21 +714,21 @@ $$</p>
 <p>checked on the same sixty elements at $3.2\times10^{-14}$. The complex number $\langle\tilde Q\rangle_{\natural}$ is the top-left slot, and the two remaining factors are the polar pair of the bottom-right block divided by it.</p>
 <p><strong>So the vector picture of the polar decomposition is the polar decomposition of a matrix.</strong> The four factors of the word become: a scalar on the scalar line, a scalar multiple of the identity, a Hermitian positive matrix of determinant one, and a real rotation. The first two are the modulus, the third is the Cartan Hermitian factor, the fourth is the compact factor. The structure survives the change of carrier, and the names do not have to change.</p>
 <h3 id="the-boost-under-the-map-written-out">The Boost under the Map, Written Out</h3>
-<p><strong>A boost along $\vec e_z$.</strong> Take $\tilde U_{\mathrm b}=a\,e_t+ib\,\vec e_z$ with $a^{2}-b^{2}=1$, $a>0$. Its image is</p>
+<p><strong>A boost along $\vec e_z$.</strong> Take $\tilde U_{\mathrm b}=a\,e_t+ib\,\vec e_z$ with $a^{2}-b^{2}=1$, $a&gt;0$. Its image is</p>
 <p>$$
 T(\tilde U_{\mathrm b})=
 \begin{pmatrix}
-a^{2}+b^{2}&-2iab&0\\
-2iab&a^{2}+b^{2}&0\\
-0&0&1
+a^{2}+b^{2}&amp;-2iab&amp;0\\
+2iab&amp;a^{2}+b^{2}&amp;0\\
+0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>With $a=\cosh 0.7$ and $b=\sinh 0.7$ the numerical matrix is</p>
 <p>$$
 \begin{pmatrix}
-2.1509&-1.9043i&0\\
-1.9043i&2.1509&0\\
-0&0&1
+2.1509&amp;-1.9043i&amp;0\\
+1.9043i&amp;2.1509&amp;0\\
+0&amp;0&amp;1
 \end{pmatrix},
 $$</p>
 <p>Hermitian, positive definite, of eigenvalues $4.0552$, $1$ and $0.2466$, that is $e^{2\sigma}$, $1$ and $e^{-2\sigma}$. The boost stretches the plane transverse to its axis by the two factors $e^{2\sigma}$ and $e^{-2\sigma}$, and fixes the axis exactly.</p>
@@ -740,9 +740,9 @@ $$</p>
 <p>$$
 T(\tilde Q)=
 \begin{pmatrix}
-t^{2}-z^{2}&-2tz&0\\
-2tz&t^{2}-z^{2}&0\\
-0&0&t^{2}+z^{2}
+t^{2}-z^{2}&amp;-2tz&amp;0\\
+2tz&amp;t^{2}-z^{2}&amp;0\\
+0&amp;0&amp;t^{2}+z^{2}
 \end{pmatrix}.
 $$</p>
 <p>Checked on fifty random complex pairs with residual $1.3\times10^{-15}$, and $\det T(\tilde Q)=(t^{2}+z^{2})^{3}$ with residual $1.8\times10^{-13}$.</p>
@@ -774,25 +774,25 @@ $$</p>
 <p><strong>The two blocks written out.</strong> For the rotor,</p>
 <p>$$
 \begin{pmatrix}
-t^{2}-z^{2}&-2tz\\
-2tz&t^{2}-z^{2}
+t^{2}-z^{2}&amp;-2tz\\
+2tz&amp;t^{2}-z^{2}
 \end{pmatrix}
 =
 \begin{pmatrix}
-\cos\theta&-\sin\theta\\
-\sin\theta&\cos\theta
+\cos\theta&amp;-\sin\theta\\
+\sin\theta&amp;\cos\theta
 \end{pmatrix},
 $$</p>
 <p>and for the boost,</p>
 <p>$$
 \begin{pmatrix}
-t^{2}-z^{2}&-2tz\\
-2tz&t^{2}-z^{2}
+t^{2}-z^{2}&amp;-2tz\\
+2tz&amp;t^{2}-z^{2}
 \end{pmatrix}
 =
 \begin{pmatrix}
-\cosh2\sigma&-i\sinh2\sigma\\
-i\sinh2\sigma&\cosh2\sigma
+\cosh2\sigma&amp;-i\sinh2\sigma\\
+i\sinh2\sigma&amp;\cosh2\sigma
 \end{pmatrix}.
 $$</p>
 <p><strong>What the table says.</strong> The rotation and the boost are the same formula with a real and with an imaginary parameter. The passage $z\mapsto iz$ is the analytic continuation that turns the compact real form into the Hermitian one, and it leaves the unitary group: the boost matrix has eigenvalues $e^{\pm2\sigma}$ and is not unitary for $\sigma\neq0$.</p>
@@ -1218,19 +1218,19 @@ u^{6}=e_t,
 $$</p>
 <p>and</p>
 <p>$$
-T(u)=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},\qquad
+T(u)=\begin{pmatrix}0&amp;0&amp;1\\1&amp;0&amp;0\\0&amp;1&amp;0\end{pmatrix},\qquad
 T(u)^{3}=\mathrm I_3 .
 $$</p>
 <p>The rotor has order six and its rotation has order three: the double cover is visible as the ratio of the two orders. The two-sided matrix is</p>
 <p>$$
 L_{\mathrm{axf}}(u)R_{\mathrm{axf}}(u^{\natural})=
 \begin{pmatrix}
-1&0&0&0\\
-0&0&0&1\\
-0&1&0&0\\
-0&0&1&0
+1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0
 \end{pmatrix}
-=\begin{pmatrix}1&0\\0&P\end{pmatrix},
+=\begin{pmatrix}1&amp;0\\0&amp;P\end{pmatrix},
 $$</p>
 <p>with every entry an integer.</p>
       </div>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Does the Standard Model Fail to Explain the Elementary Particles Structure? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Why does the Standard Model fail to explain the elementary particles structure -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-does-the-standard-model-fail-to-explain-the-elementary-particles-structure"><strong>Why Does the Standard Model Fail to Explain the Elementary Particles Structure?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0810.0982 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 6 October 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Why does the Standard Model fail to explain the elementary particles structure - 0810.0982-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Why does the Standard Model fail to explain the elementary particles structure - 0810.0982.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Why does the Standard Model fail to explain the elementary particles structure - 0810.0982.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Makes one argument, by analogy, and the analogy does the whole job. The Standard Model is Mendeleev's periodic table, not atomic theory: it systematises particles without explaining their arrangement, and it can do no better because it has no discrimination mechanism — nothing in it selects discrete values out of a continuum. Such a mechanism requires a granular geometry. The paper is short, the argument is sharp, and the diagnosis of what a theory of particle structure would have to contain is the part worth keeping.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"I think, that the Standard Model, as well as other conceptions of the elementary particle theory describe only systematization of elementary particles, but not their arrangement."</p>
+<p>The analogy: "The atom arrangement is described by means of the quantum mechanics, whereas the systematization of chemical elements is described by the periodic system of chemical elements. The theory of the atom arrangement and the periodic table of chemical elements are quite different conceptions." Hence: "In this sense the Standard Model is only an analog" the periodic table, "but not that of the atom arrangement theory."</p>
+<h3 id="the-historical-test">The historical test</h3>
+<p>The test is whether the table helped build the theory, and the answer is that it did not: "Fifty years later physicists began investigations of the atomic structure. They used new quantum principles and succeeded in investigations of the atoms arrangement. Now, when we know the history, we may put the following question. Did the periodic system help us in construction of the atomic theory. The answer is negative."</p>
+<p>Why it did not, in one sentence: "Chemists, inventing and using the periodical system had not such a discrimination mechanism, and they did not contribute in the theory of atomic arrangement."</p>
+<h3 id="what-a-discrimination-mechanism-is">What a discrimination mechanism is</h3>
+<p>"mathematical tools of physicists contained some discrimination mechanism, which admits one to separate discrete values from the continual set of possible values. From the mathematical viewpoint this discrimination mechanism is the formalism of linear operators and their eigenvalues. From physical viewpoint this mechanism is conditioned by the stabilizing role of the atom electromagnetic emanation, which removes all nonstationary states, remaining only stationary ones."</p>
+<p>That pairing — one mechanism described mathematically and physically — is the paper's central insight. Eigenvalues are not merely a technique; they need a physical process that removes everything else.</p>
+<h3 id="the-verdict-and-the-sting">The verdict, and the sting</h3>
+<p>"The Standard Model and other conceptions of the contemporary elementary particle theory have no discrimination mechanism among their mathematical tools, and they will not play any role in the construction of the future theory of the elementary particle arrangement."</p>
+<p>And the diagnosis of the field's condition: "Without a proper knowledge of geometry, we are forced to compensate our mathematical illiteracy by exotic hypotheses, beginning from quantum principles and finishing by many-dimensional geometries."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-eigenvalues-need-a-physical-stabiliser">1. Eigenvalues need a physical stabiliser</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong> that splits a formalism into two parts: the mathematical mechanism that produces discrete values (eigenvalues) and the physical process that removes the other values (here, radiative damping). A theory that has the first without the second explains no discreteness.</p>
+<p><strong>What it would add.</strong> The corpus produces discrete spectra by finding eigenvalues of operators and never asks what removes the non-eigenstates physically. Stated as a requirement, this is a gap the corpus's hydrogen articles could either fill or declare: is there a corpus process that damps non-stationary modes, or is the discreteness a property of the boundary conditions alone. Either answer is informative, and the question is sharper than the usual one about measurement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.md</code>.</p>
+<p><strong>What stands in the way.</strong> In modern quantum theory the removal of non-stationary states is not part of the fundamental dynamics either — it is decoherence plus environment. So the standard theory has the same gap, and the criticism, if valid, applies to both.</p>
+<h3 id="2-systematics-is-not-structure">2. Systematics is not structure</h3>
+<p><strong>The idea.</strong> A <strong>judgement</strong> about a class of theory: a scheme that arranges the known particles into patterns and predicts neighbours is a taxonomy, and taxonomy does not become dynamics by being successful. The Mendeleev comparison makes this concrete, because the periodic table was successful and still contributed nothing to atomic theory.</p>
+<p><strong>What it would add.</strong> The corpus's parameter-count article measures a framework by what it leaves open. This is a different measure: what the framework's successes are successes of. A taxonomy can leave nothing open and still explain nothing, and a framework can be judged by whether its achievements are the kind that structure-explanations have. That is a distinction the parameter count cannot make, and it is the one that matters for a claim about the Standard Model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim that the Standard Model is only systematic is a judgement about a large and successful theory made in 2008, before the Higgs was found; and the analogy cuts both ways, since the periodic table's predictions were real predictions.</p>
+<h3 id="3-arrangement-as-a-geometric-question">3. Arrangement as a geometric question</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: particle structure is a geometry problem, because only a granular geometry can generate a discrimination mechanism, and the discrete parameters of particles are then geometric rather than dynamic.</p>
+<p><strong>What it would add.</strong> The corpus explains particle properties by representation theory — the algebra's labels are the quantum numbers — which is a systematic scheme in exactly the sense criticised here. Rylov's alternative says the labels should come from the geometry of a few points. The corpus could state its own answer to "why these labels" and see whether it is a mechanism or a taxonomy, which is a fair self-test rather than an objection.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.md</code>.</p>
+<p><strong>What stands in the way.</strong> No granular geometry in this paper generates a single known particle mass. The claim is that the right kind of theory would, which is not the same as one that does.</p>
+<p>The rank: eigenvalues-need-a-stabiliser first, because it is a criterion the corpus can apply; systematics-is-not-structure second, because it reframes what counts as success; arrangement-as-geometry last, because it is unsupported by a computation.</p>
+<p>The remaining items in one line each: the observation that the periodic table predicted new elements and was proved true without explaining anything, which is the strongest form of the paper's point; the remark that correcting mistakes is the safe strategy and that this paper is an instance of it; and the diagnosis that only axiomatisable geometries are known, so the needed geometry is not available to be used.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

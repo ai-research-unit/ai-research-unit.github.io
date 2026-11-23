@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeta Functions and the Casimir Energy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zeta Functions and the Casimir Energy - 0906.2817.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="zeta-functions-and-the-casimir-energy"><strong>Zeta Functions and the Casimir Energy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0906.2817v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Steven K. Blau, Matt Visser, Andreas Wipf</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 June 2009 (originally dated 24 May 1988)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Zeta Functions and the Casimir Energy - 0906.2817-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zeta Functions and the Casimir Energy - 0906.2817.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zeta Functions and the Casimir Energy - 0906.2817.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Zeta function methods give a finite definition of the Casimir energy. The authors treat an arbitrary ultrastatic spacetime, with or without boundaries. They show the Casimir energy is closely related to the one-loop effective energy but not identical to it. It also depends on a normalisation scale. This matters for bag models of QCD.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"We use zeta function techniques to give a finite definition for the Casimir energy of an arbitrary ultrastatic spacetime with or without boundaries."</p>
+<h3 id="the-distinction">The distinction</h3>
+<p>"We find that the Casimir energy is intimately related to, but not identical to, the one-loop effective energy."</p>
+<h3 id="the-scale">The scale</h3>
+<p>"We show that in general the Casimir energy depends on a normalization scale."</p>
+<h3 id="the-application">The application</h3>
+<p>"This phenomenon has relevance to applications of the Casimir energy in bag models of QCD."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-finite-by-definition-not-by-subtraction">1. Finite by definition, not by subtraction</h3>
+<p><strong>The idea.</strong> Zeta regularisation defines the energy rather than cancelling infinities.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> would gain a case where the vacuum energy is defined by an analytic continuation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of vacuum energy.</p>
+<p><strong>What stands in the way.</strong> The definition depends on the continuation. Ranked first, because it exposes the convention.</p>
+<h3 id="2-scale-dependence">2. Scale dependence</h3>
+<p><strong>The idea.</strong> The Casimir energy runs with a normalisation scale.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> would gain a case where scale invariance is broken by the regularisation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of scales.</p>
+<p><strong>What stands in the way.</strong> The running is conventional. Ranked second.</p>
+<h3 id="3-boundaries-change-the-answer">3. Boundaries change the answer</h3>
+<p><strong>The idea.</strong> The presence of a boundary is part of the definition of the energy.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code> would gain a case where the boundary data are not derived.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>, in the discussion of inputs.</p>
+<p><strong>What stands in the way.</strong> The treatment is restricted to ultrastatic spacetimes. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

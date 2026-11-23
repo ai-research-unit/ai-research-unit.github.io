@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octonionic geometry and conformal transformations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Octonionic geometry and conformal transformations - 1602.07979.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="octonionic-geometry-and-conformal-transformations"><strong>Octonionic geometry and conformal transformations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1602.07979 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 July 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Octonionic geometry and conformal transformations - 1602.07979-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Octonionic geometry and conformal transformations - 1602.07979.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Octonionic geometry and conformal transformations - 1602.07979.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the 15-parameter conformal group of four-dimensional Minkowski space as the four-dimensional shadow of the 14-parameter automorphism group $G_2^{NC}$ of the split octonions, which acts on an eight-dimensional space with one action coordinate, three wavelength coordinates and four ordinary ones. It rewrites the octonionic interval as a six-dimensional cone, identifies the length constant needed for dimensionless coordinates with the maximal wavelength, and reads that constant as the cosmological constant. The conformal identification is worked out through the infinitesimal transformations; the value of $\Lambda$ is an order-of-magnitude estimate fixed by the horizon.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-interval-and-the-two-regimes">The interval and the two regimes</h3>
+<p>$$ds=d\omega+J_nd\lambda_n+j_ndx_n+cIdt,\qquad J_n^2=-j_n^2=-I^2=1$$
+(paper 1–2), with $\omega$ "the phase (classical action)" and $\lambda_n$ "the wavelengths associated with the octonionic signals". The norm is $N^2=d\omega^2-d\lambda^2+dx^2-c^2dt^2\ge0$ (paper 3), and the seven-vector part
+$$V=J_nd\lambda_n+j_ndx_n+cIdt,\qquad V^2=c^2\left(1-\frac{v^2}{c^2}+\frac{\dot\lambda^2}{c^2}\right)\ge0$$
+(paper 4–5) forces a second condition. Because the quantum term is positive, "s positive, velocities of particles with λ̇2 &gt; v 2 exceed speed of light, i.e. they are virtual. Thus", giving the classification $|dx|&lt;|d\lambda|$ (virtual) and $|dx|\ge|d\lambda|$ (observable) (paper 6). With $\lambda_n\sim\hbar/p_n$ this becomes Heisenberg's uncertainty principle in the observable regime.</p>
+<h3 id="the-cone-and-the-conformal-shadow">The cone and the conformal shadow</h3>
+<p>The same interval in six-dimensional form is
+$$L^2\varpi^2-l^2-X^\nu X_\nu=0,\qquad \varpi=\frac{\omega}{L},\quad l=\frac{1}{L}\sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2},\quad X^\nu=\frac{\sqrt2}{L}(\varpi+l)x^\nu$$
+(paper 10–11), whose linear Lorentz-type rotations "are known to generate the 4D non-linear conformal transformations". In these coordinates the Poincaré transformations, dilatations and inversions take the forms (paper 12–14). The active alternative is the automorphism group: $G_2^{NC}$ with the 15 parameters of (paper 15) reduced to 14 by the condition $\sum_n(\phi_n-\tfrac13\sum_m\phi_m)=0$ (paper 16). The paper separates what survives in four dimensions: $\alpha_n$ and $\theta_n$ give "generalized Lorentz transformation (with the Lorentz factor (5))", $\beta^n$ give time translations, and the hyperbolic rotations by $\phi_n,\phi^m$ give spatial translations with horizons. It also states the obstruction plainly — "ct G2 has not any 6D subalgebra [13]. However", only an $SU(2,1)$ whose commutators resemble $\mathrm{SO}(3,1)$'s, so "the six $G_2^{NC}$-Lorentz-type elements do not close", which "would predict new physical effects in the model, like parity violation".</p>
+<p>Dilatations and inversions come from rotations mixing $x_n$ with $\lambda_n$. In the observable regime ($x^2&gt;\lambda^2$),
+$$\lambda'\to\frac{2x\lambda}{x^2-\lambda^2},\qquad x'\to\frac{x^2+\lambda^2}{x^2-\lambda^2}$$
+(paper 17), which in four dimensions is a spatial dilatation $x_n\to cx_n$; in the virtual regime the same expressions with the denominators reversed give the spatial inversions, printed as $x'_n\to tx_n/x^2$ (paper 18), where the constant in the numerator is written $t$ and is evidently the length $L$ of (paper 9).</p>
+<h3 id="the-constant">The constant</h3>
+<p>With the light horizon $D_H\sim10^{26}$ m and $|\lambda_n|_{\max}\le D_H$ (paper 19), the effective de Sitter space $-c^2t^2+x_nx_n=L^2$ (paper 20) has
+$$L=|\lambda_n|_{\max},\qquad L^2\sim\frac{1}{\Lambda}\sim10^{52}\ \mathrm{m}$$
+(paper 21–22, the last unit as printed, where the square of a length is compared with $1/\Lambda$ in metres). The paper's conclusion is that "the dimensional constant that appears in these analysis naturally corresponds to the observed value of the cosmological constant".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-conformal-symmetry-as-a-shadow-of-a-larger-non-compact-group">1. Conformal symmetry as a shadow of a larger, non-compact group</h3>
+<p><strong>The idea.</strong> The 15 conformal generators of four dimensions are not fundamental here; they are what a 14-parameter exceptional automorphism group looks like when only the four ordinary coordinates are kept. A <strong>mechanism</strong>, and a negative one worth recording: the six Lorentz-type elements "do not close". </p>
+<p><strong>What it would add.</strong> The corpus's conformal article gets the conformal group inside $\mathbb{B}$ exactly, as the action of unit biquaternions on the compactified space. Here the same group arrives with a defect — the Lorentz subalgebra does not close, an $SU(2,1)$ stands in for it, and parity violation is the predicted residue. A defect of that shape is a testable difference between the two constructions. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> The identification is made at the level of infinitesimal transformations of coordinates, not of group homomorphisms: the paper says the $G_2^{NC}$ rotations "generate some kind of Poincaré transformations" and "some analogues to the complete non-linear conformal transformations". "Some kind of" is the whole distance, and no map between the two groups is exhibited. The price of the construction is the non-associativity of the octonions, which the corpus's biquaternion conformal action does not pay. </p>
+<h3 id="2-math45-from-the-largest-wavelength">2. $\Lambda$ from the largest wavelength</h3>
+<p><strong>The idea.</strong> The length constant needed to make the coordinates dimensionless is set equal to the largest wavelength the horizon allows, $10^{26}$ m, and $1/\Lambda$ is read off it. A <strong>number</strong>: $L^2\sim10^{52}$ m$^2$, hence $\Lambda\sim10^{-52}$ m$^{-2}$. </p>
+<p><strong>What it would add.</strong> A second route to the same magnitude from the same author's other paper: there $\Lambda\sim H^2/L_p^2$ came from the Károlyházy relation, here from the horizon wavelength. Two independent estimates agreeing on the order is the only kind of evidence the identification can have. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>. </p>
+<p><strong>What stands in the way.</strong> The argument is dimensional: any length of order the horizon gives $1/L^2$ of order the observed $\Lambda$, so the coincidence does not select the octonionic framework. The step $|\lambda_n|_{\max}\le D_H$ is itself an assumption, and the printed units in (paper 22) do not balance. </p>
+<h3 id="3-a-third-regime-selected-by-the-rate-of-change-of-the-wavelength">3. A third regime, selected by the rate of change of the wavelength</h3>
+<p><strong>The idea.</strong> The sign of the second condition on the seven-vector part splits motion into an observable regime and a virtual one, $|dx|&lt;|d\lambda|$, where the velocity computed from $V^2$ exceeds $c$. A <strong>reading</strong> of superluminality: not a violation but a different regime of the extra coordinates. </p>
+<p><strong>What it would add.</strong> The corpus's superluminal article treats faster-than-light propagation as a property of the wave solutions in $\mathbb{B}$; here it is a kinematic classification with a criterion, $\dot\lambda^2&gt;v^2$, stated in terms of a coordinate the corpus does not have. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> Nothing is predicted for a real particle: $\lambda$ is not an observable and $\dot\lambda$ is called a "generalized force" without an equation of motion for it. The criterion therefore classifies trajectories that the model cannot yet produce.</p>
+<p>The rank is a judgement: the conformal defect first, because it is a computable difference from a corpus result; the $\Lambda$ number second, because it is an estimate and not a derivation; the third regime last, because it awaits a dynamics.</p>
+<p>Six pages: the octonionic interval and its two conditions, the conformal transformations in cone coordinates, the $G_2^{NC}$ parameters and their four-dimensional reading, the dilatations and inversions, and the estimate of $L$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

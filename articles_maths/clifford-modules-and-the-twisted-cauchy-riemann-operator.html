@@ -117,13 +117,13 @@ $$</p>
 <p>$$
 \mathcal{R}^{E}=\tfrac14 s\,\mathrm{id}+c(F^{W}),
 $$</p>
-<p>in the untwisted case $\mathcal{R}=\tfrac14 s\,\mathrm{id}$ with $s$ the scalar curvature, and in general $\mathcal{R}^E=\tfrac14s\,\mathrm{id}+\sum_{i<j}c(e_i)c(e_j)F^W_{ij}$, where $F^W$ is the curvature two-form of the twisting connection; the Clifford multiplication of a two-form is the sum of its coefficients against the corresponding bivectors, $c(F^W)=\sum_{i<j}c(e_i)c(e_j)F^W_{ij}$.</p>
+<p>in the untwisted case $\mathcal{R}=\tfrac14 s\,\mathrm{id}$ with $s$ the scalar curvature, and in general $\mathcal{R}^E=\tfrac14s\,\mathrm{id}+\sum_{i&lt;j}c(e_i)c(e_j)F^W_{ij}$, where $F^W$ is the curvature two-form of the twisting connection; the Clifford multiplication of a two-form is the sum of its coefficients against the corresponding bivectors, $c(F^W)=\sum_{i&lt;j}c(e_i)c(e_j)F^W_{ij}$.</p>
 <p><strong>Proof sketch.</strong> Compute $D_E^2=\sum_{i,j}c(e_i)c(e_j)\nabla^E_i\nabla^E_j$; split the sum into the symmetric and antisymmetric parts. The symmetric part is the connection Laplacian by the Clifford relation, and the antisymmetric part is a curvature term: the commutator $[\nabla^E_i,\nabla^E_j]$ is the curvature, Clifford-multiplied. The trace of the curvature over the spinorial indices gives the scalar curvature, and the twisting curvature enters through $c(F^W)$.</p>
 <p><strong>Corollary.</strong> In the untwisted case the <strong>Lichnerowicz formula</strong> holds:</p>
 <p>$$
 D^2=\nabla^{*}\nabla+\tfrac14 s,
 $$</p>
-<p>and if $s>0$ pointwise then $D$ has no harmonic spinors, $\ker D=0$, since $\int_M\langle D^2s,s\rangle=\int_M|\nabla s|^2+\tfrac14\int_M s|s|^2>0$ for nonzero $s$.</p>
+<p>and if $s&gt;0$ pointwise then $D$ has no harmonic spinors, $\ker D=0$, since $\int_M\langle D^2s,s\rangle=\int_M|\nabla s|^2+\tfrac14\int_M s|s|^2&gt;0$ for nonzero $s$.</p>
 <p><strong>Proof.</strong> The formula is the untwisted case of the theorem; integrating the identity $D^2=\nabla^*\nabla+\tfrac14s$ against a spinor and integrating by parts gives the positivity.</p>
 <p><strong>Remark.</strong> The Weitzenböck formula is the bridge between the operator and the geometry: the harmonic spinors of $D_E$ are the solutions of a second-order equation whose potential is the curvature, and the vanishing or non-vanishing of the kernel is controlled by the sign of the curvature. In the twisted case the twisting curvature $F^W$ shifts the potential, and the index measures the net effect.</p>
 <h2 id="ellipticity-and-the-elliptic-complex">Ellipticity and the Elliptic Complex</h2>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Proof.</strong> $D_E$ is odd and formally self-adjoint with respect to the $L^2$ inner products, so its off-diagonal blocks are adjoint to one another, and $\operatorname{coker}D_+=\ker D_+^{*}=\ker D_-$. Ellipticity on a closed manifold gives finite-dimensional kernel and cokernel by the standard regularity theory.</p>
 <p><strong>Remark.</strong> The index is the analytic datum of the elliptic complex $0\to\Gamma(E_+)\xrightarrow{D_+}\Gamma(E_-)\to0$, and it is invariant under continuous deformations of the operator within the class of elliptic operators, because the kernel dimension can jump only by the same amount as the cokernel dimension. This stability is what makes the index computable by topological means, and the computation is the subject of the next section.</p>
 <h2 id="the-index-computation">The Index Computation</h2>
-<p><strong>Theorem (McKean–Singer).</strong> For $t>0$ the index is given by the heat-kernel supertrace</p>
+<p><strong>Theorem (McKean–Singer).</strong> For $t&gt;0$ the index is given by the heat-kernel supertrace</p>
 <p>$$
 \operatorname{ind}(D_+)=\operatorname{Tr}\bigl(\exp(-tD_-D_+)\bigr)-\operatorname{Tr}\bigl(\exp(-tD_+D_-)\bigr),
 $$</p>

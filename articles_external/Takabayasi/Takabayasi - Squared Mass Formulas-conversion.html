@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniformity of Squared-Mass Formulas for Strongly Interacting Particles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Squared Mass Formulas.pdf — a PDF in a subfolder of /home/hp/Documents/Material/…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="uniformity-of-squared-mass-formulas-for-strongly-interacting-particles"><strong>Uniformity of Squared-Mass Formulas for Strongly Interacting Particles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>31</strong> (1964) 937, No. 5; dated 19 February 1964</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Squared Mass Formulas-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Squared Mass Formulas.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Squared Mass Formulas.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes that the <em>squared</em> mass of a hadron family be linear in the internal quantum numbers, $m^{2}=A(2-S)+B(2T-1)$ with $S$ strangeness and $T$ isospin, uniformly for baryons, pseudoscalar mesons and vector mesons, the family entering only through two constants. The form is arrived at by "ow presume the existence of simultaneous analyticity pro- perties with respect to the internal quatum numbers and the energy", an exchange of roles between the Regge slope and the internal labels. Three relations follow, each accurate to about one percent, together with a prediction of the first recurrences.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-objection-to-the-standard-formulas">The objection to the standard formulas</h3>
+<p>"volving three constants. broken unitary-symm etry 0 has become First we consider the baryon family, for fashionable, but its success" For pseudoscalar mesons the implied relation is "t quite satisfactory, with mGaryon=A (2- S) +B (2T-1). (5) an error of around 3% while for vector mesons a similar mass relation fails when This implies m~=2mR,- besides (4), repro- one regards p, m and K* as an octet.". He also notes the asymmetry of practice: unitary-symmetry formulas "itself The mass formula for ps-mesons is as- for the baryon case while for the squared sumed to be of the same form as (5) : mass for mesons.", which is a bookkeeping, not a principle.</p>
+<h3 id="the-exchange-of-roles">The exchange of roles</h3>
+<p>On a Regge trajectory, states with given internal quantum numbers satisfy, "under the assumption of nearly straight trajecto- ries, by a formula linear in the spin J: Downloaded from https://academic.", with $n_B$ the baryon number. "We now presume the existence of simultaneous analyticity pro- perties with respect to the internal quatum numbers and the energy, and anticipate relations which are analogous to (2) but Uniformity of Squared-Ma ss with the interchange of roles between a Formulas for Strongly and the internal quantum numbers. 3 l For Interacting Particles the latters we should adopt ISf" Since $J$ "takes on alternate physical values" in steps of two, the analogue for the internal labels is a formula linear in $2T$, and the quantum numbers playing the role of $J$ are $I^{2}$ and $2T$. This gives, "rtment of Physics sociated with fixed .JP, the squared-mass Nagoya University" $m^{2}=A\,I^{2}+2BT+C$, "involving three constants" — which for an octet implies the single relation</p>
+<p>$$
+m_{\Xi}^{2}+m_{N}^{2}=m_{\Sigma}^{2}+m_{\Lambda}^{2}.
+$$</p>
+<p>Adding $2A=B+C$ rewrites it as</p>
+<p>$$
+m_{\text{baryon}}^{2}=A(2-S)+B(2T-1),
+$$</p>
+<p>and "ides (4), repro- one regards p, m and K* as an octet. ducing the observed baryon masses with The unitary-symm etry mass formulas are an error of around 10 Mev.". The two constants are fitted: $A=0.440$, $B=0.077$ GeV$^{2}$.</p>
+<h3 id="mesons-with-the-math25-shift">Mesons, with the $S$-shift</h3>
+<p>For ps-mesons the mass formula is assumed to be of the same form as (5), giving $m_{K}^{2}=\tfrac34(m_{\pi}^{2}+m_{\eta}^{2})$, "red masses of better than is (1), namely with an error 938 Letters to the Editor of about 4 Mev with respect to K-mass. baryon". For vector mesons the same form is assumed "with $A''(3-S)$ in place of $A''(2-S)$, giving $m_{K^{*}}^{2}=\tfrac23(m_{\rho}^{2}+m_{\omega}^{2})$; with $m_{\rho}=783$ MeV and $m_{K^{*}}=890$ MeV, this yields $m_{\omega}=756$ MeV in excellent agreement with observations". The shift from $2-S$ to $3-S$ is what the meson multiplets require, and it is assumed rather than derived.</p>
+<p>The constants of the two meson families are not independent: "the constants in (6) and (7) satisfy A'-B'=A"-B "=D with D=0.220Bev", so both collapse into one meson formula</p>
+<p>$$
+m_{\text{meson}}^{2}=D(1-2T)+A^{W}(J-S+2T+1),
+$$</p>
+<p>where $A^{W}$ is $A'$ for the pseudoscalars and $A''$ for the vectors. With these, "he &lt;p-meson de- interacting particles. fines the second JP= 1- family, (8) predicts p' at about 1200 Mev, which may be identi- 1) M. Gell-Mann, Phys. Rev. 125 (1962), 1067. fied with the rc-ru resonance, 6 ) and K*' at S."; and if the $f$-meson at 1255 MeV is taken as the $T=0$ member of the $2^{+}$ family, predicts $J^{PG}=2^{++}$ resonance $\rho''$ at about 1420 MeV.</p>
+<h3 id="one-expression-and-a-selection-rule">One expression, and a selection rule</h3>
+<p>Introducing $\xi=J-n_B/2+2-S$, the three formulas become a single expression with the family only in the two constants. The formula also constrains the spectrum: for pseudoscalars it "m(K*) 2 =2/3(m!+m~). With m,= any level other than the known octet ('Y}, Downloaded from https://academic.oup.com/ptp/article-abstract/31/5/937/1884074", while for baryons the "level selection rule" $n_BS\le0$ and $n_J^{2}=1$ is imposed "to prohibit unrealistic levels". "ur mass formulas, m'tneson=D(l-2T) +AW(J-S+2T+l), whose accuracies are always about 1%, (8) lies in their particularly simple and uni- form structure, which reflects a certain where AW represents A' in (6)" in aspect of underlying dynamics of strongly (7) ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-linearity-in-the-internal-labels-by-analyticity-in-them-rather-than-in-math47">1. Linearity in the <em>internal</em> labels, by analyticity in them rather than in $J$</h3>
+<p><strong>The idea.</strong> Regge linearity says $m^{2}$ is linear in $J$ along a trajectory. If one presupposes analyticity in the internal quantum numbers as well and <em>exchanges</em> the roles of the slope and the labels, $m^{2}$ becomes linear in $I^{2}$ and $2T$ — with the same mechanism producing both, since $J$ steps by two and so does $2T$. </p>
+<p><strong>What it would add.</strong> An argument for a functional form the corpus takes from symmetry breaking. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) derives the Gell-Mann–Okubo relation in §<em>The Gell-Mann–Okubo Mass Formula</em> as the matrix element of a symmetry-breaking operator, which fixes the relation but not the power of the mass. Takabayasi's argument fixes the power — and it fixes it to <em>squared</em> mass for baryons and mesons alike, which is the one thing the standard treatment leaves to convention. </p>
+<p><strong>Where it lands.</strong> §<em>The Gell-Mann–Okubo Mass Formula</em>, as the reason for the square, and <em>Open Questions</em> in the same article, where the choice is listed. </p>
+<p><strong>What stands in the way.</strong> Analyticity in a discrete label is a strong and unproved assumption; the corpus's stated method is algebraic, so the import is an argument the corpus's tools do not contain, not a calculation it can repeat. </p>
+<h3 id="2-one-formula-for-bosons-and-fermions-with-the-family-only-in-two-constants">2. One formula for bosons and fermions, with the family only in two constants</h3>
+<p><strong>The idea.</strong> $m^{2}=D(1-2T)+A^{W}(J-S+2T+1)$ holds for pseudoscalars and vectors, and $m^{2}=A(2-S)+B(2T-1)$ for baryons, so a single expression in $(\xi,S,T,J)$ covers all three families, with two fitted constants each. </p>
+<p><strong>What it would add.</strong> A worked alternative to the corpus's degree-counting formula. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) assigns masses by the degree of a representation, $m/m_{e}=\deg\tau^{l\bar l}/2$, which is exact for the electron by construction and a few percent otherwise. His constants are two per family, with the same errors; the difference is that the formula keeps one shape across families. </p>
+<p><strong>Where it lands.</strong> That article's §<em>The Spectrum</em>, as the comparison case, with the baryon numbers recomputed. </p>
+<p><strong>What stands in the way.</strong> Two fitted constants per family against a formula with no fits: the corpus's article is more constrained and less accurate, and the trade should be stated rather than resolved. </p>
+<h3 id="3-the-formula-forbids-levels-positivity-of">3. The formula forbids levels: positivity of</h3>
+<p>$m^{2}$ plus a selection rule </p>
+<p><strong>The idea.</strong> Applied to the known octet, the pseudoscalar formula admits no other positive-$m^{2}$ level; for baryons a selection rule $n_BS\le0$, $n_J^{2}=1$ must be added "to prohibit unrealistic levels". A mass formula that predicts the absence of states is a stronger object than one that fits the states present. </p>
+<p><strong>What it would add.</strong> A use of a mass formula as a filter. <em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em> (<code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>) collects what an algebra forbids; here an <em>interpolation formula</em> forbids, and the mechanism is arithmetic rather than algebraic, which makes it a different kind of check. </p>
+<p><strong>Where it lands.</strong> That catalogue's section on spectrum-level obstructions, as the numerical case. </p>
+<p><strong>What stands in the way.</strong> The selection rule is imposed and not derived, so the "forbidden" levels are forbidden by decree for baryons and only incidentally for mesons. The remainder, one line each. The prediction $\rho'$ near 1200 MeV and $K^{*\prime}$ near 1300 MeV, and $\rho''$ near 1420 MeV, are dated by the resonances then known and are now superseded. The accuracies quoted,"always about 1%", are the paper's own summary of its four fits.</p>
+<p><strong>Check, by this conversion.</strong> The constants of Table I reproduce the masses to the stated accuracy: $938.1$ against $938.3$ MeV for the nucleon, $1114.9$ against $1115.7$ for $\Lambda$, $1181.9$ against $1192.6$ for $\Sigma$, $1326.6$ against $1314.9$ for $\Xi$; for pseudoscalars $141.4$ against $139.6$ for $\pi$, $489.9$ against $493.7$ for $K$, $547.7$ against $547.9$ for $\eta$; for vectors $759$ against $775$ for $\rho$, $786$ against $783$ for $\omega$, $892$ against $892$ for $K^{*}$. The stated 4 MeV error of the pseudoscalar relation is exact: $\tfrac34(m_{\pi}^{2}+m_{\eta}^{2})$ gives $489.6$ MeV against $493.7$. The Gell-Mann–Okubo-squared relation on PDG masses is off by $2.1\%$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

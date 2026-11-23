@@ -87,7 +87,7 @@ $$</p>
 <h2 id="the-matrix-of-the-element">The Matrix of the Element</h2>
 <p><strong>The display.</strong> Reading the four columns off the multiplication table,</p>
 <p>$$
-\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}
 \tag{1}
 $$</p>
 <p>The first column is $[\tilde Q]$, so the array determines the element.</p>
@@ -96,12 +96,12 @@ $$</p>
 <p><em>Proof.</em> The $\jmath$-th column of the left side is $[\tilde Q_1(\tilde Q_2e_{\jmath})]$, which is $L(\tilde Q_1)$ applied to the $\jmath$-th column of $L(\tilde Q_2)$; a matrix is its columns. For the second part, the first column is $[\tilde Q]$.</p>
 <p><strong>The dagger of the array,</strong> which is the matrix of $L_{\tilde Q^{*}}$:</p>
 <p>$$
-\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}
+\begin{pmatrix}\bar Q_t&amp;\bar Q_x&amp;\bar Q_y&amp;\bar Q_z\\-\bar Q_x&amp;\bar Q_t&amp;\bar Q_z&amp;-\bar Q_y\\-\bar Q_y&amp;-\bar Q_z&amp;\bar Q_t&amp;\bar Q_x\\-\bar Q_z&amp;\bar Q_y&amp;-\bar Q_x&amp;\bar Q_t\end{pmatrix}
 \tag{2}
 $$</p>
 <p><strong>The transpose of the array,</strong> which is the matrix of $L_{\tilde Q^{\natural}}$:</p>
 <p>$$
-\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\-Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\-Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\-Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}
 \tag{3}
 $$</p>
 <p><strong>Two entries tell the whole story.</strong> In (1) the mixed entry in the scalar row is $-Q_k$ and the mixed entry in the scalar column is $+Q_k$. Transposition exchanges the two, which is why (3) is (1) with each vector coefficient negated; conjugation leaves the signs and conjugates the four coefficients, which is why the dagger is the conjugate of the transpose.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>because in the canonical frame the array is two copies of the two-by-two matrix of the element, whose determinant is $\langle\tilde Q\rangle_{\natural}$. The rank is twice the rank of that two-by-two matrix, hence $0$, $2$ or $4$.</p>
 <p><strong>The sign matrix.</strong> The array</p>
 <p>$$
-\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}
 \tag{4}
 $$</p>
 <p>with $D^{\mathsf T}=D=D^{-1}$, is the Gram matrix of the symmetric form $\operatorname{Sc}(\tilde X\tilde Y)$ on the frame. It is not the matrix of an element: every left matrix has four equal diagonal entries and (4) does not. It is needed once, to write the right multiplication in the column picture.</p>
@@ -160,33 +160,33 @@ L(\tilde Q)\,L(\tilde X),
 $$</p>
 <p>by multiplicativity. The second factor is</p>
 <p>$$
-\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}
+\begin{pmatrix}X_t&amp;-X_x&amp;-X_y&amp;-X_z\\X_x&amp;X_t&amp;-X_z&amp;X_y\\X_y&amp;X_z&amp;X_t&amp;-X_x\\X_z&amp;-X_y&amp;X_x&amp;X_t\end{pmatrix}
 \tag{5}
 $$</p>
 <p>and the product is</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}}_{L(\tilde X)}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}X_t&amp;-X_x&amp;-X_y&amp;-X_z\\X_x&amp;X_t&amp;-X_z&amp;X_y\\X_y&amp;X_z&amp;X_t&amp;-X_x\\X_z&amp;-X_y&amp;X_x&amp;X_t\end{pmatrix}}_{L(\tilde X)}
 \;=\;
-\begin{pmatrix}Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y&-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t\\Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t&Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x\\Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x&Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y\\Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z\end{pmatrix}
+\begin{pmatrix}Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&amp;-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y&amp;-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&amp;-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t\\Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&amp;Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&amp;-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t&amp;Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x\\Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x&amp;Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&amp;Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&amp;-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y\\Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&amp;-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&amp;Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&amp;Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z\end{pmatrix}
 \tag{6}
 $$</p>
 <p>which is $L(\tilde Q\tilde X)$ read on the entries. <strong>The left multiplication is the operator the frame writes with no transport</strong>: the matrix of the operator and the matrix of the parameter are one array, and acting on element matrices is left multiplication by that array.</p>
 <p><strong>Two left factors at the same parameter.</strong> Multiplying (1) by itself:</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
 \;=\;
-\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x&-Q_tQ_y&-Q_tQ_z\\Q_tQ_x&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_z&Q_tQ_y\\Q_tQ_y&Q_tQ_z&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x\\Q_tQ_z&-Q_tQ_y&Q_tQ_x&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}\end{pmatrix}
+\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&amp;-Q_tQ_x&amp;-Q_tQ_y&amp;-Q_tQ_z\\Q_tQ_x&amp;Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&amp;-Q_tQ_z&amp;Q_tQ_y\\Q_tQ_y&amp;Q_tQ_z&amp;Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&amp;-Q_tQ_x\\Q_tQ_z&amp;-Q_tQ_y&amp;Q_tQ_x&amp;Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}\end{pmatrix}
 \tag{7}
 $$</p>
 <p>and the diagonal entry at the scalar slot is $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$, which is $\langle\tilde Q\rangle_{\natural}$: the square of the array carries the norm of the element in its scalar slot. That single entry is the reason the pair's determinant is a fourth power.</p>
 <p><strong>The array against its transpose.</strong></p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)^{\mathsf T}}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\-Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\-Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\-Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)^{\mathsf T}}
 \;=\;
-\begin{pmatrix}Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0&0\\0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0\\0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0\\0&0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}\end{pmatrix}
+\begin{pmatrix}Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&amp;0&amp;0&amp;0\\0&amp;Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&amp;0&amp;0\\0&amp;0&amp;Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&amp;0\\0&amp;0&amp;0&amp;Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}\end{pmatrix}
 \tag{8}
 $$</p>
 <p>The product is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ on the whole diagonal and zero elsewhere: the transpose is the inverse of the array up to the norm, which is (3) read on a product.</p>
@@ -207,39 +207,39 @@ R(\tilde Q)=D\,L(\tilde Q)^{\mathsf T}D .
 $$</p>
 <p>The transpose alone, preceded and followed by the sign matrix, is</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{D\,L(\tilde Q)^{\mathsf T}}
-\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\underbrace{\begin{pmatrix}Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\Q_x&amp;-Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;-Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;-Q_t\end{pmatrix}}_{D\,L(\tilde Q)^{\mathsf T}}
+\;\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
 \;=\;
-\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}
 \tag{9}
 $$</p>
 <p>Written with the transported parameter standing still, the same computation is</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{D\,L(\tilde Q^{\natural})}
-\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\underbrace{\begin{pmatrix}Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\Q_x&amp;-Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;-Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;-Q_t\end{pmatrix}}_{D\,L(\tilde Q^{\natural})}
+\;\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
 \;=\;
-\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}
 \tag{10}
 $$</p>
 <p>and (10) is the right matrix of the same parameter,</p>
 <p>$$
-\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}
 \tag{11}
 $$</p>
 <p>entry by entry. So the right multiplication carries two arrays — right multiplication by $L(\tilde Q)$ on element matrices, and (11) on columns — equal as operators and different as arrays.</p>
 <p><strong>The two one-sided products, in one display each.</strong></p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
 \;=\;
-\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&Q_z&-Q_y\\Q_y&-Q_z&-Q_t&Q_x\\Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\Q_x&amp;-Q_t&amp;Q_z&amp;-Q_y\\Q_y&amp;-Q_z&amp;-Q_t&amp;Q_x\\Q_z&amp;Q_y&amp;-Q_x&amp;-Q_t\end{pmatrix}
 \tag{12}
 $$</p>
 <p>$$
-\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
-\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
 \;=\;
-\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&Q_z&-Q_y\\-Q_y&-Q_z&-Q_t&Q_x\\-Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\-Q_x&amp;-Q_t&amp;Q_z&amp;-Q_y\\-Q_y&amp;-Q_z&amp;-Q_t&amp;Q_x\\-Q_z&amp;Q_y&amp;-Q_x&amp;-Q_t\end{pmatrix}
 \tag{13}
 $$</p>
 <p>The two are different arrays, and their entries differ in the spatial block. Neither equals (11), which is the same conjugation applied on both sides.</p>
@@ -259,20 +259,20 @@ L(\tilde Q)\,L(\tilde X)\,L(\tilde Q)^{\dagger},
 $$</p>
 <p>so with $L(\tilde X)$ written out in (5), the whole map is the product</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}}_{L(\tilde X)}
-\;\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}X_t&amp;-X_x&amp;-X_y&amp;-X_z\\X_x&amp;X_t&amp;-X_z&amp;X_y\\X_y&amp;X_z&amp;X_t&amp;-X_x\\X_z&amp;-X_y&amp;X_x&amp;X_t\end{pmatrix}}_{L(\tilde X)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&amp;\bar Q_x&amp;\bar Q_y&amp;\bar Q_z\\-\bar Q_x&amp;\bar Q_t&amp;\bar Q_z&amp;-\bar Q_y\\-\bar Q_y&amp;-\bar Q_z&amp;\bar Q_t&amp;\bar Q_x\\-\bar Q_z&amp;\bar Q_y&amp;-\bar Q_x&amp;\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
 \;=\;
-\begin{pmatrix}Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x&Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z\\-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z&-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y\\-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y&-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x\\-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t\end{pmatrix}
+\begin{pmatrix}Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&amp;Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x&amp;Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&amp;Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z\\-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&amp;Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&amp;Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z&amp;-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y\\-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y&amp;-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&amp;Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&amp;Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x\\-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&amp;Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&amp;-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&amp;Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t\end{pmatrix}
 \tag{14}
 $$</p>
 <p><strong>The pair's own array.</strong> On coefficient columns the same map is a product of three factors, the middle one being the entrywise conjugate of (1) preceded by the sign matrix:</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\-\bar Q_x&-\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&-\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&-\bar Q_t\end{pmatrix}}_{D\,\overline{L(\tilde Q)}}
-\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&amp;-\bar Q_x&amp;-\bar Q_y&amp;-\bar Q_z\\-\bar Q_x&amp;-\bar Q_t&amp;\bar Q_z&amp;-\bar Q_y\\-\bar Q_y&amp;-\bar Q_z&amp;-\bar Q_t&amp;\bar Q_x\\-\bar Q_z&amp;\bar Q_y&amp;-\bar Q_x&amp;-\bar Q_t\end{pmatrix}}_{D\,\overline{L(\tilde Q)}}
+\;\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
 \;=\;
-\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x-Q_y\bar Q_y-Q_z\bar Q_z&-Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t-Q_x\bar Q_x+Q_y\bar Q_y-Q_z\bar Q_z&-Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&-Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t-Q_x\bar Q_x-Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&amp;Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_t+Q_x\bar Q_x-Q_y\bar Q_y-Q_z\bar Q_z&amp;-Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&amp;Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&amp;Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&amp;Q_t\bar Q_t-Q_x\bar Q_x+Q_y\bar Q_y-Q_z\bar Q_z&amp;-Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&amp;-Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&amp;Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_t-Q_x\bar Q_x-Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
 \tag{15}
 $$</p>
 <p><strong>The pair is a congruence, and the congruence is the array of the pair read on columns.</strong> The two versions of the same computation — three factors on element matrices in (14), three factors on columns in (15) — agree because the middle factor of one is $L(\tilde X)$ and of the other is $D\overline{L(\tilde Q)}$.</p>
@@ -314,9 +314,9 @@ $$</p>
 \det M=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4},\qquad
 \operatorname{rank}M=
 \begin{cases}
-4,&\langle\tilde Q\rangle_{\natural}\neq0,\\
-1,&\tilde Q\ \text{a nonzero zero divisor},\\
-0,&\tilde Q=0,
+4,&amp;\langle\tilde Q\rangle_{\natural}\neq0,\\
+1,&amp;\tilde Q\ \text{a nonzero zero divisor},\\
+0,&amp;\tilde Q=0,
 \end{cases}
 $$</p>
 <p>because $\langle\tilde Q\rangle_{\natural}$ vanishes exactly on the zero divisors of $\mathbb{B}$, and $M$ is a product of two factors of rank two there.</p>
@@ -324,25 +324,25 @@ $$</p>
 <h2 id="the-pair-is-not-a-one-sided-multiplication">The Pair Is Not a One-Sided Multiplication</h2>
 <p><strong>The difference of the two families.</strong> Subtracting the right array (11) from the left array (1) leaves the scalar row and the scalar column zero:</p>
 <p>$$
-\begin{pmatrix}0&0&0&0\\0&0&-Q_z&Q_y\\0&Q_z&0&-Q_x\\0&-Q_y&Q_x&0\end{pmatrix}
+\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;-Q_z&amp;Q_y\\0&amp;Q_z&amp;0&amp;-Q_x\\0&amp;-Q_y&amp;Q_x&amp;0\end{pmatrix}
 \tag{16}
 $$</p>
 <p>The two families therefore differ by a matrix supported on the vector block alone, and they coincide only when that block vanishes.</p>
 <p><strong>Why the pair cannot be one of them.</strong> Every left matrix and every right matrix has four equal diagonal entries, by (1) and (11). The array (15) has unequal diagonal entries by the formulas above, as soon as the vector part is nonzero. So (15) lies in neither family, and the congruence is not left multiplication by any array, nor right multiplication by any array: <strong>the pair genuinely acts on two sides.</strong></p>
 <p><strong>What the one-sided multiplication would have been.</strong> The product of the array with its dagger,</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&amp;\bar Q_x&amp;\bar Q_y&amp;\bar Q_z\\-\bar Q_x&amp;\bar Q_t&amp;\bar Q_z&amp;-\bar Q_y\\-\bar Q_y&amp;-\bar Q_z&amp;\bar Q_t&amp;\bar Q_x\\-\bar Q_z&amp;\bar Q_y&amp;-\bar Q_x&amp;\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
 \;=\;
-\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t&-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&amp;Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&amp;Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t&amp;-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&amp;-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&amp;Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&amp;-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
 \tag{17}
 $$</p>
 <p>and in the other order</p>
 <p>$$
-\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
-\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\underbrace{\begin{pmatrix}\bar Q_t&amp;\bar Q_x&amp;\bar Q_y&amp;\bar Q_z\\-\bar Q_x&amp;\bar Q_t&amp;\bar Q_z&amp;-\bar Q_y\\-\bar Q_y&amp;-\bar Q_z&amp;\bar Q_t&amp;\bar Q_x\\-\bar Q_z&amp;\bar Q_y&amp;-\bar Q_x&amp;\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\;\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
 \;=\;
-\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x&-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&amp;Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&amp;Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&amp;-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x&amp;-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&amp;Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&amp;Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&amp;-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&amp;Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
 \tag{18}
 $$</p>
 <p>Both have the constant diagonal $\Sigma$, and neither mixes the slots the way (15) does: they are $L(\tilde Q\tilde Q^{*})$ and $L(\tilde Q^{*}\tilde Q)$, the left matrices of the two norm elements. <strong>The pair multiplies by $\tilde Q$ on the left and by $\tilde Q^{*}$ on the right of $\tilde X$; the products (17) and (18) multiply by both on the same side of $\tilde X$.</strong> The two agree with the pair only when $\tilde Q$ is central.</p>
@@ -360,20 +360,20 @@ $$</p>
 $$</p>
 <p>that is, (1) together with</p>
 <p>$$
-\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
-\;\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}}_{\overline{L(\tilde Q)}}
-\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}\bar Q_t&amp;-\bar Q_x&amp;-\bar Q_y&amp;-\bar Q_z\\\bar Q_x&amp;\bar Q_t&amp;-\bar Q_z&amp;\bar Q_y\\\bar Q_y&amp;\bar Q_z&amp;\bar Q_t&amp;-\bar Q_x\\\bar Q_z&amp;-\bar Q_y&amp;\bar Q_x&amp;\bar Q_t\end{pmatrix}}_{\overline{L(\tilde Q)}}
+\;\underbrace{\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}}_{\natural}
 \;=\;
-\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\-\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\-\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}
+\begin{pmatrix}\bar Q_t&amp;\bar Q_x&amp;\bar Q_y&amp;\bar Q_z\\-\bar Q_x&amp;\bar Q_t&amp;-\bar Q_z&amp;\bar Q_y\\-\bar Q_y&amp;\bar Q_z&amp;\bar Q_t&amp;-\bar Q_x\\-\bar Q_z&amp;-\bar Q_y&amp;\bar Q_x&amp;\bar Q_t\end{pmatrix}
 \tag{19}
 $$</p>
 <p>two arrays, tied entry by entry, the second read from the first by conjugation and the sign matrix. The couple has eight real coordinates, the four complex coefficients of $\tilde Q$, and it is not an operator.</p>
 <p><strong>The product of the two members, with one parameter.</strong> Both sides at the same element:</p>
 <p>$$
-\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
-\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}}_{R(\tilde Q)}
 \;=\;
-\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x&-Q_tQ_y&-Q_tQ_z\\Q_tQ_x&Q_t^{2}-Q_x^{2}+Q_y^{2}+Q_z^{2}&-Q_xQ_y&-Q_xQ_z\\Q_tQ_y&-Q_xQ_y&Q_t^{2}+Q_x^{2}-Q_y^{2}+Q_z^{2}&-Q_yQ_z\\Q_tQ_z&-Q_xQ_z&-Q_yQ_z&Q_t^{2}+Q_x^{2}+Q_y^{2}-Q_z^{2}\end{pmatrix}
+\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&amp;-Q_tQ_x&amp;-Q_tQ_y&amp;-Q_tQ_z\\Q_tQ_x&amp;Q_t^{2}-Q_x^{2}+Q_y^{2}+Q_z^{2}&amp;-Q_xQ_y&amp;-Q_xQ_z\\Q_tQ_y&amp;-Q_xQ_y&amp;Q_t^{2}+Q_x^{2}-Q_y^{2}+Q_z^{2}&amp;-Q_yQ_z\\Q_tQ_z&amp;-Q_xQ_z&amp;-Q_yQ_z&amp;Q_t^{2}+Q_x^{2}+Q_y^{2}-Q_z^{2}\end{pmatrix}
 \tag{20}
 $$</p>
 <p>which is the array of $x\mapsto\tilde Qx\tilde Q$. Its first column is $[\tilde Q^{2}]$, and its diagonal entries are unequal, so it is again in neither family.</p>

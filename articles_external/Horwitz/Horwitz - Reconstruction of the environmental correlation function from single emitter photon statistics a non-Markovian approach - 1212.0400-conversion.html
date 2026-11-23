@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconstruction of the Environmental Correlation Function from Single Emitter Photon Statistics: A Non-Markovian Approach — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Reconstruction of the environmental correlation function from single emitter photon…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reconstruction-of-the-environmental-correlation-function-from-single-emitter-photon-statistics-a-non-markovian-approach"><strong>Reconstruction of the Environmental Correlation Function from Single Emitter Photon Statistics: A Non-Markovian Approach</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1212.0400v1 [physics.chem-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>F. Shikerman, L. P. Horwitz, A. Pe'er</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 December 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Reconstruction of the environmental correlation function from single emitter photon statistics a non-Markovian approach - 1212.0400-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Reconstruction of the environmental correlation function from single emitter photon statistics a non-Markovian approach - 1212.0400.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/decoherence-as-idempotent-projection.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Reconstruction of the environmental correlation function from single emitter photon statistics a non-Markovian approach - 1212.0400.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Compares the phenomenological spectral-diffusion model of a two-level emitter in a thermal bath with a microscopic master equation derived without the Markov approximation, superposes the two, and finds the analytic relation between the bath's correlation function and the measurable photon statistics. The payoff is an inverse problem solved: measure the emission statistics of a single emitter and read off the thermal correlation function of its environment.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-system">The system</h3>
+<p>"We consider the two-level system approximation of a single emitter driven by a continuous laser pump and simultaneously coupled to the electromagnetic vacuum and to a thermal reservoir beyond the Markovian approximation."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"We discuss the connection between a rigorous microscopic theory and the phenomenological spectral diffusion approach, used to model the interaction of the emitter with the thermal bath, and obtained analytic expressions relating the thermal correlation function to the single emitter photon statistics."</p>
+<h3 id="the-method">The method</h3>
+<p>"By superposing an approximate phenomenological Dyson equation with a microscopic reduced master equation, we provided a correspondence between the microscopic" phenomenological descriptions. And: "excluding the interaction of the two-level system emitter with the laser, the dynamics governed by the spectral diffusion model is indistinguishable from the dynamics obtained by the microscopic theory, whenever the evolution of the environment is not determined on the microscopic level."</p>
+<h3 id="what-the-correspondence-rests-on">What the correspondence rests on</h3>
+<p>The "independent rates of variation" assumption of the phenomenological method "constitutes an essential consequence of the Markovian approximation", so beyond that limit the phenomenological Dyson equation and the microscopic one no longer coincide.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-phenomenological-model-is-the-markovian-shadow-of-a-microscopic-one">1. A phenomenological model is the Markovian shadow of a microscopic one</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the spectral-diffusion model is not a rival of the microscopic theory. It is what the microscopic theory becomes when the environment's memory is discarded, and the discarded assumption can be identified precisely — independence of the rates of variation.</p>
+<p><strong>What it would add.</strong> The corpus's decoherence articles work with phenomenological dephasing rates as inputs. This says those rates are shadows of a correlation function and that the shadow has a known shape, so a model with a dephasing rate is implicitly a model with a Markovian bath. Naming the assumption makes it possible to say which corpus results would survive a non-Markovian bath and which are artefacts of the approximation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is proved for a two-level emitter with a specific coupling; a general map from master-equation kernels to phenomenological rates is not given.</p>
+<h3 id="2-the-bath-correlation-function-is-measurable-through-photon-statistics">2. The bath correlation function is measurable through photon statistics</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: the second-order coherence of the light from a single emitter encodes the two-time correlation of the environment. Inverting the relation gives the correlation function from counting data.</p>
+<p><strong>What it would add.</strong> The corpus treats the environment as given and asks what it does to the system. This reverses the direction: the system is the probe and the environment is the unknown. That is a genuinely different use of the same formalism, and it turns a decoherence calculation into a measurement protocol — the kind of thing the corpus's more applied articles could adopt when they need a bath they cannot model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The inversion assumes the emitter is a clean two-level system and that the bath is thermal and stationary; those are exactly the conditions a real solid-state emitter violates.</p>
+<h3 id="3-memory-in-the-bath-is-visible-in-the-emission-spectrum">3. Memory in the bath is visible in the emission spectrum</h3>
+<p><strong>The idea.</strong> A <strong>signature</strong>: non-Markovianity is not only a correction to a rate. It changes the shape of the emission statistics in a way that can be computed, so the presence of memory is a feature of the data rather than a modelling choice.</p>
+<p><strong>What it would add.</strong> The corpus's open-system articles treat non-Markovianity as an approximation issue. This makes it an observable: a specific distortion in a measured distribution. For a corpus that often has to choose between approximations, having a criterion that the data can settle is worth more than an error estimate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper compares models analytically but does not fit experimental data, so the practical discriminating power is untested.</p>
+<p>The rank: the Markovian-shadow result first, because it explains a corpus input; the inversion method second, because it is a tool; the signature third, because it is a consequence.</p>
+<p>The remaining items in one line each: the generalized Langevin equation for the emitter, which is the microscopic starting point; the memory kernels of the two approaches, which differ only beyond the Markov limit; and the comparison of the two master equations when both the system Hamiltonian and the jump operator are non-zero, which is where the correspondence is shown to break.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discriminating Properties of Compactification in Discrete Uniform Isotropic Space-Time — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Discriminating properties of compactification in discrete uniform isotropic space-time -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="discriminating-properties-of-compactification-in-discrete-uniform-isotropic-space-time"><strong>Discriminating Properties of Compactification in Discrete Uniform Isotropic Space-Time</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0809.2516 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 May 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Discriminating properties of compactification in discrete uniform isotropic space-time - 0809.2516-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discriminating properties of compactification in discrete uniform isotropic space-time - 0809.2516.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discriminating properties of compactification in discrete uniform isotropic space-time - 0809.2516.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Applies the discrete geometry to Kaluza-Klein compactification and gets a restriction on electric charge. The mechanism is discrimination: after compactification the geometry admits only those charges for which an equivalent vector exists at each step, and some values are simply absent. The contrast he draws is with the conventional treatment, where the world function becomes many-valued and the charge stays unrestricted, which he says does not agree with the data. The construction keeps the point set continuous, which is what lets a discrete geometry be both discrete and isotropic.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>Five-dimensional Kaluza-Klein, with the fifth dimension compactified, and the space-time geometry supposed discrete, uniform and isotropic. The framework is physical geometry: "consideration of the space-time geometry as a physical geometry, i.e. as a geometry described completely by the single-valued world function". The word <em>single-valued</em> is the whole of the argument. In the conventional approach, after compactification "the world function becomes to be many-valued"; in his, the world function stays single-valued and the many-valuedness appears instead as multivariance of the equivalence relation.</p>
+<h3 id="why-discreteness-and-isotropy-are-compatible">Why discreteness and isotropy are compatible</h3>
+<p>The difficulty he has to answer is that a lattice is not isotropic. His answer is that the discreteness is in the distance function and not in the point set: "It is important, that the discrete geometry is given on the continual set of points. This circumstance makes admissible a compatibility" of discreteness with uniformity and isotropy. There is no lattice of preferred directions, because there is no lattice at all — only a minimum length.</p>
+<h3 id="what-discrimination-buys">What discrimination buys</h3>
+<p>The charge restriction is the result, and it is stated as something the standard treatment cannot do: "Combination of the discrete space-time with its compactification admits one to obtain restrictions on the electric charge of stable elementary particles. These restrictions are known from experiments, but they have no explanation in the framework of the conventional quantum theory."</p>
+<p>The mechanism is the same as in the mass paper: a state survives only if the chain can be continued, so the set of admitted charges is the set for which an equivalent vector exists at the next step. The general conclusion repeats the programme: "Discreteness of the space-time admits one to describe quan- tum effects without referring to quantum principles. Describing discreteness of the space-time, the elementary length λ0 determines the quantum constant ~. The space-time"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-second-route-to-charge-quantisation">1. A second route to charge quantisation</h3>
+<p><strong>The idea.</strong> Charge is quantised because the geometry, once compactified, admits only some values — a <strong>mechanism</strong> with no gauge group in it.</p>
+<p><strong>What it would add.</strong> The corpus's charge-quantisation article asks why the proton's charge is exactly minus the electron's and answers it from the trace of a fourth colour, "one trace, one third". Rylov's answer is that the other values do not exist, and the two answers are of different kinds: the corpus derives an equality, Rylov would derive an absence. If the admitted set could be computed, the corpus could check whether its own third appears in it, which is a genuine test rather than a restatement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> No admitted set is computed. The paper says restrictions follow from discrimination and matches the statement to known data, but it does not list the allowed charges or exhibit the arithmetic that produces $1/3$. Until it does, the claim is that a mechanism of the right kind exists.</p>
+<h3 id="2-single-valuedness-as-the-constraint">2. Single-valuedness as the constraint</h3>
+<p><strong>The idea.</strong> The requirement that the world function be single-valued, rather than many-valued, is what forces a restriction. A <strong>criterion</strong> stated as a condition on a function, not on a field.</p>
+<p><strong>What it would add.</strong> The corpus's constraints are algebraic — which ideals exist, which representations appear. Single-valuedness is a constraint of a different type, and it would be interesting to know whether the corpus's allowed charges are exactly those for which some functional is single-valued. That question can be asked without accepting the rest of the framework.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.md</code>.</p>
+<p><strong>What stands in the way.</strong> Single-valuedness is a condition on a function nobody writes down for the real space-time, so as stated it cannot be evaluated. And it is not obvious that a many-valued world function is an error rather than a different choice of what to call the geometry.</p>
+<h3 id="3-discreteness-without-a-lattice">3. Discreteness without a lattice</h3>
+<p><strong>The idea.</strong> A minimum length is compatible with isotropy if it lives in the distance function rather than in the point set. A <strong>construction</strong>, and the only one in this literature that answers the obvious objection to discrete space-time.</p>
+<p><strong>What it would add.</strong> The corpus's own discreteness, where it appears, is spectral — a discrete spectrum from a compact algebra — and it has no minimum length. Rylov's separation of the two — discrete distances, continuous points — is a distinct option, and it is the one that would let the corpus put a length into its geometry without breaking the rotation covariance it derives from $\mathbb{B}$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction is asserted as a property of the class of physical geometries and not exhibited for the five-dimensional case in any detail; the paper's own example is four-dimensional. And a minimum length with no preferred direction still has a preferred <em>scale</em>, which breaks scale invariance, and the corpus's algebra is scale-free.</p>
+<p>The rank: the charge route first, because it meets a question the corpus answers differently and could adjudicate; single-valuedness second, because it is the actual constraint; discreteness without a lattice last, because it is the construction that makes the rest possible.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

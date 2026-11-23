@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Variables of Relativistic Dynamical System and Massless States — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Global Variables of Relativistic Dynamical System and Massless States.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="global-variables-of-relativistic-dynamical-system-and-massless-states"><strong>Global Variables of Relativistic Dynamical System and Massless States</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>36</strong> (1966) 1076, No. 5; dated 26 August 1966</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Global Variables of Relativistic Dynamical System and Massless States-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Global Variables of Relativistic Dynamical System and Massless States.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-little-group-of-a-null-momentum-e2.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Global Variables of Relativistic Dynamical System and Massless States.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Continues the preceding note on the de Sitter algebra by relating the centre-of-inertia to two other centres and to the spin, and then uses the construction to treat massless states. In the massless limit the de Sitter algebra contracts not to the original Poincaré algebra but to a second one, whose translations are distinct from the momentum; the spin vector survives with two transverse components forming an $E(2)$, and the physically relevant discrete-spin case is selected by one condition. From that condition all unitary irreducible massless representations are recovered, with a position operator fixed up to a gauge function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="three-centres">Three centres</h3>
+<p>"l ieo,. V;R,.. Thus (i?.;, d) forms an E(2) spin J are useful collective dynamical vari- algebra commuting with P,., since R; is ables describing the global motion for any" The centre-of-spin $q^{J}$ is defined so that $[q_i^{J},J_k]=0$ and $[q_i^{J},q_k^{J}]=0$ while retaining $[q_i^{J},P_k]=i\delta_{ik}$; the centre-of-mass $q^{M}$ through $N_i=\frac{1}{2}\{P_0,q_i^{M}\}-P_ix_0$; and the centre-of-inertia $q$ from the preceding note. Both $q^{J}$ and $q^{M}$ depend on the reference Lorentz frame.</p>
+<h3 id="the-massless-contraction-is-to-a-different-poincare-algebra">The massless contraction is to a different Poincaré algebra</h3>
+<p>The Pauli vector is replaced by $W_i=W_i-(M+\mathcal CP_0)^{-1}P_iW_0=F_{ik}W_k$ with $F_{ik}=\delta_{ik}-\mathcal CP_0^{-1}(M+\mathcal CP_0)^{-1}P_iP_k$, where $\mathcal C=P_0/\sqrt{P_0^{2}}$ "is the operator representing the energy sign and can be regarded as an invariant of the Poincaré group", and "care group. CW;, 0) corresponds to" boost transform "of W,. (by the". Then $W_iW_i=W^{2}$ and $J=\mathcal CW/M$"f Takehiko TAKABAYASI a moving system as a whole. Equation", while "equation (1) exhibits ... that $W_i$ itself is definable even in the zero mass cases, although here $W_0$, or the helicity $\alpha=W_0/P_0$, must be taken together with $W_i$".</p>
+<p>For $P^{2}=0$ the de Sitter relations reduce to $[P_\mu,R_\nu]=-iP_\mu P_\nu$, hence $[V_i,R_k]=0$, and $R_i^{2}=W_i^{2}$, $V_iR_i=0$. "The relation (7) shows that the algebra formed by (M,.., R,.) contracts W;=O. (9) from that of 0(4, 1)" "ncare algebra !P'. Also, this !1!' P; Wo, which 1s rewritten as W,.= is regarded as the contraction of the 0(3,2) (Wo/Po)P"=dP ". This gives the zero- algebra in the case IIM 2 II&lt;O."; and "These contractions are physically differ- ent from the usual group contraction which (11) derives the Poincare group !1! from the de Sitter•group, because our procedure leaves R .. Thus by inserting (10) under (11) into distinct from P,. in M~o, giving two sets · of Eq. (3) and M;=dP;/Po-eu,.". In $\mathcal P'$ the vector $H_\mu$ plays the role $W_\mu$ plays in $\mathcal P$, and the two invariants of $\mathcal P'$ reduce to the single invariant $W^{2}$.</p>
+<p>Since $[R_i,R_k]=0$ and $[R_i,\alpha]=i\epsilon_{ijk}V_jR_k$, ($R_i,\alpha$) forms an $E(2)$ algebra commuting with $P_\mu$; so does $(W_i,\alpha)$, and the two are related by $R_i=\epsilon_{ijk}V_jW_k$, $W^{2}=R^{2}$.</p>
+<h3 id="discrete-spin-and-the-position-operator">Discrete spin, and the position operator</h3>
+<p>The general massless case "tains" infinite spin "4 l as well as R!= W;, (6) discrete spin. It is the latter case which is physically relevant, this is defined by imposing respectively. The relation (7) shows that the algebra formed by (M,." $W_i=0$. This condition is equivalent to $P_0W_i=P_iW_0$, which is rewritten as $W_\mu=(W_0/P_0)P_\mu=\alpha P_\mu$; it gives the zero-mass condition $P^{2}=0$ as a consequence, and $\alpha$ becomes an additional Poincaré invariant. Equivalently $R_i=0$.</p>
+<p>"inable The quantity k defined by (12) of I here, but the center-of-mass qM remains is here written as R;=R;- V;Ro=D;,.", with $[q_i^{M},q_k^{M}]=-i(\alpha/P_0^{2})\epsilon_{ijk}P_k$. A commuting "position" operator, "the 'center-of-helicity'", exists provided a function $f_i$ satisfies an "Ampère equation", and "by inserting (10) under (11) into Eq. (3) ... we immediately obtain all unitary irreducible representations of the Poincaré group corresponding to physical zero-mass cases". "quation (12) indicates that q! has arbitrariness of a gauge function x. With x=tan~ 1 CPt!"; with $\chi=\tan^{-1}(\mathcal CP_1/P_2)$ "the representation agrees with that of Shirokov". As illustration, for a Dirac particle in the limit $m\to0$, "one checks that $R_i=0$ and $\alpha=p_t/2$ ... $J_i=\lim \mathcal CW_i/m$ is well defined, and also $q^{h}$ remains to exist along with $q^{M}$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-at-zero-mass-the-contraction-produces-a-second-poincare-algebra-with-its-own-translations">1. At zero mass the contraction produces a <em>second</em> Poincaré algebra, with its own translations</h3>
+<p><strong>The idea.</strong> Contracting the de Sitter algebra at $M^{2}\to0$ does not return the algebra one started from: $R_\mu$ stays distinct from $P_\mu$, so the limit carries two commuting sets of translation generators, and the centre-of-inertia becomes a translation rather than a position.</p>
+<p><strong>What it would add.</strong> A structural account of why the massless sector is degenerate. <em>The Null Cone, the Massless Boundary</em> (<code>articles_physics/the-null-cone-the-massless-boundary.md</code>) and <em>The Massless Regime</em> (<code>articles_physics/the-massless-regime.md</code>) treat the boundary as a limit of the massive charts; here the limit produces a <em>larger</em> kinematical algebra, not a smaller one, and the extra translations are the residue of the centre-of-inertia.</p>
+<p><strong>Where it lands.</strong> The massless-regime article, as the algebraic statement of the degeneration.</p>
+<p><strong>What stands in the way.</strong> The contraction is Takabayasi's own variant, not the Inönü–Wigner one, and it is defined by a specific ordering of the operators; reproducing it in the corpus's variables is a calculation nobody has done.</p>
+<h3 id="2-the-spin-vector-survives-at-zero-mass-as-a-transverse-pair-and-the-pair-closes-an-math68-with-the-helicity">2. The spin vector survives at zero mass as a transverse pair, and the pair closes an $E(2)$ with the helicity</h3>
+<p><strong>The idea.</strong> $W_i=F_{ik}W_k$ is a two-component object with $W^{2}=R^{2}$; $(W_i,\alpha)$ and $(R_i,\alpha)$ each close $E(2)$ and commute with $P_\mu$, and $R_i=\epsilon_{ijk}V_jW_k$.</p>
+<p><strong>What it would add.</strong> The explicit construction behind a corpus title. <em>The Little Group of a Null Momentum: $E(2)$</em> (<code>articles_physics/the-little-group-of-a-null-momentum-e2.md</code>) identifies $E(2)$ as the stability group of a null momentum; Takabayasi produces $E(2)$ <em>inside</em> the algebra of the system, from the spin vector and the helicity, with the two translation generators being the transverse spin components. That is the missing link between the little group and the dynamical variables.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Two Translations</em>, as the dynamical realisation, and <em>Helicity in Biquaternionic Form</em> (<code>articles_physics/helicity-in-biquaternionic-form.md</code>).</p>
+<p><strong>What stands in the way.</strong> The projection $F_{ik}$ uses the energy-sign operator $\mathcal C$ and a preferred frame; the corpus's frame-free treatment would have to carry $\mathcal C$ explicitly.</p>
+<h3 id="3-discrete-spin-is-one-condition-and-it-makes-the-position-operator-a-solution-of-an-ampere-type-equation">3. Discrete spin is one condition, and it makes the position operator a solution of an Ampère-type equation</h3>
+<p><strong>The idea.</strong> $W_i=0$ is equivalent to $W_\mu=\alpha P_\mu$, forces $P^{2}=0$, makes $\alpha$ an extra invariant and $R_i=0$; the centre-of-inertia then does not exist, the centre-of-mass has non-commuting components, and a commuting centre-of-helicity exists only up to a gauge function $\chi$ — the arbitrariness that Shirokov's and Pryce's constructions differ by.</p>
+<p><strong>What it would add.</strong> A precise statement of what a massless position operator is. <em>The Massless Fluid: Where the Label and Value Charts Both Fail</em> (<code>articles_physics/the-massless-fluid-where-the-label-and-value-charts-both-fail.md</code>) records the failure of position-like labels at zero mass; here the failure is located exactly — in the gauge function of the centre-of-helicity — and the residual freedom is exhibited.</p>
+<p><strong>Where it lands.</strong> That article's diagnostic section, and <em>The Little Group of a Massive Particle: $SU(2)$</em> (<code>articles_physics/the-little-group-of-a-massive-particle-su2.md</code>) for the contrast.</p>
+<p><strong>What stands in the way.</strong> The Ampère equation and the particular solution $f_i$ are given without derivation and the extraction garbles the display, so the construction must be redone from Pryce and Shirokov before it is quoted as a formula.</p>
+<p>The remainder, one line each. That the three centres differ only by the frame and by terms in the spin is a bookkeeping statement useful for the corpus's global-variable notes. That a four-component neutrino gives $\alpha=p_t/2$ and a finite $J_i$ in the limit is a worked example of the discrete-spin condition and belongs with the corpus's neutrino article.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

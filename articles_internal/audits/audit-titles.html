@@ -2427,7 +2427,7 @@ def h1(p):
             return t[2:-2] if t.startswith('__') and t.endswith('__') else t
 
 def fold(s):
-    s = unicodedata.normalize('NFKD', s.replace('\u2019', &quot;'&quot;))
+    s = unicodedata.normalize('NFKD', s.replace('\u2019', "'"))
     return ''.join(c for c in s if not unicodedata.combining(c))
 
 def words(s):
@@ -2716,7 +2716,7 @@ def h1(p):
             return m.group(1).strip() if m else t
 
 def fold(s):
-    s = unicodedata.normalize('NFKD', s.replace('\u2019', &quot;'&quot;))
+    s = unicodedata.normalize('NFKD', s.replace('\u2019', "'"))
     return ''.join(c for c in s if not unicodedata.combining(c))
 
 def words(s):

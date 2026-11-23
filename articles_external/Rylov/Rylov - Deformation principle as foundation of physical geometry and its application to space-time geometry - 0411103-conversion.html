@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deformation Principle as Foundation of Physical Geometry and Its Application to Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle as foundation of physical geometry and its application to space-time…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="deformation-principle-as-foundation-of-physical-geometry-and-its-application-to-space-time-geometry"><strong>Deformation Principle as Foundation of Physical Geometry and Its Application to Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0411103 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 13 November 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Deformation principle as foundation of physical geometry and its application to space-time geometry - 0411103-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle as foundation of physical geometry and its application to space-time geometry - 0411103.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Deformation principle as foundation of physical geometry and its application to space-time geometry - 0411103.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The long version of the deformation principle, with the consistency argument spelled out. A physical geometry is obtained from Euclidean geometry by replacing $\sigma_E$ with $\sigma$ in every Euclidean expression, and nothing else. Anything added — a topology, a curve as a continuous map — restricts the class of admissible geometries, and Rylov argues that the restriction is what has hidden the true space-time geometry. Riemannian geometry, in particular, is not a T-geometry: it lacks absolute parallelism, so the relation the segment $P_0Q$ is parallel to $Q_0R$ is undefined for distinct base points, and with it the straight line itself. The paper then applies the construction to a nondegenerate space-time with a stochastic world-tube picture, and derives an effective mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-principle-and-what-it-costs-to-add-anything">The principle and what it costs to add anything</h3>
+<p>The method is stated as a replacement rule: take the Euclidean description of an object, which is a function of $\sigma_E$, and read the same formula with $\sigma$. It is consistent by construction, because the Euclidean geometry is consistent and the deformation adds no reasoning of its own.</p>
+<p>Everything else is a restriction. "If we introduce additional structure (for instance, a topological structure) we obtain a fortified physical geometry" — stronger, but valid only when the structure is an addition rather than a part of the construction. Using the topological curve as an ingredient truncates the class: identifying the continuous curve with the metric broken line "we truncate the list of possible geometries, because such an identification is possible only in some physical geometries. Identifying (2.23) and (3.2), we eliminate all discrete physical geometries". The discrete geometries are exactly the ones he wants.</p>
+<h3 id="riemannian-geometry-is-not-a-t-geometry">Riemannian geometry is not a T-geometry</h3>
+<p>The sharpest claim in the paper. A straight line through $Q_0$ collinear with $P_0Q$ is defined by
+$$T_{Q_0;P_0Q}=\{R\mid P_0Q\parallel Q_0R\}$$
+and this set "is not a one-dimensional line, in general". The Riemannian construction cannot state the relation at all: "in the Riemannian geometries the absolute parallelism is absent, and one cannot to define a straight line (3.1), because the relation P0 Q||Q0 R is not defined, if points P0 and Q0 do not coincide. On one hand" The consequence is put bluntly: the lack of absolute parallelism "makes the Riemannian geometries to be inconsistent, because they cease to be T-geometries, which are consistent by the construction."</p>
+<p>So the ordering of the argument is not that general relativity is wrong as a theory of gravity but that its geometry is a fortified Euclidean geometry with a structure added, and the addition removed the geometries that carry the microworld.</p>
+<h3 id="nondegeneracy-world-tubes-effective-mass">Nondegeneracy, world tubes, effective mass</h3>
+<p>A nondegenerate geometry is one where the tube is genuinely $(n-1)$-dimensional; the paper gives an explicit example and then a statistical description of stochastic world tubes. The density of tubes plays the role of a wave-function density, $\rho$, with a quantum term $\frac{\hbar^2(\nabla\rho)^2}{8m\rho^2}$ appearing in the ensemble action
+$$A_{E_{st}[S_{st}]}[x]=\int\left(\frac{m\dot x^\alpha\dot x_\alpha}{2\dot x^0}-\frac{\hbar^2(\nabla\rho)^2}{8m\rho^2}\right)d^4\xi$$
+so that $\hbar$ enters as the coefficient of the inhomogeneity of the tube density, not as a quantisation rule. Section 6 then determines an effective mass from the same statistics — the mass is what a tube looks like when it is replaced by a point particle moving in a metric field.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-absolute-parallelism-as-the-missing-structure">1. Absolute parallelism as the missing structure</h3>
+<p><strong>The idea.</strong> The relation $P_0Q\parallel Q_0R$ between segments with different base points is what a geometry needs to have a straight line at all, and a Riemannian manifold does not have it. The corpus's framework is built on a global frame $(ir'_t,r_x,r_y,r_z)$ with a distinguished imaginary time, which is a parallelism, and it then reads curvature off the derivatives.</p>
+<p><strong>What it would add.</strong> The corpus's conventions article fixes a frame and a metric and states which is prior. This paper supplies an argument that the <em>parallelism</em> is the primitive and the metric is derived, and that a geometry which keeps the metric and drops the parallelism has lost the object it needs. That is a direct challenge to the corpus's ordering, stated in the corpus's own vocabulary of frames.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The inconsistency claim is not a proof of contradiction in Riemannian geometry as usually understood; it is a claim that Riemannian geometry fails a criterion Rylov himself sets. Read that way it is circular until the criterion is independently motivated, and the paper's motivation is that the resulting class is large enough to contain a geometry with stochastic free motion, which is the conclusion it is being used to reach.</p>
+<h3 id="2-discreteness-comes-free-and-the-curve-destroys-it">2. Discreteness comes free, and the curve destroys it</h3>
+<p><strong>The idea.</strong> A <strong>formula-level fact</strong>: in the purely metric construction the set $\Omega$ need not be a manifold, so a discrete space-time is a T-geometry like any other, and it is excluded only by the innocent-looking step of treating a curve as a continuous map.</p>
+<p><strong>What it would add.</strong> The corpus works on a continuum and its discretisations, where they appear, are imposed. Here discreteness is not imposed: it is what survives when nothing is added. For a corpus that computes with a fixed algebra at a point, a point set that need not be a manifold is a licence it has never used.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code>.</p>
+<p><strong>What stands in the way.</strong> A discrete T-geometry with no additional structure has no calculus, and every result in the corpus is differential. The paper's own worked examples stay continuous, so the discrete case is asserted to exist rather than exhibited with a computation.</p>
+<h3 id="3-the-quantum-term-as-a-density-gradient">3. The quantum term as a density gradient</h3>
+<p><strong>The idea.</strong> In the ensemble action the quantum contribution is exactly $\frac{\hbar^2(\nabla\rho)^2}{8m\rho^2}$, which is the Madelung quantum potential written as a functional of the density alone, and it arises from the statistics of tubes rather than from a wave function.</p>
+<p><strong>What it would add.</strong> The corpus derives the same term from the polar decomposition of a bispinor, where it is one piece of $\lvert\vec\nabla_\Phi r\rvert^2$. Having the same term arrive from tube statistics gives the corpus a second, independent origin for it, and the two can be compared term by term — which is a real check, because the coefficients are fixed on both sides.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-schrodinger-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation in the paper assumes the statistical ensemble and a specific form for the tube density; it does not derive that density from $\sigma$. So the term is recovered rather than predicted, and the coefficient $\hbar$ is put in by hand as the parameter of the tube statistics.</p>
+<p>The rank: absolute parallelism first, because it is the structural claim and it meets the corpus on its own ground; discreteness second, because it is the consequence that no other route supplies; the density-gradient term last, because the corpus already has that term and this is a second derivation of it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greybody factors for Schwarzschild black holes: Path-ordered exponentials and product integrals — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Greybody factors for Schwarzschild black holes - Path-ordered exponentials and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="greybody-factors-for-schwarzschild-black-holes-path-ordered-exponentials-and-product-integrals"><strong>Greybody factors for Schwarzschild black holes: Path-ordered exponentials and product integrals</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.05018v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Finnian Gray, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 December 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Greybody factors for Schwarzschild black holes - Path-ordered exponentials and product integrals - 1512.05018-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Greybody factors for Schwarzschild black holes - Path-ordered exponentials and product integrals - 1512.05018.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Greybody factors for Schwarzschild black holes - Path-ordered exponentials and product integrals - 1512.05018.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors recompute Schwarzschild greybody factors using path-ordered exponentials, which are transfer matrices and relate to product integrals. This gives a semi-explicit formula for the Bogoliubov coefficients and a direct numerical method that needs no differential equation solver. High and low frequency asymptotics were already known; the gap is the intermediate regime where most of the Hawking flux lies. A fifth-order product-integral algorithm supplies numbers quickly, and three-parameter and two-parameter fits are built from them.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-revisit">Why revisit</h3>
+<p>"In recent work concerning the sparsity of the Hawking flux [arXiv:1506.03975v2], we found it necessary to re-examine what is known regarding the greybody factors of black holes, with a view to extending and expanding on some old results from the 1970s."</p>
+<h3 id="the-method">The method</h3>
+<p>"Focussing specifically on Schwarzschild black holes, we re-calculated and re-assessed the greybody factors using a path-ordered-exponential approach, a technique which has the virtue of providing a semi-explicit formula for the relevant Bogoliubov coefficients."</p>
+<h3 id="the-numerical-advantage">The numerical advantage</h3>
+<p>"These path-ordered-exponentials, (being based on a 'transfer matrix' formalism), are closely related to so-called 'product integrals', leading to quite straightforward and direct numerical evaluation, while avoiding any need for numerically solving differential equations."</p>
+<h3 id="the-regime-of-interest">The regime of interest</h3>
+<p>"while considerable analytic information is already available regarding both the high-frequency and low-frequency asymptotics of these greybody factors, numerical approaches seem better adapted to finding suitable 'global models' for these greybody factors in the intermediate frequency regime, where most of the Hawking flux is concentrated."</p>
+<h3 id="the-generality">The generality</h3>
+<p>"This observation is generic, not black-hole specific."</p>
+<h3 id="the-uniqueness-claim">The uniqueness claim</h3>
+<p>"The path-ordered exponential formalism is the only way we know of to write down a more or less explicit formula for the Bogoliubov coefficients (and hence the transmission and reflection amplitudes) associated with a scattering problem."</p>
+<h3 id="the-algorithm">The algorithm</h3>
+<p>"the product integral (specifically the 5th order Helton–Stuckwisch algorithm, effectively a higher-order Simpson rule for product integrals), allowed us to quickly and efficiently calculate numerical greybody factors (which we then compared to older extant data from the 1970's)"</p>
+<h3 id="the-fits">The fits</h3>
+<p>"The 3 parameter fit we obtained to the (scalar) greybody factors seems quite good; likewise the 2 parameter fit we obtained to the (scalar) cross section seems quite good."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-path-ordered-exponentials-for-scattering">1. Path-ordered exponentials for scattering</h3>
+<p><strong>The idea.</strong> A transfer matrix written as a path-ordered exponential gives explicit Bogoliubov coefficients.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> studies modes crossing a barrier. A product-integral formula is a general tool for such problems and would let the article compute transmission rather than argue about it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of mode propagation.</p>
+<p><strong>What stands in the way.</strong> The method is numerical in practice. Ranked first, because it is a reusable technique.</p>
+<h3 id="2-the-intermediate-regime-is-where-the-flux-is">2. The intermediate regime is where the flux is</h3>
+<p><strong>The idea.</strong> Asymptotic formulas miss the frequencies that carry most of the radiation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> computes radiation from a temperature. Most of the flux sits where no closed form exists, which limits what a temperature alone predicts.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of radiation.</p>
+<p><strong>What stands in the way.</strong> The fits are approximate. Ranked second.</p>
+<h3 id="3-fits-as-global-models">3. Fits as global models</h3>
+<p><strong>The idea.</strong> A few parameters reproduce a whole function across the range.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs compact models to compare with data. This is an example of a small model with stated accuracy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The fits cover scalar modes only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

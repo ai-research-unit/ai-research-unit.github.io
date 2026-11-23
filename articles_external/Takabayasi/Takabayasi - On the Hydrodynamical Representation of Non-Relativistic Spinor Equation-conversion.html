@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Hydrodynamical Representation of Non-Relativistic Spinor Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Hydrodynamical Representation of Non-Relativistic Spinor Equation.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-hydrodynamical-representation-of-non-relativistic-spinor-equation"><strong>On the Hydrodynamical Representation of Non-Relativistic Spinor Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>12</strong> (1954) 810–812, No. 6, Letters to the Editor; received 18 November 1954</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - On the Hydrodynamical Representation of Non-Relativistic Spinor Equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Hydrodynamical Representation of Non-Relativistic Spinor Equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Hydrodynamical Representation of Non-Relativistic Spinor Equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<p>A second file in the same folder, <code>Takabayasi - Takabayasi letter 12-6-810.pdf</code>, is the same letter from another scan and is not converted separately.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The letter carries the 1952 ensemble programme — a quantum state read as a cloud of classical trajectories under a quantum force — over to a particle with spin. It defines a density, a velocity and a spin field from the two-component spinor, derives the three equations those fields obey, and states the one relation that ties the velocity's rotation to the spin field's gradients. It then takes the classical limit and shows that the limiting motion is that of a classical particle carrying a magnetic moment, with the Larmor precession as an exact equation and not an approximation. It closes by defining the classical spin as a single canonical pair, a phase angle and a component, subject to a fixed length. There is no fit and no number; the content is the system of equations, the constraint, and the two limiting statements.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-fields">The three fields</h3>
+<p>With $H=\frac{1}{2m}(p-\frac{e}{c}A)^{2}+eA_{0}-\frac{e}{mc}\vec s\cdot\vec H$ and $\vec s=\frac{\hbar}{2}\vec\sigma$, the letter sets</p>
+<p>$$
+P=\psi^{*}\psi,
+\qquad
+\vec v=\frac{\hbar}{2mi}\frac{\psi^{*}\nabla\psi-\psi\nabla\psi^{*}}{\psi^{*}\psi}-\frac{e}{mc}\vec A,
+\qquad
+\vec S=\frac{\hbar}{2}\frac{\psi^{*}\vec\sigma\psi}{\psi^{*}\psi},
+$$</p>
+<p>with $|\vec S|=\hbar/2$ identically. The first two are Madelung's density and velocity, and they satisfy $\dot P+\mathrm{div}(P\vec v)=0$. The third is new and is the point of the letter: it is the intrinsic angular momentum <em>distributed in space</em>, it has a fixed length, and it is not independent of $\vec v$.</p>
+<h3 id="the-constraint-that-ties-rotation-to-spin">The constraint that ties rotation to spin</h3>
+<p>The tie is the subsidiary relation</p>
+<p>$$
+\partial_jv_k-\partial_kv_j=\frac{1}{mS^{2}}\det\!\left[\partial_j\vec S,\ \partial_k\vec S,\ \vec S\right]-\frac{e}{mc}\epsilon_{jkl}H_l .
+$$</p>
+<p>The first term is the oriented area swept on the sphere of radius $\hbar/2$ by the spin field's two gradients, divided by $mS^{2}$; the second is the magnetic contribution, which is the Larmor rotation of the whole flow. <strong>So the vorticity of a spin-$\tfrac12$ fluid is not a free function: it is exactly the spin field's own gradient, plus the field's.</strong> Where the spin field is constant the flow is irrotational up to the Larmor term, and the letter says so by inspection.</p>
+<h3 id="the-equations-of-motion">The equations of motion</h3>
+<p>The Euler equation carries four forces:</p>
+<p>$$
+m\frac{dv_j}{dt}=K_j+\frac{e}{mc}\partial_j(\vec H\cdot\vec S)+\frac{\hbar^{2}}{2m}\partial_j\!\left(\tfrac14\partial_lS_m\,\partial_lS_m\right)-\frac{1}{mP}\partial_k\!\left(P\,\partial_jS_l\,S_l-\ldots\right),
+$$</p>
+<p>namely the Lorentz force $K_j=eE_j+\frac{e}{c}[\vec v\times\vec H]_j$, the Stern–Gerlach force from the inhomogeneity of the field acting on the moment, the quantum force of the 1952 paper, and a fourth term that is a stress due to the inhomogeneity of the spin distribution. The spin obeys</p>
+<p>$$
+\frac{dS_j}{dt}=\frac{e}{mc}[\vec S\times\vec H]_j+\frac{1}{m^{2}}\left[\vec S\times\left(\tfrac14\Delta\vec S+\frac{1}{P}\partial_kP\,\partial_k\vec S\right)\right]_j ,
+$$</p>
+<p>a Larmor precession plus a torque built from the Laplacian of the spin field and from the density's gradient. The energy density is written down and its divergence is checked to vanish on the constraint. All the equations are real and explicitly gauge invariant.</p>
+<h3 id="the-classical-limit">The classical limit</h3>
+<p>Neglecting the terms of order $\hbar^{2}$ — $S$ itself being of order $\hbar$ — the pair collapses to</p>
+<p>$$
+m\frac{dv_j}{dt}=K_j+\frac{e}{mc}\partial_j(\vec H\cdot\vec S),
+\qquad
+\frac{d\vec S}{dt}=\frac{e}{mc}\,\vec S\times\vec H ,
+$$</p>
+<p>with the continuity equation and the two constraints unchanged. <strong>The limiting picture is an ensemble of mutually independent classical spinning particles, each obeying these two equations and constrained by the vorticity relation.</strong> The Larmor precession is exact in that limit and is a direct torque on the spin.</p>
+<h3 id="the-classical-spin-as-one-canonical-pair">The classical spin as one canonical pair</h3>
+<p>The classical spin is then defined formally as a fourth intrinsic degree of freedom, carrying the Hamiltonian term $-\frac{e}{mc}\vec s\cdot\vec H$, with the conjugate pair</p>
+<p>$$
+q_s=\tan^{-1}\frac{S_2}{S_1},
+\qquad
+p_s=S_3,
+\qquad
+S^{2}=\frac{\hbar^{2}}{4}.
+$$</p>
+<p>The equations derived from this classical Hamiltonian reproduce the two limiting equations with $\vec s$ in place of $\vec S$. He notes that the particle with spin therefore behaves exactly as one carrying an internal angular momentum $\vec s$ and a magnetic moment $\frac{e}{mc}\vec s$, but that it must not be read as a rotator: the Hamiltonian has one degree of freedom, not three.</p>
+<h3 id="the-euler-angles-as-clebsch-potentials">The Euler angles as Clebsch potentials</h3>
+<p>In a footnote he adds that the Euler angles $(\theta,\psi,\chi)$ whose Cayley–Klein parameters are the spinor's two components play the role of Clebsch parameters for the rotational momentum field,</p>
+<p>$$
+\vec p=\frac{\hbar}{2}(\cos\theta\,\nabla\psi+\nabla\chi),
+$$</p>
+<p>and that $(\theta,\psi)$ are simultaneously the polar angles of $\vec S$. The Euler angles drop out entirely once $\vec v$ and $\vec S$ are used.</p>
+<p>"magnetic moment associated to the spin, while the Furthe1', we introduce a vector ,fiJ by second term means that the spin is also subjected to the additional torque dependent on the gradient of S=ii{l·r/J<em>,r/Jir/J</em>r/J (6) the spin lield itself."</p>
+<p>"Nevertheless it is not needed to 'intel'p:·et' the classical spin by the rotating model."</p>
+<p>"These equations exhibit that the classical particle with spin behaves just identically with a particle having the ~nternal anll:ular momentum s and the magnetic momen.t (efmc)s."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The Euler angles are the Clebsch potentials of the spin-half momentum</li>
+</ol>
+<p><strong>The idea.</strong> The momentum one-form of the spin-half fluid is</p>
+<p>$$
+\vec p\cdot d\vec x=\frac{\hbar}{2}\left(\cos\theta\,d\psi+d\chi\right),
+$$</p>
+<p>with $(\theta,\psi,\chi)$ the Euler angles of the rotor, $(\theta,\psi)$ also the polar angles of the spin. This is a Clebsch form with two active potentials, $\cos\theta$ and $\psi$, plus a gauge term $d\chi$.</p>
+<p><strong>What it would add.</strong> A proof where the corpus has a statement. <em>The Clebsch Potentials and the Rank of the Vorticity</em> (<code>articles_physics/the-clebsch-potentials-and-the-rank-of-the-vorticity.md</code>) and <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) assert that the spin-half vorticity is rank two for every solution, and derive it from the frame's flat logarithmic derivative. Takabayasi's footnote gives the same rank from the other end: the one-form has exactly two independent potentials, so $d\vec p\wedge d\vec p$ is a two-form on three dimensions and the rank is two — unless $\cos\theta$ is constant, in which case the one-form is exact up to a constant and the rank drops to zero. That exceptional case is exactly the corpus's frozen-frame sector, and the corpus has no argument that the two descriptions of the exception agree. The Clebsch reading names the potentials, which the corpus's frame reading does not do.</p>
+<p><strong>Where it lands.</strong> The Clebsch article, as the worked instance the general theorem lacks, and the spin-half fluid article's §<em>What the Clebsch reading tells</em>.</p>
+<p><strong>What stands in the way.</strong> The corpus's rotor has four parameters with a two-sided structure — a Hermitian factor and a real-unitary factor — while the Euler-angle triple is the real-unitary factor alone. So the identification holds for the spin direction and not for the whole word, and the import must be restricted to the rotor. This is a small obstacle and the item ranks first for that reason.</p>
+<ol>
+<li>The spin is a canonical pair on a sphere, and the sphere has one state per area $2\pi\hbar$</li>
+</ol>
+<p><strong>The idea.</strong> The classical spin is not a rotator. It is one conjugate pair</p>
+<p>$$
+q_s=\tan^{-1}\frac{S_2}{S_1},\qquad p_s=S_3,\qquad S^{2}=\frac{\hbar^{2}}{4},
+$$</p>
+<p>with the Hamiltonian term $-\frac{e}{mc}\vec s\cdot\vec H$. The pair plus the fixed length is the whole of the intrinsic freedom, and the pair is the Darboux pair of the sphere of radius $\hbar/2$.</p>
+<p><strong>What it would add.</strong> A derivation of the dimension. <em>The Determination of the Possible Spins in Biquaternionic Form</em> (<code>articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.md</code>) fixes the admissible spins algebraically, from the rotor's periodicity and the factor structure. Here the same conclusion arrives symplectically: a canonical pair on a sphere of area $2\pi\hbar\cdot(2s)$ admits $\lfloor A/2\pi\hbar\rfloor+1$ states, so a sphere of radius $\hbar/2$ — area $\pi\hbar^{2}$ — carries two. <strong>The count is the same and the reason is different, and the corpus does not hold the symplectic reason.</strong> It is also the sharpest possible statement of why a spin does not need a rotating body: a body would need three angles, and the constraint removes one dimension, not three parameters.</p>
+<p><strong>Where it lands.</strong> The determination-of-spins article, as the classical counterpart of the algebraic count, and <em>Exercise: Spin Precession in a Magnetic Field</em> (<code>articles_physics/exercise-spin-precession-in-a-magnetic-field.md</code>), where the pair gives the precession rate as Hamilton's equation for $q_s$ and $p_s$.</p>
+<p><strong>What stands in the way.</strong> The area statement is semiclassical and the corpus's article is exact; the correspondence would have to be presented as an echo and not as a derivation. Takabayasi's own remark that the Hamiltonian "859942 by guest on 12 November 2026 of the rotator, having only one degree of freedom. The author is indebted to Mr." is the whole content, and it is one sentence.</p>
+<h3 id="3-the-sterngerlach-force-as-a-term-in-the-euler-equation">3. The Stern–Gerlach force as a term in the Euler equation</h3>
+<p><strong>The idea.</strong> The Euler equation carries $\frac{e}{mc}\partial_j(\vec H\cdot\vec S)$ beside the Lorentz force. <strong>Where it lands.</strong> The charged spin-half fluid article's §<em>The Force, and Not the Torque</em>, as the exception the title does not cover: no torque, but a force.</p>
+<h3 id="4-the-torque-on-the-spin-stated-as-an-equation">4. The torque on the spin, stated as an equation</h3>
+<p><strong>The idea.</strong> $\dfrac{d\vec S}{dt}=\dfrac{e}{mc}\vec S\times\vec H+\dfrac{1}{m^{2}}\left[\vec S\times\left(\tfrac14\Delta\vec S+\frac{1}{P}\partial_kP\,\partial_k\vec S\right)\right]$. <strong>Where it lands.</strong> The charged spin-half fluid article, in the paragraph that already names the disagreement, so that the two conventions stand side by side with their reasons.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

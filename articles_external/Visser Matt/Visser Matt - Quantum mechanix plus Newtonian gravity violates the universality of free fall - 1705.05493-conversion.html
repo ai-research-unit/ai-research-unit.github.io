@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum mechanix plus Newtonian gravity violates the universality of free fall — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum mechanix plus Newtonian gravity violates the universality of free fall -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-mechanix-plus-newtonian-gravity-violates-the-universality-of-free-fall"><strong>Quantum mechanix plus Newtonian gravity violates the universality of free fall</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1705.05493v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 25 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum mechanix plus Newtonian gravity violates the universality of free fall - 1705.05493-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum mechanix plus Newtonian gravity violates the universality of free fall - 1705.05493.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum mechanix plus Newtonian gravity violates the universality of free fall - 1705.05493.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Classical point particles fall the same way in a gravitational field. Structured particles need not, because a quadrupole moment couples to the field gradient. The author argues that a quantum particle described by a wave packet has a probability quadrupole. If so, elementary particles violate the universality of free fall at some level. He proposes an experiment and states what either outcome would mean.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-background">The background</h3>
+<p>"Classical point particles in Newtonian gravity obey, as they do in general relativity, the universality of free fall."</p>
+<h3 id="the-exception">The exception</h3>
+<p>"However classical structured particles, (for instance with a mass quadrupole moment), need not obey the universality of free fall."</p>
+<h3 id="the-quantum-case">The quantum case</h3>
+<p>"Quantum mechanically, an elementary 'point' particle (in the particle physics sense) can be described by a localized wave-packet, for which we can define a probability quadrupole moment."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"This probability quadrupole can, under plausible hypotheses, affect the universality of free fall."</p>
+<h3 id="the-significance">The significance</h3>
+<p>"point-like elementary particles, in the particle physics sense, can and indeed must nevertheless have structure in the general relativistic sense once wave-[packets are used]"</p>
+<h3 id="the-no-lose-argument">The no-lose argument</h3>
+<p>"While certainly challenging, experimentally probing the ideas developed in this essay is not entirely impossible or implausible. Better, it is almost a no lose proposition"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-wave-packets-have-quadrupoles">1. Wave packets have quadrupoles</h3>
+<p><strong>The idea.</strong> Localisation gives a particle a spread that couples to field gradients.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.md</code> describes wave packets without a gravitational coupling. Adding one makes the packet's shape physically observable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.md</code>, in the discussion of the packet.</p>
+<p><strong>What stands in the way.</strong> The effect is a hypothesis, not a measured result. Ranked first, because it connects two of the target's subjects.</p>
+<h3 id="2-weak-equivalence-tested-by-shape">2. Weak equivalence tested by shape</h3>
+<p><strong>The idea.</strong> The equivalence principle can fail for structured objects even if it holds for points.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats the principle as a constraint. A loophole for extended objects changes what tests can show.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The violation is tiny. Ranked second.</p>
+<h3 id="3-either-outcome-teaches-something">3. Either outcome teaches something</h3>
+<p><strong>The idea.</strong> Seeing the effect supports quantum gravity effects; not seeing it supports collapse models.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra forbids. A test with a definite interpretation either way is a stronger constraint than silence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The interpretation is the author's reading. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fully extremal black holes: a black hole graveyard? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Fully extremal black holes - a black hole graveyard - 2405.08069.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fully-extremal-black-holes-a-black-hole-graveyard"><strong>Fully extremal black holes: a black hole graveyard?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2405.08069v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 May 2024 (dated 28 March 2024)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Fully extremal black holes - a black hole graveyard - 2405.08069-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Fully extremal black holes - a black hole graveyard - 2405.08069.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Fully extremal black holes - a black hole graveyard - 2405.08069.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The standard picture says Hawking evaporation ends a black hole. This essay argues instead that instabilities push black holes toward extremality, and that extremal configurations may be the endpoint. The authors build a general class of spherical and axisymmetric solutions with several extremal horizons, setting aside regular cores with wormhole throats. They argue these could be the asymptotic endpoint of evolution, while conceding that the timescale is unclear and may be long. They also note a competing possibility: black-bounce solutions without inner horizons may be less unstable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-standard-picture-and-the-evidence-against-it">The standard picture and the evidence against it</h3>
+<p>"While the standard point of view is that the ultimate endpoint of black hole evolution is determined by Hawking evaporation, there is a growing evidence that classical and semi-classical instabilities affect both black holes with inner horizons as well as their ultra-compact counterparts."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"we start from this evidence pointing towards extremal black holes as stable endpoints of the gravitational collapse, and develop a general class of spherical and axisymmetric solutions with multiple extremal horizons."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"Excluding more exotic possibilities, entailing regular cores supporting wormhole throats, we argue that these configuration could be the asymptotic graveyard, the end-point, of dynamical black hole evolution"</p>
+<h3 id="the-concession">The concession</h3>
+<p>"albeit the timescale of such evolution are still unclear and possibly long and compatible with current astrophysical observations."</p>
+<h3 id="the-third-law-reading">The third-law reading</h3>
+<p>"One might take such preliminary results to reinforce the idea, derived from the third law of black hole mechanics, that fully-extremal configurations will be reached only asymptotically on very long timescales, as a result of the opposite competition of the aforementioned instabilities and possibly of astrophysical phenomena like accretion which might temporarily push the black hole away from extremality."</p>
+<h3 id="the-competing-option">The competing option</h3>
+<p>"Alternatively, they might be taken as a support for the more radical black-bounce, non-extremal solutions without inner horizons, as they appear (for now) much less prone to such instabilities."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"In conclusion, it might well be that fully extremal configurations are the graveyard of gravitational collapse, but if they are so, it might still take a very long time for a black hole to die."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-extremality-as-a-resting-place">1. Extremality as a resting place</h3>
+<p><strong>The idea.</strong> Instabilities drive a black hole to the extremal state and leave it there.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> classes horizons but does not say which are terminal. A claim that one class is the endpoint gives the article a dynamical role for its classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The timescale is unknown. Ranked first, because it orders the classes by outcome.</p>
+<h3 id="2-temperature-vanishes-at-extremality">2. Temperature vanishes at extremality</h3>
+<p><strong>The idea.</strong> A fully extremal horizon has zero surface gravity, so the thermodynamic story ends.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> computes a finite temperature. At extremality it must give zero, and the article should check whether its formula does so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the temperature.</p>
+<p><strong>What stands in the way.</strong> The claim is about the endpoint, not about the formula. Ranked second.</p>
+<h3 id="3-inner-horizons-are-unstable">3. Inner horizons are unstable</h3>
+<p><strong>The idea.</strong> Objects with inner horizons are unstable, unlike those without.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would benefit from knowing which configurations survive perturbation. A statement that inner horizons are unstable narrows the class of viable geometries.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The instability evidence is collected, not derived here. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

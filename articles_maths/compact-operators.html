@@ -83,7 +83,7 @@
 \boxed{\;K(H)=\overline{F(H)}^{\ \|\cdot\|}\;} .
 $$</p>
 <p>An operator is compact exactly when it is the norm limit of a sequence of finite-rank operators.</p>
-<p><em>Proof.</em> Linear combinations of compact operators are compact and a norm limit of compact operators is compact, so $K(H)$ is a closed subspace containing $F(H)$. For the density, let $T$ be compact and let $P_\alpha$ be the projection onto a finite-dimensional reducing subspace spanned by the vectors $x_1,\dots,x_n$ on which $\|Tx_i\|$ is nearly maximal; the standard approximation argument over a finite $\varepsilon$-net of $T(B)$ produces $P$ of finite rank with $\|T-TP\|<\varepsilon$, and $TP$ has finite rank.</p>
+<p><em>Proof.</em> Linear combinations of compact operators are compact and a norm limit of compact operators is compact, so $K(H)$ is a closed subspace containing $F(H)$. For the density, let $T$ be compact and let $P_\alpha$ be the projection onto a finite-dimensional reducing subspace spanned by the vectors $x_1,\dots,x_n$ on which $\|Tx_i\|$ is nearly maximal; the standard approximation argument over a finite $\varepsilon$-net of $T(B)$ produces $P$ of finite rank with $\|T-TP\|&lt;\varepsilon$, and $TP$ has finite rank.</p>
 <p><strong>Proposition (ideal property and involution).</strong> For $S\in B(H)$ and $T\in K(H)$,</p>
 <p>$$
 ST\in K(H),\qquad TS\in K(H),\qquad T^*\in K(H),
@@ -115,14 +115,14 @@ $$</p>
 <p>in operator norm.</p>
 <p><strong>Remark.</strong> The statement that a compact normal operator is diagonalised by the eigenvectors of its modulus is the reason the compact operators are said to have a discrete spectrum: the essential spectrum of a compact operator is $\{0\}$, and the continuous part of the spectrum is empty. The <strong>essential spectrum</strong> is the spectrum of the image in the Calkin algebra, and its computation is <em>Fredholm Theory</em>.</p>
 <h2 id="the-schatten-classes">The Schatten Classes</h2>
-<p><strong>Definition.</strong> For $T\in K(H)$ the <strong>singular values</strong> are the non-increasing sequence $s_1\ge s_2\ge\cdots\ge0$ of eigenvalues of $|T|=(T^*T)^{1/2}$, enumerated with multiplicity; $s_1=\|T\|$ and $s_n\downarrow0$. For $1\le p<\infty$ the <strong>Schatten $p$-class</strong> is</p>
+<p><strong>Definition.</strong> For $T\in K(H)$ the <strong>singular values</strong> are the non-increasing sequence $s_1\ge s_2\ge\cdots\ge0$ of eigenvalues of $|T|=(T^*T)^{1/2}$, enumerated with multiplicity; $s_1=\|T\|$ and $s_n\downarrow0$. For $1\le p&lt;\infty$ the <strong>Schatten $p$-class</strong> is</p>
 <p>$$
-S_p(H)=\Bigl\{T\in K(H):\|T\|_p=\Bigl(\sum_{n\ge1}s_n(T)^p\Bigr)^{1/p}<\infty\Bigr\},
+S_p(H)=\Bigl\{T\in K(H):\|T\|_p=\Bigl(\sum_{n\ge1}s_n(T)^p\Bigr)^{1/p}&lt;\infty\Bigr\},
 \qquad S_\infty(H)=K(H).
 $$</p>
 <p><strong>Proposition (the classes are two-sided self-adjoint ideals).</strong> Each $S_p$ is a two-sided ideal of $B(H)$, self-adjoint under the involution, and</p>
 <p>$$
-S_1\subseteq S_p\subseteq S_q\subseteq K(H)\qquad(1\le p\le q<\infty),
+S_1\subseteq S_p\subseteq S_q\subseteq K(H)\qquad(1\le p\le q&lt;\infty),
 $$</p>
 <p>with $S_1$ the <strong>trace class</strong> and $S_2$ the <strong>Hilbert–Schmidt class</strong>.</p>
 <p><em>Proof.</em> The inclusion of the classes is the comparison of $\ell^{n}$ norms on the singular values; the ideal property follows because the singular values of $ATB$ are dominated by $\|A\|\,\|B\|$ times those of $T$ (a standard majorisation), and $(S_p)^*=S_p$ because $|T^*|$ and $|T|$ are unitarily equivalent and have the same singular values.</p>

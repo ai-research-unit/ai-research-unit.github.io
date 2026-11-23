@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tests of Physics Beyond the Standard Model with Single-Electron Ions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Tests of physics beyond the Standard Model with single-electron ions 2202.01668v1.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tests-of-physics-beyond-the-standard-model-with-single-electron-ions"><strong>Tests of Physics Beyond the Standard Model with Single-Electron Ions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal preprint (letter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2202.01668v1 [physics.atom-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>V. Debierre, C. H. Keitel, Z. Harman (Max Planck Institute for Nuclear Physics, Heidelberg)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 February 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Tests of physics beyond the Standard Model with single-electron ions 2202.01668v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Tests of physics beyond the Standard Model with single-electron ions 2202.01668v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Tests of physics beyond the Standard Model with single-electron ions 2202.01668v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes a way to constrain new electron–nucleon interactions using isotope shifts in hydrogen-like ions, where the quantity to measure is a weighted difference of the $g$ factor and the ground-state energy. The weighting cancels the nuclear-structure uncertainty that limits ordinary isotope-shift bounds, leaving the new-physics contribution visible, and requires data on only two isotopes of one ion.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"A highly effective approach to the search for hypothetical new interactions through isotope shift spectroscopy of hydrogen-like ions is presented. A weighted difference of the g factor and ground- state energy is shown to assist in the suppression of detrimental"</p>
+<h3 id="the-economy-of-data">The economy of data</h3>
+<p>"only a single isotope pair is required." Ordinary isotope-shift searches need several transitions and isotopes; this needs two isotopes and two quantities.</p>
+<h3 id="the-new-physics-couplings">The new-physics couplings</h3>
+<p>For a Higgs-portal scalar of mass $m_\phi$,
+$$E_{HP}=-\alpha_{HP}^{(A)}m_ec^2\frac{(Z\alpha)^{2-2\gamma}}{\gamma}\left[1+\frac{m_\phi}{2Z\alpha m_e}\right]^{-2\gamma} \quad \text{(paper 2a)}$$
+$$g_{HP}=-\frac{4}{3}\alpha_{HP}^{(A)}\frac{(Z\alpha)^{2-2\gamma}}{\gamma}\left[1+\frac{m_\phi}{2Z\alpha m_e}\right]^{-1-2\gamma}\left[1+\frac{m_\phi}{2Z\alpha m_e}(1+2\gamma)\right] \quad \text{(paper 2b)}$$
+with $\gamma^2=1-(Z\alpha)^2$. The same expressions serve for a $B-L$ $Z'$ boson, "e Higgs portal cou- 8 mφ 2 geHP = αHP A (Zα) , mφ Zαme . pling ye yn with the B − L symmetry coupling gB−L . 3 2Zαme", and for chameleons by a further substitution.</p>
+<h3 id="the-regime-that-matters">The regime that matters</h3>
+<p>"in the small boson mass regime with γ 2 = 1−(Zα) . The link between" "uilt around the in- 3 troduction of the U (1)B−L gauge symmetry, correspond- indicating that the hypothetical NP contribution is well ing to the difference B −L between the baryon and lepton preserved. Note, however, that in the large boson mass numbers, which is conserved in the SM. Here, a new vec-"</p>
+<h3 id="the-gain">The gain</h3>
+<p>"d-state energy [20] J. Khoury and A. Weltman, Phys. Rev. Lett. 93, 171104 can be measured with five to six digits of relative preci- (2004). sion, current best atomic constraints on Standard Model [21] J. Khoury and A. Weltman, Phys. Rev. D 69, 044026 extensions can be improved by one order of magnitude (2004). [22] C. Burrage and J. Sakstein, Living Rev. Relativ. 21, 1 – and without any assumptions on possible muonic cou- (2018)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-weighted-difference-that-cancels-the-unknown">1. A weighted difference that cancels the unknown</h3>
+<p><strong>The idea.</strong> Nuclear-structure effects enter the $g$ factor and the energy with correlated coefficients; a specific weighted difference removes them while leaving the new-physics term, because the new physics couples differently. The cancellation is designed, not hoped for. This is a <strong>mechanism</strong> for extracting a small signal from a large background.</p>
+<p><strong>What it would add.</strong> A worked template for the corpus's recurring problem — that its predictions are compared against observables contaminated by poorly known structure — applied at the level of a single measurement combination.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>, on how a clean observable is formed.</p>
+<p><strong>What stands in the way.</strong> The cancellation uses the specific radial dependence $R^{2\gamma}m_e^{1+2\gamma}$ of the finite-nuclear-size correction; the corpus's observables are built from its own field solutions, and the same weighted combination would have to be re-derived there.</p>
+<h3 id="2-one-isotope-pair-two-quantities">2. One isotope pair, two quantities</h3>
+<p><strong>The idea.</strong> The data requirement is minimal: two isotopes, one ion, two measured quantities. Bounds that previously needed a campaign of measurements become accessible to a single experiment.</p>
+<p><strong>What it would add.</strong> A measure of experimental cost that the corpus's precision discussions ignore.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>, on the practical reach.</p>
+<p><strong>What stands in the way.</strong> The five-to-six-digit precision on the energy shift is not yet available; the claim is conditional on a measurement that does not exist.</p>
+<h3 id="3-one-formula-four-models">3. One formula, four models</h3>
+<p><strong>The idea.</strong> The same two expressions parametrise a Higgs-portal scalar, a $B-L$ vector, and a chameleon, with only the coupling substitution changing. The bound is therefore on a class of models, not on one.</p>
+<p><strong>What it would add.</strong> An economical way to report a constraint on a family, which is the SMEFT logic applied at low energy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.md</code>, on how bounds are reported.</p>
+<p><strong>What stands in the way.</strong> The universality holds because all three models give a Yukawa potential between electron and nucleon; a model with a derivative coupling or a different radial dependence would not fit, and the corpus's own candidate interactions are not of this form.</p>
+<p>The rank is a judgement: the weighted-difference cancellation first, because it is the method; the minimal data requirement second; the four-model formula third, as the reporting convention.</p>
+<p>This is a seven-page letter; the weighted difference, the isotope-shift formalism, the $g$-factor identity, the three model mappings and the projected improvement are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

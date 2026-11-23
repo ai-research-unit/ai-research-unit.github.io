@@ -76,7 +76,7 @@
 D = \{Q = a + b\varepsilon : b\neq0\} = \mathbb{C}_{\mathrm{dln},R}\setminus R\cdot1.
 $$</p>
 <p>The real axis $R\cdot1$, where $b=0$, is the semisimple stratum. The maximal ideal $\mathrm{M}=\{a=0\}$ is not the defective sector: it is the union of the real point $0$, which is semisimple, and the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, which is defective. The defect is carried by the nilpotent part $Q-a=b\varepsilon$; the defective sector is the preimage of $\mathrm{M}\setminus\{0\}$ under the projection $Q\mapsto Q-\operatorname{Re}Q$, and not the maximal ideal itself. This distinction is the subject of the first section and the reason the article separates three strata rather than two.</p>
-<p><strong>Notation.</strong> The algebra is $\mathbb{C}_{\mathrm{dln},R}$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of <em>Dual-Numbers Algebra</em> the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&0\\b&a\end{pmatrix}$ are those of <em>$M_2(R)$ Triangular Representation</em> and <em>Dual-Numbers Linear Representations</em>. The polar decomposition is <em>Dual-Numbers Polar Decomposition</em>, the module theory is <em>Modules over $k[x]$ and the Jordan Form</em>, and the biquaternion comparison is <em>The Spectrum of a Biquaternion</em>.</p>
+<p><strong>Notation.</strong> The algebra is $\mathbb{C}_{\mathrm{dln},R}$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of <em>Dual-Numbers Algebra</em> the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&amp;b\\0&amp;a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&amp;0\\b&amp;a\end{pmatrix}$ are those of <em>$M_2(R)$ Triangular Representation</em> and <em>Dual-Numbers Linear Representations</em>. The polar decomposition is <em>Dual-Numbers Polar Decomposition</em>, the module theory is <em>Modules over $k[x]$ and the Jordan Form</em>, and the biquaternion comparison is <em>The Spectrum of a Biquaternion</em>.</p>
 <h2 id="the-defective-set">The Defective Set</h2>
 <p><strong>Semisimplicity is the squarefreeness of the minimal polynomial; in the dual algebra that is a single condition on the infinitesimal part.</strong></p>
 <p><strong>Definition (semisimple, defective).</strong> An element $Q\in\mathbb{C}_{\mathrm{dln},R}$ is <strong>semisimple</strong> if its minimal polynomial $m_Q$ is squarefree, equivalently if $L_Q$ is diagonalisable over $R$. It is <strong>defective</strong> if it is not semisimple, equivalently if $m_Q$ has a repeated factor, equivalently if the geometric multiplicity of its eigenvalue is strictly less than its algebraic multiplicity. The <strong>defective set</strong> is</p>
@@ -86,7 +86,7 @@ $$</p>
 <p><strong>Definition (eigenbasis).</strong> An <strong>eigenbasis</strong> of $Q$ is a basis of $\mathbb{C}_{\mathrm{dln},R}$ consisting of eigenvectors of $L_Q$.</p>
 <p><strong>Lemma (the minimal polynomial).</strong> For $Q=a+b\varepsilon$,</p>
 <p>$$
-m_Q(X) = \begin{cases} X-a, & b=0, \\ (X-a)^2, & b\neq0. \end{cases}
+m_Q(X) = \begin{cases} X-a, &amp; b=0, \\ (X-a)^2, &amp; b\neq0. \end{cases}
 $$</p>
 <p><em>Proof.</em> This is the dichotomy of <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, §<em>The Minimal Polynomial Dichotomy</em>: $Q-a=b\varepsilon$ has square zero, is zero exactly when $b=0$, and no linear polynomial other than $X-a$ can annihilate $Q$ when $Q-a\neq0$.</p>
 <p><strong>Theorem (the defective set).</strong> The defective set is the complement of the real axis:</p>
@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Off the real axis there is one eigenvector line and one Jordan chain; the line is canonical, the chain is not.</strong></p>
 <p><strong>Theorem (the Jordan form).</strong> Let $Q=a+b\varepsilon$ with $b\neq0$. In the basis $(\varepsilon,b^{-1})$ the matrix of $L_Q$ is</p>
 <p>$$
-[L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix} = J_2(a).
+[L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a &amp; 1 \\ 0 &amp; a \end{pmatrix} = J_2(a).
 $$</p>
 <p>The eigenspace is $E_a=R\varepsilon$, of dimension one; the generalized eigenspace is all of $\mathbb{C}_{\mathrm{dln},R}$; and the Jordan type is the single block $(2)$. On the real axis the matrix is $aI$ in every basis, and the Jordan type is $(1,1)$.</p>
 <p><em>Proof.</em> The computation is that of <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, §<em>The Jordan Form</em>:</p>
@@ -214,7 +214,7 @@ $$</p>
 <p><strong>The polar decomposition of an invertible element separates its scale and sign, which are blind to the defect, from its parabolic angle, which is the defect coordinate.</strong></p>
 <p><strong>Theorem (the polar form).</strong> Every unit $Q=a+b\varepsilon$, with $a\neq0$, has a unique representation</p>
 <p>$$
-Q = r\,u\,\exp(s\varepsilon), \qquad r=|a|>0, \quad u=\operatorname{sgn}(a)\in\{\pm1\}, \quad s=\frac{b}{a},
+Q = r\,u\,\exp(s\varepsilon), \qquad r=|a|&gt;0, \quad u=\operatorname{sgn}(a)\in\{\pm1\}, \quad s=\frac{b}{a},
 $$</p>
 <p>where $\exp(s\varepsilon)=1+s\varepsilon$. This is the polar decomposition of <em>Dual-Numbers Polar Decomposition</em>.</p>
 <p><strong>Proposition (the defect is the parabolic angle).</strong> For an invertible element $Q$ the following are equivalent:</p>
@@ -378,7 +378,7 @@ $$</p>
 <td>left multiplication, $L_Q(v)=Qv$</td>
 </tr>
 <tr>
-<td>$J_2(a)=\begin{pmatrix}a&1\\0&a\end{pmatrix}$</td>
+<td>$J_2(a)=\begin{pmatrix}a&amp;1\\0&amp;a\end{pmatrix}$</td>
 <td>the Jordan block of the defective sector</td>
 </tr>
 <tr>

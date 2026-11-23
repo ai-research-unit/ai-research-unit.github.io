@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakharov&#x27;s induced gravity: a modern perspective — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sakharov&#x27;s induced gravity - a modern perspective - gr-qc_0204062.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="sakharovs-induced-gravity-a-modern-perspective"><strong>Sakharov's induced gravity: a modern perspective</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>review article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0204062v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 April 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Modern Physics Letters A</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Sakharov's induced gravity - a modern perspective - gr-qc_0204062-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sakharov's induced gravity - a modern perspective - gr-qc_0204062.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sakharov's induced gravity - a modern perspective - gr-qc_0204062.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sakharov proposed in 1967 that gravity is not fundamental but emergent. The author restates the idea in modern language and lists its versions. One-loop matter effects shift the cosmological constant, Newton's constant, and the curvature coupling. These shifts can be read as dominance, as finiteness, as a calculable quantity, or as ordinary renormalization. The conclusion is that Einstein gravity is generated at one loop even if it is absent at tree level.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-idea">The idea</h3>
+<p>"gravity is not 'fundamental' in the sense of particle physics"</p>
+<h3 id="the-analogy">The analogy</h3>
+<p>"gravity (general relativity) emerges from quantum field theory in roughly the same sense that hydrodynamics or continuum elasticity theory emerges from molecular physics"</p>
+<h3 id="the-original-size">The original size</h3>
+<p>"originally presented in a very brief 3-page paper with a total of 4 formulas"</p>
+<h3 id="the-agreement">The agreement</h3>
+<p>"One point that all approaches agree on is that one-loop matter effects lead to shifts in $\Lambda$, $G$, and $K$."</p>
+<h3 id="the-readings">The readings</h3>
+<p>"Depending on your choices you can interpret these shifts using either — Sakharov: one-loop dominance. Pauli: one-loop finiteness. Frolov–Fursaev: one-loop calculable. Renormalization: calculable one-loop changes." and then: "Whatever your viewpoint in this regard, the key point is this: [Einstein gravity is generated]."</p>
+<h3 id="the-key-point">The key point</h3>
+<p>"Even if Einstein gravity is not there at zero loops, it will automatically be generated at one-loop."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-gravity-as-emergent">1. Gravity as emergent</h3>
+<p><strong>The idea.</strong> The metric is a collective variable of matter fields, not an independent field.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> derives geometry from algebra. Emergence from matter is a third route, and the two accounts should be compared.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergence.</p>
+<p><strong>What stands in the way.</strong> The mechanism is one-loop and cutoff-dependent. Ranked first, because it is the closest rival account of where geometry comes from.</p>
+<h3 id="2-constants-are-shifts">2. Constants are shifts</h3>
+<p><strong>The idea.</strong> $G$ and $\Lambda$ are not fixed inputs but outputs of loop corrections.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats constants as parameters to be fitted. If they are computed, the fitting changes character.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constants.</p>
+<p><strong>What stands in the way.</strong> The shifts are divergent without a cutoff. Ranked second.</p>
+<h3 id="3-four-readings-of-one-calculation">3. Four readings of one calculation</h3>
+<p><strong>The idea.</strong> The same loop result supports several interpretations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists results as constraints. This is a reminder that a result can be read in more than one way.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The readings are interpretive. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

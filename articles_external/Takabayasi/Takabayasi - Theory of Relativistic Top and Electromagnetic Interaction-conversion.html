@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Relativistic Top and Electromagnetic Interaction — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Top and Electromagnetic Interaction.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="theory-of-relativistic-top-and-electromagnetic-interaction"><strong>Theory of Relativistic Top and Electromagnetic Interaction</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>67</strong> (1982) 357, No. 2; received 22 July 1981</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Theory of Relativistic Top and Electromagnetic Interaction-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Top and Electromagnetic Interaction.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Top and Electromagnetic Interaction.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Two things. First it sets out, in detail, the theory of the <em>asymmetric</em> relativistic top: configuration given by a centre $x^\mu(\tau)$ and three orthonormal body-fixed spacelike vectors, dynamics given by a singular Lagrangian whose invariances produce the subsidiary conditions automatically. The result is a genuine relativisation of Euler's rigid-body equation — same algebraic form as the non-relativistic one, with $M\kappa_r$ playing the principal moments of inertia — and the standard top mass formula, with the surface-velocity bound $|\omega|&lt;1/\sqrt{\kappa}$ appearing as the statement that no point of the top exceeds light speed. Second, it couples the top to an electromagnetic field without destroying the subsidiary conditions, which the naive addition of $e\dot x^\mu A_\mu$ plus a moment term does destroy. The device is a reformulation in which a set of auxiliary vectors $b^{r\mu}$ appears, the kinetic term couples $a^{r\mu}$ only to $b^{r\mu}$, and the freedom $b^{r\mu}\to b^{r\mu}+\gamma^{rs}a^{s\mu}$ becomes a gauge redundancy. The coupled theory reproduces the standard equations, gives $g=2e'/e$ with no intrinsic electric moment, and becomes specially simple at $g=2$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-variables-and-why-the-lagrangian-has-the-form-it-has">The variables and why the Lagrangian has the form it has</h3>
+<p>We adopt the concept of 'relativistic rotator', which has a configuration to be specified by the coordinates of its center, $x^\mu(\tau)$, and the variables describing its internal rotational orientation. For the latter we employ the set of three orthonormal spacelike vectors $a_\mu{}^r(\tau)$ which are fixed to the body and represent the directions of three 'principal axes'. They satisfy $a_\mu{}^r a^{\mu s}=\delta^{rs}$.</p>
+<p>The mechanics cannot contain the radial extension of this entity except through the structure constants representing the 'principal moments of inertia'. The above define, together with the timelike vector $a^{\mu0}=-i\varepsilon^{\mu\nu\kappa\lambda}a_\nu{}^1a_\kappa{}^2a_\lambda{}^3$, $(a^0)^2=-1$, a Lorentz tetrad. It is required that $a^{\mu0}(\tau)$ coincides with the 4-velocity $\dot x^\mu/\sqrt{-\dot x^2}$ of the center unless external force is present. The skew-tensor $\omega_{\mu\nu}=\sum_r a_\mu{}^r\dot a_\nu{}^r$ represents the covariant angular velocity.</p>
+<p>The action should be invariant under arbitrary monotonic reparametrization. Also it does not involve higher derivatives $\ddot x^\mu$ so as to avoid the occurrence of 'Zitterbewegung'. In our method we do not start with any detailed treatment of the mechanics of an extended body but directly give the Lagrangian; then it seems that the choice of the Lagrangian really had some arbitrariness. However, we are requiring the correspondence with the theory of non-relativistic rigid body, and the Lagrangian is just the relativization of the non-relativistic Lagrangian for a free asymmetric top $L_N=\tfrac12 I_r(\omega^r)^2$, just as the Lagrangian $-m_0(-\dot x^2)^{1/2}$ for a free mass point is the relativization of the non-relativistic Lagrangian $\tfrac12m(dx/dt)^2$. The crucial point here is the occurrence of the term $\sum_r\kappa_r(\omega^r)^2$, which ensures the invariance of $L_0$ under the shift of the body axes.</p>
+<p>This invariance yields the primary constraints $P_\mu a^{\mu r}=0$, $(r=1,2,3)$, where $P_\mu$ is the canonical momentum conjugate to $x_\mu$ and represents at the same time the 4-momentum of the system. The constraints reduce the six degrees of freedom implied by $\{a_\mu{}^r\}$ down to three and warrant the correspondence with the non-relativistic theory of rigid body. Also they guarantee that $P_\mu$ is always timelike, and provide the relations $a^{\mu0}=P^\mu/\sqrt{-P^2}$, $\sum_r a_\mu{}^r a_\nu{}^r=\delta_{\mu\nu}-P_\mu P_\nu/P^2$.</p>
+<h3 id="eulers-equation-relativised">Euler's equation, relativised</h3>
+<p>"We take a rest frame, in which $P_k=0$. Then $a_k{}^0=0$, $x_0=\tau$, and $S_{i0}=0$ ... Now the components of physical angular velocities are ... and the equation $\kappa_1 d\omega^1/ds=(\kappa_2-\kappa_3)\omega^2\omega^3$, and cyclic, is the same form as the non-relativistic Euler's equation for rigid body motion. $M\kappa_r$ represents the principal moments of inertia, and $\sqrt{\kappa_r}$ corresponds to the principal radii of inertia." Thus the equations of motion can be solved explicitly for free relativistic top.</p>
+<h3 id="spherical-top-and-the-quadrilocal-reading">Spherical top, and the quadrilocal reading</h3>
+<p>"For the case of spherical top ($\kappa_r=\kappa$) ... the theory is now invariant under the $O(3)$ rotation of body frame, meaning that the choice of principal axes is arbitrary. Thus all $S^{rs}$ are conserved." The mass formula becomes $M^2=m_0^2+J^2/\kappa$, showing that the mass is degenerate with respect to $S^2$ as well as to $\omega^2$. This mass formula is the legitimate one for relativistic spherical top.</p>
+<p>$M=m_0/(1-\kappa\omega_0^2)^{1/2}$, where $\omega_0$ denotes the ordinary angular velocity in the C.M. rest frame, and this is restricted by $|\omega_0|&lt;1/\sqrt{\kappa}$. This implies that the 'surface velocity' of the top does not exceed the light velocity if the top were viewed as a sphere of radius $\sqrt{\kappa}$.</p>
+<p>Now it is possible to reinterpret our entity (for the spherical case) as a special case of quadrilocal model, i.e., a system of four points mutually bound. With the rigidity constraints which mean that the four points span a rigid equilateral tetrahedron of the size $l_0$, and with the identifications $U_0=m_0^2$, $l_0^2=2\kappa$, we see that the Lagrangian exactly agrees. In the present interpretation the extended nature of the system is explicit. It is not necessary to inquire the mechanism securing the constraint, but anyway this constraint will partly deprive the four points of the status of mass points, in quantum theory.</p>
+<h3 id="the-simple-rotator">The simple rotator</h3>
+<p>If in particular $\kappa_3=0$, rotation around the third axis becomes meaningless and $S_3=0$; the system has two internal degrees only, and $M^2=m_0^2+J^2/\kappa$. We call this case 'simple relativistic rotator', or 'relativistic rotor'. This can be interpreted as a simple extended model (indeed the simplest relativistic extended model), namely the rigid bilocal model in which the two points are bound at a fixed distance.</p>
+<h3 id="why-coupling-is-hard-and-the-repair">Why coupling is hard, and the repair</h3>
+<p>The simplest idea to couple the electromagnetic field to the top will be to add the term $L'=e\dot x_\mu A_\mu+\eta\, a_\mu{}^r a_\nu{}^s F_{\mu\nu}$ to the free Lagrangian. However, the equations it leads to with regard to $S_{\mu\nu}P_\nu$, $P_\mu$ and $S_{\mu\nu}$ differ characteristically from the standard set, and there is no room to avoid this discrepancy as long as we introduce electromagnetic interaction starting with that Lagrangian. To overcome this difficulty we proceed in the following way. First we reformulate the theory by means of a new Lagrangian, and then by introducing electromagnetic interaction there we regain the standard set.</p>
+<p>The first important point to obtain the new formalism is to introduce the set of extra vectors $b^{r\mu}$ $(r=1,2,3)$ and adopt $\sum_r a_\mu{}^r b^{\mu r}$ for the sole kinetic term containing $a_\mu{}^r$ in the Lagrangian. Then $b^{r\mu}=\partial L/\partial\dot a_\mu{}^r$ is nothing but the canonical momentum conjugate to $a_\mu{}^r$, so that the internal degrees of freedom remain the same as before. Still $b^{r\mu}$ is not immediately the same as $\Pi^{r\mu}$ because in the new formalism we can consider the transformation $b^{\mu r}\to b'^{\mu r}=b^{\mu r}+\gamma^{rs}a^{\mu s}$, $(\gamma^{rs}=\gamma^{sr})$, under which $\sum_r a_\mu{}^r b^{\mu r}$ as well as $S^{\mu\nu}$ are invariant. Namely the new formalism involves the arbitrariness of the 'gauge transformation'.</p>
+<p>The second point is that the introduction of $b^{r\mu}$ must be associated with constraint on it.</p>
+<h3 id="the-results-under-a-field">The results under a field</h3>
+<p>Equation indicates that $x_\mu$ and $P_\mu$ are generally not colinear but in the free limit $F_{\mu\nu}\to0$ they are certainly colinear, so that no Zitterbewegung is involved. In terms of $K_\mu$ the equation of motion for the spin pseudovector $\omega_\mu$ is expressed as an equation which implies Thomas precession correctly. Moreover we can prove that in the first-order approximation in $F_{\mu\nu}$ it leads just to the Bargmann–Michel–Telegdi equation for a classical spinning particle.</p>
+<p>Equations indicate that the particle has the $g$-factor $g=2e'/e$, and it has no intrinsic electric moment. The case $e'=e$ (that is, $g=2$) is privileged, because, if further $F_{\mu\nu}$ is constant we conclude that $\dot x_\mu$ must be colinear with $P_\mu$ and that $K_\mu=0$. Then the equations are simplified to the free-form ones with the field on the right.</p>
+<h3 id="why-the-top-is-favored-as-a-unified-model">Why the top is favored as a unified model</h3>
+<p>"It is evident from the outset that the theory allows neither spacelike nor lightlike solutions. Second, the configuration space of a relativistic top is just equivalent with the parameter space of the Poincaré group, so that it is the simplest construct which faithfully responds to every element of the Poincaré group, and it can thus realize all physically relevant irreducible representations of the Poincaré group, including half-integer spin states. Finally, leptons and quarks ... have spin and are classified in the recent Weinberg-Salam theory as doublets and singlets of chiral weak isospin, and they may be regarded to correspond to the lowest representations of the relativistic top."</p>
+<p>"Especially the theory of spherical top is invariant under the $O(3)\subset SU(2)$ transformation of the body axes, and when the theory is considered at the level of field theory this means that the choice of the body-fixed frame is arbitrary within the $O(3)$ rotation at every point of space-time. This may provide the natural basis to understand the local $SU(2)$ gauge invariance. ... For a similar interpretation of the local color $SU(3)$ gauge symmetry one may need an extension to a structure such as a 'complexified rotator model'."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>Euler's equation survives relativisation verbatim; only the inertia changes</li>
+</ol>
+<p><strong>The idea.</strong> The relativistic top's angular equation has exactly the non-relativistic form $\kappa_1\dot\omega^1=(\kappa_2-\kappa_3)\omega^2\omega^3$, with $M\kappa_r$ as the principal moments. Relativity does not deform the equation — it redefines the inertia and adds a constraint that fixes the body's time axis to the 4-velocity.</p>
+<p><strong>What it would add.</strong> A statement the corpus does not make: the rigid-body equation is not an approximation that relativity corrects, it is exact in form, and the corrections are entirely in the inertia tensor and the tetrad. That reframes the relation between the non-relativistic rotor and the relativistic one as a change of variables rather than a change of physics.</p>
+<p><strong>Where it lands.</strong> §<em>The Model</em> of <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), as the verbatim Euler equation.</p>
+<p><strong>What stands in the way.</strong> The identity holds in the rest frame and for the specific Lagrangian chosen; a different inertia structure would not preserve it.</p>
+<ol>
+<li>The surface-velocity bound is the content of "no rigid body"</li>
+</ol>
+<p><strong>The idea.</strong> The mass formula forces $|\omega_0|&lt;1/\sqrt{\kappa}$, and $\sqrt{\kappa}$ is the radius if the top is a sphere. The old objection that rigid bodies cannot exist in relativity becomes, here, a bound on the angular velocity — the body is rigid, but small enough or slow enough that its rim stays below light speed.</p>
+<p><strong>What it would add.</strong> A quantitative form of a famous qualitative claim. The corpus mentions that relativistic rigidity is problematic; here the problem is located in one inequality, and the model is consistent precisely because the inequality is enforced by the mass formula rather than added.</p>
+<p><strong>Where it lands.</strong> §<em>The Bound</em> of <em>The Spectrum of a Lorentz Rotor</em>, as the rim-speed bound.</p>
+<p><strong>What stands in the way.</strong> The identification of $\sqrt{\kappa}$ with a radius is interpretive; the model has no radial degrees of freedom at all.</p>
+<h3 id="3-the-rotors-configuration-space-is-the-poincare-group">3. The rotor's configuration space <em>is</em> the Poincaré group</h3>
+<p><strong>The idea.</strong> A centre plus a Lorentz tetrad is exactly a Poincaré transformation. <strong>Where it lands.</strong> §<em>The Rotor</em> of <em>Relativistic Rotators and Bilocal Theory</em> (<code>articles_external/Takabayasi/Takabayasi - Relativistic Rotators and Bilocal Theory-conversion.md</code>), as the group-manifold argument.</p>
+<h3 id="4-coupling-by-gauge-redundancy-not-by-minimal-substitution">4. Coupling by gauge redundancy, not by minimal substitution</h3>
+<p><strong>The idea.</strong> The auxiliary vectors $b^{r\mu}$ introduce a redundancy $b\to b+\gamma a$ that does nothing to the physics. <strong>Where it lands.</strong> §<em>The Coupling</em> of the conversion of <em>New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction</em> in this folder, as the redundancy-enlargement trick.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

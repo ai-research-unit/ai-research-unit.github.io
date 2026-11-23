@@ -72,6 +72,7 @@
         <h1 id="exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation"><strong>Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is a worked exercise on the biquaternion Dirac equation, written in the biquaternion algebra and on its elements. The field is one biquaternion, the derivative is the corpus gradient $\tilde\nabla_\Phi$, and every result below is a statement about elements and their products. The parent article, <em>The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit</em>, supplies the equation, the field, the two frequency branches and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the solutions written as elements, the normalisation in the biquaternion pairing, the spin sums as products of elements, the massless limit, the change of the reading of the two parts, and the helicity pieces with their determinant.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p><strong>One operator, two members.</strong> The gradient is the one first-order operator of the equation, and the mass couples two members,</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R} ,
@@ -98,9 +99,9 @@ $$</p>
 <p>On the material sector $Q_t=i q'_t$ the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla_\Phi$ names the gradient.</p>
 <p><strong>The square of the gradient is not scalar.</strong> The product $\tilde\nabla_\Phi\tilde\nabla_\Phi$ is</p>
 <p>$$
-\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial^2}{\partial R_t\partial R_\imath},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^2}{\partial R_t\partial R_{\imath}},
 $$</p>
-<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\imath$ is $e_te_\imath-\vec e_\imath e_t=0$, and the coefficient of $\partial^2/\partial R_{\imath}^2$ is $\varepsilon_{\imath} e_{\imath}^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
+<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_{\imath}$ is $e_te_{\imath}-\vec e_{\imath} e_t=0$, and the coefficient of $\partial^2/\partial R_{\imath}^2$ is $\varepsilon_{\imath} e_{\imath}^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
 <p><strong>The wave element.</strong> A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by</p>
 <p>Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.</p>
 <p>$$
@@ -238,11 +239,11 @@ $$</p>
 <p>So the labels are locked to the members: <strong>the field annihilated by $\tilde\nabla_\Phi$ carries positive helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ negative helicity.</strong> The mass is the only term that couples the two members, and setting it to zero decouples them; the two kernels are of two complex dimensions each and meet only at zero, so together they account for the four complex dimensions of the carrier.</p>
 <p><strong>The position-space reading.</strong> On the material sector the free member reads</p>
 <p>$$
--i\,e_t\frac{\partial\tilde{Ξ}}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}}{\partial R_\imath}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}=0 .
 $$</p>
 <p>The same line is read for $\partial\tilde{Ξ}/\partial r'_t$:</p>
 <p>$$
-\frac{\partial\tilde{Ξ}}{\partial r'_t}=-i\sum_{\imath\in\{x,y,z\}}\vec e_\imath\frac{\partial\tilde{Ξ}}{\partial R_\imath},
+\frac{\partial\tilde{Ξ}}{\partial r'_t}=-i\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial\tilde{Ξ}}{\partial R_{\imath}},
 $$</p>
 <p>one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.</p>
 <h2 id="problem-5-the-two-parts-and-the-change-of-the-reading">Problem 5: The two parts and the change of the reading</h2>
@@ -284,7 +285,7 @@ $$</p>
 \boxed{\;\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}}.
 $$</p>
 <p>Equivalently, with $E=hf_{\mathrm{frq}}$ and $\vec p=h\,\vec\nu_\Phi$, the norm is quadratic, so $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}/\frac{h^{2}}{4\pi^{2}}=-4\pi^{2}\nu_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $\nu_m=\frac{mc}{h}$ and $\nu_{\Phi}=\frac{p}{h}$ are the mass and momentum wave numbers.</p>
-<p>The two roots $\omega=\pm\sqrt{c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\nu_m^{2}$ to the digits shown.</p>
+<p>The two roots $\omega=\pm\sqrt{c^{2}\,4\pi^{2}\nu_{\Phi}^{2}+c^2\,4\pi^{2}\nu_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=8.1871\times10^{-14}\ \mathrm{J}$) at $\lvert\vec p\rvert=5.3443\times10^{-22}\ \mathrm{kg\,m\,s^{-1}}$, the dispersion gives $E=1.7992\times10^{-13}\ \mathrm{J}$ and $E^2-\vec p^2c^2=6.7029\times10^{-27}\ \mathrm{J^2}=(mc^2)^2$; the wave biquaternion has $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\nu_m^{2}$ to the digits shown.</p>
 <h2 id="problem-7-the-helicity-pieces-and-the-piece-determinant">Problem 7: The helicity pieces and the piece determinant</h2>
 <p><strong>Statement.</strong> Show that left multiplication by the helicity element commutes with the wave element, that the carrier splits into two two-dimensional pieces, one per helicity, compute the determinant of the pair on each, and read the mass shell as the vanishing of that determinant.</p>
 <p><strong>Solution.</strong> The free symbol is the element $i\tilde P_{\Phi}$, and the massive equation is the pair of §<em>The Field and the Equation</em>.</p>
@@ -298,7 +299,7 @@ $$</p>
 <p>$$
 \det=-mc\cdot(-mc)-(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=m^{2}c^{2}+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=m^{2}c^{2}+N .
 $$</p>
-<p>The same number comes from the spectrum. The off-diagonal block squares to $(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=-N$ times the identity, so for $N<0$ the two eigenvalues of the block on the piece are</p>
+<p>The same number comes from the spectrum. The off-diagonal block squares to $(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=-N$ times the identity, so for $N&lt;0$ the two eigenvalues of the block on the piece are</p>
 <p>$$
 -m+\sqrt{-N},\qquad -m-\sqrt{-N},
 $$</p>
@@ -311,7 +312,7 @@ $$</p>
 <p><strong>Worked case, $\vec p\parallel\vec e_z$.</strong> With $B=\lvert\vec p\rvert$ and the mass $m$, the pieces are the two helicity eigenspaces. For $m=1.3$, $E=2$, $B=0.9$: $N=-3.19$ and $\sqrt{-N}=1.786057$, so each piece determinant is $m^{2}\,c^{2}+N=-1.5$, each piece spectrum is $\{-3.086057,\,0.486057\}$, and the determinant of the pair is $2.25=(m^{2}\,c^{2}+N)^2$.</p>
 <p><strong>Worked case, on the shell.</strong> For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each piece determinant is zero, each piece spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the pair has rank two, with a one-dimensional kernel per helicity.</p>
 <p><strong>Numerical check.</strong> The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ departed from $\pm N$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{-N}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^{2}\,c^{2}+N)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.</p>
-<p><strong>What the splitting is, and what it is not.</strong> It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $N>0$ the two eigenvalues are complex and the piece determinant $m^{2}c^{2}+N$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $N=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.</p>
+<p><strong>What the splitting is, and what it is not.</strong> It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $N&gt;0$ the two eigenvalues are complex and the piece determinant $m^{2}c^{2}+N$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $N=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.</p>
 <h2 id="summary">Summary</h2>
 <p>The seven problems test the parent's plane-wave solutions and confirm them in the algebra.</p>
 <ol>
@@ -328,7 +329,7 @@ $$</p>
 <p>| Symbol | Meaning |
 |+-|+-|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\imath^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$, four components |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ |

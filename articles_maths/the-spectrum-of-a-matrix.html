@@ -105,7 +105,7 @@ $$</p>
 1\le\gamma_\lambda\le m_\lambda .
 $$</p>
 <p>The equality $\gamma_\lambda=m_\lambda$ for every $\lambda$ is exactly diagonalisability, so the spectrum alone does not decide diagonalisability; the Jordan form of <em>The Minimal Polynomial and the Jordan Form</em> does.</p>
-<p><strong>The failure of equality is measured by the nilpotent part.</strong> If $\gamma_\lambda<m_\lambda$ then $A-\lambda\mathrm{I}$ has a nilpotent Jordan block at $\lambda$, of size at least two, and the matrix is not diagonalisable. So the spectrum is the first invariant and the multiplicities are the second, and the two together do not yet determine the similarity class.</p>
+<p><strong>The failure of equality is measured by the nilpotent part.</strong> If $\gamma_\lambda&lt;m_\lambda$ then $A-\lambda\mathrm{I}$ has a nilpotent Jordan block at $\lambda$, of size at least two, and the matrix is not diagonalisable. So the spectrum is the first invariant and the multiplicities are the second, and the two together do not yet determine the similarity class.</p>
 <p><strong>The roots are continuous.</strong> The coefficients of $\chi_A$ depend continuously on $A$, and the roots of a polynomial depend continuously on its coefficients, so the spectrum is a continuous multivalued function of the matrix. A double root can split under a small perturbation, which is why the multiplicities are the fragile part and the set of roots the stable part.</p>
 <h2 id="invariance-under-similarity-and-the-two-symmetries">Invariance under Similarity and the Two Symmetries</h2>
 <p><strong>The spectrum is invariant under similarity.</strong> For invertible $P$,</p>
@@ -147,23 +147,23 @@ $$</p>
 |\lambda|=\|Av\|\le\|A\|\,\|v\|=\|A\|,
 $$</p>
 <p>so $\rho(A)\le\|A\|$ for the operator norm, and by the equivalence of the norms also $\rho(A)\le\|A\|_{HS}$, which was verified at $n=3,4$. The bound is not an equality in general: a nilpotent has $\rho=0$ and positive norm.</p>
-<p><strong>The spectral radius governs the powers.</strong> For every $\varepsilon>0$ there is a norm with $\|A\|\le\rho(A)+\varepsilon$, so</p>
+<p><strong>The spectral radius governs the powers.</strong> For every $\varepsilon&gt;0$ there is a norm with $\|A\|\le\rho(A)+\varepsilon$, so</p>
 <p>$$
 \rho(A)=\lim_{k\to\infty}\|A^{k}\|^{1/k},
 $$</p>
-<p>and $A^{k}\to0$ exactly when $\rho(A)<1$. So the spectrum decides the asymptotic behaviour of the powers, and the norm decides only the size at each step.</p>
+<p>and $A^{k}\to0$ exactly when $\rho(A)&lt;1$. So the spectrum decides the asymptotic behaviour of the powers, and the norm decides only the size at each step.</p>
 <p><strong>The spectrum of a polynomial is the polynomial of the spectrum.</strong> For every polynomial $p$,</p>
 <p>$$
 \operatorname{Spec}(p(A))=p\big(\operatorname{Spec}(A)\big)=\{p(\lambda):\lambda\in\operatorname{Spec}(A)\},
 $$</p>
 <p>which was verified at $n=4$ for $p(t)=t^{2}+3t-1$. The reason is the factorisation $p(t)-p(\lambda)=(t-\lambda)q(t)$, which shows that $p(A)-p(\lambda)\mathrm{I}$ is singular exactly when $A-\lambda\mathrm{I}$ is. So the spectral calculus is multiplicative, and it is the first instance of the functional calculus of <em>The Analysis on $M_n(\mathbb{C})$</em>.</p>
-<p><strong>The spectrum of a block triangular matrix is the union of the spectra of the diagonal blocks.</strong> If $M=\begin{pmatrix}A&B\\0&D\end{pmatrix}$ then $\chi_M=\chi_A\chi_D$, so</p>
+<p><strong>The spectrum of a block triangular matrix is the union of the spectra of the diagonal blocks.</strong> If $M=\begin{pmatrix}A&amp;B\\0&amp;D\end{pmatrix}$ then $\chi_M=\chi_A\chi_D$, so</p>
 <p>$$
 \operatorname{Spec}(M)=\operatorname{Spec}(A)\cup\operatorname{Spec}(D),
 $$</p>
 <p>which the computation confirms at $n=4$. So the spectra add under the triangular decomposition, and the strictly block-upper part $B$ does not affect the spectrum at all.</p>
 <h2 id="the-case-math109">The Case $n=2$</h2>
-<p><strong>At $n=2$ the spectrum is given by the quadratic formula.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,</p>
+<p><strong>At $n=2$ the spectrum is given by the quadratic formula.</strong> For $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$,</p>
 <p>$$
 \chi_A(t)=t^{2}-(a+d)t+(ad-bc),
 $$</p>

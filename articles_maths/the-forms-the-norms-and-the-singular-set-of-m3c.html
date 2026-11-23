@@ -144,7 +144,7 @@ $$
 \|A\|_{*}\leq3\|A\|.
 $$</p>
 <p><strong>Proof.</strong> The operator norm is the largest singular value: $\|Av\|^{2}=\sum_{i}\sigma_{i}^{2}|\langle v,v_{i}\rangle|^{2}\leq\sigma_{1}^{2}\|v\|^{2}$, with equality on the first right singular vector. The Frobenius norm is $\operatorname{tr}(A^{*}A)=\sum_{i}\sigma_{i}^{2}$. The nuclear norm is the sum of the singular values by definition. The inequalities are the comparisons of the $\ell^{1}$, $\ell^{2}$ and $\ell^{\infty}$ norms on the three singular values: $\max\sigma_{i}\leq(\sum\sigma_{i}^{2})^{1/2}\leq\sum\sigma_{i}\leq\sqrt3(\sum\sigma_{i}^{2})^{1/2}$, and $\sum\sigma_{i}\leq3\max\sigma_{i}$.</p>
-<p><strong>The Schatten norms.</strong> For $1\leq p<\infty$ the Schatten $p$-norm is
+<p><strong>The Schatten norms.</strong> For $1\leq p&lt;\infty$ the Schatten $p$-norm is
 $$
 \|A\|_{p}=\Bigl(\sum_{i}\sigma_{i}^{p}\Bigr)^{1/p}.
 $$
@@ -246,19 +246,19 @@ defined by the vanishing of all $(r+1)\times(r+1)$ minors. For $r=2$ it is $\Sig
 <p><strong>The distance to the rank strata.</strong> By the Eckart–Young theorem, the distance from $A$ to $M_{\leq r}$ in the operator norm (and in the Frobenius norm) is $\sigma_{r+1}$, with the convention $\sigma_{4}=0$:
 $$
 \operatorname{dist}(A,M_{\leq r})=\sigma_{r+1}(A),\qquad
-\operatorname{dist}_{\mathrm{F}}(A,M_{\leq r})=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
+\operatorname{dist}_{\mathrm{F}}(A,M_{\leq r})=\Bigl(\sum_{i&gt;r}\sigma_{i}^{2}\Bigr)^{1/2}.
 $$
 So the distance to the singular set is $\sigma_{3}$, the distance to the rank-one variety is $\sigma_{2}$, and the distance to zero is $\sigma_{1}$. The singular values are the coordinates that measure the distance to each rank stratum.</p>
 <p><strong>Proof.</strong> The truncated singular value decomposition $A_{r}=U\operatorname{diag}(\sigma_{1},\ldots,\sigma_{r},0,\ldots,0)V^{*}$ has rank at most $r$ and satisfies
 $$
 \|A-A_{r}\|=\sigma_{r+1},\qquad
-\langle A-A_{r}\rangle_*^{1/2}=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
+\langle A-A_{r}\rangle_*^{1/2}=\Bigl(\sum_{i&gt;r}\sigma_{i}^{2}\Bigr)^{1/2}.
 $$
 The Eckart–Young theorem states that no matrix of rank at most $r$ is closer in either norm. The distance formula follows.</p>
 <p><strong>Worked example of the strata.</strong> The matrix $\operatorname{diag}(2,1,0)$ has rank two, is singular, and lies in the smooth part of $\Sigma$; its distance to the rank-one variety is $1$ and to zero is $2$. The matrix
 $$
 uv^{\mathsf T}=\begin{pmatrix}1\\0\\0\end{pmatrix}(1,2,3)
-=\begin{pmatrix}1&2&3\\0&0&0\\0&0&0\end{pmatrix}
+=\begin{pmatrix}1&amp;2&amp;3\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}
 $$
 has rank one, lies in the singular locus of $\Sigma$, and has singular values $\sqrt{14},0,0$. Its Frobenius, operator and nuclear norms are all $\sqrt{14}$, because it has only one nonzero singular value.</p>
 <h2 id="the-absence-of-a-null-cone">The Absence of a Null Cone</h2>

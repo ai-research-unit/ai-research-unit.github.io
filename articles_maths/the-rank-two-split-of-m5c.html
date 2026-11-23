@@ -87,28 +87,28 @@ P=\operatorname{diag}(1,1,0,0,0),\qquad Q=\operatorname{diag}(0,0,1,1,1),
 $$</p>
 <p>and in this basis every $A$ has the block form</p>
 <p>$$
-A=\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix},
+A=\begin{pmatrix}A_{11}&amp;A_{12}\\ A_{21}&amp;A_{22}\end{pmatrix},
 \qquad
 A_{11}\in M_2,\quad A_{12}\in\mathbb{C}^{2\times3},\quad A_{21}\in\mathbb{C}^{3\times2},\quad A_{22}\in M_3 .
 $$</p>
 <p><strong>Proof.</strong> Choose a basis $v_1,v_2$ of $\operatorname{im}P$ and $v_3,v_4,v_5$ of $\ker P=\operatorname{im}Q$; the matrix of $P$ is the displayed diagonal, and the matrix of an arbitrary element is cut into the four blocks by the two bases.</p>
 <p><strong>Corollary.</strong> The four blocks are the four coarse Peirce corners:</p>
 <p>$$
-PMP=\left\{\begin{pmatrix}A_{11}&0\\0&0\end{pmatrix}\right\},\quad
-PMQ=\left\{\begin{pmatrix}0&A_{12}\\0&0\end{pmatrix}\right\},\quad
-QMP=\left\{\begin{pmatrix}0&0\\A_{21}&0\end{pmatrix}\right\},\quad
-QMQ=\left\{\begin{pmatrix}0&0\\0&A_{22}\end{pmatrix}\right\}.
+PMP=\left\{\begin{pmatrix}A_{11}&amp;0\\0&amp;0\end{pmatrix}\right\},\quad
+PMQ=\left\{\begin{pmatrix}0&amp;A_{12}\\0&amp;0\end{pmatrix}\right\},\quad
+QMP=\left\{\begin{pmatrix}0&amp;0\\A_{21}&amp;0\end{pmatrix}\right\},\quad
+QMQ=\left\{\begin{pmatrix}0&amp;0\\0&amp;A_{22}\end{pmatrix}\right\}.
 $$</p>
 <p><strong>Proof.</strong> Multiply the block matrix by $P$ and $Q$ on the left and on the right; the projectors select the block rows and columns.</p>
 <h3 id="the-block-product">The Block Product</h3>
 <p><strong>Proposition.</strong> The product of two block matrices is</p>
 <p>$$
-\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix}
-\begin{pmatrix}B_{11}&B_{12}\\ B_{21}&B_{22}\end{pmatrix}
+\begin{pmatrix}A_{11}&amp;A_{12}\\ A_{21}&amp;A_{22}\end{pmatrix}
+\begin{pmatrix}B_{11}&amp;B_{12}\\ B_{21}&amp;B_{22}\end{pmatrix}
 =
 \begin{pmatrix}
-A_{11}B_{11}+A_{12}B_{21}&A_{11}B_{12}+A_{12}B_{22}\\
-A_{21}B_{11}+A_{22}B_{21}&A_{21}B_{12}+A_{22}B_{22}
+A_{11}B_{11}+A_{12}B_{21}&amp;A_{11}B_{12}+A_{12}B_{22}\\
+A_{21}B_{11}+A_{22}B_{21}&amp;A_{21}B_{12}+A_{22}B_{22}
 \end{pmatrix}.
 $$</p>
 <p><strong>Proof.</strong> The ordinary matrix product, with the block sizes $2$ and $3$; every product of a $2\times3$ block with a $3\times2$ block is a $2\times2$ block, and every product of a $3\times2$ block with a $2\times3$ block is a $3\times3$ block.</p>

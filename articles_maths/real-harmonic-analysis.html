@@ -94,7 +94,7 @@ $$</p>
 F_N(a) = \frac{1}{N+1} \left( \frac{\sin((N+1)\pi a)}{\sin(\pi a)} \right)^{\!2},
 $$</p>
 <p>and the Cesàro means are $\sigma_N f = f * F_N$.</p>
-<p><strong>Theorem (Fejér).</strong> If $f : \mathbb{T} \to \mathbb{C}$ is continuous, then $\sigma_N f \to f$ uniformly on $\mathbb{T}$. If $f \in L^{r}(\mathbb{T})$ for $1 \le r < \infty$, then $\sigma_N f \to f$ in $L^{r}(\mathbb{T})$.</p>
+<p><strong>Theorem (Fejér).</strong> If $f : \mathbb{T} \to \mathbb{C}$ is continuous, then $\sigma_N f \to f$ uniformly on $\mathbb{T}$. If $f \in L^{r}(\mathbb{T})$ for $1 \le r &lt; \infty$, then $\sigma_N f \to f$ in $L^{r}(\mathbb{T})$.</p>
 <p>The Fejér kernel is non-negative, has integral $1$, and concentrates at the origin, which is why the Cesàro means behave better than the partial sums.</p>
 <h3 id="orthogonality-plancherel-and-riemannlebesgue">Orthogonality, Plancherel, and Riemann–Lebesgue</h3>
 <p>The functions $e_n(a) = \exp(2\pi i n a)$ form an orthonormal basis of $L^2(\mathbb{T})$: $\int_0^1 e_m \overline{e_n} = \delta_{mn}$.</p>
@@ -106,7 +106,7 @@ $$</p>
 <p>$$
 \sum_{n \in \mathbb{Z}} (\mathcal F f)(n) \overline{(\mathcal F g)(n)} = \int_0^1 f(a) \overline{g(a)} \, da.
 $$</p>
-<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f \in L^1(\mathbb{T})$, then $(\mathcal F f)(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^{r}(\mathbb{T})$ for $1 \le r < \infty$.</p>
+<p><strong>Theorem (Riemann–Lebesgue).</strong> If $f \in L^1(\mathbb{T})$, then $(\mathcal F f)(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^{r}(\mathbb{T})$ for $1 \le r &lt; \infty$.</p>
 <h2 id="the-fourier-transform-on-the-line">The Fourier Transform on the Line</h2>
 <h3 id="definition_1">Definition</h3>
 <p>For $f \in L^1(\mathbb{R})$ the <strong>Fourier transform</strong> is</p>
@@ -129,7 +129,7 @@ $$</p>
 <p>$$ \boxed{\;f(a) = \int_{\mathbb{R}} (\mathcal F f)(\zeta) \exp(2\pi i \zeta a) \, d\zeta\;}
 $$</p>
 <p>for almost every $a$, and for every $a$ if $f$ is continuous.</p>
-<p><strong>Proof.</strong> For $\epsilon > 0$ define $f_\epsilon(a) = \int (\mathcal F f)(\zeta) \exp(-\pi \epsilon^2 \zeta^2) \exp(2\pi i \zeta a) d\zeta$. Since $\mathcal F f \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} \exp(-\pi a^2/\epsilon^2)$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int (\mathcal F f)(\zeta) \exp(2\pi i \zeta a) d\zeta$ at every $a$.</p>
+<p><strong>Proof.</strong> For $\epsilon &gt; 0$ define $f_\epsilon(a) = \int (\mathcal F f)(\zeta) \exp(-\pi \epsilon^2 \zeta^2) \exp(2\pi i \zeta a) d\zeta$. Since $\mathcal F f \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} \exp(-\pi a^2/\epsilon^2)$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int (\mathcal F f)(\zeta) \exp(2\pi i \zeta a) d\zeta$ at every $a$.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem (Plancherel).</strong> The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\mathcal F f\|_2 = \|f\|_2$ and $\langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle$, and extends uniquely to a $*$-unitary operator</p>
 <p>$$
@@ -146,7 +146,7 @@ $$</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
 <p><strong>Translation.</strong> If $f_a(b) = f(b - a)$, then $\mathcal F f_a(\zeta) = \exp(-2\pi i \zeta \cdot a) (\mathcal F f)(\zeta)$.</p>
 <p><strong>Modulation.</strong> If $g(a) = \exp(2\pi i \eta \cdot a) f(a)$, then $(\mathcal F g)(\zeta) = (\mathcal F f)(\zeta - \eta)$.</p>
-<p><strong>Scaling.</strong> If $f_\lambda(a) = f(\lambda a)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\zeta) = \lambda^{-n} (\mathcal F f)(\zeta/\lambda)$.</p>
+<p><strong>Scaling.</strong> If $f_\lambda(a) = f(\lambda a)$ for $\lambda &gt; 0$, then $\widehat{f_\lambda}(\zeta) = \lambda^{-n} (\mathcal F f)(\zeta/\lambda)$.</p>
 <p><strong>Rotation invariance.</strong> If $R$ is orthogonal and $f_R(a) = f(Ra)$, then $\mathcal F f_R(\zeta) = (\mathcal F f)(R\zeta)$; the transform commutes with rotations.</p>
 <p><strong>Differentiation.</strong> For a multi-index $\alpha$, $\widehat{\partial^\alpha f}(\zeta) = (2\pi i)^{|\alpha|} \zeta^\alpha (\mathcal F f)(\zeta)$ whenever the derivatives lie in $L^1$. In particular the Laplacian has symbol $-4\pi^2 |\zeta|^2$:</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 \|f * g\|_t \le \|f\|_r \, \|g\|_s.
 $$</p>
 <p>In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_r \le \|f\|_1 \|g\|_r$.</p>
-<p><strong>Continuity.</strong> If $f \in L^{r}$ and $g \in L^1$ with $1 \le r < \infty$, then $f * g \in L^{r}$ and $\|f * g\|_r \le \|f\|_r \|g\|_1$. If $f \in L^\infty$ and $g \in L^1$, then $f * g$ is bounded and uniformly continuous, with $\|f * g\|_\infty \le \|f\|_\infty \|g\|_1$.</p>
+<p><strong>Continuity.</strong> If $f \in L^{r}$ and $g \in L^1$ with $1 \le r &lt; \infty$, then $f * g \in L^{r}$ and $\|f * g\|_r \le \|f\|_r \|g\|_1$. If $f \in L^\infty$ and $g \in L^1$, then $f * g$ is bounded and uniformly continuous, with $\|f * g\|_\infty \le \|f\|_\infty \|g\|_1$.</p>
 <h3 id="the-convolution-theorem">The Convolution Theorem</h3>
 <p><strong>Theorem.</strong> If $f, g \in L^1(\mathbb{R}^n)$, then $f * g \in L^1(\mathbb{R}^n)$ and</p>
 <p>$$ \boxed{\;\widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta)\;}.
@@ -180,15 +180,15 @@ $$</p>
 <p>The theorem extends to $L^2$ and to tempered distributions in the sense described below.</p>
 <h2 id="approximate-identities">Approximate Identities</h2>
 <h3 id="definition_3">Definition</h3>
-<p>A family $(\phi_\epsilon)_{\epsilon > 0}$ in $L^1(\mathbb{R}^n)$ is an <strong>approximate identity</strong> if $\int \phi_\epsilon = 1$, $\sup_\epsilon \|\phi_\epsilon\|_1 < \infty$, and for every $\delta > 0$,</p>
+<p>A family $(\phi_\epsilon)_{\epsilon &gt; 0}$ in $L^1(\mathbb{R}^n)$ is an <strong>approximate identity</strong> if $\int \phi_\epsilon = 1$, $\sup_\epsilon \|\phi_\epsilon\|_1 &lt; \infty$, and for every $\delta &gt; 0$,</p>
 <p>$$
-\int_{|a| > \delta} |\phi_\epsilon(a)| \, da \to 0 \qquad (\epsilon \to 0).
+\int_{|a| &gt; \delta} |\phi_\epsilon(a)| \, da \to 0 \qquad (\epsilon \to 0).
 $$</p>
 <p>The last condition says that the mass of $\phi_\epsilon$ concentrates near the origin.</p>
-<p><strong>Theorem.</strong> If $(\phi_\epsilon)$ is an approximate identity and $f \in L^{r}(\mathbb{R}^n)$ with $1 \le r < \infty$, then $\|f * \phi_\epsilon - f\|_r \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{r}$, then $(f * \phi_\epsilon)(a) \to f(a)$.</p>
+<p><strong>Theorem.</strong> If $(\phi_\epsilon)$ is an approximate identity and $f \in L^{r}(\mathbb{R}^n)$ with $1 \le r &lt; \infty$, then $\|f * \phi_\epsilon - f\|_r \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{r}$, then $(f * \phi_\epsilon)(a) \to f(a)$.</p>
 <h2 id="the-schwartz-space-and-tempered-distributions">The Schwartz Space and Tempered Distributions</h2>
 <h3 id="the-schwartz-space">The Schwartz Space</h3>
-<p>The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \phi(a)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.</p>
+<p>The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \phi(a)| &lt; \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.</p>
 <p><strong>Theorem.</strong> The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \zeta^\alpha \hat{\phi}$ and $\widehat{a^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.</p>
 <h3 id="tempered-distributions">Tempered Distributions</h3>
 <p>A <strong>tempered distribution</strong> is a continuous linear functional on $\mathcal{S}(\mathbb{R}^n)$; the space is denoted $\mathcal{S}'(\mathbb{R}^n)$ and contains $L^{r}(\mathbb{R}^n)$ for $1 \le r \le \infty$, all finite measures, and all polynomials. The operations are defined by duality:</p>
@@ -198,41 +198,41 @@ $$</p>
 <li><strong>Fourier transform:</strong> $\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle$.</li>
 </ul>
 <p>These extend the classical operations, and the Fourier transform is a bijection $\mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n)$.</p>
-<p><strong>Examples.</strong> The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\zeta)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\zeta|^{\alpha - n}$.</p>
+<p><strong>Examples.</strong> The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\zeta)$. For $0 &lt; \alpha &lt; n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\zeta|^{\alpha - n}$.</p>
 <h2 id="the-hardylittlewood-maximal-function">The Hardy–Littlewood Maximal Function</h2>
 <h3 id="definition-and-the-maximal-inequality">Definition and the Maximal Inequality</h3>
 <p>For $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$ the <strong>Hardy–Littlewood maximal function</strong> is</p>
 <p>$$
-Mf(a) = \sup_{r > 0} \frac{1}{|B(a, r)|} \int_{B(a, r)} |f(b)| \, db.
+Mf(a) = \sup_{r &gt; 0} \frac{1}{|B(a, r)|} \int_{B(a, r)} |f(b)| \, db.
 $$</p>
-<p><strong>Theorem (Hardy–Littlewood).</strong> There is a dimensional constant $C_n$ such that for every $f \in L^1(\mathbb{R}^n)$ and every $\lambda > 0$,</p>
-<p>$$ \boxed{\;|\{a : Mf(a) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1\;}.
+<p><strong>Theorem (Hardy–Littlewood).</strong> There is a dimensional constant $C_n$ such that for every $f \in L^1(\mathbb{R}^n)$ and every $\lambda &gt; 0$,</p>
+<p>$$ \boxed{\;|\{a : Mf(a) &gt; \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1\;}.
 $$</p>
-<p><strong>Proof.</strong> For each $a$ with $Mf(a) > \lambda$ choose a ball $B(a, r_a)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.</p>
-<p><strong>Theorem.</strong> For $1 < r \le \infty$ there is $C_{n,r}$ with $\|Mf\|_r \le C_{n,r} \|f\|_r$.</p>
-<p>The case $r = \infty$ is immediate; the case $1 < r < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(a) \gtrsim 1/a$ for large $a$, and $1/a \notin L^1$.</p>
+<p><strong>Proof.</strong> For each $a$ with $Mf(a) &gt; \lambda$ choose a ball $B(a, r_a)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf &gt; \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.</p>
+<p><strong>Theorem.</strong> For $1 &lt; r \le \infty$ there is $C_{n,r}$ with $\|Mf\|_r \le C_{n,r} \|f\|_r$.</p>
+<p>The case $r = \infty$ is immediate; the case $1 &lt; r &lt; \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(a) \gtrsim 1/a$ for large $a$, and $1/a \notin L^1$.</p>
 <h3 id="the-lebesgue-differentiation-theorem">The Lebesgue Differentiation Theorem</h3>
 <p><strong>Theorem (Lebesgue).</strong> If $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$, then</p>
 <p>$$
 \lim_{r \to 0} \frac{1}{|B(a, r)|} \int_{B(a, r)} f(b) \, db = f(a)
 $$</p>
 <p>for almost every $a$.</p>
-<p><strong>Proof.</strong> It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result.</p>
+<p><strong>Proof.</strong> It suffices to prove the statement for $f \in L^1$. For $\epsilon &gt; 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 &lt; \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result.</p>
 <p>A point where the conclusion holds is a <strong>Lebesgue point</strong> of $f$. The maximal function gives the quantitative form of the theorem.</p>
 <h2 id="the-hilbert-transform">The Hilbert Transform</h2>
 <h3 id="definition_4">Definition</h3>
-<p>The <strong>Hilbert transform</strong> of $f \in L^{r}(\mathbb{R})$, $1 \le r < \infty$, is the principal value integral</p>
+<p>The <strong>Hilbert transform</strong> of $f \in L^{r}(\mathbb{R})$, $1 \le r &lt; \infty$, is the principal value integral</p>
 <p>$$
 Hf(a) = \frac{1}{\pi} \, \mathrm{p.v.} \int_{\mathbb{R}} \frac{f(a - t)}{t} \, dt
-= \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| > \epsilon} \frac{f(a - t)}{t} \, dt.
+= \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| &gt; \epsilon} \frac{f(a - t)}{t} \, dt.
 $$</p>
-<p>The singular integral converges almost everywhere for $f$ in $L^{r}$, $1 \le r < \infty$, and in $L^2$ it converges in norm.</p>
+<p>The singular integral converges almost everywhere for $f$ in $L^{r}$, $1 \le r &lt; \infty$, and in $L^2$ it converges in norm.</p>
 <h3 id="the-fourier-multiplier">The Fourier Multiplier</h3>
 <p><strong>Theorem.</strong> On $L^2(\mathbb{R})$ the Hilbert transform is given by the multiplier</p>
 <p>$$
 \widehat{Hf}(\zeta) = -i \, \mathrm{sgn}(\zeta) \, (\mathcal F f)(\zeta).
 $$</p>
-<p><strong>Proof.</strong> Let $K_\epsilon(a) = \frac{1}{\pi a} \mathbf{1}_{|a| > \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives</p>
+<p><strong>Proof.</strong> Let $K_\epsilon(a) = \frac{1}{\pi a} \mathbf{1}_{|a| &gt; \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives</p>
 <p>$$
 \hat{K}_\epsilon(\zeta) = -i \, \mathrm{sgn}(\zeta) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\zeta| \epsilon) \right),
 $$</p>
@@ -243,11 +243,11 @@ $$</p>
 \|Hf\|_2 = \|f\|_2, \qquad H^2 = -I, \qquad H^* = -H,
 $$</p>
 <p>so $H$ is an anti-self-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.</p>
-<p><strong>Boundedness on $L^{r}$.</strong> The Hilbert transform is bounded on $L^{r}(\mathbb{R})$ for every $1 < r < \infty$: there is $C_r$ with $\|Hf\|_r \le C_r \|f\|_r$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.</p>
-<p><strong>Weak $(1,1)$.</strong> For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^{r}$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^{r}$ bounds.</p>
+<p><strong>Boundedness on $L^{r}$.</strong> The Hilbert transform is bounded on $L^{r}(\mathbb{R})$ for every $1 &lt; r &lt; \infty$: there is $C_r$ with $\|Hf\|_r \le C_r \|f\|_r$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.</p>
+<p><strong>Weak $(1,1)$.</strong> For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| &gt; \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^{r}$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon &gt; 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^{r}$ bounds.</p>
 <h2 id="interpolation-and-math278-theory">Interpolation and $L^{r}$ Theory</h2>
 <h3 id="the-rieszthorin-theorem">The Riesz–Thorin Theorem</h3>
-<p><strong>Theorem (Riesz–Thorin).</strong> Let $1 \le r_0, r_1, s_0, s_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{r_0}$ to $L^{s_0}$ with norm $M_0$ and from $L^{r_1}$ to $L^{s_1}$ with norm $M_1$. For $0 < \theta < 1$ define</p>
+<p><strong>Theorem (Riesz–Thorin).</strong> Let $1 \le r_0, r_1, s_0, s_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{r_0}$ to $L^{s_0}$ with norm $M_0$ and from $L^{r_1}$ to $L^{s_1}$ with norm $M_1$. For $0 &lt; \theta &lt; 1$ define</p>
 <p>$$
 \frac{1}{r} = \frac{1 - \theta}{r_0} + \frac{\theta}{r_1}, \qquad \frac{1}{s} = \frac{1 - \theta}{s_0} + \frac{\theta}{s_1}.
 $$</p>
@@ -259,9 +259,9 @@ $$</p>
 \|\mathcal F f\|_s \le \|f\|_r.
 $$</p>
 <p><strong>Proof.</strong> The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(r_0, s_0) = (1, \infty)$ and $(r_1, s_1) = (2, 2)$ gives the result.</p>
-<p>The endpoints are sharp: at $r = 1$ the transform is bounded but need not be integrable, and at $r = 2$ it is an isometry. For $r > 2$ the inequality fails, because the Fourier transform of an $L^{r}$ function need not lie in $L^{s}$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.</p>
+<p>The endpoints are sharp: at $r = 1$ the transform is bounded but need not be integrable, and at $r = 2$ it is an isometry. For $r &gt; 2$ the inequality fails, because the Fourier transform of an $L^{r}$ function need not lie in $L^{s}$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.</p>
 <h3 id="the-marcinkiewicz-interpolation-theorem">The Marcinkiewicz Interpolation Theorem</h3>
-<p><strong>Theorem (Marcinkiewicz).</strong> Let $T$ be a sublinear operator of weak type $(r_0, r_0)$ and weak type $(r_1, r_1)$, where $1 \le r_0 < r_1 \le \infty$. Then $T$ is of strong type $(r, r)$ for every $r_0 < r < r_1$. This is the distribution-function form of interpolation; it produces the $L^{r}$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.</p>
+<p><strong>Theorem (Marcinkiewicz).</strong> Let $T$ be a sublinear operator of weak type $(r_0, r_0)$ and weak type $(r_1, r_1)$, where $1 \le r_0 &lt; r_1 \le \infty$. Then $T$ is of strong type $(r, r)$ for every $r_0 &lt; r &lt; r_1$. This is the distribution-function form of interpolation; it produces the $L^{r}$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.</p>
 <h2 id="littlewoodpaley-theory">Littlewood–Paley Theory</h2>
 <h3 id="the-littlewoodpaley-decomposition">The Littlewood–Paley Decomposition</h3>
 <p>Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\zeta| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{\psi}(2^{-j} \zeta) = 1$ for $\zeta \neq 0$. Set $\widehat{\Delta_j f}(\zeta) = \hat{\psi}(2^{-j} \zeta) (\mathcal F f)(\zeta)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\zeta| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.</p>
@@ -270,7 +270,7 @@ $$</p>
 <p>$$
 S f(a) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(a)|^2 \right)^{\!1/2}.
 $$</p>
-<p><strong>Theorem (Littlewood–Paley).</strong> For $1 < r < \infty$ there are constants depending only on $n$, $r$, and $\psi$ such that</p>
+<p><strong>Theorem (Littlewood–Paley).</strong> For $1 &lt; r &lt; \infty$ there are constants depending only on $n$, $r$, and $\psi$ such that</p>
 <p>$$
 c_{n,r} \|f\|_r \le \|S f\|_r \le C_{n,r} \|f\|_r.
 $$</p>
@@ -280,7 +280,7 @@ $$</p>
 <p>$$
 \|\partial^\alpha f\|_s \le C R^{|\alpha| + n(1/r - 1/s)} \|f\|_r,
 $$</p>
-<p>with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\zeta| \le 2R\}$, then $\|\partial^\alpha f\|_r \ge c R^{|\alpha|} \|f\|_r$ for a constant $c > 0$ independent of $R$ and $f$.</p>
+<p>with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\zeta| \le 2R\}$, then $\|\partial^\alpha f\|_r \ge c R^{|\alpha|} \|f\|_r$ for a constant $c &gt; 0$ independent of $R$ and $f$.</p>
 <p>These inequalities are the mechanism by which Littlewood–Paley theory converts frequency localization into size estimates; they underlie multiplier theorems and Sobolev embedding.</p>
 <h2 id="sobolev-spaces">Sobolev Spaces</h2>
 <h3 id="definition_5">Definition</h3>
@@ -288,21 +288,21 @@ $$</p>
 <p>$$
 \|f\|_{W^{k,r}} = \left( \sum_{|\alpha| \le k} \|\partial^\alpha f\|_r^r \right)^{\!1/r}
 $$</p>
-<p>for $r < \infty$, and the corresponding supremum for $r = \infty$.</p>
+<p>for $r &lt; \infty$, and the corresponding supremum for $r = \infty$.</p>
 <h3 id="characterization-by-the-fourier-transform">Characterization by the Fourier Transform</h3>
 <p>For $r = 2$ the Fourier transform gives a complete description. For real $s$, the <strong>Sobolev space</strong> $H^s(\mathbb{R}^n)$ is the set of tempered distributions $f$ with</p>
 <p>$$
-\|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\zeta|^2)^s \, |(\mathcal F f)(\zeta)|^2 \, d\zeta < \infty.
+\|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\zeta|^2)^s \, |(\mathcal F f)(\zeta)|^2 \, d\zeta &lt; \infty.
 $$</p>
 <p><strong>Theorem.</strong> For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\zeta|^2)^s (\mathcal F f)(\zeta) \overline{(\mathcal F g)(\zeta)} d\zeta$, and the Fourier transform is a $*$-unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\zeta|^2)^s d\zeta)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.</p>
 <p>The <strong>homogeneous</strong> Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\zeta|^{2s} |(\mathcal F f)(\zeta)|^2 d\zeta$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.</p>
 <h3 id="sobolev-embedding">Sobolev Embedding</h3>
-<p><strong>Theorem (Sobolev embedding).</strong> Let $k \ge 1$ and $1 \le r < \infty$. If $k < n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ continuously for $\frac{1}{s} = \frac{1}{r} - \frac{k}{n}$. If $k = n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ for every $r \le s < \infty$. If $k > n/r$, then $W^{k,r}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/r$, after modification on a null set.</p>
-<p><strong>Theorem.</strong> If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.</p>
-<p><strong>Proof.</strong> By Cauchy–Schwarz, $\int |\mathcal F f| = \int (1 + |\zeta|^2)^{-s/2} (1 + |\zeta|^2)^{s/2} |\mathcal F f| \le \big( \int (1 + |\zeta|^2)^{-s} d\zeta \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$.</p>
+<p><strong>Theorem (Sobolev embedding).</strong> Let $k \ge 1$ and $1 \le r &lt; \infty$. If $k &lt; n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ continuously for $\frac{1}{s} = \frac{1}{r} - \frac{k}{n}$. If $k = n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ for every $r \le s &lt; \infty$. If $k &gt; n/r$, then $W^{k,r}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m &lt; k - n/r$, after modification on a null set.</p>
+<p><strong>Theorem.</strong> If $s &gt; n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.</p>
+<p><strong>Proof.</strong> By Cauchy–Schwarz, $\int |\mathcal F f| = \int (1 + |\zeta|^2)^{-s/2} (1 + |\zeta|^2)^{s/2} |\mathcal F f| \le \big( \int (1 + |\zeta|^2)^{-s} d\zeta \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s &gt; n$.</p>
 <h3 id="the-riesz-potential">The Riesz Potential</h3>
-<p>For $0 < \alpha < n$ the <strong>Riesz potential</strong> of order $\alpha$ is the operator $\widehat{I_\alpha f}(\zeta) = |\zeta|^{-\alpha} (\mathcal F f)(\zeta)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.</p>
-<p><strong>Theorem (Hardy–Littlewood–Sobolev).</strong> If $0 < \alpha < n$, $1 < r < s < \infty$, and $\frac{1}{s} = \frac{1}{r} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_s \le C_{n, \alpha, r} \|f\|_r$.</p>
+<p>For $0 &lt; \alpha &lt; n$ the <strong>Riesz potential</strong> of order $\alpha$ is the operator $\widehat{I_\alpha f}(\zeta) = |\zeta|^{-\alpha} (\mathcal F f)(\zeta)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.</p>
+<p><strong>Theorem (Hardy–Littlewood–Sobolev).</strong> If $0 &lt; \alpha &lt; n$, $1 &lt; r &lt; s &lt; \infty$, and $\frac{1}{s} = \frac{1}{r} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_s \le C_{n, \alpha, r} \|f\|_r$.</p>
 <p>The Riesz potential saturates the Sobolev embedding: it maps $L^{r}$ into $L^{s}$ in exactly the range dictated by a gain of $\alpha$ derivatives.</p>
 <h2 id="the-uncertainty-principle">The Uncertainty Principle</h2>
 <h3 id="the-heisenberg-inequality">The Heisenberg Inequality</h3>
@@ -318,7 +318,7 @@ $$</p>
 \le 2 \left( \int_{\mathbb{R}} a^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |\frac{df}{dx}|^2 \right)^{\!1/2},
 $$</p>
 <p>and $\|\frac{df}{dx}\|_2 = 2\pi \|\zeta \mathcal F f\|_2$ by Plancherel and the differentiation rule.</p>
-<p>Equality holds if and only if $f(b) = c \, \exp(-a b^2)$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.</p>
+<p>Equality holds if and only if $f(b) = c \, \exp(-a b^2)$ for some $a &gt; 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.</p>
 <h3 id="qualitative-forms">Qualitative Forms</h3>
 <p><strong>Theorem.</strong> There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\mathcal F f$ are compactly supported.</p>
 <p><strong>Proof.</strong> If $f$ is compactly supported, then $(\mathcal F f)(\zeta) = \int f(a) \exp(-2\pi i \zeta a) da$ extends to an entire function of the complex variable $\zeta$; if $\mathcal F f$ were also compactly supported, the identity theorem for holomorphic functions would force $\mathcal F f \equiv 0$.</p>

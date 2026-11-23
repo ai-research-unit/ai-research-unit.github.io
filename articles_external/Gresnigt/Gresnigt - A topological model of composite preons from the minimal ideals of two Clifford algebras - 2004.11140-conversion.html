@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Topological Model of Composite Preons from the Minimal Ideals of Two Clifford Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A topological model of composite preons from the minimal ideals of two Clifford…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-topological-model-of-composite-preons-from-the-minimal-ideals-of-two-clifford-algebras"><strong>A Topological Model of Composite Preons from the Minimal Ideals of Two Clifford Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2004.11140 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 May 2020 (title page dated 8 May 2020)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - A topological model of composite preons from the minimal ideals of two Clifford algebras - 2004.11140-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A topological model of composite preons from the minimal ideals of two Clifford algebras - 2004.11140.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - A topological model of composite preons from the minimal ideals of two Clifford algebras - 2004.11140.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Adds the weak force to the braid–ideal correspondence by using two algebras for two jobs. The left ideals of $Cl(6)$ produce the <em>twist</em> structure — the electrocolor charges — as in the earlier papers; the right ideals of $Cl(4)$ produce the <em>braid</em> structure, and the braid structure is what carries chirality. Charged vector bosons are then written as braid words, so a weak decay is a braid composition. The chirality of the weak force, which the original Helon model did not explain, is read off a failure: a right-handed state acted on by $W^-$ lands outside a $Cl(4)$ minimal ideal, so it does not become a physical state.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-algebras-and-their-assignment-of-jobs">The two algebras and their assignment of jobs</h3>
+<p>$Cl(6)$ with $\alpha_1\equiv\frac12(-e_5+ie_4)$, $\alpha_2\equiv\frac12(-e_3+ie_1)$, $\alpha_3\equiv\frac12(-e_6+ie_2)$ and conjugates (paper 1–2), $\{\alpha_i^\dagger,\alpha_j\}=\delta_{ij}$ (paper 3), giving $S^u\equiv Cl(6)\omega\omega^\dagger$ (paper 4) and $S^d$ spanned by $\{1,\alpha_1,\alpha_2,\alpha_3,\alpha_2\alpha_3,\alpha_3\alpha_1,\alpha_1\alpha_2,\alpha_1\alpha_2\alpha_3\}\omega^\dagger\omega$ (paper 5). $Cl(4)$ with $\{\beta_1,\beta_2,\beta_1^\dagger,\beta_2^\dagger\}$, $\Omega=\beta_2\beta_1$, gives the right ideals
+$$\Omega^\dagger\Omega\,Cl(4),\qquad \Omega\Omega^\dagger Cl(4)$$
+(paper 6). The assignment is explicit: "the $Cl(6)$ ideals are responsible for generating twist structure, whereas the $Cl(4)$ ideals are responsible for generating braid structure", so every state is written $[a,b,c]B$ with twist first. Chirality comes from combining the two: $\nu_R=\omega\omega^\dagger\Omega^\dagger\Omega$, $\nu_L=\omega\omega^\dagger\Omega^\dagger\Omega\beta_1^\dagger$ (paper 7), $e^-_L=\alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\omega^\dagger\omega\Omega^\dagger\Omega\beta_2^\dagger$, $e^-_R=\alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\omega^\dagger\omega\Omega^\dagger\Omega\beta_1^\dagger\beta_2^\dagger$ (paper 8), with the weak doublets (paper 9–10) and the $SU(2)$ generators
+$$T_1\equiv-\beta_1\beta_2^\dagger\omega-\beta_2\beta_1^\dagger\omega^\dagger,\quad T_2\equiv i\beta_1\beta_2^\dagger\omega-i\beta_2\beta_1^\dagger\omega^\dagger,\quad T_3\equiv\beta_1\beta_2^\dagger\beta_2\beta_1^\dagger\omega\omega^\dagger-\beta_2\beta_1^\dagger\beta_1\beta_2^\dagger\omega^\dagger\omega$$
+(paper 11).</p>
+<h3 id="the-braid-maps">The braid maps</h3>
+<p>Twist from the ladder operators: $\alpha_1^\dagger\mapsto(\sigma_3\sigma_2)$, $\alpha_2^\dagger\mapsto(\sigma_1\sigma_3)$, $\alpha_3^\dagger\mapsto(\sigma_2\sigma_1)$ (paper 12), with $\alpha_i\mapsto$ the inverses (paper 14), because $[1,0,0]=\sigma_3\sigma_2[0,0,0]$ and companions. Braid from the $\beta$'s:
+$$\beta_1^\dagger\mapsto\sigma_1\sigma_2^{-1},\quad \beta_2^\dagger\mapsto\sigma_1^{-1}\sigma_2,\quad \beta_1\mapsto\sigma_2\sigma_1^{-1},\quad \beta_2\mapsto\sigma_2^{-1}\sigma_1$$
+(paper 15–16), chosen so that $\Omega\Omega^\dagger=\Omega^\dagger\Omega=I$. The paper is candid about the choice: "There seems to be no a priori reason to choose one braid structure over another", and the alternative $\beta_1^\dagger\mapsto\sigma_1\sigma_2$ is rejected only because it collides with $\alpha_3^\dagger$. Then
+$$\binom{u^r_L}{d^r_L}=\binom{\alpha_3^\dagger\alpha_2^\dagger\omega\omega^\dagger\Omega^\dagger\Omega\beta_1^\dagger}{\alpha_1\omega^\dagger\omega\Omega^\dagger\Omega\beta_2^\dagger}\ \longmapsto\ \binom{[1,0,1]\sigma_1\sigma_2^{-1}}{\sigma_1^{-1}\sigma_2[-1,0,0]}$$
+(paper 17), $u^r_R\mapsto[1,0,1]I$ (paper 18), and the bosons
+$$W^-=\beta_1\beta_2^\dagger\omega\mapsto\sigma_2\sigma_1^{-1}\sigma_1^{-1}\sigma_2[-1,-1,-1],\qquad W^+=\beta_2\beta_1^\dagger\omega^\dagger\mapsto\sigma_2^{-1}\sigma_1\sigma_1\sigma_2^{-1}[1,1,1]$$
+(paper 22–23), with $W^+W^-=W^-W^+=I[0,0,0]$.</p>
+<h3 id="chirality-as-a-failure-to-land-in-an-ideal">Chirality as a failure to land in an ideal</h3>
+<p>The algebraic computation $[T_1,u^r_L]=d^r_L$ (paper 21) is mirrored by braid composition $d^r_L\to u^r_LW^-$ (paper 24) and $W^-\to\bar\nu_Re^-_L$ (paper 25). For the right-handed states the composition is performed and found not to close: $u^r_RW^-\mapsto\sigma_2\sigma_1^{-1}\sigma_1^{-1}\sigma_2[0,-1,0]$ (paper 26), $d^r_RW^+\mapsto[1,1,0]\sigma_1\sigma_2^{-1}\sigma_1\sigma_2^{-1}$ (paper 27), and "In neither case does the right-handed particle transform into a physical state, because at the algebra level, the transformed states do not live in a $Cl(4)$ minimal ideal." The two features the author credits to the algebra — unequal braid length, and a nontrivial braid for the charged bosons — "explain the chiral nature of the weak force in the braid model, something which the original model did not address".</p>
+<p>The final observation: $\nu_R\mapsto[0,0,0]I$ and $\bar\nu_L\mapsto I[0,0,0]$ (paper 20), so "both the right-handed neutrino and left-handed anti-neutrino both correspond to the unbraid, or equivalently, the vacuum".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-chirality-from-which-ideal-a-state-lands-in">1. Chirality from which ideal a state lands in</h3>
+<p><strong>The idea.</strong> The weak interaction is a composition of braid words. Left-handed states compose into another state of a minimal ideal; right-handed ones compose into a word that no ideal contains. Chirality is therefore not imposed by a projector $\frac{1-\gamma_5}{2}$ but read off membership in an algebraic subspace. A <strong>mechanism</strong> for maximal parity violation that produces it as an arithmetic fact about ideals.</p>
+<p><strong>What it would add.</strong> The corpus imposes chirality by the projector and discusses why the weak force couples only to one helicity as a wall the algebra runs into. Here the same conclusion is derived from a place a state does or does not live — a structural reason rather than a projection, and one that comes with an explicit check: write the word, see if it is in the ideal.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The check is only as strong as the braid maps, which the paper admits are chosen without an a priori rule; a different choice of $\beta^\dagger\mapsto$ could move a word in or out of the ideal. And the claim is about a toy model with one generation, no masses, no mixing.</p>
+<h3 id="2-two-algebras-two-jobs-charge-and-chirality-factorised">2. Two algebras, two jobs: charge and chirality factorised</h3>
+<p><strong>The idea.</strong> $Cl(6)$ supplies exactly the six generators needed for twist structure, $Cl(4)$ exactly the four needed for braid structure, and the paper notes this count matches $B_3^c$ having six generators and $B_3$ four. A <strong>reading</strong> in which the <em>dimension</em> of the Clifford algebra is matched to the <em>rank</em> of the braid group it must reproduce, so that the split into two algebras is forced rather than convenient.</p>
+<p><strong>What it would add.</strong> The corpus builds one algebra and reads all symmetries from one place. This factorises the symmetry content into two algebras by a counting argument, which is a different way to organise the same data and makes a prediction: no state can mix the two roles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code>.</p>
+<p><strong>What stands in the way.</strong> The count is suggestive but not a proof of necessity; the paper has to combine the two algebras by hand and its states "then simultaneously belongs to a $Cl(6)$ minimal left ideal and a $Cl(4)$ minimal right ideal", which is a definition, not a derivation. Nothing forbids a larger algebra.</p>
+<h3 id="3-the-neutrino-as-the-vacuum">3. The neutrino as the vacuum</h3>
+<p><strong>The idea.</strong> Both $\nu_R$ and $\bar\nu_L$ map to the unbraid. A particle is the identity element of the braid group — the absence of braiding is not the absence of a particle but the presence of a particular one.</p>
+<p><strong>What it would add.</strong> The corpus has a vacuum as the null stratum, where the scalar part and the vector part vanish together, and it separately has the null cone. Here the vacuum is a group identity, which is a stronger statement: it has an inverse and a product, and the product with any particle is that particle. It would let the corpus say what the identity element of its algebra <em>is</em> physically.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-vacuum-and-the-nilpotent-ladder.md</code>.</p>
+<p><strong>What stands in the way.</strong> Two distinct particles share the identity, so the map is not injective on the vacuum sector; the corpus's vacuum is a single stratum, not a two-element set. And in the corpus's algebra the identity is $e_t$, with no braid interpretation offered.</p>
+<p>The rank is a judgement: chirality from ideal membership first, because it derives something the corpus imposes; the two-algebra factorisation second, because it is a structural claim that can be checked by counting; the neutrino-as-vacuum third, because it is an observation rather than an argument.</p>
+<p>Eleven pages: the $Cl(6)$ electrocolor ideals revisited, the $Cl(4)$ right ideals and the combined states, the mapping of ideals to braid and twist, the charged vector bosons and the composition of weak decays, and a discussion with the full state table in an appendix.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

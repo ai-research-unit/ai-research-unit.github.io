@@ -207,10 +207,10 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
 \begin{pmatrix}
-1&0&0&-1\\
-0&1&-1&0\\
-0&1&1&0\\
-1&0&0&1
+1&amp;0&amp;0&amp;-1\\
+0&amp;1&amp;-1&amp;0\\
+0&amp;1&amp;1&amp;0\\
+1&amp;0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>Checks: $L^{\mathsf T}L=\mathrm I_4$ to $1.0\times10^{-17}$, $\det L=1$, $\operatorname{tr}L=2\sqrt2=4\cos\tfrac{\pi}{4}$, and the eigenvalues are $e^{\pm i\pi/4}$, each twice. The matrix is real orthogonal, of determinant one: for a real unit $\tilde u$, $L_{\mathrm{axf}}(\tilde u)$ lies in $SO(4)$.</p>
@@ -218,23 +218,23 @@ $$</p>
 <p>$$
 R_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
 \begin{pmatrix}
-1&0&0&-1\\
-0&1&1&0\\
-0&-1&1&0\\
-1&0&0&1
+1&amp;0&amp;0&amp;-1\\
+0&amp;1&amp;1&amp;0\\
+0&amp;-1&amp;1&amp;0\\
+1&amp;0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>The two arrays agree in the first and last columns and differ by one sign in the middle block. That sign is the whole difference, and §2 names it.</p>
 <p><strong>The conjugation.</strong> The product $L_{\mathrm{axf}}(\tilde u)R_{\mathrm{axf}}(\tilde u^{-1})$ is real:</p>
 <p>$$
 \mathrm{Ad}_{\tilde u}=
-\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>a quarter-turn of the $(\vec e_x,\vec e_y)$ plane with $e_t$ and $\vec e_z$ fixed. This is the display of §1 of the $\mathrm{SU}(3)$ note, and here it is <em>every</em> element: the whole of $\mathrm{SU}(2)$ acts this way on the vector part.</p>
 <p><strong>The axial matrix.</strong> The block of $L$ that is not a multiple of the identity is built from</p>
 <p>$$
 \mathsf A(\vec e_z)=[\vec e_z]_{\times}=
-\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix},
+\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>the matrix of $\vec v\mapsto\vec e_z\times\vec v$. Its square is $\vec e_z\vec e_z^{\mathsf T}-\mathrm I_3$, its cube is $-\mathsf A$, its eigenvalues are $0,\pm i$, and its determinant is zero.</p>
 <p><strong>The element itself.</strong> With $M(e_t)=\mathrm I_2$ and $M(\vec e_k)=-i\sigma_k$,</p>
@@ -246,7 +246,7 @@ $$</p>
 <p><strong>The Conway array.</strong> Solving $\mathrm{Ad}_{\tilde u}=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$ over the sixteen words gives four non-zero entries, $c_{{\imath}{\jmath}}=u_{\imath} u^{\natural}_{{\jmath}}$ with $u^{\natural}=\tfrac{1}{\sqrt2}(1,0,0,-1)$:</p>
 <p>$$
 c=\tfrac12
-\begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\1&0&0&-1\end{pmatrix},
+\begin{pmatrix}1&amp;0&amp;0&amp;-1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\1&amp;0&amp;0&amp;-1\end{pmatrix},
 \qquad\text{that is}\qquad
 \mathrm{Ad}_{\tilde u}=\tfrac12\bigl(e_t[\,]e_t-e_t[\,]e_z+e_z[\,]e_t-e_z[\,]e_z\bigr),
 $$</p>
@@ -258,14 +258,14 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)=
 \begin{pmatrix}
-c&-s\,\vec n^{\mathsf T}\\
-s\,\vec n&c\,\mathrm I_3+s\,\mathsf A
+c&amp;-s\,\vec n^{\mathsf T}\\
+s\,\vec n&amp;c\,\mathrm I_3+s\,\mathsf A
 \end{pmatrix},
 \qquad
 R_{\mathrm{axf}}(\tilde u)=
 \begin{pmatrix}
-c&-s\,\vec n^{\mathsf T}\\
-s\,\vec n&c\,\mathrm I_3-s\,\mathsf A
+c&amp;-s\,\vec n^{\mathsf T}\\
+s\,\vec n&amp;c\,\mathrm I_3-s\,\mathsf A
 \end{pmatrix}.
 $$</p>
 <p>Verified symbolically for independent $c,s,n_1,n_2,n_3$: the two identities are exact entry by entry, and with $c^{2}+s^{2}=1$ and $\vec n\cdot\vec n=1$ both displays are orthogonal of determinant one. <strong>The two one-sided copies of one rotor differ in one sign, and the sign sits on the axial matrix.</strong> Written out at $\vec n=\vec e_z$ the identity is the pair of arrays of §1.</p>
@@ -282,7 +282,7 @@ $$</p>
 <p>$$
 \mathrm{Ad}_{\tilde u}=
 \begin{pmatrix}
-1&0\\0&R
+1&amp;0\\0&amp;R
 \end{pmatrix},
 \qquad
 R=\cos\varphi\,\mathrm I_3+\sin\varphi\,\mathsf A(\vec n)+\bigl(1-\cos\varphi\bigr)\vec n\vec n^{\mathsf T}.
@@ -299,8 +299,8 @@ $$</p>
 <p>$$
 \begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}\longmapsto
 \begin{pmatrix}
-c&-s\,\vec n^{\mathsf T}\\
-s\,\vec n&c\,\mathrm I_3+s\,\mathsf A(\vec n)
+c&amp;-s\,\vec n^{\mathsf T}\\
+s\,\vec n&amp;c\,\mathrm I_3+s\,\mathsf A(\vec n)
 \end{pmatrix}
 \begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}.
 $$</p>
@@ -359,13 +359,13 @@ $$</p>
 <p><strong>The arrays.</strong> At $\vec n=\vec e_k$ and $\varphi=\pi$ the rotor is the unit itself, and the left displays are signed permutations:</p>
 <p>$$
 L(\vec e_x)=
-\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
 L(\vec e_y)=
-\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
 \qquad
 L(\vec e_z)=
-\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The properties.</strong> Each is real orthogonal of determinant one, each is antisymmetric, and each squares to minus the identity:</p>
 <p>$$
@@ -459,18 +459,18 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)=\tfrac12
 \begin{pmatrix}
-1&-1&-1&-1\\
-1&1&-1&1\\
-1&1&1&-1\\
-1&-1&1&1
+1&amp;-1&amp;-1&amp;-1\\
+1&amp;1&amp;-1&amp;1\\
+1&amp;1&amp;1&amp;-1\\
+1&amp;-1&amp;1&amp;1
 \end{pmatrix},
 \qquad
 L^{2}=\tfrac12
 \begin{pmatrix}
--1&-1&-1&-1\\
-1&-1&-1&1\\
-1&1&-1&-1\\
-1&-1&1&-1
+-1&amp;-1&amp;-1&amp;-1\\
+1&amp;-1&amp;-1&amp;1\\
+1&amp;1&amp;-1&amp;-1\\
+1&amp;-1&amp;1&amp;-1
 \end{pmatrix},
 \qquad
 L^{3}=-\mathrm I_4 .
@@ -479,20 +479,20 @@ $$</p>
 <p><strong>The conjugation.</strong></p>
 <p>$$
 \mathrm{Ad}_{\tilde u}=
-\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix},
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
 \mathrm{Ad}_{\tilde u}^{\,2}=
-\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&0&0&1\\0&1&0&0\end{pmatrix},
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>with the cube the identity to $7\times10^{-16}$: the cycle $\vec e_x\mapsto\vec e_y\mapsto\vec e_z\mapsto\vec e_x$, of order three, eigenvalues $1,1,\omega,\omega^{2}$ with $\omega=e^{2\pi i/3}$.</p>
 <p><strong>The Conway array.</strong> Since $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$ and $\tilde u^{\natural}$ has the three vector signs reversed, $c_{{\imath}{\jmath}}=\pm\tfrac14$ and all sixteen entries are non-zero:</p>
 <p>$$
 c=\tfrac14
 \begin{pmatrix}
-1&-1&-1&-1\\
-1&-1&-1&-1\\
-1&-1&-1&-1\\
-1&-1&-1&-1
+1&amp;-1&amp;-1&amp;-1\\
+1&amp;-1&amp;-1&amp;-1\\
+1&amp;-1&amp;-1&amp;-1\\
+1&amp;-1&amp;-1&amp;-1
 \end{pmatrix},
 $$</p>
 <p>of rank one. <strong>Sixteen non-zero words, one word needed</strong>: sparsity and length are different questions, and this element separates them in the length-one stratum.</p>
@@ -539,8 +539,8 @@ $$</p>
 <p>$$
 M_2(\tilde u)=
 \begin{pmatrix}
-c-isn_z&-s\,(n_y+in_x)\\
-s\,(n_y-in_x)&c+isn_z
+c-isn_z&amp;-s\,(n_y+in_x)\\
+s\,(n_y-in_x)&amp;c+isn_z
 \end{pmatrix},
 $$</p>
 <p>unitary of determinant one to $1.1\times10^{-16}$, and for $\vec n=\vec e_z$ the left copy on the ideal $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ is the scalar $c-is$: the eigenvalue $-i$ of $L_{\vec e_z}$ on $\tilde\Pi_{\mathrm{id},+}$ is the entry $-i$ of $M_2(\vec e_z)$. <strong>That is the isomorphism</strong> between the unit elements and $\mathrm{SU}(2)$, read as the left copy on one ideal: the same three parameters, the same product, the same unimodularity. And it is why the left copy can be faithful while the conjugation is two-to-one — the ideal is a half of the algebra, and the phase that the conjugation discards is exactly the phase that acts on the ideal.</p>
@@ -553,10 +553,10 @@ $$</p>
 <p>$$
 \mathrm{Ad}_{\tilde u}=
 \begin{pmatrix}
-1&0&0&0\\
-0&\tfrac34&\tfrac14&\tfrac{\sqrt6}{4}\\
-0&\tfrac14&\tfrac34&-\tfrac{\sqrt6}{4}\\
-0&-\tfrac{\sqrt6}{4}&\tfrac{\sqrt6}{4}&\tfrac12
+1&amp;0&amp;0&amp;0\\
+0&amp;\tfrac34&amp;\tfrac14&amp;\tfrac{\sqrt6}{4}\\
+0&amp;\tfrac14&amp;\tfrac34&amp;-\tfrac{\sqrt6}{4}\\
+0&amp;-\tfrac{\sqrt6}{4}&amp;\tfrac{\sqrt6}{4}&amp;\tfrac12
 \end{pmatrix},
 $$</p>
 <p>numerically the rotation by $\tfrac{\pi}{3}$ about $\vec n$.</p>
@@ -704,10 +704,10 @@ $$</p>
 <p>$$
 L_b=
 \begin{pmatrix}
-1.0811&-0.4108i&0&0\\
-0.4108i&1.0811&0&0\\
-0&0&1.0811&-0.4108i\\
-0&0&0.4108i&1.0811
+1.0811&amp;-0.4108i&amp;0&amp;0\\
+0.4108i&amp;1.0811&amp;0&amp;0\\
+0&amp;0&amp;1.0811&amp;-0.4108i\\
+0&amp;0&amp;0.4108i&amp;1.0811
 \end{pmatrix},
 $$</p>
 <p>which is <strong>not</strong> unitary: $L_b^{\mathsf T}L_b-\mathrm I_4$ has norm $0.8881$, and $L_b^{\mathsf T}=L_{b^{\natural}}\ne L_b^{-1}$. It is of determinant one to $10^{-16}$, because $\det L=N(b)^{2}$.</p>
@@ -715,10 +715,10 @@ $$</p>
 <p>$$
 \mathrm{Ad}_b=
 \begin{pmatrix}
-1&0&0&0\\
-0&1&0&0\\
-0&0&\cosh\phi&-i\sinh\phi\\
-0&0&i\sinh\phi&\cosh\phi
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;\cosh\phi&amp;-i\sinh\phi\\
+0&amp;0&amp;i\sinh\phi&amp;\cosh\phi
 \end{pmatrix},
 $$</p>
 <p>with eigenvalues $1,1,e^{\phi},e^{-\phi}=1,1,2.2255,0.4493$: real, not unimodular. It is not a rotation and not unitary; it preserves the product, hence the bilinear form, $A^{\mathsf T}DA=D$ to $4\times10^{-16}$ with $D=\operatorname{diag}(1,-1,-1,-1)$, and it preserves $N$ to $4\times10^{-16}$.</p>

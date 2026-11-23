@@ -75,11 +75,11 @@
 <p>The article computes the intersection of the two spaces, the dimensions of the splitting, the rank of the trace form on the triangular algebra, and proves that the radical of that form is the commutator subalgebra and that it is nilpotent. It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> for the notation and <em>The Two Halves: Symmetric and Antisymmetric</em> for the two halves, and it defers the companion statement that $UT_n$ is a linear model of $\operatorname{Sym}_n$ to <em>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</em>.</p>
 <p>Throughout $n\ge2$. The pieces are</p>
 <p>$$
-UT_n=\left\{X:X_{ij}=0\text{ for }i>j\right\},\qquad n_+=\{X\in UT_n:X_{ii}=0\},\qquad h=\{\text{diagonal matrices}\},
+UT_n=\left\{X:X_{ij}=0\text{ for }i&gt;j\right\},\qquad n_+=\{X\in UT_n:X_{ii}=0\},\qquad h=\{\text{diagonal matrices}\},
 $$</p>
 <p>so that $UT_n=h\oplus n_+$, of dimensions $n(n+1)/2$, $n(n-1)/2$ and $n$.</p>
 <h2 id="the-intersection-with-the-antisymmetric-part-is-zero">The Intersection with the Antisymmetric Part Is Zero</h2>
-<p><strong>No nonzero upper triangular matrix is antisymmetric.</strong> If $X\in UT_n$ and $X^{\mathsf T}=-X$ then for $i<j$ the entry $X_{ij}$ below the diagonal is zero, so $-X_{ji}=0$ and the entry $X_{ji}$ vanishes too; hence every entry above the diagonal vanishes as well, and $X=0$. So</p>
+<p><strong>No nonzero upper triangular matrix is antisymmetric.</strong> If $X\in UT_n$ and $X^{\mathsf T}=-X$ then for $i&lt;j$ the entry $X_{ij}$ below the diagonal is zero, so $-X_{ji}=0$ and the entry $X_{ji}$ vanishes too; hence every entry above the diagonal vanishes as well, and $X=0$. So</p>
 <p>$$
 UT_n\cap\operatorname{Skew}_n=0.
 $$</p>
@@ -88,7 +88,7 @@ $$</p>
 M_n(\mathbb{R})=UT_n\oplus\operatorname{Skew}_n,
 $$</p>
 <p>and every matrix is a unique sum of an upper triangular one and an antisymmetric one. This is the content of <em>$UT_n$ as the Complement of the Antisymmetric Part</em>, and the emptiness of the intersection is what makes the sum direct and not merely spanning.</p>
-<p><strong>The antisymmetric part of an upper triangular matrix is not upper triangular, and the projection onto the antisymmetric half is onto.</strong> For $X\in UT_n$ the projection $\pi_-(X)=\tfrac12(X-X^{\mathsf T})$ has the entries $\tfrac12X_{ij}$ above the diagonal and $-\tfrac12X_{ij}$ below it, and every antisymmetric matrix arises this way: given $K\in\operatorname{Skew}_n$, the matrix with $X_{ij}=2K_{ij}$ for $i<j$ and all other entries zero lies in $n_+$ and satisfies $\pi_-(X)=K$. So</p>
+<p><strong>The antisymmetric part of an upper triangular matrix is not upper triangular, and the projection onto the antisymmetric half is onto.</strong> For $X\in UT_n$ the projection $\pi_-(X)=\tfrac12(X-X^{\mathsf T})$ has the entries $\tfrac12X_{ij}$ above the diagonal and $-\tfrac12X_{ij}$ below it, and every antisymmetric matrix arises this way: given $K\in\operatorname{Skew}_n$, the matrix with $X_{ij}=2K_{ij}$ for $i&lt;j$ and all other entries zero lies in $n_+$ and satisfies $\pi_-(X)=K$. So</p>
 <p>$$
 \pi_-(UT_n)=\operatorname{Skew}_n,\qquad \ker\left(\pi_-|_{UT_n}\right)=h,
 $$</p>
@@ -112,7 +112,7 @@ $$</p>
 [UT_n,UT_n]=n_+,
 $$</p>
 <p>of dimension $n(n-1)/2$, measured as $1,3,6$ at $n=2,3,4$ by spanning the brackets of a basis.</p>
-<p><em>Proof.</em> The inclusion $[UT_n,UT_n]\subseteq n_+$ is the two observations above. For the other inclusion, let $H=\operatorname{diag}(1,2,\dots,n)$; then $[H,E_{ij}]=(i-j)E_{ij}$ for $j>i$, which is a nonzero multiple of each basis element of $n_+$, so $n_+\subseteq UT_n'$. Hence the two coincide.</p>
+<p><em>Proof.</em> The inclusion $[UT_n,UT_n]\subseteq n_+$ is the two observations above. For the other inclusion, let $H=\operatorname{diag}(1,2,\dots,n)$; then $[H,E_{ij}]=(i-j)E_{ij}$ for $j&gt;i$, which is a nonzero multiple of each basis element of $n_+$, so $n_+\subseteq UT_n'$. Hence the two coincide.</p>
 <p><strong>Consequence: the radical of the trace form is the commutator subalgebra.</strong> The two spaces are equal as sets, and the equality is not an accident of the count: the trace form vanishes on the diagonal only in the sense that the diagonal is where it is nondegenerate, and the radical is the full derived algebra. So</p>
 <p>$$
 \operatorname{rad}UT_n=[UT_n,UT_n]=n_+,
@@ -136,14 +136,14 @@ $$</p>
 <p><strong>The count is uniform.</strong> The table is</p>
 <p>$$
 \begin{array}{c|cccc}
-n & \dim UT_n & \dim n_+ & \operatorname{rank}\operatorname{tr}|_{UT_n} & \dim\operatorname{rad}\\ \hline
-2 & 3 & 1 & 2 & 1\\
-3 & 6 & 3 & 3 & 3\\
-4 & 10 & 6 & 4 & 6
+n &amp; \dim UT_n &amp; \dim n_+ &amp; \operatorname{rank}\operatorname{tr}|_{UT_n} &amp; \dim\operatorname{rad}\\ \hline
+2 &amp; 3 &amp; 1 &amp; 2 &amp; 1\\
+3 &amp; 6 &amp; 3 &amp; 3 &amp; 3\\
+4 &amp; 10 &amp; 6 &amp; 4 &amp; 6
 \end{array}
 $$</p>
 <p>and each row satisfies $\dim UT_n=\operatorname{rank}+\dim\operatorname{rad}$, with the rank equal to $n$ and the radical equal to $n(n-1)/2$. The numbers were recomputed from the Gram matrix on the matrix units, and the dimension of the commutator was recomputed from the span of the brackets; the two agreed in every case.</p>
-<p><strong>At $n=2$ the statement is visible in one line.</strong> $UT_2=\left\{\begin{pmatrix}a&b\\ 0&c\end{pmatrix}\right\}$, $n_+=\mathbb{R}E_{12}$, and $\operatorname{tr}(XY)=aa'+cc'$, so the radical is $\mathbb{R}E_{12}$ and the commutator is $\mathbb{R}E_{12}$. The antisymmetric part of $\begin{pmatrix}a&b\\ 0&c\end{pmatrix}$ is $\tfrac12b\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, which is the whole antisymmetric half at $n=2$ and lies in neither $UT_2$ nor $n_-$.</p>
+<p><strong>At $n=2$ the statement is visible in one line.</strong> $UT_2=\left\{\begin{pmatrix}a&amp;b\\ 0&amp;c\end{pmatrix}\right\}$, $n_+=\mathbb{R}E_{12}$, and $\operatorname{tr}(XY)=aa'+cc'$, so the radical is $\mathbb{R}E_{12}$ and the commutator is $\mathbb{R}E_{12}$. The antisymmetric part of $\begin{pmatrix}a&amp;b\\ 0&amp;c\end{pmatrix}$ is $\tfrac12b\begin{pmatrix}0&amp;1\\ -1&amp;0\end{pmatrix}$, which is the whole antisymmetric half at $n=2$ and lies in neither $UT_2$ nor $n_-$.</p>
 <p><strong>At $n=3$ the count separates the two phenomena.</strong> $\dim UT_3=6$, the rank is $3$, the radical is $n_+$ of dimension $3$, and the commutator is the same three-dimensional space. So the degenerate form and the derived algebra have the same size, and the two halves of the algebra that the transpose cuts have dimensions $6$ and $3$, the second equal to the radical.</p>
 <h2 id="summary">Summary</h2>
 <p>The upper triangular matrices meet the antisymmetric matrices only at zero, so the antisymmetric part of $UT_n$ is zero and $M_n=UT_n\oplus\operatorname{Skew}_n$ is a direct sum of dimension $n(n+1)/2$ and $n(n-1)/2$. The antisymmetric part of an upper triangular matrix is not triangular at all, and the projection onto the antisymmetric half is onto with kernel the diagonal. The trace form restricted to $UT_n$ depends only on the diagonal, so it has rank $n$ and radical $n_+$ of dimension $n(n-1)/2$, and that radical is exactly the commutator subalgebra $[UT_n,UT_n]$, which is a two-sided ideal and is nilpotent of index $n$. The two complementary splittings of $M_n$, by the transpose and by triangularity, behave differently for the same invariant form: the symmetric and antisymmetric halves are both nondegenerate, while the triangular half is degenerate with the largest radical a Borel can have.</p>

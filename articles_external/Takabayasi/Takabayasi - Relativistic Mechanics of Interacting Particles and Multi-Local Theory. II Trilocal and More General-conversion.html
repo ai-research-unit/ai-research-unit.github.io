@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II: Trilocal and More General Cases — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-interacting-particles-and-multi-local-theory-ii-trilocal-and-more-general-cases"><strong>Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II: Trilocal and More General Cases</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>58</strong> (1977) 1299, No. 4; received 8 April 1977</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II Trilocal and More General-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II Trilocal and More General.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. II Trilocal and More General.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends the Lagrangian method of Part I from two constituents to three, giving a trilocal model for baryons. The three particles are bound by arbitrary spacelike action-at-a-distance; the Lagrangian's invariances again yield primary constraints that make the interpretation unambiguous. The Hooke-type potential is solved explicitly and the modes classified. Quantisation gives a trilocal wave equation with subsidiary conditions, whose solutions lie on linear trajectories — the baryon analogue of the mesonic bilocal model. Two structural findings are stated plainly: the simple scheme works only for two, three and four particles, and a more singular alternative Lagrangian gives models with rigid motion only, realisable only for two and three.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-new">What is new</h3>
+<p>"New classical theory of relativistic composite system consisting of three point particles is set up, where particles are bound by arbitrary spacelike action-at-a-distance. The theory is derived completely from a Lagrangian, which has certain invariance properties giving rise to primary constraints that ensure clear physical interpretation of theory. The case where the force potential is of Hooke-type is explicitly solved and various modes of motions are classified. Quantization leads to a trilocal wave equation associated with subsidiary conditions. This is regarded as representing a prototype of relativistic quark model of baryonic states."</p>
+<p>"It is also shown that an alternative Lagrangian with higher invariance gives a trilocal model which admits 'relativistic restricted rigid motions' alone. Extension of the present method is discussed to show that relativistic composite systems have priviledged simplicity when they consist of two, three and four particles in the sense that the present simple scheme is applicable to those cases alone. §I."</p>
+<h3 id="how-it-differs-from-conventional-three-body-theory">How it differs from conventional three-body theory</h3>
+<p>"Our theory differs from the usual approaches to relativistic two and three-body prob- lems."), 5) This is related to the fact that we are constructing our theory for the purpose of a model of hadronic states. Thus in our theory the system is composite but still it has several features that secure the unity character of the system. Especially the constituent particles are permanently bound by means of spacelike action-at-a-distance working as 'constructive force'. Also we do not postulate be- forhand that constituent rest masses are structure constants independent of mutual interactions. Other "</p>
+<h3 id="the-spectrum">The spectrum</h3>
+<p>"The case where the force potential is of Hooke-type" "has solutions lying on a linearly-rising leading trajectory and the daughter trajectories, and the theory is regarded as representing a prototype of Downloaded from academic.oup.com/ptp/article/58/4/1299/1922864"</p>
+<h3 id="the-two-ceilings">The two ceilings</h3>
+<p>"A feature of our present method of relativistic composite systems is that it is applicable only to systems consisting of two, three and four particles. This is explained in the final section."</p>
+<p>"On the other hand, certain alternative Lagrangians which are more singular than the original ones are also relevant for the purpose of hadronic models. In this case we get the models with more restrictive property, allowing 'relativistic restricted rigid motions' alone, and such theory is realizable only for two- and three-particle systems."</p>
+<h3 id="rigid-motion-defined">Rigid motion defined</h3>
+<p>"We call a solution satisfying the following conditions 'relativistic rigid motion'" — the conditions state that the mutual distances of the constituents are constant in the centre-of-mass frame. A weaker version, "relativistic rigid motion in restricted sense", is also defined, and the paper notes that for the singular Lagrangian "only the 'relativistic restricted rigid motions'" survive. When the motion is a rigid motion the equations reduce in order, which is why the singular Lagrangians are solvable.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-compositeness-has-a-size-limit-and-the-limit-is-four">1. Compositeness has a size limit, and the limit is four</h3>
+<p><strong>The idea.</strong> The Lagrangian scheme that gives a clean constraint structure for two points fails at five. Privileged simplicity holds "for two, three and four particles ... alone." So a chain of point constituents is not a freely extensible construction: three is the largest case relevant to hadrons, four is the technical maximum, and five is out.</p>
+<p><strong>What it would add.</strong> A second, independent ceiling to set beside the algebraic one. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) finds that a fourth carrier adds nothing algebraically; here a fifth point cannot be accommodated Lagrangian-ly. The two ceilings have different origins and both bite at a small number, which is a pattern the corpus should record as a pattern rather than two curiosities.</p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the constituent-count ceiling, next to the carrier-count ceiling.</p>
+<p><strong>What stands in the way.</strong> The paper promises "this is explained in the final section" without a proof of impossibility; the failure at five is observed for this scheme, not shown to be unavoidable for any scheme.</p>
+<h3 id="2-constituent-masses-are-not-structure-constants">2. Constituent masses are not structure constants</h3>
+<p><strong>The idea.</strong> "o we do not postulate be- forhand that constituent rest masses are structure constants independent of mutual interactions. Other" The masses come out of the binding, as with the bilocal case where $M^{2}$ was a functional of internal motion. Taking constituent masses as fixed inputs is what the usual quark models do; here it is refused.</p>
+<p><strong>What it would add.</strong> A principled refusal that changes what the model can predict. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) records in §<em>The Trace Anomaly, and Where the Mass Sits</em> that constituent masses are largely generated, not fundamental; Takabayasi's refusal is the strong form of the same statement, and it has a cost — without fixed constituent masses the model has fewer inputs and less fit freedom.</p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the strong form.</p>
+<p><strong>What stands in the way.</strong> The masses still come from the potential functions $U$ and $V$, which are themselves chosen; the refusal relocates the input rather than eliminating it.</p>
+<h3 id="3-a-more-singular">3. A more singular</h3>
+<p>Lagrangian means a smaller solution space — deliberately</p>
+<p><strong>The idea.</strong> Making the Lagrangian more singular raises the invariance, and higher invariance kills degrees of freedom: only rigid motions survive. So "more symmetric" here means "less dynamical", and the author uses it to build restricted models on purpose.</p>
+<p><strong>What it would add.</strong> A case where extra gauge symmetry is used as a <em>filter</em>. The corpus normally treats gauge symmetry as redundancy to be fixed; here it is a way to write down a model whose only solutions are the ones you want, which is a different use of the same mathematics.</p>
+<p><strong>Where it lands.</strong> The corpus's constrained-systems discussion; natural home is §<em>Symmetries of the Action</em> of <em>The Relativistic Particle and the Lagrangian</em>.</p>
+<p><strong>What stands in the way.</strong> The restricted models are not shown to describe anything observed; they are offered as hadronic candidates on the grounds of their spectra, which are not computed here for the singular case.</p>
+<h3 id="4-baryons-and-mesons-from-the-same-lagrangian-family-differing-only-in-constituent-number">4. Baryons and mesons from the same Lagrangian family, differing only in constituent number</h3>
+<p><strong>The idea.</strong> Part I gives two points, Part II three, with the same constraint logic and the same Hooke potential. Mesons and baryons are the $N=2$ and $N=3$ members of one family, not two models.</p>
+<p><strong>What it would add.</strong> A unification the corpus's hadron articles assume rather than derive. Reading Part I and Part II together gives the family explicitly: the constraint structure, the potential functions and the trajectory mechanism are common, and only $N$ changes.</p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em> of <em>Hadron Structure from QCD</em>, as the constituent-number family.</p>
+<p><strong>What stands in the way.</strong> The three-body constraint algebra is more complicated and the paper solves it only for Hooke; whether the spectra line up quantitatively with the two-body case is not shown.</p>
+<p>The remainder, one line each. That the trilocal equation needs <em>several</em> subsidiary conditions rather than one is the technical price of the third constituent. That the modes of the Hooke trilocal are classified explicitly makes this the most concrete three-body solution in the folder.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

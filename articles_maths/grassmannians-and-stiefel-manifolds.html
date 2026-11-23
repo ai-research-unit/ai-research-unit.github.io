@@ -172,7 +172,7 @@ $$</p>
 $$</p>
 <p>where $n_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.</p>
 <p><strong>Proof sketch.</strong> Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes.</p>
-<p><strong>Example (lines in $\mathbb{P}^3$).</strong> For $k = 2$, $n = 4$ the Plücker vector has six coordinates $n_{ij}$, $i<j$, and there is a single Plücker relation</p>
+<p><strong>Example (lines in $\mathbb{P}^3$).</strong> For $k = 2$, $n = 4$ the Plücker vector has six coordinates $n_{ij}$, $i&lt;j$, and there is a single Plücker relation</p>
 <p>$$
 n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0,
 $$</p>
@@ -184,7 +184,7 @@ $$</p>
 <p>$$
 0 = V_0 \subseteq V_1 \subseteq V_2 \subseteq \cdots \subseteq V_n = \mathbb{R}^n, \qquad \dim V_i = i .
 $$</p>
-<p>For a sequence $\lambda = (\lambda_1, \ldots, \lambda_k)$ with $1 \leq \lambda_1 < \cdots < \lambda_k \leq n$, the <strong>Schubert cell</strong> is</p>
+<p>For a sequence $\lambda = (\lambda_1, \ldots, \lambda_k)$ with $1 \leq \lambda_1 &lt; \cdots &lt; \lambda_k \leq n$, the <strong>Schubert cell</strong> is</p>
 <p>$$
 e_\lambda = \{W \in \mathrm{Gr}_k(\mathbb{R}^n) : \dim(W \cap V_{\lambda_i}) = i \text{ and } \dim(W \cap V_{\lambda_i - 1}) = i - 1 \text{ for each } i\}.
 $$</p>
@@ -201,7 +201,7 @@ $$</p>
 $$</p>
 <p>so with $\mathbb{F}_2$ coefficients the total dimension of the cohomology is $\binom{n}{k}$, and the mod-$2$ Betti numbers are the numbers of cells of each dimension. The Euler characteristic is the value at $t = -1$,</p>
 <p>$$
-\chi(\mathrm{Gr}_k(\mathbb{R}^n)) = \binom{n}{k}_{t=-1} = \begin{cases} 0, & n \text{ even and } k \text{ odd}, \\ \displaystyle\binom{\lfloor n/2\rfloor}{\lfloor k/2\rfloor}, & \text{otherwise}, \end{cases}
+\chi(\mathrm{Gr}_k(\mathbb{R}^n)) = \binom{n}{k}_{t=-1} = \begin{cases} 0, &amp; n \text{ even and } k \text{ odd}, \\ \displaystyle\binom{\lfloor n/2\rfloor}{\lfloor k/2\rfloor}, &amp; \text{otherwise}, \end{cases}
 $$</p>
 <p>and in particular $\chi(\mathbb{RP}^{n-1}) = 1$ for $n$ odd and $0$ for $n$ even.</p>
 <p><strong>Proof sketch.</strong> The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $m \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.</p>

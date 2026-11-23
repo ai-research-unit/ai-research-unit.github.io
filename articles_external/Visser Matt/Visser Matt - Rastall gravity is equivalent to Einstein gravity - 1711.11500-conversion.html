@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rastall gravity is equivalent to Einstein gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Rastall gravity is equivalent to Einstein gravity - 1711.11500.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rastall-gravity-is-equivalent-to-einstein-gravity"><strong>Rastall gravity is equivalent to Einstein gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1711.11500v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 29 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Rastall gravity is equivalent to Einstein gravity - 1711.11500-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Rastall gravity is equivalent to Einstein gravity - 1711.11500.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Rastall gravity is equivalent to Einstein gravity - 1711.11500.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rastall gravity is presented as a modified theory with a non-conserved stress-energy tensor. The author shows it is ordinary general relativity in disguise. The gravity sector uses the Einstein tensor as usual. The matter sector uses a conserved tensor that differs from the usual one by a term involving the Ricci scalar. Nothing new is predicted; the apparent modification is a relabelling.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-being-examined">The claim being examined</h3>
+<p>"Rastall gravity purports to be a modified theory of gravity, with a non-conserved stress-energy tensor, and an unusual non-minimal coupling between matter and geometry"</p>
+<h3 id="the-defining-relation">The defining relation</h3>
+<p>"the Rastall stress-energy satisfying $[T^R]_{ab}{}^{;b}=\lambda g_{ab}R^{;b}$"</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"Unfortunately, a deeper look shows that Rastall gravity is completely equivalent to Einstein gravity — usual general relativity."</p>
+<h3 id="the-reason">The reason</h3>
+<p>"The gravity sector is completely standard, based as usual on the Einstein tensor"</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>in the matter sector Rastall's stress-energy is a redefinition of the standard one</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-modification-that-is-a-relabelling">1. A modification that is a relabelling</h3>
+<p><strong>The idea.</strong> Moving a term between the two sides of an equation changes nothing physical.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> fixes where conservation is imposed. This paper shows how the same physics looks like a new theory when that placement is shifted.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conservation.</p>
+<p><strong>What stands in the way.</strong> The argument is about one specific theory. Ranked first, because it is a general warning about bookkeeping.</p>
+<h3 id="2-what-counts-as-modified">2. What counts as modified</h3>
+<p><strong>The idea.</strong> A genuine modification must change predictions, not just notation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs a criterion for novelty. This is a worked example of a false positive.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of criteria.</p>
+<p><strong>What stands in the way.</strong> The criterion is stated informally. Ranked second.</p>
+<h3 id="3-the-trace-of-the-field-equations">3. The trace of the field equations</h3>
+<p><strong>The idea.</strong> The Ricci scalar enters through the trace, so a scalar coupling can be absorbed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code> works with the full equations. Knowing when a term can be absorbed is useful for that gap.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>, in the discussion of the equations.</p>
+<p><strong>What stands in the way.</strong> The point is specific to Rastall's form. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

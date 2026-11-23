@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy of causal diamond ensembles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entropy of causal diamond ensembles - 2212.10608.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entropy-of-causal-diamond-ensembles"><strong>Entropy of causal diamond ensembles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.10608v4 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ted Jacobson, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 19 July 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>SciPost Phys. 15, 023 (2023)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Entropy of causal diamond ensembles - 2212.10608-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entropy of causal diamond ensembles - 2212.10608.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entropy of causal diamond ensembles - 2212.10608.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Defines a canonical ensemble for a gravitational causal diamond by placing an artificial York boundary inside the diamond with a fixed induced metric and temperature, and evaluates the partition function in a saddle-point approximation. For Einstein gravity with zero cosmological constant there is no exact saddle with a horizon, but the part of the Euclidean diamond inside the boundary is an approximate saddle in the high-temperature regime, where the saddle horizon approaches the boundary. That high-temperature partition function supplies the statistical interpretation of the Banks–Draper–Farkas calculation, in which a boundary term in the on-shell Euclidean action reproduces the diamond's entropy. With a positive cosmological constant, and in Jackiw–Teitelboim gravity, exact saddles exist.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"We set out to clarify the physical principles underlying the derivation of BDF [30] of the entropy associated with causal diamonds. In all cases it was found there that a boundary term localized at the horizon yields the familiar Bekenstein-Hawking area entropy when the action is evaluated on a Euclidean analytic continuation of the corresponding Lorentzian diamond. While we do not doubt the correctness of the answer, what seemed less clear to us is the question."</p>
+<h3 id="the-method">The method</h3>
+<p>"We took the viewpoint that to identify an entropy we should first specify the gravitational ensemble. To this end we adopted York's method of introducing a system boundary at which the ensemble parameters are specified, and looked for a saddle point approximation to the partition function for the canonical ensemble."</p>
+<h3 id="the-zero-cosmological-constant-case">The zero-cosmological-constant case</h3>
+<p>"For a finite boundary at a generic temperature, if the cosmological constant vanishes the only saddle for Einstein gravity in $D\ge3$ spacetime dimensions corresponds to 'hot flat space', which has vanishing entropy. However, the calculation of BDF can be recovered if one considers the regime in which the ensemble temperature becomes very large, since then an approximate saddle with a horizon emerges, which corresponds to the near horizon geometry."</p>
+<h3 id="what-that-means">What that means</h3>
+<p>The entropy of a finite diamond with $\Lambda=0$ is not the leading saddle's value but the limit of a family of saddles as the boundary temperature diverges. The authors present this as the correct reading of a calculation whose answer was right and whose question was unspecified.</p>
+<h3 id="the-cases-with-exact-saddles">The cases with exact saddles</h3>
+<p>With a positive cosmological constant, and in Jackiw–Teitelboim gravity, exact saddles with horizons exist, so the same ensemble definition gives the entropy without a limiting procedure.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-entropy-needs-an-ensemble-first">1. An entropy needs an ensemble first</h3>
+<p><strong>The idea.</strong> Before an entropy can be assigned to a region, the ensemble must be specified, with boundary conditions at a boundary. This is a <strong>reading</strong>, and it is logically prior to any formula.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> and <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> both assign entropies without naming an ensemble. The demand that an ensemble be specified is the sharpest methodological import in the whole set of papers, and the corpus fails it everywhere.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, opening section.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a requirement, not a construction. Ranked first, because it is free and it exposes a gap the corpus did not know it had.</p>
+<h3 id="2-the-entropy-as-a-limit-not-a-saddle">2. The entropy as a limit, not a saddle</h3>
+<p><strong>The idea.</strong> When no saddle has a horizon, the entropy is recovered as the high-temperature limit of saddles whose horizon approaches the boundary. This is a <strong>mechanism</strong>, and its content is that the area law survives even when the naive saddle says otherwise.</p>
+<p><strong>What it would add.</strong> The corpus's entropy articles assume the geometric answer is the answer. A case in which the naive saddle gives zero entropy and the correct answer requires a limit is a caution about trusting a leading-order calculation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, among the obstructions of approximation.</p>
+<p><strong>What stands in the way.</strong> It needs the York boundary and the Euclidean partition function; the corpus has neither. Ranked third.</p>
+<h3 id="3-an-artificial-boundary-is-allowed">3. An artificial boundary is allowed</h3>
+<p><strong>The idea.</strong> The boundary that defines the ensemble is not physical; it is introduced to make the ensemble well defined, and its position and temperature are parameters. This is a <strong>mechanism</strong> that legitimises a device.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code> discusses what is and is not part of the physical system. An explicit case where an auxiliary boundary is a computational device, with a stated criterion for when the answer is independent of it, is a pattern the corpus's action articles would benefit from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

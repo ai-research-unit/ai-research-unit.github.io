@@ -82,9 +82,9 @@ $$</p>
 <p><strong>A complete flag is a chain of one subspace of each dimension.</strong> The chain above has $n$ steps and no room for a further subspace: if $V_{k-1}\subset W\subset V_k$ then $W$ is one of the two ends, because the dimensions differ by one.</p>
 <p><strong>The stabiliser is smaller over $\mathbb{R}$ than over $\mathbb{C}$.</strong> Over $\mathbb{C}$ the same chain has the complex upper triangular group as stabiliser, of complex dimension $n(n+1)/2$ and real dimension $n(n+1)$. Over $\mathbb{R}$ the stabiliser has real dimension $n(n+1)/2$, which is also the dimension of the symmetric half.</p>
 <h2 id="the-stabiliser-is-the-upper-triangular-algebra">The Stabiliser Is the Upper Triangular Algebra</h2>
-<p><strong>Definition.</strong> $UT_n=\{A\in M_n(\mathbb{R}):A_{ij}=0\ \text{for}\ i>j\}$.</p>
+<p><strong>Definition.</strong> $UT_n=\{A\in M_n(\mathbb{R}):A_{ij}=0\ \text{for}\ i&gt;j\}$.</p>
 <p><strong>Theorem.</strong> $A$ stabilises the standard flag, that is $AV_k\subseteq V_k$ for every $k$, if and only if $A\in UT_n$.</p>
-<p><em>Proof.</em> The condition $AV_k\subseteq V_k$ says that the image of $e_j$ lies in $V_j$ for every $j$, hence that the column $j$ of $A$ has no entry below row $j$. That is the condition $A_{ij}=0$ for $i>j$. Conversely, if $A$ is upper triangular then $Ae_j\in V_j$, and a linear combination of $e_1,\dots,e_k$ maps into $V_k$.</p>
+<p><em>Proof.</em> The condition $AV_k\subseteq V_k$ says that the image of $e_j$ lies in $V_j$ for every $j$, hence that the column $j$ of $A$ has no entry below row $j$. That is the condition $A_{ij}=0$ for $i&gt;j$. Conversely, if $A$ is upper triangular then $Ae_j\in V_j$, and a linear combination of $e_1,\dots,e_k$ maps into $V_k$.</p>
 <p><strong>The stabiliser is closed under the product and under inversion.</strong> If $A$ and $B$ stabilise the flag, so does $AB$, because $ABV_k\subseteq AV_k\subseteq V_k$. If $A$ stabilises the flag and is invertible, so does $A^{-1}$, because $A$ induces an isomorphism $V_k\to V_k$ at each step.</p>
 <p><strong>The algebra splits as the diagonal plus the strictly upper part.</strong></p>
 <p>$$
@@ -94,9 +94,9 @@ $$</p>
 <h2 id="the-three-pieces">The Three Pieces</h2>
 <p><strong>Definition.</strong> $n_+$ is the set of strictly upper triangular matrices and $n_-$ the set of strictly lower triangular matrices:</p>
 <p>$$
-n_+=\operatorname{span}\{E_{ij}:i<j\},\qquad n_-=\operatorname{span}\{E_{ij}:i>j\}.
+n_+=\operatorname{span}\{E_{ij}:i&lt;j\},\qquad n_-=\operatorname{span}\{E_{ij}:i&gt;j\}.
 $$</p>
-<p><strong>Each strictly triangular part has dimension $n(n-1)/2$.</strong> The pairs $i<j$ number $\binom{n}{2}$, and the pairs $i>j$ number the same. So</p>
+<p><strong>Each strictly triangular part has dimension $n(n-1)/2$.</strong> The pairs $i&lt;j$ number $\binom{n}{2}$, and the pairs $i&gt;j$ number the same. So</p>
 <p>$$
 \dim n_+=\dim n_-=\frac{n(n-1)}{2}.
 $$</p>
@@ -110,28 +110,28 @@ $$</p>
 <p>Measured as the rank of the union of the three bases, the sum has dimension $4$ at $n=2$, $9$ at $n=3$ and $16$ at $n=4$.</p>
 <h2 id="the-upper-triangular-algebra">The Upper Triangular Algebra</h2>
 <p><strong>Proposition.</strong> $UT_n$ is a subalgebra of $M_n(\mathbb{R})$, and $n_+$ is a two-sided ideal of it.</p>
-<p><em>Proof.</em> The product of two upper triangular matrices is upper triangular: $(AB)_{ij}=\sum_{k}A_{ik}B_{kj}$, and a term is nonzero only when $i\le k\le j$, which forces $i\le j$. If in addition $A\in n_+$ then $i<k\le j$ and the entry vanishes for $i\ge j$, so $n_+\cdot UT_n\subseteq n_+$; the other side is the same computation.</p>
+<p><em>Proof.</em> The product of two upper triangular matrices is upper triangular: $(AB)_{ij}=\sum_{k}A_{ik}B_{kj}$, and a term is nonzero only when $i\le k\le j$, which forces $i\le j$. If in addition $A\in n_+$ then $i&lt;k\le j$ and the entry vanishes for $i\ge j$, so $n_+\cdot UT_n\subseteq n_+$; the other side is the same computation.</p>
 <p><strong>The ideal $n_+$ is also an ideal for the commutator.</strong> For $H\in h$ and $X\in n_+$ the bracket $[H,X]$ is strictly upper triangular, and for $U\in UT_n$ and $X\in n_+$ the bracket $[U,X]=UX-XU$ lies in $n_+$ because both products do.</p>
 <p><strong>The quotient $UT_n/n_+$ is the diagonal.</strong> $h$ maps isomorphically onto the quotient, so the diagonal is the reductive part of the triangular algebra and $n_+$ is its nilpotent radical.</p>
 <h2 id="nilpotence-and-the-index">Nilpotence and the Index</h2>
 <p><strong>Theorem.</strong> $n_+^{n}=0$ and $n_+^{n-1}\ne0$.</p>
-<p><em>Proof.</em> A product of $m$ strictly upper triangular matrices is a sum of products $E_{i_0i_1}E_{i_1i_2}\cdots E_{i_{m-1}i_m}$ with $i_0<i_1<\dots<i_m$, and such a chain has length at most $n-1$ because the indices run from $1$ to $n$ and increase. So every product of $n$ factors vanishes. For the second claim take the shift $N=\sum_{k=1}^{n-1}E_{k,k+1}$. Then $N^{m}=E_{1,m+1}$ for $m\le n-1$, so $N^{n-1}=E_{1n}\ne0$ and $N^{n}=0$.</p>
+<p><em>Proof.</em> A product of $m$ strictly upper triangular matrices is a sum of products $E_{i_0i_1}E_{i_1i_2}\cdots E_{i_{m-1}i_m}$ with $i_0&lt;i_1&lt;\dots&lt;i_m$, and such a chain has length at most $n-1$ because the indices run from $1$ to $n$ and increase. So every product of $n$ factors vanishes. For the second claim take the shift $N=\sum_{k=1}^{n-1}E_{k,k+1}$. Then $N^{m}=E_{1,m+1}$ for $m\le n-1$, so $N^{n-1}=E_{1n}\ne0$ and $N^{n}=0$.</p>
 <p><strong>The index is exactly $n$, and the measurement agrees.</strong> On the sum $N$ of all strictly upper matrix units, the powers had norm $1.7$ and then $0$ at $n=3$, and norms $2.4$, $2.4$, $1.0$ and then $0$ at $n=4$. The first vanishing power is the $n$-th in each case.</p>
-<p><strong>Nilpotence is what makes the exponential a polynomial.</strong> For $N\in n_+$ the series $\exp N=\sum_{m<n}N^{m}/m!$ is a finite sum, so $\exp$ is defined on $n_+$ without any convergence question, and its image lies in $UT_n$ with diagonal $\mathrm{I}$. The group $n_+$ generated this way is the unipotent radical of the triangular group.</p>
+<p><strong>Nilpotence is what makes the exponential a polynomial.</strong> For $N\in n_+$ the series $\exp N=\sum_{m&lt;n}N^{m}/m!$ is a finite sum, so $\exp$ is defined on $n_+$ without any convergence question, and its image lies in $UT_n$ with diagonal $\mathrm{I}$. The group $n_+$ generated this way is the unipotent radical of the triangular group.</p>
 <h2 id="the-bracket-of-math133-with-itself">The Bracket of $n_+$ with Itself</h2>
 <p><strong>Proposition.</strong> $[n_+,n_+]\subseteq n_+$, and the inclusion is strict for $n\ge3$.</p>
-<p><em>Proof.</em> Both products of two strictly upper triangular matrices are strictly upper triangular, so the bracket is. For strictness, count: $[E_{ij},E_{kl}]$ is nonzero only when $j=k$ or $l=i$, and for $i<j<k$ the only bracket that reaches the far corner is $[E_{ij},E_{jk}]=E_{ik}$. At $n=3$ the brackets of the three units span the single line $\mathbb{R}E_{13}$.</p>
+<p><em>Proof.</em> Both products of two strictly upper triangular matrices are strictly upper triangular, so the bracket is. For strictness, count: $[E_{ij},E_{kl}]$ is nonzero only when $j=k$ or $l=i$, and for $i&lt;j&lt;k$ the only bracket that reaches the far corner is $[E_{ij},E_{jk}]=E_{ik}$. At $n=3$ the brackets of the three units span the single line $\mathbb{R}E_{13}$.</p>
 <p><strong>Measured, the span of the brackets is short of the whole.</strong> The brackets of the standard basis of $n_+$ span dimension $1$ out of $3$ at $n=3$, and dimension $3$ out of $6$ at $n=4$. At $n=2$ the span is $0$ out of $1$.</p>
 <p><strong>The deficiency has a one-line cause.</strong> A Lie algebra generated by one element is spanned by that element alone, since $[x,x]=0$, so it is abelian. For $n\ge3$ the algebra $n_+$ is not abelian, and its derived algebra is strictly smaller than itself.</p>
 <p><strong>Iterating the bracket walks away from the diagonal.</strong> The $m$-th term of the lower central series of $n_+$ is spanned by the units $E_{ij}$ with $j-i\ge m$, so each step removes one superdiagonal. The unit $E_{1n}$ survives to the last step, and the series reaches zero at $m=n$, which is the index.</p>
 <h2 id="the-bracket-of-math162-with-math163">The Bracket of $n_+$ with $n_-$</h2>
-<p><strong>The bracket of the two triangular parts is not confined to the diagonal.</strong> With $i<j$ and $k>l$,</p>
+<p><strong>The bracket of the two triangular parts is not confined to the diagonal.</strong> With $i&lt;j$ and $k&gt;l$,</p>
 <p>$$
 [E_{ij},E_{kl}]=\delta_{jk}E_{il}-\delta_{li}E_{kj},
 $$</p>
 <p>and the right-hand side lies in $h$ only when both indices meet, namely when $j=k$ and $i=l$, which is the pair $[E_{ij},E_{ji}]=E_{ii}-E_{jj}$.</p>
 <p><strong>What the bracket spans has a diagonal part of dimension $n-1$.</strong> The diagonal components are the differences $E_{ii}-E_{jj}$, and they span the trace-zero diagonal, of dimension $n-1$. Measured, that diagonal part has dimension $1$ at $n=2$, $2$ at $n=3$ and $3$ at $n=4$.</p>
-<p><strong>The whole bracket is larger than its diagonal part.</strong> Measured as the span of all brackets $[E_{ij},E_{kl}]$ with $i<j$ and $k>l$, the dimension is $1$ at $n=2$, $6$ at $n=3$ and $13$ at $n=4$. The remaining components lie in $n_+$ and in $n_-$: at $n=3$ the span is the diagonal of trace zero together with $E_{12}$, $E_{21}$, $E_{23}$, $E_{32}$.</p>
+<p><strong>The whole bracket is larger than its diagonal part.</strong> Measured as the span of all brackets $[E_{ij},E_{kl}]$ with $i&lt;j$ and $k&gt;l$, the dimension is $1$ at $n=2$, $6$ at $n=3$ and $13$ at $n=4$. The remaining components lie in $n_+$ and in $n_-$: at $n=3$ the span is the diagonal of trace zero together with $E_{12}$, $E_{21}$, $E_{23}$, $E_{32}$.</p>
 <p><strong>So the triangular decomposition is not a symmetric pair.</strong> A symmetric pair needs $[n_+,n_-]\subseteq h$, and here the bracket leaves $h$ as soon as $n\ge3$. The pair that does satisfy the three inclusions is $(UT_n,n_+)$, and the pair $(\mathfrak{gl}_n(\mathbb{R}),\mathfrak{so}(n))$ of <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$</em> is another.</p>
 <p><strong>The correct statement about $[n_+,n_-]$ is therefore an inclusion into the whole algebra, with a diagonal shadow of dimension $n-1$.</strong> The shadow is what the trace detects: the trace of a bracket is zero, so every diagonal component has trace zero.</p>
 <h2 id="abelian-only-at-math204">Abelian Only at $n\le2$</h2>

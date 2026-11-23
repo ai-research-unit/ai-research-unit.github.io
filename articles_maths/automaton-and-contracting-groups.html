@@ -138,10 +138,10 @@ $$</p>
 <p>$$
 \boxed{\;\rho = \limsup_{n \to \infty} \max_{v \in X^n} \left( \limsup_{|g| \to \infty} \frac{|g|_v|}{|g|} \right)^{1/n}\;}
 $$</p>
-<p>is finite, depends on the action and not on the generating set, and satisfies the following: $\rho < 1$ if and only if the action is contracting.</p>
-<p>The statement is that of Nekrashevych. When $\rho<1$ the ratio $\lvert g|_v\rvert/\lvert g\rvert$, the length of the section over the length of the element, tends to zero along the tree at a geometric rate, and the section map is a uniformly contracting self-map of the group for words of large length. This is the estimate that makes the reduction below quantitative, and it is the analogue for the tree of the contraction of a map of a metric space, in the sense in which a contracting action of a group on a hyperbolic space is used in <em>Hyperbolic Groups</em>; the tree is an ultrametric space at the boundary and the analogy is at the level of the length function only.</p>
+<p>is finite, depends on the action and not on the generating set, and satisfies the following: $\rho &lt; 1$ if and only if the action is contracting.</p>
+<p>The statement is that of Nekrashevych. When $\rho&lt;1$ the ratio $\lvert g|_v\rvert/\lvert g\rvert$, the length of the section over the length of the element, tends to zero along the tree at a geometric rate, and the section map is a uniformly contracting self-map of the group for words of large length. This is the estimate that makes the reduction below quantitative, and it is the analogue for the tree of the contraction of a map of a metric space, in the sense in which a contracting action of a group on a hyperbolic space is used in <em>Hyperbolic Groups</em>; the tree is an ultrametric space at the boundary and the analogy is at the level of the length function only.</p>
 <h3 id="the-reduction-of-words">The Reduction of Words</h3>
-<p><strong>Lemma (reduction).</strong> Let the action of $G$ be contracting, let $S$ be a finite generating set with $S \supseteq N$, and let $|w|$ denote the length of a word $w$ over $S \cup S^{-1}$. There is a constant $C$ with the following property: if $|w| > C$ and $w$ represents an element of the level-$n$ stabiliser $\operatorname{St}_n$, then each section $w|_v$, $v \in X^n$, can be written as a word over $S \cup S^{-1}$ of length strictly less than $|w|$.</p>
+<p><strong>Lemma (reduction).</strong> Let the action of $G$ be contracting, let $S$ be a finite generating set with $S \supseteq N$, and let $|w|$ denote the length of a word $w$ over $S \cup S^{-1}$. There is a constant $C$ with the following property: if $|w| &gt; C$ and $w$ represents an element of the level-$n$ stabiliser $\operatorname{St}_n$, then each section $w|_v$, $v \in X^n$, can be written as a word over $S \cup S^{-1}$ of length strictly less than $|w|$.</p>
 <p><strong>Proof sketch.</strong> The word $w = s_1s_2\cdots s_\ell$ defines a sequence of states of the complete automaton; its section at $v = x_1x_2\cdots x_n$ is the word $s_1^{(1)}s_2^{(1)}\cdots s_\ell^{(1)}$ in the sections of the letters, where the superscript records the letter read. Because $S \supseteq N$ and the action is contracting, the letters of this new word lie in $N$ as soon as the depth $n$ exceeds the contraction bound; and because $w$ fixes the level $n$, the finite automaton of the nucleus must revisit a state before the word is exhausted, whenever $\ell$ exceeds the number of states. The part of $w$ between two visits acts trivially on the relevant subtree, and deleting it shortens the word; the section is therefore strictly shorter. The existence of the constant $C$, uniform in $n$, is the content of the contraction property, and the estimate is the one of Nekrashevych.</p>
 <p>This is the engine of the word-problem algorithm. It is also the reason contraction proves statements about the elements by induction on the word length rather than by a presentation: in the original paper of Grigorchuk on the group of intermediate growth, the contraction is what proves that every element has finite order, and the same induction gives the torsion property of the Gupta–Sidki groups.</p>
 <h3 id="bounded-automata">Bounded Automata</h3>
@@ -214,7 +214,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\rho$</td>
-<td>The contraction coefficient, $<1$ exactly for contracting actions</td>
+<td>The contraction coefficient, $&lt;1$ exactly for contracting actions</td>
 </tr>
 <tr>
 <td>$C$</td>

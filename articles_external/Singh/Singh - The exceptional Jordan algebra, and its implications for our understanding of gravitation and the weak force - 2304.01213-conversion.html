@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exceptional Jordan Algebra, and Its Implications for Our Understanding of Gravitation and the Weak Force — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - The exceptional Jordan algebra, and its implications for our understanding of gravitation…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exceptional-jordan-algebra-and-its-implications-for-our-understanding-of-gravitation-and-the-weak-force"><strong>The Exceptional Jordan Algebra, and Its Implications for Our Understanding of Gravitation and the Weak Force</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2304.01213v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, March 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - The exceptional Jordan algebra, and its implications for our understanding of gravitation and the weak force - 2304.01213-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - The exceptional Jordan algebra, and its implications for our understanding of gravitation and the weak force - 2304.01213.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/jordan-algebras.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - The exceptional Jordan algebra, and its implications for our understanding of gravitation and the weak force - 2304.01213.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the one Jordan algebra that is not equivalent to ordinary quantum mechanics — the $3\times3$ Hermitian matrices over the octonions — and argues that its exceptionality is exactly what physics needs. The algebra's complexification has $E_6$ as automorphism group, its eigenvalues reproduce the standard model's constants, and its branching gives a right-handed sector with a $U(1)$ interaction sourced by the square root of mass. That last piece is offered as the origin of MOND.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-algebra">The algebra</h3>
+<p>"The exceptional Jordan algebra is the algebra of 3 × 3 Hermitian matrices with octonionic entries. It"</p>
+<p>"It is the only one from Jordan's algebraic formulation of quantum mechanics which is not equivalent to the conventional formulation of quantum theory."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"It has often been suggested that this exceptional algebra could explain physical phenomena not currently explained by the conventional approach, such as values of the fundamental constants of the standard model of particle physics, and their relation to gravitation. We show that this is indeed the case; and this also unravels the connection between general relativity and the weak force."</p>
+<h3 id="the-new-interaction">The new interaction</h3>
+<p>"The exceptional Jordan algebra also predicts a new $U(1)$ gravitational interaction which modifies general relativity, and which provides a theoretical basis for understanding the Modified Newtonian Dynamics (MOND)."</p>
+<h3 id="where-the-mass-ratios-come-from">Where the mass ratios come from</h3>
+<p>"the masses of the electron, up quark and down quark are in the ratio 1 : 4 : 9, and hence the square-roots of their masses are in the ratio ±1 : ±2 : ±3, which is a flipping of their electric charge ratios ±3 : ±2 : ±1. This symmetry could not be a coincidence; hence"</p>
+<p>"The answer lies in the exceptional Jordan algebra" $J_3(\mathbb{O})$, since "The group $E_6$ happens to be the automorphism group of the complexified exceptional Jordan algebra."</p>
+<h3 id="the-branching">The branching</h3>
+<p>"$SU(2)_R$ is the precursor of general relativity, and $U(1)_{Yg}$ is the RH counterpart of $U(1)_Y$; the resulting unbroken $U(1)_{grav}$ is sourced by square-root of mass, and is the theoretical origin of Milgrom's MOND."</p>
+<p>"The entire right-handed sector is dark and has exclusively gravitational interaction; it provides a left-right symmetric extension of the standard model, which includes general relativity."</p>
+<h3 id="on-math19">On $E_6$</h3>
+<p>"$E_6$ is the only one of the five exceptional Lie groups" $G_2,F_4,E_6,E_7,E_8$ "which has complex representations."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-exceptionality-is-a-physical-resource-not-an-embarrassment">1. Exceptionality is a physical resource, not an embarrassment</h3>
+<p><strong>The idea.</strong> A <strong>reframing</strong>: the exceptional Jordan algebra is usually noted as the case where the Hilbert-space formulation fails, and then set aside. This treats the failure as the point — the algebra does something ordinary quantum mechanics cannot, and the something is the standard model's constants.</p>
+<p><strong>What it would add.</strong> The corpus's algebra articles treat the exceptional case as a boundary and mostly work with the classical algebras. This says the boundary is where the physics is, and gives three specific things that live there: quantised charge, three generations, and the mass ratios. It would move the corpus's centre of gravity, and the move is cheap because the algebra is already in the corpus's vocabulary.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/jordan-algebras.md</code>.</p>
+<p><strong>What stands in the way.</strong> No Hilbert space means no obvious probability rule; the paper sidesteps this by using the algebra's eigenvalues as constants rather than as measurement outcomes.</p>
+<h3 id="2-the-square-root-of-mass-is-a-charge">2. The square root of mass is a charge</h3>
+<p><strong>What the idea is.</strong> A <strong>quantum number</strong>: assign the right-handed fermions a $U(1)$ charge equal to $\pm\sqrt{m}$. Because the observed mass ratios are $1:4:9$, the square roots are $1:2:3$, which is the electric charge pattern with electron and down quark interchanged. The new $U(1)$ is then sourced by $\sqrt{m}$, not by $m$, and a force sourced by $\sqrt{m}$ produces a $1/r$ potential with the MOND acceleration scale built in.</p>
+<p><strong>What it would add.</strong> The corpus's mass articles treat mass as a parameter. This makes its square root a conserved charge, which is a much stronger structural claim, and it explains the otherwise pointless-looking coincidence in the first-generation ratios. It also connects gravity's infrared modification to a fermion quantum number, which is a route to MOND that does not need a new field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The $\sqrt{m}$ assignment is chosen to fit the observed ratios; the paper's argument is that the fit is too good to be accidental, which is suggestive rather than deductive.</p>
+<h3 id="3-a-dark-right-handed-sector-that-carries-gravity">3. A dark right-handed sector that carries gravity</h3>
+<p><strong>The idea.</strong> A <strong>structure</strong>: the branching of the second $E_6$ gives a right-handed sector with its own $SU(3)$ — a QCD-like gravitational interaction — and its own $U(1)$. This sector is dark and interacts only gravitationally, and general relativity emerges from its $SU(2)_R$.</p>
+<p><strong>What it would add.</strong> The corpus's left-right symmetric articles add a right sector to restore a symmetry. This gives the right sector a job: it is where gravity comes from. That is a much better reason to have one, and it makes the sector's darkness a prediction rather than a fine-tuning problem — the right-handed partners are not seen because they only couple gravitationally.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> A dark sector with a QCD-like confining interaction should leave cosmological traces; the paper does not compute any.</p>
+<p>The rank: the reframing first, because it reorients a field; the square-root charge second, because it is a specific structural proposal; the dark sector third, because it is the branch that follows.</p>
+<p>The remaining items in one line each: the Jordan product and the Jordan identity, which are the algebraic premisses and are stated cleanly; Witten's three observations, which are used to argue that the missing underlying theory is this algebra; and the $E_8\times E_8$ branching that produces the four sectors, which is where the standard model and gravity are supposed to meet.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -77,16 +77,16 @@
 <p>No physics is invoked.</p>
 <h2 id="the-wavefront-set">The Wavefront Set</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> Let $u \in \mathcal D'(\mathbb{R}^n)$ and $(x_0,\zeta_0) \in \mathbb{R}^n\times(\mathbb{R}^n\setminus0)$. One says that $u$ is <strong>smooth at $(x_0,\zeta_0)$</strong>, written $(x_0,\zeta_0)\notin WF(u)$, if there is $\chi \in C_c^\infty(\mathbb{R}^n)$ with $\chi \equiv1$ near $x_0$ and an open cone $\Gamma \subseteq \mathbb{R}^n$ containing $\zeta_0$ (a cone in the sense $\zeta \in \Gamma,\ t>0\Rightarrow t\zeta \in \Gamma$) such that</p>
+<p><strong>Definition.</strong> Let $u \in \mathcal D'(\mathbb{R}^n)$ and $(x_0,\zeta_0) \in \mathbb{R}^n\times(\mathbb{R}^n\setminus0)$. One says that $u$ is <strong>smooth at $(x_0,\zeta_0)$</strong>, written $(x_0,\zeta_0)\notin WF(u)$, if there is $\chi \in C_c^\infty(\mathbb{R}^n)$ with $\chi \equiv1$ near $x_0$ and an open cone $\Gamma \subseteq \mathbb{R}^n$ containing $\zeta_0$ (a cone in the sense $\zeta \in \Gamma,\ t&gt;0\Rightarrow t\zeta \in \Gamma$) such that</p>
 <p>$$
 |\widehat{\chi u}(\zeta)| \le C_N(1+|\zeta|)^{-N} \qquad \text{for all } N \text{ and all } \zeta \in \Gamma .
 $$</p>
 <p>Equivalently, the localised Fourier transform $\widehat{\chi u}$ is rapidly decreasing along a conic neighbourhood of $\zeta_0$. The <strong>wavefront set</strong> $WF(u)$ is the complement in $\mathbb{R}^n\times(\mathbb{R}^n\setminus0)$ of the set of smooth points, and it is independent of the choice of the cutoff functions used to test it.</p>
-<p><strong>Proposition.</strong> (i) $WF(u)$ is closed and conic: $(x,\zeta)\in WF(u)$ and $t>0$ imply $(x,t\zeta)\in WF(u)$; the fibre $WF(u)_x=\{\zeta:(x,\zeta)\in WF(u)\}$ is a closed cone in $\mathbb{R}^n\setminus0$. (ii) $WF(u)=\varnothing$ exactly when $u \in C^\infty$, and $\operatorname{sing\,supp}u$ is the projection of $WF(u)$ to $\mathbb{R}^n$. (iii) $WF(u)$ is a subset of $T^*M\setminus0$ when $u$ is a distribution on a manifold, the local definitions agreeing on overlaps by the invariance of the principal symbol.</p>
+<p><strong>Proposition.</strong> (i) $WF(u)$ is closed and conic: $(x,\zeta)\in WF(u)$ and $t&gt;0$ imply $(x,t\zeta)\in WF(u)$; the fibre $WF(u)_x=\{\zeta:(x,\zeta)\in WF(u)\}$ is a closed cone in $\mathbb{R}^n\setminus0$. (ii) $WF(u)=\varnothing$ exactly when $u \in C^\infty$, and $\operatorname{sing\,supp}u$ is the projection of $WF(u)$ to $\mathbb{R}^n$. (iii) $WF(u)$ is a subset of $T^*M\setminus0$ when $u$ is a distribution on a manifold, the local definitions agreeing on overlaps by the invariance of the principal symbol.</p>
 <p><em>Proof.</em> The conicity and closedness are immediate from the definition, since a cone containing $\zeta_0$ contains a neighbourhood of the ray through $\zeta_0$. For (ii), if all pairs are smooth one can cover a compact set by finitely many localisations with rapidly decreasing Fourier transforms in the relevant cones, and the sum is $C^\infty$; conversely the rapid decrease of $\widehat{\chi u}$ in a neighbourhood of a point where $u$ is $C^\infty$ follows by integration by parts. For (iii) the transformation of the definition under a diffeomorphism is exactly the cotangent lift appearing in the invariance theorem of <em>Pseudodifferential Operators</em>.</p>
 <p><strong>Definition.</strong> For $s \in \mathbb{R}$ define $(x_0,\zeta_0)\notin WF^s(u)$ if there are $\chi$ and a cone $\Gamma$ as above with</p>
 <p>$$
-\int_\Gamma(1+|\zeta|^2)^s\,|\widehat{\chi u}(\zeta)|^2\,d\zeta<\infty ,
+\int_\Gamma(1+|\zeta|^2)^s\,|\widehat{\chi u}(\zeta)|^2\,d\zeta&lt;\infty ,
 $$</p>
 <p>the <strong>Sobolev wavefront set</strong> of order $s$. Then $WF^s(u)=\varnothing$ exactly when $u \in H^s_{\mathrm{loc}}$, the sets decrease as $s$ increases, and</p>
 <p>$$

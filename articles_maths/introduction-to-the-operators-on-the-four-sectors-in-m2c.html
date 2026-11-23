@@ -77,7 +77,7 @@
 <p><strong>What the article does not do.</strong> It does not develop any sector; that is <a href="one-sided-operators-on-the-n-regular-sector-in-m2c.html">One-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</a> and its three companions. It does not treat the two-sided operator as a family, which is <a href="the-hermitian-pair-of-operators-acting-on-two-sides-in-m2c.html">The Hermitian Pair of Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>.</p>
 <p><strong>Conventions.</strong> The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so that
 $$
-A=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix},\qquad
+A=\begin{pmatrix}Q_t-iQ_z &amp; -iQ_x-Q_y\\ -iQ_x+Q_y &amp; Q_t+iQ_z\end{pmatrix},\qquad
 \operatorname{tr}A=2Q_t,\qquad \det A=Q_t^2+Q_x^2+Q_y^2+Q_z^2=N(\tilde Q).
 $$
 The vector form is $B^2=Q_x^2+Q_y^2+Q_z^2=\det A-\tfrac14(\operatorname{tr}A)^2$, and the discriminant is $\Delta=(\operatorname{tr}A)^2-4\det A=-4B^2$. The matrix adjoint is $A^{\dagger}=\overline{A^{\mathsf T}}$; it is the composite of the natural involution $\natural$ with the conjugation of the coefficients, verified below. Arrays are printed in the coefficient frame $(E_t,E_x,E_y,E_z)=(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$ unless the matrix-unit frame is named.</p>
@@ -96,10 +96,10 @@ $$
 For the displayed $A$ this gives
 $$
 L_A=\begin{pmatrix}
-Q_t-iQ_z & -iQ_x-Q_y & 0 & 0\\
--iQ_x+Q_y & Q_t+iQ_z & 0 & 0\\
-0 & 0 & Q_t-iQ_z & -iQ_x-Q_y\\
-0 & 0 & -iQ_x+Q_y & Q_t+iQ_z
+Q_t-iQ_z &amp; -iQ_x-Q_y &amp; 0 &amp; 0\\
+-iQ_x+Q_y &amp; Q_t+iQ_z &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; Q_t-iQ_z &amp; -iQ_x-Q_y\\
+0 &amp; 0 &amp; -iQ_x+Q_y &amp; Q_t+iQ_z
 \end{pmatrix},
 $$
 verified against the action $Y\mapsto AY$ to $4\cdot10^{-16}$, and $R_A$ is the same array with the two diagonal $2\times2$ blocks exchanged. The two commute, since they act on different tensor slots.</p>
@@ -109,9 +109,9 @@ L_A=Q_tM_t+Q_xM_x+Q_yM_y+Q_zM_z,\qquad M_t=\mathrm I_4,
 $$
 with rows and columns indexed $t,x,y,z$,
 $$
-M_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-M_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-M_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+M_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+M_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+M_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$
 Every row has one nonzero entry of modulus one, so the three are signed permutation matrices: they are the multiplication table read aloud. The identities $M_x^2=M_y^2=M_z^2=-\mathrm I_4$ and $M_xM_y=M_z$ hold exactly, with residual $0$, and reproduce $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$.</p>
 <p><strong>Why the coefficient array is not the Kronecker array.</strong> The two frames differ by the change of basis from the matrix units to the $E_\mu$, and that change is not a permutation: $E_x=-i\sigma_1$ is not a matrix unit. The Kronecker form is the one that shows the tensor slots; the coefficient form is the one in which $\sum_\mu Q_\mu M_\mu$ is linear in the coefficients with integer structure constants.</p>
@@ -121,7 +121,7 @@ Every row has one nonzero entry of modulus one, so the three are signed permutat
 $$
 L_{AA'}=L_A L_{A'},\qquad R_{AA'}=R_{A'}R_A,\qquad \mathrm{Sd}_{AA'}=\mathrm{Sd}_A\,\mathrm{Sd}_{A'}.
 $$
-Each is associativity read at one position, and the third uses $(AA')^{\dagger}=A'^{\dagger}A^{\dagger}$. Verified on a hundred random pairs, with residuals $1.5\cdot10^{-14}$, $1.6\cdot10^{-14}$ and $2\cdot10^{-13}$.</p>
+Each is associativity read at one position, and the third uses $(AA')^{\dagger}=A'{}^{\dagger}A^{\dagger}$. Verified on a hundred random pairs, with residuals $1.5\cdot10^{-14}$, $1.6\cdot10^{-14}$ and $2\cdot10^{-13}$.</p>
 <p><strong>The orders.</strong> The left multiplication is a representation, the right multiplication an anti-representation, and the two-sided operator a representation again because the two reversals cancel. In arrays, $L$ acts on the first Kronecker slot and $R$ on the second.</p>
 <p><strong>The image on the invertibles.</strong> $A\mapsto L_A$ is faithful with image $GL(2,\mathbb{C})$, of real dimension eight. $A\mapsto\mathrm{Sd}_A$ kills the central circle: $\mathrm{Sd}_{\omega A}=\mathrm{Sd}_A$ for every $\omega\in\mathbb{C}$ with $|\omega|=1$, because $\omega$ is central and $\omega\omega^{\dagger}=1$. Its image is the conformal group $CO^{+}(1,3)$, of real dimension seven.</p>
 <p><strong>The involution, verified.</strong> The natural involution $\natural$ of the source is the $\mathbb{C}$-linear quaternion conjugation $q\mapsto(Q_t,-Q_x,-Q_y,-Q_z)$, which on the display is $A\mapsto(\operatorname{tr}A)\mathrm I_2-A$. Composed with the conjugation of the coefficients it is the matrix adjoint. On the coefficient vector $q=(Q_t,Q_x,Q_y,Q_z)$ the composite acts by
@@ -190,7 +190,7 @@ $$
 \Sigma_{01}=\{\det A=0,\ A\neq0,\ B^2\neq0\},\quad
 \Sigma_{00}=\{\det A=0,\ A\neq0,\ B^2=0\}.
 $$</p>
-<p><strong>The matrix forms.</strong> On $\Sigma_{11}$ the matrix has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and is diagonalizable. On $\Sigma_{10}$ it has the single eigenvalue $Q_t$; it is the scalar $Q_t\mathrm I_2$ exactly on the scalar line, and otherwise similar to $\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. On $\Sigma_{01}$ it is a rank-one matrix with eigenvalues $2Q_t$ and $0$. On $\Sigma_{00}$ it is a non-zero nilpotent, $A^2=0$, similar to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.</p>
+<p><strong>The matrix forms.</strong> On $\Sigma_{11}$ the matrix has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and is diagonalizable. On $\Sigma_{10}$ it has the single eigenvalue $Q_t$; it is the scalar $Q_t\mathrm I_2$ exactly on the scalar line, and otherwise similar to $\begin{pmatrix}Q_t&amp;1\\0&amp;Q_t\end{pmatrix}$. On $\Sigma_{01}$ it is a rank-one matrix with eigenvalues $2Q_t$ and $0$. On $\Sigma_{00}$ it is a non-zero nilpotent, $A^2=0$, similar to $\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$.</p>
 <p><strong>The eigenvalues of the operators.</strong> Because $A$ acts on the left and on the right on two tensor slots,
 $$
 \operatorname{spec}L_A=\operatorname{spec}R_A=\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\},\qquad
@@ -297,7 +297,7 @@ The four products were computed on random elements of $\Sigma_{11}$ and agree wi
 </tbody>
 </table></div>
 <p><strong>Reading the two tables.</strong> Along a row the rank drops when $\det A=0$, and the Jordan type leaves the semisimple case when $B^2=0$. Along a column the two-sided operator replaces $\lambda_i$ by $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum and gains one degree of defect: the block $2+2$ becomes $3+1$, and $J_2(0)\oplus J_2(0)$ becomes $J_2(0)\oplus0\oplus0$.</p>
-<p><strong>The Jordan check.</strong> For $A=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ the ranks of $(\mathrm{Sd}_A-\mathrm I_4)^k$ are $4,2,1,0$, that is nullities $0,2,3,4$, which is $J_3(1)\oplus J_1(1)$. For $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ the ranks of $\mathrm{Sd}_A^k$ are $4,1,0$, which is $J_2(0)\oplus0\oplus0$. For $A=\operatorname{diag}(1,0)$ they are $4,1,1$, a rank-one projection.</p>
+<p><strong>The Jordan check.</strong> For $A=\begin{pmatrix}1&amp;2\\0&amp;1\end{pmatrix}$ the ranks of $(\mathrm{Sd}_A-\mathrm I_4)^k$ are $4,2,1,0$, that is nullities $0,2,3,4$, which is $J_3(1)\oplus J_1(1)$. For $A=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$ the ranks of $\mathrm{Sd}_A^k$ are $4,1,0$, which is $J_2(0)\oplus0\oplus0$. For $A=\operatorname{diag}(1,0)$ they are $4,1,1$, a rank-one projection.</p>
 <h2 id="where-math251-differs">Where $n=2$ Differs</h2>
 <p><strong>The size of the operator.</strong> At $n=2$ the arrays are $4\times4$ and the operator algebra is $M_4(\mathbb{C})$, of complex dimension sixteen; there is no larger space, since $\dim_{\mathbb{C}}\mathbb{B}=4$.</p>
 <p><strong>The sector count.</strong> At $n=2$ the two indices $\det A$ and $B^2$ are single complex numbers, so the discriminant $\Delta=-4B^2$ is a single number and there are exactly four sectors. At order $n$ the second index is a form on a space of dimension $n^2-1$ and the sector count is not four.</p>

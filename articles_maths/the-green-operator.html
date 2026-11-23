@@ -79,7 +79,7 @@
 <p>$$
 B = (B_1,\dots,B_m)
 $$</p>
-<p>be a <strong>boundary operator</strong>: each $B_j$ is a differential operator of order $m_j<m$ on $\partial\Omega$, and $B$ has order at most $m-1$. The <strong>boundary-value problem</strong> for $L$ and $B$ asks, for a given $f$, for a function $u$ with</p>
+<p>be a <strong>boundary operator</strong>: each $B_j$ is a differential operator of order $m_j&lt;m$ on $\partial\Omega$, and $B$ has order at most $m-1$. The <strong>boundary-value problem</strong> for $L$ and $B$ asks, for a given $f$, for a function $u$ with</p>
 <p>$$
 Lu = f \ \text{on }\Omega, \qquad Bu = 0 \ \text{on }\partial\Omega ,
 $$</p>
@@ -110,7 +110,7 @@ $$</p>
 u(x) = \int_\Omega K(x,y)\,f(y)\,dy
 $$</p>
 <p>satisfies $Lu=f$ and $Bu=0$ for every admissible $f$, by interchanging $L_x$ with the integral; so $K$ defines a right inverse of $L$ on the admissible functions, and it is the Green function by uniqueness of the inverse.</p>
-<p><strong>Theorem (the jump condition).</strong> Let $L = -(p\,\partial/\partial x)' + q$ act on functions of one variable, with $p\in C^1$, $p>0$, and let $G$ be its Green function for a boundary condition of order $1$ at each endpoint. Then $G$ is continuous on the diagonal, $G$ is of class $C^2$ off it, and</p>
+<p><strong>Theorem (the jump condition).</strong> Let $L = -(p\,\partial/\partial x)' + q$ act on functions of one variable, with $p\in C^1$, $p&gt;0$, and let $G$ be its Green function for a boundary condition of order $1$ at each endpoint. Then $G$ is continuous on the diagonal, $G$ is of class $C^2$ off it, and</p>
 <p>$$
 p(y)\Bigl(\partial/\partial x\,G(y^-,y) - \partial/\partial x\,G(y^+,y)\Bigr) = 1 .
 $$</p>
@@ -131,7 +131,7 @@ $$</p>
 <p>Since $L=L^{\dagger}$, the left-hand side is $\int\delta(y-x)\overline{G(y,y')}dy=\overline{G(x,y')}$, and the right-hand side is $\int G(y,x)\overline{\delta(y-y')}dy=G(y',x)$. Comparing gives $\overline{G(x,y')}=G(y',x)$, which is the stated symmetry after renaming the variables. Both functions satisfy the boundary condition, so the two applications of the defining identity are legitimate. For a real operator the bar is the identity and the symmetry is the plain equality $G(x,y)=G(y,x)$.</p>
 <p><strong>Example (the interval).</strong> For $-y''=f$ on $(0,1)$ with $y(0)=y(1)=0$ the Green function is</p>
 <p>$$
-G(x,y) = \begin{cases} x(1-y), & x\le y,\\ y(1-x), & x\ge y,\end{cases}
+G(x,y) = \begin{cases} x(1-y), &amp; x\le y,\\ y(1-x), &amp; x\ge y,\end{cases}
 $$</p>
 <p>which is continuous, has the jump $\partial/\partial x\,G(y^-,y)-\partial/\partial x\,G(y^+,y) = (1-y)-(-y) = 1$, and is symmetric; the jump condition is satisfied with $p\equiv1$, and a direct differentiation confirms that $u(x)=\int_0^1G(x,y)f(y)\,dy$ solves $-u''=f$ with $u(0)=u(1)=0$.</p>
 <p><strong>Example (the Dirichlet Laplacian).</strong> For $-\Delta u=f$ on a bounded domain $\Omega$ with $u|_{\partial\Omega}=0$, the Green function is</p>
@@ -140,16 +140,16 @@ G(x,y) = \Phi(x-y) - H(x,y),
 $$</p>
 <p>where $\Phi$ is the fundamental solution of the Laplacian and $H(\cdot,y)$ is the harmonic corrector solving $\Delta_yH=0$ with $H(x,y)=\Phi(x-y)$ for $y\in\partial\Omega$; the subtraction removes the boundary value of $\Phi(x-\cdot)$ and is exactly the choice of the boundary condition. The construction and the Poisson kernel of the ball are those of <em>Partial Differential Equations</em>.</p>
 <h2 id="construction-and-the-operator-calculus">Construction and the Operator Calculus</h2>
-<p><strong>Theorem (the one-dimensional construction).</strong> Let $L = -(p\,\partial/\partial x)'+q$ with $p>0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_<$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_<'(a)=1$, and $u_>$ the solution satisfying the condition at $b$, normalised by $u_>'(b)=1$. Then</p>
+<p><strong>Theorem (the one-dimensional construction).</strong> Let $L = -(p\,\partial/\partial x)'+q$ with $p&gt;0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_&lt;$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_&lt;'(a)=1$, and $u_&gt;$ the solution satisfying the condition at $b$, normalised by $u_&gt;'(b)=1$. Then</p>
 <p>$$
-\boxed{\;G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>'\;} ,
+\boxed{\;G(x,y) = \frac{u_&lt;(x\wedge y)\,u_&gt;(x\vee y)}{p(y)\,W(y)} , \qquad W = u_&lt;'u_&gt; - u_&lt;u_&gt;'\;} ,
 $$</p>
 <p>where $x\wedge y$ and $x\vee y$ are the smaller and the larger of $x$ and $y$, and $W$ is a nonzero constant by the Liouville identity.</p>
-<p><em>Proof.</em> The function on the right is, in each of the two regions $x<y$ and $x>y$, a product of two solutions of $Lu=0$, hence a solution of $Lu=0$; it satisfies the boundary conditions because one factor does at each end. Across $x=y$ it is continuous, both expressions reducing to $u_<(y)u_>(y)/(pW)$, and the jump of its first derivative is</p>
+<p><em>Proof.</em> The function on the right is, in each of the two regions $x&lt;y$ and $x&gt;y$, a product of two solutions of $Lu=0$, hence a solution of $Lu=0$; it satisfies the boundary conditions because one factor does at each end. Across $x=y$ it is continuous, both expressions reducing to $u_&lt;(y)u_&gt;(y)/(pW)$, and the jump of its first derivative is</p>
 <p>$$
-\frac{u_<'(y)u_>(y)-u_<(y)u_>'(y)}{p(y)W(y)} = \frac{W(y)}{p(y)W(y)} = \frac1{p(y)} ,
+\frac{u_&lt;'(y)u_&gt;(y)-u_&lt;(y)u_&gt;'(y)}{p(y)W(y)} = \frac{W(y)}{p(y)W(y)} = \frac1{p(y)} ,
 $$</p>
-<p>which is the jump condition. The characterisation theorem then identifies it with the Green function. The constancy of $W$ is $(pW)'=p'W + pW' = p'W + p(u_<''u_>-u_<u_>'') = p'W - p'W = 0$, using $-(pu_<')'+qu_<=0$ and the same for $u_>$.</p>
+<p>which is the jump condition. The characterisation theorem then identifies it with the Green function. The constancy of $W$ is $(pW)'=p'W + pW' = p'W + p(u_&lt;''u_&gt;-u_&lt;u_&gt;'') = p'W - p'W = 0$, using $-(pu_&lt;')'+qu_&lt;=0$ and the same for $u_&gt;$.</p>
 <p><strong>Proposition (compactness).</strong> If $\Omega$ is bounded and $L$ is elliptic of order $m$ with smooth coefficients, and if the boundary condition is coercive enough that $G(L^2(\Omega))\subseteq H^m(\Omega)$, then $G$ is a compact operator on $L^2(\Omega)$.</p>
 <p><em>Proof.</em> The operator $G$ factors as $L^2(\Omega)\to H^m(\Omega)\to L^2(\Omega)$, the first map bounded by the regularity hypothesis and the second compact by the Rellich–Kondrachov theorem of <em>Sobolev Spaces and Weak Solutions</em> on a bounded Lipschitz domain; a composition of a bounded with a compact operator is compact.</p>
 <p><strong>Theorem (the shifted operator).</strong> Let $G$ be the Green operator of $(L,B)$ and let $\lambda$ be a complex number for which the homogeneous problem $(L-\lambda)u=0$, $Bu=0$ has only the trivial solution. Then the Green operator $G_\lambda$ of $(L-\lambda,B)$ exists and</p>
@@ -165,7 +165,7 @@ $$</p>
 <p><em>Proof.</em> The eigenvector equation $G\varphi=\mu\varphi$ with $\mu\neq0$ is equivalent, on applying $L$, to $L\varphi=\mu^{-1}\varphi$ together with $B\varphi=0$; hence $\mu=1/\lambda$ for an eigenvalue $\lambda$ of $L$ under $B$, and every eigenfunction of $L$ arises so. The spectral theorem for a compact self-adjoint operator on a Hilbert space, that of <em>Banach and Hilbert Spaces</em>, gives the orthonormal eigenbasis and the norm-convergent series for $G$; the kernel form is the expansion of the kernel of a Hilbert–Schmidt operator. The eigenvalues of $L$ are real because $L$ is formally self-adjoint and $G$ is self-adjoint, and they tend to infinity because their reciprocals tend to $0$. The spectral theory of these operators, and the Weyl law for their counting function, is <em>Self-Adjoint Elliptic Operators and the Spectral Theorem</em> below.</p>
 <h2 id="summary">Summary</h2>
 <p>The boundary-value problem for a differential operator $L$ of order $m$ and a boundary operator $B$ of orders at most $m-1$ has an inverse exactly when the homogeneous problem $Lu=0$, $Bu=0$ has only the trivial solution, and when it does the inverse is the Green operator $G$; if the homogeneous problem is nontrivial, the inhomogeneous problem has no solution or infinitely many, and the solvability is decided by the orthogonality to the adjoint kernel. On a bounded domain the Green operator is an integral operator whose kernel is the Green function $G(x,y)$, and the Green function is characterised by $L_xG(x,y)=\delta(x-y)$, by the boundary condition $B_xG(\cdot,y)=0$ in the first variable, and by local integrability. For a second-order operator it is smooth off the diagonal, continuous on it, and its first derivative jumps by the reciprocal of the leading coefficient; for a formally self-adjoint problem it is Hermitian-symmetric, $G(x,y)=\overline{G(y,x)}$, which is the reciprocity of the problem.</p>
-<p>On an interval the Green function is assembled from the two solutions of $Lu=0$ that satisfy the boundary conditions at the two ends, $G(x,y)=u_<(x\wedge y)u_>(x\vee y)/(pW)$, with the Wronskian $W$ constant; for the Dirichlet Laplacian it is the fundamental solution corrected by the harmonic term that makes the boundary value vanish. On a bounded domain the Green operator is compact, and it is the resolvent of $L$ at the parameter zero, the resolvent at a nonzero parameter being the Green operator of the shifted expression, $G_\lambda=G+\lambda GG_\lambda$.</p>
+<p>On an interval the Green function is assembled from the two solutions of $Lu=0$ that satisfy the boundary conditions at the two ends, $G(x,y)=u_&lt;(x\wedge y)u_&gt;(x\vee y)/(pW)$, with the Wronskian $W$ constant; for the Dirichlet Laplacian it is the fundamental solution corrected by the harmonic term that makes the boundary value vanish. On a bounded domain the Green operator is compact, and it is the resolvent of $L$ at the parameter zero, the resolvent at a nonzero parameter being the Green operator of the shifted expression, $G_\lambda=G+\lambda GG_\lambda$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -208,12 +208,12 @@ $$</p>
 <td>Harmonic corrector for the Dirichlet problem</td>
 </tr>
 <tr>
-<td>$u_<$, $u_>$</td>
+<td>$u_&lt;$, $u_&gt;$</td>
 <td>Solutions of $Lu=0$ satisfying the condition at the left, respectively the right, end</td>
 </tr>
 <tr>
-<td>$W = u_<'u_>-u_<u_>'$</td>
-<td>Wronskian of $u_<,u_>$</td>
+<td>$W = u_&lt;'u_&gt;-u_&lt;u_&gt;'$</td>
+<td>Wronskian of $u_&lt;,u_&gt;$</td>
 </tr>
 <tr>
 <td>$x\wedge y$, $x\vee y$</td>

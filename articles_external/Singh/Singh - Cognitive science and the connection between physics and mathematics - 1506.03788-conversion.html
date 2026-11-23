@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Science and the Connection Between Physics and Mathematics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Cognitive science and the connection between physics and mathematics - 1506.03788.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cognitive-science-and-the-connection-between-physics-and-mathematics"><strong>Cognitive Science and the Connection Between Physics and Mathematics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1506.03788v1 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Anshu Gupta Mujumdar, Tejinder Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, June 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Cognitive science and the connection between physics and mathematics - 1506.03788-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Cognitive science and the connection between physics and mathematics - 1506.03788.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/division-algebras.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Cognitive science and the connection between physics and mathematics - 1506.03788.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An essay arguing that mathematics is not discovered in a Platonic realm but constructed in the brain out of primordial perceptions — space, motion, change, flow of time — through conceptual metaphors. Physics is then the description of experimental regularities in that human mathematics, and the paper's harder claim is that a genuinely new physics may need a genuinely new mathematics, not just a new equation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-thesis">The thesis</h3>
+<p>"The human mind is endowed with innate primordial perceptions such as space, distance, motion, change, flow of time, matter."</p>
+<p>"The field of cognitive science argues that the abstract concepts of mathematics are not Platonic, but are built in the brain from these primordial perceptions, using what are known as conceptual metaphors."</p>
+<p>"Thus all of the vastness of mathematics, with its beautiful theorems, is human mathematics. It resides in the mind, and is not 'out there'."</p>
+<h3 id="against-platonism">Against Platonism</h3>
+<p>"Nature did not evolve the brain for doing physics and maths."</p>
+<p>"Asserting that there is a mathematical universe, which we somehow grasp in an extra-sensory manner, and which perhaps is coincident with the physical universe, is at best an act of faith."</p>
+<p>"Over the last two decades, cognitive neuroscience and cognitive science have made a forceful case that all mathematics is human mathematics, made in and by the human brain, and stable across cultures."</p>
+<h3 id="the-consequence-for-physics">The consequence for physics</h3>
+<p>"It seems much simpler to accept that the physical laws determined by such a geometry are a product of our mind and live" brain rather than in an abstract space.</p>
+<p>"We clearly see in this example how primordial and concrete concepts amongst which a regularity is observed empirically, are mathematically inter-related by the physicist in his/her brain, using additional abstract concepts, to arrive at a law of nature, using mathematics already known or expressly invented 11 for the job at hand."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mathematical-structures-are-tools-not-furniture">1. Mathematical structures are tools, not furniture</h3>
+<p><strong>The idea.</strong> A <strong>position</strong>: the algebras the corpus works with — the quaternions, the biquaternions, the octonions — are not the furniture of the world. They are constructions the brain makes because its perceptual primitives make them easy. A different brain would build different tools.</p>
+<p><strong>What it would add.</strong> The corpus repeatedly argues that a physical result follows <em>because</em> the algebra has a certain structure, which quietly assumes the algebra is privileged. This supplies the deflationary alternative: the algebra is privileged for us. It does not refute the corpus's derivations, but it changes what they prove — from a claim about nature to a claim about how nature looks through the concepts we have. Stated as a working attitude, it makes the corpus's structural claims more modest and more defensible.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/division-algebras.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is about the origin of concepts, and it does not tell us which of two equally human mathematics is better for physics; the choice is still made by experiment.</p>
+<h3 id="2-a-new-physics-may-need-a-new-mathematics">2. A new physics may need a new mathematics</h3>
+<p><strong>The idea.</strong> A <strong>methodological claim</strong>: when a theory resists formulation, the obstacle may be the mathematics rather than the physics. The corpus's own history is an instance — the off-shell theory needed a five-dimensional algebra before it could be written.</p>
+<p><strong>What it would add.</strong> The corpus's articles on why a particular formalism is unavoidable all argue from within a formalism. This argues from outside: the formalism itself can be the bottleneck, and inventing structure is a legitimate move. It would let the corpus say, in specific places, that a difficulty is not a physical obstruction but a missing piece of mathematics — which is a much more productive diagnosis than declaring that the theory fails.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/division-rings.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is unfalsifiable in the short run; any failure can be blamed on the mathematics, so it licenses indefinitely postponed judgement.</p>
+<h3 id="3-metaphor-is-the-mechanism-not-a-rhetorical-flourish">3. Metaphor is the mechanism, not a rhetorical flourish</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: abstract concepts are built by mapping a source domain onto a target domain, and the mapping survives into the technical vocabulary. Physics is full of these — field, flow, current, particle — and they carry structure that is not licensed by the equations.</p>
+<p><strong>What it would add.</strong> The corpus's articles use "fluid", "flow", "current" as if these were literal descriptions, and several of its identifications rest on the metaphor being apt. Naming the mechanism would let the corpus separate the part of a fluid analogy that is derived from the part that is imported by the word. For an artificial reader this is a concrete instruction: when the corpus says a wave function <em>is</em> a fluid, check which features came from the derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/division-algebras.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper gives the cognitive evidence for the mechanism in general, not a procedure for auditing a specific physical analogy.</p>
+<p>The rank: the deflationary position first, because it changes what the corpus's derivations establish; the new-mathematics claim second, because it is a working method; metaphor last, because it is a diagnosis of vocabulary.</p>
+<p>The remaining items in one line each: the account of how number concepts are built from subitising and counting, which is the developmental evidence; the case that noncommutative geometry is human mathematics rather than a discovered space, which is the essay's most pointed application; and the discussion of what remains genuinely unexplained — the existence of a regular universe — which the authors state plainly and do not claim to answer.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

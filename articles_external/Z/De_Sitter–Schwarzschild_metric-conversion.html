@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Sitter–Schwarzschild Metric — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/De_Sitter–Schwarzschild_metric.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="de-sitterschwarzschild-metric"><strong>De Sitter–Schwarzschild Metric</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>De Sitter–Schwarzschild metric</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/De_Sitter–Schwarzschild_metric-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/De_Sitter–Schwarzschild_metric.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/De_Sitter–Schwarzschild_metric.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the de Sitter–Schwarzschild solution: a black hole inside a causal patch of de Sitter space, the positive-curvature case of the Kottler metric. It has two horizons, and the article's interesting content is the existence of a largest such black hole, the Nariai spacetime, where the two horizons have equal area and are related by a discrete reflection.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"the de Sitter–Schwarzschild solution describes a black hole in a causal patch of de Sitter space. It is the positive-curvature case of the Kottler metric." And why it matters: "spacetimes can have black hole event horizons and also cosmological horizons. The de Sitter–Schwarzschild solution is the simplest solution that has both."</p>
+<h3 id="the-metric-and-the-two-terms">The metric and the two terms</h3>
+<p>$ds^2=-f(r)dt^2+\frac{dr^2}{f(r)}+r^2(d\theta^2+\sin^2\theta\,d\phi^2)$, with "The vacuum Einstein equations give a linear equation for 𝑓(𝑟), which has as solutions: 𝑓(𝑟) = 1 − 2𝑎/𝑟" and "$f(r)=1-br^2$". The first is the Schwarzschild term and the second the cosmological one; the solution is their combination, and each zero of $f$ is a horizon. </p>
+<h3 id="the-nariai-limit">The Nariai limit</h3>
+<p>"Unlike a flat-space black hole, there is a largest possible de Sitter black hole, which is the Nariai spacetime (named after Hidekazu Nariai). The Nariai limit has no singularities, the cosmological and black hole horizons have the same area, and they can be mapped to each other by a discrete reflection symmetry in any causal patch."</p>
+<p>That is the structural fact worth keeping: when the black hole grows to the size of the cosmological horizon, the two horizons coincide in area, the geometry becomes a product, and the singularity disappears.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-horizons-and-a-maximum-mass-that-is-not-a-singularity">1. Two horizons, and a maximum mass that is not a singularity</h3>
+<p><strong>The idea.</strong> A black hole inside de Sitter cannot grow without bound: at the Nariai radius the two horizons merge and the solution becomes non-singular. The maximum is geometric, not dynamical.</p>
+<p><strong>What it would add.</strong> A case the corpus's black-hole thermodynamics does not consider: the temperature of a horizon is defined relative to another horizon, and when the two are equal the usual thermodynamic reading has to be redone.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, where a single horizon is assumed.</p>
+<p><strong>What stands in the way.</strong> The corpus's thermodynamics is for one horizon in an asymptotically flat or AdS setting; two horizons require a subtraction scheme the corpus does not have.</p>
+<h3 id="2-a-discrete-reflection-exchanging-two-horizons">2. A discrete reflection exchanging two horizons</h3>
+<p><strong>The idea.</strong> In any causal patch the cosmological and black-hole horizons can be exchanged by a reflection. The symmetry is exact, so the two horizons are the same object seen from two sides.</p>
+<p><strong>What it would add.</strong> A symmetry argument for the equality of the two temperatures at the Nariai point, instead of a computation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, on the relation between horizon notions.</p>
+<p><strong>What stands in the way.</strong> The reflection is a property of the Kottler metric's static patch; carrying it to the corpus's algebra would need the patch itself to be an algebraic object.</p>
+<p>This is an encyclopedia article; the metric, the two solutions of the linear equation, and the Nariai limit are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

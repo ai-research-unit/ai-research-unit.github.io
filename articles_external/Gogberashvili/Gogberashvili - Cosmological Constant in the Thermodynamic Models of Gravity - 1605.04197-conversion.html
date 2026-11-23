@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmological Constant in the Thermodynamic Models of Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Cosmological Constant in the Thermodynamic Models of Gravity -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmological-constant-in-the-thermodynamic-models-of-gravity"><strong>Cosmological Constant in the Thermodynamic Models of Gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1605.04197 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili, Ucha Chutkerashvili</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 May 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Cosmological Constant in the Thermodynamic Models of Gravity - 1605.04197-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Cosmological Constant in the Thermodynamic Models of Gravity - 1605.04197.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Cosmological Constant in the Thermodynamic Models of Gravity - 1605.04197.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A three-page note. In thermodynamic models of gravity the Einstein equations are written as one scalar balance between gravitational and matter heat densities along a null vector, and in that form $\Lambda$ enters the tensor equations as a constant of integration rather than as a vacuum energy. The note bounds that constant with the Károlyházy uncertainty relation at the horizon distance and obtains the observed dark-energy density. The bound is an estimate from three scalings, not a derivation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<p>The field equation is a scalar identity holding for every null $l^\nu$,
+$$\left(R_{\mu\nu}-\tfrac12 g_{\mu\nu}R\right)l^\mu l^\nu=L_p^2\,T_{\mu\nu}l^\mu l^\nu,\qquad g_{\mu\nu}l^\mu l^\nu=0$$
+(paper 1–2), with $L_p$ the reduced Planck length and $l^\nu$ "the independent variable (instead of the metrics tensor gµν ) in the variational prin- ciple of the model.". The right side is the matter heat density, $\rho+P=TS$ (paper 3); the left is $R_{\mu\nu}l^\mu l^\nu=(\nabla_\nu l^\nu)^2-\nabla_\mu l_\nu\nabla^\nu l^\mu+(\text{total derivatives})$ (paper 4). Because $l$ is null, $\Lambda$ can appear as an integration constant in the tensor form,
+$$R_{\mu\nu}-\tfrac12g_{\mu\nu}R=L_p^2\left(T_{\mu\nu}+g_{\mu\nu}\Lambda\right)$$
+(paper 5), and "is not connected with the large constant vacuum energy terms in matter Lagrangians".</p>
+<p>The bound uses $\delta x\approx L_p^{2/3}x^{1/3}$ (paper 6) and $E\sim1/t$ for the minimal cell (paper 7). At the horizon $x\sim1/H$,
+$$\Lambda\sim\frac{H^2}{L_p^2}$$
+(paper 8), which "coincides with the observed estimations for the dark energy". $\Lambda$ is to be identified with "the amount of information accessible to an eternal observer at the horizon"; the relation is $\sim$ and no coefficient is computed.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math24-as-a-constant-of-integration">1. $\Lambda$ as a constant of integration</h3>
+<p><strong>The idea.</strong> In the null-vector form the left side has a trace ambiguity the variational principle does not fix, so the integration brings a constant, and that constant is $\Lambda$. A <strong>mechanism</strong> for a cosmological term without a vacuum-energy term.</p>
+<p><strong>What it would add.</strong> A route to a source the corpus declares missing: its cosmology article states that the framework's invariants are rank-two, that the packaging of a rank-two tensor collapses to its trace, and that "no scale factor, no Hubble rate, and no equation of state is derived here".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs a variational principle whose independent variable is a null vector field, and the corpus's frame route varies the frame; no null-vector action exists there. It also leaves $\Lambda$ undetermined until an extra principle is supplied, which the note fills with Károlyházy rather than with the algebra.</p>
+<h3 id="2-one-scalar-equation-for-all-null-directions">2. One scalar equation for all null directions</h3>
+<p><strong>The idea.</strong> A single scalar identity required to hold for every null $l$ replaces the tensor equation, and the note argues the scalar form "contains the same information content as the usual tensor form". A <strong>formula</strong> that loses nothing.</p>
+<p><strong>What it would add.</strong> A form in which the equation is a heat balance, so the first law applies directly — an alternative to the corpus's linearised dictionary, which carries the ten components.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>.</p>
+<p><strong>What stands in the way.</strong> The equivalence rests on the identity holding for all null vectors, an assumption about the solution space rather than a consequence of the display; and the corpus's gap is the non-linear equation itself, which this rewriting presupposes.</p>
+<p>The rank is a judgement: the integration-constant mechanism first, because it addresses a gap the corpus names; the null-vector rewriting second, because it restates an equation the corpus already carries.</p>
+<p>Three pages: the balance equation, the integration constant, the Károlyházy bound, and the estimate of $\Lambda$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

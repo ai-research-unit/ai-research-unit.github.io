@@ -82,7 +82,7 @@
 <p><strong>The two real coordinate systems.</strong> The first splits each complex coordinate, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, with real $q$'s. The real basis is $e_1,ie_1,e_2,ie_2$ in that order, so the real coordinate column is $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$. The second is the null system $u(Q)=Q_{\blacktriangle}+iQ_{\blacktriangledown}$, $v(Q)=Q_{\blacktriangle}-iQ_{\blacktriangledown}$, with dual basis $e_u=\tfrac12(e_1-ie_2)$ and $e_v=\tfrac12(e_1+ie_2)$, so that $u(e_u)=v(e_v)=1$ and $u(e_v)=v(e_u)=0$.</p>
 <p><strong>The three companion forms.</strong> $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, $\mathbb{C}$-sesquilinear and definite; $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$, $\mathbb{C}$-bilinear and symmetric; $\omega$, defined in the next section, $\mathbb{C}$-bilinear and alternating. The letter $B$ is the $\mathbb{C}^2$ corpus's, and it is not the vector modulus of the biquaternion layer.</p>
 <p><strong>The Pauli image.</strong> $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ sends $e_t\mapsto\mathrm I_2$, $\vec e_x\mapsto-i\sigma_1$, $\vec e_y\mapsto-i\sigma_2$, $\vec e_z\mapsto-i\sigma_3$, extended over $\mathbb{C}$ by linearity. Its determinant is the quaternionic norm, $\det\mathsf M_2(\tilde Q)=N(\tilde Q)=\sum_{\imath} Q_{\imath}^2$.</p>
-<p><strong>The named matrices.</strong> On a single real coordinate pair $(q,q')$ the multiplication by $i$ is the block $J=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$; the alternating matrix is $\Omega=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$, so $\Omega=-J$ blockwise. On $\mathbb{C}^2$ read as a complex vector space, multiplication by $i$ is $i\mathrm I_2$, of complex determinant $i^{2}=-1$, and that is the operation which appears in the anti-invariance law. The two uses of $J$ — blockwise and complex — are kept apart below, and the distinction matters at exactly one place, the last row of the table of worked instances.</p>
+<p><strong>The named matrices.</strong> On a single real coordinate pair $(q,q')$ the multiplication by $i$ is the block $J=\left(\begin{smallmatrix}0&amp;-1\\1&amp;0\end{smallmatrix}\right)$; the alternating matrix is $\Omega=\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$, so $\Omega=-J$ blockwise. On $\mathbb{C}^2$ read as a complex vector space, multiplication by $i$ is $i\mathrm I_2$, of complex determinant $i^{2}=-1$, and that is the operation which appears in the anti-invariance law. The two uses of $J$ — blockwise and complex — are kept apart below, and the distinction matters at exactly one place, the last row of the table of worked instances.</p>
 <p><strong>Real and imaginary parts are taken coefficientwise</strong>, on a complex number that is the value of a form. They are real-valued forms on the real four-space.</p>
 <h2 id="what-math55-is-said-three-ways">What $\omega$ Is, Said Three Ways</h2>
 <p><strong>The definition.</strong></p>
@@ -91,7 +91,7 @@
 $$</p>
 <p><strong>First reading: it is a determinant.</strong> Let $M$ be the $2\times2$ matrix whose two rows are $Q_1$ and $Q_2$,</p>
 <p>$$
-M=\begin{pmatrix}Q_{1\blacktriangle}&Q_{1\blacktriangledown}\\ Q_{2\blacktriangle}&Q_{2\blacktriangledown}\end{pmatrix}.
+M=\begin{pmatrix}Q_{1\blacktriangle}&amp;Q_{1\blacktriangledown}\\ Q_{2\blacktriangle}&amp;Q_{2\blacktriangledown}\end{pmatrix}.
 $$</p>
 <p>Then $\omega(Q_1,Q_2)=\det M$. The first term of the definition is the product of the diagonal of $M$ and the second is the product of the antidiagonal, so the definition <em>is</em> the Leibniz formula in two dimensions. This reading is the reason $\omega$ measures area and the reason $\omega(Q,Q)=0$: the rows of $M$ coincide.</p>
 <p><strong>Second reading: it is a two-form.</strong> Write $\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$ and evaluate the wedge product on the pair of vectors $Q_1,Q_2$ in the sense</p>
@@ -135,8 +135,8 @@ $$</p>
 <p><strong>The expansion onto real coordinates.</strong> Put $Q_1=(a+ib,\,c+id)$ and $Q_2=(e+if,\,g+ih)$ with real $a,b,c,d,e,f,g,h$. Then</p>
 <p>$$
 \begin{aligned}
-\omega(Q_1,Q_2)&=(a+ib)(g+ih)-(c+id)(e+if)\\
-&=\bigl(ag-bh-ce+df\bigr)+i\bigl(ah+bg-cf-de\bigr).
+\omega(Q_1,Q_2)&amp;=(a+ib)(g+ih)-(c+id)(e+if)\\
+&amp;=\bigl(ag-bh-ce+df\bigr)+i\bigl(ah+bg-cf-de\bigr).
 \end{aligned}
 $$</p>
 <p><strong>The real and imaginary parts are two real symplectic forms.</strong></p>
@@ -204,19 +204,19 @@ $$</p>
 <td>$(1,0)$</td>
 <td>$(0,1)$</td>
 <td>$1$</td>
-<td>$\det\left(\begin{smallmatrix}1&0\\0&1\end{smallmatrix}\right)=1$</td>
+<td>$\det\left(\begin{smallmatrix}1&amp;0\\0&amp;1\end{smallmatrix}\right)=1$</td>
 </tr>
 <tr>
 <td>$(0,1)$</td>
 <td>$(1,0)$</td>
 <td>$-1$</td>
-<td>$\det\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)=-1$</td>
+<td>$\det\left(\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}\right)=-1$</td>
 </tr>
 <tr>
 <td>$(2,3)$</td>
 <td>$(0,1)$</td>
 <td>$2$</td>
-<td>$\det\left(\begin{smallmatrix}2&3\\0&1\end{smallmatrix}\right)=2$</td>
+<td>$\det\left(\begin{smallmatrix}2&amp;3\\0&amp;1\end{smallmatrix}\right)=2$</td>
 </tr>
 <tr>
 <td>$(2,3)$</td>
@@ -309,7 +309,7 @@ $$</p>
 <h3 id="the-math223-complex-image">The $2\times2$ Complex Image</h3>
 <p><strong>The identity.</strong> For every pair,</p>
 <p>$$
-\omega(Q_1,Q_2)=Q_1^{\mathsf T}\,\Omega\,Q_2,\qquad \Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\omega(Q_1,Q_2)=Q_1^{\mathsf T}\,\Omega\,Q_2,\qquad \Omega=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},
 $$</p>
 <p>verified exactly. Expanding the right side gives $Q_{1\blacktriangle}\cdot 0\cdot Q_{2\blacktriangle}+Q_{1\blacktriangle}\cdot1\cdot Q_{2\blacktriangledown}+Q_{1\blacktriangledown}\cdot(-1)\cdot Q_{2\blacktriangle}+Q_{1\blacktriangledown}\cdot 0\cdot Q_{2\blacktriangledown}$, which is the definition.</p>
 <p><strong>The four elementary properties of $\Omega$, each one a property of $\omega$.</strong></p>
@@ -339,10 +339,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The Pfaffian is the invariant scalar.</strong> For a $2\times2$ alternating matrix $A=\left(\begin{smallmatrix}0&a\\-a&0\end{smallmatrix}\right)$ the Pfaffian is $a$ and $\det A=a^{2}=\operatorname{Pf}(A)^{2}$. So the scalar invariant of an alternating form in two dimensions is not the determinant, which is a square, but its square root, the Pfaffian. Changing basis multiplies $\Omega$ by $\det S$ and multiplies the Pfaffian by $\det S$ as well, not by its square, which is why the Pfaffian is the natural normalisation and why the symplectic group must have determinant one: a form preserved up to the Pfaffian forces $\det g=1$.</p>
+<p><strong>The Pfaffian is the invariant scalar.</strong> For a $2\times2$ alternating matrix $A=\left(\begin{smallmatrix}0&amp;a\\-a&amp;0\end{smallmatrix}\right)$ the Pfaffian is $a$ and $\det A=a^{2}=\operatorname{Pf}(A)^{2}$. So the scalar invariant of an alternating form in two dimensions is not the determinant, which is a square, but its square root, the Pfaffian. Changing basis multiplies $\Omega$ by $\det S$ and multiplies the Pfaffian by $\det S$ as well, not by its square, which is why the Pfaffian is the natural normalisation and why the symplectic group must have determinant one: a form preserved up to the Pfaffian forces $\det g=1$.</p>
 <p><strong>The Pauli image.</strong> The matrix $\Omega$ is minus the Pauli image of the unit $\vec e_y$:</p>
 <p>$$
-\mathsf M_2(\vec e_y)=-i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-\Omega ,
+\mathsf M_2(\vec e_y)=-i\sigma_2=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}=-\Omega ,
 $$</p>
 <p>verified entry by entry. Two checks travel with the identity. The determinant is $\det\mathsf M_2(\vec e_y)=1=N(\vec e_y)$, consistent with the corpus's $\det\mathsf M_2=N$. And $\vec e_y$ is the axis of the corpus's charge conjugation $\mathcal{C}[\tilde\Xi]=-\vec e_y\tilde\Xi^{*}\vec e_y$, which the Duo-Complex Bridge identifies with $\omega$ composed with conjugation; so the matrix of the alternating form is minus the Pauli image of the axis that carries charge conjugation. The identity $\mathsf M_2(\vec e_y)=-\Omega$ is exact and is a computation; the reading of it as physical belongs to the corpus and is recorded here as an observation.</p>
 <h3 id="the-musical-map">The Musical Map</h3>
@@ -351,7 +351,7 @@ $$</p>
 \omega(Q_1,X)=-Q_{1\blacktriangledown}X_{\blacktriangle}+Q_{1\blacktriangle}X_{\blacktriangledown},\qquad\text{so}\qquad Q_1\mapsto\bigl(-Q_{1\blacktriangledown},\;Q_{1\blacktriangle}\bigr).
 $$</p>
 <p>Worked: $Q_1=(3,5)$ gives the covector $(-5,3)$, and its value on $X=(1,0)$ is $-5$, which is $\omega((3,5),(1,0))=3\cdot0-5\cdot1=-5$.</p>
-<p><strong>The inverse map and the bivector.</strong> The matrix of the inverse map is $\Omega^{-1}=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)=-\Omega$, since $\Omega^{2}=-\mathrm I$. That inverse is the bivector of the form. The bracket is built from it, with the overall sign fixed once and for all by the convention that $Q_{\blacktriangle}$ plays the role of position and $Q_{\blacktriangledown}$ the role of momentum:</p>
+<p><strong>The inverse map and the bivector.</strong> The matrix of the inverse map is $\Omega^{-1}=\left(\begin{smallmatrix}0&amp;-1\\1&amp;0\end{smallmatrix}\right)=-\Omega$, since $\Omega^{2}=-\mathrm I$. That inverse is the bivector of the form. The bracket is built from it, with the overall sign fixed once and for all by the convention that $Q_{\blacktriangle}$ plays the role of position and $Q_{\blacktriangledown}$ the role of momentum:</p>
 <p>$$
 \{f,g\}=\partial_{\blacktriangle}f\,\partial_{\blacktriangledown}g-\partial_{\blacktriangledown}f\,\partial_{\blacktriangle}g .
 $$</p>
@@ -359,23 +359,23 @@ $$</p>
 <h3 id="the-math271-image-on-the-real-coordinates">The $4\times4$ Image on the Real Coordinates</h3>
 <p><strong>The full array.</strong> In the real basis $e_1,ie_1,e_2,ie_2$ and with the form read on the complex values, the matrix is</p>
 <p>$$
-\Omega_{\mathbb{R}}=\begin{pmatrix}0&0&1&i\\ 0&0&i&-1\\ -1&-i&0&0\\ -i&1&0&0\end{pmatrix}.
+\Omega_{\mathbb{R}}=\begin{pmatrix}0&amp;0&amp;1&amp;i\\ 0&amp;0&amp;i&amp;-1\\ -1&amp;-i&amp;0&amp;0\\ -i&amp;1&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Its four independent entries are read from the basis table above: $\omega(e_1,e_2)=1$, $\omega(e_1,ie_2)=i$, $\omega(ie_1,e_2)=i$, $\omega(ie_1,ie_2)=-1$, up to alternation.</p>
 <p><strong>Its real part.</strong></p>
 <p>$$
-\operatorname{Re}\Omega_{\mathbb{R}}=\begin{pmatrix}0&0&1&0\\ 0&0&0&-1\\ -1&0&0&0\\ 0&1&0&0\end{pmatrix}=\begin{pmatrix}0&A\\ -A&0\end{pmatrix},\qquad A=\operatorname{diag}(1,-1).
+\operatorname{Re}\Omega_{\mathbb{R}}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\ 0&amp;0&amp;0&amp;-1\\ -1&amp;0&amp;0&amp;0\\ 0&amp;1&amp;0&amp;0\end{pmatrix}=\begin{pmatrix}0&amp;A\\ -A&amp;0\end{pmatrix},\qquad A=\operatorname{diag}(1,-1).
 $$</p>
 <p><strong>Its imaginary part.</strong></p>
 <p>$$
-\operatorname{Im}\Omega_{\mathbb{R}}=\begin{pmatrix}0&0&0&1\\ 0&0&1&0\\ 0&-1&0&0\\ -1&0&0&0\end{pmatrix}=\begin{pmatrix}0&B\\ -B&0\end{pmatrix},\qquad B=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}.
+\operatorname{Im}\Omega_{\mathbb{R}}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\ 0&amp;0&amp;1&amp;0\\ 0&amp;-1&amp;0&amp;0\\ -1&amp;0&amp;0&amp;0\end{pmatrix}=\begin{pmatrix}0&amp;B\\ -B&amp;0\end{pmatrix},\qquad B=\begin{pmatrix}0&amp;1\\ 1&amp;0\end{pmatrix}.
 $$</p>
 <p>The two match the table of real pictures in <a href="../articles_maths/the-three-canonical-forms-on-c2.html">The Three Canonical Forms on $\mathbb{C}^2$</a>. Both blocks are alternating and both have rank $4$; the rank was recomputed for each.</p>
 <p><strong>Why the real part is a difference of two coordinate areas.</strong> $\operatorname{Re}\omega$ pairs $q_{\blacktriangle}$ with $q_{\blacktriangledown}$ with the sign $+1$ and $q'_{\blacktriangle}$ with $q'_{\blacktriangledown}$ with the sign $-1$. It is therefore the area in the two real planes with opposite orientations. That is the real picture of the complex value: the real part sees the real part of the determinant and the imaginary part sees the cross terms.</p>
 <h3 id="the-math289-image-on-the-tensor-square">The $4\times4$ Image on the Tensor Square</h3>
 <p><strong>The array.</strong> On $\mathbb{C}^2\otimes\mathbb{C}^2$ with basis ordered $e_1\otimes e_1,e_1\otimes e_2,e_2\otimes e_1,e_2\otimes e_2$, the matrix of the bilinear form $\omega\otimes\omega$ is the Kronecker product</p>
 <p>$$
-\Omega\otimes\Omega=\begin{pmatrix}0&0&0&1\\ 0&0&-1&0\\ 0&-1&0&0\\ 1&0&0&0\end{pmatrix}.
+\Omega\otimes\Omega=\begin{pmatrix}0&amp;0&amp;0&amp;1\\ 0&amp;0&amp;-1&amp;0\\ 0&amp;-1&amp;0&amp;0\\ 1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>It is symmetric.</strong> $(\Omega\otimes\Omega)^{\mathsf T}=\Omega^{\mathsf T}\otimes\Omega^{\mathsf T}=(-\Omega)\otimes(-\Omega)=\Omega\otimes\Omega$. So the tensor square of an alternating form at two factors is a <em>symmetric</em> form: the two sign flips cancel. That single line is the reason a quadratic entanglement measure exists at two qubits and not at one.</p>
 <p><strong>Its characteristic polynomial is $(\lambda^{2}-1)^{2}$.</strong> The power sums are $p_1=0$, $p_2=4$, $p_3=0$, $p_4=16$, and the determinant is $1$; Newton's identities give $\lambda^{4}-2\lambda^{2}+1$. So the eigenvalues are $+1$ and $-1$ with multiplicity two each, and the inertia is $(2,2)$. This is the same inertia the corpus records for the concurrence form, and it is not an accident of the Bell basis: it is the eigenvalue list of $\Omega\otimes\Omega$.</p>
@@ -410,9 +410,9 @@ $$</p>
 <h3 id="the-image-in-the-null-coordinates">The Image in the Null Coordinates</h3>
 <p><strong>The array.</strong> In the null basis, ordered $e_u,e_v$, the form has matrix</p>
 <p>$$
-\tfrac{i}{2}\,\Omega=\begin{pmatrix}0&i/2\\ -i/2&0\end{pmatrix},
+\tfrac{i}{2}\,\Omega=\begin{pmatrix}0&amp;i/2\\ -i/2&amp;0\end{pmatrix},
 $$</p>
-<p>read from $\omega(e_u,e_v)=i/2$. In the same basis $B$ has matrix $\tfrac12\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$. So in the null coordinates the alternating array is $i$ times the antisymmetric part of the symmetric one, and the factor $i/2$ of the one is the antisymmetrisation of the factor $1/2$ of the other. That is the matrix form of the Lagrange identity.</p>
+<p>read from $\omega(e_u,e_v)=i/2$. In the same basis $B$ has matrix $\tfrac12\left(\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}\right)$. So in the null coordinates the alternating array is $i$ times the antisymmetric part of the symmetric one, and the factor $i/2$ of the one is the antisymmetrisation of the factor $1/2$ of the other. That is the matrix form of the Lagrange identity.</p>
 <h2 id="calculus">Calculus</h2>
 <p><strong>The change-of-variables law, and it is the whole of the calculus.</strong> Let $A\in GL_2(\mathbb{C})$ act on points. Then</p>
 <p>$$
@@ -431,22 +431,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$, shear</td>
+<td>$\left(\begin{smallmatrix}1&amp;1\\0&amp;1\end{smallmatrix}\right)$, shear</td>
 <td>$1$</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}2&0\\0&1/2\end{smallmatrix}\right)$, stretch</td>
+<td>$\left(\begin{smallmatrix}2&amp;0\\0&amp;1/2\end{smallmatrix}\right)$, stretch</td>
 <td>$1$</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}2&0\\0&3\end{smallmatrix}\right)$, dilation</td>
+<td>$\left(\begin{smallmatrix}2&amp;0\\0&amp;3\end{smallmatrix}\right)$, dilation</td>
 <td>$6$</td>
 <td>$6$</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$, swap</td>
+<td>$\left(\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}\right)$, swap</td>
 <td>$-1$</td>
 <td>$-1$</td>
 </tr>
@@ -489,7 +489,7 @@ $$</p>
 \operatorname{tr}\bigl(\Omega\,\operatorname{Hess}H\bigr)=\sum_{j,k}\Omega_{jk}\,\partial_j\partial_kH=0,
 $$</p>
 <p>because $\Omega$ is alternating and the Hessian is symmetric, so the sum pairs each term with its negative. By the infinitesimal law the area is preserved. This is the standard proof written in these coordinates, and it is the reason classical mechanics is symplectic.</p>
-<p><strong>A worked flow.</strong> For $H=\tfrac12(Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2})$ the equations are $\dot Q_{\blacktriangle}=Q_{\blacktriangledown}$, $\dot Q_{\blacktriangledown}=-Q_{\blacktriangle}$, whose flow is the rotation $Q(t)=\left(\begin{smallmatrix}\cos t&\sin t\\-\sin t&\cos t\end{smallmatrix}\right)Q(0)$, of determinant $1$. A direct evaluation of $\omega(Q_1(t),Q_2(t))$ against $\omega(Q_1(0),Q_2(0))$ on a hundred random pairs and three values of $t$ gave agreement to $1.8\times10^{-15}$. The flow is a one-parameter subgroup of $SL_2(\mathbb{C})$, as the trace-zero generator requires.</p>
+<p><strong>A worked flow.</strong> For $H=\tfrac12(Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2})$ the equations are $\dot Q_{\blacktriangle}=Q_{\blacktriangledown}$, $\dot Q_{\blacktriangledown}=-Q_{\blacktriangle}$, whose flow is the rotation $Q(t)=\left(\begin{smallmatrix}\cos t&amp;\sin t\\-\sin t&amp;\cos t\end{smallmatrix}\right)Q(0)$, of determinant $1$. A direct evaluation of $\omega(Q_1(t),Q_2(t))$ against $\omega(Q_1(0),Q_2(0))$ on a hundred random pairs and three values of $t$ gave agreement to $1.8\times10^{-15}$. The flow is a one-parameter subgroup of $SL_2(\mathbb{C})$, as the trace-zero generator requires.</p>
 <p><strong>Two observations that follow, and are offered as observations.</strong></p>
 <ul>
 <li><strong>The two coordinates of a duo-complex number are canonically conjugate.</strong> With $q=Q_{\blacktriangle}$ and $p=Q_{\blacktriangledown}$ one has $\omega=dq\wedge dp$ and $\{q,p\}=1$. So the alternating form of the duo-complex space <em>is</em> the canonical symplectic form of one degree of freedom, once the two coordinates are named position and momentum. The corpus's <em>Symplectic Forms and Poisson Brackets</em> is the general theory; this is the two-dimensional instance.</li>
@@ -505,7 +505,7 @@ $$</p>
 <p>$$
 A^{\mathsf T}\Omega A=(\det A)\,\Omega .
 $$</p>
-<p>For $A=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$ the left side has entries $A^{\mathsf T}\Omega A=\left(\begin{smallmatrix}0&ad-bc\\-(ad-bc)&0\end{smallmatrix}\right)$, which is the right side identically. So the condition is the definition of the determinant and nothing further; there is no extra equation. The three-parameter family is the whole of it.</p>
+<p>For $A=\left(\begin{smallmatrix}a&amp;b\\c&amp;d\end{smallmatrix}\right)$ the left side has entries $A^{\mathsf T}\Omega A=\left(\begin{smallmatrix}0&amp;ad-bc\\-(ad-bc)&amp;0\end{smallmatrix}\right)$, which is the right side identically. So the condition is the definition of the determinant and nothing further; there is no extra equation. The three-parameter family is the whole of it.</p>
 <p><strong>Three one-parameter subgroups, each with its generator.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -518,25 +518,25 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)$</td>
-<td>$\left(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}1&amp;t\\0&amp;1\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;1\\0&amp;0\end{smallmatrix}\right)$</td>
 <td>$0$</td>
 <td>shears, preserves</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}e^{t}&0\\0&e^{-t}\end{smallmatrix}\right)$</td>
-<td>$\left(\begin{smallmatrix}1&0\\0&-1\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}e^{t}&amp;0\\0&amp;e^{-t}\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}1&amp;0\\0&amp;-1\end{smallmatrix}\right)$</td>
 <td>$0$</td>
 <td>stretches one axis, squeezes the other, preserves</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}\cos t&\sin t\\-\sin t&\cos t\end{smallmatrix}\right)$</td>
-<td>$\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)=\Omega$</td>
+<td>$\left(\begin{smallmatrix}\cos t&amp;\sin t\\-\sin t&amp;\cos t\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)=\Omega$</td>
 <td>$0$</td>
 <td>rotates, preserves</td>
 </tr>
 <tr>
-<td>$\left(\begin{smallmatrix}e^{t}&0\\0&e^{t}\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}e^{t}&amp;0\\0&amp;e^{t}\end{smallmatrix}\right)$</td>
 <td>$\mathrm I_2$</td>
 <td>$2$</td>
 <td>dilates area by $e^{2t}$, does not preserve</td>
@@ -599,7 +599,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The sum is $2c_{00}c_{11}-2c_{01}c_{10}=2\det c$. With $c=\left(\begin{smallmatrix}2&3\\5&7\end{smallmatrix}\right)$ the four terms are $+14,-15,-15,+14$, summing to $-2$, and $2\det c=2(14-15)=-2$. So the factor two is the two orderings of the two index families, counted separately, and it is not a normalisation.</p>
+<p>The sum is $2c_{00}c_{11}-2c_{01}c_{10}=2\det c$. With $c=\left(\begin{smallmatrix}2&amp;3\\5&amp;7\end{smallmatrix}\right)$ the four terms are $+14,-15,-15,+14$, summing to $-2$, and $2\det c=2(14-15)=-2$. So the factor two is the two orderings of the two index families, counted separately, and it is not a normalisation.</p>
 <p><strong>The identity.</strong></p>
 <p>$$
 \boxed{\;\omega\otimes\omega(\psi,\psi)=2\det c\;}
@@ -618,19 +618,19 @@ $$</p>
 <tbody>
 <tr>
 <td>$\lvert00\rangle$</td>
-<td>$\left(\begin{smallmatrix}1&0\\0&0\end{smallmatrix}\right)$</td>
+<td>$\left(\begin{smallmatrix}1&amp;0\\0&amp;0\end{smallmatrix}\right)$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>$\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$</td>
-<td>$\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$</td>
+<td>$\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$</td>
 <td>$+1$</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$c=\left(\begin{smallmatrix}1&2i\\3&1\end{smallmatrix}\right)$ normalised</td>
-<td>$\tfrac{1}{\sqrt{15}}\left(\begin{smallmatrix}1&2i\\3&1\end{smallmatrix}\right)$</td>
+<td>$c=\left(\begin{smallmatrix}1&amp;2i\\3&amp;1\end{smallmatrix}\right)$ normalised</td>
+<td>$\tfrac{1}{\sqrt{15}}\left(\begin{smallmatrix}1&amp;2i\\3&amp;1\end{smallmatrix}\right)$</td>
 <td>$(2-12i)/15$</td>
 <td>$2\sqrt{37}/15\approx0.811$</td>
 </tr>
@@ -736,7 +736,7 @@ $$</p>
 <p><strong>Not the volume form.</strong> The volume form is $\omega\wedge\overline{\omega}$, real and of top degree; $\omega$ itself is a holomorphic two-form whose square vanishes. Confusing the two gives a factor of $2\Omega^{2}$ and a wrong sign.</p>
 <h2 id="summary">Summary</h2>
 <p>The alternating form $\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$ is the determinant of the two vectors read as rows, the two-form $dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$, and the Levi-Civita contraction $\varepsilon_{jk}Q_1^{\,j}Q_2^{\,k}$; the three are one formula. On the real coordinates it splits into the two real symplectic forms $\operatorname{Re}\omega=dq_{\blacktriangle}\wedge dq_{\blacktriangledown}-dq'_{\blacktriangle}\wedge dq'_{\blacktriangledown}$ and $\operatorname{Im}\omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangledown}+dq'_{\blacktriangle}\wedge dq_{\blacktriangledown}$, each of rank $4$. It vanishes on every diagonal pair, on every complex line, and on every dependent pair; the converse of the last is a theorem. In the null coordinates it is $\tfrac{i}{2}(u_1v_2-v_1u_2)$. Its modulus is the Euclidean area of the parallelogram in $\mathbb{R}^{4}$, and the Lagrange identity $B^{2}+\omega^{2}=B(Q_1,Q_1)B(Q_2,Q_2)$ ties it to the symmetric form.</p>
-<p>Its four matrix images are $\Omega=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ on the complex components, with $\det\Omega=1$, $\operatorname{Pf}\Omega=1$, $\Omega^{2}=-\mathrm I$ and $\Omega=-\mathsf M_2(\vec e_y)$, the last being minus the Pauli image of the charge-conjugation axis; the real $4\times4$ array $\Omega_{\mathbb{R}}$ with real and imaginary parts $\left(\begin{smallmatrix}0&A\\-A&0\end{smallmatrix}\right)$ and $\left(\begin{smallmatrix}0&B\\-B&0\end{smallmatrix}\right)$; the symmetric Kronecker product $\Omega\otimes\Omega=\left(\begin{smallmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{smallmatrix}\right)$ with characteristic polynomial $(\lambda^{2}-1)^{2}$ and Bell eigenvectors; and $\tfrac{i}{2}\Omega$ in the null basis. The musical map $Q\mapsto\omega(Q,\cdot)$ sends $Q$ to $(-Q_{\blacktriangledown},Q_{\blacktriangle})$ and its inverse $-\Omega$ is the bivector of the Poisson bracket, in which $\{Q_{\blacktriangle},Q_{\blacktriangledown}\}=1$.</p>
+<p>Its four matrix images are $\Omega=\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$ on the complex components, with $\det\Omega=1$, $\operatorname{Pf}\Omega=1$, $\Omega^{2}=-\mathrm I$ and $\Omega=-\mathsf M_2(\vec e_y)$, the last being minus the Pauli image of the charge-conjugation axis; the real $4\times4$ array $\Omega_{\mathbb{R}}$ with real and imaginary parts $\left(\begin{smallmatrix}0&amp;A\\-A&amp;0\end{smallmatrix}\right)$ and $\left(\begin{smallmatrix}0&amp;B\\-B&amp;0\end{smallmatrix}\right)$; the symmetric Kronecker product $\Omega\otimes\Omega=\left(\begin{smallmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{smallmatrix}\right)$ with characteristic polynomial $(\lambda^{2}-1)^{2}$ and Bell eigenvectors; and $\tfrac{i}{2}\Omega$ in the null basis. The musical map $Q\mapsto\omega(Q,\cdot)$ sends $Q$ to $(-Q_{\blacktriangledown},Q_{\blacktriangle})$ and its inverse $-\Omega$ is the bivector of the Poisson bracket, in which $\{Q_{\blacktriangle},Q_{\blacktriangledown}\}=1$.</p>
 <p>The calculus is one law, $\omega(AQ_1,AQ_2)=(\det A)\omega(Q_1,Q_2)$, because the space of alternating forms is one-dimensional. Its infinitesimal form is the trace, the derivative of the determinant is $\det A\operatorname{tr}(A^{-1}B)$, the pullback under a holomorphic map is the complex Jacobian, and the form is exact, so closed. Every Hamiltonian flow is trace-free, hence preserves $\omega$, and the harmonic-oscillator flow was checked to $10^{-15}$. The isometry group is $SL_2(\mathbb{C})$, three complex dimensional; with the two coordinates of a duo-complex number taken as position and momentum, the form is the canonical symplectic form of one degree of freedom.</p>
 <p>At two factors the sixteen-term expansion collapses to four terms and sums to $2\det c$, whose modulus is the concurrence; the matrix is $\Omega\otimes\Omega$ with eigenvalues $\pm1$ twice, so the inertia is $(2,2)$ and the form is independent of the quaternionic norm of inertia $(4,0)$. The parity rule $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes the odd powers alternating, hence zero on the diagonal, which is why no degree-two entanglement invariant exists at three qubits. $\omega$ is not $\operatorname{Im}H$, not a metric, not $B$, not the concurrence, and not the volume form.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -753,7 +753,7 @@ $$</p>
 <td>the alternating form; the determinant of the two vectors as rows</td>
 </tr>
 <tr>
-<td>$\Omega=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$</td>
+<td>$\Omega=\left(\begin{smallmatrix}0&amp;1\\-1&amp;0\end{smallmatrix}\right)$</td>
 <td>its $2\times2$ matrix; $\Omega^{\mathsf T}=-\Omega$, $\det\Omega=1$, $\operatorname{Pf}\Omega=1$, $\Omega^{2}=-\mathrm I_2$</td>
 </tr>
 <tr>
@@ -766,7 +766,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega_{\mathbb{R}}$</td>
-<td>the $4\times4$ complex array on the real basis, with the blocks $A=\operatorname{diag}(1,-1)$ and $B=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$</td>
+<td>the $4\times4$ complex array on the real basis, with the blocks $A=\operatorname{diag}(1,-1)$ and $B=\left(\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}\right)$</td>
 </tr>
 <tr>
 <td>$\Omega\otimes\Omega$</td>

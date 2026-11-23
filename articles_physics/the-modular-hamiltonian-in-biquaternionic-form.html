@@ -87,7 +87,7 @@ and the KMS state of <em>The KMS Condition and the Biquaternion Framework</em> i
 <p>The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\mathcal{M}_{\mathrm{mod}}$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde H_{\Psi,\mathrm{modular}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde H_{\Psi,\mathrm{modular}}$ to $\tilde H_\Psi$. This article does three things the parents do not. It defines $\tilde H_{\Psi,\mathrm{modular}}$ from $\mathcal{M}_{\mathrm{mod}}$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\mathcal{M}_{\mathrm{mod}}$, and the <strong>strict positivity</strong> of $\mathcal{M}_{\mathrm{mod}}$, without which $-\log\mathcal{M}_{\mathrm{mod}}$ does not exist. It fixes the <strong>sign convention</strong> in $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and holds it, because the sign of $\tilde H_{\Psi,\mathrm{modular}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde H_{\Psi,\mathrm{modular}}$ is a <strong>local</strong> operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).</p>
 <p>Three features organize what follows.</p>
 <ul>
-<li><strong>$\tilde H_{\Psi,\mathrm{modular}}$ exists only when $\mathcal{M}_{\mathrm{mod}}$ does.</strong> Its construction inherits the whole hypothesis of the Tomita–Takesaki theorem — $\Omega$ cyclic and separating for $M$, equivalently the state faithful — and does not assume it afresh. Positivity of $\mathcal{M}_{\mathrm{mod}}$ is where that hypothesis reappears spectrally: $\mathcal{M}_{\mathrm{mod}}=S^*S\ge 0$ is automatic, but $\mathcal{M}_{\mathrm{mod}}>0$ is the faithfulness condition, and $-\log\mathcal{M}_{\mathrm{mod}}$ is defined precisely then.</li>
+<li><strong>$\tilde H_{\Psi,\mathrm{modular}}$ exists only when $\mathcal{M}_{\mathrm{mod}}$ does.</strong> Its construction inherits the whole hypothesis of the Tomita–Takesaki theorem — $\Omega$ cyclic and separating for $M$, equivalently the state faithful — and does not assume it afresh. Positivity of $\mathcal{M}_{\mathrm{mod}}$ is where that hypothesis reappears spectrally: $\mathcal{M}_{\mathrm{mod}}=S^*S\ge 0$ is automatic, but $\mathcal{M}_{\mathrm{mod}}&gt;0$ is the faithfulness condition, and $-\log\mathcal{M}_{\mathrm{mod}}$ is defined precisely then.</li>
 <li><strong>$-\log\mathcal{M}_{\mathrm{mod}}$ is well defined only because $\mathcal{M}_{\mathrm{mod}}$ is positive.</strong> The spectral theorem gives $\log\mathcal{M}_{\mathrm{mod}}$ for a positive self-adjoint operator; at an eigenvalue $0$ the logarithm diverges and no $\tilde H_{\Psi,\mathrm{modular}}$ exists. The check is not a formality, and the finite-dimensional model exhibits the failure.</li>
 <li><strong>Locality of $\tilde H_{\Psi,\mathrm{modular}}$ is a question with a known exceptional answer.</strong> In a quantum field theory the modular Hamiltonian of a region is generically a nonlocal operator; it is local (a geometric generator) in the cases covered by Bisognano–Wichmann and its conformal extension. The biquaternion framework houses the wedge case, because the boost generator is a Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$; it does not house the ball case, because the special conformal generators are not elements of $\mathbb{B}$.</li>
 </ul>
@@ -118,10 +118,10 @@ The last identity is the statement that the modular flow is Hamiltonian evolutio
 <p><strong>Cyclic and separating.</strong> The Tomita operator $S_0(A\Omega)=A^*\Omega$ is well defined precisely when $\Omega$ is separating, and densely defined precisely when $\Omega$ is cyclic. Without both, the polar decomposition $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$ — hence $\mathcal{M}_{\mathrm{mod}}$, hence $\tilde H_{\Psi,\mathrm{modular}}$ — does not exist. In the GNS representation, cyclic and separating is equivalent to the state being <strong>faithful</strong>. So defining a modular Hamiltonian is defining it for a faithful state, and nothing here weakens that requirement.</p>
 <p><strong>Positivity of $\mathcal{M}_{\mathrm{mod}}$.</strong> The identity $\mathcal{M}_{\mathrm{mod}}=S^*S$ makes $\mathcal{M}_{\mathrm{mod}}\ge0$ automatic, but $-\log\mathcal{M}_{\mathrm{mod}}$ exists only if $\mathcal{M}_{\mathrm{mod}}$ is <strong>strictly</strong> positive,
 $$
-\mathcal{M}_{\mathrm{mod}}>0 \quad\Longleftrightarrow\quad \ker\mathcal{M}_{\mathrm{mod}}=\{0\}.
+\mathcal{M}_{\mathrm{mod}}&gt;0 \quad\Longleftrightarrow\quad \ker\mathcal{M}_{\mathrm{mod}}=\{0\}.
 $$
-The kernel of $\mathcal{M}_{\mathrm{mod}}$ equals the kernel of $S$, so $\mathcal{M}_{\mathrm{mod}}>0$ is again the faithfulness hypothesis: a non-faithful state gives $\mathcal{M}_{\mathrm{mod}}$ a zero eigenvalue, and at that eigenvalue $-\log\mathcal{M}_{\mathrm{mod}}$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\mathcal{M}_{\mathrm{mod}}$ rather than off the vector. Section "Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow" exhibits the failure explicitly.</p>
-<p><strong>Self-adjointness and unitarity.</strong> Because $\mathcal{M}_{\mathrm{mod}}>0$, the spectral theorem gives a self-adjoint $\log\mathcal{M}_{\mathrm{mod}}$ and hence a self-adjoint $\tilde H_{\Psi,\mathrm{modular}}$; the $*$-unitary group $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})=\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is then well defined for all real $r'_t$, and $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is $*$-unitary. The flow $\sigma_{r'_{t}}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde H_{\Psi,\mathrm{modular}}$ is the self-adjoint generator of the $*$-unitary group that implements it.</p>
+The kernel of $\mathcal{M}_{\mathrm{mod}}$ equals the kernel of $S$, so $\mathcal{M}_{\mathrm{mod}}&gt;0$ is again the faithfulness hypothesis: a non-faithful state gives $\mathcal{M}_{\mathrm{mod}}$ a zero eigenvalue, and at that eigenvalue $-\log\mathcal{M}_{\mathrm{mod}}$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\mathcal{M}_{\mathrm{mod}}$ rather than off the vector. Section "Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow" exhibits the failure explicitly.</p>
+<p><strong>Self-adjointness and unitarity.</strong> Because $\mathcal{M}_{\mathrm{mod}}&gt;0$, the spectral theorem gives a self-adjoint $\log\mathcal{M}_{\mathrm{mod}}$ and hence a self-adjoint $\tilde H_{\Psi,\mathrm{modular}}$; the $*$-unitary group $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})=\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is then well defined for all real $r'_t$, and $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is $*$-unitary. The flow $\sigma_{r'_{t}}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde H_{\Psi,\mathrm{modular}}$ is the self-adjoint generator of the $*$-unitary group that implements it.</p>
 <h3 id="the-sign-convention-fixed-and-held">The Sign Convention, Fixed and Held</h3>
 <p>The relation between $\mathcal{M}_{\mathrm{mod}}$ and $\tilde H_{\Psi,\mathrm{modular}}$ is a convention, and the two choices are inequivalent. This article uses
 $$
@@ -156,7 +156,7 @@ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive definite and normalised, a
 $$
 \langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big).
 $$
-The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde{Ϛ}_{\Psi}>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde Q_3)=\tilde Q_3^{*}$ in closed form:
+The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde{Ϛ}_{\Psi}&gt;0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde Q_3)=\tilde Q_3^{*}$ in closed form:
 $$
 \mathcal{M}_{\mathrm{mod}}(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}},
 \qquad
@@ -166,7 +166,7 @@ J(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde Q_3^{*}e^{\tilde H_{
 \qquad
 \sigma_{r'_{t}}(\tilde Q_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}.
 $$
-Since $\tilde{Ϛ}_{\Psi}>0$, its logarithm is defined and
+Since $\tilde{Ϛ}_{\Psi}&gt;0$, its logarithm is defined and
 $$
 \boxed{\;\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\ \in\mathbb{B}_{\Psi}\;}
 $$
@@ -178,7 +178,7 @@ That $\tilde H_{\Psi,\mathrm{modular}}$ lies in $\mathbb{B}_{\Psi}$ is the paren
 <h3 id="the-cartan-amplitude-and-the-modular-state">The Cartan Amplitude and the Modular State</h3>
 <p>A faithful state is positive, so its own Cartan pairing is trivial: $\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}\,e_t$, with amplitude $\tilde{Ϛ}_{\Psi}$ and phase $e_t$. The amplitude that carries the modular information is its square root. Write</p>
 <p>$$
-\tilde{Ϛ}_{\Psi}=\tilde Q_{\mathrm n}^{2},\qquad \tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}>0,
+\tilde{Ϛ}_{\Psi}=\tilde Q_{\mathrm n}^{2},\qquad \tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}&gt;0,
 \qquad
 \langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_{*}=\tfrac12,
 $$</p>
@@ -198,14 +198,14 @@ $$</p>
 $$</p>
 <p>which is the same conjugation as before. The amplitude is the operator whose logarithm generates the flow; the state has no Cartan phase, so the flow is the flow of the amplitude alone.</p>
 <p><strong>The reading.</strong> The modular Hamiltonian is minus twice the logarithm of the Cartan amplitude. A state has no Cartan phase; its amplitude is its square root, and its modular flow is the logarithm of that amplitude. This is the exact sense in which the Cartan amplitude is the modular square root, and it is the state-side counterpart of the operator-side statement that the amplitude is what remains when the phase is forgotten.</p>
-<p><strong>The boundary.</strong> The reading needs $\tilde{Ϛ}_{\Psi}>0$. At a pure state $\eta_{-}=0$, $\tilde Q_{\mathrm n}$ is rank one and not invertible, $\log\tilde Q_{\mathrm n}$ diverges, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist; the amplitude is still defined, but its logarithm is not. The modular conjugation is anti-unitary and is not the Cartan phase; the two objects must not be identified.</p>
+<p><strong>The boundary.</strong> The reading needs $\tilde{Ϛ}_{\Psi}&gt;0$. At a pure state $\eta_{-}=0$, $\tilde Q_{\mathrm n}$ is rank one and not invertible, $\log\tilde Q_{\mathrm n}$ diverges, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist; the amplitude is still defined, but its logarithm is not. The modular conjugation is anti-unitary and is not the Cartan phase; the two objects must not be identified.</p>
 <h3 id="the-spectral-form-of-math177">The Spectral Form of $\tilde H_{\Psi,\mathrm{modular}}$</h3>
 <p>Write the faithful state in Bloch form,
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\cdot\mathbf e\big),
-\qquad |\vec s_{\Psi}|<1,
+\qquad |\vec s_{\Psi}|&lt;1,
 \qquad
-\eta_{\pm}=\tfrac12\big(1\pm|\vec s_{\Psi}|\big)>0,
+\eta_{\pm}=\tfrac12\big(1\pm|\vec s_{\Psi}|\big)&gt;0,
 $$
 with $\eta_{+},\eta_{-}$ the eigenvalues of $\tilde{Ϛ}_{\Psi}$ and $\vec u_s=\vec s_{\Psi}/|\vec s_{\Psi}|$. Then
 $$
@@ -226,7 +226,7 @@ $$
 \operatorname{spec}\mathcal{M}_{\mathrm{mod}}=\Big\{\frac{\eta_i}{\eta_j}\Big\}
 =\Big\{1,\ \frac{\eta_{+}}{\eta_{-}},\ \frac{\eta_{-}}{\eta_{+}}\Big\},
 $$
-all strictly positive because $\eta_{\pm}>0$. This is the concrete form of $\mathcal{M}_{\mathrm{mod}}>0$.</p>
+all strictly positive because $\eta_{\pm}&gt;0$. This is the concrete form of $\mathcal{M}_{\mathrm{mod}}&gt;0$.</p>
 <h3 id="math199-generates-the-same-flow-as-math200">$\tilde H_{\Psi,\mathrm{modular}}$ Generates the Same Flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$</h3>
 <p>The two displays are equal, not merely analogous. From $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$,
 $$
@@ -243,7 +243,7 @@ $$
 $$
 which is the generator identity of the definition. So the $\tilde H_{\Psi,\mathrm{modular}}$ constructed from the state is the same operator that generates the flow constructed from the Tomita operator, and the check is a recomputation rather than a quotation.</p>
 <h2 id="verification-math207-generates-the-modular-flow">Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow</h2>
-<p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_\imath)=-i\sigma_\imath$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
+<p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \vec s_{\Psi}=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
 \qquad |\vec s_{\Psi}|^2=\tfrac{29}{100},
@@ -261,7 +261,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 <tbody>
 <tr>
 <td>$\mathcal{M}_{\mathrm{mod}}$ eigenvalues $\eta_{+}/\eta_{-}$, $\eta_{-}/\eta_{+}$</td>
-<td>$3.333849$, $0.299954$, both $>0$</td>
+<td>$3.333849$, $0.299954$, both $&gt;0$</td>
 </tr>
 <tr>
 <td>$\tilde H_{\Psi,\mathrm{modular}}$ Hermitian, components real</td>
@@ -349,7 +349,7 @@ $$
 \mathcal{M}_{\mathrm{mod}}=\exp(-2\pi G),
 $$
 where $G$ is the generator of the boosts that preserve the wedge, normalized to the boost parameter. The modular flow is the boost flow, by rapidity $2\pi s$ in the modular parameter; equivalently $\tilde H_{\Psi,\mathrm{modular},V}=2\pi G$. This is the one case in which $\tilde H_{\Psi,\mathrm{modular},V}$ is independently known, and the biquaternion framework houses it, as the next subsection shows.</li>
-<li><strong>Balls and spheres: the conformal extension.</strong> For a conformal field theory and a ball, the modular Hamiltonian is the generator of the conformal transformations that preserve the ball — a combination of the dilation and a special conformal transformation — and is again a local geometric operator. This is the Hislop–Longo theorem. The biquaternion framework does <strong>not</strong> house this case, because only the Lorentz generators $\vec e_\imath$, $B_{\mathrm{boost},k}=i\vec e_\imath$ and the (non-invertible) dilation are elements of $\mathbb{B}$, while the special conformal generators are not elements of the algebra at all, as the conformal-group companion establishes. The ball case's $\tilde H_{\Psi,\mathrm{modular},V}$ has a part that the algebra cannot represent.</li>
+<li><strong>Balls and spheres: the conformal extension.</strong> For a conformal field theory and a ball, the modular Hamiltonian is the generator of the conformal transformations that preserve the ball — a combination of the dilation and a special conformal transformation — and is again a local geometric operator. This is the Hislop–Longo theorem. The biquaternion framework does <strong>not</strong> house this case, because only the Lorentz generators $\vec e_{\imath}$, $B_{\mathrm{boost},k}=i\vec e_{\imath}$ and the (non-invertible) dilation are elements of $\mathbb{B}$, while the special conformal generators are not elements of the algebra at all, as the conformal-group companion establishes. The ball case's $\tilde H_{\Psi,\mathrm{modular},V}$ has a part that the algebra cannot represent.</li>
 <li><strong>Intervals in two dimensions.</strong> For the vacuum of a chiral or massless field on an interval, the modular Hamiltonian is again local, an integral of the stress tensor against a specific weight vanishing at the endpoints. This is a one-dimensional geometric case and is consistent with the conformal picture above.</li>
 </ul>
 <p>So "$\tilde H_{\Psi,\mathrm{modular}}$ is local exactly when the modular flow is geometric" is the structural statement, and the geometric cases are the wedges and balls (and their lower-dimensional analogues). The modular Hamiltonian is a local operator only in those cases; everywhere else it is the nonlocal modular Hamiltonian of the region.</p>
@@ -405,7 +405,7 @@ So the modular Hamiltonian's action here is two-sided, not an inner commutator: 
 <p><strong>Established (recomputed here).</strong></p>
 <ul>
 <li>$\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is defined by $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.</li>
-<li>In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\eta_{+}/\eta_{-})\vec u_s$; $\mathcal{M}_{\mathrm{mod}}>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.</li>
+<li>In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\eta_{+}/\eta_{-})\vec u_s$; $\mathcal{M}_{\mathrm{mod}}&gt;0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.</li>
 <li>$\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.</li>
 <li>$2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the reduction formula makes the Gibbs state a scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.</li>
 <li>$\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ for the bracket-normalised amplitude $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$, with a central additive constant for an unnormalised amplitude; checked on a generic rotated state.</li>
@@ -432,7 +432,7 @@ $$
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
-and the KMS state is the thermal state of $\tilde H_{\Psi,\mathrm{modular}}$ at unit temperature. The definition inherits the whole hypothesis of the Tomita–Takesaki construction — $\Omega$ cyclic and separating, equivalently the state faithful — and strict positivity of $\mathcal{M}_{\mathrm{mod}}$ is that same hypothesis read off the spectrum: $\mathcal{M}_{\mathrm{mod}}=S^*S\ge0$ is automatic, but $-\log\mathcal{M}_{\mathrm{mod}}$ exists only when $\mathcal{M}_{\mathrm{mod}}>0$, and a non-faithful state leaves an eigenvalue $0$ at which the logarithm diverges. The sign in $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ is a convention that reverses which flow is KMS; it is fixed here as in the parents and held.</p>
+and the KMS state is the thermal state of $\tilde H_{\Psi,\mathrm{modular}}$ at unit temperature. The definition inherits the whole hypothesis of the Tomita–Takesaki construction — $\Omega$ cyclic and separating, equivalently the state faithful — and strict positivity of $\mathcal{M}_{\mathrm{mod}}$ is that same hypothesis read off the spectrum: $\mathcal{M}_{\mathrm{mod}}=S^*S\ge0$ is automatic, but $-\log\mathcal{M}_{\mathrm{mod}}$ exists only when $\mathcal{M}_{\mathrm{mod}}&gt;0$, and a non-faithful state leaves an eigenvalue $0$ at which the logarithm diverges. The sign in $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ is a convention that reverses which flow is KMS; it is fixed here as in the parents and held.</p>
 <p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the parents' finite-dimensional model gives $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi},
@@ -460,7 +460,7 @@ so the modular Hamiltonian is a Hermitian element of the informational sector, w
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -484,7 +484,7 @@ so the modular Hamiltonian is a Hermitian element of the informational sector, w
 </tr>
 <tr>
 <td>$\mathcal{M}_{\mathrm{mod}}=S^*S\ge0$</td>
-<td>Modular operator; $\mathcal{M}_{\mathrm{mod}}>0$ iff the state is faithful</td>
+<td>Modular operator; $\mathcal{M}_{\mathrm{mod}}&gt;0$ iff the state is faithful</td>
 </tr>
 <tr>
 <td>$\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$</td>
@@ -566,7 +566,7 @@ so the modular Hamiltonian is a Hermitian element of the informational sector, w
 <li>Companion article <a href="the-exponential-and-its-three-pairings.html">The Exponential and Its Three Pairings</a>, for the amplitude as the square root of the state and the modular reading.</li>
 <li>Companion article <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a>, for the material sector, the four-vectors, and the zero-divisor cone.</li>
 <li>Companion article <a href="the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a>, for the boundary that the special conformal generators are not elements of $\mathbb{B}$.</li>
-<li>Companion article <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>, for the boost generators $B_{\mathrm{boost},k}=i\vec e_\imath$ whose $k=1$ case is the wedge modular Hamiltonian.</li>
+<li>Companion article <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>, for the boost generators $B_{\mathrm{boost},k}=i\vec e_{\imath}$ whose $k=1$ case is the wedge modular Hamiltonian.</li>
 <li>Companion article <a href="the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a>, for the boost rotor and the subspaces its generators lie in.</li>
 <li>Companion article <a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>, for the two-sided rotor action that the boost requires.</li>
 <li>Companion article <a href="fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a>, for the single fermionic mode and the parity $(-1)^F$.</li>

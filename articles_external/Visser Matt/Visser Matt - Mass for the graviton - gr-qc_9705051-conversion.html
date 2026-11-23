@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass for the graviton — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Mass for the graviton - gr-qc_9705051.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mass-for-the-graviton"><strong>Mass for the graviton</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9705051v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 26 February 1998</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Mass for the graviton - gr-qc_9705051-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Mass for the graviton - gr-qc_9705051.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Mass for the graviton - gr-qc_9705051.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This essay asks whether the graviton can have a mass. It answers yes, and builds a model. The mass term needs a second metric, so the theory carries a non-dynamical background. The construction passes the classical weak-field and medium-field tests. It changes the strong field: black holes in the usual sense do not exist, and cosmology stops tracking the matter distribution. The author is explicit that the price is prior geometry and that quantisation is untouched.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Can we give the graviton a mass? Does it even make sense to speak of a massive graviton? In this essay I shall answer these questions in the affirmative."</p>
+<h3 id="the-obstacles">The obstacles</h3>
+<p>"introducing a graviton mass will clearly require some rather drastic mutilation of the usual foundations underlying Einstein gravity."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"To accommodate a massive graviton without sacrificing experimental results such as the Eötvös experiment and the Newtonian limit, and do so without the theoretical complications of a higher-derivative theory, I shall explore the option of adding prior geometry by introducing a background metric."</p>
+<h3 id="the-mass-term">The mass term</h3>
+<p>$$S_{\text{mass}}(g,g_0)=\tfrac{1}{2}\frac{m_g^2c^2}{\hbar^2}\int\sqrt{-g_0}\left\{(g_0^{-1})^{\mu\nu}(g-g_0)_{\mu\sigma}(g_0^{-1})^{\sigma\rho}(g-g_0)_{\rho\nu}-\tfrac{1}{2}\left[(g_0^{-1})^{\mu\nu}(g-g_0)_{\mu\nu}\right]^2\right\} \qquad (paper\ 5)$$</p>
+<h3 id="what-passes">What passes</h3>
+<p>"The variant theory of gravity I have sketched in this essay—a specific proposal for giving the graviton a mass—passes all present tests of classical gravity."</p>
+<h3 id="what-changes">What changes</h3>
+<p>"Black holes in the usual sense do not exist in this theory, and large-scale cosmology is divorced from the distribution of matter."</p>
+<h3 id="the-cost">The cost</h3>
+<p>"To do all this we have to sacrifice something: the theory exhibits prior geometry, and depends on a non-dynamical background metric."</p>
+<h3 id="the-admission">The admission</h3>
+<p>"Clearly, the theory presented in this essay is far from being completely and definitively understood: there are a lot of issues (such as quantization) ripe for further development."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-needs-a-second-structure">1. Mass needs a second structure</h3>
+<p><strong>The idea.</strong> A mass term for the graviton cannot be written from one metric; it needs a background.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats masslessness as a property of the dispersion relation. This essay shows that in gravity, giving up masslessness forces an extra structure, which changes what "massless regime" means for the graviton.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the graviton case.</p>
+<p><strong>What stands in the way.</strong> The background is fixed by hand. Ranked first, because it is a structural consequence of adding mass.</p>
+<h3 id="2-prior-geometry">2. Prior geometry</h3>
+<p><strong>The idea.</strong> A non-dynamical metric is admitted as a price, and it decides what counts as a frame.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> distinguishes frames and metrics. A prior metric is a third object, fixed before any dynamics, and the target's conventions do not have a slot for it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of conventions.</p>
+<p><strong>What stands in the way.</strong> The essay does not develop the frame question. Ranked second.</p>
+<h3 id="3-fitting-everything-is-not-evidence">3. Fitting everything is not evidence</h3>
+<p><strong>The idea.</strong> More free parameters let the theory match data better, and the author says so plainly.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what agreement with data is worth. This sentence is a clean statement of the problem, from inside a theory that has it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> It is a remark, not an analysis. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

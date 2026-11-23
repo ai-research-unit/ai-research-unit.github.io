@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue spacetimes: toy models for &quot;quantum gravity&quot; — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetimes - Toy models for quantum gravity&#x27;&#x27; - 0712.0427.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-spacetimes-toy-models-for-quantum-gravity"><strong>Analogue spacetimes: toy models for "quantum gravity"</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0712.0427v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 December 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Proceedings of Science, "From Quantum to Emergent Gravity: Theory and Phenomenology", Trieste, 11–15 June 2007</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue spacetimes - Toy models for quantum gravity'' - 0712.0427-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetimes - Toy models for quantum gravity'' - 0712.0427.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetimes - Toy models for quantum gravity'' - 0712.0427.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Uses analogue spacetimes, mainly water waves, as concrete models of the unusual structures that quantum-gravity phenomenology speculates about, and argues the models narrow the search. Rainbow spacetimes, where the metric depends on the energy of the probe, are constructed from the Maupertuis form of the action. Superluminal and subluminal dispersion relations are exhibited and shown to be able to coexist in one model. Multiple notions of signal velocity are distinguished. The paper's practical message is that a dispersion relation can be made to look almost Lorentz-invariant by tuning a parameter, that "superluminal" and "subluminal" are not global properties of a model, and that a search for arbitrary Lorentz violation is therefore overkill.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-bother">Why bother</h3>
+<p>"Analogue spacetimes provide one with physically well-defined and physically well-understood concrete models of many of the phenomena that seem to be part of the yet incomplete theory of 'quantum gravity' ... Indeed 'analogue spacetimes' provide one with concrete models of 'emergence' (whereby the effective low-energy theory can be radically different from the high-energy microphysics). They also provide many concrete and controlled models of 'Lorentz symmetry breaking', and extensions of the usual notions of pseudo-Riemannian geometry such as 'rainbow spacetimes', and pseudo–Finsler geometries."</p>
+<h3 id="the-narrowing-argument">The narrowing argument</h3>
+<p>"The dispersion relations that naturally arise in the known emergent/analogue spacetimes typically violate analogue Lorentz invariance at high energy, but do not do so in completely arbitrary manner. This suggests that a search for arbitrary violations of Lorentz invariance is possibly overkill: There are a number of natural and physically well-motivated restrictions one can put on emergent/analogue dispersion relations, considerably reducing the plausible parameter space."</p>
+<h3 id="rainbow-metrics-from-maupertuis">Rainbow metrics from Maupertuis</h3>
+<p>"These geometries are particularly useful as concrete conceptual and physical examples of how to construct physically well-motivated rainbow geometries, which may then be of interest as guideposts when considering possible energy-dependent modifications of general relativity" — obtained by using "the Maupertuis form of the least action principle to rewrite Newton's second law in terms of geodesic equations on an energy-dependent manifold."</p>
+<h3 id="parity-is-assumed-and-why">Parity is assumed, and why</h3>
+<p>"Making the dispersion relation a function of $k^2$, rather than $\vec k$, implies that we are adopting parity invariance. If one desperately wishes to break parity, go right ahead — but there seems to be no physically compelling reason to do so."</p>
+<h3 id="signal-velocity-is-not-one-thing">Signal velocity is not one thing</h3>
+<p>"The most standard definition of signal velocity is $c_{\text{signal},1}=\lim_{k\to\infty}c_{\text{phase}}(k^2)$, which focusses on the mathematically precise definition of how discontinuities propagate. A perhaps more operational definition $c_{\text{signal},2}=\max_k[\ldots]$ focusses on the more physical question of how rapidly one can transfer information encoded in wave-packets. It is a deep issue of principle that as long as the signal velocity is finite the overall causal structure will be similar to that of general relativity, just with 'signal cones' instead of light cones." And: "Brillouin, in his classic reference, identified at least six useful notions of propagation speed."</p>
+<h3 id="superluminal-and-subluminal-in-one-model">Superluminal and subluminal in one model</h3>
+<p>"The simple division into 'superluminal' and 'subluminal' dispersion relations can be seriously misleading, in that even quite physically reasonable dispersion relations can be both 'superluminal' and 'subluminal' over different parts of their domain." And: "it is not too difficult to obtain physically plausible dispersion relations with freely tunable parameters that can be used to delay if not completely eliminate 'Lorentz violating' effects."</p>
+<h3 id="the-tuning-warning">The tuning warning</h3>
+<p>"In both analogue models and in quantum gravity phenomenology one should always be careful about the possibility of accidentally tuning away the effect you are looking for." The water-wave case shows it: $\varepsilon=1/3$ kills the leading correction,</p>
+<p>$$c_{\text{phase}}=c_0\left[1+\frac{3\varepsilon-1}{2}(kd)^2-\frac{45\varepsilon^2+30\varepsilon-19}{72}(kd)^4+O[(kd)^6]\right], \qquad (4.61)$$</p>
+<p>with "$\varepsilon&lt;1/3$ correspond[ing] to a dispersion relation that is initially 'subsonic', while $\varepsilon&gt;1/3$ corresponds to a dispersion relation that is initially 'supersonic'."</p>
+<h3 id="the-list-of-what-the-models-produce">The list of what the models produce</h3>
+<p>"we have seen that both 'superluminal' and 'subluminal' dispersion relations naturally arise, we have seen that dispersion relations can sometimes be both 'superluminal' and 'subluminal', that the signal velocity can be chosen to be either finite or infinite, that the onset of Lorentz violating effects can sometimes be delayed by fine-tuning, that dispersion relations can be chosen to 'mimic' the effects of parity violation, that 'rainbow metrics' are ubiquitous, and that pseudo–Finsler metrics are not far behind. This is a remarkable output for what was originally considered to 'merely' be an analogy."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-superluminal-is-not-a-property-of-a-theory">1. "Superluminal" is not a property of a theory</h3>
+<p><strong>The idea.</strong> A single dispersion relation can be superluminal at low momentum and subluminal at high momentum, or the reverse. The classification is local in momentum space, so asserting that a model is superluminal is incomplete without saying where.</p>
+<p><strong>What it would add.</strong> A precision repair for <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, which treats the cone as either respected or violated. If violation is momentum-dependent in sign, then "respects the cone" is a statement about a range, not about a theory. The corpus's article makes a global claim that cannot be made globally.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a definitional point demonstrated on water waves. Ranked first, because the corpus's central claim in that article is phrased in the terms this paper shows to be too crude.</p>
+<h3 id="2-signal-velocity-many-definitions-one-conservation-law">2. Signal velocity: many definitions, one conservation law</h3>
+<p><strong>The idea.</strong> Brillouin listed at least six notions of propagation speed. They can disagree. But whatever the dispersion relation, if the signal velocity is finite there are signal cones and the causal structure is general-relativistic in form.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-region-of-mass-in-motion.md</code> and the causality article both rely on a single notion of speed. This paper says the choice matters and that only one property — finiteness — is robust across definitions. That is a much smaller requirement than the corpus imposes, and stating it correctly would weaken the corpus's claims less than the corpus currently assumes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-region-of-mass-in-motion.md</code>.</p>
+<p><strong>What stands in the way.</strong> Finiteness of signal velocity is not established for the corpus's framework. The paper shows the requirement is minimal, not that the corpus meets it.</p>
+<h3 id="3-fine-tuning-can-erase-the-effect-you-are-hunting">3. Fine tuning can erase the effect you are hunting</h3>
+<p><strong>The idea.</strong> One parameter value ($\varepsilon=1/3$) removes the leading Lorentz-violating term. A model with a tunable coefficient can be made to look Lorentz-invariant without being so.</p>
+<p><strong>What it would add.</strong> A warning that applies to every null result in the corpus's programme. <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> should treat an absence of predicted effects as weak evidence, since a parameter may have been tuned. The paper states the principle and supplies the explicit example, which makes it concrete rather than cautionary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

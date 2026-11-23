@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braids, Normed Division Algebras, and Standard Model Symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braids, normed division algebras, and Standard Model symmetries - 1803.02202.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="braids-normed-division-algebras-and-standard-model-symmetries"><strong>Braids, Normed Division Algebras, and Standard Model Symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint, JHEP manuscript format</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1803.02202 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 March 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>"Prepared for submission to JHEP", not printed as accepted</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - Braids, normed division algebras, and Standard Model symmetries - 1803.02202-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braids, normed division algebras, and Standard Model symmetries - 1803.02202.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/idempotents-ideals-and-observables.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braids, normed division algebras, and Standard Model symmetries - 1803.02202.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Joins two models of the Standard Model's internal symmetries that had no common ground. The Helon model builds a generation of leptons and quarks out of framed braids of three ribbons; Furey's division-algebra model builds them out of the minimal left ideals of the complex octonions. The paper shows each normed division algebra carries a representation of a circular braid group, that the two groups the Helon model uses are exactly those of $\mathbb{C}$ and $\mathbb{H}$, and then — the main result — that the basis states of the ideals are the Helon braids, when the twist of a ribbon is written as a braid word. The identification of ladder operators with braid words is the bridge.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-helon-model-and-its-framed-braid-group">The Helon model and its framed braid group</h3>
+<p>Three ribbons, two crossings, joined top and bottom: "with a twist of ±2π representing an electric charge of ±e/3. The twist". The braid generators obey $\sigma_i\sigma_j=\sigma_j\sigma_i$ for $|i-j|&gt;1$ and $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ (paper 2.1–2.2), and the framed group adds twist operators with $t_it_j=t_jt_i$, $\sigma_it_j=t_{\sigma_i(j)}\sigma_i$ (paper 2.3–2.4). The structure "is therefore that of the semi-direct product B3c n (B2 )3 . Because", rewritten as $(\frac12\mathbb{Z})^3\rtimes B_3^c$, with composition
+$$([a_1,a_2,a_3],\Lambda_1)([b_1,b_2,b_3],\Lambda_2)=([b_{\pi(\Lambda_2)(1)}+a_1,b_{\pi(\Lambda_2)(2)}+a_2,b_{\pi(\Lambda_2)(3)}+a_3],\Lambda_1\Lambda_2)$$
+(paper 2.5), and the worked instance $({\sigma_1}^{-1}\sigma_2,[0,-1,-1])=([-1,0,-1],{\sigma_1}^{-1}\sigma_2)$ (paper 2.6).</p>
+<h3 id="the-algebras-and-their-isomorphisms">The algebras and their isomorphisms</h3>
+<p>$\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}$ with their losses — order, commutativity, associativity. $I^2=J^2=K^2=IJK=-1$ (paper 3.1); $e_ie_j=-\delta_{ij}e_0+\varepsilon_{ijk}e_k$ (paper 3.2), non-zero $\varepsilon_{ijk}$ for $ijk=123,145,176,246,257,347,365$; "seven copies of the quaternions embedded within the octonions". For Clifford algebras $e_ie_j=-e_je_i$, $e_i^2=\pm1$ (paper 3.4–3.6), with
+$$\varphi:Cl(0,p-1)\to Cl^+(p,0),\qquad \varphi(e_i)=e_ie_p$$
+(paper 3.8–3.9), and More generally $Cl^+(p,q)\cong Cl(q,p-1)$ when $p&gt;0$. The isomorphisms used are $Cl(0,1)\cong\mathbb{C}$, $Cl(0,2)\cong\mathbb{H}$, $\overleftarrow{\mathbb{O}}\cong Cl(0,6)$, and $Cl(6)\cong\mathbb{C}\otimes\overleftarrow{\mathbb{O}}$.</p>
+<h3 id="fureys-ideals">Furey's ideals</h3>
+<p>With the nilpotent basis vectors
+$$\alpha_1\equiv\tfrac12(-e_5+ie_4),\quad \alpha_2\equiv\tfrac12(-e_3+ie_1),\quad \alpha_3\equiv\tfrac12(-e_6+ie_2)$$
+(paper 3.19), satisfying $\{\alpha_i,\alpha_j\}=0$, $\{\alpha_i,\alpha_j^\dagger\}=\delta_{ij}$ (paper 3.20, 3.22), and the primitive idempotent $\omega\omega^\dagger=\alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$, the first minimal left ideal is (paper 3.23),
+$$S^u\equiv \nu\,\omega\omega^\dagger+\bar d_r\alpha_1^\dagger\omega\omega^\dagger+\bar d_g\alpha_2^\dagger\omega\omega^\dagger+\bar d_b\alpha_3^\dagger\omega\omega^\dagger+u_r\alpha_3^\dagger\alpha_2^\dagger\omega\omega^\dagger+\dots+e^+\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger\omega\omega^\dagger,$$
+with the conjugate ideal $S^d$ (paper 3.24) built from $\omega^\dagger\omega$ and the $\alpha_i$. "Each of the basis states in the ideals transforms as a specific lepton or quark" under $SU(3)_c$ and $U(1)_{\rm em}$.</p>
+<h3 id="braids-from-the-algebras">Braids from the algebras</h3>
+<p>The Clifford Braiding Theorem gives $\sigma_k=\frac{1}{\sqrt2}(1+e_{k+1}e_k)$, $\sigma_n=\frac{1}{\sqrt2}(1+e_1e_n)$ (paper 4.1–4.2), and "an important point is that the order of the braid generators represented this way is eight" — with the squares shown explicitly for $\mathbb{C}$: $\sigma_1^2=i$, $\sigma_1^4=-1$, $\sigma_1^8=1$, so "not every braid in B2 can be represented in terms of C. 4.3 A representation". The three cases:
+$$\mathbb{C}\to B_2:\ \sigma_1=\tfrac{1}{\sqrt2}(1+i);\qquad \mathbb{H}\to B_3^c:\ \sigma_1=\tfrac{1}{\sqrt2}(1+I),\ \sigma_2=\tfrac{1}{\sqrt2}(1+J),\ \sigma_3=\tfrac{1}{\sqrt2}(1+K)$$
+(paper 4.5, 4.8), and for the chained octonions $\sigma_i=\frac{1}{\sqrt2}(1+\overleftarrow{e_{i+1}e_i})$, $\sigma_7=\frac{1}{\sqrt2}(1+\overleftarrow{e_1e_7})$ (paper 4.10), "again with period eight". Braid and twist are interchangeable: $\sigma_1\to(\frac12,\frac12,-\frac12)$ and its five companions (paper 5.1–5.3), and "any braiding can always be exchanged for twisting (in the case for three ribbon braids)" (paper 5.4).</p>
+<h3 id="the-identification">The identification</h3>
+<p>With
+$$(\sigma_1\sigma_2)=\alpha_1^\dagger,\quad(\sigma_3\sigma_1)=\alpha_2^\dagger,\quad(\sigma_2\sigma_3)=\alpha_3^\dagger,\qquad {\sigma_2}^{-1}\sigma_1=\omega\omega^\dagger$$
+(paper 5.8–5.9), every Helon braid becomes an ideal basis state (paper 5.7, 5.10), and the antiparticles follow with ${\sigma_1}^{-1}{\sigma_2}^{-1}=\alpha_1$, ${\sigma_3}^{-1}{\sigma_1}^{-1}=\alpha_2$, ${\sigma_2}^{-1}{\sigma_3}^{-1}=\alpha_3$, ${\sigma_1}^{-1}\sigma_2=\omega^\dagger\omega$ (paper 5.16), giving $S^d$ as a right ideal (paper 5.17). Read back into braids,
+$$\omega^\dagger=\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger=[0,0,0](\sigma_2\sigma_3)(\sigma_3\sigma_1)(\sigma_1\sigma_2)=[1,1,1]$$
+(paper 5.18), and $\omega=\alpha_3\alpha_2\alpha_1=[-1,-1,-1]$ (paper 5.19), so that $\omega\omega^\dagger=[0,0,0]$, "the untwisted unbraid (the identity)". The paper records the resulting conflict rather than hiding it: in the Helon model the neutrino braid "is not trivial, and is not an idempotent", and the reply is that "the symmetries of the minimal left ideals however are only the unbroken symmetries $SU(3)_c$ and $U(1)$. For these symmetries, the underlying braiding may be, and should be, trivial. Therefore this conflict is expected and does not indicate a contradiction." The one other divergence: "The only exception here is the neutrino and anti-neutrino states which are identified differently in the two models."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-ideals-basis-states-as-braid-words">1. An ideal's basis states as braid words</h3>
+<p><strong>The idea.</strong> The ladder operators that generate a minimal left ideal are products of two braid generators, $(\sigma_1\sigma_2)=\alpha_1^\dagger$, and the idempotent is a single braid ${\sigma_2}^{-1}\sigma_1$. A <strong>mechanism</strong>: the algebra's ideal structure and a topological braid group are the same object under a dictionary of eight entries.</p>
+<p><strong>What it would add.</strong> The corpus has the idempotents, the nilpotents and the Peirce decomposition as algebra, and separately has braid statistics as topology with a continuous angle. This is a dictionary in which the corpus's nilpotents <em>are</em> braids and the idempotent is the unbraid — a much tighter link than the corpus's, and one that comes with a countable basis rather than a continuous parameter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/idempotents-ideals-and-observables.md</code>.</p>
+<p><strong>What stands in the way.</strong> The dictionary needs the twist to be exchangeable for braiding, which holds for three ribbons and is not shown in general; and it needs the generators to have order eight, which the corpus's biquaternion units do not — $i$ has order four, and $\sigma_1=\frac{1}{\sqrt2}(1+i)$ is not an element of $\mathbb{B}$. The map runs from the Clifford algebra $Cl(6)$, not from the biquaternions, so the corpus would have to be embedded in $Cl(6)$ first, and this paper does not do that.</p>
+<h3 id="2-a-braid-group-per-division-algebra-and-three-ribbons-as-a-count">2. A braid group per division algebra, and three ribbons as a count</h3>
+<p><strong>The idea.</strong> $\mathbb{C}\to B_2$, $\mathbb{H}\to B_3^c$, $\overleftarrow{\mathbb{O}}\to B_7^c$ by one formula, and the Helon model's two groups are exactly the first two. The number three of ribbons is then not chosen but inherited.</p>
+<p><strong>What it would add.</strong> The corpus's article on the number of generations finds that the algebra fixes no $N_g$. This is not a generation count either, and the paper does not claim it is: it is a count of strands, forced by the four division algebras. Read as a constraint on the topological route rather than on the spectrum, it says a Helon-type model has no freedom in its strand number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> Three strands is not three generations, and the paper does not claim it is; the $B_7^c$ of the octonions, which is the case that would relate to the ideals, is used only to generate the ideal, not to count anything. The two threes remain unconnected in the paper.</p>
+<h3 id="3-a-confirmed-conflict-between-two-models-with-a-stated-resolution">3. A confirmed conflict between two models, with a stated resolution</h3>
+<p><strong>The idea.</strong> The neutrino is a nontrivial braid in one model and the identity in the other. The paper says the conflict is expected because the ideal carries only the unbroken symmetries, for which the braiding "may be, and should be, trivial". A <strong>reading</strong> of what a model's symmetry content does and does not constrain.</p>
+<p><strong>What it would add.</strong> The corpus repeatedly faces the same question — which structures survive when a symmetry is broken — and this is a worked case where a mismatch is diagnosed as a broken-versus-unbroken artefact rather than an error. It gives a template for reading such mismatches.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourth-colour-left-right-model.md</code>.</p>
+<p><strong>What stands in the way.</strong> The resolution is asserted, not shown: no calculation exhibits the weak interaction acting on the ideal to restore the nontrivial braid. The companion proceedings (1711.09011) concede that the choice of braid words in the Helon model is somewhat arbitrary, so part of the coincidence being explained here is definitional.</p>
+<p>The rank is a judgement: the ideal-as-braid dictionary first, because it is the paper's result and it is checkable entry by entry; the division-algebra count second, because it justifies a number; the conflict resolution third, because it is the most interpretive.</p>
+<p>Twenty-one pages: the Helon model and its framed braid group, the normed division and Clifford algebras with Furey's ideals, the braid representations of the four algebras, the interchange of braiding and twisting, the identification of ideals with Helon braids for particles and antiparticles, and a discussion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

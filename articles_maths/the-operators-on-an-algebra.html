@@ -213,8 +213,8 @@ $$</p>
 <p>The asymmetry between $L$ and $R$ is the whole difficulty of the noncommutative case. As a transformation of $A$, a left multiplication by a noncentral element is not $A$-linear; it is the action itself rather than a map commuting with the action.</p>
 <p><strong>Example.</strong> For $\mathbb{B}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
 <p>$$
-L(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
-R(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
+L(\vec e_x) = \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{pmatrix}, \qquad
+R(\vec e_x) = \begin{pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0 \end{pmatrix}.
 $$</p>
 <p>The two agree on their first two rows and differ in the sign of the last two, and both are anti-Hermitian, $L(\vec e_x)^{\mathsf T} = -L(\vec e_x)$ and likewise for $R(\vec e_x)$.</p>
 <h3 id="the-math128-linear-operators">The $A$-Linear Operators</h3>
@@ -348,11 +348,11 @@ $$</p>
 <p>in the basis $(1, i)$.</p>
 <p><strong>The multiplication operators.</strong> Left multiplication by $z = a + bi$ sends $x + yi$ to $(ax - by) + (ay + bx)i$, so</p>
 <p>$$
-L(a+bi) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}, \qquad \det L(a+bi) = a^2 + b^2 = N(z).
+L(a+bi) = \begin{pmatrix} a &amp; -b \\ b &amp; a \end{pmatrix}, \qquad \det L(a+bi) = a^2 + b^2 = N(z).
 $$</p>
 <p>The image is the two-dimensional subspace $L(\mathbb{C}) \subset M_2(\mathbb{R})$, the regular representation, and $L$ is an algebra isomorphism $\mathbb{C} \to L(\mathbb{C})$, so that the complex numbers are realised as the operators of the form above. In particular</p>
 <p>$$
-L(1) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad L(i) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}.
+L(1) = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \qquad L(i) = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}.
 $$</p>
 <p><strong>The conjugate-linear operators.</strong> The remainder of $M_2(\mathbb{R})$ is not of this form. An operator $\varphi$ is <strong>conjugate-linear</strong> when it is additive and $\varphi(\lambda z) = \bar\lambda\,\varphi(z)$ for every $\lambda \in \mathbb{C}$; such an operator is $\mathbb{R}$-linear, is not $\mathbb{C}$-linear unless it is zero, and is determined by the single value $u = \varphi(1)$, since</p>
 <p>$$
@@ -364,7 +364,7 @@ $$</p>
 $$</p>
 <p>so in the basis $(1,i)$ its matrix and its action are</p>
 <p>$$
-\varphi = \begin{pmatrix} p & q \\ q & -p \end{pmatrix}, \qquad \varphi(x + yi) = (px + qy) + (qx - py)i .
+\varphi = \begin{pmatrix} p &amp; q \\ q &amp; -p \end{pmatrix}, \qquad \varphi(x + yi) = (px + qy) + (qx - py)i .
 $$</p>
 <p>These operators form a subspace of dimension $2$. The composite of two of them is $\mathbb{C}$-linear rather than conjugate-linear, since</p>
 <p>$$
@@ -374,7 +374,7 @@ $$</p>
 <p>$$
 M_2(\mathbb{R}) = L(\mathbb{C}) \ \oplus\ \text{(conjugate-linear operators)}, \qquad 4 = 2 + 2 .
 $$</p>
-<p>The decomposition is direct, since a matrix of the form $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$ can equal one of the form $\begin{pmatrix} p & q \\ q & -p\end{pmatrix}$ only when all four entries vanish. So every $\mathbb{R}$-linear operator on $\mathbb{C}$ is uniquely the sum of a $\mathbb{C}$-linear one and a conjugate-linear one.</p>
+<p>The decomposition is direct, since a matrix of the form $\begin{pmatrix} a &amp; -b \\ b &amp; a\end{pmatrix}$ can equal one of the form $\begin{pmatrix} p &amp; q \\ q &amp; -p\end{pmatrix}$ only when all four entries vanish. So every $\mathbb{R}$-linear operator on $\mathbb{C}$ is uniquely the sum of a $\mathbb{C}$-linear one and a conjugate-linear one.</p>
 <p><strong>The derivations.</strong> There are none beyond zero. If $\delta$ is an $\mathbb{R}$-derivation then</p>
 <p>$$
 0 = \delta(1) = \delta(i \cdot i) = \delta(i)i + i\delta(i) = 2i\,\delta(i),
@@ -390,7 +390,7 @@ $$</p>
 $$</p>
 <p>As operators the two are</p>
 <p>$$
-\mathrm{id} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \kappa = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+\mathrm{id} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \qquad \kappa = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix},
 $$</p>
 <p>so the nontrivial automorphism is a <strong>reflection</strong> of the plane, of determinant $-1$. It is not inner, since it is not of the form $L(z)(\cdot)L(z)^{-1}$ with $z$ invertible: conjugation by a complex number fixes $i$, whereas $\kappa$ negates it.</p>
 <p><strong>The consistency check.</strong> The two structures agree in dimension, as the tangent-space argument requires:</p>
@@ -400,7 +400,7 @@ $$</p>
 <p>The automorphism group is finite, so its Lie algebra is zero. The check is not vacuous, and it is what would fail if a derivation or an automorphism had been missed.</p>
 <p><strong>The anti-self-adjoint operators.</strong> The condition $X^{\mathsf T} + X = 0$ on the operator matrix cuts out</p>
 <p>$$
-\operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
+\operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
 $$</p>
 <p>a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the nonzero anti-self-adjoint operator is exactly multiplication by the imaginary unit, up to scale. The transposition is the one of the trace pairing, and the pairing is used only to define the subspace. The reading of this line as the orthogonal group of the plane, with its rotations and its unit circle, needs the norm and belongs to Part IV, where the distance is available, and is named only.</p>
 <h2 id="the-three-two-dimensional-algebras">The Three Two-Dimensional Algebras</h2>

@@ -96,7 +96,7 @@ $$</p>
 <p>a $3\times3$ complex matrix. Its partner is $N=A_{-+}:V_+\to V_-$.</p>
 <p><strong>Proposition.</strong> The mass block has $18$ real dimensions, and the element has the block form</p>
 <p>$$
-A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
+A=\begin{pmatrix}A_+&amp;M\\N&amp;A_-\end{pmatrix},
 \qquad
 A_\pm\in M_3(\mathbb{C}),\quad M,N\in M_3(\mathbb{C}).
 $$</p>
@@ -186,25 +186,25 @@ U_L,U_R\in U(3),\quad
 \Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)\ge0 .
 $$</p>
 <p>If $M$ is invertible and the singular values are distinct, the decomposition is unique up to the diagonal torus $U(1)^3$ acting on both sides.</p>
-<p><strong>Proof.</strong> This is the singular value decomposition $M=U\Sigma V^*$ with $U_L=U$ and $U_R=V$. Uniqueness: if $U_L\Sigma U_R^{-1}=U_L'\Sigma U_R'^{-1}$, then $U_L'^{-1}U_L$ commutes with $\Sigma$; for distinct positive $\sigma_i$ it is diagonal with phases, and the same for $U_R'^{-1}U_R$, with the phases equal.</p>
+<p><strong>Proof.</strong> This is the singular value decomposition $M=U\Sigma V^*$ with $U_L=U$ and $U_R=V$. Uniqueness: if $U_L\Sigma U_R^{-1}=U_L'\Sigma U_R'{}^{-1}$, then $U_L'{}^{-1}U_L$ commutes with $\Sigma$; for distinct positive $\sigma_i$ it is diagonal with phases, and the same for $U_R'{}^{-1}U_R$, with the phases equal.</p>
 <p><strong>Definition.</strong> The <strong>positive mass factor</strong> is $\Sigma$, and the <strong>chiral unitaries</strong> are $U_L,U_R$. The <strong>chiral phase</strong> is the phase of $\det(U_LU_R^{-1})$.</p>
-<p><strong>Remark (the singular case).</strong> If $M$ has rank $k<3$, the positive factor $\Sigma$ is still unique, but the unitaries are not: on the kernel of $M$ they can be chosen arbitrarily. The polar decomposition exists but is not unique.</p>
+<p><strong>Remark (the singular case).</strong> If $M$ has rank $k&lt;3$, the positive factor $\Sigma$ is still unique, but the unitaries are not: on the kernel of $M$ they can be chosen arbitrarily. The polar decomposition exists but is not unique.</p>
 <h3 id="the-full-element">The Full Element</h3>
 <p><strong>Theorem (the $U(6)$ polar decomposition).</strong> Every $A\in GL_6(\mathbb{C})$ has a unique decomposition</p>
 <p>$$
 A=UP,
 \qquad
 U\in U(6),\quad
-P=(A^*A)^{1/2}>0 .
+P=(A^*A)^{1/2}&gt;0 .
 $$</p>
 <p>For a singular $A$, the positive factor $P$ is unique, and $U$ is unique on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
-<p><strong>Proof.</strong> $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is $*$-unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
+<p><strong>Proof.</strong> $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P&gt;0$ and $U=AP^{-1}$ is $*$-unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
 <p><strong>Definition.</strong> The <strong>$U(6)$ polar factor</strong> of $A$ is $U=A(A^*A)^{-1/2}$; the <strong>positive factor</strong> is $P=(A^*A)^{1/2}$.</p>
 <p><strong>Theorem (the chiral block form).</strong> Write</p>
 <p>$$
-U=\begin{pmatrix}U_{++}&U_{+-}\\U_{-+}&U_{--}\end{pmatrix},
+U=\begin{pmatrix}U_{++}&amp;U_{+-}\\U_{-+}&amp;U_{--}\end{pmatrix},
 \qquad
-P=\begin{pmatrix}P_{++}&P_{+-}\\P_{-+}&P_{--}\end{pmatrix}
+P=\begin{pmatrix}P_{++}&amp;P_{+-}\\P_{-+}&amp;P_{--}\end{pmatrix}
 $$</p>
 <p>in the chiral split. Then</p>
 <p>$$
@@ -325,7 +325,7 @@ $$</p>
 \boxed{\ M=U_L\Sigma U_R^{-1},\qquad \Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3),\qquad \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .\ }
 $$</p>
 <p>The determinant phase is gauge-dependent; the modulus is the product of the channels; the rank is the number of nonzero channels. The massless block is $M=0$, and the massless algebra is $M_3\oplus M_3$.</p>
-<p>The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and $P>0$; the mass block of $A$ is $U_{++}P_{+-}+U_{+-}P_{--}$, a sum of two products of chiral blocks. The $U(6)$ polar factor and the $U(3)\times U(3)$ polar factors of $M$ are different objects.</p>
+<p>The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and $P&gt;0$; the mass block of $A$ is $U_{++}P_{+-}+U_{+-}P_{--}$, a sum of two products of chiral blocks. The $U(6)$ polar factor and the $U(3)\times U(3)$ polar factors of $M$ are different objects.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -360,7 +360,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U(6)$ polar</td>
-<td>$A=UP$, $U\in U(6)$, $P>0$</td>
+<td>$A=UP$, $U\in U(6)$, $P&gt;0$</td>
 </tr>
 <tr>
 <td>$M_4$ comparison</td>

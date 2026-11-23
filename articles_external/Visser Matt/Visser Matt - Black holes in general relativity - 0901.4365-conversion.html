@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black holes in general relativity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes in general relativity - 0901.4365.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="black-holes-in-general-relativity"><strong>Black holes in general relativity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0901.4365v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 5 February 2009 (LATEX-ed 22 October 2018)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Black holes in general relativity - 0901.4365-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes in general relativity - 0901.4365.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Black holes in general relativity - 0901.4365.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a short survey, given at a 2008 workshop in Croatia, of four questions at the interface of general relativity, string theory, and astrophysics. The questions are whether black holes exist, whether formation and evaporation are unitary, whether a black hole can be mimicked to arbitrary accuracy, and whether a horizon can be detected by local physics. For each the author sets out the current state of the argument rather than a settled answer. The survey is deliberately personal, and its conclusion is that the subject remains full of open problems.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-four-questions">The four questions</h3>
+<p>"What is going on (as of August 2008) at the interface between theoretical general relativity, string-inspired models, and observational astrophysics? Quite a lot. In this mini-survey I will make a personal choice and focus on four specific questions: Do black holes 'exist'? (For selected values of the word 'exist'.) Is black hole formation and evaporation unitary? Can one mimic a black hole to arbitrary accuracy? Can one detect the presence of a horizon using local physics?"</p>
+<h3 id="existence-depends-on-the-asker">Existence depends on the asker</h3>
+<p>"This innocent question is more subtle than one might expect, and the answer depends very much on whether one is thinking as an observational astronomer, a classical general relativist, or a theoretical physicist." For the astronomer: "Astronomers have certainly seen things that are small, dark, and heavy. But are these small, dark, heavy objects really black holes in the sense of classical general relativity?"</p>
+<h3 id="mimics">Mimics</h3>
+<p>"Even if we do not actually need 'black holes' to do 'black hole physics', can we at least be sure that we have something very similar to a black hole, a 'black hole mimic'?" The survey lists three routes — a weird equation of state, semiclassical effects, quantum gravity — and reports that "The possibilities are rather tightly constrained."</p>
+<h3 id="local-detection">Local detection</h3>
+<p>The fourth question is whether the presence of a horizon can be established from measurements in a neighbourhood, without tracing rays to infinity. The discussion connects this to the analogue programme and to the possibility of near-horizon modifications of the metric.</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"The message that I hope readers take from this micro-survey is that there are still many subtle and interesting things going on in black hole physics. Many deep issues of principle remain, despite at least 50 years, and by some measure 90 years, work on the subject. Note also that in many cases it is worthwhile to carefully re-analyze and re-assess work from several decades ago." And: "Sometimes, in my more cynical moments, I feel that each step forward involves 99% of a step backwards."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-checklist-the-corpus-can-adopt">1. A checklist the corpus can adopt</h3>
+<p><strong>The idea.</strong> The four questions are a compact test of what a theory of horizons has actually delivered: existence, unitarity, mimicry, local detectability.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> is a ledger of what the framework reaches. The survey's fourth question — can a horizon be detected by local physics? — is exactly the ledger's question, put in operational terms. Adopting the other three as columns would let the article say not only "the causal boundary is out of reach" but which downstream questions therefore have no framework answer. That turns a classification into a scorecard.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, as an organising frame for the ledger.</p>
+<p><strong>What stands in the way.</strong> Three of the four questions are about quantum gravity and astrophysics, so the scorecard would be mostly empty. Ranked second.</p>
+<h3 id="2-existence-is-an-inference-not-an-observation">2. "Existence" is an inference, not an observation</h3>
+<p><strong>The idea.</strong> What astronomers see is small, dark, and heavy. The word "black hole" is added by theory.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> distinguishes a prediction from a reformulation. This survey supplies a clean case of the same distinction in standard physics: the observations constrain a compact object, and the identification with a horizon is theory-laden. The article can use it to show that empirical equivalence is a general feature of theoretical descriptions, not a peculiarity of the biquaternion framework.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> None; it is a framing example. Ranked first, because it makes the article's main point with an example from outside the framework.</p>
+<h3 id="3-some-questions-no-algebra-settles">3. Some questions no algebra settles</h3>
+<p><strong>The idea.</strong> Whether a black hole exists, and whether evaporation is unitary, are not algebraic questions. They turn on definitions and on dynamics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra cannot supply. The survey's four questions are a second list of a different kind: questions that no algebra of the corpus's type could settle, because they are about existence and about a path integral. Recording the second list beside the first would keep the catalogue from being read as a complete inventory of the framework's limits.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a remark about scope, not an entry with a proof. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

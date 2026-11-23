@@ -72,6 +72,7 @@
         <h1 id="the-lagrangian-and-the-nonlinear-sigma-model"><strong>The Lagrangian and the Nonlinear Sigma Model</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article writes the nonlinear sigma model as an extremum of an action in the algebra, and reads what the action's structure gives. It is the action-first companion of <em>The Nonlinear Sigma Model in Biquaternionic Form</em>, which states the target geometry and the power counting as facts about a known model; this article asks the prior question, what functional has the sigma-model equation as its stationary condition, and what the algebra contributes to the answer.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p>The equation. The parent's equation is</p>
 <p>$$
 \frac{\partial}{\partial R_{\imath}}\Bigl(\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_{\imath}}\Bigr)=0 ,
@@ -95,7 +96,7 @@ $$</p>
 <p><em>Third, the action's only content is the derivative expansion.</em> Every invariant of the target that can be written is a power of $\partial\tilde U$, so the classical action is the first term of a series whose successive terms are suppressed by $f$. That is why the model is predictive below $4\pi f$ and silent above it.</p>
 <p>What is not new. The model, its target, its current and its power counting are standard. The physics is imported whole. What the algebra supplies is the carrier: the target is a submanifold of $\mathbb{H}$, the metric on it is the biquaternion norm, and the current is an algebra-valued one-form whose flatness is a commutator identity of the algebra.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\imath^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_{\imath}^{2}=-e_t$ for $k=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.</p>
 <p>The two products used. $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_{\imath}$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_{\imath} X_{\imath} X_{\imath}=X_t^{2}-\sum_j X_j^{2}$.</p>
 <p>The gradient. $\tilde\nabla_\Phi$ is the corpus's gradient, $\tilde\nabla_\Phi=e_t\partial/\partial r'_t+\sum_j\vec e_j\partial/\partial R_j$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the central scalar d'Alembertian. The volume element is $d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z$.</p>
 <p>The sign convention. The overall sign of the action is fixed once by requiring that the energy computed from it be positive, exactly as in the Skyrme article; with that sign the time derivative enters the kinetic term with a positive coefficient and the spatial gradients with a negative one. Every sign below follows from it and is not re-chosen.</p>
@@ -104,7 +105,7 @@ $$</p>
 <p>$$
 \tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),
 \qquad
-\vec\pi=\sum_{\imath\in\{x,y,z\}} \pi_\imath\vec e_\imath ,
+\vec\pi=\sum_{\imath\in\{x,y,z\}} \pi_{\imath}\vec e_{\imath} ,
 \qquad
 \vec\pi^{\natural}=-\vec\pi ,
 $$</p>
@@ -112,9 +113,9 @@ $$</p>
 <p>$$
 \tilde U=\cos\frac{|\pi|}{f}\,e_t+\frac{\sin(|\pi|/f)}{|\pi|}\,\vec\pi ,
 \qquad
-|\pi|=\sqrt{\sum_{\imath\in\{x,y,z\}}\pi_\imath\pi_\imath},
+|\pi|=\sqrt{\sum_{\imath\in\{x,y,z\}}\pi_{\imath}\pi_{\imath}},
 $$</p>
-<p>the second form showing that the three $\pi_\imath$ are coordinates on the group and not linear fields.</p>
+<p>the second form showing that the three $\pi_{\imath}$ are coordinates on the group and not linear fields.</p>
 <p>The current. The Maurer–Cartan form is</p>
 <p>$$
 j_{\imath}=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_{\imath}}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi ,
@@ -132,13 +133,13 @@ $$</p>
 <p>$$
 j_{\imath}=\frac{1}{f}\frac{\partial \vec\pi}{\partial R_{\imath}}+O(\pi^2),
 \qquad
--\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{\imath\in\{x,y,z\}}\frac{\partial \pi_\imath}{\partial R_{\imath}}\frac{\partial \pi_\imath}{\partial R_{\imath}}+O(\pi^4),
+-\frac{f^2}{2}\mathrm{Sc}(j_{\imath} j_{\imath})=-\frac12\sum_{\imath\in\{x,y,z\}}\frac{\partial \pi_{\imath}}{\partial R_{\imath}}\frac{\partial \pi_{\imath}}{\partial R_{\imath}}+O(\pi^4),
 $$</p>
 <p>so that the quadratic part is the canonical kinetic term of three real fields with coefficient exactly one and no free parameter. The constant $f$ has cancelled between the coefficient and the current, and that cancellation is the statement that $f$ is the decay constant and not a coupling.</p>
 <p>Why no potential term. A term $V(\tilde U)$ would have to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the only invariant function of a unit quaternion is a constant. The absence of a potential is therefore not a choice of the model but a consequence of the target: on $\mathbb{H}^1$ there is no invariant to build one from, and a mass term for $\vec\pi$ requires a source outside the chiral group, which is the explicit breaking the Goldstone article treats.</p>
 <p>The pairing. The pairing is the real scalar part, and it is forced. The integrand $\mathrm{Sc}(\bar j_{\imath} j_{\imath})$ is real because $\bar j_{\imath} j_{\imath}$ is the negative of a Hermitian norm: $j_{\imath}$ is anti-Hermitian, so $j_{\imath}^{\dagger}=-j_{\imath}$ and $\mathrm{Sc}(\bar j_{\imath} j_{\imath})=-\mathrm{Sc}(j_{\imath}^{\dagger}j_{\imath})=-\langle j_{\imath}\rangle_\natural$, a real number. No separate reality condition is needed, and no imaginary part survives the sum over $\mu$.</p>
 <p>Why the pairing cannot be $\mathrm{Sc}(j_{\imath} j_{\imath})$. That form is the negative of the one above only when $j_{\imath}$ is anti-Hermitian, which it is, so the two differ by a sign and not by a defect. The genuine alternative, $\mathrm{Re}\,\mathrm{Sc}(j_{\imath} j_{\imath})$ without the conjugate, would fail to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$ because the left and right factors do not commute with $j_{\imath}$ in the same order; the conjugated pairing is the one that survives, and this is the same selection that fixes the Dirac bilinear in the element articles.</p>
-<p>The type of the coefficient. The coefficient is a squared decay constant, real and dimensionful. $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=130.2$ MeV in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.</p>
+<p>The type of the coefficient. The coefficient is a squared decay constant, real and dimensionful. $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=2.086\times10^{-11}\ \mathrm{J}$ in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.</p>
 <p>What that means for the count. Because $f$ cancels from the equation, the classical content of the model is $f$-independent, and $f$ enters only when the field is normalized canonically — that is, only in the interactions. This is the structural fact behind the statement that the sigma model has one parameter and no coupling.</p>
 <p>The selection rule. The selection rule is invariance under the chiral group, and it leaves one term. The group acts by $\tilde U\mapsto g_L\tilde U g_R^{*}$ with constant unit quaternions; the current transforms as $j_{\imath}\mapsto g_R^{*}j_{\imath} g_R$, so $\mathrm{Sc}(\bar j_{\imath} j_{\imath})$ is invariant because the trace is cyclic. Of all the invariants that can be written with two derivatives, only this one exists at leading order, and the derivative expansion of the next section is the statement that all the others carry four or more.</p>
 <p>What reality does not buy. Reality does not buy a potential, a mass, or a coupling. The action is real, and its reality is a statement about the integrand and not about the physics. Three things the reality of the action does not supply, stated so that the boundary is visible:</p>
@@ -235,7 +236,7 @@ $$</p>
 </tr>
 <tr>
 <td>$f=f_\pi$</td>
-<td>decay constant, $130.2$ MeV</td>
+<td>decay constant, $2.086\times10^{-11}\ \mathrm{J}$</td>
 </tr>
 <tr>
 <td>$j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$</td>

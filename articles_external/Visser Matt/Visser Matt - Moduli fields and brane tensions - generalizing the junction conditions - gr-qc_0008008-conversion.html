@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moduli fields and brane tensions: generalizing the junction conditions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Moduli fields and brane tensions - generalizing the junction conditions -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="moduli-fields-and-brane-tensions-generalizing-the-junction-conditions"><strong>Moduli fields and brane tensions: generalizing the junction conditions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0008008v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 August 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Moduli fields and brane tensions - generalizing the junction conditions - gr-qc_0008008-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Moduli fields and brane tensions - generalizing the junction conditions - gr-qc_0008008.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Moduli fields and brane tensions - generalizing the junction conditions - gr-qc_0008008.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors extend the Israel–Lanczos–Sen thin-shell conditions to a bulk containing several scalar fields with arbitrary coupling to curvature. They derive the standard conditions from the action first, then repeat the derivation with the extra fields. The resulting conditions are intertwined: a shell can produce a jump in the scalar field even when it does not couple to it, and the metric jump can feed back into the scalar jump. They show that the form of the conditions depends on which conformal frame is used. For exceptional field configurations a kink survives with no shell at all.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Taking the Randall–Sundrum models as background scenario, we derive generalized Israel–Lanczos–Sen thin-shell junction conditions for systems in which several bulk scalar fields are non-minimally coupled to gravity."</p>
+<h3 id="the-frame-dependence">The frame dependence</h3>
+<p>"We demonstrate that the form of the junction conditions (though arguably not the physics) depends on the choice of frame."</p>
+<h3 id="the-unexpected-jump">The unexpected jump</h3>
+<p>"We show that generally (in any frame except the Einstein frame) the presence of a thin shell induces discontinuities in the normal derivative of the scalar field, even in the absence of any direct interaction between the thin shell and the scalar field."</p>
+<h3 id="the-feedback">The feedback</h3>
+<p>"For some exceptional scalar field configurations the discontinuities in the derivatives of the metric and the scalar fields can feed back into each other and so persist even in the absence of any thin shell of stress-energy."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"Our formalism is capable of dealing with the dilaton field, in the string and/or Einstein frames, metric-scalar theories à la Brans–Dicke, and non-minimally coupled scalars."</p>
+<h3 id="the-interlocking">The interlocking</h3>
+<p>"The existence of couplings between the moduli fields and the curvature scalar makes the generalized junction conditions interconnected."</p>
+<h3 id="the-exceptional-case">The exceptional case</h3>
+<p>"These exceptional field configurations are characterized by the vanishing of the kinetic term of some of the scalar fields when transforming to the Einstein frame."</p>
+<h3 id="the-caveat">The caveat</h3>
+<p>"the form of the junction conditions (though arguably not the physics) depends on the choice of frame"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-frame-choice-changes-the-form-of-a-condition">1. Frame choice changes the form of a condition</h3>
+<p><strong>The idea.</strong> Two frames give the same physics but different-looking junction conditions, and one of them hides a jump.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> warns that a coordinate read in the wrong frame is an object of neither. This paper supplies a worked case where the frame changes which quantity jumps, which is a concrete example the target's warning lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on changing frame.</p>
+<p><strong>What stands in the way.</strong> The frames here are conformal, not the biquaternion pair. Ranked first, because it is the target's own hazard, exhibited.</p>
+<h3 id="2-coupling-to-curvature-links-two-conditions">2. Coupling to curvature links two conditions</h3>
+<p><strong>The idea.</strong> A non-minimal coupling makes the metric condition and the scalar condition depend on each other.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-lagrangian-and-the-interacting-scalar-field.md</code> writes a self-interaction but keeps the field minimally coupled. A curvature coupling would couple the field to the geometry at the same order, which the target explicitly does not have.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-interacting-scalar-field.md</code>, in the section on the action.</p>
+<p><strong>What stands in the way.</strong> Non-minimal coupling is not in the framework's action. Ranked second.</p>
+<h3 id="3-a-jump-without-a-source">3. A jump without a source</h3>
+<p><strong>The idea.</strong> Under an exceptional condition, geometry and field can kink with no shell present.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues impossibilities. Here is a case where a naive expectation is evaded by a degenerate configuration, which is a genre the catalogue does not yet include.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The configuration is degenerate and unsettled physically. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

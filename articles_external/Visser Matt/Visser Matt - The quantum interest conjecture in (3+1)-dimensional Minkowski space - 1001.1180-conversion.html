@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The quantum interest conjecture in (3+1)-dimensional Minkowski space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The quantum interest conjecture in (3+1)-dimensional Minkowski space -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quantum-interest-conjecture-in-31-dimensional-minkowski-space"><strong>The quantum interest conjecture in (3+1)-dimensional Minkowski space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1001.1180v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, January 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - The quantum interest conjecture in (3+1)-dimensional Minkowski space - 1001.1180-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The quantum interest conjecture in (3+1)-dimensional Minkowski space - 1001.1180.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The quantum interest conjecture in (3+1)-dimensional Minkowski space - 1001.1180.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Quantum inequalities bound how negative an energy density can be and for how long. The quantum interest conjecture adds that borrowing energy must be repaid with interest. Both statements have been reduced to a question about bound states of a one-dimensional Hamiltonian. The authors extend that reduction to three spatial dimensions. The result supports the conjecture without proving it.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-constraints">The constraints</h3>
+<p>"The quantum inequalities, and the closely related quantum interest conjecture, impose restrictions on the distribution of the energy density measured by any time-like observer"</p>
+<h3 id="what-they-forbid">What they forbid</h3>
+<p>"potentially preventing the existence of exotic phenomena such as Alcubierre warp-drives or traversable wormholes"</p>
+<h3 id="the-reduction">The reduction</h3>
+<p>"It has already been proved that both assertions can be reduced to statements concerning the existence or non-existence of bound states of a certain 1-dimensional quantum mechanical Hamiltonian."</p>
+<h3 id="the-extension">The extension</h3>
+<p>"Using this [reduction we extend the result to (3+1) dimensions]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-negative-energy-has-a-price">1. Negative energy has a price</h3>
+<p><strong>The idea.</strong> Energy debt must be repaid, and the repayment exceeds the loan.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code> produces negative energy between plates. The conjecture says that is only half the story.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code>, in the discussion of negative energy.</p>
+<p><strong>What stands in the way.</strong> The conjecture is not proved. Ranked first, because it constrains the target's central quantity.</p>
+<h3 id="2-one-dimensional-reductions">2. One-dimensional reductions</h3>
+<p><strong>The idea.</strong> A hard problem becomes tractable when mapped to a single dimension.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/dynamics-and-number-theory.md</code> exploits one-dimensional dynamics. The technique transfers.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/dynamics-and-number-theory.md</code>, in the discussion of reductions.</p>
+<p><strong>What stands in the way.</strong> The mapping is specific. Ranked second.</p>
+<h3 id="3-exotic-geometries-are-excluded">3. Exotic geometries are excluded</h3>
+<p><strong>The idea.</strong> Warp drives and wormholes fall together under the same inequality.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain a quantum bound to set beside the classical conditions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of bounds.</p>
+<p><strong>What stands in the way.</strong> The bound is an inequality, not an exclusion. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

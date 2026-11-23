@@ -86,20 +86,20 @@ $$</p>
 <p><strong>The left image.</strong> The left multiplication $L_A(Y)=AY$ is, on the coordinate column, the matrix</p>
 <p>$$
 L_A=\mathrm I_2\otimes A=\begin{pmatrix}
-a_{11}&a_{12}&0&0\\
-a_{21}&a_{22}&0&0\\
-0&0&a_{11}&a_{12}\\
-0&0&a_{21}&a_{22}
+a_{11}&amp;a_{12}&amp;0&amp;0\\
+a_{21}&amp;a_{22}&amp;0&amp;0\\
+0&amp;0&amp;a_{11}&amp;a_{12}\\
+0&amp;0&amp;a_{21}&amp;a_{22}
 \end{pmatrix},
 $$</p>
 <p>an array with two identical $2\times2$ blocks on the diagonal and zeros elsewhere. The image is four-dimensional, spanned by $\mathrm I_2\otimes(-i\sigma_k)$ and $\mathrm I_2\otimes\mathrm I_2$.</p>
 <p><strong>The right image.</strong> The right multiplication $R_B(Y)=YB$ is</p>
 <p>$$
 R_B=B^{\mathsf T}\otimes\mathrm I_2=\begin{pmatrix}
-b_{11}&0&b_{21}&0\\
-0&b_{11}&0&b_{21}\\
-b_{12}&0&b_{22}&0\\
-0&b_{12}&0&b_{22}
+b_{11}&amp;0&amp;b_{21}&amp;0\\
+0&amp;b_{11}&amp;0&amp;b_{21}\\
+b_{12}&amp;0&amp;b_{22}&amp;0\\
+0&amp;b_{12}&amp;0&amp;b_{22}
 \end{pmatrix},
 $$</p>
 <p>the same construction with the blocks interleaved. The image is four-dimensional, spanned by $(-i\sigma_k)^{\mathsf T}\otimes\mathrm I_2$ and $\mathrm I_2\otimes\mathrm I_2$.</p>
@@ -192,9 +192,9 @@ M_4(\mathbb{C})=\operatorname{Fix}(\sigma)\oplus\operatorname{Neg}(\sigma),
 $$</p>
 <p>In the coefficient array the two summands are the symmetric and the antisymmetric arrays. The dimensions are the counts $\tfrac{4\cdot5}{2}=10$ and $\tfrac{4\cdot3}{2}=6$.</p>
 <p><strong>The fixed part.</strong> An operator is fixed exactly when its coefficient array is symmetric, $c(M)=c(M)^{\mathsf T}$. In the matrix it is the condition $M^{\mathsf T}=FMF$, which is a symmetry under the flip and not the ordinary symmetry of the array. The fixed part is the image of the symmetric square of the algebra, and its generic member has rank $4$.</p>
-<p><strong>The negated part.</strong> An operator is negated exactly when its coefficient array is antisymmetric. The part is spanned by the six differences $L_{e_\mu}R_{e_\nu}-L_{e_\nu}R_{e_\mu}$ for $\mu<\nu$, which are the commutators $[L_{e_\mu},R_{e_\nu}]$. In the matrix the generator is $B^{\mathsf T}\otimes A-A^{\mathsf T}\otimes B$, the antisymmetric part of a tensor.</p>
+<p><strong>The negated part.</strong> An operator is negated exactly when its coefficient array is antisymmetric. The part is spanned by the six differences $L_{e_\mu}R_{e_\nu}-L_{e_\nu}R_{e_\mu}$ for $\mu&lt;\nu$, which are the commutators $[L_{e_\mu},R_{e_\nu}]$. In the matrix the generator is $B^{\mathsf T}\otimes A-A^{\mathsf T}\otimes B$, the antisymmetric part of a tensor.</p>
 <p><strong>The two operations.</strong> Neither part is closed under composition. The fixed part closes under the anti-commutator and is a Jordan algebra of dimension ten; the negated part closes under the commutator and is a Lie algebra of dimension six. Both statements follow from $\sigma(XY)=\sigma(Y)\sigma(X)$ in one line, and both are read on the arrays as the symmetry of $c(X)c(Y)\pm c(Y)c(X)$.</p>
-<p><strong>A caution about dimensions.</strong> The six arrays $L_{e_\mu}R_{e_\nu}$ with $\mu<\nu$ span a six-dimensional space, and its image under $\sigma$ is the span of the six complementary arrays with $\mu>\nu$. The two spaces meet only at zero and their sum is twelve-dimensional. A space of dimension six is therefore not the negated part, and the negated part is not the span of any six of the sixteen basis arrays. Equal dimensions never identify two subspaces.</p>
+<p><strong>A caution about dimensions.</strong> The six arrays $L_{e_\mu}R_{e_\nu}$ with $\mu&lt;\nu$ span a six-dimensional space, and its image under $\sigma$ is the span of the six complementary arrays with $\mu&gt;\nu$. The two spaces meet only at zero and their sum is twelve-dimensional. A space of dimension six is therefore not the negated part, and the negated part is not the span of any six of the sixteen basis arrays. Equal dimensions never identify two subspaces.</p>
 <h2 id="conjugation-exchanges-the-sides">Conjugation Exchanges the Sides</h2>
 <p><strong>The map.</strong> The quaternion conjugation is the matrix map $\Phi(A)=\sigma_2A^{\mathsf T}\sigma_2$, and it is an anti-automorphism of the display. Conjugating an operator by it, $X\mapsto\Phi X\Phi$, exchanges the sides and moves the parameters:</p>
 <p>$$

@@ -182,31 +182,31 @@ $$</p>
 <h3 id="the-conjugate-transpose">The conjugate transpose</h3>
 <p>Let $A=M_n(\mathbb{C})$ with the conjugate transpose $X^*=\overline X^{\mathsf T}$, the involution of the second kind. A self-adjoint element is a Hermitian matrix. Its eigenvalues are real by the spectral theorem for Hermitian matrices, hence fixed by the conjugation, and its eigenprojectors are Hermitian by the corollary above. The decomposition is the spectral theorem of the Hermitian matrices, read algebraically. For $n=2$ and</p>
 <p>$$
-H=\begin{pmatrix}1&i\\-i&2\end{pmatrix},
+H=\begin{pmatrix}1&amp;i\\-i&amp;2\end{pmatrix},
 $$</p>
 <p>the characteristic polynomial is $x^2-3x+1$, with the two real roots $\frac{3\pm\sqrt5}{2}$; the two eigenprojectors are Hermitian and orthogonal, and $H$ is their real linear combination. The positivity of $H$ and the norm of its eigenvectors belong to Part II and to <em>Hilbert Algebras</em>, not here.</p>
 <h3 id="the-transpose">The transpose</h3>
 <p>Let $A=M_n(\mathbb{C})$ with the transpose $X^*=X^{\mathsf T}$, the involution of the first kind. A self-adjoint element is a symmetric matrix. Its eigenvalues need not be real: the symmetric matrix</p>
 <p>$$
-S=\begin{pmatrix}0&i\\i&0\end{pmatrix}
+S=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}
 $$</p>
 <p>has the eigenvalues $i$ and $-i$. The eigenprojectors are</p>
 <p>$$
-e_i=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+e_i=\frac12\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix},
 $$</p>
 <p>both symmetric and Hermitian for the transpose, and $S=i\,e_i+(-i)e_{-i}$. The example shows that the first-kind statement is about the involution on the coefficients, not about the realness of the spectrum: the eigenvalues are not real, but they are fixed by the transpose, and the projectors are fixed as well.</p>
 <h3 id="the-entrywise-conjugation">The entrywise conjugation</h3>
 <p>Let $A=M_n(\mathbb{C})$ with the entrywise conjugation $X^*=\overline X$, the involution of the second kind. A self-adjoint element is a matrix with real entries. The rotation</p>
 <p>$$
-R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+R=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}
 $$</p>
 <p>has the eigenvalues $i$ and $-i$, and the eigenprojectors</p>
 <p>$$
-e_i=\frac12\begin{pmatrix}1&i\\-i&1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}.
+e_i=\frac12\begin{pmatrix}1&amp;i\\-i&amp;1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&amp;-i\\i&amp;1\end{pmatrix}.
 $$</p>
 <p>The conjugation exchanges the two projectors, and neither is fixed. The orbit idempotent $g=e_i+e_{-i}=I$ is Hermitian. The orbit theorem has $s=i+(-i)=0$, $p=i(-i)=1$ and $\lambda-\bar\lambda=2i$, so $b=1$ and $t=i$, and</p>
 <p>$$
-v=\frac{R-0}{1\cdot i}=\frac{R}{i}=-iR=\begin{pmatrix}0&i\\-i&0\end{pmatrix}.
+v=\frac{R-0}{1\cdot i}=\frac{R}{i}=-iR=\begin{pmatrix}0&amp;i\\-i&amp;0\end{pmatrix}.
 $$</p>
 <p>The element $v$ is anti-Hermitian, $v^*=iR=-v$, and $v^2=(-i)^2R^2=I$; the orbit formula reads $R=btv=i(-iR)=R$. The matrix $v$ is the complex structure of the rotation.</p>
 <p>The example is the two-dimensional real rotation, the standard conjugate pair; the "complex structure" of the pair is $-iR$, a real matrix that squares to $I$ and is anti-self-adjoint for the entrywise conjugation.</p>

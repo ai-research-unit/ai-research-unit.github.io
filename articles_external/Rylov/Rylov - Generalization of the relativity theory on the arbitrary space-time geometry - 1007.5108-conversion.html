@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generalization of the Relativity Theory on the Arbitrary Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Generalization of the relativity theory on the arbitrary space-time geometry - 1007.5108.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generalization-of-the-relativity-theory-on-the-arbitrary-space-time-geometry"><strong>Generalization of the Relativity Theory on the Arbitrary Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1007.5108 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 29 July 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Generalization of the relativity theory on the arbitrary space-time geometry - 1007.5108-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Generalization of the relativity theory on the arbitrary space-time geometry - 1007.5108.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Generalization of the relativity theory on the arbitrary space-time geometry - 1007.5108.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A short statement of the whole programme, and the place where the counting argument is clearest. The relativity theory has two restrictions — it uses Riemannian geometry, and it uses nonrelativistic concepts such as the point particle with a 4-vector. Removing both gives a particle dynamics in an arbitrary geometry: a particle is a skeleton of points, its evolution a chain of equivalent skeletons, and the dynamics a system of finite-difference equations. The number of equations and the number of unknowns then decide everything: fewer equations gives multivariance and quantum effects, more gives zero-variance and the exclusion of states.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-restrictions">The two restrictions</h3>
+<p>"Contemporary relativity theory is restricted in two points: (1) a use of the Riemannian space-time geometry and (2) a use of inadequate (nonrelativistic) concepts." The second restriction is explained as an inheritance: the point particle with a mass and a 4-momentum "is based on the concept of the linear vector space, which is based in turn on the concept of axiomatizable continuous space-time geometry."</p>
+<p>The replacement is geometric and minimal: "The simplest particle is defined by two points P, P ′ in the space-time. The vector PP′ , formed by the two points, is a geometric momentum of the particle. Its length µ = |PP′ | is the geometric mass of the particle. The geometric mass", with $m=b\mu$ and $p=bc\,PP'$. Charge then comes from Kaluza-Klein as the projection of the 5-momentum on the fifth direction, and "all parameters of a particle appear to be geometrized."</p>
+<p>A composite particle is a skeleton $P^n=\{P_0,P_1,\dots P_n\}$, and its evolution is a chain of equivalent skeletons $C=\bigcup_sP^{(s)}_n$ with adjacent links equivalent and $P^{(s)}_1=P^{(s+1)}_0$. No rotation of the skeleton occurs — Rotation of a skeleton is absent. The translational motion is carried out along the leading vector $P_0P_1$ — and "s dynamic equations in the form of finite difference equations. Sometimes these equations have a form of finite relations."</p>
+<h3 id="the-count">The count</h3>
+<p>This is the core. "ometry, although there are only two equations, whereas the number of variables to be determined is larger, than two.", with $N$ the dimension and $n+1$ the number of skeleton points. Two regimes follow:</p>
+<ul>
+<li>$n(n+1)&lt;Nn$: Multivariance, i.e. ambiguity of the world chain links position. It is characteristic for simple skeletons, which contain small number of points, and "l of the space-time responsible for quantum effects. Journ. Math."</li>
+<li>$n(n+1)&gt;Nn$: "Zero-variance, i.e. absence of solution of equations". It "is characteristic for complicated skeletons, which contain many points. Zero-variance means a discrimination of particles with complicated skeletons. As a result there exist only particles, having only certain values of masses and other parameters."</li>
+</ul>
+<p>And the summary of the two: "Quantum indeterminacy and discrimination mechanism are two different sides" of one counting fact. Quantum mechanics is the underdetermined side; the discrete particle spectrum is the overdetermined side.</p>
+<h3 id="the-diagnosis-of-the-standard-model">The diagnosis of the Standard Model</h3>
+<p>Sharp and quotable: elementary particle physics "should be qualified more correctly as an elementary particle chemistry (EPC). The fact is that, the structure of the elementary particle theory reminds the periodical system of chemical elements." Both classify and both predict successfully, both are axiomatic constructions — and "The periodical system of chemical elements has given nothing new for investigation of the atomic structure of chemical elements. One should not expect any information about elementary particle structure from contemporary EPT."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-equations-minus-unknowns-as-the-whole-story">1. Equations minus unknowns as the whole story</h3>
+<p><strong>The idea.</strong> A <strong>counting criterion</strong>: the ratio $n(n+1)$ to $Nn$ decides whether a class of objects is under- or over-determined, and the two failures have different physical names — quantum indeterminacy and particle discrimination. One inequality, two phenomena.</p>
+<p><strong>What it would add.</strong> The corpus counts parameters to locate the boundary of its framework, and its counts are of a different kind — how many constants a field carries. Rylov's count is of equations against unknowns for a class of configurations, which is a structural count rather than a parameter count, and it would let the corpus ask the same question about its own finite objects: how many conditions does a bispinor satisfy and how many components does it have, and is the difference zero. That is a question the corpus has never posed in this form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The count is per skeleton, and the identification of the two regimes with quantum indeterminacy and with mass discrimination is asserted rather than derived. Nothing shows that the underdetermined case produces the Born rule rather than some other ambiguity, and nothing computes the admitted masses from the overdetermined case. The criterion is suggestive and unfilled.</p>
+<h3 id="2-elementary-particle-chemistry">2. Elementary particle chemistry</h3>
+<p><strong>The idea.</strong> The Standard Model is a periodic table: it classifies, it predicts new entries, it is axiomatic, and like Mendeleev's table it says nothing about what makes an entry. An <strong>analogy</strong> with a methodological moral.</p>
+<p><strong>What it would add.</strong> The corpus is a first-principles construction and has to say what it offers that a classification does not. This analogy gives it the words for the distinction, and it is a criticism the corpus itself invites — its own generations article could be read as another table. Having the analogy available would force the corpus to state which of its results are structural and which are classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The analogy is a rhetorical device with no criterion attached; it does not say what would make a theory more than a table. And it is unfair to the Standard Model, which does derive its entries from a gauge principle rather than from a pattern.</p>
+<h3 id="3-mass-and-momentum-as-one-vector">3. Mass and momentum as one vector</h3>
+<p><strong>The idea.</strong> $m=b\mu$ and $p=bc\,PP'$: mass and momentum are the length and the vector, so the mass shell $p^2=m^2c^2$ is not a constraint but a definition — the two sides are the same object measured two ways.</p>
+<p><strong>What it would add.</strong> The corpus derives the mass shell from the norm of a four-vector in $\mathbb{B}$ and treats it as a consequence of the algebra. Here it is a tautology of the geometry. If both are right, the corpus's derivation is showing that the algebra's norm is a length in a geometry — which would be a satisfying identification, and one the corpus could state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The relations contain the undetermined constant $b$, so the identification is dimensional. And a definition cannot explain why the mass shell holds; it can only make it unsurprising.</p>
+<p>The rank: the counting criterion first, because it is the paper's one original instrument; the chemistry analogy second, because it gives the corpus a needed vocabulary; mass and momentum as one vector last, because it is a re-description rather than a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

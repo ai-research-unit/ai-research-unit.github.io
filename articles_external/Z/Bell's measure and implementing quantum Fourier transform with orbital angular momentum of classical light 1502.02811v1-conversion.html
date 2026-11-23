@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bell&#x27;s Measure and Implementing Quantum Fourier Transform with Orbital Angular Momentum of Classical Light — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Bell&#x27;s measure and implementing quantum Fourier transform with orbital angular momentum of classical…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bells-measure-and-implementing-quantum-fourier-transform-with-orbital-angular-momentum-of-classical-light"><strong>Bell's Measure and Implementing Quantum Fourier Transform with Orbital Angular Momentum of Classical Light</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1502.02811v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Xinbing Song, Yifan Sun, Hongwei Qin, Pengyun Li, Xiangdong Zhang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, February 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Bell's measure and implementing quantum Fourier transform with orbital angular momentum of classical light 1502.02811v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Bell's measure and implementing quantum Fourier transform with orbital angular momentum of classical light 1502.02811v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-bell-inequality-for-continuous-variables-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Bell's measure and implementing quantum Fourier transform with orbital angular momentum of classical light 1502.02811v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Performs a Bell measurement on the non-separable correlation between the polarization and the orbital angular momentum (OAM) of one classical vortex beam, reports a violation of Bell's inequality for that correlation, and then builds Hadamard and conditional-phase gates out of the same beam to run a quantum Fourier transform. The claim is not that classical light is quantum; it is that the two degrees of freedom of one beam are non-separable in a way that reproduces the algebra, so the standard gate sequence can be executed optically.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-correlation">The correlation</h3>
+<p>"We perform Bell's measurement for the non-separable correlation between polarization and orbital angular momentum from the same classical vortex beam. The violation of Bell's inequality for such a non-separable classical correlation has been demonstrated experimentally."</p>
+<h3 id="why-bells-measure-belongs-here">Why Bell's measure belongs here</h3>
+<p>"Recently, it has been demonstrated that Bell's measure can also be used as a quantitative tool in classical optical coherence [6].", where it measures how far a two-degree-of-freedom field is from being a product. That is the framing the paper adopts: the measure is a diagnostic of non-separability, and violation is evidence of it.</p>
+<h3 id="the-gates-and-the-transform">The gates and the transform</h3>
+<p>"Based on the classical vortex beam and nonquantum entanglement between the polarization and orbital angular momentum, the Hadamard gates and conditional phase gates have been designed. Furthermore, a quantum Fourier transform has been implemented experimentally, which is the crucial final step in Shor's algorithm."</p>
+<h3 id="the-qualification-stated-by-the-authors">The qualification, stated by the authors</h3>
+<p>The word used for the correlation is "nonquantum entanglement". The paper does not claim a quantum resource; it claims the same measurement statistics and the same gate algebra, realised on a classical field. That distinction is the whole content of the result and it is easy to lose when the title says "Bell" and "quantum Fourier transform".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-non-separability-of-two-degrees-of-freedom-is-not-the-same-as-entanglement">1. Non-separability of two degrees of freedom is not the same as entanglement</h3>
+<p><strong>The idea.</strong> Polarization and OAM of one beam are two factors of one classical field. Their joint state can fail to factorise, Bell's measure detects the failure, and a Bell inequality can be violated — with no bipartite system, no locality assumption and no quantum state.</p>
+<p><strong>What it would add.</strong> A sharp test the corpus does not apply. The corpus's Bell inequality article works with a state in a tensor product of two elements and treats violation as evidence about the algebra's factorisation; this paper shows the same violation from a single field's two internal degrees of freedom, which means the inequality alone does not certify a bipartite quantum resource.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-bell-inequality-for-continuous-variables-in-biquaternionic-form.md</code>, where the premise of the bound is set.</p>
+<p><strong>What stands in the way.</strong> The corpus's tensor product is over two elements of the algebra and its Bell bound is derived from that structure; to make the classical case comparable, the "two degrees of freedom" would have to be written as a factorisation of one element, which the corpus does not do.</p>
+<h3 id="2-gate-sequences-survive-the-loss-of-the-quantum-substrate">2. Gate sequences survive the loss of the quantum substrate</h3>
+<p><strong>The idea.</strong> Hadamard, conditional phase, and the Fourier transform at the end are algebraic operations on a two-dimensional index and a phase. If a classical optical field can carry the same index and phase, the sequence runs.</p>
+<p><strong>What it would add.</strong> A separation of what is quantum in a circuit from what is linear-algebraic. The corpus's gate articles derive the gates from the algebra's idempotents; this paper supplies an independent implementation in which the same matrices act on a classical field, which is evidence that the gate is a property of the algebra and not of the state space's dimension.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.md</code>, on the Hadamard and conditional-phase elements.</p>
+<p><strong>What stands in the way.</strong> The paper's implementation is a laboratory construction with wave plates and spatial light modulators; the corpus has no account of how an element of the algebra is realised by an optical device.</p>
+<p>The experimental claim is a violation of Bell's inequality and an implemented Fourier transform; the authors label the resource "nonquantum entanglement" and make no claim of quantum computation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

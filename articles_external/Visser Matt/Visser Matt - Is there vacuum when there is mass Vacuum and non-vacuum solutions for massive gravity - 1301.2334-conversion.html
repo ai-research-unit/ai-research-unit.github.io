@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is there vacuum when there is mass? Vacuum and non-vacuum solutions for massive gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Is there vacuum when there is mass Vacuum and non-vacuum solutions for massive…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="is-there-vacuum-when-there-is-mass-vacuum-and-non-vacuum-solutions-for-massive-gravity"><strong>Is there vacuum when there is mass? Vacuum and non-vacuum solutions for massive gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1301.2334v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín–Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 27 June 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Is there vacuum when there is mass Vacuum and non-vacuum solutions for massive gravity - 1301.2334-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Is there vacuum when there is mass Vacuum and non-vacuum solutions for massive gravity - 1301.2334.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Is there vacuum when there is mass Vacuum and non-vacuum solutions for massive gravity - 1301.2334.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Massive gravity has two metrics: a physical one and a reference one. The Lagrangian has few parameters, but the reference metric can be chosen almost freely, so the theory describes many cosmologies. The authors ask what that freedom does in vacuum. A de Sitter or anti-de Sitter reference metric forces the vacuum solution onto the trivial branch, with proportional scale factors. An anti-de Sitter reference then forbids accelerated expansion for any matter obeying the energy conditions. The visible light cone is set by both metrics.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-freedom">The freedom</h3>
+<p>"Massive gravity is a theory which has a tremendous amount of freedom to describe different cosmologies; but at the same time the various solutions one encounters must fulfill some rather nontrivial constraints."</p>
+<h3 id="where-it-comes-from">Where it comes from</h3>
+<p>"Most of the freedom comes not from the Lagrangian, which contains only a small number of free parameters (typically 3 depending on counting conventions), but from the fact that one is in principle free to choose the reference metric almost arbitrarily — which effectively introduces a non-denumerable infinity of free parameters."</p>
+<h3 id="the-question">The question</h3>
+<p>"although changing the reference metric would lead to a different cosmological model, this does not mean that the dynamics of the universe can be entirely divorced from its matter content."</p>
+<h3 id="vacuum-can-be-structured">Vacuum can be structured</h3>
+<p>"even the set of vacuum solutions for massive gravity can have significant structure. In some cases the effect of the reference metric could be so strong that no conceivable material content would be able to drastically affect the cosmological evolution."</p>
+<h3 id="the-trivial-branch">The trivial branch</h3>
+<p>"in those models of massive gravity with dS and adS reference metrics all the vacuum solutions behave as the solutions of the trivial branch, implying strictly proportional scale factors and cosmic times."</p>
+<h3 id="the-no-go-result">The no-go result</h3>
+<p>"The non-existence of homogenous and isotropic accelerating solutions for models with an adS reference metric is a general result which is valid for any model where both metrics can be written in a diagonal way in the same coordinate patch, having the same spatial curvature ($k=-1$), and assuming the absence of matter violating the energy conditions."</p>
+<h3 id="the-causal-consequence">The causal consequence</h3>
+<p>"In view of the FLRW symmetries common to both metrics the light cones of both metrics have the same axes, those of the physical metric being inside or outside the light cones of the reference metric depending on the particular solution obtained when the material content is considered."</p>
+<h3 id="the-disclaimer">The disclaimer</h3>
+<p>"We are not suggesting that there are not massive cosmologies with FLRW reference metrics able to describe our Universe. In fact, we have proven that any universe can be described by massive gravity if one were to carefully choose an appropriate reference metric."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-metrics-two-light-cones">1. Two metrics, two light cones</h3>
+<p><strong>The idea.</strong> A second metric can put the physical light cone inside the reference one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats one light cone as the barrier. A second cone would give the target a way to describe a barrier that varies with a background choice, which is close to what its biquaternionic structure already does with two sectors.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of the cone.</p>
+<p><strong>What stands in the way.</strong> The two metrics here are dynamical inputs, not algebraic sectors. Ranked first, because it tests the uniqueness of the cone the target relies on.</p>
+<h3 id="2-vacuum-with-structure">2. Vacuum with structure</h3>
+<p><strong>The idea.</strong> With a graviton mass, empty space need not be flat or de Sitter; the reference metric can curve it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> cannot form a source, so its cosmology is underdetermined. This paper shows a theory where the vacuum itself carries geometry, which is one way around a missing source and should be considered there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs a reference metric the target does not have. Ranked second.</p>
+<h3 id="3-freedom-in-a-background-is-not-freedom-in-physics">3. Freedom in a background is not freedom in physics</h3>
+<p><strong>The idea.</strong> Almost any cosmology can be fitted by choosing a reference metric, which makes the theory hard to falsify.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what constrains the framework. A theory with an arbitrary function is the limiting case of unfalsifiability, and this paper states the problem plainly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The authors argue the freedom is still bounded by the matter sector. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

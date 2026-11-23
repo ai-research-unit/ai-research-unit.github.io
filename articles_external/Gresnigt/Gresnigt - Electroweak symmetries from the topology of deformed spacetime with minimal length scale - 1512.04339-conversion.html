@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electroweak Symmetries from the Topology of Deformed Spacetime with Minimal Length Scale — Biquaternion Universe</title>
+  <meta name="description" content="&quot;An unstable theory might be deformed until a stable theory is reached which is likely to be of wider validity than that of the original unstable theory.&quot;…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="electroweak-symmetries-from-the-topology-of-deformed-spacetime-with-minimal-length-scale"><strong>Electroweak Symmetries from the Topology of Deformed Spacetime with Minimal Length Scale</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.04339 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt, Adam B. Gillard</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 October 2015 (the PDF header prints "November 1, 2021", a typesetting timestamp)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - Electroweak symmetries from the topology of deformed spacetime with minimal length scale - 1512.04339-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Electroweak symmetries from the topology of deformed spacetime with minimal length scale - 1512.04339.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-paper-does-derives-the-electroweak-gauge-group-from-two-assumptions-and-no-model-of-particles-the-first-is-lie-algebraic-stability-the-poincare-algebra-is-unstable-and-stabilising-it-once-with-a-minimal-length-math9-gives-math10-the-anti-de-sitter-isometry-group-as-the-symmetry-of-spacetime-at-the-scale-math11-the-second-is-that-particles-are-extended-objects-of-size-math12-whose-topological-information-must-be-compatible-with-the-topology-of-the-spacetime-they-live-in-homotopy-groups-are-unchanged-by-passing-to-the-maximal-compact-subgroup-math13-and-unitarity-replaces-that-by-math14-that-is-the-electroweak-group-and-the-argument-evades-the-no-go-theorems-because-the-poincare-nilpotency-they-rely-on-is-gone">What the Paper Does Derives the electroweak gauge group from two assumptions and no model of particles. The first is Lie-algebraic stability: the Poincaré algebra is unstable, and stabilising it once with a minimal length $\ell$ gives $SO(2,3)$, the anti de Sitter isometry group, as the symmetry of spacetime at the scale $\ell$. The second is that particles are extended objects of size $\ell$ whose topological information must be compatible with the topology of the spacetime they live in. Homotopy groups are unchanged by passing to the maximal compact subgroup, $SO(2)\times SO(3)$, and unitarity replaces that by $U(1)\times SU(2)$. That is the electroweak group, and the argument evades the no-go theorems because the Poincaré nilpotency they rely on is gone.</h2>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="stability-as-a-principle">Stability as a principle</h3>
+<p>"An unstable theory might be deformed until a stable theory is reached which is likely to be of wider validity than that of the original unstable theory." Galilean relativity is unstable: with $[N_i,N_j]=0$ (paper 3), stabilising with $c$ gives $[N_i,N_j]=-\frac{i}{c^2}M_{ij}$ (paper 4) and the Lorentz algebra (paper 9), recovered in the limit as $SO(1,3)\to SO(3)\otimes_s\mathbb{R}^3$ (paper 11). Adding translations $T_4\otimes_s SO(1,3)$ "destabilizes the isometry group which is now again unstable", so a second deformation is needed, and "when an invariant length scale is introduced, the resulting spacetime is restricted to a hypersurface of one fewer dimensions. Translations are then no longer admissible isometries and this deformation process terminates."</p>
+<h3 id="the-deformation-a-five-vector">The deformation A five-vector</h3>
+<p>$x^A=(ct,\mathbf{x},\ell\rho)$ (paper 15) and momentum $p^A=(c^{-1}E,\mathbf{p},\ell^{-1}\lambda)$ (paper 16), with $$ds^2=c^2dt^2-d\mathbf{x}^2+\ell^2d\rho^2$$ (paper 17) and the deformed commutator $$[P_\mu,P_\nu]=0\ \longrightarrow\ [P_\mu,P_\nu]=-\frac{i}{\ell^2}J_{\mu\nu}$$ (paper 18). Identifying $P_\mu=J_{\mu4}$ turns the whole algebra into one relation in five dimensions, $[J_{AB},J_{CD}]=-i(\eta_{BC}J_{AD}+\eta_{AD}J_{BC}-\eta_{AC}J_{BD}-\eta_{BD}J_{AC})$ (paper 19),"with the momenta restricted to the coset space Pµ = Jµ4 ∈ SO(2, 3)/SO(1, 3). This corresponds to the anti de Sitter group. At" The sign is discussed, not ignored: cosmological observations give positive curvature, and the reply is "on the quantum scale, spacetime looks like anti de Sitter", a claim whose detail the paper defers. </p>
+<h3 id="singletons">Singletons</h3>
+<p>The deformed relativity changes what a particle is:"elementary particles should therefore be associated with the unitary irreducible representations not of the Poincaré group, but of the anti de Sitter group", and "the representations of the anti de Sitter group, like the Poincaré group, admit a positive minimum energy. This means that representations of this group naturally lends themselves to a particle interpretation. This is not the case for de Sitter space with positive curvature." Dirac's singletons are given as $\mathrm{Rac}=D(\tfrac12,0)$, $\mathrm{Di}=D(1,\tfrac12)$ (paper 20) with the products $\mathrm{Rac}\otimes\mathrm{Rac}=\oplus_{s=0,1,\dots}D(s+1,s)$, $\mathrm{Rac}\otimes\mathrm{Di}=\oplus_{2s=1,3,\dots}D(s+1,s)$, $\mathrm{Di}\otimes\mathrm{Di}=\oplus_{s=1,2,\dots}D(s+1,s)\oplus D(2,0)$ (paper 21–23), and "in Anti de Sitter space, massless particles are composed of two singletons".</p>
+<h3 id="the-no-go-theorems-read-rather-than-dodged">The no-go theorems, read rather than dodged</h3>
+<p>O'Raifeartaigh's theorem "only applies to any finite-dimensional Lie algebra that contains the Poincaré algebra. Our deformation of special relativity to anti de Sitter relativity means this condition is no longer satisfied. In particular the nilpotency of the generators of spacetime translations is lost with the introduction of a minimal length scale." The theorems are then given a reason: $\text{External}\times\text{Internal}:H\to H$ (paper 24–25) holds in both the point-like and the extended case, and what the theorems forbid is precisely the blurring of the boundary. "This we believe provides a physical reason as to why no-go theorems exist."</p>
+<h3 id="the-derivation">The derivation</h3>
+<p>"The homotopy groups of a group G are the same as those of its maximal compact subgroup K. In our case this means that the internal topology of a particle is given by the maximal compact subgroup of SO(2, 3). This is the direct product group SO(2) × SO(3). Consistency with quantum mechanics means we want unitary groups instead giving U (1) × SU (2), the electroweak gauge group, which is locally isomorphic to the anti de Sitter maximal compact subgroup. The need" So
+$$SO(2,3)\times SU(2)\times U(1):H\to H$$
+(paper 26). The strong force is explicitly not derived: it "is not felt by all SM fermions", and the suggestion is one more deformation, $SO(2,3)\to SO_q(2,3)$ (quantum group), with Finkelstein's trefoil/ $SU_q(2)$ correspondence as the precedent.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-gauge-group-from-the-homotopy-of-the-isometry-group">1. Gauge group from the homotopy of the isometry group</h3>
+<p><strong>The idea.</strong> A particle of size $\ell$ cannot have internal topology incompatible with the topology of its surroundings; homotopy is a property of the maximal compact subgroup; unitarity picks the compact form; the group that emerges is $U(1)\times SU(2)$. A <strong>mechanism</strong> that produces the electroweak group from no fermion input at all.</p>
+<p><strong>What it would add.</strong> The corpus's electroweak article starts from the algebra $\mathbb{B}$ and finds that its compact slice is $U(2)=(SU(2)\times U(1))/\mathbb{Z}_2$, differing from the Standard Model by a quotient. This paper gets $SU(2)\times U(1)$ as a <em>product</em>, with no quotient, and for a different reason — so the two derivations disagree at exactly the point the corpus's article identifies as the framework's defect. That is a sharp comparison.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation gives the group and nothing else: no hypercharges, no chirality, no representation content, no three generations. A group obtained this way is a statement about which group is admissible, not about which particles exist, and the paper never checks that its $U(1)$ is hypercharge rather than some other $U(1)$ inside $SO(2)$.</p>
+<h3 id="2-stability-as-a-selection-principle-for-algebras">2. Stability as a selection principle for algebras</h3>
+<p><strong>The idea.</strong> Of two algebras describing the same physics, prefer the stable one; instability is a defect to be deformed away, and the deformation parameters are the invariant scales. A <strong>principle</strong> that turns "which algebra?" into a well-posed question with an answer unique up to isomorphism. </p>
+<p><strong>What it would add.</strong> The corpus chooses $\mathbb{B}$ on grounds of match — it has the right signature, the right zero divisors, the right gauge slice — and repeatedly asks whether a larger algebra is needed. This supplies a criterion the corpus does not have: not "does it fit?" but "is it stable?" The paper's own use of it is to justify leaving Minkowski space.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/why-biquaternions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's $\mathbb{B}$ is a <em>real</em> algebra of fixed dimension, and the stability theorem applies to families of Lie algebras being deformed; whether an algebra of observables can be called stable or unstable is not defined here. And the payoff is a change of spacetime signature at the Planck scale, which no measurement in the corpus's domain can reach.</p>
+<h3 id="3-the-no-go-theorems-given-a-physical-reason">3. The no-go theorems given a physical reason</h3>
+<p><strong>The idea.</strong> The theorems are true and their content is that a boundary between a particle's inside and outside must be kept; an extended particle respects the boundary but no longer forbids a relation across it. A <strong>reading</strong> that converts a prohibition into a statement about scales.</p>
+<p><strong>What it would add.</strong> The corpus's obstruction catalogue records what the algebra cannot do and treats the obstructions as final. This offers a different status for an obstruction: exact at one scale, dissolved at another, with the dissolving agent named (the lost nilpotency of $P_\mu$).</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The resolution depends on $P_\mu$ no longer being nilpotent, which is a property of the deformed algebra; the corpus's algebra has no $P_\mu$ to deform in this sense. And the paper's rebuilt version of the theorems — $\text{External}\times\text{Internal}$ preserved in both cases — is close to restating the theorems rather than explaining them.</p>
+<p>The rank is a judgement: the homotopy mechanism first, because it is a derivation of a group the corpus also derives and the two can be set side by side; the stability principle second, because it is a transferable criterion; the reading of the no-go theorems third, because it is the most interpretive.</p>
+<p>Twenty-two pages: Lie-algebraic stability and the Galilean-to-Lorentz deformation, the deformation of Poincaré by a minimal length into anti de Sitter, singletons, extended topological particles, the no-go theorems and their reinterpretation, the homotopy derivation of the electroweak group, and the strong-force speculation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

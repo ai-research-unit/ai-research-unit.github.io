@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General polarization modes for the Rosen gravitational wave — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General polarization modes for the Rosen gravitational wave - 1004.2734.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-polarization-modes-for-the-rosen-gravitational-wave"><strong>General polarization modes for the Rosen gravitational wave</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1004.2734v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Bethan Cropp, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 June 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - General polarization modes for the Rosen gravitational wave - 1004.2734-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General polarization modes for the Rosen gravitational wave - 1004.2734.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General polarization modes for the Rosen gravitational wave - 1004.2734.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Strong gravitational plane waves come in Brinkmann and Rosen forms, related by a coordinate change. The two forms handle linear polarisations alike but differ for circular, elliptic, and general polarisations. The authors analyse the Rosen form with an envelope function and two freely specifiable polarisation functions. The vacuum equations then reduce to one equation for the envelope coupled to what they call a random walk in polarisation space. They construct a circularly polarised strong-field Rosen wave and indicate how the idea generalises beyond four dimensions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-puzzle">The puzzle</h3>
+<p>"While these two metric ansatzë are related by a coordinate transformation, so that they should describe essentially the same physics, they rather puzzlingly seem to treat polarization states quite differently."</p>
+<h3 id="the-asymmetry">The asymmetry</h3>
+<p>"Both ansatzë deal equally well with + and × linear polarizations, but there is a qualitative difference in the way they deal with circular, elliptic, and more general polarization states."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"In this article we will develop a general formalism for dealing with arbitrary polarization states in the Rosen form of the gravitational wave metric, representing an arbitrary polarization by a trajectory in a suitably defined two dimensional hyperbolic plane."</p>
+<h3 id="the-reformulation">The reformulation</h3>
+<p>"To address this puzzle we have re-analyzed the Rosen gravity wave in terms of an 'envelope' function and two freely specifiable functions corresponding to the individual polarization modes."</p>
+<h3 id="the-field-equations">The field equations</h3>
+<p>"The vacuum field equations can be reinterpreted in terms of a single differential equation governing the 'envelope' coupled with what is essentially a random walk in polarization space."</p>
+<h3 id="the-results">The results</h3>
+<p>"we have indicated how to construct a circularly polarized strong field Rosen form gravity wave, and how to generalize this central idea beyond (3+1) dimensions."</p>
+<h3 id="the-surprise">The surprise</h3>
+<p>"Strong field gravitational waves, both in Brinkmann form and Rosen form, have been known for some 85 years. Despite this there are still a number of surprises hiding in the Rosen form."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-polarisations-live-on-a-hyperbolic-plane">1. Polarisations live on a hyperbolic plane</h3>
+<p><strong>The idea.</strong> Any polarisation state is a point on a two-dimensional hyperbolic plane, and a wave is a path on it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds geometry from paravectors. Representing a polarisation state as a point in a hyperbolic plane gives the article a concrete two-dimensional geometry with physical meaning.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of the geometry.</p>
+<p><strong>What stands in the way.</strong> The plane is specific to plane waves. Ranked first, because it gives the article a worked geometric model.</p>
+<h3 id="2-two-forms-differ-for-a-coordinate-reason">2. Two forms differ for a coordinate reason</h3>
+<p><strong>The idea.</strong> Coordinate-equivalent metrics can still differ in how they describe polarisation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> treats coordinate choices as bookkeeping. This paper shows a case where the choice changes what is easy to express, which is a caution for those conventions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of coordinate choices.</p>
+<p><strong>What stands in the way.</strong> It is a statement about computational convenience. Ranked second.</p>
+<h3 id="3-an-envelope-plus-a-walk">3. An envelope plus a walk</h3>
+<p><strong>The idea.</strong> The field equations split into an amplitude equation and a polarisation evolution.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats amplitude and shape together. Separating them may make the massless limit easier to analyse in a wave context.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of wave solutions.</p>
+<p><strong>What stands in the way.</strong> The split is shown for the Rosen form only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

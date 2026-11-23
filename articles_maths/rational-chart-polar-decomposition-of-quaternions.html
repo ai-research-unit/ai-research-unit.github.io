@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Quaternions</em> writes every nonzero quaternion as</p>
 <p>$$
-\tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \varrho = \sqrt{\langle\tilde q\rangle_{\natural}} > 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
+\tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \varrho = \sqrt{\langle\tilde q\rangle_{\natural}} &gt; 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
 $$</p>
 <p>with $\varrho$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That article proves the pair unique and treats $\tilde u_{\mathrm r}$ as a point of the unit sphere $S^3$. It chooses no coordinate on the sphere: the unit factor is named by the equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, not by a triple of numbers.</p>
 <p>This article names it. For a pure quaternion $\vec v = v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$ put</p>
@@ -110,7 +110,7 @@ u(\vec v) = (1-\vec v)(1+\vec v)^{-1} = \frac{(1-\langle \vec v\rangle_{\natural
 $$</p>
 <p>The denominator $1+\vec v$ is invertible because</p>
 <p>$$
-\langle 1+\vec v\rangle_{\natural} = (1+\vec v)(1+\vec v)^{\natural} = 1+\langle \vec v\rangle_{\natural} > 0,
+\langle 1+\vec v\rangle_{\natural} = (1+\vec v)(1+\vec v)^{\natural} = 1+\langle \vec v\rangle_{\natural} &gt; 0,
 $$</p>
 <p>and its inverse is $(1-\vec v)/(1+\langle \vec v\rangle_{\natural})$, since $(1+\vec v)(1-\vec v)=1-\vec v^2=1+\langle \vec v\rangle_{\natural}$. Substituting gives the expanded form. The real and pure parts of $u(\vec v)$ are</p>
 <p>$$
@@ -171,8 +171,8 @@ $$</p>
 <h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition</p>
-<p>$$ \boxed{\; \tilde q = \varrho\,(1-\vec v)(1+\vec v)^{-1}, \qquad \varrho>0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$</p>
-<p><strong>Existence.</strong> Let $\tilde q\notin(-\infty,0]$, and put $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$. Then $\varrho>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-\varrho$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.</p>
+<p>$$ \boxed{\; \tilde q = \varrho\,(1-\vec v)(1+\vec v)^{-1}, \qquad \varrho&gt;0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$</p>
+<p><strong>Existence.</strong> Let $\tilde q\notin(-\infty,0]$, and put $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$. Then $\varrho&gt;0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-\varrho$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.</p>
 <p><strong>Uniqueness.</strong> Taking norms gives $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/\varrho$; the chart is injective, so $\vec v$ is determined by $\tilde u_{\mathrm r}$.</p>
 <p>The coordinate is $\vec v=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
 <p>$$
@@ -181,7 +181,7 @@ $$</p>
 <h3 id="the-domain">The Domain</h3>
 <p>The domain is</p>
 <p>$$
-\mathbb{H}\setminus(-\infty,0] = \{\,\tilde q : \tilde q\neq0 \ \text{and} \ \tilde q\notin\mathbb{R}_{<0}\,\},
+\mathbb{H}\setminus(-\infty,0] = \{\,\tilde q : \tilde q\neq0 \ \text{and} \ \tilde q\notin\mathbb{R}_{&lt;0}\,\},
 $$</p>
 <p>the quaternion space cut along the closed negative real axis.</p>
 <p>The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the sphere is attained exactly once. In the formula $\vec v=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$ the two exclusions are visible at once: the denominator vanishes at $\tilde q=-\varrho$, the negative real axis, and numerator and denominator both vanish at $\tilde q=0$, where $\varrho=0$ and no decomposition exists. Unlike the split cases, there is no null cone and no element of vanishing norm; the cut is a ray, not a hypersurface.</p>
@@ -305,8 +305,8 @@ $$</p>
 <p>$$
 M(\vec v)=\frac{1}{1+\langle \vec v\rangle_{\natural}}
 \begin{pmatrix}
-1-\langle \vec v\rangle_{\natural}+2iv_z & 2iv_x+2v_y\\
-2iv_x-2v_y & 1-\langle \vec v\rangle_{\natural}-2iv_z
+1-\langle \vec v\rangle_{\natural}+2iv_z &amp; 2iv_x+2v_y\\
+2iv_x-2v_y &amp; 1-\langle \vec v\rangle_{\natural}-2iv_z
 \end{pmatrix}.
 $$</p>
 <p>The Cayley transform is the matrix analogue of the chart: it maps the anti-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The two-sided operator of §<em>The Product Formula</em> is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.</p>
@@ -415,7 +415,7 @@ $$</p>
 $$</p>
 <p>with $\sqrt{\langle \vec v\rangle_{\natural}}=2000.000500$. The reconstruction returns $\tilde q$ to $1.1\times10^{-16}$. The example makes the cut visible: as the scalar part of $\tilde q$ approaches $-\varrho$, the denominator $\varrho+\tilde q$ approaches zero and the coordinate escapes along the direction of the vector part, which is the direction of approach to the cut.</p>
 <h2 id="summary">Summary</h2>
-<p>Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=\varrho\,u(\vec v)$, with $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.</p>
+<p>Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=\varrho\,u(\vec v)$, with $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}&gt;0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.</p>
 <p>The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(\vec v)=u(\vec v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the two-sided operator $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$, which is the bare fraction conjugated by $1+\vec v_1$; the pole is $\vec v_1\vec v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(\vec v)=(I-V)(I+V)^{-1}$ into $SU(2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

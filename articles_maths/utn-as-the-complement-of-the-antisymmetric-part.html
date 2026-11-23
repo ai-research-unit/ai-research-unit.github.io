@@ -74,7 +74,7 @@
 <p><strong>The upper triangular matrices have dimension $n(n+1)/2$, the same as the symmetric matrices, and they meet the antisymmetric matrices only at zero, so $M_n(\mathbb{R})=UT_n\oplus\operatorname{Skew}_n$ is a direct sum of the same dimensions as the symmetric split and of a different kind.</strong></p>
 <p>The article proves the dimension count, proves that the intersection is zero, derives the direct sum, and shows that this complement is not the orthogonal complement for the trace form: the trace form is degenerate on $UT_n$, with kernel $n_+$ of dimension $n(n-1)/2$. It identifies the true orthogonal complement of $\operatorname{Skew}_n$, which is $\operatorname{Sym}_n$, computes the projection onto $UT_n$ along $\operatorname{Skew}_n$, shows that this projection is not the symmetrisation, and uses it to model $\operatorname{Sym}_n$ linearly by upper triangular matrices. It assumes <em>The Two Halves as Orthogonal Complements for the Trace Form</em> and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em>.</p>
 <h2 id="the-two-dimensions">The Two Dimensions</h2>
-<p><strong>Definition.</strong> $UT_n=\{A:A_{ij}=0\ \text{for}\ i>j\}$.</p>
+<p><strong>Definition.</strong> $UT_n=\{A:A_{ij}=0\ \text{for}\ i&gt;j\}$.</p>
 <p><strong>The two spaces have the same dimension.</strong> A symmetric matrix is free on the diagonal and above it, and an upper triangular matrix is free on the diagonal and above it. The two free regions are the same set of entries, so</p>
 <p>$$
 \dim UT_n=n+\binom{n}{2}=\frac{n(n+1)}{2}=\dim\operatorname{Sym}_n.
@@ -87,7 +87,7 @@ $$</p>
 <p><strong>Equal dimension is not equality.</strong> $UT_n$ contains the whole diagonal and the identity $\mathrm{I}$, and $\mathrm{I}$ is not antisymmetric. The two spaces are different subspaces of the same dimension, and the article compares them as complements rather than as subspaces.</p>
 <h2 id="the-intersection-is-zero">The Intersection Is Zero</h2>
 <p><strong>Proposition.</strong> $UT_n\cap\operatorname{Skew}_n=\{0\}$.</p>
-<p><em>Proof.</em> Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by antisymmetry, the lower part by triangularity, and the upper part by antisymmetry together with the lower part.</p>
+<p><em>Proof.</em> Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i&gt;j$. So every entry is zero: the diagonal by antisymmetry, the lower part by triangularity, and the upper part by antisymmetry together with the lower part.</p>
 <p><strong>The measurement confirms the zero intersection.</strong> On the union of the two bases the rank is the sum of the dimensions: $3+1=4$ at $n=2$, $6+3=9$ at $n=3$ and $10+6=16$ at $n=4$. A nonzero intersection would make the rank smaller.</p>
 <p><strong>The intersection is zero for a structural reason.</strong> An antisymmetric matrix with zero lower part is zero, because antisymmetry turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.</p>
 <h2 id="the-direct-sum">The Direct Sum</h2>
@@ -130,9 +130,9 @@ $$</p>
 <p><strong>Definition.</strong> Let $\pi:M_n(\mathbb{R})\to UT_n$ be the projection with kernel $\operatorname{Skew}_n$.</p>
 <p><strong>The projection has an explicit formula.</strong></p>
 <p>$$
-\pi(X)_{ii}=X_{ii},\qquad \pi(X)_{ij}=X_{ij}+X_{ji}\ (i<j),\qquad \pi(X)_{ij}=0\ (i>j).
+\pi(X)_{ii}=X_{ii},\qquad \pi(X)_{ij}=X_{ij}+X_{ji}\ (i&lt;j),\qquad \pi(X)_{ij}=0\ (i&gt;j).
 $$</p>
-<p><em>Proof.</em> Put $T=\pi(X)$ and $K=X-T$. For $i>j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i<j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because an antisymmetric matrix has zero diagonal.</p>
+<p><em>Proof.</em> Put $T=\pi(X)$ and $K=X-T$. For $i&gt;j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i&lt;j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because an antisymmetric matrix has zero diagonal.</p>
 <p><strong>Measured, the remainder is always anti-Hermitian.</strong> On $100$ random matrices at each of $n=2,3,4$ the part $X-\pi(X)$ was anti-Hermitian in $100$ cases out of $100$, and $\pi(X)$ was upper triangular in every case.</p>
 <p><strong>The projection is not the symmetrisation.</strong> On the diagonal the two maps agree, because both copy $X_{ii}$. Above the diagonal they differ by a factor two, since</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 <h2 id="the-linear-model-of-the-symmetric-half">The Linear Model of the Symmetric Half</h2>
 <p><strong>The direct sum gives a linear isomorphism $\operatorname{Sym}_n\to UT_n$.</strong> It is the restriction of $\pi$ to the symmetric matrices:</p>
 <p>$$
-S\longmapsto T=\pi(S),\qquad T_{ii}=S_{ii},\qquad T_{ij}=2S_{ij}\ (i<j),
+S\longmapsto T=\pi(S),\qquad T_{ii}=S_{ii},\qquad T_{ij}=2S_{ij}\ (i&lt;j),
 $$</p>
 <p>and its inverse is $T\mapsto\tfrac12(T+T^{\mathsf T})$.</p>
 <p><strong>The two formulas are inverse.</strong> For symmetric $S$ and $T=\pi(S)$ the equation $T+T^{\mathsf T}=2S$ holds entry by entry: on the diagonal both sides are $2S_{ii}$, and above the diagonal $T_{ij}+T_{ji}=2S_{ij}+0$. Measured on random symmetric matrices at $n=2,3,4$, the identity held in every case.</p>

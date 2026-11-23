@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The exponential metric represents a traversable wormhole — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The exponential metric represents a traversable wormhole - 1805.03781.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-metric-represents-a-traversable-wormhole"><strong>The exponential metric represents a traversable wormhole</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1805.03781v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Tritos Ngampitipan, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 21 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - The exponential metric represents a traversable wormhole - 1805.03781-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The exponential metric represents a traversable wormhole - 1805.03781.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The exponential metric represents a traversable wormhole - 1805.03781.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Several authors have proposed a metric with exponential factors of $m/r$. Its weak-field limit matches Newtonian gravity, so it passes the obvious tests. The strong field is very different. The authors analyse the geometry and show it is a traversable wormhole. Light passing the throat is strongly lensed. They also examine curvature, convergence conditions, and Regge–Wheeler potentials.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-metric">The metric</h3>
+<p>$$ds^2=-e^{-2m/r}dt^2+e^{+2m/r}\{dr^2+r^2(d\theta^2+\sin^2\theta\,d\varphi^2)\}\qquad (paper\ 1)$$</p>
+<h3 id="the-weak-field">The weak field</h3>
+<p>"While the weak-field behaviour matches nicely with weak-field general relativity, and so also automatically matches nicely with the Newtonian gravity limit, the strong-field behaviour is markedly different."</p>
+<h3 id="why-it-was-proposed">Why it was proposed</h3>
+<p>"Proponents of these exponential metrics have very much focussed on the absence of horizons"</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"It is a traversable wormhole, with time slowed down on the other side of the wormhole throat."</p>
+<h3 id="the-lensing">The lensing</h3>
+<p>"Strong field lensing phenomena are markedly different from Schwarz[schild]"</p>
+<h3 id="the-honest-framing">The honest framing</h3>
+<p>"Regardless of one's views regarding the merits of some of the 'justifications' used for advocating the exponential metric, the exponential metric can simply be viewed as a phenomenological model that can be studied in its own right."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-no-horizon-but-a-throat">1. No horizon, but a throat</h3>
+<p><strong>The idea.</strong> Removing the horizon replaces the black hole with a wormhole.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizonless objects as a possibility. Here is a concrete one, with its full geometry worked out.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of horizonless models.</p>
+<p><strong>What stands in the way.</strong> The model is phenomenological. Ranked first, because it is the most explicit worked example.</p>
+<h3 id="2-weak-field-is-not-enough">2. Weak field is not enough</h3>
+<p><strong>The idea.</strong> Matching Newtonian gravity constrains almost nothing about the strong field.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a sharp case where a framework passes all weak-field tests and still differs wildly inside.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> Lensing is the only strong-field handle. Ranked second.</p>
+<h3 id="3-negative-energy-at-the-throat">3. Negative energy at the throat</h3>
+<p><strong>The idea.</strong> A traversable throat needs a violation of the convergence condition.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain an explicit stress-energy that does the job.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of violations.</p>
+<p><strong>What stands in the way.</strong> The required matter is not identified. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

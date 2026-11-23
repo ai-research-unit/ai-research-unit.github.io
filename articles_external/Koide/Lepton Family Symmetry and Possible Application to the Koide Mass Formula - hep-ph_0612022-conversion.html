@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lepton Family Symmetry and Possible Application to the Koide Mass Formula — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Lepton Family Symmetry and Possible Application to the Koide Mass Formula - hep-ph_0612022.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lepton-family-symmetry-and-possible-application-to-the-koide-mass-formula"><strong>Lepton Family Symmetry and Possible Application to the Koide Mass Formula</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0612022 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ernest Ma</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 December 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Lett. B 649 (2007) 287–291</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Lepton Family Symmetry and Possible Application to the Koide Mass Formula - hep-ph_0612022-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Lepton Family Symmetry and Possible Application to the Koide Mass Formula - hep-ph_0612022.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Lepton Family Symmetry and Possible Application to the Koide Mass Formula - hep-ph_0612022.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a supersymmetric model in which the charged-lepton masses are proportional to the squares of three vacuum expectation values, so that the closure on the masses becomes a closure on the vevs. The family symmetry is a finite group of order $81$ generated by four $Z_3$ transformations, which allows exactly three invariants at the cubic level; the vevs are fixed by a soft-breaking superpotential whose minimum is equivalent to the relation. The condition that delivers the relation is one equation on the soft masses, $m_3=m_0=\sqrt{8m_1m_2}$, which the author states is not understood. The gain, and the author says this explicitly, is not a derivation of that condition but the fact that once it holds, unbroken supersymmetry protects it.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-group-and-why-it-is-used">The group and why it is used</h3>
+<p>Four $Z_3$ transformations act on a basis $(a_1,a_2,a_3)$: the cyclic permutation $a_1\to a_2\to a_3\to a_1$, and $a_i\to\omega a_i\to\omega^2a_i\to a_i$ for each $i$ separately, with $\omega=\exp(2\pi i/3)$. "The resulting group, call it $\Sigma(81)$, has 81 elements, divided into 17 equivalence classes. It has 9 one-dimensional irreducible representations $1_i$ and 8 three-dimensional ones $3_A$, $\bar3_A$, $3_B$, $\bar3_B$, $3_C$, $\bar3_C$, $3_D$, $\bar3_D$."</p>
+<p>"The key property of $\Sigma(81)$ which allows this to work is that given just the representations $3_A$ and $\bar3_A$, there are only three invariants:"</p>
+<p>$$
+a_1a_1a_1+a_2a_2a_2+a_3a_3a_3,\qquad
+a_1\bar a_1+a_2\bar a_2+a_3\bar a_3,\qquad
+\bar a_1\bar a_1\bar a_1+\bar a_2\bar a_2\bar a_2+\bar a_3\bar a_3\bar a_3 .
+\tag{paper 4}
+$$</p>
+<h3 id="the-mass-relation-from-the-superpotential">The mass relation from the superpotential</h3>
+<p>Lepton superfields $L_i=(\nu_i,l_i)$ and $l^c_i$ in $3_A$; Higgs superfields $\eta_i,\xi_i$ in $3_A$, $\zeta_i,\psi_i,\sigma_i$ in $\bar3_A$, and $\phi$ a singlet. With</p>
+<p>$$
+W=f\,L_il^c_i\eta_i+M_1\eta_i\psi_i+h_1\zeta_i\psi_i\sigma_i+M_2\zeta_i\xi_i+h_2\xi_i\sigma_i\phi ,
+\tag{paper 9}
+$$</p>
+<p>the supersymmetric minimum gives $\langle\eta_i^0\rangle=-h_1\langle\zeta_i^0\rangle\langle\sigma_i\rangle/M_1$ and hence</p>
+<p>$$
+m_i=f\langle\eta_i^0\rangle=\frac{fh_1h_2\langle\sigma_i\rangle^2\langle\phi^0\rangle}{M_1M_2},
+\tag{paper 12}
+$$</p>
+<p>so that each mass is proportional to the square of one vev. Koide's own reading of the relation as</p>
+<p>$$
+v_1^2+v_2^2+v_3^2=\frac23\left(v_1+v_2+v_3\right)^2
+\tag{paper 2}
+$$</p>
+<p>is then a statement about the $\langle\sigma_i\rangle$, which the rest of the paper arranges.</p>
+<h3 id="the-condition-that-delivers-it">The condition that delivers it</h3>
+<p>A further soft-breaking superpotential in the rotated variables $\chi_0,\chi_1,\chi_2$,</p>
+<p>$$
+W=\tfrac12m_0\chi_0^2+\tfrac12m_1\chi_1^2+\tfrac12m_2\chi_2^2+m_3\chi_1\chi_2+\tfrac13\lambda\left(\chi_0^3+\chi_1^3+\chi_2^3+6\chi_0\chi_1\chi_2\right),
+\tag{paper 16}
+$$</p>
+<p>has a supersymmetric minimum when</p>
+<p>$$
+m_3=m_0=\sqrt{8m_1m_2},
+\tag{paper 20}
+$$</p>
+<p>which is equivalent to $\frac13(\langle\sigma_1\rangle+\langle\sigma_2\rangle+\langle\sigma_3\rangle)^2=\frac12(\langle\sigma_1\rangle^2+\langle\sigma_2\rangle^2+\langle\sigma_3\rangle^2)$, i.e. to the relation. "The validity of Eq. (20) is of course not understood. It may be due to some underlying symmetry or dynamics, but whatever the origin, once it is established, Eq. (2) is protected by the unbroken supersymmetry of the theory."</p>
+<h3 id="neutrinos">Neutrinos</h3>
+<p>"it is clear that having only superfields which transform as $3_A$ and $\bar3_A$ will not work, because that necessarily yields a diagonal mass matrix." With scalar triplets in $3_A$ and $3_B$ and $3_A\times3_A=\bar3_A+\bar3_B+\bar3_B$,</p>
+<p>$$
+M_\nu=\begin{pmatrix}a&amp;f&amp;e\\ f&amp;b&amp;d\\ e&amp;d&amp;c\end{pmatrix},
+\tag{paper 23}
+$$</p>
+<p>"where $(a,b,c)$ come from $3_A$ and $(d,e,f)$ from $3_B$. This makes no prediction, but if the vacuum structure can be restricted, say $b=c$ and $e=f$ ... then the approximate tribimaximal mixing of neutrinos may be obtained."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-masses-as-squares-of-vevs-with-the-closure-imposed-on-the-vevs">1. Masses as squares of vevs, with the closure imposed on the vevs</h3>
+<p><strong>The idea.</strong> A <strong>mechanism shape</strong>: arrange the spectrum so that $m_i\propto v_i^2$, and impose the closure on the $v_i$ instead of on the masses. Then the closure in the masses is automatic whatever the $v_i$ are, and the model's job is reduced to producing one quadratic relation among three vevs.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> gets $m_i$ from the eigenvalues of $M_f=Y^fv/\sqrt2$, so masses are linear in Yukawas and the closure is a condition on eigenvalues. Here the condition moves one level down, to a relation between vevs, which is the kind of shift that turns a numerical coincidence into a constraint on a potential. It also matches the corpus's own amplitude variable $\gamma=\sqrt m$, which is exactly the $v$ of this paper.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, and <code>articles_internal/flavour-research.md</code> §3, where the amplitude vector is the object of study.</p>
+<p><strong>What stands in the way.</strong> The corpus has no Higgs potential with three vevs and no family symmetry, so the mechanism arrives without a home. The shift also buys nothing by itself: a closure on vevs is as unexplained as a closure on masses unless the potential is specified, which is the next item.</p>
+<h3 id="2-supersymmetry-as-the-protector-of-the-relation">2. Supersymmetry as the protector of the relation</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: if the relation is imposed at the scale where the soft terms are fixed, unbroken supersymmetry keeps it exact, and the corrections at the electroweak scale are small because the vevs do not run far.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 asks how the relation survives running, and its answer is a number (the drift is small), not a reason. This paper offers a reason: a symmetry that forbids the corrections, rather than a cancellation among them. The lepton drift actually measured by running is $5\times10^{-6}$ in $Q$ (the conversions of Li–Ma and of Xing–Zhang in this folder), small enough that a symmetry explanation is available and not required.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, in the row that asks for a boundary condition, and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> in its scheme discussion.</p>
+<p><strong>What stands in the way.</strong> The condition $m_3=m_0=\sqrt{8m_1m_2}$ is itself unexplained, and it is the whole content; suspending the problem from the masses to the soft masses is a postponement unless the soft masses have a principle. The corpus also has no supersymmetric article to receive it.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The group $\Sigma(81)$ and its character tables occupy most of the appendix and are a technical device for "only three invariants", nothing more. The neutrino mass matrix (paper 23) is the general symmetric matrix, so it predicts nothing by construction. The tribimaximal remark is a conditional, not a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

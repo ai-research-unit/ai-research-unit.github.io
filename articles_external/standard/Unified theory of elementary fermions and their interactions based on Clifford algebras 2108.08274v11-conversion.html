@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Theory of Elementary Fermions and Their Interactions Based on Clifford Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Unified theory of elementary fermions and their interactions based on Clifford algebras…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unified-theory-of-elementary-fermions-and-their-interactions-based-on-clifford-algebras"><strong>Unified Theory of Elementary Fermions and Their Interactions Based on Clifford Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2108.08274v11 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Douglas Newman</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v11, 13 June 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>31 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Unified theory of elementary fermions and their interactions based on Clifford algebras 2108.08274v11-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Unified theory of elementary fermions and their interactions based on Clifford algebras 2108.08274v11.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Unified theory of elementary fermions and their interactions based on Clifford algebras 2108.08274v11.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Replaces the chiral Standard Model description of fermions with a Clifford-algebra one: seven commuting elements of $\mathrm{Cl}_{7,7}$ assign seven binary quantum numbers to all known fermions, the sub-algebra $\mathrm{Cl}_{3,3}$ organises lepton doublets, and the same structure is claimed to produce quark confinement, gauge fields, gravitational field equations and a predicted fourth generation. Chirality is declared redundant rather than rebuilt.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>Seven commuting elements of $\mathrm{Cl}_{7,7}$ define seven b[inary quantum numbers that together specify] the $2^7=128$ states of 32 fermions, and determine their parity, elect[ric charge and other properties]. [Three] commuting elements of the sub-algebra $\mathrm{Cl}_{3,3}$ define three binary quant[um numbers that specify the] eight states of lepton doublets.</p>
+<h3 id="the-modified-dirac-equation">The modified Dirac equation</h3>
+<p>The lepton sector is built on "with the Cl3,3 algebra, producing the modified Dirac equation, which takes the form of a Lorentz invariant operator acting on the 8-component Lorentz invariant column vector."</p>
+<h3 id="proper-time-across-the-series">Proper time across the series</h3>
+<p>"Identifying the proper time coordinate as the product of generators for all the Cln,n , {n = 3, 5, 7} algebras. 2. Maintaining" is listed as a crucial feature. Concretely, the product of all fourteen generators gives
+$$\bar\Gamma^0=\bar\Gamma^1\bar\Gamma^2\cdots\bar\Gamma^c\bar\Gamma^d=-I\otimes I\otimes I\otimes I\otimes I\otimes R\otimes I=1_2\otimes\Gamma^0=1_4\otimes\hat\gamma^0 \quad \text{(paper 8.2)}$$
+so the time direction is the same algebraic object at each level.</p>
+<h3 id="chirality-removed">Chirality removed</h3>
+<p>"Standard Model shows chiral symmetry breaking to be redundant." The quantum numbers are eigenvalues of fermion rest-frame operators, and "the algebraic distinction between observers' space-time coordinate frames and fermion rest frames" is maintained as a separate item.</p>
+<h3 id="quark-confinement">Quark confinement</h3>
+<p>"fines two additional binary quantum numbers that distinguish quarks and leptons" "that produce the hadron substrate, explaining quark confinement. Finally" The $\mathrm{SU}(4)\to\mathrm{SU}(3)$ breaking is "forced by the different charges on quarks and leptons and distinguishes the substrate in ‘hadronic’ space, produced" "from the external ‘leptonic’ space available only to leptons. S4."</p>
+<h3 id="the-fourth-generation">The fourth generation</h3>
+<p>"her two binary quantum numbers that distinguish four fermion generations. The predicted fourth generation is shown to have no neutrino and a distinct substrate, suggesting that ordinary matter is confined and providing candidates for unconfined dark matter." The suggestion is that "'dark matter' regions of space do not contain the substrate of 'ordinary matter', i.e. matter composed of fermions in the first three generations."</p>
+<h3 id="the-admission">The admission</h3>
+<p>"This work remains incomplete, especially in relation to gravitation and the determination of fermion masses."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-seven-binary-quantum-numbers-for-all-fermions">1. Seven binary quantum numbers for all fermions</h3>
+<p><strong>The idea.</strong> Every known fermion is fixed by seven $\pm1$ eigenvalues of commuting Clifford elements, so states are labelled by a binary string rather than by a representation. All $128$ states of $32$ fermions follow, and the charge is a function of the string. This is a <strong>formula</strong> with a completeness claim.</p>
+<p><strong>What it would add.</strong> A labelling scheme that covers quarks and leptons in one table, which the corpus's framework does by representation theory and would otherwise have to enumerate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the quantum numbers.</p>
+<p><strong>What stands in the way.</strong> The corpus's labels come from the algebra's ideals and their $\mathrm{U}(2)$ content; a binary labelling of $\mathrm{Cl}_{7,7}$ sits in a different algebra and would have to be mapped element by element.</p>
+<h3 id="2-a-fourth-generation-with-no-neutrino-as-dark-matter">2. A fourth generation with no neutrino, as dark matter</h3>
+<p><strong>The idea.</strong> The fourth generation exists, has no neutrino, and its fermions cannot enter the substrate of ordinary matter, so they are confined to regions that look like dark matter. Dark matter is not a new particle but a generation that cannot bind.</p>
+<p><strong>What it would add.</strong> A candidate for the corpus's dark-matter gap that is not a new field, which is what the corpus's open-problems article asks for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on dark matter.</p>
+<p><strong>What stands in the way.</strong> A fourth chiral generation with a heavy neutrino is excluded by the $Z$ width; the paper's escape is that this generation has no neutrino, which is a strong and specific claim the corpus would have to adopt wholesale.</p>
+<h3 id="3-substrates-and-symmetry-breaking-as-a-spatial-domain-structure">3. Substrates, and symmetry breaking as a spatial domain structure</h3>
+<p><strong>The idea.</strong> Each pair of quantum numbers corresponds to a "substrate" that fills a region of space, and the breaking of a symmetry is the selection of one substrate in one region — explicitly compared to ferromagnetic domains. Confinement and dark matter then become statements about where a substrate exists, not about a potential.</p>
+<p><strong>What it would add.</strong> A spatial reading of symmetry breaking that the corpus, which breaks symmetries algebraically, does not have.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.md</code>, on what breaking means.</p>
+<p><strong>What stands in the way.</strong> The substrate picture needs the $\mathrm{Cl}_{7,7}$ quantum numbers to identify substrates at all; without them the notion has no content, and the corpus has no comparable assignment.</p>
+<p>The rank is a judgement: the binary labelling first, because it is a concrete table; the fourth generation second, because it answers a declared gap; the substrate reading third, because it depends on the others.</p>
+<p>This is a thirty-one page paper; the $\mathrm{Cl}_{3,3}$ modified Dirac equation, the $\mathrm{Cl}_{5,5}$ doublet structure, the $\mathrm{Cl}_{7,7}$ quantum numbers, the substrates, the confinement argument and the fourth generation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

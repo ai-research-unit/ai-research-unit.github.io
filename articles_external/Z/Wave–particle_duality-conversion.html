@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave–Particle Duality — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Wave–particle_duality.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="waveparticle-duality"><strong>Wave–Particle Duality</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Wave–particle duality</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Wave–particle_duality-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Wave–particle_duality.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Wave–particle_duality.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on wave–particle duality: the statement that quantum objects show wave or particle behaviour according to the experiment, the historical route from Huygens and Newton through Planck, Einstein and de Broglie to the double-slit experiments, and the modern reading through complementarity and the uncertainty relation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-statement">The statement</h3>
+<p>"Wave–particle duality is the concept in quantum mechanics that fundamental entities of the universe, like photons and electrons, exhibit particle or wave properties according to the experimental circumstances.[1]: 59 It expresses the inability of the classical concepts such as particle or wave to fully describe the behavior of quantum objects.[2]"</p>
+<h3 id="the-historical-route">The historical route</h3>
+<p>During the 19th and early 20th centu[ry] light was settled as a wave and matter as particles, and the two identifications were then reversed in turn: Planck's quanta, Einstein's light quanta, and de Broglie's matter waves. The article's point is that each reversal was forced by an experiment, not by a preference.</p>
+<h3 id="the-modern-reading">The modern reading</h3>
+<p>The duality is not a superposition of two natures but a statement about what a given measurement asks. Which-path information and interference are complementary: a measurement that reveals the path destroys the fringes, and the quantitative trade-off is the Englert–Greenberger relation.</p>
+<p>"The experiment shows wave interference revealed a single particle at a time—quantum mechanical electrons display both wave and particle behavior."</p>
+<p>"Physical systems exhibiting wave behavior and described by the mathematics of wave equations include water waves, seismic waves, sound waves, radio waves, and more."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-duality-is-about-the-question-not-about-the-object">1. Duality is about the question, not about the object</h3>
+<p><strong>The idea.</strong> Nothing in the object is both wave and particle; the description is selected by the measurement, and the two descriptions are complementary rather than simultaneous. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A precise statement of what the corpus's wave-particle articles assert, which they sometimes put as a property of the object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.md</code>, at the statement of the duality.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus already frames the duality algebraically and only needs the epistemic clause.</p>
+<h3 id="2-which-path-information-and-visibility-trade-off-quantitatively">2. Which-path information and visibility trade off quantitatively</h3>
+<p><strong>The idea.</strong> The loss of fringe visibility is bounded by the available path information, $V^2+D^2\le1$ in the Englert–Greenberger form. The trade-off is a formula, not a slogan.</p>
+<p><strong>What it would add.</strong> A quantitative statement the corpus's duality articles could adopt in place of the qualitative one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/wave-particle-duality-and-the-weight-of-a-level-set.md</code>.</p>
+<p><strong>What stands in the way.</strong> The relation is derived for a two-path interferometer with a specific state; the corpus's algebraic framework has no interferometer, so the inequality would have to be imported with its model.</p>
+<p>This is a long encyclopedia article; the statement, the history, the double-slit evidence and the complementarity reading are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

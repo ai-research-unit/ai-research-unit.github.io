@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Energy, the Cosmological Constant, and Vacuum Energy — Area Dilution as the Engine of Cosmic Expansion — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_the_Cosmological_Constant_an.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dark-energy-the-cosmological-constant-and-vacuum-energy-area-dilution-as-the-engine-of-cosmic-expansion"><strong>Dark Energy, the Cosmological Constant, and Vacuum Energy — Area Dilution as the Engine of Cosmic Expansion</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>September 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Dark_Energy_the_Cosmological_Constant_an-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_the_Cosmological_Constant_an.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_the_Cosmological_Constant_an.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Restates the area-count argument of the earlier dark-energy papers as three numbered formulas and, in the same move, retracts the prediction that went with it. The cosmological constant is an inverse area, the area count $10^{122}$ is a counting measure rather than a catastrophe, and the equation of state is $w\simeq-1$; the earlier $R^{-2}$ scaling and its $w=-1/3$ are "explicitly discarded". An order-unity calibration constant $\kappa$ is introduced, and the initial state is described as a Planck sphere rather than a point.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-formulas">The three formulas</h3>
+<p>(F1) $\Lambda$ as an inverse area:
+$$\Lambda\equiv\frac1A,\qquad A=4\pi R^2$$
+(paper 2). (F2) "Dark-energy 3D density":
+$$\rho_\Lambda=\frac{\Lambda c^2}{8\pi G}$$
+(paper 3), and For $w=-1$, the continuity equation $\dot\rho+3H(\rho+p/c^2)=0$ gives $\dot\rho_\Lambda=0$. (F3) "Area dilution / counting measure":
+$$N_A=\frac{A}{\ell_{Pl}^2}=\frac{4\pi R^2}{\ell_{Pl}^2}\sim10^{122}$$
+(paper 4), which "oduces the ł122 ordersž as a scaling effect of area growth, not as a local energy catastrophe. Key.". In one line: "F1) provides the 2D area measure, (F2) the 3D density, (F3) explains the 122 as an area count. 3 4 Interpreting Λ and the Choice of Radius 4.".</p>
+<h3 id="the-retraction">The retraction</h3>
+<p>The paper is explicit at the point where it changes its mind: an earlier speculation $\rho_\Lambda\propto R^{-2}$ (and thus $w=-1/3$) is explicitly discarded, "rative. • Important: No time law ρΛ ∝ R−2 ; the earlier consequence w = −1/3 is discarded. NA remains a counting measure only.", and in the conclusions "return to w = −1/3: the earlier R−2 sketch is discarded. 14". What replaces it keeps $\Lambda$ constant by tying the area to a fixed geometric scale,
+$$A_0\equiv4\pi R_0^2,\qquad \Lambda=\frac{\kappa}{A_0}=\mathrm{const}$$
+(paper 6), with "$\kappa\sim1$" absorbing "order-unity conventions"; "dius). Today, the empirical proximity RH ≈ R0 explains why NA ∼ 10122 without implying a time-varying ρΛ . 4.3 Dimensional and physical reading • [Λ] = m−2 (inverse area).".</p>
+<h3 id="the-planck-sphere">The Planck sphere</h3>
+<p>"The beginning was not a point singularity but a Planck sphere: a high-curvature initial surface carrying the total energy. As the universe łopened,ž the sphere grew, curvature stretched, and the area A soared." The stated consequence is that the $10^{122}$ "is an area count, not a catastrophe. A Planck sphere anchors the beginning geometrically; dilution of vacuum tension is the engine of expansion."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-retraction-recorded-as-a-result">1. A retraction, recorded as a result</h3>
+<p><strong>The idea.</strong> This paper undoes a prediction of its own earlier papers — $w=-1/3$, the $R^{-2}$ running and the Hubble-diagram offset of $\Delta\mu\approx-0.20$ mag — and says so three times in the text. What is left is a one-parameter statement, not a prediction. That is a <strong>reading</strong>, and it is the most transferable thing in the batch: it shows what a claim costs when the number that carried it is withdrawn.</p>
+<p><strong>What it would add.</strong> A worked example of status accounting, which is exactly what the corpus's empirical-status article is for: it separates what a framework computes from what it merely carries, and here the separation is made by the author against himself.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing stands in the way of recording it. What stands in the way of using it is that a retraction removes content: the corpus gains a cautionary case, not a mechanism.</p>
+<h3 id="2-one-order-unity-constant-named">2. One order-unity constant, named</h3>
+<p><strong>The idea.</strong> $\Lambda=\kappa/A$ with $\kappa\sim1$ is the honest version of "no free parameter: one number that absorbs order-unity conventions" when $R$ is identified with a particular radius. This is a <strong>formula</strong> with a declared, bounded freedom.</p>
+<p><strong>What it would add.</strong> A discipline the corpus could copy: a constant that is allowed to be $O(1)$ and is never allowed to be $10^{60}$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> $\kappa$ has no derivation and no measured value, and with $\Lambda=\kappa/A$ the whole content is the choice of $R$; the paper concedes this by letting $R_0$ be "the de Sitter event-horizon radius" without saying why that radius.</p>
+<h3 id="3-area-dilution-instead-of-a-singularity">3. Area dilution instead of a singularity</h3>
+<p><strong>The idea.</strong> A Planck sphere of fixed total energy that grows in area, so that curvature and density fall as $1/A$ without any singular limit. This is a <strong>mechanism</strong> for the initial state, offered in a paragraph.</p>
+<p><strong>What it would add.</strong> An initial condition that costs no inflaton and no singularity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, on what the framework can say about $a\to0$.</p>
+<p><strong>What stands in the way.</strong> No equation of motion is written for the sphere; the paragraph is a picture, and the corpus's cosmology article already records that it cannot form a source, so a picture is all that could land there too.</p>
+<p>The rank is a judgement: the retraction first, because it is the batch's clearest piece of status accounting; $\kappa$ second, because it is a discipline rather than a result; the Planck sphere third, because it is a picture.</p>
+<p>This is a six-page paper; the three formulas, the calibration constant, the Planck sphere, the retraction and a falsifiability list are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

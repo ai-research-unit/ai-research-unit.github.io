@@ -82,7 +82,7 @@ $$</p>
 <p>the coefficients satisfying $B_jB_k+B_kB_j=-2\delta_{jk}$ and $B_k^2=-1$. The conormal element $\nu_B$ and the fundamental solution $E$ are those of <em>Regularity and the Cauchy–Riemann Operator</em> and <em>Hypercomplex Integration</em>; the function $E(x-y)$ is the Cauchy kernel, and $dS$ is the surface measure on a hypersurface.</p>
 <h3 id="the-domain-and-the-holder-classes">The domain and the Hölder classes</h3>
 <p>Let $\Omega\subset A$ be a bounded, open and connected set whose boundary $\Gamma=\partial\Omega$ is a smooth, compact, oriented Liapunov hypersurface. It divides $A$ into the two open sets $\Omega^+=\Omega$ and $\Omega^-=A\setminus\overline\Omega$, with $\infty\in\Omega^-$. The classical theory of the one-variable case is the specialisation $A=\mathbb C$, $m=2$, and the complex case is kept in view as the model.</p>
-<p><strong>Definition (Hölder class).</strong> For $0<\beta\leq1$, $H(\Gamma,\beta)$ is the set of continuous $A$-valued functions $h$ on $\Gamma$ with finite</p>
+<p><strong>Definition (Hölder class).</strong> For $0&lt;\beta\leq1$, $H(\Gamma,\beta)$ is the set of continuous $A$-valued functions $h$ on $\Gamma$ with finite</p>
 <p>$$
 \|h\|_\beta=C(h)+H(h,\beta), \qquad C(h)=\max_{t\in\Gamma}|h(t)|, \qquad H(h,\beta)=\sup_{t_1\neq t_2}\frac{|h(t_1)-h(t_2)|}{|t_1-t_2|^\beta},
 $$</p>
@@ -135,7 +135,7 @@ Y^+=Y^-\,B \qquad\text{on }\Gamma .
 $$</p>
 <p><strong>Proposition (the constant coefficient has a piecewise-constant canonical factor).</strong> For a constant $B\in A^\times$ the function</p>
 <p>$$
-Y(x)=\begin{cases}B, & x\in\Omega^+,\\[2pt] 1, & x\in\Omega^-\end{cases}
+Y(x)=\begin{cases}B, &amp; x\in\Omega^+,\\[2pt] 1, &amp; x\in\Omega^-\end{cases}
 $$</p>
 <p>is a canonical factor.</p>
 <p><em>Proof.</em> The function $Y$ is constant on each side, hence regular there and invertible, and its boundary values are $Y^+=B$, $Y^-=1$, so $Y^+=Y^-B$.</p>
@@ -251,11 +251,11 @@ $$</p>
 $$</p>
 <p>governs everything. Write $G=t^\kappa G_0$ with $\operatorname{ind}_\Gamma G_0=0$, so that $\ln G_0$ is single-valued, and let $\Gamma_0$ be the Cauchy transform of $\ln G_0$; then the <strong>canonical function</strong></p>
 <p>$$
-X(z)=\begin{cases}\exp(\Gamma_0(z)), & z\in\Omega^+,\\[2pt] z^{-\kappa}\,\exp(\Gamma_0(z)), & z\in\Omega^-\end{cases}
+X(z)=\begin{cases}\exp(\Gamma_0(z)), &amp; z\in\Omega^+,\\[2pt] z^{-\kappa}\,\exp(\Gamma_0(z)), &amp; z\in\Omega^-\end{cases}
 $$</p>
 <p>is sectionally regular, nowhere zero, and satisfies $X^+=GX^-$. It reduces the problem to the trivial jump exactly as the piecewise-constant factor did in the constant case: $\Phi=f/X$ has $\Phi^+-\Phi^-=g/(GX^-)$, so $\Phi=\mathcal{C}\bigl(g/(GX^-)\bigr)+Q$ with $Q$ a polynomial, and $f=X\Phi$.</p>
 <h3 id="the-counting">The counting</h3>
-<p>In the class $\mathcal{R}_{-1}$ the polynomial $Q$ is fixed by the behaviour at infinity, where $X\sim z^{-\kappa}$: the requirement $f(\infty)=0$ forces $\deg Q<\kappa$. The three cases follow, and they are the classical result of Gakhov and Muskhelishvili.</p>
+<p>In the class $\mathcal{R}_{-1}$ the polynomial $Q$ is fixed by the behaviour at infinity, where $X\sim z^{-\kappa}$: the requirement $f(\infty)=0$ forces $\deg Q&lt;\kappa$. The three cases follow, and they are the classical result of Gakhov and Muskhelishvili.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -266,7 +266,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\kappa>0$</td>
+<td>$\kappa&gt;0$</td>
 <td>$\kappa$ linearly independent solutions</td>
 <td>solvable for every $g$; solution space of dimension $\kappa$</td>
 </tr>
@@ -276,7 +276,7 @@ $$</p>
 <td>exactly one solution for every $g$</td>
 </tr>
 <tr>
-<td>$\kappa<0$</td>
+<td>$\kappa&lt;0$</td>
 <td>only the zero solution</td>
 <td>$-\kappa$ solvability conditions; one solution when they hold</td>
 </tr>
@@ -298,7 +298,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>Riemann boundary value problem</strong> for an elliptic hypercomplex system $(A,D)$ asks for a sectionally regular function with $f^+=f^-B+h$ on the boundary $\Gamma$, in a prescribed class $\mathcal{R}_k$ of order at infinity. For a <strong>constant coefficient</strong> $B\in A^\times$ the canonical factor is the piecewise-constant function $Y=B$ on $\Omega^+$ and $Y=1$ on $\Omega^-$, it satisfies $Y^+=Y^-B$, and the substitution $\Phi=fY^{-1}$ carries the problem to the trivial jump $\Phi^+-\Phi^-=hB^{-1}$. The solution is $f=\mathcal{C}(hB^{-1})Y$ in the class $\mathcal{R}_{-1}$, unique, and $f=(\mathcal{C}(hB^{-1})+C)Y$ in the class $\mathcal{R}_0$, a one-parameter family whose parameter is the value at infinity. The order of the factors is forced: the canonical factor multiplies on the right, because the coefficient multiplies $f^-$ on the right, and the source's left-hand form is correct only when $B$ commutes with the transform.</p>
 <p>The <strong>singular integral equation of Cauchy type</strong> is $fa+(Sf)b=g$, with $S$ the singular operator of the Cauchy kernel and $a\pm b$ invertible. Its operator factors as $Kf=(P_+f)(a+b)+(P_-f)(a-b)$ through the Plemelj projectors $P_\pm=\tfrac12(I\pm S)$ on the right, and it is equivalent to the Riemann problem with $B=(a-b)(a+b)^{-1}$ and $h=g(a+b)^{-1}$ in the class $\mathcal{R}_{-1}$. It has the unique solution $f=(P_+g)(a+b)^{-1}+(P_-g)(a-b)^{-1}$, with no kernel and no free constant, equivalently $f=\tfrac12\bigl(Sd(B-1)+d(B+1)\bigr)$ with $d=g(a-b)^{-1}$; the degenerate coefficients $b=0$ and $a=0$ recover $f=ga^{-1}$ and $f=S(gb^{-1})$.</p>
-<p>For a <strong>variable coefficient</strong> $G$ the index enters. In the classical complex case the index $\kappa=\operatorname{ind}_\Gamma G$ controls the canonical function $X$, and with it the count: for $\kappa>0$ there are $\kappa$ homogeneous solutions and the inhomogeneous problem is solvable for every datum; for $\kappa=0$ there is exactly one solution for every datum; for $\kappa<0$ there are $-\kappa$ solvability conditions and one solution when they hold. In the non-commutative case the index is the homotopy class of $G$ in the group of invertibles $A^\times$, and its theory belongs to the corpus's Fredholm and index register. The <strong>Plemelj formulas</strong> $\mathcal{C}^\pm h=\tfrac12(Sh\pm h)$ and $S^2=I$ are the common ground of both problems, and the corpus's boundary-value criterion $P_\alpha f=f$ is the case $B=1$.</p>
+<p>For a <strong>variable coefficient</strong> $G$ the index enters. In the classical complex case the index $\kappa=\operatorname{ind}_\Gamma G$ controls the canonical function $X$, and with it the count: for $\kappa&gt;0$ there are $\kappa$ homogeneous solutions and the inhomogeneous problem is solvable for every datum; for $\kappa=0$ there is exactly one solution for every datum; for $\kappa&lt;0$ there are $-\kappa$ solvability conditions and one solution when they hold. In the non-commutative case the index is the homotopy class of $G$ in the group of invertibles $A^\times$, and its theory belongs to the corpus's Fredholm and index register. The <strong>Plemelj formulas</strong> $\mathcal{C}^\pm h=\tfrac12(Sh\pm h)$ and $S^2=I$ are the common ground of both problems, and the corpus's boundary-value criterion $P_\alpha f=f$ is the case $B=1$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

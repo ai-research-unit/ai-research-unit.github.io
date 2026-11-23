@@ -79,7 +79,7 @@
 <p><strong>Definition.</strong> The <strong>square map</strong> is $\sigma:\mathbb{C}_{\mathrm{spl}}\to\mathbb{C}_{\mathrm{spl}}$, $\sigma(Q)=Q^2$.</p>
 <p>On the coordinates $Q=q+jq'$ the map is</p>
 <p>$$
-\sigma(q,q')=\bigl(q^2+q'^2,\ 2qq'\bigr) ,
+\sigma(q,q')=\bigl(q^2+q'{}^2,\ 2qq'\bigr) ,
 $$</p>
 <p>a polynomial map of $\mathbb{R}^2$ into itself, of degree two in each coordinate.</p>
 <h3 id="the-idempotent-coordinates">The Idempotent Coordinates</h3>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-image-is-the-cone-and-not-the-plane">The Image Is the Cone and Not the Plane</h3>
 <p>The square map is not onto. The element $-1$ has no square root, since a square has $q\ge\lvert q'\rvert$ and $-1$ has $q=-1$; more generally no element outside the forward cone is a square, and the cone is a proper subset of the plane with non-empty interior. Over $\mathbb{C}$ the same map is onto, and the difference is exactly the difference between a field and a ring with two idempotents: the squaring of each coordinate is onto over $\mathbb{C}$ because every complex number has a square root, and it is onto $\mathbb{R}_{\ge0}$ over $\mathbb{R}$.</p>
 <h3 id="the-counts-of-the-fibres">The Counts of the Fibres</h3>
-<p>The fibres are read off the idempotent coordinates at once, since $\Xi_\pm^2=Q_\pm$ has two solutions $\pm\sqrt{Q_\pm}$ when $Q_\pm>0$, the single solution $0$ when $Q_\pm=0$, and none when $Q_\pm<0$.</p>
+<p>The fibres are read off the idempotent coordinates at once, since $\Xi_\pm^2=Q_\pm$ has two solutions $\pm\sqrt{Q_\pm}$ when $Q_\pm&gt;0$, the single solution $0$ when $Q_\pm=0$, and none when $Q_\pm&lt;0$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -110,7 +110,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>interior of the cone, $Q_+>0$ and $Q_->0$</td>
+<td>interior of the cone, $Q_+&gt;0$ and $Q_-&gt;0$</td>
 <td>the four sign choices $(\pm\sqrt{Q_+},\pm\sqrt{Q_-})$</td>
 <td>$4$</td>
 </tr>
@@ -141,15 +141,15 @@ $$</p>
 <p><strong>Proof.</strong> $(Q+X)^2=Q^2+QX+XQ+X^2$ and the last term is of second order in $X$; the ring is commutative, so the two linear terms coincide.</p>
 <p>The differential is therefore not an arbitrary linear map but a multiplication, and the linear map $X\mapsto 2QX$ has the matrix</p>
 <p>$$
-\begin{pmatrix}2q&2q'\\2q'&2q\end{pmatrix}
+\begin{pmatrix}2q&amp;2q'\\2q'&amp;2q\end{pmatrix}
 $$</p>
 <p>in the basis $1,j$: a multiplication in the split-complex algebra, with equal diagonal entries and equal off-diagonal entries.</p>
 <h3 id="the-jacobian">The Jacobian</h3>
 <p><strong>Proposition.</strong> The Jacobian determinant is</p>
 <p>$$
-J_\sigma(Q)=\det\bigl(2Q\cdot\bigr)=4(q^2-q'^2)=4N(Q) .
+J_\sigma(Q)=\det\bigl(2Q\cdot\bigr)=4(q^2-q'{}^2)=4N(Q) .
 $$</p>
-<p><strong>Proof.</strong> The determinant of the displayed matrix is $4q^2-4q'^2$. It is also the product of the two eigenvalues $2Q_+$ and $2Q_-$ of the multiplication, that is $4Q_+Q_-=4N(Q)$.</p>
+<p><strong>Proof.</strong> The determinant of the displayed matrix is $4q^2-4q'{}^2$. It is also the product of the two eigenvalues $2Q_+$ and $2Q_-$ of the multiplication, that is $4Q_+Q_-=4N(Q)$.</p>
 <p>The Jacobian is the split norm up to the factor four, so it is positive inside the double cone, negative outside it, and zero exactly on the pair of null lines.</p>
 <h3 id="the-critical-set">The Critical Set</h3>
 <p><strong>Theorem.</strong> The critical set of the square map is the union of the two null lines,</p>
@@ -163,10 +163,10 @@ $$</p>
 <h3 id="the-two-sheets-over-the-interior">The Two Sheets over the Interior</h3>
 <p>Over the interior of the forward cone the map is four-to-one, and the four preimages fall into two pairs under the sign change $\Xi\mapsto-\Xi$. The two pairs are the two <strong>sheets</strong>, and each is a region of the source:</p>
 <p>$$
-\{\Xi : N(\Xi)>0\}\ \text{and}\ \{\Xi : N(\Xi)<0\} ,
+\{\Xi : N(\Xi)&gt;0\}\ \text{and}\ \{\Xi : N(\Xi)&lt;0\} ,
 $$</p>
 <p>the timelike and the spacelike region of the plane of the preimages.</p>
-<p><strong>Proof.</strong> The first pair of roots has $N(\Xi)=\Xi_+\Xi_-=\sqrt{Q_+Q_-}>0$ and the second has the opposite sign, so the two pairs lie in the two regions, and the sign change keeps each pair in its region. Both regions are mapped onto the interior of the cone, since $N(\Xi^2)=N(\Xi)^2>0$ and every interior value has the two roots.</p>
+<p><strong>Proof.</strong> The first pair of roots has $N(\Xi)=\Xi_+\Xi_-=\sqrt{Q_+Q_-}&gt;0$ and the second has the opposite sign, so the two pairs lie in the two regions, and the sign change keeps each pair in its region. Both regions are mapped onto the interior of the cone, since $N(\Xi^2)=N(\Xi)^2&gt;0$ and every interior value has the two roots.</p>
 <p>So the square map folds the two regions of the source onto one region of the target, two-to-one on each, and the folding is the identification of $\Xi$ with $-\Xi$.</p>
 <h3 id="the-boundary">The Boundary</h3>
 <p>Over the boundary of the cone minus the origin the map is two-to-one, the two preimages lying on the null lines of the source and being opposite to each other. The boundary is the image of the null lines, and on it the differential has rank one: the boundary is the fold set.</p>
@@ -222,8 +222,8 @@ $$</p>
 </table></div>
 <p>The complex image is the whole plane, so it has no outside; the split image is a cone, so it has one. The count of two at every non-zero complex value becomes the count of four on the interior and of zero outside, and the change of count is the change of the image.</p>
 <h2 id="summary">Summary</h2>
-<p>The square map of the split-complex space has the image the forward cone $q\ge\lvert q'\rvert$, and it is not onto: $-1$ is not a square, and no element outside the cone is. Its differential at $Q$ is the multiplication by $2Q$, of Jacobian determinant $4(q^2-q'^2)=4N(Q)$, so the critical set is the pair of null lines and the map is a local diffeomorphism everywhere else.</p>
-<p>The fibres have four points on the interior of the cone, two on its boundary minus the origin, one at the origin and none outside; the four preimages of an interior value fall into the two sheets $N(\Xi)>0$ and $N(\Xi)<0$, each mapped two-to-one onto the interior, and the two sheets meet on the null lines, which are the branch locus. The four branches are the four roots, global on the interior because that region is simply connected.</p>
+<p>The square map of the split-complex space has the image the forward cone $q\ge\lvert q'\rvert$, and it is not onto: $-1$ is not a square, and no element outside the cone is. Its differential at $Q$ is the multiplication by $2Q$, of Jacobian determinant $4(q^2-q'{}^2)=4N(Q)$, so the critical set is the pair of null lines and the map is a local diffeomorphism everywhere else.</p>
+<p>The fibres have four points on the interior of the cone, two on its boundary minus the origin, one at the origin and none outside; the four preimages of an interior value fall into the two sheets $N(\Xi)&gt;0$ and $N(\Xi)&lt;0$, each mapped two-to-one onto the interior, and the two sheets meet on the null lines, which are the branch locus. The four branches are the four roots, global on the interior because that region is simply connected.</p>
 <p>Over $\mathbb{C}$ the square is onto and its only critical point is the origin; over $\mathbb{C}_{\mathrm{spl}}$ the image is a cone whose boundary is the image of the critical set. Both differences come from one fact: the multiplication by a non-zero element of the split ring need not be injective, and it fails exactly on the null lines.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -239,7 +239,7 @@ $$</p>
 <td>The square map</td>
 </tr>
 <tr>
-<td>$\sigma(q,q')=(q^2+q'^2,2qq')$</td>
+<td>$\sigma(q,q')=(q^2+q'{}^2,2qq')$</td>
 <td>The square map on the coordinates</td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ $$</p>
 <td>The differential, the multiplication by $2Q$</td>
 </tr>
 <tr>
-<td>$J_\sigma(Q)=4(q^2-q'^2)=4N(Q)$</td>
+<td>$J_\sigma(Q)=4(q^2-q'{}^2)=4N(Q)$</td>
 <td>The Jacobian determinant</td>
 </tr>
 <tr>

@@ -385,8 +385,8 @@ import re
 t=open('physics.md').read()
 cat=re.search(r'(?ms)^## Biquaternion Particle Physics\n(.*?)(?=^## |\Z)',t).group(1)
 st=re.search(r'(?ms)^### The Strong Interaction\n(.*?)(?=^### |\Z)',cat).group(1)
-al=re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',cat)
-print(len(al), len(re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',st)))
+al=re.findall(r'href="articles_physics/[^"]+\.html"',cat)
+print(len(al), len(re.findall(r'href="articles_physics/[^"]+\.html"',st)))
 PY
 </code></pre>
 <p>The output is <code>93 24</code>.</p>
@@ -398,7 +398,7 @@ n=open('articles_internal/internal-note-on-the-strong-interaction-in-the-corpus.
 def band(cat,part=None):
     s=re.search(r'(?ms)^## '+cat+r'\n(.*?)(?=^## |\Z)',t).group(1)
     if part: s=re.search(r'(?ms)^### '+part+r'\n(.*?)(?=^### |\Z)',s).group(1)
-    return re.findall(r'articles_physics/[^&quot;]+\.html&quot;&gt;([^&lt;]+)&lt;',s)
+    return re.findall(r'articles_physics/[^"]+\.html"&gt;([^&lt;]+)&lt;',s)
 st=band('Biquaternion Particle Physics','The Strong Interaction')
 out=band('Biquaternion Particle Physics','The Gauge Structure')+band('Biquaternion Gravity and Cosmology')
 b=n[n.index('## The List of Articles'):n.index('## What Each Article Contains')]

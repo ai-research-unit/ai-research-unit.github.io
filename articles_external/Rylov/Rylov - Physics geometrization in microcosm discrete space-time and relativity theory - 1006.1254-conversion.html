@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Geometrization in Microcosm, Discrete Space-Time and Relativity Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Physics geometrization in microcosm discrete space-time and relativity theory -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="physics-geometrization-in-microcosm-discrete-space-time-and-relativity-theory"><strong>Physics Geometrization in Microcosm, Discrete Space-Time and Relativity Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1006.1254 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 July 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Physics geometrization in microcosm discrete space-time and relativity theory - 1006.1254-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Physics geometrization in microcosm discrete space-time and relativity theory - 1006.1254.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Physics geometrization in microcosm discrete space-time and relativity theory - 1006.1254.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A review of twenty years of one programme, written by its only author, and it says so. The programme is offered as an alternative paradigm: discreteness of space-time rather than quantum principles, physical geometry rather than Riemannian geometry, world function rather than metric, algebraic rather than differential equations, and a skeleton of several points rather than a point particle. Because it gathers the whole programme, it is the best single statement of what the geometric paradigm claims and of why he thinks it has been ignored.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-paradigms">The two paradigms</h3>
+<p>"The conventional paradigm of the microcosm physics development may be classified as quantum paradigm. The quantum paradigm is based on hypothesis of continuous space-time geometry equipped by quantum principles of particle motion." Against it: "The hypothesis on discreteness of the space-time geometry appears to be more fundamental, than the hypothesis on quantum nature of microcosm. Discrete space-time geometry admits one to describe quantum effects as pure geometric effects."</p>
+<p>The technique: "Mathematical technique of the microcosm physics geometrization (geometric paradigm) is based on the physical geometry, which is described completely by the world function. Equations, describing motion of particles in the microcosm, are algebraic (not differential) equations."</p>
+<h3 id="the-particle-state">The particle state</h3>
+<p>The complaint is about an object, not an equation: "in the twentieth century a transition from the nonrelativistic physics to the relativistic one has been produced only in dynamic equations, but not in the concept of the particle state. The particle state as a point of the phase space is inadequate in application to indeterministic particles."</p>
+<p>Why: "Existence of primordially indeter- ministic particles in the microcosm does not admit a use of phase space, because the limit (1.8), determining the particle momentum, does not exist for indeterministic particles."</p>
+<p>The replacement: "The relativistic concept of the particle state is realized by means of the particle skeleton. The skeleton consists of several space-time points. Such a concept of the particle state can be applied both for deterministic and indeterministic particles."</p>
+<p>And its claim to completeness: "It is important, that the skeleton describes all characteristics of the particle, including its mass, charge, momentum and other characteristics, if they take place, (spin, flower, etc. ). As a result one obtains a monistic conception, where all fundamental physical phenomena (including electromagnetic and gravitational interactions) are described in terms of points of the event space and of world functions between them."</p>
+<h3 id="the-reception">The reception</h3>
+<p>The candour is worth recording because it is unusual: "most mathematicians do not accept the physical geometries, because these geometries are nonaxiomatizable. It is a repetition of the case, when mathematicians did not accept the non-Euclidean geometries of Lobachevsky-Bolyai. As a result this review is a review of papers of one author."</p>
+<p>And a defence of the resulting form: "This situation has some positive sides, because it appears to be possible a consideration not only of papers, but also of motive for writing some papers."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-algebraic-equations-in-a-discrete-geometry">1. Algebraic equations in a discrete geometry</h3>
+<p><strong>The idea.</strong> A <strong>claim about form</strong>: if the geometry is discrete, differential equations are unnatural and algebraic ones are not, and the switch is forced by the discreteness rather than chosen. The equations are written in terms of the world function, so they carry no coordinates at all.</p>
+<p><strong>What it would add.</strong> The corpus's lattice article introduces a lattice as a regulator for an integral, keeping the continuum as the target. Rylov's move is the opposite: discreteness is the theory and the continuum is the approximation. Stating both would clarify what the corpus's lattice is for — a computational device or a physical claim — which the article leaves open.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.md</code>.</p>
+<p><strong>What stands in the way.</strong> No lattice constant is derived, and the algebraic equations are not exhibited in a form that could be compared with any experiment. The claim also forfeits the whole apparatus of differential geometry, a large price for an unquantified gain.</p>
+<h3 id="2-the-lobachevsky-parallel">2. The Lobachevsky parallel</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> of the programme's reception: nonaxiomatisable geometries are rejected for the same reason non-Euclidean geometry once was, so the rejection is a fact about mathematical method rather than about the geometry.</p>
+<p><strong>What it would add.</strong> The corpus's methodology articles argue about what a framework can derive, never about why a way of framing a theory meets resistance. The parallel is a claim that a class of theory is excluded a priori by its form, which is a mechanism the corpus could use to explain its own marginal position without claiming to be right.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The parallel is too flattering to be evidence: non-Euclidean geometry was accepted because it was consistent and useful, and Rylov offers no analogous demonstration. Being rejected for a reason does not make the reason wrong.</p>
+<h3 id="3-monism-about-particle-properties">3. Monism about particle properties</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: mass, charge, momentum and spin all come from one object — the mutual displacement of a few space-time points — so no property is added as a quantum number.</p>
+<p><strong>What it would add.</strong> The corpus's parameter-count article counts nineteen Standard Model parameters as unexplained. A skeleton claim is a proposal that they are not parameters at all but positions, which is the strongest form of the corpus's own ambition. The article could state this alternative and say precisely why its own algebra does not deliver it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The skeleton's point count is not derived for any given particle and no mass formula is printed. Without a computed mass the claim is a promissory note, and the corpus has enough of those.</p>
+<p>The rank: algebraic equations first, because it clarifies the corpus's own lattice; the Lobachevsky parallel second, because it explains reception; monism last, because it is a promise rather than a result.</p>
+<p>The remaining items in one line each: the review's order, which runs through relativity, statistical description, the deformation principle, multivariance, pair production and the skeleton; the claim that the geometric paradigm arose from overcoming the inconsistency of the conventional particle theory, which is the replace, do not add criterion again; and the summary of the Dirac particle as a three-point skeleton whose world chain is a spacelike helix, already recorded from 0410045.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

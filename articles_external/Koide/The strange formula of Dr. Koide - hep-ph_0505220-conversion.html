@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The strange formula of Dr. Koide — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/The strange formula of Dr. Koide - hep-ph_0505220.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-strange-formula-of-dr-koide"><strong>The strange formula of Dr. Koide</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0505220 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alejandro Rivero, Andre Gsponer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 May 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/The strange formula of Dr. Koide - hep-ph_0505220-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/The strange formula of Dr. Koide - hep-ph_0505220.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/The strange formula of Dr. Koide - hep-ph_0505220.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A short historical review of the lepton relation, written by two authors who have worked on it. It gives the dates and the reversal of the tau mass measurement, ties the relation to the democratic matrix and to Foot's angle, then proposes one piece of vocabulary — the <strong>gim</strong> $\gamma$, defined by $m\equiv\gamma^2$ so that the relation is a linear statement about a vector — and uses it to compare the relation with Barut's fourth-power mass formula, for quarks taken one triplet at a time and for all six at once. It closes with three speculative origins (asymmetric Weyl spinors, non-commutative geometry, and a gedanken switch-off of the couplings) and a note on a democratic matrix whose eigenvalues are the lepton amplitudes when the mixing angle is Cabibbo's. The quark fits are numerical coincidences reported as such; the origins are conjectures.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-history-and-the-reversal">The history and the reversal</h3>
+<p>Koide found the relation at the end of 1981, in composite models of quarks and leptons, and it predicted $1.777$ GeV/$c^2$ for the tau, which was then "more than two standard deviations away from the measured value, $1.7842$ GeV/$c^2$". Koide's 1983 paper therefore introduced "a correction term $\delta$ in order to fit the — then supposed — experimental value". "And the correction parameter $\delta$ becomes plainly zero: The original prediction was right!" The review reports the current fit as a quotient of unity, $1^{+0.00002635}_{-0.00002021}$.</p>
+<h3 id="the-gim-and-the-relation-as-a-vector-statement">The gim, and the relation as a vector statement</h3>
+<p>The authors' reason for the new variable is that mass arises from self-interaction, $\Delta m=e^2/r$ in electrodynamics, $\Delta m=Gm^2/r$ in gravity, $\Delta m=g^2|\Psi|^2$ in field theory, "and this is also the case in pure field theories such as Lanczos's and Weinberg's, where mass is entirely originating from the self and mutual interactions of fields". So mass should be quadratic in the underlying coupling, and the natural variable is</p>
+<p>$$
+m\equiv\gamma^2 ,
+$$</p>
+<p>the <strong>gim</strong> $\gamma$. With $\vec\gamma=(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})\equiv(\gamma_e,\gamma_\mu,\gamma_\tau)$,</p>
+<p>$$
+\left(\gamma_e^2+\gamma_\mu^2+\gamma_\tau^2\right)=\frac23\left(\gamma_e+\gamma_\mu+\gamma_\tau\right)^2 ,
+\qquad\text{or}\qquad
+\left|\vec\gamma\right|^2=\frac23\left(\mathrm{Tr}\,\vec\gamma\right)^2 ,
+\tag{paper 2, 3}
+$$</p>
+<p>"where the trace operation Tr acting on a vector is to be interpreted as the sum of its components." The relation is thus that the squared length of a real three-vector is two thirds of the square of its trace, which is Foot's $\pi/4$ restated.</p>
+<h3 id="baruts-formula-and-the-quark-triplets">Barut's formula and the quark triplets</h3>
+<p>Barut's lepton formula,</p>
+<p>$$
+m(N)=m_e\left(1+\frac{3}{2\alpha}\sum_{n=0}^{N}n^4\right),
+\tag{paper 4}
+$$</p>
+<p>with $N=0,1,2$ for $e$, $\mu$, $\tau$ and $\alpha\approx1/137$, is extended to quarks by replacing $m_e$ with $m_u\approx m_e/7.25$, so that $d$, $s$, $c$, $b$ sit at $N=1,2,3,4$; "the formula fails completely for the $t$ quark". In this scheme electron, muon and tau correspond to $u$, $d$, $s$. The resulting verdicts on the closure are numerical:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>triplet</th>
+<th>masses used</th>
+<th>precision of the closure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(e,\mu,\tau)$</td>
+<td>Barut</td>
+<td>$2\%$</td>
+</tr>
+<tr>
+<td>$(u,d,s)$</td>
+<td>Barut</td>
+<td>$2\%$</td>
+</tr>
+<tr>
+<td>$(d,s,b)$</td>
+<td>Barut</td>
+<td>$2.7\%$</td>
+</tr>
+<tr>
+<td>$(u,c,t)$</td>
+<td>Barut</td>
+<td>$28\%$</td>
+</tr>
+<tr>
+<td>five quarks Barut plus $m_t=174$ GeV</td>
+<td>mixed</td>
+<td>$9\%$</td>
+</tr>
+<tr>
+<td>all six quarks</td>
+<td>Particle Data Book averages, Table 1</td>
+<td>$5\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>For the last row the six gims are $0.71$, $2.5$, $10$, $35$, $67$, $417$ GeV$^{1/2}$/$c$ with sum $532$, and the masses sum to $180000$ GeV/$c^2$, so "$532^2/180000=1.572$ instead of $1.5$". A footnote records that "the ratio $283/180$ being quite precisely equal to $\pi/2$ illustrates how easily one can get a good agreement with a beautiful number".</p>
+<p>The authors' reading is that Barut's formula carries the light partons and the closure carries the heavy ones, "including the mass of the top quark which does not fit the Nambu-Barut formula". They warn that "all phenomenological formulas which do not have a completely unambiguous theoretical foundation should be used with caution", and they take the poorer $u$-type fit as a warning against applying the relation to neutrinos.</p>
+<h3 id="three-proposed-origins">Three proposed origins</h3>
+<p><strong>Asymmetric Weyl spinors.</strong> With a degenerate diagonal $M=\lambda\,\mathbf{1}_3$ and a diagonal non-degenerate $M'\ne M^{\dagger}$, "the corresponding Dirac equation will have a mass squared matrix $MM'$ composed of eigenvalues $\lambda m_i$, and its real masses will be proportional to $m_i$. If one is able to impose some symmetry in this scheme, Koide's formula will follow, at the cost of three extra fermions."</p>
+<p><strong>Non-commutative geometry.</strong> The early Connes–Lott electroweak model needed a non-trivial vacuum and imposed</p>
+<p>$$
+3\left(m_e^4+m_\mu^4+m_\tau^4\right)-\left(m_e^2+m_\mu^2+m_\tau^2\right)^2\ne0 .
+\tag{paper 5}
+$$</p>
+<p><strong>Switching the couplings off.</strong> With $\alpha\to0$ the electron mass goes to zero while the Fermi scale goes to infinity, and the muon and tau must move "in order to keep the angle". In that limit "the mass ratio between tau and muon becomes exactly $\left(\frac{1+\sqrt3}{1-\sqrt3}\right)^2$", "$\approx14$", "and the three in this expression is coming from the number of generations, not from the number of colors". The same limit is read as putting the muon near the strange quark and the pion.</p>
+<h3 id="a-democratic-matrix-with-the-lepton-spectrum">A democratic matrix with the lepton spectrum</h3>
+<p>Brannen's variant of the democratic mixing,</p>
+<p>$$
+\sqrt2\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}
++\begin{pmatrix}0&amp;e^{i\theta}&amp;e^{-i\theta}\\ e^{-i\theta}&amp;0&amp;e^{i\theta}\\ e^{i\theta}&amp;e^{-i\theta}&amp;0\end{pmatrix},
+\tag{paper 6}
+$$</p>
+<p>"happens to have eigenvalues proportional to our $m_l$ when $\theta$ is Cabibbo's angle".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-mass-matrix-whose-eigenvalues-are-the-amplitudes-with-one-angle-fixed-by-cabibbo">1. A mass matrix whose eigenvalues are the amplitudes, with one angle fixed by Cabibbo</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: a $3\times3$ Hermitian matrix, one part proportional to the identity and one part a democratic matrix with phases $e^{\pm i\theta}$, whose eigenvalues come out proportional to $\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau}$ exactly when $\theta$ is the Cabibbo angle.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §3 has the amplitude circle and says it is cheap, because the closure follows for any $\theta$; what it lacks is a matrix whose eigenvectors are the physical ones with a phase that is fixed by something already measured. Here one measured number, the Cabibbo angle, sets the lepton amplitudes, which is the kind of cross-sector link the corpus has no instance of.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, where $M_f$ is diagonalised, and <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code> for the angle.</p>
+<p><strong>What stands in the way.</strong> The statement is numerical and is reported as an accident, not derived; the matrix has phases but is not complex-symmetric in the way the corpus's mass matrices are built, and no quark sector is given by the same matrix, so the link to Cabibbo has no second leg.</p>
+<h3 id="2-a-non-hermitian-mass-matrix-with-the-physical-masses-from-math93">2. A non-Hermitian mass matrix, with the physical masses from $MM'$</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: take $M=\lambda\mathbf{1}_3$ degenerate and $M'$ diagonal, non-degenerate and not the conjugate of $M$; the Dirac equation then carries $MM'$, whose eigenvalues are $\lambda m_i$, so the physical masses are the eigenvalues of a product of two different matrices of the same field.</p>
+<p><strong>What it would add.</strong> The corpus already has the non-Hermitian structure in two places, <code>articles_internal/the-non-hermitian-adjoint-outside-the-gauge-sector.md</code> and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, which diagonalises $M_f^\dagger M_f$ and says explicitly that $M_f=Y^fv/\sqrt2$ is not Hermitian. This paper says what that non-Hermiticity would buy: a degeneracy in one factor that a symmetry protects, and a spread produced entirely by the other.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, in the section that diagonalises $M_f^\dagger M_f$.</p>
+<p><strong>What stands in the way.</strong> One sentence and no model: the "some symmetry" that protects $\lambda\mathbf{1}_3$ is not named, three extra fermions are needed, and nothing is computed. What the corpus can take is the shape of the proposal, not a result.</p>
+<h3 id="3-the-closure-compared-with-a-fourth-power-formula-triplet-by-triplet">3. The closure compared with a fourth-power formula, triplet by triplet</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: the closure's accuracy on the $(e,\mu,\tau)$, $(u,d,s)$, $(d,s,b)$ and $(u,c,t)$ triplets when the masses are Barut's rather than measured, $2\%$, $2\%$, $2.7\%$ and $28\%$, and $5\%$ on all six quarks with $532^2/180000=1.572$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 records $0.8489808$ and $0.7314277$ for the generation triplets at measured masses and asks in §11 whether running to a common scale moves them. This paper's numbers are computed at a different place in the same question — on theoretical masses rather than measured ones — and it reports the same ordering, the $u$-type triplet worst.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, quarks row, and §11.</p>
+<p><strong>What stands in the way.</strong> Barut's formula is itself an empirical fit, so a comparison of two fits has no independent content; the $5\%$ figure comes from averaging the extremes of a data table whose ranges are wide. The corpus cannot use either as evidence, only as a record that the pattern does not depend on which fit is used.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The democratic matrix and the $S(3)$ symmetry history is context, no result. The switch-off gedanken's ratio $14$ and its identification with a pion–nucleon coupling is a coincidence of numbers, and the authors call it that. The Connes–Lott condition (paper 5) is a non-vanishing condition, not a spectrum, so nothing can be imported from it beyond the observation that the same quartic invariant appears in a non-commutative construction.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

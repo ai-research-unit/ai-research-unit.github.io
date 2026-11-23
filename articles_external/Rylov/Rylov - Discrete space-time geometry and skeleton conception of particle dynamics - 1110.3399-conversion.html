@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discrete Space-Time Geometry and Skeleton Conception of Particle Dynamics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Discrete space-time geometry and skeleton conception of particle dynamics - 1110.3399.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="discrete-space-time-geometry-and-skeleton-conception-of-particle-dynamics"><strong>Discrete Space-Time Geometry and Skeleton Conception of Particle Dynamics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1110.3399 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 October 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Discrete space-time geometry and skeleton conception of particle dynamics - 1110.3399-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discrete space-time geometry and skeleton conception of particle dynamics - 1110.3399.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-schrodinger-object-every-article-on-one-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discrete space-time geometry and skeleton conception of particle dynamics - 1110.3399.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>States what a discrete geometry can and cannot have, and derives particle dynamics from it. The discrete geometry is a physical geometry — completely described by the world function — and three of its properties have no Riemannian counterpart: it is nonaxiomatisable, it is multivariant, and its equivalence relation is intransitive. Particles are world chains, broken lines with links of finite length, because there are no infinitesimal lengths. Their motion is stochastic, and the statistical description of that motion yields the Schrödinger equation when the elementary length is tied to $\hbar$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="three-properties-with-no-riemannian-analogue">Three properties with no Riemannian analogue</h3>
+<p>The setting is the world function on a set with no manifold assumed, and the discrete case is the case where the set has no infinitesimal separations. The consequences are stated as a list:</p>
+<ul>
+<li><strong>Nonaxiomatisable.</strong> "Multivariance of the equivalence relation leads to nonaxiomatizability of geometry." The argument is that axioms presuppose that a proposition is either true or false of an object, and a multivariant geometry has several inequivalent objects answering the same description.</li>
+<li><strong>Multivariant.</strong> "A physical geometry is multivariant, in general. Single-variant physical geometry is a degenerate geometry." Euclidean geometry is the degenerate case, and the degeneracy is why it could be axiomatised: "being a physical geometry, the proper Euclidean geometry is an axiomatizable geometry, and this circumstance is an evidence of its degeneracy."</li>
+<li><strong>Intransitive equivalence.</strong> A chain of equivalences does not compose: $A$ equivalent to $B$ and $B$ to $C$ does not give $A$ equivalent to $C$. This is what makes a world chain wobble rather than run straight.</li>
+</ul>
+<p>The historical diagnosis is unusually specific: "The discrete geometry was not developed, because it could be obtained only as a generalization of the proper Euclidean geometry. But almost all concepts and quantities of the proper Euclidean geometry use essentially concepts of the continuous geometry." Only the world function survives without continuity, which is why the coordinateless expressions are the only route.</p>
+<h3 id="particle-as-a-chain">Particle as a chain</h3>
+<p>The particle is not a point moving along a curve. It is a skeleton carried forward: the chain of equivalent skeletons, each placed with its origin at the previous leading endpoint, and the step is the leading vector, which determines the direction of the world chain. Two consequences are drawn. The chain's links can be spacelike while the chain is timelike on average, which is how a helical world chain describes a massive particle; and the wobble is not noise added to a trajectory but the multivariance of the geometry itself.</p>
+<h3 id="schrodinger-from-the-statistics">Schrödinger from the statistics</h3>
+<p>The derivation route is the same as in the companion papers: supposing the elementary length to depend on $\hbar$ in the right way, the statistical description of the wobbling chain is the Schrödinger equation. The conclusion is a comparison of two suppositions, and it is the sentence that carries the paper's polemic: "the supposition on the space-time geometry discreteness seems to be more natural and reasonable, than the supposition on quantum nature of physical phenomena in microcosm. Discreteness is simply a property of the space-time, whereas quantum principles assume introduction of new essences."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-second-derivation-of-the-schrodinger-equation">1. A second derivation of the Schrödinger equation</h3>
+<p><strong>The idea.</strong> The Schrödinger equation is what the statistics of a wobbling chain looks like at coarse resolution, with $\lambda_0$ tied to $\hbar$. A <strong>derivation</strong> with premises disjoint from the corpus's.</p>
+<p><strong>What it would add.</strong> The corpus has one article per equation and states for the Schrödinger object which route produced it. A second, independent route is a real check: if both derivations are correct they must agree on the free equation and on the appearance of $\hbar$, and if they disagree the disagreement is informative. The corpus has never had a competitor to compare against, because it has never imported a derivation that does not start from an algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-schrodinger-object-every-article-on-one-equation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation is not carried out here — the paper asserts that the statistics of the chain "leads to the Schrödinger equation, if the elementary length of the discrete geometry depends on the quantum constant in a proper way", and the proper way is imported from the earlier papers. The coefficient is fixed by matching, not derived, so the agreement with the corpus would be an agreement of fit.</p>
+<h3 id="2-intransitive-equivalence-and-why-the-corpuss-equivalence-classes-are-transitive">2. Intransitive equivalence, and why the corpus's equivalence classes are transitive</h3>
+<p><strong>The idea.</strong> A <strong>mathematical observation</strong>: if the equivalence relation of a geometry is intransitive, the geometry cannot be axiomatised, and the failure is structural rather than technical.</p>
+<p><strong>What it would add.</strong> The corpus identifies states by orbits of a group action, and orbits are equivalence classes, hence transitive by construction. That transitivity is a hidden assumption of the whole framework, and it is exactly what a multivariant geometry denies. Naming it would let the corpus say which of its identifications would survive if transitivity failed, which is a sharper question than whether the algebra is the right one.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/triality-and-spin8-with-inner-conjugation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's equivalences are defined by an action, and an action's orbits are transitive by definition, so the assumption cannot be dropped inside the framework — it would have to be replaced by a relation that is not an orbit relation, and no such relation is offered here beyond the assertion that geometry supplies one.</p>
+<h3 id="3-no-infinitesimal-lengths">3. No infinitesimal lengths</h3>
+<p><strong>The idea.</strong> The continuum is not assumed; the differential equation is an approximation valid when the step is small compared with the scale of variation. A <strong>reading</strong> that demotes calculus.</p>
+<p><strong>What it would add.</strong> The corpus's nonrelativistic-limit articles expand in a small parameter and treat the corrections as physical. Rylov's claim would give that parameter a meaning — the ratio of $\lambda_0$ to the scale — and would make the continuum limit a controlled approximation rather than a starting point.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code>.</p>
+<p><strong>What stands in the way.</strong> No estimate of $\lambda_0$ is given, and no correction term is computed, so the approximation cannot be checked. And the corpus's expansion parameter is a velocity ratio, not a length ratio, so the two small parameters are not the same object.</p>
+<p>The rank: the second derivation first, because a competing derivation is the most valuable thing an external paper can supply; intransitivity second, because it names a hidden assumption; the demotion of calculus last, because it is a consequence of the first two.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

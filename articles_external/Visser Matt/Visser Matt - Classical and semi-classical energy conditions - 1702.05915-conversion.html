@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical and semi-classical energy conditions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and semi-classical energy conditions - 1702.05915.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-and-semi-classical-energy-conditions"><strong>Classical and semi-classical energy conditions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>book chapter</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1702.05915v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 29 March 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Classical and semi-classical energy conditions - 1702.05915-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and semi-classical energy conditions - 1702.05915.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Classical and semi-classical energy conditions - 1702.05915.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a review chapter, drafted as the basis for a chapter in a Springer volume. It sets out the standard energy conditions of general relativity, including the Hawking–Ellis classification of stress-energy tensors into four types, and then presents the authors' programme of semi-classical energy conditions that are nonlinear in the stress-energy tensor. It argues that nonlinear conditions behave better under quantum effects than the linear ones, at the price of being harder to apply. Its conclusion is that the status of energy conditions as fundamental physics remains provisional, and that the set of conditions is at best partially ordered.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-subject">The subject</h3>
+<p>"The standard energy conditions of classical general relativity are linear in the stress-energy tensor, and have clear physical interpretation[s in terms of] geodesic focussing, but suffer the significant drawback that they are often [violated] by semi-classical quantum effects."</p>
+<h3 id="the-alternative">The alternative</h3>
+<p>"In contrast, it is possible to develop energy conditions that are intrinsically non-linear in the stress-energy tensor [and that] exhibit much better well-controlled behaviour when semi-classical [effects are] introduced, at the cost of a less direct applicabil[ity]."</p>
+<h3 id="the-structure-of-the-chapter">The structure of the chapter</h3>
+<p>"In this chapter we will first review the standard energy co[nditions] (including the connection to the Hawking–Ellis type [I–IV classification of] stress-energy tensors). We shall then turn to the a[nalysis of nonlinear] energy conditions, and see how much can be done once [quantum effects] are included."</p>
+<h3 id="no-weakest-condition">No weakest condition</h3>
+<p>"There is no strict ordering on the set of energy conditions, at best a partial ordering, so there is no strictly 'weakest' energy condition. Nonetheless, perhaps the weakest of the usual energy conditions (in terms of the constraint imposed on the stress energy) is the ANEC, which makes it the strongest energy condition in terms of proving theorems."</p>
+<h3 id="the-provisional-status">The provisional status</h3>
+<p>"Variations on the original classical point-wise energy conditions are still under development and investigation, and the status of the energy conditions as fundamental physics should still be considered provisional."</p>
+<h3 id="the-remaining-gap">The remaining gap</h3>
+<p>"Attempts at developing a general proof of the ANEC are ongoing — part of the question is exactly what one might mean by 'proving an energy condition' from more fundamental principles. It should be noted, however, that even the ANEC can be violated by conformal anomalies, so to have any hope of a truly general derivation of the ANEC from more funda[mental principles] ..."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-partial-order-of-conditions">1. A partial order of conditions</h3>
+<p><strong>The idea.</strong> Energy conditions are not totally ordered. A condition can be weak as a constraint and strong as a hypothesis for theorems, and the two roles are not the same axis.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions as if they were comparable. This chapter shows that the relevant conditions form a partial order with two distinct roles, which means a catalogue entry should say whether it is about what the framework can constrain or what it can prove. That is a structural correction to the catalogue.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It changes the catalogue's form rather than adding a line. Ranked first, because it is a correction rather than an addition.</p>
+<h3 id="2-nonlinear-conditions-suit-algebraic-objects">2. Nonlinear conditions suit algebraic objects</h3>
+<p><strong>The idea.</strong> Conditions that are nonlinear in the stress-energy are better behaved under quantum effects.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes that the algebra is quadratic in its own null structure. A nonlinear condition is expressed in the same kind of object the algebra naturally produces, so it is plausibly more accessible than a linear one. The catalogue should say so, since it currently gives the impression that all conditions are equally out of reach.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The claim is a plausibility argument and the paper makes no such connection. Ranked second.</p>
+<h3 id="3-review-chapters-as-scope-statements">3. Review chapters as scope statements</h3>
+<p><strong>The idea.</strong> A review that says what is provisional is a resource for saying what a theory does not yet have.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could cite the review to show that even in standard physics the status of these conditions is open, which calibrates its own criticisms.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a citation, not an idea. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

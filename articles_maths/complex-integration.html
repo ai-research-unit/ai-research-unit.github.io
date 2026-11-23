@@ -74,23 +74,23 @@
 <p>This article develops integration for functions of one complex variable. It follows the article on complex analysis, which defined the complex plane, its metric, limits, continuity, holomorphy and the Cauchy–Riemann equations, and it takes up the contour integral in the form the rest of the complex theory needs. The aim is to construct the integral from first principles, to state the Cauchy theorem and the Cauchy integral formula with the hypotheses they actually require, and to derive the residue theory and analytic continuation from them.</p>
 <p>The complex case is the model case of hypercomplex integration. Because $\mathbb{C}$ is a field, every non-zero element is invertible, there are no zero divisors, and the algebra is commutative; none of the obstructions that complicate the integration theory of $\mathbb{H}$, of the split complex numbers or of the dual numbers is present. The contour integral of a continuous function along a piecewise continuously differentiable path always exists, the Cauchy theorem holds without qualification on a simply connected domain, and the residue theorem computes the integral exactly. What is specific to $\mathbb{C}$ is that the values of the integral on closed paths are governed by the winding number, an integer-valued homotopy invariant of the path.</p>
 <p>No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.</p>
-<p>For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'^2}$, following <em>Complex Analysis</em>. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.</p>
+<p>For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'{}^2}$, following <em>Complex Analysis</em>. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.</p>
 <h2 id="the-complex-integral">The Complex Integral</h2>
 <h3 id="paths-and-contours">Paths and Contours</h3>
-<p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a, b] \to \mathbb{C}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$; the one-sided derivatives at the junctions may differ. A path is <strong>smooth</strong> if it is $C^1$ on all of $[a, b]$, <strong>closed</strong> if $\gamma(a) = \gamma(b)$, and <strong>simple</strong> if it is injective on $[a, b)$; a simple closed path is also called a <strong>contour</strong>.</p>
+<p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a, b] \to \mathbb{C}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 &lt; t_1 &lt; \cdots &lt; t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$; the one-sided derivatives at the junctions may differ. A path is <strong>smooth</strong> if it is $C^1$ on all of $[a, b]$, <strong>closed</strong> if $\gamma(a) = \gamma(b)$, and <strong>simple</strong> if it is injective on $[a, b)$; a simple closed path is also called a <strong>contour</strong>.</p>
 <p>The <strong>trace</strong> of $\gamma$ is the compact set $\gamma^* = \gamma([a, b])$. The <strong>opposite path</strong> $-\gamma$ is defined by $(-\gamma)(t) = \gamma(a + b - t)$, the same curve traversed backwards. If $\gamma_1 : [a, b] \to \mathbb{C}$ and $\gamma_2 : [b, c] \to \mathbb{C}$ agree at $b$, their <strong>concatenation</strong> $\gamma_1 + \gamma_2$ is the path on $[a, c]$ that follows first $\gamma_1$ and then $\gamma_2$. The <strong>length</strong> of a piecewise $C^1$ path is</p>
 <p>$$
 L(\gamma) = \int_a^b |\frac{d\gamma}{dt}| \, dt,
 $$</p>
 <p>finite because $\frac{d\gamma}{dt}$ is piecewise continuous on a compact interval. The corresponding element of arclength is $|dQ| = |\frac{d\gamma}{dt}| \, dt$.</p>
-<p><strong>Example.</strong> For $Q_0 \in \mathbb{C}$ and $r > 0$ the positively oriented circle</p>
+<p><strong>Example.</strong> For $Q_0 \in \mathbb{C}$ and $r &gt; 0$ the positively oriented circle</p>
 <p>$$
 \gamma(t) = Q_0 + r \exp(it), \qquad t \in [0, 2\pi],
 $$</p>
 <p>is a contour, with $\frac{d\gamma}{dt} = i r \exp(it)$ and $L(\gamma) = 2\pi r$.</p>
 <h3 id="construction-from-the-riemann-sum">Construction from the Riemann Sum</h3>
 <p>The integral along a path is defined by the limiting procedure that defines the Riemann integral, with the real increment of the variable replaced by the complex increment of the path.</p>
-<p><strong>Definition.</strong> Let $\gamma : [a, b] \to \mathbb{C}$ be piecewise $C^1$ and let $f$ be continuous on $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the <strong>Riemann sum</strong></p>
+<p><strong>Definition.</strong> Let $\gamma : [a, b] \to \mathbb{C}$ be piecewise $C^1$ and let $f$ be continuous on $\gamma^*$. Given a subdivision $a = t_0 &lt; t_1 &lt; \cdots &lt; t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the <strong>Riemann sum</strong></p>
 <p>$$
 S = \sum_{k=1}^n f(\gamma(\tau_k)) (Q_k - Q_{k-1}).
 $$</p>
@@ -165,9 +165,9 @@ $$</p>
 \frac{dh}{dQ} = \oint_\gamma \frac{dQ_1}{(Q_1 - Q)^2}.
 $$</p>
 <p>The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $Q_1$ on $\mathbb{C} \setminus \{Q\}$, so $\frac{dh}{dQ} = 0$ and $h$ is locally constant. Put $\Phi(Q) = \exp h(Q)$; then $\Phi'(Q) = \frac{dh}{dQ} \Phi(Q) = 0$, so $\Phi$ is constant, and as $\sqrt{\langle Q\rangle_{*}} \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(Q) \to 0$ and $\Phi(Q) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(Q) \in 2\pi i \mathbb{Z}$ for every $Q$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.</p>
-<p><strong>Example.</strong> For the positively oriented circle $\gamma(t) = Q_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, Q_0) = 1$ and $\operatorname{Ind}(\gamma, Q) = 0$ for $\sqrt{\langle Q - Q_0\rangle_{*}} > r$. For the same circle traversed $m$ times the index is $m$.</p>
+<p><strong>Example.</strong> For the positively oriented circle $\gamma(t) = Q_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, Q_0) = 1$ and $\operatorname{Ind}(\gamma, Q) = 0$ for $\sqrt{\langle Q - Q_0\rangle_{*}} &gt; r$. For the same circle traversed $m$ times the index is $m$.</p>
 <p><strong>Theorem (homotopy invariance).</strong> Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $\Omega$ and let $H : [0,1] \times [a,b] \to \Omega$ be continuous with $H(s,\cdot)$ closed and piecewise $C^1$ for every $s$, $H(0,\cdot) = \gamma_0$ and $H(1,\cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, Q_0) = \operatorname{Ind}(\gamma_1, Q_0)$ for every $Q_0 \notin \Omega$.</p>
-<p><strong>Proof.</strong> For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\mathrm{H}_{\mathrm{hvs}}(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta_{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta_{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta_{\mathrm{lift}}(s, b) - \Theta_{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s,\cdot), Q_0)$.</p>
+<p><strong>Proof.</strong> For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\mathrm{H}_{\mathrm{hvs}}(t))$ with $r &gt; 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta_{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta_{\mathrm{lift}}(s,t))$ and $\rho &gt; 0$. Then $s \mapsto \Theta_{\mathrm{lift}}(s, b) - \Theta_{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s,\cdot), Q_0)$.</p>
 <p>The winding number therefore depends only on the homotopy class of the path in $\Omega$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.</p>
 <h2 id="the-cauchy-theorem">The Cauchy Theorem</h2>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
@@ -219,14 +219,14 @@ $$</p>
 \oint_\gamma f(Q) \, dQ = 0 .
 $$</p>
 <p>This homological form is the sharp statement of the theorem: it is the hypothesis one actually verifies, and it reduces the simply connected case (where every cycle in $\Omega$ is homologous to zero) to a computation of winding numbers. It is proved from the Cauchy–Goursat theorem by exhausting $\Omega$ with compact sets and approximating $f$ by rational functions, a construction due to Runge; the details are standard.</p>
-<p><strong>Example.</strong> On the annulus $\mathcal{A} = \{Q : 1 < \sqrt{\langle Q\rangle_{*}} < 2\}$, let $\gamma$ be the outer circle $\sqrt{\langle Q\rangle_{*}} = 3/2$ traversed positively together with the inner circle $\sqrt{\langle Q\rangle_{*}} = 5/4$ traversed negatively. Every point outside $\mathcal{A}$ has index $0$, so $\gamma$ is homologous to zero in $\mathcal{A}$, and $\oint_\gamma f \, dQ = 0$ for every $f$ holomorphic on $\mathcal{A}$. This is the form of the Cauchy theorem used to prove the residue theorem.</p>
+<p><strong>Example.</strong> On the annulus $\mathcal{A} = \{Q : 1 &lt; \sqrt{\langle Q\rangle_{*}} &lt; 2\}$, let $\gamma$ be the outer circle $\sqrt{\langle Q\rangle_{*}} = 3/2$ traversed positively together with the inner circle $\sqrt{\langle Q\rangle_{*}} = 5/4$ traversed negatively. Every point outside $\mathcal{A}$ has index $0$, so $\gamma$ is homologous to zero in $\mathcal{A}$, and $\oint_\gamma f \, dQ = 0$ for every $f$ holomorphic on $\mathcal{A}$. This is the form of the Cauchy theorem used to prove the residue theorem.</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a cycle in $\Omega$ homologous to zero in $\Omega$. Then for every $Q \in \Omega \setminus \gamma^*$,</p>
 <p>$$ \boxed{\;f(Q) \operatorname{Ind}(\gamma, Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 \;}.
 $$</p>
 <p><strong>Proof.</strong> Fix $Q \in \Omega \setminus \gamma^*$ and define</p>
 <p>$$
-g(Q_1) = \begin{cases} \dfrac{f(Q_1) - f(Q)}{Q_1 - Q}, & Q_1 \neq Q, \\[2mm] \frac{df}{dQ}, & Q_1 = Q. \end{cases}
+g(Q_1) = \begin{cases} \dfrac{f(Q_1) - f(Q)}{Q_1 - Q}, &amp; Q_1 \neq Q, \\[2mm] \frac{df}{dQ}, &amp; Q_1 = Q. \end{cases}
 $$</p>
 <p>The function $g$ is holomorphic on $\Omega$: away from $Q$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $Q$ it extends holomorphically with value $\frac{df}{dQ}$, since $f(Q_1) = f(Q) + \frac{df}{dQ}(Q_1 - Q) + o(\sqrt{\langle Q_1 - Q\rangle_{*}})$. Since $g$ is holomorphic on $\Omega$ and $\gamma$ is homologous to zero in $\Omega$, the homological Cauchy theorem gives $\oint_\gamma g(Q_1) \, dQ_1 = 0$, that is,</p>
 <p>$$
@@ -236,7 +236,7 @@ $$</p>
 <p>$$
 f(Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
 $$</p>
-<p>For instance, if $f$ is holomorphic on a neighbourhood of the closed disk $\overline{B}(Q_0, r)$ and $\sqrt{\langle Q - Q_0\rangle_{*}} < r$, then with $C = C(Q_0, r)$,</p>
+<p>For instance, if $f$ is holomorphic on a neighbourhood of the closed disk $\overline{B}(Q_0, r)$ and $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; r$, then with $C = C(Q_0, r)$,</p>
 <p>$$
 f(Q) = \frac{1}{2\pi i} \oint_C \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
 $$</p>
@@ -252,7 +252,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Apply the derivative formula on the circle of radius $r$, where $\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r$ and the estimation property gives $|f^{(n)}(Q_0)| \le \frac{n!}{2\pi} \cdot \frac{m}{r^{n+1}} \cdot 2\pi r$.</p>
 <p><strong>Theorem (Liouville).</strong> Every bounded holomorphic function $f : \mathbb{C} \to \mathbb{C}$ is constant.</p>
-<p><strong>Proof.</strong> Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $Q_0$ on the circle of radius $r$ gives $|\frac{df}{dQ}(Q_0)| \le M/r$ for every $r > 0$, hence $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} \equiv 0$ and $f$ is constant.</p>
+<p><strong>Proof.</strong> Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $Q_0$ on the circle of radius $r$ gives $|\frac{df}{dQ}(Q_0)| \le M/r$ for every $r &gt; 0$, hence $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} \equiv 0$ and $f$ is constant.</p>
 <p><strong>Corollary (fundamental theorem of algebra).</strong> Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.</p>
 <p><strong>Proof.</strong> If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(Q)| \to \infty$ as $\sqrt{\langle Q\rangle_{*}} \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction.</p>
 <p><strong>Theorem (mean value property).</strong> If $f$ is holomorphic on a neighbourhood of $\overline{B}(Q_0, r)$, then</p>
@@ -264,7 +264,7 @@ $$</p>
 <p><strong>Proof.</strong> Suppose $|f(Q_0)| \ge |f(Q)|$ for all $Q \in \Omega$. The mean value property gives $|f(Q_0)| \le \max_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} |f(Q_1)| \le |f(Q_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $Q_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $\Omega$.</p>
 <h2 id="the-residue-theorem">The Residue Theorem</h2>
 <h3 id="residues">Residues</h3>
-<p><strong>Definition.</strong> Let $Q_0$ be an isolated singularity of $f$ and let $\sum_{n \in \mathbb{Z}} c_n (Q - Q_0)^n$ be the Laurent expansion of $f$ on $0 < \sqrt{\langle Q - Q_0\rangle_{*}} < R$. The <strong>residue</strong> of $f$ at $Q_0$ is the coefficient</p>
+<p><strong>Definition.</strong> Let $Q_0$ be an isolated singularity of $f$ and let $\sum_{n \in \mathbb{Z}} c_n (Q - Q_0)^n$ be the Laurent expansion of $f$ on $0 &lt; \sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$. The <strong>residue</strong> of $f$ at $Q_0$ is the coefficient</p>
 <p>$$
 \operatorname{Res}(f, Q_0) = c_{-1}.
 $$</p>
@@ -325,14 +325,14 @@ $$</p>
 <p>$$
 \operatorname{Ind}(f \circ \gamma, 0) = \frac{1}{2\pi i} \oint_\gamma \frac{\frac{df}{dQ}}{f(Q)} \, dQ .
 $$</p>
-<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a positively oriented contour in $\Omega$ winding once about every point of its interior, with $|g(Q)| < |f(Q)|$ on $\gamma^*$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
-<p><strong>Proof.</strong> For $t \in [0,1]$ put $f_t = f + tg$. On $\gamma^*$ one has $f_t \neq 0$, because $|tg| \le |g| < |f|$. The function</p>
+<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a positively oriented contour in $\Omega$ winding once about every point of its interior, with $|g(Q)| &lt; |f(Q)|$ on $\gamma^*$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
+<p><strong>Proof.</strong> For $t \in [0,1]$ put $f_t = f + tg$. On $\gamma^*$ one has $f_t \neq 0$, because $|tg| \le |g| &lt; |f|$. The function</p>
 <p>$$
 N(t) = \frac{1}{2\pi i} \oint_\gamma \frac{f_t'(Q)}{f_t(Q)} \, dQ
 $$</p>
 <p>is the number of zeros of $f_t$ inside $\gamma$ by the argument principle, and it depends continuously on $t$, since the integrand is continuous in $t$ and $\gamma^*$ is compact. Being integer-valued and continuous, $N$ is constant, so $N(0) = N(1)$.</p>
 <p><strong>Corollary (fundamental theorem of algebra).</strong> A polynomial $p(Q) = a_n Q^n + \cdots + a_0$ of degree $n \ge 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.</p>
-<p><strong>Proof.</strong> On a circle $\sqrt{\langle Q\rangle_{*}} = R$ of large radius and $f(Q) = a_n Q^n$, $g(Q) = a_{n-1}Q^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n Q^n$, namely $n$.</p>
+<p><strong>Proof.</strong> On a circle $\sqrt{\langle Q\rangle_{*}} = R$ of large radius and $f(Q) = a_n Q^n$, $g(Q) = a_{n-1}Q^{n-1} + \cdots + a_0$, one has $|g| &lt; |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n Q^n$, namely $n$.</p>
 <h3 id="evaluation-of-definite-integrals">Evaluation of Definite Integrals</h3>
 <p><strong>Integrals of trigonometric functions.</strong> For an integral $\int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta$ with $R$ rational, set $Q = \exp(i\theta)$, so that</p>
 <p>$$
@@ -349,7 +349,7 @@ $$</p>
 $$</p>
 <p><strong>Integrals over the real line.</strong> For $\int_{-\infty}^{\infty} f(a) \, da$ with $f$ rational, decaying faster than $1/|a|$ and having no poles on the real axis, integrate $f$ over the semicircle of radius $R$ in the upper half-plane closed by the real segment $[-R, R]$. The integral over the arc tends to $0$ as $R \to \infty$, so the real integral equals $2\pi i$ times the sum of the residues in the upper half-plane.</p>
 <p><strong>Example.</strong> For $\int_{-\infty}^{\infty} \frac{da}{1 + a^2}$ the only pole in the upper half-plane is $Q = i$, with residue $\frac{1}{2i}$, so the integral is $2\pi i \cdot \frac{1}{2i} = \pi$.</p>
-<p><strong>Integrals with trigonometric kernels.</strong> For $\int_{-\infty}^{\infty} f(b) \exp(iab) \, db$ with $a > 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by <strong>Jordan's lemma</strong>: if $f$ is continuous on the arc $\{R\exp(i\theta) : 0 \le \theta \le \pi\}$ and $|f(R\exp(i\theta))| \le m_R$ with $m_R \to 0$, then</p>
+<p><strong>Integrals with trigonometric kernels.</strong> For $\int_{-\infty}^{\infty} f(b) \exp(iab) \, db$ with $a &gt; 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by <strong>Jordan's lemma</strong>: if $f$ is continuous on the arc $\{R\exp(i\theta) : 0 \le \theta \le \pi\}$ and $|f(R\exp(i\theta))| \le m_R$ with $m_R \to 0$, then</p>
 <p>$$
 \left| \int_0^{\pi} f(R\exp(i\theta)) \exp(iaR\exp(i\theta)) i R \exp(i\theta) \, d\theta \right| \le \frac{\pi m_R}{a},
 $$</p>
@@ -360,7 +360,7 @@ $$</p>
 $$</p>
 <h2 id="analytic-continuation-along-a-path">Analytic Continuation along a Path</h2>
 <p>Complex integration gives the cleanest construction of analytic continuation, because the continued function can be defined by an integral that is manifestly independent of the path used.</p>
-<p><strong>Definition.</strong> A <strong>function element</strong> is a pair $(f, D)$ consisting of an open disk $D$ and a holomorphic function $f$ on $D$. Two function elements are <strong>equivalent</strong> at a point if the disks contain the point and the functions agree on a neighbourhood of it. An <strong>analytic continuation</strong> of the element $(f_0, D_0)$ along a path $\gamma : [0,1] \to \mathbb{C}$ with $\gamma(0) \in D_0$ is a finite chain of elements $(f_0, D_0), \dots, (f_n, D_n)$ together with a subdivision $0 = t_0 < t_1 < \cdots < t_n = 1$ such that $\gamma([t_{j-1}, t_j]) \subseteq D_j$ for $j = 1, \dots, n$, $\gamma(1) \in D_n$, and $f_{j-1} = f_j$ on $D_{j-1} \cap D_j$ whenever that intersection is non-empty.</p>
+<p><strong>Definition.</strong> A <strong>function element</strong> is a pair $(f, D)$ consisting of an open disk $D$ and a holomorphic function $f$ on $D$. Two function elements are <strong>equivalent</strong> at a point if the disks contain the point and the functions agree on a neighbourhood of it. An <strong>analytic continuation</strong> of the element $(f_0, D_0)$ along a path $\gamma : [0,1] \to \mathbb{C}$ with $\gamma(0) \in D_0$ is a finite chain of elements $(f_0, D_0), \dots, (f_n, D_n)$ together with a subdivision $0 = t_0 &lt; t_1 &lt; \cdots &lt; t_n = 1$ such that $\gamma([t_{j-1}, t_j]) \subseteq D_j$ for $j = 1, \dots, n$, $\gamma(1) \in D_n$, and $f_{j-1} = f_j$ on $D_{j-1} \cap D_j$ whenever that intersection is non-empty.</p>
 <p><strong>Theorem (uniqueness of continuation).</strong> If $(f_0, D_0)$ continues along $\gamma$, the result at $\gamma(1)$ is unique up to equivalence: any two continuations of $f_0$ along $\gamma$ agree on a neighbourhood of $\gamma(1)$.</p>
 <p><strong>Theorem (monodromy).</strong> Let $\Omega$ be a simply connected domain, let $\gamma_0, \gamma_1$ be paths in $\Omega$ from $Q_0$ to $Q_1$ that are homotopic relative to their endpoints, and let a function element at $Q_0$ continue along both. Then the two continuations agree on a neighbourhood of $Q_1$, and the continuation along every path in $\Omega$ defines a single-valued holomorphic function on $\Omega$.</p>
 <p><strong>Sketch.</strong> The continuation along a homotopy is locally constant in the homotopy parameter, because of the uniqueness of continuation on a disk; being constant on a connected parameter interval, it takes the same value at the two ends. Single-valuedness on all of $\Omega$ follows since $\Omega$ is simply connected, so all paths from $Q_0$ are homotopic.</p>
@@ -369,7 +369,7 @@ $$</p>
 <p>The identity theorem is the local statement behind these examples: two holomorphic functions on a domain that agree on a set with an accumulation point agree everywhere, so a continuation, when it exists, is forced. What can fail is global single-valuedness, and that failure is a homotopy invariant of the domain, not a defect of the function.</p>
 <h2 id="the-relation-to-measure-theoretic-integration">The Relation to Measure-Theoretic Integration</h2>
 <p>The contour integral is not a new kind of integral. It is the <strong>Bochner integral</strong> of a $\mathbb{C}$-valued function of a real variable, evaluated at a particular integrand.</p>
-<p>Recall that for a measure space $(X, \mathcal{A}, \mu)$, a Banach space $B$ and a function $g : X \to B$, the Bochner integral $\int_X g \, d\mu \in B$ is defined as the limit of integrals of $B$-valued simple functions; a measurable $g$ is Bochner-integrable exactly when $\int_X \|g\|_B \, d\mu < \infty$. For $B = \mathbb{C}$ with the modulus, the Bochner integral exists precisely when both real and imaginary parts are Lebesgue-integrable, and it then equals the component-wise Lebesgue integral. Consequently the contour integral</p>
+<p>Recall that for a measure space $(X, \mathcal{A}, \mu)$, a Banach space $B$ and a function $g : X \to B$, the Bochner integral $\int_X g \, d\mu \in B$ is defined as the limit of integrals of $B$-valued simple functions; a measurable $g$ is Bochner-integrable exactly when $\int_X \|g\|_B \, d\mu &lt; \infty$. For $B = \mathbb{C}$ with the modulus, the Bochner integral exists precisely when both real and imaginary parts are Lebesgue-integrable, and it then equals the component-wise Lebesgue integral. Consequently the contour integral</p>
 <p>$$
 \int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt
 $$</p>
@@ -410,7 +410,7 @@ $$</p>
 <td>General complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$</td>
 </tr>
 <tr>
-<td>$\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$</td>
+<td>$\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$</td>
 <td>Modulus</td>
 </tr>
 <tr>

@@ -133,8 +133,8 @@ $$</p>
 <p>$$
 (x_1,x_2,x_3,x_4) \longmapsto
 \begin{pmatrix}
-x_1+ix_2 & x_3+ix_4\\
--x_3+ix_4 & x_1-ix_2
+x_1+ix_2 &amp; x_3+ix_4\\
+-x_3+ix_4 &amp; x_1-ix_2
 \end{pmatrix},
 \qquad x_1,\dots,x_4 \in \mathbb{C},
 $$</p>
@@ -177,7 +177,7 @@ $$</p>
 </ol>
 <p>The recursion in the third item is well posed: a Hermitian matrix has $x_{11}\in\mathbb{C}$, which is therefore invertible whenever it is nonzero, and the matrix shown on the right is again Hermitian. The maps are defined with values in the biquaternion algebra because the recursion is a computation inside it; the fourth item says that the values in fact land in the complex scalars, and the ninth explains why. The recursion determines $\Delta_n$ on the dense set $x_{11}\neq 0$ and the continuity of the first item extends it, which is where the uniqueness comes from.</p>
 <p>Three of the assertions carry the content. The seventh says that Hermitian matrices of biquaternions have ordinary determinants that are perfect squares, and that $\Delta_n$ is a distinguished square root of them; it is what makes $\Delta_n$ a determinant rather than an arbitrary polynomial. The ninth is its eigenvalue form: the eigenvalues of the doubled matrix pair up, and $\Delta_n$ takes one from each pair. The sixth says that $\Delta_n$ is a polynomial in the entries, but one with a coefficient for every <strong>pair</strong> of permutations $\sigma,\pi$ rather than a single sign $(-1)^\sigma$; the commutative formula is the collapse of these coefficients, and its non-commutative replacement is not an alternating sum.</p>
-<p>The first two cases read explicitly. For $n = 1$, $\Delta_1(x) = x_{11}$ and the square root is the identity. For $n = 2$, with $x = \begin{pmatrix}p & \tilde Q_{12}\\ \tilde Q_{12}^{\natural} & q\end{pmatrix}$, $p,q\in\mathbb{C}$ and $\tilde Q_{12}\in\mathbb{B}$,</p>
+<p>The first two cases read explicitly. For $n = 1$, $\Delta_1(x) = x_{11}$ and the square root is the identity. For $n = 2$, with $x = \begin{pmatrix}p &amp; \tilde Q_{12}\\ \tilde Q_{12}^{\natural} &amp; q\end{pmatrix}$, $p,q\in\mathbb{C}$ and $\tilde Q_{12}\in\mathbb{B}$,</p>
 <p>$$
 \Delta_2(x) = p\,q - \tilde Q_{12}^{\natural}\tilde Q_{12} ,
 $$</p>
@@ -209,13 +209,13 @@ $$</p>
 <p>with the Jordan product $x\bullet y = \tfrac12(xy+yx)$, the involution $^{*}$ and its JB*-norm. A general element is</p>
 <p>$$
 x = \begin{pmatrix}
-\alpha & a & b\\
-a^{\natural} & \beta & c\\
-b^{\natural} & c^{\natural} & \gamma
+\alpha &amp; a &amp; b\\
+a^{\natural} &amp; \beta &amp; c\\
+b^{\natural} &amp; c^{\natural} &amp; \gamma
 \end{pmatrix},
 \qquad \alpha,\beta,\gamma\in\mathbb{C},\; a,b,c\in\mathbb{O}_{\mathbb{C}},
 $$</p>
-<p>so that $\dim_{\mathbb{C}}C_6 = 3 + 3\cdot 8 = 27$. The element $x$ is self-adjoint, $x^{*} = x$, exactly when $\alpha,\beta,\gamma$ are real and $a,b,c$ are in $\mathbb{O}$; the self-adjoint part is the real Albert algebra $H_3(\mathbb{O})$ of <em>Special and Exceptional Jordan Algebras</em>, of real dimension $27$. The algebra $C_6$ is unital, its unit is the unit matrix, and it is of rank three, the unit being the sum of three mutually orthogonal minimal projections. Frames behave as the rank suggests: if $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},\tilde\Pi_{\mathrm{id},3}$ and $\tilde\Pi_{\mathrm{id}}'_1,\tilde\Pi_{\mathrm{id}}'_2,\tilde\Pi_{\mathrm{id}}'_3$ are two triples of mutually orthogonal minimal tripotents, then the sums $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2+}\tilde\Pi_{\mathrm{id},3}$ and $\tilde\Pi_{\mathrm{id}}'_1+\tilde\Pi_{\mathrm{id}}'_2+\tilde\Pi_{\mathrm{id}}'_3$ are unitary and there is a triple automorphism $T$ of $C_6$ with $T(\tilde\Pi_{\mathrm{id},j}) = \tilde\Pi_{\mathrm{id}}'_j$, a Jordan *-automorphism when all six are projections. Any triple of mutually orthogonal minimal tripotents is therefore a frame, and any two frames are exchanged by an automorphism.</p>
+<p>so that $\dim_{\mathbb{C}}C_6 = 3 + 3\cdot 8 = 27$. The element $x$ is self-adjoint, $x^{*} = x$, exactly when $\alpha,\beta,\gamma$ are real and $a,b,c$ are in $\mathbb{O}$; the self-adjoint part is the real Albert algebra $H_3(\mathbb{O})$ of <em>Special and Exceptional Jordan Algebras</em>, of real dimension $27$. The algebra $C_6$ is unital, its unit is the unit matrix, and it is of rank three, the unit being the sum of three mutually orthogonal minimal projections. Frames behave as the rank suggests: if $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},\tilde\Pi_{\mathrm{id},3}$ and $\tilde\Pi_{\mathrm{id}}'{}_1,\tilde\Pi_{\mathrm{id}}'{}_2,\tilde\Pi_{\mathrm{id}}'{}_3$ are two triples of mutually orthogonal minimal tripotents, then the sums $\tilde\Pi_{\mathrm{id},1+}\tilde\Pi_{\mathrm{id},2+}\tilde\Pi_{\mathrm{id},3}$ and $\tilde\Pi_{\mathrm{id}}'{}_1+\tilde\Pi_{\mathrm{id}}'{}_2+\tilde\Pi_{\mathrm{id}}'{}_3$ are unitary and there is a triple automorphism $T$ of $C_6$ with $T(\tilde\Pi_{\mathrm{id},j}) = \tilde\Pi_{\mathrm{id}}'{}_j$, a Jordan *-automorphism when all six are projections. Any triple of mutually orthogonal minimal tripotents is therefore a frame, and any two frames are exchanged by an automorphism.</p>
 <h3 id="unitaries-and-their-spectral-decomposition">Unitaries and their spectral decomposition</h3>
 <p><strong>Theorem.</strong> Let $\tilde Q\in C_6$ be unitary.</p>
 <ol>
@@ -252,20 +252,20 @@ $$</p>
 <p><strong>Theorem.</strong> The minimal projections of $C_6$ are exactly the matrices</p>
 <p>$$
 \begin{pmatrix}
-0&0&0\\0&0&0\\0&0&1
+0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;1
 \end{pmatrix},
 $$</p>
 <p>$$
 \begin{pmatrix}
-0&0&0\\ 0&\alpha&a\\ 0&a^{\natural}&\tfrac1\alpha\lVert a\rVert^2
+0&amp;0&amp;0\\ 0&amp;\alpha&amp;a\\ 0&amp;a^{\natural}&amp;\tfrac1\alpha\lVert a\rVert^2
 \end{pmatrix},
 \qquad \alpha\in\mathbb{R}\setminus\{0\},\; a\in\mathbb{O},\; \alpha = \alpha^2 + \lVert a\rVert^2 ,
 $$</p>
 <p>$$
 \begin{pmatrix}
-\alpha&a&b\\
-a^{\natural}&\tfrac1\alpha\lVert a\rVert^2&\tfrac1\alpha(a^{\natural}b)\\
-b^{\natural}&\tfrac1\alpha(b^{\natural}a)&\tfrac1\alpha\lVert b\rVert^2
+\alpha&amp;a&amp;b\\
+a^{\natural}&amp;\tfrac1\alpha\lVert a\rVert^2&amp;\tfrac1\alpha(a^{\natural}b)\\
+b^{\natural}&amp;\tfrac1\alpha(b^{\natural}a)&amp;\tfrac1\alpha\lVert b\rVert^2
 \end{pmatrix},
 \qquad \alpha\in\mathbb{R}\setminus\{0\},\; a,b\in\mathbb{O},\; \alpha = \alpha^2 + \lVert a\rVert^2 + \lVert b\rVert^2 .
 $$</p>

@@ -127,7 +127,7 @@ $$</p>
 </tr>
 <tr>
 <td>Matrix model</td>
-<td>$M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$</td>
+<td>$M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>Spinor spaces</td>
@@ -139,7 +139,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Conventions.</strong> The notation is fixed in <em>Algebra and Element Conventions</em>: the algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.</p>
+<p><strong>Conventions.</strong> The notation is fixed in <em>Algebra and Element Conventions</em>: the algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.</p>
 <p><strong>Boundaries.</strong> The complex case is the subject of <em>Eigenvalues and Diagonalisation</em>; the reduced biquaternion case is <em>Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</em>; the biquaternion case is <em>The Biquaternion Eigenvalue Decomposition</em>; the Peirce and ideal theory is <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>; the exponential and the logarithm built on the decomposition are those of <em>Split-Complex Exponential and Lie Group Structure</em>; and the polar forms are those of <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and <em>Polar Decomposition of Split-Complex Numbers</em>. The general definition, existence and uniqueness of the eigenvalue decomposition are those of <em>The Eigenvalue Decomposition of an Element</em> and are not restated.</p>
 <h2 id="the-spectrum-and-the-characteristic-polynomial">The Spectrum and the Characteristic Polynomial</h2>
 <p><strong>Definition.</strong> Let $Q\in\mathbb{C}_{\mathrm{spl}}$. A real number $\mu$ is an <strong>eigenvalue</strong> of $Q$ if $Q-\mu$ is not invertible in $\mathbb{C}_{\mathrm{spl}}$; the set of eigenvalues is the <strong>spectrum</strong> $\sigma(Q)$. This is the definition of <em>The Eigenvalue Decomposition of an Element</em>, §<em>The Eigenvalues of an Element</em>.</p>
@@ -156,9 +156,9 @@ $$</p>
 <p>$$
 \lambda_++\lambda_-=2q,
 \qquad
-\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}.
+\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}.
 $$</p>
-<p><strong>Proof.</strong> The element $Q-\mu=(q-\mu)+jq'$ has norm $(q-\mu)^2-q'^2$. By the criterion of <em>Norm and Invertibility in the General Split-Complex Algebra</em>, §<em>The Criterion</em>, it is invertible exactly when its norm is nonzero. Hence $Q-\mu$ is not invertible exactly when $(q-\mu)^2=q'^2$, that is, when $\mu=q+q'$ or $\mu=q-q'$. These two numbers are $\lambda_+$ and $\lambda_-$.</p>
+<p><strong>Proof.</strong> The element $Q-\mu=(q-\mu)+jq'$ has norm $(q-\mu)^2-q'{}^2$. By the criterion of <em>Norm and Invertibility in the General Split-Complex Algebra</em>, §<em>The Criterion</em>, it is invertible exactly when its norm is nonzero. Hence $Q-\mu$ is not invertible exactly when $(q-\mu)^2=q'{}^2$, that is, when $\mu=q+q'$ or $\mu=q-q'$. These two numbers are $\lambda_+$ and $\lambda_-$.</p>
 <p><strong>Characteristic polynomial.</strong> The characteristic polynomial of $Q$ is</p>
 <p>$$
 \boxed{\;p_Q(X)=X^2-2qX+\langle Q\rangle_{*}
@@ -168,7 +168,7 @@ $$</p>
 $$</p>
 <p>It is the characteristic polynomial of the multiplication operator, whose trace is $\lambda_++\lambda_-=2q$ and whose determinant is $\lambda_+\lambda_-=\langle Q\rangle_{*}$. Its discriminant is</p>
 <p>$$
-(\lambda_+-\lambda_-)^2=(2q')^2=4q'^2,
+(\lambda_+-\lambda_-)^2=(2q')^2=4q'{}^2,
 $$</p>
 <p>so the eigenvalues are distinct exactly when $q'\neq0$, that is, exactly when $\lambda_+\neq\lambda_-$.</p>
 <p><strong>Minimal polynomial.</strong> The minimal polynomial is $p_Q$ when $q'\neq0$, and $X-q$ when $q'=0$, in which case $\lambda_+=\lambda_-=q$. Since $q,q'\in\mathbb{R}$, the spectrum is always real and the characteristic polynomial splits over $\mathbb{R}$.</p>
@@ -195,11 +195,11 @@ $$</p>
 </tr>
 <tr>
 <td>Product</td>
-<td>$\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}$</td>
+<td>$\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}$</td>
 </tr>
 <tr>
 <td>Discriminant</td>
-<td>$(\lambda_+-\lambda_-)^2=4q'^2$</td>
+<td>$(\lambda_+-\lambda_-)^2=4q'{}^2$</td>
 </tr>
 <tr>
 <td>Characteristic polynomial</td>
@@ -504,12 +504,12 @@ and no other eigenbasis exists. The pair $(\Pi_+,\Pi_-)$ is the normalised choic
 </tr>
 <tr>
 <td>Inverse $Q^{-1}$, $q'\neq0$</td>
-<td>$\dfrac{q-jq'}{q^2-q'^2}$</td>
+<td>$\dfrac{q-jq'}{q^2-q'{}^2}$</td>
 <td>$(\lambda_+^{-1},\lambda_-^{-1})$</td>
 </tr>
 <tr>
 <td>Norm $\langle Q\rangle_{*}$</td>
-<td>$q^2-q'^2$</td>
+<td>$q^2-q'{}^2$</td>
 <td>$\lambda_+\lambda_-$</td>
 </tr>
 <tr>
@@ -583,9 +583,9 @@ $$
 $$
 where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then
 $$
-M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 \qquad
-[L_Q]_{(\Pi_+,\Pi_-)}=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+[L_Q]_{(\Pi_+,\Pi_-)}=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}.
 $$
 The two columns are the two spinor spaces:
 $$
@@ -596,15 +596,15 @@ $$
 A spinor of the first Peirce copy $\zeta_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of the second Peirce copy $\zeta_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.</p>
 <p>In the basis $(1,j)$ the regular representation is
 $$
-[L_Q]_{(1,j)}=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+[L_Q]_{(1,j)}=\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix},
 $$
 and the change of basis to the eigenbasis is
 $$
-P=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+P=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix},
 \qquad
 P^{-1}=2P,
 \qquad
-P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}.
 $$
 The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=\langle Q\rangle_{*}g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.</p>
 <p><strong>Nilpotents in the matrix model.</strong> Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{C}_{\mathrm{spl}}$. The absence is the matrix form of the reducedness of the algebra.</p>
@@ -745,9 +745,9 @@ $$</p>
 <p>The lattice $L$ is a coordinate lattice, not an intrinsic invariant of $Q$. Nor does it arise as the kernel of an exponential: the split-complex exponential is injective (<em>Split-Complex Exponential and Lie Group Structure</em>, §<em>The Exponential Map: Image and Kernel</em>). This is a difference from the biquaternion parity-matched lattice, where the corresponding lattice is the kernel of the exponential on the diagonal part.</p>
 <h3 id="the-hyperbolic-polar-form">The Hyperbolic Polar Form</h3>
 <p><strong>On the identity component the decomposition is the hyperbolic polar form $Q=r(\cosh t+j\sinh t)$.</strong></p>
-<p>Let $Q$ be an invertible element with $\langle Q\rangle_{*}>0$ and $q>0$, so that $Q$ lies in the identity component of ${\mathbb{C}_{\mathrm{spl}}}^\times$. Then $\lambda_+=q+q'>0$ and $\lambda_-=q-q'>0$. Put</p>
+<p>Let $Q$ be an invertible element with $\langle Q\rangle_{*}&gt;0$ and $q&gt;0$, so that $Q$ lies in the identity component of ${\mathbb{C}_{\mathrm{spl}}}^\times$. Then $\lambda_+=q+q'&gt;0$ and $\lambda_-=q-q'&gt;0$. Put</p>
 <p>$$
-r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}=\sqrt{\lambda_+\lambda_-}>0,
+r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}=\sqrt{\lambda_+\lambda_-}&gt;0,
 \qquad
 t=\operatorname{artanh}\!\left(\frac{q'}{q}\right).
 $$</p>
@@ -779,7 +779,7 @@ q=\frac{\lambda_++\lambda_-}{2},
 \quad
 q'=\frac{\lambda_+-\lambda_-}{2}.
 $$</p>
-<p>The four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}>0$ and $q<0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-\varrho(\cosh t+j\sinh t)$ gives $\lambda_\pm=-\varrho\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}<0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon \varrho\cosh s$, and</p>
+<p>The four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}&gt;0$ and $q&lt;0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-\varrho(\cosh t+j\sinh t)$ gives $\lambda_\pm=-\varrho\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}&lt;0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon \varrho\cosh s$, and</p>
 <p>$$
 \lambda_+=\varepsilon \varrho\exp(\varepsilon s),
 \qquad
@@ -846,7 +846,7 @@ $$</p>
 <p>Every complete orthogonal pair of nontrivial idempotents gives such a writing, but the algebra has only one nontrivial pair, $\{\Pi_+,\Pi_-\}$. The nontrivial two-term refinement is therefore unique even though the eigenvalue is repeated. This is in contrast with the biquaternion scalar regime, where every complete orthogonal pair gives a two-term writing and the pair is not determined by the element.</p>
 <h3 id="the-zero-divisor-regime">The Zero-Divisor Regime</h3>
 <p><strong>A nonzero zero divisor has one zero eigenvalue and one nonzero eigenvalue, and it admits an eigenvalue decomposition even though it is not invertible.</strong></p>
-<p>Suppose $\langle Q\rangle_{*}=q^2-q'^2=0$ with $Q\neq0$. Then $q'=\pm q$ and $q\neq0$, so</p>
+<p>Suppose $\langle Q\rangle_{*}=q^2-q'{}^2=0$ with $Q\neq0$. Then $q'=\pm q$ and $q\neq0$, so</p>
 <p>$$
 Q=q(1\pm j)=2q\,\Pi_\pm.
 $$</p>
@@ -937,7 +937,7 @@ $$</p>
 </tr>
 <tr>
 <td>Matrix model</td>
-<td>$M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$</td>
+<td>$M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>Nilpotents</td>
@@ -1135,7 +1135,7 @@ $$</p>
 <td>Split-complex conjugate</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2=\lambda_+\lambda_-$</td>
+<td>$\langle Q\rangle_{*}=Q\bar Q=q^2-q'{}^2=\lambda_+\lambda_-$</td>
 <td>Norm, inertia $(1,1)$</td>
 </tr>
 <tr>
@@ -1168,7 +1168,7 @@ $$</p>
 </tr>
 <tr>
 <td>$[L_Q]_{(1,j)}$</td>
-<td>Matrix of $L_Q$ in the basis $(1,j)$, $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$</td>
+<td>Matrix of $L_Q$ in the basis $(1,j)$, $\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$[L_Q]_{(\Pi_+,\Pi_-)}$</td>

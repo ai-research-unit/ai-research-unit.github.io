@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue spacetime based on 2-component Bose–Einstein condensates — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetime based on 2-component Bose-Einstein condensates -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-spacetime-based-on-2-component-boseeinstein-condensates"><strong>Analogue spacetime based on 2-component Bose–Einstein condensates</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>book chapter (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0605121v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silke Weinfurtner, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 22 May 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>COSLAB volume chapter</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue spacetime based on 2-component Bose-Einstein condensates - gr-qc_0605121-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetime based on 2-component Bose-Einstein condensates - gr-qc_0605121.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-null-cone-the-massless-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue spacetime based on 2-component Bose-Einstein condensates - gr-qc_0605121.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The fullest treatment of the 2-BEC analogue, and the one that makes the geometry explicit. Perturbations of a two-component condensate give a coupled wave system whose leading symbol is naturally a <em>pseudo-Finsler</em> spacetime; specialising the parameters first gives a <em>bi-metric</em> pseudo-Riemannian spacetime with two metrics on one manifold, and further specialisation gives the single Lorentzian metric of ordinary general relativity. So the hierarchy — Finsler, then bi-metric, then mono-metric — is laid out as a chain of specialisations of one physical system. The chapter also states the mass-generating mechanism (in-phase mode massless, anti-phase mode massive), the quantum-pressure origin of Lorentz violation, and the relation between the two: the mass scale and the violation scale are not independent, so the hierarchy problem and naturalness become one question. An appendix collects the Finsler definitions and shows how a pseudo-Finsler geometry attaches to the leading symbol of any hyperbolic system.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-hierarchy-of-geometries">The hierarchy of geometries</h3>
+<p>"we will see how a 2-component Bose–Einstein condensate can be used to model a specific class of pseudo–Finsler geometries, and after suitable tuning of parameters, both bi-metric pseudo–Riemannian geometries and standard single metric pseudo–Riemannian geometries, while independently allowing the quasi-particle excitations to exhibit a 'mass'."</p>
+<h3 id="where-pseudo-finsler-comes-from">Where pseudo-Finsler comes from</h3>
+<p>"it is possible to associate a pseudo–Finsler spacetime with the leading symbol of a wide class of hyperbolic partial differential equations. In other parts of parameter space, the most natural interpretation of the geometry is in terms of a bi-metric spacetime, where one has a manifold that is simultaneously equipped with two distinct pseudo-Riemannian metric tensors. Further specialization in parameter space leads to a region where a single pseudo-Riemannian metric tensor [is] encountered — this mono-metric regime corresponds to Lorentzian spacetimes of the type encountered in standard general relativity and cosmology."</p>
+<h3 id="the-mode-counting">The mode counting</h3>
+<p>"due to overall translation invariance one again expects to find one massless quasi-particle, with now $n-1$ distinct massive modes." In the two-component case "the one in-phase (massless particle) and one in anti-phase (massive particle)."</p>
+<h3 id="the-mass-mechanism-and-its-difference-from-the-higgs">The mass mechanism and its difference from the Higgs</h3>
+<p>"The specific mass-generating mechanism arising herein is rather different from the Higgs mechanism of the standard model of particle physics, and provides an interesting counterpoint to the more usual ways that mass-generation is achieved."</p>
+<h3 id="mass-and-violation-are-linked">Mass and violation are linked</h3>
+<p>"we have seen that in our specific model the mass-generating mechanism interacts with the Lorentz violating mechanism, naturally leading to a situation where the Lorentz violations are suppressed by powers of the quasi-particle mass scale divided by the analogue of the Planck scale." Hence "in these analogue systems the mass-generating mechanism is related to the 'hierarchy problem' and the suppression of Lorentz-violating physics."</p>
+<h3 id="the-honest-weakness">The honest weakness</h3>
+<p>"obtaining an analogue spacetime geometry (including spacetime curvature) is straightforward — but what is not straightforward is obtaining the Einstein equations. The analogue models are currently analogue models of quantum field theory on curved spacetime, but not (yet?) true analogue models of Einstein gravity."</p>
+<h3 id="the-disclaimer">The disclaimer</h3>
+<p>"while we do not personally believe that the real universe is an analogue spacetime, we are certainly intrigued by the fact that so much of what is normally viewed as being specific to general relativity and/or particle physics can be placed in this much wider context."</p>
+<h3 id="the-finsler-apparatus">The Finsler apparatus</h3>
+<p>The Finsler function is defined on the slit tangent bundle, $F(x,\lambda t)=\lambda F(x,t)$, with metric $g_{ij}(x,t)=\frac12\frac{\partial^2[F^2(x,t)]}{\partial t_i\partial t_j}$ (paper 212). The metric depends on direction as well as position — that is the whole difference from Riemannian geometry.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-finsler-then-bi-metric-then-riemannian-as-a-chain">1. Finsler, then bi-metric, then Riemannian — as a chain</h3>
+<p><strong>The idea.</strong> One physical system produces all three geometries by parameter specialisation. Riemannian geometry is not the general case but the most special one, and the general case is direction-dependent.</p>
+<p><strong>What it would add.</strong> This is the most direct challenge in the collection to <code>articles_physics/the-null-cone-the-massless-boundary.md</code> and the corpus's general assumption of a single metric. If the generic geometry of a hyperbolic system is pseudo-Finsler, then every Riemannian metric in the corpus is a special case, and the corpus should say why its own case is the special one rather than the generic one. That is a premise check the corpus has never made.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-null-cone-the-massless-boundary.md</code>, opening premise.</p>
+<p><strong>What stands in the way.</strong> The Finsler structure here is for quasiparticle propagation in a condensate. Whether the real spacetime is Riemannian is exactly what the paper declines to claim ("we do not personally believe that the real universe is an analogue spacetime").</p>
+<h3 id="2-a-mass-mechanism-that-is-not-the-higgs">2. A mass mechanism that is not the Higgs</h3>
+<p><strong>The idea.</strong> The massive mode comes from relative phase oscillation between two components, not from a condensate of a scalar field. Mass appears without spontaneous symmetry breaking in the usual sense.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-dirac-pair-and-the-mass-term.md</code> and <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code> treat mass as an algebraic or Lagrangian object. Here is a physical mechanism of a third kind: mass from mode structure. That the corpus's two-sided structure resembles a two-component system means the analogy could be more than suggestive, and it should at least be examined.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-dirac-pair-and-the-mass-term.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs a background condensate and a coupling between components. Ranked second.</p>
+<h3 id="3-hierarchy-problem-and-naturalness-as-one-question">3. Hierarchy problem and naturalness as one question</h3>
+<p><strong>The idea.</strong> Because the mass and the Lorentz violation share an origin, a small mass implies a small violation. Solving one solves the other.</p>
+<p><strong>What it would add.</strong> A structural claim with a testable consequence: any framework where two small quantities share an origin should show correlated magnitudes. The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> currently treats its small parameters separately. This paper says to look for a common origin before accepting two independent tunings.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The correlation is shown for one model with one coupling. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

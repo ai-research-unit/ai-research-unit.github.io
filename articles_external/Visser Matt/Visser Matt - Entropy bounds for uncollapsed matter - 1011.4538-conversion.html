@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy bounds for uncollapsed matter — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed matter - 1011.4538.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entropy-bounds-for-uncollapsed-matter"><strong>Entropy bounds for uncollapsed matter</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.4538v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 November 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Entropy bounds for uncollapsed matter - 1011.4538-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed matter - 1011.4538.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds for uncollapsed matter - 1011.4538.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper bounds the entropy of a horizonless object in a static spacetime by half its surface area. The route is short: the quasilocal Tolman mass becomes a surface flux of a generalized surface gravity, the Gibbs–Duhem relation turns entropy into a bound involving that mass over temperature, and the Unruh effect relates the surface gravity to a temperature. The result resembles the holographic bound but with a coefficient of one half rather than one quarter, and the authors explain that the difference comes from treating uncollapsed matter with the ordinary Euler relation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-mass">The mass</h3>
+<p>"Among the different notions of quasi-local mass, the Tolman mass has the advantage that when dealing with a horizonless object (like a star/planet/monster/gravastar/black star/quasi-black hole) in a static spacetime, it can ultimately be bounded in terms of quantities measurable in the surface of the object; particularly the average surface gravity and the total area."</p>
+<h3 id="the-geometry">The geometry</h3>
+<p>"In any static spacetime where the metric can be put into the form"</p>
+<p>$$ds^2=-e^{-2\Psi}dt^2+g_{ij}dx^i dx^j,\qquad (paper\ 1)$$</p>
+<p>"the Einstein equations then imply"</p>
+<p>$$m_T(\Omega)=-\frac{1}{4\pi}\int_\Omega\sqrt{-g_4}\,R_{00}\,d^3x,\qquad (paper\ 3)$$</p>
+<p>"which is a purely geometrical statement."</p>
+<h3 id="the-thermodynamic-input">The thermodynamic input</h3>
+<p>"To take thermodynamics into account, and calculate a bound on the entropy of these types of object, we now need to consider the Euler (Gibbs–Duhem) relation for the entropy density of the matter forming the horizonless object,"</p>
+<p>$$s=\frac{\rho+p-\mu n}{T}.\qquad (paper\ 16)$$</p>
+<h3 id="the-first-bound">The first bound</h3>
+<p>"We see that the total entropy is bounded by the Tolman mass divided by the temperature as measured at infinity."</p>
+<p>$$S(\Omega)\le\frac{m_T(\Omega)}{T_\infty}.\qquad (paper\ 21)$$</p>
+<h3 id="the-unruh-step">The Unruh step</h3>
+<p>"Finally we invoke the only semiclassical notion we use throughout the calculations, to relate the surface gravity to a temperature, via the Unruh effect."</p>
+<p>$$T(x)\ge T_{\mathrm{Unruh}}(x)=\frac{\|A(x)\|}{2\pi},\qquad (paper\ 23)$$</p>
+<h3 id="the-result">The result</h3>
+<p>"Hence the entropy is bounded by one half of the total area $A(\partial\Omega)$,"</p>
+<p>$$S(\Omega)\le\frac{A(\partial\Omega)}{2}.\qquad (paper\ 26)$$</p>
+<h3 id="the-comparison">The comparison</h3>
+<p>"Specifically, it resembles the holographic bound, which corresponds to $S(\Omega)\le\frac14A(\partial\Omega)$. The fundamental reason for the coefficient mismatch between these two bounds is because we calculated the entropy of a uncollapsed distribution of matter, where the temperature has its normal interpretation as an intensive variable, and the Euler relation keeps its usual uncollapsed form."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"Overall, the importance of this entropy bound, for an uncollapsed distribution of matter, resides in its simplicity and its robustness."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-entropy-bound-without-a-horizon">1. An entropy bound without a horizon</h3>
+<p><strong>The idea.</strong> Horizonless matter obeys an area bound of its own, with a different coefficient.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives entropy for a horizon. This paper shows the same area scaling holds without one, which separates the area law from the horizon and tests whether the article's derivation depends on horizons at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The coefficient differs, so the two results are not the same statement. Ranked first, because it isolates what the horizon contributes.</p>
+<h3 id="2-surface-gravity-on-any-surface">2. Surface gravity on any surface</h3>
+<p><strong>The idea.</strong> A generalized surface gravity can be defined on the boundary of any static region.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats surface gravity as a horizon quantity. If it extends to arbitrary surfaces, the article's account of what a horizon provides is too narrow.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on surface gravity.</p>
+<p><strong>What stands in the way.</strong> The generalization is defined through the static Killing vector. Ranked second.</p>
+<h3 id="3-a-coefficient-that-carries-information">3. A coefficient that carries information</h3>
+<p><strong>The idea.</strong> One half versus one quarter is not an accident; it reflects whether the matter is collapsed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would benefit from noting that numerical coefficients in the framework can encode physical distinctions, so a mismatch is diagnostic rather than cosmetic.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on the area law.</p>
+<p><strong>What stands in the way.</strong> It is an interpretive point. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

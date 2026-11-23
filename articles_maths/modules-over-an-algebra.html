@@ -213,7 +213,7 @@ $$</p>
 <p><strong>Theorem (Nakayama).</strong> Let $I \subseteq J(A)$ be a two-sided ideal contained in the Jacobson radical, let $M$ be a finitely generated left $A$-module, and let $N \subseteq M$ be a submodule. If $M=N+IM$ then $M=N$. In particular, if $IM=M$ then $M=0$.</p>
 <p><em>Proof.</em> Passing to $M/N$, it suffices to show that if $M$ is finitely generated and $IM=M$ then $M=0$. Let $m_1,\dots,m_k$ generate $M$ with $k$ minimal. Since $IM=M$, we have $m_k=\sum_i a_i m_i$ with $a_i \in I$. Then</p>
 <p>$$
-(1_A-a_k)m_k=\sum_{i<k}a_i m_i.
+(1_A-a_k)m_k=\sum_{i&lt;k}a_i m_i.
 $$</p>
 <p>The element $1_A-a_k$ is invertible because $a_k \in J(A)$: if $1-a$ is not left-invertible then $A(1-a)$ is a proper left ideal, so it lies in a maximal left ideal, which contains $J(A)$ and hence $a$, giving $1=(1-a)+a$ in that ideal, a contradiction. Thus there is $u$ with $u(1_A-a_k)=1_A$, and $1_A-u=-ua_k \in J(A)$ since $J(A)$ is a two-sided ideal, so the same argument applied to $1_A-(1_A-u)$ shows that $u$ is left-invertible as well; then $u(1_A-a_k)=1_A$ and $vu=1_A$ force $1_A-a_k=v\bigl(u(1_A-a_k)\bigr)=v$, so $1_A-a_k$ has the two-sided inverse $u$. Multiplying by this inverse expresses $m_k$ in terms of $m_1,\dots,m_{k-1}$, contradicting minimality unless $k=0$.</p>
 <p>The commutativity of the base ring plays no role, and it is the two-sidedness of $I$ and the containment $I \subseteq J(A)$ that replace it.</p>

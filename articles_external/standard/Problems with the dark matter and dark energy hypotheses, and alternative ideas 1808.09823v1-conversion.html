@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problems with the Dark Matter and Dark Energy Hypotheses, and Alternative Ideas — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Problems with the dark matter and dark energy hypotheses, and alternative ideas 1808.09823v1.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="problems-with-the-dark-matter-and-dark-energy-hypotheses-and-alternative-ideas"><strong>Problems with the Dark Matter and Dark Energy Hypotheses, and Alternative Ideas</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (review)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1808.09823v1 [astro-ph.CO]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Martín López-Corredoira</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 28 August 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Cosmology on Small Scales 2018, M. Křížek and Yu. Dumin (eds.), Institute of Mathematics CAS, Prague</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Problems with the dark matter and dark energy hypotheses, and alternative ideas 1808.09823v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Problems with the dark matter and dark energy hypotheses, and alternative ideas 1808.09823v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Problems with the dark matter and dark energy hypotheses, and alternative ideas 1808.09823v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reviews the observational case against treating non-baryonic dark matter and dark energy as established, catalogues the galactic-scale failures of cold dark matter, and lists alternative explanations, including modified gravity. It is a critical review, not a model: its claim is that the standard cosmological paradigm has not yet earned the status of theory.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-thesis">The thesis</h3>
+<p>"The success in converting a hypothesis into a solid theory depends strongly on whether we are able to solve the problems in explaining observations with these dark elements and whether the solutions of these problems are unique within the standard paradigm without recourse to alternative scenarios. We have not achieved that success yet because of numerous inconsistencies, mainly on galactic scales, the non-detection so far of candidate particles for dark matter, and the existence of many alternative hypotheses that might substitute the standard picture to explain the cosmological observations."</p>
+<h3 id="the-baryon-budget">The baryon budget</h3>
+<p>"Stellar and cold gas in galaxies sum to baryonic matter content that is 8+4 −5 % of the total amount of the predicted Big Bang baryonic matter [10]. Where is the rest of the baryonic material? What is the nature of the putative non-baryonic dark matter required to achieve the current value of Ωm ≈ 0.3? Current CDM"</p>
+<h3 id="the-corecusp-problem">The core–cusp problem</h3>
+<p>"$\Lambda$CDM ... predicts halo mass profiles with cuspy cores and low outer density, while lensing and dynamical observations indicate a central core of constant density and a flattish high dark mass density outer profile." The proposed rescues are "bar-halo friction, which reduces the density of the halo in the inner galaxy; haloes around galaxies may have undergone a compression by the stellar disc or/and suffered from the effects of baryonic physics."</p>
+<h3 id="the-angular-momentum-problem">The angular momentum problem</h3>
+<p>"the predicted angular momentum is much less than the observed one." The proposed rescue requires "a considerable mass of low angular momentum baryons is ejected (massive galactic outflows)" and the discs to form later from high-angular-momentum material.</p>
+<h3 id="the-alternatives">The alternatives</h3>
+<p>"Rotation curves in spiral galaxies can be explained without non-baryonic dark matter with magnetic fields, or modified gravity, or baryonic dark matter in the outer disc or non-circular orbits in the outer disc." For MOND: it "modifies the New- tonian law for accelerations lower than 1 × 10−10 m/s2 . This was in principle a phenomenological approach.", and "a sensitive torsion balance was employed to measure small accelerations due to gravity, and no deviations from the predictions of Newton’s law were found down to 1 × 10−12 m/s2 [48]. Therefore" "MOND/TeVes is falsified by this experiment. There"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-catalogue-of-failures-with-their-proposed-rescues">1. A catalogue of failures with their proposed rescues</h3>
+<p><strong>The idea.</strong> Each anomaly is paired with the specific mechanism proposed to save the model — bar-halo friction for the cusp, outflows for the angular momentum. Naming the rescue makes the argument checkable: a rescue that needs its own fine-tuning is not a success. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A discipline the corpus can apply to its own anomalies: state the failure and the repair together, so the repair can be judged.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on the open problems.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus's anomalies are algebraic rather than observational, so the pairing would have to be restated in its own terms.</p>
+<h3 id="2-alternatives-are-themselves-falsified">2. Alternatives are themselves falsified</h3>
+<p><strong>The idea.</strong> The review does not argue that MOND is right; it reports that MOND is falsified by torsion-balance data at $10^{-12}$ m/s$^2$, and that its successes stop at galactic scales. The alternatives fail on their own terms.</p>
+<p><strong>What it would add.</strong> A caution against treating 'the standard model has problems' as evidence for a specific alternative, which is the error the corpus's dark-sector article would be tempted to make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on the alternatives.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<h3 id="3-ninety-two-percent-of-the-predicted-baryons-are-unaccounted-for">3. Ninety-two percent of the predicted baryons are unaccounted for</h3>
+<p><strong>The idea.</strong> The baryon fraction observed in stars and cold gas is $8^{+4}_{-5}\%$ of what Big Bang nucleosynthesis predicts. The missing baryons are a separate problem from the missing mass, and the review keeps them separate.</p>
+<p><strong>What it would add.</strong> A number the corpus can use when it states what the Standard Model leaves unexplained, distinguishing missing baryons from missing non-baryonic mass.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on the inventory.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>The rank is a judgement: the failure-and-rescue pairing first, because it is the method the corpus can actually adopt; the falsified alternatives second; the baryon budget third, as a number.</p>
+<p>This is a sixteen-page review; the galactic-scale anomalies, the alternatives, the dark-energy discussion and the critique of the standard paradigm are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

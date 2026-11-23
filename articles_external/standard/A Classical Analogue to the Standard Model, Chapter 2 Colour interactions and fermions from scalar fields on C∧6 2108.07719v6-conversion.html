@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Classical Analogue to the Standard Model and General Relativity — Chapter 2: Colour Interactions and Fermions from Scalar Fields on C∧6 — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 2 Colour interactions and fermions from…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-classical-analogue-to-the-standard-model-and-general-relativity-chapter-2-colour-interactions-and-fermions-from-scalar-fields-on-c6"><strong>A Classical Analogue to the Standard Model and General Relativity — Chapter 2: Colour Interactions and Fermions from Scalar Fields on C∧6</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (book chapter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2108.07719v6 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Robert N. C. Pfeifer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v6, 11 June 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/A Classical Analogue to the Standard Model, Chapter 2 Colour interactions and fermions from scalar fields on C∧6 2108.07719v6-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 2 Colour interactions and fermions from scalar fields on C∧6 2108.07719v6.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 2 Colour interactions and fermions from scalar fields on C∧6 2108.07719v6.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends the $\mathbb{C}^{\wedge2}$ quasiparticle model of Chapter 1 to the series $\mathbb{C}^{\wedge2n}$ and shows that at $n=3$ the model acquires an $\mathrm{SU}(3)$ local symmetry. Emergent fermions then carry colour and bind into composite triplets, giving a classical analogue of confinement in which the binding is not a postulated force but the consequence of exchange statistics on the underlying manifold.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"on increasing the dimensionality of the complex man- ifold from C∧2 to C∧6 , the dimension-L−1/2 spinor excitations in the associated effective field theory on R1,3 acquire an SU(3) colour charge and assemble into composite spinors of dimension L−3/2 . This model provides a novel environment in which to study colour confinement, while also demonstrating the ability"</p>
+<h3 id="the-symmetry-of-the-series">The symmetry of the series</h3>
+<p>"onclusion In this chapter the C∧2 model of Chapter 1 has been extended to C∧2n , and the resulting models are seen to exhibit a vector boson sector corresponding to a local SU(n) ⊕ GL(1, R) symmetry. For C∧6 this includes an SU(3) colour interaction which binds together composite fermions with physically desirable properties, having dimension L−3/2 and spin 12 . In the low-energy limit these emergent composite fermions"</p>
+<h3 id="where-the-physics-comes-from">Where the physics comes from</h3>
+<p>"Once again this model is obtained entirely from the exchange statistics of vectors on the underlying manifold, and the introduction of a minimal-complexity pseudovacuum." No coupling constants are added; the gauge structure follows from the manifold's dimension.</p>
+<h3 id="the-low-energy-limit">The low-energy limit</h3>
+<p>"In the low-energy limit these emergent composite fermions obey a simplified Lagrangian, interacting by exchange of one species of vector boson and one species of complex scalar boson."</p>
+<h3 id="the-scope-claimed">The scope claimed</h3>
+<p>"seudovacuum. This result demonstrates that models in the C∧2n series are capable of supporting fermionic excitations with dimensions and spin consistent with the observed leptons (though having an additional composite substructure), while also providing a new toy model exhibiting a form of colour-mediated confinement. Subsequent"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-confinement-as-a-binding-of-composite-triplets-not-as-a-potential">1. Confinement as a binding of composite triplets, not as a potential</h3>
+<p><strong>The idea.</strong> Colour is an $\mathrm{SU}(n)$ symmetry of the effective theory at $n=3$, and the composite fermion is a bound triplet of preonic excitations. Confinement is then a statement about what the low-energy spectrum contains, arising from the same statistics that produced the symmetry. This is a <strong>mechanism</strong> for confinement.</p>
+<p><strong>What it would add.</strong> An alternative to the corpus's confinement article, which reaches confinement through the loss of partonic information in the colour sector, and through the running coupling and the linear potential in the chromodynamics article. The analogue model offers a reason why only singlets appear, at the price of a preonic substructure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>, on the origin of confinement.</p>
+<p><strong>What stands in the way.</strong> The corpus's colour is a gauge quantum number of the quark field; here it is an emergent property of a manifold's dimension, and the two would have to be shown to coincide or kept as separate readings.</p>
+<h3 id="2-the-gauge-group-is-math15-fixed-by-math16">2. The gauge group is $\mathrm{SU}(n)\oplus\mathrm{GL}(1,\mathbb{R})$, fixed by $n$</h3>
+<p><strong>The idea.</strong> The local symmetry is not chosen; it is $\mathrm{SU}(n)$ for $\mathbb{C}^{\wedge2n}$, and colour requires $n=3$. The same series continues: $n=9$ gives the Standard Model spectrum. This is a <strong>formula</strong> relating manifold dimension to gauge group.</p>
+<p><strong>What it would add.</strong> A reason for the gauge group, which the corpus's chromodynamics article takes as given.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code>, on where the groups come from.</p>
+<p><strong>What stands in the way.</strong> The corpus's $\mathrm{SU}(3)$ arises from the algebra of its fields, not from a complex dimension count; the identification would require showing the two constructions agree, which the chapter does not do for the corpus's algebra.</p>
+<h3 id="3-dimension-sets-the-spinors-scaling-dimension">3. Dimension sets the spinor's scaling dimension</h3>
+<p><strong>The idea.</strong> A fermion on $\mathbb{C}^{\wedge2}$ has dimension $L^{-1/2}$; the composite on $\mathbb{C}^{\wedge6}$ has $L^{-3/2}$. The exponent tracks the number of constituents, so the field's engineering dimension is a bookkeeping of what it is made of.</p>
+<p><strong>What it would add.</strong> A structural reading of why a composite fermion has a different dimension from a fundamental one, which the corpus states by assertion in its effective-field discussions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code>, on composite operators.</p>
+<p><strong>What stands in the way.</strong> The scaling is a property of the analogue model's mapping, not of the Standard Model's fields; the corpus would need the same mapping to use the statement.</p>
+<p>This is a twenty-two-page chapter; the $\mathbb{C}^{\wedge2n}$ series, the $\mathrm{SU}(n)\oplus\mathrm{GL}(1,\mathbb{R})$ symmetry, the $n=3$ colour sector, the triplet binding and the low-energy Lagrangian are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

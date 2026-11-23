@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orthocomplemented Lattices and the Involution — Biquaternion Universe</title>
-  <meta name="description" content="A complement of an element of a bounded lattice is an element with and $x \vee y = 1$, and in a general lattice an element may have no complement or many.…">
+  <meta name="description" content="A complement of an element of a bounded lattice is an element with and, and in a general lattice an element may have no complement or many. A lattice is…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,8 +71,7 @@
       <div class="article-body">
         <h1 id="orthocomplemented-lattices-and-the-involution"><strong>Orthocomplemented Lattices and the Involution</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A <strong>complement</strong> of an element $x$ of a bounded lattice is an element $y$ with $x \wedge y = 0$ and $x
-\vee y = 1$, and in a general lattice an element may have no complement or many. A lattice is
+<p>A <strong>complement</strong> of an element $x$ of a bounded lattice is an element $y$ with $x \wedge y = 0$ and $x \vee y = 1$, and in a general lattice an element may have no complement or many. A lattice is
 <strong>orthocomplemented</strong> when the complement can be chosen for every element in a way that is a
 <strong>involution</strong> on the elements: a map $x \mapsto x^{\perp}$ of order two that reverses the order. This
 article studies that involution and the structure it defines. It first records why the bare complement
@@ -99,8 +98,7 @@ the operator layer, belong to the <code>* Operator Theory</code> group of this c
 <h2 id="complemented-lattices">Complemented Lattices</h2>
 <h3 id="the-complement-and-its-failure">The Complement and its Failure</h3>
 <p>Let $L$ be a bounded lattice with least element $0$ and greatest element $1$.</p>
-<p><strong>Definition.</strong> A <strong>complement</strong> of $x \in L$ is an element $y \in L$ with $x \wedge y = 0$ and $x \vee
-y = 1$. The lattice is <strong>complemented</strong> if every element has a complement.</p>
+<p><strong>Definition.</strong> A <strong>complement</strong> of $x \in L$ is an element $y \in L$ with $x \wedge y = 0$ and $x \vee y = 1$. The lattice is <strong>complemented</strong> if every element has a complement.</p>
 <p><strong>Proposition (failure of uniqueness).</strong> In a general lattice a complement need not be unique. In the
 five-element lattice $M_3$ with bottom $0$, top $1$ and three pairwise incomparable atoms $a, b, c$,
 the element $a$ has the two complements $b$ and $c$; so $M_3$ is complemented and its complementation
@@ -142,20 +140,14 @@ order isomorphism $L \to L_{\mathrm{opp}}$ of order two, in the sense of <em>Ope
 last two say that it is a complement.</p>
 <p><strong>Proposition.</strong> An orthocomplement is unique when it exists. It satisfies $0^{\perp} = 1$ and
 $1^{\perp} = 0$.</p>
-<p><strong>Proof.</strong> If ${}^{\perp}$ and ${}^{\prime}$ are orthocomplements and $x \in L$, then from $x^{\perp}
-\wedge x = 0$ one gets $x^{\prime} \leq (x^{\perp})^{\perp} = x$ by the order reversal and the
-complement laws applied to $x^{\perp}$; symmetrically $x^{\perp} \leq x^{\prime}$; so $x^{\perp} =
-x^{\prime}$ and the two maps agree. For the bounds, $0 \wedge 0^{\perp} = 0$ gives $0^{\perp} \geq 0$,
+<p><strong>Proof.</strong> If ${}^{\perp}$ and ${}^{\prime}$ are orthocomplements and $x \in L$, then from $x^{\perp} \wedge x = 0$ one gets $x^{\prime} \leq (x^{\perp})^{\perp} = x$ by the order reversal and the
+complement laws applied to $x^{\perp}$; symmetrically $x^{\perp} \leq x^{\prime}$; so $x^{\perp} = x^{\prime}$ and the two maps agree. For the bounds, $0 \wedge 0^{\perp} = 0$ gives $0^{\perp} \geq 0$,
 and $0 \vee 0^{\perp} = 1$ gives $0^{\perp} = 1$ because $0^{\perp}$ is an upper bound of $0$ equal to
 the join; dually $1^{\perp} = 0$.</p>
-<p><strong>Proposition (no fixed points, nondegenerate case).</strong> If $x = x^{\perp}$ then $x \wedge x^{\perp} =
-x$, so $x = 0$, and $x \vee x^{\perp} = x$, so $x = 1$; hence $0 = 1$ and the lattice is a single
+<p><strong>Proposition (no fixed points, nondegenerate case).</strong> If $x = x^{\perp}$ then $x \wedge x^{\perp} = x$, so $x = 0$, and $x \vee x^{\perp} = x$, so $x = 1$; hence $0 = 1$ and the lattice is a single
 point. In a nondegenerate ortholattice the involution is fixed-point-free.</p>
-<p><strong>Proof.</strong> Substitute $x = x^{\perp}$ in the two complement laws, which become $x \wedge x = 0$ and $x
-\vee x = 1$, that is, $x = 0$ and $x = 1$.</p>
-<p><strong>Example (the power set).</strong> The power-set lattice $\mathcal{P}(X)$ with the set complement $A^{\perp}
-= X \setminus A$ is an ortholattice: the complement is an involution, reverses inclusion, and $A \cap
-A^{\perp} = \emptyset$, $A \cup A^{\perp} = X$. It is <strong>Boolean</strong>, its orthocomplement is its unique
+<p><strong>Proof.</strong> Substitute $x = x^{\perp}$ in the two complement laws, which become $x \wedge x = 0$ and $x \vee x = 1$, that is, $x = 0$ and $x = 1$.</p>
+<p><strong>Example (the power set).</strong> The power-set lattice $\mathcal{P}(X)$ with the set complement $A^{\perp} = X \setminus A$ is an ortholattice: the complement is an involution, reverses inclusion, and $A \cap A^{\perp} = \emptyset$, $A \cup A^{\perp} = X$. It is <strong>Boolean</strong>, its orthocomplement is its unique
 complementation, and the general Boolean case is treated in <em>Boolean Algebras with an Involution</em>,
 later in this group.</p>
 <p><strong>Example (the smallest ortholattice).</strong> The smallest nondegenerate ortholattice is the Boolean
@@ -172,15 +164,13 @@ $$</p>
 order reversal gives $(x \wedge y)^{\perp} \geq x^{\perp}$ and $(x \wedge y)^{\perp} \geq y^{\perp}$,
 so $(x \wedge y)^{\perp} \geq u$. Conversely let $v$ be any upper bound of $x^{\perp}$ and $y^{\perp}$;
 then $v^{\perp} \leq x$ and $v^{\perp} \leq y$ by the order reversal applied to $x^{\perp} \leq v$ and
-$y^{\perp} \leq v$, so $v^{\perp} \leq x \wedge y$, and applying the order reversal again gives $v \geq
-(x \wedge y)^{\perp}$. Hence $(x \wedge y)^{\perp}$ is the least upper bound $u$. The second law is the
+$y^{\perp} \leq v$, so $v^{\perp} \leq x \wedge y$, and applying the order reversal again gives $v \geq (x \wedge y)^{\perp}$. Hence $(x \wedge y)^{\perp}$ is the least upper bound $u$. The second law is the
 same argument with the roles of the two bounds exchanged, or the first law applied to $x^{\perp}$ and
 $y^{\perp}$ and then the involution.</p>
 <p><strong>Corollary.</strong> The two De Morgan laws are equivalent for an order-reversing involution, and each of
 them together with the involution determines the other; the involution alone already forces both, so no
 distributivity is needed. In a complete ortholattice the laws extend to arbitrary families,
-$(\bigwedge_i x_i)^{\perp} = \bigvee_i x_i^{\perp}$ and $(\bigvee_i x_i)^{\perp} = \bigwedge_i
-x_i^{\perp}$.</p>
+$(\bigwedge_i x_i)^{\perp} = \bigvee_i x_i^{\perp}$ and $(\bigvee_i x_i)^{\perp} = \bigwedge_i x_i^{\perp}$.</p>
 <p><strong>Proof.</strong> The argument of the theorem uses only that the map is an order-reversing involution, not
 the complement laws. The infinitary statement is the same argument with the arbitrary join in place of
 the binary one, and it uses the completeness to form the bounds.</p>
@@ -210,13 +200,10 @@ involution to both sides gives $x \vee x^{\perp} = 0^{\perp}$, since $0^{\perp\p
 is independent of $x$ and equals $0^{\perp}$. If a greatest element $1$ exists, then taking $x = 1$
 gives $0^{\perp} = 1 \vee 1^{\perp} = 1$, so $x \vee x^{\perp} = 1$ for every $x$ and the complement
 laws hold.</p>
-<p><strong>Corollary.</strong> A lattice with a semiorthocomplement has a <strong>thin</strong> element $t = 0^{\perp} = x \vee
-x^{\perp}$, the same for every $x$, with $t^{\perp} = 0$. On the interval $[0, t]$ the map ${}^{\perp}$
+<p><strong>Corollary.</strong> A lattice with a semiorthocomplement has a <strong>thin</strong> element $t = 0^{\perp} = x \vee x^{\perp}$, the same for every $x$, with $t^{\perp} = 0$. On the interval $[0, t]$ the map ${}^{\perp}$
 restricts to an orthocomplement of the sublattice of elements below $t$, which is the largest
 orthocomplemented part of $L$; and if $L$ is bounded, then $t = 1$ and $L$ is itself an ortholattice.</p>
-<p><strong>Proof.</strong> The element $t$ is fixed by the theorem, and $t^{\perp} = (0^{\perp})^{\perp} = 0$. For $x
-\leq t$ one has $x^{\perp} \geq t^{\perp} = 0$; the identities $x \vee x^{\perp} = t$ and $x \wedge
-x^{\perp} = 0$ give the complement laws on $[0, t]$, and the involution restricts to an involution
+<p><strong>Proof.</strong> The element $t$ is fixed by the theorem, and $t^{\perp} = (0^{\perp})^{\perp} = 0$. For $x \leq t$ one has $x^{\perp} \geq t^{\perp} = 0$; the identities $x \vee x^{\perp} = t$ and $x \wedge x^{\perp} = 0$ give the complement laws on $[0, t]$, and the involution restricts to an involution
 there.</p>
 <p><strong>Remark (the weakening is not visible in a bounded lattice).</strong> The theorem shows that a
 semiorthocomplement on a bounded lattice is already an orthocomplement, so the notion is strictly
@@ -233,8 +220,7 @@ orthocomplemented. An orthocomplement is a map that is an order-reversing involu
 it is unique when it exists and it exchanges $0$ and $1$. The structure it defines, the ortholattice,
 satisfies both De Morgan laws, and those laws follow from the involution alone, with no distributivity.</p>
 <p>A semiorthocomplement is an order-reversing involution with $x \wedge x^{\perp} = 0$ on a lattice that
-need only have a least element; for it the join $x \vee x^{\perp}$ is the same thin element $t =
-0^{\perp}$ for every $x$. On a bounded lattice $t = 1$ and a semiorthocomplement is already an
+need only have a least element; for it the join $x \vee x^{\perp}$ is the same thin element $t = 0^{\perp}$ for every $x$. On a bounded lattice $t = 1$ and a semiorthocomplement is already an
 orthocomplement, so the notion is a strict weakening only without a greatest element, and the interval
 $[0,t]$ is then the largest orthocomplemented part. The Boolean case, in which the complement is
 unique, and the projection lattice of a Hilbert space, in which the orthocomplement is the orthogonal

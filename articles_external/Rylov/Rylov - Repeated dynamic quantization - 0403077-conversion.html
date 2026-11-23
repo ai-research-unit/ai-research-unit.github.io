@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repeated Dynamic Quantization — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Repeated dynamic quantization - 0403077.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="repeated-dynamic-quantization"><strong>Repeated Dynamic Quantization</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0403077 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 13 May 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Repeated dynamic quantization - 0403077-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Repeated dynamic quantization - 0403077.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Repeated dynamic quantization - 0403077.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that in the model conception the passage from a classical ensemble to a quantum one is a substitution in the action, not a change of principles, and that the substitution can be applied again. Applying it with an arbitrary parameter instead of $\hbar^{2}$ gives a one-parameter family of theories that interpolates between determinism and full stochasticity, and that family separates what is dynamical from what is statistical. He also points out that the extra field introduced by the substitution — the $\kappa$-field — is the only field in the construction that can produce pairs, because it is the only one that can make the mass imaginary.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-an-unrepeatable-quantization-is">What an unrepeatable quantization is</h3>
+<p>"In conventional quantum mechanics the quantum particle is a special object, whose properties are described by special concepts and quantum principles. The quantization is a special procedure, which is accompanied by introduction of special concepts, and this procedure cannot be repeated."</p>
+<p>Against which: "In MCQP the quantization is a dynamical procedure, where a special quantum term is added to the Lagrangian of the statistical ensemble of (classical) particles. This procedure can be repeated many times, because it is not accompanied by introduction of new concepts."</p>
+<h3 id="the-substitution">The substitution</h3>
+<p>Dynamic quantization is one line: the mass term of the ensemble action is changed so that $\kappa=\{\kappa_{l}(x)\}$ enters, "describing the mean intensity of the stochastic component of the particle motion (this component is absent for deterministic particles)." The result is an action with</p>
+<p>$$K=\sqrt{1+\lambda^{2}(\kappa_{l}\kappa^{l}+\partial_{l}\kappa^{l})},\qquad \lambda=\hbar/mc .$$</p>
+<p>The essential formal property: "the set of dynamic quantizations forms a one-parameter group, which allows one to separate the dynamical and statistical (stochastic) properties." The group parameter is $a=\hbar^{2}$, and in the conventional scheme no such separation exists, since there "ase a change of the parameter a = h̄2 generates a change of quantum principles, which contains the parameter a = h̄2 .".</p>
+<h3 id="the-math14-field-and-pair-production">The $\kappa$-field and pair production</h3>
+<p>"In MCQP the wave function is only a method of description of the statistical ensemble Est [Sst ], consisting of stochastic particles Sst . Regular component of the stochastic particle motion is described by the 4-current j k , whereas the stochastic component is described by the κ-field κl . From formal viewpoint"</p>
+<p>Its status: "ield κl . From formal viewpoint the κ-field is a relativistic force field, which is generated by the regular component of motion, and which can exist separately from its source [13]." And the claim about interactions: "Two different stochastic particle can interact via their common κ-field in a like way, as two charged particles interact via their common electromagnetic field. Interaction of two particles via the κ-field takes place only in MCQP."</p>
+<p>Then the sharpest statement in the paper: "Neither electromagnetic field, nor gravitational one can produce pairs, because they do not change the particle mass, that is necessary for the pair production. Only κ-field can produce pairs, because the factor K in (2.3) can make the particle mass m to be imaginary, when K 2 &lt; 0. It"</p>
+<h3 id="where-the-two-conceptions-differ">Where the two conceptions differ</h3>
+<p>The difference is located in one object: "In the framework of ACQP there is no necessity to consider the κ-field, it is sufficient to consider the corresponding wave function. In ACQP" And the reason the conventional scheme cannot see it: "In ACQP the wave function is a fundamental object of ACQP" whose properties are described by the quantum axiomatics, so that "it is useless to divide the wave function into its constituents."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-quantization-as-an-element-of-a-one-parameter-group">1. Quantization as an element of a one-parameter group</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> with an algebraic form: the quantum modification of a classical theory is a substitution parameterised by $a$, and $\hbar^{2}$ is one value of it. Turning $a$ up and down moves continuously between the deterministic and the fully stochastic regime without any principle changing.</p>
+<p><strong>What it would add.</strong> The corpus's fluid-wave correspondence article lists the constants each field carries and treats $\hbar$ as a fixed coefficient in the map from fluid to wave. A one-parameter group would make $\hbar$ a dial on that map, and the dial has a meaning: it measures how much of the motion is stochastic. That is a reading of the corpus's own constant that the article does not offer, and it changes no formula.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> Continuity in $a$ is a formal property of a family of actions; it does not show that a physical system can be moved along the family, or that anything at $a&lt;\hbar^{2}$ exists. The group is a convenience unless the intermediate values are realised.</p>
+<h3 id="2-a-field-that-can-make-the-mass-imaginary">2. A field that can make the mass imaginary</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> for pair production: the mass in the action is multiplied by $K$, and where $K^{2}&lt;0$ the effective mass is imaginary, which allows the time component of the 4-velocity to change sign. Electromagnetic and gravitational fields cannot do this because they do not touch the mass.</p>
+<p><strong>What it would add.</strong> The corpus has production of pairs nowhere, and it has a charge coupling that shifts a phase rather than a mass. Rylov's criterion — production requires the mass, not the phase, to be altered — is a constraint any corpus account would have to satisfy, and it explains why the electromagnetic route fails. It is the sharpest structural claim in this set, because it names the necessary ingredient instead of proposing a model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-s-matrix-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> An imaginary mass is a strong-field behaviour that no weak-coupling calculation reaches, and the paper computes no cross-section. It also treats the $\kappa$-field as external and time-dependent, so the collision problem is left unsolved by his own admission.</p>
+<h3 id="3-dynamical-and-statistical-content-separated">3. Dynamical and statistical content separated</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong> made by a parameter: with $a$ in the action, the dependence on $a$ is statistical and everything else is dynamical, so the two are separated by differentiation rather than by interpretation.</p>
+<p><strong>What it would add.</strong> The corpus's fluid articles continually mix the two — a field equation that is at once a dynamical law and a probability amplitude — and the mixing is the source of the interpretive arguments in the non-uniqueness article. A formal separator would let the corpus say which statements survive at $a=0$ and which do not, which is the question of what is quantum here, answered by a computation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The separation works inside a variational family and does not carry over to a theory given as an equation plus a Born rule. For the corpus $a$ has no place to enter, so the distinction would have to be rebuilt rather than imported.</p>
+<p>The rank: the imaginary-mass mechanism first, because it is a necessary condition; the one-parameter group second, because it re-reads a constant; the dynamical/statistical split last, because it does not transfer.</p>
+<p>The remaining items in one line each: the non-relativistic limit of the quantized action, which reproduces the Madelung form covered by the 0507084 note; the claim that the $\kappa$-field can exist apart from its source, which is what makes it a field rather than a bookkeeping device; and the observation that the wave function describes an ensemble rather than a particle, which recurs throughout this set.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

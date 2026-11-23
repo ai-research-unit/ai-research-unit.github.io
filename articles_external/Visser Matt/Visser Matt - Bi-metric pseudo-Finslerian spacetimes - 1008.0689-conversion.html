@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bi-metric pseudo–Finslerian spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-metric pseudo-Finslerian spacetimes - 1008.0689.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bi-metric-pseudofinslerian-spacetimes"><strong>Bi-metric pseudo–Finslerian spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1008.0689v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jozef Skakala, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 August 2010 (LATEX-ed 28 November 2021)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bi-metric pseudo-Finslerian spacetimes - 1008.0689-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-metric pseudo-Finslerian spacetimes - 1008.0689.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-metric pseudo-Finslerian spacetimes - 1008.0689.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks how a theory with two metrics should be described as a Finsler geometry. It recalls the definitions: a Finsler norm is homogeneous of degree one, and the Finsler metric is the Hessian of $F^2$ with respect to the velocity. For two metrics there is a natural combined norm, the geometric mean $F=\sqrt{F_+F_-}$, whose fourth power is a quartic in the velocity. The paper then shows that the resulting Finsler metric is not smooth. In Euclidean signature the failure is confined to the zero vector. In Lorentzian signature it spreads over the whole null cone, because the construction divides by quantities that vanish on null vectors. The authors call this a "divide by zero" problem intrinsic to bi-metric pseudo-Finsler spacetimes, and they are careful to say that single-cone pseudo-Finsler geometry may still be viable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Because physicists need to use pseudo–Finsler structures to describe propagation of signals, there will be nonzero null vectors in both the tangent and cotangent spaces — this causes significant problems in that many of the mathematical results normally obtained for 'usual' (Euclidean signature) Finsler structures either do not apply, or require significant modifications to their formulation and/or proof."</p>
+<h3 id="the-definitions">The definitions</h3>
+<p>A Finsler function obeys $F(x,\kappa v)=\kappa F(x,v)$ (paper 3), and the Finsler metric is</p>
+<p>$$g_{ab}(x,v)=\frac{1}{2}\frac{\partial^2[F^2(x,v)]}{\partial v^a\partial v^b}, \qquad (paper\ 6)$$</p>
+<p>"a 'direction dependent metric'". "In Euclidean signature, the function $F(x,v)$ is taken to be smooth except at $v=0$ ... In Lorentzian signature however, we shall soon see that $F(x,v)$ is typically non-smooth for all null vectors — so that non-smoothness issues have typically grown to affect the entire null cone."</p>
+<h3 id="the-combined-norm">The combined norm</h3>
+<p>For two metrics, "the natural thing to do is to implement Bernhard Riemann's original suggestion and take" $F(x,v)=\sqrt{F_+(v)F_-(v)}$, equivalently $g_{abcd}=g_{(ab}^{+}g_{cd)}^{-}$ (paper 8), whose fourth power is a quartic in $v$.</p>
+<h3 id="the-failure">The failure</h3>
+<p>"the pseudo-Finsler metric is singular on the entire signal cone. This problematic feature is intimately related to the fact that we are dealing with Lorentzian signature pseudo-Finsler geometries — it is a 'divide by zero' problem, associated with non-zero null vectors on the signal cone, that leads to singular values for metric components. This appears to us to be an intrinsic and unavoidable feature of bi-metric pseudo-Finsler spacetimes."</p>
+<h3 id="what-the-authors-do-not-claim">What the authors do not claim</h3>
+<p>"In closing we wish to emphasize that this does not mean that all attempts at constructing pseudo-Finsler metrics are intrinsically ill conceived. The situation is more subtle. While the situation with multiple signal cones is clearly diseased, at least if one wishes to encode all signal cones in one Finsler structure in any straightforward manner, and while one cannot blindly carry Euclidean signature Finsler results over to Lorentzian signature, the case of a single (geometrically distorted) signal cone may still be of interest — one will just have to check explicitly that all Euclidean signature constructions can be generalized to Lorentzian signature."</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>The abstract states the general lesson: "Whereas in Euclidian signature the construction of the Finsler metric typically fails at the zero vector, in Lorentzian signature the Finsler metric is typically ill-defined on the entire null cone." The paper's earlier, more complicated treatment of biaxial birefringent crystals reached the same conclusion; the bi-metric case is used because it makes the point without the technical clutter.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-new-entry-for-the-obstruction-catalogue">1. A new entry for the obstruction catalogue</h3>
+<p><strong>The idea.</strong> The construction fails by dividing by a norm that vanishes on null vectors. The failure is not a technicality of one model; it is forced by the signature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the biquaternion norm is indefinite and vanishes on non-zero elements, so those elements have no inverse. This paper shows the same feature appearing one level up, as the singularity of a derived metric on the whole null cone. That is a distinct obstruction with the same root, and the catalogue currently records only the algebraic version. The entry would read: no smooth direction-dependent metric can be built from a product of two Lorentzian norms.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, the group on the two quadratic forms.</p>
+<p><strong>What stands in the way.</strong> None. The statement is checkable in the paper's own formulas. Ranked first, because it extends the catalogue's central theme with a proved example.</p>
+<h3 id="2-the-massless-stratum-is-where-constructions-break">2. The massless stratum is where constructions break</h3>
+<p><strong>The idea.</strong> Everything goes wrong exactly on the set of null vectors — the massless stratum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> describes the stratum where the norm vanishes and only the spectral splitting survives. This paper shows that a natural attempt to combine two geometries degenerates there, so the stratum is not merely a place where one object fails: it is a place where a whole construction loses smoothness. That makes the massless article's warning sharper, and it raises a concrete question the article should answer: which derived objects remain finite on that stratum?</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper's objects are Finslerian, not biquaternionic, so the transfer is analogical. Phrase it as a question. Ranked third.</p>
+<h3 id="3-two-cones-are-not-one-metric">3. Two cones are not one metric</h3>
+<p><strong>The idea.</strong> Birefringence gives two signal cones. Forcing them into a single Finsler function is possible as a norm and impossible as a smooth metric.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code> treats a medium with one effective speed $c=1/\sqrt{\epsilon\mu}$. A bi-refringent medium has two, and the paper's result says there is no smooth single geometry that carries both. The media article should therefore state that its single-speed treatment is a restriction, not a general fact about media.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, where $c$ is introduced.</p>
+<p><strong>What stands in the way.</strong> The connection needs the bi-refringence vocabulary, which the media article does not yet use. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

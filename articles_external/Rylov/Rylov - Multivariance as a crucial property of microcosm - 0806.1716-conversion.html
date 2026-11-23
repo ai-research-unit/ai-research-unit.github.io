@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multivariance as a Crucial Property of Microcosm — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Multivariance as a crucial property of microcosm - 0806.1716.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multivariance-as-a-crucial-property-of-microcosm"><strong>Multivariance as a Crucial Property of Microcosm</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0806.1716 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 June 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Multivariance as a crucial property of microcosm - 0806.1716-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Multivariance as a crucial property of microcosm - 0806.1716.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Multivariance as a crucial property of microcosm - 0806.1716.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Identifies multivariance as the property that makes microcosm physics different, and gives the logical reason: multivariant geometry has an intransitive equivalence relation, so its conclusions are indefinite, so it cannot be axiomatised, so it cannot be a mathematical model in the usual sense. Physics therefore has no choice — if space-time is multivariant, models must be too. The rescue is the statistical description, which converts a set of many conclusions into one conclusion and restores single-variance. That derivation is the paper's substance; quantum mechanics and the discrete particle spectrum are its consequences.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-multivariance-is">What multivariance is</h3>
+<p>A definition by contrast with the Euclidean case: "Multivariant geometry is such a geometry, where at the point $P$ there are many vectors $PP'$, $PP''$,... which are equivalent to the vector $QQ'$ at the point $Q$, but they are not equivalent between themselves. In the conventional (Euclidean) method the equivalence relation is transitive, whereas in a multivariant geometry the equivalence relation is intransitive, in general."</p>
+<p>The reason it cannot be axiomatised follows immediately: "such a model cannot be axiomatized, because the axiomatization supposes a single-variance of conclusions." And the reason the conventional method misses it is stated as a defect of that method: "The conventional method of a generalized geometry construction, based on deduction of all propositions of the geometry from axioms, appears to be imperfect in the sense, that multivariant geometries cannot be constructed by means of this method."</p>
+<h3 id="the-chain-from-intransitivity-to-statistics">The chain from intransitivity to statistics</h3>
+<p>This is the paper's argument in five steps, and each step is a sentence:</p>
+<p>"In any mathematical model the equivalence relation is transitive. This property of the mathematical model provides definiteness (single-variance) for all conclusions, made on the basis of such a mathematical model. If the equivalence relation is intransitive, the conclusions, made on the basis of such a model cease to be definite. They becomes multivariant."</p>
+<p>Then the exclusion: "The logical construction with the intransitive equivalence relation and, hence, with multivariant conclusions is not considered to be a mathematical model, because it is useless, and one cannot make a definite prediction on the basis of such a model."</p>
+<p>Then the forced step, since "models of physical phenomena may not ignore space-time geometry, and the space-time geometry may be multivariant, one cannot avoid a use of multivariant models of physical phenomena."</p>
+<p>Then the rescue: "a multivariant model can be reduced to a single-variant model", provided one unites the whole set of conclusions of one statement into a single conclusion; in other words, "one considers the set of different objects as a statistical ensemble." And the result: "Prediction of the model about statistically averaged objects (statistical ensembles), which now are objects of the model, may appear to be single-variant, if the statistical description is produced properly."</p>
+<h3 id="graininess-and-the-one-single-variant-geometry">Graininess, and the one single-variant geometry</h3>
+<p>"Multivariant geometry is a grainy geometry, i.e. the geometry, which is partly continuous and partly discrete. Multivariance is a mathematical method of the graininess description." The consequence for particles: "The graininess (and multivariance) of the space-time geometry generates a multivariant (quantum) motion of particles in microcosm. Besides, the grainy space-time generates some discrimination mechanism, responsible for discrete parameters (mass, charge, spin) of elementary particles."</p>
+<p>And a count that is worth having: "Class of uniform, isotropic flat space-time geometries is a continual set, whose elements are labelled by a real function of one argument. Only one geometry of this class may be considered as single-variant (geometry of Minkowski). All other space-time geometries are multivariant." So Minkowski is the unique exception, not the rule.</p>
+<p>On why nobody noticed: "At the conventional approach, based on concepts of the linear vector space, the natural multivariance of the Riemannian geometry is suppressed by means of the fernparallelism interdict."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-intransitive-equivalence-forces-a-statistical-theory">1. Intransitive equivalence forces a statistical theory</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> with a logical argument behind it: intransitivity of the geometry's equivalence relation makes conclusions indefinite, indefiniteness forbids axiomatisation, and averaging over the set of conclusions is the only way to recover definiteness. Quantum mechanics is then not a fundamental theory but the statistically averaged shadow of an intransitive geometry.</p>
+<p><strong>What it would add.</strong> The corpus's Born-weight article takes the weight as an empirical postulate added to an otherwise deterministic framework, and it has never explained why a weight is needed at all. This argument supplies the reason: a weight is what converts an indefinite set of conclusions into a definite one. That is the missing "why", and it is a why of a different kind from the ones the corpus has offered, since it comes from the logic of the geometry rather than from the physics. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>. </p>
+<p><strong>What stands in the way.</strong> The step from indefinite conclusions to averaging them is not forced: indefinite conclusions could equally be read as a many-valued logic or as a restriction on what may be asked. Nothing in the paper derives the weights, only the necessity of some averaging, and the corpus's specific weight $|\psi|^2$ remains unexplained. </p>
+<h3 id="2-the-statistical-description-as-the-general-case">2. The statistical description as the general case</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> that inverts the usual order of fundamentality: the statistical description is not an approximation to a deterministic theory but the form any theory must take when its geometry is intransitive. Determinism is then the degenerate case. </p>
+<p><strong>What it would add.</strong> The corpus's framework is deterministic at the level of the field and statistical only through the Born rule, so it treats statistics as derivative. This reading makes it primary, and it is a claim the corpus can test in its own terms: is its field-level determinism a consequence of a transitive structure that its algebra imposes. If so, the corpus's determinism is an artefact of the algebra's transitivity, which is a precise and checkable statement. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>. </p>
+<p><strong>What stands in the way.</strong> The claim is about geometries in general and gives no criterion for telling an intransitive geometry from a transitive one with noise. Without that criterion the inversion is a relabelling, and every stochastic theory could claim it. </p>
+<h3 id="3-minkowski-as-the-unique-single-variant-geometry">3. Minkowski as the unique single-variant geometry</h3>
+<p><strong>The idea.</strong> A <strong>count</strong>: among uniform isotropic flat geometries, exactly one — Minkowski — is single-variant, and the rest form a set labelled by a function of one argument. So the special-relativistic geometry is a measure-zero accident. </p>
+<p><strong>What it would add.</strong> The corpus treats the Minkowski metric as the physically selected flat case and its algebra as carrying that structure. A statement that the flat single-variant case is unique but isolated would put the corpus's choice of background in a larger space and would raise the question of what selects it. That is a question the corpus's frame article is the natural place to pose. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>. </p>
+<p><strong>What stands in the way.</strong> The count is within a class he defines, and the labelling function is not exhibited. Nothing shows that the other members of the class are physically admissible, so the "isolated point" may be isolated within a set of mostly unphysical geometries. The rank: intransitivity first, because it answers a question the corpus leaves open; statistics as general case second, because it is the same argument in stronger form; the Minkowski count last, because the class is undefined in practice. The remaining items in one line each: graininess as the physical face of multivariance; the "discrimination mechanism" that fixes discrete masses and charges, developed from the equation count and summarised in the 1007.5108 note; and the suppression of multivariance by the fernparallelism interdict, which explains why the Riemannian framework could not see any of this.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

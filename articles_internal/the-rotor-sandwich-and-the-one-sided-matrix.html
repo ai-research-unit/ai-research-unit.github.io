@@ -76,7 +76,7 @@
 <p><strong>Four arrays of three different kinds.</strong> The tally is not four objects of one type. The two $4\times4$ arrays $L_{\mathrm{axf}}(\tilde u)$ and $R_{\mathrm{axf}}(\tilde u^{\natural})$ are the matrices of the two one-sided multiplications by the rotor, on the four coordinates of the algebra. The $2\times2$ array $A=\mathsf M_2(\tilde u)$ is a representation of the rotor on a two-dimensional module. The $3\times3$ array $M(\tilde u)$ is the matrix of the sandwich on the vector part. Two actions, one representation, one map.</p>
 <p><strong>The claim, in its sharp form.</strong> For a real rotor the sandwich fixes the scalar line and preserves the vector subspace. Hence, as a $4\times4$ matrix, it is block diagonal with a $1$ in the scalar slot, and $M$ is its vector block. The one-sidedness of $M$ follows from that splitting, and only then from linearity. The identity that states it is</p>
 <p>$$
-L_{\mathrm{axf}}(\tilde u)\,R_{\mathrm{axf}}(\tilde u^{\natural})=\begin{pmatrix}1&0\\0&M(\tilde u)\end{pmatrix}.
+L_{\mathrm{axf}}(\tilde u)\,R_{\mathrm{axf}}(\tilde u^{\natural})=\begin{pmatrix}1&amp;0\\0&amp;M(\tilde u)\end{pmatrix}.
 $$</p>
 <p><strong>What is shown below.</strong> §<em>The Four Arrays of One Rotor</em> prints them symbolically, with $M$ in three full forms. §<em>Two Proofs of the Block Identity</em> gives a direct proof by columns and an algebraic proof by blocks. §<em>The Rotor as a Square Root of the Rotation</em> turns the half-angle into a statement with a formula. §<em>The Cases</em> prints the four arrays for eleven rotors. §<em>Where the One-Sided Product Fails</em> says what cannot collapse. §<em>The Boost</em> carries the same analysis over to the Lorentz group.</p>
 <p><strong>Conventions.</strong> The frame is $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, the product has $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the Pauli image is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)$. Quaternion conjugation reverses the vector part, $\tilde Q^{\natural}=Q_t-\vec Q$, and for complex coefficients the star is conjugation followed by reversal,</p>
@@ -89,33 +89,33 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)=
 \begin{pmatrix}
-a&-w_x&-w_y&-w_z\\
-w_x&a&-w_z&w_y\\
-w_y&w_z&a&-w_x\\
-w_z&-w_y&w_x&a
+a&amp;-w_x&amp;-w_y&amp;-w_z\\
+w_x&amp;a&amp;-w_z&amp;w_y\\
+w_y&amp;w_z&amp;a&amp;-w_x\\
+w_z&amp;-w_y&amp;w_x&amp;a
 \end{pmatrix}
 =
 \begin{pmatrix}
-a&-\vec w^{\mathsf T}\\
-\vec w&a\mathrm I_3+[\vec w]_{\times}
+a&amp;-\vec w^{\mathsf T}\\
+\vec w&amp;a\mathrm I_3+[\vec w]_{\times}
 \end{pmatrix},
 \qquad
 [\vec w]_{\times}=
-\begin{pmatrix}0&-w_z&w_y\\ w_z&0&-w_x\\ -w_y&w_x&0\end{pmatrix}.
+\begin{pmatrix}0&amp;-w_z&amp;w_y\\ w_z&amp;0&amp;-w_x\\ -w_y&amp;w_x&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The right action of the conjugate.</strong> Right multiplication by $\tilde u^{\natural}=ae_t-\vec w$ gives</p>
 <p>$$
 R_{\mathrm{axf}}(\tilde u^{\natural})=
 \begin{pmatrix}
-a&w_x&w_y&w_z\\
--w_x&a&-w_z&w_y\\
--w_y&w_z&a&-w_x\\
--w_z&-w_y&w_x&a
+a&amp;w_x&amp;w_y&amp;w_z\\
+-w_x&amp;a&amp;-w_z&amp;w_y\\
+-w_y&amp;w_z&amp;a&amp;-w_x\\
+-w_z&amp;-w_y&amp;w_x&amp;a
 \end{pmatrix}
 =
 \begin{pmatrix}
-a&\vec w^{\mathsf T}\\
--\vec w&a\mathrm I_3+[\vec w]_{\times}
+a&amp;\vec w^{\mathsf T}\\
+-\vec w&amp;a\mathrm I_3+[\vec w]_{\times}
 \end{pmatrix}.
 $$</p>
 <p>The two arrays share the bottom-right block and differ only in the sign of the two off-diagonal blocks. Both are orthogonal of determinant one, and $L_{\mathrm{axf}}(\tilde u)^{\mathsf T}=L_{\mathrm{axf}}(\tilde u^{\natural})$, $R_{\mathrm{axf}}(\tilde u)^{\mathsf T}=R_{\mathrm{axf}}(\tilde u^{\natural})$.</p>
@@ -123,8 +123,8 @@ $$</p>
 <p>$$
 A=\mathsf M_2(\tilde u)=a\mathrm I_2-i\bigl(w_x\sigma_1+w_y\sigma_2+w_z\sigma_3\bigr)=
 \begin{pmatrix}
-a-iw_z&-w_y-iw_x\\
-w_y-iw_x&a+iw_z
+a-iw_z&amp;-w_y-iw_x\\
+w_y-iw_x&amp;a+iw_z
 \end{pmatrix}.
 $$</p>
 <p>The array is unitary of determinant one, $A^{\dagger}A=\mathrm I_2$ and $\det A=a^{2}+\lvert\vec w\rvert^{2}=1$. It is a representation, not a matrix of an action on the four coordinates.</p>
@@ -132,9 +132,9 @@ $$</p>
 <p>$$
 M(\tilde u)=
 \begin{pmatrix}
-a^{2}+w_x^{2}-w_y^{2}-w_z^{2} & -2aw_z+2w_xw_y & 2aw_y+2w_xw_z\\[2pt]
-2aw_z+2w_xw_y & a^{2}-w_x^{2}+w_y^{2}-w_z^{2} & -2aw_x+2w_yw_z\\[2pt]
--2aw_y+2w_xw_z & 2aw_x+2w_yw_z & a^{2}-w_x^{2}-w_y^{2}+w_z^{2}
+a^{2}+w_x^{2}-w_y^{2}-w_z^{2} &amp; -2aw_z+2w_xw_y &amp; 2aw_y+2w_xw_z\\[2pt]
+2aw_z+2w_xw_y &amp; a^{2}-w_x^{2}+w_y^{2}-w_z^{2} &amp; -2aw_x+2w_yw_z\\[2pt]
+-2aw_y+2w_xw_z &amp; 2aw_x+2w_yw_z &amp; a^{2}-w_x^{2}-w_y^{2}+w_z^{2}
 \end{pmatrix}.
 $$</p>
 <p><strong>Second form, the compact one.</strong></p>
@@ -146,9 +146,9 @@ $$</p>
 <p>$$
 M=
 \begin{pmatrix}
-c+(1-c)n_x^{2} & (1-c)n_xn_y-s\,n_z & (1-c)n_xn_z+s\,n_y\\[2pt]
-(1-c)n_xn_y+s\,n_z & c+(1-c)n_y^{2} & (1-c)n_yn_z-s\,n_x\\[2pt]
-(1-c)n_xn_z-s\,n_y & (1-c)n_yn_z+s\,n_x & c+(1-c)n_z^{2}
+c+(1-c)n_x^{2} &amp; (1-c)n_xn_y-s\,n_z &amp; (1-c)n_xn_z+s\,n_y\\[2pt]
+(1-c)n_xn_y+s\,n_z &amp; c+(1-c)n_y^{2} &amp; (1-c)n_yn_z-s\,n_x\\[2pt]
+(1-c)n_xn_z-s\,n_y &amp; (1-c)n_yn_z+s\,n_x &amp; c+(1-c)n_z^{2}
 \end{pmatrix},
 $$</p>
 <p>which is Rodrigues, $M=\mathrm I_3+\sin\theta\,K_{\vec n}+(1-\cos\theta)K_{\vec n}^{2}$ with $K_{\vec n}=[\vec n]_{\times}$. The two forms agree on five hundred random rotors with residual $8.9\times10^{-16}$.</p>
@@ -163,7 +163,7 @@ $$</p>
 <h2 id="two-proofs-of-the-block-identity">Two Proofs of the Block Identity</h2>
 <p><strong>Statement.</strong> For every unit rotor,</p>
 <p>$$
-L_{\mathrm{axf}}(\tilde u)\,R_{\mathrm{axf}}(\tilde u^{\natural})=\begin{pmatrix}1&0\\0&M(\tilde u)\end{pmatrix}.
+L_{\mathrm{axf}}(\tilde u)\,R_{\mathrm{axf}}(\tilde u^{\natural})=\begin{pmatrix}1&amp;0\\0&amp;M(\tilde u)\end{pmatrix}.
 $$</p>
 <p><strong>Proof 1, by columns: the direct one.</strong> The product $P=L_{\mathrm{axf}}(\tilde u)R_{\mathrm{axf}}(\tilde u^{\natural})$ is the matrix of the composite map $Q\mapsto\tilde uQ\tilde u^{\natural}$, because $L$ is the matrix of $Q\mapsto\tilde uQ$ and $R$ the matrix of $Q\mapsto Q\tilde u^{\natural}$. A matrix is determined by the images of the basis elements, so take the $\mu$-th column of $P$ to be the coefficient column of $\tilde u\,e_{{\imath}}\,\tilde u^{\natural}$.</p>
 <p>For ${\imath}=t$: $\tilde u\,e_t\,\tilde u^{\natural}=\tilde u\tilde u^{\natural}=\lvert\tilde u\rvert^{2}e_t=e_t$, whose column is $(1,0,0,0)^{\mathsf T}$.</p>
@@ -172,12 +172,12 @@ $$</p>
 <p>This proof uses no algebra identity. It only uses that a matrix is fixed by its columns, and that the sandwich fixes $e_t$ and acts on the vector part as $M$. It also shows where the two-sidedness goes: the two factors are the matrices of the two one-sided halves of the sandwich, and their product is the matrix of the whole.</p>
 <p><strong>Proof 2, by blocks: the algebraic one.</strong> Multiply the two block forms,</p>
 <p>$$
-\begin{pmatrix}a&-\vec w^{\mathsf T}\\ \vec w&B\end{pmatrix}
-\begin{pmatrix}a&\vec w^{\mathsf T}\\ -\vec w&B\end{pmatrix}
+\begin{pmatrix}a&amp;-\vec w^{\mathsf T}\\ \vec w&amp;B\end{pmatrix}
+\begin{pmatrix}a&amp;\vec w^{\mathsf T}\\ -\vec w&amp;B\end{pmatrix}
 =
 \begin{pmatrix}
-a^{2}+\vec w^{\mathsf T}\vec w & a\vec w^{\mathsf T}-\vec w^{\mathsf T}B\\
-a\vec w-B\vec w & \vec w\vec w^{\mathsf T}+B^{2}
+a^{2}+\vec w^{\mathsf T}\vec w &amp; a\vec w^{\mathsf T}-\vec w^{\mathsf T}B\\
+a\vec w-B\vec w &amp; \vec w\vec w^{\mathsf T}+B^{2}
 \end{pmatrix},
 \qquad B=a\mathrm I_3+[\vec w]_{\times}.
 $$</p>
@@ -327,111 +327,111 @@ $$</p>
 <h3 id="the-identity">The Identity</h3>
 <p><strong>Rotor.</strong> $\tilde u=e_t$.</p>
 <p>$$
-A=\begin{pmatrix}1&0\\0&1\end{pmatrix},
+A=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix},
 \qquad
-L=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+L=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 \qquad
-R=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+R=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 \qquad
-M=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}.
+M=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <h3 id="a-quarter-turn-about-math214">A Quarter Turn about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac{\sqrt2}{2}(e_t+\vec e_z)$, so $a=w_z=\tfrac{\sqrt2}{2}$.</p>
 <p>$$
-A=\begin{pmatrix}e^{-i\pi/4}&0\\0&e^{i\pi/4}\end{pmatrix}
-=\tfrac{\sqrt2}{2}\begin{pmatrix}1-i&0\\0&1+i\end{pmatrix}.
+A=\begin{pmatrix}e^{-i\pi/4}&amp;0\\0&amp;e^{i\pi/4}\end{pmatrix}
+=\tfrac{\sqrt2}{2}\begin{pmatrix}1-i&amp;0\\0&amp;1+i\end{pmatrix}.
 $$</p>
 <p>$$
 L=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-1&0&0&-1\\
-0&1&-1&0\\
-0&1&1&0\\
-1&0&0&1
+1&amp;0&amp;0&amp;-1\\
+0&amp;1&amp;-1&amp;0\\
+0&amp;1&amp;1&amp;0\\
+1&amp;0&amp;0&amp;1
 \end{pmatrix},
 \qquad
 R=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-1&0&0&1\\
-0&1&-1&0\\
-0&1&1&0\\
--1&0&0&1
+1&amp;0&amp;0&amp;1\\
+0&amp;1&amp;-1&amp;0\\
+0&amp;1&amp;1&amp;0\\
+-1&amp;0&amp;0&amp;1
 \end{pmatrix},
 $$</p>
 <p>$$
-M=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix}.
+M=\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p><strong>The sandwich.</strong> $\vec e_x\mapsto\vec e_y$, $\vec e_y\mapsto-\vec e_x$, $\vec e_z\mapsto\vec e_z$, $e_t\mapsto e_t$. The three columns of $M$ are the three images.</p>
 <p><strong>The product.</strong></p>
 <p>$$
 LR=
 \begin{pmatrix}
-1&0&0&0\\
-0&0&-1&0\\
-0&1&0&0\\
-0&0&0&1
+1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1
 \end{pmatrix}
-=\begin{pmatrix}1&0\\0&M\end{pmatrix}.
+=\begin{pmatrix}1&amp;0\\0&amp;M\end{pmatrix}.
 $$</p>
 <p>Every entry is an integer. The square roots of the two factors cancel.</p>
 <p><strong>The similarity.</strong> $A(-i\sigma_1)A^{-1}=-i\sigma_2$, which is the first column of $M$ read in the Pauli frame: the image of the first basis element is the second.</p>
 <h3 id="a-half-turn-about-math228">A Half Turn about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\vec e_z$, so $a=0$ and $w_z=1$.</p>
 <p>$$
-A=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+A=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 \qquad
-L=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+L=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix},
 \qquad
-R=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},
+R=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>$$
-M=\begin{pmatrix}-1&0&0\\0&-1&0\\0&0&1\end{pmatrix},
+M=\begin{pmatrix}-1&amp;0&amp;0\\0&amp;-1&amp;0\\0&amp;0&amp;1\end{pmatrix},
 \qquad
 LR=
 \begin{pmatrix}
-1&0&0&0\\
-0&-1&0&0\\
-0&0&-1&0\\
-0&0&0&1
+1&amp;0&amp;0&amp;0\\
+0&amp;-1&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0\\
+0&amp;0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>The rotation sends $\vec e_x\mapsto-\vec e_x$ and $\vec e_y\mapsto-\vec e_y$. Its trace is $-1=1+2\cos\pi$.</p>
 <h3 id="a-quarter-turn-about-math237">A Quarter Turn about $\vec e_x$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac{\sqrt2}{2}(e_t+\vec e_x)$.</p>
 <p>$$
-A=\tfrac{\sqrt2}{2}\begin{pmatrix}1&-i\\-i&1\end{pmatrix},
+A=\tfrac{\sqrt2}{2}\begin{pmatrix}1&amp;-i\\-i&amp;1\end{pmatrix},
 \qquad
 L=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-1&-1&0&0\\
-1&1&0&0\\
-0&0&1&-1\\
-0&0&1&1
+1&amp;-1&amp;0&amp;0\\
+1&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;-1\\
+0&amp;0&amp;1&amp;1
 \end{pmatrix},
 \qquad
 R=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-1&1&0&0\\
--1&1&0&0\\
-0&0&1&-1\\
-0&0&1&1
+1&amp;1&amp;0&amp;0\\
+-1&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;-1\\
+0&amp;0&amp;1&amp;1
 \end{pmatrix},
 $$</p>
 <p>$$
-M=\begin{pmatrix}1&0&0\\0&0&-1\\0&1&0\end{pmatrix}.
+M=\begin{pmatrix}1&amp;0&amp;0\\0&amp;0&amp;-1\\0&amp;1&amp;0\end{pmatrix}.
 $$</p>
-<p>Each of the two arrays is block diagonal in the planes $(e_t,\vec e_x)$ and $(\vec e_y,\vec e_z)$, with its own $2\times2$ block repeated twice: $L$ repeats $\tfrac{\sqrt2}{2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ and $R$ repeats its transpose. The rotation turns the $(y,z)$ plane and fixes $x$.</p>
+<p>Each of the two arrays is block diagonal in the planes $(e_t,\vec e_x)$ and $(\vec e_y,\vec e_z)$, with its own $2\times2$ block repeated twice: $L$ repeats $\tfrac{\sqrt2}{2}\begin{pmatrix}1&amp;-1\\1&amp;1\end{pmatrix}$ and $R$ repeats its transpose. The rotation turns the $(y,z)$ plane and fixes $x$.</p>
 <h3 id="a-half-turn-about-math249">A Half Turn about $\vec e_x$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\vec e_x$, with $\tilde u^{2}=-e_t$.</p>
 <p>$$
-A=-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},
+A=-i\sigma_1=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},
 \qquad
-L=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
-R=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+R=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 $$</p>
 <p>$$
-M=\begin{pmatrix}1&0&0\\0&-1&0\\0&0&-1\end{pmatrix}.
+M=\begin{pmatrix}1&amp;0&amp;0\\0&amp;-1&amp;0\\0&amp;0&amp;-1\end{pmatrix}.
 $$</p>
 <p>The rotation is $\operatorname{diag}(1,-1,-1)$: the reflection in the $x$ line, written as a half turn about it.</p>
 <h3 id="a-third-of-a-turn-about-the-diagonal">A Third of a Turn about the Diagonal</h3>
@@ -439,8 +439,8 @@ $$</p>
 <p>$$
 A=\tfrac12
 \begin{pmatrix}
-1-i&-1-i\\
-1-i&1+i
+1-i&amp;-1-i\\
+1-i&amp;1+i
 \end{pmatrix},
 \qquad
 \operatorname{tr}A=1=2\cos\tfrac{\pi}{3}.
@@ -448,46 +448,46 @@ $$</p>
 <p>$$
 L=\tfrac12
 \begin{pmatrix}
-1&-1&-1&-1\\
-1&1&-1&1\\
-1&1&1&-1\\
-1&-1&1&1
+1&amp;-1&amp;-1&amp;-1\\
+1&amp;1&amp;-1&amp;1\\
+1&amp;1&amp;1&amp;-1\\
+1&amp;-1&amp;1&amp;1
 \end{pmatrix},
 \qquad
 R=\tfrac12
 \begin{pmatrix}
-1&1&1&1\\
--1&1&-1&1\\
--1&1&1&-1\\
--1&-1&1&1
+1&amp;1&amp;1&amp;1\\
+-1&amp;1&amp;-1&amp;1\\
+-1&amp;1&amp;1&amp;-1\\
+-1&amp;-1&amp;1&amp;1
 \end{pmatrix},
 \qquad
-M=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}.
+M=\begin{pmatrix}0&amp;0&amp;1\\1&amp;0&amp;0\\0&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p>The rotation is the cyclic permutation $x\mapsto y\mapsto z\mapsto x$. It has order three, while the rotor has order six: the ratio of the orders is the double cover. The product $LR$ is $\operatorname{diag}(1,M)$ with every entry $0$ or $1$.</p>
 <h3 id="a-half-turn-about-the-diagonal">A Half Turn about the Diagonal</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac{\sqrt2}{2}(\vec e_x+\vec e_y)$, so $a=0$.</p>
 <p>$$
-A=\tfrac{\sqrt2}{2}\begin{pmatrix}0&-1-i\\1-i&0\end{pmatrix},
+A=\tfrac{\sqrt2}{2}\begin{pmatrix}0&amp;-1-i\\1-i&amp;0\end{pmatrix},
 \qquad
 L=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-0&-1&-1&0\\
-1&0&0&1\\
-1&0&0&-1\\
-0&-1&1&0
+0&amp;-1&amp;-1&amp;0\\
+1&amp;0&amp;0&amp;1\\
+1&amp;0&amp;0&amp;-1\\
+0&amp;-1&amp;1&amp;0
 \end{pmatrix},
 $$</p>
 <p>$$
 R=\tfrac{\sqrt2}{2}
 \begin{pmatrix}
-0&1&1&0\\
--1&0&0&1\\
--1&0&0&-1\\
-0&-1&1&0
+0&amp;1&amp;1&amp;0\\
+-1&amp;0&amp;0&amp;1\\
+-1&amp;0&amp;0&amp;-1\\
+0&amp;-1&amp;1&amp;0
 \end{pmatrix},
 \qquad
-M=\begin{pmatrix}0&1&0\\1&0&0\\0&0&-1\end{pmatrix}.
+M=\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;-1\end{pmatrix}.
 $$</p>
 <p>The rotation swaps $x$ and $y$ and negates $z$. Every entry is an integer despite the square roots in the rotor.</p>
 <h3 id="a-quarter-turn-about-the-diagonal">A Quarter Turn about the Diagonal</h3>
@@ -495,33 +495,33 @@ $$</p>
 <p>$$
 A=
 \begin{pmatrix}
-\tfrac{\sqrt2}{2}&-\tfrac12-\tfrac{i}{2}\\[2pt]
-\tfrac12-\tfrac{i}{2}&\tfrac{\sqrt2}{2}
+\tfrac{\sqrt2}{2}&amp;-\tfrac12-\tfrac{i}{2}\\[2pt]
+\tfrac12-\tfrac{i}{2}&amp;\tfrac{\sqrt2}{2}
 \end{pmatrix}
 $$</p>
 <p>$$
 L=
 \begin{pmatrix}
-\tfrac{\sqrt2}{2}&-\tfrac12&-\tfrac12&0\\[2pt]
-\tfrac12&\tfrac{\sqrt2}{2}&0&\tfrac12\\[2pt]
-\tfrac12&0&\tfrac{\sqrt2}{2}&-\tfrac12\\[2pt]
-0&-\tfrac12&\tfrac12&\tfrac{\sqrt2}{2}
+\tfrac{\sqrt2}{2}&amp;-\tfrac12&amp;-\tfrac12&amp;0\\[2pt]
+\tfrac12&amp;\tfrac{\sqrt2}{2}&amp;0&amp;\tfrac12\\[2pt]
+\tfrac12&amp;0&amp;\tfrac{\sqrt2}{2}&amp;-\tfrac12\\[2pt]
+0&amp;-\tfrac12&amp;\tfrac12&amp;\tfrac{\sqrt2}{2}
 \end{pmatrix},
 \qquad
 R=
 \begin{pmatrix}
-\tfrac{\sqrt2}{2}&\tfrac12&\tfrac12&0\\[2pt]
--\tfrac12&\tfrac{\sqrt2}{2}&0&\tfrac12\\[2pt]
--\tfrac12&0&\tfrac{\sqrt2}{2}&-\tfrac12\\[2pt]
-0&-\tfrac12&\tfrac12&\tfrac{\sqrt2}{2}
+\tfrac{\sqrt2}{2}&amp;\tfrac12&amp;\tfrac12&amp;0\\[2pt]
+-\tfrac12&amp;\tfrac{\sqrt2}{2}&amp;0&amp;\tfrac12\\[2pt]
+-\tfrac12&amp;0&amp;\tfrac{\sqrt2}{2}&amp;-\tfrac12\\[2pt]
+0&amp;-\tfrac12&amp;\tfrac12&amp;\tfrac{\sqrt2}{2}
 \end{pmatrix},
 $$</p>
 <p>$$
 M=
 \begin{pmatrix}
-\tfrac12&\tfrac12&\tfrac{\sqrt2}{2}\\[2pt]
-\tfrac12&\tfrac12&-\tfrac{\sqrt2}{2}\\[2pt]
--\tfrac{\sqrt2}{2}&\tfrac{\sqrt2}{2}&0
+\tfrac12&amp;\tfrac12&amp;\tfrac{\sqrt2}{2}\\[2pt]
+\tfrac12&amp;\tfrac12&amp;-\tfrac{\sqrt2}{2}\\[2pt]
+-\tfrac{\sqrt2}{2}&amp;\tfrac{\sqrt2}{2}&amp;0
 \end{pmatrix}.
 $$</p>
 <p>The rotation matrix is not a signed permutation: the axis is not a coordinate axis, and the entries are irrational. The Pauli matrix is not diagonal for the same reason: the Pauli frame privileges the third direction. The two $4\times4$ arrays differ in exactly four signs, the ones the transposition moves.</p>
@@ -529,30 +529,30 @@ $$</p>
 <h3 id="a-rational-rotor-at-no-special-angle">A Rational Rotor at No Special Angle</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac35e_t+\tfrac45\vec e_x$, a point of the rational circle. The angle is $2\arctan\tfrac43$, near $106.26^{\circ}$.</p>
 <p>$$
-A=\begin{pmatrix}\tfrac35&-\tfrac45 i\\[2pt]-\tfrac45 i&\tfrac35\end{pmatrix},
+A=\begin{pmatrix}\tfrac35&amp;-\tfrac45 i\\[2pt]-\tfrac45 i&amp;\tfrac35\end{pmatrix},
 \qquad
 L=
 \begin{pmatrix}
-\tfrac35&-\tfrac45&0&0\\[2pt]
-\tfrac45&\tfrac35&0&0\\[2pt]
-0&0&\tfrac35&-\tfrac45\\[2pt]
-0&0&\tfrac45&\tfrac35
+\tfrac35&amp;-\tfrac45&amp;0&amp;0\\[2pt]
+\tfrac45&amp;\tfrac35&amp;0&amp;0\\[2pt]
+0&amp;0&amp;\tfrac35&amp;-\tfrac45\\[2pt]
+0&amp;0&amp;\tfrac45&amp;\tfrac35
 \end{pmatrix},
 \qquad
 R=
 \begin{pmatrix}
-\tfrac35&\tfrac45&0&0\\[2pt]
--\tfrac45&\tfrac35&0&0\\[2pt]
-0&0&\tfrac35&-\tfrac45\\[2pt]
-0&0&\tfrac45&\tfrac35
+\tfrac35&amp;\tfrac45&amp;0&amp;0\\[2pt]
+-\tfrac45&amp;\tfrac35&amp;0&amp;0\\[2pt]
+0&amp;0&amp;\tfrac35&amp;-\tfrac45\\[2pt]
+0&amp;0&amp;\tfrac45&amp;\tfrac35
 \end{pmatrix},
 $$</p>
 <p>$$
 M=
 \begin{pmatrix}
-1&0&0\\[2pt]
-0&-\tfrac{7}{25}&-\tfrac{24}{25}\\[2pt]
-0&\tfrac{24}{25}&-\tfrac{7}{25}
+1&amp;0&amp;0\\[2pt]
+0&amp;-\tfrac{7}{25}&amp;-\tfrac{24}{25}\\[2pt]
+0&amp;\tfrac{24}{25}&amp;-\tfrac{7}{25}
 \end{pmatrix}.
 $$</p>
 <p>All entries are rational and the matrix is not a signed permutation. This case separates three classes: integral rotations, rational non-integral rotations, irrational rotations. The rotor is rational, and so is every entry of $M$, because the covering map is polynomial.</p>
@@ -571,37 +571,37 @@ $$</p>
 <h3 id="a-general-angle-about-math293">A General Angle about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=c\,e_t+s\,\vec e_z$ with $c=\cos\frac{\theta}{2}$ and $s=\sin\frac{\theta}{2}$.</p>
 <p>$$
-A=\begin{pmatrix}e^{-i\theta/2}&0\\0&e^{i\theta/2}\end{pmatrix},
+A=\begin{pmatrix}e^{-i\theta/2}&amp;0\\0&amp;e^{i\theta/2}\end{pmatrix},
 \qquad
 L=
 \begin{pmatrix}
-c&0&0&-s\\
-0&c&-s&0\\
-0&s&c&0\\
-s&0&0&c
+c&amp;0&amp;0&amp;-s\\
+0&amp;c&amp;-s&amp;0\\
+0&amp;s&amp;c&amp;0\\
+s&amp;0&amp;0&amp;c
 \end{pmatrix},
 \qquad
 R=
 \begin{pmatrix}
-c&0&0&s\\
-0&c&-s&0\\
-0&s&c&0\\
--s&0&0&c
+c&amp;0&amp;0&amp;s\\
+0&amp;c&amp;-s&amp;0\\
+0&amp;s&amp;c&amp;0\\
+-s&amp;0&amp;0&amp;c
 \end{pmatrix},
 $$</p>
 <p>$$
 M=\begin{pmatrix}
-\cos\theta&-\sin\theta&0\\
-\sin\theta&\cos\theta&0\\
-0&0&1
+\cos\theta&amp;-\sin\theta&amp;0\\
+\sin\theta&amp;\cos\theta&amp;0\\
+0&amp;0&amp;1
 \end{pmatrix},
 \qquad
 LR=
 \begin{pmatrix}
-1&0&0&0\\
-0&\cos\theta&-\sin\theta&0\\
-0&\sin\theta&\cos\theta&0\\
-0&0&0&1
+1&amp;0&amp;0&amp;0\\
+0&amp;\cos\theta&amp;-\sin\theta&amp;0\\
+0&amp;\sin\theta&amp;\cos\theta&amp;0\\
+0&amp;0&amp;0&amp;1
 \end{pmatrix}.
 $$</p>
 <p>At $\theta=\pi/2$ the second case of this list is recovered, at $\theta=\pi$ the third, and at $\theta=2\pi$ the rotor is $-e_t$ with $M=\mathrm I_3$.</p>
@@ -707,7 +707,7 @@ $$</p>
 \tilde u\,\vec e_z=\tfrac{\sqrt2}{2}(-e_t+\vec e_z).
 $$</p>
 <p>The first is a vector at $45^{\circ}$: one factor turns by half the angle. The second is not a vector at all. Neither is a column of $M$, whose first column is $(0,1,0)^{\mathsf T}$.</p>
-<p><strong>The left array is not the rotation.</strong> The first column of $L_{\mathrm{axf}}(\tilde u)$ is $(a,w_x,w_y,w_z)^{\mathsf T}$, with a scalar slot. No block of $L$ alone is $M$. For the quarter turn about $\vec e_z$ the block $L_{2:4,2:4}$ is $\tfrac{\sqrt2}{2}\begin{pmatrix}1&-1&0\\1&1&0\\0&0&1\end{pmatrix}$, a turn by $45^{\circ}$, while $M$ turns by $90^{\circ}$.</p>
+<p><strong>The left array is not the rotation.</strong> The first column of $L_{\mathrm{axf}}(\tilde u)$ is $(a,w_x,w_y,w_z)^{\mathsf T}$, with a scalar slot. No block of $L$ alone is $M$. For the quarter turn about $\vec e_z$ the block $L_{2:4,2:4}$ is $\tfrac{\sqrt2}{2}\begin{pmatrix}1&amp;-1&amp;0\\1&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$, a turn by $45^{\circ}$, while $M$ turns by $90^{\circ}$.</p>
 <p><strong>The three-factor form, and why it is not an extra fact.</strong> Reading the rotation on the left arrays alone needs three factors,</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde u)\,L_{\mathrm{axf}}(\vec v)\,L_{\mathrm{axf}}(\tilde u)^{\mathsf T}=L_{\mathrm{axf}}(M\vec v).
@@ -743,9 +743,9 @@ $$</p>
 <p>$$
 M(\tilde U)=
 \begin{pmatrix}
-\cosh t&-i\sinh t&0\\
-i\sinh t&\cosh t&0\\
-0&0&1
+\cosh t&amp;-i\sinh t&amp;0\\
+i\sinh t&amp;\cosh t&amp;0\\
+0&amp;0&amp;1
 \end{pmatrix}
 $$</p>
 <p>for $\vec n=\vec e_z$, but that array is complex. It satisfies $M M^{\mathsf T}=\mathrm I_3$ and $\det M=1$, so it is a complex orthogonal matrix, and it is Hermitian as well. It is not a rotation, and it is not the Lorentz transformation either.</p>
@@ -753,26 +753,26 @@ $$</p>
 <p>$$
 \Lambda=
 \begin{pmatrix}
-\cosh t&0&0&\sinh t\\
-0&1&0&0\\
-0&0&1&0\\
-\sinh t&0&0&\cosh t
+\cosh t&amp;0&amp;0&amp;\sinh t\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+\sinh t&amp;0&amp;0&amp;\cosh t
 \end{pmatrix},
 $$</p>
 <p>and for a general axis, with $\gamma=\cosh t$,</p>
 <p>$$
 \Lambda=
 \begin{pmatrix}
-\gamma&\sinh t\,n_x&\sinh t\,n_y&\sinh t\,n_z\\[2pt]
-\sinh t\,n_x&1+(\gamma-1)n_x^{2}&(\gamma-1)n_xn_y&(\gamma-1)n_xn_z\\[2pt]
-\sinh t\,n_y&(\gamma-1)n_xn_y&1+(\gamma-1)n_y^{2}&(\gamma-1)n_yn_z\\[2pt]
-\sinh t\,n_z&(\gamma-1)n_xn_z&(\gamma-1)n_yn_z&1+(\gamma-1)n_z^{2}
+\gamma&amp;\sinh t\,n_x&amp;\sinh t\,n_y&amp;\sinh t\,n_z\\[2pt]
+\sinh t\,n_x&amp;1+(\gamma-1)n_x^{2}&amp;(\gamma-1)n_xn_y&amp;(\gamma-1)n_xn_z\\[2pt]
+\sinh t\,n_y&amp;(\gamma-1)n_xn_y&amp;1+(\gamma-1)n_y^{2}&amp;(\gamma-1)n_yn_z\\[2pt]
+\sinh t\,n_z&amp;(\gamma-1)n_xn_z&amp;(\gamma-1)n_yn_z&amp;1+(\gamma-1)n_z^{2}
 \end{pmatrix}.
 $$</p>
 <p>The array is real, of determinant one, and preserves the form $\eta=\operatorname{diag}(1,-1,-1,-1)$: $\Lambda^{\mathsf T}\eta\Lambda=\eta$, with residual $1.1\times10^{-15}$ on four axes. It is the proper orthochronous Lorentz transformation of rapidity $t$ along $\vec n$.</p>
 <p><strong>The block identity in the boost case.</strong> The $1$ is gone. Reproduce the left and right arrays for the complex element and multiply them, and the product is not block diagonal in the coordinate splitting; the invariant splitting is $\mathcal{B}=\mathcal{H}\oplus i\mathcal{H}$, and in that basis</p>
 <p>$$
-P=\begin{pmatrix}\Lambda&0\\0&\Lambda\end{pmatrix}.
+P=\begin{pmatrix}\Lambda&amp;0\\0&amp;\Lambda\end{pmatrix}.
 $$</p>
 <p>The two halves carry the same Lorentz matrix. The rotation case has a fixed direction, the scalar unit, and the fixed direction gives the $1$; the boost case fixes no direction, and the same $\Lambda$ appears twice. Verified on four axes, the two blocks agreeing with residual $0$.</p>
 <p><strong>The trace, and the missing one.</strong> For a rotation, $\operatorname{tr}M=4a^{2}-1$; for a boost, $\operatorname{tr}\Lambda=2+2\cosh t=4\cosh^{2}\frac t2=4a^{2}$. The difference is exactly one, and it is the coordinate that the rotation fixes and the boost moves.</p>

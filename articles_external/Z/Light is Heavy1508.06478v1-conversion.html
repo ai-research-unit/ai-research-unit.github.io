@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light is Heavy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Light is Heavy1508.06478v1.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="light-is-heavy"><strong>Light is Heavy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>popular physics essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1508.06478v1 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. B. van der Mark, G. W. 't Hooft (Philips Research Laboratories)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 August 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Van A tot Q, NNV, November 2000</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Light is Heavy1508.06478v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Light is Heavy1508.06478v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-ether-and-photons-in-the-electro-gravimagnetic-programme.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Light is Heavy1508.06478v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Resolves an apparent paradox: light must have zero rest mass to travel at $c$, yet it carries momentum and energy, so it has inertial mass, and by equivalence gravitational mass. The authors derive no new result; they give a perspective in which the two statements are one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-paradox">The paradox</h3>
+<p>"electromagnetic radiation must have zero rest mass in order to propagate at the speed of light, but on the other hand, since it definitely carries momentum and energy, it has non-zero inertial mass. Hence, by the principle of equivalence, it must have non-zero gravitational mass, and so, light must be heavy."</p>
+<h3 id="the-disclaimer">The disclaimer</h3>
+<p>"In this paper, no new results will be derived, but a possibly surprising perspective on the above paradox is given." That sentence sets the genre: an essay, not a derivation, and it should be read as such.</p>
+<h3 id="the-two-experimental-facts">The two experimental facts</h3>
+<p>"Einstein's general theory of relativity is based on two experimental facts. First, that the speed of light appears to be equal for all observers, independent of their velocity with respect to the light source, and second, the apparent equality of gravitational mass $m_g$ and inertial mass $m_i$." The essay works entirely inside those two facts, which is why it can say something about light's weight without a quantum theory of gravity.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rest-mass-and-inertial-mass-are-different-quantities-and-only-one-vanishes">1. Rest mass and inertial mass are different quantities, and only one vanishes</h3>
+<p><strong>The idea.</strong> A photon has zero rest mass and non-zero inertial mass $E/c^2$. The two are related by $m_{\text{rest}}^2c^4=E^2-p^2c^2$, which for light gives $E=pc$ and $m_{\text{rest}}=0$ while $E/c^2\neq0$. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A resolution of a confusion the corpus's relativistic articles can inherit: the corpus's mass angle measures rest mass, so it must not be read as how much mass the particle has.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's mass is an angle in a decomposition, and the distinction between rest and inertial mass would have to be expressed as a statement about which invariant is being read.</p>
+<h3 id="2-an-equivalence-principle-argument-extends-to-any-energy">2. An equivalence-principle argument extends to any energy</h3>
+<p><strong>The idea.</strong> If inertial and gravitational mass are equal, then any localised energy gravitates, including the energy of a field with no rest mass. The extension is immediate and requires no field theory.</p>
+<p><strong>What it would add.</strong> A short argument the corpus's gravity articles could use, since they treat mass as a source term.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's source is a stress-energy tensor, not a scalar mass; the essay's argument gives the trace and not the tensor.</p>
+<p>This is a six-page essay; the paradox, the disclaimer and the two facts are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p>where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encoded state.</p>
 <h3 id="why-it-is-necessary">Why it is necessary</h3>
-<p>Suppose the code can correct the errors $\{\tilde E_{\mathrm{err},a}\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde E_{\mathrm{err},a}\tilde{Ϛ}_{\Psi}\tilde E_{\mathrm{err},a}^{*}) = p_a\tilde{Ϛ}_{\Psi}$ for every encoded $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$ are all proportional to $\tilde\Pi_{\mathrm{id}}$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.</p>
+<p>Suppose the code can correct the errors $\{\tilde E_{\mathrm{err},a}\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde E_{\mathrm{err},a}\tilde{Ϛ}_{\Psi}\tilde E_{\mathrm{err},a}^{*}) = p_a\tilde{Ϛ}_{\Psi}$ for every encoded $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\mathrm{id}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{id}}$ and some probability $p_a&gt;0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi_{\mathrm{id}}\tilde E_{\mathrm{err},a}^{*}\tilde E_{\mathrm{err},b}\tilde\Pi_{\mathrm{id}}$ are all proportional to $\tilde\Pi_{\mathrm{id}}$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.</p>
 <h3 id="why-it-is-sufficient">Why it is sufficient</h3>
 <p>If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde E_{\mathrm{err},a}$ satisfy $\tilde\Pi_{\mathrm{id}}\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi_{\mathrm{id}} = d_\alpha\delta_{\alpha\beta}\tilde\Pi_{\mathrm{id}}$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi_{\mathrm{id}}\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the <strong>syndrome measurement</strong> — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi_{\mathrm{id}}$, form a set of "orthogonal" block actions.</p>
 <h3 id="the-condition-in-the-algebra">The condition in the algebra</h3>
@@ -189,8 +189,8 @@ $$</p>
 <p>The smallest code that corrects an arbitrary single-qubit error is the five-qubit code, with stabilizer generators</p>
 <p>$$
 \begin{aligned}
-\tilde U_1 &= X Z Z X e_t, & \tilde U_2 &= e_t X Z Z X,\\
-\tilde U_3 &= X e_t X Z Z, & \tilde U_4 &= Z X e_t X Z,
+\tilde U_1 &amp;= X Z Z X e_t, &amp; \tilde U_2 &amp;= e_t X Z Z X,\\
+\tilde U_3 &amp;= X e_t X Z Z, &amp; \tilde U_4 &amp;= Z X e_t X Z,
 \end{aligned}
 $$</p>
 <p>each factor standing for the corresponding Hermitian involution $X=i\vec e_x$ or $Z=i\vec e_z$ on that qubit. The generators are cyclic shifts of one another, they commute, and they are independent, so $|S| = 16$ and the code space has dimension $32/16 = 2$: one logical qubit in five physical qubits. The code idempotent is</p>

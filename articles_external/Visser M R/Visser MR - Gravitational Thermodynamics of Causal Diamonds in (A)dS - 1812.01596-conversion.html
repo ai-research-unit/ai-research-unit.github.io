@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational Thermodynamics of Causal Diamonds in (A)dS — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Gravitational Thermodynamics of Causal Diamonds in (A)dS - 1812.01596.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-thermodynamics-of-causal-diamonds-in-ads"><strong>Gravitational Thermodynamics of Causal Diamonds in (A)dS</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1812.01596v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ted Jacobson, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 13 December 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>SciPost Phys. 7, 079 (2019)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>64 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Gravitational Thermodynamics of Causal Diamonds in (A)dS - 1812.01596-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Gravitational Thermodynamics of Causal Diamonds in (A)dS - 1812.01596.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Gravitational Thermodynamics of Causal Diamonds in (A)dS - 1812.01596.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends the gravitational thermodynamics of the de Sitter static patch and the Rindler wedge to every causal diamond in a maximally symmetric spacetime. A diamond of finite size carries only a conformal Killing vector, and the authors show that this is enough: the conformal Killing field acts as an instantaneous Killing field on the maximal slice and as a boost at the edge, with a well-defined surface gravity, so a Smarr formula and a first law can be written for the bounding area, the maximal-slice volume, the cosmological constant and the matter Hamiltonian. Interpreting the first law thermodynamically requires a negative temperature for the diamond. With quantum corrections the entanglement equilibrium statement is recovered, including a reformulation in which the volume is not held fixed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setup">The setup</h3>
+<p>For any Lagrangian $d$-form there is a symplectic potential $\theta$ and a Noether current</p>
+<p>$$j_\chi=\theta(\phi,\mathcal L_\chi\phi)-\chi\cdot\mathcal L,\qquad j_\chi=dQ_\chi, \qquad (paper\ 3.2,\ 3.3)$$</p>
+<p>so that the Noether charge of the conformal Killing field gives the entropy and the Smarr formula is obtained by integrating the current over the ball $\Sigma$. The derivation is Wald's, applied to diamonds rather than horizons.</p>
+<h3 id="why-a-conformal-killing-vector-suffices">Why a conformal Killing vector suffices</h3>
+<p>Three facts carry the argument: "(i) the conformal Killing vector is an 'instantaneous' Killing vector at the maximal volume slice, which (ii) behaves at the edge as a boost-like Killing vector, with a well-defined surface gravity; and (iii) in a maximally symmetric diamond the vacuum of a conformal matter field restricted to the diamond is thermal with respect to the Hamiltonian that generates the conformal Killing flow."</p>
+<h3 id="the-first-law">The first law</h3>
+<p>The first law relates "the variations of the bounding area, spatial volume of the maximal slice, cosmological constant, and matter Hamiltonian", with the total Hamiltonian generating evolution along the conformal Killing vector that preserves the diamond. The cosmological constant enters as a pressure and its conjugate is the thermodynamic volume, generalised to the conformal case:</p>
+<p>$$V_\zeta=\int_\Sigma \zeta\cdot\varepsilon, \qquad (paper\ \text{Sec. 3})$$</p>
+<p>"which might well be called the 'redshifted volume'": it is finite for finite diamonds and divergent for asymptotically AdS diamonds or black holes, where finite relations are obtained by subtraction of the empty background.</p>
+<h3 id="the-negative-temperature">The negative temperature</h3>
+<p>"To interpret the first law as a thermodynamic relation, it appears necessary to attribute a negative temperature to the diamond, as has been previously suggested for the special case of the static patch of de Sitter spacetime." The sign is what makes the entropy and energy variations combine into the standard form.</p>
+<h3 id="the-quantum-version">The quantum version</h3>
+<p>Including quantum corrections, for small diamonds the earlier entanglement-equilibrium result is recovered: the generalized entropy is stationary at the maximally symmetric vacuum at fixed volume. The paper adds a reformulation in which the volume is not fixed and the stationarity is of the free conformal energy instead.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-redshifted-volume-as-the-conjugate-of-math18">1. The redshifted volume as the conjugate of $\Lambda$</h3>
+<p><strong>The idea.</strong> $V_\zeta=\int_\Sigma\zeta\cdot\varepsilon$ is the quantity conjugate to the cosmological constant for a region bounded by a conformal Killing horizon, and it reduces to the ordinary volume only in special cases. This is a <strong>formula</strong> the corpus lacks: it has no conjugate to $\Lambda$ at all.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> records the $-2PV$ correction to Smarr as imported and asks in open question 4 whether the thermodynamic volume is algebraically meaningful. This paper gives the definition from which the answer would have to start, and shows why the naive volume is wrong for a diamond.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> The construction needs Wald's Noether charge formalism and a conformal Killing vector; the corpus's material sector carries a Killing-type flow for the horizon but no conformal one, and no region functional. The cost is a variational formalism on a manifold the corpus does not have.</p>
+<h3 id="2-a-negative-temperature-for-a-bounded-region">2. A negative temperature for a bounded region</h3>
+<p><strong>The idea.</strong> A causal diamond's thermodynamic temperature is negative, not the positive Unruh temperature of the field theory on the fixed background. This is a <strong>reading</strong> with a sharp sign, and the sign is the whole content.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> and <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code> give the temperature from the modular flow with a positive sign. The distinction this paper draws — the field-theory temperature on a fixed diamond is positive, the self-gravitating diamond's temperature is negative — is a distinction the corpus does not make and cannot currently express.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The negative sign arises from the gravitational Hamiltonian's volume term; the corpus has no backreaction and no gravitational Hamiltonian for a region, so it can import the statement but not its derivation. Ranked first, because it names a sign the corpus's temperature articles would otherwise get wrong.</p>
+<h3 id="3-entanglement-equilibrium-without-a-fixed-volume">3. Entanglement equilibrium without a fixed volume</h3>
+<p><strong>The idea.</strong> The stationarity condition can be written as stationarity of a free conformal energy, with the volume free, rather than as stationarity of entropy at fixed volume. This is a <strong>mechanism</strong>: it removes the arbitrary fixed-volume postulate.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> states the first law of entanglement with the region's size fixed, and inherits the same arbitrariness. The free-energy formulation supplies the principle that fixes it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The free energy uses the volume as a gravitational energy, whose identification comes from general relativity; the corpus would have to justify the volume term inside its own action. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

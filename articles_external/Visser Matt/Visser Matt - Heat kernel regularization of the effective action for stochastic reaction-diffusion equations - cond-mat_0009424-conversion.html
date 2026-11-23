@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat kernel regularization of the effective action for stochastic reaction–diffusion equations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Heat kernel regularization of the effective action for stochastic…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="heat-kernel-regularization-of-the-effective-action-for-stochastic-reactiondiffusion-equations"><strong>Heat kernel regularization of the effective action for stochastic reaction–diffusion equations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>cond-mat/0009424v1 [cond-mat.stat-mech]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Hochberg, Carmen Molina-París, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 September 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Heat kernel regularization of the effective action for stochastic reaction-diffusion equations - cond-mat_0009424-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Heat kernel regularization of the effective action for stochastic reaction-diffusion equations - cond-mat_0009424.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Heat kernel regularization of the effective action for stochastic reaction-diffusion equations - cond-mat_0009424.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Stochastic reaction–diffusion equations can be written as functional integrals, and noise plus nonlinearity make the parameters run with scale. The authors apply the heat kernel method to a polynomial reaction–diffusion equation with real additive white noise. They compute the one-loop effective action and its ultraviolet divergences, including ghost fields from the functional Jacobian. The equation is one-loop finite in zero and one space dimension and one-loop renormalizable in two and three. The running occurs only in two dimensions, and a constant tadpole term is needed to absorb the leading divergence.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"The presence of fluctuations and non-linear interactions can lead to scale dependence in the parameters appearing in stochastic differential equations."</p>
+<h3 id="the-method">The method</h3>
+<p>"In this paper we apply the heat kernel method to study the short distance renormalizability of a stochastic (polynomial) reaction-diffusion equation with real additive noise."</p>
+<h3 id="the-result">The result</h3>
+<p>"We show that for white noise a polynomial reaction-diffusion equation is one-loop finite in $d=0$ and $d=1$, and is one-loop renormalizable in $d=2$ and $d=3$ space dimensions. We obtain the one-loop renormalization group equations and find they run with scale only in $d=2$."</p>
+<h3 id="the-structural-reason">The structural reason</h3>
+<p>"for SPDEs, such as those considered in [4], the functional determinant in the corresponding one-loop effective action involves not only a 'mismatch' between the number of spatial and temporal derivatives, but also fourth- or even higher-order spatial derivatives. We have seen an explicit example of this in the RD equation treated here, which yields second order in time but fourth order in space derivatives, $(\nabla^2)^2$, for its associated operator determinant."</p>
+<h3 id="the-ghost-fields">The ghost fields</h3>
+<p>"This particular approach involves the physical degrees of freedom plus the 'ghost' fields, which are needed to account for the functional Jacobian that arises from a certain change of variables [4]. For RDs this Jacobian is generally non-vanishing and must be taken into account"</p>
+<h3 id="the-extra-constant">The extra constant</h3>
+<p>"Strictly speaking, this claim holds true only if a certain bare constant is added to the original equation of motion, as we have seen. This constant, or 'tadpole', is needed to carry out the one-loop renormalization of the leading divergence that appears in the effective action."</p>
+<h3 id="the-verdict-on-the-equation">The verdict on the equation</h3>
+<p>"although RD is a macroscopic equation, [only intended to make physical sense for scales greater than a certain minimum length scale $L_0$], we have shown in this paper that the ultraviolet behavior of the RD equation is controlled, and that considered as a strictly phenomenological equation its short distance behavior is much better than one had any right to expect."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-heat-kernel-for-operators-with-mismatched-derivatives">1. A heat kernel for operators with mismatched derivatives</h3>
+<p><strong>The idea.</strong> The standard heat kernel assumes quadratic time and space derivatives; here the operator is second order in time and fourth order in space, and the method still works.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> uses a regulator built on a quadratic norm, $k_{\mathrm{eu}}^2 \le \Lambda^2$. An operator with higher spatial derivatives has no such norm, so the article's claim that the norm supplies a natural cutoff is restricted to second-order operators.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, in the section on the regulator.</p>
+<p><strong>What stands in the way.</strong> The construction is done by hand for one equation. Ranked first, because it limits a claim the target makes generally.</p>
+<h3 id="2-running-only-in-two-dimensions">2. Running only in two dimensions</h3>
+<p><strong>The idea.</strong> Power counting by the number of derivative mismatches gives a dimension in which couplings run and others in which they do not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> performs its shell integration in four dimensions. A case where the flow exists in one dimension and vanishes in the neighbours is a sharp test of whether the flow equation is being applied rather than transcribed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, in the section on fixed points.</p>
+<p><strong>What stands in the way.</strong> The dimensionality here is spatial, not spacetime. Ranked second.</p>
+<h3 id="3-renormalization-needs-a-term-not-in-the-classical-equation">3. Renormalization needs a term not in the classical equation</h3>
+<p><strong>The idea.</strong> The leading divergence can only be absorbed by adding a constant that the original equation did not contain.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> states that the algebra supplies the regulator but not the effective action. This is a case where renormalization forces a new term into the classical equation, which is the same gap seen from the other side.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, in the discussion of what the algebra supplies.</p>
+<p><strong>What stands in the way.</strong> The constant has a physical reading as a mean flux, so it may be bookkeeping. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

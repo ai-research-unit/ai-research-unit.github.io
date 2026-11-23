@@ -99,9 +99,9 @@ $$
 $$
 The labels of the Peirce-coordinates article are $\vec\Pi_{\mathrm{nil},x}=\vec\Pi_{\mathrm{nil},-}$ and $\vec\Pi_{\mathrm{nil},y}=\vec\Pi_{\mathrm{nil},+}$. The matrix units are $E_{ij}$, $\operatorname{Tr}$ is the $2\times2$ trace, and the Pauli matrices are the three arrays fixed in §<em>The Two Tensor Factors</em> of <em>Matrix Representations Conventions</em>,
 $$
-\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
-\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\sigma_1=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&amp;-i\\ i&amp;0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},
 $$
 which are printed here once because the display of this article is built from them and the article is named after them.</p>
 <p><strong>The order of the article.</strong> The article follows the $4\times4$ one step by step, at the size of one block. The root and its two idempotents come first, as the compression of §<em>The Root and the Peirce Frame</em> of the $4\times4$ article (§<em>The Root and the Two Idempotents</em>), then the Peirce basis in the two orders that the two sides need (§<em>The Peirce Basis and the Two Orders</em>). The left and the right matrices are read on the two ideals (§<em>The Left and Right Matrices</em>, against §<em>The Left Family</em> and §<em>The Right Family</em>), then the images of the four units (§<em>The Images of the Four Units</em>) and the stitch between the two sides (§<em>The Stitch Between the Left and the Right</em>, against §<em>The Stitch Between the Two Families</em>). The compression maps and the surviving switch follow (§<em>The Compression and the Switch</em>, against §<em>Every Frame Is a Conjugate of This One</em>), and then the entry-size quantities: the product, the trace and the determinant (§<em>The Product</em>, §<em>The Trace</em>, §<em>The Determinant</em>). The spectral projectors, the diagonalising matrix, the adjugate and the inverse, and the four norms are new at the element size, with no section of their own in the $4\times4$ article (§<em>The Spectral Projectors</em>, §<em>The Adjugate and the Inverse</em>, §<em>The Four Norms</em>). The six subspaces close the article in their compressed form (§<em>The Six Subspaces</em>), and what fails to compress is named at the end of §<em>The Compression and the Switch</em>.</p>
@@ -130,9 +130,9 @@ $$
 The root is not central, and the choice of the $z$ direction is a genuine choice.</p>
 <p><strong>The images.</strong> The compression sends the root and the two idempotents to the grading matrix and the two coordinate projections:
 $$
-\mathsf M_2(\vec{Ζ})=\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
-\mathsf M_2(\tilde\Pi_{\mathrm{id},+})=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
-\mathsf M_2(\tilde\Pi_{\mathrm{id},-})=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+\mathsf M_2(\vec{Ζ})=\sigma_3=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},\qquad
+\mathsf M_2(\tilde\Pi_{\mathrm{id},+})=E_{11}=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix},\qquad
+\mathsf M_2(\tilde\Pi_{\mathrm{id},-})=E_{22}=\begin{pmatrix}0&amp;0\\0&amp;1\end{pmatrix}.
 $$
 The Peirce decomposition is therefore the spectral decomposition of $\sigma_3$: the abstract pair becomes the row/column pair of $\mathbb{C}^2$. This is the first sense in which the $2\times2$ model is the compressed Pauli representation.</p>
 <p><strong>The two planes.</strong> Put
@@ -181,7 +181,7 @@ $$
 The two mixed units are nilpotent, and each pair multiplies to one of the idempotents.</p>
 <p><strong>The coordinates.</strong> An element written in the frame is
 $$
-\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},++X}_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-},
+\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}{}_+\vec\Pi_{\mathrm{nil},++X}{}_-\vec\Pi_{\mathrm{nil},-+P}{}_-\tilde\Pi_{\mathrm{id},-},
 \qquad P_\pm,X_\pm\in\mathbb{C},
 $$
 with
@@ -193,7 +193,7 @@ P_-=Q_t+iQ_z .
 $$
 The four coordinates are the four entries of the $2\times2$ image,
 $$
-A=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=\mathsf M_2(\tilde Q).
+A=\begin{pmatrix}P_+&amp;X_-\\X_+&amp;P_-\end{pmatrix}=\mathsf M_2(\tilde Q).
 $$
 This is the coordinate identity, read in the standard pair.</p>
 <p><strong>The matrix-unit order.</strong> The second order is
@@ -225,32 +225,32 @@ The left bases are the two pairs of $\mathcal{P}$; the right bases are the two p
 <h2 id="the-left-and-right-matrices">The Left and Right Matrices</h2>
 <p><strong>The left matrix.</strong> On $S_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$, left multiplication by $\tilde Q$ has the matrix $A$. On $S_-$, in the basis $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde Q\tilde\Pi_{\mathrm{id},+}=P_+\tilde\Pi_{\mathrm{id},++X}_+\vec\Pi_{\mathrm{nil},+},\qquad
-\tilde Q\vec\Pi_{\mathrm{nil},+}=X_-\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},+},
+\tilde Q\tilde\Pi_{\mathrm{id},+}=P_+\tilde\Pi_{\mathrm{id},++X}{}_+\vec\Pi_{\mathrm{nil},+},\qquad
+\tilde Q\vec\Pi_{\mathrm{nil},+}=X_-\tilde\Pi_{\mathrm{id},++P}{}_-\vec\Pi_{\mathrm{nil},+},
 $$
 and the two columns in the second are
 $$
-\tilde Q\vec\Pi_{\mathrm{nil},-}=P_+\vec\Pi_{\mathrm{nil},-+X}_+\tilde\Pi_{\mathrm{id},-},\qquad
-\tilde Q\tilde\Pi_{\mathrm{id},-}=X_-\vec\Pi_{\mathrm{nil},-+P}_-\tilde\Pi_{\mathrm{id},-} .
+\tilde Q\vec\Pi_{\mathrm{nil},-}=P_+\vec\Pi_{\mathrm{nil},-+X}{}_+\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde Q\tilde\Pi_{\mathrm{id},-}=X_-\vec\Pi_{\mathrm{nil},-+P}{}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
-L(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
+L(\tilde Q)=\begin{pmatrix}P_+&amp;X_-\\X_+&amp;P_-\end{pmatrix}=A.
 $$
 The computation in the first basis is the left action on a couple; the second basis repeats it.</p>
 <p><strong>The right matrix.</strong> On $T_+$, in the basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-})$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$, it has the same matrix. The two columns in the first basis are
 $$
-\tilde\Pi_{\mathrm{id},+}\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}_-\vec\Pi_{\mathrm{nil},-},\qquad
-\vec\Pi_{\mathrm{nil},-}\tilde Q=X_+\tilde\Pi_{\mathrm{id},++P}_-\vec\Pi_{\mathrm{nil},-},
+\tilde\Pi_{\mathrm{id},+}\tilde Q=P_+\tilde\Pi_{\mathrm{id},++X}{}_-\vec\Pi_{\mathrm{nil},-},\qquad
+\vec\Pi_{\mathrm{nil},-}\tilde Q=X_+\tilde\Pi_{\mathrm{id},++P}{}_-\vec\Pi_{\mathrm{nil},-},
 $$
 and the two columns in the second are
 $$
-\vec\Pi_{\mathrm{nil},+}\tilde Q=P_+\vec\Pi_{\mathrm{nil},++X}_-\tilde\Pi_{\mathrm{id},-},\qquad
-\tilde\Pi_{\mathrm{id},-}\tilde Q=X_+\vec\Pi_{\mathrm{nil},++P}_-\tilde\Pi_{\mathrm{id},-} .
+\vec\Pi_{\mathrm{nil},+}\tilde Q=P_+\vec\Pi_{\mathrm{nil},++X}{}_-\tilde\Pi_{\mathrm{id},-},\qquad
+\tilde\Pi_{\mathrm{id},-}\tilde Q=X_+\vec\Pi_{\mathrm{nil},++P}{}_-\tilde\Pi_{\mathrm{id},-} .
 $$
 In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
 $$
-R(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
+R(\tilde Q)=\begin{pmatrix}P_+&amp;X_+\\X_-&amp;P_-\end{pmatrix}=A^{\mathsf T}.
 $$
 The right matrix is the transpose of the left matrix. This is the whole content of the compression: the left action reads the columns of $A$, the right action reads the rows, and a row written as a column is the transpose.</p>
 <p><strong>The example.</strong> For
@@ -259,8 +259,8 @@ $$
 $$
 the two matrices are
 $$
-A=\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix},\qquad
-A^{\mathsf T}=\begin{pmatrix}3+i&2-i\\-4-i&1+i\end{pmatrix}.
+A=\begin{pmatrix}3+i&amp;-4-i\\2-i&amp;1+i\end{pmatrix},\qquad
+A^{\mathsf T}=\begin{pmatrix}3+i&amp;2-i\\-4-i&amp;1+i\end{pmatrix}.
 $$
 The trace is $4+2i=2(2+i)=2Q_t$, and the determinant is
 $$
@@ -279,9 +279,9 @@ $$
 that is,
 $$
 \mathrm I_2,\qquad
--i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
--i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
--i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+-i\sigma_1=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},\qquad
+-i\sigma_2=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\qquad
+-i\sigma_3=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix}.
 $$
 Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are linearly independent and form a basis of $M_2(\mathbb{C})$.</p>
 <p><strong>Why the factor $i$, and why the signs.</strong> The images must reproduce the two relations that define the algebra. The first is the square,
@@ -331,8 +331,8 @@ $$
 The stitch is the plain transpose. There is no sign matrix and no swap matrix in the compressed formula.</p>
 <p><strong>In full.</strong> For a matrix written entrywise,
 $$
-A=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad
-A^{\mathsf T}=\begin{pmatrix}a&c\\b&d\end{pmatrix}.
+A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},\qquad
+A^{\mathsf T}=\begin{pmatrix}a&amp;c\\b&amp;d\end{pmatrix}.
 $$
 The diagonal entries are fixed, and the two off-diagonal entries are exchanged. In the Peirce coordinates $a=P_+$, $d=P_-$, $b=X_-$, $c=X_+$, so the exchange is
 $$
@@ -418,7 +418,7 @@ $$
 The factors $2$ and the square are the only changes from the $2\times2$ invariants.</p>
 <p><strong>No axis-free basis switch remains.</strong> The $4\times4$ article has a change matrix $C_{\Pi}$ between the Peirce frame and the axis-free basis,
 $$
-C_{\Pi}=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
+C_{\Pi}=\frac12\begin{pmatrix}1&amp;0&amp;0&amp;1\\0&amp;i&amp;i&amp;0\\0&amp;1&amp;-1&amp;0\\i&amp;0&amp;0&amp;-i\end{pmatrix},
 \qquad
 \det C_{\Pi}=-\tfrac14 .
 $$
@@ -445,8 +445,8 @@ $$
 The reversal is the reversal of the order of the factors in the product $X\tilde Q$.</p>
 <p><strong>No commutation.</strong> The matrices $A$ and $A^{\mathsf T}$ need not commute. For $\tilde Q=\vec\Pi_{\mathrm{nil},+}$,
 $$
-A=E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
-A^{\mathsf T}=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+A=E_{21}=\begin{pmatrix}0&amp;0\\1&amp;0\end{pmatrix},\qquad
+A^{\mathsf T}=E_{12}=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix},
 $$
 and
 $$
@@ -462,7 +462,7 @@ which involves the vector parts through the reflection $\varrho$. The $4\times4$
 <h2 id="the-trace">The Trace</h2>
 <p><strong>Twice the scalar part.</strong> For
 $$
-A=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
+A=\begin{pmatrix}Q_t-iQ_z&amp;-iQ_x-Q_y\\-iQ_x+Q_y&amp;Q_t+iQ_z\end{pmatrix},
 $$
 the diagonal entries are $Q_t-iQ_z$ and $Q_t+iQ_z$, so
 $$
@@ -481,7 +481,7 @@ $$
 $$
 is the plain bilinear form of the algebra. Its Gram matrix on the coefficient basis is
 $$
-\mathrm E=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
+\mathrm E=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix},
 $$
 and it is non-degenerate. The factor is $\tfrac12$ in the $2\times2$ model and $\tfrac14$ in the $4\times4$ model, because the $4\times4$ trace is twice the $2\times2$ trace.</p>
 <p><strong>The trace of the regular matrices.</strong> The compression gives
@@ -557,12 +557,12 @@ $$
 $$
 and with
 $$
-\mathsf M_2(\vec{Ζ})=\frac1B\begin{pmatrix}-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&Q_z\end{pmatrix}
+\mathsf M_2(\vec{Ζ})=\frac1B\begin{pmatrix}-Q_z&amp;-Q_x+iQ_y\\-Q_x-iQ_y&amp;Q_z\end{pmatrix}
 $$
 they are
 $$
-\rho_+=\frac{1}{2B}\begin{pmatrix}B-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&B+Q_z\end{pmatrix},\qquad
-\rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}.
+\rho_+=\frac{1}{2B}\begin{pmatrix}B-Q_z&amp;-Q_x+iQ_y\\-Q_x-iQ_y&amp;B+Q_z\end{pmatrix},\qquad
+\rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&amp;Q_x-iQ_y\\Q_x+iQ_y&amp;B-Q_z\end{pmatrix}.
 $$</p>
 <p>The choice of square root $B$ exchanges the two labels, since $\vec{Ζ}$ changes sign with $B$.</p>
 <p><strong>Proposition.</strong> The two matrices are idempotents of rank one and trace one, they are complementary, they annihilate one another, and they commute with $A$:
@@ -602,7 +602,7 @@ The trace and the determinant of §<em>The Trace</em> and §<em>The Determinant<
 <h3 id="the-diagonalising-matrix">The Diagonalising Matrix</h3>
 <p><strong>The eigenbasis.</strong> The two projectors give two eigenvectors: every nonzero column of $\rho_+$ is an eigenvector for $\lambda_+$, and every nonzero column of $\rho_-$ for $\lambda_-$. The diagonalising matrix collects one column of each,
 $$
-\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
+\mathsf C_Q=\begin{pmatrix}B-Q_z&amp;Q_x-iQ_y\\-Q_x-iQ_y&amp;B-Q_z\end{pmatrix},
 $$
 the first column of $2B\rho_+$ and the second column of $2B\rho_-$.</p>
 <p><strong>The determinant.</strong> Expanding,
@@ -612,15 +612,15 @@ $$
 It vanishes exactly when $B=Q_z$, that is on the axis of the frame, where the two chosen columns both vanish and this chart degenerates.</p>
 <p><strong>Theorem (diagonalisation).</strong>
 $$
-\mathsf C_Q^{-1}A\,\mathsf C_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+\mathsf C_Q^{-1}A\,\mathsf C_Q=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix},
 \qquad
-\mathsf C_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
+\mathsf C_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&amp;-(Q_x-iQ_y)\\Q_x+iQ_y&amp;B-Q_z\end{pmatrix},
 $$
 whenever $B\neq Q_z$.</p>
 <p><em>Proof.</em> The two columns are eigenvectors for distinct eigenvalues, so the matrix of eigenvectors diagonalises $A$, and the diagonal entries are the eigenvalues. The inverse is the adjugate over the determinant, computed in §<em>The Adjugate and the Inverse</em>.</p>
 <p><strong>The second chart.</strong> When $B=Q_z$ the first chart is singular. The second chart is
 $$
-\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
+\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&amp;B+Q_z\\B+Q_z&amp;Q_x+iQ_y\end{pmatrix},
 \qquad
 \det\mathsf C_Q'=-2B(B+Q_z),
 $$
@@ -632,9 +632,9 @@ $$
 because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf C_Q^{-1}A\mathsf C_Q$, so the freedom is the two parameters of $D$.</p>
 <p><strong>Not the frame change of this article.</strong> The matrix $\mathsf C_Q$ is not the change between the axis-free basis and the Peirce frame of §<em>The Peirce Basis and the Two Orders</em>; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.</p>
 <h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
-<p><strong>The adjugate.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ the classical adjugate is
+<p><strong>The adjugate.</strong> For $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ the classical adjugate is
 $$
-\operatorname{adj}A=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}=(\operatorname{Tr}A)\mathrm I_2-A .
+\operatorname{adj}A=\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}=(\operatorname{Tr}A)\mathrm I_2-A .
 $$
 For the image of an element,
 $$
@@ -730,8 +730,8 @@ It is positive on the centre and negative on the vector subspace, of inertia $(2
 <h2 id="the-six-subspaces">The Six Subspaces</h2>
 <p><strong>The table.</strong> The six subspaces are defined in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>. In the $2\times2$ model each condition is a condition on $A$ alone. Put
 $$
-A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},\qquad
-A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix},
+A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&amp;b\\-\bar b&amp;\bar a\end{pmatrix},\qquad
+A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&amp;b\\ \bar b&amp;-\bar a\end{pmatrix},
 $$
 and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $\lambda=Q_t$. In the quaternion row $a=q_t-iq_z$, $b=-iq_x-q_y$; in the anti-quaternion row $a=q'_z+iq'_t$, $b=q'_x-iq'_y$.</p>
 <div class="table-scroll"><table>
@@ -804,14 +804,14 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 <h3 id="the-quaternion-subspace">The Quaternion Subspace</h3>
 <p><strong>The quaternion-shaped matrices.</strong> The quaternion subspace is the space of matrices
 $$
-A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},
+A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&amp;b\\-\bar b&amp;\bar a\end{pmatrix},
 \qquad a=q_t-iq_z,\quad b=-iq_x-q_y,
 $$
 of real dimension $4$. The determinant of the matrix is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra.</p>
 <h3 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h3>
 <p><strong>The anti-quaternion-shaped matrices.</strong> The anti-quaternion subspace is
 $$
-A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix},
+A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&amp;b\\ \bar b&amp;-\bar a\end{pmatrix},
 \qquad a=q'_z+iq'_t,\quad b=q'_x-iq'_y,
 $$
 also of real dimension $4$. Its determinant is $-\sum(q'_\mu)^2$, non-positive and vanishing only at $\tilde Q=0$; it is not closed under multiplication, and the product of two anti-quaternion matrices is quaternion-shaped.</p>
@@ -822,7 +822,7 @@ $$
 $$
 the matrix is
 $$
-A=\begin{pmatrix}q_t+q'_z&q'_x-iq'_y\\ q'_x+iq'_y&q_t-q'_z\end{pmatrix},
+A=\begin{pmatrix}q_t+q'_z&amp;q'_x-iq'_y\\ q'_x+iq'_y&amp;q_t-q'_z\end{pmatrix},
 \qquad
 \det A=q_t^2-\lvert\vec q'\rvert^2 .
 $$
@@ -834,7 +834,7 @@ $$
 $$
 the matrix is
 $$
-A=\begin{pmatrix}i(q'_t-q_z)&-iq_x-q_y\\ -iq_x+q_y&i(q'_t+q_z)\end{pmatrix},
+A=\begin{pmatrix}i(q'_t-q_z)&amp;-iq_x-q_y\\ -iq_x+q_y&amp;i(q'_t+q_z)\end{pmatrix},
 \qquad
 \det A=-(q'_t)^2+\lvert\vec q\rvert^2 .
 $$
@@ -911,7 +911,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <td>the Peirce coordinates</td>
 </tr>
 <tr>
-<td>$A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}$</td>
+<td>$A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&amp;X_-\\X_+&amp;P_-\end{pmatrix}$</td>
 <td>the $2\times2$ image</td>
 </tr>
 <tr>

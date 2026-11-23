@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonoluminescence as a QED vacuum effect: probing Schwinger&#x27;s proposal — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sonoluminescence as a QED vacuum effect - Probing Schwinger&#x27;s proposal -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="sonoluminescence-as-a-qed-vacuum-effect-probing-schwingers-proposal"><strong>Sonoluminescence as a QED vacuum effect: probing Schwinger's proposal</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>quant-ph/9805031v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>S. Liberati, Matt Visser, F. Belgiorno, D. W. Sciama</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, May 1998</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Sonoluminescence as a QED vacuum effect - Probing Schwinger's proposal - quant-ph_9805031-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sonoluminescence as a QED vacuum effect - Probing Schwinger's proposal - quant-ph_9805031.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sonoluminescence as a QED vacuum effect - Probing Schwinger's proposal - quant-ph_9805031.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Schwinger proposed that a collapsing dielectric bubble changes the QED vacuum and so emits light. The proposal has been controversial. The authors test it in detail using the sudden approximation. They compute Bogoliubov coefficients between the vacuum outside and inside the bubble, with matching at the moving boundary. The calculation is done with Bessel functions and junction conditions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="schwingers-proposal">Schwinger's proposal</h3>
+<p>"Schwinger proposed a physical mechanism for sonoluminescence in terms of photon production due to changes in the properties of the quantum-electrodynamic (QED) vacuum arising from a collapsing dielectric bubble"</p>
+<h3 id="the-status">The status</h3>
+<p>"This mechanism can be re-phrased in terms of the Casimir effect and has recently been the subject of considerable controversy."</p>
+<h3 id="the-approach">The approach</h3>
+<p>"Using the sudden approximation we calculate Bogolubov coefficients relating the QED vacuum in the presence of the exp[anding bubble]"</p>
+<h3 id="the-matching">The matching</h3>
+<p>"the two pseudo-Wronskians so found can be shown to be equal (by the junction condition)"</p>
+<p>$$A_\nu W[J_\nu(n_{\text{liquid}}\omega_{\text{out}}r),J_\nu(n_{\text{gas}}\omega_{\text{in}}r)]_R=B_\nu W[\cdots]+C_\nu W[\cdots]\qquad (paper\ 35)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-matching-across-a-moving-boundary">1. Matching across a moving boundary</h3>
+<p><strong>The idea.</strong> Two media with different refractive index require junction conditions on the mode functions.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214-conversion.md</code> treats a boundary in glass. The full matching problem worked out here is the technical core that target summarises.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Quantum vacuum radiation in optical glass - 1111.0214-conversion.md</code>, in the discussion of matching.</p>
+<p><strong>What stands in the way.</strong> The bubble geometry is spherical, not planar. Ranked first, because it supplies the missing detail.</p>
+<h3 id="2-sudden-approximation">2. Sudden approximation</h3>
+<p><strong>The idea.</strong> If the change is fast compared with the period, the calculation collapses to a simple form.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats fast and slow limits. The sudden limit is a third regime with its own rules.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> The approximation is uncontrolled at high frequency. Ranked second.</p>
+<h3 id="3-a-disputed-mechanism">3. A disputed mechanism</h3>
+<p><strong>The idea.</strong> A proposal can be tested by computing its consequences carefully.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs examples of how a contested mechanism is assessed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> The controversy was never settled by this route. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

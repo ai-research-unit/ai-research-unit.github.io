@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytic results for the effective action — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analytic results for the effective action - 0906.2851.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analytic-results-for-the-effective-action"><strong>Analytic results for the effective action</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0906.2851v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Steven K. Blau, Matt Visser, Andreas Wipf</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 June 2009; original text received 12 July 1990</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>International Journal of Modern Physics A 6 (1991) 5409–5433</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analytic results for the effective action - 0906.2851-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analytic results for the effective action - 0906.2851.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analytic results for the effective action - 0906.2851.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the one-loop effective action in a constant electromagnetic field exactly, for charged scalars and spinors, in two, three and four dimensions, massive and massless. The method is to start with cases where the spectrum of the squared Dirac operator and gauged Laplacian is known explicitly — harmonic gauge potentials, then monopole potentials with constant field strength — compute the zeta function directly, and use zeta-function renormalisation. The weak-field expansion reproduces the Euler–Heisenberg Lagrangian, and the strong-field behaviour is obtained from convergent series for the Hurwitz zeta function. An appendix collects the zeta-function identities.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose">The purpose</h3>
+<p>"Motivated by the seminal work of Schwinger, we obtain explicit closed form expressions for the one–loop effective action in a constant electromagnetic field. We discuss both massive and massless charged scalars and spinors in two, three, and four dimensions. Both strong field and weak field limits are calculable."</p>
+<h3 id="why-the-determinants-matter">Why the determinants matter</h3>
+<p>"In the path integral formulation of fermionic field theories, one is forced to confront the determinant of the Dirac operator, while for spin–0 bosons one encounters the determinant of the gauged Laplacian. In the absence of gauge fields, and if the space-time geometry is not an issue, this determinant is an irrelevant constant. However, there is still a good deal of work to be done toward elucidating the dependence of these determinants on background gauge fields and gravitational fields. These determinants are related to the one-loop effective action via $S_{\text{eff}}\propto\ln\det D$."</p>
+<h3 id="the-weak-field-result">The weak-field result</h3>
+<p>"The latter limit results in an asymptotic expansion whose first term reproduces the Euler–Heisenberg effective Lagrangian." The expansion is "an asymptotic expansion in terms of powers of $B^2$; in particular there are no terms logarithmic in field strength." After "the usual additional finite renormalization of cosmological constant and electric charge, we obtain the extended Euler–Heisenberg effective Lagrangian" — with the $B^4$ term and higher powers, and no logs.</p>
+<h3 id="the-method">The method</h3>
+<p>"We began with the topologically interesting cases of harmonic gauge potentials, before proceeding to monopole potentials with constant field strengths. In both these cases we obtained the spectrum of the squared Dirac operator and gauged Laplacian explicitly and calculated the corresponding zeta function directly. Computation of the effective action then reduces to a relatively simple application of special functions."</p>
+<h3 id="the-odd-dimensional-simplification">The odd-dimensional simplification</h3>
+<p>In $d=2N+1$ the heat kernel factorises, $K_d(t)=\frac{L}{\sqrt{4\pi t}}K_{2N}(t)$, so $\zeta_d(s)=\frac{L}{\sqrt{4\pi}}\frac{\Gamma(s-1/2)}{\Gamma(s)}\zeta_{2N}(s-\tfrac12)$ (91), and "$\zeta_d'(0)=-L\zeta_{2N}(-\tfrac12)$". The paper adds: "we expect that for general fields the result $L_{\text{eff}}\sim B^{d/2}$ will remain true in any odd number of dimensions."</p>
+<h3 id="the-scale-independence">The scale independence</h3>
+<p>"these effective actions are independent of the renormalization scale $\mu$. This (nonobvious) result is a consequence of the vanishing of the conformal anomaly in odd–dimensional space–times."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-scale-free-effective-action-and-the-reason">1. A scale-free effective action, and the reason</h3>
+<p><strong>The idea.</strong> In odd dimensions the one-loop effective action does not depend on the renormalisation scale, because the conformal anomaly vanishes there. A non-obvious invariance with a structural cause.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> builds a renormalisation group and must say what runs. A demonstration that a quantity can be exactly scale-free, with the reason stated (vanishing anomaly in odd dimension), gives that article a limiting case to calibrate against. The corpus currently has running and no fixed point of this kind.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result depends on odd dimensionality, and the corpus works in four dimensions.</p>
+<h3 id="2-explicit-eigenvalues-first-effective-action-second">2. Explicit eigenvalues first, effective action second</h3>
+<p><strong>The idea.</strong> The calculation is possible because the spectra are known exactly. No approximation is made; the special functions do the rest.</p>
+<p><strong>What it would add.</strong> A model of what a completed calculation looks like. <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code> derives a Lagrangian and infers consequences; this paper computes a determinant and reads off the physics, and the difference in evidential weight is large. Recording the standard is useful even if the corpus cannot meet it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no exactly solvable spectrum. Ranked second.</p>
+<h3 id="3-no-logarithms-only-even-powers">3. No logarithms, only even powers</h3>
+<p><strong>The idea.</strong> For a constant field the expansion contains only powers of $B^2$ and no logarithmic terms, so the leading correction is computable and the series is clean.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> is looking for a well-defined expansion with a computable leading term. Here is what such an expansion looks like, including the statement that certain terms are absent and why (constant field, no anomalous dimension at this order). Absence of a class of terms is a checkable prediction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The clean structure is a consequence of the field being constant. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

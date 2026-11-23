@@ -233,7 +233,7 @@ $$</p>
 <h3 id="substitution">Substitution</h3>
 <p><strong>Definition.</strong> The <strong>substitution</strong> of a term $t$ for a variable $x$ in a formula $\varphi$, written $\varphi[t/x]$, is the result of replacing every free occurrence of $x$ in $\varphi$ by $t$.</p>
 <p>Substitution is defined by recursion on formulas, with the one delicate clause being the quantifier clause: the occurrences of $x$ bound in $\varphi$ are not replaced, and if the quantifier binds a variable occurring in $t$, that variable must first be renamed to avoid <strong>capture</strong>.</p>
-<p><strong>Example.</strong> Let $\varphi$ be $\exists y\, (x < y)$, so that $x$ is free. Substituting the term $y$ for $x$ gives $\exists y\, (y < y)$, which says something different from the intended "$y$ is less than something": the free $y$ has been captured by the quantifier. The correct substitution first renames the bound variable, giving $\exists z\,(x < z)$ and then $\exists z\,(y < z)$.</p>
+<p><strong>Example.</strong> Let $\varphi$ be $\exists y\, (x &lt; y)$, so that $x$ is free. Substituting the term $y$ for $x$ gives $\exists y\, (y &lt; y)$, which says something different from the intended "$y$ is less than something": the free $y$ has been captured by the quantifier. The correct substitution first renames the bound variable, giving $\exists z\,(x &lt; z)$ and then $\exists z\,(y &lt; z)$.</p>
 <p><strong>Convention.</strong> In this corpus substitution is always understood to be <strong>capture-avoiding</strong>: bound variables are renamed as necessary before the substitution is performed. This is the standard convention, and it is why alpha-conversion is treated as an invisible operation.</p>
 <h2 id="rules-of-inference-and-the-structure-of-a-proof">Rules of Inference and the Structure of a Proof</h2>
 <h3 id="inference-rules-and-formal-proofs">Inference Rules and Formal Proofs</h3>
@@ -286,13 +286,13 @@ $$</p>
 <p>which is the identity at $n + 1$.</p>
 <h3 id="variants">Variants</h3>
 <p>Three variants are used in the corpus.</p>
-<p><strong>Strong induction.</strong> If $P(k)$ holds for all $k < n$ implies $P(n)$, then $P(n)$ holds for all $n$. The strong form is equivalent to the weak form and follows from well-ordering by the same argument, with the minimal counterexample $m$ satisfying $P(k)$ for all $k < m$ by minimality. It is used when the step needs more than the immediately preceding case, as in the Euclidean algorithm's correctness or the proof that every integer $> 1$ is a product of primes.</p>
+<p><strong>Strong induction.</strong> If $P(k)$ holds for all $k &lt; n$ implies $P(n)$, then $P(n)$ holds for all $n$. The strong form is equivalent to the weak form and follows from well-ordering by the same argument, with the minimal counterexample $m$ satisfying $P(k)$ for all $k &lt; m$ by minimality. It is used when the step needs more than the immediately preceding case, as in the Euclidean algorithm's correctness or the proof that every integer $&gt; 1$ is a product of primes.</p>
 <p><strong>Induction from a base.</strong> If $P(n_0)$ holds and $P(n) \Rightarrow P(n+1)$ for all $n \geq n_0$, then $P(n)$ holds for all $n \geq n_0$. The statement for $n \geq n_0$ is proved by applying the theorem to the property $Q(n) :\equiv P(n + n_0)$.</p>
 <p><strong>The well-ordering principle.</strong> Every nonempty subset of $\mathbb{N}$ has a least element. This is equivalent to induction: the theorem above deduced induction from well-ordering, and conversely, if $S \subseteq \mathbb{N}$ had no least element, then $0 \notin S$, and if $0, 1, \ldots, n$ all lie outside $S$ then $n+1 \notin S$ as well, since otherwise $n+1$ would be the least element of $S$; strong induction would then give $S = \emptyset$. So induction implies that a set with no least element is empty, which is well-ordering.</p>
 <h3 id="recursive-definitions">Recursive Definitions</h3>
 <p>Induction justifies not only proofs but <strong>definitions</strong> that specify a value at $n+1$ in terms of earlier values.</p>
 <p><strong>Theorem (recursion).</strong> Let $A$ be a set, $a \in A$, and let $F : \mathbb{N} \times A \to A$ be a function. There is exactly one function $u : \mathbb{N} \to A$ with $u(0) = a$ and $u(n+1) = F(n, u(n))$ for all $n$.</p>
-<p><strong>Proof sketch.</strong> Define $u$ to be the union of all finite functions $u_N$ on $\{0, \ldots, N\}$ satisfying the two conditions for $n < N$; each $u_N$ exists by induction on $N$ and is unique, and the $u_N$ agree on their common domains by induction. Their union is then a function on all of $\mathbb{N}$ with the required properties. Uniqueness of $u$ follows because two solutions agree at $0$ and, if they agree at $n$, at $n+1$.</p>
+<p><strong>Proof sketch.</strong> Define $u$ to be the union of all finite functions $u_N$ on $\{0, \ldots, N\}$ satisfying the two conditions for $n &lt; N$; each $u_N$ exists by induction on $N$ and is unique, and the $u_N$ agree on their common domains by induction. Their union is then a function on all of $\mathbb{N}$ with the required properties. Uniqueness of $u$ follows because two solutions agree at $0$ and, if they agree at $n$, at $n+1$.</p>
 <p>The theorem licenses the familiar definitions of $n!$, of $a^n$, of the Fibonacci sequence, and of any function given by a recurrence. Without it a "definition" by recurrence would be an assertion about an infinite object that had not been constructed.</p>
 <h3 id="structural-induction">Structural Induction</h3>
 <p>The same principle applies to any set whose elements are generated by finitely many constructors, and formulas are the standard example.</p>
@@ -386,7 +386,7 @@ $$</p>
 <td>The natural numbers, well-ordered by $\leq$, with least element $0$</td>
 </tr>
 <tr>
-<td>$P(n)$, $P(k)$ for $k<n$</td>
+<td>$P(n)$, $P(k)$ for $k&lt;n$</td>
 <td>Induction hypothesis; strong induction hypothesis</td>
 </tr>
 <tr>

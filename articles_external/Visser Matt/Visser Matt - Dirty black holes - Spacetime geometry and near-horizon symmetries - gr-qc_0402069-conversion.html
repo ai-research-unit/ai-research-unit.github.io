@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: spacetime geometry and near-horizon symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Spacetime geometry and near-horizon symmetries -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-spacetime-geometry-and-near-horizon-symmetries"><strong>Dirty black holes: spacetime geometry and near-horizon symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0402069v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. J. M. Medved, Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 22 February 2004 (dated 14 February 2004)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Spacetime geometry and near-horizon symmetries - gr-qc_0402069-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Spacetime geometry and near-horizon symmetries - gr-qc_0402069.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Spacetime geometry and near-horizon symmetries - gr-qc_0402069.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks how much symmetry a horizon forces on the geometry near it, without assuming spherical symmetry. Using purely geometrical arguments it shows that, as a static Killing horizon is approached, the curvature tensors become highly symmetric. The Einstein tensor block-diagonalises into transverse and parallel parts, the transverse part is proportional to the transverse metric, and these properties survive static conformal deformations. So the stress-energy near any static Killing horizon is tightly constrained. The authors suggest this geometric symmetry underlies the conformal symmetry used in entropy calculations.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"We consider the spacetime geometry of a static but otherwise generic black hole (that is, the horizon geometry and topology are not necessarily spherically symmetric)."</p>
+<h3 id="the-result">The result</h3>
+<p>"It is demonstrated, by purely geometrical techniques, that the curvature tensors, and the Einstein tensor in particular, exhibit a very high degree of symmetry as the horizon is approached. Consequently, the stress-energy tensor will be highly constrained near any static Killing horizon."</p>
+<h3 id="the-details">The details</h3>
+<p>"it is shown that — at the horizon — the stress-energy tensor block-diagonalizes into 'transverse' and 'parallel' blocks, the transverse components of this tensor are proportional to the transverse metric, and these properties remain invariant under static conformal deformations."</p>
+<h3 id="the-claim-of-novelty">The claim of novelty</h3>
+<p>"Although this symmetry had already been established for static spherically symmetric horizons, this is — to the best of our knowledge — the first time that it has been rigorously demonstrated to hold for generic static geometries."</p>
+<h3 id="the-implication-for-matter">The implication for matter</h3>
+<p>"A direct implication of our analysis is that, by way of Einstein's equation, the matter/energy near a static Killing horizon (including any quantum fluctuations) must be highly constrained."</p>
+<h3 id="the-conformal-field-theory-reading">The conformal field theory reading</h3>
+<p>"Given that the 'interesting' near-horizon physics can be anticipated to take place in the $n$–$t$ plane and $T_\perp\propto g_\perp$ at the horizon, the near-horizon stress tensor is effectively that of a collection of world-sheet conformal field theories."</p>
+<h3 id="the-speculation">The speculation</h3>
+<p>"we speculate that this geometric symmetry underlies Carlip's notion of an asymptotic near-horizon conformal symmetry controlling the entropy of a black hole."</p>
+<h3 id="the-key-identity">The key identity</h3>
+<p>"on-horizon Einstein tensor block-diagonalizes and, moreover, that ${}^{(3+1)}G_{\hat t\hat t}|_H+{}^{(3+1)}G_{\hat n\hat n}|_H=0$; where $\hat t$ and $\hat n$ are the (normalized) spacetime coordinates in the directions perpendicular to the horizon (timelike and spacelike respectively)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-horizon-forces-the-symmetry">1. The horizon forces the symmetry</h3>
+<p><strong>The idea.</strong> Near-horizon symmetry is not an assumption but a consequence of having a static Killing horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizon structure as something imposed from outside. This paper shows the horizon generates its own local symmetry, so some of the missing structure is not missing after all. That weakens the article's negative conclusion in a specific, checkable way.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> The symmetry is static and near-horizon only. Ranked first, because it directly contradicts a pessimistic entry.</p>
+<h3 id="2-conformal-symmetry-from-geometry">2. Conformal symmetry from geometry</h3>
+<p><strong>The idea.</strong> The block structure is preserved under static conformal deformations, and this may explain the conformal symmetry used in entropy arguments.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats conformal invariance as a massless property. Here it arises geometrically at a horizon, for any mass. That is a different origin for the same symmetry and the article should distinguish them.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of what the invariance preserves.</p>
+<p><strong>What stands in the way.</strong> The connection to entropy is offered as speculation. Ranked second.</p>
+<h3 id="3-two-dimensional-physics-at-a-horizon">3. Two-dimensional physics at a horizon</h3>
+<p><strong>The idea.</strong> The near-horizon stress tensor looks like a collection of two-dimensional conformal field theories.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives thermodynamics from horizon geometry. A two-dimensional conformal description would give an independent route to the same quantities, which is the strongest kind of check the article could report.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the derivation.</p>
+<p><strong>What stands in the way.</strong> The reduction is an observation about the stress tensor, not a derivation. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

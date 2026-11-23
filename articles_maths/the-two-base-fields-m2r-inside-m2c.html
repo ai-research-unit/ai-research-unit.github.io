@@ -115,9 +115,9 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>real form</strong> of $M_2(\mathbb{C})$ is a real subalgebra $A_0$ of real dimension $4$ with $A_0\oplus iA_0=M_2(\mathbb{C})$.</p>
 <p><strong>Theorem.</strong> Up to conjugation by a complex unit, $M_2(\mathbb{C})$ has exactly two real forms: $M_2(\mathbb{R})$ and the quaternion algebra $\mathbb{H}$.</p>
 <p><strong>Proof.</strong> A real form is the fixed algebra of an antilinear involutive automorphism $\sigma$, and every antilinear automorphism of $M_2(\mathbb{C})$ has the form $\sigma(A)=S\bar AS^{-1}$ for an invertible $S$. The condition $\sigma^{2}=\mathrm{id}$ becomes $S\bar S\in\mathbb{C}^{\times}I$. Rescaling $S$ shows that the two cases are $S\bar S=I$ and $S\bar S=-I$: in the first the fixed algebra is $M_2(\mathbb{R})$, in the second it is the set of matrices $A$ with $A=S\bar AS^{-1}$, which is a copy of $\mathbb{H}$ acting on $\mathbb{C}^{2}$ as the quaternions act on $\mathbb{C}\oplus\mathbb{C}$ by $j\mapsto S\,\bar{\cdot}$. The classification in general is <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em>, §<em>The Two Real Structures</em>.</p>
-<p><strong>The quaternionic form.</strong> Take $S=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, so that $S\bar S=-I$. The fixed algebra consists of the matrices</p>
+<p><strong>The quaternionic form.</strong> Take $S=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$, so that $S\bar S=-I$. The fixed algebra consists of the matrices</p>
 <p>$$
-A=\begin{pmatrix}\alpha&\beta\\-\bar\beta&\bar\alpha\end{pmatrix},
+A=\begin{pmatrix}\alpha&amp;\beta\\-\bar\beta&amp;\bar\alpha\end{pmatrix},
 $$</p>
 <p>which is the regular representation of $\mathbb{H}$ on $\mathbb{C}^{2}$: the four real parameters are those of $a+bi+cj+dk$, with $\alpha=a+bi$ and $\beta=c+di$. The determinant of such a matrix is $\lvert\alpha\rvert^{2}+\lvert\beta\rvert^{2}=a^{2}+b^{2}+c^{2}+d^{2}$, the Euclidean norm on $\mathbb{R}^{4}$, and it is the quaternionic norm.</p>
 <p><strong>The two forms are not isomorphic as real algebras.</strong> $M_2(\mathbb{R})$ has zero divisors, since $E_{12}^{2}=0$, while $\mathbb{H}$ is a division algebra, every nonzero quaternion being invertible. That single contrast separates the two forms without any further computation.</p>
@@ -125,18 +125,18 @@ $$</p>
 <p><strong>The determinant of a real matrix is real, and the spectrum of a real matrix is stable under conjugation.</strong></p>
 <p><strong>Proposition.</strong> If $X\in M_2(\mathbb{R})$ then $\det X\in\mathbb{R}$ and $\chi_X$ has real coefficients; hence the eigenvalues of $X$ are either two real numbers or a conjugate pair.</p>
 <p><strong>Proof.</strong> The determinant is a polynomial with integer coefficients in the entries, so a real matrix has a real determinant. The same holds for every coefficient of $\chi_X$, so a nonreal root $\lambda$ is accompanied by $\bar\lambda$, which is also a root; the polynomial has degree two, so those are the two roots.</p>
-<p><strong>Example.</strong> The rotation $\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}$ has trace $2\cos\theta$ and determinant $1$, and its eigenvalues are $e^{\pm i\theta}$, a conjugate pair on the unit circle. A real matrix of order two has a nonreal pair exactly when its discriminant $(\operatorname{tr}X)^{2}-4\det X$ is negative.</p>
+<p><strong>Example.</strong> The rotation $\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix}$ has trace $2\cos\theta$ and determinant $1$, and its eigenvalues are $e^{\pm i\theta}$, a conjugate pair on the unit circle. A real matrix of order two has a nonreal pair exactly when its discriminant $(\operatorname{tr}X)^{2}-4\det X$ is negative.</p>
 <p><strong>The determinant is a quadratic form of inertia $(2,2)$ on the real algebra.</strong> In the basis $(E_{11},E_{12},E_{21},E_{22})$ the determinant $ad-bc$ has the symmetric matrix of eigenvalues $\tfrac12,\tfrac12,-\tfrac12,-\tfrac12$. Its zero set is therefore a cone over a torus, and not the single point that a definite form would give.</p>
 <h2 id="the-split-quaternions-at-order-two">The Split Quaternions at Order Two</h2>
 <p><strong>The real algebra $M_2(\mathbb{R})$ is the split quaternion algebra.</strong> Put</p>
 <p>$$
-e_1=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
-e_2=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
-e_3=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+e_1=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},\qquad
+e_2=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad
+e_3=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}.
 $$</p>
 <p>Then $e_1^{2}=e_2^{2}=I$, $e_3^{2}=-I$, $e_1e_2=e_3$, $e_2e_3=-e_1$, $e_3e_1=-e_2$, and the four elements $I,e_1,e_2,e_3$ are a real basis. The table is the quaternion table with two of the three squares equal to $+I$; that sign pattern is the definition of the split quaternions.</p>
 <p><strong>Proposition.</strong> Under this basis a matrix $X=aI+xe_1+ye_2+ze_3$ has $\operatorname{tr}X=2a$ and $\det X=a^{2}-x^{2}-y^{2}+z^{2}$.</p>
-<p><strong>Proof.</strong> Each generator is traceless, so $\operatorname{tr}X=2a$. On the entries, $X=\begin{pmatrix}a+x&y+z\\ y-z&a-x\end{pmatrix}$, and $(a+x)(a-x)-(y+z)(y-z)=a^{2}-x^{2}-y^{2}+z^{2}$.</p>
+<p><strong>Proof.</strong> Each generator is traceless, so $\operatorname{tr}X=2a$. On the entries, $X=\begin{pmatrix}a+x&amp;y+z\\ y-z&amp;a-x\end{pmatrix}$, and $(a+x)(a-x)-(y+z)(y-z)=a^{2}-x^{2}-y^{2}+z^{2}$.</p>
 <p><strong>The correspondence with the biquaternion algebra.</strong> The split quaternion algebra is the real algebra $\mathbb{B}^{\mathrm{spl}}$ whose norm is of inertia $(2,2)$; the biquaternion algebra $\mathbb{B}$ carries the algebraic norm $N$, the sum $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ of four squares, read over $\mathbb{R}^{8}$ through the real and imaginary parts of the four coordinates. The two algebras are related by the change of the scalar field and not by an isomorphism over $\mathbb{R}$, and their tables differ in signs. The split algebra and its null quadric are <em>Split Quaternion Null Quadric and Projective Geometry</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>$M_2(\mathbb{R})$ is the fixed algebra of the entrywise conjugation of $M_2(\mathbb{C})$, of real dimension $4$ against the real dimension $8$ of the complex algebra, and $\mathbb{C}\otimes_{\mathbb{R}}M_2(\mathbb{R})\cong M_2(\mathbb{C})$. Every matrix is $X+iY$ with $X,Y$ real and unique, and the product reads $AC=(XU-YV)+i(XV+YU)$. The rank is a condition on minors and survives the change of field, while the dimension doubles; the determinant restricted to the real matrices is a quadratic form of inertia $(2,2)$ with a cone as zero set.</p>

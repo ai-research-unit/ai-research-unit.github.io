@@ -145,7 +145,7 @@ $$</p>
 <h2 id="verification">Verification</h2>
 <p>The statements above are finite and were recomputed in the two-component and four-component realizations.</p>
 <p><strong>Antiunitarity and the sign.</strong> With $\mathcal T=i\sigma_yK$ on $\mathbb{C}^2$, the representative $U=i\sigma_y$ is real (maximum entry-wise imaginary part $0$) and satisfies $U^2=-I_2$. Applying $\mathcal T$ to the two basis vectors gives $\mathcal T^2e_b=-e_b$ for $b=1,2$, and the antiunitarity relation $\langle\mathcal Tu,\mathcal Tv\rangle=\overline{\langle u,v\rangle}$ holds to machine precision on random vectors, with maximum error $0$. The Kramers orthogonality $\langle\mathcal Tv,v\rangle=0$ holds for random $v$, with maximum modulus $0$ over five trials.</p>
-<p><strong>A degenerate pair.</strong> On $\mathbb{C}^4=\mathbb{C}^2\otimes\mathbb{C}^2$ with the antiunitary $\mathcal T=U\otimes I_2$ acting on the first factor and $H=I_2\otimes h$ with $h=\begin{pmatrix}1&2\\2&1\end{pmatrix}$ on the second, one has $[\mathcal T,H]=0$ exactly ($\|THT^{-1}-H\|=0$). The vector $v=\tfrac1{\sqrt2}(\vec e_x\otimes(1,1))$ satisfies $Hv=3v$ with residual $0$, its partner $\mathcal Tv=\tfrac{1}{\sqrt2}(\vec e_y\otimes(1,1))$ — up to the sign carried by $\sigma_y$ — satisfies $H(\mathcal Tv)=3(\mathcal Tv)$ with residual $0$, and $\langle v,\mathcal Tv\rangle=0$ exactly. The doublet is the theorem's conclusion, exhibited.</p>
+<p><strong>A degenerate pair.</strong> On $\mathbb{C}^4=\mathbb{C}^2\otimes\mathbb{C}^2$ with the antiunitary $\mathcal T=U\otimes I_2$ acting on the first factor and $H=I_2\otimes h$ with $h=\begin{pmatrix}1&amp;2\\2&amp;1\end{pmatrix}$ on the second, one has $[\mathcal T,H]=0$ exactly ($\|THT^{-1}-H\|=0$). The vector $v=\tfrac1{\sqrt2}(\vec e_x\otimes(1,1))$ satisfies $Hv=3v$ with residual $0$, its partner $\mathcal Tv=\tfrac{1}{\sqrt2}(\vec e_y\otimes(1,1))$ — up to the sign carried by $\sigma_y$ — satisfies $H(\mathcal Tv)=3(\mathcal Tv)$ with residual $0$, and $\langle v,\mathcal Tv\rangle=0$ exactly. The doublet is the theorem's conclusion, exhibited.</p>
 <p><strong>The opposite sign.</strong> For $\mathcal T^2=+1$ no degeneracy is enforced. With a random real symmetric $H$ on $\mathbb{C}^4$ — which is invariant under conjugation, the $\mathcal T^2=+1$ case — the spectrum is $\{-3.01553,-1.70328,0.12807,2.44612\}$, four distinct levels with minimum gap $1.31225$. The contrast is the theorem: the degeneracy is a consequence of the sign, not of the symmetry alone.</p>
 <p><strong>The antisymmetric form.</strong> The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta_{\mathrm{rat}}\,\vec u\cdot\boldsymbol\sigma/2)$, the identity</p>
 <p>$$
@@ -155,7 +155,7 @@ $$</p>
 <p><strong>The quaternionic commutant.</strong> The operators on $\mathbb{C}^2$ commuting with $\mathcal T$ (i.e. satisfying $UM^*U^{-1}=M$) form a real four-dimensional space, hence a two-complex-dimensional algebra — the quaternionic line $\mathbb{H}$. The dimension was computed by a rank count of the eight real linear conditions on the eight real parameters of $M$: rank $4$, solution dimension $4$ over $\mathbb{R}$ and $2$ over $\mathbb{C}$.</p>
 <p><strong>The counting of $\mathcal T$-invariant Hamiltonians.</strong> The degeneracy has a parameter count behind it. On $\mathbb{C}^{2N}$ with $\mathcal T^2=-1$, an invariant Hermitian operator can be written in the block form</p>
 <p>$$
-\boxed{\;H=\begin{pmatrix}A & B\ -B^* & A^*\end{pmatrix},
+\boxed{\;H=\begin{pmatrix}A &amp; B\ -B^* &amp; A^*\end{pmatrix},
 \qquad
 A=A^\dagger ,
 \qquad
@@ -216,7 +216,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J_{\mathrm q}^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.</p>
-<p>The biquaternion interpretation is that the algebra contains the invertibles for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_\imath$ square to $-e_t$ and supply candidate $J_{\mathrm q}$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an <em>algebra</em> involution is not yet a <em>module</em> conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.</p>
+<p>The biquaternion interpretation is that the algebra contains the invertibles for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_{\imath}$ square to $-e_t$ and supply candidate $J_{\mathrm q}$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an <em>algebra</em> involution is not yet a <em>module</em> conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.</p>
 <h2 id="what-breaks-the-symmetry">What Breaks the Symmetry</h2>
 <p><strong>A magnetic field.</strong> The standard $\mathcal T$-odd perturbation of a spin system is a term linear in an external field,</p>
 <p>$$
@@ -232,12 +232,12 @@ $$</p>
 \qquad
 \mathcal T\,I\,\mathcal T^{-1}=I ,
 $$</p>
-<p>verified with residuals $0$. In the Kramers basis $\{v,\mathcal Tv\}$ an invariant perturbation therefore has equal diagonal matrix elements and does not split the pair, while a term proportional to a spin component has opposite diagonal elements and splits it to first order. The behaviour was computed on the four-dimensional model above: with the orbital part $h=\begin{pmatrix}1&2\\2&1\end{pmatrix}$ and a spin term of strength $b$,</p>
+<p>verified with residuals $0$. In the Kramers basis $\{v,\mathcal Tv\}$ an invariant perturbation therefore has equal diagonal matrix elements and does not split the pair, while a term proportional to a spin component has opposite diagonal elements and splits it to first order. The behaviour was computed on the four-dimensional model above: with the orbital part $h=\begin{pmatrix}1&amp;2\\2&amp;1\end{pmatrix}$ and a spin term of strength $b$,</p>
 <p>$$
 \begin{aligned}
-b=0:\quad &\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\\
-b=0.01:\quad &\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\\
-b=0.02:\quad &\text{spectrum } \{-1.02,-0.98,2.98,3.02\},
+b=0:\quad &amp;\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\\
+b=0.01:\quad &amp;\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\\
+b=0.02:\quad &amp;\text{spectrum } \{-1.02,-0.98,2.98,3.02\},
 \end{aligned}
 $$</p>
 <p>a splitting of exactly $2b$ per pair and linear in the field, while a $\mathcal T$-even perturbation of the same strength leaves the spectrum $\{-1.01,-1.01,3.01,3.01\}$ — shifted and still degenerate. The linear splitting of a Kramers pair in a magnetic field is the theorem's quantitative face.</p>
@@ -259,7 +259,7 @@ $$</p>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>, for the three antilinear involutions, the real structure $\flat$, and the distinction between the algebra's and the module's real structures that this article inherits.</li>
-<li>Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the spin generators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_\imath$ and the module action on which time reversal is constructed.</li>
+<li>Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the spin generators $\tilde S_{\Psi,k}=\frac{h}{4\pi}i\vec e_{\imath}$ and the module action on which time reversal is constructed.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>Kramers degeneracy in biquaternion form is the antiunitary symmetry $\mathcal T=UK$ of the spin-$\tfrac12$ module whose square is the $2\pi$ rotor: with $U=n\cdot e$ the real rotation element ($U^*=U$, $(n\cdot e)^2=-e_t$),</p>
@@ -267,8 +267,8 @@ $$</p>
 \mathcal T^2=U U^*=U^2=-e_t=R(2\pi) ,
 $$</p>
 <p>so that $\mathcal T^2=(-1)^{2s}e_t$ is the covering sign that the spin–statistics companion also uses. The algebra supplies the sign and the set of axes $\{\vec e_x,\vec e_y,\vec e_z\}$; the module supplies the conjugation, in the same algebra-versus-module division that the mass article enforces.</p>
-<p>The theorem follows from antiunitarity alone: if $[\mathcal T,H]=0$ and $\mathcal T^2=-1$, the partner $\mathcal Tv$ of every eigenvector $v$ is degenerate ($[\mathcal T,H]=0$) and orthogonal ($\langle\mathcal Tv,v\rangle=-\overline{\langle v,\mathcal Tv\rangle}$), so every level is even-degenerate. All of it was recomputed: for $\mathcal T=i\sigma_yK$, $U$ real with $U^2=-I_2$, $\mathcal T^2=-1$, antiunitarity with error $0$, and $\langle\mathcal Tv,v\rangle=0$ for random $v$; on $\mathbb{C}^4$ a $[\mathcal T,H]=0$ model with $H=I_2\otimes h$, $h=\begin{pmatrix}1&2\\2&1\end{pmatrix}$ has the doubly degenerate pair $\{v,\mathcal Tv\}$ at $E=3$ with residuals $0$; a random real symmetric $H$ (the $\mathcal T^2=+1$ case) has four distinct levels, $\{-3.01553,-1.70328,0.12807,2.44612\}$, with minimum gap $1.31225$.</p>
-<p>The same antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-e_t$ is a quaternionic structure, and the commutant of $\mathcal T$ on $\mathbb{C}^2$ was computed to be two-complex-dimensional — the quaternionic line. The counting of invariant Hamiltonians follows: on $\mathbb{C}^{2N}$ a $\mathcal T$-invariant Hermitian operator has block form $H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$ with $A=A^\dagger$, $B=-B^T$ and real dimension $N(2N-1)$ — $(1,6,15)$ for $N=1,2,3$, against $4N^2$ for a general Hermitian operator, with the constraint of rank $N(2N+1)$. The three symmetry classes are $\mathcal T^2$ absent, $+e_t$ (orthogonal, real) and $-e_t$ (symplectic, quaternionic), and only the last enforces degeneracy. A magnetic field, a term along a chosen imaginary direction, is what breaks the symmetry, and the framework's verdict is the familiar one: the algebra names the axis and does not choose it.</p>
+<p>The theorem follows from antiunitarity alone: if $[\mathcal T,H]=0$ and $\mathcal T^2=-1$, the partner $\mathcal Tv$ of every eigenvector $v$ is degenerate ($[\mathcal T,H]=0$) and orthogonal ($\langle\mathcal Tv,v\rangle=-\overline{\langle v,\mathcal Tv\rangle}$), so every level is even-degenerate. All of it was recomputed: for $\mathcal T=i\sigma_yK$, $U$ real with $U^2=-I_2$, $\mathcal T^2=-1$, antiunitarity with error $0$, and $\langle\mathcal Tv,v\rangle=0$ for random $v$; on $\mathbb{C}^4$ a $[\mathcal T,H]=0$ model with $H=I_2\otimes h$, $h=\begin{pmatrix}1&amp;2\\2&amp;1\end{pmatrix}$ has the doubly degenerate pair $\{v,\mathcal Tv\}$ at $E=3$ with residuals $0$; a random real symmetric $H$ (the $\mathcal T^2=+1$ case) has four distinct levels, $\{-3.01553,-1.70328,0.12807,2.44612\}$, with minimum gap $1.31225$.</p>
+<p>The same antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-e_t$ is a quaternionic structure, and the commutant of $\mathcal T$ on $\mathbb{C}^2$ was computed to be two-complex-dimensional — the quaternionic line. The counting of invariant Hamiltonians follows: on $\mathbb{C}^{2N}$ a $\mathcal T$-invariant Hermitian operator has block form $H=\begin{pmatrix}A&amp;B\\-B^*&amp;A^*\end{pmatrix}$ with $A=A^\dagger$, $B=-B^T$ and real dimension $N(2N-1)$ — $(1,6,15)$ for $N=1,2,3$, against $4N^2$ for a general Hermitian operator, with the constraint of rank $N(2N+1)$. The three symmetry classes are $\mathcal T^2$ absent, $+e_t$ (orthogonal, real) and $-e_t$ (symplectic, quaternionic), and only the last enforces degeneracy. A magnetic field, a term along a chosen imaginary direction, is what breaks the symmetry, and the framework's verdict is the familiar one: the algebra names the axis and does not choose it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -339,7 +339,7 @@ $$</p>
 <td>The three imaginary units = the three candidate axes</td>
 </tr>
 <tr>
-<td>$H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$, $A=A^\dagger$, $B=-B^T$</td>
+<td>$H=\begin{pmatrix}A&amp;B\\-B^*&amp;A^*\end{pmatrix}$, $A=A^\dagger$, $B=-B^T$</td>
 <td>$\mathcal T$-invariant Hermitian form on $\mathbb{C}^{2N}$</td>
 </tr>
 <tr>

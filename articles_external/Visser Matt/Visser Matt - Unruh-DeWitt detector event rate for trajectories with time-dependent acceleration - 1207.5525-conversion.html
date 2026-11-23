@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unruh–DeWitt detector event rate for trajectories with time-dependent acceleration — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Unruh-DeWitt detector event rate for trajectories with time-dependent…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unruhdewitt-detector-event-rate-for-trajectories-with-time-dependent-acceleration"><strong>Unruh–DeWitt detector event rate for trajectories with time-dependent acceleration</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1207.5525v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Luis C. Barbado, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 November 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Unruh-DeWitt detector event rate for trajectories with time-dependent acceleration - 1207.5525-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Unruh-DeWitt detector event rate for trajectories with time-dependent acceleration - 1207.5525.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Unruh-DeWitt detector event rate for trajectories with time-dependent acceleration - 1207.5525.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A detector moving with time-dependent acceleration in Minkowski space responds in a way that depends on the whole history. The authors propose an adiabatic expansion of the response. The expansion runs in time derivatives of the acceleration: jerk, snap, and higher. At leading order the rate depends only on the instantaneous acceleration, which recovers the standard Unruh result. The expansion also gives a practical way to compute click rates.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"acceleration along a one-dimensional trajectory in Minkowski spacetime"</p>
+<h3 id="the-method">The method</h3>
+<p>"To extract the physics of the process, we propose an adiabatic expansion of this response function."</p>
+<h3 id="the-use">The use</h3>
+<p>"This expansion is also a useful tool for computing the click rate of detectors in general trajectories."</p>
+<h3 id="the-expansion-variable">The expansion variable</h3>
+<p>"The expansion is done in powers of the time derivatives of the acceleration (jerk, snap, and higher derivatives)."</p>
+<h3 id="the-leading-term">The leading term</h3>
+<p>$$R(\omega,\tau)\sim R_0(\omega,g(\tau))+R_1(\omega,g(\tau),g'(\tau))+\cdots\qquad (paper\ 1)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-unruh-effect-is-adiabatic">1. The Unruh effect is adiabatic</h3>
+<p><strong>The idea.</strong> The standard result is the leading term of a derivative expansion.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code> states the effect for constant acceleration. The expansion shows what corrections to expect.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code>, in the discussion of constant acceleration.</p>
+<p><strong>What stands in the way.</strong> The expansion is formal. Ranked first, because it qualifies the target's central case.</p>
+<h3 id="2-jerk-and-snap-matter">2. Jerk and snap matter</h3>
+<p><strong>The idea.</strong> Higher derivatives of acceleration enter the response.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> would gain a case where the observer's worldline, not just its acceleration, matters.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of observers.</p>
+<p><strong>What stands in the way.</strong> The corrections are small. Ranked second.</p>
+<h3 id="3-detectors-as-probes">3. Detectors as probes</h3>
+<p><strong>The idea.</strong> A detector's click rate measures the trajectory's fine structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> would gain a case where a massless probe reads geometry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of probes.</p>
+<p><strong>What stands in the way.</strong> Real detectors are complicated. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

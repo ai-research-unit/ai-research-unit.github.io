@@ -102,7 +102,7 @@ $$</p>
 <p>The <strong>spectrum</strong> is the set of eigenvalues, denoted $\sigma(A)$.</p>
 <p><strong>The discriminant.</strong> The <strong>discriminant</strong> is</p>
 <p>$$
-\Delta(A)=\prod_{i<j}(\lambda_i-\lambda_j)^2.
+\Delta(A)=\prod_{i&lt;j}(\lambda_i-\lambda_j)^2.
 $$</p>
 <p>It is a polynomial in the coefficients, hence in the entries of $A$. The spectrum is <strong>simple</strong> exactly when $\Delta(A)\ne0$; the four eigenvalues are then distinct.</p>
 <p><strong>Invariance.</strong> The characteristic polynomial is invariant under conjugation:</p>
@@ -133,11 +133,11 @@ $$</p>
 <p>with Jordan blocks</p>
 <p>$$
 J_n(\lambda)=\begin{pmatrix}
-\lambda&1&0&\cdots&0\\
-0&\lambda&1&\cdots&0\\
-\vdots&&\ddots&\ddots&\vdots\\
-0&&&\lambda&1\\
-0&&\cdots&0&\lambda
+\lambda&amp;1&amp;0&amp;\cdots&amp;0\\
+0&amp;\lambda&amp;1&amp;\cdots&amp;0\\
+\vdots&amp;&amp;\ddots&amp;\ddots&amp;\vdots\\
+0&amp;&amp;&amp;\lambda&amp;1\\
+0&amp;&amp;\cdots&amp;0&amp;\lambda
 \end{pmatrix}.
 $$</p>
 <p>The <strong>semisimple part</strong> is the diagonal of $J$, and the <strong>nilpotent part</strong> is the off-diagonal shift; the two commute. This is the Jordan decomposition of <em>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</em>.</p>
@@ -189,12 +189,12 @@ $$</p>
 <p>$$
 R(z)=\frac{1}{z}\Bigl(I+\frac{A}{z}+\frac{A^2}{z^2}+\cdots\Bigr)
 $$</p>
-<p>for $\lvert z\rvert>\rho(A)$, where</p>
+<p>for $\lvert z\rvert&gt;\rho(A)$, where</p>
 <p>$$
 \rho(A)=\max_{k}\lvert\lambda_k\rvert
 $$</p>
-<p>is the <strong>spectral radius</strong>. The series converges absolutely and uniformly on compact subsets of $\lvert z\rvert>\rho(A)$.</p>
-<p><strong>Proof.</strong> The identity $(zI-A)^{-1}=z^{-1}(I-A/z)^{-1}$ and the geometric series for $\lVert A/z\rVert<1$ give the expansion. The radius of convergence is the spectral radius by the root test and the Gelfand formula.</p>
+<p>is the <strong>spectral radius</strong>. The series converges absolutely and uniformly on compact subsets of $\lvert z\rvert&gt;\rho(A)$.</p>
+<p><strong>Proof.</strong> The identity $(zI-A)^{-1}=z^{-1}(I-A/z)^{-1}$ and the geometric series for $\lVert A/z\rVert&lt;1$ give the expansion. The radius of convergence is the spectral radius by the root test and the Gelfand formula.</p>
 <p><strong>The poles.</strong> The resolvent has poles at the eigenvalues. If $\lambda$ is an eigenvalue with Jordan blocks of sizes $n_1,\dots,n_s$, the Laurent expansion at $\lambda$ has the form</p>
 <p>$$
 R(z)=\sum_{k=1}^{N}\frac{N_k}{(z-\lambda)^k}+\text{holomorphic},
@@ -325,12 +325,12 @@ $$</p>
 \rho(A)\le\lVert A\rVert,
 $$</p>
 <p>with equality for normal matrices. For a normal matrix, the operator norm is the largest modulus of an eigenvalue; for a non-normal matrix, the operator norm can be strictly larger.</p>
-<p><strong>The resolvent bound.</strong> For $\lvert z\rvert>\rho(A)$, the resolvent series converges. The spectral radius is the radius of convergence of the Neumann series at infinity: the series converges for $\lvert z\rvert>\rho(A)$ and diverges for $\lvert z\rvert<\rho(A)$ in general. The resolvent itself is holomorphic on the whole complement of the spectrum, which is larger than the exterior disc when the spectrum has eigenvalues of smaller modulus.</p>
+<p><strong>The resolvent bound.</strong> For $\lvert z\rvert&gt;\rho(A)$, the resolvent series converges. The spectral radius is the radius of convergence of the Neumann series at infinity: the series converges for $\lvert z\rvert&gt;\rho(A)$ and diverges for $\lvert z\rvert&lt;\rho(A)$ in general. The resolvent itself is holomorphic on the whole complement of the spectrum, which is larger than the exterior disc when the spectrum has eigenvalues of smaller modulus.</p>
 <p><strong>The stability.</strong> The spectral radius governs the asymptotic behaviour of the powers:</p>
 <p>$$
-A^n\to0\quad\iff\quad\rho(A)<1.
+A^n\to0\quad\iff\quad\rho(A)&lt;1.
 $$</p>
-<p>If $\rho(A)<1$, the Neumann series $\sum_{n\ge0}A^n$ converges to $(I-A)^{-1}$; if $\rho(A)\ge1$, the series diverges in general. The spectral radius is the stability margin of the discrete dynamical system $x_{n+1}=Ax_n$.</p>
+<p>If $\rho(A)&lt;1$, the Neumann series $\sum_{n\ge0}A^n$ converges to $(I-A)^{-1}$; if $\rho(A)\ge1$, the series diverges in general. The spectral radius is the stability margin of the discrete dynamical system $x_{n+1}=Ax_n$.</p>
 <h2 id="summary">Summary</h2>
 <p>The characteristic polynomial of $A$ is a monic quartic with roots the eigenvalues, trace the sum and determinant the product; the minimal polynomial records the largest Jordan block for each eigenvalue, and $A$ is diagonalisable exactly when the minimal polynomial has distinct roots. The Jordan form classifies the conjugacy class. The resolvent $(zI-A)^{-1}$ is holomorphic off the spectrum and has poles at the eigenvalues; the residue at $\lambda$ is the Riesz projector $P_\lambda$, and the projectors are idempotent, orthogonal and complete, with $A=\sum(\lambda P_\lambda+N_\lambda)$ and $N_\lambda$ nilpotent. The holomorphic functional calculus is the Dunford calculus, with the spectral mapping theorem. At a simple spectrum the Riesz projectors are the Lagrange projectors $P_k=\prod_{l\ne k}(A-\lambda_lI)/(\lambda_k-\lambda_l)$, polynomials in $A$ of degree at most three. At a repeated root the individual Lagrange projectors need not converge, but their sums converge to the Riesz projectors, and the nilpotent part appears as the limit of the weighted differences. For a fixed limit matrix the Riesz projector and the nilpotent part are fixed; only the way the individual projectors diverge depends on the path. The spectral radius is the largest eigenvalue modulus, the radius of convergence of the resolvent series and the stability margin.</p>
 <p>$$

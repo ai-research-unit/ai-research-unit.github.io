@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La geometrie des particules du groupe SU(2) et l&#x27;algebre reelle d&#x27;espace-temps — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/La geometrie des particules du groupe SU(2) BOUDET.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="la-geometrie-des-particules-du-groupe-su2-et-lalgebre-reelle-despace-temps"><strong>La geometrie des particules du groupe SU(2) et l'algebre reelle d'espace-temps</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>memoire recapitulatif (French)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. Boudet, UER Mathematiques, Universite de Provence, Marseille</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/La geometrie des particules du groupe SU(2) BOUDET-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/La geometrie des particules du groupe SU(2) BOUDET.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/La geometrie des particules du groupe SU(2) BOUDET.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A review memoir on the link between internal-symmetry particles and Planck's constant, on one side, and the Euclidean structure of spacetime $M$, on the other. It gives a complete geometric description of the Dirac electron and its local energy, extends the treatment to particles of the group SU(2), and argues that the work requires abandoning the spinor and Dirac-matrix formalism in favour of a real, Euclidean, multivectorial and associative algebra of $M$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="le-programme">Le programme</h3>
+<p>"Ce memoire recapitulatif concerne les liens qui unissent les particules a symetrie interne, ainsi que la constante de Planck, avec la structure euclidienne de l'espace-temps $M$." A cet effet, "une description geometrique complete de l'electron de Dirac, et de l'energie locale qui lui est associee, est faite, et son extension aux particules relevant du groupe SU(2) abordee."</p>
+<h3 id="le-repere-propre-local">Le repere propre local</h3>
+<p>"Le repère propre local R(x) de la particule, défini en chaque point x de M , formé de la quadrivitesse v µ (x), du quadrivecteur spin ou isospin sµ (x), et du plan P(x) orthogonal en x à v µ et sµ , y joue un rôle essentiel. L’énergie locale"</p>
+<p>That triad is the paper's central object: a velocity, a spin, and the plane orthogonal to both. Everything else — energy, $\hbar$, the SU(2) extension — is expressed as a rotation of that frame.</p>
+<h3 id="lenergie-locale-et-math13">L'energie locale et $\hbar$</h3>
+<p>"iel. L’énergie locale et la constante h̄ apparaissent comme liées à la rotation infinitésimale de R(x), et aussi à une transformation euclidienne mais ne relevant pas du groupe orthogonal O(M ), intéressant les tenseurs antisymétriques d’ordre deux, la “rotation de dualité”. Une"</p>
+<p>So $\hbar$ is not a coupling but a rate: the rotation of the local frame, with a duality rotation of the antisymmetric bivectors alongside it.</p>
+<h3 id="le-cout-du-choix-algebrique">Le cout du choix algebrique</h3>
+<p>"Une telle etude necessite l'abandon du formalisme des spineurs et matrices de Dirac, au profit d'une algebre reelle, a la fois euclidienne, multivectorielle et associative" sur $M$. The justification is put as a question about the tools: the paper asks whether the algebraic instruments physicists habitually use are the best suited to express the relations between physics and the Euclidean structures of space.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math16-as-the-rate-of-rotation-of-the-local-frame">1. $\hbar$ as the rate of rotation of the local frame</h3>
+<p><strong>The idea.</strong> The local frame $R(x)=(v,s,P)$ rotates along the worldline, and $\hbar$ measures that rotation. It is a geometric quantity, not an axiom of commutation. This is a <strong>reading</strong>, and a strong one: it makes the quantum of action a property of a moving frame.</p>
+<p><strong>What it would add.</strong> An alternative origin for the constant the corpus treats as an independent axiom. The corpus's canonical-commutation article posits $\hbar$; Boudet derives its role from frame kinematics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, as the competing account.</p>
+<p><strong>What stands in the way.</strong> The claim rests on identifying the frame's rotation with the commutator's scale, which Boudet asserts within his algebra; the corpus would need the identity written out before it could compare the two origins.</p>
+<h3 id="2-a-duality-rotation-is-not-in-the-orthogonal-group">2. A duality rotation is not in the orthogonal group</h3>
+<p><strong>The idea.</strong> The transformation acting on antisymmetric second-rank tensors that the paper calls a duality rotation is Euclidean but outside $O(M)$. It rotates the electric into the magnetic part, which no Lorentz transformation does. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A named operation for what the corpus performs when it multiplies by the algebra's imaginary unit on a bivector, and a reason that operation is not a Lorentz transformation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.md</code>, at the duality rotation.</p>
+<p><strong>What stands in the way.</strong> Boudet's version is tied to his real algebra of $M$; the corpus's version is complex multiplication on a bivector, and the two need a dictionary before the identification is safe.</p>
+<h3 id="3-the-su2-extension-uses-the-same-frame">3. The SU(2) extension uses the same frame</h3>
+<p><strong>The idea.</strong> Isospin enters as a second vector $s^\mu$ in the same local frame, on the same footing as spin. The internal symmetry is geometric, not an extra fibre.</p>
+<p><strong>What it would add.</strong> A concrete construction the corpus's why the biquaternion algebra reaches SU(2) but not SU(3) article lacks: what the second SU(2) factor is made of.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>.</p>
+<p><strong>What stands in the way.</strong> The memoir is a review and the SU(2) part is described as "abordee", not completed; the construction's details are not in this text.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

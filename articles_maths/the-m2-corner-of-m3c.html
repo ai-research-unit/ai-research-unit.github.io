@@ -100,7 +100,7 @@ $$</p>
 <p><strong>The isomorphism is not canonical.</strong> It depends on the choice of a basis of $\operatorname{im}P$; a change of basis conjugates the $2\times2$ matrices by the change-of-basis matrix. The corner $B$ itself is canonical, being defined by $P$; the identification with the standard $M_{2}(\mathbb{C})$ is canonical only up to conjugation.</p>
 <p><strong>The standard case.</strong> For $P_{1}=\operatorname{diag}(1,1,0)$ the corner is the set of matrices</p>
 <p>$$
-\begin{pmatrix}b_{11}&b_{12}&0\\b_{21}&b_{22}&0\\0&0&0\end{pmatrix},
+\begin{pmatrix}b_{11}&amp;b_{12}&amp;0\\b_{21}&amp;b_{22}&amp;0\\0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>which is $M_{2}(\mathbb{C})$ in the upper-left block. The unit is $P_{1}=\operatorname{diag}(1,1,0)$, not $I$.</p>
 <h2 id="the-inherited-trace-and-determinant">The Inherited Trace and Determinant</h2>
@@ -122,14 +122,14 @@ $$</p>
 <p>It is multiplicative on $B$, because the restriction map is an algebra isomorphism and the determinant is multiplicative on $M_{2}(\mathbb{C})$. It is <strong>not</strong> the restriction of the ambient determinant: the ambient determinant of $X$ is zero, since $X$ has the one-dimensional kernel $\ker P$ in its kernel, whereas the compression can be invertible.</p>
 <p><strong>Worked example (the two determinants differ).</strong> Let</p>
 <p>$$
-A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix},
+A=\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end{pmatrix},
 \qquad \det A=0,
 $$</p>
 <p>and $P_{1}=\operatorname{diag}(1,1,0)$. Then</p>
 <p>$$
-P_{1}AP_{1}=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},
+P_{1}AP_{1}=\begin{pmatrix}1&amp;2&amp;0\\4&amp;5&amp;0\\0&amp;0&amp;0\end{pmatrix},
 \qquad
-\det_{P_{1}}(P_{1}AP_{1})=\det\begin{pmatrix}1&2\\4&5\end{pmatrix}=5-8=-3\neq0=\det A.
+\det_{P_{1}}(P_{1}AP_{1})=\det\begin{pmatrix}1&amp;2\\4&amp;5\end{pmatrix}=5-8=-3\neq0=\det A.
 $$</p>
 <p>The compression is invertible in the corner, with inverse the compressed inverse of the $2\times2$ block, even though $A$ is singular in $M_{3}$. The two determinants answer different questions: $\det A$ asks whether $A$ is invertible on $\mathbb{C}^{3}$, and $\det_{P}$ asks whether $A$ is invertible on $\operatorname{im}P$ modulo $\ker P$.</p>
 <p><strong>The trace of the worked example.</strong> $\operatorname{tr}(A)=1+5+9=15$, while $\operatorname{tr}_{P_{1}}(P_{1}AP_{1})=1+5=6$. The inherited trace forgets the third diagonal entry, which lies in the kernel direction; it is the trace of the compressed endomorphism, not the trace of $A$.</p>
@@ -154,11 +154,11 @@ $$</p>
 <p>so $E$ is an idempotent. Its trace is $\operatorname{tr}P-\operatorname{tr}P^{*}=2-2=0$, because $P$ has rank two and the trace of $P^{*}$ is the conjugate of the trace of $P$. An idempotent of trace zero has rank zero, hence is zero; so $P=P^{*}$, contrary to the hypothesis. Therefore $B$ is not closed under the star when $P\neq P^{*}$.</p>
 <p><strong>The explicit failure.</strong> Let</p>
 <p>$$
-P=\begin{pmatrix}1&0&-1\\0&1&0\\0&0&0\end{pmatrix}.
+P=\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>Then $P^{2}=P$, $\operatorname{rank}P=2$, and</p>
 <p>$$
-P^{*}=\begin{pmatrix}1&0&0\\0&1&0\\-1&0&0\end{pmatrix}\neq P.
+P^{*}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\-1&amp;0&amp;0\end{pmatrix}\neq P.
 $$</p>
 <p>The corner $B=P M_{3}P$ consists of the matrices with third row zero and third column equal to the negative of the first column, as in §<em>The Compression</em>. The matrix $P^{*}$ has third row $(-1,0,0)$, which is not zero, so $P^{*}\notin B$. Taking $X=P\in B$ gives $X^{*}=P^{*}\notin B$. The star does not preserve the corner.</p>
 <p><strong>The Hermitian case in coordinates.</strong> For $P_{1}=\operatorname{diag}(1,1,0)$, the corner is the upper-left block and the star is the conjugate transpose of the block; the corner is the unital $*$-algebra $M_{2}(\mathbb{C})$ with unit $P_{1}$. The unit is $P_{1}$, not $I$, and the involution fixes it.</p>
@@ -177,36 +177,36 @@ $$</p>
 <p><strong>The embedding.</strong> Choose a basis of $\mathbb{C}^{3}$ adapted to $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In this basis the map</p>
 <p>$$
 \operatorname{inc}:M_{2}(\mathbb{C})\longrightarrow M_{3}(\mathbb{C}),\qquad
-B\longmapsto\begin{pmatrix}B&0\\0&0\end{pmatrix},
+B\longmapsto\begin{pmatrix}B&amp;0\\0&amp;0\end{pmatrix},
 $$</p>
 <p>is an injective algebra homomorphism with image $PMP$, and it is unital onto the corner: $\operatorname{inc}(I_{2})=P$. It is not unital into $M_{3}$, because $\operatorname{inc}(I_{2})=P\neq I$. The unit of the ambient algebra is not the unit of the corner.</p>
 <p><strong>The complement as a quotient direction.</strong> The projection $Q$ is the unit of the complement; the mixed corners are the off-diagonal blocks that connect the two units. The element $Q$ is the image of the identity under the other corner embedding $\mathbb{C}\to M_{3}$, $1\mapsto Q$. The two corner embeddings are the two diagonal blocks of the coarse Peirce decomposition.</p>
 <p><strong>Worked example of the four blocks.</strong> With $P=P_{1}=\operatorname{diag}(1,1,0)$ and $A$ as in §<em>The Inherited Trace and Determinant</em>,</p>
 <p>$$
-PAP=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},\qquad
-PAQ=\begin{pmatrix}0&0&3\\0&0&6\\0&0&0\end{pmatrix},
+PAP=\begin{pmatrix}1&amp;2&amp;0\\4&amp;5&amp;0\\0&amp;0&amp;0\end{pmatrix},\qquad
+PAQ=\begin{pmatrix}0&amp;0&amp;3\\0&amp;0&amp;6\\0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>$$
-QAP=\begin{pmatrix}0&0&0\\0&0&0\\7&8&0\end{pmatrix},\qquad
-QAQ=\begin{pmatrix}0&0&0\\0&0&0\\0&0&9\end{pmatrix}=9Q.
+QAP=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\7&amp;8&amp;0\end{pmatrix},\qquad
+QAQ=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;9\end{pmatrix}=9Q.
 $$</p>
 <p>The four blocks have dimensions $4,2,2,1$; the corner $PMP$ is the $M_{2}$ corner, and the corner $QMQ$ is the line $\mathbb{C}Q$. The element $A$ is the sum of the four blocks.</p>
 <h2 id="the-non-hermitian-idempotent">The Non-Hermitian Idempotent</h2>
 <p><strong>A non-Hermitian idempotent gives the same algebra with a different unit and a different star.</strong></p>
 <p>Take</p>
 <p>$$
-P=\begin{pmatrix}1&0&-1\\0&1&0\\0&0&0\end{pmatrix},
+P=\begin{pmatrix}1&amp;0&amp;-1\\0&amp;1&amp;0\\0&amp;0&amp;0\end{pmatrix},
 \qquad
 P^{2}=P,\qquad \operatorname{rank}P=2,\qquad P^{*}\neq P.
 $$</p>
 <p>Its image is $\operatorname{span}\{e_{1},e_{2}\}$ and its kernel is $\operatorname{span}\{e_{1}+e_{3}\}$, so $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In the adapted basis $(e_{1},e_{2},e_{1}+e_{3})$ the idempotent is $\operatorname{diag}(1,1,0)$, and the corner is again a copy of $M_{2}(\mathbb{C})$.</p>
 <p><strong>The compression of the example.</strong> With $A$ as above,</p>
 <p>$$
-PAP=\begin{pmatrix}-6&-6&6\\4&5&-4\\0&0&0\end{pmatrix}.
+PAP=\begin{pmatrix}-6&amp;-6&amp;6\\4&amp;5&amp;-4\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>In the basis $(e_{1},e_{2})$ of $\operatorname{im}P$ the compressed matrix is</p>
 <p>$$
-\begin{pmatrix}-6&-6\\4&5\end{pmatrix},
+\begin{pmatrix}-6&amp;-6\\4&amp;5\end{pmatrix},
 \qquad
 \det_{P}(PAP)=-30+24=-6,
 \qquad
@@ -215,7 +215,7 @@ $$</p>
 <p>The ambient trace of $PAP$ is also $-1$, and the ambient determinant of $PAP$ is $0$ because the third row vanishes. The compressed determinant is $-6$, nonzero: the compression is invertible in the corner.</p>
 <p><strong>The star does not preserve the corner.</strong> The star of $P$ is</p>
 <p>$$
-P^{*}=\begin{pmatrix}1&0&0\\0&1&0\\-1&0&0\end{pmatrix},
+P^{*}=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\-1&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>which has a nonzero third row and therefore does not lie in $PMP$. The corner of $P$ and the corner of $P^{*}$ are two different four-dimensional subspaces of $M_{3}$; the star exchanges them. The algebra structure is unchanged, but the $*$-structure is not defined on the corner of $P$.</p>
 <p><strong>The Hermitian idempotent next to it.</strong> The Hermitian idempotent with the same image is the orthogonal projection onto $\operatorname{span}\{e_{1},e_{2}\}$, namely $P_{1}=\operatorname{diag}(1,1,0)$. The corner of $P_{1}$ is the upper-left block; the corner of $P$ is a different subspace, but the two corners are isomorphic as algebras and the isomorphism is the change of basis from the adapted basis of $P$ to the standard one. The Hermitian corner is the one that carries the star.</p>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrodynamical Formalism of Quantum Mechanics and Aharonov–Bohm Effect — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Hydrodynamical Formalism of Quantum Mechanics and Aharonov-Bohm Effect.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hydrodynamical-formalism-of-quantum-mechanics-and-aharonovbohm-effect"><strong>Hydrodynamical Formalism of Quantum Mechanics and Aharonov–Bohm Effect</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>69</strong> (1983) 1323, No. 5, May 1983; received 9 December 1982</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Hydrodynamical Formalism of Quantum Mechanics and Aharonov-Bohm Effect-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Hydrodynamical Formalism of Quantum Mechanics and Aharonov-Bohm Effect.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-nodal-set-and-quantized-circulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Hydrodynamical Formalism of Quantum Mechanics and Aharonov-Bohm Effect.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Restates the hydrodynamical formalism with the singular vortex line at its centre, and applies it to the Aharonov–Bohm effect in four field configurations, one of them a magnetic string. The circulation is quantized by single-valuedness of the wave function, and the quantization is carried by nodal lines. The sharpest result is a condition on the field: a flow at rest everywhere exists only if the magnetic field is a string with quantized flux, its vortex line coinciding with the string. The solutions of §§6–7 are computed explicitly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-stress-and-where-the-quantum-sits">The stress, and where the quantum sits</h3>
+<p>With $P=R^{2}$, $\Pi=\nabla S$ and kinetic velocity $\mu v=\Pi-(e/c)A$, the continuity equation is $\dot P+\mathrm{div}(Pv)=0$ and the Euler equation</p>
+<p>$$
+\mu\frac{Dv_i}{Dt}=K_i-\frac{1}{P}\frac{\partial\sigma_{ik}}{\partial x_k},
+\qquad
+\sigma_{ik}=\frac{\hbar^{2}}{4\mu}P\,\frac{\partial^{2}\log P}{\partial x_i\partial x_k},
+\qquad
+K=e\Big(\vec E+\frac{1}{c}[\vec v\times\vec H]\Big),
+$$</p>
+<p>"just the same as the Euler equation DVifDt" "of the usual hydrodynamics except that the isotropic pressure p in the latter is replaced by the internal stress 6ik= 6ki, as POik .". He notes that "the absolute magnitude of $R$ is originally irrelevant for our hydrodynamics", so $\mu P$ is <em>defined</em> as the mass density.</p>
+<p>Everything quantum is in three places: the form of $\sigma_{ik}$, the gradient condition $\Pi=\nabla S$, and the single-valuedness of $\psi=Re^{iS/\hbar}$, which gives $\oint\nabla S\cdot d\vec s=2\pi n\hbar$ on every loop. Around a loop the kinetic circulation is</p>
+<p>$$
+\oint \mu v\cdot d\vec s = 2\pi n\hbar-\frac{e}{c}\Phi ,
+$$</p>
+<p>so the flow carries quantized circulation corrected by the enclosed flux, and where $R$ vanishes the phase may wind without $v$ diverging. §3 and §7 give such vortex lines, on which the velocity is singular while the current and the stress stay regular.</p>
+<h3 id="the-string-field-result">The string-field result</h3>
+<p>Assume the fluid is at rest everywhere, $v=0$, so $\Pi=(e/c)A$ and the vector potential is a gradient. Taking the curl of the field equation forces</p>
+<p>$$
+\vec H(\vec x)=\frac{1}{2}\sum_a r_a\int_L \delta^{3}(\vec x-\vec x(a))\,d\vec x(a),
+$$</p>
+<p><strong>so a magnetic field can coexist with a fluid at rest only if it is concentrated on strings of quantized flux $\Phi_a=(c/e)r_a$, and only if the momentum field's vortex lines coincide with those strings.</strong> Conversely, for a single string of flux $\Phi$ with the vortex line on the same curve,</p>
+<p>$$
+\mu\vec v=\frac{1}{4\pi}\Big(r-\frac{e}{c}\Phi\Big)\int_L \frac{d\vec x'\times(\vec x-\vec x')}{|\vec x-\vec x'|^{3}},
+$$</p>
+<p>which vanishes when $\Phi=(hc/e)n$ and $r=nh$. Then $R$ obeys the field-free equation $-( \hbar^{2}/2\mu)\Delta R+(V-E)R=0$ and</p>
+<p>$$
+\psi=R\exp\Big[\frac{ie}{\hbar c}\int^{\vec x}\vec A\cdot d\vec s\Big].
+$$</p>
+<h3 id="the-configurations">The configurations</h3>
+<p>§6 works out the effect for a uniform field, a cylindrical shell, a finite solenoid and a toroidal field, each time solving for $R$ and reading the phase; §7 gives the stationary solution on a circular magnetic string with its energy. The conclusion is uniform: the density is the field-free density, and the flux enters only through the phase and the quantization condition. Earlier treatments of the effect in this formalism "were not satisfactory with regard to this formalism and possibly led to confusion." "and possibly led to confusion. In".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-magnetic-string-of-quantized-flux-holds-the-fluid-at-rest-and-that-is-the-aharonovbohm-effect">1. A magnetic string of quantized flux holds the fluid at rest, and that is the Aharonov–Bohm effect</h3>
+<p><strong>The idea.</strong> $v\equiv0$ requires the field to be a string of flux $\Phi=n\,hc/e$ with the vortex line on it. The density then solves the field-free problem while the phase winds. The effect gets a hydrodynamical statement with no approximation in it: the fluid does not move and the interference still shifts.</p>
+<p><strong>What it would add.</strong> A mechanism. <em>The Nodal Set and Quantized Circulation</em> (<code>articles_physics/the-nodal-set-and-quantized-circulation.md</code>) establishes that the circulation around a node is $2\pi\hbar$ times the winding and that the current is regular where the velocity is not; its §<em>The vortex ansatz, and what it leaves to the field equation</em> leaves open which field configurations admit a vortex of given winding. Takabayasi answers exactly that, and the answer is a flux quantization.</p>
+<p><strong>Where it lands.</strong> That §, as the worked solution, and <em>The Clebsch Potentials and the Rank of the Vorticity</em> (<code>articles_physics/the-clebsch-potentials-and-the-rank-of-the-vorticity.md</code>) for the gauge reading.</p>
+<p><strong>What stands in the way.</strong> The corpus's fluid is the biquaternionic field's, whose "magnetic field" is the bivector part and whose potential is not an independent gauge field; the translation is short but it is a translation. Ranked first: the result is a condition on the corpus's own field configurations.</p>
+<h3 id="2-the-strings-flux-quantum-is-twice-a-dirac-monopoles-and-the-factor-of-two-is-checkable">2. The string's flux quantum is twice a Dirac monopole's, and the factor of two is checkable</h3>
+<p><strong>The idea.</strong> The unit is $\Phi_0=hc/e$. Dirac's condition $eg=\hbar c/2$ gives a monopole flux $4\pi g=hc/2e$, half the string's. The factor of two is what distinguishes a string from a monopole in the bivector dictionary.</p>
+<p><strong>What it would add.</strong> A numerical anchor. <em>The Electro-Gravimagnetic Field and the Magnetic Charge–Mass Hypothesis</em> (<code>articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code>) and <em>Topological Charge, Self-Duality and the Bogomolny Bound</em> (<code>articles_physics/topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.md</code>) have a monopole hypothesis and a topological sector, but no string with quantized flux and no comparison of the two quanta.</p>
+<p><strong>Where it lands.</strong> The magnetic-charge article's §<em>The Hypothesis</em>, as the string counterpart.</p>
+<p><strong>What stands in the way.</strong> The factor depends on the normalisation of $g$, which differs between conventions by that same factor, and no monopole appears in this paper. Ranked second: cheap and checkable.</p>
+<h3 id="3-the-canonical-momentum-is-a-gradient-and-the-kinetic-velocity-is-not">3. The canonical momentum is a gradient and the kinetic velocity is not</h3>
+<p><strong>The idea.</strong> $\nabla\times\Pi=0$ identically away from nodes, while $\nabla\times\vec v=-(e/\mu c)\vec H$. Quantum mechanically the canonical momentum is irrotational and the kinetic velocity carries the curl; classically it is the reverse.</p>
+<p><strong>What it would add.</strong> The reason behind a corpus title. <em>The Kinetic Momentum: A Bracket That Does Not Close</em> (<code>articles_physics/the-kinetic-momentum-a-bracket-that-does-not-close.md</code>) shows the non-closure in §<em>The Half That Breaks</em>; Takabayasi's identity says what it <em>is</em> in flow language: the kinetic velocity is a gradient plus a rigid rotation proportional to the field, and a rigid rotation cannot be a gradient.</p>
+<p><strong>Where it lands.</strong> That §, as the hydrodynamical reading, and <em>The Vorticity Form and the Irrotational Condition</em>.</p>
+<p><strong>What stands in the way.</strong> In the relativistic corpus the field sits in the connection and not in a curl, so the diagnosis is the non-relativistic shadow of the connection.</p>
+<p>The remainder, one line each. The four configurations of §6 are solved problems with no corresponding corpus article. The circular-string solution of §7 is the working-out of item 1. The remark that the density's normalisation is pure convention belongs with the corpus's scale articles and needs one sentence.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

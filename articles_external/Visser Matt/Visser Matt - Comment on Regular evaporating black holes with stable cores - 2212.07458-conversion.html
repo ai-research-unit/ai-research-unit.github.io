@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on &quot;Regular evaporating black holes with stable cores&quot; — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on Regular evaporating black holes with stable cores - 2212.07458.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comment-on-regular-evaporating-black-holes-with-stable-cores"><strong>Comment on "Regular evaporating black holes with stable cores"</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.07458v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Stefano Liberati, Costantino Pacilio, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 3 June 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Comment on Regular evaporating black holes with stable cores - 2212.07458-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on Regular evaporating black holes with stable cores - 2212.07458.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on Regular evaporating black holes with stable cores - 2212.07458.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This comment disputes a claim that Hawking evaporation stabilises regular black holes against mass inflation. The authors argue that the claim applies the linear perturbation model beyond the regime where it is valid. In that model the Misner–Sharp mass at the inner horizon grows exponentially, and the growth stops only when backreaction invalidates the linear treatment. Whether the later evolution is exponential or polynomial therefore cannot be used as evidence that inflation did not happen. The authors conclude that regular black holes of astrophysical interest remain unstable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-under-review">The claim under review</h3>
+<p>"Regular black holes are generically unstable [due to an effect known] by the name of 'mass inflation'. In [Phys. Rev. D 107 (2023) 024005] it is argued [that this instability can be cured, along with] some concerns a[bout] showing its existence in the first place."</p>
+<h3 id="the-objection">The objection</h3>
+<p>"In a recent work [1], it is argued that the backreaction of Hawking evaporation is [a] relevant factor in the analysis of the stability properties of regular black holes. However in this comment we show that this claim is based on an extrapolation of the mathematical model used beyond its regime of validity."</p>
+<h3 id="what-follows-once-a-model-is-chosen">What follows once a model is chosen</h3>
+<p>"Regardless of the model selected, there is an exponential mass inflation of the Misner–Sharp mass that continues until backreaction cannot be ignored, and thus the linear approximation breaks down (in complete parallelism with the Ori model). If one insists in using the (unphysical) linear approximation beyond this point, the Misner–Sharp mass is always divergent but different background geometries can display different degrees of divergence (ranging from exponential to polynomial)."</p>
+<h3 id="the-core-of-the-argument">The core of the argument</h3>
+<p>"While from a mathematical perspective it is always possible to push the linear model to [its] ultimate consequences, such an exercise has clearly no physical relevance." And: "that the late-time behavior is not exponential does not mean that mass inflation has not taken place".</p>
+<h3 id="the-quantitative-statement">The quantitative statement</h3>
+<p>If the Misner–Sharp mass is linear in the asymptotic mass,</p>
+<p>$$M(v,r)=g_1(r)\,m(v)+g_2(r),$$</p>
+<p>then the mass at the inner horizon behaves as</p>
+<p>$$M_+\sim\frac{e^{|\kappa_-|v}}{v^{\gamma+1}},$$</p>
+<p>where $\kappa_-$ is the surface gravity of the inner horizon.</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"by the end of the exponential phase the backreaction on the geometry is already very large, and the linear approximation at the core of the model can no longer be trusted." Hence "the backreaction of perturbations cannot be ignored, and the linear model cease[s] to be valid."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-cauchy-horizon-is-where-the-model-ends">1. A Cauchy horizon is where the model ends</h3>
+<p><strong>The idea.</strong> The instability is not a prediction about a late-time geometry; it is a statement that the linear treatment fails at a known place.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that a horizon is a global object and that its properties depend on structure the algebra does not carry. The inner horizon is the sharpest example: the mass function there is fixed by the global evolution, not by local data. The article should use the Cauchy horizon as its worked case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on the Killing horizon.</p>
+<p><strong>What stands in the way.</strong> The argument is about perturbation theory in general relativity and does not invoke the framework. Ranked first, because it is the best available illustration of the article's thesis.</p>
+<h3 id="2-extrapolating-past-validity">2. Extrapolating past validity</h3>
+<p><strong>The idea.</strong> A disagreement can be about the range of a model, not about its equations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records algebraic obstructions. This is a different kind of obstruction: the algebra is fine, and the use of it is out of range. The catalogue should have a category for results that hold only inside a stated regime.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> It is a category rather than an entry. Ranked second.</p>
+<h3 id="3-regularity-does-not-buy-stability">3. Regularity does not buy stability</h3>
+<p><strong>The idea.</strong> Removing the singularity leaves the inner horizon, and the inner horizon is unstable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats singularities as an obstacle. This comment shows that avoiding the singularity creates a different problem, so the two cannot be traded. A proposal that removes one should be asked what it does about the other.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on curvature.</p>
+<p><strong>What stands in the way.</strong> The trade-off is argued for a class of metrics, not in general. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

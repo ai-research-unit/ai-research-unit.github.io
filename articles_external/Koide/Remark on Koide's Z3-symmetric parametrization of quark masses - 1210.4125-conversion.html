@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remark on Koide&#x27;s Z3-symmetric parametrization of quark masses — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Remark on Koide&#x27;s Z3-symmetric parametrization of quark masses - 1210.4125.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remark-on-koides-z3-symmetric-parametrization-of-quark-masses"><strong>Remark on Koide's Z3-symmetric parametrization of quark masses</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1210.4125 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Piotr Żenczykowski</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 October 2012 (v1 11 October 2012)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D 86 (2012) 117303</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Remark on Koide's Z3-symmetric parametrization of quark masses - 1210.4125-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Remark on Koide's Z3-symmetric parametrization of quark masses - 1210.4125.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Remark on Koide's Z3-symmetric parametrization of quark masses - 1210.4125.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Writes every three-mass spectrum in a $Z_3$-symmetric form with three parameters — a scale, a magnitude and a phase — chosen so that the closure is the statement that the magnitude is one and is blind to the phase. It then points out that the phase is a second regularity in the lepton sector: measured, it is $0.2222324$, indistinguishable from $2/9$, and imposing $2/9$ alone predicts the tau mass as well as the closure does. The paper then extracts the phases of the up and down quark sectors from the measured masses and finds them near $2/27$ and $4/27$, which suggests a pattern in hypercharge. That pattern is supported numerically for the leptons and the up quarks, weakly for the down quarks, and its own two formulas do not reproduce its own stated sum rule.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-parametrisation">The parametrisation</h3>
+<p>$$
+\sqrt{m_j}=\sqrt{M_f}\left(1+\sqrt2\,k_f\cos\left(\frac{2\pi j}{3}+\delta_f\right)\right),\qquad j=1,2,3,
+\tag{paper 5}
+$$</p>
+<p>"with appropriately chosen three parameters (here: the overall mass scale $M_f$ and the pattern parameters $k_f$ and $\delta_f$) one can fit any three-particle spectrum, of course. The above choice of parametrization is, however, particularly suited to Koide's formula, since the latter is then independent of parameter $\delta_f$". In these variables the closure reads</p>
+<p>$$
+\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=\frac{1+k_L^2}{3},
+\tag{paper 1}
+$$</p>
+<p>"with $k_L$ equal exactly $1$". The magnitude is bounded, "$0\le k_f\le\sqrt2$", because the bracket must stay non-negative for three real masses.</p>
+<h3 id="the-phase-as-a-second-regularity">The phase as a second regularity</h3>
+<p>From the parametrisation,</p>
+<p>$$
+\frac{1}{\sqrt2}\left(\sqrt{m_2}-\sqrt{m_1}\right)=\sqrt{M_fk_f}\sqrt3\sin\delta_f,\qquad
+\frac{1}{\sqrt6}\left(2\sqrt{m_3}-\sqrt{m_2}-\sqrt{m_1}\right)=\sqrt{M_fk_f}\sqrt3\cos\delta_f,
+\tag{paper 6, 7}
+$$</p>
+<p>so, "independently of the value of $k_L$",</p>
+<p>$$
+\tan\delta_L=\frac{\sqrt3\left(\sqrt{m_\mu}-\sqrt{m_e}\right)}{2\sqrt{m_\tau}-\sqrt{m_\mu}-\sqrt{m_e}} .
+\tag{paper 8}
+$$</p>
+<p>"From the experimental values of Eqs (2, 4) one then calculates: $\delta_L=0.2222324$, which is extremely close to $\delta_L=2/9$. After inverting formula (8) and assuming $\delta_L=2/9$ one can predict the value of $\tau$ mass, given the experimental masses of electron and muon. The result is: $m_\tau=1776.9664$ MeV. This is as good a prediction of the tauon mass as that given by the original Koide's formula."</p>
+<p>"The two predictions of Eqs (3,10) are mutually incompatible, but either of them leads to an excellent prediction for $m_\tau$. They could be made consistent with each other by allowing extremely tiny departures of either $\delta_L$ from $2/9$ or $k_L$ from $1$." The closure's own prediction is $m_\tau=1776.9689$ MeV, from $k_L=1$ with the same electron and muon masses, $m_e=0.510998928(11)$ MeV and $m_\mu=105.65836715(35)$ MeV, against $m_\tau=1776.82\pm0.16$ MeV measured.</p>
+<h3 id="the-scale-remark">The scale remark</h3>
+<p>"The peculiar feature of formula (1) is that it works at a low energy scale and not at some high mass scale (like $M_Z$ or $10^{16}$ GeV). For example, taking the values of charged lepton masses as appropriate at the scale of $M_Z$ ... one finds that $k_L(M_Z)=1.00188$, i.e. it deviates from unity quite significantly. If that value of $k_L$ worked for physical masses it would remove much of the excitement Koide's formula generates." At $\mu=2$ GeV the quarks give $k_D\approx1.08$ and $k_U\approx1.25$, and at $M_Z$, $k_D=1.12$ and $k_U=1.29$; "for neutrinos $\nu$ one estimates directly from experiment that $k_\nu\le0.81$".</p>
+<h3 id="the-quark-phases-and-the-hypercharge-pattern">The quark phases and the hypercharge pattern</h3>
+<p>With $z_k=\sqrt{m_k/m_3}$,</p>
+<p>$$
+\delta_f=\arctan\frac{\sqrt3\left(z_2-z_1\right)}{2-z_2-z_1}.
+\tag{paper 12}
+$$</p>
+<p>Using $m_u=1.7$–$3.3$ MeV, $m_c=1270^{+70}_{-90}$ MeV, $m_t=172000\pm1600$ MeV, $m_d=4.1$–$5.8$ MeV, $m_s=101^{+29}_{-21}$ MeV, $m_b=4190^{+180}_{-60}$ MeV at $2$ GeV, the up sector lands "consistent with $\delta_U=\delta_L/3=2/27$", with small errors "thanks to a huge top quark mass"; the down sector has much larger errors, and only at the low-energy value $m_s\approx160$ MeV does $\delta_D$ appear "close to $2\delta_L/3=4/27$".</p>
+<p>The suggested rule, indexed by weak isospin and hypercharge:</p>
+<p>$$
+\delta\left(I_3=-\tfrac12,Y\right)=\frac19\left(1+|Y|\right),
+\qquad
+\delta\left(I_3=+\tfrac12,Y\right)=\frac19\left(1-|Y|\right),
+\tag{paper 13, 14}
+$$</p>
+<p>"together forming an equally-spaced set and satisfying a lepton-quark sum rule $\delta_L+\delta_\nu=\delta_U+\delta_D$."</p>
+<p><strong>Check of the paper's own numbers.</strong> Equations (13) and (14) give $\delta_L=2/9$ (lepton, $Y=1$), $\delta_D=4/27$ (down, $Y=1/3$) and $\delta_U=1/27$ (up, $Y=2/3$); taking $|Y|=1$ for the neutrino, as the paper's closing footnote does, also gives $\delta_\nu=0$. But the text quotes $\delta_U=\delta_L/3=2/27$. With the printed values the sum rule reads $2/9=5/27$, which is false; it holds only with $\delta_U=2/27$, the value the text uses, and only that value makes the four phases $0,\ 2/27,\ 4/27,\ 6/27$ equally spaced. So one of the two printed statements is wrong, and the paper does not say which. This is recorded here as found, not repaired.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-second-parameter-and-a-second-prediction-of-the-tau-mass">1. A second parameter, and a second prediction of the tau mass</h3>
+<p><strong>The idea.</strong> A <strong>formula and a number</strong>: in the $Z_3$ form the closure is $k_f=1$ and is independent of the phase $\delta_f$; the phase is then measured, $\delta_L=0.2222324$, against $2/9=0.2222222$, and imposing it alone gives $m_\tau=1776.9664$ MeV, as good as the closure's $1776.9689$ MeV, the two being mutually exclusive.</p>
+<p><strong>What it would add.</strong> The corpus treats the closure as one number and does not know that the same triple supports a second, independent regularity of comparable precision. That matters for status: two coincidences of $10^{-5}$ in one triple are much less likely than one, so the case for a mechanism strengthens, while the case for "either rule, not both" weakens any single-parameter story.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, where the algebra is set out, and §9, which lists what a fourth rung would need.</p>
+<p><strong>What stands in the way.</strong> The two regularities are not independent in the algebraic sense — $k$ and $\delta$ are coordinates on the same two-dimensional space of triples, so any triple that fixes one number leaves the other free and a second coincidence is expected, not surprising. The honest import is the pair of numbers and the incompatibility, not a claim of two miracles.</p>
+<h3 id="2-the-phases-as-a-function-of-hypercharge">2. The phases as a function of hypercharge</h3>
+<p><strong>The idea.</strong> A <strong>conjecture with a formula</strong>: the phase of each sector is $\delta=(1+|Y|)/9$ for $I_3=-\frac12$ particles and $\delta=(1-|Y|)/9$ for $I_3=+\frac12$ particles, giving $2/9$, $4/27$, $2/27$ and $0$, and a lepton–quark sum rule.</p>
+<p><strong>What it would add.</strong> The corpus has no rule that ties a mass-matrix parameter to a Standard Model quantum number. This one does, across four sectors, with $2/9$, $4/27$ and $0$ as the outputs. If it held, a flavour phase would be a function of hypercharge, which is a statement the corpus's framework can host: hypercharge is already the label that fixes the coupling pattern in <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, as a candidate rule for the phase, and the Yukawa article for the quantum-number assignment.</p>
+<p><strong>What stands in the way.</strong> The evidence is one clean sector (leptons), one moderate (up), one poor (down, where the value depends on choosing $m_s\approx160$ MeV, above the modern range), and one unmeasured (neutrinos). The paper's own formulas contradict its own quoted values (see the check above), so the rule as printed is not even self-consistent. Against the corpus's rule of not adopting numerology, this stays outside until the down sector is decisive.</p>
+<h3 id="3-the-bound-on-the-magnitude-parameter">3. The bound on the magnitude parameter</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: in the $Z_3$ form the magnitude obeys $0\le k_f\le\sqrt2$, the upper end being where one of the three masses reaches zero.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §2.1 has $Q\le1$; the $Z_3$ bound says the same thing in the coordinates in which the closure is $k=1$, and it locates the degenerate point at $k=0$ and the hierarchical endpoint at $k=\sqrt2$. It gives the section a coordinate system in which both endpoints and the target are single numbers, which the current $Q$ does not.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, beside the circle.</p>
+<p><strong>What stands in the way.</strong> It is a reparametrisation of the bound already proved, so it adds coordinates and not content; the corpus's §3 already says the circle is Koide, and this would be a second such note.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The $M_Z$ value $k_L=1.00188$ and the $2$ GeV quark values $k_D\approx1.08$, $k_U\approx1.25$ are the running ratios, computed in the same years by Li–Ma and Xing–Zhang and treated here as motivation. The Rosen construction, which keeps all $\delta_f=2/9$ and all $k_f=1$ and then breaks the parametrisation, is mentioned and not used. The neutrino caveat, that a Majorana term need not realise the $m_1=m_2&lt;m_3$ pattern implied by $\delta=0$, is a remark.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-cft-phase-transitions-and-criticality-for-charged-ads-black-holes"><strong>Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2112.14848v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wan Cong, David Kubizňák, Robert B. Mann, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 August 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>38 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes - 2112.14848-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes - 2112.14848.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic CFT Phase Transitions and Criticality for Charged AdS Black Holes - 2112.14848.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Studies the boundary conformal field theory dual to the extended thermodynamics of charged anti-de Sitter black holes, with the central charge $C$ and its chemical potential $\mu$ included as a conjugate pair beside temperature–entropy, potential–charge and pressure–volume. All canonical ensembles of the CFT are enumerated, and their phase structure worked out. Only the ensemble with fixed charge, volume and central charge shows critical behaviour; a new zeroth-order transition is found between a low-entropy and a high-entropy phase in the fixed-$(Q,V,\mu)$ ensemble.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-variables">The variables</h3>
+<p>The four pairs are "$\{(T,S),(\tilde\Phi,\tilde Q),(p,V),(\mu,C)\}$", each dual to a bulk black-hole quantity. The authors make the point about novelty plainly: "the pair $(\mu,C)$ has been left out in most thermodynamic studies of holographic CFTs up to now. To our knowledge, ours is the first exhaustive study of all possible canonical ensembles of the CFT under this new addition."</p>
+<h3 id="the-phase-structure">The phase structure</h3>
+<p>"Only in the ensemble with fixed $(\tilde Q,V,C)$ did we find critical behaviour." Criticality in the $\tilde Q$–$\tilde\Phi$ plane had been found earlier for four-dimensional holographic CFTs, with mean-field exponents once $\tilde\Phi$ is chosen as order parameter; the new content is criticality in the $C$–$\mu$ plane.</p>
+<h3 id="the-new-transition">The new transition</h3>
+<p>"We discovered a new zeroth-order phase transition in the fixed $(\tilde Q,V,\mu)$ ensemble between a low-entropy (small $S/C$) and a high-entropy (large $S/C$) phase." A zeroth-order transition is a jump in the free energy itself, not in its derivative: a discontinuity without latent-heat-like structure.</p>
+<h3 id="the-limitation-stated">The limitation stated</h3>
+<p>"We have not performed independent computations in the CFT to confirm our results, which is an interesting direction for future work." The whole study is a translation through the dictionary; nothing is computed on the field-theory side directly.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-central-charge-as-a-thermodynamic-variable">1. The central charge as a thermodynamic variable</h3>
+<p><strong>The idea.</strong> $C$ enters as an extensive variable with a conjugate potential $\mu$, and the phase diagram has a direction in $C$–$\mu$ as well as in $T$–$S$ and $p$–$V$. This is a <strong>formula</strong> and a structural claim: the space of states has more axes than the textbook three.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> works in the three-variable space $(M,S,Q)$ plus an imported $PV$ term. The addition of a fourth direction, and the statement that its ensembles differ qualitatively, is a structural fact about thermodynamic state spaces that the article's Smarr section would have to acknowledge.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the extended-thermodynamics subsection.</p>
+<p><strong>What stands in the way.</strong> $C$ is defined holographically as $C\sim L^{d-1}/G$; the corpus has no holographic dual and no central charge. The cost is that the variable can be named but not computed.</p>
+<h3 id="2-a-zeroth-order-transition">2. A zeroth-order transition</h3>
+<p><strong>The idea.</strong> A transition where the free energy jumps, not its slope, appears in a particular ensemble and between phases distinguished by entropy per degree of freedom. This is a <strong>number</strong> claim about a phase diagram.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> discusses entropy as a functional of coarse graining, with no phase structure. A transition controlled by $S/C$ — entropy per degree of freedom — is precisely a statement about that ratio, and would connect the functional to a physical discontinuity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> It requires the ensemble, the free energy and $C$; three imports, each of which the corpus lacks. Ranked third.</p>
+<h3 id="3-ensemble-dependence-of-the-phase-diagram">3. Ensemble dependence of the phase diagram</h3>
+<p><strong>The idea.</strong> Which phases exist, and which transitions occur, depends on which variables are held fixed. This is a <strong>reading</strong> of the whole exercise: the thermodynamics is not a property of the black hole alone but of the black hole plus the ensemble.</p>
+<p><strong>What it would add.</strong> The corpus treats the first law as an identity valid unconditionally. The statement that different ensembles give different physics — including different existence of critical points — is a caution about reading a first law as a complete description.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the caveats.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a statement about ensembles the corpus does not use, useful as a caution. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

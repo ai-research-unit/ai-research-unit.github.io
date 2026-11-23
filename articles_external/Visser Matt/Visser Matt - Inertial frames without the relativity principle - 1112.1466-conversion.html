@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inertial frames without the relativity principle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - 1112.1466.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="inertial-frames-without-the-relativity-principle"><strong>Inertial frames without the relativity principle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1112.1466v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Valentina Baccetti, Kyle Tate, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 26 April 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>51 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Inertial frames without the relativity principle - 1112.1466-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - 1112.1466.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Inertial frames without the relativity principle - 1112.1466.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Von Ignatowsky showed that the relativity principle plus locality, linearity, and isotropy nearly forces the Lorentz or Galilean transformations. So breaking Lorentz symmetry seems to require dropping the relativity principle. The authors do exactly that and keep only linearity. The transformations then form a groupoid rather than a group, which evades the theorem. They derive rules for time and space, for composing velocities, and for energy-momentum, which becomes affine and can be written as a row vector against a column position vector. Two minimal models of violation are constructed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"Ever since the work of von Ignatowsky circa 1910 it has been known (if not always widely appreciated) that the relativity principle, combined with the basic and fundamental physical assumptions of locality, linearity, and isotropy, leads almost uniquely to either the Lorentz transformations of special relativity or to Galileo's transformations of classical Newtonian mechanics."</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>"if one wishes (for whatever reason) to entertain the possibility of Lorentz symmetry breaking within the context of the class of local physical theories, then it seems likely that one will have to abandon (or at the very least grossly modify) the relativity principle."</p>
+<h3 id="the-move">The move</h3>
+<p>"Working within the framework of local physics, we reassess the notion of space-time transformations between inertial frames in the absence of the relativity principle, arguing that significant and nontrivial physics can still be extracted as long as the transformations are at least linear."</p>
+<h3 id="the-evasion">The evasion</h3>
+<p>"An interesting technical aspect of the analysis is that the transformations now form a groupoid /pseudo-group — it is this technical point that permits one to evade the von Ignatowsky argument."</p>
+<h3 id="the-derived-rules">The derived rules</h3>
+<p>"Even in the absence of a relativity principle we can (assuming locality and linearity) nevertheless deduce clear and compelling rules for the transformation of space and time, rules for the composition of 3-velocities, and rules for the transformation of energy and momentum."</p>
+<h3 id="the-asymmetry-that-appears">The asymmetry that appears</h3>
+<p>"the energy-momentum transformations are in general affine, but may be chosen to be linear, with the 4-component vector $P=(E,-p^T)$ transforming as a row vector, while the 4-component vector of space-time position $X=(t,x^T)^T$ transforms as a column vector."</p>
+<h3 id="the-recovery-stages">The recovery stages</h3>
+<p>"there are a number of distinct stages by which Lorentz invariance can be recovered — by successively imposing linearity, then isotropy, then reciprocity, and finally the relativity principle."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"the situation is not hopeless — even in the absence of a relativity principle quite a lot can still be said regarding the transformation properties between inertial frames, the combination of 3-velocities, the transformation of 4-momenta, and the interplay between the energy-momentum relations for on-shell particles and the transformation properties between inertial frames."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-boosts-can-form-a-groupoid">1. Boosts can form a groupoid</h3>
+<p><strong>The idea.</strong> Without the relativity principle, transformations between frames are not a group, and this is what allows violation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code> treats the boost as a Möbius transformation, which relies on group structure. The target should state that this is a consequence of the relativity principle, not of linearity alone.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The paper does not compute aberration. Ranked first, because it identifies the hidden assumption in the target's main tool.</p>
+<h3 id="2-position-and-momentum-transform-differently">2. Position and momentum transform differently</h3>
+<p><strong>The idea.</strong> Momentum is a dual vector and may transform affinely while position stays a column vector.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code> composes boosts for coordinates. If momentum transforms differently from position, the composition laws for the two must be derived separately, which the target does not do.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>, in the section on composition.</p>
+<p><strong>What stands in the way.</strong> The distinction arises only when the relativity principle is dropped. Ranked second.</p>
+<h3 id="3-lorentz-invariance-comes-back-in-stages">3. Lorentz invariance comes back in stages</h3>
+<p><strong>The idea.</strong> Linearity, isotropy, reciprocity, and the relativity principle each add a piece.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what would count as evidence for a symmetry. A staged recovery gives a checklist of which experiments test which assumption, which is more useful than a single verdict.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> The stages are mathematical, not experimental. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

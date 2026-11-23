@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoupling Theorem and Effective Quantum Gravity (Lecture 1) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Decoupling theorem and Quantum gravity 00-Lect-01-decoupling-1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="decoupling-theorem-and-effective-quantum-gravity-lecture-1"><strong>Decoupling Theorem and Effective Quantum Gravity (Lecture 1)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>lecture notes, minicourse</td>
+</tr>
+<tr>
+<td>author</td>
+<td>Ilya L. Shapiro (Universidade Federal de Juiz de Fora)</td>
+</tr>
+<tr>
+<td>occasion</td>
+<td>ICTP-SAIFR/IFT-UNESP, 20–24 May 2024</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — lecture notes, minicourse</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ilya L. Shapiro (Universidade Federal de Juiz de Fora)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Decoupling theorem and Quantum gravity 00-Lect-01-decoupling-1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Decoupling theorem and Quantum gravity 00-Lect-01-decoupling-1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Decoupling theorem and Quantum gravity 00-Lect-01-decoupling-1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The first lecture of a minicourse on decoupling in effective quantum gravity. It sets out the programme: decoupling at the classical level, nonlocal form factors from Feynman diagrams, the ultraviolet and infrared limits, quantum decoupling, the extraction of form factors in semiclassical gravity by a heat-kernel solution, the renormalisation group in the physical setting, and the running of the cosmological and Newton constants with its implications for the trace anomaly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-syllabus-as-printed">The syllabus, as printed</h3>
+<p>"Decoupling at the classical level. Nonlocal form factors from Feynman diagrams. High energy (UV) and low-energy (IR) limits. Quantum decoupling. Extracting form factors in semiclassical gravity. Derivation using heat-kernel solution. Renormalization group in the physical setting. On the running of cosmological (CC) and Newton constants. Implications for trace (conformal) anomaly."</p>
+<p>That list is the lecture's whole structure, and the order is the argument: decoupling is a statement about limits, the limits are computed from form factors, the form factors are got from a heat kernel, and only then does the running of constants make sense.</p>
+<h3 id="the-reference-point">The reference point</h3>
+<p>The anchor is "Appelquist and Carazzone (AC) decoupling theorem" — the statement that heavy particles drop out of low-energy physics except through renormalisation of the light couplings. The lecture's question is what becomes of that statement when the heavy field is the graviton.</p>
+<h3 id="the-claimed-content-of-the-method">The claimed content of the method</h3>
+<p>"Extracting form factors in semiclassical gravity ... Derivation using heat-kernel solution" — the form factors are not guessed but computed from the heat kernel of the relevant operator, which is the technical core the slides build towards.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-decoupling-is-a-statement-about-limits-not-about-particles">1. Decoupling is a statement about limits, not about particles</h3>
+<p><strong>The idea.</strong> The theorem says that a heavy field's effects at low energy reduce to a renormalisation of the light sector's parameters. It is a claim about the shape of the low-energy effective action, not about the existence of the heavy particle.</p>
+<p><strong>What it would add.</strong> A precise form of the corpus's own the high scales drop out claims, which the asymptotic-freedom article asserts through the running of one coupling. Decoupling gives the general reason: every heavy field leaves only a local operator behind.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code>, at the step where heavy modes are integrated out.</p>
+<p><strong>What stands in the way.</strong> The corpus's running is computed in a fixed background; decoupling in gravity needs a statement about the metric itself fluctuating, which the corpus's framework does not quantise.</p>
+<h3 id="2-the-cosmological-constant-runs-and-that-is-a-problem">2. The cosmological constant runs, and that is a problem</h3>
+<p><strong>The idea.</strong> If $\Lambda$ runs with scale, its observed value is a low-energy quantity and the question becomes why it is small at that scale rather than why it is small at all.</p>
+<p><strong>What it would add.</strong> A sharper statement of the cosmological-constant problem than the corpus's hierarchy discussion: not a fine tuning at one scale but a running between two.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no renormalisation group for a dimensionful constant carried by the algebra; the running would have to be defined before the statement can be made.</p>
+<p>These are lecture slides: the syllabus, the decoupling reference and the heat-kernel method are stated, and the computations are left to the lecture.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

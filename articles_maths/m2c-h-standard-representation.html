@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The model.</strong> The quaternion algebra embeds in the $2\times2$ complex matrices as the four-real-dimensional subspace</p>
 <p>$$
-\mathsf{M}_2(\mathbb{H})=\left\{\begin{pmatrix}a&b\\-\overline{b}&\overline{a}\end{pmatrix}:a,b\in\mathbb{C}\right\},
+\mathsf{M}_2(\mathbb{H})=\left\{\begin{pmatrix}a&amp;b\\-\overline{b}&amp;\overline{a}\end{pmatrix}:a,b\in\mathbb{C}\right\},
 $$</p>
 <p>and the embedding is multiplicative. This article is the complex model of the quaternion category: the model of size two over $\mathbb{C}$, distinguished from its companion pair $M_4(\mathbb{R})_{\mathbb{H}_L}$, of size four over $\mathbb{R}$.</p>
 <p><strong>Why the complex field is unavoidable.</strong> There is no faithful $2\times2$ real model. A faithful real representation of degree two would embed a four-dimensional algebra into a four-dimensional algebra and hence be an isomorphism, and $M_2(\mathbb{R})$ has zero divisors while $\mathbb{H}$ does not. So the quaternion category is the first in Part VI where the model needs a larger scalar field, and the price is that the model is an embedding and not an isomorphism: the image has real dimension four inside the eight real dimensions of $M_2(\mathbb{C})$.</p>
@@ -98,15 +98,15 @@ $$</p>
 <p>fixed on the four units by</p>
 <p>$$
 \mathsf{M}_2(e_t)=I_2,\quad
-\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\quad
-\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
-\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},\quad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\quad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix}.
 $$</p>
 <p><strong>The name.</strong> The three imaginary images are $-i$ times the <strong>Pauli matrices</strong></p>
 <p>$$
-\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
-\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\sigma_1=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&amp;-i\\i&amp;0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},
 \qquad\text{so that}\qquad
 \mathsf{M}_2(\vec e_k)=-i\sigma_k ,
 $$</p>
@@ -117,17 +117,17 @@ $$
 whereas the opposite overall sign would give $+i\sigma_3$ for the product and lose the relation $\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_z)$. The factor and the signs are the algebra read in matrices, not conventions laid on it.</p>
 <p><strong>The dictionary.</strong> On a general element,</p>
 <p>$$
-\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\ -iq_x+q_y&q_t+iq_z\end{pmatrix}
-=\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix},
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-iq_z&amp;-iq_x-q_y\\ -iq_x+q_y&amp;q_t+iq_z\end{pmatrix}
+=\begin{pmatrix}z&amp;w\\-\overline{w}&amp;\overline{z}\end{pmatrix},
 \qquad z=q_t-iq_z,\quad w=-q_y-iq_x .
 $$</p>
 <p>Two complex numbers $z,w$ carry the four real parameters, and the second row is not free: it is the conjugate of the first row, with a sign. That is the whole content of the embedding.</p>
 <p><strong>The check.</strong> The three images of the pure units satisfy the quaternion relations: squaring gives $-I_2$ three times, and multiplying gives $\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_z)$ together with its two cyclic variants. The three relations generate the algebra, so the real-linear extension is multiplicative.</p>
 <p><strong>Theorem (the image is a real form).</strong> The image is the subspace of the displayed shape, and it is exactly the fixed set of the anti-linear involution</p>
 <p>$$
-\varsigma(A)=J\overline{A}J^{-1},\qquad J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
+\varsigma(A)=J\overline{A}J^{-1},\qquad J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> For $A=\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix}$ one computes $J\overline{A}J^{-1}=A$; conversely the equation $J\overline{A}J^{-1}=A$ reads $A_{11}=\overline{A_{22}}$ and $A_{21}=-\overline{A_{12}}$, which is the displayed shape.</p>
+<p><strong>Proof.</strong> For $A=\begin{pmatrix}z&amp;w\\-\overline{w}&amp;\overline{z}\end{pmatrix}$ one computes $J\overline{A}J^{-1}=A$; conversely the equation $J\overline{A}J^{-1}=A$ reads $A_{11}=\overline{A_{22}}$ and $A_{21}=-\overline{A_{12}}$, which is the displayed shape.</p>
 <p>The involution $\varsigma$ is conjugate-linear and squares to the identity, so it is a real structure on $M_2(\mathbb{C})$, and the quaternion algebra is its fixed algebra:</p>
 <p>$$
 M_2(\mathbb{C})=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C},\qquad
@@ -239,7 +239,7 @@ $$</p>
 <p><strong>The unit criterion.</strong> An element is invertible exactly when its matrix is invertible, which here is exactly when it is nonzero; the group of invertibles is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, and its image is $\mathsf{M}_2(\mathbb{H})\setminus\{0\}$. The determinant is multiplicative, so the invertibles of norm one form the subgroup of matrices of determinant one inside the image, which is the group $SU(2)$ of the section on the norms.</p>
 <p><strong>What the determinant hides.</strong> A definite determinant cannot show the difference between the quaternion algebra and the matrix algebra in the way the indefinite one did, because on a definite form all nonzero vectors look alike. The structures that the split case read off the null cone — the minimal left ideals, the rulings, the projective geometry — have no counterpart here; what replaces them is the spectral decomposition, which the split case could not make uniform precisely because its discriminant changes sign.</p>
 <h2 id="the-spectral-projectors">The Spectral Projectors</h2>
-<p><strong>The characteristic polynomial.</strong> The matrix of the image is $\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix}$, so</p>
+<p><strong>The characteristic polynomial.</strong> The matrix of the image is $\begin{pmatrix}z&amp;w\\-\overline{w}&amp;\overline{z}\end{pmatrix}$, so</p>
 <p>$$
 \chi_A(\lambda)=\lambda^{2}-2\operatorname{Re}(z)\,\lambda+\bigl(|z|^{2}+|w|^{2}\bigr)
 =\lambda^{2}-2q_t\lambda+N(\tilde q).
@@ -294,7 +294,7 @@ $$</p>
 <p><strong>The reading.</strong> The projectors are rank one, of trace one and determinant zero, and they are <strong>orthogonal</strong> projections, which the split-quaternion projectors were not: there the trace form was indefinite and the two eigenlines were not orthogonal. The spectral theorem applies to the whole image, and the eigenvalues are exactly the two numbers $q_t\pm i\lVert\vec v\rVert$.</p>
 <p><strong>The diagonalising matrix.</strong> The eigenvector of $\lambda_+=q_t+i\lVert\vec v\rVert$ is $\begin{pmatrix}w\\ \lambda_+-z\end{pmatrix}$, and the eigenvector of $\lambda_-$ is the same with $\lambda_-$ in place of $\lambda_+$. The matrix</p>
 <p>$$
-S=\begin{pmatrix}w&w\\ \lambda_+-z&\lambda_--z\end{pmatrix},
+S=\begin{pmatrix}w&amp;w\\ \lambda_+-z&amp;\lambda_--z\end{pmatrix},
 \qquad
 \det S=-2i\lVert\vec v\rVert\,w,
 $$</p>
@@ -307,7 +307,7 @@ $$</p>
 \qquad
 \mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\,I_2 .
 $$</p>
-<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix}$ is $\begin{pmatrix}\overline{z}&-w\\ \overline{w}&z\end{pmatrix}$, which is the conjugate transpose and is the image of $\tilde q^{*}$; the product identity is the definition of the norm.</p>
+<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}z&amp;w\\-\overline{w}&amp;\overline{z}\end{pmatrix}$ is $\begin{pmatrix}\overline{z}&amp;-w\\ \overline{w}&amp;z\end{pmatrix}$, which is the conjugate transpose and is the image of $\tilde q^{*}$; the product identity is the definition of the norm.</p>
 <p><strong>The inverse.</strong> On a nonzero element,</p>
 <p>$$
 \mathsf{M}_2(\tilde q)^{-1}=\frac{\mathsf{M}_2(\tilde q)^{\dagger}}{N(\tilde q)}=\mathsf{M}_2\bigl(\tilde q^{*}/N(\tilde q)\bigr),
@@ -315,7 +315,7 @@ $$</p>
 <p>so the inverse is again in the image, as it must be.</p>
 <p><strong>The normality.</strong> The two identities $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N I_2$ and $\mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde q)=N I_2$ say that every matrix of the image is <strong>normal</strong> and, more, <strong>conformal</strong>: its two singular values are equal, both $\sqrt N$. The image is therefore not an arbitrary four-dimensional subspace of $M_2(\mathbb{C})$ but a very special one, and the following characterisation records it:</p>
 <p>$$
-\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{>0}\cdot SU(2),
+\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{&gt;0}\cdot SU(2),
 $$</p>
 <p>the cone on the special unitary group. The polar decomposition of a quaternion is then a statement about a matrix: $\mathsf{M}_2(\tilde q)=\sqrt N\,U$ with $U=\mathsf{M}_2(\tilde q)/\sqrt N\in SU(2)$.</p>
 <h2 id="the-norms">The Norms</h2>
@@ -429,13 +429,13 @@ The word is the square of the matrix closed by a trace, and it is the trace form
 <tr>
 <td>complex line $L_x$</td>
 <td>$q_y=q_z=0$</td>
-<td>$A=\begin{pmatrix}a&-ib\\ -ib&a\end{pmatrix}$, $a,b\in\mathbb{R}$</td>
+<td>$A=\begin{pmatrix}a&amp;-ib\\ -ib&amp;a\end{pmatrix}$, $a,b\in\mathbb{R}$</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>complex line $L_y$</td>
 <td>$q_x=q_z=0$</td>
-<td>$A=\begin{pmatrix}a&-b\\ b&a\end{pmatrix}$, a scaled rotation</td>
+<td>$A=\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix}$, a scaled rotation</td>
 <td>$2$</td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ $$</p>
 <li>The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is invertible and the rank is two or zero.</li>
 <li>The discriminant is $-4\lVert\vec v\rVert^{2}$, so the eigenvalues are the conjugate pair $q_t\pm i\lVert\vec v\rVert$ and every non-scalar element is diagonalisable.</li>
 <li>The spectral projectors are $\tfrac12(I_2\mp i\mathsf{M}_2(u))$, Hermitian, rank one, orthogonal, they are the images of the idempotents $\tfrac12(e_t\mp iu)$ of the complexified algebra, and $P_\pm$ belongs to $\lambda_\pm$.</li>
-<li>The adjugate is the conjugate transpose, every element of the image is conformal normal, and $\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{>0}\cdot SU(2)$.</li>
+<li>The adjugate is the conjugate transpose, every element of the image is conformal normal, and $\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{&gt;0}\cdot SU(2)$.</li>
 <li>Three forms coexist: the determinant, a quadratic form of inertia $(4,0)$, equal to the norm and multiplicative; the trace form, of inertia $(1,3)$ and invariant under the inner automorphisms; the Frobenius form $\operatorname{tr}(A^{\dagger}B)$, positive definite and Hermitian, twice the restriction of the Euclidean form.</li>
 <li>The Hermitian part of an element of the image is scalar, and the Hermitian/anti-Hermitian splitting is the splitting by trace.</li>
 <li>The four brackets collapse to two, $H=N$ and $K=P$, and the display is the real slice of the biquaternion $\mathsf{M}_2$ at $Q_\mu=q_\mu$.</li>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constraining transmission and reflection probabilities by using the Miller–Good transformation and its applications — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraining transmission and reflection probabilities by using the Miller-Good…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constraining-transmission-and-reflection-probabilities-by-using-the-millergood-transformation-and-its-applications"><strong>Constraining transmission and reflection probabilities by using the Miller–Good transformation and its applications</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1301.7516v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 31 January 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Constraining transmission and reflection probabilities by using the Miller-Good transformation - 1301.7516-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraining transmission and reflection probabilities by using the Miller-Good transformation - 1301.7516.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraining transmission and reflection probabilities by using the Miller-Good transformation - 1301.7516.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper uses a change of variables of Miller–Good type to turn the one-dimensional scattering equation into a different equation for a different potential. Because the transformation preserves the scattering amplitude, a bound proved for the transformed problem transfers back to the original. The authors use this to improve on a previous bound for transmission probabilities, and they derive a result that is close to the semiclassical barrier-penetration estimate.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-subject">The subject</h3>
+<p>The paper is about "transmission through and reflection from a [barrier and the] related issue of particle production from a pa[rametric oscillator]". There is "considerable general interest in quantum phys[ics] [in bounds] on quantum transmission probabilities, [in grey]body factors of a Schwarzschild black h[ole]".</p>
+<h3 id="the-method">The method</h3>
+<p>"we report a way of using the Mil[ler–Good transformation to map the scattering] equation to a final equation for a diff[erent potential, so that a] previous bound [can be improved]. We then apply this gene[ral result to] derive a rigorous bound that is 'as clo[se as possible to]' barrier penetration."</p>
+<h3 id="what-the-bounds-are-not">What the bounds are not</h3>
+<p>"The fundamental bounds presented in this note are generally not 'WKB-like' — only for one particular special case has it proved useful to separate the region of integration into classically allowed and classically forbidden regions."</p>
+<h3 id="the-open-question">The open question</h3>
+<p>"In fact, in this WKB-like case it still seems that the bound we have derived is sub-optimal, and it is far from clear how closely these bounds might ultimately be related to WKB estimates of the transmission probabilities."</p>
+<h3 id="the-translation-to-particle-production">The translation to particle production</h3>
+<p>"if one works with the formally equivalent problem of a parametric oscillator in the time domain then the relevant differential equation is"</p>
+<p>$$\ddot u(t)+k(t)^2u(t)=0,\qquad (paper\ 45)$$</p>
+<p>"and instead of asking questions about transmission amplitudes and probabilities one is naturally driven to ask formally equivalent questions about Bogoliubov coefficients and particle production."</p>
+<h3 id="the-dictionary-between-the-two-problems">The dictionary between the two problems</h3>
+<p>"The key translation step is to realize that there is an equivalence"</p>
+<p>$$T\leftrightarrow\frac{1}{1+N},\qquad N\leftrightarrow\frac{1-T}{T}.\qquad (paper\ 46)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-change-of-variables-preserves-the-answer">1. A change of variables preserves the answer</h3>
+<p><strong>The idea.</strong> A scattering problem can be replaced by another with the same transmission amplitude, so a bound on the second is a bound on the first.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code> solves fixed potentials and composes transfer matrices. It does not use transformations between problems. Adding this would let the article derive bounds for potentials it cannot solve, which is the natural next step for a scattering subcategory.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code>, in the section on the transfer matrix.</p>
+<p><strong>What stands in the way.</strong> The transformation is analytic and outside the algebra, so the article could use the method but not the algebra's language. Ranked first, because it extends the article's method directly.</p>
+<h3 id="2-transmission-and-particle-number-are-the-same-question">2. Transmission and particle number are the same question</h3>
+<p><strong>The idea.</strong> The dictionary $T\leftrightarrow 1/(1+N)$ makes a scattering bound a bound on particle creation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> treats particle creation separately from scattering. This exact correspondence says the two are one problem in different coordinates. That would consolidate two subcategories, and the article should at least record the correspondence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The equivalence holds for the one-dimensional time-dependent problem specifically. Ranked second.</p>
+<h3 id="3-a-bound-need-not-be-semiclassical">3. A bound need not be semiclassical</h3>
+<p><strong>The idea.</strong> The new bounds do not come from the WKB approximation and are rigorous.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> produces a spectrum that is semiclassical in character. A rigorous non-WKB bound would let it attach an error estimate to a result that currently stands alone.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the derivation of the spectrum.</p>
+<p><strong>What stands in the way.</strong> The bound is for a one-dimensional barrier and would need adapting. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

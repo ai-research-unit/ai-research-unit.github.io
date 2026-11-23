@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawking-like radiation does not require a trapped region — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation does not require a trapped region - gr-qc_0607008.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hawking-like-radiation-does-not-require-a-trapped-region"><strong>Hawking-like radiation does not require a trapped region</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0607008v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 July 2006 (dated 22 June 2006)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Hawking-like radiation does not require a trapped region - gr-qc_0607008-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation does not require a trapped region - gr-qc_0607008.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation does not require a trapped region - gr-qc_0607008.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Using simple acoustic models, the authors show that a stationary Planckian emission of quasi-particles does not need a trapped region. A supersonic flow is not required, nor even a sonic point at finite laboratory time. It suffices that a sonic point develops in the asymptotic future at a sufficient rate. They also note that the relevant surface gravity is a coarse-grained, averaged quantity, and use this to sketch a collapse scenario in which the stellar surface never crosses its Schwarzschild radius.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"By constructing simple geometric acoustic models, we obtain a somewhat unexpected result: We show that in order to obtain a stationary and Planckian emission of quasi-particles, it is not necessary to create a trapped region in the acoustic spacetime (corresponding to a supersonic regime in the fluid flow)."</p>
+<h3 id="the-minimal-condition">The minimal condition</h3>
+<p>"It is sufficient to set up a dynamically changing flow asymptotically approaching a sonic regime with sufficient rapidity in laboratory time."</p>
+<h3 id="the-broader-reading">The broader reading</h3>
+<p>"in order to produce a Hawking-like effect it is neither necessary to generate a supersonic regime (fluid velocity $v$ strictly larger than sound velocity $c$), nor even a sonic point at finite laboratory time. All one needs is that a sonic point develops in the asymptotic future (that is, for $t\to+\infty$) with sufficient rapidity"</p>
+<h3 id="the-technical-worry">The technical worry</h3>
+<p>"The corresponding velocity profiles are characterized by discontinuities in the derivatives, so one might wonder whether they would be amenable to experimental construction, given that the continuum model is only an approximation."</p>
+<h3 id="the-answer-to-the-worry">The answer to the worry</h3>
+<p>"in realistic situations, what is relevant for Hawking radiation is a coarse-grained profile — obtained by averaging over a scale $\Delta$ larger than the one which characterizes the breakdown of the continuum model — which does not contain the unphysical small scale details"</p>
+<h3 id="the-speculative-extension">The speculative extension</h3>
+<p>"In this scenario the complete semiclassical geometry will have neither a trapped region (and so by construction no trapping horizon) nor an event horizon. In this circumstance there would be no trans-Planckian problem, nor information loss associated with the collapse and evaporation of this black hole-like object."</p>
+<h3 id="the-status-of-that-extension">The status of that extension</h3>
+<p>"Although somewhat speculative at this stage we believe it is worthwhile to describe it here."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-radiation-without-trapping">1. Radiation without trapping</h3>
+<p><strong>The idea.</strong> A thermal flux can appear with no trapped region and no horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> assumes horizons organise black hole physics. If radiation needs none, then the article's horizons are one phenomenon among several, not the defining one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The demonstration is in acoustic models. Ranked first, because it questions the article's central object.</p>
+<h3 id="2-surface-gravity-is-coarse-grained">2. Surface gravity is coarse-grained</h3>
+<p><strong>The idea.</strong> The quantity that sets the temperature is an average over a scale, not a local slope.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> defines surface gravity locally. A coarse-grained definition changes the value and needs justification before the article uses a local one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the section on surface gravity.</p>
+<p><strong>What stands in the way.</strong> The averaging scale is chosen by hand. Ranked second.</p>
+<h3 id="3-no-horizon-no-information-loss">3. No horizon, no information loss</h3>
+<p><strong>The idea.</strong> Removing the horizon removes the trans-Planckian problem and the information puzzle with it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats information loss as an obstruction. If it rests on a horizon, it is conditional, and the entry should say so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on information.</p>
+<p><strong>What stands in the way.</strong> The authors call the scenario speculative. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

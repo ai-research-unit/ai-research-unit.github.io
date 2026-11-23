@@ -116,7 +116,7 @@ $$</p>
 <p>while $a v + bL_\varepsilon(v) = a(x + y\varepsilon) + b x\varepsilon = ax + (ay + bx)\varepsilon$. For the square, $L_\varepsilon^2(v) = \varepsilon(\varepsilon v) = \varepsilon^2 v = 0$.</p>
 <p><strong>Theorem (the characteristic polynomial).</strong> In the basis $(1,\varepsilon)$ and with column vectors, the matrix of $L_Q$ is</p>
 <p>$$
-[L_Q]_{(1,\varepsilon)} = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix},
+[L_Q]_{(1,\varepsilon)} = \begin{pmatrix} a &amp; 0 \\ b &amp; a \end{pmatrix},
 $$</p>
 <p>and</p>
 <p>$$
@@ -129,10 +129,10 @@ $$</p>
 <p><em>Proof.</em> The first column is the image of $1$, namely $a + b\varepsilon$, and the second is the image of $\varepsilon$, namely $a\varepsilon$; this gives the matrix. It is upper triangular with diagonal entries $a$, so its characteristic polynomial is $(X-a)^2$. The trace is the sum of the diagonal entries, the determinant is their product, and the discriminant of $(X-a)^2$ is $4a^2 - 4a^2 = 0$.</p>
 <p><strong>Corollary (the eigenspace).</strong> For every $Q$,</p>
 <p>$$
-\dim_R E_a(Q) = \begin{cases} 2, & b = 0, \\ 1, & b\neq0. \end{cases}
+\dim_R E_a(Q) = \begin{cases} 2, &amp; b = 0, \\ 1, &amp; b\neq0. \end{cases}
 $$</p>
 <p><em>Proof.</em> By the theorem, $E_a(Q) = \ker(bL_\varepsilon)$. If $b=0$ the kernel is everything. If $b\neq0$, then $bL_\varepsilon(x + y\varepsilon) = bx\varepsilon$, which vanishes exactly when $x=0$, so the kernel is the line $R\varepsilon = \mathrm{M}$.</p>
-<p><strong>Remark (the matrix conventions).</strong> The matrix $\begin{pmatrix}a&b\\0&a\end{pmatrix}$ often written for $L_Q$ is the matrix in the reversed basis $(\varepsilon,1)$, the matrix-element representation $\mathsf{M}_2(Q)$ of <em>$M_2(R)$ Triangular Representation</em>, and the matrix of left multiplication in the reversed basis. In the column convention and the basis $(1,\varepsilon)$ it is the transpose $\begin{pmatrix}a&0\\b&a\end{pmatrix}$, the regular representation of <em>Dual-Numbers Linear Representations</em>. The characteristic polynomial, trace, determinant and Jordan type are the same in all readings, since the matrices are similar or transposes.</p>
+<p><strong>Remark (the matrix conventions).</strong> The matrix $\begin{pmatrix}a&amp;b\\0&amp;a\end{pmatrix}$ often written for $L_Q$ is the matrix in the reversed basis $(\varepsilon,1)$, the matrix-element representation $\mathsf{M}_2(Q)$ of <em>$M_2(R)$ Triangular Representation</em>, and the matrix of left multiplication in the reversed basis. In the column convention and the basis $(1,\varepsilon)$ it is the transpose $\begin{pmatrix}a&amp;0\\b&amp;a\end{pmatrix}$, the regular representation of <em>Dual-Numbers Linear Representations</em>. The characteristic polynomial, trace, determinant and Jordan type are the same in all readings, since the matrices are similar or transposes.</p>
 <h2 id="the-theorem-universal-spectral-degeneracy">The Theorem: Universal Spectral Degeneracy</h2>
 <p><strong>Spectral regularity is the separation of the two roots of the characteristic polynomial; in $\mathbb{C}_{\mathrm{dln},R}$ there are never two roots to separate.</strong></p>
 <p><strong>Definition (spectrally regular, spectrally degenerate).</strong> An element $Q$ is <strong>spectrally regular</strong> if its characteristic polynomial is squarefree, equivalently if it has two distinct eigenvalues in $R$. It is <strong>spectrally degenerate</strong> if its characteristic polynomial has a repeated root, equivalently if its discriminant vanishes.</p>
@@ -158,7 +158,7 @@ $$</p>
 <p><strong>Definition (minimal polynomial).</strong> The <strong>minimal polynomial</strong> $m_Q$ of $Q$ is the monic polynomial of least degree in $R[X]$ with $m_Q(Q)=0$. Equivalently, it is the monic generator of the kernel of the evaluation map $R[X]\to\mathbb{C}_{\mathrm{dln},R}$, $X\mapsto Q$.</p>
 <p><strong>Theorem (the dichotomy).</strong> For $Q = a + b\varepsilon$,</p>
 <p>$$
-m_Q(X) = \begin{cases} X - a, & b = 0, \\ (X-a)^2, & b\neq0. \end{cases}
+m_Q(X) = \begin{cases} X - a, &amp; b = 0, \\ (X-a)^2, &amp; b\neq0. \end{cases}
 $$</p>
 <p><em>Proof.</em> Since $Q-a = b\varepsilon$, one has $(Q-a)^2 = b^2\varepsilon^2 = 0$. If $b=0$ then $Q-a=0$, so $X-a$ annihilates $Q$ and is of degree one, hence is minimal. If $b\neq0$ then $Q-a\neq0$, so no polynomial of degree one annihilates $Q$; the polynomial $(X-a)^2$ does, and it is therefore minimal.</p>
 <p><strong>Corollary (semisimple and defective).</strong> The following are equivalent:</p>
@@ -174,7 +174,7 @@ $$</p>
 <p><strong>Off the real axis the operator is a single Jordan block, and the block is visible in a basis adapted to the nilpotent part.</strong></p>
 <p><strong>Theorem (the Jordan form).</strong> Let $b\neq0$. In the basis $(\varepsilon,\,b^{-1})$ of $\mathbb{C}_{\mathrm{dln},R}$, the matrix of $L_Q$ is</p>
 <p>$$
-[L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix} = J_2(a).
+[L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a &amp; 1 \\ 0 &amp; a \end{pmatrix} = J_2(a).
 $$</p>
 <p>If $b=0$, the matrix is the scalar matrix $aI$ in every basis.</p>
 <p><em>Proof.</em> For $b\neq0$,</p>
@@ -349,7 +349,7 @@ $$</p>
 <td>the spectrum</td>
 </tr>
 <tr>
-<td>$J_2(a)=\begin{pmatrix}a&1\\0&a\end{pmatrix}$</td>
+<td>$J_2(a)=\begin{pmatrix}a&amp;1\\0&amp;a\end{pmatrix}$</td>
 <td>the Jordan block off the real axis</td>
 </tr>
 <tr>
@@ -365,7 +365,7 @@ $$</p>
 <td>the norm/spectrum sectors: $i$ for the norm, $j$ for spectral regularity</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$</td>
+<td>$\mathsf{M}_2(Q)=\begin{pmatrix}a&amp;b\\0&amp;a\end{pmatrix}$</td>
 <td>the matrix-element representation, the transpose convention of the regular representation</td>
 </tr>
 </tbody>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical Description of Pair Production — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Classical description of pair production - 0301020.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-description-of-pair-production"><strong>Classical Description of Pair Production</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0301020 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v5, 19 March 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Classical description of pair production - 0301020-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Classical description of pair production - 0301020.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Classical description of pair production - 0301020.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Describes pair production without quantum principles. The instrument is a scalar field he calls the $\kappa$-field, which enters the particle action as a position-dependent factor on the mass, so that the effective mass $m_{\rm eff}=m(1+f(q))$ varies along the world line and can change sign. A particle's world line is given an orientation $\varepsilon$, a unit tangent vector; reversing it turns the state into the antiparticle, since the flux density changes sign. Pair production is then a crossing of the region where $m_{\rm eff}^2&lt;0$, which the $\kappa$-field provides. The whole construction is a statistical description of stochastic relativistic particles, not a quantised field.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-action-with-an-orientation">The action with an orientation</h3>
+<p>The particle action is the usual one with the mass replaced by $m\sqrt{1+f(q)}$:
+$$A[q]=\int L\,d\tau,\qquad L=-m^2c^2\sqrt{(1+f(q))\,g_{ik}\dot q^i\dot q^k}-\frac{e}{c}A_k\dot q^k$$
+with $m_{\rm eff}=m(1+f(q))$ and $K=\sqrt{1+f(q)}$, and canonical momentum $p_k=-\frac{mcKg_{ki}\dot q^i}{\sqrt{g_{ls}\dot q^l\dot q^s}}-\frac{e}{c}A_k$. The action is invariant under a reparametrisation $\tau\to\tilde\tau(\tau)$ only while $\partial\tilde\tau/\partial\tau&gt;0$; reversing the orientation breaks that invariance, and Rylov uses the breaking rather than removing it: "The parametrization of the world line is a method of the world line description, and correctly written dynamic equations have not to depend on the method of description." The orientation $\varepsilon$ is a unit vector tangent to the world line, and $\varepsilon_p=\pm1$ labels particle against antiparticle.</p>
+<h3 id="the-math23-field">The $\kappa$-field</h3>
+<p>The field "producing pairs" is what he calls the $\kappa$-field, and its defining property is that it is the log of the density: the wave function of a stochastic particle satisfies $\psi^*\psi=\rho_0e^{2\kappa}$, so $\kappa$ is half the log of the probability density, and its gradient is the drift. In the free case the approximate solution is $$\psi_P(t,{\bf x})=B\Delta^{3/2}\exp\left(-\tfrac{\Delta}{2}({\bf x}-{\bf v}t)^2-i\varepsilon_pE(p)t+i{\bf p}{\bf x}\right),\qquad {\bf v}=\frac{\varepsilon_p{\bf p}}{E(p)}$$ with $B$ constant, $\rho=\psi^*_P\psi_P=\rho_0e^{2\kappa}$, and the flux $j^k$ obtained from it. What the $\kappa$-field does that a force field does not is change the mass: $m_{\rm eff}^2=m^2(1+f)$ is negative in some regions, and in those regions the particle branch and the antiparticle branch exchange roles. The regions with $m_{\rm eff}^2&lt;0$ are plotted for $0.01\le m\le1$ and $p\ge1$. The accounting is kept: the number of stochastic world lines is $N_P=\varepsilon_pE(p)I$ with $I=\int\psi^*_P\psi_P\,d{\bf x}=B^2(\pi/\Delta)^{3/2}$, so the sign of the particle number is the sign of the orientation. Two states with the same $|{\bf p}|$ and opposite $\varepsilon_p$ are a pair, and a region where the effective mass squared goes negative converts one into the other. </p>
+<h3 id="what-this-replaces">What this replaces</h3>
+<p>The conclusion is a claim about priority, not about calculation:"quantum system is a special case of stochastic system, and quantum phenomena can be considered to be a result of some quantum stochasticity, generated by the space-time properties". Pair production he calls "a natural result of the sequential relativistic description of this stochasticity." The statistical description "generates hydrodynamic interpretation of quantum phenomena, which does not coincide, in general, with the interpretation, based on application of quantum principles", and he argues the hydrodynamic statement of the collision problem is the correct one, in place of the $S$-matrix. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-as-a-field-not-a-constant">1. Mass as a field, not a constant</h3>
+<p><strong>The idea.</strong> The mass in the action is multiplied by $\sqrt{1+f(q)}$, a scalar field of position, and the physical mass is the product. Where $f&lt;-1$ the effective mass squared is negative. A <strong>formula</strong> with one new field in it, and the only place in this literature where the mass shell itself is allowed to be crossed. </p>
+<p><strong>What it would add.</strong> The corpus's Fock-space entry records that pair creation is where its construction stops: the two canonical-quantisation articles obtain a mode algebra and then record that a biquaternion Fock space is not built. Rylov's mechanism creates pairs without a mode algebra at all — the pair is a particle and an antiparticle branch meeting where $m_{\rm eff}^2$ changes sign — so it is a second route to the same phenomenon, one that a corpus article could compare against the operator route rather than absorb. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> The $\kappa$-field has no equation of motion in the paper. It is defined through the density, $\psi^*\psi=\rho_0e^{2\kappa}$, which makes it a functional of the state rather than an independent field, and no Lagrangian for $f$ is given; the regions with $m_{\rm eff}^2&lt;0$ are drawn for chosen parameters, not derived. It also arrives from outside: the corpus's mass is a parameter of the algebra's representation, and a position-dependent multiplier would have to be shown to be expressible in $\mathbb{B}$. </p>
+<h3 id="2-the-reverse-madelung-map-as-the-definition-of-the-quantum-state">2. The reverse Madelung map as the definition of the quantum state</h3>
+<p><strong>The idea.</strong> The wave function is not the primary object; the density and the $\kappa$-field are, and the wave function is their exponential. The paper states this as the reason its interpretation differs: the hydrodynamic reading "does not coincide, in general, with the interpretation, based on application of quantum principles".</p>
+<p><strong>What it would add.</strong> The corpus has both directions of this map and treats them as an equivalence — its reverse-Madelung article takes a fluid to a nonlinear wave. Rylov's claim is stronger, that the fluid side is the physical one, and that the phase is a bookkeeping device for the drift. If the corpus adopted that ordering even as a reading, the Born weight would attach to a density rather than to an amplitude, which is a different starting point for the measurement problem.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>.</p>
+<p><strong>What stands in the way.</strong> A density and a drift do not carry the interference that the corpus's algebra carries in the imaginary part, and Rylov restores it by keeping a complex $\psi$ and then reading it as a fluid — the ordering he claims is not visible in his own equations, where $\psi$ is still multiplied and differentiated as a wave function. Nothing in the paper computes a phase-dependent effect from $\rho$ and $\kappa$ alone.</p>
+<h3 id="3-orientation-as-the-particle-antiparticle-label">3. Orientation as the particle-antiparticle label</h3>
+<p><strong>The idea.</strong> A <strong>definition</strong>: the antiparticle is the same world line traversed with the opposite orientation, so $\varepsilon_p=\pm1$ is the whole of the distinction and the sign of the conserved number follows from it.</p>
+<p><strong>What it would add.</strong> The corpus derives charge conjugation from the division ring and gets a map on states; here the label is a geometric orientation of a path, which is a different kind of object and would let the corpus check whether its conjugation acts on the orientation. It also gives the antiparticle a classical trajectory, which the corpus's algebraic treatment does not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is asserted from the sign of $j^0$ and is not shown to be consistent with the corpus's conjugation, which acts on the algebra rather than on a tangent vector. And a classical trajectory for an antiparticle is exactly what the corpus denies it can supply.</p>
+<p>The rank: mass as a field first, because it is the mechanism and it reaches a phenomenon the corpus names as unbuilt; the Madelung ordering second, because the corpus has the map already; the orientation third, because it is a definition that would have to be matched to the corpus's own.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

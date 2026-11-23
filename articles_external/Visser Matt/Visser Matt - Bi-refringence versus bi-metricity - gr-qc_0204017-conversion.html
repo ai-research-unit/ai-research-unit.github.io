@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bi-refringence versus bi-metricity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-refringence versus bi-metricity - gr-qc_0204017.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bi-refringence-versus-bi-metricity"><strong>Bi-refringence versus bi-metricity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>book chapter (Festschrift contribution)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0204017v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Carlos Barceló, Stefano Liberati</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 April 2002 (dated 5 February 2002)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bi-refringence versus bi-metricity - gr-qc_0204017-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-refringence versus bi-metricity - gr-qc_0204017.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bi-refringence versus bi-metricity - gr-qc_0204017.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper separates two notions that are often run together. Bi-refringence means that the two photon polarisations travel at different speeds. Bi-metricity means that they follow null geodesics of two different metrics. The first is generic in nonlinear electrodynamics; the second is not, and holds only when a quartic polynomial factorises into two quadratics. The authors set up a generalised nonlinear electrodynamics with arbitrary external background fields, show that the Fresnel equation is always quartic, and then examine when the quartic factorises. They give an explicit construction that is bi-refringent without being bi-metric, and they argue that in such cases the natural geometric description is pseudo-Finsler rather than Lorentzian. The paper is written as a contribution to a Festschrift for Mário Novello.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-distinction">The distinction</h3>
+<p>"In this article we carefully distinguish the notion of bi-refringence (a polarization-dependent doubling in photon propagation speeds) from that of bi-metricity (where the two photon polarizations 'see' two distinct metrics). We emphasise that these notions are logically distinct, though there are special symmetries in ordinary (3+1)-dimensional nonlinear electrodynamics which imply the stronger condition of bi-metricity."</p>
+<h3 id="the-setting">The setting</h3>
+<p>The Lagrangian is $L_{\rm effective}=L(F_{\mu\nu}(x),B(x))$ (paper 1), where $F_{\mu\nu}$ is the field strength and $B$ stands for "a generic class of external non-dynamical background fields" such as "a refractive index, the 4-velocity of a dielectric" or a gravitational field.</p>
+<h3 id="the-quartic-fresnel-equation">The quartic Fresnel equation</h3>
+<p>"It is easy to demonstrate that the generalized theory is bi-refringent: In (3+1) dimensions the Fresnel equation, the relationship between frequency and wavenumber, is always quartic. It is somewhat harder to show that in some cases (e.g., ordinary nonlinear electrodynamics) the quartic factorizes into two quadratics thus providing a bi-metric theory. Sometimes the quartic is a perfect square, implying a single unique effective metric."</p>
+<h3 id="birefringence-without-bi-metricity">Birefringence without bi-metricity</h3>
+<p>"To wrap up, can we now give a simple explicit example of a model that is birefringent without being bi-metric? Suppose we have a pair of two-forms $J_1$ and $J_2$ with $J_1\not\propto\star J_2$." The resulting Fresnel polynomial</p>
+<p>$$P_4(k)=\Psi^2\eta(k,k)^2-\Psi\,\eta(k,k)[a\,\gamma(J_1k,J_1k)+b\,\gamma(J_2k,J_2k)]+ab[\gamma(J_1k,J_1k)\gamma(J_2k,J_2k)-\gamma(J_1k,J_2k)^2] \qquad (paper\ 84)$$</p>
+<p>does not factorise. Hence: "Bi-metricity is not generic in the set of all birefringent theories."</p>
+<h3 id="beyond-lorentzian-geometry">Beyond Lorentzian geometry</h3>
+<p>"If we consider generalized nonlinear electrodynamics, then because of the presence of additional background fields, the close link between bi-refringence and bi-metricity can be broken — in such situations the Fresnel equation is intrinsically quartic and to naturally describe the geometry one would need to go beyond the notion of Lorentzian geometry and instead introduce the notion of a pseudo–Finsler geometry."</p>
+<h3 id="the-scope-and-its-limits">The scope and its limits</h3>
+<p>"In this Festschrift article we have discussed, on quite general grounds, the phenomenon of bi-refringence and bi-metricity in [generalized] (3+1)-dimensional nonlinear electrodynamics. Our treatment encompass any non-linear electrodynamic theory in interaction with an arbitrary number of external non-dynamical fields characterizing a general medium (for example, a flowing dielectric, external gravitational fields, moving Casimir plates, etc.)." The restriction to 3+1 dimensions is stated in the title of the setting and is essential: the quartic degree is a four-dimensional fact.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-birefringence-is-not-a-metric">1. Birefringence is not a metric</h3>
+<p><strong>The idea.</strong> Two speeds do not imply two geometries. The step from a quartic dispersion relation to a pair of quadratic ones is an extra assumption.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code> assigns a single effective speed $c=1/\sqrt{\epsilon\mu}$ and a single Riemann–Silberstein field. It has no room for a polarisation-dependent speed. This paper says that a generic medium needs two speeds and, in the general case, no metric at all. The media article's first paragraph, where the vacuum is called the limit of the medium, would then have to say that its medium is the non-birefringent special case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, at the definition of $c$.</p>
+<p><strong>What stands in the way.</strong> None in principle. The article can state the restriction in one sentence without changing its body. Ranked first, because it corrects a generality claim the article currently makes.</p>
+<h3 id="2-factorisation-is-an-algebraic-accident">2. Factorisation is an algebraic accident</h3>
+<p><strong>The idea.</strong> The Fresnel polynomial is quartic. It splits into two quadratics only when the coefficients satisfy a special condition, so bi-metricity is a codimension-one accident in the space of theories.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects statements of the form "there is no algebraic object with such-and-such a property". This paper adds a statement of a different kind: an algebraic factorisation that looks structural is contingent. The catalogue should record it, because a reader who sees two metrics in a birefringent theory may assume the pair is forced when it is not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The catalogue is about the biquaternion algebra, and this is about a polynomial in a wave vector, so the entry needs framing as a general algebraic caution. Ranked second.</p>
+<h3 id="3-some-dispersion-relations-are-not-bilinear">3. Some dispersion relations are not bilinear</h3>
+<p><strong>The idea.</strong> A quartic Fresnel equation is not the null cone of any single metric. Describing it needs a direction-dependent metric, a pseudo-Finsler structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> begins from the claim that "curvature cannot reside in the algebra" and that a metric is carried by a frame field. The frame field carries a bilinear form. This paper exhibits a physically motivated dispersion relation that no bilinear form can carry, which marks a limit of the frame route that the article does not currently state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in "What the Flat Machinery Assumes".</p>
+<p><strong>What stands in the way.</strong> The corpus has no Finsler machinery, so the import can only be a stated boundary, not a construction. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithmic construction of static perfect fluid spheres — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Algorithmic construction of static perfect fluid spheres - gr-qc_0306109.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="algorithmic-construction-of-static-perfect-fluid-spheres"><strong>Algorithmic construction of static perfect fluid spheres</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0306109v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 31 March 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; Phys. Rev. D brief report</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Algorithmic construction of static perfect fluid spheres - gr-qc_0306109-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Algorithmic construction of static perfect fluid spheres - gr-qc_0306109.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Algorithmic construction of static perfect fluid spheres - gr-qc_0306109.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Recasts Lake's algorithm for generating static perfect fluid spheres in terms of two physically meaningful variables — the average density and the locally measured gravitational acceleration $g(r)$ — and gives explicit, fully general formulas for the mass profile $m(r)$, the pressure profile $p(r)$ and the central pressure. The gravity profile is the generating function: choose it, and the whole solution follows. The reformulation makes the interrelations among previously known exact solutions visible and produces new ones. The discussion is careful about the difference between generating <em>a</em> solution and generating a physically reasonable one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-improvements">The three improvements</h3>
+<p>"We present a variant of Lake's algorithm wherein: (1) we re-cast the algorithm in terms of variables with a clear physical meaning — the average density and the locally measured acceleration due to gravity, (2) we present explicit and fully general formulae for the mass profile and pressure profile, and (3) we present an explicit closed-form expression for the central pressure. Furthermore we can then use the formalism to easily understand the pattern of inter-relationships among many of the previously known exact solutions, and generate several new exact solutions."</p>
+<h3 id="the-generating-function">The generating function</h3>
+<p>"an exact and fully general formula for the pressure profile $p(r)$ of a perfect fluid sphere that depends only on the gravity profile $g(r)$ ... In particular, we have an exact and fully general expression for the central pressure of a fluid sphere, again determined directly in terms of the gravity profile."</p>
+<h3 id="why-the-choice-of-variable-matters">Why the choice of variable matters</h3>
+<p>"Because this algorithmic approach works directly in terms of physically meaningful quantities, with a physically meaningful 'generating function' in the form of the gravity profile $g(r)$, the interpretation of the results is somewhat clearer than in the algorithms presented in the Rahman–Visser and Lake articles."</p>
+<h3 id="the-honest-limitation">The honest limitation</h3>
+<p>"while this type of algorithm guarantees a perfect fluid body it does not necessarily guarantee a 'physically reasonable' perfect fluid body. One physically reasonable constraint that is easy to enforce in the current formulation is $g&gt;0$; locally measured gravity should always attract towards the center of the body. A second physically reasonable constraint which is automatically satisfied is that the central pressure is positive. It is considerably more difficult to enforce $m(r)\ge0$, $\rho(r)\ge0$, and $p(r)\ge0$. Checking these physically motivated constraints amounts to mathematically investigating a set of integral inequalities, and seems to require a case by case investigation depending on the assumed gravity profile $g(r)$."</p>
+<h3 id="the-claim-of-generality">The claim of generality</h3>
+<p>"We have derived the exact and fully general solution to the pressure isotropy condition in terms of variables that have a direct physical meaning." Generality here means no equation of state is assumed; the pressure isotropy condition is solved as a differential equation, and the equation of state is an output.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-generating-solutions-from-a-chosen-function-is-not-the-same-as-solving-the-physics">1. Generating solutions from a chosen function is not the same as solving the physics</h3>
+<p><strong>The idea.</strong> An algorithm that inverts a differential equation into a generative rule produces solutions by construction. Whether those solutions are physical is a separate question, answered by a different set of inequalities, and the paper is explicit that the two problems have different difficulty.</p>
+<p><strong>What it would add.</strong> A distinction with direct force in the corpus. <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds metrics from algebraic data; the paper's point is that a family of metrics obtained this way is not thereby a family of physical spacetimes. Recording that distinction once, with this paper as the worked example, protects the corpus from reading its own constructions as predictions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, as a listed gap.</p>
+<p><strong>What stands in the way.</strong> The inequalities are for a fluid sphere in general relativity. The corpus's metrics are not solutions of any field equation, so the distinction applies a fortiori rather than by direct transfer.</p>
+<h3 id="2-a-physically-meaningful-generating-function-is-worth-more-than-a-mathematically-convenient-one">2. A physically meaningful generating function is worth more than a mathematically convenient one</h3>
+<p><strong>The idea.</strong> Lake's algorithm and this one solve the same equation; the difference is the variable. Choosing the local gravitational acceleration as the free function makes the physical content of the family visible, and makes the relations between known solutions obvious.</p>
+<p><strong>What it would add.</strong> A concrete case where a change of variable did real work: not merely cleaner algebra, but new solutions and a new understanding of old ones. The corpus's <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> argues for a choice of representation on similar grounds; this is the empirical case that such a choice pays.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a methodological case study. Ranked first.</p>
+<h3 id="3-equation-of-state-as-an-output">3. Equation of state as an output</h3>
+<p><strong>The idea.</strong> No equation of state is assumed. The pressure isotropy condition is solved, and the resulting $p(\rho)$ is whatever the chosen $g(r)$ implies. The equation of state is a derived object, not an input.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives an equation of state from a thermodynamic identity. Here it is derived from a geometric condition instead, and the two derivations need not agree. That is a question worth posing: if an equation of state can be produced by geometry alone, the thermodynamic derivation is not the only route, and the corpus should say which one it trusts.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The geometry here is a static spherical interior, not a horizon. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

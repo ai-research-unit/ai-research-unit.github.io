@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evading the Trans-Planckian problem with Vaidya spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Evading the Trans-Planckian problem with Vaidya spacetimes - 1809.10412.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="evading-the-trans-planckian-problem-with-vaidya-spacetimes"><strong>Evading the Trans-Planckian problem with Vaidya spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1809.10412v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ivan Booth, Bradley Creelman, Jessica Santiago, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 September 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Evading the Trans-Planckian problem with Vaidya spacetimes - 1809.10412-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Evading the Trans-Planckian problem with Vaidya spacetimes - 1809.10412.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Evading the Trans-Planckian problem with Vaidya spacetimes - 1809.10412.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Backtracking a Hawking photon to the horizon blueshifts it without limit, which is the trans-Planckian problem. Following Unruh's reading, the authors treat the radiation as a vacuum instability emitted outside the horizon, and build a kinematical model to make that concrete. The model joins two Vaidya spacetimes across a thin timelike shell, one outside and one inside, and computes the shell's four-acceleration including gravity, motion, and outgoing null flux. The acceleration is then related to an Unruh temperature. Dynamics is explicitly deferred.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"Hawking radiation, when treated in the ray optics limit, exhibits the unfortunate trans-Planckian problem — a Hawking photon near spatial infinity, if back-tracked to the immediate vicinity of the horizon is hugely blue-shifted and found to have had trans-Planckian energy."</p>
+<h3 id="the-extreme-case">The extreme case</h3>
+<p>"And if back-tracked all the way to the horizon, the photon is formally infinitely blue-shifted, and formally acquires infinite energy."</p>
+<h3 id="unruhs-reading">Unruh's reading</h3>
+<p>"Unruh has forcefully argued that this implies that the Hawking flux represents a vacuum instability in the presence of a horizon, and that the Hawking photons are actually emitted from some region exterior to the horizon."</p>
+<h3 id="what-the-paper-builds">What the paper builds</h3>
+<p>"We seek to make this idea more precise and somewhat explicit by building a purely kinematical model for Hawking evaporation based on two Vaidya spacetimes (outer and inner) joined across a thin time-like boundary layer."</p>
+<h3 id="the-scope-limit">The scope limit</h3>
+<p>"The kinematics of this model is already quite rich, and we shall defer consideration of the dynamics for subsequent work."</p>
+<h3 id="the-main-conclusion">The main conclusion</h3>
+<p>"Perhaps the major conclusion to be drawn is that possible scenarios for the final state can be considerably more complex and varied than currently envisaged; and that the sheer number of a priori quite reasonable scenarios is quite large — perhaps unreasonably so."</p>
+<h3 id="first-lesson">First lesson</h3>
+<p>"Whereas (outgoing) Hawking radiation does not actually seem to need to cross the horizon; there are nevertheless good quantitative reasons for believing the Hawking radiation arises from a region near the horizon — since otherwise there is no good physical reason to connect the surface gravity to the Hawking temperature."</p>
+<h3 id="second-lesson">Second lesson</h3>
+<p>"If the interior Vaidya geometry has a nonzero mass $m_-(w)\neq0$, then some version of the 'information puzzle' is unavoidable; being evaded only by the use of an interior 'regular black hole' or similar construction."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-horizon-is-not-where-the-radiation-starts">1. The horizon is not where the radiation starts</h3>
+<p><strong>The idea.</strong> Emission happens in a region outside the horizon, not at it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats the horizon as the source of the thermal character. Here the temperature is tied to a shell outside it, which means the article must say what work the horizon does if not emission.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on horizons.</p>
+<p><strong>What stands in the way.</strong> The model is kinematic only. Ranked first, because it relocates the physical process.</p>
+<h3 id="2-interior-mass-decides-the-information-puzzle">2. Interior mass decides the information puzzle</h3>
+<p><strong>The idea.</strong> A nonzero interior mass makes some information puzzle unavoidable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> assigns entropy to a horizon without an interior. This paper states a condition under which that omission has consequences, which the article can use as a caveat.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the interior.</p>
+<p><strong>What stands in the way.</strong> The claim is within a toy model. Ranked second.</p>
+<h3 id="3-many-final-states-are-kinematically-allowed">3. Many final states are kinematically allowed</h3>
+<p><strong>The idea.</strong> Kinematics alone does not pick out the endpoint of evaporation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> should note where its framework is underdetermined. A demonstration that many scenarios pass every kinematical check is a model of that honesty.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of scope.</p>
+<p><strong>What stands in the way.</strong> It is a statement about a different model class. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

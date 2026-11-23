@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Searching for New Physics Using Precision Standard Model Measurements — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Searching for New Physics using Precision Standard Model Measurements 2003.05435v1.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="searching-for-new-physics-using-precision-standard-model-measurements"><strong>Searching for New Physics Using Precision Standard Model Measurements</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (review)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2003.05435v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Michael E. Peskin (SLAC)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 11 March 2020 (SLAC-PUB-17517)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>contribution to "The Standard Model at 50 Years", Case Western Reserve University, June 1–4, 2018</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Searching for New Physics using Precision Standard Model Measurements 2003.05435v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Searching for New Physics using Precision Standard Model Measurements 2003.05435v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Searching for New Physics using Precision Standard Model Measurements 2003.05435v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the way to find physics beyond the Standard Model is not to guess a model but to write the most general effective Lagrangian consistent with the known symmetries and measure its coefficients. The framework is SMEFT; the targets are fermion compositeness, precision electroweak observables and, most promisingly, the Higgs couplings, where a 1% measurement would expose the mechanism of symmetry breaking.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framework">The framework</h3>
+<p>"New physics interactions beyond the Standard Model can make themselves known as small corrections to Standard Model reactions. There is a diverse array of proposals for new physics, and so any parametrization of those effects must be as general and all-inclusive as possible. This can be accomplished by the use of Standard Model Effective Field Theory (SMEFT)."</p>
+<h3 id="why-dimension-six-dominates">Why dimension six dominates</h3>
+<p>"Integrating out heavy particles will also generate new terms proportional to higher dimension operators, of dimension 6, 8, . . .. Operators" "Higher-dimension operators come with dimensionful 3 coefficients, whose size is set by the mass scale M that is integrated out. Then":
+$$\mathcal{L}=\mathcal{L}_{\rm SM}+\sum_i\frac{c_i}{M^2}O_i+\sum_j\frac{d_j}{M^4}O_j+\cdots \quad \text{(paper 2)}$$
+"consider the case of M = 1 TeV and ci , dj of order 1. Un-" "the dimension-6 operators give few-percent corrections to the Standard Model, and the dimension-8 operators give corrections of order 10−4 . Then, in practical applications, we can ignore the operators of dimension 8 and higher and concentrate on the effects of operators of dimension 6."</p>
+<h3 id="the-standard-model-as-the-renormalisable-part">The Standard Model as the renormalisable part</h3>
+<p>"Consider first the part of the Lagrangian containing operators of dimension 4 and below. In fact, this part is nothing more than the Standard Model itself. The Standard Model is in fact the most general renormalizable Lagrangian consistent with SU (3) × SU (2) × U (1) gauge invariance [7,8]. When heavy particles are integrated"</p>
+<h3 id="rescaling-by-math10">Rescaling by $v$</h3>
+<p>"it is useful to set the scale of the operator coefficients using the Higgs field vacuum expectation value $v$": $\mathcal{L}=\mathcal{L}_{\rm SM}+\sum_i\frac{c_i}{v^2}O_i+\sum_j\frac{d_j}{v^4}O_j+\cdots$ (paper 3). "the $c_i$ will be small parameters, of order 1%, the $d_j$ of order $10^{-4}$".</p>
+<h3 id="the-difficulty">The difficulty</h3>
+<p>"The approximation scheme suggested by SMEFT is powerful, but it has a difficulty. The number of gauge-invariant dimension-6 operators is large, and this number increases rapidly with the number of generations and with the operator dimension."</p>
+<h3 id="the-target">The target</h3>
+<p>"I have emphasized the mysteries surrounding the most important conceptual feature of the Standard Model physics, the spontaneous breaking of its gauge symmetry, which the model can parametrize but which it is incapable of explaining. To provide that explanation, there must be new interactions lying undiscovered at higher energies."</p>
+<h3 id="the-opportunity">The opportunity</h3>
+<p>"I have argued that it is within our current technical capabilities to measure the couplings of the Higgs boson with a precision of 1% or below. This" "we will have the possibility of observing with high confidence the characteristic effects of new interactions that could explain the origin of Higgs electroweak symmetry breaking. This"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-standard-model-as-the-dimension-four-truncation">1. The Standard Model as the dimension-four truncation</h3>
+<p><strong>The idea.</strong> Everything the corpus describes is the renormalisable part of a series. The expansion in $1/M^2$ is systematic, and the next term is not a new model but a correction with a coefficient. This is a <strong>reading</strong> that places the corpus's own Lagrangian in a hierarchy rather than at the end of the story.</p>
+<p><strong>What it would add.</strong> A frame in which the corpus's Lagrangian is the leading term, and its predictions can be corrected order by order without abandoning it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code>, on the status of the Lagrangian.</p>
+<p><strong>What stands in the way.</strong> The corpus's derivation produces the dimension-four terms from an algebraic structure; whether the same structure generates the higher-dimension operators with coefficient $1/M^2$ is not addressed, and without that the hierarchy is only an analogy.</p>
+<h3 id="2-precision-as-the-discovery-channel">2. Precision as the discovery channel</h3>
+<p><strong>The idea.</strong> New physics at scale $M$ appears as a small correction of order $s/M^2$, so a 1% measurement is a probe of multi-TeV dynamics. The argument turns precision into reach, and it explains why the Higgs coupling is the most informative observable.</p>
+<p><strong>What it would add.</strong> A quantitative statement of how much precision buys how much energy, which the corpus's precision-observables article uses qualitatively.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>, on the interpretation of the parameters.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the mapping from $S$, $T$, $U$ to SMEFT coefficients would have to be written out, which the corpus does not currently do.</p>
+<h3 id="3-the-proliferation-problem">3. The proliferation problem</h3>
+<p><strong>The idea.</strong> Generality has a cost: the number of dimension-six operators grows quickly with generation number and dimension, so a fully general fit is impractical. The paper states the difficulty plainly rather than hiding it.</p>
+<p><strong>What it would add.</strong> An honest limit on the "be general" strategy, which matters to the corpus because its own generality claims face the same counting problem.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on what counts as a parameter.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>The rank is a judgement: the dimension-four reading first, because it repositions the corpus's whole Lagrangian; precision-as-reach second; the proliferation problem third, as a caution.</p>
+<p>This is a twenty-six page review; the SMEFT expansion, the compositeness analysis, the electroweak fit, the Higgs coupling programme and the argument for 1% precision are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

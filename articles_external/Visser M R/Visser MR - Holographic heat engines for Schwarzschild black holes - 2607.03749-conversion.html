@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic heat engines for Schwarzschild black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic heat engines for Schwarzschild black holes - 2607.03749.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-heat-engines-for-schwarzschild-black-holes"><strong>Holographic heat engines for Schwarzschild black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2607.03749v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ripunjay Dwivedi, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 August 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic heat engines for Schwarzschild black holes - 2607.03749-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic heat engines for Schwarzschild black holes - 2607.03749.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic heat engines for Schwarzschild black holes - 2607.03749.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds reversible heat engines in asymptotically flat spacetime using quasi-local gravitational thermodynamics. A Schwarzschild black hole is enclosed in a finite spherical cavity, and the working substance is identified with the thermal system on the cavity's boundary, which the authors read as the holographic dual of the black hole inside. The surface pressure and the boundary area form a pressure–volume pair, while all coupling constants of the theory — including Newton's constant — stay fixed. Exact efficiencies are derived for the Carnot, Otto, Diesel, Brayton and Stirling cycles, and the non-Carnot efficiencies are used to probe the quasi-local equations of state. Both Stirling variants approach Carnot on the large-hole branch at high temperature, with regeneration reducing the leading deviation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"We construct reversible black hole heat engines in asymptotically flat spacetime using quasi-local gravitational thermodynamics. We enclose a Schwarzschild black hole in a finite spherical cavity and identify the working substance with the holographically dual thermal system on the cavity boundary. The surface pressure and the boundary area define a thermodynamic pressure-volume pair, while all coupling constants of the gravitational theory remain fixed."</p>
+<h3 id="why-this-is-the-interesting-case">Why this is the interesting case</h3>
+<p>"The key step is to place the black hole inside a finite timelike boundary and use the quasi-local gravitational formalism pioneered by York. In this framework, thermodynamic quantities are assigned at the boundary of the finite cavity, with the Brown-York stress-energy tensor providing the quasi-local energy and surface pressure." In extended thermodynamics the pressure comes from varying $\Lambda$; here the pressure comes from a real surface, and no coupling is varied.</p>
+<h3 id="what-the-efficiencies-test">What the efficiencies test</h3>
+<p>"The non-Carnot efficiencies probe the quasi-local equations of state of the Schwarzschild black hole." An engine cycle samples the equation of state along a path, so its efficiency depends on the equations of state in a way a single quantity could not.</p>
+<h3 id="the-stirling-result">The Stirling result</h3>
+<p>"Both the regenerative and non-regenerative Stirling efficiencies on the large black hole branch approach the Carnot value in the high-temperature limit, with regeneration reducing the leading deviation from the Carnot bound." The same structure as in the holographic Stirling paper: approach in a limit, with a definite order of correction.</p>
+<h3 id="the-specialisation">The specialisation</h3>
+<p>The working substance is a Schwarzschild hole, with no charge and no rotation, in a cavity of fixed radius. The cavity's radius and the hole's mass are the two parameters, and the cycles are drawn in the $(P,V)$ plane that the boundary supplies.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-pressure-that-comes-from-a-surface-not-from-math13">1. A pressure that comes from a surface, not from $\Lambda$</h3>
+<p><strong>The idea.</strong> The thermodynamic pressure of a black hole can be the surface pressure of a finite boundary rather than a conjugate to a varying cosmological constant. Nothing is varied but the boundary's own size and the mass.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> imports $P=-\Lambda/8\pi G$ and leaves the origin of the pressure unexamined; the earlier braneworld and holographic papers give it a brane-tension origin. Here is a third origin, requiring no new coupling at all. Three distinct origins for one quantity is a strong indication that "the pressure" is not a single thing, and the article should say so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> The construction needs a cavity and the Brown–York stress tensor; the corpus has no boundary. The cost is that the origin cannot be imported, only the observation that origins differ.</p>
+<h3 id="2-an-engine-tests-an-equation-of-state-along-a-path">2. An engine tests an equation of state along a path</h3>
+<p><strong>The idea.</strong> A cycle's efficiency depends on the equation of state integrated along a path, so it is sensitive to features a single thermodynamic quantity would not reveal.</p>
+<p><strong>What it would add.</strong> A methodological point the corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would find useful: a <em>process</em> rather than a <em>state</em> is what discriminates. The corpus's tests are all state-by-state comparisons.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is methodological. Ranked first.</p>
+<h3 id="3-cavity-radius-and-mass-two-parameters-bounded-cycles">3. Cavity radius and mass, two parameters, bounded cycles</h3>
+<p><strong>The idea.</strong> With the cavity at fixed radius and the mass free, the state space is two-dimensional and the cycles are bounded by the cavity's capacity to hold the hole.</p>
+<p><strong>What it would add.</strong> The corpus's state space is finite-dimensional but otherwise unbounded in its parameters. A worked case where a physical bound (the hole must fit inside the cavity) restricts the allowed cycles is a reminder that state spaces can have edges.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The bound is geometric. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

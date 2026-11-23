@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split octonionic Dirac equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split octonionic Dirac equation - 2409.13736.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-octonionic-dirac-equation"><strong>Split octonionic Dirac equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2409.13736 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Merab Gogberashvili, Alexandre Gurchumelia</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 September 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gogberashvili/Gogberashvili - Split octonionic Dirac equation - 2409.13736-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split octonionic Dirac equation - 2409.13736.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gogberashvili/Gogberashvili - Split octonionic Dirac equation - 2409.13736.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rewrites the Dirac equation and its Lagrangian in the non-associative algebra of split octonions, by matching the eight real components of the bispinor to the eight coefficients of an octonionic wavefunction. The equation takes the form $(D-J_3m)\psi=0$ with $J_3$ multiplying the mass, and the Lagrangian is written with an octonionic inner product. The equivalence to the standard Dirac system is checked component by component with a symbolic-computing module; the novelty claimed against the authors' earlier version is exactly the factor $J_3$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-bilinear-form-and-the-operators">The bilinear form and the operators</h3>
+<p>With $I^2=1$, $j_nI=J_n$, $j_mj_n=-\delta_{mn}+\sum_\ell\epsilon_{\ell mn}j_\ell$ and $J_mJ_n=\delta_{mn}+\sum_\ell\epsilon_{\ell mn}j_\ell$ (paper 6), the number is $x=x_0+Ix_4+\sum_n(j_nx_n+J_nx_{4+n})$ (paper 7). The quadratic form $Q(x)=x\bar x$ gives the inner product
+$$\langle x,y\rangle=\tfrac12(x\bar y+y\bar x)=\sum_{n=0}^{3}\left(x_ny_n-x_{4+n}y_{4+n}\right)$$
+(paper 8–9), of signature four-minus-four. The derivative operators are
+$$\partial=\tfrac12(\partial_0+I\partial_4)+\tfrac12\sum_n(j_n\partial_n+J_n\partial_{4+n}),\qquad \partial x=\bar\partial x=1,\quad \bar\partial x=\partial\bar x=0$$
+(paper 10–11). The paper states the cost at once: "r the definition (10), the expected rules of derivatives for high order polynomials do not work, namely ∂xk = kxk−1 does not hold. For non-split".</p>
+<h3 id="the-equation-and-the-lagrangian">The equation and the Lagrangian</h3>
+<p>Assuming the wavefunction constant in $x_0,x_5,x_6,x_7$ replaces $D=2I\partial I=\partial_0+I\partial_4-\sum_n(j_n\partial_n+J_n\partial_{4+n})$ by
+$$D\to I\partial_t-\sum_{n=1}^{3}j_n\partial_n$$
+(paper 13, 15). Then
+$$(D-J_3m)\psi=0$$
+(paper 16) "is component-wise equivalent to the standard Dirac system (5). We", and
+$$L=\tfrac12\langle J_3\psi,D\psi\rangle+\tfrac12m\langle\psi,\bar\psi\rangle$$
+(paper 17). The correspondence is with the bispinor read as $\psi=(-\psi_6+i\psi_5,\ \psi_4+i\psi_7,\ \psi_3+i\psi_0,\ \psi_1+i\psi_2)^T$ (paper 4) in the Weyl basis of (paper 2). The quoted difference from the earlier octonionic Dirac equation is "the appearance of split octonionic imaginary unit $J_3$ in these expressions", with a possible impact on "the final form of the split octonionic Standard Model Lagrangian".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-mass-term-carries-an-algebra-direction">1. The mass term carries an algebra direction</h3>
+<p><strong>The idea.</strong> The mass does not multiply the unit; it multiplies $J_3$, one of the seven imaginary units, chosen from among them. A <strong>reading</strong>: the same eight real equations, with the mass distinguished by a direction in the algebra rather than by a scalar.</p>
+<p><strong>What it would add.</strong> The corpus's Parra article sets out four vectorial readings of the eight real Dirac equations, and they differ only in the relative signs of the derivative and the coupling terms. Here is a further parameter in the same family — which unit sits in front of $m$ — and it is not a sign. If $J_3$ can be any of the seven, the same symbol $\psi$ carries a family of equations the corpus's four do not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper fixes $J_3$ without saying why, so the family is asserted rather than explored, and the choice is not tied to any observable. The equivalence is also only component-wise: octonionic multiplication is non-associative, so a second application of $D$ does not reproduce the Klein–Gordon operator without a choice of bracketing — and the corpus's Dirac articles all rely on that square.</p>
+<h3 id="2-a-derivative-that-does-not-obey-the-power-rule">2. A derivative that does not obey the power rule</h3>
+<p><strong>The idea.</strong> The split-octonionic $\partial$ of (paper 10) is built with the factor $\tfrac12$ that makes $\partial x=1$, and it is stated that $\partial x^k=kx^{k-1}$ fails. A <strong>formula</strong> with a stated defect.</p>
+<p><strong>What it would add.</strong> A worked example of what an algebra-native derivative costs: the corpus's Fueter and Cauchy–Riemann constructions are built to preserve the power rule, and this one buys the normalization $\partial x=1$ at the price of it. That trade is the kind of statement the corpus's derivative articles can check.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-action-problem.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper does not pursue the consequence: no product rule, no Leibniz identity, no statement of which polynomials survive. Without those, the operator cannot be used to build a Lagrangian beyond the first order displayed, which is the derivative-counting question the corpus's action article poses.</p>
+<p>The rank is a judgement: the algebra-valued mass first, because it is the one structural difference from the corpus's four readings; the defective derivative second, because it is a negative result the corpus can use.</p>
+<p>Four pages: the standard Dirac system and its bispinor, the split-octonion relations, the inner product, the derivative operators, the reduced operator, the equation, the Lagrangian, and the comparison with the earlier octonionic form.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

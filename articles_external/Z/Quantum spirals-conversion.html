@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Spirals — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Quantum spirals.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-spirals"><strong>Quantum Spirals</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1506.01444v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Zensho Yoshida (University of Tokyo), Swadesh M. Mahajan (UT Austin)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 June 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Quantum spirals-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Quantum spirals.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Quantum spirals.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Observes that quantum systems resist hosting vorticity — the Meissner effect expels electromagnetic vorticity, superfluidity confines circulation to quantised topological defects — and shows that vorticity can be imparted to a quantum fluid through a nonlinear mechanism in a hot fluid described by a thermally modified Pauli–Schrödinger spin equation, with a spiral solution worked out explicitly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-obstruction">The obstruction</h3>
+<p>"Quantum systems often exhibit fundamental incapability to entertain vortex. The Meissner effect, a complete expulsion of the magnetic field (the electromagnetic vorticity), for instance, is taken to be the defining attribute of the superconducting state. Superfluidity is another, close-parallel example; fluid vorticity can reside only on topological defects with a limited (quantized) amount."</p>
+<h3 id="the-route-around-it">The route around it</h3>
+<p>"We show that the challenge of imparting vorticity to a quantum fluid can be met through a nonlinear mechanism operating in a hot fluid corresponding to a thermally modified Pauli-Schrödinger spin" equation.</p>
+<h3 id="the-new-ingredient">The new ingredient</h3>
+<p>A "nonlinear, non-Hermitian Hamiltonian, in conjunction with spin vorticity, leads to new interesting quantum states; a spiral solution is explicitly worked out." The non-Hermiticity is doing work here: it allows the flow to carry a rotational component that a Hermitian Hamiltonian's ground state forbids.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-vorticity-is-quantised-because-the-phase-is">1. Vorticity is quantised because the phase is</h3>
+<p><strong>The idea.</strong> The velocity is $\nabla S/m$, so its circulation around a closed loop is $\hbar/m$ times the winding of the phase. That winding is an integer, so circulation is quantised and continuous vorticity is impossible in a single-valued wavefunction. This is a <strong>formula</strong> with a strong consequence.</p>
+<p><strong>What it would add.</strong> The reason a quantum fluid cannot be given arbitrary vorticity, stated algebraically rather than as an empirical remark. The corpus's spin hydrodynamics carries a vorticity tensor and does not say where the quantisation enters.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>, at the vorticity.</p>
+<p><strong>What stands in the way.</strong> In the corpus's algebra the phase is a component of the decomposition and can be multivalued only through the zero-divisor cone, so the winding number would have to be defined there.</p>
+<h3 id="2-a-non-hermitian-term-is-a-physical-resource-not-a-defect">2. A non-Hermitian term is a physical resource, not a defect</h3>
+<p><strong>The idea.</strong> Dissipation or gain can generate rotational flow that a conservative Hamiltonian cannot support. The non-Hermiticity is the mechanism, not an approximation error.</p>
+<p><strong>What it would add.</strong> A reading for the corpus's dissipative-hydrodynamics article, which treats the non-Hermitian part as a loss term.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>, at the non-Hermitian term.</p>
+<p><strong>What stands in the way.</strong> The corpus's dissipative terms are added phenomenologically; the paper's claim is that they can create structure, which would need a stability analysis the corpus has not performed.</p>
+<p>This is a six-page preprint; the obstruction, the nonlinear mechanism and the explicit spiral are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

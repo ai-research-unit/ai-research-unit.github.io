@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spontaneous Quantum Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Spontaneous quantum gravity - 1912.03266.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spontaneous-quantum-gravity"><strong>Spontaneous Quantum Gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1912.03266v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, December 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Spontaneous quantum gravity - 1912.03266-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Spontaneous quantum gravity - 1912.03266.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Spontaneous quantum gravity - 1912.03266.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An exposition of spontaneous quantum gravity, organised around a proposal about what a quantum theory of gravity must do: it must explain, dynamically, why we never see superpositions of spacetime geometries. That rules out treating the absence as an interpretational matter and forces a mechanism. The mechanism is built from trace dynamics: quantum theory is the equilibrium statistical thermodynamics of a matrix dynamics, fluctuations away from equilibrium are inevitable, and when the anti-self-adjoint part of the Hamiltonian becomes significant in an entangled system, localisation follows and a classical geometry emerges with it.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-requirement">The requirement</h3>
+<p>"a viable quantum theory of gravity should be falsifiable, and hence it should dynamically explain the observed absence of quantum superpositions of space-time geometries in its classical limit."</p>
+<h3 id="the-covering-relation">The covering relation</h3>
+<p>"In this way, the theory of spontaneous collapse is the cover for Newton's mechanics. The cover theory reduces to quantum mechanics for small objects."</p>
+<h3 id="where-collapse-comes-from">Where collapse comes from</h3>
+<p>"trace dynamics contains within itself the roots for explaining spontaneous collapse, because quantum dynamics in the first place arises as a statistical thermodynamics approximation to the underlying matrix dynamics."</p>
+<p>"The inclusion of imaginary fluctuations around equilibrium paves the way for spontaneous localisation to arise."</p>
+<p>"Incorporating gravity into trace dynamics finally helps us understand that spontaneous localisation arises because the fundamental Hamiltonian at the Planck scale is not selfadjoint."</p>
+<h3 id="the-levels">The levels</h3>
+<p>Four descriptions are distinguished: the underlying matrix dynamics, an emergent quantum theory of gravity at low energy, a hybrid level where the spacetime part is borrowed, and the classical level. "This Level I quantum gravity is a low energy phenomenon! It does not have anything to do with the Planck scale, but rather comes into play whenever a background space-time is not available."</p>
+<h3 id="when-the-approximation-fails">When the approximation fails</h3>
+<p>"If the total mass of the entangled system of STM atoms goes above Planck mass, the effective Compton wavelength of the full system goes below Planck length. The approximation that we can coarse grain the Level 0 dynamics over times larger than Planck times breaks down."</p>
+<h3 id="the-predictions">The predictions</h3>
+<p>"Spontaneous localisation (the GRW theory) is a prediction of this theory, and the GRW theory is being tested in labs currently. If the GRW theory is ruled out by experiments, this proposal will be ruled out too."</p>
+<p>"SQG predicts the novel phenomena of quantum interference in time, and spontaneous collapse in time."</p>
+<p>"The theory predicts the Karolyhazy length as a minimum length."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-quantum-gravity-must-explain-the-absence-of-geometry-superpositions">1. A quantum gravity must explain the absence of geometry superpositions</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: if a theory of quantum gravity leaves the absence of spatial superpositions to interpretation, it has not done its job. The absence is a fact requiring a dynamical explanation, and a theory that produces superpositions without removing them has failed a test it set itself.</p>
+<p><strong>What it would add.</strong> The corpus's quantum gravity articles catalogue obstructions and propose constructions, and treat the classical appearance of geometry as a limit to be taken. This makes the limit itself the explanandum and turns the requirement that a theory have a classical limit into the requirement that it destroy superpositions, which is a much stronger and more testable statement. As a criterion it is portable: any corpus proposal can be asked what kills its geometry superpositions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The criterion presumes the absence is dynamical rather than perspectival, which excludes the Everettian and decoherence-only replies by fiat.</p>
+<h3 id="2-four-levels-and-one-of-them-is-the-one-we-usually-use">2. Four levels, and one of them is the one we usually use</h3>
+<p><strong>The idea.</strong> A <strong>bookkeeping scheme</strong>: Level 0 is the matrix dynamics, Level I the emergent quantum gravity without background, Level II a hybrid with a borrowed spacetime, Level III classical. Ordinary quantum field theory is Level II — an approximation that borrows a geometry it cannot derive.</p>
+<p><strong>What it would add.</strong> The corpus routinely mixes statements made at different levels, and asserts equivalences between them without saying which level a claim belongs to. This scheme makes the mixing visible and gives a place to put each claim. It is the kind of scaffold that costs nothing and prevents a whole class of category errors, and it would make several corpus articles much easier to check.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The levels are defined by a specific theory's construction; a corpus article outside that programme can use the labels only by analogy.</p>
+<h3 id="3-above-planck-mass-the-coarse-graining-simply-stops-working">3. Above Planck mass the coarse-graining simply stops working</h3>
+<p><strong>The idea.</strong> A <strong>mechanism with a threshold</strong>: the coarse-graining that produces quantum theory requires averaging over times longer than the Planck time. For an entangled system whose total mass exceeds the Planck mass, the effective Compton wavelength drops below the Planck length, and that averaging is no longer available. The failure of the approximation is not a small correction; it is the onset of localisation.</p>
+<p><strong>What it would add.</strong> The corpus's emergent-quantum-mechanics articles assume the coarse-graining is always available and ask what it produces. This supplies a condition under which it is unavailable, and the condition is a mass. That converts the claim that quantum mechanics is emergent into a statement with a domain of validity, which is what makes it a physical claim rather than a philosophical one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The threshold is derived within the programme's own construction, and no independent argument is given that nature has this cutoff.</p>
+<p>The rank: the criterion first, because it constrains all proposals; the levels second, because they prevent errors; the threshold third, because it gives emergence a domain.</p>
+<p>The remaining items in one line each: the Adler–Millard charge being anti-self-adjoint while the Hamiltonian is assumed self-adjoint, which is where the fluctuations enter; entanglement shortening the superposition lifetime as $1/N$, which is the GRW mechanism in this language; and the claim that dark energy and black hole entropy both follow from the same microstates, which is the programme's most ambitious identification.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

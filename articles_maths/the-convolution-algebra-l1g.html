@@ -85,7 +85,7 @@ $$</p>
 <p>The $\mathrm{C}^*$-completions are $C^*(G)$ (full) and $C^*_r(G)$ (reduced), and the group von Neumann algebra is $L(G) = \lambda(G)''$. As in <em>Harmonic Analysis on Groups</em>, the abelian dual is $G^\vee$ and the unitary dual of a general group is $\operatorname{Irr}(G)$; no use is made of the notation $\widehat{G}$.</p>
 <h2 id="the-modular-function-and-the-spaces-math26">The Modular Function and the Spaces $L^{n}(G)$</h2>
 <h3 id="the-modular-function">The Modular Function</h3>
-<p>Recall from <em>Locally Compact Groups and Haar Measure</em>, §The Modular Function and Unimodularity: $\Delta : G \to \mathbb{R}_{>0}$ is the continuous homomorphism defined by</p>
+<p>Recall from <em>Locally Compact Groups and Haar Measure</em>, §The Modular Function and Unimodularity: $\Delta : G \to \mathbb{R}_{&gt;0}$ is the continuous homomorphism defined by</p>
 <p>$$
 \mu(Ag) = \Delta(g)\,\mu(A),
 $$</p>
@@ -93,11 +93,11 @@ $$</p>
 <p>$$
 \int_G f(x^{-1})\,dx = \int_G f(x)\,\Delta(x)^{-1}\,dx
 $$</p>
-<p>holds for every $f \in L^1(G)$. The affine group $G = \{(a,b) : a > 0\}$ with $(a,b)(a',b') = (aa', ab'+b)$ has $\mu_L = a^{-2}da\,db$, $\mu_R = a^{-1}da\,db$ and $\Delta(a,b) = a^{-1}$, and is the standard non-unimodular example; the groups that are abelian, compact, discrete, nilpotent, perfect or semisimple are unimodular.</p>
+<p>holds for every $f \in L^1(G)$. The affine group $G = \{(a,b) : a &gt; 0\}$ with $(a,b)(a',b') = (aa', ab'+b)$ has $\mu_L = a^{-2}da\,db$, $\mu_R = a^{-1}da\,db$ and $\Delta(a,b) = a^{-1}$, and is the standard non-unimodular example; the groups that are abelian, compact, discrete, nilpotent, perfect or semisimple are unimodular.</p>
 <p><strong>Example (the modular function of a product).</strong> If $G = G_1 \times G_2$ then $\Delta_G(g_1,g_2) = \Delta_{G_1}(g_1)\Delta_{G_2}(g_2)$ and $G$ is unimodular iff both factors are. The product inherits no new phenomenon; the failure of unimodularity is an obstruction of solvable groups such as the affine group.</p>
 <h3 id="the-spaces-math43">The Spaces $L^{n}(G)$</h3>
-<p>For $1 \leq p \leq \infty$ the space $L^{n}(G)$ is taken with respect to $dx$; since $dx$ is a Radon measure, $C_c(G)$ is dense in $L^{n}(G)$ for $p < \infty$, and for $1 \leq p < \infty$ the dual of $L^{n}(G)$ is $L^{m}(G)$ with $q$ conjugate to $p$. Hölder's inequality reads $\|fg\|_1 \leq \|f\|_p\|g\|_q$ and Minkowski's $\|f+g\|_p \leq \|f\|_p+\|g\|_p$.</p>
-<p><strong>Theorem (continuity of translation).</strong> For $1 \leq p < \infty$ and $f \in L^{n}(G)$, the maps $x \mapsto L_x f$ and $x \mapsto R_x f$ of $G$ into $L^{n}(G)$ are continuous, where $(L_xf)(y) = f(x^{-1}y)$ and $(R_xf)(y) = f(yx)$. Both are continuous unitary representations of $G$ on $L^2(G)$, the left and right regular representations.</p>
+<p>For $1 \leq p \leq \infty$ the space $L^{n}(G)$ is taken with respect to $dx$; since $dx$ is a Radon measure, $C_c(G)$ is dense in $L^{n}(G)$ for $p &lt; \infty$, and for $1 \leq p &lt; \infty$ the dual of $L^{n}(G)$ is $L^{m}(G)$ with $q$ conjugate to $p$. Hölder's inequality reads $\|fg\|_1 \leq \|f\|_p\|g\|_q$ and Minkowski's $\|f+g\|_p \leq \|f\|_p+\|g\|_p$.</p>
+<p><strong>Theorem (continuity of translation).</strong> For $1 \leq p &lt; \infty$ and $f \in L^{n}(G)$, the maps $x \mapsto L_x f$ and $x \mapsto R_x f$ of $G$ into $L^{n}(G)$ are continuous, where $(L_xf)(y) = f(x^{-1}y)$ and $(R_xf)(y) = f(yx)$. Both are continuous unitary representations of $G$ on $L^2(G)$, the left and right regular representations.</p>
 <p><strong>Proof.</strong> For $f \in C_c(G)$ the statements are uniform continuity of a compactly supported continuous function together with the compactness of its support; for general $f$ they follow by density of $C_c(G)$ in $L^{n}(G)$ and the isometry $\|L_xf\|_p = \|f\|_p$, $\|R_xf\|_p = \|f\|_p\Delta(x)^{-1/p}$ for the right translation. Unitarity of $L$ on $L^2(G)$ is the left invariance of $dx$, and unitarity of $R$ follows from the right invariance of $d\mu_R = \Delta^{-1}dx$, equivalently from the computation $\|R_x f\|_2^2 = \int|f(yx)|^2dy = \Delta(x)^{-1}\|f\|_2^2$ compensated by the weight in the inner product of the right regular representation; on a unimodular group both are directly unitary.</p>
 <p><strong>Remark (the two regular representations).</strong> The left regular representation $\lambda = L$ and the right regular representation $\rho = R$ commute, and on $L^2(G)$ they generate the regular representation of $G \times G$; this is the operator-algebraic frame of the Plancherel theory.</p>
 <h2 id="the-convolution-product">The Convolution Product</h2>
@@ -204,7 +204,7 @@ $$</p>
 <h3 id="the-line-the-torus-and-euclidean-space">The Line, the Torus and Euclidean Space</h3>
 <p>For $G = \mathbb{R}^n$, $\Delta \equiv 1$, $L^1(\mathbb{R}^n)$ is commutative, and the Gelfand transform is the Fourier transform of <em>Fourier Analysis on Euclidean Spaces</em>; the spectrum is $\mathbb{R}^n$ itself. For $G = T^n$ the algebra is the convolution algebra of integrable functions on the torus, whose Gelfand spectrum is $\mathbb{Z}^n$, and the transform is the Fourier coefficient map. Both are instances of the abelian theory of <em>Harmonic Analysis on Groups</em>.</p>
 <h3 id="the-affine-group">The Affine Group</h3>
-<p>Let $G = \{(a,b) : a > 0\}$ with the multiplication above, $\mu_L = a^{-2}da\,db$ and $\Delta(a,b) = a^{-1}$. The convolution is</p>
+<p>Let $G = \{(a,b) : a &gt; 0\}$ with the multiplication above, $\mu_L = a^{-2}da\,db$ and $\Delta(a,b) = a^{-1}$. The convolution is</p>
 <p>$$
 (f*g)(a,b) = \int_0^\infty\!\!\int_{-\infty}^{\infty} f(\alpha,\beta)\,g\bigl(\alpha^{-1}a,\ \alpha^{-1}(b-\beta)\bigr)\,\alpha^{-2}\,d\alpha\,d\beta ,
 $$</p>

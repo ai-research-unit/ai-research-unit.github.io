@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Theory Without Classical Time: Octonions, and a Theoretical Derivation of the Fine Structure Constant $1/137$ — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory without classical time - octonions, and a theoretical derivation of the fine…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-theory-without-classical-time-octonions-and-a-theoretical-derivation-of-the-fine-structure-constant-math9"><strong>Quantum Theory Without Classical Time: Octonions, and a Theoretical Derivation of the Fine Structure Constant $1/137$</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2110.07548v2 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 January 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Int. J. Mod. Phys. D 30 (2021) 2142010</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Quantum theory without classical time - octonions, and a theoretical derivation of the fine structure constant 1 137 - 2110.07548-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory without classical time - octonions, and a theoretical derivation of the fine structure constant 1 137 - 2110.07548.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory without classical time - octonions, and a theoretical derivation of the fine structure constant 1 137 - 2110.07548.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A compact statement of the octonionic programme, ending in a number. Quantum theory is rewritten without a classical time by making the dynamics a matrix Lagrangian in Connes time; the spin of that dynamics forces an eight-dimensional space; the only eight-dimensional normed division algebra is the octonions; their automorphisms, read through Clifford algebras, give the standard model's fermions and gauge bosons; and the cubic characteristic equation of the exceptional Jordan algebra gives the fine structure constant.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"There must exist a reformulation of quantum field theory which does not refer to classical time."</p>
+<h3 id="the-two-steps">The two steps</h3>
+<p>The first step keeps classical space-time and raises configuration variables and momenta to matrices, so that the Lagrangian is "the trace of a matrix polynomial" — Adler's trace dynamics. The second step raises the eigenvalues of the Dirac operator to matrix momenta, which turns the spectral action of non-commutative geometry into a matrix dynamics with Connes time.</p>
+<h3 id="why-spin-forces-eight-dimensions">Why spin forces eight dimensions</h3>
+<p>Spin is the momentum canonical to the phase of the complex plane spanned by $q$ and $\dot q$. "They cannot be in 4-D space-time because then the canonical momentum will be orbital angular momentum, not spin."</p>
+<p>Assuming the velocity has four components, the configuration variable must also have four, "so we have at hand a Kaluza-Klein type of theory, and spin describes periodic motion from 4D space-time to and from the internal directions."</p>
+<h3 id="why-octonions">Why octonions</h3>
+<p>"The introduction of an 8D non-commuting coordinate system immediately suggests the eight dimensional number system known as the octonions: the largest of the only four normed division algebras."</p>
+<p>"The automorphisms of the octonions take over the role of space-time diffeomorphisms and internal gauge transformations, thus unifying the latter two."</p>
+<h3 id="the-fermions">The fermions</h3>
+<p>"A Clifford algebra" constructed from the element preserving set of complexified octonions "implies an eight dimensional fermionic basis of states" and a number operator with eigenvalues $0$, $1/3$ and $2/3$: "These results suggest interpreting the eigenvalues as electric charge."</p>
+<h3 id="the-generations">The generations</h3>
+<p>"the isomorphism of the permutation group $S_3$ to Spin(8), known for its triality, suggests three fermion generations"</p>
+<h3 id="the-number">The number</h3>
+<p>The coefficient $\alpha^2(\ell_P/L)^4$ of the electromagnetic term "is the asymptotic fine structure constant, and in this theory it is determined by the roots of the cubic characteristic equation" of the exceptional Jordan algebra.</p>
+<h3 id="the-prediction">The prediction</h3>
+<p>"We find that the graviton is replaced by two spin one Lorentz bosons [a verifiable prediction] on par with the other gauge bosons."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-spin-cannot-live-in-four-dimensions">1. Spin cannot live in four dimensions</h3>
+<p><strong>The idea.</strong> An <strong>argument</strong>: spin is conjugate to an angle, and an angle needs a plane; a plane needs two directions independent of the four the particle moves in. Hence four internal directions, hence a Kaluza-Klein structure, hence eight coordinates. Spin is not an add-on to a particle in space-time — it is evidence that the space has more than four directions.</p>
+<p><strong>What it would add.</strong> The corpus treats spin as an element of an algebra acting on states, with the Lorentz group organising it. This derives the dimensionality of the arena from the existence of spin, which is the reverse direction. It is the sharpest available argument that the internal dimensions are not optional, and it would give the corpus's Kaluza-Klein and internal-space articles a principled starting point instead of a construction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>.</p>
+<p><strong>What stands in the way.</strong> The step from spin needing a plane to four internal directions uses the assumption that the velocity has four components; a reader can accept the locality of the argument without accepting its conclusion.</p>
+<h3 id="2-automorphisms-replace-diffeomorphisms">2. Automorphisms replace diffeomorphisms</h3>
+<p><strong>The idea.</strong> A <strong>structural identification</strong>: the automorphism group of the algebra plays the role that the diffeomorphism group plays in general relativity, and its unitary transformations play the role of gauge transformations. The split between geometry and gauge theory is an artefact of using a commutative manifold.</p>
+<p><strong>What it would add.</strong> The corpus's articles on covariance and on gauge structure treat the two groups as different kinds of object, one acting on the base and one on the fibre. This says they are one group wearing two hats, and that the unification is not a dynamical achievement but an algebraic identity. For a corpus that asks why the standard model has the symmetry it does, this is a candidate answer that costs nothing.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/derivations-and-the-peirce-decomposition.md</code>.</p>
+<p><strong>What stands in the way.</strong> It holds for the octonions specifically; there is no general theorem that the automorphism group of a division algebra does what the diffeomorphism group does.</p>
+<h3 id="3-math17-from-a-cubic-with-the-charge-pattern-from-a-trace">3. $1/137$ from a cubic, with the charge pattern from a trace</h3>
+<p><strong>The idea.</strong> A <strong>derivation</strong>: the diagonal entries of the exceptional Jordan matrix are electric charges; the off-diagonal entries are the octonionic fermion states; the cubic's three roots for each charge value are the Jordan eigenvalues; the coupling is a product of exponentials of those roots and a length ratio.</p>
+<p><strong>What it would add.</strong> The corpus's charge articles get $1/3$ from a trace condition, which fixes the quantisation but not the coupling strength. This gets the coupling itself from the same kind of structure. Having both in one place lets the corpus check whether its trace-based $1/3$ is the same $1/3$ that appears in the partition of the charge-square-root-mass quantum number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> The length ratio is an input from the fermion-state construction, and the numerical agreement is asymptotic rather than exact.</p>
+<p>The rank: the spin argument first, because it derives a dimensionality; the automorphism identification second, because it dissolves a distinction; the $1/137$ derivation third, because it depends on imported inputs.</p>
+<p>The remaining items in one line each: the identifications $SL(2,\mathbb{O})\simeq SO(1,9)$ and the eleventh Connes direction, which place the construction next to eleven-dimensional theory without being it; the two unequal Grassmann numbers $\beta_1,\beta_2$ needed for consistent equations of motion, which make the aikyon a two-dimensional object; and the statement that gravity is emergent rather than quantised, which is the programme's refusal.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

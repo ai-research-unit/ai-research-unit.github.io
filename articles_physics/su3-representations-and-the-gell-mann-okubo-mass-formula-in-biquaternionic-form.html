@@ -72,6 +72,7 @@
         <h1 id="su3-representations-and-the-gell-mannokubo-mass-formula-in-biquaternionic-form"><strong>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(n,n_{\mathrm{dyn}})$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p>It is recorded with an explicit standing, stated at the outset so that it is not misread as a framework result. The companion <em>Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em> shows that the biquaternion algebra's compact structure reaches $\mathrm{SU}(2)$ and stops, and <em>The Gluon: An Octet Inside the Carrier's Group</em> states the boundary. The $\mathrm{SU}(3)$ structure below is therefore <strong>not an algebra of $\mathbb{B}$</strong>. It is the external machinery by which the hadron spectrum is classified, and it appears in the corpus because the spinor-structure programme attaches it to the spinor structure through the spin–charge Hilbert space — the spin factor of that space is the framework's own, the charge factor is this external $\mathrm{SU}(3)$.</p>
 <p>The article is organised as follows. A section gives the representations as traceless bisymmetric tensors and the degree formula. A section fixes the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras. A section states the admissibility condition and lists the allowed degrees. A section reduces the octet into isospin multiplets. A section derives and then checks the Gell-Mann–Okubo mass formula. A closing section states the biquaternion interpretation.</p>
 <ul>
@@ -244,8 +245,8 @@ $$</p>
 D_{i\imath} = \digamma_{\mathrm{cff}}\delta_{i\imath}\mathbf{1}+\mu A_{i\imath}+\jmath\sum_l A_{il}A_{l\imath}+\dots,
 $$</p>
 <p>$$
-Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
-+C_2\begin{pmatrix}\tfrac23&0&0\\0&-\tfrac13&0\\0&0&-\tfrac13\end{pmatrix},
+Z = C\begin{pmatrix}\tfrac13&amp;0&amp;0\\0&amp;\tfrac13&amp;0\\0&amp;0&amp;-\tfrac23\end{pmatrix}
++C_2\begin{pmatrix}\tfrac23&amp;0&amp;0\\0&amp;-\tfrac13&amp;0\\0&amp;0&amp;-\tfrac13\end{pmatrix},
 \qquad |C_2|\ll|C| .
 $$</p>
 <p>The first term of $Z$ splits the supermultiplet into I-multiplets of <strong>different hypercharge</strong> $Y$; the second, much smaller, splits the members <strong>within</strong> an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\zeta A_{33}+\digamma_{\mathrm{mes}}\sum_l A_{3l}A_{l3}$ and $\delta m_2^2=\zeta_2A_{11}+\digamma_{\mathrm{mes,2}}\sum_l A_{1l}A_{l1}$ with $\zeta_2=\theta\zeta$, $\digamma_{\mathrm{mes,2}}=\theta\digamma_{\mathrm{mes}}$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the <strong>Gell-Mann–Okubo mass formula</strong></p>
@@ -270,7 +271,7 @@ $$</p>
 <th>multiplet</th>
 <th>$I$</th>
 <th>$Y$</th>
-<th>$m_{\mathrm{exp}}$ (MeV)</th>
+<th>$m_{\mathrm{exp}}$ (kg)</th>
 <th>$m_{\text{th}}$</th>
 </tr>
 </thead>
@@ -312,14 +313,14 @@ $$</p>
 m_Ζ+m_N = 2m_0+2\alpha+\gamma .
 $$</p>
 <p>The first is the Gell-Mann–Okubo relation for the baryon octet. The second identifies the combination $2m_0+2\alpha+\gamma$ with the sum, so that with $m_0=\frac14(m_N+m_\Lambda+m_\Sigma+m_Ζ)$ the relation becomes a statement about the octet average.</p>
-<p><strong>Check.</strong> With the Particle Data Group values $m_N=938.918$, $m_\Lambda=1115.683$, $m_\Sigma=1193.154$, $m_Ζ=1318.0$ MeV:</p>
+<p><strong>Check.</strong> With the Particle Data Group values $m_N=938.918$, $m_\Lambda=1115.683$, $m_\Sigma=1193.154$, $m_Ζ=2.3495\times10^{-27}\ \mathrm{kg}$:</p>
 <p>$$
-m_N+m_Ζ = 2256.9\ \text{MeV},
+m_N+m_Ζ = 4.0233\times10^{-27}\ \text{kg},
 \qquad
-\tfrac12(3m_\Lambda+m_\Sigma) = 2270.1\ \text{MeV},
+\tfrac12(3m_\Lambda+m_\Sigma) = 4.0468\times10^{-27}\ \text{kg},
 $$</p>
 <p>a discrepancy of $0.58\%$. The relation is satisfied to better than one percent by the physical masses, which is the standard statement of $\mathrm{SU}(3)$ flavour symmetry's accuracy, and it is a genuine test because the four masses are independent inputs.</p>
-<h2 id="the-supermultiplet-mass-math224">The Supermultiplet Mass $m_0$</h2>
+<h2 id="the-supermultiplet-mass-math227">The Supermultiplet Mass $m_0$</h2>
 <p>The parameter $m_0$ is $\mathrm{SU}(3)$-invariant and therefore <strong>not determined by $\mathrm{SU}(3)$</strong>; it is an external parameter, one value per supermultiplet, and it is the average of the masses of the charge multiplets in the supermultiplet. For the baryon octet,</p>
 <p>$$
 \boxed{\;m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_Ζ\bigr)\;}.
@@ -335,7 +336,7 @@ $$</p>
 <li>The degree formula $N(n,n_{\mathrm{dyn}})=\frac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.</li>
 <li>The admissibility condition $n-m\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.</li>
 <li>The octet reduction $\mathrm{sym}_0^{(1,1)}=Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, dimensions $3+2+2+1=8$.</li>
-<li>The Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.</li>
+<li>The Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $4.0468\times10^{-27}\ \mathrm{kg}$, a $0.58\%$ discrepancy.</li>
 </ul>
 <p><strong>Transcribed, not derived.</strong></p>
 <ul>

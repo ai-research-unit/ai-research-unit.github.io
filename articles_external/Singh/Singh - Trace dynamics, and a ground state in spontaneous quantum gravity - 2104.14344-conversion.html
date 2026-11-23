@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trace Dynamics, and a Ground State in Spontaneous Quantum Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, and a ground state in spontaneous quantum gravity - 2104.14344.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="trace-dynamics-and-a-ground-state-in-spontaneous-quantum-gravity"><strong>Trace Dynamics, and a Ground State in Spontaneous Quantum Gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2104.14344v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, April 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Mod. Phys. Lett. A (2020) 2150019</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Trace dynamics, and a ground state in spontaneous quantum gravity - 2104.14344-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, and a ground state in spontaneous quantum gravity - 2104.14344.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Trace dynamics, and a ground state in spontaneous quantum gravity - 2104.14344.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the trace Lagrangian of one aikyon — the space-time-matter atom of the programme — rewrites it in terms of two bosonic variables, and derives a time-independent Schrödinger equation for it. The equation's eigenvalues are a fundamental frequency times $\hbar$, so the spectrum of the aikyon is fixed by the same parameters that appear in the Lagrangian. Solving for the ground state gives a Gaussian with a minimum area spread, which the paper reads as a non-singular state of the universe at the big bang.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"This Lagrangian for the unified entity - called the aikyon - is invariant under global unitary transformations, and as a result possesses a novel conserved charge, known as the Adler-Millard charge."</p>
+<h3 id="the-result">The result</h3>
+<p>"In the present paper, we derive an eigenvalue equation, analogous to the time-independent Schrödinger equation, for the Hamiltonian of the theory."</p>
+<p>"We show that in the emergent quantum theory, the energy eigenvalues of the aikyon are characterised in terms of a fundamental frequency times Planck's constant."</p>
+<h3 id="why-it-matters">Why it matters</h3>
+<p>"The eigenvalues of this equation can, in principle, determine the values of the parameters of the standard model." And: "Hopefully, this equation also carries information about the parameters of the standard model, considering that it depends on the gauge coupling constant" $\alpha$, "and also on the length parameter" $L$.</p>
+<h3 id="the-equation">The equation</h3>
+<p>It is "a time-independent Schrödinger equation for these four variables, in the potential shown", with the potential bilinear: "The system has the characteristics of an oscillator, considering the bi-linear nature of the potential."</p>
+<h3 id="the-ground-state">The ground state</h3>
+<p>"It has the character of a non-singular ground state, with a 'minimum area spread'" of order $L^3/6\pi\alpha L_P$.</p>
+<p>"If the aikyon is an electron, this state non-perturbatively describes the electron, together with its mass aspect, and with all the fields that it produces! We believe this is the first ever result of its kind."</p>
+<h3 id="the-spectrum">The spectrum</h3>
+<p>"We do not yet have reason to assume that $r$ and $s$ take only discrete values. Therefore we have a continuous spectrum of energy eigenstates."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-particle-is-a-bound-state-of-its-own-fields">1. A particle is a bound state of its own fields</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: solving the aikyon's eigenvalue equation gives a normalisable ground state that describes the electron together with its mass aspect and all the fields it produces. The particle is not a point source added to a field theory; it is the lowest mode of one object that contains both.</p>
+<p><strong>What it would add.</strong> The corpus's field-theory articles treat the source and the field as distinct: a current on the right, a field on the left. This removes the distinction at the level of the spectrum, and the removal is not a reinterpretation but a computed normalisable state. It would give the corpus's self-field and mass-renormalisation discussions a structural starting point instead of a perturbative one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification of the ground state with a specific particle requires choosing $L$ and $\alpha$ to match, and only then does the electron interpretation hold.</p>
+<h3 id="2-a-minimum-area-spread-instead-of-a-singularity">2. A minimum area spread instead of a singularity</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: the ground-state wavefunction is Gaussian in the four variables, so the uncertainty in the "position" variables has a floor of order $L^3/6\pi\alpha L_P$. Nothing can be squeezed below it, so the big-bang limit is a minimum-area state rather than a singular point.</p>
+<p><strong>What it would add.</strong> The corpus's cosmology articles treat the initial singularity as either a breakdown of the theory or a boundary condition. This makes it a ground state with a computable spread, which is what a quantum theory should give. The number is also specific enough to compare with other minimum-length proposals, which the corpus already contains in the Karolyhazy form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation is for a single aikyon; the cosmological reading requires extrapolating one atom of space-time-matter to the whole universe, which the paper asserts rather than argues.</p>
+<h3 id="3-a-continuous-spectrum-stated-as-a-limitation">3. A continuous spectrum, stated as a limitation</h3>
+<p><strong>The idea.</strong> A <strong>candid gap</strong>: the excited states are labelled by integers $r,s$, but nothing in the theory forces them to be integers, so the spectrum is continuous and the degeneracy is double.</p>
+<p><strong>What it would add.</strong> Derivations of this kind usually present a discrete spectrum and let the reader assume quantisation has been achieved. This one says plainly that it has not, and says why: no boundary condition or periodicity has been imposed. Recording the gap is useful because it marks exactly where the programme needs a new input, and a corpus reader can see which later paper fills it.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/the-minimal-polynomial-and-the-jordan-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing in the paper supplies the missing condition, so the discreteness of the standard model's parameters remains unexplained.</p>
+<p>The rank: the particle-as-bound-state claim first, because it is the strongest physical statement; the minimum area second, because it is a number; the continuous spectrum third, because it is an admitted gap.</p>
+<p>The remaining items in one line each: the two bosonic combinations $q_1,q_2$ that diagonalise the cross terms, which is the technical device that makes the equation separable; the identification $k=\alpha^2c^2a_1a_0/L^2$ and $m=a_1a_0/4$ as the oscillator parameters, which is how the analogy to a harmonic oscillator is made precise; and the choice $a_1=6\pi m_{Pl}$, which is the coefficient needed to recover Einstein's equations with the right numbers.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

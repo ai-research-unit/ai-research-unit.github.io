@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Path Integrals and Generations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Spin Path Integrals and Generations - 1006.3114.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-path-integrals-and-generations"><strong>Spin Path Integrals and Generations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1006.3114v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carl Brannen</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 June 2010 (the PDF carries the date 28 October 2018)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Spin Path Integrals and Generations - 1006.3114-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Spin Path Integrals and Generations - 1006.3114.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Spin Path Integrals and Generations - 1006.3114.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a spin path integral out of products of mutually unbiased bases — the three spin-up projectors $X$, $Y$, $Z$ — the way the position path integral can be written as a product of incompatible states. The product is not stable in spin, but its long-time limit returns ordinary spin-1/2 behaviour, and it does so in three orthogonal ways. The author identifies those three long-time solutions with the three generations. He then writes a mass formula as a discrete Fourier transform of the propagator, recovers Rosen's three-parameter charged-lepton formula from it, and notes that Koide's relation follows from one value of a coefficient. Neutrino masses are discussed with the same ansatz.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"Recent quantum information research by G. Svetlichny, J. Tolar, and G. Chadzitaskos have shown that the Feynman position path integral can be mathematically defined as a product of incompatible states; that is, as a product of mutually unbiased bases (MUBs). Since the more common use of MUBs is in finite dimensional Hilbert spaces, this raises the question 'what happens when spin path integrals are computed over products of MUBs?'"</p>
+<h3 id="the-result">The result</h3>
+<p>"Such an assumption makes spin no longer stable. We show that the usual spin-1/2 is obtained in the long-time limit in three orthogonal solutions that we associate with the three elementary particle generations."</p>
+<h3 id="the-mass-ansatz">The mass ansatz</h3>
+<p>"it may be useful to write $m_g$ in the form $m_g=\sum_{n=1}^3 A_n w_g^n$", which with $A_1=B\,e^{iC}$ becomes</p>
+<p>$$
+m_g=A_3+A_1e^{2ig\pi/3}+A_2e^{-2ig\pi/3}=A_3+2B\cos\left(\frac{2g\pi}{3}+C\right).
+\tag{paper 66}
+$$</p>
+<h3 id="the-formula-it-reproduces">The formula it reproduces</h3>
+<p>"in units with $c=1$, this is the charged lepton mass equation used by Gerald Rosen:</p>
+<p>$$
+\sqrt{m_g}=\sqrt{17716\ \mathrm{eV}}\left[1+\sqrt2\cos\left(\frac{2g\pi}{3}+\frac29\right)\right],
+\tag{paper 67}
+$$</p>
+<p>who notes that it is accurate to $\mathcal{O}(10^{-5})$". And: "In 1982, Yoshio Koide discovered a formula ... $2(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2=3(m_e+m_\mu+m_\tau)$. ... This formula follows from the $\sqrt2$ in Eq. (67)."</p>
+<h3 id="neutrinos">Neutrinos</h3>
+<p>"Koide's formula would provide the third restriction but it is incompatible with the oscillation measurements. On the other hand, the oscillation measurements are compatible with Eq. (66) with $A_3/B=\sqrt2$."</p>
+<h3 id="the-robustness-claim">The robustness claim</h3>
+<p>"The calculation is robust in that the long-time propagators $G^\infty_g$ of Eq. (49) do not depend on the details of $G_g$." Even with the diagonal of $G_g$ set to zero, "the discrete Fourier transform of $G_g$ would still be diagonal with one element larger in magnitude than the others and this element would dominate $G_N^\infty$ leaving $G_g$ unchanged. Spin-1/2 behavior is similarly robust."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-generations-as-the-long-time-eigen-solutions-of-an-unstable-spin-propagator">1. Generations as the long-time eigen-solutions of an unstable spin propagator</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: a propagator built from three mutually unbiased spin projectors is not stable, and its long-time limit has three orthogonal stable solutions; those are the generations, so three is a property of the propagator rather than an input.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code> takes three generations as the first three rungs of a ladder with a potential between them. Here there is no potential: the three arise as the dimension of the space of stable long-time solutions, and the ladder's spacing would have to come from the coefficients $A_n$. That is a different origin for the same number, and the article currently has only one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code>, in the section on the number of generations.</p>
+<p><strong>What stands in the way.</strong> The identification of the three solutions with generations is an interpretation, not a derivation; nothing in the paper forces the physical states to be those solutions. First, because a second, independent route to "three" is what the folder lacks.</p>
+<h3 id="2-rosens-three-parameter-formula-which-contains-koide">2. Rosen's three-parameter formula, which contains Koide</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $\sqrt{m_g}\propto1+\sqrt2\cos(2g\pi/3+2/9)$ fits the three charged leptons to $10^{-5}$ with fixed coefficients, and Koide's relation is the statement that the coefficient of the cosine is $\sqrt2$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §3 speaks of the circle and the angle but has only one angle, $2/9$, entering through the parametrisation; Rosen's formula fixes both the angle and the amplitude, so it is a two-parameter fit to three masses, not one. That changes the count in §1 and gives the angle $2/9$ a second, independent appearance — here it is $\pi/12$-adjacent in the propagator language.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §3 and §14, where the phase $2/9$ is discussed.</p>
+<p><strong>What stands in the way.</strong> The agreement to $10^{-5}$ is a fit with two parameters and three numbers; the corpus note already warns that this kind of coincidence is cheap. Second.</p>
+<h3 id="3-a-reason-the-neutrino-sector-prefers-a-different-coefficient">3. A reason the neutrino sector prefers a different coefficient</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: the same propagator with $A_3/B=\sqrt2$ reproduces the neutrino oscillation data, while Koide's value is incompatible with them, so the two sectors differ in one coefficient of one formula.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> records that the neutrino masses are known only through two squared-mass differences and that the absolute scale is open. A one-coefficient switch between sectors would be a candidate for why the charged-lepton closure does not extend to neutrinos — the question <code>articles_internal/flavour-research.md</code> §1 leaves open.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, "The Mass Ordering and the Absolute Scale".</p>
+<p><strong>What stands in the way.</strong> The statement is that the data are "compatible" with the ansatz, which is weaker than a fit, and the paper gives no $\chi^2$. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

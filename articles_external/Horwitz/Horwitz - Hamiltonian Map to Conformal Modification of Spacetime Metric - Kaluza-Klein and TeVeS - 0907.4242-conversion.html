@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamiltonian Map to Conformal Modification of Spacetime Metric: Kaluza–Klein and TeVeS — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Hamiltonian Map to Conformal Modification of Spacetime Metric - Kaluza-Klein and TeVeS -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hamiltonian-map-to-conformal-modification-of-spacetime-metric-kaluzaklein-and-teves"><strong>Hamiltonian Map to Conformal Modification of Spacetime Metric: Kaluza–Klein and TeVeS</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0907.4242v2 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. Horwitz, A. Gershon, M. Schiffer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 20 May 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Hamiltonian Map to Conformal Modification of Spacetime Metric - Kaluza-Klein and TeVeS - 0907.4242-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Hamiltonian Map to Conformal Modification of Spacetime Metric - Kaluza-Klein and TeVeS - 0907.4242.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-conformal-anomaly-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Hamiltonian Map to Conformal Modification of Spacetime Metric - Kaluza-Klein and TeVeS - 0907.4242.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Pushes the conformal-map method into gravity-modified dynamics. A Hamiltonian containing an Einstein metric and a world scalar field maps to a Hamiltonian with a conformal metric, and the map is shown to reproduce the structure of Bekenstein and Milgrom's RAQUAL. Adding gauge-type structure produces a non-compact Kaluza–Klein effective metric that reproduces TeVeS. The paper also has to solve a technical problem: keeping the unit-timelike constraint on the Bekenstein–Sanders vector field under local gauge transformations forces a new class of gauge transformations acting on the Hilbert bundle, and those make the fields non-Abelian.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"A map of the type discussed in ref.[8], of a Hamiltonian containing an Einstein metric, generating the connection form of general relativity, and a world scalar field, representing a distribution of energy on the spacetime manifold, into a corresponding Hamiltonian with a conformal metric (and compatible connection form), can account for the structure of the RAQUAL theory of Bekenstein and Milgrom."</p>
+<p>"Furthermore, applying this correspondence to a Hamiltonian with gauge-type structure" gives "a non-compact Kaluza-Klein effective metric which can account for the TeVeS structure of Bekenstein, Sanders and Milgrom."</p>
+<h3 id="the-technical-obstruction">The technical obstruction</h3>
+<p>"In order to maintain the constraint condition Uµ U µ = −1 for the Bekenstein-Sanders fields, under local gauge transformations, we have introduced a class of gauge of gauge transformations on the underlying quantum theory which acts on the Hilbert bundle, quite analogous to that arising in the second quantization of the electromagnetic field (where"</p>
+<h3 id="what-that-buys">What that buys</h3>
+<p>"The action of this class of gauges induces a nonabelian structure on the fields, which therefore satisfy Yang-Mills type field equations with source currents associated with matter flow. In the Abelian limit, these equations contain residual non-linear terms which may avoid the caustic singularities found by Contaldi et al for an electromagnetic type gauge field."</p>
+<h3 id="the-empirical-side">The empirical side</h3>
+<p>"The phenomenological constraints placed on the TeVeS variables in its astrophysical applications and on its MOND limit would, in principle, place constraints on the vector and scalar fields appearing in the corresponding Hamiltonian model, for which the additive world scalar field corresponds to an energy distribution not associated with electromagnetic radiation."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-modified-gravity-theory-is-a-conformal-frame-of-a-hamiltonian">1. A modified-gravity theory is a conformal frame of a Hamiltonian</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: RAQUAL and TeVeS are not new dynamics imposed on spacetime. They are what a Hamiltonian with an Einstein metric and an added scalar looks like after a conformal map. The modified gravity is a change of frame of a conventional system with an energy distribution.</p>
+<p><strong>What it would add.</strong> The corpus's effective-metric articles derive a metric from a medium. This derives modified gravity from a bookkeeping change, and it makes a testable claim: the scalar that produces the MOND limit is an energy density, so it must be sourced by matter and must be absent where there is none. That is a sharper statement than the TeVeS axioms, and it gives the corpus a way to discuss modified gravity without adding a new sector.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is structural and the paper does not compute a rotation curve; whether the scalar field it requires is the one galaxies need is left open.</p>
+<h3 id="2-constraint-preserving-gauge-transformations-make-a-theory-non-abelian">2. Constraint-preserving gauge transformations make a theory non-Abelian</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: if a gauge transformation must preserve a normalisation constraint on a vector field, the transformation cannot act on the field alone — it must act on the space the field lives in. The resulting transformations compose non-commutatively, and the fields obey Yang–Mills equations even though the original gauge group was Abelian.</p>
+<p><strong>What it would add.</strong> The corpus's gauge articles derive non-Abelian structure from promoting a global symmetry to a local one. This derives it from a constraint instead, which is a different origin for the same outcome, and it explains why modified-gravity vector sectors keep producing Yang–Mills-like structure. It also offers the corpus a principle: constraints, not just groups, generate non-Abelian gauge structure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction relies on "gauge of gauge" transformations whose physical status is unclear, and the paper presents them as a device rather than as a symmetry with an interpretation. </p>
+<h3 id="3-residual-non-linear-terms-can-remove-caustics">3. Residual non-linear terms can remove caustics</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: the non-Abelian terms survive in the Abelian limit as residual non-linearities, and those may prevent the caustic singularities that a purely electromagnetic-type gauge field develops. </p>
+<p><strong>What it would add.</strong> The corpus's articles on singularity formation and on the modulational stability of fields look for terms that regularise. Here the regularising terms are leftovers of the gauge structure rather than additions to the Lagrangian, which is a cheaper mechanism, and it is checkable: one can ask whether the corpus's caustic calculations change when a residual non-linearity of this shape is included. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-conformal-anomaly-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong>"May avoid" is the paper's own wording; no caustic calculation is redone, and the claim is a possibility rather than a demonstration.</p>
+<p>The rank: modified gravity as a conformal frame first, because it is the paper's thesis; constraint-generated non-Abelian structure second, because it is a mechanism; the caustic remark last, because it is unproved.</p>
+<p>The remaining items in one line each: the map from the Einstein-metric Hamiltonian to the conformal one, which is the technical core; the non-compact Kaluza–Klein effective metric, which is the specific object matching TeVeS; and the inversion of the MOND constraints into constraints on the scalar, which is the empirical hook.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

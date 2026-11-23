@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renormalization, Decoupling and the Hierarchy Problem — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Renormalization, Decoupling and the Hierarchy Problem 2408.06406v4.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="renormalization-decoupling-and-the-hierarchy-problem"><strong>Renormalization, Decoupling and the Hierarchy Problem</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2408.06406v4 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Kang-Sin Choi (Ewha Womans University, Seoul)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 5 October 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Renormalization, Decoupling and the Hierarchy Problem 2408.06406v4-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Renormalization, Decoupling and the Hierarchy Problem 2408.06406v4.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Renormalization, Decoupling and the Hierarchy Problem 2408.06406v4.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the hierarchy problem is a misunderstanding of renormalisation: once the observable is the renormalised mass as a function of external momentum rather than a constant parameter, the quadratic cutoff dependence carries no physical information, and the genuine question is the dependence on a heavy mass $M$. The suppression is shown by explicit calculation to two loops and by power counting to all orders.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-reframing">The reframing</h3>
+<p>"The hierarchy problem is associated with renormalization and decoupling. The smallness of the scalar mass against loop corrections follows from the decoupling of heavy fields, once the observable is correctly identified as the renormalized mass depending on the external momentum rather than a constant parameter."</p>
+<h3 id="the-result">The result</h3>
+<p>The loop corrections "are finite, independent of regularization and admit a well-defined perturbative expansion, so that a quadratic dependence on a regulator cutoff carries no physical information. The substantive question is the dependence on a physical heavy mass $M$."</p>
+<p>The renormalised correction to the scalar mass-squared from a heavy field "is suppressed as (p2 − m2h )2 /M 2 , where p is the external momentum and mh the scalar pole mass, provided the couplings are held fixed as M → ∞. The surviving momentum dependence is in principle measurable. This"</p>
+<p>That factor is the paper's central formula, and its square is what makes the decoupling work: the correction vanishes on shell and grows only away from it.</p>
+<h3 id="what-is-not-claimed">What is not claimed</h3>
+<p>"We do not address the origin of the small tree-level mass." The paper removes the loop contribution to the hierarchy, not the hierarchy itself.</p>
+<h3 id="the-status">The status</h3>
+<p>The two-loop calculation is explicit; the all-orders statement is by power counting. The decoupling theorem is said to hold "up to the renormalization of the light masses".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-running-mass-is-a-function-of-momentum-not-a-number">1. A running mass is a function of momentum, not a number</h3>
+<p><strong>The idea.</strong> Replacing the constant mass parameter by a momentum-dependent renormalised mass is what makes the cutoff drop out. The object that runs is an observable. This is a <strong>reading</strong> with calculational force.</p>
+<p><strong>What it would add.</strong> A sharper statement of what the corpus's renormalisation-group article means by running: not a parameter at a scale, but a function evaluated off shell.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, at the definition of the running quantity.</p>
+<p><strong>What stands in the way.</strong> The corpus's running is defined through a scale parameter, not through an external momentum, and the two definitions agree only in specific schemes.</p>
+<h3 id="2-quadratic-cutoff-dependence-is-a-bookkeeping-artefact">2. Quadratic cutoff dependence is a bookkeeping artefact</h3>
+<p><strong>The idea.</strong> A quadratic divergence is not a physical effect: it is removed by the counterterm and leaves nothing. Only the dependence on a physical mass survives. This is a <strong>reading</strong> that settles an old confusion.</p>
+<p><strong>What it would add.</strong> A guard against treating power divergences as physical, which the corpus's regularisation remarks could otherwise invite.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, at the divergence classification.</p>
+<p><strong>What stands in the way.</strong> The argument assumes a renormalisable theory with a decoupling heavy field; a theory where the heavy field does not decouple would give a different answer, and the corpus has no such example.</p>
+<p>This is a thirty-page preprint; the reframing, the $(p^2-m_h^2)^2/M^2$ result, the two-loop check and the power-counting argument are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

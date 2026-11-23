@@ -80,7 +80,7 @@
 $$</p>
 <p>The model of an element is the matrix</p>
 <p>$$
-\mathsf{M}_2(\tilde Q_1)=\begin{pmatrix}Q_{1t}-iQ_{1z}&-iQ_{1x}-Q_{1y}\\-iQ_{1x}+Q_{1y}&Q_{1t}+iQ_{1z}\end{pmatrix},\qquad Q_{1,\mu}=q_\mu+iq'_\mu ,
+\mathsf{M}_2(\tilde Q_1)=\begin{pmatrix}Q_{1t}-iQ_{1z}&amp;-iQ_{1x}-Q_{1y}\\-iQ_{1x}+Q_{1y}&amp;Q_{1t}+iQ_{1z}\end{pmatrix},\qquad Q_{1,\mu}=q_\mu+iq'_\mu ,
 $$</p>
 <p>of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2$ and trace $2Q_{1t}$, read on the matrix.</p>
 <h2 id="the-model-as-a-model-of-the-dynamics">The Model as a Model of the Dynamics</h2>
@@ -90,16 +90,16 @@ $$</p>
 $$</p>
 <p>and the dynamics of the biquaternion family is conjugate to the dynamics of a polynomial map of the four complex entries of the matrix.</p>
 <p><strong>Proof.</strong> $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q_1^2+\tilde Q_3)=\mathsf{M}_2(\tilde Q_1)^2+\mathsf{M}_2(\tilde Q_3)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.</p>
-<p><strong>Remark (the reduction to four complex coordinates).</strong> The matrix has four complex entries; with $M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}$ its square is</p>
+<p><strong>Remark (the reduction to four complex coordinates).</strong> The matrix has four complex entries; with $M=\begin{pmatrix}\alpha&amp;\beta\\\gamma&amp;\delta\end{pmatrix}$ its square is</p>
 <p>$$
-M^2=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}
-=\begin{pmatrix}\alpha^2+\beta\gamma&\beta(\alpha+\delta)\\\gamma(\alpha+\delta)&\delta^2+\beta\gamma\end{pmatrix},
+M^2=\begin{pmatrix}\alpha&amp;\beta\\\gamma&amp;\delta\end{pmatrix}\begin{pmatrix}\alpha&amp;\beta\\\gamma&amp;\delta\end{pmatrix}
+=\begin{pmatrix}\alpha^2+\beta\gamma&amp;\beta(\alpha+\delta)\\\gamma(\alpha+\delta)&amp;\delta^2+\beta\gamma\end{pmatrix},
 $$</p>
 <p>and the family is the four-dimensional complex map</p>
 <p>$$
 (\alpha,\beta,\gamma,\delta)\longmapsto(\alpha^2+\beta\gamma+n_1,\ \beta(\alpha+\delta)+n_2,\ \gamma(\alpha+\delta)+n_3,\ \gamma\beta+\delta^2+n_4)
 $$</p>
-<p>with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are quadratic in one line and the off-diagonal entries are linear in the trace $\alpha+\delta$ and the off-diagonal pair. <strong>The map of the entries is a polynomial map of degree two of $\mathbb{C}^4$</strong>, and the four complex dimensions of the space appear here for the first time.</p>
+<p>with $N=\begin{pmatrix}n_1&amp;n_2\\n_3&amp;n_4\end{pmatrix}$; the diagonal entries are quadratic in one line and the off-diagonal entries are linear in the trace $\alpha+\delta$ and the off-diagonal pair. <strong>The map of the entries is a polynomial map of degree two of $\mathbb{C}^4$</strong>, and the four complex dimensions of the space appear here for the first time.</p>
 <h2 id="the-norm-comparison-and-the-escape-notions">The Norm Comparison and the Escape Notions</h2>
 <p><strong>Proposition (the Frobenius and Euclidean norms).</strong> For every biquaternion, $\langle \mathsf{M}_2(\tilde Q_1)\rangle_*^{1/2}=\sqrt2\,\|\tilde Q_1\|$; for every pair, $\|\tilde Q_2\tilde Q_1\|\le\sqrt2\,\|\tilde Q_2\|\|\tilde Q_1\|$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q_1\|$.</p>
 <p><strong>Proof.</strong> The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q_1)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_{1,\mu}|^2$ computed twice, hence $\langle \mathsf{M}_2(\tilde Q_1)\rangle_*=2\|\tilde Q_1\|^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde Q_2\tilde Q_1\|=\langle \mathsf{M}_2(\tilde Q_2\tilde Q_1)\rangle_*^{1/2}\le\langle \mathsf{M}_2(\tilde Q_2)\rangle_*^{1/2}\langle \mathsf{M}_2(\tilde Q_1)\rangle_*^{1/2}=2\|\tilde Q_2\|\|\tilde Q_1\|$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q_1\|$.</p>
@@ -113,7 +113,7 @@ $$</p>
 $$</p>
 <p>and for the parameter zero, $\langle\tilde Q_{1,n}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}^{2^n}$. In the entries of the matrix the two invariants are the classical ones,</p>
 <p>$$
-M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
+M=\begin{pmatrix}\alpha&amp;\beta\\\gamma&amp;\delta\end{pmatrix},\qquad
 \det M=\alpha\delta-\beta\gamma,\qquad
 \operatorname{tr}M=\alpha+\delta,\qquad
 \chi_M(\omega)=\omega^2-(\operatorname{tr}M)\omega+(\det M).
@@ -130,10 +130,10 @@ $$</p>
 <p><strong>Proposition (the element and the operator are different objects).</strong> Let $L_{\tilde Q_1}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$. Then $L_{\tilde Q_1}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\mathsf{M}_2(\tilde Q_1)$ is the two-by-two matrix corresponding to the element $\tilde Q_1$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the matrix of $L_{\tilde Q_1}$ is</p>
 <p>$$
 \begin{pmatrix}
-Q_{1t}&-Q_{1x}&-Q_{1y}&-Q_{1z}\\
-Q_{1x}&Q_{1t}&-Q_{1z}&Q_{1y}\\
-Q_{1y}&Q_{1z}&Q_{1t}&-Q_{1x}\\
-Q_{1z}&-Q_{1y}&Q_{1x}&Q_{1t}
+Q_{1t}&amp;-Q_{1x}&amp;-Q_{1y}&amp;-Q_{1z}\\
+Q_{1x}&amp;Q_{1t}&amp;-Q_{1z}&amp;Q_{1y}\\
+Q_{1y}&amp;Q_{1z}&amp;Q_{1t}&amp;-Q_{1x}\\
+Q_{1z}&amp;-Q_{1y}&amp;Q_{1x}&amp;Q_{1t}
 \end{pmatrix},
 $$</p>
 <p>of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\omega-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.</p>

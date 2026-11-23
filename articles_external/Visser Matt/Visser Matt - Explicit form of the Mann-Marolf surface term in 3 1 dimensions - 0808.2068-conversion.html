@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit form of the Mann–Marolf surface term in (3+1) dimensions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit form of the Mann-Marolf surface term in 3 1 dimensions - 0808.2068.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="explicit-form-of-the-mannmarolf-surface-term-in-31-dimensions"><strong>Explicit form of the Mann–Marolf surface term in (3+1) dimensions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0808.2068v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 8 January 2009 (dated 28 October 2008)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Explicit form of the Mann-Marolf surface term in 3 1 dimensions - 0808.2068-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit form of the Mann-Marolf surface term in 3 1 dimensions - 0808.2068.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit form of the Mann-Marolf surface term in 3 1 dimensions - 0808.2068.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The total gravitational action for an asymptotically flat spacetime needs a third term that cancels the divergence of the Gibbons–Hawking surface term. Mann and Marolf defined that term implicitly, through the Ricci tensor of the boundary. This paper inverts the relation for a four-dimensional bulk, so the term is written explicitly using the Einstein tensor of the three-dimensional boundary. The inversion is done with the Jordan canonical form of a mixed tensor, because diagonalising a symmetric matrix fails in Lorentzian signature. The author notes that static spherically symmetric spacetimes hit the apparent division-by-zero case, and that several counterterms coincide in the embeddable situation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"It has been known for many years that the Einstein–Hilbert term is only part of the story when it comes to considering the gravitational action. For a bulk region $\Omega$ bounded by a surface $\partial\Omega$ the full gravitational action is"</p>
+<p>$$\text{(Einstein–Hilbert bulk term)}+\text{(Gibbons–Hawking surface term)}-\text{(Mann–Marolf surface term)}.$$</p>
+<h3 id="the-gap-in-the-literature">The gap in the literature</h3>
+<p>"As presented by Mann and Marolf, their surface term is specified implicitly in terms of the Ricci tensor of the boundary."</p>
+<h3 id="the-new-result">The new result</h3>
+<p>"Herein I demonstrate that for the physically interesting case of a (3+1) dimensional bulk spacetime, the Mann–Marolf surface term can be specified explicitly in terms of the Einstein tensor of the (2+1) dimensional boundary."</p>
+<h3 id="why-a-canonical-form-is-needed">Why a canonical form is needed</h3>
+<p>"this procedure fails in Lorentzian signature — one has to classify all possible canonical forms for $3\times3$ symmetric matrices under local Lorentz transformations, and their stability under eigenvalue perturbations. In Lorentzian signature it is more direct to consider the non-symmetric mixed tensor $\hat K^i{}_j$ and appeal to the Jordan canonical form argument as above."</p>
+<h3 id="why-four-dimensions">Why four dimensions</h3>
+<p>"Up to this stage we could have worked in any number of dimensions $d\ge4$, wheras $d=4$ ... is physically the most important case. Mathematically this is also the most difficult case to deal with, as $d=4$ does not exhibit the many technical simplifications that occur for $d&gt;4$. However it is only in this physically most relevant situation of $d=4$ that we will succeed in inverting $R(\hat K)$ to obtain $\hat K(R)$."</p>
+<h3 id="a-warning">A warning</h3>
+<p>"Note further that there is a risk of a 'divide by zero' if one of the denominators happens to vanish. (We shall soon see that this apparently technical point actually arises in surprisingly simple situations — such as static spherically symmetric spacetimes.)"</p>
+<h3 id="the-coincidence">The coincidence</h3>
+<p>"Thus the KLS, Lau-Mann, and Mann–Marolf counterterms are in this situation all identical."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-boundary-terms-make-the-action-finite">1. Boundary terms make the action finite</h3>
+<p><strong>The idea.</strong> A bulk action needs a subtraction fixed by the boundary geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives entropy from an action without discussing the boundary subtraction. For asymptotically flat settings that subtraction changes the value, so the article should say which action it uses.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The article may work in a setting where the term vanishes. Ranked first, because it affects a number the article quotes.</p>
+<h3 id="2-lorentzian-signature-breaks-a-shortcut">2. Lorentzian signature breaks a shortcut</h3>
+<p><strong>The idea.</strong> You cannot diagonalise a symmetric tensor by orthogonal transformations in Lorentzian signature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/matrix-representations-conventions.md</code> sets out how matrices are handled. A signature-dependent obstruction to diagonalisation is a caveat that belongs in those conventions, since it affects every computation done in the framework.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/matrix-representations-conventions.md</code>, in the section on canonical forms.</p>
+<p><strong>What stands in the way.</strong> It is a technical caveat. Ranked second.</p>
+<h3 id="3-simple-cases-are-the-singular-ones">3. Simple cases are the singular ones</h3>
+<p><strong>The idea.</strong> The division by zero occurs for static spherically symmetric spacetimes, not exotic ones.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> uses spherically symmetric examples as the easy case. This paper shows the easy case can be the degenerate one, which is a useful caution.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the examples.</p>
+<p><strong>What stands in the way.</strong> The degeneracy is about a specific formula. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

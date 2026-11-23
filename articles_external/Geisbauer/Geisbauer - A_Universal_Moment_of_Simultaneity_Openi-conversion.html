@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Universal Moment of Simultaneity – Opening the Continuity Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_Universal_Moment_of_Simultaneity_Openi.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-universal-moment-of-simultaneity-opening-the-continuity-theory"><strong>A Universal Moment of Simultaneity – Opening the Continuity Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>September 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - A_Universal_Moment_of_Simultaneity_Openi-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_Universal_Moment_of_Simultaneity_Openi.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_Universal_Moment_of_Simultaneity_Openi.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Separates duration from moment and argues that special relativity is correct about the first and silent about the second. A universal time flow $T_{\rm uni}$ is introduced, and the reading of any clock becomes a time measure of that flow modulated by three factors — motion, gravitation, expansion — written as a product of cosines. The support offered is interpretive: a re-reading of the Lorentz factor, three thought experiments (train flashes, two planets at five billion light-years, a third observer) and the continuous light stream as a reconstruction criterion. The formulas are stated, not derived; the operational anchors (GPS, muons) are cited as consistency checks, with the detailed calculations deferred to a companion ("Part B"). </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="duration-and-moment">Duration and moment</h3>
+<p>The claim is that "SR is empirically correct yet conceptually incomplete if 'time' is taken only as a duration indicated by clocks", and that "in addition to duration, physics requires the moment — the 'now' — as a structural quantity". Conflating the two "creates the impression that simultaneity is meaningless".</p>
+<h3 id="the-lorentz-factor-re-read">The Lorentz factor, re-read</h3>
+<p>The factor is written out in words as "one over the square root of one minus (v over c) squared", and read as a participation rate: "a moving clock participates less in the universal time flow Tuni —its time measure shrinks.". The guiding question is "not “who is right”, but how all local time measures relate to Tuni . For".</p>
+<h3 id="the-time-angle-and-the-three-cosines">The time angle and the three cosines</h3>
+<p>A time angle $\Theta$ collects the deviation of a local measure from the flow,
+$$\Theta=\arccos\left(\cos\Theta_{\rm grav}\cos\Theta_{\rm kin}\cos\Theta_{\rm exp}\right),$$
+with $T_{\rm Past}^{(5D)}=T_{\rm uni}\cos\Theta$ for $\Theta&lt;0$, $T_{\rm Fut}^{(5D)}=T_{\rm uni}\cos\Theta$ for $\Theta&gt;0$, and $\Theta=0$ marking "the structural present". For small angles $\cos\Theta\approx1-\Theta^2/2$ with $\Theta^2\approx\Theta_{\rm grav}^2+\Theta_{\rm kin}^2+\Theta_{\rm exp}^2$, "so the 5D form reproduces the 4D Lorentz hyperbola in the small-angle limit".</p>
+<p>The measured time of a clock on a path is the product of three orthogonal contributions with the flow:
+$$T=T_{\rm uni}\sqrt{1-\frac{2GM}{rc^2}}\ \sqrt{1-\beta^2}\ \sqrt{1-\left(\frac{Hd}{c}\right)^2},$$
+read aloud in the paper as the gravitational, kinematic and expansion cosines. On sub-Hubble scales $Hd/c&lt;1$, so the last factor is near unity, and "for precision cosmology the coupling to the background dynamics must be treated explicitly".</p>
+<h3 id="entanglement-read-through-the-moment">Entanglement, read through the moment</h3>
+<p>The frame "does not change quantum predictions (Born rule, correlations); it supplies a temporal ordering": both detection events "ts belong to the same universal moment Tuni , independent of signal paths. •", while "the observation layer remains past-bound (light travel to detectors/observers)". For the singlet $S$ reaches $2\sqrt2$ and no-signalling "remains intact. The stated side-conditions are that detector altitude and relative motion can shift timing windows but not the normalized correlations" — a null prediction rather than a positive one.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-single-scalar-for-the-rate-of-a-clock">1. A single scalar for the rate of a clock</h3>
+<p><strong>The idea.</strong> The product of three cosines is one number per clock, and everything about the clock's rate is in it: gravity, speed, expansion. Where the corpus separates the sectors and the frames, this is a <strong>formula</strong> that collapses them into one scalar attached to a worldline.</p>
+<p><strong>What it would add.</strong> A rate where the corpus has a reference and a period: the relational-time article states that the sector exchange "supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate". Here the rate is exactly what is on offer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<p><strong>What stands in the way.</strong> The product needs a common $T_{\rm uni}$ to multiply against, and the corpus has no external time parameter by construction — the two times are the real and imaginary parts of one central coordinate. A formula that divides by a global flow assumes the frame the corpus refuses.</p>
+<h3 id="2-moment-against-duration">2. Moment against duration</h3>
+<p><strong>The idea.</strong> "Duration is what a clock accumulates; moment" is a structural slice that no clock reads. That is a <strong>reading</strong> of the simultaneity problem, and it is independent of the cosine formulas.</p>
+<p><strong>What it would add.</strong> A vocabulary for the corpus's statement that contraction and dilation are "projections, not deformations": the projection is onto a slice, and the slice is what the word "now" would name.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code>, which already resolves the pseudo-paradoxes by refusing to compare at a distance.</p>
+<p><strong>What stands in the way.</strong> The reading has no independent test as stated: every prediction in the paper is a null prediction, and a null prediction cannot separate the reading from the standard one.</p>
+<p>The rank is a judgement: the scalar first, because it is the only object another paper could use; the reading second, because the corpus's own account of simultaneity is already a projection account.</p>
+<p>This is a nine-page paper; the thought experiments, the sectors, the time measure, the entanglement section and a gravitational section are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

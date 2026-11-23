@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarks on the Method of Infinite-Component Wave Equation for Relativistic Model with Internal Structure — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Method of Infinite components wave equation.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarks-on-the-method-of-infinite-component-wave-equation-for-relativistic-model-with-internal-structure"><strong>Remarks on the Method of Infinite-Component Wave Equation for Relativistic Model with Internal Structure</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>38</strong> (1967) 287, No. 1; dated 19 April 1967</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Remarks on the Method of Infinite components wave equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Method of Infinite components wave equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Method of Infinite components wave equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Three remarks on the tower wave equation of the preceding note. First, its norm is real but not positive definite, so no one-particle probability interpretation survives — the same situation as the unquantised Klein–Gordon equation. Second, replacing $P_{\mu}$ by a constant and keeping a <em>second-order</em> equation reverses the spectrum, which isolates exactly what makes the Majorana spectrum fall: it is the order of the equation, not the representation. Third, the method extends from $0(3,2)$ to $0(4,2)=SU(2,2)$ merely by doubling the integer suffixes, and giving the suffixes a three-valued index lets internal $SU(3)$ ride on the tower.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-norm-is-not-a-probability">The norm is not a probability</h3>
+<p>"Our r-elativistic rotator wave equation is given by (5) of I on the hybrid wave function '1/r•Cnt, n2, X~). By defining 'l[r • Cnt, n2) = 'o/!" Writing $\psi^{\dagger}(n_1,n_2)=\psi(n_1,n_2)(\gamma_4)_{nn'}$, the complex-conjugate equation is put in the form $P_{\mu}\psi^{\dagger}-i\kappa P_{\mu}\psi^{\dagger}\gamma_{\mu}-i\kappa(\psi^{\dagger}\gamma_5\gamma_{\mu}S_{\mu}\gamma)=0$ (as printed), and one can verify that the current density defined by $j_{\mu}(X)=-i\psi\partial_{\mu}\psi^{\dagger}+i\kappa\psi\gamma_{\mu}\psi^{\dagger}+i\kappa\psi\gamma_5\gamma_{\mu}S_{\nu}\psi^{\dagger}$ satisfies $\partial j_{\mu}/\partial X_{\mu}=0$. The norm $(\psi,\psi)=\int j_0d^{3}X$ is real but not positive definite, so the probability interpretation at the one-particle level is not generally allowed, as in the case of the (unquantized) Klein-Gordon equation.</p>
+<h3 id="where-the-majorana-spectrum-comes-from">Where the Majorana spectrum comes from</h3>
+<p>"If we replace $P_{\mu}$ by a constant, (3) of I goes over to the first order equation ... It is then shown that $P_{\mu}$ must be time-like and accompanies no massless states. If we set the dimensionless constant $a$ as $a=1/2$ for simplicity, (1) gives the mass spectrum $m=\pm\kappa/(J+1/2)$. Except for the double sign corresponding to antiparticles, this brings us back to the unrealistic Majorana spectrum." Now keep the same tower but a second-order equation: "if we work with the Majorana wave function $\psi(n_1,n_2,X_{\mu})$ but assume the second order wave equation ... the spectrum is reversed: $m=\kappa(J+1/2)$, which coincides with (7) of I, except that antiparticles are now absent."</p>
+<h3 id="doubling-the-suffixes-and">Doubling the suffixes, and</h3>
+<p>$SU(3)$ as an index</p>
+<p>Our method of infinite-component wave function for the model containing $0(3,2)$ is extended to one containing $0(4,2)=SU(2,2)$ just by doubling integer suffixes. Thus the wave function is now $\psi(m_1,m_2,n_1,n_2,X_{\mu})$ having four suffixes $m_a,n_a$ ($a=1,2$), each of which runs over all non-negative integers. Then $S_i=S_i^{a}+S_i^{b}$, $R_i=A_i+A_i^{b}$, and these "equations may dimensional unitary representations of the be adopted on the same kinematical basis, imply- ing", with additional generators $v_i=i(A_i-A_i^{\dagger})$, $v_0=(a^{*}a+b^{*}b)/2+1$, and the wave function thus carries $U(2,2)\times L^{**}$. For the equation one takes the second-order form with $v_{\mu}$ from the extended set, derived from the Lagrangian density, and obtains "c., and similarly m=tc(Y+1), v=J+m; m=0,1,2,-··. for ba and b: corresponding to na. Thus In this model only positive energy solutions [aa, a~] = Oap, mr =afar, etc. Then S, = appear. However, there occurs a pair of S;+S%, R,=A,+A~ (where SZ=a*a,a/2, S! = b"'a b/2, A, =ba,a .. a/2) give infinite- *l As before, different wave equations may dimensional unitary representations of the "</p>
+<p>Finally: "An advantage of this scheme lies in the fact that the internal SU(3) symmetry can Downloaded from https://academic.oup.com/ptp/article-abstract/38/1/287/1900357 by guest on 15 March 2020 be naturally accommodated via its simple extension so as to fit a unified description of hadrons. We merely generalize", with "The cor- responding lowering and raising matrices are ara, b,p and their hermitian conjugates, with ara'o/Cmtnnsp,X") =,,mraCmt,-llrtDar.", while " 0(4, 2) generators are the same as before, in which, however, the contraction with respect to the unitary suffix is ·understood, e." is understood.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-indefinite-norm-does-not-spoil-the-equation-it-only-forbids-a-probability-reading">1. An indefinite norm does not spoil the equation; it only forbids a probability reading</h3>
+<p><strong>The idea.</strong> The current is conserved, the norm is real, and it is not positive. Nothing about the equation is inconsistent — the failure is confined to the interpretation. The remedy is not to change the equation but to second-quantise, exactly as for the Klein–Gordon field.</p>
+<p><strong>What it would add.</strong> A precise statement of what an indefinite norm costs. <em>The Finite-Dimensional Representations and Their Unitarity Defect</em> (<code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code>) shows that the algebra's finite-dimensional representations cannot be unitary; Takabayasi shows the <em>tower</em> is unitary as a representation of $0(3,2)$ while the equation built on it still has an indefinite norm. Unitarity of the representation and positivity of the norm are different properties, and this is a clean case where they come apart.</p>
+<p><strong>Where it lands.</strong> That article's defect section, as the infinite-dimensional control case.</p>
+<p><strong>What stands in the way.</strong> The tower's unitarity is with respect to the compact generators; the generators the equation uses are not all self-adjoint on the same form, so the two notions must be separated before the comparison is made.</p>
+<h3 id="2-the-sign-of-the-mass-formula-is-the-order-of-the-equation">2. The sign of the mass formula is the order of the equation</h3>
+<p><strong>The idea.</strong> Same tower, same labels, two equations: first order gives $m=\kappa/(J+\tfrac12)$ with antiparticles, second order gives $m=\kappa(J+\tfrac12)$ without them. The spectrum's direction is a property of the differential order, not of the internal representation.</p>
+<p><strong>What it would add.</strong> A clean separation the corpus does not make. <em>The Majorana Equation in Biquaternionic Form</em> (<code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code>) locates the mass in the right-hand slot and shows in §<em>Why the Mass Sits on the Right</em> what the two placements do to the shell; the present letter adds a third placement axis — the <em>order</em> — and shows it alone flips the spectrum. That is a different and cheaper diagnostic than a change of carrier.</p>
+<p><strong>Where it lands.</strong> §<em>The Equation and Its Three Forms</em>, as a fourth axis, and §<em>Why the Mass Sits on the Right</em> as the adjacent case.</p>
+<p><strong>What stands in the way.</strong> The two equations are not related by a transformation; they are different equations on the same kinematics, which the letter states in a footnote and does not justify.</p>
+<h3 id="3-math41-enters-as-a-three-valued-suffix-not-as-a-larger-algebra">3. $SU(3)$ enters as a three-valued suffix, not as a larger algebra</h3>
+<p><strong>The idea.</strong> Doubling the oscillator suffixes takes $0(3,2)$ to $0(4,2)$. Indexing each suffix by $\alpha=1,2,3$ turns the same construction into one carrying internal $SU(3)$, with the $0(4,2)$ generators unchanged and only the contraction over the new index modified. The internal symmetry is a degeneracy label on the tower.</p>
+<p><strong>What it would add.</strong> A route that costs no enlargement of the operator algebra — which is the corpus's own correction. <em>Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</em> (<code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>) argues that $SU(3)$ needs a three-dimensional module, while $\mathrm{End}(\mathbb B)=M_4(\mathbb C)$ already contains $SU(4)$ as an operator algebra. Takabayasi supplies the missing module <em>without leaving the tower</em>: the three-valued index $\alpha$ on a Fock suffix is a three-dimensional multiplicity space, and the group acting on it is $SU(3)$ by construction. This is the cheapest of all the routes past the ceiling, and it is not one the corpus prices.</p>
+<p><strong>Where it lands.</strong> §<em>What Would Be Needed to Pass the Ceiling</em>, as the index route, and <em>The Spin–Charge Hilbert Space and the $SU(3)$ Supermultiplets in Biquaternionic Form</em> (<code>articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.md</code>), where the colour-like index is already the carrier.</p>
+<p><strong>What stands in the way.</strong> The letter says only "is understood" about the modified contraction and gives no generator algebra for the internal $SU(3)$; whether the symmetry is local, and whether the mass formula respects it, is left open. Eight of the twelve suffixes are also unaccounted for in the printed text.</p>
+<p>The remainder, one line each. That $\psi$ carries $U(2,2)\times L^{**}$ with $U(2,2)=U(1)\times 0(4,2)$ is the compact-plus-conformal structure in one line and belongs with the corpus's conformal notes. That the oscillator spectrum $m=\kappa(\nu+1)$ with $\nu=J+m$ has a pairwise degeneracy under $a\leftrightarrow b$ read as antiparticles is the cheapest antiparticle in the folder. That a bilocal oscillator gives $m^{2}=\mu^{2}+\mu'^{2}(J+2n)$ instead is a footnote worth keeping, because it is the same construction with a different carrier.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

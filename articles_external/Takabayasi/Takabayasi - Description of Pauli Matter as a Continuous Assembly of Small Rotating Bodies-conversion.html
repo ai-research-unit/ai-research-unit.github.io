@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="description-of-pauli-matter-as-a-continuous-assembly-of-small-rotating-bodies"><strong>Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi and Jean-Pierre Vigier</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>18</strong> (1957) 573, No. 6, December 1957; received 3 June 1957</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Description of Pauli Matter as a Continuous Assembly of Small Rotating Bodies.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Develops Kramers' idea — that a two-component spinor is an orientation of three orthogonal axes — into a full formulation of the non-relativistic spinning electron and unifies it with the hydrodynamical scheme. The spinor becomes a density, a scalar conjugate to it restoring gauge invariance, and three Euler angles; the fluid's elements become small rotating bodies; and the theory acquires a Lagrangian and a Hamiltonian in those variables. Two results stand out. The bodies are not rigid, since each body's angular momentum direction is fixed to the body while its angular velocity points along the effective magnetic field. And Planck's constant enters in one role only, as twice the spin magnitude.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-spinor-as-a-triad">The spinor as a triad</h3>
+<p>Following Kramers, a Pauli spinor $\phi$ is equivalent to a complex null vector $\vec\xi$ bilinear in $\phi$ and its contragradient, with $\vec\xi\cdot\vec\xi=0$ and $\vec\xi^{*}\cdot\vec\xi=2P$, so that</p>
+<p>$$
+\vec S=\frac{\hbar}{2}\phi^{\dagger}\vec\sigma\phi
+$$</p>
+<p>is one of three mutually orthogonal vectors, each of magnitude $\frac{\hbar}{2}P$, at every point. "ous assembly of orthogonal co- ordinate systems each attached to each", and we can thus represent the spinor $\phi$ by the orientation of that orthogonal system, together with $P$. Kramers stopped there; the paper adds a phase $\Lambda$ conjugate to the density, so that the orientation variables are gauge independent, and adds the dynamics.</p>
+<h3 id="the-rotating-body-and-why-it-is-not-rigid">The rotating body, and why it is not rigid</h3>
+<p>The picture is "an assembly of very small rotating bodies continuously distributed in space". The authors are careful: "by " rotating body "we only mean a certain body whose rotational orientation of internal rotation has a definite meaning and do not assume farther properties of the usual concept of rigidity. Really our rotating body has a novel property distinct from a customary rigid body : The direction of the angular momentum of rotation is fixed to the body, while the angular velocity of rotation points to the direction" effective magnetic field "acting on it and fluctuates over the body. (§ 5). Formally" A rigid body has a body-fixed angular velocity; this one has a body-fixed axis and a field-aligned rate.</p>
+<h3 id="what-is-classical-and-what-is-not">What is classical, and what is not</h3>
+<p>"It is observed furthermore that Planck's constant is then introduced into the scheme only as the constant signifying twice the magnitude of the spin. The theory takes form of a classical one and is interpretable as such." Two features keep it from being a ready-made classical model: "The first is the condition which connects the vorticity of the hydrodynamical field to the gradients of the spin field in a specified manner, and the second is the fact that the adjacent spins interact in a manner of the 'exchange interaction' type." So the claim is precise: ordinary mechanics of a continuous medium, plus a kinematical constraint tying vorticity to the spin's gradient, plus a force between neighbouring orientations.</p>
+<h3 id="the-variables-and-the-status-of-the-picture">The variables, and the status of the picture</h3>
+<p>The spin variables are resolved "into conjugate pairs {a~l)' a~ 2 )} such", the density acquires a conjugate scalar, and the Lagrangian written in these variables yields a Hamiltonian whose canonical equations reproduce the earlier field equations. For a single particle the fluid is "somewhat fictitious ... (i.e., as the probability fluid)" under the usual interpretation, and the field will attain more real sense for the representation of many Pauli particle system, although in this case it becomes a field of operator and so is associated with quantum fluctuations.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-spinor-is-a-triad-of-three-equal-arrows-the-corpuss-frame-proved-rather-than-chosen">1. The spinor <em>is</em> a triad of three equal arrows — the corpus's frame, proved rather than chosen</h3>
+<p><strong>The idea.</strong> A Pauli spinor's four real parameters are a density plus the orientation of an orthogonal triad whose three vectors each have magnitude $\frac{\hbar}{2}P$. The spin is one column of the triad; the other two complete the orientation. Spin direction and frame are not two objects.</p>
+<p><strong>What it would add.</strong> The identification that makes the corpus's frame reading of the spinor necessary. <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) uses a frame element and a declared axis, and says the spin is the rotor's image of that axis. Takabayasi and Vigier prove the converse for the two-component case: from the spinor alone one constructs a triad, and the spin is one of its columns — Kramers' construction. So the declared axis is not a choice of description; it is the fourth column that the Dirac case has and the Pauli case lacks.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Polar Data of the Fluid</em>, and <em>The Two Sectors: The Hermitian Split and the Four Bridges</em> (<code>articles_physics/the-two-sectors-the-hermitian-split-and-the-four-bridges.md</code>), where the parameter count per sector is already the subject.</p>
+<p><strong>What stands in the way.</strong> The Dirac case has eight parameters against the Pauli case's four, and the corpus's frame is eight-dimensional, so the construction does not transport whole. What transports is the counting argument and the equality of the three lengths, which is a statement about the corpus's Hermitian sector and is a short calculation nobody has done.</p>
+<h3 id="2-the-rotating-body-is-not-rigid-body-fixed-axis-field-fixed-rate">2. The rotating body is not rigid: body-fixed axis, field-fixed rate</h3>
+<p><strong>The idea.</strong> Each element rotates about an axis fixed in the body, at a rate set by the local effective magnetic field and varying over the body. Angular momentum is body-fixed; angular velocity is field-fixed.</p>
+<p><strong>What it would add.</strong> A precise answer to what kind of object the corpus's rotor is. <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> (<code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>) treats the rotor as a rotation with a proper-time dependence but does not say what the axis is attached to. Here the axis belongs to the body and the rate belongs to the field, so the rotor's logarithm is not the angular velocity. That is exactly the corpus's warning that the logarithmic derivative is a bivector and not a vector.</p>
+<p><strong>Where it lands.</strong> That article, as the kinematical statement, and <em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>).</p>
+<p><strong>What stands in the way.</strong> The statement is verbal — "fluctuates over the body" concerns a finite-size element — and the formalism is a point fluid. As a remark it is exact; as a result it needs a finite-element version the paper does not have.</p>
+<h3 id="3-the-exchange-interaction-is-a-force-between-neighbouring-orientations-not-a-potential">3. The exchange interaction is a force between neighbouring orientations, not a potential</h3>
+<p><strong>The idea.</strong> "the adjacent spins interact in a manner of the 'exchange interaction' type": the coupling is between the <em>orientations</em> of neighbouring elements and is not a torque derivable from a spin–spin potential.</p>
+<p><strong>What it would add.</strong> A mechanical face for a topic the corpus treats algebraically. <em>The Jordan–Wigner Transformation in Biquaternionic Form</em> (<code>articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.md</code>) handles exchange as antisymmetry of the amplitude; here it is a force between adjacent elements of a continuum, the same physics in a different variable, and the only place in this folder where exchange appears as a mechanical coupling.</p>
+<p><strong>Where it lands.</strong> That article's introduction, as the continuum counterpart.</p>
+<p><strong>What stands in the way.</strong> The paper names the exchange term and refers forward without writing it, so the import is a pointer and not a formula.</p>
+<p>The remainder, one line each. The Lagrangian and Hamiltonian in Euler-angle and conjugate-pair variables is a variational form of the equations the 1954 letter gives, and the corpus's polar-variables Lagrangian articles do the corresponding job. The gauge-restoring $\Lambda$ is the device of <em>The Gauge Extension of the Central Phase</em> (<code>articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.md</code>). The three-way distinction between c-number, probability and operator fluids is stated more fully in the 1983 paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

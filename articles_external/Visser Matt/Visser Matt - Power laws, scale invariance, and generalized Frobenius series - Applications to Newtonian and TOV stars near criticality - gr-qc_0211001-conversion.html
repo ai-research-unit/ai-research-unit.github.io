@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power laws, scale invariance, and generalized Frobenius series: applications to Newtonian and TOV stars near criticality — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power laws, scale invariance, and generalized Frobenius series - Applications to…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="power-laws-scale-invariance-and-generalized-frobenius-series-applications-to-newtonian-and-tov-stars-near-criticality"><strong>Power laws, scale invariance, and generalized Frobenius series: applications to Newtonian and TOV stars near criticality</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0211001v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Nicolas Yunes</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 31 October 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>International Journal of Modern Physics A (as printed in the PDF header)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Power laws, scale invariance, and generalized Frobenius series - Applications to Newtonian and TOV stars near criticality - gr-qc_0211001-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power laws, scale invariance, and generalized Frobenius series - Applications to Newtonian and TOV stars near criticality - gr-qc_0211001.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Power laws, scale invariance, and generalized Frobenius series - Applications to Newtonian and TOV stars near criticality - gr-qc_0211001.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors build a formalism for scale-invariant differential equations. They rewrite the model in equidimensional and autonomous forms, find the fixed points, and get power-law background solutions. Linearising about a fixed point gives a second set of power laws describing deviations. They then generalise Frobenius series so that solutions can be built near singular points. The worked application is Newtonian and Tolman–Oppenheimer–Volkoff stars near criticality.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-presented">What is presented</h3>
+<p>"We present a self-contained formalism for calculating the background solution, the linearized solutions, and a class of generalized Frobenius solutions to a system of scale invariant differential equations."</p>
+<h3 id="the-steps">The steps</h3>
+<p>"We first cast the scale invariant model into its equidimensional and autonomous forms, find its fixed points, and then obtain power-law background solutions."</p>
+<h3 id="the-second-solution">The second solution</h3>
+<p>"After linearizing about these fixed points, we find a second linearized solution, which provides a distinct collection of power laws characterizing the deviations from the fixed point."</p>
+<h3 id="the-application">The application</h3>
+<p>"Applications to Newtonian and TOV stars near criticality"</p>
+<h3 id="the-interpretation-of-self-similarity">The interpretation of self-similarity</h3>
+<p>"Discrete self-similarity and discrete power laws are not as peculiar as one might at first imagine; instead they are simply the next most [general] thing (after simple power-law behaviour) that can happen in scale invariant systems."</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>"the occurrence of discrete self-similarity in Choptuik's critical solution should not at all be considered [peculiar]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-power-counting-as-a-solution-method">1. Power counting as a solution method</h3>
+<p><strong>The idea.</strong> Scale invariance fixes the leading behaviour, and linearisation gives the corrections.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats scale invariance as a symmetry. Here it is a solution technique, which is a use the target does not make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of scaling.</p>
+<p><strong>What stands in the way.</strong> The method needs scale invariance to begin with. Ranked first, because it turns a symmetry into a tool.</p>
+<h3 id="2-discrete-self-similarity-is-generic">2. Discrete self-similarity is generic</h3>
+<p><strong>The idea.</strong> Discrete power laws appear naturally next to continuous ones.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues obstructions. A result that discreteness is generic softens claims that continuous scaling is required.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The statement is for one class of equations. Ranked second.</p>
+<h3 id="3-frobenius-series-generalised">3. Frobenius series generalised</h3>
+<p><strong>The idea.</strong> Series solutions can be extended past ordinary singular points.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses solutions near boundaries. A generalised series method is a tool for the limits that appear there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> The method is for ODE systems. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

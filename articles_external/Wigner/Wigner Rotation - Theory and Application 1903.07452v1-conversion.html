@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wigner Rotation: Theory and Application to Practical Relativistic Engineering Problems — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Wigner Rotation - Theory and Application 1903.07452v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wigner-rotation-theory-and-application-to-practical-relativistic-engineering-problems"><strong>Wigner Rotation: Theory and Application to Practical Relativistic Engineering Problems</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (DESY report)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1903.07452v1 [physics.acc-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Evgeny Saldin</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 March 2019 (DESY 19-047)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>DESY report, ISSN 0418-9833</td>
+</tr>
+<tr>
+<td>length</td>
+<td>82 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Wigner Rotation - Theory and Application 1903.07452v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Wigner Rotation - Theory and Application 1903.07452v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-four-kinds-of-frame-transformation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Wigner Rotation - Theory and Application 1903.07452v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the textbook Wigner rotation angle for a beam observed in the laboratory frame is wrong by a factor $\gamma$ and that its direction is wrong too, and offers an alternative account in which the rotation follows from the relativity of simultaneity at first order. Two applications carry the argument: the orientation of the modulation wavefront in a free-electron laser after the electron beam is kicked, and the spin dynamics described by the Bargmann–Michel–Telegdi equation. Long, polemical, and explicit about which named authors it is contradicting.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"In previous papers we showed that when the evolution of the modulation wavefront in the case of non-collinear electron beam motion is treated according to relativistic kinematics, the orientation of the wavefront in the ultrarelativistic asymptotic is always perpendicular to the electron beam velocity. This wavefront readjusting after electron beam kicking is one concrete example of Wigner rotation."</p>
+<p>Then the accusation: "Many experts who learned the theory of relativity using textbooks will find this statement disturbing at first sight. In fact, the standard expression for the Wigner rotation leads to incorrect result for the wavefront rotation. The results for the Wigner rotation in the Lorentz lab frame obtained by many experts on special relativity such as Moeller and Jackson, are incorrect. They overestimate the angle of the Wigner rotation by a factor γ compared to its real value, and the direction of the rotation is also determined incorrectly. In 1959"</p>
+<h3 id="the-bmt-part">The BMT part</h3>
+<p>"59, Bargman, Michel, and Telegdi (BMT) proposed a consistent relativistic theory for the dynamics of the spin as observed in the lab frame, which was successfully tested in experiments. The BMT equation naturally involves the Wigner rotation as the purely kinematic addition to the Larmor rotation which, in turn, is a consequence of interaction of the intrinsic magnetic moment with the external magnetic field. It"</p>
+<p>And the complaint about how that is read: "It is commonly believed that the BMT equation contains the standard (and incorrect) result for the Wigner rotation in the Lorentz lab frame."</p>
+<h3 id="the-proposed-origin">The proposed origin</h3>
+<p>"we demonstrated that in the ultrarelativistic limit Wigner rotation results directly from the relativity of simultaneity. The relativistic kinematics that is involved is particularly simple, involving only infinitesimal Lorentz transformations."</p>
+<p>With a caveat about what "rotation" can mean: "The only problem is that we must jump the gap of no longer being able to describe the rotation of a moving object without operational interpretation of such rotation."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-lab-frame-and-proper-frame-angles-are-different-objects">1. Lab-frame and proper-frame angles are different objects</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: the rotation angle of a spinning or structured object as measured in the lab is not the same function of the parameters as the rotation angle in the object's own frame, and the two can differ by a factor of order $\gamma$ in the ultrarelativistic limit.</p>
+<p><strong>What it would add.</strong> The corpus's Thomas precession exercise computes one angle and does not ask which frame's angle it is. The distinction matters and is cheap: a rotation is an angle between directions, and directions are frame-dependent. Printing the distinction would force the corpus's boost and helicity articles to name the frame of every angle they quote, which is the discipline the corpus applies to energies but not to angles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-four-kinds-of-frame-transformation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The factor-$\gamma$ claim is the paper's contested thesis, and importing the distinction does not require importing the thesis. Separating them is work: the corpus would have to state the two definitions precisely, and the paper's own derivation is organised around a different goal.</p>
+<h3 id="2-wavefront-orientation-as-an-operational-definition">2. Wavefront orientation as an operational definition</h3>
+<p><strong>The idea.</strong> An <strong>operational definition</strong>: the orientation of the modulation wavefront of a bunched beam is what an observer would call the object's orientation, and in the ultrarelativistic limit that orientation is perpendicular to the velocity regardless of how the beam was kicked.</p>
+<p><strong>What it would add.</strong> The corpus's aberration article treats direction changes of light as a Möbius flow on the sky. A wavefront is a different object — an extended surface of constant phase, carried by a beam — and its orientation is a second observable that the aberration map constrains. Adding it would give the corpus a second, non-pointlike probe of boost composition, and one that is measured in real machines.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim rests on the treatment of the beam as a modulated continuum, which is engineering rather than foundations; and if the standard formula is right after all, the perpendicularity statement is a sectarian consequence.</p>
+<h3 id="3-where-the-textbook-formula-could-go-wrong">3. Where the textbook formula could go wrong</h3>
+<p><strong>The idea.</strong> A <strong>warning</strong>: a rotation angle for a moving extended object is convention-dependent, because it needs a simultaneity convention to define the object's shape, and a formula derived without stating the convention can be internally consistent and still disagree with another formula derived under a different one.</p>
+<p><strong>What it would add.</strong> The corpus's Cartan decomposition is convention-free: it is an algebraic identity, so nothing can go wrong with it. The moment a decomposition is used to say how a moving object <em>looks</em>, a convention enters. Naming that boundary would let the corpus keep its algebraic results and be careful about the sentences that interpret them, which is precisely where this paper and its targets disagree.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The warning is a meta-statement and produces no calculation; and it invites the reader to dismiss the paper's claim before checking it, which is the opposite of what a conversion note should encourage.</p>
+<p>The rank: the frame distinction first, because it is uncontroversial; the wavefront second, because it is an observable; the convention warning last, because it is advice.</p>
+<p>What I do not endorse: the paper's central claim that Møller and Jackson are simply wrong. The claim is not established here by an independent calculation — the argument is that a different coordinatisation gives a different answer, which is true and does not by itself show the standard answer wrong. The paper is worth reading for the engineering applications and for the sharp statement of the convention dependence; its verdict on the textbooks should be treated as a hypothesis, and the corpus should not adopt the factor-$\gamma$ claim without checking it against a covariant derivation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

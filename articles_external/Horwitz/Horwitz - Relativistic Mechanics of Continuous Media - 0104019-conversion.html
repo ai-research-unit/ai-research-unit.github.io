@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Continuous Media — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Mechanics of Continuous Media - 0104019.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-continuous-media"><strong>Relativistic Mechanics of Continuous Media</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0104019v1 [physics.flu-dyn]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>S. Sklarz, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 April 2001</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>48 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Relativistic Mechanics of Continuous Media - 0104019-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Mechanics of Continuous Media - 0104019.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Relativistic Mechanics of Continuous Media - 0104019.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds hydrodynamics from the ground up in the world-time theory. A medium is a continuum of events; as $\tau$ advances, the events move and trace out a dense set of world lines. From this come equations of motion and continuity, a Bernoulli analogue for an inviscid fluid, a velocity potential for irrotational flow, and — for an incompressible fluid — a d'Alembert equation for that potential, so that the flow is a background plus ripples at light speed. Viscosity is added at the end. The standard relativistic equations are recovered in the force-free limit.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We have studied a continuum flow of events in space-time parameterized by τ , the invariant, universal, historical time. In the process of evolution, as τ changes uniformly, the events move in space-time, generating a dense continuum of world lines which constitute a physical flow of particles. The velocity field is in general a function of both space-time and τ and is governed by equations of motion and continuity. The solution"</p>
+<h3 id="irrotational-incompressible-flow">Irrotational incompressible flow</h3>
+<p>"If in addition, the fluid is incompressible, it has been shown that the potential must obey the d'Alembert equation, and thus the problem is reduced to solving the d'Alembert equation with specific boundary conditions. The solutions consist of a background flow (The nonrelativistic solution) over which wave like ripples propagate with group and phase velocities equal to that of light."</p>
+<h3 id="compressibility-and-sound">Compressibility and sound</h3>
+<p>"Relaxing the constraints and allowing the fluid to become linearly compressible one can derive a wave equation, from which the sound velocity can again be computed. For a stationary background flow, it has been demonstrated that the sound velocity, attains its cor" responding maximum in a non uniform background flow.</p>
+<h3 id="the-averaging-problem">The averaging problem</h3>
+<p>"It must be emphasized that the velocity and density (and any other) fields that we mention, describe quantities related to the flow of events at a particular time τ . In order to derive a physically observable" description of particles, "les, an averaging must be performed over τ . The method we use is that of integrating over τ with the density of events as a weight function. An exact transcription from event properties to world-line" observed particle properties is not always possible, because of the nonlinearity of the fields.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-hydrodynamics-of-events-not-of-particles">1. Hydrodynamics of events, not of particles</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: take the event, not the particle, as the fluid element. A medium is then a four-dimensional continuum of events whose flow is parametrised by $\tau$; the velocity field depends on both $x$ and $\tau$, and the usual fluid is what one sees after averaging over $\tau$.</p>
+<p><strong>What it would add.</strong> The corpus's fluid articles formulate hydrodynamics of a wave function, with density and current in three dimensions. This is a covariant fluid whose elements are events, which is the natural setting for the corpus's off-shell claims: a fluid of events can have a varying mass density with no inconsistency, whereas a fluid of particles cannot. It would give the corpus's "relativistic quantum space as a fluid" article a classical precursor with the same ontology.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The averaging from events to particles is not exact, by the paper's own admission, so the classical fluid and the observed fluid are related only approximately.</p>
+<h3 id="2-incompressible-flow-obeys-the-wave-equation">2. Incompressible flow obeys the wave equation</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: for an irrotational incompressible relativistic fluid, the velocity potential satisfies the d'Alembert equation, and the flow is a background with light-speed ripples on it.</p>
+<p><strong>What it would add.</strong> In non-relativistic hydrodynamics incompressibility gives Laplace's equation and no waves. Here it gives a wave equation, because the constraint is four-dimensional. That is a striking inversion, and it gives the corpus a fluid whose "sound" is light — which is exactly the identification the corpus's articles on the fluid–wave correspondence try to make from the quantum side.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-schrodinger-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result holds for a specific idealisation (irrotational, incompressible, inviscid); the paper notes that Synge defined incompressibility precisely to get this outcome, which suggests the definition is doing some of the work.</p>
+<h3 id="3-observables-require-a">3. Observables require a</h3>
+<p>$\tau$-average, and the average is not exact</p>
+<p><strong>The idea.</strong> A <strong>methodological constraint</strong>: every quantity computed in the event fluid is defined at a fixed $\tau$. To compare with laboratory quantities one must integrate over $\tau$ weighted by event density, and because the fields are non-linear this integration does not commute with everything.</p>
+<p><strong>What it would add.</strong> The corpus's off-shell articles compute invariant quantities without saying how they become measurements. This supplies the rule and, more usefully, the warning: the map from theory to observation is an averaging that can fail to preserve relations. For any corpus article that claims a classical limit, this is the step that has to be justified, and it is usually skipped.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> No general prescription is given for when the averaging is legitimate; the paper says it is not always possible and leaves it there.</p>
+<p>The rank: the event fluid first, because it is the ontology; incompressibility-as-wave-equation second, because it is a clean inversion; the averaging constraint last, because it is a caution.</p>
+<p>The remaining items in one line each: the Bernoulli analogue, which is what makes the inviscid limit tractable; the recovery of the standard relativistic equations in the force-free limit, which is the check on the construction; and the viscous equations, which are derived but not applied.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

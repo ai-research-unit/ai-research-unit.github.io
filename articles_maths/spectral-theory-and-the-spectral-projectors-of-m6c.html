@@ -120,12 +120,12 @@ $$</p>
 <p>$$
 (wI-A)-(zI-A)=(w-z)I=(w-z)(zI-A)(wI-A)R(z)R(w).
 $$</p>
-<p><strong>Corollary (the Neumann series).</strong> For $|z|>\lVert A\rVert$,</p>
+<p><strong>Corollary (the Neumann series).</strong> For $|z|&gt;\lVert A\rVert$,</p>
 <p>$$
 R(z)=\sum_{n=0}^{\infty}\frac{A^n}{z^{n+1}},
 $$</p>
-<p>and the series converges absolutely and uniformly on compact subsets of $|z|>r(A)$.</p>
-<p><strong>Proof.</strong> $R(z)=z^{-1}(I-A/z)^{-1}=z^{-1}\sum_n(A/z)^n$ for $|z|>\lVert A\rVert$; the series converges because $\lVert A/z\rVert<1$. The radius of convergence is the spectral radius by the Gelfand formula below.</p>
+<p>and the series converges absolutely and uniformly on compact subsets of $|z|&gt;r(A)$.</p>
+<p><strong>Proof.</strong> $R(z)=z^{-1}(I-A/z)^{-1}=z^{-1}\sum_n(A/z)^n$ for $|z|&gt;\lVert A\rVert$; the series converges because $\lVert A/z\rVert&lt;1$. The radius of convergence is the spectral radius by the Gelfand formula below.</p>
 <p><strong>Theorem (the Laurent expansion at an eigenvalue).</strong> Let $\lambda$ be an eigenvalue and let $\gamma$ be a small positively oriented circle around $\lambda$ containing no other eigenvalue. Then</p>
 <p>$$
 R(z)=\sum_{k=1}^{m}\frac{N_k}{(z-\lambda)^k}+H(z),
@@ -159,14 +159,14 @@ $$</p>
 <p><strong>Proof.</strong> Every eigenvalue satisfies $\lvert\lambda\rvert\le\lVert A\rVert$ for an induced norm: if $Ax=\lambda x$ with $\lVert x\rVert=1$, then $\lvert\lambda\rvert=\lVert Ax\rVert\le\lVert A\rVert$. The norm inequalities are those of <em>The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$</em>.</p>
 <p><strong>Theorem (the Neumann criterion).</strong> The following are equivalent:</p>
 <ul>
-<li>$r(A)<1$;</li>
+<li>$r(A)&lt;1$;</li>
 <li>$A^n\to0$ as $n\to\infty$;</li>
 <li>the series $\sum_{n\ge0}A^n$ converges;</li>
 <li>$I_6-A$ is invertible, and then $(I_6-A)^{-1}=\sum_{n\ge0}A^n$.</li>
 </ul>
-<p><strong>Proof.</strong> If $r(A)<1$, the Gelfand formula gives $\lVert A^n\rVert^{1/n}<1$ eventually, so $A^n\to0$ and the geometric series converges. Conversely, if the series converges, its terms tend to zero, so $r(A)<1$ (otherwise the eigenvalues of modulus at least one would prevent convergence). The inverse identity is the geometric series.</p>
+<p><strong>Proof.</strong> If $r(A)&lt;1$, the Gelfand formula gives $\lVert A^n\rVert^{1/n}&lt;1$ eventually, so $A^n\to0$ and the geometric series converges. Conversely, if the series converges, its terms tend to zero, so $r(A)&lt;1$ (otherwise the eigenvalues of modulus at least one would prevent convergence). The inverse identity is the geometric series.</p>
 <p><strong>Corollary (the resolvent at infinity).</strong> The spectral radius is the radius of the largest disk outside which the Neumann series converges, and the poles of $R(z)$ are exactly the eigenvalues.</p>
-<p><strong>Proof.</strong> The Neumann series converges for $|z|>r(A)$ and diverges for $|z|<r(A)$; the resolvent is analytic on $\rho(A)$ and has poles at the eigenvalues.</p>
+<p><strong>Proof.</strong> The Neumann series converges for $|z|&gt;r(A)$ and diverges for $|z|&lt;r(A)$; the resolvent is analytic on $\rho(A)$ and has poles at the eigenvalues.</p>
 <h2 id="the-jordan-form-and-the-minimal-polynomial">The Jordan Form and the Minimal Polynomial</h2>
 <h3 id="the-jordan-form">The Jordan Form</h3>
 <p><strong>Theorem (the Jordan normal form).</strong> There is an invertible $P$ with</p>
@@ -305,13 +305,13 @@ $$</p>
 <p><strong>Proof.</strong> The Lagrange denominators are the eigenvalue differences; the cluster sum is the contour integral around the cluster, which is holomorphic as long as the cluster is separated from the other eigenvalues. The spectral identity is an identity for every $\varepsilon$.</p>
 <p><strong>Example (the Jordan block).</strong> For</p>
 <p>$$
-A(\varepsilon)=\begin{pmatrix}\lambda+\varepsilon&1\\0&\lambda\end{pmatrix},
+A(\varepsilon)=\begin{pmatrix}\lambda+\varepsilon&amp;1\\0&amp;\lambda\end{pmatrix},
 $$</p>
 <p>the eigenvalues are $\lambda+\varepsilon$ and $\lambda$; the projectors are</p>
 <p>$$
-P_+(\varepsilon)=\begin{pmatrix}1&1/\varepsilon\\0&0\end{pmatrix},
+P_+(\varepsilon)=\begin{pmatrix}1&amp;1/\varepsilon\\0&amp;0\end{pmatrix},
 \qquad
-P_-(\varepsilon)=\begin{pmatrix}0&-1/\varepsilon\\0&1\end{pmatrix}.
+P_-(\varepsilon)=\begin{pmatrix}0&amp;-1/\varepsilon\\0&amp;1\end{pmatrix}.
 $$</p>
 <p>Both have a pole at $\varepsilon=0$; their sum is $I_2$; the weighted sum is $A(\varepsilon)$, which tends to $\lambda I_2+E_{12}$. The cluster projector is $I_2$, the spectral projector of $A(0)$ onto its generalized eigenspace; the nilpotent part $E_{12}$ is the limit of $\varepsilon P_+(\varepsilon)$.</p>
 <p><strong>Corollary (the Dunford limit).</strong> The Dunford projector of the cluster is the limit of the sum of the Lagrange projectors; the individual Lagrange projectors may diverge; when they have a limit, it need not be the spectral projector of the limit matrix. The Dunford calculus of the limit is the calculus of the Jordan block.</p>
@@ -326,7 +326,7 @@ $$</p>
 <p>$$
 r(A)=\max_i\lvert\lambda_i\rvert=\lim_{n\to\infty}\lVert A^n\rVert^{1/n},
 $$</p>
-<p>and $r(A)\le\lVert A\rVert$ for every induced norm. The Neumann series converges for $\lVert A\rVert<1$, and $r(A)<1$ iff $A^n\to0$.</p>
+<p>and $r(A)\le\lVert A\rVert$ for every induced norm. The Neumann series converges for $\lVert A\rVert&lt;1$, and $r(A)&lt;1$ iff $A^n\to0$.</p>
 <p>$$
 \boxed{\ \sigma(A)=\{\chi_A=0\},\qquad r(A)=\lim\lVert A^n\rVert^{1/n},\qquad P_i=\frac{1}{2\pi\mathrm i}\oint_{\gamma_i}R(z)\,dz .\ }
 $$</p>

@@ -82,8 +82,8 @@
 Sp(1) = \{\tilde q \in \mathbb{H} : \langle\tilde q\rangle_{\natural} = 1\} = \{\tilde q \in \mathbb{H} : |\tilde q| = 1\}.
 $$</p>
 <p>As a subset of $\mathbb{H}\cong\mathbb{R}^4$ it is the unit sphere $S^3$.</p>
-<p><strong>Theorem.</strong> $Sp(1)$ is a group under quaternion multiplication and is the kernel of the quaternion norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$, $\tilde q\mapsto|\tilde q|$.</p>
-<p><strong>Proof.</strong> The quaternion norm is multiplicative, $\langle uv\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = u\langle v\rangle_{\natural}u^{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.</p>
+<p><strong>Theorem.</strong> $Sp(1)$ is a group under quaternion multiplication and is the kernel of the quaternion norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{&gt;0}$, $\tilde q\mapsto|\tilde q|$.</p>
+<p><strong>Proof.</strong> The quaternion norm is multiplicative, $\langle uv\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = u\langle v\rangle_{\natural}u^{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{&gt;0}$ with kernel exactly $Sp(1)$.</p>
 <p>For every unit quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ one has $\tilde q^{-1} = \tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group</p>
 <p>$$
 Z(Sp(1)) = \{\pm 1\},
@@ -94,7 +94,7 @@ $$</p>
 <p>$$
 \tilde q = \cos\theta + u\sin\theta, \qquad 0 \leq \theta \leq \pi, \ u \in \operatorname{Im}\mathbb{H},\ |u| = 1,
 $$</p>
-<p>in which the angle $\theta$ is unique; the axis $u$ is unique when $0 < \theta < \pi$, while for $\theta = 0$ and $\theta = \pi$ the quaternion is $\tilde q = 1$ and $\tilde q = -1$ respectively and $u$ is arbitrary.</p>
+<p>in which the angle $\theta$ is unique; the axis $u$ is unique when $0 &lt; \theta &lt; \pi$, while for $\theta = 0$ and $\theta = \pi$ the quaternion is $\tilde q = 1$ and $\tilde q = -1$ respectively and $u$ is arbitrary.</p>
 <p><strong>Proof.</strong> A unit quaternion has $q_t^2 + |\vec q|^2 = 1$, so there is a unique $\theta\in[0,\pi]$ with $q_t = \cos\theta$ and $|\vec q| = \sin\theta$. If $\sin\theta\neq0$ then $u = \vec q/\sin\theta$ is a unit vector, uniquely determined by $\tilde q$, and $\tilde q = \cos\theta+u\sin\theta$; if $\sin\theta = 0$ then $\vec q = 0$ and $\tilde q = \pm1$.</p>
 <p><strong>Theorem (exponential).</strong> For a unit vector $u\in\operatorname{Im}\mathbb{H}$ and real $\theta$,</p>
 <p>$$
@@ -130,9 +130,9 @@ $$</p>
 <p>In the basis $(\vec e_x, \vec e_y, \vec e_z)$ of $\operatorname{Im}\mathbb{H}$ the matrix of $\operatorname{Ad}_{\tilde q}$, with $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, is</p>
 <p>$$
 R_{\tilde q} = \begin{pmatrix}
-1 - 2(q_y^2 + q_z^2) & 2(q_xq_y - q_tq_z) & 2(q_xq_z + q_tq_y) \\
-2(q_xq_y + q_tq_z) & 1 - 2(q_x^2 + q_z^2) & 2(q_yq_z - q_tq_x) \\
-2(q_xq_z - q_tq_y) & 2(q_yq_z + q_tq_x) & 1 - 2(q_x^2 + q_y^2)
+1 - 2(q_y^2 + q_z^2) &amp; 2(q_xq_y - q_tq_z) &amp; 2(q_xq_z + q_tq_y) \\
+2(q_xq_y + q_tq_z) &amp; 1 - 2(q_x^2 + q_z^2) &amp; 2(q_yq_z - q_tq_x) \\
+2(q_xq_z - q_tq_y) &amp; 2(q_yq_z + q_tq_x) &amp; 1 - 2(q_x^2 + q_y^2)
 \end{pmatrix},
 $$</p>
 <p>whose trace is $\operatorname{tr}R_{\tilde q} = 4q_t^2 - 1$. The formula is the coordinate expression of $\operatorname{Ad}_{\tilde q}$ and is the standard quaternion parametrisation of the rotation group.</p>
@@ -168,10 +168,10 @@ $$</p>
 <p><strong>Definition (the fitting matrix).</strong> For a real $3\times3$ matrix $Q$ with entries $Q_{ij}$, the <strong>fitting matrix</strong> is the symmetric $4\times4$ matrix</p>
 <p>$$
 K(Q) = \begin{pmatrix}
-\operatorname{tr}Q & Q_{32}-Q_{23} & Q_{13}-Q_{31} & Q_{21}-Q_{12} \\
-Q_{32}-Q_{23} & 2Q_{11}-\operatorname{tr}Q & Q_{12}+Q_{21} & Q_{13}+Q_{31} \\
-Q_{13}-Q_{31} & Q_{12}+Q_{21} & 2Q_{22}-\operatorname{tr}Q & Q_{23}+Q_{32} \\
-Q_{21}-Q_{12} & Q_{13}+Q_{31} & Q_{23}+Q_{32} & 2Q_{33}-\operatorname{tr}Q
+\operatorname{tr}Q &amp; Q_{32}-Q_{23} &amp; Q_{13}-Q_{31} &amp; Q_{21}-Q_{12} \\
+Q_{32}-Q_{23} &amp; 2Q_{11}-\operatorname{tr}Q &amp; Q_{12}+Q_{21} &amp; Q_{13}+Q_{31} \\
+Q_{13}-Q_{31} &amp; Q_{12}+Q_{21} &amp; 2Q_{22}-\operatorname{tr}Q &amp; Q_{23}+Q_{32} \\
+Q_{21}-Q_{12} &amp; Q_{13}+Q_{31} &amp; Q_{23}+Q_{32} &amp; 2Q_{33}-\operatorname{tr}Q
 \end{pmatrix},
 $$</p>
 <p>whose rows and columns are indexed by $(e_t, \vec e_x, \vec e_y, \vec e_z)$.</p>
@@ -372,7 +372,7 @@ $$</p>
 <p><strong>Theorem.</strong> The path $t\mapsto\exp(ut)$, $t\in[0,\pi]$, is a path in $Sp(1)$ from $1$ to $-1$; its image under the covering $Sp(1)\to SO(3)$ is a closed loop in $SO(3)$ that is not homotopic to the constant loop. Hence a rotation through the angle $2\pi$ corresponds to the non-identity element $-1$ of the fibre, and the identity quaternion is recovered only after the angle $4\pi$.</p>
 <p><strong>Proof.</strong> The path from $1$ to $-1$ does not close in $Sp(1)$, but its image does close in $SO(3)$ because $\operatorname{Ad}_{-1} = \operatorname{Ad}_1$. Since the covering is two-to-one with fibre $\{\pm1\}$, a loop in $SO(3)$ is null-homotopic if and only if its lift in $Sp(1)$ closes; here the lift does not close, so the loop is not null-homotopic, and it represents the generator of $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$. Doubling the loop lifts to the path $t\mapsto\exp(ut)$, $t\in[0,2\pi]$, which closes at $\exp(2\pi u) = 1$.</p>
 <p>This is the failure of the period $2\pi$: the rotation through $2\pi$ about $u$ is the identity of $SO(3)$, but the quaternion that represents it is $-1$, not $1$. The parametrisation returns to its initial value only after $4\pi$. The non-triviality of the covering is therefore not a convention but the statement $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$, and it is the same statement as the existence of closed loops in $SO(3)$ that are not null-homotopic.</p>
-<p>Here the quaternion norm is positive definite: the exponential of a vector is a unit quaternion, the group of invertibles is $\mathbb{R}_{>0}\times Sp(1)$ with $Sp(1)$ compact, and there are no hyperbolic directions, so the only orthogonal groups that arise are the compact $SO(3)$ and $SO(4)$.</p>
+<p>Here the quaternion norm is positive definite: the exponential of a vector is a unit quaternion, the group of invertibles is $\mathbb{R}_{&gt;0}\times Sp(1)$ with $Sp(1)$ compact, and there are no hyperbolic directions, so the only orthogonal groups that arise are the compact $SO(3)$ and $SO(4)$.</p>
 <h2 id="summary">Summary</h2>
 <p>The unit quaternions $Sp(1) = \{\tilde q : |\tilde q| = 1\} = S^3$ form a compact connected simply connected Lie group, non-abelian with centre $\{\pm1\}$, isomorphic to $SU(2)$, and every unit quaternion is $\cos\theta + u\sin\theta = \exp(u\theta)$ for an angle $\theta$ and a unit axis $u$. Hamilton's word for a unit quaternion is a versor, the unit part $U\tilde q$ of the polar decomposition $\tilde q = T\tilde q\,U\tilde q$; a versor is the quotient of two unit vectors, pictured as a directed arc of the great circle it turns about, and the right versors are the unit square roots of $-1$.</p>
 <p>Conjugation by an invertible element, $\operatorname{Ad}_{\tilde q}(\vec q) = \tilde q \vec q\tilde q^{-1}$, is an algebra automorphism that preserves the quaternion norm and stabilises the imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$, where it acts as an isometry of determinant $+1$. The assignment $\tilde q\mapsto\operatorname{Ad}_{\tilde q}$ is a surjective homomorphism $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, so $SO(3)\cong Sp(1)/\{\pm1\}$ and the map is a two-sheeted covering, indeed the universal cover, giving $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$.</p>

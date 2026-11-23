@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounding the Hubble flow in terms of the w parameter — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Hubble flow in terms of the w parameter - 0806.2186.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounding-the-hubble-flow-in-terms-of-the-w-parameter"><strong>Bounding the Hubble flow in terms of the w parameter</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0806.2186v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 June 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bounding the Hubble flow in terms of the w parameter - 0806.2186-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Hubble flow in terms of the w parameter - 0806.2186.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Hubble flow in terms of the w parameter - 0806.2186.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks how much of the Hubble flow follows from a bound on the equation of state. It takes the parameter $w=p/\rho$ and computes, for constant $w$, explicit expressions for the density $\rho(z)$, the Hubble rate $H(z)$, the density parameter $\Omega(z)$, the angular-diameter distance $d(z)$, and the lookback time $T(z)$. It then uses the constant-$w$ case as a comparison solution: if $w(z)$ lies between $w_-$ and $w_+$ over a redshift interval, monotonic cosmological quantities are bounded between their values at $w_-$ and $w_+$, with the direction of the inequality depending on the quantity and the interval. The bounds are computed for all three signs of spatial curvature.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"The last decade has seen increasing efforts to circumscribe and bound the cosmological Hubble flow in terms of model-independent constraints on the cosmological fluid — such as, for instance, the classical energy conditions of general relativity. Quite a bit can certainly be said in this regard, but much more refined bounds can be obtained by placing more precise constraints (either theoretical or observational) on the cosmological fluid."</p>
+<h3 id="the-tool">The tool</h3>
+<p>"In particular, the use of the $w$-parameter ($w=p/\rho$) has become increasingly common as a surrogate for trying to say something about the cosmological equation of state. Herein we explore the extent to which a constraint on the $w$-parameter leads to useful and nontrivial constraints on the Hubble flow, in terms of constraints on density $\rho(z)$, Hubble parameter $H(z)$, density parameter $\Omega(z)$, cosmological distances $d(z)$, and lookback time $T(z)$."</p>
+<h3 id="what-is-new">What is new</h3>
+<p>"In contrast to other partial results in the literature, we carry out the computations ... for all signs of the spatial curvature." The constant-$w$ results for $\rho$ and $H$ are standard; "The explicit result for the $\Omega$ parameter $\Omega_{w^*}(z)$ is less well-known, and the explicit results we have obtained for the angular diameter distance $d_{Pw^*}(z)$ and lookback time $T_{w^*}(z)$ appear to be both novel and significant."</p>
+<h3 id="the-comparison-theorem">The comparison theorem</h3>
+<p>"If we know that $w(z)\in[w_-,w_+]$ between redshift zero and redshift $z$, then for monotonically evolving generic cosmological quantities $X(z)$ we have derived a number of rigorous bounds of the form"</p>
+<p>$$X_{w_\pm}(z)\le X(z)\le X_{w_\mp}(z), \qquad (paper\ 89)$$</p>
+<p>"where we have explicitly seen that the direction of the inequality depends both on the precise details of the evolution of $X(z)$, and on the redshift range of interest."</p>
+<h3 id="the-conclusion-with-its-restriction">The conclusion, with its restriction</h3>
+<p>"Finally we point out that all of our bounds have been explicitly calculated for all signs of the spatial curvature $k\in[-1,0,+1]$, that is for all $\Omega_0$ (though we have restricted ourselves to the physically very plausible $\Omega_0&gt;0$). The bounds we have derived are thus both very general and very powerful." The restriction to monotonic $X(z)$ and to a constant-$w$ comparison case is the price of the method.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-without-an-equation-of-state">1. Bounds without an equation of state</h3>
+<p><strong>The idea.</strong> A band on $w$ produces bounds on $H$, distances, and lookback time. The equation of state need not be known, only bracketed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> records that no equation of state and no source can be derived, so the Friedmann equations cannot be closed. This paper shows a way to make conditional statements anyway: assume a band, get bounds. That converts an absolute obstacle into a conditional result, which is a genuine change in what the article may claim.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> The bounds still assume the Friedmann equations, which the framework does not supply. Ranked first, because it is the only route here that produces numbers from a weaker hypothesis.</p>
+<h3 id="2-a-bound-is-not-a-prediction">2. A bound is not a prediction</h3>
+<p><strong>The idea.</strong> The output is an interval, and the interval depends on an assumed band.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks whether a quantity is fixed by the theory. A bound is fixed only relative to its input band, so it illustrates the middle case: sharper than no statement, weaker than a prediction. The article's taxonomy would benefit from the example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> It is an illustration, not a framework result. Ranked second.</p>
+<h3 id="3-monotonicity-is-an-extra-hypothesis">3. Monotonicity is an extra hypothesis</h3>
+<p><strong>The idea.</strong> The comparison theorem applies to quantities that evolve monotonically. That is a property of the solutions, not of the algebra.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists algebraic limits. Monotonicity in redshift is not algebraic at all; it must be established case by case. The catalogue's scope note could record that some of the framework's needs are analytic properties of solutions rather than elements of $\mathbb{B}$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It repeats a scope remark that the catalogue already makes in general terms. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

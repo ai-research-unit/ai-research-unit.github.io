@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discrimination of Particle Masses in Multivariant Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Discrimination of particle masses in multivariant space-time geometry - 0712.1335.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="discrimination-of-particle-masses-in-multivariant-space-time-geometry"><strong>Discrimination of Particle Masses in Multivariant Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0712.1335 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 11 December 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Discrimination of particle masses in multivariant space-time geometry - 0712.1335-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discrimination of particle masses in multivariant space-time geometry - 0712.1335.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Discrimination of particle masses in multivariant space-time geometry - 0712.1335.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Turns the deformation principle into a particle dynamics. A particle is a skeleton, a finite ordered set of points, carried along by a chain of equivalent skeletons; the leading vector sets the step, so the dynamics is discrete and has no differential equation. The geometry of the flat uniform isotropic discrete space has a free length $\lambda_0$, and the equivalence relation is multivalent: the next link of the chain has an undetermined transverse part. That indeterminacy is the quantum stochasticity, and the same geometry has the opposite property, discrimination, where no equivalent vector exists at all and the corresponding state is simply absent. Masses may be discriminated this way, which he offers as an origin for the discrete mass spectrum.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="skeleton-and-world-chain">Skeleton and world chain</h3>
+<p>The elementary geometrical object is defined from the skeleton: "The elementary geometrical object $E$ is described by its skeleton $P^n$ and envelope function $f_{P^n}$", the envelope being the set of points determined by $\sigma$ on the skeleton. Evolution is a chain: "Evolution of EGO $O_{P^n}$ in the space-time is described as a world chain $C_{fr}$ of equivalent connected EGOs", each link being an equivalent skeleton whose origin is the previous skeleton's leading endpoint. The leading vector $P_0P_1$ sets the step, and the mass is its length: "The particle mass is simply a length of some vector."</p>
+<p>So the free motion is not a curve: "the world chain $C_{fr}$ of a freely moving body can describe only translation of a physical body, but not its rotation". Rotation is recovered by allowing a spacelike leading vector and a helical chain: "If the world chain forms a helix with the timelike axis, such a world chain may be considered as timelike on the average", which is how he reads the classical Dirac particle.</p>
+<h3 id="the-discrete-geometry-and-its-two-faces">The discrete geometry and its two faces</h3>
+<p>The geometry is fixed by
+$$\sigma_d=\sigma_M+d\,\mathrm{sgn}(\sigma_M),\qquad d=\lambda_0^2=\mathrm{const}&gt;0$$
+with $\lambda_0$ an elementary length. Chaining two equivalent timelike vectors of length $\mu$ gives
+$$P_0P_1=\{\mu,0,0,0\},\qquad P_1P_2=\left\{\mu+\frac{3\lambda_0^2}{\mu},\ \lambda_0\sqrt{6+\frac{9\lambda_0^2}{\mu^2}}\,{\bf n}\right\}$$
+with ${\bf n}$ an arbitrary unit 3-vector. The transverse part is therefore fixed in length and free in direction: "This multivariance generates wobbling of the links of the world chain." And the statistics of the wobble is quantum mechanics: "Statistical description of the chain with wobbling links coincides with the quantum description of the particle with the mass m = bµ, if the elementary length λ0 = ~1/2 (2bc)−1/2 , where c", with $b$ a universal constant whose value the statistical description cannot fix, since it "does not contain the quantity $b$".</p>
+<p>The opposite face is discrimination: "The discrimination capacity (zero-variance) of geometry appears, when at the point P0 there are no vectors, which are equivalent to the vector Q0 Q1 at the point Q0 . It" A particle whose leading vector has no equivalent at the next point cannot evolve along that chain, so it is excluded. Applied to the lattice-like discrete geometry this discriminates masses as well: "we should expect a discrimination in some cases, because due to latticed character of the space one cannot always find at the point P0 a vector P0 P1 , which is equivalent to a given vector Q0 Q1 . Let"</p>
+<h3 id="what-follows-for-the-spectrum">What follows for the spectrum</h3>
+<p>The closing claim: "the space-time geometry, looking as a continuous geometry, appears to be partly discrete. These discreteness of 'continual' space-time geometry is a source of a discrete character of the elementary particle properties." And the mechanism is named twice over: "T-geometry (new conception of geometry) is a source of multivariance and of the discrimination capacity (zero-variance), which are responsible for quantum effects and the discrete character of the elementary particles properties."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-as-the-length-of-a-vector">1. Mass as the length of a vector</h3>
+<p><strong>The idea.</strong> In the skeleton dynamics the mass is a geometric length — the modulus of the leading vector — and the dynamics is a chain of such vectors. A <strong>definition</strong> that removes mass from the list of parameters.</p>
+<p><strong>What it would add.</strong> The corpus's article on mass separates two kinds of mass by which conjugate appears in the mass term, and treats both as coefficients fixed by the algebra. Rylov's mass is not a coefficient at all: it is the length of the step the particle takes. If the two pictures met, the corpus's two masses would have to be two kinds of length, and the question of which conjugate is right would become a question about the shape of the step.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification $m=b\mu$ contains an undetermined constant $b$, which the paper concedes: "whose exact value is not determined". A mass that is a length up to an unknown multiplier is a dimensional statement, not a numerical one, and the corpus's mass terms carry numbers.</p>
+<h3 id="2-a-discrete-spectrum-from-discrimination">2. A discrete spectrum from discrimination</h3>
+<p><strong>The idea.</strong> Some states do not exist, not because a quantum number is quantised but because no equivalent skeleton exists at the next step. A <strong>mechanism</strong> for discreteness that is geometric and has no operator.</p>
+<p><strong>What it would add.</strong> The corpus has no account of why masses are discrete; its masses enter as coefficients. A discrimination argument would give a reason of a completely different kind, and it is testable in principle: the set of admitted masses is the set of lengths that survive chaining, which is a computation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper never computes the admitted set. The discrimination is demonstrated for charge in the companion paper and asserted for mass here, with no list of masses and no comparison with data. Until the admitted set is produced, it is a possibility rather than a spectrum.</p>
+<h3 id="3-dynamics-without-a-differential-equation">3. Dynamics without a differential equation</h3>
+<p><strong>The idea.</strong> The chain of skeletons is the evolution, and the step is the length of the leading vector; no derivative appears, and no manifold is required — "One does not need space-time continuity (continual geometry)."</p>
+<p><strong>What it would add.</strong> The corpus is entirely differential: every field equation is written in derivatives and every limit is a continuum limit. A dynamics whose primitive is a finite chain, with the differential equation as an approximate description, is a different foundational order, and it would put the corpus's own continuum limit in the position of an approximation to be derived rather than assumed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-non-quantum-limit-of-the-biquaternion-model.md</code>.</p>
+<p><strong>What stands in the way.</strong> No chain dynamics is written in closed form; the paper gives the link relation and then argues about it. Without a worked evolution there is nothing for the corpus's continuum limit to be compared with.</p>
+<p>The rank: mass as a length first, because it is the definition and it meets a live corpus question; discrimination second, because discreteness is what the corpus lacks; chain dynamics last, because it is programmatic in this paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

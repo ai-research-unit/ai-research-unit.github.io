@@ -101,7 +101,7 @@ $$</p>
 <p>of dimension $9-\dim Z(A)$, where $Z(A)$ is the centraliser. In the projective group the same image is obtained, because the scalars act trivially; the dimension is $8-(\dim Z(A)-1)=9-\dim Z(A)$.</p>
 <p><strong>Worked example.</strong> Take</p>
 <p>$$
-A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix}.
+A=\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end{pmatrix}.
 $$</p>
 <p>Its trace is $15$, and its characteristic polynomial is</p>
 <p>$$
@@ -180,7 +180,7 @@ $$</p>
 <p><strong>The closures.</strong> The closure of an orbit is a union of orbits, and the order is the degeneration order of the Jordan type. The scalar orbit is closed, and so is the zero orbit. The orbit of the semisimple type with two eigenvalues contains, in its closure, the scalar orbit: degenerate the difference of the two eigenvalues to zero. The orbit of the type $2+1$ with distinct eigenvalues contains the nilpotent $E_{12}$ orbit and the scalar orbit. The principal nilpotent orbit contains the minimal nilpotent orbit and the zero orbit in its closure; its closure is the whole nilpotent cone.</p>
 <p><strong>Worked example: the minimal nilpotent orbit.</strong> Let $N=E_{12}$. The equation $XN=NX$ leaves the five entries</p>
 <p>$$
-Z(N)=\left\{\begin{pmatrix}a&b&c\\0&a&0\\0&d&e\end{pmatrix}\right\},
+Z(N)=\left\{\begin{pmatrix}a&amp;b&amp;c\\0&amp;a&amp;0\\0&amp;d&amp;e\end{pmatrix}\right\},
 $$</p>
 <p>of dimension $5$. The orbit has dimension $9-5=4$. It is the set of rank-one nilpotent matrices, equivalently the set of matrices $u\varphi$ with $\varphi(u)=0$ and $u\neq0$. The parameters are $u\in\mathbb{C}^{3}\smallsetminus\{0\}$ (three dimensions) and $\varphi\in u^{\perp}$ (two dimensions), modulo the scaling $(u,\varphi)\mapsto(\lambda u,\lambda^{-1}\varphi)$ (one dimension), so the dimension is $3+2-1=4$. Projectively the orbit is the incidence variety of pairs $([u],[\varphi])$ with $u\in\ker\varphi$, of dimension $3$; the orbit is the affine cone over it.</p>
 <p><strong>Worked example: the principal nilpotent orbit.</strong> Let $N=E_{12}+E_{23}$. The centraliser is the algebra of polynomials in $N$,</p>
@@ -217,7 +217,7 @@ $$</p>
 <h2 id="the-flag-variety">The Flag Variety</h2>
 <p><strong>The Borel subgroup.</strong> The <strong>Borel subgroup</strong> $B\subset GL_3$ is the group of invertible upper triangular matrices,</p>
 <p>$$
-B=\left\{\begin{pmatrix}b_{11}&b_{12}&b_{13}\\0&b_{22}&b_{23}\\0&0&b_{33}\end{pmatrix}:b_{ii}\neq0\right\},
+B=\left\{\begin{pmatrix}b_{11}&amp;b_{12}&amp;b_{13}\\0&amp;b_{22}&amp;b_{23}\\0&amp;0&amp;b_{33}\end{pmatrix}:b_{ii}\neq0\right\},
 $$</p>
 <p>of dimension $6$: three diagonal parameters and three upper entries.</p>
 <p><strong>The full flag variety.</strong> The quotient $\mathcal{F}=GL_3/B$ is the <strong>full flag variety</strong>, the set of flags</p>
@@ -315,14 +315,14 @@ $$</p>
 <h2 id="worked-example-conjugation-and-invariants">Worked Example: Conjugation and Invariants</h2>
 <p>Take</p>
 <p>$$
-A=\begin{pmatrix}2&1&0\\0&2&1\\0&0&3\end{pmatrix},
+A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;3\end{pmatrix},
 \qquad
 \chi_{A}(t)=(t-2)^{2}(t-3)=t^{3}-7t^{2}+16t-12 .
 $$</p>
 <p>The trace is $7$, the second coefficient is $16$, the determinant is $12$. The eigenvalues are $2$ (with a $2$-block) and $3$ (with a $1$-block); the centraliser consists of the upper Toeplitz block on the $2$-block, two parameters, and the scalar on the $1$-block, one parameter, so $\dim Z(A)=3$. The orbit has dimension $9-3=6$, and the stabiliser in $PGL_3$ has dimension $2$.</p>
 <p>Conjugate by the diagonal matrix $S=\operatorname{diag}(1,2,1)$. Then</p>
 <p>$$
-SAS^{-1}=\begin{pmatrix}2&\tfrac12&0\\0&2&2\\0&0&3\end{pmatrix},
+SAS^{-1}=\begin{pmatrix}2&amp;\tfrac12&amp;0\\0&amp;2&amp;2\\0&amp;0&amp;3\end{pmatrix},
 $$</p>
 <p>because $(SAS^{-1})_{ij}=s_{i}a_{ij}s_{j}^{-1}$. The off-diagonal entries have moved, while</p>
 <p>$$

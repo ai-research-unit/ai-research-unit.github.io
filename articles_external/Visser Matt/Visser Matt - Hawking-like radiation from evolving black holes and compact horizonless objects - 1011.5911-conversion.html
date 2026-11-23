@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawking-like radiation from evolving black holes and compact horizonless objects — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation from evolving black holes and compact horizonless objects…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hawking-like-radiation-from-evolving-black-holes-and-compact-horizonless-objects"><strong>Hawking-like radiation from evolving black holes and compact horizonless objects</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.5911v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 January 2011 (dated 27 November 2010)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Hawking-like radiation from evolving black holes and compact horizonless objects - 1011.5911-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation from evolving black holes and compact horizonless objects - 1011.5911.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking-like radiation from evolving black holes and compact horizonless objects - 1011.5911.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Standard derivations of Hawking radiation assume an eternal horizon and a static exterior. The authors drop both. They show that a Planckian flux follows from an approximately exponential relation between affine parameters at past and future null infinity, together with an adiabatic condition. The result holds for an evaporating black hole and for a collapsing object that never forms a horizon. They give explicit time-dependent Bogoliubov calculations, and stress that the whole derivation never refers to any kind of horizon.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-assumption-being-dropped">The assumption being dropped</h3>
+<p>"Usually, Hawking radiation is derived assuming (i) that a future eternal event horizon forms, and (ii) that the subsequent exterior geometry is static. However, one may be interested in either considering quasi-black holes (objects in an ever-lasting state of approach to horizon formation, but never quite forming one), where (i) fails, or, following the evolution of a black hole during evaporation, where (ii) fails."</p>
+<h3 id="the-sufficient-condition">The sufficient condition</h3>
+<p>"We shall verify that as long as one has an approximately exponential relation between the affine parameters on the null generators of past and future null infinity, then subject to a suitable adiabatic condition being satisfied, a Planck-distributed flux of Hawking-like radiation will occur."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"This happens both for the case of an evaporating black hole, as well as for the more dramatic case of a collapsing object for which no horizon has yet formed (or even will ever form)."</p>
+<h3 id="the-core-statement">The core statement</h3>
+<p>"Whenever $\mathcal{I}^-$ and $\mathcal{I}^+$ are connected by a function $U=p(u)$ of the form $$U=U_*+C_*\int_{u_*}^{u}\exp\left[-\int_{u_*}^{\bar u}\kappa(\tilde u)\,d\tilde u\right]d\bar u \qquad (paper\ 10.1)$$ ... and where $\kappa(u)$ satisfies an 'adiabatic condition' $$\left.\frac{d\kappa(u)}{du}\right|_{u_*}\ll \kappa(u_*)^2 \qquad (paper\ 10.2)$$ then the argument sketched above proves the existence of a Hawking-like Planck-distributed spectrum of outgoing particles reaching $\mathcal{I}^+$ at $u_*$ with a (time-dependent) Hawking temperature $k_B T_H(u_*)=\hbar\kappa(u_*)/2\pi$."</p>
+<h3 id="the-absence-of-horizons">The absence of horizons</h3>
+<p>"Working with this formalism we have never had to use any statements about any horizon forming anywhere — neither event horizon nor apparent horizon nor trapping horizon nor dynamical horizon"</p>
+<h3 id="the-limit-of-the-claim">The limit of the claim</h3>
+<p>"we have carefully described the Hawking flux as Planckian rather than thermal. To claim thermality one has to explicitly assume the formation of an event horizon (behind which one can hide correlations)."</p>
+<h3 id="the-trans-planckian-problem-remains">The trans-Planckian problem remains</h3>
+<p>"The current formalism in no way 'solves' the trans-Planckian problem and if anything brings it more sharply into focus."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-planckian-is-not-thermal">1. Planckian is not thermal</h3>
+<p><strong>The idea.</strong> A Planck-shaped spectrum does not imply thermality; thermality needs a horizon to hide correlations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> infers temperature from a spectrum. This paper separates the two notions, and the article should say which one it claims.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of radiation.</p>
+<p><strong>What stands in the way.</strong> The distinction is made in a passage, not a theorem. Ranked first, because it splits a concept the article conflates.</p>
+<h3 id="2-two-conditions-no-geometry">2. Two conditions, no geometry</h3>
+<p><strong>The idea.</strong> An exponential affine relation plus an adiabatic condition is enough.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> could state its results as properties of affine parameters rather than of horizons, which would make them independent of horizon definitions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The conditions are hard to check in a given metric. Ranked second.</p>
+<h3 id="3-the-adiabatic-condition-is-the-real-limit">3. The adiabatic condition is the real limit</h3>
+<p><strong>The idea.</strong> The derivation fails at the Planck scale because the adiabatic condition fails there.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> should name the failing step, not just the regime. This identifies the step precisely.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on evaporation.</p>
+<p><strong>What stands in the way.</strong> The failure signals a need for a fuller analysis, not an impossibility. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

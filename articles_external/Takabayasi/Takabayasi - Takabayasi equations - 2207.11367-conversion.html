@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards a Mathematical Theory of the Madelung Equations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Takabayasi equations - 2207.11367.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-a-mathematical-theory-of-the-madelung-equations"><strong>Towards a Mathematical Theory of the Madelung Equations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td><a href="https://arxiv.org/abs/2207.11367">2207.11367v1</a> [math-ph], 22 July 2022</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Maik Reddiger, Bill Poirier (Texas Tech University)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1; arXiv preprint, 59 pages plus appendices</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>unpublished preprint (arXiv only)</td>
+</tr>
+<tr>
+<td>title</td>
+<td><em>Towards a mathematical Theory of the Madelung Equations: Takabayasi's Quantization Condition, Quantum Quasi-Irrotationality, variational Formulations, and the Wallstrom Phenomenon</em></td>
+</tr>
+<tr>
+<td>length</td>
+<td>85 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Takabayasi equations - 2207.11367-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Takabayasi equations - 2207.11367.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-nodal-set-and-quantized-circulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Takabayasi equations - 2207.11367.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<p>Filenamed after the PDF in the source folder, which groups it with the Takabayasi set because its subject is the condition that carries his name. The paper is not by Takabayasi.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes up Wallstrom's two objections against founding quantum mechanics on the Madelung equations and separates the part that survives from the part that does not. The authors prove that Takabayasi's circulation condition holds for $C^{1}$ wave functions and then argue it cannot be extended to the general theory. They show the common motivating examples — hydrogenic eigenfunctions, the two-dimensional oscillator — fail the irrotationality equation in the distributional sense, and name the failure "quantum quasi-irrotationality". They construct the non-quantized strong solutions Wallstrom claimed exist, and they relocate the second objection: the non-uniqueness is not a defect of the Madelung equations but of the Schrödinger equation, which cannot distinguish physically equivalent states.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"The Madelung equations [94] are known for having sparked a variety of ‘classical’ approaches to the Schrödinger theory of quantum mechanics. Arguably" "Though the Madelung equations and the Schrödinger equation are closely related, the mathematically precise relationship between the two systems of partial differential equations (PDEs) is still a matter of controversy (see e.g. [59; 57; 5])—a controversy that can be traced back to a variety of objections raised by Wallstrom"</p>
+<p>"The central, underlying question is the following: Under which conditions are the Madelung equations and the Schrödinger equation mathematically equivalent and at which point does this equivalence break down?"</p>
+<h3 id="the-condition-and-who-found-it">The condition, and who found it</h3>
+<p>"The aforementioned ‘quantization’ condition then states that ~v has to satisfy I m ~v · d~r ∈ Z (1.3) 2π~ at any given time for it to be physically acceptable. While Takabayasi [137] is often credited with the discovery of condition (1."</p>
+<p>"While Takabayasi [137] is often credited with the discovery of condition (1.3), in the literature on quantum vortices4 [130; 118; 17; 67; 68; 66; 139; 154; 18; 124; 123; 71] this credit is mostly given to Dirac (cf. p. 67 in Ref. [42]).5 We shall nonetheless call condition (1.3) Takabayasi’s quantization condition, for he was the first to suggest that it ought to be added to the Madelung equations, Eqs."</p>
+<h3 id="takabayasi-called-it-ad-hoc-first">Takabayasi called it ad hoc first</h3>
+<p>"With regards to the greater discussion on the foundations of non-relativistic quantum theory, Takabayasi already voiced the following criticism: '[Eq. (1.3) above] is so to speak" quantum condition "for fluidal motion and of ad hoc and compromising character for our formulation, just as the [Bohr–Sommerfeld] quantum condition for old quantum theory.' In essence, the above also constitutes Wallstrom's central objection."</p>
+<p>"At this point in time, Takabayasi’s condition has become ubiquitous in the literature surrounding the Madelung equations (see e.g. Sec. 3.2.2 in Ref. [69], Sec. 3.1 in Ref. [21], Sec. 1.2.1 in Ref. [103], and Refs. [130; 75; 153; 131; 124; 113; 101]) and it appears to have become largely assimilated without putting much weight on the aforementioned conceptual objection."</p>
+<h3 id="what-they-prove-and-what-they-doubt">What they prove, and what they doubt</h3>
+<p>"rigorously prove that Eq. (1.3) holds for C 1 -wave functions. Nonetheless, we argue on the basis of the mathematical theory of quantum mechanics that the condition is too restrictive—as already observed by Smolin in this context 4 Though there may be links on a mathematical" "there is serious doubt whether the condition can be appropriately extended. 2) In Sec."</p>
+<p>The proof rests on a topological fact: "If D is simply-connected or consists of countably many simply-connected (connected) components, then for a given smooth curve γ in D as above we can always find an (oriented) bounded, connected smooth surface such that γ is its boundary. Then Stokes’ theorem implies that the integral Eq. (1.3) vanishes (cf. e.g. Sec. 13.3.3.2 in Ref." "Contrarily, if this topological assumption does not hold – for instance due to a ‘line singularity’ of ~v – then Stokes’ theorem cannot be employed, as the respective surface is not compact. Roughly speaking, this is how the integral in Eq. (1.3) can fail to be zero.9"</p>
+<h3 id="the-third-equation-fails-as-a-distribution">The third equation fails as a distribution</h3>
+<p>"vance. 3) Consider the standard solutions Ψnlµ of the 1-body (time-independent) Schrö- dinger equation with attractive Coulomb potential in 3 dimensions—a" "We show rigorously that – using ‘physics notation’ for the Dirac delta – the distributional curl of the drift field ~v corresponding to Ψnlµ is given by   0 2πµ~  (∇ × ~v ) (t, x, y, z) = 0  (1.4) m δ(x) δ(y) (cf." a delta supported on the nodal line, multiplied by the magnetic quantum number $\mu$.</p>
+<p>"That is, those solutions exhibit quantum vorticity in the sense that the third Madelung equation, Eq. (1.1c), is in general not satisfied, if the curl is under- stood in the distributional sense. Motivated by a statement made by Schönberg [130] in the 1950s, we call such drift fields quasi-irrotational (cf. Def. 2.10). It is also worth noting that here the quantum vorticity depends on the magnetic quantum number µ—whose ‘quantization’ forces the other quantum numbers n and l to take integer values as well."</p>
+<h3 id="the-non-quantized-solutions">The non-quantized solutions</h3>
+<p>"In Sec. 4 we explicitly construct and analyze ‘non-quantized’, stationary, strong solutions of the Madelung equations for the case of the 2-dimensional isotropic harmonic oscillator. Wallstrom claimed that such solutions exist [146]. Yet he neither gave any explicit examples nor is the existence thereof 7 1 Introduction and main results mathematically trivial, since the need to account for other boundary conditions could in principle force the ‘quantization’ of the quantum numbers."</p>
+<h3 id="the-second-objection-moves-to-the-schrodinger-side">The second objection moves to the Schrödinger side</h3>
+<p>"While Wallstrom viewed the phenomenon as a problem of the Madelung equations, we wish to point out that it is also a problem of the Schrödinger equation: With the exception of comparing the time evolution of the probability density after the supports have merged, it is not possible to physically discern the different initial states—all predicted detection probabilities and expectation values of observables37 at t = 0 are the same. Accepting all of those initial states as physical would undermine the predictive power of the Schrödinger theory. 37 The ‘operator’ suggested in Eq."</p>
+<p>"The Wallstrom phenomenon and the Pauli problem are connected by the overarching question of how to discern quantum-mechanical states that are initially physically equivalent — i.e. with regards to measurement — yet nonetheless lead to physically inequivalent states under time evolution."</p>
+<p>"The underlying problem exhibited by the Wallstrom phenomenon and the negative answer to the Pauli problem therefore seems to be the failure of quantum mechanics to specify which (initial) states are physically acceptable and which ones are not. Phrased differently, the Schrödinger theory in $L^{2}$ is physically incomplete without a further restriction on the set of (initial) states."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"Most importantly, we wish to emphasize that this work does not provide a full resolution of Wallstrom's objections. What it does provide is a clarification to what extent those objections are justified as well as various possible avenues for finding such a resolution."</p>
+<p>"In this respect, the central message is that the relation between the Schrödinger equation and the Madelung equations needs to be clarified in the context of the mathematical theory of distributions. Interpreting the respective PDEs in the strong sense only would already defy the theory of quantum mechanics, so we should not expect this approach to take us beyond established theory." "at this point in time the task of resolving the controversy is primarily one of functional analysis. Given"</p>
+<p>"As Wallstrom's objections failed to properly account for the mathematical structure of quantum mechanics, we hope to have convinced the reader that casting such a judgment on the viability of the Madelung equations as fundamental laws of nature is premature at this point."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The curl does not vanish — it is a delta on the nodal line</li>
+</ol>
+<p><strong>The idea.</strong> The corpus's account is that the flow is irrotational off the nodal set and that a loop linking a node has circulation fixed by winding. Reddiger and Poirier make a stronger and strictly different statement: taken distributionally, the curl of the drift field of a hydrogenic eigenstate is <em>not zero anywhere it is tested</em> — it is $2\pi\mu\hbar/m$ times a delta supported on the nodal line. The third Madelung equation therefore fails as an equation, not merely as a statement about a loop that has no surface to bound.</p>
+<p><strong>What it would add.</strong> A correction of emphasis with a consequence. If the curl is a delta rather than zero, then the irrotationality equation is not vacuous on the node but <em>wrong</em> on it, and any variational formulation must either accept the delta as a source or restrict to the real-valued eigenfunctions. That is a sharper form of the corpus's own thesis and it changes what one has to prove.</p>
+<p><strong>Where it lands.</strong> §<em>So the irrotationality is exact on the complement of the nodal set and vacuous on it</em> of <em>The Nodal Set and Quantized Circulation</em> (<code>articles_physics/the-nodal-set-and-quantized-circulation.md</code>), as the distributional refinement.</p>
+<p><strong>What stands in the way.</strong> The corpus's argument is geometric and avoids distributions entirely; adopting the distributional reading means conceding that the strong-form statement is false and rebuilding the section on weaker hypotheses.</p>
+<ol>
+<li>The circulation integer is the magnetic quantum number, not the winding number</li>
+</ol>
+<p><strong>The idea.</strong> The corpus identifies the integer with the topological degree of the phase map, which is loop-independent. Reddiger and Poirier identify it, for hydrogenic states, with $\mu$ — and note that requiring circulation be integral for $\mu$ is what forces $n$ and $l$ to be integers as well.</p>
+<p><strong>What it would add.</strong> A dependency the corpus does not record: the quantization of one number is what quantizes the others. If the identification with $\mu$ is right, then "the integer is the degree" is true but incomplete, because the degree is not free — it is tied to the other two quantum numbers by the same condition.</p>
+<p><strong>Where it lands.</strong> §<em>The winding is a class of the field's map into the algebra's group of invertibles</em> of <em>The Nodal Set and Quantized Circulation</em>, as the identification.</p>
+<p><strong>What stands in the way.</strong> The claim is stated for Coulomb eigenfunctions specifically and is not shown to be a general property of circulation integrals.</p>
+<h3 id="3-quantum-quasi-irrotationality-a-name-for-a-class-of-fields">3. "Quantum quasi-irrotationality" — a name for a class of fields</h3>
+<p><strong>The idea.</strong> A drift field whose curl is supported on a lower-dimensional set is <em>quasi</em>-irrotational: irrotational everywhere the test function does not see the support. <strong>Where it lands.</strong> §<em>The nodal set is where the polar form ends</em> of <em>The Nodal Set and Quantized Circulation</em>, as the definition.</p>
+<h3 id="4-the-non-uniqueness-is-a-defect-of-the-schrodinger-equation">4. The non-uniqueness is a defect of the Schrödinger equation</h3>
+<p><strong>The idea.</strong> Wallstrom's second objection — that the Madelung equations do not determine a unique evolution when density supports merge — is turned around: the Schrödinger equation does not distinguish those initial states either, and all of them give the same predictions at $t=0$. <strong>Where it lands.</strong> The conversion of <em>On the Formulation of Quantum Mechanics associated with Classical Pictures</em> in this folder, §<em>The Ensemble and the Hidden Variables</em>, as the relocation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

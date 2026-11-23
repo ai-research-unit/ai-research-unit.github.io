@@ -143,7 +143,7 @@ $$</p>
 <p>$$
 \lambda_++\lambda_-=2q,
 \qquad
-\lambda_+\lambda_-=q^2-q'^2=\langle Q\rangle_{*}.
+\lambda_+\lambda_-=q^2-q'{}^2=\langle Q\rangle_{*}.
 $$</p>
 <p>The eigenvalues are distinct exactly when $q'\neq0$, because</p>
 <p>$$
@@ -151,9 +151,9 @@ $$</p>
 $$</p>
 <p>The characteristic polynomial is</p>
 <p>$$
-p_Q(X)=X^2-2qX+(q^2-q'^2)=(X-\lambda_+)(X-\lambda_-),
+p_Q(X)=X^2-2qX+(q^2-q'{}^2)=(X-\lambda_+)(X-\lambda_-),
 $$</p>
-<p>with discriminant $4q'^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.</p>
+<p>with discriminant $4q'{}^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.</p>
 <h3 id="the-eigenprojections">The Eigenprojections</h3>
 <p>The two eigenprojections are the fixed idempotents</p>
 <p>$$
@@ -222,13 +222,13 @@ $$</p>
 <h3 id="the-matrix-picture">The Matrix Picture</h3>
 <p>In the basis $(1,j)$ the matrix of multiplication by $Q$ is</p>
 <p>$$
-M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+M_Q=\begin{pmatrix}q&amp;q'\\q'&amp;q\end{pmatrix},
 $$</p>
-<p>with trace $2q$ and determinant $q^2-q'^2=\lambda_+\lambda_-$. The change to the eigenbasis has columns the coordinate vectors of $\Pi_+$ and $\Pi_-$:</p>
+<p>with trace $2q$ and determinant $q^2-q'{}^2=\lambda_+\lambda_-$. The change to the eigenbasis has columns the coordinate vectors of $\Pi_+$ and $\Pi_-$:</p>
 <p>$$
-C=\begin{pmatrix}\tfrac12&\tfrac12\\\tfrac12&-\tfrac12\end{pmatrix},
+C=\begin{pmatrix}\tfrac12&amp;\tfrac12\\\tfrac12&amp;-\tfrac12\end{pmatrix},
 \qquad
-C^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
+C^{-1}=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$
@@ -273,7 +273,7 @@ $$</p>
 </tr>
 <tr>
 <td>Zero divisor</td>
-<td>$q'\neq0$, $q^2-q'^2=0$</td>
+<td>$q'\neq0$, $q^2-q'{}^2=0$</td>
 <td>$\{2q,0\}$</td>
 <td>$(\Pi_+,\Pi_-)$ still exists</td>
 </tr>
@@ -306,28 +306,28 @@ Q=8\Pi_++2\Pi_-.
 $$</p>
 <p><strong>Eigenbasis and matrix.</strong> In the eigenbasis the coordinates of $Q$ are $(8,2)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}5&3\\3&5\end{pmatrix},
+M_Q=\begin{pmatrix}5&amp;3\\3&amp;5\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}8&0\\0&2\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}8&amp;0\\0&amp;2\end{pmatrix}.
 $$</p>
 <p>The trace is $10=8+2$ and the determinant is $16=8\cdot2$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=5+3j$ one has $a_1=\lambda_+=8$ and $a_2=\lambda_-=2$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}8&0\\0&2\end{pmatrix}=\begin{pmatrix}8&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&2\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}8&amp;0\\0&amp;2\end{pmatrix}=\begin{pmatrix}8&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;2\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The square is</p>
 <p>$$
@@ -366,28 +366,28 @@ Q=8\Pi_+-2\Pi_-.
 $$</p>
 <p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(8,-2)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}3&5\\5&3\end{pmatrix},
+M_Q=\begin{pmatrix}3&amp;5\\5&amp;3\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}8&0\\0&-2\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}8&amp;0\\0&amp;-2\end{pmatrix}.
 $$</p>
 <p>The trace is $6=8-2$ and the determinant is $-16=8\cdot(-2)$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=3+5j$ one has $a_1=\lambda_+=8$ and $a_2=\lambda_-=-2$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}8&0\\0&-2\end{pmatrix}=\begin{pmatrix}8&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-2\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}8&amp;0\\0&amp;-2\end{pmatrix}=\begin{pmatrix}8&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;-2\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The square is again</p>
 <p>$$
@@ -426,28 +426,28 @@ Q=-8\Pi_+-2\Pi_-.
 $$</p>
 <p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(-8,-2)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}-5&-3\\-3&-5\end{pmatrix},
+M_Q=\begin{pmatrix}-5&amp;-3\\-3&amp;-5\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}-8&0\\0&-2\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}-8&amp;0\\0&amp;-2\end{pmatrix}.
 $$</p>
 <p>The trace is $-10=-8-2$ and the determinant is $16=(-8)(-2)$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=-5-3j$ one has $a_1=\lambda_+=-8$ and $a_2=\lambda_-=-2$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}-8&0\\0&-2\end{pmatrix}=\begin{pmatrix}-8&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-2\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}-8&amp;0\\0&amp;-2\end{pmatrix}=\begin{pmatrix}-8&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;-2\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The square is</p>
 <p>$$
@@ -486,28 +486,28 @@ Q=-\Pi_++3\Pi_-.
 $$</p>
 <p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(-1,3)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}1&-2\\-2&1\end{pmatrix},
+M_Q=\begin{pmatrix}1&amp;-2\\-2&amp;1\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}-1&0\\0&3\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}-1&amp;0\\0&amp;3\end{pmatrix}.
 $$</p>
 <p>The trace is $2=-1+3$ and the determinant is $-3=(-1)\cdot3$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=1-2j$ one has $a_1=\lambda_+=-1$ and $a_2=\lambda_-=3$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}-1&0\\0&3\end{pmatrix}=\begin{pmatrix}-1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&3\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}-1&amp;0\\0&amp;3\end{pmatrix}=\begin{pmatrix}-1&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;3\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The square is</p>
 <p>$$
@@ -546,28 +546,28 @@ Q=\Pi_+-\Pi_-.
 $$</p>
 <p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(1,-1)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+M_Q=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix}.
 $$</p>
 <p>The trace is $0$ and the determinant is $-1$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=j$ one has $a_1=\lambda_+=1$ and $a_2=\lambda_-=-1$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}1&0\\0&-1\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-1\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix}=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;-1\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The element is an involution,</p>
 <p>$$
@@ -595,25 +595,25 @@ $$</p>
 <p>$$
 M_Q=2I_2,
 \qquad
-C^{-1}M_QC=\begin{pmatrix}2&0\\0&2\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}2&amp;0\\0&amp;2\end{pmatrix}.
 $$</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=2$ one has $a_1=\lambda_+=2$ and $a_2=\lambda_-=2$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}2&0\\0&2\end{pmatrix}=\begin{pmatrix}2&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&2\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}2&amp;0\\0&amp;2\end{pmatrix}=\begin{pmatrix}2&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;2\end{pmatrix}.
 $$ The two eigenvalues coincide: the two spinor lines carry the same scale, and the pair $(\Pi_+,\Pi_-)$ is a choice.</p>
 <p><strong>Consequences.</strong> $Q^2=4$ and $Q^{-1}=\tfrac12$. The two spinor spaces are still the two coordinate axes, but $Q$ acts on both by the same scalar.</p>
 <h3 id="case-7-the-negative-scalar">Case 7: The Negative Scalar</h3>
@@ -635,25 +635,25 @@ $$</p>
 <p>$$
 M_Q=-2I_2,
 \qquad
-C^{-1}M_QC=\begin{pmatrix}-2&0\\0&-2\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}-2&amp;0\\0&amp;-2\end{pmatrix}.
 $$</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=-2$ one has $a_1=\lambda_+=-2$ and $a_2=\lambda_-=-2$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}-2&0\\0&-2\end{pmatrix}=\begin{pmatrix}-2&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-2\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}-2&amp;0\\0&amp;-2\end{pmatrix}=\begin{pmatrix}-2&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;-2\end{pmatrix}.
 $$ The two eigenvalues coincide: the two spinor lines carry the same scale, and the pair $(\Pi_+,\Pi_-)$ is a choice.</p>
 <p><strong>Consequences.</strong> $Q^2=4$ and $Q^{-1}=-\tfrac12$. Cases 6 and 7 have the same square and opposite inverses; the eigenbasis does not distinguish them, because in the scalar regime it is not attached to the element.</p>
 <h3 id="case-8-the-zero-divisor">Case 8: The Zero Divisor</h3>
@@ -682,28 +682,28 @@ $$</p>
 <p>The element is a zero divisor, yet it has an eigenbasis. The two properties are independent: diagonalisability is not invertibility.</p>
 <p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(2,0)$, and</p>
 <p>$$
-M_Q=\begin{pmatrix}1&1\\1&1\end{pmatrix},
+M_Q=\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},
 \qquad
-C^{-1}M_QC=\begin{pmatrix}2&0\\0&0\end{pmatrix}.
+C^{-1}M_QC=\begin{pmatrix}2&amp;0\\0&amp;0\end{pmatrix}.
 $$</p>
 <p>The matrix has rank one and determinant zero. Its image is the line of $\Pi_+$ and its kernel is the line of $\Pi_-$.</p>
 <p><strong>Spinors.</strong> A spinor of the first Peirce copy is $\zeta_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\zeta_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
-\mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
+\mathsf M(Q_2)=\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
-\mathsf M(\zeta_+)=\begin{pmatrix}a_1&0\\0&0\end{pmatrix},
+\mathsf M(\zeta_+)=\begin{pmatrix}a_1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M(\zeta_-)=\begin{pmatrix}0&0\\0&a_2\end{pmatrix};
+\mathsf M(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;a_2\end{pmatrix};
 $$
 the first column is $\zeta_+$ and the second is $\zeta_-$. Multiplication by $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(QX)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\mathsf M(QX)=\begin{pmatrix}\lambda_+&amp;0\\0&amp;\lambda_-\end{pmatrix}\begin{pmatrix}a_1&amp;0\\0&amp;a_2\end{pmatrix},
 $$
 that is $a_1\mapsto\lambda_+a_1$ and $a_2\mapsto\lambda_-a_2$. In the special case $Q=1+j$ one has $a_1=\lambda_+=2$ and $a_2=\lambda_-=0$, so
 $$
-\mathsf M(Q)=\begin{pmatrix}2&0\\0&0\end{pmatrix}=\begin{pmatrix}2&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&0\end{pmatrix}.
+\mathsf M(Q)=\begin{pmatrix}2&amp;0\\0&amp;0\end{pmatrix}=\begin{pmatrix}2&amp;0\\0&amp;0\end{pmatrix}+\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}.
 $$ The second spinor vanishes, its column is zero, and the matrix has rank one.</p>
 <p><strong>Consequences.</strong> The powers are</p>
 <p>$$
@@ -905,7 +905,7 @@ $$</p>
 <td>$1$</td>
 <td>$34+30j$</td>
 <td>$\dfrac{5-3j}{16}$</td>
-<td>$\begin{pmatrix}5&3\\3&5\end{pmatrix}$</td>
+<td>$\begin{pmatrix}5&amp;3\\3&amp;5\end{pmatrix}$</td>
 <td>$10$</td>
 <td>$16$</td>
 </tr>
@@ -913,7 +913,7 @@ $$</p>
 <td>$2$</td>
 <td>$34+30j$</td>
 <td>$\dfrac{-3+5j}{16}$</td>
-<td>$\begin{pmatrix}3&5\\5&3\end{pmatrix}$</td>
+<td>$\begin{pmatrix}3&amp;5\\5&amp;3\end{pmatrix}$</td>
 <td>$6$</td>
 <td>$-16$</td>
 </tr>
@@ -921,7 +921,7 @@ $$</p>
 <td>$3$</td>
 <td>$34+30j$</td>
 <td>$\dfrac{-5+3j}{16}$</td>
-<td>$\begin{pmatrix}-5&-3\\-3&-5\end{pmatrix}$</td>
+<td>$\begin{pmatrix}-5&amp;-3\\-3&amp;-5\end{pmatrix}$</td>
 <td>$-10$</td>
 <td>$16$</td>
 </tr>
@@ -929,7 +929,7 @@ $$</p>
 <td>$4$</td>
 <td>$5-4j$</td>
 <td>$\dfrac{-1-2j}{3}$</td>
-<td>$\begin{pmatrix}1&-2\\-2&1\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1&amp;-2\\-2&amp;1\end{pmatrix}$</td>
 <td>$2$</td>
 <td>$-3$</td>
 </tr>
@@ -937,7 +937,7 @@ $$</p>
 <td>$5$</td>
 <td>$1$</td>
 <td>$j$</td>
-<td>$\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$</td>
 <td>$0$</td>
 <td>$-1$</td>
 </tr>
@@ -961,7 +961,7 @@ $$</p>
 <td>$8$</td>
 <td>$2+2j$</td>
 <td>none</td>
-<td>$\begin{pmatrix}1&1\\1&1\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}$</td>
 <td>$2$</td>
 <td>$0$</td>
 </tr>
@@ -1018,7 +1018,7 @@ $$</p>
 <td>the change to the eigenbasis</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*}=q^2-q'^2$</td>
+<td>$\langle Q\rangle_{*}=q^2-q'{}^2$</td>
 <td>the split-complex norm</td>
 </tr>
 </tbody>

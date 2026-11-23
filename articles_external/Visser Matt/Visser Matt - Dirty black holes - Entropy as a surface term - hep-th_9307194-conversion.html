@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: entropy as a surface term — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy as a surface term - hep-th_9307194.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-entropy-as-a-surface-term"><strong>Dirty black holes: entropy as a surface term</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9307194v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 30 July 1993</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Entropy as a surface term - hep-th_9307194-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy as a surface term - hep-th_9307194.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy as a surface term - hep-th_9307194.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The area law for black hole entropy is known to fail when the matter or the gravity action departs from the simplest case. Several authors had conjectured that the entropy of a "dirty" black hole is still given by a surface integral over the horizon, and Wald had proved this with Lorentzian methods. This note gives a different proof using Euclidean techniques, covering static spherically symmetric and stationary axisymmetric black holes. The result is that the total entropy is the area term plus a correction that is an integral of a local density over a slice of the horizon.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"It is by now clear that the naive rule for the entropy of a black hole, (entropy) = $1/4$ (area of event horizon), is violated in many interesting cases. Indeed, several authors have recently conjectured that in general the entropy of a dirty black hole might be given purely in terms of some surface integral over the event horizon of that black hole."</p>
+<h3 id="the-relation-to-wald">The relation to Wald</h3>
+<p>"A formal proof of this conjecture, using Lorentzian signature techniques, has recently been provided by Wald. This note performs two functions. Firstly, by extending a previous analysis due to the present author it is possible to provide a rather different proof of this result — a proof based on Euclidean signature techniques."</p>
+<h3 id="the-scope-of-the-proof">The scope of the proof</h3>
+<p>"The proof applies both to arbitrary static [spherically symmetric] black holes, and also to arbitrary stationary axisymmetric black holes."</p>
+<h3 id="the-result">The result</h3>
+<p>The total entropy is</p>
+<p>$$S=\frac{kA_H}{4\ell_P^2}+\int_H S^{(2)}\sqrt{{}^{(2)}g}\,d^2x.\qquad (paper\ 66)$$</p>
+<h3 id="the-first-conclusion">The first conclusion</h3>
+<p>"First: The naive area law for black hole entropies is in general false. $S\neq \frac{kA_H}{4\ell_P^2}$. The naive law certainly holds for Einstein–Hilbert gravity coupled to matter whose kinetic energy is quadratic. Once one moves beyond quadratic kinetic energies the naive law fails in general."</p>
+<h3 id="the-second-conclusion">The second conclusion</h3>
+<p>"Second: For a general higher derivative Lagrangian the entropy of a black hole is given by an integral of some suitable density over (a fixed time spacelike cross-section of) the event horizon."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-entropy-is-not-area">1. Entropy is not area</h3>
+<p><strong>The idea.</strong> The area law is a special case, and the general statement is area plus a horizon integral.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives entropy from a horizon and should state which case it is in. If its derivation reproduces the area law, that fixes the class of Lagrangians it can represent; if it does not, it must say what the correction is.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The correction needs a Lagrangian, which the framework lacks. Ranked first, because it divides the article's claims into a supported case and an unsupported one.</p>
+<h3 id="2-euclidean-and-lorentzian-proofs-agree">2. Euclidean and Lorentzian proofs agree</h3>
+<p><strong>The idea.</strong> Two very different techniques give the same surface term.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses one route to its thermodynamics. Knowing that a second, independent route exists makes the result robust and tells the article where to look if its own route is questioned.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the assumptions.</p>
+<p><strong>What stands in the way.</strong> The two proofs share the same geometric input. Ranked second.</p>
+<h3 id="3-symmetry-is-doing-the-work">3. Symmetry is doing the work</h3>
+<p><strong>The idea.</strong> The proof covers static spherical and stationary axisymmetric cases, and no others.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that horizon properties need more than local data. Here the needed extra is symmetry, named explicitly. That sharpens the article's claim into a statement about which symmetries supply what.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> Symmetry is only one of several needed ingredients. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

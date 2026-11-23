@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy conditions in the epoch of galaxy formation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions in the epoch of galaxy formation - 1501.01619.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="energy-conditions-in-the-epoch-of-galaxy-formation"><strong>Energy conditions in the epoch of galaxy formation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1501.01619v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 January 2015 (originally submitted November 1996, revised February 1997)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Science 276 (1997) 88–90 — as printed on the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Energy conditions in the epoch of galaxy formation - 1501.01619-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions in the epoch of galaxy formation - 1501.01619.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions in the epoch of galaxy formation - 1501.01619.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is the journal version of the argument that the strong energy condition fails late in cosmic history. Working in a Friedmann–Robertson–Walker geometry with only the Einstein equations and the energy conditions, the paper derives bounds on the density and the look-back time as functions of redshift. The bounds do not require a density parameter or an equation of state. Combining them with the Hubble parameter, the age of the oldest halo stars, and their formation redshift shows the condition is violated somewhere below a temperature of 60 K. The conclusion is that no combination of normal matter fits the data, so the cosmological fluid needs something drastic, such as a cosmological constant.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-role-of-energy-conditions">The role of energy conditions</h3>
+<p>"The energy conditions of Einstein gravity (classical general relativity) place restrictions on the stress-energy tensor $T_{\mu\nu}$ (energy-momentum tensor). ... The energy conditions force various linear combinations of these quantities to be positive and have been used, for instance, to derive many theorems of classical general relativity—such as the singularity theorems; the area increase theorem for black holes, and the positive mass theorem—without the need to assume a specific equation of state."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"Current observations seem to indicate that the strong energy condition (SEC) is violated rather late in the life of the universe—somewhere between galaxy formation and the present time, in an epoch where the cosmological temperature never exceeds 60 K."</p>
+<h3 id="the-independence-from-curvature">The independence from curvature</h3>
+<p>"The bounds I derive from the SEC are independent of whether or not the universe is open, flat, or closed—which means that the density parameter ... does not have to be specified. Thus my approach is independent of the existence or nonexistence of any of the standard variants of cosmological inflation."</p>
+<h3 id="the-minimal-inputs">The minimal inputs</h3>
+<p>"The experimental observations I need are the present day value of the Hubble parameter $H_0$, an age estimate for the age of the oldest stars in the galactic halo, and an estimate for the red-shift at which these oldest stars formed."</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"This implies that no possible combination of 'normal' matter is capable of fitting the observational data, and one needs to do something drastic to the cosmological fluid, either introduce a cosmological constant $\Lambda$, or have a very non-standard weak form of cosmological inflation that persists right up to galaxy formation."</p>
+<h3 id="where-violations-are-not-expected">Where violations are not expected</h3>
+<p>"General relativists and particle physicists would be surprised if large violations of the classical energy conditions occur at temperatures significantly below the Planck scale."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-bound-with-no-free-parameters">1. A bound with no free parameters</h3>
+<p><strong>The idea.</strong> The density and look-back bounds hold for open, flat, and closed geometry alike.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> cannot fix its curvature or its contents. This paper shows a class of statements that survive not knowing either, which is exactly the regime the article is in. It should test its carried metric against these bounds.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The test needs the expansion history, which the article lacks. Ranked first, because it is the strongest available check without a source.</p>
+<h3 id="2-sixty-kelvin">2. Sixty kelvin</h3>
+<p><strong>The idea.</strong> The violation is pushed down to an epoch colder than 60 K, which excludes ordinary matter explanations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> can use the temperature as a boundary condition: whatever the framework adds must act at low temperature and late time.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> It is a constraint rather than a mechanism. Ranked second.</p>
+<h3 id="3-drastic-options-listed">3. Drastic options, listed</h3>
+<p><strong>The idea.</strong> The paper names the small set of escapes: a cosmological constant, or unusual inflation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would be sharper if each entry listed the escapes it permits, as this paper does.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> The list is about cosmology only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living on the edge: cosmology on the boundary of anti-de Sitter space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Living on the edge - cosmology on the boundary of anti-de Sitter space -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="living-on-the-edge-cosmology-on-the-boundary-of-anti-de-sitter-space"><strong>Living on the edge: cosmology on the boundary of anti-de Sitter space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0004056v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 April 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Living on the edge - cosmology on the boundary of anti-de Sitter space - hep-th_0004056-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Living on the edge - cosmology on the boundary of anti-de Sitter space - hep-th_0004056.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Living on the edge - cosmology on the boundary of anti-de Sitter space - hep-th_0004056.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors build a braneworld cosmology with one brane and one bulk. The brane is the boundary of a five-dimensional anti-de Sitter region, and it is the visible universe. They show that a closed FLRW universe arises naturally, that flat and open cases can be fitted with more work, and that the model agrees with standard cosmology. They also derive the curvature tensor and field equations for a manifold with boundary.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"We sketch a particularly simple and compelling version of D-brane cosmology. Inspired by the semi-phenomenological Randall–Sundrum models, and their cosmological generalizations, we develop a variant that contains a single (3+1)-dimensional D-brane which is located on the boundary of a single bulk (4+1)-dimensional region."</p>
+<h3 id="where-we-live">Where we live</h3>
+<p>"The D-brane boundary is itself to be interpreted as our visible universe, with ordinary matter (planets, stars, galaxies) being trapped on this D-brane by string theory effects."</p>
+<h3 id="the-preferred-geometry">The preferred geometry</h3>
+<p>"We demonstrate that a $k=+1$ closed FLRW universe is the most natural option, though the scale factor could quite easily be so large as to make it operationally indistinguishable from a $k=0$ spatially flat universe."</p>
+<h3 id="the-technical-core">The technical core</h3>
+<p>"The D-brane (which our observable universe lives on) is here viewed as an actual physical boundary to the higher-dimensional spacetime, and we have demonstrated how to write down both curvature tensor and field equations for a manifold with boundary."</p>
+<h3 id="the-fit">The fit</h3>
+<p>"We have verified that standard $k=+1$ FLRW cosmology can very easily be reproduced, and that we do not have massive present day violations of observational constraints."</p>
+<h3 id="the-cost-of-flatness">The cost of flatness</h3>
+<p>"If you absolutely insist on a spatially flat $k=0$ geometry (or even a spatially hyperbolic $k=-1$ geometry) that can also be achieved along the lines of this article, but at some cost in elegance, and for very little real purpose."</p>
+<h3 id="where-to-look">Where to look</h3>
+<p>"likely places to look for observational signatures are in short-distance (centimetre) deviations from the gravitational inverse square law, and in very early universe cosmology"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-universe-as-a-boundary">1. The universe as a boundary</h3>
+<p><strong>The idea.</strong> Our four-dimensional world is the edge of a five-dimensional region, not a slice through it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> carries FLRW on a four-dimensional space. A boundary construction gives the metric a reason to exist without an added source, which is exactly the gap the target reports.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The construction adds a dimension and a junction condition. Ranked first, because it addresses the target's stated gap directly.</p>
+<h3 id="2-curvature-on-a-manifold-with-boundary">2. Curvature on a manifold with boundary</h3>
+<p><strong>The idea.</strong> The field equations on a region with an edge pick up boundary terms.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> is pointwise and has no boundary. The boundary terms are a case its algebraic approach does not cover, and the paper gives them explicitly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of the framework's reach.</p>
+<p><strong>What stands in the way.</strong> The derivation is in general relativity. Ranked second.</p>
+<h3 id="3-a-closed-universe-is-the-natural-one">3. A closed universe is the natural one</h3>
+<p><strong>The idea.</strong> The boundary condition prefers positive spatial curvature, and flatness is a fine-tuned limit.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> assumes a curvature parameter. This paper argues that one value is selected, which is a claim the target would have to answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the curvature parameter.</p>
+<p><strong>What stands in the way.</strong> The selection is not sharp: large scale factors mimic flatness. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -82,9 +82,9 @@ $$</p>
 <p>$$
 X\circ Y=Y\circ X,\qquad (X\circ Y)^{\mathsf T}=\tfrac12(Y^{\mathsf T}X^{\mathsf T}+X^{\mathsf T}Y^{\mathsf T})=X\circ Y,
 $$</p>
-<p>so $\circ$ is a commutative bilinear map $S\times S\to S$. It is not associative: at $n=2$ with $X=Y=\begin{pmatrix}1&1\\ 1&1\end{pmatrix}$ and $Z=E_{11}$,</p>
+<p>so $\circ$ is a commutative bilinear map $S\times S\to S$. It is not associative: at $n=2$ with $X=Y=\begin{pmatrix}1&amp;1\\ 1&amp;1\end{pmatrix}$ and $Z=E_{11}$,</p>
 <p>$$
-(X\circ Y)\circ Z=\begin{pmatrix}2&1\\ 1&0\end{pmatrix},\qquad X\circ(Y\circ Z)=\begin{pmatrix}3/2&1\\ 1&1/2\end{pmatrix},
+(X\circ Y)\circ Z=\begin{pmatrix}2&amp;1\\ 1&amp;0\end{pmatrix},\qquad X\circ(Y\circ Z)=\begin{pmatrix}3/2&amp;1\\ 1&amp;1/2\end{pmatrix},
 $$</p>
 <p>so the two parenthesizings differ on an open set. Measured on $100$ random triples at each of $n=2,3,4$, they differed in every case.</p>
 <p><strong>The product contains the ordinary product and the anticommutator.</strong> The identity</p>
@@ -109,7 +109,7 @@ $$</p>
 <p>and conversely, if $A\succeq0$ then $A=B^{2}$ with $B=A^{1/2}\in S$, by the spectral theorem for symmetric matrices. So the set of squares is exactly the closed convex cone $\mathcal{P}_n$ of positive semidefinite matrices.</p>
 <p><strong>The algebra is formally real.</strong> A sum of squares $\sum_kX_k\circ X_k$ vanishes only if every $X_k$ vanishes, because $\operatorname{tr}(X_k^{2})\ge0$ and the trace of the sum is the sum of the traces. So no nonzero element is a sum of squares equal to zero, no nonzero element is nilpotent, and the algebra carries a positive definite trace form.</p>
 <p><strong>Consequence: the cone of squares is a proper cone and gives an order.</strong> $A\preceq B$ iff $B-A$ is a sum of squares is the Löwner order, and the cone is closed, convex, pointed and full-dimensional. The order is the one of <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em>, and the Jordan structure is what makes it an order and not merely a cone.</p>
-<p><strong>The trace form is positive definite on $S$.</strong> $\langle X,Y\rangle=\operatorname{tr}(X\circ Y)=\operatorname{tr}(XY)$ is an inner product, since $\operatorname{tr}(X^{2})=\sum_{ij}X_{ij}^{2}>0$ for $X\ne0$. So the Jordan algebra is Euclidean, and its automorphism group is compact.</p>
+<p><strong>The trace form is positive definite on $S$.</strong> $\langle X,Y\rangle=\operatorname{tr}(X\circ Y)=\operatorname{tr}(XY)$ is an inner product, since $\operatorname{tr}(X^{2})=\sum_{ij}X_{ij}^{2}&gt;0$ for $X\ne0$. So the Jordan algebra is Euclidean, and its automorphism group is compact.</p>
 <h2 id="the-trace-form-is-an-associative-form">The Trace Form Is an Associative Form</h2>
 <p><strong>The trace form is associative for the Jordan product.</strong> For $X,Y,Z\in S$,</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 <p>where $V_{\lambda}=\{X: E\circ X=\lambda X\}$. The sum is $n(n+1)/2$, the dimension of $S$. The three pieces are the Jordan Peirce spaces, and the multiplication rules are those of a Jordan algebra of degree two.</p>
 <p><strong>Consequence: the recursion of the corners is the recursion of the Jordan algebra.</strong> $V_{1}$ is the Jordan algebra of the image of $E$, of degree $r$; $V_{0}$ is the Jordan algebra of the kernel; and $V_{1/2}$ is a bimodule between them. So the Peirce decomposition is the same corner recursion as in the associative case, read with the anticommutator, which is the content of <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em>.</p>
 <h2 id="the-generic-norm-and-the-determinant">The Generic Norm and the Determinant</h2>
-<p><strong>The determinant is the generic norm of the Jordan algebra.</strong> Its restriction to $S$ is homogeneous of degree $n$, it satisfies $\det\mathrm{I}=1$ and $\det(QXQ^{\mathsf T})=\det X$ for $Q\in\mathrm{O}(n)$, and it is the unique such polynomial up to a power. It is not multiplicative for the Jordan product: at $n=2$ with $X=\operatorname{diag}(1,-1)$ and $Z=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ one has $X\circ Z=0$ and $\det X\det Z=1$, while $\det(X\circ Z)=0$. Jordan algebras are not associative, and the generic norm is the substitute for the multiplicativity of the determinant, not its copy.</p>
+<p><strong>The determinant is the generic norm of the Jordan algebra.</strong> Its restriction to $S$ is homogeneous of degree $n$, it satisfies $\det\mathrm{I}=1$ and $\det(QXQ^{\mathsf T})=\det X$ for $Q\in\mathrm{O}(n)$, and it is the unique such polynomial up to a power. It is not multiplicative for the Jordan product: at $n=2$ with $X=\operatorname{diag}(1,-1)$ and $Z=\begin{pmatrix}0&amp;1\\ 1&amp;0\end{pmatrix}$ one has $X\circ Z=0$ and $\det X\det Z=1$, while $\det(X\circ Z)=0$. Jordan algebras are not associative, and the generic norm is the substitute for the multiplicativity of the determinant, not its copy.</p>
 <p><strong>The rank is the degree of the minimal polynomial.</strong> For $X\in S$ the rank $\operatorname{rk}X$ is the number of nonzero eigenvalues, which is the least $k$ with $X^{k}\in\operatorname{span}\{\mathrm{I},X,\dots,X^{k-1}\}$, the degree of the minimal polynomial. So the Jordan rank and the matrix rank agree, and the strata of the Jordan algebra are the rank strata of the cone.</p>
 <p><strong>The spectral theorem is a Jordan statement.</strong> Every $X\in S$ is $\sum_k\lambda_kE_k$ with $\lambda_k$ real and $E_k$ mutually orthogonal idempotents summing to $\mathrm{I}$, because the algebra generated by $X$ is associative and finite dimensional, hence a product of copies of $\mathbb{R}$. The idempotents $E_k$ are the Lagrange projectors of <em>Lagrange Idempotents of a Real Matrix with Simple Real Spectrum</em>, and the statement needs no complex number.</p>
 <h2 id="automorphisms-and-derivations">Automorphisms and Derivations</h2>

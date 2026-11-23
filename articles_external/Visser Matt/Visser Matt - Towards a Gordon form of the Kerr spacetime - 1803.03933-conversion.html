@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards a Gordon form of the Kerr spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Gordon form of the Kerr spacetime - 1803.03933.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-a-gordon-form-of-the-kerr-spacetime"><strong>Towards a Gordon form of the Kerr spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1803.03933v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Giovanni Tricella, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 11 March 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Towards a Gordon form of the Kerr spacetime - 1803.03933-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Gordon form of the Kerr spacetime - 1803.03933.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Towards a Gordon form of the Kerr spacetime - 1803.03933.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Gordon form writes a metric in terms of a medium's four-velocity and refractive index. It is the natural language for analogue models. A Gordon form of Kerr would let Kerr be simulated by a moving medium. The authors make progress toward one, and report explicit results. They emphasise that the choice of flat background is decisive for both the answer and the computation time.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap">The gap</h3>
+<p>"so-called Gordon form, although the closely related Kerr–Schild form of the Kerr metric is well known"</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>"A Gordon form for the Kerr geometry, if it could be found, would be particularly useful in developing analogue models for the Kerr spacetime, since the Gordon form is explicitly given in terms of the 4-velocity and 'refractive index' of an effective medium."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"In the current article we report progress toward this goal."</p>
+<h3 id="the-first-step">The first step</h3>
+<p>"First we present the Gordon form f[or a class of spacetimes]"</p>
+<h3 id="the-practical-lesson">The practical lesson</h3>
+<p>"we found that a proper choice of flat background is of crucial importance for the resolution of the problem — both in terms of the final expression for the Gordon form, and in computation time"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-medium-for-every-metric">1. A medium for every metric</h3>
+<p><strong>The idea.</strong> If Kerr has a Gordon form, rotation can be mimicked by a moving medium.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code> derives an optical metric from a complex structure. The Gordon route derives one from a medium. Comparing them would show whether the two constructions agree.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code>, in the discussion of optical metrics.</p>
+<p><strong>What stands in the way.</strong> The Gordon form of Kerr is not complete. Ranked first, because it offers a direct comparison of two derivations.</p>
+<h3 id="2-background-choice-matters">2. Background choice matters</h3>
+<p><strong>The idea.</strong> The same geometry can be split into background and medium in many ways, with different costs.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> would gain a case where the split is a real modelling decision.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of splits.</p>
+<p><strong>What stands in the way.</strong> The lesson is practical. Ranked second.</p>
+<h3 id="3-analogue-rotation">3. Analogue rotation</h3>
+<p><strong>The idea.</strong> A rotating analogue model would let frame dragging be studied in the lab.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> would gain a concrete route from medium to rotating geometry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of realisations.</p>
+<p><strong>What stands in the way.</strong> No experiment is proposed. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

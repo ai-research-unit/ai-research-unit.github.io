@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Bound State under the Hooke-Type Action-at-a-Distance — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Bound State under the Hooke-Type Action-at-a-Distance.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-bound-state-under-the-hooke-type-action-at-a-distance"><strong>Relativistic Bound State under the Hooke-Type Action-at-a-Distance</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>52</strong> (1974) 1376, No. 4; received 25 April 1974</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Bound State under the Hooke-Type Action-at-a-Distance-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Bound State under the Hooke-Type Action-at-a-Distance.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Bound State under the Hooke-Type Action-at-a-Distance.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Supplies the classical correspondence basis of the bilocal wave equation. The force acts between "conjugate" points on the two world lines — points whose separation is orthogonal to both 4-velocities — and that single prescription makes the interaction relativistic. With Hooke binding the motion is rigid, the 4-momentum and angular momentum are conserved, and the conservation laws give a <em>linear</em> relation between $m^{2}$ and $J$. The general solution is written down explicitly and reduces to Newtonian Hooke motion in the non-relativistic limit. Quantising in the proper-time gauge gives the bilocal equation with two subsidiary conditions. Extending to $N$ mutually bound particles is possible only for $N\le3$, by a degree-of-freedom count. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-prescription">The prescription</h3>
+<p>"The classical relativistic mechanics of a system consisting of two point particles bound by the Hooke-like a,ction-at-a-distance is established. Relativistic inv.ariance o{ this interac- tion is .ensured by the prescription that it works between" conjugate "points on the world lines. of the two particles, which perform relativistic rigid motion. The conserv~tion laws of 4-momentum and angular momentum are given, and they lead to a linear relation between spin and squared mass of the bound system. Solutions to the fundamental equations of theory are explicitly obtained. Also it is shown that in the non-relativistic limit the theory approaches the usual Hooke-type theory. Quantization"</p>
+<h3 id="why-it-was-needed">Why it was needed</h3>
+<p>"An action-at-a-d istance description of relativistic interaction between two point particles is represented in classical theory usually by a Fokker-type integra- differential equation. 1&gt; This has complicated properties and its solutions are difficult to obtain. Only in the case of electromagn etic interaction the equation reduces to a simpler form, 2 &gt; because then the force works solely between space- time points. to be connected by a light ray." After noting that the bilocal model was previously defined only by a wave equation: "it was pointed out 5 &gt; that the bilocal model implies a Hooke-type action-at-a-d istance inside the particle because the model does not contain degrees of freedom of inter- mediating field binding the bilocal points, but the precise mechanism of this action-at-a-d istance has not been exhibited. Our present paper is regarded as Relativistic Bound State under the Hooke- Type Action-at-a-Distance 1377 supplying just the correspondence-theoretical foundation"</p>
+<h3 id="conjugate-points">Conjugate points</h3>
+<p>"we mean by relativistic rigid motion a motion in which the invariant distance between xP &lt;1l (r1) and its corresponding point Xp &lt;2l'(r 2) is conserved, namely (say) (2·4) *J We use the unit system in which c=l." Together with the orthogonality condition this gives "0 (2·6) " 1 "' 2 d r2 ' so that the vector x/1) (r1) - x/2) (r2) is orthogonal also to C&lt;2) at x/2) (ra). When (2 · 3) and (2 · 6) are satisfied, we shall say that x&lt;1&gt; ( r 1) and x&lt;2&gt;( r 2) are mutually" conjugate ". Clearly the condition of relativistic rigid motion can be represented by (2 · 3) and (2 · 6), and these imply one constraint because one of these two equations serves merely to fix the corresponde nce. Note"</p>
+<p>"Next we introduce equations of motion which mean that a Hooke-type central force works between conjugate space-time points in accord with the Newtonian action-react ion law; that is, (2·8a) (2·8b) where 11 and K are constants." "These equations are relativistica lly invariant because the concept of conjugate points is so. Equations" "Our equations of motion are differential equations, instead of integra-diffe rential equations, because of our assumption that the force acts only between conjugate space-time points. Equation"</p>
+<h3 id="solutions-and-the-massspin-line">Solutions and the mass–spin line</h3>
+<p>"bitrary parameters r 1 and r 2, as well as xo&lt;1l and x 0 &lt;2 &gt;, are eliminated. On the other hand the fundamental equations are not manifestly Lorentz-covariant and are nonlinear. Still, solutions can be directly obtained in this formalism for the case where t 1 = t 2 ( = t) holds."</p>
+<p>In the proper-time gauge the general solution is a sum of a rotating term and a linear term, and "we have verified that a solution of the fundamental set of equations is given by (4·5) associated with the relations (4·6), (4·8), (4·11) and (4·12)." "In fact this represents the general solution of the problem*l since it contains the right number of arbitrary constant parameters."</p>
+<p>"e ground state, r 0 =0,*l J=O, and _m=2f.J., where the system reduces to a single particle and the theory comes back to the local theory. On the other Downloaded from academic.oup.com/ptp/article/52/4/1376/1901960 by guest on 12 November 2026 hand, with ro~oo, we have mr-../2/}.(J)ro, w"'-./ro-\ and IV&lt;"ll ~1 (light velocity). The limitation to circular motions is due to the rigidity constraint whic~ sup- presses the degrees of freedom of internal motion by one."</p>
+<p>"At this point we mention the analogy between the present model and the relativistic string model (containing two structure constants tc and f.J.o) .9&gt; The latter" If only the first string mode is excited, the constraints reduce to the same two conditions as the rigid-motion constraints: "Thus the present model is virtually equivalent to the string model in which all higher modes remain unexcited (C"" " In particular it is interesting to find that the rigidity constraint ( 4 · 34) can be viewed as a remnant of the conformal constraint ( 4 · 48) in the string theory. Of course the present model cannot lead to a dual ampli- tude."</p>
+<h3 id="quantisation">Quantisation</h3>
+<p>The wave equation gives the mass formula $-P^{2}=4\mu^{2}+2\mu\hbar\omega a^{\dagger}a$ and, with $J=a^{\dagger}a$, "we get. the simple result with J=ata." "ch is the same as the classical relation ( 4 · 39). However, now m 2 and J take discrete eigenvalues (J = 0, 1, 2, · · ·). The non-existence of daughter trajectories is due to the presence of the rigidity condition (5 · 7). § 6."</p>
+<h3 id="the-counting-bound">The counting bound</h3>
+<p>"such a model is possible only if the number N of constituent particles is equal to or. less than three. The N = 3 case will represent baryons, while multi-particle states (N&gt;4) are forbidd~n." The reason: the rigid-motion conditions for every pair "consist of 2 ( ~) =N(N-1) equations. However, (N-1) equations out of them serve merely to fix the corresponde nces between" conjugate " point~. (When x"&lt;1l (r1) is given, the relation (x&lt;1J (r1) - x&lt;2J(r 2)) ." " st on 12 November 2026 straints, which reduce the degrees of freedom of the system from 3N to 3N~ (N-1f=5 N-N2 -1. {Originally each constituent particle has of course three degrees of freedom, as is manifest if we consider in the Lorentz non-covaria nt gauge given in § 3." " which is positive only for N = 2 and 3, and in both of these cases fin= 2. , (iii) The condition "</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rigidity-as-the-remnant-of-a-conformal-constraint">1. Rigidity as the remnant of a conformal constraint</h3>
+<p><strong>The idea.</strong> The single-mode truncation of the string reproduces the two-point rigid model exactly, and the rigidity constraint is what survives of the string's conformal constraint when all but the first mode are switched off. The mesonic two-body model and the string are not analogies; one is a truncation of the other.</p>
+<p><strong>What it would add.</strong> A derivation of the relationship instead of a comparison. The folder's string papers and bilocal papers are usually presented as parallel constructions; here the reduction is explicit and the constraint is traced through it, which is a stronger statement than the model is a prototype of the string.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Detailed Wave Equation and Dual Amplitude</em> in this folder, §<em>The Model and the Constraint</em>, as the truncation.</p>
+<p><strong>What stands in the way.</strong> The equivalence holds for the first-mode-only motion; the higher modes carry the dual amplitude, which the rigid model cannot reproduce, so the truncation loses exactly what makes the string interesting.</p>
+<h3 id="2-one-constraint-per-pair-counted-gives-a-size-bound">2. One constraint per pair, counted, gives a size bound</h3>
+<p><strong>The idea.</strong> Each pair of constituents contributes one rigid-motion constraint after $(N-1)$ are spent on fixing correspondences, leaving $(N-1)^{2}$ constraints and $f_{\mathrm{int}}=5N-N^{2}-1$ internal degrees of freedom. That quadratic is positive only at $N=2,3$. The bound is arithmetic, not dynamical.</p>
+<p><strong>What it would add.</strong> A ceiling derived by counting rather than assumed. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) also gets a bound, from algebra; here the same number three appears from a degree-of-freedom count on a different construction. Two independent routes to the same bound is a much stronger claim than either alone, and the corpus should say so.</p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the counting ceiling — beside the algebraic one.</p>
+<p><strong>What stands in the way.</strong> The count assumes every constituent has three degrees of freedom and that all constraints are independent; the second assumption is exactly what a degenerate configuration would violate.</p>
+<h3 id="3-conjugate-points-make-an-action-at-a-distance-differential">3. Conjugate points make an action-at-a-distance differential</h3>
+<p><strong>The idea.</strong> A general action-at-a-distance force gives integro-differential equations because the retarded point is not known in advance. Fixing the force to act between conjugate points — defined by orthogonality to both velocities — makes the equations differential and solvable, while remaining relativistic by construction.</p>
+<p><strong>What it would add.</strong> A mechanism for taming nonlocality that is neither an expansion nor a truncation. <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder makes the equation nonlocal in its argument; here the classical nonlocality is reduced to a point-to-point map, which is a different and very concrete device.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>A Non-local Wave Equation and its Connection with the Dirac Particle</em> in this folder, as the conjugate-point device.</p>
+<p><strong>What stands in the way.</strong> The prescription is defined for rigid motion; when rigidity is relaxed the author has to replace the condition by an average-velocity orthogonality, and the general case is left to §6's outline.</p>
+<h3 id="4-a-linear-math17math18-relation-with-no-daughters">4. A linear $m^{2}$–$J$ relation with no daughters</h3>
+<p><strong>The idea.</strong> $m^{2}=4\mu^{2}+2\mu\hbar\omega J$ holds both classically and quantum mechanically, with integer $J$. There are no daughter trajectories, and the absence is attributed directly to the rigidity condition.</p>
+<p><strong>What it would add.</strong> An explanation of a spectral feature rather than a fit to it. The folder's other trajectory papers report daughters; here their absence is traced to one constraint, which tells you what to relax to get them.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Slopes of Mesons</em> in this folder, §<em>What the Model Fixes</em>, as the no-daughter case.</p>
+<p><strong>What stands in the way.</strong> The zero-point motion footnote means the quantum $J$ starts at zero while the classical ground state has $r_0=0$; the correspondence at the bottom of the trajectory is therefore loose.</p>
+<p>The remainder, one line each. That the two subsidiary conditions reappear with the same two jobs — suppress negative norm, or suppress degeneracy — confirms the pattern across the folder. That the unequal-mass case gives concentric coplanar circles with a common angular velocity is the cleanest statement of what "rigid" means here.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conservation laws in &quot;doubly special relativity&quot; — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservation Laws in Doubly Special Relativity - gr-qc_0205067.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conservation-laws-in-doubly-special-relativity"><strong>Conservation laws in "doubly special relativity"</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0205067v3</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Simon Judes, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 16 May 2003 (revised 24 December 2002)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Conservation Laws in Doubly Special Relativity - gr-qc_0205067-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservation Laws in Doubly Special Relativity - gr-qc_0205067.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conservation Laws in Doubly Special Relativity - gr-qc_0205067.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Doubly special relativity keeps the Lorentz group but deforms the relation between energy and momentum, adding the Planck energy as a second invariant scale. This leaves open the question of how energy and momentum add for a composite system. The paper derives general conservation laws for arbitrary deformations, then specialises to the two standard models. The general formula covers every way of distorting the Lorentz group, and the specific results show that the additivity of energy becomes nonlinear.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Motivated by various theoretical arguments [that] herald departures from Lorentz invariance, and [by the prospect that such effects may be observable in the] not too distant future, two so-called 'Doubly Speci[al Relativity' theories have been proposed, the first] by Amelino-Camelia (DSR1) and the second [by Magueijo and Smolin (DSR2)]."</p>
+<h3 id="what-the-theories-contain">What the theories contain</h3>
+<p>"[These] theories contain two fundamental scales — t[he speed of light and] $E_{\mathrm{Planck}}$. The symmetry group is still the L[orentz group in the] energy-momentum sector. Since energy and mo[mentum are nonlinear functions of] their values for composite systems (and hen[ce of the physics of] matter), [it is these possible deviations that provide the observational signal]. Ultimately it is these possible dev[iations] that provide the most promising observati[onal tests]."</p>
+<h3 id="the-state-of-the-question">The state of the question</h3>
+<p>"investigations have narrowed the conservati[on laws to a few options; here we] derive unique exact results for the energy-[momentum conservation laws] and indicate the general strategy for arbit[rary deformations]."</p>
+<h3 id="the-main-result">The main result</h3>
+<p>"The key result of this note is the identific[ation] of appropriate laws of conservation of energy and momentum in generic DSR theories, embodied in the gen[eral] formula (5), together with the specific applications to DSR2 in equations (13)–(14), and to DSR1 in equa[tions] (29)–(32)."</p>
+<h3 id="why-the-general-formula-matters">Why the general formula matters</h3>
+<p>"Ultimately the general formula (5) is more important: There are many ways of distorting the Lorentz group, and this formula applies to all of them — this makes it clear that the distortion of dispersion [relations and the distortion of conservation laws are separate choices]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-non-additive-energy">1. Non-additive energy</h3>
+<p><strong>The idea.</strong> If the momentum-space map is nonlinear, energies of subsystems do not add, and the total depends on the deformation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats a particle as carrying a definite energy-momentum relation. This paper shows that a choice of deformation alters what "total energy" means for a composite object, which is a constraint any framework with a modified dispersion relation must face. The article should record that the sum rule is an independent choice, not a consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the dispersion discussion.</p>
+<p><strong>What stands in the way.</strong> The deformation is in momentum space and has no counterpart in the framework's algebra. Ranked first, because it names an issue the article would otherwise miss.</p>
+<h3 id="2-two-scales-one-group">2. Two scales, one group</h3>
+<p><strong>The idea.</strong> Adding an invariant energy while keeping the Lorentz group is possible only if the action on momentum space is nonlinear.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the algebra cannot supply a scale. This paper shows what it costs to add one: a nonlinear redefinition of the momentum coordinates. The catalogue entry becomes quantitative rather than negative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on scales.</p>
+<p><strong>What stands in the way.</strong> The cost is paid in momentum space and the framework has no such space. Ranked second.</p>
+<h3 id="3-exact-results-for-a-family-of-deformations">3. Exact results for a family of deformations</h3>
+<p><strong>The idea.</strong> One formula covers every distortion, so the results are not tied to a model.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> struggles to compare a single framework with standard physics. Here a whole family is parameterised and handled at once, which is the comparison the article cannot currently make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The family is of Lorentz deformations, not of frameworks. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

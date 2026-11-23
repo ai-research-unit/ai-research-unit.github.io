@@ -136,7 +136,7 @@ $$</p>
 <p>with the ordered basis $(E_{12},E_{14},E_{32},E_{34})$. A mass operator is</p>
 <p>$$
 M=aE_{12}+bE_{14}+cE_{32}+dE_{34}
-=\begin{pmatrix}a&b\\c&d\end{pmatrix},
+=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},
 $$</p>
 <p>where the rows are the chirality $+$ indices $1,3$ and the columns are the chirality $-$ indices $2,4$.</p>
 <p><strong>Proposition.</strong> Under the gauge,</p>
@@ -150,16 +150,16 @@ E_{34}\longmapsto\lambda_3E_{34}.
 $$</p>
 <p>Equivalently,</p>
 <p>$$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}
+\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}
 \longmapsto
 \begin{pmatrix}
-\lambda_1a&\lambda_1\lambda_2\lambda_3b\\
-\lambda_2^{-1}c&\lambda_3d
+\lambda_1a&amp;\lambda_1\lambda_2\lambda_3b\\
+\lambda_2^{-1}c&amp;\lambda_3d
 \end{pmatrix}
 =
-\begin{pmatrix}\lambda_1&0\\0&\lambda_2^{-1}\end{pmatrix}
-\begin{pmatrix}a&b\\c&d\end{pmatrix}
-\begin{pmatrix}1&0\\0&\lambda_2\lambda_3\end{pmatrix}.
+\begin{pmatrix}\lambda_1&amp;0\\0&amp;\lambda_2^{-1}\end{pmatrix}
+\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}
+\begin{pmatrix}1&amp;0\\0&amp;\lambda_2\lambda_3\end{pmatrix}.
 $$</p>
 <p>The action is $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$; the determinant product $\det D_+\det D_-^{-1}$ is $\lambda_1\lambda_3$.</p>
 <p><strong>Proof.</strong> The weights are the ratios $t_i/t_j$ for $i\in\{1,3\}$ and $j\in\{2,4\}$, expressed through $\lambda_1=t_1/t_2$, $\lambda_2=t_2/t_3$, $\lambda_3=t_3/t_4$. The matrix form is the entrywise computation.</p>
@@ -181,7 +181,7 @@ $$</p>
 <h2 id="the-blockwise-polar-decomposition">The Blockwise Polar Decomposition</h2>
 <p><strong>The block-diagonal case.</strong> Let</p>
 <p>$$
-A=\begin{pmatrix}A_+&0\\0&A_-\end{pmatrix}
+A=\begin{pmatrix}A_+&amp;0\\0&amp;A_-\end{pmatrix}
 $$</p>
 <p>be block-diagonal, with $A_+\in M_2(\mathbb{C})$ on the chirality $+$ and $A_-\in M_2(\mathbb{C})$ on the chirality $-$. The polar decompositions of the two blocks are</p>
 <p>$$
@@ -190,25 +190,25 @@ $$</p>
 <p>with $U_\pm\in U(2)$ and $P_\pm$ positive semidefinite. Then</p>
 <p>$$
 A=UP,\qquad
-U=\begin{pmatrix}U_+&0\\0&U_-\end{pmatrix}\in U(2)\times U(2),
+U=\begin{pmatrix}U_+&amp;0\\0&amp;U_-\end{pmatrix}\in U(2)\times U(2),
 \qquad
-P=\begin{pmatrix}P_+&0\\0&P_-\end{pmatrix}.
+P=\begin{pmatrix}P_+&amp;0\\0&amp;P_-\end{pmatrix}.
 $$</p>
 <p>The polar factor is block-diagonal, and the singular values of $A$ are the four singular values of $A_+$ and $A_-$, two from each block. The chiralities decouple: the polar decomposition is the direct sum of the two chiral polar decompositions.</p>
 <p><strong>The antidiagonal case.</strong> Let</p>
 <p>$$
-A=\begin{pmatrix}0&M\\N&0\end{pmatrix},
+A=\begin{pmatrix}0&amp;M\\N&amp;0\end{pmatrix},
 \qquad
 M:\mathbb{C}^2_-\to\mathbb{C}^2_+,\quad
 N:\mathbb{C}^2_+\to\mathbb{C}^2_- .
 $$</p>
 <p>Then</p>
 <p>$$
-A^*A=\begin{pmatrix}N^*N&0\\0&M^*M\end{pmatrix},
+A^*A=\begin{pmatrix}N^*N&amp;0\\0&amp;M^*M\end{pmatrix},
 $$</p>
 <p>so the positive factor is</p>
 <p>$$
-P=\begin{pmatrix}\lvert N\rvert&0\\0&\lvert M\rvert\end{pmatrix},
+P=\begin{pmatrix}\lvert N\rvert&amp;0\\0&amp;\lvert M\rvert\end{pmatrix},
 \qquad
 \lvert N\rvert=\sqrt{N^*N},\quad
 \lvert M\rvert=\sqrt{M^*M}.
@@ -217,14 +217,14 @@ $$</p>
 <p>$$
 U=AP^{-1}=
 \begin{pmatrix}
-0&M\lvert M\rvert^{-1}\\
-N\lvert N\rvert^{-1}&0
+0&amp;M\lvert M\rvert^{-1}\\
+N\lvert N\rvert^{-1}&amp;0
 \end{pmatrix}.
 $$</p>
 <p>The blocks $M\lvert M\rvert^{-1}$ and $N\lvert N\rvert^{-1}$ are the $*$-unitary chiral phases of $M$ and $N$. The full polar decomposition of an antidiagonal matrix is the direct sum of the two chiral polar decompositions, one for each off-diagonal block.</p>
 <p><strong>The general case.</strong> For a general block matrix</p>
 <p>$$
-A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
+A=\begin{pmatrix}A_+&amp;M\\N&amp;A_-\end{pmatrix},
 $$</p>
 <p>the polar factor $U=A(A^*A)^{-1/2}$ is not block-diagonal and not block-antidiagonal. It mixes the chiralities, and the blockwise decomposition is only the special case in which $M=N=0$. The general $U(4)$ polar factor is the subject of the next section.</p>
 <h2 id="the-general-element-and-the-math97-polar-factor">The General Element and the $U(4)$ Polar Factor</h2>
@@ -243,7 +243,7 @@ $$</p>
 $$</p>
 <p>Extend $U$ isometrically from the range of $P$ to its orthogonal complement, which is the kernel of $P$, with values in the kernel of $A^*$. The dimensions agree, because $\operatorname{rank}P=\operatorname{rank}A$, so the extension exists and $U$ is $*$-unitary. Then $A=UP$. Uniqueness on the invertible elements follows because $P$ is determined by $A^*A$ and $U=AP^{-1}$.</p>
 <p><strong>The chiral polar decomposition is different.</strong> The decomposition $M=U\Sigma V^*$ of the mass block uses two unitaries, one on each chirality, and a diagonal map between them. It is the polar decomposition of a map between two different Hilbert spaces, not of an endomorphism of one space. The full $U(4)$ polar factor of the block matrix is an endomorphism of $\mathbb{C}^4$; it mixes the chiralities in general, and it is not the pair $(U_L,U_R)$ of the mass block.</p>
-<p><strong>The relation.</strong> For the antidiagonal block matrix $A=\begin{pmatrix}0&M\\N&0\end{pmatrix}$, the two decompositions agree: the $U(4)$ polar factor is the block-antidiagonal matrix built from the chiral phases of $M$ and $N$, and the positive factor is the block-diagonal matrix of the two mass moduli. For a general block matrix, the two decompositions are different.</p>
+<p><strong>The relation.</strong> For the antidiagonal block matrix $A=\begin{pmatrix}0&amp;M\\N&amp;0\end{pmatrix}$, the two decompositions agree: the $U(4)$ polar factor is the block-antidiagonal matrix built from the chiral phases of $M$ and $N$, and the positive factor is the block-diagonal matrix of the two mass moduli. For a general block matrix, the two decompositions are different.</p>
 <h2 id="the-chiral-polar-decomposition-of-the-mass-block">The Chiral Polar Decomposition of the Mass Block</h2>
 <p><strong>The decomposition.</strong> Every $M\in\mathcal{B}$ has</p>
 <p>$$

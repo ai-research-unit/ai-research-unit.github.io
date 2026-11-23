@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decomposition of total stress-energy for the generalised Kiselev black hole — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Decomposition of total stress-energy for the generalised Kiselev black hole -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="decomposition-of-total-stress-energy-for-the-generalised-kiselev-black-hole"><strong>Decomposition of total stress-energy for the generalised Kiselev black hole</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1910.08008v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Tritos Ngampitipan, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 17 October 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Decomposition of total stress-energy for the generalised Kiselev black hole - 1910.08008-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Decomposition of total stress-energy for the generalised Kiselev black hole - 1910.08008.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-local-thermal-state-of-a-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Decomposition of total stress-energy for the generalised Kiselev black hole - 1910.08008.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Kiselev black hole is widely used as a toy model for a black hole surrounded by quintessence. The paper quantifies how far it is from being a perfect fluid. It shows the anisotropic stress-energy can be split into a perfect fluid part plus either an electromagnetic or a scalar field part, with the charge carried by the fluid generating the anisotropy. The same decomposition is applied to one-component and to multi-component generalisations, and the authors report that whether the null energy condition holds correlates tightly with which type of decomposition occurs.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-shown">What is shown</h3>
+<p>"We demonstrate that the anisotropic stress-energy supporting the Kiselev black hole can be mimicked by being split into a perfect fluid component plus either an electromagnetic component or a scalar field component, thereby quantifying the precise extent to which the Kiselev black hole fails to represent a perfect fluid spacetime."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"The perfect fluid component carries either an electric or a scalar charge, which then generates anisotropic electromagnetic or scalar fields. This in turn generates anisotropic contributions to the stress-energy. These in turn induce forces which partially (in addition to the fluid pressure gradient) support the matter content against gravity."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"This decomposition is carried out both for the original 1-component Kiselev black hole and for the generalized $N$-component Kiselev black holes. We also comment on the presence of energy condition violations (specifically for the null energy condition — NEC) for certain sub-classes of Kiselev black holes."</p>
+<h3 id="the-two-corrections-to-the-literature">The two corrections to the literature</h3>
+<p>"Despite many claims to the contrary, the Kiselev spacetime does not represent a perfect fluid, (except for the very special cases where it reduces to Schwarzschild/Kottler/de Sitter spacetime)." And: "Despite many claims to the contrary, the word 'quintessence' as applied to the Kiselev spacetimes has nothing to do with the word 'quintessence' as it is used in the cosmology community."</p>
+<h3 id="the-general-method">The general method</h3>
+<p>"In earlier work three of the current authors showed that it is possible to mimic the matter content of any static spherically symmetric spacetime by a combination of (perfect fluid) + (electromagnetic field) + (scalar field)."</p>
+<h3 id="the-result">The result</h3>
+<p>"We find that there is a tight correlation between satisfying the null energy condition (NEC) and the type of decomposition that arises. We find a trichotomy: In regions where the [null energy condition holds, one decomposition applies, and where it fails, another]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-almost-every-fluid-is-secretly-not-one">1. Almost every fluid is secretly not one</h3>
+<p><strong>The idea.</strong> A popular fluid model is not a perfect fluid, and its anisotropy can be assigned to a field instead.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code> assumes a fluid with a definite local thermal state. If the fluid is anisotropic, that assumption fails, and this paper shows how often it does. The article should state the isotropy condition explicitly and note that most named black hole fluids violate it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, in the definition of the state.</p>
+<p><strong>What stands in the way.</strong> The decomposition requires a static spherically symmetric background. Ranked first, because it tests the article's central assumption.</p>
+<h3 id="2-a-field-can-stand-in-for-a-fluid">2. A field can stand in for a fluid</h3>
+<p><strong>The idea.</strong> Any static spherically symmetric source can be written as fluid plus electromagnetic plus scalar.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the framework cannot specify matter. This decomposition shows the ambiguity is general: many different matter assignments give the same geometry. That makes the framework's silence less of a deficit and more of a normal situation, though it also means geometry alone never fixes matter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on matter coupling.</p>
+<p><strong>What stands in the way.</strong> The decomposition is non-unique, which cuts both ways. Ranked second.</p>
+<h3 id="3-energy-conditions-track-the-decomposition">3. Energy conditions track the decomposition</h3>
+<p><strong>The idea.</strong> Whether the null energy condition holds tells you which split is available.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> needs the energy conditions to state a second law. Here an energy condition is shown to be a diagnostic of the source rather than a constraint on it, which changes how the article should use it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the assumptions.</p>
+<p><strong>What stands in the way.</strong> The correlation is empirical within this family. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

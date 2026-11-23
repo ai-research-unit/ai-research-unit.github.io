@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuity Theory of Gravitation: Spacetime Enclosure, Tension Relaxation, Void Overflow, and Dark-Matter Potential Balance — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_and_Gravitation_as_Relaxatio.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="continuity-theory-of-gravitation-spacetime-enclosure-tension-relaxation-void-overflow-and-dark-matter-potential-balance"><strong>Continuity Theory of Gravitation: Spacetime Enclosure, Tension Relaxation, Void Overflow, and Dark-Matter Potential Balance</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>September 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Dark_Energy_and_Gravitation_as_Relaxatio-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_and_Gravitation_as_Relaxatio.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-equation-of-state-in-biquaternion-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Dark_Energy_and_Gravitation_as_Relaxatio.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Casts gravity as the relaxation of a structural tension, in five moves: a single scalar $\tau_{\rm foc}$ that measures how strongly a stress-energy focuses a congruence, a derived density threshold below which voids accelerate, a growth law for the void volume, a mapping from the dark-matter channel to a Newtonian potential, and a Gaussian partition of environments into $68.2/27.2/4.6$ per cent assigned to dark energy, dark matter and visible matter. Dynamics stay GR at leading order; the framework adds a bookkeeping scalar, one threshold that is derived rather than fitted, and one EFT correction.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="one-scalar-for-focusing">One scalar for focusing</h3>
+<p>$$\tau_{\rm foc}:=\rho+\frac{3p}{c^2}+\lambda\frac{\lVert\pi\rVert^2}{c^2},\qquad \lVert\pi\rVert^2=\pi_{\mu\nu}\pi^{\mu\nu},\quad\lambda\sim O(1)$$
+(paper 8). "c c Meaning. τfoc aggregates the components of Tµν that focus timelike congruences via the Raychaudhuri equation (together with Einstein’s equations) [9]. Large τfoc corresponds to strong “holding” of energy.", and "imits. τfoc is a kinematic diagnostic; dynamics still obey GR at leading order (Sec. 9).".</p>
+<h3 id="the-void-threshold-derived">The void threshold, derived</h3>
+<p>For a domain $D$,
+$$\frac{\ddot a_D}{a_D}\simeq-\frac{4\pi G}{3}\langle\rho_m\rangle_D+\frac{8\pi G}{3}\rho_{\rm vac}$$
+(paper 9), so acceleration holds when
+$$\langle\rho_m\rangle_D&lt;2\rho_{\rm vac}\equiv\rho_\star$$
+(paper 10), encoded as
+$$\partial_tV_D\propto\left[2\rho_{\rm vac}-\langle\rho_m\rangle_D\right]_+$$
+(paper 11) with a threshold fixed by Eq. (10) (no ad-hoc parameter). Voids are "ehave as overflow basins: once below ρ⋆ , expansion becomes the efficient tension-relaxation channel. Growth law.". The tests named are void stacking, Alcock–Paczynski and lensing through supervoids.</p>
+<h3 id="time-rate-and-the-dark-matter-channel">Time rate and the dark-matter channel</h3>
+<p>The exterior result is the standard one, written in the language of the batch:
+$$\cos\zeta_{\rm grav}(r)=\sqrt{1-\frac{2GM}{rc^2}}\quad\Longrightarrow\quad\frac{d\tau}{dt}=\frac{\alpha}{\gamma}=\cos\zeta_{\rm grav}\cos\zeta_{\rm kin}$$
+(paper 12), and the inversion for $G$ of the companion paper is repeated as Eq. (13). Dark matter enters as a potential depth,
+$$\sigma_{DM}=b-\frac{\Phi_{DM}}{c^2},\qquad \nabla^2\Phi_{DM}=4\pi G\rho_{DM}$$
+(paper 14): "the phenomenological DM 'channel' is exactly the potential depth associated with the DM density", so that $\Phi_{DM}$ from mass modeling "fixes the channel without new free substances".</p>
+<h3 id="the-gaussian-partition">The Gaussian partition</h3>
+<p>$$\text{68.2\% (central basin)}\leftrightarrow\text{dark energy},\quad \text{27.2\% (1–2}\sigma\text{)}\leftrightarrow\text{dark matter},\quad \text{4.6\% (2–3}\sigma\text{)}\leftrightarrow\text{visible}$$
+(paper 15), with "sin; 4.6:27.2 ≃ 1:6 matches the observed dark-to-visible ratio in aggregate. Assumptions.". The author states the status plainly: "The Gaussian partition is an analysis prior, not a law."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-scalar-that-decides-focusing">1. One scalar that decides focusing</h3>
+<p><strong>The idea.</strong> $\tau_{\rm foc}=\rho+3p/c^2+\lambda\lVert\pi\rVert^2/c^2$ collects the three things that bend a congruence into one number, with an explicit order-one weight on the anisotropic part. This is a <strong>formula</strong> the corpus does not have: it carries a stress-energy tensor and a conservation law, but no scalar that says whether a congruence converges.</p>
+<p><strong>What it would add.</strong> A bridge between the corpus's equation of state, which gives $p_{\rm eff}$ as a scalar function of density and inverse temperature, and the Raychaudhuri statement that actually decides collapse.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-equation-of-state-in-biquaternion-form.md</code>, whose $p_{\rm eff}=p_{\rm th}+p_{\rm qnt}$ would enter $\tau_{\rm foc}$ directly.</p>
+<p><strong>What stands in the way.</strong> The corpus's fluids are spin fluids, and the anisotropic stress $\pi_{\mu\nu}$ is not a separate object there; $\lambda$ is left as $O(1)$ and never fixed, so the combination is a definition rather than a result.</p>
+<h3 id="2-a-threshold-that-is-derived-not-fitted">2. A threshold that is derived, not fitted</h3>
+<p><strong>The idea.</strong> $\langle\rho_m\rangle&lt;2\rho_{\rm vac}$ follows from the acceleration equation by division, and the paper is entitled to call it parameter-free: the factor 2 is $4\pi G/3$ against $8\pi G/3$. This is a <strong>prediction-shaped</strong> statement about which voids grow.</p>
+<p><strong>What it would add.</strong> A criterion where the corpus has none, and one that is checkable by void statistics — the kind of number the corpus's empirical-status article asks for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.md</code>, where the acceleration of a fluid element is written.</p>
+<p><strong>What stands in the way.</strong> The derivation uses a homogeneous domain with a single scale factor, i.e. it assumes what it is trying to predict; real voids are neither homogeneous nor isolated, and the paper postpones backreaction to future work.</p>
+<h3 id="3-a-gaussian-partition-of-the-cosmic-budget">3. A Gaussian partition of the cosmic budget</h3>
+<p><strong>The idea.</strong> The three fractions of a normal distribution are assigned to the three constituents, and $4.6:27.2\approx1:6$ reproduces the dark-to-visible ratio. The author calls it "an analysis prior, not a law".</p>
+<p><strong>What it would add.</strong> A reason for a ratio the corpus records as measured.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> A normal distribution's bin fractions are fixed numbers, so the agreement is an assignment, not a derivation; nothing in the paper shows why environment density should be Gaussian in $\sigma$ units, and $4.6/27.2=0.169$ against a measured ratio near $0.16$ is a coincidence of two round numbers.</p>
+<p>The rank is a judgement: the focusing scalar first, because it is usable; the threshold second, because it is the paper's only derived statement; the partition third, because it explains a number by naming it.</p>
+<p>This is a six-page paper; the scalar, the threshold, the growth law, the time-rate product, the dark-matter mapping and the partition are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An exotic class of Kaluza–Klein models — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - An exotic class of Kaluza-Klein models - hep-th_9910093.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="an-exotic-class-of-kaluzaklein-models"><strong>An exotic class of Kaluza–Klein models</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9910093v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 12 October 1999; original text dated 12 September 1985</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Physics Letters B159 (1985) 22–25</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - An exotic class of Kaluza-Klein models - hep-th_9910093-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - An exotic class of Kaluza-Klein models - hep-th_9910093.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - An exotic class of Kaluza-Klein models - hep-th_9910093.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes Kaluza–Klein models in which the internal space is neither compact nor of finite volume. Instead of compactifying, the extra dimension carries a potential that binds particles gravitationally near a four-dimensional submanifold. The bulk of the paper works in five dimensions with a metric $g=-e^{2\varphi(\xi)}dt^2+d\vec x^{\,2}+d\xi^2$, shows that classical motion is bound whenever $E&lt;\sqrt{M_5^2+\vec p^{\,2}}\sup e^{\varphi}$, and reduces the Klein–Gordon equation to a Schrödinger problem in $\xi$ with a $\omega$-dependent potential. An explicit model follows: five-dimensional Einstein–Maxwell with a constant electric field in the fifth direction and a cosmological constant, whose solution $e^{\varphi}=\cosh(E\xi)$ produces a four-dimensional cosmological constant of zero and an exactly Lorentzian spectrum with a momentum-independent shift.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-idea">The idea</h3>
+<p>"In Kaluza–Klein theories of the ordinary type spacetime is assumed to be of the form $M_4\times K$; $M_4$ a four-dimensional manifold and $K$ a compact manifold of 'internal' co-ordinates. Classically particles are free to move around on $K$, thus $K$ must be assumed to be very small. The alternative we wish to begin to explore in this note is to somehow arrange for an absence of translational invariance in the extra 'internal' directions, and then use gravity to trap particles near a four-dimensional submanifold."</p>
+<h3 id="the-classical-trapping">The classical trapping</h3>
+<p>With four Killing vectors, energy $E$ and momentum $\vec p$ are conserved, and $P^5=\sqrt{E^2e^{-2\varphi}-(M_5^2+\vec p^{\,2})}$. Hence "if $E&lt;\sqrt{(M_5)^2+\vec p^{\,2}}\ \sup(e^\varphi)$ any classical particle will be bound by the potential $\varphi(\xi)$."</p>
+<h3 id="the-quantum-reduction">The quantum reduction</h3>
+<p>Separating $\Psi=e^{-i(\omega t-\vec k\cdot\vec x)}e^{-\varphi/2}\Psi_\perp(\xi)$ gives a Schrödinger equation with "a $\omega$-dependent potential"</p>
+<p>$$V(\omega,\xi)=\tfrac14\varphi''+\tfrac18\varphi'\varphi'-\tfrac12\omega^2e^{-2\varphi}, \qquad (paper\ text)$$</p>
+<p>and the excitation spectrum from $2\lambda_n(\omega)=M_5^2+\vec k^{\,2}$.</p>
+<h3 id="the-lorentz-recovery">The Lorentz recovery</h3>
+<p>"the spectrum will not in general be Lorentz invariant (i.e., will not have an O(1,3) symmetry). This should not be surprising since our ansatz for the metric did not possess an O(1,3) invariance." First-order perturbation theory in $\omega^2$ gives $\omega^2=\Omega_n^2+c_n^2\vec k^{\,2}$, "an approximately Lorentz invariant spectrum with rest energy $\Omega_n$ and 'effective speed of light' $c_n$", where $c_n^{-2}=\langle e^{-2\varphi}\rangle$ for the $n$-th mode.</p>
+<h3 id="the-explicit-model">The explicit model</h3>
+<p>"a five-dimensional cosmological constant has conspired with a constant electric field $E=\sqrt{2\lambda}$, to yield a four-dimensional submanifold of zero four-dimensional cosmological constant, together with a potential $\varphi=\ln\cosh(E\xi)$ that traps particles in the fifth direction." The Schrödinger potential becomes the Rosen–Morse potential, whose exact eigenvalues give</p>
+<p>$$\omega_n(\vec k)=\left(n+\tfrac12\right)E\pm\sqrt{(m_4)^2+\vec k^{\,2}}, \qquad (m_4)^2=(M_5)^2+\left(\tfrac{E}{2}\right)^2,$$</p>
+<p>so "apart from a momentum independent shift the spectrum is in this case exactly Lorentzian."</p>
+<h3 id="the-two-bonuses">The two bonuses</h3>
+<p>The model "exhibits an interesting mechanism for cancelling a five dimensional cosmological constant. In addition it exhibits a mechanism for taking what would be a tachyon in flat five dimensional spacetime and producing an ordinary particle in the four dimensional submanifold." Making $m_4$ small needs $(M_5)^2=-E^2/4$ for massless matter — a tachyonic five-dimensional mass.</p>
+<h3 id="the-zero-action">The zero action</h3>
+<p>$$S=\int d^5x\sqrt{-g}\,(R+2\lambda+2L)=\int d^5x\sqrt{-g}\,(-2E^2+E^2+E^2)=0.$$</p>
+<p>"Thus we expect field configurations of this type to be important for five dimensional quantum gravity even though they are not asymptotically flat."</p>
+<h3 id="the-retrospective-note">The retrospective note</h3>
+<p>The 1999 note records that the submanifold idea goes back to Joseph, that the particle-physics version is due to Rubakov and Shaposhnikov, and that the approach was modified by Squires and developed by Laguna-Castillo and Matzner, and by Gibbons and Wiltshire, before the field lay fallow and revived with the brane-world literature.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-lorentz-invariance-as-an-approximate-output">1. Lorentz invariance as an approximate output</h3>
+<p><strong>The idea.</strong> A metric with no $O(1,3)$ symmetry can produce a spectrum that is Lorentz invariant to first order, with a mode-dependent effective speed of light. The symmetry is not assumed anywhere; it emerges in the spectrum.</p>
+<p><strong>What it would add.</strong> This is a <strong>mechanism</strong> for emergence, stated with a formula: $c_n^{-2}=\langle e^{-2\varphi}\rangle$. The corpus's <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> assumes a Lorentzian structure. Here is a case where the structure appears in a spectrum that did not have it, and where the "speed of light" is an expectation value over a wavefunction. That is a concrete answer to how Lorentz invariance could be approximate, and the corpus has no such answer.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, as a mechanism note.</p>
+<p><strong>What stands in the way.</strong> The trapping needs a five-dimensional metric and a Klein–Gordon reduction. The corpus has neither. But the structure of the argument — symmetry of the spectrum, not of the metric — is exportable.</p>
+<h3 id="2-a-cancellation-that-is-not-fine-tuned">2. A cancellation that is not fine-tuned</h3>
+<p><strong>The idea.</strong> A five-dimensional cosmological constant and a constant electric field combine so that the four-dimensional cosmological constant vanishes identically, and the total action vanishes too, without choosing parameters.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> records a missing source and no mechanism for cancellation. Here is a mechanism in which two terms of the same magnitude cancel because the field equations force them to, not because a parameter is tuned. Whether it can be transplanted is doubtful, but the <em>kind</em> of answer the corpus should be looking for is this: a structural cancellation, not a small number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The cancellation uses a five-dimensional Maxwell field with a specific ansatz. Ranked second.</p>
+<h3 id="3-tachyonic-in-the-bulk-ordinary-on-the-brane">3. Tachyonic in the bulk, ordinary on the brane</h3>
+<p><strong>The idea.</strong> A five-dimensional mass that would be tachyonic becomes an ordinary four-dimensional mass once the mode is trapped, because the trapping potential contributes to the effective mass: $(m_4)^2=(M_5)^2+E^2/4$.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-massless-regime.md</code> treats the sign of $m^2$ as a property of the field. This paper shows the sign can be changed by the geometry of the mode, so "tachyonic" becomes a label tied to a choice of mode rather than to the field. That is a claim the corpus should either adopt or refuse explicitly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>.</p>
+<p><strong>What stands in the way.</strong> The shift is a property of a bound state in an extra dimension. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

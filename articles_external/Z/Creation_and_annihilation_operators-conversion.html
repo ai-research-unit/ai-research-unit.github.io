@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creation and Annihilation Operators — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Creation_and_annihilation_operators.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="creation-and-annihilation-operators"><strong>Creation and Annihilation Operators</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Creation and annihilation operators</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Creation_and_annihilation_operators-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Creation_and_annihilation_operators.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Creation_and_annihilation_operators.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the ladder operators: what they do to particle number, their use for the harmonic oscillator where they raise and lower energy by one quantum, their role in second quantisation, and the reason Hamiltonians written in them satisfy positivity automatically. Dirac's introduction is credited.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-action">The action</h3>
+<p>"ber of particles in a given particle systems.[1] An annihilation operator (usually denoted 𝑎) † state by one. A creation operator (usually denoted 𝑎̂ ) increases the number of particles in a given state by one, and it is the adjoint of the annihilation operator. In many subfields of physics and chemistry, the use of these operators instead of wavefunctions is known as second quantization. They were introduced by Paul Dirac.[2] Creation"</p>
+<h3 id="the-two-readings">The two readings</h3>
+<p>"Creation and annihilation operators can act on states of various types of particles. For" "They can also refer specifically to the ladder operators for the quantum harmonic oscillator. In the latter case, the creation operator is interpreted as a raising operator, adding a quantum of energy to the oscillator system (similarly for the lowering operator). They can be used to represent phonons. Constructing"</p>
+<h3 id="why-they-are-used">Why they are used</h3>
+<p>"Constructing Hamiltonians using these operators has the advantage that the theory automatically satisfies" positivity: a Hamiltonian written as a sum of $a^\dagger a$ terms has a spectrum bounded below by construction, because each term is a positive operator.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-positivity-is-bought-by-the-ordering">1. Positivity is bought by the ordering</h3>
+<p><strong>The idea.</strong> Writing $H=\sum\omega\,a^\dagger a$ makes the spectrum non-negative automatically. The physics is in the choice of normal ordering, and that ordering is a convention which drops an infinite constant.</p>
+<p><strong>What it would add.</strong> A named step the corpus performs silently. The corpus's Fock-space articles build the ladder operators and write the Hamiltonian in normal order; the article makes explicit that the bounded-below property follows from that writing, and that the zero-point constant is discarded by choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>, at the Hamiltonian.</p>
+<p><strong>What stands in the way.</strong> The corpus's vacuum is an algebraic idempotent and the zero-point energy is absent rather than discarded, so the convention-versus-result distinction has no bite there.</p>
+<h3 id="2-one-operator-two-meanings">2. One operator, two meanings</h3>
+<p><strong>The idea.</strong> The same pair counts particles in a field and climbs the ladder of one oscillator. That identification is what makes second quantisation possible: a mode is an oscillator and its excitations are particles.</p>
+<p><strong>What it would add.</strong> A statement of the identification the corpus uses without arguing it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fermionic-fock-space-in-biquaternionic-form.md</code>, where the anticommuting case is built.</p>
+<p><strong>What stands in the way.</strong> For fermions the operators anticommute and the "one quantum" reading needs the exclusion principle; the article's oscillator picture is the bosonic one.</p>
+<p>This is an encyclopedia article; it defines the operators, gives both readings and the ordering advantage, and derives no spectrum.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

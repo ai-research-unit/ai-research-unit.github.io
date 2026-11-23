@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Koide Lepton Mass Formula and Geometry of Circles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/The Koide Lepton Mass Formula and Geometry of Circles - 1201.2067.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-koide-lepton-mass-formula-and-geometry-of-circles"><strong>The Koide Lepton Mass Formula and Geometry of Circles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1201.2067 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jerzy Kocik</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 January 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (3 pages)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/The Koide Lepton Mass Formula and Geometry of Circles - 1201.2067-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/The Koide Lepton Mass Formula and Geometry of Circles - 1201.2067.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/The Koide Lepton Mass Formula and Geometry of Circles - 1201.2067.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-analogy">The analogy</h3>
+<p>Descartes' theorem: "the curvatures of four mutually tangent circles (reciprocal of radii), say $a,b,c,d$, satisfy"</p>
+<p>$$
+\left(a+b+c+d\right)^2=2\left(a^2+b^2+c^2+d^2\right).
+\tag{paper II.1}
+$$</p>
+<p>"Quite remarkably, Koide used his formula to predict the mass of the tau lepton with surprising accuracy." The proposal is to "represent masses as reciprocals of disk areas, equivalently, their curvatures as square roots of masses, and we get (II.1) except for a different coefficient for the sum of squares: $2$ instead of $2/3$. The fourth term may be taken as zero, $d=0$, corresponding geometrically to a line as a special circle."</p>
+<p>For four circles intersecting pairwise at the same angle $\phi=\arccos p$, the author quotes</p>
+<p>$$
+\left(a^2+b^2+c^2+d^2\right)=\frac{p}{2}\left(a+b+c+d\right)^2 ,
+\tag{paper II.4}
+$$</p>
+<p>"Corollary: Koide's lepton mass formula may be interpreted as a Descartes-like circle formula (3) for $p=2/3$, where the squared curvatures correspond to the masses of the three leptons. One mass is assumed zero and corresponds to a straight line. Each pair of circles intersects under the same angle: $\phi=\arccos(2/3)\approx0.841$ rad $\approx15/56\,\pi\approx48.2^\circ$."</p>
+<p>The paper is explicit that the correspondence is formal: "The factor of $2/3$ invalidates the exact correspondence with Descartes's formula." It closes with the observation that "the radii, reciprocals of square roots of masses, are close to integer values, namely, $r_\tau=1$, $r_\mu\approx4.10$, $r_e\approx58.97$, but not close enough to warrant further attention."</p>
+<p><strong>Check of the printed relation.</strong> The numbers do not close. Setting $d=0$ in (II.4) with $a,b,c=\sqrt{m_i}$ and $p=2/3$ gives $\sum m=\frac13\left(\sum\sqrt m\right)^2$, i.e. $Q=1/3$; and with three circles plus a line the family is capped: $Q=p/2\le1/2$ for any real angle, while $Q=2/3$ needs $p=4/3$, which is not a cosine. Reading $p$ instead as the off-diagonal entry of the configuration matrix, the same cap appears as $Q=p/(1+p)\le1/2$. So no configuration of four circles reproduces $2/3$; the analogy holds for the <em>shape</em> of the equation only, which is what the abstract claims. The printed angle is also one step off: $48.2^\circ$ is the angle Foot's formula associates with the coefficient $3/4$, not with $2/3$ (which corresponds to $45^\circ$). Recorded as found, not repaired.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-analogy-is-capped-at-math37-a-negative-result-worth-keeping">1. The analogy is capped at $1/2$: a negative result worth keeping</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: in the four-circle family, with masses as squared curvatures and one curvature sent to zero, $Q$ cannot exceed $1/2$; the closure's $2/3$ lies outside the family. So the Descartes correspondence cannot be promoted to a mechanism, and the "one mass zero" reading costs more than it buys.</p>
+<p><strong>What it would add.</strong> It closes a route cheaply. <code>articles_internal/flavour-research.md</code> §3 says the circle is a coordinate change and not a mechanism; here is a second geometry that looks like a mechanism, with the same fate, and with an exact reason (a bound, not an opinion). Recording it prevents the analogy from being rediscovered as promising.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §9, among the routes that fail.</p>
+<p><strong>What stands in the way.</strong> Nothing beyond the need to state the bound in the corpus's own variables: $Q=p/2$ where $p=\cos\phi$ is the common pairwise intersection, so $Q\le1/2$, with equality only for tangency. One line, and it is checkable.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The claim that the amplitude radii are near integers ($1$, $4.10$, $58.97$) is the statement $\sqrt{m_\tau/m_i}$ evaluated on the data, and the author himself declines to use it. The general $n$-circle formula is offered as background and its printed coefficient $p=2/(2n-1)$ does not reproduce the four-circle case, so it is not usable as quoted.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

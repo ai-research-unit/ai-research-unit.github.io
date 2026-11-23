@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase Transition in Relativistically Degenerate Quantum Plasmas — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Phase Transition in Relativistically Degenerate Quantum Plasmas.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="phase-transition-in-relativistically-degenerate-quantum-plasmas"><strong>Phase Transition in Relativistically Degenerate Quantum Plasmas</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1209.4742v1 [physics.plasm-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. Akbari-Moghanjoughi (Azarbajan University of Shahid-Madani, Tabriz)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 September 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Phase Transition in Relativistically Degenerate Quantum Plasmas-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Phase Transition in Relativistically Degenerate Quantum Plasmas.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Phase Transition in Relativistically Degenerate Quantum Plasmas.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Presents a generalised phase-separation diagram for quantum plasmas and identifies a mechanism called spontaneous core collapse (SCC) at white-dwarf core densities, using the extended Shukla–Eliasson force for relativistically degenerate matter with Fermi–Dirac pressure, Coulomb, exchange-correlation and quantum tunnelling included. A critical core mass-density is reported beyond which the collapse is inevitable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"we present the generalized phase separation diagram for quantum plasmas revealing the fundamental mechanism called the spontaneous core collapse (SCC) for a white dwarf star core-density based on the extended Shukla-Eliasson force for relativistically degenerate matter taking into account the most important electron interaction features such as Fermi-Dirac statistical pressure, Coulomb, exchange-correlation and quantum tunneling effects."</p>
+<h3 id="the-threshold">The threshold</h3>
+<p>"A critical core mass-density value is reported for white dwarf stars beyond which the SCC mechanism will be inevitable. It is revealed that the SCC critical core-density value is slightly affected by the ion charge state, $Z$ (the core composition)."</p>
+<h3 id="the-chain-of-consequences">The chain of consequences</h3>
+<p>"Such fundamental effect which is mainly caused by the electron quantum diffraction effect can progressively lead the white dwarf star with a mass beyond the Chandrasekhar limit through SCC, core fusion and the ultimate supernova stages."</p>
+<h3 id="the-framework-it-builds-on">The framework it builds on</h3>
+<p>"Foundations of quantum hydrodynamic (QHD) formulation, earlier suggested by Madelung termed as hydrodynamic formalism for quantum mechanics, was extended by Takabayasi and others." The paper's method is the quantum hydrodynamic one: a Bohm potential in a fluid equation, applied to a degenerate electron gas.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-bohm-potential-changes-the-equation-of-state-not-only-the-dynamics">1. The Bohm potential changes the equation of state, not only the dynamics</h3>
+<p><strong>The idea.</strong> A quantum pressure term added to the fluid equations shifts the balance of forces, so the stability threshold of a degenerate star moves. The quantum effect is not a small correction to the trajectory; it is a term in the equation of state. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A worked stellar application of the corpus's spin-fluid equations, which are otherwise applied to single particles and to laboratory plasmas.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, at the pressure term.</p>
+<p><strong>What stands in the way.</strong> The paper uses a scalar quantum hydrodynamic equation with no spin; the corpus's fluid is a spin fluid, and the stellar calculation would have to be redone with the spin density present.</p>
+<h3 id="2-a-critical-density-rather-than-a-critical-mass">2. A critical density rather than a critical mass</h3>
+<p><strong>The idea.</strong> The instability is triggered by density, with the composition $Z$ shifting the threshold only slightly. Mass enters afterwards, through the density at the core.</p>
+<p><strong>What it would add.</strong> A distinction the corpus's astrophysical remarks can use: a threshold in density is local and does not require solving the stellar structure first.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; it is a matter of which variable carries the criterion.</p>
+<p>This is a nine-page preprint; the diagram, the critical density and the collapse chain are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

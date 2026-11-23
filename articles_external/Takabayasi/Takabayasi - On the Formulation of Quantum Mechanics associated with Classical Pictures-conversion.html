@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Formulation of Quantum Mechanics associated with Classical Pictures — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Formulation of Quantum Mechanics associated with Classical Pictures.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-formulation-of-quantum-mechanics-associated-with-classical-pictures"><strong>On the Formulation of Quantum Mechanics associated with Classical Pictures</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; the PDF is the Oxford Academic scan, stamped "downloaded ... on 12 November 2026"</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>8</strong> (1952) 143–182, No. 2, August 1952; received 25 May 1952</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - On the Formulation of Quantum Mechanics associated with Classical Pictures-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Formulation of Quantum Mechanics associated with Classical Pictures.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-schrodinger-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Formulation of Quantum Mechanics associated with Classical Pictures.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper rewrites the Schrödinger equation in amplitude and phase and reads the result as an ensemble of classical trajectories acted on by an extra potential fixed by the density. It then lists where that reading departs from quantum mechanics: mean values, probability distributions, non-dispersive clouds, the composition of the mean energy, and the absence of any quantisation. It argues that Bohm's 1952 statistical interpretation recovers the ordinary results only by adding hidden variables, a measurement theory and a field that acts without being acted on. It fixes the range of the procedure, which covers Bose fields and excludes spin, Dirac fields and Fermi fields. It closes with a singular ensemble whose phase is a classical action and whose density is $t^{-3}$, reproducing the transformation kernel of the wave function, and with two appendices on the quantum stress and on sound waves in the fluid. All results are computations; there is no fit, no bound and no number beyond the power laws and the two-fluid constants.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-real-equations-and-the-extra-potential">The two real equations and the extra potential</h3>
+<p>With $\psi=Re^{iS/\hbar}$, $P=R^{2}$ the density, $S$ the phase and $m$ the mass, the Schrödinger equation separates into</p>
+<p>$$
+\dot S+\frac{1}{2m}(\nabla S)^{2}+V-\frac{\hbar^{2}}{2m}\frac{\Delta R}{R}=0,
+\qquad
+\dot P+\mathrm{div}\!\left(P\frac{\nabla S}{m}\right)=0,
+$$</p>
+<p>(paper 2.9) and (paper 2.5). The first is the classical Hamilton–Jacobi equation with the extra term</p>
+<p>$$
+V'=-\frac{\hbar^{2}}{2m}\frac{\Delta R}{R},
+$$</p>
+<p>(paper 2.6), which he calls the quantum-theoretical potential and which diverges where $R\to0$. The paper's reading is that a quantum-mechanical change of state corresponds to an ensemble of classical orbits referred to one Hamilton–Jacobi function, under an internal force fixed by the ensemble's own density.</p>
+<h3 id="the-hydrodynamical-picture">The hydrodynamical picture</h3>
+<p>For one particle the same pair is an irrotational flow of a compressible perfect fluid whose pressure potential is $V'[P]$ (paper 3.1)–(paper 3.5); the Euler equation becomes $m\,dv/dt=-\nabla(V+V')$. When a vector potential is present the velocity is $mv=\nabla S-eA/c$ (paper 3.6) and the flow is rotational,</p>
+<p>$$
+\mathrm{curl}\,v=-eH/mc,
+$$</p>
+<p>(paper 3.7), so the vorticity is twice the Larmor frequency wherever a magnetic field is present; the Euler equation then carries the Lorentz force beside the quantum force (paper 3.9). The mean momentum and the mean angular momentum agree with the quantum ones, because they are at most linear in $p$ (paper 5.3), (paper 5.4).</p>
+<h3 id="where-the-picture-departs-from-quantum-mechanics">Where the picture departs from quantum mechanics</h3>
+<p>Quantities quadratic in $p$ already disagree: $\langle p^{2}\rangle$ over the ensemble is $\int(\nabla S)^{2}P\,dx$ against the quantum $\langle p^{2}\rangle_{\mathrm{qu}}$ (paper 5.5), and the deficit is the mean of $\frac{\hbar^{2}}{2m}\Delta R/R$, so part of the quantum kinetic energy is booked as self-potential (paper 5.8). The total energy's mean still agrees (paper 5.7), the composition does not. The angular momentum's components agree and its magnitude does not (paper 5.9); the repair he considers is an extra pointwise piece</p>
+<p>$$
+\ell[R]=\hbar^{2}[\,x\times\nabla\,]R/R,
+$$</p>
+<p>(paper 5.10), which he rejects because it breaks the kinematical relation between $l^{2}$ and $l_{x},l_{y},l_{z}$. In place of the uncertainty relation he obtains</p>
+<p>$$
+(2mV')^{1/2}\,\Delta x&gt;\hbar/2,
+$$</p>
+<p>(paper 5.11), with $\Delta x$ the mean deviation of position, and no relation of the product form. The momentum distribution follows from the velocity field by a Jacobian, $P(p)=|\partial(p_{x},p_{y},p_{z})/\partial(x,y,z)|^{-1}P(x)$ (paper 6.2), where the quantum distribution is the squared Fourier transform (paper 6.4). A non-dispersive cloud is defined by $F(x,\nabla S)=F'$ (paper 8.1), an equation with no $\hbar$ in it, so no quantisation follows from it; only for energy does a non-dispersive cloud coincide with a stationary ensemble, whose equations he writes as Bernoulli's theorem for the stationary flow (paper 9.2)–(paper 9.6).</p>
+<h3 id="elementary-ensembles-superposition-and-the-quantum-condition">Elementary ensembles, superposition, and the quantum condition</h3>
+<p>An elementary ensemble is one curve in phase space, $p=\nabla S(x)$ with density $P(x)$ along it, and is therefore less dispersive than a quantum state; a general ensemble is a mixture of elementary ones, and the pair mixture/elementary corresponds to Gemisch/pure state. He calls it a serious difficulty that the distinction forces the assumption of no interaction between elementary ensembles while interaction is present inside one. Single-valuedness of $\psi$ requires that $S$ return to itself modulo $2\pi\hbar$ around the azimuth (paper 7.2), which for an orbit is</p>
+<p>$$
+\oint p\,ds=mh,
+$$</p>
+<p>(paper 7.4) — a postulate he calls ad hoc, "the quantum condition for fluidal motion", exactly analogous to the quantum condition of the old quantum theory (paper 7.5), and needed because single-valuedness of $\nabla S$ alone gives nothing discrete. For many fermions a subsidiary condition on $S$ under particle interchange (paper 7.6) replaces the exclusion principle. Two elementary ensembles superimpose by the addition of their wave functions (paper 7.7); a constant difference of $S$ is meaningless in the picture and meaningful in the superposition.</p>
+<h3 id="the-critique-of-bohm">The critique of Bohm</h3>
+<p>Four objections. The extra force acting on a particle in one experiment would be fixed by the distribution of the ensemble that contains that experiment, which "must hardly be admitted". Bohm's repair — $P$ as a real field that determines the force without reacting to the particle, conserved, normalisable, contracting at a measurement, non-local in configuration space for many bodies — moves the difficulty into the nature of the field. The twofold bookkeeping of measured and hidden values reproduces ordinary quantum mechanics, so the hidden variables "ics no essentially new functions. His" and are "metaphysical superfluities" as long as they touch no observation. And the picture fails for fermions. His conclusion is that the formulation is a possible "fourth" one within a limited range, and that the picture should be used as a medium to derive the change of state, as the path picture is used in Feynman's formulation, not taken as literally real.</p>
+<h3 id="the-reach-of-the-procedure">The reach of the procedure</h3>
+<p>The general criterion is that the Hamiltonian be expressible in a representation as a differential operator, that is, that canonical pairs with ordinary commutators exist (paper 11.5), (paper 11.6); the extra potential is then built from the second derivatives of $R$ with the coefficients of the Hamiltonian's quadratic part (paper 11.10). The electromagnetic field and Bose fields qualify, the oscillators' coordinates and momenta being simultaneously definite, so that $E$ and $H$ at every point are the hidden variables. Spin does not qualify: there is no coordinate conjugate to spin, the four components of the spinor equation do not separate, and the separation produces the relative phase between the two components. The Klein–Gordon equation gives $U'=-\frac{\hbar^{2}}{2}\Box R/R$ and a current $P(\partial_{\mu}S-eA_{\mu}/c)$ (paper 11.27), (paper 11.28), but $P$ is not positive definite, so the trajectory picture fails there too; for the Dirac equation he offers only a WKB-type substitution $\psi_{\rho}=a_{\rho}e^{iS/\hbar}$ (paper 11.29) with one common $S$ and complex $a_{\rho}$. Fermi fields fail because anticommutators give no Hermitian variables $q,p$ with continuous spectra, which is why the quantised Schrödinger field can be reached through its configuration-space form and the Dirac field by neither route — he ties this to the necessary relation between spin and statistics.</p>
+<h3 id="the-two-fluid-model-of-spin">The two-fluid model of spin</h3>
+<p>With a magnetic field and the spin diagonal, the four-component equation becomes four real equations in two densities $P_{1},P_{2}$ and two phases $S_{1},S_{2}$, with velocities $v_{i}=(\nabla S_{i}-eA_{i}/c)/m$ (paper 11.20). He reads them as two interpenetrating fluids exchanging mass at the rate $2J$, with</p>
+<p>$$
+\Gamma=gH_{\perp}R_{1}R_{2}\cos\!\left[\frac{S_{1}-S_{2}}{\hbar}+u\right],
+\qquad
+J=gH_{\perp}R_{1}R_{2}\sin\!\left[\frac{S_{1}-S_{2}}{\hbar}+u\right],
+$$</p>
+<p>(paper 11.21), (paper 11.22), where $g=-c/2mc$ (as printed), $H_{\perp}$ is the transverse field's magnitude and $\tan u=H_{y}/H_{x}$. The exchange carries a reaction force $m(v_{1}-v_{2})J$ (paper 11.24), each fluid feels the Lorentz force, the quantum force and a quantum-magnetic force (paper 11.25) whose first term is the couple on a moment $\mu=\hbar g$. He checks that the resulting mean spin energy equals the quantum $\mu\langle\sigma\cdot H\rangle$. The picture then breaks down on its own terms: the force depends on $S_{1}-S_{2}$, not on the densities alone, so the original assumption that the internal force is a functional of $P$ fails; only $H_{\perp}=0$, where spin and orbital motion separate, is clean.</p>
+<h3 id="the-rotational-generalisation-and-the-singular-ensemble">The rotational generalisation, and the singular ensemble</h3>
+<p>He suggests, without developing it, a generalisation in which Euler's equation and continuity hold for a rotational velocity field with the same pressure potential, quantised following Landau by $[v(x),P(x')]=(\hbar/mi)\nabla\delta(x-x')$ and $[v_{i}(x),v_{j}(x')]=(\hbar/mi)\delta(x-x')(\mathrm{curl}\,v)_{k}$, with $H'=\int\{\frac{1}{2}Pv^{2}+PV+\frac{\hbar^{2}}{8m}(\nabla P)^{2}P^{-1}\}d^{3}x$.</p>
+<p>The constructive part is the ensemble of classical trajectories leaving one event $(x_{0},0)$ with arbitrary velocity. Its velocity field has $\mathrm{div}\,v=3/t$ in the neighbourhood of that event, hence $P\propto t^{-3}$ (paper 14.9), (paper 14.10), and the phase is the classical action from $(x_{0},0)$ to $(x,t)$ (paper 14.6), (paper 14.8). The wave function so built,</p>
+<p>$$
+K=\mathrm{const}\,t^{-3/2}\exp\frac{i}{\hbar}\left[\frac{m}{2t}(x-x_{0})^{2}-t\left\{\frac{1}{2m}(x-x_{0})\cdot(\nabla V)_{0}+V(x_{0})\right\}\right],
+$$</p>
+<p>(paper 14.11)′, is the kernel that carries $\psi(x,0)$ to $\psi(x,t)$ for infinitesimal $t$ (paper 14.12); the argument is the Huygens principle read on the ensemble. For the oscillator the density is $P=\mathrm{const}/\sin\omega t$ (paper 14.28) and for a uniform magnetic field $P=\mathrm{const}/(1-\cos\omega t)$, both exact for finite $t$.</p>
+<h3 id="the-stress-the-sound-wave-and-the-hartree-splitting">The stress, the sound wave, and the Hartree splitting</h3>
+<p>The apparent pressure potential is a stress tensor, $\sigma_{ik}=\frac{\hbar^{2}}{2m}P\,\partial_{i}\partial_{k}\log R$ (paper A.2), whose divergence is the quantum force (paper A.3); its normal components may be tension or pressure and its mean pressure may be negative. The flow is a perfect fluid — $\sigma_{ik}=-p\,\delta_{ik}$ — only for the Gaussian density $P=\mathrm{const}\exp(-ar^{2})$, with $p=(a\hbar^{2}/2m)P$; for $P=\mathrm{const}\exp(-br^{n})$ the radial component is a tension for $n&lt;1$, a pressure for $n&gt;1$, and equal in magnitude at $n=2$. Small oscillations about a uniform state give a longitudinal wave with phase velocity $u=\mu k$, $\mu=\hbar/2m$, so $\omega=\hbar k^{2}/2m$; the linearised pair is exactly the free Schrödinger equation, and the expansion holds for $|r|\le1$ with $r=v_{0}/2u$ (appendix B). In the Hartree approximation the two-body cloud splits into a self-potential acting hydrodynamically on each electron and the other electron's Coulomb field acting electrostatically (appendix C).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank below is a judgement: first the item that answers an open question the corpus declares, then the ones that supply a missing object or a formula it lacks, then the ones that are only interesting.</p>
+<ol>
+<li>Spin dynamics in a field as mass exchange between two fluids</li>
+</ol>
+<p><strong>The idea.</strong> For a spin-half particle in a magnetic field, the two-component polar decomposition gives two densities and two phases, and the four real equations read as two interpenetrating fluids converting into each other at the pointwise rate $2J$, with $J=gH_{\perp}R_{1}R_{2}\sin[(S_{1}-S_{2})/\hbar+u]$ and a reaction force $m(v_{1}-v_{2})J$. The rate is set by the relative phase and by the transverse field.</p>
+<p><strong>What it would add.</strong> The three items the spin-half block leaves open are named in <em>The Charged Spin-Half Fluid</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>): no vorticity transport, no closure, and no spin dynamics in a background. The third is the one this mechanism speaks to: the field does not torque the spin, it drives a transfer of density between the two orientations, and the transfer is what precession looks like in the fluid variables. The mean spin energy comes out equal to the quantum one, so the mechanism is a second reading of the same equations and not a new dynamics added to them.</p>
+<p><strong>Where it lands.</strong> <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) carries a section headed <em>The two-fluid reading is not available here</em>, and what that section denies is the entropy split into a condensate and a normal part. Takabayasi's pair is a different split: two orientations of one spin, exchanging mass, with the relative phase itself as the coupling variable. <em>The Two-Fluid Model in Biquaternionic Form</em> (<code>articles_physics/the-two-fluid-model-in-biquaternionic-form.md</code>) is the corpus's treatment of the entropy split. So the corpus would then hold three two-fluids under one name, which is itself the first thing to fix.</p>
+<p><strong>What stands in the way.</strong> The charged article fixes the opposite convention: the connection reaches the phase bracket and the boost bracket and no others, so <em>the field does not turn the spin directly</em>, and the Larmor precession appears at second order through the frame's transport. Takabayasi puts $-\mu H$ into the potential energy, which is a first-order coupling and therefore a torque. The two cannot both stand as stated. The corpus's convention is the one its four-bracket count forces; Takabayasi's is the one the two-component polar decomposition forces for the non-relativistic spinor. The import would then be the non-relativistic truncation, with the disagreement named. His own collapse of the picture when $H_{\perp}\neq0$ is a second cost: the force depends on $S_{1}-S_{2}$ and the picture's premise, that the internal force is a functional of the density, is lost.</p>
+<ol>
+<li>The Gaussian is the only density whose quantum stress is a pressure</li>
+</ol>
+<p><strong>The idea.</strong> The stress $\sigma_{ik}=\frac{\hbar^{2}}{2m}P\partial_{i}\partial_{k}\log R$ is isotropic exactly when $\log R$ has a constant Hessian, and among radial profiles that happens only for $P=\mathrm{const}\exp(-ar^{2})$, where $\sigma_{ik}=-p\delta_{ik}$ with $p=(a\hbar^{2}/2m)P$. For $P=\mathrm{const}\exp(-br^{n})$ the radial component is a tension for $n&lt;1$, a pressure for $n&gt;1$, and equal in magnitude at $n=2$; a profile with positive $\Delta\log R$ has a negative mean pressure, and he gives a $\cosh$-like case.</p>
+<p><strong>What it would add.</strong> A converse, and a table. <em>The Quantum Stress Tensor of the Biquaternion Scalar Field</em> (<code>articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.md</code>) already evaluates the Gaussian and finds the quantum stress isotropic there, negative in its diagonal and of magnitude $\hbar^{2}\rho_{\mathrm{num}}/(2m\sigma^{2})$; it records that as one computed case and argues the anisotropy from the general expression. Takabayasi supplies the other half — the Gaussian family is the <em>whole</em> set on which this stress is a pressure — so the fluid's pressure is a pressure for exactly one solution and the isotropy is not generic. The $n$ table puts the sign of the normal components on one axis.</p>
+<p><strong>Where it lands.</strong> The stress article's §<em>It is not isotropic</em>, which would then read as an equivalence rather than as a comparison.</p>
+<p><strong>What stands in the way.</strong> Little, and that is why the item ranks here: the corpus already has the Gaussian's evaluation, so the import is a converse and a table and not an object. The uniqueness is also narrower than it sounds, being uniqueness among profiles whose logarithm is radial and smooth; every other density is anisotropic by construction. So the statement is that the quantum stress is a pressure only where the density's curvature is uniform, which is a criterion on solutions and not on the fluid. The slope $a$ is the cloud's width and not a state variable, so the corpus's <em>no equation of state</em> stands: this is an exceptional density, not a closure.</p>
+<h3 id="3-the-many-body-quantum-potential-split-into-a-self-cloud-and-a-mutual-coulomb-field">3. The many-body quantum potential split into a self-cloud and a mutual Coulomb field</h3>
+<p><strong>The idea.</strong> In the two-electron configuration-space picture the internal force is the sum of two one-body quantum potentials. <strong>Where it lands.</strong> The coupled polar article, as a reading of its two central fields in the Hartree truncation, or <em>The Schrödinger Fluid</em> (<code>articles_physics/the-schrodinger-fluid.md</code>) as a one-paragraph remark on the many-body case.</p>
+<h3 id="4-no-coordinate-representation-therefore-no-trajectory-ensemble-for-spin-and-for-fermions">4. No coordinate representation, therefore no trajectory ensemble, for spin and for fermions</h3>
+<p><strong>The idea.</strong> The procedure needs a representation in which the Hamiltonian is a differential operator, hence canonical pairs with ordinary commutators and continuous spectra. <strong>Where it lands.</strong> The correspondence article's §<em>What it does not add</em>, and the domain section that already limits his variables to $\rho\neq0$; the algebraic condition is on the invertibility of the element, and this one is on the existence of a coordinate chart.</p>
+<h3 id="5-a-one-sided-width-bound-from-the-quantum-potential">5. A one-sided width bound from the quantum potential</h3>
+<p><strong>The idea.</strong> In place of $\Delta x\,\Delta p\ge\hbar/2$ the ensemble gives $(2mV')^{1/2}\Delta x&gt;\hbar/2$, with $\Delta x$ the mean deviation of the position and $V'=-\frac{\hbar^{2}}{2m}\Delta R/R$, and he states that no bound of the product form exists. <strong>Where it lands.</strong> <em>The Schrödinger Fluid</em> (<code>articles_physics/the-schrodinger-fluid.md</code>), beside the quantum potential and its divergence.</p>
+<h3 id="6-longitudinal-sound-with-a-wave-number-dependent-speed">6. Longitudinal sound with a wave-number-dependent speed</h3>
+<p><strong>The idea.</strong> Linearising the pair about $R=R_{0}$, $v=0$ gives a longitudinal wave with phase velocity $u=\mu k$ and $\mu=\hbar/2m$, hence $\omega=\hbar k^{2}/2m$; the linearised pair is exactly the free Schrödinger equation, and the expansion is legitimate only for $|r|\le1$ with $r=v_{0}/2u$, half a Mach number. <strong>Where it lands.</strong> <em>The Schrödinger Fluid</em> (<code>articles_physics/the-schrodinger-fluid.md</code>), as a paragraph after the quantum potential, or <em>The Fourier Transform and the Schrödinger Fluid</em> (<code>articles_physics/the-fourier-transform-and-the-schrodinger-fluid.md</code>), whose mode reading it complements.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

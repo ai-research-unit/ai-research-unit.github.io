@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constraints on horizonless objects after the EHT observation of Sagittarius A* — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on horizonless objects after the EHT observation of Sagittarius A -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constraints-on-horizonless-objects-after-the-eht-observation-of-sagittarius-a"><strong>Constraints on horizonless objects after the EHT observation of Sagittarius A*</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2205.13555v2 [astro-ph.HE]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 31 October 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Constraints on horizonless objects after the EHT observation of Sagittarius A - 2205.13555-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on horizonless objects after the EHT observation of Sagittarius A - 2205.13555.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Constraints on horizonless objects after the EHT observation of Sagittarius A - 2205.13555.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper re-examines a constraint that the Event Horizon Telescope collaboration drew from the image of Sagittarius A*. The collaboration modelled the object as an ultra-compact horizonless object with a surface that absorbs radiation perfectly, and concluded that such objects are tightly constrained. The authors show that perfect absorption is an unjustified assumption: any small absorption coefficient changes the energy balance, and the published upper bound then holds only for absorption coefficients below about $10^{-14}$. The corrected constraint is much weaker and depends on two parameters, which they plot.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"The images of Sagittarius A* recently r[eported by the EHT collaboration] have been accompanied [by a discussion of the] possible absence of a trapping horizon, i.e., [whether the object at] our galaxy is an ultra-compact object wit[h a] surface, in which incident radiation is r[eflected or absorbed]."</p>
+<h3 id="the-assumption-under-scrutiny">The assumption under scrutiny</h3>
+<p>"Herein, we discuss h[ow the] assumption of perfect balance in the ener[gy budget of such an] object [fails], and show that this is violated wh[en one includes an absorption] coefficient."</p>
+<h3 id="the-corrected-bound">The corrected bound</h3>
+<p>"We derive the upper-bound co[nstraint as a function of the] absorption coefficient of the surface. We [find that the bounds stated by the] EHT collaboration hold only for unnatural [values, namely absorption coefficients] lower than $10^{-14}$, and thus have to be s[tated with that qualification]."</p>
+<h3 id="the-main-message">The main message</h3>
+<p>"The main message of this paper is that the upper-bound constraint for thermal emission reported by the EHT collaboration ... only partially accounts for the strong lensing effect and, crucially, it does not consider the effect of an absorption coefficient. We have shown that this is far from being a justified working assumption, as even a very small absorption coefficient renders the assumptions in Sec. 4.1 of [the EHT paper] invalid."</p>
+<h3 id="the-simplification-adopted">The simplification adopted</h3>
+<p>"we have focused on the spherically symmetric case for simplicity. It is known that, in the rotating case, the escape angle ... would depend on the latitude. However, as shown in [39], for an object like Sgr A* for which the angular momentum is below $a\simeq0.9$, the emission is very nearly isotropic and we can simply substitute the latitude dependent escape angle with its average value."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-observational-bound-rests-on-an-idealisation">1. An observational bound rests on an idealisation</h3>
+<p><strong>The idea.</strong> The published constraint assumed perfect absorption, which is a physical idealisation, and relaxing it weakens the bound by many orders of magnitude.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs how much observational data constrains a framework. This paper shows that a headline constraint can depend on one unstated idealisation, and that the dependence can be extreme. The article's assessment of what data can decide should carry that caution.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The case is about an astrophysical object, not about the framework. Ranked first, because it directly limits how much weight an observational claim can bear.</p>
+<h3 id="2-horizonless-does-not-mean-featureless">2. Horizonless does not mean featureless</h3>
+<p><strong>The idea.</strong> An object without a horizon has a surface, and the surface's reflectivity is a free parameter that observation must fix.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> distinguishes objects with and without horizons. This paper adds that the horizonless branch carries a surface parameter the horizon branch does not, so the two branches have different numbers of free parameters. That is a real asymmetry in the comparison.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The parameter count is for one class of models. Ranked second.</p>
+<h3 id="3-two-parameters-one-plot">3. Two parameters, one plot</h3>
+<p><strong>The idea.</strong> The allowed region is a band in a two-dimensional parameter space, not a single number.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> looks for single decisive tests. This paper shows a result in the realistic form: a region, with the previously quoted number as a degenerate corner of it. The article should expect regions rather than numbers.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> It is a remark about the form of results. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

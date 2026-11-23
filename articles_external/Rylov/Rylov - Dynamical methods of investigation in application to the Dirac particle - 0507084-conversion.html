@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamical Methods of Investigation in Application to the Dirac Particle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigation in application to the Dirac particle - 0507084.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamical-methods-of-investigation-in-application-to-the-dirac-particle"><strong>Dynamical Methods of Investigation in Application to the Dirac Particle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0507084 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 20 September 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>47 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Dynamical methods of investigation in application to the Dirac particle - 0507084-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigation in application to the Dirac particle - 0507084.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamical methods of investigation in application to the Dirac particle - 0507084.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Compares the nonrelativistic limit of the Dirac particle with the Pauli particle and finds they are different dynamical systems, not the same one written twice. The nonrelativistic Dirac system carries high-frequency internal degrees of freedom the Pauli system does not have, so it is composite where the Pauli particle is pointlike. The difference shows in the classical world lines: a straight timelike line for Pauli, a helix for the nonrelativistic Dirac particle, with the helix frequency equal to the pair-production threshold frequency. The paper closes with an extended comparison of two research strategies.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-systems-not-one">Two systems, not one</h3>
+<p>The abstract states the result as a separation: "the Pauli particle $S_P$ and the nonrelativistic approximation $S_{nD}$ of the Dirac particle $S_D$ are different dynamic systems. $S_{nD}$ contains the high frequency degrees of freedom, which are absent in the dynamic system $S_P$. It means that the nonrelativistic Dirac particle $S_{nD}$ is composite (i.e. it has internal degrees of freedom), whereas the Pauli particle $S_P$ is a pointlike particle with the spin."</p>
+<h3 id="the-world-lines">The world lines</h3>
+<p>The sharpest quantitative statement in the paper: "In the absence of the electromagnetic field the world line of the classical Pauli particle SPcl is a timelike straight, whereas that of the classical nonrelativistic Dirac particle SnDcl is a helix. The characteristic frequency Ω = 2mc2 /h̄ of this helix is the threshold frequency of the pair production. Using dynamic"</p>
+<p>So the internal motion has a frequency fixed by the mass, and that same frequency is where pairs begin to be produced. The helicity is not decoration: it is the internal degree of freedom, and its frequency is a threshold.</p>
+<h3 id="two-further-results">Two further results</h3>
+<p>The Copenhagen charge appears again, now attached to the Dirac case: "one shows freely that the Copenhagen interpretation, when the wave function is a specific quantum object describing the state of individual particle, is incompatible with the quantum mechanics formalism." And a second: "the momentum distribution in quantum mechanics is in reality the mean momentum distribution."</p>
+<h3 id="the-strategy-argument">The strategy argument</h3>
+<p>The concluding section is a comparison of the Newtonian and the experimental-fitting strategies, and it turns on a distinction the rest of the paper needs: "A mistake is an incorrect information, whereas a deficiency of knowledge is simply a lack of information. A hypothesis may be correct in some situation and invalid in other situation." Only the first must be found and removed, because "It is contained in the logical structure of the satisfactory theory and it may not be ignored."</p>
+<p>The diagnosis follows: the Ptolemaic "experimental-fitting approach does not distinguish between a mistake and an incorrect hypothesis, because at this approach a theory is a list of prescriptions having equal importance, but not a logical structure." Hence his account of why the microworld theory stalled: "It was the mis- takes, that have lead to a replacement of the Newtonian strategy, dominating in 19th century, by the Ptolemaic experimental-fitting approach, dominating in microcosm investigations of 20th century.".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-nonrelativistic-limit-is-not-the-pauli-equation">1. The nonrelativistic limit is not the Pauli equation</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong> with a computation behind it: taking the nonrelativistic limit of the Dirac equation leaves a system with extra fast degrees of freedom, so the limit is not the Pauli system but a composite object that reduces to it only after the fast variables are averaged.</p>
+<p><strong>What it would add.</strong> The corpus has an exercise that derives the Pauli equation as the nonrelativistic limit and treats the result as the answer. If the limit retains structure, the exercise's conclusion is the answer to a further averaging, and the corpus would have to say what was averaged and whether the averaging is legitimate. That is a check on the corpus's own derivation, from outside, with a named object at stake.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is that the systems differ, and the paper's evidence is the classical world lines of the two systems rather than an expansion of the quantum systems. A difference between classical limits does not by itself establish that the quantum systems differ, since two different systems can share a classical limit.</p>
+<h3 id="2-the-helix-frequency-is-the-pair-threshold">2. The helix frequency is the pair threshold</h3>
+<p><strong>The idea.</strong> $\Omega=2mc^2/\hbar$ is both the internal rotation frequency of the nonrelativistic Dirac particle and the threshold frequency for pair production — one number doing two jobs.</p>
+<p><strong>What it would add.</strong> The corpus computes with $mc^2/\hbar$ as the Compton frequency and treats pair production as a separate, field-theoretic phenomenon. An identification of the two would tie the internal motion to the threshold and give the corpus's internal angle a physical frequency — which is testable, because the internal angle's rate is fixed by the same mass.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is a numerical coincidence of two different derivations in this paper; no mechanism connects the helix to the pair threshold, and no cross-section is computed. A frequency equality is not yet a physical link.</p>
+<h3 id="3-mistake-deficiency-and-hypothesis">3. Mistake, deficiency, and hypothesis</h3>
+<p><strong>The idea.</strong> A <strong>three-way distinction</strong> with a rule attached: a mistake must be corrected because it sits inside the logical structure; a deficiency is filled by more information; a hypothesis is discarded when it is shown to be inapplicable. Only the first is a defect of the theory.</p>
+<p><strong>What it would add.</strong> The corpus is unusually explicit about which of its statements are derivations and which are inputs, but it has no vocabulary for the difference between an input that is wrong and an input that is merely unknown. Rylov's distinction would give the corpus a way to grade its own open items — the unbuilt Fock space is a deficiency, a wrong sign would be a mistake — and the grading is what decides whether an item is a research programme or a bug.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is applied to a historical narrative and never to a live calculation, so it arrives without a worked example of the classification. And it is a distinction about theories as logical structures, which presumes the corpus's own structure is settled enough to have a boundary.</p>
+<p>The rank: the nonrelativistic limit first, because it tests a corpus derivation; the pair threshold second, because it is the one number in the paper that could be checked; the three-way distinction last, because it is methodological and unsupported by an example.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

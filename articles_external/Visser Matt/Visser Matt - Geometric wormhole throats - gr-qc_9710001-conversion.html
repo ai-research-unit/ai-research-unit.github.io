@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric wormhole throats — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geometric wormhole throats - gr-qc_9710001.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="geometric-wormhole-throats"><strong>Geometric wormhole throats</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9710001v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, David Hochberg</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 October 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF says it appeared in the proceedings of the Haifa Workshop)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>47 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Geometric wormhole throats - gr-qc_9710001-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geometric wormhole throats - gr-qc_9710001.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geometric wormhole throats - gr-qc_9710001.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a survey of how wormholes and black holes might interact, followed by an account of what can be said about throats in general. Three possible connections are listed: small geometric perturbations shifting the horizon by a large amount, Planck-scale wormholes letting information move along spacelike directions near a singularity, and vacuum polarisation punching through to another asymptotic region. The survey then covers energy condition violation at throats, the Morris–Thorne wormhole and its time-dependent generalisation, and Brans–Dicke wormholes as a case where the violation is hidden by a choice of definitions. It restates the minimal-area definition of a throat.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-traditional-separation">The traditional separation</h3>
+<p>"Wormholes and black holes have, apart from a few historical oddities, traditionally been treated a quite separate objects with relatively little overlap. The possibility of a connection arises in that wormholes, if they exist, might have profound influence on black holes, their event horizons, and their internal structure."</p>
+<h3 id="the-first-connection">The first connection</h3>
+<p>"small wormhole-induced perturbations in the geometry can lead to massive non-perturbative shifts in the event horizon"</p>
+<h3 id="the-second-connection">The second connection</h3>
+<p>"Planck-scale wormholes near any spacelike singularity might let information travel in effectively spacelike directions"</p>
+<h3 id="the-third-connection">The third connection</h3>
+<p>"vacuum polarization effects near any singularity might conceivably lead to a 'punch through' into another asymptotically flat region—effectively transforming a black hole into a wormhole."</p>
+<h3 id="the-survey-content">The survey content</h3>
+<p>"We discuss the violations of the energy conditions that typically occur at and near the throat of any traversable wormhole and emphasize the generic nature of this result."</p>
+<h3 id="the-hiding-of-violations">The hiding of violations</h3>
+<p>"We discuss spherically symmetric Brans–Dicke wormholes as examples of how to hide the energy condition violations in an inappropriate choice of definitions."</p>
+<h3 id="the-general-conclusion">The general conclusion</h3>
+<p>"In non-Einstein theories of gravity it is often possible to push the energy condition violations into the nonstandard parts of the stress-energy tensor and let the ordinary part of the stress-energy satisfy the energy conditions. The total stress-energy tensor, however, must still violate the energy conditions."</p>
+<h3 id="the-definition-and-its-limit">The definition and its limit</h3>
+<p>"We do not need to make any assumptions about the existence of any asymptotically flat region, nor do we need to assume that the manifold is topologically non-trivial. ... Generalization to the time dependent situation is clearly of interest. Unfortunately we have encountered many subtleties of definition, notation, and formalism in this endeavor."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-small-perturbation-a-large-horizon-shift">1. A small perturbation, a large horizon shift</h3>
+<p><strong>The idea.</strong> A tiny change in geometry can move the event horizon by a large amount.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats the horizon as a property of a given geometry. A non-perturbative sensitivity means the horizon is not a stable feature, which the article should address directly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The claim is raised as a possibility in a survey. Ranked first, because it undermines the stability of the article's object.</p>
+<h3 id="2-hiding-a-violation-by-redefining-stress-energy">2. Hiding a violation by redefining stress-energy</h3>
+<p><strong>The idea.</strong> In a non-Einstein theory the violating part can be pushed into terms not counted as matter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions as if they were theory-independent. This shows an apparent escape hatch that only moves the problem, and the catalogue should say so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The argument is made by example. Ranked second.</p>
+<h3 id="3-wormholes-might-change-what-a-singularity-is">3. Wormholes might change what a singularity is</h3>
+<p><strong>The idea.</strong> Planck-scale wormholes near a singularity could make information travel along spacelike directions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> assumes the cone separates what can influence what. A route that bypasses the cone is the strongest kind of challenge, and the article needs a response.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of the barrier.</p>
+<p><strong>What stands in the way.</strong> The authors present it only as conceivable. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

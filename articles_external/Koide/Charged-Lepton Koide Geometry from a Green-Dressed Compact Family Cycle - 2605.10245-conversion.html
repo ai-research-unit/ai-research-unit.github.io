@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle - 2605.10245.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charged-lepton-koide-geometry-from-a-green-dressed-compact-family-cycle"><strong>Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2605.10245 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Kirill Shulga (ICEPP, University of Tokyo)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 October 2026 (v1 11 May 2026)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Journal of Physics G (2026)</td>
+</tr>
+<tr>
+<td>doi</td>
+<td>10.1088/1361-6471/aea4ce</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle - 2605.10245-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle - 2605.10245.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Charged-Lepton Koide Geometry from a Green-Dressed Compact Family Cycle - 2605.10245.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds an effective theory on a compact internal circle in which the family amplitude is sampled at the three $Z_3$ points, and in which the $45^\circ$ cone comes from one assumption (equal singlet and doublet norms) while the number $2/9$ comes from a different calculation: the Green's function sum of the circle evaluated at a $Z_3$ displacement. That sum is an exact lattice constant, $\sum_{n\ge1}(1-\cos2\pi n/3)/n^2=2\pi^2/9$, so the phase is $\theta_\ell=-2\lambda_B/9$ with $\lambda_B$ an undetermined matching coefficient. At the unit-normalised value $\lambda_B=1$ the phase is $-2/9$, and the benchmark then requires a relative correction of $9.83\times10^{-6}$ in $m_e/m_\mu$, a $451.7\sigma$ offset against experimental errors that the theory does not explain. The paper is explicit that the number $2/9$ is not new and that the normalisation is not derived.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-and-is-not-new">What is and is not new</h3>
+<p>"The $Z_3$-symmetric square-root-mass parametrization and the numerical proximity of the charged-lepton phase to $2/9$ predate the present work ... The novelty claimed here is therefore not the number $2/9$ itself, nor the corresponding Koide-based estimate of $m_\tau$. It is the proposed combination of (i) an antiperiodic two-mode seed, (ii) its periodic symmetric-square carrier, (iii) a coherent branch-real order parameter realizing the Koide cone, (iv) a quadratic ..."</p>
+<p>The division of labour: the cone is put in by hand, the orientation is calculated.</p>
+<h3 id="the-cone">The cone</h3>
+<p>"The coherent branch-real rank-one sector is an explicit assumption of the effective theory and realizes the equal singlet–doublet norm associated with Koide's $45^\circ$ cone."</p>
+<h3 id="the-math27-from-a-harmonic-sum">The $2/9$ from a harmonic sum</h3>
+<p>For a $Z_3$ displacement $\Delta=2\pi/3$, "harmonics divisible by three are insensitive to the displacement, and"</p>
+<p>$$
+\sum_{n=1}^{\infty}\frac{1-\cos\left(2\pi n/3\right)}{n^2}=\frac{2\pi^2}{9},
+\qquad
+\gamma_{C3}=\frac{2\lambda_B}{9},
+\qquad
+\delta_f=3\gamma_{C3}=\frac{2\lambda_B}{3},
+\tag{paper 43}
+$$</p>
+<p>"with $\lambda_B\equiv\pi^2g_B^2/(2\kappa_B)$. The compact Green sum therefore fixes the geometric coefficient $2/9$, but it does not determine the matching coefficient $\lambda_B$. A microscopic completion would have to determine the endpoint charge, the stiffness normalization, possible massive-mode contributions, and any independent bare holonomy." Then</p>
+<p>$$
+\theta_\ell^{(0)}=-\gamma_{C3}=-\frac{2\lambda_B}{9}.
+\tag{paper 63}
+$$</p>
+<p>The sum itself is exact and elementary: the mask $1-\cos(2\pi n/3)$ vanishes for $n\equiv0\ (3)$ and equals $3/2$ otherwise, so the sum is $\tfrac32\left(\tfrac{\pi^2}{6}-\tfrac19\tfrac{\pi^2}{6}\right)=2\pi^2/9$, which I checked and confirmed.</p>
+<h3 id="the-numbers-and-the-correction-they-require">The numbers, and the correction they require</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta_{e\mu}$ from $m_e/m_\mu$</td>
+<td>$-0.222222047074(388)$</td>
+</tr>
+<tr>
+<td>offset from $-2/9$</td>
+<td>$(1.75148\pm0.00388)\times10^{-7}$, i.e. $451.7\sigma$</td>
+</tr>
+<tr>
+<td>weighted fit $M_{\rm fit}$</td>
+<td>$313.8564003(63)$ MeV</td>
+</tr>
+<tr>
+<td>weighted fit $\theta_{\rm fit}$</td>
+<td>$-0.222222047074(388)$, $\chi^2/\mathrm{dof}=0.188/1$</td>
+</tr>
+<tr>
+<td>equivalent Berry coefficient</td>
+<td>$\lambda_B^{\rm fit}=0.9999992118(17)$</td>
+</tr>
+<tr>
+<td>$m_\tau$ from the cone, using $m_e,m_\mu$</td>
+<td>$1776.969027(35)$ MeV, $0.434\sigma$</td>
+</tr>
+<tr>
+<td>$m_\tau$ at $\lambda_B=1$, normalised to $m_\mu$</td>
+<td>$1776.967497(39)$ MeV, $0.417\sigma$</td>
+</tr>
+<tr>
+<td>required relative correction $\delta(m_e/m_\mu)$</td>
+<td>$-9.8334\times10^{-6}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>"Since $\lambda_B=1$ is only a benchmark and the present effective theory does not assign a microscopic matching uncertainty, this number should not be interpreted as a statistical exclusion of the compact-cycle framework. Instead, it fixes the finite correction that a microscopic completion must generate ... $|\delta Z_e|\simeq(1.8$–$2.0)\times10^{-7}$ ... This is a consistency-of-scales statement, not a calculation of the correction or an assigned theoretical error bar."</p>
+<p>"The numerical success of the construction relies on two matching assumptions": that the compact sector can be evaluated at $\lambda_B=1$, and that the matching admits no further shifts.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math66-is-a-circle-constant-the-harmonic-sum-at-a-math67-displacement">1. $2/9$ is a circle constant: the harmonic sum at a $Z_3$ displacement</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $\sum_{n\ge1}(1-\cos 2\pi n/3)/n^2=2\pi^2/9$ exactly, so on a circle sampled at three equal points the Green's function contributes the coefficient $2/9$ with no numerology.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §5 treats $2/9$ as a number to be explained, and the corpus's only readings of it are arithmetic (a third of $2/3$, and so on). Here it is a property of the circle's spectrum under a $Z_3$ shift — the same $2/9$ that appears in the phase, obtained from a convergent series whose value is fixed by the spacing. If the corpus is going to keep the phase at all, this is the most economical origin available: it needs no new field, only a compact direction with three equally spaced points.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §5, as the derivation of the phase constant.</p>
+<p><strong>What stands in the way.</strong> The coefficient enters as $\gamma=\lambda_B\cdot2/9$ with $\lambda_B$ free, so the derivation fixes the <em>shape</em> and not the value; the paper's own benchmark then misses the measured phase by $1.75\times10^{-7}$, which is $451\sigma$. Until $\lambda_B$ is derived, the $2/9$ is a constant of the model and not of nature.</p>
+<h3 id="2-two-numbers-two-mechanisms-one-geometry">2. Two numbers, two mechanisms, one geometry</h3>
+<p><strong>The idea.</strong> A <strong>structure</strong>: the $45^\circ$ cone and the $2/9$ orientation come from separate ingredients — equal singlet and doublet norms for the first, a Green's-function phase for the second. The corpus currently treats $2/3$ and $2/9$ as two facets of one coincidence; here they are two calculations.</p>
+<p><strong>What it would add.</strong> If the two numbers have different origins, then the corpus's "two coincidences in one triple" problem weakens: it is not one miracle twice, it is a geometric condition and a harmonic constant. That also predicts a different fate under running, which the corpus can test — the cone is a norm statement, the phase is a phase.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §5 and §11.</p>
+<p><strong>What stands in the way.</strong> The "equal singlet–doublet norm" is an explicit assumption ("the coherent branch-real rank-one sector is an explicit assumption"), so the first number is still inserted. And the phase's constant is only determined up to $\lambda_B$. Structurally attractive, evidentially thin.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The weighted fit $M_{\rm fit}=313.8564003(63)$ MeV reproduces the $313.8$ MeV scale that Brannen, Rivero and others report, to eight digits. The $\chi^2/\mathrm{dof}=0.188/1$ is quoted with experimental errors only and should not be read as a goodness of fit. The five appendices carry the mode expansions and a sensitivity bound $|\delta Z_e|\lesssim2\times10^{-7}$ that matches the required correction in order of magnitude, which the author calls a consistency of scales rather than a calculation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

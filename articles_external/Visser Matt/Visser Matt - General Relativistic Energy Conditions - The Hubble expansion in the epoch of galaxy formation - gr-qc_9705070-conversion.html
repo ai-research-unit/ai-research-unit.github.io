@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General relativistic energy conditions: the Hubble expansion in the epoch of galaxy formation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Relativistic Energy Conditions - The Hubble expansion in the epoch of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-relativistic-energy-conditions-the-hubble-expansion-in-the-epoch-of-galaxy-formation"><strong>General relativistic energy conditions: the Hubble expansion in the epoch of galaxy formation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9705070v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 May 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - General Relativistic Energy Conditions - The Hubble expansion in the epoch of galaxy formation - gr-qc_9705070-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Relativistic Energy Conditions - The Hubble expansion in the epoch of galaxy formation - gr-qc_9705070.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Relativistic Energy Conditions - The Hubble expansion in the epoch of galaxy formation - gr-qc_9705070.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper uses energy conditions, rather than a chosen equation of state, to bound density and look-back time against redshift in a Friedmann–Robertson–Walker universe. The point is robustness: the bounds hold whatever the cosmological fluid is. Visser shows that a high Hubble parameter forces the strong energy condition to fail somewhere between galaxy formation and now. No arrangement of normal matter can fit the data, so the age problem needs a large amount of abnormal matter. He states the trade-off plainly: precision is sacrificed for model independence, and some results do not depend on $\Omega$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"The energy conditions of Einstein gravity (classical general relativity) are designed to extract as much information as possible from classical general relativity without enforcing a particular equation of state for the stress-energy."</p>
+<h3 id="why-cosmology-suits-it">Why cosmology suits it</h3>
+<p>"This systematic avoidance of the need to specify a particular equation of state is particularly useful in a cosmological setting — since the equation of state for the cosmological fluid in a Friedmann–Robertson–Walker type universe is extremely uncertain."</p>
+<h3 id="the-result">The result</h3>
+<p>"I shall show that the energy conditions provide simple and robust bounds on the behaviour of both the density and look-back time as a function of red-shift."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"I shall show that current observations suggest that the so-called strong energy condition (SEC) is violated sometime between the epoch of galaxy formation and the present. This implies that no possible combination of 'normal' matter is capable of fitting the observational data."</p>
+<h3 id="the-central-claim">The central claim</h3>
+<p>"Since all normal matter satisfies the SEC, fixing the age-of-the-oldest-stars problem will inescapably require the introduction of 'abnormal' matter—indeed we will need large quantities of abnormal matter, sufficient to overwhelm the gravitational effects of the normal matter. It is this that I view as the central result of this paper."</p>
+<h3 id="the-trade-off">The trade-off</h3>
+<p>"The trade-off I have made in this paper is to sacrifice precision in the interests of robustness: The numerical bounds on the Hubble parameter are less stringent than they might otherwise have been if a particular equation of state had been chosen. I have tried to make the bounds discussed in this paper as model independent as possible."</p>
+<h3 id="what-does-not-depend-on-assumptions">What does not depend on assumptions</h3>
+<p>"Several key results are completely independent of the $\Omega$ parameter, and are also independent of astroparticle physics assumptions such as the nature and existence of dark matter, monopoles, MACHOS, and WIMPS."</p>
+<h3 id="the-cost-to-singularity-theorems">The cost to singularity theorems</h3>
+<p>"The loss of the global applicability of the SEC leaves us in the uncomfortable position of having to decide on a particular equation of state for the early universe before we can say whether or not the universe arose from a singularity or a bounce—the loss of the SEC implies loss of the general theorems. The extent to which one can rescue this situation by looking for improved theorems using different energy conditions is as yet obscure."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-energy-conditions-bound-cosmology-without-an-equation-of-state">1. Energy conditions bound cosmology without an equation of state</h3>
+<p><strong>The idea.</strong> Bounds on density and look-back time follow from inequalities alone.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> lacks a source for its carried metric. Energy conditions give bounds on what any source must do, which is a way to constrain the missing source without naming it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the source.</p>
+<p><strong>What stands in the way.</strong> The bounds assume a Friedmann–Robertson–Walker form. Ranked first, because it addresses the article's stated gap.</p>
+<h3 id="2-the-strong-energy-condition-must-fail">2. The strong energy condition must fail</h3>
+<p><strong>The idea.</strong> Observed expansion requires abnormal matter at late times.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> can use the SEC failure as a datum the framework must accommodate. If the framework's natural matter satisfies the SEC, this is a direct conflict.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The result depends on the measured Hubble parameter. Ranked second.</p>
+<h3 id="3-losing-a-theorem-is-a-real-cost">3. Losing a theorem is a real cost</h3>
+<p><strong>The idea.</strong> Dropping the SEC also drops the singularity theorems, leaving the early universe undecided.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> should record that some obstructions are load-bearing: removing one theorem removes a conclusion elsewhere.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a remark in a discussion, not a proved result. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

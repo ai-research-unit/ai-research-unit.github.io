@@ -120,7 +120,7 @@ $$</p>
 <p>The parity of $\vec u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an integer, the sum splits into two cases: $\nu$ even gives only the identity $e_t$, and $\nu$ odd gives only $\vec u$. In general, for non-integer $\nu$, the series does not split into two separate series.</p>
 <p>For integer $\nu = n$, the result is</p>
 <p>$$
-\boxed{\; J_n(\lVert\vec Q\rVert \vec u) = \begin{cases} (-1)^{n/2} I_n(\lVert\vec Q\rVert) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\lVert\vec Q\rVert) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
+\boxed{\; J_n(\lVert\vec Q\rVert \vec u) = \begin{cases} (-1)^{n/2} I_n(\lVert\vec Q\rVert) \, e_t &amp; \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\lVert\vec Q\rVert) \, \vec u &amp; \text{if } n \text{ is odd}, \end{cases} \;}
 $$</p>
 <p>where $I_n(\lVert\vec Q\rVert)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\vec u$.</p>
 <h3 id="the-pure-case-nilpotent-regime">The Pure Case, Nilpotent Regime</h3>
@@ -130,9 +130,9 @@ J_\nu(\vec Q) = \frac{1}{\Gamma(\nu+1)} \left(\frac{\vec Q}{2}\right)^\nu + \fra
 $$</p>
 <p>Only the terms with $2m + \nu \leq 1$ contribute. For general $\nu$, the terms with $2m + \nu \geq 2$ vanish. So the series reduces to at most two terms, depending on the value of $\nu$. For integer $\nu = n \geq 0$, the series reduces to</p>
 <p>$$
-J_n(\vec Q) = \begin{cases} \frac{1}{n!} \left(\frac{\vec Q}{2}\right)^n & \text{if } n = 0 \text{ or } n = 1, \\ 0 & \text{if } n \geq 2, \end{cases}
+J_n(\vec Q) = \begin{cases} \frac{1}{n!} \left(\frac{\vec Q}{2}\right)^n &amp; \text{if } n = 0 \text{ or } n = 1, \\ 0 &amp; \text{if } n \geq 2, \end{cases}
 $$</p>
-<p>where for $n = 0$ the term is $e_t$ and for $n = 1$ the term is $\vec Q/2$. For non-integer $\nu$, the series reduces to the terms with $2m + \nu < 2$.</p>
+<p>where for $n = 0$ the term is $e_t$ and for $n = 1$ the term is $\vec Q/2$. For non-integer $\nu$, the series reduces to the terms with $2m + \nu &lt; 2$.</p>
 <h3 id="the-general-case">The General Case</h3>
 <p>For a general biquaternion $\tilde{Q} = Q_t e_t + \vec Q$ with both $Q_t \neq 0$ and $\vec Q \neq 0$, the Bessel function does not reduce to a closed form in terms of elementary functions. The powers of $\tilde{Q}$ involve the non-commutative products of $Q_t e_t$ and $\vec Q$, and the series is a genuine biquaternion series.</p>
 <p>The general case is open. The natural approach would be to use the Hamilton polar form $\tilde{Q} = \exp(Q_t) \exp(\lVert\vec Q\rVert \vec u)$ and to express $J_\nu(\tilde{Q})$ in terms of $J_\nu$ evaluated at the polar factors, but the functional equation for the Bessel function under multiplication does not hold in general, because the Bessel function is not multiplicative.</p>
@@ -146,7 +146,7 @@ $$</p>
 <h3 id="legendre-polynomials">Legendre Polynomials</h3>
 <p>The <strong>Legendre polynomials</strong> $P_n(\tilde{Q})$ are defined by the generating function</p>
 <p>$$
-\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < R(\tilde{Q}),
+\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| &lt; R(\tilde{Q}),
 $$</p>
 <p>where $t$ is a real parameter, the square root is the biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible (for $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but for $\tilde{Q} = 3e_t$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$). Equivalently, they satisfy the recurrence</p>
 <p>$$
@@ -156,7 +156,7 @@ $$</p>
 <p>The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (the coefficients are the ordinary Legendre coefficients, embedded as real scalars). So they are defined for every $\tilde{Q} \in \mathbb{B}$ by the recurrence, and the recurrence involves only the multiplication and addition of biquaternions.</p>
 <p><strong>The pure oscillatory case.</strong> For $\tilde{Q} = \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert \neq 0$ and $\vec u^2 = -e_t$, the recurrence gives</p>
 <p>$$
-\boxed{\; P_n(\lVert\vec Q\rVert \vec u) = \begin{cases} P_n(i\lVert\vec Q\rVert) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\lVert\vec Q\rVert) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
+\boxed{\; P_n(\lVert\vec Q\rVert \vec u) = \begin{cases} P_n(i\lVert\vec Q\rVert) \, e_t &amp; \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\lVert\vec Q\rVert) \, \vec u &amp; \text{if } n \text{ is odd}, \end{cases} \;}
 $$</p>
 <p>where $P_n(i\lVert\vec Q\rVert)$ is the ordinary Legendre polynomial evaluated at the complex number $i\lVert\vec Q\rVert$. The generator $\vec u$ plays the role of the imaginary unit, so no reduction to $P_n(\lVert\vec Q\rVert)$ holds: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. For instance $P_2(\lVert\vec Q\rVert\vec u) = -(3\lVert\vec Q\rVert^2+1)/2$, whereas $P_2(\lVert\vec Q\rVert) = (3\lVert\vec Q\rVert^2-1)/2$. This follows from the recurrence and the alternating powers of $\vec u$.</p>
 <p><strong>The pure nilpotent case.</strong> For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the recurrence involves powers of $\vec Q$ that truncate. In particular, $P_n(\vec Q)$ is a polynomial in $\vec Q$ of degree at most one, because $\vec Q^2 = 0$. The explicit form is obtained from the recurrence.</p>
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$</p>
-<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}$. The series converges for $\|\tilde{Q}\| < 1$.</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}$. The series converges for $\|\tilde{Q}\| &lt; 1$.</p>
 <h3 id="the-pure-oscillatory-case">The Pure Oscillatory Case</h3>
 <p>For $\tilde{Q} = \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert \neq 0$ and $\vec u^2 = -e_t$, the powers of $\tilde{Q}$ alternate. Separating even and odd powers,</p>
 <p>$$
@@ -216,7 +216,7 @@ $$</p>
 <h3 id="the-definition-problem">The Definition Problem</h3>
 <p>The <strong>gamma function</strong> of a complex variable is defined by the integral</p>
 <p>$$
-\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt, \qquad \operatorname{Re} A > 0.
+\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt, \qquad \operatorname{Re} A &gt; 0.
 $$</p>
 <p>The natural extension to a biquaternion variable would be</p>
 <p>$$
@@ -225,11 +225,11 @@ $$</p>
 <p>where $t$ is a positive real number, $t^{\tilde{Q}-1} = \exp((\tilde{Q}-1) \log t)$ is the biquaternion power, and $\exp(-t)$ is the ordinary real exponential.</p>
 <h3 id="the-obstruction">The Obstruction</h3>
 <p>The integral is defined component-wise, but the integrand is a biquaternion-valued function of the real variable $t$, and the convergence of the integral depends on the growth of $t^{\tilde{Q}-1}$ as $t \to 0$ and as $t \to \infty$.</p>
-<p><strong>As $t \to 0$.</strong> The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_t$ and on the vector part $\vec Q$. In the oscillatory regime, with $\vec Q=\lVert\vec Q\rVert\vec u$, the power is $t^{Q_t-1}(\cos(\lVert\vec Q\rVert\log t)\,e_t + \sin(\lVert\vec Q\rVert\log t)\,\vec u)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_t-1}(e_t + \log t\,\vec Q)$, which converges if $\operatorname{Re} Q_t > 0$.</p>
-<p><strong>As $t \to \infty$.</strong> The factor $\exp(-t)$ dominates, so the integral converges for all $\tilde{Q}$ with $\operatorname{Re} Q_t < \infty$.</p>
-<p>So the integral converges in the nilpotent regime if $\operatorname{Re} Q_t > 0$, and its convergence in the oscillatory regime is an open problem.</p>
+<p><strong>As $t \to 0$.</strong> The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_t$ and on the vector part $\vec Q$. In the oscillatory regime, with $\vec Q=\lVert\vec Q\rVert\vec u$, the power is $t^{Q_t-1}(\cos(\lVert\vec Q\rVert\log t)\,e_t + \sin(\lVert\vec Q\rVert\log t)\,\vec u)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_t-1}(e_t + \log t\,\vec Q)$, which converges if $\operatorname{Re} Q_t &gt; 0$.</p>
+<p><strong>As $t \to \infty$.</strong> The factor $\exp(-t)$ dominates, so the integral converges for all $\tilde{Q}$ with $\operatorname{Re} Q_t &lt; \infty$.</p>
+<p>So the integral converges in the nilpotent regime if $\operatorname{Re} Q_t &gt; 0$, and its convergence in the oscillatory regime is an open problem.</p>
 <h3 id="what-is-known">What Is Known</h3>
-<p>The gamma function is well-defined in the nilpotent regime for $\operatorname{Re} Q_t > 0$, and it can be computed in closed form. However, the analytic continuation, the functional equation $\Gamma(\tilde{Q}+1) = \tilde{Q} \Gamma(\tilde{Q})$, and the reflection formula are not established in general. These are open problems.</p>
+<p>The gamma function is well-defined in the nilpotent regime for $\operatorname{Re} Q_t &gt; 0$, and it can be computed in closed form. However, the analytic continuation, the functional equation $\Gamma(\tilde{Q}+1) = \tilde{Q} \Gamma(\tilde{Q})$, and the reflection formula are not established in general. These are open problems.</p>
 <h3 id="the-open-questions">The Open Questions</h3>
 <ol>
 <li>
@@ -250,7 +250,7 @@ $$</p>
 <h3 id="the-definition-problem_1">The Definition Problem</h3>
 <p>The <strong>Riemann zeta function</strong> of a complex variable is defined by the Dirichlet series</p>
 <p>$$
-\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}, \qquad \operatorname{Re} s > 1.
+\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}, \qquad \operatorname{Re} s &gt; 1.
 $$</p>
 <p>The natural extension to a biquaternion variable would be</p>
 <p>$$
@@ -259,7 +259,7 @@ $$</p>
 <p>where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the biquaternion power.</p>
 <h3 id="the-obstruction_1">The Obstruction</h3>
 <p>The series is a series of biquaternions. The convergence depends on the behavior of $n^{\tilde{Q}}$ as $n \to \infty$. In the oscillatory regime, $n^{\tilde{Q}}$ involves $\cos(\lVert\vec Q\rVert \log n)$ and $\sin(\lVert\vec Q\rVert \log n)$, which oscillate. The series may converge conditionally or may not converge at all, depending on $\tilde{Q}$.</p>
-<p>In the nilpotent regime, $n^{\tilde{Q}} = n^{Q_t}(e_t + \log n \cdot \vec Q)$, and the series converges absolutely if $\operatorname{Re} Q_t > 1$.</p>
+<p>In the nilpotent regime, $n^{\tilde{Q}} = n^{Q_t}(e_t + \log n \cdot \vec Q)$, and the series converges absolutely if $\operatorname{Re} Q_t &gt; 1$.</p>
 <h3 id="what-is-known_1">What Is Known</h3>
 <p>Almost nothing is known about the biquaternion zeta function. The following are open problems.</p>
 <h3 id="the-open-questions_1">The Open Questions</h3>
@@ -302,7 +302,7 @@ $$</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
 <p>$$
-P(\tilde{Q}, \tilde{Q}_2) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde{Q}_2\|^4}, \qquad \|\tilde{Q}\| < r, \quad \|\tilde{Q}_2\| = r.
+P(\tilde{Q}, \tilde{Q}_2) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde{Q}_2\|^4}, \qquad \|\tilde{Q}\| &lt; r, \quad \|\tilde{Q}_2\| = r.
 $$</p>
 <p>It is the kernel that solves the Dirichlet problem for the d'Alembertian on the ball. It is the biquaternion analogue of the Poisson kernel in complex analysis.</p>
 <h3 id="the-greens-function">The Green's Function</h3>

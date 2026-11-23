@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search for manifestations of spin-torsion coupling — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Search for manifestations of spin-torsion coupling - 2212.13871.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="search-for-manifestations-of-spin-torsion-coupling"><strong>Search for manifestations of spin-torsion coupling</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.13871 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova, Pavel Andreev, Yuri N. Obukhov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 28 September 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - Search for manifestations of spin-torsion coupling - 2212.13871-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Search for manifestations of spin-torsion coupling - 2212.13871.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Search for manifestations of spin-torsion coupling - 2212.13871.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Works out the axial-torsion sector of Poincaré gauge gravity with a general Yang–Mills-type Lagrangian, in interaction with the electromagnetic field. Two of the torsion field equations are solved in form: the "electric component is sourced by the magnetic helicity density $A\cdot B$, the magnetic" component by the electromagnetic spin density. Modified Maxwell equations follow, and a linearly polarised plane wave crossing a uniform axial torsion is shown to rotate its plane of polarisation — a Faraday effect. Repeating an existing radio-galaxy analysis then gives a bound on the cosmic torsion. The Faraday angle and the bound are the results; the bound is imported.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-field-equations">The field equations</h3>
+<p>In the class of models with $b_3=2b_1$ the axial pseudovector sector decouples, and the paper argues this "th b3 = 2b1 yields λ = 0 for the axial pseudovector field, and so the stability, unitarity, and causality issues are safely avoided. Assuming". The torsion and the Maxwell field are each split into "electric" and "magnetic" parts, $E_a=f_{a0}$, $B_a=\frac12\epsilon_{abc}f_{bc}$ for the torsion (paper 2.23) and $E_a=F_{a0}$, $B_a=\frac12\epsilon_{abc}F_{bc}$ for the field (paper 2.24) — the same letters for both, which the paper carries through. The torsion equation becomes $$\nabla\cdot E+\mu^2\varphi-\lambda\partial_t(\partial\alpha)=-\frac{\chi}{\hbar\mu_0}A\cdot B$$ (paper 2.25), with the companion $\nabla\times B$ equation carrying the same $\mu^2\alpha+\lambda\nabla(\partial\alpha)$ terms and the source $-\frac{\chi\varepsilon_0}{\hbar}(\varphi B+E\times A)$ (paper 2.26; the extraction damages the time-derivative coefficient of that line, so it is not transcribed here). Taking divergences gives $$\eta^{ijkl}F_{ij}F_{kl}=0,\qquad \eta^{ijkl}F_{ij}f_{kl}=0\ \Rightarrow\ E\cdot B=0,\quad E_f\cdot B_f+E\cdot B=0$$ (paper 2.28–2.29, where the subscripted pair is the torsion's and the plain pair the Maxwell field's):"only crossed-field configurations are actually allowed". The modified Maxwell equations are $$\nabla\cdot E=2\chi c\,\alpha\cdot B-\chi c\,A\cdot B,\qquad \nabla\times B-\frac{1}{c^2}\partial_tE=\frac{2\chi}{c}(\varphi B+E\times\alpha)-\frac{\chi}{c}(\varphi B+E\times A)$$ (paper 2.30–2.31). </p>
+<h3 id="the-faraday-effect">The Faraday effect</h3>
+<p>For a wave along $z$ with $\alpha$ along $z$, the two circular polarisations travel with $$k_\pm=\frac{\omega}{c}\pm\chi\alpha,\qquad\text{equivalently}\qquad k_z=k_\pm=\frac{\omega}{c}\pm\chi\alpha\cos\theta$$ (paper 3.20), and the polarisation angle over a distance $h$ is $$\gamma=\chi\alpha_\parallel h=\chi\alpha\cos\theta\,h$$ (paper 3.19), with the form $\gamma=\chi\phi h/c$ (paper 3.16) in the pseudoscalar case."when the axial vector field is orthogonal to the direction of propagation of the electromagnetic wave α ⊥ k, there will be no rotation of the polarization plane. This generalized". The rotated field itself is $$E=E_0\cos[\omega(t-z/c)]\bigl\{\cos(\chi\alpha_\parallel z)e_x-\sin(\chi\alpha_\parallel z)e_y\bigr\}$$ (paper 3.17), to first order in $\chi$. </p>
+<h3 id="the-bound">The bound</h3>
+<p>"taking the observational data collected in Table I of Reference [65], and repeating verbatim the computations by replacing the Lorentz-violating parameter with the axial torsion pseudovector, we establish the strong bounds on the torsion’s magnitude: |T | . 8.7 × 10−27 m−1 . This turns out". The paper notes this is "significantly lower than the limits found from the analysis of the spin–torsion coupling effects in the fermion sector". </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-rotation-angle-linear-in-the-coupling-and-in-the-path">1. A rotation angle linear in the coupling and in the path</h3>
+<p><strong>The idea.</strong> $\gamma=\chi\alpha_\parallel h$ is the whole observable: one number per unit length, proportional to the torsion component along the line of sight. A <strong>formula</strong>, and the simplest bridge between a geometric field and a polarisation measurement. </p>
+<p><strong>What it would add.</strong> A quantitative form for the corpus's modified Maxwell equations, which are written with the torsion present but with no propagation consequence drawn. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The corpus's Maxwell article keeps the torsion out of the constitutive relations; importing $\gamma$ requires the axial coupling term $\chi\,A\cdot B$ in the Lagrangian, which is a new parameter the corpus does not carry, and $\chi$ is bounded only by the same observation it would explain. </p>
+<h3 id="2-the-torsion-sourced-by-helicity-and-by-electromagnetic-spin">2. The torsion sourced by helicity and by electromagnetic spin</h3>
+<p><strong>The idea.</strong> The two torsion equations have different sources: the "electric component by $A\cdot B$, a topological density, and the magnetic" component by the spin density of the field. A <strong>mechanism</strong> for generating torsion from light. </p>
+<p><strong>What it would add.</strong> A source term the corpus's torsion article lacks: there the torsion is an independent field with a spin source, and here it has a photonic source with a stated coefficient. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> $A\cdot B$ is gauge-dependent unless the field is periodic or the integral is over a closed region, so the source is well defined only for the configurations the paper actually solves; and the corpus's programme treats the torsion as geometric, not as a dynamical field with a mass $\mu$ and a coupling $\chi$. </p>
+<h3 id="3-a-bound-on-torsion-expressed-per-metre">3. A bound on torsion expressed per metre</h3>
+<p><strong>The idea.</strong> $|T|\lesssim8.7\times10^{-27}\ \mathrm{m}^{-1}$, i.e. a torsion whose inverse is larger than the observable universe by many orders. A <strong>number</strong>. </p>
+<p><strong>What it would add.</strong> A scale at which any torsion effect in the corpus must sit, if the corpus ever claims one. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>. </p>
+<p><strong>What stands in the way.</strong> The number is a re-reading of a Lorentz-violation fit,"repeating verbatim the computations", so its status is a bound inherited from another model's analysis, not a measurement of torsion; the paper says so and the corpus's data-boundary rule would require the same sentence. </p>
+<h3 id="4-only-crossed-field-configurations-are-admitted">4. Only crossed field configurations are admitted</h3>
+<p><strong>The idea.</strong> Taking the divergence of the torsion and Maxwell equations of motion, both of which are identically divergence-free, yields $\eta^{ijkl}F_{ij}F_{kl}=0$ and $\eta^{ijkl}F_{ij}f_{kl}=0$, i.e. $E\cdot B=0$ for the Maxwell field and $E_f\cdot B_f+E\cdot B=0$ across the two. A <strong>formula</strong> that turns the field equations into a constraint on the configurations. </p>
+<p><strong>What it would add.</strong> A structural statement of the kind the corpus's Maxwell article produces from the algebra rather than from an action: here the constraint comes from the field equations, and it says a torsion-carrying region cannot host a non-orthogonal field pair. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The derivation uses $\mu^2=0$ and $\lambda=0$,"the special class of stable and unitary models", so the constraint is not general; and it is a necessary condition read off the divergence of the field equations, not a restriction derived from an action. The paper's own qualifier is that this class "includes wave configurations", which is why the constraint costs the propagation analysis nothing.</p>
+<p>The rank is a judgement: the rotation angle first, because it is the observable; the two sources second, because they say what makes torsion; the constraint on configurations third, because its scope is declared narrow; the bound last, because it is borrowed.</p>
+<p>Twenty-one pages: the Poincaré gauge Lagrangian, the axial sector, the torsion field equations, the modified Maxwell equations, the dispersion relations, the two polarisation cases, the Faraday angles, the astrophysical bound, and an appendix on the gauge dynamics.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composite Model of Quarks and Leptons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Composite Model of Quarks and Leptons - 2106.02464.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="composite-model-of-quarks-and-leptons"><strong>Composite Model of Quarks and Leptons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2106.02464v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 June 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Composite Model of Quarks and Leptons - 2106.02464-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Composite Model of Quarks and Leptons - 2106.02464.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Composite Model of Quarks and Leptons - 2106.02464.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes that quarks and leptons are three-body bound states of five preons, two of one kind and three of another, transforming as $\mathbf{5}$ of an $SU(5)$ flavour group and $\mathbf{3}$ of an $SU(3)$ family group. A chirality selection rule keeps only the wanted combinations, so the unwanted $(10,1)$ and $(1,1)$ states of the earlier field-theoretic version do not appear. The family number three is then not assumed but counted from the preon content, and the quarks and leptons sit in $(10+\bar5,3)$ of $SU(5)\times SU(3)$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"Nowadays, we know that hadrons (baryons and mesons) are composite states composed of quarks, so that 'elementary particles' are quarks and leptons. We know that quarks and leptons are described as $(10+\bar5)$ of $SU(5)_{\rm GUT}$."</p>
+<h3 id="the-preons">The preons</h3>
+<p>Quarks and leptons "are given by three body states which are composed of constituents $(w_1,w_2,c_1,c_2,c_3)$" — the $w$ fields carrying $SU(5)$ index $\mathbf{5}$ and the $c$ fields carrying the family index $\mathbf{3}$.</p>
+<h3 id="the-selection-rule">The selection rule</h3>
+<p>"In this paper, we adopt a composite picture, and we put a selection rule on the chirality in the composite states", which removes the "unwelcome states $(10,1)$ and $(1,1)$ which correspond to the states $(\bar5\bar5\bar5)$ and $(333)$".</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"if we take that number of families is three, we can easily accept the picture that the quarks and leptons are members of $(10+\bar5,3)_L$ of $SU(5)_{\rm GUT}\times SU(3)_{\rm family}$." And: "In this model, we would like to emphasize that family number is three as seen in Eq.(2.6)."</p>
+<h3 id="what-it-still-needs">What it still needs</h3>
+<p>"Of course, in this composite model, it is important that those preons are confined by the $SU(3)$ hyper-color." On the GUT: "Regrettably, at present, we do not have any evidence for the proton decay."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-family-number-counted-from-preon-content">1. Family number counted from preon content</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: take the family index to be carried by three identical constituents, and the number of families follows from the number of ways to fill the state rather than being put in by hand.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code> treats three generations as the lowest rungs of one ladder and derives the spacing of masses from a potential, with the number three assumed at the outset. Here the three is a counting result, which is the one thing the ladder cannot supply. The article's opening would gain a sentence it does not have: a reason for three rungs.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code>, in the section that fixes the number of generations.</p>
+<p><strong>What stands in the way.</strong> The counting works only inside a model with five new confined constituents and a chirality rule that is imposed, not derived; and no mass matrix is computed, so nothing connects to the ladder's spacings. First, because a reason for three is the corpus's standing gap.</p>
+<h3 id="2-a-composite-route-to-the-same-math35-content">2. A composite route to the same $\mathbf{10}+\bar5$ content</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: if quarks and leptons are three-body states, the $SU(5)$ assignment becomes a statement about constituents rather than about the particles themselves, and the anomaly bookkeeping changes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.md</code> derives the hypercharges of one generation from anomaly cancellation on the fundamental fields. If the fields are composite, those conditions apply to preons, and the question whether the composite spectrum is anomaly free becomes separate and unanswered.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.md</code>, in the discussion of anomalies.</p>
+<p><strong>What stands in the way.</strong> The paper does not compute anomalies for the preon content, so the question can only be posed. Second.</p>
+<h3 id="3-a-hyper-colour-confinement-scale-as-the-only-new-parameter">3. A hyper-colour confinement scale as the only new parameter</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: one confinement scale, replacing the Yukawa couplings, sets the composite masses.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/eight-masses-from-four-numbers.md</code> records fits in which eight masses come from four measured numbers; a composite model would reduce the inputs to a scale and a set of Clebsch factors.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/eight-masses-from-four-numbers.md</code>, in the discussion of what the fits assume about the origin of mass.</p>
+<p><strong>What stands in the way.</strong> No spectrum is computed, so there is no second number to compare. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

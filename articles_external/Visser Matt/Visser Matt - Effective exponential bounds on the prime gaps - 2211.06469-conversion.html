@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective exponential bounds on the prime gaps — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective exponential bounds on the prime gaps - 2211.06469.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-exponential-bounds-on-the-prime-gaps"><strong>Effective exponential bounds on the prime gaps</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2211.06469v1 [math.NT]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 11 November 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Effective exponential bounds on the prime gaps - 2211.06469-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective exponential bounds on the prime gaps - 2211.06469.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective exponential bounds on the prime gaps - 2211.06469.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A large literature gives effective exponential bounds on the first Chebyshev function. This paper converts those bounds into explicit bounds on the prime gaps, that is, on the ratio of a gap to the prime before it. The conversion is direct once the Chebyshev function is bounded above and below. The result is a family of explicit inequalities with stated thresholds, some available decades ago and some relying on recent numerical work.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-inputs">The inputs</h3>
+<p>"Over the last 50 years a large number of effective exponential bounds on the first Chebyshev function $\vartheta(x)$ have been obtained. Specifically we shall be interested in effective exponential bounds of the form"</p>
+<p>$$|\vartheta(x)-x|&lt;a\sqrt{x}\,(\ln x)^b\exp\left(-c\sqrt{\ln x}\right);\qquad (x\ge x_0).$$</p>
+<h3 id="what-the-paper-does_1">What the paper does</h3>
+<p>"Herein we shall convert these effective bounds on $\vartheta(x)$ into effective exponential bounds on the prime gaps $g_n=p_{n+1}-p_n$."</p>
+<h3 id="the-form-of-the-result">The form of the result</h3>
+<p>"Specifically we shall establish a number of effective exponential bounds of the form"</p>
+<p>$$\frac{g_n}{p_n}&lt;\frac{2a\,(\ln p_n)^b\exp\left(-c\sqrt{\ln p_n}\right)}{1-\dots};\qquad (p_n\ge x_*).$$</p>
+<h3 id="the-simplest-example">The simplest example</h3>
+<p>$$\frac{g_n}{p_n}&lt;\frac{\exp\left(-\sqrt{\ln p_n}/3\right)}{1-\tfrac12\exp\left(-\sqrt{\ln p_n}/3\right)};\qquad (p_n\ge2).$$</p>
+<h3 id="the-tighter-example">The tighter example</h3>
+<p>$$\frac{g_n}{p_n}&lt;\frac{4926999\exp\left(-\sqrt{\ln p_n}\right)}{\dots};\qquad (p_n\ge\exp 10^6).$$</p>
+<h3 id="the-assessment">The assessment</h3>
+<p>"Some of these effective bounds could in principle have been deduced almost 50 years ago. Others rely on recent numerical work from the previous decade."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-transcription-between-two-bounds">1. Transcription between two bounds</h3>
+<p><strong>The idea.</strong> A bound on one arithmetic function can be rewritten as a bound on another with no new ideas.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats obstructions as fixed. This paper shows that results move between forms cheaply, so an apparent gap may be a missing transcription. The catalogue should look for those before declaring impossibility.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> The example is arithmetic and remote from the framework. Ranked first, because it is a general lesson about catalogues.</p>
+<h3 id="2-explicit-constants-change-the-meaning">2. Explicit constants change the meaning</h3>
+<p><strong>The idea.</strong> An asymptotic statement and an explicit inequality are different claims, and only the second can be checked numerically.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> cares about claims that can be checked. This paper supplies the standard: constants and a threshold.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The application is to number theory. Ranked second.</p>
+<h3 id="3-old-results-newly-assembled">3. Old results, newly assembled</h3>
+<p><strong>The idea.</strong> Half the bounds could have been written decades ago; the rest need recent computation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use the distinction between a missing idea and a missing calculation, which this paper illustrates concretely.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is an observation about provenance. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

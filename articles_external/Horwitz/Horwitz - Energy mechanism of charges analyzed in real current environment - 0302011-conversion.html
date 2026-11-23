@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Mechanism of Charges Analyzed in Real Current Environment — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Energy mechanism of charges analyzed in real current environment - 0302011.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="energy-mechanism-of-charges-analyzed-in-real-current-environment"><strong>Energy Mechanism of Charges Analyzed in Real Current Environment</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0302011v1 [physics.acc-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. Ianconescu, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 February 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Energy mechanism of charges analyzed in real current environment - 0302011-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Energy mechanism of charges analyzed in real current environment - 0302011.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-local-thermal-state-of-a-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Energy mechanism of charges analyzed in real current environment - 0302011.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Analyses what actually happens energetically when a charge radiates, using a dipole antenna as the laboratory. The radiation is two energy transfers, not one: from the source into the charges, and from the charges into the surrounding space. The two are out of phase, so the antenna's mass oscillates — at twice the radiation frequency — and the mass transiently rises during absorption and falls during emission. The self force is then not a force on a point charge but the effect of the perturbed neighbouring charges in the current.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"We analyze in this work the energy transfer process of accelerated charges, the mass fluctuations accompanying this process, and their inertial properties. Based on a previous work, we use here the dipole antenna, which is a very convenient framework for such analysis."</p>
+<h3 id="the-two-processes">The two processes</h3>
+<p>"We show that the radiation process can be viewed by two energy transfer processes: one from the energy source to the charges and the second from the charges into the surrounding space. Those processes, not being in phase, result in mass fluctuations. The same principle is true during absorption."</p>
+<h3 id="the-transient">The transient</h3>
+<p>In the transient period between absorption and radiation, "during absorption the mass of the antenna increases by the amount of energy absorbed, and during the radiation period the mass of the antenna decreases by the amount of energy radiated."</p>
+<h3 id="the-reinterpretation-of-the-self-force">The reinterpretation of the self force</h3>
+<p>"We showed here that the 'self' retarded field of a charge, acting on its neighbor, generates for a radiating antenna a 'self' voltage which, divided by the current results in the radiation resistance (R)".</p>
+<p>"We showed also that the radiation process of an antenna consists of two energy transfer processes", and that the mass of the antenna "fluctuates at twice the radiation frequency."</p>
+<h3 id="mass-as-an-observable">Mass as an observable</h3>
+<p>"Any mass $M$ that we observe from an accelerating system will appear to us as being driven by an imaginary force" — imaginary only in the sense that the observer is not inertial, but observed as a real force nonetheless. Hence: "if the dipole would not have EM mass, we would not have observed the force."</p>
+<h3 id="the-philosophical-ending">The philosophical ending</h3>
+<p>"Another interesting conclusion is that bound charges, always appearing in nature as dipoles, are a manifestation of energy (inertia)."</p>
+<p>"In a philosophical way, one may say that charge itself can be considered as a manifestation of the interaction process."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-fluctuates-at-twice-the-drive-frequency">1. Mass fluctuates at twice the drive frequency</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: a radiating system's mass is not constant. Because emission is two out-of-phase energy transfers, the mass oscillates at $2\omega$, and the oscillation is a measurable property of the antenna, not a theoretical artefact.</p>
+<p><strong>What it would add.</strong> The corpus's mass articles treat mass as fixed per layer or as a variable set by a chemical potential. This gives a concrete, classical, periodically varying mass with a definite frequency — a third kind of mass variation, neither thermodynamic nor off-shell quantum. It is a clean example for the corpus's claim that mass is not a fundamental label, and it comes with a frequency that could be looked for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> The effect is derived in a macroscopic antenna, with $v\ll c$ and many charges; whether a single charge's mass oscillates in the same way is exactly what the paper says it cannot establish.</p>
+<h3 id="2-the-self-force-is-the-force-of-the-neighbouring-charges">2. The self force is the force of the neighbouring charges</h3>
+<p><strong>The idea.</strong> A <strong>reinterpretation</strong>: the radiation reaction on a charge is not a force a charge exerts on itself. It is the force exerted by the surrounding current distribution that the charge has perturbed. In a wire, this is literally the case; for a single charge, the notion is an extrapolation.</p>
+<p><strong>What it would add.</strong> The corpus's radiation-reaction articles (the off-shell ones) get the reaction term from a Green's function and a fifth field, which is a field-theoretic answer. This is an alternative with a physical picture: reaction is a collective effect of the perturbed neighbours. The two explanations make different predictions about isolated charges versus currents, and stating them side by side is the only way to see that they are different explanations rather than two derivations of one result.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The picture is drawn from a macroscopic antenna with many charges; the paper never returns from the collective to the isolated single charge, so the answer to the textbook paradox is a dissolution rather than a solution.</p>
+<h3 id="3-charge-as-a-manifestation-of-interaction">3. Charge as a manifestation of interaction</h3>
+<p><strong>The idea.</strong> A <strong>position</strong>: an antenna is neutral when nothing is happening. Charges exist all the time but cancel. What we call charge appears as a dipole during interaction, and it appears as a mass fluctuation. Charge is therefore a relational property, not an attribute.</p>
+<p><strong>What it would add.</strong> The corpus's charge articles treat charge as a coupling constant or an eigenvalue of a generator. This proposes that charge has no independent existence — it is what an interaction looks like from outside. That is a strong metaphysical claim, and it is the kind of claim the corpus's algebraic articles could test: is there a formulation in which the charge operator vanishes on the non-interacting state?</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is explicitly "philosophical" in the paper's own words, and it is drawn from a macroscopic antenna, where cancellation of charge is literal.</p>
+<p>The rank: the mass oscillation first, because it is a computable effect; the neighbour-force reading second, because it is an alternative mechanism; the relational charge last, because it is a position.</p>
+<p>The remaining items in one line each: the radiation resistance of the half-wave dipole, $R=80\,\Omega$, which is the check that the method reproduces known antenna theory; the short-dipole result $R=80\pi^2(L/\lambda)^2\,\Omega$, which is the case the argument needs; and the Larmor formula recovered as the average of the self power, which ties the account to the standard one.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

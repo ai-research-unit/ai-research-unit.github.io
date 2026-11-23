@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmology in Painlevé–Gullstrand coordinates — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmology in Painleve-Gullstrand coordinates - 2207.08375.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmology-in-painlevegullstrand-coordinates"><strong>Cosmology in Painlevé–Gullstrand coordinates</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2207.08375v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Rudeep Gaur, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 August 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>37 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmology in Painleve-Gullstrand coordinates - 2207.08375-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmology in Painleve-Gullstrand coordinates - 2207.08375.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmology in Painleve-Gullstrand coordinates - 2207.08375.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper rewrites standard cosmological models in Painlevé–Gullstrand coordinates, where space is not comoving and the slices are chosen so that infalling rays behave simply. It gives several equivalent line elements for flat FLRW, three for de Sitter, and six for Kottler, each making a different feature simple: the Hubble flow, the light cones, or the spatial slices. The authors are explicit that nothing physical changes, and argue that some questions, particularly about horizons, are easier to pose in these coordinates. They also present McVittie spacetime in the same style.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"Cosmology is most typically analyzed using standard co[moving coordinates, where] the galaxies are (on average, up to presumably small p[eculiar velocities]) [at rest,] while 'space' is expanding. But this is merely a speci[fic choice of coordinates. It is therefore] important to realise that for certain purposes other, [equally valid] coordinate choices might also prove useful and informa[tive about] the underlying physics."</p>
+<h3 id="what-is-done">What is done</h3>
+<p>"herein we shall [consider] FLRW cosmology but in Painlevé–Gullstrand coordinates [which are] very explicitly not co-moving: 'space' is now n[ot expanding, though the] distance between galaxies is still certainly in[creasing]."</p>
+<h3 id="the-benefit">The benefit</h3>
+<p>"[Painlevé–]Gullstrand coordinates provide an alternate vi[ew of the metric and] the symmetries thereof, and also makes it somew[hat easier to discuss] horizons."</p>
+<h3 id="the-inventory">The inventory</h3>
+<p>"We have explored three specific ways of rewriting the generic $k=0$ FLRW cosmologies ... The three we have explored either make the Hubble flow simple, or make the light cones simple, or make the spatial slices simple."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"But there is no free lunch; the underlying physics is invariant."</p>
+<h3 id="the-further-cases">The further cases</h3>
+<p>"We have similarly considered three versions of de Sitter space ... either making the spacetime manifestly static, or making the spatial slices flat, or making the connection to generic FLRW manifest. For the Kottler spacetime we have developed six different line elements ... focussing on different aspects of the physics."</p>
+<h3 id="the-longer-aim">The longer aim</h3>
+<p>"With a longer view, we hope that investigating [Painlevé–Gullstrand] coordinates might eventually provide a better f[ramework for studying] deviations from idealized FLRW spacetimes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-horizons-are-clearer-in-the-right-chart">1. Horizons are clearer in the right chart</h3>
+<p><strong>The idea.</strong> In comoving coordinates a cosmological horizon is implicit; in Painlevé–Gullstrand it is visible as a place where the shift exceeds the lapse.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that horizons are global objects. This paper shows that a slice choice makes a horizon look local and explicit, which is a partial answer to the article's difficulty: the global object can be exhibited locally in a suitable chart. That is a route the article does not consider.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The chart does not create the horizon; it only displays it, so the global information is still needed to know which chart is valid. Ranked first, because it addresses the article's central obstacle directly.</p>
+<h3 id="2-many-line-elements-one-geometry">2. Many line elements, one geometry</h3>
+<p><strong>The idea.</strong> Six line elements for Kottler, all equivalent, each suited to a different question.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds one metric from a frame field and inherits its chart. This paper shows that a physical claim should be stated in a form that survives the choice, and gives a clean example of what that looks like.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> It is a methodological point illustrated in a standard setting. Ranked second.</p>
+<h3 id="3-flrw-plus-infall">3. FLRW plus infall</h3>
+<p><strong>The idea.</strong> The Painlevé–Gullstrand form interpolates between a static exterior and an expanding background, which is what the McVittie family does.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats FLRW and an embedded object separately. A chart that holds both at once is exactly what combining them requires, and the article does not have one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the carried metric.</p>
+<p><strong>What stands in the way.</strong> The interpolation needs a mass function, which is a source the framework lacks. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

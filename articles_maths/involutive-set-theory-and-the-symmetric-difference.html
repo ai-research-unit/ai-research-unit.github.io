@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Involutive Set Theory and the Symmetric Difference — Biquaternion Universe</title>
-  <meta name="description" content="On the subsets of a set two structures meet: the symmetric difference $A \triangle B = (A \setminus B) \cup (B \setminus A) \mathcal{P}(X)$ an abelian…">
+  <meta name="description" content="On the subsets of a set two structures meet: the symmetric difference, which makes an abelian group of exponent two, and the complement, an…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,8 +71,7 @@
       <div class="article-body">
         <h1 id="involutive-set-theory-and-the-symmetric-difference"><strong>Involutive Set Theory and the Symmetric Difference</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>On the subsets of a set $X$ two structures meet: the <strong>symmetric difference</strong> $A \triangle B =
-(A \setminus B) \cup (B \setminus A)$, which makes $\mathcal{P}(X)$ an abelian group of exponent two,
+<p>On the subsets of a set $X$ two structures meet: the <strong>symmetric difference</strong> $A \triangle B = (A \setminus B) \cup (B \setminus A)$, which makes $\mathcal{P}(X)$ an abelian group of exponent two,
 and the <strong>complement</strong> $A \mapsto X \setminus A$, an order-reversing involution that is a translation of
 that group. With the
 intersection as a second, multiplicative operation the three together make $\mathcal{P}(X)$ a
@@ -129,8 +128,7 @@ Boolean algebra on the same power set:</p>
 \qquad X \triangle A = \neg A\;} .
 $$</p>
 <p><strong>Proof.</strong> The first identity is the complement of the second rewriting of the symmetric difference
-above; the second holds because $A \triangle (A \cap B) = A \setminus B$; the third is $X \triangle A =
-X \setminus A$, since $A \subseteq X$.</p>
+above; the second holds because $A \triangle (A \cap B) = A \setminus B$; the third is $X \triangle A = X \setminus A$, since $A \subseteq X$.</p>
 <h2 id="the-complement-as-the-involution">The Complement as the Involution</h2>
 <p><strong>Theorem.</strong> The complement $\neg A = X \setminus A$ is the translation by $X$ in the group
 $(\mathcal{P}(X), \triangle)$, that is, $\neg A = X \triangle A$; it is an involution, $\neg\neg A = A$.
@@ -144,9 +142,7 @@ is, the composite of the group automorphism $A \mapsto -A$, which is the identit
 by $X$.</p>
 <p><strong>Proof.</strong> $X \triangle A = X \setminus A$ because $A \subseteq X$, which is the definition of the
 complement; translating twice by the same element of a group of exponent two is the identity; and the
-computation of the group law is $X \triangle A \triangle B = \neg A \triangle B$ on one side and $(A
-\triangle X) \triangle (B \triangle X) = A \triangle B$ on the other, using $X \triangle X =
-\emptyset$. An affine map of an abelian group is a translation composed with a homomorphism, and here
+computation of the group law is $X \triangle A \triangle B = \neg A \triangle B$ on one side and $(A \triangle X) \triangle (B \triangle X) = A \triangle B$ on the other, using $X \triangle X = \emptyset$. An affine map of an abelian group is a translation composed with a homomorphism, and here
 the homomorphism is the identity because $-A = A$.</p>
 <p>The complement is therefore the <strong>involution</strong> of the order, an order-reversing map of order two, and
 it is a translation of the group, not an automorphism of it; its fixed part is trivial as soon as $X$
@@ -156,11 +152,8 @@ $(\mathcal{P}(X), \triangle)$ the <strong>additive</strong> involution is the id
 own inverse. The complement is not an involution of the multiplicative structure: it satisfies
 $\neg(A \cap B) = \neg A \cup \neg B$, which differs from $\neg A \cap \neg B = \neg(A \cup B)$ whenever
 $A \cup B \neq X$.</p>
-<p><strong>Proof.</strong> $A = \neg A$ would give $A = X \setminus A$, hence $A \subseteq X \setminus A$ and $A \cap A
-= \emptyset$, so $A = \emptyset$ and then $X = \emptyset$. The additive involution is the identity
-because $A \triangle A = \emptyset$ means $-A = A$. For the last statement, if $A \cup B \neq X$ pick $x
-\notin A \cup B$; then $x \in \neg A \cap \neg B = \neg(A \cup B)$ but $x \notin \neg A \cup \neg B =
-\neg(A \cap B)$.</p>
+<p><strong>Proof.</strong> $A = \neg A$ would give $A = X \setminus A$, hence $A \subseteq X \setminus A$ and $A \cap A = \emptyset$, so $A = \emptyset$ and then $X = \emptyset$. The additive involution is the identity
+because $A \triangle A = \emptyset$ means $-A = A$. For the last statement, if $A \cup B \neq X$ pick $x \notin A \cup B$; then $x \in \neg A \cap \neg B = \neg(A \cup B)$ but $x \notin \neg A \cup \neg B = \neg(A \cap B)$.</p>
 <p><strong>Corollary.</strong> The complement is an anti-automorphism of the intersection and the union, and it is a
 translation, not an automorphism, of the symmetric difference; it converts the ring multiplication
 $A \cap B$ into the "dual" multiplication $A \star B = \neg(\neg A \cap \neg B) = A \cup B$.</p>
@@ -189,8 +182,7 @@ part is trivial.</p>
 <h2 id="summary">Summary</h2>
 <p>The symmetric difference makes the power set an abelian group of exponent two, and with the intersection
 it makes a Boolean ring whose zero is $\emptyset$ and whose identity is $X$; the dictionary
-$A \cup B = A \triangle B \triangle (A \cap B)$, $A \setminus B = A \triangle (A \cap B)$ and $\neg A =
-X \triangle A$ identifies the ring with the Boolean algebra on the same power set.</p>
+$A \cup B = A \triangle B \triangle (A \cap B)$, $A \setminus B = A \triangle (A \cap B)$ and $\neg A = X \triangle A$ identifies the ring with the Boolean algebra on the same power set.</p>
 <p>The complement is the involution of the order, the translation by $X$ in the group of exponent two; it
 is an anti-automorphism of the intersection and the union and a translation, not an automorphism, of
 the symmetric difference, and its fixed part is trivial for a nonempty $X$. Every element is its own

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On burning a lump of coal — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On burning a lump of coal - 1511.01162.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-burning-a-lump-of-coal"><strong>On burning a lump of coal</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1511.01162v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ana Alonso-Serrano, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 November 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - On burning a lump of coal - 1511.01162-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On burning a lump of coal - 1511.01162.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On burning a lump of coal - 1511.01162.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Burning coal is a unitary process, so no information is lost. The authors compute how much entropy and how much correlation the emitted photons carry. Using the Planck spectrum and counting photon statistics, they find about $3.9\pm2.5$ bits per emitted photon, split evenly between thermodynamic entropy and hidden information. The point is that even an ordinary process has a quantifiable entropy budget. They present the calculation as a warm-up for the Hawking evaporation problem.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"the photons emitted by burning a lump of coal ... lead to an approximately Planck emission spectrum with an average entropy/information transfer of approximately $3.9\pm2.5$ bits per emitted photon."</p>
+<h3 id="what-it-depends-on">What it depends on</h3>
+<p>"This quantitative and qualitative result depends only on the underlying unitarity of the quantum physics of burning, combined with the statistical mechanics of blackbody radiation."</p>
+<h3 id="the-point">The point</h3>
+<p>"the utterly standard and unitarity preserving process of burning something (in fact, burning anything) nevertheless has an associated entropy/information budget ... is a severely under-appreciated feature of standard quantum statistical physics."</p>
+<h3 id="the-number">The number</h3>
+<p>$$\langle \hat S^2\rangle=\frac{\pi^4}{30\,\zeta(3)\ln 2}\approx 3.897 \ \text{bits per photon} \qquad (paper\ 4.1)$$</p>
+<h3 id="the-elementary-status">The elementary status</h3>
+<p>"That the blackbody photons arising from burning a lump of coal, (a purely unitary quantum process), carry both thermodynamic entropy and 'hidden information' (ie, correlations) is an elementary and unavoidable consequence of quite standard quantum statistical mechanics."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"our longer term goal is to apply these considerations to the Hawking evaporation process in black holes"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-correlations-compensate-entropy">1. Correlations compensate entropy</h3>
+<p><strong>The idea.</strong> A unitary process can move entropy into correlations, and the two halves can be counted separately.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> defines an entropy functional but not its correlation partner. A worked split into coarse-grained entropy and fine-grained information is the bookkeeping the target is missing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, in the discussion of the functional.</p>
+<p><strong>What stands in the way.</strong> The split is computed for a photon gas. Ranked first, because it supplies a partner quantity.</p>
+<h3 id="2-a-number-per-photon">2. A number per photon</h3>
+<p><strong>The idea.</strong> The budget has a value, about four bits per photon, not just a formal identity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code> treats distinguishability abstractly. A concrete typical value gives that formalism a scale.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code>, in the discussion of examples.</p>
+<p><strong>What stands in the way.</strong> The value is for one process. Ranked second.</p>
+<h3 id="3-a-rehearsal-for-hawking">3. A rehearsal for Hawking</h3>
+<p><strong>The idea.</strong> The same counting can be run on Hawking radiation, where the answer is contested.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives the flux without an information budget. Adding one would make the framework's account comparable with the information debate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the flux.</p>
+<p><strong>What stands in the way.</strong> The Hawking case is not worked here. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

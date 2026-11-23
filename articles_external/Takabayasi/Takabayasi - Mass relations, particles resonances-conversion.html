@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass Relations for Strongly Interacting Particles and Resonances. II — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass relations, particles resonances.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mass-relations-for-strongly-interacting-particles-and-resonances-ii"><strong>Mass Relations for Strongly Interacting Particles and Resonances. II</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>29</strong> (1963) 474, No. 3; dated 21 January 1963</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Mass relations, particles resonances-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass relations, particles resonances.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass relations, particles resonances.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Adds two empirical relations to the mass scheme of the preceding note and shows that, together with the Gell-Mann relation, they over-determine the baryon mass ratios: three relations, three ratios, agreement to $0.7\%$. It then shows that four low-lying resonances — $Y_0^{*}$, $Y_1^{*}$, $N^{*}_{3/2}$ and $\Xi^{*}$, ten isospin components in all — satisfy the same two shapes of relation, to $0.1\%$, which is taken as evidence that they form one spin-$\tfrac32$ family, for which a four-parameter mass formula is written that reproduces their masses to within several MeV.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="three-relations-three-ratios">Three relations, three ratios</h3>
+<p>"sfy the after referred to as I) we have given a mass relation analogous to (2): consistent set of relations which determine the mass ratios of all stable baryons and m(N3~2)2+m(E*)2=m(n)2+m(n)2, well-established mesons. In this note we (5) point out other simple relations for baryon masses as well as those for baryon reson- with an accuracy of about 0."</p>
+<p>"es we 2(m(N3~2) +m(E*)) =mCYV +3m(yt) may assume a relation analogous to Eq. (1) of I: (6) (1) is also satisfied." — relation (1) — "as well as another one" — relation (2). "ors about 0.4% and 1%, respectively. dences of these resonances, see the reports of They are not strictly consistent with Eq. (5) B. P. Gregory and G. A. Snow in Proc. Int. of I, which we now express in the forIll Can!" (3), with an isospin-dependent term</p>
+<p>$$
+m(Y,T)=\tfrac{m_\pi}{2}\Big\{a-Y+\ \cdots\Big(T^{2}-\tfrac14Y^{2}\Big)\Big\},
+$$</p>
+<p>"According to (3) the relation (2) is valid for the approximation where a-4 zlO-3 is neglected compared with 1. On the other hand we have Gell-Mann's relation2 ) (4) which is fulfilled by (3)." (4), "which is fulfilled by (3). We" Then: "We assume that the relations (1) and (2) have their (yet unknown) theoretical foundations and are not simply accidental. Then the set of relations (1), (2), and (4) are sufficient to determine the mass ratios Mass Relations of baryons.", giving ratios "in agreement with observation within an University of Nagoya error of 0."</p>
+<h3 id="the-resonances">The resonances</h3>
+<p>"Now we consider the set of low-lying baryon resonances Yt yr, N:rz (the first January 21, 1963 resonance). and E* recently discovered.*&gt; We notice that these four resonances (in- In the preceding note1) (which is here- cluding ten isospin"</p>
+<p>$$
+m(N_{3/2})^{2}+m(\Xi^{*})^{2}=m(\Lambda)^{2}+m(\Sigma)^{2},
+$$</p>
+<p>"r, ances again on empirical grounds. the relation somewhat analogous to (4): First" — a linear relation $2\big(m(N_{3/2})+m(\Xi^{*})\big)=m(Y_0^{*})+3m(Y_1^{*})$ "is also satisfied."</p>
+<p>"to indicate that those as well as another one: four levels form one family having the same mechanical spin 3/2. In fact we ob- (2) tain a mass formula for them" (7), which "d is consistent with (5) mass formula (3). to the approximation in which r- 3 is neg- lected compared with 1. In (7) there 1) T. Takabayasi, the preceding note. 2) M. Gell-Mann, Phys. Rev. 125 (1962), 1067. appears the pion mass defined as in I, i.e. Table I. Masses of baryon resonances. resonances Y T mcalculoted I mexperlm ental Y<em>. 0 0 1400Mev 1405Mev Y</em>."</p>
+<p>The table gives $Y_0^{*}$ at $1400$ against $1405$ MeV, $Y_1^{*}$ at $1386$ against $1385$, $N^{*}_{3/2}$ at $1240$ against $1238$, and $\Xi^{*}$ at $1540$ against $1535$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-squared-mass-relations-hold-across-multiplets-where-linear-ones-hold-within-them">1. Squared-mass relations hold across multiplets where linear ones hold within them</h3>
+<p><strong>The idea.</strong> The stable baryons obey linear relations in the mass; the four resonances obey a <em>squared</em> relation, $m(N_{3/2})^{2}+m(\Xi^{*})^{2}=m(\Lambda)^{2}+m(\Sigma)^{2}$, to $0.1\%$ — an order of magnitude better than the linear fits of the stable octet. The power of the mass that linearises the relation tracks the spin of the family.</p>
+<p><strong>What it would add.</strong> A pattern the corpus does not record. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) presents GMO as a linear relation and the squared form as a separate, mesonic convention; here the same author uses linear for the octet and squared for the decuplet in the same letter, with the accuracies stated. Which power belongs to which multiplet is a question of data and not of convention, and the letter supplies the data.</p>
+<p><strong>Where it lands.</strong> §<em>The Gell-Mann–Okubo Mass Formula</em>, as the power-dependence note.</p>
+<p><strong>What stands in the way.</strong> The $0.1\%$ figure is quoted without the individual masses; on present values the squared relation's accuracy should be recomputed before it is used as an argument.</p>
+<h3 id="2-a-mass-formula-is-a-test-of-a-spin-assignment">2. A mass formula is a test of a spin assignment</h3>
+<p><strong>The idea.</strong> Two relations satisfied by four states are read as evidence that the four share $J=\tfrac32$: the formula "satisfies (6)" and is "consistent with Eq. (5) B.", so the assignment is <em>derived</em> from the mass pattern and not assumed. The mass relations then do work that a spin measurement would otherwise do.</p>
+<p><strong>What it would add.</strong> A use of spectroscopy as a spin filter. <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) asks which quantities the spectrum fixes and which it does not; here the direction of inference is reversed — the spectrum's <em>shape</em> fixes a label. That is the complementary statement and belongs beside it.</p>
+<p><strong>Where it lands.</strong> That article's section on undetermined labels, as the inference-in-reverse case.</p>
+<p><strong>What stands in the way.</strong> Some of the four states had uncertain spin at the time (the letter's own citations are to conference reports), so "derived" means consistent with, and the four-parameter formula would fit four masses with any two relations imposed. </p>
+<h3 id="3-three-relations-for-three-ratios-over-determination-as-evidence">3. Three relations for three ratios: over-determination as evidence</h3>
+<p><strong>The idea.</strong> With relations (1), (2) and Gell-Mann's, the baryon mass ratios are determined and agree with observation to $0.7\%$ — a fit in which nothing is free. The argument is not that a formula fits, but that a set of independent empirical relations closes. </p>
+<p><strong>What it would add.</strong> A standard of evidence the corpus could adopt. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) compares a one-parameter degree formula against measured ratios; Takabayasi's criterion is closure of relations, which is a different and stronger test because a wrong relation cannot be absorbed by adjusting a constant. </p>
+<p><strong>Where it lands.</strong> §<em>What the Framework Establishes, Transcribes, and Does Not</em>, as the alternative criterion. </p>
+<p><strong>What stands in the way.</strong> The relations themselves are "assumed ... and not simply accidental", which is a hypothesis about their origin, not a derivation; the closure is arithmetic once they are granted. The remainder, one line each. That $m_\pi=m_\eta/8=139.4$ MeV is used as an input ties this letter to the principal-quantum-number scheme of the same period. That the $r^{-3}$ term is dropped "to the approximation" in matching (5) and (7) is the only place the formula's accuracy is discussed.</p>
+<p>A note on the scan: relations (1), (2), (4) and (7) are set as images in the PDF and do not extract as text. Only the displays reproduced above — (3), (5), (6), the table and the numerical constants — are legible, and (3) is quoted with its coefficient elided because the glyphs are partly lost. The originals should be consulted before any of them is used as a formula.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

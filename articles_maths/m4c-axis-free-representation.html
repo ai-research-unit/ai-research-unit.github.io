@@ -149,10 +149,10 @@ This is the definition of §<em>The Two Sides</em> of <em>Families of Matrix Rep
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
+Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\
+Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\
+Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\
+Q_z&amp;-Q_y&amp;Q_x&amp;Q_t
 \end{pmatrix}.
 $$
 The first column is $(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$, the coordinate column of $\tilde Q$ itself, because $\tilde Qe_t=\tilde Q$. The other three columns are the products of $\tilde Q$ with the three vector units, and each of them is the same rule applied to another column of the table.</p>
@@ -165,11 +165,11 @@ This is associativity and nothing else. The $\nu$-th column of the left side is 
 <p><strong>The four left matrices.</strong> On the units,
 $$
 L_{\mathrm{axf},e_t}=\mathrm I_4,\qquad
-L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\qquad
+L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$
 Each is the corresponding column of the multiplication table, written as an array: the $z$ matrix, for instance, has $-1$ where the table sends $e_t\mapsto\vec e_z$, $\vec e_y\mapsto-\vec e_x$, $\vec e_z\mapsto-e_t$ and $\vec e_x\mapsto\vec e_y$.</p>
 <p><strong>Signed permutations.</strong> Each of the four is a signed permutation matrix: exactly one nonzero entry in each row and in each column, of modulus one. Hence each is orthogonal, $M^{\mathsf T}M=\mathrm I_4$, with entries in $\{0,+1,-1\}$. Each has determinant $1$; the identity has trace $4$ and the three vector matrices have trace $0$. The four are linearly independent, because the assignment is injective and the four units are a basis, so they are a basis of $\mathbb{B}_L$.</p>
@@ -199,10 +199,10 @@ because the dagger is the entrywise conjugate followed by the transpose, and the
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
+Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\
+Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\
+Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\
+Q_z&amp;-Q_y&amp;Q_x&amp;Q_t
 \end{pmatrix}.
 $$
 The entries in the $x$, $y$ and $z$ positions have the same shape: one coefficient with a sign, and no sum. The right matrix has the same property.</p>
@@ -219,10 +219,10 @@ The construction is the same as the left one with the order of the two factors e
 $$
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
+Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\
+Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\
+Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\
+Q_z&amp;Q_y&amp;-Q_x&amp;Q_t
 \end{pmatrix}.
 $$
 The two displays agree on the diagonal and in the first column, and differ in the signs of the six entries where one index is scalar and the other is vector. They are different arrays for the same element.</p>
@@ -244,11 +244,11 @@ The two factors sit on opposite sides of the argument and never meet: the left m
 <p><strong>The four right matrices.</strong> On the units,
 $$
 R_{\mathrm{axf},e_t}=\mathrm I_4,\qquad
-R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
 $$
 $$
-R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},\qquad
+R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$
 Each is a signed permutation matrix of determinant $1$ and trace $4\delta_{\mu t}$, and the four are a basis of $\mathbb{B}_R$. The products follow the reverse order, $R_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}=\varepsilon' R_{\mathrm{axf},e_{\nu\mu}}$ with $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$, so for instance $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=-R_{\mathrm{axf},\vec e_z}$, the opposite sign to the left family. The four together with their negatives are again $Q_8$.</p>
 <h2 id="the-stitch-between-the-two-families">The Stitch Between the Two Families</h2>
@@ -261,14 +261,14 @@ where $\mathsf W$ is the Gram matrix of the symmetric form $\beta(\tilde X,\tild
 $$
 \beta(e_\mu,e_\nu)=\operatorname{Sc}(e_\mu e_\nu)=
 \begin{cases}
-1,&\mu=\nu=t,\\
--1,&\mu=\nu\in\{x,y,z\},\\
-0,&\mu\neq\nu,
+1,&amp;\mu=\nu=t,\\
+-1,&amp;\mu=\nu\in\{x,y,z\},\\
+0,&amp;\mu\neq\nu,
 \end{cases}
 $$
 because the product of two distinct units is a third unit, of zero scalar part, and a vector unit squares to $-e_t$. So
 $$
-\mathsf W=D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}=\operatorname{diag}(1,-1,-1,-1).
+\mathsf W=D=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}=\operatorname{diag}(1,-1,-1,-1).
 $$
 The matrix $D$ is real, symmetric and diagonal, $D^2=\mathrm I_4$, and $\det D=-1$. It is also the matrix of the quaternion conjugation in this basis, since $\tilde Q^{\natural}$ is $\tilde Q$ with the three vector coefficients negated.</p>
 <p><strong>The stitch.</strong> With $\mathsf W=D$ the general rule reads
@@ -287,49 +287,49 @@ So the $(\mu,\nu)$ entry of the right matrix is the transposed left entry, kept 
 $$
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=
 \begin{pmatrix}
-Q_t&Q_x&Q_y&Q_z\\
--Q_x&Q_t&Q_z&-Q_y\\
--Q_y&-Q_z&Q_t&Q_x\\
--Q_z&Q_y&-Q_x&Q_t
+Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\
+-Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\
+-Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\
+-Q_z&amp;Q_y&amp;-Q_x&amp;Q_t
 \end{pmatrix},
 $$
 the left multiplication by $D$ changes the sign of the last three rows,
 $$
 D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=
 \begin{pmatrix}
-Q_t&Q_x&Q_y&Q_z\\
-Q_x&-Q_t&-Q_z&Q_y\\
-Q_y&Q_z&-Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&-Q_t
+Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\
+Q_x&amp;-Q_t&amp;-Q_z&amp;Q_y\\
+Q_y&amp;Q_z&amp;-Q_t&amp;-Q_x\\
+Q_z&amp;-Q_y&amp;Q_x&amp;-Q_t
 \end{pmatrix},
 $$
 and the right multiplication by $D$ changes the sign of the last three columns. Written with $D$ on both sides,
 $$
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-1&0&0&0\\
-0&-1&0&0\\
-0&0&-1&0\\
-0&0&0&-1
+1&amp;0&amp;0&amp;0\\
+0&amp;-1&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0\\
+0&amp;0&amp;0&amp;-1
 \end{pmatrix}
 \begin{pmatrix}
-Q_t&Q_x&Q_y&Q_z\\
--Q_x&Q_t&Q_z&-Q_y\\
--Q_y&-Q_z&Q_t&Q_x\\
--Q_z&Q_y&-Q_x&Q_t
+Q_t&amp;Q_x&amp;Q_y&amp;Q_z\\
+-Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\
+-Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\
+-Q_z&amp;Q_y&amp;-Q_x&amp;Q_t
 \end{pmatrix}
 \begin{pmatrix}
-1&0&0&0\\
-0&-1&0&0\\
-0&0&-1&0\\
-0&0&0&-1
+1&amp;0&amp;0&amp;0\\
+0&amp;-1&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0\\
+0&amp;0&amp;0&amp;-1
 \end{pmatrix}
 =
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
+Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\
+Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\
+Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\
+Q_z&amp;Q_y&amp;-Q_x&amp;Q_t
 \end{pmatrix}.
 $$
 The two multiplications by $D$ are the two sign changes: one on the rows, one on the columns.</p>
@@ -689,10 +689,10 @@ The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-0&-Q_x&-Q_y&-Q_z\\
-Q_x&0&-Q_z&Q_y\\
-Q_y&Q_z&0&-Q_x\\
-Q_z&-Q_y&Q_x&0
+0&amp;-Q_x&amp;-Q_y&amp;-Q_z\\
+Q_x&amp;0&amp;-Q_z&amp;Q_y\\
+Q_y&amp;Q_z&amp;0&amp;-Q_x\\
+Q_z&amp;-Q_y&amp;Q_x&amp;0
 \end{pmatrix}.
 $$
 The matrix is traceless and antisymmetric, $M^{\mathsf T}=-M$. The image is the complex span of $L_{\mathrm{axf},\vec e_x},L_{\mathrm{axf},\vec e_y},L_{\mathrm{axf},\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to antisymmetry, because the transpose is quaternion conjugation and $\tilde Q^{\natural}=-\tilde Q$ exactly when $Q_t=0$. The image is closed under the commutator and not under the product.</p>
@@ -719,7 +719,7 @@ L_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant of the matrix is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
+The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant of the matrix is indefinite: it is positive when $q_t^2&gt;\lvert\vec q'\rvert^2$ and negative when $q_t^2&lt;\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
 <h3 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h3>
 <p><strong>The anti-Hermitian matrices.</strong> For $\tilde Q=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$,
 $$

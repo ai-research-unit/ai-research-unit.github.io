@@ -82,8 +82,7 @@ them, isolates the converse as the involution and examines its fixed part, the <
 and it treats the <strong>residuals</strong> of composition and the <strong>Peircean law</strong> that links the converse to
 composition through the complement.</p>
 <p>The article presupposes <em>Sets, Functions and Relations</em> — relations, their composition and their
-converse — <em>The Converse Relation as an Operator</em>, in this category, where the passage $R \mapsto
-R^{-1}$ is studied as an operator, and <em>Order Theory and Lattices</em> and <em>Boolean Algebras with an
+converse — <em>The Converse Relation as an Operator</em>, in this category, where the passage $R \mapsto R^{-1}$ is studied as an operator, and <em>Order Theory and Lattices</em> and <em>Boolean Algebras with an
 Involution</em>, in this group, for the Boolean operations and the complement. The article uses the
 notation of <em>The Converse Relation as an Operator</em> for the converse and writes it $R^{-1}$; the
 literature mark $\breve{R}$ is not used.</p>
@@ -94,8 +93,7 @@ Algebras</em>, later in this Part, and are named only; the article works with re
 <code>* Operator Theory</code> group of this category and are named only. Nothing linear and no <strong>form</strong> is used.</p>
 <h2 id="the-algebra-of-binary-relations">The Algebra of Binary Relations</h2>
 <h3 id="composition-converse-and-the-diagonal">Composition, Converse and the Diagonal</h3>
-<p>Let $X$ be a set and let $\mathcal{P}(X \times X)$ be the set of binary relations on $X$. For $R, S
-\subseteq X \times X$ put</p>
+<p>Let $X$ be a set and let $\mathcal{P}(X \times X)$ be the set of binary relations on $X$. For $R, S \subseteq X \times X$ put</p>
 <p>$$
 R ; S = \{(x,z) : \text{there is } y \in X \text{ with } (x,y) \in R \text{ and } (y,z) \in S\},
 \qquad R^{-1} = \{(y,x) : (x,y) \in R\},
@@ -107,8 +105,7 @@ distributes over unions on both sides:</p>
 (R ; S) ; T = R ; (S ; T), \qquad R ; \Delta = R = \Delta ; R, \qquad
 R ; (S \cup T) = (R ; S) \cup (R ; T), \qquad (S \cup T) ; R = (S ; R) \cup (T ; R) .
 $$</p>
-<p><strong>Proof.</strong> For the associativity, $(x,w) \in (R;S);T$ if and only if there are $y,z$ with $(x,y) \in
-R$, $(y,z) \in S$, $(z,w) \in T$, which is symmetric in the two groupings. The identity and the
+<p><strong>Proof.</strong> For the associativity, $(x,w) \in (R;S);T$ if and only if there are $y,z$ with $(x,y) \in R$, $(y,z) \in S$, $(z,w) \in T$, which is symmetric in the two groupings. The identity and the
 distributivity are immediate from the definition, the latter because a witness $y$ for the union is a
 witness for one of the two relations.</p>
 <p><strong>Proposition.</strong> The converse reverses composition and commutes with the Boolean operations:</p>
@@ -130,10 +127,8 @@ unary operation ${}^{-1}$ and two constants $0$ and $1'$, such that</p>
 <li>$(A, \vee)$ is a join-semilattice with least element $0$, and the associated order has meets and a
    greatest element $1$, making $A$ a Boolean algebra;</li>
 <li>$;$ is associative, has identity $1'$, and distributes over $\vee$ on both sides;</li>
-<li>${}^{-1}$ is an involution with $(x \vee y)^{-1} = x^{-1} \vee y^{-1}$ and $(x ; y)^{-1} = y^{-1} ;
-   x^{-1}$;</li>
-<li>the <strong>Peircean law</strong> holds: $(x ; y) \wedge \overline{z} = 0$ implies $(x^{-1} ; z) \wedge
-   \overline{y} = 0$ and $(z ; y^{-1}) \wedge \overline{x} = 0$.</li>
+<li>${}^{-1}$ is an involution with $(x \vee y)^{-1} = x^{-1} \vee y^{-1}$ and $(x ; y)^{-1} = y^{-1} ; x^{-1}$;</li>
+<li>the <strong>Peircean law</strong> holds: $(x ; y) \wedge \overline{z} = 0$ implies $(x^{-1} ; z) \wedge \overline{y} = 0$ and $(z ; y^{-1}) \wedge \overline{x} = 0$.</li>
 </ol>
 <p><strong>Theorem.</strong> The relations on a set $X$ form a relation algebra under union, composition, the converse
 and the constants $\emptyset$ and $\Delta$; the greatest element is $X \times X$, and the complement is
@@ -158,8 +153,7 @@ composition, let $X = \{0,1,2\}$, let $R$ be the relation $\{(0,1),(1,0)\}$ and 
 $\{(1,2),(2,1)\}$, both symmetric; then $R ; S$ contains $(0,2)$ but not $(2,0)$, so it is not
 symmetric.</p>
 <p><strong>Proposition.</strong> Every relation $R$ decomposes as $R = R_{\mathrm{s}} \cup R_{\mathrm{a}}$ with
-$R_{\mathrm{s}} = R \cap R^{-1}$ symmetric and $R_{\mathrm{a}} = R \setminus R^{-1}$ satisfying $R_{
-\mathrm{a}} \cap R_{\mathrm{a}}^{-1} = \emptyset$.</p>
+$R_{\mathrm{s}} = R \cap R^{-1}$ symmetric and $R_{\mathrm{a}} = R \setminus R^{-1}$ satisfying $R_{ \mathrm{a}} \cap R_{\mathrm{a}}^{-1} = \emptyset$.</p>
 <p><strong>Proof.</strong> The two parts are disjoint and their union is $R$; the first is fixed by the involution
 because the involution is order-reversing and of order two, and the second is disjoint from its
 converse by construction.</p>
@@ -181,8 +175,7 @@ $$</p>
 lies in $T$. This holds if and only if for every $(y,z) \in S$ and every $x$ with $(x,y) \in R$ one has
 $(x,z) \in T$, which is $S \subseteq R \backslash T$. The second equivalence is the same statement with
 the roles of $R$ and $S$ exchanged.</p>
-<p><strong>Corollary.</strong> The maps $S \mapsto R;S$ and $R \mapsto R;S$ are residuated; the residual $R \backslash
-T$ is the greatest $S$ with $R;S \subseteq T$, and $T/R$ the greatest $R$ with $R;S \subseteq T$. The
+<p><strong>Corollary.</strong> The maps $S \mapsto R;S$ and $R \mapsto R;S$ are residuated; the residual $R \backslash T$ is the greatest $S$ with $R;S \subseteq T$, and $T/R$ the greatest $R$ with $R;S \subseteq T$. The
 two residuals are related to the converse by $(R \backslash T)^{-1} = T^{-1} / R^{-1}$.</p>
 <p><strong>Proof.</strong> The residuals are the greatest solutions by the theorem and the definition of the order; the
 last identity is the definition read through the converse.</p>
@@ -193,9 +186,7 @@ last identity is the definition read through the converse.</p>
 (T ; S^{-1}) \cap R = \emptyset\;} .
 $$</p>
 <p><strong>Proof.</strong> (1) $\Rightarrow$ (2): suppose $(R;S) \cap T = \emptyset$ and suppose some $(a,b)$ lies in
-both $R^{-1};T$ and $S$. From $(a,b) \in R^{-1};T$ there is $y$ with $(a,y) \in R^{-1}$ and $(y,b) \in
-T$, that is, $(y,a) \in R$ and $(y,b) \in T$; with $(a,b) \in S$ this gives $(y,b) \in R;S$ and $(y,b)
-\in T$, contradicting $(R;S) \cap T = \emptyset$. (1) $\Rightarrow$ (3): suppose $(a,b) \in T;S^{-1}$
+both $R^{-1};T$ and $S$. From $(a,b) \in R^{-1};T$ there is $y$ with $(a,y) \in R^{-1}$ and $(y,b) \in T$, that is, $(y,a) \in R$ and $(y,b) \in T$; with $(a,b) \in S$ this gives $(y,b) \in R;S$ and $(y,b) \in T$, contradicting $(R;S) \cap T = \emptyset$. (1) $\Rightarrow$ (3): suppose $(a,b) \in T;S^{-1}$
 and $(a,b) \in R$; from $(a,b) \in T;S^{-1}$ there is $y$ with $(a,y) \in T$ and $(y,b) \in S^{-1}$,
 that is, $(b,y) \in S$, so $(a,y) \in R;S$ and $(a,y) \in T$, again a contradiction. The implications
 (2) $\Rightarrow$ (1) and (3) $\Rightarrow$ (1) are the same arguments read backwards, so the three
@@ -213,8 +204,7 @@ as an <strong>involution on the elements</strong> that reverses composites and c
 The fixed elements of the involution are the symmetric relations, a Boolean subalgebra that is not
 closed under composition; every relation is the disjoint union of its symmetric part $R \cap R^{-1}$
 and its asymmetric part $R \setminus R^{-1}$.</p>
-<p>Composition is residuated in each variable: $R;S \subseteq T$ if and only if $S \subseteq R \backslash
-T$ if and only if $R \subseteq T/S$, with the residuals computed by a universal condition and the
+<p>Composition is residuated in each variable: $R;S \subseteq T$ if and only if $S \subseteq R \backslash T$ if and only if $R \subseteq T/S$, with the residuals computed by a universal condition and the
 residuals exchanged by the converse. The <strong>Peircean law</strong> is the form of that residual calculus that
 uses the complement, $(R;S) \cap T = \emptyset$ implying $(R^{-1};T) \cap S = \emptyset$; it is one of
 the axioms of the abstract relation algebra, and the relations on a set satisfy it.</p>

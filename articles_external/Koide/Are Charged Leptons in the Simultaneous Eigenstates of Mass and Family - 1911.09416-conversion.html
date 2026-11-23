@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family - 1911.09416.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="are-charged-leptons-in-the-simultaneous-eigenstates-of-mass-and-family"><strong>Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1911.09416v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 5 March 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family - 1911.09416-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family - 1911.09416.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Are Charged Leptons in the Simultaneous Eigenstates of Mass and Family - 1911.09416.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks whether the observed charged leptons are the family eigenstates of a broken $U(3)$ family gauge symmetry, or a mixture of them. If they mix, the family gauge bosons mediate $\mu N\to eN$ and $\mu\to e\gamma$. The paper estimates the mixing angle from the present bound on $\mu\to e\gamma$ and finds $\theta\lesssim10^{-3}$, two orders below the Cabibbo angle. It concludes that mixing cannot be excluded, and that $\mu\to e\gamma$ rather than $\mu$–$e$ conversion is the decisive channel, because conversion can happen even with no mixing.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Conventionally, the observed charged leptons are regarded the simultaneous eigenstates of 'mass' and 'family'. Against this view, we discuss a possibility that the observed charged leptons $e_i=(e,\mu,\tau)$ are not identical with the eigenstates of family $e^0_\alpha=(e^0_1,e^0_2,e^0_3)$."</p>
+<h3 id="the-definition-used">The definition used</h3>
+<p>"we define the eigenstates of family, $e^0_\alpha$, as the states which interact with family gauge bosons in the mass eigenstates of the broken $U(3)$ family gauge symmetry."</p>
+<h3 id="the-two-signatures">The two signatures</h3>
+<p>"the effect of $U_e\ne1$ will be observed in the reaction $\mu N\to eN$ and the decay $\mu\to e+\gamma$. However, since the observation $\mu N\to eN$ can be also caused in the case $U_e=1$, the judgment for '$U_e=1$ or not' is difficult. On the other hand, the observation $\mu\to e+\gamma$ is characteristic phenomenon in the case of $U_e\ne1$."</p>
+<h3 id="the-bound">The bound</h3>
+<p>From $\mathrm{Br}(\mu\to e\gamma)&lt;4.2\times10^{-13}$ the paper obtains</p>
+<p>$$
+\theta^2\left[\theta^2+\left(\frac{m_e}{m_\mu}\right)^2\xi^2\right]&lt;1.5\times10^{-14},
+\tag{paper 5.2}
+$$</p>
+<p>which for $\xi=1$ gives</p>
+<p>$$
+x&lt;x_0=0.35,\qquad\text{i.e.}\qquad \theta&lt;\theta_0=0.35\times10^{-2}.
+\tag{paper 5.6}
+$$</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"the $e$–$\mu$ mixing angle $\theta$ will be considerably small, $\theta\lesssim10^{-3}$, in comparison with the Cabibbo mixing angle $\theta_C=0.22$ in quarks."</p>
+<h3 id="the-caveat">The caveat</h3>
+<p>"note this result (6.1) does not always mean $U_e=1$ in the strict sense. We still have a possibility $U_e\ne1$ with $\theta\lesssim10^{-3}$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-basis-and-family-basis-may-differ-for-leptons">1. Mass basis and family basis may differ for leptons</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: the corpus diagonalises the charged-lepton mass matrix and then treats those states as the ones that couple to the family gauge bosons; here the two bases are allowed to differ by an angle $\theta$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> derives the charged current as $U_L^\dagger U_\nu$ and takes the charged-lepton rotation to be unobservable on its own. With a family gauge interaction present, that rotation is observable after all, because the gauge coupling is defined in the family basis. The article's "The Two Unitary Factors and the Charged Current" section would gain the counterexample to its own statement that one factor can always be removed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, in "The Two Unitary Factors and the Charged Current".</p>
+<p><strong>What stands in the way.</strong> The corpus has no family gauge bosons, so the extra observable exists only if that sector is added; and the bound is two orders of magnitude away from anything measurable in the near term. First, because it corrects a statement the corpus makes.</p>
+<h3 id="2-the-number-math46">2. The number $\theta\lesssim10^{-3}$</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: a mixing angle between mass and family bases in the lepton sector, bounded at $3.5\times10^{-3}$ by the $\mu\to e\gamma$ limit.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> tabulates the measured lepton mixing angles and finds them large. This number is a different angle — not a mixing among the three charged leptons as seen by the weak interaction, but a mismatch between two definitions of the same three states — and it is small. Putting it beside the PMNS entries makes plain that "lepton mixing is large" is a statement about one basis choice only.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, in "The Measured Values".</p>
+<p><strong>What stands in the way.</strong> The number is a bound, not a measurement, and it depends on a model with unspecified $\xi$ and an order-one coefficient. Second.</p>
+<h3 id="3-two-channels-one-of-which-cannot-discriminate">3. Two channels, one of which cannot discriminate</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: when a new interaction can produce two signals, check which of them is background-free; here $\mu N\to eN$ can proceed with or without the new mixing, while $\mu\to e\gamma$ requires it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code> argues that some operators are invisible to some channels — the muon–electron conversion and $\mu\to e\gamma$ being precisely such a pair. This paper supplies the model-side statement of the same fact, from the point of view of what a negative result would mean.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code>, in the discussion of channel complementarity.</p>
+<p><strong>What stands in the way.</strong> The observation is elementary and the corpus article already makes it in operator language; only the worked model is new. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

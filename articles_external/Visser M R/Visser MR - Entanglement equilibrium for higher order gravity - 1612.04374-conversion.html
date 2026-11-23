@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entanglement equilibrium for higher order gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entanglement equilibrium for higher order gravity - 1612.04374.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entanglement-equilibrium-for-higher-order-gravity"><strong>Entanglement equilibrium for higher order gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1612.04374v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Pablo Bueno, Vincent S. Min, Antony J. Speranza, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 December 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D 95, 046003 (2017)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Entanglement equilibrium for higher order gravity - 1612.04374-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entanglement equilibrium for higher order gravity - 1612.04374.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Entanglement equilibrium for higher order gravity - 1612.04374.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends Jacobson's derivation of the Einstein equation from maximal vacuum entanglement to theories with higher derivative corrections. The linearized higher derivative equations are shown to be equivalent to the vanishing of the first variation of entanglement entropy for small spherical regions, at fixed generalized volume, in a maximally symmetric background. The correction terms are the subleading divergences of the entanglement entropy, a Wald entropy evaluated on the entangling surface. The generalized volume is a new geometric functional, and the authors note that the fully nonlinear equations cannot be recovered from the linearized ones applied to small balls, in contrast with Einstein gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-generalized-entropy">The generalized entropy</h3>
+<p>The divergences of entanglement entropy are absorbed into renormalised gravitational couplings, so that</p>
+<p>$$S_{\text{gen}}=S^{(\text{ren})}_{\text{Wald}}+S^{(\text{ren})}_{\text{mat}}, \qquad (paper\ 2)$$</p>
+<p>is independent of the cutoff $\epsilon$. The Wald term plays the role of "a placeholder for the UV degrees of freedom that have been integrated out".</p>
+<h3 id="the-generalized-volume">The generalized volume</h3>
+<p>The variations are taken at fixed</p>
+<p>$$W=\frac{1}{(d-2)E_0}\int_\Sigma \eta\,E^{abcd}u_a h_{bc}u_d-E_0, \qquad (paper\ 5)$$</p>
+<p>where $E^{abcd}=\partial\mathcal L/\partial R_{abcd}$, $E_0$ is the value of $E^{abcd}$ on the maximally symmetric background, $E^{abcd}=E_0(g^{ac}g^{bd}-g^{ad}g^{bc})$, and $\eta,u^a,h_{ab}$ are the volume element, unit normal and induced metric of the ball's boundary $\Sigma$. The normalisation is chosen "so that $W$ reduces to the volume in the case of Einstein gravity". The Jacobson–Kang–Myers ambiguity shifts both the Wald entropy and $W$ by surface terms, $S_{\text{JKM}}$ and $W_{\text{JKM}}$, and the identity holds with $W'=W+W_{\text{JKM}}$ (paper 6).</p>
+<h3 id="the-variational-identity">The variational identity</h3>
+<p>For causal diamonds in a maximally symmetric spacetime the variation of the Wald entropy, the matter Hamiltonian and the linearized constraint are related off shell by</p>
+<p>$$\frac{\kappa}{2\pi}\int_\Sigma \delta S_{\text{Wald}}\Big|_W+\delta H_{\zeta m}=\delta C_\zeta. \qquad (paper\ 40)$$</p>
+<p>Imposing $\delta C_\zeta=0$ turns this into the first law of causal diamond mechanics for higher derivative gravity, $-\delta H_{\zeta m}=\frac{\kappa}{2\pi}\int_\Sigma\delta S_{\text{Wald}}\big|_W$, which reproduces the Einstein-gravity statement for $\mathcal L=R/16\pi G$ with $E_0=1/32\pi G$.</p>
+<h3 id="the-main-result">The main result</h3>
+<p>With minimally coupled conformally invariant matter, the equilibrium condition reads</p>
+<p>$$\frac{\kappa}{2\pi}\int_\Sigma \delta S_{EE}\Big|_{W'}=\delta C_\zeta, \qquad (paper\ 55)$$</p>
+<p>so that the linearized constraint equations are the statement that entanglement entropy is extremal in the vacuum at fixed $W'$. Conversely, postulating maximal vacuum entanglement for all balls and all frames yields the linearized higher derivative equations everywhere.</p>
+<h3 id="the-limit-of-the-argument">The limit of the argument</h3>
+<p>The authors state explicitly that in higher curvature gravity the fully nonlinear equations do not follow from the linearized ones on small balls, because the higher-order terms contribute at the same order as the terms that would have to be dropped. This is the point where the argument that works for Einstein gravity stops.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-generalized-volume-as-the-quantity-held-fixed">1. Generalized volume as the quantity held fixed</h3>
+<p><strong>The idea.</strong> The entropy-maximisation statement is only well posed once the size of the ball is defined by a curvature-corrected functional $W$ rather than by the metric volume. This is a <strong>formula</strong> the corpus lacks: a definition of the region's size that survives the presence of higher-curvature terms.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> states the first law of entanglement for a ball of fixed radius, and <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code> gives the area term. Neither has a statement of what stays fixed when the gravitational action is not Einstein–Hilbert, and the corpus's own action is not Einstein–Hilbert in form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>, as the definition its variational statement would need.</p>
+<p><strong>What stands in the way.</strong> $W$ is built from $E^{abcd}$, the derivative of the Lagrangian with respect to the Riemann tensor — an object the corpus has never formed, because its action is written with biquaternion elements and not as a scalar of the curvature. The cost is a variational derivative in a non-commutative algebra, which is a different calculation and not a transcription.</p>
+<h3 id="2-entanglement-equilibrium-as-the-source-of-the-field-equations">2. Entanglement equilibrium as the source of the field equations</h3>
+<p><strong>The idea.</strong> The field equations are not postulated but follow from the stationarity of entanglement entropy at fixed generalized volume, frame by frame and point by point. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code> and <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derive the temperature from the modular structure but treat the field equation as imported. A derivation of the constraint from an entropy principle would close exactly the gap the corpus names as "no dynamics".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation needs a maximally symmetric background, a small-ball expansion and the Wald entropy's subleading divergence; the corpus has the modular Hamiltonian on the informational sector, not a ball-localised entropy. Ranked first, because it addresses the gap the corpus itself declares.</p>
+<h3 id="3-where-the-einstein-gravity-argument-fails">3. Where the Einstein-gravity argument fails</h3>
+<p><strong>The idea.</strong> The non-linear completion works for Einstein gravity and fails for higher curvature, for a reason the authors state. This is a <strong>reading</strong> with a negative content, and negative content is what keeps a framework honest.</p>
+<p><strong>What it would add.</strong> A stated limit on any programme that hopes to derive its own dynamics from entanglement: the derivation is linear-order only, unless the action is Einstein–Hilbert.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a caution. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

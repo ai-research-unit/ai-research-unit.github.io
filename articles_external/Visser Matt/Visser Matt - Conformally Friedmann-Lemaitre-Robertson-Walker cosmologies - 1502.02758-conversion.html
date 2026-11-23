@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conformally Friedmann–Lemaître–Robertson–Walker cosmologies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conformally Friedmann-Lemaitre-Robertson-Walker cosmologies - 1502.02758.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conformally-friedmannlemaitrerobertsonwalker-cosmologies"><strong>Conformally Friedmann–Lemaître–Robertson–Walker cosmologies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1502.02758v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 29 April 2015 (first version 10 February 2015)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Conformally Friedmann-Lemaitre-Robertson-Walker cosmologies - 1502.02758-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conformally Friedmann-Lemaitre-Robertson-Walker cosmologies - 1502.02758.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Conformally Friedmann-Lemaitre-Robertson-Walker cosmologies - 1502.02758.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper argues that cosmologies conformally related to FLRW deserve separate study. A conformal factor that varies with position can produce large non-perturbative departures from a smooth FLRW geometry while leaving the cosmic microwave background almost untouched, because the conformal factor shifts the temperature by an observer-dependent amount rather than distorting the spectrum. Using a cosmographic analysis that avoids assuming the Einstein equations, the author constrains how much the conformal factor can vary between supernova host galaxies. The paper also insists on keeping three things apart: the known smoothness of the CMB, the hypothetical smoothness of the geometry, and the known lumpiness of the matter.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"In a universe where, according to the standard cos[mology] 97% of the total mass-energy is still 'missing in action' i[t seems worth] [a] little effort critically assessing and exploring radical al[ternatives (if] we say plausible), nonstandard but superficially viable mod[els]."</p>
+<h3 id="the-special-role-of-conformal-flrw">The special role of conformal FLRW</h3>
+<p>"Conformally [deformed Friedmann–Lemaître–]Robertson–Walker [CFLRW] models play a very special role — these models have the uni[que property] of permitting large non-perturbative geometric deviations f[rom] Robertson–Walker cosmology without unacceptably d[amaging the microwave] background."</p>
+<h3 id="the-method">The method</h3>
+<p>"Performing a 'cosmographic' analysis, [one can avoid assuming] the Einstein equations, since the question of wh[ether they are] valid on galactic and cosmological scales is esse[ntially the question of] [whether] or not dark matter/dark energy actually exist."</p>
+<h3 id="what-can-and-cannot-be-constrained">What can and cannot be constrained</h3>
+<p>"Even without any] information about galactic structure, one can nev[ertheless place] observational constraints on any possible conform[al deformation], [leaving an] extremely rich range of phenomenological possibil[ities for] physicists to explore."</p>
+<h3 id="the-three-distinctions">The three distinctions</h3>
+<p>"It is particularly important to carefully distinguish three different issues: The (known) smoothness of the CMB, the (hypothetical) smoothness of the geometry, and the (known lack of) smoothness of the matter distribution within the geometry."</p>
+<h3 id="the-result">The result</h3>
+<p>"Supernova observations, and the concomitant luminosity distance estimates, can then be used to constrain the variability of the conformal factor between the supernova-bearing regions of the relevant population of host galaxies in a manner that is largely independent of detailed cosmological assumptions."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-conformal-factor-is-a-free-function-with-a-bound">1. A conformal factor is a free function with a bound</h3>
+<p><strong>The idea.</strong> The deformation is one function of position, and observations limit its variation between galaxies without fixing it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> records that the carried FLRW metric has an undetermined source and no dynamics. This paper shows what can be done with one undetermined function when there is a clear observational handle: the function is not predicted, but its variation is bounded. That is a concrete model for what the article could claim instead of asking for a source it cannot supply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> The conformal factor is not the framework's missing source, so this is a template rather than a solution. Ranked first, because it gives the article an available middle position.</p>
+<h3 id="2-cosmography-avoids-the-field-equations">2. Cosmography avoids the field equations</h3>
+<p><strong>The idea.</strong> A kinematical expansion in observables can constrain a geometry without using the Einstein equations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists the absence of field equations as a major entry. If observational constraints can be phrased in a cosmographic expansion, then that entry does not block all contact with data. The article's assessment is too pessimistic without this.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on dynamics.</p>
+<p><strong>What stands in the way.</strong> Cosmography constrains kinematics and not the theory that produces them. Ranked second.</p>
+<h3 id="3-conformal-invariance-hides-inhomogeneity">3. Conformal invariance hides inhomogeneity</h3>
+<p><strong>The idea.</strong> A conformal change of the metric does not change the null cones, so the causal structure is untouched and only the temperature shifts.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats conformal invariance as a property of the massless stratum. Here it is used as an observational hiding mechanism, which is a different role for the same structure and extends what the article says the invariance is for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of what the invariance preserves.</p>
+<p><strong>What stands in the way.</strong> The two uses of conformal invariance are only loosely related. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

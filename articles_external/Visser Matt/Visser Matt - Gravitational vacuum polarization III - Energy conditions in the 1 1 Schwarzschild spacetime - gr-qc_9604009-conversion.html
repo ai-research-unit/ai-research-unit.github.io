@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational vacuum polarization III: Energy conditions in the (1+1) Schwarzschild spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization III - Energy conditions in the 1 1…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-vacuum-polarization-iii-energy-conditions-in-the-11-schwarzschild-spacetime"><strong>Gravitational vacuum polarization III: Energy conditions in the (1+1) Schwarzschild spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9604009v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 April 1996</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravitational vacuum polarization III - Energy conditions in the 1 1 Schwarzschild spacetime - gr-qc_9604009-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization III - Energy conditions in the 1 1 Schwarzschild spacetime - gr-qc_9604009.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization III - Energy conditions in the 1 1 Schwarzschild spacetime - gr-qc_9604009.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This paper repeats the vacuum polarisation study in two spacetime dimensions, where the stress-energy tensor is known exactly. All three standard vacua are treated: Hartle–Hawking, Boulware, and Unruh. The null energy condition holds outside the horizon for Hartle–Hawking but fails for the other two. The dominant energy condition fails everywhere in every state, not only the standard vacua. The author presents the model as a check on the numerical four-dimensional work.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose">The purpose</h3>
+<p>"Because the stress-energy tensors are analytically known, I can get exact results for the Hartle–Hawking, Boulware, and Unruh vacua. This exactly solvable model serves as a useful sanity check on my (3+1)-dimensional investigations wherein I had to resort to a mixture of analytic approximations and numerical techniques."</p>
+<h3 id="the-key-results">The key results</h3>
+<p>"Key results in (1+1) dimensions are: (1) NEC is satisfied outside the event horizon for the Hartle–Hawking vacuum, and violated for the Boulware and Unruh vacua. (2) DEC is violated everywhere in the spacetime (for any quantum state, not just the standard vacuum states)."</p>
+<h3 id="what-carries-over">What carries over</h3>
+<p>"Happily, the basic flavour of the (3+1)-dimensional results follows through: Many of the energy conditions are violated, the precise locations and manner of violation being influenced by the particular vacuum state being considered."</p>
+<h3 id="the-averaged-condition">The averaged condition</h3>
+<p>"The ANEC is satisfied for the Hartle–Hawking vacuum, but is ill-defined (and arguably negative) for the Boulware vacuum."</p>
+<h3 id="the-summary-of-the-pattern">The summary of the pattern</h3>
+<p>"energy condition violations are ubiquitous and are particularly prevalent in the Boulware vacuum in the region outside the event horizon, where every point-wise energy condition is violated, and all one-sided integrated energy conditions are violated."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-solvable-model-as-a-check">1. A solvable model as a check</h3>
+<p><strong>The idea.</strong> Two dimensions give exact answers, and they confirm the pattern of the harder four-dimensional numerics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> relies on limits between dimensions and masses. An exactly solvable lower-dimensional case is the natural testbed, and the article does not use one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> Two dimensions have no photon orbit or angular momentum. Ranked first, because it supplies a check the article lacks.</p>
+<h3 id="2-the-dominant-condition-fails-in-every-state">2. The dominant condition fails in every state</h3>
+<p><strong>The idea.</strong> Unlike the others, one energy condition fails everywhere regardless of the chosen vacuum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> needs to know which obstructions are state-independent. This one is, which makes it the most robust entry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The result is specific to two dimensions. Ranked second.</p>
+<h3 id="3-violation-depends-on-the-state-not-the-geometry">3. Violation depends on the state, not the geometry</h3>
+<p><strong>The idea.</strong> The same geometry supports states with different verdicts.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> computes quantities from geometry alone. This shows at least one quantity is state-dependent, so the article must separate geometric from state-dependent results.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the vacuum.</p>
+<p><strong>What stands in the way.</strong> The point is made with a toy model. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

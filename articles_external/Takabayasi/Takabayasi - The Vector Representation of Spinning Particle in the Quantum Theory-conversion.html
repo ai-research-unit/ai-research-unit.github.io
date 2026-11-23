@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vector Representation of Spinning Particle in the Quantum Theory, I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Vector Representation of Spinning Particle in the Quantum Theory.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-vector-representation-of-spinning-particle-in-the-quantum-theory-i"><strong>The Vector Representation of Spinning Particle in the Quantum Theory, I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version, translated from <em>Soryūshiron-Kenkyū</em> <strong>7</strong> (1955) 600 (Japanese); Oxford Academic scan</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>14</strong> (1955) 283, No. 4, October 1955; received 22 July 1955</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - The Vector Representation of Spinning Particle in the Quantum Theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Vector Representation of Spinning Particle in the Quantum Theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-dirac-equation-in-biquaternionic-polar-variables.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Vector Representation of Spinning Particle in the Quantum Theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Replaces the Pauli spinor by real gauge-independent tensors — density, velocity, spin — together with the identities those fields satisfy. The argument has three steps: a component-wise amplitude–phase substitution is unavailable for a spinor, so the classical reading must go through bilinears; once it does, the quantum terms appear as an internal potential and an internal <em>magnetic</em> field; and the spin torque turns out to have the Herring–Kittel exchange form, so spin waves are solutions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-polar-substitution-fails-for-a-spinor">Why the polar substitution fails for a spinor</h3>
+<p>"ristic situation of the ordinary formulation of quantum mechanics, however, arises in the treatment of spinning particle; viz., the appearance of a spinor with its special double-valued transformation property. In quantum mechanics, wave function can be such a spinor, since originally" A rotation mixes the two components, so a phase attached to each separately is a gauge artefact. The answer is the set of tensor quantities which represents the spinor $\phi$ in a mathematically equivalent and physically meaningful way, with the requirement that every physical relation originally expressed in the language of $\phi$ will have to be expressed in terms of those basic quantities only.</p>
+<p>The purpose is definitional: "in classical theories which have to operate according to some realistic model, spinor quantity with its double-valued transformation property cannot appear, at least as an essential thing." The tensor reformulation <em>is</em> what a classical reading would mean.</p>
+<h3 id="the-basic-quantities-and-their-identities">The basic quantities and their identities</h3>
+<p>The set is $P=\phi^{\dagger}\phi$, the velocity from the current, and $\vec S=\frac{\hbar}{2}\phi^{\dagger}\vec\sigma\phi$, built from the Kramers null vector $\vec\xi=\tilde\phi\vec\sigma\phi$ split as $\vec M+i\vec N$ with $\vec M\cdot\vec N=0$. He derives "identical relations holding among bilinear quantities" without using any representation of the $\sigma$'s, so every higher bilinear — stress, spin stress, third-rank tensors — is a function of the seven basic quantities and their derivatives.</p>
+<h3 id="the-quantum-terms-are-an-internal-potential-and-an-internal-magnetic-field">The quantum terms are an internal potential and an internal magnetic field</h3>
+<p>The central reading. The quantum contributions are gathered into</p>
+<p>$$
+\Pi=\Pi_{P}+\Pi_{S},
+\qquad
+\vec H_{\mathrm{eff}}=\vec H+\vec H_{\mathrm{in}},
+$$</p>
+<p>with $\Pi_{P}$ the ordinary quantum potential, $\Pi_{S}$ the spin field's contribution, and $\vec H_{\mathrm{in}}$ an axial vector built from the spin field's gradients. Hence: "the hydrodynamical motion representing the motion of a quantum-mechanical spinning particle is conducted in such a way that each element of the fluid moves like a classical spinning n particle under the actions not only of external force but also of the internal potential and the internal magnetic field Hin. The equation" A spin–orbit and a spin–spin coupling have appeared although "the system with simple Hamiltonian (2·2)" "does not contain the (well-known) spin-orbit coupling or spin-spin interaction term originally. Now".</p>
+<h3 id="the-exchange-torque-and">The exchange torque, and</h3>
+<p>$\hbar$ in two roles</p>
+<p>The torque in the equation for $\vec S$ has "similar forms respectively to the energy density Downloaded from academic.oup.com/ptp/article/14/4/283/1868860 by guest on 12 November 2026 of exchange" "It can thus be seen for a simple example that, as a consequence of that spin torque, we may have such solutions in our hydrodynamical theory as to behave like a spin wave (see II)." And: "Planck's constant plays two-fold roles, i.e., the coupling constant for the quantum potential and the magnitude of spin." The ensemble reading survives only in weakened form: its members "are not independent of one another, but must be regarded as mutually interacting through the internal potential and internal n magnetic field Hi". Neither such an ensemble picture nor the hydrodynamical one can be accepted as literally real "</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-component-wise-polar-decomposition-has-no-meaning-and-that-is-why-the-frame-is-the-only-option">1. A component-wise polar decomposition has no meaning, and that is why the frame is the only option</h3>
+<p><strong>The idea.</strong> Writing $\phi_{(\alpha)}=R_{(\alpha)}e^{i\chi_{(\alpha)}}$ is not merely awkward: the $R_{(\alpha)}$ and $\chi_{(\alpha)}$ are not tensors under the transformations acting on the spinor, so they carry no physical meaning. Any amplitude–phase reading of a multicomponent object must be made on the object as a whole.</p>
+<p><strong>What it would add.</strong> The argument the corpus asserts without deriving. <em>The Dirac Equation in Biquaternionic Polar Variables</em> (<code>articles_physics/the-dirac-equation-in-biquaternionic-polar-variables.md</code>) has §<em>The Collapse of the Word</em> and defines the polar decomposition only where the element is invertible — a statement about the <em>element</em>. Takabayasi's is a statement about <em>components</em>, and it is the reason an element-level decomposition is the only available one.</p>
+<p><strong>Where it lands.</strong> That §, as the motivation, and <em>The Derivative, the Field and the Transform</em> (<code>articles_physics/the-derivative-the-field-and-the-transform.md</code>), where the transformation of components is set out.</p>
+<p><strong>What stands in the way.</strong> Nothing: the argument is a transformation-law statement the corpus's conventions already imply. Ranked first for being short, correct and missing.</p>
+<h3 id="2-the-quantum-force-on-the-spin-is-an-internal-magnetic-field-so-it-cannot-be-told-from-a-real-one">2. The quantum force on the spin is an internal magnetic field, so it cannot be told from a real one</h3>
+<p><strong>The idea.</strong> $\vec H_{\mathrm{eff}}=\vec H+\vec H_{\mathrm{in}}$ is all that appears in the spin's equation, so a quantum torque and a magnetic torque enter identically, and a spin–orbit and a spin–spin coupling are generated in a Hamiltonian that has neither.</p>
+<p><strong>What it would add.</strong> The complement of a corpus result. <em>The Charged Spin-Half Fluid</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>) establishes that the classical field does not turn the spin; Takabayasi shows that the terms which do turn it are exactly of magnetic-field type. Together they classify every torque on the spin: the classical field's torque is absent, the quantum torque is a field.</p>
+<p><strong>Where it lands.</strong> That article's paragraph on convention, and <em>The Spin-Half Fluid and the Takabayasi Correspondence</em> (<code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>), where the dictionary is kept.</p>
+<p><strong>What stands in the way.</strong> The corpus's relativistic element has no separate quantum potential to gather terms into, since the matter is in the field throughout; the splitting is a non-relativistic artefact, so the import is a statement about the corpus's non-relativistic limit.</p>
+<h3 id="3-the-spin-torque-is-the-exchange-torque-and-spin-waves-are-solutions">3. The spin torque is the exchange torque, and spin waves are solutions</h3>
+<p><strong>The idea.</strong> The torque in $\partial_t\vec S$ has the Herring–Kittel exchange form, so the hydrodynamical equations admit modes that behave as spin waves: a slow spatial rotation of $\vec S$ carried by the same fluid.</p>
+<p><strong>What it would add.</strong> A mode where the corpus has an equation. <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) writes the spin's equation of motion but exhibits no solution, and the corpus's exchange physics is algebraic (<em>The Jordan–Wigner Transformation in Biquaternionic Form</em>), so a continuum mode with an exchange-like restoring torque bridges the two treatments.</p>
+<p><strong>Where it lands.</strong> That article's equation-of-motion section, as the worked mode.</p>
+<p><strong>What stands in the way.</strong> The solutions are referred forward to Part II, which is not in this folder, so the claim is clear and the calculation elsewhere.</p>
+<p>The remainder, one line each. The derivation of the bilinear identities without a representation of the $\sigma$'s says only that the seven basic quantities close under the algebra. The definition of a classical theory as one with no double-valued object deserves a footnote in <em>Why Biquaternions</em>. That $\hbar$ plays two roles here, and different roles in the phase-space and triad formulations, belongs to <em>The Reverse Madelung Map: Fluid to Nonlinear Wave</em> (<code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>) §<em>The One Constant</em>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analog gravity from Bose–Einstein condensates — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analog gravity from Bose-Einstein condensates - gr-qc_0011026.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analog-gravity-from-boseeinstein-condensates"><strong>Analog gravity from Bose–Einstein condensates</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0011026v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 November 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; Phys. Rev. D</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analog gravity from Bose-Einstein condensates - gr-qc_0011026-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analog gravity from Bose-Einstein condensates - gr-qc_0011026.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analog gravity from Bose-Einstein condensates - gr-qc_0011026.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks how far a Bose–Einstein condensate can be pushed as an analog of general relativity, considering the most general nonlinear Schrödinger equation: arbitrary nonlinearity, a position-dependent 3-tensor mass, time dependence. It shows that the existence of a low-momentum regime where phase perturbations obey a $(3+1)$-dimensional d'Alembertian with an effective Lorentzian metric is generic — independent of the form of the nonlinear terms — with one exception, attractive interatomic forces, where the equation stops being hyperbolic. Because the mass can be a position-dependent tensor, the resulting spatial slices need not be conformally flat, so the analog can mimic a genuinely generic gravitational field, not only the restricted class ordinary fluids give. The paper then uses the eikonal approximation to derive the Bogoliubov dispersion relation and identifies the acoustic Compton wavelength as the boundary between the Lorentzian and Newtonian regimes.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-target">The target</h3>
+<p>"We analyze prospects for the use of Bose–Einstein condensates as condensed-matter systems suitable for generating a generic 'effective metric', and for mimicking kinematic aspects of general relativity. We extend the analysis due to Garay et al. Taking a long term view, we ask what the ultimate limits of such a system might be."</p>
+<h3 id="the-generality">The generality</h3>
+<p>"We demonstrate that at low momenta linearized excitations of the phase of the condensate wavefunction obey a (3+1)-dimensional d'Alembertian equation coupling to a (3+1)-dimensional Lorentzian-signature 'effective metric' that is generic, and depends algebraically on the background field."</p>
+<h3 id="why-the-tensor-mass-matters">Why the tensor mass matters</h3>
+<p>"The simple analog models based on ordinary fluid dynamics are somewhat limited in this regard because the spatial slices are always conformally flat. After including these generalizations the only significant constraint left on the effective metric is due to the irrotational nature of the condensate 3-velocity." Anisotropic mass is not exotic: "Such anisotropic masses are well-known from condensed matter physics where they are most typically encountered in effective mass calculations for electrons immersed in a band structure."</p>
+<h3 id="the-generic-feature-claim">The generic-feature claim</h3>
+<p>"the existence of a regime in which phase perturbations of the wave function of the BEC (or quasi-BEC) behave as though coupled to an 'effective Lorentzian metric' is a generic feature, independent of the explicit form of the non-linear terms in the Schrödinger equation. The only exception comes about when the forces exerted between atoms are attractive. In this case the equation of motion for the phase perturbations are no longer hyperbolic, so the whole notion of wave disappears for these systems. (In GR language, this corresponds to a Euclidean-signature metric.)"</p>
+<h3 id="the-compton-wavelength-as-the-boundary">The Compton wavelength as the boundary</h3>
+<p>"If, using the speed of sound, we introduce a notion of 'acoustic Compton wavelength' $\lambda_c\equiv\hbar/(\mu c)$ ... (76), and its isotropic partner (77) actually interpolates between two different regimes depending on the value of the wavelength $\lambda=2\pi/\|\vec k\|$ with respect to the acoustic Compton wavelength." For $\lambda\gg\lambda_c$ the dispersion is the phonon relation $\omega\approx c\|\vec k\|$; short wavelengths probe the Schrödinger equation.</p>
+<h3 id="why-the-metric-is-only-approximate">Why the metric is only approximate</h3>
+<p>"the whole notion of 'effective metric' in these BEC systems is intrinsically an approximation valid for certain ranges of frequency and wavenumber — this should not really be a surprise since even for normal acoustic systems eventually the atomic nature of matter provides a natural cutoff."</p>
+<h3 id="the-experimental-estimate">The experimental estimate</h3>
+<p>From $\hbar c/2\pi k_B R$ with $R\approx10\,\mu$m, "$T\approx10^{-9}$ K. While extremely small this temperature is only three orders of magnitude less than that of the BEC itself", and "this order of magnitude estimate for the Hawking temperature is often misleadingly low".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-genericity-the-mechanism-does-not-depend-on-the-details">1. Genericity: the mechanism does not depend on the details</h3>
+<p><strong>The idea.</strong> The Lorentzian regime exists for arbitrary nonlinearity and arbitrary mass tensor. What produces it is not a special choice of dynamics but the structure of the linearisation, so the phenomenon is robust and the exceptional case is identifiable (attractive forces, where hyperbolicity fails and the metric goes Euclidean).</p>
+<p><strong>What it would add.</strong> A strong form of an emergence claim: not "here is a model that works" but "this class of models works, and here is the boundary of the class". The corpus's <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> asserts a geometry. A genericity statement with an exceptional case is a much better-evidenced claim, and it is the shape the corpus's emergence claims should take.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is about a family of nonlinear Schrödinger equations. The corpus has no such family, so the evidence cannot be transferred, only the epistemic standard.</p>
+<h3 id="2-signature-can-flip-with-the-sign-of-an-interaction">2. Signature can flip with the sign of an interaction</h3>
+<p><strong>The idea.</strong> Repulsive interatomic forces give a Lorentzian effective metric; attractive forces give a Euclidean one. The signature of the emergent metric is not fixed by anything deep — it follows the sign of a coupling.</p>
+<p><strong>What it would add.</strong> A concrete case where a metric's signature is an output rather than an input. The corpus's <code>articles_physics/the-k-norm-and-the-indefinite-structure.md</code> derives an indefinite structure from an algebraic fact; this paper derives one from a physical sign, and shows the other sign is realised by another physical system. The two accounts answer the same question differently, and the corpus should record that.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-k-norm-and-the-indefinite-structure.md</code>.</p>
+<p><strong>What stands in the way.</strong> The flip happens for a linearised phase equation. Ranked second.</p>
+<h3 id="3-a-cutoff-that-is-derived-not-postulated">3. A cutoff that is derived, not postulated</h3>
+<p><strong>The idea.</strong> The acoustic Compton wavelength is the scale at which the effective metric stops being valid, and it is computed from the condensate's parameters rather than inserted by hand.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> needs a scale at which its framework is claimed to hold. Here is a worked case in which the validity boundary is derived from the model, which is what makes the claim testable: the prediction is that Lorentz violation appears at a specific computable scale.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation uses the condensate's healing length and sound speed. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

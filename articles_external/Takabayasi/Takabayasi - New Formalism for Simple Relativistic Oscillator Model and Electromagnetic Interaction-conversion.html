@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - New Formalism for Simple Relativistic Oscillator Model and Electromagnetic…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="new-formalism-for-simple-relativistic-oscillator-model-and-electromagnetic-interaction"><strong>New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>66</strong> (1981) 1466, No. 4; received 8 June 1981</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Solves the standing difficulty of coupling an extended relativistic system to an electromagnetic field. In the ordinary bilocal oscillator the free Lagrangian's constraints are $P\cdot\xi=0$ and $\xi\cdot\Pi=0$; introduce the field in the usual way and both are destroyed, so mass and spin stop being conserved and the internal motion entangles with the centre of mass. The author writes a new singular Lagrangian that produces both conditions as <em>primary</em> constraints on an equal footing, by adjoining an auxiliary relative vector that turns out to be the canonical conjugate of $\xi$. In the new theory the free case is unchanged, the constraints survive the coupling, the model stays confined under an arbitrary field, spin and rest mass are conserved or quasi-conserved, and the $g$-factor is common to all spin states with $g=2$ privileged.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>Now, if we introduce electromagnetic interaction in the above Lagrangian formalism in a usual way, this invalidates the relations (4) and (5) and consequently the coupling between internal and external motions becomes very complicated; thus neither $M^2$ nor $J$ is constant of motion any longer. In fact the introduction of electromagnetic interaction into any relativistic extended system has been always a difficult problem. In this paper we show that this difficulty is overcome for the present model by starting with a new Lagrangian which yields both (2) and (4) as primary constraints on equal footing, and by introducing electromagnetic interaction in keeping the symmetry between $\xi_\mu$ and $\Pi_\mu$. The new theory is equivalent with the original one in the free case, but under the introduction of electromagnetic interaction the relations (4) and (5) remain valid in the new theory and accordingly the simple characteristics of theory in the free case are essentially maintained.</p>
+<h3 id="what-the-free-model-was">What the free model was</h3>
+<p>"The system is described by the geometrical center-of-mass coordinate $X^\mu(\tau)$ and the relative coordinate $\xi^\mu(\tau)$ ... and the theory is defined, in the free case, by the action principle $\delta\int L_1 d\tau=0$, with the singular Lagrangian" $L_1=-\tfrac12[\kappa^2(\dot X^2+\dot\xi^2)-U]$ where $U=\kappa^2\xi^2+U_0$. "This yields the primary constraints $P\cdot\dot X=0$ ... $P^2+4\kappa^2\Pi^2+U_0=0$", where $P^\mu$ denotes the 4-momentum of the system while $\Pi^\mu$ is the canonical conjugate for $\xi_\mu$. "Further we get $P\cdot\Pi=0$ as a secondary constraint. The system has the intrinsic angular momentum tensor $S^{\mu\nu}=\xi^{[\mu}\Pi^{\nu]}$, which satisfies $S^{\mu\nu}P_\nu=0$ ... Accordingly the magnitude of spin, $J$, is given by $J^2=(S^{\mu\nu})^2$."</p>
+<h3 id="the-free-spectrum-stated-cleanly">The free spectrum, stated cleanly</h3>
+<p>For a timelike $P$ the internal motion is an elliptic revolution in the CM rest frame, and its $J$ and the squared mass $M^2=-P^2$ are bounded by $J\le(M^2-U_0)/(4\kappa)$. For circular revolutions, representing pure rotational states, the spin becomes maximum such that $J=(M^2-U_0)/(4\kappa)$. In the corresponding quantum theory both $J$ and $M^2$ are quantized and they give, together with $J_3$, the quantum numbers to classify internal states of motion, and the relation holds to represent the leading Regge trajectory.</p>
+<h3 id="how-the-new-lagrangian-is-constrained">How the new Lagrangian is constrained</h3>
+<p>In (8) $\eta$ is an extra relative vector but the form of (8) implies that this is nothing but the canonical conjugate to $\xi$: $\partial L/\partial\dot\eta=\Pi=\kappa^2\dot\xi/2$, so that the internal degrees of freedom remain the same as before. The above form of the Lagrangian was further dictated by the following invariance requirements. First the theory should be invariant under arbitrary reparametrization of $\tau$. Also it must be invariant under $X^\mu\to X^\mu+a_1\eta^\mu+a_2\xi^\mu$, so that the two conditions follow from the Lagrangian both as primary constraints.</p>
+<p>Finally the theory should be in invariant under the $O(2)$ rotation mixing $\xi$ and $\eta$ by a constant angle. It is interesting that this projection tensor $D_{\mu\nu}$ was originally introduced for the treatment of a trilocal model.</p>
+<h3 id="the-results-under-a-general-field">The results under a general field</h3>
+<p>The abstract states them: The theory exhibits that under arbitrary electromagnetic field the system is stable and remains confined, with the magnitude of spin and the rest mass being conserved or quasi-conserved. Also the model has a g-factor common to all spin states.</p>
+<p>Thus in our model the g-factor is common to all eigenstates, irrespective of mass and spin values. There is no electric moment in the rest frame.</p>
+<h3 id="why-math48-is-special">Why $g=2$ is special</h3>
+<p>"The case $g=2$ ... is distinguished, because in this case $\dot X_\mu$ is colinear with $P_\mu$ in the limit where the electromagnetic field is constant. This is proved from (34)." "The above equations can be solved in the following way. We consider the 'moving Lorentz transformation' $R_{\mu\nu}(t)$ defined by $R_{\mu\rho}\dot R_{\nu\rho}=-\tfrac12 eF_{\mu\nu}$. Then the transformed quantities satisfy the equations of motion in the free case ... Since the solutions to free case are known, we only need to solve the set for a given constant field $F_{\mu\nu}$, and this is always possible."</p>
+<p>That shows that the orbital motion and internal revolution make precessions with the same frequency, whose value is $\omega=eH/M$ with respect to the proper time of the center-of-mass.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-coupling-an-extended-system-by-keeping-the-constraint-structure-not-by-minimal-substitution">1. Coupling an extended system by keeping the constraint structure, not by minimal substitution</h3>
+<p><strong>The idea.</strong> The obstacle is not the field but the constraints: minimal substitution is a recipe for point particles, and applied to an extended object it turns primary constraints into messy secondary ones. The repair is to write a Lagrangian whose invariances <em>produce</em> the wanted constraints, then couple in a way that preserves the symmetry between coordinate and momentum.</p>
+<p><strong>What it would add.</strong> A method. The corpus's charged-fluid articles use minimal substitution throughout and inherit the entanglement without noticing it; here the diagnosis is explicit and the cure is a redesign of the Lagrangian rather than a patching of the equations. That reframes how do you couple a field to an extended object as which invariances do you want the Lagrangian to enforce.</p>
+<p><strong>Where it lands.</strong> §<em>The Coupling</em> of <em>The Charged Schrödinger Fluid</em> (<code>articles_physics/the-charged-schrodinger-fluid.md</code>), as the constraint-preserving coupling.</p>
+<p><strong>What stands in the way.</strong> The construction is specific to the oscillator potential; there is no general prescription for a different internal dynamics.</p>
+<h3 id="2-a">2. A</h3>
+<p>$g$-factor common to all levels, from the geometry rather than the spin value</p>
+<p><strong>The idea.</strong> Every state of this model has the same $g$, whatever its mass and spin. The magnetic moment is not attached to the spin quantum number but to the relation between $\dot X$ and $P$, which is a property of the whole model. $g=2$ is the value at which $\dot X$ becomes parallel to $P$ in a constant field, and only there do the equations reduce to the free ones.</p>
+<p><strong>What it would add.</strong> A derivation of $g=2$ rather than a match to it. <em>The Classical Origin of $g-2$ in Biquaternionic Form</em> (<code>articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.md</code>) explains the anomaly factor from the fluid; here the tree-level value 2 is a consequence of a degeneracy in the constraint algebra, and departures from $g=2$ are departures from that degeneracy. The two accounts are about different corrections and both are needed.</p>
+<p><strong>Where it lands.</strong> §<em>The Anomalous Moment</em>, as the tree-level origin.</p>
+<p><strong>What stands in the way.</strong> The claim that $g$ is level-independent depends on the oscillator potential; a different binding would presumably give a level-dependent $g$, and the paper does not test this.</p>
+<h3 id="3-precession-at-the-orbital-frequency-is-the-definition-of-math68">3. Precession at the orbital frequency is the definition of $g=2$</h3>
+<p><strong>The idea.</strong> Under a constant magnetic field, the centre of mass orbits at $\omega=eH/M$ in proper time, and at $g=2$ the internal revolution precesses at exactly the same frequency. The moving Lorentz transformation that solves the equations is what makes the two frequencies coincide.</p>
+<p><strong>What it would add.</strong> A geometric criterion for $g=2$ — two frequencies equal — where the corpus states $g=2$ as a number or as a ratio of moments. The criterion is checkable in a classical solution, and it explains why $g=2$ simplifies the equations rather than merely being a nice value.</p>
+<p><strong>Where it lands.</strong> §<em>The Anomalous Moment</em> of <em>The Classical Origin of $g-2$ in Biquaternionic Form</em>, as the frequency criterion.</p>
+<p><strong>What stands in the way.</strong> The coincidence holds only for a constant field and only in the approximation where the field is weak enough for $\dot X\parallel P$.</p>
+<h3 id="4-stability-and-confinement-under-an-arbitrary-field-are-separate-claims">4. Stability and confinement under an arbitrary field are separate claims</h3>
+<p><strong>The idea.</strong> The abstract separates two things: the system stays <em>stable</em> (no runaway solutions) and stays <em>confined</em> (the constituents do not separate), for an arbitrary field, not only a homogeneous one. Spin magnitude and rest mass are conserved or quasi-conserved.</p>
+<p><strong>What it would add.</strong> A stability statement for a coupled extended system, which the corpus's spinning-particle discussions do not attempt. The distinction between conserved and quasi-conserved is also worth keeping: the constraint structure gives exact conservation in the free case and a slow drift otherwise, and the paper is careful about which is which.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field</em> in this folder, §<em>The Equations</em>, as the stability claim.</p>
+<p><strong>What stands in the way.</strong> "Quasi-conserved" is not given an error bound, so the stability claim is qualitative.</p>
+<p>The remainder, one line each. That the auxiliary vector $\eta$ is exactly the canonical conjugate of $\xi$ is the device that keeps the number of degrees of freedom fixed while doubling the apparent variables. That the projection tensor $D_{\mu\nu}$ was imported from the trilocal paper shows the two models share a constraint technology.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

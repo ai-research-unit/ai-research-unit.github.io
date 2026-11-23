@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy conditions and galaxy formation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions and galaxy formation - gr-qc_9710010.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="energy-conditions-and-galaxy-formation"><strong>Energy conditions and galaxy formation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9710010v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 October 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Energy conditions and galaxy formation - gr-qc_9710010-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions and galaxy formation - gr-qc_9710010.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Energy conditions and galaxy formation - gr-qc_9710010.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper uses the strong energy condition to bound the look-back time in a Friedmann–Robertson–Walker universe, and then turns the bound into a constraint on the Hubble parameter. The inputs are minimal: the present Hubble parameter, the age of the oldest halo stars, and the redshift at which they formed. From these it concludes that the strong energy condition must be violated between galaxy formation and the present, in an epoch where the cosmological temperature never exceeds 60 Kelvin. The argument is model independent as far as possible, and its consequence is that the age problem cannot be fixed by adjusting the equation of state of normal matter.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose-of-energy-conditions">The purpose of energy conditions</h3>
+<p>"The energy conditions of Einstein gravity are designed to side-step, as much as possible, the need to pin down a particular equation of state."</p>
+<h3 id="the-observational-claim">The observational claim</h3>
+<p>"Observation seems to indicate that the SEC is violated rather late in the life of the universe—somewhere between galaxy formation and the present time, in an epoch where the cosmological temperature never exceeds 60 Kelvin."</p>
+<h3 id="the-method">The method</h3>
+<p>"I show this by using the SEC to develop a simple and robust bound for the look-back time as a function of red-shift in Friedmann–Robertson–Walker (FRW) cosmologies."</p>
+<h3 id="the-inputs">The inputs</h3>
+<p>"The experimental observations I need are the present day value of the Hubble parameter $H_0$, an age estimate for the age of the oldest stars in the galactic halo, and an estimate for the red-shift at which these oldest stars formed."</p>
+<h3 id="the-energy-condition-in-frw">The energy condition in FRW</h3>
+<p>$$\text{SEC}\iff(\rho+3p\ge0)\ \text{and}\ (\rho+p\ge0).\qquad (paper\ 3)$$</p>
+<p>"Consider the quantity"</p>
+<p>$$\rho+3p=-\frac{3}{4\pi G}\frac{\ddot a}{a}.\qquad (paper\ 4)$$</p>
+<p>"Thus"</p>
+<p>$$\text{SEC}\Rightarrow\ddot a&lt;0.\qquad (paper\ 5)$$</p>
+<h3 id="the-look-back-bound">The look-back bound</h3>
+<p>"Since the SEC implies that the expansion is decelerating, we see"</p>
+<p>$$\text{SEC}\Rightarrow\tau(a;a_0)=|t-t_0|\le\frac{1}{H_0}\frac{a_0-a}{a_0}=\frac{1}{H_0}\frac{z}{1+z}.\qquad (paper\ 7)$$</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"This analysis of the age-of-the-universe problem is, as far as possible, model independent. I have shown that high values of the Hubble parameter imply that the SEC must be violated sometime between the epoch of galaxy formation and the present. This implies that the age-of-the-universe problem cannot simply be fixed by adjusting the equation of state of the cosmological fluid."</p>
+<h3 id="the-strongest-statement">The strongest statement</h3>
+<p>"Since all normal matter satisfies the SEC, fixing the age-of-universe problem will inescapably require the introduction of 'abnormal' matter—indeed we will need large quantities of abnormal matter, sufficient to overwhelm the gravitational effects of the normal matter."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-energy-condition-as-a-cosmological-test">1. An energy condition as a cosmological test</h3>
+<p><strong>The idea.</strong> A single inequality plus three observations forces a violation, with no model of the contents.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> has no source and therefore no energy condition. This paper shows exactly what such a condition buys: a model-independent conclusion. The article should state whether its carried metric satisfies the strong energy condition, since that is a cheap check with a strong consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The framework cannot supply $\rho$ and $p$. Ranked first, because it names the missing input and what it would settle.</p>
+<h3 id="2-deceleration-follows-from-an-inequality">2. Deceleration follows from an inequality</h3>
+<p><strong>The idea.</strong> The strong energy condition forces $\ddot a&lt;0$ regardless of curvature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use this as a consistency test: any cosmology with accelerated expansion must violate the condition somewhere, and the article should say where the framework does it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The test needs an expansion history. Ranked second.</p>
+<h3 id="3-bounds-instead-of-solutions">3. Bounds instead of solutions</h3>
+<p><strong>The idea.</strong> When the equation of state is unknown, an inequality still gives usable numbers.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records what cannot be computed. This paper is a working example of getting a definite answer without solving the system, which softens the catalogue's pessimism.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The bound is weak. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

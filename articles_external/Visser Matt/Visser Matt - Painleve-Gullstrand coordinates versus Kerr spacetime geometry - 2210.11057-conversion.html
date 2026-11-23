@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painlevé–Gullstrand coordinates versus Kerr spacetime geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand coordinates versus Kerr spacetime geometry - 2210.11057.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="painlevegullstrand-coordinates-versus-kerr-spacetime-geometry"><strong>Painlevé–Gullstrand coordinates versus Kerr spacetime geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2210.11057v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Stefano Liberati</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 October 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Painleve-Gullstrand coordinates versus Kerr spacetime geometry - 2210.11057-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand coordinates versus Kerr spacetime geometry - 2210.11057.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand coordinates versus Kerr spacetime geometry - 2210.11057.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Painlevé–Gullstrand coordinates make a static black hole look like a flowing fluid. The authors ask how far this construction reaches for a rotating black hole. They separate strong from weak versions of the coordinates and list what each can and cannot do. Weak and conformal variants cannot cover Kerr or Kerr–Newman. The best available route keeps unit lapse and deforms the spatial metric in a factorised, volume-preserving way. They close by asking how far this could support a laboratory analogue.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"We discuss the tension between the possible existence of Painlevé–Gullstrand coordinate systems versus the explicit geometrical features of the Kerr spacetime"</p>
+<h3 id="the-method">The method</h3>
+<p>"We shall carefully distinguish strong and weak Painlevé–Gullstrand coordinate systems, and conformal variants thereof, cataloguing what we know can and cannot be done"</p>
+<h3 id="the-limitation">The limitation</h3>
+<p>"while the weak Painlevé–Gullstrand and conformal Painlevé–Gullstrand coordinate systems cover a lot of territory, they are incapable of describing the astrophysically important Kerr spacetime or the physically important Kerr–Newman spacetime."</p>
+<h3 id="the-route-that-works">The route that works</h3>
+<p>"to get to the Kerr or Kerr–Newman spacetimes one must take a different route — keep the lapse function unity, $N=1$, but allow a controlled deformation of the 3-geometry."</p>
+<h3 id="the-deformation">The deformation</h3>
+<p>"A factorized volume-preserving deformation of 3-space, wherein $g_3=(I-u\otimes v)(I-u\otimes v)^{T}$ with $\vec u\cdot\vec v=0$, proves to be sufficient for describing the Kerr or Kerr–Newman spacetimes."</p>
+<h3 id="the-further-aim">The further aim</h3>
+<p>"We finish by exploring the (limited) extent to which this construction might possibly lead to implementing an 'analogue spacetime' model suitable for laboratory simulations of the Kerr spacetime."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-not-every-spacetime-has-a-river-frame">1. Not every spacetime has a river frame</h3>
+<p><strong>The idea.</strong> Some coordinate constructions are available only for restricted geometries.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> treats frame choice as free. This paper shows a frame that exists for Schwarzschild and fails for Kerr, which is a limit on that freedom.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on choosing a frame.</p>
+<p><strong>What stands in the way.</strong> The failure is specific to rotation. Ranked first, because it corrects a free-choice assumption.</p>
+<h3 id="2-unit-lapse-with-deformed-space">2. Unit lapse with deformed space</h3>
+<p><strong>The idea.</strong> Keeping the lapse at one and deforming the metric is enough for Kerr.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> fixes a unit metric. A deformation that preserves volume while encoding rotation is a construction the target could try.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of the metric.</p>
+<p><strong>What stands in the way.</strong> The deformation is not derived from the algebra. Ranked second.</p>
+<h3 id="3-analogue-rotation-is-hard">3. Analogue rotation is hard</h3>
+<p><strong>The idea.</strong> A laboratory model of Kerr needs the deformed geometry, not a simple flow.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> treats emergent geometry generally. A concrete obstruction to simulating rotation is a case study for how emergence fails.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of models.</p>
+<p><strong>What stands in the way.</strong> The obstruction is practical. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

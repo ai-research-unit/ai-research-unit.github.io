@@ -100,7 +100,7 @@ $$</p>
 <p>$$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}\ge0,
 $$</p>
-<p>with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of inertia $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.</p>
+<p>with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of inertia $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i&lt;j}K_{ij}^{2}&lt;0$.</p>
 <h2 id="the-antisymmetric-half">The Antisymmetric Half</h2>
 <p><strong>The antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator.</strong> For antisymmetric $K,L$ the commutator is antisymmetric, since</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <h2 id="the-two-forms">The Two Forms</h2>
 <p><strong>The trace form is definite on each half, with opposite signs.</strong> For symmetric $S$ and antisymmetric $K$,</p>
 <p>$$
-\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}>0,\qquad \operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}<0 ,
+\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}&gt;0,\qquad \operatorname{tr}(K^{2})=-\sum_{i&lt;j}2K_{ij}^{2}&lt;0 ,
 $$</p>
 <p>so the restriction to $\operatorname{Sym}_n$ has inertia $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has inertia $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of inertia $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.</p>
 <p><strong>The Killing form of $\mathfrak{so}(n)$ is $(n-2)\operatorname{tr}(XY)$.</strong> A direct computation from the structure constants gives</p>
@@ -147,16 +147,16 @@ $$</p>
 (e^{K})^{\mathsf T}e^{K}=e^{K^{\mathsf T}}e^{K}=e^{-K}e^{K}=\mathrm{I},\qquad \det e^{K}=e^{\operatorname{tr}K}=1 ,
 $$</p>
 <p>so $e^{K}\in\mathrm{SO}(n)$. Both identities were verified at $n=2,\dots,5$ by summing the series. The map $K\mapsto e^{K}$ is a local diffeomorphism near $0$ and its image is the identity component of $\mathrm{SO}(n)$, which is the whole group.</p>
-<p><strong>The exponential of a symmetric matrix is a positive definite symmetric matrix.</strong> If $S^{\mathsf T}=S$ then $(e^{S})^{\mathsf T}=e^{S}$, and the eigenvalues of $e^{S}$ are $e^{\lambda_i}>0$. Conversely every positive definite symmetric matrix is $e^{S}$ for a unique symmetric $S$, namely $S=\log P$ computed in the eigenbasis. So</p>
+<p><strong>The exponential of a symmetric matrix is a positive definite symmetric matrix.</strong> If $S^{\mathsf T}=S$ then $(e^{S})^{\mathsf T}=e^{S}$, and the eigenvalues of $e^{S}$ are $e^{\lambda_i}&gt;0$. Conversely every positive definite symmetric matrix is $e^{S}$ for a unique symmetric $S$, namely $S=\log P$ computed in the eigenbasis. So</p>
 <p>$$
 \exp:\operatorname{Sym}_n\longrightarrow\{P\ \text{symmetric, positive definite}\}
 $$</p>
 <p>is a bijection, and it is the model of the polar decomposition of <em>The Polar Decomposition from the Two Halves</em>.</p>
 <h2 id="the-case-math131">The Case $n=2$</h2>
-<p><strong>At $n=2$ the split is $4=3+1$ and the antisymmetric half is one line.</strong> The antisymmetric matrices are $\theta J$ with $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, so $\mathfrak{so}(2)=\mathbb{R}J$ is abelian of dimension $1$ and rank $1$. The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$ and $\sigma_1$, of dimension $3$.</p>
+<p><strong>At $n=2$ the split is $4=3+1$ and the antisymmetric half is one line.</strong> The antisymmetric matrices are $\theta J$ with $J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$, so $\mathfrak{so}(2)=\mathbb{R}J$ is abelian of dimension $1$ and rank $1$. The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$ and $\sigma_1$, of dimension $3$.</p>
 <p><strong>The exponential of the line is the circle.</strong> Since $J^{2}=-\mathrm{I}$,</p>
 <p>$$
-e^{\theta J}=(\cos\theta)\mathrm{I}+(\sin\theta)J=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},
+e^{\theta J}=(\cos\theta)\mathrm{I}+(\sin\theta)J=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix},
 $$</p>
 <p>so $\exp:\mathfrak{so}(2)\to\mathrm{SO}(2)$ is surjective with kernel $2\pi\mathbb{Z}$, and $\mathrm{SO}(2)$ is a circle. The period is the first instance of the double cover of <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>.</p>
 <h2 id="summary">Summary</h2>
@@ -199,7 +199,7 @@ $$</p>
 <td>the Killing form of $\mathfrak{so}(n)$</td>
 </tr>
 <tr>
-<td>$J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>$J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$</td>
 <td>the generator of $\mathfrak{so}(2)$</td>
 </tr>
 </tbody>

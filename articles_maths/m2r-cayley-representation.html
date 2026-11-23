@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The model.</strong> The complex numbers are two-dimensional over $\mathbb{R}$, and left multiplication by $Q$ is an $\mathbb{R}$-linear map of a two-dimensional space. Its matrix in the basis $(1,i)$ is the <strong>Cayley matrix</strong></p>
 <p>$$
-\mathsf{M}_2(Q)=\begin{pmatrix}q&-q'\\ q'&q\end{pmatrix}=qI_2+q'J,\qquad J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},\qquad J^{2}=-I_2,
+\mathsf{M}_2(Q)=\begin{pmatrix}q&amp;-q'\\ q'&amp;q\end{pmatrix}=qI_2+q'J,\qquad J=\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix},\qquad J^{2}=-I_2,
 $$</p>
 <p>and the map $Q\mapsto\mathsf{M}_2(Q)$ is an injective $\mathbb{R}$-algebra homomorphism. Its image is the algebra of <strong>conformal</strong> matrices, of real dimension two inside the four of $M_2(\mathbb{R})$.</p>
 <p><strong>The smallest model of the series, and the most degenerate.</strong> This is the first category of Part VI, and it is the one in which the general theory has the least to say. Everything that the other categories spend sections on collapses here, and it is worth stating the collapse at the outset so that the rest of the article is not read as a list of missing theorems.</p>
@@ -91,12 +91,12 @@ $$</p>
 <li>It realises the <strong>circle as the rotation group</strong>: the invertibles are $\mathrm{U}(1)$, their image is $SO(2)$, and the model is the classical isomorphism $\mathrm{U}(1)\cong SO(2)$ stated as a statement about matrices.</li>
 </ul>
 <p><strong>Boundaries.</strong> The algebra, its product, its classes and its specificities are <em>Complex Algebra</em>, <em>The Classes of Element of the Complex Algebra</em> and <em>The Specificities of the Complex Algebra</em>; the norm and the invertibles are <em>Complex Norm and Invertibility</em>; the spectrum and the sectors are <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>, <em>Eigenvalue Decomposition and Eigenbasis of a Complex Number</em> and <em>The Three Sectors of the Complex Algebra</em>; the geometry of the plane is <em>Rotations and Reflections in the Complex Plane</em> and <em>The Versors and the Orthogonal Group of the Complex Numbers</em>. The model of the algebra by matrices is also treated, for the second algebra of the block, in <em>Comparison of Element Representations and Matrix Models</em>. The operators of this model are <em>$M_2(\mathbb{R})$ Cayley Representation : Operators</em>.</p>
-<p><strong>Conventions.</strong> The basis is $(1,i)$ with $i^{2}=-1$; the element is $Q=q+iq'$, its conjugate is $\bar Q=q-iq'$, and its norm is $N(Q)=Q\bar Q=q^{2}+q'^{2}$. The real and imaginary subspaces are $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$. The structure matrix is $J$, and $\mathsf{M}_2$ is the Cayley map. The transpose is written $^{\mathsf T}$ and is taken in the basis $(1,i)$.</p>
+<p><strong>Conventions.</strong> The basis is $(1,i)$ with $i^{2}=-1$; the element is $Q=q+iq'$, its conjugate is $\bar Q=q-iq'$, and its norm is $N(Q)=Q\bar Q=q^{2}+q'{}^{2}$. The real and imaginary subspaces are $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$. The structure matrix is $J$, and $\mathsf{M}_2$ is the Cayley map. The transpose is written $^{\mathsf T}$ and is taken in the basis $(1,i)$.</p>
 <h2 id="the-frame">The Frame</h2>
 <p><strong>Definition.</strong> The <strong>Cayley matrix</strong> of $Q$ is the matrix whose columns are the coordinate columns of $Q\cdot 1$ and $Q\cdot i$:</p>
 <p>$$
 \mathsf{M}_2(Q)=\bigl(\ Q\cdot 1\ \big|\ Q\cdot i\ \bigr)
-=\begin{pmatrix}q&-q'\\ q'&q\end{pmatrix}.
+=\begin{pmatrix}q&amp;-q'\\ q'&amp;q\end{pmatrix}.
 $$</p>
 <p><strong>The reading of the display.</strong> The first column is $Q$ itself, so the map is injective by inspection: the element is recovered from the first column. The second column is the first one rotated by a quarter turn, because $Qi=iQ$. The matrix has two independent entries against the four of the ambient, and it is the sum</p>
 <p>$$
@@ -105,12 +105,12 @@ $$</p>
 <p>with $\mathsf{M}_2(1)=I_2$ and $\mathsf{M}_2(i)=J$. The four entries of the display are the two coordinates, each appearing twice with a sign.</p>
 <p><strong>The complex structure.</strong> The matrix $J$ is the model's name for $i$: it is the counter-clockwise quarter turn, $J^{2}=-I_2$, and it is the unique member of the image with square $-I_2$. The identity $J^{2}=-I_2$ is the matrix form of $i^{2}=-1$, and it is the only place where the sign of the algebra enters the model.</p>
 <p><strong>The frame, and the absence of a second.</strong> There is one distinguished basis of the carrier, $(1,i)$, and one distinguished basis of the ambient in the model's own terms, $(I_2,J)$. A different choice of basis of the carrier conjugates the model, $P\mathsf{M}_2(Q)P^{-1}$, and the conjugated family is again a copy of the field; so the model is determined up to conjugacy and no second structure is at stake. This is the sharpest difference from the quaternion category, where the two-sided action produced a second family and a signed transpose $D$ was needed to relate the two.</p>
-<p><strong>Theorem (the image is the centraliser of $J$).</strong> For a real $2\times2$ matrix $M=\begin{pmatrix}p&n\\ s&t\end{pmatrix}$,</p>
+<p><strong>Theorem (the image is the centraliser of $J$).</strong> For a real $2\times2$ matrix $M=\begin{pmatrix}p&amp;n\\ s&amp;t\end{pmatrix}$,</p>
 <p>$$
 MJ=JM\iff s=-n\ \text{and}\ p=t,
 $$</p>
 <p>so the centraliser of $J$ in $M_2(\mathbb{R})$ is exactly the image of $\mathsf{M}_2$, of dimension two.</p>
-<p><strong>Proof.</strong> Multiplying out, $MJ=\begin{pmatrix}n&-p\\ t&-s\end{pmatrix}$ and $JM=\begin{pmatrix}-s&-t\\ p&n\end{pmatrix}$; equality gives $n=-s$ and $p=t$.</p>
+<p><strong>Proof.</strong> Multiplying out, $MJ=\begin{pmatrix}n&amp;-p\\ t&amp;-s\end{pmatrix}$ and $JM=\begin{pmatrix}-s&amp;-t\\ p&amp;n\end{pmatrix}$; equality gives $n=-s$ and $p=t$.</p>
 <p><strong>Three descriptions of one subspace.</strong> The image is, equivalently:</p>
 <ul>
 <li>the matrices of the shape $qI_2+q'J$;</li>
@@ -140,8 +140,8 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Associativity of the algebra, exactly as in the other categories: the matrix of a composition is the product of the matrices, and the composition of the left multiplications is the left multiplication by the product. Concretely, for $Q=q+iq'$ and $P=p+ip'$,</p>
 <p>$$
-\begin{pmatrix}q&-q'\\ q'&q\end{pmatrix}\begin{pmatrix}p&-p'\\ p'&p\end{pmatrix}
-=\begin{pmatrix}qp-q'p'&-(qp'+q'p)\\ qp'+q'p&qp-q'p'\end{pmatrix}
+\begin{pmatrix}q&amp;-q'\\ q'&amp;q\end{pmatrix}\begin{pmatrix}p&amp;-p'\\ p'&amp;p\end{pmatrix}
+=\begin{pmatrix}qp-q'p'&amp;-(qp'+q'p)\\ qp'+q'p&amp;qp-q'p'\end{pmatrix}
 =\mathsf{M}_2(QP).
 $$</p>
 <p><strong>The image is closed.</strong> The image is closed under products, sums and real scalars, so it is a real subalgebra of $M_2(\mathbb{R})$; it is two-dimensional and it is commutative. It contains $I_2$ and it is a field: every nonzero member is invertible, because the inverse is exhibited in the section on the adjugate.</p>
@@ -182,9 +182,9 @@ $$</p>
 <h2 id="the-determinant">The Determinant</h2>
 <p><strong>Theorem (the determinant is the norm).</strong> For every $Q$,</p>
 <p>$$
-\det\mathsf{M}_2(Q)=q^{2}+q'^{2}=N(Q).
+\det\mathsf{M}_2(Q)=q^{2}+q'{}^{2}=N(Q).
 $$</p>
-<p><strong>Proof.</strong> $q\cdot q-(-q')\cdot q'=q^{2}+q'^{2}$; equivalently, the determinant of $qI_2+q'J$ is $q^{2}+q'^{2}$ because $J$ has eigenvalues $\pm i$ and the determinant is the product of the eigenvalues $q\pm iq'$.</p>
+<p><strong>Proof.</strong> $q\cdot q-(-q')\cdot q'=q^{2}+q'{}^{2}$; equivalently, the determinant of $qI_2+q'J$ is $q^{2}+q'{}^{2}$ because $J$ has eigenvalues $\pm i$ and the determinant is the product of the eigenvalues $q\pm iq'$.</p>
 <p><strong>The reading.</strong> This is the only model in the series in which the determinant <strong>is</strong> the Euclidean form of the algebra and not a power of it. The quaternion regular model had $\det=N^{2}$, a square that had to be undone; the split models have indefinite determinants; here the determinant is the norm itself, positive definite, and the algebra is a Euclidean plane.</p>
 <p><strong>The consequences.</strong></p>
 <ul>
@@ -194,12 +194,12 @@ $$</p>
 <li>The determinant is multiplicative, so the model carries the multiplicative property of the norm without correction: $\det(\mathsf{M}_2(Q)\mathsf{M}_2(P))=N(Q)N(P)=N(QP)$.</li>
 </ul>
 <p><strong>The geometric reading.</strong> The determinant is the area scaling of the map $\mathsf{M}_2(Q)$, and the modulus is its length scaling. The two are related by $\det=N=\lvert Q\rvert^{2}$ because both singular values of $\mathsf{M}_2(Q)$ are $\lvert Q\rvert$: the matrix is a similarity, so it scales lengths by $\lvert Q\rvert$ and areas by $\lvert Q\rvert^{2}$. The identity $\det=\lvert Q\rvert^{2}$ is therefore the statement that $\mathsf{M}_2(Q)$ is conformal, and it is why the image is called the conformal matrices.</p>
-<p><strong>The comparison with the neighbouring categories.</strong> In the split-complex algebra the determinant $q^{2}-q'^{2}$ is indefinite and its zero set is the pair of null lines; in the dual numbers it is degenerate and its zero set is a line. Here the zero set is a point, and this is the whole of the difference between a field and the two algebras with zero divisors: the geometry of the determinant's zero set <em>is</em> the algebraic trichotomy of Part VI's first three categories.</p>
+<p><strong>The comparison with the neighbouring categories.</strong> In the split-complex algebra the determinant $q^{2}-q'{}^{2}$ is indefinite and its zero set is the pair of null lines; in the dual numbers it is degenerate and its zero set is a line. Here the zero set is a point, and this is the whole of the difference between a field and the two algebras with zero divisors: the geometry of the determinant's zero set <em>is</em> the algebraic trichotomy of Part VI's first three categories.</p>
 <h2 id="the-spectral-projectors">The Spectral Projectors</h2>
 <p><strong>No real idempotent but $0$ and $I_2$.</strong> An idempotent of the image is an idempotent of the field, hence $0$ or $1$; so the image contains no nontrivial projection, and there is no Peirce decomposition, no corner algebra and no rank-one locus inside it. This is the sharpest absence of the category, and every other absence follows from it.</p>
 <p><strong>The eigenvalues.</strong> The characteristic polynomial is</p>
 <p>$$
-\chi(\lambda)=\lambda^{2}-2q\lambda+N=(\lambda-q)^{2}+q'^{2},
+\chi(\lambda)=\lambda^{2}-2q\lambda+N=(\lambda-q)^{2}+q'{}^{2},
 $$</p>
 <p>whose roots are $\lambda=q+iq'$ and $\bar\lambda=q-iq'$. They are real only when $q'=0$, in which case the matrix is $qI_2$ and the two roots coincide. So a non-real element of the image has no real eigenvalue, and the two eigenvalues are exchanged by conjugation. The trace is their sum, $2q$, and the determinant their product, $N$.</p>
 <p><strong>The projectors over $\mathbb{C}$.</strong> In the complexified ambient the algebra has the two idempotents</p>
@@ -222,11 +222,11 @@ v_{\pm}=\tfrac{1}{\sqrt2}\begin{pmatrix}1\\ \mp i\end{pmatrix},
 $$</p>
 <p>with $\mathsf{M}_2(Q)v_{+}=\lambda v_{+}$ and $\mathsf{M}_2(Q)v_{-}=\bar\lambda v_{-}$. The diagonalising matrix is</p>
 <p>$$
-U=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\ -i&i\end{pmatrix},\qquad
+U=\frac{1}{\sqrt2}\begin{pmatrix}1&amp;1\\ -i&amp;i\end{pmatrix},\qquad
 U^{*}\mathsf{M}_2(Q)U=\operatorname{diag}(\lambda,\bar\lambda),
 $$</p>
 <p>which is unitary and of determinant $i$, and which is the model's own discrete Fourier transform of order two.</p>
-<p><strong>What the diagonalising matrix is.</strong> It is not an arbitrary unitary. Its two columns are the two eigenvectors, and they are the <strong>isotropic lines</strong> of the complexified norm: over $\mathbb{C}$ the quadratic form $q^{2}+q'^{2}=(q+iq')(q-iq')$ factors as a product of two linear forms, so the complexified plane is a split quadratic space and its two null lines are exactly the two eigenlines. The diagonalisation of a rotation is therefore the statement that the complexified Euclidean plane is a hyperbolic plane, that the two eigenvalues are the two coordinate functions in its null coordinates, and that the rotation acts as a scaling in those coordinates.</p>
+<p><strong>What the diagonalising matrix is.</strong> It is not an arbitrary unitary. Its two columns are the two eigenvectors, and they are the <strong>isotropic lines</strong> of the complexified norm: over $\mathbb{C}$ the quadratic form $q^{2}+q'{}^{2}=(q+iq')(q-iq')$ factors as a product of two linear forms, so the complexified plane is a split quadratic space and its two null lines are exactly the two eigenlines. The diagonalisation of a rotation is therefore the statement that the complexified Euclidean plane is a hyperbolic plane, that the two eigenvalues are the two coordinate functions in its null coordinates, and that the rotation acts as a scaling in those coordinates.</p>
 <p><strong>Two readings of the same matrix.</strong> Over $\mathbb{R}$, $U$ is an orthogonal matrix of $\mathbb{R}^{4}$: it is the real matrix of the complex-linear map $(z_1,z_2)\mapsto\bigl((z_1+z_2)/\sqrt2,\ i(z_2-z_1)/\sqrt2\bigr)$, and it is the change of basis from the coordinate frame to the frame of the two points of the spectrum. Over $\mathbb{C}$ it is the matrix of the isomorphism $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\to\mathbb{C}\times\mathbb{C}$ that the two idempotents define. The two readings are one matrix, and the second is the reason the first exists.</p>
 <h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
 <p><strong>Theorem (the adjugate is the transpose).</strong> For every $Q$,</p>
@@ -237,7 +237,7 @@ $$</p>
 <p>$$
 \mathsf{M}_2(Q)^{-1}=\frac{\mathsf{M}_2(\bar Q)}{N(Q)}=\mathsf{M}_2\!\left(\frac{\bar Q}{N(Q)}\right).
 $$</p>
-<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ is $\begin{pmatrix}d&-b\\ -c&a\end{pmatrix}$; applied to the display it gives $\begin{pmatrix}q&q'\\ -q'&q\end{pmatrix}$, which is both the transpose and the Cayley matrix of $\bar Q$.</p>
+<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}$ is $\begin{pmatrix}d&amp;-b\\ -c&amp;a\end{pmatrix}$; applied to the display it gives $\begin{pmatrix}q&amp;q'\\ -q'&amp;q\end{pmatrix}$, which is both the transpose and the Cayley matrix of $\bar Q$.</p>
 <p><strong>The triple coincidence.</strong> In this model, three operations that are distinct in every other category are the same operation:</p>
 <p>$$
 \text{adjugate}=\text{transpose}=\text{the Cayley matrix of the conjugate}.
@@ -253,12 +253,12 @@ $$</p>
 $$</p>
 <p><strong>The polar decomposition.</strong> Since the matrix is conformal, its polar decomposition is the scalar-times-rotation factorisation</p>
 <p>$$
-\mathsf{M}_2(Q)=\lvert Q\rvert\, R_\theta,\qquad R_\theta=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},\qquad Q=\lvert Q\rvert e^{i\theta},
+\mathsf{M}_2(Q)=\lvert Q\rvert\, R_\theta,\qquad R_\theta=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix},\qquad Q=\lvert Q\rvert e^{i\theta},
 $$</p>
 <p>and the two factors are the modulus and the unit of the algebra. So the polar decomposition of the algebra and the polar decomposition of the matrix are the same decomposition, read once in $\mathbb{C}$ and once in $M_2(\mathbb{R})$.</p>
 <p><strong>The reflections.</strong> The transpose realises the involution, so the anti-linear maps of the plane are the matrices $\mathsf{M}_2(Q)E$ with $E=\operatorname{diag}(1,-1)$,</p>
 <p>$$
-\mathsf{M}_2(u)E=\begin{pmatrix}\cos2\alpha&\sin2\alpha\\ \sin2\alpha&-\cos2\alpha\end{pmatrix},\qquad u=e^{2i\alpha},
+\mathsf{M}_2(u)E=\begin{pmatrix}\cos2\alpha&amp;\sin2\alpha\\ \sin2\alpha&amp;-\cos2\alpha\end{pmatrix},\qquad u=e^{2i\alpha},
 $$</p>
 <p>of determinant $-1$, trace $0$ and eigenvalues $\pm1$: these are the reflections, and the orthogonal group of the plane is $O(2)=\mathsf{M}_2(\mathrm{U}(1))\cup\mathsf{M}_2(\mathrm{U}(1))E$. The reflections are therefore <strong>not</strong> in the image, and the reason is the determinant: an anti-linear map has negative determinant, and the image has positive determinant everywhere except at the origin. This is the first appearance of the complement of the image, and it is the complement that the operators article identifies as the unreachable half of the ambient.</p>
 <h2 id="the-norms">The Norms</h2>
@@ -383,7 +383,7 @@ $$</p>
 <li>The image is the two-dimensional subalgebra of conformal matrices, characterised by $MJ=JM$, by the shape $qI_2+q'J$, and by being the real matrices of the complex-linear maps of the plane.</li>
 <li>The left and right multiplications coincide, the centraliser of the image is the image, and the image is a maximal commutative subalgebra of $M_2(\mathbb{R})$.</li>
 <li>The trace is $2q$, the traceless part is the imaginary line, and the trace form is the Minkowski form of inertia $(1,1)$ with Gram $\operatorname{diag}(2,-2)$.</li>
-<li>The determinant is the norm $q^{2}+q'^{2}$, positive definite, with zero set the single point $0$; the unit criterion is the same as the invertibility criterion and the same as the non-vanishing of the determinant.</li>
+<li>The determinant is the norm $q^{2}+q'{}^{2}$, positive definite, with zero set the single point $0$; the unit criterion is the same as the invertibility criterion and the same as the non-vanishing of the determinant.</li>
 <li>There is no idempotent but $0$ and $I_2$, so there is no Peirce frame over $\mathbb{R}$; over $\mathbb{C}$ the frame exists, with the two idempotents $P_{\pm}=\tfrac12(I_2\mp iJ)$ and the two isotropic eigenlines.</li>
 <li>The eigenvalues are $\lambda=q+iq'$ and $\bar\lambda$, the diagonalising matrix is the unitary $U$ of the second-order Fourier transform, and it is a rotation by $-45^{\circ}$ on the real plane.</li>
 <li>The adjugate, the transpose and the Cayley matrix of the conjugate are one matrix, so $\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N I_2$; every member of the image is a conformal normal matrix, and the invertibles are $SO(2)$.</li>
@@ -407,7 +407,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>$\mathsf{M}_2(i)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the complex structure</td>
+<td>$\mathsf{M}_2(i)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$, the complex structure</td>
 <td>this article</td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ $$</p>
 <td><em>Complex Algebra</em></td>
 </tr>
 <tr>
-<td>$N(Q)=q^{2}+q'^{2}$</td>
+<td>$N(Q)=q^{2}+q'{}^{2}$</td>
 <td>the norm, equal to $\det\mathsf{M}_2(Q)$</td>
 <td><em>Complex Norm and Invertibility</em></td>
 </tr>

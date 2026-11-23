@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yukawaon Model with U(3)×O(3) Family Symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Yukawaon Model with U(3)xO(3) Family Symmetries - 1011.1064.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="yukawaon-model-with-u3o3-family-symmetries"><strong>Yukawaon Model with U(3)×O(3) Family Symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.1064v3 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 5 June 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the preprint number OU-HET-687/2010 is printed)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Yukawaon Model with U(3)xO(3) Family Symmetries - 1011.1064-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Yukawaon Model with U(3)xO(3) Family Symmetries - 1011.1064.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Yukawaon Model with U(3)xO(3) Family Symmetries - 1011.1064.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a supersymmetric mass-matrix model in which the Yukawa couplings are not constants but vacuum expectation values of scalar fields ("yukawaons"), with two family symmetries $U(3)\times O(3)$ split between the sectors: $(\ell,e^c,u^c)\sim(3,3,3^*)$ and $(q,d^c,\nu^c)\sim(3,3,3)$. The charged-lepton mass matrix is the square of the electron-type yukawaon VEV, $M_e=k\langle\Phi_e\rangle\langle\Phi_e^T\rangle$, so the amplitude vector is a VEV and the closure becomes a statement about its components. The neutrino mass matrix follows from a seesaw with a Dirac term proportional to the same VEV. The reason for the second family group is technical: it lowers the cutoff at which the model is defined.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-assignment">The assignment</h3>
+<p>"quarks and leptons are assigned to $(\ell,e^c,u^c)\sim(3,3,3^*)$ of $U(3)$ and $(q,d^c,\nu^c)\sim(3,3,3)$ of $O(3)$."</p>
+<h3 id="the-mass-matrices">The mass matrices</h3>
+<p>"Then, the neutrino mass matrix is given by $M_\nu=m_DM_R^{-1}m_D^T$ with $m_D\propto\langle\Phi_e\rangle$, where the charged lepton mass matrix $M_e$ is given by $M_e=k\langle\Phi_e\rangle\langle\Phi_e^T\rangle$."</p>
+<h3 id="why-the-second-group">Why the second group</h3>
+<p>"A merit in considering $U(3)\times O(3)$ lies in that we can lower the cutoff scale $\Lambda$ in the yukawaon model."</p>
+<h3 id="the-lineage">The lineage</h3>
+<p>"stimulated by the Sumino's model with $U(3)\times O(3)$ symmetries for the charged leptons, we have considered a SUSY version of his model with a $U(3)$ family gauge symmetry by extending it to $U(3)\times O(3)$ family symmetries for the quarks and leptons (but $O(3)$ is already broken at $\mu=\Lambda$)."</p>
+<h3 id="the-extra-ingredient">The extra ingredient</h3>
+<p>"in order to distinguish each yukawaon from other ones, an additional $U(1)$ symmetry [i.e. $U(1)_X$] was assumed."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-mass-matrix-as-the-square-of-a-vev">1. The mass matrix as the square of a VEV</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: $M_e=k\langle\Phi_e\rangle\langle\Phi_e^T\rangle$, so the square roots of the masses are the VEV components themselves, and the closure is a property of a vector rather than of a matrix.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> derives $M_f=Y^fv/\sqrt2$ and then diagonalises $M_f^\dagger M_f$, which produces the masses as squares of singular values. The corpus's $\sqrt m$ has no independent status. Under this model the amplitude vector is the fundamental object and the mass matrix is derived from it, which is the reverse of the article's logic and would let the closure be imposed before diagonalisation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, "After the Breaking: The Mass Matrix".</p>
+<p><strong>What stands in the way.</strong> It requires a new scalar per fermion type and a second family group; the corpus has one Higgs doublet and no yukawaons. First, because it inverts the derivation the corpus uses.</p>
+<h3 id="2-a-neutrino-mass-matrix-from-the-same-vev">2. A neutrino mass matrix from the same VEV</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $M_\nu=m_DM_R^{-1}m_D^T$ with $m_D\propto\langle\Phi_e\rangle$ ties the lepton mixing to the amplitude vector that fixes the charged-lepton masses, so the PMNS angles and the closure share an input.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> treats the PMNS matrix as six measured parameters with no link to the charged-lepton spectrum. A shared VEV would make one prediction from the other, which is the kind of link the article says the framework does not supply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, in "What the Framework Supplies".</p>
+<p><strong>What stands in the way.</strong> The right-handed Majorana matrix $M_R$ is an independent input with its own structure, so the link is partial; and no angle is computed numerically here. Second.</p>
+<h3 id="3-lowering-the-cutoff-as-the-purpose-of-a-family-group">3. Lowering the cutoff as the purpose of a family group</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: a second family symmetry can be introduced not for phenomenology but to move the scale at which the model is valid, and that is a legitimate constraint on model building.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> says the flavour sector is defined at some high scale and never asks what fixes it. Here the answer is a symmetry choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, "The Framework's Position".</p>
+<p><strong>What stands in the way.</strong> The statement is qualitative and the scale is quoted without a derivation in this paper. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

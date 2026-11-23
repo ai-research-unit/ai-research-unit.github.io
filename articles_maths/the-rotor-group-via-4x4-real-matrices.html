@@ -140,14 +140,14 @@ $$</p>
 <p><strong>The matrices.</strong> The corpus fixes the $2\times2$ display once, on the four units,</p>
 <p>$$
 \mathsf M_2(e_t)=I_2,\qquad
-\mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+\mathsf M_2(\vec e_x)=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_y)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 $$</p>
 <p>and extends it by linearity. For a real quaternion $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$,</p>
 <p>$$
 \mathsf M_2(\tilde q)=q_tI_2+q_x\mathsf M_2(\vec e_x)+q_y\mathsf M_2(\vec e_y)+q_z\mathsf M_2(\vec e_z)
-=\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\-iq_x+q_y&q_t+iq_z\end{pmatrix}.
+=\begin{pmatrix}q_t-iq_z&amp;-iq_x-q_y\\-iq_x+q_y&amp;q_t+iq_z\end{pmatrix}.
 $$</p>
 <p><strong>The group.</strong> The display is multiplicative, since it is the restriction of an algebra isomorphism. For unit $\tilde q$ the matrix is unitary, $\mathsf M_2(\tilde q)^{\dagger}\mathsf M_2(\tilde q)=\mathsf M_2(\tilde q^{\natural})\mathsf M_2(\tilde q)=\mathrm{I}_2$, and its determinant is $\langle\tilde q\rangle_{\natural}=1$. So $\mathsf M_2$ carries $\mathrm{Spin}(3)$ into $SU(2)$, and it is onto because every $SU(2)$ matrix has the displayed shape with real $q_\mu$ and unit norm. It is injective because the four entries recover $(q_t,q_x,q_y,q_z)$.</p>
 <p><strong>The generators.</strong> Write $J_k:=\mathsf M_2(\vec e_k)$, so $J_k$ is the image of the $k$-th basis vector and not a new object. The three are anti-Hermitian, $J_k^{\dagger}=-J_k$, and each squares to $-\mathrm{I}_2$. Since the display is multiplicative and $\vec e_x\vec e_y=\vec e_z$, the bracket is</p>
@@ -173,18 +173,18 @@ L(\tilde q)_{\mu\nu}=\bigl[\tilde qe_\nu\bigr]_{\mu},
 \qquad
 L(\tilde q)=
 \begin{pmatrix}
-q_t&-q_x&-q_y&-q_z\\
-q_x&q_t&-q_z&q_y\\
-q_y&q_z&q_t&-q_x\\
-q_z&-q_y&q_x&q_t
+q_t&amp;-q_x&amp;-q_y&amp;-q_z\\
+q_x&amp;q_t&amp;-q_z&amp;q_y\\
+q_y&amp;q_z&amp;q_t&amp;-q_x\\
+q_z&amp;-q_y&amp;q_x&amp;q_t
 \end{pmatrix}.
 $$</p>
 <p>This is the matrix $L_{\mathrm{axf}}(\tilde q)$ of that article read at real coefficients: the corpus builds it for the biquaternion algebra, and this article uses the copy carried by the real quaternion subalgebra. The first column is $(q_t,q_x,q_y,q_z)^{\mathsf T}$, the coordinate column of $\tilde q$ itself, because $\tilde qe_t=\tilde q$. The other three columns are the products with the three vector units.</p>
 <p><strong>The three generators.</strong> The generators are the matrices of the three vector units, $L_k:=L(\vec e_k)$,</p>
 <p>$$
-L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L_x=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+L_y=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The properties of the generators.</strong> Each of the four statements below is a one-line consequence of the multiplication table and is checked exactly under <em>Verification</em>.</p>
 <ol>
@@ -201,7 +201,7 @@ $$</p>
 <p>of real dimension three. A general element is $aL_x+bL_y+cL_z$ with real $a,b,c$, the antisymmetric matrix</p>
 <p>$$
 aL_x+bL_y+cL_z=
-\begin{pmatrix}0&-a&-b&-c\\a&0&-c&b\\b&c&0&-a\\c&-b&a&0\end{pmatrix}.
+\begin{pmatrix}0&amp;-a&amp;-b&amp;-c\\a&amp;0&amp;-c&amp;b\\b&amp;c&amp;0&amp;-a\\c&amp;-b&amp;a&amp;0\end{pmatrix}.
 $$</p>
 <p>The bracket closes on $\mathfrak{g}_L$ with $[L_i,L_j]=2\varepsilon_{ijk}L_k$, so $\mathfrak{g}_L$ is a three-dimensional real Lie algebra. It is isomorphic to $\mathfrak{su}(2)$ by $L_k\mapsto J_k$, and isomorphic to $\mathfrak{so}(3)$ by the map to the cross-product generators. The isomorphism is not an equality: $\mathfrak{g}_L$ is a subspace of $\mathfrak{so}(4,\mathbb{R})$ and $\mathfrak{su}(2)$ is a subspace of $\mathfrak{u}(2)$, and the two subspaces are written in matrices of different sizes.</p>
 <p><strong>The group.</strong> Define</p>
@@ -319,7 +319,7 @@ $$</p>
 <p><em>Proof.</em> Let $W\subset\mathbb{H}$ be a real subspace carried into itself by left multiplication by every unit quaternion, hence by every quaternion, since the unit sphere spans $\mathbb{H}$ over $\mathbb{R}$ and scalar multiples are limits. If $W\neq0$ choose $X\in W$ with $X\neq0$. Then $\tilde qX\in W$ for every $\tilde q$, and left multiplication by $X$ is a linear isomorphism of $\mathbb{H}$, so $W$ contains $\{\tilde qX\}=\mathbb{H}$. Hence $W=\mathbb{H}$. ∎</p>
 <p><strong>Remark (where the line plus three-space splitting lives).</strong> The splitting $\mathbb{H}=\mathbb{R}\oplus\operatorname{Im}\mathbb{H}$ is invariant under the <strong>conjugation</strong> action, not under the left action. Conjugation fixes $e_t$ and preserves the imaginary part, which is why the adjoint display is a three-dimensional representation with a trivial direction beside it. Left multiplication does not fix $e_t$; it sends it to $\vec e_z$ under $L_z$. The two statements are consistent: the same group acts on the same four-dimensional space in two ways, one reducible and one not.</p>
 <p><strong>Theorem (isoclinic structure).</strong> In the basis $(e_t,\vec e_k,\vec e_i,\vec e_j)$, with $(i,j,k)$ cyclic, each generator $L_k$ is block diagonal with two copies of the same $2\times2$ rotation block. Consequently every element of $SO_R(4)_{\mathrm{left}}$ rotates its two invariant planes by the same angle, and the group is one of the two isoclinic copies of $S^3$ in $SO(4)$.</p>
-<p><em>Proof.</em> For $L_z$ in the basis $(e_t,\vec e_z,\vec e_x,\vec e_y)$ the columns are the coordinate columns of $\vec e_ze_t=\vec e_z$, $\vec e_z\vec e_z=-e_t$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$, which give $\operatorname{diag}(R,R)$ with $R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$. The other two are the same computation after a cyclic relabelling, and the relabelling is an automorphism of $\mathbb{H}$, so it conjugates the statement rather than changing it. For a general element, conjugating by $L(\tilde p)$ moves the axis to $\vec e_z$ and leaves $\theta$ unchanged, so the same basis gives $\operatorname{diag}(R_\theta,R_\theta)$ for the conjugate, hence equal angles in the two planes. ∎</p>
+<p><em>Proof.</em> For $L_z$ in the basis $(e_t,\vec e_z,\vec e_x,\vec e_y)$ the columns are the coordinate columns of $\vec e_ze_t=\vec e_z$, $\vec e_z\vec e_z=-e_t$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$, which give $\operatorname{diag}(R,R)$ with $R=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$. The other two are the same computation after a cyclic relabelling, and the relabelling is an automorphism of $\mathbb{H}$, so it conjugates the statement rather than changing it. For a general element, conjugating by $L(\tilde p)$ moves the axis to $\vec e_z$ and leaves $\theta$ unchanged, so the same basis gives $\operatorname{diag}(R_\theta,R_\theta)$ for the conjugate, hence equal angles in the two planes. ∎</p>
 <p><strong>Remark (the spectrum reads the same fact).</strong> The eigenvalues of $L(\tilde q)$ for $\tilde q=\cos\theta+\sin\theta\vec u$ are $e^{i\theta}$ and $e^{-i\theta}$, each with multiplicity two. A rotation of $\mathbb{R}^4$ by angles $\alpha,\beta$ in its two planes has eigenvalues $e^{\pm i\alpha},e^{\pm i\beta}$, and the two pairs coincide only when the angles agree up to sign. Equal multiplicity of the two pairs is isocliny.</p>
 <p><strong>Theorem (the two copies and the double cover).</strong> The map $(\tilde q_L,\tilde q_R)\mapsto[\tilde X\mapsto\tilde q_L\tilde X\tilde q_R^{-1}]$ is a surjection $S^3\times S^3\to SO(4)$ with kernel $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$. The left copy $SO_R(4)_{\mathrm{left}}$ is the factor $\tilde q_R=e_t$, the right copy $SO_R(4)_{\mathrm{right}}$ is the factor $\tilde q_L=e_t$, and the two copies meet in $\{\pm\mathrm{I}_4\}$. Infinitesimally $\mathfrak{so}(4)=\mathfrak{g}_L\oplus\mathfrak{g}_R$ is a direct sum of two commuting three-dimensional ideals, each isomorphic to $\mathfrak{su}(2)$.</p>
 <p><em>Proof.</em> The map is a surjective homomorphism onto $SO(4)$ by the classical theorem, and its kernel is the set of pairs with $\tilde q_L\tilde X=\tilde X\tilde q_R$ for all $\tilde X$. Taking $\tilde X=e_t$ gives $\tilde q_L=\tilde q_R$, and then $\tilde q_L$ commutes with every $\tilde X$, so it is real of modulus one, hence $\pm e_t$. For the intersection, $L(\tilde q)=R(\tilde p)$ forces $\tilde q=\tilde p$ from the action on $e_t$, and then $\tilde q$ is central, so $\tilde q=\pm e_t$. The Lie algebra statement follows by differentiating and by counting dimensions, $3+3=6$. ∎</p>
@@ -355,14 +355,14 @@ $$</p>
 <p><strong>The rotor.</strong> The quarter turn in rotor language is $\tilde q=\cos\tfrac\pi4\,e_t+\sin\tfrac\pi4\,\vec e_z=\tfrac{1}{\sqrt2}(e_t+\vec e_z)$, of rotor angle $\pi/4$, inducing a rotation of angle $\pi/2$.</p>
 <p><strong>The real display.</strong> With $\theta=\pi/2$ and $\vec u=\vec e_z$,</p>
 <p>$$
-\exp\bigl(\tfrac\pi2L_z\bigr)=\mathrm{I}_4+L_z=\begin{pmatrix}1&0&0&-1\\0&1&-1&0\\0&1&1&0\\1&0&0&1\end{pmatrix},
+\exp\bigl(\tfrac\pi2L_z\bigr)=\mathrm{I}_4+L_z=\begin{pmatrix}1&amp;0&amp;0&amp;-1\\0&amp;1&amp;-1&amp;0\\0&amp;1&amp;1&amp;0\\1&amp;0&amp;0&amp;1\end{pmatrix},
 \qquad
-L(\tilde q)=\frac{1}{\sqrt2}\begin{pmatrix}1&0&0&-1\\0&1&-1&0\\0&1&1&0\\1&0&0&1\end{pmatrix}.
+L(\tilde q)=\frac{1}{\sqrt2}\begin{pmatrix}1&amp;0&amp;0&amp;-1\\0&amp;1&amp;-1&amp;0\\0&amp;1&amp;1&amp;0\\1&amp;0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>The matrix rotates the plane $(e_t,\vec e_z)$ and the plane $(\vec e_x,\vec e_y)$, each by $\pi/2$, and the two blocks are equal: the element is isoclinic. The half-angle roots survive in the entries, $\tfrac{1}{\sqrt2}$ in each of the eight nonzero positions, and they do not cancel. They cancel only in a two-sided product, which is a different object and not the subject of this article.</p>
 <p><strong>The complex display.</strong> In the defining display the same element is diagonal,</p>
 <p>$$
-\mathsf M_2(\tilde q)=\frac{1}{\sqrt2}\bigl(\mathrm{I}_2+J_z\bigr)=\frac{1}{\sqrt2}\begin{pmatrix}1-i&0\\0&1+i\end{pmatrix}.
+\mathsf M_2(\tilde q)=\frac{1}{\sqrt2}\bigl(\mathrm{I}_2+J_z\bigr)=\frac{1}{\sqrt2}\begin{pmatrix}1-i&amp;0\\0&amp;1+i\end{pmatrix}.
 $$</p>
 <p>The two matrices are one group element in two displays. One has eight nonzero entries and no zero pattern worth the name. The other has two nonzero entries, both on the diagonal, and the diagonal position is the mark of the axis $\vec e_z$.</p>
 <p><strong>What the comparison shows.</strong> The complex display is smaller and, for this element, simpler: a diagonal unitary is the easiest matrix to read. The real display is larger and, for this element, more informative about the action, since it shows the two planes and the equality of the two angles, which the diagonal display hides behind the modulus-one entries.</p>
@@ -371,21 +371,21 @@ $$</p>
 <p>$$
 L(\tilde q)=
 \begin{pmatrix}
-c&-sn_x&-sn_y&-sn_z\\
-sn_x&c&-sn_z&sn_y\\
-sn_y&sn_z&c&-sn_x\\
-sn_z&-sn_y&sn_x&c
+c&amp;-sn_x&amp;-sn_y&amp;-sn_z\\
+sn_x&amp;c&amp;-sn_z&amp;sn_y\\
+sn_y&amp;sn_z&amp;c&amp;-sn_x\\
+sn_z&amp;-sn_y&amp;sn_x&amp;c
 \end{pmatrix}.
 $$</p>
 <p>The matrix is orthogonal of determinant one, and its trace is $4c=4\cos\tfrac\theta2$. The trace therefore reads the scalar part, which is the cosine of the half angle, and the pair $L(\tilde q)$, $L(-\tilde q)$ has traces $\pm4\cos\tfrac\theta2$. That is the sign, visible in a single number.</p>
 <p><strong>The complex display.</strong> The same element is</p>
 <p>$$
-\mathsf M_2(\tilde q)=\begin{pmatrix}c-isn_z&-isn_x-sn_y\\-isn_x+sn_y&c+isn_z\end{pmatrix},
+\mathsf M_2(\tilde q)=\begin{pmatrix}c-isn_z&amp;-isn_x-sn_y\\-isn_x+sn_y&amp;c+isn_z\end{pmatrix},
 $$</p>
 <p>of trace $2c$ and determinant one. The two displays agree on the scalar part up to the factor of the size, and they agree on the determinant exactly.</p>
 <h3 id="the-three-coordinate-quarter-turns">The Three Coordinate Quarter Turns</h3>
 <p><strong>One family, not three cases.</strong> For the three axes the quarter-turn rotors are $\tfrac{1}{\sqrt2}(e_t+\vec e_k)$, and the three matrices $L(\tfrac{1}{\sqrt2}(e_t+\vec e_k))=\tfrac{1}{\sqrt2}(\mathrm{I}_4+L_k)$ are obtained from one another by the cyclic permutation of the basis. The permutation is a change of basis and not a conjugation by an element of the group. The three axes are equivalent, and the display shows the equivalence as a relabelling of coordinates with no sign.</p>
-<p><strong>The complex side, the same three.</strong> In the defining display the three are $\tfrac{1}{\sqrt2}(\mathrm{I}_2+J_k)$, and only the third is diagonal. The first two are $\tfrac{1}{\sqrt2}\begin{pmatrix}1&-i\\-i&1\end{pmatrix}$ and $\tfrac{1}{\sqrt2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$, which are as far from diagonal as the real display is. The uniformity of the real display is therefore a statement about all three at once, while the complex display has one member of the family in a special form and two in a general one.</p>
+<p><strong>The complex side, the same three.</strong> In the defining display the three are $\tfrac{1}{\sqrt2}(\mathrm{I}_2+J_k)$, and only the third is diagonal. The first two are $\tfrac{1}{\sqrt2}\begin{pmatrix}1&amp;-i\\-i&amp;1\end{pmatrix}$ and $\tfrac{1}{\sqrt2}\begin{pmatrix}1&amp;-1\\1&amp;1\end{pmatrix}$, which are as far from diagonal as the real display is. The uniformity of the real display is therefore a statement about all three at once, while the complex display has one member of the family in a special form and two in a general one.</p>
 <h2 id="what-is-lost-and-what-is-gained">What Is Lost and What Is Gained</h2>
 <p><strong>Nothing about the group is lost.</strong> The left regular display is faithful, so the group and its multiplication are recovered exactly. The carrier $\mathbb{R}^4$ is the carrier $\mathbb{C}^2$ read over the reals, with the complex structure forgotten. The complex structure can be put back by choosing a point of $S^2$, and any two choices give conjugate displays. The complex module is therefore recoverable and not lost.</p>
 <p><strong>What is lost is the illusion.</strong> The $2\times2$ display makes the complex structure look like part of the group, because the entries are complex and one generator is diagonal. It is not part of the group: it is a choice, and the choice is a point of $S^2$. A writer who forgets this writes that the spin group has a preferred axis, or that the $z$-generator is the distinguished one. The $4\times4$ display cannot support the illusion, because its entries are real and no generator can be diagonal.</p>

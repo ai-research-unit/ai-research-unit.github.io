@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Particle, Two Edges: A Local Geometric Account of the Double Slit — A TUni (Continuity Theory) mechanism for edge–field interaction, directional beugung, and non-zero minima — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - One_Particle_One_Way_One_Slit_The_Double.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="one-particle-two-edges-a-local-geometric-account-of-the-double-slit-a-tuni-continuity-theory-mechanism-for-edgefield-interaction-directional-beugung-and-non-zero-minima"><strong>One Particle, Two Edges: A Local Geometric Account of the Double Slit — A TUni (Continuity Theory) mechanism for edge–field interaction, directional beugung, and non-zero minima</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer (Continuity Theory / TUni), as printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>2025, no month or version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - One_Particle_One_Way_One_Slit_The_Double-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - One_Particle_One_Way_One_Slit_The_Double.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - One_Particle_One_Way_One_Slit_The_Double.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives the edge-response field of the earlier papers a full definition: a static field sourced by the aperture boundary, an integral over the edge with a Bessel kernel of lateral width $\lambda$, a geometric phase and potential, and a coupling $G(a)$ between two apertures. The particle goes through exactly one slit and samples the field of both edges locally, which is the mechanism offered in place of self-interference. The paper derives the directional fringes expected from oblique incidence, and closes with an experimental proposal that would separate the field's contribution from a purely geometric one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-field">The field</h3>
+<p>For an aperture $\Omega$ with boundary $\partial\Omega$,
+$$E_{\rm geo}(\mathbf r)=\int_{\partial\Omega}d\ell'\,n(\mathbf r')\,K_\lambda\!\left(r_\perp-\mathbf r'\right)W(\mathbf r')$$
+(paper 1), with $n$ the outward normal along the edge, $W$ edge microphysics (thickness, roughness, conductivity) and $K_\lambda$ "a real, lateral kernel with characteristic width ∼ λ (de Broglie wavelength for matter, optical wavelength for photons).". The analytic choice is
+$$K_\lambda(\rho)=\frac{1}{2\pi\ell_\lambda}J_0\!\left(\frac{|\rho|}{\ell_\lambda}\right)e^{-|\rho|/\ell_{\rm mic}},\qquad \ell_\lambda\sim\frac{\lambda}{2\pi}$$
+(paper 2), "which captures lateral coherence and short-range damping from edge roughness".</p>
+<h3 id="the-phase-the-potential-the-deflection">The phase, the potential, the deflection</h3>
+<p>$$\phi_{\rm geo}(r_\perp)=\alpha\int^{r_\perp}E_{\rm geo}\cdot d\ell,\qquad \alpha:=\frac{\Xi}{\hbar v}$$
+(paper 3), "ℓ, α := Ξ, (3) ℏv with v the particle speed and Ξ a coupling that depends on species (photon/electron/atom) and material."; then
+$$U_{\rm geo}(r_\perp)=\hbar v\beta\,\nabla\cdot E_{\rm geo}(r_\perp),\qquad \beta=O(1)$$
+(paper 4) and
+$$\Delta p_\perp=-\nabla_\perp U_{\rm geo}\int\frac{dz}{v}\approx-\tau\nabla_\perp U_{\rm geo}$$
+(paper 5), with interaction time $\tau$ across the screen region.</p>
+<h3 id="the-two-aperture-coupling">The two-aperture coupling</h3>
+<p>For $\Omega_L,\Omega_R$ at centre distance $a$, $E_{\rm geo}=E^{(L)}_{\rm geo}+E^{(R)}_{\rm geo}$ (paper 7), and A particle that physically crosses $\Omega_L$ still samples $E^{(R)}_{\rm geo}$ because the kernel $K_\lambda$ has lateral reach $\sim\lambda$. The strength of the passive aperture is
+$$G(a)=\int_{\partial\Omega_L}\int_{\partial\Omega_R}d\ell'\,d\ell''\,n(\mathbf r')\cdot n(\mathbf r'')\,K_\lambda(\mathbf r'-\mathbf r''),\qquad G(a)\downarrow\text{ with }a/\lambda$$
+(paper 8): "This is the precise TUni statement of 'the other slit launches a field'".</p>
+<h3 id="the-scalar-summary">The scalar summary</h3>
+<p>$$\cos\zeta_{\rm geo}=\sqrt{1-\left(\frac{\lambda}{d_{\rm eff}}\right)^{2}}$$
+(paper 6), $d_{\rm eff}$ an effective aperture scale including thickness and roughness: "ff (6) Small deff (narrow or rough edges) increase ζgeo and broaden the distribution. 4 Mechanism"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-boundary-integral-as-the-source-of-the-pattern">1. A boundary integral as the source of the pattern</h3>
+<p><strong>The idea.</strong> The pattern is produced by an integral over $\partial\Omega$, not by two points. That is a <strong>formula</strong>, and it is the one place in the batch where the aperture's shape enters as shape — thickness, roughness and normals — rather than as a scalar width.</p>
+<p><strong>What it would add.</strong> A second route from aperture geometry to a screen distribution, where the corpus's route is two amplitudes and a visibility.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The kernel and the couplings $\Xi$, $\beta$, $\tau$ and $W$ are all free; with four free functions the model can fit a fringe pattern, and the paper offers scaling laws ($\ell_\lambda\sim\lambda/2\pi$, $G$ decays with $a/\lambda$) rather than numbers. Nothing in it is computed for a stated aperture, so nothing can be checked.</p>
+<h3 id="2-math40-a-coupling-between-apertures">2. $G(a)$, a coupling between apertures</h3>
+<p><strong>The idea.</strong> The influence of the slit the particle did <em>not</em> go through is a single decreasing function of separation, defined as an overlap of edge kernels. That is the cleanest statement of the batch's central mechanism: it makes "the other slit" a measurable coupling rather than a metaphor. </p>
+<p><strong>What it would add.</strong> A quantity with a length scale in it, which is what a "which-path" experiment would need in order to be described.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, on the which-path qubit and the visibility.</p>
+<p><strong>What stands in the way.</strong> $G(a)$ is a functional of the aperture geometry and the kernel, and the paper never evaluates it; its claim that $G$ is not zero for $a\lesssim$ few $\lambda$ is the only quantitative statement, and it is stated, not derived.</p>
+<h3 id="3-a-scalar-that-summarizes-the-aperture">3. A scalar that summarizes the aperture</h3>
+<p><strong>The idea.</strong> $\cos\zeta_{\rm geo}=\sqrt{1-(\lambda/d_{\rm eff})^2}$ is the same function as the Lorentz factor and the same function as the gravitational cosine, with the aperture in the place of $c$ or $r_s$. Across the batch this is the recurring object.</p>
+<p><strong>What it would add.</strong> A single number per aperture that says how strongly it spreads a beam, comparable across experiments.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> $d_{\rm eff}$ is defined by the list of things it includes, not by a formula, so the number cannot be computed for a real slit; and the factor multiplies an intensity, which sets an envelope and cannot move a fringe.</p>
+<p>The rank is a judgement: the boundary integral first, because it is the batch's only shape-sensitive construction; $G(a)$ second, because it is the only coupling with a length in it; the scalar third, because it recurs so often that it has become a mannerism.</p>
+<p>This is a seven-page paper; the field, the kernel, the phase and potential, the deflection, the two-aperture coupling, the oblique-incidence stripes, the non-zero minima and the experimental proposal are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

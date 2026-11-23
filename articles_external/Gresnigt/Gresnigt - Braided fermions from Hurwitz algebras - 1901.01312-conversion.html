@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braided Fermions from Hurwitz Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braided fermions from Hurwitz algebras - 1901.01312.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="braided-fermions-from-hurwitz-algebras"><strong>Braided Fermions from Hurwitz Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1901.01312 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 December 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - Braided fermions from Hurwitz algebras - 1901.01312-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braided fermions from Hurwitz algebras - 1901.01312.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Braided fermions from Hurwitz algebras - 1901.01312.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A review of the braid–algebra correspondence (the companion of 1803.02202 and 1711.09011), followed by two speculative extensions. The review part repeats the identification of Helon-model ribbon braids with the basis states of the minimal left ideals of $Cl(6)$. The new part asks what the <em>unfaithfulness</em> of the $\mathbb{C}$ and $\mathbb{H}$ braid representations means physically, and proposes that it restricts which electric charges and how many distinct states a generation can have: charges outside $\{0,\pm e/3\}$ on a single ribbon are excluded, because $+2e/3$ and $-2e/3$ twists fall in the same equivalence class. A second speculation puts three generations in the exceptional Jordan algebra $J_3(\mathbb{O})$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-chain-of-isomorphisms">The chain of isomorphisms</h3>
+<p>A Hurwitz algebra satisfies $Q(a)Q(b)=Q(ab)$; there are four normed division algebras and their split cousins, and "the reduction of spinor spaces considered by Dixon [12], and the construction of minimal ideals considered by Furey [15] depend on the existence of nilpotents and primitive idempotents. These do not exist in normed division algebras, but do in their split algebra cousins". The generating mechanism is stated plainly: "Given a Hurwitz algebra identified with a spinor space, one acts on this spinor space with the algebra itself, from the left, right, or from both sides. Sometimes this does not make a difference, and sometimes it does." "Considering all the repeated nested actions generate the adjoint algebras, which are specific Clifford algebras.", and "the bivectors of a Clifford algebra close under commutation, providing a representation of the Lie algebra". The point of the small set: "The small set of Hurwitz algebras thus provide a means of selecting (or rather a mechanism for generating) very specific Clifford and Lie algebras from an otherwise infinite sets."</p>
+<h3 id="the-ideals-and-the-braids">The ideals and the braids</h3>
+<p>The split basis $\alpha_1=\frac12(-e_5+ie_4)$, $\alpha_2=\frac12(-e_3+ie_1)$, $\alpha_3=\frac12(-e_6+ie_2)$ with conjugates (paper 3–4), fermionic $\{\alpha_i,\alpha_j\}=0$, $\{\alpha_i^\dagger,\alpha_j\}=\delta_{ij}$ (paper 5), and the first minimal left ideal (paper 6). The Clifford braiding generators $\sigma_k=\frac{1}{\sqrt2}(1+e_{k+1}e_k)$, $\sigma_n=\frac{1}{\sqrt2}(1+e_1e_n)$ (paper 8); then
+$$\mathbb{C}\to B_2:\ \sigma_1=\tfrac{1}{\sqrt2}(1+i),\qquad \mathbb{H}\to B_3^c:\ \sigma_1=\tfrac{1}{\sqrt2}(1+I),\ \sigma_2=\tfrac{1}{\sqrt2}(1+J),\ \sigma_3=\tfrac{1}{\sqrt2}(1+K)$$
+(paper 9–10). The octonion case is handled by alternativity: "any two basis elements ea do generate an associative algebra isomorphic to a quaternion subalgebra of O. Thus, within O one finds seven distinct copies of B3c (as well as seven distinct copies of B2 generated from ea ).". The interchange of twist and braid, $\sigma_1\to[\frac12,\frac12,-\frac12]$ and its companions (paper 11), gives the braid-only fermions (paper 12) and, with $(\sigma_1\sigma_2)\mapsto\alpha_1^\dagger$ etc. and ${\sigma_2}^{-1}\sigma_1\mapsto\omega\omega^\dagger$ (paper 13), the ideal is recovered.</p>
+<h3 id="the-new-claim-unfaithfulness-cuts-the-charge-spectrum">The new claim: unfaithfulness cuts the charge spectrum</h3>
+<p>The $\mathbb{C}$ representation "is not faithful, with the order of the single generator (and its inverse) being eight". Because "the braid word for each twisted ribbon is even", only even products matter, and "any even product of B2 braid generators defined in (9) is equal to one of four complex numbers ±1, ±i, each defining an equivalence class of braids. The shortest":
+$$[I]\to1,\quad[\sigma_1^2]\to i,\quad[\sigma_1^4]=[\sigma_1^{-4}]\to-1,\quad[\sigma_1^{-2}](=[\sigma_1^6])\to-i$$
+(paper 15), matching helons $H_+=\sigma_1^2$, $H_-=\sigma_1^{-2}$, $H_0=I$ (paper 14) and charges $e/3$, $-e/3$, $0$. The conclusion: "electric charges (for a single ribbon) outside the range $\{0,e/3,-e/3\}$ are naturally excluded as a result of the complex representation of $B_2$ not being faithful", since "it is impossible to represent both a ribbon with charge $2e/3$ and a ribbon with charge $-2e/3$ in a consistent manner", the two lying in one class.</p>
+<p>For $\mathbb{H}$ the count is $2\times4+2^4=24$ unit quaternions of the allowed form $a+bI+cJ+dK$ with $a,b,c,d\in\{0,\pm\frac12,\pm1\}$ (paper 16), from which the three $J$-like braids $\sigma_1^2\mapsto I$, $\sigma_2^2\mapsto J$, $\sigma_3^2\mapsto K$ (paper 17) "must be ruled out from representing physical states", "es 18 equivalence classes, 16 with four terms and 2 with one term. It". The paper says what it cannot do: "It is not yet clear if it if possible to, and if so how, to identify 16 of these 18 equivalence classes with 16 distinct fermions"</p>
+<h3 id="three-generations">Three generations</h3>
+<p>$Cl(6)$ "is large enough to represent three generations", but the relation to the one-generation ideal construction "is however not yet clear". The proposal is $J_3(\mathbb{O})$ (paper 18), "the only Jordan algebra without a realization in terms of associative matrices", with the argument that "s, because for n ≥ 4, Jn (O) are not Jordan algebras. This idea has been explored recently by [29]." and hence no more than three generations; its automorphism group is $F_4$, whose invariant-fixing subgroup is exactly $SU(3)$, giving "three $SU(3)$ singlets, three triplets, three antitriplets, and three antisinglets".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-charge-quantisation-from-the-order-of-a-braid-generator">1. Charge quantisation from the order of a braid generator</h3>
+<p><strong>The idea.</strong> A ribbon twist is a power of $\sigma_1$; the map to $\mathbb{C}$ sends $\sigma_1^{2}$ to $i$, so even powers close into four values and only three charge classes survive. Charge quantisation in thirds, with $2e/3$ impossible on one ribbon, follows from a generator of order eight. A <strong>mechanism</strong>, with a stated count: four classes from $\mathbb{C}$, eighteen from $\mathbb{H}$.</p>
+<p><strong>What it would add.</strong> The corpus derives charge quantisation from a trace over a fourth colour, one third per colour. This derives the same third from the <em>order</em> of an algebraic generator, which is a different and much narrower mechanism: it forbids a single ribbon of charge $2e/3$ but not a hadron of charge $2e/3$, which is exactly how the observed spectrum behaves.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mechanism constrains a <em>ribbon</em>, not a particle, and the paper's own footnote concedes that if one built a particle from $2e/3$ ribbons its antiparticle could not be built, since $\sigma_1^{-4}$ and $\sigma_1^{4}$ coincide. So the exclusion is only consistent if the model's particles never use such a ribbon — which the model does not prove. And "not faithful is being asked to do the work of physically excluded", an inference from a representation to a superselection rule.</p>
+<h3 id="2-three-generations-from-math65">2. Three generations from $J_3(\mathbb{O})$</h3>
+<p><strong>The idea.</strong> One generation is one copy of the octonions; three copies sit in the $3\times3$ hermitian octonionic matrix; no larger $J_n(\mathbb{O})$ exists. A <strong>mechanism</strong> for the number three, from a classification theorem rather than a dynamical argument.</p>
+<p><strong>What it would add.</strong> The corpus's generations article concludes that "The algebra does not fix $N_g$" and that a derivation would need a topological index, a non-generation-blind anomaly, or dynamics. This is a fourth kind: a classification bound, from the termination of the exceptional Jordan algebras at $n=3$. It comes with a symmetry count, $F_4\to SU(3)$ giving "three triplets, three antitriplets".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper calls it speculation twice and says "many details remain to be worked out"; the embedding of three ideal-built generations into $J_3(\mathbb{O})$ is not exhibited, and the count "three" arrives as the size of a matrix, so it assumes what it explains.</p>
+<h3 id="3-faithful-versus-unfaithful-a-representations-defect-as-physics">3. Faithful versus unfaithful: a representation's defect as physics</h3>
+<p><strong>The idea.</strong> A representation that identifies distinct elements is read as a physical identification: many braids, one complex number, one state. The defect of the representation becomes a superselection rule. A <strong>reading</strong> of what a non-faithful representation means.</p>
+<p><strong>What it would add.</strong> The corpus uses faithful representations of the algebra, where distinct elements are distinct observables. A reading in which unfaithfulness is a feature is genuinely foreign to it and would be a sharp test: it predicts an upper bound on the number of distinct states, $18$, where the corpus's spectrum is unbounded.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/idempotents-ideals-and-observables.md</code>.</p>
+<p><strong>What stands in the way.</strong> A representation's kernel is a statement about the map, not about the states; reading it as a physical identification requires an argument that the map <em>is</em> the physical dictionary, and the paper does not give one. The count of 18 also does not yet match the 16 fermions it is meant to explain.</p>
+<p>The rank is a judgement: the charge mechanism first, because it makes a falsifiable statement about a spectrum; the Jordan-algebra count second, because it is an argument for three from a classification; the unfaithfulness reading third, because it is the most interpretive and the least complete.</p>
+<p>Ten pages: the Hurwitz algebras and the Clifford algebras they generate, the ideals, the braid representations, the identification, the charge and state counts, the Jordan-algebra extension, and a discussion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

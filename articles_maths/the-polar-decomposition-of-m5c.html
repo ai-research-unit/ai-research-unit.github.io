@@ -116,7 +116,7 @@ $$</p>
 <p><strong>Proof.</strong> The first formula is the theorem; the second follows by applying the first to $A^*$ and taking adjoints, or by $AA^*=U|A|^2U^*=U A^*AU^*$ and the uniqueness of the square root.</p>
 <h3 id="uniqueness">Uniqueness</h3>
 <p><strong>Theorem.</strong> If $A=UP=U'P'$ with $U,U'$ $*$-unitary and $P,P'$ positive definite, then $U=U'$ and $P=P'$. For a general $A$, the positive part is unique, and the partial isometry with initial space $\operatorname{ran}|A|$ is unique; it is zero on $\ker A$. A unitary extension is determined by an isometry from $\ker A$ onto $(\operatorname{ran}A)^\perp$.</p>
-<p><strong>Proof.</strong> $A^*A=P^2=P'^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; the canonical $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$ and is zero on $\ker|A|=\ker A$. A unitary extension is determined on $\ker A$ by an isometry onto $(\operatorname{ran}A)^\perp$.</p>
+<p><strong>Proof.</strong> $A^*A=P^2=P'{}^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; the canonical $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$ and is zero on $\ker|A|=\ker A$. A unitary extension is determined on $\ker A$ by an isometry onto $(\operatorname{ran}A)^\perp$.</p>
 <p><strong>Corollary.</strong> The polar decomposition gives a bijection between $GL_5$ and $U(5)\times\mathcal{P}$, where $\mathcal{P}$ is the cone of positive definite Hermitian matrices.</p>
 <p><strong>Proof.</strong> The map $(U,P)\mapsto UP$ is surjective by the theorem and injective by uniqueness; the inverse is $A\mapsto(A|A|^{-1},|A|)$.</p>
 <h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
@@ -135,7 +135,7 @@ $$</p>
 <p><strong>Proof.</strong> Diagonalize $|A|$ by a $*$-unitary $W$: $|A|=W\Sigma W^*$ with $\Sigma$ the diagonal of singular values. Then $A=U|A|=UW\Sigma W^*$; put $V=UW$, which is $*$-unitary when $A$ is invertible. In the general case, $U$ is a partial isometry; extend it to a $*$-unitary $V$ on the orthogonal complement of $\operatorname{ran}|A|$; the formula still holds because $\Sigma$ kills the kernel.</p>
 <p><strong>Corollary.</strong> The columns of $V$ are the left singular vectors, the columns of $W$ the right singular vectors, and $Av_k=\sigma_kw_k$? With the convention $A=V\Sigma W^*$, $Aw_k=\sigma_kv_k$ and $A^*v_k=\sigma_kw_k$.</p>
 <p><strong>Proof.</strong> $A=V\Sigma W^*$ gives $AW=V\Sigma$, so $Aw_k=\sigma_kv_k$; taking adjoints gives $A^*v_k=\sigma_kw_k$.</p>
-<p><strong>Corollary.</strong> The rank of $A$ is the number of nonzero singular values; the kernel is spanned by the right singular vectors with $\sigma_k=0$; the range is spanned by the left singular vectors with $\sigma_k>0$.</p>
+<p><strong>Corollary.</strong> The rank of $A$ is the number of nonzero singular values; the kernel is spanned by the right singular vectors with $\sigma_k=0$; the range is spanned by the left singular vectors with $\sigma_k&gt;0$.</p>
 <p><strong>Proof.</strong> The SVD is the diagonal form; the kernel and range are read on the zero and nonzero singular values.</p>
 <h3 id="the-norms-and-the-determinant">The Norms and the Determinant</h3>
 <p><strong>Theorem.</strong> For $A$ with singular values $\sigma_1\ge\cdots\ge\sigma_5$,</p>
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 \Phi:U(5)\times\mathcal{P}\longrightarrow GL_5,\qquad (U,P)\longmapsto UP,
 $$</p>
-<p>is a diffeomorphism, where $\mathcal{P}=\{P:P^*=P,\ P>0\}$ is the open cone of positive definite Hermitian matrices.</p>
+<p>is a diffeomorphism, where $\mathcal{P}=\{P:P^*=P,\ P&gt;0\}$ is the open cone of positive definite Hermitian matrices.</p>
 <p><strong>Proof.</strong> The map is bijective by the polar decomposition and uniqueness. It is smooth because the product and the inverse are smooth; the inverse $A\mapsto(A|A|^{-1},|A|)$ is smooth because $|A|$ is a smooth function of $A$ on the invertible locus (the square root of the positive definite $A^*A$ is smooth). The derivative is invertible, so the map is a diffeomorphism.</p>
 <p><strong>Corollary.</strong> $GL_5$ is diffeomorphic to $U(5)\times\mathbb{R}^{25}$; the positive cone $\mathcal{P}$ is diffeomorphic to the real vector space of Hermitian matrices via the exponential.</p>
 <p><strong>Proof.</strong> $\mathcal{P}$ is open in the $25$-real-dimensional space of Hermitian matrices; the exponential of a Hermitian matrix is positive definite, and the logarithm is its smooth inverse.</p>

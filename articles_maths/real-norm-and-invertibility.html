@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="real-norm-and-invertibility"><strong>Real Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the norm of the real algebra and the invertibility of its elements. It follows the basic algebra article <em>Real Algebra</em>, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, to describe the group of invertibles and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $q > 0$, $q = 0$, $q < 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.</p>
+<p>This article studies the norm of the real algebra and the invertibility of its elements. It follows the basic algebra article <em>Real Algebra</em>, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, to describe the group of invertibles and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $q &gt; 0$, $q = 0$, $q &lt; 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $e_t = 1$, a general element is $q = q e_t$ with $q \in \mathbb{R}$, the sole involution is the identity $\operatorname{id}$, and the norm is</p>
 <p>$$
 \langle q\rangle = q\,q = q^2 .
@@ -152,7 +152,7 @@ $$</p>
 <p>In a general algebra the notions of left inverse, right inverse and two-sided inverse are distinct. In $\mathbb{R}$ they coincide, for two reasons: $\mathbb{R}$ is commutative, so a left inverse is automatically a right inverse, and $\mathbb{R}$ is finite-dimensional over $\mathbb{R}$, so a one-sided inverse in a finite-dimensional algebra over a field is two-sided. We may therefore speak of "the" inverse without ambiguity. The distinction acquires content only outside the finite-dimensional setting, as in an endomorphism algebra of an infinite-dimensional space.</p>
 <h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
 <p><strong>Theorem.</strong> A real number $q$ is invertible if and only if $q \neq 0$, equivalently if and only if $\langle q\rangle \neq 0$.</p>
-<p><strong>Proof.</strong> If $q \neq 0$ then $\langle q\rangle = q^2 > 0$, and the element</p>
+<p><strong>Proof.</strong> If $q \neq 0$ then $\langle q\rangle = q^2 &gt; 0$, and the element</p>
 <p>$$
 q_1 = \frac{q}{\langle q\rangle} = \frac{1}{q}
 $$</p>
@@ -212,7 +212,7 @@ $$</p>
 <ul>
 <li><strong>Abelian.</strong> Every two elements commute, because the algebra is commutative. The centre of $\mathbb{R}^\times$ is the whole group, as it is for $\mathbb{C}^\times$.</li>
 <li><strong>Open and dense.</strong> $\mathbb{R}^\times$ is the complement of the single point $0$, hence open and dense in $\mathbb{R}$; its complement is the point $\{0\}$.</li>
-<li><strong>Disconnected, two components.</strong> $\mathbb{R}^\times = \mathbb{R}_{>0} \cup \mathbb{R}_{<0}$ is the disjoint union of the positive and negative rays, so it has <strong>two</strong> connected components. This is the first structural difference from the complex case, where $\mathbb{C}^\times$ is connected; the two components of $\mathbb{R}^\times$ are the two elements of the sign group, dilated by the positive scale.</li>
+<li><strong>Disconnected, two components.</strong> $\mathbb{R}^\times = \mathbb{R}_{&gt;0} \cup \mathbb{R}_{&lt;0}$ is the disjoint union of the positive and negative rays, so it has <strong>two</strong> connected components. This is the first structural difference from the complex case, where $\mathbb{C}^\times$ is connected; the two components of $\mathbb{R}^\times$ are the two elements of the sign group, dilated by the positive scale.</li>
 <li><strong>Non-compact.</strong> $\mathbb{R}^\times$ is unbounded, hence not compact.</li>
 <li><strong>Infinite.</strong> $\mathbb{R}^\times$ is uncountable and contains the infinite cyclic group of powers of any element other than $\pm1$.</li>
 <li><strong>Dimension.</strong> As a topological group the invertibles are one-dimensional, the positive ray contributing the one dimension and the sign group the zero-dimensional factor; the Lie structure of the group is the analytic content of <em>Real Exponential and Lie Group Structure</em>.</li>
@@ -220,13 +220,13 @@ $$</p>
 <p>The group of invertibles is the base case of the family: below it lies only the non-invertible $0$, and every nonzero element is invertible because the algebra is a field.</p>
 <h3 id="the-split-into-positive-scale-and-the-sign-group">The Split into Positive Scale and the Sign Group</h3>
 <p><strong>Theorem.</strong> The map</p>
-<p>$$ \boxed{\;\mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr)\;},
+<p>$$ \boxed{\;\mathbb{R}^\times \longrightarrow \mathbb{R}_{&gt;0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr)\;},
 $$</p>
 <p>where $\operatorname{sgn} q = q/|q| \in \{\pm1\}$ for $q \neq 0$, is an isomorphism of groups and a homeomorphism of topological spaces onto the product of the positive ray and the two-element group.</p>
-<p><strong>Proof.</strong> The map is well defined because $|q| > 0$ for $q \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \{\pm1\}$. It is a group homomorphism: $|q_1 q_2| = |q_1||q_2|$ and $\operatorname{sgn}(q_1 q_2) = \operatorname{sgn}q_1\,\operatorname{sgn}q_2$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism.</p>
-<p>The two factors are the <strong>scale</strong> $r = |q| \in \mathbb{R}_{>0}$, a positive real, and the <strong>sign</strong> $\sigma = \operatorname{sgn}q \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $q = |q|\operatorname{sgn}q$, the splitting of the group of invertibles that the norm supplies. In the complex case the second factor is the circle $\mathrm{U}(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the group of invertibles is disconnected.</p>
+<p><strong>Proof.</strong> The map is well defined because $|q| &gt; 0$ for $q \neq 0$, and its image lies in $\mathbb{R}_{&gt;0} \times \{\pm1\}$. It is a group homomorphism: $|q_1 q_2| = |q_1||q_2|$ and $\operatorname{sgn}(q_1 q_2) = \operatorname{sgn}q_1\,\operatorname{sgn}q_2$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism.</p>
+<p>The two factors are the <strong>scale</strong> $r = |q| \in \mathbb{R}_{&gt;0}$, a positive real, and the <strong>sign</strong> $\sigma = \operatorname{sgn}q \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $q = |q|\operatorname{sgn}q$, the splitting of the group of invertibles that the norm supplies. In the complex case the second factor is the circle $\mathrm{U}(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the group of invertibles is disconnected.</p>
 <h3 id="the-inverse-map">The Inverse Map</h3>
-<p>The inversion $q \mapsto q^{-1}$ on $\mathbb{R}^\times$ is a group automorphism of order two, and writing $q = r\sigma$ with $r = |q| > 0$ and $\sigma = \operatorname{sgn}q$ it reads</p>
+<p>The inversion $q \mapsto q^{-1}$ on $\mathbb{R}^\times$ is a group automorphism of order two, and writing $q = r\sigma$ with $r = |q| &gt; 0$ and $\sigma = \operatorname{sgn}q$ it reads</p>
 <p>$$
 (r\sigma)^{-1} = r^{-1}\sigma^{-1} = r^{-1}\sigma ,
 $$</p>
@@ -235,7 +235,7 @@ $$</p>
 <p>An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: An invertible element, a zero divisor, or zero. The classes are read off from the norm.</p>
 <p><strong>Definition.</strong> Let $q \in \mathbb{R}$. Then exactly one of the following holds:</p>
 <ul>
-<li>$\langle q\rangle > 0$: $q$ is an <strong>invertible element</strong>;</li>
+<li>$\langle q\rangle &gt; 0$: $q$ is an <strong>invertible element</strong>;</li>
 <li>$\langle q\rangle = 0$ and $q \neq 0$: $q$ is a <strong>zero divisor</strong>;</li>
 <li>$q = 0$: $q$ is <strong>zero</strong>.</li>
 </ul>
@@ -255,9 +255,9 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$q > 0$</td>
+<td>$q &gt; 0$</td>
 <td>$\operatorname{sgn}q = +1$</td>
-<td>$\langle q\rangle = q^2 > 0$</td>
+<td>$\langle q\rangle = q^2 &gt; 0$</td>
 <td>yes</td>
 <td>$+1$</td>
 </tr>
@@ -269,15 +269,15 @@ $$</p>
 <td>undefined</td>
 </tr>
 <tr>
-<td>$q < 0$</td>
+<td>$q &lt; 0$</td>
 <td>$\operatorname{sgn}q = -1$</td>
-<td>$\langle q\rangle = q^2 > 0$</td>
+<td>$\langle q\rangle = q^2 &gt; 0$</td>
 <td>yes</td>
 <td>$-1$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The trichotomy is the statement that $\mathbb{R}$ is a <strong>linearly ordered field</strong>: the positive cone $\mathbb{R}_{>0}$ is closed under addition and multiplication, and $\mathbb{R}$ is its disjoint union with $\{0\}$ and $-\mathbb{R}_{>0}$. The sign group $\{\pm1\}$ is the multiplicative quotient $\mathbb{R}^\times/\mathbb{R}_{>0}$, the group of the two components.</p>
+<p>The trichotomy is the statement that $\mathbb{R}$ is a <strong>linearly ordered field</strong>: the positive cone $\mathbb{R}_{&gt;0}$ is closed under addition and multiplication, and $\mathbb{R}$ is its disjoint union with $\{0\}$ and $-\mathbb{R}_{&gt;0}$. The sign group $\{\pm1\}$ is the multiplicative quotient $\mathbb{R}^\times/\mathbb{R}_{&gt;0}$, the group of the two components.</p>
 <h3 id="the-algebra-is-a-division-algebra">The Algebra Is a Division Algebra</h3>
 <p>The emptiness of the zero-divisor class is the statement that $\mathbb{R}$ is a <strong>division algebra</strong>: every nonzero element is invertible, and there are no $q_1, q_2 \neq 0$ with $q_1 q_2 = 0$. By the Frobenius theorem, $\mathbb{R}$ is the only finite-dimensional associative real division algebra that is ordered.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
@@ -303,7 +303,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>There is no sector of the algebra carrying a zero divisor, and the distribution is uniform; $\mathbb{R}^\times = \mathbb{R}_{>0} \cup \mathbb{R}_{<0}$ is the union of the two signs. In the complex algebra the distribution is over the real and imaginary subspaces; here the single subspace is the whole algebra, and the statement is the field property.</p>
+<p>There is no sector of the algebra carrying a zero divisor, and the distribution is uniform; $\mathbb{R}^\times = \mathbb{R}_{&gt;0} \cup \mathbb{R}_{&lt;0}$ is the union of the two signs. In the complex algebra the distribution is over the real and imaginary subspaces; here the single subspace is the whole algebra, and the statement is the field property.</p>
 <h2 id="the-relation-to-the-fixed-point-decomposition">The Relation to the Fixed-Point Decomposition</h2>
 <p>The sole involution of $\mathbb{R}$ is the identity, whose fixed subspace is the whole algebra. Writing $\mathbb{R}_{\mathbb{R}}$ for that fixed subspace, the decomposition is</p>
 <p>$$
@@ -362,14 +362,14 @@ $$</p>
 <td>$q^2$, real</td>
 <td>yes</td>
 <td>none</td>
-<td>$\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$</td>
+<td>$\mathbb{R}^\times \cong \mathbb{R}_{&gt;0} \times \{\pm1\}$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}$</td>
 <td>$u^2+v^2$, real</td>
 <td>yes</td>
 <td>none</td>
-<td>$\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$</td>
+<td>$\mathbb{C}^\times \cong \mathbb{R}_{&gt;0} \times \mathrm{U}(1)$</td>
 </tr>
 </tbody>
 </table></div>
@@ -377,7 +377,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The norm of a real number is $\langle q\rangle = q^2$, real, positive-definite and multiplicative, $\langle q_1 q_2\rangle = \langle q_1\rangle\langle q_2\rangle$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $|q| = \sqrt{\langle q\rangle}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.</p>
 <p>A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $q^{-1} = q/\langle q\rangle = 1/q$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of invertibles together with zero.</p>
-<p>The group of invertibles is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $q = |q|\operatorname{sgn}q$. The norm is definite on the whole algebra, and the sign trichotomy $q > 0$, $q = 0$, $q < 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.</p>
+<p>The group of invertibles is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{&gt;0} \times \{\pm1\}$ into a positive scale and a sign, $q = |q|\operatorname{sgn}q$. The norm is definite on the whole algebra, and the sign trichotomy $q &gt; 0$, $q = 0$, $q &lt; 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -420,7 +420,7 @@ $$</p>
 <td>the group of invertibles</td>
 </tr>
 <tr>
-<td>$\mathbb{R}_{>0}, \mathbb{R}_{<0}$</td>
+<td>$\mathbb{R}_{&gt;0}, \mathbb{R}_{&lt;0}$</td>
 <td>the positive and negative rays, the two components of $\mathbb{R}^\times$</td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ $$</p>
 </tr>
 <tr>
 <td>$q = \lvert q\rvert\operatorname{sgn}q$</td>
-<td>the sign decomposition, $r = \lvert q\rvert \in \mathbb{R}_{>0}$, $\sigma = \operatorname{sgn}q$</td>
+<td>the sign decomposition, $r = \lvert q\rvert \in \mathbb{R}_{&gt;0}$, $\sigma = \operatorname{sgn}q$</td>
 </tr>
 <tr>
 <td>$q^{-1} = q/\langle q\rangle = 1/q$</td>

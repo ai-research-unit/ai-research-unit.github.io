@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Separability of Dirac Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Separability of Dirac Equation.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-separability-of-dirac-equation"><strong>On the Separability of Dirac Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>9</strong> (1953) 681–683, No. 6, Letters to the Editor; received 18 May 1953</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - On the Separability of Dirac Equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Separability of Dirac Equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - On the Separability of Dirac Equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The letter tests the Dirac equation against the two conditions the 1952 paper imposed on the ensemble reading: the Hamiltonian must be a differential operator, and a multi-component equation must first be separated into independent one-component equations. It tries the two available separations. The free case separates by a Foldy-type unitary, and the separated Hamiltonian turns out to be an integral operator, so the ensemble reading fails. The constant-field case separates by a non-unitary transformation, giving four Klein–Gordon equations with complex mass-like constants and with an extra complex scalar field that acts both as a potential and as a source. The conclusion is that the Dirac particle can be given trajectory ensembles only indirectly, through non-unitary transformations, with complex masses, and with sources unless $\vec E\cdot\vec H=0$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-conditions">The two conditions</h3>
+<p>The 1952 paper established that the ensemble reading applies when (i) the Hamiltonian is expressible as a differential operator and not as a general integral operator, and (ii) if the wave equation is a system for several components, as for a particle with spin, the system is first transformed into a set of separate equations — otherwise one is forced into "he picture of two or more l1lutually transmuting trajectory ensembles or 'fluids '. Bealing these considerations in mind, we shall.". The letter is the test of (ii) for the Dirac particle, and it is a test of both at once because the known separations have a cost.</p>
+<h3 id="the-free-case-separation-succeeds-and-the-price-is-an-integral-operator">The free case: separation succeeds, and the price is an integral operator</h3>
+<p>With $H=\vec\alpha\cdot\vec p+m\beta$, the separation is the diagonalisation</p>
+<p>$$
+U^{-1}HU=W=\mathrm{diag}\,(\omega_p,\omega_p,-\omega_p,-\omega_p),
+\qquad
+\omega_p=(p^{2}+m^{2})^{1/2},
+$$</p>
+<p>whose columns are the four independent solutions $\chi^{(p)}$; each eigenvalue is doubly degenerate. Choosing the customary solutions makes $U$ the Foldy transformation</p>
+<p>$$
+U_F=\frac{\omega_p+m+\beta\vec\alpha\cdot\vec p}{\sqrt{2\omega_p(\omega_p+m)}},
+$$</p>
+<p>and any other choice multiplies it on the right by a unitary that acts on the two-fold degeneracy, $U=U_FU_a$ with $U_a$ block-diagonal unitary. Taking $U_a=\beta$ gives the Hermitian operator $\bar U=[2\omega_p(\omega_p+m)]^{-1/2}(H+\beta\omega_p)$. <strong>The separation therefore always exists.</strong> But the argument $\vec p$ is an operator, so the transformed Hamiltonian $W_p$ "becomes, in return, an inlegnzl operator in the ordinary space represen- 1,2,3,4), construct", and the letter concludes that "that our previous formula- according to tion of quantum· mechanics is inapplicable to this (4) case as was remarked in a previous note.". The two conditions are not independent: the transformation that separates the components is precisely the one that destroys the differential character.</p>
+<h3 id="the-constant-field-case-separation-by-a-non-unitary-transformation">The constant-field case: separation by a non-unitary transformation</h3>
+<p>For the equation $(\gamma_\mu D_\mu+i\kappa)\psi=0$ with $D_\mu=\partial_\mu-ieA_\mu$ in a constant $F_{\mu\nu}$, he introduces a "potential spinor" $\psi_r$ such that the equation becomes $$ \left(D_\mu^{2}-\tfrac12\kappa^{2}+e\beta^{-1}Q\right)\psi_r=0, \qquad Q=-\tfrac{i}{2}\sigma_{\mu\nu}F_{\mu\nu}=\beta\vec H-i\vec\alpha\cdot\vec E , $$ so that the $\gamma$'s are separated from the $D$'s and only the momentum-independent term $e\beta^{-1}Q$ remains to be diagonalised. In the representation that makes $\gamma_5$ diagonal, $Q$ is block diagonal with blocks the self-dual and anti-self-dual combinations $\vec H\mp i\vec E$. <strong>The obstacle is that $Q$ is not Hermitian</strong>, because the space-time components of $F_{\mu\nu}$ are imaginary; its eigenvalues are complex and the diagonalising matrix is not unitary. The secular equation gives the eigenvalues as $$ B=(\mathfrak H-i\mathfrak E)^{1/2}, \qquad C=(\mathfrak H+i\mathfrak E)^{1/2}, $$ built from the two invariants of the field, and the transformation matrix is written out in terms of $H_\pm\pm iE_\pm$. </p>
+<h3 id="the-four-equations-and-what-they-say">The four equations, and what they say</h3>
+<p>The result is four separate local equations, each of the Klein–Gordon type with an extra complex scalar field $\varphi'=a_p+ib_p$. Writing $\psi_{rp}=R_p\,e^{iS_p/\hbar}$ and $\varphi'=a_p+ib_p$ with real $R_p,S_p,a_p,b_p$, $$ \left(\partial_\nu S_p-eA_\nu\right)^{2}+m^{2}-\frac{\hbar^{2}}{2}\frac{\Box R_p}{R_p}-e\hbar\,a_p=0, \qquad \partial_\nu\!\left(R_p^{2}\left(\partial_\nu S_p-eA_\nu\right)\right)=-e\hbar\,b_pR_p^{2}, $$ with $$ a_p=\pm2^{-1/2}\left\{(\mathfrak H^{2}+\mathfrak E^{2})^{1/2}+\mathfrak H\right\}^{1/2}, \qquad b_p=\pm2^{-1/2}\left\{(\mathfrak H^{2}+\mathfrak E^{2})^{1/2}-\mathfrak H\right\}^{1/2}. $$ <strong>Three things follow, and he states all three.</strong> The first equation is a Hamilton–Jacobi equation with an extra potential $a_p$: the field acts on the particle "e n~t only in a directly classical manner but alsothri&gt;ugh, an extra scalar field,9) and moreover that each ensemble 'has source unless BE= o.". The second is a continuity equation with a source $-e\hbar b_pR_p^{2}$, so <strong>an ensemble is conserved only where $b_p=0$, that is where $\mathfrak E=0$</strong> — the field's invariant $\vec E\cdot\vec H$ must vanish. And the correspondence is "more indirect" than in the scalar case because it passes through two transformations. What the letter presents, then, is four mutually independent trajectory ensembles, each with a complex mass and a complex extra potential, and each with a source unless the field is of a special type. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-separation-and-the-differential-character-are-incompatible-and-the-incompatibility-is-exact">1. Separation and the differential character are incompatible, and the incompatibility is exact</h3>
+<p><strong>The idea.</strong> The ensemble reading needs two things: a differential Hamiltonian, and separated components. The free Dirac equation has a separation — the Foldy transformation, which is unitary and always exists — and that transformation turns the Hamiltonian into an integral operator in $\vec x$. So the two requirements cannot both be met: the separating transformation is exactly the non-local one. </p>
+<p><strong>What it would add.</strong> A dilemma where the corpus has a technique. <em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em> (<code>articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.md</code>) computes the transformation, its generator and its expansion order by order, and reads it as the separation of the upper and lower components. It does not say that the transformation is non-local in $\vec x$ — that the transformed Hamiltonian is an integral operator — and it does not draw the consequence for any trajectory picture. The letter's claim is sharper than "FW is non-local": it is that the two properties the ensemble reading needs are <em>conjugate</em>, so no choice of transformation delivers both, and the failure is not a technical gap to be closed later. </p>
+<p><strong>Where it lands.</strong> The Foldy–Wouthuysen article, as a paragraph on what the transformation costs, and the spin-half fluid article's domain section, which already limits the fluid to the invertibility of the element. </p>
+<p><strong>What stands in the way.</strong> The corpus does not hold the ensemble ontology, so the incompatibility is a statement about a reading the corpus has already replaced. Its interest is defensive and structural: it says why the spin-half fluid had to be built from the field's factorisation rather than from a particle picture, which is the corpus's own answer. The item is worth one paragraph and no more, and it ranks first because a corpus that says "we read the field" owes an account of why the particle reading is not merely unfashionable but impossible. </p>
+<h3 id="2-in-a-constant-field-the-four-ensembles-carry-complex-masses-and-their-squares-are-the-fields-complex-invariants">2. In a constant field the four ensembles carry complex masses, and their squares are the field's complex invariants</h3>
+<p><strong>The idea.</strong> The four separated equations have mass-like constants $$ B^{2}=\mathfrak H-i\mathfrak E, \qquad C^{2}=\mathfrak H+i\mathfrak E, $$ where $\mathfrak H$ and $\mathfrak E$ are the two invariants of $F_{\mu\nu}$ — the combinations $\vec H^{2}-\vec E^{2}$ and $2\vec E\cdot\vec H$ in the appropriate signs. So the "masses" of the four ensembles are the square roots of the complex invariants, and a field with $\mathfrak E\neq0$ makes them complex.</p>
+<p><strong>What it would add.</strong> A reason for a complex mass that is not a decay width. <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> (<code>articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.md</code>) and <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>) both treat a complex mass, the first as a pole off the real axis and the second as a structural feature of the algebra. Takabayasi's complex mass is neither: it is the <em>eigenvalue of the field's own invariant</em>, and it is complex because the field's Lorentz-invariant combination $\mathfrak H+i\mathfrak E$ is complex, not because anything decays. That is a third source of complex mass, it is static and exact, and the corpus has no instance of it.</p>
+<p><strong>Where it lands.</strong> The complex-energy-pole article, as the static counterpart, and the spin-half fluid article where the mass term is $\cos\theta$.</p>
+<p><strong>What stands in the way.</strong> The construction is a device of the transformation and not a property of the spectrum: no asymptotic state has a complex mass, and the four equations are not four particles. The import must be phrased as an effective description valid inside the constant field, or a reader will take it for a claim about poles. That is a real risk, and it is why the item ranks second and not first.</p>
+<h3 id="3-the-trajectory-ensemble-survives-only-where">3. The trajectory ensemble survives only where</h3>
+<p>$\vec E\cdot\vec H=0$</p>
+<p><strong>The idea.</strong> The continuity equation of each ensemble is</p>
+<p>$$
+\partial_\nu\!\left(R_p^{2}(\partial_\nu S_p-eA_\nu)\right)=-e\hbar\,b_pR_p^{2},
+$$</p>
+<p>with $b_p\propto\{(\mathfrak H^{2}+\mathfrak E^{2})^{1/2}-\mathfrak H\}^{1/2}$. The source vanishes exactly when $\mathfrak E=0$, that is when $\vec E\cdot\vec H=0$: a pure electric field, a pure magnetic field, or a perpendicular pair.</p>
+<p><strong>What it would add.</strong> A no-go with a condition, which is the form the corpus prefers. The corpus's charged fluid articles — <em>The Charged Spin-Zero Fluid</em> (<code>articles_physics/the-charged-spin-zero-fluid.md</code>) and <em>The Charged Spin-Half Fluid</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>) — establish that the corpus's fluid is conserved identically and never needs a source. Takabayasi's ensemble is conserved only on a codimension-one family of field configurations, and the family is exactly the one where the field's pseudoscalar invariant vanishes — the same condition that makes $Q$'s blocks $B$ and $C$ equal in modulus. <strong>So the ensemble reading of a Dirac particle exists precisely when the field cannot act through the $E\cdot H$ channel</strong>, which is the sharpest statement of the boundary the corpus's spin-half articles only gesture at.</p>
+<p><strong>Where it lands.</strong> The charged spin-half fluid article's §<em>What Is Established and What Is Interpretation</em>, as the boundary of the particle reading.</p>
+<p><strong>What stands in the way.</strong> The condition is derived inside the constant-field, separated, non-unitary scheme, so it inherits every approximation of that scheme; whether it survives for a general field is not shown. The import is therefore a strong hint and not a theorem, and it should be labelled as such.</p>
+<p>The remainder, one line each. The Hermitian variant $\bar U=[2\omega_p(\omega_p+m)]^{-1/2}(H+\beta\omega_p)$ and the general $U_FU_a$ are two lines of algebra on the Foldy transformation and add nothing the corpus's article lacks. The degeneracy of $W_p$ — each eigenvalue doubly degenerate, so the separating unitary is fixed only up to a two-by-two block — is the statement that the separation is non-unique, which the corpus's Foldy article implies. The attribution to Foldy and to Kramers is provenance.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On General Theory of Relativistic Hydrodynamics with Intrinsic Angular Momentum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - ON GENERAL THEORY OF RELATIVISTIC HYDRODYNAMICS WITH INTRINSIC ANGULAR…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-general-theory-of-relativistic-hydrodynamics-with-intrinsic-angular-momentum"><strong>On General Theory of Relativistic Hydrodynamics with Intrinsic Angular Momentum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — lecture text, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi (College of General Education, Nagoya University)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; scanned typescript with a severely degraded OCR text layer</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Soryushiron Kenkyu</em> (mimeographed circular of the Physical Society of Japan); text of a lecture given at the Institut Henri Poincaré, Paris, May 1978; 31 pages</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - ON GENERAL THEORY OF RELATIVISTIC HYDRODYNAMICS WITH INTRINSIC ANGULAR MOMENTUM-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - ON GENERAL THEORY OF RELATIVISTIC HYDRODYNAMICS WITH INTRINSIC ANGULAR MOMENTUM.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - ON GENERAL THEORY OF RELATIVISTIC HYDRODYNAMICS WITH INTRINSIC ANGULAR MOMENTUM.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="conversion-status-partial">Conversion Status: Partial</h2>
+<p>This PDF is a photograph of a typescript carrying an automatic OCR layer of very poor quality. Roughly fifteen lines out of eight hundred are legible as continuous English; the remainder is character noise. The sections, equation numbers and the bibliography are recoverable in outline, and the first two sections are recoverable in substance. Nothing past §2 is.</p>
+<p>No sentence below is presented as a verbatim quotation. What is recorded is the bibliographic identification, the reconstruction of the argument of §§1–2 from the readable portions, and the structure. A conversion of the later sections would require re-OCRing the page images with a working OCR engine, which this machine does not have.</p>
+<h2 id="bibliographic-identification">Bibliographic Identification</h2>
+<p>The header reads "Soryushiron Kenkyu" and the running footer "NII-Electronic Library Service", so the copy is the National Institute of Informatics scan of the mimeographed circular. The title block reads "oN ffENEFe4L TrHEoRY OF REL4TtvlsT{c HYDRODyNAMics ' WITH' INTRINSIc ANGVLAR MoN'" vaENruM') ", the author" Takehiko Takabayasi ", the affiliation College of General Education, Nagoya University. The opening note places the text at the Institut Henri Poincaré, Paris, in May 1978 — the phrase is legible as" Séminaire de Physique Théorique ... Institut Henri Poincaré ... May 1978 ". The last page is numbered 31.</p>
+<p>The bibliography is legible enough to name C. Møller, <em>The Theory of Relativity</em> (Oxford, 1952), as reference [1]; C. Eckart, <em>Phys. Rev.</em> <strong>58</strong> (1940) 919, as [2]; and a <em>Supplement of Progress of Theoretical Physics</em> item among the later entries. That is consistent with the paper being the general programme behind the 1957 Supplement monograph on the hydrodynamics of Dirac matter.</p>
+<h2 id="the-argument-of-the-first-two-sections">The Argument of the First Two Sections</h2>
+<p>§1, Introduction. Relativistic hydrodynamics has been treated in Møller's book but is confined there to simple and special cases. The concept of hydrodynamics ought not to be restricted to such cases, and the author argues that the general programme should be to construct the theory of continuous matter from a more general starting point than the usual fluid. Eckart is credited with an early consistent relativistic hydrodynamics including angular momentum and heat flow, but his definition of the heat flow is said to be insufficient, and in many of the cases encountered the accepted concept does not cover what is needed.</p>
+<p>§2, Conservation Equations. Any matter field carries distributions of dynamical quantities — mass, momentum, energy, stress, angular momentum — and these are related to the energy-momentum tensor. The energy-momentum conservation law is written with an external force density on the right, and the intrinsic angular momentum (spin) density tensor is introduced alongside. A place is reserved, in the stress, for the contribution due to the convection and the work as distinct from the intrinsic part — which is the distinction the rest of the paper is built on.</p>
+<p>§3 onwards. Headings only, and only partly legible: §4 is titled something close to Relativistic Separation of the Energy-Momentum Tensor. Later sections carry the words "properties and, near the end, heat". The body of these sections, the definitions and the proofs, are not recoverable from this text layer.</p>
+<h2 id="what-the-legible-material-adds">What the Legible Material Adds</h2>
+<h3 id="1-the-programme-is">1. The programme is</h3>
+<p>"any matter field", not "a fluid"</p>
+<p><strong>The idea.</strong> The opening complaint is that hydrodynamics has been treated only in simple and special cases and that this is too narrow. The subject is the conservation structure that every matter field possesses, with the fluid as one instance.</p>
+<p><strong>What it would add.</strong> The same widening the corpus performs in the other direction. <em>Spin Hydrodynamics in Biquaternionic Form</em> (<code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>) derives the spin-fluid equations for a specific field and then generalises; here the general conservation scheme is the starting point and particular fields are to be read off it. The two orders of presentation arrive at the same place, and the difference is worth recording because the general-first order makes the assumptions visible.</p>
+<p><strong>Where it lands.</strong> §<em>The Conservation Structure</em>, as the general-first ordering.</p>
+<p><strong>What stands in the way.</strong> Only the programme is legible; the execution is not, so the claim that the general scheme does cover the particular fields cannot be checked against this text.</p>
+<h3 id="2-eckarts-heat-flow-is-judged-insufficient">2. Eckart's heat flow is judged insufficient</h3>
+<p><strong>The idea.</strong> Eckart's 1940 paper is the standard relativistic hydrodynamics with angular momentum and heat conduction. The judgement here is that his definition of the heat flow does not suffice — a specific defect in a specific definition, not a rejection of the framework.</p>
+<p><strong>What it would add.</strong> A named disagreement about a definition the corpus uses without comment. <em>Causal Dissipative Hydrodynamics in Biquaternionic Form</em> (<code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>) takes the Eckart-type decomposition as its starting point; a contemporary's objection that the heat-flow definition is inadequate is directly relevant to whether that decomposition is well posed.</p>
+<p><strong>Where it lands.</strong> §<em>The Decomposition</em>, as the objection to Eckart's choice.</p>
+<p><strong>What stands in the way.</strong> The reason for the insufficiency is in the illegible part of §1. The verdict survives; the argument for it does not.</p>
+<h3 id="3-convective-and-intrinsic-parts-are-separated-in-the-stress">3. Convective and intrinsic parts are separated in the stress</h3>
+<p><strong>The idea.</strong> The stress is split into a part due to convection and work and an intrinsic part, and the intrinsic angular momentum tensor is a separate object. The split is what allows spin to be carried independently of the mass flow.</p>
+<p><strong>What it would add.</strong> A statement of the decomposition as a <em>convention with a reason</em> rather than a definition. The corpus's spin-fluid articles write the split down; here it is motivated by the demand that the conservation law hold for arbitrary matter.</p>
+<p><strong>Where it lands.</strong> §<em>The Decomposition</em> of <em>Spin Hydrodynamics in Biquaternionic Form</em>, as the motivation.</p>
+<p><strong>What stands in the way.</strong> The decomposition is the standard one; the paper's novelty is claimed to lie further on, in the illegible sections.</p>
+<h2 id="note-on-the-remaining-files-in-this-set">Note on the Remaining Files in This Set</h2>
+<p>Four other PDFs in this folder are image-only and have no usable text layer at all: <em>Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory</em>; <em>New Formalism for Simple Relativistic Oscillator Model and Electromagnetic Interaction</em>; <em>Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field</em>; <em>Theory of Relativistic String and Multilocal Model</em>; <em>Theory of Relativistic Top and Electromagnetic Interaction</em>; <em>Vortex Spins and Triads</em>; <em>Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle I</em>. Their staged text files contain only the Oxford watermark repeated, between 36 and 396 words in total. They cannot be converted until an OCR engine with Japanese-and-Latin trained data is installed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

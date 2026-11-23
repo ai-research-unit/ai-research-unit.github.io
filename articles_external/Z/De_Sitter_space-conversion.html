@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Sitter Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/De_Sitter_space.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="de-sitter-space"><strong>De Sitter Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>De Sitter space</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/De_Sitter_space-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/De_Sitter_space.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/De_Sitter_space.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on de Sitter space: the maximally symmetric Lorentzian manifold of constant positive curvature, defined as a hyperboloid in one higher dimension, its role as the vacuum solution with positive cosmological constant, and its naming after Willem de Sitter, with Levi-Civita's independent discovery noted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"$n$-dimensional de Sitter space (often denoted $dS_n$) is a maximally symmetric Lorentzian manifold with constant positive scalar curvature. It is analogue of an $n$-sphere, with a Lorentzian metric in place of the Riemannian metric of the latter."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"A de Sitter space can be defined as a submanifold of a generalized Minkowski space of one higher dimension, including the induced metric." The submanifold is the hyperboloid of points at fixed interval from the origin, and the induced metric is the de Sitter metric.</p>
+<h3 id="the-cosmological-role">The cosmological role</h3>
+<p>"de Sitter space is the maximally symmetric vacuum solution of Einstein's field equations in which the cosmological constant Λ is positive (corresponding to a positive vacuum energy density and negative pressure). De Sitter" It serves as "one of the simplest mathematical models of the universe consistent with the observed accelerating expansion of the universe".</p>
+<h3 id="the-attribution">The attribution</h3>
+<p>"De Sitter space and anti-de Sitter space are named after Willem de Sitter (1872–1934),[1][2] professor of astronomy at Leiden University and director of the Leiden Observatory." "De Sitter space was also discovered, independently, and about the same time, by Tullio Levi-Civita.[3] Definition"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-maximal-symmetry-fixes-the-curvature">1. Maximal symmetry fixes the curvature</h3>
+<p><strong>The idea.</strong> A maximally symmetric Lorentzian manifold has the maximal number of Killing vectors, which forces constant curvature. There is then one such space per sign of $\Lambda$ and no freedom left.</p>
+<p><strong>What it would add.</strong> A cheap test for the corpus's cosmology: at each sign of $\Lambda$ the maximally symmetric background is unique, so a carried metric that fails to reproduce de Sitter or anti-de Sitter is excluded without solving the field equations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, as the simplest case.</p>
+<p><strong>What stands in the way.</strong> The corpus's metric is carried by the algebra rather than defined on a manifold, and the Killing-vector count is a manifold statement.</p>
+<h3 id="2-positive-energy-density-is-negative-pressure">2. Positive energy density is negative pressure</h3>
+<p><strong>The idea.</strong> The parenthetical identification of positive vacuum energy with negative pressure is what allows acceleration; it is an equation of state, not a curvature statement.</p>
+<p><strong>What it would add.</strong> A precise form of the source the corpus's cosmology article says is missing: if the algebra can carry an energy density, the de Sitter equation of state is the minimal test of whether it can carry the right one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/flrw-in-the-frame-route.md</code>, at the source term.</p>
+<p><strong>What stands in the way.</strong> No vacuum stress-energy tensor appears in the corpus's cosmology articles.</p>
+<p>This is an encyclopedia article; definition, hyperboloid construction, cosmological role and attributions are its whole content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

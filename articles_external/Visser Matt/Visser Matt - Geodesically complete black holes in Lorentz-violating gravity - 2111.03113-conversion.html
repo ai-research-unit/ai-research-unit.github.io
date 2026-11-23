@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geodesically complete black holes in Lorentz-violating gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes in Lorentz-violating gravity - 2111.03113.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="geodesically-complete-black-holes-in-lorentz-violating-gravity"><strong>Geodesically complete black holes in Lorentz-violating gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2111.03113v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 November 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Geodesically complete black holes in Lorentz-violating gravity - 2111.03113-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes in Lorentz-violating gravity - 2111.03113.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Geodesically complete black holes in Lorentz-violating gravity - 2111.03113.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This paper extends a classification of singularity-free black hole geometries to theories where different modes travel at different speeds. It reviews trapped and marginally trapped surfaces, then introduces universally marginally trapped surfaces for frameworks with infinite signal velocity, which yield universal trapping horizons. Trapped surfaces do not generalise the same way, and the authors explain why horizons still suffice. In Einstein-aether theory each mode's metric falls into one of the earlier classes unchanged; in Hořava-like theories one class drops out.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"We present a systematic study of the geometric structure of non-singular spacetimes describing black holes in Lorentz-violating gravity."</p>
+<h3 id="the-new-notion">The new notion</h3>
+<p>"This leads us to introduce the notion of universally marginally trapped surfaces, as the direct generalization of marginally trapped surfaces for frameworks with infinite signal velocities (Hořava-like frameworks), which then allows us to define universal trapping horizons."</p>
+<h3 id="the-partial-failure">The partial failure</h3>
+<p>"We find that trapped surfaces cannot be generalized in the same way, and discuss in detail why this does not prevent using universal trapping horizons to define black holes in Hořava-like frameworks."</p>
+<h3 id="the-classification">The classification</h3>
+<p>"This allows us to present a complete classification of all possible geometries that neither display incomplete physical trajectories nor curvature singularities."</p>
+<h3 id="the-main-difference">The main difference</h3>
+<p>"Our main result is that not all classes that exist in frameworks in which all signal velocities are realized in Hořava-like frameworks."</p>
+<h3 id="the-einstein-aether-case">The Einstein-aether case</h3>
+<p>"These frameworks are characterized by finite signal velocities $c_{(i)}$ and a metric field $g^{(i)}_{ab}$ that can be defined for each propagating mode. We have concluded that each of these metrics must belong to one of the classes discussed in our previous papers (evanescent horizons, one-way hidden wormholes, everlasting horizons and asymptotic hidden wormholes) [14, 15] with no amendments."</p>
+<h3 id="the-simplification">The simplification</h3>
+<p>"infinite signal velocities simplify the classification of possible geometries, removing the limiting cases that were described by the everlasting horizons class."</p>
+<h3 id="the-robustness">The robustness</h3>
+<p>"Some of the classes we have discussed are preserved when going from a single-metric framework to a multi-metric framework, and even if taking the limit in which some of the signal velocities are infinite."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-horizon-defined-without-a-null-cone">1. A horizon defined without a null cone</h3>
+<p><strong>The idea.</strong> When one mode travels infinitely fast, a horizon must be defined by surfaces marginal for every speed at once.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> builds its barrier on a single light cone. This paper shows the notion of horizon survives even when no single cone exists, which tests how essential the cone is to the article's argument.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of the barrier.</p>
+<p><strong>What stands in the way.</strong> The framework is Hořava-like, not biquaternionic. Ranked first, because it directly probes the article's central object.</p>
+<h3 id="2-many-metrics-one-geometry">2. Many metrics, one geometry</h3>
+<p><strong>The idea.</strong> Each propagation mode carries its own metric, and they need not agree.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> assumes one metric. A multi-metric setting would force the conventions to say which metric defines the frame and what happens when they differ.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of the metric.</p>
+<p><strong>What stands in the way.</strong> The setting is specific to Lorentz-violating theories. Ranked second.</p>
+<h3 id="3-one-class-disappears-in-the-limit">3. One class disappears in the limit</h3>
+<p><strong>The idea.</strong> Sending a signal velocity to infinity removes the everlasting-horizon class.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats its list as fixed. A limit that deletes an entry shows the list depends on the kinematic assumptions, which the catalogue should state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The deletion is tied to compact horizons. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

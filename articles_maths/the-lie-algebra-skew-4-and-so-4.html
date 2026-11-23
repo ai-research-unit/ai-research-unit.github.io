@@ -79,9 +79,9 @@
 <p><strong>Proof.</strong> For antisymmetric $X,Y$, $(XY-YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY$, so the commutator is antisymmetric. An antisymmetric matrix has zero diagonal and is determined by its six entries above it.</p>
 <p><strong>Corollary.</strong> $\operatorname{Skew}_4=\mathfrak{so}(4)$ is the Lie algebra of the orthogonal group, $\mathfrak{so}(4)=\{X:X+X^{\mathsf T}=0\}$.</p>
 <p><strong>Proof.</strong> The Lie algebra of the group preserving a bilinear form is the set of endomorphisms anti-self-adjoint for it; the standard form gives the antisymmetric matrices.</p>
-<p><strong>Proposition.</strong> The trace pairing on $\operatorname{Skew}_4$ is negative definite: for $X,Y$ antisymmetric, $\operatorname{tr}(XY)=-2\sum_{i<j}x_{ij}y_{ij}$.</p>
-<p><strong>Proof.</strong> $\operatorname{tr}(XY)=\sum_{ij}x_{ij}y_{ji}=-\sum_{ij}x_{ij}y_{ij}=-2\sum_{i<j}x_{ij}y_{ij}$ using antisymmetry.</p>
-<p><strong>The units.</strong> The six elements $e_{ij}=E_{ij}-E_{ji}$ for $i<j$ form a basis, with the brackets</p>
+<p><strong>Proposition.</strong> The trace pairing on $\operatorname{Skew}_4$ is negative definite: for $X,Y$ antisymmetric, $\operatorname{tr}(XY)=-2\sum_{i&lt;j}x_{ij}y_{ij}$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(XY)=\sum_{ij}x_{ij}y_{ji}=-\sum_{ij}x_{ij}y_{ij}=-2\sum_{i&lt;j}x_{ij}y_{ij}$ using antisymmetry.</p>
+<p><strong>The units.</strong> The six elements $e_{ij}=E_{ij}-E_{ji}$ for $i&lt;j$ form a basis, with the brackets</p>
 <p>$$
 [e_{12},e_{13}]=-e_{23},\qquad [e_{12},e_{23}]=e_{13},\qquad [e_{13},e_{23}]=-e_{12},
 $$</p>
@@ -93,10 +93,10 @@ $$</p>
 <h2 id="two-forms">Two-Forms</h2>
 <p><strong>Definition.</strong> For $K\in\operatorname{Skew}_4$ let $\omega_K(x,y)=x^{\mathsf T}Ky$; this is an alternating bilinear form.</p>
 <p><strong>Theorem.</strong> $\omega$ is an isomorphism of $\operatorname{Skew}_4$ onto $\Lambda^{2}(\mathbb{C}^{4})^{\ast}$, and $\Lambda^{2}\mathbb{C}^{4}$ has dimension $6$.</p>
-<p><strong>Proof.</strong> An alternating form is determined by its values on pairs of basis vectors, and the values $\omega_{ij}$ for $i<j$ are the entries of $K$ above the diagonal; the dimension of $\Lambda^{2}$ of a four-dimensional space is $\binom{4}{2}=6$.</p>
+<p><strong>Proof.</strong> An alternating form is determined by its values on pairs of basis vectors, and the values $\omega_{ij}$ for $i&lt;j$ are the entries of $K$ above the diagonal; the dimension of $\Lambda^{2}$ of a four-dimensional space is $\binom{4}{2}=6$.</p>
 <p><strong>Corollary.</strong> $\operatorname{Skew}_4\cong\Lambda^{2}\mathbb{C}^{4}$ as vector spaces, and the commutator corresponds to a bilinear operation on two-forms.</p>
 <p><strong>Proof.</strong> Both spaces have dimension $6$, and the identification is the displayed one.</p>
-<p><strong>The pairing with two-forms.</strong> $\operatorname{tr}(XY)=-\sum_{i<j}2x_{ij}y_{ij}$ says that the trace pairing is, up to a factor, the standard pairing of two-forms on the coordinate pairs, with a negative sign.</p>
+<p><strong>The pairing with two-forms.</strong> $\operatorname{tr}(XY)=-\sum_{i&lt;j}2x_{ij}y_{ij}$ says that the trace pairing is, up to a factor, the standard pairing of two-forms on the coordinate pairs, with a negative sign.</p>
 <p><strong>Proof.</strong> The displayed computation in coordinates.</p>
 <p><strong>The Pfaffian.</strong> For $K\in\operatorname{Skew}_4$ the determinant is a perfect square, $\det K=\operatorname{Pf}(K)^{2}$, with $\operatorname{Pf}(K)=k_{12}k_{34}-k_{13}k_{24}+k_{14}k_{23}$.</p>
 <p><strong>Proof.</strong> Expansion of the determinant of a general antisymmetric $4\times4$ matrix; every term that is not of this shape cancels in pairs.</p>
@@ -130,9 +130,9 @@ $$</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p><strong>The left family.</strong> In the axis-free basis $e_t,e_x,e_y,e_z$ the left multiplications by the three vector units are</p>
 <p>$$
-L(e_x)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-L(e_y)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-L(e_z)=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+L(e_x)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\quad
+L(e_y)=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\quad
+L(e_z)=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>Theorem.</strong> These three matrices are antisymmetric, they lie in the self-dual triple with the signs $L(e_x)=-\omega_1$, $L(e_y)=-\omega_2$, $L(e_z)=-\omega_3$, and their brackets are $[L(e_x),L(e_y)]=2L(e_z)$ and cyclically.</p>
 <p><strong>Proof.</strong> Each column is the image of a basis element: $L(e_x)$ sends $e_t\mapsto e_x$, $e_x\mapsto-e_t$, $e_y\mapsto e_z$, $e_z\mapsto-e_y$. Reading the columns gives the displayed matrices, which are antisymmetric by inspection; comparing with the definitions gives $L(e_x)=-\omega_1$, $L(e_y)=-\omega_2$, $L(e_z)=-\omega_3$. The bracket identity follows from $L(ab)=L(a)L(b)$ and $e_xe_y-e_ye_x=2e_z$.</p>

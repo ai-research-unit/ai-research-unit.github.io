@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit formulae for surface gravities in stationary circular axi-symmetric spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit formulae for surface gravities in stationary circular axi-symmetric…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="explicit-formulae-for-surface-gravities-in-stationary-circular-axi-symmetric-spacetimes"><strong>Explicit formulae for surface gravities in stationary circular axi-symmetric spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2305.08910v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 May 2023 (dated 16 May 2023)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Explicit formulae for surface gravities in stationary circular axi-symmetric spacetimes - 2305.08910-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit formulae for surface gravities in stationary circular axi-symmetric spacetimes - 2305.08910.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit formulae for surface gravities in stationary circular axi-symmetric spacetimes - 2305.08910.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Under stationary axisymmetry plus circularity, the authors decompose the metric into Boyer–Lindquist form and then into a canonical ADM form. The roots of one function mark the would-be horizons, and a single condition on the frame dragging promotes them to Killing horizons. Surface gravity then has a simple closed expression, derived by three independent methods and confirmed by a fourth once the horizon is Killing. The paper also gives the condition that makes the surface gravity constant, which is the zeroth law, and notes that this can hold without a Killing horizon. The results are aimed at astrophysical modelling and at analogue spacetimes, where naked singularities are common.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Using minimalist assumptions we develop a natural functional decomposition for the spacetime metric, and explicit tractable formulae for the surface gravities, in arbitrary stationary circular (PT symmetric) axisymmetric spacetimes."</p>
+<h3 id="what-is-related-to-what">What is related to what</h3>
+<p>"We relate rigidity results, (the existence of a Killing horizon), and the zeroth law to the absence of curvature singularities at the would-be horizons."</p>
+<h3 id="who-it-is-for">Who it is for</h3>
+<p>"These observations are of interest to both observational astrophysicists (modelling the cold, dark, heavy objects at the centre of most spiral galaxies), and to the analogue spacetime community, (wherein the presence of naked singularities is not necessarily deprecated, and the occurrence of non-Killing horizons is relatively common)."</p>
+<h3 id="the-canonical-form">The canonical form</h3>
+<p>"taking into consideration the ADM decomposition, without any further loss of generality we may write this metric in the canonical form" a matrix with entries $\frac{h_{rr}(r,\chi)}{\Delta(r)}$, $g_{\chi\chi}$, $g_{\varphi\varphi}$, $-g_{\varphi\varphi}\omega$, and $-h_{tt}\Delta+g_{\varphi\varphi}\omega^2$ in the $(r,\chi,\varphi,t)$ ordering.</p>
+<h3 id="the-horizon-condition">The horizon condition</h3>
+<p>"We have found that the roots of $\Delta(r)=0$ are the locations of the would-be horizons in this geometry, since $\Delta(r)=0$ defines a null hypersurface, while in addition one has $\Gamma^r{}_{ij}\propto\Delta(r)$ which vanishes on the would-be horizon."</p>
+<h3 id="promotion-to-a-killing-horizon">Promotion to a Killing horizon</h3>
+<p>"mathematically these would-be horizons can be promoted to Killing horizons so long as we set"</p>
+<p>$$\omega(r,\chi)=\omega_0(r)+\Delta(r)\,\tilde\omega(r,\chi).\qquad (paper\ 12.3)$$</p>
+<p>"This implies the rigidity result, $\omega(r_H,\chi)=\Omega_H$, and physically is tantamount to demanding that the Ricci scalar be finite on the would-be horizon."</p>
+<h3 id="the-surface-gravity">The surface gravity</h3>
+<p>"Using three distinct methods, we then calculated a simple, tractable, and robust expression for the surface gravity on these horizons which is given as"</p>
+<p>$$\kappa=\frac{\Delta'(r_H)}{2}\sqrt{\frac{h_{tt}(r_H,\chi)}{h_{rr}(r_H,\chi)}}.\qquad (paper\ 12.4)$$</p>
+<h3 id="the-zeroth-law">The zeroth law</h3>
+<p>"If we wish to enforce the zeroth law then mathematically it is sufficient to set"</p>
+<p>$$\frac{h_{tt}(r,\chi)}{h_{rr}(r,\chi)}=J(r)+\Delta(r)K(r,\chi),\qquad (paper\ 12.5)$$</p>
+<p>"In this case, the surface gravity becomes constant on the horizon. It is important to note that this condition can be imposed without necessarily forcing the horizons to be Killing horizons."</p>
+<h3 id="the-overall-claim">The overall claim</h3>
+<p>"with minimal assumptions, stationary axisymmetry plus 'circularity' (PT symmetry) one can give a surprisingly simple expression for the surface gravity on the would-be horizons. Additionally we can quite easily enforce a zeroth law and/or the existence of Killing horizons."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-surface-gravity-without-a-killing-horizon">1. Surface gravity without a Killing horizon</h3>
+<p><strong>The idea.</strong> A constant surface gravity can hold on a horizon that is not Killing.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> ties temperature to a Killing horizon. This paper shows the constancy can be imposed separately, so the article's identification of horizon type with thermodynamic behaviour is too tight.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on surface gravity.</p>
+<p><strong>What stands in the way.</strong> The result assumes axisymmetry and circularity. Ranked first, because it separates two properties the article merges.</p>
+<h3 id="2-rigidity-as-a-regularity-condition">2. Rigidity as a regularity condition</h3>
+<p><strong>The idea.</strong> Demanding finite curvature at the horizon forces the rigidity relation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would benefit from a case where a physical requirement, not the algebra, produces a constraint. The source of an obstruction matters for how seriously to take it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on horizons.</p>
+<p><strong>What stands in the way.</strong> The argument is specific to this metric ansatz. Ranked second.</p>
+<h3 id="3-one-function-marks-all-horizons">3. One function marks all horizons</h3>
+<p><strong>The idea.</strong> A single $\Delta$ vanishing locates every horizon in the family.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats one horizon at a time. A single function controlling the whole family suggests the article's entropy formula should be written in terms of that function.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the temperature.</p>
+<p><strong>What stands in the way.</strong> The function exists only under the stated symmetries. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

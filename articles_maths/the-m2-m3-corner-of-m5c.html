@@ -101,25 +101,25 @@ $$</p>
 <h3 id="the-block-form">The Block Form</h3>
 <p>In the basis of the corollary, every $A$ has the block form</p>
 <p>$$
-A=\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix},
+A=\begin{pmatrix}A_{11}&amp;A_{12}\\ A_{21}&amp;A_{22}\end{pmatrix},
 \qquad
 A_{11}\in M_2(\mathbb{C}),\quad A_{12}\in\mathbb{C}^{2\times3},\quad A_{21}\in\mathbb{C}^{3\times2},\quad A_{22}\in M_3(\mathbb{C}).
 $$</p>
 <p>The four blocks are exactly the four coarse Peirce corners:</p>
 <p>$$
-PAP=\begin{pmatrix}A_{11}&0\\0&0\end{pmatrix},\quad
-PAQ=\begin{pmatrix}0&A_{12}\\0&0\end{pmatrix},\quad
-QAP=\begin{pmatrix}0&0\\A_{21}&0\end{pmatrix},\quad
-QAQ=\begin{pmatrix}0&0\\0&A_{22}\end{pmatrix}.
+PAP=\begin{pmatrix}A_{11}&amp;0\\0&amp;0\end{pmatrix},\quad
+PAQ=\begin{pmatrix}0&amp;A_{12}\\0&amp;0\end{pmatrix},\quad
+QAP=\begin{pmatrix}0&amp;0\\A_{21}&amp;0\end{pmatrix},\quad
+QAQ=\begin{pmatrix}0&amp;0\\0&amp;A_{22}\end{pmatrix}.
 $$</p>
 <p><strong>Proposition.</strong> The block multiplication is</p>
 <p>$$
-\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix}
-\begin{pmatrix}B_{11}&B_{12}\\ B_{21}&B_{22}\end{pmatrix}
+\begin{pmatrix}A_{11}&amp;A_{12}\\ A_{21}&amp;A_{22}\end{pmatrix}
+\begin{pmatrix}B_{11}&amp;B_{12}\\ B_{21}&amp;B_{22}\end{pmatrix}
 =
 \begin{pmatrix}
-A_{11}B_{11}+A_{12}B_{21}&A_{11}B_{12}+A_{12}B_{22}\\
-A_{21}B_{11}+A_{22}B_{21}&A_{21}B_{12}+A_{22}B_{22}
+A_{11}B_{11}+A_{12}B_{21}&amp;A_{11}B_{12}+A_{12}B_{22}\\
+A_{21}B_{11}+A_{22}B_{21}&amp;A_{21}B_{12}+A_{22}B_{22}
 \end{pmatrix}.
 $$</p>
 <p><strong>Proof.</strong> The ordinary matrix product, written block by block; the sizes are $2+3$, so every product is defined.</p>
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-embedding">The Embedding</h3>
 <p><strong>Definition.</strong> The <strong>block embedding</strong> of $M_2(\mathbb{C})\oplus M_3(\mathbb{C})$ into $M_5(\mathbb{C})$ is</p>
 <p>$$
-\operatorname{inc}(A,B)=\begin{pmatrix}A&0\\0&B\end{pmatrix}.
+\operatorname{inc}(A,B)=\begin{pmatrix}A&amp;0\\0&amp;B\end{pmatrix}.
 $$</p>
 <p><strong>Proposition.</strong> The map $\operatorname{inc}$ is an injective unital algebra homomorphism, and its image is $PM_5P\oplus QM_5Q$. The projections onto the two factors are the compressions</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 <h3 id="the-stabiliser-of-the-decomposition">The Stabiliser of the Decomposition</h3>
 <p><strong>Definition.</strong> The <strong>block-diagonal subgroup</strong> of $GL_5(\mathbb{C})$ preserving the decomposition $V=\operatorname{im}P\oplus\operatorname{im}Q$ is</p>
 <p>$$
-GL_2(\mathbb{C})\times GL_3(\mathbb{C})=\left\{\begin{pmatrix}g_2&0\\0&g_3\end{pmatrix}:g_2\in GL_2,\ g_3\in GL_3\right\}.
+GL_2(\mathbb{C})\times GL_3(\mathbb{C})=\left\{\begin{pmatrix}g_2&amp;0\\0&amp;g_3\end{pmatrix}:g_2\in GL_2,\ g_3\in GL_3\right\}.
 $$</p>
 <p>Its image in $PGL_5$ is $P(GL_2\times GL_3)$.</p>
 <p><strong>Proposition.</strong> The stabiliser of $P$ in $PGL_5$ is $P(GL_2\times GL_3)$, of complex dimension $4+9-1=12$. Its maximal torus has dimension $2+3-1=4$.</p>
@@ -192,9 +192,9 @@ $$</p>
 <p><strong>Proof.</strong> A diagonal element of $GL_2\times GL_3$ is $\operatorname{diag}(t_1,t_2,s_1,s_2,s_3)$; modulo the common scalar, the independent ratios are $t_1/t_2$ (one), $s_1/s_3$ and $s_2/s_3$ (two), and the relative ratio $t_1/s_1$ (one). The first three are the corner tori, and the last is the relative scale. The four ratios are independent, and their product is not constrained (they are four coordinates on a four-dimensional torus).</p>
 <p><strong>Corollary.</strong> The relative scale acts on the blocks by</p>
 <p>$$
-\operatorname{diag}(\mu I_2,I_3)\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix}\operatorname{diag}(\mu^{-1}I_2,I_3)
+\operatorname{diag}(\mu I_2,I_3)\begin{pmatrix}A_{11}&amp;A_{12}\\ A_{21}&amp;A_{22}\end{pmatrix}\operatorname{diag}(\mu^{-1}I_2,I_3)
 =
-\begin{pmatrix}A_{11}&\mu A_{12}\\ \mu^{-1}A_{21}&A_{22}\end{pmatrix}.
+\begin{pmatrix}A_{11}&amp;\mu A_{12}\\ \mu^{-1}A_{21}&amp;A_{22}\end{pmatrix}.
 $$</p>
 <p>It fixes both diagonal corners and rescales the two off-diagonal blocks reciprocally.</p>
 <p><strong>Proof.</strong> Conjugate the block matrix by the block-diagonal matrix; the diagonal blocks commute with the scalars, and the off-diagonal blocks acquire $\mu$ or $\mu^{-1}$.</p>

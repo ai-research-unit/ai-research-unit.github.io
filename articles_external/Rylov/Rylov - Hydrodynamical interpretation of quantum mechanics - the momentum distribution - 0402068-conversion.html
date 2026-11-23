@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrodynamical Interpretation of Quantum Mechanics: The Momentum Distribution — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamical interpretation of quantum mechanics - the momentum distribution - 0402068.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hydrodynamical-interpretation-of-quantum-mechanics-the-momentum-distribution"><strong>Hydrodynamical Interpretation of Quantum Mechanics: The Momentum Distribution</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0402068 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 May 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Hydrodynamical interpretation of quantum mechanics - the momentum distribution - 0402068-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamical interpretation of quantum mechanics - the momentum distribution - 0402068.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamical interpretation of quantum mechanics - the momentum distribution - 0402068.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.
+| corpus anchor (second) | <code>articles_physics/the-measurement-problem-in-algebraic-form.md</code> |</p>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Hydrodynamical interpretation of quantum mechanics - the momentum distribution - 0402068.pdf</code>, readable with <code>pdftotext -layout</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Attacks the momentum distribution. The claim is that $w(p)=\lvert\psi_p\rvert^2$ is not a distribution of particle momenta but of Fourier components, or at best of mean momenta, and that the quantum formalism therefore does not predict what a momentum measurement on one particle yields. He adds a second claim: the construction is not a hidden-variable theory of the kind von Neumann's theorem forbids, because the theorem's premises are not satisfied. The overall position is that the wave function describes $\langle S_{st}\rangle$, the statistically averaged system, and never $S_{st}$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-claims">The two claims</h3>
+<p>Stated as a list in the introduction:</p>
+<ol>
+<li>"The quantum mechanical technique describes dynamics of statistical ensembles"</li>
+<li>"e distribution (1.2) disagrees with the von Neumann’s postulate (1.1). 2 Whose state does the wave function describe?"</li>
+</ol>
+<p>The abstract states the consequence without softening: "the quantum mechanics cannot describe the particle momentum distribution", and then, after displaying $w(p)=\lvert\psi_p\rvert^2$: it "is not a particle momentum distribution". The conclusion generalises: "It may be considered to be the Fourier component module distribution, or even the mean momentum distribution, but it is not the momentum distribution."</p>
+<h3 id="the-argument-from-the-hydrodynamical-form">The argument from the hydrodynamical form</h3>
+<p>The starting point is the old observation that "the Schrödinger equation for the free quantum particle may be written in the form of the hydrodynamic equations, describing an irrotational flow of some fluid", with the internal energy
+$$E=\frac{\hbar^2}{8m}\frac{(\nabla\rho)^2}{\rho^2}.$$
+In that reading the fluid is the ensemble, and a momentum is a property of a fluid element, that is, of the ensemble — not of one particle. Hence the distribution over $p$ is a distribution over fluid elements.</p>
+<p>He is careful about the operator: whether $-\mathrm{i}\hbar\nabla$ is the particle momentum operator is settled only in the wave-packet case, where "and ψ p does not vanish only in a very small domain of values of p.". Otherwise "f p. In other cases the question whether the operator −ih̄∇ is the particle momentum operator is open. 3 In the present paper we show two points: 1."</p>
+<h3 id="why-von-neumann-does-not-apply">Why von Neumann does not apply</h3>
+<p>The defence is not that hidden variables exist but that the theorem's hypothesis fails. "It has been shown that some of original basic statements (1.1), which are nec- essary for the proof of the von Neumann’s theorem on hidden variables cannot be tested experimentally, because the measured values cannot be attributed to a def- 17 inite state (wave function)." — the sentence is cut by the page break in the PDF, but the point is that the postulate attributes definite values in a way no measurement can certify.</p>
+<p>The gain claimed for the hydrodynamical reading is then a draw rather than a loss. If the distribution is not a momentum distribution, then "the hydrodynamic interpretation, which cannot predict the momentum distribution, appears to be as informative as the conventional interpretation of quantum mechanics." And the reason single measurements still matter: "The S-measurements are important, because any M-measurement is an ensemble of independent S-measurements."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-born-weight-may-not-be-a-momentum-distribution">1. The Born weight may not be a momentum distribution</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong> aimed at the corpus's own object: $\lvert\psi_p\rvert^2$ is a functional of the state that coincides with a momentum distribution only in the wave-packet limit, and in general is a distribution of mean momenta over an ensemble. The corpus's Born-weight article states the empirical postulate that links weights to frequencies; Rylov's point is that even after that link, the weights may attach to the wrong observable.</p>
+<p><strong>What it would add.</strong> The corpus derives the weight from a pairing and a cone and then adds the frequency postulate. If the weight is attached to a mean rather than to a single-particle value, the postulate is about a different quantity than the one it is usually taken to be about, and the corpus would have to say which. That is a precise, locatable question, and it bears on the corpus's most load-bearing empirical input.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument turns on a distinction between a momentum and a mean momentum that no experiment can see — any measurement of a distribution is an ensemble measurement. Without a proposed experiment that separates the two, the claim is a reinterpretation, not a correction.</p>
+<h3 id="2-which-premise-of-von-neumann-fails">2. Which premise of von Neumann fails</h3>
+<p><strong>The idea.</strong> A <strong>diagnosis</strong>: the no-hidden-variables theorem assumes that measured values can be attributed to a definite state, and that assumption is not testable, so the theorem does not rule out a statistical-ensemble reading.</p>
+<p><strong>What it would add.</strong> The corpus's measurement article works inside a formalism where outcomes are eigenvalues and the state is a vector, and it locates the boundary in the polar decomposition. A claim that the boundary is instead in an untestable premise is a competing placement, and it is the kind of thing that can be adjudicated: the corpus's Kraus-operator analysis either uses the premise or it does not, and that is checkable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-measurement-problem-in-algebraic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The premise is identified only by number (1.1) and the identification is not argued in the paper; the reader is referred to the earlier stochastic-systems paper. And the ensemble reading has its own premise — that an individual system has a definite value — which is equally untestable, so the exchange is symmetric.</p>
+<h3 id="3-the-quantum-potential-as-internal-energy-of-the-ensemble">3. The quantum potential as internal energy of the ensemble</h3>
+<p><strong>The idea.</strong> $E=\frac{\hbar^2}{8m}\frac{(\nabla\rho)^2}{\rho^2}$ is the internal energy of the ensemble fluid, so the quantum term is a thermodynamic quantity of a statistical ensemble rather than a potential acting on a particle.</p>
+<p><strong>What it would add.</strong> The corpus derives the same term and calls it part of the polar action. Calling it an internal energy gives it a thermodynamic reading, and the corpus has a thermodynamics-of-a-quantum-fluid article whose status of derivation is explicitly in question. This would supply a reading of what the term is, which is precisely what that article lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>.</p>
+<p><strong>What stands in the way.</strong> No equation of state is derived and no temperature is defined; the identification is a name, not a thermodynamics. An internal energy without a conjugate variable does no work in an argument.</p>
+<p>The rank: the momentum-distribution claim first, because it reaches the corpus's empirical input; the von Neumann premise second, because it is checkable against the corpus's own analysis; the internal-energy reading last, because it is a name without a law.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

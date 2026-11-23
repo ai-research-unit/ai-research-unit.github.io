@@ -195,9 +195,9 @@ $$</p>
 <p>There is no coupling between the two coordinates: the root problem splits into two independent one-dimensional root problems, each with the two solutions $\pm1$. The four combinations are the four roots.</p>
 <p><strong>Remark (the scalar form).</strong> In the basis $1,j$ the same equations read</p>
 <p>$$
-x^{2}+x'^{2}=1,\qquad 2xx'=0,
+x^{2}+x'{}^{2}=1,\qquad 2xx'=0,
 $$</p>
-<p>because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. The second equation forces $x=0$ or $x'=0$; the first then gives $x=\pm1$ with $x'=0$, or $x=0$ with $x'=\pm1$. The four solutions are $\pm1$ and $\pm j$.</p>
+<p>because $Ζ^{2}=(x^{2}+x'{}^{2})+2xx'j$. The second equation forces $x=0$ or $x'=0$; the first then gives $x=\pm1$ with $x'=0$, or $x=0$ with $x'=\pm1$. The four solutions are $\pm1$ and $\pm j$.</p>
 <h3 id="the-trivial-roots">The Trivial Roots</h3>
 <p>The two <strong>trivial roots</strong> are</p>
 <p>$$
@@ -280,7 +280,7 @@ $$</p>
 <p>The verification is the whole computation: the split sign $j^{2}=+1$ is what makes $j$ a root of $+1$ and not a root of $-1$.</p>
 <h3 id="the-roots-of-minus-one">The Roots of Minus One</h3>
 <p><strong>Proposition (the roots of $-1$).</strong> The equation $Ζ^{2}=-1$ has <strong>no solution</strong> in $\mathbb{C}_{\mathrm{spl}}$.</p>
-<p><strong>Proof.</strong> In the idempotent coordinates the equation is $Ζ_{+}^{2}=-1$ and $Ζ_{-}^{2}=-1$, impossible over $\mathbb{R}$; in the scalar coordinates it is $x^{2}+x'^{2}=-1$ and $2xx'=0$, and the first equation is impossible because the left side is non-negative.</p>
+<p><strong>Proof.</strong> In the idempotent coordinates the equation is $Ζ_{+}^{2}=-1$ and $Ζ_{-}^{2}=-1$, impossible over $\mathbb{R}$; in the scalar coordinates it is $x^{2}+x'{}^{2}=-1$ and $2xx'=0$, and the first equation is impossible because the left side is non-negative.</p>
 <p>The result is collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -313,7 +313,7 @@ $$</p>
 \boxed{\;\langle\pm1\rangle_{*}=1,\qquad \langle\pm j\rangle_{*}=-1\;},
 $$</p>
 <p>so the real roots are timelike units and the imaginary roots are spacelike units.</p>
-<p><strong>Proof.</strong> $\langle q+jq'\rangle_{*}=q^{2}-q'^{2}$; at $\pm1$ the pair is $(\pm1,0)$ and at $\pm j$ it is $(0,\pm1)$.</p>
+<p><strong>Proof.</strong> $\langle q+jq'\rangle_{*}=q^{2}-q'{}^{2}$; at $\pm1$ the pair is $(\pm1,0)$ and at $\pm j$ it is $(0,\pm1)$.</p>
 <p>The status of the roots is collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -518,13 +518,13 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Write $Q=q+jq'$ and impose $Q^{2}=Q$. Since</p>
 <p>$$
-Q^{2}=(q^{2}+q'^{2})+2qq'j,
+Q^{2}=(q^{2}+q'{}^{2})+2qq'j,
 $$</p>
 <p>the equation is equivalent to</p>
 <p>$$
-q^{2}+q'^{2}=q,\qquad 2qq'=q'.
+q^{2}+q'{}^{2}=q,\qquad 2qq'=q'.
 $$</p>
-<p>The second factors as $q'(2q-1)=0$. If $q'=0$ the first gives $q^{2}=q$, hence $q=0$ or $q=1$: the idempotents $0$ and $1$. If $q'\neq0$ then $q=\tfrac12$, and the first gives $\tfrac14+q'^{2}=\tfrac12$, hence $q'^{2}=\tfrac14$ and $q'=\pm\tfrac12$: the idempotents $\Pi_{+}$ and $\Pi_{-}$. There are no others.</p>
+<p>The second factors as $q'(2q-1)=0$. If $q'=0$ the first gives $q^{2}=q$, hence $q=0$ or $q=1$: the idempotents $0$ and $1$. If $q'\neq0$ then $q=\tfrac12$, and the first gives $\tfrac14+q'{}^{2}=\tfrac12$, hence $q'{}^{2}=\tfrac14$ and $q'=\pm\tfrac12$: the idempotents $\Pi_{+}$ and $\Pi_{-}$. There are no others.</p>
 <h3 id="the-correspondence-with-the-roots-of-one">The Correspondence with the Roots of One</h3>
 <p><strong>The halving map $H(Ζ)=\tfrac12(1+Ζ)$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $Ζ\mapsto(\Pi_{+}(Ζ),\Pi_{-}(Ζ))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{Ζ,-Ζ\}$ gives the same unordered pair.</strong></p>
 <p><strong>Theorem (the halving map).</strong> The map</p>
@@ -653,8 +653,8 @@ P_{+}^{2}=P_{+},\qquad P_{-}^{2}=P_{-},\qquad P_{+}P_{-}=P_{-}P_{+}=0,\qquad P_{
 $$</p>
 <p>In the basis $1,j$ the matrices are</p>
 <p>$$
-P_{+}=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
-P_{-}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+P_{+}=\frac12\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},\qquad
+P_{-}=\frac12\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix},
 $$</p>
 <p>the two complementary rank-one projectors of the plane. A projector in the split-complex algebra is an idempotent operator, and $P_{\pm}$ select the two coordinates of the isomorphism with $\mathbb{R}\oplus\mathbb{R}$. The two projectors are collected in the table.</p>
 <div class="table-scroll"><table>

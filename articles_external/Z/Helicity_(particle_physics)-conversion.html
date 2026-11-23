@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helicity (Particle Physics) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Helicity_(particle_physics).pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="helicity-particle-physics"><strong>Helicity (Particle Physics)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Helicity (particle physics)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Helicity_(particle_physics)-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Helicity_(particle_physics).pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/helicity-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Helicity_(particle_physics).pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on helicity: its definition as the projection of spin on momentum, the operator form $h=\vec S\cdot\hat p$, the reason the orbital part does not contribute, the invariance of helicity for a massless particle under Lorentz boosts, and the distinction between helicity and chirality.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"helicity is the projection of the spin onto the direction of momentum. Mathematically, helicity is the sign of the projection of the spin vector onto the momentum vector: 'left' is negative, 'right' is positive. Thus, it can be represented with the operator" $h=\vec S\cdot\hat{\vec p}$, "where" $\hat{\vec p}$ is the momentum operator and $\vec S$"is the spin operator."</p>
+<h3 id="why-the-orbital-part-drops-out">Why the orbital part drops out</h3>
+<p>"The angular momentum</p>
+<p>$J$ is the sum of an orbital angular momentum $L$ and a spin $S$. The relationship between orbital angular momentum $L$, the position operator $r$ and the linear momentum (orbit part) $p$" $\vec L=\vec r\times\vec p$, " so $L$'s component in the direction of $p$ is zero. Thus, helicity is just the projection of the spin onto the direction of linear "momentum. </p>
+<h3 id="the-two-properties-helicity-is-invariant-under-rotations-because-both-spin-and-momentum-rotate-together-under-a-boost-it-is-invariant-only-for-a-massless-particle-since-a-massive-particle-can-be-overtaken-which-reverses-the-momentum-without-reversing-the-spin-chirality-is-a-different-quantity-defined-by-the-math21-eigenvalue-and-boost-invariant-for-all-masses">The two properties Helicity is invariant under rotations because both spin and momentum rotate together. Under a boost it is invariant only for a massless particle, since a massive particle can be overtaken, which reverses the momentum without reversing the spin. Chirality is a different quantity, defined by the $\gamma_5$ eigenvalue and boost-invariant for all masses.</h3>
+<p>"Helicity (particle physics) In physics, helicity is the projection of the spin onto the direction of momentum."</p>
+<p>"Helicity, however, is not Lorentz invariant; under the action of a Lorentz boost, the helicity may change sign."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-orbital-term-vanishes-identically-not-approximately">1. The orbital term vanishes identically, not approximately</h3>
+<p><strong>The idea.</strong> $\vec L\cdot\vec p=(\vec r\times\vec p)\cdot\vec p=0$ exactly, because it is a scalar triple product with a repeated vector. So helicity needs no projection operator on the orbital part. This is a <strong>formula</strong>. </p>
+<p><strong>What it would add.</strong> A derivation step the corpus's helicity article may compress: the projection is onto spin alone for a structural reason, not because the orbital part is small. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/helicity-in-biquaternionic-form.md</code>, at the definition. </p>
+<p><strong>What stands in the way.</strong> The corpus's $L$ is an algebraic product rather than a cross product in a vector space, so the vanishing has to be checked in the algebra's own multiplication, where zero divisors make "vanishes" a subtler statement.</p>
+<h3 id="2-helicity-is-frame-dependent-for-a-massive-particle">2. Helicity is frame-dependent for a massive particle</h3>
+<p><strong>The idea.</strong> A boost can overtake a massive particle and flip the sign of its momentum without touching its spin, so helicity is not Lorentz invariant for $m\neq0$. Only chirality is.</p>
+<p><strong>What it would add.</strong> The distinction that makes the massless case special, which the corpus uses when it separates the two chiral halves.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/helicity-in-biquaternionic-form.md</code>, on the massless limit.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the definition, the operator, the orbital argument and the helicity-chirality distinction are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

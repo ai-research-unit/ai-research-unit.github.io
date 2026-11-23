@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirac Spinor — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Dirac_spinor.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirac-spinor"><strong>Dirac Spinor</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Dirac spinor</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Dirac_spinor-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Dirac_spinor.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-bispinor-spaces.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Dirac_spinor.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Dirac spinor: the four-component object that carries a spin-$\tfrac12$ representation of the Lorentz group, built from a pair of Weyl spinors belonging to the two conjugate representations, and the reason the pairing is what allows mass, charge and angular momentum.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-it-is">What it is</h3>
+<p>"a Dirac spinor is a mathematical construction that is used to describe some of the fundamental particles of nature, including quarks and electrons. It is a specific embodiment of a spinor, specifically constructed so that it is consistent with the requirements of special relativity. Dirac spinors transform in a certain" spinorial "fashion under the action of the Lorentz 1 group, which describes the symmetries of Minkowski spacetime." "etime. They occur in the relativistic spin-⁠2 wave function solutions to the Dirac equation. They"</p>
+<h3 id="the-construction-from-two-weyl-spinors">The construction from two Weyl spinors</h3>
+<p>"They are constructed out of two simpler component spinors, the Weyl spinors. Each of the two component spinors transform differently under the two distinct complex-conjugate spin-1/2 representations of the Lorentz group. This"</p>
+<h3 id="why-the-pairing-matters">Why the pairing matters</h3>
+<p>"This pairing is of fundamental importance, as it allows the represented particle to have a mass, carry a charge, and represent the flow of charge as a current, and perhaps most importantly, to carry angular momentum. More precisely, the mass is a Casimir invariant of the Lorentz group."</p>
+<p>That last clause is the article's sharpest point: the mass is not a parameter inserted into the equation but a label of the representation, so a single Weyl spinor, which is massless by construction, cannot carry one.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-a-casimir-label-so-it-can-be-switched-off-representation-theoretically">1. Mass is a Casimir label, so it can be switched off representation-theoretically</h3>
+<p><strong>The idea.</strong> A Weyl spinor is one irreducible representation and has no mass term; a Dirac spinor is the direct sum of two conjugate ones, and the mass is the invariant that mixes them. Mass is therefore a statement about which representation one is in.</p>
+<p><strong>What it would add.</strong> A representation-theoretic reason for the corpus's mass-angle $\theta$. The corpus writes the mass as an angle in the polar decomposition and shows that it distinguishes the two kinds of mass; the article says why an angle is the right carrier, since the mass term is the invariant that couples the two chiral halves.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>, at the decomposition into Weyl halves.</p>
+<p><strong>What stands in the way.</strong> The corpus's element is a single object rather than a direct sum of two representations, so the "which representation" question becomes "which component", and the correspondence would have to be spelled out.</p>
+<h3 id="2-the-two-conjugates-are-not-the-same-and-the-difference-is-charge">2. The two conjugates are not the same, and the difference is charge</h3>
+<p><strong>The idea.</strong> The two Weyl spinors transform under conjugate representations. A field in a conjugate representation carries the opposite charge, so the pairing is what makes a charged massive particle possible.</p>
+<p><strong>What it would add.</strong> A structural account of why the corpus's charge conjugation is antilinear and why it can swap the halves of an element.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's conjugation is defined on the algebra, and identifying it with the representation-theoretic conjugation needs the dictionary between the two languages.</p>
+<p>This is an encyclopedia article; the definition, the Weyl construction, the pairing argument and the Casimir remark are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

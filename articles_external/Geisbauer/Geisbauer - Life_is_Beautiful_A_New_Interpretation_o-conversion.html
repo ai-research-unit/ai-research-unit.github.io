@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life is Beautiful – A New Interpretation of the Double-Slit Experiment — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Life_is_Beautiful_A_New_Interpretation_o.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="life-is-beautiful-a-new-interpretation-of-the-double-slit-experiment"><strong>Life is Beautiful – A New Interpretation of the Double-Slit Experiment</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>June 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Life_is_Beautiful_A_New_Interpretation_o-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Life_is_Beautiful_A_New_Interpretation_o.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Life_is_Beautiful_A_New_Interpretation_o.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks whether the double slit needs an amplitude cross term at all. The textbook intensity is written down, then replaced by the sum of two single-slit patterns, each a shifted $\operatorname{sinc}^2$, and a numerical check is offered on whether such a sum can show fringes with deep or exact-zero minima. The paper is careful about its own claim: exact zeros appear only when the single-slit zeros coincide, and a residual otherwise — which it presents as matching what experiments show. A Python script that plots the sums is included.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-received-formula">The received formula</h3>
+<p>$$I_{\rm double}(x)=I_0\cos^2\!\left(\frac{\pi dx}{\lambda L}\right)\operatorname{sinc}^2\!\left(\frac{\pi bx}{\lambda L}\right),$$
+with $d$ the slit separation, $b$ the width, $L$ the screen distance; "In this framework, destructive interference occurs via a cross-term from the same wave (or particle) passing through both slits."</p>
+<h3 id="the-replacement">The replacement</h3>
+<p>"Rather than positing that one particle's wavefunction splits, we assume each particle travels through either the left or right slit", so that
+$$I_{\rm total}(x)=I_1(x)+I_2(x),\qquad I_1=\operatorname{sinc}^2\!\left(\frac{\pi b}{\lambda L}(x-\delta)\right),\quad I_2=\operatorname{sinc}^2\!\left(\frac{\pi b}{\lambda L}(x+\delta)\right).$$
+"No amplitude cross-term is required—only an intensity sum."</p>
+<h3 id="what-the-model-does-and-does-not-give">What the model does and does not give</h3>
+<p>"Exact Zero Minima appear if the zeros of each single-slit envelope align perfectly"; "Non-Zero Minima occur otherwise"; "The alignment depends on how the patterns shift relative to each other, which in turn depends on geometry (slit separation, angles, etc.)". The paper explicitly refuses a fixed residual: "Contrary to any blanket statement that “the summation model yields a ﬁxed residual (e.g., 4.5%),” the truth is more nuanced"</p>
+<h3 id="the-question-it-puts-to-experiment">The question it puts to experiment</h3>
+<p>"Has a truly perfect, absolutely zero-intensity minimum been unambiguously measured?" — and a proposed protocol that fits both the $\cos^2\times\operatorname{sinc}^2$ form and the sum of two sincs to the same data and lets the fits decide.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-intensity-addition-as-the-null-hypothesis">1. Intensity addition as the null hypothesis</h3>
+<p><strong>The idea.</strong> The paper treats "no cross term" as a model with its own predictions, rather than as the absence of a model. That is a <strong>reading</strong> with a test attached, and it is the right shape for a corpus whose double-slit article derives the cross term from an amplitude sum. </p>
+<p><strong>What it would add.</strong> A null against which the corpus's cross term can be said to be <em>seen</em>: if a sum of two sincs fits the data as well, the cross term is not evidenced by the pattern alone. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, which states $I=a_1^2+a_2^2+2a_1a_2\cos\delta$ and reads the visibility from the Bloch vector. </p>
+<p><strong>What stands in the way.</strong> As printed the model needs a shift of the order of the fringe spacing. Two single-slit patterns from apertures a distance $d$ apart are offset by at most of order $b$, the slit width; to obtain fringes of period $\lambda L/d$ the shift must be $\delta\sim\lambda L/(2d)$, which is not a property of the aperture. With the geometric shift, the sum is one broadened lobe of width $\lambda L/b$ and no fine fringes. </p>
+<h3 id="2-the-refusal-of-a-fixed-residual">2. The refusal of a fixed residual</h3>
+<p><strong>The idea.</strong> A residual of 4.5% is a number the paper will not accept, because the residual depends on alignment. That is a small but real discipline: a predicted constant must be a function of the parameters, not a slogan. </p>
+<p><strong>What it would add.</strong> A caution for the batch's own predictions, several of which offer "non-zero minima" as a residue without saying what it scales with.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, on what the visibility does and does not determine.</p>
+<p><strong>What stands in the way.</strong> The paper replaces one number with a parameter dependence it does not compute; $\delta$ is left free, so the model's residual is whatever the fit needs.</p>
+<p>The rank is a judgement: the null hypothesis first, because it is testable and cheap; the refusal second, because it disciplines the batch rather than adding to it.</p>
+<p>This is a five-page paper; the textbook formula, the intensity sum, the numerical check, the discussion of zeros and residuals, the proposed test and a plotting script are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

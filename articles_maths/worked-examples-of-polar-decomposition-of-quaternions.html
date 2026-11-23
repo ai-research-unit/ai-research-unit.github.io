@@ -133,7 +133,7 @@ $$</p>
 \langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$</p>
-<p>The modulus is $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/\varrho)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of <em>Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
+<p>The modulus is $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}&gt;0$, the angle is $\theta=\arccos(q_t/\varrho)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of <em>Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
 <p>The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
 <p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data and its check. The boundary is treated separately (§<em>The Real Axis Family</em>). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§<em>Summary</em>).</p>
 <h2 id="the-method">The Method</h2>
@@ -215,7 +215,7 @@ $$</p>
 \qquad
 \tilde q=\exp(\tilde q_{\log}).
 $$</p>
-<p>The <strong>principal logarithm</strong> is this exponent on the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$:</p>
+<p>The <strong>principal logarithm</strong> is this exponent on the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}&lt;\pi$:</p>
 <p>$$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
 +\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}\,
 \frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}},
@@ -242,8 +242,8 @@ $$</p>
 \mathsf M(\tilde q)
 =q_tI-iq_x\sigma_x-iq_y\sigma_y-iq_z\sigma_z
 =\begin{pmatrix}
-q_t-iq_z & -iq_x-q_y\\
--iq_x+q_y & q_t+iq_z
+q_t-iq_z &amp; -iq_x-q_y\\
+-iq_x+q_y &amp; q_t+iq_z
 \end{pmatrix}.
 $$</p>
 <p>Its determinant is $\varrho^2$, its eigenvalues are $q_t\pm i\lvert\vec q\rvert$, and both have modulus $\varrho$. The matrix is normal and satisfies $\mathsf M(\tilde q)\mathsf M(\tilde q)^{\dagger}=\varrho^2I$, so its polar decomposition is</p>
@@ -305,20 +305,20 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\varrho>0$</td>
+<td>$\varrho&gt;0$</td>
 <td>$e_t$</td>
 <td>$\ln \varrho+2\pi k\vec n$, $k\ge0$, $\vec n\in S^2$</td>
 <td>$\ln \varrho$</td>
 </tr>
 <tr>
-<td>$-\varrho<0$</td>
+<td>$-\varrho&lt;0$</td>
 <td>$-e_t$</td>
 <td>$\ln \varrho+(2k+1)\pi\vec n$, $k\ge0$, $\vec n\in S^2$</td>
 <td>none</td>
 </tr>
 </tbody>
 </table></div>
-<p>At $k=0$ the first row is the single value $\ln \varrho$ for every $\vec n$. The exponential has critical spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, whose image is the nonzero real axis; the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ is the domain of uniqueness. The kernel is the union of the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=2\pi k$, together with the origin; it is not a subgroup. The boundary family is computed in §<em>The Real Axis Family</em>.</p>
+<p>At $k=0$ the first row is the single value $\ln \varrho$ for every $\vec n$. The exponential has critical spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, whose image is the nonzero real axis; the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}&lt;\pi$ is the domain of uniqueness. The kernel is the union of the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=2\pi k$, together with the origin; it is not a subgroup. The boundary family is computed in §<em>The Real Axis Family</em>.</p>
 <h2 id="the-eight-cases">The Eight Cases</h2>
 <p>The first five cases mirror the first five of the biquaternion article: the identity, the two rotors, the pure boost replaced by the pure scale, and the parallel-axis case replaced by a scale and a rotor on one axis. Cases 6 and 7 mirror the biquaternion orthogonal-axis and non-parallel-axis cases: the two axes sit in two factors of a product, and the formal exponent is the sum of their exponents. Case 8 is the generic element, a non-invertible with all four coordinates nonzero. The two-axis defect that the biquaternion cases carry inside one element is carried here by the product in cases 6 and 7, because a single quaternion has only one axis.</p>
 <h3 id="case-1-the-identity">Case 1: The Identity</h3>
@@ -403,7 +403,7 @@ $$</p>
 <p>and the logarithm is $\log\tilde q=\frac{\pi}{4}\vec e_x$. The error is $1.1\times10^{-16}$. The matrix is</p>
 <p>$$
 \mathsf M(\tilde q)=\frac{1}{\sqrt2}
-\begin{pmatrix}1&-i\\-i&1\end{pmatrix},
+\begin{pmatrix}1&amp;-i\\-i&amp;1\end{pmatrix},
 $$</p>
 <p>with determinant $1$ and eigenvalues $e^{\pm i\pi/4}$.</p>
 <h3 id="case-4-a-pure-scale">Case 4: A Pure Scale</h3>
@@ -460,7 +460,7 @@ $$</p>
 $$</p>
 <p>with error $8.9\times10^{-16}$. The matrix is</p>
 <p>$$
-\mathsf M(\tilde q)=\begin{pmatrix}3&-4i\\-4i&3\end{pmatrix},
+\mathsf M(\tilde q)=\begin{pmatrix}3&amp;-4i\\-4i&amp;3\end{pmatrix},
 $$</p>
 <p>with determinant $25$ and eigenvalues $3\pm4i$. The scale is central, so the two factors amalgamate without a defect; the exponent is the true logarithm.</p>
 <h3 id="case-6-orthogonal-axes">Case 6: Orthogonal Axes</h3>
@@ -504,7 +504,7 @@ $$</p>
 $$</p>
 <p>with logarithm $\log\tilde q=\frac{\pi}{2}\vec e_z$ and error $6.1\times10^{-17}$. The matrix is</p>
 <p>$$
-\mathsf M(\tilde q)=-i\sigma_z=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+\mathsf M(\tilde q)=-i\sigma_z=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 $$</p>
 <p>with determinant $1$ and eigenvalues $\pm i$. This is the quaternion analogue of the biquaternion orthogonal-axis case: the two axes are orthogonal, the formal exponent misses the cross term, and the defect is exactly $1$. The biquaternion counterpart is unipotent; here the definite norm excludes a nonzero null vector, so the product is a pure rotor. The defect is still the cross term of the two axes.</p>
 <h3 id="case-7-non-parallel-axes">Case 7: Non-Parallel Axes</h3>
@@ -550,11 +550,11 @@ $$</p>
 <p>with logarithm $\log\tilde q=\frac{3\pi}{4}\vec e_z$ and error $1.1\times10^{-16}$. The matrix is</p>
 <p>$$
 \mathsf M(\tilde q)=\begin{pmatrix}
-\frac{-1-i}{\sqrt2}&0\\
-0&\frac{-1+i}{\sqrt2}
+\frac{-1-i}{\sqrt2}&amp;0\\
+0&amp;\frac{-1+i}{\sqrt2}
 \end{pmatrix},
 $$</p>
-<p>with determinant $1$ and eigenvalues $e^{\pm i3\pi/4}$. The scalar is negative, the angle is $3\pi/4<\pi$, and the principal logarithm exists. This is the quaternion analogue of the biquaternion non-parallel-axis case: the cross term is the defect, and the negative scalar is the scalar part of the product, not a point on the branch cut.</p>
+<p>with determinant $1$ and eigenvalues $e^{\pm i3\pi/4}$. The scalar is negative, the angle is $3\pi/4&lt;\pi$, and the principal logarithm exists. This is the quaternion analogue of the biquaternion non-parallel-axis case: the cross term is the defect, and the negative scalar is the scalar part of the product, not a point on the branch cut.</p>
 <h3 id="case-8-a-generic-element">Case 8: A Generic Element</h3>
 <p><strong>Coordinates.</strong> For $\tilde q=e_t+2\vec e_x+3\vec e_y+4\vec e_z$,</p>
 <p>$$
@@ -596,9 +596,9 @@ $$</p>
 <p>$$
 \tilde q(\delta)=2\cos(\pi-\delta)\,e_t+2\sin(\pi-\delta)\,\vec e_x,
 \qquad
-0\le\delta<\pi .
+0\le\delta&lt;\pi .
 $$</p>
-<p>Every member has modulus $2$ and norm $4$. For $\delta>0$ the element is not on the negative real axis, the axis is $\vec e_x$, and the principal exponent is</p>
+<p>Every member has modulus $2$ and norm $4$. For $\delta&gt;0$ the element is not on the negative real axis, the axis is $\vec e_x$, and the principal exponent is</p>
 <p>$$
 \log\tilde q(\delta)=\ln2+(\pi-\delta)\vec e_x .
 $$</p>
@@ -971,7 +971,7 @@ $$</p>
 <li>Cases 2, 3 and 5 share the axis $\vec e_x$ and differ in scale and angle. Cases 6 and 7 share the axis $\vec e_z$. Case 8 has the generic axis. The exponent angle is half the rotation angle, so the rotation columns of the table are twice the angle columns.</li>
 <li>Case 5 is the one-axis case. The scale is central, the two factors commute, the word is one exponential, and the formal exponent is the true logarithm. The defect is zero.</li>
 <li>Case 6 is the orthogonal-axis product. The word is $\vec e_x\vec e_y=\vec e_z$; the polar data give the axis $\vec e_z$ and the exponent $\frac{\pi}{2}\vec e_z$. The formal exponent $\frac{\pi}{2}(\vec e_x+\vec e_y)$ misses the element by $1$, so the defect is $1$. The true polar word is one exponential.</li>
-<li>Case 7 is the non-parallel product. The word is a product of rotors at $45^\circ$, and the element has the negative scalar $-1/\sqrt2$. The polar data give the axis $\vec e_z$ and the exponent $\frac{3\pi}{4}\vec e_z$; the formal exponent misses the element by $1/\sqrt2$. The angle is $3\pi/4<\pi$, so the principal logarithm exists. The negative scalar is the scalar part of the product, not a point on the branch cut.</li>
+<li>Case 7 is the non-parallel product. The word is a product of rotors at $45^\circ$, and the element has the negative scalar $-1/\sqrt2$. The polar data give the axis $\vec e_z$ and the exponent $\frac{3\pi}{4}\vec e_z$; the formal exponent misses the element by $1/\sqrt2$. The angle is $3\pi/4&lt;\pi$, so the principal logarithm exists. The negative scalar is the scalar part of the product, not a point on the branch cut.</li>
 <li>Case 8 is the generic non-invertible. The modulus is $\sqrt{30}$, all four coordinates are nonzero, and the axis has all three components. The formal exponent is the true logarithm, so the defect is zero.</li>
 <li>The defect is zero when the word is a single factor, in cases 1 to 5 and 8; it is nonzero when two rotors about different axes are multiplied, in cases 6 and 7. The cross term is the defect. This is how the quaternion article mirrors the biquaternion defect without a second axis inside one element.</li>
 <li>The open negative real axis is the branch cut. The polar word exists there, but the principal exponent does not, and the axis is free. The general logarithms form the spheres of radii $(2k+1)\pi$ at scalar height $\ln \varrho$; the first is the sphere of radius $\pi$. The kernel is a union of spheres and is not a subgroup.</li>
@@ -995,7 +995,7 @@ $$</p>
 <tr>
 <td>modulus</td>
 <td>$\varrho e^{i\theta_{\mathrm{pha}}}$, principal square root</td>
-<td>$\varrho>0$</td>
+<td>$\varrho&gt;0$</td>
 </tr>
 <tr>
 <td>unit factor</td>

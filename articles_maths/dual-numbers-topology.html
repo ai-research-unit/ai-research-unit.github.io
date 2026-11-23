@@ -76,7 +76,7 @@
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$</p>
-<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\| = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|$; they are distinct, and the whole topology is carried by the second.</p>
+<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\| = \sqrt{q^2 + q'{}^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|$; they are distinct, and the whole topology is carried by the second.</p>
 <h2 id="the-dual-plane-as-a-topological-space">The Dual Plane as a Topological Space</h2>
 <h3 id="the-underlying-space">The Underlying Space</h3>
 <p>The map</p>
@@ -87,11 +87,11 @@ $$</p>
 <p><strong>Proposition.</strong> The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{dln}}$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the invertibles, so $(\mathbb{C}_{\mathrm{dln}})^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.</p>
 <p><strong>Proof.</strong> Bilinearity gives continuity of the product from the continuity of the algebra operations on $\mathbb{R}^2$. The inverse $q + \varepsilon q' \mapsto q^{-1} - q^{-2}\varepsilon q'$ is continuous where $q \neq 0$; $1 + \mathrm{M} = \{q = 1\}$ is closed.</p>
 <h3 id="the-distinction-between-the-two-forms">The Distinction Between the Two Forms</h3>
-<p>The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle Q_n\rangle \to 0$ need not have $Q_n \to 0$, because $Q_n$ may move along the null line $\mathrm{M}$.</p>
+<p>The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'{}^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle Q_n\rangle \to 0$ need not have $Q_n \to 0$, because $Q_n$ may move along the null line $\mathrm{M}$.</p>
 <h3 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h3>
 <p><strong>Definition.</strong> The <strong>Euclidean unit sphere</strong> is</p>
 <p>$$
-S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\| = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
+S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\| = 1\} = \{(q,q') : q^2 + q'{}^2 = 1\} \cong S^1.
 $$</p>
 <p>It is a closed, compact, connected one-manifold.</p>
 <p><strong>Proposition.</strong> The Euclidean norm is not multiplicative, and the Euclidean unit sphere is not closed under multiplication.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Proof.</strong> $\langle Q\rangle = q^2 = 1$ gives $q = \pm 1$ with $q'$ free; the two lines are closed and contractible, and the line $q = 1$ is $1 + \mathrm{M}$.</p>
 <p>So the norm-one set of the dual numbers is not a circle, as in the complex case, nor a hyperbola with two branches, as in the split-complex case, but a pair of parallel lines; its homotopy type is that of the two-point space.</p>
 <h3 id="the-group-of-invertibles">The Group of Invertibles</h3>
-<p><strong>Theorem.</strong> The group of invertibles is $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q > 0\}$ and $\{q < 0\}$, each contractible. The homotopy type of $(\mathbb{C}_{\mathrm{dln}})^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence</p>
+<p><strong>Theorem.</strong> The group of invertibles is $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q &gt; 0\}$ and $\{q &lt; 0\}$, each contractible. The homotopy type of $(\mathbb{C}_{\mathrm{dln}})^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence</p>
 <p>$$
 \boxed{\;
 \pi_0\bigl((\mathbb{C}_{\mathrm{dln}})^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{C}_{\mathrm{dln}})^\times\bigr) = 0 \quad (n \geq 1)
@@ -141,7 +141,7 @@ $$</p>
 \;}.
 $$</p>
 <p><strong>Proposition.</strong> The boundary $\mathrm{M}$ is a closed subset of the plane of empty interior, homeomorphic to $\mathbb{R}$, and it is the closure of the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$. Each of the two components of the group of invertibles is homeomorphic to an open half-plane, and the boundary separates them.</p>
-<p><strong>Proof.</strong> The maximal ideal is the line $\{q = 0\}$, closed with empty interior in the plane and homeomorphic to $\mathbb{R}$ through $q' \mapsto \varepsilon q'$; its points with $q' \neq 0$ are exactly the zero divisors. The components $\{q > 0\}$ and $\{q < 0\}$ are open half-planes, and every path between them meets the line $\{q = 0\}$.</p>
+<p><strong>Proof.</strong> The maximal ideal is the line $\{q = 0\}$, closed with empty interior in the plane and homeomorphic to $\mathbb{R}$ through $q' \mapsto \varepsilon q'$; its points with $q' \neq 0$ are exactly the zero divisors. The components $\{q &gt; 0\}$ and $\{q &lt; 0\}$ are open half-planes, and every path between them meets the line $\{q = 0\}$.</p>
 <p><strong>Remark (the boundary).</strong> The boundary of the group of invertibles is a line, of real codimension one, so it is a topological wall that separates the two components of the group of invertibles.</p>
 <h2 id="the-maximal-ideal-as-a-closed-nilpotent-direction">The Maximal Ideal as a Closed Nilpotent Direction</h2>
 <h3 id="the-maximal-ideal">The Maximal Ideal</h3>
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 L = \mathrm{M} \cap S^1_E = \{+\varepsilon,\, -\varepsilon\} \cong S^0.
 $$</p>
-<p><strong>Proposition.</strong> Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|Q\| > 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the <em>double</em> line $q^2 = 0$: its intersection with the unit circle is double-counted.</p>
+<p><strong>Proposition.</strong> Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|Q\| &gt; 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the <em>double</em> line $q^2 = 0$: its intersection with the unit circle is double-counted.</p>
 <p><strong>Proof.</strong> $\varepsilon q' = |q'|\operatorname{sgn}(q')\varepsilon$ with $\|\varepsilon q'\| = |q'|$; the two unit points are $\pm\varepsilon$. The equation $q^2 = 0$ is the square of the linear equation $q = 0$, so its projective solution is a single point of multiplicity two, met twice by the circle.</p>
 <p>This is the topological face of the degeneracy. For a non-degenerate indefinite form in two variables the isotropic cone is a pair of lines, of real dimension one, and its link is the four-point set of normalized null directions, as in the split complex case. For the degenerate dual form the cone is a single line, but the form is the square $q^2$ of the linear form $q$, so the line is met with multiplicity two: the link is the two-point space $\{\pm\varepsilon\}$, which counts the one projective null direction twice.</p>
 <h2 id="comparison-with-the-topology-of-the-other-systems">Comparison with the Topology of the Other Systems</h2>
@@ -224,7 +224,7 @@ $$</p>
 <td>Norm</td>
 </tr>
 <tr>
-<td>$\|Q\| = \sqrt{q^2 + q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2 + q'{}^2}$</td>
 <td>Euclidean norm, giving the topology</td>
 </tr>
 <tr>

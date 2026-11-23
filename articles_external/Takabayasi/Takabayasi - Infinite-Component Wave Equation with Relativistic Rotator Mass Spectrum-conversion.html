@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="infinite-component-wave-equation-with-relativistic-rotator-mass-spectrum"><strong>Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>38</strong> (1967) 285, No. 1; dated 19 April 1967</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Infinite-Component Wave Equation with Relativistic Rotator Mass Spectrum.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the relativistic rotator's mass–spin relation, which is fourth order in $P_{\mu}$, and replaces it by its Dirac square root acting on a four-component spinor whose coefficients are themselves infinite matrices — the Majorana tower. The carrier becomes a product of three Lorentz groups, the physical Lorentz group being the diagonal subgroup, so the observed spin is the resultant of the tower's spin and the Dirac spin. The resulting spectrum is linear in $J+\tfrac12$ with two branches, and it is the Majorana spectrum inverted: where Majorana's falls as $1/(J+\tfrac12)$, this rises, which is what the baryon octet and decuplet require.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-formulas-and-why-the-second-is-better-founded">Two formulas, and why the second is better founded</h3>
+<p>The usual mass–spin relations are $m=\kappa_0+\kappa_1J$ and a second, relativistic, form; "These (1) and (2) would be practically equivalent under the condition ICt~ICo such as occurs in non-relativistic problems. In the case" elementary "particles, however, this condition is actually not satisfied, and often one applies (1) for baryons and (2) for mesons 1l rather arbitrarily. We consider·" He proposes instead that 'elementary' particle states are related to essentially relativistic internal movement of a supposedly composite structure, so that a single wave equation generates the family.</p>
+<h3 id="the-square-root">The square root</h3>
+<p>Relation (2) "just represents the relation between the eigenvalues of the two invariants ... of the Poincaré group, namely ... $-P^{2}=\kappa_1^{2}J(J+1)+\kappa_0^{2}$" (as printed), i.e. a fourth-order equation in $P_{\mu}$. "he depend- ence of the mass m on the spin. J for par- tory, because it is of fourth order in P"'- W e replace it by its "square-root" with the ticles and resonances ", giving an equation</p>
+<p>$$
+\big(P^{2}-\kappa_1^{2}J(J+1)\big)\psi=0
+\;\longrightarrow\;
+\big(\gamma_{\mu}P^{\mu}+i\kappa_1\Gamma\big)\psi=0,
+$$</p>
+<p>where $\Gamma$ acts in the tower and has $\Gamma^{2}$ proportional to $J(J+1)$; $\psi$ is a 4-component spinor in the Dirac index and an infinite-component function $\psi(n_1,n_2,x^{\mu})$ in two oscillator labels $n_a=0,1,2,\dots$, with $a_a$, $a_a^{\dagger}$ satisfying $[a_a,a_b^{\dagger}]=\delta_{ab}$.</p>
+<h3 id="three-lorentz-groups-one-physical-one">Three Lorentz groups, one physical one</h3>
+<p>With $S_{\mu\nu}=a^{\dagger}\sigma_{\mu\nu}a/2$ and $R_i$ built from $a$ and $a^{\dagger}$, "j+1) these give a infinite-dimensional unitary +C3. The latter is rewritten as P= {JC 1(J representation of LM, with ,Y." "s) or time-like. We Majorana representation. 4 l-", and the tower spans a unitary representation space of $Sp(2,R)=0(3,2)$ containing $L^{M}$ as subgroup. The whole wave function "carries the direct product of three different Lonrentz groups: L'"' XLMxLn, so that m is determined by J alone.", and the physical group $L$ is its subgroup whose generators $M_{\mu\nu}$ are defined by $M_{\mu\nu}=x_{[\mu}P_{\nu]}+S_{\mu\nu}^{M}+\sigma_{\mu\nu}/2$. Hence $$ W_{\mu}=W_{\mu}^{M}+S_{\mu}^{D}, \qquad J=j+\tfrac{\eta}{2}, $$" nsla- where 1J = ± 1 according as the coupling is tion by Pfl= -ta;ax~; it is at the same parallel or antiparallel.", and the spin–orbit coupling is carried by $2W_{\mu}^{M}\gamma^{\mu}$. </p>
+<h3 id="the-spectrum-squaring-the-equation-gives">The spectrum Squaring the equation gives</h3>
+<p>$\{P^{2}-C_1W_M^{2}+C_2(W_M^{D})^{2}-C_3\}\psi=0$ with $C_1=2\kappa_1(\kappa_1-\kappa_0)$, $C_2=\kappa_1(\kappa_1-2\kappa_0)$, $C_3=\{3(\kappa_1-\kappa_0)^{2}+\kappa_0^{2}\}/4$, and the eigenvalues are either $P^{2}=0$ — we disregard the former case — or $$ m=\pm\Big[\kappa_1\Big(J+\frac{1+\eta}{2}\Big)-\kappa_0\Big], $$"M=SL(2,C),aa (6) contains two series due to 1J = ± 1. In is not". In the case $\kappa_0=\kappa_1/2$ it "simplifies to $m=\pm\tfrac12\kappa_1(J+\tfrac12)$ (as printed), so that $m$ is determined by $J$ alone". Then: "our wave equation results in (6) or (7); this means the linear mass increase with increased $J+1/2$", which "is just the mass formula formerly where S'j= -R., Sti.=iS,. Clearly (W~) 2 *l We disregard the case of space-like P,_." "to group the usual bctet baryons together with JP = (1/2)+ and the decuplet with JP= (3/2)+, and is in good agreement with experiment.7)".</p>
+<p>The comparison with Majorana is the point: "The Majorana equation has the descending mass spectrum m=JC/(J+l/2), and does not ·admit antiparticle states. Our wave equation is much more physical since it just inverts this spectrum and also accommodates antiparticles, as represented by the double sign in (6). 1) Cf., e."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-physical-lorentz-group-as-the-diagonal-of-a-product-with-the-observed-spin-a-resultant">1. The physical Lorentz group as the diagonal of a product, with the observed spin a resultant</h3>
+<p><strong>The idea.</strong> The carrier is $L^{M}\times L^{M}\times L^{D}$; the physical generators are $M_{\mu\nu}=x_{[\mu}P_{\nu]}+S_{\mu\nu}^{M}+\sigma_{\mu\nu}/2$, so $W_{\mu}=W_{\mu}^{M}+S_{\mu}^{D}$ and $J=j+\eta/2$. The observed spin is the sum of two spins living in different factors, and parallel or antiparallel coupling is a branch of the spectrum, not a choice of state.</p>
+<p><strong>What it would add.</strong> A worked case of a construction the corpus uses without a spectrum attached. <em>The Two Sectors: The Hermitian Split and the Four Bridges</em> (<code>articles_physics/the-two-sectors-the-hermitian-split-and-the-four-bridges.md</code>) has two commuting $\mathfrak{sl}(2,\mathbb C)$'s and identifies the physical Lorentz group with the diagonal; Takabayasi adds a third factor and shows what the diagonal <em>buys</em>: a spin sum, a spin–orbit term, and two spectral branches labelled by the relative sign.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Diagonal</em>, as the spectral consequence, and <em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>), where $W_{\mu}$ is decomposed.</p>
+<p><strong>What stands in the way.</strong> The corpus's two factors are the left and right actions on one algebra; the third factor here is a Dirac index, so the product is not a product of algebra actions but of a module with a spinor. The translation is possible and is not short.</p>
+<h3 id="2-inverting-majoranas-spectrum-is-a-discrete-change-with-a-discrete-reason">2. Inverting Majorana's spectrum is a discrete change with a discrete reason</h3>
+<p><strong>The idea.</strong> Majorana's tower gives $m=\kappa/(J+\tfrac12)$ and no antiparticles. Adjoining the Dirac factor gives $m=\pm[\kappa_1(J+\tfrac{1+\eta}{2})-\kappa_0]$, which rises with $J$ and carries the double sign that is the antiparticle. The inversion is not a fit; it is what the extra factor does.</p>
+<p><strong>What it would add.</strong> A second mechanism for a rising spectrum. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) gets a rising spectrum from the <em>degree</em> of a representation, $m/m_e=\deg\tau^{l\bar l}/2$, with errors of a few percent on the proton and the $\Sigma$; Takabayasi gets it from a linear eigenvalue condition with no free normalisation beyond $\kappa_1$ and $\kappa_0$. Two mechanisms for the same target is worth having, because the corpus's own article says in §<em>What the Framework Establishes, Transcribes, and Does Not</em> that its formula is a transcribe-and-compare.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Spectrum</em>, as the competing mechanism, with the octet/decuplet assignment as the test case.</p>
+<p><strong>What stands in the way.</strong> The letter does not compute a single numerical mass; the "good agreement with experiment" is a reference to earlier work, so the import is a mechanism and not a fit.</p>
+<h3 id="3-a-fourth-order-relation-among">3. A fourth-order relation among</h3>
+<p>Casimirs is linearised by adjoining a finite matrix</p>
+<p><strong>The idea.</strong> The rotator relation is a quartic in $P_{\mu}$. Writing it as $\Gamma^{2}\propto J(J+1)$ and taking a matrix square root turns it into a first-order equation on a larger carrier, with the price paid in components and not in covariance; the spin content then follows from the $\gamma$-algebra.</p>
+<p><strong>What it would add.</strong> The general recipe behind a corpus equation. <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> (<code>articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.md</code>) takes the root of the second-order operator and asks in §<em>What the Root Does Not Carry</em> what is lost; here the same move is applied to a <em>quartic</em> whose coefficients are Casimir operators, which is the case the corpus's root article does not treat because its operator has constant coefficients.</p>
+<p><strong>Where it lands.</strong> §<em>What the Root Does Not Carry</em>, as the generalised case.</p>
+<p><strong>What stands in the way.</strong> The root exists only because $J(J+1)$ has a square root acting in the tower, so the method needs the tower; for a field without internal labels there is nothing to take the root of.</p>
+<p>The remainder, one line each. That the tower spans $Sp(2,R)=0(3,2)$, with the two extra generators $v_i=(i/4)(a\sigma_i a^{\dagger}-a^{\dagger}\sigma_i a^{\dagger})$ and $v_0=(a^{\dagger}a+1)/2$, is a remark worth one sentence beside the de Sitter algebra of the preceding letters. That $a_a$ "is not a simple spinor but transforms as the special case where" under $SL(2,\mathbb C)$ is a technical caution about the carrier and belongs with the corpus's conventions. That the light-like branch $P^{2}=0$ is discarded without discussion is a gap the letter leaves.</p>
+<p>One caution for a later reader: the printed coefficients of (6) and (7) do not close to a single formula in this scan. The $\eta=+1$ branch does reproduce $(\kappa_1(J+1)-\kappa_0)^{2}$ exactly from the printed $C_1,C_2,C_3$ — checked symbolically — while the $\eta=-1$ branch leaves a residual $4\kappa_0\kappa_1J$ under the same reading of $\eta$. The displays are quoted as printed and the original should be consulted before either branch is used as a formula.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

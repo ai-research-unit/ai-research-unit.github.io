@@ -97,7 +97,7 @@ $$</p>
 <p>The first equation is the idempotent condition and the second is membership in $\operatorname{Sym}_n$; together they say that $E$ is the orthogonal projection onto its image. The rank $r=\operatorname{rk}E=\operatorname{tr}E$ is an integer between $0$ and $n$.</p>
 <p><strong>The decomposition depends on $E$ through its two eigenspaces.</strong> Put $U=\operatorname{im}E$ and $W=\ker E=U^{\perp}$, of dimensions $r$ and $n-r$, and $\mathrm{I}=E+(\mathrm{I}-E)$. In an orthonormal basis adapted to $U$ and $W$ every symmetric matrix reads</p>
 <p>$$
-X=\begin{pmatrix} A & B\\ B^{\mathsf T} & C\end{pmatrix},
+X=\begin{pmatrix} A &amp; B\\ B^{\mathsf T} &amp; C\end{pmatrix},
 $$</p>
 <p>with $A$ of order $r$, $C$ of order $n-r$ and $B$ of size $r\times(n-r)$.</p>
 <h2 id="the-three-peirce-spaces">The Three Peirce Spaces</h2>
@@ -111,14 +111,14 @@ $$</p>
 <p>$$
 \operatorname{Sym}_n=\operatorname{Sym}(1)\oplus\operatorname{Sym}(\tfrac12)\oplus\operatorname{Sym}(0).
 $$</p>
-<p><em>Proof.</em> In the block form above, $E\circ X=\tfrac12\begin{pmatrix}2A&B\\ B^{\mathsf T}&0\end{pmatrix}$. The eigenvalue $1$ forces $B=0$ and $C=0$, which is $E\operatorname{Sym}_nE$; the eigenvalue $\tfrac12$ forces $A=0$ and $C=0$; the eigenvalue $0$ forces $A=0$ and $B=0$. The three conditions are complementary, so every $X$ splits uniquely.</p>
+<p><em>Proof.</em> In the block form above, $E\circ X=\tfrac12\begin{pmatrix}2A&amp;B\\ B^{\mathsf T}&amp;0\end{pmatrix}$. The eigenvalue $1$ forces $B=0$ and $C=0$, which is $E\operatorname{Sym}_nE$; the eigenvalue $\tfrac12$ forces $A=0$ and $C=0$; the eigenvalue $0$ forces $A=0$ and $B=0$. The three conditions are complementary, so every $X$ splits uniquely.</p>
 <p><strong>The middle space is the annihilator of the corner.</strong> The condition $EX+XE=X$ reads $EXE=0$: multiply on both sides by $E$ and use $E^{2}=E$. So</p>
 <p>$$
 \operatorname{Sym}(\tfrac12)=\{X\in\operatorname{Sym}_n:EXE=0\},
 $$</p>
 <p>the symmetric part of the two off-diagonal corners taken together.</p>
 <h2 id="the-dimensions">The Dimensions</h2>
-<p><strong>The three dimensions are $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</strong> A basis of $\operatorname{Sym}(1)$ is $E_{ii}$ for $i\in U$ together with $E_{ij}+E_{ji}$ for $i<j$ in $U$, which gives $r+r(r-1)/2=r(r+1)/2$. A basis of $\operatorname{Sym}(\tfrac12)$ is $E_{ij}+E_{ji}$ with $i\in U$ and $j\in W$, which gives $r(n-r)$. A basis of $\operatorname{Sym}(0)$ is the same construction inside $W$, which gives $(n-r)(n-r+1)/2$.</p>
+<p><strong>The three dimensions are $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</strong> A basis of $\operatorname{Sym}(1)$ is $E_{ii}$ for $i\in U$ together with $E_{ij}+E_{ji}$ for $i&lt;j$ in $U$, which gives $r+r(r-1)/2=r(r+1)/2$. A basis of $\operatorname{Sym}(\tfrac12)$ is $E_{ij}+E_{ji}$ with $i\in U$ and $j\in W$, which gives $r(n-r)$. A basis of $\operatorname{Sym}(0)$ is the same construction inside $W$, which gives $(n-r)(n-r+1)/2$.</p>
 <p><strong>The three numbers add to the dimension of the algebra.</strong> Writing $s=n-r$,</p>
 <p>$$
 \frac{r(r+1)}{2}+rs+\frac{s(s+1)}{2}=\frac{r^{2}+r+2rs+s^{2}+s}{2}=\frac{(r+s)^{2}+(r+s)}{2}=\frac{n(n+1)}{2}.
@@ -128,9 +128,9 @@ $$</p>
 <h2 id="the-coordinates-at-the-standard-idempotent">The Coordinates at the Standard Idempotent</h2>
 <p><strong>With $E=\operatorname{diag}(1,\dots,1,0,\dots,0)$ the three spaces are the three block positions.</strong></p>
 <p>$$
-X_{1}=\begin{pmatrix}A&0\\ 0&0\end{pmatrix},\qquad
-X_{1/2}=\begin{pmatrix}0&B\\ B^{\mathsf T}&0\end{pmatrix},\qquad
-X_{0}=\begin{pmatrix}0&0\\ 0&C\end{pmatrix},
+X_{1}=\begin{pmatrix}A&amp;0\\ 0&amp;0\end{pmatrix},\qquad
+X_{1/2}=\begin{pmatrix}0&amp;B\\ B^{\mathsf T}&amp;0\end{pmatrix},\qquad
+X_{0}=\begin{pmatrix}0&amp;0\\ 0&amp;C\end{pmatrix},
 $$</p>
 <p>with $A$ symmetric of order $r$, $B$ arbitrary of size $r\times(n-r)$ and $C$ symmetric of order $n-r$. The dimensions follow at once: $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</p>
 <p><strong>A general element is the sum of its three components.</strong></p>
@@ -154,7 +154,7 @@ $$</p>
 <p><em>Proof.</em> A block-diagonal matrix times a matrix with only the $B$ block has only the $B$ block, which gives the second and fourth rules. Two matrices with only the $B$ block multiply to a block-diagonal matrix, which gives the third rule. Two block-diagonal matrices multiply blockwise, which gives the first and fifth rules.</p>
 <p><strong>The middle square is one dimension smaller than the direct sum.</strong> From the second display,</p>
 <p>$$
-\operatorname{tr}(BB'^{\mathsf T})=\operatorname{tr}(B^{\mathsf T}B'),
+\operatorname{tr}(BB'{}^{\mathsf T})=\operatorname{tr}(B^{\mathsf T}B'),
 $$</p>
 <p>so the two diagonal blocks of $X_{1/2}\circ Y_{1/2}$ have equal trace. The image is therefore the block-diagonal matrices with matched traces, of dimension</p>
 <p>$$

@@ -90,15 +90,15 @@ $$
 and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the quaternion conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
 $$
 \mathsf M_2(e_t)=\mathrm I_2,\qquad
-\mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+\mathsf M_2(\vec e_x)=\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_y)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix},
 $$
 and the Pauli matrices are
 $$
-\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
-\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\sigma_1=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&amp;-i\\i&amp;0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},
 $$
 so that $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$. The exchange $\mathsf P$ is the permutation of the second and third coordinates; in the frame it satisfies
 $$
@@ -188,12 +188,12 @@ $$
 Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde Q_3)=L(\tilde Q\tilde Q_3)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_{\mathrm{pau},e_\mu}$ are the images of the four units, and they are the four matrices of the Pauli Representation article.</p>
 <p><strong>The four left matrices.</strong> Each is the image of an invertible element under the left matrix map, in the canonical frame,
 $$
-L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_y}=\mathsf{M}_{4L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_z}=\mathsf{M}_{4L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+L_{\mathrm{pau},\vec e_y}=\mathsf{M}_{4L}(\vec e_y)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_z}=\mathsf{M}_{4L}(\vec e_z)=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},
 $$
 and a general element is $L(\tilde Q)=Q_tL_{\mathrm{pau},e_t}+Q_xL_{\mathrm{pau},\vec e_x}+Q_yL_{\mathrm{pau},\vec e_y}+Q_zL_{\mathrm{pau},\vec e_z}$. In the Pauli form $L_{\mathrm{pau},e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\mathrm{pau},\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.</p>
 <p><strong>The right copy.</strong> The right matrix is
@@ -204,12 +204,12 @@ $$
 a block matrix whose four blocks are scalar multiples of $\mathrm I_2$. Its image is the four-dimensional subalgebra $\mathbb{B}_R$. The composition law is anti-multiplicative, $R(\tilde Q_2)R(\tilde Q_4)=R(\tilde Q_4\tilde Q_2)$, and the map $\tilde Q_2\mapsto R(\tilde Q_2)$ is injective. The rank is $2\operatorname{rank}B$, the trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde Q_2\rangle_{\natural}^2$. The four basis matrices $R_{\mathrm{pau},e_\mu}$ are the images of the four units.</p>
 <p><strong>The four right matrices.</strong> Each is the image of an invertible element under the right matrix map,
 $$
-R_{\mathrm{pau},e_t}=\mathsf{M}_{4R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-R_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_{\mathrm{pau},e_t}=\mathsf{M}_{4R}(e_t)=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
+R_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;-i\\-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix},
 $$
 $$
-R_{\mathrm{pau},\vec e_y}=\mathsf{M}_{4R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{\mathrm{pau},\vec e_z}=\mathsf{M}_{4R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_{\mathrm{pau},\vec e_y}=\mathsf{M}_{4R}(\vec e_y)=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\\-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\qquad
+R_{\mathrm{pau},\vec e_z}=\mathsf{M}_{4R}(\vec e_z)=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix}.
 $$
 In the Pauli form $R_{\mathrm{pau},e_t}=\mathrm I_4$, $R_{\mathrm{pau},\vec e_x}=-i\,\sigma_1\otimes\mathrm I_2$, $R_{\mathrm{pau},\vec e_y}=+i\,\sigma_2\otimes\mathrm I_2$ and $R_{\mathrm{pau},\vec e_z}=-i\,\sigma_3\otimes\mathrm I_2$. The signs differ from those of the left family because the transpose exchanges $\sigma_2$ with $-\sigma_2$ and fixes $\sigma_1,\sigma_3$.</p>
 <p><strong>The exchange.</strong> The two copies are exchanged by the transpose and the permutation $\mathsf P$ of the second and third coordinates:
@@ -219,7 +219,7 @@ L(\tilde Q)=\mathsf P\,R(\tilde Q)^{\mathsf T}\mathsf P^{-1}.
 $$
 The two identities are the frame form of the stitch between the left and the right. They will be used for the entry $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ and for the basis matrices. The subscript names the action, not the tensor slot: in this frame the left copy is the second factor and the right copy the first. The matrix of the exchange is
 $$
-\mathsf P=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+\mathsf P=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 $$
 symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. At the operator level the permutation conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$, and the Peirce transpose carries the parameter through the exchange, $L(\tilde X)^{\mathsf T}=L(S\tilde X)$; both are proved in <em>Operators Acting on One Side</em>, §<em>The Matrix Identity</em>.</p>
 <p><strong>The intersection.</strong> A matrix that is both block-diagonal with two equal blocks and block-scalar with four scalar blocks is a scalar matrix:
@@ -292,36 +292,36 @@ $$</p>
 <h3 id="the-sixteen-entry-by-entry">The Sixteen, Entry by Entry</h3>
 <p><strong>The display.</strong> In the Peirce frame, grouped by the left index $\mu$,
 $$
-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},\qquad
+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;-i\\-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\\-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}=\begin{pmatrix}0&amp;-i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;-1&amp;0\\0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&amp;0&amp;0&amp;-i\\0&amp;0&amp;-i&amp;0\\0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;-i&amp;0\\0&amp;i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-i\\0&amp;0&amp;i&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}=\begin{pmatrix}-i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;1\\-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},
 $$
 $$
-L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;i\\i&amp;0&amp;0&amp;0\\0&amp;-i&amp;0&amp;0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix}.
 $$</p>
 <p><strong>The pattern.</strong> Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$ or $\pm i$. The first row and the first column are the four left and the four right matrices; the nine remaining entries are the genuinely two-sided basis operators. The display is the matrix form of the sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ of <em>Matrix Representations Conventions</em>, §<em>The 4×4 Regular Representation</em>.</p>
 <p><strong>The Pauli evaluation on the families.</strong> With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
@@ -336,10 +336,10 @@ with $j,k\in\{x,y,z\}$. The first family is the identity, the second the right c
 $$
 L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=
 \begin{pmatrix}
-0&0&0&-i\\
-0&0&-i&0\\
-0&i&0&0\\
-i&0&0&0
+0&amp;0&amp;0&amp;-i\\
+0&amp;0&amp;-i&amp;0\\
+0&amp;i&amp;0&amp;0\\
+i&amp;0&amp;0&amp;0
 \end{pmatrix},
 $$
 whose first column is the coordinate column of $\vec e_x\tilde\Pi_{\mathrm{id},+}\vec e_y=i\tilde\Pi_{\mathrm{id},-}$. The entry is the check that the family rule and the exchange agree.</p>
@@ -366,10 +366,10 @@ $$
 $$
 L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=\mathrm I_4+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=
 \begin{pmatrix}
-1&0&0&-1\\
-0&1&-1&0\\
-0&-1&1&0\\
--1&0&0&1
+1&amp;0&amp;0&amp;-1\\
+0&amp;1&amp;-1&amp;0\\
+0&amp;-1&amp;1&amp;0\\
+-1&amp;0&amp;0&amp;1
 \end{pmatrix}
 $$
 has rank two. A basis of invertible matrices does not make the algebra a division algebra; the algebra is $M_4(\mathbb{C})$ and has many zero divisors.</p>
@@ -533,10 +533,10 @@ In particular $\operatorname{rank}M=4$ exactly when both parameters are invertib
 $$
 M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}=
 \begin{pmatrix}
-0&0&0&0\\
-0&1&1&0\\
-0&1&1&0\\
-0&0&0&0
+0&amp;0&amp;0&amp;0\\
+0&amp;1&amp;1&amp;0\\
+0&amp;1&amp;1&amp;0\\
+0&amp;0&amp;0&amp;0
 \end{pmatrix},
 $$
 with $u_i$ the $i$-th standard column, has $\operatorname{rank}M_1=1$ and coefficient matrix $c(M_1)=\tfrac12\operatorname{diag}(1,-1,1,1)$, of rank four, so $\ell(M_1)=4$. The projector $P_+$ has $\operatorname{rank}P_+=2$ and $\ell(P_+)=1$. Among the rank-one matrices, those of length four form a dense open subset.</p>
@@ -596,7 +596,7 @@ with $u_i$ the $i$-th standard column, has $\operatorname{rank}M_1=1$ and coeffi
 </tr>
 </tbody>
 </table></div>
-<p><strong>How to decide.</strong> Compute the sixteen numbers $\tfrac14\operatorname{Tr}((L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu})^{\dagger}M)$ and form $c$. If $\operatorname{rank}c=1$, take $[Q]$ to be a nonzero column of $c$; choose a nonzero entry $Q_i$ of that column and take $[P]^{\mathsf T}$ to be the $i$-th row of $c$ divided by $Q_i$. If $\operatorname{rank}c=r>1$, a rank factorization $c=UV$ gives the $r$ terms. No test on $\operatorname{rank}M$ alone decides the question.</p>
+<p><strong>How to decide.</strong> Compute the sixteen numbers $\tfrac14\operatorname{Tr}((L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu})^{\dagger}M)$ and form $c$. If $\operatorname{rank}c=1$, take $[Q]$ to be a nonzero column of $c$; choose a nonzero entry $Q_i$ of that column and take $[P]^{\mathsf T}$ to be the $i$-th row of $c$ divided by $Q_i$. If $\operatorname{rank}c=r&gt;1$, a rank factorization $c=UV$ gives the $r$ terms. No test on $\operatorname{rank}M$ alone decides the question.</p>
 <h3 id="the-two-one-sided-boundaries">The Two One-Sided Boundaries</h3>
 <p><strong>The two boundary cases.</strong> The left and right copies are the two boundary cases of the cone:
 $$
@@ -611,12 +611,12 @@ Both are single products, and both are contained in the cone. Their intersection
 $$
 c(E_{11})=\frac14
 \begin{pmatrix}
-1&0&0&i\\
-0&0&0&0\\
-0&0&0&0\\
-i&0&0&-1
+1&amp;0&amp;0&amp;i\\
+0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0\\
+i&amp;0&amp;0&amp;-1
 \end{pmatrix}
-=\frac14\begin{pmatrix}1\\0\\0\\i\end{pmatrix}\begin{pmatrix}1&0&0&i\end{pmatrix}.
+=\frac14\begin{pmatrix}1\\0\\0\\i\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0&amp;i\end{pmatrix}.
 $$
 It has rank one, so $E_{11}$ is a single product. The factorization reads
 $$
@@ -853,15 +853,15 @@ $$
 $$</p>
 <p><strong>The values.</strong> In the frame,
 $$
-\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\\1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},
 $$
 $$
-\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+\gamma_2=\begin{pmatrix}0&amp;0&amp;0&amp;-i\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\-i&amp;0&amp;0&amp;0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\\-1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\end{pmatrix},
 $$
 $$
-\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+\gamma_5=\begin{pmatrix}-1&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}.
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five basis operators of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The basis operators.</strong> The five are supported on single basis operators because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on basis operators. The basis operator property is a property of the pair, not of the construction.</p>

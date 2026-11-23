@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective metrics and a fully covariant description of constitutive tensors in electrodynamics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective metrics and a fully covariant description of constitutive tensors in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-metrics-and-a-fully-covariant-description-of-constitutive-tensors-in-electrodynamics"><strong>Effective metrics and a fully covariant description of constitutive tensors in electrodynamics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1706.06280v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Effective metrics and a fully covariant description of constitutive tensors in electrodynamics - 1706.06280-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective metrics and a fully covariant description of constitutive tensors in electrodynamics - 1706.06280.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective metrics and a fully covariant description of constitutive tensors in electrodynamics - 1706.06280.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An analogue spacetime can be built from a material medium, and the consistency conditions for doing so are known, but the metric that results once they are satisfied is not usually written down. The paper works in fully covariant language rather than the usual three-plus-one or six-dimensional forms, which lets it extend the consistency conditions to curved backgrounds. It identifies permittivity, inverse permeability, and the magneto-electric tensor as the three pieces of the Bel decomposition of the constitutive tensor, and then reconstructs the effective metric explicitly using the Moore–Penrose pseudo-inverse. A key conclusion is that the fully covariant treatment gives no additional physical results.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-way-question">The two-way question</h3>
+<p>"Using electromagnetism to study analogue space-times is tantamount to considering consistency conditions for when a given (meta-)material would provide an analogue space-time model or — vice versa — characterizing which given metric could be modelled with a (meta-)material."</p>
+<h3 id="the-gap">The gap</h3>
+<p>"While the consistency conditions themselves are by now well known and studied, the form the metric takes once they are satisfied is not."</p>
+<h3 id="the-method">The method</h3>
+<p>"While fully covariant formulations of the electrodynamics of media have been around for a long while, they are usually abandoned for (3+1)- or 6-dimensional formalisms. Here we shall use the fully unified and fully covariant approach. This enables us even to generalize the consistency conditions for the existence of an effective metric to arbitrary background metrics beyond flat space-time electrodynamics."</p>
+<h3 id="the-identification">The identification</h3>
+<p>"we also show how the familiar matrices for permittivity $\epsilon$, permeability $\mu^{-1}$, and magneto-electric effects $\zeta$ can be seen as the three independent pieces of the Bel decomposition for the constitutive tensor $Z^{abcd}$, i.e., the components of an orthogonal decomposition with respect to a given observer with four-velocity $V^a$."</p>
+<h3 id="the-reconstruction">The reconstruction</h3>
+<p>"we shall use the Moore–Penrose pseudo-inverse and the closely related pseudo-determinant to then gain the desired reconstruction of the effective metric in terms of the permittivity tensor $\epsilon^{ab}$, the permeability tensor $\mu^{-1}{}^{ab}$, and the magneto-electric tensor $\zeta^{ab}$, as an explicit function $g_{\mathrm{eff}}(\epsilon,\mu^{-1},\zeta)$."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"we have seen that even going to generally covariant formulations of an effective metric given by macroscopic electrodynamics gives no additional physical results: There will always be a natural reference frame for a given medium such that in this frame the consistency condition reduces to the well-known result"</p>
+<p>$$\epsilon^{ij}=\mu^{ij}.\qquad (paper\ 70)$$</p>
+<h3 id="the-limit">The limit</h3>
+<p>"It remains to be seen how far-reaching or maybe even limiting this result proves to be."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-recovering-the-metric-from-material-data">1. Recovering the metric from material data</h3>
+<p><strong>The idea.</strong> Given permittivity, permeability, and magneto-electric response, the effective metric is an explicit function.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds geometry from algebraic objects. This paper shows that a metric can be reconstructed from a constitutive tensor, which is a concrete instance of geometry following from a physical object. The article's construction could be compared with this one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The constitutive tensor is a medium property, not an algebraic one. Ranked first, because it is a working reconstruction from data.</p>
+<h3 id="2-three-pieces-of-one-object">2. Three pieces of one object</h3>
+<p><strong>The idea.</strong> Permittivity, inverse permeability, and magneto-electric coupling are an orthogonal decomposition of one tensor.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the algebra's objects are not naturally decomposed this way. A canonical decomposition into three pieces is structure the framework lacks, and the article should say whether it can produce one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The decomposition needs an observer four-velocity. Ranked second.</p>
+<h3 id="3-covariance-adds-nothing-physical">3. Covariance adds nothing physical</h3>
+<p><strong>The idea.</strong> A fully covariant formulation produces the same content as the three-plus-one version.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> might treat covariance as a virtue that buys something. This paper shows it buys clarity and generality, not new predictions, which is a useful calibration.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is about one theory. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

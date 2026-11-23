@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Spontaneous Collapse Through Bulk Heating Experiments: Estimate of the Background Noise — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Testing spontaneous collapse through bulk heating experiments - estimate of the background…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="testing-spontaneous-collapse-through-bulk-heating-experiments-estimate-of-the-background-noise"><strong>Testing Spontaneous Collapse Through Bulk Heating Experiments: Estimate of the Background Noise</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1807.03067v3 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ruchira Mishra, Andrea Vinante, Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 23 October 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Testing spontaneous collapse through bulk heating experiments - estimate of the background noise - 1807.03067-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Testing spontaneous collapse through bulk heating experiments - estimate of the background noise - 1807.03067.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/decoherence-as-idempotent-projection.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Testing spontaneous collapse through bulk heating experiments - estimate of the background noise - 1807.03067.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A feasibility calculation for one class of collapse experiment. Collapse models predict that a bulk solid slowly heats up as its particles are localised by the noise field. The predicted rate is tiny, so the question is whether it is larger than the heating produced by ambient radioactivity and cosmic-ray muons. The paper computes the background at various depths and finds that at about 6.5 km of water equivalent, with present technology, a rate of $\lambda\sim10^{-16}\,\text{s}^{-1}$ becomes detectable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-signal">The signal</h3>
+<p>"Models of spontaneous wave function collapse predict a small heating rate for a bulk solid, as a result of coupling to the noise field that causes collapse."</p>
+<h3 id="the-obstacle">The obstacle</h3>
+<p>"This rate is small enough that ambient radioactivity and cosmic ray flux on the surface of the earth can mask the heating due to spontaneous collapse."</p>
+<h3 id="the-result">The result</h3>
+<p>"We demonstrate that a low-temperature underground experiment at a depth of about 6.5 km.w.e. would have a low enough background to allow detection of bulk heating for a collapse rate λ of 10−16 s−1 using presently available technology. 1 Introduction"</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"accounting for background noise for bulk heating experiments looking for CSL effects might not be a problem. In most cases, heating due to background noise can be completely neglected by going underground and using proper shielding."</p>
+<p>"The underground event rate would be actually very small, of the order of 10−7 s−1 for a 10 cm detector at a depth of 6.5 km.w.e. [see Figs. 3, 4], so that it will likely be possible to detect each individual event and subtract its effect."</p>
+<h3 id="a-speculative-possibility">A speculative possibility</h3>
+<p>"the (yet undetected) relic cosmic neutrino background is in principle a possible candidate for the CSL noise field" — with a cutoff around $10^{11}$ Hz, "on the edge of being in the right frequency range for a bulk heating experiment".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-background-suppression-is-the-whole-experiment">1. Background suppression is the whole experiment</h3>
+<p><strong>The idea.</strong> A <strong>methodological fact</strong>: for a heating signal of order $10^{-16}\,\text{s}^{-1}$ per particle, the physics is not the signal but the background. The contribution here is a depth calculation — gamma flux and muon flux as functions of overburden — showing where the signal wins.</p>
+<p><strong>What it would add.</strong> The corpus's articles on experimental tests quote target sensitivities as if they were reachable. This supplies the missing step: what overburden, what shielding, what residual event rate. For any corpus claim that a predicted effect is "within reach", the same three numbers are needed, and the paper is a worked template for producing them. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>. </p>
+<p><strong>What stands in the way.</strong> The estimate is for one class of detector and one class of noise; a different solid or a different coupling would change the balance. </p>
+<h3 id="2-single-events-not-an-average-rate">2. Single events, not an average rate</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: at the target depth the expected background event rate is about $10^{-7}$ per second, low enough that individual events can be identified and subtracted rather than averaged. </p>
+<p><strong>What it would add.</strong> Analyses of rare signals usually treat the background as a rate to be subtracted statistically. Here the rate is so low that per-event rejection becomes possible, which changes the statistical treatment and the systematic error budget. The corpus's rare-event and detection articles assume the statistical regime; this names the condition under which a different regime applies, and it is a matter of arithmetic rather than principle. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>. </p>
+<p><strong>What stands in the way.</strong> Event identification requires that the background events have distinguishable signatures, which the paper assumes rather than demonstrates. </p>
+<h3 id="3-the-collapse-noise-might-be-a-known-cosmic-field">3. The collapse noise might be a known cosmic field</h3>
+<p><strong>The idea.</strong> A <strong>speculation with a number</strong>: if the noise that localises particles is the relic neutrino background, its cutoff frequency near $10^{11}$ Hz would put it just inside the band a bulk heating experiment is sensitive to. </p>
+<p><strong>What it would add.</strong> The corpus treats collapse noise as a formal stochastic term with a phenomenological coupling. This proposes that the term has a physical source with a spectrum, which would make the coupling derivable rather than fitted. Even as a speculation it changes what one would look for: not just any heating, but heating with a particular cutoff. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> The paper calls it "at present under further investigation"; no coupling strength is estimated, and relic neutrinos are undetected.</p>
+<p>The rank: the background calculation first, because it is the paper's actual content; single-event resolution second, because it changes the statistics; the neutrino speculation third, because it is openly speculative.</p>
+<p>The remaining items in one line each: the gamma-radiation estimate from radioisotope contamination, which dominates at shallow depths; the muon flux estimate and its depth dependence through water-equivalent kilometres; and the comparison with existing bounds from cantilever and optomechanical experiments, which is where the target rate meets what has already been excluded.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

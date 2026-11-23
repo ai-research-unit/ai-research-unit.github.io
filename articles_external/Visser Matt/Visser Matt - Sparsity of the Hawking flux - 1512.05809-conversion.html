@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparsity of the Hawking flux — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sparsity of the Hawking flux - 1512.05809.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="sparsity-of-the-hawking-flux"><strong>Sparsity of the Hawking flux</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1512.05809v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Finnian Gray, Sebastian Schuster, Alexander Van-Brunt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, December 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Sparsity of the Hawking flux - 1512.05809-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sparsity of the Hawking flux - 1512.05809.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Sparsity of the Hawking flux - 1512.05809.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Hawking radiation is usually described as a steady thermal flux. The authors compute how far that description is from the truth. For non-super-radiant modes the flux is extremely sparse: the typical time between quanta is much longer than the time set by a quantum's energy. Evaporation is therefore a sequence of two-body decays, not a continuous stream. Semi-analytic estimates tend to understate the sparsity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-picture">The picture</h3>
+<p>"extremely sparse, and extremely thin, with the Hawking quanta, one-by-one, slowly dribbling out of the black hole"</p>
+<h3 id="the-comparison-of-timescales">The comparison of timescales</h3>
+<p>"The typical time between quanta reaching infinity is much larger than the timescale set by the energy of the quanta."</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>"the Hawking evaporation of a black hole should be viewed as a sequential cascade of 2-body decays"</p>
+<h3 id="the-persistence">The persistence</h3>
+<p>"This phenomenon persists throughout the entire evolution of the black hole, both in early stages and (modulo super-radiance) in late stages."</p>
+<h3 id="the-caveat">The caveat</h3>
+<p>"Compared to numerics the semi-analytic estimates often under-estimate sparsity by factors of [order unity]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-flux-is-not-a-fluid">1. A flux is not a fluid</h3>
+<p><strong>The idea.</strong> An average flux can hide a very lumpy stream.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives a temperature and a flux. Sparsity says the flux is not a continuous flow, so any derivation that treats it as one is an approximation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the flux.</p>
+<p><strong>What stands in the way.</strong> The result is numerical. Ranked first, because it qualifies the target's central output.</p>
+<h3 id="2-evaporation-as-a-cascade">2. Evaporation as a cascade</h3>
+<p><strong>The idea.</strong> A black hole decays in discrete steps.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats evaporation as a smooth process. Discrete steps change the late-time bookkeeping.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of evaporation.</p>
+<p><strong>What stands in the way.</strong> The cascade picture is qualitative. Ranked second.</p>
+<h3 id="3-where-semi-analytic-methods-fail">3. Where semi-analytic methods fail</h3>
+<p><strong>The idea.</strong> Estimates that ignore sparsity are off by large factors.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code> is itself a semi-analytic method. Knowing where such methods understate is useful.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code>, in the discussion of accuracy.</p>
+<p><strong>What stands in the way.</strong> The failure mode is specific to greybody factors. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

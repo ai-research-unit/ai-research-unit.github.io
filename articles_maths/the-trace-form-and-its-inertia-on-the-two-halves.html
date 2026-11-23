@@ -100,7 +100,7 @@ $$</p>
 \big(\operatorname{sig}\big)=(n(n+1)/2,\ n(n-1)/2\big)= (3,1),\ (6,3),\ (10,6),\ (15,10)\quad(n=2,3,4,5),
 $$</p>
 <p>which was checked by the eigenvalues of the Gram matrix at those orders.</p>
-<p><strong>An explicit orthonormal basis diagonalises the form.</strong> The units $E_{ii}$ and the normalised sums $\tfrac{1}{\sqrt2}(E_{ij}+E_{ji})$ for $i<j$ are positive vectors, and the normalised differences $\tfrac{1}{\sqrt2}(E_{ij}-E_{ji})$ are negative vectors:</p>
+<p><strong>An explicit orthonormal basis diagonalises the form.</strong> The units $E_{ii}$ and the normalised sums $\tfrac{1}{\sqrt2}(E_{ij}+E_{ji})$ for $i&lt;j$ are positive vectors, and the normalised differences $\tfrac{1}{\sqrt2}(E_{ij}-E_{ji})$ are negative vectors:</p>
 <p>$$
 \Big\langle \tfrac{E_{ij}+E_{ji}}{\sqrt2},\tfrac{E_{ij}+E_{ji}}{\sqrt2}\Big\rangle=1,\qquad
 \Big\langle \tfrac{E_{ij}-E_{ji}}{\sqrt2},\tfrac{E_{ij}-E_{ji}}{\sqrt2}\Big\rangle=-1 .
@@ -110,12 +110,12 @@ $$</p>
 <h2 id="the-two-halves">The Two Halves</h2>
 <p><strong>The symmetric half is positive definite.</strong> For $X\in\operatorname{Sym}_n$,</p>
 <p>$$
-\langle X,X\rangle=\operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}^{2}>0\qquad(X\neq0),
+\langle X,X\rangle=\operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}^{2}&gt;0\qquad(X\neq0),
 $$</p>
 <p>so the form restricts to an inner product on the half, of rank $n(n+1)/2$. The positive part of the inertia is therefore carried entirely by $\operatorname{Sym}_n$, and the computation of the Gram matrix on the basis $E_{ii}$, $\tfrac{1}{\sqrt2}(E_{ij}+E_{ji})$ gives the identity matrix of that size.</p>
 <p><strong>The antisymmetric half is negative definite.</strong> For $K\in\operatorname{Skew}_n$,</p>
 <p>$$
-\langle K,K\rangle=\operatorname{tr}(K^{2})=-\operatorname{tr}(KK^{\mathsf T})=-\sum_{i,j}K_{ij}^{2}<0\qquad(K\neq0),
+\langle K,K\rangle=\operatorname{tr}(K^{2})=-\operatorname{tr}(KK^{\mathsf T})=-\sum_{i,j}K_{ij}^{2}&lt;0\qquad(K\neq0),
 $$</p>
 <p>so the form is negative definite there, of rank $n(n-1)/2$. The negative part of the inertia is carried entirely by $\operatorname{Skew}_n$.</p>
 <p><strong>The two halves are orthogonal, so the inertia is the sum of the two.</strong> For $S$ symmetric and $K$ antisymmetric,</p>

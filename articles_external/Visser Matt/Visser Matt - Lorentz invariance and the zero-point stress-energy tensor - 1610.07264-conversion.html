@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorentz invariance and the zero-point stress-energy tensor — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz invariance and the zero-point stress-energy tensor - 1610.07264.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lorentz-invariance-and-the-zero-point-stress-energy-tensor"><strong>Lorentz invariance and the zero-point stress-energy tensor</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1610.07264v7 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v7, 24 May 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Particles 1 (2018) 10</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Lorentz invariance and the zero-point stress-energy tensor - 1610.07264-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz invariance and the zero-point stress-energy tensor - 1610.07264.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz invariance and the zero-point stress-energy tensor - 1610.07264.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Pauli noted in 1951 that bosons and fermions can cancel the zero-point energy density. This paper argues that the density is one component of a tensor, and that the tensor is the better object. Lorentz invariance of the zero-point stress-energy tensor is shown to be equivalent to its finiteness. Pauli's three sum rules follow, and they survive the addition of interactions in finite quantum field theories. The author connects this to the cosmological constant and to induced gravity, and notes that supersymmetry is neither necessary nor sufficient.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-shift-of-object">The shift of object</h3>
+<p>"the zero-point energy density is only one component of the zero-point stress energy tensor, and it is this tensor quantity that is in many ways the more fundamental object of interest."</p>
+<h3 id="the-equivalence">The equivalence</h3>
+<p>"I shall demonstrate that Lorentz invariance of the zero-point stress energy tensor implies finiteness of the zero-point stress energy tensor, and vice versa."</p>
+<h3 id="the-sum-rules">The sum rules</h3>
+<p>$$\sum_n(-1)^{2S_n}g_n=0,\qquad \sum_n(-1)^{2S_n}g_nm_n^2=0,\qquad \sum_n(-1)^{2S_n}g_nm_n^4=0 \qquad (paper\ 41)$$</p>
+<p>"If Pauli's three polynomial-in-mass constraints hold ... then the zero-point energy density and zero-point pressure are finite"</p>
+<h3 id="the-finite-result">The finite result</h3>
+<p>$$\rho_{\text{zpe}}=-p_{\text{zpe}}=\frac{\hbar}{64\pi^2}\sum_n(-1)^{2S_n}g_nm_n^4\ln(m_n^2/\mu^2) \qquad (paper\ 42)$$</p>
+<h3 id="the-converse">The converse</h3>
+<p>"Conversely, Lorentz invariance of the zero-point stress-energy tensor implies both finiteness and Pauli's three polynomial-in-mass constraints."</p>
+<h3 id="the-regulator-claim">The regulator claim</h3>
+<p>"While Pauli's original calculation made use of a hard-momentum cutoff, we have seen that this can be evaded by doing the sum over particle species first, investigating the conditions for convergence, and only then performing the momentum integration."</p>
+<h3 id="the-supersymmetry-statement">The supersymmetry statement</h3>
+<p>"Supersymmetry is not necessary in order to set up and understand any of the preceding analysis."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-invariance-forces-finiteness">1. Invariance forces finiteness</h3>
+<p><strong>The idea.</strong> A Lorentz-invariant zero-point tensor must be finite, and finiteness forces the mass sum rules.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> cannot produce a source term. Here a symmetry requirement produces one, of a definite form. That is a route to a source the target has not considered.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the missing source.</p>
+<p><strong>What stands in the way.</strong> The result needs a whole particle spectrum as input. Ranked first, because it is a constructive source.</p>
+<h3 id="2-the-cosmological-constant-is-a-sum-rule">2. The cosmological constant is a sum rule</h3>
+<p><strong>The idea.</strong> The observed smallness of the vacuum energy becomes a cancellation condition among masses.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs the framework against data. The cosmological constant problem, stated as three sum rules, is a sharp empirical target the framework does not address.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of empirical tests.</p>
+<p><strong>What stands in the way.</strong> The sum rules are not derived from the algebra. Ranked second.</p>
+<h3 id="3-supersymmetry-is-not-required">3. Supersymmetry is not required</h3>
+<p><strong>The idea.</strong> The cancellation does not need Bose–Fermi pairing; it needs only the sign-weighted sums.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.md</code> treats supersymmetry as a structure. This paper removes the need for it in one of its standard applications, which weakens the motivation the target might borrow.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The argument concerns vacuum energy only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

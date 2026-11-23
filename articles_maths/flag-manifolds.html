@@ -81,8 +81,8 @@
 <p>$$
 0 = V_0 \subset V_1 \subset V_2 \subset \cdots \subset V_k \subset V_{k+1} = V ,
 $$</p>
-<p>of prescribed dimensions $\dim V_i = d_i$ with $0 < d_1 < \cdots < d_k < n$. The flag is <strong>complete</strong> if $k = n-1$ and $d_i = i$ for all $i$; otherwise it is <strong>partial</strong> of type $(d_1, \ldots, d_k)$.</p>
-<p><strong>Definition.</strong> For a type $(d_1, \ldots, d_k)$ with $1 \leq d_1 < \cdots < d_k \leq n-1$, the <strong>flag manifold</strong> is</p>
+<p>of prescribed dimensions $\dim V_i = d_i$ with $0 &lt; d_1 &lt; \cdots &lt; d_k &lt; n$. The flag is <strong>complete</strong> if $k = n-1$ and $d_i = i$ for all $i$; otherwise it is <strong>partial</strong> of type $(d_1, \ldots, d_k)$.</p>
+<p><strong>Definition.</strong> For a type $(d_1, \ldots, d_k)$ with $1 \leq d_1 &lt; \cdots &lt; d_k \leq n-1$, the <strong>flag manifold</strong> is</p>
 <p>$$
 F\ell(d_1, \ldots, d_k; V) = \{(V_1, \ldots, V_k) : 0 \subset V_1 \subset \cdots \subset V_k \subset V,\ \dim V_i = d_i\},
 $$</p>
@@ -122,9 +122,9 @@ $$</p>
 <p>is the <strong>tautological flag</strong>, and the line bundles $\mathcal{L}_i = \mathcal{S}_i/\mathcal{S}_{i-1}$ for $i = 1, \ldots, n$ (with $\mathcal{S}_0 = 0$, $\mathcal{S}_n = \mathbb{K}^n$) are the <strong>tautological quotient lines</strong>. The flag manifold is the classifying space of complete flags of a rank-$n$ vector bundle, and the tautological flag is the universal family.</p>
 <p><strong>Theorem.</strong> The bundles $\mathcal{S}_i$ and $\mathcal{L}_i$ are smooth vector bundles; the bundle $\mathcal{S}_i$ has rank $i$; the line bundles satisfy $\mathcal{L}_1 \oplus \cdots \oplus \mathcal{L}_n \cong \mathbb{K}^n$ (the trivial bundle) in the sense of the associated graded; and the tangent bundle of the flag manifold is</p>
 <p>$$
-T F\ell_n(\mathbb{K}) \cong \bigoplus_{1 \leq i < j \leq n} \operatorname{Hom}(\mathcal{L}_i, \mathcal{L}_j) = \bigoplus_{i<j} \mathcal{L}_i^{\vee}\otimes\mathcal{L}_j ,
+T F\ell_n(\mathbb{K}) \cong \bigoplus_{1 \leq i &lt; j \leq n} \operatorname{Hom}(\mathcal{L}_i, \mathcal{L}_j) = \bigoplus_{i&lt;j} \mathcal{L}_i^{\vee}\otimes\mathcal{L}_j ,
 $$</p>
-<p>of rank $\sum_{i<j}\dim_{\mathbb{R}}\mathbb{K} = (\dim_{\mathbb{R}}\mathbb{K})\,n(n-1)/2$.</p>
+<p>of rank $\sum_{i&lt;j}\dim_{\mathbb{R}}\mathbb{K} = (\dim_{\mathbb{R}}\mathbb{K})\,n(n-1)/2$.</p>
 <p><strong>Proof sketch.</strong> The fibre of $\mathcal{S}_i$ varies smoothly by the local triviality of the flag manifold; the tangent space at a flag is the space of infinitesimal deformations of the chain, which is the space of filtered endomorphisms, identified with the direct sum of the $\operatorname{Hom}(\mathcal{L}_i,\mathcal{L}_j)$; the rank count gives the dimension of the previous theorem. The bundle theory is that of <em>Fibre Bundles, Connections and Curvature</em>.</p>
 <p><strong>Corollary (the characterisation of flags).</strong> A rank-$n$ bundle $E$ over a paracompact base together with a complete flag of subbundles is classified by a map into $F\ell_n(\mathbb{K})$; the tautological flag pulls back to the given flag. In particular the projective space classifies the line subbundles of a rank-$n$ bundle, and the flag manifold classifies the filtrations.</p>
 <p><strong>Example.</strong> For $n = 2$ the flag manifold is $F\ell_2 = \mathbb{KP}^1 = S^{\dim_{\mathbb{R}}\mathbb{K}}$, and the tautological flag is $0 \subset \mathcal{L}_1 \subset \mathbb{K}^2$ with $\mathcal{L}_1$ the tautological line bundle; the tangent bundle is $\mathcal{L}_1^{\vee}\otimes\mathcal{L}_2 \cong \mathcal{L}_1^{-2}$, whose degree is $-2$ and whose total space is the real tangent bundle of the sphere after the real structure is taken. This is the base case of the general statement.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p><strong>Remark (the coadjoint orbit picture).</strong> The generalised flag manifolds are the coadjoint orbits of the compact form of $G$ through the regular elements, and they carry the natural symplectic structure of the orbit; the symplectic geometry of the orbits, the moment maps and the quantisation are <em>Symplectic Geometry</em>, written in parallel, and only the homogeneous and combinatorial structure is used here.</p>
 <h2 id="summary">Summary</h2>
 <p>A flag in a vector space is a strictly increasing chain of subspaces, and the flag manifold is the set of all flags of a fixed type. The general linear group acts transitively, the stabiliser of the standard flag is a parabolic subgroup — the Borel subgroup in the complete case — so the flag manifold is the quotient $GL(n,\mathbb{K})/P$, with compact form $F\ell_n(\mathbb{C}) = \mathrm{U}(n)/T$ and dimension $(\dim_\mathbb{R}\mathbb{K})\sum_i d_i(d_{i+1}-d_i)$; the complete flag manifold over $\mathbb{C}$ has complex dimension $n(n-1)/2$, and in dimension two it is the sphere of dimension $\dim_\mathbb{R}\mathbb{K}$.</p>
-<p>Over the flag manifold runs the tautological flag $\mathcal{S}_1 \subset \cdots \subset \mathcal{S}_{n-1}$, with quotient lines $\mathcal{L}_i$; the flag manifold classifies the complete flags of subbundles of a rank-$n$ bundle, and the tangent bundle is the direct sum of the $\operatorname{Hom}(\mathcal{L}_i, \mathcal{L}_j)$ over $i < j$. The Bruhat decomposition divides the complete flag manifold into Schubert cells indexed by the symmetric group, the cell of a permutation being an affine space of dimension equal to the number of its inversions; all cells have even real dimension, so the Euler characteristic is $n!$, and the cohomology has the Borel presentation $\mathbb{Z}[x_1,\ldots,x_n]/(e_1,\ldots,e_n)$ with the Schubert classes as a basis. The Schubert varieties are the closures of the cells, ordered by the Bruhat order, and their intersection theory is the Schubert calculus.</p>
+<p>Over the flag manifold runs the tautological flag $\mathcal{S}_1 \subset \cdots \subset \mathcal{S}_{n-1}$, with quotient lines $\mathcal{L}_i$; the flag manifold classifies the complete flags of subbundles of a rank-$n$ bundle, and the tangent bundle is the direct sum of the $\operatorname{Hom}(\mathcal{L}_i, \mathcal{L}_j)$ over $i &lt; j$. The Bruhat decomposition divides the complete flag manifold into Schubert cells indexed by the symmetric group, the cell of a permutation being an affine space of dimension equal to the number of its inversions; all cells have even real dimension, so the Euler characteristic is $n!$, and the cohomology has the Borel presentation $\mathbb{Z}[x_1,\ldots,x_n]/(e_1,\ldots,e_n)$ with the Schubert classes as a basis. The Schubert varieties are the closures of the cells, ordered by the Bruhat order, and their intersection theory is the Schubert calculus.</p>
 <p>The flag manifold embeds in a product of Grassmannians by the sequence of subspaces of a flag, with image cut out by the incidence relations; composed with the Plücker embeddings this exhibits it as a smooth projective variety, and every line bundle on it is a product of powers of the tautological quotient lines, whose sections realise the irreducible representations by the Borel–Weil theorem. The generalised flag manifolds $G/P$ of a semisimple group and a parabolic subgroup carry the same structure with the symmetric group replaced by the Weyl group and the Schubert cells by the double cosets $BwB$; the compact generalised flag manifolds that are Riemannian symmetric are exactly the maximal parabolics with connected complement in the Dynkin diagram, that is the Grassmannians, the projective spaces and the quadrics, and the remaining flag manifolds are homogeneous without being symmetric. The Kähler geometry, the Schubert calculus and the cohomology of the classical homogeneous spaces are treated in <em>Kähler Geometry</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -219,7 +219,7 @@ $$</p>
 <td>Tautological flag; tautological quotient lines</td>
 </tr>
 <tr>
-<td>$TF\ell_n \cong \bigoplus_{i<j}\operatorname{Hom}(\mathcal{L}_i,\mathcal{L}_j)$</td>
+<td>$TF\ell_n \cong \bigoplus_{i&lt;j}\operatorname{Hom}(\mathcal{L}_i,\mathcal{L}_j)$</td>
 <td>Tangent bundle</td>
 </tr>
 <tr>

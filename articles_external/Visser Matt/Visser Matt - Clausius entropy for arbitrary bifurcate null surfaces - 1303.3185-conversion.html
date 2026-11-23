@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clausius entropy for arbitrary bifurcate null surfaces — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Clausius entropy for arbitrary bifurcate null surfaces - 1303.3185.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="clausius-entropy-for-arbitrary-bifurcate-null-surfaces"><strong>Clausius entropy for arbitrary bifurcate null surfaces</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1303.3185v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Valentina Baccetti, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 6 December 2013 (dated 25 September 2013)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Clausius entropy for arbitrary bifurcate null surfaces - 1303.3185-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Clausius entropy for arbitrary bifurcate null surfaces - 1303.3185.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Clausius entropy for arbitrary bifurcate null surfaces - 1303.3185.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper extends Jacobson's thermodynamic derivation of the Einstein equations from local Rindler horizons to arbitrary bifurcate null surfaces. It defines a Clausius entropy, $dS=\delta Q/T$, on such a surface and shows that the construction works for any bifurcate null surface, not only a horizon of a specific kind. The entropy that results is observer-dependent, which the authors argue is a feature and not a defect. They implement a generalised second law for it and relate that law to the null energy condition.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"Jacobson's thermodynamic derivation of the [Einstein equations] originally applied only to local Rindler horizons. But [this] construction can usefully be extended to give meaning [to entropy on arbitrary bifurcate] null surfaces."</p>
+<h3 id="the-question-it-forces">The question it forces</h3>
+<p>"As presaged in Jacobson's original art[icle, this] sharply brings into focus the questions: Is entropy [objective, or] in some sense subjective and observer-dependent? Thes[e questions open a] Pandora's box of often inconclusive debate."</p>
+<h3 id="the-consensus-the-authors-work-from">The consensus the authors work from</h3>
+<p>"A consensus, [though] not universally held, seems to be that Clausius [entropy] (defined via a Clausius relation $dS=\delta Q/T$) should [be the primary notion, while] the ontological status of statistical entropy ($S=-\mathrm{tr}\,\rho\ln\rho$) [is] much more ambiguous, and much more likely to be [observer-dependent]. Th[is] is particularly pressing when it comes to unders[tanding black] hole entropy."</p>
+<h3 id="the-result">The result</h3>
+<p>"The net result of this calculation, and the construction it inspires, is that one can associate an observer-dependent notion of entropy, very closely related to the Clausius entropy (thermodynamic entropy, $\delta Q/T$ entropy), and a generalization of Jacobson's local-Rindler entropy, to any arbitrary bifurcate null surface."</p>
+<h3 id="the-claim-about-clausius-entropy">The claim about Clausius entropy</h3>
+<p>"That is, there is a certain sense in which even Clausius entropy ($\delta Q/T$ entropy) is observer-dependent, with a 'virtual Clausius entropy' being associated with arbitrary bifurcate 'virtual causal horizons'."</p>
+<h3 id="the-generalised-second-law">The generalised second law</h3>
+<p>The paper implements "a version of the generalized second law" for this entropy, and "this version of GSL can be related to" the null energy condition. Because the connection is to the null energy condition rather than to a stronger condition, the law holds in settings where other forms do not.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-entropy-without-a-horizon">1. Entropy without a horizon</h3>
+<p><strong>The idea.</strong> Any bifurcate null surface carries a Clausius entropy. A horizon is not required.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> assigns entropy to a horizon area and ties it to the horizon's temperature. If the entropy can be defined on any bifurcate null surface, then the article's quantity is a special case of a family, and the special case is distinguished by a global property. That directly supports the article's own point that the global property is where the difficulty lies, and it gives a construction that works without it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the section on entropy.</p>
+<p><strong>What stands in the way.</strong> The construction needs a bifurcation surface and a Killing-like structure for the temperature, so it is not free of structure. Ranked first, because it gives the article a working generalisation of its own object.</p>
+<h3 id="2-entropy-is-observer-dependent">2. Entropy is observer-dependent</h3>
+<p><strong>The idea.</strong> Different observers assign different entropies to the same null surface, and the difference is physical rather than an error.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizon location as observer-independent once the global structure is fixed. An observer-dependent entropy undermines the idea that thermodynamic quantities are properties of the geometry alone. The article should record the tension.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on the Killing horizon.</p>
+<p><strong>What stands in the way.</strong> It is a tension rather than a resolved statement. Ranked second.</p>
+<h3 id="3-a-second-law-tied-to-a-specific-condition">3. A second law tied to a specific condition</h3>
+<p><strong>The idea.</strong> The generalised second law holds when the null energy condition holds, and the two are linked explicitly.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes that the algebra cannot supply inequalities. Here an inequality, the second law, is derived from another inequality, the null energy condition, and the derivation is the content. The catalogue should record that the framework's lack of an ordering blocks this kind of derivation entirely.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The point is already implicit in the ordering entry. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

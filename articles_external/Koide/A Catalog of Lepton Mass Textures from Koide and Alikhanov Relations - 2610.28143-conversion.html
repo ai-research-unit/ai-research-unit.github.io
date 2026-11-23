@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations - 2610.28143.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-catalog-of-lepton-mass-textures-from-koide-and-alikhanov-relations"><strong>A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2610.28143 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Shaikh Saad (Jožef Stefan Institute, Ljubljana)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 October 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not stated in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations - 2610.28143-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations - 2610.28143.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A Catalog of Lepton Mass Textures from Koide and Alikhanov Relations - 2610.28143.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Turns the two relations into a systematic survey. For the charged leptons it writes $M_e=m_*K^2$ with $K$ positive Hermitian and classifies the families $K(\theta)=\mathbb 1+\sqrt3(\cos\theta\,T+\sin\theta\,S)$ by how many directions stay eigenvectors for <em>all</em> $\theta$: three, one, or none. For the neutrinos it enumerates all real symmetric integer matrices with entries in $[-5,5]$ and keeps those whose singular values satisfy Alikhanov; it finds six signed-permutation classes with $m_1=0$ and six with $m_1&gt;0$. Combining them with relative orientations and phases gives $402$ prediction families, of which $400$ are independent, all consistent with the measured mixing; the full-rank neutrino textures predict $m_1\simeq16.77$–$17.22$ meV. It is the most quantitative paper in the folder and the least speculative.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-charged-lepton-framework">The charged-lepton framework</h3>
+<p>"Since the overall normalization of $K$ is irrelevant for satisfying Eq. (9), we conveniently choose $\phi=1$, corresponding to $\mathrm{tr}\,K=3$. With this normalization, we consider the following one-parameter family of Hermitian matrices:"</p>
+<p>$$
+K(\theta)=\mathbb 1+\sqrt3\left(\cos\theta\,T+\sin\theta\,S\right),
+\tag{paper 11}
+$$</p>
+<p>with $T,S$ traceless Hermitian, $\mathrm{tr}\,T^2=\mathrm{tr}\,S^2=1$, $\mathrm{tr}(TS)=0$. "Our construction, Eq. (11), guarantees" $\mathrm{tr}\,K=3$, $\mathrm{tr}\,K^2=6$, so $Q=\frac23$ "independently of $\theta$. These are two constraints on three eigenvalues, leaving one continuous degree of freedom."</p>
+<h3 id="the-classification">The classification</h3>
+<p>"Our key organizing criterion ... is how many mutually orthogonal eigenvectors remain fixed throughout the entire texture family. This criterion concerns the continuous family before fitting the charged masses, not the eigenvectors of just one fitted matrix."</p>
+<ul>
+<li>$\zeta=3$: "$K_1=\mathbb 1+\frac{\rho}{\sqrt6}\left(e^{i\varphi}P+e^{-i\varphi}P^\dagger\right)$, $\varphi=\theta$", with $P$ the cyclic permutation. "For $\rho=\sqrt3$, its off-diagonal magnitude is $1/\sqrt2$. This reproduces the cyclic structure of Ref. [3]." Eigenvalues $\lambda_j=1+\rho\sqrt{2/3}\cos(\varphi+2\pi j/3)$; "all three directions remain fixed while their eigenvalues vary".</li>
+<li>$\zeta=1$: $K_2=\alpha\mathbb 1+3(1-\alpha)uu^\mathrm T+\gamma(uv^\mathrm T+vu^\mathrm T)$; "This reproduces the structure of Eq. (14) in the currently available preprint version (arXiv:2610.10696v1) of Ref. [14]". The fixed direction is $w=u\times v=(1,\sqrt2,0)^\mathrm T/\sqrt5$, "the common direction becomes the muon eigenvector after matching to the charged masses". Exact Koide forces "$\sqrt6(1-\alpha)^2+10\beta^2=3$ ... Thus $\alpha,\gamma$ are two coefficients constrained to a circle, leaving one independent shape parameter rather than two."</li>
+<li>$\zeta=0$: $K_3=\mathbb 1+aD+bH$ with $D=\mathrm{diag}(-1,0,1)$ and $H=\begin{pmatrix}0&amp;1&amp;2\\1&amp;0&amp;2\\2&amp;2&amp;0\end{pmatrix}$; "$D,H$ have no common eigenvector ... The explicit $D,H$ pattern is a phenomenological choice introduced here; Koide's relation and the condition $\zeta=0$ do not uniquely select it."</li>
+</ul>
+<p>Matching to the charged masses uses</p>
+<p>$$
+L=\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau},\qquad
+\lambda_\ell=\frac{\sqrt{3m_\ell}}{L},\qquad
+m_*=(L/3)^2 ,
+\tag{paper 34}
+$$</p>
+<p>and gives $(\lambda_e,\lambda_\mu,\lambda_\tau)\simeq(0.040350442,0.580216737,2.379432821)$ and $m_*\simeq0.313850933$ GeV. Exact Koide predicts</p>
+<p>$$
+m_\tau^K=1776.969027\pm0.000035\ \mathrm{MeV},
+\tag{paper 36}
+$$</p>
+<p>"consistent with the quoted $1.77693\pm0.00009$ GeV at approximately $0.43\sigma$"; the uncertainty is "dominated by the muon-mass uncertainty" and "is conditional on exact Koide".</p>
+<p>The $K_1$ branch angles are $\theta=0.222224762$ (central masses) and $0.222222047$ (exact Koide) — that is, $2/9$ to six and seven digits respectively.</p>
+<h3 id="the-alikhanov-relation">The Alikhanov relation</h3>
+<p>"The Alikhanov relation in Eq. (2) can then be rewritten as"</p>
+<p>$$
+\sqrt{\frac{\Delta m_{31}^2}{\Delta m_{21}^2}}=3+2\sqrt2=\frac{m_3}{m_2}\Bigg|_{m_1=0}.
+\tag{paper 42}
+$$</p>
+<p>"The last equality holds only in the special case of a massless lightest neutrino." For a scale-independent selection condition, with singular values $s_i$,</p>
+<p>$$
+\frac{s_2^2-s_1^2}{s_3^2-s_1^2}=q ,
+\tag{paper 51}
+$$</p>
+<p>so that for rank-two matrices "$\frac{m_2}{m_3}=\frac{s_2}{s_3}=3-2\sqrt2$", while for rank three "this fixed mass ratio is replaced by the splitting condition". "The Alikhanov relation itself leaves the absolute lightest mass undetermined", but "each integer matrix fixes all three singular-value ratios, including $s_1/s_3$", so "choosing an allowed atmospheric splitting then fixes" $m_1$.</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"an exhaustive enumeration of real symmetric integer matrices with entries between $-5$ and $5$ identifies six signed-permutation classes with $m_1=0$ and six with $m_1&gt;0$ that satisfy the Alikhanov relation. Combining these neutrino textures with the charged-lepton constructions, allowing for different relative flavor orientations and phase alignments, yields $400$ viable structural pairs consistent with the measured lepton mixing parameters." And: "we identify $402$ distinct prediction families ... Remarkably, the complete set of allowed predictions can be reproduced using only $400$ representative families." Predictions: "$m_1\simeq16.77$–$17.22$ meV" for full-rank textures, $m_\beta=0.008464$–$0.009336$ eV and</p>
+<p>$$
+m_{\beta\beta}\simeq1.29\text{–}4.03\ \mathrm{meV}\ (m_1=0),\qquad
+4.07\text{–}18.67\ \mathrm{meV}\ (m_1&gt;0).
+$$</p>
+<p>Which is a target: "all retained solutions satisfy ... even the strongest adopted $m_{\beta\beta}&lt;28$ meV limit".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-classify-textures-by-how-many-directions-the-family-fixes">1. Classify textures by how many directions the family fixes</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: for the one-parameter family $K(\theta)$ that satisfies Koide identically, count the directions that are eigenvectors for every $\theta$ — three (cyclic), one, or none. The count measures how much of the mixing is <em>not</em> adjustable.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> compares textures one at a time and has no way to say which are the same and which are different. This gives an invariant, it is cheap to compute, and it sorts the folder's textures: Strumia's $K_1$ is the $\zeta=3$ case and his $K_2$ the $\zeta=1$ case, with the fixed direction becoming the muon. That is a genuine organising principle — the family's fixed subspace is precisely the part the mass fit cannot move, so $\zeta$ bounds the predictivity of a texture before any mixing is computed.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, as the taxonomy of matrix realisations.</p>
+<p><strong>What stands in the way.</strong> The count depends on the chosen generator pair, and the paper says so: two families with different $\zeta$ can be related by a fixed rotation only within a category. And $\zeta=0$ is realised by an <em>ad hoc</em> $D,H$ choice.</p>
+<h3 id="2-alikhanov-is-the-statement-math92-when-math93">2. Alikhanov is the statement $m_3/m_2=3+2\sqrt2$ when $m_1=0$</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $\sqrt{\Delta m^2_{31}/\Delta m^2_{21}}=3+2\sqrt2$, i.e. the two non-zero neutrino masses are in the ratio $(1+\sqrt2)^2$ — the squared silver ratio; and for a rank-two texture $m_2/m_3=3-2\sqrt2$.</p>
+<p><strong>What it would add.</strong> The corpus has the Alikhanov relation only as a ratio of roots, which hides its content. Written this way it is a mass ratio, of the same kind as the charged-lepton ones, with a distinctive algebraic value: the silver ratio squared, exactly as the charged-lepton cone angle $\pi/4$ is the square's diagonal. The corpus can then ask the same question of both sectors — which algebraic number, and why — instead of treating one as a mass relation and the other as a kinematic curiosity.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2 and <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>.</p>
+<p><strong>What stands in the way.</strong> It holds exactly only for $m_1=0$; for $m_1&gt;0$ the relation reverts to the root form and the mass ratio drifts. Present data allow $m_1=0$ but do not require it.</p>
+<h3 id="3-a-prediction-with-a-target-math101-mev-and-a-math102-window">3. A prediction with a target: $m_1\simeq17$ meV and a $m_{\beta\beta}$ window</h3>
+<p><strong>The idea.</strong> A <strong>prediction set</strong>: full-rank Alikhanov textures give $m_1\simeq16.77$–$17.22$ meV, hence $\sum m_\nu\simeq89$ meV, within the cosmological bound; and the $400$ viable pairs give $m_{\beta\beta}$ in $[1.29,4.03]$ meV or $[4.07,18.67]$ meV.</p>
+<p><strong>What it would add.</strong> The corpus's neutrino notes record masses as measured intervals with no texture-level prediction. This is a two-branch target for the next generation of neutrinoless double-beta decay, and it comes with an exhaustion argument — the enumeration is over all integer matrices in a bounded box, so the <em>absence</em> of other branches is meaningful within that box. That is a stronger statement than a single model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, and <code>articles_internal/flavour-research.md</code> §11.</p>
+<p><strong>What stands in the way.</strong> The box $[-5,5]$ is a choice, the orientation scan is bounded, and $m_1\simeq17$ meV sits close to the minimum allowed by oscillations, so it is not a large extrapolation. The paper says as much: "within our bounded search".</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The exact-Koide $\tau$ prediction, $1776.969027(35)$ MeV against $1776.93(9)$, is the cleanest number to quote for the relation's status. The $\zeta=1$ texture's one-parameter constraint, $\sqrt6(1-\alpha)^2+10\beta^2=3$, is a circle in coefficient space and is worth remembering when the corpus compares to Strumia. The paper credits Strumia's preprint for the "simplest neutrino mass texture" $A_1$, so the two papers are a pair: one proposes, the other exhausts.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

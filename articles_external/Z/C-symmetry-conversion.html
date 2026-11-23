@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Symmetry (Charge Conjugation) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/C-symmetry.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="c-symmetry-charge-conjugation"><strong>C-Symmetry (Charge Conjugation)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>C-symmetry</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/C-symmetry-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/C-symmetry.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/C-symmetry.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on charge conjugation: what the operation does, why it is harder to interpret than parity or time reversal, the history of its apparent conservation and the discovery of CP violation, and the observation that a universe of matter makes the symmetry hard to state physically. It is background with the standard attributions, notably Wu's 1950s result and the two Nobel Prizes that followed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-operation">The operation</h3>
+<p>"charge conjugation is a transformation that switches all particles with their corresponding antiparticles, thus changing the sign of all charges: not only electric charge but also the charges relevant to other forces. The term C-symmetry is an abbreviation of the phrase 'charge conjugation symmetry', and is used in discussions of the symmetry of physical laws under charge-conjugation."</p>
+<h3 id="where-it-sits-among-the-discrete-symmetries">Where it sits among the discrete symmetries</h3>
+<p>"These discrete symmetries, C, P and T, are symmetries of the equations that describe the known fundamental forces of nature: electromagnetism, gravity, the strong and the weak interactions." And the difficulty: "Unlike the continuous symmetries, the interpretation of the discrete symmetries is a bit more intellectually demanding and confusing."</p>
+<h3 id="the-history">The history</h3>
+<p>"rly surprise appeared in the 1950s, when Chien Shiung Wu demonstrated that the weak interaction violated P-symmetry. For several decades, it appeared that the combined symmetry CP was preserved, until CP-violating interactions were discovered. Both discoveries led to Nobel Prizes."</p>
+<h3 id="why-c-is-the-awkward-one">Why C is the awkward one</h3>
+<p>"The C-symmetry is particularly troublesome, physically, as the universe is primarily filled with matter, not antimatter." A symmetry of the equations that maps every state to one the universe does not contain is a symmetry with no realised partner for most states; that is the article's diagnosis, and it is why the symmetry is stated as a property of the dynamics rather than of the world.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-symmetry-without-a-realised-partner">1. A symmetry without a realised partner</h3>
+<p><strong>The idea.</strong> Charge conjugation is exact in a formalism and invisible in a matter-filled universe: the transformed state exists in the theory and not in the world. That is a different status from a symmetry broken by a state, since nothing in the equations breaks it.</p>
+<p><strong>What it would add.</strong> A category for the corpus's discrete-symmetry articles, which classify $C$, $P$ and $T$ by what happens to the element's components. The missing distinction is between a symmetry that maps the state space onto itself and one whose orbit is unpopulated.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.md</code>, in the classification of what $C$ can and cannot map.</p>
+<p><strong>What stands in the way.</strong> The corpus's $C$ is an antilinear operation on one element; the universe is filled with matter is a statement about a state, and the corpus has no cosmological state to attach it to.</p>
+<h3 id="2-cp-looked-exact-for-decades-and-is-not">2. CP looked exact for decades and is not</h3>
+<p><strong>The idea.</strong> The history is a lesson about inference: a symmetry that survives every test for twenty years can be broken at a level the tests could not reach. Neutral kaon mixing was the instrument, and the amount is small.</p>
+<p><strong>What it would add.</strong> A caution with a number attached, for the corpus's claims that a discrete symmetry holds in its formalism. The corpus proves $C$, $P$ and $T$ properties algebraically, which is stronger than any experiment, but the article's history shows how a near-symmetry disguises itself.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/p-t-and-the-representation-labels.md</code>, alongside the discrete-symmetry theorems.</p>
+<p><strong>What stands in the way.</strong> No real obstacle: an algebraic proof is not threatened by a small breaking, so the entry would be a remark on the difference between an exact symmetry and an approximate one.</p>
+<p>This is an encyclopedia article; the only quantitative content is historical, and the CP-violation discussion is qualitative.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

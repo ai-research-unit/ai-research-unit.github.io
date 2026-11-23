@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic dictionary for Lifshitz and hyperscaling violating black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic dictionary for Lifshitz and hyperscaling violating black holes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-dictionary-for-lifshitz-and-hyperscaling-violating-black-holes"><strong>Holographic dictionary for Lifshitz and hyperscaling violating black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2410.16145v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wan Cong, David Kubizňák, Robert B. Mann, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 August 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic dictionary for Lifshitz and hyperscaling violating black holes - 2410.16145-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic dictionary for Lifshitz and hyperscaling violating black holes - 2410.16145.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic dictionary for Lifshitz and hyperscaling violating black holes - 2410.16145.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a holographic dictionary for the thermodynamics of black holes with Lifshitz and hyperscaling-violating asymptotics, generalising the anti-de Sitter dictionary. With it, the holographic Euler equation is dual to a generalised Smarr formula for these holes, and the extended bulk first law matches the boundary first law exactly. The dictionary for the central charge in the Euler relation depends on the hyperscaling-violating parameter, which is the new ingredient. The authors present this as evidence for the wide applicability of the Euler-equation formulation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"We develop a novel holographic dictionary for the thermodynamics of black holes with Lifshitz and hyperscaling violating asymptotics, generalizing the dictionary for Anti-de Sitter black holes. Using our dictionary we show that the holographic Euler equation is dual to a generalized Smarr formula for these black holes, and we find a precise match between the extended bulk and boundary first law."</p>
+<h3 id="the-new-ingredient">The new ingredient</h3>
+<p>"the dictionary for the central charge appearing in the Euler relation depends on the hyperscaling violating parameter" — so the number of degrees of freedom is not the naive AdS expression but carries the violation parameter.</p>
+<h3 id="what-is-checked">What is checked</h3>
+<p>"we developed a novel holographic dictionary for thermal equilibrium states dual to HVL black holes, and checked that the first law and large-$C$ Euler equation are still valid for these states. It is remarkable that the Euler equation has such a wide range of applicability."</p>
+<h3 id="what-is-left-open">What is left open</h3>
+<p>"it would be interesting to derive the dictionary for the thermodynamic black hole quantities using holographic renormalization ... and, in particular, check our formula for the central charge (which can be read off from the Casimir energy for even $d$ and $k\ne0$). Moreover, we would like to understand whether there exists a thermodynamic interpretation of the length parameters $r_F$ and $r_0$, perhaps relating these to 'Lifshitz charges'". Two parameters of the geometry, and hence two candidate thermodynamic variables, remain uninterpreted.</p>
+<h3 id="the-prospect">The prospect</h3>
+<p>"it is likely that our new setup will lead to a discovery of so far unseen phase transitions and critical phenomena arising for Lifshitz and hyperscaling violating theories."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-euler-relation-survives-anisotropic-scaling">1. The Euler relation survives anisotropic scaling</h3>
+<p><strong>The idea.</strong> A homogeneous relation $E=TS+\dots+\mu C$ holds even when the scaling symmetry is anisotropic, provided the dictionary is adjusted with the violation parameter. This is a <strong>formula</strong> with a robustness claim.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation laws from a single algebraic identity; a thermodynamic homogeneous relation that survives a change of scaling symmetry is a second instance of an identity outliving the symmetry that suggested it. That is a parallel worth drawing between the two articles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The dictionary needs a horizon, a boundary and a central charge. Ranked second.</p>
+<h3 id="2-degrees-of-freedom-are-not-simply-the-area">2. Degrees of freedom are not simply the area</h3>
+<p><strong>The idea.</strong> For a hyperscaling-violating geometry the central charge — the count of degrees of freedom — is not $A/16\pi G$ but carries the violation parameter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> and its companion holography articles rely on $C=A/16\pi G$ as the definition of the count. A case where that relation fails is a caution about treating it as universal, and it is the sharpest such caution in this collection.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the holography paragraph.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import as a caution. Ranked first, because it corrects an assumption the corpus repeats.</p>
+<h3 id="3-parameters-with-no-thermodynamic-role-yet">3. Parameters with no thermodynamic role yet</h3>
+<p><strong>The idea.</strong> Two length scales of the geometry, $r_F$ and $r_0$, have no identified thermodynamic conjugate, and finding one is an open problem.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues what is unexplained. A worked case where a parameter is present, varies, and has no conjugate is a model of how such a gap looks, and a reminder that a thermodynamic description can be incomplete while still correct.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

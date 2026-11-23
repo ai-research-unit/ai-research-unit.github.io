@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty blackholes: thermodynamics and horizon structure — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty blackholes - Thermodynamics and horizon structure - hep-th_9203057.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-blackholes-thermodynamics-and-horizon-structure"><strong>Dirty blackholes: thermodynamics and horizon structure</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9203057v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 June 1992 (received 20 March 1992)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty blackholes - Thermodynamics and horizon structure - hep-th_9203057-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty blackholes - Thermodynamics and horizon structure - hep-th_9203057.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty blackholes - Thermodynamics and horizon structure - hep-th_9203057.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper observes that black holes surrounded by classical matter fields consistently have a Hawking temperature lower than a vacuum black hole of the same horizon area, and argues this is generic rather than accidental. For any static spherically symmetric black hole it derives a general formula for the temperature in terms of the energy density and radial tension, using Schwarzschild coordinates. The exponential factor in the formula is positive whenever the weak energy condition holds, which establishes the suppression. The author discusses examples and conjectures the extension to non-spherical, non-static cases.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-observation">The observation</h3>
+<p>"Considerable interest has recently been expressed in (static spherically symmetric) blackholes in interaction with various classical matter fields ... A common feature of these investigations that has not previously been remarked upon is that the Hawking temperature of such systems appears to be suppressed relative to that of a vacuum blackhole of equal horizon area."</p>
+<h3 id="the-inequality">The inequality</h3>
+<p>"That is: $kT_H\le \hbar/(4\pi r_H)\equiv \hbar/\sqrt{4\pi A_H}$. This paper will argue that this suppression is generic."</p>
+<h3 id="the-general-formula">The general formula</h3>
+<p>"it will be shown that"</p>
+<p>$$kT_H=\frac{\hbar}{4\pi r_H}\,e^{-\varphi(r_H)}\left(1-8\pi G\rho_H r_H^2\right).$$</p>
+<h3 id="the-meaning-of-the-exponent">The meaning of the exponent</h3>
+<p>"Here $\varphi(r_H)$ is an integral quantity, depending on the distribution of matter, that is guaranteed to be positive if the Weak Energy Condition is satisfied."</p>
+<h3 id="the-general-statement">The general statement</h3>
+<p>"For an arbitrary static spherically symmetric blackhole this note has established a general formula for the Hawking temperature in terms of the energy density and radial tension."</p>
+<h3 id="the-limits-acknowledged">The limits acknowledged</h3>
+<p>"Generalizations of this result to axisymmetric spacetimes (for instance, to Kerr–Newman blackholes embedded in an axisymmetric cloud of matter) would clearly be of interest. Generalizations to arbitrary event horizons are probably unmanageable."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-matter-lowers-the-temperature">1. Matter lowers the temperature</h3>
+<p><strong>The idea.</strong> Surrounding matter suppresses the Hawking temperature at fixed horizon area, and the suppression is controlled by an energy condition.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives a temperature that presumably depends only on the horizon. This paper shows the answer is wrong for any black hole with matter around it, so the article's temperature is the vacuum case and should say so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the temperature.</p>
+<p><strong>What stands in the way.</strong> The formula needs a matter distribution. Ranked first, because it marks the boundary of the article's result.</p>
+<h3 id="2-temperature-and-area-come-apart">2. Temperature and area come apart</h3>
+<p><strong>The idea.</strong> Two black holes with the same area can have different temperatures.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> may treat area and temperature as linked. If they are not, the article's entropy formula needs a second independent input. That is a structural consequence, not a small correction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the assumptions.</p>
+<p><strong>What stands in the way.</strong> The two quantities are still related through the mass. Ranked second.</p>
+<h3 id="3-an-unmanageable-generalisation">3. An unmanageable generalisation</h3>
+<p><strong>The idea.</strong> The author states that arbitrary event horizons are probably out of reach.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that general horizons resist treatment. Here a specialist says so explicitly, after succeeding in the symmetric case. Citing that judgement strengthens the article's claim from an assertion to a documented consensus.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a conjecture about difficulty, not a theorem. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

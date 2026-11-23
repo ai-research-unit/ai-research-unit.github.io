@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excellent approximate solution to the mysterious mass equation by Koide — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Excellent approximate solution to the mysterious mass equation by Koide - hep-ph_0508039.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="excellent-approximate-solution-to-the-mysterious-mass-equation-by-koide"><strong>Excellent approximate solution to the mysterious mass equation by Koide</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0508039 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wojciech Królikowski</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 August 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (report number IFT-05/18)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Excellent approximate solution to the mysterious mass equation by Koide - hep-ph_0508039-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Excellent approximate solution to the mysterious mass equation by Koide - hep-ph_0508039.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Excellent approximate solution to the mysterious mass equation by Koide - hep-ph_0508039.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that a three-parameter mass formula the author published in 1992 satisfies Koide's relation to $1.46\times10^{-5}$, and that the relation, read as an equation for the tau mass, has two solutions of which the larger is $1776.9689$ MeV. The formula is $m_{e_i}=\mu\rho_i(N_i+\varepsilon/N_i^2)$ with $N_i=1,3,5$ and weights $\rho_i=1/29,4/29,24/29$; it fixes the tau in terms of the electron and muon with no free parameter left, and it also determines $\mu$ and $\varepsilon$. The author says the formula is "essentially empirical" but reports a speculative origin in an extended Dirac equation with extra bispinor indices, whose count is $N_i-1=0,2,4$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-1992-formula">The 1992 formula</h3>
+<p>$$
+m_{e_i}=\mu\,\rho_i\left(N_i+\frac{\varepsilon}{N_i^2}\right),
+\qquad N_i=1,3,5,
+\qquad \rho_i=\frac{1}{29},\frac{4}{29},\frac{24}{29},
+\tag{paper 1–3}
+$$</p>
+<p>"($\sum_i\rho_i=1$). Here, $\mu&gt;0$ and $\varepsilon&gt;0$ are two constants." Written out,</p>
+<p>$$
+m_e=\frac{\mu}{29}\varepsilon,\qquad
+m_\mu=\frac{\mu}{29}\frac{4}{9}(80+\varepsilon),\qquad
+m_\tau=\frac{\mu}{29}\frac{24}{25}(624+\varepsilon).
+\tag{paper 4}
+$$</p>
+<p>With $m_e=0.5109989$ MeV and $m_\mu=105.65837$ MeV as input it gives</p>
+<p>$$
+m_\tau=\frac{6}{125}\left(351m_\mu-136m_e\right)=1776.7964\ \text{MeV}=1776.80\ \text{MeV},
+\tag{paper 5}
+$$</p>
+<p>against the measured $1776.99^{+0.29}_{-0.26}$ MeV, and the constants</p>
+<p>$$
+\mu=\frac{29(9m_\mu-4m_e)}{320}=85.992356\ \text{MeV},\qquad
+\varepsilon=\frac{320m_e}{9m_\mu-4m_e}=0.1723289 .
+\tag{paper 6}
+$$</p>
+<h3 id="the-two-roots-of-koides-equation-and-which-one-is-right">The two roots of Koide's equation, and which one is right</h3>
+<p>"Although the formula (1) has essentially an empirical character, there exists a speculative background for it related to a Kähler-like extension of the Dirac equation (i.e., the extended Dirac's square-root procedure) and to the Pauli principle realized in an intrinsic way for additional bispinor indices appearing in such an extended Dirac equation." The number of such indices is $N_i-1=0,2,4$, where $N_i$ is "the total number of bispinor indices as is given in Eq. (2). This Pauli principle restricts the number of lepton and quark generations to three and only three."</p>
+<p>On the relation itself: the ratio computed from the measured $m_e$, $m_\mu$ and the predicted $m_\tau$ is</p>
+<p>$$
+\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=0.6666569=\left(1/1.0000146\right)^2 .
+\tag{paper 7}
+$$</p>
+<p>Read as an equation for the tau mass, the relation has two roots:</p>
+<p>$$
+m_\tau=\left[2\left(\sqrt{m_e}+\sqrt{m_\mu}\right)\pm\sqrt{3(m_e+m_\mu)+12\sqrt{m_em_\mu}}\right]^2
+=\frac{1776.9689\ \text{MeV}}{3.3173557\ \text{MeV}} .
+\tag{paper 9}
+$$</p>
+<p>"The large solution is excellent, being even closer to the experimental value of $m_\tau$ than our prediction (5), while the small solution does not correspond to any known experimental object. This wrong solution, however, cannot be excluded from the Koide equation (8) by itself, unless it is required that $m_\mu&lt;m_\tau$." The author's own formula "leading to the linear mass relation (5) there is only a unique solution".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-closure-as-an-equation-has-a-second-root">1. The closure as an equation has a second root</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: with $m_e$ and $m_\mu$ as input, $Q=2/3$ is a quadratic in $\sqrt{m_\tau}$ and gives also $m_\tau=3.3173557$ MeV, a value that would be a fourth charged lepton of very small mass.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 and the public article state the closure as a constraint and never read it as an equation in one mass. Reading it that way turns the closure into a prediction rule and exposes a second branch, which is a cheap and sharp statement: any mechanism that produces $Q=2/3$ from a mass matrix produces both branches unless something else forbids one.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, beside the three failed routes to a fourth-rung mass; those routes all predict masses far above $3.3$ MeV, so this branch is a fourth and much lower candidate.</p>
+<p><strong>What stands in the way.</strong> The second root is excluded by experiment — no charged lepton sits at $3.32$ MeV, close to the electron — so what the corpus can record is the branch and its exclusion, not a candidate. The exclusion is also what makes the item useful: it is a constraint on any mechanism.</p>
+<h3 id="2-a-three-parameter-formula-with-fixed-weights">2. A three-parameter formula with fixed weights</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $m_i=\mu\rho_i(N_i+\varepsilon/N_i^2)$ with $N_i=1,3,5$ and weights $1,4,24$ over $29$, giving $m_\tau$ from $m_e$ and $m_\mu$ with no remaining freedom, and a reason from an extended Dirac equation for the three values of $N$.</p>
+<p><strong>What it would add.</strong> The corpus's tower has two parameters for any count (<code>articles_internal/flavour-research.md</code> §5 counting) and the corpus's only other mass formula, in <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>, gives the mass as proportional to the dimension of a representation. This formula is a third shape: a fixed rational weight times a term with an integer and its inverse square, which is the same functional form the corpus's ladder fails to match when counted in mass.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §9, the failed routes, as a competing fit; and the spin–mass article for the comparison of two external mass formulas on the same footing.</p>
+<p><strong>What stands in the way.</strong> The formula reproduces three masses with three parameters, so it predicts nothing beyond the tau; the index count $N_i-1=0,2,4$ rests on the extended Dirac equation the corpus does not have, and the weights $1,4,24$ are unexplained except by that count.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The coincidence $0.6666569=(1/1.0000146)^2$ is the same residual the corpus records as $6.1\times10^{-6}$, from older masses. The 1992 formula's agreement with the closure is the paper's point and is superseded by better mass values.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

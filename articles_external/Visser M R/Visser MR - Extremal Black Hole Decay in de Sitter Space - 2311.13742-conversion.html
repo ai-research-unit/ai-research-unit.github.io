@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extremal Black Hole Decay in de Sitter Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Extremal Black Hole Decay in de Sitter Space - 2311.13742.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="extremal-black-hole-decay-in-de-sitter-space"><strong>Extremal Black Hole Decay in de Sitter Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2311.13742v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Lars Aalsma, Jan Pieter van der Schaar, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 August 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>41 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Extremal Black Hole Decay in de Sitter Space - 2311.13742-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Extremal Black Hole Decay in de Sitter Space - 2311.13742.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Extremal Black Hole Decay in de Sitter Space - 2311.13742.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the decay probability of charged black holes in de Sitter space with a tunneling method, in the s-wave sector, including backreaction. The probability is $P\sim\exp(\Delta S_b)$, the exponential of the change in the black-hole entropy. The Festina Lente bound — the requirement that charged Nariai black holes decay without producing a big crunch — corresponds to $\Delta S_b\le-1$ in the Nariai and probe limits; with backreaction included, the authors find unsuppressed channels that violate the bound without producing a crunch for every observer. The paper thereby sharpens what the bound does and does not require.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"Using a tunneling approach we show that the decay probability of charged black holes in de Sitter space in the s-wave sector is $P\sim\exp(\Delta S_b)$, where $\Delta S_b$ is the change in the black hole entropy. We find that the FL bound corresponds to $\Delta S_b\le-1$ in the Nariai and probe limit. However, taking into account backreaction we identify unsuppressed decay channels, which might be subdominant, that violate this bound but nonetheless do not result in a big crunch for every observer."</p>
+<h3 id="the-classification-of-decays">The classification of decays</h3>
+<p>"Charged decays come in a few flavors: suppressed decays that obey $\Delta S_b\le-C$ with $C\ge1$ and unsuppressed decays that obey $\Delta S_b&gt;-C$. We make a further distinction between decays that are unsuppressed, but not superradiant ($-C&lt;\Delta S_b\le0$) and superradiant decays ($\Delta S_b&gt;0$)."</p>
+<h3 id="what-backreaction-changes">What backreaction changes</h3>
+<p>"By studying the decay of charged Nariai black holes we found that, when backreaction is included, not all superradiant decays lead to naked singularities. Moreover, in the near-horizon limit it is appropriate to describe decays in terms of a horizon energy parameter $m_s$. When this parameter is real, the superradiant regime is completely decoupled such that for decays obeying $m_s^2\ge0$ there is no danger of exiting the sharkfin."</p>
+<h3 id="why-the-bound-survives-anyway">Why the bound survives anyway</h3>
+<p>The unsuppressed channels "might be subdominant", so the bound can still hold as a statement about the dominant decay. The authors present the finding as a refinement of the bound's status: it is not that every decay obeys $\Delta S_b\le-1$, but that the ones which matter for the singularity argument do.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-decay-rate-is-the-exponential-of-an-entropy-difference">1. The decay rate is the exponential of an entropy difference</h3>
+<p><strong>The idea.</strong> $P\sim e^{\Delta S}$ for a black hole's emission, with backreaction included, and the sign of $\Delta S$ classifies the channel into suppressed, unsuppressed, and superradiant. This is a <strong>formula</strong> with a classification attached.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives a thermal spectrum with a temperature; it has no statement that a decay probability is the exponential of an entropy difference, and no classification of channels by $\Delta S$. The formula is more general than a thermal spectrum — it holds for a single emission event, not an ensemble.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is derived in a tunneling approximation for charged, spherically symmetric emission; the corpus's radiation is derived modularly. The two derivations would have to be reconciled, and nothing in the corpus does that.</p>
+<h3 id="2-superradiance-as-math28">2. Superradiance as $\Delta S&gt;0$</h3>
+<p><strong>The idea.</strong> A decay is superradiant exactly when the black hole's entropy increases, which is a thermodynamic characterisation of an effect usually described kinematically.</p>
+<p><strong>What it would add.</strong> The corpus has no superradiance article. This gives a criterion for it in terms of the entropy alone, which is the sort of reduction of a kinematic effect to a thermodynamic one that the corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> would find natural.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the second law paragraph.</p>
+<p><strong>What stands in the way.</strong> Superradiance requires rotation or charge and a wave zone; the corpus has neither. Ranked third.</p>
+<h3 id="3-a-swampland-bound-from-a-horizon-argument">3. A swampland bound from a horizon argument</h3>
+<p><strong>The idea.</strong> The Festina Lente bound follows from requiring that a Nariai black hole decay without a crunch, which is a statement about the space of allowed effective theories obtained from a horizon geometry.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> ends with the observed pattern that every known horizon obeys the area law; a bound obtained from a horizon no-go is a second instance of horizon reasoning constraining ultraviolet physics. That strengthens the article's closing argument.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, closing section.</p>
+<p><strong>What stands in the way.</strong> The bound is de Sitter-specific and depends on the crunch criterion. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

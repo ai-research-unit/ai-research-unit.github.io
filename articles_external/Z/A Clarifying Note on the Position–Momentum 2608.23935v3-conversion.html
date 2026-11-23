@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Clarifying Note on the Position–Momentum Correspondence: Pontryagin Duality, Fourier Transport, and Physical Normalization — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/A Clarifying Note on the Position–Momentum 2608.23935v3.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-clarifying-note-on-the-positionmomentum-correspondence-pontryagin-duality-fourier-transport-and-physical-normalization"><strong>A Clarifying Note on the Position–Momentum Correspondence: Pontryagin Duality, Fourier Transport, and Physical Normalization</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2608.23935v3 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Samuel B. Soltau</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 13 September 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/A Clarifying Note on the Position–Momentum 2608.23935v3-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/A Clarifying Note on the Position–Momentum 2608.23935v3.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/A Clarifying Note on the Position–Momentum 2608.23935v3.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Separates four things that the phrase "position–momentum correspondence" usually conflates: the characters of the additive group $\mathbb{R}$, the choice of a dual coordinate, the transport of operators under the Fourier transform, and the physical calibration of that coordinate. The result is a claim about logical dependence, not new physics: for the additive group every continuous character is $x\mapsto e^{ikx}$, so Pontryagin duality supplies a dual group but no particular coordinate on it; the family $\hat P_\alpha=-i\alpha\,d/dx$ has commutator $[\hat X,\hat P_\alpha]=i\alpha I$, so the standard normalisation $[\hat X,\hat P]=i\hbar I$ is what fixes $\alpha=\hbar$. Nothing is claimed beyond that, and the note states so.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-four-levels">The four levels</h3>
+<p>"Pontryagin duality identifies the character group of the translation group." — the set of characters — "one does not identify a particular dual coordinate with physical momentum. For" The step from $e^{ikx}$ to $e^{ipx/\hbar}$ passes through a choice $p=\alpha k$, and "The point is instead that the mathematical structure contains a normalization freedom which is subsequently calibrated by the physical definition of momentum. This is also the reason why the formula p = ℏk should not be attributed to Pontryagin duality alone. The continuous-spectrum aspects require some care."</p>
+<h3 id="what-the-fourier-transform-does-to-multiplication">What the Fourier transform does to multiplication</h3>
+<p>A sharper claim, and the one worth keeping: "multiplication in position space is transported to convolution in momentum space, while the diagonal distribution is transported to the specific composition with the addition map (p, q) 7→ p + q; it is not transported to pointwise multiplication in momentum space. The family"</p>
+<h3 id="the-calibration">The calibration</h3>
+<p>"se multiplication in momentum space. The family P̂α = −iα d/dx has commutator [X̂, P̂α ] = iαI on S(R), and the standard quantum-mechanical normalization [X̂, P̂ ] = iℏI therefore selects α = ℏ within this family. Equivalently, the standard normalization of the translation generator gives P̂ = −iℏ d/dx. The resulting characters eipx/ℏ have spatial period h/|p| for p ̸= 0. All distributional statements"</p>
+<h3 id="the-analytic-discipline">The analytic discipline</h3>
+<p>Continuous-spectrum objects are handled in a rigged space: "Plane waves and Dirac measures/distributions are not vectors in L2 (R), and multiplication of arbitrary tempered distributions is not defined in general. We therefore work in the standard rigged Hilbert space S(R) ⊂ L2 (R) ⊂ S ′ (R) and use only explicitly defined operations. The standard position–momentum correspondence can be described"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-math17-is-fixed-by-the-commutator-not-by-duality">1. $\hbar$ is fixed by the commutator, not by duality</h3>
+<p><strong>The idea.</strong> The dual group carries a one-parameter family of coordinates; the physical momentum is picked out by the value of the commutator. So the relation $p=\hbar k$ is a calibration statement, and $\hbar$ is the eigenvalue of the commutator rather than a property of the Fourier transform.</p>
+<p><strong>What it would add.</strong> An argument for why the canonical commutation relation is the axiom and not a derived identity. The corpus states $[\hat X,\hat P]=i\hbar$ as an independent axiom and derives the Fourier conjugacy from it; this note gives the converse reading, that the Fourier transform alone underdetermines the constant and the commutator is what supplies it. The two are compatible and the note makes the direction of dependence explicit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>, as the justification of "independent". </p>
+<p><strong>What stands in the way.</strong> The note works on $\mathbb{R}$ with the Schwartz rigging; the corpus's position and momentum are components of one element, so the argument would have to be rerun in $\mathbb{B}$ before it applies. </p>
+<h3 id="2-multiplication-becomes-convolution-and-the-diagonal-becomes-the-addition-map">2. Multiplication becomes convolution, and the diagonal becomes the addition map</h3>
+<p><strong>The idea.</strong> Under the unitary Fourier transform the product of operators does not become a pointwise product; the composition law on the diagonal is the addition map of the dual group. The distinction is invisible whenever the symbol is a polynomial and fatal when it is not. </p>
+<p><strong>What it would add.</strong> A precise statement of what the corpus's "Fourier chart" preserves. The momentum-space articles write the action's symbol and treat the frequency and wave vector as labels; the note says which algebraic operations survive that passage and which change shape. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, at the step where the product of two elements becomes a product of symbols. </p>
+<p><strong>What stands in the way.</strong> The corpus multiplies biquaternions, whose dual object is a matrix-valued symbol; convolution there is matrix convolution, and the note's scalar statement does not transfer without a statement about the non-commutative factor. This is a five-page note with no numerical result; its content is a decomposition into levels and the algebraic statements quoted above, and it says of the standard relations that they "are not claimed here as new physical results".</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

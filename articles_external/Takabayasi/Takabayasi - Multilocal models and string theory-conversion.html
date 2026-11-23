@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilocal Models and String Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Multilocal models and string theory.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multilocal-models-and-string-theory"><strong>Multilocal Models and String Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — preprint DPNU-26-78; journal scan absent</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>Nagoya University preprint DPNU-26-78, May 1978; a short conference-style note</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>preprint (Department of Physics, Nagoya University); no journal reference printed</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Multilocal models and string theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Multilocal models and string theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Multilocal models and string theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Compresses the multilocal programme into five pages and states its premises. Two requirements — constituents must reach mass shell when the force is switched off, and rigid motions must be among the allowed modes — together with relativistic consistency leave only two models, the "chain" and the "ring". A "symmetric" model with equal harmonic forces between all pairs is discarded because it fails the second requirement. The chain model's $N\to\infty$ limit is the open string, and the note observes that the string can be derived from a simpler Lagrangian than Nambu–Goto. Intrinsic spins are then added with $2N-1$ sets of anticommuting matrices, and the spinning string appears as the same limit. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premises">The premises</h3>
+<p>"Previously we have given relativistic theory of a system consisting of an arbitrary number $N$ of point particles bound by harmonic forces. In this note we treat the theory from a more general standpoint, which leads to the two alternatives to be called 'chain model' and 'ring model'. Also we introduce the intrinsic spins into the theory."</p>
+<p>"The main premises in the construction of our theory are the followings. (a) In the hypothetical limit where the internal forces vanish adiabatically the constituents must come onto mass shells. (b) The system must contain 'relativistic rigid motions' in its possible modes. These requirements and the relativistic consistency are indeed very restrictive and just allow the two models above mentioned, and we find that these have the following common properties which are relevant for hadronic models. (c) Constituent particles are permanently confined, and the mass -spin spectrum of the system is free from tachyon or ghost and is bounded by a linearly rising leading trajectory. (d) The signs - 1 - betw een con stitu ents and stre ngth s of harm onic forc es wor king niza tion of con stitu ents obey dist inct ive rule to caus e an orga or clos ed stri ng in the and to let the syst em tend to an open lim it N + oo. repr esen"</p>
+<h3 id="why-only-two-models">Why only two models</h3>
+<p>"The esse ntial poin t for obta ining a cons isten t mode l lies in the succ essfu l choic e for ya ,or else (2) and (3) )J ts unti l they make woul d gene rate more and more seco ndar y cons train the mode l triv ial. The simp lest poss ibili ty ya)J (T) =xa)J (T) -L: 6 ~ 1 x~(T)/N gives the 'sym metr ic mod el', in whic h the same harm onic force s work betw een any pair of cons titue nts. It has ~~~ PN of inter nal 0(2) symm etry and impl ies no part icula r orga niza tion the cond ition (b) cons titue nts. This mode l is disca rded due to the (cf. ref.2 )). Thus we find that esse ntial ly we are left with follo wing alter nativ es: N, a ( 4) *) a y (T) = 21 I (-1) a-." — the ring and the chain.</p>
+<p>"e form er has stil l inter nal 0(2) symm etry whil ry for the latte r. in the latte r. Henc efort h we desc ribe the theo (The form er is brie fly treat ed at the end.) r nta, ~ )J and We defin e on l: T the rela tive coor dina tes and mome !"</p>
+<h3 id="constraints-and-the-string-limit">Constraints and the string limit</h3>
+<p>"e IT =•2/N P, IT =IT , and I; =!; • Then the 0 cons train ts are expre ssed as A =H=O and (r=l, 2,••• , N-l,N +l,··· , 2N-2) (6a,b ) 0 is of first class while (6a,b ) are secon d class ." The relative momentum "is not" a hyperplane in general when $N=4$ — one of the note's technical remarks about the four-point case."l 0 0 2 n=r-N +l 2 )l=Nmo. 1 l K=NK To consi der the limit N + oo we shoul d keep )l=Nm 0 and 0 g. fixed . Then we see that the theor y tends to that of open strin In this limit (1) tends to (7) the" the string action."We remar k that for strin g theor y we can start anew from o type. Lagra ngian (7), which is simpl er than that of Namb u-Got as in the Indee d we verif y, accor ding to the simil ar proce dure y. The finit e N case, that (7) repro duces the open strin g theor ding (cr,-r) , actio n !Lcd" t has no luxur y of 'gaug e invar iance ' regar more direc t. while the phys ical inter preta tion of theor y is here - 4 - To introduce ~ spins "</p>
+<h3 id="spin">Spin</h3>
+<p>"To introduce ~ spins into the theory in maintainin g the propertie s (a)-(d), we first define 2N-l sets of mutually anti- commuting y-matrice s, rr (r=O,• ··,N-1) and f'r (r=l"•,N -1)." " The theory is represente d by r+s,O 11V 11 N-1 { L dncr-n + &lt;i11/l2l or }l/J = 0 o ." a set of $2N-1$ equations. " From them we obtain (A +L )l/1=0 " " and the whole set of equations are compatibl e. This model has the 0 0 0 merit that in the equation (A +L )lji=O the zero-poin t term of A is 0 exactly compensat ed by that of L. In the limit N+oo it tends to the theory of spinning string.*) The 'ring model' defined by (4) can be treated similarly ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-premises-select-the-model">1. Two premises select the model</h3>
+<p><strong>The idea.</strong> Only two requirements — adiabatic mass-shell recovery and the presence of rigid motions — plus consistency single out the chain and ring. The premises are physical, not aesthetic, and they discard an otherwise natural model (equal forces between all pairs).</p>
+<p><strong>What it would add.</strong> A selection principle that is stronger than this model fits the spectrum. The symmetric model is not wrong in its spectrum claims; it is wrong because it has no organising structure, and that is a <em>structural</em> criterion. The corpus's model choices are usually justified by results; here one is justified by a property of its mode content.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em> of <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>), as the structural criterion.</p>
+<p><strong>What stands in the way.</strong> Premise (b) is itself a choice; a physically sensible composite need not admit rigid motion, so the selection is only as strong as that premise.</p>
+<h3 id="2-the-string-from-a-simpler-lagrangian-without-worldsheet-gauge-invariance">2. The string from a simpler Lagrangian without worldsheet gauge invariance</h3>
+<p><strong>The idea.</strong> The chain's $N\to\infty$ limit gives an action simpler than Nambu–Goto, with no $(\sigma,\tau)$ reparametrisation invariance, and the physical interpretation is consequently more direct. The gauge invariance is not a virtue here; it is a complication the discrete construction avoids.</p>
+<p><strong>What it would add.</strong> A derivation of string theory from a discrete system, and a dissenting view on reparametrisation invariance. <em>General-Covariant Approach to Relativistic String Theory</em> in this folder argues the opposite case — that general covariance is a resource; this note says the simpler non-gauge action is preferable for interpretation. Two papers in the same folder taking opposite views on the same invariance is exactly the kind of tension worth recording.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>General-Covariant Approach to Relativistic String Theory</em> in this folder, as the counter-position.</p>
+<p><strong>What stands in the way.</strong> The simpler Lagrangian is claimed to reproduce the open string; whether it gives equivalent quantum theory (with the same critical dimension, if any) is not shown in five pages.</p>
+<h3 id="3-zero-point-terms-cancelling-between-the-constraint-and-the-spin-part">3. Zero-point terms cancelling between the constraint and the spin part</h3>
+<p><strong>The idea.</strong> With $2N-1$ anticommuting matrix sets, the equation $(A_0+L_0)\psi=0$ has the zero-point constant of $A_0$ exactly cancelled by that of $L_0$. No normal-ordering constant has to be adjusted by hand.</p>
+<p><strong>What it would add.</strong> A mechanism for the intercept problem that is arithmetic rather than a choice of ordering. The folder's other fermionic constructions have to tune $\omega_0$; here the cancellation is structural, which is a much stronger statement and connects directly to the intercept-one problem of the bosonic case.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Detailed Wave Equation for Extended Model Underlying the Dual Amplitude</em> in this folder, §<em>Why the Intercept Had to Be One</em>, as the cancellation mechanism.</p>
+<p><strong>What stands in the way.</strong> The matching of zero-point terms is displayed for this particular matrix content; the cancellation's stability under interaction is not examined.</p>
+<h3 id="4-the-four-point-case-is-technically-exceptional">4. The four-point case is technically exceptional</h3>
+<p><strong>The idea.</strong> A footnote records that the relative momentum is not a hyperplane when $N=4$ and that the constraint expressions differ for odd and even $N$.</p>
+<p><strong>What it would add.</strong> A concrete technical crack at exactly the point where the earlier papers say the scheme stops working. The "up to four points" ceiling appears here as an anomaly at four rather than a smooth failure at five, which is a more informative statement and worth putting next to the counting argument of the Hooke paper.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Relativistic Bound State under the Hooke-Type Action-at-a-Distance</em> in this folder, §<em>The Counting Bound</em>, as the four-point anomaly.</p>
+<p><strong>What stands in the way.</strong> The remark is a footnote; no diagnosis of why four is special is offered.</p>
+<p>The remainder, one line each. That the ring model is set aside for later treatment, not rejected, keeps it in the programme. That the note is a preprint with a DPNU number shows the material was circulated before journal publication and may overlap the journal papers of the same years.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

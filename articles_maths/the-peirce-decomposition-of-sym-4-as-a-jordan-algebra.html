@@ -80,10 +80,10 @@
 <p><strong>Proof.</strong> Commutativity and closure are the symmetry of the display and the symmetry of the transpose; $\mathrm I_4\circ X=X$ is immediate.</p>
 <p><strong>Definition.</strong> An <strong>idempotent</strong> of the Jordan algebra is $E$ with $E\circ E=E$, and its <strong>rank</strong> is $\operatorname{tr}E$. A <strong>Hermitian idempotent</strong> is one with $E^{\ast}=E$, equivalently an orthogonal projection.</p>
 <p><strong>Proposition.</strong> For a Hermitian idempotent $E$ the operator $L_E(X)=E\circ X$ is diagonalisable with the eigenvalues $1$, $\tfrac12$, $0$, and the multiplicities are the three block dimensions.</p>
-<p><strong>Proof.</strong> Conjugate by a unitary so that $E=\operatorname{diag}(1,\dots,1,0,\dots,0)$ with $k$ ones. In blocks $X=\begin{pmatrix}A&B\\B^{\mathsf T}&C\end{pmatrix}$, one has $E\circ X=\begin{pmatrix}A&\tfrac12B\\ \tfrac12B^{\mathsf T}&0\end{pmatrix}$, so $A$ is an eigenvector with eigenvalue $1$, $B$ with eigenvalue $\tfrac12$ and $C$ with eigenvalue $0$.</p>
+<p><strong>Proof.</strong> Conjugate by a unitary so that $E=\operatorname{diag}(1,\dots,1,0,\dots,0)$ with $k$ ones. In blocks $X=\begin{pmatrix}A&amp;B\\B^{\mathsf T}&amp;C\end{pmatrix}$, one has $E\circ X=\begin{pmatrix}A&amp;\tfrac12B\\ \tfrac12B^{\mathsf T}&amp;0\end{pmatrix}$, so $A$ is an eigenvector with eigenvalue $1$, $B$ with eigenvalue $\tfrac12$ and $C$ with eigenvalue $0$.</p>
 <p><strong>Corollary.</strong> The three eigenspaces are
 $$
-V_1=\Bigl\{\begin{pmatrix}A&0\\0&0\end{pmatrix}\Bigr\},\qquad V_\frac12=\Bigl\{\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\Bigr\},\qquad V_0=\Bigl\{\begin{pmatrix}0&0\\0&C\end{pmatrix}\Bigr\},
+V_1=\Bigl\{\begin{pmatrix}A&amp;0\\0&amp;0\end{pmatrix}\Bigr\},\qquad V_\frac12=\Bigl\{\begin{pmatrix}0&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix}\Bigr\},\qquad V_0=\Bigl\{\begin{pmatrix}0&amp;0\\0&amp;C\end{pmatrix}\Bigr\},
 $$
 and their direct sum is the symmetric half.</p>
 <p><strong>Proof.</strong> The eigenvalues are distinct and the three blocks span the space of symmetric matrices.</p>
@@ -108,23 +108,23 @@ $$
 $$
 V_\frac12\circ V_\frac12\subseteq V_1\oplus V_0,\quad V_\frac12\circ V_0\subseteq V_\frac12,\quad V_0\circ V_0\subseteq V_0.
 $$</p>
-<p><strong>Proof.</strong> The first five follow from the eigenvalue rule $V_i\circ V_j\subseteq V_{i+j}$ with $i+j$ taken in $\{1,\tfrac12,0\}$ and with the product $1\cdot0$ giving the zero eigenvalue. For the middle product take $X=\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}$ and $Y=\begin{pmatrix}0&C\\C^{\mathsf T}&0\end{pmatrix}$: then $XY=\begin{pmatrix}BC^{\mathsf T}&0\\0&B^{\mathsf T}C\end{pmatrix}$, whose two diagonal blocks are symmetric, so $X\circ Y$ lies in $V_1\oplus V_0$.</p>
+<p><strong>Proof.</strong> The first five follow from the eigenvalue rule $V_i\circ V_j\subseteq V_{i+j}$ with $i+j$ taken in $\{1,\tfrac12,0\}$ and with the product $1\cdot0$ giving the zero eigenvalue. For the middle product take $X=\begin{pmatrix}0&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix}$ and $Y=\begin{pmatrix}0&amp;C\\C^{\mathsf T}&amp;0\end{pmatrix}$: then $XY=\begin{pmatrix}BC^{\mathsf T}&amp;0\\0&amp;B^{\mathsf T}C\end{pmatrix}$, whose two diagonal blocks are symmetric, so $X\circ Y$ lies in $V_1\oplus V_0$.</p>
 <p><strong>Corollary.</strong> The single departure from the sum rule is $V_\frac12\circ V_\frac12\subseteq V_1\oplus V_0$, and the two summands are the products $BC^{\mathsf T}$ symmetrised in the corner and $B^{\mathsf T}C$ symmetrised in the complement.</p>
 <p><strong>Proof.</strong> The computation above, block by block.</p>
 <p><strong>Corollary.</strong> $V_1\circ V_0=0$: the two diagonal Peirce spaces annihilate one another.</p>
 <p><strong>Proof.</strong> $E\circ(\mathrm I_4-E)=0$.</p>
 <p><strong>The dimension of the image.</strong> At $k=2$ the middle product is a map from the symmetric square of $V_\frac12$, of dimension $10$, into the $6$-dimensional space $V_1\oplus V_0$, so it is never injective; its image is constrained further, since $BC^{\mathsf T}$ has rank at most $2$.</p>
-<p><strong>Proof.</strong> $B=\begin{pmatrix}1&0\\0&0\end{pmatrix}$ and $C=\begin{pmatrix}0&0\\0&1\end{pmatrix}$ give $BC^{\mathsf T}=0$ and $B^{\mathsf T}C=0$, so the kernel is nonzero; and $\operatorname{rank}(BC^{\mathsf T})\le\operatorname{rank}B\le2$.</p>
+<p><strong>Proof.</strong> $B=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix}$ and $C=\begin{pmatrix}0&amp;0\\0&amp;1\end{pmatrix}$ give $BC^{\mathsf T}=0$ and $B^{\mathsf T}C=0$, so the kernel is nonzero; and $\operatorname{rank}(BC^{\mathsf T})\le\operatorname{rank}B\le2$.</p>
 <h2 id="the-corner-and-the-rectangular-block">The Corner and the Rectangular Block</h2>
 <p><strong>Theorem.</strong> $V_1$ with the restricted product and the unit $E$ is a Jordan algebra isomorphic to $\operatorname{Sym}_k$, and $V_0$ with the unit $\mathrm I_4-E$ is isomorphic to $\operatorname{Sym}_{4-k}$.</p>
-<p><strong>Proof.</strong> The map $A\mapsto\begin{pmatrix}A&0\\0&0\end{pmatrix}$ is a Jordan homomorphism onto $V_1$ by the block computation, and $E$ acts as its unit.</p>
+<p><strong>Proof.</strong> The map $A\mapsto\begin{pmatrix}A&amp;0\\0&amp;0\end{pmatrix}$ is a Jordan homomorphism onto $V_1$ by the block computation, and $E$ acts as its unit.</p>
 <p><strong>Corollary.</strong> The <strong>corner</strong> at $E$ is a smaller symmetric half, and the Peirce decomposition of the corner at the idempotent $E'$ inside it is the Peirce decomposition of the whole algebra at $E+E'$.</p>
 <p><strong>Proof.</strong> The block form of $E+E'$ is the block form of $E'$ inside the corner, padded by the complement.</p>
 <p><strong>Definition.</strong> $V_\frac12$ is the <strong>rectangular block</strong> at $E$: the space of off-diagonal blocks $B$, identified with $M_{k\times(4-k)}(\mathbb{C})$.</p>
 <p><strong>Proposition.</strong> $V_\frac12$ is a bimodule over the corner and over the complement: $V_1\circ V_\frac12\subseteq V_\frac12$ and $V_0\circ V_\frac12\subseteq V_\frac12$.</p>
 <p><strong>Proof.</strong> $A$ times $B$ is a $k\times(4-k)$ block, and the transpose product is its transpose; the same for $C$.</p>
 <p><strong>Corollary.</strong> $V_\frac12$ is not an algebra for $\circ$: its square lands in $V_1\oplus V_0$ and not in $V_\frac12$, unless $B=0$.</p>
-<p><strong>Proof.</strong> $X\circ X=\begin{pmatrix}BB^{\mathsf T}&0\\0&B^{\mathsf T}B\end{pmatrix}$, which is zero exactly when $B=0$.</p>
+<p><strong>Proof.</strong> $X\circ X=\begin{pmatrix}BB^{\mathsf T}&amp;0\\0&amp;B^{\mathsf T}B\end{pmatrix}$, which is zero exactly when $B=0$.</p>
 <p><strong>The three-piece geometry.</strong> The corner, the complement and the rectangle give the dimension count $3+4+3$ at $k=2$, which is the symmetric half read as two smaller symmetric halves and one rectangular space.</p>
 <p><strong>Proof.</strong> The theorem above at $k=2$.</p>
 <h2 id="the-refinement-of-the-ten">The Refinement of the Ten</h2>

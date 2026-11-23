@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimate of neutrino masses from Koide&#x27;s relation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Estimate of neutrino masses from Koide&#x27;s relation - hep-ph_0505028.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="estimate-of-neutrino-masses-from-koides-relation"><strong>Estimate of neutrino masses from Koide's relation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0505028 [hep-ph, astro-ph, hep-ex, math-ph, nucl-ex, nucl-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nan Li, Bo-Qiang Ma</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 5 May 2005 (journal version)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Lett. B 609 (2005) 309–316</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Estimate of neutrino masses from Koide's relation - hep-ph_0505028-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Estimate of neutrino masses from Koide's relation - hep-ph_0505028.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Estimate of neutrino masses from Koide's relation - hep-ph_0505028.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks whether the relation holds for neutrinos and quarks, measures the failure by a ratio $k$ in each sector, and then uses the failures to predict the absolute neutrino masses. The exact relation is shown to have no solution for the neutrinos: with the measured mass-squared differences inserted, the equation for the middle mass has no real root, in either ordering. The paper therefore defines $k_l$, $k_\nu$, $k_u$, $k_d$ as the ratio of each sector's $Q$-like quantity to $2/3$, finds $k_l=1$, $k_d\approx1$, $k_\nu&lt;1$, $k_u&gt;1$, conjectures a complementarity $k_l+k_d\approx k_\nu+k_u\approx2$, and from $k_\nu\approx0.75$ derives the three neutrino masses. The prediction is hierarchical, $1.0\times10^{-5}$, $8.4\times10^{-3}$ and $0.05$ eV; it is a conjecture with one input assumption, and the authors call the numbers "primary estimates".</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-measured-failure">The measured failure</h3>
+<p>With the PDG values $m_e=0.510998902\pm0.000000021$ MeV, $m_\mu=105.658357\pm0.000005$ MeV and $m_\tau=1776.99^{+0.29}_{-0.26}$ MeV, the leptonic parameter is</p>
+<p>$$
+k_l\equiv\frac{2}{3}\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=1^{+0.00002635}_{-0.00002021},
+\tag{paper 2}
+$$</p>
+<p>"which is perfectly close to 1." Foot's angle enters as $k_l=2\cos^2\theta_l$, with $\theta_l=\pi/4$.</p>
+<h3 id="the-exact-relation-has-no-solution-for-neutrinos">The exact relation has no solution for neutrinos</h3>
+<p>With $\Delta m^2_{atm}=|m_3^2-m_2^2|$ in $1.4$–$3.7\times10^{-3}$ eV$^2$ and $\Delta m^2_{sol}=|m_2^2-m_1^2|$ in $5.4$–$9.5\times10^{-5}$ eV$^2$ at $3\sigma$, best fit points $2.6\times10^{-3}$ and $6.9\times10^{-5}$ eV$^2$, and $m_2&gt;m_1$ fixed by the MSW effect, the two orderings are $m_3&gt;m_2&gt;m_1$ and $m_2&gt;m_1&gt;m_3$. Inserting them into the exact relation gives, for the normal ordering,</p>
+<p>$$
+\sqrt{m_2^2-\Delta m^2_{sol}}+m_2+\sqrt{m_2^2+\Delta m^2_{atm}}
+=\frac23\left[\left(m_2^2-\Delta m^2_{sol}\right)^{1/4}+\sqrt{m_2}+\left(m_2^2+\Delta m^2_{atm}\right)^{1/4}\right]^2
+\tag{paper 8}
+$$</p>
+<p>and "solving this equation, we find that there is no real root for $m_2$ with the restrictions in Eqs. (3) and (4). This means that no matter what value $m_2$ is, Koide's relation does not hold for neutrinos. So is the inverted mass scheme."</p>
+<h3 id="the-four-math54s">The four $k$'s</h3>
+<p>$$
+k_\nu\equiv\frac{2}{3}\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^2},
+\tag{paper 9}
+$$</p>
+<p>with the analogous definitions for $k_u$ over $(u,c,t)$ and $k_d$ over $(d,s,b)$. Computed over the PDG ranges $1.5&lt;m_u&lt;4.5$ MeV, $1.0&lt;m_c&lt;1.4$ GeV, $162.9&lt;m_t&lt;188.5$ GeV, $5&lt;m_d&lt;8.5$ MeV, $80&lt;m_s&lt;155$ MeV, $4.0&lt;m_b&lt;4.5$ GeV:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>range of $k$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leptons</td>
+<td>$k_l=1$</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>neutrinos, normal ordering</td>
+<td>$0.50&lt;k_\nu&lt;0.85$</td>
+<td>fails, $k_\nu&lt;1$</td>
+</tr>
+<tr>
+<td>neutrinos, inverted ordering</td>
+<td>$0.50&lt;k_\nu&lt;0.65$</td>
+<td>fails, smaller than normal</td>
+</tr>
+<tr>
+<td>$u,c,t$</td>
+<td>$1.1&lt;k_u&lt;1.4$</td>
+<td>fails, $k_u&gt;1$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$0.9&lt;k_d&lt;1.2$</td>
+<td>$k_d\approx1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The paper notes that "because Koide's relation is not energy-scale invariant, the energy scale should be high energy where the current quark masses rather than the constituent quark masses should be adopted".</p>
+<h3 id="the-complementarity-and-the-masses">The complementarity and the masses</h3>
+<p>"Since $k_l=1$ and $k_d\approx1$, we may conjecture that $k_l+k_d\approx2$", and by analogy</p>
+<p>$$
+k_\nu+k_u\approx2 .
+\tag{paper 17}
+$$</p>
+<p>Alternatives are listed and rejected as less simple: $k_lk_d\approx k_\nu k_u\approx1$, $k_l^2+k_d^2\approx2$, $1/k_l+1/k_d\approx2$. With the mean $k_u=1.25$ this gives $k_\nu\approx0.75$, "consistent with the normal mass scheme and in conflict with the inverted mass scheme", so the ordering is $m_3&gt;m_2&gt;m_1$. Solving</p>
+<p>$$
+0.75=\frac{2}{3}\frac{\sqrt{m_2^2-6.9\times10^{-5}}+m_2+\sqrt{m_2^2+2.6\times10^{-3}}}{\left[\left(m_2^2-6.9\times10^{-5}\right)^{1/4}+\sqrt{m_2}+\left(m_2^2+2.6\times10^{-3}\right)^{1/4}\right]^2}
+\tag{paper 18}
+$$</p>
+<p>with all masses in eV gives</p>
+<p>$$
+m_2=8.4\times10^{-3}\ \text{eV},\qquad
+m_1=\sqrt{m_2^2-\Delta m^2_{sol}}=1.0\times10^{-5}\ \text{eV},\qquad
+m_3=\sqrt{m_2^2+\Delta m^2_{atm}}=0.05\ \text{eV}.
+\tag{paper 19, 20}
+$$</p>
+<p>"the masses of the neutrino mass eigenstates are of different orders of magnitude ($10^{-5}$ eV, $10^{-3}$ eV, and $10^{-2}$ eV), so they are hierarchical, and $m_1$ almost vanish". The authors state the sensitivity: $m_2$ and $m_3$ are stable against $k_\nu$ between $0.7$ and $0.85$, while "the value of $m_1$ may change largely with $k_\nu$" because $m_2^2$ lies close to $\Delta m^2_{sol}$.</p>
+<p>Koide's own nonet-based estimate, $m_1=0.0026$, $m_2=0.0075$, $m_3=0.050$ eV, is quoted as agreeing on $m_2$ and $m_3$.</p>
+<h3 id="effective-masses-and-the-cosmological-sum">Effective masses and the cosmological sum</h3>
+<p>With $|V|$ given as $0.84,0.54,0.08$; $0.44,0.56,0.71$; $0.32,0.63,0.71$ and $\langle m\rangle_\alpha\equiv\sqrt{\sum_i m_i^2|V_{\alpha i}|^2}$,</p>
+<p>$$
+\langle m\rangle_e=6.0\times10^{-3}\ \text{eV},\qquad
+\langle m\rangle_\mu=3.6\times10^{-2}\ \text{eV},\qquad
+\langle m\rangle_\tau=3.6\times10^{-2}\ \text{eV},
+\tag{paper 23–25}
+$$</p>
+<p>against the bounds $2.2$ eV, $0.19$ MeV and $18.2$ MeV. The sum is $\sum_i m_i=0.058$ eV, against the cosmological bound $&lt;0.71$ eV. "These results should be only taken as primary estimates."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-exact-relation-cannot-hold-for-neutrinos">1. The exact relation cannot hold for neutrinos</h3>
+<p><strong>The idea.</strong> A <strong>result with a proof</strong>: given the measured $\Delta m^2$ splittings and $m_2&gt;m_1$, the equation $Q=2/3$ for the three neutrino masses has no real root, in either ordering.</p>
+<p><strong>What it would add.</strong> The corpus states the lepton closure and, in <code>articles_internal/flavour-research.md</code> §11, proposes to "test the quark towers". It never records that the neutrino tower cannot carry the same closure at all, which closes off one route before it is walked: a tower of three neutrinos with the measured splittings is excluded by the arithmetic alone, whatever the mechanism. That is the strongest kind of statement the corpus can hold, a falsification that costs one line.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, and <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, whose subject is the lepton sector's measured parameters.</p>
+<p><strong>What stands in the way.</strong> Nothing; the result is arithmetic on measured data and can be recomputed in a few lines. Its scope is narrow — it excludes $Q=2/3$ and not $Q=2/N$ for other $N$, nor a closure in a different variable.</p>
+<h3 id="2-a-one-parameter-deviation-per-sector-and-a-sum-rule-tying-two-of-them">2. A one-parameter deviation per sector, and a sum rule tying two of them</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $k_f\equiv\frac23Q_f$, with $Q_f$ the closure ratio over a sector's three masses, together with the conjectured complementarity $k_l+k_d\approx k_\nu+k_u\approx2$.</p>
+<p><strong>What it would add.</strong> The corpus has the closure ratio but no dial for a sector that misses it, and its §1 table ($0.849$ and $0.731$ for the quark towers) invites exactly such a dial. The sum rule is a cross-sector statement: <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> measures how differently the two sectors mix and says the difference is unexplained; here the same kind of cross-sector arithmetic is proposed for masses, where the corpus has neither a pattern nor a name for one.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, as the column that turns measured $Q_N$ into a deviation, and §11.</p>
+<p><strong>What stands in the way.</strong> The sum rule is a conjecture with three equally simple alternatives, chosen for simplicity; $k_u$ is a range and not a number, so $k_\nu\approx0.75$ inherits its width. The corpus fixes measured mass splittings, so any use of the rule has to be presented as a hypothesis and not as a determination.</p>
+<h3 id="3-the-absolute-neutrino-scale-from-a-closure-plus-a-sum-rule">3. The absolute neutrino scale from a closure plus a sum rule</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $m_1=1.0\times10^{-5}$ eV, $m_2=8.4\times10^{-3}$ eV, $m_3=0.05$ eV, $\sum m_i=0.058$ eV, and the three effective masses $6.0\times10^{-3}$, $3.6\times10^{-2}$, $3.6\times10^{-2}$ eV.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> lists the absolute scale and the ordering as measured-but-unfixed, and <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code> produces a scale only through a heavy mass that is itself input. These numbers are a prediction of the absolute scale from lepton masses alone, which is the kind of statement the corpus has no example of.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, in the section on mass ordering and the absolute scale.</p>
+<p><strong>What stands in the way.</strong> The prediction depends on one conjectured sum rule, and $m_1$ moves by an order of magnitude within the quoted ranges; the corpus would have to carry it as a conditional, "if $k_l+k_d=k_\nu+k_u$ then", which is a heavier apparatus than the article's measured-data stance allows without a new flagged statement.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>Foot's angle in the form $k_l=2\cos^2\theta_l$ is in the corpus already. Koide's nonet estimate is quoted at second hand. The PDG ranges and the $|V|$ matrix are 2004–2005 data, superseded; the article's methods survive the numbers, its values do not.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

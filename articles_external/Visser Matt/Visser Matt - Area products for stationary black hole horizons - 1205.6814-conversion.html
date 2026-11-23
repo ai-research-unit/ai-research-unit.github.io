@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area products for stationary black hole horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Area products for stationary black hole horizons - 1205.6814.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="area-products-for-stationary-black-hole-horizons"><strong>Area products for stationary black hole horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1205.6814v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 15 August 2013 (dated 24 July 2013)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Area products for stationary black hole horizons - 1205.6814-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Area products for stationary black hole horizons - 1205.6814.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Area products for stationary black hole horizons - 1205.6814.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper tests a conjecture about products of horizon areas. For many multi-horizon stationary black holes the product of inner and outer horizon areas depends only on charge, angular momentum, and moduli, and not on the mass. The author computes two counterexamples in four dimensions. For Schwarzschild–de Sitter the product of the event-horizon area and the cosmological-horizon area depends on the mass. For Reissner–Nordström–anti-de Sitter the product of the inner and outer areas is computed perturbatively and also fails to be mass-independent. Including a third, virtual horizon does not repair the first case.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-conjecture">The conjecture</h3>
+<p>"Area products for multi-horizon stationary black holes often have intriguing properties, and are often (though not always) independent of the mass of the black hole itself (depending only on various charges, angular momenta, and moduli). Such products are often formulated in terms of the areas of inner (Cauchy) horizons and outer (event) horizons, and sometimes include the effects of unphysical 'virtual' horizons."</p>
+<h3 id="the-failure">The failure</h3>
+<p>"But the conjectured mass-independence sometimes fails. Specifically, for the Schwarzschild–de Sitter [Kottler] black hole in (3+1) dimensions it is shown by explicit exact calculation that the product of event horizon area and cosmological horizon area is not mass independent. (Including the effect of the third 'virtual' horizon does not improve the situation.)"</p>
+<h3 id="the-second-case">The second case</h3>
+<p>"Similarly, in the Reissner–Nordstrom-anti-de Sitter black hole in (3+1) dimensions the product of inner (Cauchy) horizon area and event horizon area is calculated (perturbatively), and is shown to" fail the same test. The two cases differ in which pair of horizons is multiplied and in whether the computation is exact or perturbative.</p>
+<h3 id="the-method">The method</h3>
+<p>Both results come from solving the horizon equation and multiplying the resulting areas. No assumption beyond the exact metric is used, so the failure is a property of the solutions and not of an approximation, except in the charged anti-de Sitter case where the perturbation is stated explicitly.</p>
+<h3 id="what-the-paper-concludes">What the paper concludes</h3>
+<p>The mass-independence observed in Kerr–Newman and its relatives is not a general theorem. It holds for a class of solutions and fails once a cosmological constant is present, in either sign.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-claimed-universal-relation-that-is-not-universal">1. A claimed universal relation that is not universal</h3>
+<p><strong>The idea.</strong> A product of areas that looks like a constant is not one. The counterexamples are the two simplest solutions with a cosmological constant.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives relations among $M$, $J$, $S$, and charge by scaling. A product of areas that is mass-independent would be a further relation of the same kind, and the article could be tempted to cite it. This paper says the relation holds only without a cosmological constant. The article must state that restriction, or it will assert something false.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the scaling section.</p>
+<p><strong>What stands in the way.</strong> None; it is a correction of scope. Ranked first, because leaving it out would make the article wrong.</p>
+<h3 id="2-virtual-horizons-hide-the-failure">2. Virtual horizons hide the failure</h3>
+<p><strong>The idea.</strong> Adding an unphysical third horizon to the product was supposed to restore mass-independence, and it does not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records failed repairs as well as failed constructions. A repair that is tried and fails is the most useful kind of entry, because it closes a route. The catalogue has few such entries.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, as a new entry.</p>
+<p><strong>What stands in the way.</strong> The entry is about horizons, not about $\mathbb{B}$, so it needs a framing that the catalogue may not want. Ranked second.</p>
+<h3 id="3-the-cosmological-horizon-is-a-thermodynamic-object">3. The cosmological horizon is a thermodynamic object</h3>
+<p><strong>The idea.</strong> The failing case multiplies the black-hole area by the cosmological horizon area, which treats the de Sitter horizon as a member of the same family.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats the cosmological constant as a source term. This paper treats its horizon as an area with thermodynamic weight. If the framework ever supplies $\Lambda$, the horizon area is one of the quantities that would have to come with it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of $\Lambda$.</p>
+<p><strong>What stands in the way.</strong> It is a speculative link; the paper does not discuss thermodynamics. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

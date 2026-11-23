@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelling Planck-scale Lorentz violation via analogue models — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Modelling Planck-scale Lorentz violation via analogue models - gr-qc_0512127.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modelling-planck-scale-lorentz-violation-via-analogue-models"><strong>Modelling Planck-scale Lorentz violation via analogue models</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0512127v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silke Weinfurtner, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 22 December 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Modelling Planck-scale Lorentz violation via analogue models - gr-qc_0512127-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Modelling Planck-scale Lorentz violation via analogue models - gr-qc_0512127.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-hierarchy-problem-and-naturalness.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Modelling Planck-scale Lorentz violation via analogue models - gr-qc_0512127.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Lorentz violation in quantum gravity phenomenology suffers a naturalness problem: the corrections are expected to be suppressed, yet nothing forbids lower-dimension operators from dominating. The authors use a two-component condensate with laser-induced transitions as a model. Low-energy perturbations give massless and massive quasiparticles in an emergent geometry. Beyond the hydrodynamic regime the dispersion relation becomes non-linear. The quadratic coefficients are Planck suppressed while the quartic ones are of order unity, so the naturalness problem does not arise.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"there are however still some unresolved theoretical issues, in particular regarding the so called 'naturalness problem' — which arises when postulating that Planck-suppressed Lorentz violations arise only from operators with mass dimension greater than four in the Lagrangian."</p>
+<h3 id="the-proposal">The proposal</h3>
+<p>"we investigate the class of two-component BECs subject to laser-induced transitions between the two components, and we show that this model is an example for Lorentz invariance violation due to ultraviolet physics."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"We shall show that such a model can be considered to be an explicit example high-energy Lorentz violations where the 'naturalness problem' does not arise."</p>
+<h3 id="the-regime-split">The regime split</h3>
+<p>"Low energy perturbations in a 2-component BEC with laser-induced transitions between the single-particle states reproduce both massive and massless quasi-particles in an emergent spacetime."</p>
+<h3 id="the-high-energy-behaviour">The high-energy behaviour</h3>
+<p>"While in the hydrodynamic regime the dispersion relation is LI, beyond it the dispersion relation has to be modified in a Lorentz violating manner."</p>
+<h3 id="why-parity-matters">Why parity matters</h3>
+<p>"Due to parity of the GPE we only obtained terms with even exponents of $k$."</p>
+<h3 id="the-resolution">The resolution</h3>
+<p>"A key observation is that the present model does not suffer from the naturalness problem, because the quadratic corrections are Planck suppressed, while at the same time the quartic coefficients $\eta_{4,I/II}$ have no further suppression, and are actually of order unity."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-naturalness-problem-dissolved-by-construction">1. A naturalness problem dissolved by construction</h3>
+<p><strong>The idea.</strong> An emergent model produces suppressed and unsuppressed terms hierarchically without tuning.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-hierarchy-problem-and-naturalness.md</code> treats naturalness as a problem of scales. This paper supplies a worked example where the hierarchy is automatic, which is a concrete benchmark for what a "natural" explanation looks like.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hierarchy-problem-and-naturalness.md</code>, in the discussion of mechanisms.</p>
+<p><strong>What stands in the way.</strong> The mechanism is a condensate, not a field theory. Ranked first, because the target has no worked example of this kind.</p>
+<h3 id="2-parity-removes-odd-terms">2. Parity removes odd terms</h3>
+<p><strong>The idea.</strong> A symmetry of the underlying equation forbids half the Lorentz-violating operators.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra forbids. A parity argument that removes leading corrections is a selection rule the target could compare with its own.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The parity is of the Gross–Pitaevskii equation. Ranked second.</p>
+<h3 id="3-emergent-geometry-modified-dispersion">3. Emergent geometry, modified dispersion</h3>
+<p><strong>The idea.</strong> One model gives both an emergent metric and a controlled departure from it at high momentum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> separates the light cone from the dispersion relation. Here the separation is computed, with coefficients, which is the quantitative version the target lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of dispersion.</p>
+<p><strong>What stands in the way.</strong> The coefficients are model specific. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

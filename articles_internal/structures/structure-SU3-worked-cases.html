@@ -75,7 +75,7 @@
 <p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$. An element is a column $\tilde Q=(Q_t,Q_x,Q_y,Q_z)$ of four complex numbers, and its display is the $2\times2$ matrix $M(\tilde Q)$ with $M(e_t)=\mathrm{I}_2$ and $M(\vec e_k)=-i\sigma_k$.</p>
 <p><strong>The group.</strong> $\mathrm{SU}(3)$ is the stabiliser of the unit line inside $\mathrm{SU}(4)$ for the form $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$. Every element of it has the shape</p>
 <p>$$
-g=\begin{pmatrix}1&0\\0&R\end{pmatrix},\qquad R\in\mathrm{U}(3),\quad \det R=1 ,
+g=\begin{pmatrix}1&amp;0\\0&amp;R\end{pmatrix},\qquad R\in\mathrm{U}(3),\quad \det R=1 ,
 $$</p>
 <p>and it acts on the carrier by the $4\times4$ matrix $g$ on the column of coefficients. So an element fixes the unit and acts on the vector part $B_V=\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)$ by the $3\times3$ block $R$.</p>
 <p><strong>Three arrays, one element.</strong> The corpus writes an operator in three ways, and each case below uses whichever arrays carry information:</p>
@@ -188,19 +188,19 @@ $$</p>
 <p>$$
 g=\exp\bigl(\tfrac{\pi}{4}A_z\bigr).
 $$</p>
-<p><strong>The display.</strong> Exponentiating the block $\begin{pmatrix}0&-2\\2&0\end{pmatrix}$ on the plane of $(\vec e_x,\vec e_y)$,</p>
+<p><strong>The display.</strong> Exponentiating the block $\begin{pmatrix}0&amp;-2\\2&amp;0\end{pmatrix}$ on the plane of $(\vec e_x,\vec e_y)$,</p>
 <p>$$
-g=\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+g=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>a quarter-turn of the $(\vec e_x,\vec e_y)$ plane with the unit and $\vec e_z$ fixed. Checks: $g\,g^{\dagger}=\mathrm{I}_4$ to $10^{-16}$, $\det g=1$, and $g$ fixes $e_t$ exactly.</p>
 <p><strong>The block.</strong> Reading the lower right corner,</p>
 <p>$$
-R=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix},
+R=\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>which is $\cos\tfrac{\pi}{2}$ on the diagonal and $\sin\tfrac{\pi}{2}$ in the off-diagonal slots: the rotation angle is $2\theta=\tfrac{\pi}{2}$ and not $\theta$.</p>
 <p><strong>The Conway array.</strong> Solving $g=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$ over the sixteen words gives only four non-zero entries,</p>
 <p>$$
-c=\tfrac12\begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\1&0&0&-1\end{pmatrix},
+c=\tfrac12\begin{pmatrix}1&amp;0&amp;0&amp;-1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\1&amp;0&amp;0&amp;-1\end{pmatrix},
 \qquad\text{that is}\qquad
 g=\tfrac12\Bigl(e_t[\,]e_t-e_t[\,]e_z+e_z[\,]e_t-e_z[\,]e_z\Bigr),
 $$</p>
@@ -262,9 +262,9 @@ $$</p>
 <p>$u$ is a unit element ($uu^{*}=e_t$) and $u^{3}=\pm e_t$, so $P$ has order three.</p>
 <p><strong>The display.</strong></p>
 <p>$$
-P=\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix},
+P=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
-P^{2}=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&0&0&1\\0&1&0&0\end{pmatrix},
+P^{2}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>with $P^{3}=\mathrm{I}_4$ to $7\times10^{-16}$. The block is the cycle</p>
 <p>$$
@@ -280,7 +280,7 @@ $$</p>
 <p>all with coefficient exactly one, no signs. The three rotations cycle, the three diagonals cycle, and the three symmetric sums cycle in the reverse sense, because $S_{ab}$ follows the <em>pair</em> and the pair $(x,y)$ becomes the pair $(y,z)$.</p>
 <p><strong>The Conway array.</strong> $P=L_uR_{u^{*}}$ with $u^{*}=\tfrac12(e_t-\vec e_x-\vec e_y-\vec e_z)$, so $c_{{\imath}{\jmath}}=u_{\imath} u^{*}_{\jmath}=\pm\tfrac14$:</p>
 <p>$$
-c=\tfrac14\begin{pmatrix}1&-1&-1&-1\\1&-1&-1&-1\\1&-1&-1&-1\\1&-1&-1&-1\end{pmatrix},
+c=\tfrac14\begin{pmatrix}1&amp;-1&amp;-1&amp;-1\\1&amp;-1&amp;-1&amp;-1\\1&amp;-1&amp;-1&amp;-1\\1&amp;-1&amp;-1&amp;-1\end{pmatrix},
 $$</p>
 <p>sixteen non-zero entries and rank one. The length is one while sixteen words appear: <strong>rank and sparsity are different questions</strong>, and this element separates them.</p>
 <p><strong>Why the case matters.</strong> This is the element that shows the three axes are not canonical. An automorphism of the algebra carries each axis to another, so no statement about this group can name an axis without breaking the symmetry. The first note proves that in general; here it is one matrix.</p>
@@ -289,22 +289,22 @@ $$</p>
 <p><strong>The images.</strong> Computing $\mathrm{Ad}_u$ for all twenty-four gives <strong>twelve</strong> distinct displays, because $u$ and $-u$ agree. Each is of the form $\operatorname{diag}(1,\Pi)$ with $\Pi$ a signed permutation matrix in $SO(3)$, and the three permutation types that occur are the identity, the $3$-cycle of §5 and its square. Verified: twelve distinct images, all monomial, all with a single $\pm1$ in each row and each column.</p>
 <p><strong>The reading.</strong> The binary tetrahedral group $2T$ of order twenty-four maps onto the tetrahedral rotation group of order twelve, which sits inside $SO(3)$, which sits inside $\mathrm{SU}(3)$. Three nested finite groups, and the map that produces them is the same $\mathrm{Ad}$ used for every other case. The corpus's count of twenty-four unit quaternions therefore becomes a count of twelve matrices here, and the factor two is the kernel of §2.</p>
 <h2 id="7-case-6-the-eight-one-parameter-families">7. Case 6: The Eight One-Parameter Families</h2>
-<p>Each generator gives a one-parameter family with an explicit matrix. Write $\operatorname{blk}(a,b;\,s,c)$ for the $4\times4$ matrix that equals $\begin{pmatrix}s&c\\-c&s\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$ and the identity elsewhere: a rotation of that plane by the angle whose cosine and sine are $s$ and $c$.</p>
+<p>Each generator gives a one-parameter family with an explicit matrix. Write $\operatorname{blk}(a,b;\,s,c)$ for the $4\times4$ matrix that equals $\begin{pmatrix}s&amp;c\\-c&amp;s\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$ and the identity elsewhere: a rotation of that plane by the angle whose cosine and sine are $s$ and $c$.</p>
 <p><strong>The three rotations</strong> $\exp(\theta A_a)$. On the plane orthogonal to $\vec e_a$,</p>
 <p>$$
 \exp(\theta A_z)=\operatorname{blk}\bigl(x,y;\,\cos2\theta,\,\sin2\theta\bigr),
 $$</p>
 <p>a real rotation by $2\theta$. At $\theta=\tfrac{\pi}{4}$: $\operatorname{blk}(x,y;\,0,1)$,</p>
 <p>$$
-\exp\bigl(\tfrac{\pi}{4}A_z\bigr)=\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+\exp\bigl(\tfrac{\pi}{4}A_z\bigr)=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>the matrix of §1. At $\theta=\tfrac{\pi}{2}$: $\operatorname{diag}(1,-1,-1,1)$ of §3. At $\theta=\pi$: the identity, so the family is $\pi$-periodic in $\theta$ — verified, residual $2\times10^{-16}$. The length is one for every $\theta$, because $\exp(\theta A_z)=\mathrm{Ad}_a=\mathrm{Sd}_a$ for $a=\cos\theta\,e_t+\sin\theta\,\vec e_z$ (verified at $\theta=\tfrac{\pi}{4}$ to $6\times10^{-16}$). The half-angle is $\theta$ and not $\tfrac{\theta}{2}$: the rotor $a$ turns vectors by twice its own angle, and one side of the statement is in the rotor's angle while the other is in the operator's.</p>
 <p><strong>The three symmetric sums</strong> $\exp(\phi S_{ab})$. On the plane of $(a,b)$,</p>
 <p>$$
-\exp(\phi S_{xy})\Big|_{\text{plane}}=\cos\phi\,\mathrm{I}_2+\sin\phi\begin{pmatrix}0&i\\i&0\end{pmatrix}
-=\begin{pmatrix}\cos\phi&i\sin\phi\\ i\sin\phi&\cos\phi\end{pmatrix},
+\exp(\phi S_{xy})\Big|_{\text{plane}}=\cos\phi\,\mathrm{I}_2+\sin\phi\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}
+=\begin{pmatrix}\cos\phi&amp;i\sin\phi\\ i\sin\phi&amp;\cos\phi\end{pmatrix},
 $$</p>
-<p>the identity plus $i$ times the swap, and the identity on the two remaining coordinates $e_t,\vec e_z$. At $\phi=\tfrac{\pi}{4}$ the entries are $\tfrac{1}{\sqrt2}$ and $\tfrac{i}{\sqrt2}$. At $\phi=\tfrac{\pi}{2}$ the matrix is $\begin{pmatrix}0&i\\i&0\end{pmatrix}$ on the plane: the <em>$i$-swap</em>, which exchanges $\vec e_x$ and $\vec e_y$ and multiplies both by $i$. At $\phi=\pi$ the matrix is $\operatorname{diag}(1,-1,-1,1)$ again, and</p>
+<p>the identity plus $i$ times the swap, and the identity on the two remaining coordinates $e_t,\vec e_z$. At $\phi=\tfrac{\pi}{4}$ the entries are $\tfrac{1}{\sqrt2}$ and $\tfrac{i}{\sqrt2}$. At $\phi=\tfrac{\pi}{2}$ the matrix is $\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}$ on the plane: the <em>$i$-swap</em>, which exchanges $\vec e_x$ and $\vec e_y$ and multiplies both by $i$. At $\phi=\pi$ the matrix is $\operatorname{diag}(1,-1,-1,1)$ again, and</p>
 <p>$$
 \exp(\pi S_{xy})=\mathrm{Ad}_{\vec e_z}=-e_z[\,]e_z ,
 $$</p>
@@ -344,10 +344,10 @@ $$</p>
 <p><strong>The display.</strong> Numerically</p>
 <p>$$
 g=\begin{pmatrix}
-1&0&0&0\\
-0&0.1568-0.1606i&-0.3788+0.7037i&-0.4952-0.2563i\\
-0&0.2923+0.2540i&0.3770-0.3924i&-0.6346-0.3888i\\
-0&0.8013+0.3970i&0.0823+0.2417i&0.2855+0.2316i
+1&amp;0&amp;0&amp;0\\
+0&amp;0.1568-0.1606i&amp;-0.3788+0.7037i&amp;-0.4952-0.2563i\\
+0&amp;0.2923+0.2540i&amp;0.3770-0.3924i&amp;-0.6346-0.3888i\\
+0&amp;0.8013+0.3970i&amp;0.0823+0.2417i&amp;0.2855+0.2316i
 \end{pmatrix},
 $$</p>
 <p>with residual $6\times10^{-16}$ against unitarity, $10^{-15}$ against $\det=1$, and $2\times10^{-16}$ against "fixes $e_t$". Every entry of the block has modulus comparable to the others: this element is nowhere near an automorphism.</p>
@@ -371,7 +371,7 @@ $$</p>
 <p>that is, in columns,</p>
 <p>$$
 \begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}\longmapsto
-\begin{pmatrix}1&0\\ 0&R\end{pmatrix}\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}.
+\begin{pmatrix}1&amp;0\\ 0&amp;R\end{pmatrix}\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}.
 $$</p>
 <p>Verified on a random $\tilde Q$ and the general $g$ of §8: residual $3\times10^{-16}$.</p>
 <p><strong>What the case says.</strong> The group <em>never touches the unit coordinate</em>. It acts on the three vector coordinates by a unitary matrix of determinant one. In biquaternion language: the action is complex-linear on the vector part and trivial on the scalar part, and a general element is <strong>not</strong> of the form $\tilde Q\mapsto a\tilde Qb$. An operator of that form has a Conway array of rank one, since $a[\,]b$ is a single word; the general element has rank four. Conversely every element that <em>is</em> of that form and is invertible is an automorphism with $b=a^{-1}$ up to a scalar, so the elements of $SU(3)$ that act as $\tilde Q\mapsto a\tilde Qa^{-1}$ are exactly those of §3–§5.</p>
@@ -388,7 +388,7 @@ $$</p>
 <p>Two tables follow. The first uses the general $g$ of §8. The second uses the two-factor element</p>
 <p>$$
 g_0=\exp\bigl(\tfrac{\pi}{3}H_1\bigr)\exp\bigl(\tfrac{\pi}{4}A_z\bigr),\qquad
-R_0=\begin{pmatrix}0&-e^{i\pi/3}&0\\ e^{-i\pi/3}&0&0\\ 0&0&1\end{pmatrix},
+R_0=\begin{pmatrix}0&amp;-e^{i\pi/3}&amp;0\\ e^{-i\pi/3}&amp;0&amp;0\\ 0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>whose block is a swap with phases, chosen because its arithmetic closes in closed form: $\vec e_x\mapsto e^{-i\pi/3}\vec e_y$ and $\vec e_y\mapsto -e^{i\pi/3}\vec e_x$. Both residual checks: $7\times10^{-16}$. In both tables $N(\tilde Q)=\det M(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ is the multiplicative norm, of signature $(2,2)$.</p>
 <p><strong>Table A: the general element of §8.</strong></p>
@@ -497,10 +497,10 @@ $$</p>
 <p><strong>The conjugation.</strong> With $\phi=0.8$, so that $\cosh\tfrac{\phi}{2}=1.0811$ and $\sinh\tfrac{\phi}{2}=0.4108$,</p>
 <p>$$
 \mathrm{Ad}_b=\begin{pmatrix}
-1&0&0&0\\
-0&1&0&0\\
-0&0&1.3374&-0.8881i\\
-0&0&0.8881i&1.3374
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1.3374&amp;-0.8881i\\
+0&amp;0&amp;0.8881i&amp;1.3374
 \end{pmatrix},
 $$</p>
 <p>with eigenvalues $1,1,e^{0.8},e^{-0.8}=1,1,2.2255,0.4493$: real, positive, and not of modulus one.</p>
@@ -609,7 +609,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_{-e_t}=\mathrm{Ad}_{e_t}$, $\mathrm{Ad}_{iu}=\mathrm{Ad}_u$, $\mathrm{Ad}_{e^{i\alpha}u}=\mathrm{Ad}_u$</td>
-<td>$<10^{-9}$</td>
+<td>$&lt;10^{-9}$</td>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_{\vec e_k}=-e_k[\,]e_k$</td>
@@ -728,7 +728,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{blk}(a,b;s,c)$</td>
-<td>the $4\times4$ matrix acting as $\begin{pmatrix}s&c\\ \cdot&\cdot\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$</td>
+<td>the $4\times4$ matrix acting as $\begin{pmatrix}s&amp;c\\ \cdot&amp;\cdot\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$</td>
 </tr>
 </tbody>
 </table></div>

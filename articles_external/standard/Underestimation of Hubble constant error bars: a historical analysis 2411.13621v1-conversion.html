@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underestimation of Hubble Constant Error Bars: A Historical Analysis — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Underestimation of Hubble constant error bars: a historical analysis 2411.13621v1.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="underestimation-of-hubble-constant-error-bars-a-historical-analysis"><strong>Underestimation of Hubble Constant Error Bars: A Historical Analysis</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2411.13621v1 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Martín López-Corredoira</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 November 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Marcel Grossmann Conference proceedings (WSPC), "d growth tensions: theoretical models and model-independent constraints” within XVIIth Marcel Grossmann Conference)." session</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Underestimation of Hubble constant error bars: a historical analysis 2411.13621v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Underestimation of Hubble constant error bars: a historical analysis 2411.13621v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Underestimation of Hubble constant error bars: a historical analysis 2411.13621v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the 163 published values of $H_0$ between 1976 and 2019 and computes their weighted average and $\chi^2$ dispersion. The dispersion is far larger than the quoted errors allow, so the quoted errors must be underestimated; under a recalibration, the celebrated 4.4$\sigma$ and 6.0$\sigma$ tensions become 2.1$\sigma$ and 2.5$\sigma$. The paper concludes that the Hubble tension is not new and is a statistical artefact of small error bars.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-test">The test</h3>
+<p>"An analysis of a historical compilation of Hubble-Lemaı̂tre constant values (H0 : 163 data points measured between 1976 and 2019) assuming the standard cosmological model gives a χ2 value of the dispersion with respect to the weighted average of 580, much larger than the number of points, which has an associated probability that is very low."</p>
+<h3 id="the-numbers">The numbers</h3>
+<p>With $\chi^2=\sum_{i=1}^{N}(H_{0,i}-\bar H_0)^2/\sigma_i^2$ (paper 1) weighting each point by its inverse variance, "n H0 = 68.26 ± 0.40 km s−1 Mpc−1 and χ2 = 575.7. 13 For the value of χ2 calculated using the weighted average, the probability that the observed trend is due to chance is Q = 1.0 × 10−47. In order"</p>
+<h3 id="what-it-takes-to-make-the-data-consistent">What it takes to make the data consistent</h3>
+<p>"In order to reach a value for Q that is statistically significant (Q ≥ 0.05), 27 outliers (with more than 2.8σ deviation from the average value) must be removed from the data (n = 136, χ2 = 161.3), producing a value for Q of 0."</p>
+<h3 id="the-recalibration">The recalibration</h3>
+<p>"es that a tension of 4.4σ would be a tension of 2.1σ in equivalent terms of a Gaussian distribution of frequencies. Meanwhile, a tension of 6.0σ would be a tension of 2.5σ in equivalent terms of a Gaussian distribution of fre- quencies." "t is, we should not be surprised to find tensions of 4-6σ because they are much more frequent than indicated by the Gaussian statistics, and they stem from underestimation of errors, not from real tensions in the background physics or cosmology. As"</p>
+<h3 id="the-historical-claim">The historical claim</h3>
+<p>"there have always been tensions between different measurements of the values of H0 , which have not received much attention. Before the 1970s, due to different corrections of errors in the calibration of standard candles, the value of the parameter continuously decreased, leading to incompatible measurements of different epochs. Even after the 1970s, some tension has always been present."</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>"The fact that the error bars for H0 are so commonly underestimated might ex- plain the apparent discrepancy of values. Indeed" "asurements with JWST data by Freedman et al. using standard candles in galaxies find there is no tension with CMBR data, possibly indicating that previously Riess et al."</p>
+<h3 id="the-sociological-part-stated-as-such">The sociological part, stated as such</h3>
+<p>"this tension has been promoted by the dominant groups that control cosmology: the SNIa and CMBR teams, the same ones who promoted the idea of concordance cosmology and dark energy."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-error-bars-can-be-tested-against-each-other">1. Error bars can be tested against each other</h3>
+<p><strong>The idea.</strong> A set of measurements of one quantity, each with a quoted uncertainty, must satisfy $\chi^2\approx N-1$. If $\chi^2\gg N$, the errors are wrong, whatever the physics. No model is needed to run the test. This is a <strong>mechanism</strong> for auditing a claimed anomaly.</p>
+<p><strong>What it would add.</strong> A check the corpus can apply to any set of measurements it cites, separating a physical tension from a bookkeeping failure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on how an anomaly is established.</p>
+<p><strong>What stands in the way.</strong> The test assumes independent measurements; the paper concedes that "a considerable fraction of the published measurements were not independent at all, but consisted of incremental updates to a chain of studies", so its own $\chi^2$ is an approximation with unknown covariance.</p>
+<h3 id="2-a-tension-is-not-new-because-it-was-announced-loudly">2. A tension is not new because it was announced loudly</h3>
+<p><strong>The idea.</strong> The pre-2019 record contains tensions of comparable size. What changed in 2019 was attention, not the data. The historical compilation turns a claim about nature into a claim about a community's baseline.</p>
+<p><strong>What it would add.</strong> A baseline against which the corpus's own "anomalies" can be measured — whether they are new or recurring.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on the inventory of anomalies.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; it is a reading the corpus can adopt immediately.</p>
+<h3 id="3-the-27-outlier-threshold">3. The 27-outlier threshold</h3>
+<p><strong>The idea.</strong> The paper quantifies how much of the record must be discarded to make the remainder statistically acceptable: 27 of 163 points. That fraction is itself a measurement of how unreliable the field's quoted errors are.</p>
+<p><strong>What it would add.</strong> A number describing the quality of the observational input the corpus's cosmology-adjacent claims rest on.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, on the data quality.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>The rank is a judgement: the $\chi^2$ audit first, because it is the method and it transfers; the historical baseline second; the outlier count third, as the quantity.</p>
+<p>This is a nine-page proceedings paper; the 163-point compilation, the weighted average, the $\chi^2$ and $Q$ values, the 27 outliers, the Gaussian recalibration and the sociology of the tension are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

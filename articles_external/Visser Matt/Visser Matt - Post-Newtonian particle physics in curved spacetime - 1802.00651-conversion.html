@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-Newtonian particle physics in curved spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Post-Newtonian particle physics in curved spacetime - 1802.00651.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="post-newtonian-particle-physics-in-curved-spacetime"><strong>Post-Newtonian particle physics in curved spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1802.00651v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 February 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Post-Newtonian particle physics in curved spacetime - 1802.00651-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Post-Newtonian particle physics in curved spacetime - 1802.00651.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Post-Newtonian particle physics in curved spacetime - 1802.00651.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Three papers claimed that a gravitational effect explains the muon magnetic moment anomaly. Visser answers them. He shows the calculations use the absolute gravitational potential, which the equivalence principle forbids. If one accepted that logic, the effect from the Sun would be fifteen times the Earth's, and the Galaxy's two thousand times. Under general relativity, the effect is suppressed by the size of the laboratory. The note is a correction, not a model.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-being-answered">The claim being answered</h3>
+<p>"it has been argued that the observed experimental anomaly in the anomalous magnetic moment of the muon might be explained using general relativity."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"It is my melancholy duty to report that these articles are fundamentally flawed in that they fail to correctly implement the Einstein equivalence principle of general relativity."</p>
+<h3 id="the-reductio">The reductio</h3>
+<p>"Insofar as one accepts the underlying logic behind these calculations (and so rejects general relativity) the claimed effect due to the Earth's gravity will be swamped by the effect due to Sun (by a factor of fifteen), and by the effect due to the Galaxy (by a factor of two thousand)."</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>"Insofar as one obtains results depending on the absolute gravitational potential, then one is not doing general relativity, (and the gravitational effect of the Galaxy dominates over the Sun which in turn dominates over the Earth — this is not a healthy state of affairs)."</p>
+<h3 id="the-correct-behaviour">The correct behaviour</h3>
+<p>"insofar as one working with standard general relativity, the Einstein equivalence principle implies the presence of overwhelmingly small suppression factors dependent on the size of the laboratory."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-absolute-potential-is-not-observable">1. Absolute potential is not observable</h3>
+<p><strong>The idea.</strong> A result that depends on the absolute potential violates the equivalence principle.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> tests the framework against data. This is a sharp criterion for screening claims before comparing with data.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of method.</p>
+<p><strong>What stands in the way.</strong> The criterion is standard general relativity. Ranked first, because it is a cheap filter.</p>
+<h3 id="2-environmental-domination">2. Environmental domination</h3>
+<p><strong>The idea.</strong> If an effect depends on potential, the environment dominates the experiment.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would need to state which external fields enter. A dominance argument bounds any claimed laboratory effect.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of laboratory tests.</p>
+<p><strong>What stands in the way.</strong> The numbers are for one claimed effect. Ranked second.</p>
+<h3 id="3-suppression-by-laboratory-size">3. Suppression by laboratory size</h3>
+<p><strong>The idea.</strong> In general relativity the residual effect scales with the size of the apparatus.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> discusses local frames. A quantitative statement about tidal effects in a lab makes the local frame concrete.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on local frames.</p>
+<p><strong>What stands in the way.</strong> The estimate is order-of-magnitude. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -106,16 +106,16 @@ $$</p>
 <p>For a component $\tilde{Q}_\pm = \lVert\vec Q\rVert_\pm \vec u_\pm$ with $\lVert\vec Q\rVert_\pm \neq 0$ and $\vec u_\pm^2 = -e_t$, the quaternion Bessel function is</p>
 <p>$$
 \boxed{\;
-J_n(\lVert\vec Q\rVert_\pm \vec u_\pm) = I_n(\lVert\vec Q\rVert_\pm) \, \vec u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\lVert\vec Q\rVert_\pm) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\lVert\vec Q\rVert_\pm) \, \vec u_\pm & \text{if } n \text{ is odd}, \end{cases}
+J_n(\lVert\vec Q\rVert_\pm \vec u_\pm) = I_n(\lVert\vec Q\rVert_\pm) \, \vec u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\lVert\vec Q\rVert_\pm) \, e_t &amp; \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\lVert\vec Q\rVert_\pm) \, \vec u_\pm &amp; \text{if } n \text{ is odd}, \end{cases}
 \;}
 $$</p>
 <p>where $I_n(\lVert\vec Q\rVert_\pm)$ on the right is the ordinary complex <strong>modified</strong> Bessel function evaluated at the real (or complex) number $\lVert\vec Q\rVert_\pm$. The two signs $(-1)^m$ in the defining series cancel, which is why the modified function appears in place of $J_n$.</p>
 <h3 id="the-pure-nilpotent-regime">The Pure Nilpotent Regime</h3>
 <p>For a component $\tilde{Q}_\pm = \vec Q_\pm$ with $\vec Q_\pm^2 = 0$, the quaternion Bessel function truncates:</p>
 <p>$$
-J_n(\vec Q_\pm) = \begin{cases} \frac{1}{n!} \left(\frac{\vec Q_\pm}{2}\right)^n & \text{if } n = 0 \text{ or } n = 1, \\ 0 & \text{if } n \geq 2. \end{cases}
+J_n(\vec Q_\pm) = \begin{cases} \frac{1}{n!} \left(\frac{\vec Q_\pm}{2}\right)^n &amp; \text{if } n = 0 \text{ or } n = 1, \\ 0 &amp; \text{if } n \geq 2. \end{cases}
 $$</p>
-<p>For non-integer $\nu$, the series reduces to the terms with $2m + \nu < 2$.</p>
+<p>For non-integer $\nu$, the series reduces to the terms with $2m + \nu &lt; 2$.</p>
 <h3 id="modified-bessel-functions">Modified Bessel Functions</h3>
 <p>The <strong>modified Bessel function</strong> of the first kind is defined by</p>
 <p>$$
@@ -126,9 +126,9 @@ $$</p>
 <h3 id="legendre-polynomials">Legendre Polynomials</h3>
 <p>The <strong>Legendre polynomials</strong> $P_n(\tilde{Q})$ are defined by the generating function</p>
 <p>$$
-\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < R(\tilde{Q}),
+\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| &lt; R(\tilde{Q}),
 $$</p>
-<p>where $t$ is a real parameter, the square root is the split biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible. For $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but not in general: for $\tilde{Q} = 3e_t$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$, so the series converges only for $|t| < 3 - 2\sqrt{2} \approx 0.172$. Equivalently, they satisfy the recurrence</p>
+<p>where $t$ is a real parameter, the square root is the split biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible. For $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but not in general: for $\tilde{Q} = 3e_t$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$, so the series converges only for $|t| &lt; 3 - 2\sqrt{2} \approx 0.172$. Equivalently, they satisfy the recurrence</p>
 <p>$$
 (n+1) P_{n+1}(\tilde{Q}) = (2n+1) \tilde{Q} P_n(\tilde{Q}) - n P_{n-1}(\tilde{Q}),
 $$</p>
@@ -169,7 +169,7 @@ $$</p>
 <p>$$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$</p>
-<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\| < 1$.</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\| &lt; 1$.</p>
 <h3 id="computation-via-the-idempotent-decomposition_1">Computation via the Idempotent Decomposition</h3>
 <p>The hypergeometric function decomposes in the idempotent basis:</p>
 <p>$$
@@ -285,7 +285,7 @@ $$</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
 <p>$$
-P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|^4}, \qquad \|\tilde{Q}\| < r, \quad \|\tilde Q_1\| = r.
+P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|^4}, \qquad \|\tilde{Q}\| &lt; r, \quad \|\tilde Q_1\| = r.
 $$</p>
 <p>It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomposes in the idempotent basis into the quaternion Poisson kernels of the two components.</p>
 <h3 id="the-greens-function">The Green's Function</h3>

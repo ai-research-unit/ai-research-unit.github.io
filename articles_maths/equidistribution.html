@@ -131,7 +131,7 @@ $$</p>
 <h3 id="the-definition-and-the-erdosturan-inequality">The Definition and the Erdős–Turán Inequality</h3>
 <p><strong>Definition.</strong> For a sequence $(x_n)$ in $[0,1)$ and an integer $N \geq 1$, the <strong>discrepancy</strong> is</p>
 <p>$$
-D_N(x_1, \dots, x_N) = \sup_{0 \le a < b \le 1} \left|\frac{\#\{1 \le n \le N : x_n \in [a,b)\}}{N} - (b-a)\right|,
+D_N(x_1, \dots, x_N) = \sup_{0 \le a &lt; b \le 1} \left|\frac{\#\{1 \le n \le N : x_n \in [a,b)\}}{N} - (b-a)\right|,
 $$</p>
 <p>the largest deviation of the empirical measure from the uniform measure over intervals.</p>
 <p>The discrepancy measures the rate of equidistribution, and the quantitative theorems give upper and lower bounds for it. The main analytic inequality is due to Erdős and Turán.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p>The inequality converts an estimate of the exponential sums — the Fourier coefficients of the empirical measure — into an estimate of the discrepancy, and it is the quantitative form of Weyl's criterion: the criterion says that the sums vanish in the limit, and the inequality says how quickly they must vanish for the discrepancy to be small. Its proof uses a trigonometric approximation of the indicator function of an interval by a Fejér kernel; the constant is absolute and the optimal version has been improved by later authors.</p>
 <p><strong>Corollary.</strong> If the exponential sums satisfy $\left|\frac{1}{N}\sum_{n\le N} \exp(2\pi i kx_n)\right| \le K/N$ uniformly in $k$, then $D_N = O((\log N)/N)$; this is the rate attained by the sequence $\{n\alpha\}$ for an irrational $\alpha$ with bounded partial quotients, and it is, up to the logarithm, the best possible, since $D_N \geq c\log N/N$ along a subsequence for every sequence.</p>
 <h3 id="the-circle-and-continued-fractions">The Circle and Continued Fractions</h3>
-<p><strong>Theorem (the three-distance theorem).</strong> For irrational $\alpha$ the points $\{n\alpha\}$, $n = 1, \dots, N$, cut the circle into $N+1$ intervals whose lengths take at most three distinct values, and the pattern is determined by the continued fraction expansion of $\alpha$. Consequently the discrepancy is controlled by the continued fraction data: if $[0;a_1,a_2,\dots]$ is the expansion of $\alpha$ and $q_m \le N < q_{m+1}$ are its denominators, then</p>
+<p><strong>Theorem (the three-distance theorem).</strong> For irrational $\alpha$ the points $\{n\alpha\}$, $n = 1, \dots, N$, cut the circle into $N+1$ intervals whose lengths take at most three distinct values, and the pattern is determined by the continued fraction expansion of $\alpha$. Consequently the discrepancy is controlled by the continued fraction data: if $[0;a_1,a_2,\dots]$ is the expansion of $\alpha$ and $q_m \le N &lt; q_{m+1}$ are its denominators, then</p>
 <p>$$
 N D_N(\alpha) \ll 1 + \sum_{i=1}^{m} a_i,
 $$</p>
@@ -163,7 +163,7 @@ $$</p>
 <p>$$
 \frac{1}{T}\int_0^T f(u_tx)\,dt - \int f\,d\mu = O_f\left(T^{-\eta}\right)
 $$</p>
-<p>for an exponent $\eta > 0$ depending on $G$ and on the flow, with the constant depending on finitely many Sobolev norms of $f$.</p>
+<p>for an exponent $\eta &gt; 0$ depending on $G$ and on the flow, with the constant depending on finitely many Sobolev norms of $f$.</p>
 <p>The effective theorems are the quantitative form of Ratner's equidistribution, and they are needed whenever the equidistribution is to be applied with an error term: the counting of rational points, the quantitative Oppenheim conjecture, and the distribution of the values of a quadratic form at integer points. The exponent $\eta$ is not explicit in Ratner's original theorem and comes from the shearing estimates of the proof; the modern effective versions use the spectral gap of the action and the decay of matrix coefficients, which is the Howe–Moore theorem of <em>Ergodic Theory of Group Actions</em>.</p>
 <h2 id="unique-ergodicity">Unique Ergodicity</h2>
 <h3 id="the-equivalence-with-uniform-convergence">The Equivalence with Uniform Convergence</h3>

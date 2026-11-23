@@ -121,7 +121,7 @@ $$</p>
 $$</p>
 <p>The face maps satisfy the <strong>simplicial identities</strong></p>
 <p>$$
-\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1} \qquad (i < j),
+\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1} \qquad (i &lt; j),
 $$</p>
 <p>read as maps from degree $n$ to degree $n-2$: the composition of the omission of the $i$-th vertex with that of the $j$-th is the same as the omission of the $(j-1)$-st vertex with that of the $i$-th when the first omission is performed second.</p>
 <p><strong>Proof.</strong> Both sides omit the vertices in positions $i$ and $j$ of the original ordering and keep the remaining vertices in their original order; the only difference is the order in which the two omissions are performed, which does not change the result.</p>
@@ -136,7 +136,7 @@ $$</p>
 \boxed{\;\partial_{n-1} \circ \partial_{n} = 0\;} .
 $$</p>
 <p>Equivalently, every boundary is a cycle: the image of $\partial_{n}$ is contained in the kernel of $\partial_{n-1}$.</p>
-<p><strong>Proof.</strong> It suffices to compute on an oriented simplex $[v_{0}, \ldots, v_{n}]$. Write the outer $\partial_{n-1}$ with summation index $j$ and the inner $\partial_{n}$ with summation index $i$, so that the composite is $\sum_{j}\sum_{i} (-1)^{j+i}\delta^{j}\delta^{i}$, where $\delta^{j}$ acts on the $(n-1)$-simplex produced by $\delta^{i}$. A pair of indices with $i < j$ contributes through the term $(j, i)$; the simplicial identity gives $\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1}$, so the same face map occurs in the term $(i, j-1)$ of the double sum. The signs are $(-1)^{j+i}$ and $(-1)^{i+j-1}$, which are opposite, so the two terms cancel. Every term is paired this way, and the total is zero.</p>
+<p><strong>Proof.</strong> It suffices to compute on an oriented simplex $[v_{0}, \ldots, v_{n}]$. Write the outer $\partial_{n-1}$ with summation index $j$ and the inner $\partial_{n}$ with summation index $i$, so that the composite is $\sum_{j}\sum_{i} (-1)^{j+i}\delta^{j}\delta^{i}$, where $\delta^{j}$ acts on the $(n-1)$-simplex produced by $\delta^{i}$. A pair of indices with $i &lt; j$ contributes through the term $(j, i)$; the simplicial identity gives $\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1}$, so the same face map occurs in the term $(i, j-1)$ of the double sum. The signs are $(-1)^{j+i}$ and $(-1)^{i+j-1}$, which are opposite, so the two terms cancel. Every term is paired this way, and the total is zero.</p>
 <h3 id="the-cancellation-in-low-degrees">The Cancellation in Low Degrees</h3>
 <p><strong>Example (degree two).</strong> On the $2$-simplex,</p>
 <p>$$
@@ -215,7 +215,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1}$</td>
-<td>The simplicial identities, for $i < j$</td>
+<td>The simplicial identities, for $i &lt; j$</td>
 </tr>
 <tr>
 <td>$\partial_{n-1}\partial_{n} = 0$</td>

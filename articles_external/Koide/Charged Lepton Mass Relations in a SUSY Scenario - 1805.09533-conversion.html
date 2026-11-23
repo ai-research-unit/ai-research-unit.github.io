@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charged Lepton Mass Relations in a SUSY Scenario — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Charged Lepton Mass Relations in a SUSY Scenario - 1805.09533.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charged-lepton-mass-relations-in-a-susy-scenario"><strong>Charged Lepton Mass Relations in a SUSY Scenario</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1805.09533v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide, Toshifumi Yamashita</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 October 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Charged Lepton Mass Relations in a SUSY Scenario - 1805.09533-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Charged Lepton Mass Relations in a SUSY Scenario - 1805.09533.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Charged Lepton Mass Relations in a SUSY Scenario - 1805.09533.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the two relations $K=2/3$ and $\kappa=1/486$, writes both as ratios of traces of the family nonet $\Phi$ with $m_{ei}\propto\sum_k\Phi_{ik}\Phi_{ki}$, and asks whether the potentials that produce them survive renormalisation-group running. In a non-supersymmetric model they do not. The authors show that in a supersymmetric version the two ratios are stable, although the superpotential itself is corrected, and they give simple superpotential forms that realise the relations. The mechanism is presented as a modification of Sumino's cancellation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-relations-as-trace-ratios">The two relations as trace ratios</h3>
+<p>"The observed charged lepton masses satisfy the relations $K\equiv(m_e+m_\mu+m_\tau)/(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2=2/3$ and $\kappa\equiv\sqrt{m_em_\mu m_\tau}/(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^3=1/486$ with great accuracy. These parameters are given as $K=(\mathrm{Tr}[\Phi\Phi])/(\mathrm{Tr}[\Phi])^2$ and $\kappa=\det\Phi/(\mathrm{Tr}[\Phi])^3$ if the charged lepton masses $m_{ei}$ are given by $m_{ei}\propto\sum_k\Phi_{ik}\Phi_{ki}$."</p>
+<h3 id="the-problem-with-the-non-susy-potentials">The problem with the non-SUSY potentials</h3>
+<p>"Simple scalar potential forms to realize the relations have been already proposed in non-supersymmetric scenarios, but the potential forms are not stable against the renormalization group effects."</p>
+<h3 id="the-result">The result</h3>
+<p>"In this paper, we examine supersymmetric scenarios and find that the parameters $K$ and $\kappa$ are made stable against the effects in a very nontrivial way, even though the superpotential itself (in the canonical basis) suffers the usual corrections. We also show possible simple superpotential forms for the relations."</p>
+<h3 id="where-it-sits-relative-to-sumino">Where it sits relative to Sumino</h3>
+<p>"Since our models stand on the modified Sumino mechanism, it is predicted that the features discussed in Refs. [8, 10] will be observed. In addition, more detailed analyses on some specific topics, such as family gauge bosons with visible lower mass at the LHC [11] and the $\mu$–$e$ conversion [12], are also applied."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-stability-of-a-relation-under-running-as-a-selection-rule">1. Stability of a relation under running as a selection rule</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: a relation among masses counts as explained only if the structure that produces it is stable under renormalisation, not merely true at tree level; supersymmetry is used here as the tool that removes the vertex corrections which spoil it.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 lists "run the masses to a common scale and re-evaluate $Q$" as a low-cost task with the outcome unknown. This paper gives the reason the answer matters and a mechanism that makes the answer scale-free: if the relation is produced by ratios of traces of a nonet, its running is not that of the individual masses. The corpus note treats running as an open question about numbers; this turns it into a question about the structure of the mass matrix.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first row, and the conversion of Sumino's cancellation paper in this folder.</p>
+<p><strong>What stands in the way.</strong> The claim of stability is asserted for a specific class of superpotentials with a specific field content, and nothing is computed for the Standard Model spectrum; the corpus has no supersymmetric sector at all. First, because it changes the status of the corpus's own open question.</p>
+<h3 id="2-math26-and-math27-as-the-two-invariants-of-a-math28-matrix">2. $K$ and $\kappa$ as the two invariants of a $3\times3$ matrix</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: with $m_i\propto(\Phi^2)_{ii}$, the ratios $(\mathrm{Tr}\,\Phi^2)/(\mathrm{Tr}\,\Phi)^2$ and $\det\Phi/(\mathrm{Tr}\,\Phi)^3$ are the two independent scale-invariant traces, so the two relations are the statement that both take special values.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> counts thirteen parameters in the flavour sector and lists the mass eigenvalues as three of them, with no invariant description of what a "special" spectrum would be. Two trace ratios whose measured values are $2/3$ and $1/486.663$ give such a description, and they are basis independent, unlike the eigenvalues.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, "The Mass Spectrum and Its Gaps".</p>
+<p><strong>What stands in the way.</strong> The identification $m_i\propto(\Phi^2)_{ii}$ is a model assumption; the corpus's mass matrix is $Y^fv/\sqrt2$ with no nonet. Second.</p>
+<h3 id="3-math36-as-a-second-measured-closure">3. $\kappa$ as a second measured closure</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $1/486$ for the leptons, to be added beside $2/3$.</p>
+<p><strong>What it would add.</strong> The three existing conversions of Sumino's papers in this folder discuss $K$ alone; a second relation doubles the number of constraints a mechanism must satisfy and therefore the strength of any test.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Koide/Family Gauge Symmetry and Koide's Mass Formula - 0812.2090-conversion.md</code>, where the cancellation is derived for $K$ only.</p>
+<p><strong>What stands in the way.</strong> The measured value $1/486.663$ differs from $1/486$ in the fourth digit, which is far outside the accuracy claimed for $K$; a mechanism tuned to $K$ leaves $\kappa$ as a check that does not obviously pass. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

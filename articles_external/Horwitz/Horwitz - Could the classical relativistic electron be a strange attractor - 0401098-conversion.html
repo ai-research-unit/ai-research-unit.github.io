@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Could the Classical Relativistic Electron Be a Strange Attractor? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Could the classical relativistic electron be a strange attractor - 0401098.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="could-the-classical-relativistic-electron-be-a-strange-attractor"><strong>Could the Classical Relativistic Electron Be a Strange Attractor?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0401098v1 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz, Y. Ashkenazy</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, February 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>38 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Could the classical relativistic electron be a strange attractor - 0401098-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Could the classical relativistic electron be a strange attractor - 0401098.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Could the classical relativistic electron be a strange attractor - 0401098.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what the off-shell electron's mass actually does. In the Stueckelberg–Horwitz–Piron framework the gauge fields can change the mass, and the self-interaction produces a non-linear Lorentz force whose Green's-function expansion closes into an autonomous equation for the mass deviation. Numerically that equation has a strange attractor: the mass wanders chaotically but its macroscopic average is fixed. The suggestion is that the electron's definite mass is an attractor, not a constraint, and that the attractor may be what gives the classical electron an effective size.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framework">The framework</h3>
+<p>"We review the formulation of the problem of the electromagnetic self-interaction of a relativistic charged particle in the framework of the manifestly covariant classical mechanics of Stueckeleberg, Horwitz and Piron. The gauge fields of this theory, in general, cause the mass of the particle to change."</p>
+<h3 id="the-result">The result</h3>
+<p>"We show that the non-linear Lorentz force equation for the self-interaction resulting from the expansion of the Green's function has chaotic solutions. We study the autonomous equation for the off-shell particle mass here, for which the effective charged particle mass achieves a macroscopic average value determined by what appears to be a strange attractor."</p>
+<h3 id="the-interpretation">The interpretation</h3>
+<p>"It is our conjecture that the formation of dynamical attractors of this type in the orbit equations as well will lead to a macroscopically smooth behavior of the perturbed relativistic charged particle, possibly associated with an effective non-zero size."</p>
+<h3 id="why-the-average-is-stable">Why the average is stable</h3>
+<p>"Some evidence for such a smooth behavior appears in the very large effective mass generated near ε ∼ = 1, stabilizing the effect of the Lorentz forces, as well as our preliminary result that the larger accellerations emerging in derivatives with respect to τ are strongly damped, in this neighborhood"</p>
+<h3 id="the-honesty-about-initial-conditions">The honesty about initial conditions</h3>
+<p>"Our investigation of the phase space of the autonomous equation used somewhat arbitrary initial conditions, and we find that changing these conditions somewhat does not affect the general pattern of the results."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-definite-mass-can-be-an-attractor">1. A definite mass can be an attractor</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: the observed sharpness of the electron mass need not come from a constraint. It can come from the dynamics having an attracting set on which the mass fluctuates but whose average is fixed.</p>
+<p><strong>What it would add.</strong> The corpus's articles on mass treat the value as a parameter of the layer. The companion statistical-mechanical paper gets stability from equilibrium; this gets it from a chaotic attractor. The two are different mechanisms with different signatures — one relaxes monotonically, the other fluctuates forever within a bounded set — and having both in view makes it possible to say which is which in a given model.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The attractor is found numerically in one autonomous equation; whether the full orbit equations share it is the paper's conjecture, explicitly flagged as such.</p>
+<h3 id="2-chaos-regularises-the-classical-point-charge">2. Chaos regularises the classical point charge</h3>
+<p><strong>The idea.</strong> A <strong>conjecture with a reason</strong>: the classical electron's infinite self-energy and runaway behaviour are symptoms of a point particle with a fixed mass. With the mass free and chaotic, the effective mass near the critical parameter grows large and damps the acceleration, so the particle behaves as if it had a size.</p>
+<p><strong>What it would add.</strong> The corpus's classical-electron articles either accept the point limit or introduce a form factor. This proposes that neither is needed: bounded chaos in the mass does the regularisation. That is a testable structural claim — it predicts a correlation between the spread of the mass distribution and the effective radius — and it is the kind of claim the corpus's non-linear articles could examine.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> No radius is computed; the effective size is a hope attached to a numerical observation, and the paper itself lists a fuller investigation as future work.</p>
+<h3 id="3-the-fifth-potential-is-the-masss-gauge-freedom">3. The fifth potential is the mass's gauge freedom</h3>
+<p><strong>The idea.</strong> A <strong>structure</strong>: the fifth electromagnetic-type potential exists because the mass can vary locally, and gauge invariance of the varying mass requires a compensating field. The variable mass and the fifth potential are one fact.</p>
+<p><strong>What it would add.</strong> The corpus has the fifth field as a Stueckelberg compensator for a vector mass. Here it is the compensator for the particle's mass. Stating both uses side by side would let the corpus's Stueckelberg articles say that the same fifth direction serves whichever mass is dynamical, which is a unifying observation about the mechanism.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The correspondence is stated in the introduction and used throughout, but never proved as an equivalence of the two constructions.</p>
+<p>The rank: the attractor reading first, because it is a mechanism for mass definiteness; the regularisation conjecture second, because it is the payoff; the fifth-field identification last, because it repeats a point made in the companion papers.</p>
+<p>The remaining items in one line each: the autonomous equation for the mass deviation, which is the object that is actually integrated; the insensitivity to initial conditions, which is what makes the attractor credible; and the embedding of the orbit initial conditions into the mass equation through the third derivative, which is the consistency check tying the two problems together.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

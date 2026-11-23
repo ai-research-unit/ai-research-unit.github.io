@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodama time: Geometrically preferred foliations of spherically symmetric spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Kodama time - Geometrically preferred foliations of spherically symmetric…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="kodama-time-geometrically-preferred-foliations-of-spherically-symmetric-spacetimes"><strong>Kodama time: Geometrically preferred foliations of spherically symmetric spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1004.1456v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 13 July 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Kodama time - Geometrically preferred foliations of spherically symmetric spacetimes - 1004.1456-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Kodama time - Geometrically preferred foliations of spherically symmetric spacetimes - 1004.1456.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Kodama time - Geometrically preferred foliations of spherically symmetric spacetimes - 1004.1456.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Kodama vector is defined in any spherically symmetric spacetime and is timelike outside the evolving horizon, so it picks out preferred observers. It does not by itself give a preferred time. The authors use the warped product structure to study the vector and its energy flux without coordinates, and build a family of conservation laws. A Clebsch decomposition then yields a preferred time coordinate, Kodama time. With it they define a surface gravity that holds throughout the evolving spacetime and passes consistency tests.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"In a general time-dependent (3+1)-dimensional spherically symmetric spacetime, the so-called Kodama vector is a naturally defined geometric quantity that is timelike outside the evolving horizon and so defines a preferred class of fiducial observers."</p>
+<h3 id="the-gap">The gap</h3>
+<p>"However the Kodama vector does not by itself define any preferred notion of time."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"we demonstrate that a preferred time coordinate — which we shall call Kodama time — ... We thus construct a geometrically preferred coordinate system for any time-dependent spherically symmetric spacetime, and explore its properties."</p>
+<h3 id="the-conservation-laws">The conservation laws</h3>
+<p>"Using this formalism we construct a general class of conservation laws, generalizing Kodama's energy flux."</p>
+<h3 id="the-surface-gravity-claim">The surface gravity claim</h3>
+<p>"we demonstrate that it is possible to define and calculate a generalized notion of surface gravity that is valid throughout the entire evolving spacetime."</p>
+<h3 id="the-tests">The tests</h3>
+<p>"by building and suitably normalizing set of radial null geodesics, we can show that this generalized surface gravity passes several consistency tests and has a physically appropriate static limit."</p>
+<h3 id="the-static-limit">The static limit</h3>
+<p>$$\kappa_{\text{static}}\big|_H=e^{-\Phi(r_H)}\frac{1-2m'(r_H)}{2r_H} \qquad (paper\ 86)$$</p>
+<h3 id="the-stated-ambiguity">The stated ambiguity</h3>
+<p>"Although the definition of surface gravity remains somewhat ambiguous, by using the Kodama time as an integral part of the construction we have identified some very good geometrically preferred candidates that are compatible with known results in the static limit."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-preferred-time-from-geometry">1. A preferred time from geometry</h3>
+<p><strong>The idea.</strong> Spherical symmetry plus the Kodama vector plus a Clebsch decomposition gives a unique foliation by time.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> says the framework has points but no causal structure. A preferred time built from the metric alone is the closest thing to a global structure, and the target should record whether such a construction is available to it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the framework lacks.</p>
+<p><strong>What stands in the way.</strong> The construction uses the warped product, which the algebra does not supply. Ranked first, because it is the nearest candidate for the missing global structure.</p>
+<h3 id="2-surface-gravity-is-ambiguous">2. Surface gravity is ambiguous</h3>
+<p><strong>The idea.</strong> Several candidates agree in the static case and differ once the horizon moves.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> writes a temperature from a surface gravity. This paper shows that outside the static case the input to that formula is not unique, which limits the target's derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of temperature.</p>
+<p><strong>What stands in the way.</strong> The target's case is static, so the ambiguity does not bite directly. Ranked second.</p>
+<h3 id="3-energy-flux-without-a-killing-vector">3. Energy flux without a Killing vector</h3>
+<p><strong>The idea.</strong> The Kodama vector gives a conserved flux even when the spacetime has no timelike Killing vector.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation from an algebraic identity. This paper gives a case where conservation survives the loss of the isometry that would normally produce it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, in the discussion of the identity.</p>
+<p><strong>What stands in the way.</strong> The Kodama flux is quasi-local and specific to spherical symmetry. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

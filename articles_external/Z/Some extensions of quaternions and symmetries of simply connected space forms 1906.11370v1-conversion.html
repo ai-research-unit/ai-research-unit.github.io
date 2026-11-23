@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some Extensions of Quaternions and Symmetries of Simply Connected Space Forms — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Some extensions of quaternions and symmetries of simply connected space forms 1906.11370v1.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="some-extensions-of-quaternions-and-symmetries-of-simply-connected-space-forms"><strong>Some Extensions of Quaternions and Symmetries of Simply Connected Space Forms</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1906.11370v1 [math.RA]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gerardo Arizmendi, Marco Antonio Pérez-de la Rosa (Universidad de las Américas Puebla)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 June 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Some extensions of quaternions and symmetries of simply connected space forms 1906.11370v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Some extensions of quaternions and symmetries of simply connected space forms 1906.11370v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Some extensions of quaternions and symmetries of simply connected space forms 1906.11370v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Unifies in one framework the classical facts that Euclidean rotations in dimension three, Lorentz transformations in dimension four and screw motions in three dimensions are the unit-norm elements of the real quaternions, the biquaternions and the dual quaternions, and extends the results to the split biquaternions. A decomposition of unit-norm elements in all cases follows, and as a by-product a new decomposition of the rotations in dimension four.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-classical-facts">The classical facts</h3>
+<p>It is known "that the groups of Euclidean rotations in dimension 3 (isometries of $S^2$), general Lorentz transformations in dimension 4 (Hyperbolic isometries in dimension 3), and screw motions in dimension 3 can be represented by the groups of unit-norm elements in the algebras of real quaternions, biquaternions (complex quaternions) and dual quaternions, respectively."</p>
+<h3 id="the-contribution">The contribution</h3>
+<p>"In this work, we present a unified framework that allows a wider scope on the subject and includes all the classical results related to the action in dimension 3 and 4 of unit–norm elements of the algebras described above and the algebra of split biquaternions as particular cases. We establish a decomposition of unit–norm elements in all cases and obtain as a byproduct a new decomposition of the group rotations in dimension 4."</p>
+<h3 id="the-method">The method</h3>
+<p>Each algebra is treated as a real algebra with a norm, and the group is the set of elements of norm one. The three classical cases become specialisations of one statement, and the split case is added to the list. The dimension-four decomposition is the new item.</p>
+<p>"We recover the geometry of simply connected space forms and their group of symmetries."</p>
+<p>"The Euler–Rodrigues parametrization of rotations is usually used to work out rotation products, nevertheless, if one wants to take a wider view of the subject we shall use the algebra of quaternions and its extensions suchs as biquaternions, dual quaternions and split biquaternions."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-norm-one-elements-of-a-quaternion-algebra-give-the-isometry-group">1. Norm-one elements of a quaternion algebra give the isometry group</h3>
+<p><strong>The idea.</strong> The group of symmetries of a space form is the unit sphere of a normed real algebra: quaternions for the sphere, biquaternions for hyperbolic space, dual quaternions for screw motions, split biquaternions for the remaining case. One statement covers four geometries. This is a <strong>formula</strong> of considerable economy.</p>
+<p><strong>What it would add.</strong> Exactly the consolidation the corpus reaches case by case: its Lorentz article proves the biquaternion case, its norm-cone article treats the degenerate case, and no article states that these are one theorem.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.md</code>, at the general statement.</p>
+<p><strong>What stands in the way.</strong> The corpus's norm is not positive definite, so "norm one" is a quadric rather than a sphere; the unified statement would have to be phrased for a quadratic form of any signature, which is a re-derivation rather than an import.</p>
+<h3 id="2-a-new-decomposition-of-four-dimensional-rotations">2. A new decomposition of four-dimensional rotations</h3>
+<p><strong>The idea.</strong> The decomposition of unit-norm elements carries over to the rotation group in dimension four and gives a factorisation not previously written. This is a <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A structural statement about $\mathrm{SO}(4)$, which the corpus meets through the split of the algebra into self-dual and anti-self-dual parts.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>, on the four-dimensional rotation subgroup.</p>
+<p><strong>What stands in the way.</strong> The decomposition is algebraic and the paper does not connect it to the self-dual split, so the relation between the two would have to be established.</p>
+<p>This is a twenty-two page preprint; the unified framework, the four cases and the two decompositions are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special-case closed form of the Baker–Campbell–Hausdorff formula — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Special-case closed form of the Baker-Campbell-Hausdorff formula -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="special-case-closed-form-of-the-bakercampbellhausdorff-formula"><strong>Special-case closed form of the Baker–Campbell–Hausdorff formula</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1501.02506v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alexander Van-Brunt, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, January 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Special-case closed form of the Baker-Campbell-Hausdorff formula - 1501.02506-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Special-case closed form of the Baker-Campbell-Hausdorff formula - 1501.02506.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-exponential-map-from-algebra-to-group.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Special-case closed form of the Baker-Campbell-Hausdorff formula - 1501.02506.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Baker–Campbell–Hausdorff formula is a series in general. In a special case where one commutator is a multiple of the identity, it closes into a single function $f(u,v)$. The authors derive that closed form, verify it against known results, and show it covers the Heisenberg and oscillator commutators. They also extend it to any central element that commutes with both arguments.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-formula">The formula</h3>
+<p>$$(u-v)e^{u+v}-(ue^{u}-ve^{v})\ \longrightarrow\ f(u,v)=\frac{(u-v)e^{u+v}-(ue^{u}-ve^{v})}{uv(e^{u}-e^{v})}\qquad (paper\ 1)$$</p>
+<h3 id="the-comparison">The comparison</h3>
+<p>"and relate this to previously known results"</p>
+<h3 id="the-coverage">The coverage</h3>
+<p>"this result includes, but is considerably more general than, results obtained from either the Heisenberg commutator $[P,Q]=-i\hbar I$ or the creation-destruction commutator $[a,a^\dagger]=I$"</p>
+<h3 id="the-generalisation">The generalisation</h3>
+<p>"we can replace the $cI$ terms ... with $cE$, where $E$ is any object that commutes with both $X$ and $Y$"</p>
+<p>$$\exp\begin{pmatrix} -u/2 &amp; e^{-u/2}\\ 0 &amp; u/2\end{pmatrix}Y=\begin{pmatrix} e^{-u/2} &amp; u/2\\ 0 &amp; e^{u/2}\end{pmatrix}\qquad (paper\ 40)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-when-the-series-truncates">1. When the series truncates</h3>
+<p><strong>The idea.</strong> A single central commutator collapses the infinite series to a function.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-exponential-map-from-algebra-to-group.md</code> treats the map in general. Knowing exactly when it becomes elementary is a useful boundary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-exponential-map-from-algebra-to-group.md</code>, in the discussion of closed forms.</p>
+<p><strong>What stands in the way.</strong> The condition is narrow. Ranked first, because it is the sharpest statement of when composition is easy.</p>
+<h3 id="2-central-elements">2. Central elements</h3>
+<p><strong>The idea.</strong> Anything commuting with both generators plays the role of the identity.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/graded-lie-algebras-and-lie-superalgebras.md</code> treats central extensions. This shows what a central element does to composition.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/graded-lie-algebras-and-lie-superalgebras.md</code>, in the discussion of centres.</p>
+<p><strong>What stands in the way.</strong> The setting is the free algebra. Ranked second.</p>
+<h3 id="3-two-by-two-matrices">3. Two-by-two matrices</h3>
+<p><strong>The idea.</strong> A two-by-two matrix representation makes the logarithm computable.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/comparison-of-the-exponential-and-lie-group-structure.md</code> would gain an explicit finite-dimensional check of the exponential.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/comparison-of-the-exponential-and-lie-group-structure.md</code>, in the discussion of examples.</p>
+<p><strong>What stands in the way.</strong> The representation is special. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

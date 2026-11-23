@@ -177,7 +177,7 @@ $\Rho$ (two real parameters, since it is complex) and the direction of $\hat X$ 
 <p>$$
 \tilde A=-e_t+\tilde N,\qquad \tilde N\neq0,\qquad \tilde N^{2}=0,
 $$</p>
-<p>the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\langle\tilde A\rangle_{\natural}=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.</p>
+<p>the image of $\begin{pmatrix}-1&amp;1\\0&amp;-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\langle\tilde A\rangle_{\natural}=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.</p>
 <ul>
 <li>If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.</li>
 <li>So $\tilde X$ has equal eigenvalues; being scalar-free, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.</li>
@@ -247,7 +247,7 @@ $$</p>
 <h3 id="the-matrix-logarithm">The Matrix Logarithm</h3>
 <p>A logarithm of $\tilde Q$ is any $\tilde W$ with $\exp(\tilde W)=\tilde Q$. Two logarithms differ by an element of the period lattice: if $\exp(\tilde W_1)=\exp(\tilde W_2)$ then $\tilde W_1-\tilde W_2$ commutes with $\tilde W_1$ and has eigenvalues in $2\pi i\mathbb{Z}$. The set of logarithms is therefore discrete and infinite, and a branch is a choice of one in each connected component.</p>
 <h3 id="the-principal-branch">The Principal Branch</h3>
-<p>The principal branch is the one whose eigenvalues' imaginary parts lie in $(-\pi,\pi]$, computed by the Schur–Padé algorithm. It is holomorphic on the complement of the closed negative real axis in the eigenvalue plane, and it is the branch a numerical library returns. On the group of unit norm it is the branch that maps $G$ into the strip $\lvert\operatorname{Im}\Rho\rvert<\pi$, which is why a numerical logarithm of a boost of rapidity above $2\pi$ is not automatically the one a reader expects.</p>
+<p>The principal branch is the one whose eigenvalues' imaginary parts lie in $(-\pi,\pi]$, computed by the Schur–Padé algorithm. It is holomorphic on the complement of the closed negative real axis in the eigenvalue plane, and it is the branch a numerical library returns. On the group of unit norm it is the branch that maps $G$ into the strip $\lvert\operatorname{Im}\Rho\rvert&lt;\pi$, which is why a numerical logarithm of a boost of rapidity above $2\pi$ is not automatically the one a reader expects.</p>
 <h3 id="the-trace-and-the-branch">The Trace and the Branch</h3>
 <p>The trace of the logarithm is fixed only modulo $2\pi i$:</p>
 <p>$$

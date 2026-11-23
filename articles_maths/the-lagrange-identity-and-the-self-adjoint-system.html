@@ -83,7 +83,7 @@ $$</p>
 <p>$$
 \boxed{\;\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v)\;} ,
 $$</p>
-<p>the <strong>Lagrange identity</strong>; for the second-order operator $Lu=-(pu')'+qu$ with real $p>0$ and real $q$,</p>
+<p>the <strong>Lagrange identity</strong>; for the second-order operator $Lu=-(pu')'+qu$ with real $p&gt;0$ and real $q$,</p>
 <p>$$
 P(u,v) = p\,(u\bar v'-u'\bar v) .
 $$</p>
@@ -120,9 +120,9 @@ $$</p>
 <p><em>Proof.</em> The derivative of the sesquilinear form along the two solutions is $\omega(y',z)+\omega(y,z')$, the derivatives being $A y$ and $Az$; substituting the definition of the symplectic form gives zero. The boundary term of the Lagrange identity is by construction the cotangent expression in the boundary values, which for the first-order system is $\omega(y,z)$ evaluated at the endpoints.</p>
 <p><strong>Theorem (the adjoint system and the pairing).</strong> For the system $y'=Ay$ and its adjoint $z'=-A^*z$ the fibre pairing $\langle y,z\rangle$ is constant on pairs of solutions, $\frac{d}{dx}\langle y,z\rangle=0$, and the boundary form of the pair of problems is $[\langle y,z\rangle]_a^b$; the system is self-adjoint, that is, coincides with its adjoint system, exactly when $A^{*}=-A$, in which case $\omega=\langle\cdot,\cdot\rangle$ is a symplectic form in the sense above.</p>
 <p><em>Proof.</em> $\frac{d}{dx}\langle y,z\rangle=\langle y',z\rangle+\langle y,z'\rangle=\langle Ay,z\rangle+\langle y,-A^*z\rangle=\langle Ay,z\rangle-\langle Ay,z\rangle=0$. The self-adjoint case is $-A^{*}=A$; then the two derivatives of the pairing vanish and $\langle Ay,z\rangle+\langle y,Az\rangle=0$ by the anti-Hermitian property of $A$, so the pairing is a symplectic form.</p>
-<p><strong>Theorem (the Sturm–Liouville system).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with</p>
+<p><strong>Theorem (the Sturm–Liouville system).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p&gt;0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with</p>
 <p>$$
-\boxed{\;A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix}\;} ,
+\boxed{\;A = \begin{pmatrix}0 &amp; 1/p\\ q-\lambda w &amp; 0\end{pmatrix}\;} ,
 $$</p>
 <p>and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is symplectic for $A$ when $\lambda$ is real; the system is self-adjoint, $\omega$ is invariant on pairs of solutions, and the boundary term is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. The two boundary conditions at $a$ and $b$ make the problem self-adjoint exactly when this form vanishes against the admissible pairs.</p>
 <p><em>Proof.</em> The first equation is $u'=y_2/p$ and the second is $(pu')'=(q-\lambda w)u$, which is the arrangement displayed. For real $\lambda$ and real coefficients, $\omega(Ay,z)+\omega(y,Az)=0$ by direct computation: $\omega(Ay,z)=\frac1p y_2\bar z_2-(q-\lambda w)y_1\bar z_1$ and $\omega(y,Az)=(q-\lambda w)y_1\bar z_1-\frac1p y_2\bar z_2$, which sum to zero. Invariance and the boundary form then follow from the two preceding theorems, and the self-adjointness of the scalar problem is the vanishing of the boundary term, which is <em>Self-Adjoint Sturm–Liouville Operators</em>, below.</p>

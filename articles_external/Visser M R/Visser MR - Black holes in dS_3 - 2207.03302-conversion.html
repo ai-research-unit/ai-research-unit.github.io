@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black holes in dS$_3$ — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black holes in dS_3 - 2207.03302.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="black-holes-in-dsmath13"><strong>Black holes in dS$_3$</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2207.03302v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Roberto Emparan, Juan F. Pedraza, Andrew Svesko, Marija Tomašević, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 21 November 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>57 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Black holes in dS_3 - 2207.03302-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black holes in dS_3 - 2207.03302.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black holes in dS_3 - 2207.03302.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that quantum backreaction can create a black hole in three-dimensional de Sitter space, where no classical black hole exists: the Schwarzschild–de Sitter solution is a conical defect with a single cosmological horizon. The demonstration runs through braneworld holography — a three-dimensional de Sitter brane in $AdS_4$ whose induced gravity admits a quantum Schwarzschild–de Sitter solution with backreaction from the holographic CFT$_3$ — and is checked against a perturbative computation of the renormalised stress tensor of conformally coupled scalars. The solution can reach the Nariai limit, its thermodynamics has the classical form with generalized entropies, and entropy deficits for nucleation are computed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"In three-dimensional de Sitter space classical black holes do not exist, and the Schwarzschild-de Sitter solution instead describes a conical defect with a single cosmological horizon. We argue that the quantum backreaction ... can generate a black hole horizon, leading to a three-dimensional quantum de Sitter black hole. Its size can be as large as the cosmological horizon in a Nariai-type limit."</p>
+<h3 id="why-the-holographic-route-is-the-reliable-one">Why the holographic route is the reliable one</h3>
+<p>The perturbative computation of the renormalised stress tensor "points to a gravitationally attractive effect that is suggestive of black hole formation. However, this calculation is only reliable to linear order in the Planck length, while our holographic computation holds to all orders in the strength of backreaction (at planar order for the CFT), and therefore the presence of the horizon is well established." The authors are explicit that the two routes carry different weights.</p>
+<h3 id="the-thermodynamics">The thermodynamics</h3>
+<p>The solution "largely behaves like a classical, four-dimensional SdS black hole; however, importantly, all classical entropies are replaced by their generalized counterparts." The interpretation offered: "we found it natural to interpret the quantum de Sitter black hole as a non-equilibrium constrained state of a thermodynamic system comprised of a bath (the quantum de Sitter background) and a subsystem (the quantum black hole)". Equivalently, "the qSdS black hole behaves as a constrained instanton where the probability of nucleating a black hole inside a quantum de Sitter background is controlled by the generalized entropy deficit."</p>
+<h3 id="the-nucleation">The nucleation</h3>
+<p>"Entropy deficits due to nucleating the three-dimensional black hole" are computed, and the authors "revisit arguments for a possible matrix model description of dS spacetimes" and comment on the holographic dual for de Sitter from the braneworld perspective.</p>
+<h3 id="the-status-of-the-result">The status of the result</h3>
+<p>The horizon exists at planar order in the CFT and to all orders in backreaction, but three dimensions and a brane construction are essential to the proof. The four-dimensional case is not obtained by the same argument.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-horizon-made-by-backreaction-alone">1. A horizon made by backreaction alone</h3>
+<p><strong>The idea.</strong> A spacetime with no classical black hole acquires one when quantum matter backreacts, and the horizon is a quantum object with no classical limit inside the same dimension. This is a <strong>mechanism</strong>, and it is the strongest statement in this collection that geometry can be generated by quantum stress.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> begins from a classical horizon and imports the quantum corrections. The reverse order — quantum stress producing the horizon — is what the corpus's <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code> calls missing when it says the framework has no dynamics. A worked example that backreaction can do it is the existence proof the corpus lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction is three-dimensional, holographic and braneworld; the mechanism cannot be transplanted, only cited. The cost is that the corpus would be citing an existence proof in a dimension and a setting it does not use.</p>
+<h3 id="2-non-equilibrium-constrained-state">2. Non-equilibrium constrained state</h3>
+<p><strong>The idea.</strong> The quantum de Sitter black hole is not an equilibrium state of the full system but a constrained state of a system with a boundary and a bath. This is a <strong>reading</strong>, and it says that some horizons are not equilibria.</p>
+<p><strong>What it would add.</strong> Every horizon statement in the corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> presumes equilibrium. A case where the correct description is constrained non-equilibrium would qualify the article's zeroth law.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the zeroth-law paragraph.</p>
+<p><strong>What stands in the way.</strong> The non-equilibrium reading depends on the braneworld split between boundary and bath, which the corpus does not have. Ranked third.</p>
+<h3 id="3-all-entropies-replaced-again">3. All entropies replaced, again</h3>
+<p><strong>The idea.</strong> As in the two-dimensional cases, the semiclassical solution's thermodynamics is the classical thermodynamics with every entropy replaced by its generalized counterpart. This is a <strong>formula-level</strong> pattern now seen in two, three and four dimensions.</p>
+<p><strong>What it would add.</strong> Three independent settings giving the same replacement is evidence that it is structural rather than accidental, and <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> cites only the two-dimensional case. A three-setting pattern is a stronger import.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, gaps section.</p>
+<p><strong>What stands in the way.</strong> All three settings use holography or conformal matter; the pattern's generality is anyway conjectural. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

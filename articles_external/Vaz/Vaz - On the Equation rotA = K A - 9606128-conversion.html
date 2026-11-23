@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Equation $\nabla\times\vec a=\kappa\vec a$ — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - On the Equation rotA = K A - 9606128.pdf — a PDF in a subfolder of /home/hp/Documents/Material/…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-equation-math9"><strong>On the Equation $\nabla\times\vec a=\kappa\vec a$</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (letter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9606128v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Vaz, Jr., W. A. Rodrigues, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 June 1996</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - On the Equation rotA = K A - 9606128-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - On the Equation rotA = K A - 9606128.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - On the Equation rotA = K A - 9606128.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Defends a single equation, $\nabla\times\vec a=\kappa\vec a$, against a published criticism that it violates gauge and parity invariance. The defence is not a patch. Vaz and Rodrigues show that the criticism arises from writing the curl in Gibbs–Heaviside vector algebra, where a vector product is set equal to a pseudo-vector, and that in the calculus of differential forms — electric field a 1-form, magnetic field a 2-form — both objections vanish. A short letter on how a notation can manufacture a paradox.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-equation-and-why-it-is-used">The equation and why it is used</h3>
+<p>"We show that when correctly formulated the equation ∇ × a = κa does not exhibit some inconsistencies atributed to it, so that its solutions can represent physical fields. PACS number: 41.10.-j Let us consider"</p>
+<p>The use: "fy the same equation: ∇ × ~ E = κ~ E, ∇ × ~ B = κ~ B. (5) The vector equation ∇× ~ B = κ~ B is very important in plasma physics and astrophysics, and can also be used as a model for force-free electromagnetic waves [1]. The identification of solutions of the eq.". The ansatz is $\vec E=\vec a\sin\kappa t$ and $\vec B=\vec a\cos\kappa t$, which satisfies all of Maxwell's equations once $\nabla\times\vec a=\kappa\vec a$ does, and gives a vanishing Poynting vector.</p>
+<h3 id="the-gauge-objection-and-its-error">The gauge objection and its error</h3>
+<p>The critic's chain: from $\nabla\times\vec B=\kappa\vec B$ with $\vec B=\nabla\times\vec A$ one obtains $\vec B=\kappa\vec A+\nabla\varphi$, and a gauge shift then moves $\vec B$ by $\kappa\nabla\lambda$, so invariance demands $\kappa=0$.</p>
+<p>The reply: "The mistake in this argument is easily identified since for ~ B′ = ∇× ~ A′ we have ~ B = κ~ A′ +∇ψ, where the arbitrary function ψ must not be identified a priori with φ. In this case ~ B′ = κ(~ A + ∇λ) + ∇ψ = κ~ A + κ∇(λ + ψ) = κ~ A + κ∇φ = ~ B. The argument used in [2] leading to the lack" With the two functions kept distinct, the extra term cancels.</p>
+<h3 id="the-parity-objection-and-its-error">The parity objection and its error</h3>
+<p>"The problem in the above argument is essentially due to the definition of the vector product × in the usual Gibbs-Heaviside vector algebra. The usual" That definition "is a nonsense since it equals a pseudo-vector (L.H.S.) and a vector (R.H.S.)."</p>
+<p>The repair is to give the two fields the right ranks: "The fact that the magnetic field must be represented by a 2-form follows from Faraday law of induction". Then $\vec B=\kappa\vec A$ reads $\delta B=\kappa\star B$, and under a reflection both $\delta$ and $\star$ change sign, so "no problem appears within the parity of $B$".</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"In summary, when correctly formulated in terms of differential forms, that is, the electric field being represented by a 1-form and the magnetic field being represented by a 2-form, the vector equation ∇ ×~ a = κ~ a does not show any problem related to violation of parity invariance. 5 Moreover, since the calculus"</p>
+<p>And: "when correctly formulated, the vector equation ∇ × ~ a = κ~ a does not deserve any of Salingaros’ criticisms [2]. Before we end we recall". One limit is conceded: the separated equations "emerged from a separation of variables which is expected to hold only in the rest frame."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-cross-product-is-a-type-error">1. The cross product is a type error</h3>
+<p><strong>The idea.</strong> A <strong>diagnosis</strong>: the Gibbs–Heaviside cross product equates a member of one space to a member of another, a vector to a pseudo-vector, so any argument that leans on it inherits the defect. Writing a 1-form against a 2-form removes the defect without changing the physics.</p>
+<p><strong>What it would add.</strong> The corpus writes Maxwell in the quaternion and biquaternion algebras, where one associative product does all the work and the defect cannot arise. That is precisely why the defect is worth naming: it says what the corpus's choice of algebra buys, and it turns a preference into a reason. A paragraph in the Maxwell article could point at the family of textbook paradoxes that exist only in the vector notation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus never uses the cross product, so the warning has no target inside the corpus; the paragraph would be about other people's notation.</p>
+<h3 id="2-gauge-invariance-fails-only-when-two-functions-share-a-symbol">2. Gauge invariance fails only when two functions share a symbol</h3>
+<p><strong>The idea.</strong> A <strong>correction</strong>: the claim that $\vec B=\kappa\vec A$ breaks gauge invariance rests on identifying the integration function of one gauge with that of another. They are different functions, and once distinguished the invariance holds for every $\kappa$.</p>
+<p><strong>What it would add.</strong> The corpus's gauge articles treat gauge freedom algebraically, as the freedom to add a gradient, and their derivations pass the same symbol through several gauges. This is a worked case of a competent author losing an invariance through bookkeeping alone — not through algebra — which is a failure mode the corpus's own multi-gauge manipulations are exposed to.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The example is Abelian and constant-$\kappa$, so it illustrates bookkeeping rather than non-Abelian structure; the landing is by subject, not by method.</p>
+<h3 id="3-force-free-fields-as-a-stationary-ansatz">3. Force-free fields as a stationary ansatz</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: fields with $\vec E=\vec a\sin\kappa t$ and $\vec B=\vec a\cos\kappa t$ satisfy the vacuum Maxwell equations with vanishing Poynting flux whenever $\nabla\times\vec a=\kappa\vec a$, so they are stationary, non-propagating configurations with non-zero invariants.</p>
+<p><strong>What it would add.</strong> The corpus's Maxwell articles discuss travelling waves, potentials and the X-wave; they do not exhibit a stationary non-propagating solution. A force-free configuration is the simplest one, it has a home in plasma physics, and it is a good test case, because its invariants behave in a way no null plane wave can imitate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction is linear and elementary, while the corpus's nonlinear Maxwell article is about nonlinear constitutive laws; the fit is by subject rather than by technique.</p>
+<p>The rank: the type-error diagnosis first, because it justifies the corpus's algebra; the gauge bookkeeping second, because it is a live failure mode; the force-free ansatz last, because it is an example rather than a result.</p>
+<p>The remaining items in one line each: the use of the Hodge star to turn the wedge of two 1-forms into a 1-form, which is the technical step that makes the parity repair work; the remark that the separated equations hold only in the rest frame, which bounds the construction's covariance; and the closing pair $dF=0$, $\delta F=-J$, which is the compact form the corpus also uses.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

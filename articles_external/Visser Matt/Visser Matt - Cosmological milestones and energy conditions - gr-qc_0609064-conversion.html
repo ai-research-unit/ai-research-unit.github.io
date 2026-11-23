@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmological milestones and energy conditions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological milestones and energy conditions - gr-qc_0609064.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmological-milestones-and-energy-conditions"><strong>Cosmological milestones and energy conditions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0609064v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 September 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmological milestones and energy conditions - gr-qc_0609064-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological milestones and energy conditions - gr-qc_0609064.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological milestones and energy conditions - gr-qc_0609064.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This talk classifies the singularities and other special points, called milestones, that appear in cosmological models. The classification is kinematical: it uses a generalised power-series expansion of the scale factor rather than any field equation. With that definition the authors sort the milestones into singular and non-singular, and find that the non-singular ones are a short list. They then check whether the classical energy conditions hold near each milestone, so the catalogue can serve as a guide to which scenarios are physically plausible.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-situation">The situation</h3>
+<p>"Until recently, the physically rel[evant singularities in cosmology] had traditionally been thought to be limited [in kind. However, over the last few years, the zoo of [exotic singularities in the] literature has become considerably mo[re extensive, with] ... [sudden singularities, big rip events, and others] added to the mix, as well as renewed interest [in] bounces and turnarounds. In this talk, we pr[esent a classification of these] milestones, both at the kinematical a[nd at the dynamical level]."</p>
+<h3 id="the-kinematical-definition">The kinematical definition</h3>
+<p>"series, purely kinematical definition [allows us to classify] the behaviour of the scale factor $a(t)$ ... and its relation to curvature singulari[ties]".</p>
+<h3 id="the-dynamical-check">The dynamical check</h3>
+<p>"dynamical information is extracted by [assuming] the existence of any equation of state [and checking whether the] energy conditions are satisfied at th[e milestones]."</p>
+<h3 id="the-result">The result</h3>
+<p>"We have developed a generic classification of the various physically relevant 'cosmological milestones' occurring in the literature in terms of a generalized power series expansion [of] the scale factor $a(t)$."</p>
+<h3 id="the-short-list">The short list</h3>
+<p>"With the notion of generalized power series, we have defined (on a purely kinematical level) the idea of polynomial and derivative curvature singularities. It is therefore possible to classify all 'cosmological milestones' as to whether they are singular or not, with the c[lass] of non-singular milestones being strictly limited (to extremality events or asymptoticall[y] Milne bangs/crunches)."</p>
+<h3 id="the-generality-claim">The generality claim</h3>
+<p>The results are "extremely general, and modulo certain [assumptions the] results are to a high degree model-in[dependent]."</p>
+<h3 id="the-physical-reading">The physical reading</h3>
+<p>"On dynamical grounds, we have checked the validity or otherwise of the classical energy conditions in the vicinity of the cosmological milestones. Depending on one's attitude towards the energy conditions, one could use this catalogue as a guide towards deciding on potentially interesting scenarios to investigate."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-kinematical-catalogue-of-singularities">1. A kinematical catalogue of singularities</h3>
+<p><strong>The idea.</strong> Singularities can be classified by the local behaviour of the scale factor, without any field equations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> cannot produce an expansion history, so it cannot locate singularities dynamically. This paper shows the locations and types can be classified kinematically, which is exactly the level the framework works at. The article could therefore adopt the catalogue even without dynamics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of what can be computed.</p>
+<p><strong>What stands in the way.</strong> The classification still needs a scale factor as input, which the framework does not supply. Ranked first, because it is the most usable import for the article's actual situation.</p>
+<h3 id="2-non-singular-milestones-are-rare">2. Non-singular milestones are rare</h3>
+<p><strong>The idea.</strong> Once the definition is fixed, almost all the exotic events are singular; only extremality events and asymptotic Milne behaviour escape.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use this as a filter: a proposed cosmology with a bounce has to say which type of milestone it uses and why it is on the short list.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The filter presumes the energy conditions as a standard. Ranked second.</p>
+<h3 id="3-energy-conditions-near-milestones">3. Energy conditions near milestones</h3>
+<p><strong>The idea.</strong> Whether a milestone respects the energy conditions is a separate question from whether it is singular.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes the algebra cannot state inequalities. Here two classifications run in parallel, one algebraic in form and one inequality-based, and they do not coincide. That is a useful picture of what the framework loses by having only the first.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The parallel is suggestive rather than exact. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

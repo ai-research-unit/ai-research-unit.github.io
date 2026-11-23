@@ -80,7 +80,7 @@
 \mathfrak{Q}(e) = \mathfrak{Q}(f) = 0, \qquad B(e, f) = 1.
 $$</p>
 <p>The basis $e, f$ is a <strong>hyperbolic pair</strong>, and $H$ is also written $\langle 1, -1\rangle$ in the diagonal notation of <em>Quadratic Forms and Polarisation</em>, the two descriptions being isometric over a field of characteristic not $2$.</p>
-<p><strong>Proposition.</strong> The hyperbolic plane is non-degenerate, and its Gram matrix in the hyperbolic basis is $\begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}$, of determinant $-1$.</p>
+<p><strong>Proposition.</strong> The hyperbolic plane is non-degenerate, and its Gram matrix in the hyperbolic basis is $\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0\end{pmatrix}$, of determinant $-1$.</p>
 <p><strong>Proof.</strong> The Gram matrix has entries $B(e,e) = \mathfrak{Q}(e) = 0$, $B(e,f) = 1$, $B(f,e) = 1$ and $B(f,f) = \mathfrak{Q}(f) = 0$; its determinant is $-1 \neq 0$, so the form is non-degenerate.</p>
 <p><strong>Proposition.</strong> Over a field of characteristic not $2$ the hyperbolic plane is isometric to the diagonal form $\langle 1, -1\rangle$.</p>
 <p><strong>Proof.</strong> In $\langle 1, -1\rangle$ with $\mathfrak{Q}(x, y) = x^2 - y^2$ the vectors $e = (1, 1)$ and $f = (1/2, -1/2)$ satisfy</p>
@@ -192,10 +192,10 @@ $$</p>
 <p><strong>Theorem (chain equivalence, <em>Kettensatz</em>; standard).</strong> Let $F$ be a field of characteristic not $2$, and let $\langle a_1, \ldots, a_n\rangle$ and $\langle b_1, \ldots, b_n\rangle$ be isometric non-degenerate diagonal forms of the same dimension. Then there is a finite chain of diagonal forms, beginning at $\langle a_1, \ldots, a_n\rangle$ and ending at $\langle b_1, \ldots, b_n\rangle$, in which every step is one of two moves:</p>
 <ul>
 <li>for some $k$ and some $\beta \in F^\times$, replace the single entry $a_k$ by $\beta^2 a_k$;</li>
-<li>for some $k < n$ with $1 + a_k a_{k+1} \neq 0$, replace the pair $a_k, a_{k+1}$ by the pair $(1 + a_k a_{k+1})a_k$ and $(1 + a_k a_{k+1})a_{k+1}$.</li>
+<li>for some $k &lt; n$ with $1 + a_k a_{k+1} \neq 0$, replace the pair $a_k, a_{k+1}$ by the pair $(1 + a_k a_{k+1})a_k$ and $(1 + a_k a_{k+1})a_{k+1}$.</li>
 </ul>
 <p>Both moves are isometries written on the coefficients: the first is the scaling of one coordinate by $\beta$, and the second an isometry of the binary form $\langle a_k, a_{k+1}\rangle$, under which the discriminant $a_k a_{k+1}$ is multiplied by the square $(1 + a_k a_{k+1})^2$. The theorem states that these two moves connect every two presentations of one form, and this is what makes an invariant computable.</p>
-<p><strong>Remark.</strong> This is the mechanism behind the invariants of <em>The Witt Group and the Grothendieck–Witt Ring</em>. An invariant given by a formula in the coefficients, such as the Hasse invariant $\prod_{i<j}(a_i, a_j)$ attached to a diagonal form, depends on the presentation until it is known to be unchanged by the two moves; the chain equivalence reduces the proof that it is well defined to that finite check, in place of an argument about an arbitrary isometry.</p>
+<p><strong>Remark.</strong> This is the mechanism behind the invariants of <em>The Witt Group and the Grothendieck–Witt Ring</em>. An invariant given by a formula in the coefficients, such as the Hasse invariant $\prod_{i&lt;j}(a_i, a_j)$ attached to a diagonal form, depends on the presentation until it is known to be unchanged by the two moves; the chain equivalence reduces the proof that it is well defined to that finite check, in place of an argument about an arbitrary isometry.</p>
 <h2 id="the-failure-in-characteristic-math480">The Failure in Characteristic $2$</h2>
 <p>Everything above uses $2 \neq 0$: the polar form is defined with a factor $\tfrac{1}{2}$, a non-isotropic vector has $\mathfrak{Q}(v) \neq 0$ and its reflection is defined with a factor $2/\mathfrak{Q}(v)$, and the hyperbolic basis is normalised using $\tfrac{1}{2}$.</p>
 <h3 id="quadratic-forms-are-not-determined-by-their-associated-forms">Quadratic Forms Are Not Determined by Their Associated Forms</h3>

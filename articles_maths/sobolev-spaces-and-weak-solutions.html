@@ -85,7 +85,7 @@ $$</p>
 <p><em>Proof.</em> If $w_1$ and $w_2$ both satisfy the definition, then $\int_\Omega(w_1-w_2)\varphi = 0$ for every test function $\varphi$; since the test functions are dense in $L^1_{\mathrm{loc}}$ in the appropriate sense, $w_1-w_2=0$ almost everywhere.</p>
 <p><strong>Example (a weak derivative that is not classical).</strong> On $\Omega = (-1,1)$ let $u(x)=|x|$. Then $u$ is not differentiable at $0$, but</p>
 <p>$$
-w(x) = \operatorname{sgn}(x) = \begin{cases}-1, & x<0,\\ +1, & x>0\end{cases}
+w(x) = \operatorname{sgn}(x) = \begin{cases}-1, &amp; x&lt;0,\\ +1, &amp; x&gt;0\end{cases}
 $$</p>
 <p>is the weak derivative: for every $\varphi \in C_c^\infty(-1,1)$,</p>
 <p>$$
@@ -98,11 +98,11 @@ W^{k,n}(\Omega) = \bigl\{u \in L^{n}(\Omega) : \partial^\gamma u \in L^{n}(\Omeg
 $$</p>
 <p>with the norm</p>
 <p>$$
-\|u\|_{W^{k,n}} = \Bigl(\sum_{|\gamma|\le k}\|\partial^\gamma u\|_{L^{n}}^n\Bigr)^{1/p} \ (p<\infty), \qquad
+\|u\|_{W^{k,n}} = \Bigl(\sum_{|\gamma|\le k}\|\partial^\gamma u\|_{L^{n}}^n\Bigr)^{1/p} \ (p&lt;\infty), \qquad
 \|u\|_{W^{k,\infty}} = \max_{|\gamma|\le k}\|\partial^\gamma u\|_{L^\infty} .
 $$</p>
 <p>The notation $H^k(\Omega) = W^{k,2}(\Omega)$ is used when $p=2$, and $W^{k,n}_0(\Omega)$ is the closure of $C_c^\infty(\Omega)$ in $W^{k,n}(\Omega)$.</p>
-<p><strong>Theorem (completeness).</strong> $W^{k,n}(\Omega)$ is a Banach space, separable for $p<\infty$ and reflexive for $1<p<\infty$; $H^k(\Omega)$ is a separable Hilbert space with the inner product</p>
+<p><strong>Theorem (completeness).</strong> $W^{k,n}(\Omega)$ is a Banach space, separable for $p&lt;\infty$ and reflexive for $1&lt;p&lt;\infty$; $H^k(\Omega)$ is a separable Hilbert space with the inner product</p>
 <p>$$
 \langle u,v\rangle_{H^k} = \sum_{|\gamma|\le k}\int_\Omega \partial^\gamma u\,\partial^\gamma v\,dx .
 $$</p>
@@ -114,36 +114,36 @@ $$</p>
 <p><strong>Remark (the role of $\Omega$).</strong> The spaces and the interior results below require no regularity of $\partial\Omega$, because they are local. Every statement about traces, about the boundary values of a Sobolev function and about the density of $C^\infty(\overline\Omega)$ needs $\partial\Omega$ to be at least Lipschitz, and this is the hypothesis under which the theory of boundary-value problems is stated.</p>
 <h2 id="embedding-compactness-and-traces">Embedding, Compactness and Traces</h2>
 <h3 id="the-sobolev-inequalities">The Sobolev Inequalities</h3>
-<p><strong>Theorem (Gagliardo–Nirenberg–Sobolev).</strong> Let $1\le p<n$ and $k\ge1$ with $kp<n$. Then there is a constant $C$ with</p>
+<p><strong>Theorem (Gagliardo–Nirenberg–Sobolev).</strong> Let $1\le p&lt;n$ and $k\ge1$ with $kp&lt;n$. Then there is a constant $C$ with</p>
 <p>$$
 \boxed{\;\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n}\;},
 $$</p>
 <p>for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,n}(\mathbb{R}^n) \hookrightarrow L^{n^*}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the <strong>Sobolev conjugate</strong> of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.</p>
-<p><em>Proof.</em> Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k>1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$.</p>
-<p><strong>Theorem (Morrey, the case $kp>n$).</strong> If $kp>n$, then there is a constant $C$ with</p>
+<p><em>Proof.</em> Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k&gt;1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$.</p>
+<p><strong>Theorem (Morrey, the case $kp&gt;n$).</strong> If $kp&gt;n$, then there is a constant $C$ with</p>
 <p>$$
 \|u\|_{C^{m,\gamma}(\mathbb{R}^n)} \le C\|u\|_{W^{k,n}(\mathbb{R}^n)}, \qquad m = k-\lfloor n/p\rfloor-1, \quad \gamma = \lfloor n/p\rfloor+1-\frac np ,
 $$</p>
-<p>whenever $kp>n$ and $n/p$ is not an integer; the embedding is continuous, so $W^{k,n}$ embeds into a Hölder space and in particular into the continuous functions. In the limiting case $kp=n$, $W^{k,n}$ embeds into $L^{m}$ for every finite $q$, but not into $L^\infty$.</p>
-<p><em>Proof.</em> Quoted as standard. The case $k=1$, $p>n$ is the Morrey inequality, proved by estimating $|u(x)-u(y)|$ by the integral of the derivative along a suitable path; the general case follows by applying it to the derivatives and iterating.</p>
-<p><strong>Theorem (Rellich–Kondrachov).</strong> Let $\Omega$ be bounded with Lipschitz boundary and let $1\le p<n$. Then the embedding $W^{1,n}(\Omega)\hookrightarrow L^{m}(\Omega)$ is <strong>compact</strong> for every $q<p^*$, and the embedding $W^{1,n}_0(\Omega)\hookrightarrow L^{n}(\Omega)$ is compact.</p>
+<p>whenever $kp&gt;n$ and $n/p$ is not an integer; the embedding is continuous, so $W^{k,n}$ embeds into a Hölder space and in particular into the continuous functions. In the limiting case $kp=n$, $W^{k,n}$ embeds into $L^{m}$ for every finite $q$, but not into $L^\infty$.</p>
+<p><em>Proof.</em> Quoted as standard. The case $k=1$, $p&gt;n$ is the Morrey inequality, proved by estimating $|u(x)-u(y)|$ by the integral of the derivative along a suitable path; the general case follows by applying it to the derivatives and iterating.</p>
+<p><strong>Theorem (Rellich–Kondrachov).</strong> Let $\Omega$ be bounded with Lipschitz boundary and let $1\le p&lt;n$. Then the embedding $W^{1,n}(\Omega)\hookrightarrow L^{m}(\Omega)$ is <strong>compact</strong> for every $q&lt;p^*$, and the embedding $W^{1,n}_0(\Omega)\hookrightarrow L^{n}(\Omega)$ is compact.</p>
 <p><em>Proof.</em> Quoted as standard. The proof approximates a bounded sequence in $W^{1,n}$ by mollifications, which are uniformly bounded and equicontinuous on compact subdomains, extracts a convergent subsequence by Arzelà–Ascoli, and estimates the boundary layer by the boundedness of the $W^{1,n}$ norm and the finiteness of the measure of the layer.</p>
-<p><strong>Theorem (trace).</strong> Let $\Omega$ be bounded with Lipschitz boundary and $1\le p<\infty$. There is a bounded linear map, the <strong>trace</strong>,</p>
+<p><strong>Theorem (trace).</strong> Let $\Omega$ be bounded with Lipschitz boundary and $1\le p&lt;\infty$. There is a bounded linear map, the <strong>trace</strong>,</p>
 <p>$$
 \operatorname{tr} : W^{1,n}(\Omega) \to L^{n}(\partial\Omega), \qquad
 \|{\operatorname{tr}}\,u\|_{L^{n}(\partial\Omega)} \le C\|u\|_{W^{1,n}(\Omega)},
 $$</p>
-<p>agreeing with the restriction for $u \in C(\overline\Omega)$, and its kernel is exactly $W^{1,n}_0(\Omega)$. For $p<n$ the trace actually maps into $L^{m}(\partial\Omega)$ for $q \le \frac{p(n-1)}{n-p}$.</p>
+<p>agreeing with the restriction for $u \in C(\overline\Omega)$, and its kernel is exactly $W^{1,n}_0(\Omega)$. For $p&lt;n$ the trace actually maps into $L^{m}(\partial\Omega)$ for $q \le \frac{p(n-1)}{n-p}$.</p>
 <p><em>Proof.</em> Quoted as standard (the trace theorem). The estimate is proved for smooth functions by a boundary-flattening change of variables and the fundamental theorem of calculus in the normal direction, and extended to $W^{1,n}$ by the density of $C^\infty(\overline\Omega)$. The identification of the kernel uses the same density: a function whose trace vanishes is a limit of smooth compactly supported functions.</p>
 <p><strong>Theorem (Poincaré and Friedrichs).</strong> If $\Omega$ is bounded in one direction with width $L$, then for $u \in W^{1,n}_0(\Omega)$,</p>
 <p>$$
-\|u\|_{L^{n}(\Omega)} \le L\|\nabla u\|_{L^{n}(\Omega)}, \qquad 1\le p<\infty ,
+\|u\|_{L^{n}(\Omega)} \le L\|\nabla u\|_{L^{n}(\Omega)}, \qquad 1\le p&lt;\infty ,
 $$</p>
 <p>and for $u \in W^{1,n}(\Omega)$ with $\int_\Omega u = 0$ the same inequality holds with a constant depending only on $\Omega$. On the interval $(0,L)$ with $p=2$ the sharp constant is $L/\pi$.</p>
 <p><em>Proof.</em> Extend $u$ by zero to a slab of width $L$ in which $\Omega$ lies and apply the fundamental theorem of calculus along the direction of the slab; the case of zero mean follows by subtracting the mean and using the same argument. On $(0,L)$ the function is expanded in the Dirichlet sine series, and comparing $\sum b_k^2(k\pi/L)^2 \ge (\pi/L)^2\sum b_k^2$ gives the sharp constant $L/\pi$.</p>
 <h3 id="the-spaces-math139-and-the-weak-formulation">The Spaces $H^{-1}$ and the Weak Formulation</h3>
 <p><strong>Definition.</strong> The <strong>dual space</strong> $H^{-1}(\Omega)$ is the space of bounded linear functionals on $H^1_0(\Omega)$, normed by $\|F\|_{H^{-1}} = \sup\{|F(v)| : \|v\|_{H^1_0}\le1\}$. Every $f \in L^2(\Omega)$ defines an element of $H^{-1}$ by $F(v) = \int_\Omega fv$, and by the Riesz representation theorem on the Hilbert space $H^1_0$ every element of $H^{-1}$ is of the form $F(v) = \langle u, v\rangle_{H^1_0}$ for a unique $u \in H^1_0$.</p>
-<p><strong>Definition.</strong> Let $a : H\times H \to \mathbb{R}$ be a bilinear form on a real Hilbert space $H$. It is <strong>bounded</strong> if $|\mathfrak{a}(u,v)| \le M\|u\|\|v\|$ and <strong>coercive</strong> if $\mathfrak{a}(u,u) \ge m\|u\|^2$ for some $m>0$.</p>
+<p><strong>Definition.</strong> Let $a : H\times H \to \mathbb{R}$ be a bilinear form on a real Hilbert space $H$. It is <strong>bounded</strong> if $|\mathfrak{a}(u,v)| \le M\|u\|\|v\|$ and <strong>coercive</strong> if $\mathfrak{a}(u,u) \ge m\|u\|^2$ for some $m&gt;0$.</p>
 <p><strong>Theorem (Lax–Milgram).</strong> Let $\mathfrak{a}$ be a bounded coercive bilinear form on the Hilbert space $H$ and let $F \in H^*$. Then there is a unique $u \in H$ with</p>
 <p>$$
 \boxed{\;\mathfrak{a}(u,v) = F(v) \qquad \text{for every } v \in H\;} ,
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 \lambda|\zeta|^2 \le \zeta\cdot A(x)\zeta \le \Lambda|\zeta|^2 \qquad (x \in \Omega,\ \zeta \in \mathbb{R}^n)
 $$</p>
-<p>for constants $0<\lambda\le\Lambda$. A function $u \in H^1_0(\Omega)$ is a <strong>weak solution</strong> of the Dirichlet problem</p>
+<p>for constants $0&lt;\lambda\le\Lambda$. A function $u \in H^1_0(\Omega)$ is a <strong>weak solution</strong> of the Dirichlet problem</p>
 <p>$$
 -\nabla\cdot(A\nabla u) + cu = f \ \text{in }\Omega, \qquad u = 0 \ \text{on }\partial\Omega,
 $$</p>
@@ -214,8 +214,8 @@ $$</p>
 <p><em>Proof.</em> Coercivity follows from the ellipticity and the Poincaré inequality: $J(v) \ge \frac\lambda2\|\nabla v\|^2 - \|f\|\|v\| \ge \frac\lambda4\|\nabla v\|^2 - C\|f\|^2$, so $J$ tends to infinity at infinity and is bounded below. Strict convexity follows from the strict positivity of the quadratic part. A minimising sequence is bounded in $H^1_0$, hence has a weakly convergent subsequence by reflexivity, and $J$ is weakly lower semicontinuous because the quadratic part is; the limit $u$ minimises. At a minimiser, $J(u+tv)\ge J(u)$ for all $t$ gives $\mathfrak{a}(u,v)-\int fv=0$ on differentiating at $t=0$, and the symmetry of $A$ is used exactly here, to identify the derivative of the quadratic part. Conversely a weak solution minimises $J$ because $J(u+v)-J(u) = \frac12\int A\nabla v\cdot\nabla v\ge0$; uniqueness is strict convexity.</p>
 <p>The Dirichlet principle is the origin of the subject and the reason for the name of the space: the weak solution is the minimiser of an energy, and the minimisation can be carried out in $H^1_0$ even when no classical minimiser exists. The general theory of minimisation problems of this kind — lower semicontinuity, convexity, the Euler–Lagrange equation, and the direct method of the calculus of variations in which a minimiser is found by compactness — is developed in the article of this Part on the calculus of variations, where the present theorem appears as the model case.</p>
 <h2 id="summary">Summary</h2>
-<p>The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial/\partial x_i\,\varphi = -\int w\varphi$ for every test function $\varphi \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1<p<\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.</p>
-<p>The embedding theorems are the working tools: $W^{k,n}\hookrightarrow L^{n^*}$ with $1/p^* = 1/p-k/n$ when $kp<n$, with $p^*$ sharp; $W^{k,n}\hookrightarrow C^{m,\gamma}$ when $kp>n$; the embeddings are compact into $L^{m}$ for $q<p^*$ on a bounded Lipschitz domain by Rellich–Kondrachov; the trace map restricts $W^{1,n}(\Omega)$ to $L^{n}(\partial\Omega)$ with kernel $W^{1,n}_0$; and the Poincaré inequality controls the $L^{n}$ norm by the gradient for a function vanishing on the boundary, with the sharp constant $L/\pi$ on the interval $(0,L)$.</p>
+<p>The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial/\partial x_i\,\varphi = -\int w\varphi$ for every test function $\varphi \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1&lt;p&lt;\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.</p>
+<p>The embedding theorems are the working tools: $W^{k,n}\hookrightarrow L^{n^*}$ with $1/p^* = 1/p-k/n$ when $kp&lt;n$, with $p^*$ sharp; $W^{k,n}\hookrightarrow C^{m,\gamma}$ when $kp&gt;n$; the embeddings are compact into $L^{m}$ for $q&lt;p^*$ on a bounded Lipschitz domain by Rellich–Kondrachov; the trace map restricts $W^{1,n}(\Omega)$ to $L^{n}(\partial\Omega)$ with kernel $W^{1,n}_0$; and the Poincaré inequality controls the $L^{n}$ norm by the gradient for a function vanishing on the boundary, with the sharp constant $L/\pi$ on the interval $(0,L)$.</p>
 <p>An elliptic Dirichlet problem with uniformly elliptic coefficients and $L^2$ data has a unique weak solution in $H^1_0(\Omega)$ by the Lax–Milgram theorem, with the energy estimate $\|u\|_{H^1}\le C\lambda^{-1}\|f\|_{L^2}$; the solution is $H^2$ in the interior and near a smooth boundary when the data allow, and is $C^\infty$ when the data are, which is Weyl's lemma; the inhomogeneous problem satisfies the Fredholm alternative. The parabolic and hyperbolic equations are solved weakly by the Galerkin method, with the energy estimates that the method is built on. Finally the weak solution of a symmetric elliptic problem is the unique minimiser of the Dirichlet energy $J$, the Dirichlet principle, which is the model case of the direct method of the calculus of variations.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

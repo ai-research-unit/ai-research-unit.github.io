@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Models of Spontaneous Wave-Function Collapse, Why Only Fermions Collapse, Not Bosons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - In models of spontaneous wave-function collapse, why only fermions collapse, not bosons -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="in-models-of-spontaneous-wave-function-collapse-why-only-fermions-collapse-not-bosons"><strong>In Models of Spontaneous Wave-Function Collapse, Why Only Fermions Collapse, Not Bosons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2602.15044v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, February 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - In models of spontaneous wave-function collapse, why only fermions collapse, not bosons - 2602.15044-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - In models of spontaneous wave-function collapse, why only fermions collapse, not bosons - 2602.15044.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/decoherence-as-idempotent-projection.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - In models of spontaneous wave-function collapse, why only fermions collapse, not bosons - 2602.15044.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Explains, from the structure of a trace Lagrangian rather than by assumption, why collapse models couple their noise to matter and not to gauge fields. The argument is a computation: write the Lagrangian for one space-time-matter atom in terms of two inequivalent matrix velocities, take the trace Hamiltonian with canonical momenta, and look at the adjointness of each sector. The bosonic part comes out self-adjoint; the fermionic part carries an anti-self-adjoint piece. Anti-self-adjoint terms are what drive localisation, so localisation acts on fermions by construction.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Objective collapse models are often implemented so that collapse acts only on the fermionic (matter) sector, while bosonic fields do not undergo fundamental collapse."</p>
+<h3 id="the-result">The result</h3>
+<p>"In this note we show, starting from the STM-atom (spacetime-matter atom) trace Lagrangian written in terms of two inequivalent matrix velocities" $Q_1$ and $Q_2$, "that the purely bosonic subsector admits a self-adjoint Hamiltonian, whereas the fermionic sector carries an intrinsic anti-self-adjoint contribution."</p>
+<h3 id="the-structural-input">The structural input</h3>
+<p>"The key structural input is that making the trace Lagrangian bosonic requires insertion of two unequal odd-grade Grassmann elements" $\beta_1\neq\beta_2$.</p>
+<h3 id="the-three-findings">The three findings</h3>
+<p>"The trace Hamiltonian equals the trace Lagrangian (Bateman-type cross-kinetic structure), but it need not be self-adjoint because" $Q_1$ and $Q_2$ "are inequivalent."</p>
+<p>"The purely bosonic contribution" is self-adjoint.</p>
+<p>"Assuming natural adjoint properties for the odd Grassmann elements" $\beta_1,\beta_2$, "the fermionic contribution" is "purely anti-self-adjoint, providing an explicit ASA component of the Hamiltonian that vanishes in the bosonic subsector."</p>
+<h3 id="why-bosons-still-look-classical">Why bosons still look classical</h3>
+<p>"Bosonic fields can still become classical indirectly, because in the STM-atom picture an STM atom consists of a fermion together with its associated bosonic fields", so localisation of the fermionic degrees forces classicality of the associated bosonic sector without requiring independent bosonic collapse.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-which-sector-collapses-is-a-theorem-not-a-postulate">1. Which sector collapses is a theorem, not a postulate</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: collapse models usually stipulate that the noise couples to mass density or to the fermion number. Here the split is derived — the anti-self-adjoint part of the Hamiltonian sits in the fermionic sector, and anti-self-adjointness is what drives localisation.</p>
+<p><strong>What it would add.</strong> The corpus's collapse and decoherence articles accept the fermion-coupling postulate as a modelling choice and then compute consequences. This removes the choice: the coupling pattern follows from the grading of the algebra. For an artificial reader, that converts a phenomenological input into a checkable output — if a corpus model couples collapse to a bosonic field, it now contradicts a derivation rather than just a convention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation is for one class of trace Lagrangian; a general statement covering arbitrary gauge sectors is not given, and the paper's outlook says the magnitudes still have to be connected to collapse phenomenology.</p>
+<h3 id="2-two-velocities-not-one">2. Two velocities, not one</h3>
+<p><strong>The idea.</strong> A <strong>structure</strong>: the atom carries two distinct matrix velocities $Q_1$ and $Q_2$. Because they are inequivalent, the Hamiltonian is not simply the Lagrangian with a sign change — the usual Legendre relation fails at the level of self-adjointness.</p>
+<p><strong>What it would add.</strong> The corpus's Hamiltonian constructions assume a single velocity per degree of freedom, which makes the Hamiltonian automatically self-adjoint when the Lagrangian is real. This is a case where the kinematic assumption is what produces the asymmetry that later does physical work. Any corpus article that starts "the Hamiltonian is" without asking whether the velocities are degenerate is exposed, and the fix is small: count the velocities.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>.</p>
+<p><strong>What stands in the way.</strong> The "Bateman-type cross-kinetic structure" is asserted for this Lagrangian; whether it survives interactions is not shown.</p>
+<h3 id="3-grassmann-grading-does-the-work-that-a-coupling-constant-usually-does">3. Grassmann grading does the work that a coupling constant usually does</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: the difference between the sectors is carried by two unequal odd Grassmann numbers inserted to keep the Lagrangian bosonic. Their inequality, not any numerical coupling, is what separates collapsing from non-collapsing degrees of freedom.</p>
+<p><strong>What it would add.</strong> The corpus's algebraic articles use Grassmann elements as bookkeeping for statistics. Here a <em>choice</em> about them — equal or unequal — decides a physical question. That is a stronger role than bookkeeping, and it suggests a general pattern: structural choices about grading are physical choices. It also explains why the two elements cannot be set equal: doing so gives inconsistent equations of motion.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/clifford-algebras.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument depends on "natural adjoint properties" for the Grassmann elements, which is an assumption about how the adjoint acts rather than a derivation.</p>
+<p>The rank: the derived coupling pattern first, because it replaces a postulate; the two-velocity structure second, because it is a trap in existing derivations; the Grassmann mechanism third, because it is the reason the first two hold.</p>
+<p>The remaining items in one line each: the anti-self-adjoint component as the localisation driver, which links this paper to the rest of the programme; the trace-derivative canonical momenta computed with bosonic and fermionic variations treated separately, which is the technical core; and the outlook on connecting the magnitude of the anti-self-adjoint part to continuous-spontaneous-localisation parameters, which is where this would become testable.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

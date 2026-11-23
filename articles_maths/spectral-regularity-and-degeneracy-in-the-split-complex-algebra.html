@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="spectral-regularity-and-degeneracy-in-the-split-complex-algebra"><strong>Spectral Regularity and Degeneracy in the Split-Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative, two-dimensional and reduced. For $q=t+bj$ left multiplication has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. Its characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of discriminant $4b^2$. The discriminant is a square: the eigenvalues $t\pm b$ are real and coincide exactly when $b=0$. This article defines the eigenvalue problem, proves the criterion, and separates $\mathbb{C}_{\mathrm{spl}}$ into the spectrally regular case $b\neq0$ and the spectrally degenerate case $b=0$, the real axis. The degenerate case is scalar, every element is semisimple, and no element is defective.</p>
+<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative, two-dimensional and reduced. For $q=t+bj$ left multiplication has matrix $\begin{pmatrix}t&amp;b\\b&amp;t\end{pmatrix}$ in the basis $1,j$. Its characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of discriminant $4b^2$. The discriminant is a square: the eigenvalues $t\pm b$ are real and coincide exactly when $b=0$. This article defines the eigenvalue problem, proves the criterion, and separates $\mathbb{C}_{\mathrm{spl}}$ into the spectrally regular case $b\neq0$ and the spectrally degenerate case $b=0$, the real axis. The degenerate case is scalar, every element is semisimple, and no element is defective.</p>
 <p><strong>Notation.</strong> An element is $q=t+bj$ with $t,b\in\mathbb{R}$; $t$ is the scalar part and $b$ the split-imaginary part. The conjugation is $\bar q=t-bj$, the <strong>split norm</strong> is $q\bar q=t^2-b^2$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$, with $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$ and $e_++e_-=1$. The idempotent coordinates of $q$ are $t+b$ and $t-b$:</p>
 <p>$$
 q=(t+b)e_+ +(t-b)e_-.
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-characteristic-polynomial-and-the-discriminant">The Characteristic Polynomial and the Discriminant</h2>
 <p><strong>Proposition (the matrix of left multiplication).</strong> In the basis $1,j$,</p>
 <p>$$
-L_q=\begin{pmatrix}t&b\\b&t\end{pmatrix}.
+L_q=\begin{pmatrix}t&amp;b\\b&amp;t\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> One has $L_q(1)=q=t+bj$ and $L_q(j)=qj=tj+b$, and the two columns are the coordinates of these images.</p>
 <p><strong>Theorem (the characteristic polynomial).</strong> For every $q=t+bj$,</p>
@@ -153,7 +153,7 @@ $$</p>
 <p><em>Proof.</em> Since $je_+=e_+$ and $je_-=-e_-$, one has $qe_+=(t+b)e_+$ and $qe_-=(t-b)e_-$. The idempotents $e_+$ and $e_-$ are non-zero and linearly independent, so each displayed eigenspace is the line through the corresponding idempotent. Their dimensions sum to $2$, hence they span $\mathbb{C}_{\mathrm{spl}}$.</p>
 <p><strong>Corollary (the eigenbasis).</strong> For $b\neq0$, the pair $(e_+,e_-)$ is an eigenbasis, and</p>
 <p>$$
-P^{-1}L_qP=\operatorname{diag}(t+b,t-b),\qquad P=\begin{pmatrix}\tfrac12&\tfrac12\\[2pt]\tfrac12&-\tfrac12\end{pmatrix},\qquad P^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
+P^{-1}L_qP=\operatorname{diag}(t+b,t-b),\qquad P=\begin{pmatrix}\tfrac12&amp;\tfrac12\\[2pt]\tfrac12&amp;-\tfrac12\end{pmatrix},\qquad P^{-1}=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}.
 $$</p>
 <p>The eigenbasis is unique up to the order of its two vectors and a non-zero real multiple of each.</p>
 <p><em>Proof.</em> The columns of $P$ are the coordinates of $e_+,e_-$ in the basis $1,j$, and the diagonal form records the two eigenvalues. An eigenvector for $t+b$ lies in the line $E_{t+b}$, and an eigenvector for $t-b$ lies in $E_{t-b}$; a basis must take one vector from each line.</p>
@@ -174,7 +174,7 @@ $$</p>
 <p><em>Proof.</em> In idempotent coordinates $q=ue_++ve_-$, so $q^2=u^2e_++v^2e_-$. This vanishes exactly when $u=v=0$, that is $q=0$. Equivalently, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields.</p>
 <p>In the biquaternion algebra the degenerate cone splits into a scalar stratum and two defective strata; in $\mathbb{C}_{\mathrm{spl}}$ the degenerate locus is scalar and semisimple. Degeneracy here is a coalescence of eigenvalues, not a defect.</p>
 <h2 id="contrast-with-the-complex-split-quaternion-and-biquaternion-cases">Contrast with the Complex, Split-Quaternion and Biquaternion Cases</h2>
-<p><strong>The complex case.</strong> For $z=t+bi$, $L_z$ has matrix $\begin{pmatrix}t&-b\\b&t\end{pmatrix}$, characteristic polynomial $(X-t)^2+b^2$ and discriminant $-4b^2$, with eigenvalues $t\pm ib$. The criterion is again $b\neq0$, but the eigenvalues leave $\mathbb{R}$ when $b\neq0$; the sign of $j^2$ reverses the discriminant and moves the spectrum to the complex plane.</p>
+<p><strong>The complex case.</strong> For $z=t+bi$, $L_z$ has matrix $\begin{pmatrix}t&amp;-b\\b&amp;t\end{pmatrix}$, characteristic polynomial $(X-t)^2+b^2$ and discriminant $-4b^2$, with eigenvalues $t\pm ib$. The criterion is again $b\neq0$, but the eigenvalues leave $\mathbb{R}$ when $b\neq0$; the sign of $j^2$ reverses the discriminant and moves the spectrum to the complex plane.</p>
 <p><strong>The split-quaternion case.</strong> The algebra $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb{R})$ is non-commutative; its spectrum is taken over $\mathbb{C}$, and the discriminant is $-4\langle\vec v\rangle_{\natural}$ for the vector part $\vec v$. The degenerate locus is the cone $\langle\vec v\rangle_{\natural}=0$, where a non-zero null vector part is nilpotent and the element is defective. The locus has real dimension three; the locus in $\mathbb{C}_{\mathrm{spl}}$ is a line.</p>
 <p><strong>The biquaternion case.</strong> The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has characteristic polynomial $X^2-2Q_tX+Q_t^2+B^2$, of discriminant $-4B^2$ and eigenvalues $Q_t\pm iB$. Its degenerate locus is the cone $B^2=0$, split into a scalar stratum and two defective strata. In $\mathbb{C}_{\mathrm{spl}}$ the quadratic condition has one variable, the cone collapses to the line $b=0$, and the defective strata disappear.</p>
 <div class="table-scroll"><table>
@@ -227,7 +227,7 @@ $$</p>
 </table></div>
 <p>The dual numbers show that a vanishing discriminant can coexist with defect: there the square of the generator is zero, so left multiplication is a Jordan block. In $\mathbb{C}_{\mathrm{spl}}$ the square is one, the algebra splits, and the eigenspaces survive.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative and reduced, and $L_q$ has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. The characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of trace $2t$, determinant $q\bar q=t^2-b^2$ and discriminant $4b^2$. The eigenvalues $t\pm b$ are always real and coincide exactly when $b=0$.</p>
+<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative and reduced, and $L_q$ has matrix $\begin{pmatrix}t&amp;b\\b&amp;t\end{pmatrix}$ in the basis $1,j$. The characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of trace $2t$, determinant $q\bar q=t^2-b^2$ and discriminant $4b^2$. The eigenvalues $t\pm b$ are always real and coincide exactly when $b=0$.</p>
 <p>The spectral criterion is $b\neq0$: the spectrum has two elements exactly when the element is not scalar, the discriminant does not vanish, and the minimal polynomial has degree two. The regular locus is the plane minus the real axis; the degenerate locus is the real axis, and each of its elements is scalar. Every element is semisimple. The eigenbasis is $(e_+,e_-)$ for $b\neq0$, unique up to scaling and order, and every basis for $b=0$. The spectral decomposition is $q=(t+b)e_++(t-b)e_-$ for $b\neq0$ and the one-term writing $q=t\cdot1$ for $b=0$.</p>
 <p>The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathbb{R}$ when $b\neq0$; in $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ the degenerate locus is a cone with defective strata; in $\mathbb{C}_{\mathrm{spl}}$ it is the real axis, and its elements are scalars. The two conditions are compared in <em>Relations between the Split Norm and Spectral Regularity and Degeneracy</em>, and their four combinations are the subject of <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

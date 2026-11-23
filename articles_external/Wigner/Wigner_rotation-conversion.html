@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wigner Rotation (Encyclopaedia Article) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Wigner_rotation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wigner-rotation-encyclopaedia-article"><strong>Wigner Rotation (Encyclopaedia Article)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopaedia article (Wikipedia page printed to PDF)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — not an arXiv preprint</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>page revision 1385600976, retrieved 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Wikipedia, The Free Encyclopedia</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Wigner_rotation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Wigner_rotation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/aberration-and-the-sky-the-boost-as-a-mobius-flow.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Wigner_rotation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A reference entry, not a research paper: the definition, the history of priority, the velocity-addition formulas for two frames related by non-collinear boosts, and the relation to Thomas precession. Useful to the corpus as a map of the standard terminology and of the places where the standard treatment is unsettled. Treated here as a secondary source; every claim below is the encyclopaedia's, not an original result, and the article's own citations are the primary sources.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"Wigner rotation is a phenomenon in special relativity where two non-collinear Lorentz boosts result in a Lorentz transformation which is not a boost but a boost and a rotation, called a Wigner rotation, Thomas rotation, or Thomas–Wigner rotation."</p>
+<h3 id="the-history">The history</h3>
+<p>"otation was discovered by Émile Borel in 1913.[2][3][4] It was rediscovered and proved by Ludwik Silberstein in his 1914 book The Theory of Relativity,[5] by Llewellyn Thomas in 1926,[6] and by Eugene Wigner in 1939.[7] Wigner acknowledged Silberstein's earlier work."</p>
+<h3 id="the-operational-content">The operational content</h3>
+<p>"Let $u$ be the velocity with which the lab reference frame moves with respect to an object A and let $v$ be the velocity which another object B moves relative to the lab reference frame. If $u$ and $v$ are not collinear, the coordinates of the relative velocities of these two bodies will not be opposite, even though the actual velocity vectors themselves are opposites."</p>
+<p>So the reciprocity of relative velocity fails: A's velocity as measured by B and B's as measured by A are not negatives of each other, and the discrepancy is a rotation.</p>
+<h3 id="the-unsettled-part">The unsettled part</h3>
+<p>"There are still ongoing discussions about the correct form of equations for the Thomas rotation in different reference systems with contradicting results."</p>
+<p>The entry quotes Goldstein on the subject's reputation: "The spatial rotation resulting from the successive application of two non-collinear Lorentz transformations has been declared every bit as paradoxical as the more frequently discussed apparent violations of common sense, such as the twin paradox."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-relative-velocity-is-not-reciprocal">1. Relative velocity is not reciprocal</h3>
+<p><strong>The idea.</strong> A <strong>failure</strong>: if A and B are in relative motion along non-collinear paths, the velocity of B in A's frame is not the negative of the velocity of A in B's frame. Reciprocity holds for collinear motion and fails otherwise, and the failure is a rotation.</p>
+<p><strong>What it would add.</strong> The corpus's velocity-addition exercise uses the addition law as a formula and checks it against known limits. It never states that the law is not symmetric between the two observers, which is surprising on first contact and is the operational meaning of the Wigner rotation: not an abstract leftover in a matrix product but a measurable asymmetry between two observers' reports. Stating it costs a paragraph and makes the rotation concrete.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.md</code>.</p>
+<p><strong>What stands in the way.</strong> In the corpus's biquaternion formalism the asymmetry is immediate from the non-commutativity of the rotors, so the operational statement may already be implicit; making it explicit would need a worked two-observer example, which the corpus does not have.</p>
+<h3 id="2-the-history-is-a-priority-dispute-and-the-name-is-a-convention">2. The history is a priority dispute, and the name is a convention</h3>
+<p><strong>The idea.</strong> A <strong>correction to the record</strong>: Borel published the effect in 1913, thirteen years before Thomas, and Wigner's 1939 paper — the one whose name the effect carries — came twenty-six years after Borel and acknowledged Silberstein's priority. "Thomas–Wigner" and "Wigner" are therefore partial names. </p>
+<p><strong>What it would add.</strong> The corpus names the effect "Thomas–Wigner" throughout, which is the fairest of the common choices and still omits Borel. A short historical note would fix the attribution and, more usefully, record that the effect was found three times before it was understood — which says something about how easily a kinematic consequence of non-commuting boosts is missed. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>. </p>
+<p><strong>What stands in the way.</strong> Attribution is not physics, and the corpus is not a history; a note would be decoration unless it carried a point, and the available point — that repetition was needed because the effect is counterintuitive — is speculative. </p>
+<h3 id="3-the-conventions-are-genuinely-unsettled">3. The conventions are genuinely unsettled</h3>
+<p><strong>The idea.</strong> A <strong>caution</strong>: the literature does not agree on the formula for the Thomas rotation in different reference systems, and the disagreements are not all errors; some are differences of convention that have not been reconciled. </p>
+<p><strong>What it would add.</strong> The Saldin report in this same folder makes the strongest version of the claim that the standard formula is wrong. The encyclopaedia's milder statement — that there are contradicting results — supports reading the disagreement as partly conventional. For the corpus, whose derivations are algebraic and hence convention-free, the caution is a boundary marker: the algebra is safe, the sentences interpreting it are not. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>. </p>
+<p><strong>What stands in the way.</strong> An encyclopaedia is a weak authority for a technical disagreement, and the entry gives no analysis of which conventions differ; the caution would have to be backed by the primary sources it cites, not by the entry. The rank: the reciprocity failure first, because it is physics; the conventions caution second, because it bears on the corpus's interpretations; the history last, because it is not physics. The remaining items in one line each: the explicit velocity-addition formulas for the two observers, which are the entry's main technical content and can be checked against the corpus's own addition law; the mention of the older literature on the "relativistic velocity composition paradox", which is where the convention disputes are recorded; and the "further reading" pointers to Rhodes and Semon and to Barrett's hyperbolic treatment, which are the two sources in this folder that pursue the geometric approach.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

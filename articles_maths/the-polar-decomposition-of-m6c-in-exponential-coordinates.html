@@ -81,8 +81,8 @@ $$</p>
 <p>$$
 A=P'U',
 \qquad
-P'=(AA^*)^{1/2}>0,\quad
-U'=P'^{-1}A,
+P'=(AA^*)^{1/2}&gt;0,\quad
+U'=P'{}^{-1}A,
 $$</p>
 <p>written in exponential form: $P'=e^H$ with $H=\log P'$, and $U'=e^{\mathrm iK}$ with $K$ a Hermitian logarithm of the $*$-unitary factor. The Hermitian factor $H$ is unique; the $*$-unitary factor is unique, and $K$ is unique modulo $2\pi$ on each eigenspace.</p>
 <p>The decomposition is different from the right polar decomposition $A=UP=e^{\mathrm iK'}e^{H'}$: the two share the $*$-unitary factor, and their positive factors are conjugate by it. They coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.</p>
@@ -97,13 +97,13 @@ $$</p>
 <p>with $P'$ positive definite Hermitian and $U'$ $*$-unitary:</p>
 <p>$$
 P'=(AA^*)^{1/2},\qquad
-U'=P'^{-1}A.
+U'=P'{}^{-1}A.
 $$</p>
-<p><strong>Proof.</strong> $AA^*$ is positive definite, so $P'$ is positive definite and invertible. Set $U'=P'^{-1}A$. Then</p>
+<p><strong>Proof.</strong> $AA^*$ is positive definite, so $P'$ is positive definite and invertible. Set $U'=P'{}^{-1}A$. Then</p>
 <p>$$
-U'^*U'=A^*P'^{-2}A=A^*(AA^*)^{-1}A=I_6,
+U'{}^*U'=A^*P'{}^{-2}A=A^*(AA^*)^{-1}A=I_6,
 $$</p>
-<p>so $U'$ is $*$-unitary. Uniqueness: $P'^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'^{-1}A$.</p>
+<p>so $U'$ is $*$-unitary. Uniqueness: $P'{}^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'{}^{-1}A$.</p>
 <p><strong>Corollary (the two polars).</strong> The same $A$ has the right polar decomposition</p>
 <p>$$
 A=UP,
@@ -112,7 +112,7 @@ P=(A^*A)^{1/2},\qquad
 U=AP^{-1}.
 $$</p>
 <p>The $*$-unitary factors agree, $U'=U$, and the positive factors are conjugate, $P'=UPU^*$.</p>
-<p><strong>Proof.</strong> From $A=UP$, $AA^*=UP^2U^*$, so $P'=UPU^*$ and $U'=P'^{-1}A=UP^{-1}U^*UP=U$.</p>
+<p><strong>Proof.</strong> From $A=UP$, $AA^*=UP^2U^*$, so $P'=UPU^*$ and $U'=P'{}^{-1}A=UP^{-1}U^*UP=U$.</p>
 <h3 id="the-exponential-form">The Exponential Form</h3>
 <p><strong>Theorem.</strong> Every positive definite $P'$ has a unique Hermitian logarithm</p>
 <p>$$
@@ -127,7 +127,7 @@ U'=e^{\mathrm iK},
 K\in\operatorname{Herm}_6,
 $$</p>
 <p>unique modulo $2\pi$ on each eigenspace.</p>
-<p><strong>Proof.</strong> The spectral theorem for $P'>0$ gives $P'=V\operatorname{diag}(p_i)V^*$ with $p_i>0$; then $H=V\operatorname{diag}(\log p_i)V^*$. For $U'$, diagonalize unitarily with eigenvalues $e^{\mathrm i\theta_j}$; then $K=V\operatorname{diag}(\theta_j)V^*$, and the angles are determined modulo $2\pi$.</p>
+<p><strong>Proof.</strong> The spectral theorem for $P'&gt;0$ gives $P'=V\operatorname{diag}(p_i)V^*$ with $p_i&gt;0$; then $H=V\operatorname{diag}(\log p_i)V^*$. For $U'$, diagonalize unitarily with eigenvalues $e^{\mathrm i\theta_j}$; then $K=V\operatorname{diag}(\theta_j)V^*$, and the angles are determined modulo $2\pi$.</p>
 <p><strong>Corollary (the polar decomposition).</strong> Every invertible $A$ has</p>
 <p>$$
 A=e^He^{\mathrm iK},
@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Proof.</strong> $P'=(AA^*)^{1/2}$ is unique, and the positive definite logarithm is unique.</p>
 <h3 id="the-math97-unitary-factor">The $*$-Unitary Factor</h3>
 <p><strong>Theorem.</strong> The $*$-unitary factor $U'$ is unique. The Hermitian exponent $K$ is unique modulo $2\pi$: if $e^{\mathrm iK}=e^{\mathrm iK'}=U'$, then $K-K'$ has eigenvalues in $2\pi\mathbb{Z}$ on the eigenspaces of $U'$.</p>
-<p><strong>Proof.</strong> The $*$-unitary factor is $U'=P'^{-1}A$; the logarithm of a $*$-unitary is unique modulo $2\pi$ on each eigenspace.</p>
+<p><strong>Proof.</strong> The $*$-unitary factor is $U'=P'{}^{-1}A$; the logarithm of a $*$-unitary is unique modulo $2\pi$ on each eigenspace.</p>
 <p><strong>Corollary (the principal exponent).</strong> There is a unique $K$ with spectrum in $(-\pi,\pi]$; it is the principal Hermitian logarithm of $U'$.</p>
 <p><strong>Proof.</strong> Choose the principal argument of each eigenvalue.</p>
 <h3 id="the-count">The Count</h3>
@@ -199,13 +199,13 @@ $$</p>
 <p><strong>Corollary (the singular elements).</strong> A singular $A$ has no factorization $A=e^He^{\mathrm iK}$ with $H,K$ Hermitian.</p>
 <p><strong>Proof.</strong> The product of two invertible matrices is invertible.</p>
 <h3 id="the-limit">The Limit</h3>
-<p><strong>Theorem.</strong> Let $A(t)$ be a smooth family of invertible matrices with $A(0)$ singular of rank $k<6$. Then the positive factor $P'(t)$ tends to the singular $P'(0)$, the Hermitian factor $H(t)=\log P'(t)$ diverges: its eigenvalues tend to $-\infty$ in the kernel directions. The $*$-unitary factor may have a limit, and when it does, the limit depends on the direction of approach.</p>
+<p><strong>Theorem.</strong> Let $A(t)$ be a smooth family of invertible matrices with $A(0)$ singular of rank $k&lt;6$. Then the positive factor $P'(t)$ tends to the singular $P'(0)$, the Hermitian factor $H(t)=\log P'(t)$ diverges: its eigenvalues tend to $-\infty$ in the kernel directions. The $*$-unitary factor may have a limit, and when it does, the limit depends on the direction of approach.</p>
 <p><strong>Proof.</strong> The positive factor is continuous; the logarithm of a positive eigenvalue tending to zero tends to $-\infty$. The $*$-unitary factor is the partial isometry of the singular polar decomposition, and its extension on the kernel is the free choice.</p>
 <p><strong>Corollary (the singular values).</strong> The singular values of $A$ are $e^{h_j}$, where $h_j$ are the eigenvalues of $H$; at a zero singular value the logarithm diverges.</p>
 <p><strong>Proof.</strong> The eigenvalues of $P'=e^H$ are $e^{h_j}$; the singular values are the eigenvalues of $P'$.</p>
 <h3 id="the-polar-decomposition-survives">The Polar Decomposition Survives</h3>
 <p><strong>Theorem.</strong> Every singular $A$ has a polar decomposition $A=UP$ with $P\ge0$ and $U$ a partial isometry; the positive factor is unique, and the partial isometry is free on the kernel.</p>
-<p><strong>Proof.</strong> This is <em>The Polar Decomposition of $M_6(\mathbb{C})$</em>; the exponential form requires $P>0$, which fails at the singular set, but the positive semidefinite form and the partial isometry survive.</p>
+<p><strong>Proof.</strong> This is <em>The Polar Decomposition of $M_6(\mathbb{C})$</em>; the exponential form requires $P&gt;0$, which fails at the singular set, but the positive semidefinite form and the partial isometry survive.</p>
 <p><strong>Corollary (the two reaches).</strong> The polar decomposition reaches $GL_6$; the polar decomposition with a partial isometry reaches all of $M_6$.</p>
 <p><strong>Proof.</strong> The first is the invertibility of the factors; the second is the existence theorem for the semidefinite polar decomposition.</p>
 <p><strong>Remark (the boundary).</strong> The polar decomposition degenerates at the singular set: the Hermitian factor escapes to infinity, and the $*$-unitary factor loses its uniqueness. <strong>The singular set is the boundary of the exponential chart.</strong></p>
@@ -213,7 +213,7 @@ $$</p>
 <h3 id="the-chiral-split">The Chiral Split</h3>
 <p><strong>Definition.</strong> In the chiral split $\mathbb{C}^6=V_+\oplus V_-$, with $\dim V_\pm=3$, an element is</p>
 <p>$$
-A=\begin{pmatrix}A_{++}&A_{+-}\\A_{-+}&A_{--}\end{pmatrix},
+A=\begin{pmatrix}A_{++}&amp;A_{+-}\\A_{-+}&amp;A_{--}\end{pmatrix},
 \qquad
 A_{\pm\pm}\in M_3(\mathbb{C}).
 $$</p>
@@ -267,7 +267,7 @@ A=e^He^{\mathrm iK},
 \qquad
 H,K\in\operatorname{Herm}_6,
 $$</p>
-<p>with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the $*$-unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.</p>
+<p>with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'{}^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the $*$-unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.</p>
 <p>$$
 \boxed{\ A=e^He^{\mathrm iK},\quad H=\log P',\quad U'=e^{\mathrm iK},\quad A\in GL_6 .\ }
 $$</p>
@@ -329,7 +329,7 @@ $$</p>
 <td>the left positive factor</td>
 </tr>
 <tr>
-<td>$U'=P'^{-1}A$</td>
+<td>$U'=P'{}^{-1}A$</td>
 <td>the left $*$-unitary factor</td>
 </tr>
 <tr>

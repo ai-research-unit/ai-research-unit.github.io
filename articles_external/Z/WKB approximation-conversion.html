@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WKB Approximation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/WKB approximation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wkb-approximation"><strong>WKB Approximation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>WKB approximation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/WKB approximation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/WKB approximation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/WKB approximation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the WKB method: the semiclassical expansion of a wavefunction written as an exponential, valid when the potential varies slowly compared with the wavelength, the resulting phase integral and amplitude, the connection formulas at turning points, and the quantisation condition it yields.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"the WKB approximation or WKB method is a technique for finding approximate solutions to linear differential equations with spatially varying coefficients. It is typically used for a semiclassical calculation in quantum mechanics in which the wave function is recast as an exponential function, semiclassically expanded, and then either the amplitude or the phase is taken" slowly varying.</p>
+<h3 id="the-form">The form</h3>
+<p>Writing $\psi=e^{iS/\hbar}$ and expanding $S$ in powers of $\hbar$, the leading term gives $S_0=\pm\int p\,dx$ with $p=\sqrt{2m(E-V)}$, and the next order gives the amplitude $\propto p^{-1/2}$. The two combine into $\psi\sim p^{-1/2}\exp(\pm\frac{i}{\hbar}\int p\,dx)$.</p>
+<h3 id="the-validity-condition">The validity condition</h3>
+<p>The approximation holds where $\hbar|dp/dx|\ll p^2$, that is, where the de Broglie wavelength changes slowly over a wavelength. It fails at turning points, where $p\to0$ and the amplitude diverges; the connection formulas relate the oscillating and decaying solutions across such a point.</p>
+<h3 id="the-quantisation-condition">The quantisation condition</h3>
+<p>Applying the connection formulas at both turning points gives $\oint p\,dx=2\pi\hbar(n+\tfrac12)$, the Bohr–Sommerfeld rule with the half-integer offset that the Maslov index supplies.</p>
+<p>"WKB approximation In mathematical physics, the WKB approximation or WKB method is a technique for finding approximate solutions to linear differential equations with spatially varying coefficients."</p>
+<p>"The problem has two classical turning points with and at at ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-expansion-is-in">1. The expansion is in</h3>
+<p>$\hbar$ with the action as the organising object</p>
+<p><strong>The idea.</strong> The WKB series is a power series in $\hbar$ whose coefficients are determined by the classical trajectory. The lowest order is the classical action, so the classical limit is the leading term and not a separate theory. This is a <strong>mechanism</strong> the corpus uses and rarely states.</p>
+<p><strong>What it would add.</strong> A clean statement of what the corpus's semiclassical expansion is an expansion in, and why the action appears at leading order.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code>, at the expansion parameter.</p>
+<p><strong>What stands in the way.</strong> The corpus's expansion is algebraic and its "$\hbar$" enters through the multiplication, so the term-by-term matching would have to be checked rather than assumed.</p>
+<h3 id="2-turning-points-are-where-the-approximation-must-be-patched">2. Turning points are where the approximation must be patched</h3>
+<p><strong>The idea.</strong> The expansion fails exactly where the classical motion reverses, and the physics there is carried by the connection formulas rather than by the series. A semiclassical result is therefore only as good as its patching.</p>
+<p><strong>What it would add.</strong> A warning the corpus's instanton articles need: the patching contributes the Maslov phase, which is a physical shift in the spectrum.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code>, at the Maslov phase.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the ansatz, the leading orders, the validity condition, the connection formulas and the quantisation rule are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

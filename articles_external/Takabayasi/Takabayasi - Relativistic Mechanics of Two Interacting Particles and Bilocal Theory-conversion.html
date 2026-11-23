@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Two Interacting Particles and Bilocal Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Two Interacting Particles and Bilocal Theory.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-two-interacting-particles-and-bilocal-theory"><strong>Relativistic Mechanics of Two Interacting Particles and Bilocal Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>54</strong> (1975) 563, No. 2; received 10 February 1975</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Mechanics of Two Interacting Particles and Bilocal Theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Two Interacting Particles and Bilocal Theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Two Interacting Particles and Bilocal Theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Founds the bilocal programme properly. Starting from <em>arbitrary</em> parametrisations of the two world lines and requiring covariance under their general transformation, it derives equations of motion for two particles interacting by an arbitrary central action-at-a-distance. One particular gauge turns the theory into a canonical formalism with two weak equations; quantising there makes all parameters disappear and leaves exactly a bilocal wave equation with a subsidiary condition. The Hooke case reproduces elliptic oscillations in the centre-of-mass frame and bound states on a straightly rising trajectory. Against the folklore that canonical action-at-a-distance is impossible in relativity, the paper exhibits one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-thesis">The thesis</h3>
+<p>"New relativistic mechanics of two-particle system is set forth, where the two constituent particles are interacting by an arbitrary (central) action-at-a-distance. The fundamental equations are presented in a form covariant under general transformation of parameters parametrizing the world lines of constituent particles. The theory represents the proper relativistic generalization of the U!\ual Newtonian mechanics in the sense that it tends in the non-relativistic (and weak interaction) limit to the usual mechanics of two particles moving under a corresponding non-relativistic potential. For"</p>
+<p>"For the analysis of theory it is convenient to choose a certain particular gauge (i.e., parametrization) fixed by two gauge relations. This brings the theory to a canonical formalism accompanied by two weak equations, and in this gauge quantization can be performed. The result verifies that the relativistic quantum mechanics for two particles interacting by an action-at-a-distance is just represented by a bilocal wave equation and a subsidiary condition, with the clarification of its correspondence-theoretical foundation and internal dynamics."</p>
+<h3 id="against-the-received-view">Against the received view</h3>
+<p>"Relativistic description of interaction between point particles without the use of intermediating field has long been a subtle problem. It is usually represented in classical theory by a Fokker-type integra-differential equation/) but this has complicate properties, except in the case of electromagnetic interaction. 2l Also in the literature it has been stated that in the canonical framework no action-at-a- distance interaction is possible in relativity. 3 l On the other hand Wigner made an I investigation about what kinds of mechanics would be possible in relativistic the- ory,4l but his postulate and method are not physically adequate nor has he arrived at a difinite theory."</p>
+<p>"One of our guiding principle is just the idea that corresponding to Newtonian mechanics of a system consisting of two particles interacting by an arbitrary central force potential U, there must always exist its proper relativistic_ generalization. To find out such a relativistic theory we start with an arbitrary parametrization of the world lines of two particles together with the requirement that the theory should be constructed in a form 564 T. Takabaya si . . which is covariant under reparamet rization. This itself serves as a powerful meth- od, and we can establish our new equations of motion at the classical level."</p>
+<h3 id="why-the-bilocal-model-is-not-arbitrary">Why the bilocal model is not arbitrary</h3>
+<p>"It is to be noted that since Yukawa's original theory5&gt; several versions of bilocal model have been given mainly from rather formal standpoint s. 6&gt;. 7&gt; Our present work allows to formulate possible bilocal models on the basis of its cor- responden ce-theoret ic foundation and thus clarifying the internal dynamics implied 1n each case."</p>
+<h3 id="what-it-supersedes">What it supersedes</h3>
+<p>"This paper is a generalization of a previous one, where we have set up a theory of relativistic bound states under the Hooke-type force in restricting the motion to relativistic rigid motions. These restrictions have allowed us a particularly simple treatment of the problem, but now by lifting these restrictions we succeed in finding a much deeper theory."</p>
+<h3 id="the-hooke-case">The Hooke case</h3>
+<p>"As an example the case of Hooke-type force is illustrated, where the internal motions are elliptic oscillations in the center-of-mass frame. Its quantum theory just reproduces the original form of bilocal theory giving bound states lying on a straightly rising trajectory and on its daughter trajectories."</p>
+<p>"We also recall that the bilocal model with Hooke" type potential is regarded as a prototype of a unified model of mesonic state'). This is indeed a relativistic quark model achieving the quark confineme nt and gives bound states lying on a straightly rising trajectory and on its parallel daughter trajectorie s. 7&gt;.s&gt; The main purpose of this paper, however, is the very constructi on of a new theory of relativ- istic two-body system and its quantizatio n. Its application to the theory of hadrons will be developed separately ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-reparametrisation-covariance-as-a-method-of-derivation-not-a-check">1. Reparametrisation covariance as a <em>method</em> of derivation, not a check</h3>
+<p><strong>The idea.</strong> The equations of motion are not guessed and then verified to be covariant. Requiring covariance under general reparametrisation of the two world lines is used to <em>derive</em> them. The covariance is a tool that generates the theory. </p>
+<p><strong>What it would add.</strong> A derivation strategy the corpus does not use. <em>The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</em> (<code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>) treats reparametrisation as a property of an action already written; here it is the constraint that determines the action's structure, which is a stronger use of the same invariance and a transferable technique. </p>
+<p><strong>Where it lands.</strong> §<em>Symmetries of the Action</em>, as the generative use of covariance. </p>
+<p><strong>What stands in the way.</strong> Two world lines with independent parameters give a two-parameter family of reparametrisations; the derivation proceeds by imposing a form and checking, so the "derivation" is a constrained ansatz rather than a uniqueness theorem. </p>
+<h3 id="2-canonical-action-at-a-distance-is-possible-with-two-weak-equations">2. Canonical action-at-a-distance is possible — with two weak equations</h3>
+<p><strong>The idea.</strong> The literature said no canonical action-at-a-distance interaction exists in relativity. The answer here is that it exists if the canonical formalism is allowed two weak equations (constraints that vanish only on shell). The obstruction was not physical but an insistence on a formalism without constraints. </p>
+<p><strong>What it would add.</strong> A directly contrary claim to a standard no-go statement, with the loophole identified. This is the kind of result the corpus should record because it changes what counts as "impossible": not action-at-a-distance, but action-at-a-distance with an unconstrained canonical structure. </p>
+<p><strong>Where it lands.</strong> The corpus's constrained-systems discussion; natural home is §<em>The Stationary-Action Principle</em> of <em>The Relativistic Particle and the Lagrangian</em>. </p>
+<p><strong>What stands in the way.</strong> The construction works for the central-potential case and for two particles; the no-go literature concerns more general settings, so the contradiction is narrower than it sounds. </p>
+<h3 id="3-the-correspondence-principle-fixes-the-theory-the-potential-is-the-only-freedom">3. The Correspondence Principle fixes the theory; the potential is the only freedom</h3>
+<p><strong>The idea.</strong> Once one demands that the relativistic theory reduce to Newtonian mechanics with potential $U$ in the non-relativistic weak-coupling limit, the structure is fixed and only $U$ remains free. Then all bilocal models in the literature are the same theory with different $U$ — and their differences in internal dynamics are differences of potential, nothing deeper. </p>
+<p><strong>What it would add.</strong> A classification of the folder's own models. Reading this against the Yukawa-model history in <em>Relativistic Mechanics of Confined Particles</em> shows that the several "versions" differ by choice of structure function, which is exactly the parametrisation this paper establishes as the only freedom. That is a stronger organising statement than a historical list. </p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em> of <em>Hadron Structure from QCD: The Bound-State Problem</em>, as the potential-only-freedom claim. </p>
+<p><strong>What stands in the way.</strong> The claim covers models that satisfy the correspondence requirement; a bilocal model built from a different principle would not be covered, and the paper does not argue that all interesting ones do satisfy it. </p>
+<h3 id="4-elliptic-internal-motion">4. Elliptic internal motion</h3>
+<p><strong>The idea.</strong> For Hooke binding, the internal motion in the centre-of-mass frame is an <em>ellipse</em>, not a circle and not a straight-line oscillation. The general two-parameter orbit is elliptic, and the circular and radial cases are its degenerate limits. </p>
+<p><strong>What it would add.</strong> A concrete orbit to compare with the folder's rigid-rotator and oscillator pictures. <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) treats rotation with fixed length; here the length oscillates and the orbit is an ellipse, so the rotor is the circular special case of a larger family. </p>
+<p><strong>Where it lands.</strong> §<em>The Spectrum</em>, as the elliptic generalisation. </p>
+<p><strong>What stands in the way.</strong> The elliptic motion is classical; whether it survives quantisation as an observable structure, rather than only as a spectrum, is not shown. The remainder, one line each. That quantisation removes the parameters entirely is the same disappearance seen in the string paper, now for two points. That the paper refuses Wigner's approach as "not physically adequate" is a rare explicit rejection of a named alternative.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

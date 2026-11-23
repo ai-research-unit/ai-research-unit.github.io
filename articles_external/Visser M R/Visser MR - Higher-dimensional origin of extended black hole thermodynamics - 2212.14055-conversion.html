@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higher-dimensional origin of extended black hole thermodynamics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Higher-dimensional origin of extended black hole thermodynamics - 2212.14055.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="higher-dimensional-origin-of-extended-black-hole-thermodynamics"><strong>Higher-dimensional origin of extended black hole thermodynamics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.14055v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Antonia M. Frassino, Juan F. Pedraza, Andrew Svesko, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 20 April 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Higher-dimensional origin of extended black hole thermodynamics - 2212.14055-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Higher-dimensional origin of extended black hole thermodynamics - 2212.14055.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Higher-dimensional origin of extended black hole thermodynamics - 2212.14055.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Uses braneworld holography to give a higher-dimensional origin to the extended thermodynamics of black holes. Classical asymptotically anti-de Sitter black holes in the bulk map to quantum black holes one dimension lower, on a brane with a backreacting conformal matter sector. Varying the brane tension alone produces a dynamical cosmological constant on the brane, hence a variable pressure for the brane black hole. Bulk thermodynamics, including the brane's work term, induces extended thermodynamics on the brane exactly, to all orders in $1/c$. The worked example is the quantum BTZ black hole, which is sub-entropic and has a thermodynamic volume with a maximum.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"In this framework, classical, asymptotically anti-de Sitter black holes map to quantum black holes in one dimension less, with a conformal matter sector that backreacts on the brane geometry. Varying the brane tension alone leads to a dynamical cosmological constant on the brane, and, correspondingly, a variable pressure attributed to the brane black hole. Thus, standard thermodynamics in the bulk, including a work term coming from the brane, induces extended thermodynamics on the brane, exactly" — to all orders in $1/c$.</p>
+<h3 id="what-this-settles">What this settles</h3>
+<p>The extended thermodynamics of black holes has been treated as a formal device: vary $\Lambda$, call its conjugate a volume, and read off a $P$–$V$ diagram. Here the variation has a physical origin — the brane tension — and the pressure is a real pressure of a real system, not a bookkeeping choice. The authors present this as a resolution of what the pressure means.</p>
+<h3 id="the-worked-example">The worked example</h3>
+<p>"For proof of concept, we focused on a specific type of black hole, the qBTZ, exhibiting markedly different behavior from the classical BTZ. In particular, the qBTZ system is sub-entropic, and the thermodynamic volume attains a maximum value." A maximum volume is qualitatively new: classical extended thermodynamics has an unbounded volume.</p>
+<h3 id="the-bulk-interpretation">The bulk interpretation</h3>
+<p>"Our analysis suggests the mass of the bulk is interpreted as an enthalpy, consistent with the interpretation of black hole mass on the brane." This agrees with the field-theory reading in the chemical-potential paper, where the mass is the internal energy of the boundary theory and the bulk mass is the enthalpy of the gravitational system.</p>
+<h3 id="the-outlook">The outlook</h3>
+<p>Extensions to rotating and charged quantum BTZ, to quantum de Sitter black holes, and to quantum heat engines, where "universal features of heat engine efficiency will be modified due to backreaction".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-pressure-from-a-brane-tension">1. Pressure from a brane tension</h3>
+<p><strong>The idea.</strong> The pressure in extended black-hole thermodynamics is not a formal conjugate to $\Lambda$; it is the tension of a brane whose variation changes the induced cosmological constant. This is a <strong>mechanism</strong> giving a physical origin to a device.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> imports the $-2PV$ term and asks at open question 4 whether the thermodynamic volume is meaningful. The answer here is that it is meaningful when there is a physical parameter whose variation produces the pressure. That reframes the corpus's question as a search for such a parameter in its own action — and the corpus's action does have a coupling that could play the role.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> The origin is braneworld holography; the corpus has no brane and no extra dimension. The cost is that the corpus would need to identify its own tension-like parameter, which no current article does.</p>
+<h3 id="2-a-thermodynamic-volume-with-a-maximum">2. A thermodynamic volume with a maximum</h3>
+<p><strong>The idea.</strong> With backreaction, the thermodynamic volume is bounded above, unlike the classical case. This is a <strong>number</strong> claim, and a bound is qualitatively different from a formula.</p>
+<p><strong>What it would add.</strong> A bound on a thermodynamic variable is a structural fact the corpus has nowhere; its <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats $V$ as formally defined and unbounded. If the corpus's volume is ever computed, whether it is bounded is a checkable question this paper supplies.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> It is a property of the qBTZ solution in three dimensions; there is no general argument that a bound exists. Ranked second.</p>
+<h3 id="3-mass-as-enthalpy-consistently">3. Mass as enthalpy, consistently</h3>
+<p><strong>The idea.</strong> The bulk mass is an enthalpy while the brane (field-theory) energy is the internal energy, and this reading is consistent across the braneworld and the chemical-potential approaches.</p>
+<p><strong>What it would add.</strong> Two independent papers in this collection converge on the same identification, which strengthens it beyond a single argument. The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> should record the identification as doubly supported.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> Both supports are holographic; neither applies to a framework without a dual. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

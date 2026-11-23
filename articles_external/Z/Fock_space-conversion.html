@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fock Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Fock_space.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fock-space"><strong>Fock Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Fock space</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Fock_space-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Fock_space.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-scalar-fock-space-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Fock_space.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on Fock space: the algebraic construction of the state space of an unknown number of identical particles from a one-particle Hilbert space, named after Fock's 1932 paper "Configuration space and second quantization", and built as a direct sum of the zero-, one-, two-particle spaces with symmetric or antisymmetric restrictions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"The Fock space is an algebraic construction used in quantum mechanics to construct the quantum states space of a variable or unknown number of identical particles from a single particle Hilbert space. It is named after V. A. Fock, who first introduced it in his 1932 paper" Konfigurationsraum und zweite Quantelung " (" Configuration space and second quantization ")."</p>
+<h3 id="the-direct-sum">The direct sum</h3>
+<p>"Informally, a Fock space is the sum of a set of Hilbert spaces representing zero-particle states, one-particle states, two-particle states, and so on. If the identical particles are bosons, then the $n$-particle states" symmetrised, and for fermions antisymmetrised, so the summands are the symmetric or exterior powers of the one-particle space.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-vacuum-is-a-summand-not-a-state-in-a-summand">1. The vacuum is a summand, not a state in a summand</h3>
+<p><strong>The idea.</strong> The zero-particle space is one-dimensional and appears as a term of the direct sum. The vacuum is therefore structural, and every other summand is built from it by creation operators.</p>
+<p><strong>What it would add.</strong> A structural reading of the corpus's algebraic vacuum, which is an idempotent of the algebra. The direct-sum picture says why a vacuum must exist as a separate term rather than as a limit of states with fewer and fewer particles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-scalar-fock-space-in-biquaternionic-form.md</code>, at the construction.</p>
+<p><strong>What stands in the way.</strong> The corpus's construction is algebraic rather than Hilbert-space-theoretic, so the direct sum would have to become a decomposition of the algebra.</p>
+<h3 id="2-statistics-is-a-choice-of-summand">2. Statistics is a choice of summand</h3>
+<p><strong>The idea.</strong> Bosons and fermions differ only in whether the $n$-particle summand is the symmetric or the antisymmetric power. The dynamics does not enter.</p>
+<p><strong>What it would add.</strong> A reason the corpus's bosonic and fermionic Fock spaces are parallel articles: the difference is one word, and the rest is copied.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fermionic-fock-space-in-biquaternionic-form.md</code>, at its opening.</p>
+<p><strong>What stands in the way.</strong> Nothing; the corpus already presents them in parallel.</p>
+<p>This is an encyclopedia article; the construction, the naming and the direct-sum picture are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

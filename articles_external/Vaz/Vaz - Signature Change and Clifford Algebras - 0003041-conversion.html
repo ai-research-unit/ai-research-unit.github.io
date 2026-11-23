@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Change and Clifford Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Signature Change and Clifford Algebras - 0003041.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="signature-change-and-clifford-algebras"><strong>Signature Change and Clifford Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>math-ph/0003041v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>D. Miralles, J. M. Parra, J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 29 March 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Signature Change and Clifford Algebras - 0003041-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Signature Change and Clifford Algebras - 0003041.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Signature Change and Clifford Algebras - 0003041.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Changes the signature of a quadratic space without leaving its real Clifford algebra. The device is a new multiplication on the same underlying vector space, built so that the basis vectors square the way the other signature requires; the paper calls it a vee product. With it, the Minkowski Dirac equation can be written over a Euclidean background, the Euclidean Hodge star and its codifferential can be written over Minkowski, and duality in Minkowski can be defined without complexifying the algebra. An algebraic replacement for $t\mapsto it$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"Given the real Clifford algebra of a quadratic space with a given signature, we define a new product in this structure such that it simulates the Clifford product of a quadratic space with another signature different from the original one."</p>
+<p>Applications: "we use it in order to write the minkowskian Dirac equation over the euclidean spacetime and to define a new duality operation in terms of which one can find self-dual and anti-self-dual solutions of gauge fields over Minkowski spacetime analogous to the ones over Euclidean spacetime and without needing to complexify the original real algebra."</p>
+<h3 id="why-the-problem-is-real">Why the problem is real</h3>
+<p>"real Clifford algebras $\mathrm{Cl}_{p,q}$ and $\mathrm{Cl}_{p',q'}$ ... are in general not isomorphic, that is, when we change the signature we get in general different Clifford algebras. For example, the Clifford algebras $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$ are not isomorphic".</p>
+<p>And the standard workaround has no clear meaning: The interpretation of making $t\to it$ is not trivial.</p>
+<h3 id="the-device">The device</h3>
+<p>"we define a new product, which we call a vee product, A ∨ B simulating the Cl1,3 Clifford product in Cl4,0. After the selection" With a chosen unit vector $e_0$ for the fourth direction and three orthonormal $e_i$,</p>
+<p>$$u\vee v:=(-1)\left[vu-2(v\cdot e_0)(e_0\cdot u)\right].$$</p>
+<p>The point is what this does to the squares: it is easy to prove that $e_0\vee e_0=1$ and $e_i\vee e_i=-1$ $(i=1,2,3)$, while $e_\mu^2=e_\mu e_\mu=1$. So the same vectors, under the new law, satisfy</p>
+<p>$$u\vee w+w\vee u=2(u_0w_0-u_1w_1-u_2w_2-u_3w_3),$$</p>
+<p>a Lorentzian inner product, while the original product keeps the Euclidean one. The construction is associative and preserves the grading.</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"Given the Clifford algebra of a quadratic space with a given signature, we have defined a new product in this structure such that it simulates the Clifford product of a quadratic space with another arbitrary signature different from the original one. We have used this in order to give an algebraic approach to the so called Wick rotation."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-wick-rotation-is-a-re-multiplication-not-a-substitution">1. Wick rotation is a re-multiplication, not a substitution</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: instead of replacing $t$ by $it$ and continuing analytically, keep the real algebra and change the product. The basis vectors are untouched; only the law that combines them changes, and with it the sign of the inner product.</p>
+<p><strong>What it would add.</strong> The corpus's article on the Wick rotation interprets $t\mapsto it$ inside the biquaternion algebra and asks what the imaginary time means. This supplies the alternative that avoids the interpretation problem entirely: no complex numbers enter, no analytic continuation is needed, and the Euclidean and Minkowski algebras are related by an explicit change of multiplication on one real space. For a corpus that treats the Wick rotation as a change of layer, this is a second route to the same place, and the comparison is informative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.md</code>.</p>
+<p><strong>What stands in the way.</strong> The vee product is not the corpus's product, so every identity downstream would need re-deriving; and the construction needs a distinguished $e_0$, which reintroduces by hand the very asymmetry the algebraic route was meant to avoid.</p>
+<h3 id="2-signature-lives-in-the-multiplication-not-in-the-space">2. Signature lives in the multiplication, not in the space</h3>
+<p><strong>The idea.</strong> A <strong>claim with a consequence</strong>: the same vector space, with the same basis and the same elements, admits both a Euclidean and a Lorentzian quadratic form depending on which product is used. Signature is therefore a property of the algebra's law, not of the underlying set.</p>
+<p><strong>What it would add.</strong> The corpus's temporal-dimension article argues that the special role of the time direction is carried by the algebraic unit rather than by the coordinate. This is the same thesis in a sharper form: even the sign of $e_0^2$ is a choice of product. Together they would let the corpus state that neither the label "time" nor the sign of the metric is intrinsic to the vector space.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim concerns a family of algebras on one space, and the corpus's articles work inside a single fixed algebra; stating it would mean introducing a second product into articles built on one.</p>
+<h3 id="3-duality-in-minkowski-without-complexification">3. Duality in Minkowski without complexification</h3>
+<p><strong>The idea.</strong> A <strong>technique</strong>: with a signature-changing product in hand, the Euclidean Hodge star can be transplanted to Minkowski, so self-dual and anti-self-dual gauge fields can be defined there with a real operation instead of an $i$.</p>
+<p><strong>What it would add.</strong> The corpus's self-duality articles use the biquaternion's own $i$ to write the split, and its articles on instantons use the Euclidean split. This says the two splits are the same operation seen through different products, and gives a real-valued bridge between them. For a corpus that keeps the self-dual split as a central device, a proof that the Euclidean and Minkowskian versions are one construction is worth having.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The bridge is explicit only for the vee product, and the corpus's split is written in the biquaternion product; translating between them is the work the paper does not do.</p>
+<p>The rank: the re-multiplication reading first, because it answers a question the corpus leaves open; the signature-in-the-product claim second, because it is a thesis; the duality bridge last, because it is a technique that needs translation.</p>
+<p>The remaining items in one line each: the associativity of the vee product, which is what makes it a genuine algebra rather than a formal trick; the two-way use of the construction, Euclidean star in Minkowski and Minkowski Dirac in Euclidean, which shows the device is symmetric; and the citation of Pezzaglia and Adams on whether metric signature should matter at all, which is the broader question the paper's construction answers in the negative.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

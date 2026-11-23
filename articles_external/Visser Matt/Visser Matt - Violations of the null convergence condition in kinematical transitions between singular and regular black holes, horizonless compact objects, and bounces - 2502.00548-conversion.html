@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violations of the null convergence condition in kinematical transitions between singular and regular black holes, horizonless compact objects, and bounces — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Violations of the null convergence condition in kinematical transitions between…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="violations-of-the-null-convergence-condition-in-kinematical-transitions-between-singular-and-regular-black-holes-horizonless-compact-objects-and-bounces"><strong>Violations of the null convergence condition in kinematical transitions between singular and regular black holes, horizonless compact objects, and bounces</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2502.00548v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Johanna Borissova, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, February 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Violations of the null convergence condition in kinematical transitions between singular and regular black holes, horizonless compact objects, and bounces - 2502.00548-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Violations of the null convergence condition in kinematical transitions between singular and regular black holes, horizonless compact objects, and bounces - 2502.00548.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Violations of the null convergence condition in kinematical transitions between singular and regular black holes, horizonless compact objects, and bounces - 2502.00548.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Regular black holes evade the Penrose theorem. Some models satisfy the null convergence condition everywhere, which looks contradictory. The authors resolve the puzzle: the theorem needs global assumptions and says nothing about where focussing fails. They then ask where the condition must be violated during a transition between singular and regular configurations. The answer depends on the type of transition.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-puzzle">The puzzle</h3>
+<p>"How do regular black holes evade the Penrose singularity theorem? Various models of stationary regular black holes globally satisfy the null convergence condition (NCC)."</p>
+<h3 id="the-apparent-contradiction">The apparent contradiction</h3>
+<p>"At first glance this might seem puzzling, as the NCC must generically be violated to avoid the focusing point implied by the Penrose theorem."</p>
+<h3 id="the-resolution">The resolution</h3>
+<p>"In fact, the Penrose singularity theorem depends on subtle global assumptions and does not provide information about where and when the [focussing fails]"</p>
+<h3 id="the-extension">The extension</h3>
+<p>transitions between singular black holes, regular black holes, horizonless objects, and bounces</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-theorem-is-silent-about-location">1. The theorem is silent about location</h3>
+<p><strong>The idea.</strong> A global theorem does not say where its hypothesis breaks.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would gain a sharp statement of what global theorems can and cannot deliver.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of singularity theorems.</p>
+<p><strong>What stands in the way.</strong> The point is interpretive. Ranked first, because it is the cleanest resolution of the puzzle.</p>
+<h3 id="2-transitions-not-states">2. Transitions, not states</h3>
+<p><strong>The idea.</strong> The interesting question is the path between configurations, not the endpoints.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> would gain a case where a kinematical transition is the object of study.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of transitions.</p>
+<p><strong>What stands in the way.</strong> The transitions are modelled, not observed. Ranked second.</p>
+<h3 id="3-where-the-violation-sits">3. Where the violation sits</h3>
+<p><strong>The idea.</strong> The required violation can be localised in time and space.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> would gain a map from transition type to violation location.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conditions.</p>
+<p><strong>What stands in the way.</strong> The map is model-dependent. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

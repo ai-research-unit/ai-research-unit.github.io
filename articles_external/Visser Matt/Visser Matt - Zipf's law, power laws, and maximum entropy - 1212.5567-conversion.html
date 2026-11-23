@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zipf&#x27;s law, power laws, and maximum entropy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zipf&#x27;s law, power laws, and maximum entropy - 1212.5567.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="zipfs-law-power-laws-and-maximum-entropy"><strong>Zipf's law, power laws, and maximum entropy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1212.5567v4 [physics.soc-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 7 April 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Zipf's law, power laws, and maximum entropy - 1212.5567-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zipf's law, power laws, and maximum entropy - 1212.5567.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Zipf's law, power laws, and maximum entropy - 1212.5567.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Zipf's law and other power laws appear across many fields. A recent random group formation model explains them by maximum entropy with a chosen cost function. The author argues the cost function is the key assumption. With the constraint $\langle \ln n\rangle=\chi$ the power law follows simply. Variants, including hybrid geometric/power laws and finite state spaces, are treated.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-reach-of-the-problem">The reach of the problem</h3>
+<p>"Zipf's law, and power laws in general, have attracted and continue to attract considerable attention in a wide variety of disciplines — from astronomy to demographics to software structure to economics to linguistics to zoology, and even warfare."</p>
+<h3 id="the-model-under-review">The model under review</h3>
+<p>"A recent model of random group formation [RGF] attempts a general explanation of such phenomena based on Jaynes' notion of maximum entropy applied to a particular choice of cost function."</p>
+<h3 id="the-criticism">The criticism</h3>
+<p>"In the present article I argue that the specific cost function used in the RGF model [is the key assumption]"</p>
+<h3 id="the-main-point">The main point</h3>
+<p>"The main point of this article is that power laws, (and their variants, including hybrid geometric/power laws), have a very natural and straightforward interpretation in terms of the maximum entropy formalism pioneered by Jaynes."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"The key to obtaining a pure power law in the simplest possible manner lies in maximizing the Shannon entropy while imposing the simple constraint $\langle\ln n\rangle=\chi$."</p>
+<h3 id="the-variation">The variation</h3>
+<p>"Depending on other features of the [constraints, other distributions follow]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-constraints-select-distributions">1. Constraints select distributions</h3>
+<p><strong>The idea.</strong> A distribution follows from which average is held fixed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> would gain a case where the entropy functional's constraint set determines the outcome.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The constraint is inserted by hand. Ranked first, because it is the cleanest statement of the logic.</p>
+<h3 id="2-finite-state-spaces">2. Finite state spaces</h3>
+<p><strong>The idea.</strong> Truncating the state space changes a power law into a hybrid form.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code> would gain a case where the cut-off matters qualitatively.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code>, in the discussion of truncation.</p>
+<p><strong>What stands in the way.</strong> The treatment is formal. Ranked second.</p>
+<h3 id="3-power-laws-are-not-evidence">3. Power laws are not evidence</h3>
+<p><strong>The idea.</strong> A power law can arise from entropy maximisation under a simple constraint, so its presence proves little.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a caution about interpreting scaling as a signature.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of signatures.</p>
+<p><strong>What stands in the way.</strong> The argument is about models, not data. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

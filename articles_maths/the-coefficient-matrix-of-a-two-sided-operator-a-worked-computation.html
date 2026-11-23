@@ -74,7 +74,7 @@
 <p><strong>The purpose.</strong> This article carries out one coefficient computation in full. It takes a concrete $4\times4$ matrix, computes its sixteen coefficients in the basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, assembles the coefficient matrix, finds its rank, factors it, and reconstructs the matrix. Every step is written out, with the matrices displayed.</p>
 <p><strong>The matrix.</strong>
 $$
-M=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&2\\0&0&0&1\end{pmatrix}.
+M=\begin{pmatrix}1&amp;2&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;2\\0&amp;0&amp;0&amp;1\end{pmatrix}.
 $$
 It is upper triangular, all diagonal entries are $1$, so $\det M=1$ and $\operatorname{rank}M=4$. Its only nonzero entries are
 $$
@@ -124,18 +124,18 @@ $$</p>
 <h3 id="two-full-matrix-products">Two full matrix products</h3>
 <p><strong>The matrix $L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}$.</strong> Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
 $$
-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},
 \qquad
-L_{\mathrm{axf},\vec e_x}{R_{\mathrm{axf},e_t}}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
+L_{\mathrm{axf},\vec e_x}{R_{\mathrm{axf},e_t}}^{\mathsf T}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The product, row by row.</strong> Row $1$ of $L_{\mathrm{axf},\vec e_x}{R_{\mathrm{axf},e_t}}^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
 $$
 L_{\mathrm{axf},\vec e_x}{R_{\mathrm{axf},e_t}}^{\mathsf T}M=
 \begin{pmatrix}
-0&1&0&0\\
--1&-2&0&0\\
-0&0&0&1\\
-0&0&-1&-2
+0&amp;1&amp;0&amp;0\\
+-1&amp;-2&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1\\
+0&amp;0&amp;-1&amp;-2
 \end{pmatrix}.
 $$
 The trace is $0+(-2)+0+(-2)=-4$, hence
@@ -149,18 +149,18 @@ $$
 $$</p>
 <p><strong>The matrix $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$.</strong> Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
 $$
-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
 \qquad
-L_{\mathrm{axf},e_t}{R_{\mathrm{axf},\vec e_x}}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+L_{\mathrm{axf},e_t}{R_{\mathrm{axf},\vec e_x}}^{\mathsf T}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
 $$
 The product is
 $$
 L_{\mathrm{axf},e_t}{R_{\mathrm{axf},\vec e_x}}^{\mathsf T}M=
 \begin{pmatrix}
-0&1&0&0\\
--1&-2&0&0\\
-0&0&0&-1\\
-0&0&1&2
+0&amp;1&amp;0&amp;0\\
+-1&amp;-2&amp;0&amp;0\\
+0&amp;0&amp;0&amp;-1\\
+0&amp;0&amp;1&amp;2
 \end{pmatrix},
 $$
 whose trace is $0+(-2)+0+2=0$. Hence
@@ -248,10 +248,10 @@ $$</p>
 $$
 c(M)=
 \begin{pmatrix}
-1&0&0&0\\
--1&0&0&0\\
-0&0&0&0\\
-0&0&-1&0
+1&amp;0&amp;0&amp;0\\
+-1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;-1&amp;0
 \end{pmatrix}.
 $$</p>
 <p><strong>The nonzero entries.</strong> Only three: $c_{tt}=1$, $c_{xt}=-1$, $c_{zy}=-1$. All the others vanish.</p>
@@ -259,8 +259,8 @@ $$</p>
 <p><strong>The rows.</strong> Only rows $t$, $x$ and $z$ are nonzero, and rows $t$ and $x$ are proportional: row $x$ is minus row $t$. So the rank is at most $2$.</p>
 <p><strong>A minor.</strong> Take rows $\{t,z\}$ and columns $\{t,y\}$:
 $$
-\det\begin{pmatrix}c_{tt}&c_{ty}\\c_{zt}&c_{zy}\end{pmatrix}
-=\det\begin{pmatrix}1&0\\0&-1\end{pmatrix}=-1\ne0 .
+\det\begin{pmatrix}c_{tt}&amp;c_{ty}\\c_{zt}&amp;c_{zy}\end{pmatrix}
+=\det\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix}=-1\ne0 .
 $$
 So the rank is exactly $2$.</p>
 <p><strong>The length.</strong>
@@ -275,26 +275,26 @@ M=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},\vec e_x}R_{\mathrm{a
 $$</p>
 <p><strong>The three matrices.</strong>
 $$
-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 \qquad
--L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
 \qquad
--L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>The row sums.</strong>
 $$
 \begin{aligned}
-\text{row }1&:\ (1,0,0,0)+(0,1,0,0)+(0,1,0,0)=(1,2,0,0),\\
-\text{row }2&:\ (0,1,0,0)+(-1,0,0,0)+(1,0,0,0)=(0,1,0,0),\\
-\text{row }3&:\ (0,0,1,0)+(0,0,0,1)+(0,0,0,1)=(0,0,1,2),\\
-\text{row }4&:\ (0,0,0,1)+(0,0,-1,0)+(0,0,1,0)=(0,0,0,1).
+\text{row }1&amp;:\ (1,0,0,0)+(0,1,0,0)+(0,1,0,0)=(1,2,0,0),\\
+\text{row }2&amp;:\ (0,1,0,0)+(-1,0,0,0)+(1,0,0,0)=(0,1,0,0),\\
+\text{row }3&amp;:\ (0,0,1,0)+(0,0,0,1)+(0,0,0,1)=(0,0,1,2),\\
+\text{row }4&amp;:\ (0,0,0,1)+(0,0,-1,0)+(0,0,1,0)=(0,0,0,1).
 \end{aligned}
 $$
 Each row is the row of $M$. The reconstruction is correct.</p>
 <p><strong>The wrong reconstruction.</strong> With the transposed coefficient matrix one would write $M=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$. The first two rows still agree, but the third and fourth do not:
 $$
 L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}
-=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&0\\0&0&2&1\end{pmatrix},
+=\begin{pmatrix}1&amp;2&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;2&amp;1\end{pmatrix},
 $$
 which is not $M$. The two entries $M_{34}=2$ and $M_{43}=0$ are exchanged. This is the visible cost of the index slip.</p>
 <h2 id="the-factorisation">The Factorisation</h2>
@@ -320,10 +320,10 @@ $$</p>
 <p><strong>The two matrices.</strong>
 $$
 L_{\mathrm{axf},e_t-\vec e_x}=\mathrm{I}_4-L_{\mathrm{axf},\vec e_x}=
-\begin{pmatrix}1&1&0&0\\-1&1&0&0\\0&0&1&1\\0&0&-1&1\end{pmatrix},
+\begin{pmatrix}1&amp;1&amp;0&amp;0\\-1&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;1\\0&amp;0&amp;-1&amp;1\end{pmatrix},
 \qquad
 -L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=
-\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+\begin{pmatrix}0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;1&amp;0\end{pmatrix}.
 $$
 Their sum is $M$.</p>
 <p><strong>Why two is the minimum.</strong> The coefficient matrix has rank $2$. A single product would give a coefficient matrix of rank one. So no single two-sided operator equals $M$, and length $2$ is exact.</p>
@@ -366,7 +366,7 @@ $$</li>
 <tbody>
 <tr>
 <td>the matrix $M$</td>
-<td>$4\times4$ upper triangular, blocks $\begin{pmatrix}1&2\\0&1\end{pmatrix}$</td>
+<td>$4\times4$ upper triangular, blocks $\begin{pmatrix}1&amp;2\\0&amp;1\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>nonzero entries of $M$</td>
@@ -378,7 +378,7 @@ $$</li>
 </tr>
 <tr>
 <td>coefficient matrix</td>
-<td>$\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>rank of $c(M)$</td>

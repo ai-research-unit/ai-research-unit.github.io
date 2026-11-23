@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parity (Physics) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Parity_(physics).pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="parity-physics"><strong>Parity (Physics)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Parity (physics)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Parity_(physics)-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Parity_(physics).pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/p-t-and-the-representation-labels.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Parity_(physics).pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on parity: the transformation flipping the sign of a spatial coordinate, its three-dimensional form as a point reflection, its reading as a chirality test, the symmetry of all fundamental interactions except the weak one, and the history from the 1927 assumption to its violation in 1956.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-transformation">The transformation</h3>
+<p>"In physics, a parity transformation (also called parity inversion) is the flip in the sign of one spatial coordinate. In three dimensions, it can also refer to the simultaneous flip in the sign of all three spatial coordinates (a point reflection or point inversion)" — written as the map $(x,y,z)\mapsto(-x,-y,-z)$.</p>
+<h3 id="the-reading-as-a-test">The reading as a test</h3>
+<p>"It can also be thought of as a test for chirality of a physical phenomenon, in that a parity inversion transforms a phenomenon into its mirror image." That is the article's most useful sentence: parity is not merely a coordinate change but a probe that separates phenomena into mirror classes.</p>
+<h3 id="the-symmetry-and-its-breaking">The symmetry and its breaking</h3>
+<p>"All fundamental interactions of elementary particles, with the exception of the weak interaction, are symmetric under parity transformation." The exception is the article's substance: the weak interaction distinguishes left from right, so parity is not a symmetry of nature but of three of its four interactions.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-point-reflection-is-not-a-rotation-in-odd-dimensions">1. A point reflection is not a rotation in odd dimensions</h3>
+<p><strong>The idea.</strong> In three dimensions, flipping all three coordinates is not reachable by a rotation, because the determinant is $-1$. So parity is a genuinely separate operation, and its conservation is a statement with content. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A reason the corpus's $P$ is written as a separate generator and not as a rotation: in an odd number of dimensions, the two are distinguished by the sign of the determinant, which is exactly why the corpus can label states by $P$ at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/p-t-and-the-representation-labels.md</code>, at the choice of generators.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra does not have a spatial dimension count in the usual sense, so the determinant argument would need restating in terms of the algebra's grade.</p>
+<h3 id="2-violation-is-a-property-of-one-interaction">2. Violation is a property of one interaction</h3>
+<p><strong>The idea.</strong> Parity holds for the strong, electromagnetic and gravitational interactions and fails for the weak one. A theory that breaks parity everywhere is as wrong as one that never breaks it.</p>
+<p><strong>What it would add.</strong> A condition on the corpus's weak-sector articles, which must not impose parity as a global symmetry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, on the chiral coupling.</p>
+<p><strong>What stands in the way.</strong> The corpus's chiral wall is built from the algebra's structure, which is symmetric; making it chiral requires a choice the algebra alone does not force.</p>
+<p>This is an encyclopedia article; the transformation, the chirality reading, the symmetry statement and the violation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

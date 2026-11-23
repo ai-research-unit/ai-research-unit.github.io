@@ -74,7 +74,7 @@
 <p>This article treats the analysis of holomorphic functions of two complex variables on the space $\mathbb{C}^2$ itself: the Cauchy–Riemann equations, the ring of entire functions, the maximum principle, the identity theorem, the iterated Cauchy formula on the polydisc, and the one-variable facts that fail. It is the first of the four analytical articles of the category; the model domains are <em>The Ball and the Bicylinder in $\mathbb{C}^2$</em>, the inhomogeneous Cauchy–Riemann equation is <em>The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$</em>, and the Fourier and Radon analysis is <em>Harmonic Analysis on $\mathbb{C}^2$</em>.</p>
 <p>The general theory of holomorphic functions of $n$ variables, of domains of holomorphy, of pseudoconvexity and of the Cousin problems is <em>Several Complex Variables</em>. That article develops the theory for a variable number of variables and for arbitrary domains; this one fixes the space $\mathbb{C}^2$ and the functions defined on all of it, and it states what the case of two variables adds to the one-variable theory of <em>Complex Analysis</em>. The differential forms and the operators $\partial$ and $\bar\partial$ are from <em>Differential Forms and Stokes' Theorem</em>, and the notation is that of <em>Duo-Complex Numbers</em>: a point is $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, and the polydisc of multiradius $r=(r_1,r_2)$ about $Q_0$ is
 $$
-\Delta(Q_0,r)=\{Q:\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1,\ \lvert Q_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert<r_2\}.
+\Delta(Q_0,r)=\{Q:\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert&lt;r_1,\ \lvert Q_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert&lt;r_2\}.
 $$</p>
 <p><strong>The analysis of $\mathbb{C}^2$ is not the one-variable theory twice.</strong> Three things change. The Cauchy–Riemann system becomes overdetermined, so holomorphic functions are rigid and a harmonic function need not have a conjugate. The zeros and the singularities cease to be isolated, so the argument principle and the Laurent expansion have no direct analogues. And the boundary of a domain is odd-dimensional, so the Cauchy integral over a contour is replaced by an iterated integral over a torus or by a kernel that is not holomorphic. Everything that survives survives for the same reason: it is a one-variable statement applied on complex lines.</p>
 <h2 id="holomorphic-functions-of-two-variables">Holomorphic Functions of Two Variables</h2>
@@ -115,26 +115,26 @@ convergent absolutely and uniformly on every compact subset of $\Delta(Q_0,r)$.<
 <p><em>Proof.</em> A convergent power series is holomorphic, because it is holomorphic in each variable and the derivative of a uniformly convergent series may be taken term by term. Conversely, the iterated Cauchy formula of the section below represents a holomorphic function as an integral over the distinguished boundary of a smaller polydisc; expanding each Cauchy factor as a geometric series gives the coefficients and the convergence.</p>
 <p><strong>Proposition (the complex Jacobian and the real Jacobian).</strong> Let $f=(f_1,f_2)$ be holomorphic on $D$ and let
 $$
-J_f=\begin{pmatrix}\partial f_1/\partial Q_{\blacktriangle}&\partial f_1/\partial Q_{\blacktriangledown}\\ \partial f_2/\partial Q_{\blacktriangle}&\partial f_2/\partial Q_{\blacktriangledown}\end{pmatrix}
+J_f=\begin{pmatrix}\partial f_1/\partial Q_{\blacktriangle}&amp;\partial f_1/\partial Q_{\blacktriangledown}\\ \partial f_2/\partial Q_{\blacktriangle}&amp;\partial f_2/\partial Q_{\blacktriangledown}\end{pmatrix}
 $$
 be its complex Jacobian. Then $f$ is real differentiable, and its real Jacobian determinant is
 $$
 \det J_{\mathbb{R}}f=\lvert\det J_f\rvert^2.
 $$
 In particular $f$ is a local biholomorphism at $Q_0$ exactly when $\det J_f(Q_0)\neq0$.</p>
-<p><em>Proof.</em> Write $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ and read the real Jacobian as a block matrix $\begin{pmatrix}A&-B\\B&A\end{pmatrix}$, where $A$ and $B$ are the real and imaginary parts of $J_f$. The determinant of such a block matrix is $\lvert\det(A+iB)\rvert^2=\lvert\det J_f\rvert^2$. The inverse function theorem applied to the real map, together with the $\mathbb{C}$-linearity of the differential, gives the local biholomorphism.</p>
+<p><em>Proof.</em> Write $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ and read the real Jacobian as a block matrix $\begin{pmatrix}A&amp;-B\\B&amp;A\end{pmatrix}$, where $A$ and $B$ are the real and imaginary parts of $J_f$. The determinant of such a block matrix is $\lvert\det(A+iB)\rvert^2=\lvert\det J_f\rvert^2$. The inverse function theorem applied to the real map, together with the $\mathbb{C}$-linearity of the differential, gives the local biholomorphism.</p>
 <h2 id="the-cauchyriemann-equations-and-harmonicity">The Cauchy–Riemann Equations and Harmonicity</h2>
 <p><strong>The real and imaginary parts of a holomorphic function are harmonic, but the converse fails: a harmonic function has a conjugate only when it is pluriharmonic.</strong></p>
 <p><strong>Definition.</strong> The <strong>Laplacian</strong> on $\mathbb{C}^2$ is
 $$
-\Delta=\frac{\partial^2}{\partial q_{\blacktriangle}^2}+\frac{\partial^2}{\partial q'^2_{\blacktriangle}}+\frac{\partial^2}{\partial q_{\blacktriangledown}^2}+\frac{\partial^2}{\partial q'^2_{\blacktriangledown}}
+\Delta=\frac{\partial^2}{\partial q_{\blacktriangle}^2}+\frac{\partial^2}{\partial q'{}^2_{\blacktriangle}}+\frac{\partial^2}{\partial q_{\blacktriangledown}^2}+\frac{\partial^2}{\partial q'{}^2_{\blacktriangledown}}
 =4\left(\frac{\partial^2}{\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}}+\frac{\partial^2}{\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}}\right).
 $$
 A $C^2$ function is <strong>harmonic</strong> when $\Delta u=0$.</p>
 <p><strong>Proposition (holomorphic implies harmonic).</strong> If $f=u+iv$ is holomorphic on $D$, then $u$ and $v$ are harmonic on $D$.</p>
 <p><em>Proof.</em> From the Cauchy–Riemann equations, $\partial u/\partial q_{\blacktriangle}=\partial v/\partial q'_{\blacktriangle}$ and $\partial u/\partial q'_{\blacktriangle}=-\partial v/\partial q_{\blacktriangle}$, and the same with the descending triangle. Differentiating the first equation in $q_{\blacktriangle}$ and the second in $q'_{\blacktriangle}$ and adding gives
 $$
-\frac{\partial^2u}{\partial q_{\blacktriangle}^2}+\frac{\partial^2u}{\partial q'^2_{\blacktriangle}}
+\frac{\partial^2u}{\partial q_{\blacktriangle}^2}+\frac{\partial^2u}{\partial q'{}^2_{\blacktriangle}}
 =\frac{\partial^2v}{\partial q_{\blacktriangle}\partial q'_{\blacktriangle}}-\frac{\partial^2v}{\partial q'_{\blacktriangle}\partial q_{\blacktriangle}}=0,
 $$
 because the mixed partials commute. The same computation with the descending triangle, added to this one, gives $\Delta u=0$; exchanging $u$ and $v$ gives $\Delta v=0$.</p>
@@ -188,7 +188,7 @@ oriented by the increasing arguments of $Q_{\blacktriangle}-Q_{0\blacktriangle}$
 $$
 f(Q)=\frac{1}{(2\pi i)^2}\int_{T(Q_0,r)}\frac{f(\varkappa_{\mathrm{crd}})}{(\varkappa_{\mathrm{crd},\blacktriangle}-Q_{\blacktriangle})(\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{\blacktriangledown})}\,d\varkappa_{\mathrm{crd},\blacktriangledown}\,d\varkappa_{\mathrm{crd},\blacktriangle}.
 $$</p>
-<p><em>Proof.</em> For fixed $Q_{\blacktriangle}$ with $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1$, the function $\varkappa_{\mathrm{crd},\blacktriangledown}\mapsto f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})$ is holomorphic near the closed disc $\lvert\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{0\blacktriangledown}\rvert\le r_2$, so the one-variable Cauchy formula gives
+<p><em>Proof.</em> For fixed $Q_{\blacktriangle}$ with $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert&lt;r_1$, the function $\varkappa_{\mathrm{crd},\blacktriangledown}\mapsto f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})$ is holomorphic near the closed disc $\lvert\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{0\blacktriangledown}\rvert\le r_2$, so the one-variable Cauchy formula gives
 $$
 f(Q_{\blacktriangle},Q_{\blacktriangledown})=\frac{1}{2\pi i}\int_{\lvert\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{0\blacktriangledown}\rvert=r_2}\frac{f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})}{\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{\blacktriangledown}}\,d\varkappa_{\mathrm{crd},\blacktriangledown}.
 $$
@@ -272,7 +272,7 @@ The product of two entire functions of one variable is identically zero only whe
 <td>the Cauchy–Riemann operator</td>
 </tr>
 <tr>
-<td>$\Delta(Q_0,r)=\{\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1,\ \lvert Q_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert<r_2\}$</td>
+<td>$\Delta(Q_0,r)=\{\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert&lt;r_1,\ \lvert Q_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert&lt;r_2\}$</td>
 <td>the polydisc of multiradius $r$</td>
 </tr>
 <tr>

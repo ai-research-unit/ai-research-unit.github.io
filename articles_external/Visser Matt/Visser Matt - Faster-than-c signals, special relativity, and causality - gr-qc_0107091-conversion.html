@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faster-than-c signals, special relativity, and causality — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Faster-than-c signals, special relativity, and causality - gr-qc_0107091.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="faster-than-c-signals-special-relativity-and-causality"><strong>Faster-than-c signals, special relativity, and causality</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0107091v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 14 February 2002 (dated 15 November 2001)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Faster-than-c signals, special relativity, and causality - gr-qc_0107091-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Faster-than-c signals, special relativity, and causality - gr-qc_0107091.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Faster-than-c signals, special relativity, and causality - gr-qc_0107091.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks whether faster-than-light signalling conflicts with special relativity and causality. It argues that relativity needs an invariant speed, not a maximum one, so superluminal kinematics is allowed. Causality, however, cannot be judged without knowing how the signal propagates, so the authors examine the Scharnhorst effect, where photons travel faster than $c$ in a Casimir vacuum. They show that the effect is benign: the speed has a fixed value in a given frame because Lorentz invariance is softly broken by the choice of vacuum state, and the breaking does not extend to the symmetry group of the fundamental laws. Appendix A discusses when the derivation of the Lorentz group can fail, and Appendix B discusses negative energy densities.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Motivated by the recent attention on superluminal phenomena, we investigate the compatibility between faster-than-c propagation and the fundamental principles of relativity and causality."</p>
+<h3 id="relativitys-actual-requirement">Relativity's actual requirement</h3>
+<p>"special relativity can easily accommodate — indeed, does not exclude — faster-than-c signalling at the kinematical level."</p>
+<h3 id="the-conditional-nature-of-causality">The conditional nature of causality</h3>
+<p>"As far as causality is concerned, it is impossible to make statements of general validity, without specifying at least some features of the tachyonic propagation."</p>
+<h3 id="the-test-case">The test case</h3>
+<p>"We thus focus on the Scharnhorst effect (faster-than-c photon propagation in the Casimir vacuum), which is perhaps the most plausible candidate for a physically sound realization of these phenomena."</p>
+<h3 id="the-result">The result</h3>
+<p>"We demonstrate that in this case the faster-than-c aspects are 'benign' and constrained in such a manner as to not automatically lead to causality violations."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"We have shown that such effects are kinematically compatible with special relativity, because the latter requires only the existence of an invariant speed, not necessarily a maximum one. Also, they do not lead to causal paradoxes, which can arise only from tachyons whose speed has no fixed value in a given reference frame."</p>
+<h3 id="the-surprising-part">The surprising part</h3>
+<p>"Perhaps surprisingly, it is the soft breaking of Lorentz invariance, which always occurs in these effects, that fixes the value of the speed of the faster-than-c photons in a specific frame and thus saves causality. Such a breaking is, however, due to the choice of a vacuum state and does not extend to the invariance group of the fundamental physical laws, which still remains the usual $C=c$ Lorentz group."</p>
+<h3 id="the-caveat-about-fundamental-scales">The caveat about fundamental scales</h3>
+<p>"if there were a fundamental length scale in the physical universe, say $l_0$, under which no measurement could be performed, it would be meaningless to consider Lorentz transformations at speeds arbitrarily close to $C$."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-invariant-speed-is-not-a-maximum-speed">1. An invariant speed is not a maximum speed</h3>
+<p><strong>The idea.</strong> Relativity requires a speed that all frames agree on, not a speed nothing exceeds.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats the light cone as a hard barrier. This paper shows the barrier is a separate assumption, so the article should say whether it derives the barrier or imports it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the definition of the barrier.</p>
+<p><strong>What stands in the way.</strong> The argument is kinematical and does not address the framework's dynamics. Ranked first, because it separates two things the article treats as one.</p>
+<h3 id="2-soft-breaking-saves-causality">2. Soft breaking saves causality</h3>
+<p><strong>The idea.</strong> A preferred frame, broken softly by the vacuum, gives a fixed superluminal speed and avoids paradoxes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses propagation speeds. A mechanism that permits a speed above $c$ while keeping causal order is a case the article should consider, since its massless limit assumes the barrier.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of propagation.</p>
+<p><strong>What stands in the way.</strong> The mechanism is tied to a Casimir vacuum. Ranked second.</p>
+<h3 id="3-a-fundamental-length-blocks-the-derivation">3. A fundamental length blocks the derivation</h3>
+<p><strong>The idea.</strong> If lengths below some scale are meaningless, the Lorentz group cannot be derived at the limit.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use this to argue that any framework with a minimal length changes kinematics near the limit, which is a testable claim.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> It is a possibility, not an established effect. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

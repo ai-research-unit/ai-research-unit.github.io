@@ -88,7 +88,7 @@ $$</p>
 \qquad
 \tilde Q\tilde\Pi_{\mathrm{id},-}=\lambda_-\tilde\Pi_{\mathrm{id},-}.
 $$</p>
-<p>The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, <em>distinct</em> names the spectrally regular regime, and <em>Jordan</em> and <em>scalar</em> name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with the matrix $\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}$; its two columns are the two spinors.</p>
+<p>The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, <em>distinct</em> names the spectrally regular regime, and <em>Jordan</em> and <em>scalar</em> name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with the matrix $\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}$; its two columns are the two spinors.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -347,7 +347,7 @@ $$</p>
 <h3 id="spinors-and-the-math135-model">Spinors and the $2\times2$ Model</h3>
 <p>A spinor of the first Peirce copy is an element of $S_+$,</p>
 <p>$$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+},
 \qquad
 Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$</p>
@@ -357,7 +357,7 @@ $$</p>
 $$</p>
 <p>A spinor of the second Peirce copy is an element of $S_-$,</p>
 <p>$$
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-},
 \qquad
 Q_{2,12},Q_{2,22}\in\mathbb{C},
 $$</p>
@@ -379,22 +379,22 @@ $$</p>
 $$</p>
 <p>gives the eigenbasis model $\mathsf M_2^Q$. For a general element</p>
 <p>$$
-\tilde Q_2=a_{11}\tilde\Pi_{\mathrm{id},++a}_{12}\vec\Pi_{\mathrm{nil},-+a}_{21}\vec\Pi_{\mathrm{nil},++a}_{22}\tilde\Pi_{\mathrm{id},-},
+\tilde Q_2=a_{11}\tilde\Pi_{\mathrm{id},++a}{}_{12}\vec\Pi_{\mathrm{nil},-+a}{}_{21}\vec\Pi_{\mathrm{nil},++a}{}_{22}\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>the matrix is</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q_2)=
 \begin{pmatrix}
-a_{11}&a_{12}\\
-a_{21}&a_{22}
+a_{11}&amp;a_{12}\\
+a_{21}&amp;a_{22}
 \end{pmatrix},
 $$</p>
 <p>and for $\tilde Q$ itself</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=
 \begin{pmatrix}
-\lambda_+&0\\
-0&\lambda_-
+\lambda_+&amp;0\\
+0&amp;\lambda_-
 \end{pmatrix}.
 $$</p>
 <p>The first column is $S_+$ and the second column is $S_-$.</p>
@@ -404,20 +404,20 @@ $$</p>
 \mathsf M_2(e_t)=I_2,
 \qquad
 \mathsf M_2(\vec e_x)=
-\begin{pmatrix}0&-i\\-i&0\end{pmatrix},
+\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix},
 \qquad
 \mathsf M_2(\vec e_y)=
-\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},
 \qquad
 \mathsf M_2(\vec e_z)=
-\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\begin{pmatrix}-i&amp;0\\0&amp;i\end{pmatrix}.
 $$</p>
 <p>For a general element,</p>
 <p>$$
 \mathsf M_2(\tilde Q_2)=
 \begin{pmatrix}
-Q_{2,t}-iQ_{2,z}&-iQ_{2,x}-Q_{2,y}\\
--iQ_{2,x}+Q_{2,y}&Q_{2,t}+iQ_{2,z}
+Q_{2,t}-iQ_{2,z}&amp;-iQ_{2,x}-Q_{2,y}\\
+-iQ_{2,x}+Q_{2,y}&amp;Q_{2,t}+iQ_{2,z}
 \end{pmatrix},
 $$</p>
 <p>with trace $2Q_{2,t}$ and determinant $Q_{2,t}^2+Q_{2,x}^2+Q_{2,y}^2+Q_{2,z}^2$.</p>
@@ -487,16 +487,16 @@ $$</p>
 <p>Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no eigenbasis attached to $\tilde Q$, because the root $\vec{Ζ}=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.</p>
 <p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix},
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
-\mathsf M_2(\tilde Q)=\begin{pmatrix}1&0\\0&1\end{pmatrix},
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix},
 $$
 the two columns are $(1,0)$ and $(0,1)$. Both columns are eigenvectors with eigenvalue $1$: every idempotent is an eigenprojection, so every pair of complementary minimal left ideals is a pair of spinor spaces.</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
@@ -584,21 +584,21 @@ $$</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(i,-i).
 $$</p>
-<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -608,18 +608,18 @@ $$
 $$
 In the special case $\tilde Q_2=\vec e_x$ one has $Q_{2,11}=\lambda_+=i$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=-i$, so
 $$
-\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}i&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}i&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&-i\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;-i\end{pmatrix}.
 $$</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-0&-i\\
--i&0
+0&amp;-i\\
+-i&amp;0
 \end{pmatrix},
 \qquad
 \mathrm{tr}\,\mathsf M_2(\tilde Q)=0,
@@ -628,14 +628,14 @@ $$</p>
 $$</p>
 <p>The spectral projectors are</p>
 <p>$$
-\rho_+=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+\rho_+=\frac12\begin{pmatrix}1&amp;-1\\-1&amp;1\end{pmatrix},
 \qquad
-\rho_-=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},
+\rho_-=\frac12\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix},
 $$</p>
 <p>and indeed</p>
 <p>$$
 i\rho_+-i\rho_-=
-\begin{pmatrix}0&-i\\-i&0\end{pmatrix}.
+\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The element is a square root of $-e_t$:</p>
 <p>$$
@@ -691,21 +691,21 @@ $$</p>
 \mathsf M_2^Q(\tilde Q)=
 \operatorname{diag}\left(\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2}\right).
 $$</p>
-<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -715,19 +715,19 @@ $$
 $$
 In the special case $\tilde Q_2=\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ one has $Q_{2,11}=\lambda_+=\tfrac{1+i}{\sqrt2}$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=\tfrac{1-i}{\sqrt2}$, so
 $$
-\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix},
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&amp;0\\0&amp;\tfrac{1-i}{\sqrt2}\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;\tfrac{1-i}{\sqrt2}\end{pmatrix}.
 $$</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \frac{1}{\sqrt2}
 \begin{pmatrix}
-1&-i\\
--i&1
+1&amp;-i\\
+-i&amp;1
 \end{pmatrix},
 \qquad
 \mathrm{tr}\,\mathsf M_2(\tilde Q)=\sqrt2,
@@ -739,8 +739,8 @@ $$</p>
 \lambda_+\rho_++\lambda_-\rho_-=
 \frac{1}{\sqrt2}
 \begin{pmatrix}
-1&-i\\
--i&1
+1&amp;-i\\
+-i&amp;1
 \end{pmatrix}.
 $$</p>
 <p><strong>Consequences.</strong> The square is</p>
@@ -800,21 +800,21 @@ $$</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\sqrt2-1,\sqrt2+1).
 $$</p>
-<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -824,18 +824,18 @@ $$
 $$
 In the special case $\tilde Q_2=\sqrt2\,e_t+i\vec e_x$ one has $Q_{2,11}=\lambda_+=\sqrt2-1$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=\sqrt2+1$, so
 $$
-\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\sqrt2-1&0\\0&\sqrt2+1\end{pmatrix},
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\sqrt2-1&amp;0\\0&amp;\sqrt2+1\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\sqrt2-1&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\sqrt2-1&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&\sqrt2+1\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;\sqrt2+1\end{pmatrix}.
 $$</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-\sqrt2&1\\
-1&\sqrt2
+\sqrt2&amp;1\\
+1&amp;\sqrt2
 \end{pmatrix},
 \qquad
 \mathrm{tr}\,\mathsf M_2(\tilde Q)=2\sqrt2,
@@ -908,21 +908,21 @@ $$</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}\bigl(a(1+i),b(1-i)\bigr).
 $$</p>
-<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -932,18 +932,18 @@ $$
 $$
 In the special case $\tilde Q_2=(1-\tfrac{i}{\sqrt2})e_t+(1+\tfrac{i}{\sqrt2})\vec e_x$ one has $Q_{2,11}=\lambda_+=a(1+i)$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=b(1-i)$, so
 $$
-\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}a(1+i)&0\\0&b(1-i)\end{pmatrix},
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}a(1+i)&amp;0\\0&amp;b(1-i)\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}a(1+i)&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}a(1+i)&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&b(1-i)\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;b(1-i)\end{pmatrix}.
 $$</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-1-\frac{i}{\sqrt2}&\frac{1}{\sqrt2}-i\\
-\frac{1}{\sqrt2}-i&1-\frac{i}{\sqrt2}
+1-\frac{i}{\sqrt2}&amp;\frac{1}{\sqrt2}-i\\
+\frac{1}{\sqrt2}-i&amp;1-\frac{i}{\sqrt2}
 \end{pmatrix},
 \qquad
 \mathrm{tr}\,\mathsf M_2(\tilde Q)=2-i\sqrt2,
@@ -1002,31 +1002,31 @@ $$</p>
 $$</p>
 <p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix},
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
-\mathsf M_2(\tilde Q)=\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\[2pt]1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix},
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1+\frac{1}{\sqrt2}&amp;\frac{1}{\sqrt2}-1\\[2pt]1+\frac{1}{\sqrt2}&amp;1-\frac{1}{\sqrt2}\end{pmatrix},
 $$
 the two columns are $(1+\frac{1}{\sqrt2},\,1+\frac{1}{\sqrt2})$ and $(\frac{1}{\sqrt2}-1,\,1-\frac{1}{\sqrt2})$. The first column is an eigenvector with eigenvalue $1$; the second is not. The eigenspace is one line, so there is one eigenspinor and no second one, and no spinor decomposition of $\tilde Q$.</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\
-1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}
+1+\frac{1}{\sqrt2}&amp;\frac{1}{\sqrt2}-1\\
+1+\frac{1}{\sqrt2}&amp;1-\frac{1}{\sqrt2}
 \end{pmatrix}
 =I_2+\mathsf N,
 \qquad
 \mathsf N=
 \begin{pmatrix}
-\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\
-1+\frac{1}{\sqrt2}&-\frac{1}{\sqrt2}
+\frac{1}{\sqrt2}&amp;\frac{1}{\sqrt2}-1\\
+1+\frac{1}{\sqrt2}&amp;-\frac{1}{\sqrt2}
 \end{pmatrix},
 $$</p>
 <p>with $\mathsf N^2=0$. The kernel of $\mathsf N$ is the line spanned by $(1,1+\sqrt2)$, and the eigenspace of $\mathsf M_2(\tilde Q)$ is the two-dimensional space of matrices whose two columns lie on that line.</p>
@@ -1133,21 +1133,21 @@ $$</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-).
 $$</p>
-<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,21}\vec\Pi_{\mathrm{nil},++Q}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
+<p><strong>Spinors.</strong> A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,21}\vec\Pi_{\mathrm{nil},++Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. Its two columns are the two spinors:
 $$
-\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_{\mathrm{id},++Q}{}_{2,21}\vec\Pi_{\mathrm{nil},+}\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Pi_{\mathrm{nil},-+Q}{}_{2,22}\tilde\Pi_{\mathrm{id},-}\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -1157,18 +1157,18 @@ $$
 $$
 In the special case $\tilde Q_2=(1-\tfrac{i}{2})e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ one has $Q_{2,11}=\lambda_+=1-\tfrac{i}{2}+iB$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=1-\tfrac{i}{2}-iB$, so
 $$
-\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix},
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}1-\tfrac{i}{2}+iB&amp;0\\0&amp;1-\tfrac{i}{2}-iB\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}1-\tfrac{i}{2}+iB&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&amp;0\\0&amp;1-\tfrac{i}{2}-iB\end{pmatrix}.
 $$</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-\frac32-\frac{i}{2}&-\frac{i}{\sqrt2}\\
-\frac{2-i}{\sqrt2}&\frac12-\frac{i}{2}
+\frac32-\frac{i}{2}&amp;-\frac{i}{\sqrt2}\\
+\frac{2-i}{\sqrt2}&amp;\frac12-\frac{i}{2}
 \end{pmatrix},
 \qquad
 \mathrm{tr}\,\mathsf M_2(\tilde Q)=2-i,
@@ -1179,8 +1179,8 @@ $$</p>
 <p>$$
 \rho_+=\frac{1}{2B}
 \begin{pmatrix}
-B-\frac{i}{2}&-\frac{1}{\sqrt2}\\
--\frac{1+2i}{\sqrt2}&B+\frac{i}{2}
+B-\frac{i}{2}&amp;-\frac{1}{\sqrt2}\\
+-\frac{1+2i}{\sqrt2}&amp;B+\frac{i}{2}
 \end{pmatrix},
 \qquad
 \rho_-=I_2-\rho_+,
@@ -1233,31 +1233,31 @@ $$</p>
 $$</p>
 <p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&amp;Q_{2,12}\\Q_{2,21}&amp;Q_{2,22}\end{pmatrix},
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&amp;0\\Q_{2,21}&amp;0\end{pmatrix},
 \qquad
-\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&amp;Q_{2,12}\\0&amp;Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
-\mathsf M_2(\tilde Q)=\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix},
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1+i&amp;-2i\\0&amp;1+i\end{pmatrix},
 $$
 the two columns are $(1+i,\,0)$ and $(-2i,\,1+i)$. The first column is an eigenvector with eigenvalue $1+i$; the second is not. The eigenspace is one line, so there is one eigenspinor and no second one, and no spinor decomposition of $\tilde Q$.</p>
 <p><strong>Matrix.</strong> In the fixed model,</p>
 <p>$$
 \mathsf M_2(\tilde Q)=
 \begin{pmatrix}
-1+i&-2i\\
-0&1+i
+1+i&amp;-2i\\
+0&amp;1+i
 \end{pmatrix}
 =(1+i)I_2+\mathsf N,
 \qquad
 \mathsf N=
 \begin{pmatrix}
-0&-2i\\
-0&0
+0&amp;-2i\\
+0&amp;0
 \end{pmatrix},
 \qquad
 \mathsf N^2=0.
@@ -1434,43 +1434,43 @@ $$</p>
 </tr>
 <tr>
 <td>$2$</td>
-<td>$\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}0&amp;-i\\-i&amp;0\end{pmatrix}$</td>
 <td>$0$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$3$</td>
-<td>$\frac{1}{\sqrt2}\begin{pmatrix}1&-i\\-i&1\end{pmatrix}$</td>
+<td>$\frac{1}{\sqrt2}\begin{pmatrix}1&amp;-i\\-i&amp;1\end{pmatrix}$</td>
 <td>$\sqrt2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$4$</td>
-<td>$\begin{pmatrix}\sqrt2&1\\1&\sqrt2\end{pmatrix}$</td>
+<td>$\begin{pmatrix}\sqrt2&amp;1\\1&amp;\sqrt2\end{pmatrix}$</td>
 <td>$2\sqrt2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$5$</td>
-<td>$\begin{pmatrix}1-\frac{i}{\sqrt2}&\frac{1}{\sqrt2}-i\\\frac{1}{\sqrt2}-i&1-\frac{i}{\sqrt2}\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1-\frac{i}{\sqrt2}&amp;\frac{1}{\sqrt2}-i\\\frac{1}{\sqrt2}-i&amp;1-\frac{i}{\sqrt2}\end{pmatrix}$</td>
 <td>$2-i\sqrt2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$6$</td>
-<td>$\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1+\frac{1}{\sqrt2}&amp;\frac{1}{\sqrt2}-1\\1+\frac{1}{\sqrt2}&amp;1-\frac{1}{\sqrt2}\end{pmatrix}$</td>
 <td>$2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$7$</td>
-<td>$\begin{pmatrix}\frac32-\frac{i}{2}&-\frac{i}{\sqrt2}\\\frac{2-i}{\sqrt2}&\frac12-\frac{i}{2}\end{pmatrix}$</td>
+<td>$\begin{pmatrix}\frac32-\frac{i}{2}&amp;-\frac{i}{\sqrt2}\\\frac{2-i}{\sqrt2}&amp;\frac12-\frac{i}{2}\end{pmatrix}$</td>
 <td>$2-i$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$8$</td>
-<td>$\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix}$</td>
+<td>$\begin{pmatrix}1+i&amp;-2i\\0&amp;1+i\end{pmatrix}$</td>
 <td>$2+2i$</td>
 <td>$2i$</td>
 </tr>

@@ -76,7 +76,7 @@
 <p>$$
 Q_1 = 3 + 4i, \qquad Q_2 = 1 - 2i,
 $$</p>
-<p>chosen because their arithmetic is exact and their norms are small squares and small integers: $\langle Q_1\rangle_{*} = 25$ and $\langle Q_2\rangle_{*} = 5$, so that the inverse and the Galois action both display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of <em>Complex Algebra</em>: basis $1$, $i$, $i^2 = -1$, involution $\bar{Q} = q - i q'$, norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$.</p>
+<p>chosen because their arithmetic is exact and their norms are small squares and small integers: $\langle Q_1\rangle_{*} = 25$ and $\langle Q_2\rangle_{*} = 5$, so that the inverse and the Galois action both display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of <em>Complex Algebra</em>: basis $1$, $i$, $i^2 = -1$, involution $\bar{Q} = q - i q'$, norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$.</p>
 <p>Every numerical value below is recomputed exactly; where a trigonometric value is not rational it is given to the stated number of decimals and the exact replacement is indicated.</p>
 <h2 id="the-algebra-on-concrete-elements">The Algebra on Concrete Elements</h2>
 <p><strong>Sum, difference and product.</strong> With $Q_1 = 3+4i$ and $Q_2 = 1-2i$,</p>
@@ -176,11 +176,11 @@ $$</p>
 <h2 id="the-22-matrix-model-worked">The 2×2 Matrix Model, Worked</h2>
 <p>Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of <em>Complex Regular Element Representation</em>. The matrices of the two worked elements are</p>
 <p>$$
-\mathsf{M}_2(Q_1) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}, \qquad \mathsf{M}_2(Q_2) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}.
+\mathsf{M}_2(Q_1) = \begin{pmatrix} 3 &amp; -4 \\ 4 &amp; 3 \end{pmatrix}, \qquad \mathsf{M}_2(Q_2) = \begin{pmatrix} 1 &amp; 2 \\ -2 &amp; 1 \end{pmatrix}.
 $$</p>
 <p><strong>Multiplicativity.</strong> The product of the two matrices reproduces the product computed in components,</p>
 <p>$$
-\mathsf{M}_2(Q_1)\mathsf{M}_2(Q_2) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} 11 & 2 \\ -2 & 11 \end{pmatrix} = \mathsf{M}_2(Q_1Q_2),
+\mathsf{M}_2(Q_1)\mathsf{M}_2(Q_2) = \begin{pmatrix} 3 &amp; -4 \\ 4 &amp; 3 \end{pmatrix}\begin{pmatrix} 1 &amp; 2 \\ -2 &amp; 1 \end{pmatrix} = \begin{pmatrix} 11 &amp; 2 \\ -2 &amp; 11 \end{pmatrix} = \mathsf{M}_2(Q_1Q_2),
 $$</p>
 <p>the matrix of $Q_1Q_2 = 11-2i$.</p>
 <p><strong>The determinant is the norm.</strong> Each matrix has determinant equal to the norm of its element,</p>
@@ -189,7 +189,7 @@ $$</p>
 <p>so multiplicativity of the determinant is the multiplicativity $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$ on the worked pair.</p>
 <p><strong>Transposition is conjugation.</strong> The transpose of the matrix of $Q_1$ is the matrix of $\bar{Q}_1$:</p>
 <p>$$
-\mathsf{M}_2(Q_1)^{\mathsf{T}} = \begin{pmatrix} 3 & 4 \\ -4 & 3 \end{pmatrix} = \mathsf{M}_2(3-4i) = \mathsf{M}_2(\bar{Q}_1),
+\mathsf{M}_2(Q_1)^{\mathsf{T}} = \begin{pmatrix} 3 &amp; 4 \\ -4 &amp; 3 \end{pmatrix} = \mathsf{M}_2(3-4i) = \mathsf{M}_2(\bar{Q}_1),
 $$</p>
 <p>and likewise $\mathsf{M}_2(Q_2)^{\mathsf{T}} = \mathsf{M}_2(\bar{Q}_2)$.</p>
 <h2 id="the-galois-action-worked">The Galois Action, Worked</h2>
@@ -204,7 +204,7 @@ $$</p>
 <p>and the norm is preserved, $\langle \sigma(Q_1)\rangle_{*} = 25 = \langle Q_1\rangle_{*}$. The fixed points are exactly the real axis: $\sigma(Q_1) = Q_1$ would require $4 = 0$, so $Q_1$ is moved; $\sigma(3) = 3$ and $\sigma$ fixes every real number. The action is not $\mathbb{C}$-linear: $\sigma(i\cdot 1) = -i$ while $i\,\sigma(1) = i$, so $\sigma$ conjugates the scalar $i$, which is the concrete form of the conjugate-linearity of complex conjugation over $\mathbb{C}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The article exhibits the structures of the complex algebra on the elements $Q_1 = 3+4i$ and $Q_2 = 1-2i$. Their product is $Q_1Q_2 = 11-2i$ and their square norms are $\langle Q_1\rangle_{*} = 25$, $\langle Q_2\rangle_{*} = 5$, $\langle Q_1Q_2\rangle_{*} = 125$, so the norm is multiplicative on the worked pair. The identity and complex conjugation are the two involutions; conjugation sends $Q_1$ to $3-4i$ and $Q_2$ to $1+2i$, is an involution and an algebra automorphism, and fixes exactly the real axis while negating the imaginary axis.</p>
-<p>The eigencomponents of conjugation are $Q_{1,+} = 3 \in \mathbb{R}_{\mathbb{C}}$ and $Q_{1,-} = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $\langle Q_{1,+}\rangle_{*}+\langle Q_{1,-}\rangle_{*} = \langle Q_1\rangle_{*}$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. The unit criterion and the inverse formula belong to the topology layer and are developed, with the worked instances, in the companion article <em>Complex Norm and Invertibility</em>. The matrix model carries the same data: $\mathsf{M}_2(Q_1) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}$ and $\mathsf{M}_2(Q_2) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}$ multiply to $\mathsf{M}_2(Q_1Q_2)$, their determinants $25$ and $5$ are the norms of the elements, and $\mathsf{M}_2(Q_1)^{\mathsf{T}} = \mathsf{M}_2(\bar{Q}_1)$ is the transpose relation. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm on the worked elements and is conjugate-linear over $\mathbb{C}$.</p>
+<p>The eigencomponents of conjugation are $Q_{1,+} = 3 \in \mathbb{R}_{\mathbb{C}}$ and $Q_{1,-} = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $\langle Q_{1,+}\rangle_{*}+\langle Q_{1,-}\rangle_{*} = \langle Q_1\rangle_{*}$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. The unit criterion and the inverse formula belong to the topology layer and are developed, with the worked instances, in the companion article <em>Complex Norm and Invertibility</em>. The matrix model carries the same data: $\mathsf{M}_2(Q_1) = \begin{pmatrix} 3 &amp; -4 \\ 4 &amp; 3 \end{pmatrix}$ and $\mathsf{M}_2(Q_2) = \begin{pmatrix} 1 &amp; 2 \\ -2 &amp; 1 \end{pmatrix}$ multiply to $\mathsf{M}_2(Q_1Q_2)$, their determinants $25$ and $5$ are the norms of the elements, and $\mathsf{M}_2(Q_1)^{\mathsf{T}} = \mathsf{M}_2(\bar{Q}_1)$ is the transpose relation. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm on the worked elements and is conjugate-linear over $\mathbb{C}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -239,7 +239,7 @@ $$</p>
 <td>the real and imaginary subspaces</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$</td>
+<td>$\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'{}^2$</td>
 <td>the norm</td>
 </tr>
 <tr>

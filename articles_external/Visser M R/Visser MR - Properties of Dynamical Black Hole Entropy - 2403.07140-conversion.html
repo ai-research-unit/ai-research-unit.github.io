@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties of Dynamical Black Hole Entropy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Properties of Dynamical Black Hole Entropy - 2403.07140.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="properties-of-dynamical-black-hole-entropy"><strong>Properties of Dynamical Black Hole Entropy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2403.07140v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Manus R. Visser, Zihan Yan</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 February 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>60 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Properties of Dynamical Black Hole Entropy - 2403.07140-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Properties of Dynamical Black Hole Entropy - 2403.07140.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Properties of Dynamical Black Hole Entropy - 2403.07140.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives a pedagogical derivation of the dynamical black hole entropy of Hollands, Wald and Zhang, which satisfies the first law for non-stationary perturbations of a stationary Killing horizon and for arbitrary horizon cross-sections. The entropy is $S_{\text{dyn}}=(1-v\partial_v)S_{BH}$, where $v$ is the affine parameter along the horizon generators, so the dynamical entropy is the Bekenstein–Hawking entropy minus its own affine-parameter scaling. The derivation runs in two ways: by integrating the linearised Raychaudhuri equation between two cross-sections (the physical-process route), and by the Noether charge method on the covariant phase space, where the dynamical entropy is an "improved" Noether charge. The generalisation covers non-minimally coupled matter smooth on the horizon, relaxed gauge conditions, and an explicit check for $f(\text{Riemann})$ theories.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result-being-explained">The result being explained</h3>
+<p>"Recently, Hollands, Wald and Zhang have shown that the dynamical black hole entropy that satisfies this first law, for general relativity, is $S_{\text{dyn}}=(1-v\partial_v)S_{BH}$, where $v$ is the affine parameter of the null horizon generators and $S_{BH}$ is the Bekenstein-Hawking entropy, and for general diffeomorphism covariant theories of gravity $S_{\text{dyn}}=(1-v\partial_v)S_{\text{Wall}}$, where $S_{\text{Wall}}$ is the Wall entropy. They obtained the first law by applying the Noether charge method to non-stationary perturbations and arbitrary cross-sections. In this formalism, the dynamical black hole entropy is defined as an 'improved' Noether charge, which is unambiguous to first order in the perturbation."</p>
+<h3 id="what-the-paper-adds">What the paper adds</h3>
+<p>"we provide a pedagogical derivation of the physical process version of the non-stationary first law for general relativity by integrating the linearised Raychaudhuri equation between two arbitrary horizon cross-sections. Moreover, we generalise the derivation of the first law in [1] to non-minimally coupled matter fields that are smooth on the horizon, using boost weight arguments rather than Killing field arguments, and we relax some of the gauge conditions on the perturbations by allowing for non-zero variations of the horizon Killing field and surface gravity."</p>
+<h3 id="the-explicit-check">The explicit check</h3>
+<p>"for $f(\text{Riemann})$ theories of gravity we show explicitly using Gaussian null coordinates that the improved Noether charge is $S_{\text{dyn}}=(1-v\partial_v)S_{\text{Wall}}$, which is a non-trivial check of [1]."</p>
+<h3 id="the-structure-of-the-argument">The structure of the argument</h3>
+<p>The two routes are independent: the Raychaudhuri route uses the geometry of a congruence of null geodesics and the focusing of area; the Noether route uses the symplectic structure and the charge. That they agree is the paper's main check. A symplectic-potential exactness result is proved on the horizon,</p>
+<p>$$\Theta(\phi,\delta\phi)=_{H^+}\delta B_{H^+}(\phi), \qquad (paper\ 4.71)$$</p>
+<p>"for arbitrary diffeomorphism covariant Lagrangians that depend on the metric and any (non-minimally coupled) bosonic matter field that is smooth on the horizon".</p>
+<h3 id="the-scope">The scope</h3>
+<p>First order in the perturbation, arbitrary cross-sections, stationary background. The entropy is defined for each cross-section, not for the horizon as a whole, and the affine parameter's scaling is the extra ingredient that makes it well defined.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-entropy-defined-per-cross-section">1. Entropy defined per cross-section</h3>
+<p><strong>The idea.</strong> In a non-stationary setting the entropy is attached to each slice of the horizon rather than to the horizon as a whole, and the definition carries a derivative along the generators. This is a <strong>formula</strong>, and it is the only known statement of entropy for a horizon that is not in equilibrium.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> defines entropy from the area of the horizon, whole. In any process where the hole changes, that definition is too coarse, and the correction $(1-v\partial_v)$ is exactly the refinement the article's dynamical remarks lack.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the second-law and dynamics sections.</p>
+<p><strong>What stands in the way.</strong> It needs the affine parameter along null generators and a perturbative expansion; the corpus's horizon statements are algebraic. The cost is that the corpus would need a null congruence before the formula could be applied.</p>
+<h3 id="2-two-independent-derivations-that-must-agree">2. Two independent derivations that must agree</h3>
+<p><strong>The idea.</strong> The same entropy follows from integrating the Raychaudhuri equation and from the Noether charge; their agreement is the evidence that the definition is right.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code> treats agreement between two constructions as the criterion for a correct identification. Here is a worked case where the two constructions are geometric focusing and a variational charge — a pairing the corpus has not considered.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code>.</p>
+<p><strong>What stands in the way.</strong> Both routes need Lorentzian geometry of a horizon. Ranked second.</p>
+<h3 id="3-entropy-is-not-the-area-even-to-first-order">3. Entropy is not the area, even to first order</h3>
+<p><strong>The idea.</strong> For a perturbed horizon, the entropy is the area minus its affine scaling; the difference is first order in the perturbation, not a higher correction.</p>
+<p><strong>What it would add.</strong> A sharp caution: statements of the form "entropy is area" are exact only for stationary horizons, and the leading correction is not what one would guess. The corpus's <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code> states the area law without qualifiers.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a qualifier. Ranked first, because the article's statement is currently unqualified.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

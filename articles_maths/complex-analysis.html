@@ -82,7 +82,7 @@ $$</p>
 <p>where $i^2 = -1$. The real number $q$ is the <strong>real part</strong>, and $q'$ is the <strong>imaginary part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Im} Q$.</p>
 <p>The <strong>modulus</strong> of $Q$ is</p>
 <p>$$
-\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2},
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2},
 $$</p>
 <p>and the <strong>distance</strong> between two complex numbers $Q$ and $Q_1$ is</p>
 <p>$$
@@ -94,9 +94,9 @@ $$</p>
 $$</p>
 <p>The last two inequalities are used constantly: they say that convergence of complex numbers is equivalent to convergence of real and imaginary parts.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
+<p>The <strong>open ball</strong> of radius $r &gt; 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{C} : \sqrt{\langle Q - Q_0\rangle_{*}} < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C} : \sqrt{\langle Q - Q_0\rangle_{*}} &lt; r\}.
 $$</p>
 <p>It is an open disk. The <strong>closed ball</strong> is</p>
 <p>$$
@@ -104,7 +104,7 @@ $$</p>
 $$</p>
 <p>A <strong>neighborhood</strong> of $Q_0$ is any set containing some $B(Q_0, r)$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{C}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
+<p>A set $\Omega \subseteq \mathbb{C}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r &gt; 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{C}$ is <strong>closed</strong> if its complement $\mathbb{C} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually, arbitrary intersections of closed sets are closed. Finite unions of closed sets are closed.</p>
 <p><strong>Theorem.</strong> A set $F$ is closed iff every convergent sequence in $F$ has its limit in $F$.</p>
@@ -117,9 +117,9 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous complex-valued function on a compact set is bounded and attains its maximum and minimum modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(Q_n)$ of complex numbers <strong>converges</strong> to $L \in \mathbb{C}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of complex numbers <strong>converges</strong> to $L \in \mathbb{C}$ if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies \sqrt{\langle Q_n - L\rangle_{*}} < \epsilon.
+n \geq N \implies \sqrt{\langle Q_n - L\rangle_{*}} &lt; \epsilon.
 $$</p>
 <p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
@@ -134,9 +134,9 @@ $$</p>
 Q_n + Q_{1,n} \to L + M, \qquad Q_n Q_{1,n} \to L M, \qquad \frac{Q_n}{Q_{1,n}} \to \frac{L}{M} \text{ if } M \neq 0.
 $$</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies \sqrt{\langle Q_m - Q_n\rangle_{*}} < \epsilon.
+m, n \geq N \implies \sqrt{\langle Q_m - Q_n\rangle_{*}} &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{C}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}$ as a metric space. It follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -144,17 +144,17 @@ $$</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = L
 $$</p>
-<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q \in D, \; 0 < \sqrt{\langle Q - Q_0\rangle_{*}} < \delta \implies |f(Q) - L| < \epsilon.
+Q \in D, \; 0 &lt; \sqrt{\langle Q - Q_0\rangle_{*}} &lt; \delta \implies |f(Q) - L| &lt; \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{C}$ is <strong>continuous at</strong> $Q_0 \in D$ if $\lim_{Q \to Q_0} f(Q) = f(Q_0)$ when $Q_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}$ is <strong>continuous at</strong> $Q_0 \in D$ if $\lim_{Q \to Q_0} f(Q) = f(Q_0)$ when $Q_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q \in D, \; \sqrt{\langle Q - Q_0\rangle_{*}} < \delta \implies |f(Q) - f(Q_0)| < \epsilon.
+Q \in D, \; \sqrt{\langle Q - Q_0\rangle_{*}} &lt; \delta \implies |f(Q) - f(Q_0)| &lt; \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> $f$ is continuous at $Q_0$ iff for every sequence $(Q_n)$ in $D$ with $Q_n \to Q_0$, we have $f(Q_n) \to f(Q_0)$.</p>
@@ -162,9 +162,9 @@ $$</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + i v(q, q')$. Then $f$ is continuous at $Q_0 = q_0 + i q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces complex continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{C}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}$ is <strong>uniformly continuous</strong> if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-Q, Q_1 \in D, \; \sqrt{\langle Q - Q_1\rangle_{*}} < \delta \implies |f(Q) - f(Q_1)| < \epsilon.
+Q, Q_1 \in D, \; \sqrt{\langle Q - Q_1\rangle_{*}} &lt; \delta \implies |f(Q) - f(Q_1)| &lt; \epsilon.
 $$</p>
 <p>The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
@@ -264,7 +264,7 @@ $$</p>
 $$</p>
 <h3 id="liouvilles-theorem">Liouville's Theorem</h3>
 <p><strong>Theorem (Liouville).</strong> Every bounded entire function is constant.</p>
-<p><strong>Proof.</strong> Apply the Cauchy estimates to $\frac{df}{dQ}$ on a circle of radius $r$ around $Q_0$. Since $f$ is bounded by $M$, we have $|\frac{df}{dQ}(Q_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} = 0$ everywhere, so $f$ is constant.</p>
+<p><strong>Proof.</strong> Apply the Cauchy estimates to $\frac{df}{dQ}$ on a circle of radius $r$ around $Q_0$. Since $f$ is bounded by $M$, we have $|\frac{df}{dQ}(Q_0)| \leq M/r$ for every $r &gt; 0$. Let $r \to \infty$ to get $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} = 0$ everywhere, so $f$ is constant.</p>
 <p><strong>Corollary (Fundamental Theorem of Algebra).</strong> Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.</p>
 <p><strong>Proof.</strong> If $p$ has no root, then $1/p$ is entire and bounded (since $|p(Q)| \to \infty$ as $\sqrt{\langle Q\rangle_{*}} \to \infty$), hence constant by Liouville. Contradiction.</p>
 <h3 id="moreras-theorem">Morera's Theorem</h3>
@@ -281,8 +281,8 @@ $$</p>
 R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
 $$</p>
 <p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $\sqrt{\langle Q - Q_0\rangle_{*}} < R$ and diverges for $\sqrt{\langle Q - Q_0\rangle_{*}} > R$. On $\sqrt{\langle Q - Q_0\rangle_{*}} < R$ it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is holomorphic on $\sqrt{\langle Q - Q_0\rangle_{*}} < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$ and diverges for $\sqrt{\langle Q - Q_0\rangle_{*}} &gt; R$. On $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is holomorphic on $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
 \frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
 $$</p>
@@ -292,26 +292,26 @@ $$</p>
 <p>$$
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$</p>
-<p>valid for $\sqrt{\langle Q - Q_0\rangle_{*}} < r$.</p>
+<p>valid for $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; r$.</p>
 <p><strong>Proof.</strong> Use the Cauchy integral formula and expand $1/(Q_1 - Q)$ as a geometric series in $(Q - Q_0)/(Q_1 - Q_0)$.</p>
 <p><strong>Corollary.</strong> A holomorphic function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Corollary (identity theorem).</strong> If two holomorphic functions on a domain $\Omega$ agree on a set with an accumulation point in $\Omega$, they agree on all of $\Omega$.</p>
 <h3 id="laurent-series">Laurent Series</h3>
-<p><strong>Theorem (Laurent).</strong> If $f$ is holomorphic on an annulus $r < \sqrt{\langle Q - Q_0\rangle_{*}} < R$, then $f$ has a unique expansion</p>
+<p><strong>Theorem (Laurent).</strong> If $f$ is holomorphic on an annulus $r &lt; \sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$, then $f$ has a unique expansion</p>
 <p>$$
 f(Q) = \sum_{n=-\infty}^\infty c_n (Q - Q_0)^n
 $$</p>
 <p>valid on the annulus, with</p>
 <p>$$
-c_n = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = \rho} \frac{f(Q_1)}{(Q_1 - Q_0)^{n+1}} \, dQ_1, \qquad r < \rho < R.
+c_n = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = \rho} \frac{f(Q_1)}{(Q_1 - Q_0)^{n+1}} \, dQ_1, \qquad r &lt; \rho &lt; R.
 $$</p>
 <p><strong>Proof.</strong> Apply the Cauchy integral formula on the annulus and expand the kernel in two geometric series, one for the inner boundary and one for the outer boundary.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be holomorphic on a punctured disk $0 < \sqrt{\langle Q - Q_0\rangle_{*}} < R$.</p>
-<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a holomorphic function on $\sqrt{\langle Q - Q_0\rangle_{*}} < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.</p>
-<p><strong>Pole.</strong> $Q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.</p>
-<p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.</p>
+<p>Let $f$ be holomorphic on a punctured disk $0 &lt; \sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a holomorphic function on $\sqrt{\langle Q - Q_0\rangle_{*}} &lt; R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n &lt; 0$.</p>
+<p><strong>Pole.</strong> $Q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n &lt; -m$.</p>
+<p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n &lt; 0$.</p>
 <p><strong>Theorem (Riemann).</strong> $Q_0$ is removable iff $f$ is bounded near $Q_0$.</p>
 <p><strong>Theorem (Casorati–Weierstrass).</strong> If $Q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every complex number in every neighborhood of $Q_0$.</p>
 <p><strong>Theorem (Picard).</strong> If $Q_0$ is an essential singularity, then $f$ takes every complex value, with at most one exception, in every punctured neighborhood of $Q_0$.</p>
@@ -347,7 +347,7 @@ $$</p>
 <p>where $f$ is a rational function decaying faster than $1/|a|$ at infinity with no poles on the real axis, close the contour in the upper half-plane and use the residue theorem.</p>
 <p><strong>Integrals with trigonometric kernels.</strong> For an integral of the form</p>
 <p>$$
-\int_{-\infty}^\infty f(b) \exp(iab) \, db, \qquad a > 0,
+\int_{-\infty}^\infty f(b) \exp(iab) \, db, \qquad a &gt; 0,
 $$</p>
 <p>where $f$ is a rational function decaying at infinity with no poles on the real axis, use the same contour as above, with <strong>Jordan's lemma</strong> controlling the contribution from the semicircle.</p>
 <h3 id="the-argument-principle">The Argument Principle</h3>
@@ -358,12 +358,12 @@ $$</p>
 <p>where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{ord}(f, p_k)$ is the order of the pole.</p>
 <p><strong>Interpretation.</strong> The integral counts the winding number of $f(\gamma)$ around the origin, which equals the number of zeros minus the number of poles enclosed by $\gamma$.</p>
 <h3 id="rouches-theorem">Rouché's Theorem</h3>
-<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a simply connected domain, and let $\gamma$ be a closed contour such that $|g(Q)| < |f(Q)|$ on $\gamma$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
+<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a simply connected domain, and let $\gamma$ be a closed contour such that $|g(Q)| &lt; |f(Q)|$ on $\gamma$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
 <p><strong>Proof.</strong> Apply the argument principle to $f + tg$ for $t \in [0, 1]$ and note that the number of zeros is a continuous integer-valued function of $t$.</p>
 <p><strong>Corollary (Fundamental Theorem of Algebra, again).</strong> Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.</p>
-<p><strong>Proof.</strong> Write $p(Q) = a_n Q^n + \dots + a_0$. On a large circle, $|a_n Q^n| > |a_{n-1} Q^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n Q^n$, which is $n$.</p>
+<p><strong>Proof.</strong> Write $p(Q) = a_n Q^n + \dots + a_0$. On a large circle, $|a_n Q^n| &gt; |a_{n-1} Q^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n Q^n$, which is $n$.</p>
 <h2 id="summary">Summary</h2>
-<p>Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.</p>
+<p>Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.</p>
 <p>The derivative $\frac{df}{dQ}(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.</p>
 <p>Integration along paths defines the contour integral, and the theorems the derivative buys are the substance of the subject: Cauchy's theorem, the Cauchy integral formula, the Liouville theorem, and the residue theorem, which evaluates an integral by summing the local contributions of the singularities. Power series, Taylor series and Laurent series describe the local behaviour of a holomorphic function, and the Laurent expansion classifies the isolated singularities as removable, a pole, or essential. The article closes by applying the residue theorem to the evaluation of real integrals.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -388,7 +388,7 @@ $$</p>
 <td>Complex conjugate</td>
 </tr>
 <tr>
-<td>$\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$</td>
+<td>$\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'{}^2}$</td>
 <td>Modulus</td>
 </tr>
 <tr>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Equation of State for the &quot;Thermal&quot; Part of the Spin Current: Pauli Principle Contribution in the Spin Wave Spectrum in Cold Fermion System — Biquaternion Universe</title>
+  <meta name="description" content="| field | value | |---|---| | type | arXiv preprint | | arXiv | 1510.03468v1 [physics.plasm-ph] | | authors | Pavel A. Andreev, L. S. Kuz&#x27;menkov…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-equation-of-state-for-the-thermal-part-of-the-spin-current-pauli-principle-contribution-in-the-spin-wave-spectrum-in-cold-fermion-system"><strong>On Equation of State for the "Thermal" Part of the Spin Current: Pauli Principle Contribution in the Spin Wave Spectrum in Cold Fermion System</strong></h1>
+<p>| field | value | |---|---| 
+| type | arXiv preprint | 
+| arXiv | 1510.03468v1 [physics.plasm-ph] | 
+| authors | Pavel A. Andreev, L. S. Kuz'menkov (Lomonosov Moscow State University) | 
+| version | v1, 12 October 2015 | 
+| journal | not printed in the PDF | 
+| length | 16 pages | 
+| conversion | <code>articles_external/Z/On equation of state for the "thermal" part of the spin current Pauli principle contribution in the spin wave spectrum in cold fermion system1510.03468v1-conversion.md</code> | 
+| source | <code>/home/hp/Documents/Material/_Do/Z/On equation of state for the "thermal" part of the spin current Pauli principle contribution in the spin wave spectrum in cold fermion system1510.03468v1.pdf</code> | 
+| corpus anchor | <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code> | The original is <code>/home/hp/Documents/Material/_Do/Z/On equation of state for the "thermal" part of the spin current Pauli principle contribution in the spin wave spectrum in cold fermion system1510.03468v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. </p>
+<h2 id="what-the-paper-does-derives-the-equation-of-state-for-the-thermal-part-of-the-spin-current-in-spin-12-quantum-plasmas-a-term-previously-dropped-for-lack-of-such-an-equation-and-applies-it-to-the-spin-wave-spectrum-of-electron-ion-plasmas-with-degenerate-electrons-and-of-degenerate-electron-positron-plasmas-giving-also-a-nonlinear-pauli-equation-with-a-spinor-pressure-term">What the Paper Does Derives the equation of state for the thermal part of the spin current in spin-1/2 quantum plasmas — a term previously dropped for lack of such an equation — and applies it to the spin-wave spectrum of electron-ion plasmas with degenerate electrons and of degenerate electron-positron plasmas, giving also a nonlinear Pauli equation with a spinor pressure term.</h2>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap">The gap</h3>
+<p>"The spin density evolution equation found by means of the many-particle quantum hydrodynamics shows existence of the ''thermal'' part of the spin current, which is an analog of the thermal pressure, or the Fermi pressure for degenerate electron gas, existing in the Euler equation. However, this term has been dropped, since there has not been found any equation of state for the thermal part of the spin current (TPSC), like we have for the pressure."</p>
+<h3 id="the-result">The result</h3>
+<p>"In this paper we derive the equation of state for the TPSC and apply it for study of spectrum of collective excitations in spin-1/2 quantum plasmas."</p>
+<h3 id="the-systems">The systems</h3>
+<p>"We consider two kinds of plasmas: electron-ion plasma with motionless ions and degenerate electrons, and degenerate electron-positron plasmas. We also present the non-linear Pauli equation with the spinor pressure term containing described effects." The term is a spin analogue of the Fermi pressure: it comes from the Pauli principle acting on the spin distribution, so it is present even at zero temperature in a degenerate system. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-spin-current-has-a-pressure-and-it-needs-an-equation-of-state">1. The spin current has a pressure, and it needs an equation of state</h3>
+<p><strong>The idea.</strong> A hydrodynamic spin current is not fixed by the continuity equation alone; it requires a closure, and the closure is an equation of state for the thermal part. Without it the spin sector is underdetermined. This is a <strong>mechanism</strong>. </p>
+<p><strong>What it would add.</strong> The missing closure for the corpus's spin hydrodynamics, which writes the spin evolution equation and does not state what closes the hierarchy. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>, at the closure. </p>
+<p><strong>What stands in the way.</strong> The derivation is from many-particle quantum hydrodynamics with a Fermi distribution; the corpus's spin density is a bilinear of one field with no distribution behind it, so there is no ensemble to integrate over. </p>
+<h3 id="2-the-pauli-principle-contributes-at-zero-temperature">2. The Pauli principle contributes at zero temperature</h3>
+<p><strong>The idea.</strong> A degenerate gas has a spin pressure even when the thermal temperature vanishes, because the exclusion principle forces occupation of higher states. The "thermal" in the name refers to the statistical spread, not to a temperature. </p>
+<p><strong>What it would add.</strong> A warning about the word "thermal" in the corpus's dissipative and hydrodynamic articles, where it may suggest a temperature that is not there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, on the pressure term.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; it is a matter of naming.</p>
+<p>This is a twelve-page preprint; the gap, the equation of state, the two plasma cases and the nonlinear Pauli equation are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

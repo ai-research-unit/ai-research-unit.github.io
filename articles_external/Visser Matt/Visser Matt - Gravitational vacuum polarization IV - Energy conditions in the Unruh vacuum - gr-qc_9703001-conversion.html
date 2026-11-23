@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational vacuum polarization IV: Energy conditions in the Unruh vacuum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization IV - Energy conditions in the Unruh vacuum -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-vacuum-polarization-iv-energy-conditions-in-the-unruh-vacuum"><strong>Gravitational vacuum polarization IV: Energy conditions in the Unruh vacuum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9703001v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 28 February 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravitational vacuum polarization IV - Energy conditions in the Unruh vacuum - gr-qc_9703001-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization IV - Energy conditions in the Unruh vacuum - gr-qc_9703001.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization IV - Energy conditions in the Unruh vacuum - gr-qc_9703001.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The fourth paper in the series treats the Unruh vacuum for a conformally coupled massless scalar in Schwarzschild spacetime, in the test-field limit. Its main tool is a three-parameter semi-analytic model of the stress-energy tensor that matches all known numerical results to under one percent and respects the known analytic properties. With that model the author shows all pointwise conditions fail throughout the exterior, and the averaged null condition fails on all outgoing radial null geodesics. Two appendices extend the method to the Hartle–Hawking and Boulware states.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"I construct a semi-analytic model for the stress-energy tensor that globally reproduces all known numerical results to within 0.8%, and satisfies all known analytic features of the stress-energy tensor."</p>
+<h3 id="the-results">The results</h3>
+<p>"I show that in the Unruh vacuum (1) all standard point-wise energy conditions are violated throughout the exterior region—all the way from spatial infinity down to the event horizon, and (2) the averaged null energy condition is violated on all outgoing radial null geodesics."</p>
+<h3 id="the-side-results-in-the-appendices">The side results in the appendices</h3>
+<p>"In a pair of appendices I indicate general strategy for constructing semi-analytic models for the stress-energy tensor in the Hartle–Hawking and Boulware states, and show that the Page approximation is in a certain sense the minimal ansatz compatible with general properties of the stress-energy in the Hartle–Hawking state."</p>
+<h3 id="the-scope-of-the-claim">The scope of the claim</h3>
+<p>"Note that I am claiming that the violations are widespread—I am not claiming they are large. These are intrinsically quantum mechanical effects with the typical scale of the effect near the horizon being given by $\langle T^{\hat\mu\hat\nu}\rangle \approx \hbar c^9/(GM)^4$."</p>
+<h3 id="the-consistency-check">The consistency check</h3>
+<p>"The model passes the consistency test of correctly predicting the luminosity from the fit to the transverse pressure."</p>
+<h3 id="the-pattern-across-states">The pattern across states</h3>
+<p>"in view of the results quoted in [8, 9] we know that this is not a peculiarity of the Unruh vacuum, but that energy condition violations are also widespread in the Hartle–Hawking and Boulware vacuum states."</p>
+<h3 id="the-alternative-constraint">The alternative constraint</h3>
+<p>"Ford and Roman have argued [29, 30, 31] that in many situations the quantum inequalities may be of more interest than the energy conditions themselves. It seems that even if the energy condition violations are widespread, the quantum inequalities may more stringently constrain the dynamics"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-fitted-model-with-predictive-power">1. A fitted model with predictive power</h3>
+<p><strong>The idea.</strong> A three-parameter fit reproduces the stress-energy and then predicts an independent quantity correctly.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a model of what counts as evidence: a fit that predicts something it was not fitted to. The article asks for tests and this is a standard for them.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The fit covers one state in one geometry. Ranked first, because it supplies an evidential standard.</p>
+<h3 id="2-violation-is-widespread-but-small">2. Violation is widespread but small</h3>
+<p><strong>The idea.</strong> The size near the horizon scales as $\hbar c^9/(GM)^4$, tiny for stellar masses.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> can state how much its energy-based steps are corrected. A scaling law is more useful than a yes-or-no verdict.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of assumptions.</p>
+<p><strong>What stands in the way.</strong> The estimate is a typical scale, not a bound. Ranked second.</p>
+<h3 id="3-quantum-inequalities-as-the-real-constraint">3. Quantum inequalities as the real constraint</h3>
+<p><strong>The idea.</strong> Bounds on negative energy may restrict geometry more tightly than energy conditions do.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would acquire a stronger entry than the energy conditions it currently relies on.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The author does not evaluate the inequalities here. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

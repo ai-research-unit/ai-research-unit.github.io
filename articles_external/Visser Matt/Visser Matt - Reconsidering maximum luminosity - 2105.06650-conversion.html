@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconsidering maximum luminosity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reconsidering maximum luminosity - 2105.06650.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reconsidering-maximum-luminosity"><strong>Reconsidering maximum luminosity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2105.06650v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Aden Jowsey, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 14 May 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Reconsidering maximum luminosity - 2105.06650-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reconsidering maximum luminosity - 2105.06650.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Reconsidering maximum luminosity - 2105.06650.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Dimensional analysis gives a luminosity built from $c$ and $G$. Some authors have claimed nothing can exceed it. The authors trace the claim to Dyson, who they say was more cautious than his readers. They test the bound in general relativity using Vaidya spacetimes and the Misner–Sharp mass. The exterior geometry places no limit. Any bound must come from the interior, and there it depends on the model.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-history">The history</h3>
+<p>"The suggestion that there is a maximum luminosity (maximum power) in nature has a long and somewhat convoluted history."</p>
+<h3 id="the-attribution">The attribution</h3>
+<p>"Though this idea is commonly attributed to Freeman Dyson, he was actually much more circumspect in his views."</p>
+<h3 id="the-dimensional-fact">The dimensional fact</h3>
+<p>"dimensional analysis shows that the speed of light and Newton's constant of gravitation can be combined to define a quantity $P_*=\frac{c^5}{G_N}$ with the dimensions of luminosity"</p>
+<h3 id="the-requirement">The requirement</h3>
+<p>"in any physical situation we must have $P_{\text{physical}}=\wp\,P_*$, where the quantity $\wp$ is some dimensionless function of dimensionless parameters"</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"within the framework of general relativity the exterior spacetime places no physical constraint on the total luminosity"</p>
+<h3 id="the-only-route">The only route</h3>
+<p>"the only conceivable way in which one might place a bound on the total luminosity is by investigating the interior spacetime geometry of the source"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-dimensional-bounds-are-not-laws">1. Dimensional bounds are not laws</h3>
+<p><strong>The idea.</strong> A quantity built from constants of nature does not by itself bound anything.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs claims of naturalness. This is a case where a dimensional argument was mistaken for a physical one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of naturalness.</p>
+<p><strong>What stands in the way.</strong> The argument is about one quantity. Ranked first, because it is a reusable caution.</p>
+<h3 id="2-exterior-cannot-bound-the-source">2. Exterior cannot bound the source</h3>
+<p><strong>The idea.</strong> In general relativity the outside geometry does not limit how much the source radiates.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> relates mass, area, and radiation. A statement that the exterior is silent about power sharpens what those relations can claim.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of radiation.</p>
+<p><strong>What stands in the way.</strong> The result is specific to Vaidya. Ranked second.</p>
+<h3 id="3-interior-models-decide">3. Interior models decide</h3>
+<p><strong>The idea.</strong> A luminosity bound is a property of the matter model.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> treats sources generally. Showing that bounds live in the source would tell the target where to look.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of sources.</p>
+<p><strong>What stands in the way.</strong> No universal bound is found. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

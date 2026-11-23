@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometrical interpretation of the wave-pilot theory and manifestation of the spinor fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Geometrical interpretation of the wave-pilot theory and manifestation of the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="geometrical-interpretation-of-the-wave-pilot-theory-and-manifestation-of-the-spinor-fields"><strong>Geometrical interpretation of the wave-pilot theory and manifestation of the spinor fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2006.15709 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova, Gennady Shipov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 28 June 2020 (text dated 30 June 2020)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - Geometrical interpretation of the wave-pilot theory and manifestation of the spinor fields - 2006.15709-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Geometrical interpretation of the wave-pilot theory and manifestation of the spinor fields - 2006.15709.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/spin-velocity-locking-on-the-degenerate-sector.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Geometrical interpretation of the wave-pilot theory and manifestation of the spinor fields - 2006.15709.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reads the de Broglie–Bohm pilot wave geometrically: the wave is a field of tetrads, the tetrad's rotation is the particle's velocity, and the trajectory is a geodesic of a space with torsion. The spin vector is the tangent to a curve, so its line has curvature and torsion in the Serret–Frenet sense, and these are equated to the Ricci rotation coefficients. The paper's claim is that this accounts for the self-action of a spinning particle without a separate force. The construction is geometric; no new measurement is proposed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-manifold">The manifold</h3>
+<p>"The spinor wave in this interpretation represents an objectively real field"; the space "is represented as a vector bundle with a base formed by the translational coordinates and time, and the fiber of the bundle, specified at each point by the field of an tetrad eaµ , forms from the bilinear combinations of spinor wave function. It". The base plus six angular coordinates gives the event space of an accelerated frame.</p>
+<h3 id="the-guidance-equation-geometrized">The guidance equation, geometrized</h3>
+<p>The triad is parallel-transported along the flow, $\partial_ke^a_i+T^i_{jk}e^a_j=0$ (paper 35, with the frame index of the last factor lost in the extraction), and the velocity is the rotation of the spatial triad,
+$$v_i=-\frac{\hbar}{2m}e^k_{(2)}\partial_ie^{(1)}_k$$
+(paper 36). "e velocity (36) describes twisting around the spin The spin space is an anholonomic space, where the object axis s." In the anholonomic spin space the same velocity reads
+$$v=\frac{\hbar}{2m}\bigl(\tau s-\mathrm{div}(n)\,m+(\kappa+\mathrm{div}(m))\,n\bigr)$$
+(paper 48), where $s,m,n$ are the tangent, principal normal and binormal of the spin-vector line.</p>
+<h3 id="serretfrenet-and-the-identification">Serret–Frenet and the identification</h3>
+<p>$$\frac{ds}{ds}=\kappa m,\qquad \frac{dm}{ds}=-\kappa s+\tau n,\qquad \frac{dn}{ds}=-\tau m$$
+(paper 49–51), with
+$$T^s_{mk}\frac{dx^k}{ds}=-T^m_{sk}\frac{dx^k}{ds}=-\kappa,\qquad T^m_{nk}\frac{dx^k}{ds}=-T^n_{mk}\frac{dx^k}{ds}=-\tau$$
+(paper 52). "the curvature and torsion of the spin vector line is determined by the space torsion of the absolute parallelism geometry.", and "the self-action of the particle with a spin angles of Euler are embedded in the structure of the takes a geometric nature.". The object of anholonomity is $\Omega_{abc}=\partial_ie_{ak}-\partial_ke_{ai}e^b_ke^c_i$ (paper 47).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-velocity-as-the-rotation-rate-of-a-triad">1. Velocity as the rotation rate of a triad</h3>
+<p><strong>The idea.</strong> $v_i=-\frac{\hbar}{2m}e^k_{(2)}\partial_ie^{(1)}_k$ makes the particle's velocity the spatial variation of the frame's orientation, not the gradient of a phase. A <strong>formula</strong> with a mechanism behind it: motion is the frame turning.</p>
+<p><strong>What it would add.</strong> A second route to the corpus's spin-velocity relation, which fixes the speed as a function of the spin angle on the degenerate sector from the algebra. Here the speed is fixed by the frame's gradient, with no degeneracy assumed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-velocity-locking-on-the-degenerate-sector.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus derives its relation from the biquaternion's own angles, and this one from an external triad field that must be postulated; matching them would require identifying $e^{(1)},e^{(2)}$ with the corpus's rotor axes, which the paper never does.</p>
+<h3 id="2-curvature-and-torsion-of-the-spin-vector-line-as-the-connection-components">2. Curvature and torsion of the spin-vector line as the connection components</h3>
+<p><strong>The idea.</strong> The identification (paper 52) equates the Serret–Frenet curvature and torsion of the curve traced by the spin vector to components of the Ricci rotation coefficients. A <strong>reading</strong> that turns a curve's shape into a connection.</p>
+<p><strong>What it would add.</strong> A quantitative meaning for the phrase that the spin follows the geometry: three scalars of a space curve become three components of the torsion.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is made for a curve, i.e. along a one-dimensional path, and it involves only the components of $T$ contracted with $dx^k/ds$; it does not determine the torsion tensor off the path, so the word "determined by" in the conclusion is stronger than the display supports. </p>
+<h3 id="3-self-action-without-a-self-force">3. Self-action without a self-force</h3>
+<p><strong>The idea.</strong> The particle's own spin curves the space it moves in, and the guidance equation then moves it — so the "self-action" is a back-reaction of geometry rather than a force term. A <strong>mechanism</strong>. </p>
+<p><strong>What it would add.</strong> An alternative to writing a spin-spin interaction explicitly, which is what the corpus's spin fluid does when it wants a self-term. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>. </p>
+<p><strong>What stands in the way.</strong> Nothing in the paper solves for the geometry sourced by a given spin; the torsion is prescribed and the curve is read off it. Without that step the "self" is a name, and the corpus's explicit interaction term at least has a coefficient.</p>
+<p>The rank is a judgement: the rotational velocity first, because it is a formula with a computation behind it; the Serret–Frenet identification second, because it is checkable along a path; the self-action reading third, because the sourcing is missing.</p>
+<p>Eight pages: the bundle and tetrad, anholonomic space and torsion, the geometrized guidance equation, the Serret–Frenet frame, the identification of curvature and torsion, and the discussion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

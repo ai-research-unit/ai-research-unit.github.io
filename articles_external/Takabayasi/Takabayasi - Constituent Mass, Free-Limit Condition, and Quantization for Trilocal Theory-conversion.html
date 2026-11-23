@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="constituent-mass-free-limit-condition-and-quantization-for-trilocal-theory"><strong>Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>60</strong> (1978) 595, No. 2; received 30 March 1978</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Completes the three-point model begun in the earlier trilocal paper. Four things are added. The theory is recast in the constrained Hamiltonian formalism, so its constraint algebra is visible. The free-limit condition is stated — the requirement that when the confining force is switched off each constituent returns to its own mass shell — and expressed as extra second-class constraints. Quantisation is given twice, normally and with an indefinite metric, and the two agree for equal limiting masses. For unequal limiting masses only the indefinite-metric quantisation survives, and the mass differences produce a nonlinearity in the leading trajectory through one parameter $\Psi$. A modified model is added in which the three points form an open chain rather than a closed one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-four-contributions-as-abstracted">The four contributions, as abstracted</h3>
+<p>Trilocal theory representing relativistic mechanics of three interacting particles (given previously) is supplemented for the following important respects. (i) Theory is cast into the general Hamiltonian formalism to exhibit its algebraic aspect. (ii) The model is completed by the clarification of the extra constraints ensuring that in the force-free limit the rest mass of each constituent should be reduced to structure constant. (iii) Quantum theory is given in two alternative forms, the normal quantization and the one which resorts to indefinite metric, for the case when constituents have equal limiting mass. (iv) For the case of unequal limiting constituent masses, however, only the latter quantization is applicable, and in this case the differences between squared constituent masses cause nonlinearity of the leading trajectory through a characteristic quantity $\Psi$. (v) A modified version of trilocal model, which is analogous to open string theory, is given.</p>
+<h3 id="what-was-missing">What was missing</h3>
+<p>That is, our trilocal theory does not automatically incorporate that requirement. Certainly we noted that this theory satisfied it for several important cases; yet the general condition for it has been lacking.</p>
+<p>The point is that the masses of the constituents are clearly definable. At the same time our theory differs from the usual approaches to classical relativistic many-body problem in the sense that those constituent rest masses are not assumed to be structure constants independent of mutual interactions. Under this situation, however, the theory should still satisfy the weaker requirement that in the hypothetical limit where the 'constructive force' be turned off adiabatically the theory should tend to that of three free particles, each lying on its mass shell; and indeed this requirement was fulfilled in the case of our bilocal theory.</p>
+<h3 id="quantisation">Quantisation</h3>
+<p>For the present model the method of quantization based on Dirac bracket relations is very complicated due to the presence of many (really eight) second-class constraints, accompanying the problem of the ordering ambiguity. The covariant route works: we employ $a^{r\mu}=((3\kappa)^{-1}\Pi^{r\mu}-i(3\kappa)^{1/2}\xi^{r\mu})/\sqrt2$ and its Hermitian conjugate, satisfying $[a^{r\mu},a^{s\nu\dagger}]=\delta^{rs}g^{\mu\nu}$.</p>
+<p>By virtue of the subsidiary conditions the mass spectrum determined is free from tachyons. Our model is thus defined by the wave equation, the subsidiary conditions and the extra conditions in quantum theory. It has linearly rising leading trajectory whose slope agrees with the classical value $\alpha'=(6\sqrt3\kappa)^{-1}$.</p>
+<h3 id="equal-masses-simplify-unequal-masses-do-not">Equal masses simplify; unequal masses do not</h3>
+<p>In the case of bilocal model there is only one relative vector and the condition was sufficient for picking up the leading trajectory, but in the present trilocal case the states on the leading trajectory are picked up by the conditions of a pair, and as in the classical case this model picks up the states of relativistic rigid motion from all possible states.</p>
+<p>For unequal masses: "the point is that in the present case if we adopt these as extra constraints then the first-class constraint remains of first class since ..., but if we adopt those then it can no longer be of first class (unless $\mu_r=0$). As stated before this choice must be discarded for the purpose of baryonic model because it does not accommodate the states on the leading trajectory of the original model."</p>
+<p>On the other hand, the above difficulty can be overcome if we go over to quantum theory by adopting the method of indefinite metric.</p>
+<p>Equations show that the differences between squared constituent masses cause nonlinearity of the trajectory through the characteristic parameter $\Psi$, but at large $M$ the trajectory approaches a linear one which has the same slope as in the equal mass case provided that the same $\kappa$ value be assumed.</p>
+<h3 id="the-modified-open-chain-model">The modified open-chain model</h3>
+<p>The trilocal theory dealt with so far has started from the condition of equal-time points on the world lines. "However, if we now remark that this is not the unique possibility for the consistent definition of equal-$\tau$ points on the world lines ... we now allow to modify this condition, breaking at the same time the $O(2)$ symmetry, we find a curious possibility of constructing a new trilocal model (with equal limiting constituent masses) satisfying the free-limit condition."</p>
+<p>"These imply that the constituents have the same mass ... in the force-free limit. However, the three particles are not equivalent." This model is analogous to the open string model (while the former one is analogous to a closed string). Indeed the equations of motion show that in this model the three particles form a 'chain' with $\xi^1$ and $\xi^2$ as the 'ends' and $\xi^3$ as the 'middle' such that strong attractive Hooke force (with the force coefficient $4/3\,\kappa'$) works between each end and the middle, while weak repulsive Hooke force (with the coefficient $1/6\,\kappa'$) works between both ends.</p>
+<h3 id="which-baryons-the-model-can-serve">Which baryons the model can serve</h3>
+<p>"We take our trilocal theory as representing a primitive model of baryonic states, where the $m_\alpha$'s represent the limiting masses of constituent quarks. Thus ... $\Psi=0$ for nucleons and their resonances, so that their trajectories ($N$ and $\Delta$ trajectories) must still be linear everywhere in this model. For $\Lambda$, $\Sigma$ and $\Xi$, and their resonances we have $\Psi\approx(3/2)(m_\Lambda^2-m_N^2)^2$, so that ... trajectories for them are almost linear as soon as $M&gt;(3/\sqrt2)(m_\Lambda^2-m_N^2)$. This result does not contradict experimental hadron spectra for reasonable values of the quark masses."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-free-limit-condition-a-constraint-that-survives-the-removal-of-the-interaction">1. Free-limit condition — a constraint that survives the removal of the interaction</h3>
+<p><strong>The idea.</strong> If constituent masses are not put in by hand but emerge from the binding, then something must guarantee that switching the binding off returns three free particles on their mass shells. That something is an extra set of second-class constraints, and it is what makes the model <em>specified</em> rather than merely written down.</p>
+<p><strong>What it would add.</strong> A requirement the corpus does not impose. Extended models in the folder with oscillator binding are quantised without the guarantee that the $g\to0$ limit is three free particles; here that limit is the condition that fixes the constraints. It is a criterion of adequacy that can be applied to any bound-state model and that most do not meet.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em> of <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>), as the adequacy condition.</p>
+<p><strong>What stands in the way.</strong> The condition is formulated for action-at-a-distance models with a definite confining potential; a field-theoretic bound state has no parameter to switch off.</p>
+<h3 id="2-unequal-masses-force-the-indefinite-metric">2. Unequal masses force the indefinite metric</h3>
+<p><strong>The idea.</strong> For equal limiting masses the model quantises normally. For unequal ones the constraint that was first class stops being first class, the naive quantisation fails, and only the indefinite-metric route remains. Inequality of the constituents is not a small perturbation — it changes which quantisation exists.</p>
+<p><strong>What it would add.</strong> A structural reason for the indefinite metric. The corpus treats the indefinite metric as a device (ghost suppression, relative-time accounting); here it is <em>selected</em> by a property of the constituents, and the normal quantisation is not available. That is a stronger justification than convenience.</p>
+<p><strong>Where it lands.</strong> §<em>The Indefinite Metric</em> of the conversion of <em>Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude</em> in this folder, as the selection argument.</p>
+<p><strong>What stands in the way.</strong> The argument is made inside a specific trilocal model; whether unequal masses force the indefinite metric for any extended system is not claimed.</p>
+<h3 id="3-a-nonlinearity-parameter-and-why-it-is-invisible-in-the-data">3. A nonlinearity parameter, and why it is invisible in the data</h3>
+<p><strong>The idea.</strong> The mass-squared differences of the constituents enter the trajectory through one combination $\Psi=\mu_1^2+\mu_2^2$, and the trajectory becomes linear again above a mass threshold set by $\Psi$. For $N$ and $\Delta$ the parameter vanishes identically; for $\Lambda,\Sigma,\Xi$ it is small enough that the curvature sits below the observed spectrum.</p>
+<p><strong>What it would add.</strong> A worked example of a predicted deviation that is real, calculable, and unobservable for the reason given. The corpus's trajectory discussions treat linearity as exact; here linearity is an approximation whose error is computed and shown to be consistent with data — a different and more honest status.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Slopes of Mesons</em> in this folder, §<em>The Slope</em>, as the curvature estimate.</p>
+<p><strong>What stands in the way.</strong> The estimate uses constituent masses fitted within the model, so it is consistency rather than prediction.</p>
+<h3 id="4-open-and-closed-chains-from-one-family-of-constraints">4. Open and closed chains from one family of constraints</h3>
+<p><strong>The idea.</strong> Changing the equal-time condition, at the cost of the $O(2)$ symmetry, turns the closed three-body system into an open chain with strong bonds to a middle point and a weak repulsion between the ends. The closed case is the analogue of the closed string and the open case of the open string — but both are three points, and the difference is which constraint was relaxed.</p>
+<p><strong>What it would add.</strong> A discrete model in which "open" and "closed" are two constraint choices rather than two topologies. The corpus's string discussions take open and closed as given boundary conditions; here the boundary condition is derived from a choice of constraint, which shows how little topology is needed to produce the distinction. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>Theory of Relativistic String and Super-Wave Equation. I</em> in this folder, §<em>The Model and the Constraint</em>, as the discrete precursor. </p>
+<p><strong>What stands in the way.</strong> Three points cannot distinguish the cases cleanly — the "closed" chain is closed only by the equal-time condition, not by an identification of ends.</p>
+<p>The remainder, one line each. That the slope $\alpha'=(6\sqrt3\kappa)^{-1}$ agrees between the classical and quantum treatments is the paper's check on the constraint programme. That the earlier appendix equation (B·2) is corrected in this paper is noted in a footnote, so the two trilocal papers must be read together.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

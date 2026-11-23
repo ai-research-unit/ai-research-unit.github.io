@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitation, and Quantum Theory, as Emergent Phenomena — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Gravitation, and quantum theory, as emergent phenomena - 2308.16216.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitation-and-quantum-theory-as-emergent-phenomena"><strong>Gravitation, and Quantum Theory, as Emergent Phenomena</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2308.16216v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, August 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Gravitation, and quantum theory, as emergent phenomena - 2308.16216-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Gravitation, and quantum theory, as emergent phenomena - 2308.16216.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_maths/normed-division-algebras-and-the-hurwitz-theorem.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Gravitation, and quantum theory, as emergent phenomena - 2308.16216.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An overview of the octonionic programme: a pre-quantum, pre-spacetime matrix dynamics whose statistical mechanics gives quantum theory, whose localisation gives classical spacetime, and whose algebra gives the standard model. The striking part is the arithmetic. Solving the Dirac equation in ten dimensions for the exceptional Jordan algebra, whose eigenvalues are called Jordan eigenvalues, yields the charged-lepton and quark mass ratios and the low-energy fine structure constant $1/137$ — and the calculated ratios agree with experiment only if the neutrino is Majorana.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"There must exist a reformulation of quantum field theory, even at low energies, which does not depend on classical time."</p>
+<h3 id="the-ingredients">The ingredients</h3>
+<p>The theory is built from "the pre-quantum theory of trace dynamics – a matrix-valued Lagrangian dynamics", "the spectral action principle of non-commutative geometry", "the number system known as the octonions", and a Lagrangian with $E_8\times E_8$ symmetry.</p>
+<h3 id="the-space">The space</h3>
+<p>"The split bioctonions define a sixteen dimensional space (with left-right symmetry) whose geometry (evolving in Connes time) relates to the four known fundamental forces, while predicting two new forces."</p>
+<h3 id="the-algebra-and-the-numbers">The algebra and the numbers</h3>
+<p>"the three fermion generations for a given value of the electric charge obey the Dirac equation in 10D spacetime. This equation is the eigenvalue equation for the (complexified) exceptional Jordan algebra J3 (8)C which has the symmetry group E6 ." $J_3(\mathbb{O})_{\mathbb{C}}$, "which has the symmetry group E6 . Here"</p>
+<p>"The characteristic equation of this algebra, a cubic equation with real eigenvalues, is of great interest as its eigenvalues uniquely determine the values of several fundamental constants of the standard model."</p>
+<h3 id="why-the-mass-ratios-look-strange">Why the mass ratios look strange</h3>
+<p>"The first generation (square-root) mass ratios are very simple, being the same set as the charge ratios but with position of electron and down-quark interchanged. Only the second and third generation mass ratios are weird."</p>
+<h3 id="the-interpretation">The interpretation</h3>
+<p>"the solution of this eigenvalue problem expresses charge eigenstates (or square-root mass eigenstates) as superpositions of eigenstates of 'charge-square-root-mass'" — a $U(1)$ quantum number taking the value $1/3$, so that $1/3+1/3+1/3=1$ — "the mass ratios are determined by the relative weights of the charge eigenstates in this superposition, and the relative weights are in turn ratios of Jordan eigenvalues."</p>
+<h3 id="the-neutrino">The neutrino</h3>
+<p>"The theoretically calculated mass ratios match with observed values only if the neutrino is assumed to be Majorana."</p>
+<p>"This gives support to our claim that only after wave function collapse the left-right symmetry is broken. The neutrino is fundamentally a Dirac particle, but is interpreted as a left-handed Majorana neutrino when its weak interaction is measured."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-ratios-are-ratios-of-eigenvalues-of-one-matrix">1. Mass ratios are ratios of eigenvalues of one matrix</h3>
+<p><strong>The idea.</strong> A <strong>derivation</strong>: put the three generations of a given charge into the off-diagonal slots of one exceptional Jordan matrix; its characteristic cubic has three real eigenvalues; the observed mass ratios are ratios of those eigenvalues, and the reason they look bizarre is that we measure in the charge basis rather than in the square-root-mass basis.</p>
+<p><strong>What it would add.</strong> The corpus's mass-ratio articles look for a formula fitted to the numbers. This proposes that the numbers are three roots of one cubic whose coefficients are fixed by the algebra — no fitting, and the "weirdness" is a basis-change artefact. It is a different kind of explanation, and the corpus can test it immediately: does its own generation-counting article produce the same cubic?</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification of which octonionic state sits in which slot, and of the constant $L$ that sets the overall scale, are inputs the paper takes from elsewhere in the programme.</p>
+<h3 id="2-the-neutrino-must-be-majorana-for-the-numbers-to-work">2. The neutrino must be Majorana for the numbers to work</h3>
+<p><strong>The idea.</strong> A <strong>prediction used as a constraint</strong>: compute the mass ratios under the Dirac assumption and under the Majorana assumption; only the second agrees with data. Conversely, the Koide ratio comes out exactly $2/3$ for a Dirac neutrino and departs from it for Majorana, as the data do.</p>
+<p><strong>What it would add.</strong> The corpus's neutrino articles choose between Dirac and Majorana on grounds of theoretical economy. This chooses on grounds of arithmetic agreement, which is a much stronger kind of argument, and it comes with a two-sided check — one ratio agreeing and another departing — that makes the claim hard to fit retrospectively. It also locates the symmetry breaking: left–right breaking happens only after collapse.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The Koide argument is a numerical coincidence of long standing, and the paper's consistency with it could be an accident of the eigenvalue structure.</p>
+<h3 id="3-fine-structure-constant-from-the-algebra-with-no-free-parameter">3. Fine structure constant from the algebra, with no free parameter</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $\alpha^2=\exp\!\left[\tfrac{2}{3}(1/3-\sqrt{3/8})\right]$, coming from the partition of the $1/3$ charge-square-root-mass quantum number into weights fixed by the Jordan eigenvalues, multiplied by a length ratio $(\ell_P/L)^4=(1/32)^4$ and by nine for the down-quark charge.</p>
+<p><strong>What it would add.</strong> The corpus has articles that <em>count</em> the value of the coupling from a trace condition. This derives it from a cubic eigenvalue structure with no adjustable constant, and the ingredients are all algebraic. For a corpus whose central claim is that constants come from structure, this is the strongest available example, and it lets the corpus compare two derivations of the same number — which is the only way to judge either.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> The factor $(1/32)^4$ comes from the construction of the octonionic fermion states and is not derived in this essay; the reader must take it from the cited paper.</p>
+<p>The rank: the eigenvalue derivation first, because it explains a number that had no explanation; the Majorana constraint second, because it is a test with two sides; the fine structure constant third, because it depends on an imported factor.</p>
+<p>The remaining items in one line each: the prediction of universally interacting spin-one Lorentz bosons in place of the graviton, which is the falsifiable content; the claim that gravity is not quantised but emergent from localisation of entangled fermions, which is the programme's central refusal; and the ten-dimensional Dirac equation, which is what makes the three generations and the Jordan algebra meet.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

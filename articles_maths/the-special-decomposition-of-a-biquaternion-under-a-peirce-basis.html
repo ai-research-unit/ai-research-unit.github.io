@@ -147,7 +147,7 @@ $$</p>
 <p>$$
 \tilde W\vec{Ζ}\tilde W^{*}=\vec{Ζ}',
 $$</p>
-<p>and consequently $\tilde W\tilde\Pi_{\mathrm{id},\pm}\tilde W^{*}=\tilde\Pi_{\mathrm{id}}'_\pm$ and $\tilde W\mathbb{C}[\vec{Ζ}]\tilde W^{*}=\mathbb{C}[\vec{Ζ}']$.</p>
+<p>and consequently $\tilde W\tilde\Pi_{\mathrm{id},\pm}\tilde W^{*}=\tilde\Pi_{\mathrm{id}}'{}_\pm$ and $\tilde W\mathbb{C}[\vec{Ζ}]\tilde W^{*}=\mathbb{C}[\vec{Ζ}']$.</p>
 <p><em>Proof.</em> Write $\vec{Ζ}=i\vec n$ and $\vec{Ζ}'=i\vec n'$ with $\vec n,\vec n'$ real unit vectors. A rotation of $\mathbb{R}^{3}$ carries $\vec n$ to $\vec n'$; every rotation of the vector part is the conjugation $\vec v\mapsto\tilde w\vec v\tilde w^{*}$ by a unit quaternion $\tilde w\in S^{3}\subset\mathrm{U}(\mathbb{B})$ (<em>Biquaternion Rotations and Lorentz Transformations</em>). Taking $\tilde W=\tilde w$ gives the first identity. The two consequences follow by conjugating $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$ and by conjugating the plane spanned by $e_t$ and $\vec{Ζ}$.</p>
 <p><strong>The Peirce basis.</strong> A <strong>Peirce basis</strong> of the pair is a quadruple</p>
 <p>$$
@@ -170,7 +170,7 @@ $$</p>
 <p>and every two bases of the same pair differ by exactly one gauge transformation. The basis $\mathcal{B}(\vec{Ζ})$ is therefore unique up to the gauge, and the diagonal elements are the idempotents themselves and are not a choice. The companion article writes the same gauge with the parameter $t=\mu^{-1}$.</p>
 <p><strong>Peirce coordinates.</strong> Every element has a unique expansion</p>
 <p>$$
-\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-},
+\tilde Q=Q_{++}\tilde\Pi_{\mathrm{id},++Q}{}_{+-}\vec\Pi_{\mathrm{nil},+-}+Q_{-+}\vec\Pi_{\mathrm{nil},-+}+Q_{--}\tilde\Pi_{\mathrm{id},-},
 \qquad Q_{st}\in\mathbb{C}.
 $$</p>
 <p>Under the gauge the off-diagonal coordinates transform reciprocally, $Q_{+-}\mapsto\mu^{-1}Q_{+-}$ and $Q_{-+}\mapsto\mu Q_{-+}$, while $Q_{++}$ and $Q_{--}$ are unchanged.</p>
@@ -204,7 +204,7 @@ $$</p>
 \tilde H=h_0e_t+i\bigl(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z\bigr)=h_0e_t+i\vec h,
 \qquad h_0,h_x,h_y,h_z\in\mathbb{R}.
 $$</p>
-<p>Positive semidefiniteness is $h_0\ge\lvert\vec h\rvert$ (<em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>), and the spectral values of $\tilde H$ are $h_0\pm\lvert\vec h\rvert$. Put $r=h_0$ and $s=\lvert\vec h\rvert$. If $s>0$, put $\vec{Ζ}=i\vec h/s$; if $s=0$, put $\vec{Ζ}=i\vec e_z$. In both cases $\vec{Ζ}$ is a root and $\tilde H=r e_t+s\vec{Ζ}$, with $r\ge s\ge0$.</p>
+<p>Positive semidefiniteness is $h_0\ge\lvert\vec h\rvert$ (<em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>), and the spectral values of $\tilde H$ are $h_0\pm\lvert\vec h\rvert$. Put $r=h_0$ and $s=\lvert\vec h\rvert$. If $s&gt;0$, put $\vec{Ζ}=i\vec h/s$; if $s=0$, put $\vec{Ζ}=i\vec e_z$. In both cases $\vec{Ζ}$ is a root and $\tilde H=r e_t+s\vec{Ζ}$, with $r\ge s\ge0$.</p>
 <p>It remains to replace the partial isometry $\tilde Q_0$ by a unitary without changing the product. Let $\tilde\Pi_{\mathrm{id},\mathrm i}=\tilde Q_0^{*}\tilde Q_0$, which is the projection onto the image of $\tilde H$. By the extension lemma there are $\tilde U\in\mathrm{U}(\mathbb{B})$ and $\tilde W\in\mathrm{U}(\mathbb{B})$ with $\tilde U=\tilde Q_0+\tilde W(e_t-\tilde\Pi_{\mathrm{id},\mathrm i})$ and $\tilde U\tilde\Pi_{\mathrm{id},\mathrm i}=\tilde Q_0$. Since $(e_t-\tilde\Pi_{\mathrm{id},\mathrm i})\tilde H=0$, one has</p>
 <p>$$
 \tilde U\tilde H=\tilde Q_0\tilde H+\tilde W(e_t-\tilde\Pi_{\mathrm{id},\mathrm i})\tilde H=\tilde Q_0\tilde H=\tilde Q.
@@ -219,25 +219,25 @@ $$</p>
 <p><strong>Conclusion.</strong> Let $\vec{Ζ}$ be the root fixed in the statement. Lemma B gives the factorization of $\tilde Q$ for the root that $\tilde Q$ carries; Lemma A supplies the unitary $\tilde W$ carrying that root to $\vec{Ζ}$; Lemma C transports the factorization to $\vec{Ζ}$. Hence the theorem holds for every root.</p>
 <p><strong>What the proof uses, and what it does not use.</strong> It uses the transitivity of $\mathrm{U}(\mathbb{B})$ on the roots, the polar form and the positivity of $\tilde Q^{*}\tilde Q$ for the base case, and the extension of a partial isometry to a unitary. It does not use a preferred root in the statement, and it does not use a matrix representation at any point.</p>
 <h2 id="uniqueness">Uniqueness</h2>
-<p><strong>Theorem (uniqueness).</strong> Let $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with $r\ge s\ge0$, and let $\tilde Q=\tilde U'(r e_t+s\vec{Ζ})\tilde V'^{*}$ be another factorization with the same root and the same pair. Put $\tilde A=\tilde U^{*}\tilde U'$ and $\tilde B=\tilde V^{*}\tilde V'$, so that $\tilde A(r e_t+s\vec{Ζ})=(r e_t+s\vec{Ζ})\tilde B$. Then:</p>
+<p><strong>Theorem (uniqueness).</strong> Let $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with $r\ge s\ge0$, and let $\tilde Q=\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}$ be another factorization with the same root and the same pair. Put $\tilde A=\tilde U^{*}\tilde U'$ and $\tilde B=\tilde V^{*}\tilde V'$, so that $\tilde A(r e_t+s\vec{Ζ})=(r e_t+s\vec{Ζ})\tilde B$. Then:</p>
 <ul>
-<li>if $r>s>0$, there are real $\theta_+,\theta_-$ with $\tilde A=\tilde B=e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; the two unitaries are unique up to the simultaneous right multiplication by a unitary commuting with the middle factor;</li>
-<li>if $r=s>0$, there are real $\theta,\varphi,\psi$ with
+<li>if $r&gt;s&gt;0$, there are real $\theta_+,\theta_-$ with $\tilde A=\tilde B=e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; the two unitaries are unique up to the simultaneous right multiplication by a unitary commuting with the middle factor;</li>
+<li>if $r=s&gt;0$, there are real $\theta,\varphi,\psi$ with
 $$
 \tilde A=e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\varphi}\tilde\Pi_{\mathrm{id},-},\qquad
 \tilde B=e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\psi}\tilde\Pi_{\mathrm{id},-};
 $$
 the phase of the image line is common and the phase of the kernel line is free on each side;</li>
-<li>if $s=0$ and $r>0$, the middle factor is the scalar $r e_t$ and $\tilde A=\tilde B$ is an arbitrary unitary; if $\tilde Q=0$ the middle factor vanishes and $\tilde A$ and $\tilde B$ are independent arbitrary unitaries.</li>
+<li>if $s=0$ and $r&gt;0$, the middle factor is the scalar $r e_t$ and $\tilde A=\tilde B$ is an arbitrary unitary; if $\tilde Q=0$ the middle factor vanishes and $\tilde A$ and $\tilde B$ are independent arbitrary unitaries.</li>
 </ul>
-<p><em>Proof.</em> Write the middle factor in the Peirce basis, $M=r e_t+s\vec{Ζ}=r_+\tilde\Pi_{\mathrm{id},++r}_-\tilde\Pi_{\mathrm{id},-}$ with $r_\pm=r\pm s$, and write $\tilde A$ and $\tilde B$ in the same basis, with Peirce coordinates $A_{st}$ and $B_{st}$. The identity $\tilde A M=M\tilde B$ reads, on the four Peirce components,</p>
+<p><em>Proof.</em> Write the middle factor in the Peirce basis, $M=r e_t+s\vec{Ζ}=r_+\tilde\Pi_{\mathrm{id},++r}{}_-\tilde\Pi_{\mathrm{id},-}$ with $r_\pm=r\pm s$, and write $\tilde A$ and $\tilde B$ in the same basis, with Peirce coordinates $A_{st}$ and $B_{st}$. The identity $\tilde A M=M\tilde B$ reads, on the four Peirce components,</p>
 <p>$$
 A_{st}\,r_t=r_s\,B_{st},\qquad s,t\in\{+,-\}.
 $$</p>
-<p>If $s=0$ and $r>0$, then $r_+=r_-=r$ and the identity is $\tilde A=\tilde B$, with no further condition beyond unitarity; if $r=0$ the identity is void, and $\tilde A$ and $\tilde B$ are free.</p>
-<p>If $r>s>0$, then $M$ is invertible and the identity gives $\tilde A=M\tilde B M^{-1}$. Unitarity of $\tilde A$ and $\tilde B$ gives $\tilde B^{*}M^{2}\tilde B=M^{2}$, that is $\tilde B M^{2}=M^{2}\tilde B$. The Hermitian element $M^{2}$ has the two distinct spectral values $r_+^{2}$ and $r_-^{2}$, so the unitary $\tilde B$ commutes with its two spectral projections and is therefore diagonal in the Peirce basis; then the diagonal equations give $\tilde A=\tilde B$. A diagonal element $a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-}$ is unitary exactly when $\lvert a\rvert=\lvert b\rvert=1$, because $\tilde\Pi_{\mathrm{id},\pm}$ are Hermitian orthogonal idempotents.</p>
-<p>If $r=s>0$, then $r_+=2r$ and $r_-=0$. The equations with $(s,t)=(+,-)$ and $(-,+)$ give $B_{+-}=0$ and $A_{-+}=0$, so both elements have at most three Peirce components. A unitary with $A_{-+}=0$ is diagonal: writing $A=a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-+c}\vec\Pi_{\mathrm{nil},+-}$, the product $\tilde A\tilde A^{*}$ carries the mixed terms $a\bar c\,\vec\Pi_{\mathrm{nil},-+}$ and $c\bar b\,\vec\Pi_{\mathrm{nil},+-}$, which must vanish, so $c=0$ because $\lvert a\rvert=\lvert b\rvert=1$; and likewise for $\tilde B$. Hence $\tilde A=\operatorname{diag}(A_{++},A_{--})$ and $\tilde B=\operatorname{diag}(B_{++},B_{--})$, the equation $(+,+)$ gives $A_{++}=B_{++}$, and unitarity gives $\lvert A_{++}\rvert=\lvert A_{--}\rvert=\lvert B_{--}\rvert=1$.</p>
-<p><strong>Corollary (the residual freedom preserves the middle factor).</strong> In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.</p>
+<p>If $s=0$ and $r&gt;0$, then $r_+=r_-=r$ and the identity is $\tilde A=\tilde B$, with no further condition beyond unitarity; if $r=0$ the identity is void, and $\tilde A$ and $\tilde B$ are free.</p>
+<p>If $r&gt;s&gt;0$, then $M$ is invertible and the identity gives $\tilde A=M\tilde B M^{-1}$. Unitarity of $\tilde A$ and $\tilde B$ gives $\tilde B^{*}M^{2}\tilde B=M^{2}$, that is $\tilde B M^{2}=M^{2}\tilde B$. The Hermitian element $M^{2}$ has the two distinct spectral values $r_+^{2}$ and $r_-^{2}$, so the unitary $\tilde B$ commutes with its two spectral projections and is therefore diagonal in the Peirce basis; then the diagonal equations give $\tilde A=\tilde B$. A diagonal element $a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-}$ is unitary exactly when $\lvert a\rvert=\lvert b\rvert=1$, because $\tilde\Pi_{\mathrm{id},\pm}$ are Hermitian orthogonal idempotents.</p>
+<p>If $r=s&gt;0$, then $r_+=2r$ and $r_-=0$. The equations with $(s,t)=(+,-)$ and $(-,+)$ give $B_{+-}=0$ and $A_{-+}=0$, so both elements have at most three Peirce components. A unitary with $A_{-+}=0$ is diagonal: writing $A=a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-+c}\vec\Pi_{\mathrm{nil},+-}$, the product $\tilde A\tilde A^{*}$ carries the mixed terms $a\bar c\,\vec\Pi_{\mathrm{nil},-+}$ and $c\bar b\,\vec\Pi_{\mathrm{nil},+-}$, which must vanish, so $c=0$ because $\lvert a\rvert=\lvert b\rvert=1$; and likewise for $\tilde B$. Hence $\tilde A=\operatorname{diag}(A_{++},A_{--})$ and $\tilde B=\operatorname{diag}(B_{++},B_{--})$, the equation $(+,+)$ gives $A_{++}=B_{++}$, and unitarity gives $\lvert A_{++}\rvert=\lvert A_{--}\rvert=\lvert B_{--}\rvert=1$.</p>
+<p><strong>Corollary (the residual freedom preserves the middle factor).</strong> In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.</p>
 <h2 id="the-peirce-diagonal-reading">The Peirce-Diagonal Reading</h2>
 <p><strong>Proposition (the element becomes Peirce-diagonal).</strong> Let $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ and put</p>
 <p>$$
@@ -286,7 +286,7 @@ $$</p>
 <td>The Peirce basis $\mathcal{B}(\vec{Ζ})$</td>
 </tr>
 <tr>
-<td>The image line and the kernel line of $\tilde Q$, when $r>s>0$</td>
+<td>The image line and the kernel line of $\tilde Q$, when $r&gt;s&gt;0$</td>
 <td>The gauge $\mu$ of $\mathcal{B}(\vec{Ζ})$</td>
 </tr>
 <tr>
@@ -344,9 +344,9 @@ $$</p>
 $$</p>
 <p>The Peirce data of $\vec{Ζ}_1$ are</p>
 <p>$$
-\tilde\Pi_{\mathrm{id}}'_\pm=\frac{e_t\pm i\vec e_x}{2},\qquad
-\vec\Pi_{\mathrm{nil}}'_{+-}=-\frac{\vec e_y+i\vec e_z}{2},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=\frac{\vec e_y-i\vec e_z}{2},
+\tilde\Pi_{\mathrm{id}}'{}_\pm=\frac{e_t\pm i\vec e_x}{2},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=-\frac{\vec e_y+i\vec e_z}{2},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=\frac{\vec e_y-i\vec e_z}{2},
 $$</p>
 <p>the mixed units being the $\tilde W$-conjugates of the standard ones. The middle factor has Peirce coordinates $(2,0,0,1)$ in $\mathcal{B}(i\vec e_x)$ as well, so the two roots give the same coefficients $r_+=2$ and $r_-=1$.</p>
 <h3 id="the-two-presentations-agree">The Two Presentations Agree</h3>
@@ -357,18 +357,18 @@ $$</p>
 $$</p>
 <p>The rotated idempotents of the second presentation are</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},+}^{\tilde U_1}=\tilde U_1\tilde\Pi_{\mathrm{id}}'_+\tilde U_1^{*}=\frac{e_t-i\vec e_y}{2},
+\tilde\Pi_{\mathrm{id},+}^{\tilde U_1}=\tilde U_1\tilde\Pi_{\mathrm{id}}'{}_+\tilde U_1^{*}=\frac{e_t-i\vec e_y}{2},
 \qquad
 \tilde\Pi_{\mathrm{id},-}^{\tilde U_1}=\frac{e_t+i\vec e_y}{2},
 $$</p>
 <p>$$
-\tilde\Pi_{\mathrm{id},+}^{\tilde V_1}=\tilde V_1\tilde\Pi_{\mathrm{id}}'_+\tilde V_1^{*}=\tilde\Pi_{\mathrm{id},+},
+\tilde\Pi_{\mathrm{id},+}^{\tilde V_1}=\tilde V_1\tilde\Pi_{\mathrm{id}}'{}_+\tilde V_1^{*}=\tilde\Pi_{\mathrm{id},+},
 \qquad
 \tilde\Pi_{\mathrm{id},-}^{\tilde V_1}=\tilde\Pi_{\mathrm{id},-}.
 $$</p>
-<p>The Peirce-diagonal proposition then gives $\tilde\Pi_{\mathrm{id},i}^{\tilde U_1}\tilde Q\tilde\Pi_{\mathrm{id},j}^{\tilde V_1}=\delta_{ij}r_i\tilde U_1\tilde\Pi_{\mathrm{id}}'_i\tilde V_1^{*}$, with $r_+=2$ and $r_-=1$. Relative to the unrotated pair $\tilde\Pi_{\mathrm{id}}'_\pm$ the element is not diagonal; for instance</p>
+<p>The Peirce-diagonal proposition then gives $\tilde\Pi_{\mathrm{id},i}^{\tilde U_1}\tilde Q\tilde\Pi_{\mathrm{id},j}^{\tilde V_1}=\delta_{ij}r_i\tilde U_1\tilde\Pi_{\mathrm{id}}'{}_i\tilde V_1^{*}$, with $r_+=2$ and $r_-=1$. Relative to the unrotated pair $\tilde\Pi_{\mathrm{id}}'{}_\pm$ the element is not diagonal; for instance</p>
 <p>$$
-\tilde\Pi_{\mathrm{id}}'_+\tilde Q\tilde\Pi_{\mathrm{id}}'_-=\frac{\sqrt2}{8}\bigl((1-i)\vec e_y+(1+i)\vec e_z\bigr)\ne0.
+\tilde\Pi_{\mathrm{id}}'{}_+\tilde Q\tilde\Pi_{\mathrm{id}}'{}_-=\frac{\sqrt2}{8}\bigl((1-i)\vec e_y+(1+i)\vec e_z\bigr)\ne0.
 $$</p>
 <p>This is the point of §<em>The Peirce-Diagonal Reading</em>: the idempotent systems must be rotated by the unitaries, and the coefficients are $2$ and $1$ in both presentations.</p>
 <h2 id="the-boundary-of-the-construction">The Boundary of the Construction</h2>
@@ -377,8 +377,8 @@ $$</p>
 <p><strong>The factorization always exists and its uniqueness degenerates.</strong> The scalars $r$ and $s$ are always defined, and the unitaries always exist, by the theorem. The ambiguity of the pair $(\tilde U,\tilde V)$ grows on two loci, and the two are different.</p>
 <ul>
 <li><strong>The scalar locus $s=0$, equivalently $r_+=r_-$.</strong> The middle factor is $r e_t$ and any unitary commutes with it. The pair is unique only up to the diagonal right action of $\mathrm{U}(\mathbb{B})$, $(\tilde U,\tilde V)\mapsto(\tilde U\tilde U_3,\tilde V\tilde U_3)$ with arbitrary unitary $\tilde U_3$. This is the case of two equal singular values.</li>
-<li><strong>The rank-one locus $r=s>0$, equivalently $r_-=0$.</strong> The middle factor is $2r\tilde\Pi_{\mathrm{id},+}$ and has one zero spectral value. The pair is unique only up to $\tilde U'=\tilde U(e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\varphi}\tilde\Pi_{\mathrm{id},-})$ and $\tilde V'=\tilde V(e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\psi}\tilde\Pi_{\mathrm{id},-})$ with independent real $\varphi$ and $\psi$: the phase of the image line is common, the phase of the kernel line is free on each side. This is the case of a vanishing second singular value.</li>
-<li><strong>The generic locus $r>s>0$.</strong> The pair is unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$, a two-torus.</li>
+<li><strong>The rank-one locus $r=s&gt;0$, equivalently $r_-=0$.</strong> The middle factor is $2r\tilde\Pi_{\mathrm{id},+}$ and has one zero spectral value. The pair is unique only up to $\tilde U'=\tilde U(e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\varphi}\tilde\Pi_{\mathrm{id},-})$ and $\tilde V'=\tilde V(e^{i\theta}\tilde\Pi_{\mathrm{id},++e}^{i\psi}\tilde\Pi_{\mathrm{id},-})$ with independent real $\varphi$ and $\psi$: the phase of the image line is common, the phase of the kernel line is free on each side. This is the case of a vanishing second singular value.</li>
+<li><strong>The generic locus $r&gt;s&gt;0$.</strong> The pair is unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$, a two-torus.</li>
 </ul>
 <p>At $\tilde Q=0$ one has $r=s=0$, the middle factor vanishes, and every pair of unitaries is allowed. The two loci are the boundary of the uniqueness of the factorization, not of the Peirce decomposition.</p>
 <h2 id="relation-to-the-eigenbasis">Relation to the Eigenbasis</h2>
@@ -445,12 +445,12 @@ $$</p>
 <p>with the Pauli matrices $\sigma_x,\sigma_y,\sigma_z$. Under it the star becomes the conjugate transpose, so unitaries become unitary matrices and the theorem becomes a factorization $\mathsf M_2(\tilde Q)=U\,\mathsf M_2(r e_t+s\vec{Ζ})\,V^{*}$ with $U,V\in\mathrm{U}(2)$.</p>
 <p>For the standard root $\vec{Ζ}_0=i\vec e_z$ one has $\mathsf M_2(\vec{Ζ}_0)=\sigma_z$, hence</p>
 <p>$$
-\mathsf M_2(r e_t+s\vec{Ζ}_0)=rI_2+s\sigma_z=\begin{pmatrix}r+s&0\\0&r-s\end{pmatrix},
+\mathsf M_2(r e_t+s\vec{Ζ}_0)=rI_2+s\sigma_z=\begin{pmatrix}r+s&amp;0\\0&amp;r-s\end{pmatrix},
 $$</p>
 <p>which is diagonal: the reference root reproduces the diagonal middle factor of the ordinary singular value decomposition.</p>
 <p>For the root $\vec{Ζ}_1=i\vec e_x$ one has $\mathsf M_2(\vec{Ζ}_1)=\sigma_x$, hence</p>
 <p>$$
-\mathsf M_2(r e_t+s\vec{Ζ}_1)=rI_2+s\sigma_x=\begin{pmatrix}r&s\\s&r\end{pmatrix},
+\mathsf M_2(r e_t+s\vec{Ζ}_1)=rI_2+s\sigma_x=\begin{pmatrix}r&amp;s\\s&amp;r\end{pmatrix},
 $$</p>
 <p>which is not diagonal in the Pauli frame. It is nonetheless Hermitian with spectral values $r+s$ and $r-s$: it is diagonal in the Peirce frame of $\vec{Ζ}_1$, not in the matrix frame of the representation. This is the warning of the article. The special decomposition is diagonal in the Peirce sense, not in the matrix sense; the matrix model confirms the coefficients and shows that only the reference root makes the middle factor matrix-diagonal.</p>
 <h2 id="summary">Summary</h2>

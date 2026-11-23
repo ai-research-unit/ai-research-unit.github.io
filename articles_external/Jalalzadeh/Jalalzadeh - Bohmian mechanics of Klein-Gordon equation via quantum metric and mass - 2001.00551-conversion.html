@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bohmian mechanics of Klein-Gordon equation via quantum metric and mass — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - Bohmian mechanics of Klein-Gordon equation via quantum metric and mass -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bohmian-mechanics-of-klein-gordon-equation-via-quantum-metric-and-mass"><strong>Bohmian mechanics of Klein-Gordon equation via quantum metric and mass</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (letter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2001.00551 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>S. Jalalzadeh, A. J. S. Capistrano</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 January 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Modern Physics Letters A — imprint on page 1, volume and year not printed</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Jalalzadeh/Jalalzadeh - Bohmian mechanics of Klein-Gordon equation via quantum metric and mass - 2001.00551-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - Bohmian mechanics of Klein-Gordon equation via quantum metric and mass - 2001.00551.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - Bohmian mechanics of Klein-Gordon equation via quantum metric and mass - 2001.00551.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Attacks the three defects of the de Broglie–Bohm reading of the Klein–Gordon equation — superluminal flow, motion backward in time, wrong non-relativistic limit — by letting the quantum potential deform the particle's mass and the spacetime metric at once. The two exponents are fixed by two consistency conditions, and the resulting geodesic equation reduces to the Madelung Euler equation. The result is computed; no parameter is free.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-split">The split</h3>
+<p>With $\Phi=R\,e^{iS}$ the real part is
+$$g^{\mu\nu}(\nabla_\mu S-eA_\mu)(\nabla_\nu S-eA_\nu)+m^2\Bigl(1-\frac{2\Box R}{m^2R}\Bigr)=0$$
+(paper 4) and the imaginary part $\nabla_\mu J^\mu=0$, $J^\mu=\frac{e}{m}R^2(\nabla^\mu S-eA^\mu)$ (paper 5–6), with quantum potential
+$$Q=-\frac{1}{m^2}\frac{\Box R}{R}$$
+(paper 7) and guidance law $p^\mu:=\nabla^\mu S=m\,dx^\mu/d\tau+eA^\mu$ (paper 8).</p>
+<h3 id="the-two-failed-repairs">The two failed repairs</h3>
+<p>The identity $g_{\mu\nu}u^\mu u^\nu=-1$ "is violated if the law of motion (8) and (9) can be applied, except in those special cases in which quantum potential vanish". The mass-only repair, "attributing to a particle a quantum √ mass M = m 1 + Q. On", breaks the continuity equation and lets $M$ "be imaginary (tachyonic)". The metric-only repair $\tilde g_{\mu\nu}=(1+Q)g_{\mu\nu}$ (paper 10) restores the normalisation and then "is incompatible with the imaginary part of KG wave equation (5).".</p>
+<h3 id="the-simultaneous-deformation">The simultaneous deformation</h3>
+<p>$$M:=(1+Q)^A m,\qquad \hat g_{\mu\nu}:=(1+Q)^B g_{\mu\nu}$$
+(paper 12), with $2A+B=1$ from the mass shell and $2B=A$ from requiring $\nabla_\mu(M\sqrt{-g}\,u^\mu)=0$ to become $\hat\nabla_\mu(\rho u^\mu)=0$. Hence
+$$M=(1+Q)^{2/5}m,\qquad \hat g_{\mu\nu}=(1+Q)^{1/5}g_{\mu\nu}$$
+(paper 14). "the quantum mass $M$ is real for any value of quantum potential and consequently the theory is ghost free and the trajectory of particles remain timelike."</p>
+<h3 id="the-consequences">The consequences</h3>
+<p>$$\oint p_\mu dx^\mu=\oint(Mu_\mu+eA_\mu)dx^\mu=nh,\qquad n=0,1,2,\dots$$
+(paper 17). The geodesic equation carries a quantum force and a deformed connection,
+$$\frac{du^\mu}{d\tau}+\hat\Gamma^\mu_{\alpha\beta}u^\alpha u^\beta=-\frac{\partial^\mu M}{M}\bigl(\hat g^{\mu\alpha}+u^\alpha u^\mu\bigr)+\frac{e}{M}F^\mu{}_\alpha u^\alpha$$
+(paper 18, as printed). The metric is singular where $mR^2\Box R=1$, called "the quantum conformal boundary of spacetime" and located where $R$ "fluctuates greatly of the order of the Compton wave length of particle, $1/m$". In the non-relativistic limit $Q\approx-\frac{1}{m^2}\frac{\partial_i\partial^iR}{R}=\frac{2}{m}U$ (paper 19), with $U=-\frac{1}{2m}\partial_i\partial^iR/R$, equation (18) becomes the Madelung Euler equation. The conclusion identifies the quantum potential with "the scalar field introduced by Brance and Dicke" (as printed).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-repairing-the-on-shell-defect-by-deforming-mass-and-metric-together">1. Repairing the on-shell defect by deforming mass and metric together</h3>
+<p><strong>The idea.</strong> The corpus's polar KG article records that the flow is a unit timelike vector "for a plane wave and not for a general wave", and that "what fails is the on-shell condition". This paper repairs exactly that, with a <strong>mechanism</strong>: one conformal factor on two objects, exponents forced by two linear conditions.</p>
+<p><strong>What it would add.</strong> A worked cure for a defect the corpus names and leaves open, with nothing to tune.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code>, at the paragraph recording the on-shell failure.</p>
+<p><strong>What stands in the way.</strong> The cure makes the metric depend on the state, so $\Box_\Phi$ becomes state-dependent and the corpus's single fixed d'Alembertian is lost. No action is written for the deformed metric, so the construction cannot be varied.</p>
+<h3 id="2-a-boundary-drawn-by-the-curvature-of-the-density">2. A boundary drawn by the curvature of the density</h3>
+<p><strong>The idea.</strong> Where $mR^2\Box R=1$ the conformal factor vanishes, and the paper calls that set the limit of the accessible spacetime. That is a <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A second candidate for where the fluid description stops, defined by density curvature rather than by vanishing density.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code>, on the domain of the polar parametrisation.</p>
+<p><strong>What stands in the way.</strong> It is not the corpus's nodal set: $R\neq0$ can still satisfy $mR^2\Box R=1$, so the boundary cuts inside the region where the corpus's word is regular. Adopting it would shrink the domain with no argument for the shrink.</p>
+<h3 id="3-the-quantum-potential-as-a-bransdicke-scalar">3. The quantum potential as a Brans–Dicke scalar</h3>
+<p><strong>The idea.</strong> One sentence of conclusion: the quantum potential plays the role of the Brans–Dicke field, so Mach's principle comes from quantum mechanics. A <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A named identity between a quantum object and a gravitational one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>.</p>
+<p><strong>What stands in the way.</strong> No $\omega$ is computed and no field equation matched; the resemblance is that both are scalars in front of curvature.</p>
+<p>The rank is a judgement: the deformation first, because it closes a defect the corpus states; the boundary second, because it is a formula; the Brans–Dicke sentence third, because it is stated and not shown.</p>
+<p>Seven pages: the split, the two failed repairs, the deformation and its exponents, the quantisation condition, the geodesic equation, the conformal boundary, the non-relativistic limit.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

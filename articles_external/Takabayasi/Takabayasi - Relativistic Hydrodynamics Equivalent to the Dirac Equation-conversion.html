@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Hydrodynamics Equivalent to the Dirac Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics Equivalent to the Dirac Equation.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-hydrodynamics-equivalent-to-the-dirac-equation"><strong>Relativistic Hydrodynamics Equivalent to the Dirac Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>13</strong> (1955) 222–224, No. 2, Letters to the Editor; received 28 February 1955</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Hydrodynamics Equivalent to the Dirac Equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics Equivalent to the Dirac Equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics Equivalent to the Dirac Equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The letter announces the tensor formulation of the Dirac field that the 1957 memoir and the 1956 Séminaire talk develop. It shows that the sixteen bilinear covariants carry only seven independent real functions, that they are equivalent to fourteen quantities — a density, an angle, a velocity, a spin vector and a current — subject to three subsidiary conditions, and that the Dirac equation for those quantities is twelve equations of which eight are independent. It writes the conditions and the equations in closed form and identifies what the fluid must contain that no classical fluid does: the Zitterbewegung and the freedom of negative mass. The result is exact and has no free parameter; the only numbers are the counting ones, $16\to7\to14\to12\to8$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-bilinears-and-their-count">The bilinears and their count</h3>
+<p>From $\bar\psi$ and the sixteen Dirac matrices he forms the usual set — $\Omega=\bar\psi\psi$, $\hat\Omega=i\bar\psi\gamma_5\psi$, the vector, the pseudovector and the antisymmetric tensor $M_{\mu\nu}$ — and states the result of an earlier note: <em>the sixteen quantities involve only seven independent real functions, because nine kinematical relations hold between them.</em> With $\bar\psi=\psi^\dagger\gamma_0$ and $\psi$ a four-component spinor of eight real parameters, the count is the spinor's eight minus the one overall phase.</p>
+<h3 id="the-fourteen-quantities">The fourteen quantities</h3>
+<p>The seven functions are parametrised as</p>
+<p>$$
+P=(\Omega^{2}+\hat\Omega^{2})^{1/2},
+\qquad
+\theta=\tan^{-1}\frac{\hat\Omega}{\Omega},
+\qquad
+S_\mu=Pv_\mu,
+\qquad
+\hat S_\mu=P\zeta_\mu,
+$$</p>
+<p>with</p>
+<p>$$
+v_\mu v^\mu=-1,
+\qquad
+\zeta_\mu\zeta^\mu=1,
+\qquad
+v_\mu\zeta^\mu=0 .
+$$</p>
+<p>So the fluid carries two unit vectors, one timelike and one spacelike, orthogonal to each other: the velocity and the spin direction. The mass density and the particle density are not two data but one complex number, $P$ its modulus and $\theta$ its phase, with $\theta\in(-\pi/2,\pi/2)$; $\theta$ is the letter's `internal angle', and $P\cos\theta$ and $P\sin\theta$ are the scalar and pseudoscalar bilinears. The tensor $M_{\mu\nu}$ is then not independent — it is a function of $S_\mu$, $\hat S_\mu$ and their duals — and the set is completed to fourteen by the convection current $J_\mu$, for which Proca's magnetic current may be substituted since the two differ by a divergence.</p>
+<h3 id="the-three-subsidiary-conditions">The three subsidiary conditions</h3>
+<p>Two are the normalisations above. The third is the substantive one: the antisymmetrised derivative of the pair $(\Omega/P,\hat\Omega/P)=(\cos\theta,\sin\theta)$ — that is, the curl of $\theta$ — is not free. It equals a sum of three terms, one built from the current and the dual current, one from the spin vectors' gradients, and one from the spin vectors contracted with their own gradients:</p>
+<p>$$
+\mathrm{Curl}_{\mu\nu}\!\left(\frac{\Omega}{P}\right)=\left(Q_\mu Z_\nu-Q_\nu Z_\mu\right)-i\epsilon_{\mu\nu\rho\sigma}\hat S^{\rho}S^{\sigma}\left(\partial_\mu S_\rho\,\partial_\nu S_\sigma-\ldots\right),
+$$</p>
+<p>with $Q_\mu=P^{2}\partial_\mu\theta$. <strong>This is the condition that makes the tensor system self-contained, and it is the one his own summary calls the connection of the momentum field's vorticity to the velocity and spin fields.</strong></p>
+<h3 id="the-equations-of-motion">The equations of motion</h3>
+<p>Multiplying the Dirac equation by each $\gamma_A$ from the left and its conjugate from the right, adding and subtracting, gives thirty-two equations in the fundamental quantities. The letter states that these reduce, after long calculation, to twelve — of which eight are independent — in four groups: the continuity equation for $S_\mu$; a continuity-like equation for the spin density $\hat S_\mu$; the Euler equation of the flow, which carries the curl of the pair $(\Omega/P,\hat\Omega/P)$ — that is, of $\theta$ — as one of its terms; and the equation of motion of the spin distribution, whose right side is the dual current $Z_\nu$ plus a term in $Q^{-1}\partial_\nu Q$ times the transverse projector on $\hat S$, plus a term in $\epsilon_{\mu\nu\rho\sigma}$ carrying the spin's own gradients. The two remaining equations are scalars, one of them the tracelessness of the tensor built from $\hat S_\mu$ and $Q_\nu$; the letter prints it as $\hat S_\mu f_{\mu\nu\rho\sigma}=0$ with $f$ an antisymmetric combination of $\hat S$ and $Q$ and their gradients. The printed forms of the Euler and spin equations are not reliably recoverable from this scan, and the description above is what the text states in words.</p>
+<p>The energy-momentum tensor is then an algebraic function of the same quantities, so the whole content of the Dirac equation is carried by the fourteen fields and the three constraints.</p>
+<h3 id="what-the-fluid-contains-that-a-classical-one-does-not">What the fluid contains that a classical one does not</h3>
+<p>He states the reading plainly: the tensor field "um tensor. is of a more complicated structure than the one Now we turn to the dynamical problem. The for the case of Klein-Gordon field or the non- Dirac equation must be re-expressed as simultaneous relativistic spinor field former! y considered, as it tensor equations for our fundamental quantities ( 11) must include the picture of Zitterbewegung relating in a closed form. For simplicity we consider" The equations show the orbital motion and the spin motion coupled to each other and both coupled to the density and to the convection current.</p>
+<p>He also records the provenance. The reduction of the derivative bilinears to the fundamental ones was carried out by Kofink in non-covariant form in 1940 and by Petiau in another form in 1947; the relation between $M_{\mu\nu}$ and the spin vectors is Kofink's and Costa de Beauregard's; the equations themselves, as they stand, were considered before by Costa de Beauregard. What is new in the letter is the closure: the third subsidiary condition, and the reduction to eight independent equations.</p>
+<p>"As such quantities we first take up the 16 density functions, the source density for the spin field, fi, (see eq."</p>
+<p>"For simplicity we consider the to the freedom of negative mass, together with the free Dirac equation, usual quantum effects and spin effects."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The mass density and the particle density are one complex number</li>
+</ol>
+<p><strong>The idea.</strong> $P=(\Omega^{2}+\hat\Omega^{2})^{1/2}$ and $\theta=\tan^{-1}(\hat\Omega/\Omega)$, so</p>
+<p>$$
+\Omega=P\cos\theta,\qquad \hat\Omega=P\sin\theta,
+$$</p>
+<p>and the two densities are the modulus and phase of the pair. The angle is a rotation in the $(\Omega,\hat\Omega)$ plane and not a further field.</p>
+<p><strong>What it would add.</strong> The missing definition behind a formula the corpus already has. <em>The Spin-Half Energy-Momentum Tensor</em> (<code>articles_physics/the-spin-half-energy-momentum-tensor.md</code>) quotes $\sum_\mu\epsilon_\mu T_{\mu\mu}=mc^{2}\rho\cos\theta$ and treats $\cos\theta$ as the ratio of two densities. The letter says what the ratio <em>is</em>: $\theta$ is the phase of the complex bilinear $\Omega+i\hat\Omega$, so the pair of densities is a single complex scalar and the mass term couples to its real part. That is sharper than "their ratio is the angle", because it makes the pair a rotation and gives the pseudoscalar a place — it is the imaginary part, and it is not a separate field but the same one turned.</p>
+<p><strong>Where it lands.</strong> <em>The Two Scales of the Field: The Proper Density and the Euclidean Size</em> (<code>articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.md</code>), and the mass-term paragraph of the spin-half energy-momentum article.</p>
+<p><strong>What stands in the way.</strong> The corpus's `two scales' are the proper density and the Euclidean size of the element, which is not the same pair: his $\rho$ and $\cos\theta$ are the modulus and the real part. The import would have to say which pair is which, or it will read as a restatement. The complex structure itself — $\Omega+i\hat\Omega$ — is the corpus's central-plus-imaginary pair, so the identification is available and one sentence long.</p>
+<ol>
+<li>The closure is a kinematical identity, not a constitutive choice</li>
+</ol>
+<p><strong>The idea.</strong> Thirty-two equations reduce to twelve, and of those only eight are independent. The constraint that makes the set self-contained is not an equation of motion but an identity: the curl of $\theta$ is fixed by the current, the spin vectors and their gradients.</p>
+<p><strong>What it would add.</strong> A worked instance of a closure the corpus discusses in the abstract. <em>The Kinetic Momentum: A Bracket That Does Not Close</em> (<code>articles_physics/the-kinetic-momentum-a-bracket-that-does-not-close.md</code>) and <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) both say that the system does not close and that a closure must be chosen. Takabayasi's closure is not a choice of constitutive law and not an extra postulate: it is a <em>kinematical identity</em>, the vorticity of the momentum field being fixed by the spin gradients and the spin's own curvature. That is a third kind of closure, beside his 1952 subsidiary condition on the density and the constitutive choices of the spin-hydrodynamics literature, and the corpus's taxonomy has only the first two.</p>
+<p><strong>Where it lands.</strong> The kinetic-momentum article, as the worked case, and the spin-half fluid article's §<em>What the triple closes</em>, which is where the corpus counts what the algebra leaves free.</p>
+<p><strong>What stands in the way.</strong> The letter counts equations and not degrees of freedom, so the claim that the identity <em>closes</em> the system is his and not demonstrated in these three pages; the demonstration is in the 1957 memoir, which in this folder is an image-only scan and cannot be read. The import is therefore the claim and the construction, not a verification.</p>
+<h3 id="3-the-two-unit-vectors-are-orthogonal-and-that-is-the-kinematic-content-of-spin-fluid">3. The two unit vectors are orthogonal, and that is the kinematic content of `spin fluid'</h3>
+<p><strong>The idea.</strong> $v_\mu v^\mu=-1$, $\zeta_\mu\zeta^\mu=+1$, $v_\mu\zeta^\mu=0$. <strong>Where it lands.</strong> The spin-half fluid article's §<em>The Polar Data of the Fluid</em>, as a cross-check.</p>
+<h3 id="4-the-zitterbewegung-is-a-required-part-of-the-fluid-not-an-artefact-of-the-spinor-basis">4. The Zitterbewegung is a required part of the fluid, not an artefact of the spinor basis</h3>
+<p><strong>The idea.</strong> The tensor hydrodynamics "must include the picture of Zitterbewegung relating in a closed form. <strong>Where it lands.</strong> The zitterbewegung article's introduction, as the reason the phenomenon is not dispensable, and the spin-half fluid article, where the two sheets are already the structure.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

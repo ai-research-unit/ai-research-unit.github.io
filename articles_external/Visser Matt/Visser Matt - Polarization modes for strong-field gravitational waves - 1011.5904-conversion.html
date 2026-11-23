@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polarization modes for strong-field gravitational waves — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Polarization modes for strong-field gravitational waves - 1011.5904.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="polarization-modes-for-strong-field-gravitational-waves"><strong>Polarization modes for strong-field gravitational waves</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.5904v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Bethan Cropp, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 November 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Polarization modes for strong-field gravitational waves - 1011.5904-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Polarization modes for strong-field gravitational waves - 1011.5904.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Polarization modes for strong-field gravitational waves - 1011.5904.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Strong-field gravitational waves have two standard forms, Brinkmann and Rosen, related by a coordinate change. They treat polarisation differently: linear polarisation is easy in both, but circular and elliptical polarisation are awkward in Rosen form. The authors describe an algorithm that builds arbitrary polarisation states in Rosen form. They introduce an envelope function and two free functions, so the field equation governs the envelope while the polarisation follows an arbitrary path in polarisation space.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-tension">The tension</h3>
+<p>"These forms are related by a coordinate transformation, so they should describe essentially the same physics, but the two forms treat polarization states quite differently."</p>
+<h3 id="the-gap">The gap</h3>
+<p>"Both deal well with linear polarizations, but there is a qualitative difference in the way they deal with circular, elliptic, and more general polarization states."</p>
+<h3 id="the-result">The result</h3>
+<p>"In this article we will describe a general algorithm for constructing arbitrary polarization states in the Rosen form."</p>
+<h3 id="the-structure">The structure</h3>
+<p>"we have re-analyzed the Rosen strong-field gravity wave in terms of an 'envelope' function and two freely specifiable functions."</p>
+<h3 id="the-equations">The equations</h3>
+<p>"The vacuum field equations can be interpreted in terms of a single differential equation governing the 'envelope', coupled with an arbitrary walk in polarization space."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-forms-one-physics">1. Two forms, one physics</h3>
+<p><strong>The idea.</strong> A coordinate change can hide or expose polarisation content.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> warns that conventions matter. Here a coordinate choice changes which polarisations are easy, which is a concrete cost of a convention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on coordinates.</p>
+<p><strong>What stands in the way.</strong> The case is for pp waves. Ranked first, because it shows the cost concretely.</p>
+<h3 id="2-envelope-plus-a-walk">2. Envelope plus a walk</h3>
+<p><strong>The idea.</strong> The amplitude follows one equation while the polarisation moves freely.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code> describes polarisation states. A split into envelope and polarisation path is a parametrisation the target does not use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>, in the discussion of polarisation.</p>
+<p><strong>What stands in the way.</strong> The split works for plane-fronted waves. Ranked second.</p>
+<h3 id="3-arbitrary-dimensions">3. Arbitrary dimensions</h3>
+<p><strong>The idea.</strong> The construction extends beyond four dimensions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes dimension-specific limits. A construction that generalises dimensions is a contrast case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The extension is only indicated. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

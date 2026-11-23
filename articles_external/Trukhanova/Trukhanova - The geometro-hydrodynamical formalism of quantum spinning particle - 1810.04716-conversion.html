@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The geometro-hydrodynamical formalism of quantum spinning particle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The geometro-hydrodynamical formalism of quantum spinning particle -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometro-hydrodynamical-formalism-of-quantum-spinning-particle"><strong>The geometro-hydrodynamical formalism of quantum spinning particle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1810.04716 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 October 2018 (text dated 12 October 2018)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - The geometro-hydrodynamical formalism of quantum spinning particle - 1810.04716-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The geometro-hydrodynamical formalism of quantum spinning particle - 1810.04716.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The geometro-hydrodynamical formalism of quantum spinning particle - 1810.04716.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends the geometro-hydrodynamical reading of the Pauli field from a one-particle picture to a fluid of frames: the spinor wave is a field of triads, each triad can rotate, and the rotation couples back on the centre of mass. The torsion enters through the contortion of the affine connection, written as a vector and a scalar potential, and the paper derives the momentum balance, the spin-density evolution, a spin-vorticity field and two new dispersion branches. The spin-vorticity dispersion is computed; the physical consequences are proposed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-connection">The connection</h3>
+<p>The affine connection is split as $\Delta^\alpha_{\mu\nu}=\Gamma^\alpha_{\mu\nu}-K_{\mu\nu}{}^\alpha$ with the contortion
+$$K_{\mu\nu\alpha}=-C_{\mu\nu\alpha}+C_{\nu\alpha\mu}-C_{\alpha\mu\nu}$$
+(paper 1–2), where $C$ is the torsion tensor. The torsion is represented by a vector and a scalar potential, and "the torsion field acts like a spin-vorticity field".</p>
+<h3 id="the-fluid-variables">The fluid variables</h3>
+<p>The fluid is described by $\rho=\psi^+\psi$, a velocity field built from the triad's rotation, and the spin fixed on the third axis, $s=\frac{\hbar}{2}e_{(3)}$ with $e_{(3)}=e_{(1)}\times e_{(2)}$. The orientation is carried by Euler angles $\phi,\vartheta,\chi$, and the triad is "the element of space" with rotational degrees of freedom.</p>
+<h3 id="the-derived-equations">The derived equations</h3>
+<p>The velocity is
+$$v=\frac{1}{m}p+\frac{\hbar}{4m}\sum_a\varepsilon^{ijk}\nabla e^a_j\cdot e^a_i e^3_k$$
+(paper 53), "the part of velocity field via the rotational orientations of the continuously distributed triads". The momentum balance reads
+$$\rho(\partial_t+v\nabla)v=\rho e+\rho\,v\times T+\frac{s}{m}\cdot\nabla T+\frac{\hbar^2}{2m^2}\rho\nabla\frac{\sqrt{\rho}}{\rho}-\rho\nabla\Upsilon$$
+(paper 54, as printed), and the spin density obeys
+$$\partial_t s+\nabla_iJ^s_i=s\times T,\qquad J^s_i=sv_i$$
+(paper 56). $\Upsilon=\frac{\hbar^2}{4m^2}\partial_ie_3\cdot\partial_ie_3$ (paper 55) "determines the stiffness of the spinning fluid, being analogy with the magnetic stiffness in the spin half condensate". The conclusion states that "we showed that the torsion field acts like a spin-vorticity field (50)".</p>
+<h3 id="the-dispersion-branches">The dispersion branches</h3>
+<p>For a helical spin texture $t_0=c_z\cos\vartheta+\sin\vartheta\cos(qz-\omega_0t)c_x+\sin\vartheta\sin(qz-\omega_0t)c_y$ with curvature $k=\sin\vartheta$ and torsion $\tau=\cos\vartheta$, the spin wave has
+$$\omega=\frac{\hbar}{2m}q\cos\vartheta\,k_\parallel=\omega_0,\qquad \omega_0=\frac{\hbar}{2m}q\,\tau$$
+(paper 64, as printed — the display sets the two equal and then gives $\omega_0$ again). With an external torsion $T_k$ the linearized system gives
+$$\omega^4-\Bigl(\omega^2T_k^2+\frac{\hbar^2}{4m^2}k^4-\frac{\hbar T_k}{2m}k_\perp^2\Bigr)\omega^2+\frac{\hbar^2}{4m^2}T_k^2k_\parallel^2k^2=0$$
+(paper 65, bracketing as printed), and in the quantum case
+$$\Bigl(\frac{\omega}{T_k}\Bigr)^2=\frac12\Bigl(1+k^4\beta^4-k_\perp^2\beta^2\pm\sqrt{\bigl(1+k^4\beta^4-k_\perp^2\beta^2\bigr)^2-4\beta^4k^2k_\parallel^2}\Bigr),\qquad \beta=\sqrt{\frac{\hbar}{2mT_k}}$$
+(paper 66). "ions. The term proportional to ~2 characterizes the influence of the quantum pressure on the dynamics of wave."; the term proportional to $\hbar$ "leads from the spin-torsion coupling". For propagation orthogonal to the torsion, $\omega^2=T_k^2+\frac{\hbar^2}{4m^2}k_\perp^4-\frac{\hbar}{2m}T_kk_\perp^2$ (paper 67), which is stable and tends to $\omega\to T_k$ as $k_\perp\to0$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-mass-gap-set-by-the-torsion-itself">1. A mass gap set by the torsion itself</h3>
+<p><strong>The idea.</strong> The dispersion (67) tends to $\omega=T_k$ as $k_\perp\to0$: a wave whose rest frequency is the external torsion. That is a <strong>formula</strong> with a physical reading — a medium whose low-frequency cutoff is a geometric field.</p>
+<p><strong>What it would add.</strong> A worked example of a gapped branch arising from spin-vorticity alone, which the corpus's spin hydrodynamics does not produce because it has no torsion variable in the fluid.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result is linearized around a uniform torsion and a uniform spin, and the gap exists only because $T_k$ is treated as an external constant; nothing fixes its magnitude, and the paper's own estimate elsewhere puts any cosmic torsion far below any laboratory frequency.</p>
+<h3 id="2-the-quantum-pressure-and-the-spin-torsion-term-separated-by-power-of-math36">2. The quantum pressure and the spin-torsion term separated by power of $\hbar$</h3>
+<p><strong>The idea.</strong> In (66) the $\hbar^2$ term is the Madelung quantum pressure and the $\hbar$ term is the spin-torsion coupling, so the two corrections to the classical branch are ordered by $\hbar$. A <strong>reading</strong> of an expansion, and a clean one.</p>
+<p><strong>What it would add.</strong> A template for the corpus's own expansions, where the quantum potential and the spin terms are usually kept at the same order without saying why.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The ordering is a consequence of $\beta=\sqrt{\hbar/(2mT_k)}$ being small, i.e. of the torsion being large compared with the quantum scale; for a small torsion the expansion parameter is large and the ordering reverses. The paper does not state the condition.</p>
+<h3 id="3-the-torsion-as-a-vector-plus-scalar-potential">3. The torsion as a vector-plus-scalar potential</h3>
+<p><strong>The idea.</strong> Writing the contortion through a vector and a scalar potential lets the torsion enter as a modification of the canonical momentum, exactly as $A$ does. A <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A dictionary entry between the corpus's spin connection and a pair of potentials, which the corpus's torsion article derives abstractly but does not put in potential form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The potential decomposition is not unique — a gauge freedom is implied and never fixed — so the "potentials" carry more freedom than the torsion they represent, and no gauge-invariant statement is drawn from them.</p>
+<h3 id="4-a-spin-stiffness-written-as-the-gradient-of-the-triad">4. A spin stiffness written as the gradient of the triad</h3>
+<p><strong>The idea.</strong> $\Upsilon=\frac{\hbar^2}{4m^2}\partial_ie_3\cdot\partial_ie_3$ enters the momentum balance as $-\rho\nabla\Upsilon$, i.e. as the pressure of a texture energy quadratic in the gradient of the spin axis. A <strong>formula</strong> for the energy cost of a non-uniform spin direction.</p>
+<p><strong>What it would add.</strong> A named stiffness with a coefficient fixed by $\hbar$ and $m$ alone, where the corpus's spin-half fluid carries gradient terms whose coefficients are free.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The coefficient is fixed only for a unit spin axis; for a fluid with varying spin magnitude the normalisation $|e_3|=1$ is assumed, and the corpus's spin density is a dynamical variable, not a unit vector.</p>
+<p>The rank is a judgement: the gapped branch first, because it is a computed dispersion; the $\hbar$ ordering second, because it is a usable rule of thumb with a stated failure; the potential form third, because it is a rewriting; the stiffness fourth, because it is a coefficient that presupposes a unit spin axis.</p>
+<p>Fourteen pages: the contortion and torsion, the triad fluid, the guidance velocity, the momentum and spin equations, the helical texture, the two dispersion branches, and the conclusions.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

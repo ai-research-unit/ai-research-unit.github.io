@@ -80,7 +80,7 @@
 <li>$D$ has compact resolvent, $(D-i)^{-1}$ compact.</li>
 </ol>
 <p>The triple is <strong>even</strong> if there is a $\mathbb{Z}/2$-grading on $H$, that is, a self-adjoint involution $\Gamma$ with $\Gamma^{2}=1$, $\Gamma D=-D\Gamma$ and $\Gamma\pi(a)=\pi(a)\Gamma$ for all $a\in A$; and <strong>odd</strong> otherwise.</p>
-<p><strong>Definition.</strong> The <strong>dimension</strong> of a spectral triple is the number $p>0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(\exp(-tD^{2}))\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following <strong>axioms</strong>: <em>regularity</em>, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; <em>finiteness</em>, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; <em>reality</em>, the existence of a real structure (below); <em>first order</em>, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and <em>orientation</em>, that the Hochschild cycle representing the volume element maps to the chirality operator.</p>
+<p><strong>Definition.</strong> The <strong>dimension</strong> of a spectral triple is the number $p&gt;0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(\exp(-tD^{2}))\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following <strong>axioms</strong>: <em>regularity</em>, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; <em>finiteness</em>, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; <em>reality</em>, the existence of a real structure (below); <em>first order</em>, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and <em>orientation</em>, that the Hochschild cycle representing the volume element maps to the chirality operator.</p>
 <p><strong>Remark.</strong> The axioms are the algebraic shadow of the properties of a first-order elliptic operator on a closed spin manifold. The boundedness of the commutators is the statement that $D$ is a first-order differential operator; the compactness of the resolvent is the statement that the manifold is closed, so that the spectrum of $D$ is discrete; the dimension is the growth rate of the spectrum; and the finiteness axiom makes the smooth domain a projective module, so that it can serve as the module of sections of a bundle.</p>
 <h2 id="the-operator-as-metric-datum">The Operator as Metric Datum</h2>
 <p>The operator $D$ defines a metric on the state space of the algebra, and in the commutative case it recovers the geodesic distance.</p>
@@ -212,18 +212,18 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>finite spectral triple</strong> is a spectral triple with $H$ finite-dimensional and $D$ a self-adjoint matrix; the axioms become purely algebraic conditions on a finite-dimensional representation.</p>
 <p><strong>Example (the two-point space).</strong> Let $A=\mathbb{C}\oplus\mathbb{C}$ act on $H=\mathbb{C}^{2}$ by $\pi(a,b)=\operatorname{diag}(a,b)$, and let</p>
 <p>$$
-D=\begin{pmatrix}0&m\\ m&0\end{pmatrix}
+D=\begin{pmatrix}0&amp;m\\ m&amp;0\end{pmatrix}
 $$</p>
-<p>with $m>0$ real. Then $(A,H,D)$ is an odd spectral triple of dimension zero, the commutators are</p>
+<p>with $m&gt;0$ real. Then $(A,H,D)$ is an odd spectral triple of dimension zero, the commutators are</p>
 <p>$$
-[D,\pi(a,b)]=\begin{pmatrix}0&m(b-a)\\ m(a-b)&0\end{pmatrix}, \qquad \|[D,\pi(a,b)]\|=m|a-b|,
+[D,\pi(a,b)]=\begin{pmatrix}0&amp;m(b-a)\\ m(a-b)&amp;0\end{pmatrix}, \qquad \|[D,\pi(a,b)]\|=m|a-b|,
 $$</p>
 <p>and the Connes distance between the two pure states $\varphi_1(a,b)=a$ and $\varphi_2(a,b)=b$ is</p>
 <p>$$
 d(\varphi_1,\varphi_2)=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
 $$</p>
 <p>The two-point space is thus a metric space whose distance is the inverse of the off-diagonal entry of $D$, and the triple reconstructs a finite geometry from a matrix.</p>
-<p><strong>Example (matrix algebras).</strong> Let $A=M_n(\mathbb{C})$ act on $H=\mathbb{C}^n\oplus\mathbb{C}^n$ and let $D=\begin{pmatrix}0&M\\ M^{*}&0\end{pmatrix}$ for an invertible matrix $M$. The triple is even with grading $\operatorname{diag}(1,-1)$, the KO-dimension is determined by the signs of the reality structure if one is present, and the index pairing with the class of a projection $e\in M_n(\mathbb{C})$ computes the index of the compression of $D$.</p>
+<p><strong>Example (matrix algebras).</strong> Let $A=M_n(\mathbb{C})$ act on $H=\mathbb{C}^n\oplus\mathbb{C}^n$ and let $D=\begin{pmatrix}0&amp;M\\ M^{*}&amp;0\end{pmatrix}$ for an invertible matrix $M$. The triple is even with grading $\operatorname{diag}(1,-1)$, the KO-dimension is determined by the signs of the reality structure if one is present, and the index pairing with the class of a projection $e\in M_n(\mathbb{C})$ computes the index of the compression of $D$.</p>
 <p><strong>Example (almost commutative geometry).</strong> Let $(A_M,H_M,D_M)$ be the commutative spectral triple of a closed spin manifold $M$, with $\Gamma_M$ its chirality operator, and let $(A_F,H_F,D_F)$ be a finite spectral triple. Then</p>
 <p>$$
 A=A_M\otimes A_F, \qquad H=H_M\otimes H_F, \qquad D=D_M\otimes1+\Gamma_M\otimes D_F

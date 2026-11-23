@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamics of Stochastic Systems and Peculiarities of Measurements in Them — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamics of stochastic systems and peculiarities of measurements in them - 0210003.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamics-of-stochastic-systems-and-peculiarities-of-measurements-in-them"><strong>Dynamics of Stochastic Systems and Peculiarities of Measurements in Them</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0210003 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 27 March 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Dynamics of stochastic systems and peculiarities of measurements in them - 0210003-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamics of stochastic systems and peculiarities of measurements in them - 0210003.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-measurement-problem-in-algebraic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dynamics of stochastic systems and peculiarities of measurements in them - 0210003.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds the technical machinery underneath the other papers: how to write the dynamics of a stochastic system at all. The move is to replace parameters in the action of a statistical ensemble by effective, averaged values; the character of the stochasticity is then read off from the form of those effective parameters. With that in hand he separates the two objects that measurement talks about — the individual system $S$ and the statistical average $\langle S\rangle$ — and argues that confusing them is the source of the measurement paradoxes. Quantum mechanics is the case where the ensemble is described by a wave function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>The starting point is a discrete dynamic system $S_d$ with an action whose extremals are the dynamic equations, and canonical momentum $p_\alpha=\partial L/\partial x^\alpha$ with $p_0=\frac{\partial L}{\partial\dot x^\beta}\dot x^\beta-L$. A continuous system has an action $A[u]=\int L(u,\partial_k u)\,d^{n+1}x$ with the flux $j^k=\sum_B\frac{\partial L}{\partial u_{B,k}}u_B$ and the energy-momentum tensor $T^k_l=\sum_B\frac{\partial L}{\partial u_{B,k}}u_{B,l}-\delta^k_lL$. The stochastic case is obtained by replacing the parameters of the ensemble's action by their effective values, and the claim is that "Character of stochasticity is determined by the form of effective parameters."</p>
+<p>The result is a rewriting rather than a new dynamics: "The system S has finite number of the freedom degrees, whereas the system hSi, describing its dynamics, has infinite number of the freedom degrees. From informative viewpoint the system hSi is more complicated, than the system S, but we are forced to investigate hSi, if we want to study the stochastic system dynamics. References [1] Yu. A. Rylov, J. Math. Phys. 31, 2876, (1991)."</p>
+<p>The free nonrelativistic quantum particle is the worked example: it "is a stochastic system Sst , whose regular component of evolution is described by the statistical average system hSst i. Dynamic equation for hSst i is the free Schrödinger equation. Technique of quantum mechanics deals with hSst i only and ignores Sst completely."</p>
+<h3 id="two-objects-two-kinds-of-measurement">Two objects, two kinds of measurement</h3>
+<p>This is the paper's real content. "er equation. Technique of quantum mechanics deals with hSst i only and ignores Sst completely. But at consideration of quantum measurements one deals with both physical systems Sst and hSst i. Considering quantum measurements, one confuses sometimes Sst and hSst i. It leads sometimes to misunderstandings and paradoxes. Dynamic equations (2.22) may"</p>
+<p>The distinction is then made operational as two sorts of measurement: "single measurement (S-measurement), i.e. measurement under individual system $S$ and mass measurement (M-measurement), i.e. measurement under many single systems". And the asymmetry is stated plainly: "All predictions of quantum mechanics are produced only for statistical average systems hSi, but not for individual systems S. In the previous"</p>
+<p>So a probability is a statement about the ensemble, and the single case is not covered by the theory at all — not covered badly, not covered at all. He adds a remark about testability: even where a probability is one, $w(R')=1$, "it is not sufficient to produce one measurement an to obtain the result $R'$."</p>
+<h3 id="why-this-is-not-the-copenhagen-story">Why this is not the Copenhagen story</h3>
+<p>The wave function is demoted to a description of the ensemble, not of the particle: "in DCSD the wave function is only a method of description of statistical ensemble." Quantum mechanics is then "an axiomatic version of stochastic system dynamics", and the axioms are the price of describing only the averaged object.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-single-case-is-outside-the-theory">1. The single case is outside the theory</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: predictions are statements about $\langle S\rangle$; a single measurement is a measurement on $S$; no prediction of the theory is about $S$. The measurement problem is then not a paradox but a category error, and the error is named.</p>
+<p><strong>What it would add.</strong> The corpus's measurement article works in algebraic form and treats the problem as one of what a Kraus decomposition does to a state, with the boundary located in the polar decomposition. Rylov's line is a different diagnosis of the same boundary: not where the cut falls, but that the theory has two objects and the cut is between them. That is a sharper statement than the corpus's, and it could be tested against the corpus's own accounting of which object the Born weight belongs to.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-measurement-problem-in-algebraic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is drawn by fiat: nothing in the formalism tells you which object a given experimental procedure addresses, so the claim that confusion causes paradoxes is not falsifiable as stated. And the corpus's algebraic treatment has only one object — a state in $\mathbb{B}$ — so importing the pair would require saying what plays the role of $S$.</p>
+<h3 id="2-stochasticity-as-the-form-of-the-effective-parameters">2. Stochasticity as the form of the effective parameters</h3>
+<p><strong>The idea.</strong> There is no noise term and no random force. The randomness is carried entirely by which quantities are replaced by their averages, so the "character of stochasticity" is a property of an action, not of a probability law.</p>
+<p><strong>What it would add.</strong> The corpus's only stochastic object is the Born weight, which is a functional of the state. Rylov's claim makes stochasticity a feature of how a system is coarse-grained, which is a different location for it, and it would let the corpus ask whether its weight is what the coarse-graining produces — a question with a computation behind it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/states-observables-and-the-born-weight.md</code>.</p>
+<p><strong>What stands in the way.</strong> "Character of stochasticity is determined by the form of effective parameters" is a slogan without a map from a parameter choice to a distribution; no example computes a distribution from an effective action. Without that map, the claim cannot be compared with any weight.</p>
+<h3 id="3-ensemble-as-interacting-deterministic-systems">3. Ensemble as interacting deterministic systems</h3>
+<p><strong>The idea.</strong> The ensemble of independent stochastic systems is rewritten as "a set $S_{red}[S_d]$ of interacting deterministic systems $S_d$", and the interaction is what the stochasticity looks like. A <strong>construction</strong> that removes randomness from the ontology while keeping it in the description.</p>
+<p><strong>What it would add.</strong> The corpus's fluids are already interacting systems of this shape — the spin-half fluid is a continuum with self-consistent potentials. Rylov's statement would identify the corpus's fluid potentials with the character of a stochasticity, which is an interpretation the corpus does not currently make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> Independent systems made to interact are not independent, and the paper does not address whether the interaction is to be read as physical or as bookkeeping. If bookkeeping, the construction is a change of variables and the ontology is unchanged.</p>
+<p>The rank: the single case first, because it is a clean conceptual claim the corpus can use; the effective-parameter stochasticity second, because it needs a map the paper does not supply; the interacting-ensemble reading last, because it is a change of variables that is presented as an ontology.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

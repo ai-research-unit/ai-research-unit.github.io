@@ -96,11 +96,11 @@ Q = \begin{pmatrix} q \\ q' \end{pmatrix},
 $$</p>
 <p>the transpose of the two-component vector. The <strong>row</strong> of $Q$ is the $1\times 2$ matrix</p>
 <p>$$
-Q^{\mathsf{T}} = \begin{pmatrix} q & q' \end{pmatrix}.
+Q^{\mathsf{T}} = \begin{pmatrix} q &amp; q' \end{pmatrix}.
 $$</p>
 <p>The column is the transcribed form of the same object, and it is convenient because the product of split-complex numbers is bilinear. For a fixed $Q$, the map $B \mapsto QB$ sends coordinates linearly to coordinates, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $2\times2$ matrix acting on the column of $B$:</p>
 <p>$$
-QB \longleftrightarrow \mathsf{M}_2(Q)\, B, \qquad \mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}.
+QB \longleftrightarrow \mathsf{M}_2(Q)\, B, \qquad \mathsf{M}_2(Q) = \begin{pmatrix} q &amp; q' \\ q' &amp; q \end{pmatrix}.
 $$</p>
 <p>The matrix $\mathsf{M}_2(Q)$ is constructed and verified in <em>Split-Complex Regular Element Representation</em>; the present article records only that the product rule admits this reading. The <strong>component form</strong> is the same statement written out:</p>
 <p>$$
@@ -183,9 +183,9 @@ $$</p>
 $$</p>
 <p>because $\bar Q = q-j q' = Q_- \Pi_+ + Q_+ \Pi_-$. So the conjugation reflects the coefficient plane across the real axis and swaps the two idempotent coordinates. It is $\mathbb{R}$-linear, of order two, and its matrix in the basis $\{1, j\}$ is</p>
 <p>$$
-C = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+C = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix},
 $$</p>
-<p>a diagonal reflection; in the idempotent basis $\{\Pi_+, \Pi_-\}$ its matrix is $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, the swap. In the complex case the matrix is the same $C$; the difference is not in the conjugation but in the product, and it is the product that makes the conjugation a <strong>ring</strong> involution here as there.</p>
+<p>a diagonal reflection; in the idempotent basis $\{\Pi_+, \Pi_-\}$ its matrix is $\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}$, the swap. In the complex case the matrix is the same $C$; the difference is not in the conjugation but in the product, and it is the product that makes the conjugation a <strong>ring</strong> involution here as there.</p>
 <h2 id="the-two-fixed-point-subspaces">The Two Fixed-Point Subspaces</h2>
 <p>The conjugation splits the coefficient space into its fixed and anti-fixed subspaces.</p>
 <p><strong>Fixed subspace.</strong> The condition $(q,-q') = (q,q')$ gives $q' = 0$, so</p>
@@ -206,7 +206,7 @@ $$</p>
 <h2 id="the-norm-with-its-two-signs">The Norm with Its Two Signs</h2>
 <p>The norm of $Q = q+j q'$ in coordinates is</p>
 <p>$$
-\boxed{\; \langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2 \;},
+\boxed{\; \langle Q\rangle_{*} = Q\bar Q = q^2 - q'{}^2 \;},
 $$</p>
 <p>the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form</p>
 <p>$$
@@ -224,7 +224,7 @@ $$</p>
 <tbody>
 <tr>
 <td>timelike</td>
-<td>$\lvert q\rvert > \lvert q'\rvert$</td>
+<td>$\lvert q\rvert &gt; \lvert q'\rvert$</td>
 <td>$+$</td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ $$</p>
 </tr>
 <tr>
 <td>spacelike</td>
-<td>$\lvert q\rvert < \lvert q'\rvert$</td>
+<td>$\lvert q\rvert &lt; \lvert q'\rvert$</td>
 <td>$-$</td>
 </tr>
 </tbody>
@@ -242,14 +242,14 @@ $$</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
 <p>Restricted to the two fixed-point subspaces the norm is definite:</p>
 <p>$$
-\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
+\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q') = -q'{}^2 \quad (\text{negative definite}) \;},
 $$</p>
 <p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Norm and Invertibility in the General Split-Complex Algebra</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.</p>
 <p><strong>Comparison with the complex case.</strong> For $\mathbb{C}$ the norm is</p>
 <p>$$
-\langle Q\rangle_{*} = Q\bar Q = q^2 + q'^2,
+\langle Q\rangle_{*} = Q\bar Q = q^2 + q'{}^2,
 $$</p>
-<p>the <strong>sum</strong> of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'^2$ term of $q^2+q'^2$ into $-q'^2$ in the split case, and the definite form becomes the indefinite one.</p>
+<p>the <strong>sum</strong> of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'{}^2$ term of $q^2+q'{}^2$ into $-q'{}^2$ in the split case, and the definite form becomes the indefinite one.</p>
 <h2 id="the-two-component-opposite-of-the-complex-two-component-element-representation">The Two-Component Opposite of the Complex Two-Component Element Representation</h2>
 <p>The complex field and the split-complex algebra are the two two-dimensional real algebras generated by an element of square $-1$ and $+1$ respectively, and their two-component realizations are parallel in every respect except the sign of the generator's square. The following table is the comparison in full.</p>
 <div class="table-scroll"><table>
@@ -283,8 +283,8 @@ $$</p>
 </tr>
 <tr>
 <td>norm</td>
-<td>$q^2+q'^2$, positive definite</td>
-<td>$q^2-q'^2$, inertia $(1,1)$</td>
+<td>$q^2+q'{}^2$, positive definite</td>
+<td>$q^2-q'{}^2$, inertia $(1,1)$</td>
 </tr>
 <tr>
 <td>isotropic set</td>
@@ -310,8 +310,8 @@ $$</p>
 </table></div>
 <p>The two realizations share their coefficient space, their column and row, their product's second component, and their conjugation; they differ in the sign of the first component's $q' b'$ term, and that single difference turns a field into a ring with zero divisors and a Euclidean plane into a Lorentzian one. The split-complex algebra is thus the <strong>indefinite two-component</strong> algebra, the systematic opposite of the complex field, and the comparison table is the complete statement of the difference at the level of coordinates.</p>
 <h2 id="summary">Summary</h2>
-<p>A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of <em>Split-Complex Regular Element Representation</em>.</p>
-<p>The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
+<p>A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q &amp; q' \\ q' &amp; q \end{pmatrix}$ of <em>Split-Complex Regular Element Representation</em>.</p>
+<p>The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'{}^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -342,7 +342,7 @@ $$</p>
 <td>Column and row</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$</td>
+<td>$\mathsf{M}_2(Q) = \begin{pmatrix} q &amp; q' \\ q' &amp; q \end{pmatrix}$</td>
 <td>Left multiplication matrix</td>
 </tr>
 <tr>
@@ -366,7 +366,7 @@ $$</p>
 <td>Anti-fixed subspace, split imaginary axis</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{*} = q^2-q'^2$</td>
+<td>$\langle Q\rangle_{*} = q^2-q'{}^2$</td>
 <td>Norm, inertia $(1,1)$</td>
 </tr>
 <tr>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism - 1604.06745.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lorentz-force-and-energy-momentum-for-off-shell-electromagnetism"><strong>The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1604.06745v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. C. Land, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 April 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism - 1604.06745-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism - 1604.06745.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - The Lorentz Force and Energy-Momentum for Off-Shell Electromagnetism - 1604.06745.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Works out what the five pre-Maxwell fields mean mechanically. The gauge-covariant world-time theory produces five potentials, and this paper writes the corresponding force law, shows it is a Lorentz force covariant under a larger group than the Lorentz group, computes its non-covariant form, identifies the extra term as an effective electric force that fades at high $\gamma$, and constructs the energy–momentum tensor whose conservation law includes the mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-force-law">The force law</h3>
+<p>For a formal five-vector $p_\alpha=(p_\mu,K_{\text{kin}})$, the equation $d(p_\alpha-e_0a_\alpha)/d\tau=e_0f_{\alpha\beta}\,dx^\beta/d\tau$ "is in the form of a generalized Lorentz force which is formally covariant over a larger group with the signature (−, +, +, +, σ), i.e., O(3,2) or O(4,1). We note"</p>
+<p>"We note that the Lorentz force is proportional to $e_0$, not the dimensionless Maxwell charge $e$."</p>
+<h3 id="what-the-fifth-field-does-to-the-mass">What the fifth field does to the mass</h3>
+<p>Integrating the force over world time: $\frac{1}{2M}(m^2(\infty)-m^2(-)\infty)=\sigma e_0\int\dots$ — the mass shift is the world-line integral of the fifth field strength. The mass is not conserved separately; it is a dynamical variable driven by the field.</p>
+<h3 id="the-non-covariant-form">The non-covariant form</h3>
+<p>"This equation has the form of the usual Lorentz force, with the additional contribution of the e field, which becomes less significant as γ becomes large. Since the left hand side of (30) has a classical interpretation in terms of motion along the world line, we see that e0 (e − σMe/mγ) is an effective “electric” force. The 0th component"</p>
+<h3 id="the-conservation-law">The conservation law</h3>
+<p>The result "expresses the conservation of the total energy-momentum-mass of the particle and fields", in the form $\frac{d}{d\tau}\{\int d^4xT_{5\alpha}(x,\tau)+M[p_\alpha(\tau)-e_0a_\alpha(r(\tau),\tau)]\}=0$.</p>
+<h3 id="the-premise">The premise</h3>
+<p>The fields come from requiring local gauge invariance in a theory parametrised by a universal world time: five compensation fields "defined on a five dimensional manifold with coordinates ( x µ , τ )".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-force-law-is-covariant-under-a-bigger-group">1. The force law is covariant under a bigger group</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the five-component force equation is covariant not under the Lorentz group but under $O(3,2)$ or $O(4,1)$ — the group that mixes the four spacetime directions with the mass direction. The Lorentz group is the subgroup that leaves the mass alone.</p>
+<p><strong>What it would add.</strong> The corpus's covariance articles establish Lorentz covariance of each construction. This says the natural covariance group of the off-shell theory is larger, and that ordinary Lorentz covariance is what one gets by restricting to a fixed mass. That reframes the corpus's invariance claims: they are restrictions of a bigger symmetry, and the bigger one is available. It also suggests looking for the extra generators, which would be the operators that change the mass.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The larger group is "formal" in the paper's own word — it organises the equations but does not act on physical states in an obvious way.</p>
+<h3 id="2-mass-is-the-world-line-integral-of-the-fifth-field">2. Mass is the world-line integral of the fifth field</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: the change in $m^2$ between asymptotic states equals the integral of the fifth field strength along the trajectory. Mass is not a parameter that gets corrected; it is an observable whose time dependence is a line integral.</p>
+<p><strong>What it would add.</strong> The corpus's mass-shell article treats the mass as a constant fixing the support of the measure. This makes the mass a dynamical variable with an explicit equation, and it is the cleanest statement of what off-shell electromagnetism does that Maxwell electromagnetism cannot. It also gives a candidate for what a mass measurement in a background field should find, which is a concrete prediction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> The integral is over the world line, so the mass change is not local; a local statement would need the fifth field's flux through a hypersurface.</p>
+<h3 id="3-energymomentum-conservation-has-to-include-mass">3. Energy–momentum conservation has to include mass</h3>
+<p><strong>The idea.</strong> A <strong>conservation law</strong>: the conserved density is not the four-momentum of the particle plus the field's stress tensor, but that plus the fifth component of the field's energy–momentum tensor, with the particle's mass entering explicitly.</p>
+<p><strong>What it would add.</strong> The corpus's energy–momentum articles conserve four components. This says four is not enough in the off-shell theory and the fifth component is not optional. For any article that computes an energy budget in a time-dependent background, this is a warning that the budget can appear to fail unless the mass term is included.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.md</code>.</p>
+<p><strong>What stands in the way.</strong> The conservation law is integrated over all space and over $\tau$; a local differential form exists but is more complicated than the standard one.</p>
+<p>The rank: the larger covariance group first, because it reframes a corpus assumption; the mass-as-line-integral second, because it is a formula; the five-component conservation third, because it is a caution.</p>
+<p>The remaining items in one line each: the effective electric force $e_0(e-\sigma Me/m\gamma)$, which shows the deviation from Maxwell theory shrinking with energy; the comparison of pre-Maxwell and Maxwell forces, which is where the difference is quantified; and the charge normalisation by $e_0$ rather than $e$, which is a bookkeeping point with physical consequences.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

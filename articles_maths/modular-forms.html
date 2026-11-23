@@ -73,21 +73,21 @@
 <h2 id="introduction">Introduction</h2>
 <p>A modular form is a holomorphic function on the upper half-plane which is almost invariant under the action of a discrete subgroup of the Möbius transformations, the discrepancy between the value at $z$ and the value at the image of $z$ being a prescribed power of the derivative of the transformation. The invariance is by a factor of automorphy rather than exact, and that factor is what makes the theory non-trivial: it produces finite-dimensional spaces of functions, a ring structure in favourable cases, a Fourier expansion with integral coefficients for arithmetic subgroups, and — through the Hecke operators — Dirichlet series with Euler products and functional equations. Modular forms are thus at once analytic objects, carrying growth conditions and an inner product; algebraic ones, forming graded rings with algebraic Fourier coefficients; and arithmetic ones, parametrising elliptic curves and encoding Galois representations.</p>
 <p>This article develops the classical theory over $\mathbb{Q}$: the modular group and its congruence subgroups, the spaces $M_k(\Gamma)$ and $S_k(\Gamma)$ and their dimension, the structure theorem for the level-one ring with the discriminant and $j$-invariant, the Hecke operators with the theory of newforms and the Petersson inner product, the $L$-function of a modular form with its Euler product and functional equation, theta series and the half-integral weight case, modular curves with the Eichler–Shimura isomorphism, and the modularity theorem with its arithmetic consequences. The analytic input — the Fourier expansion, the growth of the coefficients, the convergence of the Eisenstein series, the theta transformation law — rests on the previous articles: the power series of <em>Analytic Functions and Power Series</em>, the vocabulary of <em>Modes of Convergence</em>, the integration on the upper half-plane of <em>Measure Theory and Integration</em>, and the theta functional equation of <em>Zeta Functions</em>. The arithmetic of the elliptic curves that the modularity theorem attaches to weight-two forms is that of <em>Elliptic Curves</em>; the class-field content of the $j$-invariant is that of <em>Galois Theory</em> and <em>Algebraic Number Theory</em>; and the arithmetic of the complex numbers used in the multiplier systems of half-integral weight is deferred to the synthetic study <em>Galois Theory of $\mathbb{C}/\mathbb{R}$</em>. The adelic re-reading of the whole theory, and the general linear group case, belong to <em>Automorphic Forms</em>, in the neighbouring category of this Part and written in parallel; the seam is fixed at the end of this article. The zeros of the $L$-functions of modular forms are treated in <em>The Riemann Hypothesis</em>, written above.</p>
-<p>Throughout, $\mathbb{H} = \{z\in\mathbb{C} : \operatorname{Im}z>0\}$ is the upper half-plane, $\Gamma$ a subgroup of finite index of $SL_2(\mathbb{Z})$ inside $SL_2(\mathbb{R})$, and $q = \exp(2\pi iz)$; the notation $\Gamma(1) = SL_2(\mathbb{Z})$ is used for the full group and $\bar\Gamma$ for its image in $PSL_2(\mathbb{Z})$. Weights $k$ are integers, positive unless stated. The identity matrix is $I$, the standard generators of $\Gamma(1)$ are
+<p>Throughout, $\mathbb{H} = \{z\in\mathbb{C} : \operatorname{Im}z&gt;0\}$ is the upper half-plane, $\Gamma$ a subgroup of finite index of $SL_2(\mathbb{Z})$ inside $SL_2(\mathbb{R})$, and $q = \exp(2\pi iz)$; the notation $\Gamma(1) = SL_2(\mathbb{Z})$ is used for the full group and $\bar\Gamma$ for its image in $PSL_2(\mathbb{Z})$. Weights $k$ are integers, positive unless stated. The identity matrix is $I$, the standard generators of $\Gamma(1)$ are
 $$
-S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad T = \begin{pmatrix}1&1\\0&1\end{pmatrix},
+S = \begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}, \qquad T = \begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},
 $$
 acting by $Sz = -1/z$ and $Tz = z+1$, and the modular group is $\bar\Gamma(1) = \Gamma(1)/\{\pm I\}$.</p>
 <h2 id="the-modular-group-and-its-fundamental-domain">The Modular Group and its Fundamental Domain</h2>
 <h3 id="the-action-on-the-upper-half-plane">The Action on the Upper Half-Plane</h3>
 <p><strong>Proposition.</strong> $SL_2(\mathbb{R})$ acts on $\mathbb{H}$ by
 $$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot z = \frac{az+b}{cz+d},
+\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}\cdot z = \frac{az+b}{cz+d},
 $$
 the action is transitive, and the stabiliser of $i$ is $SO(2)$. The kernel of the action is $\{\pm I\}$, so the group $\bar\Gamma(1)$ acts faithfully.</p>
-<p><strong>Proof.</strong> For $\operatorname{Im} z = y>0$ one computes $\operatorname{Im}(\gamma z) = y/\lvert cz+d\rvert^2>0$, so the action preserves $\mathbb{H}$; transitivity follows because
+<p><strong>Proof.</strong> For $\operatorname{Im} z = y&gt;0$ one computes $\operatorname{Im}(\gamma z) = y/\lvert cz+d\rvert^2&gt;0$, so the action preserves $\mathbb{H}$; transitivity follows because
 $$
-\begin{pmatrix}y^{1/2}&xy^{-1/2}\\0&y^{-1/2}\end{pmatrix}\cdot i = x+iy ,
+\begin{pmatrix}y^{1/2}&amp;xy^{-1/2}\\0&amp;y^{-1/2}\end{pmatrix}\cdot i = x+iy ,
 $$
 and the stabiliser computation is a direct matrix identity. The kernel is $\{\pm I\}$, since if $\gamma z = z$ for every $z$ then $\gamma$ is scalar, and the scalars in $SL_2$ are $\pm I$.</p>
 <p><strong>Theorem (the presentation).</strong> $\bar\Gamma(1)$ is generated by $S$ and $T$, with the presentation $\langle S,T \mid S^2 = 1,\ (ST)^3 = 1\rangle$, so that $\bar\Gamma(1)$ is the free product of $\mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Z}/3\mathbb{Z}$. The element $ST$ is $z\mapsto-1/(z+1)$, of order $3$; the conjugate element $TS$ is $z\mapsto(z-1)/z$, of the same order.</p>
@@ -95,7 +95,7 @@ and the stabiliser computation is a direct matrix identity. The kernel is $\{\pm
 <h3 id="the-fundamental-domain-and-the-elliptic-points">The Fundamental Domain and the Elliptic Points</h3>
 <p><strong>Definition.</strong> The <strong>standard fundamental domain</strong> is
 $$
-\mathcal{F} = \Bigl\{z\in\mathbb{H} : \lvert\operatorname{Re}z\rvert\leq\tfrac12,\ \lvert z\rvert\geq1\Bigr\} \cup \Bigl\{z\in\mathbb{H}: \lvert\operatorname{Re}z\rvert = \tfrac12,\ \lvert z\rvert>1\Bigr\},
+\mathcal{F} = \Bigl\{z\in\mathbb{H} : \lvert\operatorname{Re}z\rvert\leq\tfrac12,\ \lvert z\rvert\geq1\Bigr\} \cup \Bigl\{z\in\mathbb{H}: \lvert\operatorname{Re}z\rvert = \tfrac12,\ \lvert z\rvert&gt;1\Bigr\},
 $$
 with the convention that the boundary arcs are assigned to one of the two adjacent translates.</p>
 <p><strong>Theorem.</strong> $\mathcal{F}$ is a fundamental domain for $\bar\Gamma(1)$: every orbit meets $\mathcal{F}$, and no two interior points of $\mathcal{F}$ are equivalent. The quotient $\bar\Gamma(1)\backslash\mathbb{H}$ is homeomorphic to a sphere with one point removed, and it is compactified by adjoining the cusp $\infty$.</p>
@@ -110,8 +110,8 @@ $$
 $$
 and the groups $\Gamma_0(N)$ and $\Gamma_1(N)$ are the preimages in $SL_2(\mathbb{Z})$ of the upper triangular and of the unipotent upper triangular subgroups of $SL_2(\mathbb{Z}/N\mathbb{Z})$:
 $$
-\Gamma_0(N) = \Bigl\{\begin{pmatrix}a&b\\c&d\end{pmatrix} : c\equiv0 \pmod N\Bigr\}, \qquad
-\Gamma_1(N) = \Bigl\{\begin{pmatrix}a&b\\c&d\end{pmatrix} : c\equiv0,\ a\equiv d\equiv1 \pmod N\Bigr\}.
+\Gamma_0(N) = \Bigl\{\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix} : c\equiv0 \pmod N\Bigr\}, \qquad
+\Gamma_1(N) = \Bigl\{\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix} : c\equiv0,\ a\equiv d\equiv1 \pmod N\Bigr\}.
 $$
 A subgroup is a <strong>congruence subgroup</strong> if it contains $\Gamma(N)$ for some $N$.</p>
 <p><strong>Theorem (the indices).</strong> $\Gamma(N)$ is normal in $\Gamma(1)$ with quotient $SL_2(\mathbb{Z}/N\mathbb{Z})$, and
@@ -126,9 +126,9 @@ $$
 <p><strong>Definition.</strong> For a congruence subgroup $\Gamma$ the quotient $X_\Gamma = \bar\Gamma\backslash\mathbb{H}^*$ is the <strong>modular curve</strong> of $\Gamma$, a compact Riemann surface, and $Y_\Gamma = \bar\Gamma\backslash\mathbb{H}$ is its affine part. Its genus $g(\Gamma)$ is the genus of $X_\Gamma$.</p>
 <p><strong>Theorem (the genus; the case of prime level).</strong> Let $N$ be a prime. Then $\Gamma_0(N)$ has exactly two cusps, its count of elliptic points of order $2$ is
 $$
-\nu_2 = \begin{cases} 1 & N = 2,\\ 2 & N\equiv1 \pmod 4,\\ 0 & N\equiv3 \pmod 4,\end{cases}
+\nu_2 = \begin{cases} 1 &amp; N = 2,\\ 2 &amp; N\equiv1 \pmod 4,\\ 0 &amp; N\equiv3 \pmod 4,\end{cases}
 \qquad\text{and its count of order }3\text{ is}\qquad
-\nu_3 = \begin{cases} 1 & N = 3,\\ 2 & N\equiv1 \pmod 3,\\ 0 & N\equiv2 \pmod 3.\end{cases}
+\nu_3 = \begin{cases} 1 &amp; N = 3,\\ 2 &amp; N\equiv1 \pmod 3,\\ 0 &amp; N\equiv2 \pmod 3.\end{cases}
 $$
 Consequently
 $$
@@ -143,15 +143,15 @@ with $\nu_\infty$ the number of cusps and $\nu_2,\nu_3$ the numbers of elliptic 
 <p><strong>Corollary.</strong> For a congruence subgroup $\Gamma$ the quotient $X_\Gamma$ is a compact Riemann surface of the genus above, the cusps being the points added at the rational boundary; the natural map $X_\Gamma\to X_{\Gamma(1)}$ is a covering of degree $[\bar\Gamma(1):\bar\Gamma]$, ramified at the elliptic points and the cusps.</p>
 <h2 id="modular-forms-and-cusp-forms">Modular Forms and Cusp Forms</h2>
 <h3 id="the-automorphy-factor-and-the-definition">The Automorphy Factor and the Definition</h3>
-<p><strong>Definition.</strong> For $k\in\mathbb{Z}$ and $\gamma = \begin{pmatrix}a&b\\c&d\end{pmatrix}$ define the <strong>automorphy factor</strong> and the <strong>weight-$k$ action</strong>
+<p><strong>Definition.</strong> For $k\in\mathbb{Z}$ and $\gamma = \begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ define the <strong>automorphy factor</strong> and the <strong>weight-$k$ action</strong>
 $$
 j(\gamma,z) = cz+d, \qquad (f\mid_k\gamma)(z) = j(\gamma,z)^{-k}f(\gamma z) = (cz+d)^{-k}f\Bigl(\frac{az+b}{cz+d}\Bigr).
 $$
 <strong>Proposition (the cocycle relation).</strong> $j(\gamma\delta,z) = j(\gamma,\delta z)\,j(\delta,z)$, and consequently $\mid_k$ is a right action of $SL_2(\mathbb{R})$ on functions on $\mathbb{H}$; the scalar matrix $-I$ acts by $(-1)^k$, so that $\mid_k$ factors through $\bar\Gamma(1)$ exactly when $k$ is even.</p>
 <p><strong>Proof.</strong> Both statements are the chain rule for the derivative of a Möbius transformation, $(\gamma\delta)'(z) = \gamma'(\delta z)\delta'(z)$, the derivative of $z\mapsto(az+b)/(cz+d)$ being $j(\gamma,z)^{-2}$.</p>
-<p><strong>Definition.</strong> A <strong>modular form of weight $k$ for $\Gamma$</strong> is a holomorphic function $f:\mathbb{H}\to\mathbb{C}$ such that $f\mid_k\gamma = f$ for every $\gamma\in\Gamma$ and such that $f$ is <strong>holomorphic at every cusp</strong>: for each $\sigma\in SL_2(\mathbb{Z})$ the function $f\mid_k\sigma$ has a Fourier expansion $\sum_{n\geq0}a_nq^{n/h}$ with $a_n = 0$ for $n<0$, where $h$ is the width of the cusp. It is a <strong>cusp form</strong> if $a_0 = 0$ at every cusp, equivalently if $f$ vanishes at every cusp. The spaces are $M_k(\Gamma)\supseteq S_k(\Gamma)$, and $M_k(\Gamma) = 0$ for odd $k$ when $-I\in\Gamma$.</p>
+<p><strong>Definition.</strong> A <strong>modular form of weight $k$ for $\Gamma$</strong> is a holomorphic function $f:\mathbb{H}\to\mathbb{C}$ such that $f\mid_k\gamma = f$ for every $\gamma\in\Gamma$ and such that $f$ is <strong>holomorphic at every cusp</strong>: for each $\sigma\in SL_2(\mathbb{Z})$ the function $f\mid_k\sigma$ has a Fourier expansion $\sum_{n\geq0}a_nq^{n/h}$ with $a_n = 0$ for $n&lt;0$, where $h$ is the width of the cusp. It is a <strong>cusp form</strong> if $a_0 = 0$ at every cusp, equivalently if $f$ vanishes at every cusp. The spaces are $M_k(\Gamma)\supseteq S_k(\Gamma)$, and $M_k(\Gamma) = 0$ for odd $k$ when $-I\in\Gamma$.</p>
 <p><strong>Definition.</strong> A modular form $f$ is a <strong>modular function</strong> if $k=0$ and the only pole is at the cusps, and $f$ is <strong>entire</strong> if $k=0$ and holomorphic everywhere including the cusps; the entire modular functions are the constants, by the maximum principle applied on the compact quotient $X_\Gamma$.</p>
-<p><strong>Theorem (finite dimensionality; the growth of coefficients).</strong> $M_k(\Gamma)$ and $S_k(\Gamma)$ are finite-dimensional, of dimension bounded by the Riemann–Roch formula below, and if $f = \sum a_nq^n$ is a cusp form of weight $k$ for a congruence subgroup then $a_n = O(n^{k/2+\epsilon})$ for every $\epsilon>0$, with the sharper bound $a_n = O(n^{(k-1)/2}\sigma_1(n))$ in the classical form.</p>
+<p><strong>Theorem (finite dimensionality; the growth of coefficients).</strong> $M_k(\Gamma)$ and $S_k(\Gamma)$ are finite-dimensional, of dimension bounded by the Riemann–Roch formula below, and if $f = \sum a_nq^n$ is a cusp form of weight $k$ for a congruence subgroup then $a_n = O(n^{k/2+\epsilon})$ for every $\epsilon&gt;0$, with the sharper bound $a_n = O(n^{(k-1)/2}\sigma_1(n))$ in the classical form.</p>
 <p><strong>Proof sketch.</strong> The finite dimensionality is the Riemann–Roch statement of the next subsection. For the coefficients, the Petersson formula expresses $a_n$ as an inner product of $f$ with a Poincaré series, and the estimate of that inner product uses the decay of $f$ at the cusps; the sharp bound $a_n = O(n^{(k-1)/2+\epsilon})$ is the consequence of Deligne's theorem on the absolute values of the eigenvalues of Frobenius, stated below.</p>
 <h3 id="the-fourier-expansion-and-examples">The Fourier Expansion and Examples</h3>
 <p><strong>Definition.</strong> The <strong>Fourier expansion</strong> (or $q$-expansion) of a modular form for $\Gamma$ at the cusp $\infty$ is
@@ -233,7 +233,7 @@ $$
 T_n\Bigl(\sum_{m\geq0}a_mq^m\Bigr) = \sum_{m\geq0}\Bigl(\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}\Bigr)q^m .
 $$
 <strong>Theorem.</strong> $T_n$ maps $M_k(\Gamma)$ to itself and $S_k(\Gamma)$ to $S_k(\Gamma)$; the operators commute with one another and with the action of the diamond operators $\langle d\rangle$ of $\Gamma_0(N)/\Gamma_1(N)$; the $T_n$ with $\gcd(n,N)=1$ are normal with respect to the Petersson inner product and pairwise commute, and they are self-adjoint on the space of forms of trivial nebentypus, so that $S_k(\Gamma_0(N))$ has a basis of simultaneous eigenvectors for them.</p>
-<p><strong>Proof sketch.</strong> The action of $T_n$ averages over the coset representatives of the double coset $\Gamma\begin{pmatrix}1&0\\0&n\end{pmatrix}\Gamma$, so it preserves the space and commutes with $\Gamma$; the coefficient formula is read off from the $q$-expansion; the commutation relations follow from the composition law of the double cosets, and the normality for $\gcd(n,N)=1$ from the invariance of the measure $y^{-2}dx\,dy$, which makes $T_n$ self-adjoint as soon as the diamond operator $\langle n\rangle$ acts trivially.</p>
+<p><strong>Proof sketch.</strong> The action of $T_n$ averages over the coset representatives of the double coset $\Gamma\begin{pmatrix}1&amp;0\\0&amp;n\end{pmatrix}\Gamma$, so it preserves the space and commutes with $\Gamma$; the coefficient formula is read off from the $q$-expansion; the commutation relations follow from the composition law of the double cosets, and the normality for $\gcd(n,N)=1$ from the invariance of the measure $y^{-2}dx\,dy$, which makes $T_n$ self-adjoint as soon as the diamond operator $\langle n\rangle$ acts trivially.</p>
 <p><strong>Definition.</strong> A <strong>Hecke eigenform</strong> is a nonzero $f\in M_k(\Gamma_0(N))$ which is an eigenvector for every $T_n$ with $\gcd(n,N)=1$ and for every diamond operator; it is <strong>normalised</strong> if $a_1 = 1$.</p>
 <p><strong>Theorem.</strong> A normalised Hecke eigenform with $a_1=1$ has $T_nf = a_nf$ for every $\gcd(n,N)=1$, and its Fourier coefficients satisfy $a_{mn} = a_ma_n$ for $\gcd(m,n)=1$ and $a_{p^{r+1}} = a_pa_{p^r}-\langle p\rangle p^{k-1}a_{p^{r-1}}$ for $p\nmid N$.</p>
 <p><strong>Proof.</strong> The eigenvalue of $T_n$ is computed by applying the operator to the normalised form and reading the coefficient of $q$; the relations are the coefficient form of the commutation relations.</p>
@@ -244,7 +244,7 @@ $$
 $$
 absolutely convergent because both forms vanish at the cusps.</p>
 <p><strong>Theorem (the Petersson and Eichler–Selberg formulae).</strong> The inner product is positive definite and Hermitian and $T_n$ is self-adjoint for $\gcd(n,N)=1$; the inner product of two Poincaré series is given by an explicit formula whose main term involves the Kloosterman sums, and consequently the eigenvalues of the $T_n$ on the cusp forms are real algebraic integers.</p>
-<p><strong>Definition.</strong> For $\Gamma_0(N)$ the <strong>old subspace</strong> of $S_k(\Gamma_0(N))$ is the span of the images of $S_k(\Gamma_0(M))$ for the proper divisors $M\mid N$, $M<N$, under the two degeneracy maps $f(z)\mapsto f(z)$ and $f(z)\mapsto f(Mz)$; the <strong>new subspace</strong> is its orthogonal complement with respect to the Petersson inner product, and a <strong>newform</strong> of level $N$ is a normalised form in the new subspace which is an eigenform for the full Hecke algebra, including the operators at the primes dividing $N$.</p>
+<p><strong>Definition.</strong> For $\Gamma_0(N)$ the <strong>old subspace</strong> of $S_k(\Gamma_0(N))$ is the span of the images of $S_k(\Gamma_0(M))$ for the proper divisors $M\mid N$, $M&lt;N$, under the two degeneracy maps $f(z)\mapsto f(z)$ and $f(z)\mapsto f(Mz)$; the <strong>new subspace</strong> is its orthogonal complement with respect to the Petersson inner product, and a <strong>newform</strong> of level $N$ is a normalised form in the new subspace which is an eigenform for the full Hecke algebra, including the operators at the primes dividing $N$.</p>
 <p><strong>Theorem (Atkin–Lehner; multiplicity one).</strong> $S_k(\Gamma_0(N))$ is the direct sum of the old subspace and the new subspace; the new subspace is spanned by the newforms, which are eigenforms for the full Hecke algebra including the operators at the primes dividing $N$, and the space spanned by the Galois conjugates of a newform is irreducible. The newforms of level $N$ and weight $k$ with rational coefficients correspond bijectively to the normalised eigenforms with rational coefficients.</p>
 <p><strong>Proof sketch.</strong> The old subspace is the image of the sum of the two degeneracy maps from the levels $M$ and $N/M$, and the new subspace is its orthogonal complement; the Atkin–Lehner operators $W_Q$ for $Q\parallel N$ refine the decomposition, and multiplicity one is proved by comparing two eigenforms through the recursions at two primes.</p>
 <h3 id="the-math444-function-of-a-modular-form">The $L$-Function of a Modular Form</h3>
@@ -252,16 +252,16 @@ absolutely convergent because both forms vanish at the cusps.</p>
 $$
 L(f,s) = \sum_{n\geq1}\frac{a_n}{n^s} = \prod_{p\nmid N}\frac{1}{1-a_pp^{-s}+p^{k-1-2s}}\prod_{p\mid N}\frac{1}{1-a_pp^{-s}},
 $$
-the product converging for $\Re s > (k+1)/2$ by the bound on the coefficients.</p>
+the product converging for $\Re s &gt; (k+1)/2$ by the bound on the coefficients.</p>
 <p><strong>Theorem (Hecke; the functional equation).</strong> With the completed function
 $$
 \Lambda(f,s) = N^{s/2}(2\pi)^{-s}\Gamma(s)L(f,s),
 $$
-the product converges absolutely for $\Re s>(k+1)/2$, $L(f,s)$ has an analytic continuation to an entire function, and
+the product converges absolutely for $\Re s&gt;(k+1)/2$, $L(f,s)$ has an analytic continuation to an entire function, and
 $$
 \boxed{\;\Lambda(f,s) = \varepsilon\,\Lambda(f,k-s), \qquad \varepsilon = \pm1\;} ,
 $$
-the sign $\varepsilon$ being the <strong>root number</strong>; the critical line is $\Re s = k/2$ and the nontrivial zeros lie in the critical strip $(k-1)/2<\Re s<(k+1)/2$, since the Euler product is nonvanishing for $\Re s>(k+1)/2$ and the functional equation excludes the zeros for $\Re s<(k-1)/2$.</p>
+the sign $\varepsilon$ being the <strong>root number</strong>; the critical line is $\Re s = k/2$ and the nontrivial zeros lie in the critical strip $(k-1)/2&lt;\Re s&lt;(k+1)/2$, since the Euler product is nonvanishing for $\Re s&gt;(k+1)/2$ and the functional equation excludes the zeros for $\Re s&lt;(k-1)/2$.</p>
 <p><strong>Proof sketch.</strong> The analytic continuation and the functional equation are proved by the Mellin transform of $f$: for a cusp form of weight $k$,
 $$
 \Lambda(f,s) = \int_0^\infty f(iy)\,y^{s-1}\,dy ,

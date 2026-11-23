@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force Carrier — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Force_carrier.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="force-carrier"><strong>Force Carrier</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia, stub)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Force carrier</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia, stub)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Force_carrier-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Force_carrier.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Force_carrier.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Only the opening paragraphs carry text.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia stub on the force carrier: the particle that mediates a force as the quantum of a field, with the particle and field descriptions presented as complementary, and the alternative names messenger, intermediate and exchange particle given.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"a force carrier is a type of particle that gives rise to forces between other particles. They serve as the quanta of a particular kind of physical field. Force carriers are also known as messenger particles, intermediate particles, or exchange particles."</p>
+<h3 id="the-two-viewpoints">The two viewpoints</h3>
+<p>"Quantum field theories describe nature in terms of fields. Each field has a complementary description as the set of particles of a particular type. A force between two particles can be described either as the action of a force field generated by one particle" other, or as the exchange of quanta of that field.</p>
+<p>"Force carrier In quantum field theory, a force carrier is a type of particle that gives rise to forces between other particles."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-carrier-is-a-metaphor-with-a-limit">1. "Carrier" is a metaphor with a limit</h3>
+<p><strong>The idea.</strong> The particle does not travel from one charge to another like a messenger; the field configuration acts, and the exchange picture is one term of a perturbation series. The article's own hedging —"serve as the quanta" — concedes this.</p>
+<p><strong>What it would add.</strong> A caution for the corpus's interaction articles, which speak of exchanged quanta and must keep the static field and the exchanged quantum distinct.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>, at the propagator.</p>
+<p><strong>What stands in the way.</strong> Nothing; the correction is a matter of wording.</p>
+<h3 id="2-the-list-of-carriers-is-a-table-of-representations">2. The list of carriers is a table of representations</h3>
+<p><strong>The idea.</strong> Which particle carries which force is fixed by the gauge group: the carrier sits in the adjoint representation, so the number of carriers is the dimension of the group.</p>
+<p><strong>What it would add.</strong> A structural statement behind the naming of the photon, the $W$ and $Z$, the gluons and the graviton.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.md</code>.</p>
+<p><strong>What stands in the way.</strong> Gravity's carrier is not in an adjoint representation of a compact group, so the rule needs that exception.</p>
+<p>This is a stub; the definition and the field-versus-particle remark are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space-Time Model of Elementary Particles and Unitary Symmetry. I: General Foundation and Symmetry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Space-Time Model of Elementary Particles and Unitary Symmetry. I General…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="space-time-model-of-elementary-particles-and-unitary-symmetry-i-general-foundation-and-symmetry"><strong>Space-Time Model of Elementary Particles and Unitary Symmetry. I: General Foundation and Symmetry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>34</strong> (1965) 124, No. 1; received 12 February 1965</td>
+</tr>
+<tr>
+<td>length</td>
+<td>31 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Space-Time Model of Elementary Particles and Unitary Symmetry. I General Foundation and Symmetry-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Space-Time Model of Elementary Particles and Unitary Symmetry. I General Foundation and Symmetry.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Space-Time Model of Elementary Particles and Unitary Symmetry. I General Foundation and Symmetry.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes that a particle is an association of four space-time points. Separating the centre of mass leaves three relative vectors — "figure axes"— and the equivalence of any choice among them is an $O(3)$ symmetry acting on figure space, independent of the Lorentz group. A confining oscillator-type invariant potential holds the tetrad together within a characteristic length, and the oscillator quanta of the three normal axes turn out to carry a $U(3)$ symmetry containing that $O(3)$ and the internal reciprocity as special cases. Isospin and hypercharge come from excitations of the figure axes; ordinary spin comes from the rotational part of the relative motion with respect to the inertial frame. A triality condition on the total oscillator quantum number is imposed, and with it the $(mass)^{2}$ of the light isoscalar mesons comes out in the ratio $1:2:3:5$. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-hypothesis">The hypothesis</h3>
+<p>"The general framework is given of a unified theory of elementary particles based on the hypothesis that a particle should be association of four space-time points. With the separation of the center-of-mass degree of freedom the relative motion of the system is described by a set of three normal axes. The equivalence of the normal axes implies the 0(3) symmetry which is independent of the Lorentz transformation."</p>
+<p>"The wave equation contains an invariant potential representing a strong direct non-local interaction working inside the particle to ensure that the motion of normal coordinates is of oscillator-type maintaining the four-point association within a small space-time region (with a charac- teristic length). This entails the wider U (3) symmetry that includes the above 0 (3) subgroup as well as the internal self-reciprocity."</p>
+<p>"In this model the unitary spins including isospin and hypercharge originate from excitations of oscillatory motions of normal axes with respect to the figure space, while the spin is due to the rotational part of the relative motion with respect to the inertial frame. If in the system one of the four points becomes inequivalent with the other three, it implies the usual symmetry-breaking of $U(3)$. The meaning of the required triality condition is considered. The whole treatment is made in conformity with relativistic covariance, but on the level of one-particle theory."</p>
+<h3 id="four-points-and-six-distances">Four points and six distances</h3>
+<p>The tetrad coordinates $y^{\mu a}$ are replaced by the centre $X^{\mu}$ and three relative coordinates $x^{\mu r}$, "three linearly independent comb- 126 T. Takabayasi" of the six relative vectors between pairs of points. The coefficients are arbitrary up to three conditions and a non-vanishing Jacobian, so "e transformation (1· 5) has a broad range of arbitrariness, whose physical significance will be considered later.". Then "the six quantities $s^{\alpha\beta}=(y^{\mu\alpha}-y^{\mu\beta})^{2}$ ... consist of six quantities, representing six invariant squared distances between four points", which are linearly related to the six scalars $x^{\mu r}x^{\nu r}$.</p>
+<p>"s (1·14), are the elements representing the shape and size of our system in the Minkowski space. We call them bodily elements. For"</p>
+<p>"ereas the " 4-dimensional volume " (1· 9) has not physical importance because of its non-invariance under translations, the pseudoscalar quantity (1·18)" "is translation-invariant and represents the" rest volume "of the tetrad aside the factor 6P 1/ 2 (d.". We note that under any transposition $(y^{\mu a},y^{\mu b})$ among the four-points the quantity $v^{\mu\nu}$ is invariant while $\Delta$ changes sign.</p>
+<h3 id="not-imposing-the-naive-simultaneity-condition">Not imposing the naive simultaneity condition</h3>
+<p>"8) and (1·19) are SjYace- Time ModeL (~l Elementary Particles 129 P""x/, which could be suppressed if one imposed the set of subsidiary conditions*) (1·22) which IS equivalent to P""(y/-y/)¢=0." "which IS equivalent to P""(y/-y/)¢=0. (1· 23) Under this condition all x/ are space-like and all the four events y/ are re- latively space-like. In the center-of-mass rest frame, Eq. (1· 23) g1ves Downloaded from academic." "all four events occur simultaneously, spanning indeed a tetrahedron in the usual 3-dimensional space. One"</p>
+<p>"One of the features of our theory, however, is that we do not impose Eq. (1·22). We shall instead assume different subsidiary conditions [Eq. (5·18)], which are in accord with the internal reciprocity [to be given by Eq. (2 · 27)] and U (3) symmetry, in contrast to (1· 22). Our subsidiary conditions will sup- press time-like extensions to a nzinimunz but finite extent in such a way that in ·the rest frame the zero-point oscillations always persist with respect to relative times. iii) Kinematical properties beyond the simple geometrical ."</p>
+<h3 id="normal-axes-and-the-independence-of">Normal axes and the independence of</h3>
+<p>$O(3)$</p>
+<p>"ms. Any set of norma l axes x/' can be obtain ed from a certain specifi ed one x/ [e.g., Eq. (1·11) ] throug h such a linear transfo rmatio n in the figure space as leaves Xp, r x,.. r = V p,v /4 = 1nvana . - • nt, (2 ·13) namely throug h the orthog onal transfo rmatio n (2 ·14) Rrn R·~u =OrR, I." "Such figure- space transfo rmatio ns form the subgro up 0 (3) of the GL (3) stated in § 1, and includ es figure- space rotatio ns and reflecti ons." "Since $[L^{r},D^{\mu\nu}]=0$, this figure-space rotation is, of course, independent of the usual Lorentz transformations."</p>
+<p>"The natural assump- tion in our theory is that of mutual equivalence of all normal axes (at least in the symmetry limit). Then the theory should be invariant under the 0 (3) transformation (2 ·14), to result in the conservation of three Lorentz-invariant quantities Lr of Eq. (1· 47), each of which evidently takes integer eigenvalues. We shall find that Lr constitute part of the unitary-spins [see Eq."</p>
+<p>"It must be remarked that one cannot require the invariance of theory against the totality of this GL (3) or SL On, which corresponds to the full arbi- trariness in the definition of figure axes. We shall see, however, that the theory 132 T. Takabayasi is invariant under"</p>
+<h3 id="where-math24-comes-from">Where $U(3)$ comes from</h3>
+<p>"If we define the 'oscillator variables' $a^{\mu r}$ and $a^{\mu r\dagger}$ on the basis of normal variables ... these are also figure-space vectors as well as Minkowski vectors." Like $x^{\mu r}$ and $p^{\mu r}$ themselves, they are 'proper internal quantities' in the sense that they commute with both external variables $X^{\mu}$ and $P^{\mu}$.</p>
+<p>"On the basis of Eq. (3 ·1) we consider a canonical transformation in the figure-space : (3. 6) where U IS a 3 X 3 unitary 1natrix UU<em>=I, I." "X 3 unitary 1natrix UU</em>=I, I.e. U,.g (U*Yt =art. Evidently the transformations (3 · 6) form the U (3) group which IS the generali- zation of the 0 (3) transformations." "n v = 0, (3 · 7) reduces to the 0 (3) transforma- tion (2 ·14). On the other hand (3 · 7) includes the internal reciprocity (2 · 27) as the special case where u 0 and v -I."</p>
+<p>"the most natural and simple model for that purpose is that of osci- llator type. This means that we adopt the potential (2 · 23) in which we only Downloaded from academic.oup.com/ptp/article/34/1/124/1824925 by guest on 12 November 2026 keep the first term."</p>
+<h3 id="triality">Triality</h3>
+<p>"3)2} U 1 = - exp [ rei .t.....J 8 [a:,,e] J. (4·9) If one requires the transformation (4 ·1) with or=() to belong to the uni- modular subgroup SU (3), 0 is restricted to three possible values*l 0, 2re/3, and 4re/3. Then with 0=2re/3" "e complex cubic root of 1. This means a rotation by 120° in the plane spanned by ~ P-r and n / (for every r). The corresponding unitary operator is U t=exp [ 2ni"~, L." " 2026 r P P ( 4 ·11) having eigenvalues 1, w and uJ 2 • We call Ut multiplicative triality operator. Since "</p>
+<p>"Un Ur and Ut depend on the U (3) invariant Auu alone, they are con- stants of motion even in the situation of the broken U (3) symmetry. We"</p>
+<h3 id="the-mass-formula">The mass formula</h3>
+<p>Then $M^{2}=\mu_{0}^{2}\,(a^{\mu r\dagger}a^{\mu r}+6)=\mu_{0}^{2}\,(N+3)=\mu_{0}^{2}\,(\sum_{r}n^{(r)}+3)$, "1 0 2 =8/l0 2 supplies the basic (mass) 2 unit.**l Then tt 0 =4(KpY14 is related to lo by flo lo = 2 v2."</p>
+<p>"Empirically there exist indications for such an integer multiplication rule for the (massY of mesonic levels; in particular 12 l for the four isosinglet mesons r;, w, X 0 (958) and f 0 , the relations mr/: '1Jlw 2 : m (x 0 ) 2 : m (f0 ) 2 = 1 : 2: 3: 5 (6 ·3) are well satisfied. If we assign A/= I:; nCr)= 0, 3, 6, (9), 12, (6 ·4) T to r;, w, X 0 and f 0 , respectively, the mass formula (6 ·1) just g1ves Eq. (6 · 3). The selection (6 · 4) corresponds to the subsidiary" involving the multiplicative triality operator. "ning of the required triality condition is considered. The whole treatment is made" on the total number, "and they will be assumed for the baryonic case also."</p>
+<p>"The model for mesons in its present form) however, is unsatisfactory to reproduce the actual supermultiplets of meson spectrum in accordance with the charge conjugation and need a certain modification. *l We therefore refrain from entering into it any further. In Part II we deal with baryons rather than mesons in our framework to show that it really gives an adequate model for the baryonic states in accord with observations. Downloaded from academic."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>Internal symmetry as a symmetry of <em>which triad you call the triad</em></li>
+</ol>
+<p><strong>The idea.</strong> The $O(3)$ here is not a rotation group acting on fields. It is the statement that the three relative vectors of a four-point object may be relabelled by any orthogonal map, and the physics cannot tell. $U(3)$ then arises because the oscillator variables admit a larger relabelling than the coordinates do.</p>
+<p><strong>What it would add.</strong> An origin for an internal symmetry that is neither imposed nor observed but <em>counted</em>: the number of equivalent ways to choose the figure axes. The corpus's accounts of $SU(3)$ and triality take the group as given and ask about its representations; here the group's size is fixed by how many redundant descriptions the object admits, which is a constructive explanation of a different kind.</p>
+<p><strong>Where it lands.</strong> §<em>Triality</em>, as the counting origin of the symmetry.</p>
+<p><strong>What stands in the way.</strong> The argument gives $U(3)$ and not $SU(3)$ plus a separate triality; the author has to impose the unimodular restriction by hand, so the "counting" story stops one step short.</p>
+<ol>
+<li>Two kinds of angular momentum from one object, with different origins</li>
+</ol>
+<p><strong>The idea.</strong> Ordinary spin is the rotational part of the relative motion with respect to the inertial frame, generated by $L^{\mu\nu}$. Unitary spin is the excitation of the figure axes with respect to figure space, generated by $A_r{}^s$. They are different objects built from the same coordinates, commuting with each other.</p>
+<p><strong>What it would add.</strong> A clean dissociation the corpus reaches only through the polar decomposition. <em>Spin Hydrodynamics in Biquaternionic Form</em> (<code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>) separates spin from orbital angular momentum within one frame; here the split is between a Lorentz-frame rotation and a figure-space rotation, and the two are independent because $[L^{r},D^{\mu\nu}]=0$. That is a stronger statement than commuting observables: it is a statement that the two rotations act on disjoint arguments.</p>
+<p><strong>Where it lands.</strong> §<em>The Decomposition</em> of <em>Spin Hydrodynamics in Biquaternionic Form</em>, as the two-frame split.</p>
+<p><strong>What stands in the way.</strong> The construction needs four points, so the split is not available for a two-point (bilocal) model, and the paper's own meson spectrum comes out wrong.</p>
+<h3 id="3-triality-as-a-selection-rule-with-a-mass-prediction">3. Triality as a selection rule with a mass prediction</h3>
+<p><strong>The idea.</strong> Requiring the $120^{\circ}$ rotation in each $(\xi^{r},\pi^{r})$ plane to be a symmetry restricts $N$ to multiples of three, and the $(mass)^{2}$ formula then gives $1:2:3:5$ for the four light isoscalars. <strong>Where it lands.</strong> §<em>Triality</em>, as the empirical reading.</p>
+<h3 id="4-one-point-becoming-inequivalent-is-the-symmetry-breaking">4. One point becoming inequivalent <em>is</em> the symmetry breaking</h3>
+<p><strong>The idea.</strong> $U(3)$ holds while all four points are equivalent. <strong>Where it lands.</strong> §<em>The Model and the Constraint</em> of <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>), as the geometric breaking.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorentz boosts and Wigner rotations: self-adjoint complexified quaternions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz boosts and Wigner rotations - self-adjoint complexified quaternions -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lorentz-boosts-and-wigner-rotations-self-adjoint-complexified-quaternions"><strong>Lorentz boosts and Wigner rotations: self-adjoint complexified quaternions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2101.05971v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 15 January 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Lorentz boosts and Wigner rotations - self-adjoint complexified quaternions - 2101.05971-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz boosts and Wigner rotations - self-adjoint complexified quaternions - 2101.05971.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Lorentz boosts and Wigner rotations - self-adjoint complexified quaternions - 2101.05971.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors write boosts and Wigner rotations with complexified quaternions. A self-adjoint complex quaternion carries the four-velocity, and a boost becomes conjugation by its square root. From that follow simple formulas for composing velocities and for the Wigner angle. They tie the Wigner rotation to the failure of associativity for three velocities and give a necessary and sufficient condition for associativity. They also connect the composition to the Baker–Campbell–Hausdorff formula.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Herein we shall consider Lorentz boosts and Wigner rotations from a (complexified) quaternionic point of view."</p>
+<h3 id="the-boost-as-conjugation">The boost as conjugation</h3>
+<p>$$\sqrt{V}\,X\,\sqrt{V},\qquad L=BR=e^{i\xi\hat n/2}e^{\theta\hat m/2} \qquad (paper\ 8.1,\ 8.2)$$</p>
+<h3 id="the-composition-law">The composition law</h3>
+<p>$$V_{1\oplus 2}=\sqrt{V_2}\,\sqrt{V_1}\,\sqrt{V_2} \qquad (paper\ 8.3)$$</p>
+<h3 id="the-wigner-rotation">The Wigner rotation</h3>
+<p>$$R=\sqrt{V_{1\oplus 2}^{-1}}\sqrt{V_2}\sqrt{V_1} \qquad (paper\ 8.4)$$</p>
+<h3 id="non-associativity">Non-associativity</h3>
+<p>"we subsequently relate the Wigner rotation to the generic non-associativity of the composition of three 4-velocities, and develop a necessary and sufficient condition for associativity to hold."</p>
+<h3 id="why-use-quaternions">Why use quaternions</h3>
+<p>"As compared to ordinary $4\times 4$ Lorentz transformations, the use of self-adjoint complexified quaternions leads, from a computational view, to storage savings and more rapid computations, and from a pedagogical view to relatively simple and explicit formulae."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-wigner-angle-as-a-product">1. The Wigner angle as a product</h3>
+<p><strong>The idea.</strong> The rotation is a ratio of quaternion square roots, so its angle can be read off from one product.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.md</code> discusses what a boost carries. An explicit closed form for the rotation itself is a computation the target describes but does not print.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.md</code>, in the section on the rotation.</p>
+<p><strong>What stands in the way.</strong> The algebra here is complexified quaternions, not the full biquaternion split. Ranked first, because it is a formula for the target's own object.</p>
+<h3 id="2-composition-is-not-associative">2. Composition is not associative</h3>
+<p><strong>The idea.</strong> Three boosts composed in different orders differ by a Wigner rotation, and the paper states exactly when they agree.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code> builds the group and its representations. Non-associativity of the velocity composition law is a property the group-level account hides, and the condition for it to vanish is worth recording.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code>, in the discussion of composition.</p>
+<p><strong>What stands in the way.</strong> Non-associativity is of the composition law, not of the group. Ranked second.</p>
+<h3 id="3-storage-and-speed">3. Storage and speed</h3>
+<p><strong>The idea.</strong> Four quaternion components replace a sixteen-entry matrix.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> worries about bookkeeping errors between conventions. A smaller representation with fewer independent entries reduces that risk, which is a practical argument for the target's choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of conventions.</p>
+<p><strong>What stands in the way.</strong> The gain is computational, not structural. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -79,7 +79,7 @@ $$
 of dimensions $k^2,k(n-k),(n-k)k,(n-k)^2$; a one-sided operator preserves the corners on its own side only, and a general two-sided operator mixes all four.</p>
 <p><strong>Why the article is needed.</strong> At $n=2$ with $k=1$ the four corners are one-dimensional, so every operator is a $2\times2$ block matrix and the mixing is invisible. At general $n$ the corners have different sizes and the mixing pattern is the content: it is what the Peirce decomposition of the algebra becomes in the operator picture, and it is where the half-integer labels of $n=4$ come from.</p>
 <p><strong>Boundaries.</strong> The Peirce decomposition of the algebra is <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>; the chirality split is <em>Operator Chirality on $M_n(\mathbb{C})$</em>; the four sectors of the biquaternion algebra are <em>The Operators on the Four Sectors of $M_n(\mathbb{C})$</em>.</p>
-<p><strong>Conventions.</strong> $E$ is a projection of rank $k$, $F=\mathrm I-E$, and a matrix $X$ is written as the block matrix $\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}$ with $X_{11}=EXE$, $X_{12}=EXF$, $X_{21}=FXE$, $X_{22}=FXF$.</p>
+<p><strong>Conventions.</strong> $E$ is a projection of rank $k$, $F=\mathrm I-E$, and a matrix $X$ is written as the block matrix $\begin{pmatrix}X_{11}&amp;X_{12}\\X_{21}&amp;X_{22}\end{pmatrix}$ with $X_{11}=EXE$, $X_{12}=EXF$, $X_{21}=FXE$, $X_{22}=FXF$.</p>
 <h2 id="the-four-corners">The Four Corners</h2>
 <p><strong>The dimensions.</strong> $EM_nE\cong M_k$, $EM_nF\cong\mathbb{C}^{k\times(n-k)}$, $FM_nE\cong\mathbb{C}^{(n-k)\times k}$, $FM_nF\cong M_{n-k}$. The complex dimensions are $k^2,k(n-k),k(n-k),(n-k)^2$ and they add to $n^2$.</p>
 <p><strong>The multiplication table.</strong> For corners $C_{ij}=E_iM_nE_j$ with $E_1=E$, $E_2=F$,
@@ -92,15 +92,15 @@ So the corners are the Peirce spaces of the two-idempotent decomposition, and th
 <h2 id="the-one-sided-operators">The One-Sided Operators</h2>
 <p><strong>Proposition.</strong> $L_A(C_{ij})\subseteq C_{1j}+C_{2j}$, and $L_A$ preserves $M_nE_j$ for each $j$.</p>
 <p><em>Proof.</em> $A(EXF)=AXF$, which ends on the right with $F$; a general $A$ sends $EXF$ into $M_nF=C_{12}+C_{22}$. $\square$</p>
-<p><strong>In blocks.</strong> With $A=\begin{pmatrix}A_{11}&A_{12}\A_{21}&A_{22}\end{pmatrix}$,
+<p><strong>In blocks.</strong> With $A=\begin{pmatrix}A_{11}&amp;A_{12}\\A_{21}&amp;A_{22}\end{pmatrix}$,
 $$
-L_A\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}
-=\begin{pmatrix}A_{11}X_{11}+A_{12}X_{21}&A_{11}X_{12}+A_{12}X_{22}\\ A_{21}X_{11}+A_{22}X_{21}&A_{21}X_{12}+A_{22}X_{22}\end{pmatrix}.
+L_A\begin{pmatrix}X_{11}&amp;X_{12}\\X_{21}&amp;X_{22}\end{pmatrix}
+=\begin{pmatrix}A_{11}X_{11}+A_{12}X_{21}&amp;A_{11}X_{12}+A_{12}X_{22}\\ A_{21}X_{11}+A_{22}X_{21}&amp;A_{21}X_{12}+A_{22}X_{22}\end{pmatrix}.
 $$
 The right index of $X$ is untouched; the left index is mixed.</p>
 <p><strong>The right copy.</strong> $R_B$ mixes the right index and leaves the left one:
 $$
-R_B X=\begin{pmatrix}X_{11}B_{11}+X_{12}B_{21}&X_{11}B_{12}+X_{12}B_{22}\\ X_{21}B_{11}+X_{22}B_{21}&X_{21}B_{12}+X_{22}B_{22}\end{pmatrix}.
+R_B X=\begin{pmatrix}X_{11}B_{11}+X_{12}B_{21}&amp;X_{11}B_{12}+X_{12}B_{22}\\ X_{21}B_{11}+X_{22}B_{21}&amp;X_{21}B_{12}+X_{22}B_{22}\end{pmatrix}.
 $$</p>
 <p><strong>The preservation statement.</strong> $L_A$ preserves the two column spaces $C_{11}+C_{21}$ and $C_{12}+C_{22}$, and $R_B$ preserves the two row spaces $C_{11}+C_{12}$ and $C_{21}+C_{22}$. Neither preserves an individual corner unless $A$ or $B$ is block diagonal.</p>
 <h2 id="the-two-sided-operators">The Two-Sided Operators</h2>

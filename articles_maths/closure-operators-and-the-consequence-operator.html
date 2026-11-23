@@ -131,11 +131,9 @@ defining property of $c(x)$, and $c$ is monotone.</p>
 element above $x$, and the closed elements are exactly the fixed points of $c$.</p>
 <p><strong>Proposition.</strong> The composite of two closure operators is extensive and monotone, but need not be
 idempotent, so it need not be a closure operator.</p>
-<p><strong>Proof.</strong> Let $c_1, c_2$ be closure operators and put $c = c_2 \circ c_1$. Then $x \leq c_1(x) \leq
-c_2(c_1(x)) = c(x)$, so $c$ is extensive, and it is monotone as a composite of monotone maps. For
+<p><strong>Proof.</strong> Let $c_1, c_2$ be closure operators and put $c = c_2 \circ c_1$. Then $x \leq c_1(x) \leq c_2(c_1(x)) = c(x)$, so $c$ is extensive, and it is monotone as a composite of monotone maps. For
 the failure of idempotence, take the four-element Boolean lattice $\mathcal{P}(\{0,1\})$, let $c_1$
-be the closure operator with closed sets $\{\emptyset, \{0,1\}\}$, so that $c_1(X) = X$ for $X =
-\emptyset$ and $c_1(X) = {0,1}$ otherwise, and let $c_2$ be the closure operator with closed sets
+be the closure operator with closed sets $\{\emptyset, \{0,1\}\}$, so that $c_1(X) = X$ for $X = \emptyset$ and $c_1(X) = \{0,1\}$ otherwise, and let $c_2$ be the closure operator with closed sets
 $\{\{0\}, \{0,1\}\}$. Then</p>
 <p>$$
 c(\emptyset) = c_2(c_1(\emptyset)) = c_2(\emptyset) = \{0\}, \qquad
@@ -149,14 +147,13 @@ proposition above. Two elementary facts are used constantly.</p>
 the least closed element and is the least element of $P_c$. If $P$ has a greatest element $\top$
 then $\top$ is closed.</p>
 <p><strong>Proof.</strong> $c(\bot)$ is closed and, by the least-element property of $\bot$, there is no $x$ with
-$x < \bot$; the least closed element above $\bot$ is $c(\bot)$, and every closed element is above
+$x &lt; \bot$; the least closed element above $\bot$ is $c(\bot)$, and every closed element is above
 $\bot$, so $c(\bot)$ is least in $P_c$. If $x \leq \top$ for all $x$ then $c(\top) \leq \top$ by
 definition of $\top$, and $\top \leq c(\top)$ by extensiveness, so $c(\top) = \top$.</p>
 <p><strong>Proposition.</strong> Let $c$ be a closure operator on a lattice $P$ and let $x, y \in P$ be closed. Then
 $x \wedge y$ is closed. If $z$ is closed and $x \vee y \leq z$ then $c(x \vee y) \leq z$.</p>
 <p><strong>Proof.</strong> $x \wedge y \leq x$, so $c(x \wedge y) \leq c(x) = x$; likewise $c(x \wedge y) \leq y$; so
-$c(x \wedge y) \leq x \wedge y$, and the reverse inequality is extensiveness. For the second, $x
-\vee y \leq z$ with $z$ closed gives $c(x \vee y) \leq c(z) = z$.</p>
+$c(x \wedge y) \leq x \wedge y$, and the reverse inequality is extensiveness. For the second, $x \vee y \leq z$ with $z$ closed gives $c(x \vee y) \leq c(z) = z$.</p>
 <p>So the closed elements are closed under <strong>meets</strong>, and the least closed element above a join is
 obtained by applying $c$ afterwards. This is the source of the lattice structure on $P_c$ in the
 next section.</p>
@@ -186,8 +183,7 @@ extensive because $x$ is a lower bound of the family and the family is non-empty
 is $\geq x$; it is monotone because the family for a larger $x$ is a subfamily of the family for a
 smaller one, so its meet is larger; and it is idempotent because $c_F(x)$ is the least member of
 $F$ above $x$, hence a member of $F$, hence $c_F(c_F(x)) = c_F(x)$. Finally the two constructions
-are inverse: for a closure operator $c$, the least closed element above $x$ is $c(x)$, so $c_{P_c} =
-c$, and for a closure system $F$, every member of $F$ above $x$ is closed for $c_F$ and $c_F(x)$
+are inverse: for a closure operator $c$, the least closed element above $x$ is $c(x)$, so $c_{P_c} = c$, and for a closure system $F$, every member of $F$ above $x$ is closed for $c_F$ and $c_F(x)$
 lies in $F$, so the closed elements of $c_F$ are exactly $F$.</p>
 <h3 id="the-galois-connection-to-the-closed-sets">The Galois Connection to the Closed Sets</h3>
 <p>The passage from a closure operator to its family of closed sets is a Galois connection, in the sense
@@ -198,8 +194,7 @@ the inclusion of the closed elements. Then $c$ and $j$ are adjoint,</p>
 <p>$$
 \boxed{\;c \dashv j, \qquad \text{that is,} \qquad c(x) \leq y \iff x \leq j(y) \quad (x \in P,\ y \in P_c)\;}.
 $$</p>
-<p><strong>Proof.</strong> If $c(x) \leq y$ with $y$ closed, then $x \leq c(x) \leq y = j(y)$ by extensiveness. If $x
-\leq j(y) = y$, then $c(x) \leq c(y) = y$ by monotonicity and the closedness of $y$. So the two
+<p><strong>Proof.</strong> If $c(x) \leq y$ with $y$ closed, then $x \leq c(x) \leq y = j(y)$ by extensiveness. If $x \leq j(y) = y$, then $c(x) \leq c(y) = y$ by monotonicity and the closedness of $y$. So the two
 statements are equivalent, and both maps are monotone.</p>
 <p><strong>Corollary.</strong> A closure operator is the same datum as a Galois connection $c \dashv j$ in which the
 right adjoint $j$ is the inclusion of a subposet and $c$ is a self-map of $P$. The closed elements
@@ -234,16 +229,14 @@ complete.</p>
 operator on itself, namely the identity; and for a closure system $F$ on a complete lattice $P$, the
 lattice $F$ has meets computed in $P$ and joins computed as $c_F$ of the join in $P$. The passage
 from $P$ to $P_c$ is therefore a <strong>quotient</strong> in the order-theoretic sense: it is monotone,
-surjective onto $P_c$ and idempotent, and it is left adjoint to the inclusion $P_c \hookrightarrow
-P$ — an adjunction that is named but not used here, its theory being deferred.</p>
+surjective onto $P_c$ and idempotent, and it is left adjoint to the inclusion $P_c \hookrightarrow P$ — an adjunction that is named but not used here, its theory being deferred.</p>
 <p><strong>Example.</strong> On a poset $Q$ let $P = \mathcal{P}(Q)$ be the power-set lattice and let</p>
 <p>$$
 {\downarrow}(X) = \{q \in Q : q \leq x \text{ for some } x \in X\}
 $$</p>
 <p>be the <strong>down-set</strong> generated by $X$. Then ${\downarrow}$ is a closure operator on $\mathcal{P}(Q)$:
 it is extensive because $x \in X$ has $x \leq x$; it is monotone because a larger $X$ gives more
-elements below; and it is idempotent because if $q \leq x$ for some $x \in {\downarrow}(X)$ then $q
-\leq x \leq x'$ for some $x' \in X$, so $q \in {\downarrow}(X)$. The closed sets are the
+elements below; and it is idempotent because if $q \leq x$ for some $x \in {\downarrow}(X)$ then $q \leq x \leq x'$ for some $x' \in X$, so $q \in {\downarrow}(X)$. The closed sets are the
 <strong>down-sets</strong>, the subsets $D$ with $q \leq d \in D \Rightarrow q \in D$, and they form a complete
 lattice under inclusion.</p>
 <p><strong>Example.</strong> Let $M$ be a monoid and let $P = \mathcal{P}(M)$. The <strong>submonoid generated</strong> by $X$ is</p>
@@ -257,25 +250,19 @@ corollary. The monoid of endomorphisms of a structure, in <em>Endomorphisms of a
 is such an $M$, and the generated submonoids are the submonoids of operators.</p>
 <h2 id="the-consequence-operator">The Consequence Operator</h2>
 <h3 id="tarskis-axioms">Tarski's Axioms</h3>
-<dl>
-<dt>The logical notion of consequence is the instance of the theory in which the ambient lattice is the</dt>
-<dt>power set of a set of formulas. Let $\Sigma$ be a set, its elements called <strong>formulas</strong>, and let $C</dt>
-<dd>\mathcal{P}(\Sigma) \to \mathcal{P}(\Sigma)$.</dd>
-</dl>
-<p><strong>Definition.</strong> The map $C$ is a <strong>consequence operator</strong> if it satisfies, for all $X, Y \subseteq
-\Sigma$,</p>
+<p>The logical notion of consequence is the instance of the theory in which the ambient lattice is the
+power set of a set of formulas. Let $\Sigma$ be a set, its elements called <strong>formulas</strong>, and let $C : \mathcal{P}(\Sigma) \to \mathcal{P}(\Sigma)$.</p>
+<p><strong>Definition.</strong> The map $C$ is a <strong>consequence operator</strong> if it satisfies, for all $X, Y \subseteq \Sigma$,</p>
 <p>$$
 X \subseteq C(X), \qquad X \subseteq Y \ \Longrightarrow \ C(X) \subseteq C(Y), \qquad C(C(X)) =
 C(X).
 $$</p>
 <p>These are extensiveness, monotonicity and idempotence, so a consequence operator is exactly a
-closure operator on the complete lattice $\mathcal{P}(\Sigma)$. A set $X$ is <strong>closed</strong> if $C(X) =
-X$; the closed sets are called the <strong>theories</strong>, and the <strong>Lindenbaum–Tarski lattice</strong> of the
+closure operator on the complete lattice $\mathcal{P}(\Sigma)$. A set $X$ is <strong>closed</strong> if $C(X) = X$; the closed sets are called the <strong>theories</strong>, and the <strong>Lindenbaum–Tarski lattice</strong> of the
 consequence operator is the complete lattice of theories.</p>
 <p><strong>Theorem.</strong> The theories of a consequence operator form a closure system: they are closed under
 arbitrary intersections. Conversely every closure system $T \subseteq \mathcal{P}(\Sigma)$ is the
-set of theories of a unique consequence operator, namely $C(X) = \bigcap {Y \in T : X \subseteq
-Y}$. The consequence operator is recovered from its theories by this formula, and the lattice of
+set of theories of a unique consequence operator, namely $C(X) = \bigcap \{Y \in T : X \subseteq Y\}$. The consequence operator is recovered from its theories by this formula, and the lattice of
 theories has meets given by intersection and joins given by $C$ of the union.</p>
 <p><strong>Proof.</strong> This is the theorem of the previous section specialised to the power-set lattice, whose
 join is the union and whose least upper bound of a family of theories is the closure of the union.</p>
@@ -297,12 +284,9 @@ closed sets is closed under unions of <strong>directed</strong> families.</p>
 <p><strong>Proof.</strong> Suppose $c$ is finitary and let $\mathcal{D}$ be a directed family of closed sets, with
 $X = \bigcup \mathcal{D}$. Every finite $F \subseteq X$ is contained in some member of $\mathcal{D}$,
 because $F$ is finite, each of its elements lies in a member of $\mathcal{D}$, and a finite union of
-members of a directed family lies in the family. So $c(F) \subseteq D \subseteq X$ for some $D \in
-\mathcal{D}$, and $c(X) = \bigcup_F c(F) \subseteq X$, whence $X$ is closed. Conversely, suppose the
-closed sets are closed under directed unions, and let $X \subseteq \Sigma$. The family ${c(F) : F
-\subseteq X \text{ finite}}$ is directed by inclusion, because $c(F_1 \cup F_2)$ is closed and
-contains both $c(F_1)$ and $c(F_2)$, so its union $Y$ is closed; and $X \subseteq Y$, so $c(X)
-\subseteq Y$; and $c(F) \subseteq c(X)$ for finite $F \subseteq X$ gives $Y \subseteq c(X)$. So
+members of a directed family lies in the family. So $c(F) \subseteq D \subseteq X$ for some $D \in \mathcal{D}$, and $c(X) = \bigcup_F c(F) \subseteq X$, whence $X$ is closed. Conversely, suppose the
+closed sets are closed under directed unions, and let $X \subseteq \Sigma$. The family $\{c(F) : F \subseteq X \text{ finite}\}$ is directed by inclusion, because $c(F_1 \cup F_2)$ is closed and
+contains both $c(F_1)$ and $c(F_2)$, so its union $Y$ is closed; and $X \subseteq Y$, so $c(X) \subseteq Y$; and $c(F) \subseteq c(X)$ for finite $F \subseteq X$ gives $Y \subseteq c(X)$. So
 $c(X) = Y$ and $c$ is finitary.</p>
 <p>The finitary closure operators are the ones that come from a set of <strong>inference rules</strong> each with
 finitely many premisses, and this is the form in which the consequence operator is used in <em>Logic and
@@ -318,8 +302,7 @@ with $\Sigma$ is finite. The closure operator it defines is</p>
 c(X) = X \ \text{ for finite } X, \qquad c(X) = \Sigma \ \text{ for infinite } X .
 $$</p>
 <p>It is not finitary. The finite subsets of the set of even elements form a directed family whose
-union is the infinite set $E$ of even elements, and $c(E) = \Sigma$, while $\bigcup {c(F) : F
-\subseteq E \text{ finite}} = \bigcup {F : F \subseteq E \text{ finite}} = E$, a proper subset of
+union is the infinite set $E$ of even elements, and $c(E) = \Sigma$, while $\bigcup \{c(F) : F \subseteq E \text{ finite}\} = \bigcup \{F : F \subseteq E \text{ finite}\} = E$, a proper subset of
 $\Sigma$. Equivalently, the family of closed sets is not closed under directed unions, which the
 theorem identifies as the obstruction.</p>
 <p><strong>Proposition.</strong> A finitary closure operator on $\mathcal{P}(\Sigma)$ is determined by its values on

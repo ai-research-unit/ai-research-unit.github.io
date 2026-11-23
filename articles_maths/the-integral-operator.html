@@ -168,7 +168,7 @@ measure, every measurable kernel is a matrix $K=(K_{ij})$ and $T_K$ is multiplic
 composition $K\star L$ is the matrix product, and the Hilbert–Schmidt norm below is the Euclidean norm of
 the matrix entries. The general theory is thus the infinite-dimensional extension of the algebra of
 matrices acting on column vectors.</p>
-<p><strong>Example (the Volterra kernel).</strong> On $X=Y=\mathbb R$ with Lebesgue measure, $K(x,y)=\mathbf 1_{\{x>y\}}$
+<p><strong>Example (the Volterra kernel).</strong> On $X=Y=\mathbb R$ with Lebesgue measure, $K(x,y)=\mathbf 1_{\{x&gt;y\}}$
 gives $(T_Kf)(x)=\int_{-\infty}^xf(y)\,dy$, the indefinite integral; the operator is not translation
 invariant and is a standard example of a quasinilpotent operator, the spectral theory beyond the present
 Article.</p>
@@ -177,7 +177,7 @@ the form $K(x,y)=k(x-y)$ with $k\in L^1(\mathbb R^n)$ gives
 $(T_Kf)(x)=\int k(x-y)f(y)\,dy=(k*f)(x)$, a <strong>convolution operator</strong>. These are the kernels whose
 operators commute with all translations, and they are the subject of <em>Convolution Operators</em>, the next
 article of this group.</p>
-<h2 id="boundedness-on-math83">Boundedness on $L^2$</h2>
+<h2 id="boundedness-on-math84">Boundedness on $L^2$</h2>
 <h3 id="the-square-integrable-kernel">The Square-Integrable Kernel</h3>
 <p><strong>Theorem (the Hilbert–Schmidt bound).</strong> If $K\in L^2(X\times Y,\mu\otimes\nu)$, then $T_K$ maps
 $L^2(Y,\nu)$ boundedly into $L^2(X,\mu)$, with
@@ -197,7 +197,7 @@ $$
 The operator is linear and defined on all of $L^2(Y,\nu)$ by this estimate, so it is bounded with the
 stated bound.</p>
 <p>The inequality is the reason the square-integrable kernels are the class the corpus works with: the
-operator norm is controlled by a double integral, and every kernel that satisfies $\lVert K\rVert_2<\infty$
+operator norm is controlled by a double integral, and every kernel that satisfies $\lVert K\rVert_2&lt;\infty$
 defines a bounded operator with no further hypothesis.</p>
 <h3 id="the-schur-test">The Schur Test</h3>
 <p><strong>Theorem (Schur test).</strong> Let $X=Y$ and let $K\ge0$ be a measurable kernel for which there is $C\ge0$ with
@@ -208,7 +208,7 @@ $$
 $$
 Then $T_K$ maps $L^{n}(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
 $\lVert T_K\rVert_{L^{n}}\to L^{n}\leq C$.</p>
-<p><strong>Proof.</strong> The case $p=1$ is Fubini and the case $p=\infty$ is the first hypothesis. For $1<p<\infty$ put
+<p><strong>Proof.</strong> The case $p=1$ is Fubini and the case $p=\infty$ is the first hypothesis. For $1&lt;p&lt;\infty$ put
 $q=p/(p-1)$ and write $K\lvert f\rvert=K^{1/q}\cdot K^{1/p}\lvert f\rvert$; Hölder gives
 $$
 \lvert(T_Kf)(x)\rvert\leq\Bigl(\int_XK(x,y)\,d\mu(y)\Bigr)^{1/q}
@@ -221,18 +221,18 @@ $$
 \leq C^{p/q}\,C\lVert f\rVert_p^p=C^p\lVert f\rVert_p^p ,
 $$
 since $p/q+1=p$.</p>
-<p><strong>Remark.</strong> The test also holds with two weights: if $p_0,q_0>0$ are measurable and
+<p><strong>Remark.</strong> The test also holds with two weights: if $p_0,q_0&gt;0$ are measurable and
 $\int_XK(x,y)q_0(y)\,dy\leq Cp_0(x)$, $\int_XK(x,y)p_0(x)\,dx\leq Cq_0(y)$ almost everywhere, then $T_K$ is
 bounded on the weighted space $L^{n}(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
 one used in this corpus, and the weighted one is recorded because the kernel of a Riemann–Liouville
 fractional integral satisfies it.</p>
-<h3 id="kernels-in-math121-and-the-young-bound">Kernels in $L^1$ and the Young Bound</h3>
+<h3 id="kernels-in-math122-and-the-young-bound">Kernels in $L^1$ and the Young Bound</h3>
 <p><strong>Theorem (Young).</strong> Let $K(x,y)=k(x-y)$ on $\mathbb R^n$ with $k\in L^1(\mathbb R^n)$. Then for
 $1\leq p\leq\infty$,
 $$
 \lVert T_Kf\rVert_p=\lVert k*f\rVert_p\leq\lVert k\rVert_1\lVert f\rVert_p .
 $$</p>
-<p><strong>Proof.</strong> For $p=1$ the inequality is Fubini, $p=\infty$ the trivial bound, and for $1<p<\infty$ it is
+<p><strong>Proof.</strong> For $p=1$ the inequality is Fubini, $p=\infty$ the trivial bound, and for $1&lt;p&lt;\infty$ it is
 Minkowski's integral inequality applied to
 $\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$.</p>
 <p>The Young bound is the reason a kernel that decays like an integrable function gives a bounded operator
@@ -318,7 +318,7 @@ bounded operator need not be.</p>
 bounded operator for every $k\in L^1(\mathbb R^n)$, and such an operator is never compact unless it is
 zero. A translation-invariant operator on $L^2(\mathbb R^n)$ is unitarily equivalent to multiplication by
 its multiplier, and a multiplication operator by a function $m$ on $L^2$ of a non-atomic space of infinite
-measure is compact exactly when $m=0$ almost everywhere: if $\lvert m\rvert\geq c>0$ on a set of positive
+measure is compact exactly when $m=0$ almost everywhere: if $\lvert m\rvert\geq c&gt;0$ on a set of positive
 finite measure then the restriction to the $L^2$ of that set is bounded below by $c$, so its unit ball
 would be relatively compact only if that space had finite dimension. Hence a nonzero convolution operator
 on $L^2(\mathbb R^n)$ is not compact, and compactness is a property of the kernels that are not

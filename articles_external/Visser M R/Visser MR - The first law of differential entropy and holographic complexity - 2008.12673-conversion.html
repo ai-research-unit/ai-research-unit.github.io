@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The first law of differential entropy and holographic complexity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - The first law of differential entropy and holographic complexity - 2008.12673.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-first-law-of-differential-entropy-and-holographic-complexity"><strong>The first law of differential entropy and holographic complexity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2008.12673v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Debajyoti Sarkar, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2 October 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>JHEP (per the arXiv comment; volume not printed in the PDF)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>73 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - The first law of differential entropy and holographic complexity - 2008.12673-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The first law of differential entropy and holographic complexity - 2008.12673.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The first law of differential entropy and holographic complexity - 2008.12673.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs the CFT dual of the first law of spherical causal diamonds in three-dimensional anti-de Sitter space. A spherically symmetric diamond in $AdS_3$ is the domain of dependence of a circular disk with vanishing extrinsic curvature, and the bulk first law relates the variations of the disk's boundary area, the disk's volume, the cosmological constant and the matter Hamiltonian. Specialising to first-order metric variations from pure $AdS_3$ to a conical defect, the authors compute both sides: the area is dual to the differential entropy of the CFT, and the volume is dual to holographic complexity under "complexity = volume". The result is a boundary first law relating variations of differential entropy, complexity, central charge and scaling dimension.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-bulk-first-law">The bulk first law</h3>
+<p>The bulk relation is the diamond first law of the earlier papers: variations of area, maximal-slice volume, cosmological constant and matter Hamiltonian, for a disk whose extrinsic curvature vanishes. The authors derive it "following a coordinate based approach", complementing the covariant phase-space derivation.</p>
+<h3 id="the-dictionary">The dictionary</h3>
+<p>"The AdS/CFT dictionary connects the area of the boundary of the disk to the differential entropy in CFT$_2$, and assuming the 'complexity=volume' conjecture, the volume of the disk is considered to be dual to the complexity of a cutoff CFT."</p>
+<h3 id="the-three-variations">The three variations</h3>
+<p>On the CFT side three independent variations are considered: "a change of state, a change of subregion size and a change of the central charge of the CFT." The boundary first law relates the variations of the differential entropy, the holographic complexity, the central charge and the scaling dimension of the perturbed state.</p>
+<h3 id="the-vanishing-term">The vanishing term</h3>
+<p>"Remarkably, there is no term proportional to the variation of $\alpha$ in the first law, although the variations of the differential entropy and complexity separately do depend" on it. The cancellation is presented as the non-trivial check that the two sides are the same relation.</p>
+<h3 id="the-limits">The limits</h3>
+<p>The computation is for a specific perturbation — a point mass in $AdS_3$, first order — and for one entry of the complexity dictionary. The authors note a typographical error in a published equation they compare with, and correct it.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-volume-as-complexity">1. Volume as complexity</h3>
+<p><strong>The idea.</strong> The spatial volume of the maximal slice is dual to the computational complexity of the boundary state, so that a thermodynamic first law becomes a statement about computation. This is a <strong>reading</strong>, and it is the only place in this collection where complexity enters.</p>
+<p><strong>What it would add.</strong> The corpus has an entropy functional on $\mathbb{B}_\Psi$ and a notion of information conserved under $*$-unitary flow (<code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>), but no quantity that counts operations rather than states. A complexity dual read as a volume would give the corpus a second, non-statistical information measure to place beside the entropy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, as a candidate for the "fourth ledger" that article says it does not have.</p>
+<p><strong>What stands in the way.</strong> Complexity = volume is a conjecture, its definition in field theory is regulator dependent, and the corpus has no gate set, no circuit and no boundary. The cost is that the import would be a name without a computation.</p>
+<h3 id="2-a-first-law-whose-terms-cancel">2. A first law whose terms cancel</h3>
+<p><strong>The idea.</strong> The variation of the subregion's size parameter $\alpha$ cancels between the entropy side and the complexity side, so that the physical law does not contain it. This is a <strong>formula-level</strong> fact: a cancellation that identifies two otherwise unrelated quantities.</p>
+<p><strong>What it would add.</strong> The corpus's first-law articles verify terms numerically; a structural cancellation of this kind is a stronger statement, and it is the pattern its own <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code> looks for between two descriptions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The cancellation holds in the specific conical-defect perturbation in three dimensions; there is no argument that it survives in general. Ranked second.</p>
+<h3 id="3-differential-entropy-instead-of-entropy">3. Differential entropy instead of entropy</h3>
+<p><strong>The idea.</strong> The boundary quantity dual to the area is the differential entropy, a relative entropy between neighbouring states, not the entanglement entropy of a region. This is a <strong>reading</strong> of what the area computes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code> treats relative entropy and has no statement that a geometric area is dual to it. This paper supplies the dictionary entry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relative-entropy-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is made in $AdS_3/CFT_2$ and needs the holographic dictionary; the corpus's relative entropy is algebraic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

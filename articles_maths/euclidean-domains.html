@@ -86,12 +86,12 @@ N : R \setminus \{0\} \longrightarrow \mathbb{Z}_{\geq 0}
 $$</p>
 <p>such that for all $a \in R$ and all $b \in R \setminus \{0\}$ there exist $q, r \in R$ with</p>
 <p>$$
-a = q b + r, \qquad r = 0 \ \text{or} \ N(r) < N(b).
+a = q b + r, \qquad r = 0 \ \text{or} \ N(r) &lt; N(b).
 $$</p>
 <p>The element $q$ is the <strong>quotient</strong> and $r$ the <strong>remainder</strong> of the division of $a$ by $b$. An integral domain is a <strong>Euclidean domain</strong> if it admits a Euclidean degree function.</p>
 <p><strong>Remark.</strong> Only the division property is required: $N$ need not be multiplicative, and $N(ab) \geq N(a)$ is not assumed. Both conditions hold in the classical examples and are useful when they do; the results of this article never use them.</p>
-<p><strong>Example.</strong> $\mathbb{Z}$ is a Euclidean domain with $N(a) = |a|$, since division by a nonzero integer with remainder in the usual sense gives $|r| < |b|$.</p>
-<p><strong>Example.</strong> For a field $F$ the polynomial ring $F[x]$ is a Euclidean domain with $N(f) = \deg f$: the division algorithm with remainder, of <em>Polynomial Rings and Rational Functions</em>, below this article in this category, gives $f = qg + r$ with $r = 0$ or $\deg r < \deg g$.</p>
+<p><strong>Example.</strong> $\mathbb{Z}$ is a Euclidean domain with $N(a) = |a|$, since division by a nonzero integer with remainder in the usual sense gives $|r| &lt; |b|$.</p>
+<p><strong>Example.</strong> For a field $F$ the polynomial ring $F[x]$ is a Euclidean domain with $N(f) = \deg f$: the division algorithm with remainder, of <em>Polynomial Rings and Rational Functions</em>, below this article in this category, gives $f = qg + r$ with $r = 0$ or $\deg r &lt; \deg g$.</p>
 <p><strong>Example.</strong> $\mathbb{Z}[i]$ is a Euclidean domain with $N(a + bi) = a^2 + b^2$, proved in the section on the Gaussian integers below.</p>
 <p><strong>Remark.</strong> The degree function of $F[x]$ is not multiplicative, since $\deg(fg) = \deg f + \deg g$ is additive. It can be replaced by the equivalent multiplicative degree function $N(f) = 2^{\deg f}$, because a nonzero remainder has smaller degree than the divisor exactly when it has smaller value of $2^{\deg}$, and $N(fg) = 2^{\deg f + \deg g} = N(f)N(g)$. A degree function equivalent to a multiplicative one is what the next section calls a multiplicative degree function.</p>
 <h3 id="the-euclidean-algorithm">The Euclidean Algorithm</h3>
@@ -100,7 +100,7 @@ $$</p>
 \boxed{\;r_{-1} = a, \quad r_0 = b, \quad r_{k-1} = q_k r_k + r_{k+1} \ \ (k \geq 0)\;},
 $$</p>
 <p>where $r_{k+1}$ is the remainder of the division of $r_{k-1}$ by $r_k$, and the recursion stops at the first $k$ with $r_{k+1} = 0$. Then the recursion terminates, and the last nonzero remainder $r_k$ is a greatest common divisor of $a$ and $b$.</p>
-<p><strong>Proof.</strong> As long as $r_k \neq 0$ the next remainder satisfies $N(r_{k+1}) < N(r_k)$, since $r_{k+1} \neq 0$ by hypothesis; a strictly decreasing sequence in $\mathbb{Z}_{\geq 0}$ is finite, so the recursion stops. For the gcd statement, the identity $r_{k-1} = q_k r_k + r_{k+1}$ shows that the pair $(r_{k-1}, r_k)$ has the same common divisors as the pair $(r_k, r_{k+1})$: a common divisor of the first pair divides $r_{k+1}$, and a common divisor of the second divides $r_{k-1}$. Hence all consecutive pairs have the same common divisors, and the last pair $(r_k, 0)$ has common divisors exactly the divisors of $r_k$; so $\gcd(a,b) \sim r_k$.</p>
+<p><strong>Proof.</strong> As long as $r_k \neq 0$ the next remainder satisfies $N(r_{k+1}) &lt; N(r_k)$, since $r_{k+1} \neq 0$ by hypothesis; a strictly decreasing sequence in $\mathbb{Z}_{\geq 0}$ is finite, so the recursion stops. For the gcd statement, the identity $r_{k-1} = q_k r_k + r_{k+1}$ shows that the pair $(r_{k-1}, r_k)$ has the same common divisors as the pair $(r_k, r_{k+1})$: a common divisor of the first pair divides $r_{k+1}$, and a common divisor of the second divides $r_{k-1}$. Hence all consecutive pairs have the same common divisors, and the last pair $(r_k, 0)$ has common divisors exactly the divisors of $r_k$; so $\gcd(a,b) \sim r_k$.</p>
 <p><strong>Theorem (extended Euclidean algorithm).</strong> With the notation of the algorithm, there are $x, y \in R$ with</p>
 <p>$$
 \boxed{\;r_k = a x + b y\;} .
@@ -113,7 +113,7 @@ $$</p>
 <hr />
 <h2 id="euclidean-domains-are-principal-ideal-domains">Euclidean Domains Are Principal Ideal Domains</h2>
 <p><strong>Theorem.</strong> Every Euclidean domain is a principal ideal domain.</p>
-<p><strong>Proof.</strong> Let $I$ be a nonzero ideal of the Euclidean domain $R$ with degree function $N$, and choose $b \in I \setminus \{0\}$ with $N(b)$ minimal among the nonzero elements of $I$, possible because $\mathbb{Z}_{\geq 0}$ is well ordered. For $a \in I$ divide $a$ by $b$: $a = qb + r$ with $r = 0$ or $N(r) < N(b)$. Since $r = a - qb \in I$ and no nonzero element of $I$ has degree less than $N(b)$, either $r = 0$, or $r \neq 0$ with $N(r) < N(b)$; the second alternative is impossible, so $r = 0$ and $a = qb \in (b)$. Hence $I = (b)$.</p>
+<p><strong>Proof.</strong> Let $I$ be a nonzero ideal of the Euclidean domain $R$ with degree function $N$, and choose $b \in I \setminus \{0\}$ with $N(b)$ minimal among the nonzero elements of $I$, possible because $\mathbb{Z}_{\geq 0}$ is well ordered. For $a \in I$ divide $a$ by $b$: $a = qb + r$ with $r = 0$ or $N(r) &lt; N(b)$. Since $r = a - qb \in I$ and no nonzero element of $I$ has degree less than $N(b)$, either $r = 0$, or $r \neq 0$ with $N(r) &lt; N(b)$; the second alternative is impossible, so $r = 0$ and $a = qb \in (b)$. Hence $I = (b)$.</p>
 <p><strong>Theorem (the Euclidean chain).</strong> Every Euclidean domain is a principal ideal domain, every principal ideal domain is a unique factorisation domain, and every unique factorisation domain is an integral domain. Each implication is strict.</p>
 <p><strong>Proof.</strong> The first implication is the theorem above, the second is <em>Principal Ideal Domains</em>, above this article in this category, and the third is the definition of a unique factorisation domain. For the strictness: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a principal ideal domain that is not Euclidean, with its citation in the last section of this article; $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal, by <em>Principal Ideal Domains</em>, above; and $\mathbb{Z}[\sqrt{-5}]$ is an integral domain that is not a unique factorisation domain, by <em>Unique Factorisation Domains</em>, above.</p>
 <p><strong>Corollary.</strong> In a Euclidean domain every nonzero non-invertible factors into irreducibles, every irreducible is prime, every pair has a gcd, and the gcd is computed by the Euclidean algorithm. In particular $\mathbb{Z}$ and, for a field $F$, the ring $F[x]$ are unique factorisation domains.</p>
@@ -129,13 +129,13 @@ $$</p>
 <p>with the degree function $N(a + bi) = a^2 + b^2$, which is multiplicative: $N(zw) = N(z)N(w)$ for all $z, w$.</p>
 <p><strong>Lemma (division with remainder in $\mathbb{Z}[i]$).</strong> Let $z, w \in \mathbb{Z}[i]$ with $w \neq 0$. Then there exist $q, r \in \mathbb{Z}[i]$ with</p>
 <p>$$
-\boxed{\;z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) < N(w)\;}.
+\boxed{\;z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) &lt; N(w)\;}.
 $$</p>
 <p><strong>Proof.</strong> Write $z/w = \alpha + \beta i$ with $\alpha, \beta \in \mathbb{Q}$, possible because $w \neq 0$ and $z/w = z\bar w / N(w)$. Choose integers $m, n$ with $|\alpha - m| \leq \tfrac12$ and $|\beta - n| \leq \tfrac12$, and set $q = m + ni \in \mathbb{Z}[i]$, $r = z - qw$. Then</p>
 <p>$$
 N(r) = N(w) \, N\!\left(\frac{z}{w} - q\right) = N(w)\big((\alpha - m)^2 + (\beta - n)^2\big) \leq N(w)\left(\tfrac14 + \tfrac14\right) = \tfrac12 N(w),
 $$</p>
-<p>and $\tfrac12 N(w) < N(w)$ because $N(w) > 0$.</p>
+<p>and $\tfrac12 N(w) &lt; N(w)$ because $N(w) &gt; 0$.</p>
 <p><strong>Corollary.</strong> $\mathbb{Z}[i]$ is a Euclidean domain with degree function $N$, hence a unique factorisation domain; its units are $\pm 1, \pm i$, the elements with $N = 1$.</p>
 <p><strong>Proof.</strong> The lemma is the division property. The invertibles are the elements with $N = 1$, namely $a + bi$ with $a^2 + b^2 = 1$, which are exactly $\pm 1$ and $\pm i$; unique factorisation follows from the Euclidean chain above.</p>
 <h3 id="the-euclidean-algorithm-in-math142">The Euclidean Algorithm in $\mathbb{Z}[i]$</h3>
@@ -151,7 +151,7 @@ $$</p>
 <p><strong>(b)</strong> $\pi$ is an associate of a rational prime $p$ with $p \equiv 3 \pmod 4$.</p>
 <p><strong>(c)</strong> $N(\pi) = p$ for a rational prime $p$ with $p = 2$ or $p \equiv 1 \pmod 4$, equivalently $\pi \sim a \pm bi$ with $a^2 + b^2 = p$.</p>
 <p><strong>Proof.</strong> If $N(\pi)$ is a rational prime then $\pi$ is irreducible, since a factorisation $\pi = zw$ with both factors non-invertibles gives $N(\pi) = N(z)N(w)$ with both $N$-values greater than $1$.</p>
-<p>Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ is irreducible in $\mathbb{Z}[i]$: a nontrivial factorisation $p = zw$ would give $N(z), N(w) > 1$ with $N(z)N(w) = p^2$, hence $N(z) = p$, that is, $p = a^2 + b^2$; but squares are $0$ or $1$ modulo $4$, so a sum of two squares is never $3$ modulo $4$. If $p \equiv 1 \pmod 4$ then by the two-squares theorem, cited as standard, $p = a^2 + b^2 = (a+bi)(a-bi)$ with both factors of $N$-value $p$, so $p$ is reducible and $a \pm bi$ has prime $N$-value. If $p = 2$ then $2 = (1+i)(1-i) = -i(1+i)^2$ and $N(1+i) = 2$.</p>
+<p>Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ is irreducible in $\mathbb{Z}[i]$: a nontrivial factorisation $p = zw$ would give $N(z), N(w) &gt; 1$ with $N(z)N(w) = p^2$, hence $N(z) = p$, that is, $p = a^2 + b^2$; but squares are $0$ or $1$ modulo $4$, so a sum of two squares is never $3$ modulo $4$. If $p \equiv 1 \pmod 4$ then by the two-squares theorem, cited as standard, $p = a^2 + b^2 = (a+bi)(a-bi)$ with both factors of $N$-value $p$, so $p$ is reducible and $a \pm bi$ has prime $N$-value. If $p = 2$ then $2 = (1+i)(1-i) = -i(1+i)^2$ and $N(1+i) = 2$.</p>
 <p>Conversely, let $\pi$ be irreducible and let $p$ be a rational prime dividing $N(\pi) = \pi\bar\pi$. If $p \equiv 3 \pmod 4$ then $p$ is irreducible, hence prime because $\mathbb{Z}[i]$ is a unique factorisation domain, so $p \mid \pi$ or $p \mid \bar\pi$, and the second gives $p \mid \pi$ as well; writing $\pi = pc$ and taking $N$-values gives $N(\pi) = p^2 N(c)$, and since $\pi$ is irreducible and $p$ is a non-invertible, $c$ is invertible, so $\pi \sim p$. If $p = 2$ or $p \equiv 1 \pmod 4$, the two previous paragraphs produce an irreducible $\pi_0$ with $N(\pi_0) = p$; then $\pi_0 \mid \pi \bar\pi$, so $\pi_0 \mid \pi$ or $\pi_0 \mid \bar\pi$, and in either case writing $\pi = \pi_0 c$ and comparing $N$-values gives $N(\pi) = p N(c)$ with $c$ an invertible element, so $N(\pi) = p$.</p>
 <p><strong>Corollary (the rational primes in $\mathbb{Z}[i]$).</strong> Let $p$ be a rational prime. Then exactly one of the following holds, and in each case the factorisation is unique up to invertibles.</p>
 <p><strong>(a)</strong> $p = -i(1+i)^2$: the prime $2$ ramifies, and $1 + i$ is the unique Gaussian prime above it.</p>
@@ -178,7 +178,7 @@ $$</p>
 <p><strong>Example.</strong> $\mathbb{Z}[\sqrt{-5}]$ is not even a GCD domain, by <em>GCD Domains</em>, above, so it is not principal and not Euclidean, and it witnesses the strictness of the implication from unique factorisation to integral domain; its failure is coarser than that of $\mathbb{Z}[x]$, since it is the gcd itself that is missing.</p>
 <hr />
 <h2 id="summary">Summary</h2>
-<p>A Euclidean domain is an integral domain with a degree function $N : R \setminus \{0\} \to \mathbb{Z}_{\geq 0}$ permitting division with remainder, $a = qb + r$ with $r = 0$ or $N(r) < N(b)$. Division with remainder yields the Euclidean algorithm, whose last nonzero remainder is a gcd, and the extended algorithm, which exhibits every gcd as a Bézout combination; hence every Euclidean domain is a Bézout domain. Choosing an element of minimal degree in a nonzero ideal shows that every Euclidean domain is a principal ideal domain, so the chain Euclidean $\Rightarrow$ principal $\Rightarrow$ unique factorisation $\Rightarrow$ domain holds, with $\mathbb{Z}$ and $F[x]$ as the classical examples.</p>
+<p>A Euclidean domain is an integral domain with a degree function $N : R \setminus \{0\} \to \mathbb{Z}_{\geq 0}$ permitting division with remainder, $a = qb + r$ with $r = 0$ or $N(r) &lt; N(b)$. Division with remainder yields the Euclidean algorithm, whose last nonzero remainder is a gcd, and the extended algorithm, which exhibits every gcd as a Bézout combination; hence every Euclidean domain is a Bézout domain. Choosing an element of minimal degree in a nonzero ideal shows that every Euclidean domain is a principal ideal domain, so the chain Euclidean $\Rightarrow$ principal $\Rightarrow$ unique factorisation $\Rightarrow$ domain holds, with $\mathbb{Z}$ and $F[x]$ as the classical examples.</p>
 <p>The Gaussian integers $\mathbb{Z}[i]$ are Euclidean for the degree function $N(a+bi) = a^2+b^2$, the remainder satisfying $N(r) \leq \tfrac12 N(w)$. Their irreducibles are classified: the associates of $1+i$, the associates of the rational primes $p \equiv 3 \pmod 4$, and the elements of prime $N$-value, which produce the splitting $p = \pi\bar\pi$ for $p \equiv 1 \pmod 4$. The rung is strict: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a principal ideal domain admitting no Euclidean degree function, by Motzkin's theorem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -211,7 +211,7 @@ $$</p>
 </tr>
 <tr>
 <td>$a = qb + r$</td>
-<td>Division with remainder, $r = 0$ or $N(r) < N(b)$</td>
+<td>Division with remainder, $r = 0$ or $N(r) &lt; N(b)$</td>
 </tr>
 <tr>
 <td>$r_k = ax + by$</td>

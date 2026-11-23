@@ -90,7 +90,7 @@ $$</p>
 <p><strong>Theorem (method of characteristics).</strong> Let $w$ be a $C^1$ solution of the quasilinear equation and let $x(t)$ be a solution curve of $dx/dt = a(x,w(x(t)))$; then along the curve $w$ solves $dw/dt = c$, and the value of $w$ is constant along the curve when $c=0$. Hence a solution is determined by its values on a hypersurface that is transverse to the characteristic field, and the solution is constant along each characteristic curve.</p>
 <p><em>Proof.</em> Along $t \mapsto w(x(t))$ one has $\frac{d}{dt}w = \sum_i\partial/\partial x_i\,w\,dx_{i}/dt = \sum_ia_i\partial/\partial x_i\,w = c$ by the equation; the case $c=0$ gives constancy, and the reduction to the prescribed data on a transversal hypersurface is the statement that the map from data to characteristic curve is invertible when the transversality holds.</p>
 <p><strong>Example (a linear transport equation).</strong> For $\partial/\partial t w + b\,\partial/\partial x w = 0$ with $b$ constant, the characteristics are the lines $x = x_0 + bt$, and the solution with datum $w(x,0) = f(x)$ is $w(x,t) = f(x-bt)$: the initial profile is translated at speed $b$. The equation is hyperbolic and the solution exists and is unique for all time, with no smoothing and no decay.</p>
-<p><strong>Example (a conservation law).</strong> For $\partial/\partial t w + w\,\partial/\partial x w = 0$ with datum $w(x,0)=f(x)$, the characteristics are the lines $x = f(x_0)t + x_0$, which cross when $f' < 0$; the classical solution then ceases to exist at the first crossing time $t_* = -1/\inf f'$, and beyond it the equation must be interpreted in a weaker sense. This is the simplest instance of the formation of a singularity in a hyperbolic equation.</p>
+<p><strong>Example (a conservation law).</strong> For $\partial/\partial t w + w\,\partial/\partial x w = 0$ with datum $w(x,0)=f(x)$, the characteristics are the lines $x = f(x_0)t + x_0$, which cross when $f' &lt; 0$; the classical solution then ceases to exist at the first crossing time $t_* = -1/\inf f'$, and beyond it the equation must be interpreted in a weaker sense. This is the simplest instance of the formation of a singularity in a hyperbolic equation.</p>
 <p><strong>Definition.</strong> A <strong>complete integral</strong> of a first-order equation is a family $w(x;c)$ of solutions depending on $n$ parameters $c$ such that $\det(\partial^2 w/\partial x_i\partial c_j) \neq 0$. The <strong>envelope</strong> of a one-parameter subfamily is obtained by eliminating the parameter between $w = w(x;c)$ and $\partial/\partial c\,w(x;c)=0$, and it is again a solution; the general solution is assembled from the data and the characteristics, or from complete integrals and their envelopes.</p>
 <h2 id="classification-of-second-order-equations">Classification of Second-Order Equations</h2>
 <h3 id="the-principal-symbol">The Principal Symbol</h3>
@@ -103,7 +103,7 @@ $$</p>
 \sigma(x,\zeta) = \sum_{i,j=1}^n a_{ij}(x)\,\zeta_i\zeta_j , \qquad \zeta \in \mathbb{R}^n .
 $$</p>
 <p>The operator is <strong>elliptic</strong> at $x$ if $\sigma(x,\zeta) \neq 0$ for every $\zeta \neq 0$; it is <strong>hyperbolic</strong> at $x$ if $\sigma$ is nondegenerate with signature $(1,n-1)$; and it is <strong>parabolic</strong> at $x$ if $\sigma$ is degenerate of rank $n-1$ with the rank drop corresponding to a distinguished direction. For $n=2$ the classification is read from the discriminant.</p>
-<p><strong>Theorem (two-dimensional classification).</strong> Let $a_{11}\partial^2/\partial x^2 w + 2a_{12}\partial/\partial x\,\partial/\partial y w + a_{22}\partial^2/\partial y^2 w + \cdots = 0$ and put $\Delta = a_{12}^2 - a_{11}a_{22}$. Then the equation is elliptic if $\Delta<0$, parabolic if $\Delta=0$, hyperbolic if $\Delta>0$, and in each case a $C^2$ change of variables brings the principal part to the canonical form</p>
+<p><strong>Theorem (two-dimensional classification).</strong> Let $a_{11}\partial^2/\partial x^2 w + 2a_{12}\partial/\partial x\,\partial/\partial y w + a_{22}\partial^2/\partial y^2 w + \cdots = 0$ and put $\Delta = a_{12}^2 - a_{11}a_{22}$. Then the equation is elliptic if $\Delta&lt;0$, parabolic if $\Delta=0$, hyperbolic if $\Delta&gt;0$, and in each case a $C^2$ change of variables brings the principal part to the canonical form</p>
 <p>$$
 w_{\zeta\zeta} + w_{\eta\eta}, \qquad w_{\zeta\zeta}, \qquad w_{\zeta\zeta} - w_{\eta\eta}
 $$</p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>Example.</strong> For a ball in $\mathbb{R}^2$ the value at the centre is the mean of the boundary values, $w(0) = \frac{1}{2\pi R}\int_{\partial B}g\,dS$, which is the mean value property; the formula is exact and follows from the kernel at $x=0$.</p>
 <h2 id="the-heat-equation">The Heat Equation</h2>
 <h3 id="the-fundamental-solution-and-smoothing">The Fundamental Solution and Smoothing</h3>
-<p><strong>Definition.</strong> For $t>0$ the <strong>heat kernel</strong> on $\mathbb{R}^n$ is</p>
+<p><strong>Definition.</strong> For $t&gt;0$ the <strong>heat kernel</strong> on $\mathbb{R}^n$ is</p>
 <p>$$
 K_t(x) = \frac{1}{(4\pi t)^{n/2}}\exp\Bigl(-\frac{|x|^2}{4t}\Bigr),
 $$</p>
@@ -158,19 +158,19 @@ $$</p>
 $$</p>
 <p>solves the Cauchy problem, and $\|w(\cdot,t)\|_\infty \le \|f\|_\infty$ with $w(\cdot,t)\to f$ uniformly on compact sets as $t\to0^+$.</p>
 <p><em>Proof.</em> The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $\partial/\partial t w = \Delta w$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound.</p>
-<p><strong>Theorem (smoothing).</strong> If $f$ is merely bounded and continuous, then $w(\cdot,t)$ is of class $C^\infty$ for every $t>0$, and all its derivatives are bounded on $\mathbb{R}^n\times[\varepsilon,\infty)$ for every $\varepsilon>0$. In particular no singularity of $f$ propagates, and the solution is analytic in $x$ for $t>0$.</p>
-<p><em>Proof.</em> The kernel $K_t(x-y)$ is $C^\infty$ in $(x,t)$ for $t>0$, and every derivative is integrable against the bounded $f$, so differentiation under the integral is legitimate.</p>
+<p><strong>Theorem (smoothing).</strong> If $f$ is merely bounded and continuous, then $w(\cdot,t)$ is of class $C^\infty$ for every $t&gt;0$, and all its derivatives are bounded on $\mathbb{R}^n\times[\varepsilon,\infty)$ for every $\varepsilon&gt;0$. In particular no singularity of $f$ propagates, and the solution is analytic in $x$ for $t&gt;0$.</p>
+<p><em>Proof.</em> The kernel $K_t(x-y)$ is $C^\infty$ in $(x,t)$ for $t&gt;0$, and every derivative is integrable against the bounded $f$, so differentiation under the integral is legitimate.</p>
 <p><strong>Theorem (maximum principle).</strong> If $w$ solves $\partial/\partial t w=\Delta w$ in a bounded cylinder $\Omega\times(0,T)$ and is continuous on its closure, then</p>
 <p>$$
 \max_{\overline\Omega\times[0,T]}w = \max\Bigl(\max_{\partial\Omega\times[0,T]}w,\ \max_{\overline\Omega\times\{0\}}w\Bigr),
 $$</p>
 <p>with the same statement for the minimum; consequently the solution is unique and depends monotonically on its data.</p>
-<p><em>Proof.</em> If $w$ attained an interior maximum at $(x_0,t_0)$ with $t_0>0$, then $\partial/\partial t w(x_0,t_0)\ge0$ and $\Delta w(x_0,t_0)\le0$, so $\partial/\partial t w-\Delta w \ge 0$ there; to exclude equality one applies the argument to $w-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions.</p>
-<p><strong>Theorem (irreversibility).</strong> The backward problem $\partial/\partial t w = \Delta w$ for $t<0$ with datum at $t=0$ is not well posed: the solution operator $K_t$ for $t>0$ has no bounded inverse on $L^2(\mathbb{R}^n)$, and its inverse amplifies high frequencies by the factor $\exp(|\zeta|^2|t|)$.</p>
-<p><em>Proof.</em> The Fourier transform diagonalises the equation, $\mathcal F w(\zeta,t) = \exp(-|\zeta|^2t)(\mathcal F f)(\zeta)$; the multiplier $\exp(-|\zeta|^2t)$ is bounded for $t>0$ with norm $1$, but for the backward direction the multiplier is $\exp(|\zeta|^2|t|)$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound.</p>
+<p><em>Proof.</em> If $w$ attained an interior maximum at $(x_0,t_0)$ with $t_0&gt;0$, then $\partial/\partial t w(x_0,t_0)\ge0$ and $\Delta w(x_0,t_0)\le0$, so $\partial/\partial t w-\Delta w \ge 0$ there; to exclude equality one applies the argument to $w-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions.</p>
+<p><strong>Theorem (irreversibility).</strong> The backward problem $\partial/\partial t w = \Delta w$ for $t&lt;0$ with datum at $t=0$ is not well posed: the solution operator $K_t$ for $t&gt;0$ has no bounded inverse on $L^2(\mathbb{R}^n)$, and its inverse amplifies high frequencies by the factor $\exp(|\zeta|^2|t|)$.</p>
+<p><em>Proof.</em> The Fourier transform diagonalises the equation, $\mathcal F w(\zeta,t) = \exp(-|\zeta|^2t)(\mathcal F f)(\zeta)$; the multiplier $\exp(-|\zeta|^2t)$ is bounded for $t&gt;0$ with norm $1$, but for the backward direction the multiplier is $\exp(|\zeta|^2|t|)$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound.</p>
 <h2 id="the-wave-equation">The Wave Equation</h2>
 <h3 id="dalemberts-formula-and-finite-propagation">d'Alembert's Formula and Finite Propagation</h3>
-<p><strong>Definition.</strong> The <strong>wave equation</strong> with speed $c>0$ is $\partial^2/\partial t^2 w = c^2\Delta w$; the Cauchy problem asks for $w(x,0)=f(x)$ and $\partial/\partial t w(x,0)=g(x)$.</p>
+<p><strong>Definition.</strong> The <strong>wave equation</strong> with speed $c&gt;0$ is $\partial^2/\partial t^2 w = c^2\Delta w$; the Cauchy problem asks for $w(x,0)=f(x)$ and $\partial/\partial t w(x,0)=g(x)$.</p>
 <p><strong>Theorem (d'Alembert, $n=1$).</strong> The solution of the Cauchy problem on $\mathbb{R}$ with $f \in C^2$ and $g \in C^1$ is</p>
 <p>$$
 \boxed{\;w(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds\;} .
@@ -195,7 +195,7 @@ $$</p>
 <p>$$
 w_n(x,y) = \frac{1}{n^2}\sin(nx)\sinh(ny),
 $$</p>
-<p>which is small in $C^1$ on the real axis and arbitrarily large at any fixed $y>0$ as $n\to\infty$. Hence the Cauchy problem for an elliptic equation is ill posed.</p>
+<p>which is small in $C^1$ on the real axis and arbitrarily large at any fixed $y&gt;0$ as $n\to\infty$. Hence the Cauchy problem for an elliptic equation is ill posed.</p>
 <p><em>Proof.</em> Both $w_n$ and its derivative at $y=0$ are $O(1/n)$ uniformly in $x$, while $\sinh(ny)$ grows exponentially at fixed $y$; so the data converge to zero in $C^1$ whereas the solutions do not converge to zero pointwise away from the axis.</p>
 <p>The example explains the classification in terms of the auxiliary data a type can accept: an elliptic equation needs boundary data on the whole boundary and is well posed as a Dirichlet problem; a parabolic equation needs data at one time and is well posed forward in time; a hyperbolic equation needs Cauchy data and is well posed for all time, with the oscillations of the data preserved rather than damped.</p>
 <h3 id="separation-of-variables">Separation of Variables</h3>

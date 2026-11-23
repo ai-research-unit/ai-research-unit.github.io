@@ -91,7 +91,7 @@ $$</p>
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \frac{d\tilde{P}_{\Phi}}{d\tau}, \qquad \tilde{P}_{\Phi} = m\tilde{V}_{\Phi},
 $$</p>
 <p>and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.</p>
-<p>The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\imath^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.</p>
+<p>The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_{\imath}^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ is $\tilde{Q}^{\natural} = Q_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_{\imath} \bar{Q}_{\imath} e_{\imath}$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.</p>
 <h2 id="the-lorentz-four-force-in-component-form">The Lorentz Four-Force in Component Form</h2>
 <p>The component form is the established result, and it is the starting point of everything that follows. For a particle of charge $ϙ$ and velocity $\vec v$ in fields $\vec E$ and $\vec B$, the <strong>Lorentz four-force biquaternion</strong> is</p>
 <p>$$
@@ -110,21 +110,21 @@ $$</p>
 <p>$$
 F_{\imath\jmath} =
 \begin{pmatrix}
-0 & iE_x/c & iE_y/c & iE_z/c \\
--iE_x/c & 0 & B_z & -B_y \\
--iE_y/c & -B_z & 0 & B_x \\
--iE_z/c & B_y & -B_x & 0
+0 &amp; iE_x/c &amp; iE_y/c &amp; iE_z/c \\
+-iE_x/c &amp; 0 &amp; B_z &amp; -B_y \\
+-iE_y/c &amp; -B_z &amp; 0 &amp; B_x \\
+-iE_z/c &amp; B_y &amp; -B_x &amp; 0
 \end{pmatrix},
 $$</p>
-<p>that is, $F_{0k} = iE_\imath/c$ and $F_{j\imath} = \epsilon_{j\imath l}B_l$. The time component of the contraction is</p>
+<p>that is, $F_{0k} = iE_{\imath}/c$ and $F_{j\imath} = \epsilon_{j\imath l}B_l$. The time component of the contraction is</p>
 <p>$$
-K_0 = ϙ\,F_{0k}u_\imath = ϙ\,\frac{iE_\imath}{c}\,\gamma v_\imath = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0k}u_{\imath} = ϙ\,\frac{iE_{\imath}}{c}\,\gamma v_{\imath} = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$</p>
 <p>and the spatial components are</p>
 <p>$$
 B_{\mathrm{boost},k} = ϙ\,F_{k0}u_0 + ϙ\,F_{\imath j}u_j
-= ϙ\left(-\frac{iE_\imath}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\imath jl}B_l\,\gamma v_j
-= \gamma ϙ\,E_\imath + \gamma ϙ\left(\vec v\times\vec B\right)_\imath,
+= ϙ\left(-\frac{iE_{\imath}}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\imath jl}B_l\,\gamma v_j
+= \gamma ϙ\,E_{\imath} + \gamma ϙ\left(\vec v\times\vec B\right)_{\imath},
 $$</p>
 <p>which is exactly the vector part above. The component form and the tensor contraction are the same statement.</p>
 <h2 id="the-four-force-as-an-element-of-math67">The Four-Force as an Element of $\mathbb{B}_{\Phi}$</h2>
@@ -174,7 +174,7 @@ $$</p>
 \qquad
 \tilde{F}\tilde{V}_{\Phi} - \tilde{V}_{\Phi}\tilde{F} = 2\gamma\,\tilde{F}\times\vec v.
 $$</p>
-<p>(Here $\tilde{F}\cdot\vec v$ is the scalar biquaternion $\sum_{\imath\in\{x,y,z\}} F_\imath v_\imath$ and $\tilde{F}\times\vec v$ the pure-vector biquaternion with components $\epsilon_{j\imath l}F_j v_l$.) The electric and magnetic fields are recovered from</p>
+<p>(Here $\tilde{F}\cdot\vec v$ is the scalar biquaternion $\sum_{\imath\in\{x,y,z\}} F_{\imath} v_{\imath}$ and $\tilde{F}\times\vec v$ the pure-vector biquaternion with components $\epsilon_{j\imath l}F_j v_l$.) The electric and magnetic fields are recovered from</p>
 <p>$$
 \vec E = \frac{\tilde{F} + \tilde{F}^{*}}{2i\sqrt{\epsilon}},
 \qquad
@@ -358,8 +358,8 @@ $$</p>
 <p>The invariants $I_1, I_2$ determine the Lorentz type of the field, and therefore the possible shapes of the force. The classification, established in the field-strength article, is the following.</p>
 <ul>
 <li><strong>Null field</strong> ($I_1 = I_2 = 0$). Then $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise, and no Lorentz transformation can remove either field. The field is radiative. The biquaternion norm of the field vanishes, and $\tilde{F}$ is $N$-degenerate, a zero divisor of $\mathbb{B}$.</li>
-<li><strong>Electric type</strong> ($I_2 = 0$, $I_1 > 0$). Then there is a frame in which $\vec B = 0$, with $\vec E^2 = I_1$. In that frame the four-force is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ\,\vec E$: purely electric.</li>
-<li><strong>Magnetic type</strong> ($I_2 = 0$, $I_1 < 0$). Then there is a frame in which $\vec E = 0$, with $c^2\vec B^2 = -I_1$. In that frame the four-force is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \gamma ϙ(\vec v\times\vec B)$: purely magnetic, and no work is done.</li>
+<li><strong>Electric type</strong> ($I_2 = 0$, $I_1 &gt; 0$). Then there is a frame in which $\vec B = 0$, with $\vec E^2 = I_1$. In that frame the four-force is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ\,\vec E$: purely electric.</li>
+<li><strong>Magnetic type</strong> ($I_2 = 0$, $I_1 &lt; 0$). Then there is a frame in which $\vec E = 0$, with $c^2\vec B^2 = -I_1$. In that frame the four-force is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \gamma ϙ(\vec v\times\vec B)$: purely magnetic, and no work is done.</li>
 <li><strong>Generic field</strong> ($I_2 \neq 0$). Then no frame removes either field, but there is a frame in which $\vec E$ and $\vec B$ are parallel, with magnitudes determined by the two invariants through</li>
 </ul>
 <p>$$
@@ -382,7 +382,7 @@ $$</p>
 <p>$$
 \eta_{\pm}^2 = \frac{I_1 \pm \sqrt{I_1^2 + 4c^2I_2^2}}{2c^2}.
 $$</p>
-<p>In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\eta = \pm E_0/c$ and $\eta = \pm iB_0$. Two familiar cases are immediate. A pure magnetic field ($I_1 < 0$, $I_2 = 0$, frame with $\vec E = 0$) gives eigenvalues $\pm iB$ and the cyclotron frequency $\omega = ϙB/m$: uniform circular motion, with constant energy. A pure electric field ($I_2 = 0$, $I_1 > 0$, frame with $\vec B = 0$) gives eigenvalues $\pm E/c$ and hyperbolic (uniformly accelerated) motion. The field invariants, not the field components, are the Lorentz-invariant data that fix these rates.</p>
+<p>In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\eta = \pm E_0/c$ and $\eta = \pm iB_0$. Two familiar cases are immediate. A pure magnetic field ($I_1 &lt; 0$, $I_2 = 0$, frame with $\vec E = 0$) gives eigenvalues $\pm iB$ and the cyclotron frequency $\omega = ϙB/m$: uniform circular motion, with constant energy. A pure electric field ($I_2 = 0$, $I_1 &gt; 0$, frame with $\vec B = 0$) gives eigenvalues $\pm E/c$ and hyperbolic (uniformly accelerated) motion. The field invariants, not the field components, are the Lorentz-invariant data that fix these rates.</p>
 <h3 id="a-null-field-invariant">A null-field invariant</h3>
 <p>One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $\vec\nu_\Phi$ (the propagation direction), satisfying $\sum_{\imath} \nu_{\Phi,\imath} F_{\imath\jmath} = 0$. Then</p>
 <p>$$
@@ -459,7 +459,7 @@ $$</p>
 \qquad
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F_2 - i\,\big[\tilde F_2,\vec J\big],
 $$</p>
-<p>where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_{\imath\in\{x,y,z\}} F_\imathG_\imath$. The scalar part is a <strong>power density</strong>: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.</p>
+<p>where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_{\imath\in\{x,y,z\}} F_{\imath} G_{\imath}$. The scalar part is a <strong>power density</strong>: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.</p>
 <p>The vector part is the <strong>force density</strong>, and its relation to the two halves named below carries a factor of $i$:</p>
 <p>$$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\vec F_H + i\,\vec F_E\right),
@@ -517,7 +517,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

@@ -83,7 +83,7 @@ $$</p>
 <p>The <strong>degree</strong> of a monomial is the number of variables in it, and the <strong>parity</strong> of a monomial is its degree modulo $2$.</p>
 <p><strong>Proposition.</strong> The monomials</p>
 <p>$$
-\varkappa_I = \varkappa_{i_1}\varkappa_{i_2}\cdots\varkappa_{i_k}, \qquad I = \{i_1 < i_2 < \cdots < i_k\},
+\varkappa_I = \varkappa_{i_1}\varkappa_{i_2}\cdots\varkappa_{i_k}, \qquad I = \{i_1 &lt; i_2 &lt; \cdots &lt; i_k\},
 $$</p>
 <p>together with the empty product $1 = \varkappa_\varnothing$, form a basis of $\Lambda(\varkappa_1, \ldots, \varkappa_n)$ over $R$; the algebra has rank $2^n$. If $\sigma$ is a permutation of the indices $i_1, \ldots, i_k$, then</p>
 <p>$$
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="the-odd-gaussian">The Odd Gaussian</h3>
 <p><strong>Theorem (the odd Gaussian integral).</strong> Let $n = 2m$ be even and let $A = (A_{ij})$ be an alternating $2m \times 2m$ matrix over $R$. Then the Berezin integral of the exponential</p>
 <p>$$
-\exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\, \varkappa_i\varkappa_j\right) = \exp\left(\sum_{i<j} A_{ij}\,\varkappa_i\varkappa_j\right)
+\exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\, \varkappa_i\varkappa_j\right) = \exp\left(\sum_{i&lt;j} A_{ij}\,\varkappa_i\varkappa_j\right)
 $$</p>
 <p>is the Pfaffian:</p>
 <p>$$
@@ -181,10 +181,10 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Expanding the exponential, only the term of degree $m$ in the quadratic form can contribute to the top coefficient. That term is</p>
 <p>$$
-\frac{1}{m!}\left(\sum_{i<j} A_{ij}\varkappa_i\varkappa_j\right)^m,
+\frac{1}{m!}\left(\sum_{i&lt;j} A_{ij}\varkappa_i\varkappa_j\right)^m,
 $$</p>
 <p>and by the definition of the Pfaffian as the coefficient of $\varkappa_1\varkappa_2\cdots\varkappa_{2m}$ in $\frac{1}{2^m m!}\left(\sum_{i,j}A_{ij}\varkappa_i\varkappa_j\right)^m$ — the standard expression of the Pfaffian of <em>The Determinant and Alternating Forms</em> — its Berezin integral is $\operatorname{Pf}(A)$.</p>
-<p><strong>Example.</strong> For $m = 1$ and $A = \begin{pmatrix} 0 & a \\ -a & 0\end{pmatrix}$, the exponent is $a\varkappa_1\varkappa_2$ and the exponential is $1 + a\varkappa_1\varkappa_2$; the integral is $a = \operatorname{Pf}(A)$. For $m = 2$ the Pfaffian of a $4 \times 4$ alternating matrix is $A_{12}A_{34} - A_{13}A_{24} + A_{14}A_{23}$, the coefficient of $\varkappa_1\varkappa_2\varkappa_3\varkappa_4$ in the exponential.</p>
+<p><strong>Example.</strong> For $m = 1$ and $A = \begin{pmatrix} 0 &amp; a \\ -a &amp; 0\end{pmatrix}$, the exponent is $a\varkappa_1\varkappa_2$ and the exponential is $1 + a\varkappa_1\varkappa_2$; the integral is $a = \operatorname{Pf}(A)$. For $m = 2$ the Pfaffian of a $4 \times 4$ alternating matrix is $A_{12}A_{34} - A_{13}A_{24} + A_{14}A_{23}$, the coefficient of $\varkappa_1\varkappa_2\varkappa_3\varkappa_4$ in the exponential.</p>
 <h3 id="the-determinant">The Determinant</h3>
 <p><strong>Corollary.</strong> For an alternating $2m \times 2m$ matrix $A$, the square of the Gaussian integral is the determinant:</p>
 <p>$$
@@ -202,7 +202,7 @@ $$</p>
 $$</p>
 <p>The right-hand side is, up to the factor $(2\pi)^{p/2}$, the inverse square root of the Berezinian of the block diagonal supermatrix $\operatorname{diag}(B, A)$:</p>
 <p>$$
-\operatorname{Ber}\begin{pmatrix} B & 0 \\ 0 & A\end{pmatrix} = \frac{\det B}{\det A} = \frac{\det B}{\operatorname{Pf}(A)^2},
+\operatorname{Ber}\begin{pmatrix} B &amp; 0 \\ 0 &amp; A\end{pmatrix} = \frac{\det B}{\det A} = \frac{\det B}{\operatorname{Pf}(A)^2},
 $$</p>
 <p>so that $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2} = (2\pi)^{p/2}(\det B)^{-1/2}\operatorname{Pf}(A)$. This is the sense in which the odd Gaussian converts the Pfaffian into the square root of a determinant, and it is the origin of the Berezinian in the superalgebra article <em>Superalgebras and Graded Structures</em>.</p>
 <p><strong>Remark.</strong> The bosonic Gaussian $\int_{\mathbb{R}^p} \exp(-\frac12 x^TBx)dx = (2\pi)^{p/2}(\det B)^{-1/2}$ is an analytic statement, and it is quoted here as the classical counterpart of the algebraic odd Gaussian; the odd integral requires no analysis, and its value is an integral polynomial in the entries of $A$.</p>
@@ -244,7 +244,7 @@ $$</p>
 <td>Grassmann algebra, the exterior algebra on the odd generators</td>
 </tr>
 <tr>
-<td>$\varkappa_I$, $I = \{i_1 < \cdots < i_k\}$</td>
+<td>$\varkappa_I$, $I = \{i_1 &lt; \cdots &lt; i_k\}$</td>
 <td>Squarefree monomial; basis of $\Lambda(V)$, rank $2^n$</td>
 </tr>
 <tr>

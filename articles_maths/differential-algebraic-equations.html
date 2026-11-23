@@ -113,7 +113,7 @@ $$</p>
 <h3 id="the-weierstrasskronecker-canonical-form">The Weierstrass–Kronecker Canonical Form</h3>
 <p><strong>Definition.</strong> The <strong>matrix pencil</strong> determined by $E, A$ is the family $\lambda E + A$, and it is <strong>regular</strong> if $\det(\lambda E + A)$ is not identically zero as a polynomial in $\lambda$. For a regular pencil there are invertible matrices $P, Q \in GL_n(\mathbb{K})$ and a decomposition $n = r + s$ with</p>
 <p>$$
-PEQ = \begin{pmatrix} I_r & 0\\ 0 & N\end{pmatrix}, \qquad PAQ = \begin{pmatrix} J & 0\\ 0 & I_s\end{pmatrix},
+PEQ = \begin{pmatrix} I_r &amp; 0\\ 0 &amp; N\end{pmatrix}, \qquad PAQ = \begin{pmatrix} J &amp; 0\\ 0 &amp; I_s\end{pmatrix},
 $$</p>
 <p>where $J$ is in Jordan form and $N$ is nilpotent with index $\nu$. This is the <strong>Weierstrass–Kronecker form</strong> of the pencil, and $\nu$ is the <strong>index</strong> of the pencil.</p>
 <p><em>Proof.</em> Quoted as standard (the Weierstrass canonical form for regular matrix pencils). The proof is the classification of the modules over $\mathbb{K}[\lambda]$ given by the pencil, using the structure theorem of finitely generated modules over a principal ideal domain, in the form developed for the Jordan form in Part I; the nilpotent part $N$ is the obstruction to solving for $y'$.</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 y_1' = y_1 + y_2 + q_1(t), \qquad 0 = y_1 + q_2(t)
 $$</p>
-<p>has $n_1 = n_2 = 1$ and constraint $g = y_1 + q_2 = 0$. Differentiating once, $y_1' + q_2' = 0$, and substituting the differential equation gives $y_1 + y_2 + q_1 + q_2' = 0$, which determines $y_2 = -y_1 - q_1 - q_2'$; the second differentiation is needed to get $y_2'$, so the index is two. The solution involves $q_2'$, and the initial value must satisfy the two conditions $y_1(t_0) = -q_2(t_0)$ and $y_2(t_0) = q_2(t_0) - q_1(t_0) - q_2'(t_0)$ rather than one. The matrix form has $E = \begin{pmatrix}1&0\\0&0\end{pmatrix}$, $A = \begin{pmatrix}-1&-1\\1&0\end{pmatrix}$; the determinant of the pencil is the constant $1$, so the pencil is regular with no finite eigenvalue, its Kronecker form consists entirely of a nilpotent block of size two, and the index is two.</p>
+<p>has $n_1 = n_2 = 1$ and constraint $g = y_1 + q_2 = 0$. Differentiating once, $y_1' + q_2' = 0$, and substituting the differential equation gives $y_1 + y_2 + q_1 + q_2' = 0$, which determines $y_2 = -y_1 - q_1 - q_2'$; the second differentiation is needed to get $y_2'$, so the index is two. The solution involves $q_2'$, and the initial value must satisfy the two conditions $y_1(t_0) = -q_2(t_0)$ and $y_2(t_0) = q_2(t_0) - q_1(t_0) - q_2'(t_0)$ rather than one. The matrix form has $E = \begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix}$, $A = \begin{pmatrix}-1&amp;-1\\1&amp;0\end{pmatrix}$; the determinant of the pencil is the constant $1$, so the pencil is regular with no finite eigenvalue, its Kronecker form consists entirely of a nilpotent block of size two, and the index is two.</p>
 <p><strong>Proposition (sensitivity of an index-two system).</strong> Perturb the index-two system above in the constraint to $0 = y_1 + q_2(t) + \delta(t)$. Then the solution of the perturbed system has $y_{1,\delta} = -q_2 - \delta$, and, when $\delta$ is differentiable,</p>
 <p>$$
 y_{2,\delta} = -q_1 - q_2' - \delta' - y_{1,\delta},

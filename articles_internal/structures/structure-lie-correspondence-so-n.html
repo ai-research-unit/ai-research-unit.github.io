@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-lie-correspondence-for-the-rotations-math0"><strong>The Lie Correspondence for the Rotations: $\mathfrak{so}(n)\leftrightarrow\mathrm{SO}(n)$</strong></h1>
+        <h1 id="the-lie-correspondence-for-the-rotations-math1"><strong>The Lie Correspondence for the Rotations: $\mathfrak{so}(n)\leftrightarrow\mathrm{SO}(n)$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The Lie correspondence for the rotations is the following set of statements about two objects, one linear and one curved:</p>
 <p>$$
@@ -88,14 +88,14 @@ $$</p>
 </ul>
 <p><strong>Why the five are separated.</strong> T1 is an algebraic identity and needs nothing but the series. T2 is a differentiation and needs nothing but the definitions. T3 is the inverse function theorem and needs no hypothesis at all, so it holds for every matrix group. T4 is the only one that uses compactness, and it is the one that fails for the non-compact real forms and survives for the complex forms by a different argument; the companion articles take up those two cases. T5 is a computation in the series that shows the bracket is not decoration.</p>
 <p><strong>What is taken as known.</strong> The orthogonal group, its two components and the fact that the determinant is a homomorphism onto $\{\pm1\}$ are <em>The Special Orthogonal Groups over the Reals</em>, §<em>The Defining Equation</em>. The general theory of the exponential on a Lie group, and the derivation of its differential, is <em>The Lie Algebra and the Exponential Map</em>. The normal form of a rotation with several angles is <em>Simple and Non-Simple Rotations</em>, and the cover by the spin group is <em>The Rotor as a Square Root of a Rotation</em>. This article proves the five statements in full, with the one exception of the Campbell–Baker–Hausdorff series, which is quoted and used only through its first two terms; the first two terms are proved here directly.</p>
-<p><strong>Conventions.</strong> Matrices act on $\mathbb R^{n}$ with the standard inner product. The transpose is written $A^{\mathsf T}$, the identity matrix $\mathrm I$, the trace $\operatorname{tr}$, the operator norm $\lVert A\rVert$ subordinate to the Euclidean norm on $\mathbb R^{n}$. The elementary antisymmetric matrices are $X_{ij}=E_{ij}-E_{ji}$ for $i<j$, with $E_{ij}$ the matrix of the single entry $1$ in row $i$ and column $j$. The plane generator in the $(i,j)$ plane, in the basis adapted to that plane, is $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, and the rotation by the angle $\theta$ in that plane is $R(\theta)=\exp(\theta J)=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}$. No physics is invoked.</p>
+<p><strong>Conventions.</strong> Matrices act on $\mathbb R^{n}$ with the standard inner product. The transpose is written $A^{\mathsf T}$, the identity matrix $\mathrm I$, the trace $\operatorname{tr}$, the operator norm $\lVert A\rVert$ subordinate to the Euclidean norm on $\mathbb R^{n}$. The elementary antisymmetric matrices are $X_{ij}=E_{ij}-E_{ji}$ for $i&lt;j$, with $E_{ij}$ the matrix of the single entry $1$ in row $i$ and column $j$. The plane generator in the $(i,j)$ plane, in the basis adapted to that plane, is $J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$, and the rotation by the angle $\theta$ in that plane is $R(\theta)=\exp(\theta J)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix}$. No physics is invoked.</p>
 <h2 id="the-two-objects">The Two Objects</h2>
 <h3 id="the-algebra">The Algebra</h3>
 <p>The set $\mathfrak{so}(n)$ is a real vector space because the condition $X^{\mathsf T}=-X$ is linear, and it is closed under the bracket:</p>
 <p><strong>Lemma.</strong> If $X^{\mathsf T}=-X$ and $Y^{\mathsf T}=-Y$ then $[X,Y]^{\mathsf T}=- [X,Y]$.</p>
 <p><strong>Proof.</strong> $(XY-YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=(-Y)(-X)-(-X)(-Y)=YX-XY=-[X,Y]$.</p>
 <p>So $\mathfrak{so}(n)$ is a Lie algebra, and it is a Lie algebra of matrices, so its bracket is the ordinary commutator. The same computation shows that the bracket of two antisymmetric matrices is anti-self-adjoint for every field, which is why T1 repeats without change over $\mathbb C$.</p>
-<p><strong>The basis.</strong> An antisymmetric matrix has zero diagonal and is determined by its entries above the diagonal, so the $X_{ij}$ with $i<j$ form a basis and</p>
+<p><strong>The basis.</strong> An antisymmetric matrix has zero diagonal and is determined by its entries above the diagonal, so the $X_{ij}$ with $i&lt;j$ form a basis and</p>
 <p>$$
 \dim\mathfrak{so}(n)=\frac{n(n-1)}{2}.
 $$</p>
@@ -149,11 +149,11 @@ $$</p>
 <p>with $\varphi(0)=1$ by continuity and $\operatorname{ad}_X(Y)=[X,Y]$. The formula is quoted; only its zeros are used below, and they are read off from $\varphi$.</p>
 <h3 id="explicit-neighbourhoods">Explicit Neighbourhoods</h3>
 <p>The inverse function theorem gives neighbourhoods without a size. A size can be produced from the logarithmic series, and the production is worth carrying out because it shows how far the local inverse reaches.</p>
-<p><strong>Proposition.</strong> Let $\lVert X\rVert<1$. Then the series $\log(\mathrm I+X)=\sum_{k\ge1}(-1)^{k+1}X^{k}/k$ converges absolutely, and $\exp\log(\mathrm I+X)=\mathrm I+X$.</p>
+<p><strong>Proposition.</strong> Let $\lVert X\rVert&lt;1$. Then the series $\log(\mathrm I+X)=\sum_{k\ge1}(-1)^{k+1}X^{k}/k$ converges absolutely, and $\exp\log(\mathrm I+X)=\mathrm I+X$.</p>
 <p><strong>Proof.</strong> Absolute convergence follows from $\lVert X^{k}\rVert\le\lVert X\rVert^{k}$ and the convergence of $\sum_k\lVert X\rVert^{k}/k=-\log(1-\lVert X\rVert)$. The identity $\exp\log(\mathrm I+X)=\mathrm I+X$ is the composition of the two power series in one variable, valid for commuting reasons because both series are polynomials in $X$; truncating at degree $K$ and passing to the limit in the norm gives the statement.</p>
-<p><strong>Proposition.</strong> If $\lVert X\rVert<\log2$ then $\log\exp X=X$.</p>
-<p><strong>Proof.</strong> The estimate $\lVert e^{X}-\mathrm I\rVert\le\sum_{k\ge1}\lVert X\rVert^{k}/k!=e^{\lVert X\rVert}-1$ holds by the triangle inequality and submultiplicativity. For $\lVert X\rVert<\log2$ the right side is less than $1$, so $\log\exp X$ is defined by the previous proposition, and the two compositions of the mutually inverse scalar series give the identity.</p>
-<p>So $\exp$ maps the open ball $U=\{X:\lVert X\rVert<\log2\}$ bijectively onto its image, with inverse $\log$, and the image contains the set of rotations $R$ with $\lVert R-\mathrm I\rVert<1$. The number $\log2$ is not optimal, and it is not meant to be; what matters is that it is explicit and that the proof uses only the series.</p>
+<p><strong>Proposition.</strong> If $\lVert X\rVert&lt;\log2$ then $\log\exp X=X$.</p>
+<p><strong>Proof.</strong> The estimate $\lVert e^{X}-\mathrm I\rVert\le\sum_{k\ge1}\lVert X\rVert^{k}/k!=e^{\lVert X\rVert}-1$ holds by the triangle inequality and submultiplicativity. For $\lVert X\rVert&lt;\log2$ the right side is less than $1$, so $\log\exp X$ is defined by the previous proposition, and the two compositions of the mutually inverse scalar series give the identity.</p>
+<p>So $\exp$ maps the open ball $U=\{X:\lVert X\rVert&lt;\log2\}$ bijectively onto its image, with inverse $\log$, and the image contains the set of rotations $R$ with $\lVert R-\mathrm I\rVert&lt;1$. The number $\log2$ is not optimal, and it is not meant to be; what matters is that it is explicit and that the proof uses only the series.</p>
 <h3 id="where-the-differential-is-singular">Where the Differential Is Singular</h3>
 <p>The zeros of $\varphi$ are the points $z\in2\pi i\mathbb Z\smallsetminus\{0\}$, since $e^{-z}=1$ exactly there. So $d\exp_X$ is singular exactly when $\operatorname{ad}_X$ has a nonzero eigenvalue in $2\pi i\mathbb Z$.</p>
 <p><strong>Proposition.</strong> In $\mathfrak{so}(3)$ the singular set of $d\exp$ is the union of the spheres $\lVert X\rVert\in2\pi\mathbb Z\smallsetminus\{0\}$, and at such a point the rank drops from $3$ to $1$.</p>
@@ -393,7 +393,7 @@ $$</p>
 <h3 id="the-correspondences-with-the-unitary-and-symplectic-groups">The Correspondences with the Unitary and Symplectic Groups</h3>
 <p>The algebra decides which group the correspondence lands on, and at two rungs that group has a second name.</p>
 <p><strong>$n=3$: the same algebra, two groups.</strong> $\mathfrak{so}(3)\cong\mathfrak{su}(2)$, and T1 to T5 hold for both groups read off the same algebra. T4 for $\mathrm{SU}(2)$ says that every unitary $2\times2$ matrix of determinant one is the exponential of a traceless anti-Hermitian matrix, which is the same statement as T4 for the rotations once the two groups are identified through their common algebra and not through a common representation.</p>
-<p><strong>$n=5$: the compact symplectic group.</strong> $\mathfrak{so}(5)\cong\mathfrak{sp}(2)$, so the simply connected group of the rung is $\mathrm{Sp}(2)=\mathrm{USp}(4)$, and the correspondence is $\mathfrak{so}(5)\leftrightarrow\mathrm{Sp}(2)$. The algebra sits inside $\mathfrak{su}(4)$ of dimension $15$ as a $10$-dimensional subalgebra, so the correspondence for the rotations of $\mathbb{R}^{5}$ is a sub-correspondence of the one for $\mathrm{SU}(4)$, not an isomorphism with it. The dimension count $10<15$ is the whole difference.</p>
+<p><strong>$n=5$: the compact symplectic group.</strong> $\mathfrak{so}(5)\cong\mathfrak{sp}(2)$, so the simply connected group of the rung is $\mathrm{Sp}(2)=\mathrm{USp}(4)$, and the correspondence is $\mathfrak{so}(5)\leftrightarrow\mathrm{Sp}(2)$. The algebra sits inside $\mathfrak{su}(4)$ of dimension $15$ as a $10$-dimensional subalgebra, so the correspondence for the rotations of $\mathbb{R}^{5}$ is a sub-correspondence of the one for $\mathrm{SU}(4)$, not an isomorphism with it. The dimension count $10&lt;15$ is the whole difference.</p>
 <p><strong>$n=6$: the exact meeting.</strong> $\mathfrak{so}(6)\cong\mathfrak{su}(4)$, so every statement of this article about $\mathfrak{so}(6)$ is a statement about $\mathfrak{su}(4)$ and conversely. T1 becomes "the exponential of a traceless anti-Hermitian $4\times4$ matrix has determinant one"; T4 becomes "every such unitary matrix is an exponential"; T5 becomes the statement that the bracket of $\mathfrak{su}(4)$ is the second-order term of the unitary product. This is the only rung above three where the correspondence for the rotations is literally the correspondence for a unitary group, and it is the source of the identity $\mathrm{Spin}(6)=\mathrm{SU}(4)$.</p>
 <p><strong>$n=7$ and $n=8$: no partner.</strong> $22$ and $29$ are not squares, so no unitary algebra has the dimension of the rung, and the correspondence is purely orthogonal. The general relation $\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$ of the complex companion still holds at every rung, and it is the only surviving link above six: the compact real form of the complexified correspondence is the real one, sitting inside the unitary group as its real locus.</p>
 <h3 id="what-the-upper-rungs-do-not-change">What the Upper Rungs Do Not Change</h3>
@@ -447,7 +447,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the two-dimensional generator $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>the two-dimensional generator $\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$R(\theta)$</td>
@@ -518,7 +518,7 @@ $$</p>
 </tr>
 <tr>
 <td>the logarithmic series is the local inverse</td>
-<td>$100$ samples with $\lVert X\rVert<\tfrac12\log2$</td>
+<td>$100$ samples with $\lVert X\rVert&lt;\tfrac12\log2$</td>
 <td>$4\times10^{-16}$ both ways</td>
 </tr>
 <tr>

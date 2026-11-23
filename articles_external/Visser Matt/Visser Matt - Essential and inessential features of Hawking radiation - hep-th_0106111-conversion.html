@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essential and inessential features of Hawking radiation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential and inessential features of Hawking radiation - hep-th_0106111.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="essential-and-inessential-features-of-hawking-radiation"><strong>Essential and inessential features of Hawking radiation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0106111v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 June 2001</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Essential and inessential features of Hawking radiation - hep-th_0106111-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential and inessential features of Hawking radiation - hep-th_0106111.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Essential and inessential features of Hawking radiation - hep-th_0106111.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper strips the derivation of Hawking radiation down to what is needed. Using Painlevé–Gullstrand coordinates, an eikonal approximation, and matching modes across a slowly evolving future apparent horizon, it recovers the thermal flux without the Einstein equations and without Bekenstein entropy. The author calls the two beliefs that radiation requires gravity, and that it implies entropy, myths produced by historical accident. The discussion lists what can be relaxed further and separates the kinematic content of the effect from the dynamical content that needs the field equations.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-myths">The two myths</h3>
+<p>"Perhaps the two most pernicious myths attached to this effect are: 'Hawking radiation has something to do with gravity', and, 'Hawking radiation automatically implies Bekenstein entropy'."</p>
+<h3 id="why-the-myths-arose">Why the myths arose</h3>
+<p>"These myths were engendered by two historical accidents: (1) the Hawking effect was first encountered within the context of general relativity, and (2) the fact that it was discovered shortly after the notion of Bekenstein entropy (geometric entropy) had been formulated."</p>
+<h3 id="the-minimal-requirements">The minimal requirements</h3>
+<p>"This article presents a 'minimalist' argument, and strips the derivation of as much excess baggage as possible. All that is really necessary is quantum physics plus a slowly evolving future apparent horizon (not an event horizon)."</p>
+<h3 id="the-strongest-statement">The strongest statement</h3>
+<p>"In particular, neither the Einstein equations nor Bekenstein entropy are necessary (nor even useful) in deriving Hawking radiation."</p>
+<h3 id="the-zeroth-law-caveat">The zeroth law caveat</h3>
+<p>"A tricky point for general analog model geometries is that without the Einstein equations, and something like the dominant energy condition, there is no longer any reason to believe in the zero'th law: the surface gravity and Hawking temperature can then in principle vary over different parts of the apparent horizon; these complications were suppressed in the current article via the simple expedient of enforcing spherical symmetry."</p>
+<h3 id="the-limit">The limit</h3>
+<p>"One obvious question is the use of spherical symmetry, which precludes direct application of the current approach to Kerr and other rotating black holes. This is a technical problem, not a fundamental problem, and working in axisymmetric geometries will be do-able but somewhat messier."</p>
+<h3 id="where-the-energy-comes-from">Where the energy comes from</h3>
+<p>"The general message is that the Hawking effect steals energy from whatever process is used to set up the effective geometry in question."</p>
+<h3 id="the-scope-claim">The scope claim</h3>
+<p>"Hawking radiation is not a test of quantum gravity. Instead, searching for Hawking radiation is a test of the general principles of quantum field theory in curved spacetimes."</p>
+<h3 id="the-reason-for-the-separation">The reason for the separation</h3>
+<p>"To start to address the dynamics of general relativity black holes one needs the Einstein equations (or some approximation thereto), in which case one can begin to discuss Bekenstein entropy (or some approximation thereto). This requires a whole extra layer of theoretical superstructure, and a key point of this paper is that it is important and useful to keep these notions logically distinct."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-radiation-needs-no-field-equations">1. Radiation needs no field equations</h3>
+<p><strong>The idea.</strong> Thermal emission follows from quantum field theory plus an apparent horizon, not from gravity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizons as geometric objects. This paper shows the horizon only has to be a place where modes pile up, which weakens the geometric demands the article makes. It also tells the article that the temperature need not be constant over the horizon.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on horizons.</p>
+<p><strong>What stands in the way.</strong> Spherical symmetry is assumed. Ranked first, because it changes what the article must assume.</p>
+<h3 id="2-temperature-and-entropy-are-separate">2. Temperature and entropy are separate</h3>
+<p><strong>The idea.</strong> The thermal flux does not entail an entropy, and the entropy requires extra structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> links the two. This paper says the link is a dynamical fact requiring the Einstein equations, so the article's derivation must show where it enters, or admit that it assumes the link.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The separation is argued, not proved. Ranked second.</p>
+<h3 id="3-apparent-not-event-horizons">3. Apparent, not event, horizons</h3>
+<p><strong>The idea.</strong> The relevant surface is the apparent horizon, which is local and does not need a global structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues against global definitions. This paper supplies a working example where the local definition does the whole job, which is the constructive counterpart to that argument.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The example uses spherical symmetry. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subluminal and Superluminal Solutions in Vacuum of the Maxwell Equations and the Massless Dirac Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Subluminal and superluminal solutions in vacuum of the Maxwell equations and the massless Dirac…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="subluminal-and-superluminal-solutions-in-vacuum-of-the-maxwell-equations-and-the-massless-dirac-equation"><strong>Subluminal and Superluminal Solutions in Vacuum of the Maxwell Equations and the Massless Dirac Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9511182v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>W. A. Rodrigues, Jr., J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 November 1995</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Subluminal and superluminal solutions in vacuum of the Maxwell equations and the massless Dirac equation - 9511182-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Subluminal and superluminal solutions in vacuum of the Maxwell equations and the massless Dirac equation - 9511182.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Subluminal and superluminal solutions in vacuum of the Maxwell equations and the massless Dirac equation - 9511182.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Exhibits free-field solutions of the Maxwell equations, and of the massless Dirac equation, that travel in vacuum at speeds other than $c$ — both below and above it — and then works out what each family costs. The solutions come from a Hertz potential built on a spherical Bessel seed, and the speed is a group velocity read from a dispersion relation whose sign decides the family. The paper is the earlier and blunter of the two Rodrigues–Vaz papers in this folder: it states the causal paradox for superluminal solutions and resolves it by giving up frame equivalence, and it proposes the subluminal family as a candidate for a particle with an effective mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We show that Maxwell equations and Dirac equation (with zero mass term) have both subluminal and superluminal solutions in vacuum. We also discuss the possible fundamental physical consequences of our results."</p>
+<p>The motivation is a gap in the standard proofs: "there is no formal proof based only on Maxwell equations that no electromagnetic wave packet can travel faster than the vacuum speed of light $c$". So "the main purpose of this paper is to show that Maxwell equations (and also the Dirac equation with zero mass) have superluminal solutions ($v&gt;1$) and also subluminal solutions ($v&lt;1$) in vacuum."</p>
+<h3 id="the-two-families">The two families</h3>
+<p>The seed is $\Phi=C\,(\sin\Omega\xi/\xi)\exp[\gamma^5(\omega t-kx)]$, and the radial coordinate decides the family: $\xi_&lt;^2=\gamma_&lt;^2((x-vt)^2+y^2+z^2)$ with $\gamma_&lt;=1/\sqrt{1-v^2}$ for subluminal, $\xi_&gt;^2=\gamma_&gt;^2((x-vt)^2-y^2-z^2)$ with $\gamma_&gt;=1/\sqrt{v^2-1}$ for superluminal.</p>
+<p>The dispersion relations are the point: $\omega^2-k^2=\Omega^2$ in one case and $\omega^2-k^2=-\Omega^2$ in the other. Hence "18) is a dispersion relation for a “particle” moving with velocity (here “group velocity”) v&lt; = dω/dk &lt; 1." particle "moving with velocity (here" group velocity) $v_&lt;=d\omega/dk&lt;1$.</p>
+<p>The field is obtained from the potential, and "the fact that $F_&lt;'$ satisfies Maxwell equations follows from the above theorem, but it has been explicitly verified using REDUCE".</p>
+<h3 id="what-is-unusual-about-the-invariants">What is unusual about the invariants</h3>
+<p>"see that F2 0 = F0 · F0 + F0 ∧ F0 6= 0, i.e, the field invariants are nonvanishing, differently of the usual solutions Fc of Maxwell equations that travel with constant speed c = 1 and for which F2 c = 0. To obtain"</p>
+<h3 id="the-three-consequences">The three consequences</h3>
+<p>(i) "If the superluminal solutions of at least Maxwell equations are realized in Nature we can have a breakdown of Lorentz invariance." The argument runs through the Tolman–Regge paradox: a superluminal signal is, in another frame, a signal into the past. The resolution offered is that the frames are not equivalent: "The possible solution is to say that $I$ and $I'$ are not physically equivalent", and an observer can then compute his velocity from the cutoff, $V=\omega'/\sqrt{\omega'^2+\Omega'^2}$.</p>
+<p>(ii) The subluminal family connects to the Dirac equation: "ecently [VR93,VR95] we proved that ∂F = 0 for F2 6= 0 is equivalent under certain conditions to a Dirac-Hestenes equation ∂ψΣγ1 γ2 + mψΣγ◦ = 0, where F = ψΣγ1 γ2 e ψΣ.". Then: "This means that eventually particles are special stationary electromagnetic waves and a de Broglie interpretation of quantum mechanics seems possible".</p>
+<p>(iii) The massless Dirac equation has the same two families, and "if neutrinos can be produced in the subluminal and superluminal modes" they "can eventually escape detection on earth after leaving the sun"; and "for neutrinos in a subluminal mode it would be possible to define a kind" <em>effective mass</em>.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-superluminal-solution-is-paid-for-with-a-preferred-frame">1. A superluminal solution is paid for with a preferred frame</h3>
+<p><strong>The idea.</strong> A <strong>trade</strong>: accepting superluminal free-field solutions forces a choice — either causality fails, or one frame is physically distinguished and an observer can measure his absolute velocity from the frequency cutoff, $V=\omega'/\sqrt{\omega'^2+\Omega'^2}$.</p>
+<p><strong>What it would add.</strong> The corpus's superluminal article resolves the issue the other way: it reads superluminality as a pattern speed of a finite packet, not a signalling speed, and so keeps Lorentz invariance. The corpus therefore holds one resolution and this paper holds the other, and the two cannot both be the whole story. Recording the alternative makes the corpus's position a choice rather than an assumption, and the formula for the absolute velocity is the sharpest form of the trade.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's pattern-speed reading is defensible and this paper's reading is not needed by the corpus's calculations; adopting it would cost Lorentz invariance, which the whole corpus assumes.</p>
+<h3 id="2-the-sign-of-the-dispersion-relation-is-the-regime">2. The sign of the dispersion relation is the regime</h3>
+<p><strong>The idea.</strong> A <strong>dictionary</strong>: $\omega^2-k^2=+\Omega^2$ is subluminal propagation and $\omega^2-k^2=-\Omega^2$ is superluminal, so the sign that a mass term would carry in a wave equation is here a label of the propagation regime rather than of a mass.</p>
+<p><strong>What it would add.</strong> The corpus treats the mass shell as a fixed invariant, $\tilde K\tilde K^\natural=-k_m^2$, with the sign of the constant tied to the signature. This says the same equation admits the opposite sign as a legitimate free-field solution of a massless equation. That is the cleanest statement in the folder of why "massive" and "subluminal" are not the same word, and the corpus has no article that separates them. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-field-strength-biquaternion-and-its-invariants.md</code>. </p>
+<p><strong>What stands in the way.</strong> The identification of the sign with the regime holds for this family of solutions only; a general field is not classified by one number, so the dictionary is a rule for a special ansatz. </p>
+<h3 id="3-the-two-families-are-one-family-under-a-boost">3. The two families are one family under a boost</h3>
+<p><strong>The idea.</strong> A <strong>remark with a consequence</strong>: the subluminal solution is boosted into the superluminal one, so <em>which family a solution belongs to</em> is a frame-dependent statement, not a property of the field. </p>
+<p><strong>What it would add.</strong> The corpus's boost article shows that a boost of a plane wave is a rotation and a dilation of its parameters. The same operation here moves a solution across the light cone of speeds. That makes the superluminal family less exotic than it looks — it is the boosted image of an ordinary one — and it warns against reading the family label as intrinsic. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The boost argument is stated in one line here,"it is necessary only to make a Lorentz boost in the x direction of the solution F0. Another", and the two families are not literally boosted into each other by a real transformation, since $v&gt;1$ has no rest frame; the remark needs care to survive.</p>
+<p>The rank: the preferred-frame trade first, because it is a genuine alternative to the corpus's reading; the dispersion-sign dictionary second, because it corrects a conflation; the boost remark last, because it is a one-line claim that needs qualifying.</p>
+<p>The remaining items in one line each: the explicit check of the field solution with REDUCE, which is the paper's only independent confirmation of its biggest formula; the Nimtz waveguide transmission at $4.7c$ cited as a laboratory instance, which is the pattern-speed case in a guide; and the admission that the fields are infinite-energy and need a packet with a frequency distribution, which defers the physical question to another paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

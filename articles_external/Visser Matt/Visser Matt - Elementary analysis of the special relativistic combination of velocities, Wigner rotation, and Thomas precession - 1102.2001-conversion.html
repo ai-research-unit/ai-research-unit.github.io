@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementary analysis of the special relativistic combination of velocities, Wigner rotation, and Thomas precession — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Elementary analysis of the special relativistic combination of velocities…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="elementary-analysis-of-the-special-relativistic-combination-of-velocities-wigner-rotation-and-thomas-precession"><strong>Elementary analysis of the special relativistic combination of velocities, Wigner rotation, and Thomas precession</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1102.2001v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Kane O'Donnell, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 11 June 2011 (dated 10 February 2011)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>European Journal of Physics 31 (2011) 1033–1047, as printed on the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Elementary analysis of the special relativistic combination of velocities, Wigner rotation, and Thomas precession - 1102.2001-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Elementary analysis of the special relativistic combination of velocities, Wigner rotation, and Thomas precession - 1102.2001.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Elementary analysis of the special relativistic combination of velocities, Wigner rotation, and Thomas precession - 1102.2001.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a pedagogical paper on combining velocities in special relativity, and on the Wigner rotation and Thomas precession that follow when boosts do not commute. It presents the same results at three levels: an elementary level for a first course, an intermediate level, and a more advanced level. It closes with a summary of useful formulas and suggestions for further reading. The aim is to make an obscure but basic part of relativity accessible at several depths.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-purpose">The purpose</h3>
+<p>"The purpose of this paper is to provide an elementary introduction to the qualitative and quantitative results of velocity combination in special relativity, including the Wigner rotat[ion]."</p>
+<h3 id="the-three-levels">The three levels</h3>
+<p>"[We present] arguments presented at three differing levels: (1) utterly elementary, which will suit a first course in relativity; (2) intermediate, to s[uit] ... level students."</p>
+<h3 id="the-summary-and-reading">The summary and reading</h3>
+<p>"We then give a summary of useful results, and suggest further reading in this often obscure field."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-non-commuting-boosts-have-a-residue">1. Non-commuting boosts have a residue</h3>
+<p><strong>The idea.</strong> Two boosts in different directions are not a boost; a rotation remains.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> builds transformations from algebraic products. Whether the framework's boosts close without a leftover rotation is a sharp algebraic question this paper makes concrete.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of transformations.</p>
+<p><strong>What stands in the way.</strong> The paper is pedagogical and does not address algebra. Ranked first, because it turns a general worry into a testable property.</p>
+<h3 id="2-three-levels-for-one-result">2. Three levels for one result</h3>
+<p><strong>The idea.</strong> The same theorem can be proved at several levels of sophistication.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would profit from separating what is understood deeply from what is merely asserted. The three-level format is a model for that.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is a presentational device. Ranked second.</p>
+<h3 id="3-precession-from-kinematics-alone">3. Precession from kinematics alone</h3>
+<p><strong>The idea.</strong> Thomas precession follows from velocity composition, with no dynamics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> could note that some rotation effects are purely kinematical, so any framework must reproduce them before dynamics is discussed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The result is standard and not specific to the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

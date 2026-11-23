@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From wormhole to time machine: comments on Hawking&#x27;s Chronology Protection Conjecture — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From wormhole to time machine - Comments on Hawking&#x27;s Chronology Protection…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-wormhole-to-time-machine-comments-on-hawkings-chronology-protection-conjecture"><strong>From wormhole to time machine: comments on Hawking's Chronology Protection Conjecture</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9202090v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 8 October 1992 (received 26 February 1992)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>37 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - From wormhole to time machine - Comments on Hawking's Chronology Protection Conjecture - hep-th_9202090-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From wormhole to time machine - Comments on Hawking's Chronology Protection Conjecture - hep-th_9202090.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From wormhole to time machine - Comments on Hawking's Chronology Protection Conjecture - hep-th_9202090.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Hawking's Chronology Protection Conjecture says time machines cannot form. Visser examines the mechanisms that might enforce it, working through simple models with adiabatic and Casimir-type calculations. He finds that vacuum polarisation, disruption of the wormhole, and gravitational back reaction all act in the relevant parameter ranges, and that back reaction grows large before the Planck cutoff is reached. He calls this a defence in depth. The discussion generalises the observation: any spacetime of nontrivial topology contains closed spacelike geodesics, and the universe reacts badly when such a geodesic shrinks to zero length.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"The recent interest in 'time machines' has been largely fueled by the apparent ease with which such systems may be formed in general relativity, given relatively benign initial conditions such as the existence of traversable wormholes or of infinite cosmic strings."</p>
+<h3 id="the-conjecture">The conjecture</h3>
+<p>"This rather disturbing state of affairs has led Hawking to formulate his Chronology Protection Conjecture, whereby the formation of 'time machines' is forbidden."</p>
+<h3 id="the-thesis">The thesis</h3>
+<p>"This paper will use several simple examples to argue that the universe appears to exhibit a 'defense in depth' strategy in this regard. For appropriate parameter regimes Casimir effects, wormhole disruption effects, and gravitational back reaction effects all contribute to the fight against time travel."</p>
+<h3 id="the-key-result">The key result</h3>
+<p>"Particular attention is paid to the role of the quantum gravity cutoff. For the class of model problems considered it is shown that the gravitational back reaction becomes large before the Planck scale quantum gravity cutoff is reached, thus supporting Hawking's conjecture."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"These calculations suggest that the universe exhibits a defense in depth strategy with respect to global causality violations. Effects contributing to the hoped for inability to manufacture a time machine include vacuum polarization effects, wormhole disruption effects, and the gravitational back reaction induced by the vacuum expectation value of the renormalized stress–energy tensor."</p>
+<h3 id="the-generalisation">The generalisation</h3>
+<p>"the general result to be abstracted from this analysis is that: (1) any spacetime of nontrivial topology contains closed (spacelike) geodesics. (2) It appears that the universe reacts badly to closed spacelike geodesics attempting to shrink to invariant length zero."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"I would conclude by saying that the available evidence now seems to favour Hawking's Chronology Protection Conjecture. Both the experimental evidence (the nonappearance of hordes of tourists from the future) and the theoretical computations now support this conjecture. Paraphrasing Hawking, it seems that the universe is indeed safe for historians."</p>
+<h3 id="what-it-buys-for-wormholes">What it buys for wormholes</h3>
+<p>"Perhaps most importantly, the single most serious objection to the existence of traversable wormholes has always been the apparent ease with which they might be converted into time machines. Thus adopting Hawking's Chronology Protection Conjecture immediately disposes of the single most serious objection against the existence of traversable wormholes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-back-reaction-arrives-before-the-cutoff">1. Back reaction arrives before the cutoff</h3>
+<p><strong>The idea.</strong> The gravitational response grows large before Planck-scale physics is reached, so the question never arises.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> locates the barrier in the causal structure. This paper shows the barrier may be enforced dynamically, before any new physics, which gives the article a mechanism rather than a postulate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of enforcement.</p>
+<p><strong>What stands in the way.</strong> The calculation is model-dependent. Ranked first, because it converts a postulate into a mechanism.</p>
+<h3 id="2-nontrivial-topology-implies-closed-geodesics">2. Nontrivial topology implies closed geodesics</h3>
+<p><strong>The idea.</strong> Any spacetime with nontrivial topology contains closed spacelike geodesics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> treats the topology of the framework's geometry. This is a general constraint on what topologies are admissible, and the article should state whether its constructions obey it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of topology.</p>
+<p><strong>What stands in the way.</strong> The statement concerns classical Lorentzian geometry. Ranked second.</p>
+<h3 id="3-chronology-protection-rescues-wormholes">3. Chronology protection rescues wormholes</h3>
+<p><strong>The idea.</strong> If time machines cannot form, the main objection to traversable wormholes is removed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> mentions wormhole-like constructions. A protection argument makes them viable, which changes the status of such examples from curiosities to candidates.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the examples.</p>
+<p><strong>What stands in the way.</strong> The argument rests on an unproved conjecture. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

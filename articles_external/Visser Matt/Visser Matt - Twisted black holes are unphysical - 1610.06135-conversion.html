@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&quot;Twisted&quot; black holes are unphysical — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Twisted black holes are unphysical - 1610.06135.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="twisted-black-holes-are-unphysical"><strong>"Twisted" black holes are unphysical</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1610.06135v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Finnian Gray, Jessica Santiago, Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 October 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Twisted black holes are unphysical - 1610.06135-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Twisted black holes are unphysical - 1610.06135.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Twisted black holes are unphysical - 1610.06135.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A recent proposal introduced "twisted" black holes. The authors show these are variants of Taub–NUT spacetimes. They are Ricci flat, so they solve the vacuum equations, but they carry the usual Taub–NUT pathologies. The paper lists these features and argues the spacetimes are unphysical. The lesson is that solving the field equations is not enough.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-under-review">The claim under review</h3>
+<p>"So-called 'twisted' black holes have recently been proposed by Zhang (1609.09721 [gr-qc]), and further considered by Chen and Jing (1610.00886 [gr-qc]), and more recently by Ong (1610.05757 [gr-qc])."</p>
+<h3 id="the-identification">The identification</h3>
+<p>"While these spacetimes are certainly Ricci-flat, and so mathematically satisfy the vacuum Einstein equations, they are also merely minor variants on Taub–NUT spacetimes."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"Consequently they exhibit several unphysical features that make them quite unre[asonable]"</p>
+<h3 id="the-general-lesson">The general lesson</h3>
+<p>"As mathematics, the Taub–NUT spacetimes are interesting examples of what can go wrong in general relativity if one blindly applies the field equations in isolation, without checking other features of the proposed spacetime."</p>
+<h3 id="the-final-judgement">The final judgement</h3>
+<p>"As astrophysics, the 'twisted' black holes [are not viable]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-ricci-flat-is-not-enough">1. Ricci flat is not enough</h3>
+<p><strong>The idea.</strong> Satisfying the field equations is necessary, not sufficient, for a physical spacetime.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a sharp test case: a solution that passes the equation test and fails the physical one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The pathologies are specific to Taub–NUT. Ranked first, because it is the framework's own vulnerability.</p>
+<h3 id="2-old-solutions-in-new-clothes">2. Old solutions in new clothes</h3>
+<p><strong>The idea.</strong> A "new" solution may be a relabelling of a known one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would gain a warning about novelty claims.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The identification needs care. Ranked second.</p>
+<h3 id="3-nut-charges-and-closed-timelike-curves">3. NUT charges and closed timelike curves</h3>
+<p><strong>The idea.</strong> Some solutions contain pathologies that no amount of algebra fixes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> would gain a case where causality fails outright.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of failures.</p>
+<p><strong>What stands in the way.</strong> The pathologies are exotic. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

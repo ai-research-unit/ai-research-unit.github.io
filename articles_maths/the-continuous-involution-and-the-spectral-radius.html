@@ -84,7 +84,7 @@ $$</p>
 <p>$$
 r(x) \leq \lVert x\rVert, \qquad r(\lambda x) = \lvert\lambda\rvert\,r(x), \qquad r(xy) = r(yx), \qquad r(x^{*}) = r(x) .
 $$</p>
-<p><em>Proof.</em> The first is the standard bound $\lvert\lambda\rvert \leq \lVert x\rVert$ for $\lambda \in \sigma(x)$, from the convergence of the Neumann series $\sum_n x^{n}/\lambda^{n+1}$ for $\lvert\lambda\rvert > \lVert x\rVert$, by <em>Topological Algebras and Banach Algebras</em>; the second is $\sigma(\lambda x) = \lambda\sigma(x)$ for a central scalar $\lambda$; the third is $1 - xy$ invertible iff $1 - yx$ invertible with $(1-xy)^{-1} = 1 + x(1-yx)^{-1}y$, which gives $\sigma(xy) \setminus \{0\} = \sigma(yx) \setminus \{0\}$; the last is proved below, and is recorded here for the completeness of the list.</p>
+<p><em>Proof.</em> The first is the standard bound $\lvert\lambda\rvert \leq \lVert x\rVert$ for $\lambda \in \sigma(x)$, from the convergence of the Neumann series $\sum_n x^{n}/\lambda^{n+1}$ for $\lvert\lambda\rvert &gt; \lVert x\rVert$, by <em>Topological Algebras and Banach Algebras</em>; the second is $\sigma(\lambda x) = \lambda\sigma(x)$ for a central scalar $\lambda$; the third is $1 - xy$ invertible iff $1 - yx$ invertible with $(1-xy)^{-1} = 1 + x(1-yx)^{-1}y$, which gives $\sigma(xy) \setminus \{0\} = \sigma(yx) \setminus \{0\}$; the last is proved below, and is recorded here for the completeness of the list.</p>
 <p><strong>Theorem (the radius formula).</strong> The spectral radius is the limit</p>
 <p>$$
 \boxed{\;r(x) = \lim_{n}\lVert x^{n}\rVert^{1/n} = \inf_{n \geq 1}\lVert x^{n}\rVert^{1/n}\;},
@@ -156,7 +156,7 @@ $$</p>
 <h3 id="the-radius-is-not-a-norm">The Radius Is Not a Norm</h3>
 <p><strong>Remark (which axioms hold).</strong> The spectral radius is homogeneous, $r(\lambda x) = \lvert\lambda\rvert r(x)$, it is bounded by the norm, $r(x) \leq \lVert x\rVert$, it is invariant on the spectral side of a product, $r(xy) = r(yx)$, and the derived square has $r(x \star x) = \lVert x\rVert^{2}$, the identity $r(x \star x) = r(x)^{2}$ holding exactly for the normal elements. It is nevertheless neither subadditive nor submultiplicative in the noncommutative case: for the two nilpotents</p>
 <p>$$
-N = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \qquad N^{\mathsf{T}} = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
+N = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}, \qquad N^{\mathsf{T}} = \begin{pmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{pmatrix},
 $$</p>
 <p>one has $r(N) = r(N^{\mathsf{T}}) = 0$ while $r(N + N^{\mathsf{T}}) = r(NN^{\mathsf{T}}) = 1$, so neither $r(x+y) \leq r(x)+r(y)$ nor $r(xy) \leq r(x)r(y)$ survives the loss of commutativity; the witness is <em>The Involution and the Spectral Radius</em>, §<em>Rigidity</em>. Hence $r$ is a norm only on the commutative semisimple algebra, where Gelfand duality makes it the sup norm; in general it is not a norm but the constituent of the formula $\lVert x\rVert = r(x \star x)^{1/2}$, whose kernel is the set of quasi-nilpotent elements and which is a norm exactly because the derived square is taken before the radius.</p>
 <h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
@@ -169,7 +169,7 @@ $$</p>
 <h3 id="the-real-matrices">The Real Matrices</h3>
 <p><strong>Example (the bilinear kind).</strong> Let $R = \mathbb{R}$ with $\varsigma = \mathrm{id}$ and $A = M_{n}(\mathbb{R})$ with the transpose and the operator norm. The involution is isometric and the object is a $\mathrm{C}^{*}$-sesqualgebra; the spectrum is fixed by the involution, $\sigma(X^{\mathsf{T}}) = \sigma(X)$, and a symmetric $X$ has real spectrum with $\lVert X\rVert = r(X)$, while a general normal real matrix need not have real spectrum: the rotation</p>
 <p>$$
-R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}
+R = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}
 $$</p>
 <p>satisfies $R^{\mathsf{T}}R = RR^{\mathsf{T}} = 1$, so it is normal and unitary with $\lVert R\rVert = r(R) = 1$, and its spectrum is $\{\pm i\} \subseteq \mathbb{C} \setminus \mathbb{R}$; the spectrum of a self-adjoint element is real, and $R$ is not self-adjoint, $R^{\mathsf{T}} = -R$. The example separates the two clauses of the collapse: the twist of the spectrum is the identity map, and the radius is still the norm of a normal element, the spectrum being read in $\mathbb{C}$ although the scalars and the matrices are real.</p>
 <h3 id="the-group-algebra">The Group Algebra</h3>

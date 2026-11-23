@@ -133,11 +133,11 @@ $$</p>
 <p><strong>Corollary.</strong> The simple nilpotents are homogeneous of degree one for the <strong>flag grading</strong> by the difference of the indices: $N_k$ carries the pair $(k,k+1)$, and the product $N_jN_k$ is nonzero exactly when the pairs are consecutive, carrying the pair $(j,k+1)$.</p>
 <p><strong>Proof.</strong> The product rule of the matrix units is the rule for the composition of the elementary steps of the flag.</p>
 <h3 id="the-composites">The Composites</h3>
-<p><strong>Theorem.</strong> For $i<j$,</p>
+<p><strong>Theorem.</strong> For $i&lt;j$,</p>
 <p>$$
 E_{ij}=N_iN_{i+1}\cdots N_{j-1},
 $$</p>
-<p>and for $i>j$,</p>
+<p>and for $i&gt;j$,</p>
 <p>$$
 E_{ij}=N_{i-1}^{-}N_{i-2}^{-}\cdots N_j^{-},
 $$</p>
@@ -201,9 +201,9 @@ N_k\longmapsto\lambda_kN_k .
 $$</p>
 <p>The action on a composite is</p>
 <p>$$
-E_{ij}\longmapsto\Bigl(\prod_{k=i}^{j-1}\lambda_k\Bigr)E_{ij}\quad(i<j),
+E_{ij}\longmapsto\Bigl(\prod_{k=i}^{j-1}\lambda_k\Bigr)E_{ij}\quad(i&lt;j),
 \qquad
-E_{ij}\longmapsto\Bigl(\prod_{k=j}^{i-1}\lambda_k\Bigr)^{-1}E_{ij}\quad(i>j).
+E_{ij}\longmapsto\Bigl(\prod_{k=j}^{i-1}\lambda_k\Bigr)^{-1}E_{ij}\quad(i&gt;j).
 $$</p>
 <p><strong>Proof.</strong> The four equations $t_k/t_{k+1}=\lambda_k$ determine $t$ from $t_1$ by $t_{k+1}=t_k/\lambda_k$; the common scale $t_1$ is immaterial, so the map is an isomorphism onto $(\mathbb{C}^\times)^4$. The action on $E_{k,k+1}$ is the definition of $\lambda_k$ and the proposition on the matrix units. The composite is the product of the simple ones, and the scaling is multiplicative.</p>
 <p><strong>Corollary (the cocycle).</strong> The scalings of the composites are fixed by the four $\lambda_k$ and satisfy</p>
@@ -234,14 +234,14 @@ $$</p>
 <p><strong>Remark.</strong> <strong>The count $20+4=24$ is the whole count of the frame, and it is not $20+5$.</strong> The naive count of five vector rescalings overcounts by the common scalar, which acts trivially. The correct count is four, the dimension of $T$. The four $\lambda_k$ are a convenient set of coordinates on $T$; the five $t_i$ are redundant by the common scale.</p>
 <h3 id="the-real-gauge">The Real Gauge</h3>
 <p>The trace form of <em>The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</em> is positive definite, and in an <strong>orthonormal</strong> spectral frame the gauge parameters of the $*$-unitary structure satisfy $|t_k|=1$. The compact gauge is then the real torus $U(1)^4$, of real dimension $4$. The complex gauge $(\mathbb{C}^\times)^4$ is the algebraic gauge; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-$*$-unitary part of the algebraic gauge. The distinction is used in <em>The Polar Decomposition of $M_5(\mathbb{C})$</em> and <em>The Exponential and the Lie Group of $M_5(\mathbb{C})$</em>.</p>
-<p><strong>Proof.</strong> A diagonal matrix $D_t$ is $*$-unitary exactly when $|t_k|=1$ for every $k$; the quotient by the common scalar has real dimension $4$. The complex torus $(\mathbb{C}^\times)^4$ has real dimension $8$, and the modulus map $(\mathbb{C}^\times)^4\to(\mathbb{R}_{>0})^4$ is the four-dimensional non-$*$-unitary part.</p>
+<p><strong>Proof.</strong> A diagonal matrix $D_t$ is $*$-unitary exactly when $|t_k|=1$ for every $k$; the quotient by the common scalar has real dimension $4$. The complex torus $(\mathbb{C}^\times)^4$ has real dimension $8$, and the modulus map $(\mathbb{C}^\times)^4\to(\mathbb{R}_{&gt;0})^4$ is the four-dimensional non-$*$-unitary part.</p>
 <h2 id="worked-example">Worked Example</h2>
 <h3 id="the-standard-frame">The Standard Frame</h3>
 <p>Take $v_i=e_i$, the standard basis, so $E_{ij}$ is the standard matrix unit. The four simple nilpotents are</p>
 <p>$$
-N_1=E_{12}=\begin{pmatrix}0&1&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\end{pmatrix},
+N_1=E_{12}=\begin{pmatrix}0&amp;1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\end{pmatrix},
 \qquad
-N_4=E_{45}=\begin{pmatrix}0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&1&0\end{pmatrix},
+N_4=E_{45}=\begin{pmatrix}0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1&amp;0\end{pmatrix},
 $$</p>
 <p>and $N_2=E_{23}$, $N_3=E_{34}$ are the two intermediate units. The composites are</p>
 <p>$$
@@ -267,7 +267,7 @@ $$</p>
 <p>and the fifth ratio $t_5/t_1=1/210$ is the inverse product, not an independent parameter.</p>
 <p><strong>Remark.</strong> The uniform choice $\lambda_1=\lambda_2=\lambda_3=\lambda_4=\lambda$ is the one-parameter subgroup $t_k=\lambda^{-(k-1)}$; it rescales $E_{ij}$ by $\lambda^{j-i}$. It is a single direction inside the four-dimensional gauge, not a fifth parameter. The general gauge is the four-dimensional torus, and the uniform direction is its diagonal.</p>
 <h2 id="summary">Summary</h2>
-<p>A frame is an ordered basis, and it produces the matrix units $E_{ij}=v_iv_j^{\vee}$ with the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The simple nilpotents $N_k=E_{k,k+1}$, $k=1,2,3,4$, are square-zero, and every composite is a product of consecutive simple ones, $E_{ij}=N_iN_{i+1}\cdots N_{j-1}$ for $i<j$.</p>
+<p>A frame is an ordered basis, and it produces the matrix units $E_{ij}=v_iv_j^{\vee}$ with the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The simple nilpotents $N_k=E_{k,k+1}$, $k=1,2,3,4$, are square-zero, and every composite is a product of consecutive simple ones, $E_{ij}=N_iN_{i+1}\cdots N_{j-1}$ for $i&lt;j$.</p>
 <p>The gauge is the conjugation by $D_t=\sum_it_iE_{ii}$; it acts by $E_{ij}\mapsto(t_i/t_j)E_{ij}$, fixes every diagonal idempotent, and has effective group $(\mathbb{C}^\times)^4$. The four parameters are</p>
 <p>$$
 \lambda_k=\frac{t_k}{t_{k+1}},\qquad k=1,2,3,4,

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauge Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Gauge_theory.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gauge-theory"><strong>Gauge Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Gauge theory</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Gauge_theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Gauge_theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Gauge_theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on gauge theory: a field theory whose Lagrangian is invariant under local transformations forming a Lie group, the reading of "gauge" as redundancy of description rather than a physical symmetry, the resulting gauge field and covariant derivative, and the standard examples from electromagnetism to the Standard Model. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"a gauge theory is a type of field theory in which the Lagrangian, and hence the dynamics of the system itself, does not change under local transformations according to certain smooth families of operations (Lie groups). Formally, the Lagrangian is invariant under these transformations."</p>
+<h3 id="what-gauge-means">What "gauge" means</h3>
+<p>"The term 'gauge' refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian of a physical system. The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group."</p>
+<p>That sentence is the article's most important one: the gauge symmetry is a redundancy, so the group acts on descriptions and not on states. A physical configuration is an orbit, not a point.</p>
+<h3 id="the-consequence">The consequence</h3>
+<p>Because the invariance is local, the ordinary derivative must be replaced by a covariant one, which introduces a field transforming in the adjoint representation. That field is the gauge field, and its quanta are the force carriers.</p>
+<p>"Definitions in this section: gauge group, gauge field, interaction Lagrangian, gauge boson."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-redundancy-is-the-content-and-it-forces-a-connection">1. Redundancy is the content, and it forces a connection</h3>
+<p><strong>The idea.</strong> Local invariance is not a symmetry to be broken but a statement that two field configurations are the same physics. Demanding that the Lagrangian be blind to the difference forces a connection, and the connection is the gauge field. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A derivation of the gauge field from the redundancy instead of a postulate of it, which is what the corpus's gauge-freedom article asserts without deriving.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.md</code>, in the opening.</p>
+<p><strong>What stands in the way.</strong> The corpus's gauge freedom arises from the algebra's structure rather than from a choice of local frame; the two origins would have to be shown to coincide.</p>
+<h3 id="2-fixing-a-gauge-is-a-choice-and-physics-must-not-depend-on-it">2. Fixing a gauge is a choice, and physics must not depend on it</h3>
+<p><strong>The idea.</strong> Every computation requires a gauge choice, the results must be independent of it, and the independence is a theorem for observables rather than an automatic property of intermediate steps. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A standard for the corpus's gauge-fixing steps, which present a choice and rarely state why the answer is unaffected.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the definition, the redundancy reading, the covariant derivative and the examples are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

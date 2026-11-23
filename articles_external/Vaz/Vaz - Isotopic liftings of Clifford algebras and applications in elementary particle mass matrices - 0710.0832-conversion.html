@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isotopic Liftings of Clifford Algebras and Applications in Elementary Particle Mass Matrices — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Isotopic liftings of Clifford algebras and applications in elementary particle mass matrices -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="isotopic-liftings-of-clifford-algebras-and-applications-in-elementary-particle-mass-matrices"><strong>Isotopic Liftings of Clifford Algebras and Applications in Elementary Particle Mass Matrices</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0710.0832v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. da Rocha, J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 October 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Isotopic liftings of Clifford algebras and applications in elementary particle mass matrices - 0710.0832-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Isotopic liftings of Clifford algebras and applications in elementary particle mass matrices - 0710.0832.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Isotopic liftings of Clifford algebras and applications in elementary particle mass matrices - 0710.0832.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a second multiplication on a Clifford algebra, one that uses an arbitrary fixed element as its unit, and calls the element an isounit. With the new product the algebra's Lie structure is deformed, and the deformed $\mathfrak{su}(6)$ is used for the flavour symmetry of the six quarks. The claim that follows is unusual: the symmetry is exact once the isounit is allowed to be a function of the six quark masses, so measured quark masses constrain the geometry of the algebra rather than the other way round.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"Isotopic liftings of algebraic structures are investigated in the context of Clifford algebras, where it is defined a new product involving an arbitrary, but fixed, element of the Clifford algebra. This element acts as the unit with respect to the introduced product, and is called isounit."</p>
+<p>"We construct isotopies in both associative and non-associative arbitrary algebras, and examples of these constructions are exhibited using Clifford algebras, which although associative, can generate the octonionic, non-associative, algebra."</p>
+<h3 id="the-isocommutator">The isocommutator</h3>
+<p>The lifted Lie bracket is defined by the deformed product, $[\psi_i,\psi_j]_\zeta:=\psi_i\diamond\psi_j-\psi_j\diamond\psi_i=c^k{}_{ij}\psi_k$, with "isostructure constants" replacing the structure constants. The deformed product still satisfies a Clifford-type relation,</p>
+<p>$$\psi\diamond\varphi+\varphi\diamond\psi=2g(\psi,\varphi)\zeta ,$$</p>
+<p>so the symmetry of the product survives the deformation even though its unit does not stay the identity.</p>
+<h3 id="the-physical-claim">The physical claim</h3>
+<p>"The flavor hadronic symmetry of the six u,d,s,c,b,t quarks is shown to be exact, when the generators of the isotopic Lie algebra su(6) are constructed, and the unit of the isotopic Clifford algebra is shown to be a function of the six quark masses. The limits"</p>
+<p>"The limits constraining the parameters, that are entries of the representation of the isounit in the isotopic group $SU(6)$, are based on the most recent limits imposed on quark masses."</p>
+<h3 id="what-the-authors-think-it-shows">What the authors think it shows</h3>
+<p>"It illustrates how phenomenological data concerning quark masses can constrain the geometry of spacetime". And, at the end: "We assert that the formulation of other theories in isospace can bring a new class of solutions of open questions in theoretical physics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-exact-symmetry-with-a-mass-dependent-unit">1. An exact symmetry with a mass-dependent unit</h3>
+<p><strong>The idea.</strong> A <strong>device</strong>: a symmetry that is broken by mass differences in the ordinary algebra can be made exact by moving the masses into the unit of the algebra. The group is then the same group, with a deformed product, and the breaking has become a change of unit.</p>
+<p><strong>What it would add.</strong> The corpus's generations article asks why there are three families and treats mass matrices as data. This offers a third position: the flavour symmetry is exact, and what looks like breaking is the isounit. That is a genuinely different response to the family problem — not a prediction of the number of families, but a redefinition that makes the observed pattern consistent. It is worth recording precisely because it is the kind of move the corpus's own algebraic rewritings could make and has not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> A symmetry made exact by absorbing the breaking into the unit is exact by construction, so the device has no falsifiable content unless the isounit is independently constrained — which here it is not.</p>
+<h3 id="2-the-mass-matrix-is-a-multiple-of-the-identity-in-isospace">2. The mass matrix is a multiple of the identity, in isospace</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: in the isotopic algebra the mass matrices collapse to a multiple of the identity operator, so the whole content of the mass matrix is carried by the isounit rather than by the matrix.</p>
+<p><strong>What it would add.</strong> The corpus's articles on mass matrices and on the scalar sector work with non-trivial matrices whose entries are fitted. A statement that the matrix is trivial once the unit is deformed is the strongest possible simplification, and it is testable in principle: if the isounit reproduces the measured masses, the matrix structure was never doing work.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-scalar-sector-and-the-leptoquark-bounds.md</code>.</p>
+<p><strong>What stands in the way.</strong> The collapse is a restatement of the deformation, not a derivation from it; and the corpus's mass matrices carry mixing angles, which a scalar multiple cannot.</p>
+<h3 id="3-clifford-algebras-can-generate-non-associativity">3. Clifford algebras can generate non-associativity</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: an associative algebra, deformed by an isounit, produces a non-associative structure — the paper exhibits the octonionic algebra this way — so non-associativity can be reached from an associative starting point without postulating it.</p>
+<p><strong>What it would add.</strong> The corpus treats the octonions and the biquaternions as separate algebras with separate articles. A route that produces one from the other by changing the product would let the corpus's algebra-comparison articles state a relation instead of a contrast, and the corpus has a non-associativity article (on the octonionic side) that could use exactly this device.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The generation of the octonions here is exhibited as an example rather than proved as a theorem, and the corpus's non-associativity article is about a specific geometric bundle rather than about algebraic deformations.</p>
+<p>The rank: the mass-dependent unit first, because it is a distinct answer to a corpus question; the trivial mass matrix second, because it is a sharp claim; the non-associativity route last, because it is an example.</p>
+<p>The remaining items in one line each: the deformed product's retention of a symmetric bilinear form, which is what keeps the geometry usable after deformation; the exterior-algebra isotopy, which extends the device beyond Clifford algebras and is where the formalism claims generality; and the appendix's explicit Clifford generators of $\mathfrak{su}(6)$, which is the part of the paper a reader could actually check.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

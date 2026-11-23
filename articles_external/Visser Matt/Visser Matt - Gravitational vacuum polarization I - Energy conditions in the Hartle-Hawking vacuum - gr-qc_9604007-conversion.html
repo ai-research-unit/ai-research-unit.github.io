@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational vacuum polarization I: Energy conditions in the Hartle–Hawking vacuum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization I - Energy conditions in the Hartle-Hawking…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-vacuum-polarization-i-energy-conditions-in-the-hartlehawking-vacuum"><strong>Gravitational vacuum polarization I: Energy conditions in the Hartle–Hawking vacuum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9604007v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 April 1996</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravitational vacuum polarization I - Energy conditions in the Hartle-Hawking vacuum - gr-qc_9604007-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization I - Energy conditions in the Hartle-Hawking vacuum - gr-qc_9604007.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization I - Energy conditions in the Hartle-Hawking vacuum - gr-qc_9604007.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is the first of four papers mapping where and by how much semiclassical energy conditions fail. It works in the test-field limit for a conformally coupled massless scalar in Schwarzschild spacetime, using the Hartle–Hawking vacuum. Analytical and numerical techniques are combined, and the Page approximation is compared against the numerical work of Anderson, Hiscock, and Samuel. The violations fall into onion-like layers between the unstable photon orbit and the horizon, in the order dominant, weak, then null and strong. Trapped null geodesics can also violate the averaged condition.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"when a quantum field theory is constructed on a curved background spacetime, the gravitationally induced vacuum polarization typically induces a non-zero vacuum expectation value for the quantum stress-energy tensor. It is well-known that this gravitational vacuum polarization often violates the point-wise energy conditions and sometimes violates the averaged energy conditions. In this paper I begin a systematic attack on the question of where and by how much the various energy conditions are violated."</p>
+<h3 id="the-restricted-setting">The restricted setting</h3>
+<p>"To keep the discussion manageable, I work in the test-field limit, and focus on conformally coupled massless scalar fields in Schwarzschild spacetime, using the Hartle–Hawking vacuum."</p>
+<h3 id="the-layers">The layers</h3>
+<p>"I show that the various point-wise energy conditions are violated in a series of onion-like layers located between the unstable photon orbit and the event horizon, the sequence of violations being DEC, WEC, and (NEC+SEC)."</p>
+<h3 id="the-averaged-condition">The averaged condition</h3>
+<p>"Furthermore the ANEC is violated for some of the null geodesics trapped in this region."</p>
+<h3 id="the-broader-fact">The broader fact</h3>
+<p>"it is now abundantly clear that, in the test-field limit, semiclassical quantum fields do not generally satisfy the ANEC: Indeed ANEC violations are related to the existence of a non-zero scale anomaly"</p>
+<h3 id="the-spatial-summary">The spatial summary</h3>
+<p>"Inside the event horizon ... almost any energy condition you can think of will be violated. ... Between the event horizon ($r=2M$) and the unstable photon orbit ($r=3M$) many of the energy conditions are violated, in a series of onion-like layers. ... Outside the unstable photon orbit ($r=3M$) all energy conditions are satisfied."</p>
+<h3 id="the-self-assessment">The self-assessment</h3>
+<p>"The analysis presented herein is somewhat of an attempt to crack a walnut with a sledgehammer in the sense that it is a collection of rather general techniques applied to a rather particular problem"</p>
+<h3 id="the-caution-about-freedom">The caution about freedom</h3>
+<p>"even though the various energy conditions are violated in many regions, this does not give one a completely free hand to design spacetime geometries to taste: It seems quite likely that the 'quantum inequality' approach of Ford and Roman [39,40] will allow us to place constraints on spacetime geometries even if all the usual types of energy condition fail."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-violations-come-in-ordered-layers">1. Violations come in ordered layers</h3>
+<p><strong>The idea.</strong> Different energy conditions fail in nested regions, in a fixed order.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the near-horizon region as one zone. A layered structure means the thermodynamic bookkeeping must be regional, not global.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the near-horizon region.</p>
+<p><strong>What stands in the way.</strong> The result is numerical and specific to one vacuum state. Ranked first, because it changes how the article divides its domain.</p>
+<h3 id="2-the-photon-orbit-marks-a-boundary">2. The photon orbit marks a boundary</h3>
+<p><strong>The idea.</strong> The unstable photon orbit at $r=3M$ separates the violating region from the clean one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats only the horizon as special. A second special surface, defined by light propagation rather than by trapping, deserves a place in the classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The author calls the evidence suggestive but not definitive. Ranked second.</p>
+<h3 id="3-quantum-inequalities-instead-of-energy-conditions">3. Quantum inequalities instead of energy conditions</h3>
+<p><strong>The idea.</strong> Even with all conditions failing, bounds on negative energy may still restrict geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> rests on energy conditions. If those fail, the catalogue needs a replacement constraint, and this is the candidate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The author only expects such bounds. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

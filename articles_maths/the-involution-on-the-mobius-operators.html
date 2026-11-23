@@ -78,7 +78,7 @@
 <h3 id="the-operators">The Operators</h3>
 <p><strong>Definition.</strong> The <strong>Möbius operators</strong> are the maps of the Riemann sphere</p>
 <p>$$
-M_A(z) = \frac{az + b}{cz + d}, \qquad A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in GL_2(\mathbb{C}) ,
+M_A(z) = \frac{az + b}{cz + d}, \qquad A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \in GL_2(\mathbb{C}) ,
 $$</p>
 <p>extended to the sphere by $M_A(\infty) = a/c$ and $M_A(-d/c) = \infty$; two matrices give the same map exactly when they differ by a scalar, so the Möbius group is the projective group $PGL_2(\mathbb{C}) = PSL_2(\mathbb{C})$, and it is the group of all the bijections of the sphere preserving the cross ratio. The Möbius operators are the operators of <em>The Möbius Transformation as an Operator</em>, and they act on the upper half-plane as the isometries of the hyperbolic plane.</p>
 <p><strong>Proposition.</strong> The Möbius operators form a group under the composition, $M_A \circ M_B = M_{AB}$, the inverse is $M_{A^{-1}}$, and the group acts triply transitively on the sphere; the cross ratio $[z_1:z_2:z_3:z_4]$ is invariant, the circle group of the sphere is preserved, and the classification of the operators by the trace of the matrix is that of the elliptic, parabolic and hyperbolic elements.</p>
@@ -102,7 +102,7 @@ $$</p>
 $$</p>
 <p>which on the matrix is the entrywise complex conjugation,</p>
 <p>$$
-\sigma(M_A) = M_{\bar A}, \qquad \bar A = \begin{pmatrix} \bar a & \bar b \\ \bar c & \bar d \end{pmatrix} .
+\sigma(M_A) = M_{\bar A}, \qquad \bar A = \begin{pmatrix} \bar a &amp; \bar b \\ \bar c &amp; \bar d \end{pmatrix} .
 $$</p>
 <p><strong>Theorem.</strong> The involution $\sigma$ is well defined, it is an <strong>involutive automorphism</strong> of the group (the composition with the conjugation of the base),</p>
 <p>$$
@@ -118,15 +118,15 @@ $$</p>
 <p>the group of the Möbius operators with real coefficients; it is the group of the automorphisms of the real projective line, it preserves the upper and the lower half-planes, and it acts on the upper half-plane as the orientation-preserving isometry group of the hyperbolic plane.</p>
 <p><strong>Proof.</strong> A class fixed by $\sigma$ has a representative matrix with $\bar A = \lambda A$ for a scalar, and multiplying by a scalar of the appropriate modulus gives a real representative; the group of the real matrices modulo the scalars is $PGL_2(\mathbb{R}) = PSL_2(\mathbb{R})$ because the nonzero real squares are positive, and the action on the half-plane is the classical one. The statement is in <em>The Möbius Transformation as an Operator</em> and <em>Hyperbolic Geometry</em>.</p>
 <h2 id="the-real-mobius-transformations">The Real Möbius Transformations</h2>
-<p><strong>Theorem.</strong> The real Möbius group $PSL_2(\mathbb{R})$ acts on the upper half-plane $\mathbb{H}^2 = \{z : \operatorname{Im} z > 0\}$ by the fractional linear maps, and this action is faithful, transitive and preserves the hyperbolic metric $|dz|^2/(\operatorname{Im} z)^2$; the group is the full orientation-preserving isometry group of the hyperbolic plane, and the boundary action on $\mathbb{P}^1(\mathbb{R})$ is the action on the circle at infinity.</p>
+<p><strong>Theorem.</strong> The real Möbius group $PSL_2(\mathbb{R})$ acts on the upper half-plane $\mathbb{H}^2 = \{z : \operatorname{Im} z &gt; 0\}$ by the fractional linear maps, and this action is faithful, transitive and preserves the hyperbolic metric $|dz|^2/(\operatorname{Im} z)^2$; the group is the full orientation-preserving isometry group of the hyperbolic plane, and the boundary action on $\mathbb{P}^1(\mathbb{R})$ is the action on the circle at infinity.</p>
 <p><strong>Proof.</strong> The imaginary part transforms by $\operatorname{Im} M_A(z) = \operatorname{Im} z\,/\,|cz+d|^2$ for a real matrix of determinant one, so the half-plane is preserved and the hyperbolic metric is invariant; the transitivity is the matching of a point and a direction, and the faithfulness and the fullness are the standard computation of the isometry group. The statement is in <em>Hyperbolic Geometry</em>.</p>
-<p><strong>Corollary (the conjugation and the hyperbolic reflection).</strong> The conjugation $\iota$ is not in the Möbius group, but it is an isometry of the hyperbolic plane, and it is the reflection in the geodesic $i\mathbb{R}_{>0}$; it fixes that geodesic pointwise, it reverses the orientation, and it is the geodesic reflection of <em>Geodesic Reflection as an Operator</em> in the Poincaré model. The subgroup of the Möbius operators commuting with $\iota$ is the real Möbius group, and the fixed geodesic is the imaginary axis.</p>
+<p><strong>Corollary (the conjugation and the hyperbolic reflection).</strong> The conjugation $\iota$ is not in the Möbius group, but it is an isometry of the hyperbolic plane, and it is the reflection in the geodesic $i\mathbb{R}_{&gt;0}$; it fixes that geodesic pointwise, it reverses the orientation, and it is the geodesic reflection of <em>Geodesic Reflection as an Operator</em> in the Poincaré model. The subgroup of the Möbius operators commuting with $\iota$ is the real Möbius group, and the fixed geodesic is the imaginary axis.</p>
 <p><strong>Proof.</strong> The conjugation is an anti-holomorphic isometry of the half-plane metric; its fixed set is the intersection of the fixed locus $\mathbb{R}\cup\{\infty\}$ with the half-plane, which is empty on the boundary but the geodesic between the two fixed boundary points $0$ and $\infty$ is the imaginary axis, fixed pointwise by $\iota$. The statement is in <em>Hyperbolic Geometry</em>.</p>
 <h2 id="the-adjoint-and-the-unitary-realisation">The Adjoint and the Unitary Realisation</h2>
 <h3 id="the-hermitian-form-of-signature-math42">The Hermitian Form of Signature $(1,1)$</h3>
 <p><strong>Definition.</strong> Let $J$ be the Hermitian form on $\mathbb{C}^2$ of signature $(1,1)$ with the matrix</p>
 <p>$$
-J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} ;
+J = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} ;
 $$</p>
 <p>the <strong>unitary group</strong> of the form is</p>
 <p>$$
@@ -206,7 +206,7 @@ $$</p>
 <td>Compact real form of $PSL_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}^2 = \{z : \operatorname{Im} z > 0\}$</td>
+<td>$\mathbb{H}^2 = \{z : \operatorname{Im} z &gt; 0\}$</td>
 <td>Upper half-plane of the hyperbolic plane</td>
 </tr>
 </tbody>

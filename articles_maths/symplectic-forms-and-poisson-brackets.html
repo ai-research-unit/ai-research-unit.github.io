@@ -106,10 +106,10 @@ $$</p>
 $$</p>
 <p>where $u = (x_1, \ldots, x_n, y_1, \ldots, y_n)$ and $v = (v_{x_1}, \ldots, v_{x_n}, v_{y_1}, \ldots, v_{y_n})$. Its matrix in the standard basis is the $2n \times 2n$ block matrix</p>
 <p>$$
-J = \begin{pmatrix} 0 & I_n \\ -I_n & 0 \end{pmatrix}.
+J = \begin{pmatrix} 0 &amp; I_n \\ -I_n &amp; 0 \end{pmatrix}.
 $$</p>
 <p><strong>Proposition.</strong> $\omega_0$ is alternating and nondegenerate, and $\det(J) = 1$; hence $J$ is invertible with $J^{-1} = -J$.</p>
-<p><strong>Proof.</strong> Alternation is immediate from the definition: $\omega_0(u, u) = \sum_i (x_i y_i - y_i x_i) = 0$. For nondegeneracy, suppose $\omega_0(u, v) = 0$ for all $v$. Evaluating on the basis vector $e_i$ of the $x$-block gives $\omega_0(u, e_i) = -y_i = 0$, and evaluating on the basis vector $f_i$ of the $y$-block gives $\omega_0(u, f_i) = x_i = 0$; hence $u = 0$. Finally $\det J = 1$: exchanging the two block columns multiplies the determinant by $(-1)^{n^2} = (-1)^n$ and leaves the block triangular matrix $\begin{pmatrix} I_n & 0 \\ 0 & -I_n\end{pmatrix}$ of determinant $\det(I_n)\det(-I_n) = (-1)^n$, so the two signs cancel.</p>
+<p><strong>Proof.</strong> Alternation is immediate from the definition: $\omega_0(u, u) = \sum_i (x_i y_i - y_i x_i) = 0$. For nondegeneracy, suppose $\omega_0(u, v) = 0$ for all $v$. Evaluating on the basis vector $e_i$ of the $x$-block gives $\omega_0(u, e_i) = -y_i = 0$, and evaluating on the basis vector $f_i$ of the $y$-block gives $\omega_0(u, f_i) = x_i = 0$; hence $u = 0$. Finally $\det J = 1$: exchanging the two block columns multiplies the determinant by $(-1)^{n^2} = (-1)^n$ and leaves the block triangular matrix $\begin{pmatrix} I_n &amp; 0 \\ 0 &amp; -I_n\end{pmatrix}$ of determinant $\det(I_n)\det(-I_n) = (-1)^n$, so the two signs cancel.</p>
 <p><strong>Remark.</strong> The determinant can also be reached through the Pfaffian: for the coordinate order used here, $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$, whence $\det(J) = \operatorname{Pf}(J)^2 = 1$.</p>
 <h3 id="non-degeneracy-and-the-symplectic-basis">Non-Degeneracy and the Symplectic Basis</h3>
 <p><strong>Definition.</strong> A <strong>symplectic form</strong> on a finite-dimensional vector space $V$ is a nondegenerate alternating bilinear form $\omega$ on $V$. The pair $(V, \omega)$ is a <strong>symplectic space</strong>.</p>
@@ -180,7 +180,7 @@ $$</p>
 <p>$$
 \boxed{\;\operatorname{Pf}(A^{\mathsf{T}} \Omega A) = \det(A)\, \operatorname{Pf}(\Omega), \qquad \det(\Omega) = \operatorname{Pf}(\Omega)^2\;}.
 $$</p>
-<p><strong>Proof.</strong> Both identities are polynomial identities with integer coefficients in the entries of $\Omega$ and $A$, so it suffices to establish them over a field of characteristic $0$. In the coordinates $x_1, \ldots, x_n, y_1, \ldots, y_n$ of the preceding sections the matrix of the standard form is the block matrix $J = \begin{pmatrix} 0 & I_n \\ -I_n & 0\end{pmatrix}$, whose Pfaffian is $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$: the only nonvanishing summands pair $x_i$ with $y_i$, and the sign is the parity of the permutation that sorts these pairs, since $\operatorname{Pf}$ is unchanged by an even reordering of the variables and changes sign under an odd one. Conjugating by the permutation matrix that reorders the coordinates as $x_1, y_1, x_2, y_2, \ldots$ gives the block diagonal matrix $J'$ with diagonal blocks $\begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$, for which $\det(J') = 1$ and $\operatorname{Pf}(J') = 1$, each nonvanishing summand contributing $+1$. For the change-of-basis rule, use the equivalent definition of the Pfaffian as the scalar appearing in</p>
+<p><strong>Proof.</strong> Both identities are polynomial identities with integer coefficients in the entries of $\Omega$ and $A$, so it suffices to establish them over a field of characteristic $0$. In the coordinates $x_1, \ldots, x_n, y_1, \ldots, y_n$ of the preceding sections the matrix of the standard form is the block matrix $J = \begin{pmatrix} 0 &amp; I_n \\ -I_n &amp; 0\end{pmatrix}$, whose Pfaffian is $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$: the only nonvanishing summands pair $x_i$ with $y_i$, and the sign is the parity of the permutation that sorts these pairs, since $\operatorname{Pf}$ is unchanged by an even reordering of the variables and changes sign under an odd one. Conjugating by the permutation matrix that reorders the coordinates as $x_1, y_1, x_2, y_2, \ldots$ gives the block diagonal matrix $J'$ with diagonal blocks $\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0\end{pmatrix}$, for which $\det(J') = 1$ and $\operatorname{Pf}(J') = 1$, each nonvanishing summand contributing $+1$. For the change-of-basis rule, use the equivalent definition of the Pfaffian as the scalar appearing in</p>
 <p>$$
 \frac{1}{2^n n!}\Bigl(\sum_{i,j}\Omega_{ij}\,x_i \wedge x_j\Bigr)^{n} = \operatorname{Pf}(\Omega)\, x_1 \wedge \cdots \wedge x_{2n},
 $$</p>
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 \frac{1}{n!}\, \omega^{\wedge n} \in \Lambda^{2n}(V^*),
 $$</p>
-<p>which is nonzero because $\omega$ is nondegenerate; in a symplectic basis, where the matrix of $\omega$ is the block diagonal matrix with blocks $\begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$, it equals $e^1 \wedge f^1 \wedge \cdots \wedge e^n \wedge f^n$, a volume form on $V$.</p>
+<p>which is nonzero because $\omega$ is nondegenerate; in a symplectic basis, where the matrix of $\omega$ is the block diagonal matrix with blocks $\begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0\end{pmatrix}$, it equals $e^1 \wedge f^1 \wedge \cdots \wedge e^n \wedge f^n$, a volume form on $V$.</p>
 <p><strong>Proposition.</strong> Every $A \in Sp(V, \omega)$ preserves the Liouville form, and consequently $\det(A) = 1$; the volume of a symplectic space is preserved by its symplectic automorphisms.</p>
 <p><strong>Proof.</strong> If $A$ preserves $\omega$ then $A$ preserves $\omega^{\wedge n}$ and hence its scalar multiple $\omega^{\wedge n}/n!$, so $\det(A) = 1$ by the determinant-one theorem.</p>
 <p><strong>Remark.</strong> The Liouville form is the symplectic analogue of a volume form, and the inclusion $Sp \subseteq SL$ says that symplectic transformations preserve it. The Pfaffian is the square root of the determinant, defined only for alternating matrices, and it is the algebraic reason for the restriction to determinant one.</p>
@@ -301,7 +301,7 @@ $$</p>
 <td>Half the dimension of a symplectic space, $\dim V = 2n$</td>
 </tr>
 <tr>
-<td>$J = \begin{pmatrix} 0 & I_n \\ -I_n & 0\end{pmatrix}$</td>
+<td>$J = \begin{pmatrix} 0 &amp; I_n \\ -I_n &amp; 0\end{pmatrix}$</td>
 <td>Matrix of $\omega_0$; $J^{-1} = -J$, $\det J = 1$, $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$</td>
 </tr>
 <tr>

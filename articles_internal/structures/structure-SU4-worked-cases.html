@@ -74,9 +74,9 @@
 <p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra</em> states the group in general: the fifteen dimensions, the two splits, the ladder $3+5+6+1$, the diagonal that exponentiates onto the centre. This note does the opposite. It takes one element at a time, writes its arrays, and computes what it does to biquaternions. Every number below was produced in floating point on the sixteen Conway words and is collected at the end.</p>
 <p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$. An element is a column $\tilde Q=(Q_t,Q_x,Q_y,Q_z)$ of four complex numbers. The frame is the axis-free one, in which the adjoint $\dagger$ of the form $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$ is the conjugate transpose, so that</p>
 <p>$$
-L_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\ Q_x&Q_t&-Q_z&Q_y\\ Q_y&Q_z&Q_t&-Q_x\\ Q_z&-Q_y&Q_x&Q_t\end{pmatrix},
+L_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\ Q_x&amp;Q_t&amp;-Q_z&amp;Q_y\\ Q_y&amp;Q_z&amp;Q_t&amp;-Q_x\\ Q_z&amp;-Q_y&amp;Q_x&amp;Q_t\end{pmatrix},
 \qquad
-R_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\ Q_x&Q_t&Q_z&-Q_y\\ Q_y&-Q_z&Q_t&Q_x\\ Q_z&Q_y&-Q_x&Q_t\end{pmatrix}.
+R_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&amp;-Q_x&amp;-Q_y&amp;-Q_z\\ Q_x&amp;Q_t&amp;Q_z&amp;-Q_y\\ Q_y&amp;-Q_z&amp;Q_t&amp;Q_x\\ Q_z&amp;Q_y&amp;-Q_x&amp;Q_t\end{pmatrix}.
 $$</p>
 <p><strong>The group.</strong> $\mathrm{SU}(4)$ is the whole of $\mathrm{U}(4)\cap\mathrm{SL}_4(\mathbb{C})$ in this frame,</p>
 <p>$$
@@ -194,14 +194,14 @@ g=\exp\bigl(\tfrac{\pi}{4}M_x\bigr).
 $$</p>
 <p><strong>The display.</strong> Since $M_x^{2}=-P_{\Pi_x}$ on the plane $\Pi_x=\mathbb{C}e_t\oplus\mathbb{C}\vec e_x$ and $0$ elsewhere, the exponential is identity on the complement and a rotation by $\theta$ on the plane:</p>
 <p>$$
-g=\begin{pmatrix}\tfrac{1}{\sqrt2}&-\tfrac{1}{\sqrt2}&0&0\\[2pt] \tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt2}&0&0\\[2pt] 0&0&1&0\\[2pt] 0&0&0&1\end{pmatrix}.
+g=\begin{pmatrix}\tfrac{1}{\sqrt2}&amp;-\tfrac{1}{\sqrt2}&amp;0&amp;0\\[2pt] \tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt2}&amp;0&amp;0\\[2pt] 0&amp;0&amp;1&amp;0\\[2pt] 0&amp;0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>Checks: $g^{\dagger}g=\mathrm{I}_4$ to $2\times10^{-16}$, $\det g=1$, and the first column is $\tfrac{1}{\sqrt2}(1,1,0,0)$ — <strong>not</strong> $e_t$.</p>
 <p><strong>The block.</strong> In the $1+3$ split, $\alpha=\tfrac{1}{\sqrt2}$, $w=(\tfrac{1}{\sqrt2},0,0)^{\mathsf T}$ and $A=\mathrm{I}_3$: the unit coordinate and one vector coordinate are mixed, the other two are untouched.</p>
 <p><strong>The Conway array.</strong> Solving $g=\sum c_{{\imath}{\jmath}}e_{\imath}[\,]e_{\jmath}$ gives four non-zero entries, all in the $(t,x)\times(t,x)$ corner:</p>
 <p>$$
-c=\begin{pmatrix}\cos^{2}\tfrac{\pi}{8}&\cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&0&0\\[2pt] \cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&\sin^{2}\tfrac{\pi}{8}&0&0\\[2pt] 0&0&0&0\\[2pt] 0&0&0&0\end{pmatrix}
-=\begin{pmatrix}0.853553&0.353553\\0.353553&0.146447\end{pmatrix}_{\!\!(t,x)},
+c=\begin{pmatrix}\cos^{2}\tfrac{\pi}{8}&amp;\cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&amp;0&amp;0\\[2pt] \cos\tfrac{\pi}{8}\sin\tfrac{\pi}{8}&amp;\sin^{2}\tfrac{\pi}{8}&amp;0&amp;0\\[2pt] 0&amp;0&amp;0&amp;0\\[2pt] 0&amp;0&amp;0&amp;0\end{pmatrix}
+=\begin{pmatrix}0.853553&amp;0.353553\\0.353553&amp;0.146447\end{pmatrix}_{\!\!(t,x)},
 $$</p>
 <p>of rank <strong>one</strong>. Writing it as an outer product $c_{{\imath}{\jmath}}=u_{\imath} u_{\jmath}$ with</p>
 <p>$$
@@ -227,10 +227,10 @@ $$</p>
 <p>although $\mathrm{SU}(3)$ does contain central <em>phases of the vector part</em>, such as $\operatorname{diag}(1,\omega,\omega,\omega)$ with $\omega=e^{2\pi i/3}$, which is $\exp(\tfrac{2\pi}{3}iD)$ and lies in $\mathrm{SU}(3)$ because its first entry is one. Those are the elements the $\mathrm{U}(3)$ note meets; they are central in $\mathrm{SU}(4)$ only when they are central in $\mathrm{U}(3)$, which they are not.</p>
 <p><strong>The reading.</strong> The element $-\mathrm{I}_4$ is the sharpest single witness that the two groups sit differently in $M_4(\mathbb{C})$: a matrix that commutes with everything in $\mathrm{SU}(4)$ and is still thrown out of $\mathrm{SU}(3)$. Its length is one, its determinant is one, its square is the identity, and it is not in the corner.</p>
 <h2 id="3-case-2-the-six-single-words">3. Case 2: The Six Single Words</h2>
-<p><strong>The displays.</strong> With $\vec e_a$ the axis and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$,</p>
+<p><strong>The displays.</strong> With $\vec e_a$ the axis and $J=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$,</p>
 <p>$$
-L_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-R_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+L_{\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix},\qquad
+R_{\vec e_x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
 $$</p>
 <p>and cyclically, with the sign of the second block reversed.</p>
 <p><strong>The rule.</strong> Each single word is a quarter-turn of <em>two</em> planes at once:</p>
@@ -252,9 +252,9 @@ $$</p>
 <h2 id="4-case-3-the-quarter-turns-real-and-imaginary">4. Case 3: The Quarter-Turns, Real and Imaginary</h2>
 <p><strong>The two generators.</strong> On $\Pi_a=\mathbb{C}e_t\oplus\mathbb{C}\vec e_a$, and zero on the complement,</p>
 <p>$$
-M_a=\tfrac12\bigl(L_{\vec e_a}+R_{\vec e_a}\bigr)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}_{\Pi_a},
+M_a=\tfrac12\bigl(L_{\vec e_a}+R_{\vec e_a}\bigr)=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}_{\Pi_a},
 \qquad
-iN_a=\tfrac{i}{2}\bigl(L_{\vec e_b}R_{\vec e_c}-L_{\vec e_c}R_{\vec e_b}\bigr)=\begin{pmatrix}0&i\\i&0\end{pmatrix}_{\Pi_a},
+iN_a=\tfrac{i}{2}\bigl(L_{\vec e_b}R_{\vec e_c}-L_{\vec e_c}R_{\vec e_b}\bigr)=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}_{\Pi_a},
 $$</p>
 <p>each of length two. $M_a$ is the real quarter-turn of the plane, $iN_a$ the imaginary one.</p>
 <p><strong>The real family is a sandwich.</strong> For real $u=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec e_a$ of norm one,</p>
@@ -272,7 +272,7 @@ $$</p>
 <p>verified at $\theta=0.8$: $e_t\mapsto(0.696707,\;0.717356,\,0,\,0)$.</p>
 <p><strong>The special values.</strong> At $\theta=\tfrac{\pi}{2}$ the matrix on the plane is $J$ itself, so</p>
 <p>$$
-\exp\bigl(\tfrac{\pi}{2}M_x\bigr)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+\exp\bigl(\tfrac{\pi}{2}M_x\bigr)=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
 \qquad
 \exp(\pi M_x)=E_x=\operatorname{diag}(-1,-1,1,1).
 $$</p>
@@ -280,9 +280,9 @@ $$</p>
 <p><strong>The imaginary family is not a sandwich.</strong> $\exp(\theta\,iN_a)$ is</p>
 <p>$$
 \exp(\theta\,iN_a)=\mathrm{I}_4-P_{\Pi_a}+\cos\theta\,P_{\Pi_a}+\sin\theta\,iN_a
-=\begin{pmatrix}\cos\theta&i\sin\theta\\ i\sin\theta&\cos\theta\end{pmatrix}_{\Pi_a},
+=\begin{pmatrix}\cos\theta&amp;i\sin\theta\\ i\sin\theta&amp;\cos\theta\end{pmatrix}_{\Pi_a},
 $$</p>
-<p>a hyperbolic-looking but elliptic matrix; at $\theta=\tfrac{\pi}{2}$ it is the <strong>$i$-swap</strong> $\begin{pmatrix}0&i\\i&0\end{pmatrix}$ on the plane, and at $\theta=\pi$ it is $E_a$ again. Its length is <strong>four</strong> at every $\theta$ tested ($0.45$, $\tfrac{\pi}{2}$) and drops to one at $\theta=0$ and at $\theta=\pi$, where it is the identity and the single word $e_a[\,]e_a$ respectively.</p>
+<p>a hyperbolic-looking but elliptic matrix; at $\theta=\tfrac{\pi}{2}$ it is the <strong>$i$-swap</strong> $\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}$ on the plane, and at $\theta=\pi$ it is $E_a$ again. Its length is <strong>four</strong> at every $\theta$ tested ($0.45$, $\tfrac{\pi}{2}$) and drops to one at $\theta=0$ and at $\theta=\pi$, where it is the identity and the single word $e_a[\,]e_a$ respectively.</p>
 <p><strong>The lesson.</strong> The two families reach the <em>same</em> involution $E_a$ by different routes, and the cost is radically different: one is a sandwich at every parameter value, the other is never cheaper than four. <strong>The real quarter-turn is cheap and the imaginary one is expensive</strong>; and the element that costs four at $\theta=\tfrac{\pi}{2}$ costs one at $\theta=\pi$. A one-parameter family can pass through the length-one stratum at isolated values, exactly as in the $\mathrm{SU}(3)$ case.</p>
 <h2 id="5-case-4-the-diagonal-one">5. Case 4: The Diagonal One</h2>
 <p><strong>The element.</strong> In the coefficient frame, the diagonal generator of the meaning note is</p>
@@ -311,7 +311,7 @@ $$</p>
 <p><strong>The permutations.</strong> Of the twenty-four permutation matrices, <strong>twelve</strong> have determinant one and lie in $\mathrm{SU}(4)$; the other twelve have determinant $-1$ and lie only in $\mathrm{U}(4)$. Verified by direct computation on all twenty-four.</p>
 <p><strong>The repair.</strong> A transposition of the unit with an axis cannot be a permutation matrix in $\mathrm{SU}(4)$, and the repair costs one sign. With $T$ the swap $e_t\leftrightarrow\vec e_x$ and $S=\operatorname{diag}(-1,1,1,1)$,</p>
 <p>$$
-ST=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}=\exp\bigl(\tfrac{\pi}{2}M_x\bigr),
+ST=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}=\exp\bigl(\tfrac{\pi}{2}M_x\bigr),
 $$</p>
 <p>verified: $\det(ST)=(-1)(-1)=1$, and the matrix is exactly the quarter-turn of §4. <strong>The sign that fixes the determinant is the sign that turns the swap into a rotation.</strong></p>
 <p><strong>The count.</strong> Signed permutation matrices with determinant one number $12\cdot8+12\cdot8=192$ out of $384$; the eight diagonal sign patterns with determinant one form $\mathbb{Z}_2^{3}$; and</p>
@@ -321,19 +321,19 @@ $$</p>
 <p>which is the Weyl group. So $\mathrm{SU}(4)$ realises $S_4$ with 192 matrices, and the torus of diagonal unitaries of determinant one is three-dimensional.</p>
 <p><strong>Inside $\mathrm{SU}(3)$.</strong> Only the permutations fixing the index $t$ stay in the corner: six permutations, of which three are cyclic and three reverse the orientation, and only the cyclic ones are automorphisms of the quaternion relations. The order-three element $P$ of the $\mathrm{SU}(3)$ note is the $3$-cycle of $\vec e_x,\vec e_y,\vec e_z$,</p>
 <p>$$
-P=\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix},
+P=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{pmatrix},
 $$</p>
 <p>with determinant one, length one, and $P^{3}=\mathrm{I}_4$ exactly (it is a permutation matrix); it is one of the twelve even permutations, and one of the two $3$-cycles inside the $S_3$ part.</p>
 <h2 id="7-case-6-the-fifteen-generators">7. Case 6: The Fifteen Generators</h2>
 <p>Each generator gives a one-parameter family. All statements below are on the plane named, with the identity on the complement.</p>
 <p><strong>The three rotations</strong> $\exp(\theta\,\mathrm{ad}_{\vec e_a})$. On the plane orthogonal to $\vec e_a$,</p>
 <p>$$
-\exp(\theta\,\mathrm{ad}_{\vec e_z})\Big|_{(x,y)}=\begin{pmatrix}\cos2\theta&-\sin2\theta\\ \sin2\theta&\cos2\theta\end{pmatrix},
+\exp(\theta\,\mathrm{ad}_{\vec e_z})\Big|_{(x,y)}=\begin{pmatrix}\cos2\theta&amp;-\sin2\theta\\ \sin2\theta&amp;\cos2\theta\end{pmatrix},
 $$</p>
 <p>a real rotation by $2\theta$, identity on $e_t$ and $\vec e_z$, so the family is $\pi$-periodic. <strong>Every value has length one</strong>, because $\exp(\theta\,\mathrm{ad}_{\vec e_z})=\mathrm{Ad}_u$ with $u=\cos\theta\,e_t+\sin\theta\,\vec e_z$ — the automorphism half of $\mathrm{SO}(4)$. Verified at $\theta=0.3$ on all three axes.</p>
 <p><strong>The five symmetric sums</strong> $\exp(\phi S_{ab})$ with $S_{ab}=-\tfrac{i}{2}(L_{\vec e_a}R_{\vec e_b}+L_{\vec e_b}R_{\vec e_a})$. On the plane of $(a,b)$,</p>
 <p>$$
-\exp(\phi S_{xy})\Big|_{(x,y)}=\begin{pmatrix}\cos\phi&i\sin\phi\\ i\sin\phi&\cos\phi\end{pmatrix},
+\exp(\phi S_{xy})\Big|_{(x,y)}=\begin{pmatrix}\cos\phi&amp;i\sin\phi\\ i\sin\phi&amp;\cos\phi\end{pmatrix},
 $$</p>
 <p>a cosine on the diagonal and $i\sin\phi$ on the two swaps: at $\phi=\tfrac{\pi}{2}$ it is the $i$-swap, at $\phi=\pi$ it is $\operatorname{diag}(1,-1,-1,1)=\mathrm{Ad}_{\vec e_z}$, of length one. The length is <strong>four</strong> at general $\phi$ (verified at $0.6$) and one at $\phi=\pi$. The same collapse as in $\mathrm{SU}(3)$.</p>
 <p><strong>The two diagonals</strong> $h_x,h_y,h_z$, the phase pairs on two vector axes, of which any two are independent. These are diagonal in the display, with four non-zero entries, so the length is four except at isolated values where they collapse onto minus an axis involution: at $\phi=\pi$, $\exp(\pi h_x)=\operatorname{diag}(1,1,-1,-1)=-E_x$, of length one.</p>
@@ -343,7 +343,7 @@ $$</p>
 <h2 id="8-case-7-a-general-element">8. Case 7: A General Element</h2>
 <p><strong>The construction.</strong> Every element is a product of the fifteen families. Take</p>
 <p>$$
-g=\Bigl(\prod_{a}\exp(\theta_a\,\mathrm{ad}_{\vec e_a})\Bigr)\exp(\psi_1 h_x)\exp(\psi_2 h_y)\Bigl(\prod_{a<b}\exp(\phi_{ab}S_{ab})\Bigr)\Bigl(\prod_a\exp(\gamma_a M_a)\Bigr)\Bigl(\prod_a\exp(\delta_a iN_a)\Bigr)\exp(\tau\,iD)
+g=\Bigl(\prod_{a}\exp(\theta_a\,\mathrm{ad}_{\vec e_a})\Bigr)\exp(\psi_1 h_x)\exp(\psi_2 h_y)\Bigl(\prod_{a&lt;b}\exp(\phi_{ab}S_{ab})\Bigr)\Bigl(\prod_a\exp(\gamma_a M_a)\Bigr)\Bigl(\prod_a\exp(\delta_a iN_a)\Bigr)\exp(\tau\,iD)
 $$</p>
 <p>with the angles</p>
 <p>$$
@@ -352,10 +352,10 @@ $$</p>
 <p><strong>The display.</strong> Numerically</p>
 <p>$$
 g=\begin{pmatrix}
-0.2315-0.5019i & -0.5145-0.0986i & 0.1191+0.3253i & -0.5478+0.0002i\\
-0.2669+0.7303i & -0.1190-0.0536i & 0.2938+0.1136i & -0.3035+0.4325i\\
--0.0388+0.1560i & -0.3658+0.1775i & 0.4995+0.3844i & 0.4890-0.4153i\\
-0.2365+0.0900i & 0.1419+0.7232i & -0.4445+0.4313i & -0.0865-0.0413i
+0.2315-0.5019i &amp; -0.5145-0.0986i &amp; 0.1191+0.3253i &amp; -0.5478+0.0002i\\
+0.2669+0.7303i &amp; -0.1190-0.0536i &amp; 0.2938+0.1136i &amp; -0.3035+0.4325i\\
+-0.0388+0.1560i &amp; -0.3658+0.1775i &amp; 0.4995+0.3844i &amp; 0.4890-0.4153i\\
+0.2365+0.0900i &amp; 0.1419+0.7232i &amp; -0.4445+0.4313i &amp; -0.0865-0.0413i
 \end{pmatrix},
 $$</p>
 <p>with residual $4.5\times10^{-16}$ against unitarity, $\det=1$ to $10^{-8}$, and length <strong>four</strong>. Every entry has modulus of the same order: this element is nowhere near an automorphism, and nowhere near $\mathrm{SU}(3)$.</p>
@@ -366,7 +366,7 @@ $$</p>
 <p>summing to $0$ modulo $2\pi$ — which is $\det=1$ read as a statement about eigenvalues. For the centre element $i\mathrm{I}_4$ the same list is $\tfrac{\pi}{2},\tfrac{\pi}{2},\tfrac{\pi}{2},\tfrac{\pi}{2}$, summing to $2\pi$.</p>
 <p><strong>Two elements that look like this one and are not in the group.</strong> $\operatorname{diag}(1,\omega,\omega,\omega)$ is unitary of determinant one and fixes $e_t$: it is in $\mathrm{SU}(3)$. But $\operatorname{diag}(\omega,\omega,\omega,\omega)$ has determinant $\omega^{4}=\omega\neq1$ and is not in $\mathrm{SU}(4)$ at all — the centre phases of $\mathrm{U}(4)$ do not survive tracelessness. And the fifteen parameters are fifteen and not sixteen: the sixteenth direction of $\mathrm{U}(4)$ is the common phase, which the determinant condition deletes.</p>
 <h2 id="9-case-8-the-action-on-a-general-biquaternion">9. Case 8: The Action on a General Biquaternion</h2>
-<p><strong>The block form of the action.</strong> Write $Q=Q_t\oplus v$ with $v\in\mathbb{C}^{3}$, and $g=\begin{pmatrix}\alpha&-\bar w^{\mathsf T}\\ w&A\end{pmatrix}$. Then</p>
+<p><strong>The block form of the action.</strong> Write $Q=Q_t\oplus v$ with $v\in\mathbb{C}^{3}$, and $g=\begin{pmatrix}\alpha&amp;-\bar w^{\mathsf T}\\ w&amp;A\end{pmatrix}$. Then</p>
 <p>$$
 g\cdot Q=\begin{pmatrix}\alpha Q_t-\bar w^{\mathsf T}v\\ Q_t\,w+A v\end{pmatrix}.
 $$</p>
@@ -541,15 +541,15 @@ $$</p>
 <h2 id="12-case-11-the-hermitian-elements-and-math490">12. Case 11: The Hermitian Elements, and $\mathrm{SU}(3,1)$</h2>
 <p><strong>The element.</strong> The Hermitian partner of the imaginary quarter-turn is</p>
 <p>$$
-B_x=-i\,iN_x=\begin{pmatrix}0&1\\1&0\end{pmatrix}_{\Pi_x},\qquad B_x^{\dagger}=B_x,\qquad \operatorname{tr}B_x=0 .
+B_x=-i\,iN_x=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}_{\Pi_x},\qquad B_x^{\dagger}=B_x,\qquad \operatorname{tr}B_x=0 .
 $$</p>
 <p>$B_x$ is not in $\mathfrak{su}(4)$ — it is Hermitian, not anti-Hermitian — but it is a legitimate biquaternion expression: it is the symmetric real generator of the plane.</p>
 <p><strong>The group it generates.</strong> Exponentiating,</p>
 <p>$$
 \exp(tB_x)=\mathrm{I}_4-P_{\Pi_x}+\cosh t\,P_{\Pi_x}+\sinh t\,B_x
-=\begin{pmatrix}\cosh t&\sinh t\\ \sinh t&\cosh t\end{pmatrix}_{\Pi_x},
+=\begin{pmatrix}\cosh t&amp;\sinh t\\ \sinh t&amp;\cosh t\end{pmatrix}_{\Pi_x},
 $$</p>
-<p>a hyperbolic rotation. At $t=0.4$: $\begin{pmatrix}1.081072&0.410752\\0.410752&1.081072\end{pmatrix}$ on the plane; at $t=0.8$: $1.337435$ and $0.888106$. Checks: $\det=1$ exactly, and</p>
+<p>a hyperbolic rotation. At $t=0.4$: $\begin{pmatrix}1.081072&amp;0.410752\\0.410752&amp;1.081072\end{pmatrix}$ on the plane; at $t=0.8$: $1.337435$ and $0.888106$. Checks: $\det=1$ exactly, and</p>
 <p>$$
 \exp(tB_x)^{\dagger}\,D\,\exp(tB_x)=D,\qquad D=\operatorname{diag}(1,-1,-1,-1),
 $$</p>
@@ -901,7 +901,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>$\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the quarter-turn of a real plane</td>
+<td>$\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$, the quarter-turn of a real plane</td>
 </tr>
 </tbody>
 </table></div>

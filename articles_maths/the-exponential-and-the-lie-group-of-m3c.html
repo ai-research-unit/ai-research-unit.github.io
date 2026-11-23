@@ -119,18 +119,18 @@ $$</p>
 <p><strong>Proof.</strong> For Hermitian $X$, diagonalise $X=UDU^{*}$ with real $D$; then $\exp X=Ue^{D}U^{*}$ with $e^{D}$ real positive diagonal, which is positive definite Hermitian. For anti-Hermitian $X$, $(\exp X)^{*}=\exp(X^{*})=\exp(-X)=(\exp X)^{-1}$. The determinant is $e^{\operatorname{tr}X}=1$ when $\operatorname{tr}X=0$.</p>
 <p><strong>Worked example.</strong> For</p>
 <p>$$
-X=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}
+X=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix}
 $$</p>
 <p>one has $X^{2}=E_{13}$, $X^{3}=0$, and</p>
 <p>$$
 \exp X=I+X+\frac{X^{2}}{2}
-=\begin{pmatrix}1&1&\tfrac12\\0&1&1\\0&0&1\end{pmatrix}.
+=\begin{pmatrix}1&amp;1&amp;\tfrac12\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>The eigenvalues are all $1$, the determinant is $1$, and the matrix is unipotent. For</p>
 <p>$$
-X=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}
+X=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}
 $$</p>
-<p>one has $X^{2}=0$ and $\exp X=I+X=\begin{pmatrix}1&1&0\\0&1&0\\0&0&1\end{pmatrix}$.</p>
+<p>one has $X^{2}=0$ and $\exp X=I+X=\begin{pmatrix}1&amp;1&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix}$.</p>
 <h2 id="surjectivity-and-injectivity">Surjectivity and Injectivity</h2>
 <p><strong>Theorem (surjectivity).</strong> Every invertible $A\in GL_3(\mathbb{C})$ is $\exp X$ for some $X\in\mathfrak{gl}_3(\mathbb{C})$. The exponential is surjective onto $GL_3(\mathbb{C})$.</p>
 <p><strong>Proof.</strong> Put $A$ in Jordan form $A=S(J_1\oplus J_2\oplus J_3)S^{-1}$. On a block $J=\lambda I+N$ with $\lambda\neq0$ and $N^{m}=0$, define</p>
@@ -141,7 +141,7 @@ $$</p>
 <p><strong>Theorem (kernel).</strong> $\exp X=I$ if and only if $X$ is diagonalisable and its eigenvalues lie in $2\pi i\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> If $X$ is diagonalisable with eigenvalues $2\pi i k_j$, then $\exp X=I$ because $e^{2\pi i k}=1$. Conversely, if $\exp X=I$, then the minimal polynomial of $X$ divides $e^{t}-1$, which has distinct roots $2\pi i k$; hence $X$ is diagonalisable and its eigenvalues are of that form.</p>
 <p><strong>Examples of non-injectivity.</strong> The scalar $X=2\pi i I$ satisfies $\exp X=I$. The matrix $X=\operatorname{diag}(2\pi i,0,0)$ also satisfies $\exp X=I$, so the fibre of the exponential over $I$ is infinite: it contains every diagonal matrix with entries in $2\pi i\mathbb{Z}$. The exponential is a covering map from a neighbourhood of $0$ onto a neighbourhood of $I$, but not globally.</p>
-<p><strong>The real case.</strong> Over $\mathbb{R}$ the exponential $\mathfrak{gl}_3(\mathbb{R})\to GL_3(\mathbb{R})$ is not surjective: $\det\exp X=e^{\operatorname{tr}X}>0$, so a matrix with negative determinant is not in the image. Even on $GL_3(\mathbb{R})^{+}$ the exponential is not surjective: the matrix $J_2(-1)\oplus(1)$ has determinant $1$, but a real logarithm $X$ would have the eigenvalue $(2k+1)\pi i$ with a Jordan block of size $2$, and hence also its complex conjugate with a Jordan block of size $2$; that needs at least four dimensions, and the matrix has three. Over $\mathbb{C}$ these obstructions disappear, because every nonzero complex number has a logarithm.</p>
+<p><strong>The real case.</strong> Over $\mathbb{R}$ the exponential $\mathfrak{gl}_3(\mathbb{R})\to GL_3(\mathbb{R})$ is not surjective: $\det\exp X=e^{\operatorname{tr}X}&gt;0$, so a matrix with negative determinant is not in the image. Even on $GL_3(\mathbb{R})^{+}$ the exponential is not surjective: the matrix $J_2(-1)\oplus(1)$ has determinant $1$, but a real logarithm $X$ would have the eigenvalue $(2k+1)\pi i$ with a Jordan block of size $2$, and hence also its complex conjugate with a Jordan block of size $2$; that needs at least four dimensions, and the matrix has three. Over $\mathbb{C}$ these obstructions disappear, because every nonzero complex number has a logarithm.</p>
 <p><strong>The critical set.</strong> The differential $d\exp_X$ is singular exactly when two eigenvalues of $\operatorname{ad}_X$ differ by $2\pi i k$ with $k\in\mathbb{Z}\setminus\{0\}$, that is, when</p>
 <p>$$
 \lambda_i-\lambda_j\in 2\pi i\mathbb{Z}\setminus\{0\}
@@ -166,7 +166,7 @@ $$</p>
 $$</p>
 <p>For $X=E_{12}$,</p>
 <p>$$
-\exp(tX)=I+tE_{12}=\begin{pmatrix}1&t&0\\0&1&0\\0&0&1\end{pmatrix},
+\exp(tX)=I+tE_{12}=\begin{pmatrix}1&amp;t&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>a shear. For $X=i\operatorname{diag}(0,2\pi/3,4\pi/3)$,</p>
 <p>$$
@@ -224,25 +224,25 @@ $$</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>A nilpotent exponential.</strong> For</p>
 <p>$$
-N=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix},
+N=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix},
 \qquad N^{2}=E_{13},\quad N^{3}=0,
 $$</p>
 <p>one has</p>
 <p>$$
 e^{N}=I+N+\frac{N^{2}}{2}
-=\begin{pmatrix}1&1&\tfrac12\\0&1&1\\0&0&1\end{pmatrix}.
+=\begin{pmatrix}1&amp;1&amp;\tfrac12\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p><strong>A Jordan logarithm.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix},
+A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix},
 $$</p>
 <p>the block at $2$ has $N=E_{12}$, $N^{2}=0$, so</p>
 <p>$$
-\log A=\begin{pmatrix}\log2&\tfrac12&0\\0&\log2&0\\0&0&\log3\end{pmatrix}.
+\log A=\begin{pmatrix}\log2&amp;\tfrac12&amp;0\\0&amp;\log2&amp;0\\0&amp;0&amp;\log3\end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$
-\exp(\log A)=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix}=A,
+\exp(\log A)=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}=A,
 $$</p>
 <p>because $e^{\log2 I+\frac12E_{12}}=2(I+\frac12E_{12})=2I+E_{12}$ on the block.</p>
 <p><strong>The root.</strong> For the diagonal root $H=\operatorname{diag}(1,\omega,\omega^{2})$,</p>

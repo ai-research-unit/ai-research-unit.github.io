@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: entropy versus area — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy versus area - hep-th_9303029.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-entropy-versus-area"><strong>Dirty black holes: entropy versus area</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9303029v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 June 1993 (dated 3 March 1993)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Entropy versus area - hep-th_9303029-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy versus area - hep-th_9303029.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Entropy versus area - hep-th_9303029.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper collects the known cases where black hole entropy equals a quarter of the horizon area and the known cases where it does not. It derives a general formula in which the entropy is the area term plus two additional pieces, one from quantum or statistical hair and one anomalous term. The anomalous term reproduces every known success and failure of the area law, so it functions as the diagnostic. A rule of thumb follows: Lagrangians with quadratic kinetic terms contribute nothing to the anomalous term, while higher-order curvature terms usually do.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Considerable interest has recently been expressed in the entropy versus area relationship for 'dirty' black holes — black holes in interaction with various classical matter fields, distorted by higher derivative gravity, or infested with various forms of quantum hair."</p>
+<h3 id="what-holds-and-what-fails">What holds and what fails</h3>
+<p>"In many cases it is found that the entropy is simply related to the area of the event horizon: $S=kA_H/(4\ell_P^2)$. For example, the 'entropy = (1/4) area' law holds for Schwarzschild, Reissner–Nordström, Kerr–Newman, and dilatonic black holes. On the other hand, the 'entropy = (1/4) area' law fails for: various types of $(Riemann)^n$ gravity, Lovelock gravity, and various versions of quantum hair."</p>
+<h3 id="the-problem">The problem</h3>
+<p>"The pattern underlying these results is less than clear. This paper systematizes these results by deriving a general formula for the entropy."</p>
+<h3 id="the-general-formula">The general formula</h3>
+<p>The entropy is the area term plus two further contributions:</p>
+<p>$$S=\frac{kA_H}{4\ell_P^2}+\frac{1}{T_H}\int_\Sigma\{\varrho L-L_E\}K^\mu\,d\Sigma_\mu+\dots$$</p>
+<h3 id="the-anomalous-term">The anomalous term</h3>
+<p>"The anomalous entropy is"</p>
+<p>$$S_{\mathrm{anomalous}}=\frac{1}{T_H}\int_\Sigma\{\varrho L-L_E\}K^\mu d\Sigma_\mu=\frac{k}{\hbar}\int_\Omega\{\varrho L-L_E\}\sqrt{g_E}\,d^4x.\qquad (paper\ 64)$$</p>
+<h3 id="the-reading-of-the-term">The reading of the term</h3>
+<p>"It is certainly a peculiar object, depending as it does on both the temperature and on the classical background fields surrounding the black hole. The vanishing or non-vanishing of this term correctly retrodicts all known violations and all known verifications of the naive 'entropy = (1/4) area' law."</p>
+<h3 id="the-rule-of-thumb">The rule of thumb</h3>
+<p>"Lagrangians with quadratic kinetic terms do not contribute to the anomalous entropy. Lagrangians containing (curvature)$^3$ terms and higher typically do contribute."</p>
+<h3 id="the-unification">The unification</h3>
+<p>"The formalism serves to tie together and explain in a unified manner a number of otherwise seemingly accidental results scattered throughout the literature. The total entropy can be cleanly separated into contributions from: (1) the horizon, (2) quantum or statistical hair, and (3) an anomalous term."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-three-separate-contributions">1. Three separate contributions</h3>
+<p><strong>The idea.</strong> Entropy splits into horizon, hair, and anomaly, and only the first is geometric.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats entropy as one quantity derived from the horizon. This decomposition says at most one of the three parts is available from the geometry alone. That is a precise statement of what the article is computing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The split depends on a Lagrangian. Ranked first, because it identifies exactly what the article's derivation does and does not cover.</p>
+<h3 id="2-a-diagnostic-that-predicts">2. A diagnostic that predicts</h3>
+<p><strong>The idea.</strong> One term vanishing or not tells you whether the area law holds, and this is checked against the whole literature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> is a catalogue of failures with no test that distinguishes them. This paper shows what a good diagnostic looks like: a single object whose vanishing sorts the cases.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The diagnostic needs the Lagrangian explicitly. Ranked second.</p>
+<h3 id="3-higher-derivatives-change-everything">3. Higher derivatives change everything</h3>
+<p><strong>The idea.</strong> Once the action has more than two derivatives, the entropy formula has an extra term.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> works with a specific kinetic structure. This paper shows that the entropy, and presumably other horizon quantities, depend on the order of the action, so a framework with a fixed structure makes a silent choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of the action.</p>
+<p><strong>What stands in the way.</strong> The link to the conformal discussion is indirect. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

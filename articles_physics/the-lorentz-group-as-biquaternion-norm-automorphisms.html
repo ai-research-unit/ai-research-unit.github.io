@@ -141,8 +141,8 @@ $$</p>
 <p>$$
 \mathsf{M}_2(\tilde{Q}) =
 \begin{pmatrix}
-Q_t - iQ_z & -iQ_x - Q_y\\
--iQ_x + Q_y & Q_t + iQ_z
+Q_t - iQ_z &amp; -iQ_x - Q_y\\
+-iQ_x + Q_y &amp; Q_t + iQ_z
 \end{pmatrix},
 \qquad
 \det\mathsf{M}_2(\tilde{Q}) = Q_t^2+Q_x^2+Q_y^2+Q_z^2 = \langle\tilde{Q}\rangle_{\natural}.
@@ -183,13 +183,13 @@ $$</p>
 <p>a four-<strong>real</strong>-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. Writing</p>
 <p>$$
 \tilde R_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
-\qquad r'_t, r_\imath\in\mathbb{R},
+\qquad r'_t, r_{\imath}\in\mathbb{R},
 $$</p>
 <p>the biquaternion norm is real and indefinite:</p>
 <p>$$
 \boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$</p>
-<p>The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_\imath=r_\imath$, is therefore the level-2 Minkowski interval of the series, of inertia $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:</p>
+<p>The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_{\imath}=r_{\imath}$, is therefore the level-2 Minkowski interval of the series, of inertia $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -314,8 +314,8 @@ $$</p>
 <p>$$
 \tilde{Q}\ \longmapsto\\
 \begin{pmatrix}
-z_0+z_3 & z_1-iz_2\\
-z_1+iz_2 & z_0-z_3
+z_0+z_3 &amp; z_1-iz_2\\
+z_1+iz_2 &amp; z_0-z_3
 \end{pmatrix},
 \qquad
 \det = z_0^2-z_1^2-z_2^2-z_3^2 ,
@@ -391,11 +391,11 @@ $$</p>
 $$</p>
 <p>This is the Lie algebra of the automorphism group, and it splits into <strong>rotation</strong> generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ (real quaternion directions) and <strong>boost</strong> generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$ (imaginary vector directions). Their brackets are computed directly from the quaternion multiplication rule; the commutator is $[A,B] = AB-BA$, and</p>
 <p>$$
-[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 \qquad
-[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{K}_\imath,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{K}_{\imath},
 \qquad
-[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath .
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath} .
 $$</p>
 <p>The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.</p>
 <p><strong>The complexification and the two factors.</strong> Complexifying the real Lie algebra and forming</p>
@@ -404,19 +404,19 @@ $$</p>
 $$</p>
 <p>where $\mathrm{i}$ is the complexification unit — distinct from the algebra's own central $i$ — gives two commuting copies of the rotation algebra,</p>
 <p>$$
-[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}] = \varepsilon_{\imath\jmathk}\mathcal{N}^{+}_\imath,
+[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}] = \varepsilon_{\imath\jmath k}\mathcal{N}^{+}_{\imath},
 \qquad
-[\mathcal{N}^{-}_{\imath},\mathcal{N}^{-}_{\jmath}] = \varepsilon_{\imath\jmathk}\mathcal{N}^{-}_\imath,
+[\mathcal{N}^{-}_{\imath},\mathcal{N}^{-}_{\jmath}] = \varepsilon_{\imath\jmath k}\mathcal{N}^{-}_{\imath},
 \qquad
 [\mathcal{N}^{+}_{\imath},\mathcal{N}^{-}_{\jmath}] = 0 .
 $$</p>
-<p>The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath$. With $\mathcal{K}_{\imath} = i\vec e_{\imath}$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_{\imath}$, and its central factor is idempotent up to a factor two,</p>
+<p>The factor $\tfrac14$ is forced by the normalization $[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath}$. With $\mathcal{K}_{\imath} = i\vec e_{\imath}$ and $\mathrm{i}$ a second central imaginary unit, the combination can be written $\mathcal{N}^{\pm}_{\imath} = \tfrac14\left(1 \pm \mathrm{i} i\right)\vec e_{\imath}$, and its central factor is idempotent up to a factor two,</p>
 <p>$$
 \left(1 \pm \mathrm{i} i\right)^2 = 2\left(1 \pm \mathrm{i} i\right),
 \qquad\text{because}\qquad
 (\mathrm{i} i)^2 = \mathrm{i}^2 i^2 = +e_t .
 $$</p>
-<p>This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_{\imath},\vec e_{\jmath}] = 2\varepsilon_{\imath\jmathk}\vec e_\imath$, so the product is $4\varepsilon_{\imath\jmathk}\left(1+\mathrm{i} i\right)\vec e_\imath/16 = \varepsilon_{\imath\jmathk}\mathcal{N}^{+}_\imath$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_{\imath} = i\vec e_{\imath}$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.</p>
+<p>This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_{\imath},\mathcal{N}^{+}_{\jmath}]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_{\imath},\vec e_{\jmath}] = 2\varepsilon_{\imath\jmath k}\vec e_{\imath}$, so the product is $4\varepsilon_{\imath\jmath k}\left(1+\mathrm{i} i\right)\vec e_{\imath}/16 = \varepsilon_{\imath\jmath k}\mathcal{N}^{+}_{\imath}$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_{\imath} = i\vec e_{\imath}$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.</p>
 <h2 id="what-the-algebra-supplies-and-what-is-standard">What the Algebra Supplies and What Is Standard</h2>
 <p><strong>Supplied by the algebra.</strong> The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the inertia table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the Hermitian pairs; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.</p>
 <p><strong>Standard mathematics transcribed.</strong> The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathrm{SO}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.</p>
@@ -474,11 +474,11 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 $$</p>
 <p>the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_{\imath} = \vec e_{\imath}$ and the boost generators $\mathcal{K}_{\imath} = i\vec e_{\imath}$, with</p>
 <p>$$
-[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{J}_{\imath},\mathcal{J}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 \qquad
-[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmathk}\mathcal{K}_\imath,
+[\mathcal{J}_{\imath},\mathcal{K}_{\jmath}] = 2\varepsilon_{\imath\jmath k}\mathcal{K}_{\imath},
 \qquad
-[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath,
+[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}] = -2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath},
 $$</p>
 <p>whose complexification splits into two commuting rotation algebras. The Lorentz group, in this interpretation, is what the biquaternion norm's automorphisms become when they are required to respect the algebra's real structure.</p>
 <p>A second interpretation is available, and the two must not be conflated. The automorphisms that preserve the <strong>product</strong> and not only the form are the inner, or diagonal, ones,</p>
@@ -588,7 +588,7 @@ $$</p>
 <td>Lie algebra; $\mathcal{J}_{\imath}=\vec e_{\imath}$ (rotations), $\mathcal{K}_{\imath}=i\vec e_{\imath}$ (boosts)</td>
 </tr>
 <tr>
-<td>$[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}]=-2\varepsilon_{\imath\jmathk}\mathcal{J}_\imath$</td>
+<td>$[\mathcal{K}_{\imath},\mathcal{K}_{\jmath}]=-2\varepsilon_{\imath\jmath k}\mathcal{J}_{\imath}$</td>
 <td>Boosts do not close; infinitesimal Wigner rotation</td>
 </tr>
 <tr>

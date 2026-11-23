@@ -76,51 +76,51 @@
 <h2 id="the-open-cone">The Open Cone</h2>
 <p><strong>Definition.</strong></p>
 <p>$$
-\operatorname{Sym}_n^{>0}=\{X\in\operatorname{Sym}_n:v^{\mathsf T}Xv>0\ \text{for every}\ v\ne0\}.
+\operatorname{Sym}_n^{&gt;0}=\{X\in\operatorname{Sym}_n:v^{\mathsf T}Xv&gt;0\ \text{for every}\ v\ne0\}.
 $$</p>
-<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{>0}$ is open in $\operatorname{Sym}_n$, convex, and invariant under congruence $X\mapsto A^{\mathsf T}XA$ for every invertible $A$.</p>
-<p><em>Proof.</em> Openness: the smallest eigenvalue is a continuous function of the entries, by the min-max characterisation, and the set is $\{\lambda_{\min}>0\}$. Convexity: if $X,Y$ are positive definite and $t\in[0,1]$ then $v^{\mathsf T}(tX+(1-t)Y)v=t\,v^{\mathsf T}Xv+(1-t)v^{\mathsf T}Yv>0$ for $v\ne0$ as a convex combination of two positive numbers. Invariance: $v^{\mathsf T}A^{\mathsf T}XAv=(Av)^{\mathsf T}X(Av)>0$ for $v\ne0$, since $Av\ne0$.</p>
-<p><strong>Theorem.</strong> $\mathrm{GL}_n(\mathbb{R})$ acts transitively on $\operatorname{Sym}_n^{>0}$ by congruence, and the stabiliser of $\mathrm{I}$ is $\mathrm{O}(n)$.</p>
+<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{&gt;0}$ is open in $\operatorname{Sym}_n$, convex, and invariant under congruence $X\mapsto A^{\mathsf T}XA$ for every invertible $A$.</p>
+<p><em>Proof.</em> Openness: the smallest eigenvalue is a continuous function of the entries, by the min-max characterisation, and the set is $\{\lambda_{\min}&gt;0\}$. Convexity: if $X,Y$ are positive definite and $t\in[0,1]$ then $v^{\mathsf T}(tX+(1-t)Y)v=t\,v^{\mathsf T}Xv+(1-t)v^{\mathsf T}Yv&gt;0$ for $v\ne0$ as a convex combination of two positive numbers. Invariance: $v^{\mathsf T}A^{\mathsf T}XAv=(Av)^{\mathsf T}X(Av)&gt;0$ for $v\ne0$, since $Av\ne0$.</p>
+<p><strong>Theorem.</strong> $\mathrm{GL}_n(\mathbb{R})$ acts transitively on $\operatorname{Sym}_n^{&gt;0}$ by congruence, and the stabiliser of $\mathrm{I}$ is $\mathrm{O}(n)$.</p>
 <p><em>Proof.</em> The spectral theorem writes $X=Q\Lambda Q^{\mathsf T}$ with $Q$ orthogonal and $\Lambda$ diagonal positive; then $X=(Q\Lambda^{1/2})^{\mathsf T}(Q\Lambda^{1/2})$, so $X=A^{\mathsf T}\mathrm{I}A$ with $A=\Lambda^{1/2}Q^{\mathsf T}$ invertible. The stabiliser: $A^{\mathsf T}A=\mathrm{I}$ is the definition of orthogonality.</p>
-<p><strong>Consequence: the cone is a homogeneous space.</strong> $\operatorname{Sym}_n^{>0}\cong\mathrm{GL}_n(\mathbb{R})/\mathrm{O}(n)$, of dimension $n(n+1)/2$. The identification $A\mapsto A^{\mathsf T}A$ is a diffeomorphism, and it is the polar decomposition read as a quotient map.</p>
-<p><strong>The cone is the exponential image of the whole half.</strong> $\exp:\operatorname{Sym}_n\to\operatorname{Sym}_n^{>0}$ is a bijection with inverse $\log$, so the cone is also a vector space in the logarithm coordinates. The two readings, congruence and exponential, are the two structures the cone carries.</p>
+<p><strong>Consequence: the cone is a homogeneous space.</strong> $\operatorname{Sym}_n^{&gt;0}\cong\mathrm{GL}_n(\mathbb{R})/\mathrm{O}(n)$, of dimension $n(n+1)/2$. The identification $A\mapsto A^{\mathsf T}A$ is a diffeomorphism, and it is the polar decomposition read as a quotient map.</p>
+<p><strong>The cone is the exponential image of the whole half.</strong> $\exp:\operatorname{Sym}_n\to\operatorname{Sym}_n^{&gt;0}$ is a bijection with inverse $\log$, so the cone is also a vector space in the logarithm coordinates. The two readings, congruence and exponential, are the two structures the cone carries.</p>
 <h2 id="the-closure-and-the-boundary">The Closure and the Boundary</h2>
 <p><strong>The closure is the cone of positive semidefinite matrices.</strong></p>
 <p>$$
-\overline{\operatorname{Sym}_n^{>0}}=\{X\in\operatorname{Sym}_n:v^{\mathsf T}Xv\ge0\ \text{for every}\ v\}=\{X\in\operatorname{Sym}_n:\lambda_{\min}\ge0\}.
+\overline{\operatorname{Sym}_n^{&gt;0}}=\{X\in\operatorname{Sym}_n:v^{\mathsf T}Xv\ge0\ \text{for every}\ v\}=\{X\in\operatorname{Sym}_n:\lambda_{\min}\ge0\}.
 $$</p>
 <p>The equality of the three descriptions is the spectral theorem plus the continuity of the smallest eigenvalue.</p>
-<p><strong>The boundary is the set of positive semidefinite matrices with a nonzero kernel.</strong> It is the union of the strata of rank $r<n$, and its dimension is one less than the dimension of the cone.</p>
+<p><strong>The boundary is the set of positive semidefinite matrices with a nonzero kernel.</strong> It is the union of the strata of rank $r&lt;n$, and its dimension is one less than the dimension of the cone.</p>
 <p><strong>The strata are manifolds.</strong> Let $\Sigma_r$ be the symmetric matrices of rank exactly $r$. Then $\Sigma_r$ is a smooth manifold of dimension</p>
 <p>$$
 \dim\Sigma_r=r(n-r)+\frac{r(r+1)}{2},
 $$</p>
 <p>obtained by writing $X=USU^{\mathsf T}$ with $U$ an orthonormal $n\times r$ frame and $S$ an invertible symmetric $r\times r$ matrix: the frame contributes $r(n-r)$ after quotienting by $\mathrm{O}(r)$ and the matrix contributes $r(r+1)/2$. The dimension is verified as the rank of the tangent map at $\operatorname{diag}(\mathrm{I}_r,0)$, giving $2,3,3,5,6,4,7,9,10$ at $(n,r)=(2,1),(2,2),(3,1),(3,2),(3,3),(4,1),(4,2),(4,3),(4,4)$, matching the formula.</p>
 <p><strong>The top stratum is the open cone and the bottom stratum is the origin.</strong> At $r=n$ the formula gives $n(n+1)/2$, the dimension of the whole space; at $r=0$ it gives $0$. The dimension increases with $r$, so the boundary has codimension at least one everywhere.</p>
-<p><strong>The positive semidefinite cone with rank bound is the closure of the stratum.</strong> $\overline{\Sigma_{\le r}}=\{X\ge0:\operatorname{rk}X\le r\}$, and the interior of that set inside $\operatorname{Sym}_n$ is empty for $r<n$; its relative interior is $\Sigma_r$.</p>
+<p><strong>The positive semidefinite cone with rank bound is the closure of the stratum.</strong> $\overline{\Sigma_{\le r}}=\{X\ge0:\operatorname{rk}X\le r\}$, and the interior of that set inside $\operatorname{Sym}_n$ is empty for $r&lt;n$; its relative interior is $\Sigma_r$.</p>
 <h2 id="the-faces">The Faces</h2>
-<p><strong>Theorem.</strong> The faces of the closed cone $\overline{\operatorname{Sym}_n^{>0}}$ are exactly the sets</p>
+<p><strong>Theorem.</strong> The faces of the closed cone $\overline{\operatorname{Sym}_n^{&gt;0}}$ are exactly the sets</p>
 <p>$$
 F_U=\{X\ge0:\operatorname{im}X\subseteq U\},
 $$</p>
 <p>one for each subspace $U\subseteq\mathbb{R}^{n}$, and $\dim F_U=(\dim U)(\dim U+1)/2$.</p>
 <p><em>Proof.</em> A face is a convex subset $F$ with the property that $X+Y\in F$ and $X,Y\ge0$ imply $X,Y\in F$. If $X\in F$ and $\operatorname{im}X\subseteq U$ then every summand of $X$ in a decomposition into positive semidefinite parts also has image in $U$, since the images add. So $F_U$ is a face. Conversely, if $F$ is a face and $X\in F$ is in its relative interior, then every $Y\ge0$ with $\operatorname{im}Y\subseteq\operatorname{im}X$ lies in $F$, by a rank-one perturbation argument; hence $F=F_U$ with $U=\operatorname{im}X$.</p>
 <p><strong>The face lattice is the lattice of subspaces.</strong> $F_U\subseteq F_W$ exactly when $U\subseteq W$, and $F_{U\cap W}=F_U\cap F_W$, $F_{U+W}=F_U+F_W$. So the face lattice of the cone is isomorphic to the lattice of subspaces of $\mathbb{R}^{n}$, with the cone itself for $U=\mathbb{R}^{n}$ and the origin for $U=0$.</p>
-<p><strong>The faces come in continua.</strong> A face of dimension $d(d+1)/2$ corresponds to a $d$-dimensional subspace, so the faces of a given dimension are parametrised by the Grassmannian, which is a manifold of positive dimension for $0<d<n$. At $n=3$ there is the origin, a circle's worth of one-dimensional faces indexed by the lines, a circle's worth of three-dimensional faces indexed by the planes, and the cone itself.</p>
+<p><strong>The faces come in continua.</strong> A face of dimension $d(d+1)/2$ corresponds to a $d$-dimensional subspace, so the faces of a given dimension are parametrised by the Grassmannian, which is a manifold of positive dimension for $0&lt;d&lt;n$. At $n=3$ there is the origin, a circle's worth of one-dimensional faces indexed by the lines, a circle's worth of three-dimensional faces indexed by the planes, and the cone itself.</p>
 <p><strong>The extreme rays are the rank-one matrices $vv^{\mathsf T}$.</strong> A ray is a one-dimensional face, and the one-dimensional faces correspond to the lines $U$, that is to $v$ up to sign; the positive semidefinite matrix with image in the line and trace one is $vv^{\mathsf T}/\|v\|^{2}$. So the extreme rays are parametrised by the projective space $\mathbb{RP}^{n-1}$, and the set of them is the <strong>Veronese variety</strong>, the image of $\mathbb{RP}^{n-1}$ under $[v]\mapsto[vv^{\mathsf T}]$.</p>
 <p><strong>Consequence: the cone is the convex hull of the Veronese variety.</strong> Every positive semidefinite matrix is a sum of rank-one ones, $X=\sum_k\lambda_ku_ku_k^{\mathsf T}$, and the sum is a convex combination after normalising. So the cone is the convex hull of its extreme rays, as it must be for a closed convex cone with a compact base.</p>
 <h2 id="self-duality">Self-Duality</h2>
 <p><strong>Theorem.</strong> The cone is self-dual for the trace form:</p>
 <p>$$
-X\in\overline{\operatorname{Sym}_n^{>0}}\iff\operatorname{tr}(XY)\ge0\ \text{for every}\ Y\in\overline{\operatorname{Sym}_n^{>0}}.
+X\in\overline{\operatorname{Sym}_n^{&gt;0}}\iff\operatorname{tr}(XY)\ge0\ \text{for every}\ Y\in\overline{\operatorname{Sym}_n^{&gt;0}}.
 $$</p>
-<p><em>Proof.</em> If $X\ge0$ and $Y\ge0$ then $X=A^{\mathsf T}A$ and $Y=B^{\mathsf T}B$, so $\operatorname{tr}(XY)=\operatorname{tr}(A^{\mathsf T}AB^{\mathsf T}B)=\operatorname{tr}\bigl((AB^{\mathsf T})(AB^{\mathsf T})^{\mathsf T}\bigr)=\|AB^{\mathsf T}\|_{2}^{2}\ge0$. Conversely, if $X$ has a negative eigenvalue with eigenvector $v$, take $Y=vv^{\mathsf T}\ge0$; then $\operatorname{tr}(XY)=v^{\mathsf T}Xv<0$, so $X$ is not in the dual cone.</p>
+<p><em>Proof.</em> If $X\ge0$ and $Y\ge0$ then $X=A^{\mathsf T}A$ and $Y=B^{\mathsf T}B$, so $\operatorname{tr}(XY)=\operatorname{tr}(A^{\mathsf T}AB^{\mathsf T}B)=\operatorname{tr}\bigl((AB^{\mathsf T})(AB^{\mathsf T})^{\mathsf T}\bigr)=\|AB^{\mathsf T}\|_{2}^{2}\ge0$. Conversely, if $X$ has a negative eigenvalue with eigenvector $v$, take $Y=vv^{\mathsf T}\ge0$; then $\operatorname{tr}(XY)=v^{\mathsf T}Xv&lt;0$, so $X$ is not in the dual cone.</p>
 <p><strong>The proof uses only the factorisation $X=A^{\mathsf T}A$, which is the spectral theorem.</strong> The self-duality is therefore a consequence of positivity of the Hilbert–Schmidt norm, and it is the reason the cone is the natural domain of semidefinite programming.</p>
 <p><strong>The dual of the open cone is the closed cone, and the dual of a face is a face.</strong> The duality exchanges $F_U$ with $F_{U^{\perp}}$: a positive semidefinite $Y$ pairs nonnegatively with every element of $F_U$ exactly when its image lies in $U^{\perp}$.</p>
 <p><strong>Self-duality is a real phenomenon.</strong> Over $\mathbb{C}$ the analogue is the cone of positive definite Hermitian matrices, self-dual for the Hermitian form $\operatorname{tr}(X^{*}Y)$; the statement survives, and what changes is the dimension, from $n(n+1)/2$ to $n^{2}$.</p>
 <h2 id="the-symmetric-cone-and-the-jordan-algebra">The Symmetric Cone and the Jordan Algebra</h2>
 <p><strong>Definition.</strong> A cone is <strong>symmetric</strong> when it is open, convex, self-dual, and homogeneous under its linear automorphism group.</p>
-<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{>0}$ is a symmetric cone, of rank $n$ and dimension $n(n+1)/2$.</p>
+<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{&gt;0}$ is a symmetric cone, of rank $n$ and dimension $n(n+1)/2$.</p>
 <p><em>Proof.</em> Open, convex and self-dual are proved above; homogeneous under $\mathrm{GL}_n(\mathbb{R})$ modulo the scalars, which act trivially on the cone. The <strong>rank</strong> of a symmetric cone is the length of a maximal chain of faces, minus one: the chain runs from the origin through the faces of dimensions $1,3,\dots,n(n+1)/2$, so it has $n+1$ elements and the rank is $n$.</p>
 <p><strong>The cone is the cone of squares of the Jordan algebra $\operatorname{Sym}_n$.</strong> In the Jordan product $X\circ Y=\tfrac12(XY+YX)$ one has $X\circ X=X^{2}$, so the cone is $\{X^{2}:X\in\operatorname{Sym}_n\}$, and the interior is the set of squares of invertible elements. This is the definition of the symmetric cone of a formally real Jordan algebra.</p>
 <p><strong>The determinant is the characteristic function of the cone.</strong> $\det$ is a polynomial that is positive exactly on the cone, homogeneous of degree $n$, and it satisfies $\det(A^{\mathsf T}XA)=\det(A)^{2}\det X$, which is the transformation law of the characteristic function. Its logarithm is strictly concave on the cone, and that concavity is the analytic expression of the self-duality.</p>
@@ -137,7 +137,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\operatorname{Sym}_n^{>0}$</td>
+<td>$\operatorname{Sym}_n^{&gt;0}$</td>
 <td>the open cone of positive definite matrices</td>
 </tr>
 <tr>

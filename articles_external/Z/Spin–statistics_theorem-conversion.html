@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin–Statistics Theorem — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Spin–statistics_theorem.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinstatistics-theorem"><strong>Spin–Statistics Theorem</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Spin–statistics theorem</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Spin–statistics_theorem-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Spin–statistics_theorem.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Spin–statistics_theorem.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the spin–statistics theorem: the proof that integer-spin particles obey Bose–Einstein statistics and half-integer-spin particles Fermi–Dirac, the symmetry of the many-body wavefunction under exchange that this implies, and the assumptions — relativity and positivity of energy — on which the proof rests.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-statement">The statement</h3>
+<p>"The spin–statistics theorem proves that the observed relationship between the intrinsic spin of a particle (angular momentum not due to the orbital motion) and the quantum particle statistics of collections of such particles is a consequence of the mathematics of quantum mechanics."</p>
+<h3 id="the-two-cases">The two cases</h3>
+<p>"the many-body wave function for elementary particles with integer spin (bosons) is symmetric under the exchange of any two particles, whereas for particles with half-integer spin (fermions), the wave function is antisymmetr[ic]." Antisymmetry is what produces the Pauli exclusion principle, so the theorem is the reason matter has structure.</p>
+<h3 id="what-the-proof-needs">What the proof needs</h3>
+<p>The theorem is not a consequence of the algebra of rotations alone; it requires relativity and a positive energy spectrum. Without those assumptions the connection between spin and statistics can be broken, which is why the article treats the hypotheses as part of the statement.</p>
+<p>"A consequence of the theorem is that non-interacting particles with integer spin obey Bose–Einstein statistics, while those with half-integer spin obey Fermi–Dirac statistics.[1][2][3] Background The statistics of indistinguishable particles is among the most fundamental of physical effects."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-antisymmetry-is-forced-by-positivity-of-energy">1. Antisymmetry is forced by positivity of energy</h3>
+<p><strong>The idea.</strong> The spin-statistics link is a theorem only when the energy is bounded below and the theory is Lorentz invariant. Commutation relations alone permit the wrong assignment. This is a <strong>reading</strong> with a precise content: the theorem's hypotheses are physical.</p>
+<p><strong>What it would add.</strong> A statement of what the corpus's spin-statistics article is proving and what it is assuming, since the algebraic route may not reproduce the positivity requirement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, at the hypotheses.</p>
+<p><strong>What stands in the way.</strong> The corpus's argument is algebraic and may not need positivity, in which case the two proofs differ in strength and the relationship must be stated rather than assumed.</p>
+<h3 id="2-antisymmetry-is-what-makes-matter-stable-not-a-symmetry-among-others">2. Antisymmetry is what makes matter stable, not a symmetry among others</h3>
+<p><strong>The idea.</strong> The exclusion principle follows from antisymmetry and not from a separate postulate. Degeneracy pressure, shell structure and chemistry all descend from the sign.</p>
+<p><strong>What it would add.</strong> A consequence the corpus can cite when it needs a physical reason that the sign matters, rather than treating it as a labelling convention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, at the conclusion.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the statement, the two cases and the hypotheses are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

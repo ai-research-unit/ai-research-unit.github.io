@@ -82,14 +82,14 @@ H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangled
 $$</p>
 <p><strong>Proposition (the Gram matrix).</strong> In the complex basis $e_1,e_2$ the Gram matrix is the identity,
 $$
-\bigl(H(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+\bigl(H(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> $H(e_1,e_1)=1$, $H(e_1,e_2)=0$, $H(e_2,e_1)=0$, $H(e_2,e_2)=1$.</p>
 <p><strong>Proposition (sesquilinearity and positivity).</strong> The form is linear in the first slot and conjugate-linear in the second,
 $$
 H(\lambda Q_1,Q_2)=\lambda H(Q_1,Q_2),\qquad H(Q_1,\lambda Q_2)=\overline{\lambda}H(Q_1,Q_2),
 $$
-it is Hermitian, $H(Q_2,Q_1)=\overline{H(Q_1,Q_2)}$, and it is positive definite, $H(Q,Q)>0$ for $Q\neq0$.</p>
+it is Hermitian, $H(Q_2,Q_1)=\overline{H(Q_1,Q_2)}$, and it is positive definite, $H(Q,Q)&gt;0$ for $Q\neq0$.</p>
 <p><em>Proof.</em> The two linearity rules are read on the definition. The Hermitian symmetry is the identity $\overline{Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}}=Q_{2\blacktriangle}\overline{Q_{1\blacktriangle}}$, and likewise for the descending triangle. The positivity is $\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2$, a sum of non-negative terms, zero only when both coordinates vanish.</p>
 <p><strong>Remark (the only definite form of the three).</strong> The form $H$ is the only one of the three whose isotropic set is the origin. <strong>Its inertia over $\mathbb{R}$ is $(4,0)$, and it is the form that defines the topology of the space.</strong> The other two have non-trivial isotropic sets and indefinite real pictures; their role is geometric and not metric.</p>
 <p>The real and imaginary parts of $H$ are computed in <em>The Realification of $\mathbb{C}^2$</em>: the real part is the Euclidean metric $g$ of inertia $(4,0)$ and the imaginary part is the symplectic form $-\Omega$, where $\Omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$ is the Kähler form. The relation is
@@ -137,7 +137,7 @@ $$
 $$</p>
 <p><strong>Proposition (alternation, Gram matrix and nondegeneracy).</strong> The form is $\mathbb{C}$-bilinear and alternating, $\omega(Q_2,Q_1)=-\omega(Q_1,Q_2)$; its Gram matrix in the complex basis is
 $$
-\bigl(\omega(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\bigl(\omega(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},
 $$
 of determinant $1$; and it is nondegenerate.</p>
 <p><em>Proof.</em> The alternation is the exchange of the two coordinates. The entries are $\omega(e_1,e_2)=1$, $\omega(e_2,e_1)=-1$ and the two diagonal entries $\omega(e_k,e_k)=0$. The determinant is $1$.</p>
@@ -245,7 +245,7 @@ $$</p>
 <p><strong>The Gram matrices in the complex basis are the identity, the identity and the standard symplectic matrix; in the real basis the six real forms take the normal forms collected below.</strong></p>
 <p><strong>Theorem (the complex Gram matrices).</strong> In the complex basis $e_1,e_2$,
 $$
-G_H=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad G_B=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad G_\omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+G_H=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix},\qquad G_B=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix},\qquad G_\omega=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The entries are computed in the three propositions above.</p>
 <p>The real pictures are read in the real basis $e_1,ie_1,e_2,ie_2$, in this order.</p>
@@ -265,7 +265,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{Im}H$</td>
-<td>$\operatorname{diag}(J_0,J_0)$ with $J_0=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>$\operatorname{diag}(J_0,J_0)$ with $J_0=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$</td>
 <td>symplectic, rank $4$</td>
 </tr>
 <tr>
@@ -275,24 +275,24 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{Im}B$</td>
-<td>two blocks $\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>two blocks $\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$</td>
 <td>$(2,2)$</td>
 </tr>
 <tr>
 <td>$\operatorname{Re}\omega$</td>
-<td>$\begin{pmatrix}0&A\\-A&0\end{pmatrix}$, $A=\operatorname{diag}(1,-1)$</td>
+<td>$\begin{pmatrix}0&amp;A\\-A&amp;0\end{pmatrix}$, $A=\operatorname{diag}(1,-1)$</td>
 <td>symplectic, rank $4$</td>
 </tr>
 <tr>
 <td>$\operatorname{Im}\omega$</td>
-<td>$\begin{pmatrix}0&B\\-B&0\end{pmatrix}$, $B=\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}0&amp;B\\-B&amp;0\end{pmatrix}$, $B=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$</td>
 <td>symplectic, rank $4$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Remark (the sign of the Kähler form).</strong> The form $\operatorname{Im}H$ is $-\Omega$, with $\Omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$. <strong>The sign is not a convention of notation but the statement that $\Omega$ is positive on the complex lines</strong>: on the line spanned by $e_1$, $\Omega(e_1,ie_1)=1$, while $\operatorname{Im}H(e_1,ie_1)=-1$. The Kähler form is taken positive, and the Hermitian form is $H=g-i\Omega$.</p>
 <h2 id="summary">Summary</h2>
-<p>The space $\mathbb{C}^2$ carries three canonical forms. The Hermitian form $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$ is sesquilinear, positive definite, of Gram matrix $I_2$ and of real inertia $(4,0)$; it gives the Euclidean norm and, with the complex structure, the decomposition $H=g-i\Omega$ into the metric and the Kähler form. The complex bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ is symmetric, nondegenerate and of Gram matrix $I_2$; its isotropic set is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$, and in the holomorphic coordinates $u(Q)=Q_{\blacktriangle}+iQ_{\blacktriangledown}$, $v(Q)=Q_{\blacktriangle}-iQ_{\blacktriangledown}$ it is the product $B=uv$. The holomorphic symplectic form $\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$ is alternating, nondegenerate and of Gram matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$; it vanishes on every complex line, so the complex lines are its Lagrangian subspaces, and its square is zero while $\omega\wedge\overline{\omega}=2\Omega^2$.</p>
+<p>The space $\mathbb{C}^2$ carries three canonical forms. The Hermitian form $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$ is sesquilinear, positive definite, of Gram matrix $I_2$ and of real inertia $(4,0)$; it gives the Euclidean norm and, with the complex structure, the decomposition $H=g-i\Omega$ into the metric and the Kähler form. The complex bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ is symmetric, nondegenerate and of Gram matrix $I_2$; its isotropic set is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$, and in the holomorphic coordinates $u(Q)=Q_{\blacktriangle}+iQ_{\blacktriangledown}$, $v(Q)=Q_{\blacktriangle}-iQ_{\blacktriangledown}$ it is the product $B=uv$. The holomorphic symplectic form $\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$ is alternating, nondegenerate and of Gram matrix $\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$; it vanishes on every complex line, so the complex lines are its Lagrangian subspaces, and its square is zero while $\omega\wedge\overline{\omega}=2\Omega^2$.</p>
 <p>The three are related by $H(Q_1,Q_2)=B(Q_1,\overline{Q}_2)$, by the Lagrange identity $B(Q_1,Q_2)^2+\omega(Q_1,Q_2)^2=B(Q_1,Q_1)B(Q_2,Q_2)$, and by their normal forms in the coordinates $u,v$. The distinction between $\operatorname{Im}H$ and $\omega$ is the central one: $\operatorname{Im}H$ is real, of type $(1,1)$, invariant under $J$, nondegenerate on every complex line and equal to $-\Omega$; $\omega$ is complex, of type $(2,0)$, anti-invariant under $J$, zero on every complex line and related to $\Omega$ only by the quadratic identity $\omega\wedge\overline{\omega}=2\Omega^2$. The Kähler form is $\Omega=-\operatorname{Im}H$, never $\omega$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -329,7 +329,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$</td>
-<td>the holomorphic symplectic form, Gram matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+<td>the holomorphic symplectic form, Gram matrix $\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$\omega\wedge\overline{\omega}=2\Omega^2$</td>

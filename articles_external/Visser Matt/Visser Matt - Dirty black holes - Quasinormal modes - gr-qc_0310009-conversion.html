@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty black holes: quasinormal modes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes - gr-qc_0310009.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirty-black-holes-quasinormal-modes"><strong>Dirty black holes: quasinormal modes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0310009v3</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. J. M. Medved, Damien Martin, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 3 December 2003 (dated 2 October 2003)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes - gr-qc_0310009-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes - gr-qc_0310009.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dirty black holes - Quasinormal modes - gr-qc_0310009.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper finds the asymptotic quasinormal modes of generic static spherically symmetric black holes surrounded by arbitrary matter. The method locates the complex poles of the scattering amplitude in the first Born approximation, so it is analytic rather than numerical. The leading result is that the asymptotic spacing between modes equals the surface gravity, whatever the surrounding matter is. The authors check the method against Schwarzschild, extend it to two-horizon spacetimes, and report partial progress for degenerate horizons, while noting that the method has so far only reached the leading term.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"We investigate the asymptotic nature of the quasinormal modes for 'dirty' black holes — generic static and spherically symmetric spacetimes for which a central black hole is surrounded by arbitrary 'matter' fields."</p>
+<h3 id="the-result">The result</h3>
+<p>"We demonstrate that, to the leading asymptotic order, the [imaginary] spacing between modes is precisely equal to the surface gravity, independent of the specifics of the black hole system."</p>
+<h3 id="the-method">The method</h3>
+<p>"Our analytical method is based on locating the complex poles in the first Born approximation for the scattering amplitude."</p>
+<h3 id="the-checks">The checks</h3>
+<p>"We first verify that our formalism agrees, asymptotically, with previous studies on the Schwarzschild black hole. The analysis is then generalized to more exotic black hole geometries. We also extend considerations to spacetimes with two horizons and briefly discuss the degenerate-horizon scenario."</p>
+<h3 id="the-limitation">The limitation</h3>
+<p>"the simplicity of our method has a price: we have (so far) only been able to locate the leading term in the asymptotic expansion of the quasinormal mode. Meanwhile, the next-order term — that is, the 'offset' — has spark[ed]" further work.</p>
+<h3 id="the-virtue-claimed">The virtue claimed</h3>
+<p>"The virtues of our formal treatment include generality and a straightforward analytical approach that does not obscure the physical process being investigated."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-surface-gravity-fixes-the-spectrum">1. Surface gravity fixes the spectrum</h3>
+<p><strong>The idea.</strong> The asymptotic mode spacing is the surface gravity, independent of the matter outside.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> asks which horizon quantities are robust. Here one is: the spacing survives arbitrary surroundings. That is a positive result the article currently lacks, and it shows not every horizon property needs global information.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> Only the leading term is obtained. Ranked first, because it is a robustness result and the article's argument is about robustness.</p>
+<h3 id="2-poles-of-the-scattering-amplitude">2. Poles of the scattering amplitude</h3>
+<p><strong>The idea.</strong> Quasinormal modes are poles, and a Born approximation locates them.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code> computes scattering amplitudes and their poles for barriers. The identification of modes with poles connects that machinery to black hole physics, which the article does not make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/one-dimensional-scattering-in-biquaternionic-form.md</code>, in the section on the transfer matrix.</p>
+<p><strong>What stands in the way.</strong> The Born approximation is not the article's method. Ranked second.</p>
+<h3 id="3-degenerate-horizons-resist-the-method">3. Degenerate horizons resist the method</h3>
+<p><strong>The idea.</strong> When two horizons merge, the derivation stalls.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> would benefit from a case where a horizon quantity stops being determined, since it argues that some horizons lack the structure needed for standard results.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The failure is technical rather than conceptual. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

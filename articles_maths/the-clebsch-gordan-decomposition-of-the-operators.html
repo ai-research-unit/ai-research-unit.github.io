@@ -105,9 +105,9 @@ with $H\lvert j,m\rangle=m\lvert j,m\rangle$. A finite weight string must end: a
 <p><strong>The two squares of a module.</strong> Let $V$ be a complex vector space of dimension $n$. The <strong>symmetric square</strong> $\operatorname{Sym}^{2}V$ is the quotient of $V\otimes V$ by the subspace spanned by the differences $v\otimes w-w\otimes v$; it has dimension $n(n+1)/2$. The <strong>alternating square</strong> $\Lambda^{2}V$, also written $\bigwedge^{2}V$ and read <em>lambda squared</em>, is the quotient of $V\otimes V$ by the subspace spanned by the sums $v\otimes w+w\otimes v$; it has dimension $n(n-1)/2$. At $n=4$ the two dimensions are $10=4\cdot5/2$ and $6=4\cdot3/2$, and they sum to the sixteen of the tensor square.</p>
 <p><strong>The kets.</strong> $\lvert j,m\rangle$ is a name for the weight vector of weight $m$ in the carrier $V_j$, so that $m$ runs over $j,j-1,\dots,-j$ and the $2j+1$ kets are a basis of $V_j$. The two factors of the tensor square are distinguished by their order, and the sixteen products are written $\lvert j_1,m_1\rangle\otimes\lvert j_2,m_2\rangle$; a vector of the coupled basis is written $\lvert J,M\rangle$. The ket is a name and not a new object: every ket is a vector of the space, and the symbol $\langle j_1,m_1;j_2,m_2\vert J,M\rangle$ is the coefficient of the product in the state, a number.</p>
 <p><strong>The coefficients.</strong> The <strong>Clebsch–Gordan coefficients</strong> are the numbers $\langle j_1,m_1;j_2,m_2\vert J,M\rangle$ of the change of basis between the products and the coupled states. The <strong>Condon–Shortley phase</strong> is the convention that fixes each highest weight vector $\lvert J,J\rangle$ by the requirement that its coefficient on the product $\lvert j_1,j_1\rangle\otimes\lvert j_2,J-j_1\rangle$ be positive; with that convention the coefficients are real.</p>
-<p><strong>The $3$-$j$ symbol.</strong> $\begin{pmatrix}j_1&j_2&J\\ m_1&m_2&-M\end{pmatrix}$ is the Wigner $3$-$j$ symbol, defined from the coefficients by
+<p><strong>The $3$-$j$ symbol.</strong> $\begin{pmatrix}j_1&amp;j_2&amp;J\\ m_1&amp;m_2&amp;-M\end{pmatrix}$ is the Wigner $3$-$j$ symbol, defined from the coefficients by
 $$
-\langle j_1,m_1;j_2,m_2\vert J,M\rangle=(-1)^{j_1-j_2+M}\sqrt{2J+1}\,\begin{pmatrix}j_1&j_2&J\\ m_1&m_2&-M\end{pmatrix}.
+\langle j_1,m_1;j_2,m_2\vert J,M\rangle=(-1)^{j_1-j_2+M}\sqrt{2J+1}\,\begin{pmatrix}j_1&amp;j_2&amp;J\\ m_1&amp;m_2&amp;-M\end{pmatrix}.
 $$
 It vanishes unless $m_1+m_2=M$ and unless the three labels satisfy the triangle condition $\lvert j_1-j_2\rvert\le J\le j_1+j_2$.</p>
 <p><strong>The symbol $\subset$.</strong> The statement $V\subset W$ means that $V$ is a linear subspace of $W$. In this article it is applied only to carriers: $V_3\subset\operatorname{Sym}^{2}V_{3/2}$ means that the carrier of label three lies inside the symmetric square of the module, as one of its two summands; and $V_2\subset\Lambda^{2}V_{3/2}$ means the same for the carrier of label two inside the alternating square.</p>
@@ -222,7 +222,7 @@ For the square, $j_1=j_2=\tfrac32$, the sign is $(-1)^{J+1}$, so the coefficient
 <p><em>Proof.</em> Each property is read from the definition and from the symmetries of the coefficients; the permutation of two columns exchanges a factor and a coupled label, which is the exchange used in the previous proposition.</p>
 <p><strong>Corollary (orthogonality of the $3$-$j$ symbol).</strong> The row orthogonality of the coefficients becomes
 $$
-\sum_{m_1,m_2}(2J+1)\begin{pmatrix}j_1&j_2&J\\ m_1&m_2&-M\end{pmatrix}^{2}=1 ,
+\sum_{m_1,m_2}(2J+1)\begin{pmatrix}j_1&amp;j_2&amp;J\\ m_1&amp;m_2&amp;-M\end{pmatrix}^{2}=1 ,
 $$
 so the symbol is normalised at each $J$ and $M$.</p>
 <p><em>Proof.</em> Substitute the definition into the row orthogonality and use $\delta_{JJ'}$ at $J=J'$.</p>

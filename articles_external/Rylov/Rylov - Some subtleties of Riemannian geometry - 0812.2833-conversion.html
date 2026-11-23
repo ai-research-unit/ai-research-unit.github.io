@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some Subtleties of Riemannian Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Some subtleties of Riemannian geometry - 0812.2833.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="some-subtleties-of-riemannian-geometry"><strong>Some Subtleties of Riemannian Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0812.2833 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 December 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Some subtleties of Riemannian geometry - 0812.2833-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Some subtleties of Riemannian geometry - 0812.2833.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Some subtleties of Riemannian geometry - 0812.2833.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reports a technical obstruction found while trying to generalise dynamics beyond Riemannian geometry, and the obstruction is inside Riemannian geometry itself. There are two standard ways to put Maxwell's equations into a curved space: replace partial derivatives by covariant ones in the equation, or replace the Minkowski world function by the Riemannian one in the solution. They do not agree. The disagreement is a term that vanishes in four-dimensional Minkowski space and does not vanish in general, and from it he concludes that the conventional presentation is problematic.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-procedures">The two procedures</h3>
+<p>The first: "write dynamic equations (2.1) in the Riemannian space-time geometry, con- ventionally one replaces the partial derivatives by covariant derivatives. One obtains instead of (2."</p>
+<p>The second: Let us replace the world function $\sigma_{M}$ by the world function $\sigma_{R}$ in the expression (2.5) and substitute the result into the relation of the type of (2.4).</p>
+<p>The verdict: "It means, that the transition from the space-time of Minkowski to the Riemannian space-time by means of replacement of the world function of Minkowski in the relations (2.3) - (2.5) and the replacement procedure of partial derivatives by the covariant ones in the dynamic equations (2.1) are different procedures."</p>
+<h3 id="the-computation">The computation</h3>
+<p>The difference appears in the coincidence limit of the d'Alembertian of the delta function. With the identity $x\delta''(x)+2\delta'(x)=0$ and the Riemannian relation $\sigma_{R|k}g^{ik}\sigma_{R|i}=2\sigma_{R}$, he obtains</p>
+<p>$$g^{ik}\nabla_{i}\nabla_{k}\left(\delta(2\sigma_{R}(x,x'))\right)=2\delta'(2\sigma_{R}(x,x'))\left(g^{ik}\sigma_{R|k|i}-4\right).$$</p>
+<p>And the key observation: "If the Riemannian space-time coincides with the 4-dimensional space-time of Minkowski, the rhs of (2.10) vanishes, because the quantity g ik σ M|k|i is a scalar, which in the inertial coordinate system has the form g ik σ M|k|i = 4 (2." $g^{ik}\sigma_{M|k|i}=4$. Then: "e, that the relation (2.11) takes place only in the 4-dimensional space-time of Minkowski. In the case of arbitrary Riemannian space-time the equation is not valid, in gen- eral, and rhs of (2.10) does not vanish, in general."</p>
+<h3 id="the-diagnosis-of-the-conventional-method">The diagnosis of the conventional method</h3>
+<p>"e of deduction of dynamic equations (2.6) in the Riemannian geometry is founded on a use of curvilinear coordinate system. Dynamic equations (2.1) are written in the curvilinear coordinate system of the space-time of Minkowski in the form (2.6). Thereafter one declares, that the form (2.6) of dynamic equations is valid in arbitrary Riemannian space-time. However, it appears, that this declaration is incompatible with the replacement of the world function σ M by the world function σ R in solutions of dynamic equations (2.6) in the Minkowski space-time. A use of the coordinate system in deduction of dynamic equations (2."</p>
+<h3 id="the-two-geometries-and-their-defects">The two geometries and their defects</h3>
+<p>"e. Thus, the σ-Riemannian geometry is multivariant, in general, and consistent." Against: "The conventional Riemannian geometry is single-variant, but inconsistent." And the reason the usual trick does not help: "such an approach is not consecutive, because the multivariant geometry is nonaxiomatizable, and one cannot turn the nonaxiomatizable geometry into axiomatizable one by the prohibition of the remote vector equivalence."</p>
+<p>The closing is honest about scope: "It is possible, that, the same problem will appear at an attempt of generalization of the gravitation equation. One should look for the way around these problems."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-prescriptions-for-curved-space-that-disagree">1. Two prescriptions for curved space that disagree</h3>
+<p><strong>The idea.</strong> A <strong>test</strong>: replacing derivatives by covariant derivatives and replacing the flat propagator by the curved one are different operations, and their difference is a computable term proportional to $g^{ik}\sigma_{|k|i}-4$.</p>
+<p><strong>What it would add.</strong> The corpus's Maxwell article writes the field equations in a curved background and takes minimal coupling as given. This is a finite computation that would decide whether the corpus's prescription agrees with the propagator-based one — and if it does not, which of the two its predictions rest on. No new theory is needed to run it, only the coincidence limit of the curved propagator.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The discrepancy is a contact term, supported at coincidence, so it may cancel against a counterterm in any renormalised quantity. A contact term that never appears in an observable is a formal problem, not a physical one, and the paper does not say which it is.</p>
+<h3 id="2-consistency-and-single-variance-are-exclusive">2. Consistency and single-variance are exclusive</h3>
+<p><strong>The idea.</strong> A <strong>dilemma</strong>: a geometry can be single-variant, axiomatisable and inconsistent, or multivariant, nonaxiomatisable and consistent. The conventional Riemannian geometry buys definiteness by prohibiting equivalence of remote vectors, and the prohibition is not a repair.</p>
+<p><strong>What it would add.</strong> The corpus is axiomatic and single-variant by construction — its algebra gives definite answers — and it has never asked what that costs. This is a precise statement of the cost, and it is a question about the corpus's form rather than its content, which the fundamental-elements article is the right place to hold. It also gives the word nonaxiomatisable a sharper meaning than not yet axiomatised.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Inconsistency here means that the axioms conflict at some points, which is a claim about a particular axiomatisation, not about Riemannian geometry as used in practice. Physicists use Riemannian geometry without meeting a contradiction, so the dilemma is formal unless one is exhibited.</p>
+<h3 id="3-the-dimension-dependent-coincidence-identity">3. The dimension-dependent coincidence identity</h3>
+<p><strong>The idea.</strong> A <strong>number</strong> that looks like an accident: $g^{ik}\sigma_{|k|i}=4$ holds in four dimensions and only there, and it is exactly what makes the flat-space Maxwell equation work in the coincidence limit. Change the dimension and the constant changes with it.</p>
+<p><strong>What it would add.</strong> The corpus's dimensional analyses treat four as a choice of signature and algebra. An identity whose constant equals the dimension ties the number of dimensions to a property of the propagator, which is stronger than a convention. Stating it would let the corpus say whether its four dimensions do any work beyond bookkeeping.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identity is a property of the world function's coincidence limit, not a selection principle, and any dimension $n$ gives $n$ the same way. It constrains nothing; it tracks the dimension and could not explain why four.</p>
+<p>The rank: the disagreeing prescriptions first, because it is runnable; the consistency dilemma second, because it names a cost; the dimension identity last, because it explains nothing.</p>
+<p>The remaining items in one line each: the definition of vector equivalence through the world function alone, with no coordinate system, manifold or dimension, which is the definitional core of the whole programme; the observation that the $\sigma$-Riemannian geometry is built by deformation of Euclidean propositions rather than by deduction, so it cannot be inconsistent; and the remark that the Dirac particle's skeleton has three points, which is where this set's particle papers begin.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

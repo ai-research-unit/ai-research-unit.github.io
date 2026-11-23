@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey of analogue spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Survey of analogue spacetimes - 1206.2397.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="survey-of-analogue-spacetimes"><strong>Survey of analogue spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>review article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1206.2397v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 June 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Survey of analogue spacetimes - 1206.2397-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Survey of analogue spacetimes - 1206.2397.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Survey of analogue spacetimes - 1206.2397.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a survey of systems whose excitations see an effective curved geometry. The template is Unruh's acoustic black hole, where sound is dragged by a moving fluid and trapped behind an acoustic horizon. The survey then covers optics, non-relativistic and relativistic acoustics, Bose–Einstein condensates, surface waves, and optical fibres. Each case is reduced to a propagation equation that can be read as a metric.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-field">The field</h3>
+<p>"Analogue spacetimes, (and more boldly, analogue models both of and for gravity), have attracted significant and increasing attention over the last decade and a half."</p>
+<h3 id="the-template">The template</h3>
+<p>"Perhaps the most straightforward physical example, which serves as a template for most of the others, is Bill Unruh's model for a dumb hole, (mute black hole, acoustic black hole), wherein sound is dragged along by a moving fluid — and can even be trapped behind an acoustic horizon."</p>
+<h3 id="the-value">The value</h3>
+<p>"Analogue spacetimes provide general relativists with e[asy access to otherwise inaccessible physics]"</p>
+<h3 id="the-themes">The themes</h3>
+<p>"Optics: the Gordon metric and its generalizations", "Non-relativistic acoustics: the Unruh metric", "Relativistic acoustics", "Bose–Einstein condensates", "Surface waves and blocking horizons", "Optical fibres/optical gla[ss]"</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"The propagation of excitations (either particles or waves) over a background can often (not always) be given a geometric interpretation in therms of some 'analogue spacetime'."</p>
+<h3 id="the-expectation">The expectation</h3>
+<p>"As such a geometric interpretation exists, there is a strong likelihood of significant cross-fertilization of ideas and techniques between general relativity and other branches of physics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-geometry-is-generic">1. Geometry is generic</h3>
+<p><strong>The idea.</strong> Many equations of motion for small disturbances look like wave equations on a metric.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> argues that geometry comes from algebra. The survey shows it also comes from any linearised medium, which weakens the claim that one algebra is the unique source.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergence.</p>
+<p><strong>What stands in the way.</strong> The metrics are effective, not fundamental. Ranked first, because it directly bears on the target's central claim.</p>
+<h3 id="2-labouratory-horizons">2. Labouratory horizons</h3>
+<p><strong>The idea.</strong> Acoustic horizons let horizon physics be tested experimentally.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues about horizons in general. A tabletop horizon is the case where the argument can be checked.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of examples.</p>
+<p><strong>What stands in the way.</strong> The analogue is only as good as the correspondence. Ranked second.</p>
+<h3 id="3-gordon-metric">3. Gordon metric</h3>
+<p><strong>The idea.</strong> A moving dielectric produces a metric for light.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code> treats propagation in media. The Gordon metric is the covariant form of that treatment.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>, in the discussion of media.</p>
+<p><strong>What stands in the way.</strong> The Gordon metric is classical. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

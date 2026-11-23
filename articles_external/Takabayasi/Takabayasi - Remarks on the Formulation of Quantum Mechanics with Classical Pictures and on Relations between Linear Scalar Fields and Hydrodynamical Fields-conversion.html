@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on Relations between Linear Scalar Fields and Hydrodynamical Fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarks-on-the-formulation-of-quantum-mechanics-with-classical-pictures-and-on-relations-between-linear-scalar-fields-and-hydrodynamical-fields"><strong>Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on Relations between Linear Scalar Fields and Hydrodynamical Fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>9</strong> (1953) 187–222, No. 3, March 1953; received 15 December 1952</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on Relations between Linear Scalar Fields and Hydrodynamical Fields-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on Relations between Linear Scalar Fields and Hydrodynamical Fields.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-equation-of-state-and-the-barotropic-condition.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Remarks on the Formulation of Quantum Mechanics with Classical Pictures and on Relations between Linear Scalar Fields and Hydrodynamical Fields.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The sequel to the 1952 paper, in five moves. It computes actual trajectories for non-stationary states and shows them fluctuating, with the energy of each trajectory changing at a rate set by the time derivative of the quantum potential. It extends the ensemble reading to the Klein–Gordon equation, and finds that the extension requires an extra scalar field of a definite form — a density-dependent mass shift — valid only where a gradient condition holds. It converts that hydrodynamical form into a field theory of matter interacting with its own electromagnetic field, shows that the limit of vanishing quantum potential is exactly Dirac's new classical theory of electrons, and proposes the rotational generalisation as a new nonlinear field equation that might describe mesons. It generalises the ensemble picture to wave equations with sources, where the density no longer conserves along a trajectory. An appendix argues against the Markoff-process reading of quantum mechanics on the ground that a Fokker–Planck kernel is a real transition probability while the quantum kernel is a complex unitary amplitude.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="trajectories-that-fluctuate-and-an-energy-that-is-not-conserved">Trajectories that fluctuate, and an energy that is not conserved</h3>
+<p>For the free Schrödinger equation he writes the trajectory equation $d\varpi/dt=v(\varpi,t)=\nabla S/m$ and integrates it for superpositions of two plane waves, obtaining closed expressions. The result is that the trajectories generally show very complicated fluctuations. The mechanism is stated exactly: the quantum potential $-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}R}{R}$ is time dependent in a non-stationary state, so</p>
+<p>$$
+\frac{d\mathcal{E}}{dt}=\frac{\partial\mathcal{E}}{\partial t}=-\frac{\hbar^{2}}{2m}\frac{\partial}{\partial t}\!\left(\frac{\nabla^{2}R}{R}\right),
+\qquad
+\mathcal{E}=\frac{p^{2}}{2m}+V-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}R}{R},
+$$</p>
+<p><strong>so an individual member of the ensemble is a non-conservative system even where the Hamiltonian is time independent, and only the ensemble mean conserves.</strong> In place of Liouville's theorem the ensemble obeys $\frac{1}{\varpi}\frac{d\varpi}{dt}=\mathrm{div}\,v$, so the cloud's local volume grows or shrinks at the divergence of the flow rather than being preserved — a difference of our ensemble from Gibbs' one where $df/dt$ vanishes.</p>
+<h3 id="the-interference-stress-exerts-no-force">The interference stress exerts no force</h3>
+<p>Working out the same superpositions, he computes the stress in the fringe pattern and finds it to be a pure shear-like pressure in one direction:</p>
+<p>$$
+\sigma_{ij}=-\frac{\hbar^{2}}{2m}K_iK_j,
+\qquad K=k_1-k_2 ,
+$$</p>
+<p>all components vanishing except along $\vec K$, and constant. "Thus there acts only a constant non-isotropic pressure in the $K$-direction, which makes no contribution to force." He adds that distributions of this type "are free from extra forces", referring back to the 1952 paper.</p>
+<h3 id="the-kleingordon-equation-needs-an-extra-field-and-the-extra-field-is-a-mass-shift">The Klein–Gordon equation needs an extra field, and the extra field is a mass shift</h3>
+<p>Substituting $\phi=Re^{iS/\hbar}$ gives</p>
+<p>$$
+(\partial_\mu S-eA_\mu/c)^{2}+m^{2}c^{2}-\frac{\hbar^{2}\Box R}{R}=0,
+\qquad
+\partial_\mu\!\left(P(\partial_\mu S-eA_\mu/c)\right)=0,
+$$</p>
+<p>and he points out that these cannot simply be read as a Hamilton–Jacobi equation and a continuity equation: the quantity $u_\mu=(\partial_\mu S-eA_\mu/c)/m$ is not a four-velocity unless $\Box R/R=0$, and the charge density $j^{0}=P(\partial^{0}S-eA^{0}/c)/m$ is not positive definite. The repair is to introduce a scalar field $U$ that shifts the mass, $m\to m+fU/c^{2}$, with Lagrangian $L=-(mc+fU/c^{2})\sqrt{-u_\mu u^{\mu}}+(e/c)u_\mu A_\mu$, and then to identify</p>
+<p>$$
+fU=mc^{2}(\Gamma-1),
+\qquad
+\Gamma=\left(1-\frac{\hbar^{2}}{m^{2}c^{2}}\frac{\Box R}{R}\right)^{1/2}
+$$</p>
+<p>together with $P_0=\Gamma P$. The identification holds only where</p>
+<p>$$
+\frac{\hbar^{2}}{m^{2}c^{2}}\left|\frac{\Box R}{R}\right|&lt;1
+$$</p>
+<p>everywhere, and he says so plainly: The correspondence of the above picture to the Klein-Gordon equation is imperfect in that it fails when the condition breaks down. At small density fluctuation the field reduces to $fU\simeq-\hbar^{2}\Box R/2mR$, and at $\hbar\to0$ to the classical Hamilton–Jacobi equation.</p>
+<h3 id="the-hydrodynamical-form-and-the-elimination-of-the-electromagnetic-field">The hydrodynamical form, and the elimination of the electromagnetic field</h3>
+<p>He then writes the Klein–Gordon field as a relativistic fluid. In the irrotational case the velocity is a gradient and $\partial_\mu u_\nu-\partial_\nu u_\mu=-(e/mc)F_{\mu\nu}$; in the rotational case the curl is free, and the electromagnetic variables are eliminated in favour of matter variables plus two scalars $\xi,\eta$ carrying the vortical freedom, an application of the method due to Dirac, and corresponds to the Clebsch's transformation in non-relativistic hydrodynamics. He remarks that the rotational version is a second-order equation in $u_\mu$ and so does not determine the motion from $P$ and $u_\mu$ alone without $\partial u/\partial t$ initially.</p>
+<h3 id="the-vanishing-quantum-potential-limit-is-diracs-new-classical-theory">The vanishing-quantum-potential limit is Dirac's new classical theory</h3>
+<p>Taking $\hbar\to0$ in that hydrodynamical system yields, with $\lambda=mP$ and $k=mc/e$,</p>
+<p>$$
+\partial_\nu F_{\mu\nu}=\lambda u_\mu ,
+\qquad
+\partial_\mu u_\nu-\partial_\nu u_\mu=-\frac{e}{mc}F_{\mu\nu},
+\qquad
+\partial_\mu(\lambda u_\mu)=0 ,
+$$</p>
+<p>which is nothing but the equations introduced in Dirac's 'new classical theory of electrons'. The hydrodynamical model therefore <em>derives</em> Dirac's theory as a limit rather than postulating it, and it explains Dirac's simplifying assumption: The simpleness of this electrodynamics is essentially due to the assumption to regard electrons as a continuum and to restrict its motion to the quasi-irrotational. He notes that the rotational flow then implies more than the Pauli–Weisskopf field, and that quantising the nonlinear field "may be difficult" and would lead to a far wider theory. </p>
+<h3 id="sources-break-the-ensemble">Sources break the ensemble</h3>
+<p>"the possibility of representing a wave equation by the picture of trajectory ensemble such as was treated thus far depends on the linear and homogeneous property of the original wave equation." For a Schrödinger equation with a source the picture survives only in a weakened form: $\partial_tP+\mathrm{div}(P\nabla S/m)$ acquires a source term $2\varrho R\sin(S-\eta)/\hbar$, the density no longer conserves along a trajectory, and the extra force "hallics 207 depends upon the velocity potentia!.". He calls the resulting picture "just of similar type to the two-fluid picture for the case of wave equation with spin". </p>
+<h3 id="against-the-markoff-reading-appendix-b-contrasts">Against the Markoff reading Appendix B contrasts</h3>
+<p>$P(x,t)=\int P(x_0,t_0)T(x_0,t_0;x,t)\,dx_0$ with $\psi(x,t)=\int K(x,t;x_0,t_0)\psi(x_0,t_0)\,dx_0$ and observes that the Fokker–Planck equation carries only the first and second moments,"higher moments assumed to vanish", whereas the quantum continuity equation is exact. A stochastic process whose transition function is real and positive cannot reproduce the interference of two amplitudes. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>A density-dependent mass shift is an equation of state, and the corpus's barotropic article is the right home for it</li>
+</ol>
+<p><strong>The idea.</strong> The scalar field that makes the Klein–Gordon fluid consistent is not a potential but a shift of the mass by a function of the density: $fU=mc^{2}(\Gamma-1)$ with $\Gamma=(1-\frac{\hbar^{2}}{m^{2}c^{2}}\frac{\Box R}{R})^{1/2}$, so the fluid's rest mass per particle depends on the local curvature of the density. It is a barotropic relation in the strict sense — pressure as a function of density alone — and it is the <em>quantum</em> barotropic relation. </p>
+<p><strong>What it would add.</strong> The quantum member of a family the corpus lists but does not populate. <em>The Equation of State and the Barotropic Condition</em> (<code>articles_physics/the-equation-of-state-and-the-barotropic-condition.md</code>) derives the baroclinic torque and the barotropic families, and finds that a barotropic fluid has $p=p(\rho)$ with the torque vanishing. The corpus's quantum fluids are barotropic by construction but the corpus never writes the relation for the quantum fluid as an $m(\rho)$ statement. Takabayasi's $\Gamma$ does exactly that, and it has a property the corpus's Euler equation cannot show: the relation is <em>not</em> analytic at $\Gamma=1$, and the validity condition $\frac{\hbar^{2}}{m^{2}c^{2}}|\Box R/R|&lt;1$ is the statement that the fluid description fails before the mass shift becomes imaginary. <strong>So the equation of state has a domain, and the domain is where the density curvature is smaller than the Compton scale.</strong> That is a much sharper statement of the corpus's "where the condition fails" section than anything the corpus contains. </p>
+<p><strong>Where it lands.</strong> The barotropic article's §<em>Where the Condition Fails</em>, as the worked instance, and <em>The Klein–Gordon Equation in Biquaternionic Polar Variables</em> (<code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code>), whose §<em>The quantum potential depends on the density alone</em> is the same statement in the simpler case. </p>
+<p><strong>What stands in the way.</strong> Nothing algebraic: the identification is a rewriting. The obstacle is interpretive, and it is one the corpus has already crossed — a mass that depends on the density is not a mass, and the corpus's polar-variable articles insist that the mass term is a constant of the element. The import must present $\Gamma$ as an effective, field-level mass and not as a property of the particle, or it contradicts the corpus's own reading. </p>
+<ol>
+<li>The stress of a fringe pattern is a pure shear with no force, and that is a fact about interference</li>
+</ol>
+<p><strong>The idea.</strong> For a superposition of two plane waves the quantum stress is $$ \sigma_{ij}=-\frac{\hbar^{2}}{2m}K_iK_j , $$ constant in space, non-isotropic, and aligned with the difference of the wave vectors. Its divergence vanishes, so it exerts no force on the fluid, even though it is a large stress. </p>
+<p><strong>What it would add.</strong> A worked case for a claim the corpus makes abstractly. <em>The Equation of State and the Barotropic Condition</em> (<code>articles_physics/the-equation-of-state-and-the-barotropic-condition.md</code>) and <em>The Vorticity Form and the Irrotational Condition</em> (<code>articles_physics/the-vorticity-form-and-the-irrotational-condition.md</code>) both say that a stress whose divergence vanishes is invisible to the Euler equation. The fringe example shows this in the one place where the stress is <em>maximal</em>: the interference pattern, where the density is modulated at the scale of the de Broglie wavelength, has a stress of order $\hbar^{2}K^{2}/2m$ and a force of exactly zero. <strong>So the quantum stress is not a force even where it is largest, and the interference pattern carries no momentum transfer.</strong> The corpus's double-slit article treats the fringes as a density modulation and does not state that the stress there vanishes identically by constancy. </p>
+<p><strong>Where it lands.</strong> <em>The Double-Slit Experiment in Biquaternionic Form</em> (<code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>), as the stress-theoretic reading of the fringes, and the barotropic article's §<em>The Two Terms of the Force</em>. </p>
+<p><strong>What stands in the way.</strong> The result is one line of algebra for a special state, and the corpus's general stress formula already contains it. It is worth stating because it is <em>checkable</em> and because it closes a question the double-slit article leaves open — where the momentum goes when a particle lands on a fringe — but it ranks second because it adds a case and not a structure. I verified the formula: with $R=2|\cos(Kx/2)|$ and $\sigma_{xx}=\frac{\hbar^{2}}{4m}P\,\partial_x^{2}\log P$, sympy returns $-\hbar^{2}K^{2}/2m$ exactly, matching his printed result. </p>
+<h3 id="3-diracs-new-classical-theory-of-electrons-is-the">3. Dirac's new classical theory of electrons is the</h3>
+<p><strong>The idea.</strong> Setting the quantum potential to zero in the hydrodynamical Klein–Gordon system gives exactly Dirac's 1951–52 theory of electrons as a charged continuum: $\partial_\nu F_{\mu\nu}=\lambda u_\mu$ with $\lambda=mP$, the flow quasi-irrotational, the velocity itself playing the role of the electromagnetic potential up to the mass-to-charge ratio $k=mc/e$. <strong>Where it lands.</strong> The nonlinear Maxwell article's §<em>The Derivation</em>, as a matter-generated example, and <em>The Reverse Madelung Map: Fluid to Nonlinear Wave</em> (<code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>), whose §<em>The Nonlinear Family</em> is exactly the set this example belongs to.</p>
+<h3 id="4-the-individual-trajectory-is-non-conservative-and-the-ensemble-is-not-a-gibbs-ensemble">4. The individual trajectory is non-conservative, and the ensemble is not a Gibbs ensemble</h3>
+<p><strong>The idea.</strong> $\dfrac{d\mathcal{E}}{dt}=-\dfrac{\hbar^{2}}{2m}\dfrac{\partial}{\partial t}\!\left(\dfrac{\nabla^{2}R}{R}\right)$ along a trajectory, and $\dfrac{1}{\varpi}\dfrac{d\varpi}{dt}=\mathrm{div}\,v$ for a comoving volume. <strong>Where it lands.</strong> The Gibbs-path article's §<em>The Path</em>, as the dynamical counterpart, and <em>The Thermodynamics of a Quantum Fluid: Status of the Derivation</em> (<code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>).</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

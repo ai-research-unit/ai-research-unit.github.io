@@ -99,18 +99,18 @@ with domain $\mathcal D(L)$ the set of $f\in C_0(E)$ for which the limit exists 
 <p><strong>Theorem (the generator is closed and densely defined).</strong> For a Feller semigroup, $\mathcal D(L)$ is dense in $C_0(E)$, the generator is closed, and it determines the semigroup: two Feller semigroups with the same generator coincide on $C_0(E)$.</p>
 <p><em>Proof.</em> The density and the closedness are the standard properties of the generator of a strongly continuous contraction semigroup; the uniqueness is the Hille–Yosida theorem below. The statements are <em>Markov Chains and Processes</em>.</p>
 <h3 id="the-resolvent">The resolvent</h3>
-<p><strong>Definition.</strong> For $\lambda>0$ the <strong>resolvent</strong> of the semigroup is the bounded operator
+<p><strong>Definition.</strong> For $\lambda&gt;0$ the <strong>resolvent</strong> of the semigroup is the bounded operator
 $$
 R_\lambda f=\int_0^\infty \exp(-\lambda t)P_tf\,dt .
 $$</p>
-<p><strong>Theorem (resolvent identity).</strong> For $\lambda,\mu>0$,
+<p><strong>Theorem (resolvent identity).</strong> For $\lambda,\mu&gt;0$,
 $$
 \boxed{\;R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L)\;},
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
 <p><em>Proof.</em> The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial/\partial t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.</p>
 <h3 id="the-hilleyosida-characterisation">The Hille–Yosida characterisation</h3>
-<p><strong>Theorem (Hille–Yosida).</strong> A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative, and the range of $\lambda-L$ is dense for some, equivalently every, $\lambda>0$. Equivalently, $\lambda-L$ is invertible with $\|\lambda R_\lambda\|\le1$ for every $\lambda>0$.</p>
+<p><strong>Theorem (Hille–Yosida).</strong> A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative, and the range of $\lambda-L$ is dense for some, equivalently every, $\lambda&gt;0$. Equivalently, $\lambda-L$ is invertible with $\|\lambda R_\lambda\|\le1$ for every $\lambda&gt;0$.</p>
 <p><em>Proof.</em> The necessity is the contraction property of the semigroup written through the resolvent; the sufficiency is the construction of the semigroup as the strong limit of the Yosida approximations $P_t=\lim_n \exp(tLnR_n)$, by the exponential formula. The theorem is <em>Markov Chains and Processes</em>, and it is the functional-analytic characterisation that makes the generator an equivalent description of the process.</p>
 <h2 id="the-kolmogorov-equations-and-the-discrete-case">The Kolmogorov Equations and the Discrete Case</h2>
 <h3 id="the-forward-and-backward-equations">The forward and backward equations</h3>
@@ -134,11 +134,11 @@ $$</p>
 <p><strong>Theorem (the reversible case).</strong> If $\pi$ is invariant and the semigroup is <strong>reversible</strong>, $\langle P_tf,g\rangle_\pi=\langle f,P_tg\rangle_\pi$ for all $t$, then the generator is self-adjoint on $L^2(\pi)$ and the semigroup consists of self-adjoint contractions; the spectral gap of $L$ is the exponential rate of convergence of the semigroup to the constants.</p>
 <p><em>Proof.</em> Self-adjointness of the generator is the derivative of the symmetry of $P_t$ at $t=0$, and the converse is the exponential formula; the rate is the spectral theorem applied to the self-adjoint generator. The reversibility itself is <em>Reversible Markov Chains and Time Reversal</em>, later in this category.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>Example (the Poisson process).</strong> Let $X_t$ count the arrivals of rate $\lambda>0$: the increments are independent and $X_{t+s}-X_s\sim\mathrm{Pois}(\lambda t)$. The semigroup is $P_tf(n)=\sum_{k\ge0}\exp(-\lambda t)(\lambda t)^kf(n+k)/k!$, and the generator is the difference operator
+<p><strong>Example (the Poisson process).</strong> Let $X_t$ count the arrivals of rate $\lambda&gt;0$: the increments are independent and $X_{t+s}-X_s\sim\mathrm{Pois}(\lambda t)$. The semigroup is $P_tf(n)=\sum_{k\ge0}\exp(-\lambda t)(\lambda t)^kf(n+k)/k!$, and the generator is the difference operator
 $$
 Lf(n)=\lambda\bigl(f(n+1)-f(n)\bigr),
 $$
-with domain the bounded functions; for $\mu>0$ the resolvent is
+with domain the bounded functions; for $\mu&gt;0$ the resolvent is
 $$
 R_\mu f(n)=\frac{1}{\mu+\lambda}\sum_{k\ge0}\Bigl(\frac{\lambda}{\mu+\lambda}\Bigr)^k f(n+k),
 $$
@@ -148,14 +148,14 @@ $$
 L=\tfrac12\Delta,
 $$
 the Laplacian being <em>Brownian Motion and Stochastic Calculus</em>, written; the semigroup is self-adjoint on $L^2(\mathbb R^d)$ and has no invariant probability, since Lebesgue measure is only invariant up to the normalisation.</p>
-<p><strong>Example (the Ornstein–Uhlenbeck semigroup).</strong> For $dX_t=-\theta X_t\,dt+\sigma\,dW_t$ with $\theta,\sigma>0$ the semigroup is $P_tf(x)=\mathbb E[f(\exp(-\theta t)x+\sigma\int_0^t\exp(-\theta(t-s))dW_s)]$, the generator is
+<p><strong>Example (the Ornstein–Uhlenbeck semigroup).</strong> For $dX_t=-\theta X_t\,dt+\sigma\,dW_t$ with $\theta,\sigma&gt;0$ the semigroup is $P_tf(x)=\mathbb E[f(\exp(-\theta t)x+\sigma\int_0^t\exp(-\theta(t-s))dW_s)]$, the generator is
 $$
 L=\tfrac{\sigma^2}{2}\frac{d^2}{dx^2}-\theta x\frac{d}{dx},
 $$
 and the invariant law is the normal distribution $N(0,\sigma^2/(2\theta))$, for which the semigroup is reversible and self-adjoint with purely discrete spectrum, the Hermite eigenvalues $-n\theta$.</p>
-<p><strong>Example (the birth–death chain).</strong> For $q_{n,n+1}=b_n$, $q_{n,n-1}=a_n$ the generator is $Lf(n)=b_n(f(n+1)-f(n))+a_n(f(n-1)-f(n))$, and the invariant law $\pi(n)=\pi(0)\prod_{k<n}b_k/a_{k+1}$ exists exactly when the product converges; the simple random walk on $\mathbb Z$ is the case $a_n=b_n=\frac12$ and is null recurrent, so it has no invariant probability.</p>
+<p><strong>Example (the birth–death chain).</strong> For $q_{n,n+1}=b_n$, $q_{n,n-1}=a_n$ the generator is $Lf(n)=b_n(f(n+1)-f(n))+a_n(f(n-1)-f(n))$, and the invariant law $\pi(n)=\pi(0)\prod_{k&lt;n}b_k/a_{k+1}$ exists exactly when the product converges; the simple random walk on $\mathbb Z$ is the case $a_n=b_n=\frac12$ and is null recurrent, so it has no invariant probability.</p>
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
-<p>The transition operator degenerates in four configurations. First, the generator may not determine the semigroup on the whole space: on a non-Feller semigroup, or on a state space where the process is explosive, the semigroup must be specified on a boundary, and the generator only controls the interior. Second, on an infinite state space the semigroup may fail to be continuous at $t=0$ in the strong operator topology unless the Feller condition is imposed, and then the generator is not densely defined. Third, $\lambda-L$ may fail to be invertible for some $\lambda>0$ when $L$ is not dissipative, which is the failure of the Hille–Yosida hypotheses; the process then has no semigroup of contractions. Fourth, the invariant probability need not exist even for a recurrent process, as the simple random walk shows, so the $L^2(\pi)$ spectral theory has no invariant state on which to rest; the reversible case, where the self-adjointness is available, is the boundary on which the spectral statements are sharpest.</p>
+<p>The transition operator degenerates in four configurations. First, the generator may not determine the semigroup on the whole space: on a non-Feller semigroup, or on a state space where the process is explosive, the semigroup must be specified on a boundary, and the generator only controls the interior. Second, on an infinite state space the semigroup may fail to be continuous at $t=0$ in the strong operator topology unless the Feller condition is imposed, and then the generator is not densely defined. Third, $\lambda-L$ may fail to be invertible for some $\lambda&gt;0$ when $L$ is not dissipative, which is the failure of the Hille–Yosida hypotheses; the process then has no semigroup of contractions. Fourth, the invariant probability need not exist even for a recurrent process, as the simple random walk shows, so the $L^2(\pi)$ spectral theory has no invariant state on which to rest; the reversible case, where the self-adjointness is available, is the boundary on which the spectral statements are sharpest.</p>
 <h2 id="summary">Summary</h2>
 <p>A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0=I$ and $P_{s+t}=P_sP_t$, acting by $P_tf(x)=\mathbb E_x[f(X_t)]$ and $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$; it is Feller when it preserves $C_0(E)$ and is strongly continuous at the origin, and then its generator $L=\lim_{t\to0}(P_t-I)/t$ is closed and densely defined and determines the semigroup. The resolvent $R_\lambda=\int_0^\infty \exp(-\lambda t)P_t\,dt$ satisfies the resolvent identity and inverts $\lambda-L$, and the Hille–Yosida theorem characterises the generators of Feller semigroups by density, dissipativity and the range condition. The Kolmogorov backward and forward equations are the differentiated forms of the semigroup law, reducing on a finite state space to $P_t=\exp(tL)$ and on a countable state space to the $Q$-matrix exponential. The invariant measures are characterised by $\pi(Lf)=0$ on a core, they are the fixed vectors of $\pi P_t=\pi$, and the reversible case is the self-adjoint one in which the spectral gap of the generator gives the exponential rate. The Poisson process, the Brownian motion with the heat semigroup and the generator $\frac12\Delta$, the Ornstein–Uhlenbeck semigroup and the birth–death chain are the standard examples; the adjoint semigroup is <em>The Adjoint of the Transition Operator</em>, later in this category.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

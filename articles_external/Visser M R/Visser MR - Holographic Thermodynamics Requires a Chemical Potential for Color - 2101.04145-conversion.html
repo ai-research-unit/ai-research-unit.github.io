@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic Thermodynamics Requires a Chemical Potential for Color — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Thermodynamics Requires a Chemical Potential for Color - 2101.04145.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-thermodynamics-requires-a-chemical-potential-for-color"><strong>Holographic Thermodynamics Requires a Chemical Potential for Color</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2101.04145v4 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 19 May 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D (per the arXiv comment; volume not printed in the PDF)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic Thermodynamics Requires a Chemical Potential for Color - 2101.04145-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Thermodynamics Requires a Chemical Potential for Color - 2101.04145.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Thermodynamics Requires a Chemical Potential for Color - 2101.04145.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the thermodynamic Euler equation for high-energy states of large-$N$ gauge theories from the dependence of the extensive quantities on $N$, and shows that the result carries a chemical potential for the number of colours. That Euler equation is dual to the generalised Smarr formula for black holes with a negative cosmological constant, so the "extended" thermodynamics of black holes is a field-theory statement, not a gravitational one. The energy of the field theory is the internal energy and not an enthalpy, and no pressure–volume term appears.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-euler-equation">The Euler equation</h3>
+<p>From the large-$N$ scaling of the extensive quantities, and differentiating with respect to the scaling parameter at $\alpha=1$, the author obtains</p>
+<p>$$E=TS+\nu_iB_i+\mu C, \qquad (paper\ 2,\ 6)$$</p>
+<p>where $\nu_i$ are chemical potentials for conserved quantities $B_i$ such as charge and angular momentum, $\mu$ is the chemical potential for the central charge, and $C\sim L^{d-1}/G$ is the number of degrees of freedom. "Notice that pressure and volume do not appear in this Euler equation, since the volume does not generically scale with $C$", the exception being the infinite-volume limit.</p>
+<h3 id="the-dictionary">The dictionary</h3>
+<p>With the bulk quantities identified as $E=M$, $T=\kappa/2\pi$, $S=A/4G$ (paper 1), and with $C\sim L^{d-1}/G$, the boundary Euler equation is dual to the generalised Smarr formula</p>
+<p>$$M=\frac{d-1}{d-2}\frac{\kappa A}{8\pi G}-\frac{1}{d-2}\frac{\Theta\Lambda}{4\pi G} \qquad (paper\ \text{Sec. I})$$</p>
+<p>written here in $d+1$ spacetime dimensions. The $\Lambda$ term is reproduced by the variation of $C$, through $\partial E/\partial C$, and not by a bulk pressure.</p>
+<h3 id="the-disagreement-with-the-pressure-interpretation">The disagreement with the pressure interpretation</h3>
+<p>"It was argued in [20] that varying $\Lambda$ in the bulk does not only correspond to varying $C$ (or $N$), but also to varying the volume $V$ of the spatial boundary geometry." The author shows that for a different choice of boundary metric, varying $\Lambda$ corresponds to varying $C$ and $E$ only, not $V$; so the pressure reading is metric dependent and the chemical-potential reading is not.</p>
+<h3 id="what-follows-for-the-extended-first-law">What follows for the extended first law</h3>
+<p>The author states the consequence: "the extended first law of black holes cannot be solely written in terms of the variation of bulk pressure, $P=-\Lambda/8\pi G$, if both $\Lambda$ and $G$ are allowed to vary, but can be consistently interpreted as a field theory first law." Also, $M$ is the internal energy of the field theory, whereas in the pressure interpretation it is an enthalpy.</p>
+<h3 id="the-generality-claimed">The generality claimed</h3>
+<p>The dictionary for $\mu$ is stated for Lifshitz as well as relativistic cases, with the rescaled variables $E\to ER^z$, $T\to TR^z$, $\tilde Q=QL$ chosen so that the products are Lifshitz scale invariant, and the Smarr formula is recovered for that case as well.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-chemical-potential-for-the-number-of-degrees-of-freedom">1. A chemical potential for the number of degrees of freedom</h3>
+<p><strong>The idea.</strong> The number of colours is an extensive variable with its own conjugate potential, and the Euler relation is incomplete without it. This is a <strong>formula</strong>: one more term, and a definition of what it multiplies.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives Smarr by scaling and states the cosmological-constant correction as imported, with open question 4 asking whether the thermodynamic volume is meaningful. This paper answers that the conjugate of $\Lambda$ is not a volume at all but the count of degrees of freedom, and that the corpus's question has been posed in the wrong variable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4, and its Smarr section.</p>
+<p><strong>What stands in the way.</strong> The derivation uses $C\sim L^{d-1}/G$ and a large-$N$ gauge theory; the corpus has no $N$, no gauge group of that kind and no $G$. The cost is the whole holographic dictionary, but the <em>form</em> of the answer — a chemical potential for a count — is importable as a warning.</p>
+<h3 id="2-energy-is-internal-energy-not-enthalpy">2. Energy is internal energy, not enthalpy</h3>
+<p><strong>The idea.</strong> Whether $M$ is an energy or an enthalpy depends on which variable is varied, and the field-theory reading fixes it as the internal energy. This is a <strong>reading</strong> that resolves an ambiguity the thermodynamic literature leaves open.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> identifies energy with a trace and mass with a norm, and its black-hole article identifies $M$ with the mass of the hole. Neither says which thermodynamic potential the mass plays. This paper gives a criterion.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The criterion is holographic; in a framework with no boundary field theory the answer would have to come from somewhere else. Ranked second.</p>
+<h3 id="3-the-euler-relation-as-the-carrier-of-the-physics">3. The Euler relation as the carrier of the physics</h3>
+<p><strong>The idea.</strong> Of all the thermodynamic relations, the Euler equation is the one that contains the essential information, because it determines the energy as a function of the other variables; the first law alone does not. This is a <strong>reading</strong> of which equation matters.</p>
+<p><strong>What it would add.</strong> The corpus's black-hole article derives Smarr by scaling and treats it as a check on the first law. This paper's emphasis reverses the order of importance: the homogeneous relation is primary and the first law is its differential.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the Smarr section.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a change of emphasis within a derivation the corpus already has. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

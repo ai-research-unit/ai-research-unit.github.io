@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmography: extracting the Hubble series from the supernova data — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmography - Extracting the Hubble series from the supernova data -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmography-extracting-the-hubble-series-from-the-supernova-data"><strong>Cosmography: extracting the Hubble series from the supernova data</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0703122v3</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 31 July 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>50 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmography - Extracting the Hubble series from the supernova data - gr-qc_0703122-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmography - Extracting the Hubble series from the supernova data - gr-qc_0703122.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmography - Extracting the Hubble series from the supernova data - gr-qc_0703122.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The long paper performs the cosmographic programme in detail. It keeps the FLRW geometry as a working hypothesis but does not use the Einstein equations, so questions about the equation of state are deferred. It fits several inter-related cosmographic expansions to supernova datasets, with explicit treatment of statistical and systematic uncertainties and of the redshift range covered. The conclusion is that the case for acceleration is suggestive but not established, and that the fitted cosmological parameters depend strongly on which distance variable is used in the least-squares fit.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"Cosmography (cosmokinetics) is the part of cosmo[logy that can be developed with] minimal dynamic assumptions. One keeps the geometry [of] spacetime, at least as a working hypothesis, but doe[s not use the field] equations (Einstein equations), unless and until abs[olutely necessary]. [Thus] it is possible to defer questions about the equation [of state] and concentrate more directly on the observational s[ide]."</p>
+<h3 id="the-method">The method</h3>
+<p>"the 'big picture' is best brought into focus by performing a [cosmographic fit] to the Hubble relation, from the current ep[och outwards]."</p>
+<h3 id="what-is-done">What is done</h3>
+<p>"We perform a number of inter-related co[smographic fits to several] supernova datasets. We pay particular atten[tion to statistical] and systematic uncertainties, and also to t[he] scale and manner of representing the redshi[ft]."</p>
+<h3 id="the-main-conclusion">The main conclusion</h3>
+<p>"While the 'preponderance of evidence' certa[inly suggests acceleration], we would argue that (based on the supernova [data alone this is not] supported 'beyond reasonable doubt'."</p>
+<h3 id="the-dependence-on-the-distance-variable">The dependence on the distance variable</h3>
+<p>"The modelling uncertainties we have encountered depend on the distance variable one chooses to do the least squares fit ($d_L$, $d_F$, $d_P$, $d_Q$, $d_A$). There is no good physics reason for preferring any one of these distance variables over the others."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"regardless of one's views on how to combine formal estimates of uncertainty, the very fact that different distance scales yield data-fits with such widely discrepant values strongly suggests the need for extreme caution in interpreting the supernova data."</p>
+<h3 id="why-the-problem-is-not-fixed-by-more-terms">Why the problem is not fixed by more terms</h3>
+<p>"One can always minimize the modelling uncertainties by going to a higher-order polynomial — unfortunately at the price of unacceptably increasing the statistical uncertainties — and we have checked that this makes the overall situation worse."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-fit-depends-on-a-choice-with-no-physical-basis">1. The fit depends on a choice with no physical basis</h3>
+<p><strong>The idea.</strong> Five distance variables are equally defensible, and the fitted parameters differ between them.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> compares a framework's numbers with data. This paper shows that the standard analysis has an internal ambiguity larger than the framework's deviations from it might be. That is a substantial qualification of any claim that data excludes a framework.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> It weakens standard results and could be misused as a shield. Ranked first, because it changes how much weight the article may put on cosmological fits.</p>
+<h3 id="2-deferred-dynamics">2. Deferred dynamics</h3>
+<p><strong>The idea.</strong> A cosmology can be developed to a large extent without any equation of state.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats the missing source as the central problem. This paper shows a whole literature of results that need no source, which bounds the damage.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> The results are about fitting, not about predicting. Ranked second.</p>
+<h3 id="3-higher-order-makes-things-worse">3. Higher order makes things worse</h3>
+<p><strong>The idea.</strong> Adding parameters reduces modelling bias and increases statistical error, and the net effect is worse.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> notes the framework has free functions. Here more freedom is shown to be actively harmful when fitting. That is a quantitative reason to prefer a framework with few parameters, which the catalogue could use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on free functions.</p>
+<p><strong>What stands in the way.</strong> The trade-off is statistical and specific to these datasets. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

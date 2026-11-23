@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-formulation-of-quantum-mechanics-in-terms-of-ensemble-in-phase-space"><strong>The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>11</strong> (1954) 341–373, Nos. 4–5, April–May 1954; received 16 November 1953</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The third paper of the programme, and the one that completes it in a second language. It takes the Wigner–Moyal distribution in phase space, which evolves by a Liouville-like equation with $\hbar$-dependent corrections, and asks the question the earlier literature had left open: which distributions correspond to <em>pure</em> states. The answer is a set of nonlinear, quadratic, integral subsidiary conditions — six symmetric and three antisymmetric in the three coordinates — which, when projected onto configuration space, reduce to two simple statements: the momentum dispersion tensor at a point equals minus a quarter of $\hbar^{2}$ times the Hessian of the logarithm of the density, and the mean momentum field is irrotational. From those, every higher moment of momentum is determined by the zeroth and first. Purity in phase space is therefore not an inequality but a set of equalities, and the paper proves the phase-space formulation equivalent to the configuration-space one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-distribution-and-its-equation">The distribution and its equation</h3>
+<p>From the density matrix he forms, following Wigner and Moyal,</p>
+<p>$$
+f(x,p)=\frac{1}{(2\pi\hbar)^{3}}\int \rho\!\left(x+\tfrac{y}{2},x-\tfrac{y}{2}\right)e^{-ip\cdot y/\hbar}\,dy ,
+$$</p>
+<p>which is real but not positive, and which evolves by a Liouville-like equation linear in $f$. Mean values of symmetrically ordered functions come out as integrals of $f$. The manifold of admissible $f$ is larger than that of wave functions: any positive $f$ is a mixed state, so "a mixing of states corresponds to a superposition with positiv~ coefficients of relevant distribution functions". The task is to cut the manifold down to the pure states.</p>
+<h3 id="purity-cannot-be-linear">Purity cannot be linear</h3>
+<p>He argues structurally. All the relations valid for arbitrary mixtures — the mean values, the time-development equation, the positivity condition — are linear in $f$ except positivity. Hence the condition selecting pure states "must be some non-linear relation", and further it must cut a function of six variables down to "o{two re~l functions of three independent variables". The uncertainty relation $\overline{\Delta x^{2}}\,\overline{\Delta p^{2}}\geq\hbar^{2}/4$ is nonlinear and necessary, but not sufficient.</p>
+<h3 id="the-conditions">The conditions</h3>
+<p>Starting from $\rho^{2}=\rho$ and writing $\rho(x,x')=\phi(x)\phi^{*}(x')$, he converts the local form $\rho(x,x'')=\int\rho(x,x'')\rho(x'',x')$ into conditions on $f$. They split by Fourier transformation into a symmetric tensor equation and an antisymmetric vector equation:</p>
+<p>$$
+\left(\partial_{i}\partial_{k}-\ldots\right)*f=c\,\partial_{i}f\,\partial_{k}f ,
+\qquad
+\left(\partial_{i}\partial_{k}-\ldots\right)*f =\ldots ,
+$$</p>
+<p>with the convolution taken in $p$ and $c=\hbar^{2}/4$. He names the symmetric set the <strong>quantum condition</strong> and the antisymmetric set the <strong>irrotationality condition</strong>, and notes the pun deliberately: the 'quantum condition' in the old quantum theory determines stationary (pure) states, while our 'quantum condition' selects pure states out of mixtures.</p>
+<h3 id="what-the-conditions-say-projected-onto-space">What the conditions say, projected onto space</h3>
+<p>Integrating over $p$ and using the factorisation of convolutions gives the readable content. With $P(x)=\int f\,dp$, $P_{i}(x)=\int p_{i}f\,dp$, $P_{ik}(x)=\int p_{i}p_{k}f\,dp$ and $\bar p_{i}=P_{i}/P$,</p>
+<p>$$
+\frac{P_{ik}}{P}-\frac{P_{i}P_{k}}{P^{2}}=-\frac{\hbar^{2}}{4}\,\frac{\partial^{2}\log P}{\partial x_{i}\partial x_{k}},
+\qquad
+\mathrm{curl}\,\bar p=0 .
+$$</p>
+<p><strong>The first is the whole theory in one line.</strong> For a pure state the momentum covariance at a point, per particle, is not free: it is minus a quarter of $\hbar^{2}$ times the curvature of the logarithm of the density. Where the density is concave the covariance is positive; where it is convex it is negative, and a negative variance is the phase-space face of the fact that $f$ is not a probability. He says so in a footnote: the mean deviation of momentum components $\overline{p_{i}^{2}}-(\bar p_{i})^{2}$ at a space point is not necessarily positive for our ensemble whose df. $f(x,p)$ is not necessarily positive, and is equal to $-\frac{\hbar^{2}}{4}\partial^{2}\log P/\partial x_{i}^{2}$ for pure states. I checked the identity numerically at four points for a two-Gaussian superposition with a relative phase: the normalised covariance and $-\frac{\hbar^{2}}{4}(\log P)''$ agree to $2\times10^{-16}$, and one of the four points has a negative covariance, in the region where $\log P$ is convex.</p>
+<h3 id="every-higher-moment-is-determined">Every higher moment is determined</h3>
+<p>Multiplying by $p_{j}$ and projecting again gives ten relations for the third-order moment; the fourth order gives eighteen; and the pattern continues. "uation ~ K[cp]=(nli. aj8t-n 2 j2m.L1 +V(x) )CP=O, (4·29) because the above p must satisfy its equation of motion (3.2) and so CP(x, t) in (4.27) satisfies 358 T. Takabayasi K[¢(X)]¢<em>(X') -K</em>[¢*(x')]¢(x) =0. Consequently we can uniquely determine the wave function¢(x, t) that corresponds to the given df. from (4.27) and the 'supplementary condition' (4." That is the counting proof that the manifold has been cut to two functions of three variables.</p>
+<h3 id="equivalence-with-the-configuration-space-ensemble">Equivalence with the configuration-space ensemble</h3>
+<p>With the conditions in hand he proves the two formulations equivalent: the phase-space distribution of a pure state is the Wigner transform of the wave function of the configuration-space ensemble, and the configuration-space ensemble is recovered by projection. The two are not rival pictures but the same theory in two sets of variables, and the proof is the paper's stated purpose.</p>
+<h3 id="positivity-and-the-last-section">Positivity, and the last section</h3>
+<p>He closes by discussing the positivity condition on $f$ and the pure-state conditions expressed symmetrically in $x$ and $p$, obtaining the dual family of relations with the roles exchanged: the position covariance is fixed by the curvature of $\log Q(p)$ in momentum space. A distribution cannot in general satisfy both families with positive moments, which is the phase-space statement of the uncertainty relation.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>Purity is an equation, not an inequality: the second moment is pinned to the density curvature</li>
+</ol>
+<p><strong>The idea.</strong></p>
+<p>$$
+\frac{P_{ik}}{P}-\frac{P_{i}P_{k}}{P^{2}}=-\frac{\hbar^{2}}{4}\,\partial_{i}\partial_{k}\log P ,
+\qquad
+\mathrm{curl}\,\bar p=0 .
+$$</p>
+<p>For a pure state the momentum covariance at a point is a functional of the density, computed by differentiating $\log P$ twice. Nothing else is free; the third and higher moments follow by the same recursion.</p>
+<p><strong>What it would add.</strong> The criterion the corpus's Wigner article lacks. <em>The Wigner Function in Biquaternionic Form</em> (<code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code>) defines the function, verifies that its zeroth moment is the density and its first moment the current, and derives the classical limit — its §<em>The width is the quantum, and it is the quantum potential</em> comes closest, since the width of the distribution is $\hbar$-sized. It does not state that for a pure state the local width is <em>fixed by the density's second derivative</em>, and it does not give a test that distinguishes a pure Wigner function from a mixture without diagonalising anything. Takabayasi's equation is that test, it is local, and it is algebraic. <strong>It also settles what "the width is the quantum" means quantitatively: the width is not merely of order $\hbar$, it is exactly $\frac{\hbar}{2}\sqrt{-\partial^{2}\log P}$.</strong></p>
+<p><strong>Where it lands.</strong> The Wigner article, immediately after the marginals, as the purity criterion; and <em>Relativistic Wigner Function and Quantum Kinetics</em> (<code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code>), where the same test would be the covariant statement that a distribution is a pure state's.</p>
+<p><strong>What stands in the way.</strong> The corpus's Wigner function is a biquaternionic object with a temporal slot and two imaginary structures, and the second-moment condition is stated for the scalar case. The generalisation to the corpus's object is not automatic, since the covariance tensor would have to be built from the element's own conjugations. That is a real calculation, and it is the reason the item ranks first: the calculation is well posed and the answer is likely to be the corpus's existing width formula, which would turn a coincidence into a theorem.</p>
+<ol>
+<li>A pure state's mean momentum field is irrotational, so vorticity means mixedness</li>
+</ol>
+<p><strong>The idea.</strong> $\mathrm{curl}\,\bar p=0$ is a pure-state condition. Therefore if the mean momentum field of a distribution has nonzero curl, the distribution is not a pure state.</p>
+<p><strong>What it would add.</strong> A diagnostic inverse to the corpus's vorticity articles. <em>The Clebsch Potentials and the Rank of the Vorticity</em> (<code>articles_physics/the-clebsch-potentials-and-the-rank-of-the-vorticity.md</code>) and <em>The Vorticity Form and the Irrotational Condition</em> (<code>articles_physics/the-vorticity-form-and-the-irrotational-condition.md</code>) treat vorticity as a property of the fluid's velocity field, generated at nodes and by the spin, and the spin-half articles establish that the spin fluid has rank-two vorticity for every solution. Takabayasi's condition says that for a <em>spinless, single-component</em> state, vorticity of the mean momentum is a signature of mixture: a pure state cannot have it. The two statements are consistent — the spin-half rank-two vorticity comes from the frame, not from the mean momentum — but the corpus never states the spin-0 purity side, and stating it converts "irrotational" from a fact about single-valued phases into a criterion with empirical content. </p>
+<p><strong>Where it lands.</strong> The vorticity article's §<em>The Irrotational Condition</em>, as the state-theoretic converse, and the Clebsch article's remark on rank. </p>
+<p><strong>What stands in the way.</strong> The corpus's spin-0 fluid is built on a <em>field</em>, not on a state ensemble, so "mixture" has no place in its ontology; the import requires the density-matrix reading that only the Wigner article holds. The obstacle is bookkeeping and not mathematics, and it ranks second for that reason. </p>
+<h3 id="3-a-negative-variance-is-the-moment-form-of-wigner-negativity">3. A negative variance is the moment form of Wigner negativity</h3>
+<p><strong>The idea.</strong> $\overline{p_{i}^{2}}-(\bar p_{i})^{2}=-\frac{\hbar^{2}}{4}\partial_{i}^{2}\log P$ can be negative wherever $\log P$ is convex. <strong>Where it lands.</strong> The Wigner article's §<em>Negativity, and what it forbids</em>, as the quantitative statement; and <em>The Equation of State and the Barotropic Condition</em> (<code>articles_physics/the-equation-of-state-and-the-barotropic-condition.md</code>), where only the Gaussian gives a pressure is already established by another route.</p>
+<h3 id="4-math54-plays-two-roles-in-one-formulation-one-dynamical-and-one-kinematical">4. $\hbar$ plays two roles in one formulation, one dynamical and one kinematical</h3>
+<p><strong>The idea.</strong> In the time-development equation $\hbar$ enters at first order, as the coefficient of the Moyal corrections to the Liouville flow; in the pure-state conditions it enters as $\hbar^{2}/4$, the fixed width."ce 355 formulation of quantum mechanics Planck's constant has to play such tWofold roll'S. <strong>Where it lands.</strong> The reverse-Madelung article's §<em>The One Constant</em>, as the two-role observation, and the Wigner article's §<em>The numbers</em>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

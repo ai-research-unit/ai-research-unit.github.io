@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Force of a Charge in a Real Current Environment — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Self Force of a Charge in a Real Current Environment - 0206064.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-force-of-a-charge-in-a-real-current-environment"><strong>Self Force of a Charge in a Real Current Environment</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0206064v1 [physics.acc-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. Ianconescu, L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 June 2002</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Self Force of a Charge in a Real Current Environment - 0206064-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Self Force of a Charge in a Real Current Environment - 0206064.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-charged-spin-zero-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Self Force of a Charge in a Real Current Environment - 0206064.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Starts from the inconsistency of the classical radiating charge — the self force needed to balance the radiated power is proportional to the derivative of the acceleration, and using it produces runaway solutions — and resolves it by refusing to treat a charge in isolation. In a real current environment a charge has neighbours, and the self force is computed as the force those neighbours exert after being perturbed. The result reproduces the expected $\frac{2}{3}q^2\dot a$ form and yields the radiation resistance of an antenna segment.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"The analysis of the EM radiation from a single charge shows that the radiated power depends on the retarded acceleration of the charge. Therefore for consistency, an accelerated charge, free from the influence of external forces, should gradually lose its acceleration, until its total energy is radiated. Calculations show that the self force of a charge, which compensates for its radiation, is proportional to the derivative of the acceleration. However, when using this self force in the equation of motion of the charge, one gets a diverging solution, for which the acceleration runs away to infinity."</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>"This means that there is an inconsisten" — the inconsistency is not in the electrodynamics but in the idealisation of an isolated charge.</p>
+<h3 id="the-result-in-the-realistic-setting">The result in the realistic setting</h3>
+<p>The self force in a continuum of charges "could be considered as the force acted by the perturbed neighbor", and "The radiation resistance is therefore the 'self work' divided by the charges flow rate squared", with $R=P_{\text{self}}/I^2$.</p>
+<h3 id="the-limits-of-the-claim">The limits of the claim</h3>
+<p>"this result has been derived with the aid of several approximations like ρ0 ≫ C1,2 /c, resulting in v ≪ c, which are very accurate for charges in a real wire, but cannot be counted on for a single charge. Therefore, result (30) is not a proof of the formula Fself = (2/3)q 2 ȧ, but rather shows that in a macro perspective, it looks like the self force of a charge, which accounts for the radiation, is (2/3)q 2 ȧ. Moreover, Pself"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-runaway-is-an-artefact-of-isolation">1. The runaway is an artefact of isolation</h3>
+<p><strong>The idea.</strong> A <strong>diagnosis</strong>: the third-derivative self force and its runaway solutions come from pretending a charge is alone. Put the charge in the current distribution it necessarily belongs to, and the reaction is a force from neighbours, which is finite and does not require a third derivative in the equation of motion for the collective.</p>
+<p><strong>What it would add.</strong> The corpus's radiation-reaction material has two answers to the runaway — the off-shell Green's-function derivation, and no answer at all in the purely Maxwellian articles. This supplies a third: the problem is the boundary condition of isolation, not the field theory. That is a cheap resolution and it explains why the paradox persists only in textbook single-charge problems.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-zero-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The collective treatment never returns to the single charge, so the original problem is dissolved rather than solved; a reader who wants the single-charge answer will not be satisfied.</p>
+<h3 id="2-radiation-resistance-is-self-work-over-current-squared">2. Radiation resistance is self work over current squared</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: in a current-carrying medium, the radiation resistance of a segment equals the self work done on it divided by the square of the charge flow. One quantity from antenna engineering is identified with a mechanical work per current.</p>
+<p><strong>What it would add.</strong> The corpus's fluid articles compute currents and pressures but rarely connect to measured circuit quantities. This supplies an identification between a field-theoretic work and a laboratory resistance, and, since $R$ is measurable, it is a check on any fluid model of conduction. It also gives the corpus's electromagnetism-in-media articles a concrete boundary condition to satisfy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification holds for a segment of a wire, not for a general current distribution, and the approximations used ($v\ll c$, many charges) are essential to it.</p>
+<h3 id="3-macroscopic-agreement-is-not-microscopic-proof">3. Macroscopic agreement is not microscopic proof</h3>
+<p><strong>The idea.</strong> A <strong>methodological point stated plainly</strong>: a derivation that reproduces the standard self-force formula in the many-charge limit is not a proof of that formula for one charge. The paper says so itself, in the same paragraph as the result.</p>
+<p><strong>What it would add.</strong> The corpus makes many claims of the form: this formalism reduces to the standard result, therefore it explains it. This is a worked example of where such a reduction is legitimate and where it is not, written by authors who wanted the stronger conclusion and declined it. It would be a useful discipline for the corpus's own reduction claims, several of which are of exactly this shape.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> The point is a caution, not a result; it does not tell the corpus which of its own reductions are of the unsafe kind.</p>
+<p>The rank: the isolation diagnosis first, because it removes a paradox; the resistance formula second, because it connects theory to measurement; the methodological caution last, because it is advice.</p>
+<p>The remaining items in one line each: the antenna model of a charge segment, which is the device that makes the collective force computable; the check that the self power averages to the Larmor formula, which ties the account to standard radiation theory; and the boundary-condition analysis of the half-wave dipole, which validates the method on a case with a known resistance.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

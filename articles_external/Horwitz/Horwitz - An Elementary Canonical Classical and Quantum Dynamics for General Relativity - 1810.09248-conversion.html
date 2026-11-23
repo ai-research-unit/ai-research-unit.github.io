@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Elementary Canonical Classical and Quantum Dynamics for General Relativity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Elementary Canonical Classical and Quantum Dynamics for General Relativity -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="an-elementary-canonical-classical-and-quantum-dynamics-for-general-relativity"><strong>An Elementary Canonical Classical and Quantum Dynamics for General Relativity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1810.09248v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 October 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - An Elementary Canonical Classical and Quantum Dynamics for General Relativity - 1810.09248-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Elementary Canonical Classical and Quantum Dynamics for General Relativity - 1810.09248.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Elementary Canonical Classical and Quantum Dynamics for General Relativity - 1810.09248.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Embeds the Stueckelberg–Horwitz–Piron theory — mechanics parametrised by a universal world time, with no fixed mass shell — into general relativity, by the cheapest possible route: local coordinate transformations. Particles move on locally flat Minkowski patches, and the curved metric is what the transformations produce. The Poisson brackets survive unchanged, which is what makes a canonical quantum theory possible on the manifold; a Hilbert space is built with the invariant measure, a Hermitian momentum operator is defined, the Fourier transform is proved, scattering is set up, and electromagnetism appears as a gauge field on that Hilbert space.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-embedding">The embedding</h3>
+<p>"A consistent (off-shell) canonical classical and quantum dynamics in the framework of special relativity was formulated by Stueckelberg in 1941, and generalized to many- body theory by Horwitz and Piron in 1973 (SHP). In this paper, this theory is embedded into the framework of general relativity (GR), here denoted by SHPGR."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"The canonical Poisson brackets of the SHP theory remain valid (invariant under local coordinate transformations) on the manifold of GR, and provide the basis for formulating a canonical quantum theory."</p>
+<h3 id="what-has-to-be-built">What has to be built</h3>
+<p>"A scalar product is defined for constructing the Hilbert space and a Hermitian momentum operator defined. The Fourier transform is defined, connecting momentum and coordinate representations."</p>
+<h3 id="what-the-potential-becomes">What the potential becomes</h3>
+<p>"The potential which may occur in the SHP theory emerges as a spacetime scalar mass distribution in GR, and electromagnetism corresponds to a gauge field on the quantum mechanical SHPGR Hilbert space in both the single particle and manybody theory."</p>
+<h3 id="the-technical-reason-for-the-hermitian-operator">The technical reason for the Hermitian operator</h3>
+<p>From the summary: the flat operator "is not Hermitian on a Hilbert space of functions" square integrable against the invariant measure, so "It was necessary to define the Hermitian momentum" $p_\mu=-i\partial_\mu-\frac{i}{2}\partial_\mu\ln\sqrt{g(x)}$.</p>
+<h3 id="the-many-body-subtlety">The many-body subtlety</h3>
+<p>Because the world time is universal, "the fifth component must depend on the coordinates of all of the particles as a locally defined function on the full configuration space, similar to the function V (x1 , x2 , . . . xN ) of the potenial model. The work"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-canonical-structure-is-what-survives-curvature">1. Canonical structure is what survives curvature</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the Poisson brackets of a flat-space canonical theory keep their form under local diffeomorphisms, so the canonical structure is not tied to flatness. Curvature enters the equations of motion through the connection, not through the brackets.</p>
+<p><strong>What it would add.</strong> The corpus's curved-space articles replace the derivative by a covariant derivative and leave the algebraic structure implicit. This separates the two: the bracket is invariant, the derivative is not, and the quantum theory can be built on the invariant one. It is the cleanest available statement of which part of the formalism is geometry-independent, and the corpus's curved articles could use it as their starting point instead of their caveat.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.md</code>.</p>
+<p><strong>What stands in the way.</strong> The statement is about a specific canonical formalism with a universal time; the corpus's articles use the field-theoretic bracket, where the corresponding invariance statement is different.</p>
+<h3 id="2-a-hermitian-momentum-needs-the-metric-weight">2. A Hermitian momentum needs the metric weight</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: on a manifold, $-i\partial_\mu$ is not Hermitian with respect to the invariant measure, and the correction is a quarter of the derivative of the log of the metric determinant — an explicit, computable term.</p>
+<p><strong>What it would add.</strong> The corpus writes $p_\mu=-i\partial_\mu$ throughout and treats the measure as a separate normalisation. This says the two are linked: choose the measure and the operator is forced, up to ordering. The correction term is small, specific, and it is the kind of thing a careful reader would want to see in any article that claims to quantise on a curved background.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> The correction appears in a scalar-product sense, and the corpus's measure articles are about the on-shell measure, where the determinant factor has a different role.</p>
+<h3 id="3-the-potential-is-a-mass-distribution">3. The potential is a mass distribution</h3>
+<p><strong>The idea.</strong> A <strong>reinterpretation</strong>: the scalar potential of the off-shell theory is not an energy but a position-dependent contribution to mass, and in the curved setting it becomes a spacetime scalar field that shifts the mass locally.</p>
+<p><strong>What it would add.</strong> The corpus carries the potential as an energy in a Hamiltonian. Identifying it with a mass distribution makes contact with the corpus's articles on effective mass in media, where a medium changes the mass shell rather than adding an energy, and it explains why the off-shell theory tolerates potentials that would be forbidden on shell — they are mass shifts, and the mass is free.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The identification is made at the level of the action, and the corpus's media articles derive their effective mass from a constitutive relation; the two would need to be reconciled.</p>
+<p>The rank: bracket invariance first, because it is the enabling result; the Hermitian correction second, because it is a formula; the mass-distribution reading last, because it is an interpretation.</p>
+<p>The remaining items in one line each: the energy and momentum computed near the Schwarzschild horizon, which is the paper's worked example; the scattering theory with curvature-corrected vertices, which is the machinery a calculation would need; and the propagator's Laplace–Beltrami denominator with an effective mass shift, which is the compact statement of what curvature does to free propagation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

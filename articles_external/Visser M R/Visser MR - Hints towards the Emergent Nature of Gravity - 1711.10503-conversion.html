@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hints towards the Emergent Nature of Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hints towards the Emergent Nature of Gravity - 1711.10503.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hints-towards-the-emergent-nature-of-gravity"><strong>Hints towards the Emergent Nature of Gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1711.10503v2 [physics.hist-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels S. Linnemann, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 April 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Studies in History and Philosophy of Modern Physics (journal version, per the arXiv comment; no volume printed in the PDF)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Hints towards the Emergent Nature of Gravity - 1711.10503-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hints towards the Emergent Nature of Gravity - 1711.10503.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/ai-physics-review.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Hints towards the Emergent Nature of Gravity - 1711.10503.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Assesses four standard hints that gravity is emergent — universal coupling, non-renormalisability, black-hole thermodynamics, and the holographic principle — and argues that each is a hint only relative to background assumptions that a geometric reading of general relativity would reject. It proposes a definition of emergent gravity in terms of a "type II microtheory", a theory underlying gravity but not inspired by it, and then constructs two forms of analogical argument that turn the hints into a case for emergent gravity. The paper is a philosophy-of-physics paper: no new calculation, and the work is in the definitions and the arguments.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"A theory $M_1$ underlying a theory $T$ is a type I microtheory to $T$ if and only if it is inspired from $T$ (for instance through discretization, quantization or renormalization). An underlying theory $M_2$ to theory $T$ is called a type II microtheory if and only if it is not directly inspired or motivated from $T$." A theory is emergent if a type II microtheory underlies it. By this definition loop quantum gravity, causal set theory and causal dynamical triangulation are type I, while non-perturbative string theory is type II because it carries no Lorentzian metric. The authors concede that "inspired" and "motivated" are vague, but argue they are precise enough to separate what the literature calls emergent gravity from what it does not.</p>
+<h3 id="the-four-hints-and-their-conditionality">The four hints and their conditionality</h3>
+<ol>
+<li><strong>Universal coupling.</strong> If the metric is a physical field, its universal coupling to matter is suggestive of emergence; if gravity just is spacetime geometry, universal coupling is a consequence, not a hint.</li>
+<li><strong>Non-renormalisability.</strong> Whether it counts depends on taking quantum general relativity to be the right starting point; a string theorist and a loop-gravity proponent will read the same fact differently.</li>
+<li><strong>Black-hole thermodynamics.</strong> It is a hint only if the entropy cannot be explained by quantised general relativity and needs a type II microtheory; Jacobson's derivation of the field equations from horizon thermodynamics is presented as the clear case of a type II microstructure at work.</li>
+<li><strong>The holographic principle.</strong> Whether it counts depends on whether quantum general relativity can accommodate it, which the authors leave open.</li>
+</ol>
+<p>The conclusion is conditional: "we take it to have established why under acceptable background assumptions the hints make a case for emergent gravity."</p>
+<h3 id="the-argument-from-example">The argument from example</h3>
+<p>Models of hydrodynamics have features $F_1,\dots,F_n$; wherever a model of hydrodynamics applies, a model of a corresponding type II microtheory applies. The same is claimed of thermodynamics, and then of general relativity, which shares the features (thermodynamic aspects and universality), so that wherever general relativity applies, a type II microtheory applies.</p>
+<h3 id="the-argument-from-likeness">The argument from likeness</h3>
+<p>A second form: models of hydrodynamics and general relativity are alike in the relevant respects, so what holds of the one holds of the other. The authors present both as analogical arguments, with their strengths and their limits, rather than as deductions.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-type-i-type-ii-distinction-as-a-criterion-for-the-corpus">1. The type I / type II distinction as a criterion for the corpus</h3>
+<p><strong>The idea.</strong> A framework is emergent rather than quantised when its microstructure was not built by quantising the theory it underlies. This is a <strong>reading</strong>: a definition that classifies programmes, including the corpus's own.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/ai-physics-review.md</code> and <code>articles_physics/introduction-to-the-biquaternion-universe.html</code> argue that the biquaternion algebra is prior to relativity and to quantum mechanics, and that the two sectors produce both. That is precisely a claim to be a type II microtheory. The corpus has no vocabulary for making the claim sharply, and this definition supplies it, including the test the corpus must pass: the algebra must not be a rewriting of the Dirac or the Lorentz structure it is meant to underlie.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/ai-physics-review.md</code>, in the section that states what the framework claims to be.</p>
+<p><strong>What stands in the way.</strong> The distinction is programmatic: "inspired from" is admitted to be vague, and the corpus's own algebra is a complexification of Hamilton's quaternions, which were built for mechanics. A hostile reader can call the corpus type I. The cost is that the corpus must state which of its structures were chosen because relativity and quantum mechanics demanded them — the $i$ of the temporal coordinate is the obvious candidate for a type I element.</p>
+<h3 id="2-universal-coupling-read-against-the-sector-split">2. Universal coupling read against the sector split</h3>
+<p><strong>The idea.</strong> Universal coupling is a hint of emergence only under a physical reading of the metric; under the geometric reading it is a tautology. This is a <strong>reading</strong> with a consequence for how the corpus should present its metric.</p>
+<p><strong>What it would add.</strong> The corpus derives the unit metric from the multiplication table (<code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code>) and treats the metric as read off the algebra. That is the geometric horn of the dilemma: universal coupling then comes free, and cannot be used as evidence. The paper's analysis would force the corpus to say which horn it is on.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-unit-metric-in-the-biquaternion-universe.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a classification of the corpus's own move. Ranked second.</p>
+<h3 id="3-jacobsons-derivation-as-the-type-ii-exemplar">3. Jacobson's derivation as the type-II exemplar</h3>
+<p><strong>The idea.</strong> Horizon thermodynamics deriving the field equations is the one case in which the microstructure is demonstrably not gravitational. This is a <strong>reading</strong>, and it identifies the argument the corpus's black-hole article leans on.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the four laws as geometric identities and imports the field equation. The paper's analysis says why the thermodynamic route is the strongest available claim to emergence, and therefore why that article's choice is not a weakness.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the paragraph on what the framework contributes.</p>
+<p><strong>What stands in the way.</strong> The authors themselves grant that the reinterpretation "might be contested". Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

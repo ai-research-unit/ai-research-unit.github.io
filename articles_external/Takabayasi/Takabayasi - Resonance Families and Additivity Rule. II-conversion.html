@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resonance Families and Additivity Rule. II — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Resonance Families and Additivity Rule. II.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="resonance-families-and-additivity-rule-ii"><strong>Resonance Families and Additivity Rule. II</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>31</strong> (1964) 925, No. 5; dated 17 January 1964</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Resonance Families and Additivity Rule. II-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Resonance Families and Additivity Rule. II.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Resonance Families and Additivity Rule. II.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Extends a two-body "basic particle" model of resonances from $p$-wave to $d$- and $s$-wave states. Each $L$ gives a family: $J^{P}=\tfrac32^{-}$ baryons with $2^{+}$ mesons for $L=2$, $J^{P}=\tfrac12^{-}$ baryons with $0^{+}$ mesons for $L=0$. Within a family the masses follow an additivity rule: a resonance made of two basic particles has the mean of their effective masses. The families are linked by the equal-spacing rule, and $\kappa=\varepsilon$ ties the spacing to the $p$-wave pion energy. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-math21-wave-family-or-a-single-resonance">The $d$-wave family "or a single resonance.</h3>
+<p>If one identifies this p-wave states. In this note we extend the with the known resonance at 1225 Mev, method to d- and s-wave states to show one has d-wave effective masses m~=m~= that it may provide a uniform systematiza- m,/2=630 Mev. Also (2) predicts KM tion "</p>
+<p>"ances which are induced by L=2 attractions nearly the same as the p-wave values, (12) for two-body systems" basic particles ". of reference 1). The" selection rule "for this case is as- *l It is unlikely that the JP=3-j2 resonances sumed to be the opposite to the p-wave belong to a pure octet representation of SU,, case, i.e. that resonances should occur in since they do not fit the mass formula implied those states where the baryon spin s(s= by SU,." — relation (1). "This is indeed suggested by underlying vector field 2' coupled to isospin current. Downloaded from academic.oup.com/ptp/article/31/5/925/1883965 by guest on 12 November"</p>
+<p>For the baryons, "we assume additional selection rules including tJ£=1 +ByM/2 which is common to the p-wave case,ll to get Nt;~=(nN)I/2, Y:*=(KN) 0 , Yr=CnA), sn=CnB)!", giving $N^{*}_{3/2}=(nN)_{1/2}$, $Y_0^{*}=(KN)_{0}$, $Y_1^{*}=(n\Lambda)$, $\Xi^{*}=(n\Xi)_{1/2}$. "These are identified with the" second reson- ances "observed at 1515, 1519, 1660, and 1770 Mev, 3 l respectively, though the predo- minance of a single configuration for each state is certainly an oversimplification." A footnote adds that "long to a pure octet representation of SU,, case, i.e. that resonances should occur in since they do not fit the mass formula implied those states where the baryon spin s(s= by SU,."</p>
+<p>"KK) o due to (1). The assumed Resonance Families and Additivity additivity rule for d-wave states means Rule." that differences of meson masses equal differences of the corresponding basic masses — relation (2) — "ey should be mixed and represent simple model for resonances, especially for a single resonance. If one identifies this p-wave states. In this note we extend the with the known resonance at 1225 Mev, method to d- and s-wave states to show one has d-wave effective masses m~=m~= that it may provide a uniform systematiza- m,/2=630 Mev. Also (2) predicts KM tion of known mesonic resonances"</p>
+<h3 id="the-math26-wave-family-and-the-family-scheme">The $s$-wave family and the family scheme</h3>
+<p>Next we consider the 's-wave family'. Assuming again (1) we obtain now $J^{P}=1/2^{-}$ and $J^{P}=0^{+}$ states. For the formers we only know $Y_0^{*}(1405)$ corresponding to virtual bound state $(KN)_0$, while for the latters we have 'sextet' assignments in which "nhancement ob- of w-mass by Gelfand et al.,7) and .a=235 served at about 1040 Mev. The (nn) 0 may Mev. The fact that .a just equals the pion be identified with ABC or with another resonance energy in the p-wave family/) T=O dipion enhancement d at about 400 .a=e. represents another relation.", and "m,). With the m~ the same as in the d- wave case, the additivity rule yields for which is satisfied within several Mev. By Yt the mass"</p>
+<p>"arieties of mesonic levels, ll=1/2{ (mp-2m.) + (mru-2mK)}. our model is more restrictive than the baryon-antibaryon model, since it effectively 1) T. Takabayasi, Prog. Theor. Phys. 31 (1964), 723. considers two-body associations of n, K 2) J. J. Sakurai, Ann. of Phys. 11 (1960), 1. and K. Thus it allows, besides the original 3) P. Belliere et a!" $G=(-1)^{J-T}$ "sed 7) N. Gelfand et a!., Phys. Rev. Letters 11" selection rule "that T=t1+t2-1 for L=1 (1963), 463, 438. casen and T= / t1-t2/ for L=O, 2 cases is 8) T. Takabayasi, Nuov. Cim. 30 (1963), 1500. consistent with but is more restrictive than Bose statistics."</p>
+<p>"We have classified strongly interacting particles into" basic family "(baryons and ps-mesons), p-wave family (3+ /2 and 1-), s-wave family (1-/2 and o+), etc. Further, we may introduce connections between *) 4) may be postulated as a general rule" "405) corresponding to different meson families are supplied by virtual bound state (KN) 0 , while for the the equal-spacing rule 6 ) for the isosinglet latters we have" sextet "meson series." a relation is satisfied to a surprising accuracy, if one adopts the recent accurate measurement of $\omega$-mass by Gelfand et al., and $\kappa=235$ Mev. The fact that $\kappa$ just equals the pion resonance energy in the p-wave family, $\kappa=\varepsilon$, represents another relation. One can accordingly write the $\rho$-meson mass as a combination of the basic masses which is satisfied within several Mev. By the use of (4) and (5) the spacing $\Delta$ for the vector meson series is represented as $\Delta=\frac12\{(m_\rho-2m_\pi)+(m_\omega-2m_K)\}$. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-multiplet-like-groupings-from-selection-rules-not-from-symmetry">1. Multiplet-like groupings from selection rules, not from symmetry</h3>
+<p><strong>The idea.</strong> Each $L$ gives a set of states whose number and quantum numbers mimic an $SU(3)$ octet, but the grouping comes from a selection rule on the constituent pair — $T=t_1+t_2-1$ for $L=1$ and $T=|t_1-t_2|$ for $L=0,2$ — and not from a symmetry of the interaction. The author states the consequence plainly: the $J^{P}=3/2^{-}$ states cannot be a pure octet because they do not fit the $SU_3$ mass formula. </p>
+<p><strong>What it would add.</strong> A mechanism producing multiplet <em>shapes</em> without multiplet <em>masses</em>. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) derives the multiplet and its mass formula together, so shape and mass cannot come apart; here they do, and the failure of the mass formula is what shows the grouping is kinematic. The corpus's §<em>Admissible Supermultiplets</em> assumes shape and mass are tied, and this contradicts it. </p>
+<p><strong>Where it lands.</strong> §<em>Admissible Supermultiplets</em>, as the selection-rule alternative. </p>
+<p><strong>What stands in the way.</strong>, and the pair assignments are chosen to land on known resonances, so the grouping is partly read off the data. </p>
+<h3 id="2-masses-add-by-averaging-the-constituents-not-by-a-breaking-operator">2. Masses add by averaging the constituents, not by a breaking operator</h3>
+<p><strong>The idea.</strong> The additivity rule gives a resonance's mass as the mean of its two constituents' effective masses, so a difference of resonance masses equals a difference of basic masses. Effective masses are then extracted from the known levels ($m_\pi/2=630$ MeV for both $n$ and $K$ in the $d$-wave family) and used to predict the rest, and they come out close to the $p$-wave values. </p>
+<p><strong>What it would add.</strong> A mass rule with no symmetry-breaking term. The corpus's mass formulas all have the shape degenerate mass plus a breaking correction; here the mass is a mean of two inputs, and consistency between families is a coincidence of effective masses rather than a cancellation of corrections. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) notes in §<em>The Trace Anomaly, and Where the Mass Sits</em> that most of a hadron's mass is not in the constituents' masses; the additivity rule is precisely the opposite assumption, and its partial success is therefore a real puzzle worth stating. </p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the puzzle. </p>
+<p><strong>What stands in the way.</strong> The effective masses are defined by the rule itself, so agreement with the $p$-wave values is a check on a fit. </p>
+<h3 id="3-two-different-quantisations-of-the-same-series-agree-on-the-spacing">3. Two different quantisations of the same series agree on the spacing</h3>
+<p><strong>The idea.</strong> The equal-spacing rule for the isosinglet series, with $\kappa=235$ MeV, is the same number as the $p$-wave pion resonance energy $\varepsilon$: $\kappa=\varepsilon$. A mass ladder and a resonance energy, derived in different schemes, coincide, and the coincidence lets the $\rho$ mass be written as a combination of basic masses to within a few MeV. </p>
+<p><strong>What it would add.</strong> A link between the corpus's ladder articles and its resonance articles. <em>The Isosinglet Meson Series</em> conversion in this folder gives the ladder; the present letter gives the family structure; the identification $\kappa=\varepsilon$ is the bridge, and it is the only place in the folder where the ladder's step is given a dynamical meaning. </p>
+<p><strong>Where it lands.</strong> The corpus has no single article holding both; the natural home is <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) §<em>The Spectrum</em>, as a footnote on what fixes a ladder's step. </p>
+<p><strong>What stands in the way.</strong> The identification is numerical and unexplained —"represents another relation" — and the letter gives no reason for it.</p>
+<p>The remainder, one line each. That mixing merges nearly degenerate $f_0$ and $f_0'$ into one resonance shows the scheme tolerating degeneracy rather than predicting it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

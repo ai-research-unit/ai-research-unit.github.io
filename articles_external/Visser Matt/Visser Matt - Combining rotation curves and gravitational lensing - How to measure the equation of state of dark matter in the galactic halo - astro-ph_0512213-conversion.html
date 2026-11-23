@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combining rotation curves and gravitational lensing: how to measure the equation of state of dark matter in the galactic halo — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Combining rotation curves and gravitational lensing - How to measure the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="combining-rotation-curves-and-gravitational-lensing-how-to-measure-the-equation-of-state-of-dark-matter-in-the-galactic-halo"><strong>Combining rotation curves and gravitational lensing: how to measure the equation of state of dark matter in the galactic halo</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>astro-ph/0512213v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tristan Faber, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 July 2006 (dated 16 June 2006)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the preprint class file prints "Mon. Not. R. Astron. Soc. 000, 1–8 (2006)" as a placeholder)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Combining rotation curves and gravitational lensing - How to measure the equation of state of dark matter in the galactic halo - astro-ph_0512213-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Combining rotation curves and gravitational lensing - How to measure the equation of state of dark matter in the galactic halo - astro-ph_0512213.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Combining rotation curves and gravitational lensing - How to measure the equation of state of dark matter in the galactic halo - astro-ph_0512213.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper argues that the standard way of inferring dark-matter density profiles from rotation curves assumes Newtonian gravity, which is an assumption inherited from the cold-dark-matter picture. It sets up a post-Newtonian formalism that does not make that assumption, so that rotation curves and lensing can be used together inside general relativity. Rotation curves then yield one pseudo-mass profile and lensing yields another, and combining them constrains both the density and the pressure of the galactic fluid. The authors present this as a way to measure the equation of state of dark matter.</p>
+<p>The extracted abstract is badly broken by the two-column layout; only the legible parts of the body are quoted below.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-assumption-being-questioned">The assumption being questioned</h3>
+<p>"We have argued that the standard formalism of rotation curve measurements and gravitational lensing make an a priori Newtonian assumption that is based on the CDM paradigm."</p>
+<h3 id="the-alternative">The alternative</h3>
+<p>"We introduce a post-Newtonian formalism that does not rely on such an assumption, and furthermore allows one to deduce the density- and pressure-profiles in a general relativistic framework."</p>
+<h3 id="the-two-pseudo-masses">The two pseudo-masses</h3>
+<p>"In this framework, rotation curve measurements provide a pseudo-mass profile $m_{RC}(r)$ and gravitational lensing observations yield a different pseudo-mass profile $m_{lens}(r)$. Combining both pseudo-masses allows one to draw conclusions about the density- and pressure-profiles in the lensing galaxy."</p>
+<h3 id="the-ambition">The ambition</h3>
+<p>The paper's abstract states that combining the observations "not only allow[s] the de[termination of the density profile but also allows conclusions] about the pres[sure]" and hence about "the equation of state" of the "galactic fluid", which bears on "the nature of dark matter".</p>
+<h3 id="the-limit">The limit</h3>
+<p>The method yields an equation of state only where both datasets exist with sufficient quality, and the pseudo-masses are not the masses. The paper does not claim that a single galaxy suffices to fix the equation of state, nor that the fluid description is valid at all radii.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-newtonian-assumption-inside-an-inference">1. A Newtonian assumption inside an inference</h3>
+<p><strong>The idea.</strong> The standard data analysis assumes Newtonian gravity even when the underlying theory is general relativity. The assumption is in the method, not in the data.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what counts as evidence for or against a framework. This paper shows that an inference chain can contain a theoretical assumption that nobody states. Any comparison of framework predictions with galactic data would inherit the same problem, and the article should say so before it cites such data.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The paper is about dark matter, not about the framework. Ranked first, because it is a live methodological hazard for the article's own arguments.</p>
+<h3 id="2-two-observables-two-functions">2. Two observables, two functions</h3>
+<p><strong>The idea.</strong> One observation gives a mass profile, another gives a different one, and the pair determines two unknown functions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> notes that the frame field carries undetermined functions. Here is a case where the number of undetermined functions is matched to the number of independent observables, which is how a framework with free functions could still be tested.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of undetermined data.</p>
+<p><strong>What stands in the way.</strong> The counting argument is generic and does not use the framework's structure. Ranked second.</p>
+<h3 id="3-pressure-in-a-galactic-halo">3. Pressure in a galactic halo</h3>
+<p><strong>The idea.</strong> The halo is treated as a fluid with a pressure, and the pressure is measurable in principle.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code> deals with fluids whose pressure follows from a state. A galactic halo with an equation of state is a case where the fluid description is applied at a scale where it is questionable, which is a useful caution about the reach of the fluid picture.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The connection is remote. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

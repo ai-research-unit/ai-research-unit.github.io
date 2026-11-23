@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yukawa coupling — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Standard/Yukawa_coupling.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="yukawa-coupling"><strong>Yukawa coupling</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia), printed to PDF</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — the PDF is a print of the Wikipedia article <em>Yukawa coupling</em></td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors; no named author</td>
+</tr>
+<tr>
+<td>version</td>
+<td>revision 1364323961, PDF printed 23 November 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not applicable; the entry's own first citation is Weinberg, "A Model of Leptons", <em>Phys. Rev. Lett.</em> <strong>19</strong> (1967) 1264</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Yukawa_coupling-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Standard/Yukawa_coupling.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Standard/Yukawa_coupling.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>States the Yukawa interaction of a scalar or pseudoscalar field with a Dirac field, in its pion form and in its Higgs form, and records the four objects the name covers: the vertex, the classical potential it induces, the action it belongs to, and its Majorana variant. The method is transcription from quantum field theory textbooks; there is no derivation and no new result. The headline statements are that the potential is Coulomb-like with an exponential range set by the exchanged mass, that a non-zero scalar expectation value turns the coupling into a fermion mass $g\phi_0$, and that a scalar can couple to a Majorana pair through one complex constant. The status is expository: nothing is computed, bounded or predicted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-vertex-and-its-two-forms">The vertex and its two forms</h3>
+<p>The interaction is between a scalar field (or a pseudoscalar field) $\phi$ and a Dirac field $\psi$, of the type
+$$V=g\,\bar\psi\phi\psi \quad \text{(scalar)}, \qquad g\,\bar\psi\,i\gamma^5\phi\psi \quad \text{(pseudoscalar)} .$$
+The coupling was developed to model the strong force between hadrons, and it describes the nuclear force between nucleons mediated by pions, which the authors call pseudoscalar mesons. In the Standard Model the same term couples the Higgs field to massless quark and lepton fields; through spontaneous symmetry breaking those fermions acquire a mass proportional to the vacuum expectation value. The authors attribute that use to Weinberg in 1967, for lepton masses.</p>
+<h3 id="the-potential-and-who-is-attracted">The potential and who is attracted</h3>
+<p>For two fermions interacting through a Yukawa particle of mass $\mu$, the potential is
+$$V(r)=-\frac{g^2}{4\pi}\frac{e^{-\mu r}}{r} ,$$
+"the same as a Coulomb potential except for the sign and the exponential factor". The sign makes the interaction attractive between all particles, where the electromagnetic interaction repels like charges. The authors give the reason: the exchanged particle has spin zero, and "even spin always results in an attractive potential" — a quantum field theory result, not a classical one — while odd-spin exchange, gluon, photon or rho meson, attracts opposite charges and repels like ones. The exponent gives a finite range: at large separation the particles hardly interact.</p>
+<h3 id="the-field-line-reading-of-the-two-factors">The field-line reading of the two factors</h3>
+<p>The $1/r$ part is the dilution of field-line flux, since the force counts lines crossing a surface and the solid angle falls as $1/r^2$. The exponential is a separate effect: the exchanged mesons are unstable, and their disappearance reduces the flux through the surface. Massless stable carriers such as the photon therefore give a pure $1/r$ potential. The authors add the exception: other massless carriers, gluons and gravitons, do not generally give $1/r$ because they interact with each other and distort the field pattern; the $1/r$ form returns where that self-interaction is negligible, as in weak-field gravity or at short distances under asymptotic freedom.</p>
+<h3 id="the-action">The action</h3>
+<p>$$S[\phi,\psi]=\int\left[\mathcal{L}_{\mathrm{meson}}(\phi)+\mathcal{L}_{\mathrm{Dirac}}(\psi)+\mathcal{L}_{\mathrm{Yukawa}}(\phi,\psi)\right]d^n x ,$$
+with $n=4$ for four-dimensional spacetime. The meson part is $\mathcal{L}_{\mathrm{meson}}=\tfrac12\partial_\mu\phi\,\partial^\mu\phi-V(\phi)$, where $V(\phi)$ is a self-interaction term; a free massive meson has $V(\phi)=\tfrac12\mu^2\phi^2$, and a renormalisable self-interacting one has $V(\phi)=\tfrac12\mu^2\phi^2+\lambda\phi^4$ with $\lambda$ a coupling constant. The fermion part is $\mathcal{L}_{\mathrm{Dirac}}=\bar\psi(i\slashed\partial-m)\psi$ with $m$ the real positive fermion mass. The interaction part is $\mathcal{L}_{\mathrm{Yukawa}}=-g\,\bar\psi\phi\psi$, or $-g\,\bar\psi\,i\gamma^5\phi\psi$ for a pseudoscalar meson, with $g$ a real coupling constant.</p>
+<h3 id="the-higgs-term-and-the-mass-math37">The Higgs term and the mass $g\phi_0$</h3>
+<p>If $V(\phi)$ has its minimum at a non-zero value $\phi_0$, as with $V(\phi)=\lambda\phi^4-\mu^2\phi^2$, the Lagrangian exhibits spontaneous symmetry breaking and the field has a non-zero vacuum expectation value. Re-expressing the action in the derived field $\phi'=\phi-\phi_0$, with $\phi_0$ constant, the Yukawa term contains
+$$g\,\phi_0\,\bar\psi\psi ,$$
+which is a mass term of mass $g\phi_0$ because both factors are constants. The field $\phi'$ is the Higgs field. The authors close the section by saying that the coupling for each fermion is an input to the theory and that the ultimate reason for the values is not known; it is something a deeper theory should explain.</p>
+<h3 id="the-majorana-form">The Majorana form</h3>
+<p>A scalar can also have a Yukawa interaction with a Majorana field, and a Dirac spinor coupled to a scalar can be read as two chiral Majorana spinors of equal mass. Broken into the chiral pair the action is
+$$S[\phi,\chi]=\int\Bigl[\tfrac12\partial_\mu\phi\,\partial^\mu\phi-V(\phi)+\chi^\dagger i\bar\sigma\!\cdot\!\partial\chi+\tfrac{i}{2}(m+g\phi)\chi^{T}\sigma_2\chi-\tfrac{i}{2}(m+g\phi)^{*}\chi^\dagger\sigma_2\chi^{*}\Bigr]d^n x$$
+(as printed; the text extraction of this display is partly broken). There $g$ is a complex coupling constant, $m$ is a complex number, and $n$ is the dimension as above.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-pseudoscalar-vertex-the-field-times-math50">1. The pseudoscalar vertex, the field times $i\bar\psi\gamma_5\psi$</h3>
+<p><strong>The idea.</strong> The coupling has two allowed forms, $g\bar\psi\phi\psi$ and $g\bar\psi i\gamma_5\phi\psi$, and which one a meson uses is a property of that meson: the pion's nuclear coupling is the pseudoscalar one, the Higgs coupling is the scalar one. This is a <strong>formula</strong> the corpus does not write: the corpus has the pseudoscalar <em>bilinear</em>, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ in the Takabayasi correspondence, and it has the pion–nucleon <em>number</em> $g_{\pi NN}$ inside the Goldberger–Treiman relation, but never the vertex that multiplies the bilinear by the pion field.</p>
+<p><strong>What it would add.</strong> The missing object that turns the pion from a chiral phase into a source of a fermion bilinear, and with it the statement that the pion's parity-oddness is a choice of bilinear rather than an extra assumption.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.md</code>, in the Goldberger–Treiman section, which quotes $g_Am_N=f_\pi g_{\pi NN}$ and never says what $g_{\pi NN}$ multiplies.</p>
+<p><strong>What stands in the way.</strong> The corpus's pion is not a scalar field in its own right: it is the logarithm of the chiral rotor, $\tilde U=\exp(\vec\pi/f_\pi)$, and it enters the chiral Lagrangian derivatively. A $\gamma_5$ insertion is algebraically the same coupling only after a field redefinition of the fermion, and the corpus would have to exhibit that redefinition on its own frame before the two forms can be called one. The work may show the pseudoscalar form is forced rather than chosen.</p>
+<h3 id="2-even-spin-exchange-attracts-every-pair-whatever-the-charge">2. Even-spin exchange attracts every pair, whatever the charge</h3>
+<p><strong>The idea.</strong> The sign of the potential is not a convention. A spin-0 or spin-2 exchange gives $V=-\frac{g^2}{4\pi}e^{-\mu r}/r$ with $g$ appearing squared, so the force is attractive between any two particles of the same coupling; a spin-1 exchange reverses sign between like charges and repels them. This is a <strong>reading</strong> that fixes a sign the corpus leaves open.</p>
+<p><strong>What it would add.</strong> A reason, instead of a choice, for the attraction in the corpus's central scalar field, where the interaction energy $E=-\kappa\,e^{-r/\lambda}/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ is attractive only because $\kappa$ is declared positive: two independent couplings $g$ and $g_{\mathrm t}$ and a signed source strength $Ϙ$ leave the sign free.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.md</code>, in §<em>The Test Particle and the Reduction to the Central-Force Problem</em>, where $\kappa$ is introduced.</p>
+<p><strong>What stands in the way.</strong> Collapsing $g_{\mathrm t}$ into $g$ and fixing $Ϙ=+1$ is a statement about which sources exist, not about the field equation, and the corpus's $Ϙ$ is a charge by construction. The rule would narrow the classical article's parameter space, and the narrowing has to be argued, not assumed.</p>
+<h3 id="3-one-complex-constant-for-a-scalar-coupled-to-a-majorana-pair">3. One complex constant for a scalar coupled to a Majorana pair</h3>
+<p><strong>The idea.</strong> For a Majorana field the scalar enters as $\frac{i}{2}(m+g\phi)\chi^{T}\sigma_2\chi$: one insertion, not two, and one complex constant $m+g\phi$ instead of a real mass and a real coupling. This is a <strong>formula</strong>, and it carries a phase. Rotating $\chi$ by a phase multiplies $m$ and $g$ by the same factor, so only $\arg g-\arg m$ survives — a single CP-odd number attached to the leptonic sector.</p>
+<p><strong>What it would add.</strong> The Majorana-sector counterpart of the Dirac Yukawa, which the corpus has only in the Dirac form: the seesaw article writes $y\bar L\tilde H_\Psi N_R$ and a separate heavy Majorana matrix $M_R$, two objects where the paper has one bracket.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, on the Yukawa coupling $y$, together with <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>, which fixes the Majorana condition but writes no coupling.</p>
+<p><strong>What stands in the way.</strong> The corpus's CP accounting counts one phase, the Jarlskog invariant of the quark sector, and a leptonic phase needs a place in that ledger; and the corpus's Majorana mass is a real insertion in the chiral pair, so a complex one would change the object the neutrino article has already fixed.</p>
+<h3 id="4-the-range-read-as-the-decay-of-the-exchanged-quantum">4. The range read as the decay of the exchanged quantum</h3>
+<p><strong>The idea.</strong> The $e^{-\mu r}$ factor is explained twice in the paper: once by the mass in the propagator-free language of the potential, and once by the instability of the meson, whose disappearance thins the flux. The second reading is a <strong>reading</strong> the corpus does not use.</p>
+<p><strong>What it would add.</strong> A geometric account of the range that does not go through the wave number, and a reason why the range and the lifetime are one number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-three-wavenumbers-of-a-particle.md</code>, which tabulates the range $1/\nu_m$ per carrier, and <code>articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.md</code>, where the exponential is derived from $k_m$ alone.</p>
+<p><strong>What stands in the way.</strong> The corpus's exponential is exact and static, from the mass term in $(\Box_\Phi-(k_m)^2)\tilde\Xi=-g\rho e_t$, with no decaying state anywhere. The lifetime reading needs an unstable quantum and a probabilistic loss of flux, which the classical sector does not have; adopting it would replace an exact derivation by a picture.</p>
+<p>The rank above is a judgement. Ideas 1 and 2 answer questions the corpus's own articles raise — a vertex never written, a sign never fixed. Idea 3 supplies a formula a sector is missing. Idea 4 is interesting and would import an unstable-particle picture the corpus does without.</p>
+<p>The article's remaining content — the meson and Dirac Lagrangians, the quartic self-interaction, the four-dimensional measure, the attribution of the Higgs coupling to Weinberg — is standard material the corpus already states in <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> and <code>articles_physics/the-lagrangian-and-the-higgs-field.md</code>, and needs no import.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

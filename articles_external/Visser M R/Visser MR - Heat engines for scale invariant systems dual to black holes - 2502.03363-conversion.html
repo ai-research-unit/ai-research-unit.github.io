@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat engines for scale invariant systems dual to black holes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Heat engines for scale invariant systems dual to black holes - 2502.03363.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="heat-engines-for-scale-invariant-systems-dual-to-black-holes"><strong>Heat engines for scale invariant systems dual to black holes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2502.03363v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nikesh Lilani, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 September 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Heat engines for scale invariant systems dual to black holes - 2502.03363-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Heat engines for scale invariant systems dual to black holes - 2502.03363.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Heat engines for scale invariant systems dual to black holes - 2502.03363.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Constructs reversible heat engines whose working substance is a static thermal equilibrium state of a conformal field theory, and computes their efficiencies for the Carnot, Brayton, Otto, Diesel and Stirling cycles. For thermal states dual to an asymptotically anti-de Sitter black hole this realises Johnson's holographic heat engines on the field-theory side. Most efficiencies follow from the CFT equation of state, which follows in turn from scale invariance, and the authors compare them to ideal-gas results. The Stirling efficiency is determined by the characteristic temperature and volume only at high temperature or large volume; for CFT states dual to AdS–Schwarzschild the exact expression is derived and its subleading corrections compared with a generic CFT.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-new">What is new</h3>
+<p>"Despite extensive work on holographic thermodynamics, heat engines for CFT thermal states have not been explored. We construct reversible heat engines where the working substance consists of a static thermal equilibrium state of a CFT. For thermal states dual to an asymptotically AdS black hole, this yields a realization of Johnson's holographic heat engines."</p>
+<h3 id="why-it-works">Why it works</h3>
+<p>"A crucial aspect of the holographic dictionary that we used is that the volume can be independently varied from the other thermodynamic variables." This is the dictionary that requires the conformal factor as an independent variable; without it the volume cannot be changed at fixed central charge, and no cycle is possible.</p>
+<h3 id="the-efficiencies">The efficiencies</h3>
+<p>"The efficiency of most heat engines can be derived from the CFT equation of state, which follows from scale invariance, and we compare them to the efficiencies for an ideal gas." Scale invariance is what fixes the equation of state, and the equation of state is what fixes the efficiency — so the efficiencies are predictions of the symmetry, not of a detailed model.</p>
+<h3 id="the-stirling-exception">The Stirling exception</h3>
+<p>"the Stirling efficiency for a generic CFT is uniquely determined in terms of its characteristic temperature and volume only in the high-temperature or large-volume regime. We derive an exact expression for the Stirling efficiency for CFT states dual to AdS-Schwarzschild black holes and compare the subleading corrections in the high-temperature regime with those in a generic CFT."</p>
+<h3 id="the-definitions-used">The definitions used</h3>
+<p>$$Q_{in}=W+Q_{out},\qquad \eta=\frac{W}{Q_{in}}=1-\frac{Q_{out}}{Q_{in}}, \qquad (paper\ 1)$$</p>
+<p>and the Carnot bound $\eta\le\eta_{Carnot}=1-T_c/T_h$. Efficiency is thus the standard thermodynamic ratio, and the question is what the CFT equation of state makes it.</p>
+<h3 id="the-outlook">The outlook</h3>
+<p>Other engine types, other global symmetries including anisotropic scaling, and the Stirling efficiency for specific CFTs at finite temperature and volume computed perturbatively at weak coupling.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-efficiency-as-a-prediction-of-a-symmetry">1. Efficiency as a prediction of a symmetry</h3>
+<p><strong>The idea.</strong> Scale invariance fixes the equation of state, the equation of state fixes the cycle, and the cycle fixes the efficiency — so an efficiency is a testable prediction of a symmetry alone.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/conformal-invariance-in-biquaternionic-form.md</code> states the symmetry and its consequences for the action. A chain from a symmetry to a measurable number — an efficiency — is a new kind of consequence, and it is the sort that <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks for: a number that could be wrong.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-in-biquaternionic-form.md</code>, and <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The working substance is a holographic CFT with a dual black hole; the corpus's conformal structure has no dual and no temperature. The cost is that the chain has no starting point in the corpus.</p>
+<h3 id="2-volume-must-be-independently-variable">2. Volume must be independently variable</h3>
+<p><strong>The idea.</strong> Without an independent volume, there is no cycle and no engine; the dictionary that gives one is what makes the construction possible.</p>
+<p><strong>What it would add.</strong> This is a <strong>reading</strong> with a general moral: a thermodynamic cycle needs at least two independent control parameters. The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> has $(M,S,Q)$ with one free parameter after the equation of state, which is exactly one too few for a cycle. That is a sharp, checkable consequence of the corpus's variable count.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 4.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a counting argument. Ranked first.</p>
+<h3 id="3-the-carnot-bound-as-a-constraint-on-any-horizon-thermodynamics">3. The Carnot bound as a constraint on any horizon thermodynamics</h3>
+<p><strong>The idea.</strong> Any working substance between two reservoirs obeys $\eta\le1-T_c/T_h$, and a horizon used as a working substance must too.</p>
+<p><strong>What it would add.</strong> The corpus has no engine, but if a horizon ever appears as a working substance, the Carnot bound is an immediate check. Recording it as a target is cheap and it binds any future construction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -108,7 +108,7 @@ $$</p>
 <p>$$
 \log B=\sum_{k\ge1}\frac{(-1)^{k+1}}{k}(B-\mathrm{I})^{k}
 $$</p>
-<p>converges when $\|B-\mathrm{I}\|<1$ and gives $e^{\log B}=B$; the general case is reached by writing $B$ in Jordan form and taking the logarithm of each Jordan block. Hence</p>
+<p>converges when $\|B-\mathrm{I}\|&lt;1$ and gives $e^{\log B}=B$; the general case is reached by writing $B$ in Jordan form and taking the logarithm of each Jordan block. Hence</p>
 <p>$$
 \exp\big(M_n(\mathbb{C})\big)=\mathrm{GL}_n(\mathbb{C}),
 $$</p>
@@ -159,14 +159,14 @@ $$</p>
 <p><strong>The exponential is proper on bounded spectra and not proper in general.</strong> The preimage of a compact set of matrices is closed by continuity, but it is not bounded, since $A+2\pi ik\mathrm{I}$ maps to the same value for every $k$. So the exponential is a covering map onto its image but not a proper map, and the non-compactness of the fibres is the topological reason for the failure of injectivity.</p>
 <p><strong>The image is the complement of a hypersurface in the real case and the whole group in the complex case.</strong> Over $\mathbb{C}$ the image is $\mathrm{GL}_n(\mathbb{C})$, which is connected; over $\mathbb{R}$ the image is the set of matrices with no real eigenvalue in $(-\infty,0]$, which is an open subset of the identity component of $\mathrm{GL}_n(\mathbb{R})$ and not the whole component, since $-\mathrm{I}$ has no real logarithm when $n$ is even. So the exponential misses part of the identity component over $\mathbb{R}$ and nothing over $\mathbb{C}$.</p>
 <h2 id="the-case-math105">The Case $n=2$</h2>
-<p><strong>At $n=2$ the exponential is computable in closed form.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ with $\delta=\sqrt{\big(\tfrac{a-d}{2}\big)^{2}+bc}$,</p>
+<p><strong>At $n=2$ the exponential is computable in closed form.</strong> For $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ with $\delta=\sqrt{\big(\tfrac{a-d}{2}\big)^{2}+bc}$,</p>
 <p>$$
 e^{A}=e^{(a+d)/2}\Big(\cosh\delta\,\mathrm{I}+\frac{\sinh\delta}{\delta}\Big(A-\frac{a+d}{2}\mathrm{I}\Big)\Big),
 $$</p>
 <p>and the formula extends to $\delta=0$ by the limit $\sinh\delta/\delta\to1$. The computation confirms it on random matrices at $n=2$ and in the limiting case $bc=-(a-d)^{2}/4$.</p>
-<p><strong>The real image at $n=2$ is described by the trace and the determinant.</strong> A real $2\times2$ matrix with $\det B>0$ has either two real eigenvalues of the same sign or a conjugate pair; the real pair is positive exactly when $\operatorname{tr}B>0$, and the conjugate pair always has a real logarithm. Hence</p>
+<p><strong>The real image at $n=2$ is described by the trace and the determinant.</strong> A real $2\times2$ matrix with $\det B&gt;0$ has either two real eigenvalues of the same sign or a conjugate pair; the real pair is positive exactly when $\operatorname{tr}B&gt;0$, and the conjugate pair always has a real logarithm. Hence</p>
 <p>$$
-\exp(M_2(\mathbb{R}))=\{B:\det B>0\ \text{and}\ (\operatorname{tr}B>0\ \text{or}\ (\operatorname{tr}B)^{2}<4\det B)\},
+\exp(M_2(\mathbb{R}))=\{B:\det B&gt;0\ \text{and}\ (\operatorname{tr}B&gt;0\ \text{or}\ (\operatorname{tr}B)^{2}&lt;4\det B)\},
 $$</p>
 <p>which was checked on $300$ random exponents, and the matrices $\operatorname{diag}(-1,-1)$ and $\operatorname{diag}(-1,-2)$ fail it. So the exponential at $n=2$ is onto an open part of the identity component and misses the matrices with two negative real eigenvalues.</p>
 <p><strong>The biquaternion reading gives the exponential of the idempotents and of the nilpotents.</strong> Since $\tilde\Pi_{\mathrm{id},\pm}^{2}=\tilde\Pi_{\mathrm{id},\pm}$,</p>

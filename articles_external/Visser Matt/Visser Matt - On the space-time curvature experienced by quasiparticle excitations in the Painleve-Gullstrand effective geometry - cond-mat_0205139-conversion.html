@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the space-time curvature experienced by quasiparticle excitations in the Painlevé–Gullstrand effective geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On the space-time curvature experienced by quasiparticle excitations in the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-space-time-curvature-experienced-by-quasiparticle-excitations-in-the-painlevegullstrand-effective-geometry"><strong>On the space-time curvature experienced by quasiparticle excitations in the Painlevé–Gullstrand effective geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>cond-mat/0205139v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Uwe R. Fischer, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 3 February 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - On the space-time curvature experienced by quasiparticle excitations in the Painleve-Gullstrand effective geometry - cond-mat_0205139-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On the space-time curvature experienced by quasiparticle excitations in the Painleve-Gullstrand effective geometry - cond-mat_0205139.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - On the space-time curvature experienced by quasiparticle excitations in the Painleve-Gullstrand effective geometry - cond-mat_0205139.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Sound in a flowing fluid travels on an effective metric. The authors compute the curvature of that metric for several flows: shear flow, a vortex of constant circulation, flow past a cylinder, and rigid rotation. They express quasiparticle propagation with the tools of general relativity: null geodesics, Killing vectors, and Jacobi fields. The paper is a dictionary between fluid mechanics and Lorentzian geometry, with worked examples.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We consider quasiparticle propagation in constant-speed-of-sound (iso-tachic) and almost incompressible (iso-pycnal) hydrodynamic flows, using the technical machinery of general relativity to investigate the 'effective space-time geometry' that is probed by [the excitations]"</p>
+<h3 id="the-reformulation">The reformulation</h3>
+<p>"[quasiparticle] propagation can be re-phrased in terms of null geodesics, Killing vectors, and Jacobi fields."</p>
+<h3 id="the-examples">The examples</h3>
+<p>"As particular examples of hydrodynamic flow we consider shear flow, a constant-circulation vortex, flow past an impenetrable cylinder, and rigid rotation."</p>
+<h3 id="the-object-computed">The object computed</h3>
+<p>"[we compute] the space-time curvature experienced by quasiparticle excitations in the Painlevé–Gullstrand effective geometry"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-curvature-from-a-flow">1. Curvature from a flow</h3>
+<p><strong>The idea.</strong> An effective metric built from a velocity field has a computable Riemann tensor.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> treats curvature as given. A case where curvature is generated by a fluid profile is a constructive model of where geometry comes from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of curvature.</p>
+<p><strong>What stands in the way.</strong> The construction is non-relativistic. Ranked first, because it supplies a mechanism for curvature.</p>
+<h3 id="2-jacobi-fields-as-the-tool">2. Jacobi fields as the tool</h3>
+<p><strong>The idea.</strong> Geodesic deviation in the effective metric is computed with Jacobi fields.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> describes light cones but not how neighbouring rays separate. Jacobi fields give that separation a differential equation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of rays.</p>
+<p><strong>What stands in the way.</strong> The fields are for a fluid metric. Ranked second.</p>
+<h3 id="3-painlevegullstrand-is-the-natural-frame">3. Painlevé–Gullstrand is the natural frame</h3>
+<p><strong>The idea.</strong> Horizon-penetrating coordinates make the acoustic horizon regular.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> debates frame choices. Here a frame is selected by the physics of the flow, which is an argument the target's convention discussion does not make.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on choosing a frame.</p>
+<p><strong>What stands in the way.</strong> The choice is forced by the fluid. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

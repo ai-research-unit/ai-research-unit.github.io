@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Principles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Action principles.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="action-principles"><strong>Action Principles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Action principles</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Action principles-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Action principles.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/noethers-theorem-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Action principles.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A survey article on action principles: what a Lagrangian and an action are, why varying the action gives equations of motion without forces, which named principles differ in their endpoint conditions, and how the quantum versions justify the classical ones. It is an overview that points to the specialised articles rather than deriving anything, and its value here is the vocabulary and the taxonomy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-frame">The frame</h3>
+<p>"Action principles are" integral "approaches rather than the" differential "approach of Newtonian mechanics.[2]: 162 The core ideas are based on energy, paths, an energy function called the Lagrangian along paths, and selection of a path according" action ", a continuous sum or integral of the Lagrangian along the path." The contrast with $F=ma$ is stated as the point: "variation of the action allows the derivation of the equations of motion without vectors or forces."</p>
+<h3 id="the-taxonomy-and-why-the-names-are-a-mess">The taxonomy, and why the names are a mess</h3>
+<p>"Several distinct action principles differ in the constraints on their initial and final conditions. The names of action principles have evolved over time and differ in details of the endpoints of the paths and the nature of the variation." That sentence is the article's main service: Hamilton's principle, the principle of least action, Maupertuis' principle and the rest are separated by what is held fixed at the ends, not by what is varied in between.</p>
+<h3 id="the-quantum-justification">The quantum justification</h3>
+<p>"Quantum action principles generalize and justify the older classical principles by showing they are a direct result of quantum interference patterns. Action principles are the basis for Feynman's version of quantum mechanics, general relativity and quantum field theory." The path integral is presented as the object from which the classical principle follows by stationary phase, which reverses the historical order.</p>
+<h3 id="the-scope">The scope</h3>
+<p>"The action principles have applications as broad as physics, including many problems in classical mechanics but especially in modern problems of quantum mechanics and general relativity. These applications increased and expanded over two centuries as the power of the method and its further mathematical development rose."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-endpoint-conditions-are-the-definition-not-the-variation">1. The endpoint conditions are the definition, not the variation</h3>
+<p><strong>The idea.</strong> What distinguishes one action principle from another is which quantities are fixed at the two ends of the path. The variation itself is the same operation in every case.</p>
+<p><strong>What it would add.</strong> A clean criterion for a claim the corpus makes repeatedly without this vocabulary: that a Lagrangian derivation is fixed once the boundary data are fixed. The corpus's Lagrangian articles vary fields with fixed endpoints and never say that this choice is what makes the result a Hamilton principle rather than a Maupertuis one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/noethers-theorem-in-biquaternionic-form.md</code>, in the statement of what the variation holds fixed.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus would only have to name the boundary data it already uses.</p>
+<h3 id="2-the-path-integral-comes-first-and-the-principle-follows">2. The path integral comes first and the principle follows</h3>
+<p><strong>The idea.</strong> The classical principle is the stationary-phase limit of the quantum sum over paths, so the "derivation" of quantum mechanics from a classical action runs backwards.</p>
+<p><strong>What it would add.</strong> An ordering the corpus states in one direction only. The corpus derives the path integral from the action and the action from the algebra; the article's reading is that the interference sum is the primitive object and the extremum is its short-wavelength approximation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-path-integral-in-biquaternionic-form.md</code>, on the classical limit.</p>
+<p><strong>What stands in the way.</strong> The corpus's path integral is over algebra elements, not over real paths, so the stationary-phase argument would have to be made for a non-commutative integrand.</p>
+<p>This is an encyclopedia article with no derivations of its own; its citations are to the specialised articles it summarises.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

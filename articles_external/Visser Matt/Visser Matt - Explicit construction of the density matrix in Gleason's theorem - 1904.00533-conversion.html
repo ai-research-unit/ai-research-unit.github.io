@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit construction of the density matrix in Gleason&#x27;s theorem — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit construction of the density matrix in Gleason&#x27;s theorem -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="explicit-construction-of-the-density-matrix-in-gleasons-theorem"><strong>Explicit construction of the density matrix in Gleason's theorem</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1904.00533v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Del Rajan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 1 April 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Explicit construction of the density matrix in Gleason's theorem - 1904.00533-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit construction of the density matrix in Gleason's theorem - 1904.00533.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Explicit construction of the density matrix in Gleason's theorem - 1904.00533.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gleason's theorem shows that a probability assignment on subspaces forces a density matrix, but says little about what that matrix looks like. This paper does not reprove the theorem. It builds the density matrix explicitly from probability valuations on a limited set of subspaces, and spells out the construction step by step. The discussion places the result in the foundations literature and suggests quantum-information applications such as no-cloning and no-broadcasting.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-theorem-is">What the theorem is</h3>
+<p>"Gleason's theorem is a fundamental 60 year old result in the foundations of quantum mechanix, setting up and laying out the surprisingly minimal assumptions required to deduce the existence of quantum density matrices and the Born rule."</p>
+<h3 id="what-the-paper-does-not-do">What the paper does not do</h3>
+<p>"we will have very little to say about the theorem and proof themselves. Instead, we find it useful, (and hopefully interesting), to make some clarifying comments concerning the explicit construction of the quantum density matrix that Gleason's theorem proves exists, but that Gleason's theorem otherwise says relatively little about."</p>
+<h3 id="the-aim-stated-again">The aim stated again</h3>
+<p>"We have not attempted to provided a new proof of Gleason's theorem. Instead we have in mind a much more modest attempt at trying to understand what the density matrix actually looks like directly in terms of the probability valuations $v(\cdot)$ on a limited number of subspaces of the Hilbert space."</p>
+<h3 id="why-the-theorem-matters">Why the theorem matters</h3>
+<p>"Gleason's theorem is profound that it shapes the probabilistic nature of quantum theory. It places strong constraints on any attempts to modify this formalism, and it also gives a fundamental reason for why density operators play such an important role."</p>
+<h3 id="the-forward-look">The forward look</h3>
+<p>"Future work regarding this explicit construction of the density operator may involve applications to quantum information theory. This may reveal interesting links between quantum foundations, and to the fundamental results of quantum information theory such as no-cloning or no-broadcasting."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"Such a direction would allow the reach of Gleason's theorem to extend further into the modern information-theoretic setting of quantum physics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-density-matrix-is-forced-not-chosen">1. The density matrix is forced, not chosen</h3>
+<p><strong>The idea.</strong> Minimal assumptions about probabilities on subspaces already fix the density operator.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> takes a density matrix as given. Gleason's theorem says the form is not a modelling choice, which strengthens any entropy argument that starts from it, and the article should cite that.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, in the definition of the functional.</p>
+<p><strong>What stands in the way.</strong> The theorem needs Hilbert space dimension at least three. Ranked first, because it closes a gap in the article's starting point.</p>
+<h3 id="2-an-explicit-construction-not-an-existence-proof">2. An explicit construction, not an existence proof</h3>
+<p><strong>The idea.</strong> One can write the matrix down from the valuations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.md</code> deals with non-standard states. An explicit map from probabilities to operators is a check that the framework's states satisfy the Born rule rather than merely resembling it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.md</code>, in the discussion of states.</p>
+<p><strong>What stands in the way.</strong> The construction is for standard complex Hilbert space. Ranked second.</p>
+<h3 id="3-no-broadcasting-as-a-constraint-on-extensions">3. No-broadcasting as a constraint on extensions</h3>
+<p><strong>The idea.</strong> Information-theoretic no-go results bound how far the formalism can be deformed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.md</code> derives a no-cloning obstruction. This paper points to the broader no-broadcasting family, which suggests the article's obstruction is one member of a set and should be placed among the others.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The link is suggested, not derived. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

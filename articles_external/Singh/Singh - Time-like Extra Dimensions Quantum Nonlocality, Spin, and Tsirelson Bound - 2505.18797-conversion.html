@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time-like Extra Dimensions: Quantum Nonlocality, Spin, and Tsirelson Bound — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Time-like Extra Dimensions Quantum Nonlocality, Spin, and Tsirelson Bound - 2505.18797.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="time-like-extra-dimensions-quantum-nonlocality-spin-and-tsirelson-bound"><strong>Time-like Extra Dimensions: Quantum Nonlocality, Spin, and Tsirelson Bound</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2505.18797v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mohammad Furquan, Tejinder P. Singh, P. S. Wesley</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, May 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Universe 2025</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Time-like Extra Dimensions Quantum Nonlocality, Spin, and Tsirelson Bound - 2505.18797-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Time-like Extra Dimensions Quantum Nonlocality, Spin, and Tsirelson Bound - 2505.18797.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/entanglement-monogamy-and-the-ckw-inequality.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Time-like Extra Dimensions Quantum Nonlocality, Spin, and Tsirelson Bound - 2505.18797.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Offers a mechanism for the EPR correlations that keeps both special relativity and quantum mechanics exactly as they are. The universe is six-dimensional with signature $(3,3)$: two overlapping four-dimensional spacetimes sharing one time and one space direction. Quantum systems move in all six dimensions; classical detectors live in four. Two events that are spacelike separated in four dimensions can be timelike separated in six, so a local, subluminal influence connects them, and nonlocality is a projection artefact. The paper builds the six-dimensional Dirac equation from split biquaternions, defines spin in both four-dimensional slices, and shows that the CHSH correlation can exceed the Tsirelson bound because of interference between the two slices.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"stract: The E8 ⊗ E8 octonionic theory of unification suggests that our universe is sixdimensional and that the two extra dimensions are time-like." and that the extra dimensions "resolve the EPR paradox."</p>
+<p>"Quantum systems access all six dimensions, whereas classical systems such as detectors experience only four dimensions. Therefore, correlated quantum events that are time-like separated in 6D can appear to be space-like separated and, hence, nonlocal, when projected to 4D."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"the communication obeys special relativity and is local. Bell inequalities continue to be violated because quantum correlations continue to hold."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"We develop our analysis after first constructing the Dirac equation in 6D using quaternions and using the equation to derive spin matrices in 6D and then in 4D."</p>
+<h3 id="the-bound">The bound</h3>
+<p>"We also show that the Tsirelson bound of the CHSH inequality can in principle be violated in 6D."</p>
+<h3 id="the-line-element">The line element</h3>
+<p>$ds^2=dt_2^2+dt_1^2-dx_1^2$, chosen so that the interval is positive even when $dt_1=0$ — the two events are separated by the second time.</p>
+<h3 id="where-the-extra-times-come-from">Where the extra times come from</h3>
+<p>"e net result is a 6D spacetime of signature (3, 3) broken into two overlapping 4D spacetimes M4 and M4′ and six emergent forces. Universe", with general relativity as the geometry of $M_4$ and the weak force as the geometry of $M_4'$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-nonlocality-as-a-projection-artefact">1. Nonlocality as a projection artefact</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: the correlations are not transmitted. The two wings of an EPR pair are connected through a second time direction, and the connection is timelike and subluminal in six dimensions. Projecting onto four dimensions makes a timelike interval look spacelike, so the influence looks nonlocal and looks faster than light.</p>
+<p><strong>What it would add.</strong> The corpus's entanglement articles take the correlations as axioms of the formalism and compute with them. This supplies a kinematic explanation that changes nothing about the quantum predictions — no-signalling is preserved, Bell violation is preserved — while removing the mystery. It is the only proposal in view that leaves both theories intact, and it makes a sharp experimental prediction that the corpus can state.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/entanglement-monogamy-and-the-ckw-inequality.md</code>.</p>
+<p><strong>What stands in the way.</strong> The six-dimensional arena is motivated by an external programme; a reader who rejects that programme has no independent reason to accept two time directions.</p>
+<h3 id="2-spin-defined-twice-once-per-slice">2. Spin defined twice, once per slice</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: in six dimensions the Dirac equation is built from split biquaternions; taking the non-relativistic limit in each four-dimensional slice gives two sets of Pauli matrices, one per slice, and hence two spin descriptions of one state.</p>
+<p><strong>What it would add.</strong> The corpus's spinor articles construct spin in four dimensions and treat the internal space as an abstraction. Here the internal directions are two of the six, and spin in each slice is ordinary spatial spin. That makes the "internal" quantum numbers geometric without adding a fibre, which is a cleaner story than the usual Kaluza-Klein one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The decomposition requires a preferred split of the six dimensions into two fours, and the paper does not show that the physics is independent of the choice.</p>
+<h3 id="3-beating-tsirelson-without-breaking-causality">3. Beating Tsirelson without breaking causality</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: because the state is a superposition over the two slices, the correlation acquires interference terms. With those terms the CHSH combination can exceed $2\sqrt 2$, approaching the Popescu–Rohrlich value of $4$, while remaining causal.</p>
+<p><strong>What it would add.</strong> The corpus treats the Tsirelson bound as a theorem about Hilbert space. This shows it is a theorem about four-dimensional Hilbert space, and that a larger arena relaxes it. The paper also notes that trace dynamics already permits correlations above $2\sqrt2$, which makes two independent routes to the same conclusion — a convergence the corpus should record, because converging routes are its best evidence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-tsirelson-bound-and-the-bell-inequalities.md</code>.</p>
+<p><strong>What stands in the way.</strong> The violation requires a specific relative phase between the two slices, so it is a prediction for a particular preparation rather than a general effect.</p>
+<p>The rank: the projection mechanism first, because it dissolves the paradox; the double spin second, because it is the technical core; the bound violation third, because it is the testable consequence.</p>
+<p>The remaining items in one line each: the six-dimensional metric with signature $(3,3)$ and its reduction to two copies of $(3,1)$; the experimental proposal, which would look for the interference terms in a Bell test; and the acknowledgement that Pettini published the extra-time resolution first, with this paper's contribution being the gravi-weak motivation and the Tsirelson argument.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

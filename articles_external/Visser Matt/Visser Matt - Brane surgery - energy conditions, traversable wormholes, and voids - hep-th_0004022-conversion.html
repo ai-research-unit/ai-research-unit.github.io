@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brane surgery: energy conditions, traversable wormholes, and voids — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Brane surgery - energy conditions, traversable wormholes, and voids -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="brane-surgery-energy-conditions-traversable-wormholes-and-voids"><strong>Brane surgery: energy conditions, traversable wormholes, and voids</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0004022v3</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 8 May 2000 (first version 4 April 2000)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Brane surgery - energy conditions, traversable wormholes, and voids - hep-th_0004022-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Brane surgery - energy conditions, traversable wormholes, and voids - hep-th_0004022.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Brane surgery - energy conditions, traversable wormholes, and voids - hep-th_0004022.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper points out that a brane with negative tension violates every standard energy condition of the surrounding spacetime. It then uses the Israel–Lanczos–Sen thin-shell formalism to cut and paste such branes into a spacetime, a procedure the authors call brane surgery. The worked example is a $(2+1)$-dimensional brane moving through a $(3+1)$-dimensional universe. The resulting solutions include traversable wormholes, some of them dynamically stable, closed baby universes, and voids — holes in the manifold itself. The authors note that such spacetimes evade, rather than violate, the singularity theorems and the positive mass theorem, because those theorems assume energy conditions that no longer hold.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-observation">The observation</h3>
+<p>"Branes are ubiquitous elements of any low-energy limit of string theory. We point out that negative tension branes violate all the standard energy conditions of the higher-dimensional spacetime they are embedded in; this opens the door to very peculiar solutions of the higher-dimensional Einstein equations."</p>
+<h3 id="the-method">The method</h3>
+<p>"Building upon the (3+1)-dimensional implementation of fundamental string theory, we illustrate the possibilities by considering a toy model consisting of a (2+1)-dimensional brane propagating through our observable (3+1)-dimensional universe. Developing a notion of 'brane surgery', based on the Israel–Lanczos–Sen 'thin shell' formalism of general relativity, we analyze the dynamics and find traversable wormholes, closed baby universes, voids (holes in the spacetime manifold), and an evasion (not a violation) of both the singularity theorems and the positive mass theorem."</p>
+<h3 id="the-main-claim">The main claim</h3>
+<p>"The main point of this paper is that in the brane picture there is nothing wrong with the notion of a negative brane tension, and that once branes of this type are allowed to contribute to the stress-energy, the class of solutions is greatly enhanced, now including many quite peculiar beasts not normally considered to be part of standard general relativity."</p>
+<h3 id="a-physical-cost">A physical cost</h3>
+<p>"For spherically symmetric wormholes of the type considered in this paper, attempting to cross from one universe to the other requires the traveller to cross the brane, a process which is likely to prove disruptive of the traveller's internal structure, well being, and overall health." The authors suggest that negative-tension strings instead of walls would avoid this.</p>
+<h3 id="what-is-lost">What is lost</h3>
+<p>"Now the peculiarities attendant on widespread violations of the energy conditions are not limited to violations of topological censorship; as we have seen there is also the possibility of violating (evading) the singularity theorem. If this is not enough, then it should be borne in mind that without some form of energy condition we do not have a positive mass theorem."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-evasion-is-not-a-violation">1. An evasion is not a violation</h3>
+<p><strong>The idea.</strong> The singularity and positive-mass theorems are not contradicted; their hypotheses fail. The distinction is the paper's sharpest logical point.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists results that cannot be obtained. Several of those results are theorems with hypotheses, and the catalogue should distinguish "the framework cannot supply the object" from "the framework does not satisfy the hypothesis". Brane surgery supplies a worked example of the second case, where nothing is contradicted and everything is permitted.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The example is not about $\mathbb{B}$ at all, so it serves only as a logical template. Ranked first, because that template is the catalogue's organising question.</p>
+<h3 id="2-energy-conditions-carry-the-theorems">2. Energy conditions carry the theorems</h3>
+<p><strong>The idea.</strong> Drop the energy conditions and the singularity theorems, the positive mass theorem, and topological censorship all go with them.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what a framework must reproduce to be viable. This paper shows that several of the standard results are conditional on a single hypothesis, so failure to reproduce them is not automatically fatal. That is a useful calibration for judging framework claims.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It weakens rather than strengthens the article's criteria, and must be stated carefully. Ranked second.</p>
+<h3 id="3-surgery-changes-topology">3. Surgery changes topology</h3>
+<p><strong>The idea.</strong> The thin-shell formalism joins two manifolds along a surface, and the joined object can have a different global structure from either piece.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that global structure is out of reach of local algebra. Brane surgery is a construction that produces global structure by hand, which is a different response to the same limitation: instead of deriving it, paste it. The article could name that option.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the conclusion.</p>
+<p><strong>What stands in the way.</strong> The construction needs a stress-energy tensor with negative tension, which the framework does not provide. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

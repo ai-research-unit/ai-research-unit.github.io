@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Killing horizons and surface gravities for a well-behaved three-function generalisation of the Kerr spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Killing horizons and surface gravities for a well-behaved three-function…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="killing-horizons-and-surface-gravities-for-a-well-behaved-three-function-generalisation-of-the-kerr-spacetime"><strong>Killing horizons and surface gravities for a well-behaved three-function generalisation of the Kerr spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2303.07380v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 15 May 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Universe 9 (2023) 223, doi:10.3390/universe9050223</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Killing horizons and surface gravities for a well-behaved three-function generalisation of the Kerr spacetime - 2303.07380-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Killing horizons and surface gravities for a well-behaved three-function generalisation of the Kerr spacetime - 2303.07380.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Killing horizons and surface gravities for a well-behaved three-function generalisation of the Kerr spacetime - 2303.07380.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors study a Kerr metric distorted by three arbitrary functions of the radial coordinate. The class is wide enough to contain many theoretical models and still tractable: geodesics and the Klein–Gordon equation separate in all of it, and every member is asymptotically Kerr. They prove that Killing horizons exist throughout the class and give closed forms for the angular velocity, area, and surface gravity. Rigidity and the zeroth law follow.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"Thanks to the recent advent of the event horizon telescope (EHT), we now have the opportunity to test the physical ramifications of the strong-field near-horizon regime for astrophysical black holes."</p>
+<h3 id="the-trade-off">The trade-off</h3>
+<p>"emphasizing the trade-off between tractability and generality, the authors discuss a particularly powerful three-function distortion of the Kerr spacetime, depending on three arbitrary functions of the radial coordinate $r$, which on the one hand can be fit to future observational data, and on the other hand is sufficiently general so as to encompass an extremely wide class of theoretical models."</p>
+<h3 id="separability">Separability</h3>
+<p>"In all of these spacetimes, both the timelike Hamilton–Jacobi (geodesic) and massive Klein–Gordon (wave) equations separate, and the spacetime geometry is asymptotically Kerr; hence these spacetimes are well-suited to modelling real astrophysical black holes."</p>
+<h3 id="the-claim-proved">The claim proved</h3>
+<p>"The authors then prove the existence of Killing horizons for this entire class of spacetimes, and give tractable expressions for the angular velocities, areas, and surface gravities of these horizons."</p>
+<h3 id="the-angular-velocity">The angular velocity</h3>
+<p>$$\Omega_{r_{H_i}}=\frac{a}{\Xi(r_{H_i})^2+a^2} \qquad (paper\ 8.3)$$</p>
+<p>"This expression is independent of $\theta$, and hence the horizon rotates is if it were a solid body, thereby yielding a 'rigidity' result."</p>
+<h3 id="the-area-and-the-temperature">The area and the temperature</h3>
+<p>$$S(r_{H_i})=4\pi\left(\Xi(r_{H_i})^2+a^2\right) \qquad (paper\ 8.4)$$</p>
+<p>$$\kappa=\frac{\exp(-\Phi(r_{H_i}))\,\Delta'(r_{H_i})}{2\left(\Xi(r_{H_i})^2+a^2\right)} \qquad (paper\ 8.5)$$</p>
+<p>"This expression is independent of $\theta$ and hence the horizons fulfil the zeroth law of black hole mechanics."</p>
+<h3 id="what-the-class-is-for">What the class is for</h3>
+<p>"They cover a vast class of physically interesting spacetimes, as outlined in Table 1 above, and also give toy models that can model the exterior spacetime of real astrophysical black holes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-surface-gravity-from-two-functions">1. Surface gravity from two functions</h3>
+<p><strong>The idea.</strong> In the whole three-function class the surface gravity is a ratio of $\Delta'$ and $\Xi^2+a^2$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> defines temperature through surface gravity. This paper shows that one formula covers a triply infinite family, which means the temperature is robust under distortion — a claim the target can adopt as a check on its dictionary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the section on the first law.</p>
+<p><strong>What stands in the way.</strong> The formula holds only within this class. Ranked first, because it shows the thermodynamic dictionary survives a large deformation.</p>
+<h3 id="2-zeroth-law-as-a-computation">2. Zeroth law as a computation</h3>
+<p><strong>The idea.</strong> The constancy of $\kappa$ over the horizon is shown by the $\theta$-independence of one expression.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> separates the local condition from the global locus. Here the local computation delivers a global-looking law, which is a case the target's ledger should classify.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on the three senses of horizon.</p>
+<p><strong>What stands in the way.</strong> The result is for a stationary class only. Ranked second.</p>
+<h3 id="3-generality-with-separability">3. Generality with separability</h3>
+<p><strong>The idea.</strong> Three free functions still allow exact separation of the wave equation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code> restricts to Kerr–Schild form to get a wave equation it can solve. This paper shows a wider family that stays solvable, so the target's restriction is stronger than necessary.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code>, in the section on the sub-class.</p>
+<p><strong>What stands in the way.</strong> The wider family is not Kerr–Schild. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

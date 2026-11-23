@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Theory, Gravity, and the Standard Model of Particle Physics: Using the Hints of Today to Build the Final Theory of Tomorrow — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory, gravity, and the standard model of particle physics - using the hints of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-theory-gravity-and-the-standard-model-of-particle-physics-using-the-hints-of-today-to-build-the-final-theory-of-tomorrow"><strong>Quantum Theory, Gravity, and the Standard Model of Particle Physics: Using the Hints of Today to Build the Final Theory of Tomorrow</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1001.3391v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Quantum theory, gravity, and the standard model of particle physics - using the hints of today to build the final theory of tomorrow - 1001.3391-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory, gravity, and the standard model of particle physics - using the hints of today to build the final theory of tomorrow - 1001.3391.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Quantum theory, gravity, and the standard model of particle physics - using the hints of today to build the final theory of tomorrow - 1001.3391.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that quantum theory is an approximation, and locates the approximation precisely: quantum mechanics needs an external classical time, which exists only when the universe is dominated by classical bodies. Remove those, and the formulation has nothing to refer to. The repair is a noncommutative spacetime whose noncommutativity parameter is a function of $m/m_{Pl}$, so that the theory becomes nonlinear near the Planck mass, reduces to quantum mechanics below it and to classical mechanics above it. The essay then lists four consequences: measurement, black hole entropy, the cosmological constant, and unification.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-unasked-question">The unasked question</h3>
+<p>"Can we be sure then, that quantum theory is exact, and not an approximation to a deeper underlying theory of mechanics? The answer is no."</p>
+<h3 id="why-not">Why not</h3>
+<p>"The concept of time, however, is external to quantum mechanics. It is a classical concept." And: "For its formulation, the quantum theory requires the a priori presence of classical matter fields; but classical fields are themselves only a limiting case of quantum fields. This is an unsatisfactory, circuitous, state of affairs. A fundamental theory should not have to depend on its own limit, for its formulation."</p>
+<h3 id="the-hole-argument">The hole argument</h3>
+<p>"If the metric is undergoing quantum fluctuations, the underlying classical spacetime manifold is destroyed too. No longer can one talk of evolution with respect to classical time, in quantum theory, if there are no classical matter fields in the Universe."</p>
+<h3 id="the-requirement">The requirement</h3>
+<p>"There must exist an equivalent formulation of quantum mechanics, which does not refer to an external classical time."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"the dynamics of the state depends on the state itself, and this makes the dynamics nonlinear. Quantum gravity is decidedly a nonlinear theory. There is now no equivalent reformulation of the linear quantum theory."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"We propose that the basic laws of physics are invariant under general coordinate transformations of noncommuting coordinates; thus generalizing the principle of general covariance", with the flat case $d\hat s^2=d\hat t^2-d\hat x^2+d\hat t\,d\hat x-d\hat x\,d\hat t$.</p>
+<h3 id="the-limits">The limits</h3>
+<p>"The non-linearity has been brought about by the presence of the ‘curved’ metric. In the limit where all metric components approach unity, one recovers linear quantum mechanics. At the other end, as θ → 0, spacetime becomes commutative, and one recovers classical mechanics and ordinary general relativity. Since θ"</p>
+<h3 id="the-measurement-account">The measurement account</h3>
+<p>"The upshot is that, as a result of the non-linearity, quantum mechanics is a deterministic random theory. The outcome of a measurement is determined by the value of the phase, and the randomness of the phase leads to different outcomes, in consistency with the Born rule."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-quantum-mechanics-cannot-be-fundamental-because-it-needs-its-own-limit">1. Quantum mechanics cannot be fundamental because it needs its own limit</h3>
+<p><strong>The idea.</strong> An <strong>argument from circularity</strong>: the formulation of quantum theory presupposes classical fields; classical fields are the limit of quantum fields; so the theory is formulated in terms of something it is supposed to contain. A fundamental theory cannot be like that.</p>
+<p><strong>What it would add.</strong> The corpus has many statements that quantum mechanics is emergent, usually supported by a construction that produces it. This is an argument that does not need the construction: whatever the details, the formulation is circular, so something is missing. It is a cheap and strong opening for any corpus article claiming emergence, and it is independent of which emergent theory one prefers.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> A defender can answer that the circularity is benign — an effective theory may use background structures that it also describes approximately — and the essay does not close that reply.</p>
+<h3 id="2-a-mesoscopic-window-fifteen-orders-wide-that-has-never-been-tested">2. A mesoscopic window fifteen orders wide that has never been tested</h3>
+<p><strong>The idea.</strong> A <strong>fact about evidence</strong>: quantum mechanics is tested for systems up to about a thousand atoms and for macroscopic aggregates, but not in between, a span of some fifteen orders of magnitude in degrees of freedom. A theory that interpolates between the two limits is therefore not excluded.</p>
+<p><strong>What it would add.</strong> The corpus's articles on the classical limit assume the transition is understood. This says the middle is an experimental blank, which is exactly the region where a nonlinear modification would live. It reframes the corpus's mesoscopic and macroscopic discussions from the question of how the limit works to the question of what happens in the untested band, which is a better-posed question, and it gives any corpus prediction in that band unusual value.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>.</p>
+<p><strong>What stands in the way.</strong> The band has narrowed since the essay was written; optomechanical and macromolecule interference experiments keep pushing into it.</p>
+<h3 id="3-black-hole-entropy-from-the-noncommutativity-parameter">3. Black hole entropy from the noncommutativity parameter</h3>
+<p><strong>The idea.</strong> A <strong>proposal</strong>: the atoms of spacetime are the extra noncommuting degrees of freedom, symbolised by the antisymmetric metric component $\theta$. Coarse-graining them gives both classical geometry and its thermodynamic interpretation, and the Schwarzschild–Compton product being $\ell_P^2$ becomes a consequence of being at different limits of one theory.</p>
+<p><strong>What it would add.</strong> The corpus's gravity-and-thermodynamics articles derive entropy from a modular structure. This derives it from counting noncommutative degrees of freedom, and it explains the otherwise mysterious constancy of the product of the two radii — a number the corpus takes as given. Two routes to the same entropy with different microscopic counts is a productive tension; if they disagree, at least one is wrong.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> No counting is performed; the entropy is attributed to the $\theta$ degrees of freedom by analogy with thermodynamics, and the duality principle that does the work is asserted.</p>
+<p>The rank: the circularity argument first, because it is independent of any construction; the untested band second, because it is a fact that changes what counts as evidence; the entropy counting third, because it is programmatic.</p>
+<p>The remaining items in one line each: the duality between a black hole of mass $M$ and a particle of mass $m$ with $Mm=m_{Pl}^2$, which is the device that maps the two limits onto each other; the cosmological constant discussion, which treats it as the energy of the un-collapsed sector; and the claim that the standard model's parameters come from the same nonlinear structure, which is the unification part of the essay.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

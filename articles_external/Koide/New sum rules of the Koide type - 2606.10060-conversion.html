@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New sum rules of the Koide type — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/New sum rules of the Koide type - 2606.10060.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="new-sum-rules-of-the-koide-type"><strong>New sum rules of the Koide type</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2606.10060 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alejandro Rivero (BIFI, Universidad de Zaragoza)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 8 June 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Physics Letters B 877 (2026) 140510</td>
+</tr>
+<tr>
+<td>doi</td>
+<td>10.1016/j.physletb.2026.140510</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/New sum rules of the Koide type - 2606.10060-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/New sum rules of the Koide type - 2606.10060.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/New sum rules of the Koide type - 2606.10060.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reports a second functional form — the same closure with masses and amplitudes inverted — and shows that the down-quark sector satisfies it to the same precision as the charged leptons satisfy the direct form, provided the ratio is evaluated at a scale near $280$ TeV. The direct tuple degrades as it is run up; the inverse tuple <em>improves</em>, crossing $2/3$ and staying within one sigma along the whole desert. The paper also collects the quark tuples of the direct kind, including the sign-negative $(s,c,b)$, and states the reason the quark ratios are comparatively stable: masses of the same type share their renormalisation exponents.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-shapes">The two shapes</h3>
+<p>The direct rule is written with additive charges and two "averaging constraints":</p>
+<p>$$
+m_i=M^{(l)}\left(z_0+z_i\right)^2,\qquad \sum_{i=1}^3z_i=0,\qquad \frac13\sum_{i=1}^3z_i^2=z_0^2,
+\tag{paper 1}
+$$</p>
+<p>"exact for lepton pole masses: given as input the masses of electron and muon, it predicts the tau mass within experimental precision". The task is complicated by the loss of the preonic justification: "it is not easy to find a reason for a Yukawa coupling going as a square, not to say as an additive charge". The reported new rule is the inverse shape,</p>
+<p>$$
+m_i=M^{(d)}\left(w_0+w_i\right)^{-2},\qquad \sum_{i=1}^3w_i=0,\qquad \frac13\sum_{i=1}^3w_i^2=w_0^2,
+\tag{paper 2}
+$$</p>
+<p>"that is exact at some point above 100 TeV and remains within one standard deviation of the experimental central values throughout the running."</p>
+<p>In ratio form,</p>
+<p>$$
+K^{-1}(d,s,b)=\frac{1/m_d+1/m_s+1/m_b}{\left(1/\sqrt{m_d}+1/\sqrt{m_s}+1/\sqrt{m_b}\right)^2}=\frac23 ,
+\tag{paper 4}
+$$</p>
+<p>and "with only positive charges, the left-hand side is bounded between $1/3$ and $1$" — the same bounds as the direct ratio.</p>
+<h3 id="the-running-in-the-opposite-direction">The running, in the opposite direction</h3>
+<p>"For the desert hypothesis under renormalisation-group running (5-loop Standard Model, using the Martin–Robertson SMDR code)":</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale $Q$</th>
+<th>$K^{-1}(d,s,b)$</th>
+<th>deviation from $2/3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_Z$</td>
+<td>$0.66750$</td>
+<td>$+0.13\%$</td>
+</tr>
+<tr>
+<td>$1$ TeV</td>
+<td>$0.66719$</td>
+<td>$+0.08\%$</td>
+</tr>
+<tr>
+<td>$100$ TeV</td>
+<td>$0.66675$</td>
+<td>$+0.01\%$</td>
+</tr>
+<tr>
+<td>$280$ TeV</td>
+<td>$0.66667$</td>
+<td>$0.00\%$</td>
+</tr>
+<tr>
+<td>$10^6$ GeV</td>
+<td>$0.66657$</td>
+<td>$-0.01\%$</td>
+</tr>
+<tr>
+<td>$M_{Planck}$</td>
+<td>$0.66539$</td>
+<td>$-0.19\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>"It crosses $2/3$ at $Q=280$ TeV using the default model of SMDR. It crosses $2/3$ a bit earlier, at $10.18$ TeV, if we interpolate the 2024-PDG Table 2 values ... As we see in Fig. 1, the equation is within one-sigma error along all the run, so more experimental precision is needed if we want to pinpoint the exact scale of a portal of new physics. The determination of the crossing point is very sensitive to variations in the mass of the down and strange quarks."</p>
+<h3 id="the-direct-quark-tuples">The direct quark tuples</h3>
+<p>"Instead of the common scale analysis we used in the inverse down tuple, here we base the observation of these tuples in PDG 2025 values in $MS$ scheme ... as we have found the puzzling fact that they hold better than at a common scale":</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tuple</th>
+<th>$K$</th>
+<th>deviation from $2/3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(t,b,c)$</td>
+<td>$0.662729$</td>
+<td>$-0.591\%$</td>
+</tr>
+<tr>
+<td>$(-s,c,b)$</td>
+<td>$0.674802$</td>
+<td>$+1.220\%$</td>
+</tr>
+<tr>
+<td>$(c,s,u)$</td>
+<td>$0.624058$</td>
+<td>$-6.391\%$</td>
+</tr>
+<tr>
+<td>$(c,s,0)$</td>
+<td>$0.664478$</td>
+<td>$-0.328\%$</td>
+</tr>
+<tr>
+<td>$(s,u,d)$</td>
+<td>$0.565959$</td>
+<td>$-15.106\%$</td>
+</tr>
+<tr>
+<td>$(s,0,u+d)$</td>
+<td>$0.664831$</td>
+<td>$-0.275\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>"The substitution $u\to0$ is interesting both algebraically and historically", since Harari's original $sdu$ set used $m_u=0$ to produce the Cabibbo angle; $(s,0,u+d)$ uses $\sqrt{m_{ud}}$ as the charge of the light doublet. $(-s,c,b)$ "is also well known, with the detail of being the only one that requires a negative charge".</p>
+<p>The candour is worth quoting: "it is amusing that a single formula provides enough mass relations to adjust the six quarks up to one overall scale. However, this observation should be interpreted cautiously: as we relax the precision of the mass rule, it is really not so complicated to find random masses fitting into them, as far as they are taken from a log-uniform distribution."</p>
+<h3 id="why-the-ratios-are-stable">Why the ratios are stable</h3>
+<p>"Quotient tuples between particles of the same kind have the same exponents under the renormalisation group, and they are approximately invariant; the main source of perturbative change is the Yukawa coupling; that means that low-mass quark tuples such as $(sud)$ or their variants run practically flat."</p>
+<p>The conclusion: "out of four equal charge tuples in the standard model, namely charged and neutral leptons, and up and down quarks, two of them are known to have mass sum rules of the Koide type up to one-sigma experimental precision. The neutrino tuple cannot be decided empirically, and the up-type quark seems to need an interleaving structure to match in this pattern."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-inverse-shape-and-a-closure-that-improves-with-running">1. The inverse shape, and a closure that improves with running</h3>
+<p><strong>The idea.</strong> A <strong>formula and a crossing scale</strong>: $m_i\propto(w_0+w_i)^{-2}$ with the same two trace conditions gives $K^{-1}=2/3$ for the down quarks, exactly at $\sim280$ TeV and within one sigma across twelve orders of magnitude.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1–§3 has a single shape — mass as the square of an additive amplitude — and records the quarks failing. Here the same constant is reached by a different shape in the sector that was the worst failure, and the running moves it <em>towards</em> the target rather than away. That inverts the corpus's central difficulty: if one sector's relation is exact in the ultraviolet, the "why the pole masses" problem disappears for that sector and becomes a question of which shape belongs to which sector.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1 (sector table) and §9.</p>
+<p><strong>What stands in the way.</strong> The crossing scale moves from $280$ TeV to $10$ TeV under a change of mass inputs, and the $d$ and $s$ masses at $2$ GeV are the least well determined in the table; a "somewhere above $100$ TeV" statement is weak. The inverse shape also has no derivation, and the paper says so: "it is not easy to find a reason for a Yukawa coupling going as a square, not to say as an additive charge".</p>
+<h3 id="2-same-representation-masses-share-exponents-so-ratios-are-stable">2. Same-representation masses share exponents, so ratios are stable</h3>
+<p><strong>The idea.</strong> A <strong>statement</strong>: masses of particles with the same gauge quantum numbers have the same anomalous dimension, so a ratio of such masses — and hence any homogeneous-degree-zero function such as $Q$ — is invariant under the leading running; only Yukawa terms break it.</p>
+<p><strong>What it would add.</strong> This is the qualitative version of the exact one-loop statement in the Hübner conversion, and it applies to every sector: leptons share a charge, quarks share a colour, so the leading running is flavour-blind everywhere and $Q$ is a <em>ratio</em> observable by construction. The corpus can then say precisely what kind of effect could move $Q$: a flavour-dependent anomalous dimension, i.e. a Yukawa or a threshold.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, first item.</p>
+<p><strong>What stands in the way.</strong> It is an approximation — the top Yukawa is not small — and the paper's own quark table shows percent-level differences between common-scale and decoupled evaluations. Worth stating with the caveat.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The six-tuple table is the most complete collection of direct quark tuples in the folder and is useful as a reference. The Galois remark, that $m_t/m_c=151-28\sqrt3$ appears both directly and in the inverse solution, is a curiosity with no stated use. The closing suggestion, that the inversion of shape invites a duality reading (Sannino, or mesino–lepton links), is a direction and not a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

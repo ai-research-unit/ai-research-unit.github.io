@@ -96,18 +96,18 @@ $$</p>
 <h3 id="semisimple-versus-diagonalisable">Semisimple versus diagonalisable</h3>
 <p>The theorem separates two notions that coincide over an algebraically closed field and differ over $\mathbb{R}$.</p>
 <ul>
-<li>A matrix is <strong>semisimple</strong> when its minimal polynomial is squarefree. Over an algebraic closure it is diagonalisable, but over the base field it need not be. The rotation $R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ over $\mathbb{R}$ has $m_R=x^2+1$, which is squarefree, so $R$ is semisimple; it is not diagonalisable over $\mathbb{R}$, because it has no real eigenvector.</li>
+<li>A matrix is <strong>semisimple</strong> when its minimal polynomial is squarefree. Over an algebraic closure it is diagonalisable, but over the base field it need not be. The rotation $R=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$ over $\mathbb{R}$ has $m_R=x^2+1$, which is squarefree, so $R$ is semisimple; it is not diagonalisable over $\mathbb{R}$, because it has no real eigenvector.</li>
 <li>A matrix is <strong>diagonalisable over $k$</strong> when it is similar over $k$ to a diagonal matrix. This requires the eigenvalues to lie in $k$ and the eigenspaces to span $V$ over $k$. The rotation is diagonalisable over $\mathbb{C}$ but not over $\mathbb{R}$.</li>
 </ul>
 <p>The Jordan–Chevalley decomposition is stated for semisimple, not for diagonalisable: it exists over every perfect field, and the semisimple part may have irreducible factors of degree greater than one over $k$. The eigenvalue decomposition is stated for diagonalisable over $k$: it requires the eigenvalues in $k$. The two coincide over an algebraically closed field.</p>
 <h3 id="the-polynomial-form">The polynomial form</h3>
 <p>The proof gives $A_s$ and $A_n$ as polynomials in $A$. The polynomial for $A_s$ can be written explicitly by Hermite interpolation. Let</p>
 <p>$$
-p\in k[x], \qquad \deg p<\deg m_A,
+p\in k[x], \qquad \deg p&lt;\deg m_A,
 $$</p>
 <p>be the unique polynomial with</p>
 <p>$$
-p(\lambda_i)=\lambda_i, \qquad p^{(k)}(\lambda_i)=0 \quad (1\le k<e_i, \ 1\le i\le r).
+p(\lambda_i)=\lambda_i, \qquad p^{(k)}(\lambda_i)=0 \quad (1\le k&lt;e_i, \ 1\le i\le r).
 $$</p>
 <p><strong>Proposition.</strong> With $p$ as above, $A_s=p(A)$ and $A_n=(x-p)(A)$.</p>
 <p><em>Proof.</em> On the primary component $V_i$, the Taylor expansion of $p$ at $\lambda_i$ is</p>
@@ -134,7 +134,7 @@ $$</p>
 <h3 id="a-three-by-three-example">A three-by-three example</h3>
 <p>Let</p>
 <p>$$
-A=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix}.
+A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}.
 $$</p>
 <p>The characteristic polynomial is $(x-2)^2(x-3)$ and the minimal polynomial is $(x-2)^2(x-3)$, so the eigenvalues are $2$ and $3$, with $e_2=2$ and $e_3=1$. The spectral projections are</p>
 <p>$$
@@ -142,8 +142,8 @@ P_2=E_{11}+E_{22}, \qquad P_3=E_{33},
 $$</p>
 <p>because the generalized eigenspace of $2$ is the span of the first two basis vectors and the eigenspace of $3$ is the span of the third. Hence</p>
 <p>$$
-A_s=2P_2+3P_3=\begin{pmatrix}2&0&0\\0&2&0\\0&0&3\end{pmatrix}, \qquad
-A_n=A-A_s=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}=E_{12}.
+A_s=2P_2+3P_3=\begin{pmatrix}2&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}, \qquad
+A_n=A-A_s=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}=E_{12}.
 $$</p>
 <p>The nilpotent part is $E_{12}$, of index two; $A_s$ is diagonal; and $A=A_s+A_n$ is the Jordan–Chevalley decomposition. The matrix is not semisimple, because $m_A$ has the repeated root $2$.</p>
 <h3 id="a-jordan-block">A Jordan block</h3>
@@ -173,11 +173,11 @@ $$</p>
 <h3 id="the-real-jordan-form">The real Jordan form</h3>
 <p>Over $\mathbb{R}$, the semisimple part is not necessarily diagonal: the complex eigenvalues occur in conjugate pairs, and each pair contributes a $2\times2$ block</p>
 <p>$$
-\begin{pmatrix}a&-b\\b&a\end{pmatrix}, \qquad a\pm ib \text{ the pair}.
+\begin{pmatrix}a&amp;-b\\b&amp;a\end{pmatrix}, \qquad a\pm ib \text{ the pair}.
 $$</p>
 <p>The real Jordan form is the direct sum of the real Jordan blocks: a real eigenvalue contributes the usual $J_m(\lambda)$, and a complex pair contributes a block of the form</p>
 <p>$$
-\begin{pmatrix}C&I&0&\cdots&0\\0&C&I&\cdots&0\\\vdots&&\ddots&\ddots&\vdots\\0&0&\cdots&C&I\\0&0&\cdots&0&C\end{pmatrix}, \qquad C=\begin{pmatrix}a&-b\\b&a\end{pmatrix},
+\begin{pmatrix}C&amp;I&amp;0&amp;\cdots&amp;0\\0&amp;C&amp;I&amp;\cdots&amp;0\\\vdots&amp;&amp;\ddots&amp;\ddots&amp;\vdots\\0&amp;0&amp;\cdots&amp;C&amp;I\\0&amp;0&amp;\cdots&amp;0&amp;C\end{pmatrix}, \qquad C=\begin{pmatrix}a&amp;-b\\b&amp;a\end{pmatrix},
 $$</p>
 <p>with the identity $I_2$ on the superdiagonal. The semisimple part is the block diagonal with the $C$'s on the diagonal, and the nilpotent part is the strictly block-upper part. The real form exists over $\mathbb{R}$ even when the eigenvalues are not real; the complex form is the scalar diagonalisation after extending scalars.</p>
 <h2 id="the-multiplicative-version">The Multiplicative Version</h2>
@@ -212,19 +212,19 @@ $$</p>
 <h3 id="a-semisimple-matrix-that-is-not-diagonalisable">A semisimple matrix that is not diagonalisable</h3>
 <p>The rotation</p>
 <p>$$
-R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+R=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}
 $$</p>
 <p>over $\mathbb{R}$ has $m_R=x^2+1$, which is squarefree, so $R$ is semisimple and $R_s=R$, $R_n=0$. It is not diagonalisable over $\mathbb{R}$: its eigenvalues $\pm i$ are not in $\mathbb{R}$. Over $\mathbb{C}$ it is diagonalisable, with the spectral projections of <em>The Eigenvalue Decomposition of a Matrix</em>, §<em>A rotation over the reals</em>. The example shows that the Jordan–Chevalley decomposition is not the same as the eigenvalue decomposition: it exists over $\mathbb{R}$, and its semisimple part is the matrix itself, even though no real eigenbasis exists.</p>
 <h3 id="a-matrix-with-a-complex-pair">A matrix with a complex pair</h3>
 <p>The real matrix</p>
 <p>$$
-A=\begin{pmatrix}1&-1\\1&1\end{pmatrix}
+A=\begin{pmatrix}1&amp;-1\\1&amp;1\end{pmatrix}
 $$</p>
-<p>has the characteristic polynomial $x^2-2x+2=(x-1)^2+1$, with the eigenvalues $1\pm i$. The minimal polynomial is the same, with distinct roots, so $A$ is semisimple and $A_s=A$, $A_n=0$. Over $\mathbb{C}$ the eigenvalues are distinct and the matrix is diagonalisable; over $\mathbb{R}$ it is not, and its real Jordan form is the single $2\times2$ block $\begin{pmatrix}1&-1\\1&1\end{pmatrix}$. The example is the smallest real matrix that is semisimple without being diagonalisable over $\mathbb{R}$.</p>
+<p>has the characteristic polynomial $x^2-2x+2=(x-1)^2+1$, with the eigenvalues $1\pm i$. The minimal polynomial is the same, with distinct roots, so $A$ is semisimple and $A_s=A$, $A_n=0$. Over $\mathbb{C}$ the eigenvalues are distinct and the matrix is diagonalisable; over $\mathbb{R}$ it is not, and its real Jordan form is the single $2\times2$ block $\begin{pmatrix}1&amp;-1\\1&amp;1\end{pmatrix}$. The example is the smallest real matrix that is semisimple without being diagonalisable over $\mathbb{R}$.</p>
 <h3 id="the-imperfect-field">The imperfect field</h3>
 <p>Let $k=\mathbb{F}_p(t)$ and let $A$ be the companion matrix of $x^p-t$:</p>
 <p>$$
-A=\begin{pmatrix}0&0&\cdots&0&t\\1&0&\cdots&0&0\\0&1&\cdots&0&0\\\vdots&&\ddots&&\vdots\\0&0&\cdots&1&0\end{pmatrix}.
+A=\begin{pmatrix}0&amp;0&amp;\cdots&amp;0&amp;t\\1&amp;0&amp;\cdots&amp;0&amp;0\\0&amp;1&amp;\cdots&amp;0&amp;0\\\vdots&amp;&amp;\ddots&amp;&amp;\vdots\\0&amp;0&amp;\cdots&amp;1&amp;0\end{pmatrix}.
 $$</p>
 <p>The characteristic and the minimal polynomial are both $x^p-t$, whose derivative is $p x^{p-1}=0$; the polynomial is inseparable and the matrix is not semisimple. Suppose that $A=S+N$ were a Jordan–Chevalley decomposition over $k$. The semisimple part $S$ would have the same characteristic polynomial $x^p-t$ as $A$, hence the same sole eigenvalue $t^{1/p}$ in the splitting field. A semisimple matrix with a single eigenvalue is the scalar matrix, so $S=t^{1/p}I$, whose entries are not in $k$; contradiction. Hence no decomposition exists over $k$. After the extension $K=k(t^{1/p})$, the polynomial becomes $(x-t^{1/p})^p$ and the matrix becomes the single Jordan block $t^{1/p}I+N$; the decomposition over $K$ is $S=t^{1/p}I$, $N=A-S$. The example is the matrix form of the failure over an imperfect field of <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>, §<em>The failure over an imperfect field</em>.</p>
 <h2 id="the-centraliser">The Centraliser</h2>
@@ -241,7 +241,7 @@ $$</p>
 <p><strong>Remark.</strong> The simultaneous form is the matrix form of the statement that a commutative subalgebra of $M_n(k)$ has a semisimple part and a nilpotent radical, and that its semisimple elements are simultaneously diagonalisable over an algebraic closure. The semisimple parts form a commutative semisimple algebra, and the nilpotent parts form a commutative nilpotent ideal of the algebra generated by the family. The result is used in the structure theory of commutative algebras of matrices and in the theory of the Jordan form of a family.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="a-nilpotent-matrix">A nilpotent matrix</h3>
-<p>For the nilpotent matrix $N=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the only eigenvalue is $0$, the minimal polynomial is $x^2$, and</p>
+<p>For the nilpotent matrix $N=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$, the only eigenvalue is $0$, the minimal polynomial is $x^2$, and</p>
 <p>$$
 N_s=0, \qquad N_n=N.
 $$</p>
@@ -253,9 +253,9 @@ E_s=E, \qquad E_n=0.
 $$</p>
 <p>The multiplicative version is $E=E\cdot I$, with the unipotent factor $I$. The example shows that an idempotent is its own semisimple part and that the decomposition is trivial.</p>
 <h3 id="a-jordan-block-with-a-nonzero-eigenvalue">A Jordan block with a nonzero eigenvalue</h3>
-<p>For $J=J_3(2)=\begin{pmatrix}2&1&0\\0&2&1\\0&0&2\end{pmatrix}$,</p>
+<p>For $J=J_3(2)=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;2\end{pmatrix}$,</p>
 <p>$$
-J_s=2I_3, \qquad J_n=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}.
+J_s=2I_3, \qquad J_n=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix}.
 $$</p>
 <p>The multiplicative version is $J=2I_3\cdot(I_3+\frac12J_n)$, with the unipotent factor $I_3+\frac12J_n$. The logarithm is</p>
 <p>$$
@@ -264,9 +264,9 @@ $$</p>
 $$</p>
 <p>which is the sum of the semisimple part $(\log2)I_3$ and the nilpotent part $\frac12J_n-\frac18J_n^2$. The example is the model computation for the logarithm of a non-diagonalisable matrix.</p>
 <h3 id="the-exponential-of-a-nilpotent-matrix">The exponential of a nilpotent matrix</h3>
-<p>For $N=\begin{pmatrix}0&1\\0&0\end{pmatrix}$,</p>
+<p>For $N=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$,</p>
 <p>$$
-e^N=I+N=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+e^N=I+N=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},
 $$</p>
 <p>a unipotent matrix. The multiplicative decomposition is $e^N=I\cdot e^N$, with the semisimple part $I$ and the unipotent part $e^N$; the logarithm recovers $N$. The example is the simplest case of the exponential theorem: a nilpotent matrix exponentiates to a unipotent matrix, and the unipotent matrix is the whole multiplicative decomposition.</p>
 <h3 id="the-rotation">The rotation</h3>

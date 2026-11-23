@@ -82,8 +82,8 @@
 <p><strong>Theorem.</strong> A smooth manifold carries a pseudo-Riemannian metric of signature $(n,m)$ if and only if its tangent bundle admits a subbundle of rank $n$ on which a Riemannian metric exists, equivalently if and only if the structure group of $TM$ reduces to $O(n,m)$. In the Lorentzian case, a closed connected manifold carries a Lorentzian metric if and only if its Euler characteristic vanishes.</p>
 <p><strong>Proof sketch.</strong> Given such a subbundle, choose a Riemannian metric $h$ and put $g = h|_{E} \oplus (-h)|_{E^\perp}$ on the decomposition $TM = E \oplus E^\perp$; the converse is the definition. For the Lorentzian statement, a Lorentzian metric produces a timelike, hence nowhere-zero, vector field, and a closed manifold admits a nowhere-zero vector field exactly when its Euler characteristic vanishes, by the Poincaré–Hopf theorem; conversely a nowhere-zero vector field $X$ gives the splitting $TM = \mathbb{R}X \oplus X^\perp$ and one defines $g = -h|_{X} \oplus h|_{X^\perp}$ for a Riemannian $h$. The Poincaré–Hopf theorem is a consequence of the degree theory of <em>Differential Topology</em>, applied to the zero set of a generic vector field.</p>
 <h3 id="causal-character-of-vectors-and-curves">Causal Character of Vectors and Curves</h3>
-<p><strong>Definition.</strong> Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is <strong>spacelike</strong> if $g(v, v) > 0$, <strong>timelike</strong> if $g(v, v) < 0$, and <strong>null</strong> (or <strong>lightlike</strong>) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the <strong>null cone</strong>; it is a cone, and it is the zero set of the quadratic form $\mathfrak{Q}(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $n$ form two open convex cones, and $n$ is <strong>time-orientable</strong> at $n$ if one of them is designated the future.</p>
-<p><strong>Definition.</strong> A nonzero vector field $X$ on a Lorentzian manifold $(M, g)$ is <strong>timelike</strong> if $g(X, X) < 0$ everywhere; the manifold is <strong>time-orientable</strong> if it admits a timelike vector field, and a <strong>time orientation</strong> is the choice of such a field up to multiplication by a positive function. A curve $\gamma$ is <strong>timelike</strong>, <strong>null</strong> or <strong>spacelike</strong> according to the character of its velocity $\gamma'(t)$, and it is <strong>causal</strong> if it is timelike or null everywhere.</p>
+<p><strong>Definition.</strong> Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is <strong>spacelike</strong> if $g(v, v) &gt; 0$, <strong>timelike</strong> if $g(v, v) &lt; 0$, and <strong>null</strong> (or <strong>lightlike</strong>) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the <strong>null cone</strong>; it is a cone, and it is the zero set of the quadratic form $\mathfrak{Q}(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $n$ form two open convex cones, and $n$ is <strong>time-orientable</strong> at $n$ if one of them is designated the future.</p>
+<p><strong>Definition.</strong> A nonzero vector field $X$ on a Lorentzian manifold $(M, g)$ is <strong>timelike</strong> if $g(X, X) &lt; 0$ everywhere; the manifold is <strong>time-orientable</strong> if it admits a timelike vector field, and a <strong>time orientation</strong> is the choice of such a field up to multiplication by a positive function. A curve $\gamma$ is <strong>timelike</strong>, <strong>null</strong> or <strong>spacelike</strong> according to the character of its velocity $\gamma'(t)$, and it is <strong>causal</strong> if it is timelike or null everywhere.</p>
 <p><strong>Proposition.</strong> A connected Lorentzian manifold is either time-orientable or has a time-orientable double cover.</p>
 <p><strong>Proof.</strong> The set of time orientations at the points is a two-sheeted covering space of $M$; if it is disconnected the manifold is time-orientable, and if it is connected the covering is the double cover.</p>
 <h3 id="the-flat-model">The Flat Model</h3>
@@ -92,7 +92,7 @@
 \eta_{n,m} = \sum_{i=1}^{n} dx_i^2 - \sum_{j=1}^{m} dy_j^2 ,
 $$</p>
 <p>the standard form of signature $(n,m)$; its isometry group is the pseudo-orthogonal group $O(n,m)$, which acts transitively, and the model is the flat simply connected pseudo-Riemannian manifold of that signature.</p>
-<p><strong>Example (the Lorentzian plane).</strong> In signature $(1,1)$ the null cone at the origin consists of the two lines $x = \pm y$; there are two timelike cones, given by $|x| > |y|$ with $x > 0$ and with $x < 0$, and the form takes opposite signs on them. In the plane the causal structure is a partial order after a time orientation is chosen: $(t_1, x_1) \leq (t_2, x_2)$ if $t_2 - t_1 \geq |x_2 - x_1|$.</p>
+<p><strong>Example (the Lorentzian plane).</strong> In signature $(1,1)$ the null cone at the origin consists of the two lines $x = \pm y$; there are two timelike cones, given by $|x| &gt; |y|$ with $x &gt; 0$ and with $x &lt; 0$, and the form takes opposite signs on them. In the plane the causal structure is a partial order after a time orientation is chosen: $(t_1, x_1) \leq (t_2, x_2)$ if $t_2 - t_1 \geq |x_2 - x_1|$.</p>
 <p><strong>Definition.</strong> For a causal curve $\gamma$ the <strong>Lorentzian length</strong> is</p>
 <p>$$
 L_g(\gamma) = \int_a^b \sqrt{|g_{\gamma(t)}(\gamma'(t), \gamma'(t))|}\, dt ,
@@ -146,8 +146,8 @@ $$</p>
 <p><strong>Definition.</strong> A pseudo-Riemannian manifold is a <strong>space form</strong> of curvature $k$ if it is complete, simply connected and of constant sectional curvature $k$ on every nondegenerate two-plane.</p>
 <p><strong>Theorem (classification).</strong> For a fixed signature $(n,m)$ with $n+m=N\geq 2$ and a real number $k$, the complete simply connected pseudo-Riemannian manifolds of signature $(n,m)$ and constant sectional curvature $k$ are, up to isometry and scaling, exactly the following:</p>
 <p><strong>(a)</strong> $k = 0$: the flat space $\mathbb{R}^{n,m}$;</p>
-<p><strong>(b)</strong> $k > 0$: the pseudo-sphere $S^{n,m}$ of curvature $k$, the quadric of unit spacelike vectors in $\mathbb{R}^{n+1,m}$ with the induced metric;</p>
-<p><strong>(c)</strong> $k < 0$: the pseudo-hyperboloid $H^{n,m}$ of curvature $k$, the quadric of unit timelike vectors in $\mathbb{R}^{n,m+1}$ with the induced metric.</p>
+<p><strong>(b)</strong> $k &gt; 0$: the pseudo-sphere $S^{n,m}$ of curvature $k$, the quadric of unit spacelike vectors in $\mathbb{R}^{n+1,m}$ with the induced metric;</p>
+<p><strong>(c)</strong> $k &lt; 0$: the pseudo-hyperboloid $H^{n,m}$ of curvature $k$, the quadric of unit timelike vectors in $\mathbb{R}^{n,m+1}$ with the induced metric.</p>
 <p>In each case the isometry group is the orthogonal group of the ambient form — $O(p+1, q)$ for the pseudo-sphere and $O(n, m+1)$ for the pseudo-hyperboloid — or a subgroup of it, acting transitively, and the manifold is a homogeneous space.</p>
 <p><strong>Proof sketch.</strong> The quadrics are nondegenerate because the normal vector is non-null at every point of the quadric, so the induced metric is nondegenerate; the orthogonal group of the ambient form acts transitively by isometries, and the stabiliser of a point is $O(n,m)$, giving a homogeneous space. The curvature is computed from the second fundamental form and the Gauss equation, and it is the constant $k$; conversely, Cartan's theorem for indefinite metrics, proved as in the Riemannian case, identifies a complete simply connected constant-curvature manifold with the model.</p>
 <div class="table-scroll"><table>
@@ -223,7 +223,7 @@ $$</p>
 </tr>
 <tr>
 <td>Spacelike, timelike, null</td>
-<td>$g(v,v) > 0$, $< 0$, $= 0$ for $v \neq 0$</td>
+<td>$g(v,v) &gt; 0$, $&lt; 0$, $= 0$ for $v \neq 0$</td>
 </tr>
 <tr>
 <td>Null cone</td>

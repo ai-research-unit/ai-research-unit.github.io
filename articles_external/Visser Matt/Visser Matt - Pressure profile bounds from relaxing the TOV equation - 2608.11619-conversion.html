@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pressure profile bounds from relaxing the TOV equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pressure-profile-bounds-from-relaxing-the-tov-equation"><strong>Pressure profile bounds from relaxing the TOV equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2608.11619v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Christopher Simmonds, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 12 August 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Pressure profile bounds from relaxing the TOV equation - 2608.11619.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Tolman–Oppenheimer–Volkoff equations describe a static perfect fluid sphere. The authors replace the full system with differential inequalities, each derived under a different assumption about the density. They obtain explicit bounds on the pressure profile. The assumptions range from positivity of density to monotonicity of the average density. They compare each bound with the historical literature and state the trade-off between strength of bound and weakness of assumptions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"We develop several new and quite general bounds on the internal pressure profiles of general relativistic perfect fluid spheres — based on various ways of relaxing the TOV system of ODEs to obtain several distinct differential inequalities."</p>
+<h3 id="the-trade-off">The trade-off</h3>
+<p>"There is, as usual, a trade-off between strength of the bound, weakness of the input assumptions, and tractability of the analysis."</p>
+<h3 id="the-assumptions-used">The assumptions used</h3>
+<p>"we shall develop several straightforward but nontrivial bounds that variously depend only on the positivity of density, the boundedness of density, the monotonicity of density, or the monotonicity of the average density."</p>
+<h3 id="the-placement">The placement</h3>
+<p>"We shall carefully place these new bounds within the historical framework of previous efforts in this regard"</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"Even the mildest of the input assumptions on the density profile yields useful output regarding the pressure profile."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-inequalities-instead-of-equations">1. Inequalities instead of equations</h3>
+<p><strong>The idea.</strong> Relaxing an equation to an inequality still yields useful information.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> works with exact equations. A method that extracts bounds from weakened assumptions is a different style of result.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of the equations.</p>
+<p><strong>What stands in the way.</strong> The method is for static spheres. Ranked first, because the style is transferable.</p>
+<h3 id="2-monotonicity-as-an-input">2. Monotonicity as an input</h3>
+<p><strong>The idea.</strong> Assuming the density decreases outward is enough for a pressure bound.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> makes no monotonicity assumption. Adding one would let the framework derive bounds rather than solutions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> Monotonicity is an extra hypothesis. Ranked second.</p>
+<h3 id="3-comparing-with-history">3. Comparing with history</h3>
+<p><strong>The idea.</strong> Old bounds can be re-derived and improved in one framework.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> is a catalogue; this paper is a catalogue of bounds. The comparison method would improve it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The subject matter is unrelated. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

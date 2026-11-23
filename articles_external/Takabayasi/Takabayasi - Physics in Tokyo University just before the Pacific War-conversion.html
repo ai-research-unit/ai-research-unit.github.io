@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics in Tokyo University just before the Pacific War — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Physics in Tokyo University just before the Pacific War.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="physics-in-tokyo-university-just-before-the-pacific-war"><strong>Physics in Tokyo University just before the Pacific War</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics Supplement</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics Supplement</em> No. 105 (1991), Appendix A, p. 43</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Physics in Tokyo University just before the Pacific War-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Physics in Tokyo University just before the Pacific War.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/a-brief-history-of-biquaternions-in-physics.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Physics in Tokyo University just before the Pacific War.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A historical appendix, not a physics paper. Takabayasi recalls the three years 1939–41 as a student at Tokyo Imperial University and explains why elementary particle theory did not arise there before the war, although Yukawa's meson theory had already been completed in Kyoto. The account is institutional: which chairs existed, who worked on what, why the department was conservative, and how the Riken cut across the university cliques. It ends with the observation that particle theory grew in Tokyo only after the war, with the next generation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"out three years (1939-41) just before the outbreak of the war I was a student at the Department of Physics, Faculty of Science, Tokyo Imperial University.ll For our generation it was the time of philosophy" Angst ", escalating crisis as" historical reality ", " somber chasm ",···. As an example of observations and views belonging to this generation, I recollect a bit about the rough situation of physics at Tokyo University at that period. My hope is to fill a gap, and show the circumstance in which elementary particle theory did not arise in Tokyo University in the prewar period. Also it may partly show what would be the initial condition for physics in Japan during the war period, in which communication with Western countries was cutoff. (1)"</p>
+<h3 id="the-department">The department</h3>
+<p>"The Department of Physics of Tokyo University was already a fairly big one, but did not seem to be very active and ambitious in research. The lines of studies which were particularly conspicuous were (a) instrumental physics and applied physics, along the tradition represented by Professor Emeritus Seiji Nakamura, (b)" mathematical physics "under the patronage of Professor Kan-ichi Terazawa, and (c) some" Terada physics ". 2 &gt; These do not appear to belong to main course of contempo- rary physics. With its old age (in fact only 60 years) the Department seems to have had an awkward personnel policy and maintained constitutional conservatism, making it difficult to open new domains of research."</p>
+<h3 id="quantum-mechanics-and-where-it-led">Quantum mechanics, and where it led</h3>
+<p>"at time (say 1939) quantum mechanics was being established in Japan. Several standard texts on it were published in rapid succession in Japanese (including the translation of Dirac's book). In the Department, Professor Kiichiro Ochiai gave a lecture course on it; Profossor Takuzo Sakai and Assistant Professor Masao Kotani were the main staff in modern theoretical physics. All of them were tending at that time towards" theory of condensed matter ", and gradually this domain or research took root there (Y. Takagi, H. Takahashi, R. Kubo,···). This tradition had relevance to elementary particle theory in that it influenced N ambu's characteristic research in later years; that is, his elementary particle theory inspired by analogy to condensed states. Toshio"</p>
+<p>"All those gentlemen were skillful in mathematics, although they were not mere mathematical physicists. The philosophical and methodological aspects of theory, to 44 L. M. Brown, Y. Fujimoto, S. Hayakawa, M. Kobayasi, M. Konuma, Z. Maki ··· which I was more inclined, were not much talked of at least in lectures and seminars, while there were various discussions about them outside."</p>
+<h3 id="the-meson-theory-was-elsewhere">The meson theory was elsewhere</h3>
+<p>"In the epoch under consideration Yukawa meson theory, after its first round was completed with the fourth paper by Yukawa-Sakata-Kobayasi-Taketani, and it was entering into a difficult phase for its further progress. It was distinguished among Japanese theoretical activities in physics, passing beyond international frontiers. The main centers were at Kyoto University, which became active with the return of Yukawa and Sakata from Osaka University, and at IPCR to which Tomonaga had just returned from Leipzig."</p>
+<p>"However, the people of Tokyo University were generally not disposed to pursue the meson theory except for a few, among whom was Tatsuoki Miyazima (non-regular assistant). Satoshi Watanabe, who had just come back from Europe, then already at war, and was appointed to Assistant Professor of the Institute of Geophysics, gave us free lectures in field theory."</p>
+<h3 id="cliques-and-the-post-war-turn">Cliques and the post-war turn</h3>
+<p>"In the prewar period, academic cliques (especially to Tokyo and Kyoto University) were likely to exist, though they were broken down in Riken. In those days elementary particle theory was pioneered in Japan mostly by people from Kyoto University. It is just after the war that elementary particle theory began to grow in Tokyo University with the younger generation."</p>
+<p>"Many senior physicists produced from Tokyo University, like Nagaoka, Nishina, Sugiura, Fujioka and Kikuchi, made some theoretical works in atomic physics in their early days (especially when studying abroad) but turned soon to experimental physics, sometimes out of frustration with theoretical research."</p>
+<h3 id="terada-physics">"Terada physics"</h3>
+<p>"Terada physics" in a phenomenological type of physics, inspired from every-day observations and reflects the typically Japanese mentality, just like "Haiku"(Japanese mini-poetry). It was motivated partly by the desire of independence from imitation of Western physics and certainly contained various amusing imaginative and curious ideas that could have led to deeper theories. Terada physics and elementary particle theory along the line of Yukawa and Sakata may be viewed as the representatives of Japanese home-made physics, but having opposite trends. Professor Terada himself died in 1935, the year of the birth of meson theory. In fact this rather non-academic physics did not occupy a solid position within the Department. However, it continued to give wide-spread influence to the attitude of physical and geophysical studies in Japan until today, influence sometimes fruitful, unless it fell into superficiality. Neither Yukawa nor Sakata appreciated Terada physics very much. I."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-theorys-location-is-explained-by-chairs-not-by-talent">1. A theory's location is explained by chairs, not by talent</h3>
+<p><strong>The idea.</strong> Meson theory appeared in Kyoto and at Riken because that is where the posts and the returning emigrés were. Tokyo had the larger department and the older tradition and produced no particle theory before the war. Institutional facts, not intellectual ones, set the geography.</p>
+<p><strong>What it would add.</strong> A reminder that the corpus's habit of attributing ideas to individuals hides the fact that an idea needs a place to be held. <em>A Brief History of Biquaternions in Physics</em> (<code>articles_physics/a-brief-history-of-biquaternions-in-physics.md</code>) explains displacement by mathematical fashion in §<em>Why the Biquaternions Were Displaced</em>; this appendix explains non-appearance by departmental structure, which is a different and complementary mechanism, and it is the more plausible one for a field that requires several people in one room.</p>
+<p><strong>Where it lands.</strong> §<em>Why the Biquaternions Were Displaced</em>, as the institutional mechanism.</p>
+<p><strong>What stands in the way.</strong> The account is one student's recollection forty years later; it names people and chairs but offers no comparison with other departments.</p>
+<h3 id="2-a-style-of-physics-defined-by-its-refusal-to-imitate">2. A style of physics defined by its refusal to imitate</h3>
+<p><strong>The idea.</strong> "Terada physics" was phenomenological, observation-driven, and motivated partly by the wish not to imitate the West. Takabayasi calls it home-made physics alongside Yukawa's, with opposite trends, and notes that neither Yukawa nor Sakata valued it. </p>
+<p><strong>What it would add.</strong> A category the corpus has no place for: physics whose criterion is independence rather than prediction. The corpus treats theories by their formal content; here is a research programme whose formal content was thin and whose function was cultural. Recording it makes clear that "home-made" is not a synonym for "original". </p>
+<p><strong>Where it lands.</strong> §<em>The Later Recognition: Biquaternions and the Quantum Algebra</em>, as the contrast between nativist and formal originality. </p>
+<p><strong>What stands in the way.</strong> The judgement that Terada physics "could have led to deeper theories" is asserted and immediately hedged; nothing in the appendix shows a case. </p>
+<h3 id="3-condensed-matter-habits-as-the-seed-of-particle-theory">3. Condensed-matter habits as the seed of particle theory</h3>
+<p><strong>The idea.</strong> The Tokyo department's drift towards condensed matter, with Kubo and Takagi there, later fed Nambu's particle theory through analogy to condensed states. The wrong field for meson theory turned out to be the right preparation for spontaneous symmetry breaking. </p>
+<p><strong>What it would add.</strong> A concrete case of a research style transferring between fields. The corpus discusses analogy as a method in several places; here it is documented as a historical pathway with names and dates, which is a stronger claim and connects the folder's symmetry-breaking material to a specific intellectual lineage. </p>
+<p><strong>Where it lands.</strong> §<em>The Later Recognition: Biquaternions and the Quantum Algebra</em>, as the condensed-matter lineage. </p>
+<p><strong>What stands in the way.</strong> Takabayasi states the influence in one sentence; the analogy's mechanism is not spelled out in this appendix. </p>
+<h3 id="4-the-interpretation-debate-as-the-real-difficulty">4. The interpretation debate as the real difficulty</h3>
+<p><strong>The idea.</strong> In a footnote:"the most difficult point in the acceptance and understanding of quantum mechanics in Japan concerned its interpretation problem, which was frequently debated during the thirties". The obstacle was not the formalism but what it meant — and the author of a survey of that debate was killed in the 1945 bombardment. </p>
+<p><strong>What it would add.</strong> A case where the delay in adopting a theory came from its interpretation, not its technique. The corpus's foundational discussions assume the formalism arrives with its meaning settled; here the record shows a decade of debate, and a lost participant, which is worth one sentence because it explains why a whole generation's work is missing from the literature. </p>
+<p><strong>Where it lands.</strong> §<em>The Group Before the Physics</em>, as the interpretation delay. </p>
+<p><strong>What stands in the way.</strong> The footnote is two sentences and cites a Japanese-language journal; the debate's content is not summarized. The remainder, one line each. That Yukawa's theory was described to schoolboys as "a kind of fluke" by a general relativist is the appendix's sharpest line about how new ideas are received. That the appendix sits at the end of a supplement volume suggests it was written to accompany a workshop record rather than to stand alone.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

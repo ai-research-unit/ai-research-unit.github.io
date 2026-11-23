@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wavenumber — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Wavenumber.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wavenumber"><strong>Wavenumber</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Wavenumber</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Wavenumber-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Wavenumber.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Wavenumber.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the wavenumber: the two conventions — cycles per length and radians per length — the angular wavenumber $k=1/\lambda$, the relations to frequency and momentum, and the four different quantities that carry the name in spectroscopy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-definitions">The two definitions</h3>
+<p>"the wavenumber (or wave number), also known as repetency,[1] is the spatial frequency of a wave. Ordinary wavenumber is defined as the number of wave cycles divided by length; it is a physical quantity with dimension of reciprocal length, expressed in SI units of cycles per metre or reciprocal metre (m−1). Angular" The other convention counts radians and carries a factor $2\pi$.</p>
+<h3 id="the-angular-wavenumber">The angular wavenumber</h3>
+<p>"Angular wavenumber, typically denoted by the letter $k$, [is] defined" number of radians per unit length, $k=2\pi/\lambda$. With $\omega=2\pi\nu$ it gives the dispersion relation $\omega=c k$ for light, and with the de Broglie relation it gives $p=\hbar k$.</p>
+<h3 id="the-ambiguity">The ambiguity</h3>
+<p>Four quantities share the name in spectroscopy: the ordinary wavenumber, the angular wavenumber, the spectroscopic wavenumber $\tilde\nu=1/\lambda$ in cm$^{-1}$, and the angular frequency divided by $c$. Confusing them produces factors of $2\pi$ and of $c$.</p>
+<p>"Wavenumber In the physical sciences, the wavenumber (or wave number), also known as repetency,[1] is the spatial frequency of a wave."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-factor-math20-is-a-convention-not-physics">1. The factor $2\pi$ is a convention, not physics</h3>
+<p><strong>The idea.</strong> Cycles per length and radians per length differ by $2\pi$ and both are called wavenumber. The choice changes the form of every formula it appears in, and no experiment distinguishes them.</p>
+<p><strong>What it would add.</strong> A note for the corpus's Fourier articles, which use $k$ without stating the convention, so a reader cannot check the factors.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, at the transform's normalisation.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<h3 id="2-math23-is-the-bridge-between-the-two-pictures">2. $p=\hbar k$ is the bridge between the two pictures</h3>
+<p><strong>The idea.</strong> The wavenumber is the momentum in units of $\hbar$. That identity is what makes the Fourier variable and the mechanical variable the same object, and it is the reason a derivative in position is a multiplication by momentum.</p>
+<p><strong>What it would add.</strong> The justification for the corpus's replacement of $\partial_x$ by a momentum factor, which its Fourier articles perform as an algebraic step.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, on the derivative-to-momentum map.</p>
+<p><strong>What stands in the way.</strong> The corpus's $\hbar$ is a structural constant of the algebra, so the identification $p=\hbar k$ must be checked against how the algebra's imaginary unit acts rather than assumed.</p>
+<p>This is an encyclopedia article; the two conventions, the angular wavenumber, the relations and the spectroscopic ambiguity are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

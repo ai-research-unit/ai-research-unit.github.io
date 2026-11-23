@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buchdahl-like transformations for perfect fluid spheres — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchdahl-like transformations for perfect fluid spheres - 0707.0146.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="buchdahl-like-transformations-for-perfect-fluid-spheres"><strong>Buchdahl-like transformations for perfect fluid spheres</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0707.0146v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 July 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Buchdahl-like transformations for perfect fluid spheres - 0707.0146-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchdahl-like transformations for perfect fluid spheres - 0707.0146.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Buchdahl-like transformations for perfect fluid spheres - 0707.0146.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper extends the authors' earlier algorithmic construction of static perfect fluid spheres. A transformation of Buchdahl type maps one solution to another while preserving the perfect-fluid form. The paper derives such transformations in several coordinate systems — Schwarzschild curvature, isotropic, Gaussian polar, Synge isothermal, and Buchdahl coordinates — and in each case obtains at least one theorem, sometimes several. It also derives the regularity conditions at the centre in each coordinate system, partly by hand and partly by series expansion as a cross-check.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"In two previous articles ... we discussed several 'algorithmic' techniques that permit one (in a purely algorithmic fashion) to generate large classes of general relativistic static perfect fluid spheres." The present paper extends the technique to more coordinate systems and more functional forms.</p>
+<h3 id="the-result">The result</h3>
+<p>"In this article, we have developed several new and significant transformation theorems that map perfect fluid spheres to perfect fluid spheres using both 'usual' and 'unusual' coordinate systems — such as Schwarzschild (curvature), isotropic, Gaussian polar (proper radius), Synge isothermal (tortoise), and Buchdahl coordinates. In each case we developed at least one such transformation theorem, while in several cases we have been able to develop multiple transformation theorems."</p>
+<h3 id="regularity">Regularity</h3>
+<p>"We have also investigated regularity conditions at the centre of the fluid sphere in all these coordinate systems. The meaning of regularity is that (at a minimum) we want the spacetime geometry to be well-defined and smooth everywhere. We can calculate the regularity conditions by hand, but note that there is another way to more mechanically derive these regularity conditions by using Taylor and Laurent series, with calculations aided by symbolic manipulation programs such as Maple."</p>
+<h3 id="the-summary-claim">The summary claim</h3>
+<p>"In summary, we have now extended the algorithmic technique originally introduced in reference [9] and extended in references [10] and [11, 12, 13, 14, 15, 16] to many other coordinate systems and many other functional forms for the metric."</p>
+<h3 id="what-the-paper-does-not-do">What the paper does not do</h3>
+<p>The transformations preserve the perfect-fluid form and generate new solutions from old ones. They do not select which generated solutions are physical, beyond the regularity conditions at the centre, and they do not impose energy conditions globally.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-coordinate-system-chooses-the-theorem">1. The coordinate system chooses the theorem</h3>
+<p><strong>The idea.</strong> Each coordinate system admits its own transformation theorem, and some admit several. The existence of a solution-generating map is a property of the coordinates as much as of the equations.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> treats the frame field as the carrier of the metric and does not ask which coordinate choices make which constructions possible. This paper gives a concrete answer in a simple setting: the choice matters, and the same physics yields different algorithmic power in different charts. That is a useful caution for a framework built on one chart.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The paper's transformations are for perfect fluids, not for general metrics. Ranked first, because it addresses the article's central object.</p>
+<h3 id="2-smoothness-must-be-imposed">2. Smoothness must be imposed</h3>
+<p><strong>The idea.</strong> Regularity at the centre is a set of conditions on series expansions, checked in each coordinate system.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues algebraic obstructions. Smoothness is analytic, not algebraic: the algebra evaluates a function and its derivatives at a point, and cannot say that the function is smooth there without a separate argument. The catalogue should record this as a distinct category.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> It is a category remark, not a theorem. Ranked second.</p>
+<h3 id="3-generation-without-selection">3. Generation without selection</h3>
+<p><strong>The idea.</strong> The algorithm produces large classes of solutions and leaves the physical choice open.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> argues that a construction which fixes no numbers is not a physical theory. Here is a mainstream construction with the same property, and it is not regarded as a defect. The comparison sharpens what the article's criticism is actually about: not generation, but prediction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of free functions.</p>
+<p><strong>What stands in the way.</strong> It may be read as a defence of the framework, which the article does not want. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

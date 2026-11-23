@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Groups and Braid Groups as Fundamental Symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Quantum groups and braid groups as fundamental symmetries - 1711.09011.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-groups-and-braid-groups-as-fundamental-symmetries"><strong>Quantum Groups and Braid Groups as Fundamental Symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (EPS-HEP 2017), PoS style</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1711.09011 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>EPS-HEP 2017 proceedings, Venice; not otherwise named in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - Quantum groups and braid groups as fundamental symmetries - 1711.09011-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Quantum groups and braid groups as fundamental symmetries - 1711.09011.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - Quantum groups and braid groups as fundamental symmetries - 1711.09011.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A short review with one new idea. The review covers the quantum group $SU_q(3)$ as a flavour symmetry, where it produces baryon mass relations accurate to hundredths of a percent, and the Helon model, in which the first-generation fermions are braids of three ribbons. The new idea is to apply the Kauffman–Lomonaco Clifford braiding theorem to the normed division algebras: the complex numbers give $B_2$, the quaternions $B_3^c$, the chained octonions $B_7^c$, and the first two are exactly the braid groups the Helon model uses. The conclusion is a justification for the number three in the Helon model, and an admission that nothing yet selects which braid words are particles.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-quantum-group-as-flavour-symmetry">The quantum group as flavour symmetry</h3>
+<p>The classical Gell-Mann–Okubo relation for the octet and the Okubo relation for the decuplet,
+$$N+\Xi=\frac32\Lambda+\frac12\Sigma,\qquad \Omega-\Delta=3(\Xi^*-\Sigma^*)$$
+(paper 2.1–2.2), are replaced by $q$-deformed versions with the $q$-number
+$$[N]_q=\frac{q^N-q^{-N}}{q-q^{-1}}$$
+(paper 2.4), the octet relation being (paper 2.3), is only valid for the case where $q=q_n=e^{i\theta_8}=e^{\frac{i\pi}{n}}$ for integer $n$. The best fits are $n=7$ for the octet and $q=e^{\frac{i\pi}{21}}$ for the decuplet (paper 2.5–2.6), where "s of these mass relations are only 0.02% and 0.08% respectively; a factor of 20 reduction compared to the standard Gell-mann-Okubo mass formulas. These results are summarised in table 1.". A Cabibbo angle is also proposed,
+$$\theta_C=-iJ^P\ln q$$
+(paper 2.7), taken to be $\frac{\pi}{14}$.</p>
+<h3 id="the-helon-model">The Helon model</h3>
+<p>Three twisted ribbons with two crossings give the first-generation fermions: "ere are exactly 15 states in the model with no place for a right-handed neutrino. Quantized", with charge as integral twists, colour as permutations of twists, and braids embedded in a braided ribbon network.</p>
+<h3 id="braids-from-clifford-algebras">Braids from Clifford algebras</h3>
+<p>For $Cl(n,0)$ with $e_k^2=1$, the elements
+$$\sigma_k=\frac{1}{\sqrt2}(1+e_{k+1}e_k),\qquad \sigma_n=\frac{1}{\sqrt2}(1+e_1e_n)$$
+(paper 5.2–5.3) generate the circular braid group $B_n^c$. "Although the original theorem as found in [14] assumes that e2k = 1 for all k, the proof likewise holds when e2k = −1, as is easily checked."; "it fails to hold when we have a general Clifford algebra Cl(+, −) = Cl(p, q) of mixed signature.". The even part obeys $Cl^+(n,0)\cong Cl(0,n-1)$, which is the isomorphism used throughout.</p>
+<p>Applied to the algebras:
+$$\mathbb{C}\to B_2:\ \sigma_1=\frac{1}{\sqrt2}(1+i)$$
+(paper 5.5), since $\mathbb{C}\cong Cl(0,1)\cong Cl^+(2,0)$;
+$$\mathbb{H}\to B_3^c:\ \sigma_1=\frac{1}{\sqrt2}(1+I),\ \sigma_2=\frac{1}{\sqrt2}(1+J),\ \sigma_3=\frac{1}{\sqrt2}(1+K)$$
+(paper 5.8 and following), and the braid relations (paper 5.9) are checked directly; and for the chained octonions, which "can be shown to be isomorphic to $Cl(0,6)$",
+$$\overleftarrow{\mathbb{O}}\to B_7^c:\ \sigma_i=\frac{1}{\sqrt2}(1+\overleftarrow{e_{i+1}e_i}),\qquad \sigma_7=\frac{1}{\sqrt2}(1+\overleftarrow{e_1e_7})$$
+(paper 5.10). "The order of these braid generators defined in terms of Clifford algebra bivectors is eight."</p>
+<h3 id="the-match">The match</h3>
+<p>The twisting of a ribbon is a $B_2$ element, the braiding of three ribbons a $B_3$ element, and capping the braid into a network makes it $B_3^c$. Since twists are permuted by braids, the structure is the semidirect product $B_3^c\ltimes(B_2)^3=B_3^c\ltimes(\frac12\mathbb{Z})^3$, with composition
+$$(\Lambda_1,[a_1,a_2,a_3])(\Lambda_2,[b_1,b_2,b_3])=\left(\Lambda_1\Lambda_2,\left[a_{\pi(\Lambda_2)(1)}+b_1,a_{\pi(\Lambda_2)(2)}+b_2,a_{\pi(\Lambda_2)(3)}+b_3\right]\right)$$
+(paper 6.1). The conclusion: "the braid groups representations admitted by the complex numbers and quaternions are precisely those braid groups present in the Helon model", and "using NDAs provides a justification for why one should consider braids consisting of three ribbons". What is missing is stated: "What is still needed is a mechanism to determine which elements within each braid groups should be considered."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-braid-group-per-division-algebra">1. A braid group per division algebra</h3>
+<p><strong>The idea.</strong> Each of $\mathbb{C}$, $\mathbb{H}$, $\overleftarrow{\mathbb{O}}$ carries a representation of a circular braid group, $B_2$, $B_3^c$, $B_7^c$, obtained by a uniform formula $\sigma=\frac{1}{\sqrt2}(1+e\,e')$ from the Clifford algebra the division algebra is isomorphic to. A <strong>formula</strong>, with the extra ingredient that the generators have finite order, eight, where the abstract braid generators have infinite order.</p>
+<p><strong>What it would add.</strong> The corpus's anyon article has the braid group as the exchange group of particles in two dimensions, with a continuous angle labelling its one-dimensional representations. Here the braid generators are algebra elements with a fixed finite order, so braiding is a finite-order operation on a state in $\mathbb{B}$ rather than a phase; the corpus's continuous $\theta_{\rm any}$ and this order-eight generator are incompatible labellings of the same group.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The theorem needs the generators to have $e_k^2=\pm1$ and the same sign, and the paper confirms it "fails to hold" for mixed signature — so the construction does not descend to the Lorentzian Clifford algebras in which the corpus works. Only the octonion case is non-associative, and it is handled by chaining, which is the association the octonions do not have. </p>
+<h3 id="2-three-ribbons-justified-by-four-algebras">2. Three ribbons justified by four algebras</h3>
+<p><strong>The idea.</strong> The number of strands is not chosen for simplicity but forced: the four normed division algebras dictate which braid groups one may use, and the ones that appear in the Helon model, $B_2$ and $B_3^c$, are those of $\mathbb{C}$ and $\mathbb{H}$. A <strong>reading</strong> that turns a model-building choice into a classification. </p>
+<p><strong>What it would add.</strong> The corpus's article on the number of generations finds that no argument inside the algebra selects three. This is not such an argument either: it fixes the number of strands, not the number of generations. Its use is as a constraint on the topological route, since if the strands come from a division algebra the model has three and not another number. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>. </p>
+<p><strong>What stands in the way.</strong> The argument fixes the number of strands but nothing else: the paper says the choice of which braid words are particles "is still needed", and the octonion's $B_7^c$ plays no role in the particle identification. A count of strands that leaves every state undetermined does not yet constrain a generation count. </p>
+<h3 id="3-a-quantised-deformation-parameter-and-the-cabibbo-angle">3. A quantised deformation parameter and the Cabibbo angle</h3>
+<p><strong>The idea.</strong> The $q$-deformed Gell-Mann–Okubo relation is not valid for arbitrary $q$: it is only valid for the case where $q=q_n=e^{i\theta_8}=e^{\frac{i\pi}{n}}$ for integer $n$, so the deformation parameter is a root of unity and the deformation is discrete. The same parameter then fixes the Cabibbo angle, $\theta_C=-iJ^P\ln q$, taken to be $\frac{\pi}{14}$. A <strong>formula</strong> with two numbers attached. </p>
+<p><strong>What it would add.</strong> The corpus carries the Gell-Mann–Okubo relation as transcribed standard machinery, with the octet and decuplet relations and no deformation. This adds a one-parameter family of relations in which the parameter is not free but a root of unity, and it attaches a value to the Cabibbo angle — $\pi/14$, about $12.9^\circ$ — from the flavour symmetry rather than from the quark mass matrices. The corpus's CKM article states as a gap that no angle comes out of the framework; this is an angle that comes out of a different framework, and the two can be compared. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>, with the comparison in <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code>. </p>
+<p><strong>What stands in the way.</strong> $SU_q(3)$ is a Hopf algebra, not a subalgebra of $\mathbb{B}$, so nothing here is an algebra of the corpus's own; the deformation parameter has no origin beyond the fit, and "for integer $n$ leaves $n$ free apart from the two values that fit. The accuracy claim cannot be checked from the paper either: the text says the errors are $0.02\%$ and $0.08\%$, the table prints $0.6$ and $0.3$, and the two differ by an order of magnitude, so a factor of 20 reduction" is not reproducible from what is printed.</p>
+<p>The rank is a judgement: the braid-group formula first, because it is a computable statement about the corpus's own algebras; the deformed mass relation second, because it supplies an angle the corpus currently declares unavailable, and it is cheap to state; the count of strands last, because the corpus already has an argument for that number and this one does not reach the generations.</p>
+<p>Ten pages: the quantum group flavour review with its mass relations and the Cabibbo angle, the Helon model, the normed division algebras, the Clifford braiding theorem, the three cases, and the semidirect product with its composition law.</p>
+<p><strong>Check (the converter's, not the paper's).</strong> The paper's text and its table disagree on the deformed mass-relation errors: the text quotes $0.02\%$ and $0.08\%$, the table prints $0.6$ and $0.3$ under its Error columns for the two fits. The quoted $0.02\%$ and $0.08\%$ are reproduced only from the text.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

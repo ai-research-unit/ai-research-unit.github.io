@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Theorem — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Spectral_theorem.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-theorem"><strong>Spectral Theorem</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Spectral theorem</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Spectral_theorem-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Spectral_theorem.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Spectral_theorem.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the spectral theorem: the conditions under which a linear operator or matrix can be diagonalised, the finite-dimensional case for normal and self-adjoint matrices, the extension to compact and to unbounded self-adjoint operators on a Hilbert space, and the projection-valued-measure form.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-theorem-says">What the theorem says</h3>
+<p>"a spectral theorem is a result about when a linear operator or matrix can be diagonalized (that is, represented as a diagonal matrix in some basis). This is extremely useful because computations involving a diagonalizable matrix can often be reduced to much simpler computations involving the corresponding diagonal matrix of eigenvalues."</p>
+<h3 id="where-the-difficulty-lies">Where the difficulty lies</h3>
+<p>"The concept of diagonalization is relatively straightforward for operators on finite-dimensional vector spaces but requires some modification for operators on in[finite-dimensional spaces]." In infinite dimensions the sum over eigenvalues becomes an integral against a projection-valued measure, and the operator is recovered as $\int\lambda\,dE(\lambda)$.</p>
+<h3 id="the-hypotheses">The hypotheses</h3>
+<p>A matrix over $\mathbb{C}$ is unitarily diagonalisable exactly when it is normal, $AA^*=A^*A$. Self-adjoint, skew-adjoint and unitary matrices are all normal, which is why the theorem applies to the operators physics uses.</p>
+<p>"There is also an analogous spectral theorem for bounded normal operators on Hilbert spaces."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-normal-not-hermitian-is-the-right-hypothesis">1. Normal, not Hermitian, is the right hypothesis</h3>
+<p><strong>The idea.</strong> Unitary diagonalisability needs $AA^*=A^*A$ and nothing more. Hermiticity is sufficient and not necessary. This is a <strong>formula</strong> with practical consequences: the theorem applies to far more operators than the physical ones.</p>
+<p><strong>What it would add.</strong> A sharpened hypothesis for the corpus's spectral statements, which tend to assume self-adjointness and then use only normality.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.md</code>, at the diagonalisation step.</p>
+<p><strong>What stands in the way.</strong> The corpus's conjugation is an algebra involution, not a Hilbert-space adjoint, so "normal" may not be the right word; the analogue would have to be defined.</p>
+<h3 id="2-the-infinite-dimensional-form-is-a-measure-not-a-list">2. The infinite-dimensional form is a measure, not a list</h3>
+<p><strong>The idea.</strong> In infinite dimensions there is no list of eigenvalues; the theorem gives a projection-valued measure and the operator is an integral. A discrete spectrum is a special case.</p>
+<p><strong>What it would add.</strong> A precise sense in which the corpus's continuum of modes is still a spectral decomposition, which its expansion articles assume.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no Hilbert space and no measure on its spectrum, so the projection-valued form would have to be constructed rather than cited.</p>
+<p>This is an encyclopedia article; the finite and infinite statements, the normality hypothesis and the measure form are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

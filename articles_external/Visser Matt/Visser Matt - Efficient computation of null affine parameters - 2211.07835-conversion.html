@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficient computation of null affine parameters — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Efficient computation of null affine parameters - 2211.07835.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="efficient-computation-of-null-affine-parameters"><strong>Efficient computation of null affine parameters</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2211.07835v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 20 December 2023 (dated 15 November 2022)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Universe 9 (2023) 521 — as printed on the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Efficient computation of null affine parameters - 2211.07835-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Efficient computation of null affine parameters - 2211.07835.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Efficient computation of null affine parameters - 2211.07835.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Finding an affine parameter along a null geodesic is tedious and often needed for conservation laws and averaged energy conditions. The paper shows that one does not need the geodesic to find the parameter. If a conformally related spacetime has a conformal Killing vector that is timelike in the region of interest, then a preferred family of spatial slices exists, and an affine three-metric on those slices captures the affine null parameter. The construction uses only the conformal transformation and the conserved quantity of the vector, and it simplifies the rest of the analysis.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-need">The need</h3>
+<p>"Finding affine parameters for null geodesics is often of considerable physical importance, especially when studying the paths swept out by null geodesics or dealing with conservation laws and/or averaged energy conditions. But explicitly finding null affine parameters is also often quite tedious and can sometimes even be somewhat tricky."</p>
+<h3 id="the-main-claim">The main claim</h3>
+<p>"Herein we shall demonstrate that the existence of a conformally related spacetime containing a conformal Killing vector, timelike in the domain of outer communication, is quite sufficient to define a preferred set of spatial three-slices—on which a well-defined 'affine' three-metric can be introduced to capture the notion of affine null parameter—before explicitly finding the null geodesics."</p>
+<h3 id="what-the-construction-rests-on">What the construction rests on</h3>
+<p>"The construction depends on the properties of conformal transformations and on the conserved quantity associated with the conformal Killing vector."</p>
+<h3 id="the-practical-benefit">The practical benefit</h3>
+<p>"Having the affine null parameter in hand before attempting to find the actual null geodesics often quite radically simplifies other parts of the analysis."</p>
+<h3 id="the-claim-of-generality">The claim of generality</h3>
+<p>"We emphasize that the successful identification of affine null parameters is a general-purpose tool of wide applicability in both general relativistic and astrophysical settings."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-parameter-before-path">1. Parameter before path</h3>
+<p><strong>The idea.</strong> The affine parameter can be obtained from the conformal structure before solving for the geodesic.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> describes motion along null directions but does not give a parameter along them. This paper supplies one from a conformal Killing vector, which the framework might already possess. That would turn a qualitative statement about the barrier into a parametrised one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the definition of the barrier.</p>
+<p><strong>What stands in the way.</strong> The construction needs a conformal Killing vector, which is an extra assumption. Ranked first, because it adds a missing structure to the article's central object.</p>
+<h3 id="2-conformal-killing-vectors-as-a-resource">2. Conformal Killing vectors as a resource</h3>
+<p><strong>The idea.</strong> A conformal symmetry gives a conserved quantity that organises the geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> treats conformal invariance as a property of the massless limit. Here it is used as a computational tool independent of mass. The article should distinguish the two roles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of the invariance.</p>
+<p><strong>What stands in the way.</strong> The vector must be timelike somewhere. Ranked second.</p>
+<h3 id="3-slices-and-a-three-metric">3. Slices and a three-metric</h3>
+<p><strong>The idea.</strong> The preferred slices carry a three-metric that encodes the null parameter.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds a four-dimensional geometry. A canonical three-dimensional reduction is a useful check on which parts of the structure are physical.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The reduction is adapted to null geodesics only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

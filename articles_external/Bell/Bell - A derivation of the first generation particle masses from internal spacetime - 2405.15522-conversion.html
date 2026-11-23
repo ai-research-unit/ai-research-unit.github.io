@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Derivation of the First Generation Particle Masses from Internal Spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the first generation particle masses from internal spacetime - 2405.15522.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-derivation-of-the-first-generation-particle-masses-from-internal-spacetime"><strong>A Derivation of the First Generation Particle Masses from Internal Spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2405.15522v2 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charlie Beil</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 October 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Bell/Bell - A derivation of the first generation particle masses from internal spacetime - 2405.15522-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the first generation particle masses from internal spacetime - 2405.15522.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Bell/Bell - A derivation of the first generation particle masses from internal spacetime - 2405.15522.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes mass ratios for the first generation from the Ricci tensors of the degenerate metrics associated with each particle type. The bare up/down ratio comes out as a rational number inside the lattice-QCD window; the dressed electron to bare quark ratios then fix the two bare quark masses from the electron mass; and a fourth ratio, from 4-accelerations, gives the constituent quark ratio. No parameter is fitted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"Internal spacetime geometry was recently introduced to model certain quantum phenomena using spacetime metrics that are degenerate. We use the Ricci tensors of these metrics to derive a ratio of the bare up and down quark masses, obtaining mu /md = 9604/19683 ≈ .4879. This value is within the lattice QCD value .473 ± .023, obtained at 2 GeV in the minimal subtraction scheme using supercomputers. Moreover, using the Levi-Cevita Poisson equation, we derive ratios of the dressed electron mass and bare quark masses." And: "All of the ratios we obtain are from first principles alone, with no free or ad hoc parameters. Furthermore, and rather curiously, our derivations do not use quantum field theory, but only tools from general relativity."</p>
+<h3 id="the-metrics">The metrics</h3>
+<p>"A bare quark mass ratio and the bare electron mass As shown in Section 3, spacetime metrics for a single pointon, pointal sphere, and pointal union are of the form  n 2 2 2 2 2 r−η (18) ds = −A(r)dt + dr + B(r)r dΩ , B(r) = ." for a fixed spinor radius r0 , the down quark (a
+pointal union) has a unique sphere radius η = r0 /3, whereas an up quark (a pointal
+sphere) has precisely three possible sphere radii, η ∈ {r0 /7, r0 /3, 3r0 /5}. We denote
+these "</p>
+<h3 id="energy-density-as-mass-from-the-einstein-field-equation">Energy density as mass From the Einstein field equation,</h3>
+<p>$\kappa\rho=\kappa T^{tt}=g^{tt}R_{tt}-\tfrac12R$ is given explicitly in paper (19). At $r=r_0$ the densities are $\rho_{u_1}\kappa r_0^2=9604/729\approx13.174$, $\rho_{u_2}=88/243$, $\rho_{u_3}=1/625$, $\rho_d=1/27$, and the electron's is "identically zero, ρe (r) = 0.
+Proof "— the electron is a pointon, $B=1$, so the whole energy density vanishes. Hence $$\frac{\rho_{u_1}(r_0)}{\rho_d(r_0)}=\frac{9604}{729\cdot27}=\frac{9604}{19683}\approx.48793 .$$ Among the three up quarks, $u_1$ is chosen because" u1 and d have equal exponents n = 1 ", their energy densities are closest, and " 2). • The u1 radius η = r0 /7 appears in the acceleration ∇et et resulting from d (Proposition 6.". </p>
+<h3 id="dressed-versus-bare">Dressed versus bare</h3>
+<p>"the pointon metric is not a vacuum solution, Rab ̸= 0,
+in contrast to the Schwarzschild metric.</p>
+<p>Theorem: it is equivalent to a fluid with $\rho_e=0$ and pressure and shear viscosity given in paper (23). The Levi-Civita Poisson equation $\vec\nabla^2\sqrt{-g_{tt}}=-\tfrac{\kappa}{2}R^t{}_t\sqrt{-g_{tt}}=\tfrac{\kappa}{2}(\rho+3p)\sqrt{-g_{tt}}$ identifies $\rho$ with the bare mass and $p$ with the mass that results from the polarization of the vacuum ", so that $$\tilde\rho:=\rho+3p\ \longleftrightarrow\ \text{dressed mass}.$$ With $\tilde\rho_e(r_0)=3\kappa^{-1}r_0^{-2}$, the ratios are $\tilde\rho_e/\rho_{u_1}=2187/9604\approx.2277$ and $\tilde\rho_e/\rho_d=1/9\approx.1111$, giving," given the dressed electron mass as m̃e = .511 MeV, we derive the bare up and down quark masses: mu1 ≈ 2.", $$m_{u_1}\approx2.2440\ \mathrm{MeV},\qquad m_d\approx4.599\ \mathrm{MeV},$$ against lattice values $m_u^{\overline{\rm MS}}=(2.20\pm.10)$ MeV and $m_d^{\overline{\rm MS}}=(4.69\pm.07)$ MeV. </p>
+<h3 id="the-constituent-ratio">The constituent ratio</h3>
+<p>If the constituent quarks of a hadron "Suppose that the constituent quarks in a hadron share the same pointal binding energy." $\omega_b$, with $r_0^{-1}=\tilde m_e+\sum\omega_b$ (paper 31), the accelerations for $r\gg r_0$ are $-(16/7)r_0/r^2\,\partial_r$ for $u_1$ and $-(7/3)r_0/r^2\,\partial_r$ for $d$, so $$\frac{\tilde m_{u_1}}{\tilde m_d}=\frac{16/7}{7/3}=\frac{48}{49}\approx.97959,$$"is
+ within the .97 ∼ 1 range of constituent quark models. All ". </p>
+<h3 id="the-nesting-picture">The nesting picture</h3>
+<p>"in Proposition 6.1 we found,
+quite curiously, that the acceleration ∇et et from the d sphere vanishes precisely at
+the radius of the u1 sphere. It is therefore possible for the u1 sphere to sit inside
+the d sphere and remain at rest. This suggests "</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-ratios-as-rational-curvature-data">1. Mass ratios as rational curvature data</h3>
+<p><strong>The idea.</strong> A mass ratio is a number of the form $\rho_{u_1}/\rho_d$, computed from Ricci tensors, and it lands as $9604/19683$. Nothing is scanned or fitted, and the agreement with lattice QCD is at the level of the quoted uncertainty. This is a <strong>number</strong> of the kind the corpus's constants papers look for and do not produce. </p>
+<p><strong>What it would add.</strong> A worked case where a rational number from a geometry falls inside a measured window, which is the strongest form the corpus's explanation of constants question admits. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>, which states that the framework does not derive masses and then offers $m^{(s)}=\tfrac{\mu_0}{4}\deg\tau^{l\bar l}$ as the geometric part. </p>
+<p><strong>What stands in the way.</strong> The corpus's masses come from diagonalising $3\times3$ matrices; here they come from evaluating a density at one radius. The two cannot both be the mechanism, and the paper's own three $u$ states (only one of which is used) shows the geometry offers more ratios than the data need. </p>
+<h3 id="2-dressed-mass-as-math42">2. Dressed mass as $\rho+3p$</h3>
+<p><strong>The idea.</strong> The split between bare and dressed mass is the split between the energy density in the Einstein equation and the combination that appears in the Newtonian-limit Poisson equation. Vacuum polarization is replaced by an isotropic pressure, which "The notion of a virtual covering (or vacuum polarization) in quantum field theory is not well defined mathematically." in QFT but is here a definite geometric object. </p>
+<p><strong>What it would add.</strong> A definition of the dressed mass that does not require a loop expansion, for a corpus whose corrections are computed perturbatively. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>, on the Newtonian limit and what plays the role of the source. </p>
+<p><strong>What stands in the way.</strong> The identification $\tilde\rho=\rho+3p$ holds only for the static, spherically symmetric metrics of this paper; the corpus's fields are not of that form, and the substitution would need the same equation to hold there. </p>
+<h3 id="3-three-masses-for-one-particle-distinguished-by-measurement">3. Three masses for one particle, distinguished by measurement</h3>
+<p><strong>The idea.</strong> The same geometry yields a bare density, a dressed density and a constituent acceleration, and the paper assigns them to the three masses that QCD actually uses. The labelling is a reading of what an experiment does, not a new dynamics. </p>
+<p><strong>What it would add.</strong> A clean separation of the three senses of "quark mass" that the corpus's Yukawa article treats as one matrix and one scale. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, on the scale at which a mass is quoted. </p>
+<p><strong>What stands in the way.</strong> The constituent ratio needs the assumption that the quarks "share the same pointal binding energy"; without it the 48/49 does not follow, and the corpus has no counterpart to that assumption.</p>
+<p>The rank is a judgement: the rational mass ratio first, because it is a prediction and not a translation; $\rho+3p$ second, because it is the definition that could be borrowed; the three-masses reading third, because it rests on an extra assumption.</p>
+<p>This is a twenty-three page paper; the pointon, pointal sphere and pointal union metrics, the energy-density computation, the bare ratio, the dressed electron/quark ratios, the sectional curvatures, the constituent ratio and a note on neutrino energy density are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

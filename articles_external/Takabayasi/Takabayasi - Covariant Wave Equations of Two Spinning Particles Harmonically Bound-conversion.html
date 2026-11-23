@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covariant Wave Equations of Two Spinning Particles Harmonically Bound — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Covariant Wave Equations of Two Spinning Particles Harmonically Bound.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="covariant-wave-equations-of-two-spinning-particles-harmonically-bound"><strong>Covariant Wave Equations of Two Spinning Particles Harmonically Bound</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>61</strong> (1979) 1235, No. 4; received 24 November 1978; part of an invited talk at the Autumn Meeting of the Physical Society of Japan, September–October 1978</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Covariant Wave Equations of Two Spinning Particles Harmonically Bound-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Covariant Wave Equations of Two Spinning Particles Harmonically Bound.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Covariant Wave Equations of Two Spinning Particles Harmonically Bound.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Adds constituent spin to the spinless bilocal model by introducing two sets of $\gamma$-matrices, one per constituent. The solutions are obtained explicitly and split into four families according to the quark spin configuration; all are tachyon-free and the mass–spin spectrum agrees with the observed mesons. In its original form one basic equation is second order, so the model is slightly more general than a bound pair of Dirac particles; the paper then adds a subsidiary condition — equivalently, replaces the basic set by two first-order equations — so that switching the binding off adiabatically gives exactly two free Dirac particles.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-added">What is added</h3>
+<p>"A consistent set of covariant wave equation and subsidiary condition represents quantum theory of relativistic composite system of two spinning particles which are harmonically bound by direct internal force, meaning a relativistic quark model of mesonic states where quarks are permanently confined. The solutions are explicitly obtained and classified into families according to the quark spin configurations. They are free from tachyonic states, and have mass-spin spectrum in good agreement with observation. In the original form the wave equation is of second order but we can bring it to a first order one. In this form the theory strictly satisfies the requirement that in the limit where the internal force be adiabatically turned off the system should reduce to a pair of free Dirac particles."</p>
+<h3 id="why-harmonic-binding-is-not-a-choice">Why harmonic binding is not a choice</h3>
+<p>"Recently we have treated in detail a theory of relativistic system cons1stmg of two spinless particles bound by direct internal forcen as a prototype of relativis- tic quark model of mesonic states. It was shown in particular that under the requirement of covariant quantization the internal force working between the con- stituents must be restricted to a harmonic one. This implied that the constituents are permanently confined and the states of the system are delimited by a linearly rising leading trajectory, when the constituents have equal mass. The purpose of this paper is to show that we can incorporate the t spins of constituents into this theory in a natural fashion and thereby make it a more realistic model. We"</p>
+<h3 id="the-constraint-set">The constraint set</h3>
+<p>"To set up the theory of relativistic system consisting of two point particles bound by a central action-at-a-distance we start with its classical theory to be given as follows." "A relativistic motion of such a system is represented by two world lines to be parametrized as x"/ (r) and x/ (r). Denoting the "The theory is given by three constraints: a mass-shell constraint with the potential $U(\xi^{2})$, a difference constraint, and a orthogonality constraint. Clearly $\phi_0$ is of first class, while $\phi_1$ and $\chi_1$ are of second class." For this model, classical solutions for timelike P 11 are elliptic oscillations (in the rest frame). Also there are spacelike solutions. In the hypothetical force-free limit where the force coefficient IC be adiabatically turned off, (2 ·1) " " the system tends to a pair of free particles with the common mass m 0 = ../ U 0• Transition "</p>
+<h3 id="the-four-families">The four families</h3>
+<p>"The above construction exhausts all solu- tions of the present model. The mass-spin spectrum is shown in Fig." "Fig. 1. (3 ·18) is satisfied, the theory is consistent and is free from tachyonic state. The most salient prediction of this model is that the (h1 2 trajectory (3 · 36) is the highest one, with the intercept a (0) = t- U0' / (2ic) &lt; L') in agreement with experimental situation. \V e now consider the hypothetical free limit /C·-&gt;0."</p>
+<p>The families are built by acting with internal creation operators on the ground state: the first from $B_i$ (quark spins parallel, giving the exchange-degenerate leading trajectory), the second, third and fourth from successive products. "When the constituents are $u$- and/or $d$-quarks, $\phi_1$ should be identified as the $\rho$-meson, while (3·35c) as the $A_2$-meson. Thus we must have the relations ... The relations implied by (3·31) and (3·37) are in good agreement with observation."</p>
+<p>"tes (3·35a) and (3·35b) may be identified as c(l300) and B(l231), respectively. 1244 T."</p>
+<h3 id="spin-bookkeeping-made-explicit">Spin bookkeeping made explicit</h3>
+<p>"The state has $P=-1$ and $T=-1$. Also it has $S=1$ of the resultant quark spin, which couples with $L=0$ or $L=1$ of the orbital angular momentum, to form the $J=1$ eigenstate." Family four: "is has K = 1, fP = -1, T= 1 and J =0. J It is superposition of a state having I= L = 0 and a state ·where 2 = 1 and L = 1 couple antiparallel. From (3 · 41) the fourth family of states is produced by orbital excitation."</p>
+<h3 id="the-adiabatic-limit-as-a-criterion">The adiabatic limit as a criterion</h3>
+<p>"If we strictly require that in the hypo- thetical limit where the internal force be turned off the system should reduce *&gt; This is part of invited talk given by the author at the Autumn Meeting of Japan Physical Society held at Shinshu University, September 28-0ctober 1, 1978. 1236 T. Takabayasi precisely to a pair of free Dirac particles, we need to associate an additional subsidiary condition with the above theory."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-covariant-quantisation-restricts-the-force-to-harmonic">1. Covariant quantisation restricts the force to harmonic</h3>
+<p><strong>The idea.</strong> The binding potential is not chosen for convenience. Requiring covariant quantisation forces $U=\kappa^{2}\xi^{2}+U_0$. Harmonic binding is the only potential for which the constraint algebra closes covariantly, and confinement plus a linear leading trajectory follow from it.</p>
+<p><strong>What it would add.</strong> A derivation of a model's central assumption. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) takes the confining potential as an input in §<em>The Trace Anomaly, and Where the Mass Sits</em>; here it is an output of the quantisation requirement, which is a stronger status and a claim worth checking against the QCD route.</p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the derivation-from-covariance case.</p>
+<p><strong>What stands in the way.</strong> The derivation is internal to this formalism; nothing shows that a different quantisation scheme would not admit another potential.</p>
+<h3 id="2-four-families-one-per-spin-configuration-and-the-counting-is-exhaustive">2. Four families, one per spin configuration — and the counting is exhaustive</h3>
+<p><strong>The idea.</strong> The spectrum's four families correspond to the four ways two constituent spins and the orbital excitation can combine into the allowed states, and "the above construction exhausts all solutions." The spectrum is not a fit to a list; it is a complete enumeration, and the identifications with $\rho$, $A_2$, $\epsilon(1300)$, $B(1231)$ follow from it.</p>
+<p><strong>What it would add.</strong> An exhaustiveness claim rather than a match. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) also counts carriers exhaustively; here the count is of state families, and the resulting prediction — that the $\mathrm{h}_1$ trajectory is the highest — is the kind of claim that follows only from completeness.</p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the exhaustive-enumeration case.</p>
+<p><strong>What stands in the way.</strong> The enumeration is complete for this model with these operators; the identification of individual states with observed mesons is a separate step and carries assignment ambiguity.</p>
+<h3 id="3-an-adiabatic-limit-used-as-a-consistency-filter">3. An adiabatic limit used as a consistency filter</h3>
+<p><strong>The idea.</strong> Turn the binding off slowly and the model must become two free Dirac particles, exactly. That requirement is not automatic here: the second-order equation gives a slightly larger system, and satisfying the limit costs one extra subsidiary condition. A limit that must be exact is a strong filter on the formalism.</p>
+<p><strong>What it would add.</strong> A criterion the corpus does not use — not agreement with data but reduction to a known theory in a controlled limit. The distinction matters: a model can fit a spectrum while failing its own weak-coupling limit, and this paper treats the latter as the harder test.</p>
+<p><strong>Where it lands.</strong> The corpus's discussion of limits and correspondence; natural home is §<em>The Non-Quantum Limit</em> material of <em>The Non-Quantum Limit of the Action Principle and the Lagrangian</em> (<code>articles_physics/the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.md</code>).</p>
+<p><strong>What stands in the way.</strong> The adiabatic limit is a mathematical device; whether a physical system can be taken through it is not addressed.</p>
+<h3 id="4-spacelike-solutions-exist-and-are-not-removed-here">4. Spacelike solutions exist and are not removed here</h3>
+<p><strong>The idea.</strong> "Also there are spacelike solutions." They are noted, not eliminated. The model's spectrum claims are about the timelike sector.</p>
+<p><strong>What it would add.</strong> An honest boundary on what the spectrum result covers, in contrast to the folder's other treatments where spacelike solutions are excluded by a subsidiary condition or removed by construction.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Constraints, Center-of-Masses and Quantization</em> in this folder, whose non-covariant scheme deletes the offending mode; here it remains, which makes the two papers' claims non-overlapping in an instructive way.</p>
+<p><strong>What stands in the way.</strong> The paper does not say what the spacelike sector means physically or whether it is a defect.</p>
+<p>The remainder, one line each. That two $\gamma$-matrix sets suffice for mesons while the baryon paper needed three continues the folder's counting pattern. That the invited-talk provenance shows these results were being presented as a coherent programme rather than as isolated papers.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

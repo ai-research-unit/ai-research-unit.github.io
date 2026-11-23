@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $Cl(8)$ Algebra of Three Fermion Generations with Spin and Full Internal Symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Cl 8 algebra of three fermion generations with spin and full internal symmetries -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math11-algebra-of-three-fermion-generations-with-spin-and-full-internal-symmetries"><strong>The $Cl(8)$ Algebra of Three Fermion Generations with Spin and Full Internal Symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1906.05102 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Adam B. Gillard, Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 May 2019 (text dated 13 June 2019)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - The Cl 8 algebra of three fermion generations with spin and full internal symmetries - 1906.05102-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Cl 8 algebra of three fermion generations with spin and full internal symmetries - 1906.05102.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Cl 8 algebra of three fermion generations with spin and full internal symmetries - 1906.05102.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Adds spin to the $Cl(6)$ electrocolor construction, which turns $Cl(6)$ into $Cl(8)$, and then uses the one thing $Cl(8)$ has that $Cl(6)$ does not — the triality automorphism of $Spin(8)$ — to get three generations. The counting claim is sharp: sixteen minimal left ideals become sixteen $16\times16$ column matrices, the even-grade part is $Cl^+(8)\cong Cl(7)\cong \mathbb{C}(8)\oplus\mathbb{C}(8)$, and triality cycles the two $8\times8$ blocks with the vector representation, giving three distinguishable blocks that act as generations. Two exclusions are argued from the same principle, that a transformation must map spinors to spinors: $J_\pm$ are excluded (so there is no spin boson), and $U(4)$ shrinks to $U(3)_{\rm ec}$ (so there are eight gluons).</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="one-generation-from">One generation from</h3>
+<p>$Cl(6)$, and where spin sits</p>
+<p>Witt basis with $q_i^2=(q_i^\dagger)^2=\{q_i,q_j\}=\{q_i^\dagger,q_j^\dagger\}=0$, $\{q_i,q_j^\dagger\}=\delta_{ij}$ (paper 3), "vacuum" $p\equiv q_1q_2q_3q_3^\dagger q_2^\dagger q_1^\dagger$ with $p^2=p$ and $q_ip=0$, and the ideal $P_1:\{p,q_{23}^\dagger p,q_{31}^\dagger p,q_{12}^\dagger p,q_{123}^\dagger p,q_1^\dagger p,q_2^\dagger p,q_3^\dagger p\}$ (paper 4), with the other seven $P_2,\dots,P_8$ obtained by right multiplication (paper 5). Left multiplication swaps rows and so acts within an ideal; right multiplication swaps columns and acts between ideals. Hence $$Cl(4)_{\rm Dirac}\otimes_{\mathbb C}Cl(2)_{\rm isospin}\cong Cl(6)_{\rm Dirac+isospin}\supset U(3)_{\rm ec}$$ (paper 13), and "The right adjoint action algebra Cℓ(6), having a maximal totally isotropic subspace (MTIS) symmetry group U(3), transforms", assigns singlet, triplet, antisinglet, antitriplet — the colors $r,y,b,\bar r,\bar y,\bar b$. With spin, $$Cl(4)_{\rm Dirac}\otimes_{\mathbb C}Cl(2)_{\rm isospin}\otimes_{\mathbb C}Cl(2)_{\rm spin}\cong Cl(8)_{\rm Dirac+isospin+spin}$$ (paper 14), the representations extend by direct sum, $\rho(\Gamma_\mu)\mapsto\rho(\Gamma_\mu)\oplus\rho(\Gamma_\mu)$ (paper 15), the first eight rows being spin-up, and the physical states are the even-grade part: $$Cl^+(8)\cong Cl(7)\cong\mathbb C(8)\oplus\mathbb C(8)$$ (paper 29 context)."The left-action weak transformations preserve the spinor spaces and so those transformations are physical, and allow for the existence of the weak W ± and Z 0 vector bosons. The spin ladder operators an the other hand do not preserve the spinor spaces and therefor do not correspond to physically allowed transformations. No vector"</p>
+<h3 id="math37-and-the-eight-gluons-sixteen">$U(4)$ and the eight gluons Sixteen</h3>
+<p>$U(4)$ generators</p>
+<p>$\Lambda_1,\dots,\Lambda_{15}$ plus $Q=\frac13\sum_{i=1}^4q_i^\dagger q_i$ (paper 20), with $SU(3)_c$ generated by $\Lambda_1,\dots,\Lambda_8$, and $q_4,q_4^\dagger$ commuting with that $SU(3)$. The color of each ideal is constant (paper 22). Then the exclusion:"The non-electrocolor U(4) transformations, generated by Λ9 -Λ15 , do not map spinors to spinors, and are therefore unphysical. The electrocolor subgroup U(3)ec ⊂ U(4) of U(4) preserves the spinor spaces so those transformations are physical, and in fact, the electrocolor MTIS subgroup is the maximal subgroup that does so10 . 5 Spinors and triality" The concluding sentence draws the count: "This explains why there are only eight gluons in nature."</p>
+<h3 id="triality-as-the-generation-count-unlike">Triality as the generation count "Unlike</h3>
+<p>$Cl(6)$, the spin-extended algebra $Cl(8)$ admits a triality automorphism of its associated group $Spin(8)$. The two spinor representations and the fundamental vector representation of this group are all eight-dimensional. Triality, which is a non-linear automorphism of order three, permutes between these representations. We show that it is this automorphism that extends our results from a single generation of fermions to exactly three."On three $8\times8$ matrices $A,B,C$ holding the three would-be generations, $${\rm Trial}(A\oplus B)=(C\oplus A),\quad {\rm Trial}(C\oplus A)=(B\oplus C),\quad {\rm Trial}(B\oplus C)=(A\oplus B)$$ (paper 33), and with the $J_3$ grading $\uparrow,\downarrow$ (paper 34). Since triality" stabilizes the exceptional Lie group $G_2$ pointwise "and $SU(3)_c\subset G_2$, " triality also stabilizes the color group pointwise " (paper 41). Mixing follows from linearity: " Because each generation individually transforms as required (both via the left and right adjoint actions), a linear combination of all three generations will transform in an equivalent manner. In order to preserve unitarity, these linear combinations have to be part of a unitary matrix ", so $U_{\rm PMNS}$ and $U_{\rm CKM}$ (paper 42) appear — " Additional insights/restrictions are required in order to obtain observed SM electroweak mixing."</p>
+<p>"Three generations, two unbroken gauge symmetries, and one eight dimensional algebra."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-eight-gluons-because-only">1. Eight gluons because only</h3>
+<p>$U(3)_{\rm ec}$ maps spinors to spinors </p>
+<p><strong>The idea.</strong> The right action offers $U(4)$, sixteen generators: the eight colour ones, the charge $Q$, and seven more. Those seven take a spinor to a pinor, so they are not symmetries of the physical subspace, and the surviving group is $U(3)_{\rm ec}$, nine-dimensional, whose $SU(3)$ part has the eight generators of the octet. The number of gluons is a dimension of a maximal subgroup, computed rather than assumed. </p>
+<p><strong>What it would add.</strong> The corpus already places the octet in the carrier's group, $\mathbf8_0\subset\mathbf{15}\subset\mathfrak{su}(4)$ inside $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, at the price of an external colour index, and rejects the octonion route because it costs associativity. This is a third route, in which colour is intrinsic — inside $Cl(8)$, with no adjoined dimension — and it supplies a criterion for where the group stops: the largest subgroup that maps spinors to spinors. The same criterion removes $J_\pm$, so two counts come from one rule. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code>. </p>
+<p><strong>What stands in the way.</strong> The physical subspace is defined by discarding odd-grade elements, which is a choice, and the argument then selects the subgroup that respects it — the restriction is the assumption and the count its consequence. The corpus's obstruction theorem is about $\mathbb{B}$, where $\mathfrak{su}(3)$ cannot fit inside a four-dimensional compact part, and it is untouched by a result about $Cl(8)$. The corpus also objects that a construction built on commutators lacks the symmetric invariant $d_{abc}$; the $U(4)$ generators here do include symmetric combinations such as $\Lambda_{15}$, but the paper never checks $d_{abc}$. </p>
+<h3 id="2-a-symmetry-with-no-boson">2. A symmetry with no boson</h3>
+<p><strong>The idea.</strong> $J_\pm$ exist as operators, do not annihilate the physical subspace, and therefore have no boson:"The lack of an observed boson related to $J_z$ could be the result of there not being a U(1) generator available to mix with." The existence of a generator and the existence of a gauge boson are separated by whether the generator preserves the space of physical states. </p>
+<p><strong>What it would add.</strong> The corpus lists the observed bosons and matches them to algebra elements. This supplies a criterion for the ones that are <em>absent</em>, which is the harder half of a particle spectrum, and it explains two absences (spin bosons, and the extra $U(4)$ bosons) with one rule. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>. </p>
+<p><strong>What stands in the way.</strong> The paper offers the $J_z$ mixing remark as a possibility ("could be"), and the rule as stated would also forbid any transformation that happens to leave the even part — which is a strong and untested constraint. </p>
+<h3 id="3-triality-as-the-reason-for-three-and-for-mixing">3. Triality as the reason for three, and for mixing</h3>
+<p><strong>The idea.</strong> Three generations are the orbit of an order-three automorphism acting on the two spinor blocks and the vector block of $Spin(8)$; mixing is then any unitary combination of the orbit, which is why $U_{\rm PMNS}$ and $U_{\rm CKM}$ exist as free unitary matrices rather than being fixed. </p>
+<p><strong>What it would add.</strong> The corpus's generations article states the opposite of a derivation —"The algebra does not fix $N_g$"— and lists what one would need: a topological index on a compact internal space, an anomaly with a nonzero right-hand side, or dynamics selecting a ground state. This is a fourth kind, none of the three listed: the count is the order of a group automorphism, and the automorphism being non-linear is what makes the three blocks genuinely distinct while still permutable. The ingredient is already in the corpus — <code>articles_maths/triality-and-spin8-with-inner-conjugation.md</code> has the three eight-dimensional representations, the outer $S_3$ of $D_4$ and the $G_2$ fixed points — so only the generation reading is new. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>, with the group theory in <code>articles_maths/triality-and-spin8-with-inner-conjugation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The corpus article's argument is that $N_g$ enters as the dimension of a multiplicity factor on which the algebra acts trivially, so the algebra cannot select it; here the algebra does act on the three blocks, which evades the objection at the price of the change of algebra. The same triality appears in the sedenion paper with a different action ($\psi$ on units, not a permutation of blocks), so the two accounts of "why three are not obviously one argument. And Additional insights/restrictions are required" concedes that no angle, mass or hierarchy comes out.</p>
+<p>The rank is a judgement: the gluon count first, because the corpus declares the octet a boundary and this offers an intrinsic carrier; the bosonless symmetry second, because it explains an absence; triality third, because the corpus declares $N_g$ open and this is a fourth route to it, one that leaves the angles free.</p>
+<p>Twenty-three pages: the $Cl(6)$ review with its left and right adjoint actions, the extension to $Cl(8)$ by spin, the pinor and spinor spaces with $U(4)$, the triality action on spinors and the three generations, intergenerational mixing, the relation to the complex sedenions, and a concluding summary with the ideal tables in an appendix.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

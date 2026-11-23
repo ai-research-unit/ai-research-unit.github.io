@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective potential for the massless KPZ equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective potential for the massless KPZ equation - cond-mat_9904391.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-potential-for-the-massless-kpz-equation"><strong>Effective potential for the massless KPZ equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>cond-mat/9904391v1 [cond-mat.stat-mech]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Hochberg, Carmen Molina-París, Juan Pérez-Mercader, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 April 1999</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Effective potential for the massless KPZ equation - cond-mat_9904391-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective potential for the massless KPZ equation - cond-mat_9904391.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Effective potential for the massless KPZ equation - cond-mat_9904391.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper applies a previously developed functional-integral method to the massless KPZ equation, which is the noisy vorticity-free Burgers equation. It computes the one-loop effective potential in the ultraviolet regime and shows the theory is one-loop ultraviolet renormalisable in one, two, and three space dimensions and not beyond. The result is closely tied to the $\lambda\varphi^4$ effective potential, and the authors prove that dynamical symmetry breaking occurs in one and two dimensions through an analogue of the Coleman–Weinberg mechanism, but not in three.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"In previous work we have developed a general method for casting a classical field theory subject to Gaussian noise (that is, a stochastic partial differential equation—SPDE) into a functional integral formalism that exhibits many of the properties more commonly associated with quantum field theories (QFTs). In particular, we demonstrated how to derive the one-loop effective potential."</p>
+<h3 id="what-is-done-here">What is done here</h3>
+<p>"In this paper we apply the formalism to a specific field theory of considerable interest, the massless KPZ equation (massless noisy vorticity-free Burgers equation), and analyze its behaviour in the ultraviolet (short-distance) regime."</p>
+<h3 id="the-renormalisability-result">The renormalisability result</h3>
+<p>"When this field theory is subject to white noise we can calculate the one-loop effective potential and show that it is one-loop ultraviolet renormalizable in 1, 2, and 3 space dimensions, and fails to be ultraviolet renormalizable in higher dimensions."</p>
+<h3 id="the-relation-to-a-scalar-theory">The relation to a scalar theory</h3>
+<p>"We show that the one-loop effective potential for the massless KPZ equation is closely related to that for $\lambda\varphi^4$ QFT."</p>
+<h3 id="the-symmetry-breaking-result">The symmetry breaking result</h3>
+<p>"In particular we prove that the massless KPZ equation exhibits one-loop dynamical symmetry breaking (via an analog of the Coleman–Weinberg mechanism) in 1 and 2 space dimensions, and that this behaviour does not persist in 3 space dimensions."</p>
+<h3 id="the-regime-chosen">The regime chosen</h3>
+<p>"it is important to underscore the fact that the analysis presented here has focussed on the short dis[tance] properties of the KPZ equation, which as we have seen, reveal a complementary phenomenology to [the] common studies concerned with the infrared, or long distance properties of the KPZ equation."</p>
+<h3 id="what-becomes-visible">What becomes visible</h3>
+<p>"the statics of the massless KPZ system and the static behaviour of massless $\lambda\varphi^4$ QFT—and much of the structure of the massless $\lambda\varphi^4$ QFT carries over into the ground state structure of the massless [KPZ system]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-dimensionality-decides-the-outcome">1. Dimensionality decides the outcome</h3>
+<p><strong>The idea.</strong> Symmetry breaking appears in one and two dimensions and disappears in three.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions without noting that some depend on dimension. Here a qualitative feature changes with dimension, which suggests the catalogue should record the dimension of each entry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the scope note.</p>
+<p><strong>What stands in the way.</strong> The example is from a stochastic equation. Ranked first, because the dimensional caveat applies broadly.</p>
+<h3 id="2-an-analogue-of-a-known-mechanism">2. An analogue of a known mechanism</h3>
+<p><strong>The idea.</strong> The stochastic system reproduces the Coleman–Weinberg mechanism formally.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could ask whether its own effects are analogues of known ones or genuinely new. This paper shows the diagnostic: match the mechanism exactly and see what survives.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The framework's mechanisms are not identified yet. Ranked second.</p>
+<h3 id="3-short-distance-versus-long-distance">3. Short distance versus long distance</h3>
+<p><strong>The idea.</strong> The short-distance behaviour is a separate subject from the usual long-distance analysis.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> could note that a framework can be informative at one scale and empty at another, so an obstruction at one scale is not total.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The framework has no scale separation. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

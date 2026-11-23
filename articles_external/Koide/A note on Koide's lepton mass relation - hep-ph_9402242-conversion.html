@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A note on Koide&#x27;s lepton mass relation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A note on Koide&#x27;s lepton mass relation - hep-ph_9402242.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-note-on-koides-lepton-mass-relation"><strong>A note on Koide's lepton mass relation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/9402242 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. Foot</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 February 1994</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (report number McGill/94-9)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A note on Koide's lepton mass relation - hep-ph_9402242-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A note on Koide's lepton mass relation - hep-ph_9402242.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A note on Koide's lepton mass relation - hep-ph_9402242.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reads Koide's relation as an angle. Take the vector of square roots of the three charged-lepton masses in ordinary three-dimensional space and the symmetric vector through $(1,1,1)$; the relation is the statement that the angle between them is $\pi/4$. The note also fixes the only theoretical constraint on that angle, $\cos\theta&gt;1/\sqrt3$, reports the measured $\theta=45.000\pm0.001$ degrees, and notes that the relation cannot hold for the bare masses because the electromagnetic corrections are too large for it to be preserved. The angle is an identity, not a derivation: nothing here explains why the angle should be $45$ degrees.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-as-an-angle">The relation as an angle</h3>
+<p>"Consider an ordinary three dimensional vector space. On this space we put cartesian co-ordinates. Then the point $(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})$ and the origin define a vector. Define $\theta$ as the angle between this vector and the symmetric vector (the symmetric vector is the one which passes through the origin and the point $(1,1,1)$). Then Koide's mass relation is equivalent to the statement that $\theta=\pi/4$."</p>
+<p>$$
+\cos\theta=\frac{(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})\cdot(1,1,1)}{\left|(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})\right|\left|(1,1,1)\right|}
+=\frac{\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}}{\sqrt{m_e+m_\mu+m_\tau}\,\sqrt3}
+\tag{paper 2, 3}
+$$</p>
+<p>"When $\cos\theta=1/\sqrt2$ then eq.(3) reduces to Koide's formula." The relation is written with the tau mass measured by ARGUS, BES and CLEO, $1776.3\pm2.4\pm1.4$ MeV, $1776.9^{+0.4}_{-0.5}\pm0.2$ MeV and $1777.6\pm0.9\pm1.5$ MeV, which "are in agreement with the prediction $1776.97$ MeV".</p>
+<h3 id="the-only-theoretical-constraint-and-the-measured-value">The only theoretical constraint, and the measured value</h3>
+<p>"Theoretically the only constraint on $\theta$ (assuming that at least one lepton has a non-zero mass) is that $\cos\theta&gt;1/\sqrt3$ (which means that $\theta&lt;54.7$ degrees). Putting in the measured lepton mass values, then $\theta=45.000\pm0.001$."</p>
+<h3 id="the-angle-is-not-special-to-math32">The angle is not special to $2/3$</h3>
+<p>"If we replaced the $2/3$ factor in Koide's formula with another factor then $\theta$ is nothing special (e.g. if we replaced the $2/3$ with $3/4$ or $1/2$ then this corresponds with $\theta=48.189\ldots$ and $35.264\ldots$ respectively)." So the map from the coefficient to the angle is one to one, and the content of the relation is entirely in the number $2/3$ becoming $45$ degrees.</p>
+<h3 id="the-relation-cannot-hold-for-the-bare-masses">The relation cannot hold for the bare masses</h3>
+<p>The relation "is a relation among the physical masses. It doesn't seem possible for the same relation to hold for the bare mass parameters because the electromagnetic corrections are too big for the same relation to hold for the bare parameters. For this reason, it seems difficult to understand the above relation from any simple gauge model since it seems the electromagnetic corrections are inevitable."</p>
+<p>The alternatives are left open: "It could be that the mass formula eq.(1) is of no fundamental significance since it is possible that its empirical success is just a numerical coincidence." The author's stated motive is narrower than a derivation: if the formula "has something to do with the real world, then maybe this 'geometrical formulation' of the mass relation may be useful in order to derive the formula from some underlying theory."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-closure-cannot-hold-at-the-bare-mass-level">1. The closure cannot hold at the bare-mass level</h3>
+<p><strong>The idea.</strong> A <strong>claim about scheme</strong>: the relation holds for pole masses and cannot hold for the bare parameters, because the electromagnetic corrections are large enough to move the ratio off $2/3$ if the relation were imposed at the Lagrangian level. Any derivation must therefore produce the relation at the pole, not in the bare Lagrangian.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> treats $Q$ as a number computed from pole masses and never asks at which scale a proposed mechanism would have to deliver it. This sentence makes that a requirement on every candidate mechanism, and it is checkable against the corpus's own running: <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> supplies the flow of the masses with scale, so the size of the drift between the bare and the pole value can be computed there rather than asserted.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, as a condition on the entry "Derive $Q=2/N$"; and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, which already carries one scheme lesson, the $b$ mass running from $4.28$ to $2.48$ MeV.</p>
+<p><strong>What stands in the way.</strong> The note states the conclusion without a number; the corpus would have to compute the QED drift of $Q$ itself, and it has no article that does. Until then the claim is a plausible remark and not a result.</p>
+<h3 id="2-the-angle-bound-and-the-coefficient-to-angle-map">2. The angle bound and the coefficient-to-angle map</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: for any triple with at least one non-zero mass, $\cos\theta&gt;1/\sqrt3$, hence $\theta&lt;54.7^{\circ}$; and the coefficient in the closure and the angle carry the same information, $2/3\leftrightarrow45^{\circ}$, $3/4\leftrightarrow48.189^{\circ}$, $1/2\leftrightarrow35.264^{\circ}$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 proves $0&lt;Q_N\le1$ and §2 turns $Q=2/N$ into the $45^{\circ}$ statement, but it never writes the bound in the angle, and it never shows that the coefficient and the angle are one parameter. With the bound in the angle the target of §11 becomes geometric: a medium whose amplitude vector is at $45^{\circ}$, inside a cone of half-angle $54.7^{\circ}$ that no physics sets.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, beside the $45^{\circ}$ derivation.</p>
+<p><strong>What stands in the way.</strong> Nothing structural. The cost is that the import is small: one inequality and one table of three pairs, both a line of algebra away from what the note already has.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The geometric reading itself is already the corpus's, in <code>articles_internal/flavour-research.md</code> §2, with the same $45^{\circ}$ and the same Cauchy–Schwarz bound; this note is its first source. The tau prediction $1776.97$ MeV and the ARGUS, BES and CLEO values are the 1990s data and are superseded in the corpus by the 2024 values.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

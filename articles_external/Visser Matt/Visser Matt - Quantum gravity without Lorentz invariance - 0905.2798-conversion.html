@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum gravity without Lorentz invariance — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum gravity without Lorentz invariance - 0905.2798.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-gravity-without-lorentz-invariance"><strong>Quantum gravity without Lorentz invariance</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0905.2798v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas P. Sotiriou, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 13 October 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>37 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Quantum gravity without Lorentz invariance - 0905.2798-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum gravity without Lorentz invariance - 0905.2798.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Quantum gravity without Lorentz invariance - 0905.2798.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Following an earlier letter, the authors develop their variant of Hořava's gravity in detail. They drop detailed balance and restore parity, but keep the projectability condition. They write the most general action with these symmetries and count the parameters. They then derive the propagators for the scalar and tensor modes and examine the weak-field limit. The payoff is improved ultraviolet behaviour at high momentum, paid for by Lorentz violation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"this model being based on anisotropic scaling at a $z=3$ Lifshitz point"</p>
+<h3 id="the-trade">The trade</h3>
+<p>"Hořava's model, and its variants, show dramatically improved ultra-violet behaviour at the cost of exhibiting violation of Lorentz invariance at ultra-high momenta."</p>
+<h3 id="the-changes">The changes</h3>
+<p>"In contrast to Hořava's original model, we abandon 'detailed balance' and restore parity invariance."</p>
+<h3 id="what-is-kept">What is kept</h3>
+<p>"We retain, however, Hořava's 'projectability condition' and explore its implications."</p>
+<h3 id="the-outcome">The outcome</h3>
+<p>"we explicitly exhibit the most general model"</p>
+<h3 id="the-limitation">The limitation</h3>
+<p>"this so far only considers pure gravity (and a phenomenologically introduced notion of cosmological fluid)"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-give-up-a-symmetry-gain-a-limit">1. Give up a symmetry, gain a limit</h3>
+<p><strong>The idea.</strong> Lorentz violation at short distances removes divergences.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats Lorentz symmetry as fixed. A model that trades it away is a case the catalogue should measure itself against.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The model has its own problems. Ranked first, because it is the strongest challenge to a fixed-symmetry assumption.</p>
+<h3 id="2-few-parameters">2. Few parameters</h3>
+<p><strong>The idea.</strong> The general action has fewer free parameters than the Standard Model.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs a framework by its parameter count. A rival with a small count makes the comparison concrete.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of parameters.</p>
+<p><strong>What stands in the way.</strong> Parameter counting is not prediction. Ranked second.</p>
+<h3 id="3-propagators-before-phenomenology">3. Propagators before phenomenology</h3>
+<p><strong>The idea.</strong> The graviton propagator fixes what to look for.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code> describes wave content. A propagator analysis would give the target's waves a dispersion relation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>, in the discussion of modes.</p>
+<p><strong>What stands in the way.</strong> The analysis is around flat space. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravastars must have anisotropic pressures — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravastars must have anisotropic pressures - gr-qc_0505137.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravastars-must-have-anisotropic-pressures"><strong>Gravastars must have anisotropic pressures</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0505137v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Tristan Faber, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 8 June 2005 (latest version dated 27 May 2005)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravastars must have anisotropic pressures - gr-qc_0505137-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravastars must have anisotropic pressures - gr-qc_0505137.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravastars must have anisotropic pressures - gr-qc_0505137.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gravastars are a serious alternative to black holes. The authors study a generalised class with continuous pressure and no infinitely thin shells. Using the Tolman–Oppenheimer–Volkoff equation with negative central pressure, they show a gravastar cannot be a perfect fluid: the crust must be anisotropic. The anisotropic equation then bounds the required anisotropy in terms of compactness, and the resulting transverse stresses allow a compactness beyond the Buchdahl–Bondi limit. A perfect-fluid gravastar either becomes infinite or develops a naked singularity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"One of the very small number of serious alternatives to the usual concept of an astrophysical black hole is the 'gravastar' model developed by Mazur and Mottola; and a related phase-transition model due to Laughlin et al."</p>
+<h3 id="the-class-studied">The class studied</h3>
+<p>"We consider a generalized class of similar models that exhibit continuous pressure — without the presence of infinitesimally thin shells."</p>
+<h3 id="the-result">The result</h3>
+<p>" By considering the usual TOV equation for static solutions with negative central pressure, we find that gravastars cannot be perfect fluids — anisotropic pressures in the 'crust' of a gravastar-like object are unavoidable."</p>
+<h3 id="the-bound">The bound</h3>
+<p>"The anisotropic TOV equation can then be used to bound the pressure anisotropy."</p>
+<h3 id="the-compactness">The compactness</h3>
+<p>"The transverse stresses that support a gravastar permit a higher compactness than is given by the Buchdahl–Bondi bound for perfect fluid stars."</p>
+<h3 id="what-perfect-fluids-do">What perfect fluids do</h3>
+<p>"Trying to build a perfect fluid gravastar results either in an infinite-size infinite-mass object, or in a naked singularity as the pressure exhibits a simple pole."</p>
+<h3 id="the-anisotropy-requirement">The anisotropy requirement</h3>
+<p>"Assuming the WEC, the magnitude of anisotropy required in the crust can be explicitly bounded in terms of the local compactness $2m(r)/r$, and becomes arbitrarily large for gravastars that are sufficiently close to forming a horizon, in which case the DEC must be violated."</p>
+<h3 id="the-equation-of-state">The equation of state</h3>
+<p>"if one demands that the equation of state for gravastar matter results in configurations that are horizon-avoiding for large ranges of total mass and central pressure, then it is difficult to avoid the conclusion that the equation of state must depend on the local compactness $2m(r)/r$."</p>
+<h3 id="the-remaining-gap">The remaining gap</h3>
+<p>"while this argument demonstrates that possible equations of state are at least conceivable, that is not the same as explicitly demonstrating that such equations of state actually exist. That is a challenge which we leave for the future."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-horizon-avoidance-costs-anisotropy">1. Horizon avoidance costs anisotropy</h3>
+<p><strong>The idea.</strong> Preventing a horizon in a compact object forces anisotropic stress, which grows as the object approaches the horizon.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizon absence as a geometric choice. Here it is a physical price: the matter must be anisotropic, and close to the limit it must break an energy condition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on horizonless objects.</p>
+<p><strong>What stands in the way.</strong> The argument is static and spherical. Ranked first, because it converts a geometric option into a constraint.</p>
+<h3 id="2-beating-the-buchdahlbondi-bound">2. Beating the Buchdahl–Bondi bound</h3>
+<p><strong>The idea.</strong> Anisotropic stresses allow more compact objects than a perfect fluid permits.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could use a compactness bound as a test. Knowing the bound is not absolute would stop the article from over-claiming.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The bound is relaxed, not removed. Ranked second.</p>
+<h3 id="3-compactness-in-the-equation-of-state">3. Compactness in the equation of state</h3>
+<p><strong>The idea.</strong> A local equation of state may depend on $2m/r$ without violating the equivalence principle.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> separates local geometry from matter. This shows the boundary is not sharp, since a measurable curvature quantity enters the matter law.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of matter coupling.</p>
+<p><strong>What stands in the way.</strong> The authors do not construct such an equation of state. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

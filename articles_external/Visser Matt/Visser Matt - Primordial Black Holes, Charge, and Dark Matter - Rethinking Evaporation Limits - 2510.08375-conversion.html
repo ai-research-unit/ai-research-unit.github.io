@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primordial black holes, charge, and dark matter: rethinking evaporation limits — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Primordial Black Holes, Charge, and Dark Matter - Rethinking Evaporation Limits…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="primordial-black-holes-charge-and-dark-matter-rethinking-evaporation-limits"><strong>Primordial black holes, charge, and dark matter: rethinking evaporation limits</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2510.08375v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Jessica Santiago, Justin Feng, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 9 October 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Primordial Black Holes, Charge, and Dark Matter - Rethinking Evaporation Limits - 2510.08375-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Primordial Black Holes, Charge, and Dark Matter - Rethinking Evaporation Limits - 2510.08375.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Primordial Black Holes, Charge, and Dark Matter - Rethinking Evaporation Limits - 2510.08375.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Evaporation limits for primordial black holes are usually computed for a Schwarzschild hole. The authors point out that astrophysical holes are better modelled by Kerr, and that charge changes the story for early-universe holes. Dark matter models can leave a charge on a primordial black hole even after the charged particles have gone. They redo the evolution with charge included and give the conditions under which the standard limits hold. The result is a revised constraint rather than a new mechanism.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point">The starting point</h3>
+<p>"Hawking radiation are predominantly derived from the assumption of a Schwarzschild black hole evaporating."</p>
+<h3 id="the-correction">The correction</h3>
+<p>"astrophysical black holes are usually much more realistically modelled by the rotating Kerr black hole solution."</p>
+<h3 id="the-charge-argument">The charge argument</h3>
+<p>"Extensions of this model thus can lead to charges present in the early universe which remain preserved in the charge of primordial black holes — even when the corresponding particles have disappeared from the particle content of the present epoch of the universe."</p>
+<h3 id="the-regime-assumed">The regime assumed</h3>
+<p>"Evolution is assuming the following three conditions, involving the characteristic charge scale for the Schwinger effect, $Q_0=\hbar e_\chi/(\pi m_\chi^2)$"</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>"Dark matter is not just a possible solution to issues of astrophysics and cosmology, but also to issues of the standard model of particle physics."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-limit-computed-with-the-wrong-model">1. A limit computed with the wrong model</h3>
+<p><strong>The idea.</strong> A bound derived from a special case can be wrong when the general case differs.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> weighs constraints. This paper shows how a constraint inherits the assumptions of the model used to derive it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The case is about primordial black holes. Ranked first, because it is a general lesson about bounds.</p>
+<h3 id="2-charge-survives-its-source">2. Charge survives its source</h3>
+<p><strong>The idea.</strong> A hole can keep a charge after the particles carrying it have vanished.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the parameters of a hole. A conserved charge with no carriers is a state the thermodynamic description must allow.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of parameters.</p>
+<p><strong>What stands in the way.</strong> The argument is model-dependent. Ranked second.</p>
+<h3 id="3-rotation-before-charge">3. Rotation before charge</h3>
+<p><strong>The idea.</strong> Spin matters more than charge for real holes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> derives radiation for a non-rotating hole. Spin corrections are the obvious next term.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of the flux.</p>
+<p><strong>What stands in the way.</strong> The paper only flags the issue. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

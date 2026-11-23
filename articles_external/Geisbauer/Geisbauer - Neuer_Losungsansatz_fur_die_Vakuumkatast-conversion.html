@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die kontinuierlich verteilte Wirkung — Ein neuer Lösungsansatz für die Vakuumkatastrophe, Dunkle Energie und Inflation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Neuer_Losungsansatz_fur_die_Vakuumkatast.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="die-kontinuierlich-verteilte-wirkung-ein-neuer-losungsansatz-fur-die-vakuumkatastrophe-dunkle-energie-und-inflation"><strong>Die kontinuierlich verteilte Wirkung — Ein neuer Lösungsansatz für die Vakuumkatastrophe, Dunkle Energie und Inflation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript — German</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>June 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Neuer_Losungsansatz_fur_die_Vakuumkatast-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Neuer_Losungsansatz_fur_die_Vakuumkatast.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Neuer_Losungsansatz_fur_die_Vakuumkatast.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. This is the German version of the argument converted at <code>Geisbauer - A_New_Uniting_Solution_to_the_Vacuum_Cat-conversion.md</code>; the two carry the same postulate, the same numbers and the same $w=-1/3$ prediction.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>States one postulate — Planck's constant distributed as a tension over the surface of the observable universe — and derives four claims from it in German: the dark-energy density, the geometric reading of the $10^{122}$ ratio, emergent gravity from the tension's gradient, and inflation without an inflaton. The density is computed from measured constants, and the deviation from the observed value is given as about 22 per cent in §3.1 while the abstract promises "unter 2 %". The equation of state $w_\Lambda=-1/3$ and a modified Friedmann equation follow. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="das-postulat">Das Postulat</h3>
+<p>"ngsquantum h ist keine lokal begrenzte Größe, sondern eine globale Eigen- schaft, die sich als ﬂächenhomogene Spannung σh über die gesamte Oberﬂäche des beobachtbaren Universums verteilt. Aus diesem": $$\sigma_h=\frac{h}{A_{\rm Uni}}=\frac{h}{4\pi R^2},\qquad [\sigma_h]=\mathrm{J\,s\,m^{-2}}$$ (paper 5), ausdrücklich "Wirkung pro Fläche. Sie beschreibt" und "keine Energiedichte (J/m) oder ein Druck".</p>
+<h3 id="die-dichte">Die Dichte</h3>
+<p>$$\rho_\Lambda=\frac{\sigma_h}{\ell_P t_P}=\frac{h}{4\pi R^2\ell_P t_P}\approx3{,}12\cdot10^{-10}\ \mathrm{J\,m^{-3}}$$
+(paper 6–7) gegen $\rho_{\Lambda,\rm obs}=2{,}56\cdot10^{-10}\ \mathrm{J\,m^{-3}}$; "e Abweichung liegt bei etwa 22 %, was vollständig im Rahmen der Unsicherheit des" des kosmischen Radius liegt.</p>
+<h3 id="der-verdunnungsfaktor">Der Verdünnungsfaktor</h3>
+<p>$$\frac{\rho_{\rm QFT}}{\rho_\Lambda}\approx\frac{c\,t_P R^2}{4\pi\ell_P^3}=\frac{A_{\rm Uni}}{A_P}\approx10^{124}$$
+(paper 8, so gedruckt), im laufenden Text sonst "$10^{123}$", im Abstract "$10^{122}$. Die Größe wird als Planck-Verdünnungsfaktor" gelesen: die Vakuumenergie verteilt sich über die Fläche statt über das Volumen.</p>
+<h3 id="gravitation-und-inflation">Gravitation und Inflation</h3>
+<p>"hte ergibt sich als Fluss der globalen Wirkungsspannung durch eine Planck-Einheitszelle.", daher $g\propto-\nabla\sigma_h(r)$ und das Newtonsche $1/r^2$ als Gradient der Spannung. Für die Inflation: "um, als der kosmische Radius R sich der Planck-Länge ℓP näherte, erreichte die Wir- kungsspannung ein Maximum, das", was eine exponentielle Expansion treibt und einen ad-hoc-Inflaton-Feld erübrigt.</p>
+<h3 id="die-vorhersage">Die Vorhersage</h3>
+<p>Mit $\rho_\Lambda\propto R^{-2}$ folgt $w=-1/3$ aus
+$$-\frac{1}{2}+3(1+w)=0\ \Longrightarrow\ 3w=-1\ \Longrightarrow\ w=-\frac13$$
+(paper 18), und
+$$H^2(z)=H_0^2\left[\Omega_m(1+z)^3+\Omega_r(1+z)^4+\Omega_\Lambda(1+z)^2\right]$$
+mit $\Omega_\Lambda\approx0{,}685$; die Abweichung im Hubble-Diagramm sei mit LSST und Euclid prüfbar.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-emergent-gravity-from-a-tension-gradient">1. Emergent gravity from a tension gradient</h3>
+<p><strong>The idea.</strong> $g\propto-\nabla\sigma_h$ makes the inverse-square law a property of a field's gradient rather than of a metric. That is a <strong>mechanism</strong>, and the German text states it more fully than the English: matter disturbs a global tension, and the disturbance's gradient is the acceleration.</p>
+<p><strong>What it would add.</strong> A pre-metric account of why the force falls as $1/r^2$ — the corpus derives the same behaviour from a potential in a frame, not from a background field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>, on what plays the role of the source in the Newtonian limit.</p>
+<p><strong>What stands in the way.</strong> $\sigma_h$ is defined globally as $h/A$ with $A$ the area of the whole universe, and a local mass cannot disturb it without a rule for the disturbance; the paper gives the proportionality and no equation for $\delta\sigma_h(\mathbf r)$.</p>
+<h3 id="2-one-value-with-two-accuracies">2. One value with two accuracies</h3>
+<p><strong>The idea.</strong> $3.12\times10^{-10}$ against $2.56\times10^{-10}$ is a 22 per cent overshoot; the abstract of both language versions claims agreement "unter 2 %". That is a <strong>number</strong>, and its status is decided by which of the two statements is meant.</p>
+<p><strong>What it would add.</strong> A case where the size of an input's error bar is visible in the output: $\rho_\Lambda\propto R^{-2}$, so 2 per cent in $\rho$ needs 1 per cent in $R$, which for $R\approx1.3\times10^{26}$ m is $1.3\times10^{24}$ m.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>, the corpus article on what a printed strength must be backed by.</p>
+<p><strong>What stands in the way.</strong> Nothing stands in the way of the arithmetic; what stands in the way is that the paper does not choose between its two claims, so the import would be a correction rather than a result.</p>
+<h3 id="3-inflation-without-an-inflaton">3. Inflation without an inflaton</h3>
+<p><strong>The idea.</strong> A tension that grows as $R\to\ell_P$ drives exponential expansion with no scalar field. That is a <strong>mechanism</strong>, stated in two sentences.</p>
+<p><strong>What it would add.</strong> An alternative to the corpus's missing inflaton, which the corpus's cosmology article records it cannot supply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> No equation of motion for $R$ is written; erreichte ein Maximum is asserted, and the maximum sits at the Planck length, where the formula for $\sigma_h$ is least trustworthy. Refused as a dynamics, recorded as a picture.</p>
+<p>The rank is a judgement: emergent gravity first, because it is the only claim with a mechanism behind it; the dual accuracy second, because it is a correction the corpus can use; inflation third, because it is two sentences.</p>
+<p>This is an eleven-page paper; the postulate, the density, the area ratio, the gravity section, the inflation section, the modified Friedmann equation and a $\pi$-relation aside are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -108,18 +108,18 @@ $$</p>
 <h3 id="a-math61-algebra-that-is-not-an-algebra">A $J^{*}$-Algebra that is Not an Algebra</h3>
 <p><strong>Theorem (a $J^{*}$-algebra that is not an algebra).</strong> Let $W$ be the subspace of $M_2(\mathbb{C})$ of the matrices with zero diagonal,</p>
 <p>$$
-W = \left\{ \begin{pmatrix} 0 & a \\ b & 0 \end{pmatrix} : a, b \in \mathbb{C} \right\},
+W = \left\{ \begin{pmatrix} 0 &amp; a \\ b &amp; 0 \end{pmatrix} : a, b \in \mathbb{C} \right\},
 $$</p>
 <p>with $\varsigma(z) = \bar z$ and the ternary product $\{x,y,z\} = xy^{*}z$ inherited from $M_2(\mathbb{C})$. Then $W$ is a $*$-invariant algebraic $J^{*}$-algebra, and $W$ is not closed under the binary product of $M_2(\mathbb{C})$.</p>
-<p><strong>Proof.</strong> Let $x = \begin{pmatrix} 0 & a \\ b & 0 \end{pmatrix}$, $y = \begin{pmatrix} 0 & p \\ q & 0 \end{pmatrix}$ and $z = \begin{pmatrix} 0 & c \\ d & 0 \end{pmatrix}$, so that $y^{*} = \begin{pmatrix} 0 & \bar q \\ \bar p & 0 \end{pmatrix} \in W$. Then</p>
+<p><strong>Proof.</strong> Let $x = \begin{pmatrix} 0 &amp; a \\ b &amp; 0 \end{pmatrix}$, $y = \begin{pmatrix} 0 &amp; p \\ q &amp; 0 \end{pmatrix}$ and $z = \begin{pmatrix} 0 &amp; c \\ d &amp; 0 \end{pmatrix}$, so that $y^{*} = \begin{pmatrix} 0 &amp; \bar q \\ \bar p &amp; 0 \end{pmatrix} \in W$. Then</p>
 <p>$$
-xy^{*} = \begin{pmatrix} 0 & a \\ b & 0 \end{pmatrix}\begin{pmatrix} 0 & \bar q \\ \bar p & 0 \end{pmatrix} = \begin{pmatrix} a\bar p & 0 \\ 0 & b\bar q \end{pmatrix},
+xy^{*} = \begin{pmatrix} 0 &amp; a \\ b &amp; 0 \end{pmatrix}\begin{pmatrix} 0 &amp; \bar q \\ \bar p &amp; 0 \end{pmatrix} = \begin{pmatrix} a\bar p &amp; 0 \\ 0 &amp; b\bar q \end{pmatrix},
 \qquad
-xy^{*}z = \begin{pmatrix} a\bar p & 0 \\ 0 & b\bar q \end{pmatrix}\begin{pmatrix} 0 & c \\ d & 0 \end{pmatrix} = \begin{pmatrix} 0 & a\bar p c \\ b\bar q d & 0 \end{pmatrix} \in W ,
+xy^{*}z = \begin{pmatrix} a\bar p &amp; 0 \\ 0 &amp; b\bar q \end{pmatrix}\begin{pmatrix} 0 &amp; c \\ d &amp; 0 \end{pmatrix} = \begin{pmatrix} 0 &amp; a\bar p c \\ b\bar q d &amp; 0 \end{pmatrix} \in W ,
 $$</p>
 <p>so $W$ is closed under the ternary product, and it is $*$-invariant because $y^{*} \in W$. Being the restriction of the ternary product of $M_2(\mathbb{C})$, it is additive, linear in the outer slots, conjugate-linear in the middle, and satisfies the Jordan triple identity, which is an identity of $M_2(\mathbb{C})$. The binary product, however, is</p>
 <p>$$
-xz = \begin{pmatrix} 0 & a \\ b & 0 \end{pmatrix}\begin{pmatrix} 0 & c \\ d & 0 \end{pmatrix} = \begin{pmatrix} ad & 0 \\ 0 & bc \end{pmatrix},
+xz = \begin{pmatrix} 0 &amp; a \\ b &amp; 0 \end{pmatrix}\begin{pmatrix} 0 &amp; c \\ d &amp; 0 \end{pmatrix} = \begin{pmatrix} ad &amp; 0 \\ 0 &amp; bc \end{pmatrix},
 $$</p>
 <p>which is diagonal and hence outside $W$ as soon as $ad \neq 0$ or $bc \neq 0$; so $W$ is not closed under the product.</p>
 <p><strong>Remark.</strong> The witness shows that a $J^{*}$-algebra need not be an algebra. $W$ is a subtriple of $M_2(\mathbb{C})$ — it is closed under the ternary product — but it is not a subalgebra, since the product of two of its elements is diagonal; the ternary structure therefore exists on a space that carries no binary product, and the axioms are those of a space closed under the ternary operation rather than of an algebra. The involution is an operation of $W$, which is $*$-invariant, so the failure is not a matter of the involution but of the product alone: $W$ is even a $*$-subspace, and still not a subalgebra. The binary product is what the axioms decline to require, and it is present in the model only because the model begins with an algebra. This is Harris's definition of a $J^{*}$-algebra: a space closed under $xy^{*}z$, not assumed closed under $xy$.</p>

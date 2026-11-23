@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometro-Hydrodynamical Representation of the Torsion Field — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The Geometro-Hydrodynamical Representation of the Torsion Field - 1702.02168.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometro-hydrodynamical-representation-of-the-torsion-field"><strong>The Geometro-Hydrodynamical Representation of the Torsion Field</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1702.02168 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova, Gennady Shipov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 June 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - The Geometro-Hydrodynamical Representation of the Torsion Field - 1702.02168-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The Geometro-Hydrodynamical Representation of the Torsion Field - 1702.02168.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - The Geometro-Hydrodynamical Representation of the Torsion Field - 1702.02168.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds the Pauli field as a fluid of oriented points, where each fluid element is a triad and the triad's orientation is carried by three Euler angles. On the six-dimensional manifold of absolute parallelism the anholonomy of the triad <em>is</em> the torsion, so the torsion gains a hydrodynamical reading: its curl is a spin-vorticity that acts on the particle through a term $\sigma\cdot T$ in the Hamiltonian. The paper derives the momentum balance with an explicit torsion force, the spin precession in the torsion field, and the vorticity equation. The construction is geometric bookkeeping, not a measurement; the experimental section lists effects to look for.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-geometry">The geometry</h3>
+<p>A triad $e^{(a)}_k(x,t)$ with $e^{(a)}_i e^{(a)}_j=\delta_{ij}$, connection $\Delta^i_{jk}=\Gamma^i_{jk}+\gamma^i_{jk}$, and torsion read off the anholonomy of the triad,
+$$\Omega_{ijk}=\frac12 e^{(a)}_i\bigl(\partial_j e^{(a)}_k-\partial_k e^{(a)}_j\bigr),\qquad \gamma^i_{jk}=-\Omega_{ijk}+g^{im}\bigl(g_{jn}\Omega_{nmk}+g_{kn}\Omega_{nmj}\bigr)$$
+(paper 5–6), where $\Omega$ "can be characterized as the object of anholonomity". The paper adds that "the Ricci rotation coefficients are the potential of the torsion field". The spin is fixed to the third axis,
+$$s=\frac{\hbar}{2}\Sigma,\qquad \Sigma=e^{(3)}=e^{(1)}\times e^{(2)}$$
+(paper 9).</p>
+<h3 id="the-hamiltonian-and-the-spin-vorticity">The Hamiltonian and the spin-vorticity</h3>
+<p>$$T_k=\frac{\hbar}{2m}\bigl(\nabla\times\gamma^{(1)(2)}\bigr)_k=\frac{\hbar}{2m}\varepsilon^{kmn}\partial_m e^{(1)}_i\partial_n e^{(2)}_i,\qquad \mathrm{div}\,T=0$$
+(paper 19). The Pauli Hamiltonian then carries a spin-vortex term,
+$$\hat H=\frac{1}{2m}\Bigl(\hat p_i-\frac{q}{c}A_i-\frac{\hbar}{2}\gamma_i\Bigr)^2+qA_0+\frac{\hbar}{2}\gamma_0-\mu\hat\sigma_iB^i_{\rm ext}-\frac{i\hbar}{2}\hat\sigma_iT^i$$
+(paper 17, with the $i\hbar/2$ printed on the last term; the $i$ makes that term anti-Hermitian for real $T$, which the paper does not comment on). "The Hamiltonian contains additional term which is called the spin-vortex coupling Σ · T and can be inter- preted as coupling between spin and vorticity. The main feature"</p>
+<h3 id="the-equations-of-motion">The equations of motion</h3>
+<p>$$m(\partial_t+v\nabla)v=qE+\frac{q}{c}v\times B-\frac{\nabla_jp_j}{\rho}+\mu s_j\nabla B^j+\Lambda_{\rm torsion}$$
+(paper 22, with the $q/c$ of the magnetic term restored to its place; the extraction drops the fraction onto the line below), and the torsion force is
+$$\Lambda_i^{\rm torsion}=(v\times T)_i+\frac{s_j}{m}\nabla_iT^j-\frac{\partial\gamma^i}{\partial t}-\nabla_i\gamma_0$$
+(paper 23). Spin and vorticity follow
+$$(\partial_t+v\nabla)s=\frac{2\mu}{\hbar}s\times B+s\times T,\qquad \partial_tT=\nabla\times(v\times T)+\frac{2}{mc}\nabla s_j\times\nabla B^j+\frac{1}{m}\nabla s_j\times\nabla T^j$$
+(paper 24–25).</p>
+<h3 id="the-proposed-tests">The proposed tests</h3>
+<p>"when a beam of neutral spinning particles passes through a region of space in which there is no electromagnetic field, but there is torsion field, an interference pattern can change"; and a region with $T=\nabla\times\gamma=0$ while $\gamma^k\neq0$ separates a phase effect of $\gamma$ from a force effect of $T$. Also "the influence of torsion field can lead to splitting and shifting of known spectral lines" and to "spiral or circular trajectories of neutral particles in external torsion fields".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-torsion-as-the-anholonomy-of-a-triad-that-is-also-the-fluid-element">1. Torsion as the anholonomy of a triad that is also the fluid element</h3>
+<p><strong>The idea.</strong> The paper does not add a torsion field to a fluid; it identifies the fluid's degrees of freedom with the triad whose anholonomy is the torsion. A <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A route from a spinor's orientation to a geometry, in one object, that the corpus's torsion article explicitly declines to take: there the torsion "is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has already tested this step in <em>An External Construction of Space from Quaternionic Spinors</em>, where a composite tetrad built from bilinears vanishes on every plane wave and a composite torsion misses the antisymmetry of the spin density. The present paper asserts the identification rather than deriving it from a spinor, so it does not escape those counts.</p>
+<h3 id="2-a-spin-vorticity-that-diverges-nowhere">2. A spin-vorticity that diverges nowhere</h3>
+<p><strong>The idea.</strong> $T=(\hbar/2m)\nabla\times\gamma$ with $\mathrm{div}\,T=0$ (paper 19) makes the torsion's curl a divergence-free vector, so it enters the Hamiltonian exactly as a magnetic field enters the Pauli equation. A <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A named object for the corpus's spin-fluid articles, which carry a spin-vector field and a velocity field but no third vector built from the frame's anholonomy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The definition presupposes a triad field that varies from point to point, i.e. a soldering that the corpus keeps at the level of a tetrad postulate, not a dynamical frame. To import $T$ one must first import the frame as an independent field.</p>
+<h3 id="3-a-neutral-particle-that-feels-an-aharonovbohm-like-torsion-phase">3. A neutral particle that feels an Aharonov–Bohm-like torsion phase</h3>
+<p><strong>The idea.</strong> $\hat p\to\hat p-\frac{\hbar}{2}\gamma$ gives a phase shift to a neutral spinning particle crossing a region with $\gamma\neq0$ but $T=0$. A <strong>number</strong>-bearing prediction, in the sense that it is a shift with a stated sign and source.</p>
+<p><strong>What it would add.</strong> An interference test of a connection that couples to spin alone.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-aharonov-casher-effect-in-biquaternionic-form.md</code>, as the spin-only analogue of the Aharonov–Casher phase.</p>
+<p><strong>What stands in the way.</strong> The corpus's Aharonov–Casher treatment derives the phase from the minimal coupling of a magnetic moment to an electric field; here the coupling constant to $\gamma$ is fixed by the triad normalisation, not by a charge, and the paper offers no estimate of the size of the shift.</p>
+<p>The rank is a judgement: the triad-as-fluid-element first, because it is the paper's actual construction; the spin-vorticity second, because it is a usable formula; the neutral-particle phase third, because it is a proposal without a size.</p>
+<p>Nine pages: the six-dimensional manifold, the triad and Euler angles, torsion and anholonomity, the spin-vortex Hamiltonian, the momentum balance and torsion force, spin and vorticity equations, and the experimental proposals.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

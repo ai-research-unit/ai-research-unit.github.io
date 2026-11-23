@@ -100,7 +100,7 @@ $$</p>
 <p>$$
 KK'=\underbrace{\tfrac12(KK'+K'K)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(KK'-K'K)}_{\in\operatorname{Skew}_n},
 $$</p>
-<p>by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the antisymmetric part antisymmetric in every case.</p>
+<p>by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'{}^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'{}^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the antisymmetric part antisymmetric in every case.</p>
 <p><strong>The structure of the two formulas is identical and the meaning is different.</strong> In $SS'$ the symmetric part is the anticommutator of two symmetric matrices and the antisymmetric part is their commutator; in $KK'$ the same two words appear with the same roles. What changes is the sign of the square: $S^{2}$ is symmetric and positive semidefinite, while $K^{2}$ is symmetric and negative semidefinite.</p>
 <p><strong>The square of an antisymmetric matrix is symmetric and negative semidefinite.</strong> For $K\in\operatorname{Skew}_n$,</p>
 <p>$$
@@ -126,7 +126,7 @@ $$</p>
 <p><em>Proof.</em> The first two are the identity $\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}$ with $B$ symmetric and $B$ antisymmetric. For the third, $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$, so the number is zero.</p>
 <p><strong>Consequence: the two halves are orthogonal for the trace form, and each is definite on itself.</strong> The trace form is positive definite on $S$ and negative definite on $K$; the mixed pairings vanish. So the four tables have a diagonal trace form:</p>
 <p>$$
-\begin{pmatrix}\operatorname{tr}(SS')&\operatorname{tr}(SK)\\\operatorname{tr}(KS)&\operatorname{tr}(KK')\end{pmatrix}=\begin{pmatrix}\langle S,S'\rangle_{\mathrm{HS}}&0\\0&-\langle K,K'\rangle_{\mathrm{HS}}\end{pmatrix}.
+\begin{pmatrix}\operatorname{tr}(SS')&amp;\operatorname{tr}(SK)\\\operatorname{tr}(KS)&amp;\operatorname{tr}(KK')\end{pmatrix}=\begin{pmatrix}\langle S,S'\rangle_{\mathrm{HS}}&amp;0\\0&amp;-\langle K,K'\rangle_{\mathrm{HS}}\end{pmatrix}.
 $$</p>
 <p>The block structure is the content of <em>The Two Halves as Orthogonal Complements for the Trace Form</em>, and it says that the four tables decouple completely as far as the invariant bilinear form is concerned.</p>
 <h2 id="which-products-stay-inside-a-half">Which Products Stay Inside a Half</h2>
@@ -138,9 +138,9 @@ $$</p>
 <p><strong>Consequence: the two halves are not subalgebras of $M_n$.</strong> Neither is closed under the product of the algebra, so neither inherits an associative structure. Each inherits a different one: $S$ is closed under the anticommutator and $K$ under the commutator, which is the content of <em>The Two Halves: Symmetric and Antisymmetric</em>.</p>
 <p><strong>The commutator and the anticommutator are exchanged by the two tables.</strong> In $SS'$ the commutator is the antisymmetric part; in $KK'$ the commutator is the antisymmetric part as well; in $SK$ the commutator is the symmetric part. So the answer to the question "which product is the bracket" depends on the pair of halves, and the mixed table is the one that reverses the answer.</p>
 <h2 id="the-case-math120">The Case $n=2$</h2>
-<p><strong>At $n=2$ the four tables are explicit.</strong> Write $S=\begin{pmatrix}a&b\\ b&c\end{pmatrix}$ and $K=\begin{pmatrix}0&d\\ -d&0\end{pmatrix}$. Then</p>
+<p><strong>At $n=2$ the four tables are explicit.</strong> Write $S=\begin{pmatrix}a&amp;b\\ b&amp;c\end{pmatrix}$ and $K=\begin{pmatrix}0&amp;d\\ -d&amp;0\end{pmatrix}$. Then</p>
 <p>$$
-SK=\begin{pmatrix}-bd&ad\\ -cd&bd\end{pmatrix},\qquad \pi_+(SK)=\begin{pmatrix}-bd&\tfrac12(ad-cd)\\ \tfrac12(ad-cd)&bd\end{pmatrix},\qquad \pi_-(SK)=\begin{pmatrix}0&\tfrac12(ad+cd)\\ -\tfrac12(ad+cd)&0\end{pmatrix},
+SK=\begin{pmatrix}-bd&amp;ad\\ -cd&amp;bd\end{pmatrix},\qquad \pi_+(SK)=\begin{pmatrix}-bd&amp;\tfrac12(ad-cd)\\ \tfrac12(ad-cd)&amp;bd\end{pmatrix},\qquad \pi_-(SK)=\begin{pmatrix}0&amp;\tfrac12(ad+cd)\\ -\tfrac12(ad+cd)&amp;0\end{pmatrix},
 $$</p>
 <p>and $K^{2}=-d^{2}\mathrm{I}$, which is symmetric and negative semidefinite for every $d$.</p>
 <p><strong>The two-dimensional case shows the failure of closure in one line.</strong> $SK\in S$ would need $ad=cd$, that is $d(a-c)=0$, which fails for $d\ne0$ and $a\ne c$; $SK\in K$ would need $ad=-cd$, that is $d(a+c)=0$, which fails for $d\ne0$ and $a\ne-c$. So both inclusions fail on an open set, and the two failures are independent.</p>

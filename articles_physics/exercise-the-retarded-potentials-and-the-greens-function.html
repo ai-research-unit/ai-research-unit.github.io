@@ -172,13 +172,13 @@ and the retarded (future-cone) distribution with the correct normalization is
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{2\pi}\,\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\delta\!\left({r'_{t}}^2 - R^2\right),
 \qquad
-\mathrm{H}_{\mathrm{hvs}}(r'_t) = \begin{cases} 1, & r'_t > 0,\ 0, & r'_t < 0. \end{cases}
+\mathrm{H}_{\mathrm{hvs}}(r'_t) = \begin{cases} 1, &amp; r'_t &gt; 0,\ 0, &amp; r'_t &lt; 0. \end{cases}
 $$
 To convert the invariant delta into a delta of $r'_t - R$ one uses the composition rule $\delta(f(r'_t)) = \sum_i \delta(r'_t - r'_{t,i})/\left|\frac{df}{dr'_t}(r'_{t,i})\right|$ at the roots $r'_{t,i}$ of $f$. For $f(r'_t) = {r'_{t}}^2 - R^2$ the roots are $r'_t = \pm R$, and at the future root the Jacobian is
 $$
 \left|\frac{d}{dr'_t}\left({r'_{t}}^2 - R^2\right)\right|_{r'_t = R} = 2r'_t\Big|_{r'_t=R} = 2R.
 $$
-Therefore, on $r'_t>0$ where only the future root contributes,
+Therefore, on $r'_t&gt;0$ where only the future root contributes,
 $$
 \delta\!\left({r'_{t}}^2 - R^2\right) = \frac{1}{2R}\,\delta\!\left(r'_t - R\right),
 $$
@@ -196,7 +196,7 @@ G(\vec\nu_\Phi,\omega) = \frac{c^2}{c^2 \lvert\vec\nu_\Phi\rvert^{2} - \omega^2}
 G(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \int\frac{d^3\nu_{\Phi}}{(2\pi)^3}\frac{d\omega}{2\pi}\,
 \frac{c^2\,\exp(i\theta_{\mathrm{pwp}})}{c^2 \lvert\vec\nu_\Phi\rvert^{2} - \omega^2},
 $$
-where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $r'_t>0$ (and in the upper half-plane, with no poles, for $r'_t<0$) gives
+where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $r'_t&gt;0$ (and in the upper half-plane, with no poles, for $r'_t&lt;0$) gives
 $$
 \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\theta_{\mathrm{pwt}})}{c^2 \lvert2\pi\vec\nu_\Phi\rvert^{2} - \omega^2}
 = \frac{c}{k}\,\sin(kr'_t)\,\mathrm{H}_{\mathrm{hvs}}(r'_t).
@@ -207,7 +207,7 @@ G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
 = \frac{c}{2\pi^2 R}\int_0^\infty \sin(kR)\,\sin(kr'_t)\,dk
 = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 $$
-using $\int_0^\infty \sin(kR)\sin(kr'_t)\,dk = \frac{\pi}{2}\bigl[\delta(r'_t - R) - \delta(r'_t + R)\bigr]$ and discarding the past-cone term because $r'_t>0$. The Fourier route and the light-cone route agree, coefficient included. The contour computation was also checked numerically: for fixed $k,c,r'_t>0$ the retarded contour reproduces $\frac{c}{k}\sin(kr'_t)$ and the advanced contour gives zero, and conversely for $r'_t<0$.</p>
+using $\int_0^\infty \sin(kR)\sin(kr'_t)\,dk = \frac{\pi}{2}\bigl[\delta(r'_t - R) - \delta(r'_t + R)\bigr]$ and discarding the past-cone term because $r'_t&gt;0$. The Fourier route and the light-cone route agree, coefficient included. The contour computation was also checked numerically: for fixed $k,c,r'_t&gt;0$ the retarded contour reproduces $\frac{c}{k}\sin(kr'_t)$ and the advanced contour gives zero, and conversely for $r'_t&lt;0$.</p>
 <p>The angle is $\theta_{\mathrm{spa}}=2\pi\vec\nu_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
 <p>Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.</p>
 <p>Here $\theta_{\mathrm{pwp}}:=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec\nu_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.</p>
@@ -227,7 +227,7 @@ G_{\mathrm{ret}} - G_{\mathrm{adv}} = \frac{1}{4\pi R}\Bigl[\delta\!\left(r'_t -
 \Box_\Phi\,(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0 .
 $$
 The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box_\Phi$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G_{\mathrm{ret}}\,\Box_\Phi\xi = \int G_{\mathrm{adv}}\,\Box_\Phi\xi = -\xi(0)$ for the Gaussian test function, while $\int (G_{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box_\Phi\xi = 0$.</p>
-<p><strong>(c) Which boundary condition selects which.</strong> The retarded kernel is selected by the <em>causality</em> (outgoing-radiation, Sommerfeld) condition: the field at an event is determined by the sources in its past light cone, and there is no radiation arriving from past null infinity. In the contour language this is the prescription in which both $\omega$-poles are displaced <em>below</em> the real axis, so that the field vanishes for $r'_t$ earlier than the source and is supported on the future cone. The advanced kernel is selected by the time-reversed condition: the field is determined by sources in its future light cone, with no radiation escaping to future null infinity, corresponding to both poles displaced <em>above</em> the real axis and support on the past cone. The Feynman choice, one pole on each side, is the time-ordered combination; it is neither retarded nor advanced, and its relation to the two is treated in the companion article on the Feynman propagator. The two choices and the two contour prescriptions were checked numerically on the mode integral of Problem 2(c): the retarded contour gives support for $r'_t>0$ and the advanced contour for $r'_t<0$, with residuals at the $10^{-4}$ to $10^{-3}$ level set by the finite displacement $\epsilon$.</p>
+<p><strong>(c) Which boundary condition selects which.</strong> The retarded kernel is selected by the <em>causality</em> (outgoing-radiation, Sommerfeld) condition: the field at an event is determined by the sources in its past light cone, and there is no radiation arriving from past null infinity. In the contour language this is the prescription in which both $\omega$-poles are displaced <em>below</em> the real axis, so that the field vanishes for $r'_t$ earlier than the source and is supported on the future cone. The advanced kernel is selected by the time-reversed condition: the field is determined by sources in its future light cone, with no radiation escaping to future null infinity, corresponding to both poles displaced <em>above</em> the real axis and support on the past cone. The Feynman choice, one pole on each side, is the time-ordered combination; it is neither retarded nor advanced, and its relation to the two is treated in the companion article on the Feynman propagator. The two choices and the two contour prescriptions were checked numerically on the mode integral of Problem 2(c): the retarded contour gives support for $r'_t&gt;0$ and the advanced contour for $r'_t&lt;0$, with residuals at the $10^{-4}$ to $10^{-3}$ level set by the finite displacement $\epsilon$.</p>
 <p>The exercise's answer to "why is the physically relevant Green's function the retarded one" is therefore: <em>not because the algebra forces it</em>. The wave operator admits both kernels, and the retarded choice is the statement of a boundary condition on the solution — the same information that selects the outgoing solution among the two solutions of the free wave equation. This is a physical input, and it is the point at which the retarded potential formula is tied to causality.</p>
 <h2 id="problem-4-the-retarded-potentials-from-the-greens-function">Problem 4: The Retarded Potentials from the Green's Function</h2>
 <p><strong>Statement.</strong> (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J_{\Phi}(\vec y,\,r'_t - R)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.</p>
@@ -360,7 +360,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmathk}\vec e_\imath$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2 = -e_t$, $\vec e_{\imath} \vec e_{\jmath} = -\delta_{\imath\jmath}e_t + \epsilon_{\imath\jmath k}\vec e_{\imath}$</td>
 </tr>
 <tr>
 <td>$i$</td>

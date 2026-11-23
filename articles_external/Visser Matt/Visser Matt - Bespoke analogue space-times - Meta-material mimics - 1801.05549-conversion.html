@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke analogue space-times: Meta-material mimics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bespoke analogue space-times - Meta-material mimics - 1801.05549.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bespoke-analogue-space-times-meta-material-mimics"><strong>Bespoke analogue space-times: Meta-material mimics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1801.05549v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 17 January 2018 (LATEX-ed 18 January 2018)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bespoke analogue space-times - Meta-material mimics - 1801.05549-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bespoke analogue space-times - Meta-material mimics - 1801.05549.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bespoke analogue space-times - Meta-material mimics - 1801.05549.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper turns a general-relativistic metric into a recipe for a laboratory medium. Starting from the constitutive relations of a meta-material with permittivity, permeability, and magneto-electric tensors, it writes down the compatibility conditions under which the medium is exactly equivalent, at the level of wave optics, to propagation in a Lorentzian metric. It then takes the standard black-hole spacetimes — Schwarzschild in curvature, Painlevé–Gullstrand, Kerr–Schild, Gordon, and isotropic coordinates, and Kerr in Kerr–Schild and Doran form — and computes the susceptibility tensors that would mimic each, in Cartesian laboratory coordinates. The abstract reports the main qualitative finding: in static black-hole spacetimes some susceptibility eigenvalues diverge on the horizon, and in stationary ones they diverge on the ergosurface.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-compatibility-condition">The compatibility condition</h3>
+<p>"Modern meta-materials allow one to construct electromagnetic media with almost arbitrary bespoke permittivity, permeability, and magneto-electric tensors. If (and only if) the permittivity, permeability, and magneto-electric tensors satisfy certain stringent compatibility conditions, can the meta-material be fully described (at the wave optics level) in terms of an effective Lorentzian metric — an analogue spacetime." From the introduction: "There is a stringent compatibility condition (linking the permittivity, permeability and magneto-electric tensors) that must be satisfied in order for the analogy to be perfect. (Working within the ray optics approximation is much easier.)"</p>
+<h3 id="why-the-laboratory-frame-simplifies-the-problem">Why the laboratory frame simplifies the problem</h3>
+<p>"Since all laboratories immediately accessible to us are (for all practical purposes) living in flat Minkowski space, this greatly simplifies the analysis." The paper therefore splits space and time explicitly and uses Cartesian coordinates in the laboratory and "quasi-Cartesian" coordinates in the spacetime being mimicked.</p>
+<h3 id="the-result-for-static-holes">The result for static holes</h3>
+<p>The paper computes the susceptibility tensors for the Schwarzschild metric in five coordinate systems. The abstract states the pattern: "In static black hole spacetimes (Schwarzschild and the like) certain eigenvalues of the susceptibility tensors will be seen to diverge on the horizon."</p>
+<h3 id="the-result-for-rotating-holes">The result for rotating holes</h3>
+<p>"In stationary black hole spacetimes (Kerr and the like) certain eigenvalues of the susceptibility tensors will be seen to diverge on the ergo-surface." The Kerr cases are worked in Kerr–Schild and Doran coordinates, where the metric is written in a form suited to a flat laboratory slicing.</p>
+<h3 id="what-the-construction-is-for">What the construction is for</h3>
+<p>"An analysis along these lines is absolutely necessary if one wants to use electromagnetic analogue space-times to mimic any specific general relativity spacetime — once one is presented with the metric of interest in some specific quasi-Cartesian coordinate system, the analysis of this article provides the necessary framework for calculating the appropriate laboratory setup."</p>
+<h3 id="the-limitations">The limitations</h3>
+<p>The wave-optics equivalence holds only when the compatibility conditions are met, and the divergence on the horizon or ergosurface means the required material parameters are not finite there. The paper also notes a practical restriction: "If one refuses to use Cartesian coordinates in the laboratory, then one can still make considerable progress, but technical aspects of the calculation are significantly messier." The discussion leaves Reissner–Nordström and Kerr–Newman to future work: "In principle this process could easily be applied to Reissner–Nordström and Kerr–Newman (or other more complicated) spacetimes."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-medium-is-a-metric-only-under-a-compatibility-condition">1. A medium is a metric only under a compatibility condition</h3>
+<p><strong>The idea.</strong> Arbitrary constitutive tensors do not define a geometry. Only a restricted class does, and the restriction can be written down.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code> starts from the reverse emphasis: the medium is general and the vacuum is its limit, with $c=1/\sqrt{\epsilon\mu}$ supplied locally. That article treats the medium as already geometric. This paper supplies the missing hypothesis — the exact condition the tensors must satisfy before a single effective metric exists — and shows how narrow it is. Without it, the corpus's "medium is the general case" claim has no stated domain of validity.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, the section that fixes the medium parameters.</p>
+<p><strong>What stands in the way.</strong> None in principle; the compatibility condition is a finite algebraic statement that the article can state in its own notation. Ranked first, because it closes a hypothesis the article currently leaves implicit.</p>
+<h3 id="2-the-horizon-appears-as-a-divergence">2. The horizon appears as a divergence</h3>
+<p><strong>The idea.</strong> In the laboratory description, a horizon is not a place light cannot leave. It is a place where a material parameter blows up.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that a horizon is a global causal notion the algebra cannot reach. An analogue medium gives a case where the same locus is detected by a pointwise divergence of constitutive coefficients. That does not give the framework a causal horizon, and the article should say so, but it does give a precise example of how much of the horizon can be seen pointwise: the location yes, the causal meaning no.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the ledger of three kinds of horizon.</p>
+<p><strong>What stands in the way.</strong> The divergence is a property of the chosen medium, not of the metric, so the example must be presented as an analogue and nothing more. Ranked second.</p>
+<h3 id="3-a-metric-as-an-engineering-specification">3. A metric as an engineering specification</h3>
+<p><strong>The idea.</strong> Each entry in the paper is a table of material parameters that a laboratory would have to realise. The geometry is an input, and the output is a buildable medium.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> concludes that no framework quantity is fixed by the algebra. This paper is the clearest available demonstration of the opposite relation between geometry and matter: the metric is imposed and the medium is computed. It makes concrete why "carrying a metric" is not "predicting a metric", the distinction the empirical-status article depends on.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of framework-specific quantities.</p>
+<p><strong>What stands in the way.</strong> The example is classical and electromagnetic, so it illustrates the logic rather than testing the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

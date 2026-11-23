@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painlevé–Gullstrand form of the Lense–Thirring spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand form of the Lense-Thirring spacetime - 2006.14258.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="painlevegullstrand-form-of-the-lensethirring-spacetime"><strong>Painlevé–Gullstrand form of the Lense–Thirring spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2006.14258v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Thomas Berry, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 October 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Painleve-Gullstrand form of the Lense-Thirring spacetime - 2006.14258-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand form of the Lense-Thirring spacetime - 2006.14258.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-and-metric-conventions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Painleve-Gullstrand form of the Lense-Thirring spacetime - 2006.14258.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The Lense–Thirring metric is a slow-rotation approximation, not an exact solution. The authors pick a variant chosen for simplicity and recast it in Painlevé–Gullstrand form. This gives unit lapse, flat spatial slices, a simple tetrad, and simple curvature tensors. They verify that the variant is Petrov type I and compute its curvature invariants and horizons. They note that replacing the mass by a function of radius accommodates dark matter halos.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"The standard Lense–Thirring metric is a century-old slow-rotation large-distance approximation to the gravitational field outside a rotating massive body, depending only on the total mass and angular momentum of the source."</p>
+<h3 id="what-they-build">What they build</h3>
+<p>"we shall construct an explicit unit-lapse Painlevé–Gullstrand variant of the Lense–Thirring spacetime, that has flat spatial slices, a very simple and physically intuitive tetrad, and extremely simple curvature tensors."</p>
+<h3 id="the-algebraic-type">The algebraic type</h3>
+<p>"We shall verify that this variant of the Lense–Thirring spacetime is Petrov type I, (so it is not algebraically special)"</p>
+<h3 id="the-metric">The metric</h3>
+<p>$$ds^2=-dt^2+\left(dr+\sqrt{2m/r}\,dt\right)^2+r^2\left(d\theta^2+\sin^2\theta\left(d\phi-\frac{2J}{r^3}dt\right)^2\right) \qquad (paper\ 11.1)$$</p>
+<h3 id="the-extension">The extension</h3>
+<p>"with the slight generalization $m\to m(r)$ ... one can accommodate spherically symmetric dark matter halos, so one has a plausible approximation to the gravitational fields of spiral galaxies."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"this specific Painlevé–Gullstrand variant of the Lense–Thirring spacetime is rather easy to work with."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-approximation-in-a-good-frame">1. An approximation in a good frame</h3>
+<p><strong>The idea.</strong> A slow-rotation metric becomes simple when written with unit lapse and flat slices.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> says the frame is a choice. Here the choice makes an approximation usable, which is a practical argument the target's abstract discussion does not give.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on choosing a frame.</p>
+<p><strong>What stands in the way.</strong> The frame is chosen for tractability. Ranked first, because it is a worked payoff of a frame choice.</p>
+<h3 id="2-type-i-is-not-special">2. Type I is not special</h3>
+<p><strong>The idea.</strong> Rotating solutions need not be algebraically special.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> uses algebraic classifications implicitly. A concrete type-I example with simple invariants is a test case for any such classification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of classification.</p>
+<p><strong>What stands in the way.</strong> The example is approximate. Ranked second.</p>
+<h3 id="3-mass-as-a-function-of-radius">3. Mass as a function of radius</h3>
+<p><strong>The idea.</strong> Letting the mass vary reproduces a galactic halo.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> needs a source. A radius-dependent mass is a source profile that fits data, which is a concrete candidate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of sources.</p>
+<p><strong>What stands in the way.</strong> The profile is for a galaxy, not a universe. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

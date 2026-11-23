@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Wave Equation and Linear Meson Trajectories — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Wave Equation and Linear Meson Trajectories.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-wave-equation-and-linear-meson-trajectories"><strong>Relativistic Wave Equation and Linear Meson Trajectories</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>42</strong> (1969) 423, No. 2; dated 20 May 1969</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Wave Equation and Linear Meson Trajectories-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Wave Equation and Linear Meson Trajectories.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Wave Equation and Linear Meson Trajectories.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Presents a bilocal wave equation on degenerate representations of the dynamical group $SU(3,1)$ whose timelike solutions have the exact linear spectrum $m^{2}=\kappa^{2}(N-\tfrac12)$ with $N=S+2w$, giving parallel linear trajectories with daughters spaced by $\Delta S=2$. The leading trajectory is identified with $\rho$–$A_2$ under exchange degeneracy, which fixes $\kappa^{2}=2m_\rho^{2}$ and the intercept, and the lowest state's wave function gives a dipole form factor $(1-t/2m_\rho^{2})^{-2}$. Two variants are sketched, one with spacing $\Delta S=1$ and one using a Majorana–Kemmer product.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-equation-and-its-spectrum">The equation and its spectrum</h3>
+<p>"A particle with relativistic internal mo- tion is described by an infinite-component wave equation associated with a relativistic dynamical group and leads to a mass-spin spectrum corresponding to a family of Regge trajectories.!) ,2) In this note we present this type of wave equation which corre- 424 Letters to the Editor sponds to linear meson trajectories similar trajectories" daughters "spaced by to those implied by the Veneziano theory.3) .:1S=2 (see Fig. 1)."</p>
+<p>"We take a relativistic oscillator model described by a biloeal wave function ¢(XfJ., s u") obeying the wave equation 3 Downloaded from academic."$$ \big[(P_\mu P^{\mu}-\kappa^{2})-\tfrac{i}{2}\kappa\,P^{\mu}P^{\nu}\{a_\mu^{\dagger},a_\nu\}\big]\phi=0, $$" for the latter. (i) We take a relativistic oscillator model described by a biloeal wave function ¢(XfJ., s u ") obeying the wave equation 3 Downloaded from academic.oup.com/ptp/article/42/2/423/1841766 by guest on 12 November 2026 [(PfJ.p,y -.iCdP" Pv{a "t, av}+ J¢=o, (1) 2 where p"=iajaX "is the four-momentum, while a" and afJ.t are oscillator variables corresponding to the relative coordinate I "2 x"=loufJ. and are mutual hermitian con- jugates obeying [afJ., avt ] = _gfJ. v. Since (1) o is based on degenerate representations of the dynamical group SU(3, 1), we can se- Fig. 1. lect a particular irreducible representation w=O runs over 1-,2+,3-, ." $a_\mu^{\dagger}a^{\mu}\phi=0$.</p>
+<p>$SU(3,1)$ contains the internal Lorentz group $L_{\text{in}}$ as subgroup whose generators $S_{\mu\nu}$ define the spin tensor. It is readily shown that timelike solutions of (1) under (2) have the mass spectrum $m^{2}=\kappa^{2}(N-\tfrac12)$, where the principal quantum number $N$ is the Casimir operator of the compact subgroup $SU(3)$ of the $SU(3,1)$. This is written as $N=S+2w$ where $S$ is the spin with integer eigenvalues while $w$ is the radial quantum number running over $w=0,1,2,\dots$. The intrinsic parity is given by $P=(-1)^{N}=(-1)^{S}$. The spectrum is thus</p>
+<p>$$
+m^{2}=\kappa^{2}\big(S+2w-\tfrac12\big),\qquad S+2w-\tfrac12&gt;0,
+$$</p>
+<p>"ince (1) o is based on degenerate representations of the dynamical group SU(3, 1), we can se- Fig. 1. lect a particular irreducible representation w=O runs over 1-,2+,3-, ... , and fits the space by imposing*) P-A2 trajectory with exchange degeneracy, a}a"¢=O. (2) and with this identification we get /C 2=2m/ SU(3, 1) contains the internal Lorentz group and m(A 2)2=3m/."A footnote records that the empirical relation was pointed out earlier by the same author." pour the Casimir operator of the compact sub- wave function gives the "dipole" form fac- group SU(3) of the SU(3, 1). This is tor proportional to (1-tj2m/)-2. The written as N=S+2w where S is the spin first daughter trajectory w=l begins with with integer eigenvalues while w "</p>
+<p>"us note that our model allows spacelike solu- tions with the discrete spectrum m 2 = _/C2 m2=/C 2(S+2w-!), S+2w-!&gt;0 (3) x(N'+-D&lt;O, N'=0,1,2,···, and also that with natural intrinsic parity, and corre- (1) can be reduced to coupled second-order sponds to linearly rising"</p>
+<h3 id="the-two-variants">The two variants</h3>
+<p>"und by a Hooke potential That is, one takes the wave function which gives a fourth order wave equation of this type. is the base of the direct product of a uni- Further analYSIS of such wave equation is made tary and Dirac representations of SO (4, 2) in C." and sets a corresponding equation: "If restricted to integer spin representations, and Wiksell, Stockholm, 1968). this gives the trajectories m 2=tc 2(8+w-t), 3) G. Veneziano, Nuovo Cim. 57A (1968),190. 8=1,2, ... , and m 2=tc2(8+w+t), 8=0,1, 4) Empirically this relation was first pointed ."</p>
+<p>The second is the one based on the direct product of the Majorana and Kemmer's representations of $L_{\text{in}}$, with the wave equation</p>
+<p>$$
+\big[(P_\rho P^{\rho})S_{\mu}\beta_{\nu}-\kappa^{2}v_{\mu}\beta_{\nu}\big]\phi=0,
+$$</p>
+<p>"tl -tc 2v tl P,J c/J=O , (5) where [3tlt=" l/oS tl "l/o(" l/o=2(SO)2-1). Stl and 8 K tlv =i[Stl, SVJ generate non-unitary repre- sentation of 80(3,2), while vtl=vtlt and 8 M tlv =i[v tl , vVJ generate its unitary repre- sentation. The Kemmer spin 8 K has eigen- values 0 and 1, while the Majorana spin 8 M satisfies the identity 8 M +t=vO. The Majorana space contains two irreducible representations of Lin but we take only the one labelled (so, c) = (0, t), so that 8 M =0, 1,2, .... The spin is 8=8M +1, 8 M -1 and doubly-degenerate 8 M • The intrinsic parity can be defined as P= - (_l)SM."I/o. The timelike solutions give the mass spectrum m 2=/C2v O=tc 2(8 M +t). Thus the case of parallel coupling between 8=1 and 8 M gives the trajectory m2=/C 2(8-t), 8 P =1-, 2+, 3-, ... , which is again the P-A2 traj- ectory. Below this there are two more trajectories. Note also that the adjoining of Kemmer representation allows the def- inition of antiparticles. More detailed discussions will be given shortly. 1) For a systematic exposition of theory, see T."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-regge-slope-is-fixed-by-the-lowest-vector-meson-and-daughters-are-spaced-by-two-units-of-spin">1. The Regge slope is fixed by the lowest vector meson, and daughters are spaced by two units of spin</h3>
+<p><strong>The idea.</strong> A group-theoretic equation yields $m^{2}=\kappa^{2}(S+2w-\tfrac12)$ exactly. Identifying $w=0$ with $\rho$–$A_2$ under exchange degeneracy gives $\kappa^{2}=2m_\rho^{2}$ and $m(A_2)^{2}=3m_\rho^{2}$ as consequences, not fits. The daughter spacing $\Delta S=2$ is a property of the representation: $N=S+2w$. </p>
+<p><strong>What it would add.</strong> A derivation of two numbers the corpus quotes. <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) asks which quantities a spectrum fixes; here the answer is that the representation fixes both the slope and the daughter spacing, and the only empirical input is $m_\rho$. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) predicts ratios from degrees; this predicts the trajectory structure from an index relation, and the two schemes can be compared on the same states. </p>
+<p><strong>Where it lands.</strong> §<em>The Spectrum</em>, as the trajectory scheme. </p>
+<p><strong>What stands in the way.</strong> The identification of $w=0$ with $\rho$–$A_2$ is an input, so $\kappa$ is determined by data; the prediction is the <em>shape</em> — spacing two, natural parity, the $0^+$ daughter at the $A_2$ mass — and not the scale. </p>
+<h3 id="2-an-exact-dipole-form-factor-from-the-lowest-wave-function">2. An exact dipole form factor from the lowest wave function</h3>
+<p><strong>The idea.</strong> The ground-state wave function, when the internal coordinate is integrated, gives a form factor exactly of dipole shape, $(1-t/2m_\rho^{2})^{-2}$ — the shape usually fitted to nucleon data and usually attributed to a superposition of vector mesons. </p>
+<p><strong>What it would add.</strong> A structural origin for a fitted shape. <em>The Anomalous Magnetic Moment in Biquaternionic Form</em> (<code>articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.md</code>) computes the vertex in §<em>The Vertex Function and the Form Factors</em> and separates the form factors algebraically; here the shape follows from the internal wave function's spread, which is a different mechanism producing the same functional form. </p>
+<p><strong>Where it lands.</strong> §<em>The Vertex Function and the Form Factors</em>, as the composite alternative. </p>
+<p><strong>What stands in the way.</strong> The result is asserted —"it is shown" — with the calculation deferred to a longer paper, and the dipole shape with the $\rho$ mass built in is close to what vector dominance assumes, so the agreement is not independent evidence.</p>
+<h3 id="3-space-like-solutions-with-a-discrete-spectrum">3. Space-like solutions with a discrete spectrum</h3>
+<p><strong>The idea.</strong> The same equation has timelike solutions $m^{2}=\kappa^{2}(N-\tfrac12)$ and spacelike solutions $m^{2}=-\kappa^{2}(N'+\tfrac12)$, both discrete. The tachyonic sector is not a continuum but a mirror ladder with half-integer offset.</p>
+<p><strong>What it would add.</strong> A concrete structure for the unacceptable sector the folder keeps encountering. <em>The Massless Regime</em> (<code>articles_physics/the-massless-regime.md</code>) treats masslessness as a boundary; here the spacelike side is populated by a ladder and the massless point sits between two discrete series, which is a sharper picture than space-like solutions may occur.</p>
+<p><strong>Where it lands.</strong> §<em>The Massless Case</em>, as the discrete-sector caveat.</p>
+<p><strong>What stands in the way.</strong> Takabayasi reports the spacelike spectrum without excluding it, and the model is offered as a suggestion about Veneziano theory rather than as a physical theory.</p>
+<h3 id="4-choosing-the-representation-is-a-physical-act">4. Choosing the representation is a physical act</h3>
+<p><strong>The idea.</strong> The equation is written on degenerate representations of $SU(3,1)$, so a further condition $a_\mu^{\dagger}a^{\mu}\phi=0$ is needed to pick one irreducible space. The spectrum then follows from the chosen representation, not from the equation alone.</p>
+<p><strong>What it would add.</strong> A worked case of the equation does not determine the theory; the pair does. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) counts what each carrier can hold; here the carrier is fixed and the <em>sector</em> is chosen by hand, so the counting is one level down from what that article does.</p>
+<p><strong>Where it lands.</strong> §<em>What a Module Can Carry</em>, as the sector-selection step.</p>
+<p><strong>What stands in the way.</strong> No principle is given for preferring one irreducible space over another beyond producing the desired spectrum.</p>
+<p>The remainder, one line each. That the Kemmer–Majorana product version introduces antiparticles where the bilocal version has none is a structural gain worth recording. That the $\Delta S=1$ variant comes from an $SO(4,2)$ product ties this letter to the conformal group rather than to the symplectic one.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

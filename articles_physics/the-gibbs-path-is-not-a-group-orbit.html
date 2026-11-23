@@ -88,7 +88,7 @@
 <p>Two conventions carry weight. The projected map is the congruence followed by normalisation, $\mathrm{Rp}_{\tilde U}(\vec s)=\mathrm{Vec}\bigl(\tilde U\tilde{Ϛ}_{\Psi}(\vec s)\tilde U^{*}\bigr)/\mathrm{Sc}\bigl(\tilde U\tilde{Ϛ}_{\Psi}(\vec s)\tilde U^{*}\bigr)$, and it is the map that acts on the state space. The sample value of the Hamiltonian magnitude is $\lvert\vec h_\Psi\rvert=1.7$ wherever a table needs one; every formula is homogeneous in it.</p>
 <h2 id="the-path">The Path</h2>
 <h3 id="the-gibbs-family-as-a-curve">The Gibbs family as a curve</h3>
-<p>The family over $\beta$ is a straight segment through the centre of the ball. With the axis read off the Hamiltonian, $\vec s_{\Psi}(\beta)=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, and the only thing that changes with $\beta$ is the radius. At $\beta=0$ the state is the centre, the maximally mixed state; as $\beta\to\infty$ it approaches the pole $-\vec u_\Psi$; for $\beta<0$ it approaches $+\vec u_\Psi$ and the populations are inverted. The curve is a diameter and the two ends of the diameter are the two poles.</p>
+<p>The family over $\beta$ is a straight segment through the centre of the ball. With the axis read off the Hamiltonian, $\vec s_{\Psi}(\beta)=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, and the only thing that changes with $\beta$ is the radius. At $\beta=0$ the state is the centre, the maximally mixed state; as $\beta\to\infty$ it approaches the pole $-\vec u_\Psi$; for $\beta&lt;0$ it approaches $+\vec u_\Psi$ and the populations are inverted. The curve is a diameter and the two ends of the diameter are the two poles.</p>
 <p>Every thermodynamic quantity is a function of the one parameter. The radius is $r=\tanh(\beta\lvert\vec h_\Psi\rvert)$, the linear entropy is $N=\tfrac14(1-r^{2})=\tfrac14\operatorname{sech}^{2}(\beta\lvert\vec h_\Psi\rvert)$, and the spectral entropy is a function of $N$. Nothing else in the state varies, so the path carries one degree of freedom and the whole of the thermodynamics of this family is the thermodynamics of a single number.</p>
 <p>The numbers, for $\lvert\vec h_\Psi\rvert=1.7$.</p>
 <div class="table-scroll"><table>
@@ -222,7 +222,7 @@ is $3.0\times10^{-16}$ for a rotation of $40^\circ$ and $2.9\times10^{-16}$ for 
 <h3 id="the-mixture-channel-in-the-algebra">The mixture channel in the algebra</h3>
 <p>The simplest channel that changes a radius is the mixture with the identity, and it has an exact biquaternion form. For $\digamma_{\mathrm{mix}}\in[0,1]$,
 $$
-\mathcal E_\imath(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
+\mathcal E_{\imath}(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)\,e_t ,
 $$
 which on the slice reads $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$. It is affine by construction, it preserves $2\,\mathrm{Sc}$, and it fixes the centre.</p>
 <p>It is a semigroup, and the law is exact. Composing two members gives $(1-\digamma_{\mathrm{mix},1})(1-\digamma_{\mathrm{mix},2})=1-(\digamma_{\mathrm{mix},1}+\digamma_{\mathrm{mix},2}-\digamma_{\mathrm{mix},1}\digamma_{\mathrm{mix},2})$, which is the parameter of a third member; the numerical check returns $0.0$ and not a small residue, because the identity is algebraic.</p>
@@ -360,7 +360,7 @@ returns $-r_{*}\vec e_z$ for every $p$, verified at $r_{*}=0.3$ and $0.7$. Compl
 <td>the congruence followed by normalisation</td>
 </tr>
 <tr>
-<td>$\mathcal E_\imath$</td>
+<td>$\mathcal E_{\imath}$</td>
 <td>the mixture with the identity, $\vec s\mapsto(1-\digamma_{\mathrm{mix}})\vec s$</td>
 </tr>
 <tr>

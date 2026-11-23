@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photon escape cones, physical and optical metrics, asymptotic and near-horizon physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Photon escape cones, physical and optical metrics, asymptotic and near-horizon…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="photon-escape-cones-physical-and-optical-metrics-asymptotic-and-near-horizon-physics"><strong>Photon escape cones, physical and optical metrics, asymptotic and near-horizon physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2308.13766v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joshua Baines, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 August 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Photon escape cones, physical and optical metrics, asymptotic and near-horizon physics - 2308.13766-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Photon escape cones, physical and optical metrics, asymptotic and near-horizon physics - 2308.13766.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Photon escape cones, physical and optical metrics, asymptotic and near-horizon physics - 2308.13766.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors study escape cones in any static spherically symmetric spacetime. They separate the physical metric from the optical metric, in which light travels on straight lines in a curved space. Photon spheres turn out to be throats of the optical metric, not of the physical one. The solid angle of the escape cone is then written from the capture cross section, the area of the sphere, and the norm of the timelike Killing vector. Near a horizon it relates to the surface gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"We consider the explicit analytic behaviour of photon escape cones in generic static spherically symmetric spacetimes, emphasizing the interplay between the physical spacetime metric and the optical metric"</p>
+<h3 id="the-key-identification">The key identification</h3>
+<p>"The circular photon orbits (photon spheres) are shown to be given by wormhole throats in the optical metric, (not the physical metric)"</p>
+<h3 id="the-formula">The formula</h3>
+<p>"the escape cone solid angle is easily calculable in terms of the capture cross section $\sigma_{\mathrm{capture}}$, the area of the spherical 2-surfaces, and the norm of the timelike Killing vector."</p>
+<h3 id="the-result-for-one-photon-sphere">The result for one photon sphere</h3>
+<p>$$\Delta\Omega_* = 2\pi\left[1+\mathrm{sign}(r_*-r_\gamma)\sqrt{1-\frac{H(r_\gamma)}{H(r_*)}}\right] \qquad (paper\ 8.1)$$</p>
+<h3 id="near-the-horizon">Near the horizon</h3>
+<p>"for near-horizon photon emission the escape cone solid angle can be related to the surface gravity $\kappa_H$."</p>
+<h3 id="the-examples">The examples</h3>
+<p>"We provide a number of illustrative examples, involving both black holes and wormholes, including situations with multiple photon spheres."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-metric-for-light-alone">1. A metric for light alone</h3>
+<p><strong>The idea.</strong> Dividing by the lapse gives a second metric in which the photon problem is purely spatial.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> uses the physical cone. An optical metric is a different, simpler object for the same physics, and the target does not have it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the discussion of the cone.</p>
+<p><strong>What stands in the way.</strong> The optical metric works only for static spacetimes. Ranked first, because it is a large simplification.</p>
+<h3 id="2-photon-spheres-are-throats">2. Photon spheres are throats</h3>
+<p><strong>The idea.</strong> In the optical metric a photon sphere is a wormhole throat.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> discusses horizon surfaces. Identifying an orbit surface with a throat of another metric links horizons, orbits, and wormholes in one picture.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of surfaces.</p>
+<p><strong>What stands in the way.</strong> The identification is a change of metric. Ranked second.</p>
+<h3 id="3-solid-angle-from-surface-gravity">3. Solid angle from surface gravity</h3>
+<p><strong>The idea.</strong> Near a horizon the escape cone is fixed by the surface gravity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> uses surface gravity for temperature. The same quantity fixing an optical angle is a second role for it, which the target does not mention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, in the discussion of surface gravity.</p>
+<p><strong>What stands in the way.</strong> The relation holds near the horizon only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

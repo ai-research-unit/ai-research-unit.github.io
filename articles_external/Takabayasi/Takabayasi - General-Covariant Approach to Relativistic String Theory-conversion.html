@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General-Covariant Approach to Relativistic String Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - General-Covariant Approach to Relativistic String Theory.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-covariant-approach-to-relativistic-string-theory"><strong>General-Covariant Approach to Relativistic String Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>52</strong> (1974) 1910, No. 6; received 24 June 1974</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - General-Covariant Approach to Relativistic String Theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - General-Covariant Approach to Relativistic String Theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - General-Covariant Approach to Relativistic String Theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Writes the geometric string in tensor language covariant under <em>general</em> transformations of the two parameters, and argues the machinery is worth its weight: it separates observable from non-observable quantities automatically, clarifies conformal invariance, static solutions and the single-time formalism, and supports an extension in which each point of the string is an orthogonal triad able to rotate and dilate, giving a string with charge distributed along it. The analogy with general relativity is drawn — and then sharply distinguished. Here general covariance comes from the definition of the model, not from gravitation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"Theory of 'geometric' string, recently employed as a model of hadrons, is represented in a form covariant under general transformation of parameters ('coordinates') by the aid of tensor analysis. It is shown that this approach is essentially simple and transparent and works to clarify subtle points in the relativistic kinematics and mechanics of the geometric string. The method is applied to the treatment of conformal invariance, 'static solutions' and single-time formalism. Relativistic string with intrinsic rotational degrees is presented, also on the basis of the general-covariant approach. This new model allows a charge distribution along the string. Analogy of the 'general-covariant' string theory to general relativity as well as its distinction therefrom is explained."</p>
+<h3 id="why-bother">Why bother</h3>
+<p>"However, it has been felt that a full development of the machinery of 'general-covariant' formalism for string theory would be luxury and extravagance. Nevertheless it is to be recalled that the 'general covariance' in the present case is physically meaningful because it is closely related to the requirement of causality and of the uniqueness of physical interpretation of theory at classical level and to the suppression of possible ghost states at quantum-mechanical level of theory. In this paper we carry through a manifestly 'general-covariant' formulation of the 'geometric' string theory to show its real usefulness."</p>
+<p>"In the first place the general-covariant approach is simple in essence and deepens our insight into the structure of string theory. In particular it automatically distinguishes between observable and non-observable quantities and clarifies several subtle aspects inherent in the kinematics of the 'geometric' string model, which is indeed a rather fantastic mechanical object."</p>
+<h3 id="the-string-as-a-two-dimensional-geometry">The string as a two-dimensional geometry</h3>
+<p>"Any motion of a string sweeps a two-dimensional curved surface (" world sheet "), embedded in the four-dimensionaL physical Mink ow ski space. We re- present it as x" = x "cr.\ r,o) (.a= 1, 2, 3, 0) with the aid of two parameters (" coordinates ") r, 1 and r,o, where the former corresponds to spacelike and the la~ter to timelike extension of the world sheet. For. definiteness we consider in this paper a finite open string so that r, 1 runs over a finite domain [r.A\ C'B1], while r,o over (- oo, oo ). The motions· of both ends of the string are in any case identifiable, being described by the world lines x"(r.A\ r,o) and x "(r.B\ r, 0), which constitute boundaries of the world strip. In so far as (r;.\ r,o) are any"</p>
+<h3 id="the-analogy-and-the-difference">The analogy, and the difference</h3>
+<p>"We have set up the foundation of the tensor calculus applying to the kinematics of relativistic string. It has analogy to the case of general relativity. The counterparts to the 4-dimensional coordinates and the metric tensor $g^{\mu\nu}$, $g_{\mu\nu}$ of general relativity are here the 2-dimensional coordinates $(\xi^{1},\xi^{0})$ and the metric tensor $G_{ab}$ and $e_{ab}$, respectively. ... The two-dimensionality of our curved space and the finiteness of the domain of $\xi^{1}$ are evident distinctions from general relativity."</p>
+<p>"resses the dual meaning of di: (2 · 9a) indicates that ds 2 is the · Minkowski line element invariant under Lorentz (Poincare) transformation, while (2·9b) indicates .that ds 2 defines at the same time the invariant line element in the two-dimensional curved space for which Gab represents the metric tensor. (The invariance of (2·9b) under (2·1 1) is manifest in its ."</p>
+<p>"The covariant vector $u_a^{\ \mu}$ with its contravariant counterpart $u^{a\mu}$ are analogous to the vierbein in general relativity ... However, while the index $\mu$ runs over $1,2,3,0$, the index $a$ runs over $a=1,0$ only ('zweibein'), and this is just the reason why $H^{\mu\nu}$ of (2·21) is unequal to $\eta^{\mu\nu}$ and physically important."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"In this paper we shall often draw the analogy to general relativity, but it should be kept in mind that the physical ground" general covariance "in the present theory is different from that in general, relativity, because here the general covariance. has its origin in the definition of the model and has nothing to do with gravitation. It is n~t at all a rarity that physically different theories invoke similar mathematical set-up. § 2. Kinematics"</p>
+<h3 id="the-extension">The extension</h3>
+<p>"in § 6 we present, basing on lhis formalism, an extension of the original string theory, in such a way that each constituent of the string shall be an"'orthogonal triad "capable of rotation and isotropic dilatation, instead of a simple point."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-covariance-as-the-machinery-that-separates-observable-from-unobservable">1. Covariance as the machinery that separates observable from unobservable</h3>
+<p><strong>The idea.</strong> Writing the string in general-covariant form does more than make the equations look right: it identifies which quantities are invariant and hence observable, and which are parameter artefacts. The selection is automatic, not a matter of judgement.</p>
+<p><strong>What it would add.</strong> A criterion of observability that does not rely on physical intuition about which quantities "look real". <em>The Einstein Field Equations in the Biquaternion Framework: the Linearised Dictionary and the Non-Linear Gap</em> (<code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>) sorts quantities into a dictionary between formalisms; here the sorting is between observable and gauge, which is a different split and one the corpus's discussions of gauge fixings could use. </p>
+<p><strong>Where it lands.</strong> §<em>The Dictionary</em>, as the observable/non-observable split. </p>
+<p><strong>What stands in the way.</strong> The claim is made at the level of the tensor calculus; no explicit list of observables is given, so the reader must construct it. </p>
+<h3 id="2-the-same-mathematics-a-different-physical-origin">2. The same mathematics, a different physical origin</h3>
+<p><strong>The idea.</strong> String theory and general relativity share the tensor calculus, and the paper insists the resemblance is superficial: in relativity the covariance arises from the equivalence of frames in a gravitational theory, in the string it arises from the arbitrariness of the labels $\xi^{a}$. The author's remark that "n. It is n~t at all a rarity that physically different theories invoke similar mathematical set-up. § 2. Kinematics" is a methodological point in its own right. </p>
+<p><strong>What it would add.</strong> A caution against inferring physics from formalism, which the corpus's biquaternion work needs constantly. <em>The Einstein Field Equations in the Biquaternion Framework</em> is a case where a shared algebra invites a shared reading; this paper gives the counter-principle from the string side. </p>
+<p><strong>Where it lands.</strong> §<em>The Non-Linear Gap</em> of that article, as the caution. </p>
+<p><strong>What stands in the way.</strong> The principle is stated; the corpus would need the specific argument for which similarities are meaningful, which this paper does not supply. </p>
+<h3 id="3-a-zweibein-and-the-reason-math24">3. A "zweibein" and the reason $H^{\mu\nu}\neq\eta^{\mu\nu}$</h3>
+<p><strong>The idea.</strong> Because the index $a$ runs over two values only, the induced tensor $H^{\mu\nu}$ is not the Minkowski metric. The deficit is physical: it is the projection onto the two directions the string actually spans, and it carries the string's dynamics. </p>
+<p><strong>What it would add.</strong> A concrete place where a "vielbein" with too few legs produces physics rather than an inconsistency. <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (<code>articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.md</code>) uses a full four-leg frame; the zweibein case shows the degenerate version and what the degeneracy buys.</p>
+<p><strong>Where it lands.</strong> §<em>The Module</em>, as the degenerate frame.</p>
+<p><strong>What stands in the way.</strong> The construction is specific to the worldsheet; the general statement about restricted frames is not made.</p>
+<h3 id="4-a-string-whose-points-are-triads-with-charge-along-it">4. A string whose points are triads, with charge along it</h3>
+<p><strong>The idea.</strong> Replace each point of the string by a rotating, dilating triad. Each point then carries internal orientation and size, and a charge distribution along the string becomes possible — the string stops being a featureless line and becomes a medium.</p>
+<p><strong>What it would add.</strong> A model bridging the point-rotator and string pictures, which the folder otherwise keeps apart. The folder's rotator papers and string papers share no objects; here a triad at each $\xi^{1}$ is exactly that bridge, and the charge distribution is the physical payoff.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Theory of Relativistic String and Super-Wave Equation I</em> in this folder, as the internal-degree extension; and for the rotator side, <em>The Spectrum of a Lorentz Rotor</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>).</p>
+<p><strong>What stands in the way.</strong> The extension is presented in outline; its spectrum and quantisation are left for later work.</p>
+<p>The remainder, one line each. That conformal invariance is best seen from the general-covariant side is the paper's method claim. That the single-time formalism is clarified in the same language connects this paper to the many-time discussion in the elastic-continuum paper of the same folder.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

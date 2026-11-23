@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pollen and the Electron: A Study in Randomness — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - The pollen and the electron - a study in randomness - 2008.04843.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pollen-and-the-electron-a-study-in-randomness"><strong>The Pollen and the Electron: A Study in Randomness</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2008.04843v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, August 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - The pollen and the electron - a study in randomness - 2008.04843-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - The pollen and the electron - a study in randomness - 2008.04843.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - The pollen and the electron - a study in randomness - 2008.04843.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An essay built on one analogy, worked hard. Brownian motion looks random and is not: it is deterministic molecular motion, coarse-grained. Quantum indeterminism may be the same, with the molecular collisions replaced by Planck-scale matrix dynamics and the grain replaced by an electron. The essay follows the analogy to its consequences — collapse, the Karolyhazy uncertainty relation, a holographic bound, a limit on computation, and the black hole as the ultimate low-energy computer.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-analogy">The analogy</h3>
+<p>"this apparent randomness is a consequence of our ignorance."</p>
+<p>"Randomness is a consequence of coarse-graining, and of not examining the perfectly deterministic motion on molecular resolution scales."</p>
+<h3 id="the-quantum-case">The quantum case</h3>
+<p>"the electron was evolving according to a perfectly deterministic law" and the apparatus is made of particles obeying deterministic quantum mechanics. "Where then does the randomness come from, and where do the probabilities come from? Quantum mechanics has no answer to this question."</p>
+<h3 id="the-evidence-gap">The evidence gap</h3>
+<p>"quantum superposition has been tested in the laboratory only upto objects made of about 25,000 elementary particles. Does superposition hold for objects larger than this?"</p>
+<p>"Even though a chair is made of particles which by themselves obey superposition, the superposition vanishes when a large number of particles are bound together."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"A large collection of STM atoms, together with their dynamics, defines the fundamental universe. This dynamics is deterministic and time-reversible. Predictability is regained at the Planck scale!"</p>
+<p>"as long as the anti-self-adjoint part of the STM Hamiltonian can be neglected, this mean dynamics is the same as that given by quantum theory!"</p>
+<p>"The averaged STM atom is akin to the pollen, and the underlying rapid variations on the Planck scale are akin to the molecules of water which push the pollen around."</p>
+<h3 id="the-consequence-for-measurement">The consequence for measurement</h3>
+<p>"its exact time of arrival at the apparatus, down to Planck scale resolution, is crucial. This arrival time decides which STM atom's hit (from the apparatus) comes into play, and determines which state the electron will evolve to. The randomness of the time of arrival of the electron makes a perfectly deterministic (though non-local) underlying dynamics appear random."</p>
+<h3 id="the-uncertainty-relation">The uncertainty relation</h3>
+<p>"if one were to use a measuring apparatus to measure a length L, there will always be a minimum uncertainty ∆L in this measurement, given by (∆L)3 ∼ L2P L (1) where LP is Planck length." $(\Delta L)^3\sim L_P^2 L$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-measurement-problem-as-a-coarse-graining-problem">1. The measurement problem as a coarse-graining problem</h3>
+<p><strong>The idea.</strong> A <strong>reframing</strong>: the randomness in a Stern–Gerlach outcome is not a postulate and not a branch of the universe. It is what a deterministic dynamics looks like when the resolution is too coarse to see the deciding variable — here, the arrival time at Planck-scale resolution.</p>
+<p><strong>What it would add.</strong> The corpus's measurement articles set up the problem as a conflict between unitary evolution and definite outcomes. This dissolves the conflict by adding a hidden variable that is not hidden in principle, only unresolved. It is a third option between fundamental randomness and many worlds, and it comes with a specific candidate for the deciding variable, which is what most collapse proposals lack.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/decoherence-as-idempotent-projection.md</code>.</p>
+<p><strong>What stands in the way.</strong> The arrival time is not measurable in principle from inside the coarse-grained description, so the account is deterministic but not predictive in the way a hidden-variable theory would need to be.</p>
+<h3 id="2-the-karolyhazy-relation-as-a-measurement-limit-not-a-foam-model">2. The Karolyhazy relation as a measurement limit, not a foam model</h3>
+<p><strong>The idea.</strong> A <strong>derivation</strong>: $(\Delta L)^3\sim L_P^2L$ is what the matrix dynamics implies for any length measurement, and the information content of a region then grows as the area, not the volume.</p>
+<p><strong>What it would add.</strong> The corpus's holography articles treat the area law as a principle to be imposed. This derives it from an uncertainty relation, and the relation is about measurement by a physical apparatus rather than about fluctuations of the metric. That gives the holographic bound a mechanism, and it makes the bound's coefficient a calculable quantity rather than a convention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation of the uncertainty relation is stated rather than performed; the reader is referred elsewhere for it.</p>
+<h3 id="3-a-universal-bound-on-computation-and-the-black-hole-as-the-computer">3. A universal bound on computation, and the black hole as the computer</h3>
+<p><strong>The idea.</strong> A <strong>claim</strong>: the same uncertainty relation bounds the speed of any computer, and a device that probes below the Planck length becomes a black hole and cannot report back. The black hole is then the ultimate low-energy computer, and the electron and the black hole are dual descriptions of one object.</p>
+<p><strong>What it would add.</strong> The corpus has no article on physical limits of computation, and this is a place where its gravity and its information concepts meet with a number attached. The duality between the electron and the black hole is also a concrete instance of the corpus's habit of pairing a particle description with a geometric one — here with a mechanism rather than an analogy.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The bound is derived from the same unproven uncertainty relation, so the whole chain rests on one unverified step.</p>
+<p>The rank: the coarse-graining reframing first, because it addresses the measurement problem directly; the Karolyhazy derivation second, because it makes holography a consequence; the computational bound last, because it inherits both.</p>
+<p>The remaining items in one line each: the GRW proposal of a finite superposition lifetime $T$ shortening as $1/N$ under entanglement, which is the phenomenological model the essay is explaining; the statement that space is what lies between classical bodies, which is the essay's clearest formulation of why classicality and geometry arrive together; and the claim that a large enough entangled system collapses into a black hole, which links localisation to the formation of horizons.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

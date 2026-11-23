@@ -73,9 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The two preceding articles of this Part put an involution on the <strong>elements</strong> of a lattice or a
 relation algebra. This article puts the involution on the <strong>operators</strong> themselves. Given a poset $P$
-with an order-reversing involution $x \mapsto x^{\perp}$, the <strong>conjugate</strong> of a monotone map $f : P \to
-P$ is the map $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$, and the assignment $f \mapsto
-f^{\perp}$ is an <strong>involution of the operator layer</strong>. It is an anti-automorphism for composition,
+with an order-reversing involution $x \mapsto x^{\perp}$, the <strong>conjugate</strong> of a monotone map $f : P \to P$ is the map $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$, and the assignment $f \mapsto f^{\perp}$ is an <strong>involution of the operator layer</strong>. It is an anti-automorphism for composition,
 $(g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}$, and it is order-reversing for the pointwise order; its
 fixed elements are the operators commuting with the involution, and it exchanges left adjoints with
 right adjoints, so it reverses every Galois connection. An order-<strong>preserving</strong> involution $\sigma$
@@ -101,12 +99,9 @@ order-reversing map of the pointwise order:</p>
 \boxed{\;(f^{\perp})^{\perp} = f, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}, \qquad
 f \leq g \Rightarrow g^{\perp} \leq f^{\perp}\;} .
 $$</p>
-<p><strong>Proof.</strong> For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq
-f(x^{\perp})$ and $(f(y^{\perp}))^{\perp} \geq (f(x^{\perp}))^{\perp}$; comparing with the definition
-gives $f^{\perp}(x) \leq f^{\perp}(y)$. The involution is $(f^{\perp})^{\perp} = {}^{\perp} \circ
-{}^{\perp} \circ f \circ {}^{\perp} \circ {}^{\perp} = f$ because ${}^{\perp}$ has order two. For the
-composition, $(g \circ f)^{\perp} = {}^{\perp} \circ g \circ f \circ {}^{\perp} = ({}^{\perp} \circ g
-\circ {}^{\perp}) \circ ({}^{\perp} \circ f \circ {}^{\perp}) = g^{\perp} \circ f^{\perp}$. For the order,
+<p><strong>Proof.</strong> For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq f(x^{\perp})$ and $(f(y^{\perp}))^{\perp} \geq (f(x^{\perp}))^{\perp}$; comparing with the definition
+gives $f^{\perp}(x) \leq f^{\perp}(y)$. The involution is $(f^{\perp})^{\perp} = {}^{\perp} \circ {}^{\perp} \circ f \circ {}^{\perp} \circ {}^{\perp} = f$ because ${}^{\perp}$ has order two. For the
+composition, $(g \circ f)^{\perp} = {}^{\perp} \circ g \circ f \circ {}^{\perp} = ({}^{\perp} \circ g \circ {}^{\perp}) \circ ({}^{\perp} \circ f \circ {}^{\perp}) = g^{\perp} \circ f^{\perp}$. For the order,
 $f \leq g$ pointwise gives $f(x^{\perp}) \leq g(x^{\perp})$, and applying the order-reversing
 ${}^{\perp}$ reverses the inequality, so $g^{\perp}(x) \leq f^{\perp}(x)$ for all $x$.</p>
 <p><strong>Corollary.</strong> The involution $f \mapsto f^{\perp}$ is an automorphism of the order-dual of the operator
@@ -120,8 +115,7 @@ $f^{\perp} = f$.</p>
 <p><strong>Theorem.</strong> A monotone map $f$ is fixed by the conjugation exactly when it commutes with the
 involution, $f \circ {}^{\perp} = {}^{\perp} \circ f$. The fixed part contains the identity and is
 closed under composition; it is the centralizer of the involution in the monoid of monotone maps.</p>
-<p><strong>Proof.</strong> $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} = f$ is exactly $f \circ {}^{\perp} =
-{}^{\perp} \circ f$ after composing with ${}^{\perp}$ on one side and using that it is an involution.
+<p><strong>Proof.</strong> $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} = f$ is exactly $f \circ {}^{\perp} = {}^{\perp} \circ f$ after composing with ${}^{\perp}$ on one side and using that it is an involution.
 The fixed elements of a monoid endomorphism are always a submonoid, which here is the centralizer of
 ${}^{\perp}$.</p>
 <h2 id="the-adjoint-operation">The Adjoint Operation</h2>
@@ -129,8 +123,7 @@ ${}^{\perp}$.</p>
 posets with order-reversing involutions, then $g^{\perp} \dashv f^{\perp}$, that is, the left and the
 right adjoints are exchanged.</p>
 <p><strong>Proof.</strong> The Galois condition is $f(x) \leq y \Leftrightarrow x \leq g(y)$. Replacing $x$ by
-$x^{\perp}$ and $y$ by $y^{\perp}$ and using the involutions, $f(x^{\perp}) \leq y^{\perp} \Leftrightarrow
-x^{\perp} \leq g(y^{\perp})$, which becomes $y \leq f^{\perp}(x) \Leftrightarrow g^{\perp}(y) \leq x$
+$x^{\perp}$ and $y$ by $y^{\perp}$ and using the involutions, $f(x^{\perp}) \leq y^{\perp} \Leftrightarrow x^{\perp} \leq g(y^{\perp})$, which becomes $y \leq f^{\perp}(x) \Leftrightarrow g^{\perp}(y) \leq x$
 after applying ${}^{\perp}$ and rewriting; this is the Galois condition $g^{\perp} \dashv f^{\perp}$.</p>
 <p><strong>Corollary.</strong> The conjugation carries the set of left adjoints bijectively onto the set of right
 adjoints and exchanges the two; it is the <strong>adjoint operation</strong> of the scope, an order-reversing
@@ -143,8 +136,7 @@ involution, in the sense of <em>The Converse as an Adjoint</em>: for an operator
 $F^{\perp}(R) = (F(R^{-1}))^{-1}$. Then $F \mapsto F^{\perp}$ is the conjugation, the fixed operators
 are those with $F(R^{-1}) = F(R)^{-1}$, that is, those commuting with the converse, and the conjugation
 is an anti-automorphism of the composition of operators. The left-composition operator $L_R(S) = R;S$
-of <em>The Converse as an Adjoint</em> has the conjugate $L_R^{\perp}(S) = (L_R(S^{-1}))^{-1} = (R;S^{-1})^{-1}
-= S;R^{-1}$, the right-composition by the converse of $R$; this is computed again in <em>The Converse
+of <em>The Converse as an Adjoint</em> has the conjugate $L_R^{\perp}(S) = (L_R(S^{-1}))^{-1} = (R;S^{-1})^{-1} = S;R^{-1}$, the right-composition by the converse of $R$; this is computed again in <em>The Converse
 Relation as an Adjoint</em>.</p>
 <p><strong>Example (a Boolean lattice).</strong> Let $P$ be a Boolean lattice and let ${}^{\perp}$ be the complement.
 For a monotone map $f$ the conjugate is $f^{\perp}(x) = \neg f(\neg x)$, the <strong>dual</strong> of $f$; the fixed
@@ -168,13 +160,11 @@ relevant to an orthocomplement, and it is the case of the rest of the group.</p>
 <p><strong>Proof.</strong> The fixed equation is the same $f \circ \sigma = \sigma \circ f$; the last assertion records
 that an orthocomplement is order-reversing.</p>
 <h2 id="summary">Summary</h2>
-<p>An order-reversing involution ${}^{\perp}$ of a poset acts on the operators by conjugation, $f^{\perp}
-= {}^{\perp} \circ f \circ {}^{\perp}$; this is an involution of the operator layer, an
+<p>An order-reversing involution ${}^{\perp}$ of a poset acts on the operators by conjugation, $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$; this is an involution of the operator layer, an
 <strong>anti-automorphism</strong> of composition and an <strong>order-reversing</strong> map of the pointwise order, and its
 fixed elements are the operators commuting with ${}^{\perp}$. It exchanges left and right adjoints, so
 it reverses every Galois connection, and it carries left adjoints bijectively onto right adjoints. An
-order-preserving involution $\sigma$ gives instead the conjugation $f \mapsto \sigma \circ f \circ
-\sigma$, an order-preserving automorphism of the operator monoid with the same fixed part.</p>
+order-preserving involution $\sigma$ gives instead the conjugation $f \mapsto \sigma \circ f \circ \sigma$, an order-preserving automorphism of the operator monoid with the same fixed part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

@@ -101,10 +101,10 @@ $$</p>
 <p><strong>The determinant's zero set is the boundary of the group, and the group is open.</strong> $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is the complement of a closed algebraic set, hence open and dense. The function $1/\det$ is analytic on it.</p>
 <p><strong>The characteristic polynomial is analytic in the entries and polynomial in $t$.</strong> Each coefficient $e_k$ is a sum of principal minors, hence a polynomial in the entries, so the map $X\mapsto\chi_X$ into the space of monic polynomials of degree $n$ is polynomial, and in particular continuous. This is the map whose fibres are the unions of similarity classes.</p>
 <h2 id="the-exponential-series">The Exponential Series</h2>
-<p><strong>The series $\exp X=\sum_kX^{k}/k!$ converges for every $X$, and the convergence is locally uniform.</strong> For $\|X\|_{\mathrm{op}}\le R$ the remainder after $N$ terms is bounded by $\sum_{k>N}R^{k}/k!$, which tends to zero uniformly, so the series converges normally on every ball.</p>
+<p><strong>The series $\exp X=\sum_kX^{k}/k!$ converges for every $X$, and the convergence is locally uniform.</strong> For $\|X\|_{\mathrm{op}}\le R$ the remainder after $N$ terms is bounded by $\sum_{k&gt;N}R^{k}/k!$, which tends to zero uniformly, so the series converges normally on every ball.</p>
 <p><strong>The bound $\|\exp X\|\le e^{\|X\|}$ follows from the triangle inequality and the submultiplicativity.</strong> Hence $\exp$ is a continuous map from $M_n(\mathbb{R})$ to $M_n(\mathbb{R})$, and it is analytic, being a normally convergent series of polynomials.</p>
 <p><strong>The exponential is a local diffeomorphism at $0$, with derivative the identity.</strong> The derivative at $0$ in the direction $H$ is the linear term of the series, that is $H$. So by the inverse function theorem there is a neighbourhood $U$ of $0$ and a neighbourhood $V$ of $\mathrm{I}$ such that $\exp:U\to V$ is an analytic diffeomorphism.</p>
-<p><strong>The inverse is the logarithm, and its radius of convergence is one.</strong> For $\|Y-\mathrm{I}\|<1$,</p>
+<p><strong>The inverse is the logarithm, and its radius of convergence is one.</strong> For $\|Y-\mathrm{I}\|&lt;1$,</p>
 <p>$$
 \log Y=\sum_{k\ge1}\frac{(-1)^{k-1}}{k}(Y-\mathrm{I})^{k},
 $$</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>$$
 d(\exp)_X(H)=\sum_{k\ge1}\frac{1}{k!}\sum_{j=0}^{k-1}X^{j}HX^{k-1-j}=e^{X}\sum_{k\ge0}\frac{(-1)^{k}}{(k+1)!}\operatorname{ad}_X^{k}(H),
 $$</p>
-<p>the second form being valid when the series converges, for instance when $\|\operatorname{ad}_X\|<2\pi$. The operator in the middle is the <strong>dexp</strong> of the Lie theory.</p>
+<p>the second form being valid when the series converges, for instance when $\|\operatorname{ad}_X\|&lt;2\pi$. The operator in the middle is the <strong>dexp</strong> of the Lie theory.</p>
 <p><strong>When $X$ and $H$ commute the derivative is $e^{X}H$.</strong> The sum collapses because all the terms $X^{j}HX^{k-1-j}$ are equal to $X^{k-1}H$, and the result is the derivative of the scalar exponential along a commuting direction.</p>
 <p><strong>When $X$ does not commute with $H$ the derivative differs from $e^{X}H$, and the difference is the first interesting term.</strong> At $X=0$ the derivative is $H$; at $X$ small the correction begins with $\tfrac12[X,H]$.</p>
 <p><strong>Consequence: the derivative of $\det\circ\exp$ is the trace.</strong> Composing with $\det$ and using Jacobi's formula at $\mathrm{I}$,</p>
@@ -163,7 +163,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\log Y$</td>
-<td>the series $\sum_k(-1)^{k-1}(Y-\mathrm{I})^{k}/k$, for $\|Y-\mathrm{I}\|<1$</td>
+<td>the series $\sum_k(-1)^{k-1}(Y-\mathrm{I})^{k}/k$, for $\|Y-\mathrm{I}\|&lt;1$</td>
 </tr>
 <tr>
 <td>$f(X)$</td>

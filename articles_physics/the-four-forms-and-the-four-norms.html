@@ -124,7 +124,7 @@
 </table></div>
 <p>The rows are the order of the entry. The four forms first, because they are the objects. Then the count of the four, which is one lemma. Then the inertias, which are what a restriction can change. Then the groups, which are what a form preserves. Then the four cuts, which are what a norm separates. The readings come last, and each names the section of mathematics it rests on.</p>
 <h2 id="notational-conventions">Notational Conventions</h2>
-<p>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_\imath^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$, with $Q_{\imath}\in\mathbb{C}$ and $\mu\in\{t,x,y,z\}$. In the centre–vector split it is $\tilde Q=c+v$, with $c=Q_te_t$ in the centre $\mathbb{B}_C$ and $v=\sum_{\imath\in\{x,y,z\}}Q_\imath\vec e_\imath$ in the vector subspace $\mathbb{B}_V$.</p>
+<p>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_{\imath}^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$, with $Q_{\imath}\in\mathbb{C}$ and $\mu\in\{t,x,y,z\}$. In the centre–vector split it is $\tilde Q=c+v$, with $c=Q_te_t$ in the centre $\mathbb{B}_C$ and $v=\sum_{\imath\in\{x,y,z\}}Q_{\imath}\vec e_{\imath}$ in the vector subspace $\mathbb{B}_V$.</p>
 <p>The three conjugations. The scalar part is $\mathrm{Sc}$, taking the coefficient of $e_t$. The coefficientwise conjugation is $\bar{\cdot}$. The quaternion conjugation is ${}^{\natural}$, with $Q^{\natural}_{\jmath}=\varepsilon_{\jmath} Q_{\jmath}$ and $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so $Q^{*}_{\jmath}=\varepsilon_{\jmath}\overline{Q_{\jmath}}$. Both ${}^{\natural}$ and ${}^{*}$ are involutions, and ${}^{\natural}$ is an algebra automorphism.</p>
 <p>The vector calculus. The vector parts carry the complex bilinear dot product $(\vec Q_1,\vec Q_2)=\sum_{\imath\in\{x,y,z\}} Q_{1k}Q_{2k}$ and the cross product $\vec Q_1\times\vec Q_2$, both complex bilinear, so that</p>
 <p>$$
@@ -159,7 +159,7 @@ $$</p>
 H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
 $$</p>
 <p>the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$, and sesquilinear in the second slot. Its values on the basis are all $+1$, and its realification is of inertia $(8,0)$.</p>
-<p>Its algebraic norm is real and positive definite, $\langle\tilde Q,\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$, and it is the square of the Euclidean norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert^{2}$. It is non-degenerate, and its null set is the origin alone, so it has no cone. It is the only one of the four that is definite at the two equal arguments.</p>
+<p>Its algebraic norm is real and positive definite, $\langle\tilde Q,\tilde Q\rangle_{*}&gt;0$ for $\tilde Q\neq0$, and it is the square of the Euclidean norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert^{2}$. It is non-degenerate, and its null set is the origin alone, so it has no cone. It is the only one of the four that is definite at the two equal arguments.</p>
 <h3 id="the-krein-form">The Krein Form</h3>
 <p>The Krein form, written $\mathrm{Kr}$.</p>
 <p>$$
@@ -324,7 +324,7 @@ $$</p>
 <p>$$
 H(\tilde Q)=\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2},
 $$</p>
-<p>the Hermitian form read at two equal arguments. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of inertia $(8,0)$.</p>
+<p>the Hermitian form read at two equal arguments. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)&gt;0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of inertia $(8,0)$.</p>
 <p>Its null set is the origin alone, so it has no cone. It is the one norm of the four whose square root is the topological norm, and that root gives the distance, the balls, the convergence, the bounded operators and the completion of the space. It is not multiplicative, and the section after next proves that no definite function on this algebra is.</p>
 <h3 id="the-krein-norm">The Krein Norm</h3>
 <p>The Krein norm, written $\mathrm{Kr}$.</p>
@@ -607,8 +607,8 @@ $$</p>
 <h3 id="i7b-the-pairing-is-the-sign-of-the-sector">I.7.b — The Pairing Is the Sign of the Sector</h3>
 <p>Read: the plain form is complex-valued, and on the two sectors it is minus the Hermitian norm and plus it.</p>
 <p>$$
-P(\tilde R_\Phi)=-\bigl({q'_t}^{2}+q_x^{2}+q_y^{2}+q_z^{2}\bigr)<0,\qquad
-P(\tilde H_\Psi)={q_t}^{2}+{q'_x}^{2}+{q'_y}^{2}+{q'_z}^{2}>0.
+P(\tilde R_\Phi)=-\bigl({q'_t}^{2}+q_x^{2}+q_y^{2}+q_z^{2}\bigr)&lt;0,\qquad
+P(\tilde H_\Psi)={q_t}^{2}+{q'_x}^{2}+{q'_y}^{2}+{q'_z}^{2}&gt;0.
 $$</p>
 <p>A pairing may be complex, and a measure must be real. The two forms with the star in the second slot have real values; the two without it have complex values. That division is the second slot and not a convention.</p>
 <p>So the plain form is a flag and not a metric. It says which half an element belongs to, and it measures neither half: it is minus the Euclidean square on the material side and plus it on the informational side. Its sign is the sector, and its modulus is the Hermitian norm.</p>
@@ -620,7 +620,7 @@ $$</p>
 <p>The sharpest warrant for the word <em>flag</em> is one comparison. $P(e_t+\vec e_x)=0$ on an invertible element, and $P(e_t+i\vec e_x)=2$ on a zero divisor. A function that vanishes on an invertible element and does not vanish on a non-invertible one decides no invertibility, so it cannot be the measure of a theory of reversible operations.</p>
 <p>The boundary. The complex cone is not the light cone and not the zero-divisor cone. It is a six-dimensional quadric over the complex numbers that cuts across the invertibles and the non-invertibles alike, and no physical set is its image.</p>
 <h3 id="i7c-the-weight-is-the-only-measure-that-can-be-normalised">I.7.c — The Weight Is the Only Measure That Can Be Normalised</h3>
-<p>Read: the Hermitian norm is positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$, of inertia $(8,0)$ on the real algebra, and its square root is the Euclidean norm.</p>
+<p>Read: the Hermitian norm is positive definite, $H(\tilde Q)&gt;0$ for $\tilde Q\neq0$, of inertia $(8,0)$ on the real algebra, and its square root is the Euclidean norm.</p>
 <p>A probability needs a positive number that can be divided by its total. A state needs a sphere to live on. A limit needs a topology. The three requirements are one requirement, and the Hermitian norm is the only one of the four that meets it: a norm of the coefficient space gives distance, balls, convergence, bounded operators and a completion.</p>
 <p>The measure is blind to the sector, and that blindness is exact. $H$ is the same sum of four squared moduli on both sectors, while the plain form changes sign from one to the other. A material element and an informational element of the same coordinate moduli have the same weight, and the difference between them is a difference of a bilinear form and not of a measure. This is the precise content of the rule that the sesquilinear layer does not carry the sector.</p>
 <p>The form supplies the weight and not the state. A pure state is a minimal Hermitian idempotent, and the weight pairs a state with an observable and returns a number. The state carries an axis and no phase, and the phase is not a value of $H$.</p>

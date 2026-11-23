@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Bilocal and Trilocal Structures — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Bilocal and Trilocal Structures.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-bilocal-and-trilocal-structures"><strong>Relativistic Mechanics of Bilocal and Trilocal Structures</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>57</strong> (1977) 331, No. 1; dated 26 August 1976</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Mechanics of Bilocal and Trilocal Structures-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Bilocal and Trilocal Structures.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Bilocal and Trilocal Structures.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A two-page letter giving the Lagrangian for the bilocal theory and extending it to three points. The invariance $X_\mu\to X_\mu+\lambda\xi_\mu$ does the work: the Lagrangian depends on $X$ only through $X\cdot\xi$, and the primary constraints follow. The trilocal case uses two relative vectors and a Lagrangian built from the area of the triangle they span, so the binding potential is proportional to the squared area. Two classes of solution are given — a rigidly rotating regular triangle and an isotropically oscillating one — and the quantum theory is a wave equation with a constraint.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-premise">The premise</h3>
+<p>"A bilocal model is described by the geometrical center-of-mass coordinate xf! (-r) A= [(K1)'-rJJ{Ci.J'+ (f;/1)2} J'i', (3) and the relative coordinate ~ 1, (r), where where 52= C~.a) 2 • C77.a) 2 - (~/177) 2 and r is an arbitrary parameter parametrizing =EjJvdXv~" 77 "' whence the world line X 11 (r). Basic equations of theory are to be derived from oA=O with (Ki') 2= -JJX'+77' (X~)' A=I~:Ldr, where A must be invariant +~'CX77)'-2c~77) cxn cx77). under Poincare transformation and under reparametrization of r. Also it must be This Lagrangian defines the theory com- invariant under X.a-&gt;X1,-f- ,\~ w This allows pletely, leading to the following results. the theory to have proper physical inter- First from (3) we obtain canonical mo- 332 Letters to the Editor menta Pt., a.u and fi.u, which are conjugate ~ .u= -b{rl·~ .u- (~r;) 1J.u}, to X.u, ~.u and 1J.u, and find that they satisfy n.u= -b{~2·r;'"- c~r;) ~ "'}, (7) the 'primary constraints' where b=" 2I (r M 2). They are derivable P.u~.u=O, P.u1J.u=0, (4) from the Lagrangian L' = Mr 12 Ci 2+ ~ 2 ) -CP.u)2={Ca.u)2+Cfi.u)2}1r+"2 Q. (5) -" 2 12M{~ 2 -r; 2 - (~r;) 2 }. This means that our model is a three-point system bound The equations of motion following from by the internal force potential proportional Downloaded from academic.oup.com/ptp/article/57/1/331/1853366 by guest on 12 November 2026 (3) are P.u=O (the 4-momentum conserva- to the squared area, viz., Uoc.S 2 • tion) and the equations for at&lt; and ~.«" Further we take a rest frame, in which They lead to M.uv=O, with M.uv=X[.upv] we have Xi=O, X 0 =t=r, ~o=r;o=O, ao=fio +S.uv• where S.uv=~[.uavJ+1J[.ufivJ is the spin =0. It is still difficult to solve (7) gen- tensor. Since (3) is invariant under the erally. However, particular types of solu- 'figure-space' rotation 0(2) also T=r;.ua.u tions are obtained. In one of them xa(r) -~ .ufi.u is another conserved quantity. Not- span a regular triangle rotating rigidly in ing (4), we further get P.ua.u=O, P.ufi.u=O its plane. This mode of solutions draws and S."</p>
+<h3 id="the-lagrangian">The Lagrangian</h3>
+<p>"Under those requirements the (free) Lagrangian is found to be Relativistic", with $\kappa_1$ and $r$ constants, "464 where IC 1 and r are constants. This defines the theory completely. In particular, we August ~6, 1976 find" $P_\mu\xi^{\mu}=0$."a OJ +i:.a &lt;2l) Cx.a m -x, &lt;2l) =0, but However, the extension of this method to this is just the condition which was as- more general systems was not obvious be- sumed in I at the outset to define 'cor- cause it did not start from a Lagrangian. responding points' on x ~' &lt;lJ and x .a &lt;2l. In this note first we describe very briefly"</p>
+<h3 id="the-trilocal-case">The trilocal case</h3>
+<p>"d by latter method to the trilocal case. The X.a(-r) and two relative coordinate vectors, resulting theory of two and three interact- ~.aC-r) and 77.a(r). The Lagrangian, which ing particles is regarded as a prototype must now be invariant under Xf!" with $\Omega^{2}=(\xi_\mu)^{2}(\eta_\mu)^{2}-(\xi_\mu\eta^{\mu})^{2}$ and $\chi=\varepsilon_{\mu\nu\varrho\sigma}\dot X^{\nu}\xi^{\varrho}\eta^{\sigma}$. From the Lagrangian come conjugate momenta and the primary constraints $P_\mu\xi^{\mu}=0$, $P_\mu\eta^{\mu}=0$, and a mass-shell relation."The equations of motion following from (3) are $\dot P_\mu=0$ (the 4-momentum conservation) and the equations for $a_\mu$ and $\tilde a_\mu$. They lead to $\dot M_{\mu\nu}=0$ ... where $S_{\mu\nu}=\xi_{[\mu}a_{\nu]}+\eta_{[\mu}b_{\nu]}$ is the spin tensor. Since (3) is invariant under the 'figure-space' rotation $O(2)$ also $T=\eta_\mu a_\mu-\xi_\mu b_\mu$ is another conserved quantity."</p>
+<h3 id="the-binding-is-an-area-law">The binding is an area law</h3>
+<p>"The equations of motion become ... where $b=2/(rM^{2})$. They are derivable from the Lagrangian $L'=Mr^{2}(\dot\xi^{2}+\dot\eta^{2})-\dots$. This means that our model is a three-point system bound by the internal force potential proportional to the squared area, viz., $U\propto S^{2}$." With $\Omega$ the area of the triangle spanned by $x_\mu^{a}(\tau)$, the binding is quadratic in that area. </p>
+<h3 id="two-solution-classes">Two solution classes</h3>
+<p>"ave Xi=O, X 0 =t=r, ~o=r;o=O, ao=fio +S.uv• where S.uv=~[.uavJ+1J[.ufivJ is the spin =0. It is still difficult to solve (7) gen- tensor. Since (3) is invariant under the erally. However, particular types of solu- 'figure-space' rotation 0(2) also T=r;.ua.u tions are obtained. In one of them xa(r) -~ .ufi.u is another conserved quantity. Not-" — a straight line through the origin with no intercept. "Another type of solutions is $\xi^{k}(\tau)=f(\tau)e_1^{k}$, $\eta^{k}(\tau)=f(\tau)e_2^{k}$, with $e_1\cdot e_2=0$ ... In this mode $x^{a}(\tau)$ again span a regular triangle, which oscillates isotropically, and $J=0$."</p>
+<h3 id="quantum-theory">Quantum theory</h3>
+<p>The quantum theory is given, corresponding to (5), by the wave equation $\{P^{2}+r^{-1}(a^{2}+b^{2})+\kappa^{2}\Omega\}\psi=0$, where $P_\mu=-i\partial/\partial X_\mu$, $a_\mu=-i\partial/\partial\xi_\mu$ etc., and we understand that $\xi_0$, $\eta_0$, $a_0$ and $b_0$ are eliminated by $\xi_0=\mathbf P\xi/P_0$, $a_0=\mathbf Pa/P_0$, etc."mise =r 2=r 3 (=r) for the corresponding points. the trilocal Lagrangian (3) can be gen- Reexpressing the theory in {x .u a}, one finds, eralized to A= [U(~ 2 , r; 2, (~r;)) · (K 21t2-i 2 e.g., that t2=ir .S2 , where .S is the area -r; 2 ) J1/2."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-invariance-generates-the-whole-constraint-structure">1. One invariance generates the whole constraint structure</h3>
+<p><strong>The idea.</strong> Adding $\lambda\xi_\mu$ (or $\lambda_1\xi_\mu+\lambda_2\eta_\mu$) to the centre of mass and demanding invariance does everything: it forces $X$ to appear only through $X\cdot\xi$, and that yields $P\cdot\xi=0$, which is the relative-time suppression. Nothing else is needed. </p>
+<p><strong>What it would add.</strong> The minimal version of the invariance-to-constraint mechanism. Part I of the Multi-Local series states the theorem and derives the constraint; this letter shows the same in two pages and then repeats it for two relative vectors, which demonstrates that the mechanism scales with the number of relative coordinates — one invariance per relative vector. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>Relativistic Mechanics of Interacting Particles I</em> in this folder, §<em>The Invariance and the Constraint</em>, as the minimal statement. </p>
+<p><strong>What stands in the way.</strong> The letter asserts the result and quotes the constraint; the derivation of the Euler equations is left to the longer papers. </p>
+<h3 id="2-a-three-body-potential-fixed-by-geometry-the-squared-area">2. A three-body potential fixed by geometry: the squared area</h3>
+<p><strong>The idea.</strong> The trilocal binding is not a sum of pairwise springs. It is proportional to $S^{2}$, the squared area of the triangle spanned by the three positions. A two-body potential cannot produce this, and a sum of pairwise potentials would not be a function of the area. </p>
+<p><strong>What it would add.</strong> A genuinely three-body interaction with a geometric meaning. <em>Hadron Structure from QCD: The Bound-State Problem</em> (<code>articles_physics/hadron-structure-from-qcd-the-bound-state-problem.md</code>) treats the confining potential as a two-body object in §<em>The Trace Anomaly, and Where the Mass Sits</em>; here the three-body case forces an area law, which is the baryonic analogue of a string's worldsheet area and a concrete alternative to pairwise flux tubes. </p>
+<p><strong>Where it lands.</strong> §<em>The Trace Anomaly, and Where the Mass Sits</em>, as the three-body law. </p>
+<p><strong>What stands in the way.</strong> The area law is what falls out of this particular Lagrangian ansatz; the paper does not argue that a baryon's binding must be of this form. </p>
+<h3 id="3-two-modes-one-with-spin-and-one-without">3. Two modes, one with spin and one without</h3>
+<p><strong>The idea.</strong> The rigidly rotating equilateral triangle carries $J\propto M^{2}$; the isotropically breathing one has $J=0$ at every amplitude. The same three-body system supports rotation and pure breathing as distinct solutions, and the breathing mode's tracelessness kills the angular momentum. </p>
+<p><strong>What it would add.</strong> A concrete pair of modes to contrast with the folder's two-body spectra. The bilocal model has only the rotating mode; here the third constituent admits a mode with no rotation at all, which shows what a third point adds physically rather than only algebraically. </p>
+<p><strong>Where it lands.</strong> §<em>The Spectrum</em> of <em>The Spectrum of a Lorentz Rotor</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), as the breathing mode. </p>
+<p><strong>What stands in the way.</strong> Both modes are particular solutions, not the general one — the letter says solving (7) generally "is still difficult". </p>
+<h3 id="4-a-trajectory-through-the-origin">4. A trajectory through the origin</h3>
+<p><strong>The idea.</strong> For the rigid triangle, $J=M^{2}/(4r/3\sqrt{3})$ — a straight line with zero intercept. There is no daughter structure and no intercept parameter. </p>
+<p><strong>What it would add.</strong> A limiting case for the intercept discussion. <em>Slopes of Mesons</em> extracts a slope and an intercept from data; here a model produces a slope with intercept exactly zero, which is the value the mesonic models must avoid, and the contrast identifies what the mesonic models add. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>Slopes of Mesons</em> in this folder, §<em>What the Model Fixes</em>, as the zero-intercept case. </p>
+<p><strong>What stands in the way.</strong> The result is classical and for one special mode; the quantised version's spectrum is given only as a wave equation. The remainder, one line each. That the two-point Lagrangian of this letter reproduces the "corresponding points" condition of the earlier paper vindicates the Lagrangian route. That the generalised potential $U(\xi^{2},\eta^{2},\xi\eta)$ is mentioned in one sentence shows how much of the programme remained for the longer papers.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

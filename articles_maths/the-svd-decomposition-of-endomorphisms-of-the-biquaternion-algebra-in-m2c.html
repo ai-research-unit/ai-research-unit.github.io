@@ -150,7 +150,7 @@ F=\sum_{k=1}^{4}\rho_k\,u_kv_k^{\dagger},
 \rho_1\geq\rho_2\geq\rho_3\geq\rho_4\geq0,
 $$</p>
 <p>with $\{u_k\}$ and $\{v_k\}$ orthonormal bases of $\mathbb{C}^4$. The numbers $\rho_k$ are the <strong>weights</strong>, the $u_k$ the left and the $v_k$ the right singular vectors.</p>
-<p><strong>The proof.</strong> Apply the spectral theorem to $H=F^{\dagger}F$, whose eigenvalues are $\lambda_k=\rho_k^2$ with orthonormal eigenvectors $v_k$. Put $u_k=Fv_k/\rho_k$ when $\rho_k>0$. Then $\langle u_j,u_k\rangle=\langle Fv_j,Fv_k\rangle/\rho_j\rho_k=\lambda_k\delta_{jk}/\rho_j\rho_k=\delta_{jk}$, so the $u_k$ are orthonormal on the positive part, and extending them to a basis gives the display. The identity was checked by reconstruction on twenty random arrays with residual below $2\cdot10^{-14}$.</p>
+<p><strong>The proof.</strong> Apply the spectral theorem to $H=F^{\dagger}F$, whose eigenvalues are $\lambda_k=\rho_k^2$ with orthonormal eigenvectors $v_k$. Put $u_k=Fv_k/\rho_k$ when $\rho_k&gt;0$. Then $\langle u_j,u_k\rangle=\langle Fv_j,Fv_k\rangle/\rho_j\rho_k=\lambda_k\delta_{jk}/\rho_j\rho_k=\delta_{jk}$, so the $u_k$ are orthonormal on the positive part, and extending them to a basis gives the display. The identity was checked by reconstruction on twenty random arrays with residual below $2\cdot10^{-14}$.</p>
 <p><strong>The operator form.</strong> In the language of the algebra the same statement is</p>
 <p>$$
 F=\sum_k\rho_k\,\mathcal P_{\tilde U_k,\tilde V_k},
@@ -170,7 +170,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\rho_1,\rho_2,\rho_3,\rho_4>0$</td>
+<td>$\rho_1,\rho_2,\rho_3,\rho_4&gt;0$</td>
 <td>$4$</td>
 <td>four terms, invertible</td>
 </tr>
@@ -221,7 +221,7 @@ $$</p>
 <tbody>
 <tr>
 <td>invertible, $\det A\neq0$</td>
-<td>$s_1\geq s_2>0$</td>
+<td>$s_1\geq s_2&gt;0$</td>
 <td>$s_1,s_1,s_2,s_2$</td>
 <td>$4$</td>
 </tr>
@@ -243,7 +243,7 @@ $$</p>
 <p><strong>A worked element.</strong> At $\tilde Q=e_t+\vec e_x+i\vec e_y$ the display is
 $$
 A=\mathrm I_2-i\sigma_1-i(i\sigma_2)=\mathrm I_2-i\sigma_1+\sigma_2
-=\begin{pmatrix}1&-2i\\0&1\end{pmatrix},
+=\begin{pmatrix}1&amp;-2i\\0&amp;1\end{pmatrix},
 $$
 the two norms are $|\tilde Q|^2=3$ and $N(\tilde Q)=1$, and</p>
 <p>$$
@@ -302,9 +302,9 @@ $$</p>
 <h2 id="the-geometric-reading-and-the-truncation">The Geometric Reading and the Truncation</h2>
 <p><strong>The ellipsoid.</strong> The image of the unit ball of $\mathbb{C}^4$ is the ellipsoid whose semi-axes are the segments of length $\rho_k$ along $u_k$. The weights are the lengths, the left vectors the directions in the image and the right vectors the directions carried onto them.</p>
 <p><strong>The two unitary factors.</strong> The array is $\mathcal U\Sigma\mathcal V^{\dagger}$: a unitary array, then a scaling of the four coordinates, then a second unitary array. The unitary arrays are the isometries of the coefficient form; the two-sided ones among them are $L_{U_1}R_{U_2}$ with $U_1,U_2$ unitary, and the weights are the only part of the decomposition that is not a symmetry of the form.</p>
-<p><strong>The truncation.</strong> For $k<4$ put $F_k=\sum_{j\leq k}\rho_ju_jv_j^{\dagger}$. Then</p>
+<p><strong>The truncation.</strong> For $k&lt;4$ put $F_k=\sum_{j\leq k}\rho_ju_jv_j^{\dagger}$. Then</p>
 <p>$$
-\lVert F-F_k\rVert^2=\sum_{j>k}\rho_j^2 ,
+\lVert F-F_k\rVert^2=\sum_{j&gt;k}\rho_j^2 ,
 $$</p>
 <p>and no array of rank at most $k$ is closer: for every $G$ of rank at most $k$,
 $$
@@ -314,7 +314,7 @@ $$</p>
 <p><strong>The non-uniqueness.</strong> The weights are unique; the singular vectors are not. A simple weight allows a phase, a repeated weight allows a unitary mixing inside its eigenspace. The array $F$ determines the four weights and the two subspaces, not the pair of bases.</p>
 <h2 id="what-the-decomposition-is-not">What the Decomposition Is Not</h2>
 <p><strong>Not a decomposition of the algebra.</strong> The four terms are operators, not elements, and the weights are not elements of $\mathbb{B}$. A sum of rank-one operators is a statement about $M_4(\mathbb{C})$, and the algebra enters only through the identification of the rank-one operators with the pairs of elements.</p>
-<p><strong>Not an eigenvalue decomposition.</strong> The weights of $L_A$ are the singular values of $A$, not its eigenvalues. For a non-normal $A$ the two differ, and the difference is the whole content of the polar decomposition. At $A=\begin{pmatrix}0&2\\0&0\end{pmatrix}$ the eigenvalues are $0,0$ and the singular values are $2,0$: the operator has rank one and is nilpotent, and the weights see the rank and not the nilpotency.</p>
+<p><strong>Not an eigenvalue decomposition.</strong> The weights of $L_A$ are the singular values of $A$, not its eigenvalues. For a non-normal $A$ the two differ, and the difference is the whole content of the polar decomposition. At $A=\begin{pmatrix}0&amp;2\\0&amp;0\end{pmatrix}$ the eigenvalues are $0,0$ and the singular values are $2,0$: the operator has rank one and is nilpotent, and the weights see the rank and not the nilpotency.</p>
 <p><strong>Not a canonical sum.</strong> The terms depend on the choice of the singular bases and on the ordering of equal weights. Only the multiset of weights and the two singular subspaces are intrinsic.</p>
 <p><strong>Not a statement about the multiplication.</strong> The decomposition uses the Hilbert–Schmidt form and the array, and it holds for every endomorphism of every finite-dimensional complex space with a definite form. What the algebra adds is the identification of the rank-one operators with the pairs $(\tilde U,\tilde V)$ and the interpretation of the weights of a multiplier as the singular values of the element.</p>
 <h2 id="where-math247-differs">Where $n=2$ Differs</h2>

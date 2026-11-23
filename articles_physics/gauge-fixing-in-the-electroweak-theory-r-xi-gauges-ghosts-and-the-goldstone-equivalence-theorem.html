@@ -72,6 +72,7 @@
         <h1 id="gauge-fixing-in-the-electroweak-theory-math0-gauges-ghosts-and-the-goldstone-equivalence-theorem"><strong>Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the gauge orbits. A gauge-fixing functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p>$$
 \mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_{\imath}\frac{\partial W_{a,\imath}}{\partial R_{\imath}}-\zeta M_W\,\xi_{a}\right)^2-\frac{1}{2\zeta}\left(\sum_{\imath}\frac{\partial Z_{\imath}}{\partial R_{\imath}}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_{\imath}\frac{\partial A_{\imath}}{\partial R_{\imath}}\right)^2 .
 $$</p>
@@ -168,7 +169,7 @@ M_{\xi^\pm}^2=\zeta M_W^2 ,
 \qquad
 M_{\xi^0}^2=\zeta M_Z^2 .
 $$</p>
-<p>For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=246.22$ GeV and $n_W=0.3264$, $n_Z=0.3704$, the table reads:</p>
+<p>For the measured masses, quoted as fractions of the vacuum value with $E_{\mathrm{vev}}=3.9449\times10^{-8}\ \mathrm{J}$ and $n_W=0.3264$, $n_Z=0.3704$, the table reads:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -264,9 +265,9 @@ $$</p>
 </table></div>
 <p>Written in the unbroken basis the neutral ghost mass matrix is</p>
 <p>$$
-M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 & -g\,g_{\mathrm Y}\\ -g_{\mathrm Y}\,g & g_{\mathrm Y}^2\end{pmatrix},
+M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 &amp; -g\,g_{\mathrm Y}\\ -g_{\mathrm Y}\,g &amp; g_{\mathrm Y}^2\end{pmatrix},
 $$</p>
-<p>whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $2\times10^{-8}$ GeV$^4$ against a trace squared of order $10^{8}$ GeV$^4$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A gauge theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.</p>
+<p>whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $4.17\times10^{29}\ \mathrm{J\,m^{-3}}$ against a trace squared of order $2.09\times10^{45}$ J m$^{-3}$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A gauge theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.</p>
 <p>Three weights are attached to each ghost, and they are separate facts:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -362,7 +363,7 @@ $$</p>
 <p>The unitary limit is exact. $\frac{P_{\imath\jmath}}{\Pi-M^2}-\frac{L_{\imath\jmath}}{M^2}$ equals $\frac{\delta_{\imath\jmath}+p_{\imath} p_{\jmath}/M^2}{\Pi-M^2}$ identically, entry by entry, and the reason is one line: $p_{\imath} p_{\jmath}=-\Pi L_{\imath\jmath}$, so $\frac{\delta+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}+\frac{L+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}-\frac{L}{M^2}$. The cancellation is algebraic and holds at every momentum, on shell or off. At finite $\zeta$ the deviation from the Proca form is $\frac{\Pi\,L_{\imath\jmath}}{M^2\left(\Pi-\zeta M^2\right)}$, of order $1/\zeta$ and not of order of the off-shellness: $2.0\times10^{-9}$ at $\Pi=2M^2$ and $\zeta=10^{9}$. The Proca propagator is therefore the $\zeta\to\infty$ limit and not a separate object.</p>
 <p>The third limit is not a gauge in which one can compute loops: the vector propagator tends to a constant, which is the subject of the next section but one. It is the right gauge for tree-level questions about the physical spectrum, and the wrong gauge for everything else. That asymmetry is the reason the $R_\xi$ family is used at all: it contains both limits and a good gauge in between.</p>
 <h2 id="what-the-parameter-cannot-change">What the Parameter Cannot Change</h2>
-<p>The pole at $\Pi=M^2$ sits in the first term only, whose residue is $P_{\imath\jmath}$, and $P$ carries no $\zeta$. Verified: multiplying $D$ by $(\Pi-M^2)$ and subtracting $P$ leaves a deviation that vanishes linearly with the off-shellness, $1.4\times10^{-9}$ for $2M\epsilon=2.8\times10^{-9}$ GeV$^{2}$. The physical pole's residue is $\zeta$-independent, and the $\zeta$-pole is somewhere else.</p>
+<p>The pole at $\Pi=M^2$ sits in the first term only, whose residue is $P_{\imath\jmath}$, and $P$ carries no $\zeta$. Verified: multiplying $D$ by $(\Pi-M^2)$ and subtracting $P$ leaves a deviation that vanishes linearly with the off-shellness, $1.4\times10^{-9}$ for $2M\epsilon=7.19\times10^{-29}$ J$^{2}$. The physical pole's residue is $\zeta$-independent, and the $\zeta$-pole is somewhere else.</p>
 <p>For a conserved external current, $\sum_{\jmath} p_{\jmath} j_{\jmath}=0$, the longitudinal projector annihilates it, $L_{\imath\jmath}j_{\jmath}=0$, so</p>
 <p>$$
 D_{\imath\jmath}(\zeta)\,j_{\jmath}=\frac{P_{\imath\jmath}j_{\jmath}}{\Pi-M^2}
@@ -476,9 +477,9 @@ $$</p>
 <p>The piece $\frac{1}{M}p_{\imath}$ contracted with a vertex is, by the Ward identity, the divergence of the corresponding current, and the divergence of the current is what the Goldstone field couples to. That is the content of the $R_\xi$ construction: the Goldstone's coupling is fixed by the same Ward identity that the gauge-fixing functional was chosen to make valid. So the theorem is not an independent fact about polarisations; it is the Ward identity read at high energy.</p>
 <p>Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $s/v^2$. The $J=0$ partial wave is $a_0=s/(16\pi v^2)$, and the unitarity bound $\lvert a_0\rvert\le\frac12$ is saturated at</p>
 <p>$$
-\sqrt{s}=\sqrt{8\pi}\,v=1.23\ \text{TeV} .
+\sqrt{s}=\sqrt{8\pi}\,v=1.97\times10^{-7}\ \text{J} .
 $$</p>
-<p>With the scalar present, the $s/v^2$ growth cancels against the scalar exchange and the residual is of order $M_H^2/v^2$. The $1.23$ TeV is therefore the energy at which the sector must either show its scalar or show something else.</p>
+<p>With the scalar present, the $s/v^2$ growth cancels against the scalar exchange and the residual is of order $M_H^2/v^2$. The $1.97\times10^{-7}\ \mathrm{J}$ is therefore the energy at which the sector must either show its scalar or show something else.</p>
 <p>The theorem is the dynamical counterpart of the counting. The count is $12=12$: the three eaten components become the three longitudinal polarisations. The theorem says which is which: at high energy the eaten Goldstone and the longitudinal polarisation are the same object, and the equality of their couplings is what makes the count a statement about dynamics and not only about arithmetic.</p>
 <h2 id="the-numbers">The Numbers</h2>
 <p>$n_W=0.3264$ and $n_Z=0.3704$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ are $0.3259$ and $0.3717$; the difference is the radiative correction and is not a gauge effect.</p>
@@ -514,7 +515,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>Physical pole at $\Pi=M^2$; $\zeta$-pole at $\Pi=\zeta M^2$, shared by the Goldstone and the ghost. At $\zeta=2$ the $\zeta$-pole of the $W$ sector sits at $\Pi=2M_W^2$, that is at $\sqrt2\,n_W=0.4618$, above the physical pole by a factor $\sqrt2$ in mass.</p>
-<p>The unitarity scale is $\sqrt{8\pi}\,v=1.23$ TeV, and $\sqrt{16\pi}\,v=1.75$ TeV for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.</p>
+<p>The unitarity scale is $\sqrt{8\pi}\,v=1.97\times10^{-7}\ \mathrm{J}$, and $\sqrt{16\pi}\,v=2.80\times10^{-7}\ \mathrm{J}$ for the bound $\lvert a_0\rvert\le1$. The two differ by $\sqrt2$, which is the difference between the two conventions for the partial-wave bound, and both are quoted in the literature.</p>
 <p>One number is zero and must be: the determinant of the neutral ghost mass matrix. It vanishes for every $\zeta$, and it does so because the photon is massless. A non-zero determinant would mean that $\mathrm{U}(1)_{\mathrm{em}}$ was broken by the gauge fixing, which cannot happen: a gauge condition cannot break a symmetry that the gauge condition respects.</p>
 <h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
 <p><em>The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</em> treats gauge fixing as known in standard field theory but without a framework realisation, and it names the settling computation: reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go. That computation exists. <em>The Yang–Mills Path Integral and the Faddeev–Popov Procedure</em> derives the determinant, the ghost action and the gauge-fixed propagator in the algebra, and <em>BRST Symmetry in Biquaternionic Form</em> constructs the nilpotent derivation and the gauge-fixing fermion. The procedure is realised, and the open question is the sharper one: whether a section has been selected.</p>
@@ -559,7 +560,7 @@ $$</p>
 <p>The ghosts come from the Faddeev–Popov determinant, have the mass of the Goldstone of their direction, and carry three weights: $\det M$ in the measure, $-1$ per closed loop, and ghost number $\pm1$. The neutral ghost mass matrix has determinant zero for every $\zeta$, and the zero eigenvalue is the photon's ghost, which exists because $\mathrm{U}(1)_{\mathrm{em}}$ is unbroken.</p>
 <p>One propagator formula covers the family, $D_{\imath\jmath}=\frac{P_{\imath\jmath}}{\Pi-M^2}+\frac{\zeta L_{\imath\jmath}}{\Pi-\zeta M^2}$, verified against the kernel $K_{\imath\jmath}=(\Pi-M^2)\delta_{\imath\jmath}+(1-\frac{1}{\zeta})p_{\imath} p_{\jmath}$ to $2.2\times10^{-16}$. It gives the Feynman–'t Hooft propagator at $\zeta=1$, the transverse-only propagator at $\zeta=0$, and the Proca propagator at $\zeta\to\infty$, the last to order $1/\zeta$ and algebraically exact in the limit.</p>
 <p>The parameter changes nothing observable: the residue at the physical pole is $P_{\imath\jmath}$ and carries no $\zeta$, and a conserved current is blind to the parameter, drifting by $4.5\times10^{-16}$ across five gauges while a non-conserved current drifts by $0.78$. Every $R_\xi$ propagator falls as $1/\Pi$, so the superficial degree of divergence is bounded by four independently of the number of loops; the unitary gauge loses that property, which is why renormalisability is proved in the family and not at its endpoint.</p>
-<p>The equivalence theorem follows from $\epsilon_{L,\imath}=p_{\imath}/M+O(M^2/E^2)$, since $p_{\imath}/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.</p>
+<p>The equivalence theorem follows from $\epsilon_{L,\imath}=p_{\imath}/M+O(M^2/E^2)$, since $p_{\imath}/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.97\times10^{-7}\ \mathrm{J}$.</p>
 <p>The framework realises the gauge-fixing procedure itself, not the selection of a section, and it transcribes the electroweak instantiation, which needs the group, the representation and the scalar that the framework does not have. The parameter $\zeta$ is a coordinate and is not derivable in principle.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -592,7 +593,7 @@ $$</p>
 </tr>
 <tr>
 <td>$v$</td>
-<td>$246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$</td>
+<td>$3.9449\times10^{-8}\ \mathrm{J}$, the vacuum expectation value, entering $M_W=gv/2$</td>
 </tr>
 <tr>
 <td>$g$, $g_{\mathrm Y}$</td>

@@ -131,26 +131,26 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Choose a basis adapted to $\mathbb{C}^4=\mathbb{C}^2_+\oplus\mathbb{C}^2_-$, with the first two vectors in $\mathbb{C}^2_+$ and the last two in $\mathbb{C}^2_-$. In that basis</p>
 <p>$$
-\Pi=\begin{pmatrix}I_2&0\\0&0\end{pmatrix},
+\Pi=\begin{pmatrix}I_2&amp;0\\0&amp;0\end{pmatrix},
 \qquad
-Q=\begin{pmatrix}0&0\\0&I_2\end{pmatrix},
+Q=\begin{pmatrix}0&amp;0\\0&amp;I_2\end{pmatrix},
 $$</p>
 <p>and the four corners are the four $2\times2$ blocks of a block matrix. Each block has four entries, so each corner has dimension four. The diagonal blocks are closed under multiplication and are full matrix algebras with units $\Pi$ and $Q$; the off-diagonal blocks are the spaces of linear maps between the two planes.</p>
 <p><strong>The compressed units.</strong> The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. For an element $X$, the trace of its compression to $\mathcal{A}$ is $\operatorname{tr}(\Pi X\Pi)$, the trace of the $2\times2$ block, which differs from $\operatorname{tr}X$ in general; on $\mathcal{A}$ itself the two agree. The two diagonal corners are matrix algebras with their own units, and the embedding $\mathcal{A}\oplus\mathcal{D}\subset M_4$ is unital with unit $\Pi+Q=I$, while neither summand contains $I$.</p>
 <p><strong>The block form.</strong> A general element is</p>
 <p>$$
-A=\begin{pmatrix}A_{++}&A_{+-}\\A_{-+}&A_{--}\end{pmatrix},
+A=\begin{pmatrix}A_{++}&amp;A_{+-}\\A_{-+}&amp;A_{--}\end{pmatrix},
 \qquad
 A_{++}\in\mathcal{A},\quad A_{+-}\in\mathcal{B},\quad A_{-+}\in\mathcal{C},\quad A_{--}\in\mathcal{D}.
 $$</p>
 <p>The product is</p>
 <p>$$
-\begin{pmatrix}A&B\\C&D\end{pmatrix}
-\begin{pmatrix}A'&B'\\C'&D'\end{pmatrix}
+\begin{pmatrix}A&amp;B\\C&amp;D\end{pmatrix}
+\begin{pmatrix}A'&amp;B'\\C'&amp;D'\end{pmatrix}
 =
 \begin{pmatrix}
-AA'+BC'&AB'+BD'\\
-CA'+DC'&CB'+DD'
+AA'+BC'&amp;AB'+BD'\\
+CA'+DC'&amp;CB'+DD'
 \end{pmatrix}.
 $$</p>
 <p>The products $BC'\subseteq\mathcal{A}$ and $CB'\subseteq\mathcal{D}$ are the cross terms; they are the reason the split is not an algebra direct sum.</p>
@@ -279,13 +279,13 @@ $$</p>
 <p>return to the diagonal. If the off-diagonal blocks were zero, the algebra would be $\mathcal{A}\oplus\mathcal{D}$; they are not, and the algebra is larger.</p>
 <p><strong>The block-diagonal part is a subalgebra, not an ideal.</strong> The subspace</p>
 <p>$$
-\mathcal{A}\oplus\mathcal{D}=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}\right\}
+\mathcal{A}\oplus\mathcal{D}=\left\{\begin{pmatrix}A&amp;0\\0&amp;D\end{pmatrix}\right\}
 $$</p>
 <p>is closed under multiplication and contains the unit $I$. It is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the balanced subalgebra $M_2\oplus M_2$ of the recursion. It is not a two-sided ideal: multiplying a block-diagonal element by a general element produces an off-diagonal part. Indeed, $M_4(\mathbb{C})$ is simple, so it has no proper two-sided ideal at all.</p>
 <p><strong>The meaning of "contains".</strong> When the category says that $M_4$ contains $M_2\oplus M_2$, the word means the block-diagonal subalgebra, not an ideal and not a quotient. The inclusion is</p>
 <p>$$
 M_2(\mathbb{C})\oplus M_2(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad
-(A,D)\longmapsto\begin{pmatrix}A&0\\0&D\end{pmatrix},
+(A,D)\longmapsto\begin{pmatrix}A&amp;0\\0&amp;D\end{pmatrix},
 $$</p>
 <p>and the off-diagonal blocks complete the image to the whole algebra. The same convention applies to the other categories: $M_6$ contains $M_3\oplus M_3$ and $M_5$ contains $M_2\oplus M_3$ as block-diagonal subalgebras.</p>
 <p><strong>The trace and the determinant.</strong> The trace splits as</p>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfusion, Labeling and Stream Lines in Flow of Inviscid Barotropic Fluid — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Interfusion, labeling and stream lines in flow of inviscid barotropic fluid - 0701016.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="interfusion-labeling-and-stream-lines-in-flow-of-inviscid-barotropic-fluid"><strong>Interfusion, Labeling and Stream Lines in Flow of Inviscid Barotropic Fluid</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0701016 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v6, 5 August 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Interfusion, labeling and stream lines in flow of inviscid barotropic fluid - 0701016-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Interfusion, labeling and stream lines in flow of inviscid barotropic fluid - 0701016.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Interfusion, labeling and stream lines in flow of inviscid barotropic fluid - 0701016.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that the Euler system is a closed subsystem of four equations, not the complete system, and that the complete system has seven equations for seven variables — density, velocity, and the labelling, that is, the Lagrangian coordinates treated as dependent variables. The consequence is a loss of uniqueness. For irrotational flow both systems have unique solutions; for rotational flow the seven-equation system does not, and the reason is an "interfusion" effect that the initial data for $\rho$ and $v$ do not control. He suggests, cautiously, that this is where turbulence lives. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="four-equations-against-seven">Four equations against seven</h3>
+<p>The Euler system for density and velocity "is not a complete system of dynamic equations for the inviscicd barotropic fluid. It is only a closed subsystem of four dynamic equation. The complete system of dynamic equation consists of seven dynamic equations for seven dependent variables: density, velocity and labeling (Lagrangian coordinates, considered as dependent variables)."(The two misspellings are in the PDF.) </p>
+<h3 id="where-uniqueness-fails">Where uniqueness fails</h3>
+<p>The abstract states the three cases as a table:"Solution of the Cauchy problem for the Euler subsystem is unique. Solution of the Cauchy problem for the complete hydrodynamic system, containing seven equations, is unique only for irrotational flows. For vortical flows solution of the Cauchy problem is not unique." The conclusion adds the diagnosis:"Nonuniqueness is connected with the fact, the initial conditions for variables ρ, v, ξ do not control the intermixing effect. Solution" So it is not that the equations are wrong but that they admit several flows with the same initial data, differing in how the fluid has been stirred. </p>
+<h3 id="the-turbulence-suggestion">The turbulence suggestion</h3>
+<p>He lists the three points of resemblance and is explicit about their status:"points: (1) both effects are not controlled by the initial data for variables ρ, v, ξ of the hydrodynamic equations in the Euler representation, (2) both effects take place at the vortical flows, and they are absent at the irrotational flows, (3) both effects are strong at vanishing viscosity. We admit, that the interfusion may be connected with the turbulence phenomena, although we do not yet insist on this statement. If" The moral, if it holds:"If, indeed, the turbulent phenomena are connected with the interfusion and with the shape of stream lines, it becomes clear, why numerous investigations of hydrodynamic equations, describing only density and velocity, but not the shape of stream lines, had not led to a progress."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-non-uniqueness-of-the-cauchy-problem-for-rotational-flow">1. Non-uniqueness of the Cauchy problem for rotational flow</h3>
+<p><strong>The idea.</strong> A <strong>claim about well-posedness</strong> stated case by case: unique for the four-equation system, unique for the seven-equation system only when irrotational, non-unique when rotational. Non-uniqueness is not an error in a solution but a property of the problem.</p>
+<p><strong>What it would add.</strong> The corpus's hydrodynamics article writes equations and checks causal structure; well-posedness of the initial-value problem is a separate property and is not checked. A concrete statement that a standard system fails it in a specific regime is a test the corpus's derived fluid equations can be put to, and the corpus has never run it. That is worth importing whether or not the turbulence suggestion holds.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Non-uniqueness of the completed system may be an artefact of treating the labelling as a dynamical variable, since the labelling of fluid elements is not observable. And the corpus's fluids include a spin and a phase that the Euler system does not have, so the seven-equation count does not apply to them unchanged.</p>
+<h3 id="2-interfusion-as-a-candidate-for-turbulence">2. Interfusion as a candidate for turbulence</h3>
+<p><strong>The idea.</strong> Turbulence may be the freedom the equations leave when the stream-line shape is not fixed by the data — an unobservable rearrangement of labels with observable consequences at vanishing viscosity.</p>
+<p><strong>What it would add.</strong> The corpus has no account of turbulence and its fluids are laminar by construction. This offers a structural reason why a laminar description might be incomplete rather than merely approximate, and it is a reason of a kind the corpus can state: a symmetry of the description — relabelling — whose breaking is the phenomenon.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The author himself does not insist, the resemblance is three qualitative points, and no turbulent spectrum is computed. A suggestion of this kind needs at least one number to become testable, and none is offered.</p>
+<h3 id="3-labels-as-dynamical-variables">3. Labels as dynamical variables</h3>
+<p><strong>The idea.</strong> The Lagrangian coordinates $\xi$ are not bookkeeping but dependent variables with their own equations, and dropping them is what makes the Euler system incomplete. A <strong>change of what counts as the state of a fluid</strong>.</p>
+<p><strong>What it would add.</strong> The corpus's fluid state is a field over space — density, velocity, spin — with no labels. Rylov's claim is that the field alone underdetermines the flow, which if true means the corpus's fluid is a description of a class of flows rather than of one. For a corpus that derives its fluid from a field equation with unique solutions, the claim would have to be checked there rather than assumed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> Whether labels are physical is a question of interpretation, and the same flow described with different labels is the same flow. Making labels dynamical without an observable that reads them is a formal move, and no such observable is proposed.</p>
+<p>The rank: non-uniqueness first, because it is a checkable property the corpus has not checked; interfusion second, because it is the proposed mechanism; labels last, because their physical status is unresolved.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

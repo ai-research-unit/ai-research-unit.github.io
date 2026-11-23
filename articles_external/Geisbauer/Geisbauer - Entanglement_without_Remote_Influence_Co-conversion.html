@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entanglement without Remote Influence: Correlation in the Now — A Continuity Theory (TUni) account of Bell tests, awareness, and the myth of &quot;pure probability&quot; — Biquaternion Universe</title>
+  <meta name="description" content="| field | value | |---|---| | type | independent manuscript | | arXiv | none — no id in the PDF or in the file name | | authors | Jörg Geisbauer…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entanglement-without-remote-influence-correlation-in-the-now-a-continuity-theory-tuni-account-of-bell-tests-awareness-and-the-myth-of-pure-probability"><strong>Entanglement without Remote Influence: Correlation in the Now — A Continuity Theory (TUni) account of Bell tests, awareness, and the myth of "pure probability"</strong></h1>
+<p>| field | value | |---|---| 
+| type | independent manuscript | 
+| arXiv | none — no id in the PDF or in the file name | 
+| authors | Jörg Geisbauer (Continuity Theory / TUni), as printed | 
+| version | 2025, no month or version number printed | 
+| journal | not printed in the PDF | 
+| length | 6 pages | 
+| conversion | <code>articles_external/Geisbauer/Geisbauer - Entanglement_without_Remote_Influence_Co-conversion.md</code> | 
+| source | <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Entanglement_without_Remote_Influence_Co.pdf</code> | 
+| corpus anchor | <code>articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.md</code> | The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Entanglement_without_Remote_Influence_Co.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. </p>
+<h2 id="what-the-paper-does-puts-the-bell-assumptions-in-the-standard-form-then-relaxes-exactly-one-of-them-measurement-independence-by-a-small-bounded-amount-and-argues-that-locality-survives-the-relaxation-is-quantified-twice-as-a-perturbation-of-the-hidden-variable-distribution-math9-and-as-an-information-cap-math10-bits-per-run-no-signalling-is-kept-as-an-explicit-condition-and-the-difference-from-superdeterminism-is-stated-in-three-points-the-paper-is-a-budget-and-a-picture-not-a-model-nothing-is-computed-from-math11">What the Paper Does Puts the Bell assumptions in the standard form, then relaxes exactly one of them — measurement independence — by a small, bounded amount, and argues that locality survives. The relaxation is quantified twice: as a perturbation of the hidden-variable distribution, $\rho(\lambda|a,b)=\rho(\lambda)[1+\delta]$, and as an information cap, $I(\lambda:a,b)\le\varepsilon$ bits per run. No-signalling is kept as an explicit condition, and the difference from superdeterminism is stated in three points. The paper is a budget and a picture, not a model: nothing is computed from $\delta$.</h2>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-assumptions">The three assumptions</h3>
+<p>$$A=A(a,\lambda),\qquad B=B(b,\lambda),\qquad E(a,b)=\int d\lambda\,\rho(\lambda)A(a,\lambda)B(b,\lambda)$$ (paper 1–2), and $$S=E(a,b)+E(a,b')+E(a',b)-E(a',b')$$ (paper 3) "satisfies $|S|\le2$ under three assumptions: (i) Locality ..., (ii) Outcome independence ..., (iii) Measurement independence: $\rho(\lambda|a,b)=\rho(\lambda)$". Quantum mechanics gives $E_{QM}(a,b)=-\cos\theta$ and $|S|\le2\sqrt2$. </p>
+<h3 id="the-relaxation">The relaxation</h3>
+<p>$$\rho(\lambda|a,b)=\rho(\lambda)\left[1+\delta(\lambda;a,b)\right],\qquad \int d\lambda\,\rho(\lambda)\delta\ll1$$ (paper 4),"Z ρ(λ♣a, b) = ρ(λ) [1 + δ(λ; a, b)], dλ ρ(λ) δ ≪ 1, (4) reflecting that λ and (a, b) are not enforced to be statistically independent once one accounts for J. This is not a signal from one wing to the other; it is the recognition that the entire run is one Now-configuration. 2 Measurement-independence budget." The justification is cited, not derived: "It is known that only a small relaxation of measurement independence suffices to reproduce singlet correlations with local deterministic response functions [10, 11, 12]."</p>
+<h3 id="the-three-guards-a">The three guards (a)</h3>
+<p>"Information cap: we bound the dependence between hidden variables and settings by a small, testable budget, e.g. I(λ : a, b) ≤ ε bits per run, 0 ≤ ε ≪ 1, rather than assuming arbitrarily large, conspiratorial correlations. (b) No signalling: the model preserves P" (b) "No signalling: the model preserves $P(A|a,b)=P(A|a)$, $P(B|a,b)=P(B|b)$, so that statistical marginal distributions remain setting-local." (c) "Run hygiene: cross-run structure is minimized by design (independent RNGs, late switching, cosmic inputs), allowing empirical upper bounds on ε from data rather than a fixed metaphysical stance. A simple causal"</p>
+<h3 id="the-picture">The picture</h3>
+<p>"opening one sealed letter (A) does not change the other letter (B); it only reveals which member of a correlated pair you are holding. Entanglement is thus knowledge of joint structure, not communication across space." The quantum eraser is read the same way: "post-selection and data partitioning on the awareness layer, not retrocausation".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-math21-bit-budget-for-measurement-independence">1. An $\varepsilon$-bit budget for measurement independence</h3>
+<p><strong>The idea.</strong> $\delta$ is a function, but $I(\lambda:a,b)\le\varepsilon$ is a number with units, and the paper proposes to bound it from data rather than argue about it. That is a <strong>formula</strong> with a measurable parameter, and the only such object in the batch.</p>
+<p><strong>What it would add.</strong> The corpus's CHSH exercise derives $|S|\le2$ from factorisation and then quotes $2\sqrt2$; it has no vocabulary for the region between. A bound of the form $|S|\le2+\text{(function of }\varepsilon)$ would name that region.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper never computes the function: it cites that a small relaxation "suffices", which is a statement about existence, not a bound. To import anything one would have to derive $S_{\max}(\varepsilon)$ — the step the paper leaves out, and the only step the corpus could use. </p>
+<h3 id="2-no-signalling-as-a-constraint-on-the-relaxation">2. No-signalling as a constraint on the relaxation</h3>
+<p><strong>The idea.</strong> Marginal independence, $P(A|a,b)=P(A|a)$, is imposed as a separate condition rather than following from locality. That is a <strong>reading</strong> of what the relaxation is allowed to do. </p>
+<p><strong>What it would add.</strong> A reminder that $\delta\neq0$ and no-signalling are independent requirements, which the corpus's algebraic treatment gets for free from the shape of the state. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/entangled-subsystems-in-the-biquaternion-framework.md</code>, where the marginal of a joint element is computed by a partial trace. </p>
+<p><strong>What stands in the way.</strong> In the corpus the marginal is setting-independent because the partial trace never sees the distant setting; there is no $\delta$ to constrain. The import would be a condition on an object the corpus does not have. </p>
+<h3 id="3-correlation-as-a-joint-fact">3. Correlation as a joint fact</h3>
+<p><strong>The idea.</strong> The two outcomes are "gle item in the global present—the Now.", so that the pair, not the parts, is the bearer of the correlation. This is a <strong>reading</strong>, and the corpus says the same thing algebraically: the singlet is an idempotent in $\mathbb{B}\otimes\mathbb{B}$, and neither factor alone carries it. </p>
+<p><strong>What it would add.</strong> A plain-language statement of what the corpus's Bell basis already encodes, usable when the algebra is too much. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.md</code>. </p>
+<p><strong>What stands in the way.</strong> The reading adds no prediction, and the corpus's version is stronger: an idempotent can be decomposed and counted, while "one Now-configuration" cannot.</p>
+<p>The rank is a judgement: the $\varepsilon$ budget first, because it is the only measurable object on offer; the no-signalling condition second; the picture third, because the corpus already has the stronger algebraic form.</p>
+<p>This is a six-page paper; the assumptions, the CHSH bound, the relaxation, the three guards, the two-letters picture, the eraser note and a comparison with superdeterminism are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

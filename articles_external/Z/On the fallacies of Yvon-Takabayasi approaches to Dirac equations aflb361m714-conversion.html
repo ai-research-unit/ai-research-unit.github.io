@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Fallacies of Yvon–Takabayasi Approaches to Dirac Theory and Their Rectification — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/On the fallacies of Yvon-Takabayasi approaches to Dirac equations aflb361m714.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-fallacies-of-yvontakabayasi-approaches-to-dirac-theory-and-their-rectification"><strong>On the Fallacies of Yvon–Takabayasi Approaches to Dirac Theory and Their Rectification</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Heinz Krüger (Trippstadt, Germany)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Annales de la Fondation Louis de Broglie, Volume 36, 2011, p. 53</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/On the fallacies of Yvon-Takabayasi approaches to Dirac equations aflb361m714-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/On the fallacies of Yvon-Takabayasi approaches to Dirac equations aflb361m714.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/On the fallacies of Yvon-Takabayasi approaches to Dirac equations aflb361m714.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives two disjoint universal factorisations of the Clifford algebra Cl3 of biquaternions, which generate particle and antiparticle solutions of the Dirac equation, and shows that they parametrise every non-invertible biquaternion, exactly where the Yvon–Takabayasi approach fails. In that case the Takabayasi tetrade collapses and the method's conclusions are wrong.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"Two disjunct universal factorizations of the Clifford algebra Cl3 of biquaternions are derived. These respectively generate particle and antiparticle solutions of the Dirac equation."</p>
+<h3 id="the-claim-of-failure">The claim of failure</h3>
+<p>"Due to their universality, they also provide parametrizations of every biquaternion ψ 6= 0 which is noninvertible, ψ ψe = 0, where the approach of Yvon and Takabayasi fails. It is shown"</p>
+<h3 id="the-collapse">The collapse</h3>
+<p>"ninvertible, ψ ψe = 0, where the approach of Yvon and Takabayasi fails. It is shown that for ψ 6= 0 , ψ ψe = 0 all vectors e µ = 0, 1, 2, 3, are lightof the tetrade of Takabayasi fµ = ψγµ ψ, like fµ · fµ = 0 but mutually orthogonal fµ · fν = 0, µ 6= ν, and the pseudoscalar f0 f1 f2 f3 vanishes. Thus the tetrade of Takabayasi then collapses and leads to wrong conclusions ! Making"</p>
+<h3 id="the-physical-case">The physical case</h3>
+<p>"Making use of the two factorizations, the Dirac equation is solved for plane waves. In the limit of infinite momentum, or, equivalently, of vanishing restmass, the biquaternions of these solutions" — so the massless limit is precisely the case the old method cannot reach, and the solutions cannot "be obtained by Yvon-Takabayasi approaches".</p>
+<h3 id="the-algebra">The algebra</h3>
+<p>"is the even graded subalgebra of Cl1,3 , the Clifford algebra of the lorentzian time-space manifold R ⊗ R3 = R1,3 ." The basis vectors $e_k=\gamma_k\gamma_0$ satisfy $e_k^2=1$ and anticommute.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-zero-divisor-cone-is-where-the-standard-parametrisation-dies">1. The zero-divisor cone is where the standard parametrisation dies</h3>
+<p><strong>The idea.</strong> The Takabayasi tetrade $f_\mu=\psi\gamma_\mu\tilde\psi$ collapses exactly on $\psi\tilde\psi=0$: all four vectors become lightlike and mutually orthogonal, and the pseudoscalar vanishes. A parametrisation that assumes a non-degenerate tetrade is invalid there, not merely inaccurate. This is a <strong>formula</strong> with a sharp domain statement.</p>
+<p><strong>What it would add.</strong> The missing link between the corpus's zero-divisor cone and the failure of the hydrodynamic parametrisation. The corpus has an article on the domain of the polar decomposition and an article on the Takabayasi correspondence, and this paper says precisely how the second fails on the boundary the first describes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, at the domain of validity.</p>
+<p><strong>What stands in the way.</strong> Nothing structural: the corpus has both objects and needs the statement that connects them. The proof, however, is in Krüger's algebra, and the corpus would want it in its own multiplication.</p>
+<h3 id="2-the-massless-limit-is-a-degenerate-limit-of-the-parametrisation">2. The massless limit is a degenerate limit of the parametrisation</h3>
+<p><strong>The idea.</strong> Solutions of infinite momentum, equivalently vanishing rest mass, have non-invertible biquaternions. The massless case is therefore not reached by continuity from the massive one within the old parametrisation; it needs the new factorisation. This is a <strong>mechanism</strong> for handling the chiral limit.</p>
+<p><strong>What it would add.</strong> A reason the corpus's massless limit needs separate treatment, which its helicity and chiral articles assume without saying why the limit is singular.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/helicity-in-biquaternionic-form.md</code>, on the massless limit.</p>
+<p><strong>What stands in the way.</strong> The claim is made for Krüger's factorisation; the corpus uses a polar form that may behave differently at $m=0$, so the singular character must be checked in its own coordinates.</p>
+<p>This is a twenty-two page article; the two factorisations, the collapse of the tetrade and the massless solutions are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

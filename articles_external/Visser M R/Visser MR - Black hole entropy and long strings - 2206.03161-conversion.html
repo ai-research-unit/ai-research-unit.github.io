@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black hole entropy and long strings — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black hole entropy and long strings - 2206.03161.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="black-hole-entropy-and-long-strings"><strong>Black hole entropy and long strings</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2206.03161v1 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Erik P. Verlinde, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 June 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (essay for the Gravity Research Foundation 2022 Awards)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Black hole entropy and long strings - 2206.03161-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black hole entropy and long strings - 2206.03161.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Black hole entropy and long strings - 2206.03161.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that short-distance entanglement across the horizon cannot account for a black hole's entropy and its energy at the same time: the count comes out right but the energy of Planck-scale degrees of freedom is far too large. The long-string sector of matrix quantum mechanics fixes both at once, because the same factor $\ell_P/R_S$ lowers the excitation energy per degree of freedom and the total number of degrees of freedom, converting a volume law into an area law. The entropy then follows from the Cardy–Hardy–Ramanujan formula.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"In brick wall and induced gravity models the entropy arises due to short distance correlations across the event horizon cut off at the Planck length. However, the energy of these short range degrees of freedom is too high compared to the black hole energy." The entanglement entropy in a vacuum,</p>
+<p>$$S_{vN}(\delta)=\frac{A}{\delta^{d-2}}+\dots, \qquad (paper\ 1)$$</p>
+<p>gives the area law but each degree of freedom costs a Planck energy.</p>
+<h3 id="the-matrix-mechanics-count">The matrix mechanics count</h3>
+<p>With $C$ denoting the central charge and $N$ the number of matrix elements,</p>
+<p>$$S=4\pi\sqrt{CN}, \qquad (paper\ 5)$$</p>
+<p>and with the energy as $E=N\epsilon$, "the most entropic states arise when $C$ and $N$ are of equal size. If we insert $N=C$ and normalize the size of the matrix as $C(R_S)=A(R_S)/16\pi G$, then we recover the Bekenstein-Hawking formula $S_{BH}=A(R_S)/4G$." The temperature follows from the same formula, $\partial S/\partial E=2\pi\sqrt{C/N}/\epsilon$, so that at $N=C$ the horizon temperature is $T_H=\epsilon/2\pi$ (paper 7).</p>
+<h3 id="the-long-string-mechanism">The long-string mechanism</h3>
+<p>"The lowering of the excitation energy in equation (3) is an example of the long string phenomenon ... This mechanics occurs in large symmetric product CFTs and matrix quantum mechanics, and identifies a twisted sector consisting of 'long strings' whose typical excitation energy is considerably smaller than that of the untwisted sector."</p>
+<h3 id="why-the-area-law">Why the area law</h3>
+<p>"The number of short range degrees of freedom of size $\ell_P$ inside the horizon radius $R_S$ scales with the volume $c_{\ell_P}(R_S)\sim(R_S/\ell_P)^{d-1}$, whereas the number of long range degrees of freedom scales with the area of the horizon", $C=\ell_Pc_{\ell_P}(R_S)\sim(R_S/\ell_P)^{d-2}$ (paper 8). "We see that the same factor $\ell_P/R_S$ lowers both the energy and the number of degrees of freedom. Thus, the long string phenomenon naturally explains why the entropy of black holes is proportional to the area and not the (Euclidean) volume of the horizon."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"Short range degrees of freedom in quantum field theory cannot account for the entropy and energy of black holes at the same time."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-area-law-as-a-consequence-of-a-lowered-count">1. The area law as a consequence of a lowered count</h3>
+<p><strong>The idea.</strong> The entropy is proportional to area because the number of long-range degrees of freedom is the volume count times $\ell_P/R_S$, not because entanglement across a surface has an area law. This is a <strong>mechanism</strong> with a factor.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code> derives the area law from the structure of the entanglement across a surface. This paper offers an entirely different derivation: a counting of states with a suppressed number, giving the same law for a different reason. Two derivations of one law from different premises is exactly the kind of redundancy the corpus examines in <code>articles_physics/the-two-actions-of-one-group-adjoint-and-congruence.md</code>.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs matrix quantum mechanics, a central charge and a symmetric product; the corpus has a finite algebra. The cost is the whole statistical-mechanical setting.</p>
+<h3 id="2-entropy-alone-is-not-enough-energy-must-match">2. Entropy alone is not enough; energy must match</h3>
+<p><strong>The idea.</strong> A candidate microstate count fails if it reproduces $S=A/4G$ but assigns the wrong energy to the states. This is a <strong>reading</strong> that turns a sufficiency condition into a two-sided test.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> asks at open question 1 only whether a state count reproduces the area. The stronger test — that the same states have the black hole's mass — is the test this paper shows the brick-wall models failing. The corpus's question should be strengthened to match.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, open question 1.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a sharpening of a question. Ranked first, because it costs the corpus nothing and closes a loophole.</p>
+<h3 id="3-math34-at-the-horizon">3. $N=C$ at the horizon</h3>
+<p><strong>The idea.</strong> The most entropic state has the number of matrix elements equal to the number of degrees of freedom, and that equality is what makes the entropy formula reduce to Bekenstein–Hawking and the temperature to $\epsilon/2\pi$. This is a <strong>formula</strong>: one condition that does two jobs.</p>
+<p><strong>What it would add.</strong> The corpus's entropy functional has a parameter that is fixed by no principle; a condition of the form "the two counts are equal at the horizon" is precisely the kind of fixing the corpus's <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> $N$ and $C$ are matrix-mechanics objects; the corpus has no matrix and no central charge, so the condition can be stated only as an analogy. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

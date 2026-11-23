@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]
 -4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_\imath\,\xi^*)(\partial/\partial R_\imath\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi .
+=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_{\imath}\,\xi^*)(\partial/\partial R_{\imath}\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi .
 $$</p>
 <p>Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is</p>
 <p>$$
@@ -236,12 +236,12 @@ $$</p>
 <p>$$
 \big[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\xi_{\mathrm{fop}}^{\dagger}(\vec y,r'_t)\big]=0,
 $$</p>
-<p>because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde R_\Phi-\tilde{R}_{\Phi,2}\rangle_{\natural}>0$, it vanishes as well, which is <strong>microcausality</strong>: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that the commutator function, the Pauli–Jordan $\mathcal{P}_{\mathrm{PJ}}$, has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to. That $\mathcal{P}_{\mathrm{PJ}}$ is the difference of the two Green's functions of the d'Alembertian and not the spatial Laplacian, which the series writes with a sector subscript.</p>
+<p>because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde R_\Phi-\tilde{R}_{\Phi,2}\rangle_{\natural}&gt;0$, it vanishes as well, which is <strong>microcausality</strong>: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that the commutator function, the Pauli–Jordan $\mathcal{P}_{\mathrm{PJ}}$, has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to. That $\mathcal{P}_{\mathrm{PJ}}$ is the difference of the two Green's functions of the d'Alembertian and not the spatial Laplacian, which the series writes with a sector subscript.</p>
 <h2 id="what-is-standard-and-what-is-open">What Is Standard and What Is Open</h2>
 <p>Because the question addressed here is the second-quantization question of the framework, we separate the two kinds of statement explicitly.</p>
 <p><strong>Standard quantum field theory, transcribed.</strong></p>
 <ul>
-<li>The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_\imath\,\xi^*)(\partial/\partial R_\imath\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.</li>
+<li>The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_{\imath\in\{x,y,z\}}(\partial/\partial R_{\imath}\,\xi^*)(\partial/\partial R_{\imath}\,\xi)-4\pi^{2}\nu_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.</li>
 <li>The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.</li>
 <li>The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.</li>
 <li>The symmetric Fock space, the occupation basis, the vacuum, and the number operator.</li>
@@ -287,7 +287,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmathk}\vec e_\imath$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_{\imath} \vec e_{\jmath}=-\delta_{\imath\jmath}e_t+\varepsilon_{\imath\jmath k}\vec e_{\imath}$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -303,7 +303,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$</td>
-<td>Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$</td>
+<td>Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N&gt;0$</td>
 </tr>
 <tr>
 <td>$\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_{\imath} \vec e_{\imath}\,\partial/\partial R_{\imath}$</td>

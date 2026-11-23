@@ -98,7 +98,7 @@ $$</p>
 <p>$$
 V=\bigl(\omega_k^{\,l-1}\bigr)_{1\le k,l\le5}
 $$</p>
-<p>is invertible, with determinant $\prod_{k<l}(\omega_l-\omega_k)\ne0$. The evaluation map from the polynomials of degree at most $4$ to the functions on the five roots is therefore an isomorphism of five-dimensional complex vector spaces.</p>
+<p>is invertible, with determinant $\prod_{k&lt;l}(\omega_l-\omega_k)\ne0$. The evaluation map from the polynomials of degree at most $4$ to the functions on the five roots is therefore an isomorphism of five-dimensional complex vector spaces.</p>
 <p><strong>Proof.</strong> The determinant of a Vandermonde matrix is the product of the pairwise differences of the nodes, and the nodes are distinct. The evaluation map is a linear map between spaces of dimension five; its kernel is the set of polynomials of degree at most four vanishing at the five roots, which is zero because a nonzero polynomial has at most as many roots as its degree. It is therefore an isomorphism.</p>
 <h3 id="the-lagrange-polynomials">The Lagrange Polynomials</h3>
 <p><strong>Definition.</strong> For $k\in\mathbb{Z}/5$, the <strong>Lagrange polynomial</strong> of the node $\omega_k$ is</p>
@@ -242,11 +242,11 @@ $$</p>
 <p>Let $S$ be the cyclic shift</p>
 <p>$$
 S=\begin{pmatrix}
-0&0&0&0&1\\
-1&0&0&0&0\\
-0&1&0&0&0\\
-0&0&1&0&0\\
-0&0&0&1&0
+0&amp;0&amp;0&amp;0&amp;1\\
+1&amp;0&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1&amp;0
 \end{pmatrix},
 \qquad Se_k=e_{k+1}\quad(k\bmod 5).
 $$</p>
@@ -260,11 +260,11 @@ $$</p>
 <p>$$
 P_2=\frac15
 \begin{pmatrix}
-1&\omega&\omega^2&\omega^3&\omega^4\\
-\omega^4&1&\omega&\omega^2&\omega^3\\
-\omega^3&\omega^4&1&\omega&\omega^2\\
-\omega^2&\omega^3&\omega^4&1&\omega\\
-\omega&\omega^2&\omega^3&\omega^4&1
+1&amp;\omega&amp;\omega^2&amp;\omega^3&amp;\omega^4\\
+\omega^4&amp;1&amp;\omega&amp;\omega^2&amp;\omega^3\\
+\omega^3&amp;\omega^4&amp;1&amp;\omega&amp;\omega^2\\
+\omega^2&amp;\omega^3&amp;\omega^4&amp;1&amp;\omega\\
+\omega&amp;\omega^2&amp;\omega^3&amp;\omega^4&amp;1
 \end{pmatrix}.
 $$</p>
 <p>The five matrices are idempotent, mutually orthogonal and sum to $I$. The entries give the direct check: the $(i,l)$ entry of $P_k^2$ is</p>

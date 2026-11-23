@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The minus sign in the first law of de Sitter horizons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - The minus sign in the first law of de Sitter horizons - 2208.11706.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-minus-sign-in-the-first-law-of-de-sitter-horizons"><strong>The minus sign in the first law of de Sitter horizons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2208.11706v4 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Batoul Banihashemi, Ted Jacobson, Andrew Svesko, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 7 September 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - The minus sign in the first law of de Sitter horizons - 2208.11706-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The minus sign in the first law of de Sitter horizons - 2208.11706.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - The minus sign in the first law of de Sitter horizons - 2208.11706.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Resolves a puzzle that has stood since Gibbons and Hawking: in the static patch of de Sitter space the entropy of the cosmological horizon <em>decreases</em> when Killing energy is added, because the first law carries a minus sign. The authors argue the confusion comes from mistaking the matter Killing energy for the total internal energy, and they resolve it by introducing a system boundary at which a proper thermodynamic ensemble can be specified. When the boundary shrinks to zero size the total internal energy vanishes, as does its variation; part of that vanishing variation is thermalised and captured by the horizon entropy, part is the matter contribution.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-puzzle">The puzzle</h3>
+<p>Gibbons and Hawking established</p>
+<p>$$\int_\Sigma \delta T_{\mu\nu}\xi^\mu d\Sigma^\nu=-\frac{\kappa\,\delta A}{8\pi G}, \qquad (paper\ 1.2)$$</p>
+<p>for variations away from a static patch, and with $T_{GH}=\hbar\kappa/2\pi$ and $S_{BH}=A/4G\hbar$ the right-hand side is $-T_{GH}\delta S_{BH}$. "It follows that the entropy of the static patch is reduced by the addition of Killing energy. This decrease of entropy is opposite to the usual expectation when energy is added to a positive temperature thermal state, and this opposite sign has raised the puzzling question of how the thermodynamics of a static patch should be understood."</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>"We argue the confusion arises because of a mistaken interpretation of the matter Killing energy as the total internal energy." The Killing energy of the matter is not the energy of the system, because the gravitational field contributes with the opposite sign, and in a closed de Sitter slice the two cancel.</p>
+<h3 id="the-resolution">The resolution</h3>
+<p>"resolving the puzzle by introducing a system boundary at which a proper thermodynamic ensemble can be specified. When this boundary shrinks to zero size the total internal energy of the ensemble (the Brown-York energy) vanishes, as does its variation. Part of this vanishing variation is thermalized, captured by the horizon entropy variation, and part is the matter contribution, which may or may not be thermalized. If the matter is in global equilibrium at the de Sitter temperature, the first law becomes the statement that the generalized entropy is stationary."</p>
+<h3 id="the-generalised-first-law">The generalised first law</h3>
+<p>For Kerr–de Sitter the Gibbons–Hawking relation reads</p>
+<p>$$\int_\Sigma \delta T_{\mu\nu}\xi^\mu d\Sigma^\nu=-\frac{\kappa_c\delta A_c}{8\pi G}-\frac{\kappa_b\delta A_b}{8\pi G}-\Omega_b\delta J_b, \qquad (paper\ 1.1)$$</p>
+<p>with both horizons contributing with negative signs.</p>
+<h3 id="what-the-paper-adds-beyond-the-resolution">What the paper adds beyond the resolution</h3>
+<p>A quasilocal Smarr relation and first law (appendix A), a proof that the total attractive Killing energy vanishes on a closed slice (appendix B), and a re-derivation of the on-shell Euclidean action of Schwarzschild–de Sitter (appendix C). A three-dimensional Schwarzschild–de Sitter check and comments on the York boundary in de Sitter holography close the argument.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-sign-of-the-energy-not-the-sign-of-the-temperature">1. The sign of the energy, not the sign of the temperature</h3>
+<p><strong>The idea.</strong> The minus sign in the de Sitter first law is not a negative temperature; it is a statement that the matter's Killing energy is not the system's energy. This is a <strong>reading</strong>, and it directly contradicts the reading adopted in the companion essay on negative temperature.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> imports the de Sitter first law with its minus sign and does not say what the sign means. Two papers in this collection give different answers — negative temperature, or a misidentified energy — and the corpus should record the disagreement rather than adopt one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the de Sitter paragraph.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks recording the disagreement; choosing between the readings requires the boundary construction. The cost is that the corpus cannot settle it.</p>
+<h3 id="2-energy-that-vanishes-on-a-closed-slice">2. Energy that vanishes on a closed slice</h3>
+<p><strong>The idea.</strong> The total attractive Killing energy of a closed de Sitter slice is zero, so energy is not a good global variable and must be defined quasilocally. This is a <strong>number</strong> claim, and it is a constraint on any framework that wants a cosmological energy.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> has an FLRW metric with no energy statement. The vanishing of the total energy on a closed slice is a sharp obstacle: a framework that computes an energy density must explain how the total comes out zero, or say why it does not apply.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result is for the static patch of exact de Sitter with a Killing field; FLRW has no such field. Ranked second.</p>
+<h3 id="3-generalised-entropy-stationarity-as-the-first-law">3. Generalised entropy stationarity as the first law</h3>
+<p><strong>The idea.</strong> When the matter is in equilibrium at the de Sitter temperature, the whole first law collapses to the statement that the generalized entropy is stationary. This is a <strong>mechanism</strong>, and it is the same statement the entanglement-equilibrium papers reach from the other direction.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> states the first law as a relation among variations. The collapse to a single stationarity condition, in a cosmological setting, is a stronger form the corpus could adopt where equilibrium holds.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It requires the de Sitter temperature and the bath equilibrium; the corpus has the temperature and not the bath. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

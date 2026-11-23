@@ -79,7 +79,7 @@
 <li><strong>The rotor.</strong> The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\varkappa_{\mathrm{stg}}$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{B}_{H}$.</li>
 </ol>
 <p>The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.</p>
-<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\imath\mapsto\sigma_\imath$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$, $\tilde\Pi_{\mathrm{id},1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_{\imath}\mapsto\sigma_{\imath}$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the two-state system and the Bloch sphere.
 - Companion article <em>Quantum Physics in Biquaternionic Form</em>, for the state space and the plain form.
@@ -131,7 +131,7 @@ $$</p>
 <h3 id="the-mobius-action">The Möbius Action</h3>
 <p>A rotation of the physical system acts on the spinor by an $SU(2)$ matrix</p>
 <p>$$
-g = \begin{pmatrix} a & b\ -b^* & a^*\end{pmatrix},
+g = \begin{pmatrix} a &amp; b\ -b^* &amp; a^*\end{pmatrix},
 \qquad |a|^2+|b|^2 = 1,
 $$</p>
 <p>and on the star by the Möbius transformation</p>
@@ -140,7 +140,7 @@ $$</p>
 $$</p>
 <p>The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. For the rotation about $\vec u_y$ by angle $\theta_{\mathrm{axs}}$ the rotor is $\tilde{u} = \exp(\theta_{\mathrm{axs}} \vec e_y/2)$, whose matrix is</p>
 <p>$$
-g = \begin{pmatrix} \cos\tfrac{\theta_{\mathrm{axs}}}{2} & -\sin\tfrac{\theta_{\mathrm{axs}}}{2}\ \sin\tfrac{\theta_{\mathrm{axs}}}{2} & \cos\tfrac{\theta_{\mathrm{axs}}}{2}\end{pmatrix},
+g = \begin{pmatrix} \cos\tfrac{\theta_{\mathrm{axs}}}{2} &amp; -\sin\tfrac{\theta_{\mathrm{axs}}}{2}\ \sin\tfrac{\theta_{\mathrm{axs}}}{2} &amp; \cos\tfrac{\theta_{\mathrm{axs}}}{2}\end{pmatrix},
 \qquad a = \cos\tfrac{\theta_{\mathrm{axs}}}{2},\quad b = -\sin\tfrac{\theta_{\mathrm{axs}}}{2},
 $$</p>
 <p>and the Möbius image of $\varkappa_{\mathrm{stg}}$ reconstructs the vector obtained by applying the $SO(3)$ rotation about $\vec u_y$ by $\theta_{\mathrm{axs}}$ to $\vec u_x$, to machine precision, for $\theta_{\mathrm{axs}} = 0.9$ and several initial states.</p>
@@ -209,7 +209,7 @@ $$</p>
 <h3 id="orthogonality-and-the-antipode">Orthogonality and the Antipode</h3>
 <p>Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\Theta = \pi$ gives $\cos^2(\Theta/2) = 0$. The antipodal map is not a rotation of the sphere — it reverses orientation — so it is not induced by any rotor; it is realised by the antiunitary spin flip $\tilde{Ξ}\mapsto -i\sigma_y\tilde{Ξ}^*$, which acts on the stereographic coordinate as $\varkappa_{\mathrm{stg}}\mapsto -1/\bar{\varkappa_{\mathrm{stg}}}$ and carries the state to its orthogonal partner. A genuine rotation reaches the antipode only exceptionally: $\sigma_z$ is a rotation through $\pi$ about $\vec u_z$ and sends $\vec u_x$ to $(-u_x,-u_y,u_z)$, which is the antipode only for a star on the equator. A measurement along $\vec u_y = -\vec u_x$ has unit probability of the opposite outcome, and the two orthogonal states whose stars are antipodal form a basis. In the algebra the antipode of $\vec u_x$ is the other idempotent, $\tilde\Pi_{\mathrm{id},2}(\vec u_x) = \tilde\Pi_{\mathrm{id},1}(-\vec u_x) = e_t - \tilde\Pi_{\mathrm{id},1}(\vec u_x)$, so the two orthogonal states are the complementary idempotents of a single axis.</p>
 <h3 id="mixed-states-have-no-constellation">Mixed States Have No Constellation</h3>
-<p>The Majorana representation is a representation of <strong>pure</strong> states; a mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}| < 1$ is an interior point of the Bloch ball and has no unit vector to serve as a star. The constellation picture and the purity condition are therefore tied: the stars live on the boundary of the Bloch ball, and the interior is a convex mixture of boundary points in the usual way. This is the spin-1/2 statement of the general fact that the Majorana representation is a pure-state construction.</p>
+<p>The Majorana representation is a representation of <strong>pure</strong> states; a mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}| &lt; 1$ is an interior point of the Bloch ball and has no unit vector to serve as a star. The constellation picture and the purity condition are therefore tied: the stars live on the boundary of the Bloch ball, and the interior is a convex mixture of boundary points in the usual way. This is the spin-1/2 statement of the general fact that the Majorana representation is a pure-state construction.</p>
 <h2 id="what-the-algebra-adds-and-what-it-does-not">What the Algebra Adds and What It Does Not</h2>
 <p><strong>Standard physics, transcribed.</strong> The Majorana construction, the stereographic coordinate, the Möbius covariance, the coherent states, the symmetric-state constellations, and the singlet's exceptional character are all standard.</p>
 <p><strong>What the algebra organises.</strong></p>
@@ -263,7 +263,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -278,7 +278,7 @@ $$</p>
 <td>Unit real quaternions; the rotation rotors</td>
 </tr>
 <tr>
-<td>$\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_\imath$</td>
+<td>$\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_{\imath}$</td>
 <td>Spin-1/2 operator</td>
 </tr>
 <tr>
@@ -302,7 +302,7 @@ $$</p>
 <td>Number of Majorana stars; $1$ for spin-1/2</td>
 </tr>
 <tr>
-<td>$g = \begin{pmatrix}a&b\\-b^*&a^*\end{pmatrix}\in SU(2)$</td>
+<td>$g = \begin{pmatrix}a&amp;b\\-b^*&amp;a^*\end{pmatrix}\in SU(2)$</td>
 <td>Rotation acting on the spinor</td>
 </tr>
 <tr>

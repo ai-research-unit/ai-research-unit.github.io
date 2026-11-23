@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elko Spinor Fields and Massive Magnetic Like Monopoles — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Elko Spinor Fields and Massive Magnetic Like Monopoles - 1306.4645.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="elko-spinor-fields-and-massive-magnetic-like-monopoles"><strong>Elko Spinor Fields and Massive Magnetic Like Monopoles</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1306.4645v6 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>E. Capelas de Oliveira, W. A. Rodrigues, Jr., J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v6, 16 November 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Elko Spinor Fields and Massive Magnetic Like Monopoles - 1306.4645-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Elko Spinor Fields and Massive Magnetic Like Monopoles - 1306.4645.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Elko Spinor Fields and Massive Magnetic Like Monopoles - 1306.4645.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the Elko spinor fields of $\lambda$ and $\rho$ type have mass dimension $3/2$, not $1$ as the proposal that introduced them assumed, and that the reason is visible in their defining equations: what is basic is a coupled first-order system, and the Klein–Gordon equations follow from it rather than replacing it. Having corrected the dimension, the authors give the fields a job: they build electrically neutral objects carrying magnetic-like charges that couple to a spin-$3,0$ valued potential, and suggest these could condense into something resembling dark matter.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definitional-point">The definitional point</h3>
+<p>"ecall that by construction Elko spinor fields of λ and ρ types satisfy a coupled system of first order partial differential equations (csfopde) that once interacted leads to Klein-Gordon equations for the λ and ρ type fields. Since the csfopde"</p>
+<h3 id="the-dimension-argument">The dimension argument</h3>
+<p>"Since the csfopde is the basic one and since the Klein- Gordon equations for λ and ρ possess solutions that are not solutions of the csfopde for λ and ρ we infer that it is legitimate to attribute to those fields mass dimension 3/2 (as is the case of Dirac spinor fields) and not mass dimension 1 as previously suggested in recent literature (see list of references)."</p>
+<p>The proof is variational: "A proof of this fact is offered by deriving the csfopde for the λ and ρ from a Lagrangian where these fields have indeed mass dimension 3/2. Taking seriously"</p>
+<h3 id="the-proposed-role">The proposed role</h3>
+<p>"ields? Here we proposed that the fields λ and ρ serve the purpose of building the fields K ∈ Cℓ0 (M,η) ⊗ R0 1,3 and M ∈ secCℓ0 (M,η) ⊗ R0 1,3 (see Eq.(38)). These fields"</p>
+<p>"These fields are electrically neutral but carry magnetic like charges which permit them to couple to a su(2) ≃ spin3,0 ⊂ R0 3,0 valued potential A ∈ sec V1 T∗ M ⊗ R0 3,0." So the gauge field is not a vector but a spin-$3,0$ object.</p>
+<h3 id="the-cosmological-suggestion">The cosmological suggestion</h3>
+<p>"If the field $A$ is of short range the particles described by the $K$ and $M$ may interact forming something analogous to dark matter, in the sense that they may form a condensate of spin zero particles with zero total magnetic like charges that do not couple with the electromagnetic field and are thus invisible."</p>
+<h3 id="the-contrast-with-the-original-theory">The contrast with the original theory</h3>
+<p>"It is important to emphasize in order to avoid misunderstandings that the theory presented in this paper is an alternative theory to the one originally built in [1]". The differences: "In the theory in [1] the elko spinor fields are of mass dimension $1$ and that theory breaks Lorentz invariance". And a disclaimer: "we do not claim that our theory is better than the other."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-dimension-of-a-field-is-read-from-its-equation-not-assumed">1. The dimension of a field is read from its equation, not assumed</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: a field's mass dimension is fixed by which equation is basic. If the first-order coupled system is basic and the second-order equations are consequences with extra solutions, then the field has the first-order dimension, $3/2$, and the second-order reading is wrong.</p>
+<p><strong>What it would add.</strong> The corpus assigns dimensions by convention in each article. This gives a decision procedure: compare the solution sets of the two equations; if the second-order one has solutions the first-order one lacks, the first-order one is the definition and sets the dimension. That is a small piece of methodology with wide applicability, since the same question arises whenever a field has both a first-order and a second-order description.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument's force depends on which equation one takes as basic, and the paper asserts rather than derives that the coupled system is basic; the criterion is only as good as that choice.</p>
+<h3 id="2-class-five-spinors-can-carry-a-magnetic-charge">2. Class-five spinors can carry a magnetic charge</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: a spinor that satisfies no Dirac equation, and whose bilinear invariants vanish in the way Lounesto's fifth class requires, can still be coupled to a gauge field — a spin-$3,0$ valued one — through a magnetic-like charge.</p>
+<p><strong>What it would add.</strong> The corpus's spinor classification and its Majorana article treat class-five spinors as objects with unusual bilinears and little dynamics. This says they have a natural coupling, and that the coupling requires a gauge field of an unusual type. That is a concrete proposal for what such spinors could be for, which is more than the corpus has.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> A spin-$3,0$ valued potential has no independent motivation in the corpus, and introducing one would be a larger step than the spinor result it serves.</p>
+<h3 id="3-invisibility-by-cancellation-of-charges">3. Invisibility by cancellation of charges</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: a condensate of neutral particles each carrying magnetic-like charge can have zero total charge, and then it couples to nothing electromagnetic at all.</p>
+<p><strong>What it would add.</strong> The corpus's dark-matter and condensate articles look for invisible sectors in extensions of the gauge group. This offers invisibility from cancellation rather than from decoupling, which is a different mechanism and one that leaves the constituents interacting with each other. It is the kind of structural possibility the corpus's model-building articles could use as a contrast case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-scalar-sector-and-the-leptoquark-bounds.md</code>.</p>
+<p><strong>What stands in the way.</strong> The proposal is a paragraph, not a model: no abundance, no cross-section, no test is offered, and the corpus's articles on the scalar sector are quantitative.</p>
+<p>The rank: the dimension criterion first, because it is usable method; the class-five coupling second, because it gives such spinors a function; the charge-cancellation mechanism last, because it is a suggestion.</p>
+<p>The remaining items in one line each: the derivation of the coupled system from a Lagrangian, which is the paper's proof obligation and its strongest technical step; the causal propagators for the $K$ and $M$ fields, which are what a quantum field theory of these objects would need; and the priority note that Elko fields appeared before the paper that named them, which is a correction to the record.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

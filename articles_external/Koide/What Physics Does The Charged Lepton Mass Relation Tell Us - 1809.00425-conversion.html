@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Physics Does The Charged Lepton Mass Relation Tell Us? — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/What Physics Does The Charged Lepton Mass Relation Tell Us - 1809.00425.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-physics-does-the-charged-lepton-mass-relation-tell-us"><strong>What Physics Does The Charged Lepton Mass Relation Tell Us?</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1809.00425v3 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 12 November 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF says it is a talk at FLASY 2018)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/What Physics Does The Charged Lepton Mass Relation Tell Us - 1809.00425-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/What Physics Does The Charged Lepton Mass Relation Tell Us - 1809.00425.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/What Physics Does The Charged Lepton Mass Relation Tell Us - 1809.00425.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A conference talk that poses one question: why should a relation derived for running masses hold for pole masses? The answer given is Sumino's cancellation — a family gauge interaction whose logarithm cancels the QED one — plus the author's later modifications and a supersymmetric rederivation that removes a residual mixing between the singlet and octet parts of the nonet. Along the way it collects the numbers: the 1982 prediction $1776.97$ MeV, the 1982 measurement $1784.2\pm3.2$ MeV, the 1992 value $1776.99^{+0.29}_{-0.26}$ MeV, and the present agreement at the $1.4\times10^{-5}$ level.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-and-its-accuracy">The relation and its accuracy</h3>
+<p>$$
+K\equiv\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=\frac23,
+\tag{paper 0.1}
+$$</p>
+<p>"It is well known that the formula is excellently satisfied by the observed charged lepton masses"</p>
+<p>$$
+K(m^{\rm obs}_{ei})=\frac23\times(0.999989\pm0.000014).
+\tag{paper 0.2}
+$$</p>
+<h3 id="the-prediction-and-the-reversal">The prediction and the reversal</h3>
+<p>"1982, the formula predicted a tau lepton mass $m^{\rm pred}_\tau=1776.97$ MeV, by inputting the observed mass values $m_e$ and $m_\mu$. On the other hand, the observed mass at 1982 was $(m^{\rm obs}_\tau)_{\rm old}=1784.2\pm3.2$ MeV." Then "an accurate value of $m^{\rm obs}_\tau$ was reported: $(m^{\rm obs}_\tau)_{\rm new}=1776.99^{+0.29}_{-0.26}$ MeV. The new observed value was excellently coincident with the prediction."</p>
+<h3 id="the-puzzle-stated-plainly">The puzzle stated plainly</h3>
+<p>"I would like to emphasize that the formula $K=2/3$ should be never satisfied with the observed charged lepton masses in the theoretical point of view. This is the main motivation of my present talk. In general, the 'mass' in the relation derived in a field theoretical model means the 'running' mass, instead of the 'pole' mass."</p>
+<h3 id="what-a-solution-must-do">What a solution must do</h3>
+<p>"This accuracy is excellent enough to believe that the coincidence is not accidental, but suggests a nontrivial physics behind it. Thus, if we take the coincidence seriously, we should treat the renormalization group (RG) effects carefully."</p>
+<h3 id="the-answer">The answer</h3>
+<p>"we have discussed why the $K$ relation is so beautifully satisfied by the pole masses, not the running masses. Now we can understand the reason according to the Sumino's idea and the modified Sumino model."</p>
+<h3 id="the-last-obstacle-and-its-removal">The last obstacle and its removal</h3>
+<p>"There is another effect which disturbs the K-relation: $\Phi_8\leftrightarrow\Phi_0\equiv[\Phi]/\sqrt3$ mixing due to renormalization effect. The $K$ and $\kappa$ relations were derived from potential model under a non-SUSY scenario. Recall that there is no vertex correction in a SUSY model. Therefore, if we derive the relations on the basis of SUSY scenario, then the problem will disappear. Very recently, we succeeded to re-derive the $K$ and $\kappa$ relations on the basis of SUSY scenario."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-relation-derived-for-one-kind-of-mass-tested-on-another">1. A relation derived for one kind of mass, tested on another</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: the corpus tests $Q=2/3$ on pole masses and treats the number as a property of the leptons, without asking which mass the derivation refers to; here the two are different objects and the agreement becomes the thing to explain.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 presents $Q$ as a measured fact with no mass-scheme caveat; the corpus's §11 row about running to a common scale is the only nod in that direction. This talk makes the scheme question the central one and shows that the answer is not "run and compare" but "explain why the running is invisible". That reframes the task rather than adding a datum.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1 (as a caveat on what is measured) and §11 (first row).</p>
+<p><strong>What stands in the way.</strong> The talk asserts the resolution and cites its own papers; nothing is computed here, and the corpus has no family gauge sector in which to check it. First, because it changes the interpretation of the corpus's one solid measurement.</p>
+<h3 id="2-the-1982-prediction-as-a-blind-test">2. The 1982 prediction as a blind test</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $1776.97$ MeV predicted from $m_e$ and $m_\mu$ alone, against $1784.2\pm3.2$ MeV then measured and $1776.99^{+0.29}_{-0.26}$ MeV measured ten years later.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 records the closure as a present-day ratio, which any parametrisation with two free parameters can satisfy. A prediction made before the measurement, and wrong by five standard deviations at the time, is a different kind of evidence, and the corpus note does not distinguish the two.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, as the historical footnote that changes the status of the number.</p>
+<p><strong>What stands in the way.</strong> One successful blind prediction from an expression with two parameters and three quantities is weak evidence, as the corpus note itself warns; and the old measurement's error bar was itself contested. Second.</p>
+<h3 id="3-a-residual-mixing-between-singlet-and-octet-as-the-last-defect">3. A residual mixing between singlet and octet as the last defect</h3>
+<p><strong>The idea.</strong> A <strong>mechanism-level</strong> point: even with the cancellation in place, the nonet's singlet and octet components mix under renormalisation, and supersymmetry removes the vertex correction that causes it.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Koide/Family Gauge Symmetry and Koide's Mass Formula - 0812.2090-conversion.md</code> records the cancellation and the requirement $\alpha=\alpha_F/4$, and its list of open points does not include the singlet–octet mixing. Adding it makes the mechanism's bookkeeping complete: three conditions, not two.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Koide/Family Gauge Symmetry and Koide's Mass Formula - 0812.2090-conversion.md</code>, in the list of assumptions.</p>
+<p><strong>What stands in the way.</strong> The fix is asserted and the reference is to work "very recently" completed; the talk gives no equation for the mixing. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

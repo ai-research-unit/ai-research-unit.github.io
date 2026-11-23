@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dielectric Permeability Tensor and Linear Waves in Spin-1/2 Quantum Kinetics with Non-Trivial Equilibrium Spin-Distribution Functions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/2 quantum kinetics with non-trivial equilibrium spin-distribution functions.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dielectric-permeability-tensor-and-linear-waves-in-spin-12-quantum-kinetics-with-non-trivial-equilibrium-spin-distribution-functions"><strong>Dielectric Permeability Tensor and Linear Waves in Spin-1/2 Quantum Kinetics with Non-Trivial Equilibrium Spin-Distribution Functions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1705.09738v1 [physics.plasm-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Pavel A. Andreev, L. S. Kuz'menkov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 26 May 2017 (PDF dated 30 May 2017)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/2 quantum kinetics with non-trivial equilibrium spin-distribution functions-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/2 quantum kinetics with non-trivial equilibrium spin-distribution functions.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/2 quantum kinetics with non-trivial equilibrium spin-distribution functions.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the dielectric permeability tensor for electromagnetic waves propagating parallel to an external magnetic field in a spin-$\tfrac12$ quantum plasma, keeping the transverse components of the equilibrium spin-distribution function. The standard treatment takes an equilibrium in which only the $z$-projection of the spin distribution is non-zero; the authors call that the <em>trivial</em> case and treat the general one, whose equilibrium solution they take from an earlier paper. The non-trivial part enters the permeability tensor additively, changes the transverse dispersion relation, and is evaluated numerically for a degenerate electron gas. The result is a computed correction, comparable to or larger than the spin term already known, with four named shifts in the wave spectrum.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-equilibria">The two equilibria</h3>
+<p>"the equilibrium spin distribution function S0z while S0x = S0y = 0 [6, 7]." whose deviation from the scalar distribution carries the spin. In the trivial regime "nzero z-projection proportional to the difference of the spin distribution function while x- and y-projections are equal to zero. It is called trivial equilibrium spin-distribution functions."; in the general, non-trivial regime "ase, x- and y-projections of the spin-distribution functions are nonzero which is called the non-trivial regime.". The corresponding equilibrium solution is not derived here; the paper cites <em>Phys. Plasmas</em> <strong>23</strong>, 062103 (2016) for it.</p>
+<h3 id="the-method">The method</h3>
+<p>The kinetic equations are linearised in the wave amplitude, so the permeability tensor is the linear response of the spin-$1/2$ distribution. "Contribution of the non-trivial part of the spin-distribution function appears in the dielectric permeability tensor in the additive form. It is explicitly found here." The dispersion equation for transverse waves is then modified, and the modification is computed rather than bounded.</p>
+<h3 id="the-four-spectral-shifts-as-stated-in-the-abstract">The four spectral shifts, as stated in the abstract</h3>
+<p>"A decrease of the left-hand circularly polarized wave frequency, an increase of the high-frequency right-hand circularly polarized wave frequency, and a decrease of frequency changing by an increase of frequency at the growth of the wave vector for the whistler are found. A dramatic decrease of the spin wave frequency resulting in several times larger group velocity of the spin wave is found either."</p>
+<p>The claim about size is conditional on the regime: the extra term "can be comparable with the classic terms for the relatively small wave vectors and frequencies above the cyclotron frequency", and "in majority of regimes, the extra spin caused term dominates over the spin term found earlier, except the small frequency regime, where their contributions in the whistler spectrum are comparable."</p>
+<h3 id="the-hydrodynamical-closure">The hydrodynamical closure</h3>
+<p>"Found dispersion equations are used for obtaining of an effective quantum hydrodynamics reproducing these results. This generalization requires the introduction of corresponding equation of state for the thermal part of the spin current in the spin evolution equation." That is the paper's structural point: a kinetic result can be re-expressed as a fluid, but only if the spin current's thermal part gets an equation of state of its own.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-spin-state-that-is-not-a-direction">1. A spin state that is not a direction</h3>
+<p><strong>The idea.</strong> The equilibrium spin distribution has three projections, and the corpus's spin fluid carries only a direction. Here the $x$- and $y$-projections need not vanish, so the equilibrium is a spin state with structure beyond a unit vector, and the correction it produces is additive in the response tensor, not a reorientation of the existing one.</p>
+<p><strong>What it would add.</strong> A state the spin-half fluid cannot reach. The corpus writes the spin as a unit spacelike vector $w_\mu$ with constant magnitude $\hbar/2$, so every equilibrium is a direction; a distribution with transverse components is a superposition, and the paper shows the superposition has measurable consequences in the wave spectrum.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code>, whose Wigner function already carries a spin part but is read as a density of directions.</p>
+<p><strong>What stands in the way.</strong> The corpus's fluid layer is built on a single element per event; a mixture of spin projections needs a matrix-valued distribution, which the algebra of one element does not supply.</p>
+<h3 id="2-an-equation-of-state-for-the-thermal-spin-current-not-for-the-spin">2. An equation of state for the thermal spin current, not for the spin</h3>
+<p><strong>The idea.</strong> To fold the kinetic result into a fluid, the paper invents an equation of state for the <em>thermal part of the spin current</em>, separate from the spin density. That is a distinct closure assumption from an equation of state for pressure or for energy.</p>
+<p><strong>What it would add.</strong> A named closure the corpus lacks. The spin hydrodynamics article closes the spin current by a constitutive relation; here the closure is an equation of state with the same status as $P=P(\rho,\varepsilon)$, which is a stronger and more falsifiable object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>, at the step where the spin current is closed.</p>
+<p><strong>What stands in the way.</strong> The paper's equation of state is fitted to a degenerate electron gas in a magnetic field; the corpus's fluid is a relativistic one-element field with no Fermi surface.</p>
+<p>The paper's numerical results are the four spectral shifts quoted above, all for a degenerate electron gas; no bound is derived and nothing is conjectured beyond the regime statements.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

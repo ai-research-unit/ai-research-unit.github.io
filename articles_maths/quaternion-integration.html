@@ -229,7 +229,7 @@ $$</p>
 <p>$$
 E(\tilde q) = \frac{\tilde{q}^{\natural}}{|\tilde q|^4} = \frac{\tilde q^{-1}}{|\tilde q|^2}, \qquad \tilde q \neq 0.
 $$</p>
-<p>It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\tilde q)$ for $\lambda > 0$, and it is real-analytic away from the origin.</p>
+<p>It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\tilde q)$ for $\lambda &gt; 0$, and it is real-analytic away from the origin.</p>
 <p><strong>Theorem.</strong> $E$ is both left regular and right regular on $\mathbb{H} \setminus \{0\}$.</p>
 <p><strong>Proof.</strong> The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial/\partial q_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial/\partial q_\mu\,(|\tilde q|^{-4})$, and $\partial/\partial q_\mu\,(|\tilde q|^{-4}) = -4 q_\mu |\tilde q|^{-6}$ because $\partial/\partial q_\mu\,|\tilde q|^2 = 2q_\mu$. Hence</p>
 <p>$$
@@ -247,7 +247,7 @@ $$</p>
 DE = ED = 2\pi^2 \delta_0, \qquad \bar{D}\bar{E} = \bar{E}\bar{D} = 2\pi^2 \delta_0,
 $$</p>
 <p>where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the area of the unit sphere $S^3 \subset \mathbb{R}^4$.</p>
-<p><strong>Proof.</strong> The function $E$ is locally integrable and smooth away from the origin, and $DE = 0$ there; hence the distribution $DE$ is supported at $\{0\}$. It is homogeneous of degree $-4$, because $D$ lowers the degree of a homogeneous function by one, and the only distribution supported at the origin and homogeneous of degree $-4$ in four variables is a multiple of $\delta_0$. To compute the multiple, excise the singularity. On the annulus $\varepsilon < |\tilde q| < 1$ the function $E$ is smooth and $DE = 0$, so the divergence theorem gives</p>
+<p><strong>Proof.</strong> The function $E$ is locally integrable and smooth away from the origin, and $DE = 0$ there; hence the distribution $DE$ is supported at $\{0\}$. It is homogeneous of degree $-4$, because $D$ lowers the degree of a homogeneous function by one, and the only distribution supported at the origin and homogeneous of degree $-4$ in four variables is a multiple of $\delta_0$. To compute the multiple, excise the singularity. On the annulus $\varepsilon &lt; |\tilde q| &lt; 1$ the function $E$ is smooth and $DE = 0$, so the divergence theorem gives</p>
 <p>$$
 \int_{|\tilde q| = 1} \nu E \, dS = \int_{|\tilde q| = \varepsilon} \nu E \, dS,
 $$</p>
@@ -256,7 +256,7 @@ $$</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <h3 id="the-kernelnormal-product">The Kernel–Normal Product</h3>
 <p>On the boundary of a ball, the quaternion product of the kernel and the conormal element collapses to a scalar.</p>
-<p><strong>Theorem.</strong> Let $\tilde p \in \mathbb{H}$, let $r > 0$ and let $w \in \partial B(\tilde p, r)$. Then</p>
+<p><strong>Theorem.</strong> Let $\tilde p \in \mathbb{H}$, let $r &gt; 0$ and let $w \in \partial B(\tilde p, r)$. Then</p>
 <p>$$
 E(w - \tilde p)\,\nu(w) = \nu(w)\,E(w - \tilde p) = \frac{1}{|w - \tilde p|^3} = \frac{1}{r^3},
 $$</p>
@@ -281,7 +281,7 @@ $$</p>
 <p>On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(\tilde p)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-\tilde p)(Df)(w)\,dV$; the identity follows.</p>
 <p>The representation is the quaternionic instance of the general Cauchy–Pompeiu formula of <em>Hypercomplex Integration</em>: the boundary term reproduces $f$ when $f$ is regular, and the volume term corrects for the failure of regularity through $Df$. The kernel depends on the system only through the fundamental solution of its operator.</p>
 <h3 id="the-cauchy-integral-formula-for-regular-functions">The Cauchy Integral Formula for Regular Functions</h3>
-<p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(\tilde p, r)}$. Then for every $\tilde q$ with $|\tilde q - \tilde p| < r$,</p>
+<p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(\tilde p, r)}$. Then for every $\tilde q$ with $|\tilde q - \tilde p| &lt; r$,</p>
 <p>$$ \boxed{\; f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) \;} .$$</p>
 <p><strong>Proof.</strong> Apply the Cauchy–Pompeiu representation with $\Omega = B(\tilde p,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.</p>
 <p>For a ball centred at the point of evaluation, $\tilde q = \tilde p$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the <strong>mean value property</strong></p>
@@ -290,14 +290,14 @@ f(\tilde p) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde p, r)} f(w) \, dS(w).
 $$</p>
 <p>This is the mean value formula for harmonic functions, applied to the four components of the regular function; it shows directly that the Cauchy kernel is correctly normalised, and it exhibits the constant $\omega_4 = 2\pi^2$ as the surface area that makes the average an average.</p>
 <h3 id="the-right-regular-formula">The Right-Regular Formula</h3>
-<p><strong>Theorem (right-regular Cauchy integral formula).</strong> Let $f$ be right regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| < r$,</p>
+<p><strong>Theorem (right-regular Cauchy integral formula).</strong> Let $f$ be right regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| &lt; r$,</p>
 <p>$$
 f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$</p>
 <p><strong>Proof.</strong> Let $f$ be right $D$-regular, so that $\bar{f}$ is left $\bar{D}$-regular. The left-handed formula for the conjugate operator $\bar{D}$ reads $\bar{f}(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\bar{E}(w-\tilde q)\,\bar{\nu}(w)\,\bar{f}(w)\,dS(w)$, with kernel $\bar{E}$ and conormal element $\bar{\nu}$. Conjugating this identity reverses the order of the factors and uses $\overline{\bar{E}} = E$ and $\overline{\bar{\nu}} = \nu$, giving the displayed formula for $f$; the constant $2\pi^2$ is unchanged.</p>
 <h3 id="the-two-sided-cauchy-integral-formula">The Two-Sided Cauchy Integral Formula</h3>
 <p><strong>Definition.</strong> A function is <strong>two-sided regular</strong> if it is both left regular and right regular.</p>
-<p><strong>Theorem (two-sided Cauchy integral formula).</strong> Let $f$ be two-sided regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| < r$ both formulas hold and they coincide:</p>
+<p><strong>Theorem (two-sided Cauchy integral formula).</strong> Let $f$ be two-sided regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| &lt; r$ both formulas hold and they coincide:</p>
 <p>$$
 f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$</p>

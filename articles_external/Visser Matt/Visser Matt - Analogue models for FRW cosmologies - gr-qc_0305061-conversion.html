@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analogue models for FRW cosmologies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models for FRW cosmologies - gr-qc_0305061.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analogue-models-for-frw-cosmologies"><strong>Analogue models for FRW cosmologies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0305061v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Carlos Barceló, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 May 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; essay, General Relativity and Gravitation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analogue models for FRW cosmologies - gr-qc_0305061-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models for FRW cosmologies - gr-qc_0305061.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Analogue models for FRW cosmologies - gr-qc_0305061.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what it takes to mimic a spatially flat FRW cosmology in a condensed-matter analogue, and compares two routes. The first is an explosion: let the medium itself flow radially outward with $\vec v=H b(t)\vec z$, which does produce an FRW effective metric but necessarily creates an apparent horizon where the flow exceeds the sound speed, and is therefore dismissed. The second, preferred route keeps the medium at rest and varies the propagation speed instead. An expanding universe then corresponds to a <em>decreasing</em> sound speed, with a pseudo-time $d\tau=dt\sqrt{c_s(t)/c_0}$ and scale factor $a(\tau)=c_0/c_s$; de Sitter expansion corresponds to $c_s(t)=c_0/(H^2t^2)$ in laboratory time. The sound speed can be tuned with a Feshbach resonance, which changes the scattering length without changing the density, so the Gross–Pitaevskii approximations underlying the effective metric survive.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"In this essay we will take a look at what would be needed to mimic a cosmological spacetime — to be precise a spatially flat FRW cosmology — in one of these analogue models. In order to do this one needs to build and control suitable time dependent systems."</p>
+<h3 id="why-the-explosion-route-fails">Why the explosion route fails</h3>
+<p>"because of the linearly rising velocity field $\vec v=Hb\vec z$, this particular realization of a FRW effective geometry is guaranteed to possess an apparent horizon, a spherical surface in which the speed of the fluid surpasses the speed of sound. From a dynamical point of view, this might introduce many practical problems not intrinsically inherent to the type of geometries we are trying to reproduce. In this sense, we view the use of an exploding medium as not being a particularly useful analogue for an expanding FRW universe."</p>
+<h3 id="the-clean-route">The clean route</h3>
+<p>"A much better analogue of an expanding FRW universe can be obtained by keeping the medium at rest and instead varying the propagation speed of the excitations." With constant density the metric becomes</p>
+<p>$$ds^2_{\text{effective}}=-\frac{c_0}{c_s(t)}\,c_s(t)^2dt^2+\frac{c_0}{c_s(t)}\,d\vec x^{\,2}, \qquad (paper\ 10)$$</p>
+<p>and after $d\tau=dt\sqrt{c_s(t)/c_0}$,</p>
+<p>$$ds^2_{\text{effective}}=-\frac{c_0}{c_s(t)}\,c_0^2d\tau^2+d\vec x^{\,2}, \qquad (paper\ 11)$$</p>
+<p>so "we completely reproduce a FRW cosmology provided we identify $\frac{c_0}{c_s(t)}d\tau\leftrightarrow c\,dt_{\text{FRW}}$; $\frac{c_0}{c_s(t)}\leftrightarrow a(\tau)^2$. That is, an expanding universe corresponds in the effective geometry to a decreasing propagation speed."</p>
+<h3 id="the-de-sitter-case">The de Sitter case</h3>
+<p>"$a(\tau)=e^{H\tau}$; $a(t)=Ht$; corresponding to a power law in physical time for the speed of sound $c_s(t)=\frac{c_0}{a^2(\tau)}=\frac{c_0}{H^2t^2}$."</p>
+<h3 id="why-a-feshbach-resonance-is-the-right-knob">Why a Feshbach resonance is the right knob</h3>
+<p>"the use of a Feshbach resonance in a Bose–Einstein condensate yields a way of influencing the scattering length, and hence the propagation speed, without changes in condensate density — and more importantly without violating the approximations made in deriving the Gross–Pitaevskii equation on which the entire 'effective metric' approach to phonon propagation in BECs is based."</p>
+<h3 id="the-four-conclusions">The four conclusions</h3>
+<p>"any mechanism for changing the propagation speed in a stationary medium is from a mathematical perspective equivalent to working in an expanding (or collapsing) spatially flat FRW universe"; Feshbach tuning preserves the GP approximations; "the relevant parameters seem to be well within our technological horizon"; and "building an analogue FRW cosmology (suitable for testing semiclassical quantum effects) seems considerably less problematic than building an analogue black hole."</p>
+<h3 id="the-goal">The goal</h3>
+<p>"Our long range goal is to turn at least some aspects of cosmology into a laboratory science, not just an observational science."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-expansion-can-be-traded-for-a-changing-constant">1. Expansion can be traded for a changing constant</h3>
+<p><strong>The idea.</strong> A spatially flat FRW metric with scale factor $a(\tau)$ is exactly equivalent to a static medium whose signal speed falls as $1/a$. Nothing has to move. The expansion of space and the slowing of the local speed of light are the same geometry described in two coordinate systems.</p>
+<p><strong>What it would add.</strong> This bears directly on <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>. The corpus describes a carried FLRW metric but has no mechanism for producing the scale factor. The paper supplies one that requires no stress-energy at all: let a parameter vary in time. That reframes the "missing source" question — a scale factor may not need a source if it is a varying coupling in disguise. Whether that reframing is acceptable is a judgment, but it should be made deliberately rather than by default.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, as an alternative to sourcing $a(t)$.</p>
+<p><strong>What stands in the way.</strong> In the analogue, $c_s$ is a property of a medium, and the medium provides the frame. In a fundamental theory there is no medium, so the equivalence has no obvious referent. That objection may be fatal and the corpus should say why.</p>
+<h3 id="2-a-horizon-that-appears-unasked">2. A horizon that appears unasked</h3>
+<p><strong>The idea.</strong> The explosion route produces an FRW metric and an apparent horizon together, because a linearly rising velocity field must somewhere exceed the sound speed.</p>
+<p><strong>What it would add.</strong> A structural observation: certain geometries come with horizons whether or not you want them. <code>articles_physics/horizons-without-a-global-structure.md</code> argues horizons can exist without a global structure; this paper gives a case where a horizon is forced by the construction, not by the global structure. That is a different reason for the same conclusion and strengthens it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>.</p>
+<p><strong>What stands in the way.</strong> The forcing comes from a specific velocity profile. Ranked second.</p>
+<h3 id="3-the-pseudo-time-is-the-physical-time">3. The pseudo-time is the physical time</h3>
+<p><strong>The idea.</strong> Laboratory time and cosmological time are not the same coordinate: $d\tau=dt\sqrt{c_s/c_0}$. The analogue's "expansion" is only visible in $\tau$, and anything computed in $t$ looks different.</p>
+<p><strong>What it would add.</strong> A warning about time reparametrisation that applies to <code>articles_physics/the-four-forms-and-the-four-norms.md</code> and the corpus's other places where a time coordinate is chosen. Which time is physical is a decision with consequences, and the paper gives a case where the two differ by a factor that is itself the dynamical variable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-four-forms-and-the-four-norms.md</code>.</p>
+<p><strong>What stands in the way.</strong> The reparametrisation is forced by the medium's rest frame. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

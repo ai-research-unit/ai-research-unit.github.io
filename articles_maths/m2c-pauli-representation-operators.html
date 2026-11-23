@@ -114,7 +114,7 @@ $$
 It is $\mathbb{C}$-linear. The matrix $A$ is recovered from the operator by $A=L_A(\mathrm I_2)$, so one matrix describes the operator and the description is unique.</p>
 <p><strong>The $4\times4$ matrix.</strong> In the frame $\mathcal{P}$,
 $$
-[L_A]_{\mathcal{P}}=\mathrm I_2\otimes A=\begin{pmatrix}A&0\\0&A\end{pmatrix}.
+[L_A]_{\mathcal{P}}=\mathrm I_2\otimes A=\begin{pmatrix}A&amp;0\\0&amp;A\end{pmatrix}.
 $$
 The second block is a copy of the first, which is the compression of the Pauli Representation article: the left regular matrix of $\tilde Q$ is this matrix, and its one block is $A$.</p>
 <p><strong>The law.</strong> The composition is $L_A L_C=L_{AC}$, and the map $A\mapsto L_A$ is injective. The left copy is the four-dimensional subalgebra $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$.</p>
@@ -130,8 +130,8 @@ The matrix $B$ is recovered by $B=R_B(\mathrm I_2)$.</p>
 $$
 [R_B]_{\mathcal{P}}=B^{\mathsf T}\otimes\mathrm I_2=
 \begin{pmatrix}
-b_{11}\mathrm I_2&b_{21}\mathrm I_2\\
-b_{12}\mathrm I_2&b_{22}\mathrm I_2
+b_{11}\mathrm I_2&amp;b_{21}\mathrm I_2\\
+b_{12}\mathrm I_2&amp;b_{22}\mathrm I_2
 \end{pmatrix}.
 $$
 The transpose is the price of the column-major frame: the block matrix records $B^{\mathsf T}$, while the operator uses $B$. The compressed block of the Pauli Representation article is $B^{\mathsf T}$ for the same reason, and the action itself is right multiplication by $B$.</p>
@@ -280,14 +280,14 @@ $$
 The possible values are $0,1,2,4$; a product never has rank three.</p>
 <p><em>Proof.</em> Choose invertible matrices $G,H,K,L$ with
 $$
-A=G\begin{pmatrix}\mathrm I_r&0\\0&0\end{pmatrix}H,\qquad
-B=K\begin{pmatrix}\mathrm I_s&0\\0&0\end{pmatrix}L,
+A=G\begin{pmatrix}\mathrm I_r&amp;0\\0&amp;0\end{pmatrix}H,\qquad
+B=K\begin{pmatrix}\mathrm I_s&amp;0\\0&amp;0\end{pmatrix}L,
 $$
 where $r=\operatorname{rank}A$ and $s=\operatorname{rank}B$. As $Y$ ranges over $M_2(\mathbb{C})$, the matrix $HYK$ ranges over $M_2(\mathbb{C})$, and the map
 $$
 Z\longmapsto
-\begin{pmatrix}\mathrm I_r&0\\0&0\end{pmatrix}Z
-\begin{pmatrix}\mathrm I_s&0\\0&0\end{pmatrix}
+\begin{pmatrix}\mathrm I_r&amp;0\\0&amp;0\end{pmatrix}Z
+\begin{pmatrix}\mathrm I_s&amp;0\\0&amp;0\end{pmatrix}
 $$
 has image the $r\times s$ corner, of dimension $rs$. Hence the rank is $rs$.</p>
 <p><strong>The Kronecker form.</strong> The same formula is the rank of the Kronecker product:
@@ -344,7 +344,7 @@ conjugation by $A$. Every automorphism of $M_2(\mathbb{C})$ is inner, so the aut
 <p><strong>The one-sided case.</strong> A left multiplication $L_A$ is an automorphism only when $A=\mathrm I_2$; the same holds for a right multiplication. The nontrivial automorphisms are genuinely two-sided, and they are the pairs $(A,A^{-1})$.</p>
 <p><strong>The example.</strong> For $A=\operatorname{diag}(2,1)$,
 $$
-L_AR_{A^{-1}}(Y)=\begin{pmatrix}2&0\\0&1\end{pmatrix}Y\begin{pmatrix}\tfrac12&0\\0&1\end{pmatrix},
+L_AR_{A^{-1}}(Y)=\begin{pmatrix}2&amp;0\\0&amp;1\end{pmatrix}Y\begin{pmatrix}\tfrac12&amp;0\\0&amp;1\end{pmatrix},
 $$
 which fixes the diagonal entries, doubles $y_{12}$ and halves $y_{21}$. The pair is $(A,A^{-1})$, and the scaling orbit $(\lambda A,\lambda^{-1}A^{-1})$ is the same automorphism.</p>
 <h3 id="the-system-of-matrix-units">The System of Matrix Units</h3>

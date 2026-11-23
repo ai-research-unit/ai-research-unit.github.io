@@ -123,8 +123,8 @@ $$</p>
 <p>Relative to the decomposition $\mathbb{C}^4=\mathbb{C}^2_+\oplus\mathbb{C}^2_-$, every matrix has a block form</p>
 <p>$$
 A=\begin{pmatrix}
-A_{++}&A_{+-}\\
-A_{-+}&A_{--}
+A_{++}&amp;A_{+-}\\
+A_{-+}&amp;A_{--}
 \end{pmatrix},
 \qquad
 A_{++}\in M_2(\mathbb{C}),\quad
@@ -162,12 +162,12 @@ $$</p>
 <p><strong>Proof.</strong> Choose a basis adapted to the decomposition, with the first two vectors in $\mathbb{C}^2_+$ and the last two in $\mathbb{C}^2_-$. In that basis $P_+=\operatorname{diag}(I_2,0)$ and $P_-=\operatorname{diag}(0,I_2)$, and the four corners are the four $2\times2$ blocks of the block matrix. Each block has four complex entries; the dimensions are $4+4+4+4=16$. The diagonal blocks are closed under multiplication and are full $2\times2$ matrix algebras; the off-diagonal blocks are the spaces of linear maps between the two planes, each isomorphic to $M_2(\mathbb{C})$ as a vector space.</p>
 <p><strong>The multiplication table.</strong> In block form,</p>
 <p>$$
-\begin{pmatrix}A&B\\C&D\end{pmatrix}
-\begin{pmatrix}A'&B'\\C'&D'\end{pmatrix}
+\begin{pmatrix}A&amp;B\\C&amp;D\end{pmatrix}
+\begin{pmatrix}A'&amp;B'\\C'&amp;D'\end{pmatrix}
 =
 \begin{pmatrix}
-AA'+BC'&AB'+BD'\\
-CA'+DC'&CB'+DD'
+AA'+BC'&amp;AB'+BD'\\
+CA'+DC'&amp;CB'+DD'
 \end{pmatrix}.
 $$</p>
 <p>The products $BC'\subseteq\mathcal{A}$ and $CB'\subseteq\mathcal{D}$ return to the diagonal. The off-diagonal blocks are <strong>bimodules</strong>: $\mathcal{B}$ is a left $\mathcal{A}$-module and a right $\mathcal{D}$-module, and $\mathcal{C}$ is a left $\mathcal{D}$-module and a right $\mathcal{A}$-module. The algebra is not the direct sum of $\mathcal{A}$ and $\mathcal{D}$ as algebras; the blocks $\mathcal{B}$ and $\mathcal{C}$ are nonzero and multiply back into the diagonal. This is the rank-two Peirce split of <em>The Rank-Two Split of $M_4(\mathbb{C})$</em>.</p>
@@ -210,9 +210,9 @@ M_4^{-}=\mathcal{B}\oplus\mathcal{C},
 $$</p>
 <p><strong>Proof.</strong> Write $X$ in block form. The condition $\Gamma X=X\Gamma$ with $\Gamma=\operatorname{diag}(I_2,-I_2)$ reads</p>
 <p>$$
-\begin{pmatrix}X_{++}&-X_{+-}\\-X_{-+}&X_{--}\end{pmatrix}
+\begin{pmatrix}X_{++}&amp;-X_{+-}\\-X_{-+}&amp;X_{--}\end{pmatrix}
 =
-\begin{pmatrix}X_{++}&X_{+-}\\X_{-+}&X_{--}\end{pmatrix},
+\begin{pmatrix}X_{++}&amp;X_{+-}\\X_{-+}&amp;X_{--}\end{pmatrix},
 $$</p>
 <p>so $X_{+-}=X_{-+}=0$. The condition $\Gamma X=-X\Gamma$ gives $X_{++}=X_{--}=0$.</p>
 <p><strong>The relation to the $\mathbb{Z}/4$ grading.</strong> Recall</p>
@@ -260,7 +260,7 @@ $$</p>
 <p><strong>The chiral algebra preserves $\Gamma$.</strong> The block-diagonal traceless endomorphisms</p>
 <p>$$
 \mathfrak{sl}_2(\mathbb{C})_+\oplus\mathfrak{sl}_2(\mathbb{C})_-
-=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:\operatorname{tr}A=\operatorname{tr}D=0\right\}
+=\left\{\begin{pmatrix}A&amp;0\\0&amp;D\end{pmatrix}:\operatorname{tr}A=\operatorname{tr}D=0\right\}
 $$</p>
 <p>act on $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$ separately. They commute with $\Gamma$, they have dimension $3+3=6$, and each chirality is a highest-weight-$\tfrac12$ module for one of the two factors. The compact real form is $\mathfrak{su}_2\oplus\mathfrak{su}_2$.</p>
 <p><strong>The Peirce algebra mixes the chiralities.</strong> The generators $J_3,J_\pm$ of the principal $\mathfrak{sl}_2$ are</p>

@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 \Gamma(M,\Omega^k) = \Omega^k(M)
 $$</p>
-<p>is used throughout, so that the sheaf $\Omega^k$ and the space of forms over $M$ are distinguished in print without changing the written article's symbol for the latter. One has $\Omega^0(Ζ) = C^\infty(Ζ)$, so that $\Omega^0$ is the sheaf of smooth functions, and $\Omega^k = 0$ for $k > n$ as sheaves, since the bundles vanish there.</p>
+<p>is used throughout, so that the sheaf $\Omega^k$ and the space of forms over $M$ are distinguished in print without changing the written article's symbol for the latter. One has $\Omega^0(Ζ) = C^\infty(Ζ)$, so that $\Omega^0$ is the sheaf of smooth functions, and $\Omega^k = 0$ for $k &gt; n$ as sheaves, since the bundles vanish there.</p>
 <p><strong>Theorem (the de Rham complex of sheaves).</strong> The exterior derivative is a morphism of sheaves</p>
 <p>$$
 d : \Omega^k \to \Omega^{k+1}
@@ -128,7 +128,7 @@ $$</p>
 <li>Fine sheaves are soft and soft sheaves on a paracompact space are acyclic; hence</li>
 </ol>
 <p>$$
-    \boxed{\;H^i(M,\Omega^k) = 0 \qquad \text{for all } i > 0 \text{ and all } k\;}.
+    \boxed{\;H^i(M,\Omega^k) = 0 \qquad \text{for all } i &gt; 0 \text{ and all } k\;}.
 $$</p>
 <p><em>Proof.</em> (1) is the existence of smooth partitions of unity subordinate to a locally finite cover of a manifold, which uses the smooth Urysohn lemma; the cover of a manifold may be taken locally finite because a manifold is paracompact and locally compact. (2) the product of a $k$-form by a smooth function is a $k$-form, compatibly with restriction, so $\Omega^k$ is a $C^\infty$-module, and the multiplication by the $\eta_i$ of a partition of unity exhibits the fineness. (3) is the theorem of <em>Sheaf Cohomology</em> that fine sheaves are soft and that soft sheaves on a paracompact space are acyclic.</p>
 <p><strong>Theorem (the de Rham resolution computes the cohomology).</strong> On a smooth manifold $M$ there is a natural isomorphism</p>
@@ -146,7 +146,7 @@ $$</p>
 <p><em>Proof.</em> The first isomorphism is the theorem of the previous section. The second is the comparison theorem: a smooth manifold is paracompact and locally contractible, and for such a space the sheaf cohomology of the constant sheaf is the singular cohomology. The stated corollaries are the corollaries of the theorem of de Rham recorded in the written article, now obtained as properties of sheaf cohomology, which is homotopy invariant because the pullback of a constant sheaf along a homotopy equivalence is an isomorphism and the cohomology of the sheaf is transported along it.</p>
 <p><strong>Corollary (the two spectral-sequence proofs agree).</strong> On a manifold the de Rham theorem may also be obtained from the Čech–de Rham double complex $K^{n,m} = \check C^n(\mathcal{U},\Omega^m)$ of <em>Čech Cohomology</em>, for a cover $\mathcal{U}$ with all finite intersections contractible. Since the sheaves $\Omega^m$ are acyclic and the cover is good, the Čech cohomology of the cover with coefficients in $\Omega^m$ vanishes in positive degree, so the filtration by $m$ has</p>
 <p>$$
-E_1^{n,m} = H^n\bigl(\check C^\bullet(\mathcal{U},\Omega^m)\bigr) = \begin{cases} \Omega^q(M), & n = 0,\\ 0, & n > 0,\end{cases}
+E_1^{n,m} = H^n\bigl(\check C^\bullet(\mathcal{U},\Omega^m)\bigr) = \begin{cases} \Omega^q(M), &amp; n = 0,\\ 0, &amp; n &gt; 0,\end{cases}
 $$</p>
 <p>with $d_1$ the exterior derivative; hence $E_2^{0,m} = H^m_{dR}(M)$ on the axis $n=0$, and the double complex computes the hypercohomology of the de Rham resolution, so $H^m_{dR}(M)\cong\mathbb{H}^q(M,\Omega^\bullet) = H^q(M,\underline{\mathbb{R}})$. The filtration by $n$ has instead $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{H}^m_{dR})$, with $\mathcal{H}^m_{dR}$ the presheaf $Ζ\mapsto H^m_{dR}(Ζ)$, and the induced differential is the Čech differential; on a good cover this presheaf is concentrated in degree $m=0$, so $E_2^{n,0} = \check H^n(\mathcal{U},\underline{\mathbb{R}})$ on the bottom row, and Leray's theorem identifies it with $H^n(M,\underline{\mathbb{R}})$. The two filtrations of the same double complex have the same abutment, and their comparison is the de Rham theorem; the construction uses the hypercohomology of a complex of sheaves described in <em>Derived Functors and Sheaf Cohomology</em>.</p>
 <p><strong>Remark (the relative case).</strong> The theorem is not a statement about forms alone: the same argument applies to any resolution of $\underline{\mathbb{R}}$ by acyclic sheaves on $M$, and gives the comparison of the cohomology of the resolution with the cohomology of $M$ with real coefficients. The characteristic classes of a vector bundle over $M$ are represented by the Chern and Pontryagin forms built from the curvature of a connection, as in the written <em>Fibre Bundles, Connections and Curvature</em>; the de Rham theorem then identifies the cohomology classes they define with the singular characteristic classes, and the resulting comparison of the graded rings is the Chern–Weil theory, which is not developed here.</p>

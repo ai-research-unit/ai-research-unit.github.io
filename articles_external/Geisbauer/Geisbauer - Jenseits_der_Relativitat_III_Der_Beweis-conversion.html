@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenseits der Relativität III – Der Beweis des Jetzt: Translations-Simultaneität für zentimetergenaue Satellitenpositionierung und Raum-Zeit-Bildgebung — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Jenseits_der_Relativitat_III_Der_Beweis.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="jenseits-der-relativitat-iii-der-beweis-des-jetzt-translations-simultaneitat-fur-zentimetergenaue-satellitenpositionierung-und-raum-zeit-bildgebung"><strong>Jenseits der Relativität III – Der Beweis des Jetzt: Translations-Simultaneität für zentimetergenaue Satellitenpositionierung und Raum-Zeit-Bildgebung</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript — German</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Geisbauer (Team Earth), as printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>9 October 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Jenseits_der_Relativitat_III_Der_Beweis-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Jenseits_der_Relativitat_III_Der_Beweis.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Jenseits_der_Relativitat_III_Der_Beweis.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. This is the German twin of <code>Geisbauer - Beyond_Relativity_III_The_Proof_of_Now_T-conversion.md</code>; both carry appendices A–E, including the worked Hafele–Keating table in appendix D. The English text states the estimator $T_{\rm Present}=\frac12(T_{\rm Past}+T_{\rm Future})$ and its error propagation more explicitly than the German.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Defines simultaneity by equal accumulated proper time rather than by equal coordinate time: for a chosen target $\tau_0$, the points whose clocks read $\tau_0$ form a moment surface $\Sigma_{\tau_0}$, and its weighted geometric centre is named the Geisbauer point. The construction is then applied to Hafele–Keating and to the GNSS processing chain, where it replaces additive corrections by an integrated time field. The paper claims sub-nanosecond timing and centimetre positioning, with an improvement factor of $10$ to $50$ over conventional corrections.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"Gegeben Weltlinien $x_i(t)$ mit Raten $f_i$ bestimmen wir für $\tau_0&gt;0$ die Zeitpunkte $t_i$ aus $$\tau_i(t_i)=\int f_i\,dt=\tau_0,\qquad P_i:=x_i(t_i)$$ (paper 3)." Die Menge $\{P_i\}$ ist im Sinne gleicher gelebter Zeit (Eigenzeit) gleichzeitig."Eulerian interpolation gives an accumulated time field $T(x)$, and $$\Sigma_{\tau_0}=\left\{x\in\mathbb{R}^3\ \middle|\ T(x)=\tau_0\right\}$$ (paper 4) is" der Momentenﬂäche (ein physikalischer Schnitt des Gegenwartszustands), schematisch in Abbil- dung 1 dargestellt.". </p>
+<h3 id="the-geisbauer-point">The Geisbauer point</h3>
+<p>With </p>
+<p>$n=\nabla T/|\nabla T|$ the mean curvature of the moment surface is $$H(x)=\nabla\cdot\left(\frac{\nabla T}{|\nabla T|}\right)\Big|_{\Sigma_{\tau_0}}$$ (paper 5), $H&gt;0$ inward bending, $H&lt;0$ outward. The centre is $$G=\arg\min_{x\in\Sigma_{\tau_0}}\sum_i w_i\,d_\Sigma(x,P_i)^2$$ (paper 6), $w_i&gt;0$, $d_\Sigma$ the geodesic distance on $\Sigma_{\tau_0}$;"Störungen in $f$ ... deformieren $T$, damit $\Sigma_{\tau_0}$ und ihre Geodäten; $G$ verschiebt sich". </p>
+<h3 id="hafelekeating-recomputed-two-aircraft-at">Hafele–Keating, recomputed Two aircraft at</h3>
+<p>$h\approx10$ km with $v_A=222.22\ \mathrm{m\,s^{-1}}$ and $v_B=277.78\ \mathrm{m\,s^{-1}}$ give $gh/c^2\approx1.09\times10^{-12}$, $v_A^2/2c^2\approx2.75\times10^{-13}$, $v_B^2/2c^2\approx4.29\times10^{-13}$, hence $f_A=1+8.17\times10^{-13}$ and $f_B=1+6.62\times10^{-13}$. For $\tau_0=7200$ s, $$\Delta\tau\approx\tau_0\left(\frac{1}{f_B}-\frac{1}{f_A}\right)\approx1.1\ \mathrm{ns},$$ (paper 7),"entspricht etwa 0.33 m bei Lichtgeschwindigkeit. Die". </p>
+<h3 id="the-gnss-claim">The GNSS claim</h3>
+<p>The comparison table sets coordinate-time corrections against translation simultaneity:"Zeitresiduum (pro Orbit) ±5 ns ±0.5 ns" against "$\pm0.5$ ns", and "Positions-RMS (PPP/RTK) 15 −-30" against "$2$–$5$ cm. The pipeline is orbit data, rate model, moment surface, Geisbauer point; satellite imaging gains Sub-ns-Zeitstempel-Kohärenz".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-simultaneity-defined-by-equal-proper-time">1. Simultaneity defined by equal proper time</h3>
+<p><strong>The idea.</strong> Two events are simultaneous when the clocks carried along their worldlines have accumulated the same $\tau$, not when a coordinate agrees. This is a <strong>mechanism</strong>, and it is operational: it needs clocks and a target value, nothing else.</p>
+<p><strong>What it would add.</strong> The corpus states that contraction and dilation are projections onto a slice and that simultaneity is a choice of slice; this paper says which slice, in terms a laboratory could implement, and then computes the surface's curvature.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code>.</p>
+<p><strong>What stands in the way.</strong> Equal-$\tau$ surfaces are not a foliation: for generic motions the sets $\{\tau_i=\tau_0\}$ need not be nested or even globally consistent, and the paper obtains a field only by Eulerian interpolation, which assumes what it must show. A definition that needs interpolation to be a surface is weaker than a foliation.</p>
+<h3 id="2-a-centre-of-a-simultaneity-surface">2. A centre of a simultaneity surface</h3>
+<p><strong>The idea.</strong> $G=\arg\min\sum w_id_\Sigma^2$ is a Fréchet mean on the moment surface, with weights. That is a <strong>formula</strong> with an unambiguous definition and a computable value.</p>
+<p><strong>What it would add.</strong> A defined point where the corpus has only "here" — a place to attach a reconstruction of a present.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<p><strong>What stands in the way.</strong> The point inherits every assumption of the surface, and the weights $w_i$ are free; with one datum the mean is that datum, so the construction carries no information until several clocks are compared — which is what GNSS already does.</p>
+<h3 id="3-the-error-budget">3. The error budget</h3>
+<p><strong>The idea.</strong> $\pm5$ ns to $\pm0.5$ ns and $15$–$30$ cm to $2$–$5$ cm is the paper's only quantitative claim about what the method buys. The English twin prints the same table.</p>
+<p><strong>What it would add.</strong> A falsifiable target for a corpus with no navigation content.</p>
+<p><strong>Where it lands.</strong> No corpus article carries a GNSS error budget; <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code> is where such numbers would have to be justified.</p>
+<p><strong>What stands in the way.</strong> No derivation of the improvement is given — the table compares two columns, and the $10$–$50$ factor is asserted in the abstract. As printed it is a target, not a result.</p>
+<p>The rank is a judgement: the equal-proper-time definition first, because it is operational and the corpus needs it; the centre second; the error budget third, because the number is unaccompanied by its derivation.</p>
+<p>This is a seven-page paper; the definition, the moment surface, the curvature and the point, the Hafele–Keating recomputation, the GNSS chain, the satellite-imaging section and a worked example in appendix D are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

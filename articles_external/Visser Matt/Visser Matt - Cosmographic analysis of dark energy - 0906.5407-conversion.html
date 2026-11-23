@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmographic analysis of dark energy — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic analysis of dark energy - 0906.5407.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmographic-analysis-of-dark-energy"><strong>Cosmographic analysis of dark energy</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0906.5407v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Céline Cattoën</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 30 June 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmographic analysis of dark energy - 0906.5407-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic analysis of dark energy - 0906.5407.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmographic analysis of dark energy - 0906.5407.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a proceedings contribution that presents the cosmographic method and applies it to dark energy. The Hubble relation depends only on FLRW symmetry, so the cosmological parameters can be estimated without assuming a dynamical model. The authors fit several inter-related cosmographic variables to the supernova data with attention to how uncertainties are combined, and find that the evidence for acceleration is suggestive but not decisive. They also show that the deceleration parameter flips sign with the choice of distance scale.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method">The method</h3>
+<p>"The Hubble relation between distanc[e and redshift is a] relation that depends only on the s[ymmetries of FLRW spacetime and does] not intrinsically make any dynamica[l assumptions]. [It should therefore] be possible to estimate th[e cosmological parameters] making any dynamical assum[ptions]."</p>
+<h3 id="what-is-done">What is done</h3>
+<p>"[We perform] inter-related cosmographic [fits to the super]nova data, [paying] careful attention t[o the treatment of uncertainties], [and find that the] 'prepondera[nce of evidence' favours an accelerating] universe. However we would [argue that without additional theoretical] and observational informatio[n], this conclusion is not cur[rently established beyond reasonable doubt]."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"While the 'preponderance of evidence' is certainly that the universe is currently accelerating, $q_0&lt;0$, this is not yet a 'gold plated' result, at least not without bringing in other physical assumptions and observations; such as a specific dynamical model [e.g., $\Lambda$CDM] and/or invoking knowledge of $\Omega_m$ or the CMB data, all of which are subject to their own additional theoretical assumptions."</p>
+<h3 id="the-precise-claim">The precise claim</h3>
+<p>"It is certainly more likely that the expansion of the universe is accelerating, than that the expansion of the universe is decelerating — but this is not the same as having definite evidence in favour of acceleration."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"regardless of one's views on how to combine formal estimates of uncertainty, the very fact that different distance scales yield data-fits with such widely discrepant estimates for the cosmological parameters strongly suggests the need for extreme caution in interpr[eting them]."</p>
+<h3 id="the-graphical-point">The graphical point</h3>
+<p>The paper includes "transparent graphical repr[sentations] in which acceleration versus deceleration reduce[s to a comparison of whether a curve goes] up or down."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-flrw-symmetry-alone-gives-observables">1. FLRW symmetry alone gives observables</h3>
+<p><strong>The idea.</strong> Distance–redshift relations follow from the symmetry of the metric, not from any field equation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> treats the absence of a source as blocking cosmological predictions. This paper shows a class of predictions that need no source, only the symmetry. The article's account of what the framework can do for cosmology is therefore too narrow.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of what can be computed.</p>
+<p><strong>What stands in the way.</strong> Cosmography says nothing about the source the article is missing. Ranked first, because it corrects the article's scope.</p>
+<h3 id="2-a-sign-that-depends-on-the-fit">2. A sign that depends on the fit</h3>
+<p><strong>The idea.</strong> The deceleration parameter comes out positive or negative depending on the distance variable used.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats a parameter as having a value. This paper shows a case where the fitted value's sign is not stable, which is a stronger caution than an error bar. The article should not quote fitted parameters as if they were determined.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of observables.</p>
+<p><strong>What stands in the way.</strong> The instability is specific to supernova fitting. Ranked second.</p>
+<h3 id="3-proceedings-contributions-state-the-method-clearly">3. Proceedings contributions state the method clearly</h3>
+<p><strong>The idea.</strong> A short proceedings paper can present a method and its caveats without the length of a full analysis.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could cite the method in a compact form. This is a presentational point rather than a technical one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It adds no content. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

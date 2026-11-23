@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electroweak Interaction — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Electroweak_interaction.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="electroweak-interaction"><strong>Electroweak Interaction</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Electroweak interaction</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Electroweak_interaction-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Electroweak_interaction.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Electroweak_interaction.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the electroweak interaction: the unified description of electromagnetism and the weak force, the unification energy of about 246 GeV and the corresponding temperature of roughly $10^{15}$ K, the split during the quark epoch, and the symmetry-breaking that gives the two forces their different ranges.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-unification">The unification</h3>
+<p>"the electroweak interaction or electroweak force is the unified description of two of the fundamental interactions of nature: electromagnetism (electromagnetic interaction), and the weak interaction. Although these two forces appear very different at everyday low energies, the theory models them as two different aspects of the same force."</p>
+<h3 id="the-scale">The scale</h3>
+<p>"ve the unification energy, on the order of 246 GeV,[a] they would merge into a single force. Thus, if the temperature is high enough – approximately 1015 K – then the electromagnetic force and weak force merge into a combined electroweak force."</p>
+<h3 id="the-history-of-the-split">The history of the split</h3>
+<p>"During the quark epoch (shortly after the Big Bang), the electroweak force split into the electromagnetic and weak force. It is thought that the required temperature of 1015 K has not been seen widely throughout the universe since before the quark epoch"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-246">1. 246</h3>
+<p>GeV is a vacuum expectation value, not a coupling</p>
+<p><strong>The idea.</strong> The number quoted as the unification energy is the Higgs vacuum expectation value, which sets the masses of the $W$ and $Z$ and therefore the range of the weak force. The couplings themselves meet at a higher scale in the full theory.</p>
+<p><strong>What it would add.</strong> A correction the corpus's electroweak articles already make and which this entry blurs: the 246 GeV scale is where the symmetry is broken, not where the couplings unify.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.md</code>, at the value of $v$.</p>
+<p><strong>What stands in the way.</strong> Nothing; the corpus is already correct and the entry is loose.</p>
+<h3 id="2-a-temperature-stands-in-for-an-energy">2. A temperature stands in for an energy</h3>
+<p><strong>The idea.</strong> The article converts a unification energy into a temperature, $10^{15}$ K, and then speaks of the early universe in thermal language. The conversion is $kT\sim E$, exact only for a thermal ensemble in equilibrium.</p>
+<p><strong>What it would add.</strong> A caution for the corpus's cosmology, where a scale is sometimes carried into a thermal statement without the qualification.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's cosmology has no thermal ensemble, so the caveat is a note on usage rather than a result.</p>
+<p>This is an encyclopedia article; the unification statement, the energy and temperature scales and the quark-epoch history are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -88,13 +88,13 @@ $$</p>
 <p>with $P'$ positive definite Hermitian and $U'$ $*$-unitary:</p>
 <p>$$
 P'=(AA^{*})^{1/2},\qquad
-U'=P'^{-1}A .
+U'=P'{}^{-1}A .
 $$</p>
-<p><strong>Proof.</strong> The matrix $AA^{*}$ is positive definite, so $P'=(AA^{*})^{1/2}$ is positive definite and invertible. Set $U'=P'^{-1}A$. Then</p>
+<p><strong>Proof.</strong> The matrix $AA^{*}$ is positive definite, so $P'=(AA^{*})^{1/2}$ is positive definite and invertible. Set $U'=P'{}^{-1}A$. Then</p>
 <p>$$
-U'^{*}U'=A^{*}P'^{-2}A=A^{*}(AA^{*})^{-1}A=I,
+U'{}^{*}U'=A^{*}P'{}^{-2}A=A^{*}(AA^{*})^{-1}A=I,
 $$</p>
-<p>so $U'$ is $*$-unitary. The decomposition is unique: $P'^{2}=AA^{*}$ forces $P'=(AA^{*})^{1/2}$, and then $U'=P'^{-1}A$.</p>
+<p>so $U'$ is $*$-unitary. The decomposition is unique: $P'{}^{2}=AA^{*}$ forces $P'=(AA^{*})^{1/2}$, and then $U'=P'{}^{-1}A$.</p>
 <p><strong>The right polar decomposition.</strong> The same $A$ has the right polar decomposition</p>
 <p>$$
 A=UP,\qquad
@@ -108,7 +108,7 @@ AA^{*}=UPPU^{*}=UP^{2}U^{*},
 $$</p>
 <p>so $P'=(AA^{*})^{1/2}=UPU^{*}$, and</p>
 <p>$$
-U'=P'^{-1}A=(UPU^{*})^{-1}UP=UP^{-1}U^{*}UP=U .
+U'=P'{}^{-1}A=(UPU^{*})^{-1}UP=UP^{-1}U^{*}UP=U .
 $$</p>
 <p>The left polar is the positive-$*$-unitary order $P'U'$; the right polar is the $*$-unitary-positive order $UP$.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
@@ -150,13 +150,13 @@ $$</p>
 <p><strong>The non-normal case.</strong> For a non-normal $A$, the Hermitian factors do not commute, and the left and right exponential forms are genuinely different. The commutator $[H,K]$ is the obstruction to the two orderings coinciding.</p>
 <p><strong>Example.</strong> The matrix</p>
 <p>$$
-A=\begin{pmatrix}1&2&0\\0&1&0\\0&0&3\end{pmatrix}
+A=\begin{pmatrix}1&amp;2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3\end{pmatrix}
 $$</p>
 <p>is not normal. Indeed</p>
 <p>$$
-A^{*}A=\begin{pmatrix}1&2&0\\2&5&0\\0&0&9\end{pmatrix},
+A^{*}A=\begin{pmatrix}1&amp;2&amp;0\\2&amp;5&amp;0\\0&amp;0&amp;9\end{pmatrix},
 \qquad
-AA^{*}=\begin{pmatrix}5&2&0\\2&1&0\\0&0&9\end{pmatrix},
+AA^{*}=\begin{pmatrix}5&amp;2&amp;0\\2&amp;1&amp;0\\0&amp;0&amp;9\end{pmatrix},
 $$</p>
 <p>and the two matrices differ in the $(1,1)$, $(1,2)$, $(2,1)$ and $(2,2)$ entries.</p>
 <h2 id="the-cartan-decomposition">The Cartan Decomposition</h2>
@@ -183,38 +183,38 @@ $$</p>
 <p>the Cartan decomposition with Cartan involution $\theta(X)=-X^{*}$. The real dimensions are $18=9+9$.</p>
 <p><strong>The symmetric space.</strong> The quotient</p>
 <p>$$
-GL_3/U(3)\cong P_+=\operatorname{Herm}_{>0}(3)
+GL_3/U(3)\cong P_+=\operatorname{Herm}_{&gt;0}(3)
 $$</p>
 <p>is the symmetric space of positive definite Hermitian matrices, of real dimension $9$ and rank $3$. The exponential map $\operatorname{Herm}_3\to P_+$ is a diffeomorphism.</p>
-<p><strong>Proof of the diffeomorphism.</strong> The map is bijective by the polar decomposition and smooth, with smooth inverse $A\mapsto(\log P',P'^{-1}A)$ where $P'=(AA^{*})^{1/2}$; the inverse is smooth because $P'$ is positive definite and the matrix logarithm is smooth on the positive definite cone. The same argument applies to the other order.</p>
+<p><strong>Proof of the diffeomorphism.</strong> The map is bijective by the polar decomposition and smooth, with smooth inverse $A\mapsto(\log P',P'{}^{-1}A)$ where $P'=(AA^{*})^{1/2}$; the inverse is smooth because $P'$ is positive definite and the matrix logarithm is smooth on the positive definite cone. The same argument applies to the other order.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p>Take the matrix of the polar article,</p>
 <p>$$
-A=\begin{pmatrix}1&2&0\\0&1&0\\0&0&3\end{pmatrix}.
+A=\begin{pmatrix}1&amp;2&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;3\end{pmatrix}.
 $$</p>
 <p>Its right polar factors are</p>
 <p>$$
-P=\begin{pmatrix}\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt2}&0\\ \tfrac{1}{\sqrt2}&\tfrac{3}{\sqrt2}&0\\ 0&0&3\end{pmatrix},
+P=\begin{pmatrix}\tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt2}&amp;0\\ \tfrac{1}{\sqrt2}&amp;\tfrac{3}{\sqrt2}&amp;0\\ 0&amp;0&amp;3\end{pmatrix},
 \qquad
-U=\begin{pmatrix}\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt2}&0\\ -\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt2}&0\\ 0&0&1\end{pmatrix}.
+U=\begin{pmatrix}\tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt2}&amp;0\\ -\tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt2}&amp;0\\ 0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <p>The matrix $U$ is the rotation by $-\pi/4$ in the first two coordinates, so</p>
 <p>$$
 U=e^{iK},\qquad
-K=\begin{pmatrix}0&-\tfrac{i\pi}{4}&0\\ \tfrac{i\pi}{4}&0&0\\ 0&0&0\end{pmatrix},
+K=\begin{pmatrix}0&amp;-\tfrac{i\pi}{4}&amp;0\\ \tfrac{i\pi}{4}&amp;0&amp;0\\ 0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>which is Hermitian. The positive factor has eigenvalues $1+\sqrt2$, $\sqrt2-1$, $3$; with $c=\log(1+\sqrt2)$,</p>
 <p>$$
 H=\log P
-=\begin{pmatrix}-\tfrac{c}{\sqrt2}&\tfrac{c}{\sqrt2}&0\\ \tfrac{c}{\sqrt2}&\tfrac{c}{\sqrt2}&0\\ 0&0&\log3\end{pmatrix}.
+=\begin{pmatrix}-\tfrac{c}{\sqrt2}&amp;\tfrac{c}{\sqrt2}&amp;0\\ \tfrac{c}{\sqrt2}&amp;\tfrac{c}{\sqrt2}&amp;0\\ 0&amp;0&amp;\log3\end{pmatrix}.
 $$</p>
-<p><strong>Check.</strong> The $2\times2$ block of $P$ is $\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&3\end{pmatrix}$, whose eigenvalues are $1+\sqrt2$ and $\sqrt2-1$, and the logarithm is $c$ times $\big(\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&3\end{pmatrix}-\sqrt2 I\big)$, which is the displayed block. The eigenvalues of $H$ are $\log(1+\sqrt2)$, $\log(\sqrt2-1)=-\log(1+\sqrt2)$, and $\log3$; the exponential recovers $P$.</p>
+<p><strong>Check.</strong> The $2\times2$ block of $P$ is $\frac{1}{\sqrt2}\begin{pmatrix}1&amp;1\\1&amp;3\end{pmatrix}$, whose eigenvalues are $1+\sqrt2$ and $\sqrt2-1$, and the logarithm is $c$ times $\big(\frac{1}{\sqrt2}\begin{pmatrix}1&amp;1\\1&amp;3\end{pmatrix}-\sqrt2 I\big)$, which is the displayed block. The eigenvalues of $H$ are $\log(1+\sqrt2)$, $\log(\sqrt2-1)=-\log(1+\sqrt2)$, and $\log3$; the exponential recovers $P$.</p>
 <p>The left polar factor is $P'=UPU^{*}$,</p>
 <p>$$
-P'=\frac{1}{\sqrt2}\begin{pmatrix}3&1&0\\1&1&0\\0&0&3\sqrt2\end{pmatrix},
+P'=\frac{1}{\sqrt2}\begin{pmatrix}3&amp;1&amp;0\\1&amp;1&amp;0\\0&amp;0&amp;3\sqrt2\end{pmatrix},
 \qquad
 H'=\log P'=UHU^{*}
-=\begin{pmatrix}\tfrac{c}{\sqrt2}&\tfrac{c}{\sqrt2}&0\\ \tfrac{c}{\sqrt2}&-\tfrac{c}{\sqrt2}&0\\ 0&0&\log3\end{pmatrix},
+=\begin{pmatrix}\tfrac{c}{\sqrt2}&amp;\tfrac{c}{\sqrt2}&amp;0\\ \tfrac{c}{\sqrt2}&amp;-\tfrac{c}{\sqrt2}&amp;0\\ 0&amp;0&amp;\log3\end{pmatrix},
 $$</p>
 <p>and</p>
 <p>$$
@@ -233,7 +233,7 @@ $$</p>
 <p>$$
 A_\epsilon=\operatorname{diag}(1,\epsilon,\epsilon)
 =\exp\big(\operatorname{diag}(0,\log\epsilon,\log\epsilon)\big),
-\qquad \epsilon>0 .
+\qquad \epsilon&gt;0 .
 $$</p>
 <p>The Hermitian factor is $H_\epsilon=\operatorname{diag}(0,\log\epsilon,\log\epsilon)$, which tends to $-\infty$ on the second and third coordinates, and the $*$-unitary factor is $I$. The limit $A_0$ is singular and is not itself an exponential.</p>
 <p><strong>The singular values.</strong> In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.</p>
@@ -258,18 +258,18 @@ E_{13}\mapsto e^{t_1-t_3}E_{13}.
 $$</p>
 <p>The Hermitian exponent of the frame is the real part of $t$ in the appropriate trivialisation; the phase exponent is the imaginary part. The idempotents are invariant under the gauge, so they do not appear in $H$ or $K$ as gauge-dependent factors.</p>
 <h2 id="comparison-with-the-split-case">Comparison with the Split Case</h2>
-<p><strong>The complex case.</strong> Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{>0}(3)$ is definite and convex, and every invertible matrix has the polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.</p>
+<p><strong>The complex case.</strong> Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{&gt;0}(3)$ is definite and convex, and every invertible matrix has the polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.</p>
 <p><strong>The split real cases.</strong> In the real split algebras of the biquaternion series the exponential is not surjective onto the invertible group, and the polar decomposition carries an indefinite factor: the split-complex exponential misses the negative real axis, and the split-quaternion exponential misses matrices with a negative eigenvalue and a nontrivial Jordan block. The positive cone is replaced by an indefinite cone, and the polar factors can change sign.</p>
 <p><strong>The reason.</strong> The difference is the spectrum. Over $\mathbb{C}$ every nonzero complex number has a logarithm, so every invertible Jordan block has a logarithm; over $\mathbb{R}$ a negative eigenvalue has no real logarithm, and the indefinite norm allows null directions that the definite Hermitian cone does not have. The complex algebra has no null cone in the trace form, and the polar decomposition is global on $GL_3$.</p>
 <p><strong>The biquaternion case.</strong> At $n=2$ the theorem is the same: every invertible $A\in M_2(\mathbb{C})$ is $e^{H}e^{iK}$ with $H,K$ Hermitian $2\times2$ matrices. The biquaternion algebra is the $n=2$ case of the same complex matrix theorem; the split real forms are different real sections of the same complex group.</p>
 <h2 id="summary">Summary</h2>
-<p>Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the polar decomposition</p>
+<p>Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'{}^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the polar decomposition</p>
 <p>$$
 A=e^{H}e^{iK},
 $$</p>
 <p>with $H$ Hermitian unique and $K$ Hermitian modulo $2\pi$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^{*}$, $H'=U^{*}HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_3=\exp(\operatorname{Herm}_3)U(3)$, the other global form being $GL_3=U(3)\exp(\operatorname{Herm}_3)$; both are diffeomorphisms, with real dimensions $18=9+9$. The polar decomposition exists exactly on $GL_3$; it degenerates at the singular set, where the Hermitian logarithm diverges. Over $\mathbb{C}$ the exponential is surjective and the positive cone is definite, in contrast with the split real cases.</p>
 <p>$$
-\boxed{\ A=e^{H}e^{iK}=P'U',\quad P'=(AA^{*})^{1/2},\quad U'=P'^{-1}A,\quad H=H^{*},\quad K=K^{*},\quad [H,K]=0\iff A\text{ normal}.\ }
+\boxed{\ A=e^{H}e^{iK}=P'U',\quad P'=(AA^{*})^{1/2},\quad U'=P'{}^{-1}A,\quad H=H^{*},\quad K=K^{*},\quad [H,K]=0\iff A\text{ normal}.\ }
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -324,7 +324,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U'$</td>
-<td>left $*$-unitary factor $P'^{-1}A$</td>
+<td>left $*$-unitary factor $P'{}^{-1}A$</td>
 </tr>
 <tr>
 <td>$H$</td>
@@ -344,7 +344,7 @@ $$</p>
 </tr>
 <tr>
 <td>$P_+$</td>
-<td>positive definite cone $\operatorname{Herm}_{>0}(3)$</td>
+<td>positive definite cone $\operatorname{Herm}_{&gt;0}(3)$</td>
 </tr>
 </tbody>
 </table></div>

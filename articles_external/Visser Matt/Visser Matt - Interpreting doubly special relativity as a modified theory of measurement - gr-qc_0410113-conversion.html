@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interpreting doubly special relativity as a modified theory of measurement — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Interpreting doubly special relativity as a modified theory of measurement -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="interpreting-doubly-special-relativity-as-a-modified-theory-of-measurement"><strong>Interpreting doubly special relativity as a modified theory of measurement</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0410113v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Sebastiano Sonego, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 October 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Interpreting doubly special relativity as a modified theory of measurement - gr-qc_0410113-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Interpreting doubly special relativity as a modified theory of measurement - gr-qc_0410113.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Interpreting doubly special relativity as a modified theory of measurement - gr-qc_0410113.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Doubly special relativity deforms the Lorentz transformation of energy and momentum. Its critics say the deformation is either inconsistent or empty. The authors propose reading it as a theory of measurement. There is a true four-momentum, a one-form that transforms linearly, and there are measured energies and momenta, which are nonlinear functions of the true one and of the detector tetrad. Quantum gravity distorts the apparatus, not the conserved charge. This makes the theories falsifiable, but reduces them to phenomenology.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"In this article we develop a physical interpretation for the deformed (doubly) special relativity theories (DSRs), based on a modification of the theory of measurement in special relativity."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"We suggest that it is useful to regard the DSRs as reflecting the manner in which quantum gravity effects induce Planck-suppressed distortions in the measurement of the 'true' energy and momentum."</p>
+<h3 id="the-cost">The cost</h3>
+<p>"it does so at the cost of demoting such theories from the level of 'fundamental' physics to the level of phenomenological models — models that should in principle be derivable from whatever theory of quantum gravity one ultimately chooses to adopt."</p>
+<h3 id="what-a-frame-does">What a frame does</h3>
+<p>"The use of a reference frame is crucial in order to extract, from the abstract tensors of any relativistic theory, scalar quantities that could be interpreted as measurement outcomes."</p>
+<h3 id="the-two-objects">The two objects</h3>
+<p>"our proposal is that the one-form $\pi_\mu$ be interpreted as the 'real' energy-momentum, and the four scalars $p_\alpha$ as 'measured' energy-momenta. The transformation from one to the other additionally depends on the reference frame of the detector as encoded in the tetrad $e^\mu{}_\alpha$."</p>
+<p>$$p_\alpha=\frac{\pi_\mu e^\mu{}_\alpha}{1-\pi_\mu e^\mu{}_0/\kappa} \qquad (paper\ 4.8)$$</p>
+<h3 id="consistency">Consistency</h3>
+<p>"If the $F_\alpha$ are nonlinear, then upon performing a Lorentz transformation the $\bar p_\alpha$ are also nonlinear functions of the $p_\alpha$. This defines a mathematically precise and physically consistent sense in which the theory is simultaneously Lorentz-invariant (and covariant), while the physical (measured) energy and momentum do not transform linearly under a change of reference frame."</p>
+<h3 id="the-verdict-on-geometry">The verdict on geometry</h3>
+<p>"There does not seem to be any pressing need to go to non-commuting coordinates. At least for the time being, ordinary differential geometry based on Lorentzian manifolds seems quite sufficient as a framework."</p>
+<h3 id="the-alternative-to-the-interpretation">The alternative to the interpretation</h3>
+<p>"Without the interpretation we have argued for in this article, or something closely related thereto, the DSRs run the very real risk of amounting to physically empty mathematical manipulations akin to the coordinate transformations of general relativity."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-momenta-one-conserved">1. Two momenta, one conserved</h3>
+<p><strong>The idea.</strong> Conservation couples to the true momentum; the apparatus reports a distorted one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code> separates what a frame changes from what it leaves alone. This paper adds a third category: quantities that are frame dependent because the detector is, not because the state is.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The distortion law is chosen, not derived. Ranked first, because it adds a category the target's split lacks.</p>
+<h3 id="2-tetrad-not-coordinate">2. Tetrad, not coordinate</h3>
+<p><strong>The idea.</strong> Measurement outcomes come from contracting with a tetrad, not from coordinate components.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code> builds the frame from the algebra. This paper shows that the tetrad, not the chart, is the object that produces numbers, which sharpens what the target means by a frame.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code>, in the definition of the frame.</p>
+<p><strong>What stands in the way.</strong> The point is standard differential geometry. Ranked second.</p>
+<h3 id="3-phenomenology-is-not-a-demotion">3. Phenomenology is not a demotion</h3>
+<p><strong>The idea.</strong> A theory about apparatus can be testable even when it is not fundamental.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what standing the framework has. The argument here — that an effective description of measurement is falsifiable and therefore scientifically respectable — is directly usable there.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of standing.</p>
+<p><strong>What stands in the way.</strong> The framework is not presented as a measurement theory. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

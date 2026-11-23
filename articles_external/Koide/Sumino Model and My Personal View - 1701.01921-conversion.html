@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumino Model and My Personal View — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Sumino Model and My Personal View - 1701.01921.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="sumino-model-and-my-personal-view"><strong>Sumino Model and My Personal View</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>plenary talk</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1701.01921v1 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 8 January 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF says it is a talk at a mini-workshop in Osaka, 26–27 December 2016)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Sumino Model and My Personal View - 1701.01921-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Sumino Model and My Personal View - 1701.01921.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Sumino Model and My Personal View - 1701.01921.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Separates two statements that are usually conflated. Formula A is the relation as derived from a $U(3)$ family model in 1982, and it holds only for masses computed with all interactions switched off except the family ones. Formula B is the empirical fact that the relation holds for the measured pole masses to one part in $10^5$. The talk sets out the author's own view — that formula B's success is an accident, and that the four consequences of formula A should guide model building — then states what Sumino's family gauge model does, corrects a common misreading of its cancellation as exact, and describes the author's own $U(3)\times U(3)'$ programme.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-formulas">The two formulas</h3>
+<p>"One is a formula (formula A) which was proposed based on a $U(3)$ family model on 1982 ... The formula A will be satisfied only [by] masses [given in the] world [with] switched off all interactions except for $U(3)$ family interactions. Other one (formula B) is an empirical formula which we have recognized since precise observation of tau lepton mass, 1992."</p>
+<p>$$
+K(m_{ei})\equiv\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=\frac23,
+\tag{paper 1}
+$$</p>
+<p>$$
+K(m^{\rm pole}_{ei})=\frac23\times(0.999989\pm0.000014).
+\tag{paper 2}
+$$</p>
+<h3 id="the-authors-verdict-on-formula-b">The author's verdict on formula B</h3>
+<p>"The formula B is excellently satisfied with pole masses of the charged leptons. However, this excellent agreement may be an accidental coincidence."</p>
+<h3 id="what-formula-a-implies">What formula A implies</h3>
+<p>"(i) We know the quark mixing and neutrino mixing. Therefore, the formula A holds only in the charged lepton sector, so that a similar relation never hold in other sectors ... (ii) Masses and mixings should be investigated based on $M_e^{1/2}$, not $M_e$. (iii) The observed hierarchical mass spectra in quarks and leptons suggest that those cannot be understood from a conventional symmetry approach (symmetry + a small breaking), and it has to be understood from vacuum expectation values (VEVs) of scalars with Higgs-like mechanism. (iv) If we put $m_e=0$ in the formula A, we obtain unwelcome ratio of $m_\mu/m_\tau=1/(2+\sqrt3)$."</p>
+<h3 id="the-criticism-of-the-coincidence-hunters">The criticism of the coincidence hunters</h3>
+<p>"I regret that some people simple-honestly tried to search mathematical quantities which leads to the form $K=2/3$. They did not understand that $m_{ei}$ in the formula B are pole masses, and besides, that the mass spectra cannot discuss independently of the flavor mixing. Most of their attempts could not left any physical result. Their attempts are nothing but playing of a mathematical puzzle, not physics."</p>
+<h3 id="what-sumino-assumed">What Sumino assumed</h3>
+<p>"Sumino has assumed an existence of family gauge bosons (FGBs) $A^i_j$ with the masses $M_{ij}^2=k(m_{ei}+m_{ej})$ and thereby, he has proposed a cancellation mechanism between $\log m_{ei}$ in the QED correction and $\log M_{ii}$ in the FGB one-loop correction."</p>
+<h3 id="the-misunderstanding-as-the-author-sees-it">The misunderstanding, as the author sees it</h3>
+<p>"The big objection is that there are many diagrams which we should take into consideration, so that the Sumino cancellation mechanism cannot work effectively. However, it is misunderstanding for the Sumino mechanism ... The Sumino cancellation mechanism does not mean complete cancellation, but it means practical cancellation at a level of the present experimental accuracy." Hence "if accuracy in the present tau lepton mass measurement can be improved to one order, the deviation from the formula B will be observed", and "the upper bound in which the cancellation mechanism is effective is $10^3$–$10^4$ TeV".</p>
+<h3 id="the-consequence-the-author-stresses">The consequence the author stresses</h3>
+<p>"The most notable point of Sumino FGB model is that there is a upper limit of the FGB mass scale, which comes from applicability of the Sumino mechanism. Therefore, when Sumino FGBs cannot be discovered at the expected scale, we cannot excuse the undiscovered fact by extending the scale to one order. In such a case, we have to abandon the Sumino model."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-readings-of-the-same-equation-and-how-to-tell-them-apart">1. Two readings of the same equation, and how to tell them apart</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: the same numerical relation has one meaning for masses defined with only family interactions switched on and another for pole masses, and only a measurement can decide which is at work.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 reports the closure against PDG pole masses and §11 asks whether running to a common scale changes it, but never separates the two propositions being tested. Making the distinction explicit tells the reader that the $6\times10^{-6}$ agreement is evidence for formula B — a claim about the pole — and only indirectly for formula A.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, as the statement of what the measurement is evidence for.</p>
+<p><strong>What stands in the way.</strong> The distinction is verbal and does not by itself predict anything; it only reorganises what the corpus already says. First, because it fixes an ambiguity at the centre of the note.</p>
+<h3 id="2-a-prediction-that-a-better-tau-mass-will-break-the-relation">2. A prediction that a better tau mass will break the relation</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: the cancellation is asserted to be accurate only to present experimental precision, so a one-order improvement in $m_\tau$ should reveal a deviation, and the counter-claim is that any deviation falsifies the mechanism.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 lists no measurement that would discriminate; here is one, with a stated direction and a stated consequence. A nuclear-style testable claim is exactly what the folder's conversion of the $45^\circ$ angle discussion lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, as a row in the table.</p>
+<p><strong>What stands in the way.</strong> The predicted size of the deviation is not computed, so "one order better" is a hope rather than a number. Second.</p>
+<h3 id="3-math34-rather-than-math35-as-the-object-of-study">3. $(M_e)^{1/2}$ rather than $M_e$ as the object of study</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: if the model's fundamental object is the square root of the mass matrix, then masses and mixings should be parametrised on $M_e^{1/2}$, and mixing angles extracted from $M_e$ carry a spurious rotation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> extracts the PMNS matrix from $M_e^\dagger M_e$ and $M_\nu^\dagger M_\nu$ without comment on the square root. The claim here is that the polar decomposition of $M_e$ has a physical meaning that $M_e$ itself does not, which would change how the article presents the two unitary factors.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>, "The Matrix and Where It Sits".</p>
+<p><strong>What stands in the way.</strong> The claim is a preference, argued from the closure holding in amplitudes; no calculation in the talk shows a different measurable consequence. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

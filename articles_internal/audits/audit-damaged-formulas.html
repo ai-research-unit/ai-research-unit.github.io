@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes — Biquaternion Universe</title>
-  <meta name="description" content="Status of this file. Executed: 498 failing formulas, then none; the rescan of 23 November 2026 finds 4 481. The pass counted 376 in the physics articles…">
+  <title>Repairing the Formulas: Six Silent Faults and Four Mechanical Passes — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Executed twice, and closed on 23 November 2026: the corpus renders failing snippets. The first pass cleared failing formulas. The…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -69,9 +69,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="repairing-the-formulas-six-silent-faults-and-two-mechanical-passes"><strong>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes</strong></h1>
-<p><em>Status of this file.</em> <strong>Executed: 498 failing formulas, then none; the rescan of 23 November 2026 finds 4 481.</strong> The pass counted 376 in the physics articles, 122 in the mathematics articles and the internal notes; its one surviving record was a mention of the display delimiter inside a code span, which is not a formula. §<em>The Second Census</em> gives the state of the corpus today.</p>
-<p><em>What the file is for.</em> It is the procedure of the two passes that cleared them: the four mechanical repairs of a parse failure, the second pass over the class that never raises one, and the checks that accept a folder as repaired.</p>
+        <h1 id="repairing-the-formulas-six-silent-faults-and-four-mechanical-passes"><strong>Repairing the Formulas: Six Silent Faults and Four Mechanical Passes</strong></h1>
+<p><em>Status of this file.</em> <strong>Executed twice, and closed on 23 November 2026: the corpus renders $0$ failing snippets.</strong> The first pass cleared $498$ failing formulas. The corpus drifted back to $4\,498$ under a later migration, and the second pass — four mechanical steps and one hand list, recorded in §<em>The Third Census</em> — brings the served site to $0$ in $4\,371$ pages and $890\,619$ math regions. The two build defects that manufactured a third of those records are named in §<em>The Build Defects That Look Like Article Faults</em>.</p>
+<p><em>What the file is for.</em> It is the procedure of the last two passes that cleared them: the four mechanical repairs of a parse failure, the second pass over the class that never raises one, and the checks that accept a folder as repaired.</p>
 <p><em>The reader's contract, in five lines.</em></p>
 <ol>
 <li><strong>A formula is checked by rendering it with <code>throwOnError: true</code>, never by reading it.</strong> The build reports nothing: <code>throwOnError: false</code> and <code>errorColor: '#c00'</code> are the template's settings, so a broken formula is dark red on a page that exits zero.</li>
@@ -215,7 +215,7 @@ A comma here would read as a list of two subscripts and would be wrong: $\Box_\P
 <p><strong>Two sites in the corpus, one in each form.</strong> The involution of the tensor square was written <code>\sigma_1=\;^{*}\otimes\mathrm{id}</code>; the transpose was written <code>\operatorname{adj}=\,^{\mathsf T}</code>. Both are the same fault and both take the same repair.</p>
 <p><strong>A prime is a superscript, so a prime followed by an exponent collides.</strong> <code>e^{i\theta}'^{2}</code> fails with <em>Double superscript</em>. The convention forbids <code>q'_0^2</code> for the same reason. The repair separates the two scripts with an empty group:
 $$
-e^{i\theta_{\mathrm{pha}}}{}^{2},\qquad e^{i\theta}{}'^{2}.
+e^{i\theta_{\mathrm{pha}}}{}^{2},\qquad e^{i\theta}{}'{}^{2}.
 $$
 Both forms render, and the second keeps the prime visibly on the group. Five sites in the mathematics articles took this repair.</p>
 <p><strong>Do not delete the prime.</strong> The prime distinguishes the second root from the first in the polar decomposition, and dropping it to make the formula render destroys the statement. The empty group is the repair; removal is not.</p>
@@ -230,8 +230,8 @@ Both forms render, and the second keeps the prime visibly on the group. Five sit
 <p><strong>The two forms differ by one character.</strong> The first row is written <code>Q_t-Q_z &amp; -Q_x-iQ_y\</code> in the broken form and <code>Q_t-Q_z &amp; -Q_x-iQ_y\\</code> in the repaired one, and the second is what the display below carries.</p>
 <p>$$
 \begin{pmatrix}
-Q_t-Q_z & -Q_x-iQ_y\\
--Q_x+iQ_y & Q_t+Q_z
+Q_t-Q_z &amp; -Q_x-iQ_y\\
+-Q_x+iQ_y &amp; Q_t+Q_z
 \end{pmatrix}
 $$</p>
 <p><strong>Three facts combine to hide it.</strong> A backslash before a line break is a legal command, so the parse succeeds. An environment accepts any number of entries per row and neither pads nor complains, so the structure does not object. And the damage is a wide row rather than a wrong glyph, so no character in the page is unfamiliar and the eye that has not been told what shape the matrix should have reads past it.</p>
@@ -257,6 +257,7 @@ $$</p>
 <p><strong>Pass four is by hand.</strong> The records that remain after pass three are the ten of the delimiter and structure class, listed in §<em>The Four Faults That Need Reading</em>, and the handful of splits that need the sentence.</p>
 <p><strong>Pass five is the rescan.</strong> Its count must be zero. A pass is not finished at a lower count.</p>
 <p><strong>The separator pass stands outside that chain.</strong> It cannot join pass three, because its fault never reaches the scanner's output. It runs over every display block of whatever folder it is given, failing or not, and its acceptance is a deficit count rather than an error count. Because it is guarded by the length of the trailing run it is idempotent, so it may be rerun after any structural edit that changes the shape of a display block.</p>
+<p><strong>The chain of the second campaign is the one to run again, and it is slightly different.</strong> Pass zero repairs the build and the scanner, not the articles, because a pipeline that eats a <code>&lt;</code> or a fence manufactures records faster than a repair removes them. Then braces and fused words, curated splits, line joins, and the second script as an empty group, each followed by a full rescan. §<em>The Recipe for the Next Run</em> gives the order, the counts and the acceptance numbers.</p>
 <h2 id="12-the-checks">12. The Checks</h2>
 <p><strong>The scan is the acceptance test, and its number is zero.</strong> The one record that survives is named and dismissed: a mention of the display delimiter inside a code span is not a formula, and <code>trace-migration.md</code> carries the only one.</p>
 <p><strong>The row count is the second acceptance test, and its number is a zero deficit.</strong> Render every display block that carries an environment and compare the rows produced with the separators declared. The check is one pass over the corpus, and it finds the class that §<em>The Scanner</em> cannot see. It reports one expected false positive, named in §<em>The Separator That Lost a Backslash</em>, and a reader dismisses it once and for good.</p>
@@ -330,16 +331,110 @@ $$</p>
 <p><strong>The rule is already written in this corpus.</strong> <code>audit-index.md</code> states it in its contract: a dotless letter in a sub- or superscript is always braced, and <code>Q_\imath</code> raises <em>Got function as subscript</em>. The migration that introduced the two dotless letters reports its failures against a baseline of 14, not against zero.</p>
 <p><strong>The message names a macro of the library, not the article's source.</strong> It says <code>\html@mathml</code>, which appears nowhere in the corpus. A scanner that classifies a record by the command it prints therefore files the commonest fault of the corpus under a name the author cannot search for.</p>
 <p><strong>The other classes are old, and they have returned.</strong> The fused command is §<em>The Lost Space</em>'s fault, and the context gives the reading: <code>\epsilon_{\imath\jmathk}</code> is the Levi-Civita symbol with three indices, so the repair is <code>\epsilon_{\imath\jmath k}</code>. The double subscript is §<em>The Merge Rule</em>'s fault, and the same comma or nesting applies. The line-broken inline formula is §<em>The Delimiters</em>' first consequence: the inline pattern excludes a newline, the pair is never protected, and $24$ mathematics files carry the $360$ records between them. The two <code>\max</code> take braces. The prime followed by an exponent takes the order the conventions state, <code>q_t'^{2}</code>, which renders.</p>
-<p><strong>The repairs above were applied to one article only.</strong> The introduction to the biquaternion universe carried six sites in five formulas; it now returns zero on the same scan. The rest of the corpus is as the table records it, and the pass of §<em>The Order of the Passes</em> still applies unchanged.</p>
+<p><strong>The repairs above were applied to one article only.</strong> The introduction to the biquaternion universe carried six sites in five formulas; it now returns zero on the same scan. The rest of the corpus was left as the table records it, and the pass of §<em>The Order of the Passes</em> then ran over it. §<em>The Third Census</em> gives that run.</p>
+<h2 id="15-the-third-census-the-pass-executed">15. The Third Census: The Pass Executed</h2>
+<p><strong>The scan of 23 November 2026 found $4\,498$ failing snippets, and the same scan finds $0$ today.</strong> The instrument is the one of §<em>14</em>: KaTeX 0.16.9, <code>throwOnError: true</code>, the template's three macros, code fences, code spans, HTML comments and the page head masked first. Two corpora are scanned and both reach zero: the markdown sources, $874\,981$ regions in $4\,317$ files, and the deployed pages, $890\,619$ regions in $4\,371$ HTML files, which is the text auto-render actually meets in a browser.</p>
+<p><strong>The counts fall in five steps.</strong> Each step is a separate script confined to the math spans, and each is followed by a full rescan.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>what it changes</th>
+<th>edits</th>
+<th>files</th>
+<th>records after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baseline</td>
+<td>the served pages, before any repair</td>
+<td>—</td>
+<td>—</td>
+<td>$4\,498$</td>
+</tr>
+<tr>
+<td>braces and fused words</td>
+<td><code>q_\imath</code> to <code>q_{\imath}</code>, <code>\jmathk</code> to <code>\jmath k</code></td>
+<td>$6\,973$</td>
+<td>$591$</td>
+<td>$550$</td>
+</tr>
+<tr>
+<td>curated splits</td>
+<td>the fused words the definedness test leaves alone</td>
+<td>$6\,573$</td>
+<td>$469$</td>
+<td>$501$</td>
+</tr>
+<tr>
+<td>line joins</td>
+<td>an inline formula broken across a newline, joined</td>
+<td>$201$</td>
+<td>$23$</td>
+<td>$141$</td>
+</tr>
+<tr>
+<td>the second script</td>
+<td><code>\Pi_{\mathrm{id},++Q}_{2,21}</code> to <code>\Pi_{\mathrm{id},++Q}{}_{2,21}</code></td>
+<td>$1\,148$</td>
+<td>$264$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>by hand</td>
+<td>two code snippets fenced, two mentions of a dollar quoted</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The dominant class is the one the scan reports last, not first.</strong> KaTeX stops at the first fault of a region, so a region that carries a fused word <em>and</em> a second script reports only the fused word. The $4\,498$ baseline therefore under-counted the second script by an order of magnitude: the census of the $128$ records of §<em>14</em> became $1\,148$ insertions once the earlier faults were cleared and the scan could see past them. A count of records is a count of <em>first</em> faults, and a pass that trusts it will stop early.</p>
+<p><strong>The last twelve records are not formulas.</strong> They sit in two audit notes, inside snippets that the build served as text: eleven in <code>audit-bad-metric.md</code>, where an unindented <code>node -e</code> script and a macro table reached KaTeX as prose and carried dollars, <code>\displaystyle #1</code> and a lone backslash; and one in <code>audit-potent.md</code>, a regular expression written between dollars. Both are fenced or put in a code span, which is the repair of a code block, not of a formula.</p>
+<p><strong>The folders that are not pages are out of the count, and they carry theirs.</strong> <code>_reserve/</code> and <code>PLAN.md</code> are scratch material; the build never reads them. The same scan finds $15$ records there, all pre-existing, and they are left alone on purpose: a note that quotes a broken command, or a <code>\mbox</code>, must be able to write it. The acceptance is the site, and the site is the four article folders.</p>
+<h2 id="16-the-build-defects-that-look-like-article-faults">16. The Build Defects That Look Like Article Faults</h2>
+<p><strong>Two faults of the pipeline produced a large share of the records, and neither is a fault of an article.</strong> A pass that repairs them one by one in the markdown would destroy content while reporting success, so they are repaired in <code>build.py</code>.</p>
+<p><strong>The first is unescaped math on restore.</strong> <code>protect_math</code> lifts each formula out of the markdown and stores it; <code>restore_math</code> puts it back. The restore inserted the LaTeX unescaped, so a formula holding a literal <code>&lt;</code>, as in $a&lt;b$, became an HTML tag on the way out, and the tag swallowed every character up to the next <code>&gt;</code>, dollars included. The page then showed a formula cut in half and an unbalanced dollar where the text used to be. The repair is one call: the restored text is HTML-escaped, so <code>&lt;</code> reaches the browser as <code>&amp;lt;</code> and the math is text again. This is why so many records of the baseline were <em>unbalanced single dollar</em> rather than a KaTeX message.</p>
+<p><strong>The second is code scanned as math.</strong> <code>protect_math</code> ran over the whole file, so a display delimiter inside a fenced block paired with the next one and swallowed the fence. The block was then served as prose, the fence never reached Markdown, and the page lost its <code>&lt;pre&gt;</code>. The repair reorders the pass: code is protected first and only its body is masked, so Markdown still sees the fence and builds the block, and an empty fence is left alone. The check is the count of <code>&lt;pre&gt;</code> against the count of fences, article by article, and it now agrees on every page of the corpus.</p>
+<p><strong>A third defect lives in the scanner, not in the site.</strong> Three kinds of text are not rendered by auto-render and must be masked before a verdict: HTML comments, which carry hundreds of formulas in this corpus and are never drawn; the document head, where <code>&lt;title&gt;</code> holds the page title and an escaped apostrophe arrives as <code>&amp;#x27;</code>; and code spans, which hold a dollar that is text. A scanner that skips these three reports faults that no reader can see, and its count can never reach zero. The rule is the one of §<em>The Scanner</em> with three more masks, applied in this order: comments, head, <code>pre</code>, <code>code</code>, tags, entities.</p>
+<h2 id="17-the-second-script-an-empty-group-not-a-comma">17. The Second Script: An Empty Group, Not a Comma</h2>
+<p><strong>A symbol takes one subscript and one superscript, and this corpus writes a second one anyway.</strong> The form is a projector carrying its label and then its matrix index, as in $\tilde\Pi_{\mathrm{id},++Q}$ followed by the index ${2,21}$, or a projector carrying a sign after its label.</p>
+<p><strong>The repair of §<em>The Merge Rule</em> does not apply, and the difference is the level of the index.</strong> A merge joins two labels of one object into one list. Here the second group indexes the object the first group has already named: $\tilde\Pi_{\mathrm{id},++Q}$ is one object and ${2,21}$ is one of its entries. Joining them into $\tilde\Pi_{\mathrm{id},++Q,2,21}$ would state that four labels sit at one level. The corpus instead keeps the levels apart, and an empty group carries the second script:
+$$
+\tilde\Pi_{\mathrm{id},++Q}{}_{2,21},\qquad
+\tilde\Pi_{\mathrm{id}}'{}_{1},\qquad
+k_\upsilon{}_{\mathrm{crd}},\qquad
+\digamma_{\mathrm{gmn}}{}_{8}.
+$$
+Each renders as the author wrote it: the two scripts stand side by side at the same size, and nothing is reordered, joined or dropped. The bare form fails with <em>Double subscript</em>; the emended form parses.</p>
+<p><strong>The repair is one insertion, and the decision is mechanical.</strong> A scanner walks the region, remembers whether the current base already carries a subscript and whether it already carries a superscript, and inserts the empty group when a script of a kind already taken arrives, or when a prime follows a full script run and a subscript follows the prime. Any other token resets the memory, because it opens a new base. The pass changes nothing else: it inserts <code>{}</code> and stops, and 1 148 sites across 264 files take it.</p>
+<p><strong>The rule that no comma is needed here is stated by the count.</strong> Of the $1\,148$ sites, the second group is a numeric index, a sign, or a short token in every case, and the neighbouring sentence always names the index on the object. A comma would have produced a formula that parses and says something else, which §<em>The Objection</em> calls the one failure a rescan cannot catch.</p>
+<h2 id="18-the-external-conversions">18. The External Conversions</h2>
+<p><strong>The external folder is a second corpus with its own build, and it carried its own records.</strong> <code>build_external.py</code> writes <code>articles_external/**/*.md</code> to <code>*-conversion.html</code> and touches nothing else; 891 pages come out of it. The baseline scan of the main corpus missed them because the census listed the three article folders only. On the deployed site they held $20$ records, and every one of them was a consequence of the restore defect of §<em>16</em>: the pages had been built before the repair, and the rebuild alone cleared them.</p>
+<p><strong>The last five sites are conversion damage, and each is read.</strong> They are the OCR-shaped faults that a bulk conversion leaves behind, and none of them is a second script or a delimiter:
+the command <code>\mathbf</code> with its brace lost, <code>(\mathbf3},\mathbf1,\mathbf1)</code> for $(\mathbf{3},\mathbf1,\mathbf1)$;
+a formula joined by a slash and wrapped in a code span at the wrong end, which left one dollar inside the span and one outside;
+two formulas cut by a carriage return inside a command, <code>\rangle</code> stored as the return and <code>angle</code>, and <code>\nabla</code> stored as a newline and <code>abla</code>, with <code>\to</code> stored as a tab and <code>o</code>;
+one command stored as a byte, the form feed of <code>\frac</code>;
+and two stray dollars in a page of two-column OCR text, removed because no formula survives around them.</p>
+<p><strong>The rule the external folder teaches is the one about the scanner.</strong> A conversion is text until it is rendered, and a rescan of the sources alone would have called this folder clean while the site showed twenty red lines. The deployed pages are the corpus that matters, and §<em>The Checks</em> scans them.</p>
+<h2 id="19-the-recipe-for-the-next-run">19. The Recipe for the Next Run</h2>
+<p><strong>The instrument comes first, and it is three files.</strong> A renderer harness, a chunker that reproduces auto-render's boundaries, and a list of markdown files. The chunker masks, in this order, HTML comments, the head, <code>pre</code>, <code>code</code>, then strips tags and decodes entities; it pairs display delimiters inside a chunk, then single dollars line by line, and renders every pair with the template's macros. Its output is one row per failing snippet: file, message, source.</p>
+<p><strong>Then the four passes, in this order, each followed by a full rescan.</strong> Braces and fused words; the curated splits that definedness allows; the joins of a formula broken across a newline; the second script as an empty group. Each pass edits the math spans only, and each is idempotent, so a rerun of the whole chain on a repaired corpus reports no edit.</p>
+<p><strong>The acceptance is three numbers, all zero.</strong> Failing snippets on the deployed pages; unbalanced single dollars over the same pages; pages whose <code>&lt;pre&gt;</code> count differs from their fence count. The first is the certificate, the second catches the file that renders today and breaks tomorrow, and the third catches the block the math pass swallowed.</p>
+<p><strong>The index is a copy, and it is checked as one.</strong> <code>index.md</code> is written by <code>sync_index()</code> from the introduction to the biquaternion universe, with only the first heading replaced by the landing title. The check is the deployed pair: the <code>&lt;article&gt;</code> body of <code>index.html</code> equals the body of the introduction page, character for character, and the two H1 differ. It holds today at $44\,093$ characters and one line of difference.</p>
+<p><strong>A sample is read in the page, one per class.</strong> A merge, a split, a join, a second script and a structural repair. The scan certifies syntax; the eye certifies that the formula says what the sentence says it says.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The pass of this note cleared $498$ failing formulas, and the rescan of 23 November 2026 finds $4\,481$.</strong> The $498$ were $376$ in the physics articles, measured on the first scan, and $122$ in the mathematics articles and the internal notes.</p>
+<p><strong>The pass of this note cleared $498$ failing formulas; the migration that followed raised the count to $4\,498$, and the second pass of 23 November 2026 clears it to $0$.</strong> The $498$ were $376$ in the physics articles, measured on the first scan, and $122$ in the mathematics articles and the internal notes. The $4\,498$ were $4\,498$ records of first faults over $857\,423$ regions; five steps took them to zero, and the deployed site — $4\,371$ pages, $890\,619$ regions, external conversions included — renders with no red line.</p>
 <p><strong>Four classes hold $366$ of the $376$, and four rules clear them.</strong> A script written twice takes a comma, or a nesting when the first script is a differential operator. A command fused to its argument takes a space, chosen by the longest defined prefix. An operator that carries a script without braces takes them. A control character takes its letter back. The fifth class, delimiter and structure, holds the last $10$ and is repaired by reading. Two rules serve the mathematics articles: an empty group carries a script that a space cannot carry, and the same empty group separates a prime from an exponent that follows it.</p>
 <p><strong>The detector is a render, not a reading.</strong> KaTeX at 0.16.9 with <code>throwOnError: true</code> and the template's three macros. The build never reports a fault, so a scanner is the only instrument.</p>
 <p><strong>One class is invisible to the render check and needs a second instrument.</strong> A matrix whose rows are separated by a single backslash parses as one row: no message, no red type, and a wrong picture. $90$ lines in $52$ blocks of $33$ articles carried it. The detector compares the rows a block declares with the rows it renders, and the repair appends one backslash where the trailing run is exactly one.</p>
 <p><strong>The delimiters fail before the formulas do.</strong> One stray display delimiter derails the rest of a file, and a code fence does not protect one. The parity check comes before the formula check, and it is repeated after every structural edit.</p>
 <p><strong>Four faults cannot be automated.</strong> A missing <code>\right</code>, a matrix with its rows fused, prose inside a display, and a LaTeX array used as a table. Each is read, repaired and re-rendered on the spot.</p>
 <p><strong>The last pass is a rescan, and its number is zero.</strong> Anything else is an unfinished pass.</p>
-<p><strong>The number is a state, not a verdict.</strong> The second census finds $4\,481$ records in $517$ files, and $3\,741$ of them are one new class: a function command taken as a script. The procedure above is unchanged, and it is the procedure to run again.</p>
+<p><strong>The number is a state, not a verdict.</strong> The third census found $4\,498$ records in $857\,423$ regions, and $3\,741$ of them were one class: a function command taken as a script. The procedure above cleared them in five steps and the deployed site now reports zero; a later migration can raise the count again, and §<em>The Recipe for the Next Run</em> is the way back.</p>
+<p><strong>Two of the faults were the build's, and they are fixed where they started.</strong> Restored math is now HTML-escaped, so a literal <code>&lt;</code> stays text, and code is protected before math, so a fence is never swallowed. A third fault was the scanner's own: comments, page head and code spans are masked before a verdict. Without those three repairs a rescan can never reach zero, and a pass would spend itself on text that no reader sees.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -384,6 +479,14 @@ $$</p>
 <tr>
 <td>empty group</td>
 <td>the pair of braces <code>{}</code> that carries a script a space cannot carry</td>
+</tr>
+<tr>
+<td>second script</td>
+<td>a second <code>_</code> or <code>^</code> on a base that already carries its kind; carried by an empty group, never merged, because its level is the index on the object</td>
+</tr>
+<tr>
+<td>restore</td>
+<td>the build's return of a stored formula to the page; it must be HTML-escaped, or a literal <code>&lt;</code> becomes a tag</td>
 </tr>
 <tr>
 <td>control character</td>

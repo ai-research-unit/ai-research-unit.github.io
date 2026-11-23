@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Non-Linear Extension of the Dirac Equation: Polar Form, Global Existence of Solutions, and a Hydrodynamic Formulation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/A non-linear extension of the Dirac equation, with hydrodynamics 1021309.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-non-linear-extension-of-the-dirac-equation-polar-form-global-existence-of-solutions-and-a-hydrodynamic-formulation"><strong>A Non-Linear Extension of the Dirac Equation: Polar Form, Global Existence of Solutions, and a Hydrodynamic Formulation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>doctoral dissertation, RWTH Aachen University</td>
+</tr>
+<tr>
+<td>author</td>
+<td>Joan Morrill i Gavarró</td>
+</tr>
+<tr>
+<td>date</td>
+<td>oral examination 31 October 2025; signed 12 November 2025</td>
+</tr>
+<tr>
+<td>supervisors</td>
+<td>Michael Westdickenberg, Christof Melcher</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — doctoral dissertation, RWTH Aachen University</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Joan Morrill i Gavarró</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>134 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/A non-linear extension of the Dirac equation , with hydrodynamics 1021309-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/A non-linear extension of the Dirac equation , with hydrodynamics 1021309.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/A non-linear extension of the Dirac equation , with hydrodynamics 1021309.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Studies one specific non-linear Dirac equation, the one proposed by Daviau, and proves three things about it: the polar decomposition with its rotor dynamics, the existence of global weak solutions once the non-linearity is regularised, and a hydrodynamic reformulation in which the left- and right-handed parts of the spinor each carry their own congruence of flow lines. The whole treatment is set in the Clifford algebra of space (the algebra of physical space, APS), not in the Dirac matrix algebra, and the author argues that the polar form, the Lagrangian and the hydrodynamics all read more naturally there.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-this-non-linearity">Why this non-linearity</h3>
+<p>"Unlike other well-known non-linear extensions such as the Thirring or the Soler models, the equation suggested by Daviau adds the minimal amount of non-linearity needed to have an additional symmetry for the resulting theory. Thus the equation keeps the first-order homogeneity of the Dirac equation, but with a non-linearity that is only Lipschitz continuous." The equation is</p>
+<p>$$
+i\gamma^\mu D_\mu\psi-m\exp(-i\Theta\gamma^5)\psi=0 ,
+$$</p>
+<p>"1,3 + (I.10) where Θ is the Yvon-Takabayasi angle, differing from equation I.6 only in the mass term (i.". The gain is a symmetry; the price is that the mass term now depends on the state.</p>
+<h3 id="what-the-non-linearity-amounts-to">What the non-linearity amounts to</h3>
+<p>"Despite appearances, it can be shown that in the APS this modification simply amounts to replacing the quantity ψ̄ψ + ψ̄γ 5 ψ built from bilinear covariants by its absolute value. The model also admits a very natural splitting of the spinor into left- and right-handed fields, which will be crucial for our approach. It was shown recently by Daviau"</p>
+<h3 id="the-obstruction-and-why-the-angle-must-be-regularised">The obstruction, and why the angle must be regularised</h3>
+<p>"The regularisation becomes necessary due to the same issue Takabayasi encountered when establishing a hydrodynamic formulation for the Dirac equation (namely the Yvon-Takabayasi angle is not well-defined for spinors ψ such that ψ̄ψ and −iψ̄γ 5 ψ vanish) or in the polar decomposition of spinors. For the latter, we also determine the rotor dynamics (see chapter V)."</p>
+<p>That is a locus, not a technicality: the pair $(\bar\psi\psi,\,-i\bar\psi\gamma^5\psi)$ is the plane in which the angle is measured, and it can be the zero pair. Theorem VI.3 then gives "section. For any test function ζ(t) ∈ Cc∞ ([0, T ) × R3 )4 , we consider the left-hand side of equation Sλ for ϕ̂n (t) with n ≥ 1. To soften the notation in this section, the time dependence of certain functions will be omitted, so we write ϕ̂n , ϕ̂, and ζ instead of ϕ̂n (t), ϕ̂(t), and ζ(t) unless they are evaluated at a specific time different than t. Integrating by parts, we have Z TZ  † Z   Z TZ   tr ζ † ∂t ϕ̂n dxdt, tr ζ (0)ϕ̂0 dx = − tr (∂t ζ) ϕ̂n dxdt + 0  † R3 R3 0 (VI.44) R3 since ζ(T ) = 0 because ζ(t) ∈ Cc∞ ([0, T ) × R3 ), and also Z TZ Z TZ     tr (H ζ)† ϕ̂n dxdt = tr (iσ · (∇ζ † ))ϕ̂n dxdt 0 R3 0 R3 Z TZ = 0 Z TZ  tr (−iζ σ · ∇ϕ̂n ) dxdt =  † R3 0 107 of 134 R3 (VI.45)   tr ζ H ϕ̂n dxdt. † CHAPTER VI. GLOBAL EXISTENCE OF SOLUTIONS Therefore the left-hand side of equation Sλ for the approximate solutions is Z TZ Z TZ     tr ((∂t + iH )ζ)† ϕ̂n dxdt = − tr ζ † (∂t + iH )ϕ̂n dxdt R3 0 =− 0 R3 n X Z Tk Z R3 k=1 Tk−1 n X Z Tk Z = Tk−1 k=1  tr ζ † (∂t + iH )φ̂k dxdt (VI.46)  tr iζ † gλ (φ̂k−1 (Tk−1 )) dxdt R3 where the second line follow from the construction in lemma VI.6. By the fundamental theorem of calculus applied to each component of ζ, which are of class Cc∞ ([0, T ) × R3 ), we have that Z T ∥ζ(t) − ζ(Tk−1 )∥M2 (C) = ζ ′ (s)ds Tk−1 ≲ t − Tk−1 (VI.47) M2 (C) and thus we can split the integral over the time intervals into two contributions: n Z Tk Z n Z X   T X tr ζ † gλ (φ̂k−1 (Tk−1 )) dxdt = tr ζ † (Tk−1 )gλ (φ̂k−1 (Tk−1 )) dx + o(n−1 T ) n 3 3 k=1 Tk−1 R k=1 R (VI.48) since Z Tk (t − Tk−1 )dt = Tk−1 (Tk − Tk−1 )2 T2 = 2. 2 2n (VI.49) We can now present the following result. Theorem VI.3 (existence of weak solutions). The limit ϕ̂(t) ∈ C([0, T ], L2loc (R3 )4 ) of the sequence of approximate solutions ϕ̂n (t) is a weak solution to Pλ in the sense of definition VI." as "a weak solution" of the regularised problem. </p>
+<h3 id="the-hydrodynamic-form">The hydrodynamic form</h3>
+<p>The formulation "also splits naturally into two contributions for the left- and right-handed fields, which are only weakly coupled through the Dirac current. In the words of de Broglie, we like to think of the Dirac current as the pilot wave that guides the evolution of the particles. Indeed the resulting model admit two sets of congruences of flow-lines (for the left- and right-handed components of the spinor)." The author names the prior art for that picture:"Such a model has been considered before by Hestenes (see [Hes20a, Hes20b]), who associates the helical motion with spin and to Schrödinger’s prediction of a rapid oscillatory motion of particles, a phenomenon for which Schrödinger introduced the term Zitterbewegung. 15 of 134 CHAPTER I."</p>
+<h3 id="the-claim-about-hydrogen">The claim about hydrogen</h3>
+<p>"as shown recently by Daviau (see [DBN20]) that the non-linear Dirac equation can correctly predict the energy levels in a hydrogen atom, the fundamental problem that motivated Schrödinger and Dirac, without relying on the spectral theory for self-adjoint operators in Hilbert spaces." The thesis takes that claim as motivation and does not re-derive it; the analytic results proved here are the three named in the abstract. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-non-linearity-placed-in-the-mass-term-to-gain-a-symmetry">1. Non-linearity placed in the mass term, to gain a symmetry</h3>
+<p><strong>The idea.</strong> Daviau's term replaces $m\bar\psi\psi$ by $m\exp(-i\Theta\gamma^5)\psi$, which in the APS is the absolute value of $\bar\psi\psi+\bar\psi\gamma^5\psi$. The non-linearity is put where it buys an extra symmetry and nowhere else, so the equation stays first-order homogeneous and the non-linearity is only Lipschitz. </p>
+<p><strong>What it would add.</strong> A design rule for non-linear extensions. The corpus discusses the polar form of the linear Dirac equation and the two angles $\theta$ and the mass angle, but treats the mass as a constant; here the mass term is state-dependent and the choice of dependence is constrained by the symmetry one wants. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, at the mass term. </p>
+<p><strong>What stands in the way.</strong> The corpus's Dirac field is linear by construction, and the algebra's division makes $|\bar\psi\psi+\bar\psi\gamma^5\psi|$ easy to write but hard to justify: an absolute value is not algebraic, so the extension leaves the ring. </p>
+<h3 id="2-the-polar-form-fails-on-a-set-and-that-set-is-the-one-takabayasi-also-hit">2. The polar form fails on a set, and that set is the one Takabayasi also hit</h3>
+<p><strong>The idea.</strong> The Yvon-Takabayasi angle is undefined when $\bar\psi\psi$ and $-i\bar\psi\gamma^5\psi$ vanish together, so the polar decomposition covers the spinor space minus a cone. The thesis says explicitly that this is "the same issue Takabayasi encountered".</p>
+<p><strong>What it would add.</strong> A named exceptional set for the corpus's own chart. The conversion of Dirac Matter I records Takabayasi's remark that $\rho$ may vanish; this thesis states the failure as a condition on a pair of bilinears and then regularises it to get existence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code>, where the chart's degeneracies are catalogued.</p>
+<p><strong>What stands in the way.</strong> The corpus works with invertible elements and treats the zero-divisor cone as a separate topic; joining the two would need the angle's definition extended to the cone, which the thesis only does by smoothing.</p>
+<h3 id="3-two-congruences-not-one-and-the-dirac-current-as-the-coupling">3. Two congruences, not one, and the Dirac current as the coupling</h3>
+<p><strong>The idea.</strong> Splitting the spinor into left and right halves gives two fluids whose flow lines are separate congruences, coupled only through the Dirac current. Spin becomes helical motion along those lines, which is one reading of Zitterbewegung.</p>
+<p><strong>What it would add.</strong> A two-congruence hydrodynamics. The corpus's spin-half fluid is one congruence with a spin vector attached; here the two chiralities flow differently and the shared current is the only link.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>, on the flow lines.</p>
+<p><strong>What stands in the way.</strong> The corpus's ideal is one element per event, and two congruences require two velocity fields, which is exactly what the chiral split supplies but the single-element picture refuses.</p>
+<p>The thesis proves existence for the regularised problem only; global existence for the unregularised Daviau equation is not claimed, and the hydrogen spectrum is cited from Daviau rather than recomputed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

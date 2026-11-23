@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="semi-classical-thermodynamics-of-quantum-extremal-surfaces-in-jackiw-teitelboim-gravity"><strong>Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2107.10358v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Juan F. Pedraza, Andrew Svesko, Watse Sybesma, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 4 January 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>JHEP 2112 (2021) 134</td>
+</tr>
+<tr>
+<td>length</td>
+<td>102 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim gravity - 2107.10358-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim gravity - 2107.10358.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Semi-classical thermodynamics of quantum extremal surfaces in Jackiw-Teitelboim gravity - 2107.10358.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Works out the thermodynamics of quantum extremal surfaces — codimension-two surfaces extremising the generalized entropy — in semi-classical Jackiw–Teitelboim gravity, where the spacetime is the eternal two-dimensional anti-de Sitter black hole and the Hawking radiation is a conformal field theory with central charge $c$. Because backreaction is exact in this model, the authors can show that the Wald entropy of the semi-classical theory already contains the generalized entropy, including the time-dependent von Neumann term carried by the auxiliary field of the Polyakov action. Extremising along a time slice puts the quantum extremal surface just outside the horizon; classical and semi-classical Smarr relations and first laws are then derived for the nested Rindler wedge it bounds.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model-and-the-mechanism">The model and the mechanism</h3>
+<p>The scalar $\chi$ that localises the Polyakov action is allowed to be time dependent, which makes the Wald entropy time dependent and equal to the generalized entropy "under appropriate identifications". The authors state that this time-dependent solution "appears to have been overlooked" and that "the entropy associated with $\chi$ is precisely identified with a (time-dependent) von Neumann entropy".</p>
+<h3 id="the-quantum-extremal-surface">The quantum extremal surface</h3>
+<p>Extremising the generalized entropy on the slice $t=t_B$ produces "a quantum extremal surface that lies just outside of the black hole horizon, consistent with previous investigations on the black hole information paradox in eternal backgrounds". "The QES arises purely due to semi-classical effects, such that in the classical limit the QES coincides with the bifurcation surface of the eternal black hole."</p>
+<h3 id="the-entropy-comparison">The entropy comparison</h3>
+<p>The authors find that "the QES is always present and, moreover, the generalized entropy evaluated at the QES is smaller than $S_{\text{gen}}$ evaluated at the black hole horizon, contrary to what was observed previously". They flag the disagreement with earlier work rather than smoothing it.</p>
+<h3 id="the-nested-wedge">The nested wedge</h3>
+<p>Since the surface lies outside the horizon, "the QES describes an AdS-Rindler wedge nested inside the eternal black hole", and the paper derives the classical and semi-classical Smarr relations and first laws for the nested wedge, including for generic nested AdS$_2$-Rindler wedges.</p>
+<h3 id="the-scope">The scope</h3>
+<p>Two dimensions, a specific dilaton-gravity model, an eternal (not evaporating) black hole, and a conformal field theory for the radiation. Within that scope the computation is exact in the backreaction, which is what makes the identification of the two entropies checkable rather than conjectural.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-generalized-entropy-as-one-wald-entropy">1. Generalized entropy as one Wald entropy</h3>
+<p><strong>The idea.</strong> The area term and the matter entanglement term are not two contributions added by hand: in a semi-classical dilaton theory with a time-dependent auxiliary field, a single Wald entropy equals their sum. This is a <strong>formula</strong> and a <strong>mechanism</strong> at once.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats the area law as geometric and says the framework's own von Neumann functional is a different object, "posited and not yet verified". This paper is the cleanest known case in which the two coincide exactly, so it is the target any claim of coincidence in the corpus would have to match.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, "The framework's own entropy functional is a different, unverified object", and open question 1.</p>
+<p><strong>What stands in the way.</strong> The identification needs a dilaton, a Polyakov action, a conformal anomaly and two dimensions. The corpus has none of these, and its entropy functional lives on a finite-dimensional $\mathbb{B}_\Psi$. The cost is a quantum field theory's anomaly, which is not a biquaternion object.</p>
+<h3 id="2-an-entropy-that-decreases-with-time">2. An entropy that decreases with time</h3>
+<p><strong>The idea.</strong> The generalized entropy at the quantum extremal surface is smaller than at the horizon, and the entropy carries an explicit time dependence through $\chi$. This is a <strong>number</strong> claim with a direction.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-local-entropy-current.md</code> and <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> discuss entropy production and coarse graining; a case where the relevant entropy is smaller at the true extremum than at the horizon is a counterexample to the intuition that the horizon maximises it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result contradicts earlier work in the same model, as the authors say; it should be imported with that caveat. Ranked second.</p>
+<h3 id="3-smarr-and-first-law-for-a-nested-wedge">3. Smarr and first law for a nested wedge</h3>
+<p><strong>The idea.</strong> The thermodynamic laws hold not only for the horizon but for a Rindler wedge inside it, with its own area, volume and temperature. This is a <strong>formula</strong>, and it extends the region-based programme of the diamond papers to a nested region.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code> states the first law for a region; the nested wedge shows that the laws compose, with a surface inside a surface each carrying a first law.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is two-dimensional and relies on the JT dilaton; the composition in higher dimensions is not established here. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

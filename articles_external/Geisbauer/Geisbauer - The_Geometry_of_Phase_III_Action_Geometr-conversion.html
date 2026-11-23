@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of Phase III — Action Geometry, Curvature-Coupled Matter Waves, and Possible New Physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Geometry_of_Phase_III_Action_Geometr.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-phase-iii-action-geometry-curvature-coupled-matter-waves-and-possible-new-physics"><strong>The Geometry of Phase III — Action Geometry, Curvature-Coupled Matter Waves, and Possible New Physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer, ORCID iD 0000-0001-9160-6427</td>
+</tr>
+<tr>
+<td>version</td>
+<td>undated in the extracted text; third part of a series</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - The_Geometry_of_Phase_III_Action_Geometr-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Geometry_of_Phase_III_Action_Geometr.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-linearised-gravity.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - The_Geometry_of_Phase_III_Action_Geometr.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the proper-time phase of the second paper and adds one term: a curvature-dependent factor $\Xi[g]$ built from a scalar invariant, multiplied by a dimensionless coupling $\alpha$. Everything standard is recovered at $\alpha=0$, and the paper proposes the difference between two interferometer paths as the observable. A Lagrangian with the same factor is given, so the modification is a field theory and not only a phase rule. The paper is explicit that this is a possible new physics, not a derived one.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-correction">The correction</h3>
+<p>$$d\Phi_{\rm obs}=\frac{mc^2}{\hbar}\left[1+\alpha\,\Xi[g]\right]d\tau,\qquad \Xi[g]=\ell_*^{\,q}K[g]$$
+(paper 5, 7), with $K[g]$ "a scalar curvature invariant of mass dimension $q$", $\ell_*$ "a reference length scale", and $[K]=L^{-q}$ so that $\Xi$ is dimensionless; $\alpha$ is dimensionless.</p>
+<h3 id="the-test-form">The test form</h3>
+<p>For two paths $A$ and $B$,
+$$\Delta\Phi_{\rm obs}=\Delta\Phi_{\rm standard}+\Delta\Phi_{\rm curvature},\qquad \Delta\Phi_{\rm curvature}=\frac{mc^2}{\hbar}\alpha\left[\int_A\Xi[g]\,d\tau-\int_B\Xi[g]\,d\tau\right]$$
+(paper 9–10). "This equation is the central proposed test form. If α = 0, standard physics is recovered. If α ̸= 0 within experimental reach, matter waves would acquire an additional curvature-dependent phase beyond the standard proper-time action phase." phase.</p>
+<h3 id="the-lagrangian">The Lagrangian</h3>
+<p>$$\mathcal L=-\frac12 n\left[1+\alpha\Xi[g]\right]g^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi-U(n),\qquad \nabla_\mu\left(n\left[1+\alpha\Xi[g]\right]\nabla^\mu\phi\right)=0$$
+(paper 12–13), the same action as the inverted-fluid paper with the factor inserted in front of the kinetic term.</p>
+<h3 id="the-stated-status">The stated status</h3>
+<p>"does not by itself imply a modification of quantum mechanics or general relativity. New physics would require an additional contribution beyond the standard action phase."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-dimensionless-coupling-in-front-of-a-curvature-invariant">1. One dimensionless coupling in front of a curvature invariant</h3>
+<p><strong>The idea.</strong> $\alpha\Xi[g]$ with $\Xi=\ell_*^qK$ is the smallest possible deviation from standard phase accumulation: one number, one invariant, one reference length. That is a <strong>formula</strong>, and it is the batch's only proposal that is simultaneously an extension and a null hypothesis.</p>
+<p><strong>What it would add.</strong> A template for how to add new physics to a phase without breaking anything at $\alpha=0$ — which is the discipline the corpus's own extensions lack, since they introduce new fields with new equations.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-linearised-gravity.md</code>.</p>
+<p><strong>What stands in the way.</strong> $q$ is free, so $K[g]$ can be $R$, $R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$, or any power; $\ell_*$ is free; and $\alpha$ is bounded by atom interferometry to be small. Three free choices and one small number make the formula unfalsifiable in practice, which the paper acknowledges by calling the result "possible new physics".</p>
+<h3 id="2-difference-of-two-path-integrals-as-the-observable">2. Difference of two path integrals as the observable</h3>
+<p><strong>The idea.</strong> The new term is measured only through the difference between two paths, so any constant shift cancels. That is a <strong>reading</strong> with a design consequence: only the path dependence of $\Xi$ is observable.</p>
+<p><strong>What it would add.</strong> A pattern for the corpus's own effect proposals, several of which state a shift without saying what it is a shift relative to.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>.</p>
+<p><strong>What stands in the way.</strong> For a scalar invariant like $R$, the two interferometer arms sit in nearly the same gravitational field, so the difference is second order in the arm separation — the effect is suppressed by the very geometry that makes the experiment clean. The paper does not estimate this suppression.</p>
+<h3 id="3-the-modified-lagrangian">3. The modified Lagrangian</h3>
+<p><strong>The idea.</strong> Inserting $[1+\alpha\Xi]$ into the kinetic term makes the coupling depend on the path through $g$, so the field equation is
+$$\nabla_\mu\left(n[1+\alpha\Xi]\nabla^\mu\phi\right)=0.$$
+This is a <strong>mechanism</strong> — a non-minimal coupling with a clear place in an action.</p>
+<p><strong>What it would add.</strong> An explicit action-level statement of what a curvature-coupled phase would mean, where the corpus's material sector has a minimal coupling only.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code>.</p>
+<p><strong>What stands in the way.</strong> $\Xi$ depends on the metric, so varying the metric now produces extra terms from $\delta\Xi/\delta g^{\mu\nu}$; the paper's Lagrangian does not display them, and without them the stress-energy tensor is incomplete. The construction is stated, not closed.</p>
+<p>The rank is a judgement: the coupling template first, because it is the cleanest deviation on offer; the path difference second, because it is a design rule; the Lagrangian third, because it is incomplete.</p>
+<p>This is a seven-page paper; the phase correction, the two-path form, the Lagrangian, and the statement of what does not follow from the standard action are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

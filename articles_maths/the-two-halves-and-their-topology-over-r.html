@@ -88,11 +88,11 @@ $$</p>
 <p><em>Proof.</em> Each half is a Euclidean space by the theorem above, and $A\mapsto(1-t)A$ contracts it to $0$. The same path contracts the algebra, and it preserves each half because a linear subspace is closed under scaling.</p>
 <p><strong>The linear structure carries no topology.</strong> Every invariant of $\operatorname{Sym}_n$ or of $\operatorname{Skew}_n$ is trivial: both are simply connected and both are homeomorphic to Euclidean spaces. So any interesting topology must come from a condition on the elements, that is from a subset defined by a polynomial or by a rank.</p>
 <h2 id="the-positive-definite-cone">The Positive Definite Cone</h2>
-<p><strong>Definition.</strong> $\operatorname{Sym}_n^{>0}=\{S\in\operatorname{Sym}_n:S>0\}$ is the set of positive definite matrices.</p>
-<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{>0}$ is open and convex in $\operatorname{Sym}_n$, hence contractible.</p>
-<p><em>Proof.</em> For $S>0$ the quadratic form $x^{\mathsf T}Sx$ has a positive minimum on the unit sphere, and that minimum depends continuously on the entries, so a small perturbation of $S$ stays positive definite: the set is open. If $S>0$ and $T>0$ then $x^{\mathsf T}((1-t)S+tT)x=(1-t)x^{\mathsf T}Sx+t\,x^{\mathsf T}Tx>0$ for $x\ne0$, so the set is convex, and a convex set is contractible.</p>
-<p><strong>The cone is the orbit of the identity under congruence.</strong> Every positive definite $S$ is $P^{\mathsf T}P$ for an invertible $P$, by the Cholesky factorisation or by the spectral theorem, and conversely $P^{\mathsf T}P>0$. So $\operatorname{Sym}_n^{>0}=\{P^{\mathsf T}P:P\in\mathrm{GL}_n(\mathbb{R})\}$ is a single orbit of the congruence action, of dimension $n(n+1)/2$.</p>
-<p><strong>The boundary is the degenerate cone.</strong> The closure of $\operatorname{Sym}_n^{>0}$ is the set of positive semidefinite matrices, and its boundary is the set of those of rank below $n$, so the topology of the boundary is the topology of the lower strata.</p>
+<p><strong>Definition.</strong> $\operatorname{Sym}_n^{&gt;0}=\{S\in\operatorname{Sym}_n:S&gt;0\}$ is the set of positive definite matrices.</p>
+<p><strong>Theorem.</strong> $\operatorname{Sym}_n^{&gt;0}$ is open and convex in $\operatorname{Sym}_n$, hence contractible.</p>
+<p><em>Proof.</em> For $S&gt;0$ the quadratic form $x^{\mathsf T}Sx$ has a positive minimum on the unit sphere, and that minimum depends continuously on the entries, so a small perturbation of $S$ stays positive definite: the set is open. If $S&gt;0$ and $T&gt;0$ then $x^{\mathsf T}((1-t)S+tT)x=(1-t)x^{\mathsf T}Sx+t\,x^{\mathsf T}Tx&gt;0$ for $x\ne0$, so the set is convex, and a convex set is contractible.</p>
+<p><strong>The cone is the orbit of the identity under congruence.</strong> Every positive definite $S$ is $P^{\mathsf T}P$ for an invertible $P$, by the Cholesky factorisation or by the spectral theorem, and conversely $P^{\mathsf T}P&gt;0$. So $\operatorname{Sym}_n^{&gt;0}=\{P^{\mathsf T}P:P\in\mathrm{GL}_n(\mathbb{R})\}$ is a single orbit of the congruence action, of dimension $n(n+1)/2$.</p>
+<p><strong>The boundary is the degenerate cone.</strong> The closure of $\operatorname{Sym}_n^{&gt;0}$ is the set of positive semidefinite matrices, and its boundary is the set of those of rank below $n$, so the topology of the boundary is the topology of the lower strata.</p>
 <p><strong>Measured.</strong> A convex combination of two random positive definite matrices is positive definite to machine precision. A random symmetric matrix is positive definite with probability strictly between $0$ and $1$: measured as $0.16$ at $n=2$ and $0.02$ at $n=3$.</p>
 <h2 id="the-strata-of-the-symmetric-half">The Strata of the Symmetric Half</h2>
 <p><strong>Theorem.</strong> The symmetric matrices of rank exactly $r$ form a manifold of dimension</p>
@@ -150,7 +150,7 @@ $$</p>
 <td>the two halves, of dimensions $n(n+1)/2$ and $n(n-1)/2$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}_n^{>0}$</td>
+<td>$\operatorname{Sym}_n^{&gt;0}$</td>
 <td>the positive definite cone, open, convex and contractible</td>
 </tr>
 <tr>

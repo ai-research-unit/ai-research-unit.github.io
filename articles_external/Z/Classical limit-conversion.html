@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical Limit — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Classical limit.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-limit"><strong>Classical Limit</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Classical limit</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Classical limit-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Classical limit.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Classical limit.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia entry defining the classical limit as the recovery of classical mechanics at special values of a theory's parameters, and giving the three routes to it: Bohr's heuristic correspondence argument, the quasi-classical techniques, and the rigorous statement as a group contraction where $\hbar/S$ is taken to zero and commutators become Poisson brackets.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"The classical limit or correspondence limit is the ability of a physical theory to approximate or 'recover' classical mechanics when considered over special values of its parameters. The classical limit is used with physical theories that predict non-classical behavior."</p>
+<h3 id="the-heuristic-route">The heuristic route</h3>
+<p>"A heuristic postulate called the correspondence principle was introduced to quantum theory by Niels Bohr: in effect it states that some kind of continuity argument should apply to the classical limit of quantum systems as the value of the Planck constant normalized by the action of these systems becomes very small."</p>
+<h3 id="the-rigorous-route">The rigorous route</h3>
+<p>"More rigorously,[3] the mathematical operation involved in classical limits is a group contraction, approximating physical systems where the relevant action is much larger than the reduced Planck constant ħ, so" deformation parameter "ħ/S can be effectively taken to be zero (cf. Weyl quantization.) Thus typically, quantum commutators (equivalently, Moyal brackets) reduce to Poisson brackets,[4] in a group contraction."</p>
+<h3 id="what-does-not-disappear">What does not disappear</h3>
+<p>"In quantum mechanics, due to Werner Heisenberg's uncertainty principle, an electron can never be at rest; it must always have a non-zero kinetic energy." The limit removes the non-commutativity and not the zero-point motion, so the classical limit of a quantum theory is not the classical theory written down from scratch.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-group-contraction-is-a-limit-of-the-algebra-not-of-the-states">1. A group contraction is a limit of the algebra, not of the states</h3>
+<p><strong>The idea.</strong> Taking $\hbar/S\to0$ contracts the algebraic structure, and the states follow. The order matters: structure first, then kinematics.</p>
+<p><strong>What it would add.</strong> A name for what the corpus does when it projects onto the centre. The corpus describes the classical sector as that projection, a structural statement; the article supplies the deformation language in which a projection is a contraction with a parameter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.md</code>, at the projection.</p>
+<p><strong>What stands in the way.</strong> The corpus has no parameter to take to zero; its projection is exact rather than a limit.</p>
+<h3 id="2-commutators-become-brackets-and-moyal-says-what-is-lost">2. Commutators become brackets, and Moyal says what is lost</h3>
+<p><strong>The idea.</strong> The correspondence is the leading term of an expansion whose next order is the Moyal bracket, so the classical limit is the first term of a series with computable corrections.</p>
+<p><strong>What it would add.</strong> An order-by-order statement of a correspondence the corpus states as an identity in a limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.md</code>.</p>
+<p><strong>What stands in the way.</strong> The Moyal expansion assumes a flat symplectic phase space; the corpus's product is the algebra's own.</p>
+<p>This is an encyclopedia article; its three routes are named and its attributions standard, and it derives no limit itself.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

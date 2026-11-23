@@ -109,12 +109,12 @@ $$
 because the coarea measure of the level set $\{\varphi = t\}$ is $dS_t/|\tilde\nabla_\Phi\varphi|$. Multiplying both sides by $|\tilde\nabla_\Phi\varphi|$ gives the stated identity.</p>
 <p>The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\varphi(x) = |x| - 1$ and $|\tilde\nabla_\Phi\varphi| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.</p>
 <h3 id="the-chain-rule-with-the-heaviside-function">The Chain Rule with the Heaviside Function</h3>
-<p><strong>Proposition.</strong> Let $H(t) = \mathbf{1}_{t>0}$ be the Heaviside function. Then, in $\mathcal{D}'(\mathbb{R}^n)$,
+<p><strong>Proposition.</strong> Let $H(t) = \mathbf{1}_{t&gt;0}$ be the Heaviside function. Then, in $\mathcal{D}'(\mathbb{R}^n)$,
 $$
 \partial/\partial x_j H(\varphi) = n_j\,\delta_S, \qquad \tilde\nabla_\Phi H(\varphi) = n\,\delta_S .
 $$</p>
 <p><em>Proof.</em> The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial/\partial x_j H(\varphi) = \varphi_j\,(\delta \circ \varphi)$. By the proposition above, $\delta \circ \varphi = \delta_S/|\tilde\nabla_\Phi\varphi|$, so $\partial/\partial x_j H(\varphi) = \varphi_j \delta_S/|\tilde\nabla_\Phi\varphi| = n_j \delta_S$.</p>
-<p>Thus $H(\varphi)$ is the indicator of the side $\{\varphi > 0\}$, its gradient is the <strong>normal layer</strong> $n\,\delta_S$, and the two-sided classical derivative of $H(\varphi)$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.</p>
+<p>Thus $H(\varphi)$ is the indicator of the side $\{\varphi &gt; 0\}$, its gradient is the <strong>normal layer</strong> $n\,\delta_S$, and the two-sided classical derivative of $H(\varphi)$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.</p>
 <h2 id="the-jump-formula">The Jump Formula</h2>
 <h3 id="piecewise-smooth-functions">Piecewise Smooth Functions</h3>
 <p><strong>Definition.</strong> A function $u$ on a neighbourhood $\Omega$ of a point of $S$ is <strong>piecewise smooth</strong> across $S$ if $u = u^{+}H(\varphi) + u^{-}(1 - H(\varphi))$, with $u^{+}$ and $u^{-}$ of class $C^2$ on $\Omega$. Its <strong>classical derivative away from $S$</strong> is
@@ -248,7 +248,7 @@ $$
 $$
 Consequently, if $n$ is non-characteristic, then $[u] = 0$ and the solution is continuous across $S$; if $n$ is characteristic, then $[u]$ lies in the kernel of $\sigma_P(n)$ and the jump is admissible.</p>
 <p><em>Proof.</em> By the jump formula the singular part of $Pu$ is $(\sum_j a_j n_j)[u]\delta_S = \sigma_P(n)[u]\delta_S$. Since $f$ is continuous, its singular part vanishes, and the coefficient of the single layer $\delta_S$ must vanish.</p>
-<p>The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $\partial/\partial t u + a\,\partial/\partial Q_x u = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.</p>
+<p>The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $\partial/\partial t u + a\,\partial/\partial Q_x u = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x &lt; at$ and $u^{+}$ for $x &gt; at$ is admissible and propagates along the characteristic without change.</p>
 <h3 id="second-order-equations-and-transmission">Second-Order Equations and Transmission</h3>
 <p><strong>Theorem (second-order jump condition).</strong> Let $P = \sum_{j,k} a_{jk}\partial^2/\partial x_j\partial x_k + \sum_j b_j\partial/\partial x_j + c$ be of second order with $a_{jk} = a_{kj}$ and let $u$ be piecewise smooth with $Pu = f$, the source $f$ being continuous across $S$. Then
 $$
@@ -284,7 +284,7 @@ the conormal directions being exactly those in which the delta is singular. This
 $$
 \operatorname{tr} : W^{1,n}(\Omega) \to L^{n}(\partial\Omega), \qquad \|\operatorname{tr} u\|_{L^{n}(\partial\Omega)} \le C\,\|u\|_{W^{1,n}(\Omega)},
 $$
-agreeing with the restriction for continuous functions, with kernel $W^{1,n}_0(\Omega)$; on $H^s$ with $s > 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.</p>
+agreeing with the restriction for continuous functions, with kernel $W^{1,n}_0(\Omega)$; on $H^s$ with $s &gt; 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.</p>
 <h3 id="the-distributional-boundary-value">The Distributional Boundary Value</h3>
 <p>The simplest instance of a trace is the boundary value of a holomorphic function, and it is the one-dimensional model of the whole construction. For $f$ holomorphic on a neighbourhood of the real axis cut along it, the two limits $f^{\pm}(x) = \lim_{\varepsilon\to+0} f(x \pm i\varepsilon)$ are distributions on $\mathbb{R}$, the pair $(f^{+}, f^{-})$ is a piecewise smooth function across the line, and the Sokhotski–Plemelj formula
 $$
@@ -348,7 +348,7 @@ where the product on the right is the algebra's and the transform is the coeffic
 </tr>
 <tr>
 <td>$H$</td>
-<td>Heaviside function, $H(t) = \mathbf{1}_{t>0}$</td>
+<td>Heaviside function, $H(t) = \mathbf{1}_{t&gt;0}$</td>
 </tr>
 <tr>
 <td>$\delta_S$</td>

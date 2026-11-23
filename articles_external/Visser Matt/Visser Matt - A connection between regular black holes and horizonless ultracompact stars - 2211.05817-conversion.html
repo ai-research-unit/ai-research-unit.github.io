@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A connection between regular black holes and horizonless ultracompact stars — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A connection between regular black holes and horizonless ultracompact stars -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-connection-between-regular-black-holes-and-horizonless-ultracompact-stars"><strong>A connection between regular black holes and horizonless ultracompact stars</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2211.05817v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Raúl Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 November 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - A connection between regular black holes and horizonless ultracompact stars - 2211.05817-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A connection between regular black holes and horizonless ultracompact stars - 2211.05817.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - A connection between regular black holes and horizonless ultracompact stars - 2211.05817.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that two families usually treated as rivals are the same family. Any spherically symmetric regular black hole can be continuously deformed into a horizonless star, given two mild conditions: the Misner–Sharp quasi-local mass is non-negative, and it is linearly related to the ADM mass. The authors illustrate the result on the Hayward geometries, identify the horizonless end of the deformation as an anisotropic gravastar with a soft surface and both inner and outer light rings, and construct time-dependent geometries that could describe a regular black hole evolving into such a star, with semiclassical effects supplying the trigger for the early stages.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We illustrate that regular black holes and horizonless stars, typically considered as quite distinct families of black hole mimickers, are intimately intertwined. We show that any spherically symmetric regular black hole can be continuously deformed into a horizonless star under the mild conditions of non-negativity of gravitational energy (Misner–Sharp quasi-local mass), and an assumed linear relation between the latter and the Arnowitt–Deser–Misner (ADM) mass."</p>
+<h3 id="why-it-matters">Why it matters</h3>
+<p>"Regular black hole solutions and horizonless ultracompact stars, have so far been viewed as alternative scenarios for resolving the singular behaviour of spacetime at the core of classical black holes. The purpose of this manuscript is to show that they can instead be viewed as alternative subsets of a given class of regular black-hole-like spacetimes." The two are not competing answers to one question; they are two ends of one continuous family.</p>
+<h3 id="what-the-horizonless-end-looks-like">What the horizonless end looks like</h3>
+<p>"The form of the associated effective stress-energy tensor shows that these horizonless stars can be identified as anisotropic gravastars with a soft surface and inner/outer light rings."</p>
+<h3 id="why-the-deformation-is-mild">Why the deformation is mild</h3>
+<p>The conditions are not exotic. Non-negative Misner–Sharp mass is the statement that the object's quasi-local energy does not go negative anywhere; the linear relation to the ADM mass fixes how the object's own energy is apportioned from the total. Both hold for the standard regular models, which is why the argument covers "any spherically symmetric regular black hole".</p>
+<h3 id="the-dynamics">The dynamics</h3>
+<p>"We also construct dynamical geometries that could describe the evolution of regular black holes towards horizonless stars, and show that semiclassical physics contains the necessary ingredients to trigger the early stages of such dynamical evolution." The static deformation is continuous; whether nature takes that path is a dynamical question, and the authors show only that nothing forbids it.</p>
+<h3 id="the-appendix-results">The appendix results</h3>
+<p>Horizonless stars of the Bardeen type, a metric unifying Hayward and Bardeen, and a study of light rings and trapped regions — so the construction is checked on the second standard family, not only the first.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-trapping-condition-does-not-fix-whether-there-is-a-horizon">1. The trapping condition does not fix whether there is a horizon</h3>
+<p><strong>The idea.</strong> A geometry can hold a trapped region, light rings, and an arbitrarily small distance to horizon formation, while having no horizon at all. Whether the horizon exists is a separate question from whether the object behaves like a black hole.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> separates the causal boundary, the marginally trapped surface, and the Killing horizon, and says the three coincide only in the stationary black holes the corpus's thermodynamics treats. This paper supplies that separation with a physical family: a continuous path in which the marginal surface exists throughout while the causal boundary is present at one end and absent at the other. That is the concrete instance the article's taxonomy needs, and it shows the taxonomy is not pedantry.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, the section on the three things called a horizon.</p>
+<p><strong>What stands in the way.</strong> The demonstration is a static, spherically symmetric deformation of a classical metric; the corpus has no manifold-level causal structure at all. But the article is a ledger of exactly such gaps, so the cost is only that this entry is recorded rather than used.</p>
+<h3 id="2-a-deformation-parameter-as-the-order-parameter">2. A deformation parameter as the order parameter</h3>
+<p><strong>The idea.</strong> The passage from black hole to horizonless star is not a discrete jump but a continuous deformation, so there is a parameter whose value decides which end of the family the object occupies.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> treats a horizon as a yes-or-no condition, and its entropy is defined only when the horizon exists. A family where the horizon appears continuously makes "entropy of a horizon" a limit of a quantity defined off the horizon, which is exactly the situation the dynamic-entropy literature handles with the correction $(1-v\partial_v)$. The corpus has no article on deformation of horizons.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, appended as an illustrative family.</p>
+<p><strong>What stands in the way.</strong> The parameter is a property of a chosen one-parameter ansatz, not a canonical object. Ranked second.</p>
+<h3 id="3-quasi-local-mass-as-the-controlling-quantity">3. Quasi-local mass as the controlling quantity</h3>
+<p><strong>The idea.</strong> The whole result rests on the Misner–Sharp mass being non-negative and linearly tied to the ADM mass; the mass function, not the metric components, controls which geometries are allowed.</p>
+<p><strong>What it would add.</strong> A worked case where a single scalar function of radius determines the qualitative structure of a whole family of spacetimes. The corpus derives a mass from an algebraic norm; the comparison — that a mass function can carry that much information — is a target the corpus's mass articles never set themselves.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Misner–Sharp mass is defined by a quasilocal construction on a sphere in a Lorentzian manifold. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

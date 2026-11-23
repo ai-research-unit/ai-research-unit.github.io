@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Wave Equation for Extended Model Underlying the Dual Amplitude — String Model of Hadrons and Its Hybrid Extension — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation for Extended Model Underlying the Dual Amplitude: String…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="detailed-wave-equation-for-extended-model-underlying-the-dual-amplitude-string-model-of-hadrons-and-its-hybrid-extension"><strong>Detailed Wave Equation for Extended Model Underlying the Dual Amplitude — String Model of Hadrons and Its Hybrid Extension</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>47</strong> (1972) 1026, No. 3; received 15 October 1971</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Detailed Wave Equation for Extended Model Underlying the Dual Amplitude: String Model of Hadrons and Its Hybrid Extension-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation for Extended Model Underlying the Dual Amplitude: String Model of Hadrons and Its Hybrid Extension.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Detailed Wave Equation for Extended Model Underlying the Dual Amplitude: String Model of Hadrons and Its Hybrid Extension.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Develops the detailed wave equation (DWE) further. The original $\sigma$-formalism is rewritten in equivalent forms, one of which makes invariance under the "Hilbert transform manifest; finite gauge transformations are exhibited, and the transformation is non-unitary, corresponding to a complex shift of the spectral parameter. The original string model is then generalised to a <em>hybrid</em> model in which each element of the string carries internal Fermi oscillator variables. The effect is to lower the trajectory intercept from the value the DWE forces — one — by half a unit per added set, removing the intercept restriction that made the original model rigid. The most interesting case, the double Dirac string", uses vector Fermi variables with reality and Lorentz properties different from other authors' similar models.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-dwe-is-for">What the DWE is for</h3>
+<p>"In pursuing the theory of extended system containing relativistic internal movement for the purpose of a unified model of hadrons, we have introduced th&lt;' general postulate that the complete relativistic quantum mechanics for such a system·, including the case with external interaction, should be represented by a 'detailed wave equation' which holds at every element composing the system. 1l• 2l This seems to be a useful conception underlying duality and is motivated from the following reason. Namely for the theory of an extended system the time coordinates, each of which is assigned to each element, are necessary for the covar- iant formalism in the presence of internal force and external interactions but nevertheless, not representing proper dynamical degrees of the system, should be effectively suppressed except a single one, and this fact is just in accord with the necessity of avoiding unphysical states."</p>
+<p>"In particular we have explicitly given our theory for a 'string model', which is taken as a unified model for mesonic resonances, to show that it results in the multiparticle dual amplitude for a particular case where the trajectory intercept equals one."</p>
+<h3 id="the-reformulations">The reformulations</h3>
+<p>"The theory of detailed wave equation (DWE), which represents relativistic quantum dynamics of an extended system with external interaction for a specific value of Regge in- tercept, avoiding ghost states and leading to dual amplitude, is further developed in several respects. The original formulation (the 0"-formalism) for the string model is transcribed into a few equivalent formalisms. In the A-formalism the invariance of DWE against the "Hilbert transform" becomes manifest. Finite "gauge transformations", under which the theory is invariant, are explicitly obtained for the consideration of their structural meaning. The orig- inal "</p>
+<h3 id="the-gauge-transformation-is-non-unitary">The gauge transformation is non-unitary</h3>
+<p>Thus $\Lambda$ is altered to complex $\Lambda'$, corresponding to the fact that the transformation is non-unitary, and (3·18b) represents a nonlinear realization of the 'infinite-parameter Lie group' generated by $\{\Lambda_r\}$. In the limit $r\to0$, (3·18b) reduces to (3·10) with $C=ir$.</p>
+<h3 id="why-the-intercept-had-to-be-one-and-how-to-escape">Why the intercept had to be one, and how to escape</h3>
+<p>In the original string model we reach the result that the trajectory intercept must be restricted to one. In order to overcome this limitation it is necessary to modify the coupling to the external field and/or to extend the original model itself.</p>
+<p>"l having (1) 0 = 1. By the above method (1) 0 is raised (intercept is lowered) by each one unit. Raising Wo by each t unit is realized by introducing to the original string model additional internal variables obeying anticommutation relations, namely a set of internal' Fermi oscillators'.*) Next"</p>
+<p>"The orig- inal string model is generalized to the hybrid model, where each element constituting the string is endowed with internal" Fermi oscillator variables ", in the framework of DWE, which now fixes the Regge intercept at the value lower than the original one by t unit or its multiples. In particular"</p>
+<h3 id="the-double-dirac-string">The double Dirac string</h3>
+<p>"In particular the hybrid model with vector Fermi variables, which implies 'double-string' consisting of Dirac-like elements, is treated, where our vector Fermi variables differ from those in similar models by other authors with respect to their reality and Lorentz properties and are free from the introduction of additional indefinite metric. Moreover our theory is invariant under space reflection."</p>
+<p>"les'. We call this model' double Dirac string' since it is viewed as the coalescence of two strings consisting of Dirac-like particles, and we find that the corresponding detailed wave equation incorporates several interesting properties. Downloaded from academic."</p>
+<h3 id="the-fermi-variables-are-real">The Fermi variables are real</h3>
+<p>"We associate the original model with additional internal variables represented by a real scalar intensity b (J..) = b (J..)t with the properties**) b (}.,) = b (}.. + 2n), {b(J..), b(J..')} =2n ~ o(J..-J..' -2nn). n" of periodicity and anticommutation. Then $b(\lambda)$ is written as a Fourier series with $b_n^{\dagger}=b_{-n}$ and $\{b_n,b_m\}=\delta_{n+m,0}$. "m,o· Further we may use the 'Pauli matrices' ri and the set of Fermi oscillator variables an (n=l" to write $b_0=\tau_3/\sqrt2$, $b_n=\tau_1a_n$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-extra-time-coordinates-are-suppressed-because-they-are-not-dynamical">1. The extra time coordinates are suppressed because they are not dynamical</h3>
+<p><strong>The idea.</strong> Each element of the string gets its own time so the formalism can be covariant; those times are then suppressed to one, and that suppression is the same thing as removing unphysical states. The two requirements — covariance and unitarity — are met by one mechanism.</p>
+<p><strong>What it would add.</strong> A statement of why the many-time formalism is not a problem but a resource. <em>The Classical and Quantum Mechanics of a One-Dimensional Relativistic Elastic Continuum</em> conversion in this folder derives the same conclusion from the classical side; the DWE paper states it as the <em>motive</em> for the formalism, which is the cleaner version of the argument.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Group of Relativistic Internal Motion</em> in this folder, §<em>The Norm and the Invariant</em>, as the motive.</p>
+<p><strong>What stands in the way.</strong> The suppression is implemented by a specific integral equation; that it always yields a unitary theory is argued, not proved in general.</p>
+<h3 id="2-a-model-whose-parameter-is-forced-is-repaired-by-adding-degrees-of-freedom">2. A model whose parameter is forced is repaired by adding degrees of freedom</h3>
+<p><strong>The idea.</strong> The intercept is one, not chosen. To get other intercepts you add internal Fermi oscillators, each set lowering the intercept by half a unit. The model's rigidity is cured by enlargement, not by parameter fitting.</p>
+<p><strong>What it would add.</strong> A discrete mechanism for tuning a continuous-looking parameter. <em>Slopes of Mesons</em> (<code>articles_external/Takabayasi/Takabayasi - Slopes of Mesons-conversion.md</code>) extracts the slope from data; here the intercept comes in half-integer steps determined by how many oscillator sets are present, which is a stronger kind of prediction — the allowed values are a lattice, not a range.</p>
+<p><strong>Where it lands.</strong> The conversion of <em>Slopes of Mesons</em> in this folder, §<em>What the Model Fixes</em>, as the lattice case.</p>
+<p><strong>What stands in the way.</strong> Each oscillator set must be introduced by hand; nothing fixes how many sets a given hadron has.</p>
+<h3 id="3-reality-conditions-as-the-difference-between-two-formally-similar-models">3. Reality conditions as the difference between two formally similar models</h3>
+<p><strong>The idea.</strong> Other authors' hybrid models use Fermi variables with different reality and Lorentz properties and need an extra indefinite metric. Here the variables are real, no extra indefinite metric is introduced, and the theory is invariant under space reflection. The differences look technical and decide whether the model is a physical theory.</p>
+<p><strong>What it would add.</strong> A case where a technical choice — real versus complex oscillators — determines whether an indefinite metric is needed. That is a sharper version of the folder's recurring worry about indefinite metric: the metric is avoidable if the variables are chosen right.</p>
+<p><strong>Where it lands.</strong> §<em>The Norm and the Invariant</em> of the <em>Group of Relativistic Internal Motion</em> conversion, as the avoidability claim.</p>
+<p><strong>What stands in the way.</strong> The comparison with other authors is asserted in a sentence; the alternative models are not rederived to show where the indefinite metric enters.</p>
+<h3 id="4-gauge-transformations-that-are-non-unitary-and-what-that-means">4. Gauge transformations that are non-unitary, and what that means</h3>
+<p><strong>The idea.</strong> The finite gauge transformation shifts $\Lambda$ to a <em>complex</em> $\Lambda'$ and realises an infinite-parameter Lie group nonlinearly. A symmetry that is not unitarily implemented is unusual, and the paper treats it as structure worth understanding rather than a defect.</p>
+<p><strong>What it would add.</strong> A gauge symmetry outside the unitary paradigm. The corpus's gauge discussions assume unitary implementation or a BRST-like substitute; here the symmetry is explicitly non-unitary and still leaves the theory invariant, which is a case the standard treatment does not cover.</p>
+<p><strong>Where it lands.</strong> The corpus's gauge discussion in <em>The Lagrangian and the Non-Abelian Gauge Fields</em> (<code>articles_physics/the-lagrangian-and-the-non-abelian-gauge-fields.md</code>), as the non-unitary case.</p>
+<p><strong>What stands in the way.</strong> The physical meaning of the complex shift is not spelled out; the paper calls the group nonlinear and leaves interpretation to the reader.</p>
+<p>The remainder, one line each. That the original model gives the multiparticle dual amplitude only at intercept one is the sharpest statement in the folder of what the DWE buys and costs. That fermionic elements are added as <em>internal</em> variables rather than as worldline fermions distinguishes this construction from the later spinning string.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improving the Accuracy of Yoshio&#x27;s Formula Koide — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/improving-the-accuracy-of-yoshios-formula-koide-2090-0902-1000168.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="improving-the-accuracy-of-yoshios-formula-koide"><strong>Improving the Accuracy of Yoshio's Formula Koide</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (short communication)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — the file name ends with the DOI suffix <code>2090-0902-1000168</code></td>
+</tr>
+<tr>
+<td>authors</td>
+<td>D. Mareau</td>
+</tr>
+<tr>
+<td>version</td>
+<td>Journal of Physical Mathematics 7(2) 1000168, received 22 February 2016, published 3 May 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>J Phys Math 7: 168, doi:10.4172/2090-0902.1000168</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/improving-the-accuracy-of-yoshios-formula-koide-2090-0902-1000168-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/improving-the-accuracy-of-yoshios-formula-koide-2090-0902-1000168.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/improving-the-accuracy-of-yoshios-formula-koide-2090-0902-1000168.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Rewrites Koide's relation in integer units of the electron mass, so that the muon is $207$ units and the tauon $3481$ units, and reports that the agreement improves by more than two orders of magnitude over the same relation read on the measured masses. It then uses the integer reading to propose that the muon is not elementary but a bound state of $103$ electron-positron pairs, that the pairs hide one another's charge inside a stack of hollow spheres of radius equal to the muon's reduced Compton length, and that the muon lifetime and the muon magnetic moment follow from that picture with one free count. The mass values are the paper's arithmetic; the composite muon is stated as a hypothesis, and the author closes by calling the model a speculation until it is confirmed by an independent channel.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-in-integer-units-of-the-electron">The relation in integer units of the electron</h3>
+<p>With $m_e=0.510998910(13)$ MeV/$c^2$, $m_\mu=105.658367(4)$ MeV/$c^2$ and $m_\tau=1776.82(16)$ MeV/$c^2$, the paper writes the relation as</p>
+<p>$$
+(2/3)\,Q^{-1}\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2=m_e+m_\mu+m_\tau
+\tag{paper 1}
+$$</p>
+<p>"With $Q=1+1.2594453\times10^{-5}$" (as printed; the sign is the paper's).</p>
+<p>The conversion to electron units uses the muon to fix the ratio, $\tau=207/206$ "76828(4)" (as printed), which is $1.001120758(4)$. The table is then:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>lepton</th>
+<th>MeV/$c^2$</th>
+<th>electron unit</th>
+<th>$\tau$ conversion rate</th>
+<th>whole round</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e$</td>
+<td>0.510998910(13)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$m_\mu$</td>
+<td>105.658367(4)</td>
+<td>206.768282(4)</td>
+<td>1.001120758</td>
+<td>207</td>
+</tr>
+<tr>
+<td>$m_\tau$</td>
+<td>1776.79584(4)</td>
+<td>3477.10274(4)</td>
+<td>1.001120758</td>
+<td>3481</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rounded integers $1$, $207$, $3481$ give</p>
+<p>$$
+(2/3)\,Q^{-1}\left(1+\sqrt{207}+\sqrt{3481}\right)^2=1+207+3481,
+\tag{paper 2}
+$$</p>
+<p>"$Q=1+1.1775\times10^{-7}$" (as printed), with the printed claim that "the digital occurrence is improved by a factor $&gt;100$". The tauon mass so predicted is $1776.79584(4)$ MeV/$c^2$, inside the measured $1776.82(16)$ MeV/$c^2$.</p>
+<p>The paper states the status plainly: "The only clue is not sufficient to establish a lepton composed of electron-positron pairs." It calls equation 2 "a falsifiable and plausible hypothesis".</p>
+<h3 id="the-muon-as-math44-electron-positron-pairs">The muon as $103$ electron-positron pairs</h3>
+<p>The comparison is with para-positronium, a single $e^+e^-$ pair, with lifetime $\approx10^{-10}$ s against the muon's $\approx10^{-6}$ s. The hypotheses are that the muon holds "a neutral group of $10^3$ pairs of electrons, positrons, or $206$ units" (as printed), that this group is a "stack of hollow spheres of radius $\lambda_\mu$", that the fermions behave as pseudo-bosons for the duration, that the vector sum of the moments cancels so that the charges mask one another, that the muon charge is given by the single electron confined at the centre, that the emitted $\nu_\mu$ is the neutral group in another form, that $\bar\nu_e$ is the differential virtual dressing, and that this dressing is the ratio $1.001120758$ of the table.</p>
+<p>The radius is fixed by the electron's Compton length rescaled by the mass ratio,</p>
+<p>$$
+\lambda_\mu=\lambda_e/m_\mu ,
+\tag{paper 3}
+$$</p>
+<p>with $m_\mu$ in electron units, giving $\lambda_\mu=1.86759\times10^{-15}$ m. Inside the neutral sphere the charge density vanishes, $\rho=0$, so the flux through a closed surface is zero and the electrostatic force between the layers is zero. "This spherical symmetry allows using the Gauss theorem."</p>
+<p>The confinement is what makes the mass. "According to these 6 points, the mass of a quantum particle is inseparable from its vibration amplitude. It is inversely proportional." For the neutrino variant the overall moment cancels between two opposed parts, and "In the overall referential, the mass is null"; the author says this reconciles flavour oscillation, the propagation of light, and the disappearance of the mass after muon decay, and compares it to two counter-rotating discs whose moments cancel while each keeps its own.</p>
+<h3 id="the-lifetimes-from-a-power-of-the-fine-structure-constant">The lifetimes from a power of the fine-structure constant</h3>
+<p>For para-positronium the paper uses</p>
+<p>$$
+t_p=\frac{n\hbar}{m_ec^2\alpha^5},
+\tag{paper 6}
+$$</p>
+<p>with $n=2$ and the electron period $t_e=\lambda_e/c$, giving $t_p\sim1.42\times10^{-10}$ s. For the muon the same form with $n=(5/4)\times206$ and the sixth power,</p>
+<p>$$
+t_\mu=\frac{n\hbar}{m_ec^2\alpha^6},
+\tag{paper 7}
+$$</p>
+<p>gives $2.196499\times10^{-6}$ s against the measured $2.1969811(22)\times10^{-6}$ s. "The $5/4$ ratio is a free parameter." The hadronic branching of the tauon, 67 per cent, is said to distinguish it, and the tauon lifetime is not computed.</p>
+<h3 id="the-magnetic-moments-as-a-check">The magnetic moments as a check</h3>
+<p>The anomalous moments are quoted as $1.00116592$ for the muon and $1.00115965$ for the electron, "very close", and the small difference is attributed to "the influence of the neutral party". This is offered as compatible with the confinement of one electron in the muon.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-width-of-a-rung-from-a-count-of-pairs-and-a-power-of-math69">1. The width of a rung from a count of pairs and a power of $\alpha$</h3>
+<p><strong>The idea.</strong> A lifetime rule $t=n\hbar/(m_ec^2\alpha^k)$, where $n$ is a count of pairs in the state and $k$ is an integer power of the fine-structure constant, applied with $k=5$, $n=2$ to para-positronium and $k=6$, $n=257.5$ to the muon.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> (§11) lists "State the width rule" as an open item and says the fifth-power law is the only measured regularity available, with rungs 2 and 3 still needing widths. This paper gives a two-parameter family, a count times a power, that reproduces one measured lifetime to $0.02$ per cent.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code>, §11, the width-rule entry.</p>
+<p><strong>What stands in the way.</strong> The exponent changes between the two examples ($5$ then $6$) and $n=257.5$ is not a count but $5/4$ times a count, with $5/4$ called free by the author. A rule with a free exponent and a free multiplier per particle has no prediction left; the corpus would need a reason for the exponent to be the number of pairs minus something, and none is given.</p>
+<h3 id="2-the-mass-of-a-lepton-from-a-compton-radius-rescaled-by-its-own-mass">2. The mass of a lepton from a Compton radius rescaled by its own mass</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: the muon is $N$ electron-positron pairs stacked in hollow spheres whose radius is $\lambda_\mu=\lambda_e/m_\mu$, the layers screen one another's charge completely ($\rho=0$ inside), and the mass is the confined energy of the assembly.</p>
+<p><strong>What it would add.</strong> The corpus's tower picture attaches no size to a rung: the rungs are levels of one excitation, and the corpus has no composite object with a radius. <code>articles_physics/the-complex-displaced-singularity-and-the-circle-electron.md</code> is the closest object, an electron whose singularity is displaced into a ring and given a finite extent; this paper gives the muon a radius by a scaling law.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code>, the section on what holds a rung.</p>
+<p><strong>What stands in the way.</strong> The count $103$ pairs is chosen because $206$ units are needed, and the radius law is dimensional analysis. Nothing fixes the number of pairs from below or above, and no statistics, spin or binding energy is computed, so the mechanism does not produce the mass it starts from.</p>
+<h3 id="3-a-mass-relation-read-in-integers-rather-than-in-measured-masses">3. A mass relation read in integers rather than in measured masses</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong>: the closure is exact not on the measured masses but on their rounding to integers in electron units, $1$, $207$ and $59^2$, with agreement improving from $1.3\times10^{-5}$ to $1.2\times10^{-7}$.</p>
+<p><strong>What it would add.</strong> The corpus treats the closure as a statement about measured masses with a residual of $6.1\times10^{-6}$ (<code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code>, §4). A quantised reading would make the closure exact and demote the residual to a rounding artefact, which is a different target for any derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code>, §1, beside the measured $Q_N$ table; <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code> for the unit question.</p>
+<p><strong>What stands in the way.</strong> The integer reading is reached by a rescaling of $1.001120758$, which is the ratio $3481/3477.10$ and not a derived quantity; the tauon unit count is first fitted and then rounded upwards to the nearest square. Recomputation on the printed masses gives $1.2608\times10^{-5}$ where the paper prints $1.2594453\times10^{-5}$ with the opposite sign. The corpus cannot adopt a unit choice that is fitted per particle.</p>
+<h3 id="4-a-neutrino-that-keeps-its-flavours-and-loses-its-mass">4. A neutrino that keeps its flavours and loses its mass</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong>: the neutrino is two opposed moments whose vector sum cancels, so its mass is zero in the overall frame while the flavour labels survive inside each part.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code> treats the Majorana mass as the corpus's mechanism for a mass term with no charge; here the same algebraic cancellation is used in the opposite direction, to delete the mass.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus fixes nonzero neutrino mass splittings as measured data, and a cancellation that makes the mass identically zero contradicts them. Only the qualitative sentence is offered; no matrix, no mixing angle and no splitting is computed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

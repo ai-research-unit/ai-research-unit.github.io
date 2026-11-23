@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational vacuum polarization — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization - gr-qc_9710034.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-vacuum-polarization"><strong>Gravitational vacuum polarization</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9710034v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 October 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravitational vacuum polarization - gr-qc_9710034-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization - gr-qc_9710034.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization - gr-qc_9710034.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This short note argues that quantum violations of the classical energy conditions are not Planck-scale curiosities. They appear already at first order in $\hbar$ in semiclassical gravity, and they are widespread. The author lists known sources of violation: the Casimir effect, squeezed vacuum, inflation, cosmological particle production, the conformal anomaly, and gravitational vacuum polarisation. He then points out that the positive mass theorem and the singularity theorems are classical and fail once semiclassical effects are included.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"The energy conditions of classical Einstein gravity fail once quantum effects are introduced. These quantum violations of the energy conditions are not subtle high-energy Planck scale effects. Rather the quantum violations of the energy conditions already occur in semiclassical quantum gravity and are first-order $O(\hbar)$ effects. Quantum violations of the energy conditions are widespread, albeit small."</p>
+<h3 id="why-it-matters">Why it matters</h3>
+<p>"The energy conditions of classical Einstein gravity are used to prove many powerful and general theorems such as the singularity theorems, the positive mass theorem, and the topological censorship theorem."</p>
+<h3 id="the-list">The list</h3>
+<p>"Quantum induced violations of the energy conditions are now known to occur in: Casimir effect ... Squeezed vacuum ... Cosmological inflation ... Cosmological particle production ... Conformal anomaly ... Gravitational vacuum polarization."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"When a gravitational field acts as an external source applied to a quantum field theory (QFT) it will distort the quantum vacuum, and shift the expectation value of the stress-energy so that $\langle T^{\mu\nu}\rangle\neq 0$."</p>
+<h3 id="the-consequence-for-theorems">The consequence for theorems</h3>
+<p>"Present versions of the positive mass theorem and the singularity theorems are strictly classical and do not survive the introduction of even semiclassical quantum effects. (The hypotheses of these theorems are known to be false in semiclassical quantum gravity.)"</p>
+<h3 id="the-open-hope">The open hope</h3>
+<p>"There are suspicions that it might be possible to place general bounds on the size of the quantum violations and so still be able to prove some type of generalized singularity theorem and/or generalized positive mass theorem, but it is far from clear how to go about this."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-first-order-in-math15-is-enough">1. First order in $\hbar$ is enough</h3>
+<p><strong>The idea.</strong> Quantum violation needs no Planck-scale physics; it appears at leading semiclassical order.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> reasons about naturalness and empirical standing. This is a cheaper route to violating a classical condition than a high-energy argument, and the article should not inflate the energy needed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The note gives no sizes, only orders of magnitude. Ranked first, because it lowers the estimated cost of an alternative.</p>
+<h3 id="2-theorems-that-rest-on-failed-hypotheses">2. Theorems that rest on failed hypotheses</h3>
+<p><strong>The idea.</strong> Classical singularity and positive mass theorems assume conditions that semiclassical physics breaks.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> cites impossibility results. If their hypotheses fail, the entries are conditional, and the catalogue must say so.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The claim concerns hypotheses, not conclusions. Ranked second.</p>
+<h3 id="3-bounds-on-violation">3. Bounds on violation</h3>
+<p><strong>The idea.</strong> The violations might be bounded in general, which would restore weaker theorems.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses energy conditions in its derivations. A bound on violation would let the article state how much its results degrade.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of assumptions.</p>
+<p><strong>What stands in the way.</strong> The author calls it a suspicion with no method. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

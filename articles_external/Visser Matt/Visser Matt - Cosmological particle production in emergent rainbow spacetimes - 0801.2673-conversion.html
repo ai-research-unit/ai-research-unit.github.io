@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmological particle production in emergent rainbow spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological particle production in emergent rainbow spacetimes - 0801.2673.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmological-particle-production-in-emergent-rainbow-spacetimes"><strong>Cosmological particle production in emergent rainbow spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0801.2673v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silke Weinfurtner, Piyush Jain, Matt Visser, C. W. Gardiner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 17 January 2008 (dated 21 December 2007)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmological particle production in emergent rainbow spacetimes - 0801.2673-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological particle production in emergent rainbow spacetimes - 0801.2673.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmological particle production in emergent rainbow spacetimes - 0801.2673.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper studies particle production in a cosmological setting where Lorentz invariance holds at low energy and fails in the ultraviolet, so that the effective metric depends on momentum. Such rainbow metrics arise naturally when spacetime is treated as emergent from a microscopic substrate, and the authors realise the model in a parametrically excited Bose–Einstein condensate. They compare the full nonperturbative calculation with the standard perturbative modification of the dispersion relation, and find that very low energy modes see nothing, some modes re-enter the horizon during inflation, and extreme ultraviolet modes are insensitive to the expansion. After many e-foldings the spectrum becomes time independent and decays exponentially.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"We investigate cosmological particle production in spacetimes where Lorentz invariance emerges in the infrared limit, but is explicitly broken in the ultraviolet regime. Thus these models are similar to many (but not all) models of quantum gravity, where a breakdown of Lorentz invariance is expected for ultraviolet physics around the Planck / string scale."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"Our specific model focuses on the boost subgroup that supports CPT invariance and results in a momentum-dependent dispersion relation. Motivated by previous studies on spacetimes emerging from a microscopic substrate, we show how these modifications naturally lead to momentum-dependent rainbow metrics."</p>
+<h3 id="the-realisation">The realisation</h3>
+<p>"models involving a time-dependent microscopic interaction are suitable for mimicking quantum effects in FRW spacetimes. Within certain limits the analogy is sufficiently good to simulate relativistic quantum field theory in time-dependent classical backgrounds, and the quantum effects are approximately robust against the model-dependent modifications."</p>
+<h3 id="what-changes">What changes</h3>
+<p>"While very low-energy modes do not see the difference at all, some modes 're-enter the Hubble horizon' during the inflationary epoch, and extreme ultraviolet modes are completely insensitive to the expansion."</p>
+<h3 id="why-the-full-calculation-matters">Why the full calculation matters</h3>
+<p>"The analysis outlined here, because it is nonperturbative in the rainbow metric, exhibits features that cannot be extracted simply from the standard perturbative modification of particle dispersion relations."</p>
+<h3 id="the-final-spectrum">The final spectrum</h3>
+<p>"However, we also show how the final result, after many e-foldings, will approach a time-independent exponentially decaying particle spectrum."</p>
+<h3 id="the-authors-own-assessment">The authors' own assessment</h3>
+<p>"There were two main lessons learnt for the analogue model community. First, the specific model we presented — a uniform gas of atoms with time-dependent [interaction] — is in general not robust against the non-perturbative ultraviolet corrections." And the analogy "only holds for the low-energy part of the spectrum, and therefore the analogy is associated with a certain $k$-range."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-momentum-dependent-metric">1. A momentum-dependent metric</h3>
+<p><strong>The idea.</strong> The effective metric can depend on the momentum of the probe, so there is no single light cone for all modes.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> assumes one cone for all processes. A rainbow metric gives each mode its own, which is a direct counterexample to the uniqueness the article needs. The article should either exclude momentum dependence explicitly or explain why the framework forbids it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the definition of the barrier.</p>
+<p><strong>What stands in the way.</strong> The rainbow metric is an analogue-model construction, not a solution of the framework. Ranked first, because it challenges the article's uniqueness assumption.</p>
+<h3 id="2-an-emerging-metric-that-carries-a-scale">2. An emerging metric that carries a scale</h3>
+<p><strong>The idea.</strong> The substrate supplies a length scale that enters the dispersion relation and hence the metric.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists the absence of a scale as an entry. This paper shows a concrete mechanism by which an emergent geometry acquires one, which is the most specific answer to that entry available in this collection.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on scales.</p>
+<p><strong>What stands in the way.</strong> The scale comes from atomic physics, which the framework does not have. Ranked second.</p>
+<h3 id="3-robustness-is-a-separate-question-from-correctness">3. Robustness is a separate question from correctness</h3>
+<p><strong>The idea.</strong> An analogue model can reproduce an effect in the infrared while failing in the ultraviolet, and the failure is quantified.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats agreement with an effect as support. This paper distinguishes agreement in a regime from robustness across regimes, which is the sharper test and the one the article should apply to itself.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the catalogue of candidates.</p>
+<p><strong>What stands in the way.</strong> The distinction is about analogue models. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

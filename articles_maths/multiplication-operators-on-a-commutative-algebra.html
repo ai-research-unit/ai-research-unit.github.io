@@ -152,20 +152,20 @@ $$</p>
 <h3 id="the-split-complex-numbers">The Split-Complex Numbers</h3>
 <p>Let $A = \mathbb{C}_{\mathrm{spl}} = R[x]/(x^2-1)$ over $R = \mathbb R$, with basis $1, j$ and $j^2 = 1$. In this basis</p>
 <p>$$
-L_1 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
-L_j = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
-L_{a+bj} = \begin{pmatrix} a & b \\ b & a \end{pmatrix} ,
+L_1 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \qquad
+L_j = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \qquad
+L_{a+bj} = \begin{pmatrix} a &amp; b \\ b &amp; a \end{pmatrix} ,
 $$</p>
 <p>so $L(A)$ is the algebra of matrices of the form $\binom{a\ b}{b\ a}$, a two-dimensional commutative subalgebra of $M_2(\mathbb R)$. The characters are the two homomorphisms $\chi_\pm$ with $\chi_\pm(j) = \pm 1$, and the eigenvalues of $L_j$ are $1$ and $-1$, so $L_j$ is a reflection, of order two. The Gelfand transform sends $a+bj$ to the pair $(\chi_+,\chi_-) = (a+b, a-b)$, which is the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb R \times \mathbb R$ of the idempotent decomposition.</p>
 <h3 id="a-split-polynomial-algebra">A Split Polynomial Algebra</h3>
 <p>Let $A = k[x]/(f)$ with $f$ monic of degree $n$ splitting into $n$ distinct linear factors over $k$: $f = (x-r_1)\cdots(x-r_n)$. Then $A \cong k^n$ by the Chinese remainder theorem and the characters are the evaluations $\chi_i(x) = r_i$. The multiplication operator $L_x$ is the companion-type matrix acting on the basis $1, x, \dots, x^{n-1}$,</p>
 <p>$$
 L_x = \begin{pmatrix}
-0 & 0 & \cdots & 0 & -c_0 \\
-1 & 0 & \cdots & 0 & -c_1 \\
-0 & 1 & \cdots & 0 & -c_2 \\
-\vdots & & \ddots & & \vdots \\
-0 & 0 & \cdots & 1 & -c_{n-1}
+0 &amp; 0 &amp; \cdots &amp; 0 &amp; -c_0 \\
+1 &amp; 0 &amp; \cdots &amp; 0 &amp; -c_1 \\
+0 &amp; 1 &amp; \cdots &amp; 0 &amp; -c_2 \\
+\vdots &amp; &amp; \ddots &amp; &amp; \vdots \\
+0 &amp; 0 &amp; \cdots &amp; 1 &amp; -c_{n-1}
 \end{pmatrix}, \qquad f(x) = x^n + c_{n-1}x^{n-1} + \cdots + c_0 ,
 $$</p>
 <p>and the Cayley–Hamilton theorem is the statement that its characteristic polynomial is $f$. Its eigenvalues are $r_1, \dots, r_n$, the values of the characters, and the Gelfand transform is the diagonalisation by the Vandermonde matrix, which is invertible exactly because the roots are distinct.</p>

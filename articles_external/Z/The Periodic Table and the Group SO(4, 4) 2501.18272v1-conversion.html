@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Periodic Table and the Group SO(4, 4) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/The Periodic Table and the Group SO(4, 4) 2501.18272v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-periodic-table-and-the-group-so4-4"><strong>The Periodic Table and the Group SO(4, 4)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2501.18272v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>V. V. Varlamov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 30 January 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/The Periodic Table and the Group SO(4, 4) 2501.18272v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/The Periodic Table and the Group SO(4, 4) 2501.18272v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/The Periodic Table and the Group SO(4, 4) 2501.18272v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Represents the periodic system of the chemical elements inside the weight diagram of the rank-four Lie algebra of the rotation group of an eight-dimensional pseudo-Euclidean space, SO(4,4). It studies a hydrogen realisation of the Cartan subalgebra, determines a Cartan–Weyl basis, constructs the root and weight diagrams, associates a mass formula with each node, and reads spin as the fourth Cartan generator.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>"The periodic system of chemical elements is represented within the framework of the weight diagram of the Lie algebra of the fourth rank of the rotation group of an eight-dimensional pseudo-Euclidean space. The hydrogen realization of the Cartan subalgebra and Weyl generators of the group algebra is studied."</p>
+<h3 id="the-steps">The steps</h3>
+<p>"The root structure of the subalgebras of the group algebra of a conformal group in the framework of a twofold covering is analyzed. Based on the analysis, the Cartan-Weyl basis of the group algebra is determined. The root and weight diagrams are constructed. A mass formula associated with each node of the weight diagram is introduced."</p>
+<h3 id="spin-as-the-fourth-cartan-generator">Spin as the fourth Cartan generator</h3>
+<p>"Spin is interpreted as the fourth generator of the Cartan subalgebra, whose two eigenvalues correspond to two three-dimensional projections of the weight diagram containing elements of the periodic system from hydrogen to moscovium (the first projection) and from helium to oganesson (the second projection)."</p>
+<h3 id="the-advantage-claimed">The advantage claimed</h3>
+<p>"One of the main advantages of the proposed group-theoretic construction of the periodic system is the natural inclusion of antimatter in the general scheme." The paper lists its keywords as "periodic law, conformal group, group algebra, Cartan subalgebra, Weyl generators, root structure, weight diagram, mass formula, spin, antimatter".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-spin-as-a-cartan-generator-rather-than-a-casimir-label">1. Spin as a Cartan generator rather than a Casimir label</h3>
+<p><strong>The idea.</strong> In this scheme spin is a diagonal generator of the algebra, so its eigenvalues label positions on the weight diagram instead of being a constant of motion. The same object carries both the particle label and the spin. This is a <strong>reading</strong> with structural consequences.</p>
+<p><strong>What it would add.</strong> A different placement of spin than the corpus uses, where spin comes from the Casimirs of a subalgebra. If both work, the corpus's assignment is one of two and not the only one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>, on the placement of spin.</p>
+<p><strong>What stands in the way.</strong> The construction is for SO(4,4), not the Lorentz group; the corpus's rank-two algebra has no fourth Cartan generator, so the scheme cannot be carried over without enlarging the algebra — and enlarging it is exactly what the corpus's dimension-ceiling articles rule out.</p>
+<h3 id="2-a-weight-diagram-can-carry-a-periodic-table">2. A weight diagram can carry a periodic table</h3>
+<p><strong>The idea.</strong> Periodicity in chemical properties becomes periodicity in the weight lattice. A mass formula then gives the element's mass from its node. This is a <strong>mechanism</strong> for organising a discrete family of objects.</p>
+<p><strong>What it would add.</strong> A worked example of using a weight diagram as a classification tool with quantitative output, which the corpus's representation articles discuss abstractly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code>, as an application of weight diagrams.</p>
+<p><strong>What stands in the way.</strong> The paper's mass formula is fitted to the table, not derived from a dynamical theory; importing it would mean importing a fit, and the corpus has nowhere to put a fitted formula.</p>
+<p>This is a thirty-two page preprint; the weight-diagram construction, the Cartan-Weyl basis, the mass formula and the spin identification are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

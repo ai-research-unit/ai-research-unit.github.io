@@ -127,25 +127,25 @@ $$</p>
 A=U\Sigma V^*=(UV^*)(V\Sigma V^*),
 $$</p>
 <p>so the $*$-unitary factor is $W=UV^*$ and the positive factor is $P=V\Sigma V^*$. Conversely, diagonalising $P$ by $V$ and setting $U=WV$ recovers the SVD.</p>
-<p><strong>The proof.</strong> The spectral theorem for the positive semidefinite matrix $A^*A$ gives an orthonormal eigenbasis $v_1,\dots,v_4$ with eigenvalues $\sigma_1^2,\dots,\sigma_4^2$. For $\sigma_k>0$, set $u_k=Av_k/\sigma_k$; the $u_k$ are orthonormal. Extend them to a $*$-unitary $U$; then $A=U\Sigma V^*$.</p>
+<p><strong>The proof.</strong> The spectral theorem for the positive semidefinite matrix $A^*A$ gives an orthonormal eigenbasis $v_1,\dots,v_4$ with eigenvalues $\sigma_1^2,\dots,\sigma_4^2$. For $\sigma_k&gt;0$, set $u_k=Av_k/\sigma_k$; the $u_k$ are orthonormal. Extend them to a $*$-unitary $U$; then $A=U\Sigma V^*$.</p>
 <p><strong>The non-uniqueness.</strong> The singular values are unique. The unitaries $U,V$ are not unique when some singular values coincide, and they are not unique on the kernel when $A$ is singular. The polar factor $W=UV^*$ is unique on the range of $P$ and arbitrary on the kernel; the positive factor $P$ is always unique.</p>
 <p><strong>Example.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}3&0&0&0\\0&2&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+A=\begin{pmatrix}3&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>the singular values are $3,2,0,0$, the positive factor is $P=A$, and the $*$-unitary factor is $U=I$. For</p>
 <p>$$
-A=\begin{pmatrix}0&3&0&0\\2&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+A=\begin{pmatrix}0&amp;3&amp;0&amp;0\\2&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>the singular values are $3,2,0,0$, and</p>
 <p>$$
 A=
-\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}
-\begin{pmatrix}3&0&0&0\\0&2&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix}
-\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}
+\begin{pmatrix}3&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}
+\begin{pmatrix}0&amp;1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix}.
 $$</p>
 <h2 id="the-singular-case">The Singular Case</h2>
-<p><strong>The freedom on the kernel.</strong> If $A$ has rank $k<4$, then $P$ has rank $k$ and kernel of dimension $4-k$. The $*$-unitary factor $U$ is determined on the range of $P$ and arbitrary on the kernel of $P$. The freedom is a $*$-unitary $U(4-k)$ acting on the kernel, with values in the kernel of $A^*$.</p>
+<p><strong>The freedom on the kernel.</strong> If $A$ has rank $k&lt;4$, then $P$ has rank $k$ and kernel of dimension $4-k$. The $*$-unitary factor $U$ is determined on the range of $P$ and arbitrary on the kernel of $P$. The freedom is a $*$-unitary $U(4-k)$ acting on the kernel, with values in the kernel of $A^*$.</p>
 <p><strong>The partial isometry.</strong> The factor $U$ is a <strong>partial isometry</strong>:</p>
 <p>$$
 U^*U=P_{\operatorname{ran}P},\qquad
@@ -154,7 +154,7 @@ $$</p>
 <p>the orthogonal projections onto the range of $P$ and the range of $A$. It is $*$-unitary exactly when $A$ is invertible.</p>
 <p><strong>Example.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}3&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+A=\begin{pmatrix}3&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 $$</p>
 <p>the positive factor is $P=A$, and the $*$-unitary factor can be any $*$-unitary whose first column is $e_1$; the freedom is $U(3)$ on the kernel. The polar decomposition is not unique, but the positive factor is.</p>
 <p><strong>The polar of a projection.</strong> A projection $P$ (self-adjoint idempotent) is positive semidefinite, so its polar decomposition is $P=P\cdot I$; the $*$-unitary factor is $I$ on the range and arbitrary on the kernel. A partial isometry $U$ has polar decomposition $U=U P$ with $P=U^*U$ the projection onto its initial space; the positive factor is that projection.</p>

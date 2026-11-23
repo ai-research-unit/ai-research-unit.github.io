@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Wick rotate generic curved spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - How to Wick rotate generic curved spacetime - 1702.05572.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="how-to-wick-rotate-generic-curved-spacetime"><strong>How to Wick rotate generic curved spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>essay</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1702.05572v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 26 February 2017 (essay originally written March 1991)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (the PDF states it was written for the 1991 Gravity Research Foundation essay contest)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - How to Wick rotate generic curved spacetime - 1702.05572-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - How to Wick rotate generic curved spacetime - 1702.05572.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - How to Wick rotate generic curved spacetime - 1702.05572.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Wick rotation is usually described as continuing the time coordinate, $t\to -it$. The author argues this is coordinate dependent and so fails on generic curved spacetimes. He exhibits de Sitter space in three slicings, where naive continuation gives a sphere, a Lorentzian metric of the wrong signature, or something else again. The fix is to continue the metric rather than the coordinate. This leaves the manifold and its charts fixed, reproduces flat space results, and restricts the class of Euclidean metrics that appear in the path integral.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-target">The target</h3>
+<p>"It is an article of folklore that the collection of ideas identified as Euclidean quantum gravity may be derived from ordinary Lorentzian signature gravity by the procedure of Wick rotation. This note will attempt to shed some light on this relatively ill–understood procedure."</p>
+<h3 id="the-proposal">The proposal</h3>
+<p>"I argue that it proves inappropriate and unhelpful to regard Wick rotation in terms of a complex deformation of the time coordinate. Rather, Wick rotation can more usefully be viewed as a complex deformation of the spacetime metric."</p>
+<h3 id="the-evidence">The evidence</h3>
+<p>"naive analytic continuation yields a metric that while real is certainly not Euclidean, the original Lorentzian metric of signature (1,3) being analytically continued to another Lorentzian metric of signature (3,1)"</p>
+<h3 id="the-diagnosis">The diagnosis</h3>
+<p>"This explicit coordinate dependence of the naive Wick rotation procedure should inspire a deep and abiding feeling of unease — clearly something critical is amiss."</p>
+<h3 id="the-remedy">The remedy</h3>
+<p>"Such concerns may be dealt with by reinterpreting Wick rotation in terms of an analytic continuation of the metric, leaving the coordinate charts invariant."</p>
+<h3 id="the-properties-of-the-fix">The properties of the fix</h3>
+<p>"this version of Wick rotation does not disturb the topological structure of the manifold — if the manifold has a Lorentzian metric initially then the Wick rotated Euclidean metric will still be compatible with the existence of a Lorentzian metric."</p>
+<h3 id="the-consequence-for-the-path-integral">The consequence for the path integral</h3>
+<p>"If we treat the Lorentzian path integral as paramount we see that Wick rotation does not lead to arbitrary Euclidean metrics, and the associated Euclidean functional integral over Euclidean metrics is over a topologically restricted class of Euclidean metrics."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"The naive '$t\to -it$' prescription for Wick rotation is physically and mathematically diseased when applied to questions of quantum gravity. There is a fundamental issue of paramount importance hiding in the seemingly innocuous question 'What is Wick rotation?'."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-rotate-the-metric-not-the-time">1. Rotate the metric, not the time</h3>
+<p><strong>The idea.</strong> Analytic continuation of the metric is chart independent; continuation of a coordinate is not.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code> already treats a complex metric as the object of interest. This essay supplies the argument that this is the only well-defined option in curved spacetime, which strengthens the target's choice of object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The argument is a contest essay, not a theorem. Ranked first, because it justifies an existing choice in the target.</p>
+<h3 id="2-euclidean-gravity-is-not-a-separate-theory">2. Euclidean gravity is not a separate theory</h3>
+<p><strong>The idea.</strong> Continuing the metric keeps the topology and restricts the Euclidean configurations that count.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.md</code> uses imaginary time as a thermal device. If imaginary time is not a coordinate deformation, the target must say which object it is continuing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.md</code>, in the discussion of imaginary time.</p>
+<p><strong>What stands in the way.</strong> The essay does not discuss thermal field theory. Ranked second.</p>
+<h3 id="3-a-restricted-configuration-space">3. A restricted configuration space</h3>
+<p><strong>The idea.</strong> The path integral runs over metrics compatible with a Lorentzian structure, not over all Euclidean metrics.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code> treats the space of fields as unrestricted and only the regulator as constrained. Here the space itself is constrained by topology, which changes what a flow over that space can mean.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, in the section on the effective action.</p>
+<p><strong>What stands in the way.</strong> The point is made for quantum gravity, not for a flat-space flow. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

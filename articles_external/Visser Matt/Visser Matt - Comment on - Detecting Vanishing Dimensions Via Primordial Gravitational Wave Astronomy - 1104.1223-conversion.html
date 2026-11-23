@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment on &quot;Detecting vanishing dimensions via primordial gravitational wave astronomy&quot; — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on - Detecting Vanishing Dimensions Via Primordial Gravitational Wave…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comment-on-detecting-vanishing-dimensions-via-primordial-gravitational-wave-astronomy"><strong>Comment on "Detecting vanishing dimensions via primordial gravitational wave astronomy"</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1104.1223v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas P. Sotiriou, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 April 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>1 page</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Comment on - Detecting Vanishing Dimensions Via Primordial Gravitational Wave Astronomy - 1104.1223-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on - Detecting Vanishing Dimensions Via Primordial Gravitational Wave Astronomy - 1104.1223.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Comment on - Detecting Vanishing Dimensions Via Primordial Gravitational Wave Astronomy - 1104.1223.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is a one-page comment on a claim that primordial gravitational waves could detect a reduction of spacetime dimension at short distances. The authors argue that the claim is misleading for two distinct reasons. First, "dimension" is ambiguous: the spectral dimension, which runs, is not the topological dimension, which stays four, and it is the topological one that appears in the path integral. Second, some of the models cited contain no gravitational degrees of freedom at all, so they cannot constrain a gravitational-wave spectrum.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim-being-addressed">The claim being addressed</h3>
+<p>"It has been argued that quantum grav[ity models] where the number of dimensions reduces at [short distances] exhibit a potentially observable [effect in the] primordial gravitational wave (GW) spectrum." The original work "claimed there that this is a 'generic' and [robust feature] of such models, since '(2+1)-dimensional [spacetimes] have no gravitational degrees of freedom'."</p>
+<h3 id="the-verdict">The verdict</h3>
+<p>"[We find this] claim misleading for two distinct reasons."</p>
+<h3 id="the-first-reason-which-dimension">The first reason: which dimension</h3>
+<p>"Definition of dimensionality: It is ambi[guous] which definition of 'dimension' is being us[ed when refer]ring to vanishing dimensions. The o[ther papers] there which discuss vanishing dimension[s in quantum] gravity are [2,3], which discuss the 's[pectral dimension]' (SD). In particular [2] refers to causal [dynamical trian]gulations [CDTs], where it is the SD th[at runs in] the UV, not the topological [physical] [one]; the latter remains 4."</p>
+<h3 id="the-consequence-of-the-ambiguity">The consequence of the ambiguity</h3>
+<p>"4-dimensional CDTs by construction [are built from four-]dimensional simplices. The SD is an ana[lytic quantity that] provides information about short-distance [fluctuations]. The fact that it runs to 2 at [the UV does] not mean that any physical modes decouple."</p>
+<h3 id="the-second-reason-no-gravitons-to-lose">The second reason: no gravitons to lose</h3>
+<p>"Consider, for instance, Hořava grav[ity, an]other theory where (Lorentz violating) dispersion rela[tions] lead to a SD of 2 in the UV. The spin-2 graviton does not decouple at high energies, it remains part of the physical excitation spectrum, albeit with a strongly Lorentz violating dispersion relation."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"in a wide class of models w[here the notion] of dimension is scale dependent, this i[s the SD]; SD is not the quantity that appears in [path] integrals; [it is the] physical dimension, 4, which is not run[ning]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-notions-of-dimension">1. Two notions of dimension</h3>
+<p><strong>The idea.</strong> A dimension that runs with scale and a dimension that counts coordinates are different objects, and only the second enters the path integral.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> discusses a stratum where a metric degenerates and the effective dimension of the propagation changes. The distinction here is the same one, and the comment supplies the two names and the reason to keep them apart. The article's account of the degenerate stratum should say which notion it means.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the definition of the regime.</p>
+<p><strong>What stands in the way.</strong> The comment is about quantum gravity models and the article is classical. Ranked first, because it forces a definition the article needs anyway.</p>
+<h3 id="2-dispersion-need-not-mean-decoupling">2. Dispersion need not mean decoupling</h3>
+<p><strong>The idea.</strong> A mode with a strongly modified dispersion relation at high energy is still a physical mode; it does not leave the spectrum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats the massless limit as a point where the dispersion relation changes character. This comment shows the opposite case, a modified dispersion with the mode intact, which sharpens what "the regime" means: it is about the shape of the dispersion relation, not about whether a mode exists.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the dispersion discussion.</p>
+<p><strong>What stands in the way.</strong> It is a clarification of terms rather than a result. Ranked second.</p>
+<h3 id="3-short-notes-have-use">3. Short notes have use</h3>
+<p><strong>The idea.</strong> A one-page correction of a specific claim is a legitimate contribution with its own weight.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects negative results. This comment is a negative result about someone else's claim, and it is a model for how to state one: name the claim, name the two distinct errors, and stop. The catalogue would benefit from the form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is about style. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

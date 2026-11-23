@@ -76,7 +76,7 @@
 <p>Throughout, $n$ is a positive integer, $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{Z}_n$ is the ring of residues modulo $n$, and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is the field with $p$ elements for $p$ prime; the class of $a$ is written $\bar a$ or $a \bmod n$, and $a \equiv b \pmod n$ means that $n$ divides $a - b$. The group of invertibles of $\mathbb{Z}/n\mathbb{Z}$ is written $(\mathbb{Z}/n\mathbb{Z})^\times$, $\varphi$ is the Euler function, $\operatorname{ord}_n(a)$ is the multiplicative order of $a$ modulo $n$, and $\left(\frac{a}{p}\right)$ is the Legendre symbol. The base is the commutative ring with identity throughout, and the specific rings here are finite and commutative.</p>
 <h2 id="congruences">Congruences</h2>
 <h3 id="the-congruence-relation">The Congruence Relation</h3>
-<p><strong>Definition.</strong> For $a, b, n \in \mathbb{Z}$ with $n > 0$ one writes</p>
+<p><strong>Definition.</strong> For $a, b, n \in \mathbb{Z}$ with $n &gt; 0$ one writes</p>
 <p>$$
 a \equiv b \pmod n \iff n \mid (a - b).
 $$</p>
@@ -93,8 +93,8 @@ $$</p>
 <p><strong>Proof.</strong> Surjectivity and the kernel are immediate from the division algorithm of <em>The Integers</em>, which shows that every class has a representative in $\{0, 1, \dots, n-1\}$. The universal property is the first isomorphism theorem of <em>Rings</em>.</p>
 <p><strong>Example.</strong> The ring $\mathbb{Z}/12\mathbb{Z}$ has twelve elements; the classes $\bar 0, \bar 3, \bar 4, \bar 6, \bar 8, \bar 9$ are zero divisors, and $\bar 1, \bar 5, \bar 7, \overline{11}$ are invertible. The sum of two classes is computed by adding representatives and reducing, the product likewise.</p>
 <h3 id="arithmetic-modulo-small-numbers">Arithmetic Modulo Small Numbers</h3>
-<p><strong>Theorem.</strong> In $\mathbb{Z}/n\mathbb{Z}$, an element $\bar a$ is invertible if and only if $\gcd(a, n) = 1$; it is a zero divisor if and only if $1 < \gcd(a,n) < n$, and it is nilpotent if and only if every prime dividing $n$ divides $a$.</p>
-<p><strong>Proof.</strong> If $\gcd(a,n) = 1$, Bézout gives $ua + vn = 1$, hence $\bar u \bar a = \bar 1$. Conversely if $\bar a \bar u = \bar 1$ then $n \mid (au - 1)$, so any common divisor of $a$ and $n$ divides $1$. For the zero divisor statement, if $d = \gcd(a,n)$ with $1 < d < n$, then $\bar a \cdot \overline{n/d} = \overline{0}$ with $\overline{n/d} \neq \bar 0$; conversely a zero divisor is not invertible, so $\gcd(a,n) > 1$, and it is not $n$ unless $\bar a = \bar 0$. The nilpotency statement follows by writing $n$ as a product of prime powers.</p>
+<p><strong>Theorem.</strong> In $\mathbb{Z}/n\mathbb{Z}$, an element $\bar a$ is invertible if and only if $\gcd(a, n) = 1$; it is a zero divisor if and only if $1 &lt; \gcd(a,n) &lt; n$, and it is nilpotent if and only if every prime dividing $n$ divides $a$.</p>
+<p><strong>Proof.</strong> If $\gcd(a,n) = 1$, Bézout gives $ua + vn = 1$, hence $\bar u \bar a = \bar 1$. Conversely if $\bar a \bar u = \bar 1$ then $n \mid (au - 1)$, so any common divisor of $a$ and $n$ divides $1$. For the zero divisor statement, if $d = \gcd(a,n)$ with $1 &lt; d &lt; n$, then $\bar a \cdot \overline{n/d} = \overline{0}$ with $\overline{n/d} \neq \bar 0$; conversely a zero divisor is not invertible, so $\gcd(a,n) &gt; 1$, and it is not $n$ unless $\bar a = \bar 0$. The nilpotency statement follows by writing $n$ as a product of prime powers.</p>
 <p><strong>Corollary.</strong> For $n \geq 2$ the ring $\mathbb{Z}/n\mathbb{Z}$ is a field if and only if $n$ is prime, and it is an integral domain if and only if $n$ is prime; for $n$ composite it has zero divisors and is neither. In particular $\mathbb{F}_p$ is the field with $p$ elements, and every finite field of prime order arises this way.</p>
 <p><strong>Proof.</strong> Combine the preceding theorem with the criterion that a finite commutative ring with identity is a field exactly when its only ideals are $0$ and the whole ring, and with the primality criterion for the ideal $(n)$ of <em>The Integers</em>.</p>
 <h2 id="the-structure-of-math91">The Structure of $\mathbb{Z}/n\mathbb{Z}$</h2>
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="quadratic-residues">Quadratic Residues</h3>
 <p><strong>Definition.</strong> For $p$ an odd prime and $p \nmid a$, the <strong>Legendre symbol</strong> is</p>
 <p>$$
-\left(\frac{a}{p}\right) = \begin{cases} 1, & a \text{ is a square modulo } p, \\ -1, & a \text{ is not a square modulo } p. \end{cases}
+\left(\frac{a}{p}\right) = \begin{cases} 1, &amp; a \text{ is a square modulo } p, \\ -1, &amp; a \text{ is not a square modulo } p. \end{cases}
 $$</p>
 <p>A residue with symbol $1$ is a <strong>quadratic residue</strong>, one with symbol $-1$ a <strong>quadratic non-residue</strong>.</p>
 <p><strong>Theorem (Euler's criterion).</strong> For $p$ an odd prime and $p \nmid a$,</p>

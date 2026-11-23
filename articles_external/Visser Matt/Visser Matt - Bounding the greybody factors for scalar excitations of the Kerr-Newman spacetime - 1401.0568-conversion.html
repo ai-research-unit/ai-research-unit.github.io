@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounding the greybody factors for scalar excitations of the Kerr–Newman spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the greybody factors for scalar excitations of the Kerr-Newman…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounding-the-greybody-factors-for-scalar-excitations-of-the-kerrnewman-spacetime"><strong>Bounding the greybody factors for scalar excitations of the Kerr–Newman spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1401.0568v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Tritos Ngampitipan, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 January 2014</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bounding the greybody factors for scalar excitations of the Kerr-Newman spacetime - 1401.0568-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the greybody factors for scalar excitations of the Kerr-Newman spacetime - 1401.0568.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the greybody factors for scalar excitations of the Kerr-Newman spacetime - 1401.0568.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper extends rigorous greybody bounds from static spherically symmetric black holes to the Kerr–Newman geometry. It separates the scalar wave equation in spheroidal coordinates, obtains a one-dimensional barrier equation for each mode, and applies the comparison bounds. The result is an inequality for each $(l,m)$ mode in terms of the frequency, the charge, the spin parameter, and the spheroidal eigenvalue. A by-product is a bound on the emission rate of super-radiant modes, which amplify rather than attenuate.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-rotation-is-harder">Why rotation is harder</h3>
+<p>"Finding exact solutions for black-hole greybody factors is generically impractical; typically one resorts either to making semi-analytic or numerical estimates, or alternatively to deriving rigorous analytic bounds. Indeed, rigorous bounds have already been established for the greybody factors of Schwarzschild and Riessner–Nordström black holes, and more generally for those of arbitrary static spherically symmetric asymptotically flat black holes. Adding rotation to the problem greatly increases the level of difficulty, both for purely technical reasons (the Kerr or Kerr–Newman black holes are generally much more difficult to work with than the Schwarzschild or Reissner–Nordström black holes), but also at a conceptual level (due to the generic presence of super-radiant modes)."</p>
+<h3 id="the-result">The result</h3>
+<p>"The net result of this article is to establish certain rigorous bounds on the greybody factors (mode dependent transmission probabilities) for Kerr–Newman black holes. As a side effect, we have also obtained certain rigorous bounds on the emission rates for the super-radiant modes."</p>
+<h3 id="the-structural-observation">The structural observation</h3>
+<p>"An interesting feature of these bounds is the ubiquity of the basic quantity $I_{\ell,m}$ which itself is simply linear in the spheroidal harmonic eigenvalue $\lambda_{\ell m}(a\omega)$. (Recall that $\lambda_{\ell m}(a\omega)\to\ell(\ell+1)$ as rotation is switched off, $a\to0$). This seems to indicate that it is the use of separable spheroidal coordinates that is in many ways more crucial than the specific form of the metric components."</p>
+<h3 id="what-the-authors-do-not-claim">What the authors do not claim</h3>
+<p>"We do not claim that these bounds are in any sense optimal. (Except, perhaps, in the restricted sense that these seem to be the easiest bounds to establish). It is quite possible that making different choices at various stages of the analysis could lead to tighter bounds, but there are no really obvious routes to guaranteeing tighter bounds."</p>
+<h3 id="what-remains-open">What remains open</h3>
+<p>"More prosaically, there would be in principle no obstruction to adding mass and charge to the scalar field ..., but the results are likely to be algebraically messy. Other possibilities to explore might include the behaviour of spin-1/2, spin-1, and spin-2 fields, or the consideration of other interesting spacetime geometries."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-super-radiance-as-amplification">1. Super-radiance as amplification</h3>
+<p><strong>The idea.</strong> For some modes the transmission probability exceeds one in the sense that the reflected wave is stronger. The paper bounds the amplification rate as well as the attenuation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> records that a nonzero $v$ gives particle creation, and its canonical condition is $|u|^2-|v|^2=1$ for fermions. Super-radiance is the bosonic counterpart, where the amplified mode has $|u|^2-|v|^2=1$ with $v$ large. A bound on the amplification is a bound on $|v|$, so the article could state the super-radiant case with the same algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, after the canonical conditions.</p>
+<p><strong>What stands in the way.</strong> The paper's bound is for a scalar field, and the article's worked case is fermionic. Ranked first, because it extends the article's central identity to a case it does not treat.</p>
+<h3 id="2-separability-matters-more-than-the-metric">2. Separability matters more than the metric</h3>
+<p><strong>The idea.</strong> The bounds depend on the metric only through a separated eigenvalue, and the eigenvalue is the same object for any metric admitting the same separable coordinates.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats the horizon locus as a local condition on a null congruence. This paper's observation says that for scattering the relevant structure is the separability of the wave equation, not the horizon condition. The article could note that different questions about the same geometry depend on different structures, which is a useful qualification of its ledger.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on what the algebra reaches.</p>
+<p><strong>What stands in the way.</strong> It is a qualification rather than an addition. Ranked third.</p>
+<h3 id="3-coordinates-do-the-work">3. Coordinates do the work</h3>
+<p><strong>The idea.</strong> Spheroidal coordinates are not a convenience; they are what makes the bound expressible.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists what the algebra lacks. A separable coordinate system is another such object: it is a property of the metric and the operator together, and the algebra does not supply it. The catalogue's scope note could record this as a second kind of external input, alongside the frame field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The catalogue is about algebra, and separability is analysis. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

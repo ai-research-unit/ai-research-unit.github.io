@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Proof.</strong> Both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is $I$. Non-commutativity: $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$.</p>
 <p><strong>The product is composition.</strong> The map $A\mapsto(x\mapsto Ax)$ is an isomorphism onto $\operatorname{End}_{\mathbb{C}}(\mathbb{C}^{2})$: injective because $Ae_{j}$ is the $j$-th column, surjective because a map is fixed by the images of a basis. The transpose is an anti-isomorphism onto the opposite algebra, since $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$.</p>
 <h2 id="trace-and-determinant">Trace and Determinant</h2>
-<p><strong>Definition.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, the trace is $\operatorname{tr}A=a+d$, the determinant is $\det A=ad-bc$, and the characteristic polynomial is</p>
+<p><strong>Definition.</strong> For $A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$, the trace is $\operatorname{tr}A=a+d$, the determinant is $\det A=ad-bc$, and the characteristic polynomial is</p>
 <p>$$
 \chi_A(\lambda)=\det(\lambda I-A)=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A .
 $$</p>
@@ -95,9 +95,9 @@ $$</p>
 <p><strong>Proof.</strong> Multiplicativity is that of the determinant of a linear map. The normalisation is the Leibniz formula over the two permutations of $S_2$.</p>
 <p><strong>Cayley–Hamilton.</strong> Substituting $A$ gives $A^{2}-(\operatorname{tr}A)A+(\det A)I=0$. At order two this is a four-entry computation: the diagonal identities are $a^{2}+bc=(a+d)a-ad$ and $cb+d^{2}=(a+d)d-ad$. Whenever $\det A\neq0$ the identity gives the inverse</p>
 <p>$$
-A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
+A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}.
 $$</p>
-<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ one has $\operatorname{tr}A=5$ and $\det A=-2$, so $\chi_A=\lambda^{2}-5\lambda-2$, with roots $(5\pm\sqrt{33})/2$, and $A^{-1}=-\tfrac12\begin{pmatrix}4&-2\\-3&1\end{pmatrix}$.</p>
+<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}$ one has $\operatorname{tr}A=5$ and $\det A=-2$, so $\chi_A=\lambda^{2}-5\lambda-2$, with roots $(5\pm\sqrt{33})/2$, and $A^{-1}=-\tfrac12\begin{pmatrix}4&amp;-2\\-3&amp;1\end{pmatrix}$.</p>
 <h2 id="rank-and-the-singular-set">Rank and the Singular Set</h2>
 <p><strong>The rank is the dimension of the image and takes the three values $0,1,2$.</strong> It is $2$ exactly off the determinant hypersurface and $0$ only at the origin, so the rank-one matrices are the remaining stratum.</p>
 <p><strong>Proposition (the strata).</strong> The rank-$r$ set has complex dimension $r(4-r)$: that is $0,3,4$ for $r=0,1,2$.</p>
@@ -124,11 +124,11 @@ A=H+S,\qquad H=\tfrac12(A+A^{*}),\quad S=\tfrac12(A-A^{*}),
 $$</p>
 <p>so $M_2(\mathbb{C})=\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$ over $\mathbb{R}$, with $\dim_{\mathbb{R}}\mathfrak{u}(2)=4$ and $\dim_{\mathbb{R}}\mathfrak{su}(2)=3$.</p>
 <p><strong>Proof.</strong> The star is conjugate-linear and involutive, so the two parts have the required symmetry and sum to $A$; they meet only at $0$ because $H=-H$ forces $H=0$. A Hermitian matrix has two real diagonal entries and one free off-diagonal complex entry, hence $4$ real parameters.</p>
-<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$,</p>
+<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}$,</p>
 <p>$$
-H=\tfrac12(A+A^{*})=\begin{pmatrix}1&\tfrac52\\ \tfrac52&4\end{pmatrix},
+H=\tfrac12(A+A^{*})=\begin{pmatrix}1&amp;\tfrac52\\ \tfrac52&amp;4\end{pmatrix},
 \qquad
-S=\tfrac12(A-A^{*})=\begin{pmatrix}0&-\tfrac12\\ \tfrac12&0\end{pmatrix},
+S=\tfrac12(A-A^{*})=\begin{pmatrix}0&amp;-\tfrac12\\ \tfrac12&amp;0\end{pmatrix},
 $$</p>
 <p>with $\operatorname{tr}H=5$ and $\operatorname{tr}S=0$.</p>
 <p><strong>The product preserves neither half.</strong> For anti-Hermitian $S,T$ one has $(ST)^{*}=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The split is one of the real vector space and of the real Lie algebra.</p>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Continuously Distributed Action: A New Solution to the Vacuum Catastrophe, Dark Energy, and Inflation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_New_Uniting_Solution_to_the_Vacuum_Cat.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-continuously-distributed-action-a-new-solution-to-the-vacuum-catastrophe-dark-energy-and-inflation"><strong>The Continuously Distributed Action: A New Solution to the Vacuum Catastrophe, Dark Energy, and Inflation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jörg Geisbauer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>Munich, June 2025, no version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - A_New_Uniting_Solution_to_the_Vacuum_Cat-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_New_Uniting_Solution_to_the_Vacuum_Cat.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - A_New_Uniting_Solution_to_the_Vacuum_Cat.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Replaces the local sum of zero-point energies by a single global quantum of action spread as a homogeneous surface tension over the cosmic boundary, and derives from that one axiom four results: a dark-energy density, a resolution of the $10^{122}$ ratio as an area count, gravity as the gradient of the tension, and inflation as a tension maximum at $R\to\ell_P$. The dark-energy number is computed and compared to the Planck value; the equation of state $w_\Lambda=-1/3$ is offered as the falsifiable prediction. No parameter is fitted.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-axiom">The axiom</h3>
+<p>Planck's constant is "not a localized quantity but a global prop- erty, distributed as a homogeneous surface tension, σh , across the entire surface of the observable universe. From":
+$$\sigma_h=\frac{h}{A_{\rm Uni}}=\frac{h}{4\pi R^2},\qquad [\sigma_h]=\mathrm{J\,s\,m^{-2}}$$
+(paper 5). The unit is "action per unit area", which the author stresses is not an energy density ($\mathrm{J/m^3}$) or a pressure ($\mathrm{N/m}$). The reading offered is that $h$ "does not stack up locally but distributes itself isotropically over the cosmic boundary", while $c$ is "the propagation speed of disturbances on the action-membrane".</p>
+<h3 id="the-dark-energy-density">The dark-energy density</h3>
+<p>The tension becomes a density by crossing the Planck cell,
+$$\rho_\Lambda=\frac{\sigma_h}{\ell_P t_P}=\frac{h}{4\pi R^2\ell_P t_P}$$
+(paper 6, "dimensionally consistent"), evaluated with $h=6.626\,070\,15\times10^{-34}\,\mathrm{J\,s}$, $\ell_P=1.616\,255\times10^{-35}\,\mathrm{m}$, $t_P=5.391\,247\times10^{-44}\,\mathrm{s}$ and $R=4.4\times10^{26}\,\mathrm{m}$:
+$$\rho_\Lambda\approx3.12\times10^{-10}\ \mathrm{J\,m^{-3}}\quad\text{(paper 7)}$$
+against the observed $\rho_{\Lambda,\rm obs}=(2.56\pm0.05)\times10^{-10}\ \mathrm{J\,m^{-3}}$. The text of §3.1 calls the deviation "about 22%", "well within the uncertainty of the cosmic radius $R$"; the abstract states agreement "to within 2%". The two statements are not reconciled in the paper. </p>
+<h3 id="the-math26-factor-as-an-area-count">The $10^{122}$ factor as an area count</h3>
+<p>The QFT estimate and the new formula are related by $$\frac{\rho_{\rm QFT}}{\rho_\Lambda}\approx\frac{c\,t_P R^2}{4\pi\ell_P^3}=\frac{A_{\rm Uni}}{A_P}\approx10^{124}$$ (paper 8, as printed), while the surrounding prose calls the same factor "$10^{123}$ and the abstract $10^{122}$. The claim is that the ratio is the difference between the maximum possible density in a Planck volume and today's density, which has been 'diluted' across the cosmic surface". </p>
+<h3 id="gravity-and-inflation-without-an-inflaton-matter-is">Gravity, and inflation without an inflaton Matter is</h3>
+<p>"a disturbance in the global action-tension", so that</p>
+<p>$g\propto-\nabla\sigma_h(r)$ and Newton's $1/r^2$ is "the gradient of this tension". Inflation is the tension at its maximum: "as the cosmic radius R approached the Planck length ℓP , the action-tension reached a maxi- mum, driving an exponential expansion and eliminating the need for an ad-hoc inﬂaton ﬁeld.".</p>
+<h3 id="the-prediction">The prediction</h3>
+<p>$w_\Lambda=-1/3$ constant (paper 16 gives $\rho_\Lambda(z)=\rho_\Lambda(0)(1+z)^2$), hence
+$$H^2(z)=H_0^2\left[\Omega_m(1+z)^3+\Omega_r(1+z)^4+\Omega_\Lambda(1+z)^2\right]$$
+with $\Omega_\Lambda\approx0.685$ and a Hubble-diagram deviation $\Delta\mu(z)$ against $\Lambda$CDM, to be tested by LSST and Euclid.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-action-per-unit-area-as-a-primary-quantity">1. Action per unit area as a primary quantity</h3>
+<p><strong>The idea.</strong> $\sigma_h=h/A$ with $[\sigma_h]=\mathrm{J\,s\,m^{-2}}$ is a dimensional object the corpus does not carry: there energy is a trace and mass is a norm, and action enters as the exponent of the phase, never as a density over a surface. This is a <strong>formula</strong>.</p>
+<p><strong>What it would add.</strong> A second way of placing $h$, as a background tension rather than a quantum of a field, which is the kind of global constant the corpus's constants articles look for.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-action-problem.md</code>, on what the action is and what fixes its quantum.</p>
+<p><strong>What stands in the way.</strong> The construction needs a closed two-surface for the whole universe and a distinguished radius $R$; the corpus has neither, and its own cosmology article records that it carries no global structure.</p>
+<h3 id="2-a-dark-energy-density-with-no-free-parameter">2. A dark-energy density with no free parameter</h3>
+<p><strong>The idea.</strong> One line, three measured constants and one radius give $3.12\times10^{-10}\ \mathrm{J\,m^{-3}}$ against $2.56\times10^{-10}$. This is a <strong>number</strong> with a prediction's status, since nothing is tuned — though the 22% of §3.1 and the 2% of the abstract differ by a factor ten.</p>
+<p><strong>What it would add.</strong> A worked case where a dimensionful constant is computed from $h$, $c$ and $G$, in a corpus whose constants are mostly carried rather than derived.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, which states that the source the Friedmann equations need cannot be formed from the framework's rank-two invariants.</p>
+<p><strong>What stands in the way.</strong> The value depends on $R$ as $R^{-2}$, and $R$ is quoted to two figures; a 2% agreement would need $R$ to four, so the accuracy claimed in the abstract cannot be the accuracy of the formula.</p>
+<h3 id="3-the-math51-scaling-as-a-proposed-deviation">3. The $R^{-2}$ scaling as a proposed deviation</h3>
+<p><strong>The idea.</strong> $w=-1/3$ makes dark energy dilute with the area, giving a Hubble-diagram offset at $z\approx1$ that $\Lambda$CDM does not have. This is a <strong>mechanism</strong> for producing a deviation, and the cleanest falsifiable statement in the paper.</p>
+<p><strong>What it would add.</strong> A target number for a corpus that has an equation of state but no cosmological parameter running.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-equation-of-state-in-biquaternion-form.md</code>, whose $p_{\rm eff}$ is thermal plus a gradient correction and carries no $w$.</p>
+<p><strong>What stands in the way.</strong> The author's own September 2025 paper, <code>Geisbauer - Dark_Energy_the_Cosmological_Constant_an.pdf</code>, explicitly discards earlier $R^{-2}$ speculation ($w=-1/3$) and replaces it with $w\simeq-1$. An import would have to choose between two of his positions.</p>
+<p>The rank is a judgement: the parameter-free density first, the area scaling second, $\sigma_h$ third, because a new dimensional primitive with no dynamics behind it is the hardest of the three to use.</p>
+<p>This is an eleven-page manuscript; the two numerical densities, the surface-to-volume argument, the emergent-gravity section, the inflation section, the modified Friedmann equation and a $\pi$-relation aside are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -255,11 +255,11 @@ $$</p>
 <p><strong>Cosine and $\vec e_z$ parts.</strong> $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int(\cos c_1\cos c_2 + \vec e_z\sin c_1\sin c_2)\,d\mu$, and $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{l}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int\cos c_1\cos c_2\,d\mu$. Both are exact, and they are the measure form of the first and fifth reversal identities above.</p>
 <p><strong>Positive definiteness.</strong> A bounded continuous $\mathbb{H}$-valued function $g$ on $\mathbb{R}^2$ is <strong>positive definite</strong> when</p>
 <p>$$
-\sum_{k<l} \tilde p_k \tilde p_l^{\natural}\, g(\lambda_k-\lambda_l) + \sum_{k>l} g(\lambda_k-\lambda_l)\, \tilde p_k \tilde p_l^{\natural} + \sum_k \lvert \tilde p_k\rvert^2 g(0,0) \ge 0
+\sum_{k&lt;l} \tilde p_k \tilde p_l^{\natural}\, g(\lambda_k-\lambda_l) + \sum_{k&gt;l} g(\lambda_k-\lambda_l)\, \tilde p_k \tilde p_l^{\natural} + \sum_k \lvert \tilde p_k\rvert^2 g(0,0) \ge 0
 $$</p>
 <p>for every finite set $\lambda_1,\dots,\lambda_N \in \mathbb{R}^2$ and every $\tilde p_1,\dots,\tilde p_N \in \mathbb{H}$. Three features separate this from the commutative statement: the coefficients are quaternions rather than complex numbers; the two sums are kept apart because $\tilde p_k\tilde p_l^{\natural} g$ and $g\,\tilde p_l\tilde p_k^{\natural}$ are different products, so the quadratic form is not the square of a single sum; and the diagonal term carries $g(0,0)$, which for the transform of a measure is $\mu(\mathbb{R}^2)$. Written with $\mu(\mathbb{R}^2)$ in the diagonal from the outset, the property is tied to the measure it is meant to produce; with $g(0,0)$ it is a property of $g$ alone, which is what an existence theorem needs.</p>
 <p><strong>Theorem.</strong> $\mathcal{F}_{\mathrm{r}}(\mu)$ and $\mathcal{F}_{\mathrm{l}}(\mu)$ are positive definite and bounded.</p>
-<p><strong>Why two points are enough to see it, and why the printed proof for more points does not go through.</strong> For $N=2$ the sum is $X+\overline{X}+\lvert \tilde p_1\rvert^2g(0,0)+\lvert \tilde p_2\rvert^2g(0,0)$ with $X = \tilde p_1\tilde p_2^{\natural}\,g(\lambda_1-\lambda_2)$, and $\lvert g\rvert \le g(0,0)$, so the sum is at least $(\lvert \tilde p_1\rvert-\lvert \tilde p_2\rvert)^2 g(0,0) \ge 0$. For general $N$ the source bounds the sum below by $\sum_k\lvert \tilde p_k\rvert^2 - 2\sum_{k<l}\lvert \tilde p_k\rvert\lvert \tilde p_l\rvert$ and then asserts an induction; that lower bound is negative, being $3-6 = -3$ for $N = 3$ with all $\lvert \tilde p_k\rvert = 1$. Random draws at $N = 3$ gave a positive minimum in every trial, so the statement is consistent with the numerical evidence, but the induction as printed is not established.</p>
+<p><strong>Why two points are enough to see it, and why the printed proof for more points does not go through.</strong> For $N=2$ the sum is $X+\overline{X}+\lvert \tilde p_1\rvert^2g(0,0)+\lvert \tilde p_2\rvert^2g(0,0)$ with $X = \tilde p_1\tilde p_2^{\natural}\,g(\lambda_1-\lambda_2)$, and $\lvert g\rvert \le g(0,0)$, so the sum is at least $(\lvert \tilde p_1\rvert-\lvert \tilde p_2\rvert)^2 g(0,0) \ge 0$. For general $N$ the source bounds the sum below by $\sum_k\lvert \tilde p_k\rvert^2 - 2\sum_{k&lt;l}\lvert \tilde p_k\rvert\lvert \tilde p_l\rvert$ and then asserts an induction; that lower bound is negative, being $3-6 = -3$ for $N = 3$ with all $\lvert \tilde p_k\rvert = 1$. Random draws at $N = 3$ gave a positive minimum in every trial, so the statement is consistent with the numerical evidence, but the induction as printed is not established.</p>
 <p><strong>What a Bochner–Minlos theorem is, and what is proved here.</strong> The classical theorem says that a functional on a nuclear space that is continuous, normalised and positive definite <strong>is</strong> the Fourier transform of a unique probability measure; the substance is the existence direction, in which positivity of the quadratic form produces the measure. A quaternion form of the theorem is stated in the literature for functionals on the dual of the sequence space $s$ of quaternion sequences with $\lVert p\rVert_m^2 = \sum_n (1+n^2)^m\lvert p_n\rvert^2$ and $s = \bigcap_m s_m$, and what is proved there is the converse direction: a probability measure on the dual is given, and its functional is shown to be normalised, continuous in the Fréchet topology and positive definite. With the measure written into the definition of positive definiteness, the theorem cannot be run in the existence direction, and that direction, which needs the nuclear structure of the test space, is not proved. Nothing in this article depends on the claim.</p>
 <h2 id="the-convolution-theorem">The Convolution Theorem</h2>
 <h3 id="definition_1">Definition</h3>
@@ -285,10 +285,10 @@ $$</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
 <p>A sequence $(\phi_n)$ in $L^1(\mathbb{H})$ is an <strong>approximate identity</strong> if</p>
 <p>$$
-\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{|\tilde q| > \delta} |\phi_n(\tilde q)| \, dq \to 0
+\int_{\mathbb{H}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 &lt; \infty, \qquad \int_{|\tilde q| &gt; \delta} |\phi_n(\tilde q)| \, dq \to 0
 $$</p>
-<p>for every $\delta > 0$.</p>
-<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{H})$ for $1 \leq p < \infty$, then</p>
+<p>for every $\delta &gt; 0$.</p>
+<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{H})$ for $1 \leq p &lt; \infty$, then</p>
 <p>$$
 \|f * \phi_n - f\|_p \to 0.
 $$</p>
@@ -334,7 +334,7 @@ Hf(\tilde q) = \frac{1}{\pi^2} \, \text{p.v.} \int_{\mathbb{H}} \frac{(r - \tild
 $$</p>
 <p>where the integral is over the quaternion space and the principal value is taken with respect to the singularity at $r = \tilde q$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
-<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{H})$ for $1 < p < \infty$, with</p>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{H})$ for $1 &lt; p &lt; \infty$, with</p>
 <p>$$
 \|Hf\|_p \leq C_p \|f\|_p.
 $$</p>
@@ -349,20 +349,20 @@ $$</p>
 <h3 id="the-quaternion-maximal-function">The Quaternion Maximal Function</h3>
 <p>The <strong>quaternion Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{H})$ is</p>
 <p>$$
-Mf(\tilde q) = \sup_{r > 0} \frac{1}{|B(\tilde q, r)|} \int_{B(\tilde q, r)} |f(r)| \, dr,
+Mf(\tilde q) = \sup_{r &gt; 0} \frac{1}{|B(\tilde q, r)|} \int_{B(\tilde q, r)} |f(r)| \, dr,
 $$</p>
 <p>where $B(\tilde q, r)$ is the Euclidean ball of radius $r$ centred at $\tilde q$, and $|B(\tilde q, r)|$ is its volume.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
-<p><strong>Theorem (Hardy–Littlewood, quaternion version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{H})$ and every $\lambda > 0$,</p>
+<p><strong>Theorem (Hardy–Littlewood, quaternion version).</strong> There exists a constant $C &gt; 0$ such that for every $f \in L^1(\mathbb{H})$ and every $\lambda &gt; 0$,</p>
 <p>$$
-|\{\tilde q : Mf(\tilde q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{\tilde q : Mf(\tilde q) &gt; \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$</p>
-<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{H})$ for $1 < p \leq \infty$.</p>
-<p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{H})$ for $1 &lt; p \leq \infty$.</p>
+<p><strong>Theorem.</strong> For $1 &lt; p \leq \infty$, there exists $C_p &gt; 0$ such that</p>
 <p>$$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$</p>
-<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 &lt; p &lt; \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
 <p>Because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the maximal function theory is identical to the real theory on $\mathbb{R}^4$. The non-commutativity of $\mathbb{H}$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
 <h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
@@ -376,10 +376,10 @@ $$</p>
 |\langle\tilde q,r\rangle_{\natural*}| \leq \frac{C}{|\tilde q - r|^4},
 $$</p>
 <p>$$
-|\langle\tilde q_1,r\rangle_{\natural*} - \langle\tilde q_2,r\rangle_{\natural*}| \leq C \frac{|\tilde q_1 - \tilde q_2|^\delta}{|\tilde q_1 - r|^{4+\delta}}, \qquad |\tilde q_1 - \tilde q_2| < \frac{1}{2} |\tilde q_1 - r|,
+|\langle\tilde q_1,r\rangle_{\natural*} - \langle\tilde q_2,r\rangle_{\natural*}| \leq C \frac{|\tilde q_1 - \tilde q_2|^\delta}{|\tilde q_1 - r|^{4+\delta}}, \qquad |\tilde q_1 - \tilde q_2| &lt; \frac{1}{2} |\tilde q_1 - r|,
 $$</p>
-<p>and the analogous estimate in the second variable, for some $\delta > 0$. The power $4$ is the dimension of $\mathbb{H}$ as a real vector space.</p>
-<p><strong>Theorem (Calderón–Zygmund, quaternion version).</strong> Every quaternion Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{H})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p>and the analogous estimate in the second variable, for some $\delta &gt; 0$. The power $4$ is the dimension of $\mathbb{H}$ as a real vector space.</p>
+<p><strong>Theorem (Calderón–Zygmund, quaternion version).</strong> Every quaternion Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{H})$ for $1 &lt; p &lt; \infty$, and satisfies a weak $(1,1)$ estimate.</p>
 <p><strong>Examples.</strong> The quaternion Hilbert transform, the quaternion Riesz transforms, and the Beurling–Ahlfors transform are quaternion Calderón–Zygmund operators.</p>
 <h3 id="the-structure-of-the-theory">The Structure of the Theory</h3>
 <p>Because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^4$, with the dimension adjusted from $n$ to $4$. The non-commutativity of $\mathbb{H}$ does not affect the kernel estimates, because they are in terms of the Euclidean norm, which does not see the algebra structure. The non-commutativity affects only the multiplication of the kernel with the function, and this is a minor modification.</p>
@@ -434,7 +434,7 @@ W_\gamma f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) (\gamma\left(\f
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\gamma$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\gamma = \int_{\mathbb{H}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|^4} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{H}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|^4} \, d\zeta &lt; \infty,
 $$</p>
 <p>where $\hat{\gamma}$ is the quaternion Fourier transform.</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>

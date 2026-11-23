@@ -172,7 +172,7 @@ $$</p>
 <h3 id="the-basis-matrix">The Basis Matrix</h3>
 <p><strong>Proposition.</strong> Let $A$ be the $4\times4$ matrix with quaternion entries $A_{j\mu} = \sigma_{j\mu}e_\mu$, that is</p>
 <p>$$
-A = \begin{pmatrix} e_t & \vec e_x & \vec e_y & \vec e_z \\ e_t & \vec e_x & -\vec e_y & -\vec e_z \\ e_t & -\vec e_x & \vec e_y & -\vec e_z \\ e_t & -\vec e_x & -\vec e_y & \vec e_z \end{pmatrix}.
+A = \begin{pmatrix} e_t &amp; \vec e_x &amp; \vec e_y &amp; \vec e_z \\ e_t &amp; \vec e_x &amp; -\vec e_y &amp; -\vec e_z \\ e_t &amp; -\vec e_x &amp; \vec e_y &amp; -\vec e_z \\ e_t &amp; -\vec e_x &amp; -\vec e_y &amp; \vec e_z \end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$ \boxed{\; q^{a} = A\begin{pmatrix}q_t\\ q_x\\ q_y\\ q_z\end{pmatrix}, \qquad A^{\mathsf H}A = 4I_4, \qquad A^{-1} = \tfrac14 A^{\mathsf H} \;} ,$$</p>
@@ -189,7 +189,7 @@ $$</p>
 <p><strong>Remark.</strong> The augmentation changes no information: a widely linear expression $\sum_j a_j^{\mathsf T}\operatorname{Ad}_j\tilde q$ with quaternion coefficients and a real-linear expression in the four real components are the same class of maps, and the augmented notation is a bookkeeping in which quaternion multiplication acts on the coefficients. What the augmentation adds is not variables but symmetry: the four involuted forms are permuted among themselves by the involutions, so the class of widely linear expressions is closed under them, which the four real components are not.</p>
 <h2 id="quaternion-random-variables">Quaternion Random Variables</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> A <strong>quaternion-valued random variable</strong> on a probability space is a map $\tilde q : \Omega\to\mathbb{H}$ whose four components $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ are real measurable functions, the algebra being identified with $\mathbb{R}^4$ through the basis. The variable is <strong>centred</strong> when $\mathbb{E}[\tilde q] = 0$ and <strong>square-integrable</strong> when $\mathbb{E}[\langle\tilde q\rangle_{\natural}] = \sum_\mu\mathbb{E}[q_\mu^2]<\infty$. Two such variables are <strong>jointly Gaussian</strong> when their eight real components are jointly Gaussian in the real sense.</p>
+<p><strong>Definition.</strong> A <strong>quaternion-valued random variable</strong> on a probability space is a map $\tilde q : \Omega\to\mathbb{H}$ whose four components $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ are real measurable functions, the algebra being identified with $\mathbb{R}^4$ through the basis. The variable is <strong>centred</strong> when $\mathbb{E}[\tilde q] = 0$ and <strong>square-integrable</strong> when $\mathbb{E}[\langle\tilde q\rangle_{\natural}] = \sum_\mu\mathbb{E}[q_\mu^2]&lt;\infty$. Two such variables are <strong>jointly Gaussian</strong> when their eight real components are jointly Gaussian in the real sense.</p>
 <p>The identification with $\mathbb{R}^4$ carries the probability theory of <em>Measure-Theoretic Probability</em> over without change: a quaternion-valued random variable is a real random vector of length four, and its distribution is a Borel measure on $\mathbb{H}$.</p>
 <h3 id="the-second-order-forms">The Second-Order Forms</h3>
 <p><strong>Definition.</strong> For centred square-integrable quaternion-valued random variables $\tilde p,\tilde q$, the four <strong>involuted covariances</strong> and the <strong>pseudo-covariance</strong> are</p>

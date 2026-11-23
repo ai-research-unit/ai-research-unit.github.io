@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic wormholes, anti-trapped surfaces, and energy conditions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic wormholes, anti-trapped surfaces, and energy conditions -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamic-wormholes-anti-trapped-surfaces-and-energy-conditions"><strong>Dynamic wormholes, anti-trapped surfaces, and energy conditions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9802046v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Hochberg, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 18 June 1998</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Dynamic wormholes, anti-trapped surfaces, and energy conditions - gr-qc_9802046-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic wormholes, anti-trapped surfaces, and energy conditions - gr-qc_9802046.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Dynamic wormholes, anti-trapped surfaces, and energy conditions - gr-qc_9802046.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper gives a local definition of a wormhole throat that makes no assumption about global structure, symmetry, asymptotic flatness, embedding, or even time dependence. A throat is defined as a marginally anti-trapped surface: a closed two-surface from which one future-directed null congruence is just beginning to diverge. A dynamical wormhole typically has two such throats, one for each null congruence, coinciding only in the static limit. The authors prove that the null energy condition must be violated at these throats, that torsion cannot absorb the violation, and that a temporary suspension of the energy conditions is not enough.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-with-topology">The problem with topology</h3>
+<p>"It is by now apparent that topology is too crude a tool to accurately characterize a generic traversable wormhole."</p>
+<h3 id="what-the-paper-does_1">What the paper does</h3>
+<p>"in the present paper [we] extend the discussion to arbitrary time-dependent (dynamical) wormholes. A local definition of wormhole throat, free from assumptions about asymptotic flatness, symmetries, future and past null infinities, embedding diagrams, topology, and even time-dependence is developed that accurately captures the essence of what a wormhole throat is, and where it is located."</p>
+<h3 id="the-definition">The definition</h3>
+<p>"Adapting and extending a suggestion due to Page, we define a wormhole throat to be a marginally anti-trapped surface, that is, a closed two-dimensional spatial hypersurface such that one of the two future-directed null geodesic congruences orthogonal to it is just beginning to diverge."</p>
+<h3 id="two-throats">Two throats</h3>
+<p>"Typically a dynamic wormhole will possess two such throats, corresponding to the two orthogonal null geodesic congruences, and these two throats will not coincide, (though they do coalesce into a single throat in the static limit)."</p>
+<h3 id="the-geometric-content">The geometric content</h3>
+<p>"Flare-out is manifested in the properties of light rays (null geodesics) that traverse a wormhole: bundles of light rays that enter the wormhole at one mouth and exit from the other must have cross-sectional area that first decreases, reaching a true minimum at the throat, and then increases."</p>
+<h3 id="the-energy-condition-result">The energy condition result</h3>
+<p>"We derive theorems regarding violations of the null energy condition (NEC) at and near these throats and find that, even for wormholes with arbitrary time-dependence, the violation of the NEC is a generic property of wormhole throats."</p>
+<h3 id="the-torsion-result">The torsion result</h3>
+<p>"We also discuss wormhole throats in the presence of fully antisymmetric torsion and find that the energy condition violations cannot be dumped into the torsion degrees of freedom."</p>
+<h3 id="the-example">The example</h3>
+<p>"by means of a concrete example we demonstrate that even temporary suspension of [the energy conditions is not enough]."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-local-definition-replaces-a-global-one">1. A local definition replaces a global one</h3>
+<p><strong>The idea.</strong> A throat is defined by the behaviour of null congruences at a surface, with no global assumptions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues that global structure is unavailable. This paper shows how to define a distinguished surface locally, using the expansion of null congruences. That is a template the article can apply to horizons, and the closest thing in this collection to a solution of its difficulty.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> Expansion of null congruences is exactly the kind of object the framework may not supply. Ranked first, because it is a working method for the article's central problem.</p>
+<h3 id="2-two-surfaces-not-one">2. Two surfaces, not one</h3>
+<p><strong>The idea.</strong> A dynamical throat splits into an ingoing and an outgoing one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats a horizon as one surface. If the correct object is a pair that merges only in the static limit, the article's classification is missing a case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the classification section.</p>
+<p><strong>What stands in the way.</strong> The pairing is for wormhole throats specifically. Ranked second.</p>
+<h3 id="3-torsion-cannot-absorb-the-violation">3. Torsion cannot absorb the violation</h3>
+<p><strong>The idea.</strong> Adding torsion does not let one avoid the energy condition violation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records the framework's algebraic structures as possible escapes. This paper closes one escape route in an adjacent setting, which is a useful precedent for how a new degree of freedom may fail to help.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the group on the quadratic forms.</p>
+<p><strong>What stands in the way.</strong> The result is about torsion in general relativity. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

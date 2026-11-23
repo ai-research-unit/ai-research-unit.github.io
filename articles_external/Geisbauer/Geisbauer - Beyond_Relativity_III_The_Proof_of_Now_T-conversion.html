@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Relativity III – The Proof of Now: Translation Simultaneity for Centimeter-Accurate Satellite Positioning and Space-Time Imaging — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_III_The_Proof_of_Now_T.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="beyond-relativity-iii-the-proof-of-now-translation-simultaneity-for-centimeter-accurate-satellite-positioning-and-space-time-imaging"><strong>Beyond Relativity III – The Proof of Now: Translation Simultaneity for Centimeter-Accurate Satellite Positioning and Space-Time Imaging</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>independent manuscript — English</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — no id in the PDF or in the file name</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Geisbauer (Team Earth), as printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>2025, no month or version number printed</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Geisbauer/Geisbauer - Beyond_Relativity_III_The_Proof_of_Now_T-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_III_The_Proof_of_Now_T.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/length-contraction-and-time-dilation-projections-not-deformations.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Geisbauer/Geisbauer - Beyond_Relativity_III_The_Proof_of_Now_T.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. This is the English twin of <code>Geisbauer - Jenseits_der_Relativitat_III_Der_Beweis-conversion.md</code>: same equations, same Hafele–Keating numbers, same appendices A–E. In both extracted texts the factor $\frac12$ of $T_{\rm Present}=\frac12(T_{\rm Past}+T_{\rm Future})$ is dropped by the OCR (it survives in the abstract as "12 TPast"). </p>
+<h2 id="what-the-paper-does-defines-simultaneity-by-equal-accumulated-proper-time-and-then-turns-the-definition-into-a-processing-chain-for-satellite-navigation-a-moment-surface-its-curvature-a-weighted-centre-and-a-reconstruction-of-the-present-from-past-and-future-estimates-the-paper-adds-the-estimator-and-its-error-budget-the-claimed-gain-is-sub-nanosecond-timing-and-centimetre-positioning-a-factor-of-math11-to-math12-over-conventional-corrections-with-the-method-presented-as-an-extension-of-special-relativity-rather-than-a-contradiction-of-it">What the Paper Does Defines simultaneity by equal accumulated proper time and then turns the definition into a processing chain for satellite navigation: a moment surface, its curvature, a weighted centre, and a reconstruction of the present from past and future estimates. The paper adds the estimator and its error budget. The claimed gain is sub-nanosecond timing and centimetre positioning, a factor of $10$ to $50$ over conventional corrections, with the method presented as an extension of special relativity rather than a contradiction of it.</h2>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The construction</h3>
+<p>The abstract gives the 5D connection as $T_{\rm Present}=\frac12(T_{\rm Past}+T_{\rm Future})$, and the paper details "equations, geometry, error budgets". The definition is the German one: for a target $\tau_0$, the points whose clocks read $\tau_0$ form $\Sigma_{\tau_0}$, with mean curvature $$H(x)=\nabla\cdot\left(\frac{\nabla T}{|\nabla T|}\right)\Big|_{\Sigma_{\tau_0}}$$ (paper 5) and centre $$G=\arg\min_{x\in\Sigma_{\tau_0}}\sum_i w_i\,d_\Sigma(x,P_i)^2$$ (paper 6). </p>
+<h3 id="the-worked-case">The worked case</h3>
+<p>For two aircraft at $h\approx10$ km, $$\Delta\tau\approx\tau_0\left(\frac{1}{f_B}-\frac{1}{f_A}\right)\approx1.1\ \mathrm{ns}$$ (paper 7) with $\tau_0=7200$ s — printed in the budget table as "er time ∆τ 1.1 ns simultaneity difference Appendix". </p>
+<h3 id="the-budget">The budget</h3>
+<p>"Timing residual (per orbit) ± 5 ns ± 0.5 ns Position" and "Position RMS (PPP/RTK) 15–30 cm", the first column coordinate-time corrections, the second translation simultaneity. The error chain closes with
+$$\delta T_{\rm Present}\approx\frac12\left(\delta T_{\rm Past}+\delta T_{\rm Future}\right)$$
+(paper 11), i.e. the present's uncertainty is the average of the two sides'.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-present-reconstructed-from-two-sides">1. A present reconstructed from two sides</h3>
+<p><strong>The idea.</strong> $T_{\rm Present}=\frac12(T_{\rm Past}+T_{\rm Future})$ treats the present as the midpoint of two independent estimates, one from past data and one from predicted ephemeris. That is a <strong>formula</strong>, and it is a statement about how a navigation solution is formed rather than about what the present is.</p>
+<p><strong>What it would add.</strong> A concrete answer to the corpus's question of who fixes "now": here it is an average of two reconstructions, with weights.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<p><strong>What stands in the way.</strong> The formula is a filter, and any two-sided estimator has this form; it says nothing about simultaneity unless the two estimates are of the same event, which the paper assumes. The weights $\gamma_i$ and $w_i$ are left to the application.</p>
+<h3 id="2-the-error-propagation">2. The error propagation</h3>
+<p><strong>The idea.</strong> $\delta T_{\rm Present}\approx\frac12(\delta T_{\rm Past}+\delta T_{\rm Future})$ is offered as the reason the method is more stable than a one-sided correction. That is a <strong>formula</strong>, and it is checkable arithmetic.</p>
+<p><strong>What it would add.</strong> A reason, not just a claim, for the improvement — the only place in the batch where a factor is derived from a stated estimator.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>.</p>
+<p><strong>What stands in the way.</strong> The arithmetic gives the paper's conclusion only under perfect correlation. For two independent errors of equal size, the half-sum has standard deviation $\sigma/\sqrt2$, not $\sigma/2$; a genuine halving requires the errors to be fully correlated, i.e. the opposite of independent. As printed, the factor two is an average of numbers, not of errors, and the improvement it implies is not the one the table claims.</p>
+<h3 id="3-the-improvement-factor">3. The improvement factor</h3>
+<p><strong>The idea.</strong> $10$ to $50$ times better, from $\pm5$ to $\pm0.5$ ns and from $15$–$30$ to $2$–$5$ cm, is the paper's headline.</p>
+<p><strong>What it would add.</strong> A target a GNSS engineer could test, which the corpus has no analogue of.</p>
+<p><strong>Where it lands.</strong> No corpus article; the nearest is the data-boundary article on printed strengths.</p>
+<p><strong>What stands in the way.</strong> Neither column is measured here: the second is what the method would achieve if its assumptions held, and the factors quoted in the abstract are the ratios of two sets of design numbers. The paper gives no experiment and no dataset. Refused as a result, recorded as a target.</p>
+<p>The rank is a judgement: the two-sided estimator first, because it is a real construction; the error propagation second, because it is the batch's only attempted derivation of an improvement, even though it does not survive the independence assumption; the headline factor is recorded and refused.</p>
+<p>This is a seven-page paper; the definition, the moment surface, the curvature and the centre, the Hafele–Keating case, the GNSS chain, the estimator, the error budget and the imaging section are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

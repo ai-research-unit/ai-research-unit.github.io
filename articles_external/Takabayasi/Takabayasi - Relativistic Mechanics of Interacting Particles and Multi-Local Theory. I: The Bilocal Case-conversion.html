@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The Bilocal Case — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-mechanics-of-interacting-particles-and-multi-local-theory-i-the-bilocal-case"><strong>Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The Bilocal Case</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi and Seiji Kojima</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>57</strong> (1977) 2127, No. 6; received 10 December 1976</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The Bilocal Case-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The Bilocal Case.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Mechanics of Interacting Particles and Multi-Local Theory. I: The Bilocal Case.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Supplies what earlier papers in the series lacked: a <em>Lagrangian</em> for two particles bound by an arbitrary central potential, from which the whole theory follows. The Lagrangian has a new invariance — under a shift of $X$ along the direction of $\xi$ — and that invariance produces, as a primary constraint, the suppression of the relative time. A second primary constraint makes the rest mass equal to a functional of the internal motion. Together with the Euler equations these define the mechanics unambiguously, and the equivalence with the earlier, non-Lagrangian version is shown explicitly. Quantisation, external electromagnetic coupling and bilocal–bilocal interaction are treated briefly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-new">What is new</h3>
+<p>"Relativistic mechanics of two-particle system, where the two constituent particles are bound by an arbitrary scalar potential, is derived from a Lagrangian completely. This Lagrangian has a new kind of invariance which gives rise to a primary constraint responsible to the suppression of the relative time degree. The other primary constraint following from the Lagrangian determines the rest mass of the system as due to internal motion. These constraints, together with the Euler equations, define the relativistic mechanics of the system in such a way that it has clear physical interpretation. Equivalence of this theory with the relativistic mechanics of two interacting particles established in a previous paper is explicitly shown."</p>
+<p>"oted as I hereafter) we have established a new relativistic mechanics of two particles interacting by an arbitrary (central) force potential U, and then by its quantization reproduced a bilocal wave equation (as- sociated with a subsidiary condition) which is grossly suitable for a unified theory of mesonic states. However, the extension of this method to more general systems was not immediately obvious. This is related to the fact that the method was not originally derived from a Lagrangian. In this paper 2 J we show that the same theory can in fact be derived completely from a Lagrangian, which itself is found out by some general considerations."</p>
+<h3 id="the-invariance-that-suppresses-relative-time">The invariance that suppresses relative time</h3>
+<p>"we require that the theory shall have proper non-relativistic limit. Then the degree of freedom of internal motion must be three, and this requires a sup- pression of the relative time ~0 as a dynamical degree. The simplest method which is physically reasonable (at least in classical theory) is to assume the condition*) P~=O, (2 ·13) smce this means that when P 11 is time-like ~0 shall vanish in the center-of-mass *l (2 ·13) is one of the conditions assumed in the original bilocal theory of Yukawa."</p>
+<p>"On the other hand, we have the following theorem: If the Lagrangian is invariant against the transformation" $X_\mu\to X_\mu+\Lambda\xi_\mu$ with $\Lambda$ arbitrary, "relation (2 ·13) emerges as a 'primary constraint'. The proof IS immediate: Downloaded from academic.oup.com/ptp/article/57/6/2127/1939986" a vanishing derivative, which is nothing but the relation (2·13). Note that (2·14) denotes the transformation that preserves $X\cdot\xi$, the projection of $X^{\mu}$ onto the hyper-plane normal to $\xi^{\mu}$.</p>
+<p>"Thus our further requirement is expressed by the invariance of the Lagrangian L against (2·14), and it is ensured if X" occurs in L only through X-};. Moreover " " the simple Lagrangian that fulfills all our require· ments stated heretofore should be of the form*&gt; (2 ·16) where U and V are scalar functions of !" a function of $\dot X^{2}$, $\dot X\cdot\xi$, $\dot\xi^{2}$, $\xi^{2}$, $U$ and $V$. " 16) where U and V are scalar functions of !;2 alone, having the dimension [m 2 ] . We call them 'potential functions' or 'structure functions'. The specification of them defines the model, and therewith the Lagrangian (2 ·16) determines the theory completely at least at the classical level. We now see the consequences of (2 ·16) in successive steps."</p>
+<h3 id="mass-and-spin-from-internal-motion">Mass and spin from internal motion</h3>
+<p>"serting them into (2 · 6) we obtain (excepting the singular case L = 0) the other primary constraint p2 []2 U + V = -1 ' I.e., (2 ·19) This is also" "This is also a physically reasonable relation because it implies that the rest mass of the system is determined by the internal motion. Its automatic emergence is Downloaded from academic.oup.com/ptp/article/57/6/2127/1939986 by guest on 12 November 2026 an advantage of our formalism that is invariant with respect to (2·3)."</p>
+<p>Then (2·13) and (2·22) give the relation that yields separate conservation laws for the spin part and the orbital part: "Owing to this we have the separate conservation laws ... and hence also" $(XP)\cdot P^{\mu}=P^{2}\cdot X^{\mu}$. Unless $M^{2}=0$, (2·25) gives the standard relations of a relativistic particle with spin. "The latter implies that the length of spin is determined by the internal motion alone. Though both mass and spin are determined by the internal motion alone, 2132 T. Takabayasi and S. Kojima they are not uniquely connected"</p>
+<h3 id="scope">Scope</h3>
+<p>"Our present method not only contributes to further clarification of the theoretical structure of the bilocal theory, but also has the advantage that it is generalizable to more complex systems. Especially its extension to a three-particle system, corresponding to a primitive relativistic quark model of baryons, can readily be performed. (This is given in a succeeding paper.)" A footnote is explicit about the limit: "Our present Lagrangian theory of multilocal structures can be extended, as it stands, up to quadrilocal structure but not more."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-gauge-invariance-whose-whole-job-is-to-remove-one-coordinate-and-it-does-so-as-a-constraint">1. A gauge invariance whose whole job is to remove one coordinate — and it does so as a constraint</h3>
+<p><strong>The idea.</strong> The Lagrangian is invariant under shifts of the centre of mass along $\xi$. That invariance is not a symmetry to be exploited; its only effect is to make $P\cdot\xi=0$ a primary constraint, which removes the relative time. Gauss's law removes a longitudinal mode in the same way; here the removal is of a coordinate the non-relativistic limit could not have anyway.</p>
+<p><strong>What it would add.</strong> A clean example of a symmetry whose content is a constraint. <em>The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</em> (<code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>) shows a reparametrisation invariance and the constraint it carries; here a second, non-reparametrisation invariance is used the same way, and its physical meaning — no relative time — is checkable in the rest frame.</p>
+<p><strong>Where it lands.</strong> §<em>Symmetries of the Action</em>, as the constraint-supplying symmetry.</p>
+<p><strong>What stands in the way.</strong> The invariance is <em>postulated</em> as a requirement ("our further requirement is expressed by the invariance"), so the constraint is arranged rather than discovered; what is gained is a Lagrangian that generates it, not evidence that Nature has the symmetry.</p>
+<h3 id="2-the-rest-mass-is-a-functional-of-the-internal-motion-and-so-is-the-spin-but-they-are-independent">2. The rest mass is a functional of the internal motion, and so is the spin, but they are independent</h3>
+<p><strong>The idea.</strong> Two constraints give $M^{2}$ and $S^{2}$ as separate functionals of the internal motion — $M^{2}$ from $P^{2}/U+\Pi^{2}/V$, $S^{2}$ from the spin constraint — and the paper emphasises that the two are <em>not</em> uniquely connected: knowing the mass does not fix the spin. Mass and spin are both composite, and independent.</p>
+<p><strong>What it would add.</strong> A structural statement the corpus's spin–mass discussions lack. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) proposes a definite relation between spin and mass; here the relation is explicitly denied in general, with the two following from the same internal motion but through different functionals. That is a sharp, checkable tension between the two articles.</p>
+<p><strong>Where it lands.</strong> §<em>The Formula and Its Content</em>, as the independence claim.</p>
+<p><strong>What stands in the way.</strong> "Not uniquely connected" is shown by comparing two constraint equations, not by exhibiting two internal motions with equal mass and different spin; the reader must supply the example.</p>
+<h3 id="3-generalisation-stops-at-four-points">3. Generalisation stops at four points</h3>
+<p><strong>The idea.</strong> The formalism extends "up to quadrilocal structure but not more." The Lagrangian method that works for two and three points fails at five, and the author says so in a footnote.</p>
+<p><strong>What it would add.</strong> A concrete ceiling on a construction method, with a stated reason implied by the structure. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) records a ceiling in a different setting; two independent ceilings in the folder, one algebraic and one Lagrangian, invite comparison of why each occurs.</p>
+<p><strong>Where it lands.</strong> §<em>The Ceiling in Context</em>, as the Lagrangian ceiling.</p>
+<p><strong>What stands in the way.</strong> No reason is given for the failure at five points, so the ceiling is reported rather than explained.</p>
+<h3 id="4-equivalence-with-the-earlier-non-lagrangian-theory-shown-rather-than-asserted">4. Equivalence with the earlier non-Lagrangian theory, shown rather than asserted</h3>
+<p><strong>The idea.</strong> The paper's claim to improve on its predecessors rests on an explicit demonstration that the new Lagrangian theory reproduces the old equations. That is the kind of check the folder's other constructions rarely perform.</p>
+<p><strong>What it would add.</strong> A model of how to relate two formulations of one theory. <em>The Einstein Field Equations in the Biquaternion Framework: the Linearised Dictionary and the Non-Linear Gap</em> (<code>articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.md</code>) builds a dictionary between two formalisms; this paper builds one between two <em>derivations</em> of the same mechanics, which is a different and more demanding kind of match.</p>
+<p><strong>Where it lands.</strong> <em>The Einstein Field Equations in the Biquaternion Framework</em>, §<em>The Dictionary</em>, as the derivation-level comparison.</p>
+<p><strong>What stands in the way.</strong> The equivalence is at the classical level; the quantised versions are only "briefly explained".</p>
+<p>The remainder, one line each. That the two structure functions $U$ and $V$ of $\xi^{2}$ alone <em>define</em> the model is the cleanest parametrisation of the family in the folder. That the secondary constraint $P_\mu\xi^{\mu}=0$ follows from the primary one plus the Euler equations is the step that makes the spin decomposition work.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

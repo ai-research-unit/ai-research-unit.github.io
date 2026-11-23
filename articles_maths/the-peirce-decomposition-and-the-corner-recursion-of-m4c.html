@@ -86,7 +86,7 @@
 <h2 id="the-block-reassembly">The Block Reassembly</h2>
 <p><strong>Theorem.</strong> $M_4=V_{11}\oplus V_{10}\oplus V_{01}\oplus V_{00}$ as vector spaces, and in the corresponding block notation
 $$
-X=\begin{pmatrix}A&B\\ C&D\end{pmatrix},\qquad A\in M_k,\ B\in M_{k\times(4-k)},\ C\in M_{(4-k)\times k},\ D\in M_{4-k},
+X=\begin{pmatrix}A&amp;B\\ C&amp;D\end{pmatrix},\qquad A\in M_k,\ B\in M_{k\times(4-k)},\ C\in M_{(4-k)\times k},\ D\in M_{4-k},
 $$
 the product is the block product and the dimensions are $k^{2}+k(4-k)+k(4-k)+(4-k)^{2}=16$.</p>
 <p><strong>Proof.</strong> Every matrix has a unique block decomposition, and the block product rule is the definition of the matrix product.</p>
@@ -108,7 +108,7 @@ $$
 and the identity holds as a polynomial identity for all $X$.</p>
 <p><strong>Proof.</strong> The block factorisation
 $$
-\begin{pmatrix}A&B\\ C&D\end{pmatrix}=\begin{pmatrix}\mathrm I&0\\ CA^{-1}&\mathrm I\end{pmatrix}\begin{pmatrix}A&0\\0&D-CA^{-1}B\end{pmatrix}\begin{pmatrix}\mathrm I&A^{-1}B\\0&\mathrm I\end{pmatrix}
+\begin{pmatrix}A&amp;B\\ C&amp;D\end{pmatrix}=\begin{pmatrix}\mathrm I&amp;0\\ CA^{-1}&amp;\mathrm I\end{pmatrix}\begin{pmatrix}A&amp;0\\0&amp;D-CA^{-1}B\end{pmatrix}\begin{pmatrix}\mathrm I&amp;A^{-1}B\\0&amp;\mathrm I\end{pmatrix}
 $$
 has determinant $\det A\det(D-CA^{-1}B)$, since the two triangular factors have determinant one. Both sides are polynomials in the entries, and they agree on the open dense set where $A$ is invertible, hence everywhere.</p>
 <p><strong>Corollary.</strong> For a block triangular matrix, $C=0$ or $B=0$, the determinant is $\det A\det D$, and the determinant is multiplicative over the recursion.</p>

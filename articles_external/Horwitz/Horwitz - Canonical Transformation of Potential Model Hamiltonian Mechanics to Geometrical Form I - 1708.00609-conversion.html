@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="canonical-transformation-of-potential-model-hamiltonian-mechanics-to-geometrical-form-i"><strong>Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1708.00609v2 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Y. Strauss, L. P. Horwitz, A. Yahalom, J. Levitan</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 3 August 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I - 1708.00609-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I - 1708.00609.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Canonical Transformation of Potential Model Hamiltonian Mechanics to Geometrical Form I - 1708.00609.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives the symplectic version of the previous paper's construction: an explicit canonical transformation carrying a standard potential-model Hamiltonian in Euclidean space to a geodesic Hamiltonian on a manifold, so that orbits become geodesics. It supplies an algorithm for the generating function, proves convergence in one dimension, handles the finite radius of convergence by re-expanding about a shifted origin, and formalises the stability criterion — geodesic deviation — as a test that is sharper than Lyapunov's.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-theorem">The theorem</h3>
+<p>"Using the methods of symplectic geometry, we establish the existence of a canonical transformation from potential model Hamiltonians of standard form in a Euclidean space to an equivalent geometrical form on a manifold, where the corresponding motions are along geodesic curves."</p>
+<h3 id="why-it-is-worth-having">Why it is worth having</h3>
+<p>"The advantage of this representation is that it admits the computation of geodesic deviation as a test for local stability, shown in recent previous studies to be a very effective criterion for the stability of the orbits generated by the potential model Hamiltonian."</p>
+<h3 id="the-algorithm">The algorithm</h3>
+<p>"We describe here an algorithm for finding the generating function for the canonical transformation and describe some of the properties of this mapping under local diffeomorphisms. We give a convergence proof for this algorithm for the one dimensional case, and provide a precise geometric formulation of geodesic deviation which relates the stability of the motion in the geometric form to that of the Hamiltonian standard form."</p>
+<h3 id="the-radius-problem-and-its-cure">The radius problem and its cure</h3>
+<p>"Since the series expansions generated by the algorithm for finding the solutions for the generating function may have a bounded domain of convergence, we studied (in general dimension) the possiblity of shifting the origin in order to carry out the expansions based on a new origin. As for the analytic continuation of a function of a complex variable, this procedure can extend the solutions for the generating function to a maximal domain."</p>
+<h3 id="the-opening-at-the-end">The opening at the end</h3>
+<p>"We finally discussed briefly the mapping of bounded closed submanifolds, created by potential wells in the Hamiltonian space, corresponding to closed submanifolds in the geometric space, where Morse theory may be applied, to open the possibility of obtaining a new class of conserved quantities associated with homotopies of the image space."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-canonical-transformation-exists-and-this-one-is-constructive">1. A canonical transformation exists, and this one is constructive</h3>
+<p><strong>The idea.</strong> A <strong>theorem with an algorithm</strong>: the map from a potential model to geodesic motion is canonical, and its generating function can be computed recursively, with a convergence proof in one dimension.</p>
+<p><strong>What it would add.</strong> The corpus's articles on canonical transformations and on Hamiltonian flow describe the group of transformations and its generators. This supplies a specific element of the group — the one that removes the potential — and a way to compute it. That is the practical content the corpus's symplectic articles lack: not which transformations exist, but which one does a given job.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> The algorithm is a series and the convergence proof covers one dimension only; in more dimensions the paper offers re-expansion, not a guarantee.</p>
+<h3 id="2-geodesic-deviation-is-a-better-stability-test-than-the-lyapunov-exponent">2. Geodesic deviation is a better stability test than the Lyapunov exponent</h3>
+<p><strong>The idea.</strong> A <strong>criterion</strong>: instead of asking whether nearby orbits separate exponentially in time, ask whether the geodesic deviation on the associated manifold grows. The second is energy-dependent and local, and it detects instability that the first misses.</p>
+<p><strong>What it would add.</strong> The corpus's Lyapunov article treats the exponent as the measure of chaos. This says the exponent is the wrong measure for integrable systems, where it vanishes but the motion can still be geometrically unstable, and that curvature is the right one. The companion letter in this batch makes the same point on Kepler motion, where the Lyapunov analysis calls an integrable system unstable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> A criterion that is local and energy-dependent is harder to summarise in one number, and the corpus's article is built around a single exponent.</p>
+<h3 id="3-potential-wells-become-closed-submanifolds-so-morse-theory-applies">3. Potential wells become closed submanifolds, so Morse theory applies</h3>
+<p><strong>The idea.</strong> A <strong>programme</strong>: a potential well maps to a bounded closed submanifold of the geometrical space, and topological invariants of that submanifold — its homotopy type, its critical points — could yield conserved quantities not visible in the Hamiltonian picture.</p>
+<p><strong>What it would add.</strong> The corpus's topological articles get their invariants from field configurations, winding numbers and instanton charges. This proposes a different source: the topology of the image of a potential well under a canonical map. If it works, bound states would be labelled by topological data of a manifold rather than by quantum numbers, which is a genuinely different classification scheme and one the corpus's algebraic machinery could try to reproduce.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The paper says "may be applied" and "open the possibility"; no invariant is computed, and the suggestion is one paragraph at the end.</p>
+<p>The rank: the constructive transformation first, because it is a theorem with an algorithm; geodesic deviation second, because it changes a criterion; the Morse programme last, because it is a suggestion.</p>
+<p>The remaining items in one line each: the behaviour of the generating function under local diffeomorphisms of the image space, which is what makes the construction coordinate-covariant; the re-expansion about a shifted origin, which is the practical device for extending the domain; and the relation between the geometric and Hamiltonian formulations of geodesic deviation, which is the bridge the stability criterion rests on.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

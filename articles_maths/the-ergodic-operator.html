@@ -132,19 +132,19 @@ $$</p>
 <h2 id="the-maximal-inequality">The Maximal Inequality</h2>
 <p><strong>Theorem (Hopf's maximal inequality).</strong> Let $T$ be measure-preserving and let $f\in L^1$, with $M_Nf=\max_{n\le N}\sum_{k=0}^{n-1}f\circ T^k$. Then
 $$
-\int_{\{M_Nf>0\}}f\,d\mu\ge0 .
+\int_{\{M_Nf&gt;0\}}f\,d\mu\ge0 .
 $$</p>
 <p><em>Proof.</em> On the set where the first positive partial sum occurs at the index $k$, the sum $S_kf$ dominates the later increments up to $N$, and summing over $k$ gives the displayed inequality; this is the maximal ergodic inequality of <em>Ergodic Theory</em>.</p>
 <p>The maximal inequality is the estimate behind the pointwise ergodic theorem: applied to $\pm(f-g)$ for a bounded invariant $g$ it controls the set on which the averages differ from $g$ by more than $\varepsilon$, and the density of the bounded functions in $L^1$ gives the a.e. convergence. The mean theorem of this article needs no maximal inequality, since the convergence is in norm, and the contrast between the two proofs is the reason the operator form is the one that generalises to the contraction.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>Example (an irrational rotation).</strong> Let $X=\mathbb R/\mathbb Z$, $\mu$ the Lebesgue measure and $Tx=x+\alpha$ with $\alpha$ irrational. The characters $e_m(x)=\exp(2\pi imx)$ satisfy $Ue_m=\exp(2\pi im\alpha)e_m$, so $A_ne_m=\frac1n\sum_{k<n}\exp(2\pi imk\alpha)e_m\to0$ for $m\ne0$ and $A_ne_0=e_0$; the ergodic projection is the mean $Pf=\int f\,d\mu$, and the system is ergodic. The convergence is not absolute and the rate is not geometric, which is the generic behaviour of the ergodic operator.</p>
+<p><strong>Example (an irrational rotation).</strong> Let $X=\mathbb R/\mathbb Z$, $\mu$ the Lebesgue measure and $Tx=x+\alpha$ with $\alpha$ irrational. The characters $e_m(x)=\exp(2\pi imx)$ satisfy $Ue_m=\exp(2\pi im\alpha)e_m$, so $A_ne_m=\frac1n\sum_{k&lt;n}\exp(2\pi imk\alpha)e_m\to0$ for $m\ne0$ and $A_ne_0=e_0$; the ergodic projection is the mean $Pf=\int f\,d\mu$, and the system is ergodic. The convergence is not absolute and the rate is not geometric, which is the generic behaviour of the ergodic operator.</p>
 <p><strong>Example (the Bernoulli shift).</strong> Let $X=\{0,1\}^{\mathbb Z}$ with the product measure $\frac12,\frac12$ and $T$ the shift. The system is mixing, hence ergodic, the invariant $\sigma$-algebra is trivial, and the ergodic projection is the mean; the correlation $\langle U^nf,g\rangle\to\langle f,1\rangle\langle1,g\rangle$ decays exponentially for a finitely determined $f,g$, which is faster than the mean convergence of the ergodic operator and is a mixing statement, not a mean ergodic one.</p>
 <p><strong>Example (the identity).</strong> For $T=\mathrm{id}$ one has $U=I$, $\mathcal I=\mathcal B$ and $A_n=I$; the ergodic projection is the identity, and the system is ergodic only when the measure space is a single atom up to null sets. This is the degenerate case in which the fixed space is as large as possible.</p>
-<p><strong>Example (the Markov operator).</strong> For an irreducible positive recurrent chain the average $\frac1n\sum_{k<n}P^k$ converges in $L^2(\pi)$ to the rank-one projection onto the constants; this is the Markov case of the theorem, stated in <em>The Markov Operator</em>, earlier in this category.</p>
+<p><strong>Example (the Markov operator).</strong> For an irreducible positive recurrent chain the average $\frac1n\sum_{k&lt;n}P^k$ converges in $L^2(\pi)$ to the rank-one projection onto the constants; this is the Markov case of the theorem, stated in <em>The Markov Operator</em>, earlier in this category.</p>
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
 <p>The ergodic operator degenerates in four configurations. First, the projection $P$ need not be of rank one: for a non-ergodic system it is the conditional expectation onto a nontrivial invariant $\sigma$-algebra, and the limit of the averages is a random variable rather than a constant. Second, there is no rate: the convergence of the Cesàro averages is not exponential in general, and for the rotation the averages decay at the rate of a Dirichlet kernel; the geometric rate is a property of the mixing systems and not of the theorem. Third, the mean theorem fails in $L^1$ for the projection: $A_n$ is a contraction of $L^1$ but the limit of $A_nf$ need not be $\mathbb E[f\mid\mathcal I]$ in the $L^1$ norm, and the a.e. theorem is the substitute; the failure is the reason the pointwise theory needs the maximal inequality. Fourth, for a contraction that is not normal there need be no spectral projection at the eigenvalue one, and the limit of the averages is not read from a spectral measure; the normal case, and in particular the unitary Koopman operator, is the boundary on which the spectral description is available.</p>
 <h2 id="summary">Summary</h2>
-<p>To a measure-preserving transformation $T$ the ergodic theory attaches the Koopman operator $Uf=f\circ T$, an isometry on $L^2$ that is unitary when $T$ is invertible, with fixed space $\ker(U-I)$ the invariant $L^2$ functions. The ergodic operator is the Cesàro average $A_n=\frac1n\sum_{k<n}U^k$, a contraction, and the mean ergodic theorem of von Neumann states that $A_n$ converges strongly to the orthogonal projection $P$ onto the fixed space; the proof is the orthogonal decomposition of $L^2$ into the fixed space and the closure of the coboundaries, on which the averages telescope. The limit is the conditional expectation $\mathbb E[\cdot\mid\mathcal I]$ onto the invariant $\sigma$-algebra, the rank-one mean when the system is ergodic. The theorem holds for every contraction of a Hilbert space, and for a normal contraction the limit is the spectral projection at the eigenvalue one. The pointwise theorem of Birkhoff is the a.e. companion, and its engine is Hopf's maximal inequality $\int_{\{M_Nf>0\}}f\,d\mu\ge0$. The conditional expectation operator is next in this category, the Markov and transition cases are the preceding articles, and the group-action generalisation is later in this Part.</p>
+<p>To a measure-preserving transformation $T$ the ergodic theory attaches the Koopman operator $Uf=f\circ T$, an isometry on $L^2$ that is unitary when $T$ is invertible, with fixed space $\ker(U-I)$ the invariant $L^2$ functions. The ergodic operator is the Cesàro average $A_n=\frac1n\sum_{k&lt;n}U^k$, a contraction, and the mean ergodic theorem of von Neumann states that $A_n$ converges strongly to the orthogonal projection $P$ onto the fixed space; the proof is the orthogonal decomposition of $L^2$ into the fixed space and the closure of the coboundaries, on which the averages telescope. The limit is the conditional expectation $\mathbb E[\cdot\mid\mathcal I]$ onto the invariant $\sigma$-algebra, the rank-one mean when the system is ergodic. The theorem holds for every contraction of a Hilbert space, and for a normal contraction the limit is the spectral projection at the eigenvalue one. The pointwise theorem of Birkhoff is the a.e. companion, and its engine is Hopf's maximal inequality $\int_{\{M_Nf&gt;0\}}f\,d\mu\ge0$. The conditional expectation operator is next in this category, the Markov and transition cases are the preceding articles, and the group-action generalisation is later in this Part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -175,7 +175,7 @@ $$</p>
 <td>fixed functions; $g\circ T-g$</td>
 </tr>
 <tr>
-<td>$A_n=\frac1n\sum_{k<n}U^k$</td>
+<td>$A_n=\frac1n\sum_{k&lt;n}U^k$</td>
 <td>ergodic operator</td>
 </tr>
 <tr>
@@ -191,7 +191,7 @@ $$</p>
 <td>truncated maximum, maximal function</td>
 </tr>
 <tr>
-<td>$\int_{\{M_Nf>0\}}f\,d\mu\ge0$</td>
+<td>$\int_{\{M_Nf&gt;0\}}f\,d\mu\ge0$</td>
 <td>Hopf's maximal inequality</td>
 </tr>
 </tbody>

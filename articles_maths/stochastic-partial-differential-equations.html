@@ -89,15 +89,15 @@ $$</p>
 W_t = \sum_{k\ge1}\beta_k(t)e_k ,
 $$</p>
 <p>which does not converge in $H$; the series converges in every larger Hilbert space $H_{\mathrm{ext}}\supset H$ for which the inclusion $H\to H_{\mathrm{ext}}$ is Hilbert–Schmidt.</p>
-<p><strong>Definition.</strong> Let $\Sigma$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a <strong>trace-class covariance</strong>), and let $(e_k)$ diagonalise $\Sigma$ with eigenvalues $q_k$: $\Sigma e_k=q_ke_k$, $\sum_kq_k<\infty$. A <strong>$\Sigma$-Wiener process</strong> is</p>
+<p><strong>Definition.</strong> Let $\Sigma$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a <strong>trace-class covariance</strong>), and let $(e_k)$ diagonalise $\Sigma$ with eigenvalues $q_k$: $\Sigma e_k=q_ke_k$, $\sum_kq_k&lt;\infty$. A <strong>$\Sigma$-Wiener process</strong> is</p>
 <p>$$
 W^\Sigma_t = \sum_{k\ge1}\sqrt{q_k}\,\beta_k(t)e_k ,
 $$</p>
 <p>the series converging almost surely in $H$; it is a Gaussian process with mean zero and covariance $\mathbb{E}\langle W^\Sigma_s,x\rangle\langle W^\Sigma_t,y\rangle = (s\wedge t)\langle \Sigma x,y\rangle$, and it has a version with continuous paths.</p>
 <p><strong>Remark (white noise and the diagonal case).</strong> For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a <strong>space-time white noise</strong>, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\zeta(t,x)\zeta(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.</p>
 <h3 id="the-hilbertschmidt-integral">The Hilbert–Schmidt Integral</h3>
-<p><strong>Definition.</strong> Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is <strong>Hilbert–Schmidt</strong> if $\langle T\rangle_* = \sum_k\|Te_k\|^2<\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.</p>
-<p><strong>Definition.</strong> Let $\Sigma$ be trace class on $U$ with $\Sigma^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(\Sigma^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2ds<\infty$. The <strong>stochastic integral</strong> $\int_0^T\Phi_s\,dW^\Sigma_s$ is defined by approximation from elementary integrands, with the isometry</p>
+<p><strong>Definition.</strong> Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is <strong>Hilbert–Schmidt</strong> if $\langle T\rangle_* = \sum_k\|Te_k\|^2&lt;\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.</p>
+<p><strong>Definition.</strong> Let $\Sigma$ be trace class on $U$ with $\Sigma^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(\Sigma^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2ds&lt;\infty$. The <strong>stochastic integral</strong> $\int_0^T\Phi_s\,dW^\Sigma_s$ is defined by approximation from elementary integrands, with the isometry</p>
 <p>$$
 \mathbb{E}\left\|\int_0^T\Phi_s\,dW^\Sigma_s\right\|_H^2 = \mathbb{E}\int_0^T\bigl\|\Phi_s\Sigma^{1/2}\bigr\|_{\mathrm{HS}(U,H)}^2ds ,
 $$</p>
@@ -107,7 +107,7 @@ $$</p>
 <p>$$
 \int_0^T\Phi_s\,dW_s = \sum_{k\ge1}\int_0^T\Phi_se_k\,d\beta_k(s),
 $$</p>
-<p>the series converging in $L^2(\Omega;H)$ exactly when $\mathbb{E}\int_0^T\langle \Phi_s\rangle_*ds<\infty$; the isometry $\mathbb{E}\|\int\Phi\,dW\|^2=\mathbb{E}\int\langle \Phi\rangle_*ds$ holds.</p>
+<p>the series converging in $L^2(\Omega;H)$ exactly when $\mathbb{E}\int_0^T\langle \Phi_s\rangle_*ds&lt;\infty$; the isometry $\mathbb{E}\|\int\Phi\,dW\|^2=\mathbb{E}\int\langle \Phi\rangle_*ds$ holds.</p>
 <h2 id="stochastic-evolution-equations">Stochastic Evolution Equations</h2>
 <p><strong>Definition.</strong> Let $A$ be the generator of a strongly continuous semigroup $(S(t))_{t\ge0}$ on $H$, and let $F : H\to H$ and $B : H\to L_2(\Sigma^{1/2}U,H)$ be measurable. The <strong>stochastic evolution equation</strong> is</p>
 <p>$$
@@ -118,7 +118,7 @@ $$</p>
 X_t = S(t)X_0+\int_0^tS(t-s)F(X_s)\,ds+\int_0^tS(t-s)B(X_s)\,dW^\Sigma_s , \qquad t\in[0,T].
 $$</p>
 <p>A <strong>strong solution</strong> is an $H$-valued process with $X_t\in D(A)$ for almost every $t$ and the integral equation satisfied in the Itô sense, and a <strong>weak solution</strong> is a solution of the associated martingale problem, tested against smooth functions.</p>
-<p><strong>Theorem (the stochastic convolution).</strong> Let $\Phi$ be progressively measurable with $\sup_{t\le T}\mathbb{E}\|\Phi_t\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2<\infty$. Then the process</p>
+<p><strong>Theorem (the stochastic convolution).</strong> Let $\Phi$ be progressively measurable with $\sup_{t\le T}\mathbb{E}\|\Phi_t\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2&lt;\infty$. Then the process</p>
 <p>$$
 \boxed{\;W_A(t) = \int_0^tS(t-s)\Phi_s\,dW^\Sigma_s , \qquad t\in[0,T]\;},
 $$</p>
@@ -126,9 +126,9 @@ $$</p>
 <p>$$
 \Sigma_t = \int_0^tS(t-s)\Phi_s\Sigma\Phi_s^*S(t-s)^*\,ds ;
 $$</p>
-<p>it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}\Sigma_t<\infty$.</p>
+<p>it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}\Sigma_t&lt;\infty$.</p>
 <p><em>Proof.</em> For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\langle S(t-s)\Phi_s\Sigma^{1/2}\rangle_*ds=\operatorname{tr}\Sigma_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.</p>
-<p><strong>Theorem (existence and uniqueness for Lipschitz coefficients).</strong> Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\langle B(x)-B(y)\rangle_*^{1/2}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|<\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2<\infty$.</p>
+<p><strong>Theorem (existence and uniqueness for Lipschitz coefficients).</strong> Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\langle B(x)-B(y)\rangle_*^{1/2}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|&lt;\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2&lt;\infty$.</p>
 <p><em>Proof.</em> Quoted as standard (Da Prato–Zabczyk). The Picard iteration of the preceding article is repeated with the stochastic convolution in place of the deterministic integral; the isometry controls the stochastic term, the Lipschitz condition controls the difference of two iterates, and a Gronwall argument in $L^2(\Omega;H)$ gives convergence of the iteration and uniqueness.</p>
 <p><strong>Remark (strong, mild and weak solutions).</strong> A mild solution need not be a strong solution when $A$ is unbounded: the stochastic convolution gains regularity from the smoothing of the semigroup only in the parabolic case, and for a hyperbolic or a merely strongly continuous $A$ the convolution may take values outside $D(A)$. The three notions — strong, mild and weak — coincide under additional regularity hypotheses, and the mild formulation is the one that is well posed under the weakest assumptions. This is the exact parallel of the deterministic theory of the semigroup article, where the mild solution is the general solution of the abstract Cauchy problem and the classical one requires the initial datum in the domain.</p>
 <h2 id="the-infinite-dimensional-ito-formula">The Infinite-Dimensional Itô Formula</h2>
@@ -157,7 +157,7 @@ u(t) = S(t)u_0+\int_0^tS(t-s)\,dW^\Sigma_s , \qquad S(t)e_n = \exp(-n^2\pi^2t)e_
 $$</p>
 <p>and the Hilbert–Schmidt condition for its square-integrability is</p>
 <p>$$
-\sum_{n\ge1}q_n\int_0^t \exp(-2n^2\pi^2s)\,ds = \sum_{n\ge1}\frac{q_n\bigl(1-\exp(-2n^2\pi^2t)\bigr)}{2n^2\pi^2}<\infty .
+\sum_{n\ge1}q_n\int_0^t \exp(-2n^2\pi^2s)\,ds = \sum_{n\ge1}\frac{q_n\bigl(1-\exp(-2n^2\pi^2t)\bigr)}{2n^2\pi^2}&lt;\infty .
 $$</p>
 <p>For $\Sigma=I$ this holds for the interval, where $\sum_nn^{-2}=\pi^2/6$ and the large-time trace is $\sum_n1/(2\pi^2n^2)=1/12$; in two dimensions the same computation gives $\sum_{(n,m)\neq(0,0)}(n^2+m^2)^{-1}$, which diverges logarithmically, so the cylindrical noise is not admissible on a planar domain in $L^2$, and the solution is then distribution-valued and requires the singular theory below. This is the quantitative form of the statement that the space-time white noise is rougher in higher dimension.</p>
 <p><strong>Theorem (invariant measure of the linear equation).</strong> Let $A$ generate an exponentially stable semigroup and let $\Sigma$ be trace class. Then the solution of $dX_t = AX_t\,dt+dW^\Sigma_t$ has, for every initial law, a limit law as $t\to\infty$, independent of the initial datum; it is the centred Gaussian measure $\mathcal{N}(0,\Sigma_\infty)$ with covariance operator</p>
@@ -166,14 +166,14 @@ $$</p>
 $$</p>
 <p>which is the unique solution of the Lyapunov equation $A\Sigma_\infty+\Sigma_\infty A^*+\Sigma=0$; the measure is invariant for the transition semigroup, and the process is the infinite-dimensional <strong>Ornstein–Uhlenbeck process</strong>.</p>
 <p><em>Proof.</em> The solution is $X_t=S(t)X_0+\int_0^tS(t-s)dW^\Sigma_s$; the first term tends to $0$ in $L^2(\Omega;H)$ by the exponential stability, and the second is Gaussian with covariance $\int_0^tS(t-s)\Sigma S(t-s)^*ds$, which increases to $\Sigma_\infty$ by the trace-class and stability hypotheses. For invariance, if $X_0\sim\mathcal{N}(0,\Sigma_\infty)$ then $X_t$ is Gaussian with covariance $S(t)\Sigma_\infty S(t)^*+\int_0^tS(t-s)\Sigma S(t-s)^*ds = \Sigma_\infty$, the identity following from $\Sigma_\infty=\int_0^\infty S(r)\Sigma S(r)^*dr$ and the semigroup law; differentiating that identity at $t=0$ gives the Lyapunov equation.</p>
-<p><strong>Example (the stochastic heat equation continued).</strong> For the interval with $\Sigma=I$ the invariant measure is Gaussian with covariance $\Sigma_\infty$ diagonal in the sine basis with eigenvalues $\frac1{2\lambda_n}$, $\lambda_n=n^2\pi^2$; the invariant measure is thus the law of the Gaussian field with inverse covariance $(-2\Delta)$, formally $\exp\bigl(-\frac12\int|\nabla u|^2dx\bigr)$ up to normalisation, a Gaussian measure supported on $H^{1/2-\varepsilon}(\mathcal{O})$ for every $\varepsilon>0$ and not on $H^{1/2}$. The computation of the eigenvalues follows from the Lyapunov equation in the eigenbasis.</p>
+<p><strong>Example (the stochastic heat equation continued).</strong> For the interval with $\Sigma=I$ the invariant measure is Gaussian with covariance $\Sigma_\infty$ diagonal in the sine basis with eigenvalues $\frac1{2\lambda_n}$, $\lambda_n=n^2\pi^2$; the invariant measure is thus the law of the Gaussian field with inverse covariance $(-2\Delta)$, formally $\exp\bigl(-\frac12\int|\nabla u|^2dx\bigr)$ up to normalisation, a Gaussian measure supported on $H^{1/2-\varepsilon}(\mathcal{O})$ for every $\varepsilon&gt;0$ and not on $H^{1/2}$. The computation of the eigenvalues follows from the Lyapunov equation in the eigenbasis.</p>
 <p><strong>Remark (the nonlinear case).</strong> A nonlinear equation $du=(\Delta u+f(u))dt+dW$ has a mild solution under a Lipschitz condition on $f$ by the general existence theorem. The invariant measure is no longer Gaussian, and its construction requires a different argument; the natural one is the identification of the measure as the (formal) Gibbs measure $\exp(-H(u))du$ with $H$ the energy of the deterministic equation, made rigorous by a mass-concentration or an integration-by-parts argument. The obstruction is the same as in the deterministic theory: the energy is not defined under the noise in the dimensions in which the noise is too rough.</p>
 <h2 id="applications-and-examples">Applications and Examples</h2>
 <p><strong>Example (the stochastic Burgers equation).</strong> On the interval, the equation</p>
 <p>$$
 du = \bigl(\nu \partial^2/\partial x^2 u+\tfrac12\partial/\partial x\,(u^2)\bigr)dt+dW
 $$</p>
-<p>is the stochastic Burgers equation with viscosity $\nu>0$; for $\Sigma=I$ the noise is admissible in one dimension and the Lipschitz-type theory applies after an integration by parts of the nonlinearity, while the limit $\nu\to0$ produces a singular stochastic equation for the potential in which the nonlinearity requires a renormalisation. This is the standard instance in which the smooth theory is available for the regularised equation and fails at the singular limit.</p>
+<p>is the stochastic Burgers equation with viscosity $\nu&gt;0$; for $\Sigma=I$ the noise is admissible in one dimension and the Lipschitz-type theory applies after an integration by parts of the nonlinearity, while the limit $\nu\to0$ produces a singular stochastic equation for the potential in which the nonlinearity requires a renormalisation. This is the standard instance in which the smooth theory is available for the regularised equation and fails at the singular limit.</p>
 <p><strong>Example (the stochastic Navier–Stokes equation).</strong> On a two-dimensional domain, the equation for a divergence-free velocity field,</p>
 <p>$$
 du = \bigl(\nu\Delta u-\mathbb{P}(u\cdot\nabla u)\bigr)dt+\mathbb{P}\,dW ,

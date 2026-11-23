@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical electrodynamics and spin-torsion coupling effects — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Classical electrodynamics and spin-torsion coupling effects - 2410.01355.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-electrodynamics-and-spin-torsion-coupling-effects"><strong>Classical electrodynamics and spin-torsion coupling effects</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2410.01355 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova, Yuri N. Obukhov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 October 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - Classical electrodynamics and spin-torsion coupling effects - 2410.01355-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Classical electrodynamics and spin-torsion coupling effects - 2410.01355.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Classical electrodynamics and spin-torsion coupling effects - 2410.01355.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the Poincaré gauge theory with the most general Lagrangian quadratic in curvature and torsion and solves the coupled electromagnetic–torsion system for a plane wave in a flat metric. The closed system is given in four equations; the torsion is sourced by the magnetic helicity density and by the electromagnetic spin density; a photon converts into a torsion wave. With external uniform electric and magnetic fields orthogonal to the propagation direction, the transmitted light emerges with its polarisation rotated and its intensity reduced — "dichroism". The rotation angle is proportional to the square of the torsion coupling and to the energy density of the external fields. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-sources">The sources</h3>
+<p>"d system of field equations (24), (25), (31), (32) was derived, revealing the density of magnetic helicity and the density of the spin of the electromagnetic field as the sources of the dynamic torsion field. We" The coupling used is "the axial torsion with the axial photon current in the Lagrangian density (18)". </p>
+<h3 id="the-conversion-of-photons-into-torsion-waves">The conversion of photons into torsion waves</h3>
+<p>For a wave along $z$ in uniform external fields, the wave numbers split, $$k^2_{B,E+}=\frac{\epsilon\omega^2}{c^2}+\frac{\xi_{B,E}}{(\epsilon-1)\frac{\omega^2}{c^2}+\mu^2},\qquad k^2_{B,E-}=\frac{\omega^2}{c^2}-\mu^2-\frac{\xi_{B,E}}{(\epsilon-1)\frac{\omega^2}{c^2}+\mu^2}$$ (paper 42–43), and the amplitude is $$A_{x,y}(z,t)\sim e^{-i\omega t+ik_0z}\Bigl[1-\frac{2\xi_{B,E}}{\gamma^2}\sin^2(qz/2)+\frac{i\xi_{B,E}}{\gamma}\Bigl(\frac{z}{2}-\frac{\sin(qz)}{2k_0}\Bigr)\Bigr]$$ (paper 48, with the terms split across the display's lines) with $\gamma(\omega)=(\epsilon-1)\frac{\omega^2}{c^2}+\mu^2$, $q(\omega)=\sqrt{\epsilon}\frac{\omega}{c}-\sqrt{\frac{\omega^2}{c^2}-\mu^2}$ and $k_0=\sqrt{\epsilon}\frac{\omega}{c}$."We expect that the magnitude of $x$ and $y$ components of the light wave should decrease in the process of conversion of the photons into the torsion waves."</p>
+<h3 id="the-dichroism-angle">The dichroism angle</h3>
+<p>$$\tan\beta=\Bigl(1-\frac{8\chi^2\rho_0}{\gamma^2\hbar c}\sin^2(ql/2)\Bigr)\tan\beta_0$$ (paper 49) where $\rho_0=\frac{\epsilon_0E_0^2}{2}+\frac{B_0^2}{2\mu_0}$ is the energy density, and "nd (47) show that the polarization rotation angle β(ω) depends on the frequency ω of the wave (49), being proportional to the square of the torsion coupling constant, χ2 . The new". The generated torsion potential is longitudinal, $$\alpha_z=-\mathrm{Re}\,\frac{A\sin\beta_0e^{-i\omega t}\chi\varepsilon_0E_0}{(k_+^2-k_-^2)\hbar}\bigl(e^{ik_+z}-e^{ik_-z}\bigr)$$ (paper 50, with the $\hbar$ of the coupling restored from the printed factor), which the paper calls "a very peculiar case of longitudinal waves", since $B=\nabla\times\alpha=0$ and only the electric component of the torsion field is generated. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-polarisation-rotation-quadratic-in-the-coupling">1. A polarisation rotation quadratic in the coupling</h3>
+<p><strong>The idea.</strong> $\beta-\beta_0$ grows as $\chi^2\rho_0$, not as $\chi$: the conversion is a second-order process, so the observable is a small rotation and a matching dimming. A <strong>formula</strong> that fixes how a torsion coupling would scale in a tabletop optical experiment. </p>
+<p><strong>What it would add.</strong> The order in the coupling, which the Faraday result of the companion paper does not share — there the rotation is linear in $\chi$. A corpus entry would have to say which process it is quoting. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>. </p>
+<p><strong>What stands in the way.</strong> The $\chi^2$ dependence follows from the axial-current coupling chosen in the Lagrangian; a different axial sector gives a linear rotation, and the paper does not compare the two orders or say which experiment would separate them. </p>
+<h3 id="2-a-photon-that-turns-into-a-longitudinal-torsion-wave">2. A photon that turns into a longitudinal torsion wave</h3>
+<p><strong>The idea.</strong> (paper 50) generates $\alpha_z$ with $B=\nabla\times\alpha=0$ and $E\neq0$: a purely "electric" torsion wave, longitudinal, travelling with the light. A <strong>mechanism</strong> with a specific polarisation content. </p>
+<p><strong>What it would add.</strong> A conversion channel with a stated helicity structure, where the corpus's Maxwell article has only the free field. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/shock-electromagnetic-waves.md</code>, as the closest corpus material on structured propagating field configurations. </p>
+<p><strong>What stands in the way.</strong> The generated torsion is first order in $\chi$ while the rotation is second order, so the wave is produced but its back-reaction on the light is a higher-order effect; the paper does not compute the energy carried away, so no conversion rate is available. </p>
+<h3 id="3-external-fields-as-the-knob-that-makes-the-effect-observable">3. External fields as the knob that makes the effect observable</h3>
+<p><strong>The idea.</strong> With $E_{\rm ext}$, $B_{\rm ext}$ orthogonal to the propagation direction, the rotation angle is set by $\rho_0$ of those fields, i.e. the effect is switchable and scales with laboratory field strength. A <strong>reading</strong> of the formula as an experimental design. </p>
+<p><strong>What it would add.</strong> A design principle: the torsion coupling is too small for a passive measurement, so it is amplified by the external field energy density. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>. </p>
+<p><strong>What stands in the way.</strong> No numerical sensitivity is quoted, and the smallness of $\chi^2$ is not estimated against realistic fields, so the "possible experimental setup" the conclusion proposes has no projected reach.</p>
+<p>The rank is a judgement: the $\chi^2$ scaling first, because it is the observable's structure; the longitudinal torsion wave second, because it is a computed configuration; the external-field knob third, because it is a proposal without a number.</p>
+<p>Fifteen pages: the quadratic Poincaré Lagrangian, the field equations with helicity and spin sources, the axial-photon coupling, the plane-wave ansatz, the two branches, the dichroism angle, and the conclusions.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

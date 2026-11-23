@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Elementary Particle States of an Internally Structured Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Elementary Particle States of an Internally Structured Model.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-elementary-particle-states-of-an-internally-structured-model"><strong>Relativistic Elementary Particle States of an Internally Structured Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>36</strong> (1966) 662, No. 3; dated 21 June 1966</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Elementary Particle States of an Internally Structured Model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Elementary Particle States of an Internally Structured Model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Elementary Particle States of an Internally Structured Model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Turns the internal-polarisation model of the preceding note into explicit unitary irreducible representations of the Poincaré group. The internal variable is a two-component complex spinor $\xi_a$; the wave equation is invariant under $U_a(2)\times U_b(2)$, the maximal compact subgroup of $U(2,2)$, which is locally $0(4,2)$; the shells of the tower are labelled by two occupation numbers, and the mass is a function of them. The norm is positive-definite only on one sheet of the mass hyperboloid, so unitarity <em>forces</em> the superposition principle to stay within a shell — which in turn is what limits the observability of the internal coordinates.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model-and-its-invariant">The model and its invariant</h3>
+<p>"entz scalar and is conserved. If further-" internal polarization "is gven from an more both wave functions belong to the algebraic standpoint. In this note we same mass hyperboloid, one can redefine - explicitly give unitary irreducible repre- the inner product" The wave equation is</p>
+<p>$$
+\Big\{P_{\mu}V_{\mu}+a_0P_{\mu}V_{\mu}+a_1(K_3)^{2}\Big\}\psi=0,
+\qquad V_{\mu}=\xi^{*}\sigma_{\mu}\xi-\tfrac{i}{2}\pi^{*}\sigma_{\mu}\pi,
+$$</p>
+<p>with $a_0$, $a_1$ constants, $K_3$ the third component of the internal "boost", and "the second term ... implying that the mass is created from internal vibration and rotation of the triad". "Equation (1) is invariant under the Poincare and Ua(2) X Ub(2) groups, .and under antiparticle conjugation. It is also. invariant under Prog. Theor. Phys. Vol. 36 (1966), No. 3 space inversion, for which we assume that ~,..-+±iiT<em>, 7t</em>-+i~, whence a',..-+a', b'--b'. Relativistic Elementary Particle 'Now the inner product is ."</p>
+<h3 id="the-inner-product-and-why-unitarity-restricts-the-superposition">The inner product, and why unitarity restricts the superposition</h3>
+<p>For two solutions, $(\psi_1,\psi_2)=\int d\tau\,d^{3}x\,\{i\psi_1^{*}(X,\xi)\partial_{x_0}\psi_2(X,\xi)\}$ with $d\tau=2(d^{3}a\,dc/a_0)dx=dx_1dx_2dy_1dy_2$ in real variables $X_a$ and $Y_a$, $\xi_a=(x_a+iy_a)/\sqrt2$. "of a structure having Lorentz scalar and is conserved. If further-" internal polarization "is gven from an more both wave functions belong to the algebraic standpoint." $(\psi_1,\psi_2)'=i\int\psi_1^{*}\partial_{x_0}\psi_2\,d\tau\,d^{3}X$, "which' agrees with the usual form, giving ·,ar. The norm is then positive-definite a positive norm." "yperboloid (see below). Thus in have the unique spin 1/2 and are divided order to assure unitarity the application of into two shells·by Ns=N,.-Nb=±l. For the superposition principle must bo confined the particle shell (Na,Nb) = (1, 0), the to states belonging to the definite mass momentum eigenstate contains two linearly shell for each free particle. This fact in independent states, which we express by Downloaded from academic."</p>
+<h3 id="the-shells">The shells</h3>
+<p>"ifies all physical zero-mass irreducible representations of the Poincare group corre- sponding to discrete spin. The ground state wave function (K 3 =0) is given by 'F8(X, ~) =exp(iJCX,."</p>
+<p>$$
+\{P_{\mu}V_{\mu}+\sqrt{\lambda}(N+2)\}\psi=0,
+$$</p>
+<p>"the mass is then determined by (1)" $m=\tfrac14\{\mu_0(N+2)+[\mu_0^{2}(N+2)^{2}+4\mu_1^{2}(N_a-N_b^{2})]^{1/2}\}$ (as printed). "Equation (1) itself contains positive and negative energy solutions, but = (P~a:) a PI m. The general state is then by ( 4) only positive solutions are selected."</p>
+<p>"The lowest shell is specified by N=O; for it J=NB=O, m=.uo-", the internal function being $\chi_0(\xi;P)=({1}/{\pi})\exp(P_{\mu}\xi^{*}\sigma_{\mu}\xi/\mu_0)$, satisfying $\int\chi_0^{*}\chi_0\,d\tau=1$. The first excited states specified by $N=1$ have the unique spin $1/2$ and are divided into two shells by $N_s=N_a-N_b=\pm1$. For the particle shell $(N_a,N_b)=(1,0)$ "the momentum eigenstate contains two linearly independent states, which we express by the covariant bases ... $a=1,2$", and the amplitude "Pt) 2 =- ,u~,P6&gt;0) a contragradient dotted spinor. The inner is lff 0 (X, ~; PD =exp(iP~X,.". With the unitary bases $\chi_a^{(r)}=a_a^{[P]}\chi_0(\xi;P)$ "the inner product is expressed as (IJffal, rp-~al) J(+) d P{ (2P6) -!" "which agrees with the form obtained in ·the usual method. 2 J" "eet of another representation is to use the 4- the mas'\ hyperboloid. The inner product".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-unitarity-of-the-norm-is-the-superselection-of-a-mass-shell">1. Unitarity of the norm <em>is</em> the superselection of a mass shell</h3>
+<p><strong>The idea.</strong> The covariant inner product is indefinite-looking; restricted to one sheet of one mass hyperboloid it becomes positive-definite. Hence the superposition principle may not mix shells, and the internal coordinates — which do not commute with the mass operator — are unobservable for exactly the reason that they would take a state off its shell.</p>
+<p><strong>What it would add.</strong> A derivation, rather than a postulate, of a rule the corpus states. <em>The Massless Regime</em> (<code>articles_physics/the-massless-regime.md</code>) lists in §<em>The Description That Fails</em> which descriptions do not survive a change of sector; here the failure has a norm-theoretic cause: the internal variable fails to be observable because the norm is not positive on superpositions across mass. That is a stronger statement than the label does not apply, because it names the mechanism.</p>
+<p><strong>Where it lands.</strong> §<em>The Description That Fails</em>, as the norm-level reason, and <em>The Lagrangian and the Second Quantisation</em> (<code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code>) §<em>The Constraints the Action Imposes: The Dirac Bracket</em>, where the same confinement of the physical space is imposed by constraints.</p>
+<p><strong>What stands in the way.</strong> The corpus's indefinite structure is carried by the algebra's norm, not by a mass-shell restriction, so the two statements are analogous and not identical; the article would have to say which one it is using.</p>
+<h3 id="2-the-carriers-symmetry-is-the-compact-form-of-the-conformal-group">2. The carrier's symmetry is the compact form of the conformal group</h3>
+<p><strong>The idea.</strong> The internal algebra is $U_a(2)\times U_b(2)$, the maximum compact subgroup of $U(2,2)$ — locally $0(4,2)$. The tower's unitary structure is the compact real form of the conformal algebra, and the mass shells are its irreducible blocks.</p>
+<p><strong>What it would add.</strong> A concrete carrier for the conformal algebra. <em>The Conformal Group in Biquaternionic Form</em> (<code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code>) builds the fifteen generators and marks in §<em>Where the Algebra Strains</em> what the algebra does not supply; Takabayasi supplies a <em>unitary</em> representation of the compact part on a two-oscillator Fock space, which is the one thing the biquaternion treatment does not deliver — a Hilbert space on which the generators are self-adjoint.</p>
+<p><strong>Where it lands.</strong> §<em>Larger Homes in the Literature</em>, as the worked carrier, and §<em>Where the Algebra Strains</em> as the contrast.</p>
+<p><strong>What stands in the way.</strong> Only the maximal compact subgroup is represented unitarily here; the non-compact generators are the ones the physics needs, and they appear as the $V_{\mu}$ of an indefinite-metric theory.</p>
+<h3 id="3-the-mass-is-a-function-of-two-occupation-numbers-so-the-tower-is-a-lattice">3. The mass is a function of two occupation numbers, so the tower is a lattice</h3>
+<p><strong>The idea.</strong> States are labelled by $(N_a,N_b)$, dimensionality $(N_a+1)(N_b+1)$, and $m$ is a function of $N$, $N_a-N_b$ and two constants. The spectrum is therefore a two-dimensional lattice of shells, with degeneracies fixed by the labels, and the observed particles are points of it.</p>
+<p><strong>What it would add.</strong> A discrete alternative to the continuous fits. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) labels states by the degree of one representation; a two-label lattice with degeneracies $(N_a+1)(N_b+1)$ is a different structure, and it predicts $m$ from integer coordinates rather than from a fit.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Spectrum</em>, as the lattice alternative.</p>
+<p><strong>What stands in the way.</strong> The formula contains $\mu_0$ and $\mu_1$ and the printed expression has a misprint in the $(N_a-N_b^{2})$ factor, so the numbers cannot be reproduced without the original.</p>
+<p>The remainder, one line each. That the first excited shell has spin $1/2$ with two states, and that its amplitude is a dotted spinor, is the place where this tower meets the corpus's spinor conventions. That the ambiguity in the order of $a$ and $a^{\dagger}$ is resolved only by the choice $\mu_1=0$, where the integral operator disappears, is a remark about normal ordering.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

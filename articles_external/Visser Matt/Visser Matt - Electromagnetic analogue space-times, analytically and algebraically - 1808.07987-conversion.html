@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electromagnetic analogue space-times, analytically and algebraically — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Electromagnetic analogue space-times, analytically and algebraically -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="electromagnetic-analogue-space-times-analytically-and-algebraically"><strong>Electromagnetic analogue space-times, analytically and algebraically</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1808.07987v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sebastian Schuster, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 26 June 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Electromagnetic analogue space-times, analytically and algebraically - 1808.07987-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Electromagnetic analogue space-times, analytically and algebraically - 1808.07987.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Electromagnetic analogue space-times, analytically and algebraically - 1808.07987.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper contrasts two ways of building an analogue spacetime out of electrodynamics in a medium. An analytic analogue comes from a specific hyperbolic equation, here a Laplace–Beltrami equation with an effective metric; an algebraic analogue comes from combining tensors so that a metric appears explicitly. The authors argue the distinction has experimental consequences, not just presentational ones. They show that an algebraic model produces extra terms in Maxwell's equations which make the hidden vacuum identification harder, but which also open access to connections other than the Levi-Civita one, and so to modified gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framing">The framing</h3>
+<p>"While quantum field theory could more aptly be called the 'quantum field framework' — as it encompasses a vast variety of varying concepts and theories — in comparison, relativity, both special and general, is more commonly portrayed as less of a 'general framework'."</p>
+<h3 id="the-two-kinds">The two kinds</h3>
+<p>"one can distinguish between analytic analogue models (where the analogue is based on some specific hyperbolic differential equation), on the one hand, and algebraic models (where the analogue is fashioned from the more or less explicit appearance of a metric tensor), on the other hand. Yet this distinction is more than just a matter of taste: The nature of the analogue spacetime model will also det[ermine what can be] taken easily into an experimental context."</p>
+<h3 id="the-requirement">The requirement</h3>
+<p>"The only requirement for this to work is the presence of a notion of an upper limit for propagation speeds in this new setting. Systems of such a kind abound in physics, as all hyperbolic wave equations fulfil this requirement."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"We have seen that it is easily possible to find analogue spacetime models that differ from the [original] equation in terms of a Laplace–Beltrami equation involving an effective metric $g_{\mathrm{eff}}$."</p>
+<h3 id="the-extra-terms">The extra terms</h3>
+<p>"Experimentalists trying to implement it will encounter additional terms in the Maxwell equations making the identification of the hidden analogue space-time vacuum electrodynamics difficult. This, however, can be turned on itself to also allow for analogue space-times whose connections are not the Levi-Civita connection of $g_{\mathrm{eff}}$."</p>
+<h3 id="the-widened-scope">The widened scope</h3>
+<p>"This has the interesting consequence that this algebraic electromagnetic analogue provides access to more than just an analogue for general relativity: Also modified theories of gravity become available to the analogue space-time paradigm."</p>
+<h3 id="the-warning">The warning</h3>
+<p>"This strongly implies that coordinate artefacts, 'cartographic distortions', will be of an even more pernicious nature than in classical general relativity."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-analytic-versus-algebraic-construction">1. Analytic versus algebraic construction</h3>
+<p><strong>The idea.</strong> There are two distinct routes from a medium to a metric, and they do not agree in content.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> uses one route without saying which kind it is. The distinction decides what can be tested, so the article should classify its own construction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the construction of the metric.</p>
+<p><strong>What stands in the way.</strong> The classification is a matter of method, not of result. Ranked first, because it is a question the article must answer about itself.</p>
+<h3 id="2-extra-terms-as-a-resource">2. Extra terms as a resource</h3>
+<p><strong>The idea.</strong> What looks like an obstruction, extra terms in Maxwell's equations, gives access to non-Levi-Civita connections.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> treats extra structure as a cost. Here it is a benefit, which is a useful counterexample to the catalogue's framing.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The benefit is for analogue models. Ranked second.</p>
+<h3 id="3-coordinates-become-physical">3. Coordinates become physical</h3>
+<p><strong>The idea.</strong> Mapping laboratory coordinates onto effective ones makes coordinate artefacts worse than in ordinary relativity.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code> treats coordinates as conventional. This paper shows a setting where the map between coordinates is itself measured, which sharpens the article's discussion.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, in the discussion of coordinates.</p>
+<p><strong>What stands in the way.</strong> The setting is a laboratory medium. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

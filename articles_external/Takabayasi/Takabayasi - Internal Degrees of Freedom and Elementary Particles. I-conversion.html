@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Degrees of Freedom and Elementary Particles. I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Degrees of Freedom and Elementary Particles. I.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-degrees-of-freedom-and-elementary-particles-i"><strong>Internal Degrees of Freedom and Elementary Particles. I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>25</strong> (1961) 901, No. 6, June 1961; received 12 December 1960</td>
+</tr>
+<tr>
+<td>length</td>
+<td>38 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Internal Degrees of Freedom and Elementary Particles. I-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Degrees of Freedom and Elementary Particles. I.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Internal Degrees of Freedom and Elementary Particles. I.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a quantum theory of a point-like system that carries internal degrees of freedom at its own position: a one-parameter series of events $x^{\mu}(\tau)$ with internal variables $\xi_a$, an indefinite metric on those internal degrees, and a $\tau$-independent self-adjoint Hamiltonian. The rest mass becomes a dynamical operator with an eigenvalue spectrum, the internal angular momentum tensor is responsible for spin and for Zitterbewegung, and the instantaneous velocity $v^{\mu}$ is not collinear with $p^{\mu}$ but restricted by kinematical conditions. Those conditions classify the systems, and for one class three invariants built from $p$, $v$ and $S$ are available to be identified with isospin, hypercharge and baryon number.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-framework">The framework</h3>
+<p>A point-like system is "r quantity to be formed of _p'" and v'": Internal Degrees Q[ Freedom and Elementary Particles. I 907 (the first being P= -p/ and the second p= -7.J~" ), plays an essential role for 2 the motion. This IS because the invariant l:amiltonian for such system has the general form H= -8+X =v~"p~"+X. (9) Here X is a scalar function of the internal variables (S~""' v ~"' ~a) alone, while the term -8 means the existence of the coupling between internal and external Downloaded from academic.oup.com/ptp/article/25/6/901/1861451 by guest on 12 November 2026 motions. The 8 and JC are not separately conserved in general. In this case the Schrodinger equation, (10) becomes a linear differential equation with respect to Xp, since pp---)ft.j i · (j jox"' due to (2). The properties of (10) depends on the kinematical characters of 'U~"already mentioned and the structure of X, but with a suitable prescription for them Eq. (10) has appropriate properties to comprise different elementary- particle states by its eigen-solutions. Then Eq. (10) means our" unified equation ". It refers to one-particle states, but it provides the starting point for proceeding to the treatment of interactions by means of the subsequent second- quantization or other procedures. Such approach has an evident advantage that the theory maintains particle character clearly. In § 6 we deduce general properties of the first kind systems, and especial- ly we conclude the existence of six mutually commuting conserved invariant quantities which are formed of the variables (p~", S~""' v~") alone. They include, besides rest mass and the magnitude of spin, four quantities tbat may eventually be identified with baryon number, magnitude of isospin, and hypercharge. Evidently, systems of the first kind are divided, according to the criterion (B), into two categories, classical and non-classical models. A typical example* belonging to the former is the relativistic rotator given in a previous paper. 4 &gt; On the other hand an important type of non-classical models is defined by the condition It includes as special examples various familiar systems such as Bhabha par- ticles.5) The precise treatment of both of the above types will be given in Part II and III. The main purpose of this paper (Part I) is to set up the notion * Various examples are investigated in T. Takabayasi. Soryusiron-Kenkyu (Mimeographed circular in Japanese) 21 (1960), 723. 908 T. Takabayasi of point-like system and establish the general foundation of theory in order to clarify what will generally emerge, once we introduce substantial internal degrees of freedorn into relativistic quantum mechanics in the level of one- pe~rticle theory. § 2. Theoretical framework First in this section we outline the general foundation of the theory of Downloaded from academic.oup.com/ptp/article/25/6/901/1861451 by guest on 12 November 2026 point-like systems. As stated in the Introduction, it means a one-parameter series of events x~-.C•) satisfying [x#(:-), x"(•)]=O, associated with possible in- ternal degrees of freedom fa· 2a. Let ". The state is $\phi(x^{\mu},\theta_a,\tau)$, and since" the internal configuration cannot be measured as such ... we may admit negative probabilities for them. Thus, introducing an indefinite metric ... the normalization is given by "$\int\phi^{*}\eta\phi\,d^{3}x\,dt\,D\,d\theta=1$ with $\eta$ a $\tau$-independent Hermitian operator acting on internal variables only. Evolution is $\dot\phi^{(S)}=-iH^{(S)}\phi^{(S)}/\hbar$ with $\eta H=H^{\dagger}\eta$, necessary in order that the norm be conserved; a conserved quantity is one commuting with $H$. </p>
+<h3 id="mass-as-an-operator">Mass as an operator</h3>
+<p>"ctor) be- comes a dynamical quantity of the system with its possible eigenspectrum, leading to un- certainty relations between rest mass value and space-time localization." The two group invariants of the inhomogeneous Lorentz group from $p_{\mu}$ and $J_{\mu\nu}$ alone are $m$ and the spin $\Omega=w_{\mu}^{2}$ with $w^{\mu}=\widetilde{J^{\mu\nu}}p_{\nu}/m$; "Since we know that we can form only two such invariants ( 4') and (51) as far as we use the basic dynamical quan- tities p,." "as far as we use the basic dynamical quan- tities p,. and J~'" alone, the other invariant quantities, if any, must be constructed * The case with m=O needs special consideration. Internal Degrees of Freedom and Elementary Particles.". Hence the list of requirements for a quantity to be identified with isospin or hypercharge: self-adjoint; invariant, hence commuting with all $p_{\mu}$ and $J_{\mu\nu}$; conserved for a closed system; obeying the right algebra, $[T^{(r)},T^{(s)}]=i\epsilon_{rst}T^{(t)}$, with hypercharge and baryon number commuting with the isospin and with each other; and having discrete spectra, with" the eigenvalues of the rest mass $m$ need to agree qualitatively with the empirical mass spectrum ". </p>
+<h3 id="zitterbewegung-and-the-proper-centre">Zitterbewegung, and the proper centre</h3>
+<p>The internal tensor splits as $J_{\mu\nu}=S_{\mu\nu}+x_{[\mu}p_{\nu]}$, and $S_{\mu\nu}$ further as $$ S_{\mu\nu}=\frac{1}{m}w_{[\mu}p_{\nu]}+\frac{1}{2}\epsilon_{\mu\nu\rho\sigma}r^{\rho}p^{\sigma}, \qquad r^{\mu}=\frac{\tilde S^{\mu\nu}p_{\nu}}{m^{2}}, $$"which represents the radius vector of the Zitterbewegung". The conservation law becomes $\dot y_{[\mu}p_{\nu]}+\dot S_{\mu\nu}=0$ with $y^{\mu}=x^{\mu}-r^{\mu}$, the proper center of mass of the system, which is the position that excludes from $x^{\mu}$ the Zitterbewegung $r_{\mu}$, and both terms are separately conserved. Crucially, the components of $r_{\mu}$ (and so of $y_{\mu}$) are not mutually commuting in contrast with those of $x_{\mu}$. Two scalars follow, $\phi=\frac{1}{2}(\Omega-m^{2}\Lambda)$ and $\chi=-m\,w_{\mu}r^{\mu}$, the non-orthogonality between spin and Zitterbewegung, which he calls internal chirality; $\Lambda$ is the squared radius of the Zitterbewegung. </p>
+<h3 id="the-velocity-and-the-classification">The velocity, and the classification</h3>
+<p>$v^{\mu}=dx^{\mu}/d\tau$ is a new basic variable with $[v_{\mu},p_{\nu}]=0$ and $[v_{\mu},x_{\nu}]=i\hbar\,h_{\mu\nu}$, the relation (89) means that $h_{\mu\nu}$ is a symmetric tensor, while the antisymmetric part measures the failure of the velocity to be a pure translation. Three criteria follow: whether $h_{\mu\nu}$ vanishes, whether the antisymmetric part vanishes, and whether the velocity commutes with the position. For the "normal class, $p\equiv-v_{\mu}^{2}$ is an absolute invariant", takes eigenvalues 1 and 0, and is "regarded to represent baryon number". Systems of the first kind satisfy $[v_{\mu},x_{\nu}]=0$, and their internal variables $(S_{\mu\nu},v^{\mu})$ yield two further vectors on which the kinematics closes. He stresses that $v^{\mu}$ and $p^{\mu}$ "are essentially different", so states with $v^{2}=0$ but $m\neq0$ occur. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-an-operator-whose-spectrum-is-the-particle-spectrum-and-localisation-in-space-costs-mass-uncertainty">1. Mass is an operator whose spectrum is the particle spectrum, and localisation in space costs mass uncertainty</h3>
+<p><strong>The idea.</strong> $m^{2}=-p_{\mu}^{2}$ is a dynamical quantity of the system rather than a parameter, so a state need not have definite mass; there are uncertainty relations between the mass value and space-time localisation, and the empirical mass spectrum is the spectrum of an operator. </p>
+<p><strong>What it would add.</strong> A mechanism for what the corpus leaves as a parameter. <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>) distinguishes two masses structurally; neither it nor the shell's measure article says where a discrete set of masses comes from. Here the eigenvalue condition on $H$ <em>is</em> the mass condition, and $\eta H=H^{\dagger}\eta$ is the only extra ingredient. </p>
+<p><strong>Where it lands.</strong> The two-kinds-of-mass article, as a third kind, and <em>The N-Norm, the Mass Angle and the Cone</em> (<code>articles_physics/the-n-norm-mass-angle-and-the-cone.md</code>). </p>
+<p><strong>What stands in the way.</strong> The corpus's field has a fixed mass parameter; making mass dynamical means giving the field an internal configuration space, a new structure rather than a translation. Ranked first because it answers a question the corpus poses. </p>
+<h3 id="2-an-indefinite-metric-on-internal-degrees-is-not-a-defect-it-is-what-makes-the-internal-configuration-unmeasurable">2. An indefinite metric on internal degrees is not a defect: it is what makes the internal configuration unmeasurable</h3>
+<p><strong>The idea.</strong> Negative probabilities are admitted for the internal configuration only, because $\theta_a$"cannot be measured as such". The metric $\eta$ acts on internal variables alone, is $\tau$-independent, and the self-adjointness condition $\eta H=H^{\dagger}\eta$ makes the norm conserved and the expectations real. </p>
+<p><strong>What it would add.</strong> The precise version of the corpus's indefinite-metric discussion. <em>The K-Norm and the Indefinite Structure</em> (<code>articles_physics/the-k-norm-and-the-indefinite-structure.md</code>) and <em>The Group of Invertibles, the Cone and the Orders</em> (<code>articles_physics/the-group-of-invertibles-the-cone-and-the-orders.md</code>) treat indefiniteness as an algebraic order; here it is localised — the external sector stays positive, the internal does not, and the split says what can be measured. </p>
+<p><strong>Where it lands.</strong> The indefinite-metric article, as the physical reading of the split, and the cone article's §<em>Two Orders</em>. </p>
+<p><strong>What stands in the way.</strong> The corpus's indefinite directions are nilpotent and tied to the light cone, not to a separate internal factor; identifying "internal" with the directions the cone's interior does not order needs care.</p>
+<h3 id="3-zitterbewegung-is-the-offset-between-the-position-and-the-proper-centre-and-only-the-offsets-components-fail-to-commute">3. Zitterbewegung is the offset between the position and the proper centre, and only the offset's components fail to commute</h3>
+<p><strong>The idea.</strong> $S_{\mu\nu}$ splits into a constant spin term and an orbital term with radius $r^{\mu}=\tilde S^{\mu\nu}p_{\nu}/m^{2}$; the proper centre $y^{\mu}=x^{\mu}-r^{\mu}$ carries the conserved orbital part, and while the $x$'s commute with each other, the $r$'s do not. The trembling is therefore not motion of a point but the non-commutativity of the radius vector.</p>
+<p><strong>What it would add.</strong> A structural account of an effect the corpus mentions only by name. <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> (<code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>) and <em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>) treat the spin tensor's decomposition but not the position offset.</p>
+<p><strong>Where it lands.</strong> The eigenspinor article, as the kinematics of the offset, and the angular-momentum article's decomposition section.</p>
+<p><strong>What stands in the way.</strong> The construction needs $m\neq0$ and a distinguished rest frame; the corpus's massless sector has no analogue, so the result applies to the massive sector only.</p>
+<h3 id="4-three-invariants-from">4. Three invariants from</h3>
+<p>$(p,v,S)$ alone, and a checklist for calling one of them isospin</p>
+<p><strong>The idea.</strong> The velocity $v^{\mu}$ supplies quantities that $p$ and $J$ cannot, and for systems of the first kind the set $(S_{\mu\nu},v^{\mu})$ yields $H^{\mu}=S^{\mu\nu}v_{\nu}$, $K^{\mu}=\frac{1}{2}\{S^{\mu\nu},v_{\nu}\}$ and the scalar $\chi=-m\,w_{\mu}r^{\mu}$, from which three commuting self-adjoint invariants can be built. The paper states the five requirements such a quantity must meet — self-adjoint, invariant, conserved, correct algebra, discrete spectrum — before it may be named isospin or hypercharge.</p>
+<p><strong>What it would add.</strong> A criterion where the corpus has a hope. <em>Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</em> (<code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>) explains the algebraic ceiling; this paper says what a <em>candidate</em> second internal quantum number must satisfy, whatever the algebra.</p>
+<p><strong>Where it lands.</strong> That article's close, as the physical requirements list.</p>
+<p><strong>What stands in the way.</strong> The invariants are asserted to exist for systems of the first kind and not exhibited for a definite model; the import is the criterion, not the construction.</p>
+<p>The remainder, one line each. That $p=-v_{\mu}^{2}$ takes only 1 and 0, the value read as baryon number, is a normalisation convention for $\tau$ elevated to a quantum number. That Dirac and Kemmer particles are the non-classical special cases with no internal degrees beyond $v^{\mu}$ is the paper's own comment on the corpus's Dirac sector.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

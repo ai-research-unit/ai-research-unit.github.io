@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standard Model Particle Spectrum from Scalar Fields on C∧18 — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 3 Standard Model particle spectrum from…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="standard-model-particle-spectrum-from-scalar-fields-on-c18"><strong>Standard Model Particle Spectrum from Scalar Fields on C∧18</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (book chapter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0805.3819v20 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. N. C. Pfeifer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v20</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>A Classical Analogue to the Standard Model and General Relativity, Chapter 3</td>
+</tr>
+<tr>
+<td>length</td>
+<td>46 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/A Classical Analogue to the Standard Model, Chapter 3 Standard Model particle spectrum from scalar fields on C∧18 0805.3819v20-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 3 Standard Model particle spectrum from scalar fields on C∧18 0805.3819v20.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 3 Standard Model particle spectrum from scalar fields on C∧18 0805.3819v20.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Introduces $C^{\wedge18}$, the smallest member of the $C^{\wedge2n}$ series whose spectrum resembles the Standard Model, and shows that once all gaugeable degrees of freedom are fixed the particle content matches the Standard Model's plus two weakly interacting bosons and a ninth gluon, with a qualitatively appropriate Lagrangian.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"ces C∧18 , the smallest member of this series which is capable of hosting a quasiparticle spectrum analogous to the Standard Model. Once all gaugeable degrees of freedom have been fixed, the particle spectrum of C∧18 is seen to resemble the Standard Model plus two additional weakly interacting bosons and a ninth gluon. 3: 1 Introduction"</p>
+<h3 id="the-three-extra-bosons">The three extra bosons</h3>
+<p>"The particles of the Standard Model are supplemented by three additional bosons, denoted Gµ , G†µ , and Nµ . Of these, interactions"</p>
+<h3 id="their-status">Their status</h3>
+<p>"nd Nµ . Of these, interactions involving Gµ and G†µ resemble a right-handed weak interaction but are suppressed by a factor of O(107 ) (see Sec." "and under appropriate circumstances may be eliminated entirely (Sec. 7: 3." The $N$ boson "behaving as a ninth gluon with no net colour or charge. Nevertheless" "has subtle effects detectable in the higher-order particle mass calculations of Chapter 6. As an additional neutral current, it is reassuring to note that it is not flavour-changing. Although"</p>
+<h3 id="the-construction">The construction</h3>
+<p>"uge, a model comprising free real scalar fields on C∧18 exhibits an emergent particle spectrum analogous to that of the Standard Model, along with a qualitatively appropriate Lagrangian." The model is a classical analogue: free scalars on the anticommuting manifold look like an interacting gauge theory after the mapping to $\mathbb{R}^{1,3}$.</p>
+<h3 id="the-group-decomposition">The group decomposition</h3>
+<p>The appendix uses $A\simeq B\otimes C\Rightarrow T A\simeq T B\otimes T C$ (paper 3.111–3.112) so that a tangent-space element factors as $e^{ia^i a_i}=e^{ib^i b_i}e^{ic^j c_j}$ (paper 3.114), which is how the gauge group of the analogue is assembled from the factors of the manifold's symmetry.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-gauge-group-is-a-product-so-one-factor-can-be-dropped">1. The gauge group is a product, so one factor can be dropped</h3>
+<p><strong>The idea.</strong> The extra SU(2)-like factor is suppressed by $O(10^7)$ and can be removed by a choice of gauge. A model whose group is a product can be truncated to the observed group without breaking anything, because the unwanted factor is a separate factor and not a broken symmetry. This is a <strong>reading</strong> with a concrete number attached.</p>
+<p><strong>What it would add.</strong> A worked case of an unwanted gauge factor being projected out rather than made heavy, which the corpus's electroweak articles do not consider.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the group content.</p>
+<p><strong>What stands in the way.</strong> The corpus derives its group from the algebra's structure and cannot add or remove factors by gauge choice; the mechanism is available only to a model that starts with a product.</p>
+<h3 id="2-a-ninth-gluon-with-no-colour">2. A ninth gluon with no colour</h3>
+<p><strong>The idea.</strong> The $N_\mu$ boson is colour-neutral, flavour-neutral, and still affects masses at higher order. An extra neutral current that is not flavour-changing is compatible with experiment, which is not true of a generic extra $Z'$.</p>
+<p><strong>What it would add.</strong> A counterexample to the corpus's implicit assumption that any extra neutral boson must show up in flavour-changing processes; here the quantum numbers forbid it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on extra neutral currents.</p>
+<p><strong>What stands in the way.</strong> The corpus has no flavour structure beyond the generations, so "not flavour-changing" cannot be stated as a constraint inside the algebra.</p>
+<p>This is a forty-six page chapter; the $C^{\wedge18}$ construction, the gauge fixing, the particle spectrum and the three extra bosons are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

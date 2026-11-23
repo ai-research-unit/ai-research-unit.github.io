@@ -93,7 +93,7 @@ $$</p>
 <p><strong>(e)</strong> The splitting field of $x^q - x$ over $\mathbb{F}_p$, where $q = p^m$, is the field $\mathbb{F}_q$.</p>
 <h3 id="existence">Existence</h3>
 <p><strong>Theorem.</strong> Every nonconstant $f \in F[x]$ has a splitting field over $F$.</p>
-<p><strong>Proof.</strong> Induct on $n = \deg f$. For $n = 1$ take $K = F$. For $n > 1$, let $p$ be a monic irreducible factor of $f$ and put $F_1 = F[x]/(p)$. Since $p$ is irreducible, $F_1$ is a field in which the class of $x$ is a root $\alpha_1$ of $p$ and hence of $f$. Write $f = (x - \alpha_1) g$ with $g \in F_1[x]$ of degree $n - 1$. By induction $g$ has a splitting field $K$ over $F_1$; then $K$ splits $f$ into linear factors. Replacing $K$ by the subfield generated over $F$ by the roots of $f$ (which is closed under the operations, hence a field) gives a splitting field as defined.</p>
+<p><strong>Proof.</strong> Induct on $n = \deg f$. For $n = 1$ take $K = F$. For $n &gt; 1$, let $p$ be a monic irreducible factor of $f$ and put $F_1 = F[x]/(p)$. Since $p$ is irreducible, $F_1$ is a field in which the class of $x$ is a root $\alpha_1$ of $p$ and hence of $f$. Write $f = (x - \alpha_1) g$ with $g \in F_1[x]$ of degree $n - 1$. By induction $g$ has a splitting field $K$ over $F_1$; then $K$ splits $f$ into linear factors. Replacing $K$ by the subfield generated over $F$ by the roots of $f$ (which is closed under the operations, hence a field) gives a splitting field as defined.</p>
 <p>The same argument applies to a finite family of polynomials, adjoining roots of the irreducible factors one at a time; and a family of arbitrary cardinality is handled by taking a maximal subfamily each finite part of which has a splitting field, a Zorn argument that is used again for the algebraic closure.</p>
 <p><strong>Corollary (degree bound).</strong> If $\deg f = n$, then $[K:F] \leq n!$ for any splitting field $K$ of $f$ over $F$.</p>
 <p><strong>Proof.</strong> In the induction above, $[F_1:F] = \deg p \leq n$ and $g$ has degree $n-1$, so the bound is $[K:F] \leq n \cdot (n-1)! = n!$.</p>
@@ -139,9 +139,9 @@ $$</p>
 <p>$$
 \lvert \operatorname{Hom}_F(K, \overline{F}) \rvert \leq \prod_{i=1}^{n} [K_i : K_{i-1}] = [K:F],
 $$</p>
-<p>with equality exactly when each $\alpha_i$ is separable over $K_{i-1}$. If $K/F$ is separable then so is each $K_i/K_{i-1}$, so every factor is an equality and the count is $[K:F]$. Conversely, if $K/F$ is not separable, fix $\alpha \in K$ inseparable over $F$; then $\lvert \operatorname{Hom}_F(F(\alpha), \overline{F}) \rvert < [F(\alpha):F]$, while every $F$-embedding of $K$ restricts to one of $F(\alpha)$ and each such restriction has at most $[K:F(\alpha)]$ extensions, so</p>
+<p>with equality exactly when each $\alpha_i$ is separable over $K_{i-1}$. If $K/F$ is separable then so is each $K_i/K_{i-1}$, so every factor is an equality and the count is $[K:F]$. Conversely, if $K/F$ is not separable, fix $\alpha \in K$ inseparable over $F$; then $\lvert \operatorname{Hom}_F(F(\alpha), \overline{F}) \rvert &lt; [F(\alpha):F]$, while every $F$-embedding of $K$ restricts to one of $F(\alpha)$ and each such restriction has at most $[K:F(\alpha)]$ extensions, so</p>
 <p>$$
-\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert \leq \lvert \operatorname{Hom}_F(F(\alpha), \overline{F}) \rvert \cdot [K:F(\alpha)] < [F(\alpha):F]\,[K:F(\alpha)] = [K:F].
+\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert \leq \lvert \operatorname{Hom}_F(F(\alpha), \overline{F}) \rvert \cdot [K:F(\alpha)] &lt; [F(\alpha):F]\,[K:F(\alpha)] = [K:F].
 $$</p>
 <p>Hence the inequality is strict, and equality holds if and only if $K/F$ is separable.</p>
 <p><strong>Corollary.</strong> A finite extension $K/F$ is separable if and only if $\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert = [K:F]$. A finite extension is Galois, in the sense, exactly when it is normal and separable.</p>
@@ -150,7 +150,7 @@ $$</p>
 <h3 id="characterization">Characterization</h3>
 <p><strong>Definition.</strong> A field $F$ is <strong>perfect</strong> if every irreducible polynomial over $F$ is separable; equivalently, if every algebraic extension of $F$ is separable.</p>
 <p><strong>Theorem.</strong> A field $F$ is perfect if and only if $\operatorname{char} F = 0$, or $\operatorname{char} F = p$ and the Frobenius map $\varphi(x) = x^p$ is surjective.</p>
-<p><strong>Proof.</strong> If $\operatorname{char} F = 0$ then every irreducible polynomial has nonzero derivative, hence is separable. Let $\operatorname{char} F = p$ and suppose first that $\varphi$ is surjective. If $f$ is irreducible and inseparable, then $\frac{df}{dx} = 0$, so $f(x) = g(x^p)$; writing $g = \sum_i b_i x^i$ and $b_i = a_i^p$ by surjectivity, the freshman's dream (<em>Fields</em>) gives $f(x) = \sum_i a_i^p x^{pi} = \left(\sum_i a_i x^i\right)^p$, contradicting irreducibility. Hence every irreducible is separable. Conversely if $\varphi$ is not surjective, choose $a \in F$ that is not a $p$-th power. The polynomial $x^p - a$ has derivative $p x^{p-1} = 0$, so it is inseparable; and it is irreducible: over a splitting field $x^p - a = (x - \alpha)^p$ with $\alpha^p = a$, so a factor of degree $k$ with $0 < k < p$ would be $(x-\alpha)^k$ up to a constant, with constant term $\pm\alpha^k \in F$; choosing integers $u, v$ with $uk + vp = 1$ gives $\alpha = (\alpha^k)^u (\alpha^p)^v \in F$ and hence $a = \alpha^p \in F^p$, a contradiction (the standard argument that $x^p - a$ is irreducible when $a \notin F^p$). Hence $F$ is not perfect.</p>
+<p><strong>Proof.</strong> If $\operatorname{char} F = 0$ then every irreducible polynomial has nonzero derivative, hence is separable. Let $\operatorname{char} F = p$ and suppose first that $\varphi$ is surjective. If $f$ is irreducible and inseparable, then $\frac{df}{dx} = 0$, so $f(x) = g(x^p)$; writing $g = \sum_i b_i x^i$ and $b_i = a_i^p$ by surjectivity, the freshman's dream (<em>Fields</em>) gives $f(x) = \sum_i a_i^p x^{pi} = \left(\sum_i a_i x^i\right)^p$, contradicting irreducibility. Hence every irreducible is separable. Conversely if $\varphi$ is not surjective, choose $a \in F$ that is not a $p$-th power. The polynomial $x^p - a$ has derivative $p x^{p-1} = 0$, so it is inseparable; and it is irreducible: over a splitting field $x^p - a = (x - \alpha)^p$ with $\alpha^p = a$, so a factor of degree $k$ with $0 &lt; k &lt; p$ would be $(x-\alpha)^k$ up to a constant, with constant term $\pm\alpha^k \in F$; choosing integers $u, v$ with $uk + vp = 1$ gives $\alpha = (\alpha^k)^u (\alpha^p)^v \in F$ and hence $a = \alpha^p \in F^p$, a contradiction (the standard argument that $x^p - a$ is irreducible when $a \notin F^p$). Hence $F$ is not perfect.</p>
 <h3 id="examples_1">Examples</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -178,7 +178,7 @@ $$</p>
 <td>any algebraically closed field</td>
 <td>any</td>
 <td>yes</td>
-<td>no irreducible polynomial of degree $> 1$</td>
+<td>no irreducible polynomial of degree $&gt; 1$</td>
 </tr>
 <tr>
 <td>$\overline{\mathbb{F}_p}$</td>
@@ -224,7 +224,7 @@ If $\sigma(\beta) = \tau(\beta)$ then the equality would force $\sigma(\alpha) =
 $$
 \gamma_p = \frac{u(x,y)^p}{v(x,y)^p} = \frac{u(x^p, y^p)}{v(x^p, y^p)} \in \mathbb{F}_p(x^p, y^p) = F .
 $$
-Hence $\gamma$ is a root of $X^p - \gamma_p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 > p$. No single element generates $K$, and $K/F$ is not simple.</p>
+Hence $\gamma$ is a root of $X^p - \gamma_p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 &gt; p$. No single element generates $K$, and $K/F$ is not simple.</p>
 <hr />
 <h2 id="algebraic-closure">Algebraic Closure</h2>
 <h3 id="definition-and-equivalent-conditions_1">Definition and Equivalent Conditions</h3>

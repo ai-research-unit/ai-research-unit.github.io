@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massive Klein–Gordon equation from a BEC-based analogue spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive Klein-Gordon equation from a BEC-based analogue spacetime -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="massive-kleingordon-equation-from-a-bec-based-analogue-spacetime"><strong>Massive Klein–Gordon equation from a BEC-based analogue spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0506029v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 13 September 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Massive Klein-Gordon equation from a BEC-based analogue spacetime - gr-qc_0506029-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive Klein-Gordon equation from a BEC-based analogue spacetime - gr-qc_0506029.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive Klein-Gordon equation from a BEC-based analogue spacetime - gr-qc_0506029.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Earlier analogue models simulated massless fields. This paper adds a mass. The system is a two-component Bose–Einstein condensate with a laser coupling the two hyperfine states. The spectrum contains two phonon modes that mix, a phenomenon the authors call refringence. They derive the conditions under which the modes decouple, and once decoupled each obeys a massive Klein–Gordon equation in a curved effective geometry. The mass comes from the laser coupling; without it, no mass term appears.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap-being-filled">The gap being filled</h3>
+<p>"Until now it has only been possible to simulate photons, (generally speaking, massless relativistic particles), propagating through a curved space-time."</p>
+<h3 id="the-result">The result</h3>
+<p>"In the present article a two-species BEC is used to extend the class of equations that can be simulated to the full curved-space massive Klein–Gordon equation in (3+1) dimensions."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"In the language of the BEC community this corresponds to a specific and technologically interesting way of giving a mass to the phonon."</p>
+<h3 id="the-spectrum">The spectrum</h3>
+<p>"This system exhibits a complicated spectrum of normal mode excitations, which can be viewed as two interacting phonon modes that exhibit the phenomenon of 'refringence'."</p>
+<h3 id="the-decoupling-conditions">The decoupling conditions</h3>
+<p>"We study the conditions required to make these two phonon modes decouple. Once decoupled, the two distinct phonons"</p>
+<h3 id="the-role-of-the-laser">The role of the laser</h3>
+<p>"Without the laser coupling $\lambda$, no mass term is generated, which is consistent with the analysis in reference [9]."</p>
+<h3 id="the-final-constraint">The final constraint</h3>
+<p>"The final constraint to decouple the equation for the two phase perturbations is now easily seen to be $\rho_{A0}=\rho_{B0}$."</p>
+<h3 id="the-audience">The audience</h3>
+<p>"the calculation presented in this article is of interest to two separate communities"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-from-a-coupling-not-from-a-parameter">1. Mass from a coupling, not from a parameter</h3>
+<p><strong>The idea.</strong> The phonon mass is produced by an external coupling, so it is a property of the medium rather than of the field.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats mass as a parameter in a dispersion relation. Here mass has an origin that can be switched off, which is a distinction the target does not draw.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the origin of mass.</p>
+<p><strong>What stands in the way.</strong> The origin is specific to the condensate. Ranked first, because it gives the massless limit a physical switch.</p>
+<h3 id="2-two-modes-that-mix">2. Two modes that mix</h3>
+<p><strong>The idea.</strong> Two phonons share a medium and their mixing is called refringence.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> builds emergent geometry from an algebraic structure. A medium supporting two distinct emergent metrics is a case the target's single-metric picture does not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergent geometry.</p>
+<p><strong>What stands in the way.</strong> The bimetric case needs a second species in the algebra. Ranked second.</p>
+<h3 id="3-emergent-geometry-with-a-tunable-mass">3. Emergent geometry with a tunable mass</h3>
+<p><strong>The idea.</strong> A laboratory system realises curved-space field equations with adjustable parameters.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what could test the framework. A tabletop realisation of an emergent metric is the closest thing to a test protocol, and the target should say whether it could be simulated this way.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The condensed matter system is not the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

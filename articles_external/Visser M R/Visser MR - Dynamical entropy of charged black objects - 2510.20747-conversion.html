@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamical entropy of charged black objects — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Dynamical entropy of charged black objects - 2510.20747.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dynamical-entropy-of-charged-black-objects"><strong>Dynamical entropy of charged black objects</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2510.20747v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Manus R. Visser, Zihan Yan</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 27 March 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>60 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Dynamical entropy of charged black objects - 2510.20747-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Dynamical entropy of charged black objects - 2510.20747.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Dynamical entropy of charged black objects - 2510.20747.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Develops a general framework for the electromagnetic potential–charge terms in the first law of black hole mechanics, for dynamical first-order perturbations of stationary black objects with possibly non-compact bifurcate Killing horizons. Working in covariant phase space for generic diffeomorphism-invariant theories with non-minimally coupled abelian $p$-form gauge fields, it derives both the comparison and the physical-process versions of the first law. The gauge field's pullback to the horizon may diverge while its field strength stays smooth, and the resulting potential–charge pairs are gauge invariant. Magnetic charges are included by a bundle-covariant prescription that fixes the Jacobson–Kang–Myers ambiguity, and electric and magnetic charges are tied to non-trivial cycles of the horizon cross-section, whose Betti numbers count the independent pairs. The dynamical entropy is identified with the gauge-invariant part of the improved Noether charge.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scope">The scope</h3>
+<p>"We develop a general framework for electromagnetic potential-charge contributions to the first law of black hole mechanics, applicable to dynamical first-order perturbations of stationary black objects with possibly non-compact bifurcate Killing horizons. Working in the covariant phase space formalism, we derive both comparison and physical process versions of the first law. We consider generic diffeomorphism-invariant theories of gravity in $D$ spacetime dimensions, containing non-minimally coupled abelian $p$-form gauge fields."</p>
+<h3 id="the-non-smoothness">The non-smoothness</h3>
+<p>"The pullback of the gauge field to the horizon is allowed to diverge while its field strength remains smooth, yielding gauge-invariant electric potential-charge pairs in the first law." The divergence is not a defect to be removed; it is what makes the pair well defined.</p>
+<h3 id="the-topological-counting">The topological counting</h3>
+<p>"Electric and magnetic charges are, respectively, associated with non-trivial $(D-p-1)$- and $(p+1)$-cycles of the horizon cross-section, whose homology classes determine the number of independent potential-charge pairs through the Betti numbers $b_{D-p-1}$ and $b_{p+1}$."</p>
+<h3 id="the-entropy">The entropy</h3>
+<p>"the dynamical gravitational entropy entering the first law is identified with the gauge-invariant part of the improved Noether charge, giving a gauge-invariant extension of the recent proposal by Hollands, Wald and Zhang."</p>
+<h3 id="the-examples">The examples</h3>
+<p>"dyonic AdS black holes, dipole black rings, and charged black branes." For dipole rings the non-stationary comparison first law takes the form</p>
+<p>$$T\,\delta S_{\text{dyn}}=\delta M-\Omega\,\delta J-\Phi\,\delta Q, \qquad (paper\ VII.26)$$</p>
+<p>with $S_{\text{dyn}}=\frac{1}{4G}(1-v\partial_v)A$ for general relativity — the same affine-parameter correction as in the uncharged case.</p>
+<h3 id="the-moral-about-cohomology">The moral about cohomology</h3>
+<p>"we emphasise that, due to Poincaré duality between cohomology" classes, the count of independent charges is fixed by the horizon's topology and not by the details of the solution.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-number-of-charges-is-a-betti-number">1. The number of charges is a Betti number</h3>
+<p><strong>The idea.</strong> How many independent potential–charge pairs a horizon carries is determined by the homology of its cross-section, via $b_{D-p-1}$ and $b_{p+1}$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> counts charges explicitly for each solution. A topological origin for the count is stronger: it says which terms <em>must</em> appear in a first law for a given horizon topology, independent of the metric. The corpus has no such statement, and it is exactly the sort of structural result the article's Smarr section generalises towards.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, the Smarr section.</p>
+<p><strong>What stands in the way.</strong> It needs a horizon cross-section with non-trivial cycles and the covariant phase space; the corpus's horizon is a sphere. Ranked second.</p>
+<h3 id="2-a-divergent-pullback-with-a-smooth-field-strength">2. A divergent pullback with a smooth field strength</h3>
+<p><strong>The idea.</strong> A quantity that diverges at the horizon can still yield an invariant, because the divergence is pure gauge and the field strength is smooth.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues divergences as failures. A case where a divergence is harmless because it is gauge, and cancels in the invariant combination, is a distinct category: a divergence that is not an obstruction.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a category. Ranked first, because it corrects an over-broad entry in the catalogue.</p>
+<h3 id="3-same-entropy-correction-more-charges">3. Same entropy correction, more charges</h3>
+<p><strong>The idea.</strong> The dynamical entropy is still $\frac{1}{4G}(1-v\partial_v)A$ when charge, rotation and dipole charge are all present; the extra terms appear only on the energy side of the first law.</p>
+<p><strong>What it would add.</strong> It isolates the entropy correction as universal and puts all solution-dependence into the energy terms. That separation of universal from solution-specific is a pattern the corpus's <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> uses but never states as a principle.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is established to first order in perturbation only. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

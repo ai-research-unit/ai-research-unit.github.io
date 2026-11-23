@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics: Supplements to Previous Notes 1 — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="subsidiary-conditions-in-the-phase-space-representation-of-quantum-mechanics-supplements-to-previous-notes-1"><strong>Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics: Supplements to Previous Notes 1</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>10</strong> (1953) 122–124, No. 1, July 1953, Letters to the Editor; dated 13 July 1953</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics: Supplements to Previous Notes 1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics: Supplements to Previous Notes 1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Subsidiary Conditions in the Phase-space Representation of Quantum Mechanics: Supplements to Previous Notes 1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The preliminary announcement of the purity conditions that the 1954 paper proves and applies. It states the three conditions that make a phase-space distribution a state at all — reality, normalisation, and the positivity of averages — and then the nine real conditions, six symmetric and three antisymmetric, that cut the set of states down to the pure ones. It gives the projected forms, including the dispersion-tensor relation and the recursion for the third moments. Read on its own it is a list; read with the 1954 paper it is the concise statement of the criterion, and its one distinctive move is the formulation of positivity as a condition on <em>averages</em> rather than on the function.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="three-conditions-for-a-state">Three conditions for a state</h3>
+<p>A mixed state is represented by a distribution $f(x,p)$ derived from the density matrix by the Wigner transform, subject to</p>
+<p>$$
+f(x,p)\ \text{real},
+\qquad
+\int f\,dx\,dp=1,
+\qquad
+\langle A^{2}\rangle=\int A(x,p)^{2}f(x,p)\,dx\,dp\geq0
+$$</p>
+<p>for every real dynamical quantity $A$, "tself is P(X)=V(XP)dP ' (15) not neces~arily positive everywhere. Conversely, any distribution function .". <strong>The third is the formulation to notice</strong>: positivity is imposed on the <em>averages</em>, not on the function, which is exactly what allows $f$ to be negative. Conversely, any distribution function $f(x,p)$, satisfying (5), (6), and (7), corresponds to a mixed state.</p>
+<h3 id="purity">Purity</h3>
+<p>The pure-state condition is $\rho^{2}=\rho$, brought to the local form</p>
+<p>$$
+\frac{\partial\rho}{\partial x_{i}}\frac{\partial\rho}{\partial x_{k}}-\rho\frac{\partial^{2}\rho}{\partial x_{i}\partial x_{k}}=0
+\qquad (i,k=1,2,3),
+$$</p>
+<p>"10) be satisfied for every i and (8i=8/8x,;, ~P,;8j8"=.PiOjO,, c.)c k, we get (9) by integrating (10) and by use of (1) .". Transformed to $f$ it becomes nine real relations, six symmetric and three antisymmetric, and the projected forms are</p>
+<p>$$
+p_{ik}-p_{i}p_{k}=-\frac{\hbar^{2}}{4}\frac{\partial^{2}p}{\partial x_{i}\partial x_{k}},
+\qquad
+\frac{\partial p_{i}}{\partial x_{k}}-\frac{\partial p_{k}}{\partial x_{i}}=0 ,
+$$</p>
+<p>with $p(x)=\int f\,dp$ and $p_{i},p_{ik}$ the first and second momentum moments, plus ten relations fixing the third moments.</p>
+<h3 id="what-the-count-means">What the count means</h3>
+<p>Nine conditions on a function of six variables, six of them a symmetric tensor equation and three a vector equation, cut the manifold down to two functions of three variables. The vector equation is the irrotationality of the mean momentum field; the tensor equation fixes the dispersion tensor to the density's curvature.</p>
+<p>"phase space distribution function :f(a,;p) , to be derivable from p by Eq."</p>
+<p>"To represent the pure state condition (10) in 'Fuller accounts will soon be published."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-positivity-of-a-wigner-function-is-positivity-of-averages-and-that-is-the-whole-reason-it-may-be-negative">1. Positivity of a Wigner function is positivity of averages, and that is the whole reason it may be negative</h3>
+<p><strong>The idea.</strong> The state conditions are reality, normalisation, and $\langle A^{2}\rangle\geq0$ for every real $A$ — a condition on the <em>functional</em>, not on the function. The negative regions of $f$ are then not a defect of the representation but a consequence of stating the condition in the only place it can be stated.</p>
+<p><strong>What it would add.</strong> The principled version of a remark. <em>The Wigner Function in Biquaternionic Form</em> (<code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code>) has §<em>What it is, and what it is not</em> and §<em>Negativity, and what it forbids</em>, which say that $f$ is not a probability. Neither says <em>what condition replaces positivity</em>. Takabayasi's answer is exact: the cone of admissible $f$ is defined by $\langle A^{2}\rangle\geq0$, a family of quadratic inequalities indexed by all observables, and purity is a further quadratic equality. <strong>So the set of states is a quadratic cone intersected with quadratic conditions, and no linear condition appears anywhere.</strong> That is the structure of the state space, and it is worth one paragraph in the corpus's Wigner article because it explains why mixtures are convex combinations while pure states are not.</p>
+<p><strong>Where it lands.</strong> The Wigner article, at §<em>What it is, and what it is not</em>; and <em>States, Observables and the Born Weight</em> (<code>articles_physics/states-observables-and-the-born-weight.md</code>) §<em>The State and the Slice</em>, where the corpus describes the set of states as a slice.</p>
+<p><strong>What stands in the way.</strong> The biquaternionic Wigner function takes values in a larger object, so $\langle A^{2}\rangle\geq0$ for all real $A$ has to be replaced by a positivity statement for the algebra's own order, which the corpus has in <em>The Group of Invertibles, the Cone and the Orders</em> (<code>articles_physics/the-group-of-invertibles-the-cone-and-the-orders.md</code>). The translation is therefore available and is not written. Ranked first because the corpus's order theory is exactly the machinery needed.</p>
+<h3 id="2-the-dispersion-tensor-is-pinned-to-the-density-curvature-and-the-third-moments-follow">2. The dispersion tensor is pinned to the density curvature, and the third moments follow</h3>
+<p><strong>The idea.</strong> $p_{ik}-p_{i}p_{k}=-\frac{\hbar^{2}}{4}\partial_{i}\partial_{k}\log p$ and ten further relations for $p_{ijk}$, eighteen for the fourth order, and so on, so every moment above the first is a functional of the density and the mean momentum.</p>
+<p><strong>What it would add.</strong> The moment hierarchy, stated as a <em>determination</em> rather than as an evolution. The corpus's kinetic and hydrodynamic articles work with moments and closure; here the pure-state condition closes the hierarchy exactly and non-perturbatively. Cross-reference only: this is the content of the 1954 paper, and the full conversion is <code>articles_external/Takabayasi/Takabayasi - The Formulation of Quantum Mechanics in terms of Ensemble in Phase Space-conversion.md</code>.</p>
+<p><strong>Where it lands.</strong> The Wigner article, as the purity criterion, and the relativistic Wigner article's expansion section, where truncation at a given order could be compared with exact determination.</p>
+<p><strong>What stands in the way.</strong> Nothing new; the item is listed to record that this note is where the criterion was first printed, three pages, in July 1953.</p>
+<p>The remainder, one line each. The local form of $\rho^{2}=\rho$ and its integration to the global statement is a derivation of the purity condition from the density matrix, superseded by the 1954 paper's treatment. The statement that $\rho$ satisfies the same equation of motion, so the purity condition need only be imposed at one instant, is used in the 1954 paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A new Koide tuple: strange-charm-bottom — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/A new Koide tuple - strange-charm-bottom - 1111.7232.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-new-koide-tuple-strange-charm-bottom"><strong>A new Koide tuple: strange-charm-bottom</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1111.7232 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. Rivero</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 21 November 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/A new Koide tuple - strange-charm-bottom - 1111.7232-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/A new Koide tuple - strange-charm-bottom - 1111.7232.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/A new Koide tuple - strange-charm-bottom - 1111.7232.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Uses the closure as a recursion: given two masses, it fixes the third. Seeded with $m_t$ and $m_b$ the recursion descends through $m_c$, then $m_s$, but the strange mass only lands where it should if the square root of $m_s$ is taken <strong>negative</strong>. That negative sign is legitimate in the phase parametrisation, where the amplitudes are signed. The resulting $(s,c,b)$ tuple is reported to sit almost ninety degrees from the lepton tuple on the cone, and its two parameters — overall scale and phase — are close to three times the leptons' ($M_q=939.65$ MeV against $M_l=313.8$ MeV, $\delta_q=0.666$ against $\delta_l=0.222$). The author then postulates those factor-three relations and produces a full quark spectrum from $m_e$ and $m_\mu$ alone; the numbers come out close but not equal to the descent from the top.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-history-and-the-parametrisation">The history and the parametrisation</h3>
+<p>"The late seventies, the empirical observation of a relationship between Cabibbo angle and $m_d/m_s$ drove an industry of models and textures for the quark mass matrix"; Harari, Haut and Weyers proposed $m_u=0$, $m_d/m_s=(2-\sqrt3)/(2+\sqrt3)$ and a Cabibbo angle of $15^\circ$. Koide's equation arrived from the same direction:</p>
+<p>$$
+\frac{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}{m_e+m_\mu+m_\tau}=\frac32 .
+\tag{paper 2}
+$$</p>
+<p>Foot's reading is quoted as the $45^\circ$ cone, and the working group's phase form of it as</p>
+<p>$$
+m_k=M\left(1+\sqrt2\cos\left(2k\pi/3+\delta_0\right)\right)^2 .
+\tag{paper 3}
+$$</p>
+<p>"more important is that this parametrisation clarifies the use of negative signs in the square roots of the masses. This was important to build the neutrino tuples, and it is relevant for the new tuple that we are presenting in this paper." The two ways to produce a degenerate pair are $\delta=0$ and $\delta=\pm\pi/12$, and Brannen proposed the phase $\pi/12+\delta_l$ for neutrinos, Sheppeard $-\pi/12+\delta_l$.</p>
+<h3 id="the-recursion-and-the-descent">The recursion and the descent</h3>
+<p>Solving the closure for the third mass,</p>
+<p>$$
+m_3\left(m_1,m_2\right)=\left[\left(\sqrt{m_1}+\sqrt{m_2}\right)\left(2-\sqrt{3+6\,\frac{\sqrt{m_1m_2}}{\left(\sqrt{m_1}+\sqrt{m_2}\right)^2}}\right)\right]^2,
+\tag{paper 4}
+$$</p>
+<p>so the closure becomes a map from two masses to a third, with the sign of $\sqrt{m_3}$ still free. Then "we get the descent":</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_t$ (input)</td>
+<td>$172.9$ GeV</td>
+</tr>
+<tr>
+<td>$m_b$ (input)</td>
+<td>$4.19$ GeV</td>
+</tr>
+<tr>
+<td>$m_c(172.9,4.19)$</td>
+<td>$1.356$ GeV</td>
+</tr>
+<tr>
+<td>$m_s(4.19,1.356)$</td>
+<td>$92$ MeV</td>
+</tr>
+<tr>
+<td>$m_u(1.356,0.092)$</td>
+<td>$0.036$ MeV</td>
+</tr>
+<tr>
+<td>$m_d(0.092,0.000036)$</td>
+<td>$5.3$ MeV</td>
+</tr>
+</tbody>
+</table></div>
+<p>"Closer examination shows that the reason of the miss is that in order to meet (2), the value of $\sqrt{s}$ must be taken negative." The $(s,c,b)$ tuple then continues the one Rodejohann and Zhang found for $(c,b,t)$, whose central values give "a LHS value of about $1.495$, very close to the required $1.5$".</p>
+<h3 id="orthogonality-and-the-factor-three">Orthogonality and the factor three</h3>
+<p>"$\left(-\sqrt{m_s},\sqrt{m_c},\sqrt{m_b}\right)$ is on the opposite extreme of Foot's cone respect to $\left(\sqrt{m_\tau},\sqrt{m_\mu},\sqrt{m_e}\right)$, making an angle of almost ninety degrees. Furthermore, the parameters of mass and phase of this quark triple seem to be three times the ones of the charged leptons: we have $M_q=939.65$ MeV and $\delta_q=0.666$, while in the leptons $M_l=313.8$ MeV and $\delta_l=0.222$, about $12.7$ degrees."</p>
+<p>Taking that as input: from $m_e$ and $m_\mu$ one recovers $M_l$ and $\delta_l$, multiplies by three, gets the opposite tuple, and descends:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>inputs</th>
+<th>outputs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e=0.510998910$ MeV, $m_\mu=105.6583668$ MeV</td>
+<td>$m_\tau=1776.96894(7)$ MeV</td>
+</tr>
+<tr>
+<td>$M_q=3M_l$</td>
+<td>$m_s=92.274758(3)$ MeV, $m_c=1359.56428(5)$ MeV, $m_b=4197.57589(15)$ MeV</td>
+</tr>
+<tr>
+<td>$\delta_q=3\delta_l$</td>
+<td>$m_t=173.263947(6)$ GeV, $m_u=0.0356$ MeV, $m_d=5.32$ MeV</td>
+</tr>
+</tbody>
+</table></div>
+<p>"the results are a bit higher respect to the descent from the top quark. Actually, we don't have an argument to keep the factor three between leptons and quarks."</p>
+<h3 id="the-zero-mass-generator-of-foots-cone">The zero-mass generator of Foot's cone</h3>
+<p>"Our purpose is to think of the empirical triples as a rotation from a more symmetrical situation, keeping the sum of the masses (which is the modulus square of Foot's vector) constant." At $\delta=15^\circ$ one mass vanishes:</p>
+<p>$$
+m_{15}=\left(3\left(1+\frac{\sqrt3}{2}\right)M,\ 0,\ 3\left(1-\frac{\sqrt3}{2}\right)M\right),
+\tag{paper 5}
+$$</p>
+<p>"equal to the result (1) above", i.e. to Harari's ratio. "The state in the opposite generatrix of the cone is given by a phase of $-165$ degrees, which is, modulus the $120^\circ$ and sign ambiguities, $45$ degrees, ie three times the other phase." With $M'=3M$ the opposite state</p>
+<p>$$
+m_{45}=\left(\left(1-\frac{\sqrt3}{2}\right)M',\ 4M',\ \left(1+\frac{\sqrt3}{2}\right)M'\right)
+\tag{paper 6}
+$$</p>
+<p>is identified with $(s,b,c)$, and with $M=313.86$ MeV gives $m_s=126.1$, $m_c=1757$, $m_b=3766$ MeV and $m_t=180$ GeV — "just to put numbers in, and see how far we are from the perturbed state". The chain then continues with $m_u=0$ and $m_d=m_s(2-\sqrt3)/(2+\sqrt3)=9.05$ MeV.</p>
+<p>The closing remark: "we raise the suspicion that the matchings are to be interpreted in the infrared or at last at low energy, because the conspicuous role of mass scales usually associated to QCD and chiral symmetry breaking: note the above empirical values for the basic mass of lepton and quark triplets, $313.8$ and $939.7$ MeV."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-signed-amplitudes-and-a-second-tuple-on-the-opposite-generatrix">1. Signed amplitudes, and a second tuple on the opposite generatrix</h3>
+<p><strong>The idea.</strong> A <strong>mechanism-free observation</strong>: the closure with signed square roots admits a family of solutions the unsigned form hides; the quark triple $(s,c,b)$ fits only with $\sqrt{m_s}&lt;0$, and that tuple sits near the antipode of the lepton tuple on Foot's cone.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §2 and §3 use positive amplitudes throughout, so the cone has one chamber and $Q$ has one value. Signing the amplitudes puts the triples on a sphere with four chambers and makes "almost orthogonal" a meaningful statement about two sectors — the corpus has no such geometric relation between its towers. It also explains, cheaply, why the lepton cone's angle is $45^\circ$ and not something else: at $45^\circ$ from the uniform direction the opposite generatrix is at $90^\circ$, so the pair of sectors is orthogonal by construction, not by accident.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, beside the circle, and §9, where the quark towers are listed as failures — $(s,c,b)$ is a success the corpus does not have.</p>
+<p><strong>What stands in the way.</strong> A negative amplitude means a negative mass in the naive reading, and the corpus's derivation of $Q\le1$ assumes positive $m_i$; adopting signs requires restating the bound on the signed sphere. The numerical fit is also at the $10^{-2}$ level, far below the lepton precision, so it is a candidate and not a result.</p>
+<h3 id="2-the-recursion-the-closure-as-a-map-from-two-masses-to-a-third">2. The recursion: the closure as a map from two masses to a third</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $m_3$ is determined by $m_1,m_2$ from the closure, so the relation is a one-dimensional recursion that can be run down a mass ladder, each rung feeding the next.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 asks for a boundary condition rather than a mass formula. This is the opposite direction: a rule that generates masses from two seeds, which would turn the ladder into a dynamical object. The corpus's §9 tests three routes to a fourth rung and all fail; this route needs only two masses per step, so it applies to the existing three rungs and can be checked against them in one line.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §9 and §11.</p>
+<p><strong>What stands in the way.</strong> The descent from $(m_t,m_b)$ produces $m_c=1356$ MeV against $1290$ measured, and $m_s=92$ MeV against $101$—$160$, so the recursion drifts; the author reports the drift as the reason for the negative sign rather than as a failure. Used as a test the rule would be excluded, used as a generator it is a fit with two seeds and three outputs.</p>
+<h3 id="3-the-factor-three-between-the-two-triples-parameters">3. The factor three between the two triples' parameters</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $M_q/M_l=2.99$ and $\delta_q/\delta_l=3.00$, so the quark tuple's scale and phase are three times the leptons'.</p>
+<p><strong>What it would add.</strong> If $M$ is the modulus of the amplitude vector, then $M_q=3M_l$ says the quark amplitude vector is exactly three times longer, which in the corpus's language is a statement about the two towers' radii. A factor 3 across sectors is the kind of statement <code>articles_internal/flavour-research.md</code> §5 is looking for, and it is dimensionless only in the phase, so the phase relation $\delta_q=3\delta_l$ is the better half of the claim.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §5, the fits.</p>
+<p><strong>What stands in the way.</strong> The author gives no argument for the factor and says so. In this parametrisation $M$ is the squared mean amplitude, $M=\left(\frac13\sum\sqrt m\right)^2$, so $M_q=3M_l$ says $\sum\sqrt{m_q}=\sqrt3\sum\sqrt{m_l}$ — a $\sqrt3$ in the amplitudes, which is a restatement of a mass ratio rather than an independent coincidence. The phase relation $\delta_q=3\delta_l$ is the stronger half of the claim, and it is one number against one number.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The reconstruction from $m_e$ and $m_\mu$ alone to a six-quark spectrum is impressive in the telling and rests on two postulates, so it is a fit. The $313.8$ MeV and $939.7$ MeV scales are a remark about QCD, not a derivation. Harari's $m_d/m_s=(2-\sqrt3)/(2+\sqrt3)$ reappearing at $\delta=15^\circ$ is a connection to 1978 model building, stated and not used.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

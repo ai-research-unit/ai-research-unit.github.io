@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schwinger–Dyson Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Schwinger–Dyson_equation.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="schwingerdyson-equation"><strong>Schwinger–Dyson Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Schwinger–Dyson equation</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Schwinger–Dyson_equation-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Schwinger–Dyson_equation.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Schwinger–Dyson_equation.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the Schwinger–Dyson equations: the exact relations between correlation functions that follow from the invariance of the path integral under a shift of the integration variable, their reading as the Euler–Lagrange equations of the quantum theory, the infinite coupled tower they form, and the reason truncation is needed.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-they-are">What they are</h3>
+<p>"The Schwinger–Dyson equations (SDEs) or Dyson–Schwinger equations, named after Julian Schwinger and Freeman Dyson, are general relations between correlation functions in quantum field theories (QFTs)."</p>
+<h3 id="their-status">Their status</h3>
+<p>"They are also referred to as the Euler–Lagrange equations of quantum field theories, since they are the equations of motion corresponding to the Green's function. They form a set of infinitely many functional differential equations, all coupled to each other, sometimes referred to as the infinite tower of SDEs."</p>
+<h3 id="where-they-come-from">Where they come from</h3>
+<p>The derivation is a change of variables: the integral of a total derivative is zero, and that identity for a shifted field gives a relation among Green's functions. The equations are therefore exact and hold order by order; what fails is not the equation but the ability to solve the tower.</p>
+<p>"Schwinger–Dyson equation The Schwinger–Dyson equations (SDEs) or Dyson– Schwinger equations, named after Julian Schwinger and Freeman Dyson, are general relations between correlation functions in quantum field theories (QFTs)."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-symmetry-of-the-measure-gives-an-exact-equation">1. A symmetry of the measure gives an exact equation</h3>
+<p><strong>The idea.</strong> No approximation enters the derivation. The equations are consequences of the invariance of the integral, so a theory's classical equation of motion survives at the quantum level as a relation among correlations, corrected by the extra terms the measure produces. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A way to get exact quantum relations in a formalism that otherwise works order by order, which the corpus's renormalisation article could use in place of the perturbative route.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, at the exact relations.</p>
+<p><strong>What stands in the way.</strong> The derivation needs a path integral with a measure; the corpus has a path-integral article but no measure, and without one the shift argument cannot be written.</p>
+<h3 id="2-the-tower-is-coupled-so-truncation-is-a-physical-assumption">2. The tower is coupled, so truncation is a physical assumption</h3>
+<p><strong>The idea.</strong> Any finite truncation is an approximation whose justification must come from outside the equations. The article's role in practice is as a starting point for a truncation scheme, not as a solvable system. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A caution the corpus's approximation articles could state: a closed set of equations is a modelling choice, not a derivation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.md</code>, at the truncated system.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the definition, the Euler–Lagrange reading, the tower and the derivation by a shift are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

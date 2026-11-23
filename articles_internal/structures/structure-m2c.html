@@ -236,10 +236,10 @@
 <h2 id="the-associative-algebra">The Associative Algebra</h2>
 <p><strong>The algebra is the set of arrays with the entrywise sum and the matrix product, and four matrices span it.</strong></p>
 <p>$$
-E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
-E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
-E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
-E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+E_{11}=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix},\quad
+E_{12}=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix},\quad
+E_{21}=\begin{pmatrix}0&amp;0\\1&amp;0\end{pmatrix},\quad
+E_{22}=\begin{pmatrix}0&amp;0\\0&amp;1\end{pmatrix}.
 $$</p>
 <p><strong>The product rule is the whole multiplication table,</strong></p>
 <p>$$
@@ -248,7 +248,7 @@ $$</p>
 <p>so the algebra is associative, unital, of complex dimension $4$ and real dimension $8$, and non-commutative, because $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$.</p>
 <p><strong>The algebra is not a domain.</strong> $E_{11}E_{22}=0$ and $E_{12}^{2}=0$, so there are zero-divisor pairs and nilpotents at the first opportunity. Invertibility is decided by the determinant, and the determinant is the algebraic norm of the biquaternion carrier.</p>
 <h3 id="the-centre">The Centre</h3>
-<p><strong>The centre is the line of scalars.</strong> Let $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$. From $AE_{11}=E_{11}A$ one reads $b=0$ and $c=0$, so $A$ is diagonal. From $AE_{12}=E_{12}A$ one reads $a=d$. So $A=aI$, and the centre is $\mathbb{C}I$, of dimension $1$.</p>
+<p><strong>The centre is the line of scalars.</strong> Let $A=\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}$. From $AE_{11}=E_{11}A$ one reads $b=0$ and $c=0$, so $A$ is diagonal. From $AE_{12}=E_{12}A$ one reads $a=d$. So $A=aI$, and the centre is $\mathbb{C}I$, of dimension $1$.</p>
 <h3 id="rank-trace-and-determinant">Rank, Trace and Determinant</h3>
 <p><strong>The rank takes three values, and each value has a stratum.</strong></p>
 <div class="table-scroll"><table>
@@ -351,13 +351,13 @@ $$</p>
 <tbody>
 <tr>
 <td>zero second column</td>
-<td>$\begin{pmatrix}a&0\\ c&0\end{pmatrix}=M_2(\mathbb{C})E_{11}$</td>
+<td>$\begin{pmatrix}a&amp;0\\ c&amp;0\end{pmatrix}=M_2(\mathbb{C})E_{11}$</td>
 <td>yes</td>
 <td>no</td>
 </tr>
 <tr>
 <td>zero bottom row</td>
-<td>$\begin{pmatrix}a&b\\ 0&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}a&amp;b\\ 0&amp;0\end{pmatrix}$</td>
 <td>no</td>
 <td>yes</td>
 </tr>
@@ -411,7 +411,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The split case is the diagonal.</strong> The discriminant $(\operatorname{tr}A)^{2}-4\det A$ is nonzero, the minimal polynomial has two distinct roots, and the algebra is $\mathbb{C}\times\mathbb{C}$.</p>
-<p><strong>The local case is the dual numbers.</strong> Take $N=E_{12}$, so $N^{2}=0$ and $\mathbb{C}[N]=\{aI+bN\}$, the matrices $\begin{pmatrix}a&b\\ 0&a\end{pmatrix}$. This is $\mathbb{C}[x]/(x^{2})$, and it contains exactly one nonzero nilpotent line.</p>
+<p><strong>The local case is the dual numbers.</strong> Take $N=E_{12}$, so $N^{2}=0$ and $\mathbb{C}[N]=\{aI+bN\}$, the matrices $\begin{pmatrix}a&amp;b\\ 0&amp;a\end{pmatrix}$. This is $\mathbb{C}[x]/(x^{2})$, and it contains exactly one nonzero nilpotent line.</p>
 <p><strong>A normaliser computation separates the two.</strong> If $g$ is upper triangular and invertible then $gNg^{-1}=(g_{11}/g_{22})N$, so the Borel normalises $\mathbb{C}[N]$, and the Borel has dimension $3$. If $g$ has a nonzero entry in position $(2,1)$ then $gNg^{-1}$ leaves the space $\mathbb{C}\{I,N\}$, as one checks on the entries. So the normaliser of the local class is the Borel. The normaliser of the diagonal class is the monomial group, of dimension $2$.</p>
 <h3 id="maximal-commutative-is-not-cartan">Maximal Commutative Is Not Cartan</h3>
 <p><strong>Only the split class is a Cartan subalgebra of $\mathfrak{gl}_2(\mathbb{C})$.</strong> A Cartan subalgebra is abelian, self-normalising and reductive in the ambient algebra. The diagonal algebra satisfies all three. The dual-number algebra is abelian and maximal commutative, but its normaliser is the Borel, so it is not self-normalising, and it is not a Cartan subalgebra. The distinction matters in the Lie theory: the Cartan subalgebras of $\mathfrak{gl}_2$ form one conjugacy class, the diagonal one, while the maximal commutative subalgebras form two.</p>
@@ -424,7 +424,7 @@ $$</p>
 <p>with $\mathfrak{sl}_2(\mathbb{C})$ the traceless matrices, of dimension $3$. The split is a direct sum of Lie algebras because $I$ is central, and $\mathfrak{sl}_2(\mathbb{C})$ is simple of type $A_1$: its only ideals are $0$ and itself, and $[\mathfrak{sl}_2,\mathfrak{sl}_2]=\mathfrak{sl}_2$.</p>
 <p><strong>The Killing form has rank $3$ and radical the centre.</strong> On the basis $(E_{11},E_{12},E_{21},E_{22})$ the Gram matrix of $\kappa(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ is</p>
 <p>$$
-\begin{pmatrix}2&0&0&-2\\ 0&0&4&0\\ 0&4&0&0\\ -2&0&0&2\end{pmatrix},
+\begin{pmatrix}2&amp;0&amp;0&amp;-2\\ 0&amp;0&amp;4&amp;0\\ 0&amp;4&amp;0&amp;0\\ -2&amp;0&amp;0&amp;2\end{pmatrix},
 $$</p>
 <p>of rank $3$, with kernel spanned by $E_{11}+E_{22}=I$. So $\kappa(I,\cdot)=0$, which is also immediate because $\operatorname{ad}_I=0$, and the radical is exactly the centre. The restriction to $\mathfrak{sl}_2(\mathbb{C})$ is non-degenerate, which is Cartan's criterion for the semisimplicity of the simple part.</p>
 <h3 id="the-root-decomposition">The Root Decomposition</h3>
@@ -473,13 +473,13 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}\{I,N\}$</td>
-<td>$\begin{pmatrix}a&b\\ 0&a\end{pmatrix}$</td>
+<td>$\begin{pmatrix}a&amp;b\\ 0&amp;a\end{pmatrix}$</td>
 <td>$2$</td>
 <td>abelian, not self-normalising</td>
 </tr>
 <tr>
 <td>$\mathbb{C}\{E_{11},E_{21}\}$</td>
-<td>$\begin{pmatrix}a&0\\ c&0\end{pmatrix}$</td>
+<td>$\begin{pmatrix}a&amp;0\\ c&amp;0\end{pmatrix}$</td>
 <td>$2$</td>
 <td>solvable, not abelian</td>
 </tr>
@@ -607,10 +607,10 @@ $$</p>
 <h3 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h3>
 <p><strong>Every invertible matrix is a unitary matrix times a positive Hermitian one.</strong></p>
 <p>$$
-A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}>0,\qquad P=\sqrt{A^{*}A},
+A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}&gt;0,\qquad P=\sqrt{A^{*}A},
 $$</p>
 <p>and the pair is unique because $A$ is invertible. The factor $P$ is the positive square root of $A^{*}A$, and $U=AP^{-1}$ is unitary.</p>
-<p><strong>The decomposition retracts the group onto the compact form.</strong> So $\mathrm{GL}_2(\mathbb{C})\simeq\mathrm{U}(2)$, the fundamental group is $\pi_{1}=\mathbb{Z}$, and the manifold is the product $\mathrm{U}(2)\times\operatorname{Herm}^{>0}_{2}$ of real dimensions $4+4$.</p>
+<p><strong>The decomposition retracts the group onto the compact form.</strong> So $\mathrm{GL}_2(\mathbb{C})\simeq\mathrm{U}(2)$, the fundamental group is $\pi_{1}=\mathbb{Z}$, and the manifold is the product $\mathrm{U}(2)\times\operatorname{Herm}^{&gt;0}_{2}$ of real dimensions $4+4$.</p>
 <p><strong>The compact real form is $\mathrm{U}(2)$, and its determinant-one part is $\mathrm{SU}(2)\cong S^{3}$.</strong> These are real subgroups and not complex ones. Inside $\mathrm{GL}_2(\mathbb{C})$ they form the fixed set of the anti-automorphism $A\mapsto(A^{*})^{-1}$, whose fixed-set equation is $AA^{*}=I$.</p>
 <h3 id="the-automorphisms-and-the-derivations">The Automorphisms and the Derivations</h3>
 <p><strong>The derivations are the traceless matrices.</strong> Every derivation of $M_2(\mathbb{C})$ is inner, $\delta_X(A)=[X,A]$, and the inner derivations $\operatorname{ad}_X$ depend only on the traceless part of $X$, so the space of derivations is $\mathfrak{sl}_2(\mathbb{C})$, of dimension $3$. The coincidence of the dimensions of $\mathrm{PGL}_2$ and $\mathfrak{sl}_2$ is the tangent and the algebra of the same automorphism group.</p>
@@ -700,7 +700,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The first two are complex-linear and the last three are conjugate-linear.</strong> For $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ one has $JA^{\mathsf T}J^{-1}=\operatorname{adj}A$, so the symplectic involution fixes exactly the scalars and acts as $-1$ on $\mathfrak{sl}_2(\mathbb{C})$. The two conjugate-linear automorphisms have the two real forms of the algebra as fixed sets, $M_2(\mathbb{R})$ and the quaternion algebra $\mathbb{H}$, and those are the only two real forms.</p>
+<p><strong>The first two are complex-linear and the last three are conjugate-linear.</strong> For $A=\begin{pmatrix}a&amp;b\\ c&amp;d\end{pmatrix}$ one has $JA^{\mathsf T}J^{-1}=\operatorname{adj}A$, so the symplectic involution fixes exactly the scalars and acts as $-1$ on $\mathfrak{sl}_2(\mathbb{C})$. The two conjugate-linear automorphisms have the two real forms of the algebra as fixed sets, $M_2(\mathbb{R})$ and the quaternion algebra $\mathbb{H}$, and those are the only two real forms.</p>
 <h2 id="the-strongest-objection">The Strongest Objection</h2>
 <p><strong>The objection is that the list is redundant: one four-dimensional object is being described eight times.</strong></p>
 <p><strong>The answer is that the layers differ in dimension and in the operation preserved.</strong> The centre has dimension $1$ and the algebra $4$; the Cartan algebra has dimension $2$ and the Borel $3$; the projective group has dimension $3$ and the group $4$. An intersection of two layers is not a layer: the diagonal algebra is an associative subalgebra and a Lie subalgebra at once, but it is not an ideal; the left ideal $L_{\mathbb{C}e_{2}}$ is an associative subalgebra without identity and a Lie subalgebra; and a line $\mathbb{C}X$ is always a Lie subalgebra, while it is an associative subalgebra only when $X^{2}$ is a multiple of $X$.</p>
@@ -760,7 +760,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the matrix $\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$</td>
+<td>the matrix $\begin{pmatrix}0&amp;1\\ -1&amp;0\end{pmatrix}$</td>
 </tr>
 </tbody>
 </table></div>

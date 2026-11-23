@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Late-Time Correlators and Complex Geodesics in de Sitter Space — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Late-Time Correlators and Complex Geodesics in de Sitter Space - 2212.01394.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="late-time-correlators-and-complex-geodesics-in-de-sitter-space"><strong>Late-Time Correlators and Complex Geodesics in de Sitter Space</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2212.01394v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Lars Aalsma, Mir Mehedi Faruk, Jan Pieter van der Schaar, Manus R. Visser, Job de Witte</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 August 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>SciPost Phys. 15, 031 (2023)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Late-Time Correlators and Complex Geodesics in de Sitter Space - 2212.01394-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Late-Time Correlators and Complex Geodesics in de Sitter Space - 2212.01394.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Late-Time Correlators and Complex Geodesics in de Sitter Space - 2212.01394.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes two-point functions of a massive free scalar in de Sitter space with the heat-kernel formalism, for two operators placed in conjugate static patches, and derives a geodesic approximation valid for large mass and late times. The approximation is a sum over complex conjugate geodesics, and the result decays exponentially in time — the timelike part of the complex geodesic supplies the decay. The generalisation is of the geodesic approximation known in AdS/CFT to the cosmological case, and it is motivated by a version of the information paradox in de Sitter space.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-result">The result</h3>
+<p>"The main result of this work was to show that a two-point correlation function of massive scalar fields in de Sitter space can be computed using a geodesic approximation. This generalizes similar approximation schemes studied in AdS/CFT ... to the cosmological, de Sitter, context. We demonstrated that the geodesic approximation in de Sitter space, for large masses and late times, involves complex geodesics, generalizing earlier work ... to higher dimensions."</p>
+<h3 id="the-mechanism-of-the-decay">The mechanism of the decay</h3>
+<p>"Looking at the final result for the correlator we note that it is exponentially decaying in time, corresponding to the timelike part of the complex geodesic." The decay is not imposed; it is what the complex geodesic's real-time extent produces.</p>
+<h3 id="what-is-and-is-not-an-observable">What is and is not an observable</h3>
+<p>"In contrast to anti-de Sitter space, where the boundary CFT correlation functions are well-defined objects in quantum gravity, the absence of asymptotic regions (where gravity decouples) in de Sitter space implies that a correlation function is not a gauge-invariant observable, since it transforms non-trivially under" diffeomorphisms. The correlator is therefore computed in a fixed gauge and is not by itself an observable — the authors state this before drawing any conclusion from it.</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>The correlator "was the main motivation for this work" in connection with "a version of the information paradox in de Sitter space". The connection is argued, not demonstrated: the exponential decay is what the paradox requires, and the paper supplies the computation rather than the paradox's resolution.</p>
+<h3 id="the-scope">The scope</h3>
+<p>A free massive scalar, two conjugate static patches, large mass, late times. The geodesic approximation's validity is limited to that regime, and the authors say so.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-complex-geodesics-give-the-decay">1. Complex geodesics give the decay</h3>
+<p><strong>The idea.</strong> The correlator between two static patches decays exponentially because the geodesic connecting them is complex and its timelike part grows with the separation. This is a <strong>mechanism</strong> for a decay rate, computed from the geometry rather than inserted.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code> obtains the radiation's properties from the horizon's modular flow; nothing in the corpus connects a correlation function's decay to a geodesic length. A geometric origin for a rate is a different kind of explanation and one the corpus has not used anywhere.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, the section on the two-sided state.</p>
+<p><strong>What stands in the way.</strong> The corpus's distance is algebraic (a norm or a trace on $\mathbb{B}_\Psi$), not a geodesic length in a Lorentzian manifold. The cost is that the mechanism cannot be carried over without a geometric distance, which the corpus constructs only for the unit metric.</p>
+<h3 id="2-not-every-computed-quantity-is-an-observable">2. Not every computed quantity is an observable</h3>
+<p><strong>The idea.</strong> In de Sitter there is no asymptotic region, so a correlator is gauge dependent and not an observable; computing it is still useful, but it cannot be compared with a measurement without care.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> states what would count as evidence. A case where the natural computed object is provably not observable is a caution of exactly the kind that article needs, and it is sharper than a general remark about gauge.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import; it is a statement about de Sitter. Ranked second.</p>
+<h3 id="3-two-conjugate-patches-as-one-state">3. Two conjugate patches as one state</h3>
+<p><strong>The idea.</strong> The pair of static patches is treated as a single system, with the correlator across them as the object of interest; this is the de Sitter analogue of the thermofield double.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code> discusses a two-sided construction and the obstruction to completing it. The de Sitter two-patch version is a second instance of the same structure, in a background with no boundary, and would let the corpus's obstruction claim be tested against a case where the two-sided state is known to exist.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.md</code>.</p>
+<p><strong>What stands in the way.</strong> The two-sided state here is defined by a free field on a fixed background; the corpus's obstruction is about a dynamical, self-gravitating pair. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

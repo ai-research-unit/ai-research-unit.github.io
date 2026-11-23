@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="effective-flavor-interaction-for-the-charged-lepton-mass-hierarchy-and-the-koide-relation"><strong>Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2608.19277 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Olivier Rousselle (Fondation Louis de Broglie; Sorbonne Université)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 26 October 2026 (v1 18 August 2026)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not stated in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation - 2608.19277-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation - 2608.19277.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Effective flavor interaction for the charged-lepton mass hierarchy and the Koide relation - 2608.19277.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives the shortest derivation of the closure in the folder. A $U(3)_F$ flavon nonet has a potential built from the two invariants $I_{(0)}=\mathrm{Tr}\,\Phi_{(0)}^2$ and $I_{(8)}=\mathrm{Tr}\,\Phi_{(8)}^2$; a term $\kappa_F'(I_{(0)}-I_{(8)})^2$ is allowed by the symmetry, and its minimum is <em>equipartition</em>, $I_{(0)}=I_{(8)}$. For a flavon whose eigenvalues have the $Z_3$-cosine form, equipartition is exactly equivalent to $a_0=\sqrt2\,a_8$, which is exactly equivalent to $Q=2/3$ when the masses are the squares of the eigenvalues. So the relation is the statement that a matrix's singlet and octet invariants carry equal weight. What the paper does not supply is the phase: it fits $\theta_F\approx0.22222$ rad and says "the dynamical origin of this specific phase is beyond the scope of this paper". I checked that $\theta_F=2/9$ rad reproduces $m_e/m_\mu=0.0048363$ and $m_\tau/m_\mu=16.818$ against $0.00483633$ and $16.8177$ measured.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-potential-and-the-equipartition">The potential and the equipartition</h3>
+<p>"We postulate $U(3)$ as the flavor symmetry ... we extend the theory beyond the electroweak scale by introducing a heavy, scalar, dynamical flavon field $\Phi$ (of mass dimension 1). The flavon is a Hermitian $3\times3$ matrix-valued field". With the invariants</p>
+<p>$$
+I_{(0)}\equiv\mathrm{Tr}\,\Phi_{(0)}^2=\tfrac12\varphi_0^2,\qquad
+I_{(8)}\equiv\mathrm{Tr}\,\Phi_{(8)}^2=\tfrac12\textstyle\sum_{a=1}^8\varphi_a^2 ,
+\tag{paper 6}
+$$</p>
+<p>the potential is</p>
+<p>$$
+V_F=-\mu_F^2\left(I_{(0)}+I_{(8)}\right)+\kappa_F\left(I_{(0)}+I_{(8)}\right)^2+\kappa_F'\left(I_{(0)}-I_{(8)}\right)^2 ,
+\tag{paper 7}
+$$</p>
+<p>"with $\mu_F^2&gt;0$, $\kappa_F&gt;0$ and $\kappa_F'&gt;0$". The stationarity conditions</p>
+<p>$$
+-\mu_F^2+\kappa_F\left(I_{(0)}+I_{(8)}\right)\pm\kappa_F'\left(I_{(0)}-I_{(8)}\right)=0
+$$</p>
+<p>"yield the equipartition"</p>
+<p>$$
+I_{(0)}=I_{(8)}=\frac{\mu_F^2}{2\kappa_F}\equiv F ,
+\tag{paper 10}
+$$</p>
+<p>and "the equipartition configuration is a stable global minimum as $\kappa_F&gt;0$ and $\kappa_F'&gt;0$". Symmetry breaking then follows $U(3)_F\to U(1)_F^3$.</p>
+<h3 id="the-eigenvalues-and-the-relation">The eigenvalues and the relation</h3>
+<p>"Following the standard eigenvalue parametrization for a $3\times3$ flavor space, any set of" eigenvalues can be written</p>
+<p>$$
+\lambda_k=a_0+2a_8\cos\left(\theta_F+\frac{2\pi k}{3}\right),
+\tag{paper 12}
+$$</p>
+<p>"with $a_0&gt;0$, $a_8&gt;0$ and $\theta_F\in[0,2\pi)$." Masses are quadratic in the flavon, $M=\frac{v}{\sqrt2}Y_{\rm eff}$ with $Y_{\rm eff}=\frac{2c_F}{\Lambda_F^2}\langle\Phi\rangle^2$, hence $m_k\propto\lambda_k^2$. Then</p>
+<p>$$
+Q=\frac{\sum_k m_k}{\left(\sum_k\sqrt{m_k}\right)^2}=\frac23
+\tag{paper 18}
+$$</p>
+<p>holds automatically once the normalisation $3a_0^2+6a_8^2=1$ is combined with "the equipartition condition $a_0=\sqrt2\,a_8$". That fixes $a_0=1/\sqrt6$, $a_8=1/\sqrt{12}$ and</p>
+<p>$$
+m_k=\frac{v}{\sqrt2}\,\epsilon_F^2\left(1+\sqrt2\cos\left(\theta_F+\frac{2\pi k}{3}\right)\right)^2 .
+\tag{paper 19}
+$$</p>
+<p>I verified the algebra: $\sum\lambda_k=3a_0$, $\sum\lambda_k^2=3a_0^2+6a_8^2$, so $Q=\sum\lambda_k^2/(\sum\lambda_k)^2=\frac23$ exactly when $a_0^2=2a_8^2$; and $I_{(0)}=I_{(8)}$ is the same statement, since $\mathrm{Tr}\,\Phi^2=\frac23(\mathrm{Tr}\,\Phi)^2\iff\sum\lambda_k^2=\frac23(\sum\lambda_k)^2$.</p>
+<h3 id="the-fitted-phase">The fitted phase</h3>
+<p>From the mass ratios, "$\theta_F\approx0.22222$ rad" from both $m_\mu/m_e$ and $m_\tau/m_e$, "indicating the consistency of the theory". The per-generation angles are $\varphi_e=\theta_F+2\pi/3\approx132.73^\circ$, $\varphi_\mu=\theta_F-2\pi/3\approx-107.27^\circ$, $\varphi_\tau=\theta_F\approx12.73^\circ$. "A null mass is obtained for $\varphi=\pm135^\circ$ and a maximum mass for $\varphi=0^\circ$." The scaling is $\epsilon_F\approx0.0425\ll1$, and "the hierarchy between the electroweak scale and the lighter charged-lepton masses naturally arises from the ultraviolet suppression ... the former is controlled by $v_F/\Lambda_F$, whereas the latter is encoded in the flavon eigenvalues through $m_k\propto\lambda_k^2$."</p>
+<p>"The dynamical origin of this specific phase $\theta_F$ is beyond the scope of this paper." The paper then draws a table of parallels between the electroweak and flavour sectors, with $\theta_F$ as the analogue of the Weinberg angle.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-koides-relation-is-the-equipartition-of-the-singlet-and-octet-invariants">1. Koide's relation <em>is</em> the equipartition of the singlet and octet invariants</h3>
+<p><strong>The idea.</strong> A <strong>theorem-shaped statement</strong>: for a Hermitian matrix $\Phi$ whose eigenvalues have the $Z_3$-cosine form and whose square gives the masses, $Q=2/3$ is exactly $\mathrm{Tr}\,\Phi_{(0)}^2=\mathrm{Tr}\,\Phi_{(8)}^2$; and a potential containing $\kappa'(\mathrm{Tr}\,\Phi_{(0)}^2-\mathrm{Tr}\,\Phi_{(8)}^2)^2$ with $\kappa'&gt;0$ has that condition as its minimum.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 lists "a potential whose vacuum gives $2/3$" as an open item, and the Liang–Sun conversion shows that a complete $SU(3)$ potential does <em>not</em> give it. Here is a term that is allowed by the symmetry, needs no tuning, and whose minimum is exactly the relation. The statement is also the cleanest available translation of the relation into matrix language — a single sentence about two traces rather than a statement about three square roots.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, as the best current answer to the potential question, and §2 as a second reading of $2/3$.</p>
+<p><strong>What stands in the way.</strong> The term is <em>chosen</em>, not required: the symmetry allows it and also allows its absence, so the derivation works for a potential one writes down. The $Z_3$-cosine eigenvalue form is generic for a $Z_3$-symmetric matrix but is not imposed by $U(3)$ alone. And the phase, which is the other half of the texture, is fitted.</p>
+<h3 id="2-the-phase-is-math81-radians-confirmed-a-third-time">2. The phase is $2/9$ radians, confirmed a third time</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $\theta_F=0.22222$ rad, fitted independently from $m_\mu/m_e$ and from $m_\tau/m_e$, is $2/9$ to five figures; with $\theta_F=2/9$ exactly the parametrisation gives $m_e/m_\mu=0.0048363$ and $m_\tau/m_\mu=16.818$.</p>
+<p><strong>What it would add.</strong> The corpus has the phase $2/9$ from Zenczykowski as a fitted parameter in a different convention. This is the same number in the same convention as Strumia's circulant phase $\varphi$, from a third independent fit, and it fixes the accuracy: $2/9$ rad reproduces both mass ratios to about $10^{-5}$. That makes the phase a two-number texture — $2/3$ from a trace identity, $2/9$ from a fitted angle — which is exactly the structure the corpus's §5 is trying to describe.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §5.</p>
+<p><strong>What stands in the way.</strong> The author does not know where the phase comes from; the agreement of two ratios at the same $\theta_F$ is a one-parameter fit to two numbers, so it tests the <em>form</em> of the parametrisation, not the value of the phase.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The table of electroweak–flavour parallels (gauge group versus global $U(3)$, Higgs doublet versus flavon nonet, Weinberg angle versus flavour phase) is a compact way to state what the flavon sector is meant to be. The claim that QED running spoils the relation, "$Q(M_Z)\approx0.6679$ rather than $2/3$", is the standard $0.2\%$ figure. The $Z_3$ "cyclic network" language in Section 3 is decorative; the content is the cosine parametrisation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

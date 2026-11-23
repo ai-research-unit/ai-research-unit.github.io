@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-hydrodynamics-of-spinning-particles-in-electromagnetic-and-torsion-fields"><strong>Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2111.10623 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Mariya Iv. Trukhanova, Yuri N. Obukhov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 16 December 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Trukhanova/Trukhanova - Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields - 2111.10623-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields - 2111.10623.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Trukhanova/Trukhanova - Quantum hydrodynamics of spinning particles in electromagnetic and torsion fields - 2111.10623.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the quantum hydrodynamics of many Dirac fermions in an external electromagnetic, gravitational-inertial and torsion background, starting from a Hermitian Pauli-like Hamiltonian obtained by a Foldy–Wouthuysen transformation. The Madelung decomposition then gives a closed system — continuity, momentum balance, spin-density evolution — with every torsion term visible. The paper closes with two experimental bounds on the background torsion taken from mercury and xenon spin-precession data. The hydrodynamics is exact at the level of the Pauli equation; the bounds are borrowed from experiment.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-hamiltonian">The Hamiltonian</h3>
+<p>The Hermitian Hamiltonian of a fermion in a Poincaré gauge field is
+$$H=\beta mc^2V+q\Phi+\frac{c}{2}\bigl(\pi_bF_{ba}\alpha_a+\alpha_aF_{ba}\pi_b\bigr)+\frac{c}{2}(K\cdot\pi+\pi\cdot K)+\frac{\hbar c}{4}\bigl(\Xi\cdot\Sigma-\Upsilon\gamma_5\bigr)$$
+(paper 2.13) with $\pi_a=-i\hbar\partial_a-qA_a$, $F$, $\Upsilon$ and $\Xi$ built from the connection components (paper 2.14). Splitting the connection into Riemannian and post-Riemannian parts gives
+$$\Upsilon=\tilde\Upsilon+Vc\check T_{b0},\qquad \Xi_a=\tilde\Xi_a-V\check T_{ab}$$
+(paper 2.15): "the Pauli-like equation with the Hermitian Hamiltonian (2.13) encompasses the spin-torsion coupling: e + V cŤ b0 , Υ=Υ e ba − V Ť ab.".</p>
+<h3 id="the-fluid-system">The fluid system</h3>
+<p>After the Madelung decomposition the moments close into
+$$\partial_t n+\nabla\cdot(nv)=0$$
+(paper 4.9),
+$$(\partial_t+v^b\partial_b)v^a=\frac{q}{m}E^a+\frac{q}{m}(v\times B)^a-\frac{1}{n}\partial_bp^{ab}+\frac{\hbar^2}{2m^2}\partial^a\frac{\Delta\sqrt n}{\sqrt n}+\frac{1}{2m^2}\partial^a(\partial^bs\cdot\partial_bs)-\frac{1}{m}s\cdot\partial^a\hat\Omega+\ldots$$
+(paper 4.10, as printed, with $f_{\rm iner}$ and $Q_a^{\rm therm}$ closing it), and
+$$(\partial_t+v^b\partial_b)s=\hat\Omega\times s-\Theta_{\rm therm}$$
+(paper 4.11). The centre of mass obeys $\ddot R=\ldots-2\omega\times v-\omega\times(\omega\times R)-\frac{\partial\omega}{\partial t}\times R$ (paper 4.18), the rotation terms of a non-inertial frame.</p>
+<h3 id="the-bounds">The bounds</h3>
+<p>For the background torsion coupled to nuclear spin precession,
+$$\frac{c}{2}\lvert\check T\rvert\cdot\lvert\cos\theta\rvert&lt;6.45\times10^{-6}\ \mathrm{s}^{-1}$$
+from the $^{199}$Hg/$^{201}$Hg ratio experiment (paper 5.1), and
+$$\frac{c}{2}\lvert\check T\rvert\cdot\lvert\cos\theta\rvert&lt;3.59\times10^{-7}\ \mathrm{s}^{-1}$$
+from the $^3$He/$^{129}$Xe clock comparison (paper 5.2), "s−1 , (5.1) 2 where θ is the angle between the magnetic B and torsion Ť fields. On the other".</p>
+<h3 id="the-spin-wave">The spin wave</h3>
+<p>The spin density obeys $(\partial_t+v^b\partial_b)s=\hat\Omega\times s-\Theta_{\rm therm}$ (paper 4.11), with
+$$\hat\Omega=-\omega-\frac{q}{m}B-\frac{c}{2}\check T-\frac{1}{mn}\partial_b\bigl(n\partial^bs\bigr)$$
+(paper 4.12). The paper reads the last two terms as extra contributions to an effective magnetic field,
+$$B_\omega=\frac{m}{q}\omega,\qquad B_T=\frac{mc}{2q}\check T$$
+(paper 4.14), so the first is "Mashhoon's spin-rotation coupling term and describes the Barnett effect" and the second is the spin-torsion coupling.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-torsion-entering-as-an-effective-magnetic-field-with-a-computed-coefficient">1. Torsion entering as an effective magnetic field with a computed coefficient</h3>
+<p><strong>The idea.</strong> $B_T=\frac{mc}{2q}\check T$ (paper 4.14) converts a torsion into the magnetic field that would produce the same precession, so the axial torsion sits in the same slot as $B$ with a coefficient fixed by the gauge construction. A <strong>formula</strong>, and the cleanest statement in the batch of how torsion couples to a spin density.</p>
+<p><strong>What it would add.</strong> A single place where the corpus's spin-precession equation could carry a torsion term, were the corpus to build the Poincaré gauge coupling.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>, whose point is that the charge couples to the Lorentz force while the spin does not.</p>
+<p><strong>What stands in the way.</strong> The coupling constant is inherited from Poincaré gauge theory with a specific Lagrangian; the corpus builds no gauge theory of the Poincaré group, so the coefficient would arrive without its derivation. Also the corpus's fluid carries the spin as a bivector, and this term acts on an axial vector.</p>
+<h3 id="2-bounds-in">2. Bounds in</h3>
+<p>$\mathrm{s}^{-1}$ rather than in metres</p>
+<p><strong>The idea.</strong> $6.45\times10^{-6}$ and $3.59\times10^{-7}\ \mathrm{s}^{-1}$ are bounds on $\frac{c}{2}\lvert\check T\rvert\lvert\cos\theta\rvert$, i.e. on a torsion expressed as a frequency. A <strong>number</strong> with its conversion stated.</p>
+<p><strong>What it would add.</strong> A worked example of quoting a bound in the unit the experiment measures, which is what the corpus's data-boundary article asks of any printed strength.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>.</p>
+<p><strong>What stands in the way.</strong> The numbers are taken from earlier analyses of the same experiments, not computed here; the paper is explicit that it repeats the derivation with $\check T$ in place of a Lorentz-violating parameter, so the bound inherits whatever assumptions that analysis made.</p>
+<h3 id="3-hydrodynamics-from-a-foldywouthuysen-hamiltonian">3. Hydrodynamics from a Foldy–Wouthuysen Hamiltonian</h3>
+<p><strong>The idea.</strong> The many-particle fluid is built from the Pauli-like equation obtained by block-diagonalising the Dirac equation, so the $1/m$ expansion is controlled before the Madelung split is taken. A <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> An ordering the corpus's spin-half fluid does not state: which terms survive at which order in $1/m$, settled before the fluid variables are introduced.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> The Foldy–Wouthuysen transformation is defined for a fixed background and its higher orders are not summed; the corpus's approach keeps the Dirac field exact and takes the polar decomposition of the full spinor, so the two orderings are not interchangeable.</p>
+<p>The rank is a judgement: the precession term first, because it is the one line the corpus could adopt; the bounds second, because they are numbers with units; the Foldy–Wouthuysen ordering third, because it is a method rather than a result.</p>
+<p>Twenty-four pages: the Pauli-like Hamiltonian with torsion, the many-particle moments, continuity, momentum balance, spin evolution, the centre-of-mass equation, the two experimental bounds, and the spin-wave dispersion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

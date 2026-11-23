@@ -84,12 +84,12 @@
 <h3 id="modular-forms">Modular Forms</h3>
 <p><strong>Definition.</strong> A <strong>modular form</strong> of weight $k \in \mathbb{Z}$ and level $1$ is a holomorphic function $f : \mathbb{H} \to \mathbb{C}$ on the upper half-plane satisfying</p>
 <p>$$
-f\!\left(\frac{az+b}{cz+d}\right) = (cz+d)^k f(z) \qquad \text{for all } \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in SL_2(\mathbb{Z}),
+f\!\left(\frac{az+b}{cz+d}\right) = (cz+d)^k f(z) \qquad \text{for all } \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \in SL_2(\mathbb{Z}),
 $$</p>
 <p>together with the growth condition that $f$ is bounded as $z \to i\infty$ along vertical strips. The form is <strong>cuspidal</strong> if $f(z) \to 0$ as $z \to i\infty$; the space of modular forms of weight $k$ is denoted $M_k(SL_2(\mathbb{Z}))$ and the subspace of cusp forms $S_k(SL_2(\mathbb{Z}))$.</p>
-<p>The transformation law is invariance of the function $f_{\mathrm{lift}}(g) = (ci+d)^{-k} f(g \cdot i)$ under $SL_2(\mathbb{Z})$, and the growth condition is the analytic part of the definition. The $q$-expansion $f(z) = \sum_{n\geq0} a_n q^n$, $q = \exp(2\pi iz)$, converts the arithmetic into the coefficients $a_n$, and the finite-dimensionality of $M_k$ is the first structural theorem: $M_k = 0$ for odd $k$ and for $k<0$, and for even $k \geq 4$,</p>
+<p>The transformation law is invariance of the function $f_{\mathrm{lift}}(g) = (ci+d)^{-k} f(g \cdot i)$ under $SL_2(\mathbb{Z})$, and the growth condition is the analytic part of the definition. The $q$-expansion $f(z) = \sum_{n\geq0} a_n q^n$, $q = \exp(2\pi iz)$, converts the arithmetic into the coefficients $a_n$, and the finite-dimensionality of $M_k$ is the first structural theorem: $M_k = 0$ for odd $k$ and for $k&lt;0$, and for even $k \geq 4$,</p>
 <p>$$
-\dim M_k = \begin{cases}\lfloor k/12\rfloor + 1, & k \not\equiv 2 \pmod{12}, \\ \lfloor k/12\rfloor, & k \equiv 2 \pmod{12},\end{cases}
+\dim M_k = \begin{cases}\lfloor k/12\rfloor + 1, &amp; k \not\equiv 2 \pmod{12}, \\ \lfloor k/12\rfloor, &amp; k \equiv 2 \pmod{12},\end{cases}
 $$</p>
 <p>so that $\dim M_4 = \dim M_6 = \dim M_8 = \dim M_{10} = 1$ and $\dim M_{12} = 2$. The classical theory, including the congruence subgroups, the modular curves and the Petersson inner product, is not covered here.</p>
 <h3 id="hecke-operators">Hecke Operators</h3>
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 E(g, \varphi, s) = \sum_{\gamma \in P(\mathbb{Q})\backslash G(\mathbb{Q})} \varphi(\gamma g)\, |a(\gamma g)|^{s+1/2},
 $$</p>
-<p>convergent for $\Re s > 1/2$ and continued meromorphically to $\mathbb{C}$ with a functional equation $E(g,\varphi,s) \leftrightarrow E(g, \varphi^\vee, -s)$.</p>
+<p>convergent for $\Re s &gt; 1/2$ and continued meromorphically to $\mathbb{C}$ with a functional equation $E(g,\varphi,s) \leftrightarrow E(g, \varphi^\vee, -s)$.</p>
 <p>The analytic continuation and the functional equation are proved by the theory of the constant term: the constant term of $E$ is $\varphi(g) + M(s)\varphi(g)$ with $M(s)$ an intertwining operator whose normalising factor is a ratio of local $L$-factors, and the functional equation of the Eisenstein series is the functional equation of that ratio. The poles of $M(s)$ give the residual spectrum and the residues $E(g,\varphi,s_0)$ are the residual automorphic forms. The classical Eisenstein series of the upper half-plane is the special case of the weight-zero form, and the analytic continuation of the zeta function is the case $G = GL_1$.</p>
 <h3 id="the-trace-formula">The Trace Formula</h3>
 <p><strong>Theorem (Selberg's trace formula).</strong> Let $G$ be a reductive group over $\mathbb{Q}$ and let $f$ be a test function on $G(\mathbb{A})$ of a suitable class. Then the trace of the operator $R(f)$ on the discrete part of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$ has two expansions,</p>

@@ -81,7 +81,7 @@
 B=MAN,\qquad
 M=\Bigl\{\operatorname{diag}(e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2})\Bigr\},\quad
 A=\Bigl\{\operatorname{diag}(e^{\theta_{\mathrm{rpd}}/2},e^{-\theta_{\mathrm{rpd}}/2})\Bigr\},\quad
-N=\Bigl\{\begin{pmatrix}1&z\\0&1\end{pmatrix}\Bigr\},
+N=\Bigl\{\begin{pmatrix}1&amp;z\\0&amp;1\end{pmatrix}\Bigr\},
 $$</p>
 <p>with $M$ compact, $A$ the boost and $N$ the null translations. The quotient $G/B$ is the sky, $\mathbb{CP}^{1}$.</p>
 <h3 id="induction">Induction</h3>
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-definition-of-the-complementary-series">The Definition of the Complementary Series</h3>
 <p>The <strong>complementary series</strong> is $\digamma_{\mathrm{par}}$ real with</p>
 <p>$$
-0<\lvert\digamma_{\mathrm{par}}\rvert<1,
+0&lt;\lvert\digamma_{\mathrm{par}}\rvert&lt;1,
 $$</p>
 <p>with the same inducing data and a <em>different</em> inner product.</p>
 <h3 id="why-the-math40-product-fails-there">Why the $L^{2}$ Product Fails There</h3>
@@ -135,7 +135,7 @@ $$</p>
 <p>$$
 \langle f_1,f_2\rangle_{\digamma_{\mathrm{par}}}=\langle f_1,J_{\digamma_{\mathrm{par}}}f_2\rangle_{L^{2}} .
 $$</p>
-<p>The operator $J_{\digamma_{\mathrm{par}}}$ is positive definite exactly in the range $\lvert\digamma_{\mathrm{par}}\rvert<1$ (for the spherical case), and that positivity is the unitarity of the complementary series. Outside the range it has negative directions, and the "inner product" is indefinite.</p>
+<p>The operator $J_{\digamma_{\mathrm{par}}}$ is positive definite exactly in the range $\lvert\digamma_{\mathrm{par}}\rvert&lt;1$ (for the spherical case), and that positivity is the unitarity of the complementary series. Outside the range it has negative directions, and the "inner product" is indefinite.</p>
 <h3 id="why-it-is-called-complementary">Why It Is Called Complementary</h3>
 <p>Because its parameter range complements the principal series' in the plane of $\digamma_{\mathrm{par}}$: the principal series is the imaginary axis, the complementary series is the open interval $(-1,1)$ on the real axis, and the two together with their boundary points exhaust the unitary parameters for this family. The name is a statement about the parameter plane and not about the representations' contents.</p>
 <h2 id="the-discrete-series-and-temperedness">The Discrete Series and Temperedness</h2>
@@ -144,10 +144,10 @@ $$</p>
 <p>Its existence is a rank criterion, not an accident: a semisimple group has a nonempty discrete series exactly when its maximal compact subgroup has the same rank as the group itself, because only then does the group possess a compact Cartan subgroup. The Lorentz group passes the criterion, since its compact subgroup $\mathrm{SU}(2)$ has rank one and the group's rank is also one. The members are labelled by a discrete set, the same half-integer pair $(n_{\mathrm{par}},n)$ that labels the algebraic modules, subject to a non-degeneracy condition; the block does not need the condition, because no article here uses a discrete-series module.</p>
 <p>The structural point is what matters: the discrete series is the part of the unitary dual that comes from <em>below</em>, as summands of $L^{2}(G)$, while the principal and complementary series come from <em>above</em>, as induced modules. The finite-dimensional carriers of the algebra belong to neither.</p>
 <h3 id="temperedness">Temperedness</h3>
-<p>A unitary module is <strong>tempered</strong> when its matrix coefficients lie in $L^{2+\epsilon}(G)$ for every $\epsilon>0$: they decay at least as fast as an $L^{2}$ function, but the borderline case is not required.</p>
+<p>A unitary module is <strong>tempered</strong> when its matrix coefficients lie in $L^{2+\epsilon}(G)$ for every $\epsilon&gt;0$: they decay at least as fast as an $L^{2}$ function, but the borderline case is not required.</p>
 <ul>
 <li>The principal series is tempered. Its parameters are on the imaginary axis, $\digamma_{\mathrm{par}}=i\rho$ with $\rho$ real, and the growth of the matrix coefficients is oscillatory rather than exponential.</li>
-<li>The complementary series is not tempered. Its parameter is real with $\lvert\digamma_{\mathrm{par}}\rvert<1$, and its matrix coefficients decay more slowly than $L^{2}$ requires; that is the same failure that forced the nonlocal inner product.</li>
+<li>The complementary series is not tempered. Its parameter is real with $\lvert\digamma_{\mathrm{par}}\rvert&lt;1$, and its matrix coefficients decay more slowly than $L^{2}$ requires; that is the same failure that forced the nonlocal inner product.</li>
 <li>The discrete series is tempered, since square-integrability is stronger than membership in every $L^{2+\epsilon}$.</li>
 </ul>
 <p>Temperedness is the property that decides membership in the Plancherel formula. The Plancherel measure of the Lorentz group is supported on the tempered part of the unitary dual, with a continuous density on the principal series; the complementary series is a set of measure zero for it. So a reader who asks "which modules enter the harmonic analysis of the group" gets the tempered ones, and a reader who asks "which modules describe a physical state" gets them too, because a state must be normalisable in a sense the group respects.</p>
@@ -183,7 +183,7 @@ $$</p>
 </tr>
 <tr>
 <td>complementary</td>
-<td>real, $0<\lvert\digamma_{\mathrm{par}}\rvert<1$</td>
+<td>real, $0&lt;\lvert\digamma_{\mathrm{par}}\rvert&lt;1$</td>
 <td>$\digamma_{\mathrm{par}}$</td>
 <td>$n_{\mathrm{par}}\in\tfrac12\mathbb{Z}$</td>
 </tr>
@@ -206,11 +206,11 @@ $$</p>
 <p>The boundary values of the principal series are the massless labels, and the helicity is the discrete label at the boundary. That is why the massless representations are "at the edge of the series" and not "the massless limit of a massive series": the parameter space's boundary is where they sit.</p>
 <h3 id="the-cosmological-and-thermal-uses">The Cosmological and Thermal Uses</h3>
 <p>The series is what a Lorentz-invariant thermal or cosmological two-point function is expanded in, because only unitary representations can appear in a spectral decomposition. The complementary series appears in the Euclidean continuation, where its parameter becomes the scaling dimension of a boundary operator.</p>
-<p>That last statement is the block's bridge to the conformal material: the complementary series' parameter is the shadow of a conformal dimension, and the bound $\lvert\digamma_{\mathrm{par}}\rvert<1$ is the unitarity bound.</p>
+<p>That last statement is the block's bridge to the conformal material: the complementary series' parameter is the shadow of a conformal dimension, and the bound $\lvert\digamma_{\mathrm{par}}\rvert&lt;1$ is the unitarity bound.</p>
 <h3 id="what-is-not-done-here">What Is Not Done Here</h3>
 <p>The block does not construct the series as a Hilbert space, does not prove the positivity of the intertwining operator, and does not compute the Plancherel measure. Those are three substantial theorems, they are in the references, and none of the block's physical statements depends on them.</p>
 <h2 id="summary">Summary</h2>
-<p>The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}$. For $\digamma_{\mathrm{par}}$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,n_{\mathrm{par}})$. For real $\digamma_{\mathrm{par}}$ with $\lvert\digamma_{\mathrm{par}}\rvert<1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\digamma_{\mathrm{par}}\rvert=1$ the operator degenerates, and at integer $\digamma_{\mathrm{par}}$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.</p>
+<p>The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}$. For $\digamma_{\mathrm{par}}$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,n_{\mathrm{par}})$. For real $\digamma_{\mathrm{par}}$ with $\lvert\digamma_{\mathrm{par}}\rvert&lt;1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\digamma_{\mathrm{par}}\rvert=1$ the operator degenerates, and at integer $\digamma_{\mathrm{par}}$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -249,7 +249,7 @@ $$</p>
 <td>the intertwining operator</td>
 </tr>
 <tr>
-<td>$\lvert\digamma_{\mathrm{par}}\rvert<1$</td>
+<td>$\lvert\digamma_{\mathrm{par}}\rvert&lt;1$</td>
 <td>the complementary range</td>
 </tr>
 </tbody>

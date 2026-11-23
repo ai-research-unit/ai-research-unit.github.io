@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birefringence in pseudo–Finsler spacetimes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Birefringence in pseudo-Finsler spacetimes - 0810.4376.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="birefringence-in-pseudofinsler-spacetimes"><strong>Birefringence in pseudo–Finsler spacetimes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0810.4376v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Jozef Skákala, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 24 October 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Birefringence in pseudo-Finsler spacetimes - 0810.4376-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Birefringence in pseudo-Finsler spacetimes - 0810.4376.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Birefringence in pseudo-Finsler spacetimes - 0810.4376.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks whether two light cones can be packed into one pseudo-Finsler geometry. It starts from birefringent crystal optics, which gives two signal cones, and tries to build a single Finsler norm that vanishes on both and nowhere else, with a smooth metric. The attempt fails. In a uniaxial crystal the natural geometric mean of the two norms is non-real between the cones and non-smooth on them; in a biaxial crystal the individual norms are already non-smooth on the optical axes. The authors report a partial construction but no intuitive one, and they conclude that the better picture is one manifold carrying several distinct pseudo-Finsler metrics, one per polarisation. The negative result is stated plainly: the original aim was not accomplished.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-question">The question</h3>
+<p>"Based on the analogue spacetime programme, and many other ideas currently mooted in 'quantum gravity', there is considerable ongoing speculation that the usual pseudo-Riemannian (Lorentzian) manifolds of general relativity might eventually be modified at short distances." Two proposed modifications are pseudo-Finsler geometry and birefringence. The paper asks whether both can be handled at once: "given two (or more) 'signal cones': Is it possible to naturally and intuitively construct a 'unified' pseudo-Finsler spacetime such that the pseudo-Finsler metric is null on these 'signal cones', but has no other zeros or singularities?"</p>
+<h3 id="the-model">The model</h3>
+<p>Birefringent crystals provide "explicit Lorentz symmetry breaking relations, which at the same time has a simple enough structure (the dispersion relations factorize, in general, to give a two-cone structure)". The authors want a full four-dimensional construction, unlike the older three-dimensional Finsler treatments of crystals, which "effectively pick a fixed inertial reference frame, the rest frame of the crystal".</p>
+<h3 id="the-isotropic-case-already-strains">The isotropic case already strains</h3>
+<p>"The simplest case of crystal optics is an isotropic medium $v_1=v_2=v_3=v_o$. The obvious interpretation in this case is as a pseudo-Riemann metric, but with $v_o$ playing the role of the speed of light. (Strictly speaking, even this obvious solution does not fulfill our condition (e), unless $v_o=c$, which implies there is no crystal at all.)"</p>
+<h3 id="the-uniaxial-failure">The uniaxial failure</h3>
+<p>In a uniaxial crystal the norms factorise, but the natural combined ansatz</p>
+<p>$$N(v)^2=\sqrt{F(v)}=\sqrt{F_1(v)\cdot F_2(v)} \qquad (paper\ 4.20)$$</p>
+<p>"encounters problems with condition (e), the putative Finsler norms are nonreal between the two signal cones, and not smooth at the signal cones. (Even second derivatives do not exist there, hence the pseudo-(co)-Finsler metric tensor is undefined there)."</p>
+<h3 id="the-biaxial-failure">The biaxial failure</h3>
+<p>"In the case of biaxial crystal ($v_1\neq v_2\neq v_3\neq v_1$) there are even bigger problems with this 'solution' — even the individual $F_1(v)$, $F_2(v)$ and $F_1'(k)$, $F_2'(k)$ are not themselves pseudo-Riemannian structures; they are nonsmooth at the optical axes."</p>
+<h3 id="the-result-including-its-failure">The result, including its failure</h3>
+<p>"We have found a partial solution for this problem, except for proving the bijection condition, which is quite tricky. But the fact that this construction lacks any intuitive basis is quite disturbing. In these circumstances we have to accept the unwelcome conclusion that although birefringent crystal have given us many ideas about the construction of pseudo-Finsler geometries, they have not provided us with a clear and intuitive example of a 'unified' geometry capable of handling both polarization modes simultaneously. So the original aim we posed at the beginning of this article has not been accomplished."</p>
+<h3 id="what-should-replace-it">What should replace it</h3>
+<p>"Our results are much less encouraging than we had originally hoped, and suggest that while pseudo-Finsler spacetimes are certainly useful constructs, in birefringent situations it does not appear possible to naturally and intuitively construct a 'unified' pseudo-Finsler spacetime such that the pseudo-Finsler metric is null on both 'signal cones', but has no other zeros or singularities — it seems physically more appropriate to think of physics as taking place in a single topological manifold that carries distinct pseudo-Finsler metrics, one for each polarization mode."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-manifold-several-light-cones">1. One manifold, several light cones</h3>
+<p><strong>The idea.</strong> Birefringence means two causal structures on one manifold. The paper's conclusion is that this is the right description, not a defect to be removed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> speaks of the light cone in the singular. If a medium can carry two cones, then "the" barrier splits into one barrier per polarisation mode, and the article's information-theoretic statement needs a qualifier. That is a real weakening of a claim the article currently makes unconditionally.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, where the cone is defined.</p>
+<p><strong>What stands in the way.</strong> None in principle, though the corpus has no birefringent model of its own. Ranked first, because it changes the scope of a load-bearing claim.</p>
+<h3 id="2-a-negative-result-belongs-in-the-catalogue">2. A negative result belongs in the catalogue</h3>
+<p><strong>The idea.</strong> A unified norm for two polarisations does not exist in any intuitive form, and the paper proves the natural candidates fail.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects exactly this kind of statement: no object with such-and-such a property. The entry here is stronger than most, because the failure is not merely algebraic but geometric: the candidate is non-real between the cones and non-smooth on them. It gives the catalogue a worked obstruction in a geometric setting.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The catalogue's entries are about $\mathbb{B}$, so this one needs a framing paragraph to fit. Ranked second.</p>
+<h3 id="3-optics-supplies-the-counterexamples">3. Optics supplies the counterexamples</h3>
+<p><strong>The idea.</strong> The failures are computed in crystal optics, where every quantity is measurable.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code> treats a medium with a single effective metric. The birefringent crystal is the medium in which the single-metric description is provably insufficient, and it is the simplest such medium. The article should name it as the boundary case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, at the introduction of the medium parameters.</p>
+<p><strong>What stands in the way.</strong> It duplicates the point made by the companion bi-metric paper, so it should be folded into one import rather than two. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

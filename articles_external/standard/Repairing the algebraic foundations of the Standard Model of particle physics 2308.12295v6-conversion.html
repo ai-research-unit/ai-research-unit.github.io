@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repairing the Algebraic Foundations of the Standard Model of Particle Physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Repairing the algebraic foundations of the Standard Model of particle physics 2308.12295v6.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="repairing-the-algebraic-foundations-of-the-standard-model-of-particle-physics"><strong>Repairing the Algebraic Foundations of the Standard Model of Particle Physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (short paper)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2308.12295v6 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Douglas Newman</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v6, 23 June 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Repairing the algebraic foundations of the Standard Model of particle physics 2308.12295v6-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Repairing the algebraic foundations of the Standard Model of particle physics 2308.12295v6.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-chirality-and-the-weyl-spinors.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Repairing the algebraic foundations of the Standard Model of particle physics 2308.12295v6.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues in four pages that chirality is not merely an awkward convention but an algebraic error: $\gamma^5$ cannot serve as the operator that classifies neutrinos, because it does not commute with $\gamma^0$ and because a massless neutrino's spin must be parallel to its momentum. The repair is to drop the projection operator $P_L=\tfrac12(1+\gamma^5)$ from the formulae and to describe neutrinos with ordinary massive four-spinors.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-faults">The three faults</h3>
+<p>"The SM ... 1. It retains its initial assumption that neutrinos have zero mass. 2. It introduces the concept of chirality which distinguishes two types of neutrino (denoted by L and R), when only L neutrinos have been observed. 3. It fails to predict the existence of different neutrino generations."</p>
+<h3 id="the-substitution-of-math12-for-math13">The substitution of $\gamma^5$ for $\gamma^0$</h3>
+<p>"cally, the SM replaces the time (γ 0 ) coordinate, that distinguishes fermions from anti-fermions in the Dirac theory, with chirality (γ 5 ) that distinguishes between observed L neutrinos, denoted L, with eigenvalue µ5 = −1, and unobserved R neutrinos denoted R, with eigenvalue µ5 = +1. Such a physical" "The algebraic distinction between neutrinos and anti-neutrinos is lost, losing contact with experimental results that distinguish neutrinos anti-neutrinos (e.g see [2]§8)."</p>
+<h3 id="the-geometric-objection">The geometric objection</h3>
+<p>"the spin orientation of a neutrino moving at the velocity of light is necessarily parallel to its direction of motion. For example, a neutrino moving at the velocity of light in the direction γ 1 is described by γ 01 . This only commutes with the spin orientation γ 23 . This is not a possible description of fermions which have spin orientations independent of their direction of motion. (It is worth noting"</p>
+<h3 id="the-commutator-objection">The commutator objection</h3>
+<p>"$\gamma^5$ ... does not commute with $\gamma^0$, conflicting with [the] Dirac interpretation of $\gamma^0$ as the operator that distinguishes fermions from anti-fermions. This ensures that neutrinos cannot be described by [the] usual form of Dirac 4-spinors."</p>
+<h3 id="the-repair">The repair</h3>
+<p>"The transition from SM to CU descriptions of processes that involve the the projection operator PL = 1 2 (1 + γ 5 ) are made by simply omitting it from the formulae in which it occurs. This should not affect the results of many calculations, giving a possible reason why the SM has been so successful. 2 §3. Summary"</p>
+<h3 id="the-verdict-on-math17">The verdict on $V-A$</h3>
+<p>"The arguments leading to the V-A potential as a description [of] parity non-conservation in weak interactions are invalid for two reasons: (1) it depends on the chiral description of the weak interaction and (2) it is based on the incorrect assumption that all fermions have the same intrinsic parity."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-chirality-is-an-operator-substitution-and-the-substitution-is-visible">1. Chirality is an operator substitution, and the substitution is visible</h3>
+<p><strong>The idea.</strong> The Standard Model does not merely use a different label for neutrinos; it replaces one operator by another, $\gamma^0\to\gamma^5$, and the replacement can be checked by commutators. The check fails. This is a <strong>mechanism</strong> for testing a convention: ask what it replaced and whether the replacement preserves the algebra. The corpus's chirality exercise sets out the same objects and would benefit from the test.</p>
+<p><strong>What it would add.</strong> A concrete algebraic criterion that turns a convention into a falsifiable claim, which the corpus's chirality article does not attempt.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-chirality-and-the-weyl-spinors.md</code>, at the definition of the projector.</p>
+<p><strong>What stands in the way.</strong> The corpus's chirality article treats $\gamma^5$ as a legitimate element of the algebra and uses it to split the bispinor; the objection here is that it cannot also carry the particle–antiparticle distinction. Both statements can be true at once, so the corpus need only add the restriction.</p>
+<h3 id="2-dropping">2. Dropping</h3>
+<p>$P_L$ leaves the numbers intact</p>
+<p><strong>The idea.</strong> If the projection operator can be omitted without changing results, then the success of the Standard Model is evidence that chirality was doing no work — a rare case where a theoretical objection comes with an explanation of why it went unnoticed. This is a <strong>reading</strong> with a testable consequence.</p>
+<p><strong>What it would add.</strong> A criterion the corpus can use to judge whether its own chiral structures are load-bearing or decorative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, on whether the wall is physical.</p>
+<p><strong>What stands in the way.</strong> Some processes — pion decay, for one — do depend on the projector and are not recovered by omitting it, so the claim holds for many calculations and not for all.</p>
+<h3 id="3-the-spinmomentum-lock-for-a-massless-fermion">3. The spin–momentum lock for a massless fermion</h3>
+<p><strong>The idea.</strong> For a particle moving at $c$, spin must lie along the momentum, so helicity is fixed and there is no independent spin orientation. A massless fermion therefore cannot have the two helicity states that a chiral doublet presupposes.</p>
+<p><strong>What it would add.</strong> A kinematic fact stated as a geometric one, which the corpus's Weyl-spinor discussion asserts by construction rather than by argument.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-chirality-and-the-weyl-spinors.md</code>, on helicity.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is a four-page paper; the three faults, the $\gamma^0\to\gamma^5$ substitution, the two algebraic objections, the omission of $P_L$ and the verdict on $V-A$ are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

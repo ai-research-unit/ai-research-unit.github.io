@@ -144,7 +144,7 @@ $$</p>
 <p>The curl is therefore the restriction of the Cauchy–Riemann operator to the divergence-free vectors, and a first-order system in curls can be written as a first-order quaternionic system. This is the step that puts the time-harmonic Maxwell system inside the function theory of $D_3$.</p>
 <p>With the fields read as purely vectorial biquaternions, define the <strong>quaternionic Maxwell operator</strong> as the $2\times2$ matrix of first-order operators</p>
 <p>$$
-N:=\begin{pmatrix} D_3 & -i\omega\mu \\[2pt] -\sigma & D_3 \end{pmatrix},
+N:=\begin{pmatrix} D_3 &amp; -i\omega\mu \\[2pt] -\sigma &amp; D_3 \end{pmatrix},
 \qquad
 N:\ \mathbb{B}^2\longrightarrow\mathbb{B}^2 .
 \tag{6}
@@ -158,13 +158,13 @@ N(\vec E,\vec H)
 $$</p>
 <p>the second equality being $(5)$ applied to each component and the system $(1)$ used in the form $D_3\vec E-\mathrm{rot}\,\vec E=-\rho/\epsilon$ and $D_3\vec H-\mathrm{rot}\,\vec H=\vec j$. On the sourceless system, therefore, the time-harmonic fields are exactly the pairs annihilated by $N$. On the pairs of <strong>divergence-free</strong> vectors, $D_3$ acts as the curl, and the restriction of $N$ to those pairs is the matrix of the curl system,</p>
 <p>$$
-N\big|_{\mathrm{div}=0}=\begin{pmatrix} \mathrm{rot} & -i\omega\mu \\[2pt] -\sigma & \mathrm{rot} \end{pmatrix},
+N\big|_{\mathrm{div}=0}=\begin{pmatrix} \mathrm{rot} &amp; -i\omega\mu \\[2pt] -\sigma &amp; \mathrm{rot} \end{pmatrix},
 $$</p>
 <p>which is the physical time-harmonic Maxwell operator $M$ up to the ordering of the two rows, with the solenoidal pairs as its natural domain. The difference between the two is exactly what the source means by a "better" object. The domain of the physical operator is a subspace cut out by the divergence conditions, so that the system can only be posed on pairs satisfying them and the operator cannot be iterated without re-imposing them; the domain of $N$ is all pairs of complex-quaternionic functions, with no side condition at all. And the algebra improves with the domain:</p>
 <p>$$
 \boxed{\;N N^{\dagger}=-(\Delta_\Phi+\digamma_{\mathrm{hlm}})\,I_2\;},
 \qquad
-N^{\dagger}=\begin{pmatrix} D_3 & i\omega\mu \\[2pt] \sigma & D_3 \end{pmatrix},
+N^{\dagger}=\begin{pmatrix} D_3 &amp; i\omega\mu \\[2pt] \sigma &amp; D_3 \end{pmatrix},
 \tag{8}
 $$</p>
 <p>as a direct computation with $D_3^2=-\Delta_\Phi$, with the off-diagonal cross terms cancelling because the coefficients are scalars and commute with $D_3$. The square of the quaternionic Maxwell operator is thus a <strong>scalar</strong> Helmholtz operator, exactly as the square of the Dirac operator is a scalar d'Alembertian — the operator is of Dirac type, and $(8)$ is the factorisation on which the function theory rests. That factorisation is what the physical operator lacks: the vector Helmholtz operator is not the square of a first-order operator with scalar symbol, which is why no analogue of the Cauchy kernel exists for the curl system directly, and why the detour through $N$ is what makes one available.</p>
@@ -189,11 +189,11 @@ $$</p>
 <p>Then the change of variables $(10)$ conjugates $N$ to a diagonal operator:</p>
 <p>$$
 C\,N\,C^{-1}
-=\begin{pmatrix} D_3-\alpha & 0 \\[2pt] 0 & D_3+\alpha \end{pmatrix},
+=\begin{pmatrix} D_3-\alpha &amp; 0 \\[2pt] 0 &amp; D_3+\alpha \end{pmatrix},
 \qquad
-C=\begin{pmatrix} 1 & b \\[2pt] 1 & -b \end{pmatrix},
+C=\begin{pmatrix} 1 &amp; b \\[2pt] 1 &amp; -b \end{pmatrix},
 \qquad
-C^{-1}=\frac12\begin{pmatrix} 1 & 1 \\[2pt] b^{-1} & -b^{-1} \end{pmatrix}.
+C^{-1}=\frac12\begin{pmatrix} 1 &amp; 1 \\[2pt] b^{-1} &amp; -b^{-1} \end{pmatrix}.
 \tag{11}
 $$</p>
 <p>The verification is two lines. The first row of $CN$ is $\bigl(D_3-b\sigma,\ -i\omega\mu+bD_3\bigr)$, and $b\sigma=(i\omega\mu/\alpha)\sigma=i\omega\mu\sigma/\alpha=\alpha^2/\alpha=\alpha$, so that row is $\bigl(D_3-\alpha,\ b(D_3-\alpha)\bigr)$; the second row is $\bigl(D_3+\alpha,\ -b(D_3+\alpha)\bigr)$. Multiplying on the right by $C^{-1}$ cancels the off-diagonal entries, because the two contributions to each are equal and opposite, and leaves $D_3\mp\alpha$ on the diagonal, which is $(11)$. In the sourceless case the two diagonal equations are therefore</p>
@@ -229,9 +229,9 @@ $$</p>
 <h2 id="the-helmholtz-null-set-as-two-rotated-copies-of-the-maxwell-null-set">The Helmholtz Null-Set as Two Rotated Copies of the Maxwell Null-Set</h2>
 <p>There is a second structural theorem, which the source states for the Helmholtz null-set. Let</p>
 <p>$$
-\mathcal{R}_\imath:=\ker\bigl((\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2\bigr)
+\mathcal{R}_{\imath}:=\ker\bigl((\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2\bigr)
 $$</p>
-<p>be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\digamma_{\mathrm{hlm}}$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\digamma_{\mathrm{hlm}})f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\imath$ is the <strong>direct sum of two rotated copies of $\ker N$</strong>. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections</p>
+<p>be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\digamma_{\mathrm{hlm}}$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\digamma_{\mathrm{hlm}})f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_{\imath}$ is the <strong>direct sum of two rotated copies of $\ker N$</strong>. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections</p>
 <p>$$
 Q_x+Q_y=I,
 \qquad
@@ -240,9 +240,9 @@ Q_i^2=Q_i,
 Q_xQ_y=Q_yQ_x=0 ,
 \tag{15}
 $$</p>
-<p>built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,k}:=Q_x(\mathcal{R}_\imath)$ and $\mathcal{X}_{2,k}:=Q_y(\mathcal{R}_\imath)$ the theorem reads</p>
+<p>built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,k}:=Q_x(\mathcal{R}_{\imath})$ and $\mathcal{X}_{2,k}:=Q_y(\mathcal{R}_{\imath})$ the theorem reads</p>
 <p>$$
-\mathcal{R}_\imath
+\mathcal{R}_{\imath}
 =\mathcal{X}_{1,k}\oplus\mathcal{X}_{2,k}
 =B_1^{-1}\bigl(\ker N\bigr)\oplus B_2^{-1}\bigl(\ker N\bigr),
 \tag{16}
@@ -275,7 +275,7 @@ $$</p>
 <p>the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta_\Phi+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(4\pi\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.</p>
 <p>The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,</p>
 <p>$$
-\mathcal M_{\mathrm{maxw}}:=C^{-1}\begin{pmatrix} \mathcal{V}_{\mathrm{vek},-\alpha} & 0 \\[2pt] 0 & \mathcal{V}_{\mathrm{vek},\alpha}\end{pmatrix}C ,
+\mathcal M_{\mathrm{maxw}}:=C^{-1}\begin{pmatrix} \mathcal{V}_{\mathrm{vek},-\alpha} &amp; 0 \\[2pt] 0 &amp; \mathcal{V}_{\mathrm{vek},\alpha}\end{pmatrix}C ,
 \qquad
 N\,\mathcal M_{\mathrm{maxw}}=\delta\, I_2 ,
 \tag{20}
@@ -410,7 +410,7 @@ $$</p>
 <td>Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions</td>
 </tr>
 <tr>
-<td>$\mathcal{R}_\imath$</td>
+<td>$\mathcal{R}_{\imath}$</td>
 <td>Metaharmonic pairs $\ker((\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2)$</td>
 </tr>
 <tr>

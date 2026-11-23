@@ -104,7 +104,7 @@ $$
 \Gamma(M)=\bigcup_{P}\Bigl\{z\in\mathbb{C}:\lvert z-m_{PP}\rvert\le\sum_{L\neq P}\lvert m_{PL}\rvert\Bigr\}.
 $$</p>
 <p><strong>Lemma (the complex theorem).</strong> $\sigma(M)\subseteq\Gamma(M)$.</p>
-<p><em>Proof.</em> Let $MX=zX$ with $X\neq0$ and choose $Q$ with $\lvert x_{Q}\rvert\ge\lvert x_{L}\rvert$ for every $L$. The $Q$-th entry of $MX=zX$ reads $(z-m_{QQ})x_{Q}=\sum_{L\neq Q}m_{QL}x_{L}$; taking moduli, dividing by $\lvert x_{Q}\rvert>0$ and bounding $\lvert x_{L}\rvert\le\lvert x_{Q}\rvert$ gives $\lvert z-m_{QQ}\rvert\le\sum_{L\neq Q}\lvert m_{QL}\rvert$.</p>
+<p><em>Proof.</em> Let $MX=zX$ with $X\neq0$ and choose $Q$ with $\lvert x_{Q}\rvert\ge\lvert x_{L}\rvert$ for every $L$. The $Q$-th entry of $MX=zX$ reads $(z-m_{QQ})x_{Q}=\sum_{L\neq Q}m_{QL}x_{L}$; taking moduli, dividing by $\lvert x_{Q}\rvert&gt;0$ and bounding $\lvert x_{L}\rvert\le\lvert x_{Q}\rvert$ gives $\lvert z-m_{QQ}\rvert\le\sum_{L\neq Q}\lvert m_{QL}\rvert$.</p>
 <p><strong>Theorem (the Gershgorin theorem for reduced biquaternion tensors).</strong>
 $$
 \boxed{\;
@@ -116,7 +116,7 @@ $$</p>
 $$
 \lVert\lambda\rVert=\bigl\lvert\lambda\bar\lambda\lambda_{\mathrm{ts}}\lambda^{*}\bigr\rvert^{1/4}=\lvert\lambda_{(1)}\lambda_{(2)}\rvert^{1/2}=\lvert\langle\lambda\rangle_{\mathrm{ts}}\rvert^{1/2},
 $$
-where $\lambda\bar\lambda\lambda_{\mathrm{ts}}\lambda^{*}=\langle\lambda\rangle_{\mathrm{ts}}\overline{\langle\lambda\rangle_{\mathrm{ts}}}$ and $\langle\lambda\rangle_{\mathrm{ts}}=\lambda_{(1)}\lambda_{(2)}$; it states the inclusion with this modulus. That expression is not a norm on the algebra. It vanishes on the nonzero zero divisors, $\lVert\Pi_+\rVert=\lVert\Pi_-\rVert=0$, so the division by the modulus of the maximal entry of $X$, which is the last step of the source's proof, is a division by zero when that entry is a zero divisor; and it fails the triangle inequality, $\lVert\Pi_++\Pi_-\rVert=1$ while $\lVert\Pi_+\rVert+\lVert\Pi_-\rVert=0$, so the bound of the modulus of a sum by the sum of the moduli, which is the step before, does not follow. <strong>The inclusion of the source itself fails</strong>: for $A=\begin{smallmatrix}0&1\\1&0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$, the tensor whose first column is $(\Pi_+,\Pi_+)^{\mathsf T}$ and whose second column is zero is an eigentensor of $\lambda$, while $\lVert\lambda\rVert=\sqrt{\lvert1\cdot100\rvert}=10$ and the radius is $1$ at each of the two diagonal indices. The coordinate form above is the correct statement, and the maximal-entry argument over $\mathbb{C}$ proves it.</p>
+where $\lambda\bar\lambda\lambda_{\mathrm{ts}}\lambda^{*}=\langle\lambda\rangle_{\mathrm{ts}}\overline{\langle\lambda\rangle_{\mathrm{ts}}}$ and $\langle\lambda\rangle_{\mathrm{ts}}=\lambda_{(1)}\lambda_{(2)}$; it states the inclusion with this modulus. That expression is not a norm on the algebra. It vanishes on the nonzero zero divisors, $\lVert\Pi_+\rVert=\lVert\Pi_-\rVert=0$, so the division by the modulus of the maximal entry of $X$, which is the last step of the source's proof, is a division by zero when that entry is a zero divisor; and it fails the triangle inequality, $\lVert\Pi_++\Pi_-\rVert=1$ while $\lVert\Pi_+\rVert+\lVert\Pi_-\rVert=0$, so the bound of the modulus of a sum by the sum of the moduli, which is the step before, does not follow. <strong>The inclusion of the source itself fails</strong>: for $A=\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$, the tensor whose first column is $(\Pi_+,\Pi_+)^{\mathsf T}$ and whose second column is zero is an eigentensor of $\lambda$, while $\lVert\lambda\rVert=\sqrt{\lvert1\cdot100\rvert}=10$ and the radius is $1$ at each of the two diagonal indices. The coordinate form above is the correct statement, and the maximal-entry argument over $\mathbb{C}$ proves it.</p>
 <p><strong>Remark (the shape of the bound).</strong> The containing set of the theorem is $\Gamma(A_{(1)})\times\mathbb{C}\cup\mathbb{C}\times\Gamma(A_{(2)})$ in the two coordinates: a union of two cylinders over the complex plane, each with the other coordinate as its axis. It constrains one coordinate only and is unbounded, unlike a classical Gershgorin disc, and it can be strictly larger than the spectrum.</p>
 <h2 id="powers-and-roots">Powers and Roots</h2>
 <p><strong>Theorem (the eigenvalues of a power).</strong> Let $A^{n}=a\mathrm I$ for a positive integer $n$ and an element $a$, and let $\lambda$ be an eigenvalue of $A$ with eigentensor $X$. Then $\lambda_{(i)}^{n}=a_{(i)}$ for each coordinate $i$ with $X_{(i)}\neq0$. In particular
@@ -124,7 +124,7 @@ $$
 \sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}^{n}=a_{(1)}\ \text{or}\ \lambda_{(2)}^{n}=a_{(2)}\bigr\}.
 $$</p>
 <p><em>Proof.</em> By induction $A^{n}X=\lambda^{n}X$, and $A^{n}=a\mathrm I$ gives $\lambda^{n}X=aX$. In the coordinate $i$ with $X_{(i)}\neq0$ this is $(\lambda_{(i)}^{n}-a_{(i)})X_{(i)}=0$, and $X_{(i)}$ has a nonzero entry, so $\lambda_{(i)}^{n}=a_{(i)}$. The inclusion follows because some coordinate of $X$ is nonzero.</p>
-<p><strong>Corollary (the roots).</strong> With $a$ an invertible element, so that $a_{(1)},a_{(2)}\neq0$, and $a_{(k)}=r_{k}e^{i\theta_{k}}$, $0\le\theta_{k}<2\pi$, the roots of $\lambda^{n}=a$ are
+<p><strong>Corollary (the roots).</strong> With $a$ an invertible element, so that $a_{(1)},a_{(2)}\neq0$, and $a_{(k)}=r_{k}e^{i\theta_{k}}$, $0\le\theta_{k}&lt;2\pi$, the roots of $\lambda^{n}=a$ are
 $$
 \boxed{\;
 \lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n}
@@ -139,7 +139,7 @@ with $s,t=0,\dots,n-1$.</p>
 <li>The union theorem: an eigentensor of one coordinate tensor, its other coordinate zero, is an eigentensor of $A$ at every value of the free coordinate of $\lambda$.</li>
 <li>The maximal-entry step of the Gershgorin lemma, on a constructed eigenpair.</li>
 <li>The restriction in the pairing theorem: for $A=\mathrm I$ and $\lambda=\Pi_++100\Pi_-$, the eigentensor with $X_{(2)}=0$ satisfies $AX=\lambda X$, while $100$ is not an eigenvalue of the second coordinate tensor.</li>
-<li>The counterexample to the source's inclusion: for $A=\begin{smallmatrix}0&1\\1&0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$ the modulus is $10$ and the radius is $1$.</li>
+<li>The counterexample to the source's inclusion: for $A=\begin{smallmatrix}0&amp;1\\1&amp;0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$ the modulus is $10$ and the radius is $1$.</li>
 <li>The two counterexamples of the roots: for $A=\mathrm I$ and $n=2$, the value $(-1)\Pi_++(-1)\Pi_-$ is not an eigenvalue, and $(1)\Pi_++(5)\Pi_-$ is.</li>
 <li>The clause of the power theorem: for $A=2\mathrm I$ and $n=2$, the eigenvalue $2\Pi_++3\Pi_-$ has $\lambda_{(2)}^{2}=9\neq4=a_{(2)}$, and its eigentensor has zero second coordinate.</li>
 <li>The relaxed hypothesis of the power theorem: for $A=\mathrm I\Pi_++A_{(2)}\Pi_-$ with $A_{(2)}^{2}=0$ and $a=\Pi_+$, the eigenvalue $\Pi_++5\Pi_-$ has $\lambda_{(2)}^{2}=25\neq0=a_{(2)}$, and its eigentensor has zero second coordinate.</li>

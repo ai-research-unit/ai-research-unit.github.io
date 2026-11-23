@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturalness in an emergent analogue spacetime — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Naturalness in emergent spacetime - gr-qc_0512139.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="naturalness-in-an-emergent-analogue-spacetime"><strong>Naturalness in an emergent analogue spacetime</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0512139v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stefano Liberati, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 17 March 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Naturalness in emergent spacetime - gr-qc_0512139-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Naturalness in emergent spacetime - gr-qc_0512139.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-hierarchy-problem-and-naturalness.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Naturalness in emergent spacetime - gr-qc_0512139.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Effective field theory puts bounds on Planck-suppressed Lorentz violation, but it cannot explain why small violations stay small. The authors build an emergent model from a two-component condensate with laser coupling. They compute the dispersion relation from the microscopic Hamiltonian rather than from an effective expansion. The quadratic correction is suppressed by the mass-generating scale while the quartic one is of order unity. That combination is exactly what the naturalness problem says should not happen, and the authors argue the problem does not arise here.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"There are however technical problems in the EFT framework when it comes to ensuring that small Lorentz violations remain small — this is the essence of the 'naturalness' problem."</p>
+<h3 id="the-model">The model</h3>
+<p>"we consider the class of two-component BECs subject to laser-induced transitions between the components, and we show that this model is an example for Lorentz invariance violation due to ultraviolet physics."</p>
+<h3 id="the-claim">The claim</h3>
+<p>"our model explicitly avoids the 'naturalness problem', and makes specific suggestions regarding how to construct a physically reasonable quantum gravity phenomenology."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"The suppression of $\eta_2$, combined with the non-suppression of $\eta_4$, is precisely the statement that the 'naturalness problem' does not arise in the current model."</p>
+<h3 id="what-the-result-is-not">What the result is not</h3>
+<p>"We stress this is not a 'tree level' result as the dispersion relation was computed directly from the fundamental Hamiltonian and was not derived via any EFT reasoning."</p>
+<h3 id="what-does-the-work">What does the work</h3>
+<p>"Instead the smallness of $\eta_2$ is directly related to the mass-generating mechanism."</p>
+<h3 id="the-caution">The caution</h3>
+<p>"avoidance of the naturalness problem is not directly related to the tuning of our system to reproduce SR in the hydrodynamic limit."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-naturalness-solved-by-a-mass-mechanism">1. Naturalness solved by a mass mechanism</h3>
+<p><strong>The idea.</strong> The suppressed coefficient is small because of how mass is generated, not because of a symmetry or a tuning.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-hierarchy-problem-and-naturalness.md</code> sets out the problem of small numbers. This paper offers a mechanism where the small number has a source, which is the shape any answer must take.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hierarchy-problem-and-naturalness.md</code>, in the discussion of solutions.</p>
+<p><strong>What stands in the way.</strong> The mechanism is the condensate's. Ranked first, because it is a positive example for a problem stated as unsolved.</p>
+<h3 id="2-computed-from-the-hamiltonian-not-the-eft">2. Computed from the Hamiltonian, not the EFT</h3>
+<p><strong>The idea.</strong> The dispersion relation comes from the microscopic theory, so the effective expansion is not assumed.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would benefit from a case where a low-energy expansion was checked against a microscopic computation. The target has no such check.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of method.</p>
+<p><strong>What stands in the way.</strong> The microscopic theory is a condensate. Ranked second.</p>
+<h3 id="3-reproducing-the-lorentz-limit-is-not-enough">3. Reproducing the Lorentz limit is not enough</h3>
+<p><strong>The idea.</strong> Getting the right low-energy behaviour does not fix the size of the corrections.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats the Lorentz-invariant limit as the physical case. A model can reproduce that limit and still have large higher-order terms, which qualifies the target's use of the limit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the limit.</p>
+<p><strong>What stands in the way.</strong> The point is negative. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

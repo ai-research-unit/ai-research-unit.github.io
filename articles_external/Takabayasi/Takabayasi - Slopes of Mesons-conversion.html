@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slopes of Meson Trajectories — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Mesons.pdf — a PDF in a subfolder of /home/hp/Documents/Material/…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="slopes-of-meson-trajectories"><strong>Slopes of Meson Trajectories</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — preprint DPNU-5-77, Nagoya University, dated 9 February 1977</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; departmental preprint scan</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>unpublished preprint (DPNU-5-77); five pages</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Slopes of Mesons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Mesons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Slopes of Mesons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the bilocal model's trajectory slope in closed form and shows it inversely proportional to the <em>square</em> of the constituent mass. With a universal force constant that one relation predicts the $\rho$, $\varphi$, $\psi$ slope ratios — and hence a constituent mass ratio $m_c:m_\pi:m_\Lambda=5.4\text{–}3.1:1.24:1$ from measured slopes, reversing the usual direction. Unequal masses give the $K^*$ and $D^*$ slopes, which agree with data. This turns non-universality of slopes into evidence for the model.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Empirical indications that the slopes of meson trajectories are not universal seem to be emerging recently, especially in connection with the new heavy mesons w~s. In this Note we pres- ent simple relations on those slope parameters a', basing on our theoretical model. The model is founded on new classical theory of relativistic two-body system, where the constituents are bound by spacelike action-at-a-distance. Very briefly it is as follows."</p>
+<p>"A rela- tivistic motion of such a system is described in any case by two timelike worid lines W(l) and w&lt; 2 l. We consider a one-parameter sequence of spacelike surfaces {IT} a~d denote the intersections"</p>
+<p>$$
+\big(m_1x^{(1)}_{\ \mu}(\tau)+m_2x^{(2)}_{\ \mu}(\tau)\big)\big(x^{(1)\mu}(\tau)-x^{(2)\mu}(\tau)\big)=0
+$$</p>
+<p>"e satisfied, where rna are positive constants. Then we postulate *) Details have been given in previous papers." $\delta A=0$ with a Lagrangian built from $X_\mu=(m_1x^{(1)}_\mu+m_2x^{(2)}_\mu)/(m_1+m_2)$, $\xi_\mu=x^{(1)}_\mu-x^{(2)}_\mu$ and $\dot X^{2}$, $\dot\xi^{2}$, where $U$ is a scalar function of $\xi^{2}$ alone having the dimension $[m^{2}]$. From (2) with (3) all basic equations for our system are derived. Especially we can verify that as its consequence the relation (1) itself is actually reproduced. This is essential for the consistency and proper interpretation of theory.</p>
+<h3 id="the-non-relativistic-limit-fixes-what">The non-relativistic limit fixes what</h3>
+<p>$m_0$ means</p>
+<p>"We have shown that this $m_0$ means the rest mass of each constituent in the 'weak interaction limit', i.e., the limit in which the force parameter occurring in $U$ is made small adiabatically, and also that the theory tends in the non-relativistic limit just to Newtonian mechanics for two particles moving under the mutual central potential $V(\xi^{2})$. Actually we take the case of Hooke-type force, $U=\kappa^{2}\xi^{2}/4$ in effect, where $\kappa$ is the force constant in the customary definition. The corresponding quantum theory is represented by the bilocal equation and the subsidiary condition: $$ \Big[-\frac{\partial^{2}}{\partial X^{2}}-\frac{\partial^{2}}{\partial\xi^{2}}+2m_0^{2}\kappa^{2}\xi^{2}+b\Big]\psi(X,\xi)=0, \qquad \frac{\partial}{\partial X^{2}}\cdot\frac{\partial}{\partial\xi^{2}}\,\psi=0 . $$" ere b is a const ant. This shoul d be equal to 4mo owing to (4}, but we do not aqher e to this idert tifica tion. The above theor y is quark regar ded as suppl ying a simpl e reali zatio n of relat ivist ic ensur ed - mode l for ~esonic state s, where the quark confi neme nt is at a by the very natur e of our 'cons truct ive force ', which acts actio n sp9-c elike dista nce insid e a hadro n only "</p>
+<h3 id="the-slope-formula-and-the-central-prediction">The slope formula and the central prediction</h3>
+<p>"The quant um state s of our system which are solut ions to daugh - and (7} lie on linea rly-r ising leadi ng traje ctory and on its 2 ter traje ctori es. In fact the squar ed mass m is given by the formu la , (8} where" $m^{2}=\kappa^{2}(2n_r+l+\text{const})$ "u la , (8} where i (i=0 1 1,2,· ··} is the orbit al angul ar momentum, while nr 3 - (; (n . r =0 I 1 I 2 I ···) is the r~ial quantum number, which is zero for the ~· leading trajectory . We assume that the constitue nts have ! spins" themselve s and consider the states where they are bound with par- allel spins; ;then the total spin J of the system is J=.Hl,__ !lc, !lc.-1. A distinct "</p>
+<p>"A distinct feature of our theory is the fact that it clarifies the precise structural meaning of the parameter $s$ occurring in the basic equations. Thus (8) gives the slope parameter" $\alpha'=1/(2\kappa^{2}m_0^{2})$.</p>
+<p>"Since we assume the universal ity of the force constant K, {9) implies that the slopes of p, ~,and~ trajectori es stand in the ratios • 1 1 1 , , -2 -2 2 a~ a~ = mn rnA m c I"</p>
+<p>$$
+\alpha'_\rho:\alpha'_\varphi:\alpha'_\psi=\frac{1}{m_\pi^{2}}:\frac{1}{m_\Lambda^{2}}:\frac{1}{m_c^{2}},
+$$</p>
+<p>"2 2 a~ a~ = mn rnA m c I (10) where mn, rnA, and me denote the rest masses of n{or p)-, ).-, and charmed quarks, respectiv ely, when they were quasi-free . Empir- ically for vector meson trajectori es the slopes are estimated to be<em>) a~ :: 0.88 , a;::: 0.79 , &lt;l~</em> ::: 0.82 (11) -2 in Gev • For the ~-trajectory it is more ambiguous : a; : : 0.38 - 0.50 . (12) (The value 0.38 is obtained when one identifies x&lt;3.55, 3.", the two ends coming from two different identifications of the excited states.</p>
+<p>"serting (11) and (12) into (10) we get the r.atios m ::: 1 : 1.24 : 5.4 - c 3.1 , (13) which appear to be reasonable numbers. (If we take m -0.30 for n example, (13) predicts rnA -0.37, mc-1.6 --0.93, all in Gev.) In passing we note that if one employed the further relation b=4m~ we get the relation 3m~-m~,=8m; , which yields mc~l.38 Gev. Next, we consider the case where the co."</p>
+<h3 id="unequal-constituents">Unequal constituents</h3>
+<p>"Next, we consider the case where the constituent masses, $m_1$ and $m_2$, are unequal. Since the potential (5) is assumed to be universal, the basic equations for the system remain of the same form as (6) and (7), though with different coefficients. For this case the relation (9) is generalized" $\alpha'=1/\big(2\kappa^{2}\cdot 4m_1m_2^{2}/(m_1+m_2)^{2}\big)$ or the equivalent of Eq. (5.8) of Ref. 2. "Ref. 2). If we put m and m as mn,._,and m,1\ ;-Eq. (14) 1 2 gives the slope of K* trajectory. If we employ there the values of a~ and a¢ given in (11) (together with the relation (9) ) , this predicts for ai* the value 0.82, which is in good agreement with its value listed in (11). Similarly (14Y predicts a *:::0.36--0.5 3. 0 1) T. Takabayasi, Prog. Theor. Phys."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-slope-is-inversely-proportional-to-the-square-of-the-constituent-mass">1. The slope is inversely proportional to the square of the constituent mass</h3>
+<p><strong>The idea.</strong> $\alpha'=1/(2\kappa^{2}m_0^{2})$ with a universal $\kappa$. Slope non-universality is then not an anomaly but a measurement of constituent mass, and the direction is the opposite of the usual one: instead of fitting masses and predicting slopes, one reads slopes off the data and predicts mass ratios.</p>
+<p><strong>What it would add.</strong> A slope formula with a derivation. <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) asks which quantities a spectrum determines; here the slope determines a mass ratio and nothing more, since $\kappa$ cancels in ratios.</p>
+<p><strong>Where it lands.</strong> §<em>What the Spectrum Fixes</em>, as the ratio-only statement.</p>
+<p><strong>What stands in the way.</strong> The prediction depends on which states are assigned to the $\psi$ trajectory, and Takabayasi concedes that this is ambiguous by a factor $1.3$; the "good agreement" for $K^*$ uses $\alpha'_\rho$ and $\alpha'_\varphi$ as inputs, so only one number is genuinely predicted. </p>
+<h3 id="2-a-confining-force-that-acts-only-at-spacelike-separation">2. A confining force that acts only at spacelike separation</h3>
+<p><strong>The idea.</strong> The binding force acts "tio n sp9-c elike dista nce insid e a hadro n only; where". Confinement is a property of the <em>character</em> of the force — it operates on the relative coordinate, not on the centre of mass — rather than of an infinite energy barrier. Between hadrons the same constituents interact through a bilocal coupling that respects causality. </p>
+<p><strong>What it would add.</strong> A reason why the confining force does not leak out. <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em> (<code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>) argues in §<em>The Other Confinement Picture: A Linear Boundary Condition</em> that confinement can be a boundary condition on field support; here the boundary is the spacelike relative coordinate. </p>
+<p><strong>Where it lands.</strong> §<em>The Other Confinement Picture: A Linear Boundary Condition</em>, as the spacelike-force version. </p>
+<p><strong>What stands in the way.</strong>"Spacelike" is a property of the configuration, not of the force law, and any two-body force is a function of the relative coordinate; the claim needs the subsidiary condition to be doing the work, and the subsidiary condition is itself imposed. </p>
+<h3 id="3-the-first-order-constraint-is-reproduced-by-the-action-principle-not-put-in">3. The first-order constraint is reproduced by the action principle, not put in</h3>
+<p><strong>The idea.</strong> The condition $(m_1x^{(1)}+m_2x^{(2)})\cdot(x^{(1)}-x^{(2)})=0$ is not an extra gauge choice but a consequence of the action principle with the stated Lagrangian. Consistency then <em>verifies</em> it. </p>
+<p><strong>What it would add.</strong> A constraint that is derived, not imposed. The companion paper of this folder on constraints and centre-of-mass treats them directly; here one follows from a Lagrangian. </p>
+<p><strong>Where it lands.</strong> The corpus's discussion of subsidiary conditions in <em>Confinement and the Loss of Partonic Information</em> §<em>What the Subsidiary Condition Does</em>. </p>
+<p><strong>What stands in the way.</strong> The verification is reported as "we can verify", with no display of the calculation.</p>
+<h3 id="4-prediction-of-the">4. Prediction of the</h3>
+<p>$D^*$ slope before the state was established</p>
+<p><strong>The idea.</strong> The unequal-mass generalisation predicts $\alpha'_D\simeq0.36-0.5$ from the $\rho$ and $\varphi$ slopes alone. That is a number for a charmed-strange trajectory computed without any charmed data.</p>
+<p><strong>What it would add.</strong> A falsifiable prediction from no charmed data. <em>Charged Lepton Flavour Violation: One Operator and the Channels That Cannot See It</em> (<code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code>) models a prediction with an explicit blind spot; here the blind spot ($\psi$) and the prediction ($\alpha'_D$) are separate.</p>
+<p><strong>Where it lands.</strong> The corpus's treatment of predictions and their robustness; the natural home is <em>The Spectrum of a Lorentz Rotor</em>, §<em>What the Spectrum Fixes</em>.</p>
+<p><strong>What stands in the way.</strong> The range $0.36-0.5$ is wide, covering much of what a loose fit allows.</p>
+<p>The remainder, one line each. That the unequal-mass slope factor is asymmetric in $m_1$ and $m_2$ is a structural oddity of the model.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -111,13 +111,13 @@ $$</p>
 $$</p>
 <p>The two dimensions add to $r_{k}^{2}=\dim A_{kk}$, and the split is the one of <em>The Matrix Algebra $M_n(\mathbb{R})$</em> applied to the smaller algebra $A_{kk}\cong M_{r_{k}}(\mathbb{R})$.</p>
 <p><strong>The two parts of a diagonal corner close under different products.</strong> The symmetric elements are closed under $X\circ Y=\tfrac12(XY+YX)$ and the antisymmetric ones under $[X,Y]=XY-YX$; no single product closes on the whole corner.</p>
-<p><strong>The trace form is positive definite on the symmetric part and negative definite on the antisymmetric part.</strong> For a symmetric $S$ in the corner, $\operatorname{tr}(S^{2})=\sum S_{ij}^{2}>0$, and for an antisymmetric $K$, $\operatorname{tr}(K^{2})=-\sum K_{ij}^{2}<0$. The corner therefore contributes $r_{k}(r_{k}+1)/2$ positive and $r_{k}(r_{k}-1)/2$ negative directions to the inertia.</p>
+<p><strong>The trace form is positive definite on the symmetric part and negative definite on the antisymmetric part.</strong> For a symmetric $S$ in the corner, $\operatorname{tr}(S^{2})=\sum S_{ij}^{2}&gt;0$, and for an antisymmetric $K$, $\operatorname{tr}(K^{2})=-\sum K_{ij}^{2}&lt;0$. The corner therefore contributes $r_{k}(r_{k}+1)/2$ positive and $r_{k}(r_{k}-1)/2$ negative directions to the inertia.</p>
 <h2 id="the-total-identity">The Total Identity</h2>
 <p><strong>The symmetric dimensions of all the corners add to $n(n+1)/2$.</strong></p>
 <p>$$
-\sum_{k=1}^{n}\frac{r_{k}(r_{k}+1)}{2}+\sum_{k<l}r_{k}r_{l}=\frac{n(n+1)}{2}.
+\sum_{k=1}^{n}\frac{r_{k}(r_{k}+1)}{2}+\sum_{k&lt;l}r_{k}r_{l}=\frac{n(n+1)}{2}.
 $$</p>
-<p><em>Proof.</em> The second sum is half of $n^{2}-\sum_{k}r_{k}^{2}$, since $\big(\sum_{k}r_{k}\big)^{2}=\sum_{k}r_{k}^{2}+2\sum_{k<l}r_{k}r_{l}$ and $\sum_{k}r_{k}=n$. Hence the left side equals</p>
+<p><em>Proof.</em> The second sum is half of $n^{2}-\sum_{k}r_{k}^{2}$, since $\big(\sum_{k}r_{k}\big)^{2}=\sum_{k}r_{k}^{2}+2\sum_{k&lt;l}r_{k}r_{l}$ and $\sum_{k}r_{k}=n$. Hence the left side equals</p>
 <p>$$
 \frac{\sum_{k}r_{k}^{2}+n}{2}+\frac{n^{2}-\sum_{k}r_{k}^{2}}{2}=\frac{n^{2}+n}{2}.
 $$</p>
@@ -129,24 +129,24 @@ $$</p>
 <h2 id="the-grading-of-the-symmetric-half">The Grading of the Symmetric Half</h2>
 <p><strong>The symmetric half is the direct sum of its corner contributions.</strong></p>
 <p>$$
-\operatorname{Sym}_n=\bigoplus_{k=1}^{n}\operatorname{Sym}(A_{kk})\ \oplus\ \bigoplus_{k<l}\operatorname{Sym}(A_{kl}+A_{lk}).
+\operatorname{Sym}_n=\bigoplus_{k=1}^{n}\operatorname{Sym}(A_{kk})\ \oplus\ \bigoplus_{k&lt;l}\operatorname{Sym}(A_{kl}+A_{lk}).
 $$</p>
-<p><em>Proof.</em> Every $X\in\operatorname{Sym}_n$ splits as $X=\sum_{k,l}X_{kl}$ with $X_{kl}\in A_{kl}$, and the symmetry gives $X_{kl}^{\mathsf T}=X_{lk}$. So $X$ is determined by the diagonal blocks $X_{kk}\in A_{kk}$ and by the pairs $(X_{kl},X_{lk})$ with $k<l$, each pair symmetric in the sense of the corner-pair proposition. The sum of the displayed spaces is therefore the whole half, and the sum is direct because the corners are independent.</p>
-<p><strong>The graded pieces are the eigenspaces of the frame's Peirce operators cut by the transpose.</strong> The piece labelled $k$ is $\operatorname{Sym}(A_{kk})$, the fixed part of the corner $A_{kk}$; the piece labelled $k<l$ is the fixed part of $A_{kl}+A_{lk}$. The labels are the unordered pairs $\{k,l\}$, and there are $n(n+1)/2$ of them.</p>
+<p><em>Proof.</em> Every $X\in\operatorname{Sym}_n$ splits as $X=\sum_{k,l}X_{kl}$ with $X_{kl}\in A_{kl}$, and the symmetry gives $X_{kl}^{\mathsf T}=X_{lk}$. So $X$ is determined by the diagonal blocks $X_{kk}\in A_{kk}$ and by the pairs $(X_{kl},X_{lk})$ with $k&lt;l$, each pair symmetric in the sense of the corner-pair proposition. The sum of the displayed spaces is therefore the whole half, and the sum is direct because the corners are independent.</p>
+<p><strong>The graded pieces are the eigenspaces of the frame's Peirce operators cut by the transpose.</strong> The piece labelled $k$ is $\operatorname{Sym}(A_{kk})$, the fixed part of the corner $A_{kk}$; the piece labelled $k&lt;l$ is the fixed part of $A_{kl}+A_{lk}$. The labels are the unordered pairs $\{k,l\}$, and there are $n(n+1)/2$ of them.</p>
 <p><strong>At a complete frame every piece is a line.</strong> With all $r_{k}=1$ the diagonal pieces have dimension $1$ and the pair pieces too, so the symmetric half is a direct sum of $n+n(n-1)/2=n(n+1)/2$ lines. This is the finest grading the frame gives.</p>
 <p><strong>The grading refines the two-block Peirce decomposition.</strong> Taking the coarse frame $P_{1}=E$, $P_{2}=\mathrm{I}-E$ with ranks $r$ and $n-r$ gives three pieces: $\operatorname{Sym}(A_{11})$ of dimension $r(r+1)/2$, $\operatorname{Sym}(A_{22})$ of dimension $(n-r)(n-r+1)/2$ and $\operatorname{Sym}(A_{12}+A_{21})$ of dimension $r(n-r)$. These are the three Peirce spaces of the Jordan algebra $\operatorname{Sym}_n$ relative to $E$, in the order $1$, $0$, $\tfrac12$.</p>
 <h2 id="the-grading-of-the-antisymmetric-half">The Grading of the Antisymmetric Half</h2>
 <p><strong>The antisymmetric half is graded the same way.</strong></p>
 <p>$$
-\operatorname{Skew}_n=\bigoplus_{k=1}^{n}\operatorname{Skew}(A_{kk})\ \oplus\ \bigoplus_{k<l}\operatorname{Skew}(A_{kl}+A_{lk}).
+\operatorname{Skew}_n=\bigoplus_{k=1}^{n}\operatorname{Skew}(A_{kk})\ \oplus\ \bigoplus_{k&lt;l}\operatorname{Skew}(A_{kl}+A_{lk}).
 $$</p>
-<p>The proof is the same computation with $X_{lk}=-X_{kl}^{\mathsf T}$, and the dimensions are $r_{k}(r_{k}-1)/2$ and $r_{k}r_{l}$. At a complete frame the diagonal pieces vanish, and the antisymmetric half is a direct sum of $n(n-1)/2$ lines, one for each pair $k<l$.</p>
+<p>The proof is the same computation with $X_{lk}=-X_{kl}^{\mathsf T}$, and the dimensions are $r_{k}(r_{k}-1)/2$ and $r_{k}r_{l}$. At a complete frame the diagonal pieces vanish, and the antisymmetric half is a direct sum of $n(n-1)/2$ lines, one for each pair $k&lt;l$.</p>
 <p><strong>The antisymmetric half is a Lie algebra graded by its corners.</strong> $\operatorname{Skew}_n=\mathfrak{so}(n)$ is closed under the commutator, and the bracket of two corner pieces lands in the piece named by the surviving indices, which is the root-space pattern of $\mathfrak{so}(n)$ read in the frame.</p>
 <h2 id="the-two-halves-over-math125-and-over-math126">The Two Halves over $\mathbb{R}$ and over $\mathbb{C}$</h2>
 <p><strong>Over $\mathbb{R}$ the two halves are different algebras.</strong> $\operatorname{Sym}_n$ is closed under the anticommutator and is a formally real Jordan algebra; $\operatorname{Skew}_n$ is closed under the commutator and is the Lie algebra $\mathfrak{so}(n)$ of the orthogonal group. The dimensions differ, $n(n+1)/2$ against $n(n-1)/2$, and the trace form has opposite signs on the two halves.</p>
 <p><strong>Over $\mathbb{C}$ the same two eigenspaces exist, and the form on them is isotropic.</strong> Complexifying gives $\operatorname{Sym}_n(\mathbb{C})$ and $\operatorname{Skew}_n(\mathbb{C})$, of complex dimensions $n(n+1)/2$ and $n(n-1)/2$, and the corner exchange $A_{kl}^{\mathsf T}=A_{lk}$ holds for a complex symmetric frame word for word. What the complex picture loses is the sign: over $\mathbb{C}$ the form $\operatorname{tr}(XY)$ vanishes on nonzero elements of both halves. A symmetric example at $n=2$ is</p>
 <p>$$
-X=\begin{pmatrix}1&i\\ i&-1\end{pmatrix},\qquad X^{2}=0,
+X=\begin{pmatrix}1&amp;i\\ i&amp;-1\end{pmatrix},\qquad X^{2}=0,
 $$</p>
 <p>and an antisymmetric one at $n=3$ is built from $Y_{12}=1$, $Y_{13}=i$, whose square has zero trace. So over $\mathbb{C}$ neither half is definite and the sign that separates them over $\mathbb{R}$ has no meaning.</p>
 <p><strong>The inertia of the trace form is the real invariant.</strong> Over $\mathbb{R}$ the form $\langle X,Y\rangle=\operatorname{tr}(XY)$ has inertia $\big(n(n+1)/2,\,n(n-1)/2\big)$, positive on $\operatorname{Sym}_n$ and negative on $\operatorname{Skew}_n$. A complex bilinear form has no inertia, so the definite split computed here is a real statement.</p>
@@ -186,7 +186,7 @@ $$</p>
 <p>and $10=4\cdot5/2$ in all three cases. The antisymmetric totals are $1+1+4=6$, $3+0+3=6$ and $1+0+0+2+2+1=6$, which is $4\cdot3/2$.</p>
 <p><strong>The corner dimensions are the predicted ones.</strong> With the rank vector $(2,1,1)$ the corner pairs give symmetric and antisymmetric dimensions $2,2$ for $(0,1)$ and $(0,2)$, and $1,1$ for $(1,2)$; the diagonal corner of rank $2$ gives $3,1$ and the two corners of rank $1$ give $1,0$. The numbers agree with $r_{k}r_{l}$ and $r_{k}(r_{k}\pm1)/2$.</p>
 <h2 id="summary">Summary</h2>
-<p>A symmetric frame $P_{k}=P_{k}^{\mathsf T}$ makes the transpose exchange the corners, $A_{kl}^{\mathsf T}=A_{lk}$, so each corner pair $A_{kl}+A_{lk}$ with $k\ne l$ splits into a symmetric part and an antisymmetric part, both of dimension $r_{k}r_{l}$, and each diagonal corner $A_{kk}$ splits into $\operatorname{Sym}(A_{kk})$ of dimension $r_{k}(r_{k}+1)/2$ and $\operatorname{Skew}(A_{kk})$ of dimension $r_{k}(r_{k}-1)/2$. The symmetric dimensions satisfy $\sum_{k}r_{k}(r_{k}+1)/2+\sum_{k<l}r_{k}r_{l}=n(n+1)/2$ and the antisymmetric ones $n(n-1)/2$, the two sums adding to $n^{2}$; at $n=4$ the rank vectors $(2,2)$, $(3,1)$ and $(2,1,1)$ all give $10$ and $6$. The two halves are therefore graded by the frame, with the pairs $\{k,l\}$ as index set. The grading is a real statement: the eigenvalues are $\pm1$, the pieces are real subspaces of real dimensions $r_{k}r_{l}$, the trace form has inertia $(n(n+1)/2,n(n-1)/2)$, and over $\mathbb{C}$ the same two subspaces exist but the form is isotropic on both.</p>
+<p>A symmetric frame $P_{k}=P_{k}^{\mathsf T}$ makes the transpose exchange the corners, $A_{kl}^{\mathsf T}=A_{lk}$, so each corner pair $A_{kl}+A_{lk}$ with $k\ne l$ splits into a symmetric part and an antisymmetric part, both of dimension $r_{k}r_{l}$, and each diagonal corner $A_{kk}$ splits into $\operatorname{Sym}(A_{kk})$ of dimension $r_{k}(r_{k}+1)/2$ and $\operatorname{Skew}(A_{kk})$ of dimension $r_{k}(r_{k}-1)/2$. The symmetric dimensions satisfy $\sum_{k}r_{k}(r_{k}+1)/2+\sum_{k&lt;l}r_{k}r_{l}=n(n+1)/2$ and the antisymmetric ones $n(n-1)/2$, the two sums adding to $n^{2}$; at $n=4$ the rank vectors $(2,2)$, $(3,1)$ and $(2,1,1)$ all give $10$ and $6$. The two halves are therefore graded by the frame, with the pairs $\{k,l\}$ as index set. The grading is a real statement: the eigenvalues are $\pm1$, the pieces are real subspaces of real dimensions $r_{k}r_{l}$, the trace form has inertia $(n(n+1)/2,n(n-1)/2)$, and over $\mathbb{C}$ the same two subspaces exist but the form is isotropic on both.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

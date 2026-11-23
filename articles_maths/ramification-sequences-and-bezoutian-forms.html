@@ -138,7 +138,7 @@ $$</p>
 s_g(y \bmod g) = \sum_{i=1}^n \frac{y(\alpha_i)}{g'(\alpha_i)} = \operatorname{Tr}_{E_g/F}\!\left(\frac{y(\vartheta_{\mathrm{rts}})}{g'(\vartheta_{\mathrm{rts}})}\right),
 $$</p>
 <p>the last term being the trace of the element $y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}})$ of $E_g$ over $F$.</p>
-<p><strong>Proof.</strong> Write $y = qg + r$ with $\deg r < n$. Then $s_g(y \bmod g) = s_g(r)$ is the coefficient of $t^{n-1}$ in $r$, and $y(\alpha_i) = r(\alpha_i)$ for every $i$, because $g(\alpha_i) = 0$. The partial fraction decomposition of $r/g$ is</p>
+<p><strong>Proof.</strong> Write $y = qg + r$ with $\deg r &lt; n$. Then $s_g(y \bmod g) = s_g(r)$ is the coefficient of $t^{n-1}$ in $r$, and $y(\alpha_i) = r(\alpha_i)$ for every $i$, because $g(\alpha_i) = 0$. The partial fraction decomposition of $r/g$ is</p>
 <p>$$
 \frac{r(t)}{g(t)} = \sum_{i=1}^n \frac{r(\alpha_i)/g'(\alpha_i)}{t - \alpha_i},
 $$</p>
@@ -146,7 +146,7 @@ $$</p>
 <p>$$
 \frac{r(t)}{g(t)} = t^{-1}\left(\sum_{i=1}^n\frac{r(\alpha_i)}{g'(\alpha_i)}\right) + O(t^{-2}),
 $$</p>
-<p>while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}})$.</p>
+<p>while $\deg r &lt; n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}})$.</p>
 <h3 id="the-bezoutian-form-of-a-pair">The Bezoutian Form of a Pair</h3>
 <p><strong>Definition.</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free and let $f \in F[t]$ be coprime to $g$. The <strong>Bezoutian form</strong> of $f$ modulo $g$ is the quadratic form</p>
 <p>$$
@@ -183,12 +183,12 @@ $$</p>
 <p>The form on the left lives on $E_{g_1g_2}$, of dimension $\deg g_1 + \deg g_2$, and the two forms on the right live on $E_{g_1}$ and $E_{g_2}$; the two sides have the same dimension, so the equality of Witt classes is an isometry of quadratic forms.</p>
 <p><strong>Theorem (second rule).</strong> Let $f, g \in F[t]$ be monic, square-free and coprime. Then</p>
 <p>$$
-\boxed{\;B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = \begin{cases} 0 & \text{if } \deg f \equiv \deg g \bmod 2, \\[2pt] [1] & \text{if } \deg f \not\equiv \deg g \bmod 2, \end{cases}\;}
+\boxed{\;B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = \begin{cases} 0 &amp; \text{if } \deg f \equiv \deg g \bmod 2, \\[2pt] [1] &amp; \text{if } \deg f \not\equiv \deg g \bmod 2, \end{cases}\;}
 $$</p>
 <p>where $[1]$ is the class of the one-dimensional form $\langle 1\rangle$.</p>
 <p><strong>The second rule in a special case.</strong> Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\vartheta_{\mathrm{rts}}^2 = 1$, and $m_{t,g}(x) = s_g(\vartheta_{\mathrm{rts}} x^2)$ has Gram matrix</p>
 <p>$$
-G_{ij} = s_g(\vartheta_{\mathrm{rts}}^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\vartheta_{\mathrm{rts}}) & s_g(\vartheta_{\mathrm{rts}}^2) \\ s_g(\vartheta_{\mathrm{rts}}^2) & s_g(\vartheta_{\mathrm{rts}}^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
+G_{ij} = s_g(\vartheta_{\mathrm{rts}}^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\vartheta_{\mathrm{rts}}) &amp; s_g(\vartheta_{\mathrm{rts}}^2) \\ s_g(\vartheta_{\mathrm{rts}}^2) &amp; s_g(\vartheta_{\mathrm{rts}}^3)\end{pmatrix} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1\end{pmatrix},
 $$</p>
 <p>because $s_g(1) = s_g(\vartheta_{\mathrm{rts}}^3) = 0$ and $s_g(\vartheta_{\mathrm{rts}}) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\vartheta_{\mathrm{rts}}^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.</p>
 <h3 id="a-lemma-on-even-degrees">A Lemma on Even Degrees</h3>
@@ -245,10 +245,10 @@ $$</p>
 <p>The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \vartheta_{\mathrm{rts}}, \vartheta_{\mathrm{rts}}^2, \vartheta_{\mathrm{rts}}^3$ its Gram matrix $G_{ij} = s_g(f\vartheta_{\mathrm{rts}}^{i+j})$ is</p>
 <p>$$
 G = \begin{pmatrix}
--2 & 0 & 4 & -6\\
-0 & 4 & -6 & -2\\
-4 & -6 & -2 & 30\\
--6 & -2 & 30 & -86
+-2 &amp; 0 &amp; 4 &amp; -6\\
+0 &amp; 4 &amp; -6 &amp; -2\\
+4 &amp; -6 &amp; -2 &amp; 30\\
+-6 &amp; -2 &amp; 30 &amp; -86
 \end{pmatrix},
 $$</p>
 <p>symmetric, of determinant $144$ and signature $(2,2)$. Its Lagrange diagonalisation over $\mathbb{Q}$ is</p>

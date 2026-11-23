@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formalized Procedure of Transition to Classical Limit in Application to the Dirac Equation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Formalized procedure of transition to classical limit in application to the Dirac equation -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="formalized-procedure-of-transition-to-classical-limit-in-application-to-the-dirac-equation"><strong>Formalized Procedure of Transition to Classical Limit in Application to the Dirac Equation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0507183 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 July 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Formalized procedure of transition to classical limit in application to the Dirac equation - 0507183-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Formalized procedure of transition to classical limit in application to the Dirac equation - 0507183.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-coupled-dirac-equation-in-the-non-quantum-limit.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Formalized procedure of transition to classical limit in application to the Dirac equation - 0507183.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Supplies the procedure the other papers assume: dynamic disquantization, a way to pass from a quantum system to a classical one without setting $\hbar=0$. The classical model $S_{D\,cl}$ of the Dirac particle is obtained as a system of ordinary differential equations that contain $\hbar$ as a parameter, so the classical limit keeps the quantum constant. The model has ten degrees of freedom and cannot be a point particle: it has internal structure, and the internal degrees of freedom turn out to be described nonrelativistically. The paper ends by asking why this was not found in eighty years.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap-in-the-axiomatic-method">The gap in the axiomatic method</h3>
+<p>The premise is stated as a defect: "In the framework of axiomatic presentation of quantum mechanics there exist no formal procedure of transition to classical approximation. The classical description is obtained from the quantum one, when we set, that the quantum constant h̄ = 0. Unfortunately" Setting a constant to zero is not a procedure, and it loses whatever the constant multiplies.</p>
+<p>Dynamic disquantization replaces it: "This relativistic purely dynamic procedure does not use principles of quantum mechanics." What it produces is not a limit but an equivalent system at a different level of description: "The obtained classical analog $S_{D\,cl}$ is described by a system of ordinary differential equations, containing the quantum constant as a parameter."</p>
+<p>Two properties are claimed for the result. It is determined by the quantum system and not by a choice: "Dynamic equations for $S_{D\,cl}$ are determined by the Dirac equation uniquely." And it is not small: "$S_{D\,cl}$ has ten degrees of freedom and cannot be a pointlike particle, because it has an internal structure."</p>
+<h3 id="the-uncomfortable-corollary">The uncomfortable corollary</h3>
+<p>"Internal degrees of freedom appears to be described nonrelativistically." The classical limit of a relativistic quantum system has nonrelativistic internal motion — the same finding as in the hydrodynamic-variables paper, reached by a different route, and the one he says explains the helicity of the world line.</p>
+<p>The closing question is the paper's motivation: "one discusses the reasons, why the internal degrees of freedom of the Dirac particle and their nonrelativistic character were not discovered during eighty years." His answer, developed in the conclusion, is methodological — the axiomatic method has no procedure that would have exhibited them.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-classical-limit-that-keeps-math15">1. A classical limit that keeps $\hbar$</h3>
+<p><strong>The idea.</strong> A <strong>procedure</strong>: instead of taking $\hbar\to0$, rewrite the quantum system as an equivalent system of ordinary differential equations in which $\hbar$ survives as a parameter, and read the classical behaviour off that. The limit is a change of description, not a deletion.</p>
+<p><strong>What it would add.</strong> The corpus's non-quantum-limits article obtains the classical equation by deleting terms from the action, and the deletion is what the corpus then has to justify term by term. A procedure that keeps the constant would give the corpus a second route to the same limit and a way to check whether the deleted terms are exactly those that vanish in the procedure. That is a genuine cross-check on a corpus derivation, which is rare.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-coupled-dirac-equation-in-the-non-quantum-limit.md</code>.</p>
+<p><strong>What stands in the way.</strong> The procedure is described in words here and the construction is spread over several papers; no worked classical system is written out for the free Dirac case in a form the corpus could compare with its own. And a system of ordinary differential equations with ten degrees of freedom is not automatically the classical limit of a field — the identification needs an argument the paper gives only by construction.</p>
+<h3 id="2-ten-degrees-of-freedom-not-four">2. Ten degrees of freedom, not four</h3>
+<p><strong>The idea.</strong> The classical Dirac particle has ten degrees of freedom — position, velocity, and an internal set — so a point particle with a spin label is the wrong classical picture. A <strong>count</strong>, and counts are checkable.</p>
+<p><strong>What it would add.</strong> The corpus's spin-half fluid has a definite field content, and its nonrelativistic-limit article counts what survives the limit. A claim that the classical limit needs ten degrees of freedom is a claim about that count, and it can be checked against the corpus's own list. If the corpus's list is shorter, one of the two is missing something.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> Ten is the count for his construction, with his definition of a degree of freedom, and no mapping to the corpus's field content is given. Two counts can differ by convention rather than by physics.</p>
+<h3 id="3-why-eighty-years">3. Why eighty years</h3>
+<p><strong>The idea.</strong> A <strong>historical claim with a mechanism</strong>: the axiomatic presentation of quantum mechanics has no classical limit procedure, so a structure that only appears in such a procedure could not have been noticed.</p>
+<p><strong>What it would add.</strong> The corpus is explicit about which of its statements are derived and which are posited, and it treats its own method as a choice among methods. This is an argument that a method can hide a fact, delivered with an example, and it is the kind of claim the corpus's methodological articles could use — though it cuts both ways, since the corpus's own algebraic method could hide facts equally well.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is unfalsifiable as stated: any unnoticed structure can be blamed on any method. And the internal degrees of freedom were in fact found by others — Takabayasi's tensor formulation carries them — so the "eighty years" framing overstates the novelty.</p>
+<p>The rank: the $\hbar$-preserving limit first, because it is a procedure the corpus can run against its own; the degree count second, because it is a number; the historical claim last, because it cannot be wrong.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

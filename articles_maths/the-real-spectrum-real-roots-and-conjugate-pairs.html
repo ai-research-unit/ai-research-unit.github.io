@@ -105,7 +105,7 @@ $$</p>
 <p><em>Proof.</em> The conjugate of $V_\mu$ is $V_{\bar\mu}$, so $W$ is stable under conjugation. A conjugation-stable subspace of $\mathbb{C}^{n}$ is the complexification of its real part: if $w=u+iv\in W$ then $\bar w=u-iv\in W$, hence $u,v\in W_0$ and $\mathbb{C}W_0=W$. The real dimension is twice the complex dimension because a conjugation-stable space has a basis of real vectors together with their imaginary parts, and $\dim_{\mathbb{R}}W=2\dim_{\mathbb{C}}W$.</p>
 <p><strong>The restriction of $A$ to $W_0$ is a rotation block.</strong> In a suitable real basis of $W_0$ the matrix of $A|_{W_0}$ is</p>
 <p>$$
-R_d(a,b)=\begin{pmatrix}C&\mathrm{I}_2&&\\&\ddots&\ddots&\\&&\ddots&\mathrm{I}_2\\&&&C\end{pmatrix},\qquad C=\begin{pmatrix}a&-b\\ b&a\end{pmatrix},
+R_d(a,b)=\begin{pmatrix}C&amp;\mathrm{I}_2&amp;&amp;\\&amp;\ddots&amp;\ddots&amp;\\&amp;&amp;\ddots&amp;\mathrm{I}_2\\&amp;&amp;&amp;C\end{pmatrix},\qquad C=\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix},
 $$</p>
 <p>with $d=\dim_{\mathbb{C}}V_\mu$. The construction of this basis is the content of <em>The Real Jordan Form and the Rotation Blocks</em>.</p>
 <p><strong>The space $\mathbb{R}^{n}$ is the direct sum of the real generalised eigenspaces.</strong> Summing over the real eigenvalues and over the pairs,</p>
@@ -128,11 +128,11 @@ $$</p>
 \det A=\prod_{k=1}^{r}\lambda_k\ \prod_{j=1}^{s}|\mu_j|^{2}.
 $$</p>
 <p><em>Proof.</em> Expand the factorisation of $\chi_A$. The coefficient of $t^{n-1}$ is minus the sum of the roots, and each quadratic factor contributes $2a_j$ to that sum, because $(t-a)^2+b^2=t^2-2at+(a^2+b^2)$. The constant term is $(-1)^{n}$ times the product of the roots, and each quadratic contributes $a^2+b^2=|\mu_j|^{2}$ to that product.</p>
-<p><strong>Each pair contributes a positive factor to the determinant.</strong> Since $b_j\ne0$, one has $|\mu_j|^{2}=a_j^{2}+b_j^{2}>0$. Hence</p>
+<p><strong>Each pair contributes a positive factor to the determinant.</strong> Since $b_j\ne0$, one has $|\mu_j|^{2}=a_j^{2}+b_j^{2}&gt;0$. Hence</p>
 <p>$$
 \operatorname{sgn}\det A=\operatorname{sgn}\prod_{k=1}^{r}\lambda_k ,
 $$</p>
-<p>and a matrix with no real eigenvalue has $\det A>0$. The pairs never change the sign of the determinant, and only the real eigenvalues do.</p>
+<p>and a matrix with no real eigenvalue has $\det A&gt;0$. The pairs never change the sign of the determinant, and only the real eigenvalues do.</p>
 <p><strong>Corollary.</strong> A matrix with $r=0$ is invertible, and its determinant is the product of the squared moduli of one member of each pair. At $n=2$ this reads $\det A=a^{2}+b^{2}$ for $A=R_1(a,b)$.</p>
 <h2 id="the-elementary-symmetric-functions">The Elementary Symmetric Functions</h2>
 <p><strong>Every $e_k$ is real although the roots are not.</strong> In the reading by minors, $e_k$ is a sum of principal minors and hence a real polynomial in the entries. In the spectral reading, $e_k$ is the sum of all products of $k$ distinct roots, and conjugation permutes the terms of that sum; a sum invariant under conjugation is real.</p>
@@ -153,7 +153,7 @@ $$</p>
 <p><strong>The measurement on random matrices.</strong> On $100$ random symmetric matrices of size $4$ the largest modulus of an imaginary part of an eigenvalue is $0$; on $100$ random antisymmetric matrices of size $4$ the largest modulus of a real part is $4.4\times10^{-16}$, which is zero up to rounding.</p>
 <p><strong>The rotation $J$ at $n=2$ has an empty real spectrum.</strong> For</p>
 <p>$$
-J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},\qquad \chi_J(t)=t^{2}+1,\qquad \sigma(J)=\{i,-i\},
+J=\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix},\qquad \chi_J(t)=t^{2}+1,\qquad \sigma(J)=\{i,-i\},
 $$</p>
 <p>one has $r=0$ and $s=1$. Every $2\times2$ real matrix with no real eigenvalue is $a\mathrm{I}+bJ$ for some $b\ne0$, up to conjugation, that is, it is $R_1(a,b)$. So the rotation is the model of the elliptic case at $n=2$.</p>
 <h2 id="the-spectral-radius">The Spectral Radius</h2>
@@ -165,10 +165,10 @@ $$</p>
 <p><strong>Proposition.</strong> $\rho(A)\le\|A\|$ for every operator norm on $\mathbb{R}^{n}$.</p>
 <p><em>Proof.</em> Let $\mu$ be an eigenvalue with eigenvector $z$ over $\mathbb{C}$. The norm extends to the complexification with the same bound, so $\|Az\|=|\mu|\,\|z\|$ gives $|\mu|\le\|A\|$. Take the maximum over the spectrum.</p>
 <p><strong>The bound is attained for a normal matrix and it is strict in general.</strong> For normal $A$ one has $\rho(A)=\|A\|_2$, because the eigenvectors are orthonormal. On $100$ random matrices of size $3$ the inequality $\rho(A)\le\|A\|_2$ holds every time. For the non-normal matrix with entries $1,1,0,2$ the values are $\rho=2$ and $\|A\|_2=2.288$, so the inequality is strict. <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> proves the equality.</p>
-<p><strong>Proposition (Gelfand).</strong> $\rho(A)=\lim_{k\to\infty}\|A^{k}\|^{1/k}$, and $\rho(A)<1$ exactly when $A^{k}\to0$.</p>
-<p><em>Proof.</em> On a Jordan block of size $d$ for the eigenvalue $\mu$ the power $A^{k}$ has entries $\binom{k}{j}\mu^{k-j}$ with $j<d$, so $\|A^{k}\|^{1/k}\to|\mu|$; the maximum over the blocks gives $\rho$. A sequence with $\|A^{k}\|\to0$ has $\rho<1$, and conversely.</p>
+<p><strong>Proposition (Gelfand).</strong> $\rho(A)=\lim_{k\to\infty}\|A^{k}\|^{1/k}$, and $\rho(A)&lt;1$ exactly when $A^{k}\to0$.</p>
+<p><em>Proof.</em> On a Jordan block of size $d$ for the eigenvalue $\mu$ the power $A^{k}$ has entries $\binom{k}{j}\mu^{k-j}$ with $j&lt;d$, so $\|A^{k}\|^{1/k}\to|\mu|$; the maximum over the blocks gives $\rho$. A sequence with $\|A^{k}\|\to0$ has $\rho&lt;1$, and conversely.</p>
 <h2 id="summary">Summary</h2>
-<p>The spectrum of a real matrix is stable under conjugation, so it consists of $r$ real eigenvalues and $s$ conjugate pairs with $r+2s=n$. A real eigenvalue has a real generalised eigenspace, and a pair $\mu=a\pm bi$ has a conjugation-stable sum whose real part has dimension $2d$ and carries a rotation block. The trace is the sum of the real eigenvalues plus twice the sum of the real parts of the pairs; the determinant is the product of the real eigenvalues times the product of the squared moduli of the pairs, so each pair contributes positively and $\det A>0$ when $r=0$. Every elementary symmetric function is real. The rotation $J$ has empty real spectrum, symmetric matrices have real spectrum and antisymmetric ones purely imaginary spectrum. The spectral radius is attained, it is bounded by every operator norm, and it equals the Euclidean norm for normal matrices.</p>
+<p>The spectrum of a real matrix is stable under conjugation, so it consists of $r$ real eigenvalues and $s$ conjugate pairs with $r+2s=n$. A real eigenvalue has a real generalised eigenspace, and a pair $\mu=a\pm bi$ has a conjugation-stable sum whose real part has dimension $2d$ and carries a rotation block. The trace is the sum of the real eigenvalues plus twice the sum of the real parts of the pairs; the determinant is the product of the real eigenvalues times the product of the squared moduli of the pairs, so each pair contributes positively and $\det A&gt;0$ when $r=0$. Every elementary symmetric function is real. The rotation $J$ has empty real spectrum, symmetric matrices have real spectrum and antisymmetric ones purely imaginary spectrum. The spectral radius is attained, it is bounded by every operator norm, and it equals the Euclidean norm for normal matrices.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -216,7 +216,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the rotation $\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$</td>
+<td>the rotation $\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix}$</td>
 </tr>
 </tbody>
 </table></div>

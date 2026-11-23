@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General Relativity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fourier-transform-quantum-mechanics-and-quantum-field-theory-on-the-manifold-of-general-relativity"><strong>Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General Relativity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1907.03582v6 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v6, 22 April 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General Relativity - 1907.03582-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General Relativity - 1907.03582.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fourier-transform-and-the-schrodinger-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Fourier Transform, Quantum Mechanics and Quantum Field Theory on the Manifold of General Relativity - 1907.03582.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proves that the Fourier transform used in the covariant quantum theory on a curved manifold actually exists. The setting is a non-compact, geodesically complete manifold; the transform is defined through the Newton–Wigner configuration representation; the proofs cover the spectral decomposition of the canonical operators, the Parseval–Plancherel relation and the Born rule for superpositions. With those in hand the paper constructs dual vectors, the Fock space and the quantum fields for both statistics.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-is-proved">What is proved</h3>
+<p>"A proof is given for the Fourier transform for functions in a quantum mechanical Hilbert space on a non-compact manifold in general relativity."</p>
+<p>"In the (configuration space) Newton-Wigner representation we discuss the spectral decomposition of the canonical operators and give a proof of the Parseval-Plancherel relation and the Born rule for linear superposiion."</p>
+<h3 id="what-is-built-on-it">What is built on it</h3>
+<p>"We then discuss the representations of pure quantum states and their dual vectors, and construct the Fock space and the associated quantum field theory for Bose-Einstein and Fermi-Dirac statistics."</p>
+<h3 id="the-scope-of-the-proof">The scope of the proof</h3>
+<p>"This proof is valid, for example, for the exterior region of the Schwarzschild solution since there is an infinite redshift at the singularity", while in the interior it holds "only asymptotically".</p>
+<h3 id="the-invariance-statement">The invariance statement</h3>
+<p>"Although the theory is not manifestly diffeomorphism covariant (due to the structure of the Fourier transform), it is indeed invariant in form under arbitrary coordinate transformations as well as in any arbitrary coordinatization of the manifold."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-invariance-in-form-is-weaker-than-covariance-and-enough">1. Invariance in form is weaker than covariance, and enough</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: the theory is not manifestly diffeomorphism covariant — the Fourier transform picks out a representation — but it is invariant in form under coordinate changes. That is enough for physics, and it is a different property from the one usually demanded.</p>
+<p><strong>What it would add.</strong> The corpus's covariance articles insist on manifest covariance and treat any non-covariant intermediate step as a defect. This shows a case where manifest covariance is unattainable and unnecessary, and it gives a precise name to the weaker property that does hold. For a corpus that sometimes mistakes manifest covariance for the criterion of acceptability, this is the correction, stated by someone who had to make the choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>.</p>
+<p><strong>What stands in the way.</strong> "Invariant in form" is not defined as sharply as covariance; the paper asserts it and uses it, but a reader cannot check it against a general criterion.</p>
+<h3 id="2-a-transform-needs-a-manifold-condition-not-just-a-metric">2. A transform needs a manifold condition, not just a metric</h3>
+<p><strong>The idea.</strong> A <strong>theorem with hypotheses</strong>: the Fourier transform on a curved manifold exists when the manifold is non-compact and geodesically complete. Compactness or incompleteness can fail the construction.</p>
+<p><strong>What it would add.</strong> The corpus's Fourier-transform articles are all in flat space or on a constant-curvature background, where existence is never in question. This names the geometric hypotheses under which the transform is legitimate, which means the corpus's transform-based arguments can be audited: does the space in question satisfy them? It is a small, checkable condition that the corpus does not currently track.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-schrodinger-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The hypotheses are sufficient, not necessary, and the Schwarzschild interior fails them — so the physically most interesting region is exactly where the theorem does not apply.</p>
+<h3 id="3-fock-space-can-be-built-without-a-preferred-vacuum-frame">3. Fock space can be built without a preferred vacuum frame</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: dual vectors, the Fock space and the fields for both statistics are constructed from the Newton–Wigner representation, so the particle interpretation is fixed by the configuration-space representation rather than by a choice of time foliation.</p>
+<p><strong>What would it add.</strong> The corpus's Fock-space articles build the space from creation and annihilation operators with a chosen mode decomposition. This routes the construction through localisation instead, which matters in a curved background where no global mode decomposition is preferred. It is the technical step that makes particles on a curved spacetime well defined in this framework, and it is the part a sceptical reader would check first.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction inherits the Newton–Wigner localisation, which is itself non-covariant, so the particle notion is frame-dependent by design.</p>
+<p>The rank: the invariance-in-form distinction first, because it corrects a criterion; the manifold hypotheses second, because they are checkable; the Fock construction last, because it is machinery.</p>
+<p>The remaining items in one line each: the Born rule for superpositions, which is what makes the Hilbert space a probability space; the spectral decomposition of the canonical operators, which is the prerequisite for the transform; and the treatment of spin, deferred to a following paper, which is where the construction would meet the corpus's spinor articles.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

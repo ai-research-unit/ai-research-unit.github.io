@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic hydrodynamics of the Dirac matter — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic hydrodynamics of Dirac matter.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-hydrodynamics-of-the-dirac-matter"><strong>Relativistic hydrodynamics of the Dirac matter</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Numdam scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Numdam scan of the Séminaire de Broglie, <code>SLDB_1956-1957__26__A3_0</code></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Séminaire de Théories Physiques</em> (Louis de Broglie), tome <strong>26</strong> (1956–1957), exposé no. 3, pp. 1–4; delivered 11 December 1956 and 8 January 1957</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic hydrodynamics of Dirac matter-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic hydrodynamics of Dirac matter.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic hydrodynamics of Dirac matter.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A two-part seminar report on the programme behind the 1957 memoir. Part I summarises the tensor formulation of the Dirac field: the spinor and the gamma matrices are replaced by two scalars and three vectors, the equations of motion are brought to hydrodynamical form, one subsidiary condition ties the momentum field's vorticity to the velocity and the spin, and all of it follows from a Lagrangian. Part II lists the collateral results: the general relativistic hydrodynamics of fluids with intrinsic angular momentum, the claim that quantum fluids always carry heat flow beside mechanical stress, the reduction of Weyssenhof's fluid to a spinless particle in a constant field, and two extensions — a local Lorentz transformation as the fluid's frame variable, and the Pauli field as an assembly of small rotating bodies. It is a summary, so it states results and cites the papers; the only formulas are the definition of the variables and the constraint.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="part-i-the-tensor-formulation-stated-as-a-claim-about-completeness">Part I: the tensor formulation, stated as a claim about completeness</h3>
+<p>He opens with the critique: previous attempts (his references 1–4) either did not eliminate $\psi$ and the $\gamma$-matrices completely, or missed the crucial second subsidiary condition that makes the tensor system self-contained. His claim is that the Dirac field "can equivalently be represented in a closed form with the set of real field variables" — a scalar density $\rho$, a pseudoscalar angle $\theta$, a velocity $u_\mu$, a momentum $\pi_\mu$ and a spin pseudovector — "restricted by the set of subsidiary conditions", where $F_{\mu\nu}$ is the field strength acting on the field and $\epsilon_{\mu\nu\rho\sigma}$ the Levi-Civita symbol. "nd The variables (1 ) directly mean density ( ~ ) , velocity (u~ ) a momentum (w ) and one more internal variable e , respectively. spin Formally speaking, the Dirac spinor 03A8 and § -matrices are here superseded completely by the set of two scalar (a scalar 03C1 and a pseudoscalar 03B8 ) and variables. The three vector (two vector k~ ~ and a pseudovector established formulation represents a new kind of relativistic hydrodynamics. (1). On leave of absence from Physical Institute, Nagoya University (Japan)."</p>
+<p>The equations of motion "are brought to compact hydrodynamical forms. Besides them, an important subsidiary condition (3) governs the behaviour of the matter to connect the vorticity of the momentum field to the velocity and spin fields. All of those basic equations of the formulation are deduced from its own Lagrangian. The basic equations are cast also in various different forms, each of which is useful to me.nifest different aspect of the theory. Some"</p>
+<h3 id="the-two-distinctions-the-angle-makes">The two distinctions the angle makes</h3>
+<p>"Some characteristic features of the hydrodynamics are the fact that the dis- tinctions between proper mass density and rest particle density and also between particle momentum and velocity are primarily specified by the variable 6 asso- ciated with the possibility" dorikey "like behaviours. The energy-momentum conservation law also has the meaning from the Eulerian equation of flow, showing the occurrence of heat flow and mechanical stress inside the fluid. Thetheory also"</p>
+<p>So one variable, $\theta$, does three jobs at once: it separates the two densities, it separates momentum from velocity, and it is the bookkeeping of the negative-mass sheet. The theory is also a source of physical readings of algebraic operations: "th a new directly physical point of view concerning various transformation properties of the Dirac f ie ld, e. g ; those for charge conjugation and time reversal." It is formulated for an external field and for the interacting Dirac and electromagnetic fields, "manifestly gauge-independent in both cases", and it is worked out for the c-number field only — "the quantum mechanics of a Dirac electron", not the quantised field.</p>
+<h3 id="part-ii-the-collateral-results-in-his-order">Part II: the collateral results, in his order</h3>
+<ol>
+<li>
+<p><strong>General relativistic hydrodynamics with intrinsic angular momentum.</strong> He has given the general theory for fluids carrying distributions of intrinsic angular momentum, analysing the physical meanings of the energy-momentum and angular-momentum tensors, and classifying the various hydrodynamics "by clarifying the conditions that characterize the specialities of any hydrodynamics."</p>
+</li>
+<li>
+<p><strong>Heat flow is universal in quantum fluids.</strong> "In the hydrodynamics representing quantum matters there always appear the flow of heat besides mechanical stress inside the fluid. This situation is illustrated for the case of the hydrodynamics representing the Schrödinger field also: the quantum-mechanical effect must be represented by the occurrences of quantum stress along with 'quantum heat flow' there."</p>
+</li>
+<li>
+<p><strong>Weyssenhof's fluid reduces to a spinless particle.</strong> He compares Weyssenhof's hydrodynamics with the Dirac one "and showed that the former can be reduced essentially to a single equation of motion which manifests that each particle of this fluid moves exactly in the same manner with the spinless charged particle under certain constant hypothetical electromagnetic field."</p>
+</li>
+<li>
+<p><strong>The frame as a local Lorentz transformation.</strong> We introduce the quantity $\Lambda(x)$ at each point in space, satisfying the constraints $\Lambda^{T}g\Lambda=g$; and identify the velocity and spin variables in terms of it. Then the constraints represent a Lorentz transformation defined at each point of space. Thus the Dirac spinor $\Psi$ is represented by the set of variables $(\rho,\theta,\Lambda,\lambda)$ where $\lambda$ is a scalar function. The variables obeying the constraints are now represented in terms of these such that $A_\mu$ is the electromagnetic potential. Now in this representation all of the basic equations of the theory are derived from the following Lagrangian density. The Lagrangian is printed as equation (5) but is not recoverable from this scan.</p>
+</li>
+<li>
+<p><strong>The Pauli field as rotating bodies.</strong> "the treatment similar to 4) has also been worked out for the non- relativistic case. There the theory means to depict the Pauli field (two-component spinor) by the model of an assembly of very small rotating bodies continuously distributed in space, and amourlts to making the hydrodynamical representation of the Pauli field () more concrete by giving the model to the particle constituting the fluid."</p>
+</li>
+</ol>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The fluid's frame is a local Lorentz transformation and appears in the Lagrangian as the dynamical variable</li>
+</ol>
+<p><strong>The idea.</strong> Replace the spin vector by a field $\Lambda(x)\in SO(1,3)$ at each point, constrained by $\Lambda^{T}g\Lambda=g$, and write the whole theory — equations of motion, subsidiary condition and all — as the Euler–Lagrange equations of one Lagrangian density in $(\rho,\theta,\Lambda,\lambda)$. The spin direction is then not an independent vector but a column of the frame, and the constraint is a constraint of the variational problem rather than an identity imposed after the fact.</p>
+<p><strong>What it would add.</strong> A variational principle for a constrained system, where the corpus has the variables but not the principle. <em>The Lagrangian and the Coupled Dirac Equation in Polar Variables</em> (<code>articles_physics/the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.md</code>) and <em>The Dirac Equation in Biquaternionic Polar Variables</em> (<code>articles_physics/the-dirac-equation-in-biquaternionic-polar-variables.md</code>) write the word, its brackets and its Lagrangian — and the rotor is exactly a local Lorentz transformation, so the two formulations share the frame variable. What the corpus does not exhibit is a Lagrangian in which the <em>frame alone</em> is the dynamical variable and the subsidiary condition is one of its constraints. Takabayasi's claim — that the closure condition is not an extra equation but the constraint that comes with the frame — is the variational version of the corpus's remark that the non-closure is the algebraic independence of the four brackets.</p>
+<p><strong>Where it lands.</strong> The Lagrangian-and-polar article, as the tensor-language statement of what its variational principle does, and the spin-half fluid article's §<em>The triple</em>, where the corpus counts the closure.</p>
+<p><strong>What stands in the way.</strong> The Lagrangian itself is not recoverable from this scan — the seminar prints it as an unlabelled equation whose symbols did not survive the digitisation — so the import would rest on the statement that it exists and on the variable list, not on the functional. That is a thin basis for a formula, and thick enough for a paragraph. It ranks first on the strength of the idea and not of the evidence.</p>
+<ol>
+<li>Quantum heat flow, and its universality</li>
+</ol>
+<p><strong>The idea.</strong> Every hydrodynamical representation of a quantum matter carries a heat flow beside its mechanical stress, and this is not a property of the Dirac field: "the quantum-mechanical effect must be represented by the occurrences of quantum stress along with 'quantum heat flow'" already for the Schrödinger field.</p>
+<p><strong>What it would add.</strong> A universal claim that the corpus holds for one case only. <em>The Spin-Half Fluid and the Takabayasi Correspondence</em> (<code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>) has a section <em>The Mass Density and the Heat Flow</em> which computes the heat flow that his choice of velocity leaves in the fluid's rest frame — for the Dirac fluid, and as a consequence of the velocity's frame (the Eckart choice). The seminar's claim is stronger and different in kind: that the Schrödinger fluid carries heat flow too. The corpus's Schrödinger articles — <em>The Schrödinger Fluid</em> (<code>articles_physics/the-schrodinger-fluid.md</code>) and <em>The Thermodynamics of a Quantum Fluid: Status of the Derivation</em> (<code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>) — describe a fluid with a quantum stress and, being irrotational and one-component, no heat flow at all. If the claim is right, the corpus's cleanest rung is not as clean as it says, and the reason is a definition of heat flow and not a term in an equation.</p>
+<p><strong>Where it lands.</strong> The thermodynamics-of-a-quantum-fluid article, whose subject is exactly this, and the Schrödinger fluid article's §<em>The Quantum Term Is an Exact Stress</em>.</p>
+<p><strong>What stands in the way.</strong> The claim is asserted in one sentence with no definition of the heat flow and no formula, and it is at odds with the corpus's statement that the Schrödinger fluid's energy flux is its momentum flux with nothing left over. Resolving it needs a definition the seminar does not give — whether heat flow is the part of the flux orthogonal to the velocity in some frame, or the part not carried by the entropy current. The item is a question to be settled, and it is ranked second because the corpus can settle it from its own definitions in one calculation.</p>
+<h3 id="3-weyssenhofs-fluid-is-a-spinless-particle-in-a-constant-field">3. Weyssenhof's fluid is a spinless particle in a constant field</h3>
+<p><strong>The idea.</strong> Weyssenhof's spin fluid, which is a different and older tensor formulation, reduces essentially to a single equation of motion, and that equation is the one a <em>spinless</em> charged particle obeys in a certain constant hypothetical electromagnetic field. <strong>Where it lands.</strong> <em>The Empirical Status of the Biquaternion Framework</em> (<code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>), as an example of a formulation whose extra structure is absorbable, and the spin-half fluid article's comparison section.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

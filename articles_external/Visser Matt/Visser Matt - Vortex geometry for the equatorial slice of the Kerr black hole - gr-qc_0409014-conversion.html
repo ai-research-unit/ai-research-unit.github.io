@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex analogue for the equatorial geometry of the Kerr black hole — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Vortex geometry for the equatorial slice of the Kerr black hole -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="vortex-analogue-for-the-equatorial-geometry-of-the-kerr-black-hole"><strong>Vortex analogue for the equatorial geometry of the Kerr black hole</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/0409014v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 April 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Vortex geometry for the equatorial slice of the Kerr black hole - gr-qc_0409014-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Vortex geometry for the equatorial slice of the Kerr black hole - gr-qc_0409014.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Vortex geometry for the equatorial slice of the Kerr black hole - gr-qc_0409014.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The equatorial slice of Kerr has the same geometry as the acoustic metric of a rotating fluid vortex. The author derives the most general acoustic geometry of a line vortex. Then he finds coordinates that map Kerr onto it. The result is a laboratory analogue of a rotating black hole.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-identification">The identification</h3>
+<p>"the [equatorial slice of the Kerr black] hole is formally equivalent to the geometry felt by phonons entrained in a rotating fluid vortex"</p>
+<h3 id="the-first-task">The first task</h3>
+<p>"we find the most general acoustic geometry compatible with the fluid dynamic equations in a collapsing/expanding perfect-fluid line vortex"</p>
+<h3 id="the-second-task">The second task</h3>
+<p>"we demonstrate that there is a suitable choice of coordinates on the equatorial slice through a Kerr black hole that puts it into this [form]"</p>
+<h3 id="the-programme">The programme</h3>
+<p>"we analyse this example of 'analogue gravity' in some detail"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-an-exact-analogue-not-an-approximation">1. An exact analogue, not an approximation</h3>
+<p><strong>The idea.</strong> The match between Kerr and the vortex is exact in the equatorial plane.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code> would gain a case where the emergent metric is not merely similar to a known one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/paravectors-and-the-geometry-of-spacetime.md</code>, in the discussion of emergent metrics.</p>
+<p><strong>What stands in the way.</strong> Only one slice matches. Ranked first, because it is the strongest analogue claim.</p>
+<h3 id="2-rotation-is-essential">2. Rotation is essential</h3>
+<p><strong>The idea.</strong> Dragging comes from the fluid's rotation, not from a source term.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code> would gain a physical picture of frame dragging.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code>, in the discussion of rotation.</p>
+<p><strong>What stands in the way.</strong> The vortex must be fine-tuned. Ranked second.</p>
+<h3 id="3-coordinate-choice-again">3. Coordinate choice again</h3>
+<p><strong>The idea.</strong> The analogue only appears in the right coordinates.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> would gain a case where the coordinate choice creates the match.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of coordinates.</p>
+<p><strong>What stands in the way.</strong> The choice is tailored. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Hydrodynamics of the Dirac Matter. Part I: General Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics of the Dirac Matter I.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-hydrodynamics-of-the-dirac-matter-part-i-general-theory"><strong>Relativistic Hydrodynamics of the Dirac Matter. Part I: General Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of the <em>Progress of Theoretical Physics</em> Supplement</td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Supplement of the Progress of Theoretical Physics</em> No. 4 (1957) 2; written spring 1956</td>
+</tr>
+<tr>
+<td>length</td>
+<td>80 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Hydrodynamics of the Dirac Matter I-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics of the Dirac Matter I.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Hydrodynamics of the Dirac Matter I.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>The PDF has no text layer; the text below was produced by OCR of the page images. Equations are transcribed where the OCR is unambiguous and described where it is not. The paper is long and heavily index-laden; the conversion tracks its argument rather than reproducing every identity.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Removes the spinor from the Dirac theory. The claim is that the Dirac field is <em>exactly</em> equivalent to a set of real classical fields — a density $p$, a pseudoscalar $\theta$, a timelike unit vector $v_\mu$ (velocity), a spacelike unit pseudovector $w_\mu$ (spin), and a vector $k_\mu$ (momentum) — subject to two sets of subsidiary conditions and eight equations of motion. The equivalence is not an approximation and not a rewriting in disguise: the $\gamma$-matrices and the four-component spinor are eliminated, and the resulting equations are all real, gauge-independent, and closed.</p>
+<p>The technical crux is a condition the author calls the <em>second subsidiary condition</em>, which restricts the vorticity of $k_\mu$ in terms of the spin field and the field strength $F_{\mu\nu}$. Without it the system is not closed; earlier attempts, the paper argues, missed it. With it the formalism reproduces the Dirac equation, admits its own Lagrangian, and yields a hydrodynamics with two features no ordinary fluid has: the proper mass density and the rest particle density are different quantities, and the momentum is not parallel to the velocity. Both disparities are carried by $\theta$, which can approach $\pi$ and make the fluid behave with negative mass — an "anti-fluid" region. The paper also shows that charge conjugation is, at this level, a jump of $\theta$ by $\pi$; that velocity and spin can be interchanged by a transformation with no counterpart in the spinor formalism, a symmetry that becomes exact for the massless case; and that the whole construction reduces, in the non-relativistic limit $|v|\ll c$, to the spinning-fluid representation of the Pauli equation. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>Generally speaking, we may conceive various possible methods in which [a theory may be] reconstructed [in a] conceptual framework different from the customary ones. Such reconstruction may be significant, as it will bring forward certain new aspects of physical implications of the theories and of the properties of matter, as well as it will cut open a novel perspective for future revision of them. This paper is concerned with establishing an entirely new construction of the Dirac electron theory."Quantum mechanics divides up a physical situation into a pair of more fundamental and irreducible concepts, state vector and physical quantity operator, neither of which is directly observable thing. ... It should then be an important problem, first of all in principle, to [reconstruct] mechanics and attain a formulation of the theory in terms of classical conceptions only. ... Our task is, however, to show that it is in a sense possible further to set up a construction of quantum mechanics which expresses not only the resulting predictions but also the whole internal constitution of the theory itself in classical terms alone."</p>
+<h3 id="why-earlier-attempts-fell-short">Why earlier attempts fell short</h3>
+<p>On Whittaker: His representation is, however, quite different from ours, as he did not intend to achieve a formalism which stands exclusively upon tensor variables with no recourse to [spinors]. On Costa de Beauregard: He explained some of those relations with the image of a spinning fluid. He left, however, some half of the relations uninterpreted, in spite of his recourse to a mixed use of hydrodynamic and electromagnetic models. Nor he examined by what a set of tensor equations the original Dirac equation can equivalently be replaced. And on the missing condition: he overlooked the particularly important relation, which we call 'the second subsidiary condition' and which bears the vital meaning to establish our tensor formulation as a self-contained and consistent one.</p>
+<h3 id="the-variables">The variables</h3>
+<p>In this paper, we first show that the Dirac spinor field can equivalently be represented as a real and non-linear vector field, in a closed formalism in certain basic set of scalar and vector variables, i.e., a timelike unit vector $v_\mu$ (velocity) and a space-like unit pseudovector $w_\mu$ (spin) orthogonal to the former, and also a scalar $\rho$ (density), a pseudoscalar $\theta$, and a vector $k_\mu$. In this method the Dirac's spinor ('undor') and also $\gamma$-matrices employed as scaffoldings at the start of construction are eliminated perfectly."$eS_\mu$ is evidently the charge-current 4-vector, but we will moreover regard $S_\mu$ as particle density-current 4-vector ... Then from the factorized form $S_\mu=\rho v_\mu$ for $S_\mu$, under the constraint, indicates that we may regard $cv_\mu$ as a 4-velocity ... Thus we have a motion of a fluid composed of a continuous distribution of charged particles."</p>
+<p>"The usual 3-dimensional velocity $b$ corresponding to the $v_\mu$ ... satisfies naturally $|b|\le c$. In the ordinary quantum-mechanical interpretation, a velocity component of a Dirac particle takes either of its two eigenvalues $\pm c$ only, whereas in our picture we consider the velocity field distributing continuously in space under $|b|\le c$. But 'mean values' for both definitions of velocity coincide with each other."</p>
+<p>Next, the meaning of $S_\mu$ or $w_\mu$ is related to the intrinsic angular momentum. Thus our fluid with density $\rho$ and velocity $v_\mu$ should be assumed to carry intrinsic angular momentum density distribution $(\hbar/2)S_\mu$ with it. So the intrinsic angular momentum per particle is given by the 3-dimensional axial vector $m$. The condition means that particle intrinsic angular momentum has constant magnitude $\hbar/2$ everywhere.</p>
+<h3 id="the-count-sixteen-seven-fourteen-eight">The count: sixteen, seven, fourteen, eight</h3>
+<p><strong>The equivalence is counted before it is written.</strong> The start is the 16 density functions $i\bar\psi\tau^A\psi$ of the 16 Dirac matrices. They carry only 7 independent real quantities, because 9 kinematical identities hold among them; the three that carry the reading are $S_\mu S_\mu=-\rho^2$, $\hat S_\mu\hat S_\mu=\rho^2$ and $S_\mu\hat S_\mu=0$, so the time-like $S_\mu$ and the space-like $\hat S_\mu$ have equal magnitude and are orthogonal. That is what licenses $S_\mu=\rho v_\mu$, $\hat S_\mu=\rho w_\mu$ and the first subsidiary conditions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>count</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$16$</td>
+<td>density functions $i\bar\psi\tau^A\psi$, one per Dirac matrix</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>independent real quantities, after the 9 identities</td>
+</tr>
+<tr>
+<td>$+4$</td>
+<td>$J_\mu$ from one derivative of the bilinears, or $K_\mu=\Omega J_\mu+\hat\Omega\hat J_\mu$ and $k_\mu=K_\mu/\rho^2$</td>
+</tr>
+<tr>
+<td>$-3$</td>
+<td>the second subsidiary condition, which leaves the single function $\alpha$ in $k_\mu=-nA_\mu+\partial_\mu\alpha$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>against the 8 real data of $\psi$: the 7, plus the sum of the four phases</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The eighth datum is why $k_\mu$ exists.</strong> The spinor has eight real components and the bilinears read seven; what slips off is the sum of the four phases, which no bilinear sees and only a differentiation reaches. $J_\mu$ is added to carry it, and because four components were introduced for one datum, the four must be cut by identical relations — the second subsidiary condition — which reduce $k_\mu$ to $-nA_\mu+\partial_\mu\alpha$ and so to one function.</p>
+<p><strong>The two counts close, and the motion closes with them.</strong> Fourteen components under two condition sets, and eight real equations of motion, which the two sections below give in the paper's own words. The equivalence is exact and not an analogy: every solution of the tensor system corresponds to a solution of the Dirac equation, and conversely, excepting a common arbitrary additive constant in the phases, which the paper calls physically meaningless.</p>
+<h3 id="the-second-subsidiary-condition">The second subsidiary condition</h3>
+<p>The set of the first kind quantities contained 7 independent quantities, whereas the original Dirac spinor contains 8 independent real quantities. The remaining degree of freedom which is involved in $\psi$ but slips off from [them] is the sum of phases of the 4 components of $\psi$.</p>
+<p>"Thus, corresponding to each first kind quantity, we have following second kind quantities: $J_\mu=(1/2\kappa)\partial_\mu^*S_\mu$, ... $N_{\rho,\mu\nu}=(1/2\kappa)\partial_\rho^*M_{\mu\nu}$, where $\kappa$ is the reciprocal Compton wave-length and $n$ the specific charge."</p>
+<p>For the complete representation of $\psi$, it is sufficient to supplement the set with $J_\mu$, because $J_\mu$ involves the data of the sum of the phases. This entails that the 4 components of $k_\mu$ are to be restricted by identical relations, which are found to be a tensor equation involving $\varepsilon_{\alpha\beta\gamma\delta}v_\alpha w_\beta(\partial_\mu v_\gamma\partial_\nu w_\delta-\partial_\mu w_\gamma\partial_\nu v_\delta)$ and $nF_{\mu\nu}$. The relation is derived purely kinematically with no reference to the Dirac equation, to be called the 'second subsidiary condition'. This is gauge-independent and restricts the vorticity of the $k_\mu$-field to having a definite relation with [the spin field].</p>
+<p>Being an antisymmetric tensor relation, it contains 6 component equations. However, they are not mutually independent, since, taking the Curl of both sides, we get just the Maxwell equation. "This is because the term ... satisfies [the curl identity] identically, as the consequence of the [fixed-length, orthogonality] condition."</p>
+<p>This shows that the introduction of $k_\mu$ restricted by [the condition] implies the introduction of only one independent degree of freedom.</p>
+<h3 id="closure-and-the-equations-of-motion">Closure and the equations of motion</h3>
+<p>It is thus found that the Dirac field is represented equivalently with the set of 14 basic variables ${\Omega,\tilde\Omega,S_\mu,\tilde S_\mu,J_\mu}$ under the constraints (I) and (II), or with ${\rho,\theta,v_\mu,w_\mu,k_\mu}$ under (I') and (II).</p>
+<p>The content of the original Dirac equation for $\psi$ can equivalently be transferred to the simultaneous tensor equations regarding our basic variables. The outcome is a set of eight real equations — Really (d') involves just 8 independent equations. We shall call (d) or (d') 'the standard form' of the equations of motion of our field. Altogether, we have established the tensor formalism of the Dirac field, which consists of the system of equations {(I'), (II), (d')}. That is to say, the Dirac matter is represented equivalently with a real non-linear tensor field which is defined by the set of basic variables under the subsidiary conditions and changes with time according to the simultaneous equations of motion.</p>
+<p><strong>The standard form, written out.</strong> Four of the six lines of (d') are scalar or pseudoscalar and read, in the particle variables,</p>
+<p>$$
+\partial_\mu(\rho v_\mu)=0,\qquad
+\partial_\mu(\rho w_\mu)=-2\kappa\rho\sin\theta,
+$$</p>
+<p>$$
+w_\mu\partial_\mu\theta+2\kappa v_\mu k_\mu
++i\varepsilon_{\alpha\beta\gamma\delta}v_\alpha w_\beta\partial_\mu v_\gamma
+=-2\kappa\cos\theta,
+$$</p>
+<p>$$
+v_\mu\partial_\mu\theta+2\kappa w_\mu k_\mu
++i\varepsilon_{\alpha\beta\gamma\delta}v_\alpha w_\beta\partial_\mu w_\gamma=0 .
+$$</p>
+<p>The first is the continuity equation, kept as conservation of particle number and not of charge. The second elucidates the physical meaning of $\theta$, in that the quantity $\rho\sin\theta$ means the source density for the spin current. The fourth means the hydrodynamical equation of motion for the $\theta$, as $cv_\mu\partial_\mu$ means the substantial derivative, and the third is deferred to the stress in §9. The remaining two, (11') and (12'), express the Eulerian equation of flow for velocity $v_\mu$ and that for spin $w_\mu$.</p>
+<p>Our formalism is perfectly gauge-independent and moreover it contains electromagnetic field strength $F_{\mu\nu}$ solely in the second subsidiary condition (II). In the original $\psi$-formalism, the charge conservation [is tied to the] group; while in our formalism such group is just eliminated away.</p>
+<p>It may also be noted that our basic equations are all homogeneous in $\rho$; more specifically, the subsidiary conditions and half of the equations of motion do not contain $\rho$ at all, while the other equations contain $\rho$ in the form $\partial_\mu R$ only, with $R=\log\rho$.</p>
+<h3 id="hydrodynamic-reading">Hydrodynamic reading</h3>
+<p>Now, (d') can be interpreted as the equations of motion representing a particular kind of relativistic hydrodynamics for a continuous medium, although it is of a structure different from and more involved than any ready-made relativistic hydrodynamics for a usual fluid.</p>
+<p>It should be emphasized that the conservation of matter in the sense of conservation of particle number has its own meaning independent of the conservation of energy-momentum or of inertia.</p>
+<p>The more detailed considerations on the interpretation of our hydrodynamics will be given in §9. Our hydrodynamics has thus a more complicated structure also than either the hydrodynamics representing the Klein–Gordon field or that for the non-relativistic spinor fields which have previously been investigated, as it must involve the pictures of 'Zitterbewegung' concerned with the freedom of negative mass, along with the usual quantum effects and spin effects.</p>
+<h3 id="the-lagrangian">The Lagrangian</h3>
+<p>We may then anticipate, for the Lagrangian density $L_s$ deriving our hydrodynamical equations of motion together with the subsidiary conditions (I') and (II), the form $L=\tfrac12\lambda_1(v^2+1)+\tfrac12\lambda_2(w^2-1)+\lambda_3 v_\mu w_\mu+\ldots$, where the independent variables are taken to be $\rho,\theta,v_\mu,w_\mu,k_\mu,g_{\mu\nu},A_\mu$, including $g_{\mu\nu}$ (an antisymmetric tensor) and $\lambda_1,\lambda_2,\lambda_3$, the 9 redundant variables newly introduced.</p>
+<p><strong>The Lagrangian comes in three pieces,</strong> $L_H=L+L_I+L_{II}$ (IVb), where $L$ is the Dirac Lagrangian re-expressed in the five fields (IVa), $L_I$ carries the first subsidiary conditions with the three multipliers $\lambda_1,\lambda_2,\lambda_3$, and $L_{II}$ carries the second with the antisymmetric multiplier $g_{\mu\nu}$. The multiplier part is written out as (IVc), $\tfrac12\lambda_1(v^2+1)+\tfrac12\lambda_2(w^2-1)+\lambda_3v_\mu w_\mu$. We note that for a realizable motion $L$, $L_I$, $L_{II}$ and $L_H$ all vanish.</p>
+<p>It is trivial that the variation of $L_s$ in respect to $\lambda_1$ yields the relation (I_a) and so on: $\delta\lambda_2\to$(I_b), $\delta\lambda_3\to$(I_c), $\delta g_{\mu\nu}\to$(II). This completes the deduction.</p>
+<p>For a realizable motion, $L=L_H=-\tfrac14 F^2$. The interaction piece (Vc) carries the coupling constant inversely, which the paper records as "a remarkable fact" and does not pursue. </p>
+<h3 id="momentum-mass-stress-heat">Momentum, mass, stress, heat</h3>
+<p>$T_{\mu\nu}=mc^2\tau_{\mu\nu}=\rho\{mc^2k_\mu v_\nu+(\hbar c/2)(\partial_\mu\theta\cdot w_\nu+iv_\alpha w_\beta\partial_\mu v_\nu)\}$, which equals the re-expression of the canonical energy-momentum tensor for the original $\psi$-field in terms of our basic variables, so it is to satisfy the conservation law $\partial_\nu T_{\mu\nu}=e\rho F_{\mu\nu}v_\nu$. $T_{\mu\nu}$ is not symmetric itself. $\tau_{\mu\nu}$ consists of two parts — a convective part and a residual part $t_{\mu\nu}$ with $t_{\mu\nu}v_\nu=0$ —"and also ... Accordingly we have the relation $mck_\mu=T_{\mu\nu}v_\nu/(c\rho)$, which means, in the rest frame, [that it reduces to the energy-momentum per particle]. Thus $mck_\mu$ is the vector that coincides in the rest frame with the energy-momentum per particle, so it is properly to be called as particle energy-momentum vector, which in our theory represents a different degree of freedom from $v_\mu$." The conservation law in the form (17') is nothing but the equation of motion for that $k_\mu$-vector. In this equation the last term of the right side is the usual Lorentz force, so the first terms due to $t$ represent quantum-mechanical effects. They are understood as meaning the occurrence [of internal stress and heat flow]. The distinction of the momentum conservation (17') from the Eulerian equation of flow (11') is a feature of our field. This fact is related to that the original Dirac equation was the first order differential equation. By transforming the mass density $\mu=T_{44}/c^2$ to the local rest frame, the proper mass density of the matter field is expressed as $\mu^0=-v_\mu T_{\mu\nu}v_\nu/c^2$, which is written as $\mu^0=-mp\,v_\mu k_\mu$. Especially, it shows that $\mu^0$ can take negative as well as positive values. This situation is controlled by the internal degree of freedom $\theta$, and also the coupling between $v$ and $w$ fields which is responsible to the pressure inside the fluid. The appearance of negative mass density could have been anticipated, since our hydrodynamics is the representation of c-number Dirac field. It might seem to be an awkward situation, but is not necessarily a logically inconsistent one in itself. <strong>Two formulas carry the disparity.</strong> Evaluated with the aid of (9.10), the proper mass density is (VII), $$ \mu^0=mp\cos\theta+\frac{1}{2\kappa}\left(w_\mu\partial_\mu\theta +i\varepsilon_{\alpha\beta\gamma\delta}v_\alpha w_\beta\partial_\gamma v_\delta\right), $$ The paper notes that it gives the physical meaning of eq. (3'), and observes that $\mu^0$ can take negative as well as positive values. The hydrostatic pressure is defined as (9.30) $$ P=\frac{t_{\mu\mu}}{3} =\frac{\hbar c}{6}\rho\left(\partial_\mu\theta\,w_\mu +i\varepsilon_{\alpha\beta\gamma\delta}v_\alpha w_\beta\partial_\gamma v_\delta\right), $$ and the paper ties it to the internal energy through (9.31), whose stated check is that it reduces to the well-known relation $\rho\varepsilon=3P$ in the case of mass-less particle, $m=0$. If we neglect the terms with coefficient $1/2\kappa$, assuming them to be of a higher order, then we have $\mu^0\simeq mp\cos\theta$, $k_\mu\simeq v_\mu\cos\theta$. Thus at the region where $\theta\sim\pi$, $\mu^0&lt;0$ and also $k_\mu$ and $v_\mu$ are anti-parallel to each other, in particular $k_0&lt;0$. This means that in this region the fluid has proper mass density and particle energy both negative and behaves in a gas-like manner. On the other hand at $\theta\sim0$, it behaves like a normal fluid."The quantity $t_{\mu\nu}$ is now separated by the help of $\gamma_{\mu\lambda}$ such that ... with $q_\nu=-cv_\mu t_{\mu\nu}$ ... $q_\nu$ means the vector which represents the heat flow occurring inside the fluid. On the other hand $t_{\mu\nu}$ is the space tensor satisfying ... so it means the tensor that represents the mechanical stress working inside the fluid." The conservation equation for internal energy is also derived to represent the first law of thermodynamics for our relativistic fluid. </p>
+<h3 id="transformation-properties">Transformation properties</h3>
+<p>Our formulation has, as a natural consequence of its tensor character, the merit that it exhibits the covariance properties of the Dirac field to various transformations more simply and manifestly and also in directly physical terms in comparison with the case of usual $\psi$-formalism. We first require $\rho$=scalar and $v_\mu$=vector on the ground of their physical meanings, then the transformation properties of the other variables are established just as in (10.1) from the very requirement of the invariancy of our formulation to space inversion. $v_\mu,k_\mu$: (V), $w_\mu$: (PV); for time reversal "we should first postulate $\rho$: (S), and $v_\mu$: (PS) ... Then the transformation properties of the other variables are established as $\theta$: (PS), $w_\mu,k_\mu$: (PV), $F_{\mu\nu}$: (PT)." It can be ascertained that (10.2) corresponds exactly to the time reversal of Wigner type. For our basic equations to be invariant, our field variables must transform, along with [the field reversal], in either of the two ways — either $\rho,\theta,w_\mu$ invariant with $v_\mu,k_\mu$ changing sign, or $\rho,v_\mu$ invariant, $w_\mu,k_\mu$ change sign, $\theta\to\theta+\pi$."For case (10.4), the Lagrangian is invariant ... Nevertheless we cannot accept this prescription, where we would have $v_0\le-1$ for the charge conjugate field." The above arguments show that (i) for c-number spinor electrodynamics, we have no charge transformation physically permissible, and that (ii) our hydrodynamical field under external electromagnetic field has charge invariance given by (10.3). Thus, in passing to the charge conjugate field, momentum, energy, and proper mass density change their respective signs, while density and velocity remain invariant. The simple classical electrodynamics has no freedom of charge transformation, but our field has one (in so far as $F_{\mu\nu}$ be external), due to the disparity between velocity and momentum of our field, i.e., to the possibility of 'gas'-like motion. The disparity is intermediated by $\theta$, which jumps by an amount $\pi$ in that transformation. The above fact can just be exploited to re-interpret a hydrodynamical motion with negative total energy as a motion of opposite charge with positive total energy. Time reversal admits a second prescription (10.6), $\theta\to\pi-\theta$ with $e\to-e$, which corresponds to the time reversal of Pauli type, where (10.2) is the Wigner type. Separately, all the basic equations of our formulation are invariant also to the transformation (10.7a) $m\to-m$, $k_\mu\to-k_\mu$, $\theta\to\theta+\pi$, with $\rho$, $v_\mu$, $w_\mu$ and $F_{\mu\nu}$ invariant. This transformation means mass reversal. </p>
+<h3 id="the-velocityspin-symmetry-now-let-us-consider-a-transformation-of-a-different-type">The velocity–spin symmetry Now let us consider a transformation of a different type:</h3>
+<p>$v_\mu\to v'_\mu=iw_\mu$, $w_\mu\to w'_\mu=iv_\mu$, which has no counterpart in the conventional $\psi$-formalism. It can easily be observed that this retains the subsidiary conditions and the two equations of motion, (11') and (12'), invariant, but not the other equations of motion. Especially, in case of particle with zero rest mass (neutrino), the above symmetry becomes perfect. Then $(1)\to(2)$, $(2)\to(1)$, $(3)\to(4')$, $(4')\to(3)$. Thus the basic equations as a whole are left perfectly invariant. In the case of zero rest mass the theory has still another invariance, as $\theta$ appears then, in the basic equations, only in the form $\partial_\mu\theta$. Thus the theory is invariant to the transformation $\theta\to\theta+\alpha$, $(\alpha:\text{const})$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>The Dirac field needs <em>two</em> subsidiary conditions, and the second one is the whole trick</li>
+</ol>
+<p><strong>The idea.</strong> The bilinear covariant set (current, spin, etc.) has seven independent components; the spinor has eight. The missing piece is not another bilinear — it is the <em>phase sum</em>, which requires a derivative. So one must add a vector $k_\mu$ built from $\partial_\mu$ of the bilinears, and then, because four components were added to supply one degree of freedom, three identities must hold among them. Those identities are the second subsidiary condition, and they fix the vorticity of $k_\mu$ in terms of the spin field. </p>
+<p><strong>What it would add.</strong> An explanation of the <em>shape</em> of the spin-half fluid, not just its content. The corpus derives the fluid equations by substituting the polar form of the spinor; here the equation set is <em>counted out</em> — degrees of freedom on both sides, and the deficit dictates both the extra variable and its constraint. That is a structural argument the algebraic derivations cannot give. </p>
+<p><strong>Where it lands.</strong> §<em>The Map</em> of <em>The Spin Half Fluid and the Takabayasi Correspondence</em> (<code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>), as the degree-of-freedom count. </p>
+<p><strong>What stands in the way.</strong> The condition is derived purely kinematically but the derivation is long and is deferred to §21; the paper itself calls finding it not a simple matter. </p>
+<ol>
+<li>Two densities, two momenta: the fluid is not a fluid</li>
+</ol>
+<p><strong>The idea.</strong> In an ordinary relativistic fluid the rest-mass density and the particle density coincide, and the momentum is the velocity times mass. Here neither holds. $\mu^0=-mp\,v_\mu k_\mu$ and $mck_\mu$ is independent of $v_\mu$. What separates them is $\theta$, and $\theta$ can reach $\pi$, at which point the mass density goes negative and momentum runs opposite to velocity. </p>
+<p><strong>What it would add.</strong> A concrete diagnosis of why the "fluid language for the Dirac field keeps slipping. The corpus uses fluid" as a metaphor and occasionally worries that the metaphor misleads; here the deviation is quantified by one scalar field, and the pathology is localized: $\theta\approx\pi$ means anti-matter-like behaviour, $\theta\approx0$ means normal behaviour.</p>
+<p><strong>Where it lands.</strong> §<em>The Interpretation</em> of <em>The Lagrangian and the Charged Spin Half Fluid</em> (<code>articles_physics/the-lagrangian-and-the-charged-spin-half-fluid.md</code>), as the $\theta$-disparity.</p>
+<p><strong>What stands in the way.</strong> $\theta$ has no direct observable; its meaning is inferred from the mass and momentum disparities.</p>
+<h3 id="3-charge-conjugation-is-a-jump-of">3. Charge conjugation is a jump of</h3>
+<p><strong>The idea.</strong> Under charge conjugation the density and velocity stay put, the spin and momentum flip, and $\theta\to\theta+\pi$. <strong>Where it lands.</strong> §<em>Charge Conjugation</em> of <em>The Non-Uniqueness of the Spin Half Fluid</em> (<code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code>), as the $\theta$-shift.</p>
+<h3 id="4-velocity-and-spin-are-interchangeable-when-the-mass-vanishes">4. Velocity and spin are interchangeable when the mass vanishes</h3>
+<p><strong>The idea.</strong> The substitution $v_\mu\to iw_\mu$, $w_\mu\to iv_\mu$ leaves the subsidiary conditions and two of the four equations invariant. <strong>Where it lands.</strong> §<em>The Massless Limit</em> of <em>The Spin Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>), as the $v\leftrightarrow w$ swap.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

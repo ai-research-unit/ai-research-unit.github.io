@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Combinatorial Derivation of the Standard Model Interactions from the Dirac Lagrangian — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Bell/Bell - A combinatorial derivation of the standard model interactions from the Dirac Lagrangian -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-combinatorial-derivation-of-the-standard-model-interactions-from-the-dirac-lagrangian"><strong>A Combinatorial Derivation of the Standard Model Interactions from the Dirac Lagrangian</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1908.09631v5 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charlie Beil</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v5, 23 March 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Bell/Bell - A combinatorial derivation of the standard model interactions from the Dirac Lagrangian - 1908.09631-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Bell/Bell - A combinatorial derivation of the standard model interactions from the Dirac Lagrangian - 1908.09631.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Bell/Bell - A combinatorial derivation of the standard model interactions from the Dirac Lagrangian - 1908.09631.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The folder and file names read "Bell; the author line of every paper in this folder reads Charlie Beil".</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the composite particle model of the companion articles — bound states of at most four "pointons" on a spacetime whose metric is degenerate along particle worldlines — and derives the interaction vertices from it. The only pointon process the Dirac Lagrangian permits is pair creation and annihilation of opposite charge, so every trivalent Standard Model vertex must be built from those two operations; the paper lists which fusions succeed and which fail. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-composite-particles">The composite particles</h3>
+<p>"nearly the entire standard model, with three generations of quarks and
+leptons, the electroweak bosons, and the Higgs boson, all appear as combinatorial
+configurations of pointon spinors obtained from the mass term of L; see "</p>
+<p>"From this new identification, nearly the entire standard model, with three generations of quarks and leptons, the electroweak bosons, and the Higgs boson, all appear as combinatorial configurations of pointon spinors obtained from the mass term of L; see Table 1. These configurations, which we call geoms for ‘geometric atoms’, are bound states of at most four pointons that are constrained by the Dirac equation and the Pauli exclusion principle. The only remaining standard model particle is the gluon, which we model in [B2] using a construction similar to flux tubes."</p>
+<p>"The only remaining standard model particle is the gluon, which we model in [B2] using a construction similar to flux tubes. Moreover, only one new particle arises that does not belong to the standard model, namely, a massive spin-2 boson. In this article we consider interactions between geoms."</p>
+<h3 id="the-elementary-vertex">The elementary vertex</h3>
+<p>"electrons and positrons are pointons with future-directed and past-directed timelike orientations respectively, and a photon is a bound state of the two, ea := [a0, 00], ēb := [0b, 00], γa := [ab, 00], with subscripts a, b ∈ {↑, ↓}, a 6= b, denoting spin. The timelike orientations arise from"</p>
+<h3 id="the-fusion-rule">The fusion rule</h3>
+<p>"Two geoms $\delta_1=[\psi_{11},\psi_{12}]$ and $\delta_2=[\psi_{21},\psi_{22}]$ may fuse to form a geom $\delta_3$ ... if $\delta_3$ results from either (i) two orbital fusions $\psi_{1i}\psi_{2i}$, $i\in\{1,2\}$, at least one of which is of the form $$\begin{bmatrix}a&amp;c\\c&amp;b\end{bmatrix}\ \to\ \begin{bmatrix}a&amp;b\end{bmatrix}$$ with $a,b\in\{\uparrow,\downarrow\}$ and $c\in\{0,\ast\}$; or (ii) precisely one diagonal fusion $\psi_{1i}\psi_{2,i+1}$, and $(\ast,0)$ is not a cross-orbital of $\delta_3$ (paper Definition 3.1, eq. 8). In our composite model, a fusion $\delta_1\delta_2\to\delta_3$ corresponds to a trivalent interaction vertex $\delta_1\delta_2\delta_3$ in a Feynman diagram."</p>
+<h3 id="parity-violation-derived">Parity violation, derived</h3>
+<p>"ed by geom spin states; see [B1, Sections 2, 3]. For example, the chiral states eL , eR are replaced by the spin states e↑ , e↓ . Theorem 4.1. • There are fusions (9) <code>↑ ν̄</code> → W0− , <code>¯↓ ν</code> → W0+ , d↑ ū↑ → W0− , d¯↓ u↓ → W0+ , where ` is a charged lepton, u is an up-type quark, and d is a down-type quark. • The concatenations (9) with all other spin states ↑, ↓ are not fusions. In particular, the composite model yields electroweak parity violation for both leptons and quarks. 14 CHARLIE BEIL Table 4: The fusions f f¯ → γ/Z/H, where f is a fermion." (paper Theorem 4.1).</p>
+<h3 id="the-two-vertices-the-standard-model-lacks">The two vertices the Standard Model lacks</h3>
+<p>"Differences with the standard model interactions Our model admits two new interaction vertices, γ↑ γ↓ Z0 and Z0 Z0 Z0 given in Table 5, that do not occur in the standard model."</p>
+<p>"Differences with the standard model interactions Our model admits two new interaction vertices, γ↑ γ↓ Z0 and Z0 Z0 Z0 given in Table 5, that do not occur in the standard model. These are the only two fusions that do not correspond to standard model vertices. It is possible that they may be replacements for the four-boson vertices of the standard model, 5In particular, our model does not admit sterile neutrinos, that is, right-handed neutrinos and left-handed anti-neutrinos that do not interact with the W ± geoms."</p>
+<p>"DERIVATION OF THE SM INTERACTIONS FROM THE DIRAC LAGRANGIAN 17 W+ γ/W + /Z W0+ γ↑ /W0+ /Z0 Z0 7→ W− γ/W − /Z W0− γ↓ /W0− /Z0 and Z0 Z0 Z0 may be a replacement for the three-gluon vertex ggg, g Z0 g 7→ Z0 g Z0 Note that the trivalent Z-boson vertex only occurs with the longitudinal polarization Z0 = [↑↓, ↓↑] of the Z boson. Moreover, in QCD there is an infrared suppression of the three-gluon vertex, and at energies where the three-gluon vertex occurs gluons acquire a dynamical mass scale (see [PAF] and references therein)." And: "in QCD there is an infrared suppression of the three-gluon vertex, and at energies where the three-gluon vertex occurs gluons acquire a dynamical mass scale (see"</p>
+<p>"Moreover, in QCD there is an infrared suppression of the three-gluon vertex, and at energies where the three-gluon vertex occurs gluons acquire a dynamical mass scale (see [PAF] and references therein). This is qualitatively consistent with our replacement ggg 7→ Z0 Z0 Z0 , since the Z0 boson is massive. In addition, due to restrictions on the allowable spin and polarization states from fusions, our model does not admit all Feynman diagrams that arise in the standard model."</p>
+<h3 id="diagrams-the-model-forbids">Diagrams the model forbids</h3>
+<p>"This is qualitatively consistent with our replacement ggg 7→ Z0 Z0 Z0 , since the Z0 boson is massive. In addition, due to restrictions on the allowable spin and polarization states from fusions, our model does not admit all Feynman diagrams that arise in the standard model." — three are drawn and excluded, while $H\to\gamma Z$ through a $W$ loop, $H\to\gamma\gamma$ through any charged lepton or down-type quark, and the $Z_0$-mediated variants do occur.</p>
+<h3 id="the-new-bosons-vertices">The new boson's vertices</h3>
+<p>"If these states are massive, then they form a polarization basis for a spin-2 boson x. The predicted interactions of this boson, determined by Definition 3.1, are given in Table 7. We have only imposed two conditions in constructing our composite model, namely, a Dirac equation constraint (7) and the Pauli exclusion principle; see [B1, Theorem 7.1].", as polarization states $x_0$ and $x_{ab}$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-vertices-as-fusion-rules-of-a-finite-algebra">1. Vertices as fusion rules of a finite algebra</h3>
+<p><strong>The idea.</strong> An interaction is not a term added to a Lagrangian but a permitted concatenation of two composite objects. The list of permitted vertices is finite, is computed, and is the same list the Standard Model writes down. This is a <strong>mechanism</strong> for the shape of the interaction sector.</p>
+<p><strong>What it would add.</strong> A reason why the vertex set is what it is, where the corpus's Lagrangian article writes the four sectors and their couplings as structure to be matched.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code>, on where the interaction terms come from.</p>
+<p><strong>What stands in the way.</strong> The corpus's vertices are read off a gauge-invariant Lagrangian; here they are read off a fusion table, and nothing yet maps one list onto the other except coincidence of content. The paper's own two extra vertices show the lists are not identical.</p>
+<h3 id="2-parity-violation-as-an-emptiness-in-a-table">2. Parity violation as an emptiness in a table</h3>
+<p><strong>The idea.</strong> Left-handed couplings exist and right-handed ones do not because the mixed-chirality concatenations are simply not fusions. Parity violation is a counting fact, not a choice of representation.</p>
+<p><strong>What it would add.</strong> An alternative account to the corpus's chirality articles, which locate the asymmetry in the idempotent structure of the algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/biquaternion-physical-interpretation-of-operator-chirality.md</code>, on why one chirality couples.</p>
+<p><strong>What stands in the way.</strong> The corpus's chirality is a property of the field; here it is replaced by a geom spin state, and the paper says so: "νe νµ ντ u c t e L µ L τ L d L s L b L eR µR τR uR cR tR dR sR bR On an internal spacetime, left- and right-handed chirality is replaced by geom spin states; see [B1, Sections 2, 3].". The two readings would need to be shown to agree before the argument transfers.</p>
+<h3 id="3-a-massive-longitudinal">3. A massive longitudinal</h3>
+<p>$Z_0$ standing in for the four-boson and three-gluon vertices</p>
+<p><strong>The idea.</strong> The quartic gauge vertices and $ggg$ are replaced by trivalent vertices involving the longitudinal mode of a massive boson. The replacement is argued for by the infrared suppression and dynamical mass of the gluon, which make the two descriptions qualitatively alike at the relevant scales. This is a <strong>reading</strong> of an existing vertex set.</p>
+<p><strong>What it would add.</strong> A structural reason why the four-boson vertices are hard to observe and why $ggg$ is soft, phrased as an identity rather than a suppression.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code>, on the three-gluon vertex.</p>
+<p><strong>What stands in the way.</strong> Replacing $ggg$ by three massive $Z_0$ changes the colour structure entirely; the corpus's chromodynamics is built on the octet, and a colourless substitute is not a rewriting of it.</p>
+<h3 id="4-a-predicted-massive-spin-2-boson-with-a-computed-vertex-list">4. A predicted massive spin-2 boson with a computed vertex list</h3>
+<p><strong>The idea.</strong> The model's single particle outside the Standard Model is a spin-2 boson whose five polarization states are enumerated and whose trivalent vertices are tabulated. It can be removed by extra assumptions — at most one $\ast$-orbital, or full orbitals first — which the author declines to impose.</p>
+<p><strong>What it would add.</strong> A falsifiable extra state, with couplings, that the corpus's higher-spin articles currently exclude on structural grounds.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>, on the closed list of carriers.</p>
+<p><strong>What stands in the way.</strong> The corpus's argument is that a fourth carrier does not exist; a spin-2 boson that can be assumed away is not a counterexample, and the author says the removing conditions are available.</p>
+<p>The rank is a judgement: the fusion-rule mechanism first, because it is the paper's method and the only one that could be imported whole; parity violation second, because it touches a question the corpus answers differently; the $Z_0$ replacement third, as a reading that conflicts with the colour sector; the spin-2 state fourth, because it is explicitly optional.</p>
+<p>This is a twenty-page paper; the geom fusion definition, the Standard Model vertex tables, the parity-violation theorem, the two extra vertices, the excluded diagrams and the spin-2 vertex table are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

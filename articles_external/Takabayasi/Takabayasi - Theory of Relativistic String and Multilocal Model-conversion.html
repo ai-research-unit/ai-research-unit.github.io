@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Relativistic String and Multilocal Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Multilocal Model.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="theory-of-relativistic-string-and-multilocal-model"><strong>Theory of Relativistic String and Multilocal Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics Supplement</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics Supplement</em> No. 86 (1986) 81; received 29 October 1985</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Theory of Relativistic String and Multilocal Model-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Multilocal Model.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic String and Multilocal Model.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A retrospective written for Nambu's anniversary volume. It has two halves. The first revisits the author's own early contributions to string theory: the bilocal oscillator and its multilocal generalisation, the master wave equation, and the argument that a single global equation cannot define a string so it must be strengthened to a <em>detailed wave equation</em> holding at each point, $H(\sigma)\Psi=0$. It also distinguishes the mechanical (massive) string from the geometric (massless) one — the geometric string has no identifiable elements except its ends, no non-relativistic limit, and acquires its constant only through ordering. The second half constructs an $N$-point multilocal model whose internal forces follow a specific trigonometric rule, and shows that the system organises itself into a <em>one-dimensional chain</em> rather than a three-dimensional cluster, with an equidistant oscillator spectrum that terminates at $[N/2]$. The string is then the $N\to\infty$ limit, with $N$ acting as a logarithmic cutoff.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<p>"Some aspects of the theory of relativistic string in its early period of formation and development are examined, such as the analogy between multilocal theory and string theory, the motivation and implication of the concept of 'detailed wave equation', distinction between geometric and massive strings, etc."</p>
+<p>"it is shown that a multilocal system consisting of N points organizes itself into a one-dimensional arrangement, rather than into a 3-dimensionally extended structure, if the internal forces obey a certain conspicuous rule."</p>
+<p>"This model exhibits how the string theory is fabricated out of the relativistic theory of a discrete structure in the limit N→∞."</p>
+<h3 id="what-nambus-master-equation-demanded">What Nambu's master equation demanded</h3>
+<p>After the dual amplitude was discovered by Veneziano and others Nambu found that it requires, as is evidenced by its factorization, the existence of the linearly rising Regge trajectory and its parallel daughter trajectories and that this implies the level structure of hadronic states given by the 'master wave equation' $H\Psi=0$, Here $P_\mu$ is the 4-momentum of the hadron while $a^{r\mu}$'s represent its internal variables obeying $[a^{r\mu},a^{s\nu\dagger}]=\delta^{rs}g^{\mu\nu}$. Then from this fact he suggested the underlying string model for hadrons.</p>
+<h3 id="two-consequences-the-author-drew-early">Two consequences the author drew early</h3>
+<p>The first is to consider the multilocal model in which the constituent $N$ points have the ordering in a closed ring in the sense that between any pair a harmonic action-at-a-distance works with the force coefficient which depends on $v=|\alpha-\beta|$ (mod $N$) by an appropriate rule. Then the model has the same equidistant spectrum of eigenfrequencies as the string has, except that the spectrum is here doubled and terminates at $[N/2]$. This was on one hand the early proposal of a closed string model by its limit $N\to\infty$. On the other it means that $N$ plays the role of a logarithmic cutoff for the divergence which the string theory originally implied in quantum mechanics as regards the string's linear size.</p>
+<p>The second is the following. The master equation (or say 'global equation') is not sufficient to define the theory of relativistic string. To have a physical motion of the string we must associate subsidiary conditions with it. Useful for this question is the comparison with the case of the bilocal oscillator model, where the subsidiary condition suppresses the relative time degree and thus plays the role of removing unphysical states. In the string theory we have an infinite number of variables related to relative times and accordingly we should need the corresponding subsidiary conditions.</p>
+<p>To obtain them explicitly, I proceeded as follows. As already remarked the master equation is regarded itself as a constraint so that it is essentially of the same status as the subsidiary conditions, and therefore all of them should be treated on an equal footing. The natural way to implement this is to strengthen the global equation to a 'detailed equation' (or say 'super-wave equation') which consistently holds at every point of the string, i.e. $H(\sigma)\Psi[x(\cdot)]=0$, $H=\int H(\sigma)d\sigma$, with the anticipation that it represents the complete relativistic quantum mechanics of the string at one stroke.</p>
+<h3 id="why-the-obvious-density-does-not-work">Why the obvious density does not work</h3>
+<p>The obvious choice for $H(\sigma)$ is $H(\sigma)=F(\sigma)+\text{const}$, which means that we pass from $H$ to its 'density'. But this choice conflicts with the compatibility of the detailed equation because $[F(\sigma),F(\sigma')]=i(G(\sigma)+G(\sigma'))\delta(\sigma-\sigma')$, where $G=(x'p+px')/2$. However, this suggests that we should amend it to the form $H(\sigma)=F(\sigma)+\int f(\sigma,\sigma')G(\sigma')d\sigma'+\text{const}$, with $\int f\,d\sigma'=0$, in such a way that this $H(\sigma)$ satisfies a closed algebra.</p>
+<h3 id="mechanical-versus-geometric-string">Mechanical versus geometric string</h3>
+<p>First we note that this Nambu string is not quite the same as the one we have stated. For the former, which we call 'geometric' (or massless) string also, one cannot identify each elementary portion of the string except the two ends, which move with the light velocity. Also a non-vanishing constant arises only through the ordering ambiguity in quantization. On the other hand, for the latter, which we call 'mechanical' (or massive) string, the parameter $\sigma$ was the label assigned to each element.</p>
+<p>The simplest action invariant under reparametrization is $\int\!\!\int d\sigma\,dt\,L$ with $L=-[-\mu^2\dot x^2-\kappa^2\{\dot x^2x'^2-(\dot xx')^2\}]^{1/2}$. This contains two structure constants $\kappa$ and $\mu$, and in fact defines the theory of homogeneous massive string.</p>
+<p>It is also verified that the non-relativistic limit does not exist for the theory of geometric string. Though this corresponds to the limiting case of the massive string at $\mu\to0$, this is the singular limit where longitudinal motion becomes physically meaningless.</p>
+<p>The next point I made is that the reparametrization invariance is not necessarily the prerequisite for setting up the physical theory of relativistic strings. Indeed, the theories of mechanical and geometric strings can commonly be derived from the simpler Lagrangian $L=-[-\dot x^2\{\kappa^2x'^2+\mu^2\}]^{1/2}$.</p>
+<h3 id="the-chain-model-and-why-one-dimension">The chain model and why one dimension</h3>
+<p>The essential point for obtaining a consistent model lies in the successful choice for $y^{\mu\alpha}$, lest the equations should generate more and more secondary constraints until they reduce the model to a trivial one. At the same time the requirement need be satisfied. We find that essentially we are left with the following alternatives, of which the former of which defines the 'chain model' while the latter defines the 'ring model'.</p>
+<p>Equation gives the $U$-function, that strong attractive harmonic forces work between 'nearest neighbors' ($|\alpha-\beta|=1$), weaker repulsive ones between second nearest neighbors ($|\alpha-\beta|=2$), and so forth. At this stage we are simply assuming these constructive forces without inquiring into its origin.</p>
+<p>Solutions where certain modes alone are non-vanishing are particularly simple. Here all constituent particles align on a straight segment with population rapidly increasing towards the ends and as a whole rotate rigidly. These solutions give the states lying on the linearly rising leading trajectory. Indeed the mass and spin of the system are given by $M^2=2\kappa\,C^{1*}C^1+\mu^2$, $J_c=(M^2-\mu^2)/(2\kappa)$. If one keeps $\kappa=N\kappa_0$, $\mu=Nm_0$ and $C^{1*}C^1$ fixed, $M^2$ and $J_c$ do not vary with $N$.</p>
+<p>Our theory unifies the 'bilocal' ($N=2$), 'trilocal' ($N=3$), and string ($N\to\infty$) theories on a uniform foundation and formulation.</p>
+<p>Finally we consider the limit $N\to\infty$, where we employ the parameter $\sigma=\pi\alpha/N$ and write $x^{\mu\alpha}(t)=x^\mu(\sigma,t)$. Then at $N\to\infty$ the $\sigma$ tends to a continuous label; still $d\sigma$ retains the physical meaning that it is the (relative) number of constituents lying between $\sigma$ and $\sigma+d\sigma$. Also important is that we must keep $\kappa=N\kappa_0$ and $\mu=Nm_0$ fixed in taking the limit. We first note that in this limit the multilocal quantity just tends to the local quantity $-\partial x^\mu/\partial\sigma$. Thus the Lagrangian goes over to the simpler one, which coincides with the Lagrangian with the identification $\kappa=\varkappa/\pi$, $\mu=\bar\mu/\pi$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>A global equation is not a theory — strengthen it to hold pointwise</li>
+</ol>
+<p><strong>The idea.</strong> One equation $H\Psi=0$ fixes the spectrum but not the physics. The string needs one equation per point, and these must close under commutation; the naive density does not close, so a compensating term built from $G$ has to be added. The closure requirement then <em>determines</em> the theory.</p>
+<p><strong>What it would add.</strong> A general principle the corpus uses implicitly but never states: when a theory is defined by a constraint, a single integrated constraint is underdetermined, and the correct completion is the local version plus closure. It is the same move that turns the Virasoro conditions from a mass formula into a symmetry algebra, and the same move that a field-theoretic treatment makes when it promotes a global charge to a local current.</p>
+<p><strong>Where it lands.</strong> §<em>The Constraints</em> of <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), as the local closure principle.</p>
+<p><strong>What stands in the way.</strong> The argument is made for the string's particular $F$ and $G$; whether every constraint system admits a closing local version is not addressed.</p>
+<ol>
+<li>$N$ as a logarithmic cutoff on linear size</li>
+</ol>
+<p><strong>The idea.</strong> The multilocal model has the string's equidistant spectrum but doubled and truncated at mode $[N/2]$. Because the largest mode is finite, the smallest length is finite, and the divergence that the continuum string has in its linear size is regulated. $N$ is not a lattice spacing — it enters logarithmically.</p>
+<p><strong>What it would add.</strong> A regulator with a physical reading: the number of constituents. The corpus's treatments of string divergences use dimensional regularisation or a cutoff in mode number without saying what the cutoff means; here $N$ counts points, and the truncation at $[N/2]$ is the statement that a chain of $N$ points cannot oscillate faster than its point spacing allows.</p>
+<p><strong>Where it lands.</strong> §<em>The Regulator</em> of <em>The Path Integral in Biquaternionic Form</em> (<code>articles_physics/the-path-integral-in-biquaternionic-form.md</code>), as the constituent-count regulator.</p>
+<p><strong>What stands in the way.</strong> The correspondence is only at the level of the free spectrum; whether the regulator preserves the algebra at finite $N$ is exactly the question the "extra constraints" are there to handle. </p>
+<h3 id="3-one-dimensional-organisation-from-a-force-rule-not-from-a-topology">3. One-dimensional organisation from a force rule, not from a topology</h3>
+<p><strong>The idea.</strong> The $N$ points are not placed on a line by hand. <strong>Where it lands.</strong> §<em>The Chain</em> of the conversion of <em>Constituent Mass, Free-Limit Condition, and Quantization for Trilocal Theory</em> in this folder, as the force-rule origin of dimension.</p>
+<h3 id="4-two-strings-one-lagrangian-and-the-one-with-no-non-relativistic-limit">4. Two strings, one Lagrangian, and the one with no non-relativistic limit</h3>
+<p><strong>The idea.</strong> The massive and massless strings both come from $L=-[-\dot x^2\{\kappa^2x'^2+\mu^2\}]^{1/2}$; $\mu\to0$ is singular, and at that point longitudinal motion loses meaning and the non-relativistic limit ceases to exist. <strong>Where it lands.</strong> §<em>The Model</em> of the conversion of <em>Theory of Relativistic String and Super-Wave Equation. I</em> in this folder, as the singular limit.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaluza–Klein Theory as a Dynamics in a Dual Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - Kaluza-Klein Theory as a Dynamics in a Dual Geometry - 0905.4130.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="kaluzaklein-theory-as-a-dynamics-in-a-dual-geometry"><strong>Kaluza–Klein Theory as a Dynamics in a Dual Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0905.4130v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. Gershon, L. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 May 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>18 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - Kaluza-Klein Theory as a Dynamics in a Dual Geometry - 0905.4130-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Kaluza-Klein Theory as a Dynamics in a Dual Geometry - 0905.4130.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - Kaluza-Klein Theory as a Dynamics in a Dual Geometry - 0905.4130.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives Kaluza–Klein geometry rather than postulating it. The starting point is the relativistic Hamiltonian mechanics with a five-dimensional electromagnetic field — five fields, because gauge invariance in a manifestly covariant theory with a world time requires a fifth compensating field. Its Lorentz scalar component is then absorbed into a conformal factor of the metric, the geodesics of that metric are computed, and they turn out to be the geodesics of a Kaluza–Klein theory. The extra dimension is not added by hand; it is what the fifth potential becomes once the scalar is put into the metric.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We have shown in this work that in the framework of a relativistic dynamics including a 5D electromagnetic field (required for gauge invariance in such a framework), that the Lorentz scalar field associated with this theory can be absorbed into a conformal metric. The geodesics induced by this metric can be cast into the form of a Kaluza-Klein theory."</p>
+<h3 id="the-lineage">The lineage</h3>
+<p>"It has been shown that the orbits of motion for a wide class of non-relativistic Hamiltonian systems can be described as geodesic flow on a manifold and an associated dual. This method can be applied to a four dimensional manifold of orbits in space-time associated with a relativistic system. One can study the consequences on the geometry of the introduction of electromagnetic interaction. We find that resulting geometrical structure in the dual space is that of Kaluza and Klein."</p>
+<h3 id="the-equivalence">The equivalence</h3>
+<p>"Passing to the conformal metric, we found that the resulting geodesics can be identified with those of a Kaluza-Klein theory."</p>
+<p>"We have therefore shown that Kaluza"–"Klein theory can be understood in terms of a conformal transformation of 5D electromagnetism in a flat space, for which the conventional Maxwell fields are the zero mode."</p>
+<h3 id="the-assessment">The assessment</h3>
+<p>"This work describes an underlying dynamical structure for Kaluza-Klein type theories, and it may provide a deeper understanding of the structure of higher dimensional gauge theories of this type."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-fifth-dimension-is-a-gauge-direction-not-a-small-dimension">1. The fifth dimension is a gauge direction, not a small dimension</h3>
+<p><strong>The idea.</strong> A <strong>derivation</strong>: the extra dimension of Kaluza–Klein is the direction generated by the fifth gauge potential of a world-time covariant theory. It is not compactified to be hidden; it is the coordinate conjugate to the mass, and it appears in the metric when the scalar potential is absorbed.</p>
+<p><strong>What it would add.</strong> The corpus's Kaluza–Klein-adjacent articles treat the fifth dimension as an ansatz with a compactification radius. This says the fifth direction has a prior meaning and the compactification is a separate choice about its topology. That would let the corpus's articles on extra dimensions say what the dimension is before deciding how big it is, which is a distinction the standard presentation blurs.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation gives a fifth direction with the wrong signature for a conventional Kaluza–Klein circle, and reconciling it with compactification would need the metric's signature discussed.</p>
+<h3 id="2-a-scalar-field-and-a-metric-deformation-are-the-same-data">2. A scalar field and a metric deformation are the same data</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: the Lorentz scalar of the five-potential can be absorbed into a conformal factor of the four-metric without changing the geodesics. Which description one uses — scalar field or conformal metric — is a choice of bookkeeping.</p>
+<p><strong>What it would add.</strong> The corpus's articles on effective metrics take the metric as given and the matter as separate. This is a worked case where the matter content is exactly a conformal rescaling, so the two descriptions are provably interchangeable. For a corpus that often asks what is physical and what is convention, this is a clean example in the gravitational setting, and it is stronger than the usual statement that a scalar can be conformally transformed away.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-conformal-anomaly-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The equivalence holds for geodesics, not for the field equations; the Einstein tensor of the rescaled metric is not the original one, so the two descriptions agree on motion and disagree on dynamics.</p>
+<h3 id="3-kaluzaklein-charge-relations-become-kinematic">3. Kaluza–Klein charge relations become kinematic</h3>
+<p><strong>The idea.</strong> A <strong>consequence</strong>: in this construction the relation between charge and the fifth component of momentum — the usual Kaluza–Klein identification — follows from the conformal map rather than being assumed as a quantisation of the fifth momentum.</p>
+<p><strong>What it would add.</strong> The corpus's charge-quantisation articles get charge quantisation from a topological or algebraic condition. Here it would come from the identification of a canonical momentum with a gauge charge, which is a third route. Recording it gives the corpus a comparison point: three derivations of the same discreteness, from three different structures.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction produces the identification but not the quantisation of the fifth momentum, so the discreteness still has to be imposed.</p>
+<p>The rank: the gauge-direction reading first, because it explains what the fifth dimension is; the scalar-metric equivalence second, because it is a proved interchangeability; the charge relation last, because it is incomplete.</p>
+<p>The remaining items in one line each: the dual manifold, which is where the geodesic flow lives and is not the original spacetime; the connection form built from the conformal factor, which is what makes the geodesics come out right; and the non-relativistic limit, which is where the method was first developed and is the check on the relativistic extension.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

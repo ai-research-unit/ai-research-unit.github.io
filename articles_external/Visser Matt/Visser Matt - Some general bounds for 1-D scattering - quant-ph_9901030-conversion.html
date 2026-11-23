@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some general bounds for 1-D scattering — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Some general bounds for 1-D scattering - quant-ph_9901030.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="some-general-bounds-for-1-d-scattering"><strong>Some general bounds for 1-D scattering</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>quant-ph/9901030v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, October 1998</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Some general bounds for 1-D scattering - quant-ph_9901030-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Some general bounds for 1-D scattering - quant-ph_9901030.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Some general bounds for 1-D scattering - quant-ph_9901030.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>One-dimensional scattering appears in acoustics, waveguides, and barrier tunnelling. The author derives general bounds on reflection and transmission coefficients. The bounds depend on the shape of the potential, not on solving the equation. They hold for a wide class of potentials.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"One-dimensional scattering problems are of wide physical interest and are encountered in many diverse applications."</p>
+<h3 id="the-aim">The aim</h3>
+<p>"in this article I establish some very general bounds for reflection and transmission coefficients"</p>
+<h3 id="the-examples">The examples</h3>
+<p>"In acoustics one might be interested in the propagation of sound waves down a long pipe, while in electromagnetism one might be interested in the physics of wave-guides."</p>
+<h3 id="the-quantum-case">The quantum case</h3>
+<p>"In quantum physics the canonical examples are barrier penetration and reflec[tion]"</p>
+<h3 id="the-asymptotics">The asymptotics</h3>
+<p>"in each of the two asymptotic regions there are two independent solutions to the Schrodinger equation"</p>
+<p>$$\psi_{(\pm i;\pm\infty;x)}\approx \frac{e^{\pm i k_{\pm\infty}x}}{\sqrt{\cdots}}\qquad (paper\ 3)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-without-solving">1. Bounds without solving</h3>
+<p><strong>The idea.</strong> Shape data give limits on transmission without an exact solution.</p>
+<p><strong>What it would add.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code> is the later, sharper version of this programme. Reading the two side by side shows what sharpening bought.</p>
+<p><strong>Where it lands.</strong> <code>articles_external/Visser Matt/Visser Matt - Analytic bounds on transmission probabilities - 0901.0944-conversion.md</code>, in the discussion of the method.</p>
+<p><strong>What stands in the way.</strong> The bounds are loose. Ranked first, because it is the direct ancestor.</p>
+<h3 id="2-one-equation-many-fields">2. One equation, many fields</h3>
+<p><strong>The idea.</strong> The same mathematics covers sound, light, and electrons.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats one limit. Here the shared structure is the equation, not the field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of limits.</p>
+<p><strong>What stands in the way.</strong> The analogy is at the level of a single equation. Ranked second.</p>
+<h3 id="3-barriers-and-horizons">3. Barriers and horizons</h3>
+<p><strong>The idea.</strong> A potential barrier scatters much as a horizon does.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> could use transmission bounds as a proxy for horizon response.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the discussion of scattering.</p>
+<p><strong>What stands in the way.</strong> The correspondence needs a mapping. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

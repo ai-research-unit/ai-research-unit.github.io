@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy bounds in terms of the w parameter — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds in terms of the w parameter - 1109.2710.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="entropy-bounds-in-terms-of-the-w-parameter"><strong>Entropy bounds in terms of the w parameter</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1109.2710v3 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gabriel Abreu, Carlos Barceló, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 8 December 2011 (dated 13 September 2011)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Entropy bounds in terms of the w parameter - 1109.2710-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds in terms of the w parameter - 1109.2710.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Entropy bounds in terms of the w parameter - 1109.2710.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Earlier work by two of the authors bounded the entropy of equilibrium uncollapsed matter by half its area, which is weaker than the quarter-area result from black hole thermodynamics. This paper strengthens the bound by writing it in terms of an averaged equation-of-state parameter $w$. Causality caps that average at one, and as it approaches one the bound approaches a quarter of the area. So a horizonless body can get arbitrarily close to the Bekenstein entropy. The paper also clarifies why the chemical potential must be positive, with an appendix covering particle–antiparticle mixtures.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-earlier-bound">The earlier bound</h3>
+<p>"In a pair of recent articles two of the current authors have developed an entropy bound for equilibrium uncollapsed matter using only classical general relativity, basic thermodynamics, and the Unruh effect. An odd feature of that bound, $S\le\frac12A$, was that the proportionality constant, $\frac12$, was weaker than that expected from black hole thermodynamics, $\frac14$."</p>
+<h3 id="what-this-paper-does">What this paper does</h3>
+<p>"In the current article we strengthen the previous results by obtaining a bound involving the (suitably averaged) $w$ parameter."</p>
+<h3 id="the-causality-restriction">The causality restriction</h3>
+<p>"Simple causality arguments restrict this averaged $\langle w\rangle$ parameter to be $\le1$. When equality holds, the entropy bound saturates at the value expected based on black hole thermodynamics."</p>
+<h3 id="the-intermediate-result">The intermediate result</h3>
+<p>$$S\le\frac{1+\langle w\rangle}{1+3\langle w\rangle}\frac{A}{2}.\qquad (paper\ 3.5)$$</p>
+<h3 id="the-stiff-matter-case">The stiff-matter case</h3>
+<p>"This condition is saturated by 'stiff matter' ($w=1$). In this case we found precisely the same bound that arises in black hole thermodynamics"</p>
+<p>$$S\le\frac{A}{4}.\qquad (paper\ 2.9)$$</p>
+<p>"But as derived this bound requires a very special and very restrictive equation of state."</p>
+<h3 id="the-monotonicity">The monotonicity</h3>
+<p>"That is, the coefficient arising in this entropy bound is monotone decreasing, and approaches $\frac14$ as $\langle w\rangle$ increases to the stiff matter limit $\langle w\rangle=1$."</p>
+<h3 id="the-two-regimes">The two regimes</h3>
+<p>"Now in diffuse systems we know $\langle w\rangle\approx0$ and are back to $S=A/2$. However if the system is close to collapse, with most of the mass in the system being close to the upper limit of 'stiff matter' ($w=1$) then $\langle w\rangle\lesssim1$."</p>
+<h3 id="the-conclusion">The conclusion</h3>
+<p>"Overall, we find that even in the absence of any black hole region, we can nevertheless get arbitrarily close to the Bekenstein entropy."</p>
+<h3 id="the-summary">The summary</h3>
+<p>"In summary, we now have an improved bound, and an improved proof, that gets arbitrarily close to the black hole bound."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-quarter-is-a-limit-not-a-law">1. The quarter is a limit, not a law</h3>
+<p><strong>The idea.</strong> The quarter-area coefficient is reached only as the matter stiffens; softer matter gives more entropy per area.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> presents the quarter as a derived constant. This paper shows it is the endpoint of a one-parameter family, which tells the article which property of its derivation fixes the number.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the derivation of the entropy.</p>
+<p><strong>What stands in the way.</strong> The family needs an equation of state. Ranked first, because it explains the coefficient rather than assuming it.</p>
+<h3 id="2-causality-caps-an-equation-of-state">2. Causality caps an equation of state</h3>
+<p><strong>The idea.</strong> $w\le1$ follows from causal signal propagation, not from observation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code> treats causality as a barrier. Here the same principle yields a numerical bound on matter, which is a constructive use of the barrier the article could adopt.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, in the consequences of the barrier.</p>
+<p><strong>What stands in the way.</strong> The bound is on a fluid parameter. Ranked second.</p>
+<h3 id="3-one-parameter-between-two-regimes">3. One parameter between two regimes</h3>
+<p><strong>The idea.</strong> A single averaged $w$ interpolates between diffuse matter and near-collapse.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code> describes a local state. An averaged parameter that controls a global bound is the bridge between local and global descriptions, which the article lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, in the discussion of the state.</p>
+<p><strong>What stands in the way.</strong> The interpolation is for a specific bound. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

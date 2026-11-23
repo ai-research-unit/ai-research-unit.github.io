@@ -81,10 +81,10 @@
 $$</p>
 <p><strong>Proposition.</strong> The coefficient $e_k$ is the $k$-th elementary symmetric function of the eigenvalues, counted with multiplicity:</p>
 <p>$$
-e_k=\sum_{i_1<\cdots<i_k}\lambda_{i_1}\cdots\lambda_{i_k}.
+e_k=\sum_{i_1&lt;\cdots&lt;i_k}\lambda_{i_1}\cdots\lambda_{i_k}.
 $$</p>
 <p><strong>Proof.</strong> Over $\mathbb{C}$ the matrix is triangularisable, $A=PTP^{-1}$ with $T$ upper triangular; then $\mathrm I+tA=P(\mathrm I+tT)P^{-1}$ and $\det(\mathrm I+tT)=\prod_i(1+t\lambda_i)$. Expanding the product collects $t^{k}$ with the sum of the $k$-fold products of distinct eigenvalues.</p>
-<p><strong>Corollary.</strong> The four coefficients are $e_1=\sum\lambda_i$, $e_2=\sum_{i<j}\lambda_i\lambda_j$, $e_3=\sum_{i<j<k}\lambda_i\lambda_j\lambda_k$ and $e_4=\lambda_1\lambda_2\lambda_3\lambda_4$.</p>
+<p><strong>Corollary.</strong> The four coefficients are $e_1=\sum\lambda_i$, $e_2=\sum_{i&lt;j}\lambda_i\lambda_j$, $e_3=\sum_{i&lt;j&lt;k}\lambda_i\lambda_j\lambda_k$ and $e_4=\lambda_1\lambda_2\lambda_3\lambda_4$.</p>
 <p><strong>Proof.</strong> Expand the product $\prod_i(1+t\lambda_i)$ and read the coefficient of $t^{k}$.</p>
 <p><strong>The polynomial at $t=-1$ and at large $t$.</strong> At $t=-1$ the identity gives $\det(\mathrm I-A)=\sum_k(-1)^{k}e_k$, the value at the eigenvalue $1$; at $t\to\infty$ it gives $e_4=\det A$. The four coefficients thus interpolate between the trace and the determinant.</p>
 <h2 id="newtons-identities">Newton's Identities</h2>
@@ -118,7 +118,7 @@ $$</p>
 \dim\Lambda^{0}=\dim\Lambda^{4}=1,\qquad \dim\Lambda^{1}=\dim\Lambda^{3}=4,\qquad \dim\Lambda^{2}=6 .
 $$</p>
 <p><strong>Proof.</strong> The binomial coefficients $\binom{4}{k}$ for $k=0,1,2,3,4$, and $\Lambda^{2}\mathbb{C}^{4}$ also has dimension the dimension of the antisymmetric half, $6$.</p>
-<p><strong>The two readings of the middle coefficient.</strong> $e_2$ is the trace on $\Lambda^{2}\mathbb{C}^{4}$, and it is also the sum of the six principal $2\times2$ minors of $A$. The identity $\operatorname{tr}(\Lambda^{2}A)=\sum_{i<j}\det A_{[i,j]}$ is the Cauchy–Binet theorem applied to the six coordinate projections.</p>
+<p><strong>The two readings of the middle coefficient.</strong> $e_2$ is the trace on $\Lambda^{2}\mathbb{C}^{4}$, and it is also the sum of the six principal $2\times2$ minors of $A$. The identity $\operatorname{tr}(\Lambda^{2}A)=\sum_{i&lt;j}\det A_{[i,j]}$ is the Cauchy–Binet theorem applied to the six coordinate projections.</p>
 <p><strong>The four coefficients and the four forms.</strong> $e_1$ and $e_4$ are the trace and the determinant of the regular representation; $e_2$ and $e_3$ are the coefficients that distinguish the two middle exterior powers. At $n=4$ all four are needed: the characteristic polynomial has degree four and no two of its coefficients are functions of the others.</p>
 <h2 id="invariance-and-the-strata">Invariance and the Strata</h2>
 <p><strong>Proposition.</strong> Each $e_k$ is invariant under conjugation: $e_k(PAP^{-1})=e_k(A)$ for invertible $P$.</p>

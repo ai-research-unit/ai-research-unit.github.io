@@ -160,10 +160,10 @@ $$</p>
 <p>$$
 L^{\mathrm{axf}}(\tilde\nabla)=
 \begin{pmatrix}
-\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\[2pt]
-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}\\[2pt]
-\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}\\[2pt]
-\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\frac{\partial}{\partial Q_t}&amp;-\frac{\partial}{\partial Q_x}&amp;-\frac{\partial}{\partial Q_y}&amp;-\frac{\partial}{\partial Q_z}\\[2pt]
+\frac{\partial}{\partial Q_x}&amp;\frac{\partial}{\partial Q_t}&amp;-\frac{\partial}{\partial Q_z}&amp;\frac{\partial}{\partial Q_y}\\[2pt]
+\frac{\partial}{\partial Q_y}&amp;\frac{\partial}{\partial Q_z}&amp;\frac{\partial}{\partial Q_t}&amp;-\frac{\partial}{\partial Q_x}\\[2pt]
+\frac{\partial}{\partial Q_z}&amp;-\frac{\partial}{\partial Q_y}&amp;\frac{\partial}{\partial Q_x}&amp;\frac{\partial}{\partial Q_t}
 \end{pmatrix}.
 $$</p>
 <p>It is the multiplication table of the units read with derivative coefficients (<em>Matrix Representations Conventions</em>, §<em>The Left Family</em>), and the right reading has the array of §<em>The Right Family</em> there. Its first column is the gradient itself, because $\tilde\nabla e_t=\tilde\nabla$.</p>
@@ -181,20 +181,20 @@ $$</p>
 <p>$$
 R^{\mathrm{axf}}(\tilde\nabla)=
 \begin{pmatrix}
-\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\[2pt]
-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}\\[2pt]
-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}\\[2pt]
-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\frac{\partial}{\partial Q_t}&amp;-\frac{\partial}{\partial Q_x}&amp;-\frac{\partial}{\partial Q_y}&amp;-\frac{\partial}{\partial Q_z}\\[2pt]
+\frac{\partial}{\partial Q_x}&amp;\frac{\partial}{\partial Q_t}&amp;\frac{\partial}{\partial Q_z}&amp;-\frac{\partial}{\partial Q_y}\\[2pt]
+\frac{\partial}{\partial Q_y}&amp;-\frac{\partial}{\partial Q_z}&amp;\frac{\partial}{\partial Q_t}&amp;\frac{\partial}{\partial Q_x}\\[2pt]
+\frac{\partial}{\partial Q_z}&amp;\frac{\partial}{\partial Q_y}&amp;-\frac{\partial}{\partial Q_x}&amp;\frac{\partial}{\partial Q_t}
 \end{pmatrix}.
 $$</p>
 <p><strong>The two arrays compared.</strong> The first rows agree. In the spatial block the two arrays differ only in the six off-diagonal entries, the three diagonal ones being equal, and the difference is</p>
 <p>$$
 L^{\mathrm{axf}}(\tilde\nabla)-R^{\mathrm{axf}}(\tilde\nabla)=
 \begin{pmatrix}
-0&0&0&0\\[2pt]
-0&0&-2\frac{\partial}{\partial Q_z}&2\frac{\partial}{\partial Q_y}\\[2pt]
-0&2\frac{\partial}{\partial Q_z}&0&-2\frac{\partial}{\partial Q_x}\\[2pt]
-0&-2\frac{\partial}{\partial Q_y}&2\frac{\partial}{\partial Q_x}&0
+0&amp;0&amp;0&amp;0\\[2pt]
+0&amp;0&amp;-2\frac{\partial}{\partial Q_z}&amp;2\frac{\partial}{\partial Q_y}\\[2pt]
+0&amp;2\frac{\partial}{\partial Q_z}&amp;0&amp;-2\frac{\partial}{\partial Q_x}\\[2pt]
+0&amp;-2\frac{\partial}{\partial Q_y}&amp;2\frac{\partial}{\partial Q_x}&amp;0
 \end{pmatrix},
 $$</p>
 <p>which is twice the array of the curl: applied to the coefficient column it returns $2\nabla\times\vec Q_{\mathrm f}$ and nothing else. The entire content of the transposition is in that block, and the block is antisymmetric, so the transposition can never be mistaken for a sign on the whole operator.</p>

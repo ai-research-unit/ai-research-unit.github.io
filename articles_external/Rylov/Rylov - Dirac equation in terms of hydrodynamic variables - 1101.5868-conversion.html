@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirac Equation in Terms of Hydrodynamic Variables — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Dirac equation in terms of hydrodynamic variables - 1101.5868.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirac-equation-in-terms-of-hydrodynamic-variables"><strong>Dirac Equation in Terms of Hydrodynamic Variables</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1101.5868 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 31 January 2011 (paper first published 1995 in Advances in Applied Clifford Algebras)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Dirac equation in terms of hydrodynamic variables - 1101.5868-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dirac equation in terms of hydrodynamic variables - 1101.5868.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Dirac equation in terms of hydrodynamic variables - 1101.5868.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Eliminates the $\gamma$-matrices from the Dirac equation and rewrites it in hydrodynamic variables, then reads the result as a statement about what the Dirac particle is. Two conclusions follow, and both are uncomfortable. The transformed system contains a timelike unit vector $f^k$ picking a preferred direction, so the Dirac equation is not compatible with the principle of special relativity. And the classical part of the transformed system is either a non-local extended object in Minkowski space or a point particle in a distorted space, but not a point particle in Minkowski space.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-method-and-why-it-was-not-published">The method and why it was not published</h3>
+<p>The author's own prefatory note is unusually direct. The paper "was my unique publication on Clifford algebras", and the elimination of the $\gamma$-matrices is possible "only if they are not represented in a concrete representation (i.e. they are to be considered as basic elements of a Clifford algebra)". The two results are named: "s: (1) discovery that the Dirac particle has a complicate internal structure (it is not a pointlike particle), (2) discovery that the internal degrees of freedom are described non-relativistically. These" He records that he could not place the physically essential parts in reviewed journals, and that "apparently, the reviewers did not know the Sauter - Sommerfeld method".</p>
+<h3 id="what-the-transformation-produces">What the transformation produces</h3>
+<p>The Dirac system $S_D$ is treated as a dynamical system with no extra assumptions, and rewritten in hydrodynamic variables. The Lagrangian splits into a classical part $L_{D\,qu}$ and quantum variables $\kappa,\kappa_i$: "r quantum effects. Suppress- ing the quantum variables (setting κ, κi ≡ 0), one transforms the Lagrangian LD of the system SD into its classical part LDqu . 3." In the quasi-uniform approximation $S_D$ becomes a statistical ensemble $S_{D\,qu}$ of classical systems $S_{d\,c}$.</p>
+<p>The preferred direction is the sharp result: "The transformation of the Dirac equation to hydrodynamic variables separates out a peculiar direction in the space-time. This direction is described by the timelike unit vector $f^k$. Existence of a preferred direction in the space-time is incompatible with the special relativity principle. It means that the Dirac equation is incompatible with the special relativity principle and needs a modification for such a compatibility."</p>
+<h3 id="what-the-classical-part-is">What the classical part is</h3>
+<p>$S_{d\,c}$ "cannot be interpreted as a pointlike charged particle in the Minkowski space-time. Rather it is either a complicated non-local dynamic system in the Minkowski space-time, or a pointlike particle, but in a non-Riemannian (distorted) space-time."</p>
+<p>The extended option is worked out as a ring: spread the constant $\varphi_{(0)}$ uniformly, and the world lines of the family form a two-dimensional world tube, "more symmetric, than helically moving particle", and such a ring "does not radiate electromagnetic waves". But "nately, rings Sφ and their two-dimensional world tubes are incompatible with the concept of a pointlike particle. One" The other option is taken seriously: "one can try to associate the world tubes with the space-time properties", which requires that "the characteristic geometric structures of the space-time are three-dimensional world-tubes (but not straight lines)". In that space "the momentum of a particle and its velocity are independent quantities which are connected by no algebraic relation".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-preferred-direction-and-the-covariance-of-the-dirac-equation">1. The preferred direction and the covariance of the Dirac equation</h3>
+<p><strong>The idea.</strong> A <strong>theorem-shaped claim</strong>: expressed in hydrodynamic variables, the Dirac field defines a timelike unit vector field $f^k$ at every point, and a vector field of that kind is a frame, not a scalar. If it is physical, Lorentz invariance is broken; if it is gauge, it must be shown to be.</p>
+<p><strong>What it would add.</strong> The corpus builds the Dirac equation in $\mathbb{B}$ and states its Lorentz covariance as a property of the conjugation action, with the spin-half fluid article matching it to Takabayasi's tensor fields term by term. Rylov's claim is a direct contradiction, or a direct identification: the $f^k$ is exactly the spin vector direction that the corpus's polar decomposition also singles out. The corpus has to say which it is, and it has not been asked in this form.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> A vector built from the state at a point is not a preferred direction of space-time unless it is the same vector for all states, and Rylov's argument moves between the two readings. If $f^k$ is a functional of the field, it transforms as a vector and there is no violation; the paper does not distinguish the cases, which is why the claim reads as a discovery about notation as much as about physics.</p>
+<h3 id="2-the-particle-is-a-tube-not-a-point">2. The particle is a tube, not a point</h3>
+<p><strong>The idea.</strong> The two options in the conclusion are one option: a point particle in a distorted space and an extended object in Minkowski space are the same object described in two geometries, and the paper says so when it tries "to associate the world tubes with the space-time properties".</p>
+<p><strong>What it would add.</strong> The corpus's spin-half fluid is a field with a density and a velocity, and it is a pointwise object. The identification of the particle with the tube — with "three-dimensional world-tubes (but not straight lines)" as the characteristic structures of the space — gives the corpus a way to read its own extended solutions as particles rather than as wave packets.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> No equation of motion for the tube is given; the tube is a kinematical consequence of spreading an integration constant. And the corpus's own objects are solutions of an equation at a point, so a tube-particle would need a dynamical principle the paper does not supply.</p>
+<h3 id="3-momentum-and-velocity-independent">3. Momentum and velocity independent</h3>
+<p><strong>The idea.</strong> In the distorted geometry "the momentum of a particle and its velocity are independent quantities which are connected by no algebraic relation" — the mass shell stops being a relation between $p$ and $u$.</p>
+<p><strong>What it would add.</strong> The corpus writes $p^\mu=mu^\mu$ as a definition and derives the mass shell from the algebra's norm. If the relation can be broken by geometry, then the mass shell is a statement about Minkowski space rather than about the algebra, and the corpus's derivation would be a derivation of the flat case only. That is a precise, checkable claim, and it bears on the corpus's account of why $m$ is what it is.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is a remark in the conclusion, with no formula for the relation that replaces $p=mu$ and no example of a particle for which it fails. Absent that, it cannot be checked against the corpus's derivation.</p>
+<p>The rank: the preferred direction first, because it is the sharpest claim and the corpus has the object that would settle it; the tube second, because it is the paper's own reading of its two options; the broken mass shell last, because it is one sentence without a formula.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

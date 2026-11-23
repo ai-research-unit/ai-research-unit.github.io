@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Non-local Wave Equation and its Connection with the Dirac Particle — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Non-local Wave Equation and its Connection with the Dirac Particle.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-non-local-wave-equation-and-its-connection-with-the-dirac-particle"><strong>A Non-local Wave Equation and its Connection with the Dirac Particle</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>9</strong> (1953) 557, No. 5; dated 14 April 1953</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - A Non-local Wave Equation and its Connection with the Dirac Particle-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Non-local Wave Equation and its Connection with the Dirac Particle.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - A Non-local Wave Equation and its Connection with the Dirac Particle.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Writes out the exact coordinate-space form of the relativistic Schrödinger equation $i\dot\psi=\sqrt{p^{2}+m^{2}}\,\psi$ and shows it is an integral equation with a kernel that diverges at the origin and produces tails outside the light cone, so that "non-local" is not an approximation but the content of the relativistic Hamiltonian. The equation selects positive-frequency solutions only and is a linearisation in time of the Klein–Gordon equation other than Dirac's. The apparent non-covariance is then resolved: it is the Dirac equation after a Foldy-type canonical transformation, with the wave function a spinor component. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-kernel">The kernel</h3>
+<p>"Since· the Schrodinger equation for state vector decreasing exponentially for large l' but having aP- originalIy works· in the Hilbett space, it must in the preciable values for r:S ,10 (the Compton wave length). ordinary space representation" For $H_{\pm}=\pm(p^{2}+m^{2})^{1/2}$ the momentum-space equation is $\{i\partial/\partial t\mp(p^{2}+m^{2})^{1/2}\}\psi_{\pm}(p,t)=0$, and in coordinate space $$ -\tfrac{i}{2}\frac{\partial\phi_{\pm}}{\partial t}\mp\int \nu(x-x')\,\phi_{\pm}(x',t)\,dx'=0, \qquad \nu(x)=\frac{1}{(2\pi)^{3}}\int (k^{2}+\kappa^{2})^{1/2}e^{ikx}dk, $$ with $\kappa=m/\hbar$. Its explicit form is $$ \nu(x)=\frac{\kappa^{2}K_{1}(\kappa r)}{2\pi^{2}r}-\frac{1}{\pi^{2}}\frac{1}{r^{4}}+\frac{\kappa^{2}}{16\pi^{2}}\log\frac{\kappa r}{2}\cdots, \qquad r=|x|, $$ decreasing exponentially for large $r$ but having appreciable values for $r\lesssim\lambda_{0}$ (the Compton wave length), while "y in this case, however, we have its space integral also diverging." Expanding in descending powers of $\kappa$ "in the $\delta$-function and its derivatives ... it is essentially an integral operator", and the expansion indicat[es] that the usual non-relativistic Schrödinger equation corresponds to the $\lambda_{0}^{2}$-approximation for our wave equation. The equation is written as an initial-value problem, $\phi_{\pm}(x,t)=\int J_{\pm}(x-x',t-t')\phi_{\pm}(x',t')\,dx'$ with $J_{\pm}$"elativistic' Hamiltonian frequency parts of the invariant J-function respectively", which "iverge in the neighbourhood of the light-cone Since, however, our wave equation is the Schri'- in both sides as, e.".</p>
+<h3 id="what-it-selects-and-what-goes-wrong">What it selects, and what goes wrong</h3>
+<p>"Our wave equation selects such solutions of the Thus, for instance, our wave equation can be regarded KleinGordon equation as to propagate solely with as the. transformed wave ·equation for a. free Dirac positive (or negative) frequencies, and corresponds to partide by suitably arranging &lt;P± into a spinor." Propagation beyond the light cone "is at variance with e.g. the Dirac. wave function, cone over· the region of the order of ).0' and mor2- and seems·"; the Lagrangian $L$ "ot It I &lt;1' Lorentz. invariant, at least as far as we assume &lt;P± to be an ·invariant. Moreover- the circumstance that our with ,1-=,1'*, where ).", and the initial-value form "ot be =~(J =t= £,1(1)_ generalized to an integral over arbitrary· space-like 2 surface q: Downloaded from academic.".</p>
+<h3 id="the-resolution-it-is-the-dirac-equation-transformed">The resolution: it is the Dirac equation transformed</h3>
+<p>"r wave equation is the Schri'- in both sides as, e.g., dinge1' equation that implies in the propercorrespon- dence-theoretic meaning the relativistic relationship between momentum and energy in the classical theory, wave equations for any free relativistic wave fields must have certain connection 'with this wave equltic n, insofar as they should involve the." Concretely, "ation as to propagate solely with as the. transformed wave ·equation for a. free Dirac positive (or negative) frequencies, and corresponds to partide by suitably arranging &lt;P± into a spinor.", via "cotdingly, these solutions must of course satisfy the with the non-covariant unitary operator: Klein.Gordon" $\exp(\cdot)$ built from $\beta$ and the odd part of the Hamiltonian. Taking the usual representation that makes $\beta$ diagonal, the transformed Dirac equation is perfectly separated into four independent equations for each spinor component, the upper and lower components just satisfying our previous wave equations (2) and (3), with positive or negative sign respectively. Hence "ur &lt;P± not as a scalar but as JJ(X_XI, t - t l )'1j(xl -x")dx l upper or lower components of a spinor, our wave equation gains the relativistic meaning, though their 8 tranSformation property for Lorentz group is rather =---at ,1(1) (x-x ", t - I I ). complicated. ."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-relativistic-hamiltonian-is-a-non-local-operator-and-its-kernel-is-written-in-closed-form">1. The relativistic Hamiltonian is a non-local operator and its kernel is written in closed form</h3>
+<p><strong>The idea.</strong> $H=\sqrt{p^{2}+m^{2}}$ is not approximately non-local: in coordinate space it is an integral whose kernel is $\nu(x)=\kappa^{2}K_{1}(\kappa r)/2\pi^{2}r$, diverging as $r^{-4}$ at the origin and decaying only beyond a Compton wavelength. The non-locality has a length and a closed-form symbol.</p>
+<p><strong>What it would add.</strong> The explicit operator behind the corpus's first-order root. <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> (<code>articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.md</code>) factorises the second-order operator to get a first-order one and treats the square root's meaning in §<em>What the Root Does Not Carry</em>; Takabayasi gives the other branch of the choice: keep the square root and accept an integral operator, whose kernel is elementary in terms of $K_{1}$. That is a concrete object where the corpus has a decision.</p>
+<p><strong>Where it lands.</strong> §<em>What the Root Does Not Carry</em>, as the alternative branch, and <em>The Operator and Its Symbol</em> in the same article, where the symbol of the root is the subject.</p>
+<p><strong>What stands in the way.</strong> The kernel's space integral diverges, so $\nu$ is not a function the corpus's norm can integrate against; the import is a symbol-level statement and needs a regularisation. Ranked first because it makes a decision the corpus has already taken visible.</p>
+<h3 id="2-positive-frequency-selection-forces-tails-outside-the-light-cone-and-that-is-consistent">2. Positive-frequency selection forces tails outside the light cone, and that is consistent</h3>
+<p><strong>The idea.</strong> Selecting only positive frequencies makes the propagator $J_{\pm}$, which has support and divergence on both sides of the cone; the wave function therefore spreads over a Compton wavelength outside the cone while remaining a solution of the Klein–Gordon equation. The covariance is not lost, it is hidden in the spinor structure.</p>
+<p><strong>What it would add.</strong> A worked case of a tension the corpus's causal articles discuss in the abstract. <em>Zitterbewegung in Biquaternionic Form</em> (<code>articles_physics/zitterbewegung-in-biquaternionic-form.md</code>) treats the same failure of a sharp light-cone localisation, as an oscillation of the mean position; here it appears as the support of a propagator, which is the sharper statement because it is a property of the equation and not of a state.</p>
+<p><strong>Where it lands.</strong> The zitterbewegung article's introduction, as the propagator-level counterpart.</p>
+<p><strong>What stands in the way.</strong> The letter shows the tail but does not compute an observable consequence of it, so the import is a statement of consistency rather than a prediction.</p>
+<h3 id="3-a-non-covariant-looking-equation-plus-a-spinor-index-is-covariant-the-foldy-transformation-is-the-dictionary">3. A non-covariant-looking equation plus a spinor index is covariant: the Foldy transformation is the dictionary</h3>
+<p><strong>The idea.</strong> The equation is not manifestly covariant, its Lagrangian is not invariant, and its two signs correspond to the upper and lower components of a Dirac spinor after the Foldy transformation. Covariance is carried by the transformation law of the four components and not by the equation's appearance.</p>
+<p><strong>What it would add.</strong> The reason the corpus's manifestly covariant form is a choice and not a necessity. <em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em> (<code>articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.md</code>) computes the transformation and its mean-position operator; Takabayasi's note is the observation that the <em>transformed</em> equation is exactly the non-local relativistic Schrödinger equation, so the transformation's meaning is fixed by an independent construction — it is the map between the two linearisations.</p>
+<p><strong>Where it lands.</strong> That article's §<em>What Is Standard and What the Algebra Adds</em>, as the identification of the transformed equation.</p>
+<p><strong>What stands in the way.</strong> The letter's transformation is written for the free particle only, and the extraction garbles the explicit generator, so the identification has to be checked against the standard Foldy form before it is quoted.</p>
+<p>The remainder, one line each. That the $r^{-4}$ divergence integrates to a divergent constant, so a point limit does not exist, is a remark about the kernel's short-distance behaviour and belongs with the corpus's regularisation notes. The remark that any relativistic wave equation must connect to this one "insofar as they should involve the. partidepicture. Our" is a programme statement, not a result.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-dynamics-of-classical-particle-with-spin-in-electromagnetic-field"><strong>Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>66</strong> (1981) 736, No. 2, Progress Letters; received 16 May 1981</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Dynamics of Classical Particle with Spin in Electromagnetic Field.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Gives a singular Lagrangian for a classical spinning particle in an electromagnetic field, with spin of fixed magnitude and arbitrary $g$. The existing theories are surveyed and each is faulted on a specific ground: Frenkel–Weyssenhoff has helical Zitterbewegung even in the free case, the Bargmann–Michel–Telegdi modification is not derivable from a Lagrangian, and all of them omit the Stern–Gerlach force and are valid only for weak homogeneous fields. The new Lagrangian uses two unit spacelike vectors whose antisymmetric product is the spin tensor, and the resulting theory has no free helical motion, includes the field-gradient coupling, and reduces to the symmetric (Frenkel–Weyssenhoff) equations exactly when $g=2$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-indictment-of-the-existing-theories">The indictment of the existing theories</h3>
+<p>The problem of setting up relativistic dynamics of a classical particle with intrinsic angular momentum of a fixed magnitude is an old one. In fact it has been a controversial one and the definitive theory for it seems to be still lacking.</p>
+<p>Both the symmetric theory and the BMT theory imply that in the free case where $F_{\mu\nu}$ vanishes one has $v_\mu=\text{const}$ and $\omega_\mu=\text{const}$; there is no Zitterbewegung. Really these theories are known to be useful for the experimental analysis of the behavior of relativistic spinning particles in the situation where quantum effects are negligible. However, these theories are applicable only when the field is homogeneous as is evident from the fact that (3) does not contain Stern-Gerlach force. Moreover even for the case of homogeneous field the equations of motion of these theories should be regarded as approximations valid for the weak field case. Related to this is the fact that they are not exactly derivable from a Lagrangian.</p>
+<p>In the following we present the classical theory of relativistic spinning particle which is free from any of the shortcomings or limitations above mentioned and which is based on a simple and clear-cut theoretical foundation. As in the case of Frenkel or Bargmann et al. our theory is that of a particle with spin of an arbitrary but fixed magnitude together with its associated magnetic moment (but without other multipoles), and the radiative reaction is neglected.</p>
+<h3 id="the-variables-and-the-action">The variables and the action</h3>
+<p>To describe the state of motion of a classical spinning particle we employ as before its coordinate $x_\mu(\tau)$, tracing a world line, and the pair of variables $a_\mu{}^1(\tau)$ and $a_\mu{}^2(\tau)$ satisfying $a_\mu{}^r a_\mu{}^s=\delta^{rs}$, where $\tau$ is an arbitrary time-ordering parameter. We now assume the variational principle $\delta\int L\,d\tau=0$.</p>
+<p>where $J$ and $m$ are positive constants, and $e$ and $\eta$ are coupling constants, while $\Lambda^{rs}=\Lambda^{sr}$ are Lagrangian multipliers; the dot denotes $d/d\tau$. This variational principle defines the theory completely. The form of $L$ is determined from the following considerations. First the action integral must be invariant under arbitrary reparametrization $\tau\to\tau'(\tau)$. Second in $L$ the kinetic term referring to $\{a_\mu{}^r\}$ should ensure that $Ja_\mu{}^2$ is in fact the canonical momentum $\Pi_\mu$ conjugate to $a_\mu{}^1$, and furthermore the conditions $P_\mu a^{\mu r}=0$, $(r=1,2)$ should follow from the Lagrangian as primary constraints.</p>
+<p>Furthermore the theory is invariant with respect to $a_\mu{}^{1\prime}=a_\mu{}^1\cos\theta+a_\mu{}^2\sin\theta$, $a_\mu{}^{2\prime}=-a_\mu{}^1\sin\theta+a_\mu{}^2\cos\theta$, because under this $a^{[\mu}{}_1a^{\mu 2]}$ is invariant and also $a^{1[\mu}a^{2\nu]}\to a^{1[\mu}a^{2\nu]}$ so that the action principle remains invariant. The Lagrangian is still regarded as a natural generalization of the well-known Lagrangian for a spinless charged particle.</p>
+<h3 id="the-resulting-equations">The resulting equations</h3>
+<p>"From the Lagrangian first we get the orthonormality, in so far as $\Lambda\neq0$ ... The canonical momentum conjugate to $x_\mu$" $p_\mu=m\dot x_\mu-\eta J a^{1[\mu}a^{2\nu]}F_{\mu\nu}$, with $\mu=m-\eta J a^{1\mu}a^{2\nu}F_{\mu\nu}$. It is connected with the 4-momentum $P$ by $P_\mu=p_\mu-eA_\mu$, and this latter automatically satisfies the transversality conditions as well as $-p^2=\mu^2\ge0$, as primary constraints.</p>
+<p>We then have $\Lambda=1$. The important point here is that $\tau$ is not the proper time but is defined by $\dot x^2-(S^{\mu\nu})^2/J^2=-1$, where $S\dot x\neq0$ when $F$ is working.</p>
+<p>This represents the conservation law for angular momentum, where $S_{\mu\nu}$ satisfies $S_{\mu\nu}P^\nu=0$ due to the transversality conditions. This condition evidently differs from Weyssenhoff's condition.</p>
+<h3 id="spin-precession">Spin precession</h3>
+<p>In our theory the spin vector should be defined by $\omega_\mu=S_{\mu\nu}P^\nu/\mu$, satisfying $\omega^2=J^2$. Clearly $a_\mu{}^1$, $a_\mu{}^2$, $\omega_\mu/J$ and $P_\mu/\mu$ span a Lorentz vierbein, and $\omega_\mu$ represents the physical variable that replaces $a_\mu{}^1$ and $a_\mu{}^2$ effectively. Also $\omega\cdot\dot x=0$. We now have the equation of spin precession — an expression with the field, the spin and the momentum appearing in three terms, of which the first is the ordinary Larmor term and the others the corrections from the momentum-dependent parts.</p>
+<p>The former shows that when a field is acting $\dot x_\mu$ has in general a small component normal to $P_\mu$. However, in the special case when $\eta=e/m$, i.e. $g=2$, this component becomes of second order in $J e|F|$ and should be discarded in the present approximation, to result in $P_\mu=\mu u_\mu$, $u_\mu=\dot x_\mu/\sqrt{-\dot x^2}$. Similarly the precession equation is simplified. Thus the two equations are just reduced to those of the symmetric theory. In the general case where $g\neq2$, the translational equation deviates.</p>
+<p>It is also illustrative to consider the theory in the instantaneous 'center-of-mass' frame, in which $P_k=0$ momentarily. In this frame we have $\tau=x_0$ and $S_{i0}=0$, and therefore the equations are simplified to $d\omega_i/dt=\eta[\omega\times H]_i$, which conform to the well-known non-relativistic equations and indicate that $\eta$ is connected with the $g$-factor by $\eta=eg/(2m)$.</p>
+<h3 id="the-homogeneous-field-limit">The homogeneous-field limit</h3>
+<p>Finally we consider the special case where $F_{\mu\nu}$ is static and homogeneous. Then the translational equation is reduced to $P_\mu=eF_{\mu\nu}\dot x^\nu$, and we can prove that $-P^2=\mu^2=\text{const}$ and $(PF\dot x)=0$. Let us further assume that $J$ is small and the field is weak such that $m^2&gt;J|eF|$. Actually this condition is usually satisfied. Then, neglecting terms of higher order in $Je|F|/m^2$, we obtain the precession equation in its approximate form. This is precisely the Bargmann–Michel–Telegdi equation.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-two-unit-spacelike-vectors-instead-of-a-spin-tensor">1. Two unit spacelike vectors instead of a spin tensor</h3>
+<p><strong>The idea.</strong> Spin is not an antisymmetric tensor constrained to be transverse; it is the wedge of two orthonormal spacelike vectors, $S_{\mu\nu}=Ja_\mu{}^1a_\nu{}^2$. The transversality $S_{\mu\nu}P^\nu=0$ then follows from primary constraints rather than being imposed, and the two vectors carry the spin state.</p>
+<p><strong>What it would add.</strong> A parametrisation in which the constraint is structural. The corpus's spinning particles carry $S^{\mu\nu}$ as a tensor with a transversality condition imposed afterwards, which requires care in the Hamiltonian treatment; here the condition falls out of the variational principle, and the price is one redundant phase ($O(2)$ invariance) that is itself the gauge freedom.</p>
+<p><strong>Where it lands.</strong> §<em>The Model</em> of <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), as the two-vector parametrisation.</p>
+<p><strong>What stands in the way.</strong> Two spacelike vectors cannot represent a spin tower — only a fixed magnitude — so the construction is unavailable for the rotor and its extra degeneracy.</p>
+<h3 id="2-the-sterngerlach-force-appears-because-the-momentum-is-not-parallel-to-the-velocity">2. The Stern–Gerlach force appears because the momentum is not parallel to the velocity</h3>
+<p><strong>The idea.</strong> $p_\mu=m\dot x_\mu-\eta J S^{\alpha\beta}F_{\alpha\beta}$-type term means the canonical momentum differs from the kinetic one by a spin-field term, so $\dot x$ is not parallel to $P$ and there is a force along the field gradient. The BMT equation cannot produce this because its momentum is defined to be parallel.</p>
+<p><strong>What it would add.</strong> The missing force in the standard classical treatment, with an origin. The corpus discusses the Stern–Gerlach force in quantum terms or not at all; here it is a kinematic consequence of the extended momentum, which is a cleaner statement than an added term.</p>
+<p><strong>Where it lands.</strong> §<em>The Coupling</em> of <em>The Charged Spin Half Fluid: Charge Couples to the Lorentz Force, Spin Does Not</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>), as the gradient force.</p>
+<p><strong>What stands in the way.</strong> The force appears only through the $\eta$ term, and its magnitude is not estimated for any real field.</p>
+<h3 id="3-math93-is-where-the-normal-component-of">3. $g=2$ is where the normal component of</h3>
+<p>$\dot x$ is second order</p>
+<p><strong>The idea.</strong> For any $g$, $\dot x$ has a small piece orthogonal to $P$. At $g=2$ that piece is second order in $Je|F|$ and can be dropped, which is exactly what makes $P_\mu=\mu u_\mu$ and reduces everything to the symmetric theory.</p>
+<p><strong>What it would add.</strong> A criterion for $g=2$ that is a statement about a small quantity rather than about a moment ratio. It explains why $g=2$ is the value at which the classical theory is simplest, and defines the sense in which departures from it are departures from a degeneracy.</p>
+<p><strong>Where it lands.</strong> §<em>The Anomalous Moment</em> of <em>The Classical Origin of $g-2$ in Biquaternionic Form</em> (<code>articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.md</code>), as the degeneracy criterion.</p>
+<p><strong>What stands in the way.</strong> The statement is approximate and holds only to the order retained; a non-perturbative version is not offered.</p>
+<h3 id="4-the-proper-time-is-not-the-parameter-and-the-parameter-is-fixed-by-a-constraint">4. The proper time is not the parameter, and the parameter is fixed by a constraint</h3>
+<p><strong>The idea.</strong> $\tau$ is not proper time. It is fixed by $\dot x^2-(S^{\mu\nu})^2/J^2=-1$, a condition that reduces to the usual one only when $S\dot x=0$, i.e. when no field is acting. The gauge freedom is real and the "time" differs from proper time whenever a field couples to spin.</p>
+<p><strong>What it would add.</strong> A caution the corpus's parametrisation discussions do not make: that the natural parameter of a spinning particle's world line is not its arc length, and that using arc length when a field is present is a gauge choice with consequences.</p>
+<p><strong>Where it lands.</strong> §<em>The Parametrisation</em> of <em>The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form</em> (<code>articles_physics/the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form.md</code>), as the gauge caution.</p>
+<p><strong>What stands in the way.</strong> The paper uses the freedom to pick convenient gauges and never compares results across them, so the practical size of the effect is unquantified.</p>
+<p>The remainder, one line each. That the $\eta=e/m$ limit reproduces Frenkel–Weyssenhoff exactly, and the weak-field limit reproduces BMT exactly, is the paper's claim to contain both older theories as approximations. That the theory is derived from a Lagrangian at all is the point the author stresses, since BMT is not.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

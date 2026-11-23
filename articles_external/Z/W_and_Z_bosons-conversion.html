@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W and Z Bosons — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/W_and_Z_bosons.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="w-and-z-bosons"><strong>W and Z Bosons</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>W and Z bosons</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/W_and_Z_bosons-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/W_and_Z_bosons.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/W_and_Z_bosons.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the W and Z bosons: the three vector bosons mediating the weak interaction, their charges and masses, their discovery at CERN in 1983, and their place in the electroweak theory as the massive partners of the photon after symmetry breaking.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-particles">The particles</h3>
+<p>"the W and Z bosons are vector bosons that are together known as the weak bosons or more generally as the intermediate vector bosons. These elementary particles mediate the weak interaction; the respective symbols are W+, W−, and Z0. The W± bosons have either a positive or negative electric charge of 1 elementary charge and are each other's antiparticles. The Z0 boson is electric[ally neutral]."</p>
+<h3 id="the-masses">The masses</h3>
+<p>The W has a mass of about 80 GeV and the Z about 91 GeV, which is why the weak interaction is short-ranged. The masses are not parameters of the symmetric theory: they arise from the Higgs mechanism, and the ratio of W to Z mass is fixed by the weak mixing angle, $m_W=m_Z\cos\theta_W$.</p>
+<h3 id="the-neutral-current">The neutral current</h3>
+<p>The Z boson carries a neutral current, which is what makes neutrino scattering possible without charge exchange. That process is the experimental evidence that the Z exists as a separate particle and not as a mixture of the charged ones.</p>
+<p>"W and Z bosons In particle physics, the W and Z bosons are vector bosons that are together known as the weak bosons or more generally as the intermediate vector bosons."</p>
+<p>"W bosons The W± bosons are best known for their role in beta decay."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-is-what-breaks-the-symmetry-and-the-ratio-is-a-prediction">1. Mass is what breaks the symmetry, and the ratio is a prediction</h3>
+<p><strong>The idea.</strong> The symmetric theory has four massless gauge fields; one combination stays massless (the photon) and three acquire mass. The ratio $m_W/m_Z=\cos\theta_W$ is fixed by the mixing, so the masses are not independent.</p>
+<p><strong>What it would add.</strong> A concrete prediction from a broken symmetry, which the corpus's electroweak article asserts structurally but does not put as a number relation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.md</code>, at the mass matrix.</p>
+<p><strong>What stands in the way.</strong> The corpus has no Higgs sector and no mixing angle; deriving $\cos\theta_W$ would require adding the scalar the algebra does not contain.</p>
+<h3 id="2-a-neutral-current-needs-a-neutral-mediator">2. A neutral current needs a neutral mediator</h3>
+<p><strong>The idea.</strong> Neutrino scattering without charge exchange cannot proceed by W exchange, so a separate neutral boson is required. The existence of the Z is forced by the observed neutral-current processes before it is seen directly.</p>
+<p><strong>What it would add.</strong> An example of an interaction's structure forcing a particle, which the corpus can cite as the pattern its own SU(2) construction should reproduce.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-little-group-of-a-massive-particle-su2.md</code>, as an application.</p>
+<p><strong>What stands in the way.</strong> Nothing structural.</p>
+<p>This is an encyclopedia article; the particles, their charges, the masses, the discovery and the electroweak placement are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

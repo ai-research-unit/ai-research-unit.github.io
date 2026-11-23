@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal Quantum Number for Mesons and Mass Systematics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Principal Quantum Number for Mesons and Mass Systematics.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="principal-quantum-number-for-mesons-and-mass-systematics"><strong>Principal Quantum Number for Mesons and Mass Systematics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>32</strong> (1964) 863, No. 5; dated 3 August 1964</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Principal Quantum Number for Mesons and Mass Systematics-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Principal Quantum Number for Mesons and Mass Systematics.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Principal Quantum Number for Mesons and Mass Systematics.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reports that the known meson masses are integer multiples of a small subunit, $78.4$ MeV for the isosinglet sequence and $137$ MeV for the pion-like sequence, with the multiplier running as $3n+4$ and $3n_2+4$. Then it derives squared-mass equal-spacing relations — $2\omega^{2}=\eta^{2}+X_0^{2}$, $2K^{*2}=K^{2}+\kappa^{*2}$ — that hold within errors where the broken-$SU(3)$ relation fails by three percent. The two schemes are not in conflict: the linear relations and the squared relations are simultaneously satisfied.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-branches-of-an-integer-rule">Two branches of an integer rule</h3>
+<p>"In the preceding note1J (quoted as I hereafter) we have sho~n that the as- signment" principal quantum number "n to all mesonic states allows a consistent classification of them and sets up new correlations between mass (and spin) of mesons and their decay properties, beyond those due to the mere energy conservation."</p>
+<p>For the isosinglet sequence $\eta$, $\omega$, $\varphi$, $f^{0}$, "urther regularity was noted 2l that they are quantized in the subunit f.J.o=fl.d3 =78.4 Mev, namely m=kf." $m=k\mu_0$, "k=integer), (1) where for those levels k is given by k=3n +4. Also". Also "(1) applies to the $K\pi\pi$ resonance $K'(1175)$ ... and to $KK^{*}(1410)$ ... such that $K'=5\mu_1$, $KK^{*}=6\mu_1$. (Note that $\mu_1=3\mu_0=235$ MeV.)"</p>
+<p>"ew meson X 0 (959) does not obey (1), but it forms, together with r; and 11:, the second branch of equal-spacing and in- teger multiplication rule, such", namely $X^{0}-\eta=\eta-\pi=3\pi$ where "n 864 Letters to the Editor mass*' of charged and neutral pions. One". This is $m=k'\pi$ with $k'=3n_2+4$, where $n_2=0$ and $1$ correspond to $\eta$ and $X^{0}$. The table adds $\omega$, $\eta$, $X^{0}$, $\rho$, $K^{*}$, and the recently observed $K\pi\pi$ resonance $C(1230\pm10)$ also seems to obey (3) with $k'=9$. His conclusion: "uared mass relations do not neces- either (1) or (3) within experimental accu- sarily conflict with linear mass relations. racy, where k and k' correspond" A residue needs a two-term formula as proposed by Sternheimer, for which $a=\mu_1+\pi$ for the possible $T=0$ resonance $\sigma(379\pm5)$, and $B=4\mu_1+2\pi$ for the $B(1220)$.</p>
+<h3 id="squared-mass-relations">Squared-mass relations</h3>
+<p>"Further, for mass squared. . We now point out a some other mesons with T=f=.O obey the class of such relations. Originally our Downloaded from academic.oup.com/ptp/article/32/5/863/1872778 by guest on 12 November 2026 mass quantization according to (3) if we principal quantum number n was introduced allow the half-integer k' (see Table I).", that is $m^{2}=a+bn$, "er internal quantum numbers w: 1 137 137 must be the same but the difference in J 7J 4 548 548±1 is disregarded.". Applying (4) to the three successive isosinglets, all with odd $A$-parity, we get an equal-spacing for (mass)$^{2}$: $2\omega^{2}=\eta^{2}+X_0^{2}$. Similarly, applying (4) to $Y=1$ states we get $2\kappa^{2}=K^{2}+K^{*2}$. Both relations are satisfied within experimental errors.</p>
+<p>"ces- either (1) or (3) within experimental accu- sarily conflict with linear mass relations. racy, where k and k' correspond" $2\eta=\pi+X_0$ "e positive integers), as proposed by hand we have another relation for three Sternheimer.<strong>l Thus</strong><em>l a=tl!" $2K^{2}=\eta^{2}+\pi^{2}$. "i is smaller than twice the Nambu perimental accuracy, in contrast with the unit 2X" 137 "me by about 3 Mev. Also i'= broken SUa relation 3r; 2 +n 2 =4K 2 which (7/4)#o. has an error of about 3%." The squared-mass spacings $K^{*2}-K^{2}=\rho^{2}-\pi^{2}=A_1^{2}-\rho^{2}=A_2^{2}-A_1^{2}$ and $K'^{2}-A_1^{2}=K^{2}-\pi^{2}=K^{*2}-\rho^{2}$ "are approximately satisfied", and since $X_0$ and $A_1$ share the $\mu_0$-number $3$, "he relation (8) sug- gests that K' and At form, together with X 0 ; the second ps octet.</em>) It". All of these relations "follow from a very simple over-all mass formula 7 ) for mesons, which is formally analogous to (4). Downloaded from academic.".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-mass-spectrum-is-a-lattice-in-one-small-unit-with-two-branches-and-a-shift">1. The mass spectrum is a lattice in one small unit, with two branches and a shift</h3>
+<p><strong>The idea.</strong> Meson masses are $k\mu_0$ with $\mu_0=78.4$ MeV on one branch and $k'\pi$ with $\pi=137$ MeV on another, where $k=3n+4$ and $k'=3n_2+4$ — the same offset and the same step of three, with two different units whose ratio is $3:5$ ($78.4\times3=235$, and $137\approx235\times0.58$). A single integer index organises a whole spectrum, with residues needing two terms.</p>
+<p><strong>What it would add.</strong> A lattice whose step is a physical number and not a fitted slope. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) predicts ratios by the <em>degree</em> of a representation, so the ladder is in integers and the spacing varies; here the ladder has a constant spacing and an offset, which is a different claim about the spectrum and would be tested by the same table.</p>
+<p><strong>Where it lands.</strong> §<em>The Spectrum</em>, as the equal-spacing alternative.</p>
+<p><strong>What stands in the way.</strong> Two units are needed for what is presented as one rule, and the "majority that obeys either branch leaves the residues unexplained; the paper is explicitly mainly empirical".</p>
+<h3 id="2-linear-in-math70-and-linear-in-math71-for-the-square-are-compatible-and-both-beat-broken-math72">2. Linear-in-$n$ and linear-in-$n$ for the square are compatible, and both beat broken $SU(3)$</h3>
+<p><strong>The idea.</strong> Assuming $m$ linear in $n$ on one branch and $m^{2}$ linear in $n$ on another is not a contradiction: the two sets of relations are simultaneously satisfied. And the resulting meson relations, $2\eta=\pi+X_0$ and $2K^{2}=\eta^{2}+\pi^{2}$, hold better than the broken-$SU(3)$ relation $3\eta^{2}+\pi^{2}=4K^{2}$, which is off by three percent.</p>
+<p><strong>What it would add.</strong> A concrete rival to the corpus's symmetry-breaking formula, with the numerical size of the disagreement stated. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) derives GMO from a breaking operator; Takabayasi's relations come from a quantisation rule and fit better. Which of the two failures — a three-percent symmetry-breaking correction or an unexplained integer rule — is the lesser evil is a question the corpus's article raises in §<em>What the Framework Establishes, Transcribes, and Does Not</em> and does not answer.</p>
+<p><strong>Where it lands.</strong> §<em>The Gell-Mann–Okubo Mass Formula</em>, as the numerical competitor.</p>
+<p><strong>What stands in the way.</strong> Takabayasi's relations are two fitted integers against one symmetry-breaking parameter, so the comparison of "errors" is not a comparison of theories. </p>
+<h3 id="3-the-same-unit-that-spaces-masses-labels-octets">3. The same unit that spaces masses labels octets</h3>
+<p><strong>The idea.</strong> $X_0$ and $A_1$ share $\mu_0$-number $3$, and the relation $K'^{2}-A_1^{2}=K^{2}-\pi^{2}$ then puts $K'$, $A_1$ and $X_0$ in a second pseudoscalar octet. A quantum number introduced for spacing turns out to select multiplets. </p>
+<p><strong>What it would add.</strong> A use of a spectral label as a multiplet label. <em>The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group</em> (<code>articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.md</code>) asks what fixes the size of a multiplet; here the size is fixed by a mass quantum, which is a dynamical answer to a representation-theoretic question. </p>
+<p><strong>Where it lands.</strong> That article's section on the multiplet's extent, as the dynamical alternative. </p>
+<p><strong>What stands in the way.</strong> The second octet is a suggestion —"suggests that" — resting on three states and one parity assignment.</p>
+<p>The remainder, one line each. That the linear and squared relations are both satisfied is the letter's most useful observation for the corpus, because the corpus's two mass articles assume one or the other without argument. That a two-term formula is needed for $\sigma$ and $B$, and that Sternheimer proposed one independently, is a note on priority.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

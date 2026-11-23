@@ -216,7 +216,7 @@ $$</p>
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4},
 $$</p>
 <p>where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|^4 = (\|\tilde{Q}\|^2)^2$ is the fourth power of the Euclidean norm.</p>
-<p>The function $G_{\mathrm{fn}}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $G_{\mathrm{fn}}(\lambda \tilde{Q}) = \lambda^{-3} G_{\mathrm{fn}}(\tilde{Q})$ for $\lambda > 0$.</p>
+<p>The function $G_{\mathrm{fn}}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $G_{\mathrm{fn}}(\lambda \tilde{Q}) = \lambda^{-3} G_{\mathrm{fn}}(\tilde{Q})$ for $\lambda &gt; 0$.</p>
 <p>The formula is identical to the biquaternion case. The reason is that the fundamental solution depends only on the Euclidean structure of the underlying real vector space $\mathbb{R}^4$ and on the quaternion conjugate, not on the sign of the extra unit.</p>
 <h3 id="the-gradient-of-the-fundamental-solution">The Gradient of the Fundamental Solution</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q} \neq 0$,</p>
@@ -244,13 +244,13 @@ $$</p>
 <p>where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.</p>
 <p><strong>Proof.</strong> The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:</p>
 <p>$$
-\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV.
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| &gt; \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV.
 $$</p>
-<p>Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin gives</p>
+<p>Applying the divergence theorem to the domain $\|\tilde{Q}\| &gt; \varepsilon$ and using $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin gives</p>
 <p>$$
-\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
+\int_{\|\tilde{Q}\| &gt; \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| &gt; \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
 $$</p>
-<p>On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\| > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So</p>
+<p>On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\| &gt; \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So</p>
 <p>$$
 G_{\mathrm{fn}} \tilde u_{\mathrm n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|^2}{\varepsilon^5} e_t = -\frac{\varepsilon^2}{\varepsilon^5} e_t = -\frac{1}{\varepsilon^3} e_t.
 $$</p>
@@ -328,7 +328,7 @@ $$</p>
 <h2 id="the-residue-theory">The Residue Theory</h2>
 <h3 id="the-residue">The Residue</h3>
 <p>The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{B}_{\mathrm{spl}}$ and the presence of the zero divisor set make the definition of the residue more delicate than in the complex case.</p>
-<p><strong>Definition (isolated singularity).</strong> A point $\tilde{Q}_0$ is an <strong>isolated singularity</strong> of $F_{\mathrm{fn}}$ if $F_{\mathrm{fn}}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{Q} - \tilde{Q}_0\| < r$ of $\tilde{Q}_0$.</p>
+<p><strong>Definition (isolated singularity).</strong> A point $\tilde{Q}_0$ is an <strong>isolated singularity</strong> of $F_{\mathrm{fn}}$ if $F_{\mathrm{fn}}$ is defined and regular on a punctured neighborhood $0 &lt; \|\tilde{Q} - \tilde{Q}_0\| &lt; r$ of $\tilde{Q}_0$.</p>
 <p><strong>Definition (residue).</strong> The <strong>residue</strong> of $F_{\mathrm{fn}}$ at an isolated singularity $\tilde{Q}_0$ is the split biquaternion</p>
 <p>$$
 \mathrm{Res}(F_{\mathrm{fn}}, \tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial B(\tilde{Q}_0, \varepsilon)} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}),

@@ -72,6 +72,7 @@
         <h1 id="the-pmns-matrix-and-lepton-mixing"><strong>The PMNS Matrix and Lepton Mixing</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The standing of this article. The mixing matrix itself, its parameterisation and its numbers are standard physics, transcribed. What the corpus contributes is the placement: the matrix is an operator on the generation label, and <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">the CKM article</a> already built that operator. This article uses the same construction for the leptons and then reports what the numbers do, which is not the same as what the quark numbers do.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p>Why leptons are not the quarks again. The two mixing matrices are the same kind of object and their values have almost nothing in common. The quark angles are small, $13^\circ$, $2.4^\circ$, $0.2^\circ$, and their phase is not small — it is about $66^\circ$ — yet the asymmetry it produces is one part in $10^{5}$ of the mixing, because the asymmetry is the three small angles multiplied together. The lepton angles are large, $33^\circ$, $49^\circ$, $8.6^\circ$, and the CP asymmetry is $850$ times larger. An article that presented the PMNS matrix as "the CKM matrix for leptons" would be describing the formalism and missing the phenomenon: the lepton sector mixes <em>maximally</em> where the quark sector mixes <em>hardly at all</em>, and nothing in the framework explains why.</p>
 <p>The claim, in four parts.</p>
 <ul>
@@ -109,9 +110,9 @@ $$</p>
 <p>$$
 U_{\mathrm{PMNS}}=
 \begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\\
-s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{23}c_{13}
+c_{12}c_{13} &amp; s_{12}c_{13} &amp; s_{13}e^{-i\theta_{\mathrm{cpk}}}\\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} &amp; c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} &amp; s_{23}c_{13}\\
+s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} &amp; -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} &amp; c_{23}c_{13}
 \end{pmatrix}
 \times\mathrm{diag}\!\left(1,e^{i\theta_{\mathrm{mjr},21}/2},e^{i\theta_{\mathrm{mjr},31}/2}\right) .
 $$</p>
@@ -213,12 +214,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$\delta m^2_{21}$</td>
-<td>$7.42\times10^{-5}\ \mathrm{eV}^2$</td>
+<td>$2.358\times10^{-76}\ \mathrm{kg^2}$</td>
 <td>The solar oscillation length</td>
 </tr>
 <tr>
 <td>$\lvert\delta m^2_{31}\rvert$</td>
-<td>$2.51\times10^{-3}\ \mathrm{eV}^2$</td>
+<td>$7.978\times10^{-75}\ \mathrm{kg^2}$</td>
 <td>The atmospheric oscillation length</td>
 </tr>
 <tr>
@@ -232,13 +233,13 @@ $$</p>
 <h2 id="why-neutrinos-oscillate">Why Neutrinos Oscillate</h2>
 <p>The statement. A neutrino produced in a flavour eigenstate is a superposition of mass eigenstates. Each mass eigenstate accumulates a phase $e^{-iE_it}$ at its own rate, so the superposition's flavour content changes with distance:</p>
 <p>$$
-P(\jmath_\alpha\to\jmath_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\delta m^2_{ij}L}{4E}
-+2\sum_{i>j}\mathrm{Im}\left(\dots\right)\sin\frac{\delta m^2_{ij}L}{2E} .
+P(\jmath_\alpha\to\jmath_\beta)=\delta_{\alpha\beta}-4\sum_{i&gt;j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\delta m^2_{ij}L}{4E}
++2\sum_{i&gt;j}\mathrm{Im}\left(\dots\right)\sin\frac{\delta m^2_{ij}L}{2E} .
 $$</p>
 <p>The $\sin^2$ term is CP-conserving, the $\sin$ term is not, and the coefficient of the latter is the Jarlskog invariant up to signs.</p>
 <p>The oscillation length, and its size. The phase is</p>
 <p>$$
-\frac{\delta m^2L}{4E}=1.267\,\frac{\delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}{E[\mathrm{GeV}]} ,
+\frac{\delta m^{2}c^{3}}{4\hbar}\,\frac{L}{E}=6.388\times10^{58}\,\frac{\delta m^{2}[\mathrm{kg}^{2}]\,L[\mathrm{m}]}{E[\mathrm{J}]} ,
 $$</p>
 <p>and the numbers explain the whole experimental programme:</p>
 <div class="table-scroll"><table>
@@ -248,47 +249,47 @@ $$</p>
 <th>$L$</th>
 <th>$E$</th>
 <th>$\delta m^2$</th>
-<th>Phase $\delta m^2L/4E$</th>
+<th>Phase $\delta m^{2}c^{3}L/(4\hbar E)$</th>
 <th>Oscillation length</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>T2K</td>
-<td>$295$ km</td>
-<td>$0.6$ GeV</td>
-<td>$2.51\times10^{-3}$</td>
+<td>$2.95\times10^{5}$ m</td>
+<td>$9.613\times10^{-11}$ J</td>
+<td>$7.978\times10^{-75}$</td>
 <td>$1.56$ rad $=89.6^\circ$</td>
-<td>$593$ km</td>
+<td>$5.93\times10^{5}$ m</td>
 </tr>
 <tr>
 <td>NOvA</td>
-<td>$810$ km</td>
-<td>$2$ GeV</td>
-<td>$2.51\times10^{-3}$</td>
+<td>$8.10\times10^{5}$ m</td>
+<td>$3.204\times10^{-10}$ J</td>
+<td>$7.978\times10^{-75}$</td>
 <td>$1.29$ rad $=73.8^\circ$</td>
-<td>$1976$ km</td>
+<td>$1.976\times10^{6}$ m</td>
 </tr>
 <tr>
 <td>KamLAND</td>
-<td>$180$ km</td>
-<td>$3$ MeV</td>
-<td>$7.42\times10^{-5}$</td>
+<td>$1.80\times10^{5}$ m</td>
+<td>$4.807\times10^{-13}$ J</td>
+<td>$2.358\times10^{-76}$</td>
 <td>$5.64$ rad</td>
-<td>$100$ km</td>
+<td>$1.00\times10^{5}$ m</td>
 </tr>
 <tr>
 <td>Solar</td>
-<td>$1.5\times10^{8}$ km</td>
-<td>$5$ MeV</td>
-<td>$7.42\times10^{-5}$</td>
+<td>$1.5\times10^{11}$ m</td>
+<td>$8.011\times10^{-13}$ J</td>
+<td>$2.358\times10^{-76}$</td>
 <td>$2.8\times10^{6}$ rad</td>
-<td>$167$ km</td>
+<td>$1.67\times10^{5}$ m</td>
 </tr>
 </tbody>
 </table></div>
-<p>The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(1.267\,\delta m^2)=2.48\,E[\mathrm{GeV}]/\delta m^2[\mathrm{eV}^2]$ km, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $295$ km is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $180$ km is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.</p>
-<p>T2K's phase is $89.6^\circ$. That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $295$ against $593/2=296.5$. NOvA, at $810$ km and $2$ GeV, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.</p>
+<p>The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(6.388\times10^{58}\,\delta m^{2})=4.918\times10^{-59}\,E[\mathrm{J}]/\delta m^{2}[\mathrm{kg}^{2}]$ m, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $2.95\times10^{5}$ m is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $1.80\times10^{5}$ m is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.</p>
+<p>T2K's phase is $89.6^\circ$. That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $2.95\times10^{5}$ against $5.93\times10^{5}/2=2.965\times10^{5}$. NOvA, at $8.10\times10^{5}$ m and $3.204\times10^{-10}$ J, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.</p>
 <p>Why the solar case is different. Its phase is $2.8\times10^{6}$ radians, so the oscillation is averaged out entirely and the survival probability is the average, which depends on $\theta_{12}$ alone. That averaging is what makes the solar measurement a measurement of one angle rather than of a phase. And the matter effect — coherent forward scattering off electrons, which the electron flavour feels and the others do not — makes the high-energy survival tend to the <em>other</em> composition:</p>
 <p>$$
 \bar P_{ee}^{\text{vacuum}}=1-\frac12\sin^2 2\theta_{12}=0.578 ,
@@ -396,7 +397,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>What actually survived. $\theta_{12}=33.41^\circ$ is within $2^\circ$ of the tribimaximal $35.26^\circ$, and $\sin^2\theta_{12}=0.303$ against tribimaximal's $0.333$. So the solar angle is <em>approximately</em> tribimaximal. The atmospheric angle is $4^\circ$ from maximal, so it is <em>approximately</em> bimaximal. The reactor angle is $8.6^\circ$, which is not approximately zero, and that is the end of the tribimaximal ansatz as an exact statement.</p>
-<p>The 2012 measurement, and why it mattered. Before 2012, $\theta_{13}$ was bounded only as $\sin^2\theta_{13}<0.04$; the tribimaximal pattern set it to zero by symmetry. Daya Bay, RENO and Double Chooz measured it at $\sin^2\theta_{13}\approx0.022$, a nonzero value at high significance. The consequence is not that the pattern was "slightly broken". A prediction of exactly zero being measured as nonzero is a falsification, and the honest description is that the class of models which set $\theta_{13}=0$ by a discrete symmetry was excluded, not adjusted.</p>
+<p>The 2012 measurement, and why it mattered. Before 2012, $\theta_{13}$ was bounded only as $\sin^2\theta_{13}&lt;0.04$; the tribimaximal pattern set it to zero by symmetry. Daya Bay, RENO and Double Chooz measured it at $\sin^2\theta_{13}\approx0.022$, a nonzero value at high significance. The consequence is not that the pattern was "slightly broken". A prediction of exactly zero being measured as nonzero is a falsification, and the honest description is that the class of models which set $\theta_{13}=0$ by a discrete symmetry was excluded, not adjusted.</p>
 <p>What replaced it. One of the three anticipated it, and the table's last row is the record: trimaximal mixing keeps the tribimaximal $\theta_{12}$ and $\theta_{23}$ and lets the charged-lepton Cabibbo rotation generate $\theta_{13}$, which lands at $9.2^\circ$ against the measured $8.6^\circ$. What it does not explain is why the Cabibbo angle should be the source, and it leaves $\theta_{12}$ at $35.26^\circ$ where the measurement is $33.4^\circ$. Beyond that, nothing canonical: the measured pattern is compatible with a class of models in which a discrete group fixes two angles and a small perturbation generates the third, and each has one or two free parameters. The corpus does not adjudicate between them, and the article records the situation rather than the fashion.</p>
 <p><strong>The octant ambiguity.</strong> $\sin^2\theta_{23}=0.57$ admits two solutions, $49.0^\circ$ and $41.0^\circ$, symmetric about maximal mixing. Current data prefer the upper octant weakly, and the distinction matters because a maximal $\theta_{23}$ would be a symmetry statement and a non-maximal one would not. The ambiguity is also correlated with $\delta_{\mathrm{CP}}$, which is why separating them is an experimental programme and not a fit.</p>
 <h2 id="the-mass-ordering-and-the-absolute-scale">The Mass Ordering and the Absolute Scale</h2>
@@ -417,18 +418,18 @@ $$</p>
 <tr>
 <td>Normal</td>
 <td>$0$</td>
-<td>$8.6$ meV</td>
-<td>$50.1$ meV</td>
-<td>$59$ meV</td>
-<td>$1.4$–$3.7$ meV</td>
+<td>$1.53\times10^{-38}$ kg</td>
+<td>$8.93\times10^{-38}$ kg</td>
+<td>$1.05\times10^{-37}$ kg</td>
+<td>$2.5\times10^{-39}$–$6.6\times10^{-39}$ kg</td>
 </tr>
 <tr>
 <td>Inverted</td>
-<td>$50.1$ meV</td>
-<td>$50.8$ meV</td>
+<td>$8.93\times10^{-38}$ kg</td>
+<td>$9.06\times10^{-38}$ kg</td>
 <td>$0$</td>
-<td>$101$ meV</td>
-<td>$19$–$49$ meV</td>
+<td>$1.80\times10^{-37}$ kg</td>
+<td>$3.4\times10^{-38}$–$8.7\times10^{-38}$ kg</td>
 </tr>
 </tbody>
 </table></div>
@@ -447,19 +448,19 @@ $$</p>
 <tr>
 <td>Cosmology</td>
 <td>$\sum m_i$</td>
-<td>$<0.12$ eV</td>
-<td>The ordering, if $\sum m<0.1$ eV</td>
+<td>$&lt;2.14\times10^{-37}$ kg</td>
+<td>The ordering, if $\sum m&lt;1.78\times10^{-37}$ kg</td>
 </tr>
 <tr>
 <td>Tritium $\beta$ decay (KATRIN)</td>
 <td>$m_\beta=\sqrt{\sum\lvert U_{ei}\rvert^2m_i^2}$</td>
-<td>$<0.8$ eV</td>
+<td>$&lt;1.43\times10^{-36}$ kg</td>
 <td>The absolute scale, if degenerate</td>
 </tr>
 <tr>
 <td>Neutrinoless $\beta\beta$</td>
 <td>$m_{\beta\beta}=\lvert\sum U_{ei}^2m_i\rvert$</td>
-<td>$<0.03$–$0.16$ eV (isotope dependent)</td>
+<td>$&lt;5.3\times10^{-38}$–$2.85\times10^{-37}$ kg (isotope dependent)</td>
 <td><strong>Majorana nature</strong>, and the ordering</td>
 </tr>
 </tbody>
@@ -474,7 +475,7 @@ $$</p>
 \lvert m_{\beta\beta}\rvert=\left\lvert\sum_i U_{ei}^2\,m_i\right\rvert ,
 $$</p>
 <p>with the squares. The squares do not cancel the column phases; they add them, so the rate depends on $\theta_{\mathrm{mjr},21}$ and $\theta_{\mathrm{mjr},31}$ through interference between the three terms.</p>
-<p>Why the range matters more than the value. For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $1.4$ and $3.7$ meV — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $19$–$49$ meV, within reach. So a positive signal at $20$ meV would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $20$ meV would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.</p>
+<p>Why the range matters more than the value. For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $2.5\times10^{-39}$ and $6.6\times10^{-39}$ kg — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $3.4\times10^{-38}$–$8.7\times10^{-38}$ kg, within reach. So a positive signal at $3.6\times10^{-38}$ kg would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $3.6\times10^{-38}$ kg would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.</p>
 <p><strong>The one thing this article will not do.</strong> It will not claim the phases are measured. They are constrained only through $\lvert m_{\beta\beta}\rvert$, which is a single number depending on both, so even a measurement of the rate would not determine two phases. The count of six parameters is exact; the measurement of four of them is good; the measurement of the last two is not yet.</p>
 <h2 id="cp-violation-in-the-lepton-sector-and-leptogenesis">CP Violation in the Lepton Sector and Leptogenesis</h2>
 <p>The asymmetry, in the oscillation channel. For $\xi_{\mathrm{neu},\imath}\to\xi_{\mathrm{neu},e}$ against $\bar\xi_{\mathrm{neu},\imath}\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:</p>
@@ -576,7 +577,7 @@ $$</p>
 <p>Neutrinos oscillate because the mass eigenstates are not the flavour eigenstates, with phase $1.267\,\delta m^2L/E$. T2K's baseline sits at $89.6^\circ$ by design; the solar phase is $2.8\times10^{6}$ radians and averages to $\bar P_{ee}=0.578$ in vacuum and $0.296$ in matter, and both numbers are measured.</p>
 <p>CP violation is $850$ times stronger here than in the quark sector, in the Jarlskog measure: $J=-0.0262$ at the fit phase, $\pm0.0332$ at maximal. The size follows from the angles: $J$ is $c_{12}s_{12}$, $s_{13}$ and $c_{23}s_{23}$ times a normalisation $c_{13}^2$, and the products differ by $1006$ because $s_{13}$ is $40$ times larger here; the angle pattern itself is unexplained.</p>
 <p>Two of the historical patterns are dead: bimaximal and tribimaximal both predicted $\theta_{13}=0$, and the 2012 measurement of $\sin^2\theta_{13}=0.022$ falsified them, with $\theta_{12}$ surviving only as approximately tribimaximal. The third anticipated the measurement: trimaximal mixing generates $\theta_{13}=\sin^{-1}(\sin\theta_C/\sqrt2)=9.2^\circ$ from the charged-lepton rotation, within a degree of the value found.</p>
-<p>The mass ordering is unresolved, and the lightest-mass-zero table gives sums of $59$ and $101$ meV against a cosmological bound of $120$ meV. The Majorana phases are invisible in oscillation exactly, not to a tolerance, and visible only in $\lvert m_{\beta\beta}\rvert$, whose normal-ordering range of $1.4$–$3.7$ meV is out of reach while the inverted range of $19$–$49$ meV is not, so a signal would say Majorana and inverted at once.</p>
+<p>The mass ordering is unresolved, and the lightest-mass-zero table gives sums of $59$ and $1.80\times10^{-37}$ kg against a cosmological bound of $2.14\times10^{-37}$ kg. The Majorana phases are invisible in oscillation exactly, not to a tolerance, and visible only in $\lvert m_{\beta\beta}\rvert$, whose normal-ordering range of $2.5\times10^{-39}$–$6.6\times10^{-39}$ kg is out of reach while the inverted range of $3.4\times10^{-38}$–$8.7\times10^{-38}$ kg is not, so a signal would say Majorana and inverted at once.</p>
 <p>The framework supplies the arena and transcribes the rest: no mechanism for the values, no explanation for the factor $850$, no ordering, no Majorana scale, no leptogenesis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -625,11 +626,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\delta m^2_{21}$</td>
-<td>$7.42\times10^{-5}$ eV$^2$</td>
+<td>$2.358\times10^{-76}$ kg$^2$</td>
 </tr>
 <tr>
 <td>$\delta m^2_{31}$</td>
-<td>$2.51\times10^{-3}$ eV$^2$, magnitude</td>
+<td>$7.978\times10^{-75}$ kg$^2$, magnitude</td>
 </tr>
 <tr>
 <td>$L$, $E$</td>

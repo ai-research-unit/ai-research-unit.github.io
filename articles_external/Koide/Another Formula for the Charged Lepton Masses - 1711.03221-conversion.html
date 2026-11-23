@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Formula for the Charged Lepton Masses — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Another Formula for the Charged Lepton Masses - 1711.03221.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="another-formula-for-the-charged-lepton-masses"><strong>Another Formula for the Charged Lepton Masses</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>brief report</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1711.03221v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 10 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Another Formula for the Charged Lepton Masses - 1711.03221-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Another Formula for the Charged Lepton Masses - 1711.03221.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_internal/flavour-research.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Another Formula for the Charged Lepton Masses - 1711.03221.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that three masses leave room for two relations, not one, and that the second should also be scale invariant, so it must be a ratio of degree zero. That pins the candidate to $\kappa=\det\Phi/[\Phi]^3$, with $\Phi$ the $U(3)$-family nonet scalar whose diagonal vacuum is proportional to $(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})$. The paper then searches for a potential whose stationarity forces a value of $\kappa$ independently of the potential's couplings, the way the $\lambda'$ term forces $K=2/3$. A particular quartic potential gives $\kappa=1/486$, against the measured $1/486.663$. The choice of that potential is made by a "simple integers" rule and the author states plainly that it has no theoretical basis.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-a-second-relation-is-expected">Why a second relation is expected</h3>
+<p>"Since we can, in general, have two relations for three quantities, we may also expect another relation for the charged lepton masses. Since the relation (1) is invariant under a scale transformation $(m_e,m_\mu,m_\tau)\to(\lambda m_e,\lambda m_\mu,\lambda m_\tau)$, we speculate that the second relation will also be invariant under the scale transformation."</p>
+<h3 id="the-first-relation-in-matrix-language">The first relation, in matrix language</h3>
+<p>With $\langle\Phi\rangle=\mathrm{diag}(v_1,v_2,v_3)\propto\mathrm{diag}(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})$,</p>
+<p>$$
+K\equiv\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=\frac{[\Phi\Phi]}{[\Phi]^2}=\frac23 ,
+\tag{paper 3}
+$$</p>
+<p>where $[\Phi]$ means $\mathrm{Tr}\,\Phi$.</p>
+<h3 id="the-second-relation">The second relation</h3>
+<p>$$
+\kappa\equiv\frac{\sqrt{m_e m_\mu m_\tau}}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^3}=\frac{\det\Phi}{[\Phi]^3}.
+\tag{paper 4}
+$$</p>
+<h3 id="how-math28-came-out-without-tuning">How $K$ came out without tuning</h3>
+<p>The potential is $V=\mu^2[\Phi\Phi]+\lambda[\Phi\Phi][\Phi\Phi]+\lambda'[\Phi_8\Phi_8][\Phi]^2$ with $\Phi_8\equiv\Phi-\tfrac13[\Phi]\mathbf{1}$. Stationarity with $\Phi\ne\mathbf{1}$ gives two conditions, one of which is</p>
+<p>$$
+[\Phi\Phi]-\frac23[\Phi]^2=0 ,
+\tag{paper 9}
+$$</p>
+<p>"and the result (8) fixes the scale of the VEV of $\Phi$. Note that the relation (9) has been derived independently of the potential parameters $\mu$, $\lambda$ and $\lambda'$."</p>
+<h3 id="the-general-answer-for-math37">The general answer for $\kappa$</h3>
+<p>For a potential built from the four $SU(3)$-invariant but $U(3)$-violating terms plus a $[\Phi]^4$ term, the coefficient of $\mathbf{1}$ in $\partial V'/\partial\Phi$ vanishes when</p>
+<p>$$
+\kappa=\frac{1}{27a_1}\left(4a_0-a_1-72a_4+8a_0'\right),
+\tag{paper 11}
+$$</p>
+<p>so a value of $\kappa$ needs a conspiracy among four coefficients, unlike $K$.</p>
+<h3 id="the-chosen-potential-and-its-prediction">The chosen potential and its prediction</h3>
+<p>The author picks one combination by preferring small integers and obtains</p>
+<p>$$
+\kappa=\frac{1}{18\times 27}=\frac{1}{486},
+\tag{paper 19}
+$$</p>
+<p>"independently of the coefficient $\lambda'$ in (18)", against the measured</p>
+<p>$$
+\kappa_{\rm obs}=\frac{1}{486.663}.
+\tag{paper 20}
+$$</p>
+<h3 id="the-limitation-stated-by-the-author">The limitation, stated by the author</h3>
+<p>"The form (18) is likely under the criterion 'simple', but the choice does not have theoretical basis." And on the empirical agreement of $K$ itself: "the 'charged lepton masses' $(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})$ in Eq.(2) are not pole masses (the observed masses), but mass values defined in the $U(3)$-family symmetry limit ... Although it is well known that the relation (1) is excellently satisfied with the observed charged lepton masses, this is nothing but an accidental coincidence."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-second-scale-invariant-number-math52">1. A second scale-invariant number, $\kappa=1/486$</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: besides $Q=2/3$, the same three masses satisfy $\kappa=\sqrt{m_em_\mu m_\tau}/(\sum\sqrt m)^3=1/486.663$, and the natural matrix expression is $\det\Phi/[\Phi]^3$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §2 catalogues the exact algebra of $Q$ alone — the bound, the circle, the angle — and treats one number as the whole content. A second invariant of the same triple, with the same scale invariance and a measured value, changes the count: two numbers for three masses means one degree of freedom left, which is what makes the phase parametrisation possible at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §2, as a companion invariant, and §1's table of measured values.</p>
+<p><strong>What stands in the way.</strong> $\kappa$ is not independent evidence for anything: any triple has a $\kappa$, and its value near $1/486$ is one more coincidence to explain. The paper's own derivation of that value is a choice of potential. Ranked first, because it is the only new <em>measured</em> quantity in this batch.</p>
+<h3 id="2-stationarity-of-one-term-fixes-a-ratio-of-traces">2. Stationarity of one term fixes a ratio of traces</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: a potential with one $SU(3)$-invariant but $U(3)$-violating term has a stationary point at which a ratio of traces takes a fixed value independent of all couplings, because the offending term enters $\partial V/\partial\Phi$ only through the unit matrix.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §6 asks where a coefficient in front of the closure could come from and finds only the circle, which is the closure itself. Here is a coefficient produced by a symmetry-breaking pattern rather than assumed: the $2/3$ is forced by the structure of the potential, not fitted, and the mechanism is stated in three lines of matrix algebra.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §6, and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> in the discussion of what fixes the eigenvalues.</p>
+<p><strong>What stands in the way.</strong> The corpus has no scalar nonet and no family symmetry, so the mechanism cannot be stated in its own language; and the paper shows the trick works for $K$ with one term but fails for $\kappa$ with one term, needing four. Second.</p>
+<h3 id="3-scale-invariance-as-the-filter-on-candidate-relations">3. Scale invariance as the filter on candidate relations</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: demand that any further relation among the three masses be invariant under $m_i\to\lambda m_i$, and the space of candidates collapses to ratios of homogeneous invariants of the mass matrix.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 lists "look for a boundary condition that quantises $\theta$" as the only route to a mechanism, with no filter on what such a condition may look like. Scale invariance is exactly such a filter, and it removes the free normalisation that otherwise lets any formula be adjusted to fit.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, third row of the table.</p>
+<p><strong>What stands in the way.</strong> Most of the corpus's statements are already scale invariant (angles, ratios), so the filter excludes little and predicts nothing by itself. Third.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>The remark that pole masses agreeing with a running-mass relation is "an accidental coincidence" is the opposite of Sumino's programme and is worth keeping as the minority reading; it is recorded in the conversions of the Sumino papers in this folder.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

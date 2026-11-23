@@ -92,8 +92,7 @@ and the convolution algebra are <em>Groupoid C*-Algebras</em>, in another Part, 
 <h3 id="the-groupoid">The Groupoid</h3>
 <p><strong>Definition.</strong> A <strong>groupoid</strong> is a category $\mathcal{G}$ in which every morphism is an isomorphism.
 The objects of $\mathcal{G}$ are its <strong>points</strong>, the morphisms are its <strong>arrows</strong>, and the composition
-is defined for the composable pairs; for each arrow $f : A \to B$ there is a unique arrow $f^{-1} : B
-\to A$ with $f \circ f^{-1} = \mathrm{id}_B$ and $f^{-1} \circ f = \mathrm{id}_A$. A groupoid with one
+is defined for the composable pairs; for each arrow $f : A \to B$ there is a unique arrow $f^{-1} : B \to A$ with $f \circ f^{-1} = \mathrm{id}_B$ and $f^{-1} \circ f = \mathrm{id}_A$. A groupoid with one
 object is a <strong>group</strong>, the arrows being its elements.</p>
 <p><strong>Theorem.</strong> In a groupoid the inversion is an involution on the arrows, fixes the identities, and
 reverses the composition:</p>
@@ -106,8 +105,7 @@ an anti-automorphism of the partial multiplication, and it is the dagger of <em>
 the Dagger Functor</em>; the groupoid with inversion is a dagger category in which every morphism is
 unitary.</p>
 <p><strong>Proof.</strong> The inverse is unique in a category, so $(f^{-1})^{-1} = f$ because $f$ is an inverse of
-$f^{-1}$; the identity is its own inverse; and $f^{-1} \circ g^{-1}$ is a two-sided inverse of $g \circ
-f$ because $(g \circ f) \circ (f^{-1} \circ g^{-1}) = \mathrm{id}$ and the composite in the other order
+$f^{-1}$; the identity is its own inverse; and $f^{-1} \circ g^{-1}$ is a two-sided inverse of $g \circ f$ because $(g \circ f) \circ (f^{-1} \circ g^{-1}) = \mathrm{id}$ and the composite in the other order
 is $\mathrm{id}$. The exchange of hom-sets is the definition of the target and source of $f^{-1}$.</p>
 <p><strong>Example.</strong> A group $G$ with one object is a groupoid, and the inversion is the group inversion, an
 anti-automorphism; the abelian groups are exactly those for which it is an automorphism, as the next
@@ -119,11 +117,9 @@ endomorphism with $f \circ f = \mathrm{id}$, that is, $f$ is an <strong>involuti
 fixed elements of the inversion are exactly the self-inverse arrows, and they include all the
 identities.</p>
 <p><strong>Proof.</strong> An orbit $\{f, f^{-1}\}$ is a singleton exactly when $f = f^{-1}$; then $A = B$ because the
-sources and targets must agree, and $f \circ f = f \circ f^{-1} = \mathrm{id}_A$, so $f^2 =
-\mathrm{id}$. Conversely $f^2 = \mathrm{id}$ with $f$ an endomorphism gives $f = f^{-1}$ by uniqueness
+sources and targets must agree, and $f \circ f = f \circ f^{-1} = \mathrm{id}_A$, so $f^2 = \mathrm{id}$. Conversely $f^2 = \mathrm{id}$ with $f$ an endomorphism gives $f = f^{-1}$ by uniqueness
 of inverses.</p>
-<p><strong>Corollary.</strong> For a finite group $G$, the number of orbits of the inversion is $(|G| + #{g : g^2 =
-e})/2$, where the second term is the number of elements of order at most two.</p>
+<p><strong>Corollary.</strong> For a finite group $G$, the number of orbits of the inversion is $(|G| + \#\{g : g^2 = e\})/2$, where the second term is the number of elements of order at most two.</p>
 <p><strong>Proof.</strong> The orbits are the fixed elements, one each, and the remaining $|G| - \#\{g : g^2 = e\}$
 elements, paired.</p>
 <p><strong>Example ($S_3$).</strong> In the symmetric group $S_3$ the elements of order at most two are the identity and
@@ -160,8 +156,7 @@ transformations of the form $g \mapsto (\sigma g)^{-1}$ are the <strong>anti-inv
 on the arrows: it is of order two, fixes the identities, exchanges the hom-sets and reverses the
 composition, so it is an anti-automorphism and the dagger of the groupoid. Its orbits are the pairs
 $\{f, f^{-1}\}$ and the self-inverse arrows, and its fixed elements are exactly the arrows of order at
-most two, which include the identities. For a finite group the number of orbits is $(|G| + #{g : g^2
-= e})/2$.</p>
+most two, which include the identities. For a finite group the number of orbits is $(|G| + \#\{g : g^2 = e\})/2$.</p>
 <p>In the non-abelian case the inversion is not an automorphism of the group, and the fixed elements are
 not closed under multiplication, as $S_3$ shows; the involution fixes the elements of order at most two
 and pairs the rest, so it carries no information about the order beyond that pairing. A second

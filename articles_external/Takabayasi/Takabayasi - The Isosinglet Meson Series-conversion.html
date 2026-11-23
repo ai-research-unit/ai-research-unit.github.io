@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Isosinglet Meson Series — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Isosinglet Meson Series.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-isosinglet-meson-series"><strong>The Isosinglet Meson Series</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi and Yoshio Ohnuki</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>30</strong> (1963) 272, No. 2; dated 20 May 1963</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - The Isosinglet Meson Series-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Isosinglet Meson Series.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/p-t-and-the-representation-labels.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - The Isosinglet Meson Series.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Identifies four $T=Y=0$ mesons — $\eta$, $\omega$, $\varphi$, $f$ — as an equal-interval series in mass with step $234$ MeV and a common offset, the ordering number $n$ running $1$ to $4$ and $n=0$ predicting a state near $314$ MeV identified with the ABC particle. It then generalises the charge-parity rule $C=(-1)^{J}$ from photons to any self-conjugate boson, $G=(-1)^{J-2T}$, and shows that a Sakata-type baryon–antibaryon bound-state model reproduces the whole series, including the $J^{PG}$ assignments, from a single rigid-rotator relation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-regularity">The regularity</h3>
+<p>"Recent experiments indicate the existences of iso-singlet $\pi^{+}$-$\pi^{-}$ resonance $f$ and $K^{-}K$ resonance $\varphi$ ... This seems to establish the $T=Y=0$ series of mesons" $\eta$, $\omega$, $\varphi$, $f$. "ectrum of (1) obeys a of n with JPG. complete equal-interval rule such" $m(n)=m(0)+n\cdot\kappa$, "baryon and anti-baryon pair, following from 1 to 4 for each successive level in Sakata.s) It", with</p>
+<p>$$
+\kappa=234\ \text{MeV},\qquad m(0)=m_\omega-\kappa=2m_\varphi-m_\omega=314\ \text{MeV}.
+$$</p>
+<p>"ed 3P 2 state of the same system and the masses of those four mesons within a few masses are given for those three states Mev, and moreover suggests that the by the formula possible level corresponding to n=O"</p>
+<h3 id="a-parity-rule-for-self-conjugate-bosons">A parity rule for self-conjugate bosons</h3>
+<p>"272 Letters to the Editor The Isosinglet Meson Series parity in this case, is connected with the spin J by Takehiko Takabayasi" $C=(-1)^{J}$. "Since the relation (5) holds for photons also, we conjecture that it represents a May 20, 1963 general connection valid for any possible self-conjugate bosons. Equation (5) may be Downloaded from academic.oup.com/ptp/article/30/2/272/1869278" $G=(-1)^{J-2T}$, "ABC-particle.3) the rule4) P= ( -1)J-T, which restricted possible (b) The charge-parity C for any state non-strange baryon states, i."</p>
+<h3 id="the-oscillator-and-its-difficulty">The oscillator, and its difficulty</h3>
+<p>"Equation (2) is essentially a linear oscillator formula with the energy quantum '1}, m, lp, f, (1)" principal quantum number "n. which exhibits the following remarkable· This n is related with JPG but is not regularities. uniquely determined by the latter. Indeed the doubling of 1-- mesons m and lfJ re- Table I. presents a novel situation where all the T= Y=O I (Mev) mass JPG n Ianti baryon- baryon usual quantum numbers are common but mesons state masses are distinct. Our n just serves to play the role of the new quantum number 71 I 548 o-+ 1 I 'So to distinguish between m and lp, pointing Ql I 782 1-- 2 I •s, to the presence of a certain internal struc- ture for the states. A direct interpreta- (/) I 1019 1-- 3 I •D, tion of the formula (2) in terms of an f I 1250 2++ 4 I •P."</p>
+<h3 id="the-bound-state-model">The bound-state model</h3>
+<p>"A simple model which allows correct JPG assignments and accords with (2) for all m(n) =m(O) +n·A:, (2) the states of (1) is obtained by assuming those mesons to be tightly bound states where n is the ordering number ranging of baryon" Identifying $\eta$ and $\omega$ "ying '1J and m with 1S0 and 3S1 A:=234 Mev, (3) states of NN and/or AA system, respec- tively, their quantum numbers are correct- m(O)=m.-A:=2m.-m.,=314Mev. (4) ly reproduced. We now introduce an ad- ditional assumption that the f-meson is the Equation (2) reproduces the observed 3P 2 state of the same system and the masses" — which evidently assures $J^{PG}=2^{++}$ for $f$ and yields "the relation ... which is exactly consistent with (2). Equation (7) means that the composite system behaves like a rigid rotator of which energy is determined by the total angular momentum only."</p>
+<p>"re 2) L. Bertanza et al., Phys. Rev. Letters 9 we identify it as the 3D 1 state of the ( 1962), 180. system. Then the mass formula (7) needs P. Schlein et al., Phys. Rev." $n-1=-\frac12\{J(J+1)+L(L-1)\}$, "or more simply, modified to" $n-1=J(1+L/2)$, each of which is equivalent to (2) as to all the four states of (1). The model predicts in the $T=Y=0$ series a pseudovector meson $1^{+-}$ corresponding to $1P_1$-state whose mass is near to that of $\omega$ or $\varphi$, and the second $2^{++}$ level at about $m_\varphi+5\kappa=1720$ Mev, corresponding to $3F_2$-state. One more possible pv meson $1^{++}$ corresponding to $3P_1$ will be excluded, provided that the restriction (5) be imposed.</p>
+<p>Finally: "a simple regularity of the meson series (1), could not be envisaged by the Regge trajectory hypothe~is7) nor by the general Evidently it assures JPG=2++ for f and unitary-symmetry argument.B) Indeed, it yields the relation may well be that those striking regulari- (8) ties should bear quite an essential signi- ficance"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-global-parity-rule-from-one-worked-case">1. A global parity rule from one worked case</h3>
+<p><strong>The idea.</strong> $C=(-1)^{J}$ holds for the photon and, if it holds for every self-conjugate boson, restricts which $J^{PG}$ levels can exist. Extended to $T=1$ it reads $G=(-1)^{J-2T}$, and it then excludes one of the two pseudovector levels the bound-state model would otherwise allow.</p>
+<p><strong>What it would add.</strong> A selection rule of the same shape as the corpus's parity labels. <em>P, T, and the Representation Labels</em> (<code>articles_physics/p-t-and-the-representation-labels.md</code>) discusses in §<em>PT and the Labels</em> how discrete symmetries restrict the labels a representation may carry; here the restriction is a <em>conjecture</em> generalised from one case, and it does predictive work by removing a state. The corpus's article is careful about what is derived; this is an example of the same kind of statement made by extrapolation, and the difference is instructive.</p>
+<p><strong>Where it lands.</strong> §<em>PT and the Labels</em>, as the extrapolated case.</p>
+<p><strong>What stands in the way.</strong> The rule is conjectural — "we conjecture"— and the letter gives no reason beyond the photon and the four states; the baryon rule $P=(-1)^{J-T}$ it is compared to was itself a restriction, not a theorem. </p>
+<h3 id="2-two-states-with-identical-quantum-numbers-and-different-masses">2. Two states with identical quantum numbers and different masses</h3>
+<p><strong>The idea.</strong> $\omega$ and $\varphi$ share every usual quantum number and differ only in mass, so the labelling by $J^{PG}$ is incomplete and a further integer $n$ is needed. That integer is not derivable from the usual labels, which is what "82 1-- 2 I •s, to the presence of a certain internal struc- ture for the states.". </p>
+<p><strong>What it would add.</strong> A precise statement of when a label set is incomplete — not the theory is wrong but two states collide in the labels. <em>The Spin–Charge Hilbert Space and the $SU(3)$ Supermultiplets in Biquaternionic Form</em> (<code>articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.md</code>) builds the label space from spin and charge and treats superselection; the $\omega$/$\varphi$ degeneracy is a case where the label space has a fibre the superselection rules do not see, and it is exactly the sort of counterexample such an article needs. </p>
+<p><strong>Where it lands.</strong> §<em>Superselection Rules</em>, as the counterexample, and §<em>Open Questions</em>. </p>
+<p><strong>What stands in the way.</strong> The letter offers no dynamics for $n$, only the oscillator analogy which it immediately declares difficult. </p>
+<h3 id="3-a-rigid-rotator-whose-energy-depends-on-total">3. A rigid rotator whose energy depends on total</h3>
+<p>$J$ only, fitted to four mesons <strong>What it adds.</strong> The relation $n-1=-\frac12\{J(J+1)+L(L-1)\}$ turns a mass ladder into a rotational spectrum, and the four-meson series fixes it. That is a <em>dynamical</em> reading of an equal-spacing rule, which the corpus's mass articles do not attempt — they read spectra as representation degrees or as symmetry breaking.</p>
+<p><strong>Where it lands.</strong> <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) §<em>The Spectrum</em>, as the rotational alternative, and <em>The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>), where the rotor's spectrum is computed. </p>
+<p><strong>What stands in the way.</strong> The rotator has no moment of inertia and no field; the identification of $\varphi$ as $3D_1$ is chosen to make the ladder close, so the fit is post hoc. The remainder, one line each. That $m(0)=2m_\varphi-m_\omega=314$ MeV lands near the ABC particle is a prediction which history did not confirm. That the model is Sakata's baryon–antibaryon picture rather than a quark picture dates the letter and fixes what "internal structure" could mean at the time.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

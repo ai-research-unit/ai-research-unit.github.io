@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fourier Processing of Quantum Light — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Fourier processing of quantum light 1206.4204v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fourier-processing-of-quantum-light"><strong>Fourier Processing of Quantum Light</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1206.4204v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>E. Poem, Y. Gilead, Y. Lahini, Y. Silberberg</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 19 June 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Fourier processing of quantum light 1206.4204v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Fourier processing of quantum light 1206.4204v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Fourier processing of quantum light 1206.4204v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that a classical optical Fourier processor can shape quantum correlations between two or more photons, identifies the class of Fourier masks admissible in multiphoton Fourier space, and demonstrates the idea with periodic phase masks illuminated by path-entangled pairs. The claim is experimental and reported as such.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"It is shown that a classical optical Fourier processor can be used for the shaping of quantum correlations between two or more photons, and the class of Fourier masks applicable in the multiphoton Fourier space is identified."</p>
+<h3 id="the-demonstration">The demonstration</h3>
+<p>"This concept is experimentally demonstrated using two types of periodic phase masks illuminated with path-entangled photon pairs, a highly non-classical state of light. Applied first were sinusoidal phase masks, emulating" a known operation, with a second class following.</p>
+<h3 id="the-device">The device</h3>
+<p>A Fourier processor is a lens system: a mask in the focal plane multiplies the spatial spectrum by a transfer function, and a second lens returns to position space. The paper's point is that the same classical element acts on the multiphoton amplitude, so the shaping is coherent across the photon-number sectors.</p>
+<p>"The second component in Fourier processing is the mask implemented at the Fourier plane of the 4-f filter."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-linear-optical-element-acts-on-the-multiphoton-amplitude-not-on-each-photon">1. A linear optical element acts on the multiphoton amplitude, not on each photon</h3>
+<p><strong>The idea.</strong> A mask placed in a Fourier plane multiplies the joint amplitude of the pair by a function of the sum of the transverse momenta. That is a two-photon operation built from one classical element. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A concrete instance of the corpus's claim that a transformation acts on the whole algebraic element rather than on its factors: the mask is not a product of one-photon actions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, on the multiplication in the transform domain.</p>
+<p><strong>What stands in the way.</strong> The corpus's transform is one-dimensional and scalar; the multiphoton case needs a transform on a tensor power, which the corpus does not construct.</p>
+<h3 id="2-admissible-masks-are-a-restricted-class">2. Admissible masks are a restricted class</h3>
+<p><strong>The idea.</strong> Not every mask is available in the multiphoton Fourier space; only those compatible with the symmetry of the joint spectrum qualify, which is a selection rule imposed by the physics rather than the apparatus.</p>
+<p><strong>What it would add.</strong> A selection rule the corpus's Fourier articles lack, where every multiplication in the transform domain is allowed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form.md</code>, on admissible multipliers.</p>
+<p><strong>What stands in the way.</strong> The restriction is a statement about periodic masks on a lattice of momenta; the corpus has no lattice, so the rule would have to be transported to a continuum of modes.</p>
+<p>This is a seven-page preprint; the claim, the mask class and the two demonstrations are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

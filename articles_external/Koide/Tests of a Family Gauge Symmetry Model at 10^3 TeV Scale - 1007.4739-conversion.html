@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tests of a Family Gauge Symmetry Model at $10^3$ TeV Scale — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Tests of a Family Gauge Symmetry Model at 10^3 TeV Scale - 1007.4739.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tests-of-a-family-gauge-symmetry-model-at-math13-tev-scale"><strong>Tests of a Family Gauge Symmetry Model at $10^3$ TeV Scale</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1007.4739v2 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yoshio Koide, Yukinari Sumino, Masato Yamanaka</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 November 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Tests of a Family Gauge Symmetry Model at 10^3 TeV Scale - 1007.4739-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Tests of a Family Gauge Symmetry Model at 10^3 TeV Scale - 1007.4739.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Tests of a Family Gauge Symmetry Model at 10^3 TeV Scale - 1007.4739.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the $U(3)$ family gauge model — the one whose purpose is to cancel the QED correction to the lepton mass relation — and derives what present experiments already exclude. Because the coupling and the boson masses are fixed by the charged-lepton masses, the model makes definite predictions, and the authors extract lower bounds on $m_{f12}$ from $K^0$–$\bar K^0$ and $D^0$–$\bar D^0$ mixing and from rare kaon decays. They find $m_{f12}\gtrsim10^3$ TeV without tuning, but $10^2$ TeV in a non-negligible region of the mixing-matrix parameter space. They then examine the collider signatures and find the cross sections too small.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Based on a specific model with $U(3)$ family gauge symmetry at $10^3$ TeV scale, we show its experimental signatures to search for. Since the gauge symmetry is introduced with a special purpose, its gauge coupling constant and gauge boson mass spectrum are not free."</p>
+<h3 id="the-observable">The observable</h3>
+<p>"The current structure in this model leads to family number violations via exchange of extra gauge bosons. We investigate present constraints from flavor changing processes and discuss visible signatures at LHC and lepton colliders."</p>
+<h3 id="the-bounds">The bounds</h3>
+<p>"Generally (without tuning of the mixing matrices) we find $m_{f12}\gtrsim10^3$ TeV from the $K^0$–$\bar K^0$ and $D^0$–$\bar D^0$ mixing. However, $m_{f12}\sim\mathcal{O}(10^2\ \mathrm{TeV})$ is also viable in a non-negligible range in the parameter space of the mixing matrices, which is consistent with the bounds from the rare kaon decay searches."</p>
+<h3 id="where-the-cp-constraint-bites">Where the CP constraint bites</h3>
+<p>"The very stringent bounds from the CP violation in the $K^0$–$\bar K^0$ mixing rule out contributions from CP phases in the down-type quark mixing matrices to this process. Hence, we restrict our analysis to the real (orthogonal) down-type quark mixing matrices."</p>
+<h3 id="the-collider-verdict">The collider verdict</h3>
+<p>"Although a top-top production at LHC (via $u^+u\to t^+t$) is very attractive, the cross section $\sim10^{-6}$ pb at $\sqrt s=14$ TeV and for $m_{f13}=10^2$ TeV would be too small to detect the signal. The cross section for $e^-+p\to\mu^-+X$ amounts to $\sigma\sim10^{-5}$ pb at $E_p=7$ TeV and $E_e=400$ GeV for $m_{f12}=50$ TeV, which would also be difficult to detect."</p>
+<h3 id="why-the-test-matters">Why the test matters</h3>
+<p>"At present, the cancellation mechanism based on $U(3)$ family gauge symmetry is the only known one as a possible explanation for $K(\mu)=K^{\rm pole}$. Therefore, tests of the model are urgently required."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-model-whose-only-free-choice-is-the-mixing-matrix">1. A model whose only free choice is the mixing matrix</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong> for making a model testable: fix the new coupling from an existing relation, fix the new masses from the known fermion masses, and the only remaining freedom is a mixing matrix that is already measured in another basis.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §10 says the relation has no dynamics and §11 lists what would settle something. This paper is a worked example of what a falsifiable version looks like: no new coupling, no new mass, one rotation, and bounds that already bite. That is the missing template between "the number holds" and "here is a model".</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> in the discussion of the thirteen parameters.</p>
+<p><strong>What stands in the way.</strong> The template works only because the family symmetry was invented for the relation; a model with a genuine free coupling would not have this property. First, because it gives the corpus's open question a concrete form.</p>
+<h3 id="2-bounds-from-mixing-rather-than-from-decays">2. Bounds from mixing rather than from decays</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: $m_{f12}\gtrsim10^3$ TeV from $K^0$–$\bar K^0$ and $D^0$–$\bar D^0$, weakening to $10^2$ TeV when the mixing matrix is chosen favourably.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code> uses the CKM matrix to compute CP violation inside the Standard Model; here the same matrix converts a meson-mixing measurement into a bound on a new mass, which is the standard use of flavour physics as a scale probe and is not spelled out in the corpus.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.md</code>, in the section on the Jarlskog invariant and mixing.</p>
+<p><strong>What stands in the way.</strong> The bound is model specific and the favourable region is not excluded, so the number is soft. Second.</p>
+<h3 id="3-a-ceiling-on-the-new-scale-rather-than-only-a-floor">3. A ceiling on the new scale rather than only a floor</h3>
+<p><strong>The idea.</strong> A <strong>question</strong>: the cancellation mechanism stops working above $10^3$–$10^4$ TeV, so the model has both a lower and an upper bound, and a non-discovery at the upper end would kill it rather than postpone it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> discusses what would count as evidence for or against a framework; a model with a finite window of viability is the strongest kind of empirical statement, since it can be excluded by a null result.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of falsifiability.</p>
+<p><strong>What stands in the way.</strong> The upper bound is argued from the accuracy of the tau mass measurement, not derived, and it is quoted as $10^3$–$10^4$ TeV, a full decade. Third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

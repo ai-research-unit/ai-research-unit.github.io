@@ -88,7 +88,7 @@ $$</p>
 $$</p>
 <p>In the block form of the chirality decomposition,</p>
 <p>$$
-X=\begin{pmatrix}X_{++}&X_{+-}\\X_{-+}&X_{--}\end{pmatrix},
+X=\begin{pmatrix}X_{++}&amp;X_{+-}\\X_{-+}&amp;X_{--}\end{pmatrix},
 \qquad
 X_{+-}\in\mathcal{B},\quad X_{-+}\in\mathcal{C},
 $$</p>
@@ -148,13 +148,13 @@ $$</p>
 \sigma_1\ge\sigma_2\ge0.
 $$</p>
 <p>The numbers $\sigma_1,\sigma_2$ are the <strong>singular values</strong> of $M$. They are uniquely determined by $M$, and they are the non-negative square roots of the eigenvalues of $M^*M$.</p>
-<p><strong>Proof.</strong> The operator $M^*M$ is positive semidefinite on $\mathbb{C}^2_-$. By the spectral theorem it has an orthonormal eigenbasis $v_1,v_2$ with eigenvalues $\sigma_1^2\ge\sigma_2^2\ge0$. Set $V=(v_1,v_2)$ and $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$. For $\sigma_k>0$, set $u_k=Mv_k/\sigma_k$; the vectors $u_k$ are orthonormal because</p>
+<p><strong>Proof.</strong> The operator $M^*M$ is positive semidefinite on $\mathbb{C}^2_-$. By the spectral theorem it has an orthonormal eigenbasis $v_1,v_2$ with eigenvalues $\sigma_1^2\ge\sigma_2^2\ge0$. Set $V=(v_1,v_2)$ and $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$. For $\sigma_k&gt;0$, set $u_k=Mv_k/\sigma_k$; the vectors $u_k$ are orthonormal because</p>
 <p>$$
 \langle u_j,u_k\rangle=\frac{\langle Mv_j,Mv_k\rangle}{\sigma_j\sigma_k}
 =\frac{\langle v_j,M^*Mv_k\rangle}{\sigma_j\sigma_k}
 =\delta_{jk}.
 $$</p>
-<p>Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding $*$-unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.</p>
+<p>Extend the $u_k$ with $\sigma_k&gt;0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding $*$-unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.</p>
 <p><strong>The polar decomposition.</strong> The SVD gives the <strong>chiral polar decomposition</strong></p>
 <p>$$
 M=WP,\qquad
@@ -168,21 +168,21 @@ $$</p>
 <p>The factor $P=|M|=\sqrt{M^*M}$ is the <strong>mass modulus</strong>, and $W$ is the <strong>chiral phase</strong>. The decomposition is unique when $M$ is invertible; when $M$ is singular, $W$ is not unique on the kernel of $M$, and $P$ is unique.</p>
 <p><strong>The matrices.</strong> For</p>
 <p>$$
-M=\begin{pmatrix}3&0\\0&2\end{pmatrix},
+M=\begin{pmatrix}3&amp;0\\0&amp;2\end{pmatrix},
 $$</p>
 <p>the singular values are $3,2$, and $M=WP$ with $W=I$, $P=\operatorname{diag}(3,2)$. For</p>
 <p>$$
-M=\begin{pmatrix}0&3\\2&0\end{pmatrix},
+M=\begin{pmatrix}0&amp;3\\2&amp;0\end{pmatrix},
 $$</p>
 <p>the singular values are $3,2$ and</p>
 <p>$$
-M=\begin{pmatrix}1&0\\0&1\end{pmatrix}
-\begin{pmatrix}3&0\\0&2\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix},
+M=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}
+\begin{pmatrix}3&amp;0\\0&amp;2\end{pmatrix}
+\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix},
 $$</p>
-<p>so $U=I$, $\Sigma=\operatorname{diag}(3,2)$, $V=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, and $W=UV^*=\begin{pmatrix}0&1\\1&0\end{pmatrix}$. For</p>
+<p>so $U=I$, $\Sigma=\operatorname{diag}(3,2)$, $V=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$, and $W=UV^*=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$. For</p>
 <p>$$
-M=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+M=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},
 $$</p>
 <p>the singular values are</p>
 <p>$$
@@ -210,9 +210,9 @@ $$</p>
 <p>$$
 \operatorname{rank}M=
 \begin{cases}
-2,& \sigma_2>0,\\
-1,& \sigma_1>0=\sigma_2,\\
-0,& M=0.
+2,&amp; \sigma_2&gt;0,\\
+1,&amp; \sigma_1&gt;0=\sigma_2,\\
+0,&amp; M=0.
 \end{cases}
 $$</p>
 <p>The rank is <strong>the masslessness</strong>: rank $2$ is the generic massive case, rank $1$ has one massless mode, and rank $0$ is fully massless. The rank is invariant under the complex gauge and under the compact gauge. The set</p>
@@ -224,7 +224,7 @@ $$</p>
 <h2 id="the-only-coupling-of-the-chiralities">The Only Coupling of the Chiralities</h2>
 <p><strong>The block-diagonal part preserves the chiralities.</strong> An element of $\mathcal{A}\oplus\mathcal{D}$ is block-diagonal. It maps each chirality to itself:</p>
 <p>$$
-\begin{pmatrix}A&0\\0&D\end{pmatrix}
+\begin{pmatrix}A&amp;0\\0&amp;D\end{pmatrix}
 \begin{pmatrix}v_+\\v_-\end{pmatrix}
 =
 \begin{pmatrix}Av_+\\Dv_-\end{pmatrix}.
@@ -232,7 +232,7 @@ $$</p>
 <p>The two chiralities do not mix.</p>
 <p><strong>The off-diagonal part is the coupling.</strong> The only entries that map one chirality to the other are the mass blocks $\mathcal{B}$ and $\mathcal{C}$:</p>
 <p>$$
-\begin{pmatrix}0&M\\N&0\end{pmatrix}
+\begin{pmatrix}0&amp;M\\N&amp;0\end{pmatrix}
 \begin{pmatrix}v_+\\v_-\end{pmatrix}
 =
 \begin{pmatrix}Mv_-\\Nv_+\end{pmatrix}.

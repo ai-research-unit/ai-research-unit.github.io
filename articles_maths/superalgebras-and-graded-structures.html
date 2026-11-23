@@ -144,10 +144,10 @@ $$</p>
 <h3 id="the-general-linear-superalgebra">The General Linear Superalgebra</h3>
 <p><strong>Definition.</strong> Let $V = K^{m} \oplus K^{n}$ with the first summand even and the second odd. The <strong>general linear superalgebra</strong> $\mathrm{GL}(m|n)$ is the Lie superalgebra of endomorphisms of $V$, which are the block matrices</p>
 <p>$$
-X = \begin{pmatrix} A & B \\ C & D \end{pmatrix}, \qquad A \in \mathrm{GL}(m),\ D \in \mathrm{GL}(n),\ B, C \text{ of the appropriate parity},
+X = \begin{pmatrix} A &amp; B \\ C &amp; D \end{pmatrix}, \qquad A \in \mathrm{GL}(m),\ D \in \mathrm{GL}(n),\ B, C \text{ of the appropriate parity},
 $$</p>
 <p>with bracket $[X, Y] = XY - (-1)^{|X||Y|}YX$. Its even part is $\mathrm{GL}(m) \oplus \mathrm{GL}(n)$ and its odd part is the space of off-diagonal blocks, of dimension $2mn$.</p>
-<p><strong>Definition.</strong> The <strong>supertrace</strong> of $X = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ is</p>
+<p><strong>Definition.</strong> The <strong>supertrace</strong> of $X = \begin{pmatrix} A &amp; B \\ C &amp; D\end{pmatrix}$ is</p>
 <p>$$
 \operatorname{str}(X) = \operatorname{tr}(A) - \operatorname{tr}(D).
 $$</p>
@@ -175,7 +175,7 @@ $$</p>
 <p><strong>Example.</strong> In $\Lambda(M)$ with $M$ odd, the even part $\Lambda_{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.</p>
 <h3 id="the-super-trace-and-the-berezinian">The Super Trace and the Berezinian</h3>
 <p>The determinant has a super analogue, and it is not the naive determinant of the block matrix.</p>
-<p><strong>Definition.</strong> Let $X = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ be an even supermatrix over a supercommutative algebra, with $A$ and $D$ even and invertible and $B, C$ odd. The <strong>Berezinian</strong> of $X$ is</p>
+<p><strong>Definition.</strong> Let $X = \begin{pmatrix} A &amp; B \\ C &amp; D\end{pmatrix}$ be an even supermatrix over a supercommutative algebra, with $A$ and $D$ even and invertible and $B, C$ odd. The <strong>Berezinian</strong> of $X$ is</p>
 <p>$$
 \operatorname{Ber}(X) = \det(A - B D^{-1} C)\, \det(D)^{-1} = \det(A)\, \det(D - C A^{-1} B)^{-1}.
 $$</p>
@@ -184,7 +184,7 @@ $$</p>
 <p>$$
 \boxed{\;\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)\;}
 $$</p>
-<p>for even supermatrices with invertible even diagonal blocks, and it is characterised by the two properties $\operatorname{Ber}\!\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} = \det(A)\det(D)^{-1}$ and multiplicativity.</p>
+<p>for even supermatrices with invertible even diagonal blocks, and it is characterised by the two properties $\operatorname{Ber}\!\begin{pmatrix} A &amp; 0 \\ 0 &amp; D\end{pmatrix} = \det(A)\det(D)^{-1}$ and multiplicativity.</p>
 <p><strong>Proof.</strong> Both sides are rational functions of the entries; by the super analogue of the splitting principle one reduces to supermatrices that are products of block diagonal and block triangular factors, and for those the formula is immediate from the definition and the multiplicativity of the ordinary determinant. The odd entries are nilpotent over a finitely generated supercommutative algebra, so the rational expression is a polynomial in the odd variables and the reduction is legitimate.</p>
 <p><strong>Proposition.</strong> For an even supermatrix $X$ one has $\operatorname{Ber}(\exp(X)) = \exp(\operatorname{str}(X))$, where $\operatorname{str}$ is the supertrace.</p>
 <p><strong>Proof.</strong> Reduce to the diagonal case by multiplicativity: the relation is multiplicative in $X$ to first order, and both sides have the same derivative at $X = 0$, namely $\operatorname{str}$.</p>
@@ -194,13 +194,13 @@ $$</p>
 <p><strong>Definition.</strong> Let $M$ be an $R$-module, placed in odd parity, and let $\Lambda(M)$ be its exterior algebra with the Koszul sign rule. Then $\Lambda(M)$ is the <strong>free supercommutative algebra</strong> on the odd module $M$: for any supercommutative algebra $A$ and any $R$-linear map $f : M \to A_1$ with $f(x)^2 = 0$, there is a unique morphism of superalgebras $\Lambda(M) \to A$ extending $f$.</p>
 <p><strong>Proof.</strong> This is the universal property of <em>The Exterior Algebra</em>, read in parity: an odd element has square zero in a supercommutative algebra, and the parity-respecting algebra maps are exactly the algebra maps sending $M$ into the odd part.</p>
 <h3 id="the-commutation-factors">The Commutation Factors</h3>
-<p>Let $M$ be free with a basis of odd generators $x_1, \ldots, x_m$. The exterior algebra has the basis of squarefree monomials $x_{i_1} \cdots x_{i_k}$ with $i_1 < \cdots < i_k$, and the super sign rule reads</p>
+<p>Let $M$ be free with a basis of odd generators $x_1, \ldots, x_m$. The exterior algebra has the basis of squarefree monomials $x_{i_1} \cdots x_{i_k}$ with $i_1 &lt; \cdots &lt; i_k$, and the super sign rule reads</p>
 <p>$$
 x_{i_1} \cdots x_{i_k} = (-1)^{\sigma(i_1, \ldots, i_k)}\, x_{\sigma(i_1)} \cdots x_{\sigma(i_k)}
 $$</p>
-<p>for a permutation $\sigma$, where the sign is the sign of the permutation restricted to the chosen indices. Equivalently, the monomial $x_{i_1}\cdots x_{i_k}$ corresponding to a subset $I = \{i_1 < \cdots < i_k\}$ satisfies</p>
+<p>for a permutation $\sigma$, where the sign is the sign of the permutation restricted to the chosen indices. Equivalently, the monomial $x_{i_1}\cdots x_{i_k}$ corresponding to a subset $I = \{i_1 &lt; \cdots &lt; i_k\}$ satisfies</p>
 <p>$$
-x_I\, x_J = \varepsilon(I, J)\, x_{I \cup J}, \qquad \varepsilon(I, J) = (-1)^{\#\{(i,j) \in I \times J : i > j\}},
+x_I\, x_J = \varepsilon(I, J)\, x_{I \cup J}, \qquad \varepsilon(I, J) = (-1)^{\#\{(i,j) \in I \times J : i &gt; j\}},
 $$</p>
 <p>with $x_{I\cup J} = 0$ when $I \cap J \neq \varnothing$. The factor $\varepsilon(I, J)$ is the <strong>commutation factor</strong>, and the identity $\varepsilon(I,J)\varepsilon(J,I) = (-1)^{|I||J|}$ is the super sign rule.</p>
 <p><strong>Proposition.</strong> The assignment $I \mapsto x_I$ is a bijection from the finite subsets of $\{1, \ldots, m\}$ to a basis of $\Lambda(M)$, and the commutation factors satisfy the cocycle identity</p>
@@ -271,7 +271,7 @@ $$</p>
 <td>General linear superalgebra of $K^m\oplus K^n$</td>
 </tr>
 <tr>
-<td>$\operatorname{str}\begin{pmatrix}A&B\\C&D\end{pmatrix} = \operatorname{tr}A - \operatorname{tr}D$</td>
+<td>$\operatorname{str}\begin{pmatrix}A&amp;B\\C&amp;D\end{pmatrix} = \operatorname{tr}A - \operatorname{tr}D$</td>
 <td>Supertrace; vanishes on superbrackets</td>
 </tr>
 <tr>
@@ -287,7 +287,7 @@ $$</p>
 <td>Multiplicativity and the trace relation</td>
 </tr>
 <tr>
-<td>$\varepsilon(I,J) = (-1)^{\#\{(i,j)\in I\times J : i>j\}}$</td>
+<td>$\varepsilon(I,J) = (-1)^{\#\{(i,j)\in I\times J : i&gt;j\}}$</td>
 <td>Commutation factor of squarefree monomials</td>
 </tr>
 <tr>

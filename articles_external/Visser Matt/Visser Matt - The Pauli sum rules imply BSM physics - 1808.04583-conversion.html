@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pauli sum rules imply BSM physics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The Pauli sum rules imply BSM physics - 1808.04583.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pauli-sum-rules-imply-bsm-physics"><strong>The Pauli sum rules imply BSM physics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1808.04583v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 August 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - The Pauli sum rules imply BSM physics - 1808.04583-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The Pauli sum rules imply BSM physics - 1808.04583.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - The Pauli sum rules imply BSM physics - 1808.04583.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Pauli's three sum rules relate particle multiplicities, masses, and their squares. They follow from Lorentz invariance and from a finite zero-point stress-energy. The author applies them to the standard model spectrum. The sum rules fail for the known particles alone, so new particles are required. Supersymmetry would satisfy them, but is neither necessary nor sufficient.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-rules">The rules</h3>
+<p>$$\sum_n(-1)^{2S_n}g_n=0,\qquad \sum_n(-1)^{2S_n}g_nm_n^2=0,\qquad \sum_n(-1)^{2S_n}g_nm_n^4=0\qquad (paper\ 1)$$</p>
+<h3 id="what-they-mean">What they mean</h3>
+<p>"These three sum rules are intimately related to both the Lorentz invariance and the finiteness of the zero-point stress-energy tensor."</p>
+<h3 id="what-follows">What follows</h3>
+<p>"these three constraints are also intimately related to the existence of finite QFTs ultimately based on Fermi–Bose cancellations"</p>
+<h3 id="on-supersymmetry">On supersymmetry</h3>
+<p>"(Supersymmetry is neither necessary nor sufficient for the existen[ce of such cancellations])"</p>
+<h3 id="the-situation">The situation</h3>
+<p>"The current observational situation regarding the usual places to look for BSM physics is rather bleak."</p>
+<h3 id="the-motivation">The motivation</h3>
+<p>"With a lack of any direct observational evidence in favour of BSM physics, it becomes more critical to assess ind[irect constraints]"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-vacuum-constrains-the-spectrum">1. The vacuum constrains the spectrum</h3>
+<p><strong>The idea.</strong> A finite vacuum energy is not automatic; it forces cancellations between particles.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code> computes a vacuum energy for a given field content. The sum rules say which field contents are allowed at all.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code>, in the discussion of the spectrum.</p>
+<p><strong>What stands in the way.</strong> The rules assume exact Lorentz invariance. Ranked first, because it turns a calculation into a constraint.</p>
+<h3 id="2-indirect-evidence">2. Indirect evidence</h3>
+<p><strong>The idea.</strong> When direct searches fail, consistency conditions become the evidence.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> would gain a model of argument by consistency rather than by detection.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of evidence.</p>
+<p><strong>What stands in the way.</strong> The constraints are weak quantitatively. Ranked second.</p>
+<h3 id="3-supersymmetry-is-not-the-only-answer">3. Supersymmetry is not the only answer</h3>
+<p><strong>The idea.</strong> Fermi–Bose cancellation can happen without a symmetry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would gain a case where the obvious algebraic fix is not the only fix.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> No alternative is constructed. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

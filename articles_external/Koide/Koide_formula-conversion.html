@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koide formula — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Koide/Koide_formula.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="koide-formula"><strong>Koide formula</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article, printed to PDF</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>none — a Wikipedia page has no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors; no author is printed</td>
+</tr>
+<tr>
+<td>version</td>
+<td>printed 22 November 2026, 20:00 CET (PDF creation date)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Koide/Koide_formula-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Koide/Koide_formula.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Koide/Koide_formula.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Collects, in one place, what is known about the empirical relation that Koide proposed in 1981 among the three charged-lepton masses. It records the measured value of the ratio and its uncertainty, the two geometric readings of the number $2/3$, the invariances, Koide's original conditions in $z$ variables and in matrix form, the two-parameter phase form, the triplets of quarks for which similar ratios hold, a derivation from a one-parameter family of cubics, and the family-Higgs potential whose minimum is the relation. Nothing here is computed by the page; every entry is a report of a published result, and the page says where understanding stands: the relation holds to the experimental precision and no accepted derivation exists.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-relation-and-its-measured-value">The relation and its measured value</h3>
+<p>$$
+Q=\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}=\frac23 ,
+$$</p>
+<p>"an unexplained empirical equation proposed by Yoshio Koide in 1981". With the 2024 Particle Data Group masses $m_e=0.510\,998\,950\,00(15)$ MeV/$c^2$, $m_\mu=105.658\,3755(23)$ MeV/$c^2$ and $m_\tau=1776.93(09)$ MeV/$c^2$, "this gives $Q=0.666\,664\,46(508)$", where "the uncertainty in $Q$ was calculated as $\Delta Q=(\partial Q/\partial m_\tau)\Delta m_\tau$", the tauon mass being the least known. "This exact value of $2/3$ is still within experimental bounds as of 2024."</p>
+<p>Assumed exact, the relation predicts the tauon mass from the electron and muon, "$m_\tau=1776.969$ MeV/$c^2$".</p>
+<h3 id="the-two-geometric-readings-of-math31">The two geometric readings of $2/3$</h3>
+<p>Robert Foot's reading: "$1/(3Q)$ is the squared cosine of the angle between the vector $[\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau}]$ and the vector $[1,1,1]$". "That angle is almost exactly 45 degrees: $\theta=45.000^{\circ}\pm0.001^{\circ}$."</p>
+<p>The second reading is positional. Over all triples of positive real numbers,</p>
+<p>$$
+\frac13&lt;Q=\frac{x_1+x_2+x_3}{\left(\sqrt{x_1}+\sqrt{x_2}+\sqrt{x_3}\right)^2}&lt;1 ,
+$$</p>
+<p>"the upper bound follows from the fact that the square roots are necessarily positive, and the lower bound follows from the Cauchy–Bunyakovsky–Schwarz inequality. The Koide value, $2/3$, lies at the center of the mathematically allowed range." Removing the positivity of the roots allows one more quark tuple, the one with strange, charm and bottom.</p>
+<h3 id="the-invariances">The invariances</h3>
+<p>$Q$ is symmetric under any permutation of the three masses, and scale invariant: with $m'_i=\lambda m_i$, "$Q'=Q$". "$Q$ is a dimensionless quantity, so the relation holds regardless of which unit is used."</p>
+<h3 id="koides-conditions">Koide's conditions</h3>
+<p>"The original derivation postulates $m_{ei}\propto(z_0+z_i)^2$" with</p>
+<p>$$
+z_1+z_2+z_3=0 ,
+\qquad
+\frac13\left(z_1^2+z_2^2+z_3^2\right)=z_0^2 ,
+$$</p>
+<p>"from which the formula follows". Besides, "masses for neutrinos and down quarks were postulated to be proportional to $z_i^2$ while masses for up quarks were postulated to be $\propto(z_0+2z_i)^2$." The published model justifies the first condition as part of a symmetry breaking and the second as "a flavour charge for preons".</p>
+<p>In matrix form with $M=AA^\dagger$ and $A=Z_0+Z$, "the equations are simply $\mathrm{tr}\,Z=0$ and $\mathrm{tr}\,Z_0^2=\mathrm{tr}\,Z^2$."</p>
+<h3 id="the-phase-form">The phase form</h3>
+<p>"Any three masses that match with koide formula can be expressed as"</p>
+<p>$$
+\sqrt{m_n}=\mu\left[1+\sqrt2\cos\left(\delta+\frac{2\pi}{3}\,n\right)\right],
+\qquad n=1,2,3 ,
+$$</p>
+<p>with $\mu$ a scale and $\delta$ a phase.</p>
+<h3 id="other-triplets">Other triplets</h3>
+<p>Quark masses run, "which makes an analysis more complicated". Taken at their measured values regardless of uncertainty, the three heaviest give</p>
+<p>$$
+Q_{\text{heavy}}=\frac{m_c+m_b+m_t}{\left(\sqrt{m_c}+\sqrt{m_b}+\sqrt{m_t}\right)^2}\approx0.669\approx\frac23 ,
+$$</p>
+<p>with $m_c=1.275\pm0.03$, $m_b=4.180\pm0.04$ and $m_t=173.0\pm0.40$ GeV/$c^2$. The page attributes the first published mention to Cao (2012), the observation having been removed from the published Rodejohann–Zhang article. With "a negative sign for $\sqrt{m_s}$" the middle triplet gives</p>
+<p>$$
+Q_{\text{middle}}=\frac{m_s+m_c+m_b}{\left(-\sqrt{m_s}+\sqrt{m_c}+\sqrt{m_b}\right)^2}\approx0.675 ,
+$$</p>
+<p>published by Rivero, "who notes that an increase of the value for charm mass makes both equations, heavy and middle, exact". The three lightest give $Q_{\text{light}}\approx0.57$, a value also cited by Cao; Harari, Haut and Weyers in 1978 computed the same ratio with a massless up quark, "$(0+m_d+m_s)/(\sqrt0+\sqrt{m_d}+\sqrt{m_s})^2$", which "could be considered the first appearance of a Koide-type formula". Chaining equations over consecutive triplets, the page reports $173.263\,947(6)$ GeV/$c^2$ for the top quark.</p>
+<p>The inverse relation</p>
+<p>$$
+Q_{\text{inverse}}=\frac{1/m_d+1/m_s+1/m_b}{\left(\sqrt{1/m_d}+\sqrt{1/m_s}+\sqrt{1/m_b}\right)^2}
+$$</p>
+<p>"happens to be exactly $2/3$ at energies of $100$ TeV", and "it is always within one sigma of the exact fraction in all the renormalisation group running".</p>
+<h3 id="the-cubic">The cubic</h3>
+<p>A cubic arises naturally for three generations, as the characteristic polynomial of a $3\times3$ mass matrix. For</p>
+<p>$$
+4m^3-24n^2m^2+9n\left(n^3-4\right)m-9 ,
+$$</p>
+<p>with real positive roots, put $m\equiv x^2$; the polynomial factors as</p>
+<p>$$
+\left(2x^3-6nx^2+3n^2x-3\right)\left(2x^3+6nx^2+3n^2x+3\right) .
+$$</p>
+<p>The symmetric functions of either factor give $x_1+x_2+x_3=\pm3n$ and $x_1x_2+x_2x_3+x_3x_1=\tfrac32n^2$, so</p>
+<p>$$
+\frac{2\left(x_1x_2+x_2x_3+x_3x_1\right)}{\left(x_1+x_2+x_3\right)^2}=\frac{3n^2}{9n^2}=\frac13 ,
+\qquad\text{hence}\qquad
+\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^2}=\frac23 ,
+$$</p>
+<p>"regardless of the value of $n$".</p>
+<h3 id="the-family-higgs-potential">The family-Higgs potential</h3>
+<p>"Koide proposed that an explanation for the formula could be a Higgs particle with $U(3)$ flavour charge $\Phi$", with</p>
+<p>$$
+V(\Phi)=\left[2\left[\mathrm{tr}(\Phi)\right]^2-3\,\mathrm{tr}\left(\Phi^2\right)\right]^2 ,
+$$</p>
+<p>the charged-lepton mass terms being written with $\Phi$. "Such a potential is minimised when the masses fit the Koide formula. Minimising does not give the mass scale", which would need further terms, "so the Koide formula might indicate existence of additional scalar particles beyond the Standard Model's Higgs boson". A related potential,</p>
+<p>$$
+V(\Phi)=\det\left[\left(\Phi-\sqrt{m_e}\right)^2\right]+\det\left[\left(\Phi-\sqrt{m_\mu}\right)^2\right]+\det\left[\left(\Phi-\sqrt{m_\tau}\right)^2\right],
+$$</p>
+<p>reduces to the same relations when expanded in traces.</p>
+<h3 id="running-and-the-status-of-the-number">Running and the status of the number</h3>
+<p>The relation holds for pole masses, which are low-energy quantities defined at different scales, and many regard it therefore as numerology. Sumino is reported as constructing an effective field theory with a new gauge symmetry that makes the pole masses satisfy it exactly; Koide has published his view of that model; Goffinet's thesis reformulates the relation so as to avoid square roots.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-family-higgs-potential-whose-minimum-is-the-closure">1. A family-Higgs potential whose minimum is the closure</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: a scalar $\Phi$ carrying $U(3)$ flavour charge, with a potential built from $2[\mathrm{tr}\Phi]^2-3\,\mathrm{tr}(\Phi^2)$ squared so that its vanishing — the minimum — is exactly the condition that the charged-lepton masses satisfy the closure. The identity $\mathrm{tr}Z=0$, $\mathrm{tr}Z_0^2=\mathrm{tr}Z^2$ is the same condition written on the matrix.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §11 opens with "Derive $Q=2/N$. The central debt", and <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code> §4 says the theory "does not yet say why the number is $2/3$". This is a potential whose stationary point is the closure, which is the shape a derivation must have: the number appears as the price of minimising a symmetric function of a matrix, not as an arithmetic accident.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §11, the first entry, and then §2 of the same note, where the $45^{\circ}$ condition is the target.</p>
+<p><strong>What stands in the way.</strong> It needs a flavour-charged scalar with a $U(3)$ family symmetry, and the corpus's gauge sector has no family symmetry — this is a structure the corpus does not have, not a formula it is missing. The page also states the limit: the potential gives the ratio and not the scale, so the mass $M$ of the tower stays input. And the potential as printed is a fourth-order square whose vanishing is the condition; whether the minimum is stable in the full potential with the mass terms is not shown.</p>
+<h3 id="2-the-quark-triplets-are-not-the-generation-diagonal-ones">2. The quark triplets are not the generation-diagonal ones</h3>
+<p><strong>The idea.</strong> A <strong>number</strong> with a <strong>reading</strong>: the quark triplets that satisfy the closure are the three heaviest, $0.669$; the three middle with one root taken negative, $0.675$; and the three lightest, $0.57$ — not the up-type and down-type generation triplets.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 measures $Q=0.8489808$ for $u,c,t$ and $0.7314277$ for $d,s,b$ and §11 asks "does running to a common scale move them". This page answers the question sideways: the failing tuples are the wrong tuples. Changing the tuple is cheaper than moving it, and the four numbers are a testable set.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, the measured-$Q_N$ table, and §11's quark entry.</p>
+<p><strong>What stands in the way.</strong> The negative sign on $\sqrt{m_s}$ is an extra choice with no reason given, and so is the decision to skip a generation. The corpus's proportional-spectrum result ties the up-type and down-type towers to one shape, so a tuple that mixes them crosses that result rather than sitting inside it. The numbers are also scale-dependent and the page says so.</p>
+<h3 id="3-the-closure-as-a-pair-of-matrix-conditions">3. The closure as a pair of matrix conditions</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $M=AA^\dagger$ with $A=Z_0+Z$, a scalar multiple of the identity plus a traceless part, subject to $\mathrm{tr}Z=0$ and $\mathrm{tr}Z_0^2=\mathrm{tr}Z^2$.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §3 puts the amplitudes on a phase circle, $a_i=\sqrt M(1+\sqrt2\cos(\theta+2\pi i/N))$, which is the eigenvalue list of exactly such a matrix; the page supplies the matrix itself and the trace condition that the circle's cosine sum enforces. The corpus has the vector statement and lacks the statement in the algebra, which is where the corpus's other objects live.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §3, and <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, whose subject is $M_f^\dagger M_f$.</p>
+<p><strong>What stands in the way.</strong> The second condition is one equation on $Z$, so it fixes the norm of $Z$ and not its direction; the phase spacing the corpus is missing stays free. Note also that the page writes $m_i\propto(z_0+z_i)^2$ and separately $M=AA^\dagger$, and the step from a square of a matrix to a spectrum of squared masses is stated without the eigenvalues being shown real.</p>
+<h3 id="4-the-closure-is-the-midpoint-of-the-allowed-window">4. The closure is the midpoint of the allowed window</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong> with a <strong>reading</strong>: $1/3&lt;Q&lt;1$ for any triple of positive numbers, so $2/3$ is the arithmetic centre of $[1/3,1]$, and $Q=2/N$ sits at the centre of $[1/N,1]$ for every count.</p>
+<p><strong>What it would add.</strong> <code>articles_internal/flavour-research.md</code> §1 proves $0&lt;Q_N\le1$ by Cauchy–Schwarz and stops there. The sharpened bound is one line further in the same inequality, and it renames the target: the question is not why $2/3$ but why the midpoint, which is a weaker and possibly reachable statement, since a symmetric function of three positive numbers has an obvious reason to sit at the centre of its own range.</p>
+<p><strong>Where it lands.</strong> <code>articles_internal/flavour-research.md</code> §1, beside the bound $0&lt;Q_N\le1$ and the $45^{\circ}$ reading of §2.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the cost is that it is the same inequality already used, so it adds a sharper statement rather than a new object, and the midpoint of a range is not by itself a mechanism.</p>
+<h3 id="rest-in-one-line-each">Rest, in one line each</h3>
+<p>Foot's angle is the corpus's $45^{\circ}$ reading in a dot-product form; the measured $\theta=45.000^{\circ}\pm0.001^{\circ}$ is the same number as the corpus's $6.1\times10^{-6}$ residual. Permutation symmetry and scale invariance are already stated. The tauon prediction $1776.969$ MeV/$c^2$ is one line the corpus does not carry. Rivero's inverse relation is quoted as exact at $100$ TeV, while the paper by the same author in this folder puts it at $280$ TeV — one of the two is a transcription. Sumino's family gauge symmetry and Goffinet's root-free reformulation are stated in one sentence each, with no equation, so they cannot be imported as mechanisms; only the existence of such attempts can be recorded.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

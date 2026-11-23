@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normalisable Quasiparticles on a Manifold with Anticommuting Co-ordinates — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 1 Normalisable quasiparticles on a manifold…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="normalisable-quasiparticles-on-a-manifold-with-anticommuting-co-ordinates"><strong>Normalisable Quasiparticles on a Manifold with Anticommuting Co-ordinates</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint (book chapter)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2106.08130v9 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. N. C. Pfeifer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v9, 1 January 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>A Classical Analogue to the Standard Model and General Relativity, Chapter 1</td>
+</tr>
+<tr>
+<td>length</td>
+<td>58 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/A Classical Analogue to the Standard Model, Chapter 1 Normalisable quasiparticles on a manifold with anticommuting co-ordinates 2106.08130v9-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 1 Normalisable quasiparticles on a manifold with anticommuting co-ordinates 2106.08130v9.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-as-the-low-energy-phase.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/A Classical Analogue to the Standard Model, Chapter 1 Normalisable quasiparticles on a manifold with anticommuting co-ordinates 2106.08130v9.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Builds a classical field theory on a four-real-dimensional vector space whose basis elements anticommute, maps it homomorphically onto $\mathbb{R}^{1,3}$, and shows that perturbations about a chosen "pseudovacuum" configuration behave as normalisable quasiparticles emulating a five-species interacting quantum field theory. The effective Lagrangian arises from the anticommutation relations alone, with no Lagrangian written on the underlying manifold. </p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction-the-manifold">The construction The manifold</h3>
+<p>$M$ is built on a four-real-dimensional vector space "supplememted by a product operation under which its basis elements anticommute", and is shown to be a submanifold of the superspace $\mathbb{R}^{4|4}$; the co-ordinates "dding in the space of supernumbers Λ∞ , the corresponding manifold, and its embedding in the superspace R4|4 .". </p>
+<h3 id="the-mapping">The mapping</h3>
+<p>A homomorphism takes $M$ to</p>
+<p>$\mathbb{R}^{1,3}$. Spinor fields are the gradients of a scalar, $\psi^\alpha(x):=\partial^\alpha\phi(x)$ and $\psi^{\dot\alpha}(x):=\partial^{\dot\alpha}\phi(x)$, so fermions are not put in but differentiated out of the bosonic sector. </p>
+<h3 id="the-result">The result</h3>
+<p>"the model emulates the behaviour of a five-species interacting quantum field theory on R1,3 . The Lagrangian of this model arises entirely from the anticommutation property of the manifold co-ordinates. Later"</p>
+<h3 id="dimensions-and-masses">Dimensions and masses</h3>
+<p>The free fermion has "mension L−1/2 in the presence of the complex scalar field.", and the model's symmetry at $n=1$ is $\mathrm{GL}(1,\mathbb{R})$, "mediated by the vector boson ϕµ . Higher". Any field of dimension greater than $L^{-1/2}$ acquires a preon substructure. </p>
+<h3 id="the-physical-claim">The physical claim</h3>
+<p>"the equations of motion and hence the Lagrangian may arise entirely from constraints imposed by the anticommutation 54 rules of the manifold co-ordinates" In these models "there is no Lagrangian at all on the underlying manifold, and all fields are completely free to take any values whatsoever" — the dynamics is a consequence of the geometry, not an input.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-fermions-as-gradients-of-a-scalar">1. Fermions as gradients of a scalar</h3>
+<p><strong>The idea.</strong> If the spinor is the derivative of a boson, $\psi^\alpha=\partial^\alpha\phi$, then the fermion sector is not independent: it is the boson's derivative structure. This is a <strong>mechanism</strong> for producing fermions from a bosonic field, and it is why the model needs no separate spin-statistics input.</p>
+<p><strong>What it would add.</strong> A construction the corpus does not have: the corpus introduces bispinor fields as separate objects and derives their properties; here they are derived from a single scalar.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-bispinor-spaces.md</code>, at the construction.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra already contains the spinor subspaces as ideals, so an extra "gradient of a scalar" step would duplicate a structure the algebra supplies directly; the two constructions would have to be shown to agree or the second dropped.</p>
+<h3 id="2-the-lagrangian-from-anticommutation-alone">2. The Lagrangian from anticommutation alone</h3>
+<p><strong>The idea.</strong> No action is assumed. The fields are free to take any values subject only to anticommuting coordinates, and the requirement that products be normalisable forces the form of the kinetic and interaction terms. This is a <strong>mechanism</strong> for generating dynamics from a constraint.</p>
+<p><strong>What it would add.</strong> The corpus writes Lagrangians by hand in each article; here the form is forced. If the argument carries, the corpus's choice of terms is not a choice.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code>, on the origin of the terms.</p>
+<p><strong>What stands in the way.</strong> The corpus's product is already fixed by the algebra and its Lagrangian terms are selected by Lorentz and gauge covariance; whether normalisability adds anything beyond those is not obvious and would have to be checked term by term.</p>
+<h3 id="3-preons-as-a-consequence-of-dimension-counting">3. Preons as a consequence of dimension counting</h3>
+<p><strong>The idea.</strong> Any field of dimension above $L^{-1/2}$ must be composite. Compositeness is not a hypothesis about new particles; it is a bookkeeping consequence of the scaling dimensions in the model. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A criterion the corpus can apply to its own fields: a dimension above the elementary one forces a substructure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>, on what counts as elementary.</p>
+<p><strong>What stands in the way.</strong> The corpus has no scaling dimensions in this sense — its fields have algebraic grades, not mass dimensions — so the criterion would need translating, and the translation may not be faithful.</p>
+<p>This is a fifty-eight page chapter; the anticommuting manifold, the homomorphism to $\mathbb{R}^{1,3}$, the pseudovacuum, the quasiparticle perturbation and the emergent Lagrangian are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

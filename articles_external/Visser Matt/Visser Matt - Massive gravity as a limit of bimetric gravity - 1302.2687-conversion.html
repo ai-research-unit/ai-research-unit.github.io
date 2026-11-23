@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massive gravity as a limit of bimetric gravity — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive gravity as a limit of bimetric gravity - 1302.2687.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="massive-gravity-as-a-limit-of-bimetric-gravity"><strong>Massive gravity as a limit of bimetric gravity</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1302.2687v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Prado Martín-Moruno, Valentina Baccetti, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 12 February 2013</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (proceedings format)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Massive gravity as a limit of bimetric gravity - 1302.2687-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive gravity as a limit of bimetric gravity - 1302.2687.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Massive gravity as a limit of bimetric gravity - 1302.2687.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This short proceedings note explains how massive gravity sits inside bimetric gravity. Bimetric gravity has two dynamical metrics and hence two sets of equations; massive gravity has one equation and a fixed background. Taking the limit of vanishing kinetic term keeps a constraint from the second Bianchi identity. That constraint forces the interaction term to be constant, so the effect reduces to an effective cosmological constant. The note then lists the cosmological solutions of this type.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"Massive gravity may be viewed as a suitable limit of bimetric gravity. The limiting procedure can lead to an interesting interplay between the 'background' and 'foreground' metrics in a cosmological context."</p>
+<h3 id="the-asymmetry">The asymmetry</h3>
+<p>"Thus, solutions of bimetric gravity in the limit of vanishing kinetic term are also solutions of massive gravity, but the contrary statement is not necessarily true."</p>
+<h3 id="why-massive-gravity-needs-a-second-tensor">Why massive gravity needs a second tensor</h3>
+<p>"to construct such a mass term in the action one needs an additional two-tensor, $f_{\mu\nu}$."</p>
+<h3 id="which-limit-to-take">Which limit to take</h3>
+<p>"the limit of vanishing $\kappa$ and $\epsilon$, that is of vanishing kinetic term, must be taken in bimetric gravity to recover massive gravity."</p>
+<h3 id="what-survives">What survives</h3>
+<p>"the Bianchi inspired constraint can be written as $\partial_\lambda L_{\text{int}}=0$, which implies a modification equivalent to a cosmological constant, $T^{(\text{eff})\mu}{}_{\nu}=-\Lambda_{\text{eff}}\,\delta^\mu{}_\nu$."</p>
+<h3 id="the-solutions">The solutions</h3>
+<p>"Conformally related metrics" and "Conformally related sections"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-limit-that-leaves-a-constraint-behind">1. A limit that leaves a constraint behind</h3>
+<p><strong>The idea.</strong> Sending a coupling to zero does not remove all of its consequences.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats the massless limit as smooth in the dispersion relation. Here the limit is shown to be not fully continuous, which is a caution for any claim that a limit recovers the simpler theory.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the limit.</p>
+<p><strong>What stands in the way.</strong> The result is specific to bimetric gravity. Ranked first, because it attacks the meaning of the limit directly.</p>
+<h3 id="2-two-metrics-with-equal-standing">2. Two metrics with equal standing</h3>
+<p><strong>The idea.</strong> Bimetric gravity treats both metrics as dynamical, and the extra equation constrains the solutions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> fixes one metric and one frame. A second dynamical metric is outside its bookkeeping, and the target should say how it would be recorded.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the discussion of conventions.</p>
+<p><strong>What stands in the way.</strong> The note is three pages and gives only the outline. Ranked second.</p>
+<h3 id="3-mass-masquerading-as-a-cosmological-constant">3. Mass masquerading as a cosmological constant</h3>
+<p><strong>The idea.</strong> In the restricted class of solutions, a graviton mass acts exactly like $\Lambda$.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> needs a source. This shows one route by which a mass parameter produces an effective source, and the target can compare.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the discussion of the source.</p>
+<p><strong>What stands in the way.</strong> The equivalence holds only in the vanishing-kinetic-term limit. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

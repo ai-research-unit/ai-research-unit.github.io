@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madelung Equations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Madelung_equations.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="madelung-equations"><strong>Madelung Equations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Madelung equations</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Madelung_equations-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Madelung_equations.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Madelung_equations.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on Madelung's hydrodynamical rewriting of the Schrödinger equation for a spinless non-relativistic particle: the wavefunction written as amplitude times phase, the resulting continuity equation and quantum Hamilton–Jacobi equation, the quantum potential that separates the flow from a classical one, and the warning that the hydrodynamical variables do not exhaust the wavefunction.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-it-is">What it is</h3>
+<p>"the Madelung equations, or the equations of quantum hydrodynamics, are Erwin Madelung's alternative formulation of the Schrödinger equation for a spinless non-relativistic particle, written in terms of hydrodynamical variables, similar to the Navier–Stokes equations of fluid dynamics."</p>
+<h3 id="the-relation-to-de-brogliebohm">The relation to de Broglie–Bohm</h3>
+<p>"The derivation of the Madelung equations is similar to the de Broglie–Bohm formulation, which represents the Schrödinger equation as a quantum Hamilton–Jacobi equation. In both cases the hydrodynamic interpretations are not equivalent to Schrödinger's" equation: the fluid picture loses the phase's multivaluedness, so a single-valued velocity field describes only part of the state space.</p>
+<h3 id="the-two-equations">The two equations</h3>
+<p>With $\psi=\sqrt{\rho}\,e^{iS/\hbar}$ one obtains a continuity equation for $\rho$ with velocity $\nabla S/m$, and a Hamilton–Jacobi equation for $S$ carrying an extra term built from the second derivative of $\sqrt{\rho}$ — the quantum potential.</p>
+<p>"Recently, the extension to the relativistic case with spin was done by having the Dirac equation written with hydrodynamic variables."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-quantum-potential-is-a-curvature-of-the-amplitude-not-a-force">1. The quantum potential is a curvature of the amplitude, not a force</h3>
+<p><strong>The idea.</strong> The extra term comes from the amplitude's second derivative and vanishes where the amplitude is constant. It is not an interaction with anything. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A test for the corpus's spin-fluid potential terms: each should be traceable to derivatives of the density, whereas the corpus sometimes presents them as forces.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code>, at the potential.</p>
+<p><strong>What stands in the way.</strong> The corpus's relativistic case has a spin density as well as a number density, so the potential splits into a density part and a spin part; the article's single term is the density part only.</p>
+<h3 id="2-the-hydrodynamic-form-is-not-a-full-description">2. The hydrodynamic form is not a full description</h3>
+<p><strong>The idea.</strong> The velocity is the gradient of a phase, so the flow is irrotational unless the phase is singular. Vorticity in a Madelung fluid comes only from nodes of the wavefunction, where the phase winds. This is a <strong>mechanism</strong>.</p>
+<p><strong>What it would add.</strong> A precise statement of what a fluid model can carry: circulation needs the spin or a singular phase, which is why a spin fluid is not optional for the Dirac case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-relativistic-quantum-space-as-a-fluid.md</code>, on vorticity.</p>
+<p><strong>What stands in the way.</strong> The corpus's fluids are relativistic and their vorticity is carried by the spin tensor, so the non-relativistic argument needs restating.</p>
+<p>This is an encyclopedia article; the substitution, the two equations, the quantum potential and the incompleteness warning are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

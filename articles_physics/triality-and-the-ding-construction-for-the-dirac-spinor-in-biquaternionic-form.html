@@ -120,7 +120,7 @@ $$
 $$
 with $\tilde B$ and $\tilde N$ real quaternions and $a_{\imath}$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_{\imath}=B_{\imath}+iN_{\imath}$ is the <strong>s-vector</strong>, the coefficient vector of $\tilde{Ξ}$ in those units. The neutral vector is timelike, $\sum_{\imath}\varepsilon_{\imath} u_{\imath} u_{\imath}=1$; in the source's frame $k=(1,0,0,0)$.</p>
 <h3 id="the-generator-operators">The Generator Operators</h3>
-<p>Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_\imath=\vec e_\imath$ and $b_0=\vec e_x$, $b_\imath=\vec e_y$. A <strong>basis operator</strong> is a pair of multipliers, acting by $Q\mapsto cQd$, and the four <strong>generator basis operators</strong> are the four maps
+<p>Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_{\imath}=\vec e_{\imath}$ and $b_0=\vec e_x$, $b_{\imath}=\vec e_y$. A <strong>basis operator</strong> is a pair of multipliers, acting by $Q\mapsto cQd$, and the four <strong>generator basis operators</strong> are the four maps
 $$
 C_{\imath}:\ Q\longmapsto i\,a_{\imath}\,Q\,b_{\imath},\qquad \imath=t,x,y,z .
 $$</p>
@@ -133,7 +133,7 @@ $$
 C_{\imath} C_{\jmath}(Q) + C_{\jmath} C_{\imath}(Q) = 2\varepsilon_{\imath}\delta_{\imath\jmath}Q ,
 $$
 which fix their normalisation once the frame is chosen.</p>
-<p>The units they use are the quaternion ones of $\mathbb{B}$: $\vec e_\imath^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ cyclically, and $\vec e_x\vec e_y\vec e_z=-e_t$. The source exhibits them by an explicit array; the relations above are the algebra's and do not depend on that choice.</p>
+<p>The units they use are the quaternion ones of $\mathbb{B}$: $\vec e_{\imath}^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ cyclically, and $\vec e_x\vec e_y\vec e_z=-e_t$. The source exhibits them by an explicit array; the relations above are the algebra's and do not depend on that choice.</p>
 <h3 id="the-ding">The Ding</h3>
 <p>An order-$\ell$ <strong>ding</strong> is an $\ell$-linear map on a product of the three spaces with values in $\mathbb{C}$, built from the generator basis operators and the neutral elements. For each order the source exhibits the map explicitly. The invariant content of the construction is its two low-order maps, which are the ones that can be contracted with the physical fields; they are the subject of the next two sections.</p>
 <h2 id="the-trilinear-form">The Trilinear Form</h2>
@@ -142,10 +142,10 @@ which fix their normalisation once the frame is chosen.</p>
 $$
 \boxed{\;\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
 \qquad
-\varepsilon(A, B, N) = 2\, A_{\imath}\, E_{\jmath\imathk\sigma}k_\sigma\, B_{\jmath} N_\imath\;},
+\varepsilon(A, B, N) = 2\, A_{\imath}\, E_{\jmath\imath k\sigma}k_\sigma\, B_{\jmath} N_{\imath}\;},
 $$
-where $E_{\imath\jmathk\rho}$ is the totally antisymmetric symbol of the four generators, defined below and normalised by $E_{0123} = 1$. The factor two is not a convention of the symbol: it is the normalisation that makes the form equal twice the determinant of the three spatial parts.</p>
-<p>The contraction with the single vector $\vec\nu_\Phi$ makes the form a determinant. In the frame $k = (1,0,0,0)$ only the spatial parts of $A$, $B$ and $N$ survive, and the determinant is a scalar part of a product of three pure quaternions, with $\vec A=\sum_{\imath\in\{x,y,z\}} A_\imath\vec e_\imath$ and likewise $\vec B$, $\vec N$:
+where $E_{\imath\jmath k\rho}$ is the totally antisymmetric symbol of the four generators, defined below and normalised by $E_{0123} = 1$. The factor two is not a convention of the symbol: it is the normalisation that makes the form equal twice the determinant of the three spatial parts.</p>
+<p>The contraction with the single vector $\vec\nu_\Phi$ makes the form a determinant. In the frame $k = (1,0,0,0)$ only the spatial parts of $A$, $B$ and $N$ survive, and the determinant is a scalar part of a product of three pure quaternions, with $\vec A=\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ and likewise $\vec B$, $\vec N$:
 $$
 \varepsilon(A,B,N) = 2\,(\vec A\times\vec B)\cdot\vec N = -2\,\mathrm{Sc}\bigl(\vec A\,\vec B\,\vec N\bigr),
 $$
@@ -160,21 +160,21 @@ C = \Bigl(\sum_{\imath} A_{\imath} u_{\imath}\Bigr)\,\mathrm{Sc}\bigl(\tilde B^2
 $$
 a derived form: the basis operator $C_{\imath}$ puts $a_{\imath}$ on the left and $b_{\imath}$ on the right, the $t$ slot collapses because $e_t$ is the unit, and the two spatial units that remain carry the field back onto $e_t$. Written on the four-index tensors the same object is
 $$
-C = A_{\imath}\,t_{\imath\jmathk}\bigl(B_{\jmath} B_\imath + N_{\jmath} N_\imath\bigr) + 2A_{\imath}\,E_{\jmath\imathk}B_{\jmath} N_\imath ,
+C = A_{\imath}\,t_{\imath\jmath k}\bigl(B_{\jmath} B_{\imath} + N_{\jmath} N_{\imath}\bigr) + 2A_{\imath}\,E_{\jmath\imath k}B_{\jmath} N_{\imath} ,
 $$
 and the three-index symbols are the four-index ones contracted with the neutral vector; they carry three indices only for brevity:
 $$
-t_{\imath\jmathk} := t_{\imath\jmathk\sigma}k_\sigma, \qquad E_{\jmath\imathk} := E_{\jmath\imathk\sigma}k_\sigma .
+t_{\imath\jmath k} := t_{\imath\jmath k\sigma}k_\sigma, \qquad E_{\jmath\imath k} := E_{\jmath\imath k\sigma}k_\sigma .
 $$</p>
 <p>The four-index tensors are read off the generators, with $\mathrm{Sc}$ as the conventions fix it,
 $$
-t_{\imath\jmathk\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\imath a_\rho)\,\mathrm{Sc}(b_\rho b_\imath b_{\jmath} b_{\imath})
-= \varepsilon_{\imath}\varepsilon_\imath\delta_{\imath\jmath}\delta_{k\rho} + \varepsilon_{\imath}\varepsilon_{\jmath}\delta_{\imath\rho}\delta_{\jmathk} - \varepsilon_{\jmath}\varepsilon_\imath\delta_{\imathk}\delta_{\jmath\rho},
+t_{\imath\jmath k\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_{\imath} a_\rho)\,\mathrm{Sc}(b_\rho b_{\imath} b_{\jmath} b_{\imath})
+= \varepsilon_{\imath}\varepsilon_{\imath}\delta_{\imath\jmath}\delta_{k\rho} + \varepsilon_{\imath}\varepsilon_{\jmath}\delta_{\imath\rho}\delta_{\jmath k} - \varepsilon_{\jmath}\varepsilon_{\imath}\delta_{\imath k}\delta_{\jmath\rho},
 $$
 $$
-E_{\imath\jmathk\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_\imath a_\rho)\,\mathrm{Sc}(b_\rho b_\imath b_{\jmath} b_{\imath}\, \vec e_z)\,.
+E_{\imath\jmath k\rho} = \mathrm{Sc}(a_{\imath} a_{\jmath} a_{\imath} a_\rho)\,\mathrm{Sc}(b_\rho b_{\imath} b_{\jmath} b_{\imath}\, \vec e_z)\,.
 $$</p>
-<p>The right multiplier of the symbol is the unit $\vec e_z$: the choice is declared here, and it is the only place in the article where a single unit is singled out. The first is symmetric under the interchange of its two index pairs, the second is totally antisymmetric with $E_{0123} = 1$, and both identities hold on every index value. The same $t$ multiplies $B_{\jmath} B_\imath$ and $N_{\jmath} N_\imath$: the two four-vectors enter the quadratic part with one coefficient and one sign, and the sign difference between the two sectors appears only in the quadratic forms of the next subsection. The last term of $C$ is the trilinear form itself, so the cubic form is the quadratic part plus $\varepsilon$.</p>
+<p>The right multiplier of the symbol is the unit $\vec e_z$: the choice is declared here, and it is the only place in the article where a single unit is singled out. The first is symmetric under the interchange of its two index pairs, the second is totally antisymmetric with $E_{0123} = 1$, and both identities hold on every index value. The same $t$ multiplies $B_{\jmath} B_{\imath}$ and $N_{\jmath} N_{\imath}$: the two four-vectors enter the quadratic part with one coefficient and one sign, and the sign difference between the two sectors appears only in the quadratic forms of the next subsection. The last term of $C$ is the trilinear form itself, so the cubic form is the quadratic part plus $\varepsilon$.</p>
 <h3 id="the-quadratic-forms">The Quadratic Forms</h3>
 <p>The two quadratic forms are read on the same basis operators, and they are the two parts of one scalar,
 $$
@@ -224,7 +224,7 @@ so $J$ lies in the group generated by $q_x$ and $q_y$: the order-three and the o
 $$
 q_x q_y q_y q_x = q_y^2 ,
 $$
-the simultaneous reversal of the two four-vectors. That word leaves the cubic form $C$ invariant term by term: $B_{\jmath} B_\imath$ and $N_{\jmath} N_\imath$ are even under $B \mapsto -B$, $N \mapsto -N$, and so is the product $B_{\jmath} N_\imath$, while $A$ is untouched. The order-four family supplies the sign reversal that the order-three family does not.</p>
+the simultaneous reversal of the two four-vectors. That word leaves the cubic form $C$ invariant term by term: $B_{\jmath} B_{\imath}$ and $N_{\jmath} N_{\imath}$ are even under $B \mapsto -B$, $N \mapsto -N$, and so is the product $B_{\jmath} N_{\imath}$, while $A$ is untouched. The order-four family supplies the sign reversal that the order-three family does not.</p>
 <p>The contrast with Cartan's case is worth naming. There the triality automorphisms have order three and the braid-group promotion appears in the <em>octonionic</em> description, through the alternative laws $x(yz) = (xy)z$ obeyed only up to sign. Here the two families coexist as stated maps on the triple, because the algebra is associative and the maps are exhibited directly.</p>
 <h2 id="what-the-ding-is-and-is-not">What the Ding Is and Is Not</h2>
 <p><strong>It is</strong> a genuine order-three symmetry of the invariant trilinear form on the triple (vector, first four-vector, second four-vector). Every identity stated above — the trilinear form and its determinant form, the cubic decomposition with its two three-index symbols, the two quadratic forms, the invariance of $\varepsilon$ under $J$, the orders of $q_x$ and $q_y$, the braid relation, the identity $q_xq_y = J^2$ and the invariance of $C$ under $q_xq_yq_yq_x$ — was recomputed on the corpus's convention and holds.</p>
@@ -265,12 +265,12 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>ding</strong> is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first four-vector space $S_1$ and the second four-vector space $S_2$, built from the four generator basis operators $C_{\imath} : Q\mapsto ia_{\imath} Qb_{\imath}$ and the timelike neutral vector $\vec\nu_\Phi$. The order-three ding is the invariant trilinear form
 $$
-\varepsilon(A,B,N) = 2\,A_{\imath}\,E_{\jmath\imathk\sigma}k_\sigma B_{\jmath} N_\imath,
+\varepsilon(A,B,N) = 2\,A_{\imath}\,E_{\jmath\imath k\sigma}k_\sigma B_{\jmath} N_{\imath},
 $$
 alternating in its three arguments and equal to twice the determinant of the three spatial parts in a frame where $k=(1,0,0,0)$; its evaluation on the field is the cubic form
 $$
 C = \Bigl(\sum_{\imath} A_{\imath} u_{\imath}\Bigr)\mathrm{Sc}\bigl(\tilde B^2+\tilde N^2\bigr) + \varepsilon(A,B,N)
-= A_{\imath} t_{\imath\jmathk}\bigl(B_{\jmath} B_\imath + N_{\jmath} N_\imath\bigr) + 2A_{\imath}\,E_{\jmath\imathk}B_{\jmath} N_\imath,
+= A_{\imath} t_{\imath\jmath k}\bigl(B_{\jmath} B_{\imath} + N_{\jmath} N_{\imath}\bigr) + 2A_{\imath}\,E_{\jmath\imath k}B_{\jmath} N_{\imath},
 $$
 with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three spaces have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$; their product is $q_xq_y = J^2$, so the order-three and the order-four moves generate one group, of order $24$, and the word $q_xq_yq_yq_x = q_y^2$ leaves the cubic form invariant — "Dirac's game".</p>
 <p>What the construction supplies is the symmetry structure of the triple; what it does not supply is a symmetry of the theory. The ding is a map between descriptions, not a transformation of the fields, and the algebra that carries it is the associative biquaternion algebra, not the octonions. Both cases are the $4$ and the $8$ of the Hurwitz list.</p>
@@ -317,7 +317,7 @@ with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-t
 </tr>
 <tr>
 <td>$a_{\imath}$, $b_{\imath}$</td>
-<td>Left and right units of the index: $a_0 = e_t$, $a_\imath = \vec e_\imath$, $b_0 = \vec e_x$, $b_\imath = \vec e_y$</td>
+<td>Left and right units of the index: $a_0 = e_t$, $a_{\imath} = \vec e_{\imath}$, $b_0 = \vec e_x$, $b_{\imath} = \vec e_y$</td>
 </tr>
 <tr>
 <td>$C_{\imath} : Q \mapsto ia_{\imath} Qb_{\imath}$</td>
@@ -332,19 +332,19 @@ with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-t
 <td>Scalar part of a biquaternion</td>
 </tr>
 <tr>
-<td>$t_{\imath\jmathk\rho}$</td>
+<td>$t_{\imath\jmath k\rho}$</td>
 <td>Four-index generator trace, symmetric under the interchange of its two index pairs</td>
 </tr>
 <tr>
-<td>$E_{\imath\jmathk\rho}$</td>
+<td>$E_{\imath\jmath k\rho}$</td>
 <td>Totally antisymmetric symbol of the generators, $E_{0123} = 1$</td>
 </tr>
 <tr>
-<td>$t_{\imath\jmathk}$, $E_{\jmath\imathk}$</td>
+<td>$t_{\imath\jmath k}$, $E_{\jmath\imath k}$</td>
 <td>The same tensors contracted with $k_\sigma$</td>
 </tr>
 <tr>
-<td>$\varepsilon(A,B,N) = 2A_{\imath}\,E_{\jmath\imathk\sigma}k_\sigma B_{\jmath} N_\imath$</td>
+<td>$\varepsilon(A,B,N) = 2A_{\imath}\,E_{\jmath\imath k\sigma}k_\sigma B_{\jmath} N_{\imath}$</td>
 <td>Order-three ding (the invariant trilinear form)</td>
 </tr>
 <tr>
@@ -367,7 +367,7 @@ with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-t
 </table></div>
 <ul>
 <li><a href="the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused">The AXF Matrices: Axis-Free, Integer Entries</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
-<li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §2, for the three spaces, the construction of the dings, the trilinear form $2A_{\imath}\,E_{\jmath\imathk\sigma}k_\sigma B_{\jmath} N_\imath$, and the order-three map; the source's own comparison with Cartan's triality is there.</li>
+<li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §2, for the three spaces, the construction of the dings, the trilinear form $2A_{\imath}\,E_{\jmath\imath k\sigma}k_\sigma B_{\jmath} N_{\imath}$, and the order-three map; the source's own comparison with Cartan's triality is there.</li>
 <li>Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), §2, for the restatement of the dings, the cubic form, the braid maps $q_x, q_y$ and "Dirac's game", and the chiral biquaternions.</li>
 <li>E. Cartan, <em>Leçons sur la théorie des spineurs</em> I, II (Hermann, Paris, 1938); English translation by R. Streater, <em>The Theory of Spinors</em> (Hermann, Paris, 1966), for the triality of $\mathrm{Spin}(8)$.</li>
 <li>C. C. Chevalley, <em>The Algebraic Theory of Spinors</em> (Columbia University Press, New York, 1954), for the neutral elements and for the triality as an outer automorphism.</li>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Standard Model and the Constituents of Leptons and Quarks — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/The standard model and the constituents of leptons and quarks 1406.1412v1.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-standard-model-and-the-constituents-of-leptons-and-quarks"><strong>The Standard Model and the Constituents of Leptons and Quarks</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1406.1412v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Walter Schmidt-Parzefall (Universität Hamburg)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 4 March 2014</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/The standard model and the constituents of leptons and quarks 1406.1412v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/The standard model and the constituents of leptons and quarks 1406.1412v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/The standard model and the constituents of leptons and quarks 1406.1412v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>States the minimal Standard Model as a set of postulates about two massless constituents per massive fermion, then derives the standard Lagrangian from those postulates. The constituents' charges happen to form an approximate $\mathrm{SU}(3)$ triplet plus a singlet, which the author reads as the origin of charge quantisation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-postulates">The postulates</h3>
+<p>"A complete set of postulates of the standard model of the electroweak interaction and mass generation is formulated and confirmed deriving the Lagrangian for the standard model. A massive fermion is formed by a right-handed and a left-handed elementary massless fermion, exchanging a scalar doublet."</p>
+<h3 id="the-doublet-and-the-singlet">The doublet and the singlet</h3>
+<p>"3 ′ (3) 2 A constituent χiL of a massive fermion is an eigenstate of T3 , represented by !" with $t_3=\pm\tfrac12$ and common hypercharge $y$; "The right-handed massless fermion singlet ψiR has U (1) symmetry and is represented by 1 + γ5 ψiR = ψi ." "i . (6) 2 A state ψiR carries zero weak isospin and the U (1) charge g′ yi . The U (1) interaction transformation for a state ψiR is according to (56)  Z  Uψ = exp − i g′ yi Bµ dxµ . (7) The two"</p>
+<h3 id="the-charge-from-the-rotation">The charge from the rotation</h3>
+<p>"The electric charge is a linear combination of the weak charge g t3 and the U (1) charge, defined as the linear combination for which both states χiL and ψiR , together forming a massive fermion ψi , are carrying the same electric charge qi . Expressing" Then
+$$q_i=\sin\theta_W\,gt_3+\cos\theta_W\,g'y=\cos\theta_W\,g'y_i,\qquad \tan\theta_W=\frac{g'y_i-g'y}{gt_3} \quad \text{(paper 10–11)}$$
+and "the elementary electric charge e is therefore e = q1 − q2 = g sin θW = g′ cos θW (14) where in addition" (paper 14), giving the compact form $q_i=e(t_3+y)=ey_i$ (paper 15).</p>
+<h3 id="the-hypercharges-read-off-the-observed-charges">The hypercharges, read off the observed charges</h3>
+<p>"From the observed electric charge qi the weak hypercharge of the constituents is 1 1 2 1 y = − , y1 = 0, y2 = −1 for leptons, y = , y1 = , y2 = − for quarks . (16) 2 6 3 3 The experimental value of the electroweak angle is [3] θW ≈ 28." (paper 16).</p>
+<h3 id="the-approximate-math14">The approximate $\mathrm{SU}(3)$</h3>
+<p>"both the left-handed and the right-handed massless fermions forming leptons closely approximate a SU (3) triplet and an uncharged singlet. An exact SU (3) symmetry would require θW = 30◦ . Since θW slowly increases with increasing momentum transfer, there exists a momentum transfer for which the SU (3) symmetry is exact. For quarks, the SU (3) symmetry is distorted" And: "For quarks, the $\mathrm{SU}(3)$ symmetry is distorted due to their hypercharge $y=\tfrac16$, [while] $\mathrm{SU}(3)$ ... requires $y=\pm\tfrac12$."</p>
+<h3 id="the-conclusion-drawn">The conclusion drawn</h3>
+<p>"Obviously, the elementary massless fermions form octets. The charges are quantised due to this symmetry."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-charge-quantisation-from-an-approximate">1. Charge quantisation from an approximate</h3>
+<p>$\mathrm{SU}(3)$ of constituents</p>
+<p><strong>The idea.</strong> The constituents' charge coordinates $(gt_3, g'y)$ lie on a hexagonal lattice when $\theta_W=30^\circ$, and the observed $\theta_W\approx28.6^\circ$ is close to that value. Charge quantisation is then a symmetry statement about a nearly exact configuration, with the deviation attributed to running. This is a <strong>mechanism</strong> for a fact the corpus records as a rule.</p>
+<p><strong>What it would add.</strong> A reason for why charges come in units of $e/3$, and a statement — $\theta_W\to30^\circ$ at some momentum — that is in principle checkable.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on charge quantisation.</p>
+<p><strong>What stands in the way.</strong> The corpus derives its charges from the $\mathrm{U}(2)$ content of its ideals, where quantisation is automatic and exact; a second route through an approximate symmetry would have to be reconciled with the exact one, and the two need not agree on why $\theta_W$ has the value it does.</p>
+<h3 id="2-the-weak-angle-as-a-running-quantity-that-passes-through-math27">2. The weak angle as a running quantity that passes through $30^\circ$</h3>
+<p><strong>The idea.</strong> $\theta_W$ is not fixed but runs, and at the momentum where it equals $30^\circ$ the constituent symmetry is exact. The angle's observed value is a low-energy snapshot.</p>
+<p><strong>What it would add.</strong> A role for the running of $\theta_W$ that the corpus's electroweak articles mention but do not use structurally.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>, on the angle and its running.</p>
+<p><strong>What stands in the way.</strong> $\theta_W$ decreases with energy in the standard treatment rather than increasing, so the direction of running asserted here would need checking against the corpus's own renormalisation.</p>
+<h3 id="3-two-constituents-one-scalar-doublet-and-the-whole-lagrangian">3. Two constituents, one scalar doublet, and the whole Lagrangian</h3>
+<p><strong>The idea.</strong> The postulates are few and local: a doublet, a singlet, a scalar doublet exchanged between them. Everything else — the covariant derivatives, the Yukawa terms, the mass generation — follows by construction, and the paper's proof is that the standard Lagrangian is recovered.</p>
+<p><strong>What it would add.</strong> A minimal axiom set for the electroweak sector, which the corpus presents through its algebra rather than through postulates.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lagrangian-and-the-electroweak-theory.md</code>, on the derivation.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus can present this as an equivalent axiomatisation and check that its own derivation reduces to the same statements.</p>
+<p>The rank is a judgement: charge quantisation first, because it is the paper's central claim; the running angle second, because it is the testable part; the axiom set third, as a presentation choice.</p>
+<p>This is a fifteen-page paper; the postulates, the constituent charges, the rotation to $A_\mu$ and $Z_\mu$, the approximate $\mathrm{SU}(3)$ of leptons and quarks, and the recovery of the standard Lagrangian are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass Rules for Baryons and Resonant States — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass Rules for Baryons and Resonant States.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mass-rules-for-baryons-and-resonant-states"><strong>Mass Rules for Baryons and Resonant States</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>29</strong> (1963) 614, No. 4; dated 25 February 1963</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Mass Rules for Baryons and Resonant States-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass Rules for Baryons and Resonant States.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Mass Rules for Baryons and Resonant States.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Generalises an earlier baryon mass formula, derived from a mechanical model of a baryon as a disc rotating in isospace, so that it covers the low-lying resonances as well. The result is a single expression in $Y$, $T$ and $J$ that reproduces every baryon and the known resonances to better than one percent, and that implies an equal-spacing rule with a spacing of $289.2$ MeV fixed by the meson masses. The whole spectrum follows from one input, the $\Lambda$ mass.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model-behind-the-formula">The model behind the formula</h3>
+<p>"n a previous notel) we gave baryon mass formula (1) which expresses the mass of baryon in terms of its internal quantum numbers (hyper- charge Y and isospin T with T2=T(T+1)) and the masses of w- and n-mesons. In this note we show that (1) can be generaliz- ed immediately so as to apply also to the low-lying baryon resonances."</p>
+<p>The derivation is mechanical: "t (1) was derived by means of a simple model in the three- dimensional isospace. 2) Namely we regard baryon as a body extending in isospace, like a disc rotating in the disc plane originally with a definite angular velocity Wo. The isospace angular momentum is the isospin T while its projection on the axis normal to the disc can be identified with Y /2. By denoting" With $I$ the isospace moment of inertia about a diameter and</p>
+<p>$$
+\tfrac32\,\kappa^{2}=m_\Lambda,\qquad I\kappa\omega_0=\tfrac{m_\pi}{2},\qquad \tfrac{\kappa^{2}}{2I}=\tfrac{m_\pi}{4},
+$$</p>
+<p>one obtains (1). "Equations (2) involve the geometrical- mean relation, mAm.= (m./2) 2. i. e. mA =(a/4)fn.=(a2/4)m.witha==Iwo/n. We then take for a the definite number a= 4." (as printed), "elation, mAm.= (m./2) 2. i. e. mA =(a/4)fn.=(a2/4)m.witha==Iwo/n. We then take for a the definite number a= 4.v'" 2. This means (3) Letters "a definite numerical relation" od agreement with observa- m(Yt) +m(Yt<em>) =mA+m(YO') . (9) tions. More precisely, starting from our fundamental mass unit, mA=1115.4 Mev These reduce the masses of Yt</em> and Yo' (the observed A mass), we are defining by to those of Yf and Yt already fixed."— the two labels are transposed in the print, the values being the $\omega$ and $\pi$ masses. </p>
+<h3 id="the-unified-formula-taking-the-resonances">The unified formula Taking the resonances</h3>
+<p>$N^{**}_{3/2}$,</p>
+<p>$Y_1^{*}$ and $\Xi^{**}_{1/2}$ to form a spin-$\tfrac32^+$ family, their masses are given by (4), and "Clearly (1) and (4) are unified into a single formula All mass values are thus", that is $$ m=\tfrac14\{m_\pi(2J+3)+m_\eta(2J-1)\}+\tfrac12 m_\pi(Y-2), $$"which reproduces masses of all baryons and the above resonances within error less than yr ?". Since those resonances satisfy $T=Y/2+1$, (4) is re-expressed as one linear expression, "which exhibits the equal-spacing rule" $$ m(B^{*}_{3/2})-m(N^{*}_{3/2})=2\big(m(Y_1^{*})-m(N_{3/2})\big)=\tfrac12m_\eta-\tfrac32 m_\pi=289.2\ \text{MeV}. $$"We here assume that the spacing between other ones, e. g. m(NN) -m(N<strong>)-= m( Y</strong>) -mA, m(Nl)+m(N*)=m(Y.i)+mA", which yields $m(Y_1^{*})$ "in good agreement with observation". For the $Y=T=0$ series $\Lambda$, $Y_1$, $Y_1^{*}$ and $Y_0^{*}$ he assumes $m(Y_1^{*})=m(Y_0^{*})+m_\pi$ and $m(Y_1^{*})+m(Y_0^{*})=m_\Lambda+m(Y_0^{*})$ (as printed), these reduce the masses of $Y_1^{*}$ and $Y_0^{*}$ to those of $Y_1$ and $Y_1^{*}$ already fixed; the $Y=\tfrac12$ states are then determined through the same relations, so "All mass values are thus determined starting (J denoting the spin) from mA alone, as given in Table 1.". </p>
+<h3 id="what-the-table-shows-and-what-it-means">What the table shows, and what it means</h3>
+<p>The table lists nine states with observed and calculated masses agreeing to a few MeV: $Y_1^{*}$ at $1385$ against $1382$, $N^{**}_{3/2}$ at $1238$ against $1237$, $\Xi^{*}$ at $1532$ against $1527$, $Y_1$ at $1405$ against $1405$, $Y_0^{*}$ at $1520$ against $1522$, $Y_1^{*}$ at $1815$ against $1811$, $N^{**}_{5/2}$ at $1512$ against $1510$, $N^{**}_{1/2}$ at $1688$ against $1689$, and a $J=\tfrac72$ candidate at $1922$ against $1916$. The interpretation offered is that "Yf)+m., (8) High-Energy Physics (CERN, 1962). 616 Letters to the Editor excitations also, since according to (5) m.,/4 means the mass quantum carried by hyper- charge or spin. Finally the sum rule (9) is a manifestation of a certain symmetry connecting different spin states. 1) T. Takabayasi, Prog." A footnote records that Matumoto and Katayama had suggested sum relations of a different kind, and that "Y,*). Some or other of those rela· tions m:ght well have been noticed by others which yields m(Yt)=mA++m."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-mass-quantum-is-shared-between-hypercharge-and-spin-so-one-formula-covers-both-multiplets-and-trajectories">1. The mass quantum is shared between hypercharge and spin, so one formula covers both multiplets and trajectories</h3>
+<p><strong>The idea.</strong> In $m=\frac14\{m_\pi(2J+3)+m_\eta(2J-1)\}+\frac12m_\pi(Y-2)$ the same two mass scales multiply $(2J)$ and $(Y-2)$. So the spacing in $J$ and the spacing in hypercharge are the same quantum seen twice, which is why a single formula covers an $SU(3)$ multiplet and a Regge trajectory at once. </p>
+<p><strong>What it would add.</strong> A reason why the two organising principles coincide. <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em> (<code>articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>) treats the multiplet as an $SU(3)$ representation in §<em>Reduction of the Octet into Isospin Multiplets</em> and the trajectory is not in its scope; here one linear form has both $J$ and $Y$ as arguments with the same coefficients' magnitude, so the coincidence is not a coincidence but a shared unit. </p>
+<p><strong>Where it lands.</strong> §<em>The Supermultiplet Mass $m_0$</em>, as the trajectory counterpart, and §<em>Open Questions</em>, where the relation between the two schemes is listed. </p>
+<p><strong>What stands in the way.</strong> The equality is arranged by choosing $a=4\sqrt2$ and the coefficients in (2); it is a fit with one dimensionless number, so the "shared unit" is an interpretation of a fitted relation. </p>
+<h3 id="2-every-mass-from-one-input">2. Every mass from one input</h3>
+<p><strong>The idea.</strong> With $m_\Lambda$ as the only input and the relation $m_\Lambda m_\pi=(m_\pi/2)^{2}$-type geometric mean fixing the auxiliary scales, nine states follow to within $6$ MeV. The spectrum is over-determined with one parameter. </p>
+<p><strong>What it would add.</strong> The strongest economy claim in the folder. <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> (<code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>) normalises at the electron and predicts the proton to $3.6\%$; Takabayasi normalises at $\Lambda$ and predicts resonances to $0.3\%$. Neither is a derivation, but the number of fitted constants differs by an order of magnitude, and that difference is worth a table. </p>
+<p><strong>Where it lands.</strong> §<em>The Spectrum</em>, as the comparison row. </p>
+<p><strong>What stands in the way.</strong> The relations (7)–(9) used to reach the higher states are assumptions of equal spacing, chosen after the states were known; the "one input" claim is true only for the family already selected. </p>
+<h3 id="3-a-mechanical-model-in-isospace-not-a-field-equation">3. A mechanical model in isospace, not a field equation</h3>
+<p><strong>The idea.</strong> The formula is derived from a rigid disc rotating in isospace, with isospin as the angular momentum and $Y/2$ as its projection on the normal — a <em>classical</em> model of an internal space, with a moment of inertia, giving a mass formula. </p>
+<p><strong>What it would add.</strong> A different kind of derivation from the ones the corpus has. <em>The Skyrme Model and the Topological Baryon in Biquaternionic Form</em> (<code>articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.md</code>) makes the baryon a soliton, hence an extended object whose mass comes from field energy; here the extension is in isospace, the dynamics is a rigid body, and the mass comes from rotational energy. Two "extended baryon" pictures with entirely different carriers, brought together, would show what each buys.</p>
+<p><strong>Where it lands.</strong> That article's discussion of the baryon's extent, as the isospace alternative.</p>
+<p><strong>What stands in the way.</strong> The disc is a heuristic: no field theory is written, and the model is used only to motivate three coefficient relations.</p>
+<p>The remainder, one line each. That the equal spacing $289.2$ MeV equals $\frac12m_\eta-\frac32m_\pi$ is a numerical identity worth checking on modern masses. That Matumoto's and Katayama's sum rules differ from these is a note on priority and belongs in the corpus's history notes, not its physics.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

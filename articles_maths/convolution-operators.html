@@ -128,8 +128,8 @@ $k*\delta=k$, and taking the Fourier transform below would give $\mathcal F k\,\
 $k\in L^1$ with $\mathcal F k\not\equiv0$, so $\mathcal F\delta\equiv1$, which is not the transform of an $L^1$
 function; the point mass at $0$ has this property but is not an $L^1$ function.</p>
 <p><strong>Example (approximate identities).</strong> A sequence $\phi_m\in L^1$ with $\int\phi_m=1$, $\lVert\phi_m\rVert_1$
-bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_m\rvert\to0$ for every $\delta>0$ satisfies
-$T_{\phi_m}f=\phi_m*f\to f$ in $L^{n}$ for $1\leq p<\infty$ and at every Lebesgue point of $f$, by
+bounded and $\int_{\lvert x\rvert&gt;\delta}\lvert\phi_m\rvert\to0$ for every $\delta&gt;0$ satisfies
+$T_{\phi_m}f=\phi_m*f\to f$ in $L^{n}$ for $1\leq p&lt;\infty$ and at every Lebesgue point of $f$, by
 <em>Fourier Analysis on Euclidean Spaces</em>; the family is an approximate identity for the algebra, though not
 an identity.</p>
 <h3 id="the-discrete-and-periodic-instances">The Discrete and Periodic Instances</h3>
@@ -180,7 +180,7 @@ $$</p>
 <p><strong>Proof.</strong> By the Plancherel theorem $\mathcal F$ is a unitary operator of $L^2$, so $T_m$ is unitarily
 equivalent to multiplication by $m$; and a multiplication operator $M_m$ on $L^2$ has norm
 $\lVert m\rVert_\infty$, the estimate $\lVert M_mf\rVert_2\leq\lVert m\rVert_\infty\lVert f\rVert_2$ being
-immediate and the reverse inequality following from the existence, for each $\epsilon>0$, of a set of
+immediate and the reverse inequality following from the existence, for each $\epsilon&gt;0$, of a set of
 positive finite measure on which $\lvert m\rvert\geq\lVert m\rVert_\infty-\epsilon$.</p>
 <p><strong>Corollary.</strong> For $k\in L^1(\mathbb R^n)$ the convolution operator is bounded on $L^2$ with
 $$
@@ -213,15 +213,15 @@ Spaces</em>.</p>
 the following, whose proof is the multiplier theorem of the Fourier article.</p>
 <p><strong>Theorem (Mihlin–Hörmander).</strong> Let $m\in C^k(\mathbb R^n\setminus\{0\})$ with
 $\lvert\partial^\alpha m(\zeta)\rvert\leq C_\alpha\lvert\zeta\rvert^{-\lvert\alpha\rvert}$ for every
-$\lvert\alpha\rvert\leq k>n/2$. Then $T_m$ is bounded on $L^{n}(\mathbb R^n)$ for every $1<p<\infty$, with
+$\lvert\alpha\rvert\leq k&gt;n/2$. Then $T_m$ is bounded on $L^{n}(\mathbb R^n)$ for every $1&lt;p&lt;\infty$, with
 $\lVert T_m\rVert_{L^{n}}\to L^{n}\leq C_{p,n}\sup_{\lvert\alpha\rvert\leq k}C_\alpha$.</p>
 <p><strong>Proof sketch.</strong> This is proved in <em>Fourier Analysis on Euclidean Spaces</em> by decomposing $m$ into pieces
 supported on dyadic annuli and realising each piece as convolution with an $L^1$ function of controlled
-norm; the cancellation of the pieces away from the origin is what limits the result to $1<p<\infty$, and
+norm; the cancellation of the pieces away from the origin is what limits the result to $1&lt;p&lt;\infty$, and
 the Hilbert and Riesz transforms show that the endpoint $p=1$ and $p=\infty$ fail in general.</p>
 <p>The theorem shows that the convolution theorem is not the only source of multipliers: the Hilbert
 transform has symbol $-i\operatorname{sgn}(\zeta)$, which is not the Fourier transform of any $L^1$ function,
-and it is bounded on $L^{n}$ for $1<p<\infty$ and of weak type $(1,1)$ but not bounded on $L^1$.</p>
+and it is bounded on $L^{n}$ for $1&lt;p&lt;\infty$ and of weak type $(1,1)$ but not bounded on $L^1$.</p>
 <h3 id="convolution-operators-and-translation-invariance">Convolution Operators and Translation Invariance</h3>
 <p><strong>Theorem (the convolution operators are the translation-invariant ones, the $L^2$ case).</strong> Let $A$ be a
 bounded operator on $L^2(\mathbb R^n)$ commuting with every translation $\tau_y$,
@@ -286,8 +286,7 @@ $\mathcal F(k*f)=\mathcal F k\,\mathcal F f$, so the multiplier of $T_k$ is $\ma
 $m\in L^\infty$, the operator $T_m=\mathcal F^{-1}(m\,\mathcal F f)$ is bounded on $L^2$ with norm
 $\lVert m\rVert_\infty$, and the convolution operators are exactly the bounded operators that commute with
 all translations. On $L^{n}$ the profile gives boundedness by Young's inequality,
-$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq
-\lVert k\rVert_1$; multipliers beyond those of $L^1$ profiles — the Hilbert and Riesz transforms among them
+$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq \lVert k\rVert_1$; multipliers beyond those of $L^1$ profiles — the Hilbert and Riesz transforms among them
 — are covered by the Mihlin–Hörmander theorem, which gives $L^{n}$ boundedness for a symbol with the
 standard differentiability and size, and fails at the endpoints. Finally, no nonzero convolution operator
 on $L^2(\mathbb R^n)$ is compact, compactness being the property of the kernels that are not translation

@@ -72,6 +72,7 @@
         <h1 id="bhabha-scattering-in-biquaternionic-form"><strong>Bhabha Scattering in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Bhabha scattering</strong> is electron–positron scattering, $e^+e^-\to e^+e^-$, in quantum electrodynamics. Homi Bhabha derived it in 1936, in <em>The scattering of positrons by electrons with exchange on Dirac's theory of the positron</em>. At the tree level it receives two contributions with a <strong>relative sign difference</strong>: the <strong>$t$-channel scattering</strong> diagram, in which the electron and positron exchange a photon, and the <strong>$s$-channel annihilation</strong> diagram, in which the pair annihilates into a photon that recreates the pair. The two diagrams interfere, and the interference term is negative. By <strong>crossing symmetry</strong>, the Bhabha amplitude is the Møller amplitude $e^-e^-\to e^-e^-$ with one particle line crossed from the initial to the final state, and the two describe the same analytic object.</p>
+<p>Every quantity in this article is written in the official SI base units: energy in joules, mass in kilograms, length in metres and time in seconds, with $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$, $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$ and $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$ at their exact values.</p>
 <p>Bhabha scattering is the workhorse of electron–positron colliders: because its small-angle cross section is large, exactly calculable and dominated by the $1/t^2$ photon propagator, it is used as the <strong>luminosity monitor</strong> of the machine. This is the counterpart of the companion article <em>Møller Scattering in Biquaternionic Form</em>, and the biquaternion interpretation is largely shared: the amplitude is a product of material-sector currents joined by the framework's photon propagator, and the two structural features the framework owns are the <strong>fermion sign</strong> — here appearing as the relative sign between exchange and annihilation — and <strong>crossing symmetry</strong>, which is the framework's charge conjugation $\mathcal C$, the real structure that pairs an element with its conjugate.</p>
 <p>The article is organised as follows. The next section sets up the kinematics, the frame basis operators and the equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five basis operators into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.</p>
 <h2 id="the-process-and-its-two-amplitudes">The Process and Its Two Amplitudes</h2>
@@ -104,7 +105,7 @@ $$</p>
 <p>The four <strong>frame basis operators</strong> that the current uses act by</p>
 <p>$$
 \Gamma_t: X\mapsto iX\vec e_x,\qquad
-\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y\quad(k=1,2,3),
+\Gamma_{\imath}: X\mapsto i\vec e_{\imath} X\vec e_y\quad(k=1,2,3),
 $$</p>
 <p>with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the basis operator that carries the split, acts by</p>
 <p>$$
@@ -113,13 +114,13 @@ $$</p>
 <p>Each frame basis operator carries exactly one factor of the central $i$, so a square spends $i^2=-1$ once, and the remaining signs come from the squares of the three spatial units:</p>
 <p>$$
 \Gamma_t^2=1,\qquad
-\Gamma_\imath^2=-1,\qquad
+\Gamma_{\imath}^2=-1,\qquad
 \Gamma_{\imath}\Gamma_{\jmath}+\Gamma_{\jmath}\Gamma_{\imath}=0\quad(\imath\neq\jmath),
 $$</p>
 <p>the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time basis operator is a right multiplication alone, the three spatial basis operators carry a factor on each side, and the fifth is a right multiplication alone; that side is what makes it a chirality, and its anticommutation with the four frame basis operators is a separate property of the list.</p>
 <p>The <strong>momentum basis operator</strong> of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame basis operators with the components as coefficients,</p>
 <p>$$
-P(p): X\mapsto p_0\,iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imath\,i\vec e_\imath X\vec e_y,
+P(p): X\mapsto p_0\,iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath}\,i\vec e_{\imath} X\vec e_y,
 $$</p>
 <p>the minus signs on the three spatial terms being those of the metric. Its square is a multiple of the identity action,</p>
 <p>$$
@@ -154,7 +155,7 @@ $$</p>
 <p>$$
 J_t(a,b):=\mathrm{Sc}\bigl(a^{*}b\bigr),
 \qquad
-J_\imath(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_\imath\,b\,\vec e_z\bigr)\quad(k=1,2,3),
+J_{\imath}(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_{\imath}\,b\,\vec e_z\bigr)\quad(k=1,2,3),
 $$</p>
 <p>with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of <em>Product and Form Conventions</em> read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-basis operator bilinears reduced to the algebra, a derived form: the central $i$ of the basis operator cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial basis operator into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.</p>
 <p>Two currents contract with the sign vector,</p>
@@ -173,7 +174,7 @@ $$</p>
 <p>$$
 \boxed{\;\mathcal M=\mathcal M_t+\mathcal M_s\;}.
 $$</p>
-<p>The first term is the <strong>scattering</strong> diagram, with coefficient $-e^2$ and denominator $t=(k-k_2)^2$; the second is the <strong>annihilation</strong> diagram, with coefficient $+e^2$ and denominator $s=(k+p)^2$. <strong>The relative sign between the two diagrams is negative.</strong> It is the sign that the fermion anticommutator supplies when the contractions are ordered: in the exchange channel the electron current is formed first and the positron current second, while in the annihilation channel the two are formed in the opposite order. The electron and positron are not identical, but every fermion field anticommutes with every other, and the antisymmetry of the mode algebra fixes the sign; equivalently, it is the Møller sign carried across by crossing, where it is the exchange sign of two identical electrons. The cross section below shows that the sign is physical: the interference term $2u^2/(st)$ is negative because $st<0$.</p>
+<p>The first term is the <strong>scattering</strong> diagram, with coefficient $-e^2$ and denominator $t=(k-k_2)^2$; the second is the <strong>annihilation</strong> diagram, with coefficient $+e^2$ and denominator $s=(k+p)^2$. <strong>The relative sign between the two diagrams is negative.</strong> It is the sign that the fermion anticommutator supplies when the contractions are ordered: in the exchange channel the electron current is formed first and the positron current second, while in the annihilation channel the two are formed in the opposite order. The electron and positron are not identical, but every fermion field anticommutes with every other, and the antisymmetry of the mode algebra fixes the sign; equivalently, it is the Møller sign carried across by crossing, where it is the exchange sign of two identical electrons. The cross section below shows that the sign is physical: the interference term $2u^2/(st)$ is negative because $st&lt;0$.</p>
 <h2 id="the-spin-sum-and-the-cross-section">The Spin Sum and the Cross Section</h2>
 <p>Averaging over the two states of each incoming particle and summing over the two of each outgoing particle costs the factor $\tfrac14$. The sum over the two states of a line is the standard completeness relation, and in the massless limit it is the momentum basis operator that expresses it: $P(p)$ is then nilpotent of rank two, so the two states of the line exhaust it. The squared amplitude is then</p>
 <p>$$
@@ -228,7 +229,7 @@ $$</p>
 \frac{d\sigma}{d(\cos\theta)}
 =\frac{\pi\alpha^2}{s}\left[u^2\left(\frac1s+\frac1t\right)^2+\left(\frac{t}{s}\right)^2+\left(\frac{s}{t}\right)^2\right].
 $$</p>
-<p>The formula is valid at collision energies well below the $Z$ mass scale, around $91\ \mathrm{GeV}$, where photon exchange dominates; above that energy the $Z$-boson contribution must be added, as in the electroweak treatment of the Møller companion. The bracket has the anatomy of the Møller case term for term — a $t$-channel square, an $s$-channel square and the interference — and the interference term $2u^2/(st)$ is negative because $st<0$.</p>
+<p>The formula is valid at collision energies well below the $Z$ mass scale, around $91\ \mathrm{GeV}$, where photon exchange dominates; above that energy the $Z$-boson contribution must be added, as in the electroweak treatment of the Møller companion. The bracket has the anatomy of the Møller case term for term — a $t$-channel square, an $s$-channel square and the interference — and the interference term $2u^2/(st)$ is negative because $st&lt;0$.</p>
 <p>At small angles $t\to0^-$ and the $1/t^2$ term dominates. Its coefficient is $s^2+u^2$, and $u\to-s$, so $s^2+u^2\to2s^2$:</p>
 <p>$$
 \boxed{\;
@@ -283,7 +284,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>The AXF Matrices: Axis-Free, Integer Entries</em>, §<em>Why the Pauli and the Gamma Displays Are Refused</em>. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\imath^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>The AXF Matrices: Axis-Free, Integer Entries</em>, §<em>Why the Pauli and the Gamma Displays Are Refused</em>. The generators carry no frame label: $\gamma_{\imath}$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_{\imath}^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.</p>
 <p>The five basis operators below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's basis operators, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$.</p>
 <p>$$
@@ -297,11 +298,11 @@ $$</p>
 <p>$$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$</p>
-<p>These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_\imath=\gamma_\imath$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.</p>
+<p>These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_{\imath}=\gamma_{\imath}$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.</p>
 <p><strong>The trace identities.</strong> In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,</p>
 <p>$$
 \{\gamma_{\imath},\gamma_{\jmath}\}=2\varepsilon_{\imath}\delta_{\imath\jmath}I_4,\qquad
-(\gamma_\imath)^2=-I_4,\qquad
+(\gamma_{\imath})^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_{\imath},\gamma_5\}=0,
 $$</p>
@@ -324,7 +325,7 @@ $$</p>
 <p>Read over $\mathbb{R}$ rather than $\mathbb{C}$, the basis operators generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the basis operators and the gammas be the same objects, and it is why no larger algebra is needed.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_{\imath}}=C_{\Pi}L_{\mathrm{pau},e_{\imath}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[u^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale, equal to $(\pi\alpha^2/s)[(s^2+u^2)/t^2+(t^2+u^2)/s^2+2u^2/(st)]$; the interference term is negative because $st<0$. At small angles the $1/t^2$ term dominates, $d\sigma/d(\cos\theta)\sim2\pi\alpha^2s/t^2$, which is why the process is the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, term for term.</p>
+<p>Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[u^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale, equal to $(\pi\alpha^2/s)[(s^2+u^2)/t^2+(t^2+u^2)/s^2+2u^2/(st)]$; the interference term is negative because $st&lt;0$. At small angles the $1/t^2$ term dominates, $d\sigma/d(\cos\theta)\sim2\pi\alpha^2s/t^2$, which is why the process is the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, term for term.</p>
 <p>In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The external states solve the one-sided chiral pair; the two-sided reading replaces the mass by a right multiplication by $-i\vec e_z$, and the frame-basis operator reading is the momentum-basis operator equation. The two structures the framework owns are the <strong>fermion sign</strong>, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and <strong>charge conjugation</strong>, the real structure $\mathcal C$ that pairs an element with its conjugate and that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation is the basis operator algebra of the frame basis operators, while the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -372,7 +373,7 @@ $$</p>
 <td>Fine-structure constant</td>
 </tr>
 <tr>
-<td>$\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_\imath: X\mapsto i\vec e_\imath X\vec e_y$</td>
+<td>$\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_{\imath}: X\mapsto i\vec e_{\imath} X\vec e_y$</td>
 <td>Four frame basis operators</td>
 </tr>
 <tr>
@@ -380,12 +381,12 @@ $$</p>
 <td>Volume basis operator of the frame</td>
 </tr>
 <tr>
-<td>$P(p): X\mapsto p_0iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_\imathi\vec e_\imath X\vec e_y$</td>
+<td>$P(p): X\mapsto p_0iX\vec e_x-\sum_{\imath\in\{x,y,z\}} p_{\imath} i\vec e_{\imath} X\vec e_y$</td>
 <td>Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$</td>
 </tr>
 <tr>
 <td>$J_{\imath}(a,b)$</td>
-<td>Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_\imath=\mathrm{Sc}(a^*\vec e_\imath b\vec e_z)$</td>
+<td>Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_{\imath}=\mathrm{Sc}(a^*\vec e_{\imath} b\vec e_z)$</td>
 </tr>
 <tr>
 <td>$J(a,b)\cdot J(c,d)$</td>

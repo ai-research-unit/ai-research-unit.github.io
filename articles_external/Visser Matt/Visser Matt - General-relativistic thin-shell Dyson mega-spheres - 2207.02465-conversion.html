@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General-relativistic thin-shell Dyson mega-spheres — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General-relativistic thin-shell Dyson mega-spheres - 2207.02465.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-relativistic-thin-shell-dyson-mega-spheres"><strong>General-relativistic thin-shell Dyson mega-spheres</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2207.02465v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Alex Simpson, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 September 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - General-relativistic thin-shell Dyson mega-spheres - 2207.02465-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General-relativistic thin-shell Dyson mega-spheres - 2207.02465.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General-relativistic thin-shell Dyson mega-spheres - 2207.02465.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors analyse a thin spherical shell enclosing a star, using the Israel–Lanczos–Sen junction conditions. They compute surface density, surface stress, energy conditions, and the quasi-local force between hemispheres. The null, weak, and strong energy conditions hold throughout the physically acceptable region, but the dominant energy condition fails when the shell is close to forming a black hole. They also show the quasi-local maximum force conjecture can be violated in a region where the dominant energy condition still holds. Nested and thick-shell variants are discussed briefly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Loosely inspired by the somewhat fanciful notion of detecting an arbitrarily advanced alien civilization, we consider a general-relativistic thin-shell Dyson mega-sphere completely enclosing a central star-like object, and perform a full general-relativistic analysis using the Israel–Lanczos–Sen junction conditions."</p>
+<h3 id="what-was-computed">What was computed</h3>
+<p>"We focus attention on the surface mass density, the surface stress, the classical energy conditions, and the quasi-local forces between hemispheres."</p>
+<h3 id="the-energy-condition-result">The energy condition result</h3>
+<p>"We find that in the physically acceptable region the NEC, WEC, and SEC are always satisfied, while the DEC can be violated if the Dyson mega-sphere is sufficiently close to forming a black hole."</p>
+<h3 id="the-force-conjecture">The force conjecture</h3>
+<p>"We also demonstrate that the original quasi-local version of the maximum force conjecture, $F\le \tfrac14 F_{\mathrm{Stoney}}=\tfrac14 F_{\mathrm{Planck}}$, can easily be violated if the Dyson mega-sphere is sufficiently compact, that is, sufficiently close to forming a black hole."</p>
+<h3 id="the-independence-of-the-two">The independence of the two</h3>
+<p>"there is a finite region of parameter space where one can violate the original quasi-local version of the maximum force conjecture without violating the DEC."</p>
+<h3 id="the-pattern-in-speculative-physics">The pattern in speculative physics</h3>
+<p>"A common theme arising in such speculative physics is the violation of some or all of the classical energy conditions, and/or violations of the original strong form of the maximum force conjecture. Such violations are not the absolute prohibition they were once thought to be, but they are certainly invitations to think deeply about the underlying physics."</p>
+<h3 id="the-result-in-brief">The result in brief</h3>
+<p>"We have seen that there are regions in parameter-space where either, both, or neither of the DEC and strong maximum quasi-local force conjecture are violated."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-force-bound-and-the-energy-conditions-are-independent">1. The force bound and the energy conditions are independent</h3>
+<p><strong>The idea.</strong> The maximum force conjecture can fail where the dominant energy condition holds.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> treats constraints as a single block. This shows two constraints are independent, so the article must check them separately rather than assuming one implies the other.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of constraints.</p>
+<p><strong>What stands in the way.</strong> The finding is for a thin shell. Ranked first, because it breaks an assumed implication.</p>
+<h3 id="2-junction-conditions-as-a-computational-tool">2. Junction conditions as a computational tool</h3>
+<p><strong>The idea.</strong> A thin shell is matched across its surface with the Israel–Lanczos–Sen conditions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> discusses surfaces but not matching. A worked matching calculation shows how to join regions, which the article needs for its constructions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on constructions.</p>
+<p><strong>What stands in the way.</strong> The shell is spherically symmetric. Ranked second.</p>
+<h3 id="3-compactness-not-exotic-matter-drives-the-violation">3. Compactness, not exotic matter, drives the violation</h3>
+<p><strong>The idea.</strong> Approaching black hole formation, rather than adding strange matter, is what breaks the conditions.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> lists obstructions as if they come from the algebra. Here the trigger is compactness, which is a geometric cause the catalogue should distinguish.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It is one model with a specific equation of state. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -89,12 +89,12 @@
 $$</p>
 <p>So the left regular representation is a $\ast$-representation for the indefinite form, exactly as it is for the positive definite one.</p>
 <p><strong>Proof.</strong> The first identity is the adjoint axiom read as an operator identity; the second is the definition of $L_{x^{\dagger}}$.</p>
-<p><strong>Proposition (the trace form).</strong> Let $\tau$ be a linear form with $\tau(xy) = \tau(yx)$, <strong>Hermitian</strong> in the sense $\tau(x^{\dagger}) = \sigma(\tau(x))$, and with $\tau(x^{\dagger}x)\in F$ non-zero for $x \neq 0$. Then $[x,y] = \tau(x^{\dagger}y)$ is a Hermitian form satisfying the adjoint axiom, and it is positive definite exactly when $\tau(x^{\dagger}x) > 0$ for $x\neq0$, that is when $\tau$ is positive in the sense of <em>Hilbert Algebras</em>. So the indefinite forms of the category are the trace forms of the non-positive traces.</p>
+<p><strong>Proposition (the trace form).</strong> Let $\tau$ be a linear form with $\tau(xy) = \tau(yx)$, <strong>Hermitian</strong> in the sense $\tau(x^{\dagger}) = \sigma(\tau(x))$, and with $\tau(x^{\dagger}x)\in F$ non-zero for $x \neq 0$. Then $[x,y] = \tau(x^{\dagger}y)$ is a Hermitian form satisfying the adjoint axiom, and it is positive definite exactly when $\tau(x^{\dagger}x) &gt; 0$ for $x\neq0$, that is when $\tau$ is positive in the sense of <em>Hilbert Algebras</em>. So the indefinite forms of the category are the trace forms of the non-positive traces.</p>
 <p><strong>Proof.</strong> The adjoint axiom is immediate, $[xy,z] = \tau(z^{\dagger}xy) = \tau((x^{\dagger}z)^{\dagger}y) = [y,x^{\dagger}z]$, and it needs only the linearity of $\tau$. Hermiticity does need the Hermitian property of $\tau$: $[y,x] = \tau(x^{\dagger}y)$ is <em>not</em> in general the conjugate of $[x,y] = \tau(y^{\dagger}x)$, and it is when $\tau(a^{\dagger}) = \sigma(\tau(a))$, since then $\sigma([x,y]) = \sigma(\tau(y^{\dagger}x)) = \tau((y^{\dagger}x)^{\dagger}) = \tau(x^{\dagger}y) = [y,x]$. The definiteness is the positivity of $\tau$.</p>
 <h2 id="the-math56-positivity-condition">The $J$-Positivity Condition</h2>
 <p><strong>Definition.</strong> A <strong>fundamental symmetry of the algebra</strong> is an $F$-linear operator $J$ on $A$ with</p>
 <p>$$
-\boxed{\;J^{2} = \mathrm{id}, \qquad [Jx,y] = [x,Jy], \qquad [Jx,x] > 0 \text{ for } x\neq0, \qquad J(x^{\dagger}) = (Jx)^{\dagger}\;},
+\boxed{\;J^{2} = \mathrm{id}, \qquad [Jx,y] = [x,Jy], \qquad [Jx,x] &gt; 0 \text{ for } x\neq0, \qquad J(x^{\dagger}) = (Jx)^{\dagger}\;},
 $$</p>
 <p>the last condition being the <strong>compatibility condition</strong>: $J$ is compatible with the involution. (The name $J$-positivity is kept for the cone of the later section, where the third and the fourth conditions are both used.)</p>
 <p><strong>Proposition (the induced positive definite form).</strong> With $J$ as above, $\langle x,y\rangle = [Jx,y]$ is a positive definite Hermitian form and it satisfies the adjoint axiom; so $(A,\dagger,\langle\cdot,\cdot\rangle)$ is a Hilbert algebra, and the indefinite form is recovered by $[x,y] = \langle Jx,y\rangle$.</p>
@@ -108,7 +108,7 @@ $$</p>
 </ol>
 <p><strong>Proof.</strong> From 1 to 2 is the previous proposition and the definition of $J$. From 2 to 1, the form $[x,y] = \langle Jx,y\rangle$ is Hermitian, non-degenerate and indefinite, and the adjoint axiom follows from the self-adjointness and the commutation with $\dagger$: $[xy,z] = \langle Jxy,z\rangle = \langle y,x^{\dagger}Jz\rangle = \langle y,Jx^{\dagger}z\rangle = [y,x^{\dagger}z]$.</p>
 <p><strong>Corollary (the definite case).</strong> A Krein algebra is a Hilbert algebra exactly when it admits the fundamental symmetry $J = \mathrm{id}$; in that case the indefinite form is positive definite and the two notions coincide.</p>
-<p><strong>Proof.</strong> $J = \mathrm{id}$ satisfies the conditions exactly when $[x,x] = \langle x,x\rangle > 0$, that is when the form is definite.</p>
+<p><strong>Proof.</strong> $J = \mathrm{id}$ satisfies the conditions exactly when $[x,x] = \langle x,x\rangle &gt; 0$, that is when the form is definite.</p>
 <p><strong>Remark (one concept once).</strong> The theorem is the reason this article does not restate the Hilbert algebra: the involution, the adjoint axiom, the trace form and the positive cone are owned by <em>Hilbert Algebras</em>, and this article adds only the indefinite form and the operator $J$ that reconciles the two.</p>
 <h2 id="the-math96-positive-cone-and-the-math97-order">The $J$-Positive Cone and the $J$-Order</h2>
 <p><strong>Definition.</strong> An element $x \in A$ is <strong>$J$-positive</strong> when $x = x^{\dagger}$ and</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="the-indefinite-algebra">The Indefinite Algebra</h3>
 <p>Let $A = \mathbb{C}^{2}$ with the pointwise product, the conjugation involution $(a,b)^{\dagger} = (\bar a,\bar b)$ and the form $[(a,b),(c,d)] = a\bar c - b\bar d$. The adjoint axiom holds, so $A$ is a Krein algebra, and the operator $J(a,b) = (a,-b)$ is a fundamental symmetry compatible with the involution.</p>
 <h3 id="the-failure-of-the-squares">The Failure of the Squares</h3>
-<p>In the same algebra let $y = (1,i)$, so $y^{\dagger}y = (1,1)$. The element $(1,1)$ is Hermitian but not $J$-positive: with $v = (0,1)$ one has $[(1,1)v,v] = [(0,1),(0,1)] = -1 < 0$. So $y^{\dagger}y\notin A_J^{+}$, and the involution does not generate the cone, the sharpest difference from <em>Hilbert Algebras</em>.</p>
+<p>In the same algebra let $y = (1,i)$, so $y^{\dagger}y = (1,1)$. The element $(1,1)$ is Hermitian but not $J$-positive: with $v = (0,1)$ one has $[(1,1)v,v] = [(0,1),(0,1)] = -1 &lt; 0$. So $y^{\dagger}y\notin A_J^{+}$, and the involution does not generate the cone, the sharpest difference from <em>Hilbert Algebras</em>.</p>
 <h3 id="the-definite-case">The Definite Case</h3>
 <p>If the form of the Krein algebra is positive definite, the fundamental symmetry $J = \mathrm{id}$ is available and the $J$-positive cone is the ordinary positive cone of <em>Hilbert Algebras</em>, generated by the squares; this is the boundary case of the theory.</p>
 <h2 id="summary">Summary</h2>

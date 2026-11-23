@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contemporary Development of Einstein&#x27;s Ideas on Space-Time and Brownian Motion — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Contemporary development of Einstein&#x27;s ideas on space-time and Brownian motion - 0512069.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="contemporary-development-of-einsteins-ideas-on-space-time-and-brownian-motion"><strong>Contemporary Development of Einstein's Ideas on Space-Time and Brownian Motion</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>physics/0512069 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 8 December 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Contemporary development of Einstein's ideas on space-time and Brownian motion - 0512069-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Contemporary development of Einstein's ideas on space-time and Brownian motion - 0512069.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Contemporary development of Einstein's ideas on space-time and Brownian motion - 0512069.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Reads the history of quantum theory as a choice between two explanations of the same fact, that single-particle experiments are irreproducible, and argues the wrong one was taken. The fact can be blamed on the particle or on the space-time. Blaming the particle requires quantum principles; blaming the space-time requires only a geometry in which free motion is stochastic. He then introduces the notion of a truncated theory -- a list of corollaries of a deeper theory, usable near the data -- and argues that nonrelativistic quantum mechanics is one, which is why extending it to relativistic phenomena fails.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-explanations-of-one-fact">Two explanations of one fact</h3>
+<p>The fact is stated first: "the beginning of the 20th century one discovered that the free particles of small mass move stochastically. The motion of free particles depends only on the space-time properties, and one needs the third modification of the space-time ge- ometry. One" Two routes follow. Either the stochasticity is a property of the space-time and $\hbar$ is a parameter of that geometry, or it is a property of particles, with a set of rules attached.</p>
+<p>Rylov's argument for the first is economy: "the first version of explanation is simpler and more logical, as far as it supposes only a change of the space-time geometry. The rest, including the principles of classical physics, remains to be unchanged. The main problem of the first version was an absence of the space-time geometry with such properties." That absence, he says, is a fact about the available conceptions of geometry, not about nature, and the purely metric conception supplies the missing geometries.</p>
+<h3 id="geometry-as-a-deformation-of-euclid">Geometry as a deformation of Euclid</h3>
+<p>The conception is stated in one sentence: "Any geometry is a totality of all geometrical objects and relations between them", and the objects are constructed by Euclidean algorithms whose only variable is the operand. That operand must determine the geometry completely, and "idean ge- ometry. Such a quantity is the world function σ = 21 ρ2 , where the quantity ρ is the distance between two points of the space [9].". The historical claim attached: "the fact that the world function is the quantity, which determines the geometry completely, became to be known only in the end of the 20th century [10, 11]."</p>
+<p>Because the algorithm does not change and only the operand does, "it is possible such a space-time geometry, where the free particle motion appears to be stochastic, although the geometry in itself remains to be deterministic."</p>
+<h3 id="the-truncated-theory">The truncated theory</h3>
+<p>The most transferable notion in the paper. A truncated theory is a list of logical corollaries of the fundamental principles, and it can be used, and taught, without them:</p>
+<ul>
+<li>It is simpler than the fundamental theory, because part of the reasoning is used in prepared form.</li>
+<li>It is "a list of prescriptions, and it is not a logical structure in such extent, as the fundamental theory is a logical structure"; the corollaries of the deeper theory appear in it as axioms.</li>
+<li>It appears first, and its advocates mistake it for the fundamental theory -- the case of axiomatic thermodynamics against Gibbs and Boltzmann, and of the Ptolemaic doctrine against Copernicus.</li>
+</ul>
+<p>Its defect is that it cannot be extended: "The main defect of the truncated theory is an impossibility of its expansion over wider circle of physical phenomena." The diagnosis follows: "The conventional nonrelativistic quantum theory is a truncated theory, which is applicable for description of nonrelativistic phenomena only." The relativistic programme then fails because it tries to join nonrelativistic principles to relativity instead of asking which of the principles were artefacts of the nonrelativistic restriction -- "without puzzling out, what in the nonrelativistic quantum theory is conditioned by principles and what is conditioned by its nonrelativistic character."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-truncated-theory-as-a-category-for-the-corpuss-own-limits">1. The truncated theory as a category for the corpus's own limits</h3>
+<p><strong>The idea.</strong> A <strong>reading</strong> with a diagnostic use: a theory that is a list of corollaries of a deeper one can be complete near the data and still fail when extended, and its axioms are the fingerprints of the restriction rather than of the world. Rylov's example is nonrelativistic quantum mechanics, whose linearity he says is a corollary of the nonrelativistic character and not a principle.</p>
+<p><strong>What it would add.</strong> The corpus measures its own boundary by parameter counts and by which constants each field carries; it does not have a category for saying that a whole framework is a truncation. This supplies one, and with it a testable question about the corpus itself: which of its axioms are statements about $\mathbb{B}$ and which are statements about the regime in which they were read.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<p><strong>What stands in the way.</strong> The category is historical and diagnostic, not mathematical: Rylov never gives a criterion for deciding whether a given axiom is a corollary of a restriction, and his own example is asserted. Applied to the corpus it would license exactly the kind of move that the corpus is careful to avoid, so it would have to be imported with a test attached, and no test is on offer.</p>
+<h3 id="2-linearity-as-a-nonrelativistic-artefact">2. Linearity as a nonrelativistic artefact</h3>
+<p><strong>The idea.</strong> The superposition principle and the linearity of the wave equation are not principles but consequences of the nonrelativistic regime, in the same way that the Galilean law of addition is a consequence of low speed.</p>
+<p><strong>What it would add.</strong> The corpus builds everything on a linear wave equation over $\mathbb{B}$ and treats the nonlinearity question separately, in its fluid articles, where the reverse Madelung map produces a nonlinear equation from a linear one. Rylov's claim would give a reason for the nonlinearity to appear at relativistic order rather than arbitrarily, and the corpus's nonrelativistic-limit articles are where such a claim could be checked, since they already expand in a small parameter.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-non-quantum-limit-of-the-biquaternion-model.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's linearity is a consequence of the algebra's left action, not of a speed regime, so an argument from the speed regime cannot touch it. And Rylov keeps a linear equation for $\psi$ -- the nonlinearity is in the fluid variables -- so his practice does not support the stronger reading of his claim.</p>
+<h3 id="3-one-parameter-for-the-geometry">3. One parameter for the geometry</h3>
+<p><strong>The idea.</strong> The function $D$ in $\sigma=\sigma_M+D(\sigma_M)$ is the whole of the deviation from Minkowski, and $\hbar$ is a parameter of that function rather than of particles. A <strong>formula</strong> that would make the quantum constant a property of space-time.</p>
+<p><strong>What it would add.</strong> The corpus carries $\hbar$ as a fixed numerical input and never asks what fixes it. A geometric origin would let it ask why the constant is universal, and would answer that directly, since the geometry is common to all particles.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> No relation between $D$ and $\hbar$ is written. The paper says the constant "is a parameter, describing the space-time properties" and stops; there is no formula, no dimensional argument, no number. Without that, the claim is a place to put the constant, not an explanation of its value.</p>
+<p>The rank: the truncated theory first, because it is the one notion here that the corpus can use about itself; linearity second, because it is falsifiable and has a place to be tested; the geometric $\hbar$ last, because nothing in the paper computes it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

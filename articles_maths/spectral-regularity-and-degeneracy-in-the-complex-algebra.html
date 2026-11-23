@@ -78,7 +78,7 @@ $$</p>
 <p>it is the norm of the layer, it is multiplicative, and it vanishes only at the origin. The <strong>square of the imaginary part</strong> is $b^2$; it carries no real term, it is not multiplicative, and it vanishes exactly on the real axis. The first decides invertibility, the second the separation of eigenvalues. This article studies the second condition and the eigenvalue problem that produces it.</p>
 <p>The eigenvalue problem is posed on the regular representation: $L_z$ is multiplication by $z$ on $\mathbb{C}\cong\mathbb{R}^2$, extended complex-linearly to $V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$. In the real basis $1,i$ its matrix is the Cayley matrix</p>
 <p>$$
-A=\begin{pmatrix}t&-b\\ b&t\end{pmatrix}=tI+bJ,\qquad J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},\qquad J^2=-I .
+A=\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}=tI+bJ,\qquad J=\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix},\qquad J^2=-I .
 $$</p>
 <p>Its characteristic polynomial is $(\lambda-t)^2+b^2$, of discriminant $-4b^2$, and its eigenvalues are $\lambda_\pm=t\pm ib$. The element is <strong>spectrally regular</strong> when $b\neq0$ and <strong>spectrally degenerate</strong> when $b=0$, that is, exactly on the real axis. Because $\mathbb{C}$ is a field, every element is semisimple: there are no defective elements, and the spectral condition is a condition on the separation of the eigenvalues only.</p>
 <p><strong>Conventions.</strong> The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The phrase <em>modulus-regular</em> means $|z|^2\neq0$. The companion articles write the same element $Q=q+iq'$ with norm $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The algebra is <em>Complex Algebra</em>, the matrix is <em>Complex Regular Element Representation</em>, and invertibility is <em>Complex Norm and Invertibility</em>.</p>
@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 L_z(1)=z=t\cdot1+b\cdot i,\qquad L_z(i)=zi=-b\cdot1+t\cdot i,
 $$</p>
-<p>so the matrix of $L_z$ is $A=\begin{pmatrix}t&-b\\ b&t\end{pmatrix}$.</p>
+<p>so the matrix of $L_z$ is $A=\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}$.</p>
 <p><em>Proof.</em> The columns of the matrix are the images of the basis vectors. The first column is $(t,b)$ and the second is $(-b,t)$, as displayed.</p>
 <p><strong>Definition (complexified representation).</strong> The <strong>complexification</strong> of $L_z$ is the complex-linear map</p>
 <p>$$
@@ -114,7 +114,7 @@ $$</p>
 <p>$$
 \lambda_\pm=t\pm ib.
 $$</p>
-<p><em>Proof.</em> The determinant of $XI-A=\begin{pmatrix}X-t&b\\ -b&X-t\end{pmatrix}$ is $(X-t)^2+b^2=X^2-2tX+t^2+b^2$. The discriminant of $X^2-2tX+(t^2+b^2)$ is $4t^2-4(t^2+b^2)=-4b^2$, and the quadratic formula gives $\lambda_\pm=t\pm\sqrt{-b^2}=t\pm ib$.</p>
+<p><em>Proof.</em> The determinant of $XI-A=\begin{pmatrix}X-t&amp;b\\ -b&amp;X-t\end{pmatrix}$ is $(X-t)^2+b^2=X^2-2tX+t^2+b^2$. The discriminant of $X^2-2tX+(t^2+b^2)$ is $4t^2-4(t^2+b^2)=-4b^2$, and the quadratic formula gives $\lambda_\pm=t\pm\sqrt{-b^2}=t\pm ib$.</p>
 <p><strong>Corollary (the criterion).</strong> For $z\in\mathbb{C}$ the following are equivalent:</p>
 <ol>
 <li>$b\neq0$;</li>
@@ -131,15 +131,15 @@ $$</p>
 \ker(A-\lambda_+I)=\mathbb{C}\,(1,-i),\qquad \ker(A-\lambda_-I)=\mathbb{C}\,(1,i).
 $$</p>
 <p>If $b=0$, the only eigenvalue is $t$ and the eigenspace is all of $V_{\mathbb{C}}$.</p>
-<p><em>Proof.</em> For $\lambda_+=t+ib$, the matrix $A-\lambda_+I=\begin{pmatrix}-ib&-b\\ b&-ib\end{pmatrix}$ has rank one, since its second row is $i$ times its first; its kernel is the line $y=-ix$, that is $\mathbb{C}(1,-i)$. For $\lambda_-$ the computation is the same with $i$ replaced by $-i$, and the kernel is $\mathbb{C}(1,i)$. If $b=0$ then $A=tI$, so every vector is an eigenvector with eigenvalue $t$.</p>
+<p><em>Proof.</em> For $\lambda_+=t+ib$, the matrix $A-\lambda_+I=\begin{pmatrix}-ib&amp;-b\\ b&amp;-ib\end{pmatrix}$ has rank one, since its second row is $i$ times its first; its kernel is the line $y=-ix$, that is $\mathbb{C}(1,-i)$. For $\lambda_-$ the computation is the same with $i$ replaced by $-i$, and the kernel is $\mathbb{C}(1,i)$. If $b=0$ then $A=tI$, so every vector is an eigenvector with eigenvalue $t$.</p>
 <p><strong>Corollary (the eigenbasis exists off the real axis).</strong> If $b\neq0$, the pair $(1,-i),(1,i)$ is a complex basis of $V_{\mathbb{C}}$ consisting of eigenvectors. Its determinant is $2i\neq0$.</p>
-<p><em>Proof.</em> The two vectors are eigenvectors for distinct eigenvalues, hence independent; explicitly $\det\begin{pmatrix}1&1\\ -i&i\end{pmatrix}=i+i=2i$.</p>
+<p><em>Proof.</em> The two vectors are eigenvectors for distinct eigenvalues, hence independent; explicitly $\det\begin{pmatrix}1&amp;1\\ -i&amp;i\end{pmatrix}=i+i=2i$.</p>
 <p><strong>Theorem (every element is semisimple).</strong> For every $z\in\mathbb{C}$, the minimal polynomial of $z$ over $\mathbb{R}$ is</p>
 <p>$$
 m_z(X)=
 \begin{cases}
-X-t, & b=0,\\
-(X-t)^2+b^2, & b\neq0,
+X-t, &amp; b=0,\\
+(X-t)^2+b^2, &amp; b\neq0,
 \end{cases}
 $$</p>
 <p>and it is squarefree. Thus $L_z^{\mathbb{C}}$ is diagonalisable and $z$ is not defective.</p>
@@ -167,10 +167,10 @@ $$</p>
 <p><em>Proof.</em> The discriminant is $-4b^2$ and the eigenvalues are $t\pm ib$; the spectral type is fixed by the vanishing of $b$. The modulus squared is $t^2+b^2$, which changes with $t$ at fixed $b$.</p>
 <p><strong>Example.</strong> The elements $1+i$ and $7+i$ are both spectrally regular, with moduli squared $2$ and $50$; the elements $3$ and $-3$ are both spectrally degenerate, with moduli squared $9$.</p>
 <p><strong>Corollary (the one-way implication).</strong> If $z$ is spectrally regular then $z$ is modulus-regular. The converse fails: the non-zero real numbers are modulus-regular and spectrally degenerate.</p>
-<p><em>Proof.</em> $b\neq0$ gives $|z|^2=t^2+b^2\geq b^2>0$. The converse fails at $z=1$, where $|z|^2=1$ and $b=0$.</p>
+<p><em>Proof.</em> $b\neq0$ gives $|z|^2=t^2+b^2\geq b^2&gt;0$. The converse fails at $z=1$, where $|z|^2=1$ and $b=0$.</p>
 <p><strong>Remark (the asymmetry).</strong> The spectral condition is blind to the real part, so it cannot see the modulus; the modulus sees both coordinates. The spectrally regular set is therefore contained in the modulus-regular set, and the inclusion is strict. The comparison is <em>Relations between the Modulus and Spectral Regularity and Degeneracy</em>, and the count of sectors is <em>The Three Sectors of the Complex Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex algebra carries two quadratic conditions. The modulus squared $|z|^2=t^2+b^2$ is multiplicative and vanishes only at the origin. The square of the imaginary part $b^2$ is not multiplicative and vanishes on the real axis. The eigenproblem of the regular representation is governed by the second: the Cayley matrix of $z=t+bi$ is $\begin{pmatrix}t&-b\\ b&t\end{pmatrix}$, its characteristic polynomial is $X^2-2tX+|z|^2=(X-t)^2+b^2$, its discriminant is $-4b^2$, and its eigenvalues are $\lambda_\pm=t\pm ib$.</p>
+<p>The complex algebra carries two quadratic conditions. The modulus squared $|z|^2=t^2+b^2$ is multiplicative and vanishes only at the origin. The square of the imaginary part $b^2$ is not multiplicative and vanishes on the real axis. The eigenproblem of the regular representation is governed by the second: the Cayley matrix of $z=t+bi$ is $\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}$, its characteristic polynomial is $X^2-2tX+|z|^2=(X-t)^2+b^2$, its discriminant is $-4b^2$, and its eigenvalues are $\lambda_\pm=t\pm ib$.</p>
 <p>The element is spectrally regular exactly when $b\neq0$, off the real axis, and spectrally degenerate exactly when $b=0$, on it. Off the axis the eigenvalues are distinct and the eigenspaces are the lines $\mathbb{C}(1,-i)$ and $\mathbb{C}(1,i)$; on the axis the operator is the scalar $tI$, the only eigenvalue is $t$, and the eigenspace is the whole complexified plane.</p>
 <p>Every element of $\mathbb{C}$ is semisimple. The minimal polynomial is $X-t$ on the real axis and $(X-t)^2+b^2$ off it, squarefree in both cases. There is no defective element and no Jordan block of size two, because the algebra is a field. The spectral condition measures the separation of the eigenvalues, not the existence of an eigenbasis. It sees only $b$, while the modulus sees both $t$ and $b$; the characteristic polynomial carries the two in its coefficients, the constant term $|z|^2$ and the discriminant $-4b^2$. Every spectrally regular element is modulus-regular, and the converse fails on the punctured real axis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -211,7 +211,7 @@ $$</p>
 <td>the complexified regular representation</td>
 </tr>
 <tr>
-<td>$A=\begin{pmatrix}t&-b\\ b&t\end{pmatrix}=tI+bJ$</td>
+<td>$A=\begin{pmatrix}t&amp;-b\\ b&amp;t\end{pmatrix}=tI+bJ$</td>
 <td>the Cayley matrix of $L_z$, $J^2=-I$</td>
 </tr>
 <tr>

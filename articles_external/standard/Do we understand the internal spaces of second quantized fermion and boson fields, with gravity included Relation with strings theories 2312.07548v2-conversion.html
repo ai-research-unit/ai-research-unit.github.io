@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do We Understand the Internal Spaces of Second Quantized Fermion and Boson Fields, with Gravity Included? Relation with Strings Theories — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Do we understand the internal spaces of second quantized fermion and boson fields, with gravity…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="do-we-understand-the-internal-spaces-of-second-quantized-fermion-and-boson-fields-with-gravity-included-relation-with-strings-theories"><strong>Do We Understand the Internal Spaces of Second Quantized Fermion and Boson Fields, with Gravity Included? Relation with Strings Theories</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2312.07548v2 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>N. S. Mankoč Borštnik</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 24 February 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Do we understand the internal spaces of second quantized fermion and boson fields, with gravity included Relation with strings theories 2312.07548v2-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Do we understand the internal spaces of second quantized fermion and boson fields, with gravity included Relation with strings theories 2312.07548v2.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Do we understand the internal spaces of second quantized fermion and boson fields, with gravity included Relation with strings theories 2312.07548v2.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that one Clifford-algebra construction describes the internal spaces of fermions and of bosons together, so long as both are taken massless. Fermion basis vectors are odd products, boson basis vectors are even products, and the counts coincide — which the author calls a supersymmetry, explicitly different from the string-theoretic one because it does not double the spectrum. The paper closes by asking whether extending to strings, or to odd-dimensional spaces, would add anything.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"The article proposes the description of internal spaces of fermion (quarks and leptons and antiquarks and antileptons) and boson (photons, weak bosons, gluons, gravitons and scalars) second quantized fields in an unique way if they all are massless. The internal spaces are described by “basis vectors” which are the superposition of odd (for fermions) and even (for bosons) products of the operators γ a . For an arbitrarily"</p>
+<h3 id="the-counts">The counts</h3>
+<p>"s. d Fermion “basis vectors” appear in 2 2 −1 irreducible representations — families — each family having d 2 2 −1 members. All" "Fermion “basis vectors” and their Hermitian conjugated partners have together 2d−1 members. d" And: "Boson “basis vectors” appear in two orthogonal groups, each of the two groups with 2 2 −1 × 2 2 −1 members have their Hermitian conjugated partners within the same group. Correspondingly"</p>
+<h3 id="the-supersymmetry-and-how-it-differs">The supersymmetry, and how it differs</h3>
+<p>"the number of fermion 'basis vectors' is equal to the number of boson 'basis vectors' manifesting a kind of supersymmetry, which differ from the one offered by string theories, requiring the doubling of so far observed fermions and bosons."</p>
+<h3 id="the-two-algebras">The two algebras</h3>
+<p>"t The article proposes the description of internal spaces of fermion (quarks and leptons and antiquarks and antileptons) and boson (photons, weak bosons, gluons, gravitons and scalars) second quantized fields in an unique way if they all are massless." They fulfil $\{\gamma^a,\gamma^b\}_+=2\eta^{ab}=\{\tilde\gamma^a,\tilde\gamma^b\}_+$, $\{\gamma^a,\tilde\gamma^b\}_+=0$.</p>
+<h3 id="odd-dimensions">Odd dimensions</h3>
+<p>"es. In odd dimensional spaces [9], d = (2n + 1), n ≥ 0, there are two different kinds of “basis vectors”: One kind behaves as they do in 2n even dimensional spaces; the second kind" "behaves completely different — the anti commuting “basis vectors” appear in two orthogonal groups, each with their Hermitian conjugated partners in their group" "The second kind offers the presence of the Fadeev-Popov ghosts [22]. 1"</p>
+<h3 id="the-dimension-the-experiments-ask-for">The dimension the experiments ask for</h3>
+<p>"e case with d = 2(2n+1), with n = 3, is what the experiments suggest d" — that is, $d=14$, which "explains all the assumptions of the Standard model, with the families included, requires the existence of right-handed neutrinos and the left-handed antineutrinos, the dark matter, predicts the fourth family to the observed three, offers the the expla- nation for the inflation after Bing Bang and explains also several cosmological observations.".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-fermions-and-bosons-as-odd-and-even-parts-of-one-algebra">1. Fermions and bosons as odd and even parts of one algebra</h3>
+<p><strong>The idea.</strong> The same generating set produces both sectors; the parity of the product decides whether the object anticommutes or commutes, so statistics is read off the grading. The counts then match automatically, and no separate bosonic construction is needed. This is a <strong>mechanism</strong>, and it is the paper's answer to its own title question.</p>
+<p><strong>What it would add.</strong> A single origin for the corpus's two field types, which its articles treat with separate algebras (bispinors for fermions, vectors for bosons).</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.md</code>, on the relation between the two field types.</p>
+<p><strong>What stands in the way.</strong> The masslessness assumption does the work; once masses are introduced the bosonic sector must acquire them by a different route, and the corpus's massive vector fields have no counterpart in the construction as stated.</p>
+<h3 id="2-a-supersymmetry-without-doubling">2. A supersymmetry without doubling</h3>
+<p><strong>The idea.</strong> String supersymmetry pairs every known particle with an unseen superpartner. Here the partner count matches by construction, so there is nothing extra to find, and the equality is between the number of basis vectors rather than between particle multiplets.</p>
+<p><strong>What it would add.</strong> A third option for the corpus's discussion of what a symmetry between fermions and bosons could mean, one with no superpartners.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, on the fermion–boson relation.</p>
+<p><strong>What stands in the way.</strong> The equality is a counting statement, not a transformation law; nothing maps a fermion basis vector onto a boson basis vector in a way that could be called a symmetry group action, and the corpus would need such a map to use the claim.</p>
+<h3 id="3-odd-dimensions-bring-ghosts-not-new-particles">3. Odd dimensions bring ghosts, not new particles</h3>
+<p><strong>The idea.</strong> Extending to odd $d$ produces a second kind of basis vector whose anticommuting members group in pairs with their own conjugates, and the second kind offers the presence of the Faddeev–Popov ghosts. The extension's price is unphysical states, not a richer spectrum.</p>
+<p><strong>What it would add.</strong> A concrete instance of the corpus's recurring problem — that enlarging the algebra enlarges the unphysical sector — stated with an identification of what the extra states are.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.md</code>, on where ghosts come from.</p>
+<p><strong>What stands in the way.</strong> The corpus fixes gauges by the standard procedure; here the ghosts appear as basis vectors of an odd-dimensional internal space, a different origin that would have to be reconciled or kept separate.</p>
+<p>This is a twenty-eight page paper; the odd/even basis vectors, the family counting, the two-algebra supersymmetry, the odd-dimensional case and the $d=14$ phenomenology are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmodynamics: energy conditions, Hubble bounds, density bounds, time and distance bounds — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmodynamics - Energy conditions, Hubble bounds, density bounds, time and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cosmodynamics-energy-conditions-hubble-bounds-density-bounds-time-and-distance-bounds"><strong>Cosmodynamics: energy conditions, Hubble bounds, density bounds, time and distance bounds</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0712.1619v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Céline Cattoën, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 December 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Cosmodynamics - Energy conditions, Hubble bounds, density bounds, time and distance bounds - 0712.1619-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmodynamics - Energy conditions, Hubble bounds, density bounds, time and distance bounds - 0712.1619.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Cosmodynamics - Energy conditions, Hubble bounds, density bounds, time and distance bounds - 0712.1619.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper extends a programme of deriving cosmological bounds from the classical energy conditions. It obtains bounds on the Hubble parameter, the density parameter, the density, the lookback time, and several cosmological distances, each of the form $X(z)\gtrless X_0f(\Omega_0,z)$, where the present-day value and a dimensionless function set the limit. The derivation uses only the energy conditions and the FLRW geometry, so the bounds hold for any dark-energy model that satisfies the conditions. The authors sketch how to compare the bounds with supernova data but do not carry out the analysis.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"We refine and extend a programme initi[ated in Phys. Rev. Lett. 276 (1997) 88 and Phys. Rev. D56 (1997) 7578] advoc[ating the use of the energy] conditions of general relativity in a cosmo[logical setting to place bounds] on various cosmological parameters."</p>
+<h3 id="what-is-bounded">What is bounded</h3>
+<p>"We show how to bound the Hubble parameter $H(z)$, Omega parameter [$\Omega(z)$], d[ensity $\rho(z)$], and lookback time $T(z)$ as (relativel[y simple functions of] the present-day Hubble parameter $H_0$, and [we] present these results with related observations i[n] the recent supernova data."</p>
+<h3 id="the-general-form">The general form</h3>
+<p>"the bounds which have all taken the form"</p>
+<p>$$X(z)\gtrless X_{\mathrm{bound}}\equiv X_0\,f(\Omega_0,z),$$</p>
+<p>"where $X(z)$ is some cosmological parameter, $X_0$ is its present-day value, and $f(\Omega_0,z)$ is a dimensionless function depending on the particular bound under consideration."</p>
+<h3 id="the-scope">The scope</h3>
+<p>"Overall, we have now managed to place bounds of the above form on the Hubble parameter, the Omega parameter, the density, the lookback time, and various cosmological distances — where for simplicity of presentation we have focussed on Peebles' angular diameter distance as being representative."</p>
+<h3 id="the-honest-limit">The honest limit</h3>
+<p>"We have briefly sketched how to use these bounds to confront the supernova data, but have not yet performed any detailed analysis of this point."</p>
+<h3 id="on-the-derivations">On the derivations</h3>
+<p>"While most of the bounds we have considered can be derived by 'elementary' means, in at least two cases the integrals (and other algebraic manipulations) were sufficiently tricky that common symbolic manipulation programmes required considerable human intervention in order to obtain useful results."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-bounds-without-a-model">1. Bounds without a model</h3>
+<p><strong>The idea.</strong> The energy conditions alone give bounds on cosmological observables, with no assumption about what the dark energy is.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code> cannot specify a source and therefore cannot compute an expansion history. This paper shows that a bound does not need one: a class of sources satisfying a condition yields a bound on $H(z)$. The article could state what the framework predicts in the form of a region rather than a curve.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>, in the classification of obstacles.</p>
+<p><strong>What stands in the way.</strong> The framework cannot even state the energy conditions internally, so the bound cannot be derived inside it. Ranked first, because it is the closest thing to a cosmological prediction the article could make.</p>
+<h3 id="2-inequalities-are-cheaper-than-solutions">2. Inequalities are cheaper than solutions</h3>
+<p><strong>The idea.</strong> One inequality in place of one equation yields a family of allowed histories instead of one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> records that the algebra yields no differential equations. Inequalities are not differential equations either, but they are weaker and can sometimes be obtained from algebraic positivity alone. That is a possible route past the entry, and the catalogue should record it as untried.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on dynamics.</p>
+<p><strong>What stands in the way.</strong> The positivity needed is an energy condition, which the algebra does not supply either. Ranked second.</p>
+<h3 id="3-a-worked-derivation-of-a-bound">3. A worked derivation of a bound</h3>
+<p><strong>The idea.</strong> The bounds are elementary but two of the integrals were hard enough to need help.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> could cite this as an example of a result whose difficulty is technical rather than conceptual, which is a category it does not currently distinguish.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of scope.</p>
+<p><strong>What stands in the way.</strong> It is a remark about effort, not about content. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

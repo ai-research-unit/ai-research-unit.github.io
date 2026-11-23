@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic combination of non-collinear 3-velocities using quaternions — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Relativistic combination of non-collinear 3-velocities using quaternions -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-combination-of-non-collinear-3-velocities-using-quaternions"><strong>Relativistic combination of non-collinear 3-velocities using quaternions</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2002.10659v2 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas Berry, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 13 March 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Relativistic combination of non-collinear 3-velocities using quaternions - 2002.10659-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Relativistic combination of non-collinear 3-velocities using quaternions - 2002.10659.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-wigner-angle-of-two-boosts.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Relativistic combination of non-collinear 3-velocities using quaternions - 2002.10659.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Adding two relativistic velocities at an angle is messy in vector notation. The authors use half-velocities and treat them as quaternions. The composition then becomes a simple product with an inverse. The same formula gives the Wigner angle, which is the rotation that appears when two boosts do not commute. They check the case of three velocities as well.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-history">The history</h3>
+<p>"Quaternions have an (over a century-old) extensive and quite complicated interaction with special relativity."</p>
+<h3 id="the-hope">The hope</h3>
+<p>"Since quaternions are intrinsically 4-dimensional, and do such a good job of handling 3-dimensional rotations, the hope has always been that the use of quaternions would simplify some of the algebra of the Lorentz transformations."</p>
+<h3 id="the-result">The result</h3>
+<p>"Herein we report a relatively nice result for the relativistic combination of non-collinear 3-velocities."</p>
+<h3 id="the-variables">The variables</h3>
+<p>"If we work with the relativistic half-velocities $w$ defined by $v=\frac{2w}{1+w^2}$, and promote them to quaternions using $\mathbf{w}=w\,\hat{n}$"</p>
+<h3 id="the-formula">The formula</h3>
+<p>$$w_{1\oplus2}=w_1\oplus w_2=(1-w_1w_2)^{-1}(w_1+w_2)=(w_1+w_2)(1-w_2w_1)^{-1} \qquad (paper\ 5.1)$$</p>
+<h3 id="the-wigner-angle">The Wigner angle</h3>
+<p>$$e^{\Omega}=e^{\Omega\hat{\Omega}}=(1-w_1w_2)^{-1}(1-w_2w_1) \qquad (paper\ 5.2)$$</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-half-velocities-compose-simply">1. Half-velocities compose simply</h3>
+<p><strong>The idea.</strong> Using $w=\tanh(\chi/2)$ turns composition into a product.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-wigner-angle-of-two-boosts.md</code> computes the angle from boost matrices. The quaternion product gives the same result in fewer steps.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-wigner-angle-of-two-boosts.md</code>, in the derivation.</p>
+<p><strong>What stands in the way.</strong> The method assumes one spatial dimension of rotation. Ranked first, because it is the same result by a shorter route.</p>
+<h3 id="2-quaternions-for-boosts">2. Quaternions for boosts</h3>
+<p><strong>The idea.</strong> Quaternions can carry boosts, not just rotations.</p>
+<p><strong>What it would add.</strong> <code>articles_maths/biquaternion-rotations-and-lorentz-transformations.md</code> sets out the group action. This supplies the explicit composition law for two boosts.</p>
+<p><strong>Where it lands.</strong> <code>articles_maths/biquaternion-rotations-and-lorentz-transformations.md</code>, in the discussion of boosts.</p>
+<p><strong>What stands in the way.</strong> The target may already contain it. Ranked second.</p>
+<h3 id="3-non-commutativity-made-visible">3. Non-commutativity made visible</h3>
+<p><strong>The idea.</strong> The order of factors in the product encodes the Wigner rotation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-informational-reading-of-the-wigner-angle.md</code> treats the angle as information. An algebraic expression makes the accounting exact.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-informational-reading-of-the-wigner-angle.md</code>, in the discussion of the angle.</p>
+<p><strong>What stands in the way.</strong> The reading is interpretive. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

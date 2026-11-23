@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative Localization of Gravitational Fields — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Relative localization of gravitational fields - 1107.5894.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relative-localization-of-gravitational-fields"><strong>Relative Localization of Gravitational Fields</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1107.5894 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 29 July 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>5 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Relative localization of gravitational fields - 1107.5894-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Relative localization of gravitational fields - 1107.5894.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Relative localization of gravitational fields - 1107.5894.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Solves a small, precise problem: how to localise a gravitational field without violating the equivalence principle, which forbids a frame-independent value at a point. The answer is to localise it relative to a chosen point where the field vanishes, using the difference between the connection of the curved space and the connection of the tangent flat space at that point. That difference is a tensor, it vanishes when the two points coincide, and it yields an energy-momentum that is a genuine vector rather than a pseudotensor. A five-page paper with a real result.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-stated-exactly">The problem, stated exactly</h3>
+<p>"According to the Einstein's theory of gravitation the gravitational forces manifest themselves only in the curvature of space-time." Hence "It may interpreted as impossibility of the gravitational field localization. Thus, from viewpoint of the equivalence principle it is useless to ask, whether there is a gravitational field at the given point without respect to anything."</p>
+<p>Then the move: "However, there is a sense to ask about a value of gravitational field at the point $x$ relative the value of the gravitational field at the point $x'$." And the constraint: "A valuable property of such a localization is the fact, that it does not contradict to the equivalence principle."</p>
+<h3 id="the-construction">The construction</h3>
+<p>The device is geodesic mapping onto the tangent flat space, and then the difference of connections,</p>
+<p>$$Q^{\alpha}{}_{\beta\gamma}=\gamma^{\alpha}{}_{\beta\gamma}-\Gamma^{\alpha}{}_{\beta\gamma},$$</p>
+<p>of which he says: "ect to the point x′ . The con- dition Qαβγ = 0 is the necessary and sufficient condition of the space V4 Euclideness. The quantity Qαβγ is a tensor and besides  α  Qβγ = 0 (2) Here and later on the squared bracket mean, that on sets x = x′ .". The vanishing at coincidence is the equivalence principle in invariant form: "The condition (2) means an invariant formulation of the equivalence principle. Indeed, the gravitation field can made to vanish at an arbitrary point $x$. It is sufficient to chose the basic point $x'=x$."</p>
+<p>The price is stated plainly: "a compatibility of the equivalence principle with idea of transition from the Riemannian space to the Euclidean one is achieved by introduction of continuum of Euclidean spaces depending on the basic point coordinates."</p>
+<h3 id="what-it-buys">What it buys</h3>
+<p>The energy-momentum: "e energy-momentum tensor (16) is a true tensor, which in the coordinate system Galilean in Ex′ is equal numerically to the pseudotensor of Einstein. For" Then the conservation law and the vector: the quantity $P_{\beta'}$ "x dSα ′ ′ (15) Σ does not depend on the surface Σ and it is a vector at the point x′ . Here Σ is an infinite spacelike hypersurface."</p>
+<p>Comparison with the literature: "This expression distinguishes from expressions obtained by other authors" in one respect: "by other authors [2, 3, 4, 5] in the relation, that Θαβ is a true tensor, which turns to the conventional canonical energy-momentum tensor in the case of a flat space-time. Let us introduce a tensor Pβ." For the static field the vector has the form $P_{0'}=E=\frac{4\pi\alpha}{\kappa}e^{\nu(0)}=me^{\nu(0)}$, so the energy is the gravitating mass times the redshift factor. Against Möller: "Our result distinguishes from the Möller result in the fact, that Pβ ′ is a vector. Thus, even"</p>
+<h3 id="the-claim">The claim</h3>
+<p>"Thus, even the relative localization of the gravitational field put the gravitational field in equal position with other fields. It admits one to introduce conserving relative quantities: energy, momentum and angular momentum."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-localising-a-field-that-the-equivalence-principle-forbids-localising">1. Localising a field that the equivalence principle forbids localising</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: a field can have no frame-independent value at a point and still have a frame-independent value relative to another point, and the difference of connections supplies exactly that object — a tensor, vanishing at coincidence, transforming correctly.</p>
+<p><strong>What it would add.</strong> The corpus's curved-spacetime article concludes that curvature cannot reside in the algebra and that nothing in the algebra determines the connection. This paper's object is a connection difference, precisely a tensorial quantity built from two connections, and it is the sort of thing the corpus could form from its frame field without adding dynamics. It would give the article a concrete local object where it currently has only the frame.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The construction needs a second point, so every local statement becomes two-point, and the corpus's algebra is pointwise by its own account. Importing it means giving up the pointwise character that the curved-spacetime article identifies as the framework's boundary.</p>
+<h3 id="2-gravitational-energy-as-a-vector-not-a-pseudotensor">2. Gravitational energy as a vector, not a pseudotensor</h3>
+<p><strong>The idea.</strong> A <strong>result</strong> with a diagnostic: with two-point structure, the energy-momentum of matter plus field is a vector at the base point, numerically equal to Einstein's pseudotensor in the Galilean frame there, and it reduces to Möller's value when the source is small.</p>
+<p><strong>What it would add.</strong> The corpus's electro-gravimagnetic article records a stress pseudotensor in its source and does not ask whether a tensor version exists. This paper answers that question in a different framework, and the answer has a shape: make the object two-point and the pseudotensor problem dissolves. That is a transferable lesson even if the construction is not adopted.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code>.</p>
+<p><strong>What stands in the way.</strong> The price is again the base point: the vector depends on $x'$, so "the" energy of a system is a family of vectors, one per choice of base. The paper does not discuss whether physically distinct base points give different answers for a bound system.</p>
+<h3 id="3-energy-equal-to-gravitating-mass-up-to-the-redshift-factor">3. Energy equal to gravitating mass up to the redshift factor</h3>
+<p><strong>The idea.</strong> A <strong>number</strong>: for a static centrally symmetric field, $P_{0'}=E=\frac{4\pi\alpha}{\kappa}e^{\nu(0)}=me^{\nu(0)}$, with $\alpha$ the gravitational radius. Energy and gravitating mass coincide up to $e^{\nu(0)}$.</p>
+<p><strong>What it would add.</strong> The corpus's black-hole article treats mass as the horizon's thermodynamic variable and works with the first law. An identity tying the field's total energy to the gravitating mass times a redshift factor is the kind of statement that article's Euler relations assume rather than derive. It would let the corpus state where its mass parameter comes from, at least in the static case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result is for the static spherically symmetric case only, and $\alpha$ is defined by an integral of $t_{00}$ over the source, so the identity is closer to a definition than to a dynamical theorem.</p>
+<p>The rank: the connection-difference construction first, because it is usable; the vector-valued energy second, because it is a real result; the redshift identity last, because it is nearly a definition.</p>
+<p>The remaining items in one line each: the Lagrangian quadratic in $Q$, whose variation reproduces Einstein's equations with no extra terms; the observation that the flat-space connection varies only under coordinate transformations, which is what makes the variational principle work; and the acknowledgement to Terletsky and Gordeev, which dates the calculation to the Moscow gravity school of the 1960s.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

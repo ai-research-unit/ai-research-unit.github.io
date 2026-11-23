@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Sitter Algebra Associated with the Poincaré Group and Center-of-Inertia — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - De Sitter Algebra Associated with the Poincare Group and Center-of-Inertia.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="de-sitter-algebra-associated-with-the-poincare-group-and-center-of-inertia"><strong>De Sitter Algebra Associated with the Poincaré Group and Center-of-Inertia</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>36</strong> (1966) 1074, No. 5; dated 26 August 1966</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - De Sitter Algebra Associated with the Poincare Group and Center-of-Inertia-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - De Sitter Algebra Associated with the Poincare Group and Center-of-Inertia.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - De Sitter Algebra Associated with the Poincare Group and Center-of-Inertia.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that a particular combination of the Poincaré generators — a translation built with the boost operators and the mass — closes with the Lorentz rotation operators into a de Sitter algebra, in which the mass plays the role of inverse curvature, and that the same operator is the proper centre-of-inertia. The resulting algebra is $0(4,1)$ when the mass-squared spectrum is positive and $0(3,2)$ when it is negative, and its two Casimirs reduce to the mass and the spin magnitude. The note's sharp corollary is that the centre-of-inertia coordinates do not commute.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-combined-operator">The combined operator</h3>
+<p>Owing to relativistic invariance every system has $P_{\mu}$ and $M_{\mu\nu}$ as Poincaré generators, with $N_i=\tilde N_i-P_ix_0$ and $\tilde N_i$ time-independent. He points out "spectrum. If ble fact that the operator of the combined I/M 2 II&lt;O, (M.., r.) span 0(3, 2).) Then translation-Lorentz"</p>
+<p>$$
+R_{\mu}=\tfrac{1}{2M^{2}}\{P^{\nu},M_{\nu\mu}\}
+$$</p>
+<p>forms, together with the Lorentz rotation operator $M_{\mu\nu}$, a de Sitter algebra, and that this quantity $R_{\mu}$ is directly related to the proper center-of-mass. The defining relation is</p>
+<p>$$
+[R_{\mu},R_{\nu}]=iM^{2}M_{\mu\nu},
+\qquad
+[R_{\mu},M_{\nu\lambda}]=i\delta_{\mu[\nu}R_{\lambda]},
+$$</p>
+<p>with $M^{2}=-P_{\mu}^{2}$, "t relation [M• ., R.] =iiJ,[.R,J, that the runs from 1 to 4, and Po= P4/i, M; = set of quantities (M• ., R.) .forms a de (1/2)eu,M;k&gt; and N. =Mu/i are hermitian. Sitter algebra,**' where the mass M plays Thus (1) is rewritten as [N;, P;] =iiJuPo, the role of the inverse curvature. Indeed, [Nk&gt; Pol =iF."; setting $M_{a5}=-M_{5a}=r_a=R_a/M$ unifies these into $[M_{ab},M_{cd}]$ of $0(4,1)$. If $|1/M^{2}|&lt;0$, $(M_{\mu\nu},r_{\mu})$ span $0(3,2)$. In contrast to the Pauli–Wigner pseudovector $W_{\mu}$, which is translation-invariant, $R_{\mu}$ obeys $[P_{\mu},R_{\nu}]=-i\theta_{\mu\nu}$ with $\theta_{\mu\nu}=M^{2}\delta_{\mu\nu}+P_{\mu}P_{\nu}$.</p>
+<p>He notes that "nd that also considered the quantity defined by (3), but this quantity R. is directly related to the obtained the erroneous relation [R." — the non-vanishing commutator is the point.</p>
+<h3 id="the-casimirs-and-the-class-of-representations">The Casimirs, and the class of representations</h3>
+<p>A five-vector $h_a=\frac{1}{8}\epsilon_{abcde}M^{bc}M^{de}$ is formed, with $h_5=\frac{1}{2}W_{\mu}R^{\mu}$ and the $h_a$ satisfy $M_{ab}h^{b}=-2i\hbar h_a$ and $[M_{bc},h_a]=i\hbar\delta_{a[b}h_{c]}$, so $h_5$ is a Lorentz invariant while $H_0=M_kR_k$ is invariant under the $0(4)$ subgroup. "The two Casimir operators of $0(4,1)$" reduce, "If one_ recalls that originally R" is defined served ", to $$ C_{1}=M^{2},\qquad C_{2}=W^{2}, $$" resentation of the Poincare Df the system as· a whole. Thus in prac- group, as well as for a model with an tice only a particular class of irreducible internal structure ", the restriction coming from $P_{\mu}R^{\mu}=0$. </p>
+<h3 id="the-centre-of-inertia-because">The centre-of-inertia Because</h3>
+<p>$R_0=\frac{1}{2}\{V_k,R_k\}$ with $V_i=P_i/P_0$, $R_{\mu}$ carries three independent quantities, and one may use $r_i=R_i/M^{2}$ instead, which satisfies canonical commutation relations. Writing $r_i=q_i-(P_i/P_0)x_0$ with $q_i$ time-independent,"o. Since r;is made up of the basic Poincare generators only, it· is a con- If one_ recalls that originally R" is defined served quantity, and accordingly " " epresents the and also proper center-of-mass, or say the center- of-inertia.6) As is already known their H "= ~ {P"' hs}, Hff=!" And: " nown their H "= ~ {P"' hs}, Hff=! Wff-M 2h~. different components do not commute ex- cept for spin zero case:. [q;, q;] = [h r;] (11) = (i/M 2 P~)e;;~ Wk. Then C1. and C2 of (9) are reduced 'to." (as printed).</p>
+<p>The claim of generality is explicit: "the above theory is quite general and is valid for each ele- mentary system corresponding to the ir- i.e. the magnitude of spin Wff/M 2 =J(J+1) reducible representation of the Poincare Df the system as· a whole. Thus" "ated to the re- equally valid for a field-theory model, where striction ( 4).", where the generators are stress-tensor integrals and the conservation of $W_{\mu}$, $R_{\mu}$, $h_a$ becomes differential conservation laws.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-translation-is-a-rotation-once-the-mass-sets-the-curvature">1. Translation <em>is</em> a rotation, once the mass sets the curvature</h3>
+<p><strong>The idea.</strong> The combination $R_{\mu}=\frac{1}{2M^{2}}\{P^{\nu},M_{\nu\mu}\}$ — a translation weighted by the boosts and divided by the mass — closes with $M_{\mu\nu}$ on a de Sitter algebra whose curvature is $M^{2}$. Translation and rotation are not two kinds of generator here: they are one algebra, contracted to the Poincaré algebra as $M\to0$.</p>
+<p><strong>What it would add.</strong> An answer to the corpus's own open question. <em>The Poincaré Group and the Biquaternion Frame</em> (<code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code>) has §<em>Translation Is Not a Rotation</em> and §<em>Translation as a Rotation: The Open Question</em>, and treats the semidirect structure as the obstacle. Takabayasi's operator is a translation, built from the very translations and boosts that fail to close; adjoining it closes them, and the closing constant is the mass. The corpus's question is thus answered in the affirmative for any system with $M^{2}\neq0$.</p>
+<p><strong>Where it lands.</strong> §<em>Translation as a Rotation: The Open Question</em>, as the resolution, and §<em>The Semidirect Structure</em>, as the caveat that the closure is not in the Poincaré algebra itself.</p>
+<p><strong>What stands in the way.</strong> The de Sitter algebra is not the algebra of the frame: $R_{\mu}$ is quadratic in the generators, and the construction needs the mass as a dimensionful constant, so it is a statement about a <em>system's</em> algebra and not about the algebra of bivectors. The corpus would have to accept a quadratic generator, which its bivector basis does not supply. Ranked first: it is the only place in this folder where the corpus's declared open question is answered.</p>
+<h3 id="2-the-centre-of-inertia-coordinates-do-not-commute-and-the-failure-is-the-spin">2. The centre-of-inertia coordinates do not commute, and the failure is the spin</h3>
+<p><strong>The idea.</strong> $q_i$, the proper centre-of-mass, satisfies $[q_i,q_j]=\frac{i}{M^{2}P_0}\epsilon_{ijk}W_k$ (as printed): the three coordinates of the centre fail to commute, the failure being proportional to the spin pseudovector and vanishing only for spin zero.</p>
+<p><strong>What it would add.</strong> A non-commutativity with a physical origin. <em>Zitterbewegung in Biquaternionic Form</em> (<code>articles_physics/zitterbewegung-in-biquaternionic-form.md</code>) derives the trembling from the offset between the position and the mean position; here the <em>same</em> offset makes the mean position's coordinates non-commuting, which is a sharper statement than the existence of a trembling. The corpus's non-commutative-geometry material acquires a worked example whose scale is $1/M^{2}$.</p>
+<p><strong>Where it lands.</strong> The zitterbewegung article's §<em>The Mean Position</em>, as the algebraic consequence.</p>
+<p><strong>What stands in the way.</strong> The relation is quoted (as printed) with the ordering of $P_0$ unspecific, and the derivation is not given here; it must be recomputed before it is used as a formula.</p>
+<h3 id="3-the-sign-of-the-mass-squared-spectrum-chooses-the-real-form-math60-or-math61">3. The sign of the mass-squared spectrum chooses the real form: $0(4,1)$ or $0(3,2)$</h3>
+<p><strong>The idea.</strong> With $M^{2}&gt;0$ the generators $(M_{\mu\nu},R_{\mu}/M)$ span $0(4,1)$; with $M^{2}&lt;0$ they span $0(3,2)$. The signature of the de Sitter algebra is the sign of the mass spectrum, and $0(4,1)\to$ Poincaré as $M^{2}\to0$.</p>
+<p><strong>What it would add.</strong> A link between a sign in the spectrum and the real form of an algebra, which is the kind of statement the corpus makes about its own norms. <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>) distinguishes two masses by the conjugates they are paired with; here the distinction shows up as the real form of a ten-dimensional algebra, which is a different and checkable diagnostic.</p>
+<p><strong>Where it lands.</strong> That article's §<em>The Two Conjugates and the Two Masses</em>, as the algebra-level signature test.</p>
+<p><strong>What stands in the way.</strong> Takabayasi states the alternative in a parenthesis and works out only the positive case, so the $0(3,2)$ side is a claim without a construction.</p>
+<p>The remainder, one line each. That only a particular class of $0(4,1)$ representations is realised, because $P_{\mu}R^{\mu}=0$ restricts the Casimirs to $(M^{2},W^{2})$, is a selection rule worth one sentence in the Poincaré article's representation section. That the same construction runs on stress-tensor integrals in field theory, with the conservation of $R_{\mu}$ becoming a differential law, is the classical counterpart and belongs with the corpus's conservation-law articles.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

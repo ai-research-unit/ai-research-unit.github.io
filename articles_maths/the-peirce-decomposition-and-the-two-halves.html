@@ -97,17 +97,17 @@ $$</p>
 <h2 id="a-symmetric-idempotent-and-its-corners">A Symmetric Idempotent and Its Corners</h2>
 <p><strong>In blocks the two halving operations are visible at once.</strong> Write a matrix in the two blocks of $E$:</p>
 <p>$$
-X=\begin{pmatrix}A&B\\ C&D\end{pmatrix},\qquad A\in M_r,\ D\in M_s,\ B\in M_{r\times s},\ C\in M_{s\times r}.
+X=\begin{pmatrix}A&amp;B\\ C&amp;D\end{pmatrix},\qquad A\in M_r,\ D\in M_s,\ B\in M_{r\times s},\ C\in M_{s\times r}.
 $$</p>
 <p>The transpose acts by $A\mapsto A^{\mathsf T}$, $D\mapsto D^{\mathsf T}$ and $B\leftrightarrow C^{\mathsf T}$, and the Peirce projection to the corners reads off the four blocks. So the fixed space of the transpose consists of the symmetric $A$, the symmetric $D$ and the pairs $C=B^{\mathsf T}$, and the anti-fixed space consists of the antisymmetric $A$, the antisymmetric $D$ and the pairs $C=-B^{\mathsf T}$.</p>
-<p><strong>Each diagonal corner splits into the symmetric and the antisymmetric matrices of its size.</strong> Since $C_{++}=\{\begin{pmatrix}A&0\\0&0\end{pmatrix}\}\cong M_r$ and the transpose acts as the transpose of $A$,</p>
+<p><strong>Each diagonal corner splits into the symmetric and the antisymmetric matrices of its size.</strong> Since $C_{++}=\{\begin{pmatrix}A&amp;0\\0&amp;0\end{pmatrix}\}\cong M_r$ and the transpose acts as the transpose of $A$,</p>
 <p>$$
 \dim\big(C_{++}\cap\operatorname{Sym}_n\big)=\frac{r(r+1)}{2},\qquad \dim\big(C_{++}\cap\operatorname{Skew}_n\big)=\frac{r(r-1)}{2},
 $$</p>
 <p>and the same with $s$ for $C_{--}$. The two dimensions add to $r^{2}$, and at $r=1$ the second is zero: the one-dimensional corner $C_{++}$ is spanned by the idempotent, which is symmetric.</p>
-<p><strong>The two mixed corners are exchanged by the transpose, and their sum splits evenly.</strong> Since $C_{+-}=\{\begin{pmatrix}0&B\\0&0\end{pmatrix}\}$ and $C_{-+}=\{\begin{pmatrix}0&0\\ C&0\end{pmatrix}\}$ with $C=B^{\mathsf T}$ under the transpose,</p>
+<p><strong>The two mixed corners are exchanged by the transpose, and their sum splits evenly.</strong> Since $C_{+-}=\{\begin{pmatrix}0&amp;B\\0&amp;0\end{pmatrix}\}$ and $C_{-+}=\{\begin{pmatrix}0&amp;0\\ C&amp;0\end{pmatrix}\}$ with $C=B^{\mathsf T}$ under the transpose,</p>
 <p>$$
-\big(C_{+-}\oplus C_{-+}\big)\cap\operatorname{Sym}_n=\Big\{\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\Big\},\qquad \big(C_{+-}\oplus C_{-+}\big)\cap\operatorname{Skew}_n=\Big\{\begin{pmatrix}0&B\\-B^{\mathsf T}&0\end{pmatrix}\Big\},
+\big(C_{+-}\oplus C_{-+}\big)\cap\operatorname{Sym}_n=\Big\{\begin{pmatrix}0&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix}\Big\},\qquad \big(C_{+-}\oplus C_{-+}\big)\cap\operatorname{Skew}_n=\Big\{\begin{pmatrix}0&amp;B\\-B^{\mathsf T}&amp;0\end{pmatrix}\Big\},
 $$</p>
 <p>both of dimension $rs$. So the mixed part of the algebra splits into two halves of equal dimension, one symmetric and one antisymmetric, and neither is a corner.</p>
 <p><strong>The mixed symmetric part is the Jordan middle space.</strong> The symmetric mixed elements are exactly the space $J_{1/2}$ of <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em>, of dimension $rs$. So the Jordan decomposition of the symmetric half is the collection of the symmetric parts of the four corners, with the two mixed corners merged, and the antisymmetric half has no Jordan structure at all.</p>

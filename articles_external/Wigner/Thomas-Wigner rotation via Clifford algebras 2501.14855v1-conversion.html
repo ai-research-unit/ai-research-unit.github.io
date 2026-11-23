@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas-Wigner Rotation via Clifford Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Thomas-Wigner rotation via Clifford algebras 2501.14855v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="thomas-wigner-rotation-via-clifford-algebras"><strong>Thomas-Wigner Rotation via Clifford Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2501.14855v1 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Piotr T. Chruściel, Helmuth Urbantke</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 24 January 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>23 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Thomas-Wigner rotation via Clifford algebras 2501.14855v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Thomas-Wigner rotation via Clifford algebras 2501.14855v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Thomas-Wigner rotation via Clifford algebras 2501.14855v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proves Macfarlane's closed formula for the Thomas–Wigner angle with Clifford-algebra methods, in a presentation aimed at students who know special relativity and no Clifford algebra. The rotation is defined as a closed loop of three boosts — $u$ to $v$ to $w$ and back to $u$ — and the paper shows that this loop is a rotation in the spacelike plane orthogonal to $u$. The proof goes through reflections, since each boost is a product of two reflections and the parity of the reflection count decides whether a product is a rotation or a boost.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-aim">The aim</h3>
+<p>"We derive Macfarlane's formula for the Thomas-Wigner angle of rotation using Clifford-algebra methods. The presentation is elementary and pedagogical, suitable for students with some basic knowledge of special relativity; no prior knowledge of Clifford algebras is required."</p>
+<p>More precisely: "The aim of these notes is to provide a self-sufficient and relatively concise derivation of the angle, as well as the direction of the axis, of the Thomas-Wigner rotation." The lineage is declared: the presentation "essentially coincides with Section III of [5]", with the calculations expanded for a few lectures.</p>
+<h3 id="the-object">The object</h3>
+<p>The paper composes a round trip rather than a single pair:</p>
+<p>$$R:=B(u,w)B(w,v)B(v,u).$$</p>
+<p>"Silberstein [3] (see also Thomas [4] and Wigner [6]) pointed out that $R$ is a nontrivial rotation in a spacelike hyperplane orthogonal to $u$."</p>
+<p>Why it must be: "By definition $R$ is a Lorentz transformation that maps $u$ to $u$, and is proper, and is thus a rotation in the hyperplane orthogonal to $u$." And the localisation: "It follows that the interesting action takes place in the three dimensional space Span{u, v, w}", because $R$ is the identity on the codimension-three orthogonal complement.</p>
+<h3 id="the-formula">The formula</h3>
+<p>With three unit timelike vectors and $\gamma_{uv}=-\eta(u,v)$, $\gamma_{uw}=-\eta(u,w)$, $\gamma_{vw}=-\eta(v,w)$, the angle satisfies</p>
+<p>$$\cos\psi=\frac{(1+\gamma_{uv}+\gamma_{uw}+\gamma_{vw})^{2}}{(1+\gamma_{uv})(1+\gamma_{uw})(1+\gamma_{vw})}-1 .$$</p>
+<p>The formula is symmetric in the three vectors, which is the point: the loop's rotation depends on the three pairwise $\gamma$'s and on nothing else.</p>
+<h3 id="the-method">The method</h3>
+<p>The reflection: "Given a vector u such that η(u, u) 6= 0 (thus, u 6=" "consider the linear map Su from V to V defined as Su (v) = v − 2 η(u, v) u."</p>
+<p>$$S_u(v)=v-2\frac{\eta(u,v)}{\eta(u,u)}u .$$</p>
+<p>The paper notes that $S_u$ "is a Lorentz transformation which is an orthogonal reflection with respect to the plane orthogonal to $u$", and builds boosts from pairs of reflections.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-closed-loop-of-boosts-is-a-rotation">1. A closed loop of boosts is a rotation</h3>
+<p><strong>The idea.</strong> A <strong>definition</strong>: the Thomas–Wigner rotation is best defined not as the leftover of two boosts but as the holonomy of a closed triangle of three boosts, $R=B(u,w)B(w,v)B(v,u)$. The two-boost statement is the special case obtained by cutting the triangle.</p>
+<p><strong>What it would add.</strong> The corpus defines the effect as the rotation factor in a product of two boosts and derives its angle from that product. The triangle definition makes two things obvious that the product definition hides: the result is a rotation (because it fixes $u$), and it depends on three velocities symmetrically. It also matches the corpus's Cartan decomposition, where a transformation fixing a timelike vector is exactly a rotation, so the definition would slot into the existing structure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/composition-of-two-boosts-the-commutator-table-and-non-additivity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The three-boost loop needs three frames, and the corpus's examples use two; the generalisation costs a notational layer that the two-boost derivation does not need.</p>
+<h3 id="2-macfarlanes-formula-is-manifestly-cyclic">2. Macfarlane's formula is manifestly cyclic</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: $\cos\psi$ is a symmetric function of the three pairwise $\gamma$ factors. No angle between the boost directions appears, and the cyclic symmetry is exact rather than accidental.</p>
+<p><strong>What it would add.</strong> The corpus's Thomas–Wigner angle is written with the angle between the two boost directions and the two rapidities — the standard parametrisation. Macfarlane's form shows that this is a choice: the invariant content is the three $\gamma$'s, and the angle between directions is one way of packaging them. For a corpus that repeatedly rewrites one result in several algebras, this is a rewriting worth having, and it makes the two-boost formula look like a projection of a symmetric object.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-thomas-precession.md</code>.</p>
+<p><strong>What stands in the way.</strong> The formula needs a third velocity even when only two boosts are composed, so applying it to the corpus's two-boost case requires inventing a closing boost; and the expression is not simpler than the standard one for computation.</p>
+<h3 id="3-reflections-generate-the-classification">3. Reflections generate the classification</h3>
+<p><strong>The idea.</strong> A <strong>method</strong>: every Lorentz transformation is a product of reflections, and the number of reflections modulo two decides whether the result is a rotation or a boost. Boosts are two reflections; rotations are also two reflections in spacelike planes; the difference is the type of plane.</p>
+<p><strong>What it would add.</strong> The corpus's Cartan decomposition states that a general transformation is a boost times a rotation and proves it by construction. The reflection count gives a proof by parity that is independent of the construction and immediately explains why the product of two boosts can be a boost times a rotation but never a pure boost in general. It is the kind of structural argument the corpus's representation articles use elsewhere.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.md</code>.</p>
+<p><strong>What stands in the way.</strong> The reflection treatment lives naturally in a Clifford algebra, and the corpus's biquaternion formalism would have to encode reflections as anti-involutions, which is a nontrivial translation.</p>
+<p>The rank: the loop definition first, because it changes what the object is; Macfarlane's formula second, because it is an alternative closed form; the reflection parity last, because it is a proof technique the corpus may not need.</p>
+<p>The remaining items in one line each: the exact statement that the angle's sign depends on the orientation convention for the basis, which is a warning that the "direction of the axis" is convention-bound; the reduction to three dimensions, which shows the whole problem is effectively 2+1-dimensional; and the attribution of the formula to Macfarlane's 1962 paper on the restricted Lorentz group, with Urbantke's 1990 American Journal of Physics article as the intermediate source.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

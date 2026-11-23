@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding the Second Quantization of Fermions in Clifford and in Grassmann Space — Part II — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="understanding-the-second-quantization-of-fermions-in-clifford-and-in-grassmann-space-part-ii"><strong>Understanding the Second Quantization of Fermions in Clifford and in Grassmann Space — Part II</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2007.03516v4 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>N. S. Mankoč Borštnik, H. B. F. Nielsen</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 15 December 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>New way of second quantization of fermions, Part II</td>
+</tr>
+<tr>
+<td>length</td>
+<td>46 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part II 2007.03516v4-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part II 2007.03516v4.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-second-quantisation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/standard/Understanding the second quantization of fermions in Clifford and in Grassmann space -- New way of second quantization of fermions, Part II 2007.03516v4.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Repeats the construction of Part I with the Clifford algebra instead of the Grassmann algebra, obtaining half-integer spin and, crucially, families. The step that produces families is a reduction of the Clifford degrees of freedom by a factor of two, which the paper shows leaves the anticommutation relations untouched and simultaneously removes the integer-spin branch of Part I.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-extension">The extension</h3>
+<p>"We present in Part II the description of the internal degrees of freedom of fermions by the superposition of odd products of the Clifford" "which determine with their oddness the anticommuting properties of the creation and annihilation operators of the second quantized"</p>
+<h3 id="the-two-independent-algebras">The two independent algebras</h3>
+<p>There are namely two kinds of the Clifford algebra objects, $\gamma^a=(\theta^a+\partial_{\theta^a})$ and $\tilde\gamma^a=i(\theta^a-\partial_{\theta^a})$, which anticommute, $\{\gamma^a,\tilde\gamma^a\}_+=0$ ($\{\gamma^a,\gamma^b\}_+=2\eta^{ab}=\{\tilde\gamma^a,\tilde\gamma^b\}_+$), and offer correspondingly two kinds of independent representations. Each kind is organised by its own Lorentz generators $S^{ab}=\frac{i}{4}(\gamma^a\gamma^b-\gamma^b\gamma^a)$ and $\tilde S^{ab}=\frac{i}{4}(\tilde\gamma^a\tilde\gamma^b-\tilde\gamma^b\tilde\gamma^a)$.</p>
+<h3 id="the-reduction-that-produces-families">The reduction that produces families</h3>
+<p>"reduction of the Clifford algebras for the factor of two leaves the anticommutation relations of Eqs." "unchanged, enabling the appearance of family quantum numbers. The Clifford fermions carry half integer spins, families and charges in fundamental representations, Eq. (5)." And: "the reduction of Clifford space causes the reduction also in Grassmann space, what leads to the disappearance of integer spin fermions."</p>
+<h3 id="the-result-claimed">The result claimed</h3>
+<p>"Anticommutation relations are not postulated, as it is in the Dirac case, they follow from the oddness of the Clifford objects, and correspondingly explain the second postulates of Dirac."</p>
+<h3 id="the-difference-from-dirac-located-precisely">The difference from Dirac, located precisely</h3>
+<p>"the basic differences between these two descriptions is on the level of the single particle creation operators: While the odd Clifford algebra offers the creation and annihilation operators, which fulfill the anticommutation [relations]". The Dirac operators are a different set, not a relabelling.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-families-from-a-doubling-reduction">1. Families from a doubling reduction</h3>
+<p><strong>The idea.</strong> Two Clifford algebras $\gamma^a$ and $\tilde\gamma^a$ give two commuting sets of Lorentz generators. Halving the degrees of freedom keeps the anticommutator but leaves a second set of quantum numbers, and those quantum numbers are the family labels. Three generations are then not a repetition of the same structure but a second index on it. This is a <strong>mechanism</strong> for families, and it is the paper's central claim.</p>
+<p><strong>What it would add.</strong> An explanation of why there is more than one generation, which the corpus records as an unexplained input in its parameter list.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the generations.</p>
+<p><strong>What stands in the way.</strong> The construction gives $2^{d/2-1}$ families, which is three only for a specific $d$; the corpus's algebra has one generation structure per field, and adding a second commuting set would double its state space.</p>
+<h3 id="2-a-second-clifford-algebra-as-the-family-carrier">2. A second Clifford algebra as the family carrier</h3>
+<p><strong>The idea.</strong> Families are generated by operators $\tilde S^{ab}$ that commute with the spin operators $S^{ab}$, so a state is labelled by both. The two sets are independent representations of the same Lorentz group.</p>
+<p><strong>What it would add.</strong> A concrete structure for what the corpus calls the generation index, currently a label with no operator behind it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, on the labels.</p>
+<p><strong>What stands in the way.</strong> Two commuting copies of the Lorentz algebra inside the corpus's framework would have to be found explicitly; if they are not there, the mechanism has no home.</p>
+<h3 id="3-the-integer-spin-sector-is-removed-by-the-same-step">3. The integer-spin sector is removed by the same step</h3>
+<p><strong>The idea.</strong> Part I's integer-spin fermions are not excluded by an argument about observation; they vanish when the Clifford space is reduced for the family construction. One step does two jobs.</p>
+<p><strong>What it would add.</strong> An economical explanation of why only half-integer fermions appear, replacing a selection rule with a consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, on which spins are allowed.</p>
+<p><strong>What stands in the way.</strong> The cancellation is a feature of the $d\ge5$ construction; the corpus would need the same reduction in its own dimension.</p>
+<p>This is a forty-six page paper; the two Clifford algebras, the two sets of Lorentz generators, the halving reduction, the family quantum numbers and the comparison with Dirac's operators are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

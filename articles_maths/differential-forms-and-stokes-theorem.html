@@ -89,9 +89,9 @@ $$</p>
 <p>is the <strong>algebra of differential forms</strong>, a graded-commutative algebra under the wedge product.</p>
 <p><strong>Proposition.</strong> In a chart $(Ζ, x_1, \ldots, x_n)$, every $k$-form on $Ζ$ has a unique expression</p>
 <p>$$
-\omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx_{i_1} \wedge \cdots \wedge dx_{i_k}
+\omega = \sum_{i_1 &lt; i_2 &lt; \cdots &lt; i_k} \omega_{i_1\cdots i_k}\, dx_{i_1} \wedge \cdots \wedge dx_{i_k}
 $$</p>
-<p>with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(Ζ)$, and the $dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $Ζ$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of <strong>top forms</strong>.</p>
+<p>with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(Ζ)$, and the $dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $Ζ$. Consequently $\Omega^k(M) = 0$ for $k &gt; n$ and $\Omega^n(M)$ is the module of <strong>top forms</strong>.</p>
 <p><strong>Proof.</strong> The cotangent bundle is locally trivial with fibre $\mathbb{R}^n$, and the exterior power of a free module of rank $n$ has the stated basis; the sections are smooth precisely when the coefficients are.</p>
 <h3 id="smooth-sections-and-the-module-structure">Smooth Sections and the Module Structure</h3>
 <p><strong>Proposition.</strong> $\Omega^\bullet(M)$ is a module over $C^\infty(M)$ and a graded-commutative algebra over $\mathbb{R}$; the wedge product is associative, unital, and satisfies $\alpha \wedge \beta = (-1)^{pq}\beta\wedge\alpha$ for $\alpha$ of degree $p$ and $\beta$ of degree $q$.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p>$$
 d\Bigl(\sum_{I} \omega_I\, dx_I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x_j}\, dx_j \wedge dx_I,
 $$</p>
-<p>where $dx_I = dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ for $I = (i_1 < \cdots < i_k)$.</p>
+<p>where $dx_I = dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ for $I = (i_1 &lt; \cdots &lt; i_k)$.</p>
 <p><strong>Theorem.</strong> The operator $d$ is well defined, that is, the expression above is independent of the choice of chart, and it is characterised on $\Omega^k(M)$ by</p>
 <p><strong>(a)</strong> $d(\alpha + \beta) = d\alpha + d\beta$ and $d(c\alpha) = c\, d\alpha$ for $c \in \mathbb{R}$;</p>
 <p><strong>(b)</strong> $d(\alpha \wedge \beta) = d\alpha \wedge \beta + (-1)^{k}\, \alpha \wedge d\beta$ for $\alpha \in \Omega^k(M)$;</p>
@@ -160,7 +160,7 @@ $$</p>
 <p><strong>Corollary.</strong> The de Rham cohomology of a contractible manifold is $\mathbb{R}$ in degree $0$ and zero in positive degrees. In particular the de Rham complex computes a homotopy invariant of the manifold, not merely a differential-geometric one.</p>
 <h2 id="integration-of-forms">Integration of Forms</h2>
 <h3 id="orientation-and-the-integral-of-a-top-form">Orientation and the Integral of a Top Form</h3>
-<p><strong>Definition.</strong> An <strong>orientation</strong> of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) > 0$.</p>
+<p><strong>Definition.</strong> An <strong>orientation</strong> of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) &gt; 0$.</p>
 <p><strong>Definition.</strong> Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx_1\wedge\cdots\wedge dx_n$ in a positively oriented chart $(Ζ, x)$, and define the <strong>integral</strong> of $\omega$ over $Ζ$ to be the ordinary integral $\int_{x(Ζ)} f\, dx_1\cdots dx_n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.</p>
 <p><strong>Theorem (change of variables).</strong> The integral is well defined, and if $F : N \to M$ is an orientation-preserving diffeomorphism between oriented $n$-manifolds, then</p>
 <p>$$
@@ -273,7 +273,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega^\bullet(M) = \bigoplus_k\Omega^k(M)$</td>
-<td>Graded-commutative algebra of forms; $\Omega^k = 0$ for $k > n$</td>
+<td>Graded-commutative algebra of forms; $\Omega^k = 0$ for $k &gt; n$</td>
 </tr>
 <tr>
 <td>$\alpha \wedge \beta = (-1)^{pq}\beta\wedge\alpha$</td>

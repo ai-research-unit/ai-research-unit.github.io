@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holographic Stirling engines and the route to Carnot efficiency — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Stirling engines and the route to Carnot efficiency - 2604.15790.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="holographic-stirling-engines-and-the-route-to-carnot-efficiency"><strong>Holographic Stirling engines and the route to Carnot efficiency</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2604.15790v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nikesh Lilani, Manus R. Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 August 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>46 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Holographic Stirling engines and the route to Carnot efficiency - 2604.15790-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Stirling engines and the route to Carnot efficiency - 2604.15790.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Holographic Stirling engines and the route to Carnot efficiency - 2604.15790.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Computes the efficiency of the reversible Stirling engine, with and without regeneration, for a broad class of working substances: Van der Waals fluids, quantum ideal gases (Bose and Fermi), Bose–Einstein condensates, thermal conformal field theories, and holographic CFTs. Regeneration is internal heat recycling, and the paper identifies a general sufficient condition for a regenerative Stirling cycle to reach Carnot efficiency: at fixed conserved charges, the fixed-volume heat capacity must be independent of volume. Classical ideal gases and Van der Waals fluids satisfy it; quantum ideal gases and CFTs violate it. For thermal CFT states dual to AdS–Schwarzschild and AdS–Reissner–Nordström black holes the efficiency is computed exactly, and in the fixed-potential ensemble both regenerative and non-regenerative efficiencies approach Carnot in the large-potential limit, with regeneration reducing the leading deviation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-theorem">The theorem</h3>
+<p>"For regenerative Stirling cycles, we identify a general sufficient condition for attaining Carnot efficiency: at fixed conserved charges, the fixed-volume heat capacity is independent of volume. This ensures that, at each temperature along the isochores, the heat released during cooling equals the heat absorbed during heating. An ideal regenerator can therefore store and return this heat reversibly, returning to its initial thermodynamic state with no net change in energy or entropy."</p>
+<h3 id="what-satisfies-it">What satisfies it</h3>
+<p>"While this condition is satisfied for classical ideal gases and Van der Waals fluids, it is violated for quantum ideal gases and CFT working substances." The dividing line is classicality of the equation of state, not the presence or absence of interactions.</p>
+<h3 id="why-regeneration-helps-and-how-much">Why regeneration helps, and how much</h3>
+<p>"Regeneration acts as an internal heat recycling mechanism that enhances efficiency by reducing the net heat exchange with external reservoirs." For the holographic cases, "In the fixed-potential ensemble, both the regenerative and non-regenerative efficiencies approach the Carnot value in the large-potential limit. Regeneration reduces the leading deviation from the Carnot value, although both efficiencies have corrections of the same asymptotic order."</p>
+<h3 id="what-this-means-for-holography">What this means for holography</h3>
+<p>Carnot efficiency is reached asymptotically, not exactly, and the approach is through a limit in which the potential grows. Holographic systems therefore do not saturate the bound at finite coupling or finite potential; they approach it.</p>
+<h3 id="the-contrast-with-the-earlier-engine-paper">The contrast with the earlier engine paper</h3>
+<p>The previous heat-engine paper computed the Stirling efficiency for a generic CFT in the high-temperature or large-volume regime and derived an exact expression for the AdS–Schwarzschild case. This paper generalises the substance class and adds regeneration, with the theorem as the organising result.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-sufficient-condition-stated-as-a-heat-capacity-identity">1. A sufficient condition stated as a heat-capacity identity</h3>
+<p><strong>The idea.</strong> The route to Carnot for a regenerative cycle is exactly the statement that $C_V$ at fixed charges does not depend on $V$. This is a <strong>mechanism</strong> expressed as an identity between response functions, not as an inequality.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation laws from a single identity. Here is a second case where one identity — $C_V$ independent of $V$ — decides a physical question completely. The parallel is direct and worth stating in that article: identities of this shape are load-bearing, not decorative.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no $C_V$ and no volume. But the <em>form</em> of the argument — one identity as a sufficient condition — transfers.</p>
+<h3 id="2-classical-and-quantum-substances-fall-on-opposite-sides-of-a-condition">2. Classical and quantum substances fall on opposite sides of a condition</h3>
+<p><strong>The idea.</strong> The condition for Carnot efficiency holds for classical ideal gases and Van der Waals fluids, and fails for quantum ideal gases and CFTs. Quantumness, not interaction, is the dividing line.</p>
+<p><strong>What it would add.</strong> A clean dichotomy with a stated criterion. The corpus's <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would benefit from an example of a dichotomy that is <em>not</em> about algebra — it shows how a single identity separates two families of systems.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing blocks the import. Ranked second.</p>
+<h3 id="3-bounds-are-approached-not-saturated">3. Bounds are approached, not saturated</h3>
+<p><strong>The idea.</strong> Holographic working substances reach Carnot only in a limit, with corrections of a definite order, and regeneration lowers the coefficient without changing the order.</p>
+<p><strong>What it would add.</strong> The corpus's <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks for predictions that could be wrong. "Approaches the bound with corrections of order $X$, and regeneration changes the coefficient but not the order" is a falsifiable shape, and it is more informative than "saturates the bound".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no engine and no bound to approach. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

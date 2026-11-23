@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Do Elementary Particles Have Such Strange Mass Ratios? The Role of Quantum Gravity at Low Energies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Singh/Singh - Why do elementary particles have such strange mass ratios - The role of quantum gravity at…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-do-elementary-particles-have-such-strange-mass-ratios-the-role-of-quantum-gravity-at-low-energies"><strong>Why Do Elementary Particles Have Such Strange Mass Ratios? The Role of Quantum Gravity at Low Energies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2209.03205v1 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tejinder P. Singh</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 August 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Singh/Singh - Why do elementary particles have such strange mass ratios - The role of quantum gravity at low energies - 2209.03205-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Singh/Singh - Why do elementary particles have such strange mass ratios - The role of quantum gravity at low energies - 2209.03205.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Singh/Singh - Why do elementary particles have such strange mass ratios - The role of quantum gravity at low energies - 2209.03205.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Argues that the fermion mass ratios are a low-energy quantum gravitational effect, so that looking for them in high-energy unification is looking in the wrong place. Quantum gravity here means the quantisation of the point structure of spacetime, not of the gravitational field, and it applies whenever every subsystem has action of order $\hbar$ — which is always, in a universe not dominated by classical bodies. Replacing the real coordinates by octonions then constrains what a fermion can be, and the constraints produce three generations, quantised charge, and the observed mass ratios.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-thesis">The thesis</h3>
+<p>"When gravity is quantum, the point structure of space-time should be replaced by a noncommutative geometry."</p>
+<p>"this implies mass quantisation, a derivation of the low energy fine structure constant and of mass ratios of quarks and charged leptons."</p>
+<h3 id="what-quantum-gravity-means-here">What quantum gravity means here</h3>
+<p>"quantum gravity is quantisation not only of the gravitational field, but also of the point structure of space-time."</p>
+<p>"Since the energy scale is not a relevant criterion for deciding whether gravity is classical or quantum, we propose that a gravitational field is quantum in nature when one or more of the following three (energy independent) criteria are satisfied".</p>
+<p>"If (iii) holds but (i) and (ii) do not, we have quantum gravity in the infra-red."</p>
+<h3 id="the-method">The method</h3>
+<p>"using the octonions as spacetime coordinates, we construct a pre-spacetime, pre-quantum Lagrangian dynamics. We show that the symmetries of this non-commutative space unify the standard model of particle physics" $SU(2)_R$ "chiral gravity."</p>
+<p>"The algebra of the octonionic space yields spinor states which can be identified with three generations of quarks and leptons."</p>
+<h3 id="the-twistorial-route">The twistorial route</h3>
+<p>"suppose one were to take the latter square root as well; then one arrives at a spinor description of spacetime, i.e. Penrose's twistor space."</p>
+<p>"octonion-valued twistor space is equivalent to 10D spacetime because SL(2, O) is the double cover of SO(9, 1)." $SL(2,\mathbb{O})$ "is the double cover of" $SO(9,1)$.</p>
+<h3 id="the-revised-string-theory">The revised string theory</h3>
+<p>"Indeed, the theory we arrive at is a revised string theory without the troublesome non-uniqueness problem of compactification, and the fundamental entities are 2-branes with an area of the order of Planck area."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-mass-ratios-are-an-infrared-effect">1. Mass ratios are an infrared effect</h3>
+<p><strong>The idea.</strong> A <strong>relocation</strong>: the ratio $m_\mu/m_e\approx 206$ is usually assigned to high-energy physics — a unification scale, a flavour symmetry, a landscape. This says the number is fixed at low energy by the quantum structure of spacetime, and that no high-energy experiment is needed to explain it.</p>
+<p><strong>What it would add.</strong> The corpus's mass articles treat masses as inputs, and any attempt to derive them assumes a high-scale mechanism. This says the mechanism is at the scale of the electron, which is testable in principle and which makes the failure to find flavour physics at colliders unsurprising. It is the kind of reframing that changes what counts as evidence, and the corpus has no competing claim of this kind.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim rests on the derivations in the programme's other papers; this article is an overview and does not itself compute a ratio.</p>
+<h3 id="2-taking-the-square-root-of-spacetime-as-well-as-of-the-wave-equation">2. Taking the square root of spacetime as well as of the wave equation</h3>
+<p><strong>The idea.</strong> A <strong>construction</strong>: Dirac took the square root of the Klein–Gordon operator and got spinors. Take the square root of the spacetime coordinates too, and the coordinates become spinorial — twistor space. Then replace the complex numbers by quaternions or octonions, and the arena becomes six- or ten-dimensional.</p>
+<p><strong>What it would add.</strong> The corpus's twistor articles use twistors as a representation of conformal geometry. This makes the twistor construction a step in a sequence of division algebras, with quaternions giving six dimensions and octonions ten, so the choice of arena is a choice of number system. That is a compact organising principle, and it explains why $SL(2,\mathbb{H})$ and $SL(2,\mathbb{O})$ keep appearing in the corpus's kinematics.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/congruence-twistors-and-the-fields-they-generate.md</code>.</p>
+<p><strong>What stands in the way.</strong> The sequence is suggestive rather than forced; nothing forbids stopping at the complex numbers.</p>
+<h3 id="3-a-string-theory-without-compactification">3. A string theory without compactification</h3>
+<p><strong>The idea.</strong> A <strong>comparison</strong>: the resulting theory is a string theory whose fundamental objects are 2-branes of Planck area, and whose extra dimensions are not compactified because they are not needed to hide anything — they are large and shared with the weak sector.</p>
+<p><strong>What it would add.</strong> The corpus has no string-theory article, and the standard objection to string theory is the landscape. This claims to be the same kind of theory with the objection removed, which is a claim the corpus should record even if only to test it. It also gives a reason why the extra dimensions have not been seen: they are not small, they are inaccessible to classical systems, which is a different and more interesting evasion.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim is asserted at the level of analogy; no worldsheet or brane dynamics is written down.</p>
+<p>The rank: the infrared relocation first, because it changes where to look; the division-algebra twistors second, because it explains the arena; the string comparison third, because it is programmatic.</p>
+<p>The remaining items in one line each: the three energy-independent criteria for a gravitational field being quantum, which is the definition that does the work throughout; the $E_8\times E_8$ symmetry of the bosonic sector, which is where pre-gravitation joins the standard model; and the honest closing list — Higgs mass and $W$ masses still underived — which marks the boundary of the programme's success.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

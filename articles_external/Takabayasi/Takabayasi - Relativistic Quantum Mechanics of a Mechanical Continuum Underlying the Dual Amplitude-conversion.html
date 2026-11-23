@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-quantum-mechanics-of-a-mechanical-continuum-underlying-the-dual-amplitude"><strong>Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>44</strong> (1970) 1429, No. 5; dated 9 September 1970</td>
+</tr>
+<tr>
+<td>length</td>
+<td>2 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Quantum Mechanics of a Mechanical Continuum Underlying the Dual Amplitude.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The first statement of the detailed wave equation. Instead of a string model plus separate additional conditions, the letter gives one wave equation defined at every material point $\sigma$; on Fourier expanding, that single equation becomes a global wave equation plus a countably infinite tower of subsidiary conditions, one per oscillator mode, and the whole tower closes under commutation. Unphysical states are thereby removed automatically. Adding a coupling at the string's end gives the vertex operator, and the propagator from the wave equation plus that vertex gives the dual amplitude — at intercept one, which the letter flags as a limitation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-a-new-formulation">Why a new formulation</h3>
+<p>"the relative variables x"(a) =x "(a) -X" and underlying "string" model for hadrons. 1 &gt;, 2 &gt; p "(a)=p"(a)-P "/n-, restricted by f~xp.(a)da The same result is also realized in the =J~p"(a)da=O, satisfy scheme of multilocal theory in which one [x "(a), p,(a')] =ig",(6(a-a') -1/n-). lets the number of multilocal points tend to infinity. 8&gt; Either formulation, however, Now, by Fourier expansion we see that has been incomplete especially due to the our fundamental equation (1) is equivalent occurrence of unphysical states, and cannot to the countably infinite set of equations be regarded as providing a realistic model. r=O, 1,2, ···, (2) In this note we present a new formulation of relativistic quantum mechanics of a string. It simply consists of a unique wave 2Ar=f[{!"</p>
+<h3 id="one-equation-at-every-point">One equation at every point</h3>
+<p>The basic variables for a finite one-dimensional elastic continuum are the positional coordinates $x^{\mu}(\sigma)$ and its conjugate momentum variables $p^{\mu}(\sigma)$, both depending on a scalar parameter $\sigma$ which is adjusted to range over $[0,\pi]$. They obey $[x^{\mu}(\sigma),p_{\nu}(\sigma')]=ig^{\mu}_{\ \nu}\delta(\sigma-\sigma')$.</p>
+<p>"stic force acts inside the =X/ (2l0), n- 0 =2l0 P, where l 0 = (2n-!i:) -l/ 2 • string properly, the relativistic motion of Then [~" r' 7r/] =i6r,gp., (r, s=O, 1, 2, ···), this system is represented by the wave and the wave function is W (X ",~ " r)."containing the local energy density." s equations, each of which is Relativistic Quantum Mechanics of defined at each material point a on the a Mechanical Continuum Underlying string. Thus it transcends the conventional the Dual Amplitude notion of wave equation but is precisely Takehiko TAKABAYASI appropriate for a complete quantum-me- Department "</p>
+<h3 id="the-separation-and-the-tower">The separation and the tower</h3>
+<p>"We may separate the center-of-mass $X^{\mu}$ and the 4-momentum of the system $P^{\mu}$. Then the relative variables ... satisfy $[x^{\mu}(\sigma),p_{\nu}(\sigma')]=ig^{\mu}_{\ \nu}(\delta(\sigma-\sigma')-1/\pi)$. Now, by Fourier expansion we see that our fundamental equation is equivalent to the countably infinite set of equations" — the modes $\Lambda_r$, with "ce the ad- which is necessary to assure [AT, H'] =rH' joint for the dagger sign. This is allowed (r=l, 2,-··). Then the vertex operator due to the presence of subsidiary conditions implied in (5) together with the propagator (4), one for each vector phonon mode, implied in (3) leads to the dual amplitude. 5l"</p>
+<h3 id="the-oscillator-form-we-further-introduce">The oscillator form "We further introduce</h3>
+<p>$C_r^{\mu}=(r\xi_r^{\mu}+i\pi_r^{\mu})/\sqrt2$ and $C_r^{\mu\dagger}$ ... and satisfy $[C_r^{\mu},C_s^{\nu\dagger}]=r\delta_{rs}g^{\mu\nu}$. Then the zeroth equation of (2) takes the form $m_0^{2}\Lambda_0\Psi=[P^{2}+m_0^{2}(\sum_{r\geqq1}C_r^{\dagger}C_r+\omega_0)]\Psi=0$"with $m_0=\ell_0^{-1}=(2\pi\kappa)^{1/2}$. On the other hand $\Lambda_r$ for $r=1,2,\dots$ are rewritten as combinations of $C$'s quadratic in the oscillators." t r=l + CT) /r] ¢(X), If One USeS aT= CT /vr With .[a1/ , a;t] (5) =iDT,gfJ "' it is clear that (3) gives just the (r=l, 2, ···) resonance levels to factorize the dual Here k11 is external 4-momentum."</p>
+<h3 id="the-indefinite-metric-and-what-pays-for-it">The indefinite metric, and what pays for it</h3>
+<p>"s are compatible if only and the infinite degeneracies of mass levels for (3), we understand an indefinite metric -k2= -mo2, (6) for relative-time degrees, whence the ad- which is necessary to assure [AT, H'] =rH' joint for the dagger sign. This is allowed (r=l, 2,-··). Then the vertex operator due to the presence of subsidiary conditions implied in (5) together with the propagator (4), one for each vector phonon mode, implied in (3) leads to the dual amplitude. 5l which are physically necessary to suppress The requirement"</p>
+<p>"To derive the dual amplitude we now add the coupling term $g\phi(x^{\mu}(\sigma))\delta(\sigma)\Psi$ ... This means that the coupling to the external neutral scalar field $\phi(x)$ occurs just at the end ($\sigma=0$) of the string." "o2, (6) for relative-time degrees, whence the ad- which is necessary to assure [AT, H'] =rH' joint for the dagger sign. This is allowed (r=l, 2,-··). Then the vertex operator due to the presence of subsidiary conditions"</p>
+<h3 id="the-admitted-cost">The admitted cost</h3>
+<p>"icle the redundant relative-time degrees. 4 &gt; In lies on the leading trajectory gives ()) 0 = -1 fact they relate each relative-time mode to (i.e., intercept one). Unfortunately only space modes to eliminate negative metric the condition (6) is unphysical, and to states effectively."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-single-equation-that-is-an-infinite-tower">1. A single equation that is an infinite tower</h3>
+<p><strong>The idea.</strong> One local equation, holding at each $\sigma$, is equivalent to an infinite set of global conditions. There is no main equation plus constraints: the constraint set <em>is</em> the equation, read in modes. The hierarchy of modes is not a truncation scheme but an exact rewriting.</p>
+<p><strong>What it would add.</strong> A precise sense in which a local field equation over an extended object encodes infinitely many constraints. <em>The Lagrangian and the Nonlinear Sigma Model</em> (<code>articles_physics/the-lagrangian-and-the-nonlinear-sigma-model.md</code>) has one equation per field; here one equation per <em>point</em> collapses to one per mode, and the counting is the content. This is the cleanest expression of the idea in the folder and the ancestor of all its DWE papers.</p>
+<p><strong>Where it lands.</strong> §<em>The Model and the Constraint</em>, as the ancestor statement.</p>
+<p><strong>What stands in the way.</strong> The equivalence is asserted via Fourier expansion; convergence and the treatment of the divergent constant $Z=\sum 1/r$ are handled by absorbing $Z$ into $\omega_0'$, which is a remark rather than a finite prescription.</p>
+<h3 id="2-indefinite-metric-licensed-by-subsidiary-conditions">2. Indefinite metric licensed by subsidiary conditions</h3>
+<p><strong>The idea.</strong> The indefinite metric is not a defect to be removed: it is permitted <em>because</em> there is one subsidiary condition per vector mode, each relating a relative-time mode to spatial ones and thereby eliminating the negative-norm states. The count of conditions matches the count of bad modes.</p>
+<p><strong>What it would add.</strong> A quantitative justification for the indefinite metric, which the folder elsewhere treats as a choice. Earlier conversions record the trade-off (indefinite metric versus infinite degeneracy); here the trade is shown to be balanced by an exact matching of conditions to modes, which is the argument for why it works.</p>
+<p><strong>Where it lands.</strong> §<em>The Norm and the Invariant</em> of the <em>Group of Relativistic Internal Motion</em> conversion, as the counting argument.</p>
+<p><strong>What stands in the way.</strong> No proof that the conditions remove <em>all</em> negative-norm states; the letter says they do so "effectively". </p>
+<h3 id="3-the-coupling-must-sit-at-the-end-and-that-is-a-constraint-on-the-geometry">3. The coupling must sit at the end — and that is a constraint on the geometry</h3>
+<p><strong>The idea.</strong> The external field couples at $\sigma=0$ only. Compatibility of the coupled tower forces $k^{2}=m_0^{2}$, i.e., the external particle must be on the leading trajectory. A local coupling anywhere else would break $[\Lambda_r,H']=rH'$. </p>
+<p><strong>What it would add.</strong> A derivation of a vertex's structure from an algebraic requirement. The corpus's vertex discussions take the vertex as given; here the position of the coupling and the mass-shell condition on the external leg both follow from requiring the algebra to survive the coupling. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>Detailed Wave Equation for Extended Model</em> in this folder, where the end-coupling is used and then varied to change the intercept; the natural corpus home is §<em>The Gauge Symmetry and the Constraints</em> of <em>The Lagrangian and the Non-Abelian Gauge Fields</em>. </p>
+<p><strong>What stands in the way.</strong> The derivation is for the scalar external field; the vector and tensor couplings come later and change the intercept, so the "must" is conditional on the coupling type. </p>
+<h3 id="4-the-first-appearance-of-the-intercept-problem">4. The first appearance of the intercept problem</h3>
+<p><strong>The idea.</strong> Intercept one is forced, and the letter says so plainly as a defect to be repaired. Everything in the later DWE papers — the hybrid model, the Fermi oscillators — is an answer to this paragraph. </p>
+<p><strong>What it would add.</strong> A clear origin for a research programme, which helps place the folder's papers in order. Reading this letter first makes the hybrid paper's purpose obvious: it is not a new model but a repair of an admitted limitation. </p>
+<p><strong>Where it lands.</strong> The conversion of <em>Detailed Wave Equation for Extended Model Underlying the Dual Amplitude</em> in this folder, §<em>Why the Intercept Had to Be One</em>, as the origin. </p>
+<p><strong>What stands in the way.</strong> The repair changes the model's particle content, so the "limitation" is removed by enlargement rather than by fixing the original.</p>
+<p>The remainder, one line each. That the closed algebra $[\Lambda_r,\Lambda_s]=(r-s)\Lambda_{r+s}$ is the Virasoro algebra in embryo is the letter's most consequential formula. That the letter is two pages and dated 1970 places it before the fuller treatments and shows how compressed the original insight was.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

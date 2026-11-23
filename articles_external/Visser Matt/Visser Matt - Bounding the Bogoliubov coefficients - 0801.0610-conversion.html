@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounding the Bogoliubov coefficients — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Bogoliubov coefficients - 0801.0610.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounding-the-bogoliubov-coefficients"><strong>Bounding the Bogoliubov coefficients</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0801.0610v1 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Petarpa Boonserm, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 January 2008 (dated 4 January 2008)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Bounding the Bogoliubov coefficients - 0801.0610-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Bogoliubov coefficients - 0801.0610.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Bounding the Bogoliubov coefficients - 0801.0610.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper derives rigorous bounds on Bogoliubov coefficients for second-order linear differential equations. The equation is written as a first-order matrix system, whose solution is a time-ordered exponential of $2\times2$ matrices. The Bogoliubov coefficients are then expressed through invariants of that matrix, and bounding the matrix bounds the coefficients. The derivation is exact before the bound is taken, requires no WKB ansatz and no gauge fixing, and extends an earlier approach by one of the authors. The discussion lists the extensions the authors did not achieve: relaxing the reality condition, solving the variational problem that defines an optimal bound, and using several probe functions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-gap-the-paper-addresses">The gap the paper addresses</h3>
+<p>"While over the last century or more considerable effort has been put into the problem of finding approximate solutions for wave equations in general, and quantum mechanical problems in particular, it appears that as yet relatively little work seems to have been put into the complementary problem of establishing rigourous bounds on the exact solutions. We have in mind either bounds on parametric amplification and the related quantum phenomenon of particle production (as encoded in the Bogoliubov coefficients), or bounds on transmission and reflection coefficients."</p>
+<h3 id="the-method">The method</h3>
+<p>"Modifying and streamlining an approach developed by one of the present authors, we investigate this question by developing a formal but exact solution for the appropriate second-order linear ODE in terms of a time-ordered exponential of $2\times2$ matrices, then relating the Bogoliubov coefficients to certain invariants of this matrix."</p>
+<h3 id="what-the-derivation-avoids">What the derivation avoids</h3>
+<p>"In particular in the current article we do not need to 'gauge fix', nor do we need to appeal to any WKB-like ansatz to get the discussion started. Furthermore we have seen how to extend the bounds in [1] in several different ways."</p>
+<h3 id="the-result-in-context">The result in context</h3>
+<p>"Considering the fundamental importance of the questions we are asking, it is remarkable how little work on this topic can currently be found in the literature."</p>
+<h3 id="the-authors-own-limits">The authors' own limits</h3>
+<p>"We do not feel that the current bounds are the best that can be achieved, and strongly suspect that it may be possible to develop yet further extensions both to the current formalism, and to the related formalism originally presented in [1]. Possible extensions might include somehow relaxing the reality constraint on $\Omega(t)$ without damaging too much of the current formalism, a better understanding of the variational problem defining the 'optimal' bound (thus hopefully leading to an explicit form thereof), or using several 'probe functions' [instead of the single function $\Omega(t)$] to more closely bound the Bogoliubov coefficients."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-bound-on-the-mode-mixing">1. A bound on the mode mixing</h3>
+<p><strong>The idea.</strong> Particle production is measured by $|v|^2$, and this paper bounds $|v|$ without solving the mode equation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code> defines the transformation and imposes the canonical conditions exactly on a single mode. It has no way to say anything when the mode functions are unknown. A bound would let the article state an inequality relating $|u|$ and $|v|$ to the coefficients of the equation, which is the only kind of statement available before a solution is found. This is the most direct import in the paper.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/bogoliubov-transformations-in-biquaternionic-form.md</code>, after the canonical conditions.</p>
+<p><strong>What stands in the way.</strong> The bound is derived for a real, traceless, non-symmetric generator; the article's generator is anti-Hermitian in the fermionic case, so the hypotheses differ. Ranked first, because it fills a gap the article names by its silence.</p>
+<h3 id="2-exactness-before-bounding">2. Exactness before bounding</h3>
+<p><strong>The idea.</strong> The formal solution is exact. The approximation enters only when the matrix is bounded, and the bound is rigorous.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> and the corpus's other limit articles take limits that are controlled order by order. This paper shows a different discipline: keep the exact object, then bound it, so the error is quantified and not assumed. Recording that pattern would give the corpus a template for rigorous statements about regimes it can only approximate.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the limit.</p>
+<p><strong>What stands in the way.</strong> The transfer is methodological and would need a worked case in the corpus's own variables. Ranked third.</p>
+<h3 id="3-an-optimal-bound-is-a-variational-problem">3. An optimal bound is a variational problem</h3>
+<p><strong>The idea.</strong> Among all admissible probe functions, one gives the tightest bound, and finding it is a well-posed optimisation.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> catalogues objects the algebra cannot supply. An optimal bound is not an algebraic object at all: it is the solution of a variational problem over functions. The catalogue's scope note should say that some quantities the framework needs are of this type, so their absence is not an algebraic defect but a different kind of gap.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> It refines a scope statement rather than adding a proved entry. Ranked second.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

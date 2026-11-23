@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Underlying Geometrical Manifold for Hamiltonian Mechanics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Underlying Geometrical Manifold for Hamiltonian Mechanics - 1511.09185.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="an-underlying-geometrical-manifold-for-hamiltonian-mechanics"><strong>An Underlying Geometrical Manifold for Hamiltonian Mechanics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1511.09185v2 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz, A. Yahalom, J. Levitan, M. Lewkowicz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 25 July 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - An Underlying Geometrical Manifold for Hamiltonian Mechanics - 1511.09185-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Underlying Geometrical Manifold for Hamiltonian Mechanics - 1511.09185.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - An Underlying Geometrical Manifold for Hamiltonian Mechanics - 1511.09185.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Shows that a Hamiltonian system with a potential can be rewritten as free motion on a curved manifold. The manifold carries a conformal metric and a compatible connection; the conformal factor is not chosen but determined, order by order in a Taylor expansion, by the requirement that the momenta of the two pictures agree at all times. The factor comes out as a functional of the potential and its derivatives. The map is then used to translate stability: a variation of an orbit in the Hamiltonian picture corresponds to a geodesic variation in the geometrical picture, so the two notions of instability are the same notion.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The claim</h3>
+<p>"We show that there exists an underlying manifold with a conformal metric and compatible connection form, and a metric type Hamiltonian (which we call the geometrical picture), that can be put into correspondence with the usual Hamilton-Lagrange mechanics."</p>
+<h3 id="what-determines-the-conformal-factor">What determines the conformal factor</h3>
+<p>"The requirement of dynamical equivalence of the two types of Hamiltonians, that the momenta generated by the two pictures be equal for all times, is sufficient to determine an expansion of the conformal factor, defined on the geometrical coordinate representation, in its domain of analyticity with coefficients to all orders determined by functions of the potential of the Hamiltonian-Lagrange picture."</p>
+<p>And it runs both ways: "Conversely, if the conformal function is known, the potential of a Hamilton-Lagrange picture can be determined in a similar way."</p>
+<h3 id="the-stability-transfer">The stability transfer</h3>
+<p>"We show that arbitrary local variations of the orbits in the Hamilton-Lagrange picture can be generated by variations along geodesics in the geometrical picture and establish a correspondence which provides a basis for understanding how" the instability of one picture shows up in the other.</p>
+<h3 id="the-limit-of-the-correspondence">The limit of the correspondence</h3>
+<p>"This mapping cannot, clearly, be understood as a relation between closed one-forms, but only as a map in the tangent space along geodesic curves. There is therefore not a direct constructive global relation between the manifolds." What does hold: "The Poisson bracket is, moreover, invariant under the mapping from the variables $x$ to $q$."</p>
+<h3 id="the-analytic-content">The analytic content</h3>
+<p>The two functions are related by the energy: "wn that the functions φ(x) and F (q) = E/(E − V (q)) are related in suitable analytic domains on {q} and {x} by well-defined relations between the coefficients of the Taylor series expansions of each of the functions around selected points {q} and {x}."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-potential-is-the-conformal-factor">1. The potential is the conformal factor</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: given a Hamiltonian $H=p^2/2m+V(q)$, there is a metric on orbit space whose conformal factor is a functional of $V$, fixed uniquely by requiring the momenta to agree at all times. The potential and the geometry are not related by analogy; one determines the other.</p>
+<p><strong>What it would add.</strong> The corpus's curved-space articles start from a metric and ask what dynamics it produces. This runs the other way: start from the dynamics and the metric is forced. For a corpus that treats the algebra as primary and geometry as derived, this is the same move in the Hamiltonian setting, and it would let the corpus's articles on effective metrics say where their metric came from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.md</code>.</p>
+<p><strong>What stands in the way.</strong> The determination is a power series with a finite radius, not a closed form, so the metric is known only locally — which is exactly what the paper concedes.</p>
+<h3 id="2-instability-is-geodesic-deviation-and-that-is-a-definition">2. Instability is geodesic deviation, and that is a definition</h3>
+<p><strong>The idea.</strong> A <strong>correspondence</strong>: a variation of an orbit becomes a geodesic variation, so Lyapunov instability of the Hamiltonian flow and geodesic deviation on the manifold are the same quantity, transported across the map.</p>
+<p><strong>What it would add.</strong> The corpus's Lyapunov article measures instability by the growth of a separation vector. This identifies that growth with a curvature integral along a geodesic, which is a local, computable criterion rather than an asymptotic exponent. It would let the corpus state instability criteria in terms of curvature, which is a quantity the algebra can compute directly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The correspondence is local, so a global Lyapunov exponent is not recovered from it; the two criteria agree only where the series converges.</p>
+<h3 id="3-the-map-exists-only-in-the-tangent-space">3. The map exists only in the tangent space</h3>
+<p><strong>The idea.</strong> A <strong>limitation stated as a result</strong>: there is no global diffeomorphism between the flat Hamiltonian coordinates and the curved orbit coordinates. The correspondence is a map along geodesics, in the tangent space, and the Poisson bracket is what survives it.</p>
+<p><strong>What it would add.</strong> The corpus's conformal articles treat conformal rescalings as global operations on the algebra. This says that in the Hamiltonian setting the rescaling is only a local gauge along each trajectory, which is a precise obstruction and a warning. It also explains why the bracket is the right invariant: it is the only structure that does not need the global map.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-conformal-group-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The obstruction is about a specific construction of the map; it does not say a global relation is impossible in principle, only that this one is local.</p>
+<p>The rank: potential-as-conformal-factor first, because it inverts the corpus's usual direction; geodesic deviation second, because it is a criterion; the locality obstruction last, because it is a caveat with content.</p>
+<p>The remaining items in one line each: the condition $F(q)=E/(E-V(q))$, which is the compact form of the correspondence; the Lagrangian formulation used to make the equivalence intrinsic, which is the paper's proof strategy; and the numerical examples, which show the series converging for realistic potentials.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

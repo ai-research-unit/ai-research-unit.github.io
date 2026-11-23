@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Standard Model Particle Content with Complete Gauge Symmetries from the Minimal Ideals of Two Clifford Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Standard Model particle content with complete gauge symmetries from the minimal…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-standard-model-particle-content-with-complete-gauge-symmetries-from-the-minimal-ideals-of-two-clifford-algebras"><strong>The Standard Model Particle Content with Complete Gauge Symmetries from the Minimal Ideals of Two Clifford Algebras</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2003.08814 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Niels G. Gresnigt</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 29 March 2020 (title page dated 31 March 2020)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Gresnigt/Gresnigt - The Standard Model particle content with complete gauge symmetries from the minimal ideals of two Clifford algebras - 2003.08814-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Standard Model particle content with complete gauge symmetries from the minimal ideals of two Clifford algebras - 2003.08814.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Gresnigt/Gresnigt - The Standard Model particle content with complete gauge symmetries from the minimal ideals of two Clifford algebras - 2003.08814.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Assembles the full gauge content of the Standard Model out of two Clifford algebras: $SU(3)_C\times U(1)_{\rm EM}$ from the minimal <em>left</em> ideals of $Cl(6)$, $SU(2)_L\times U(1)_Y$ from the minimal <em>right</em> ideals of $Cl(4)$, and a Dirac spin structure from a second pair of generators. The technical novelty is a redefinition of the $SU(2)_L$ generators so that a weak rotation also moves a state between the two $Cl(6)$ ideals — which an earlier construction could not do, so its states lost the electrocolor structure of the electron. The combined states embed in a minimal left ideal of $Cl(10)\cong SU(5)$, and proton decay is excluded because the offending $SU(5)$ generators do not preserve the two smaller Witt decompositions individually.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="electrocolor-from-math17">Electrocolor from $Cl(6)$</h3>
+<p>The Witt basis $\alpha_i$ and $\alpha_i^\dagger$ (paper 1–2) with $\{\alpha_i^\dagger,\alpha_j\}=\delta_{ij}$ (paper 3); "nic ladder operators n o n o α†i , α†j = {αi , αj } = 0, α†i , αj = δij . (3) n o The αi and α†i are nilpotents and each set {αi } and α†i generates a maximal totally isotropic subspace of dimension eight. One can then construct the 2 following the convention of [2]."; $S^u\equiv Cl(6)\omega\omega^\dagger$ (paper 4). The generators in ladder form, $\Lambda_1=-\alpha_2^\dagger\alpha_1-\alpha_1^\dagger\alpha_2$ through $\Lambda_8=\frac{1}{\sqrt3}(\alpha_1^\dagger\alpha_1+\alpha_2^\dagger\alpha_2-2\alpha_3^\dagger\alpha_3)$ (paper 5), and the charge
+$$Q=\frac13(\alpha_1^\dagger\alpha_1+\alpha_2^\dagger\alpha_2+\alpha_3^\dagger\alpha_3)$$
+(paper 6), "proportional to the number operator", worked out on $[\Lambda_1,u_g]=u_r$ (paper 7).</p>
+<h3 id="weak-from-math26">Weak from $Cl(4)$</h3>
+<p>"So far we have considered two of the full set of eight minimal left ideals of Cℓ(6). One", and "multiplying the ideal S u on the right by ω changes the ideal into S d . The same is true for multiplying S d on the right by ω † ." "this only works via right- multiplications, not via left-multiplication. Together", so $\omega,\omega^\dagger$ generate a $Cl(2)$ with right action, $\tau_1\equiv\omega+\omega^\dagger$, $\tau_2\equiv i(\omega-\omega^\dagger)$, $\tau_3\equiv\omega\omega^\dagger-\omega^\dagger\omega$ (paper 8), whose action "changes its electric charge by plus or minus one". This is not yet the weak force: "cause SU (2)ω does not correspond to a unitary symmetry that preserves the Witt decomposition of Cℓ(6) into minimal ideals. Nonetheless" So a second algebra $Cl(4)$ with $\Omega=\beta_2\beta_1$, $\Omega^\dagger=\beta_1^\dagger\beta_2^\dagger$, right ideals $\Omega\Omega^\dagger Cl(4)$ and $\Omega^\dagger\Omega Cl(4)$ (paper 9–10), generators $T_1=-\beta_1\beta_2^\dagger-\beta_2\beta_1^\dagger$, $T_2=i\beta_1\beta_2^\dagger-i\beta_2\beta_1^\dagger$, $T_3=\beta_1\beta_1^\dagger-\beta_2\beta_2^\dagger$ (paper 11) and $N=\beta_1\beta_1^\dagger+\beta_2\beta_2^\dagger$ (paper 12), with the identification rule "the singlet states may then be identified with right handed fermions, and the doublet states with left-handed fermions". The ideal becomes $L=\nu_R\Omega^\dagger\Omega+\nu_L\Omega^\dagger\Omega\beta_1^\dagger+e^-_L\Omega^\dagger\Omega\beta_2^\dagger+e^-_R\Omega^\dagger\Omega\beta_1^\dagger\beta_2^\dagger$ (paper 13) and its conjugate $\bar L$ (paper 14), with $[T_1,\nu_L]=e^-_L$ (paper 15).</p>
+<h3 id="the-redefinition">The redefinition</h3>
+<p>Combining the two algebras, $\nu_R=\omega\omega^\dagger\Omega^\dagger\Omega$ (paper 18), $e^-_L=\alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\omega^\dagger\omega\Omega^\dagger\Omega\beta_2^\dagger$ (paper 20), and $u^r_R=\alpha_3^\dagger\alpha_2^\dagger\omega\omega^\dagger\Omega^\dagger\Omega$ (paper 22), $d^r_L=\alpha_1\omega^\dagger\omega\Omega^\dagger\Omega\beta_2^\dagger$ (paper 24). "To transform the neutrino into the electron requires not only that β1† is trans- formed into β2† via Ti in equation (11), but also that the Cℓ(6) ideal, and electric charge are changed. The latter two transformations are mediated by the SU (2)ω generators (8).", so the generators become
+$$T_1'\equiv-\beta_1\beta_2^\dagger\omega-\beta_2\beta_1^\dagger\omega^\dagger,\quad T_2'\equiv i\beta_1\beta_2^\dagger\omega-i\beta_2\beta_1^\dagger\omega^\dagger,\quad T_3'\equiv\beta_1\beta_2^\dagger\beta_2\beta_1^\dagger\omega\omega^\dagger-\beta_2\beta_1^\dagger\beta_1\beta_2^\dagger\omega^\dagger\omega$$
+(paper 35–37), and $[T_1',\nu_L]=e^-_L$, $[T_3',\nu_L]=-\nu_L$ (paper 38), "38) So that − 12 T3′ returns the correct weak isospin of physical states. As a second example consider an anti-quark weak doublet.".</p>
+<h3 id="spin-math51-and-proton-decay">Spin, $Cl(10)$ and proton decay</h3>
+<p>A second $SU(2)_\Omega$ with $t_1\equiv\Omega+\Omega^\dagger$, $t_2\equiv i(\Omega-\Omega^\dagger)$, $t_3\equiv\Omega\Omega^\dagger-\Omega^\dagger\Omega$ (paper 41) gives spin: with $\hat S_z=\frac12t_3$, $\bar d^{(3)\uparrow}_R$ and $\bar d^{(3)\downarrow}_R$ are distinguished (paper 45–46). Combined states may be written as $Cl(10)$ elements — $e^-_L=\alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\beta_2^\dagger\omega^\dagger\omega\Omega\Omega^\dagger$ — and "The unitary symmetry that preserves a Witt decomposition of Cℓ(10) al- gebra is SU (5), the basis of the Georgi and Glashow GUT.", which "predicts additional gauge bosons and associated unobserved physical processes, most famously proton decay". The exclusion is the paper's claim to fame: "not all SU (5) unitary symmetries that preserve the Witt decomposition of Cℓ(10) individually preserve the Witt decompositions of Cℓ(6) and Cℓ(4). It is those unitary symmetries of SU (5) that correspond to unobserved physical processes, and these are therefore algebraically excluded in our construction.", and in ladder form "unitary symmetries generated from combinations of Cℓ(6) and Cℓ(4) ladder operators, such as αi βj† + βj α† , are naturally excluded be- cause they do not individually preserve the Witt decompositions of Cℓ(6) and 11 Cℓ(4) ideals4 . It is precisely".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-proton-decay-excluded-by-which-ideals-a-generator-preserves">1. Proton decay excluded by which ideals a generator preserves</h3>
+<p><strong>The idea.</strong> $SU(5)$ is present, as the symmetry of the $Cl(10)$ Witt decomposition, and every generator of it that would mediate proton decay is a mixed word $\alpha_i\beta_j^\dagger$ that breaks one of the two smaller decompositions. A <strong>mechanism</strong> that keeps a grand unified group while removing its dangerous generators, without a desert or a large scale.</p>
+<p><strong>What it would add.</strong> The corpus's unification article finds that the embedding into a simple group fails and asks where. This is a worked answer to the converse question: the group is there, the states are there, and the decay is removed by a criterion on generators rather than by a mass. It is a different shape of unification — a group without its full adjoint — and worth comparing against the corpus's failure mode.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code>.</p>
+<p><strong>What stands in the way.</strong> Excluding a generator is a statement about a constructed embedding, not about the group; nothing in the algebra forbids an $SU(5)$ transformation from being applied, only that it leave the chosen ideals. If proton decay is absent because the <em>states</em> are restricted rather than the <em>symmetry</em>, the prediction needs the restriction to be derived, and the paper derives it from the same construction it is testing.</p>
+<h3 id="2-charge-from-a-number-operator-in-thirds">2. Charge from a number operator in thirds</h3>
+<p><strong>The idea.</strong> $Q=\frac13\sum_i\alpha_i^\dagger\alpha_i$ — the electric charge is one third of the occupation number of the three ladder modes, so a state with one occupied mode is $e/3$ and one with two is $2e/3$, and quantisation in thirds is a counting fact.</p>
+<p><strong>What it would add.</strong> The corpus derives the third from a trace over a fourth colour. Here the third is a normalisation constant dividing a plain number operator, and the colour-$SU(3)$ generators $\Lambda_1\ldots\Lambda_8$ move occupation between modes, which makes the statement that colour rotates charge among the ribbons a literal one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code>.</p>
+<p><strong>What stands in the way.</strong> The factor $\frac13$ is put in by hand to match observed charges; the paper does not derive $3$. What it derives is that all states in an ideal get a charge in exact thirds, which is weaker than explaining why thirds at all.</p>
+<h3 id="3-a-symmetry-that-acts-from-the-right">3. A symmetry that acts from the right</h3>
+<p><strong>The idea.</strong> $SU(2)_\omega$ acts by right multiplication, and that is why it is not a gauge symmetry: "there are no gauge bosons associated with this $SU(2)$ spin symmetry", since it moves a state between ideals rather than within one. The distinction between a symmetry of the algebra and a gauge symmetry is located in the side of the action.</p>
+<p><strong>What it would add.</strong> The corpus already draws a physical line at the side: "The carrier exists, and it is a side", the gauge action is left multiplication, and "an action that is one-sided cannot be chiral". This adds a second distinction <em>within</em> the one-sided world: a symmetry that acts within an ideal is a gauge symmetry with bosons, one that acts between ideals is not, and $SU(2)_L$ is built as a right action on a right ideal. That is a finer criterion than the corpus's, and it is checkable on the two actions separately.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.md</code>.</p>
+<p><strong>What stands in the way.</strong> The criterion — a symmetry acts within an ideal, therefore it is a gauge symmetry — is a definition the paper adopts to match the Standard Model, not a theorem; one could equally call the between-ideal symmetry a gauge symmetry of a larger group, which is what an $SU(5)$ theorist does.</p>
+<p>The rank is a judgement: the proton-decay criterion first, because it makes a sharp statement about an unobserved process; the number-operator charge second, because it is a computable dictionary entry; the right-action reading third, because it is a definition presented as a finding.</p>
+<p>Thirteen pages: the $Cl(6)$ electrocolor ideals and their generators, the $Cl(4)$ right ideals with $SU(2)\times U(1)$, the combined chiral states, the redefined $SU(2)_L$ generators, spin from $SU(2)_\Omega$, the $Cl(10)\cong SU(5)$ embedding and the excluded generators, and a discussion.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

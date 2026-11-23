@@ -146,16 +146,16 @@ $$</p>
 <h2 id="the-gauge">The Gauge</h2>
 <p><strong>A change of basis of the same family.</strong> Every other basis of the same family has the form</p>
 <p>$$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t_{+}t_{-}^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t_{-}t_{+}^{-1}\vec\Pi_{\mathrm{nil},-+},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t_{+}t_{-}^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t_{-}t_{+}^{-1}\vec\Pi_{\mathrm{nil},-+},\qquad
 t_{+},t_{-}\in\mathbb{C}^{\times},
 $$</p>
 <p>with the diagonal elements unchanged.</p>
-<p><strong>Proof.</strong> Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Pi_{\mathrm{nil}}'_{+-}=c_{+}\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil}}'_{-+}=c_{-}\vec\Pi_{\mathrm{nil},-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.</p>
+<p><strong>Proof.</strong> Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Pi_{\mathrm{nil}}'{}_{+-}=c_{+}\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil}}'{}_{-+}=c_{-}\vec\Pi_{\mathrm{nil},-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.</p>
 <p><strong>The effective gauge.</strong> Put $t=t_{-}t_{+}^{-1}$. Then</p>
 <p>$$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t\,\vec\Pi_{\mathrm{nil},-+}.
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t\,\vec\Pi_{\mathrm{nil},-+}.
 $$</p>
 <p>A common scalar in $t_{+}$ and $t_{-}$ acts trivially, because $(ct_{+})(ct_{-})^{-1}=t_{+}t_{-}^{-1}$. The effective group is</p>
 <p>$$
@@ -193,7 +193,7 @@ $$</p>
 <p><strong>Gauge fixing.</strong> A gauge fixing is a point of the torsor, that is a nonzero element of one mixed line. The nonvanishing and the product normalization are part of the definition of a basis and do not fix the scale. The Hermitian condition restricts the gauge but does not fix it; see below.</p>
 <p><strong>The Hermitian gauge.</strong> Suppose the family is Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, with the positive definite Hermitian form of the algebra. Then:</p>
 <ul>
-<li>A Hermitian basis exists. Choose a nonzero $u\in\mathbb{B}_{+-}$. Then $u^{*}\in\mathbb{B}_{-+}$ and $uu^{*}\in\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. The element $uu^{*}$ is Hermitian and nonzero, and $\mathrm{Sc}(uu^{*})>0$ by positive definiteness; write $uu^{*}=\lambda\tilde\Pi_{\mathrm{id},+}$ with $\lambda>0$, since $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=\frac12$. Replace $u$ by $\lambda^{-1/2}u$; then $uu^{*}=\tilde\Pi_{\mathrm{id},+}$. Now $u^{*}u\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{\mathrm{id},-}$ is nonzero, because $u(u^{*}u)=0$ would give $(uu^{*})u=u=0$; write $u^{*}u=\mu\tilde\Pi_{\mathrm{id},-}$. Then $u=uu^{*}u=\mu u$, so $\mu=1$. Thus $\vec\Pi_{\mathrm{nil},+-}=u$ and $\vec\Pi_{\mathrm{nil},-+}=u^{*}$ are a Hermitian basis.</li>
+<li>A Hermitian basis exists. Choose a nonzero $u\in\mathbb{B}_{+-}$. Then $u^{*}\in\mathbb{B}_{-+}$ and $uu^{*}\in\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. The element $uu^{*}$ is Hermitian and nonzero, and $\mathrm{Sc}(uu^{*})&gt;0$ by positive definiteness; write $uu^{*}=\lambda\tilde\Pi_{\mathrm{id},+}$ with $\lambda&gt;0$, since $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=\frac12$. Replace $u$ by $\lambda^{-1/2}u$; then $uu^{*}=\tilde\Pi_{\mathrm{id},+}$. Now $u^{*}u\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{\mathrm{id},-}$ is nonzero, because $u(u^{*}u)=0$ would give $(uu^{*})u=u=0$; write $u^{*}u=\mu\tilde\Pi_{\mathrm{id},-}$. Then $u=uu^{*}u=\mu u$, so $\mu=1$. Thus $\vec\Pi_{\mathrm{nil},+-}=u$ and $\vec\Pi_{\mathrm{nil},-+}=u^{*}$ are a Hermitian basis.</li>
 <li>The Hermitian bases are the bases with $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$. Under the gauge, this condition reads $t\vec\Pi_{\mathrm{nil},-+}=\bar t^{-1}\vec\Pi_{\mathrm{nil},-+}$, so $t\bar t=1$. The Hermitian bases are therefore a $U(1)$-torsor, of real dimension one.</li>
 <li>The Hermitian condition does not fix a basis; a circle of bases remains. A gauge fixing in the Hermitian case is a point of that circle.</li>
 </ul>
@@ -245,15 +245,15 @@ $$</p>
 $$</p>
 <p>The gauge transformation is</p>
 <p>$$
-\vec\Pi_{\mathrm{nil}}'_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
-\vec\Pi_{\mathrm{nil}}'_{-+}=t\vec\Pi_{\mathrm{nil},-+},
+\vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
+\vec\Pi_{\mathrm{nil}}'{}_{-+}=t\vec\Pi_{\mathrm{nil},-+},
 $$</p>
 <p>for $t\in\mathbb{C}^{\times}$. The standard basis is Hermitian, $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$; the Hermitian gauges are the circle $|t|=1$, so the standard basis is one point of a $U(1)$-family and not a canonical one.</p>
 <p>The coordinate matrix of an element is</p>
 <p>$$
 \begin{pmatrix}
-Q_{++} & Q_{+-}\\
-Q_{-+} & Q_{--}
+Q_{++} &amp; Q_{+-}\\
+Q_{-+} &amp; Q_{--}
 \end{pmatrix},
 $$</p>
 <p>with determinant $Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}$.</p>

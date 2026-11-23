@@ -93,7 +93,7 @@ $$</p>
 <p><strong>Proof.</strong> For $v = u + w$ the definition gives $P(v) = w$ and hence $P(P(v)) = P(w) = w = P(v)$; the image is $W$ and the kernel is $U$, and the sum is direct by the hypothesis. Conversely, if $P^2 = P$ then every $v$ is written $v = (v - Pv) + Pv$ with $Pv \in \operatorname{im}P$ and $v - Pv \in \ker P$, so $V = \ker P + \operatorname{im}P$, the two meet at $0$ because $P$ is the identity on its image, and $P$ is the projection along its kernel onto its image. The eigenvalues of an idempotent satisfy $\lambda^2 = \lambda$, so they lie in $\{0,1\}$, and the two eigenspaces are the kernel and the image.</p>
 <p><strong>Corollary (the matrix of a projection).</strong> Choose a basis of $V$ adapted to the decomposition $V = U \oplus W$; then the matrix of $P$ is block diagonal,</p>
 <p>$$
-P = \begin{pmatrix} 0 & 0 \\ 0 & I_r \end{pmatrix} ,
+P = \begin{pmatrix} 0 &amp; 0 \\ 0 &amp; I_r \end{pmatrix} ,
 $$</p>
 <p>where $r = \dim W$; over a field in which the idempotent equation is reducible every idempotent matrix is conjugate to this form, and the trace of $P$ is the rank, $\operatorname{tr} P = r$.</p>
 <p><strong>Proof.</strong> In the adapted basis the first $\dim U$ coordinates are sent to zero and the last $r$ coordinates are fixed, which is the displayed block matrix; two idempotent matrices are conjugate exactly when they have the same rank, and the trace is invariant and equals $r$ because the eigenvalues of an idempotent are $0$ and $1$.</p>

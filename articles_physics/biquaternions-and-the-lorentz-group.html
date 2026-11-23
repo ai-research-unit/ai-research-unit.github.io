@@ -102,8 +102,8 @@ $$</p>
 <p>$$
 \Lambda_{\mathrm b}(\hat{\mathbf n},w)=
 \begin{pmatrix}
-\gamma & -\gamma\boldsymbol\beta^{\mathsf T}\\
--\gamma\boldsymbol\beta & I+(\gamma-1)\,\hat{\mathbf n}\hat{\mathbf n}^{\mathsf T}
+\gamma &amp; -\gamma\boldsymbol\beta^{\mathsf T}\\
+-\gamma\boldsymbol\beta &amp; I+(\gamma-1)\,\hat{\mathbf n}\hat{\mathbf n}^{\mathsf T}
 \end{pmatrix},
 \qquad
 \beta=\tanh w,\quad \gamma=\cosh w .
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>This is not a product of groups.</strong> The boosts are not closed under composition, since two boosts about different axes compose to a boost and a rotation, so the group is not $\mathrm{Boost}\times\mathrm{SU}(2)$; what is a product is the set of elements.</p>
 <p>The half-angle enters every boost. Because $\cosh w$ and $\sinh w$ factor through it, $\cosh\tfrac w2=\sqrt{(\gamma+1)/2}$ and $\sinh\tfrac w2=\sqrt{(\gamma-1)/2}$. At $\beta=0.6$ the values are $\gamma=1.25$, $w=0.693147$ and $\cosh\tfrac w2=1.060660$.</p>
 <h2 id="the-same-group-in-the-biquaternion-algebra">The Same Group in the Biquaternion Algebra</h2>
-<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_\imath^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.</p>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_{\imath}^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.</p>
 <p>The norm. The biquaternion norm is</p>
 <p>$$
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
@@ -192,7 +192,7 @@ $$</p>
 \tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
 $$</p>
 <p>so the boost factor is Hermitian, with real scalar part and imaginary vector part, and the rotation factor is real. Both have norm one, so the product has norm one, and conversely every unit element is such a product. <strong>The unit elements are the products of a boost and a rotation.</strong></p>
-<p>The endpoint $2\pi$ belongs to the range. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ whatever the axis, and the element $-e_t$ has that rotation factor in its word, with the boost factor $e_t$. No angle below $2\pi$ produces it. A half-open interval would therefore leave $-e_t$, and every element whose rotation factor is $-e_t$, outside the image of the word. Verified: on one hundred random unit elements the word reproduces the element to $7.6\times10^{-15}$ with $\theta_{\mathrm{axr}}<2\pi$, and one hundred elements built with rotation factor $-e_t$ all require $\theta_{\mathrm{axr}}=2\pi$.</p>
+<p>The endpoint $2\pi$ belongs to the range. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ whatever the axis, and the element $-e_t$ has that rotation factor in its word, with the boost factor $e_t$. No angle below $2\pi$ produces it. A half-open interval would therefore leave $-e_t$, and every element whose rotation factor is $-e_t$, outside the image of the word. Verified: on one hundred random unit elements the word reproduces the element to $7.6\times10^{-15}$ with $\theta_{\mathrm{axr}}&lt;2\pi$, and one hundred elements built with rotation factor $-e_t$ all require $\theta_{\mathrm{axr}}=2\pi$.</p>
 <p>The product is unique. For any $\tilde U\in G$ the Hermitian positive factor is $\tilde U\tilde U^{*}$ square-rooted, and the rotation factor is what is left,</p>
 <p>$$
 \tilde H=\bigl(\tilde U\tilde U^{*}\bigr)^{1/2},\qquad

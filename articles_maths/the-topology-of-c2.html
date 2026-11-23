@@ -188,14 +188,14 @@ is compact, and the sphere $S^3_R=\{Q:\lVert Q\rVert=R\}$ is compact.</p>
 <p><strong>The open unit ball is homeomorphic to the whole space, the closed unit ball is a compact manifold with boundary the unit sphere, and the unit sphere is compact, connected and simply connected but not contractible.</strong></p>
 <p><strong>Definition.</strong> The <strong>open unit ball</strong>, the <strong>closed unit ball</strong> and the <strong>unit sphere</strong> are
 $$
-B^4=\{Q:\lVert Q\rVert<1\},\qquad \overline{B}^4=\{Q:\lVert Q\rVert\le1\},\qquad S^3=\{Q:\lVert Q\rVert=1\}.
+B^4=\{Q:\lVert Q\rVert&lt;1\},\qquad \overline{B}^4=\{Q:\lVert Q\rVert\le1\},\qquad S^3=\{Q:\lVert Q\rVert=1\}.
 $$</p>
 <p><strong>Proposition (the open ball is the space).</strong> The map
 $$
 B^4\longrightarrow\mathbb{C}^2,\qquad Q_1\longmapsto\frac{Q_1}{1-\lVert Q_1\rVert},
 $$
 is a homeomorphism with inverse $Q_2\mapsto Q_2/(1+\lVert Q_2\rVert)$.</p>
-<p><em>Proof.</em> For $\lVert Q_1\rVert<1$ the denominator is positive; for $Q_2\in\mathbb{C}^2$, the point $Q_2/(1+\lVert Q_2\rVert)$ has norm $\lVert Q_2\rVert/(1+\lVert Q_2\rVert)<1$. The two formulas are inverse by direct computation, and both are continuous.</p>
+<p><em>Proof.</em> For $\lVert Q_1\rVert&lt;1$ the denominator is positive; for $Q_2\in\mathbb{C}^2$, the point $Q_2/(1+\lVert Q_2\rVert)$ has norm $\lVert Q_2\rVert/(1+\lVert Q_2\rVert)&lt;1$. The two formulas are inverse by direct computation, and both are continuous.</p>
 <p><strong>Proposition (the closed ball).</strong> The closed ball $\overline{B}^4$ is compact, contractible and a topological manifold with boundary $S^3$.</p>
 <p><em>Proof.</em> It is closed and bounded, hence compact; it is convex, hence contractible by the straight-line homotopy to the origin; and it is the standard closed ball of $\mathbb{R}^4$, whose boundary is the unit sphere.</p>
 <p><strong>Theorem (the sphere).</strong> The sphere $S^3$ is compact, connected, path-connected and simply connected. Its homology is
@@ -221,7 +221,7 @@ and its homotopy groups begin with $\pi_1(S^3)=\pi_2(S^3)=0$ and $\pi_3(S^3)=\ma
 <tbody>
 <tr>
 <td>open ball $B^4$</td>
-<td>$\lVert Q\rVert<1$</td>
+<td>$\lVert Q\rVert&lt;1$</td>
 <td>no</td>
 <td>yes</td>
 <td>$S^3$ in the closure</td>
@@ -249,7 +249,7 @@ $$
 \mathbb{C}^2\setminus\{0\}\longrightarrow S^3\times(0,\infty),\qquad Q\longmapsto\left(\frac{Q}{\lVert Q\rVert},\lVert Q\rVert\right),
 $$
 is a homeomorphism, with inverse $(\theta,r)\mapsto r\theta$.</p>
-<p><em>Proof.</em> The map is continuous, and so is the inverse. It is bijective: every nonzero $Q$ is $r\theta$ with $r=\lVert Q\rVert>0$ and $\theta=Q/\lVert Q\rVert\in S^3$, and the pair is unique.</p>
+<p><em>Proof.</em> The map is continuous, and so is the inverse. It is bijective: every nonzero $Q$ is $r\theta$ with $r=\lVert Q\rVert&gt;0$ and $\theta=Q/\lVert Q\rVert\in S^3$, and the pair is unique.</p>
 <p><strong>Corollary (the deformation retraction).</strong> The map
 $$
 r:\mathbb{C}^2\setminus\{0\}\longrightarrow S^3,\qquad r(Q)=\frac{Q}{\lVert Q\rVert},
@@ -258,7 +258,7 @@ is a deformation retraction, with homotopy
 $$
 H(t,Q)=\bigl((1-t)+t/\lVert Q\rVert\bigr)Q.
 $$</p>
-<p><em>Proof.</em> At $t=0$ the map is the identity; at $t=1$ it is $r$; the formula is continuous on $\mathbb{C}^2\setminus\{0\}$ because $\lVert Q\rVert>0$; and $r$ restricted to $S^3$ is the identity.</p>
+<p><em>Proof.</em> At $t=0$ the map is the identity; at $t=1$ it is $r$; the formula is continuous on $\mathbb{C}^2\setminus\{0\}$ because $\lVert Q\rVert&gt;0$; and $r$ restricted to $S^3$ is the identity.</p>
 <p><strong>Corollary (the invariants).</strong> The punctured space is path-connected and simply connected, and
 $$
 \pi_1=\pi_2=0,\qquad \pi_3=\mathbb{Z},\qquad H_0=\mathbb{Z},\qquad H_3=\mathbb{Z},
@@ -280,7 +280,7 @@ with the topology of $M_2(\mathbb{C})\cong\mathbb{C}^4\cong\mathbb{R}^8$.</p>
 <p><em>Proof.</em> The complement is the zero set of the determinant, a closed set with empty interior, so the group is open and dense. Multiplication and inversion are polynomial and rational, hence holomorphic. For connectedness, the polar decomposition below retracts the group onto the connected group $\mathrm{U}(2)$. The sequence $nI$ has no convergent subsequence, so the group is not compact.</p>
 <p><strong>Theorem (polar decomposition).</strong> Every $A\in\mathrm{GL}_2(\mathbb{C})$ is uniquely
 $$
-A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}>0,
+A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}&gt;0,
 $$
 with $P$ positive definite Hermitian. The map $A\mapsto U$ is continuous, and the homotopy
 $$
@@ -295,9 +295,9 @@ $$
 Moreover $\mathrm{SU}(2)$ is homeomorphic to $S^3$.</p>
 <p><em>Proof.</em> The unitary group is closed and bounded in $M_2(\mathbb{C})$, hence compact, and it is the image of the connected space $\mathrm{SU}(2)\times\mathrm{U}(1)$ under the multiplication map, hence connected. The displayed map has inverse $(B,d)\mapsto B\operatorname{diag}(d,1)$: the first component has determinant $1$ and is unitary, and the two maps are smooth and inverse. Finally,
 $$
-\mathrm{SU}(2)=\left\{\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C},\ \lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\right\},
+\mathrm{SU}(2)=\left\{\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C},\ \lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\right\},
 $$
-and the map to $S^3$, $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}\mapsto(\alpha,\beta)$, is a homeomorphism.</p>
+and the map to $S^3$, $\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix}\mapsto(\alpha,\beta)$, is a homeomorphism.</p>
 <p><strong>Corollary (the homotopy type).</strong> There are homotopy equivalences
 $$
 \mathrm{GL}_2(\mathbb{C})\simeq\mathrm{U}(2)\simeq S^1\times S^3.
@@ -310,7 +310,7 @@ $$</p>
 <p><strong>Proposition (not simply connected).</strong> The group $\mathrm{GL}_2(\mathbb{C})$ is not simply connected. The loop $t\mapsto\operatorname{diag}(e^{2\pi it},1)$ is not nullhomotopic.</p>
 <p><em>Proof.</em> The determinant sends the loop to $t\mapsto e^{2\pi it}$, a generator of $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$. A nullhomotopy of the loop would give a nullhomotopy of its determinant, which does not exist.</p>
 <p><strong>Proposition (the special linear group).</strong> The special linear group $\mathrm{SL}_2(\mathbb{C})=\{A:\det A=1\}$ is a complex Lie group of real dimension $6$, and the polar decomposition retracts it onto $\mathrm{SU}(2)\cong S^3$. In particular $\mathrm{SL}_2(\mathbb{C})$ is simply connected and $\pi_3(\mathrm{SL}_2(\mathbb{C}))=\mathbb{Z}$.</p>
-<p><em>Proof.</em> For $A\in\mathrm{SL}_2(\mathbb{C})$, the polar decomposition $A=UP$ has $1=\det A=\det U\det P=\det P$ with $\det P>0$ real, so $\det P=1$ and $\det U=1$; hence $U\in\mathrm{SU}(2)$. The retraction is the same homotopy as above.</p>
+<p><em>Proof.</em> For $A\in\mathrm{SL}_2(\mathbb{C})$, the polar decomposition $A=UP$ has $1=\det A=\det U\det P=\det P$ with $\det P&gt;0$ real, so $\det P=1$ and $\det U=1$; hence $U\in\mathrm{SU}(2)$. The retraction is the same homotopy as above.</p>
 <p><strong>Proposition (the determinant fibration).</strong> The determinant
 $$
 \det:\mathrm{GL}_2(\mathbb{C})\longrightarrow\mathbb{C}^{\times}

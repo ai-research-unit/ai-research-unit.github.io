@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Significance of a Recent Experiment Demonstrating Quantum Interference in Time — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Horwitz/Horwitz - On the significance of a recent experiment demonstrating quantum interference in time -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-significance-of-a-recent-experiment-demonstrating-quantum-interference-in-time"><strong>On the Significance of a Recent Experiment Demonstrating Quantum Interference in Time</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>quant-ph/0507044v4</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>L. P. Horwitz</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 13 December 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Horwitz/Horwitz - On the significance of a recent experiment demonstrating quantum interference in time - 0507044-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - On the significance of a recent experiment demonstrating quantum interference in time - 0507044.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Horwitz/Horwitz - On the significance of a recent experiment demonstrating quantum interference in time - 0507044.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Takes the 2005 Lindner experiment — double-slit interference with slits separated in time rather than space — and argues that ordinary non-relativistic quantum mechanics cannot describe it, because that theory has no coherence in time. The experiment therefore tests a structural property of quantum theory. The paper then shows that a theory in which time is an observable, and specifically the Stueckelberg covariant theory, accounts for the result with a diffraction formula that reproduces the observed numbers.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-argument">The argument</h3>
+<p>"I discuss the interpretation of a recent experiment showing quantum interference in time. It is pointed out that the standard nonrelativistic quantum theory, used by the authors in their analysis, does not have the property of coherence in time, and hence cannot account for the results found. Therefore, this experiment has fundamental importance beyond the technical advances it represents."</p>
+<h3 id="what-is-needed">What is needed</h3>
+<p>"Some theoretical structures which consider the time as an observable, and thus could, in principle, have the required coherence in time, are discussed briefly, and the application of Floquet theory and the manifestly covariant quantum theory of Stueckelberg are treated in some detail. In particular, the latter is shown to account for the results in a simple and consistent way."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>It is "the quadratic term in $t-t'$ in the exponent which leads directly to interference in the same way as the double slit in space", with the Hamilton relations $dx/ds=p/M$ and $dt/ds=E/Mc^2$.</p>
+<h3 id="the-number">The number</h3>
+<p>The diffraction formula gives $\varepsilon T\simeq 2\pi\hbar L/(\langle p\rangle c^2)$, where $\varepsilon$ is the gate spacing in time and $T$ the time between diffraction peaks at distance $L$. "850 nm light, as utilized in the experiment under discussion, as remarked above, h̄ω is about 1.", with an electron absorbing about 300 photons, "a value of 1.21 × 103 eV . With these values, one finds that , εT ∼ (14) = 6.9 × 10−30 sec2 , so that for ε ∼ T , T ∼ 2.6 × 10−15 sec. This result, for the pulse rate and the observed diffraction pattern, is in good agreement with the results obtained in the experiment. More"</p>
+<h3 id="the-relation-to-floquet-theory">The relation to Floquet theory</h3>
+<p>"At very low energies, the Stueckelberg theory, which carries a clear interpretation of $t$ as an observable, reduces approximately to the Floquet form", so the estimate includes the Floquet result as a limiting case.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-theory-can-lack-coherence-in-time">1. A theory can lack coherence in time</h3>
+<p><strong>The idea.</strong> A <strong>structural property</strong>: coherence is usually discussed as coherence between spatial alternatives. A theory whose time is a parameter rather than an observable has no Hilbert-space structure in the time direction, so it cannot superpose two amplitudes that differ only in when they occur. Interference in time is therefore not a small effect to be modelled; it is evidence about the structure of the theory.</p>
+<p><strong>What it would add.</strong> The corpus's superposition articles assume coherence as a property of the state space. This names a direction in which a theory may or may not have it, and shows that the answer is experimentally accessible. That is a sharper version of the corpus's usual claim that a formalism's ontology matters: here the ontology is measured.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-mass-shell-and-the-scalar-part.md</code>.</p>
+<p><strong>What stands in the way.</strong> The claim that non-relativistic quantum mechanics "cannot" describe the experiment is strong; a defender would say an effective description with an external clock field does the job, and the paper's argument is that such a description is not the theory being tested.</p>
+<h3 id="2-two-slits-in-time-one-diffraction-formula">2. Two slits in time, one diffraction formula</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong>: the temporal double slit obeys the same diffraction relation as the spatial one, with $\varepsilon T\simeq2\pi\hbar L/(\langle p\rangle c^2)$, and it reproduces the measured peak spacing.</p>
+<p><strong>What it would add.</strong> The corpus's Fourier-transform articles derive transform pairs for spatial and momentum variables. This supplies the time–energy pair in an experimentally realised setting, with a number, and it is a case where the corpus's transform machinery could be applied directly. It also shows that the extra parameter — the energy spread, hence the mass distribution — is exactly what makes the effect visible.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fourier-transform-and-the-schrodinger-fluid.md</code>.</p>
+<p><strong>What stands in the way.</strong> The derivation assumes the electron absorbs about 300 photons, which is a model of the emission process rather than a first-principles calculation.</p>
+<h3 id="3-floquet-theory-as-the-low-energy-limit-of-a-covariant-theory">3. Floquet theory as the low-energy limit of a covariant theory</h3>
+<p><strong>The idea.</strong> A <strong>correspondence</strong>: the Floquet description of a periodically driven system, with its quasi-energy spectrum, is what the covariant theory becomes when the energies are small. Floquet is not an alternative model but an approximation to the world-time theory.</p>
+<p><strong>What it would add.</strong> The corpus uses Floquet phases as a calculational device for driven systems. Saying that Floquet is a limit of the covariant theory gives the quasi-energy a meaning — it is the world-time frequency at low energy — and it tells the corpus when the Floquet description will fail: when the energy spread is comparable to the drive frequency, which is exactly the regime the experiment probes.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The reduction is asserted at low energy without an explicit limiting procedure, and the paper's numerical check is at the high-energy end.</p>
+<p>The rank: the coherence-in-time property first, because it is the conceptual claim the experiment tests; the diffraction formula second, because it is quantitative; the Floquet limit last, because it is a consistency remark.</p>
+<p>The remaining items in one line each: the two-pulse arrival condition, which allows pulses emitted at different times to reach the detector together because of the energy spread; the $L$-dependence of the pattern, which the paper proposes as a check on the formula; and the discussion of other theories in which time is an observable, which is the survey the Stueckelberg model is placed in.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

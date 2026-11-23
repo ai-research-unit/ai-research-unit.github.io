@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The shadows of quantum gravity on Bell&#x27;s inequality — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - The shadows of quantum gravity on Bell&#x27;s inequality - 2307.13006.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-shadows-of-quantum-gravity-on-bells-inequality"><strong>The shadows of quantum gravity on Bell's inequality</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>2307.13006 [quant-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Hooman Moradpour, Shahram Jalalzadeh, Hamid Tebyanian</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 12 May 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Jalalzadeh/Jalalzadeh - The shadows of quantum gravity on Bell's inequality - 2307.13006-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - The shadows of quantum gravity on Bell's inequality - 2307.13006.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Jalalzadeh/Jalalzadeh - The shadows of quantum gravity on Bell's inequality - 2307.13006.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Asks what a minimal length does to the CHSH bound. Operators and states are corrected to first order in the generalised-uncertainty parameter $\beta$, and the three ways of applying the correction — to the measurement, to the state, to both — are worked out separately. Correcting one side changes the bound by a term proportional to $\beta$; correcting both leaves it at $2$. The paper then runs the corrected expression on IBM and Google hardware and reports that the violation rises with $\beta$ while staying under $4$. The result is a first-order expansion plus a simulation, not a measurement of $\beta$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-corrected-operators">The corrected operators</h3>
+<p>The GUP is $\Delta\hat x\Delta\hat P\geq\frac{\hbar}{2}\left[1+\beta(\Delta\hat P)^2\right]$, with the minimal length $\Delta\hat x=\hbar\sqrt{\beta}$ "of √ the order of the Planck The incompatibility". Operators are corrected as $\hat O=\hat o+\beta\hat o_p$, and the normalised Bell operators are $\hat j_{\rm GUP}=(\hat J+\beta\hat J_p)/|\lambda_{J_{\rm GUP}}|$.</p>
+<h3 id="the-three-cases">The three cases</h3>
+<p>With $\hat B\equiv\hat a(\hat b+\hat b')+\hat a'(\hat b-\hat b')\leq2$ (paper 1):</p>
+<ul>
+<li>state quantum, measurement gravitational: $\hat B_{\rm GUP}\neq\hat B$ "h eigenvalues λJ (J ∈ are affected by quantum features of gravity [14, 29, 30]. {Â" (paper 2);</li>
+<li>measurement quantum, state gravitational: $|\xi_{\rm GUP}\rangle=|\xi\rangle+\beta|\xi\rangle_p$ and
+$$\langle\xi_{\rm GUP}|\hat B|\xi_{\rm GUP}\rangle\equiv \hat B^{\rm GUP}=\hat B+2\beta\langle\xi|\hat B|\xi\rangle_p\ \Rightarrow\ \hat B^{\rm GUP}\leq2\left(1+\beta\langle\xi|\hat B|\xi\rangle_p\right)$$
+(paper 3);</li>
+<li>both gravitational: $\langle\xi_{\rm GUP}|\hat B_{\rm GUP}|\xi_{\rm GUP}\rangle\leq2$, so "assical equality and the classical regime’s limit (which is 2 in limit of 2. In Fig. 1, the simulation of Bell’s".</li>
+</ul>
+<h3 id="the-numbers-reported">The numbers reported</h3>
+<p>The simulated state is $|\psi\rangle=\frac{1}{\sqrt2}(|00\rangle+|11\rangle)$ (paper 4), with $\beta=0.1,\,0.2,\,0.5,\,0.9$ in Fig. 2. "tum √ violation surpasses the quantum mechanical limit of 8, signifying a more pro- strategy, violating the CHSH inequality.", and "the maximum violation observed does" "ed the limit of 4, consistent with the boundaries set by the Boxworld theorem. This". The curves from the two platforms "are in agreement. The application claim is that a higher baseline violation makes eavesdropping more quickly and definitively" detectable in device-independent QKD and QRNG.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-minimal-length-written-as-a-correction-to-the-operator-not-to-the-state">1. A minimal length written as a correction to the operator, not to the state</h3>
+<p><strong>The idea.</strong> $\hat O=\hat o+\beta\hat o_p$ with the normalisation $\hat j=(\hat J+\beta\hat J_p)/|\lambda_{J_{\rm GUP}}|$ keeps the eigenvalues at $\pm1$ while moving the operator. That is a <strong>formula</strong>, and it is the bookkeeping the corpus's CHSH exercise does not have, because the corpus assumes ideal projectors.</p>
+<p><strong>What it would add.</strong> A way to write a non-ideal measurement inside a Bell correlator while keeping the $\pm1$ spectrum that makes the bound meaningful.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's derivation of $2\sqrt2$ uses unit vectors and the exact singlet; a $\beta$-corrected operator breaks the algebraic identity that produces Tsirelson's bound, so the exercise cannot absorb the correction without being rewritten as an expansion.</p>
+<h3 id="2-the-one-sided-correction-changes-the-bound-the-two-sided-one-does-not">2. The one-sided correction changes the bound, the two-sided one does not</h3>
+<p><strong>The idea.</strong> $\hat B^{\rm GUP}\leq2(1+\beta\langle\xi|\hat B|\xi\rangle_p)$ when only one side is corrected, and $\leq2$ when both are. That is a <strong>reading</strong> of the same structure as the Lorentz-transformation cases the paper cites.</p>
+<p><strong>What it would add.</strong> A statement of where a modified bound can appear at all: a symmetric deformation is invisible to the inequality.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>, which lists the same three cases for Lorentz boosts.</p>
+<p><strong>What stands in the way.</strong> The result depends on how the two sides are corrected, and no criterion is offered for which choice nature makes; the paper chooses by analogy with special relativity, and the analogy is asserted.</p>
+<h3 id="3-a-violation-above-math34">3. A violation above $2\sqrt2$</h3>
+<p><strong>The idea.</strong> The simulation reports the violation growing past $\sqrt8$ with $\beta$, while staying under $4$. That is a <strong>number</strong>.</p>
+<p><strong>What it would add.</strong> A falsifiable target: a measured CHSH value above $2\sqrt2$ with a known $\beta$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.md</code>, as the bound to compare against.</p>
+<p><strong>What stands in the way.</strong> $2\sqrt2$ is a theorem for a Hilbert-space model with $\pm1$ observables, so a simulation that exceeds it means the simulated correlators are not of that form — which is what a modified operator set implies, and also what a numerical error implies. The hardware curves are quantum-computer runs of the authors' own circuit, not tests of the bound; nothing here distinguishes the two readings.</p>
+<p>The rank is a judgement: the operator bookkeeping first, because the exercise needs it; the one-sided rule second, because it says when a modified bound can appear; the excess over $\sqrt8$ last, because as reported it is a simulation.</p>
+<p>Nine pages: the GUP dictionary, the three cases, the corrected bound, the IBM and Google runs, and the device-independent applications.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

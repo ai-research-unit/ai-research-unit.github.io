@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Rotators and Bilocal Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Rotators and Bilocal Theory.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-rotators-and-bilocal-theory"><strong>Relativistic Rotators and Bilocal Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Bohm, Pierre Hillion, Takehiko Takabayasi and Jean-Pierre Vigier</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>23</strong> (1960) 496–514, No. 3, March 1960; received 8 December 1959</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Relativistic Rotators and Bilocal Theory-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Rotators and Bilocal Theory.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-two-sectors-the-hermitian-split-and-the-four-bridges.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Relativistic Rotators and Bilocal Theory.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The four-author paper that turns the rotator from a model into a framework. Three results matter. An isolated rotator's Lagrangian implies, besides the expected conservation laws, the existence of a <em>second point centre</em> in a particular inertial frame — which is what makes the rotator equivalent in structure to Yukawa's bilocal theory. The hyperspherical rotator's Hamiltonian splits into two complex-conjugate parts, one built on $\omega^{+}$ and one on $\omega^{-}$, the two self-dual halves of the angular velocity bivector. And six <em>relativistic Euler angles</em> — three real and three imaginary — parametrise the tetrad, which makes the later quantisation tractable. It is the paper in this folder where the corpus's own two-sector structure appears as a kinematical fact rather than an algebraic choice.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-a-rotator-is-and-why-they-want-one">What a rotator is, and why they want one</h3>
+<p>"By definition let us call relativistic" particle "rotator the system kinema- tically defined, a. by the coordinates XI" (-r) of its origin (x), and b. by the set of four orthogonal and unitary four vectors centered on (x), or, in other words, by a moving tetrad in Minkowski space. 1l The "Their motivation is Takabayasi's own: an angular momentum density" has to introduce ... supplementary 'beingrossen' kinematical variables $b^{\mu}_{\ \sigma}$ describing the local 'spin'". And the more ambitious claim" e and two of us (P. H. and J. P. V.) have proposed the idea that the time has come to substitute relativistic rotators for point particles as classical foundation of quantum mechanics. In "Against this the authors are careful:" we shall make no specific physical assumption about the possible physical signification of the rotator variables and study directly relativistic rotators with the help of the usual Lagrangian and Hamiltonian method."</p>
+<h3 id="the-second-centre-from-the-invariance-of-the-action-under-infinitesimal-lorentz-transformations-they-derive-momentum-and-angular-momentum-conservation-in-the-usual-form-with">The second centre From the invariance of the action under infinitesimal Lorentz transformations they derive momentum and angular momentum conservation in the usual form, with</h3>
+<p>$$ M_{\alpha\beta}=\Big(b_{\alpha}^{\ \sigma}\frac{\partial L}{\partial \dot b^{\beta\sigma}}-\frac{\partial L}{\partial \dot b^{\beta\sigma}}b_{\alpha}^{\ \sigma}\Big)+\big(\dot X_{\alpha}X_{\beta}-\dot X_{\beta}X_{\alpha}\big)L/\dot X^{2}, $$"which constitute a simple generalization of VVeyssenhoff's usual relations.", and then show that $M_{\alpha\beta}M^{\alpha\beta}$ and $m$ are "simultaneous constants of the motion". The structural result is that the conservation laws "t on 12 November 2026 of a second remarkable point center of a particular inertial frame, showing the similarity of our point of view with Yukawa's bilocal theory 5) in Minkowski space."</p>
+<h3 id="the-self-dual-split-and-two-complex-conjugate-hamiltonians-writing-the-kinematical-energy">The self-dual split, and two complex-conjugate Hamiltonians Writing the kinematical energy</h3>
+<p>$T$ as a function of the body-frame angular velocity and then as a function of the tetrad, they get a form in which the boost and rotation parts separate: $$ T=\frac{1}{\kappa}\Big(\cdots +\frac{1}{\kappa}B^{+}_{k}B^{+}_{k}+\cdots +\frac{1}{\kappa}B^{-}_{k}B^{-}_{k}\Big). $$ And then the sentence that matters: **"Ve see here appearing for the first time an essential property' of the hyper- spherical rotator: its Hamiltonian can be split, into two complex conjugated parts the first depending on w -1-, the second on (0-. This is very natural if one remarks that the skew tensor can be split into a sum of two self-dual tensors of the types ( ) and (-). We have (30) so that (I) #" 0)#" = 1 <em>,</em> + (1)1-'" ' (1)#" - +1 - ."</p>
+<p>** So the split is not imposed to make a nice algebra: it is what the kinetic energy of a spinning body does, because the kinetic energy is quadratic in the angular velocity and the angular velocity is a bivector.</p>
+<h3 id="the-two-halves-are-the-two-rotation-senses-with">The two halves are the two rotation senses With</h3>
+<p>$B^{\pm}_{k}=\frac{1}{\sqrt2}(B_{k}\pm iB'_{k})$, $B'$ the dual, the two halves are the self-dual and anti-self-dual projections, transforming as conjugate complex representations. The dynamics of a rotating body therefore decouples into two sectors that are complex conjugates, and the quantisation can be done sector by sector.</p>
+<h3 id="relativistic-euler-angles-six-angles-three-real">Relativistic Euler angles Six angles: three real</h3>
+<p>$(\alpha_b,\beta_b,\gamma_b)$ playing the role of the ordinary space Euler angles and three imaginary ones giving the boost. They "etermines the Lorentz trans- formation from a/ to b} by the matrix relation: Relat£'uistic Rotato rs and B£local Thea ry 505 cos (SO '/2) sin (SO !" given explicitly as a $4\times4$ product of half-angle factors. "This step is justified by the fact that it allows simple comparison" with the non-relativistic case, and the quantisation is then carried out "exactly like in the three-dimensional case", the constraints "automatically satisfied by our six Euler angles". </p>
+<h3 id="what-the-rotator-is-offered-as">What the rotator is offered as</h3>
+<p>Not a model of matter, but a language: the variables are a possible classical example of the 'hidden' variables introduced a priori in the causal interpretation of quantum mechanics, hidden only because we normally suppress particle extension and reduce world tubes to world lines.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-kinetic-energy-of-a-spinning-body-splits-into-self-dual-and-anti-self-dual-halves-the-corpuss-two-sectors-are-a-fact-about-angular-velocity">1. The kinetic energy of a spinning body splits into self-dual and anti-self-dual halves — the corpus's two sectors are a fact about angular velocity</h3>
+<p><strong>The idea.</strong> $\omega_{\mu\nu}$ is a bivector, hence $\omega=\omega^{+}+\omega^{-}$ with $\omega^{\pm}=\frac12(\omega\pm{}^{*}\omega)$ self-dual and anti-self-dual. The kinetic energy is quadratic in $\omega$, so it splits into a $(+)$ term and a $(-)$ term, and the Hamiltonian into two complex-conjugate parts. The split is forced by the kinematics of rotation, not chosen for convenience. </p>
+<p><strong>What it would add.</strong> The physical reason for the corpus's central algebraic structure. <em>The Two Sectors: The Hermitian Split and the Four Bridges</em> (<code>articles_physics/the-two-sectors-the-hermitian-split-and-the-four-bridges.md</code>) presents the Hermitian split as a choice among conventions, justified by what it makes easy. Bohm, Hillion, Takabayasi and Vigier show that for a <em>spinning body</em> the split is not a choice: <strong>the energy of rotation is diagonal in it, because energy is quadratic and the bivector space is the direct sum of the two self-dual halves.</strong> That turns the corpus's most-used convention into a derived fact, and explains why the sectors are complex conjugates: the conjugation is time reversal, and the two halves of a rotation are its two senses. </p>
+<p><strong>Where it lands.</strong> The two-sectors article's §<em>Why This Split</em>, as the kinematical derivation, and <em>The Two Casimirs of the Lorentz Algebra</em> (<code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>), where the two half-spaces are the two Casimirs' homes. </p>
+<p><strong>What stands in the way.</strong> The rotator's $\omega$ is a body's angular velocity, while the corpus's split applies to the field's bivector part, which is not a rotation rate; the derivation transports as an analogy with a proof. It ranks first because it is the strongest argument available for the corpus's choice of basis. </p>
+<h3 id="2-an-isolated-rotator-has-a-second-centre-the-bilocal-structure-is-implied-not-added">2. An isolated rotator has a second centre — the bilocal structure is implied, not added</h3>
+<p><strong>The idea.</strong> Momentum and angular momentum conservation for a rotator imply that in one particular inertial frame a second distinguished point exists, distinct from $X^{\mu}$, and the system is structurally a bilocal object. Extension is not put in by hand; a spinning body <em>is</em> bilocal. </p>
+<p><strong>What it would add.</strong> A derivation for a premise the corpus assumes. The corpus's structured-object articles take the extended data as given: <em>Rigid-Body Dynamics and the Biquaternion Rotor</em> (<code>articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.md</code>) has a body with an orientation and <em>The Spectrum of a Lorentz Rotor</em> (<code>articles_physics/the-spectrum-of-a-lorentz-rotor-what-two-eigenvalues-leave-undetermined.md</code>) has the rotor's two eigenvalues. Neither asks where a second point would come from. Here they come out of one point plus a triad. <strong>That is a real reduction: six rotational degrees of freedom plus one position are equivalent, for the conserved quantities, to two positions with a constraint.</strong> It also says something the corpus does not: that the second centre is frame-dependent ("a particular inertial frame"), so bilocality is not an invariant structure but a choice of frame in which the rotator looks bilocal. </p>
+<p><strong>Where it lands.</strong> The bilocal article's introduction, as the constructive origin, and <em>Two Readings of One Transformation: A Comparison</em> (<code>articles_physics/two-readings-of-one-transformation-a-comparison.md</code>), where the second point's frame dependence is the point at issue. </p>
+<p><strong>What stands in the way.</strong> The paper asserts the second centre and identifies its frame without giving the map from $(X,\text{triad})$ to $(x_1,x_2)$; the algebra would have to be reconstructed. The remainder, one line each. The six relativistic Euler angles, three real and three imaginary, with the tetrad constraints automatic, belong with <em>Rigid-Body Dynamics and the Biquaternion Rotor</em> (<code>articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.md</code>) and <em>Hannay's Angles</em> (<code>articles_physics/hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form.md</code>); the price is a complexified coordinate domain. The generalisation of the Weyssenhoff relations and the constancy of $M_{\alpha\beta}M^{\alpha\beta}$ are standard spinning-particle mechanics and appear in the corpus's angular-momentum article. The identification of the rotator variables with "hidden variables of the causal interpretation belongs with the 1952 conversion's discussion of the ensemble, which is more careful about the word hidden. The remark that Yukawa's non-local model is a very simplified schematization" of extended particles is a priority note.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

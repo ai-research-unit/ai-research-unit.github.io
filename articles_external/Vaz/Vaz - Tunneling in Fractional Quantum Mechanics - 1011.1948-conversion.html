@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tunneling in Fractional Quantum Mechanics — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Vaz/Vaz - Tunneling in Fractional Quantum Mechanics - 1011.1948.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tunneling-in-fractional-quantum-mechanics"><strong>Tunneling in Fractional Quantum Mechanics</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1011.1948v2 [math-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>E. Capelas de Oliveira, J. Vaz, Jr.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 15 March 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Vaz/Vaz - Tunneling in Fractional Quantum Mechanics - 1011.1948-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Tunneling in Fractional Quantum Mechanics - 1011.1948.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Vaz/Vaz - Tunneling in Fractional Quantum Mechanics - 1011.1948.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Solves the fractional Schrödinger equation across one and two delta barriers and computes the reflection and transmission coefficients. The results are not small corrections to the ordinary ones: at zero energy the transmission does not vanish but equals $\cos^2(\pi/\alpha)$, where $\alpha$ is the order of the Riesz derivative, so a particle passes through a barrier it has no energy to cross. The explanation offered is the path-integral picture — fractional quantum mechanics sums over Lévy flights, and a jump can carry the particle across the barrier in one step.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-programme">The programme</h3>
+<p>"We study the tunneling through delta and double delta potentials in fractional quantum mechanics. After solving the fractional Schrödinger equation for these potentials, we calculate the corresponding reflection and transmission coefficients. These coefficients have a very interesting behaviour."</p>
+<h3 id="the-headline-result">The headline result</h3>
+<p>"In particular, we can have zero energy tunneling when the order of the Riesz fractional derivative is different from 2. For both potentials, the zero energy limit of the transmis- sion coefficient is given by T0 = cos2 (π/α), where α is the order of the derivative (1 &lt; α ≤ 2). 1. Introduction In recent"</p>
+<p>That the result is independent of the barrier's strength, and for the double barrier of the separation between the two, is what the authors single out: "in the case of the double delta potential, this zero energy tunneling is independent of the relation of the two delta functions."</p>
+<h3 id="the-explanation">The explanation</h3>
+<p>"FQM was defined from the point of view of path integrals." In the ordinary case the sum runs over Brownian paths; "in FQM the sum is taken over the paths of Lévy flights, which are generalizations of Brownian motion, and such that the corresponding probability distribution has infinite variance."</p>
+<p>"By means of Lévy flights, there is a not negligible probability of a particle reaching faraway points in a single jump, in contrast to a random walk of Brownian motion type."</p>
+<p>Hence the mechanism: "in the fractional one, where long jumps of Lévy flights enter the sum in the path integral, this may be responsible for the tunneling with probability cos2 (π/α). Acknowledgements"</p>
+<h3 id="the-uncertainty-relation">The uncertainty relation</h3>
+<p>The fractional theory keeps an uncertainty principle with a modified exponent, $\langle|\Delta x|^\mu\rangle^{1/\mu}\langle|\Delta p|^\mu\rangle^{1/\mu}&gt;\hbar/(2\alpha)^{1/\mu}$ for $\mu&lt;\alpha$, and this is what allows a particle at zero energy to carry a momentum spread.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-barrier-is-not-a-barrier-when-the-paths-are-discontinuous">1. A barrier is not a barrier when the paths are discontinuous</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: in a theory whose path integral runs over discontinuous paths, a potential step does not exclude a particle. Transmission at zero energy is non-zero and equals $\cos^2(\pi/\alpha)$, a function of the path class and not of the barrier.</p>
+<p><strong>What it would add.</strong> Every scattering article in the corpus assumes continuous propagation, so a potential either reflects or transmits according to its height. This is a case where the answer depends on the class of paths admitted rather than on the potential, which is a different kind of statement about what a barrier means, and it is one the corpus can state without adopting the whole fractional programme.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.md</code>.</p>
+<p><strong>What stands in the way.</strong> The result belongs to a non-relativistic theory with a fractional derivative, and the corpus's scattering machinery is relativistic and built on a Green's function; the two would sit side by side rather than connect.</p>
+<h3 id="2-the-exponent">2. The exponent</h3>
+<p>$\alpha$ is a knob on the transmission, not a parameter to fit</p>
+<p><strong>The idea.</strong> A <strong>formula with a limit</strong>: $T_0=\cos^2(\pi/\alpha)$ interpolates between no transmission as $\alpha\to1$ and full transmission at $\alpha=2$ (in the limiting sense of the ordinary theory), so a single number controls how leaky a barrier is.</p>
+<p><strong>What it would add.</strong> The corpus has several articles where one number parameterises a whole family of behaviours. This is a clean instance: the transmission at zero energy is a closed-form function of the order of the derivative, computable without solving anything, and it makes the ordinary case a limiting value rather than a separate theory.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.md</code>.</p>
+<p><strong>What stands in the way.</strong> The formula is for delta potentials specifically, and the corpus has no fractional derivative anywhere, so the result would be quoted as a curiosity.</p>
+<h3 id="3-infinite-variance-is-the-mechanism-not-an-artefact">3. Infinite variance is the mechanism, not an artefact</h3>
+<p><strong>The idea.</strong> A <strong>distinction</strong>: the Lévy distribution's infinite variance is usually treated as a defect that makes a model ill-behaved. Here it is the physical content — it is what permits the long jump, and hence the tunneling.</p>
+<p><strong>What it would add.</strong> The corpus's statistical and thermodynamic articles work with finite moments throughout, and where a divergence appears it is usually regulated. This is an example where the divergence is doing the work and must not be regulated away, which is a useful counterweight and a warning about the corpus's own habit of cutting off divergent integrals.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> The landing is remote; the corpus has no article on stable distributions, and the point would be a remark rather than a result.</p>
+<p>The rank: the discontinuous-path result first, because it changes what a barrier means; the closed-form transmission second, because it is a formula; the infinite-variance point last, because it is a methodological remark.</p>
+<p>The remaining items in one line each: the modified uncertainty relation with exponent $\mu&lt;\alpha$, which is what keeps the zero-energy state consistent; the Fox $H$-function appendix, which is the technical tool that makes the delta-potential solutions writable in closed form; and the observation that both the single and double barriers give the same zero-energy limit, which is the strongest hint that the result is kinematic rather than dynamical.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

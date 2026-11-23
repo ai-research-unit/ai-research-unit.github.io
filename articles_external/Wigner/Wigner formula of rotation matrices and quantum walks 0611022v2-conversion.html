@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wigner Formula of Rotation Matrices and Quantum Walks — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Wigner formula of rotation matrices and quantum walks 0611022v2.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wigner-formula-of-rotation-matrices-and-quantum-walks"><strong>Wigner Formula of Rotation Matrices and Quantum Walks</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>quant-ph/0611022v2</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takahiro Miyazaki, Makoto Katori, Norio Konno</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 6 June 2007</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Wigner formula of rotation matrices and quantum walks 0611022v2-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Wigner formula of rotation matrices and quantum walks 0611022v2.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Wigner formula of rotation matrices and quantum walks 0611022v2.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Uses Wigner's $(2j+1)$-dimensional unitary representations of rotations as the quantum coin of a discrete-time quantum walk on a line, and computes the long-time limit distribution for every half-integer $j$. The walker carries a $(2j+1)$-component qudit; the coin is a rotation; and the limit distribution turns out to be a finite superposition of scaled Konno densities, with the number of terms fixed by the dimension of the representation. The Wigner $D$-matrices supply the weights. A clean example of representation theory setting the shape of a probability law.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setup">The setup</h3>
+<p>"In quantum walks, the qudit of walker is mixed according to the quantum coin at each time step, when the walker hops to other sites. As special cases of the quantum walks driven by high-dimensional quantum coins generally studied by Brun, Carteret, and Ambainis, we study the models obtained by choosing rotation as the unitary transformation, whose matrix representations determine quantum coins."</p>
+<h3 id="the-role-of-wigners-matrices">The role of Wigner's matrices</h3>
+<p>"We show that Wigner's $(2j+1)$-dimensional unitary representations of rotations with half-integers $j$'s are useful to analyze the probability laws of quantum walks. For any value of half-integer $j$, convergence of all moments of walker's pseudovelocity in the long-time limit is proved."</p>
+<h3 id="the-theorem">The theorem</h3>
+<p>"It is generally shown for the present models that, if (2j + 1) is even, the probability measure of limit distribution is given by a superposition of (2j + 1)/2 terms of scaled Konno’s density functions, and if (2j + 1) is odd, it is a superposition of j terms of scaled Konno’s density functions and a Dirac’s delta function at the origin."</p>
+<h3 id="konnos-density">Konno's density</h3>
+<p>The building block is</p>
+<p>$$\mu(x;a)=\frac{\sqrt{1-a^{2}}}{\pi(1-x^{2})\sqrt{a^{2}-x^{2}}}\,\mathbf{1}_{\{|x|&lt;|a|\}},$$</p>
+<p>"the density function first introduced by Konno to describe the limit distributions of the standard two-component quantum walks". The paper notes that $\mu$ is "inversed bell-shaped on a finite support" in contrast with the Gaussian of a classical random walk.</p>
+<h3 id="why-it-works">Why it works</h3>
+<p>"we have found that the representation theory of groups is useful to calculate the weight functions. Especially the Wigner formula for rotation matrices is critical."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-dimension-of-the-representation-sets-the-number-of-peaks">1. The dimension of the representation sets the number of peaks</h3>
+<p><strong>The idea.</strong> A <strong>counting result</strong>: a walk with a $(2j+1)$-component coin has a limit distribution made of $(2j+1)/2$ ballistic terms when the dimension is even, and $j$ terms plus a delta at the origin when it is odd. The number of terms is a property of the representation, not of the coin's parameters.</p>
+<p><strong>What it would add.</strong> The corpus's representation articles treat dimension as a label attached to a physical particle — spin $j$ means $2j+1$ components. Here dimension does combinatorial work: it counts the terms of a limiting law. That is a different use of the same fact, and it would give the corpus's finite-dimensional representation article a worked case where the dimension is an observable integer in a probability formula.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-finite-dimensional-representations-and-their-unitarity-defect.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus has no quantum-walk machinery, so the addition would be a pointer to an application rather than something the corpus can reproduce; and the result is specific to the rotation-coin family.</p>
+<h3 id="2-odd-dimension-is-what-allows-the-walker-to-stay-put">2. Odd dimension is what allows the walker to stay put</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: with an odd number of components there is a channel in which the walker does not move, and that channel appears in the limit as a Dirac mass at the origin. With an even number there is none, and the limit is purely ballistic.</p>
+<p><strong>What it would add.</strong> The corpus's discrete-time constructions — the exponential, the pairings, the finite-dimensional unitary evolution — never have a "stay" step, because their time evolution is a single operator applied uniformly. A nearest-neighbour walk with a retention channel is a different unitary, and the odd/even split is a statement about the parity of the coin's dimension controlling whether such a channel exists. That is a concrete instance of a representation-theoretic parity constraint producing a dynamical consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-exponential-and-its-three-pairings.md</code>.</p>
+<p><strong>What stands in the way.</strong> The parity statement is about a bipartite lattice structure as much as about the representation, so the odd/even coincidence may be a fact about the chosen hopping rule rather than a deep constraint.</p>
+<h3 id="3-konnos-density-as-the-universal-ballistic-limit-shape">3. Konno's density as the universal ballistic limit shape</h3>
+<p><strong>The idea.</strong> A <strong>universal law</strong>: the long-time limit of a quantum walk on a line is not Gaussian but Konno's density, with a finite support and inverse-bell shape, and every higher-dimensional coin produces a superposition of scaled copies of it.</p>
+<p><strong>What it would add.</strong> The corpus uses Gaussian and exponential distributions in its statistical articles without ever noting that a ballistic unitary walk gives a different limit shape. Naming the shape and its support would let the corpus distinguish diffusive from ballistic spreading by the form of the limit law alone, which is a diagnostic the corpus's transport discussions could use.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.md</code>.</p>
+<p><strong>What stands in the way.</strong> This is a weak landing site; the corpus has no article on limit laws, and attaching the result to a thermodynamics article is a stretch rather than a fit.</p>
+<p>The rank: the dimension count first, because it is a theorem; the odd-dimension retention channel second, because it is a mechanism; Konno's density last, because the corpus has nowhere natural to put it.</p>
+<p>The remaining items in one line each: the proof that all moments of the pseudovelocity converge, which is stronger than the usual convergence in distribution; the explicit weights for $j=\tfrac12,1,\tfrac32$, which show that the weight functions are polynomials; and the comparison with computer simulation, which is the paper's only check but a direct one.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

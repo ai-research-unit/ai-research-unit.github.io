@@ -83,18 +83,18 @@ $$</p>
 <p>$$
 \vec J_{+}=\tfrac12\bigl(\vec J+i\vec K\bigr),\qquad \vec J_{-}=\tfrac12\bigl(\vec J-i\vec K\bigr),
 $$</p>
-<p>component by component: $J_{+k}=\tfrac12(J_\imath+iK_\imath)$ and $J_{-k}=\tfrac12(J_\imath-iK_\imath)$.</p>
+<p>component by component: $J_{+k}=\tfrac12(J_{\imath}+iK_{\imath})$ and $J_{-k}=\tfrac12(J_{\imath}-iK_{\imath})$.</p>
 <h3 id="the-complex-number-in-the-definition">The Complex Number in the Definition</h3>
-<p>The symbol $i$ in that display is the <strong>scalar of the complexification</strong>, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_\imath=i\cdot\tfrac12 i\vec e_\imath=-\tfrac12\vec e_\imath=-J_\imath$ and therefore</p>
+<p>The symbol $i$ in that display is the <strong>scalar of the complexification</strong>, not the central element of the algebra, and the difference is not pedantic. With the central element the combination vanishes identically, because $iK_{\imath}=i\cdot\tfrac12 i\vec e_{\imath}=-\tfrac12\vec e_{\imath}=-J_{\imath}$ and therefore</p>
 <p>$$
-J_\imath+iK_\imath=0 .
+J_{\imath}+iK_{\imath}=0 .
 $$</p>
 <p>That identity is correct, and it is the reason the two triples have no meaning inside the real algebra, and none inside the algebra read with its own complex structure either.</p>
 <p>The complexification is the space of formal complex combinations,</p>
 <p>$$
 \mathfrak{so}(1,3)_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{so}(1,3),
 $$</p>
-<p>in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_\imath+iK_\imath$ is a nonzero vector, and the two triples live there.</p>
+<p>in which the scalar multiplies a real basis without being an element of the algebra. In that space $J_{\imath}+iK_{\imath}$ is a nonzero vector, and the two triples live there.</p>
 <h3 id="the-two-must-not-be-identified">The Two Must Not Be Identified</h3>
 <p>There is a natural map from the complexification into the algebra, $\digamma_{\mathrm{scl}}\otimes x\mapsto\digamma_{\mathrm{scl}} x$, and it is not injective. The element</p>
 <p>$$
@@ -108,13 +108,13 @@ $$</p>
 $$</p>
 <p>A reader who tries to compute the two triples as biquaternions will get zero, and the zero is not an error of arithmetic; it is the identity above. The triples are objects of the complexification, and every formula in this article is a formula there.</p>
 <h3 id="how-the-checks-are-done">How the Checks Are Done</h3>
-<p>The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_\imath$ and $K_\imath$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_\imath)\pm i\rho(K_\imath))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_\imath)=i\,\mathsf{M}_2(J_\imath)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.</p>
+<p>The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_{\imath}$ and $K_{\imath}$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_{\imath})\pm i\rho(K_{\imath}))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_{\imath})=i\,\mathsf{M}_2(J_{\imath})$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.</p>
 <h2 id="each-triple-closes">Each Triple Closes</h2>
 <h3 id="the-three-brackets">The Three Brackets</h3>
-<p>With the table $[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_\imath$, $[J_i,K_j]=\epsilon_{\imath\jmath\ell}K_\imath$, $[K_i,K_j]=-\epsilon_{\imath\jmath\ell}J_\imath$,</p>
+<p>With the table $[J_i,J_j]=\epsilon_{\imath\jmath\ell}J_{\imath}$, $[J_i,K_j]=\epsilon_{\imath\jmath\ell}K_{\imath}$, $[K_i,K_j]=-\epsilon_{\imath\jmath\ell}J_{\imath}$,</p>
 <p>$$
 [J_{+i},J_{+j}]=\tfrac14\Bigl([J_i,J_j]+i[J_i,K_j]+i[K_i,J_j]-[K_i,K_j]\Bigr)
-=\tfrac14\bigl(2\epsilon_{\imath\jmath\ell}J_\imath+2i\epsilon_{\imath\jmath\ell}K_\imath\bigr)=\epsilon_{\imath\jmath\ell}J_{+k}.
+=\tfrac14\bigl(2\epsilon_{\imath\jmath\ell}J_{\imath}+2i\epsilon_{\imath\jmath\ell}K_{\imath}\bigr)=\epsilon_{\imath\jmath\ell}J_{+k}.
 $$</p>
 <p>The same computation with $i\to-i$ gives</p>
 <p>$$
@@ -124,7 +124,7 @@ $$</p>
 <h3 id="the-cross-brackets">The Cross Brackets</h3>
 <p>$$
 [J_{+i},J_{-j}]=\tfrac14\Bigl([J_i,J_j]-i[J_i,K_j]+i[K_i,J_j]+[K_i,K_j]\Bigr)
-=\tfrac14\bigl(\epsilon_{\imath\jmath\ell}J_\imath-i\epsilon_{\imath\jmath\ell}K_\imath+i\epsilon_{\imath\jmath\ell}K_\imath-\epsilon_{\imath\jmath\ell}J_\imath\bigr)=0 .
+=\tfrac14\bigl(\epsilon_{\imath\jmath\ell}J_{\imath}-i\epsilon_{\imath\jmath\ell}K_{\imath}+i\epsilon_{\imath\jmath\ell}K_{\imath}-\epsilon_{\imath\jmath\ell}J_{\imath}\bigr)=0 .
 $$</p>
 <p>Every cross bracket vanishes. This is the whole content of the change of basis: the six-generator table, which has three non-trivial blocks, becomes two three-generator tables and a block of zeros.</p>
 <h3 id="the-verification">The Verification</h3>
@@ -149,13 +149,13 @@ $$</p>
 <h3 id="bivectors">Bivectors</h3>
 <p>A Lorentz transformation's infinitesimal generator is a bivector $M_{\imath\jmath}=-M_{\jmath\imath}$, with six independent components: three $M_{0i}$ and three $M_{ij}$. The dictionary to the generators of this block is</p>
 <p>$$
-M_{0i}\longleftrightarrow K_i,\qquad M_{ij}\longleftrightarrow\epsilon_{\imath\jmath\ell}J_\imath,
+M_{0i}\longleftrightarrow K_i,\qquad M_{ij}\longleftrightarrow\epsilon_{\imath\jmath\ell}J_{\imath},
 $$</p>
 <p>so a boost is a timelike-spacelike bivector and a rotation is a spacelike-spacelike one.</p>
 <h3 id="the-hodge-star">The Hodge Star</h3>
 <p>On bivectors the Hodge star is</p>
 <p>$$
-\star M_{0i}=\tfrac12\epsilon_{\imath\jmath\ell}M_{j\imath},\qquad \star M_{j\imath}=-\epsilon_{j\imathi}M_{0i},
+\star M_{0i}=\tfrac12\epsilon_{\imath\jmath\ell}M_{j\imath},\qquad \star M_{j\imath}=-\epsilon_{j\imath i}M_{0i},
 $$</p>
 <p>which satisfies $\star^{2}=-1$ on real bivectors. The sign of the square is the Lorentzian sign pattern's: in the Euclidean case the star squares to $+1$ and there is no splitting, which is why the self-dual decomposition is a Lorentzian phenomenon and why <em>The SO(4) Route to the Euclidean Frame</em> has to say what replaces it.</p>
 <h3 id="the-projections">The Projections</h3>
@@ -165,13 +165,13 @@ $$</p>
 $$</p>
 <p>are complementary projectors, and they split the complexified bivector space into the $\pm i$ eigenspaces of the star. Applied to the generators:</p>
 <p>$$
-\star J_\imath=-K_\imath,\qquad \star K_\imath=J_\imath,
+\star J_{\imath}=-K_{\imath},\qquad \star K_{\imath}=J_{\imath},
 $$</p>
 <p>so</p>
 <p>$$
-\star\bigl(J_\imath+iK_\imath\bigr)=-K_\imath+iJ_\imath=i\bigl(J_\imath+iK_\imath\bigr),
+\star\bigl(J_{\imath}+iK_{\imath}\bigr)=-K_{\imath}+iJ_{\imath}=i\bigl(J_{\imath}+iK_{\imath}\bigr),
 \qquad
-\star\bigl(J_\imath-iK_\imath\bigr)=-i\bigl(J_\imath-iK_\imath\bigr).
+\star\bigl(J_{\imath}-iK_{\imath}\bigr)=-i\bigl(J_{\imath}-iK_{\imath}\bigr).
 $$</p>
 <p>Hence $\vec J_+$ spans the self-dual bivectors and $\vec J_-$ the anti-self-dual ones, and the two triples are the two eigenspaces. The factor $\tfrac12$ in the definition of the triples is the normalisation that makes the projector formula come out with unit coefficient.</p>
 <h3 id="why-the-names-are-the-right-ones">Why the Names Are the Right Ones</h3>
@@ -199,8 +199,8 @@ $$</p>
 <h3 id="why-it-is-false">Why It Is False</h3>
 <p>Two facts, each decisive.</p>
 <ul>
-<li><strong>The two triples are not the compact real form.</strong> In the compact real form $\mathfrak{su}(2)$ the generators are anti-Hermitian and satisfy $[T_i,T_j]=\epsilon_{\imath\jmath\ell}T_\imath$ with all three directions equivalent. In the Lorentz algebra the three $J$ are anti-Hermitian and the three $K$ are Hermitian; the triple $\vec J_+$ contains $i\vec K$, which is anti-Hermitian only if $K$ is Hermitian <em>and</em> the $i$ is the coefficient field's, so the triple as a whole is in the complexification and has no Hermiticity property of its own. A complex basis element cannot be tested for Hermiticity without a real form to test against.</li>
-<li><strong>The compact real form is a different real slice.</strong> The algebra $\mathfrak{so}(4)$ has generators with $[K_i,K_j]=+J_\imath$ and is a sum of two copies of $\mathfrak{su}(2)$; the algebra $\mathfrak{so}(1,3)$ has the minus sign and is not. The two are different real forms of the same complex algebra, and the sign of one block of the table is what separates them.</li>
+<li><strong>The two triples are not the compact real form.</strong> In the compact real form $\mathfrak{su}(2)$ the generators are anti-Hermitian and satisfy $[T_i,T_j]=\epsilon_{\imath\jmath\ell}T_{\imath}$ with all three directions equivalent. In the Lorentz algebra the three $J$ are anti-Hermitian and the three $K$ are Hermitian; the triple $\vec J_+$ contains $i\vec K$, which is anti-Hermitian only if $K$ is Hermitian <em>and</em> the $i$ is the coefficient field's, so the triple as a whole is in the complexification and has no Hermiticity property of its own. A complex basis element cannot be tested for Hermiticity without a real form to test against.</li>
+<li><strong>The compact real form is a different real slice.</strong> The algebra $\mathfrak{so}(4)$ has generators with $[K_i,K_j]=+J_{\imath}$ and is a sum of two copies of $\mathfrak{su}(2)$; the algebra $\mathfrak{so}(1,3)$ has the minus sign and is not. The two are different real forms of the same complex algebra, and the sign of one block of the table is what separates them.</li>
 </ul>
 <h3 id="what-unitarity-needs">What Unitarity Needs</h3>
 <p>A unitary representation needs an inner product preserved by the representation, and that needs a real form on which the star is positive definite. On a non-compact real form no such form exists for a nontrivial finite-dimensional representation: the boosts are Hermitian generators with real eigenvalues, and a Hermitian operator with a nonzero real eigenvalue cannot be unitary in a finite-dimensional space. This is the argument of <em>The Finite-Dimensional Representations and Their Unitarity Defect</em>, and the present article supplies its algebraic premise.</p>
@@ -227,7 +227,7 @@ $$</p>
 </tr>
 <tr>
 <td>$M_{\imath\jmath}$</td>
-<td>the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{\imath\jmath\ell}J_\imath$</td>
+<td>the bivector generators, $M_{0i}=K_i$, $M_{ij}=\epsilon_{\imath\jmath\ell}J_{\imath}$</td>
 </tr>
 <tr>
 <td>$\star$</td>

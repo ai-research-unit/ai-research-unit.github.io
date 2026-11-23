@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equation of Motion of Elementary Particle from Unified Approach — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equation of Motion of Elementary Particle from Unified Approach.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equation-of-motion-of-elementary-particle-from-unified-approach"><strong>Equation of Motion of Elementary Particle from Unified Approach</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan, <em>Letters to the Editor</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>36</strong> (1966) 185, No. 1; dated 19 April 1966</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Equation of Motion of Elementary Particle from Unified Approach-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equation of Motion of Elementary Particle from Unified Approach.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Equation of Motion of Elementary Particle from Unified Approach.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives the free equation of motion for a particle whose internal configuration is a <em>triad</em>: three orthogonal equal-length vectors built from a single two-component spinor. The kinematics of that spinor gives half-integer spin, a body-axis rotation group, a total vibration number $N$, and a chain of shells whose state counts are $1,4,10,\dots$ — the symmetric representations of $SU(4)$. The first shell reproduces the Dirac theory and the second the Kemmer theory; the triple-spinor version gives $U(12)$ and hence $SU(6)$. Half-integer spin and antiparticles follow from the internal motion with no extra assumption.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-this-model">Why this model</h3>
+<p>"A different approach to the problem is motivated by the supposition that a particle has a space-time configuration which is not reducible to constituent particles and is described by certain continuous coordinates whose quantized internal motion directly produces the observed intrinsic properties such as spin and unitary spin. ... Taking a certain concrete model plays here the role of selecting, out of all mathematically allowable irreducible representations of the Poincare group, those which are realized by the system in question. The most appropriate choice seem to be the model built on internal coordinates consisting of triple 2-component spinors $\xi^{u}$ ($u=1,2,3$)."</p>
+<p>A footnote states the gain precisely: the advantage of this model is that the half-integer spin, the existence of antiparticles, $SU(6)$ symmetry and a positive-definite mass spectrum result from its internal motion without additional assumptions.</p>
+<h3 id="the-triad">The triad</h3>
+<p>"For simplicity we first outline the theory for a simplified model when we assume a single $\xi^{a}$ ($a=1,2$), ignoring the unitary-symmetry aspect. This $\xi^{a}$ contains four hermitian coordinates $X^{a}$ and $Y^{a}$ given by $\xi^{a}=(x^{a}+iy^{a})/\sqrt2$, and the configuration implied is a triad consisting of three orthogonal relative vectors $x_i^{r}$ ($r=1,2,3$; $i=1,2,3$) of equal length. These are given by $x^{i}{}_{r}=-(\ell_0/2)\epsilon^{2}\rho^{rs}a^{s}\xi$, where $\xi$ is the Majorana spinor equivalent to $X$, and $\rho^{r}$ are Pauli matrices ... while $\ell_0$ is a basic length."</p>
+<p>The triad can further be regarded as a regular tetrahedron spanned by four points $X_A$ ($A=1,\dots,4$), which can translate, rotate and dilate in our physical space.</p>
+<h3 id="spin-body-axis-rotation-shells">Spin, body-axis rotation, shells</h3>
+<p>"iO a;/2) -~under rotation, the model selecting, out of all mathematically allowa- must carry intrinsic angular momentum, the ble irreducible representations of the Poin-", where $\pi^a$ is canonical to $\xi^a$, with $\{[\xi^a,\pi^\beta]=[\xi^{*a},\pi^{*\beta}]=i\delta^{a\beta}$, other commutators $=0\}$.</p>
+<p>The system carries further intrinsic properties, which are described especially by the operator of body-axis rotation $K_r=(i/2)\pi\rho_r\xi$ and the total vibration operator $N$.</p>
+<p>"Since the variables ... or the bispinors $B^{\alpha}$ ... satisfy $[B^{*}_{\alpha},B_{\beta}]=\delta_{\alpha\beta}$, the canonical transformations on $B^{\alpha}$ form a $U(4)$ group, for which (2) is invariant. The generators of this group consist of $J_i=B^{*}\sigma_iB/2$, $K_r=-B^{*}\rho_rB/2$, $N=B^{*}B$, and the quantity $M^{i}_{r}=-B^{*}\rho_{ri}B/2$ mixing spin and K-spin rotations. The subset $N$, $K_3$, $J_i$ and $M^{i}_{3}$ generate the subgroup $U_a(2)\times U_b(2)\subset U(4)$. A complete set of commuting quantities specifying internal motion is given by $(N,J^{2},K_3,J_3)$."</p>
+<p>The basis states of the system are divided into shells according to the eigenvalue of $N$; $N=0$ specifies the internal ground state, $N=1$ the first shell, etc. The basis states belonging to the $N$-shell constitute the symmetric representation $(N;0,0)$ of $SU(4)$, so that their number is $(N+1)(N+2)(N+3)/6=1,4,10,\dots$</p>
+<h3 id="the-equation-and-its-shell-content">The equation, and its shell content</h3>
+<p>"Now we postulate that for free particles the internal motion should be a periodic one with the de Broglie frequency $\omega=(P^{2}+m^{2})^{1/2}$, thus realizing an early suggestion of de Broglie on the meaning of the mass $m$. More precisely we assume the equation of motion ... (except for the ground state), where $m$ can be a positive-definite $U(4)$-invariant quantity depending on the internal variables." These are derived from the Hamiltonian $H=N^{-1}\{P(\xi^{*}\alpha\xi+\pi^{*}\alpha\pi)+m(\xi\alpha\pi-\xi^{*}\alpha\pi^{*})\}$ through the commutation rule (1), and (6) ensures $P_iN=0$.</p>
+<p>"If we restrict ourselves to the first shell by imposing the condition $N=1$ the above theory reduces to the usual Dirac theory, while for the second shell ($N=2$) it agrees with the Kemmer theory."</p>
+<h3 id="the-math70-extension">The $SU(6)$ extension</h3>
+<p>"One can now extend the method to the model built on triple spinors ~". Then one gets the SU(6) symmetry mixing spin and unitary spin, by the group of kinema- tical transformations on internal coordinates, with unitary spin A'\t=-i(~nv-~<em>n "</em>). 2 l The canonical groups U(4) and Ua(2) X Ub(2) mentioned above are here elevated to. U(12) and Ua(6) X Ub(6). The Hamilt- onian"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-half-integer-spin-from-a-bosonic-counting-of-coordinates">1. Half-integer spin from a bosonic counting of coordinates</h3>
+<p><strong>The idea.</strong> The internal coordinate is a <em>Majorana</em> spinor — four real numbers — and the configuration it implies is three orthogonal equal vectors, a triad with no spinor index in the wave function. Yet the spin operator is $J_i=-(i/2)(\pi\sigma_i\xi-\text{h.c.})$, so the spectrum is half-integral. Antiparticles come with it, because the conjugate spinor pairs with the same $\sigma$ matrices.</p>
+<p><strong>What it would add.</strong> A second route to half-integer spin. <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (<code>articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.md</code>) derives the spinor module from the algebra; here the spinor is a quantised <em>coordinate</em> and half-integrality comes from the canonical pair.</p>
+<p><strong>Where it lands.</strong> §<em>The Two Halves</em>, as the coordinate-space construction.</p>
+<p><strong>What stands in the way.</strong> The triad is a <em>set of three vectors</em>, and that rotations act on it consistently is asserted via the Majorana equivalence rather than proved.</p>
+<h3 id="2-the-dirac-field-is-the-first-shell-the-kemmer-field-the-second">2. The Dirac field is the first shell; the Kemmer field the second</h3>
+<p><strong>The idea.</strong> A single equation of motion for a bosonic internal triad has a shell structure indexed by $N$. At $N=1$ it <em>is</em> the Dirac theory, at $N=2$ the Kemmer theory. The Dirac equation is then a truncation of a larger system, and its spin-$\tfrac12$ is the smallest nonzero shell's content, not a fundamental property.</p>
+<p><strong>What it would add.</strong> A derivation of the Dirac equation as a shell. <em>Parras' Four Options of the Dirac Equation and the Discrete Symmetries</em> (<code>articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.md</code>) and <em>Relativistic Mechanics from the Dirac Wave</em> (<code>articles_physics/relativistic-mechanics-from-the-dirac-wave.md</code>) take the equation as given; here it is derived from a larger system.</p>
+<p><strong>Where it lands.</strong> <em>Parras' Four Options</em> §<em>The Two Dirac Equations</em>, as the shell-truncation reading.</p>
+<p><strong>What stands in the way.</strong> "Reduces to" and "agrees with" are asserted with no demonstration; the identification of the shell content with the Dirac and Kemmer fields rests on matching the dimensions $1,4,10$ to the field components.</p>
+<h3 id="3-the-kinematic-group-is-bigger-than-the-symmetry-group-and-that-is-a-feature">3. The kinematic group is bigger than the symmetry group, and that is a feature</h3>
+<p><strong>The idea.</strong> $U(4)$ and $U_a(2)\times U_b(2)$ are not necessarily symmetry groups of the Hamiltonian but largely determine the content of theory. The group of canonical transformations on the internal variables is what organises the spectrum; the Hamiltonian then breaks it.</p>
+<p><strong>What it would add.</strong> A precise separation of kinematic from dynamic symmetry. <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em> (<code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>) counts what a carrier can hold, which is a kinematic statement; Takabayasi's footnote makes the distinction explicit and adds that the kinematic group is what selects the realisable representations of the Poincaré group. That is the step the corpus's counting article leaves implicit.</p>
+<p><strong>Where it lands.</strong> §<em>What a Module Can Carry</em>, as the kinematic/dynamic distinction.</p>
+<p><strong>What stands in the way.</strong> The distinction is stated in a footnote and never used to derive anything in this letter.</p>
+<h3 id="4-periodic-internal-motion-at-the-de-broglie-frequency">4. Periodic internal motion at the de Broglie frequency</h3>
+<p><strong>The idea.</strong> The equation of motion is not postulated as a wave equation but as a <em>periodicity condition</em>: the internal motion oscillates at $\omega=(P^{2}+m^{2})^{1/2}$, which is de Broglie's original identification of mass with an internal clock. Mass then enters as the frequency of the internal motion, and the Hamiltonian follows from it.</p>
+<p><strong>What it would add.</strong> A route to the mass term that is neither a symmetry-breaking nor a Higgs mechanism but a clock rate. <em>The Discrete Lattice and the Thermal Circle</em> (<code>articles_physics/the-discrete-lattice-and-the-thermal-circle.md</code>) discusses periodicity and its thermodynamic reading; here periodicity is what <em>defines</em> mass, and the de Broglie frequency is promoted from interpretation to postulate.</p>
+<p><strong>Where it lands.</strong> §<em>The Circle and the Period</em>, as the kinematic clock.</p>
+<p><strong>What stands in the way.</strong> For a composite with internal motion the frequency is not obviously $\sqrt{P^{2}+m^{2}}$; the postulate works because $H$ is then constructed to make it so.</p>
+<p>The remainder, one line each. That the state counts $1,4,10$ are the symmetric $SU(4)$ representations is the cleanest derivation of a shell spectrum in the folder. That the kinematic group rises to $U(12)$ for triple spinors is the mechanism behind $SU(6)$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -80,7 +80,7 @@
 <p>$$
 \langle X\wedge Y,\, Z\wedge W\rangle = g(X, Z)\,g(Y, W) - g(X, W)\,g(Y, Z),
 $$</p>
-<p>extended bilinearly. The form is symmetric and positive definite; if $e_1, \ldots, e_n$ is an orthonormal basis of $V$ then $\{e_i\wedge e_j\}_{i < j}$ is an orthonormal basis of $\Lambda^2V$, of dimension $N = \frac{1}{2}n(n-1)$. The <strong>Gram determinant</strong> of a decomposable bivector is</p>
+<p>extended bilinearly. The form is symmetric and positive definite; if $e_1, \ldots, e_n$ is an orthonormal basis of $V$ then $\{e_i\wedge e_j\}_{i &lt; j}$ is an orthonormal basis of $\Lambda^2V$, of dimension $N = \frac{1}{2}n(n-1)$. The <strong>Gram determinant</strong> of a decomposable bivector is</p>
 <p>$$
 |X\wedge Y|^2 = |X|^2|Y|^2 - g(X, Y)^2 \geq 0,
 $$</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>Consequently the sectional curvature is the restriction of the quadratic form $\omega \mapsto \langle \mathcal{R}\omega, \omega\rangle$ to the decomposable bivectors of unit length, and the values of the sectional curvature at $p$ determine the whole curvature tensor at $p$.</p>
 <p><strong>Proof.</strong> The first equality is the definition of the sectional curvature and the second is the definition of $\mathcal{R}$ with $Z = X$, $W = Y$. The sectional curvatures determine the quadratic form on the decomposable bivectors; they span $\Lambda^2T_pM$, and a quadratic form is determined by its values on a spanning set, by the polarisation identity; hence the form, and with it the operator and the tensor, is determined.</p>
 <p><strong>Theorem (positivity).</strong> If the curvature operator is positive semidefinite, $\langle \mathcal{R}\omega, \omega\rangle \geq 0$ for every bivector $\omega$, then the sectional curvature is nonnegative. If the operator is positive definite the sectional curvature is positive.</p>
-<p><strong>Proof.</strong> A decomposable bivector $X\wedge Y$ is a bivector, so the hypothesis gives $\langle \mathcal{R}(X\wedge Y), X\wedge Y\rangle \geq 0$, and division by $|X\wedge Y|^2 > 0$ gives $K \geq 0$.</p>
+<p><strong>Proof.</strong> A decomposable bivector $X\wedge Y$ is a bivector, so the hypothesis gives $\langle \mathcal{R}(X\wedge Y), X\wedge Y\rangle \geq 0$, and division by $|X\wedge Y|^2 &gt; 0$ gives $K \geq 0$.</p>
 <p><strong>Remark (the converse fails in dimension at least four).</strong> The inequality $\langle \mathcal{R}\omega,\omega\rangle \geq 0$ is required on the whole of $\Lambda^2T_pM$, while the sectional curvature sees only the decomposable cone. In dimension three every bivector is decomposable, so the two conditions coincide; in dimension at least four the decomposable cone is a proper closed cone, and a quadratic form that is nonnegative on it need not be nonnegative on the whole space, since a quadratic form is not monotone on a non-convex cone. A metric whose curvature operator has a negative eigenvalue therefore need not have a negative sectional curvature, and such metrics exist. The point is the one the article records throughout: the operator is a strictly finer object than the collection of its values on the decomposable bivectors, even though those values determine it.</p>
 <h2 id="the-ricci-curvature-and-the-scalar-curvature">The Ricci Curvature and the Scalar Curvature</h2>
 <p><strong>Theorem (the Ricci contraction).</strong> For any $X, Y \in T_pM$ and any orthonormal basis $e_1, \ldots, e_n$ of $T_pM$,</p>
@@ -131,11 +131,11 @@ $$</p>
 $$</p>
 <p>The Ricci tensor is therefore the <strong>contraction</strong> of the curvature operator with the metric on one factor of each bivector.</p>
 <p><strong>Proof.</strong> With the definition of $\mathcal{R}$, the summand is $\langle \mathcal{R}(X\wedge e_i), Y\wedge e_i\rangle = R(X, e_i, e_i, Y)$. Using the antisymmetry in each pair, $R(X,e_i,e_i,Y) = -R(X,e_i,Y,e_i) = R(e_i,X,Y,e_i)$, so the sum is $\sum_iR(e_i,X,Y,e_i)$, which is the definition of the Ricci tensor.</p>
-<p><strong>Corollary (the trace).</strong> The trace of the curvature operator over the orthonormal basis $\{e_i\wedge e_j\}_{i<j}$ of $\Lambda^2T_pM$ is one half of the scalar curvature:</p>
+<p><strong>Corollary (the trace).</strong> The trace of the curvature operator over the orthonormal basis $\{e_i\wedge e_j\}_{i&lt;j}$ of $\Lambda^2T_pM$ is one half of the scalar curvature:</p>
 <p>$$
-\operatorname{tr}\mathcal{R} = \sum_{i<j} \bigl\langle \mathcal{R}(e_i\wedge e_j),\, e_i\wedge e_j\bigr\rangle = \tfrac{1}{2}S .
+\operatorname{tr}\mathcal{R} = \sum_{i&lt;j} \bigl\langle \mathcal{R}(e_i\wedge e_j),\, e_i\wedge e_j\bigr\rangle = \tfrac{1}{2}S .
 $$</p>
-<p><strong>Proof.</strong> Each summand is $R(e_i, e_j, e_j, e_i)$, and by the pair symmetry this equals $R(e_j, e_i, e_i, e_j)$. The scalar curvature is $S = \sum_{i}\operatorname{Ric}(e_i, e_i) = \sum_{i,j}R(e_j, e_i, e_i, e_j)$, the diagonal terms vanishing because the curvature is alternating; hence $S = \sum_{i\neq j}R(e_j,e_i,e_i,e_j) = 2\sum_{i<j}R(e_i,e_j,e_j,e_i) = 2\operatorname{tr}\mathcal{R}$, since each unordered pair occurs twice with the same value.</p>
+<p><strong>Proof.</strong> Each summand is $R(e_i, e_j, e_j, e_i)$, and by the pair symmetry this equals $R(e_j, e_i, e_i, e_j)$. The scalar curvature is $S = \sum_{i}\operatorname{Ric}(e_i, e_i) = \sum_{i,j}R(e_j, e_i, e_i, e_j)$, the diagonal terms vanishing because the curvature is alternating; hence $S = \sum_{i\neq j}R(e_j,e_i,e_i,e_j) = 2\sum_{i&lt;j}R(e_i,e_j,e_j,e_i) = 2\operatorname{tr}\mathcal{R}$, since each unordered pair occurs twice with the same value.</p>
 <p><strong>Remark.</strong> The two traces are the first two of the chain $R \to \mathcal{R} \to \operatorname{Ric} \to S$: the operator is the curvature, its contraction with one factor is the Ricci tensor, and its trace is half the scalar curvature. Each step is a contraction and each loses information, exactly as in the tensor picture.</p>
 <h2 id="the-decomposition-of-the-curvature-operator">The Decomposition of the Curvature Operator</h2>
 <h3 id="the-scalar-and-the-traceless-ricci-parts">The Scalar and the Traceless Ricci Parts</h3>

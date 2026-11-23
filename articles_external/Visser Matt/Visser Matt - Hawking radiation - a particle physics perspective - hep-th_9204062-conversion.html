@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawking radiation: a particle physics perspective — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking radiation - a particle physics perspective - hep-th_9204062.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hawking-radiation-a-particle-physics-perspective"><strong>Hawking radiation: a particle physics perspective</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>hep-th/9204062v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 April 1992</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>14 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Hawking radiation - a particle physics perspective - hep-th_9204062-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking radiation - a particle physics perspective - hep-th_9204062.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Hawking radiation - a particle physics perspective - hep-th_9204062.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Taking seriously the idea that black holes are elementary particles, the author builds a particle-physics estimate of the decay rate into a massless quantum. Two free parameters are fixed by matching the high-energy end of the spectrum to a blackbody at the Hawking temperature. From this he argues three things. Hawking radiation needs only that matter couples to gravity. Its thermal character follows from a huge number of internal states. And the formula still gives finite answers for small black holes, which supports complete evaporation with no remnant.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-suggestion">The suggestion</h3>
+<p>"It has recently become fashionable to regard black holes as elementary particles. By taking this suggestion seriously it is possible to cobble together an elementary particle physics based estimate for the decay rate (black hole)$_i$ → (black hole)$_f$ + (massless quantum)."</p>
+<h3 id="the-parameters">The parameters</h3>
+<p>"This estimate of the spontaneous emission rate contains two free parameters which may be fixed by demanding that the high energy end of the spectrum of emitted quanta match a blackbody spectrum at the Hawking temperature."</p>
+<h3 id="first-implication">First implication</h3>
+<p>"The existence of Hawking radiation from black holes is ultimately dependent only on the fact that photons (and all other forms of matter) couple to gravity."</p>
+<h3 id="second-implication">Second implication</h3>
+<p>"The thermal nature of the Hawking spectrum depends only on the fact that the number of internal states of a large mass black hole is enormous."</p>
+<h3 id="third-implication">Third implication</h3>
+<p>"Remarkably, the resulting formula for the decay rate gives meaningful answers even when extrapolated to low mass black holes. The analysis strongly supports the scenario of complete evaporation as the endpoint of the Hawking radiation process (no naked singularity, no stable massive remnant)."</p>
+<h3 id="the-independence-of-geometry">The independence of geometry</h3>
+<p>"These conclusions are insensitive to the precise nature of the black hole: Schwarzschild, Reissner–Nordstrom, Kerr–Newman, or dilatonic."</p>
+<h3 id="the-coherence-claim">The coherence claim</h3>
+<p>"Because the model treats Hawking radiation as a cascade of quite ordinary particle physics decays, the model automatically preserves quantum coherence. Any initially pure quantum state will evolve to some pure (but complicated) final state."</p>
+<h3 id="the-open-question">The open question</h3>
+<p>"Insofar as the ideas presented in this paper make any sense it now becomes absolutely critical to face head on the question: 'What exactly are the internal states of a black hole?'."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-thermal-behaviour-from-counting-states">1. Thermal behaviour from counting states</h3>
+<p><strong>The idea.</strong> The spectrum is thermal because the state count is astronomically large, not because of horizon geometry.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> derives temperature from horizon quantities. A purely statistical route gives the same result without a horizon, which would let the article separate what needs geometry from what does not.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of temperature.</p>
+<p><strong>What stands in the way.</strong> Two parameters are fitted to the semiclassical answer. Ranked first, because it offers an independent derivation.</p>
+<h3 id="2-radiation-without-a-horizon">2. Radiation without a horizon</h3>
+<p><strong>The idea.</strong> Only the coupling of matter to gravity is needed for the effect to exist.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats horizons as the seat of black hole physics. If radiation does not need one, the article's focus narrows to what horizons uniquely do.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The claim is a reading of a heuristic model. Ranked second.</p>
+<h3 id="3-evaporation-to-nothing">3. Evaporation to nothing</h3>
+<p><strong>The idea.</strong> The model extrapolates to complete evaporation with no remnant.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> should record the remnant question as a constraint that an alternative must answer. This paper argues one side of it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on evaporation.</p>
+<p><strong>What stands in the way.</strong> The extrapolation is uncontrolled. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

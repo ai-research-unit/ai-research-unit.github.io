@@ -77,11 +77,11 @@
 <h2 id="the-isomorphism">The Isomorphism</h2>
 <p><strong>Definition.</strong> Let $\varphi:\operatorname{Sym}_4\to UT_4$ be the linear map fixed on the basis by</p>
 <p>$$
-\varphi(E_{ii})=E_{ii},\qquad \varphi(E_{ij}+E_{ji})=E_{ij}\ \ (i<j).
+\varphi(E_{ii})=E_{ii},\qquad \varphi(E_{ij}+E_{ji})=E_{ij}\ \ (i&lt;j).
 $$</p>
 <p><strong>Theorem.</strong> $\varphi$ is an isomorphism of vector spaces.</p>
-<p><strong>Proof.</strong> Symmetric matrices have the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}+E_{ji}$ for $i<j$, ten elements in all; upper triangular matrices have the basis $E_{ij}$ for $i\le j$, also ten. The map sends one basis to the other, so it is invertible.</p>
-<p><strong>The inverse.</strong> $\varphi^{-1}(E_{ij})=E_{ij}+E_{ji}$ for $i<j$ and $\varphi^{-1}(E_{ii})=E_{ii}$.</p>
+<p><strong>Proof.</strong> Symmetric matrices have the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}+E_{ji}$ for $i&lt;j$, ten elements in all; upper triangular matrices have the basis $E_{ij}$ for $i\le j$, also ten. The map sends one basis to the other, so it is invertible.</p>
+<p><strong>The inverse.</strong> $\varphi^{-1}(E_{ij})=E_{ij}+E_{ji}$ for $i&lt;j$ and $\varphi^{-1}(E_{ii})=E_{ii}$.</p>
 <p><strong>Proof.</strong> Read the definition backwards.</p>
 <p><strong>Proposition.</strong> $\varphi$ preserves the trace and the unit: $\operatorname{tr}\varphi(A)=\operatorname{tr}A$ and $\varphi(\mathrm I_4)=\mathrm I_4$.</p>
 <p><strong>Proof.</strong> Both bases consist of matrices whose trace is $0$ off the diagonal and $1$ on it, and $\mathrm I_4$ is the sum of the four diagonal units in both spaces.</p>
@@ -155,7 +155,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proposition.</strong> The trace pairing is preserved on the diagonal and across it, and it is not preserved between two symmetric pairs: $\beta(E_{ii},E_{jj})=\beta(\varphi(E_{ii}),\varphi(E_{jj}))=\delta_{ij}$, and $\beta(E_{ii},E_{jk}+E_{kj})=\beta(E_{ii},E_{jk})=0$ for $j<k$, but $\beta(E_{12}+E_{21},E_{12}+E_{21})=2$ while $\beta(E_{12},E_{12})=0$.</p>
+<p><strong>Proposition.</strong> The trace pairing is preserved on the diagonal and across it, and it is not preserved between two symmetric pairs: $\beta(E_{ii},E_{jj})=\beta(\varphi(E_{ii}),\varphi(E_{jj}))=\delta_{ij}$, and $\beta(E_{ii},E_{jk}+E_{kj})=\beta(E_{ii},E_{jk})=0$ for $j&lt;k$, but $\beta(E_{12}+E_{21},E_{12}+E_{21})=2$ while $\beta(E_{12},E_{12})=0$.</p>
 <p><strong>Proof.</strong> The diagonal units pair by $\delta_{ij}$ in both spaces, and a diagonal unit kills both the pair and the single unit that is its image; the last computation is that of the corollary below.</p>
 <p><strong>Corollary.</strong> The model is not an isometry on the whole space: $\beta(A,A)=2$ for $A=E_{12}+E_{21}$ while $\beta(\varphi(A),\varphi(A))=\operatorname{tr}(E_{12}E_{12})=0$.</p>
 <p><strong>Proof.</strong> $A^{2}=E_{11}+E_{22}$ has trace $2$, and $E_{12}^{2}=0$.</p>

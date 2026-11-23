@@ -318,7 +318,7 @@ $$</p>
 <p><strong>Remark (the choice is real).</strong> The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_{\mathrm{id},+}(b)=\tilde\Pi_{\mathrm{id},+} + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_{\mathrm{id},-}(b)=e_t-\tilde\Pi_{\mathrm{id},+}(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed for the product alone. The definite Hermitian form selects one, and it is constructed in the next subsection.</p>
 <p><strong>Remark (not a limit).</strong> The idempotents are not the limits of the regular spectral idempotents $(e_t\pm\vec{Ζ})/2$, which diverge as $B\to0$. They are a new pair, attached to the flag of $\vec Q$ and to the chosen complement.</p>
 <h3 id="the-canonical-frame">The Canonical Frame</h3>
-<p><strong>The definite Hermitian form selects one value of $b$.</strong> The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of <em>Product and Form Conventions</em>, §<em>The Form Convention</em>, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$ on the sector off the scalar line.</p>
+<p><strong>The definite Hermitian form selects one value of $b$.</strong> The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of <em>Product and Form Conventions</em>, §<em>The Form Convention</em>, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2&gt;0$ on the sector off the scalar line.</p>
 <p><strong>Theorem (the canonical pair).</strong> Put $\vec\Pi_{\mathrm{nil},-}=\vec Q$ and</p>
 <p>$$
 \tilde\Pi_{\mathrm{id},+}=\frac{\vec Q\vec Q^*}{2\langle\vec Q\rangle_*},\qquad
@@ -383,7 +383,7 @@ $$</p>
 <p>The vectors are listed chain by chain. The corner order, used for the multiplication table and for the coordinate model, is the same four vectors in the order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},-},\vec\Pi_{\mathrm{nil},+},\tilde\Pi_{\mathrm{id},-})$. The four vectors are determined by the frame; their corner labels are canonical, and the order of the two chains is a convention.</p>
 <p><strong>Theorem (basis and Jordan form).</strong> The four vectors are non-zero and lie in the four corners, in the corner order $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ respectively. They form a basis of $\mathbb{B}$. Put</p>
 <p>$$
-J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}.
+J_2(Q_t)=\begin{pmatrix}Q_t&amp;1\\0&amp;Q_t\end{pmatrix}.
 $$</p>
 <p>In the order of the definition,</p>
 <p>$$
@@ -393,10 +393,10 @@ $$</p>
 <p>$$
 L_{\tilde Q}=
 \begin{pmatrix}
-Q_t&0&1&0\\
-0&Q_t&0&1\\
-0&0&Q_t&0\\
-0&0&0&Q_t
+Q_t&amp;0&amp;1&amp;0\\
+0&amp;Q_t&amp;0&amp;1\\
+0&amp;0&amp;Q_t&amp;0\\
+0&amp;0&amp;0&amp;Q_t
 \end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The corners are lines and their direct sum is $\mathbb{B}$, so one non-zero vector in each forms a basis. The actions are</p>
@@ -457,10 +457,10 @@ $$</p>
 <p>$$
 R_{\tilde Q}=
 \begin{pmatrix}
-Q_t&0&1&0\\
-0&Q_t&0&1\\
-0&0&Q_t&0\\
-0&0&0&Q_t
+Q_t&amp;0&amp;1&amp;0\\
+0&amp;Q_t&amp;0&amp;1\\
+0&amp;0&amp;Q_t&amp;0\\
+0&amp;0&amp;0&amp;Q_t
 \end{pmatrix}.
 $$</p>
 <p>In the order $(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-},\vec\Pi_{\mathrm{nil},+})$ it is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$.</p>
@@ -489,18 +489,18 @@ $$</p>
 $$</p>
 <p>and left and right multiplication by $\tilde Q$ become left and right multiplication by $J_2(Q_t)$ on $2\times2$ matrices. The coordinate matrix of a general element is</p>
 <p>$$
-\mathsf M_2^{\tilde Q}(\tilde X)=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}.
+\mathsf M_2^{\tilde Q}(\tilde X)=\begin{pmatrix}X_{11}&amp;X_{12}\\X_{21}&amp;X_{22}\end{pmatrix}.
 $$</p>
 <h2 id="expansion-of-every-biquaternion">Expansion of Every Biquaternion</h2>
 <p><strong>The Jordan basis is a coordinate system: every element has one expansion, and the coordinates multiply as matrices.</strong></p>
 <p><strong>Theorem (expansion).</strong> Every $\tilde X\in\mathbb{B}$ has a unique expansion</p>
 <p>$$
-\tilde X=X_{11}\tilde\Pi_{\mathrm{id},++X}_{12}\vec\Pi_{\mathrm{nil},-+X}_{21}\vec\Pi_{\mathrm{nil},++X}_{22}\tilde\Pi_{\mathrm{id},-},
+\tilde X=X_{11}\tilde\Pi_{\mathrm{id},++X}{}_{12}\vec\Pi_{\mathrm{nil},-+X}{}_{21}\vec\Pi_{\mathrm{nil},++X}{}_{22}\tilde\Pi_{\mathrm{id},-},
 $$</p>
 <p>and the map $\tilde X\mapsto\mathsf M_2^{\tilde Q}(\tilde X)$ is an algebra isomorphism onto $M_2(\mathbb{C})$.</p>
 <p><em>Proof.</em> The four vectors are a basis, and the products are the table of $\mathsf M_2^{\tilde Q}$. ∎</p>
-<p><strong>Corollary (the centraliser).</strong> The matrices commuting with $J_2(Q_t)$ are the upper triangular Toeplitz matrices $\begin{pmatrix}a&b\\0&a\end{pmatrix}$. Hence the centraliser of $\tilde Q$ is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec Q\}$, the dual numbers, of complex dimension two, with maximal ideal $\mathbb{C}\vec Q$ and only the idempotents $0$ and $e_t$.</p>
-<p><em>Proof.</em> A direct computation gives $c=0$ and $d=a$ for a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ commuting with $J_2(Q_t)$. The coordinate matrix of $ae_t+b\vec Q$ is $aI+bE_{12}$. ∎</p>
+<p><strong>Corollary (the centraliser).</strong> The matrices commuting with $J_2(Q_t)$ are the upper triangular Toeplitz matrices $\begin{pmatrix}a&amp;b\\0&amp;a\end{pmatrix}$. Hence the centraliser of $\tilde Q$ is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec Q\}$, the dual numbers, of complex dimension two, with maximal ideal $\mathbb{C}\vec Q$ and only the idempotents $0$ and $e_t$.</p>
+<p><em>Proof.</em> A direct computation gives $c=0$ and $d=a$ for a matrix $\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ commuting with $J_2(Q_t)$. The coordinate matrix of $ae_t+b\vec Q$ is $aI+bE_{12}$. ∎</p>
 <p><strong>Corollary (the trace).</strong> $\operatorname{tr}\mathsf M_2(\tilde X)=X_{11}+X_{22}$.</p>
 <p><em>Proof.</em> The trace is twice the scalar part, and the scalar part of the expansion is $(X_{11}+X_{22})/2$. ∎</p>
 <h3 id="a-worked-example">A Worked Example</h3>
@@ -528,9 +528,9 @@ $$</p>
 $$</p>
 <p>In the chain order $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+},\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$,</p>
 <p>$$
-L_{\tilde Q}=\operatorname{diag}\left(\begin{pmatrix}1&1\\0&1\end{pmatrix},\begin{pmatrix}1&1\\0&1\end{pmatrix}\right),
+L_{\tilde Q}=\operatorname{diag}\left(\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}\right),
 $$</p>
-<p>and in the coordinate model $\mathsf M_2^{\tilde Q}(\tilde Q)=\begin{pmatrix}1&1\\0&1\end{pmatrix}$.</p>
+<p>and in the coordinate model $\mathsf M_2^{\tilde Q}(\tilde Q)=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}$.</p>
 <h3 id="change-of-element">Change of Element</h3>
 <p><strong>Proposition (the affine family).</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$, let $b\in\mathbb{C}$ and $a\in\mathbb{C}^\times$.</p>
 <ol>
@@ -712,7 +712,7 @@ $$</p>
 <p>$$
 \mathcal{P}=(\tilde\Pi_{\mathrm{id},+},\ \vec\Pi_{\mathrm{nil},-},\ \vec\Pi_{\mathrm{nil},+},\ \tilde\Pi_{\mathrm{id},-})
 $$</p>
-<p>are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_{\mathrm{id},++p}_{12}\vec\Pi_{\mathrm{nil},-+p}_{21}\vec\Pi_{\mathrm{nil},++p}_{22}\tilde\Pi_{\mathrm{id},-}$. For the standard pair $\mathsf M_{\tilde\Pi_{\mathrm{id}}}$ is the model $\mathsf M_2$ of §<em>The Peirce Coordinates and the Matrix Model</em>.</p>
+<p>are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_{\mathrm{id},++p}{}_{12}\vec\Pi_{\mathrm{nil},-+p}{}_{21}\vec\Pi_{\mathrm{nil},++p}{}_{22}\tilde\Pi_{\mathrm{id},-}$. For the standard pair $\mathsf M_{\tilde\Pi_{\mathrm{id}}}$ is the model $\mathsf M_2$ of §<em>The Peirce Coordinates and the Matrix Model</em>.</p>
 <p>Both sector articles use a basis of this shape. They differ only in the pair, and the pair is visible in the matrix of the element. Write $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$. Write $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ for the two minimal left ideals, and split the four basis vectors into the couples $\mathcal{C}_+=(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+})$ and $\mathcal{C}_-=(\vec\Pi_{\mathrm{nil},-},\tilde\Pi_{\mathrm{id},-})$.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -768,7 +768,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$ is the Jordan block of the repeated eigenvalue.</p>
+<p>Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q_t&amp;1\\0&amp;Q_t\end{pmatrix}$ is the Jordan block of the repeated eigenvalue.</p>
 <p><strong>The rigidity applies to all three columns.</strong> By §<em>Systems of Matrix Units</em> of <em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>, every pair of primitive orthogonal idempotents summing to $e_t$ is the image of the standard pair under an inner automorphism. The pairs are therefore conjugate, and the three columns are not three decompositions of different kinds: what changes from one column to the next is the position of the element in the decomposition, not the decomposition itself. The regular pair commutes with $\tilde Q$; the support pair does not; on the scalar line every pair commutes.</p>
 <p><strong>The regular case.</strong> For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_{\mathrm{id},\pm},\tilde Q]=0$, so $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>; the reciprocal freedom is fixed there by the normalisation of the mixed generators.</p>
 <p><strong>The degenerate case.</strong> For $B^2=0$ and $\vec Q\neq0$ the root is gone, and an adapted frame supplies the pair. The pair is still complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What changes is the Peirce matrix: $\mathsf M_{\tilde\Pi_{\mathrm{id}}}(\tilde Q)=J_2(Q_t)$, with $\tilde Q\tilde\Pi_{\mathrm{id},+}=Q_t\tilde\Pi_{\mathrm{id},+}$ and $\tilde\Pi_{\mathrm{id},+}\tilde Q=Q_t\tilde\Pi_{\mathrm{id},++}\vec\Pi_{\mathrm{nil},-}$. Each couple is a single Jordan chain rather than a pair of eigenvectors. The basis is the Jordan basis $\mathcal{J}(\tilde Q)$ of §<em>The Jordan Basis</em>; the reciprocal freedom is fixed there by $\vec\Pi_{\mathrm{nil},-}=\vec Q$.</p>

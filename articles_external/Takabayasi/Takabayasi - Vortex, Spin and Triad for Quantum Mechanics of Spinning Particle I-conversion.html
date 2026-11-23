@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle. I: General Theory — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle I.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="vortex-spin-and-triad-for-quantum-mechanics-of-spinning-particle-i-general-theory"><strong>Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle. I: General Theory</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — journal scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>70</strong> (1983) 1, No. 1; received 22 March 1983</td>
+</tr>
+<tr>
+<td>length</td>
+<td>17 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle I-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle I.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-nodal-set-and-quantized-circulation.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Vortex, Spin and Triad for Quantum Mechanics of Spinning Particle I.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>. It has no text layer, so the text was read from the page images by OCR.</p>
+<p>Equations are transcribed where the OCR is unambiguous and described where it is not.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The spinless Madelung fluid is defined by continuity, an Euler equation with a quantum stress, and two subsidiary conditions: the vorticity is fixed by the magnetic field, and the circulation is quantised. This paper drops the vorticity condition and asks what fluid results. The answer is the spinning fluid — the hydrodynamical form of the Pauli equation — and it arrives by three routes that coincide: allow vortical flow (Clebsch potentials), attach an intrinsic angular momentum density, or replace each fluid element by a triad. The vorticity condition comes back not as an assumption but as a <em>consequence</em>: vorticity equals the curl of the spin-vorticity vector built from the inhomogeneity of the spin field. The paper then closes two gaps. It proves the subsidiary condition is consistent with the equations of motion using generalised Helmholtz and Kelvin theorems. And it establishes the global quantisation of circulation around a singular vortex line — a half-integer, not integer, quantum — which is the counterpart of fluxoid quantisation and is responsible for the Aharonov–Bohm effect. In the triad picture, invariance under rotating every triad about its own symmetry axis by a common angle forces the introduction of the electromagnetic potential, which is the paper's geometric reading of local gauge invariance.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-spinless-fluid-and-its-two-conditions">The spinless fluid and its two conditions</h3>
+<p>A state of flow is described by a density function $P$ (or modulus $R$ with $R^2=P$) and a velocity function $v$. Their time evolutions are governed by continuity and the Euler equation. The above equations are the hydrodynamical equations for a compressible non-viscous charged fluid under the usual external force (Lorentz force) and the internal stress $T_{ik}$ and thus the general concepts and theorems of the usual hydrodynamics are applicable to this theory even though the pressure term $p\delta_{ik}$ in the usual hydrodynamics is supplanted here by the peculiar $T_{ik}$ ('quantum stress').</p>
+<p>Besides the equations of motion our hydrodynamics is characterized by the presence of subsidiary conditions which restrict vorticity and circulation; namely $\mathrm{rot}\,v=-(e/\mu c)H$, which holds except at nodal points (where $P$ vanishes), and $\oint\mu u\cdot ds+\Phi=n h$, $(n=\text{integer})$, where $C$ is a closed contour and $\Phi$ is the magnetic flux going through $C$. These conditions are of course compatible with the equations of motion. It is interesting to note that [the first] has analogy to London's condition in his theory of superconductivity and [the second] to the condition of fluxoid quantization for a superconducting ring.</p>
+<p>This hydrodynamical formalism has been restated later and gradually been employed. The formalism is equivalent to the usual quantum mechanics but is represented in terms of classical quantities, which, however, should not be taken as literally real and observable lest it would contradict the uncertainty principle, but this fact does not prevent us from using it for the analysis of various problems with due precaution. The formalism brings to fore by its own characteristics associated with hydrodynamical picture those aspects and relations which may be difficult to notice in the conventional formalism, e.g., the effects of quantum stress, line vortex with quantized circulation, the relation and analogy between vorticity and magnetic field, etc.</p>
+<h3 id="three-routes-to-the-spinning-fluid-stated-as-a-list">Three routes to the spinning fluid, stated as a list</h3>
+<p>By extending the theory stated we can obtain hydrodynamical theory of a classical spinning fluid, which just represents quantum mechanics of a non-relativistic particle with spin. This extension of the original hydrodynamics can be made by various methods but they lead to the same theory, which is equivalent to the conventional Schrödinger–Pauli wave mechanics. We have the following three methods. (A) To generalize the original hydrodynamics to include vortical flows. (B) To generalize the original hydrodynamics by endowing the fluid with distribution of intrinsic angular momentum. (C) Geometro-hydrodynamical viewpoint in which each fluid element is regarded as a 'triad' having degrees of freedom of rotation.</p>
+<p>The first method (A) may be the most natural approach. Indeed this is considered in itself as one of the most significant insights which the original hydrodynamical formulation has suggested, and it shows most clearly that the hydrodynamical formalism gives the intrinsic relation between vortex and spin. This method consists of simply dropping the subsidiary condition on vorticity. Thus the $\Pi$-field is now expressed as a gradient plus Clebsch terms.</p>
+<p>"Next we assume that just as the gradient of the density $P$ gives rise to internal stress the gradients of $\xi$ and $\eta$ also contribute to internal stress to be represented by its energy density ... where $\rho$ is a certain weight function depending on $\xi$ alone. This modifies the Euler equation by an additive term."</p>
+<p>The introduction of the above $W_s$ implies to fix the gauge of the Clebsch potentials, $\xi$ and $\eta$, within a certain small subgroup, and as the result these variables acquire the status of intrinsic degrees of freedom themselves, and in fact imply the spin (intrinsic angular momentum of constant magnitude).</p>
+<h3 id="the-condition-returns-as-a-theorem">The condition returns as a theorem</h3>
+<p>Since $\Sigma$ is now regarded as proper internal degrees of freedom, the relation $\omega=\mathrm{rot}\,\Pi=(\hbar/2)T$ appears here as subsidiary condition which relates the vorticity of flow with the inhomogeneity of the spin field, and is regarded as the counterpart of the vorticity condition in the spinless case. The vector $T$, which plays a central role in this hydrodynamics, has various conspicuous properties, besides $\mathrm{div}\,T=0$. We shall call it 'spin-vorticity vector'.</p>
+<p>Again the subsidiary condition is compatible with the equations of motion. And the general derivations: we shall begin with the verification of the consistency of the subsidiary conditions for the case of the original spinless hydrodynamics and then for the case of spinning hydrodynamics based on the generalized Helmholtz and Kelvin theorems.</p>
+<h3 id="triads-and-the-geometric-reading-of-gauge-invariance">Triads and the geometric reading of gauge invariance</h3>
+<p>Characteristic dynamical property of this triad is that its motion is such that its angular momentum of rotation, i.e., the spin $S$, is fixed to the body and has the constant magnitude $\hbar/2$. By taking this direction as the triad third axis, this is expressed as $\Sigma=\sigma^3=[\sigma^1\times\sigma^2]$. This distinguishes the triad from a conventional symmetric top, though our triad has also the symmetry around the third axis.</p>
+<p>The triad contains three independent variables represented by Euler angles $(\Phi,\theta,\chi)$, where $\theta$ and $\Phi$ denote the polar angles of $\Sigma$, while $\chi$ describes the rotational orientation of the orthogonal $\sigma^1$ and $\sigma^2$ axes on the plane normal to $\Sigma$. In fact, the triad is regarded as the covariant method to represent $\chi$ together with $\Sigma$. The variables $(\Phi,\theta,\chi)$ have the dual meanings, viz. Euler angles for the triad and the velocity potentials describing irrotational and rotational movements of the fluid.</p>
+<p>An important feature of the geometro-hydrodynamical formalism is that it necessarily introduces the invariance with respect to rotations of all triads around their respective symmetry axes (directions of which vary from triad to triad) by a common angle $\lambda$: $\chi\to\chi+\lambda$, $\theta$ and $\Phi=\text{invariant}$. This is evident because $\Sigma$ and $\Pi$ are invariant there.</p>
+<p>Then with the identification of $A_\mu$ as electromagnetic potential the second and third terms represent just the classical electromagnetic interaction. This provides a geometrical interpretation of local gauge invariance.</p>
+<p>Thus we have reproduced all the basic equations of the spinning hydrodynamics (the method (B)), except the circulation condition. Because the Lagrangian leaves $v$ undetermined at nodal points ($P(x)=0$) and also because $L$ is singular at nodal points, we need to supplement the basic set of equations following from this Lagrangian with a certain condition referring to nodal points, and this is just the circulation condition, i.e. the appearance of the $\delta$-function term.</p>
+<h3 id="the-half-integer-circulation">The half-integer circulation</h3>
+<p>Now the condition is rewritten as $\oint\Pi\cdot ds=(n/2)h$, $(n=\text{integer})$. With the use of the decomposition this is reexpressed as the circulation condition. We repeat that this condition is not an ad hoc postulate but originates from geometrical nature of our theory.</p>
+<p>"We also note that this condition and the vorticity condition are put into a single equation $\mathrm{rot}\,\Pi=T+(\hbar/2)\delta^3(x-x')$... where $r=x'(\lambda)$ denotes a singular vortex line $L$."</p>
+<p>The value of $\oint_C\Pi\cdot ds$ does not depend on the detailed path of $C$ in so far as it does not pass through a singular line, since $\mathrm{rot}\,\Pi=0$. That $\oint_C\Pi\cdot ds$ is conserved with time has been actually proved.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<ol>
+<li>Spin is not added to the fluid — it is what the fluid does when vorticity is freed</li>
+</ol>
+<p><strong>The idea.</strong> The spinless Madelung fluid is a fluid with vorticity constrained to follow the magnetic field. Drop the constraint, and vorticity becomes an independent field. That field then needs its own potentials, the Clebsch variables, and those turn out to have exactly three degrees of freedom and a constant-magnitude angular momentum. Spin is the freed vorticity.</p>
+<p><strong>What it would add.</strong> A derivation of spin rather than a postulate. <em>The Spin Half Fluid and the Takabayasi Correspondence</em> (<code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>) maps the Dirac spinor onto fluid variables; here the map is <em>forced</em> by removing one condition from the spinless theory, which explains why the spinning fluid has exactly the variables it has.</p>
+<p><strong>Where it lands.</strong> §<em>The Map</em> of <em>The Spin Half Fluid and the Takabayasi Correspondence</em>, as the constraint-removal origin of spin.</p>
+<p><strong>What stands in the way.</strong> The argument is non-relativistic (Pauli, not Dirac), so the relativistic spin-half fluid needs a separate derivation.</p>
+<ol>
+<li>Vorticity equals the curl of a spin-built vector — a condition, then a theorem</li>
+</ol>
+<p><strong>The idea.</strong> In the spinless case the condition $\mathrm{rot}\,v\propto H$ is imposed and then checked for consistency. In the spinning case the analogous statement $\omega=(\hbar/2)T$ with $T=\varepsilon_{ijk}\partial_j\Sigma\cdot\partial_k\Sigma$ is still written as a subsidiary condition, but it is enforced by the geometry: $\Pi$ is <em>defined</em> so that its curl is $T$.</p>
+<p><strong>What it would add.</strong> A different logical status for the spin constraint. The corpus treats the spin-vorticity relation as an identity to be verified; here the paper is explicit that it moved from postulate to consequence between the spinless and spinning cases, and that the subsidiary condition is what remains when the definition is taken apart.</p>
+<p><strong>Where it lands.</strong> §<em>The Vorticity Condition</em> of <em>The Charged Spin Half Fluid: Charge Couples to the Lorentz Force, Spin Does Not</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>), as the postulate-to-theorem shift.</p>
+<p><strong>What stands in the way.</strong> $T$ is nonlocal in $\Sigma$ under a frame-independent split; the paper notes this and accepts a frame-dependent decomposition instead.</p>
+<h3 id="3-circulation-is-quantised-in-halves-and-that-is-the-aharonovbohm-phase">3. Circulation is quantised in halves, and that is the Aharonov–Bohm phase</h3>
+<p><strong>The idea.</strong> Around a singular vortex line the circulation integral is $(n/2)h$, not $nh$. <strong>Where it lands.</strong> §<em>The Phase</em> of the conversion of <em>Hydrodynamical Formalism of Quantum Mechanics and Aharonov-Bohm Effect</em> in this folder, as the half-quantum.</p>
+<h3 id="4-local-gauge-invariance-is-the-freedom-to-rotate-each-triad-about-its-own-axis">4. Local gauge invariance is the freedom to rotate each triad about its own axis</h3>
+<p><strong>The idea.</strong> Every triad may be rotated about its symmetry axis without changing $\Sigma$ or $\Pi$. <strong>Where it lands.</strong> §<em>The Coupling</em> of <em>The Lagrangian and the Spin Half Fluid</em> (<code>articles_physics/the-lagrangian-and-the-spin-half-fluid.md</code>), as the triad-rotation reading.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

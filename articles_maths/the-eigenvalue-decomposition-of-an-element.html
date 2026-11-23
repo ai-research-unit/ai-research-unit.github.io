@@ -83,7 +83,7 @@
 <p>$$
 \boxed{\;\lambda \in \sigma(a) \quad \Longleftrightarrow \quad m_a(\lambda) = 0\;} .
 $$</p>
-<p><em>Proof.</em> Suppose first that $m_a(\lambda) = 0$. Write $m_a(x) = (x-\lambda)g(x)$ with $\deg g = \deg m_a - 1$. Evaluating at $a$ gives $(a-\lambda)g(a) = 0$. The element $g(a)$ is nonzero, because $\deg g < \deg m_a$ and $m_a$ is the minimal polynomial. If $a-\lambda$ were invertible, multiplication by its inverse would give $g(a) = 0$, a contradiction. Hence $a-\lambda$ is not invertible and $\lambda$ is an eigenvalue.</p>
+<p><em>Proof.</em> Suppose first that $m_a(\lambda) = 0$. Write $m_a(x) = (x-\lambda)g(x)$ with $\deg g = \deg m_a - 1$. Evaluating at $a$ gives $(a-\lambda)g(a) = 0$. The element $g(a)$ is nonzero, because $\deg g &lt; \deg m_a$ and $m_a$ is the minimal polynomial. If $a-\lambda$ were invertible, multiplication by its inverse would give $g(a) = 0$, a contradiction. Hence $a-\lambda$ is not invertible and $\lambda$ is an eigenvalue.</p>
 <p>Conversely, suppose that $a-\lambda$ is not invertible and that $m_a(\lambda) \neq 0$. Then $x-\lambda$ and $m_a(x)$ are coprime in $k[x]$, so there exist $u, v \in k[x]$ with</p>
 <p>$$
 u(x)(x-\lambda) + v(x)m_a(x) = 1 .
@@ -124,10 +124,10 @@ $$</p>
 <ul>
 <li><strong>The scalar.</strong> If $a = \lambda 1_A$, then $m_a = x-\lambda$, $r=1$, $e_1 = 1_A$, and the decomposition is $a = \lambda 1_A$. The scalar is the degenerate case in which there is only one eigenvalue and only one projection.</li>
 <li><strong>The diagonal matrix.</strong> If $a = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$ with the $\lambda_i$ not necessarily distinct, the eigenvalues are the distinct diagonal entries, and the eigenprojector of $\lambda$ is the diagonal matrix with ones exactly at the positions where the diagonal entry is $\lambda$. If the entries are distinct, the projectors are the matrix units $E_{ii}$.</li>
-<li><strong>The two-by-two matrix.</strong> For $a = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$, the eigenvalues are $1$ and $2$, and</li>
+<li><strong>The two-by-two matrix.</strong> For $a = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 2 \end{pmatrix}$, the eigenvalues are $1$ and $2$, and</li>
 </ul>
 <p>$$
-e_1 = \frac{a - 2I}{1 - 2} = 2I - a = \begin{pmatrix} 1 & -1 \\ 0 & 0 \end{pmatrix}, \qquad e_2 = \frac{a - I}{2 - 1} = a - I = \begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}.
+e_1 = \frac{a - 2I}{1 - 2} = 2I - a = \begin{pmatrix} 1 &amp; -1 \\ 0 &amp; 0 \end{pmatrix}, \qquad e_2 = \frac{a - I}{2 - 1} = a - I = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}.
 $$</p>
 <p>One checks $e_1^2 = e_1$, $e_2^2 = e_2$, $e_1 e_2 = 0$ and $e_1 + e_2 = I$, and $a = 1\cdot e_1 + 2\cdot e_2$.
 - <strong>The projection.</strong> An idempotent $e$ has minimal polynomial $x(x-1)$ when $e \neq 0,1$, so its eigenvalue decomposition is $e = 1\cdot e + 0\cdot (1-e)$. The two projections are $e$ and $1-e$; this is the smallest nontrivial eigenvalue decomposition, and it is the one-element case of the Peirce decomposition.</p>
@@ -213,9 +213,9 @@ $$</p>
 <p>The rotation matrix is the model case: over $\mathbb{R}$ its minimal polynomial $x^2+1$ is irreducible, there is no eigenvalue and no nontrivial idempotent; over $\mathbb{C}$ it splits, and the eigenprojectors appear with complex entries. The passage from $k$ to its algebraic closure is the subject of <em>Splitting Fields and Algebraic Closure</em>.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="the-two-by-two-matrix">The two-by-two matrix</h3>
-<p>For $a = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$ the minimal polynomial is $(x-1)(x-2)$, and the decomposition is</p>
+<p>For $a = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 2 \end{pmatrix}$ the minimal polynomial is $(x-1)(x-2)$, and the decomposition is</p>
 <p>$$
-a = 1\cdot e_1 + 2\cdot e_2, \qquad e_1 = \begin{pmatrix} 1 & -1 \\ 0 & 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}.
+a = 1\cdot e_1 + 2\cdot e_2, \qquad e_1 = \begin{pmatrix} 1 &amp; -1 \\ 0 &amp; 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}.
 $$</p>
 <p>The left eigenspace of $1$ is $e_1 A$, the set of matrices with second row zero; the left eigenspace of $2$ is $e_2 A$, the set of matrices with equal rows. The right eigenspace of $1$ is $A e_1$, the set of matrices whose second column is the negative of the first; the right eigenspace of $2$ is $A e_2$, the set of matrices with equal columns. The four corners $e_i A e_j$ are one-dimensional, because the two eigenvalues are simple.</p>
 <h3 id="the-diagonal-matrix">The diagonal matrix</h3>
@@ -225,19 +225,19 @@ e_1 A e_1 = k E_{11}, \quad e_1 A e_2 = k E_{12}, \quad e_2 A e_1 = k E_{21}, \q
 $$</p>
 <p>so the Peirce decomposition is the decomposition of a matrix into its four entries. The centraliser is the algebra of diagonal matrices, of dimension two, which is $k[a]$. The off-diagonal part is nonzero, because $a$ is not central in $M_2(k)$.</p>
 <h3 id="the-companion-matrix-of-math343">The companion matrix of $x^3 - x$</h3>
-<p>For $C = \begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}$ the eigenvalues are $0, 1, -1$, and the eigenprojectors are those of <em>The Algebra Generated by an Element and the Chinese Remainder Decomposition</em>, §<em>Worked Examples</em>:</p>
+<p>For $C = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \end{pmatrix}$ the eigenvalues are $0, 1, -1$, and the eigenprojectors are those of <em>The Algebra Generated by an Element and the Chinese Remainder Decomposition</em>, §<em>Worked Examples</em>:</p>
 <p>$$
 e_0 = I - C^2, \qquad e_1 = \frac{C^2 + C}{2}, \qquad e_{-1} = \frac{C^2 - C}{2}.
 $$</p>
 <p>The decomposition is $C = 0\cdot e_0 + 1\cdot e_1 + (-1)\cdot e_{-1}$. The eigenvalues are simple, so each corner $e_i A e_j$ is one-dimensional and the centraliser is $\mathbb{Q}[C]$, of dimension three. The left eigenspaces $e_i A$ have dimension three each; the right eigenspaces $A e_i$ have dimension three each; the algebra $M_3(\mathbb{Q})$ has dimension nine, the sum of the nine one-dimensional corners.</p>
 <h3 id="a-jordan-block">A Jordan block</h3>
-<p>For $a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ the minimal polynomial is $(x-1)^2$, with a repeated root. There is no eigenvalue decomposition: the only idempotents in $k[a]$ are $0$ and $1$, and neither writing $a = 1\cdot 1$ nor $a = 0\cdot 0$ holds. The generalized decomposition is</p>
+<p>For $a = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}$ the minimal polynomial is $(x-1)^2$, with a repeated root. There is no eigenvalue decomposition: the only idempotents in $k[a]$ are $0$ and $1$, and neither writing $a = 1\cdot 1$ nor $a = 0\cdot 0$ holds. The generalized decomposition is</p>
 <p>$$
-a = 1\cdot \varepsilon + n, \qquad \varepsilon = 1, \quad n = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad n^2 = 0,
+a = 1\cdot \varepsilon + n, \qquad \varepsilon = 1, \quad n = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}, \quad n^2 = 0,
 $$</p>
 <p>which is the trivial decomposition into the scalar $1$ and the nilpotent $n$. The example shows that split but not separable gives a nilpotent part and no nontrivial projection. The Jordan–Chevalley form of the same statement is $a = 1 + n$.</p>
 <h3 id="a-biquaternion">A biquaternion</h3>
-<p>Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, the element $a = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$ has the eigenvalue decomposition with the two idempotents $e_1, e_2$ read as biquaternions. The example is not different from the matrix one; it records that the eigenvalue decomposition is a statement about the algebra, not about a particular number system. The biquaternion spectral theory of <em>The Biquaternion Eigenvalue Decomposition</em> treats the additional structure that the conjugations impose on the spectrum.</p>
+<p>Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, the element $a = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 2 \end{pmatrix}$ has the eigenvalue decomposition with the two idempotents $e_1, e_2$ read as biquaternions. The example is not different from the matrix one; it records that the eigenvalue decomposition is a statement about the algebra, not about a particular number system. The biquaternion spectral theory of <em>The Biquaternion Eigenvalue Decomposition</em> treats the additional structure that the conjugations impose on the spectrum.</p>
 <h2 id="summary">Summary</h2>
 <p>An eigenvalue of $a$ is a scalar $\lambda$ for which $a-\lambda$ is not invertible; in finite dimension this is equivalent to $m_a(\lambda)=0$, and the spectrum is the root set of the minimal polynomial. Multiplicities in $m_a$ measure the nilpotent thickness of the blocks, not the dimensions of the matrix eigenspaces.</p>
 <p>An eigenvalue decomposition $a = \sum_i \lambda_i e_i$ is a writing with distinct $\lambda_i$, orthogonal idempotents $e_i$ and $\sum_i e_i = 1$. It exists exactly when $m_a$ is split with distinct roots, equivalently when $a$ is split separable. The eigenvalues are the roots of $m_a$, the eigenprojectors are the Lagrange polynomials in $a$, and the decomposition is unique. The solutions of $ax=\lambda_i x$ form the left ideal $e_i A$, the solutions of $xa=\lambda_i x$ form the right ideal $A e_i$, and the common solutions of $ax=\lambda_i x$ and $xa=\lambda_j x$ form the Peirce piece $e_i A e_j$. The two-sided Peirce decomposition $A = \bigoplus_{i,j} e_i A e_j$ is the simultaneous refinement by the left and the right action of $a$; its diagonal part is the centraliser of $a$, and its off-diagonal part measures the failure of $a$ to be central.</p>

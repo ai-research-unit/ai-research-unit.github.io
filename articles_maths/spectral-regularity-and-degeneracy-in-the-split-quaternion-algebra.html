@@ -86,19 +86,19 @@ $$</p>
 <p><strong>Proposition (the matrix).</strong> On the basis $(1,\vec e_x,\vec e_y,\vec e_z)$, the matrix of $L_q$ is</p>
 <p>$$
 L(q)=\begin{pmatrix}
-t&-q_x&q_y&q_z\\
-q_x&t&q_z&-q_y\\
-q_y&q_z&t&-q_x\\
-q_z&-q_y&q_x&t
+t&amp;-q_x&amp;q_y&amp;q_z\\
+q_x&amp;t&amp;q_z&amp;-q_y\\
+q_y&amp;q_z&amp;t&amp;-q_x\\
+q_z&amp;-q_y&amp;q_x&amp;t
 \end{pmatrix}.
 $$</p>
 <p>It has the block form</p>
 <p>$$
-L(q)=\begin{pmatrix}A&B\\B&A\end{pmatrix},\qquad
-A=\begin{pmatrix}t&-q_x\\q_x&t\end{pmatrix},\qquad
-B=\begin{pmatrix}q_y&q_z\\q_z&-q_y\end{pmatrix}.
+L(q)=\begin{pmatrix}A&amp;B\\B&amp;A\end{pmatrix},\qquad
+A=\begin{pmatrix}t&amp;-q_x\\q_x&amp;t\end{pmatrix},\qquad
+B=\begin{pmatrix}q_y&amp;q_z\\q_z&amp;-q_y\end{pmatrix}.
 $$</p>
-<p><em>Proof.</em> The columns are the products $q\cdot1$, $q\vec e_x$, $q\vec e_y$, $q\vec e_z$, read in the basis; the multiplication table gives the display. The block change $\frac1{\sqrt2}\begin{pmatrix}I&I\\I&-I\end{pmatrix}$ conjugates the matrix to $\operatorname{diag}(A+B,A-B)$.</p>
+<p><em>Proof.</em> The columns are the products $q\cdot1$, $q\vec e_x$, $q\vec e_y$, $q\vec e_z$, read in the basis; the multiplication table gives the display. The block change $\frac1{\sqrt2}\begin{pmatrix}I&amp;I\\I&amp;-I\end{pmatrix}$ conjugates the matrix to $\operatorname{diag}(A+B,A-B)$.</p>
 <p><strong>Theorem (the spectral polynomial).</strong> Let $q=t+\vec v$.</p>
 <ol>
 <li>The characteristic polynomial of $L_q$ is
@@ -120,8 +120,8 @@ $$</p>
 <p>Hence each $2\times2$ block has characteristic polynomial $\lambda^2-2t\lambda+(t^2-S)=(\lambda-t)^2-S$, and the characteristic polynomial of the $4\times4$ matrix is the product of the two, that is the square in (1).</p>
 <p>The minimal polynomial of a block diagonal matrix is the least common multiple of the minimal polynomials of its blocks. If $S\neq0$, the roots $t\pm\sqrt S$ are distinct, so each block has minimal polynomial $(\lambda-t)^2-S$, and the least common multiple is that polynomial. If $S=0$ and $\vec v\neq0$, then</p>
 <p>$$
-A+B=tI+\begin{pmatrix}q_y&-q_x+q_z\\q_x+q_z&-q_y\end{pmatrix},\qquad
-A-B=tI+\begin{pmatrix}-q_y&-q_x-q_z\\q_x-q_z&q_y\end{pmatrix},
+A+B=tI+\begin{pmatrix}q_y&amp;-q_x+q_z\\q_x+q_z&amp;-q_y\end{pmatrix},\qquad
+A-B=tI+\begin{pmatrix}-q_y&amp;-q_x-q_z\\q_x-q_z&amp;q_y\end{pmatrix},
 $$</p>
 <p>and each square-zero matrix on the right is non-zero. A non-zero $2\times2$ nilpotent is a single Jordan block $J_2(0)$, so each block is $J_2(t)$ with minimal polynomial $(\lambda-t)^2$; the least common multiple is $(\lambda-t)^2$. If $\vec v=0$, both blocks are $tI$ and the minimal polynomial is $\lambda-t$.</p>
 <p>For the Jordan type: at $S=0$, $\vec v\neq0$, $L_q=J_2(t)\oplus J_2(t)$ and the eigenspace has dimension $2$; at $S\neq0$ the direct sum is semisimple with each eigenvalue twice; at $\vec v=0$, $L_q=tI$.</p>
@@ -150,12 +150,12 @@ $$</p>
 \mathcal D=\mathcal C\setminus\{q:\vec v=0\}=\{q:S=0,\ \vec v\neq0\}.
 $$</p>
 <p><strong>Theorem (the normal form on the defect).</strong> Let $q=t+\vec v$ with $S=0$ and $\vec v\neq0$. Then $\vec v^2=0$ and $\vec v\neq0$, and $L_q$ has minimal polynomial $(\lambda-t)^2$, characteristic polynomial $(\lambda-t)^4$, eigenspace $\ker L_{\vec v}$ of dimension $2$, and Jordan type $(2,2)$. No eigenbasis exists.</p>
-<p><em>Proof.</em> The spectral polynomial theorem gives the polynomials and Jordan type; the eigenspace is $\ker(L_q-t\,\mathrm{id})=\ker L_{\vec v}$, of dimension $2$. Since $2<4$, no eigenbasis exists.</p>
+<p><em>Proof.</em> The spectral polynomial theorem gives the polynomials and Jordan type; the eigenspace is $\ker(L_q-t\,\mathrm{id})=\ker L_{\vec v}$, of dimension $2$. Since $2&lt;4$, no eigenbasis exists.</p>
 <p><strong>Corollary (the cone is the scalar line plus the defect).</strong> The spectral cone is the disjoint union of the scalar line $\{\vec v=0\}$ and $\mathcal D$. On the scalar line $L_q=t\,\mathrm{id}$ is semisimple with minimal polynomial $\lambda-t$; on $\mathcal D$ the element is defective. Spectral degeneracy is therefore not defect: the scalar line is degenerate and semisimple.</p>
 <h2 id="the-22-matrix-model-and-the-singular-locus">The 2×2 Matrix Model and the Singular Locus</h2>
 <p><strong>Theorem (the matrix model).</strong> The assignment</p>
 <p>$$
-\varphi(q)=\begin{pmatrix}t+q_y&q_x-q_z\\-(q_x+q_z)&t-q_y\end{pmatrix}
+\varphi(q)=\begin{pmatrix}t+q_y&amp;q_x-q_z\\-(q_x+q_z)&amp;t-q_y\end{pmatrix}
 $$</p>
 <p>is an isomorphism of $\mathbb{H}_{\mathrm{spl}}$ onto $M_2(\mathbb R)$. It satisfies</p>
 <p>$$
@@ -165,9 +165,9 @@ $$</p>
 <p>and the characteristic polynomial of $\varphi(q)$ is $(\lambda-t)^2-S$.</p>
 <p><em>Proof.</em> On the generators,</p>
 <p>$$
-\varphi(\vec e_x)=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
-\varphi(\vec e_y)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
-\varphi(\vec e_z)=\begin{pmatrix}0&-1\\-1&0\end{pmatrix},
+\varphi(\vec e_x)=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix},\qquad
+\varphi(\vec e_y)=\begin{pmatrix}1&amp;0\\0&amp;-1\end{pmatrix},\qquad
+\varphi(\vec e_z)=\begin{pmatrix}0&amp;-1\\-1&amp;0\end{pmatrix},
 $$</p>
 <p>and these satisfy the defining relations. The four images are linearly independent, so $\varphi$ is injective between four-dimensional algebras, hence an isomorphism. The determinant, trace and characteristic polynomial are direct computations.</p>
 <p><strong>Theorem (two different loci).</strong> In the matrix model the singular (non-invertible) locus $\{\det=0\}$ is the zero-divisor cone $\mathcal Z=\{t^2=S\}$. The discriminant locus, where the two eigenvalues coincide, is the spectral cone $\mathcal C=\{S=0\}$. The two loci are different, and their intersection is the set $\{t=0,S=0\}$.</p>
@@ -222,7 +222,7 @@ $$</p>
 </table></div>
 <p>The quaternion form is negative definite, so its spectral cone is the centre, every element is semisimple and there is no defective stratum; its norm is positive definite. The biquaternion form is complex nondegenerate, so its spectral cone is a complex cone containing the centre, with a defective part off the centre; its norm is a second complex cone. The split form is real of inertia $(2,1)$, so its spectral cone is a real cone containing the scalar line, with a defective part off it; its norm is a second real cone. The split case is the only one in which both cones are real hypersurfaces and neither is the centre.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S>0$, conjugate for $S<0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.</p>
+<p>The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S&gt;0$, conjugate for $S&lt;0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.</p>
 <p>The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: An invertible element can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is <em>Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</em>; the four combinations are <em>The Four Sectors of the Split-Quaternion Algebra</em>. The quaternion, biquaternion and split cases differ by the inertia of $\vec v^2$: negative definite, complex nondegenerate, and real of inertia $(2,1)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

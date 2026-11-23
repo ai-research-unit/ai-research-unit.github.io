@@ -175,7 +175,7 @@
 <p><strong>Step 1 — Confirm the target, before any edit.</strong></p>
 <pre><code class="language-bash">cd /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit
 f=&lt;the path named in the instruction&gt;
-ls -la &quot;$f"; head -3 "$f&quot;; git ls-files --error-unmatch &quot;$f&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo tracked || echo &quot;NOT tracked&quot;
+ls -la "$f"; head -3 "$f"; git ls-files --error-unmatch "$f" &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo tracked || echo "NOT tracked"
 </code></pre>
 <p>The first heading must match the article the instruction names. If it does not, stop and ask.</p>
 <p><strong>Step 2 — Back up the original.</strong></p>
@@ -183,17 +183,17 @@ ls -la &quot;$f"; head -3 "$f&quot;; git ls-files --error-unmatch &quot;$f&quot;
 <li>Tracked by git: nothing to do; <code>git show HEAD:$f</code> is the copy.</li>
 <li><strong>Not tracked: archive it to <code>_reserve/others/&lt;name&gt;.7z</code> now.</strong> <code>articles_internal/</code> and <code>_reserve/</code> are gitignored (<code>.gitignore</code> lines 19–20), so files there have no history. The house form is a 7z holding one file:</li>
 </ul>
-<pre><code class="language-bash">cp &quot;$f&quot; /tmp/orig.md
-( cd _reserve/others &amp;&amp; cp /tmp/orig.md &quot;$(basename "$f&quot;)&quot; &amp;&amp; 7z a -t7z -y &quot;$(basename "$f&quot;).7z&quot; &quot;$(basename "$f&quot;)&quot; &amp;&amp; rm &quot;$(basename "$f&quot;)&quot; )
-7z l &quot;_reserve/others/$(basename "$f&quot;).7z&quot; | tail -3   # asserts the size is the original's
+<pre><code class="language-bash">cp "$f" /tmp/orig.md
+( cd _reserve/others &amp;&amp; cp /tmp/orig.md "$(basename "$f")" &amp;&amp; 7z a -t7z -y "$(basename "$f").7z" "$(basename "$f")" &amp;&amp; rm "$(basename "$f")" )
+7z l "_reserve/others/$(basename "$f").7z" | tail -3   # asserts the size is the original's
 </code></pre>
 <p>The archive holds <strong>the version you replaced</strong>, not the version you wrote. A pass that archives its own output has lost the original.</p>
 <p><strong>Step 3 — Take the skeleton.</strong></p>
 <pre><code class="language-bash">python3 - &lt;&lt;'PY'
 import re
 t=open('&lt;file&gt;').read()
-print(&quot;words&quot;,len(t.split()),&quot;| bold&quot;,t.count('**'),&quot;| eq&quot;,len(re.findall(r'\$\$(.*?)\$\$',t,re.S)))
-print(&quot;\n&quot;.join(l for l in t.split('\n') if l.startswith('#')))
+print("words",len(t.split()),"| bold",t.count('**'),"| eq",len(re.findall(r'\$\$(.*?)\$\$',t,re.S)))
+print("\n".join(l for l in t.split('\n') if l.startswith('#')))
 PY
 </code></pre>
 <p>Copy the list of display equations to a scratch file. That list is the acceptance test in step 5, and it must be taken <strong>before</strong> the first edit.</p>
@@ -209,7 +209,7 @@ PY
 </ol>
 <p><strong>Step 5 — Verify before installing.</strong> Run the check block in the next section. A failure in equation parity or in a physics table row means the part is wrong; fix it before concatenating, not after.</p>
 <p><strong>Step 6 — Install, build, measure.</strong></p>
-<pre><code class="language-bash">cp /tmp/clean.md &quot;$f&quot;
+<pre><code class="language-bash">cp /tmp/clean.md "$f"
 .venv/bin/python build.py | tail -5
 </code></pre>
 <p>The output goes to <code>/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy/</code>, not next to the source (<code>DEPLOY</code> in <code>build.py</code>, line 13). Measure the bold share on the deployed file, not on the Markdown, because the Markdown cannot tell you what survived per word.</p>
@@ -262,16 +262,17 @@ PY
 <p>Renumber subsection labels in the body text too (<code>**10.1**</code> → <code>10.1</code>), and re-check the references afterwards; they are the part that fails silently.</p>
 <h2 id="8-the-verification-commands">8. The Verification Commands</h2>
 <p>Run all of it on the assembled <code>/tmp/clean.md</code>, then again after installing.</p>
-<p>```python
-import re
+<pre><code class="language-python">import re
 src = open('/tmp/orig.md').read()          # the backup from step 2
 new = open('/tmp/clean.md').read()
-norm = lambda s: re.sub(r'\s+', '', s)</p>
-<h1 id="1-every-display-equation-survives-modulo-whitespace">1. every display equation survives, modulo whitespace</h1>
-<p>se, ne = re.findall(r'\$\$(.<em>?)\$\$', src, re.S), re.findall(r'\$\$(.</em>?)\$\$', new, re.S)
+norm = lambda s: re.sub(r'\s+', '', s)
+
+# 1. every display equation survives, modulo whitespace
+se, ne = re.findall(r'\$\$(.*?)\$\$', src, re.S), re.findall(r'\$\$(.*?)\$\$', new, re.S)
 hn = [norm(x) for x in ne]
-print("eq", len(se), "-&gt;", len(ne), "| missing:", [i+1 for i,x in enumerate(se) if norm(x) not in hn])</p>
-<h1 id="2-math-delimiters-balanced-buildpy-does-not-parse-math-an-odd-math17-even-newcountmath18count-and-count-are-both-even">2. math delimiters balanced (build.py does not parse math: an odd $$ breaks the page silently)
+print("eq", len(se), "-&gt;", len(ne), "| missing:", [i+1 for i,x in enumerate(se) if norm(x) not in hn])
+
+# 2. math delimiters balanced (build.py does not parse math: an odd $$ breaks the page silently)
 print("$$ even:", new.count('$$') % 2 == 0, "| $ even:", new.count('$') % 2 == 0)
 
 # 3. table rows: identical counts per table, and the lost rows are only workshop rows
@@ -281,7 +282,7 @@ def tabs(t):
         if l.startswith('|'): cur.append(l)
         elif cur: out.append(cur); cur = []
     return out + ([cur] if cur else [])
-print("tables", len(tabs(src)), "->", len(tabs(new)), "| rows", sum(map(len,tabs(src))), "->", sum(map(len,tabs(new))))
+print("tables", len(tabs(src)), "-&gt;", len(tabs(new)), "| rows", sum(map(len,tabs(src))), "-&gt;", sum(map(len,tabs(new))))
 nrows = {norm(l) for l in new.split('\n') if l.startswith('|')}
 for r in (l for l in src.split('\n') if l.startswith('|')):
     if norm(r) not in nrows: print("  lost:", r[:90])
@@ -307,40 +308,34 @@ for i, l in enumerate(new.split('\n'), 1):
 print("bold:", new.count('**'), "| words:", len(new.split()))
 print("workshop words left:", {w: new.lower().count(w) for w in
       ['migration','ledger','flagged','tier','revision','honest','sitemap','.md`','alias'] if new.lower().count(w)})
-```
-
-And on the built page:
-
-```python
-import re
-h = open('/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy/<path>.html').read()
-words = len(re.sub(r'<[^>]+>', ' ', h).split())
-bold = sum(len(re.sub(r'<[^>]+>', ' ', t).split()) for _, t in re.findall(r'<(strong|b)>(.*?)</\1>', h, re.S))
+</code></pre>
+<p>And on the built page:</p>
+<pre><code class="language-python">import re
+h = open('/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy/&lt;path&gt;.html').read()
+words = len(re.sub(r'&lt;[^&gt;]+&gt;', ' ', h).split())
+bold = sum(len(re.sub(r'&lt;[^&gt;]+&gt;', ' ', t).split()) for _, t in re.findall(r'&lt;(strong|b)&gt;(.*?)&lt;/\1&gt;', h, re.S))
 print(f"words {words} | bold words {bold} | {100*bold/words:.1f}%")
-```
-
-Two things that look like faults and are not: the built HTML still contains `$` and `\mathrm`, because KaTeX renders client-side from `auto-render.min.js`; and the built page's word count cannot be compared with the Markdown's, because display math and table cells tokenise differently — compare the built page before the pass with the built page after it, and the Markdown with the Markdown.
-
-## 9. What Not to Do
-
-- Do not re-typeset an equation, "fix" a symbol, or change an index order. Report it; do not repair it.
-- Do not delete a table for its header. Rebuild it if its rows carry numbers.
-- Do not merge two sections because they now read alike.
-- Do not rebuild the deploy tree by hand; `build.py` writes it, and hand copies are what the next build deletes.
-- Do not commit or push. `articles_internal/` is gitignored, so a commit would not contain the file anyway; and a cleaning is not a publication.
-- Do not leave the scratch parts (`/tmp/p*.md`) as a second copy of the article. Delete them once the file is installed.
-
-## 10. The Checks Before the File Is Closed
-
-- The file at the installed path opens with the heading the instruction named, and it is the file the instruction named — not its namesake one directory away.
-- If the file is untracked, `_reserve/others/<name>.7z` exists and holds the **original** size.
-- `grep -c '\*\*'` prints 0, and the title's markup is unchanged.
-- Equation count is unchanged and every equation matches the original modulo whitespace.
-- Every table that was physics is still there with the same row count, and every lost row is a workshop row.
-- Every `§x.y` reference resolves to a subsection that exists in the cleaned file.
-- Every table row has the same number of columns as its header.
-- `$$<code>count and</code>$` count are both even.</h1>
+</code></pre>
+<p>Two things that look like faults and are not: the built HTML still contains <code>$</code> and <code>\mathrm</code>, because KaTeX renders client-side from <code>auto-render.min.js</code>; and the built page's word count cannot be compared with the Markdown's, because display math and table cells tokenise differently — compare the built page before the pass with the built page after it, and the Markdown with the Markdown.</p>
+<h2 id="9-what-not-to-do">9. What Not to Do</h2>
 <ul>
+<li>Do not re-typeset an equation, "fix" a symbol, or change an index order. Report it; do not repair it.</li>
+<li>Do not delete a table for its header. Rebuild it if its rows carry numbers.</li>
+<li>Do not merge two sections because they now read alike.</li>
+<li>Do not rebuild the deploy tree by hand; <code>build.py</code> writes it, and hand copies are what the next build deletes.</li>
+<li>Do not commit or push. <code>articles_internal/</code> is gitignored, so a commit would not contain the file anyway; and a cleaning is not a publication.</li>
+<li>Do not leave the scratch parts (<code>/tmp/p*.md</code>) as a second copy of the article. Delete them once the file is installed.</li>
+</ul>
+<h2 id="10-the-checks-before-the-file-is-closed">10. The Checks Before the File Is Closed</h2>
+<ul>
+<li>The file at the installed path opens with the heading the instruction named, and it is the file the instruction named — not its namesake one directory away.</li>
+<li>If the file is untracked, <code>_reserve/others/&lt;name&gt;.7z</code> exists and holds the <strong>original</strong> size.</li>
+<li><code>grep -c '\*\*'</code> prints 0, and the title's markup is unchanged.</li>
+<li>Equation count is unchanged and every equation matches the original modulo whitespace.</li>
+<li>Every table that was physics is still there with the same row count, and every lost row is a workshop row.</li>
+<li>Every <code>§x.y</code> reference resolves to a subsection that exists in the cleaned file.</li>
+<li>Every table row has the same number of columns as its header.</li>
+<li><code>$$</code> count and <code>$</code> count are both even.</li>
 <li>The build runs without error, and the built page's bold share is 0%.</li>
 <li>No sentence states how the cleaning was done, what was removed, or what an editor should think of it.</li>
 <li>No number lost its premise ($b_{B-L}=12$, "one-loop", "minimal content").</li>

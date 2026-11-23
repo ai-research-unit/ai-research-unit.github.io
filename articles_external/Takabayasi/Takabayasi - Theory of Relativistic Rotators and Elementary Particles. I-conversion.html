@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Relativistic Rotators and Elementary Particles. I — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Rotators and Elementary Particles. I.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="theory-of-relativistic-rotators-and-elementary-particles-i"><strong>Theory of Relativistic Rotators and Elementary Particles. I</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>23</strong> (1960) 915–940, No. 5, May 1960</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Theory of Relativistic Rotators and Elementary Particles. I-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Rotators and Elementary Particles. I.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Theory of Relativistic Rotators and Elementary Particles. I.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A classical theory of a relativistic rotator — a centre of mass carrying an orthonormal triad — built as a candidate unified model of elementary particles, and the paper in this folder that comes closest to the corpus's own construction. The rotator's instantaneous state of motion <em>is</em> a Lorentz frame; the body-fixed directions constitute an internal space; and the components of the spin six-vector on that body frame are identified with the isospin. Ordinary spin, isospin, internal chirality and rest mass then come out as four constants of one motion.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The model</h3>
+<p>"a relativistic rotator means an entity to carry a Lorentz transformation and its instantaneous state of motion just defines a Lorentz frame to be called 'body frame'." Its configuration is the centre $X^{\mu}(\tau)$ and three orthonormal spacelike vectors $a^{\mu}_{r}$ ($r=1,2,3$), completed by a timelike $a^{\mu}_{0}$ to a vierbein. The angular velocity is</p>
+<p>$$
+\omega_{\mu\nu}=2\sum_{r}a_{[\mu r}\dot a_{\nu]r},
+\qquad
+\omega_{r}=\epsilon_{rst}\,a^{\mu}_{s}a^{\nu}_{t}\omega_{\mu\nu},
+$$</p>
+<p>the second line being the components on the body frame. The action is $\delta A=0$ with a Lagrangian whose rotational part is quadratic in $\omega_r$ with an inertia matrix $A_{rs}(\omega)$.</p>
+<h3 id="isospin-is-the-body-frame-spin">Isospin is the body-frame spin</h3>
+<p>This is the paper's central identification, and it is stated in one sentence: the components of the spin six-vector "on the body frame are identified as isospin components since they possess" the required algebra. "In the usual theory iso-space is an abstract manifold completely decoupled from the Minkowski space, whereas in our theory it means the ray space consisting of the directions fixed to the body, and as such it is fitted into the ordinary space." Isospin is then required to commute with the ordinary spin and with the other constants, and in an electromagnetic field "its conservation is reduced to that of Is only, which is related to charge."</p>
+<p><strong>So one six-vector, read in two frames, gives two different physical quantities.</strong> In a fixed rest frame its components are the ordinary spin; on the body frame they are the isospin. There is no second internal manifold: the internal manifold is the orientation of the body, which is already in Minkowski space.</p>
+<h3 id="the-four-constants">The four constants</h3>
+<p>He lists them. $\vec S^{2}$ with the fixed-frame components: spin, "including half-integral values". The body-frame components: isospin $\vec I^{2},I_{3}$. The pseudoscalar formed from the internal angular momentum and its dual: internal chirality, "which commutes with spin and isospin components". And "This is of course the rest mass, which signifies the absolute length of the momentum-energy 4-vector in the Minkowski space and depends only on the internal state of motion of the rotator." Plus discontinuous constants such as the internal parity.</p>
+<h3 id="classification">Classification</h3>
+<p>The models are classified "according to the structure of the rotational part of the Lagrangian": spherical, symmetric and general rotators, with the inertia matrix constant or depending on the body-frame angular velocity; previously known models are "automatically repro- duced in this way, with their internal properties revealed." "with their internal properties revealed. In addition, entirely new models also follow from this scheme.", and new ones follow.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-body-frame-components-of-the-spin-bivector-are-the-isospin-one-object-two-frames-two-quantum-numbers">1. Body-frame components of the spin bivector are the isospin — one object, two frames, two quantum numbers</h3>
+<p><strong>The idea.</strong> The spin six-vector $S_{\mu\nu}$ has two sets of components: fixed-frame, the ordinary spin, and body-frame, the isospin. They commute, are separately conserved for a spherical rotator, and the isospin's internal space is the body's direction space, already in spacetime.</p>
+<p><strong>What it would add.</strong> A mechanism for a second $SU(2)$ that costs nothing. <em>Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</em> (<code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>) explains why the algebra gives one internal $SU(2)$ and no more. Takabayasi's construction shows how a <em>second</em> $SU(2)$ can arise without enlarging the algebra at all: it is the same bivector in the body frame, and the "internal" group is the little group of the body, already present. <strong>That is not a route to $SU(3)$ — it gives $SU(2)\times SU(2)$ at most — but it is a route to the observed pair (spin, isospin) that the corpus's algebra-only argument says should not exist.</strong> It also explains why isospin commutes with spin: they are components of one tensor along two orthogonal frames. </p>
+<p><strong>Where it lands.</strong> <em>Two Readings of One Transformation: A Comparison</em> (<code>articles_physics/two-readings-of-one-transformation-a-comparison.md</code>), as the physical instance of the two-reading structure, and the $SU(2)$-ceiling article, as the exception that tests the ceiling. </p>
+<p><strong>What stands in the way.</strong> The corpus reads isospin as a <em>gauge</em> quantum number, carried by a connection and by the doublet structure of the electroweak sector, not as a body-frame rotation. Takabayasi's isospin is a rigid-body quantum number with a mass spectrum; the corpus's is a gauge charge. Reconciling them is a research question, not a translation, which makes this the hardest import here. </p>
+<h3 id="2-the-angular-velocity-is-the-body-frame-part-of-the-rotors-logarithmic-derivative">2. The angular velocity is the body-frame part of the rotor's logarithmic derivative</h3>
+<p><strong>The idea.</strong> $\omega_{\mu\nu}=2\sum_r a_{[\mu r}\dot a_{\nu]r}$ is exactly the bivector $\bar\Lambda\dot\Lambda$ of the rotor, and $\omega_r$ are its components along the body triad. The paper's $(X,\Lambda)$ is the corpus's $(x,\text{rotor})$, and the paper's $\omega_r$ are the corpus's bivector components. </p>
+<p><strong>What it would add.</strong> A kinematic dictionary with a physical name for each entry. <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> (<code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>) computes $\bar\Lambda\dot\Lambda$ and identifies its parts. Takabayasi names them: the three body-frame rates are angular velocities, and their integrals over proper time are the rotation angles of the body. <strong>That makes the corpus's statement that the logarithmic derivative is a bivector and not a vector concrete: the bivector is the angular velocity tensor, and its vector reduction is only possible in a frame.</strong> The paper also shows that a <em>rotator</em> action is a functional of exactly these three scalars, which is the cleanest statement of what a rotor Lagrangian can depend on. </p>
+<p><strong>Where it lands.</strong> The eigenspinor article, as the dictionary, and <em>The Two Casimirs of the Lorentz Algebra</em> (<code>articles_physics/the-two-casimirs-of-the-lorentz-algebra.md</code>), where the split of a bivector into self-dual halves meets the split into rotation and boost. </p>
+<p><strong>What stands in the way.</strong> The rotator has no spinorial structure — it is an $SO(3)$ body with a timelike completion, not a spinor — so the correspondence is with the vector representation of the rotor and not with the spinor. That is a small and well-understood gap, and it is the reason the dictionary can be written at all. </p>
+<h3 id="3-rest-mass-is-a-property-of-the-internal-motion-not-a-parameter">3. Rest mass is a property of the internal motion, not a parameter</h3>
+<p><strong>The idea.</strong>"signifies the absolute length of the mo- mentum-energy 4-vector" "and depends only on the internal state of motion of the rotator. (On" Mass is therefore a constant of the motion computed from the body's rotation, not a number put into the Lagrangian, and it commutes with spin and isospin because it is a function of the internal state alone.</p>
+<p><strong>What it would add.</strong> A third reading of mass for a corpus that has two. <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>) distinguishes two masses structurally; <em>The Invariant Measure on the Mass Shell</em> (<code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>) treats the mass shell as a geometric object. Takabayasi's mass is neither a parameter nor a coordinate: it is an <em>integral of the internal motion</em>, so a change of the body's rotation changes the mass while leaving the spin and isospin magnitudes fixed. <strong>That is a mechanism for a mass spectrum from one Lagrangian, which is exactly what the corpus's mass is a parameter we do not explain position lacks.</strong> The paper's Part I does not compute the spectrum; the later papers in this folder do.</p>
+<p><strong>Where it lands.</strong> The two-kinds-of-mass article, as a third kind, and the mass-shell article, where the shell would be selected by the internal state.</p>
+<p><strong>What stands in the way.</strong> The claim is qualitative here; the formula for $m$ in terms of $\omega_r$ is in the companion papers. Ranked third.</p>
+<p>The remainder, one line each. The classification of rotator models by the rotational part of the Lagrangian is a taxonomy with no counterpart in the corpus, which does not build actions for internal motion. The internal chirality $S_{\mu\nu}\tilde S^{\mu\nu}$ as a conserved pseudoscalar is the corpus's chirality article in a rotator language. The discontinuous constants (internal parity) are a discrete sector the corpus treats in its grading article.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

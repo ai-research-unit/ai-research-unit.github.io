@@ -95,13 +95,13 @@ d(\tilde q_1, \tilde q_2) = |\tilde q_1 - \tilde q_2|.
 $$</p>
 <p>This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology of $\mathbb{H}$ is the ordinary Euclidean topology of four-dimensional space.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $\tilde q_1$ is</p>
+<p>The <strong>open ball</strong> of radius $r &gt; 0$ centred at $\tilde q_1$ is</p>
 <p>$$
-B(\tilde q_1, r) = \{\tilde q \in \mathbb{H} : |\tilde q - \tilde q_1| < r\}.
+B(\tilde q_1, r) = \{\tilde q \in \mathbb{H} : |\tilde q - \tilde q_1| &lt; r\}.
 $$</p>
 <p>It is an open ball in the quaternion space, exactly as in the real case. The topology is the ordinary Euclidean topology.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{H}$ is <strong>open</strong> if for every $\tilde q_1 \in \Omega$ there exists $r > 0$ with $B(\tilde q_1, r) \subseteq \Omega$.</p>
+<p>A set $\Omega \subseteq \mathbb{H}$ is <strong>open</strong> if for every $\tilde q_1 \in \Omega$ there exists $r &gt; 0$ with $B(\tilde q_1, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{H}$ is <strong>closed</strong> if its complement $\mathbb{H} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
@@ -113,9 +113,9 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous quaternion-valued function on a compact set is bounded and attains its maximum and minimum modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(\tilde q_n)$ of quaternions <strong>converges</strong> to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(\tilde q_n)$ of quaternions <strong>converges</strong> to $L \in \mathbb{H}$ if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies |\tilde q_n - L| < \epsilon.
+n \geq N \implies |\tilde q_n - L| &lt; \epsilon.
 $$</p>
 <p>We write $\tilde q_n \to L$ or $\lim_{n \to \infty} \tilde q_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $\tilde q_n \to L$ and $\tilde q_n \to L'$, then $L = L'$.</p>
@@ -131,9 +131,9 @@ $$</p>
 $$</p>
 <p>The quotient rule holds because $\mathbb{H}$ is a division algebra: every non-zero quaternion is invertible.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(\tilde q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(\tilde q_n)$ is <strong>Cauchy</strong> if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies |\tilde q_m - \tilde q_n| < \epsilon.
+m, n \geq N \implies |\tilde q_m - \tilde q_n| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{H}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{H}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the four components.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -141,9 +141,9 @@ $$</p>
 <p>$$
 \lim_{\tilde q \to \tilde q_1} f(\tilde q) = L
 $$</p>
-<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-\tilde q \in D, \; 0 < |\tilde q - \tilde q_1| < \delta \implies |f(\tilde q) - L| < \epsilon.
+\tilde q \in D, \; 0 &lt; |\tilde q - \tilde q_1| &lt; \delta \implies |f(\tilde q) - L| &lt; \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{\tilde q \to \tilde q_1} f(\tilde q) = L$ iff for every sequence $(\tilde q_n)$ in $D \setminus \{\tilde q_1\}$ with $\tilde q_n \to \tilde q_1$, we have $f(\tilde q_n) \to L$.</p>
@@ -153,18 +153,18 @@ $$</p>
 <p>$$
 \lim_{\tilde q \to \tilde q_1} f(\tilde q) = f(\tilde q_1).
 $$</p>
-<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>Equivalently, for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-\tilde q \in D, \; |\tilde q - \tilde q_1| < \delta \implies |f(\tilde q) - f(\tilde q_1)| < \epsilon.
+\tilde q \in D, \; |\tilde q - \tilde q_1| &lt; \delta \implies |f(\tilde q) - f(\tilde q_1)| &lt; \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> Sums, products, and quotients (where defined) of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <p><strong>Componentwise continuity.</strong> Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) \vec e_x + f_2(\tilde q) \vec e_y + f_3(\tilde q) \vec e_z$. Then $f$ is continuous at $\tilde q_1$ iff each $f_\mu$ is continuous at $\tilde q_1$. This reduces quaternion continuity to real continuity of four functions of four variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{H}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{H}$ is <strong>uniformly continuous</strong> if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-\tilde q_1, \tilde q_2 \in D, \; |\tilde q_1 - \tilde q_2| < \delta \implies |f(\tilde q_1) - f(\tilde q_2)| < \epsilon.
+\tilde q_1, \tilde q_2 \in D, \; |\tilde q_1 - \tilde q_2| &lt; \delta \implies |f(\tilde q_1) - f(\tilde q_2)| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="the-problem-of-differentiability">The Problem of Differentiability</h2>
@@ -280,8 +280,8 @@ $$</p>
 R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
 $$</p>
 <p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $|\tilde q - \tilde q_1| < R$ and diverges for $|\tilde q - \tilde q_1| > R$. On $|\tilde q - \tilde q_1| < R$ it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is monogenic on $|\tilde q - \tilde q_1| < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|\tilde q - \tilde q_1| &lt; R$ and diverges for $|\tilde q - \tilde q_1| &gt; R$. On $|\tilde q - \tilde q_1| &lt; R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is monogenic on $|\tilde q - \tilde q_1| &lt; R$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
 D \sum_{n=0}^\infty c_n (\tilde q - \tilde q_1)^n = \sum_{n=1}^\infty n c_n (\tilde q - \tilde q_1)^{n-1}.
 $$</p>
@@ -289,24 +289,24 @@ $$</p>
 <h3 id="taylor-series">Taylor Series</h3>
 <p><strong>Theorem (Taylor, quaternion version).</strong> If $f$ is monogenic on a domain containing the closed ball $\overline{B}(\tilde q_1, r)$, then $f$ has a power series expansion</p>
 <p>$$ \boxed{\; f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n \;} $$</p>
-<p>valid for $|\tilde q - \tilde q_1| < r$.</p>
+<p>valid for $|\tilde q - \tilde q_1| &lt; r$.</p>
 <p><strong>Corollary.</strong> A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Corollary (identity theorem).</strong> If two monogenic functions on a domain $\Omega$ agree on a set with an accumulation point in $\Omega$, they agree on all of $\Omega$.</p>
 <h3 id="laurent-series">Laurent Series</h3>
-<p><strong>Theorem (Laurent).</strong> If $f$ is monogenic on an annulus $r < |\tilde q - \tilde q_1| < R$, then $f$ has a unique expansion</p>
+<p><strong>Theorem (Laurent).</strong> If $f$ is monogenic on an annulus $r &lt; |\tilde q - \tilde q_1| &lt; R$, then $f$ has a unique expansion</p>
 <p>$$
 f(\tilde q) = \sum_{n=-\infty}^\infty c_n (\tilde q - \tilde q_1)^n
 $$</p>
 <p>valid on the annulus, with</p>
 <p>$$
-c_n = \frac{1}{2\pi^2} \int_{\partial B(\tilde q_1, \rho)} \frac{(w - \tilde q_1)^{-n-1}}{|w - \tilde q_1|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
+c_n = \frac{1}{2\pi^2} \int_{\partial B(\tilde q_1, \rho)} \frac{(w - \tilde q_1)^{-n-1}}{|w - \tilde q_1|^2} n(w) f(w) \, dS(w), \qquad r &lt; \rho &lt; R.
 $$</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be monogenic on a punctured ball $0 < |\tilde q - \tilde q_1| < R$.</p>
-<p><strong>Removable singularity.</strong> $\tilde q_1$ is removable if $f$ extends to a monogenic function on $|\tilde q - \tilde q_1| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.</p>
-<p><strong>Pole.</strong> $\tilde q_1$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.</p>
-<p><strong>Essential singularity.</strong> $\tilde q_1$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.</p>
+<p>Let $f$ be monogenic on a punctured ball $0 &lt; |\tilde q - \tilde q_1| &lt; R$.</p>
+<p><strong>Removable singularity.</strong> $\tilde q_1$ is removable if $f$ extends to a monogenic function on $|\tilde q - \tilde q_1| &lt; R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n &lt; 0$.</p>
+<p><strong>Pole.</strong> $\tilde q_1$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n &lt; -m$.</p>
+<p><strong>Essential singularity.</strong> $\tilde q_1$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n &lt; 0$.</p>
 <p><strong>Theorem (Riemann).</strong> $\tilde q_1$ is removable iff $f$ is bounded near $\tilde q_1$.</p>
 <p><strong>Theorem (Casorati–Weierstrass).</strong> If $\tilde q_1$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $\tilde q_1$.</p>
 <h3 id="residues">Residues</h3>

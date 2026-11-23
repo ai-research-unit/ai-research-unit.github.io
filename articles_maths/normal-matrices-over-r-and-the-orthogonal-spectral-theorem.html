@@ -86,14 +86,14 @@ $$</p>
 <p><strong>The three classical families are normal.</strong> A symmetric matrix has $X^{\mathsf T}=X$, an antisymmetric one has $X^{\mathsf T}=-X$, and an orthogonal one has $X^{\mathsf T}=X^{-1}$; in each case the two products of the definition coincide. The converse fails: the block diagonal matrix with a $1\times1$ block and a rotation block is normal and belongs to none of the three families.</p>
 <p><strong>The rotation block is the model normal matrix with a nonreal spectrum.</strong> For $C(a,b)$,</p>
 <p>$$
-CC^{\mathsf T}=\begin{pmatrix}a^{2}+b^{2}&0\\ 0&a^{2}+b^{2}\end{pmatrix}=C^{\mathsf T}C .
+CC^{\mathsf T}=\begin{pmatrix}a^{2}+b^{2}&amp;0\\ 0&amp;a^{2}+b^{2}\end{pmatrix}=C^{\mathsf T}C .
 $$</p>
 <p>So a normal real matrix may have a spectrum that is not real, and the rotation blocks are the only source of nonreal eigenvalues.</p>
 <h2 id="the-real-schur-form">The Real Schur Form</h2>
 <p><strong>Theorem.</strong> For every $X\in M_n(\mathbb{R})$ there is an orthogonal $Q$ such that $Q^{\mathsf T}XQ$ is block upper triangular, with blocks of size $1$ and $2$ on the diagonal and zeros below them.</p>
 <p><em>Proof.</em> Induct on $n$; the case $n=1$ is empty. If $X$ has a real eigenvalue, take a real eigenvector $u$ of unit length and let $W=\mathbb{R}u$; then $XW\subseteq W$. If $X$ has no real eigenvalue, take a nonreal eigenvalue $\mu$ with eigenvector $z=u+iv$; then $u$ and $v$ are linearly independent, $Xu$ and $Xv$ lie in $W=\operatorname{span}\{u,v\}$ because $Xz=\mu z$ and $X\bar z=\bar\mu\bar z$, and $W$ is a real plane with $XW\subseteq W$. Choose an orthonormal basis of $\mathbb{R}^{n}$ whose first one or two vectors span $W$. In that basis the matrix of $X$ is</p>
 <p>$$
-\begin{pmatrix}B&C\\ 0&D\end{pmatrix},\qquad B\in M_1(\mathbb{R})\ \text{or}\ M_2(\mathbb{R}),
+\begin{pmatrix}B&amp;C\\ 0&amp;D\end{pmatrix},\qquad B\in M_1(\mathbb{R})\ \text{or}\ M_2(\mathbb{R}),
 $$</p>
 <p>because $XW\subseteq W$ kills the lower-left block. Let $\pi$ be the orthogonal projection onto $W^{\perp}$. The compression $w\mapsto\pi(Xw)$, from $W^{\perp}$ to itself, is a real matrix of size $n-\dim W$, and the induction hypothesis applied to it, in a suitable orthonormal basis of $W^{\perp}$, gives the rest of the block form.</p>
 <p><strong>The diagonal blocks are the eigenvalues.</strong> A $1\times1$ block is a real eigenvalue and a $2\times2$ block is a conjugate pair, by the definition of the construction. So the block structure of the Schur form already displays the count $r+2s=n$.</p>
@@ -104,19 +104,19 @@ $$</p>
 Q^{\mathsf T}XQ=\operatorname{diag}\bigl(\lambda_1,\dots,\lambda_r,\ C(a_1,b_1),\dots,C(a_s,b_s)\bigr),
 $$</p>
 <p>with $\lambda_k\in\mathbb{R}$ and $C(a_j,b_j)$ the $2\times2$ rotation block, and $r+2s=n$.</p>
-<p><em>Proof.</em> Suppose first that $X$ is normal and take the real Schur form $T=Q^{\mathsf T}XQ$ with $Q$ orthogonal. Then $T$ is normal, since normality is invariant under orthogonal conjugation. Write $T$ in blocks $T_{ij}$ of the sizes of the Schur blocks, with $T_{ij}=0$ for $i>j$. The identity $TT^{\mathsf T}=T^{\mathsf T}T$, compared in the first diagonal block and traced, gives</p>
+<p><em>Proof.</em> Suppose first that $X$ is normal and take the real Schur form $T=Q^{\mathsf T}XQ$ with $Q$ orthogonal. Then $T$ is normal, since normality is invariant under orthogonal conjugation. Write $T$ in blocks $T_{ij}$ of the sizes of the Schur blocks, with $T_{ij}=0$ for $i&gt;j$. The identity $TT^{\mathsf T}=T^{\mathsf T}T$, compared in the first diagonal block and traced, gives</p>
 <p>$$
 \|T_{11}\|_F^{2}+\sum_{k\ge2}\|T_{1k}\|_F^{2}=\|T_{11}\|_F^{2},
 $$</p>
 <p>because $\operatorname{tr}(T_{11}T_{11}^{\mathsf T})=\operatorname{tr}(T_{11}^{\mathsf T}T_{11})$. Hence $\sum_{k\ge2}\|T_{1k}\|_F^{2}=0$ and the first block row is diagonal. Apply the same argument to the trailing block, which is normal, and induction clears every block row. So $T$ is block diagonal. Each diagonal block is normal with the spectrum of a $1\times1$ or $2\times2$ real matrix: a $1\times1$ block is a real eigenvalue, and a normal $2\times2$ block with a nonreal spectrum satisfies</p>
 <p>$$
-\begin{pmatrix}p&q\\ s&t\end{pmatrix}\begin{pmatrix}p&s\\ q&t\end{pmatrix}=\begin{pmatrix}p&s\\ q&t\end{pmatrix}\begin{pmatrix}p&q\\ s&t\end{pmatrix},
+\begin{pmatrix}p&amp;q\\ s&amp;t\end{pmatrix}\begin{pmatrix}p&amp;s\\ q&amp;t\end{pmatrix}=\begin{pmatrix}p&amp;s\\ q&amp;t\end{pmatrix}\begin{pmatrix}p&amp;q\\ s&amp;t\end{pmatrix},
 $$</p>
 <p>which, with the hypothesis of a nonreal spectrum, forces $q=-s$ and $p=t$, that is, the block is $C(p,q)$. The converse is immediate: a block diagonal matrix whose blocks are real scalars and rotation blocks is normal, since each block is.</p>
 <p><strong>The theorem is a spectral theorem without eigenvectors.</strong> It gives an orthonormal basis, grouped in one vector for each real eigenvalue and two vectors for each pair, in which $X$ acts as a scalar on the first and as a rotation on the second. The size of the blocks is forced: no single real eigenvector exists for a pair.</p>
 <h2 id="the-three-special-cases">The Three Special Cases</h2>
 <p><strong>Symmetric matrices have all blocks of size one.</strong> A symmetric $X$ is normal, and a rotation block $C(a,b)$ is symmetric only when $b=0$, so the theorem gives $X=Q\operatorname{diag}(\lambda)Q^{\mathsf T}$ with $\lambda$ real. The spectrum is real and the eigenbasis is orthonormal. This is <em>The Spectral Theorem: the Symmetric Case</em>.</p>
-<p><strong>Antisymmetric matrices have all rotation blocks with $a=0$.</strong> An antisymmetric $X$ is normal, and its transpose is $-X$, so the eigenvalues are purely imaginary; in the real form this means that every block is $C(0,b)=bJ$ with $J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$, together with some zero eigenvalues. This is <em>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</em>.</p>
+<p><strong>Antisymmetric matrices have all rotation blocks with $a=0$.</strong> An antisymmetric $X$ is normal, and its transpose is $-X$, so the eigenvalues are purely imaginary; in the real form this means that every block is $C(0,b)=bJ$ with $J=\begin{pmatrix}0&amp;-1\\ 1&amp;0\end{pmatrix}$, together with some zero eigenvalues. This is <em>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</em>.</p>
 <p><strong>Orthogonal matrices have every block normalised.</strong> An orthogonal $X$ is normal, and $X^{\mathsf T}X=\mathrm{I}$ forces each real eigenvalue to be $\pm1$ and each pair to satisfy $a^{2}+b^{2}=1$. So the real form of an orthogonal matrix is a diagonal of signs and rotations of unit ratio.</p>
 <p><strong>The three families are the three possible block types.</strong> A normal matrix is symmetric when it has only real blocks, antisymmetric when it has only imaginary blocks $bJ$ and zeros, and orthogonal when every block has modulus one. A general normal matrix mixes the three.</p>
 <h2 id="the-commutant">The Commutant</h2>
@@ -140,14 +140,14 @@ $$</p>
 <h2 id="where-normality-fails">Where Normality Fails</h2>
 <p><strong>A matrix with real eigenvalues need not have an orthonormal eigenbasis.</strong> Take</p>
 <p>$$
-S=\begin{pmatrix}1&1\\ 0&2\end{pmatrix}.
+S=\begin{pmatrix}1&amp;1\\ 0&amp;2\end{pmatrix}.
 $$</p>
 <p>Its eigenvalues are $1$ and $2$ and its eigenvectors are $(1,0)$ and $(1,1)$, with scalar product $0.707107$; they are not orthogonal. And</p>
 <p>$$
-SS^{\mathsf T}-S^{\mathsf T}S=\begin{pmatrix}0&1\\ 1&-2\end{pmatrix}
+SS^{\mathsf T}-S^{\mathsf T}S=\begin{pmatrix}0&amp;1\\ 1&amp;-2\end{pmatrix}
 $$</p>
 <p>is nonzero, of Frobenius norm $2$. So $S$ is not normal, and no orthogonal $Q$ makes $Q^{\mathsf T}SQ$ diagonal.</p>
-<p><strong>A nilpotent matrix fails in the extreme.</strong> For $N=\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ the two products differ by a matrix of norm $1.414$, the only eigenvalue is $0$, and the eigenspace is one-dimensional; there is no eigenbasis at all, orthonormal or not.</p>
+<p><strong>A nilpotent matrix fails in the extreme.</strong> For $N=\begin{pmatrix}0&amp;1\\ 0&amp;0\end{pmatrix}$ the two products differ by a matrix of norm $1.414$, the only eigenvalue is $0$, and the eigenspace is one-dimensional; there is no eigenbasis at all, orthonormal or not.</p>
 <p><strong>The Schur form shows the failure.</strong> For a non-normal matrix the Schur form is genuinely triangular: the off-diagonal block does not vanish, so the compression to the invariant line or plane is not the restriction. The norm of that block measures the failure, and it is zero exactly when the matrix is normal.</p>
 <h2 id="the-operator-norm">The Operator Norm</h2>
 <p><strong>Theorem.</strong> If $X$ is normal then $\|X\|_2=\rho(X)$, the spectral radius.</p>
@@ -179,7 +179,7 @@ $$</p>
 </tr>
 <tr>
 <td>$C(a,b)$</td>
-<td>the rotation block $\begin{pmatrix}a&-b\\ b&a\end{pmatrix}$</td>
+<td>the rotation block $\begin{pmatrix}a&amp;-b\\ b&amp;a\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$J$</td>

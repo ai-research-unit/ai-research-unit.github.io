@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From dispersion relations to spectral dimension — and back again — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From dispersion relations to spectral dimension-and back again - 1105.6098.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-dispersion-relations-to-spectral-dimension-and-back-again"><strong>From dispersion relations to spectral dimension — and back again</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1105.6098v2 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thomas P. Sotiriou, Matt Visser, Silke Weinfurtner</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 9 December 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - From dispersion relations to spectral dimension-and back again - 1105.6098-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From dispersion relations to spectral dimension-and back again - 1105.6098.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-massless-regime.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - From dispersion relations to spectral dimension-and back again - 1105.6098.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The spectral dimension is a scale-dependent number used in causal dynamical triangulations and Hořava gravity. This paper argues that, on scales where curvature is negligible, the spectral dimension characterises a dispersion relation rather than a geometry. It gives a prescription that assigns a spectral dimension to any given dispersion relation and shows how to invert the relation. Because exact evaluation is usually impossible, it develops asymptotic expansions resembling Seeley–DeWitt and Feynman expansions, plus a saddle-point method for intermediate scales. The stated purpose is to connect discrete and continuum approaches to quantum gravity.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-motivation">The motivation</h3>
+<p>"The so-called spectral dimension is a scale-dependent number associated with both geometries and field theories that has recently attracted much attention, driven largely, though not exclusively, by investigations of causal dynamical triangulations (CDT) and Hořava gravity as possible candidates for quantum gravity."</p>
+<h3 id="what-it-probes">What it probes</h3>
+<p>"We advocate the use of the spectral dimension as a probe for the kinematics of these (and other) systems in the region where spacetime curvature is small, and the manifold is flat to a good approximation."</p>
+<h3 id="the-construction">The construction</h3>
+<p>"we show how to assign a spectral dimension (as a function of so-called diffusion time) to any arbitrarily specified dispersion relation."</p>
+<h3 id="the-claim-in-the-conclusion">The claim in the conclusion</h3>
+<p>"We have argued that in this regime the spectral dimension characterizes a differential operator that is used to define the (fictitious) diffusion process, or better yet the dispersion relation associated with this operator."</p>
+<h3 id="the-inversion">The inversion</h3>
+<p>"We exhibited a natural way of assigning a spectral dimension to any dispersion relation, and shown how one can in principle invert the relationship. These results establish that the spectral dimension acts as probe of the kinematics of a given degree of freedom in this regime."</p>
+<h3 id="the-practical-limit">The practical limit</h3>
+<p>"for more general (and realistic) dispersion relations this analytic determination is rarely feasible. To address this issue we have developed approximate techniques that allow one to determine the behaviour of the spectral dimension to a desired accuracy in various regimes of interests."</p>
+<h3 id="the-bridge">The bridge</h3>
+<p>"we consider the use of the concept of the spectral dimension as a link between discrete and continuum quantum gravity theories. Given that in the former the spectral dimension is one of the few known observables, defining it and providing the techniques for calculating in the latter is an important step in understanding the continuum limit of discrete models."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-dispersion-relation-fixes-a-dimension">1. A dispersion relation fixes a dimension</h3>
+<p><strong>The idea.</strong> Any dispersion relation yields a spectral dimension that can be computed and inverted.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-massless-regime.md</code> treats the massless case as a limit. If a dispersion relation determines a dimension, then a modified massless limit implies a modified dimension, which gives the article a new observable to track.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-massless-regime.md</code>, in the discussion of the limit.</p>
+<p><strong>What stands in the way.</strong> The relation holds only where curvature is negligible. Ranked first, because it gives the article an extra computable quantity.</p>
+<h3 id="2-the-flow-at-intermediate-scales">2. The flow at intermediate scales</h3>
+<p><strong>The idea.</strong> A saddle-point method gives the spectral dimension between the infrared and ultraviolet ends.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code> discusses behaviour at one scale. A method for the flow between scales is what the article needs to make a statement about running.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.md</code>, in the discussion of scale dependence.</p>
+<p><strong>What stands in the way.</strong> The method is approximate. Ranked second.</p>
+<h3 id="3-one-observable-for-discrete-models">3. One observable for discrete models</h3>
+<p><strong>The idea.</strong> Few quantities are computable in discrete quantum gravity; the spectral dimension is one.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what its framework predicts. A quantity that is measurable across very different approaches is a candidate observable the article should consider.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The framework is not discrete in this sense. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural wormholes as gravitational lenses — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Natural Wormholes as Gravitational Lenses - astro-ph_9409051.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="natural-wormholes-as-gravitational-lenses"><strong>Natural wormholes as gravitational lenses</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>astro-ph/9409051v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>John G. Cramer, Robert L. Forward, Michael S. Morris, Matt Visser, Gregory Benford, Geoffrey A. Landis</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 20 September 1994</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Natural Wormholes as Gravitational Lenses - astro-ph_9409051-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Natural Wormholes as Gravitational Lenses - astro-ph_9409051.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Natural Wormholes as Gravitational Lenses - astro-ph_9409051.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors take Visser's flat-space wormhole, framed by a loop of exotic string with negative tension, and ask what happens if it sits in a dense region. Mass flows through, one mouth gains and the other loses, and the far mouth can end up with negative mass. They compute the lensing signature of such an object. A negative-mass lens defocuses rather than focuses, so a background star dims and then brightens in a profile unlike a normal lens. They recommend that microlensing surveys search for this shape and call the objects GNACHOs.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-object">The object</h3>
+<p>"Visser has suggested traversable 3-dimensional wormholes that could plausibly form naturally during Big Bang inflation."</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"A wormhole mouth embedded in high mass density might accrete mass, giving the other mouth a net negative mass of unusual gravitational properties."</p>
+<h3 id="the-consequence-for-lensing">The consequence for lensing</h3>
+<p>"The lensing of such a gravitationally negative anomalous compact halo object (GNACHO) will enhance background stars with a time profile that is observable and qualitatively different from that recently observed for massive compact halo objects (MACHOs) of positive mass."</p>
+<h3 id="the-condition-for-negative-total-mass">The condition for negative total mass</h3>
+<p>"Note that in hypothesizing the existence of such a wormhole, one has to abandon the averaged null energy condition. Therefore, the hypotheses underlying the positive mass theorem no longer apply and there is nothing, in principle, to prevent the occurrence of negative total mass."</p>
+<h3 id="the-flow">The flow</h3>
+<p>"As this mass passes through the wormhole, the entrance mouth will gain mass while the exit mouth will lose mass by the same amount. Soon, if the mass flow continues, the exit wormhole mouth will acquire a net negative mass."</p>
+<h3 id="the-recommendation">The recommendation</h3>
+<p>"We recommend that MACHO search data be analyzed for GNACHOs."</p>
+<h3 id="the-claim-about-detectability">The claim about detectability</h3>
+<p>"The calculations presented above show that objects of negative gravitational mass, if they exist, can provide a very distinctive light enhancement profile."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-signature-that-needs-no-new-physics">1. A signature that needs no new physics</h3>
+<p><strong>The idea.</strong> Negative mass gives a light curve of a definite shape, and existing survey data can be re-read for it.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks what empirical standing the framework has. This paper is a worked example of turning a speculative object into a searchable signature, which is the standard the target should be measured against.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> No such object has been found. Ranked first, because it is a concrete template for a testable claim.</p>
+<h3 id="2-a-negative-mass-needs-an-energy-condition-violation">2. A negative mass needs an energy-condition violation</h3>
+<p><strong>The idea.</strong> The positive mass theorem protects positive mass, and dropping the averaged null energy condition removes the protection.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code> states conservation without discussing its inequality content. The link from an energy condition to a sign of mass is a consequence the target does not draw.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, in the discussion of conservation.</p>
+<p><strong>What stands in the way.</strong> The argument is classical and global. Ranked second.</p>
+<h3 id="3-two-mouths-one-mass-budget">3. Two mouths, one mass budget</h3>
+<p><strong>The idea.</strong> Mass is conserved through the throat, so one mouth's gain is the other's loss.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code> derives conservation laws from one identity. A nonlocal bookkeeping where two regions share a budget is a case the target's local laws do not cover.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/energy-and-information-four-conservation-laws-from-one-identity.md</code>, in the discussion of the laws.</p>
+<p><strong>What stands in the way.</strong> The wormhole is not in the framework. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

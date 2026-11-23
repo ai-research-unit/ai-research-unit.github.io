@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Towards non-AdS Holography via the Long String Phenomenon — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser M R/Visser MR - Towards non-AdS Holography via the Long String Phenomenon - 1801.02589.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="towards-non-ads-holography-via-the-long-string-phenomenon"><strong>Towards non-AdS Holography via the Long String Phenomenon</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1801.02589v3 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Sam van Leuven, Erik Verlinde, Manus Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 14 June 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>47 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser M R/Visser MR - Towards non-AdS Holography via the Long String Phenomenon - 1801.02589-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Towards non-AdS Holography via the Long String Phenomenon - 1801.02589.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser M R/Visser MR - Towards non-AdS Holography via the Long String Phenomenon - 1801.02589.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Proposes a microscopic holographic description for spacetimes that are not asymptotically AdS — Minkowski, de Sitter, and AdS below its curvature radius — starting from the assumption that the number of microscopic degrees of freedom is still given by the area of the holographic screen. The excitation energy per degree of freedom is read off from the geometry, and it turns out to decrease towards the infrared, the opposite of AdS/CFT. A conformal map to $AdS_3\times S^q$ identifies the mechanism as the long string phenomenon of symmetric product conformal field theories, which also accounts for the negative specific heat of non-AdS black holes and for the value of the vacuum energy.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-quantities">The three quantities</h3>
+<p>The paper builds its definitions from three objects: $C$, the number of UV degrees of freedom; $\epsilon$, the excitation energy per degree of freedom; and $N$, the total energy in units of the cutoff. For a screen at radius $R$,</p>
+<p>$$C=\frac{A(R)}{16\pi G_d}=\frac{c}{12}\Big(\frac{R}{L}\Big)^{d-2}, \qquad A(R)=\Omega_{d-2}R^{d-2}, \qquad (paper\ 2.3)$$</p>
+<p>with $c/12=A(L)/16\pi G_d$ the central charge of the dual CFT (paper 2.2). The lattice cutoff is related to the radius by the UV–IR correspondence $\delta=L^2/R$, so the number of cells on the sphere is $(L/\delta)^{d-2}=(R/L)^{d-2}$, and $\epsilon\sim1/\delta$.</p>
+<h3 id="the-inversion">The inversion</h3>
+<p>For AdS the excitation energy grows towards the infrared; for the non-AdS geometries it decreases. The authors state this as the central difference and tie it to the negative specific heat of black holes in those spacetimes. The bulk geometry considered is static and spherically symmetric,</p>
+<p>$$ds^2=-f(R)\,dt^2+\frac{dR^2}{f(R)}+R^2d\Omega^2_{d-2}, \qquad (paper\ 2.1)$$</p>
+<p>and the definitions of $C$ and $\epsilon$ are given purely in terms of the geometry near the holographic surface, so that they can be transported to the non-AdS cases.</p>
+<h3 id="the-conformal-map">The conformal map</h3>
+<p>Two Weyl-equivalent spacetimes are conjectured to have microscopic theories related by the same map, and the non-AdS geometries are mapped conformally to $AdS_3\times S^q$-type backgrounds. The microscopic properties are then those of symmetric product CFTs, for which the spectrum is known.</p>
+<h3 id="the-long-string-mechanism">The long string mechanism</h3>
+<p>On a large symmetric product CFT, a twisted sector of "long strings" has a typical excitation energy considerably smaller than that of the untwisted sector. The authors conclude that "this same long string mechanism reduces the excitation energy at large distances in the bulk and towards the IR of the microscopic theory, and therefore explains the negative specific heat of non-AdS black holes." The same mechanism is claimed to fix the vacuum energy of (A)dS, which "contrary to most expectations, differs from its natural value set by the Planck scale."</p>
+<h3 id="the-limit-of-the-claim">The limit of the claim</h3>
+<p>The authors are explicit that a local quantum field theory dual should not be expected for non-AdS spacetimes: renormalising an AdS lattice up to the AdS scale leaves a single site, described by matrix quantum mechanics, and the Ryu–Takayanagi formula presupposes a factorised Hilbert space that is not available below the AdS scale. What survives is the holographic principle as a bound, not AdS/CFT as an identification.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-degrees-of-freedom-from-area-without-a-metric-theory">1. Degrees of freedom from area, without a metric theory</h3>
+<p><strong>The idea.</strong> $C=A/16\pi G$ is used as a definition of the number of microscopic degrees of freedom for any static spherically symmetric spacetime, AdS or not, and $\epsilon\sim1/\delta$ with $\delta=L^2/R$ defines the excitation scale. This is a <strong>formula</strong> pair, and it is the only place in this literature where the counting is separated from the choice of vacuum.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> states that the framework has no horizon Hilbert space and no count of states, and its open question 1 asks whether a state exists whose entropy is $A/4G$. This paper does not answer that question but supplies the dictionary in which the question can be posed: a number of degrees of freedom, an energy per degree, and the ratio $N$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, at open question 1, and <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> The whole construction presupposes an Einstein-Hilbert coupling to fix $G_d$ and a holographic screen at radius $R$; the corpus has neither a $G$ of its own nor a screen. The cost is the imported Newton constant, which the corpus's black-hole article already pays explicitly.</p>
+<h3 id="2-negative-specific-heat-as-a-signature">2. Negative specific heat as a signature</h3>
+<p><strong>The idea.</strong> In spacetimes without a negative cosmological constant the specific heat of a black hole is negative, and the microscopic theory must reproduce it; the long string sector does. This is a <strong>number with a sign</strong>, and the sign is the content.</p>
+<p><strong>What it would add.</strong> The corpus's black-hole article verifies the first law and the Smarr relation but never computes $C=\partial M/\partial T$ or its sign; the corpus therefore cannot state which of its spacetimes would be thermodynamically stable. A negative specific heat is what forbids a naive canonical ensemble, which is the sort of statement the corpus's <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code> would need.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the section on the specialisations.</p>
+<p><strong>What stands in the way.</strong> The argument is holographic; the corpus's route to the temperature is modular and does not produce a density of states from which $C$ could be differentiated. Ranked second.</p>
+<h3 id="3-a-vacuum-energy-that-is-not-planckian">3. A vacuum energy that is not Planckian</h3>
+<p><strong>The idea.</strong> The long string sector lowers the vacuum energy below its natural Planck-scale value, and the paper reads the (A)dS vacuum energy this way. This is a <strong>mechanism</strong> for a number that is otherwise unexplained.</p>
+<p><strong>What it would add.</strong> The corpus's cosmology article carries an FLRW metric "with the missing source"; a mechanism that fixes the vacuum energy's size, even conjecturally, is exactly the kind of statement that article lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.md</code>.</p>
+<p><strong>What stands in the way.</strong> It is a conjecture built on a conjecture (Weyl-related microscopic theories), and it needs symmetric product CFTs the corpus does not have. The authors themselves do not claim a derivation of the observed value. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

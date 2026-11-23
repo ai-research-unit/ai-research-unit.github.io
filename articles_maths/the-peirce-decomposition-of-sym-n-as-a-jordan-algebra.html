@@ -80,7 +80,7 @@ L(E)X=E\circ X=\tfrac12(EX+XE),
 $$</p>
 <p>and the eigenvalues of $L(E)$ are determined by the block form. With $E=\operatorname{diag}(\mathrm{I}_r,0)$ and $X$ in blocks,</p>
 <p>$$
-X=\begin{pmatrix}A&B\\B^{\mathsf T}&C\end{pmatrix},\qquad E\circ X=\tfrac12\begin{pmatrix}2A&B\\B^{\mathsf T}&0\end{pmatrix},
+X=\begin{pmatrix}A&amp;B\\B^{\mathsf T}&amp;C\end{pmatrix},\qquad E\circ X=\tfrac12\begin{pmatrix}2A&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix},
 $$</p>
 <p>so $L(E)$ acts by $2A$ on the $A$-block, by $B$ on the $B$-block and by $0$ on the $C$-block. The three Peirce spaces are therefore</p>
 <p>$$
@@ -95,7 +95,7 @@ $$</p>
 <p><strong>Only three eigenvalues occur, which is the difference from the associative Peirce decomposition.</strong> The multiplication operator by an idempotent in the associative algebra has four eigenspaces, with the two off-diagonal corners separated; the Jordan operator merges them into the single space $J_{1/2}$. So the Jordan decomposition has three parts where the associative one has four, and the middle part is the sum of the two associative corners.</p>
 <p><strong>The eigenspaces are the fixed points of the two projections $X\mapsto EXE$ and $X\mapsto(\mathrm{I}-E)X(\mathrm{I}-E)$.</strong> In block form,</p>
 <p>$$
-J_1=\Big\{\begin{pmatrix}A&0\\0&0\end{pmatrix}\Big\},\qquad J_0=\Big\{\begin{pmatrix}0&0\\0&C\end{pmatrix}\Big\},\qquad J_{1/2}=\Big\{\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\Big\},
+J_1=\Big\{\begin{pmatrix}A&amp;0\\0&amp;0\end{pmatrix}\Big\},\qquad J_0=\Big\{\begin{pmatrix}0&amp;0\\0&amp;C\end{pmatrix}\Big\},\qquad J_{1/2}=\Big\{\begin{pmatrix}0&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix}\Big\},
 $$</p>
 <p>so the three spaces are read off the three block positions, exactly as in the associative case, with the difference that the two off-diagonal positions are identified by the symmetry of $X$.</p>
 <h2 id="the-dimensions-and-the-blocks">The Dimensions and the Blocks</h2>
@@ -119,13 +119,13 @@ $$</p>
 J_{1/2}\circ J_{1/2}\subseteq J_1\oplus J_0,\qquad J_{1/2}\circ J_0\subseteq J_{1/2},\qquad J_0\circ J_0\subseteq J_0 .
 $$</p>
 <p>All six were verified at $n=5$ for $r=1,2,3,4$ by multiplying basis elements and decomposing the products in the Peirce basis. The rules are the statement that $L(E)$ acts on a product by the sum of the eigenvalues, with the sum truncated at $1$ and at $0$ when it would leave the interval.</p>
-<p><em>Proof of the first and the third.</em> For $A,A'\in J_1$ the blocks are $\begin{pmatrix}A&0\\0&0\end{pmatrix}$, so $A\circ A'=\begin{pmatrix}A\circ A'&0\\0&0\end{pmatrix}\in J_1$. For $A\in J_1$ and $C\in J_0$ the blocks are complementary, so $AC=0$ and $CA=0$, hence $A\circ C=0$.</p>
+<p><em>Proof of the first and the third.</em> For $A,A'\in J_1$ the blocks are $\begin{pmatrix}A&amp;0\\0&amp;0\end{pmatrix}$, so $A\circ A'=\begin{pmatrix}A\circ A'&amp;0\\0&amp;0\end{pmatrix}\in J_1$. For $A\in J_1$ and $C\in J_0$ the blocks are complementary, so $AC=0$ and $CA=0$, hence $A\circ C=0$.</p>
 <p><strong>The middle space squares into the two outer spaces.</strong> For $B,B'$ the block computation gives</p>
 <p>$$
-\begin{pmatrix}0&B\\B^{\mathsf T}&0\end{pmatrix}\circ\begin{pmatrix}0&B'\\B'^{\mathsf T}&0\end{pmatrix}
-=\frac12\begin{pmatrix}BB'^{\mathsf T}+B'B^{\mathsf T}&0\\0&B^{\mathsf T}B'+B'^{\mathsf T}B\end{pmatrix},
+\begin{pmatrix}0&amp;B\\B^{\mathsf T}&amp;0\end{pmatrix}\circ\begin{pmatrix}0&amp;B'\\B'{}^{\mathsf T}&amp;0\end{pmatrix}
+=\frac12\begin{pmatrix}BB'{}^{\mathsf T}+B'B^{\mathsf T}&amp;0\\0&amp;B^{\mathsf T}B'+B'{}^{\mathsf T}B\end{pmatrix},
 $$</p>
-<p>so the $J_1$ component is the symmetrised $BB'^{\mathsf T}$ and the $J_0$ component is the symmetrised $B^{\mathsf T}B'$. The two components are the two Gram matrices of the pair, and the identity was verified numerically at $n=5$.</p>
+<p>so the $J_1$ component is the symmetrised $BB'{}^{\mathsf T}$ and the $J_0$ component is the symmetrised $B^{\mathsf T}B'$. The two components are the two Gram matrices of the pair, and the identity was verified numerically at $n=5$.</p>
 <p><strong>The rules are the Jordan analogue of a grading, with the middle eigenvalue halved.</strong> Since $L(E)$ is a derivation of the Jordan algebra with respect to itself, the eigenvalue of a product is the sum of the eigenvalues whenever the sum lies in the spectrum. The spectrum is $\{0,\tfrac12,1\}$, so $\tfrac12+\tfrac12=1$ lands in $J_1$, $\tfrac12+0=\tfrac12$ stays, and $1+1=2$ is truncated to $1$ by the identity $E\circ E=E$.</p>
 <p><strong>No rule sends the outer spaces into the middle one.</strong> Since $J_1\circ J_0=0$ and $J_1\circ J_1\subseteq J_1$, the sum $J_1\oplus J_0$ is a subalgebra, of dimension $r(r+1)/2+(n-r)(n-r+1)/2$. So the Peirce decomposition exhibits $\operatorname{Sym}_n$ as a subalgebra plus a bimodule over it, and the bimodule is the middle space.</p>
 <h2 id="the-rank-one-case">The Rank-One Case</h2>
@@ -134,9 +134,9 @@ $$</p>
 J_1=\mathbb{R}E,\qquad J_{1/2}=\{ub^{\mathsf T}+bu^{\mathsf T}:b\in u^{\perp}\},\qquad J_0=\{X\in\operatorname{Sym}_n:Xu=0\},
 $$</p>
 <p>of dimensions $1$, $n-1$ and $n(n-1)/2$. The middle space is the space of vectors in the hyperplane, doubled by symmetry, and the outer space is the symmetric algebra of the hyperplane.</p>
-<p><strong>The middle space carries the structure of the hyperplane.</strong> For $B=ub^{\mathsf T}+bu^{\mathsf T}$ and $B'=ub'^{\mathsf T}+b'u^{\mathsf T}$,</p>
+<p><strong>The middle space carries the structure of the hyperplane.</strong> For $B=ub^{\mathsf T}+bu^{\mathsf T}$ and $B'=ub'{}^{\mathsf T}+b'u^{\mathsf T}$,</p>
 <p>$$
-B\circ B'=\tfrac12\big(bb'^{\mathsf T}+b'b^{\mathsf T}\big)+\langle b,b'\rangle\,uu^{\mathsf T},
+B\circ B'=\tfrac12\big(bb'{}^{\mathsf T}+b'b^{\mathsf T}\big)+\langle b,b'\rangle\,uu^{\mathsf T},
 $$</p>
 <p>so the product has a $J_0$ part which is the symmetric product of the two vectors and a $J_1$ part which is their inner product times the idempotent. The identity was verified for random vectors at $n=5$, and it is the matrix form of the spin-factor product of the Jordan theory.</p>
 <p><strong>The rank-one decomposition is the cone decomposition.</strong> The idempotent $E$ spans an extreme ray of the cone of squares, the space $J_1\oplus J_{1/2}$ is the tangent space to the cone at $E$ intersected with the algebra, and $J_0$ is the space of directions orthogonal to the ray. So the Peirce decomposition at a rank-one idempotent is the decomposition of the algebra along an extreme ray, which is the subject of <em>The Positive Cone and Its Boundary</em>.</p>
@@ -144,11 +144,11 @@ $$</p>
 <h2 id="the-maximal-family-and-the-coordinate-lines">The Maximal Family and the Coordinate Lines</h2>
 <p><strong>A maximal family of idempotents gives $n$ lines and $\binom n2$ lines.</strong> Take $E_1,\dots,E_n$ orthogonal idempotents with sum $\mathrm{I}$, for instance the coordinate projections. The refined Peirce decomposition has the spaces</p>
 <p>$$
-J_{ii}=\mathbb{R}E_i\quad(1\le i\le n),\qquad J_{ij}=\{X:X=E_iXE_j+E_jXE_i\}\quad(i<j),
+J_{ii}=\mathbb{R}E_i\quad(1\le i\le n),\qquad J_{ij}=\{X:X=E_iXE_j+E_jXE_i\}\quad(i&lt;j),
 $$</p>
 <p>each of dimension one, so the total is $n+\binom n2=n(n+1)/2$. The dimensions were checked by counting the coordinate lines and the pairs.</p>
 <p><strong>The refined spaces are the common eigenspaces of the family.</strong> Each $J_{ij}$ is the intersection of the $\tfrac12$-eigenspace of $L(E_i)$ with the $\tfrac12$-eigenspace of $L(E_j)$ and the $0$-eigenspace of every other $L(E_k)$, so the refined decomposition is the simultaneous diagonalisation of the commuting operators $L(E_1),\dots,L(E_n)$. So the Peirce decomposition is a spectral decomposition of a commuting family, and the $n$ coordinate lines are its fixed part.</p>
-<p><strong>The coordinate lines are the idempotents and the off-diagonal lines are the nilpotent-like directions.</strong> An element of $J_{ij}$ for $i<j$ has square in $J_{ii}\oplus J_{jj}$, since $L(E_i)$ gives $\tfrac12+\tfrac12=1$; so the off-diagonal line is not an idempotent line but a line whose square lands on the two diagonal lines. That is the Jordan shadow of the nilpotent structure of the Peirce basis, which the Peirce basis article develops in full.</p>
+<p><strong>The coordinate lines are the idempotents and the off-diagonal lines are the nilpotent-like directions.</strong> An element of $J_{ij}$ for $i&lt;j$ has square in $J_{ii}\oplus J_{jj}$, since $L(E_i)$ gives $\tfrac12+\tfrac12=1$; so the off-diagonal line is not an idempotent line but a line whose square lands on the two diagonal lines. That is the Jordan shadow of the nilpotent structure of the Peirce basis, which the Peirce basis article develops in full.</p>
 <p><strong>The maximal family is unique up to the orthogonal group.</strong> Two maximal families summing to the identity are carried into one another by an element of $\mathrm{O}(n)$, so the $n+\binom n2$ count is an invariant of the algebra rather than of the frame.</p>
 <h2 id="the-case-math157">The Case $n=2$</h2>
 <p><strong>At $n=2$ the decomposition has two possible ranks.</strong> For $r=1$ the dimensions are $1,1,1$ and for $r=2$ the idempotent is the identity and the decomposition is trivial, with $J_1=\operatorname{Sym}_2$ and the other two spaces zero. So the only nontrivial decomposition is the rank-one one, and it is the finest decomposition of the three-dimensional algebra.</p>

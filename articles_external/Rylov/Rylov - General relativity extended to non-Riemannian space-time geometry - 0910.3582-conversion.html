@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Relativity Extended to Non-Riemannian Space-Time Geometry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - General relativity extended to non-Riemannian space-time geometry - 0910.3582.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-relativity-extended-to-non-riemannian-space-time-geometry"><strong>General Relativity Extended to Non-Riemannian Space-Time Geometry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0910.3582 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v7, 25 October 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - General relativity extended to non-Riemannian space-time geometry - 0910.3582-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - General relativity extended to non-Riemannian space-time geometry - 0910.3582.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - General relativity extended to non-Riemannian space-time geometry - 0910.3582.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Writes the Einstein equations in terms of the world function and in coordinateless form, so that they determine $\sigma$ rather than $g_{ik}$. The resulting theory keeps no new hypothesis: it is the general relativity equations, with the restrictions of the Riemannian setting removed. Two consequences are claimed. The gravitational field stops being a physical entity and becomes an attribute of $\sigma$, and the theory predicts an induced antigravitation that makes black holes impossible. The black-hole claim is the paper's headline and is argued from an explicit force law.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-extension">The extension</h3>
+<p>The thesis is stated as a demand on the reader: "Anybody, who trusts in the general relativity, is to accept the extended general relativity, because the extended theory does not use any new hypotheses. It corrects only inconsequences and restrictions of the conventional conception of general relativity." The equations "are written in terms of the world function in the coordinateless form" and "determine directly the world function, (but not only the metric tensor)". The consequence he draws is that the geometry is no longer Riemannian; the PDF prints it as "non-Rieamannian". The ontological result follows from the coordinateless form:"At this stage we have the monistic conception, containing only one fundamental quantity: world function σ. The gravitational field, which is one of fundamental quantities of the general relativity (GR), is now only an attribute of the world function. From viewpoint" And then the sentence that makes it a claim about existence: "the gravitational field is not a physical essence. It is only a manner of the particle interaction description. In particular, from viewpoint of EGR the gravitational field cannot exist separate from the matter."</p>
+<h3 id="the-black-hole-claim">The black-hole claim</h3>
+<p>The abstract states it without hedging:"The extended general relativity predicts an induced antigravitation, which eliminates existence of black holes." The mechanism is a force law inside a heavy sphere. For a uniform sphere of radius $R$ and a small parameter $\varepsilon$, the force is $$F=\nabla V_2(x,x)=-\frac{\varepsilon}{R^2}{\bf x}+\frac{\varepsilon^2}{R^2}\frac{37}{16}{\bf x}-\frac{61}{80}\frac{\varepsilon^2}{R^2}\frac{\lvert{\bf x}\rvert^2}{R^2}{\bf x},\qquad \lvert{\bf x}\rvert&lt;R$$ and he reads it off:"lows from (6.23), that if ε &gt; 37 ≈ 0.43, the region, where the gravitational force is directed from the center, appears near the point x = 0. If ε ≥ 0.65, the gravitational force is directed from the center of the sphere in the whole region |x| &lt; R. Thus, inside the heavy sphere" The reasoning is a comparison of two ways of computing:"From dynamic (differential) viewpoint this fact is explained as a result compensation of gravitational influence of different parts of the hallow sphere. If the gravitational law distinguishes from the Newtonian one, such a compensation may disappear, and an induced antigravitation may appear". So collapse is stopped by a repulsion that the exact geometry produces and the differential approximation misses. The conclusion is a comparison of reliabilities:"conclusion on impossibility of the dark hole existence in EGR is more dependable, than existence of the black holes in the framework of GR. Besides, impossibility of the gravitational collapsing, leading to a formation of a black hole, is confirmed by appearance of induced antigravitation in EGR." (The PDF prints "dark hole" in these sentences.) </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-gravity-as-an-attribute-of-the-world-function">1. Gravity as an attribute of the world function</h3>
+<p><strong>The idea.</strong> $\sigma$ is the only fundamental quantity; the metric is derived from it; the gravitational field is a bookkeeping device for how matter interacts, not an entity. A <strong>monistic reduction</strong> with a specific target. </p>
+<p><strong>What it would add.</strong> The corpus's curved-spacetime article derives a metric-like structure from an algebra and is careful to say what is and is not curved. A claim that the metric is one function's shadow is stronger, and it would let the corpus ask whether its own metric is derivable from a single two-point function — a question with a computation behind it, since a metric is determined by its geodesic distances locally. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>. </p>
+<p><strong>What stands in the way.</strong> The reduction is asserted by writing the equations in terms of $\sigma$; the hard part — recovering the Einstein equations as a special case and showing the extra solutions are physical — is not carried out. And "the gravitational field is not a physical essence" is unfalsifiable as it stands, since the predictions are unchanged in the Riemannian limit. </p>
+<h3 id="2-a-force-that-changes-sign-inside-matter">2. A force that changes sign inside matter</h3>
+<p><strong>The idea.</strong> A <strong>formula</strong> with two printed thresholds: at $\varepsilon&gt;16/37\approx0.43$ the force inside a heavy sphere reverses near the centre, and at $\varepsilon\ge0.65$ it reverses throughout. A prediction, with numbers. </p>
+<p><strong>What it would add.</strong> The corpus has an article on which measured strengths it is allowed to print, and it is careful with data. This is a place where an external framework makes a quantitative prediction that differs from general relativity in a regime that is accessible — the interior of a dense object — and the comparison could be made rather than described. </p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>. </p>
+<p><strong>What stands in the way.</strong> The prediction contradicts well-tested gravity: neutron stars of the observed masses are stable precisely because no such reversal occurs, and black-hole shadows have been imaged. No comparison with any of that is made, and $\varepsilon$ is left as a free parameter with no value. </p>
+<h3 id="3-the-coordinateless-form-as-the-point">3. The coordinateless form as the point</h3>
+<p><strong>The idea.</strong> Writing the field equations without coordinates is not a convenience but the argument: if the equation determines $\sigma$, the coordinate system cannot influence the solution, and "This circumstance admits one to eliminate consideration of any coordinate transformation."</p>
+<p><strong>What it would add.</strong> The corpus's derivations are coordinate-explicit — a frame is fixed and the covariance is checked afterwards. A coordinateless formulation would make the covariance a property of the equation's form rather than a verified property of a solution, which is a stronger statement and the one the corpus keeps having to establish case by case.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>.</p>
+<p><strong>What stands in the way.</strong> The coordinateless equations are not displayed in a form a reader can check in this paper; they are referred to. Without the equations, the claim that the formulation is coordinate-free is a promise.</p>
+<p>The rank: the sign-changing force first, because it is the one quantitative prediction; the monistic reduction second, because it is the structural claim; the coordinateless form last, because the equations are not shown.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

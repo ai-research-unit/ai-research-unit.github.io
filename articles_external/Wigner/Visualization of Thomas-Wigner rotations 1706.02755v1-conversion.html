@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization of Thomas–Wigner Rotations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Wigner/Visualization of Thomas-Wigner rotations 1706.02755v1.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="visualization-of-thomaswigner-rotations"><strong>Visualization of Thomas–Wigner Rotations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1706.02755v1 [physics.class-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>G. Beyerle</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 6 June 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Wigner/Visualization of Thomas-Wigner rotations 1706.02755v1-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Wigner/Visualization of Thomas-Wigner rotations 1706.02755v1.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/exercise-the-thomas-precession.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Wigner/Visualization of Thomas-Wigner rotations 1706.02755v1.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Turns the Thomas–Wigner rotation into something visible. A Born-rigid grid of points is accelerated in straight-line sections, each at constant proper acceleration for the same proper time, until its reference point returns to where it started. The grid comes back rotated. Because Born-rigidity forces the stern to accelerate harder than the bow, the switch from one boost to the next is not synchronous in the lab frame, and the resulting shear, accumulated over the sections, <em>is</em> the rotation. The paper reports that at least five boosts are needed for a closed path, gives the angles between adjacent boost directions, and points out that each acceleration produces an event horizon that bounds the grid's size.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem">The problem</h3>
+<p>"It is well known that pure Lorentz transformations do not form a group in the mathematical sense, since the composition of two transformations in general is not a pure Lorentz transformation again, but involves the Thomas-Wigner spatial rotation."</p>
+<h3 id="the-construction">The construction</h3>
+<p>The object is a grid "and is assumed to be Born-rigid, i.e. the distances between all grid points, as observed" in the comoving frame. "Born-rigidity implies that the stern of this object accelerates faster than its bow."</p>
+<p>The result on the number of sections: "It turns out that at leasts five boosts are necessary", under the stated conditions — equal proper duration and equal proper acceleration magnitude in each section, motion confined to a plane.</p>
+<h3 id="the-mechanism">The mechanism</h3>
+<p>"The transition from one boost section to the next occurs synchronously in the instantaneous comoving frame. In the laboratory frame, however, the trailing vertices conclude the current boost phase first and switch to the next one, which in general involves a direction change."</p>
+<p>Which produces the rotation: "The simulations illustrate clearly that the aggregation of these shearing contributions finally adds up to the Thomas-Wigner rotation."</p>
+<h3 id="the-horizon">The horizon</h3>
+<p>"Accelerated motions induce event horizons, which no part of a physical, Born-rigid object may overstep. Thus, the object's size is limited to a finite volume or area (if its motion is restricted to two spatial dimension) and Thomas-Wigner rotations by construction observe the special relativistic speed limit."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-the-rotation-is-accumulated-shear">1. The rotation is accumulated shear</h3>
+<p><strong>The idea.</strong> A <strong>mechanism</strong>: the Thomas–Wigner rotation of an extended accelerated body is not an extra rotation applied on top of its motion; it is the sum of the shears that appear at each change of boost direction, because the simultaneity convention makes the trailing end switch first.</p>
+<p><strong>What it would add.</strong> The corpus derives the Thomas precession as a kinematic rate for a point particle and calls the rotation "a single term of a product". The extended-body picture supplies the microscopic account of where that term comes from: a body that changes direction cannot do so rigidly, and the non-rigidity is exactly the rotation. That answers a question the corpus's algebra leaves open — why a rotation appears at all in a sequence of translations — and it does so without new formalism.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-the-thomas-precession.md</code>.</p>
+<p><strong>What stands in the way.</strong> The corpus's particles are points, and its rotors act on a single spinor; the shear is a statement about a continuum of worldlines, so importing it means adding a body where the corpus has none.</p>
+<h3 id="2-five-boosts-is-the-minimum-for-a-closed-loop">2. Five boosts is the minimum for a closed loop</h3>
+<p><strong>The idea.</strong> A <strong>result</strong>: with equal proper durations and planar motion, four boost sections cannot return a Born-rigid object's reference point to its starting place; five can.</p>
+<p><strong>What it would add.</strong> The corpus treats the closed loop abstractly, as any sequence whose product is a rotation. A minimum count converts that into a discrete statement with a number in it, and it is the kind of combinatorial fact — how many steps of a given kind close a path — that the corpus's discrete exercises elsewhere take as their subject.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.md</code>.</p>
+<p><strong>What stands in the way.</strong> The bound depends on the equal-duration and planarity assumptions, and on the Born-rigidity of the body; without them the count is different, so it is a fact about a model rather than about Lorentz transformations.</p>
+<h3 id="3-accelerated-motion-bounds-the-size-of-a-rigid-body">3. Accelerated motion bounds the size of a rigid body</h3>
+<p><strong>The idea.</strong> A <strong>constraint</strong>: an accelerating Born-rigid object has a horizon, and no part of it can lie beyond that horizon, so a rigid body of unlimited extent cannot be accelerated.</p>
+<p><strong>What it would add.</strong> The corpus has an article on the impurity of a boosted frame and another on the exceptional point of a boosted state; both are about what a boost does to a state. This is a statement about what a boost does to an <em>extended</em> system, and it is a hard bound rather than a distortion. It would give the corpus a physical reason to keep its accelerating systems finite, which it currently does implicitly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/impurity-in-a-boosted-frame.md</code>.</p>
+<p><strong>What stands in the way.</strong> The horizon here is the Rindler horizon of uniform acceleration, a standard result, so the addition is a special case of a known statement rather than a new one; the paper's contribution is the use of it, not the discovery.</p>
+<p>The rank: the shear mechanism first, because it answers a why; the five-boost count second, because it is a number; the horizon bound last, because it is a known constraint applied.</p>
+<p>The remaining items in one line each: the analytic expressions for the angles between adjacent boost directions, which are what makes the five-section construction explicit; the released simulation movie and SymPy scripts, which make the claim checkable rather than merely asserted; and the observation that the visualization makes the link to the relativity of simultaneity visible, which is the paper's pedagogical aim.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

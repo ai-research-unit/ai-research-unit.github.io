@@ -91,9 +91,9 @@ d(a, c) \leq d(a, b) + d(b, c).
 $$</p>
 <p>The pair $(\mathbb{R}, d)$ is a <strong>metric space</strong>. Every notion in real analysis is defined in terms of this metric.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $a$ is</p>
+<p>The <strong>open ball</strong> of radius $r &gt; 0$ centred at $a$ is</p>
 <p>$$
-B(a, r) = \{b \in \mathbb{R} : |b - a| < r\} = (a - r, a + r).
+B(a, r) = \{b \in \mathbb{R} : |b - a| &lt; r\} = (a - r, a + r).
 $$</p>
 <p>The <strong>closed ball</strong> is</p>
 <p>$$
@@ -101,7 +101,7 @@ $$</p>
 $$</p>
 <p>A <strong>neighborhood</strong> of $a$ is any set containing some $B(a, r)$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{R}$ is <strong>open</strong> if for every $a \in \Omega$ there exists $r > 0$ with $B(a, r) \subseteq \Omega$.</p>
+<p>A set $\Omega \subseteq \mathbb{R}$ is <strong>open</strong> if for every $a \in \Omega$ there exists $r &gt; 0$ with $B(a, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{R}$ is <strong>closed</strong> if its complement $\mathbb{R} \setminus F$ is open.</p>
 <p><strong>Theorem.</strong> The open sets of $\mathbb{R}$ are exactly the unions of open intervals.</p>
 <p><strong>Theorem.</strong> Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually, arbitrary intersections of closed sets are closed. Finite unions of closed sets are closed.</p>
@@ -113,27 +113,27 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous real-valued function on a compact set is bounded and attains its maximum and minimum.</p>
 <h2 id="sequences-and-series">Sequences and Series</h2>
 <h3 id="convergence">Convergence</h3>
-<p>A sequence $(a_n)$ of real numbers <strong>converges</strong> to $L \in \mathbb{R}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(a_n)$ of real numbers <strong>converges</strong> to $L \in \mathbb{R}$ if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies |a_n - L| < \epsilon.
+n \geq N \implies |a_n - L| &lt; \epsilon.
 $$</p>
 <p>We write $a_n \to L$ or $\lim_{n \to \infty} a_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $a_n \to L$ and $a_n \to L'$, then $L = L'$.</p>
 <p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails: $(-1)^n$ is bounded but not convergent.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(a_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(a_n)$ is <strong>Cauchy</strong> if for every $\epsilon &gt; 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies |a_m - a_n| < \epsilon.
+m, n \geq N \implies |a_m - a_n| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{R}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{R}$ expressed in sequence form.</p>
 <p><strong>Theorem.</strong> Every subsequence of a convergent sequence converges to the same limit.</p>
 <h3 id="monotone-convergence">Monotone Convergence</h3>
 <p>A sequence $(a_n)$ is <strong>monotone increasing</strong> if $a_{n+1} \geq a_n$ for all $n$.</p>
 <p><strong>Theorem (Monotone Convergence).</strong> Every bounded monotone sequence converges.</p>
-<p><strong>Proof.</strong> Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$.</p>
+<p><strong>Proof.</strong> Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon &gt; 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N &gt; L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon &lt; a_n \leq L$. Hence $a_n \to L$.</p>
 <h3 id="subsequences-and-limit-points">Subsequences and Limit Points</h3>
 <p>A real number $L$ is a <strong>limit point</strong> of a sequence $(a_n)$ if some subsequence converges to $L$.</p>
-<p><strong>Theorem.</strong> $L$ is a limit point of $(a_n)$ iff for every $\epsilon > 0$ and every $N \in \mathbb{N}$ there exists $n \geq N$ with $|a_n - L| < \epsilon$.</p>
+<p><strong>Theorem.</strong> $L$ is a limit point of $(a_n)$ iff for every $\epsilon &gt; 0$ and every $N \in \mathbb{N}$ there exists $n \geq N$ with $|a_n - L| &lt; \epsilon$.</p>
 <p><strong>Theorem (Bolzano–Weierstrass, sequence form).</strong> Every bounded sequence has a limit point.</p>
 <h3 id="limsup-and-liminf">Limsup and Liminf</h3>
 <p>The <strong>limit superior</strong> of a sequence $(a_n)$ is</p>
@@ -152,31 +152,31 @@ $$</p>
 S_N = \sum_{n=1}^N a_n.
 $$</p>
 <p>The series <strong>converges</strong> if the sequence $(S_N)$ converges. The limit is the <strong>sum</strong> of the series.</p>
-<p><strong>Theorem (Cauchy criterion).</strong> $\sum a_n$ converges iff for every $\epsilon > 0$ there exists $N$ such that</p>
+<p><strong>Theorem (Cauchy criterion).</strong> $\sum a_n$ converges iff for every $\epsilon &gt; 0$ there exists $N$ such that</p>
 <p>$$
-m > n \geq N \implies \left| \sum_{k=n+1}^m a_k \right| < \epsilon.
+m &gt; n \geq N \implies \left| \sum_{k=n+1}^m a_k \right| &lt; \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> If $\sum a_n$ converges, then $a_n \to 0$. The converse fails: the harmonic series $\sum 1/n$ diverges even though $1/n \to 0$.</p>
 <p><strong>Theorem (Comparison).</strong> If $0 \leq a_n \leq b_n$ and $\sum b_n$ converges, then $\sum a_n$ converges.</p>
 <p><strong>Theorem (Absolute convergence).</strong> If $\sum |a_n|$ converges, then $\sum a_n$ converges.</p>
-<p><strong>Theorem (Ratio test).</strong> If $\lim |a_{n+1}/a_n| = L$, the series converges absolutely if $L < 1$ and diverges if $L > 1$. The test is inconclusive if $L = 1$.</p>
-<p><strong>Theorem (Root test).</strong> If $\lim |a_n|^{1/n} = L$, the series converges absolutely if $L < 1$ and diverges if $L > 1$. The test is inconclusive if $L = 1$.</p>
+<p><strong>Theorem (Ratio test).</strong> If $\lim |a_{n+1}/a_n| = L$, the series converges absolutely if $L &lt; 1$ and diverges if $L &gt; 1$. The test is inconclusive if $L = 1$.</p>
+<p><strong>Theorem (Root test).</strong> If $\lim |a_n|^{1/n} = L$, the series converges absolutely if $L &lt; 1$ and diverges if $L &gt; 1$. The test is inconclusive if $L = 1$.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-functions">Limits of Functions</h3>
 <p>Let $f : D \to \mathbb{R}$ with $D \subseteq \mathbb{R}$, and let $a$ be a limit point of $D$. We say</p>
 <p>$$
 \lim_{b \to a} f(b) = L
 $$</p>
-<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-b \in D, \; 0 < |b - a| < \delta \implies |f(b) - L| < \epsilon.
+b \in D, \; 0 &lt; |b - a| &lt; \delta \implies |f(b) - L| &lt; \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{b \to a} f(b) = L$ iff for every sequence $(b_n)$ in $D \setminus \{a\}$ with $b_n \to a$, we have $f(b_n) \to L$.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{R}$ is <strong>continuous at</strong> $a \in D$ if $\lim_{b \to a} f(b) = f(a)$ when $a$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{R}$ is <strong>continuous at</strong> $a \in D$ if $\lim_{b \to a} f(b) = f(a)$ when $a$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-b \in D, \; |b - a| < \delta \implies |f(b) - f(a)| < \epsilon.
+b \in D, \; |b - a| &lt; \delta \implies |f(b) - f(a)| &lt; \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> $f$ is continuous at $a$ iff for every sequence $(b_n)$ in $D$ with $b_n \to a$, we have $f(b_n) \to f(a)$.</p>
@@ -184,19 +184,19 @@ $$</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <h3 id="the-intermediate-value-theorem">The Intermediate Value Theorem</h3>
 <p><strong>Theorem (IVT).</strong> If $f : [a, b] \to \mathbb{R}$ is continuous and $u$ lies between $f(a)$ and $f(b)$, then there exists $c \in [a, b]$ with $f(c) = u$.</p>
-<p><strong>Proof.</strong> Suppose $f(a) < u < f(b)$. Let</p>
+<p><strong>Proof.</strong> Suppose $f(a) &lt; u &lt; f(b)$. Let</p>
 <p>$$
 S = \{v \in [a, b] : f(v) \leq u\}.
 $$</p>
-<p>$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq u$. If $f(c) < u$, then for $v$ slightly greater than $c$, $f(v) < u$, contradicting the definition of $c$. Hence $f(c) = u$.</p>
-<p><strong>Corollary.</strong> If $f$ is continuous on $[a, b]$ and $f(a) f(b) < 0$, then $f$ has a root in $(a, b)$.</p>
+<p>$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq u$. If $f(c) &lt; u$, then for $v$ slightly greater than $c$, $f(v) &lt; u$, contradicting the definition of $c$. Hence $f(c) = u$.</p>
+<p><strong>Corollary.</strong> If $f$ is continuous on $[a, b]$ and $f(a) f(b) &lt; 0$, then $f$ has a root in $(a, b)$.</p>
 <h3 id="the-extreme-value-theorem">The Extreme Value Theorem</h3>
 <p><strong>Theorem (EVT).</strong> If $f : [a, b] \to \mathbb{R}$ is continuous, then $f$ is bounded and attains its maximum and minimum.</p>
 <p><strong>Proof.</strong> $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{R}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{R}$ is <strong>uniformly continuous</strong> if for every $\epsilon &gt; 0$ there exists $\delta &gt; 0$ such that</p>
 <p>$$
-a, b \in D, \; |a - b| < \delta \implies |f(a) - f(b)| < \epsilon.
+a, b \in D, \; |a - b| &lt; \delta \implies |f(a) - f(b)| &lt; \epsilon.
 $$</p>
 <p>The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
@@ -226,7 +226,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.</p>
 <p><strong>Corollary.</strong> If $\frac{df}{dx} = 0$ on an interval, $f$ is constant there.</p>
-<p><strong>Corollary.</strong> If $\frac{df}{dx} > 0$ on an interval, $f$ is strictly increasing there.</p>
+<p><strong>Corollary.</strong> If $\frac{df}{dx} &gt; 0$ on an interval, $f$ is strictly increasing there.</p>
 <h3 id="taylors-theorem">Taylor's Theorem</h3>
 <p><strong>Theorem (Taylor).</strong> If $f$ is $n$ times differentiable on an interval containing $a$ and $b$, with $f^{(n)}$ continuous on the interval between them, then</p>
 <p>$$ \boxed{\;f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b)\;},
@@ -241,7 +241,7 @@ $$</p>
 <h3 id="the-riemann-integral">The Riemann Integral</h3>
 <p>Let $f : [a, b] \to \mathbb{R}$ be bounded. A <strong>partition</strong> of $[a, b]$ is a finite set</p>
 <p>$$
-P = \{a = c_0 < c_1 < \dots < c_n = b\}.
+P = \{a = c_0 &lt; c_1 &lt; \dots &lt; c_n = b\}.
 $$</p>
 <p>The <strong>upper sum</strong> and <strong>lower sum</strong> are</p>
 <p>$$
@@ -256,7 +256,7 @@ $$</p>
 <p>$$
 \int_a^b f.
 $$</p>
-<p><strong>Theorem (Cauchy criterion).</strong> $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $\Omega(f, P) - L(f, P) < \epsilon$.</p>
+<p><strong>Theorem (Cauchy criterion).</strong> $f$ is Riemann integrable iff for every $\epsilon &gt; 0$ there exists a partition $P$ with $\Omega(f, P) - L(f, P) &lt; \epsilon$.</p>
 <p><strong>Theorem.</strong> Continuous functions on $[a, b]$ are Riemann integrable. Monotone functions on $[a, b]$ are Riemann integrable. Functions with finitely many discontinuities on $[a, b]$ are Riemann integrable.</p>
 <p><strong>Theorem (Fundamental Theorem of Calculus, I).</strong> If $f$ is continuous on $[a, b]$ and</p>
 <p>$$
@@ -286,7 +286,7 @@ $$</p>
 $$</p>
 <p>provided the limit exists. The integral <strong>converges</strong> if the limit exists and is finite.</p>
 <p><strong>Comparison test.</strong> If $0 \leq f \leq g$ on $[a, \infty)$ and $\int_a^\infty g$ converges, then $\int_a^\infty f$ converges.</p>
-<p><strong>Example.</strong> $\int_1^\infty a^{-p} \, da$ converges iff $p > 1$.</p>
+<p><strong>Example.</strong> $\int_1^\infty a^{-p} \, da$ converges iff $p &gt; 1$.</p>
 <h2 id="sequences-of-functions">Sequences of Functions</h2>
 <h3 id="pointwise-convergence">Pointwise Convergence</h3>
 <p>A sequence of functions $f_n : D \to \mathbb{R}$ <strong>converges pointwise</strong> to $f : D \to \mathbb{R}$ if for every $a \in D$,</p>
@@ -325,8 +325,8 @@ $$</p>
 R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
 $$</p>
 <p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $|b - a| < R$ and diverges for $|b - a| > R$. On $|b - a| < R$ it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is differentiable on $|b - a| < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|b - a| &lt; R$ and diverges for $|b - a| &gt; R$. On $|b - a| &lt; R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is differentiable on $|b - a| &lt; R$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
 \frac{d}{db} \sum_{n=0}^\infty c_n (b - a)^n = \sum_{n=1}^\infty n c_n (b - a)^{n-1}.
 $$</p>
@@ -340,9 +340,9 @@ $$</p>
 <p><strong>Theorem.</strong> A function is analytic at $a$ iff it has a power series expansion around $a$ with positive radius of convergence.</p>
 <p><strong>Caution.</strong> A smooth function need not be analytic. The standard example is</p>
 <p>$$
-f(a) = \begin{cases} \exp(-1/a^2) & a \neq 0, \\ 0 & a = 0. \end{cases}
+f(a) = \begin{cases} \exp(-1/a^2) &amp; a \neq 0, \\ 0 &amp; a = 0. \end{cases}
 $$</p>
-<p>All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(a) > 0$ for $a \neq 0$.</p>
+<p>All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(a) &gt; 0$ for $a \neq 0$.</p>
 <h2 id="the-riemannstieltjes-integral">The Riemann–Stieltjes Integral</h2>
 <h3 id="definition_2">Definition</h3>
 <p>Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{c_0, \dots, c_n\}$ and tags $\zeta_i \in [c_{i-1}, c_i]$, the <strong>Riemann–Stieltjes sum</strong> is</p>

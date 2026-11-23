@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 \|f(x)-f(y)\| \le M\|x-y\| \qquad \text{for all } x,y \in \Omega .
 $$</p>
-<p><em>Proof.</em> Fix $x,y$, fix $\varepsilon>0$ and put $\varphi(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\varphi(s)-\varphi(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t<1$, then differentiability at $t$ gives $\|\varphi(t+h)-\varphi(t)-\varphi'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h>0$, and $\|\varphi'(t)\|\le M\|y-x\|$, whence</p>
+<p><em>Proof.</em> Fix $x,y$, fix $\varepsilon&gt;0$ and put $\varphi(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\varphi(s)-\varphi(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t&lt;1$, then differentiability at $t$ gives $\|\varphi(t+h)-\varphi(t)-\varphi'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h&gt;0$, and $\|\varphi'(t)\|\le M\|y-x\|$, whence</p>
 <p>$$
 \|\varphi(t+h)-\varphi(0)\| \le (M+\varepsilon)t\|y-x\|+(M+\varepsilon)h\|y-x\|=(M+\varepsilon)(t+h)\|y-x\|,
 $$</p>
@@ -196,14 +196,14 @@ $$</p>
 <p><strong>Corollary (the derivative as a best approximation).</strong> For $k=1$ the Peano form is the definition of the derivative, and for $k=2$ it reads $f(x+h)=f(x)+Df(x)h+\tfrac12D^2f(x)(h,h)+o(\|h\|^2)$, which identifies the second derivative with the quadratic term of the expansion.</p>
 <h2 id="the-contraction-mapping-principle">The Contraction Mapping Principle</h2>
 <p>The two structural theorems below are consequences of one fixed point theorem, and the theorem is stated here in the form in which the calculus uses it. Its systematic development and its relatives lie outside this article; the topological degree and the Brouwer fixed point theorem, which are of a different character and rest on a degree rather than on completeness, belong to Part II and to <em>Degree Theory and the Brouwer Fixed Point Theorem</em>.</p>
-<p><strong>Definition.</strong> Let $(M,d)$ be a complete metric space. A map $F:M \to M$ is a <strong>contraction</strong> with constant $c$ if $d(Fx,Fy)\le c\,d(x,y)$ for all $x,y$ and some $0 \le c<1$.</p>
+<p><strong>Definition.</strong> Let $(M,d)$ be a complete metric space. A map $F:M \to M$ is a <strong>contraction</strong> with constant $c$ if $d(Fx,Fy)\le c\,d(x,y)$ for all $x,y$ and some $0 \le c&lt;1$.</p>
 <p><strong>Theorem (Banach contraction principle).</strong> A contraction $F$ of a complete nonempty metric space $M$ has a unique fixed point $x^*$; for every $x_0 \in M$ the iterates $x_{n+1}=F(x_n)$ converge to $x^*$, and</p>
 <p>$$
 \boxed{\;d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n)\;}.
 $$</p>
 <p><em>Proof.</em> The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$.</p>
 <p><strong>Corollary (powers).</strong> If $F$ is continuous and some iterate $F^n$ is a contraction, then $F$ has a unique fixed point, the fixed point of $F^n$, and it is fixed by $F$ because $F(x^*)=F(F^n(x^*))=F^n(F(x^*))$.</p>
-<p><strong>Example.</strong> On $[0,1]$ the map $F(x)=\cos x$ satisfies $|F'|\le\sin1<1$, so it is a contraction and the iterates of any starting point converge to the unique solution of $x=\cos x$, approximately $0.739085$. On $\mathbb{R}$ the same map is not a contraction, and the contraction hypothesis is not superfluous.</p>
+<p><strong>Example.</strong> On $[0,1]$ the map $F(x)=\cos x$ satisfies $|F'|\le\sin1&lt;1$, so it is a contraction and the iterates of any starting point converge to the unique solution of $x=\cos x$, approximately $0.739085$. On $\mathbb{R}$ the same map is not a contraction, and the contraction hypothesis is not superfluous.</p>
 <h2 id="the-inverse-function-theorem">The Inverse Function Theorem</h2>
 <p><strong>Theorem (inverse function theorem).</strong> Let $X,Y$ be Banach spaces, $\Omega \subseteq X$ open, $f:\Omega \to Y$ of class $C^1$, and let $x_0 \in \Omega$ with $Df(x_0)$ invertible in $B(X,Y)$ and with a bounded inverse. Then there are open neighbourhoods $\Omega_0$ of $x_0$ and $V_0$ of $y_0=f(x_0)$ such that $f:\Omega_0 \to V_0$ is a bijection whose inverse $g:V_0 \to \Omega_0$ is of class $C^1$, and</p>
 <p>$$
@@ -218,7 +218,7 @@ $$</p>
 <p><strong>Corollary (local structure).</strong> With the hypotheses of the theorem, $f$ is a local homeomorphism at $x_0$: it maps some neighbourhood of $x_0$ homeomorphically onto a neighbourhood of $f(x_0)$, and it is an open map near $x_0$. In particular the image of an open set under such an $f$ is open.</p>
 <p><strong>Example (local does not imply global).</strong> The map $f:\mathbb{R}^2 \to \mathbb{R}^2$, $f(x,y)=(\exp(x)\cos y,\exp(x)\sin y)$, has Jacobian</p>
 <p>$$
-J_f(x,y)=\begin{pmatrix}\exp(x)\cos y & -\exp(x)\sin y\\ \exp(x)\sin y & \exp(x)\cos y\end{pmatrix}, \qquad \det J_f(x,y)=\exp(2x)>0,
+J_f(x,y)=\begin{pmatrix}\exp(x)\cos y &amp; -\exp(x)\sin y\\ \exp(x)\sin y &amp; \exp(x)\cos y\end{pmatrix}, \qquad \det J_f(x,y)=\exp(2x)&gt;0,
 $$</p>
 <p>so $Df(x,y)$ is invertible at every point and the theorem gives a local inverse everywhere; but $f$ is not injective, since $f(x,y+2\pi)=f(x,y)$, so no global inverse exists. The theorem is local for a reason.</p>
 <h2 id="the-implicit-function-theorem">The Implicit Function Theorem</h2>

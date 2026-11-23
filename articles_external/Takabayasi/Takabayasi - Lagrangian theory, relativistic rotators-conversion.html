@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagrangian Theory of Relativistic Rotator — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Lagrangian theory, relativistic rotators.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lagrangian-theory-of-relativistic-rotator"><strong>Lagrangian Theory of Relativistic Rotator</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>none — Oxford Academic scan, no identifier</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Takehiko Takabayasi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>single version; Oxford Academic scan of <em>Progress of Theoretical Physics</em></td>
+</tr>
+<tr>
+<td>journal</td>
+<td><em>Progress of Theoretical Physics</em> <strong>57</strong> (1977) 329–331, No. 1, January 1977, Letters to the Editor; dated 19 August 1976</td>
+</tr>
+<tr>
+<td>length</td>
+<td>3 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Takabayasi/Takabayasi - Lagrangian theory, relativistic rotators-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Lagrangian theory, relativistic rotators.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Takabayasi/Takabayasi - Lagrangian theory, relativistic rotators.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Three pages that carry out the program of the 1960 paper for the free case, and the cleanest computation in the folder. One Lagrangian, fixed up to a symmetric matrix of constants, produces every condition the theory needs: the orthonormality constraints, the reparametrisation constraint, the mass formula, the spin, and the spin's equation of motion, which reduces to the rigid-body Euler equation. The mass comes out as $M^{2}=\mu^{2}+\sum_r (S^{r})^{2}/\kappa_r$ with the $S^r$ the body-frame spin components — so mass is generated by the internal rotation and quantised by the spherical case into $M^{2}=\mu^{2}+\hbar^{2}j(j+1)/\kappa$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-lagrangian">The Lagrangian</h3>
+<p>$$
+L=\Big\{-\mu+\tfrac12\sum_{r,s}A_{rs}\,\omega^{r}\omega^{s}\Big\}\Lambda,
+\qquad
+\Lambda=\Big[-\sum_{r}\kappa_r(\omega^{r})^{2}-(\dot X)^{2}\Big]^{1/2},
+$$</p>
+<p>where $A_{rs}=A_{sr}$ are Lagrangian multipliers while $\mu$ and $\kappa_r$ are (positive) structure constants. ($\mu$ represents the rest mass in the rotation-free case, and $\hbar\kappa_r$ the principal moments of inertia.) It is important that the presence of the term $\sum_r(\dot X a^{r})^{2}$ in (1) ensures the invariance of $L$ under the reparametrisation. The world line $X^\mu(\tau)$ and the triad $a^{\mu}_{r}(\tau)$ with $a^{\mu}_{r}a_{\mu s}=\delta_{rs}$; $\omega^{\mu\nu}=2\sum_r a^{[\mu}_{r}\dot a^{\nu]}_{r}$ and $\omega^{r}=\epsilon^{rst}a^{\mu}_{s}a^{\nu}_{t}\omega_{\mu\nu}/2$ are the angular velocity and its body-frame components.</p>
+<h3 id="everything-from-one-functional">Everything from one functional</h3>
+<p>"ssary condi- Xav'a. 2 a;, 3 , a Lorentz vierbein. The 6- tions emerge automatically from (1), only vector a&gt; pv = 2jrar cizr vJ/2 represents the if we assume that A*O." The canonical momenta give</p>
+<p>$$
+P^{\mu}=\mu\Lambda^{-1}\Big(\dot X^{\mu}-\sum_r \dot X a^{\rho}_{r}a^{\mu}_{r}\Big),
+\qquad
+\Pi^{\mu r}=\mu(2\Lambda)^{-1}\sum_{s,t}\epsilon^{rst}\omega^{s}a^{\mu}_{t},
+$$</p>
+<p>and hence "ry complicated in spite of its restriction to a which are consequences of the invariance spherical rotator." under reparametrisation. A further constraint</p>
+<p>$$
+-(P^{\mu})^{2}=\mu^{2}+4\sum_{(rst)}(\Pi^{\mu s}a_{\mu}^{t})^{2}/\kappa_r
+$$</p>
+<p>carries the mass shell, and the equations of motion give momentum conservation, angular momentum conservation with $M^{\mu\nu}=X^{[\mu}P^{\nu]}+S^{\mu\nu}$ and $S^{\mu\nu}=\sum_r a^{r[\mu}\Pi^{\nu]r}$, and $S^{\mu}_{\ \ \nu}P^{\nu}=0$ — the spin is orthogonal to the momentum, Thus in a rest frame of the orbital motion $a^{\mu r}$ are pure space-vectors. This is essential to a proper interpretation of theory.</p>
+<h3 id="the-mass-formula-and-the-spins-euler-equation">The mass formula, and the spin's Euler equation</h3>
+<p>With $S^{r}=a^{\mu r}S_{\mu\nu}$ — the body-frame spin — he gets</p>
+<p>$$
+M^{2}=\mu^{2}+\sum_{r}\frac{(S^{r})^{2}}{\kappa_r},
+\qquad
+J^{2}\equiv \tfrac12 S_{\mu\nu}S^{\mu\nu}=\sum_r (S^{r})^{2},
+\qquad
+S^{r}=\mu\Lambda^{-1}(\kappa_s-\kappa_t)\omega^{s}\omega^{t},
+$$</p>
+<p>and the equation of motion for the body-frame spin "the Euler (4) imply another constraint equation for rigid body rotation. - (PfJ.)". In the proper-time gauge $\Lambda=\mu/M$ and $P^{\mu}=M\dot X^{\mu}$, $M^{2}=\mu^{2}/[1-\sum_r\kappa_r(\omega^{r})^{2}]$, and in the rest frame with small rotation "tion approaches M=11+t 2:j, J!.IC, (w') 2 , Next we consider the equations of mo- which is just the non-relativistic energy tion following from (1). They are PfJ.=O formula for rigid body motion."</p>
+<p>I checked the two forms of $M^{2}$ against each other for $\mu=2$, $\kappa=1$, $\omega=0.3$: both give $M^{2}=4.395604$, difference zero. So the "$\Lambda$" form and the "$S$" form are the same statement, as they must be, since $S^{r}=\mu\Lambda^{-1}\kappa_r\omega^{r}$. </p>
+<h3 id="quantisation-and-the-spherical-spectrum">Quantisation, and the spherical spectrum</h3>
+<p>The quantum theory is given, corresponding to (7) and (5), by the equations $\{P^{2}+4\sum_{(rst)}(\Pi^{\mu s}a_{\mu}^{t})^{2}/\kappa_r+\mu^{2}\}\psi=0$, $P^{\mu}a_{\mu}^{r}\psi=0$, on the wave function $\psi(X_\mu,a_{\mu r})$, where $a_{\mu r}$ are to be understood in terms of the 6 independent relativistic Euler angles. For the spherical rotator $\kappa_r=\kappa$, the Lagrangian becomes invariant under body-frame rotations, so $S^{r}$ are conserved, $M^{2}=\mu^{2}+J^{2}/\kappa$, and $$ M^{2}=\mu^{2}+\frac{\hbar^{2}j(j+1)}{\kappa}, \qquad j=0,\tfrac12,1,\dots $$"which is degenerate m v1ew of (5). Thus in a rest frame of in S 3 and Slz· the orbital motion afJ.". He closes with the remark that the method applies to manifestly extended models as well, citing bilocal and trilocal models. </p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-lagrangian-with-a-multiplier-matrix-produces-the-constraints-the-corpus-imposes-its-constraints-by-hand">1. One Lagrangian with a multiplier matrix produces the constraints — the corpus imposes its constraints by hand</h3>
+<p><strong>The idea.</strong> A single functional, $L=\{-\mu+\frac12 A_{rs}\omega^r\omega^s\}\Lambda$, generates the triad orthonormality, the reparametrisation invariance, the mass-shell relation and the transversality $S_{\mu\nu}P^{\nu}=0$ as <em>consequences</em>. No constraint is postulated. The multiplier $A_{rs}$ does the work that Dirac's constraint analysis normally has to be brought in to do. </p>
+<p><strong>What it would add.</strong> A constructive answer to a question the corpus raises. <em>The Relativistic Particle and the Lagrangian: The Stationary Action Principle</em> (<code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>) builds the action from the world line and the reparametrisation, and <em>The Non-Quantum Limit of the Action Principle and the Lagrangian</em> (<code>articles_physics/the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.md</code>) asks what survives of the quantum structure in that limit; neither derives a constraint surface from the form of the action. Takabayasi's point is different in kind: <strong>the transversality constraint is not imposed, it is implied by the form of the Lagrangian, and the mechanism is the $\sum_r(\dot X a^{r})^{2}$ term.</strong> That is a design principle for actions, and the corpus's action-building articles (<code>the-lagrangian-for-the-biquaternionic-field.md</code>) do not have it. It would let the corpus <em>derive</em> rather than <em>choose</em> its constraint surface. </p>
+<p><strong>Where it lands.</strong> <em>The Relativistic Particle and the Lagrangian</em> (<code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>), as the constructive method, and <em>Rigid-Body Dynamics and the Biquaternion Rotor</em> (<code>articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.md</code>), as the worked example — a rigid body's Euler equation is the classical case of the same mechanism. </p>
+<p><strong>What stands in the way.</strong> The corpus's field is a field and not a particle; the multiplier here is a finite matrix and there is no direct analogue for a field's constraints. The transferable part is the principle — arrange the action so the wanted constraints follow — and not the formula. That is a paragraph, and it ranks first because the principle is general. </p>
+<h3 id="2-mass-is">2. Mass is</h3>
+<p>$\mu^{2}$ plus the body-frame spin squared over the moments of inertia </p>
+<p><strong>The idea.</strong> $M^{2}=\mu^{2}+\sum_r (S^{r})^{2}/\kappa_r$. The mass of the state is the rotation-free mass plus a term quadratic in the internal angular momentum, weighted by inverse inertia. For the spherical case $M^{2}=\mu^{2}+\hbar^{2}j(j+1)/\kappa$: a Regge-like tower with slope $1/\kappa$ and a nonzero intercept. </p>
+<p><strong>What it would add.</strong> A worked mass formula where the corpus has none. The corpus's mass articles — <em>Antilinear Structure and the Two Kinds of Mass</em> (<code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>), <em>The Invariant Measure on the Mass Shell</em> (<code>articles_physics/the-invariant-measure-on-the-mass-shell.md</code>) — treat mass as a parameter or a geometric datum; the folder's <em>Slopes of Mesons</em> and <em>Mass Rules for Baryons</em> papers give phenomenological fits. This is the middle case: a mass formula derived from an action, with one dimensional constant per body axis, giving $M^{2}$ linear in $j(j+1)$ with an intercept $\mu^{2}$. <strong>It is the simplest derivation of a linear trajectory in this whole folder, and the corpus's Regge discussion does not cite it.</strong> </p>
+<p><strong>Where it lands.</strong> The two-kinds-of-mass article, as a third kind (mass from internal motion), and <em>The Slope of the Trajectory</em> wherever the corpus treats linearity. </p>
+<p><strong>What stands in the way.</strong> $\kappa$ is a free constant, so the formula predicts the <em>shape</em> and not the scale; and the degeneracy in $S_3$ and $S_{12}$ is wrong for the observed spectrum, which the folder's later papers repair with more elaborate models. The import must be labelled a mechanism and not a fit. It ranks second. </p>
+<h3 id="3-the-spins-equation-of-motion-is-the-rigid-body-euler-equation">3. The spin's equation of motion <em>is</em> the rigid-body Euler equation</h3>
+<p><strong>The idea.</strong> For the free rotator the body-frame spin obeys $\dot S^{r}=\mu\Lambda^{-1}(\kappa_s-\kappa_t)\omega^{s}\omega^{t}$ — the Euler equation of a rigid body, with the inertia anisotropy as the only torque. There is no other dynamics: a free relativistic rotator is a spinning top. </p>
+<p><strong>What it would add.</strong> A test case for the corpus's spin transport. <em>The Spin-Half Fluid of the Biquaternion Dirac Field</em> (<code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>) and <em>The Charged Spin-Half Fluid</em> (<code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>) both concern what turns the spin. Takabayasi's answer for a free body: nothing turns it except the anisotropy of its own inertia — and for the spherical case, nothing at all. <strong>That is the classical baseline against which the corpus's "the field does not turn the spin" claim should be read: for a spherical free rotator the spin is exactly conserved, so the corpus's statement is the relativistic-field version of a familiar fact and not a paradox.</strong></p>
+<p><strong>Where it lands.</strong> The charged spin-half fluid article, in the paragraph on convention, as the classical baseline.</p>
+<p><strong>What stands in the way.</strong> The rotator's spin is an orbital-type angular momentum of an extended body, not a spinor's, so the comparison is between the <em>behaviour</em> of two different objects. Ranked last.</p>
+<p>The remainder, one line each. The proper-time gauge and the $\tau=X^{0}/c$ gauge are two foliations of the same reparametrisation freedom, a point the corpus's temporal-slot articles make abstractly. The non-relativistic limit $M=\mu+\frac12\sum\hbar\kappa_r(\omega^{r})^{2}$ is the rigid-body energy and needs no comment. That the method applies to bilocal and trilocal models is the subject of the companion papers.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -91,7 +91,7 @@ $$</p>
 </ul>
 <p>The division between what is established and what is interpretation is kept explicit.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The curvature identity $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; the Bianchi identity $D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0$; the Yang–Mills equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ with the commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$; the covariant conservation $\sum_{\imath} D_{\imath} J_{\imath} = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.</li>
+<li><strong>Established, and recomputed below.</strong> The curvature identity $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; the Bianchi identity $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0$; the Yang–Mills equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ with the commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$; the covariant conservation $\sum_{\imath} D_{\imath} J_{\imath} = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.</li>
 <li><strong>Interpretation.</strong> Reading $\sum_{\imath} D_{\imath} F_{\imath\jmath}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.</li>
 <li><strong>Gaps and defects, left visible.</strong> The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\vec\nabla_\Phi\!\cdot\!(\sum_{\jmath} F_{\imath\jmath}e_{\jmath})$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.</li>
 </ul>
@@ -106,22 +106,22 @@ $$</p>
 <p>and $F_{\imath\jmath}$ is <em>not</em> gauge invariant: it is an algebra element rotated by the group. The covariance of the first-order operator is what forces the inhomogeneous term in the first law.</p>
 <p>Two derived objects carry the rest of the article. The first is the <strong>adjoint covariant derivative</strong>, the action of the gauge connection on an algebra-valued field $\tilde{Q}$:</p>
 <p>$$
-D_\imath \tilde{Q} = \partial/\partial R_\imath \tilde{Q} + i\kappa\,[\mathcal{A}_\imath, \tilde{Q}].
+D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa\,[\mathcal{A}_{\imath}, \tilde{Q}].
 $$</p>
 <p>It is the unique first-order operator whose action on $\tilde{Q}$ is the commutator of the covariant derivative operator with multiplication by $\tilde{Q}$. Recomputing that commutator directly,</p>
 <p>$$
-[D_\imath, \tilde{Q}]\tilde{Ξ} = D_\imath(\tilde{Q}\tilde{Ξ}) - \tilde{Q}(D_\imath\tilde{Ξ})
-= (\partial/\partial R_\imath \tilde{Q} + i\kappa[\mathcal{A}_\imath,\tilde{Q}])\tilde{Ξ},
+[D_{\imath}, \tilde{Q}]\tilde{Ξ} = D_{\imath}(\tilde{Q}\tilde{Ξ}) - \tilde{Q}(D_{\imath}\tilde{Ξ})
+= (\partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}])\tilde{Ξ},
 $$</p>
 <p>for every $\tilde{Ξ}$, so that as operators</p>
 <p>$$
-[D_\imath, \tilde{Q}] = D_\imath \tilde{Q},
+[D_{\imath}, \tilde{Q}] = D_{\imath} \tilde{Q},
 $$</p>
-<p>with $\tilde{Q}$ read as multiplication by the algebra element. (The notation table and the Bianchi discussion of <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> print $[D_\imath,\tilde{Q}] = i\kappa D_\imath \tilde{Q}$; that line is not consistent with the definition $D_\imath \tilde{Q} = \partial/\partial R_\imath \tilde{Q} + i\kappa[\mathcal{A}_\imath,\tilde{Q}]$ given in the same article, and the factor $i\kappa$ is an evident slip — the operator commutator is first order in $\partial/\partial R_\imath$ and equal to multiplication by $D_\imath \tilde{Q}$. The Bianchi identity itself is unaffected, because the substitution that produces it is the same either way once the identity is corrected. The recomputed identity $[D_\imath,\tilde{Q}] = D_\imath \tilde{Q}$ is the one used here, and it was checked numerically — see the companion.) The second is the <strong>Bianchi identity</strong>,</p>
+<p>with $\tilde{Q}$ read as multiplication by the algebra element. (The notation table and the Bianchi discussion of <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> print $[D_{\imath},\tilde{Q}] = i\kappa D_{\imath} \tilde{Q}$; that line is not consistent with the definition $D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$ given in the same article, and the factor $i\kappa$ is an evident slip — the operator commutator is first order in $\partial/\partial R_{\imath}$ and equal to multiplication by $D_{\imath} \tilde{Q}$. The Bianchi identity itself is unaffected, because the substitution that produces it is the same either way once the identity is corrected. The recomputed identity $[D_{\imath},\tilde{Q}] = D_{\imath} \tilde{Q}$ is the one used here, and it was checked numerically — see the companion.) The second is the <strong>Bianchi identity</strong>,</p>
 <p>$$
-D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0,
+D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0,
 $$</p>
-<p>where each $D$ is the adjoint covariant derivative. It is the statement that the exterior derivative of the curvature is a cycle, and it is automatic for a curvature built from a connection: it follows from the Jacobi identity for the operators $D_{\imath}$, $[D_\imath,[D_{\imath},D_{\jmath}]] + \text{cyclic} = 0$, together with $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; equally, at the level of components, from the derivation property of the adjoint action.</p>
+<p>where each $D$ is the adjoint covariant derivative. It is the statement that the exterior derivative of the curvature is a cycle, and it is automatic for a curvature built from a connection: it follows from the Jacobi identity for the operators $D_{\imath}$, $[D_{\imath},[D_{\imath},D_{\jmath}]] + \text{cyclic} = 0$, together with $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; equally, at the level of components, from the derivation property of the adjoint action.</p>
 <p>The biquaternion packaging of the curvature, inherited from the parents, is the definition</p>
 <p>$$
 \mathcal{F} = \tfrac12\sum_{\imath,\jmath}F_{\imath\jmath}\,\bar{e}_{\imath} e_{\jmath} \;\in\; \mathbb{B},
@@ -188,7 +188,7 @@ $$</p>
 \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = -\,i\kappa\,[\mathcal{A}, \tilde J_{\Phi}].
 $$</p>
 <p>The ordinary divergence does not vanish. For a generic non-abelian connection it is of order unity, and only the covariant divergence is zero; the difference is exactly the commutator of the connection with the current. This was recomputed on a generic non-commuting connection: $\sum_{\jmath} D_{\jmath} J_{\jmath}$ vanishes to $3\times10^{-15}$ while $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$ has magnitude $\approx 7$. Writing $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$ for the non-abelian current is false, and would drop the term that carries the adjoint action.</p>
-<p><strong>What the conservation uses, and what it does not.</strong> It is often said that the current is conserved "by the Bianchi identity". In this derivation the differential Bianchi identity $D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0$ is <em>not</em> used. What is used is the field equation, the antisymmetry of $F_{\imath\jmath}$, and the curvature identity $[D_{\jmath},D_{\imath}] = i\kappa F_{\jmath\imath}$; the vanishing commutator $\sum_{\imath,\jmath}[F_{\jmath\imath},F_{\imath\jmath}] = 0$ is an algebraic consequence of antisymmetry, not the differential identity. (That algebraic identity is itself sometimes called a Bianchi identity, being the contracted statement that the curvature is an algebra element; the differential identity is a different object, and it is the differential one that is not needed here.) The differential Bianchi identity is the independent <em>homogeneous</em> half of the non-abelian system, treated in its own section below. The two are sometimes conflated because both are identities of the curvature and both trace back to the Jacobi identity at the level of operators; the reader is entitled to know which one does the work. The claim to be verified for the conservation is therefore field equation plus antisymmetry, and that is what was checked.</p>
+<p><strong>What the conservation uses, and what it does not.</strong> It is often said that the current is conserved "by the Bianchi identity". In this derivation the differential Bianchi identity $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0$ is <em>not</em> used. What is used is the field equation, the antisymmetry of $F_{\imath\jmath}$, and the curvature identity $[D_{\jmath},D_{\imath}] = i\kappa F_{\jmath\imath}$; the vanishing commutator $\sum_{\imath,\jmath}[F_{\jmath\imath},F_{\imath\jmath}] = 0$ is an algebraic consequence of antisymmetry, not the differential identity. (That algebraic identity is itself sometimes called a Bianchi identity, being the contracted statement that the curvature is an algebra element; the differential identity is a different object, and it is the differential one that is not needed here.) The differential Bianchi identity is the independent <em>homogeneous</em> half of the non-abelian system, treated in its own section below. The two are sometimes conflated because both are identities of the curvature and both trace back to the Jacobi identity at the level of operators; the reader is entitled to know which one does the work. The claim to be verified for the conservation is therefore field equation plus antisymmetry, and that is what was checked.</p>
 <p><strong>Consistency, not an extra condition.</strong> In the abelian case the analogous statement $\sum_{\imath,\jmath}\partial/\partial R_{\jmath}\,\partial/\partial R_{\imath} F_{\imath\jmath} = 0$ is automatic, and charge conservation is recovered from the field equation rather than imposed. In the non-abelian case the same logic gives the covariant law; the current defined by the field equation is covariantly conserved automatically, and no independent condition on $\rho$ and $\vec J$ is added. In this sense $\sum_{\jmath} D_{\jmath} J_{\jmath} = 0$ is the integrability condition of the Yang–Mills system, exactly as ordinary conservation is the integrability condition of Maxwell's system.</p>
 <h2 id="the-abelian-limit">The Abelian Limit</h2>
 <p>The abelian case is the case of a <strong>commuting generator set</strong>: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{B}_{C}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_{\imath} = a_{\imath}(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.</p>
@@ -217,7 +217,7 @@ $$</p>
 <h2 id="the-bianchi-identity-and-the-homogeneous-half">The Bianchi Identity and the Homogeneous Half</h2>
 <p>The Yang–Mills equation is half of the non-abelian system. The other half is the Bianchi identity,</p>
 <p>$$
-D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0,
+D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0,
 \qquad\text{equivalently}\qquad
 D_{\imath} {\star}F_{\imath\jmath} = 0,
 $$</p>
@@ -288,12 +288,12 @@ $$</p>
 </tr>
 <tr>
 <td>imaginary, $\vec F = -iH$</td>
-<td>the plane $(\vec\zeta,H) = 0$ with the disc $\|\vec\zeta\| < \|H\|$ removed</td>
+<td>the plane $(\vec\zeta,H) = 0$ with the disc $\|\vec\zeta\| &lt; \|H\|$ removed</td>
 <td>real frequencies exist only off the disc; the weight is $\exp(-(H,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, an exponential growth or decay along $H$</td>
 </tr>
 <tr>
 <td>complex, $\vec F = -E - iH$</td>
-<td>the plane through $\vec\zeta^* = E$ perpendicular to $H$, with the disc $\|\vec\zeta - E\| < \|H\|$ removed</td>
+<td>the plane through $\vec\zeta^* = E$ perpendicular to $H$, with the disc $\|\vec\zeta - E\| &lt; \|H\|$ removed</td>
 <td>both effects at once, on a cone translated by $E$</td>
 </tr>
 </tbody>
@@ -449,11 +449,11 @@ $$</p>
 <td>Curvature as commutator of covariant derivatives</td>
 </tr>
 <tr>
-<td>$D_\imath \tilde{Q} = \partial/\partial R_\imath \tilde{Q} + i\kappa[\mathcal{A}_\imath,\tilde{Q}]$</td>
-<td>Adjoint covariant derivative; $[D_\imath,\tilde{Q}] = D_\imath \tilde{Q}$</td>
+<td>$D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$</td>
+<td>Adjoint covariant derivative; $[D_{\imath},\tilde{Q}] = D_{\imath} \tilde{Q}$</td>
 </tr>
 <tr>
-<td>$D_\imath F_{\imath\jmath} + D_{\imath} F_{\jmathk} + D_{\jmath} F_{k\imath} = 0$</td>
+<td>$D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0$</td>
 <td>Bianchi identity (homogeneous half)</td>
 </tr>
 <tr>

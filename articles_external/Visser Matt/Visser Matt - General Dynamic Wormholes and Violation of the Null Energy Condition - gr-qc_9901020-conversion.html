@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General dynamic wormholes and violation of the null energy condition — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Dynamic Wormholes and Violation of the Null Energy Condition -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="general-dynamic-wormholes-and-violation-of-the-null-energy-condition"><strong>General dynamic wormholes and violation of the null energy condition</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9901020v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>David Hochberg, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 7 January 1999</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - General Dynamic Wormholes and Violation of the Null Energy Condition - gr-qc_9901020-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Dynamic Wormholes and Violation of the Null Energy Condition - gr-qc_9901020.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/horizons-without-a-global-structure.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - General Dynamic Wormholes and Violation of the Null Energy Condition - gr-qc_9901020.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The authors define a wormhole throat using only local geometry, as a marginally anti-trapped surface. This avoids assumptions about asymptotic flatness, symmetry, or causality that earlier proofs needed. Using the Raychaudhuri equation they show that null energy condition violation at the throat is generic, for static and time-dependent wormholes alike. They also show that a time-dependent wormhole has two throats, one for each direction, which coincide only in the static limit. The discussion argues that attempts to hide the violation in other sectors or move it in time do not avoid the conclusion.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"a precise definition of what a wormhole throat is and where it is located can be developed and treated entirely in terms of local geometry. This has the advantage of being free from unnecesary technical assumptions about asymptotic flatness, and other global properties of the spacetime containing the wormhole."</p>
+<h3 id="the-result">The result</h3>
+<p>"We discuss our recent work proving that the violation of the null energy condition (NEC) is a generic feature of all wormholes, whether they be time-dependent or static"</p>
+<h3 id="the-two-throats">The two throats</h3>
+<p>"demonstrate that time-dependent wormholes have two throats, one for each direction through the wormhole, which coalesce only in the static limit."</p>
+<h3 id="what-a-throat-is">What a throat is</h3>
+<p>"The strategy that we have developed views a wormhole throat as a marginally anti-trapped surface that is, a closed two-dimensional spatial hypersurface such that one of the two future-directed null geodesic congruences orthogonal to it is just beginning to diverge."</p>
+<h3 id="why-this-definition">Why this definition</h3>
+<p>"Physically, this definition relies only on the properties of bundles of light rays passing through the region surrounding the throat, and not on how that throat may or may not embed in some fictitious Euclidean embedding space."</p>
+<h3 id="the-contrast-with-topological-censorship">The contrast with topological censorship</h3>
+<p>"A considerably more general proof of the necessity of NEC violations was provided by the topological censorship theorem of Friedman, Schleich, and Witt though this theorem requires many technical assumptions concerning asymptotic flatness and causality conditions that limit its applicability."</p>
+<h3 id="the-status-of-the-result">The status of the result</h3>
+<p>"We find, as expected, that wormhole throats generically violate the null energy condition and we have provided rigorous results regarding this matter. This should now settle the issue of energy condition violations for wormholes."</p>
+<h3 id="attempts-to-evade-it">Attempts to evade it</h3>
+<p>"temporary suspension of the violation of the NEC at a time-dependent throat also leads to a simultaneous obliteration of the flare-out property of the throat itself, so this strategy ends up destroying the throat and nothing is to be gained."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-local-definition-of-a-throat">1. A local definition of a throat</h3>
+<p><strong>The idea.</strong> A throat is where a light bundle stops converging, which needs no global structure.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> argues for local definitions. This paper supplies one that works and proves a theorem with it, which is exactly the constructive case the article lacks.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the section on local definitions.</p>
+<p><strong>What stands in the way.</strong> It is a definition for throats, not horizons. Ranked first, because it is a worked model of the article's method.</p>
+<h3 id="2-two-throats-not-one">2. Two throats, not one</h3>
+<p><strong>The idea.</strong> A time-dependent wormhole has a throat in each direction, and they merge only when static.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code> treats a wormhole as having one throat. The doubled structure would change how the article counts surfaces and might explain the causal quirks it mentions.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/horizons-without-a-global-structure.md</code>, in the examples.</p>
+<p><strong>What stands in the way.</strong> It applies to dynamic wormholes only. Ranked second.</p>
+<h3 id="3-moving-the-violation-destroys-the-throat">3. Moving the violation destroys the throat</h3>
+<p><strong>The idea.</strong> Time dependence cannot relocate the energy condition violation without removing the throat.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> would gain a case where a proposed evasion defeats its own purpose. That pattern is worth naming separately from a plain impossibility.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on energy conditions.</p>
+<p><strong>What stands in the way.</strong> The argument uses the Raychaudhuri equation in a specific setting. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

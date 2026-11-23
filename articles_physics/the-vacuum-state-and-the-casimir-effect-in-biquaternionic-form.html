@@ -180,7 +180,7 @@ $$
 \zeta_3(s)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
 \Big(\vec\nu_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
 $$
-defined for $\mathrm{Re}\,s>\tfrac32$ and continued from there. The transverse integral is elementary,
+defined for $\mathrm{Re}\,s&gt;\tfrac32$ and continued from there. The transverse integral is elementary,
 $$
 \int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,\big(\vec\nu_\perp^{2}+m^{2}\big)^{-s}
 =\frac{1}{4\pi}\,\frac{\Gamma(s-1)}{\Gamma(s)}\,m^{2-2s},
@@ -194,7 +194,7 @@ $$
 \frac{E_{\mathrm{Dir}}}{A}=\frac{h\,c}{4\pi}\,\zeta_3\!\left(-\tfrac12\right),
 $$
 because the exponent $s$ is conjugate to the frequency, and this is the sense in which the "sum of half-quantum-per-mode" is the zeta function at $s=-\tfrac12$.</p>
-<p><strong>Where the divergence went.</strong> The continued zeta function has a pole where $\zeta(2s-2)$ has its pole, at $2s-2=1$, that is $s=\tfrac32$; this is the quartic volume divergence in disguise, and it sits exactly at the lower edge of the domain of convergence of the defining series, the boundary line $\mathrm{Re}\,s=\tfrac32$ of the half-plane $\mathrm{Re}\,s>\tfrac32$ in which the series converges. The continuation past the pole is unique given the functional equation of $\zeta$, and it is that uniqueness which makes the finite value at $s=-\tfrac12$ meaningful. In the language of the previous section: the pole is the cutoff divergence, and the analytic continuation is the statement that the divergence is a <strong>local</strong> term (a volume term, plus lower local terms) which is subtracted by the physical mode-density subtraction; the remaining finite part is universal. This is the justification of the regularisation, and it is the standard one.</p>
+<p><strong>Where the divergence went.</strong> The continued zeta function has a pole where $\zeta(2s-2)$ has its pole, at $2s-2=1$, that is $s=\tfrac32$; this is the quartic volume divergence in disguise, and it sits exactly at the lower edge of the domain of convergence of the defining series, the boundary line $\mathrm{Re}\,s=\tfrac32$ of the half-plane $\mathrm{Re}\,s&gt;\tfrac32$ in which the series converges. The continuation past the pole is unique given the functional equation of $\zeta$, and it is that uniqueness which makes the finite value at $s=-\tfrac12$ meaningful. In the language of the previous section: the pole is the cutoff divergence, and the analytic continuation is the statement that the divergence is a <strong>local</strong> term (a volume term, plus lower local terms) which is subtracted by the physical mode-density subtraction; the remaining finite part is universal. This is the justification of the regularisation, and it is the standard one.</p>
 <p><strong>The value.</strong> Evaluating the continued zeta function at $s=-\tfrac12$ uses
 $$
 \frac{\Gamma(-3/2)}{\Gamma(-1/2)}=-\frac23,\qquad \zeta(-3)=\frac{1}{120},
@@ -270,7 +270,7 @@ $$
 \quad\Longrightarrow\quad
 \frac{F_{\mathrm{EM}}}{A}
 =-\frac{\partial}{\partial a}\Big(-\frac{\pi^{2}\,h\,c}{1440\pi \,a^{3}}\Big)
-=-\frac{\pi^{2}\,h\,c}{480\pi \,a^{4}}<0\;}.
+=-\frac{\pi^{2}\,h\,c}{480\pi \,a^{4}}&lt;0\;}.
 $$
 The force is <strong>attractive</strong>. Note the sign chain: $E$ is negative and <em>increases</em> with $a$ (it goes to zero from below), so its derivative is positive and the force is negative.</p>
 <p><strong>Route two.</strong> The heat-kernel expression gives the same energy as a function of $a$ before any differentiation: the Casimir part of the exact heat-kernel difference scales as $a^{-3}$, so $E_{\mathrm{EM}}/A\propto a^{-3}$ and the force is $3$ times the energy per unit area divided by $a$,
@@ -388,7 +388,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <h2 id="summary">Summary</h2>
 <p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_{\mathrm{id},+}=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, and vacuum expectation values are given by the reduction formula $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde H_\Psi^{*})$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing scalar part while $2\,\mathrm{Sc}(e_t)=2$.</p>
 <p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
-<p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\,\frac{h}{2\pi}\,c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
+<p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s&gt;\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\,\frac{h}{2\pi}\,c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
 <p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\,\frac{h}{2\pi}\,c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma_{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{B}_{\Phi}$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
 <p>The <strong>force</strong> per unit area, with the convention $F/A=-\partial/\partial a(E/A)$, is
 $$
@@ -411,7 +411,7 @@ $$
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\imath^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_{\imath}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

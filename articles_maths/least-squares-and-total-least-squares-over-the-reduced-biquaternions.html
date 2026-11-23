@@ -128,7 +128,7 @@ $$</p>
 <td>mixed</td>
 <td>$A_{b},B$</td>
 <td>$A_{a}$</td>
-<td>$0<n_{1}<n$</td>
+<td>$0&lt;n_{1}&lt;n$</td>
 </tr>
 </tbody>
 </table></div>
@@ -165,7 +165,7 @@ $$</p>
 K_{\mathrm F}(M)=\sum_{t=0}^{3}\langle M_{t}\rangle_*=\tfrac12\Bigl(\bigl\langle M^{+}\\bigr\rangle_*+\bigl\langle M^{-}\\bigr\rangle_*\Bigr),
 $$</p>
 <p>and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12\bigl(\langle M^{+},N^{+}\rangle_{F}+\langle M^{-},N^{-}\rangle_{F}\bigr)$, the real inner product of the coefficients being the Euclidean one in each reading.</p>
-<p><em>Proof.</em> The norm $\langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{+}|^{2}+|Q_{-}|^{2}=2(|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2})$ by the identity $|Q_{\blacktriangle}+Q_{\blacktriangledown}|^{2}+|Q_{\blacktriangle}-Q_{\blacktriangledown}|^{2}=2|Q_{\blacktriangle}|^{2}+2|Q_{\blacktriangledown}|^{2}$, and $K=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.</p>
+<p><em>Proof.</em> The norm $\langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=q_{\blacktriangle}^{2}+q'{}^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'{}^{2}_{\blacktriangledown}$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{+}|^{2}+|Q_{-}|^{2}=2(|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2})$ by the identity $|Q_{\blacktriangle}+Q_{\blacktriangledown}|^{2}+|Q_{\blacktriangle}-Q_{\blacktriangledown}|^{2}=2|Q_{\blacktriangle}|^{2}+2|Q_{\blacktriangledown}|^{2}$, and $K=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.</p>
 <p><strong>Corollary (the square of the real Frobenius norm).</strong> With $\langle M\rangle_*^{1/2}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\langle M\rangle_*^{1/2}=\tfrac12\langle M^{R}\rangle_*^{1/2}$, where $M^{R}$ is the real representation of §<em>The Representations and the Coefficient Stack</em>, whose coefficient blocks each occur four times.</p>
 <p><em>Proof.</em> The real representation has each $M_{t}$ in four of its block rows, so $\langle M^{R}\rangle_*=4\sum_{t}\langle M_{t}\rangle_*=4K_{\mathrm F}(M)$ by the theorem, and the square root gives $\langle M^{R}\rangle_*^{1/2}=2\langle M\rangle_*^{1/2}$.</p>
 <h3 id="the-least-squares-problem-factorises">The Least Squares Problem Factorises</h3>
@@ -270,7 +270,7 @@ $$</p>
 <h3 id="the-real-representation">The Real Representation</h3>
 <p><strong>Definition.</strong> The <strong>real representation</strong> of $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$ is the real matrix</p>
 <p>$$
-M^{R}=\begin{pmatrix}M_{0}&-M_{1}&M_{2}&-M_{3}\\ M_{1}&M_{0}&M_{3}&M_{2}\\ M_{2}&-M_{3}&M_{0}&-M_{1}\\ M_{3}&M_{2}&M_{1}&M_{0}\end{pmatrix}\in\mathbb{R}^{4m\times 4n}.
+M^{R}=\begin{pmatrix}M_{0}&amp;-M_{1}&amp;M_{2}&amp;-M_{3}\\ M_{1}&amp;M_{0}&amp;M_{3}&amp;M_{2}\\ M_{2}&amp;-M_{3}&amp;M_{0}&amp;-M_{1}\\ M_{3}&amp;M_{2}&amp;M_{1}&amp;M_{0}\end{pmatrix}\in\mathbb{R}^{4m\times 4n}.
 $$</p>
 <p><strong>Theorem (the real representation is a homomorphism).</strong> $(MN)^{R}=M^{R}N^{R}$, and the first block column of $M^{R}$ is the coefficient stack $C_{M}$.</p>
 <p><em>Proof.</em> The four blocks of the product are the four coefficient blocks of $MN$, computed from the multiplication of the algebra on the coefficient blocks; the same rule reproduces the four block rows of $M^{R}N^{R}$. The first block column of $M^{R}$ is the column of the four blocks $M_{0},M_{1},M_{2},M_{3}$.</p>
@@ -285,7 +285,7 @@ M^{(0)}=M_{0}+iM_{1},\qquad M^{(1)}=M_{2}+iM_{3},
 $$</p>
 <p>so that $M=M^{(0)}+jM^{(1)}$ and $M^{\pm}=M^{(0)}\pm M^{(1)}$, the superscript being the exponent of the hyperbolic unit $j$. The <strong>complex representation</strong> of $M$ is the $2m\times 2n$ complex matrix</p>
 <p>$$
-M^{C}=\begin{pmatrix}M^{(0)}&M^{(1)}\\ M^{(1)}&M^{(0)}\end{pmatrix}.
+M^{C}=\begin{pmatrix}M^{(0)}&amp;M^{(1)}\\ M^{(1)}&amp;M^{(0)}\end{pmatrix}.
 $$</p>
 <p>It is the repeated-block form of <em>Reduced Biquaternion Other Algebraic Element Representations</em> read on a rectangular matrix, and its diagonalisation is the pair $(M^{+},M^{-})$ through the change of basis of <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>.</p>
 <p><strong>Theorem (the complex representation is a homomorphism).</strong> $(MN)^{C}=M^{C}N^{C}$.</p>
@@ -304,9 +304,9 @@ $$</p>
 <p>For the real unknown the source's algorithm is the classical mixed algorithm on the stack, and it proceeds by eliminating the exact block by a QR factorisation and then solving a reduced total least squares problem by a singular value decomposition. The Householder transformation is the standard one and is not repeated here.</p>
 <p>Let $C=[C_{A_{a}},C_{A_{b}}]$ be the stack of $A$ split after $n_{1}$ columns, and $D=C_{B}$. Perform $n_{1}$ Householder transformations $Q$ of the stack so that</p>
 <p>$$
-Q^{\mathsf T}[C,D]=\begin{pmatrix}R_{11}&R_{12}&R_{1d}\\ 0&R_{22}&R_{2d}\end{pmatrix},
+Q^{\mathsf T}[C,D]=\begin{pmatrix}R_{11}&amp;R_{12}&amp;R_{1d}\\ 0&amp;R_{22}&amp;R_{2d}\end{pmatrix},
 $$</p>
-<p>and let $[R_{22},R_{2d}]=U\operatorname{diag}(s_{1},\dots,s_{n_{2}+d})V^{\mathsf T}$ be the singular value decomposition of the reduced block, with $V$ partitioned as $\begin{pmatrix}V_{11}&V_{12}\\ V_{21}&V_{22}\end{pmatrix}$ against the split $n_{2}+d$.</p>
+<p>and let $[R_{22},R_{2d}]=U\operatorname{diag}(s_{1},\dots,s_{n_{2}+d})V^{\mathsf T}$ be the singular value decomposition of the reduced block, with $V$ partitioned as $\begin{pmatrix}V_{11}&amp;V_{12}\\ V_{21}&amp;V_{22}\end{pmatrix}$ against the split $n_{2}+d$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -349,13 +349,13 @@ $$</p>
 <p>For the arbitrary reduced biquaternion unknown the algorithm is two complex ones in parallel, with no Householder reduction needed to remove a coupling, because there is no coupling. The two complex mixed problems are solved by the classical complex mixed algorithm on the four data blocks $A_{a}^{+},A_{b}^{+},B^{+}$ and $A_{a}^{-},A_{b}^{-},B^{-}$, and the two solutions are the two components of the answer. The real algorithm above is the special case in which the two complex unknowns are constrained to be equal and real, which is exactly the equality that forces the two complex QR reductions to be performed on the same stack.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <h3 id="the-complex-criterion">The Complex Criterion</h3>
-<p><strong>Definition.</strong> For a complex matrix $[A,B]\in\mathbb{C}^{m\times(n+d)}$ with singular values $s_{1}\ge\cdots\ge s_{n+d}$, its <strong>best rank-$n$ approximation</strong> is the truncation of its singular value decomposition after $n$ terms, and it is unique exactly when $s_{n}>s_{n+1}$ (Eckart–Young–Mirsky).</p>
-<p><strong>Theorem (existence and uniqueness, complex case).</strong> With the singular value decomposition $[A,B]=U\operatorname{diag}(s_{1},\dots,s_{n+d})V^{*}$, and $V=\begin{pmatrix}V_{11}&V_{12}\\ V_{21}&V_{22}\end{pmatrix}$ against the split $n+d$, if $s_{n}>s_{n+1}$ and $V_{22}$ is nonsingular then the complex total least squares solution exists and is unique, and it is $X=-V_{12}V_{22}^{-1}$; the perturbation of $[A,B]$ is the best rank-$n$ approximation $U_{1}\operatorname{diag}(s_{1},\dots,s_{n})V_{1}^{*}$.</p>
+<p><strong>Definition.</strong> For a complex matrix $[A,B]\in\mathbb{C}^{m\times(n+d)}$ with singular values $s_{1}\ge\cdots\ge s_{n+d}$, its <strong>best rank-$n$ approximation</strong> is the truncation of its singular value decomposition after $n$ terms, and it is unique exactly when $s_{n}&gt;s_{n+1}$ (Eckart–Young–Mirsky).</p>
+<p><strong>Theorem (existence and uniqueness, complex case).</strong> With the singular value decomposition $[A,B]=U\operatorname{diag}(s_{1},\dots,s_{n+d})V^{*}$, and $V=\begin{pmatrix}V_{11}&amp;V_{12}\\ V_{21}&amp;V_{22}\end{pmatrix}$ against the split $n+d$, if $s_{n}&gt;s_{n+1}$ and $V_{22}$ is nonsingular then the complex total least squares solution exists and is unique, and it is $X=-V_{12}V_{22}^{-1}$; the perturbation of $[A,B]$ is the best rank-$n$ approximation $U_{1}\operatorname{diag}(s_{1},\dots,s_{n})V_{1}^{*}$.</p>
 <p><em>Proof.</em> The total least squares problem asks for the smallest perturbation of $[A,B]$ with a right kernel containing the vector $\begin{pmatrix}X\\ -I_{d}\end{pmatrix}$, and the smallest perturbation of rank at most $n$ is the best rank-$n$ approximation; the gap makes it unique, and its kernel is spanned by the columns of $\begin{pmatrix}V_{12}\\ V_{22}\end{pmatrix}$. The vector $\begin{pmatrix}X\\ -I_{d}\end{pmatrix}$ then equals $\begin{pmatrix}V_{12}\\ V_{22}\end{pmatrix}T$ for a nonsingular $T$, and the lower block gives $T=-V_{22}^{-1}$ and hence $X=V_{12}T=-V_{12}V_{22}^{-1}$.</p>
 <h3 id="the-reduced-biquaternion-criterion">The Reduced Biquaternion Criterion</h3>
-<p><strong>Theorem (existence and uniqueness, algebra case).</strong> For the arbitrary reduced biquaternion unknown the total least squares solution exists and is unique if and only if each complex component has a unique total least squares solution, that is, if and only if in each component $s_{n}>s_{n+1}$ and the block $V_{22}$ is nonsingular. The solution is then the pair $X=X^{+}\Pi_++X^{-}\Pi_-$ of the two complex solutions.</p>
+<p><strong>Theorem (existence and uniqueness, algebra case).</strong> For the arbitrary reduced biquaternion unknown the total least squares solution exists and is unique if and only if each complex component has a unique total least squares solution, that is, if and only if in each component $s_{n}&gt;s_{n+1}$ and the block $V_{22}$ is nonsingular. The solution is then the pair $X=X^{+}\Pi_++X^{-}\Pi_-$ of the two complex solutions.</p>
 <p><em>Proof.</em> The problem is the pair of the two complex problems by the factorisation theorem, and a product of two problems has a unique solution exactly when each factor does; the complex criterion is the preceding theorem.</p>
-<p><strong>Theorem (existence and uniqueness, mixed case).</strong> For the mixed problem the two criteria are applied to the reduced blocks $[R_{22},R_{2d}]$ of the two components, with the gap $s_{n_{2}}>s_{n_{2}+1}$ and the nonsingularity of the block $V_{22}$ of the reduced right singular vectors; this is the source's criterion for the real case, read in the two components.</p>
+<p><strong>Theorem (existence and uniqueness, mixed case).</strong> For the mixed problem the two criteria are applied to the reduced blocks $[R_{22},R_{2d}]$ of the two components, with the gap $s_{n_{2}}&gt;s_{n_{2}+1}$ and the nonsingularity of the block $V_{22}$ of the reduced right singular vectors; this is the source's criterion for the real case, read in the two components.</p>
 <p><em>Proof.</em> The mixed problem is the two complex reduced problems of §<em>The Algorithm</em>, and the complex criterion applies to each; the real case is the two components constrained to be equal and real, and the uniqueness of the constrained solution is the uniqueness of the reduced real problem, which is the common form of the two reduced complex ones.</p>
 <p><strong>Remark (the failure modes).</strong> When the gap fails, two or more singular values tie and the best rank-$n$ approximation is not unique, so the total least squares solution is a set; when $V_{22}$ is singular, the reduced total least squares problem has no solution in the classical sense and the perturbation must be enlarged. Both are the classical complex failure modes and they occur independently in the two components, so one component may be well posed while the other is not, in which case the arbitrary-unknown problem has the failure of that component.</p>
 <h2 id="special-cases-and-the-complex-field">Special Cases and the Complex Field</h2>

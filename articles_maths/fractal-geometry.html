@@ -80,13 +80,13 @@
 <p>$$
 \operatorname{diam} U = \sup\{d(x, y) : x, y \in U\},
 $$</p>
-<p>with $\operatorname{diam}\emptyset = 0$. A <strong>$\delta$-cover</strong> of $E$ is a countable family $\{U_i\}$ of subsets with $E \subseteq \bigcup_i U_i$ and $\operatorname{diam}U_i \leq \delta$ for every $i$. A set $E$ is <strong>bounded</strong> if $\operatorname{diam}E < \infty$, and the <strong>covering number</strong> is</p>
+<p>with $\operatorname{diam}\emptyset = 0$. A <strong>$\delta$-cover</strong> of $E$ is a countable family $\{U_i\}$ of subsets with $E \subseteq \bigcup_i U_i$ and $\operatorname{diam}U_i \leq \delta$ for every $i$. A set $E$ is <strong>bounded</strong> if $\operatorname{diam}E &lt; \infty$, and the <strong>covering number</strong> is</p>
 <p>$$
 N(E, \delta) = \text{the least number of sets of diameter at most }\delta\text{ needed to cover }E,
 $$</p>
 <p>finite for bounded $E$ in a totally bounded space and infinite in general.</p>
 <p><strong>Example.</strong> In $\mathbb{R}^n$ with the Euclidean metric, a maximal $\delta$-separated subset of a bounded set $E$ has cardinality at least $N(E,\delta)$ and at most a constant times $(\operatorname{diam}E/\delta)^n$; for a bounded set with nonempty interior the covering number satisfies $N(E, \delta) \asymp (\operatorname{diam}E/\delta)^n$, and the exponent $n$ of the ambient space is exactly the box dimension of such a set.</p>
-<p><strong>Definition.</strong> A map $f : X \to Y$ between metric spaces is <strong>Hölder</strong> of exponent $\alpha > 0$ if $d_Y(f(x), f(x')) \leq c\,d_X(x, x')^\alpha$ for some constant $c$; it is <strong>Lipschitz</strong> if this holds with $\alpha = 1$, and <strong>bi-Lipschitz</strong> if in addition it has a bi-Lipschitz inverse. Bi-Lipschitz maps are the natural equivalences of the theory: they preserve the covering numbers up to a constant and therefore every dimension considered below.</p>
+<p><strong>Definition.</strong> A map $f : X \to Y$ between metric spaces is <strong>Hölder</strong> of exponent $\alpha &gt; 0$ if $d_Y(f(x), f(x')) \leq c\,d_X(x, x')^\alpha$ for some constant $c$; it is <strong>Lipschitz</strong> if this holds with $\alpha = 1$, and <strong>bi-Lipschitz</strong> if in addition it has a bi-Lipschitz inverse. Bi-Lipschitz maps are the natural equivalences of the theory: they preserve the covering numbers up to a constant and therefore every dimension considered below.</p>
 <h2 id="the-box-counting-dimension">The Box-Counting Dimension</h2>
 <p><strong>Definition.</strong> For a bounded set $E$ in a metric space, the <strong>lower and upper box-counting dimensions</strong> are</p>
 <p>$$
@@ -108,9 +108,9 @@ $$</p>
 <p>The set is compact, countable, of topological dimension zero and of box dimension $1/2$: no integer, no topological invariant, and not the Hausdorff dimension, which is zero.</p>
 <p><strong>Remark.</strong> The box dimension is the dimension appropriate to the covering numbers; it is a metric invariant but not a topological one, and it is not stable under countable unions. The Hausdorff dimension, defined next, is countably stable and is the dimension of the theory; the box dimension is the more computable of the two and often coincides with it.</p>
 <h2 id="the-hausdorff-dimension">The Hausdorff Dimension</h2>
-<p><strong>Definition.</strong> Let $E$ be a subset of a metric space. For $s \geq 0$ and $\delta > 0$ put</p>
+<p><strong>Definition.</strong> Let $E$ be a subset of a metric space. For $s \geq 0$ and $\delta &gt; 0$ put</p>
 <p>$$
-\mathcal{H}^s_\delta(E) = \inf\left\{\sum_i (\operatorname{diam}U_i)^s : \{U_i\}\ \text{a countable }\delta\text{-cover of } E\right\}, \qquad \mathcal{H}^s(E) = \sup_{\delta>0}\mathcal{H}^s_\delta(E) .
+\mathcal{H}^s_\delta(E) = \inf\left\{\sum_i (\operatorname{diam}U_i)^s : \{U_i\}\ \text{a countable }\delta\text{-cover of } E\right\}, \qquad \mathcal{H}^s(E) = \sup_{\delta&gt;0}\mathcal{H}^s_\delta(E) .
 $$</p>
 <p>The quantity $\mathcal{H}^s(E)$ is the <strong>Hausdorff $s$-content</strong>. It is monotone and countably subadditive in $E$, and it is decreasing in $s$; the <strong>Hausdorff dimension</strong> is the critical exponent</p>
 <p>$$
@@ -129,11 +129,11 @@ $$</p>
 \boxed{\;\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E\;} ,
 $$</p>
 <p>and the inequalities can be strict on both sides. The Hausdorff dimension is countably stable and the box dimension is not; equality holds for the self-similar sets satisfying the open set condition, below.</p>
-<p><strong>Proof sketch.</strong> Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$.</p>
-<p><strong>Example (the strictness of the first inequality).</strong> The set $E = \{0\} \cup \{1/n\}$ of the previous section has $\dim_H E = 0 < \tfrac12 = \dim_B E$; the set of irrationals in a bounded interval has $\dim_H = 1 = \dim_B$; the set of rationals in a bounded interval has $\dim_H = 0$ and $\dim_B = 1$, so the second inequality is strict as well.</p>
+<p><strong>Proof sketch.</strong> Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s &gt; \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$.</p>
+<p><strong>Example (the strictness of the first inequality).</strong> The set $E = \{0\} \cup \{1/n\}$ of the previous section has $\dim_H E = 0 &lt; \tfrac12 = \dim_B E$; the set of irrationals in a bounded interval has $\dim_H = 1 = \dim_B$; the set of rationals in a bounded interval has $\dim_H = 0$ and $\dim_B = 1$, so the second inequality is strict as well.</p>
 <h2 id="self-similar-sets">Self-Similar Sets</h2>
 <h3 id="iterated-function-systems">Iterated Function Systems</h3>
-<p><strong>Definition.</strong> An <strong>iterated function system</strong> (IFS) on a complete metric space $X$ is a finite family of contractions $f_1, \ldots, f_m : X \to X$ with ratios $r_i < 1$, $d(f_i(x), f_i(y)) \leq r_i\,d(x,y)$. A set $\Lambda \subseteq X$ is <strong>invariant</strong> for the system if</p>
+<p><strong>Definition.</strong> An <strong>iterated function system</strong> (IFS) on a complete metric space $X$ is a finite family of contractions $f_1, \ldots, f_m : X \to X$ with ratios $r_i &lt; 1$, $d(f_i(x), f_i(y)) \leq r_i\,d(x,y)$. A set $\Lambda \subseteq X$ is <strong>invariant</strong> for the system if</p>
 <p>$$
 \Lambda = \bigcup_{i=1}^m f_i(\Lambda) .
 $$</p>
@@ -141,19 +141,19 @@ $$</p>
 <p>$$
 \sum_{i=1}^m r_i^{\,s} = 1 .
 $$</p>
-<p>The left side is strictly decreasing in $s$, tending to $m > 1$ at $s = 0$ and to $0$ as $s\to\infty$, so $s$ exists and is unique; it is positive.</p>
+<p>The left side is strictly decreasing in $s$, tending to $m &gt; 1$ at $s = 0$ and to $0$ as $s\to\infty$, so $s$ exists and is unique; it is positive.</p>
 <p><strong>Theorem (the attractor).</strong> Let $f_1, \ldots, f_m$ be an iterated function system on a complete metric space $X$. There is exactly one nonempty compact set $\Lambda$ invariant for the system, the <strong>attractor</strong>; it is the limit, in the Hausdorff metric, of the iterates of any nonempty compact set, and</p>
 <p>$$
 \Lambda = \bigcap_{k=1}^\infty \bigcup_{|i| = k} f_{i_1}\circ\cdots\circ f_{i_k}(X) ,
 $$</p>
 <p>where the union is over the words of length $k$.</p>
-<p><strong>Proof sketch.</strong> On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i < 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of <em>Metric, Uniform and Complete Spaces</em> gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration.</p>
+<p><strong>Proof sketch.</strong> On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i &lt; 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of <em>Metric, Uniform and Complete Spaces</em> gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration.</p>
 <p><strong>Definition (the open set condition).</strong> The system satisfies the <strong>open set condition</strong> if there is a nonempty bounded open set $V$ with $\bigcup_{i=1}^m f_i(V) \subseteq V$ and the images $f_i(V)$ pairwise disjoint.</p>
 <p><strong>Theorem (Moran, Hutchinson).</strong> Let $f_1,\ldots,f_m$ be a self-similar IFS on $\mathbb{R}^n$ satisfying the open set condition. Then</p>
 <p>$$
 \boxed{\;\dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1\;} ,
 $$</p>
-<p>and $0 < \mathcal{H}^s(\Lambda) < \infty$.</p>
+<p>and $0 &lt; \mathcal{H}^s(\Lambda) &lt; \infty$.</p>
 <p><strong>Proof sketch.</strong> The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form.</p>
 <h3 id="the-standard-examples">The Standard Examples</h3>
 <p><strong>Example (the middle-thirds Cantor set).</strong> Let $f_1, f_2 : \mathbb{R}\to\mathbb{R}$ be $f_1(x) = x/3$ and $f_2(x) = x/3 + 2/3$; the attractor is the middle-thirds Cantor set $\Lambda$. The ratios are $r_1 = r_2 = 1/3$, so the similarity dimension solves $2\cdot 3^{-s} = 1$, giving</p>
@@ -193,8 +193,8 @@ $$</p>
 <p>$$
 \dim_{top} E \leq \dim_H E \leq \dim_B E ,
 $$</p>
-<p>with the first inequality strict precisely when $E$ is the kind of set the theory calls fractal: a set with $\dim_H E > \dim_{top}E$ is a fractal in the sense of Mandelbrot, so the Cantor set, the Sierpiński triangle and the Koch curve are fractals, and a segment, a disk and a sphere are not.</p>
-<p><strong>Remark (the regularisation of a fractal).</strong> The dimension bounds the roughness of the image of a set under a map: a rectifiable curve has box dimension $1$, the Koch curve has $\log4/\log3 > 1$, and by part (d) of the theorem on the Hausdorff dimension, the image of a set of dimension $d$ under a Hölder map of exponent $\alpha$ has dimension at most $d/\alpha$. Smooth maps can therefore only lower the dimension, and the only way a map can raise it is by failing to be Hölder of the appropriate exponent.</p>
+<p>with the first inequality strict precisely when $E$ is the kind of set the theory calls fractal: a set with $\dim_H E &gt; \dim_{top}E$ is a fractal in the sense of Mandelbrot, so the Cantor set, the Sierpiński triangle and the Koch curve are fractals, and a segment, a disk and a sphere are not.</p>
+<p><strong>Remark (the regularisation of a fractal).</strong> The dimension bounds the roughness of the image of a set under a map: a rectifiable curve has box dimension $1$, the Koch curve has $\log4/\log3 &gt; 1$, and by part (d) of the theorem on the Hausdorff dimension, the image of a set of dimension $d$ under a Hölder map of exponent $\alpha$ has dimension at most $d/\alpha$. Smooth maps can therefore only lower the dimension, and the only way a map can raise it is by failing to be Hölder of the appropriate exponent.</p>
 <h2 id="summary">Summary</h2>
 <p>The box-counting dimension of a bounded set in a metric space is the exponent of the growth of its covering number, $\dim_B E = \lim \log N(E,\delta)/\log(1/\delta)$; it is monotone, finitely stable, bi-Lipschitz invariant, sub-additive on products, and not countably stable — a countable set can have positive box dimension, the set $\{0\}\cup\{1/n\}$ having box dimension $1/2$. The Hausdorff dimension is the critical exponent of the series $\sum_i(\operatorname{diam}U_i)^s$ over the countable covers of $E$; it is monotone, countably stable, zero on every countable set, and decreases by at most the factor $1/\alpha$ under a Hölder map of exponent $\alpha$, so that it is bi-Lipschitz invariant. For every bounded set $\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E$, and both inequalities can be strict; the box dimension is the more computable and the Hausdorff dimension the more stable of the two.</p>
 <p>An iterated function system is a finite family of contractions of a complete metric space, and it has a unique nonempty compact invariant set, the attractor, obtained as the fixed point of the contraction on the space of compact sets with the Hausdorff metric. For a self-similar system satisfying the open set condition the Hausdorff and box dimensions of the attractor are both equal to the similarity dimension $s$, the unique solution of $\sum_i r_i^s = 1$; the Cantor set has dimension $\log2/\log3$, the Sierpiński triangle $\log3/\log2$, the Koch curve $\log4/\log3$, the Sierpiński carpet $\log8/\log3$ and the Menger sponge $\log20/\log3$. The $p$-adic integers are a self-similar set of dimension one whose topological dimension is zero, so the fractal dimension depends on the metric and not only on the topology. The topological dimension is at most the Hausdorff dimension, with equality exactly for the sets that are not fractal; the dynamical reading of the attractor, its coding by the shift and its local dimension in the sense of the measure, belong to Part III, and the measure-theoretic development of the Hausdorff content used here belongs there as well.</p>

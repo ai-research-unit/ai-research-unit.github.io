@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometrical Dynamics: Spin as a Result of Rotation with Superluminal Speed — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Rylov/Rylov - Geometrical dynamics spin as a result of rotation with superluminal speed - 0801.1913.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="geometrical-dynamics-spin-as-a-result-of-rotation-with-superluminal-speed"><strong>Geometrical Dynamics: Spin as a Result of Rotation with Superluminal Speed</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>arXiv preprint</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>0801.1913 [physics.gen-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Yuri A. Rylov</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 28 May 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>38 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Rylov/Rylov - Geometrical dynamics spin as a result of rotation with superluminal speed - 0801.1913-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Geometrical dynamics spin as a result of rotation with superluminal speed - 0801.1913.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Rylov/Rylov - Geometrical dynamics spin as a result of rotation with superluminal speed - 0801.1913.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Derives spin, not as an intrinsic label, but as rotation of the particle's world chain — and the rotation is faster than light. Two modifications of the Minkowski world function are used: a correction at large intervals produces wobbling of a chain of timelike segments, whose statistics is the Schrödinger equation; a correction at small intervals produces a chain of spacelike segments forming a helix with a timelike axis, which is a rotating particle. Since the segments are spacelike, the tangential speed exceeds $c$ without any signal travelling faster than light.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-regimes-of-one-construction">The two regimes of one construction</h3>
+<p>The framework is the one used throughout: a particle is a sphere of skeleton points, its evolution a chain $P^n_{eqv}Q^n$ with equivalent links $P_iP_k\, eqv\, Q_iQ_k$, and the geometry is fixed by $\sigma$. What changes between papers is the sign of the modification.</p>
+<p>At large intervals the chain wobbles, and "Statistical description of the stochastic world chain coincides with the quantum description by means of the Schrödinger equation." At small intervals a different behaviour appears: "Proper modification of the Minkowskian world function for small space-time interval may lead to appearance of a world chain, having a shape" a helix. The helix is the particle's rotation.</p>
+<h3 id="why-superluminal-is-not-a-violation">Why superluminal is not a violation</h3>
+<p>The argument is short and is the paper's real content. "dering the vectors Q0 Q1 and Q1 Q2 in (5.11) from the viewpoint of the geometry of Minkowski, we see that the vector Q1 Q2 is obtained from the vector Q0 Q1 as a result of spatial rota- tion and of an addition of some temporal component. One" So the next link is a rotated copy of the previous one, and if the links are spacelike the rotation is spacelike.</p>
+<p>Then the reconciliation: "if the spacelike world line has a shape of a helix with timelike axis, such a situation may be considered as a free rotating particle. The fact, that the particle rotates with the superluminal velocity is not so important, if the helix axis is timelike." And the case for tolerating it: "The world line of a classical Dirac particle is a helix. It is not very important, whether the rotation velocity is tardyon or not", especially since "the Dirac equation describes the internal degrees of freedom (rotation) nonrelativistically".</p>
+<p>So the superluminal rotation is a phase velocity, not a signal: nothing propagates along the helix, and the axis stays inside the light cone. His own admission is that the internal description is not relativistic — "the description of internal degrees of the classical Dirac particle is incorrect from the viewpoint of the relativity theory" — which he offers as a diagnosis of the Dirac equation rather than of his construction.</p>
+<h3 id="what-the-chain-buys">What the chain buys</h3>
+<p>The conclusions are the ones already met in the skeleton papers: dynamics as a corollary of geometry, evolution determined by the skeleton and the leading vector, and "one does not need differential equations, which may be used only on the space-time manifold." The new content is that spin joins mass and position as a property of the chain rather than an extra quantum number.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-spin-as-rotation-at-superluminal-speed">1. Spin as rotation at superluminal speed</h3>
+<p><strong>The idea.</strong> Spin is a real rotation of an extended structure, and the tangential speed exceeds $c$ because the rotating part is spacelike. A <strong>claim</strong> that answers the usual objection, that spin cannot be literal rotation, by accepting the speed rather than denying the rotation.</p>
+<p><strong>What it would add.</strong> The corpus's spin-half fluid has a spin vector and a vorticity, and its charge-coupling article notes that charge couples to the Lorentz force while spin does not — an asymmetry about what spin is mechanically. Rylov's picture supplies a mechanics: the spin is the angular momentum of a chain, and its rate is fixed. If it were right, the corpus's spin vector would be the axis of a real rotation, and the article's asymmetry would have a reason.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>.</p>
+<p><strong>What stands in the way.</strong> A superluminal tangential speed is not a small departure: for an electron it would require an internal radius below the Compton length, which is where the framework already lives, so the claim is consistent but not predictive. No number is computed — no radius, no angular momentum, no $g$-factor — so nothing distinguishes the rotation from a bookkeeping helix.</p>
+<h3 id="2-phase-velocity-versus-signal">2. Phase velocity versus signal</h3>
+<p><strong>The idea.</strong> A <strong>distinction with a mechanism</strong>: the rotation moves faster than light while nothing that carries energy does, because the rotating object is spacelike and the axis is timelike. This is the same distinction as the phase–group one, applied to a geometry rather than to a wave.</p>
+<p><strong>What it would add.</strong> The corpus has an article on which constant each field carries, and it separates the fluid's phase from its transport. Rylov's case is a cleaner instance of the same separation in a mechanical rather than a wave setting, and it would give the corpus's own phase/transport split a second example in which the superluminal part is a rotation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>.</p>
+<p><strong>What stands in the way.</strong> The distinction is asserted, not demonstrated: no causal structure is drawn for the helix, and no demonstration is given that no signal can be sent along it. In a spacelike chain, the ordering of events along the chain is frame-dependent, which is exactly the situation a causality argument has to address and does not here.</p>
+<h3 id="3-helix-frequency-equals-the-pair-threshold">3. Helix frequency equals the pair threshold</h3>
+<p><strong>The idea.</strong> The characteristic frequency of the rotating chain is $\Omega=2mc^2/\hbar$, the same number that appears as the pair-production threshold in the companion papers. One frequency, two phenomena.</p>
+<p><strong>What it would add.</strong> The corpus's internal angle $\varphi$ has a rate, and nothing in the corpus fixes it. If the rate is $\Omega$, then the internal motion is a clock whose period is the Compton period — a statement with consequences for what a "single particle" can be resolved into, and one the corpus can check against its own $\varphi$ equation.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>.</p>
+<p><strong>What stands in the way.</strong> The frequency is put in by matching to the known Compton frequency rather than derived from $\sigma$, so the agreement is guaranteed. And the corpus's internal angle is defined up to a constant, so a rate comparison requires a convention the corpus has not fixed.</p>
+<p>The rank: superluminal spin first, because it is the paper's thesis and it touches a corpus asymmetry; phase versus signal second, because it is the argument that makes the thesis coherent; the frequency last, because it is a match rather than a prediction.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

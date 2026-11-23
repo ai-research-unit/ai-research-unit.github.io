@@ -93,10 +93,10 @@ $$</p>
 $$</p>
 <p>So the Gram entry of the units $(i,j)$ and $(k,l)$ equals $1$ exactly when $(k,l)=(j,i)$, and the Gram matrix is the permutation matrix $\Pi$ of the map $\tau(i,j)=(j,i)$.</p>
 <p><strong>The identification was checked in low dimensions.</strong> At $n=2$ and $n=3$ the computed Gram matrix equals $\Pi$ entry for entry. The matrix $\Pi$ has one $1$ in each row and in each column, and $\Pi^{2}=\mathrm{I}$.</p>
-<p><strong>The permutation has $n$ fixed points and $n(n-1)/2$ transposed pairs.</strong> The fixed points are the diagonal units $E_{ii}$. The remaining $n(n-1)$ units fall into the pairs $\{(i,j),(j,i)\}$ with $i<j$.</p>
+<p><strong>The permutation has $n$ fixed points and $n(n-1)/2$ transposed pairs.</strong> The fixed points are the diagonal units $E_{ii}$. The remaining $n(n-1)$ units fall into the pairs $\{(i,j),(j,i)\}$ with $i&lt;j$.</p>
 <p><strong>The eigenvalues are the signs of the cycles.</strong> A fixed point contributes the eigenvalue $+1$. A transposed pair contributes the block</p>
 <p>$$
-\begin{pmatrix}0&1\\ 1&0\end{pmatrix},
+\begin{pmatrix}0&amp;1\\ 1&amp;0\end{pmatrix},
 $$</p>
 <p>of eigenvalues $+1$ and $-1$. So the positive directions are the $n$ fixed points together with one direction of each pair, and the negative directions are the other direction of each pair. Hence</p>
 <p>$$
@@ -143,12 +143,12 @@ $$</p>
 <h2 id="the-two-halves">The Two Halves</h2>
 <p><strong>On $\operatorname{Sym}_n$ the form is positive definite.</strong> For symmetric $X$ the entry formula gives $X_{ji}=X_{ij}$, so</p>
 <p>$$
-\operatorname{tr}(X^{2})=\sum_{i}X_{ii}^{2}+2\sum_{i<j}X_{ij}^{2}.
+\operatorname{tr}(X^{2})=\sum_{i}X_{ii}^{2}+2\sum_{i&lt;j}X_{ij}^{2}.
 $$</p>
 <p>The right-hand side is a sum of squares with positive coefficients, and it vanishes only for $X=0$. The restriction is the Euclidean structure of $\mathbb{R}^{n(n+1)/2}$ in the entries, up to the factor two.</p>
 <p><strong>On $\operatorname{Skew}_n$ the form is negative definite.</strong> For anti-Hermitian $X$ the entry formula gives $X_{ji}=-X_{ij}$, so</p>
 <p>$$
-\operatorname{tr}(X^{2})=-2\sum_{i<j}X_{ij}^{2}.
+\operatorname{tr}(X^{2})=-2\sum_{i&lt;j}X_{ij}^{2}.
 $$</p>
 <p>The right-hand side is negative for every nonzero $X$.</p>
 <p><strong>The two halves are orthogonal.</strong> Let $S$ be symmetric and $K$ antisymmetric. Then</p>
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 2B(E_{12},E_{12})=0.
 $$</p>
-<p>That contradicts $B(E_{12},E_{12})>0$, because $E_{12}$ is nonzero.</p>
+<p>That contradicts $B(E_{12},E_{12})&gt;0$, because $E_{12}$ is nonzero.</p>
 <p><strong>So definiteness and invariance exclude each other on $M_n(\mathbb{R})$.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form is definite and not invariant, and the next article measures its defect.</p>
 <p><strong>Every symmetric associative form is a multiple of the trace form.</strong> Solving the associativity conditions $B(XY,Z)=B(X,YZ)$ for a symmetric $B$ leaves a one-dimensional space, spanned by $\operatorname{tr}(XY)$. The computation was done numerically at $n=2$ with ten unknowns and at $n=3$ with forty-five, and in both cases the solution space has dimension one and its Gram matrix is the transposition permutation of the units. Every member of that line is indefinite, because $\operatorname{tr}(E_{12}^{2})=0$.</p>
 <h2 id="summary">Summary</h2>

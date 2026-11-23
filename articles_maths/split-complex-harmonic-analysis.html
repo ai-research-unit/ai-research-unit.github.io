@@ -112,7 +112,7 @@ $$</p>
 <p>$$
 \mathcal F f_\pm(\zeta_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \zeta_\pm Q_\pm) \, dQ_\pm.
 $$</p>
-<p>The two integrals are <strong>Laplace transforms</strong>, one for each idempotent component. The first integral converges for $\zeta_+ > 0$ and the second for $\zeta_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.</p>
+<p>The two integrals are <strong>Laplace transforms</strong>, one for each idempotent component. The first integral converges for $\zeta_+ &gt; 0$ and the second for $\zeta_- &lt; 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.</p>
 <p>This is the precise sense in which split complex harmonic analysis is the Laplace transform in disguise.</p>
 <h3 id="the-domain-of-definition">The Domain of Definition</h3>
 <p>The split complex Fourier transform is defined on the class of functions $f$ for which both idempotent components are integrable against the corresponding exponential. This is a very restrictive class, essentially the functions that decay faster than any exponential at both ends of each null line.</p>
@@ -123,7 +123,7 @@ $$</p>
 <p>$$
 \mathcal{L} f(s) = \int_0^\infty f(t) \exp(-st) \, dt,
 $$</p>
-<p>whenever the integral converges. For $f$ of exponential growth, the transform converges for $\operatorname{Re} s > \sigma_0$, where $\sigma_0$ is the abscissa of convergence.</p>
+<p>whenever the integral converges. For $f$ of exponential growth, the transform converges for $\operatorname{Re} s &gt; \sigma_0$, where $\sigma_0$ is the abscissa of convergence.</p>
 <h3 id="relation-to-the-split-complex-fourier-transform">Relation to the Split Complex Fourier Transform</h3>
 <p>The split complex Fourier transform on the positive null direction is the Laplace transform:</p>
 <p>$$
@@ -204,7 +204,7 @@ Hf(Q) = Hf_+(Q_+) \Pi_+ + Hf_-(Q_-) \Pi_-.
 $$</p>
 <p>So the split complex Hilbert transform is the pair of ordinary real Hilbert transforms.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
-<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p < \infty$, with</p>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 &lt; p &lt; \infty$, with</p>
 <p>$$
 \|Hf\|_p \leq C_p \|f\|_p.
 $$</p>
@@ -217,20 +217,20 @@ $$</p>
 <h3 id="the-split-complex-maximal-function">The Split Complex Maximal Function</h3>
 <p>The <strong>split complex Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{C}_{\mathrm{spl}})$ is</p>
 <p>$$
-Mf(Q) = \sup_{r > 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\| \, dB,
+Mf(Q) = \sup_{r &gt; 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\| \, dB,
 $$</p>
 <p>where $B(Q, r)$ is the Euclidean ball of radius $r$ centred at $Q$, and $|B(Q, r)|$ is its area.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
-<p><strong>Theorem (Hardy–Littlewood, split version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}_{\mathrm{spl}})$ and every $\lambda > 0$,</p>
+<p><strong>Theorem (Hardy–Littlewood, split version).</strong> There exists a constant $C &gt; 0$ such that for every $f \in L^1(\mathbb{C}_{\mathrm{spl}})$ and every $\lambda &gt; 0$,</p>
 <p>$$
-|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{Q : Mf(Q) &gt; \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$</p>
-<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p \leq \infty$.</p>
-<p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 &lt; p \leq \infty$.</p>
+<p><strong>Theorem.</strong> For $1 &lt; p \leq \infty$, there exists $C_p &gt; 0$ such that</p>
 <p>$$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$</p>
-<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 &lt; p &lt; \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-idempotent-form_3">The Idempotent Form</h3>
 <p>In the idempotent basis, the split complex maximal function decomposes as the pair of ordinary real maximal functions on the two null directions. So the theory of maximal functions in the split complex case is the pair of the real theory, and the constants are the same.</p>
 <h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
@@ -244,10 +244,10 @@ $$</p>
 \|K(Q, B)\| \leq \frac{C}{\|Q - B\|},
 $$</p>
 <p>$$
-\|K(Q, B) - K(Q', B)\| \leq C \frac{\|Q - Q'\|^\delta}{\|Q - B\|^{1+\delta}}, \qquad \|Q - Q'\| < \frac{1}{2} \|Q - B\|,
+\|K(Q, B) - K(Q', B)\| \leq C \frac{\|Q - Q'\|^\delta}{\|Q - B\|^{1+\delta}}, \qquad \|Q - Q'\| &lt; \frac{1}{2} \|Q - B\|,
 $$</p>
-<p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
-<p><strong>Theorem (Calderón–Zygmund, split version).</strong> Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p>and the analogous estimate in the second variable, for some $\delta &gt; 0$.</p>
+<p><strong>Theorem (Calderón–Zygmund, split version).</strong> Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 &lt; p &lt; \infty$, and satisfies a weak $(1,1)$ estimate.</p>
 <p><strong>Examples.</strong> The split complex Hilbert transform, the split complex Riesz transforms, and the Beurling–Ahlfors transform are split complex Calderón–Zygmund operators.</p>
 <h3 id="the-idempotent-form_4">The Idempotent Form</h3>
 <p>In the idempotent basis, every split complex Calderón–Zygmund operator decomposes as the pair of ordinary real Calderón–Zygmund operators on the two null directions. So the theory in the split complex case is the pair of the real theory.</p>
@@ -306,7 +306,7 @@ W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\gamma$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta &lt; \infty,
 $$</p>
 <p>where $\hat{\gamma}$ is the ordinary Fourier transform.</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>

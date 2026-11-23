@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational vacuum polarization II: Energy conditions in the Boulware vacuum — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization II - Energy conditions in the Boulware vacuum…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-vacuum-polarization-ii-energy-conditions-in-the-boulware-vacuum"><strong>Gravitational vacuum polarization II: Energy conditions in the Boulware vacuum</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>journal article (arXiv preprint)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>gr-qc/9604008v1</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 3 April 1996</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Gravitational vacuum polarization II - Energy conditions in the Boulware vacuum - gr-qc_9604008-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization II - Energy conditions in the Boulware vacuum - gr-qc_9604008.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Gravitational vacuum polarization II - Energy conditions in the Boulware vacuum - gr-qc_9604008.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This companion to the Hartle–Hawking study repeats the analysis for the Boulware vacuum, again for a conformally coupled massless scalar in Schwarzschild spacetime in the test-field limit. The outcome is much stronger than in the first paper. Every standard energy condition fails in the entire exterior, and the pointwise conditions fail maximally: at all points and for all null or timelike vectors. The author treats this as evidence that self-consistent semiclassical solutions may violate all energy conditions.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting">The setting</h3>
+<p>"Building on techniques developed in an earlier paper, I investigate the various point-wise and averaged energy conditions for the quantum stress-energy tensor corresponding to a conformally coupled massless scalar field in the Boulware vacuum. I work in the test-field limit, restrict attention to the Schwarzschild geometry, and invoke a mixture of analytical and numerical techniques."</p>
+<h3 id="the-contrast">The contrast</h3>
+<p>"In contradistinction to the case of the Hartle–Hawking vacuum, wherein violations of the energy conditions were confined to the region between the event horizon and the unstable photon orbit"</p>
+<h3 id="the-main-result">The main result</h3>
+<p>"I show that in the Boulware vacuum (1) all standard (point-wise and averaged) energy conditions are violated throughout the exterior region—all the way from spatial infinity down to the event horizon, and (2) outside the event horizon the standard point-wise energy conditions are violated in a maximal manner: they are violated at all points and for all null/timelike vectors."</p>
+<h3 id="the-interior">The interior</h3>
+<p>"(The region inside the event horizon is considerably messier, and of dubious physical relevance. Nevertheless the standard point-wise energy conditions seem to be violated even inside the event horizon.)"</p>
+<h3 id="the-significance">The significance</h3>
+<p>"I argue that this is highly suggestive evidence pointing to the fact that general self-consistent solutions of semiclassical quantum gravity might not satisfy the energy conditions, and may in fact for certain quantum fields and certain quantum states violate all the energy conditions."</p>
+<h3 id="the-caveat-about-the-state">The caveat about the state</h3>
+<p>"the Boulware vacuum is ill-behaved on the event horizon itself, and for this reason it might be thought to be an 'unphysical' quantum state, giving a further excuse for not worrying."</p>
+<h3 id="the-averaging-does-not-help">The averaging does not help</h3>
+<p>"Because I was able to prove that ANEC was violated at this order for all null curves it is clear that the transverse averaging advocated by Flanagan and Wald will not help the situation."</p>
+<h3 id="the-physical-reading">The physical reading</h3>
+<p>"one may think of a star or planet and chop the almost-Schwarzschild geometry off at some suitably large radius, matching it to some stellar or planetary interior. Outside the star or planet the entire analysis of this paper should hold, at least qualitatively, and we would then have a self-consistent solution of semiclassical quantum gravity that violates all of the energy conditions."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-vacuum-choice-changes-the-verdict">1. Vacuum choice changes the verdict</h3>
+<p><strong>The idea.</strong> The same spacetime and field violate conditions differently depending on the quantum state.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code> refers to "the" vacuum as if unique. Two states giving opposite verdicts show the article must name its state before it can use any energy condition.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, in the discussion of the vacuum.</p>
+<p><strong>What stands in the way.</strong> The Boulware state is ill-behaved on the horizon, as the author notes. Ranked first, because it identifies an unstated assumption.</p>
+<h3 id="2-averaging-is-not-a-rescue">2. Averaging is not a rescue</h3>
+<p><strong>The idea.</strong> Transverse averaging, proposed to tame violation, fails here.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> might otherwise treat averaged conditions as weaker and therefore safer. This paper removes that fallback, and the entry should record it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the entry on averaged conditions.</p>
+<p><strong>What stands in the way.</strong> The proof is at first order in perturbation. Ranked second.</p>
+<h3 id="3-a-star-exterior-as-the-physical-case">3. A star exterior as the physical case</h3>
+<p><strong>The idea.</strong> Cutting off the geometry at a stellar surface gives a configurable violation everywhere outside.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code> asks about observable consequences. A tiny but ubiquitous violation in the exterior of an ordinary star is a test case the article has not considered.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-empirical-status-of-the-biquaternion-framework.md</code>, in the discussion of tests.</p>
+<p><strong>What stands in the way.</strong> The violations are said to be tiny. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

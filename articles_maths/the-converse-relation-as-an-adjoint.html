@@ -72,8 +72,7 @@
         <h1 id="the-converse-relation-as-an-adjoint"><strong>The Converse Relation as an Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The converse $R^{-1}$ of a relation is the adjoint of $R$ in two distinct senses, and this article
-separates them and proves that they agree. In the <strong>residuation</strong> of composition, the operator $S
-\mapsto R ; S$ has the right adjoint $T \mapsto R \backslash T$, and the right adjoint is computed by
+separates them and proves that they agree. In the <strong>residuation</strong> of composition, the operator $S \mapsto R ; S$ has the right adjoint $T \mapsto R \backslash T$, and the right adjoint is computed by
 the converse, $R \backslash T = \overline{R^{-1} ; \overline{T}}$; the same holds on the other side,
 $T / R = \overline{\overline{T} ; R^{-1}}$. In the <strong>operator layer</strong> of the preceding article, the
 conjugation by the converse sends the left-composition with $R$ to the right-composition with
@@ -85,13 +84,11 @@ Algebras and the Converse</em> and in <em>Involutions of the Operator Layer</em>
 an Adjoint</em> and <em>Involutions of the Operator Layer</em>, which precede it in this Part. It names no form,
 no norm and no topology; the Hilbert-space adjoint is Part II and is not used.</p>
 <h2 id="the-residuation-by-the-converse">The Residuation by the Converse</h2>
-<p><strong>Definition.</strong> For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X
-\times Z$, the two composition operators are</p>
+<p><strong>Definition.</strong> For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X \times Z$, the two composition operators are</p>
 <p>$$
 L_R(S) = R ; S, \qquad R_R(S) = S ; R ,
 $$</p>
-<p>the <strong>left</strong> and the <strong>right</strong> composition with $R$, where $R_R$ is defined for relations $S \subseteq
-W \times X$.</p>
+<p>the <strong>left</strong> and the <strong>right</strong> composition with $R$, where $R_R$ is defined for relations $S \subseteq W \times X$.</p>
 <p><strong>Theorem.</strong> The right adjoints of the two composition operators are computed by the converse:</p>
 <p>$$
 R \backslash T = \overline{R^{-1} ; \overline{T}}, \qquad T / R = \overline{\overline{T} ; R^{-1}} ,
@@ -119,8 +116,7 @@ operators $F$ on relations by $\varphi(F)(R) = (F(R^{-1}))^{-1}$, that is, conju
 <p>$$
 \boxed{\;\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}}\;} .
 $$</p>
-<p><strong>Proof.</strong> For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ;
-R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
+<p><strong>Proof.</strong> For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ; R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
 same computation with the roles of the sides exchanged.</p>
 <p><strong>Corollary.</strong> The involution is an automorphism of the composition of operators,
 $\varphi(F \circ G) = \varphi(F) \circ \varphi(G)$, and it is an anti-automorphism of the composition of
@@ -137,12 +133,9 @@ residuation: if $L_R$ has the right adjoint $K_R : T \mapsto R \backslash T$, th
 $$</p>
 <p><strong>Proof.</strong> The adjunction-reversal of <em>Involutions of the Operator Layer</em> applied to $L_R \dashv K_R$
 gives $K_R^{\perp} \dashv L_R^{\perp}$, that is, $\varphi(K_R) \dashv \varphi(L_R)$. For the explicit
-formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} =
-\overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1}
-= \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
+formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} = \overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1} = \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
 of the left residual, since $(R^{-1})^{-1} = R$.</p>
-<p><strong>Example.</strong> Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T =
-R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
+<p><strong>Example.</strong> Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T = R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
 $L_R$ and $L_{R^{-1}}$ are mutually inverse on the level of the induced maps; the involution
 $\varphi$ fixes the pair. For a general relation the complement remains and the adjoint is the residual
 of the theorem.</p>

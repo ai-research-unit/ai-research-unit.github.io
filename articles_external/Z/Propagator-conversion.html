@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propagator — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Z/Propagator.pdf — a PDF in a subfolder of /home/hp/Documents/Material/, readable with pdftotext if the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="propagator"><strong>Propagator</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>encyclopedia article (Wikipedia)</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>not applicable — encyclopedia article</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Wikipedia contributors</td>
+</tr>
+<tr>
+<td>version</td>
+<td>as downloaded</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Propagator</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Z/Propagator-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Z/Propagator.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-feynman-propagator-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Z/Propagator.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>An encyclopedia article on the propagator: the amplitude for a particle to go from one place to another in a given time, or to carry a given energy and momentum, its role as the inverse of the wave operator, its appearance as the internal line of a Feynman diagram, and the distinction between the retarded, advanced and Feynman propagators.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-definition">The definition</h3>
+<p>"the propagator is a function that specifies the probability amplitude for a particle to travel from one place to another in a given period of time, or to travel with a certain energy and momentum."</p>
+<h3 id="the-two-faces">The two faces</h3>
+<p>"In Feynman diagrams, which serve to calculate the rate of collisions in quantum field theory, virtual particles contribute their propagator to the rate of the scattering event described by the respective diagram. Propagators may also be viewed as the inverse of the wave operator appropriate to the particle, and are, therefore, often called (ca[usal]..." Green's functions.</p>
+<p>Those two faces are the same object: the kernel of the inverse operator, and the sum over paths between two points. The article's value is that it presents them as one.</p>
+<h3 id="which-inverse">Which inverse</h3>
+<p>The inverse of a differential operator is not unique without a boundary condition, and the choice of condition selects the propagator: retarded for a source switched on in the past, advanced for one switched on in the future, and the Feynman one for the path-integral contour. Each is a different Green's function of the same operator.</p>
+<p>"Propagators in Feynman diagrams The most common use of the propagator is in calculating probability amplitudes for particle interactions using Feynman diagrams."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-propagator-is-defined-by-its-pole-prescription">1. A propagator is defined by its pole prescription</h3>
+<p><strong>The idea.</strong> The operator has a continuum of inverses; the physical one is fixed by how the poles are circumvented. The $i\epsilon$ is not a technicality but the definition. This is a <strong>reading</strong>.</p>
+<p><strong>What it would add.</strong> A statement of what distinguishes the corpus's propagators from each other, which its Feynman-propagator article derives but does not state as a rule.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-feynman-propagator-in-biquaternionic-form.md</code>, at the contour.</p>
+<p><strong>What stands in the way.</strong> The corpus's propagator is built from the algebra's own resolvent, and the pole prescription has to be given in terms of the algebra's spectrum, which is not a set of real numbers in general.</p>
+<h3 id="2-retarded-advanced-and-feynman-differ-by-a-homogeneous-solution">2. Retarded, advanced and Feynman differ by a homogeneous solution</h3>
+<p><strong>The idea.</strong> Three Green's functions of one operator differ by a solution of the homogeneous equation, so the difference is not small and not a correction; it is a choice of what is counted as a particle and what as an antiparticle.</p>
+<p><strong>What it would add.</strong> A structural account of the particle-antiparticle reading, which the corpus states as a convention.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.md</code>.</p>
+<p><strong>What stands in the way.</strong> Nothing structural; the corpus already has the three functions and needs the sentence that relates them.</p>
+<p>This is an encyclopedia article; the definition, the two faces, the Feynman-diagram role and the Green's-function reading are its content.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

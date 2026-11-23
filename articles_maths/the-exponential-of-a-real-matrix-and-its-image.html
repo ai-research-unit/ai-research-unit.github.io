@@ -101,7 +101,7 @@ $$</p>
 <p>The exponential commutes with the involution of <em>The Matrix Algebra $M_n(\mathbb{R})$</em>: the exponential of a symmetric matrix is symmetric, and the exponential of an antisymmetric $K$ satisfies $\exp(K)^{\mathsf T}=\exp(-K)=\exp(K)^{-1}$, so it is orthogonal.</p>
 <p><strong>The determinant of the exponential is the exponential of the trace.</strong> For $X\in M_n(\mathbb{R})$,</p>
 <p>$$
-\det\exp X=\exp(\operatorname{tr}X)>0 .
+\det\exp X=\exp(\operatorname{tr}X)&gt;0 .
 $$</p>
 <p><em>Proof.</em> Put $A(t)=\exp(tX)$ and $f(t)=\det A(t)$. Then $A'(t)=XA(t)=A(t)X$, and Jacobi's formula gives $f'(t)=f(t)\operatorname{tr}\big(A(t)^{-1}A'(t)\big)=f(t)\operatorname{tr}X$. So $f'=(\operatorname{tr}X)f$ with $f(0)=1$, hence $f(t)=e^{t\operatorname{tr}X}$, and $t=1$ is the claim.</p>
 <p><strong>The sign of the determinant is fixed over the whole image.</strong> The right side is positive, so no exponential has determinant zero or determinant negative. On the antisymmetric part the trace is zero, so $\det\exp K=1$ and, with the transpose identity, $\exp K\in\mathrm{SO}(n)$.</p>
@@ -113,7 +113,7 @@ $$</p>
 <p>and the right side tends to $0$ because its numerator begins with $\lVert H\rVert^{2}/2$. So $d\exp_{\mathrm{0}}$ is the identity map of $M_n(\mathbb{R})$. The secant with $t=10^{-6}$ on a random $3\times3$ matrix differs from $H$ by $1.1\cdot10^{-6}$.</p>
 <p><strong>The inverse function theorem then applies.</strong> The derivative at $\mathrm{0}$ is invertible, so there are neighbourhoods $U$ of $\mathrm{0}$ and $V$ of $\mathrm{I}$ with $\exp:U\to V$ a diffeomorphism. The inverse is the logarithmic series</p>
 <p>$$
-\log(\mathrm{I}+Y)=\sum_{k\ge1}\frac{(-1)^{k+1}}{k}Y^{k},\qquad \lVert Y\rVert<1,
+\log(\mathrm{I}+Y)=\sum_{k\ge1}\frac{(-1)^{k+1}}{k}Y^{k},\qquad \lVert Y\rVert&lt;1,
 $$</p>
 <p>which converges absolutely and inverts the exponential. So $\exp$ is injective near $\mathrm{0}$: the failure of injectivity is a large-scale phenomenon.</p>
 <p><strong>The local statement does not globalise.</strong> The derivative at $X$ is singular whenever two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$, since its second factor is $(\mathrm{I}-e^{-\operatorname{ad}X})/\operatorname{ad}X$. At $n=2$ and $X=2\pi J$ the eigenvalues are $\pm2\pi i$, the derivative is singular, and $\exp X=\mathrm{I}$.</p>
@@ -132,31 +132,31 @@ $$</p>
 <p>$$
 \exp S=Q\,e^{\Lambda}\,Q^{\mathsf T},
 $$</p>
-<p>which is symmetric with eigenvalues $e^{\lambda_{i}}>0$, hence positive definite. Conversely every positive definite $P=Q\Lambda Q^{\mathsf T}$ with $\Lambda>0$ is $\exp S$ for $S=Q(\log\Lambda)Q^{\mathsf T}$. So</p>
+<p>which is symmetric with eigenvalues $e^{\lambda_{i}}&gt;0$, hence positive definite. Conversely every positive definite $P=Q\Lambda Q^{\mathsf T}$ with $\Lambda&gt;0$ is $\exp S$ for $S=Q(\log\Lambda)Q^{\mathsf T}$. So</p>
 <p>$$
 \exp:\operatorname{Sym}_n\longrightarrow\operatorname{Sym}_n^{++}
 $$</p>
 <p>is a bijection. On $100$ random symmetric $4\times4$ matrices the exponential is symmetric to machine precision and its smallest eigenvalue is $0.0087$ in the worst case, never zero.</p>
 <p><strong>On $\operatorname{Skew}_n$ the behaviour is the opposite.</strong> There the exponential is neither injective nor a bijection onto a cone; that case is <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em>.</p>
 <h2 id="the-triangular-case">The Triangular Case</h2>
-<p><strong>On the triangular algebra the exponential is a bijection onto the positive triangular group.</strong> Let $\mathfrak{b}$ be the algebra of upper triangular matrices. If $X\in\mathfrak{b}$ then every power of $X$ is upper triangular with diagonal $X_{ii}^{k}$, so $\exp X$ is upper triangular with diagonal entries $e^{X_{ii}}>0$. Conversely, write $T=\Lambda(\mathrm{I}+M)$ with $\Lambda=\operatorname{diag}(T_{ii})$ positive and $M$ strictly upper triangular, hence nilpotent. Then $\log T=(\log\Lambda)+\log(\mathrm{I}+M)$ lies in $\mathfrak{b}$, because the second term is the finite sum above. Therefore</p>
+<p><strong>On the triangular algebra the exponential is a bijection onto the positive triangular group.</strong> Let $\mathfrak{b}$ be the algebra of upper triangular matrices. If $X\in\mathfrak{b}$ then every power of $X$ is upper triangular with diagonal $X_{ii}^{k}$, so $\exp X$ is upper triangular with diagonal entries $e^{X_{ii}}&gt;0$. Conversely, write $T=\Lambda(\mathrm{I}+M)$ with $\Lambda=\operatorname{diag}(T_{ii})$ positive and $M$ strictly upper triangular, hence nilpotent. Then $\log T=(\log\Lambda)+\log(\mathrm{I}+M)$ lies in $\mathfrak{b}$, because the second term is the finite sum above. Therefore</p>
 <p>$$
-\exp:\mathfrak{b}\longrightarrow\{T\text{ upper triangular}:\ T_{ii}>0\}
+\exp:\mathfrak{b}\longrightarrow\{T\text{ upper triangular}:\ T_{ii}&gt;0\}
 $$</p>
 <p>is a bijection onto a connected set. On the solvable part, as on the nilpotent part, the image is the whole identity component of the corresponding group.</p>
 <h2 id="the-image-inside-the-positive-component">The Image inside the Positive Component</h2>
-<p><strong>The image is contained in the open set of positive determinant.</strong> This is the determinant identity: $\det\exp X=e^{\operatorname{tr}X}>0$. So</p>
+<p><strong>The image is contained in the open set of positive determinant.</strong> This is the determinant identity: $\det\exp X=e^{\operatorname{tr}X}&gt;0$. So</p>
 <p>$$
-\exp\big(M_n(\mathbb{R})\big)\subseteq\mathrm{GL}_n(\mathbb{R})^{+}=\{A:\det A>0\}.
+\exp\big(M_n(\mathbb{R})\big)\subseteq\mathrm{GL}_n(\mathbb{R})^{+}=\{A:\det A&gt;0\}.
 $$</p>
 <p><strong>The image contains a full neighbourhood of the identity.</strong> The local diffeomorphism at the origin maps a neighbourhood of $\mathrm{0}$ onto a neighbourhood of $\mathrm{I}$, so the image has interior points. A subgroup that contains a neighbourhood of the identity is open, and an open subgroup of a connected group is the whole group; since $\mathrm{GL}_n(\mathbb{R})^{+}$ is connected, the image generates all of it.</p>
 <h2 id="the-image-is-not-the-component">The Image Is Not the Component</h2>
 <p><strong>The Jordan block at a negative eigenvalue is the simplest obstruction.</strong> The matrix</p>
 <p>$$
-A=\begin{pmatrix}-1&1\\0&-1\end{pmatrix}
+A=\begin{pmatrix}-1&amp;1\\0&amp;-1\end{pmatrix}
 $$</p>
 <p>has $\det A=1$, so it lies in $\mathrm{GL}_2(\mathbb{R})^{+}$, and it is not $\exp X$ for any real $X$. The proof is in <em>The Two Components of $\mathrm{GL}_n(\mathbb{R})$ and the Failure of the Exponential</em>: any $X$ with $\exp X=A$ commutes with $A$, the centraliser of $A$ is $\{a\mathrm{I}+bN\}$ with $N^{2}=0$, and $\exp(a\mathrm{I}+bN)=e^{a}(\mathrm{I}+bN)$ has positive diagonal entries, so it cannot have $-1$ there.</p>
-<p><strong>A necessary condition is the parity of the negative eigenvalues.</strong> Let $X$ be real and let $\mu<0$ be an eigenvalue of $\exp X$. Then $\mu=e^{\lambda}$ for an eigenvalue $\lambda$ of $X$, and $\lambda$ is not real, because $e^{\lambda}>0$ for real $\lambda$. So $\lambda$ and $\bar\lambda$ are both eigenvalues of $X$ and they give the same value $e^{\lambda}=e^{\bar\lambda}=\mu$. Hence</p>
+<p><strong>A necessary condition is the parity of the negative eigenvalues.</strong> Let $X$ be real and let $\mu&lt;0$ be an eigenvalue of $\exp X$. Then $\mu=e^{\lambda}$ for an eigenvalue $\lambda$ of $X$, and $\lambda$ is not real, because $e^{\lambda}&gt;0$ for real $\lambda$. So $\lambda$ and $\bar\lambda$ are both eigenvalues of $X$ and they give the same value $e^{\lambda}=e^{\bar\lambda}=\mu$. Hence</p>
 <p>$$
 \text{every negative real eigenvalue of }\exp X\text{ has even algebraic multiplicity.}
 $$</p>
@@ -165,14 +165,14 @@ $$</p>
 <p><strong>The image is therefore not dense.</strong> The matrices with two simple negative eigenvalues form an open set, it contains $\operatorname{diag}(-1,-2)$, and it misses the image. So the closure of the image does not contain that point, and the image is not dense in $\mathrm{GL}_2(\mathbb{R})^{+}$, hence not in $\mathrm{GL}_n(\mathbb{R})^{+}$ either.</p>
 <p><strong>A sharper closed condition holds at $n=2$.</strong> For real $2\times2$ $X$, $\operatorname{tr}\exp X+2\sqrt{\det\exp X}\ge0$: the trace is $e^{\lambda_{1}}+e^{\lambda_{2}}$ for a real spectrum and $2e^{\sigma}\cos\theta$ for the spectrum $\sigma\pm i\theta$, and both are bounded below by $-2\sqrt{\det\exp X}$. The left side was never below $0.28$ over $100$ samples.</p>
 <h2 id="the-numbers-at-math153">The Numbers at $n=3$</h2>
-<p><strong>A random $3\times3$ matrix checks the truncation.</strong> Take $X$ a normal random $3\times3$ matrix with seed $7$ and let $S_{K}=\sum_{k<K}X^{k}/k!$. Compared with the sum through $k=39$, the errors $\lVert S_{K}-\exp X\rVert$ at $K=3,5,8,10,14,18$ are</p>
+<p><strong>A random $3\times3$ matrix checks the truncation.</strong> Take $X$ a normal random $3\times3$ matrix with seed $7$ and let $S_{K}=\sum_{k&lt;K}X^{k}/k!$. Compared with the sum through $k=39$, the errors $\lVert S_{K}-\exp X\rVert$ at $K=3,5,8,10,14,18$ are</p>
 <p>$$
 4.1\cdot10^{-1},\quad 4.3\cdot10^{-2},\quad 3.5\cdot10^{-4},\quad 7.7\cdot10^{-6},\quad 1.2\cdot10^{-9},\quad 6.2\cdot10^{-14}.
 $$</p>
 <p><strong>An independent route agrees.</strong> The same $X$ has distinct eigenvalues, so $\exp X=V e^{\Lambda}V^{-1}$ for its complex eigendecomposition, and that value differs from the sum through $k=39$ by $8.2\cdot10^{-16}$. Twenty terms exhaust the double precision answer.</p>
 <p><strong>The identities hold at the same level.</strong> Over $100$ random $4\times4$ matrices the bound $\lVert\exp X\rVert\le e^{\lVert X\rVert}$ is never violated and the determinant identity has maximum error $6.8\cdot10^{-13}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The exponential of a real matrix is the sum of $X^{k}/k!$, convergent everywhere and analytic, with $\lVert\exp X\rVert\le e^{\lVert X\rVert}$. It satisfies $\exp(X^{\mathsf T})=\exp(X)^{\mathsf T}$ and $\det\exp X=e^{\operatorname{tr}X}>0$, and it adds on commuting factors. Its derivative at the origin is the identity, so it is a local diffeomorphism there and its image contains a neighbourhood of $\mathrm{I}$; it is not a local diffeomorphism everywhere, and it is not injective, since $\exp(2\pi J)=\mathrm{I}$ at $n=2$. On the diagonal, nilpotent and triangular parts it is a bijection onto a positive or unipotent set, and on $\operatorname{Sym}_n$ onto the positive definite cone. Its image lies in $\mathrm{GL}_n(\mathbb{R})^{+}$, generates that component, misses the Jordan block at a negative eigenvalue, excludes every matrix with a negative eigenvalue of odd multiplicity, and is not dense.</p>
+<p>The exponential of a real matrix is the sum of $X^{k}/k!$, convergent everywhere and analytic, with $\lVert\exp X\rVert\le e^{\lVert X\rVert}$. It satisfies $\exp(X^{\mathsf T})=\exp(X)^{\mathsf T}$ and $\det\exp X=e^{\operatorname{tr}X}&gt;0$, and it adds on commuting factors. Its derivative at the origin is the identity, so it is a local diffeomorphism there and its image contains a neighbourhood of $\mathrm{I}$; it is not a local diffeomorphism everywhere, and it is not injective, since $\exp(2\pi J)=\mathrm{I}$ at $n=2$. On the diagonal, nilpotent and triangular parts it is a bijection onto a positive or unipotent set, and on $\operatorname{Sym}_n$ onto the positive definite cone. Its image lies in $\mathrm{GL}_n(\mathbb{R})^{+}$, generates that component, misses the Jordan block at a negative eigenvalue, excludes every matrix with a negative eigenvalue of odd multiplicity, and is not dense.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -208,7 +208,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the matrix $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>the matrix $\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$S_{K}$</td>

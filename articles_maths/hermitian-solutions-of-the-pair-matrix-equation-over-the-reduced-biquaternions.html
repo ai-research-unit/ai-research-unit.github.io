@@ -166,7 +166,7 @@ $$</p>
 $$</p>
 <p>the entries strictly below the diagonal, column by column.</p>
 <p><strong>Proposition (the two readings are faithful).</strong> For $X$ symmetric, $\mathrm{vec}(X)=K_{S}\mathrm{vec}_{S}(X)$; for $X$ antisymmetric, $\mathrm{vec}(X)=K_{A}\mathrm{vec}_{A}(X)$. The matrices $K_{S}\in\mathbb{R}^{n^{2}\times n(n+1)/2}$ and $K_{A}\in\mathbb{R}^{n^{2}\times n(n-1)/2}$ have full column rank.</p>
-<p><em>Proof.</em> The column of $K_{S}$ attached to $x_{ij}$ with $i\ge j$ has the unit at the position of $(i,j)$ in the vec and, when $i>j$, the unit at the position of $(j,i)$, since $x_{ji}=x_{ij}$. The column of $K_{A}$ attached to $x_{ij}$ with $i>j$ has the unit at $(i,j)$ and the negative unit at $(j,i)$, since $x_{ji}=-x_{ij}$. Distinct columns have distinct supports in the strict lower triangle, so the ranks are full.</p>
+<p><em>Proof.</em> The column of $K_{S}$ attached to $x_{ij}$ with $i\ge j$ has the unit at the position of $(i,j)$ in the vec and, when $i&gt;j$, the unit at the position of $(j,i)$, since $x_{ji}=x_{ij}$. The column of $K_{A}$ attached to $x_{ij}$ with $i&gt;j$ has the unit at $(i,j)$ and the negative unit at $(j,i)$, since $x_{ji}=-x_{ij}$. Distinct columns have distinct supports in the strict lower triangle, so the ranks are full.</p>
 <p>The two encodings are the source's $K_{S}$ and $K_{A}$. They are not isometries: the column of $K_{S}$ attached to an off-diagonal entry has two units, so $K_{S}^{\mathsf T}K_{S}$ has the weight $2$ on the off-diagonal coordinates and the weight $1$ on the diagonal ones, while $K_{A}^{\mathsf T}K_{A}=2I_{n(n-1)/2}$, since every column of $K_{A}$ has one unit and one negative unit.</p>
 <h3 id="the-block-diagonal">The Block Diagonal</h3>
 <p><strong>The four blocks of a Hermitian matrix are carried by one block diagonal matrix into the row form of the real representation.</strong></p>
@@ -283,7 +283,7 @@ $$</p>
 <p>$$
 Q_{\mathrm c}=\operatorname{diag}\bigl(K_{S},-K_{A}\bigr),\qquad R_{\mathrm c}=\operatorname{diag}\bigl(K_{S},K_{A}\bigr),
 $$</p>
-<p>the matrices $P_{\mathrm c}$ and $J_{\mathrm c}$ built from the two-block real representation $M^{R}=\begin{pmatrix}M_{0}&-M_{1}\\ M_{1}&M_{0}\end{pmatrix}$ and the row form $M^{R}_{r}=[M_{0},-M_{1}]$. The subscript $\mathrm c$ marks the complex-case matrices; the four-block matrices of the preceding section carry no subscript.</p>
+<p>the matrices $P_{\mathrm c}$ and $J_{\mathrm c}$ built from the two-block real representation $M^{R}=\begin{pmatrix}M_{0}&amp;-M_{1}\\ M_{1}&amp;M_{0}\end{pmatrix}$ and the row form $M^{R}_{r}=[M_{0},-M_{1}]$. The subscript $\mathrm c$ marks the complex-case matrices; the four-block matrices of the preceding section carry no subscript.</p>
 <p><em>Proof.</em> The unknown has two real blocks, $X_{0}$ symmetric and $X_{1}$ antisymmetric, so the half-vectorisation has $n(n+1)/2+n(n-1)/2=n^{2}$ coordinates. The row form of the two-block representation is $[X_{0},-X_{1}]$, and the rest of the construction is the same with two blocks in place of four.</p>
 <p>The complex theorems are the source's Theorems 4.1 and 4.2, with the consistency criterion and the uniqueness criterion $\operatorname{rank}(P_{\mathrm c}J_{\mathrm c}Q_{\mathrm c})=n^{2}$.</p>
 <h2 id="the-hermitian-partial-inverse-eigenvalue-problem">The Hermitian Partial Inverse Eigenvalue Problem</h2>

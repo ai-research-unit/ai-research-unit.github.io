@@ -124,7 +124,7 @@ $$</p>
 \tilde{Ϛ}_{\Psi,A} = \tilde{Ϛ}_{\Psi,B} = \tfrac12 e_t ,
 \qquad S(\tilde{Ϛ}_{\Psi,A}) = S(\tilde{Ϛ}_{\Psi,B}) = 1\ \text{bit},
 $$</p>
-<p>because the scalar part of every $i\vec e_\imath$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_{\mathrm{id},\epsilon}$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
+<p>because the scalar part of every $i\vec e_{\imath}$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_{\mathrm{id},\epsilon}$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
 <p>$$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
 \qquad
@@ -151,7 +151,7 @@ $$</p>
 <p>$$
 D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u} .
 $$</p>
-<p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{Ϛ}_{\Psi,AB} = \sum_{\imath\in\{x,y,z\}} p_\imath\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde\Pi_{\mathrm{id},k}$.</p>
+<p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{Ϛ}_{\Psi,AB} = \sum_{\imath\in\{x,y,z\}} p_{\imath}\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde\Pi_{\mathrm{id},k}$.</p>
 <h3 id="asymmetry">Asymmetry</h3>
 <p>The measurement is performed on one side only, so $J(A|B)$ and $J(B|A)$ need not agree, and the discord is generally asymmetric, $D(A|B)\neq D(B|A)$. The <strong>total</strong> discord, or the symmetric version, is defined by minimizing over measurements on both sides; this article computes the one-sided discord $D(A|B)$ throughout. The asymmetry is not an artifact; it is the statement that the classical information extractable from a bipartite state depends on which subsystem is interrogated, and it is a genuine feature of the correlation structure.</p>
 <h3 id="discord-for-bell-diagonal-states">Discord for Bell-diagonal states</h3>
@@ -244,7 +244,7 @@ $$</p>
 <h2 id="discord-without-entanglement">Discord Without Entanglement</h2>
 <p>The example of the previous section is the point of the article, and it deserves to be stated in the framework's terms:</p>
 <blockquote>
-<p>In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\otimes e_t\rangle_{*}=\tfrac14$ (unit matrix trace in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.</p>
+<p>In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\otimes e_t\rangle_{*}=\tfrac14$ (unit matrix trace in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)&gt;0$.</p>
 </blockquote>
 <p>The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = 4\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,AB}\tilde{H}_{\Psi,j}^{*})$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde{H}_{\Psi,j} = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.</p>
 <p>The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be <strong>quantumly correlated</strong> in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{Ϛ}_{\Psi,AB}$, i.e. by the three readings of the plain form $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.</p>

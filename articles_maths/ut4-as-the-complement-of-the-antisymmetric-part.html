@@ -76,18 +76,18 @@
 <p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> for the antisymmetric half and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</em> for the Borel. The case $n=2$ is <em>$UT_2$ as the Complement of the Antisymmetric Part</em>. The product question on the same space is <em>$UT_4$ as a Linear Model of $\operatorname{Sym}_4$: Same Space, Wrong Product</em>.</p>
 <h2 id="which-math12">Which $UT_4$</h2>
 <p><strong>Definition.</strong> In this category $UT_4$ is the space of <strong>upper triangular</strong> matrices including the diagonal, that is the span of the ten units $E_{ij}$ with $i\le j$. It is the Lie algebra of the group $B_4$ of invertible upper triangular matrices, and it is not the group and not the set of strictly upper triangular matrices.</p>
-<p><strong>Proposition.</strong> $\dim UT_4=10$, with the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}$ for $i<j$.</p>
+<p><strong>Proposition.</strong> $\dim UT_4=10$, with the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}$ for $i&lt;j$.</p>
 <p><strong>Proof.</strong> The pairs with $i\le j$ number $4+6=10$.</p>
 <p><strong>The convention is fixed.</strong> A strictly upper triangular space has dimension $6$ and is written $\mathfrak{n}_+$; the unipotent group is $\mathrm I+\mathfrak{n}_+$; $UT_4$ always means the ten-dimensional space. Mixing the three is the commonest source of wrong dimension counts in this block, so the article keeps to the definition above throughout.</p>
 <h2 id="the-direct-sum">The Direct Sum</h2>
 <p><strong>Theorem.</strong> $M_4(\mathbb{C})=\operatorname{Skew}_4\oplus UT_4$.</p>
-<p><strong>Proof.</strong> Suppose $A$ is both antisymmetric and upper triangular. Then $a_{ii}=-a_{ii}$, so the diagonal vanishes, and $a_{ij}=0$ for $i<j$ by triangularity; hence $A=0$, and the intersection is zero. The dimensions add to $6+10=16$, so the sum is everything.</p>
+<p><strong>Proof.</strong> Suppose $A$ is both antisymmetric and upper triangular. Then $a_{ii}=-a_{ii}$, so the diagonal vanishes, and $a_{ij}=0$ for $i&lt;j$ by triangularity; hence $A=0$, and the intersection is zero. The dimensions add to $6+10=16$, so the sum is everything.</p>
 <p><strong>The projection, entry by entry.</strong> For $A$ arbitrary, the decomposition $A=K+U$ is</p>
 <p>$$
-U_{ii}=a_{ii},\qquad U_{ij}=a_{ij}+a_{ji}\ (i<j),\qquad U_{ij}=0\ (i>j),
+U_{ii}=a_{ii},\qquad U_{ij}=a_{ij}+a_{ji}\ (i&lt;j),\qquad U_{ij}=0\ (i&gt;j),
 $$</p>
-<p>and $K=A-U$, with $K_{ij}=a_{ij}$ for $i>j$ and $K_{ji}=-a_{ij}$.</p>
-<p><strong>Proof.</strong> The proposed $U$ is upper triangular, and $K=A-U$ has $K_{ii}=0$, $K_{ij}=a_{ij}$ for $i>j$ and $K_{ji}=a_{ji}-(a_{ij}+a_{ji})=-a_{ij}$ for $i<j$, which is antisymmetry. Uniqueness is the theorem.</p>
+<p>and $K=A-U$, with $K_{ij}=a_{ij}$ for $i&gt;j$ and $K_{ji}=-a_{ij}$.</p>
+<p><strong>Proof.</strong> The proposed $U$ is upper triangular, and $K=A-U$ has $K_{ii}=0$, $K_{ij}=a_{ij}$ for $i&gt;j$ and $K_{ji}=a_{ji}-(a_{ij}+a_{ji})=-a_{ij}$ for $i&lt;j$, which is antisymmetry. Uniqueness is the theorem.</p>
 <p><strong>Corollary.</strong> The map $A\mapsto U$ is linear and idempotent with image $UT_4$ and kernel $\operatorname{Skew}_4$.</p>
 <p><strong>Proof.</strong> It is the projection along a direct summand, and the formulas are linear.</p>
 <p><strong>The projection is not orthogonal.</strong> For the trace pairing, $\operatorname{tr}(KU)$ need not vanish: with $K=E_{12}-E_{21}$ and $U=E_{12}$ one has $KU=-E_{22}$, of trace $-1$.</p>
@@ -152,18 +152,18 @@ $$</p>
 <p><strong>Why both complements matter.</strong> The symmetric complement turns $\operatorname{Skew}_4$ into an orthogonal summand and produces the Cartan decomposition $\mathfrak{gl}_4=\mathfrak{so}(4)\oplus\operatorname{Sym}_4$. The triangular complement produces the quotient $M_4/\mathfrak{n}_-\cong\mathfrak{b}$ and the flag variety. One complement is adapted to a form, the other to a filtration, and no single complement is adapted to both.</p>
 <h2 id="the-flag-and-the-triangular-complement">The Flag and the Triangular Complement</h2>
 <p><strong>Proposition.</strong> $UT_4=\mathfrak{h}\oplus\mathfrak{n}_+$ and $\mathfrak{n}_-$ is a complement of $UT_4$ as well.</p>
-<p><strong>Proof.</strong> The position split gives the first identity; the second is the same dimension count with the disjoint index sets $i>j$ and $i\le j$.</p>
+<p><strong>Proof.</strong> The position split gives the first identity; the second is the same dimension count with the disjoint index sets $i&gt;j$ and $i\le j$.</p>
 <p><strong>Corollary.</strong> The algebra has at least three pairwise different complements of $\operatorname{Skew}_4$: the symmetric half, the triangular space, and the space $\mathfrak{h}\oplus\mathfrak{n}_-$ obtained by reflecting the flag.</p>
 <p><strong>Proof.</strong> Each has dimension $10$ and meets $\operatorname{Skew}_4$ only at zero, as the same argument with the transposed inequalities shows; they are pairwise different because their diagonal parts and their triangular parts differ.</p>
-<p><strong>The reading of the projection onto $UT_4$.</strong> The formula $U_{ij}=a_{ij}+a_{ji}$ for $i<j$ shows that the triangular complement keeps the diagonal, keeps the upper entries as they are plus the transposed lower entry, and discards the lower entry alone. The symmetric complement instead keeps $a_{ij}+a_{ji}$ on both sides. The two projections agree on the diagonal and differ by a factor of two on the off-diagonal pairs.</p>
+<p><strong>The reading of the projection onto $UT_4$.</strong> The formula $U_{ij}=a_{ij}+a_{ji}$ for $i&lt;j$ shows that the triangular complement keeps the diagonal, keeps the upper entries as they are plus the transposed lower entry, and discards the lower entry alone. The symmetric complement instead keeps $a_{ij}+a_{ji}$ on both sides. The two projections agree on the diagonal and differ by a factor of two on the off-diagonal pairs.</p>
 <h2 id="a-worked-matrix">A Worked Matrix</h2>
 <p><strong>The example.</strong> Take $A$ with entries $a_{ij}=4(i-1)+j$, the matrix</p>
 <p>$$
-A=\begin{pmatrix}1&2&3&4\\ 5&6&7&8\\ 9&10&11&12\\ 13&14&15&16\end{pmatrix}.
+A=\begin{pmatrix}1&amp;2&amp;3&amp;4\\ 5&amp;6&amp;7&amp;8\\ 9&amp;10&amp;11&amp;12\\ 13&amp;14&amp;15&amp;16\end{pmatrix}.
 $$</p>
 <p>Then $U$ has the diagonal $1,6,11,16$, the strict upper entries $2+5=7$, $3+9=12$, $4+13=17$, $7+10=17$, $8+14=22$, $12+15=27$, and zeros below, and $K=A-U$ has the strict lower entries $5,9,13,10,14,15$ with the negatives in the transposed positions.</p>
 <p><strong>The check.</strong> $K$ is antisymmetric by construction, $U$ is upper triangular, and $K+U=A$; the six upper entries of $K$ are $-5,-9,-13,-10,-14,-15$, which are the negatives of the six strict lower entries of $A$ that $U$ discarded.</p>
-<p><strong>The count of the discarded information.</strong> In both cases six numbers are lost: the lower entries $a_{ij}$ with $i>j$ in the triangular reading, the differences $a_{ij}-a_{ji}$ in the symmetric reading. The information lost is the same size and a different content.</p>
+<p><strong>The count of the discarded information.</strong> In both cases six numbers are lost: the lower entries $a_{ij}$ with $i&gt;j$ in the triangular reading, the differences $a_{ij}-a_{ji}$ in the symmetric reading. The information lost is the same size and a different content.</p>
 <p><strong>Corollary.</strong> The projection onto $UT_4$ along the antisymmetric half is the map that keeps the upper triangle and replaces the strict lower part by zero, so the two coordinates of an element are its upper triangle and its strictly lower triangle read as an antisymmetric matrix.</p>
 <p><strong>Proof.</strong> Decompose an arbitrary matrix into its upper triangular part and the negative of its strictly lower triangular part.</p>
 <h2 id="summary">Summary</h2>
@@ -193,7 +193,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U_{ij}=a_{ij}+a_{ji}$</td>
-<td>the entry formula of the projection, for $i<j$</td>
+<td>the entry formula of the projection, for $i&lt;j$</td>
 </tr>
 <tr>
 <td>$\mathfrak{h}$</td>

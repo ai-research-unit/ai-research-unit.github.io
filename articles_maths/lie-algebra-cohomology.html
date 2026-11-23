@@ -82,7 +82,7 @@ $$</p>
 <h2 id="the-chevalleyeilenberg-complex">The Chevalley–Eilenberg Complex</h2>
 <p><strong>Definition.</strong> Let $\mathrm{G}$ be a Lie algebra over $k$ and $M$ a $\mathrm{G}$-module. The <strong>Chevalley–Eilenberg differential</strong> $d:C^n(\mathrm{G};M)\to C^{n+1}(\mathrm{G};M)$ is</p>
 <p>$$
-(df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i<j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
+(df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i&lt;j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
 $$</p>
 <p>the hats marking omitted arguments, with $f$ extended to a linear combination in the second sum by the linearity of $f$ in its first argument. The complex $C^\bullet(\mathrm{G};M)$ with this differential is the <strong>Chevalley–Eilenberg complex</strong>, and its cohomology is</p>
 <p>$$
@@ -129,7 +129,7 @@ $$</p>
 <p>$$
 \cdots\longrightarrow \mathrm{U}(\mathrm{G})\otimes_k\Lambda^n\mathrm{G}\xrightarrow{\ \partial_n\ } \mathrm{U}(\mathrm{G})\otimes_k\Lambda^{n-1}\mathrm{G}\longrightarrow\cdots\longrightarrow \mathrm{U}(\mathrm{G})\longrightarrow k\longrightarrow0,
 $$</p>
-<p>with $\partial_n(u\otimes x_1\wedge\cdots\wedge x_n) = \sum_i(-1)^{i+1}ux_i\otimes x_1\wedge\cdots\wedge\widehat{x_i}\wedge\cdots\wedge x_n+\sum_{i<j}(-1)^{i+j}u\otimes[x_i,x_j]\wedge\cdots$, the terms being ordered as in the differential of the complex.</p>
+<p>with $\partial_n(u\otimes x_1\wedge\cdots\wedge x_n) = \sum_i(-1)^{i+1}ux_i\otimes x_1\wedge\cdots\wedge\widehat{x_i}\wedge\cdots\wedge x_n+\sum_{i&lt;j}(-1)^{i+j}u\otimes[x_i,x_j]\wedge\cdots$, the terms being ordered as in the differential of the complex.</p>
 <p><strong>Theorem (standard).</strong> The standard resolution is a free resolution of $k$ over $\mathrm{U}(\mathrm{G})$, so that for every $\mathrm{G}$-module $M$</p>
 <p>$$
 \boxed{\;H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M), \qquad H_n(\mathrm{G};M)\cong\operatorname{Tor}_n^{\mathrm{U}(\mathrm{G})}(k,M)\;},
@@ -160,7 +160,7 @@ $$</p>
 <p>$$
 H^\bullet(\mathrm{G};k)\cong\Lambda(\eta_1,\dots,\eta_r)
 $$</p>
-<p>on $r = \operatorname{rank}\mathrm{G}$ generators, each of odd degree $2m_i+1$, where $m_1,\dots,m_r$ are the exponents of the Weyl group, that is the degrees $\deg P_i = m_i+1$ of a set of homogeneous generators of the ring of invariants $\operatorname{sym}(\mathrm{H})^W$ of the Harish-Chandra theorem; the generators are the primitive invariant forms. In particular $H^n(\mathrm{G};k) = 0$ for even $n>0$, and $\dim H^{2m_i+1}\geq1$ for each exponent.</p>
+<p>on $r = \operatorname{rank}\mathrm{G}$ generators, each of odd degree $2m_i+1$, where $m_1,\dots,m_r$ are the exponents of the Weyl group, that is the degrees $\deg P_i = m_i+1$ of a set of homogeneous generators of the ring of invariants $\operatorname{sym}(\mathrm{H})^W$ of the Harish-Chandra theorem; the generators are the primitive invariant forms. In particular $H^n(\mathrm{G};k) = 0$ for even $n&gt;0$, and $\dim H^{2m_i+1}\geq1$ for each exponent.</p>
 <p><em>Proof (outline).</em> By the previous remark the cohomology is the algebra of invariant forms, which is a graded-commutative algebra with a coproduct inherited from that of the exterior algebra and is connected; the theorem of Hopf–Borel on connected graded-commutative Hopf algebras of finite type over a field of characteristic zero states that such an algebra is a polynomial algebra on even generators or an exterior algebra on odd generators, and in the present case the algebra is finite-dimensional in each degree and vanishes in high degrees, so it is an exterior algebra; the number and the degrees of the generators are read off from the Poincaré series, which is $\prod_i(1+t^{2m_i+1})$ by the theorem of Chevalley on the invariants of the Weyl group, so that there are $r$ generators of degrees $2m_i+1$.</p>
 <p><strong>Example (the computation for $\mathrm{SL}_2$).</strong> Let $\mathrm{G} = \mathrm{SL}_2(k)$ with the basis $e,f,h$ and the relations $[h,e] = 2e$, $[h,f] = -2f$, $[e,f] = h$, over a field of characteristic zero. The chain of the Chevalley–Eilenberg complex with trivial coefficients has dimensions $1,3,3,1$ in degrees $0,1,2,3$. The differential in degree one is injective — indeed</p>
 <p>$$

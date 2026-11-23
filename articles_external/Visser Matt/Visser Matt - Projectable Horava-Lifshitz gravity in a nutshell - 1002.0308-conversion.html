@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectable Hořava–Lifshitz gravity in a nutshell — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Projectable Horava-Lifshitz gravity in a nutshell - 1002.0308.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="projectable-horavalifshitz-gravity-in-a-nutshell"><strong>Projectable Hořava–Lifshitz gravity in a nutshell</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>conference proceedings</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td>1002.0308v1 [gr-qc]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Silke Weinfurtner, Thomas P. Sotiriou, Matt Visser</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 1 February 2010</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Visser Matt/Visser Matt - Projectable Horava-Lifshitz gravity in a nutshell - 1002.0308-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Projectable Horava-Lifshitz gravity in a nutshell - 1002.0308.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/_Do/Visser Matt/Visser Matt - Projectable Horava-Lifshitz gravity in a nutshell - 1002.0308.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This proceedings contribution summarises Hořava–Lifshitz gravity, a proposal that gives up local Lorentz invariance to make gravity renormalizable. The authors review the different versions and their terminology. They then focus on the projectable version, where the lapse depends only on time. That choice simplifies the action enough for explicit calculations. The verdict is negative: the theory carries a scalar degree of freedom that is unstable, or becomes strongly coupled.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-proposal">The proposal</h3>
+<p>"[a] theory of gravity which abandons local Lorentz invariance"</p>
+<h3 id="the-landscape">The landscape</h3>
+<p>"The proposal has been received with growing interest and resulted in various different versions of Hořava–Lifshitz gravity theories, involving a colourful potpourri of new terminology."</p>
+<h3 id="the-focus">The focus</h3>
+<p>"we focus on a model referred to as projectable Hořava–Lifshitz gravity and summarize the key results regarding its viability."</p>
+<h3 id="the-advantage">The advantage</h3>
+<p>"The main advantage of this version is that it drastically reduces the number of terms that one must consider in the action and it, therefore, makes it possible to perform explicit calculations using the most general action which respects the symmetries of the theory."</p>
+<h3 id="the-problem">The problem</h3>
+<p>"projectable Hořava–Lifshitz gravity appears to be plagued with serious problems related to the existence of a scalar degree of freedom."</p>
+<h3 id="the-instability">The instability</h3>
+<p>"This scalar mode turns out to be classically or quantum mechanically unstable in general"</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-a-promising-reformulation-can-fail">1. A promising reformulation can fail</h3>
+<p><strong>The idea.</strong> A theory built to be renormalizable can fail for a different reason.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code> collects failures of this kind. This is a worked case with a named cause.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code>, in the introduction.</p>
+<p><strong>What stands in the way.</strong> The failure is specific to one version. Ranked first, because it is a concrete entry for the catalogue.</p>
+<h3 id="2-extra-degrees-of-freedom-bite">2. Extra degrees of freedom bite</h3>
+<p><strong>The idea.</strong> Simplifying the action leaves a scalar mode that ruins the theory.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.md</code> would gain a cautionary case: a count that looks fine can still hide an unstable mode.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.md</code>, in the discussion of counting.</p>
+<p><strong>What stands in the way.</strong> The mode is specific to this theory. Ranked second.</p>
+<h3 id="3-lapse-choice-matters">3. Lapse choice matters</h3>
+<p><strong>The idea.</strong> Restricting the lapse to a function of time is a strong physical assumption.</p>
+<p><strong>What it would add.</strong> <code>articles_physics/frame-and-metric-conventions.md</code> treats the metric's components as conventional. Here one component carries physical content, which the target does not discuss.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/frame-and-metric-conventions.md</code>, in the section on components.</p>
+<p><strong>What stands in the way.</strong> The point is model-specific. Ranked third.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

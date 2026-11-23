@@ -117,7 +117,7 @@ $$</p>
 \boxed{\;\Phi : \Lambda^2 V \longrightarrow B_2, \qquad \Phi(u \wedge v) = \tfrac{1}{4}(uv - vu)\;}
 $$</p>
 <p>is an isomorphism of Lie algebras onto the bivectors, and $\varphi \circ \Phi^{-1} : B_2 \to \mathrm{SO}(V, \mathfrak{Q})$ is an isomorphism of Lie algebras.</p>
-<p><strong>Proof.</strong> Choose an orthogonal basis $e_1, \ldots, e_n$ of $V$, with $\mathfrak{Q}(e_i) = a_i \neq 0$. The wedges $e_i \wedge e_j$, $i < j$, form a basis of $\Lambda^2 V$, and</p>
+<p><strong>Proof.</strong> Choose an orthogonal basis $e_1, \ldots, e_n$ of $V$, with $\mathfrak{Q}(e_i) = a_i \neq 0$. The wedges $e_i \wedge e_j$, $i &lt; j$, form a basis of $\Lambda^2 V$, and</p>
 <p>$$
 \Phi(e_i \wedge e_j) = \tfrac{1}{4}(e_ie_j - e_je_i) = \tfrac{1}{2}e_ie_j
 $$</p>
@@ -151,7 +151,7 @@ $$</p>
 <p>The square of a bivector in the Clifford algebra records whether the bivector spans a single plane, and with what sign.</p>
 <p><strong>Proposition.</strong> For $u, v \in V$,</p>
 <p>$$
-\boxed{\;\Phi(u \wedge v)^2 = -\tfrac{1}{4}\bigl(\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u, v)^2\bigr) = -\tfrac{1}{4}\det \begin{pmatrix} \mathfrak{Q}(u) & B(u,v) \\ B(u,v) & \mathfrak{Q}(v)\end{pmatrix}\;},
+\boxed{\;\Phi(u \wedge v)^2 = -\tfrac{1}{4}\bigl(\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u, v)^2\bigr) = -\tfrac{1}{4}\det \begin{pmatrix} \mathfrak{Q}(u) &amp; B(u,v) \\ B(u,v) &amp; \mathfrak{Q}(v)\end{pmatrix}\;},
 $$</p>
 <p>a scalar. In particular the square is $-\mathfrak{Q}(u)\mathfrak{Q}(v)/4$ when $u$ and $v$ are orthogonal.</p>
 <p><strong>Proof.</strong> If $u$ and $v$ are linearly dependent the wedge vanishes and both sides are $0$. Otherwise write $u = \alpha e_1 + \beta e_2$, $v = \gamma e_1 + \delta e_2$ in an orthogonal basis $e_1, e_2$ of the plane when the plane is non-degenerate, which is possible by Gram–Schmidt; then $u \wedge v = (\alpha\delta - \beta\gamma)e_1 \wedge e_2$ and</p>
@@ -159,9 +159,9 @@ $$</p>
 \Phi(u \wedge v)^2 = \tfrac{1}{4}(\alpha\delta - \beta\gamma)^2 (e_1e_2)^2 = -\tfrac{1}{4}(\alpha\delta - \beta\gamma)^2 a_1a_2,
 $$</p>
 <p>while $\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u,v)^2 = a_1a_2(\alpha\delta - \beta\gamma)^2$ by the same expansion as the two-by-two determinant. When the plane is degenerate, choose a basis $r, w$ with $r$ isotropic, $B(r, w) = 0$; then $\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u,v)^2 = 0$, and $\Phi(u \wedge v) = \tfrac{1}{2}(\alpha\delta - \beta\gamma)rw$ with $(rw)^2 = -r^2w^2 = 0$, so both sides vanish again.</p>
-<p><strong>Theorem.</strong> Let $X = \sum_{i<j} c_{ij}\,e_i \wedge e_j \in \Lambda^2 V$ relative to an orthogonal basis, so that $\Phi(X) = \sum_{i<j}\tfrac{1}{2}c_{ij}e_ie_j$.</p>
+<p><strong>Theorem.</strong> Let $X = \sum_{i&lt;j} c_{ij}\,e_i \wedge e_j \in \Lambda^2 V$ relative to an orthogonal basis, so that $\Phi(X) = \sum_{i&lt;j}\tfrac{1}{2}c_{ij}e_ie_j$.</p>
 <ol>
-<li>The scalar part of $\Phi(X)^2$ is $-\tfrac{1}{4}\sum_{i<j}c_{ij}^2\,a_ia_j$.</li>
+<li>The scalar part of $\Phi(X)^2$ is $-\tfrac{1}{4}\sum_{i&lt;j}c_{ij}^2\,a_ia_j$.</li>
 <li>The bivector $X$ is decomposable, $X = u \wedge v$ for some $u, v$, exactly when $\Phi(X)^2$ is a scalar, and then $\Phi(X)^2 = -\tfrac{1}{4}(\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u,v)^2)$.</li>
 </ol>
 <p><strong>Proof.</strong> For the first statement, expand the square: the products of a pair $\{i,j\}$ with itself contribute $\tfrac{1}{4}c_{ij}^2(e_ie_j)^2 = -\tfrac{1}{4}c_{ij}^2a_ia_j$, while a product of two distinct pairs has degree $2$ when the pairs share an index and degree $4$ when they are disjoint, so it contributes nothing to the scalar part. For the second statement, the forward implication is the proposition above. The converse is the classical criterion for bivectors: over a field of characteristic not $2$, a bivector is decomposable exactly when $X \wedge X = 0$ in $\Lambda^4 V$. A direct expansion of $\Phi(X)^2$ in the orthogonal basis shows that its degree-two part vanishes identically and that its degree-four part vanishes exactly when the Plücker relations $c_{ij}c_{kl} - c_{ik}c_{jl} + c_{il}c_{jk} = 0$ hold on the coefficients, which is the same condition as $X \wedge X = 0$; the criterion is cited as standard.</p>
@@ -172,7 +172,7 @@ $$</p>
 <p>$$
 \operatorname{tr}\bigl(\varphi(e_i \wedge e_j)\varphi(e_k \wedge e_l)\bigr) = \delta_{il}\delta_{jk}(a_ja_l + a_ia_k) - \delta_{ik}\delta_{jl}(a_ja_k + a_ia_l).
 $$</p>
-<p>In particular, for $X = \sum_{i<j}c_{ij}e_i \wedge e_j$ one has $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i<j}c_{ij}^2a_ia_j$.</p>
+<p>In particular, for $X = \sum_{i&lt;j}c_{ij}e_i \wedge e_j$ one has $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i&lt;j}c_{ij}^2a_ia_j$.</p>
 <p><strong>Proof.</strong> The matrix of $\varphi(e_i\wedge e_j)$ is read off from $\varphi(e_i\wedge e_j)(e_i) = -a_ie_j$ and $\varphi(e_i\wedge e_j)(e_j) = a_je_i$, with all other basis vectors annihilated. The trace formula follows from $\operatorname{tr}(E_{ab}E_{cd}) = \delta_{bc}\delta_{ad}$ by expanding the four terms. For the last statement, take $(k,l) = (i,j)$ in the formula to get $-2a_ia_j$, and expand the square of the sum, whose cross terms have vanishing trace by the same formula.</p>
 <p><strong>Theorem.</strong> For all $X, Y \in \Lambda^2 V$,</p>
 <p>$$
@@ -184,7 +184,7 @@ $$</p>
 <p>$$
 \kappa\bigl(\varphi(X), \varphi(Y)\bigr) = 8(n-2)\,\mathrm{Sc}\bigl(\Phi(X)\Phi(Y)\bigr).
 $$</p>
-<p>For the standard form, where all $a_i = 1$, the identity $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i<j}c_{ij}^2$ shows that the trace form is negative definite, which is the computation behind the negative definiteness of the trace form recorded there.</p>
+<p>For the standard form, where all $a_i = 1$, the identity $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i&lt;j}c_{ij}^2$ shows that the trace form is negative definite, which is the computation behind the negative definiteness of the trace form recorded there.</p>
 <h2 id="the-geometric-interpretation">The Geometric Interpretation</h2>
 <h3 id="vectors-bivectors-trivectors">Vectors, Bivectors, Trivectors</h3>
 <p>The Clifford algebra is generated by $V$, and its degree filtration organises the generators by how many vectors a product contains. The low degrees have the following reading.</p>
