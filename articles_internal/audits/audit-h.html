@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration: From $\hbar$ to $h$ — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A plan, in the manner of migration-potent.md. The measurements are taken and reproducible. Decision D1 is taken: Option A, by the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-from-math0-to-math1"><strong>Migration: From $\hbar$ to $h$</strong></h1>
+<p><em>Status of this file.</em> A plan, in the manner of <code>migration-potent.md</code>. The measurements are taken and reproducible. <strong>Decision D1 is taken: Option A</strong>, by the author, 2026-11-23 — the $2\pi$ is to be made explicit on every page.
+The method has two layers: a blind replacement of the glyph by its value, which cannot be wrong, and a canonicaliser that folds the result into one storey, which cannot be worse than ugly (§<em>The Blind Replace, Tested</em>). Both were run on a copy of the live tree on 2026-11-23 before this file was called ready: $6\,859$ sites, $5\,877$ spans, KaTeX $0$ failures before and after, $0$ LaTeX commands lost. The maths corpus has already been separated from the Planck constant (§<em>The Maths Corpus, Closed</em>), so the pass is now physics only. This file states the cost of each branch so that the decision is made on numbers and not on taste. Written 2026-11-23.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>One constant of action.</strong> Every <code>\hbar</code> becomes $\dfrac{h}{2\pi}$, or a rearrangement of it; the $2\pi$ moves from a definition into 2 900 displays and is never deleted.</li>
+<li><strong>Two layers, and the invariant is the first.</strong> The blind replacement cannot be wrong and may be ugly; the canonicaliser only folds a storey, and it always has the blind form to fall back on.</li>
+<li><strong>No private symbol and no unit declaration.</strong> Not <code>\hslash</code>, not a macro, not $h=2\pi$, not $\hbar=1$: a new name for the old constant is the old constant.</li>
+<li><strong>Only <code>articles_physics/*.md</code> and the report.</strong> No git, no build, no new content, and nothing in <code>articles_maths/</code>, which is closed.</li>
+<li><strong>A count that drifts by more than a handful is re-measured.</strong> The rule is never adjusted to make a number match.</li>
+</ol>
+<h2 id="1-before-launch-six-facts-to-verify-not-assume">1. Before Launch: Six Facts to Verify, Not Assume</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>fact</th>
+<th>how it is checked</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the pass runs</td>
+<td><code>python3 _reserve/py/rewrite-physics.py /tmp/pre</code></td>
+<td><code>files to write 403</code>, <code>sites 6859</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>it is idempotent</td>
+<td>run it twice on the same copy</td>
+<td>second run <code>0</code> / <code>0</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>it parses</td>
+<td><code>_reserve/rewrite-gate.html</code></td>
+<td><code>5877 / 0 / 0 / 0</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>it loses nothing</td>
+<td><code>python3 _reserve/py/audit-commands.py /tmp/pre</code></td>
+<td><code>lost commands: 0</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>the scope is right</td>
+<td><code>grep -rl '\\hbar' articles_physics/*.md \| wc -l</code></td>
+<td><code>403</code> files</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the out-of-scope files are identified</td>
+<td><code>grep -rl '\\hbar' articles_physics/</code> after the pass</td>
+<td>$10$ files, none of them <code>.md</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>no constant is set to one</td>
+<td><code>grep -rn 'h\\s*=\\s*2\\pi' articles_physics/*.md</code> and <code>grep -rn 'frac{h}{2\\pi}\\s*=\\s*1' articles_physics/*.md</code></td>
+<td><code>0</code> and <code>0</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Everything in this file that is a number was measured on the working tree of 2026-11-23</strong> — $6\,859$ sites, $5\,877$ spans, $678$ <code>.md</code> files of which $403$ carry the glyph. <code>HEAD</code> differs by one site. If a count differs by more than a handful, an article moved; re-measure before writing, and do not adjust a rule to make a number match.</p>
+<p><strong>The files the pass may write:</strong> <code>articles_physics/*.md</code> (the articles, including the five conventions files) and <code>_reserve/migration-h-report.md</code> (the report). Nothing else, and no git.</p>
+<h2 id="2-the-brief">2. The Brief</h2>
+<p><strong>The pass in one sentence.</strong> Replace the reduced Planck constant $\hbar$ by the Planck constant $h$ throughout the physics corpus, writing $2\pi$ explicitly wherever a radian is meant, and repairing in the same pass the derived lengths and wave numbers that the corpus currently defines against $\hbar$.</p>
+<p><strong>Why.</strong> One constant, one letter. The corpus carries two constants of action, $h$ and $\hbar$, defined against each other, and every display that mixes them is a place where a factor $2\pi$ can hide. The internal note <em>The Yukawa Coupling in Wave Numbers</em> already computes in both, side by side, and finds the corpus's derived length $\lambda_m$ wrong by exactly $2\pi$: the corpus writes $\lambda_m=1/k_m=\hbar/(mc)$, calls it a wavelength, and it is $386.159\ \mathrm{fm}$ for the electron against $2.426\ \mathrm{pm}$ for the actual wavelength. A single constant makes that error unwritable.</p>
+<p><strong>Who reads this.</strong> A sub-agent working in <code>/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit</code>. It has not read the corpus and has not read the conversation. Everything it needs is here, and the places where it must not improvise are marked.</p>
+<p><strong>Scope.</strong> <code>articles_physics/*.md</code> only, and only after Decision D2. <code>articles_maths/</code> is out of scope, and it has already been cleaned: its $283$ sites were the formal deformation parameter of a star product and not the Planck constant, they are now written $h_{\mathrm{def}}$, and the three Planck sites that remain are named in §<em>The Maths Corpus, Closed</em>.</p>
+<p><strong>What the pass is not.</strong> It is not a change of units, not a change of algebra, and not a change of the corpus's dimension rules. It does not set $\hbar=1$ anywhere, it does not set $h$ to $2\pi$, and it does not set $c=1$; the standing rule of <code>physics-units-and-common-elements-conventions.md</code> §<em>The shortcut $c=1$ together with $h$ at $2\pi$ is not allowed</em> survives the pass intact and is the reason the pass has to be done display by display rather than by deletion.</p>
+<h2 id="3-decision-d1-what-is-being-asked-for">3. Decision D1: What Is Being Asked For</h2>
+<p>There are three things one can mean, and they cost very differently. The measurements below are the whole of the argument.</p>
+<p><strong>Option A, literal elimination.</strong> The token <code>\hbar</code> does not occur anywhere. Every site becomes $\dfrac{h}{2\pi}$ or a rearrangement of it. This is a <em>relocation of the factor $2\pi$</em>, not a deletion of anything: the pass moves a $2\pi$ from a definition into 2,900 displays.</p>
+<p><strong>Option B, elimination by variable change.</strong> The token disappears because the variables change: phases are measured in turns, $\Theta:=S/h$; frequencies are ordinary frequencies $\nu$ with $E=h\nu$; wave numbers are cycle-based, $\tilde\nu:=\nu/c$, with $p=h\tilde\nu$; measures are in $h$, $(2\pi\hbar)^3\to h^3$. The four clusters where a radian is irreducible — the commutator, the kinetic term, the spin, the gauge coupling — keep a $2\pi$ or keep $\hbar$.</p>
+<p><strong>Option C, the rule only.</strong> $\hbar$ stays, and the corpus gains one stated rule: $\hbar$ where an angle is measured in radians, $h$ where a count is taken. Nothing is substituted; $2,500$ sites are checked and left alone.</p>
+<p><strong>The measured verdict.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cluster</th>
+<th style="text-align: right;">sites</th>
+<th>Option A</th>
+<th>Option B</th>
+<th>Option C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phase, action, $S/\hbar$, $\hbar\theta$, $p\cdot x/\hbar$</td>
+<td style="text-align: right;">$1\,067$</td>
+<td>$\dfrac{2\pi S}{h}$: neutral</td>
+<td>$\Theta=S/h$: <strong>better</strong></td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>angular frequency, $\hbar\omega$</td>
+<td style="text-align: right;">$246$</td>
+<td>$h\nu$: <strong>better</strong></td>
+<td>$h\nu$: <strong>better</strong></td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>phase-space measure, $(2\pi\hbar)^n$</td>
+<td style="text-align: right;">$166$</td>
+<td>$h^n$: <strong>better</strong></td>
+<td>$h^n$: <strong>better</strong></td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>momentum operator, $\hbar\vec k$, $\hbar\nabla$</td>
+<td style="text-align: right;">$70$</td>
+<td>$\dfrac{h}{2\pi}\vec k$: worse</td>
+<td>$h\tilde\nu$: <strong>better</strong></td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>action density, $-\hbar\varrho^2\dot\theta$</td>
+<td style="text-align: right;">$300$</td>
+<td>$-\dfrac{h}{2\pi}\varrho^2\dot\theta$: worse</td>
+<td>$-h\,\varrho^2\dot\Theta$: better</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>spin, $\hbar/2$, $[\tilde S_i,\tilde S_j]$</td>
+<td style="text-align: right;">$\sim 800$</td>
+<td>$h/(4\pi)$: worse</td>
+<td>$h/(4\pi)$: worse</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>generator, $i\hbar\partial_t$, $-\hbar^2/2m$</td>
+<td style="text-align: right;">$\sim 1\,400$</td>
+<td>$\dfrac{ih}{2\pi}$, $\dfrac{h^2}{8\pi^2m}$: worse</td>
+<td>same: worse</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>gauge coupling, $\varkappa/\hbar$</td>
+<td style="text-align: right;">$520$</td>
+<td>$\dfrac{2\pi\varkappa}{h}$: worse</td>
+<td>same: worse</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>dimensions, tables, prose</td>
+<td style="text-align: right;">$\sim 1\,100$</td>
+<td>rewritten by hand</td>
+<td>rewritten by hand</td>
+<td>rewritten by hand</td>
+</tr>
+</tbody>
+</table></div>
+<p>The arithmetic. Option A rewrites $2\,100$ sites for the better or neutral and $2\,900$ for the worse. Option B rewrites $2\,600$ for the better and $2\,900$ for the worse, and the worse half is smaller in prose because the turn-valued phase is defined once. Option C rewrites nothing and removes nothing.</p>
+<p><strong>The decision, taken.</strong> <strong>Option A</strong>: the literal elimination, with the $2\pi$ written wherever a radian is meant. The author's reason is that the $2\pi$ is the object of interest and should be visible; the cost table above is kept so that the choice is recorded with its price and not against it. §<em>Decision D1</em> now reads as a decision and not as a menu.</p>
+<p><strong>The recommendation that was not taken, kept for the record.</strong> Take <strong>Option B for the first migration, and Option C as its stated rule</strong>: the physics corpus moves to turns and to $h$ wherever a count is taken, and $\hbar$ survives only in the four clusters where it is the generator of a radian translation — with a named exception list, in the manner of the canonical-momentum exception of <code>migration-potent.md</code>. Option A is available and is a mechanical pass; it is not recommended, because its cost falls exactly on the Schrödinger, spin and gauge displays that the corpus uses most.</p>
+<p><strong>Why $\hbar$ cannot vanish in the strict sense.</strong> The canonical commutator is $[\xi,\pi]=i\hbar\,\delta$. The letter is not a unit that someone chose; it is <em>action per radian</em>, and it appears because the translation generator is $e^{i\pi x/\hbar}$, whose exponent is an angle. Write $h$ and the $2\pi$ appears: $[x,p]=ih/2\pi$. There is no third spelling, because the alternative is to rescale $p$ until the commutator is $i$, which is $\hbar=1$ and is forbidden by the corpus's own rule. The same argument holds for the spin, $\hbar/2=h/4\pi$, and for the kinetic term, $\hbar^2/2m=h^2/(8\pi^2m)$. <strong>The pass can remove a glyph; it cannot remove a radian.</strong></p>
+<h2 id="4-the-maths-corpus-closed">4. The Maths Corpus, Closed</h2>
+<p>Done 2026-11-23, before the physics pass. The $283$ sites of <code>articles_maths/</code> were <strong>not</strong> the Planck constant except three: $245$ in <code>semiclassical-analysis.md</code>, $22+8+2$ in the star-product articles, $3$ in the two list files. All of them are the formal deformation parameter, and they are now written $h_{\mathrm{def}}$, with the naming sentence at the first occurrence in <code>semiclassical-analysis.md</code> and in <code>symplectic-forms-and-poisson-brackets.md</code>, and the rule stated in <code>index-and-notation-conventions.md</code> §<em>Conventions of the Corpus Itself</em>.</p>
+<p>Three sites keep $\hbar$ and are genuinely Planck: <code>index-and-notation-conventions.md:268</code>, $\theta_{\mathrm{phs}}=S/\hbar$; <code>index-and-notation-conventions.md:414</code>, the new rule paragraph itself; and <code>semigroups-and-evolution-equations.md:226</code>, the Trotter factor $\exp(-iH_0\varepsilon/\hbar)\exp(-iV\varepsilon/\hbar)$. The maths corpus therefore carries $\hbar$ only as the Planck constant, which is the invariant the whole pass must preserve.</p>
+<p><strong>A check for the physics pass.</strong> It may assume $\hbar$ in <code>articles_maths/</code> means Planck, and it must not touch those three sites.</p>
+<h2 id="5-the-inventory">5. The Inventory</h2>
+<p>Measured 2026-11-23 with <code>grep -o '\\hbar'</code> over the two corpora, <strong>on <code>HEAD</code></strong>. The working tree carries one more site (§<em>Reconcile before acting</em>, below). Reproduce before starting; the numbers move as articles are edited.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th style="text-align: right;">files</th>
+<th style="text-align: right;">sites</th>
+<th style="text-align: right;">of which prose <code>$\hbar$</code></th>
+<th style="text-align: right;">of which table cells</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics/</code> (<code>HEAD</code>)</td>
+<td style="text-align: right;">$405$</td>
+<td style="text-align: right;">$6\,868$</td>
+<td style="text-align: right;">$426$</td>
+<td style="text-align: right;">$1\,079$</td>
+</tr>
+<tr>
+<td><code>articles_maths/</code></td>
+<td style="text-align: right;">$8$</td>
+<td style="text-align: right;">$283$</td>
+<td style="text-align: right;">$0$</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td><code>articles_internal/</code></td>
+<td style="text-align: right;">$16$</td>
+<td style="text-align: right;">$279$</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>in scope</strong></td>
+<td style="text-align: right;"><strong>$403$</strong></td>
+<td style="text-align: right;"><strong>$6\,859$</strong></td>
+<td style="text-align: right;"><strong>$426$</strong></td>
+<td style="text-align: right;"><strong>$1\,079$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reconcile before acting.</strong> These four rows are measured on <code>HEAD</code>. The working tree of 2026-11-23 carries $6\,859$ sites in $678$ <code>.md</code> files, and $81$ further sites in $10$ extensionless files that sit beside the articles (<code>bhabha-scattering-in-biquaternionic-form</code>, <code>the-proton-in-biquaternionic-form</code>, and nine like them). Those eleven are stale duplicates — <code>build.py</code> globs <code>*.md</code> and never reads them, and a <code>.md</code> twin exists for each — so they are <strong>out of scope</strong>. This is why every check below is written against <code>articles_physics/*.md</code> and not against the directory: an unscoped grep ends at $81$, not at $0$.</p>
+<p>$148$ files carry a bare <code>$\hbar$</code> in prose, which is a sentence to rewrite and not a formula to substitute. $84$ files carry $30$ sites or more and are hand work; $201$ carry $10$ or more; the remaining $\sim 200$ carry a handful and are mechanical.</p>
+<p><strong>The ten heaviest articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">sites</th>
+<th>why it is heavy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_maths/semiclassical-analysis.md</code></td>
+<td style="text-align: right;">$245$</td>
+<td>out of scope, formal parameter</td>
+</tr>
+<tr>
+<td><code>articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.md</code></td>
+<td style="text-align: right;">$138$</td>
+<td>the correspondence $\{f,g\}\leftrightarrow[f,g]/i\hbar$, $\hbar\to0$</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-three-wavenumbers-of-a-particle.md</code></td>
+<td style="text-align: right;">$119$</td>
+<td>the article <em>is</em> $\tilde K_\Phi=\tilde P_\Phi/\hbar$</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-dirac-oscillator-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$74$</td>
+<td>ladder, spin, measure</td>
+</tr>
+<tr>
+<td><code>articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.md</code></td>
+<td style="text-align: right;">$70$</td>
+<td>$\hbar^2/2m$, spin</td>
+</tr>
+<tr>
+<td><code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$65$</td>
+<td>$\hbar/2$, commutators</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-path-integral-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$59$</td>
+<td>$S/\hbar$ in the exponent</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-lagrangian-and-the-schrodinger-equation-in-polar-variables.md</code></td>
+<td style="text-align: right;">$51$</td>
+<td>action density</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$49$</td>
+<td>dispersion, measure</td>
+</tr>
+<tr>
+<td><code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code></td>
+<td style="text-align: right;">$49$</td>
+<td>measure, phases</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-where-the-sub-agent-must-not-improvise">6. Where the Sub-agent Must Not Improvise</h2>
+<p>Seven decisions are fixed. A sub-agent that departs from one of them has not made a judgement call; it has broken the pass.</p>
+<ol>
+<li><strong>No private symbol for $h/2\pi$.</strong> Not <code>\hslash</code>, not <code>\varpi</code>, not <code>\hbar'</code>, not a macro, not <code>h_{\mathrm{red}}</code>. A new symbol for the old constant is the old constant under a new name and defeats the whole purpose. The corpus writes $\dfrac{h}{2\pi}$ or an equivalent rearrangement.</li>
+<li><strong>No unit declaration, in any spelling.</strong> Not $h$ at $2\pi$, not $c$ at $1$, not $h$ at $1$, and not any other constant at $1$: the ban is on the class, not on three shapes. The corpus forbids it in <code>physics-units-and-common-elements-conventions.md</code> §<em>The shortcut</em>, and the rule survives the pass. Every site that sets a constant to one is <em>not</em> an exception: each is repaired by hand before the pass runs, as a multiple of a scale the corpus allows ($mc$, $mc^2$, $1/k_m$, $\hbar\omega$, $k_BT$, $\hbar/(2m\omega)$), because $\hbar=1$ and $h=2\pi$ are one equation and a substitution would keep the defect while hiding it. The engine's guard is a backstop that recognises three spellings only; it is <strong>not</strong> the enforcement. The enforcement is that the corpus carries <strong>zero</strong> declarations when the pass starts, and that is measured by its own grep (§<em>The Checks</em>, check 1b). Both counts go in the report.</li>
+<li><strong>One regex, and it is the shipped one.</strong> <code>_reserve/py/canon_hbar.py</code>, eleven ordered branches, run by the driver of §<em>The Script</em>. Nothing else writes to a display: no ad-hoc <code>sed</code>, no chain of replacements, no rule invented at the keyboard. The measurements of §<em>The Blind Replace, Tested</em> show what a hand-rolled chain does — six rules cut the uncomfortable sites from $2\,966$ to $263$ and raised brace errors from $8$ to $130$, one of them <code>\big\frac{2\pi\,)}{h}</code>. If the canonicaliser refuses a span, the blind form stays and the span is listed; it is not patched by hand.</li>
+<li><strong>Nothing outside <code>articles_physics/*.md</code>.</strong> <code>articles_maths/</code> is closed (§<em>The Maths Corpus, Closed</em>); <code>articles_internal/</code> is out of scope; the extensionless duplicates beside the articles are out of scope; <code>index.md</code> and <code>physics.md</code> are build products and are not edited; <code>_reserve/</code> is read-only input, except for the report the pass must write there.</li>
+<li><strong>The $\lambda_m$ row is repaired, not deleted.</strong> The corpus's $\lambda_m$ is wrong by $2\pi$ (§<em>The $\lambda_m$ Defect</em>). Deleting the row hides the defect; the pass writes the correct one.</li>
+<li><strong>The $2\pi$ is never dropped.</strong> Every site that carried $\hbar$ must, after the pass, carry an $h$ and the radian that goes with it. A site that loses both is a site that set $2\pi=1$.</li>
+<li><strong>An unclassified site is left and recorded.</strong> It goes into the report under <em>Questions Left Open</em>. A rule invented once is a rule the corpus does not have.</li>
+<li><strong>No git.</strong> Not <code>status</code>, not <code>diff</code>, not <code>add</code>, not <code>commit</code>, not <code>checkout</code>, not <code>restore</code>, not <code>stash</code>. The working tree is already dirty — $188$ files modified before the pass starts — and version control is the author's step, not the pass's. Backups are copies, not git (§<em>Rollback</em>).</li>
+<li><strong>No build.</strong> <code>build.py</code> is not run. It rewrites <code>index.md</code>, and it would put the pass's output into <code>_site</code> before anyone has read a page.</li>
+<li><strong>No new content.</strong> The pass rewrites the glyph and the sentences that name it. It adds no section, no claim, no number, and deletes no article.</li>
+</ol>
+<h2 id="7-the-theorem-the-pass-runs-against">7. The Theorem the Pass Runs Against</h2>
+<p><strong>The factor $2\pi$ is conserved.</strong> It can be moved, never deleted. Two identities show it.</p>
+<p>$$
+\hbar=\frac{h}{2\pi},
+\qquad
+\exp\!\left(\frac{iS}{\hbar}\right)=\exp\!\left(\frac{2\pi i S}{h}\right).
+$$</p>
+<p>A phase exponent written against $\hbar$ is clean and has no $2\pi$ on the page; the same exponent written against $h$ carries one. Conversely a wave number written against $h$ is clean, $p=h\nu$ and $E=h\nu$, and the same wave number written against $\hbar$ carries a $2\pi$ in its definition, $p=\hbar k$ with $k=2\pi\nu$.</p>
+<p><strong>So the corpus must choose where the $2\pi$ lives.</strong> Two places are possible and only two.</p>
+<ul>
+<li><strong>The definition carries it</strong> — the present state. $k:=\vec p/\hbar$ in $\mathrm{rad\,m^{-1}}$, $\lambda:=\hbar/p$, and every exponent is $\exp(i\theta)$ with no $2\pi$. The constant on the page is $\hbar$.</li>
+<li><strong>The display carries it</strong> — Option B. $k:=\vec p/h$ in $\mathrm{m^{-1}}$, $\lambda=h/p$, and every exponent is $\exp(2\pi i\theta)$. The constant on the page is $h$.</li>
+</ul>
+<p><strong>The measured cost of the second choice.</strong> The physics corpus has $951$ displays of the form $\exp(i\times\cdots)$ plus $747$ of the form $e^{i\cdots}$, and $391$ instances of the momentum operator $i\tilde K_\Phi$; each gains a $2\pi$ under Option B, and each of the $1\,400$ generator sites gains one under either option. There is no branch in which the $2\pi$ disappears.</p>
+<p><strong>What this rules out.</strong> A pass that claims to remove $\hbar$ <em>and</em> to leave the displays unchanged. Such a pass either writes $\hbar$ under another name — which is what a private symbol for $h/2\pi$ would be, and is forbidden by §<em>Where the Sub-agent Must Not Improvise</em>, item 1 — or it silently sets $2\pi=1$, which is a worse defect than either constant.</p>
+<h2 id="8-the-blind-replace-tested">8. The Blind Replace, Tested</h2>
+<p><strong>The method.</strong> One string replacement over a pristine copy of <code>articles_physics/</code>, in a scratch directory and not in the tree:</p>
+<pre><code class="language-python">s.replace(r'\hbar', r'\frac{h}{2\pi}')
+</code></pre>
+<p>$6\,859$ sites in $678$ files on the live tree; every number below is the live one unless it says <code>HEAD</code>. Four tests, and the third is the one that settles it.</p>
+<p><strong>Two layers, and only the first can be wrong.</strong> Layer 1 is the blind replace below; it is an identity on every site, so no value can change.
+Layer 2 is a cosmetic filter that folds a fraction inside a fraction, an exponent, a phasor and a phase-space measure into one storey; if it refuses a span, the blind form stays, and the page is heavier, not wrong.</p>
+<p><strong>Test 1, is a site ever wrong?</strong> No, and this is a proof rather than a measurement. $\hbar$ and $\dfrac{h}{2\pi}$ denote the same number, so the substitution is an identity on every display. Unlike a contextual pass, there is no site at which the physics can change.</p>
+<p><strong>Test 2, is it ever outside math mode?</strong> Never. Every one of the $6\,859$ sites lies between <code>$…$</code> or <code>$$…$$</code>; the count outside is $0$. There is therefore no site where a <code>\frac</code> lands in text mode and breaks the build.</p>
+<p><strong>Test 3, does the corpus's own renderer accept it?</strong> This is the decisive test, and it was run, not argued. All $5\,877$ math spans containing <code>\hbar</code> were passed to KaTeX $0.16.9$ — the library <code>article_template.html</code> loads — twice, before and after:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">spans</th>
+<th style="text-align: right;">unparseable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>before</td>
+<td style="text-align: right;">$5\,877$</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>after (blind replace)</td>
+<td style="text-align: right;">$5\,877$</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>after (canonicaliser, the shipped pass)</td>
+<td style="text-align: right;">$5\,877$</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>regressions (parses before, fails after)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Zero, three times.</strong> The pass breaks no display, no display was already broken, and the folded form parses wherever the blind form did. The test page is <code>_reserve/rewrite-gate.html</code>, rebuilt from the live tree on 2026-11-23, and it re-runs in a browser from the shipped file with no input.</p>
+<p><strong>Test 4, what does it cost to look at?</strong> This is the only real cost, and it is typographic. The $6\,859$ sites fall into ten classes, and the counts are the canonicaliser's own tally, so they are reproducible with one command. The table gives, per class, the blind form and the folded form the cosmetic layer produces instead:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th style="text-align: right;">sites</th>
+<th>blind form</th>
+<th>folded form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain factor</td>
+<td style="text-align: right;">$2\,030$</td>
+<td><code>\frac{h}{2\pi}c</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td>numerator of a fraction</td>
+<td style="text-align: right;">$2\,741$</td>
+<td><code>\frac{\frac{h}{2\pi}}{2m}</code></td>
+<td><code>\frac{h}{4\pi m}</code></td>
+</tr>
+<tr>
+<td><code>X/\hbar</code>, including <code>X/(\hbar D)</code></td>
+<td style="text-align: right;">$991$</td>
+<td><code>mc/\frac{h}{2\pi}</code></td>
+<td><code>\frac{2\pi mc}{h}</code></td>
+</tr>
+<tr>
+<td>exponent</td>
+<td style="text-align: right;">$456$</td>
+<td><code>\frac{h}{2\pi}^{2}</code></td>
+<td><code>\frac{h^{2}}{4\pi^{2}}</code></td>
+</tr>
+<tr>
+<td><code>\hbar\omega</code></td>
+<td style="text-align: right;">$246$</td>
+<td><code>\frac{h}{2\pi}\omega</code></td>
+<td><code>h\nu</code></td>
+</tr>
+<tr>
+<td><code>(2\pi\hbar)^{n}</code></td>
+<td style="text-align: right;">$168$</td>
+<td><code>(2\pi\frac{h}{2\pi})^{3}</code></td>
+<td><code>h^{3}</code></td>
+</tr>
+<tr>
+<td><code>\hbar/X</code></td>
+<td style="text-align: right;">$119$</td>
+<td><code>\frac{h}{2\pi}/(mc)</code></td>
+<td><code>\frac{h}{2\pi mc}</code></td>
+</tr>
+<tr>
+<td><code>2\pi\hbar</code> without exponent</td>
+<td style="text-align: right;">$74$</td>
+<td><code>2\pi\frac{h}{2\pi}n</code></td>
+<td><code>hn</code></td>
+</tr>
+<tr>
+<td>limit</td>
+<td style="text-align: right;">$26$</td>
+<td><code>\frac{h}{2\pi}\to0</code></td>
+<td><code>h\to0</code></td>
+</tr>
+<tr>
+<td>definition</td>
+<td style="text-align: right;">$8$</td>
+<td><code>\frac{h}{2\pi}=6.582\times10^{-22}</code></td>
+<td><code>h=4.135\times10^{-21}</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>There is no <code>shortcut</code> row, and its absence is the point.</strong> The $16$ sites that set $\hbar=1$ in numerical work are not a class of the substitution; they are defects of the articles, and the pass refuses them rather than repairing them (§<em>The Forbidden Shortcut</em>). A rule that turned <code>\hbar=1</code> into <code>h=2\pi</code> would restate the same deletion in a new letter: $\hbar=1$ and $h=2\pi$ are one equation, so the defect would survive the repair with its evidence removed.</p>
+<p><strong>Only two of these are taste.</strong> Folding $\hbar/(2m)\to h/(4\pi m)$ and $\hbar\omega\to h\nu$ are conventions the corpus already writes. The rest is arithmetic that removes a $2\pi$ which does not visibly cancel.</p>
+<p><strong>The folding is a filter, and it is tested like one.</strong> A canonicaliser was written — eleven branches in a fixed order: measure, bare $2\pi\hbar$, frequency, <code>\hbar</code> in a numerator, <code>\hbar</code> in a denominator, power, <code>\hbar/X</code>, <code>X/\hbar</code>, <code>X/(\hbar D)</code>, definition, limit, then the plain fallback — and run over the live tree:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\hbar</code> sites remaining</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>nested fractions remaining</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td><code>\frac{h}{2\pi}</code> carrying an exponent</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td><code>(2\pi\frac{h}{2\pi}</code> remaining</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>rewritten spans through KaTeX $0.16.9$</td>
+<td style="text-align: right;">$5\,877$</td>
+</tr>
+<tr>
+<td>unparseable after folding</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>LaTeX commands lost per span (excluding <code>\hbar</code>, <code>\omega</code>, <code>\pi</code>)</td>
+<td style="text-align: right;">$0$</td>
+</tr>
+<tr>
+<td>display and inline spans, before and after</td>
+<td style="text-align: right;">$14\,509+162\,795=177\,304$, unchanged</td>
+</tr>
+<tr>
+<td>second run of the pass</td>
+<td style="text-align: right;">$0$ files changed, $0$ sites (idempotent)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The command audit is the one that matters: a set comparison of every <code>\command</code> in a span, before against after. It caught the five shapes that the earlier drafts of the canonicaliser corrupted. Each was a boundary decision — where a denominator stops, whether <code>\big</code> belongs to the product, whether <code>\tfrac</code> is a fraction, whether a coefficient stays attached — and each is now a rule rather than a hope.</p>
+<p><strong>What the pilot caught, and what it did not.</strong> The gate found nothing: every span parsed before and after, and the command audit found nothing, because no command was lost. The defects were found by reading the first twenty lines of output. Two were real. A numerator ending in an exponent was split, <code>mc^{2}/\hbar</code> becoming <code>mc^\frac{2\pi {2}}{h}</code>, on $8$ sites: the atom reader had to learn that <code>^{…}</code> belongs to its base. And <code>\frac{X}{\hbar}</code>, the gauge-coupling shape, was left nested, $1\,322$ sites — the denominator was not being folded at all. Both are fixed, both have a regression case, and neither was visible to either automatic check. <strong>A gate proves that nothing broke; it cannot prove that anything is right.</strong></p>
+<p><strong>The blind replace is still the safety net.</strong> It is the fallback for any span the canonicaliser refuses, and it is the proof that no site can be <em>wrong</em>: the folding is an identity, so a failure to fold costs a storey and never a value. The two together give the pass its shape — a step that cannot be wrong, then a step that can only be ugly.</p>
+<p><strong>The verdict.</strong> Correct by construction, safe by test, cheap, auditable. The residue after folding is $2\,030$ sites in plain form: $517$ in a display, where a bare $\frac{h}{2\pi}$ is the intended look, and $1\,513$ in running text, of which $397$ are a span that contains nothing but <code>$\hbar$</code> — those are the sentences the hand pass rewrites.</p>
+<p><strong>The evidence is a page, not a claim.</strong> <code>_reserve/rewrite-gallery.html</code> renders thirty fragments taken verbatim from <code>HEAD</code> beside their folded form; <code>_reserve/rewrite-gate.html</code> parses all $5\,877$ rewritten spans and prints the failure count. Both load from the shipped file and re-run in a browser.</p>
+<h2 id="9-the-rules-cluster-by-cluster">9. The Rules, Cluster by Cluster</h2>
+<p>The rules below are written for <strong>Option A</strong>, which is the decision. Each cluster gives the algebraic form the reader is to reach; the Option B alternative is kept beside it, struck through in intent, only so that the record shows what was considered and why the $2\pi$ was preferred on the page.</p>
+<h3 id="common-1-the-phase-space-measure-math287-sites-and-math288-without-exponent">Common 1 — the phase-space measure, $168$ sites, and $74$ without exponent</h3>
+<p><strong>Rule 1, applied without a reader.</strong> The blind replace would write $(2\pi\frac{h}{2\pi})^{3}$ here: true and absurd. Rule 1 cancels it to $h^{3}$ before the site reaches the page. The identity below is why the rule is safe, not a target somebody is aiming at.</p>
+<p>$$
+\frac{d^3p}{(2\pi\hbar)^3}\;\longrightarrow\;\frac{d^3p}{h^3},
+\qquad
+\big[a_{\vec p},a^{\dagger}_{\vec p^{\,\prime}}\big]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})
+\;\longrightarrow\;h^3\,\delta^{(3)}(\vec p-\vec p^{\,\prime}),
+$$</p>
+<p>and the same in four dimensions, $d^4p/h^4$. This is a strict improvement and it is not a matter of taste: $(2\pi\hbar)^3=h^3$ is an identity, and $h^3$ is the volume of one phase-space cell, which is what the display means. The mode amplitude that travels with it, $\sqrt{\hbar c/(2E_{\vec p})}$, does <strong>not</strong> simplify: it becomes $\sqrt{hc/(4\pi E_{\vec p})}$ and is left for the branch rules.</p>
+<p><strong>Add one sentence at the first display of each article that carries one:</strong> <code>The cell is $h^3$: one cell per mode, and the $2\pi$ of the angular measure is absorbed into it.</code> It is the sentence the reader needs, and it is the reason this rule survives both branches.</p>
+<h3 id="common-2-the-angular-frequency-math299-sites">Common 2 — the angular frequency, $246$ sites</h3>
+<p><strong>Rule 3.</strong> $\frac{h}{2\pi}\omega$ is correct; $h\nu_k$ is the shorter naming of the same energy. The rule applies it only where $\omega$ is an angular frequency; where $\omega$ is a material frequency in inverse length the site falls through to the plain form and is read by hand.</p>
+<p>$$
+\hbar\omega_k\;\longrightarrow\;h\nu_k,
+\qquad
+\omega_k=2\pi\nu_k .
+$$</p>
+<p>The corpus already distinguishes the angular frequency $\omega_k$ from the ordinary one and already rules that "a display that writes the energy itself as $\omega_k$ has set $\hbar=1$ at that place". The migration makes that sentence true by construction: $E=h\nu$ has no constant to drop. <strong>The letter $\nu$ is plain and not tilded</strong>, because the tilde marks the potent family; the potent pass frees the letter precisely for this. A site that writes $\hbar\omega$ in an article whose $\omega$ is a <em>material</em> frequency in inverse length is not in this cluster: there $\hbar\omega$ has the dimension of an energy per length and the surrounding display is checked first.</p>
+<h3 id="common-3-the-tables-and-the-prose-math313-sites">Common 3 — the tables and the prose, $\sim 1\,400$ sites</h3>
+<p><strong>Done by hand, and only here.</strong> No substitution can read a table row or a sentence.</p>
+<p><code>physics-units-and-common-elements-conventions.md</code>, row <em>Planck constants</em>: the row keeps $h$ and loses $\hbar$, and its note <code>$\hbar=h/2\pi$</code> becomes <code>$\hbar$ is not used in the corpus; where a radian is meant the $2\pi$ is written</code>. The row <em>Inverse temperature</em>, $\beta=\hbar/(k_BT)$, becomes $\beta=\dfrac{h}{2\pi k_BT}$ under Option A and under Option B as well, because $\beta$ is a thermal length and no variable change removes the radian from it; it is the one row where the pass pays and gains nothing, and it is left as it is under Option C.</p>
+<p>The $426$ prose mentions fall in three kinds and each has one handling.</p>
+<ul>
+<li><strong>A sentence that names the constant as a constant</strong> — <em>"A commutator, a measure and a mode amplitude each carry $\hbar$"</em> — is rewritten to name $h$ and, where the sentence is about a commutator, to say <code>$h/2\pi$</code> once and then never again.</li>
+<li><strong>A sentence that states the rule</strong> — <em>"the phase is $\frac{S}{\hbar}$"</em> — takes the branch's spelling of the phase.</li>
+<li><strong>A sentence that forbids a shortcut</strong> — <em>"An article may not set $\hbar$ or $c$ to one"</em> — becomes <em>"may not set $h$ to $2\pi$ or $c$ to one"</em>. The example is not recomputed with $h=1$: $h$ at $1$ is a different setting and was never the corpus's shortcut. The paragraph's argument survives word for word, and the one number that changes, from $\hbar$ at $1$ to $h$ at $2\pi$, is the same equation said in the new letter.</li>
+</ul>
+<h3 id="cluster-1-the-phase-and-the-action-math339-sites">Cluster 1 — the phase and the action, $1\,067+300$ sites</h3>
+<p><strong>The operative form is Option A.</strong> The Option B paragraph that follows is kept as a record of the alternative, not as an instruction.</p>
+<p>Under <strong>Option A</strong> each site is rewritten literally:</p>
+<p>$$
+\frac{S}{\hbar}\to\frac{2\pi S}{h},
+\qquad
+\hbar\,\theta_{\mathrm{pha}}\to\frac{h}{2\pi}\,\theta_{\mathrm{pha}},
+\qquad
+-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}\to-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}} .
+$$</p>
+<p>Every exponent gains a $2\pi$ and every angle coefficient gains a $2\pi$ in the denominator. Nothing is gained; the letter changes.</p>
+<p>Under <strong>Option B</strong> the phase is defined once per article in turns and the displays get shorter:</p>
+<p>$$
+\Theta_{\mathrm{pha}}:=\frac{S}{h},
+\qquad
+S=h\,\Theta_{\mathrm{pha}},
+\qquad
+\exp\!\left(i\frac{S}{\hbar}\right)=\exp\!\left(2\pi i\,\Theta_{\mathrm{pha}}\right),
+\qquad
+L=-h\,\varrho^{2}\dot\Theta_{\mathrm{pha}} .
+$$</p>
+<p><strong>The rule under B is one definition per article and one $2\pi$ per exponent.</strong> An article that writes $\Theta$ and then a bare $\exp(i\Theta)$ has lost the radian and is wrong. The check is mechanical: every <code>\exp</code> in a migrated article contains <code>2\pi</code> and every <code>\Theta</code> is defined before its first use.</p>
+<h3 id="cluster-2-the-wave-number-and-the-momentum-operator-math347-sites">Cluster 2 — the wave number and the momentum operator, $300+70$ sites</h3>
+<p><strong>The operative form is Option A:</strong> $k_m=2\pi mc/h$, $\tilde K_\Phi=\tilde P_\Phi\cdot 2\pi/h$, and the $2\pi$ sits in the definition once per article. The Option B paragraph is the record.</p>
+<p>Under <strong>Option A</strong> nothing changes except the letter: $k_m=mc/\hbar\to 2\pi mc/h$, and the operator stays $i\tilde K_\Phi$ with $\tilde K_\Phi=\tilde P_\Phi\cdot 2\pi/h$. The $2\pi$ sits in the definition of $\tilde K_\Phi$, once per article, which is the cheapest form of Option A and the one to prefer.</p>
+<p>Under <strong>Option B</strong> the wave number becomes cycle-based, which is a change of unit and must be stated:</p>
+<p>$$
+k_m:=\frac{mc}{h},
+\qquad
+\vec p=h\,\vec k,
+\qquad
+\lambda_m:=\frac{1}{k_m}=\frac{h}{mc},
+\qquad
+[k_m]=\mathrm{m^{-1}}\ \text{and not}\ \mathrm{rad\,m^{-1}}.
+$$</p>
+<p><strong>This repairs the corpus's $\lambda_m$ defect as a side effect</strong>, which was the strongest argument for Option B. The argument was weighed and not taken; under Option A the repair is made by hand instead (§<em>The $\lambda_m$ Defect</em>). The cost is that the momentum operator multiplies by $2\pi i\tilde K_\Phi$ instead of $i\tilde K_\Phi$, $391$ sites, and every plane-wave exponent gains a $2\pi$, $1\,698$ sites.</p>
+<h3 id="cluster-3-the-generator-the-spin-and-the-gauge-math364-sites">Cluster 3 — the generator, the spin and the gauge, $\sim 2\,700$ sites</h3>
+<p>These are the sites where the radian is irreducible: no choice of spelling removes it, and under the decision the $2\pi$ simply stands on the page.</p>
+<p>$$
+i\hbar\,\partial_{t'}\to\frac{ih}{2\pi}\,\partial_{t'},
+\qquad
+-\frac{\hbar^{2}}{2m}\to-\frac{h^{2}}{8\pi^{2}m},
+\qquad
+\frac{\hbar}{2}\to\frac{h}{4\pi},
+\qquad
+\frac{i\varkappa}{\hbar}\to\frac{2\pi i\varkappa}{h}.
+$$</p>
+<p><strong>There is no exception under the decision.</strong> All four forms take the rewrite, and the corpus carries $h/(4\pi)$ where it carried $\hbar/2$, $h^{2}/(8\pi^{2}m)$ where it carried $\hbar^{2}/2m$, $ih/2\pi$ where it carried $i\hbar$, and $2\pi\varkappa/h$ where it carried $\varkappa/\hbar$. These are the four places where Option A's cost is real: the radian is irreducible here, so the $2\pi$ has nowhere to cancel and must be looked at on every page. That is the accepted price of the decision, stated once.</p>
+<p>The Option B exception list, which is not taken, would have been: $[\xi,\pi]=i\hbar\delta$, $\hbar^{2}/2m$, $\hbar^{2}\Box$, $\hbar/2$, $[\tilde S_i,\tilde S_j]$, $\varkappa/\hbar$ — a list of forms and not of files.</p>
+<h2 id="10-the-math382-defect-which-the-pass-should-repair">10. The $\lambda_m$ Defect, Which the Pass Should Repair</h2>
+<p>The corpus defines the mass length by inversion, $\lambda_m=1/k_m$, and calls it the Compton wavelength. It is not one. With $k_m=mc/\hbar$ the inversion gives $\hbar/(mc)=386.159\ \mathrm{fm}$ for the electron; the wavelength is $h/(mc)=2.425\ 631\ \mathrm{pm}$, larger by $2\pi$. The corpus has been writing the <em>length per radian</em>, which is the length its operators use, and naming it a wavelength.</p>
+<p>The internal note states the defect in full and computes both columns. This pass is the occasion to repair it, and the repair has three forms, one per option.</p>
+<ul>
+<li><strong>Under Option A</strong> the corpus keeps angular wave numbers and the name changes, not the formula: $k_m=2\pi mc/h$ and $\lambda_m=2\pi/k_m=h/(mc)$, with a sentence saying that $k_m$ is angular and $\lambda_m$ is the wavelength. The old $\hbar/(mc)$ quantity, the length per radian, is not needed anywhere once the phase is written with a $2\pi$ in the exponent.</li>
+<li><strong>Under Option B</strong> the repair is free: $k_m:=mc/h$ is already the reciprocal of the wavelength, because the wave number is cycle-based. The corpus loses one defect and gains no sentence.</li>
+<li><strong>Under Option C</strong> the repair is independent of the constant and should still be done: $\lambda_m:=2\pi/k_m$ and the name kept. It is a one-line defect whether or not the constant moves.</li>
+</ul>
+<p><strong>Sites.</strong> <code>\lambda_m</code> is defined in <code>physics-units-and-common-elements-conventions.md</code> rows 54–57 as <code>$\lambda_m=1/k_m=\hbar/(mc)$</code>, with the meaning cell <code>the reduced Compton wavelength</code>; $84$ further displays use <code>1/k_m</code>. Both are rewritten. The word <code>reduced</code> is deleted wherever the quantity is the wavelength, and kept only where the quantity truly is $\hbar/(mc)$, which under Option A is named $\bar{\lambda}_m$ and under Option B does not occur.</p>
+<h2 id="11-the-collision-with-the-potent-pass">11. The Collision With the Potent Pass</h2>
+<p><code>_reserve/migration-potent.md</code> converts <code>\tilde\nu</code> to <code>\tilde\pi_{\mathrm{nil}}</code>, because the tilde marks the potent family. The internal note <em>The Yukawa Coupling in Wave Numbers</em> writes the spectroscopic wave number as $\tilde\nu_m$ in $5$ displays, which is the same glyph. Under the potent pass those $5$ displays would become $\tilde\pi_{\mathrm{nil},m}$, which is nonsense.</p>
+<p><strong>The rule, for both passes.</strong> A wave number never takes a tilde, because the tilde belongs to the potent family. The spectroscopic wave number is plain $\nu_m$ in $\mathrm{m^{-1}}$, and the letter $\nu$ is free only after the potent pass has moved its nilpotent to $\pi$. The internal note is not in scope of either pass and is repaired by hand in a third, small edit; the sub-agent of this pass records the $5$ sites and changes nothing outside <code>articles_physics/</code>.</p>
+<h2 id="12-the-conventions-file-by-file">12. The Conventions, File by File</h2>
+<p>Five files, and the order is the order of the list. The conventions state the rule before the articles follow it, as in every pass of this corpus.</p>
+<p><strong><code>physics-units-and-common-elements-conventions.md</code>, $36$ sites.</strong> The main file. The table rows of §<em>The Units</em>: <em>Planck constants</em> loses $\hbar$; <em>Inverse temperature</em> takes $\beta=h/(2\pi k_BT)$; the three wave-number rows and the three length rows take the branch's definition; the <em>Dimensionless and dimensionful</em> paragraph, $8$ sites, keeps its argument and loses one letter; §<em>The shortcut $c=1$ together with $h$ at $2\pi$ is not allowed</em> is rewritten in $h$ with the example recomputed. This file also carries the sentence that the pass exists to make true, and it must be added here: <code>One constant of action is carried. $\hbar$ is not a second unit; it is $h$ per radian, and the corpus writes the radian where it is meant.</code></p>
+<p><strong><code>operator-and-calculus-conventions.md</code>, $16$ sites.</strong> The gradient, the d'Alembertian, the Schrödinger operator $-\hbar^2\Delta/2m$, the commutator $[\xi,\pi]=i\hbar\delta$, the momentum operator and the gauge-covariant gradient $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\varkappa}{\hbar}\tilde A$. Under Option B the last three keep $\hbar$ and the file says so once, at the first of them.</p>
+<p><strong><code>special-element-conventions.md</code>, $7$ sites.</strong> The spin, $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, and its commutators. Under Option B these are in the exception and are not edited; the file gains the one sentence of the exception.</p>
+<p><strong><code>algebra-and-element-conventions.md</code>, $5$ sites.</strong> The prose paragraph that names $\hbar$ among the inserted constants, §<em>The Centre and the Vector Subspace</em>, and the sentence that calls the phase $\frac{S}{\hbar}$.</p>
+<p><strong><code>index-and-notation-conventions.md</code>, $2$ sites.</strong> The subscript table, where $\hbar$ appears as a label example.</p>
+<p><strong>The five files with no $\hbar$</strong> — <code>frame-and-metric-</code>, <code>matrix-representations-</code>, <code>norm-and-pairing-</code>, <code>product-and-form-</code>, and the maths set — are not opened, and the sub-agent verifies the emptiness rather than assuming it.</p>
+<h2 id="13-the-rule-math432-is-not-allowed">13. The Rule: $\hbar$ Is Not Allowed</h2>
+<p>The pass has a second deliverable, and it outlives the substitution: the physics conventions must <em>forbid</em> the glyph, so that the corpus cannot drift back. Three edits to <code>physics-units-and-common-elements-conventions.md</code>.</p>
+<p><strong>The table row.</strong> §<em>The Units</em>, row <em>Planck constants</em>: the quantity column becomes $h$ alone and the note becomes <code>$\hbar$ is not used in the corpus; it is $h$ per radian, and the $2\pi$ is written where the radian is meant</code>. The row's unit, $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-1}$, is unchanged, because it is the unit of $h$.</p>
+<p><strong>The paragraph, placed after the tables and before §<em>The shortcut</em>:</strong></p>
+<blockquote>
+<p><strong>The reduced constant is not written.</strong> The corpus carries one constant of action, $h$. A display that needs the reduced constant writes its value, $\dfrac{h}{2\pi}$, or an equivalent rearrangement of it: a phase is $\dfrac{2\pi S}{h}$, a commutator is $[\xi,\pi]=\dfrac{ih}{2\pi}\delta^{(3)}$, a kinetic term is $-\dfrac{h^{2}}{8\pi^{2}m}\Delta$, a coupling is $\dfrac{2\pi\varkappa}{h}$. The rule is not a preference between two letters. It is that the factor $2\pi$ must stand on the page: $\hbar$ hides a full turn inside a single glyph, and a reader who has to unpack it has lost the radian. A display that reintroduces the glyph, or that introduces any private symbol standing for $h/2\pi$, is defective in the article that writes it.</p>
+</blockquote>
+<p><strong>The shortcut paragraph</strong> is rewritten, not merely relabelled, and it now forbids two settings rather than one: <em>"An article may not set $h$ to $2\pi$ or $c$ to one."</em> The first is the old $\hbar=1$ under the new letter; the second was already forbidden. The paragraph's argument carries over unchanged, because $h$ at $2\pi$ deletes exactly the conversion that $\hbar$ at $1$ deleted.</p>
+<p><strong>Why a rule and not a habit.</strong> The corpus had $16$ sites that set $\hbar=1$ in numerical work, and they were a pre-existing violation of the corpus's own §<em>The shortcut</em>; they are repaired before the pass runs, not by it (§<em>The Forbidden Shortcut</em>). A rule that names the setting is the only thing that stops the seventeenth.</p>
+<h2 id="14-the-forbidden-shortcut">14. The Forbidden Shortcut</h2>
+<p><strong>The prohibition, as it now stands in the conventions.</strong> <em>"An article may not set $h$ to $2\pi$ or $c$ to one"</em> — <code>physics-units-and-common-elements-conventions.md</code>, §<em>The shortcut</em>. Two settings, one defect: each deletes a conversion between two base dimensions, and after it no dimensional statement in the article can be tested.</p>
+<p><strong>Why the pass must not repair it.</strong> $\hbar=1$ and $h=2\pi$ are the same equation. A pass that rewrote the first into the second would leave the article exactly as defective, with the evidence removed and a cleaner-looking page. That is worse than doing nothing: the defect would then be invisible to the grep that this migration exists to make possible. <strong>A forbidden statement is not substituted; it is repaired or it is reported.</strong></p>
+<p><strong>The repair, for all sixteen.</strong> Cite the numbers in units the corpus allows: $mc$, $mc^2$ and $1/k_m$. A change of unit for one quantity leaves the dimension in place; the deletion of a constant does not. <em>"With $m=c=\hbar=1$"</em> becomes <em>"with lengths in units of $1/k_m$ and momenta in units of $mc$"</em>, and the numbers in the sentence are unchanged, because they were always dimensionless. Where the phrase is <em>"in units where $\varkappa=\hbar=1$"</em>, the charge is quoted in units of $\varkappa$. Where the article's own algebra assumed $\hbar=1$ — the one case is the S-matrix of <em>The S-matrix in Biquaternionic Form</em> — the constant is restored in the exponents and the numeric example is requoted with energies in $\hbar\,\mathrm{s^{-1}}$ and durations in seconds.</p>
+<p><strong>Where they were, and what each became.</strong> Repaired on 2026-11-23, before step 0, in $12$ articles:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>was</th>
+<th>is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe</td>
+<td><code>for the two values $\hbar=1$ and $\hbar=2.7$</code></td>
+<td><code>at two values of the quantum of action</code></td>
+</tr>
+<tr>
+<td>Coupled Klein–Gordon</td>
+<td><code>in units where $\varkappa=\hbar=1$ and $k_m=1.3$</code></td>
+<td><code>in units of $\varkappa$, with $k_m=1.3$</code></td>
+</tr>
+<tr>
+<td>Fourier / charged spin-zero fluid</td>
+<td><code>With $m=c=\hbar=1$</code></td>
+<td><code>With lengths in units of $1/k_m$, momenta in units of $mc$</code></td>
+</tr>
+<tr>
+<td>Fourier / coupled Dirac</td>
+<td><code>with $\varkappa=\hbar=1$</code></td>
+<td><code>with the charge in units of $\varkappa$</code></td>
+</tr>
+<tr>
+<td>Fourier / Schrödinger</td>
+<td><code>and $\hbar=1$ the zeros are at</code></td>
+<td><code>and the frequency in units of $k_m c$ the zeros are at</code></td>
+</tr>
+<tr>
+<td>Fourier / spin-half fluid</td>
+<td><code>with $m=c=\hbar=1$</code></td>
+<td><code>with lengths in units of $1/k_m$ and momenta in units of $mc$</code></td>
+</tr>
+<tr>
+<td>Fourier / spin-zero fluid</td>
+<td><code>with $m=c=\hbar=1$</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td>Lagrangian / coupled Dirac</td>
+<td><code>with $\varkappa=0.9$, $\hbar=1$</code></td>
+<td><code>with the charge at $0.9\,\varkappa$</code></td>
+</tr>
+<tr>
+<td>Massless fluid</td>
+<td><code>$\Delta k=1$ and $\hbar=1$</code></td>
+<td><code>$\Delta k=1$ in units of $k_m$</code></td>
+</tr>
+<tr>
+<td>S-matrix</td>
+<td><code>$\theta_{\mathrm{evo}}=\tau$, the real interval in units $\hbar=1$</code></td>
+<td><code>$\theta_{\mathrm{evo}}=\tau/\hbar$</code>, with $\hbar$ restored in four exponents</td>
+</tr>
+<tr>
+<td>Thermal circle</td>
+<td><code>in units with $c=1$ … and with $\hbar=1$</code> (×3)</td>
+<td><code>$\beta\hbar$ is a time</code> / <code>$\beta\hbar$ is the circumference</code></td>
+</tr>
+<tr>
+<td>Wigner function</td>
+<td><code>With $\hbar=1$, position width $\sigma=0.5$</code> (×3)</td>
+<td><code>With the position in units of $1/k_m$ and the momentum in units of $mc$</code></td>
+</tr>
+<tr>
+<td>Higgs Lagrangian</td>
+<td><code>$\hbar=c=1$ throughout</code></td>
+<td><code>with $c$ and $h$ carried</code></td>
+</tr>
+<tr>
+<td>Parameter count</td>
+<td><code>With $\hbar=c=1$ the model has one dimensionful unit</code></td>
+<td><code>The model's parameters carry a single dimensionful scale</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of them were not prose repairs.</strong> The parameter-count argument loses nothing: the count of nineteen parameters less one unit is a statement about one dimensionful scale, and it never needed the constants deleted. The Higgs article carried the declaration and no other $\hbar$; the declaration was the whole of the defect.</p>
+<p><strong>The guard, and what it does not guard.</strong> <code>canon_hbar.rewrite</code> begins with a guard: a span that matches <code>\hbar=1</code>, <code>\hbar=c=1</code>, or <code>m=c=\hbar=1</code> is returned unchanged, counted <code>forbidden</code>, and printed by the driver as <code>file:line</code>, which then exits non-zero.</p>
+<p><strong>That guard is a backstop and it is too narrow to be the rule.</strong> Measured against the engine, it fires on those three chains and on nothing else. It does <strong>not</strong> fire on <code>\hbar=m=1</code>, <code>\hbar=m=\omega=1</code>, <code>m=\hbar=\omega=1</code>, <code>m=\hbar=\omega=c=1</code>, <code>c=\hbar=m=1</code>, <code>\hbar=m=c=1</code>, <code>\hbar=k_B=1</code>, <code>c=\hbar=k_B=1</code>, <code>G=c=\hbar=k_B=1</code>, <code>\hbar=c=k_B=1</code>, or <code>\hbar=m=k_{t}^{\prime}=1</code>; each of them passes through and becomes <code>\frac{h}{2\pi}=\cdots=1</code>, which is $h=2\pi$. A first attempt at this pass was aborted on exactly this ground: it printed no <code>forbidden</code> line, wrote $403$ files and $6859$ sites, and carried $26$ such spans through into the corpus. The guard cannot be the enforcement, because a blacklist always misses the next spelling.</p>
+<p><strong>The enforcement is a clean start.</strong> Before the pass runs, a dedicated grep over <code>articles_physics/*.md</code> must return zero spans that assign one to a constant, and zero sentences that declare a unit system. The pass then rewrites glyphs only, and there is no span left in which a substitution could produce $h=2\pi$. The engine is left as shipped and is not edited.</p>
+<h3 id="the-math520-settings-the-first-guard-missed">The $26$ settings the first guard missed</h3>
+<p>Measured in the pristine tree (<code>/tmp/pre</code>), each a span in <code>articles_physics/*.md</code> that assigns one to a chain containing <code>\hbar</code>, each already converted by the pass into <code>\frac{h}{2\pi}=\cdots=1</code>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>article:line</th>
+<th>was</th>
+<th>would have become</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>black-hole-thermodynamics:42</td>
+<td><code>G=c=\hbar=k_B=1</code></td>
+<td><code>G=c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>black-hole-thermodynamics:73</td>
+<td><code>c=\hbar=k_B=1</code></td>
+<td><code>c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>black-hole-thermodynamics:110</td>
+<td><code>c=\hbar=k_B=1</code></td>
+<td><code>c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>black-hole-thermodynamics:242</td>
+<td><code>c=\hbar=k_B=1</code></td>
+<td><code>c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>black-hole-thermodynamics:483</td>
+<td><code>c=\hbar=k_B=1</code></td>
+<td><code>c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>black-hole-thermodynamics:518</td>
+<td><code>c=\hbar=k_B=1</code></td>
+<td><code>c=\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>hawking-radiation:184</td>
+<td><code>\hbar=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>hawking-radiation:385</td>
+<td><code>\Big\|_{\hbar=c=k_B=1}</code></td>
+<td><code>\Big\|_{\frac{h}{2\pi}=c=k_B=1}</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>noethers-theorem:179</td>
+<td><code>c = \hbar = m = 1</code></td>
+<td><code>c = \frac{h}{2\pi} = m = 1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td>quantum-thermodynamics:156</td>
+<td><code>\hbar=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td>quantum-thermodynamics:337</td>
+<td><code>\hbar=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>relativistic-wigner:212</td>
+<td><code>\hbar=m=\omega=1</code></td>
+<td><code>\frac{h}{2\pi}=m=\omega=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td>relativistic-wigner:298</td>
+<td><code>\hbar=m=\omega=1</code></td>
+<td><code>\frac{h}{2\pi}=m=\omega=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td>squeezing-beyond-the-biquaternion-algebra:96</td>
+<td><code>m=\hbar=\omega=1</code></td>
+<td><code>m=\frac{h}{2\pi}=\omega=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td>bisognano-wichmann:58</td>
+<td><code>\hbar=c=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=c=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td>the-dirac-oscillator:259</td>
+<td><code>m=\hbar=\omega=c=1</code></td>
+<td><code>m=\frac{h}{2\pi}=\omega=c=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td>the-equation-of-state:213</td>
+<td><code>\hbar=m=1</code></td>
+<td><code>\frac{h}{2\pi}=m=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td>the-nodal-set-and-quantized-circulation:155</td>
+<td><code>\hbar=m=1</code></td>
+<td><code>\frac{h}{2\pi}=m=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td>the-quantum-stress-tensor:243</td>
+<td><code>\hbar=m=1</code></td>
+<td><code>\frac{h}{2\pi}=m=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td>the-unruh-effect:269</td>
+<td><code>\hbar=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td>the-unruh-effect:305</td>
+<td><code>\hbar=c=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=c=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td>the-unruh-effect:416</td>
+<td><code>\hbar=k_B=1</code></td>
+<td><code>\frac{h}{2\pi}=k_B=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td>the-wigner-function:277</td>
+<td><code>\hbar=m=\omega=1</code></td>
+<td><code>\frac{h}{2\pi}=m=\omega=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td>wave-particle-duality-and-the-fourier-transform:169</td>
+<td><code>\hbar=m=1</code></td>
+<td><code>\frac{h}{2\pi}=m=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td>wave-particle-duality-and-the-fourier-transform:169</td>
+<td><code>\hbar=m=c=1</code></td>
+<td><code>\frac{h}{2\pi}=m=c=1</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td>zero-divisors-as-a-physical-locus:245</td>
+<td><code>\hbar=m=k_{t}^{\prime}=1</code></td>
+<td><code>\frac{h}{2\pi}=m=k_{t}^{\prime}=1</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Beyond the $\hbar$ spans.</strong> The class is wider than the chains that carry $\hbar$. It includes <code>$G=c=1$</code> (three sites in the black-hole article), <code>$m=c=1$</code>, <code>$m=\hbar=\omega=c=1$</code>, <code>$\mu=1$</code> in Gaussian units, <code>$\varkappa=1$</code> as a charge, <code>$m=\kappa=1$</code> as a mass and coupling, and the prose declarations — <em>in Planck units</em>, <em>in units with $c=1$</em>, <em>in units where $\dots$</em>, <em>with $m=1$</em> in a numerical check. Each is repaired in units of a scale, and none survives the clean-start grep.</p>
+<p><strong>The residue to check.</strong> Two greps, both $0$ over <code>articles_physics/*.md</code>: <code>h\s*=\s*2\pi</code> (the old shortcut, if it ever comes back) and <code>\frac{h}{2\pi}\s*=\s*1</code> (the same statement in the blind form). <code>h\s*=\s*1</code> is $0$ as well, because $h=1$ is neither the old setting nor the new one; it is a third defect, and a reader who sees it should stop.</p>
+<h2 id="15-the-order-of-substitutions">15. The Order of Substitutions</h2>
+<p><strong>Step 0, freeze by copy.</strong> Two copies outside the repository, because git is not used (§<em>Where the Sub-agent Must Not Improvise</em>, item 8) and the tree is already dirty:</p>
+<pre><code class="language-sh">cp -a articles_physics /tmp/pre      # the input, never written
+cp -a articles_physics /tmp/post     # the run, written by the driver
+</code></pre>
+<p>The pass writes only to <code>/tmp/post</code>. <code>articles_physics/</code> receives the result at step 6, after the checks, by copy.</p>
+<p><strong>Step 1, the conventions</strong>, by hand, with the prohibition paragraph of §<em>The Rule: $\hbar$ Is Not Allowed</em> in place. The rule exists before the corpus follows it.</p>
+<p><strong>Step 2, the canonicaliser, dry then applied.</strong> <code>python3 _reserve/py/rewrite-physics.py /tmp/post</code> prints the tally and writes nothing. Expected: <code>files to write 403</code> — $403$ of the $678$ articles carry the glyph and $275$ do not — and <code>sites 6859</code>. Then the same command with <code>--apply</code>. The eleven branches of §<em>The Script</em> handle the classes of §<em>The Blind Replace, Tested</em>; the $2\,029$ sites that stay in plain form are those where a bare $\hbar$ has no neighbour to fold against. Run it twice: the second run must report $0$ files and $0$ sites.</p>
+<p><strong>Step 3, the gate.</strong> <code>_reserve/rewrite-gate.html</code>, rebuilt against <code>/tmp/post</code>, must print $5\,877$ spans with $0$ failures before and after and $0$ regressions. If it does not, the failing span is printed with its old and new text and the pass stops there.</p>
+<p><strong>Step 4, the read pass</strong>, now a short one — the four shapes that used to be left to the reader are gone:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>residue</th>
+<th style="text-align: right;">sites before</th>
+<th style="text-align: right;">sites after</th>
+<th>what the reader does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nested fraction</td>
+<td style="text-align: right;">$3\,490$</td>
+<td style="text-align: right;">$0$</td>
+<td>nothing; folded by the numerator and denominator rules</td>
+</tr>
+<tr>
+<td>exponent</td>
+<td style="text-align: right;">$456$</td>
+<td style="text-align: right;">$0$</td>
+<td>nothing; folded by the power rule</td>
+</tr>
+<tr>
+<td><code>(2\pi\frac{h}{2\pi})^{n}</code></td>
+<td style="text-align: right;">$168$</td>
+<td style="text-align: right;">$0$</td>
+<td>nothing; folded by the measure rule</td>
+</tr>
+<tr>
+<td><code>\hbar\omega</code></td>
+<td style="text-align: right;">$246$</td>
+<td style="text-align: right;">$0$</td>
+<td>nothing; folded by the frequency rule</td>
+</tr>
+<tr>
+<td>prose sentence</td>
+<td style="text-align: right;">$397$</td>
+<td style="text-align: right;">$397$</td>
+<td><code>h/(2\pi)</code> in running text, by hand</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Step 5, the $\lambda_m$ repair</strong>, $84+3$ sites, by hand.</p>
+<p><strong>Step 6, copy in and audit.</strong> <code>cp -a /tmp/post/. articles_physics/</code>, then the checks of §<em>The Checks</em>, in the order they are written. A failing check means restore from <code>/tmp/pre</code> and stop.</p>
+<p><strong>Why the automated step comes first.</strong> Because it makes the residue enumerable: after step 2 what is left is $2\,030$ sites in plain form, of which $397$ are a span that is nothing but <code>$\hbar$</code> and $1\,513$ sit in running text; a grep names both exactly. A pass that leaves eleven shapes behind leaves a residue with no shape, and no check can find it.</p>
+<h2 id="16-the-script">16. The Script</h2>
+<p>Three files, all in <code>_reserve/</code>, which is gitignored and is therefore not part of the corpus the pass edits.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>canon_hbar.py</code></td>
+<td>the canonicaliser: <code>rewrite(span, stats) -&gt; span</code>, eleven ordered branches</td>
+</tr>
+<tr>
+<td><code>rewrite-physics.py</code></td>
+<td>the driver: walks <code>*.md</code>, rewrites math spans only, dry run by default</td>
+</tr>
+<tr>
+<td><code>audit-commands.py</code></td>
+<td>check 3: compares <code>\command</code> multisets per span, before against after</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code class="language-sh">python3 _reserve/py/rewrite-physics.py /tmp/post            # dry run, prints the tally
+python3 _reserve/py/rewrite-physics.py /tmp/post --apply    # writes
+python3 _reserve/py/audit-commands.py /tmp/pre              # lost commands: 0
+</code></pre>
+<p>Two layers, and the first is the fallback for the second. The one-line form is layer 1.</p>
+<pre><code class="language-python"># layer 1 -- the invariant: cannot be wrong, can be ugly
+t = s.replace(r'\hbar', r'\frac{h}{2\pi}')
+</code></pre>
+<pre><code class="language-python"># layer 2 -- the cosmetic folding, eleven branches, applied per math span
+# rewrite(span) -&gt; span with one storey where one storey is possible
+</code></pre>
+<p><strong>The rule order is the design.</strong> Each branch fires only when its own pattern is present; the order removes the ambiguity between them.</p>
+<ol>
+<li><code>(2\pi\hbar)^{n}\to h^{n}</code> — first, because it deletes the <code>2\pi</code> outright.</li>
+<li><code>2\pi\hbar\to h</code> — the same cancellation where no exponent is written.</li>
+<li><code>\hbar\omega_k\to h\nu_k</code> — before any fraction branch, so a numerator keeps <code>h\nu</code> and not <code>h\omega/(2\pi)</code>.</li>
+<li><code>\frac{X\ldots}{…\hbar\ldots}</code> — <code>\hbar</code> in the numerator: one storey, with an integer coefficient in the denominator multiplied into the $2\pi$ and a power <code>n</code> raised into <code>(2\pi)^{n}</code>.</li>
+<li><code>\frac{X}{\hbar}</code> — <code>\hbar</code> as the whole denominator: <code>\frac{X}{\hbar}\to\frac{2\pi X}{h}</code>, and <code>\frac{X}{\hbar^{n}D}\to\frac{(2\pi)^{n}X}{h^{n}D}</code>. This is the gauge-coupling shape, $1\,322$ sites, and the branch that a first engine missed.</li>
+<li><code>\hbar^{n}\to\frac{h^{n}}{(2\pi)^{n}}</code> — where no fraction encloses the site.</li>
+<li><code>\hbar/X\to\frac{h}{2\pi X}</code> — the denominator read as a product, stopping at a relation, a delimiter or punctuation.</li>
+<li><code>X/\hbar\to\frac{2\pi X}{h}</code> — the numerator read as a product to its left, on the same stop set; the atom reader attaches <code>^{…}</code> and <code>_{…}</code> to their base, or <code>mc^{2}/\hbar</code> is split.</li>
+<li><code>X/(\hbar D)\to\frac{2\pi X}{h D}</code> — the parenthesised denominator, its parentheses dropped.</li>
+<li><code>\hbar=6.582\times10^{-22}\to h=4.135\times10^{-21}</code> — the definition rows, the $8$ places where the constant is quoted with its value, which is recomputed and not copied.</li>
+<li><code>\hbar\to0\to h\to0</code> — the limit rows, where the constant is a knob and not a number.</li>
+</ol>
+<p><strong>Everything else is the plain fallback</strong>, <code>\frac{h}{2\pi}</code>, applied to $2\,030$ sites.</p>
+<p><strong><code>\dfrac</code>, <code>\tfrac</code> and <code>\cfrac</code> become <code>\frac</code>.</strong> It is the same command with a style argument, the audit normalises the three to <code>\frac</code> before comparing, and the pass makes no attempt to preserve the style: the corpus uses the style to mean "tall" or "inline", and after the fold the fraction is one storey and its height is no longer the problem.</p>
+<p><strong>What the boundary rules cost.</strong> Rules 7, 8 and 9 need to know where a product ends. The stop set is: relations (<code>=</code>, <code>\in</code>, <code>\to</code>, <code>\approx</code>), operators (<code>+</code>, <code>-</code>, <code>\pm</code>, <code>\cdot</code>, <code>\times</code>), delimiters (<code>\big</code>, <code>\Big</code>, <code>\left</code>, <code>\right</code> and their variants), punctuation, and a subscript that is not attached to a letter. Getting this wrong is how a canonicaliser writes <code>\frac{2\pi}{h\bigr}</code> — a delimiter swallowed into a denominator — and the command audit exists to catch exactly that.</p>
+<p><strong>The count that proves it ran.</strong> <code>grep -rn '\\hbar' articles_physics/*.md</code> must be $0$. That is the pass's only hard invariant, and it is check 0. The same grep without <code>*.md</code> returns the $81$ sites of the ten stale duplicates, which are out of scope.</p>
+<p><strong>The count that proves it folded.</strong> <code>grep -rn 'frac{\\frac{h' articles_physics/*.md</code> must be $0$; so must the greps for <code>frac{h}{2\\pi}\s*\^</code>, <code>(2\\pi\s*frac{h}{2\\pi}</code>, <code>frac{h}{2\\pi}\s*\\omega</code> and <code>}{\\frac{h}{2\\pi}}</code>.</p>
+<h2 id="17-the-pilot">17. The Pilot</h2>
+<p>Four stages, in this order. The first two are the only ones that need judgement before the bulk runs.</p>
+<p><strong>Stage 1, the conventions.</strong> Five files, by hand, with the paragraph of §<em>The Rule: $\hbar$ Is Not Allowed</em> in place. Closes when the units table writes $h$ alone, the shortcut paragraph names $h$, and the prohibition paragraph exists — before any article changes.</p>
+<p><strong>Stage 2, three articles end to end</strong>, chosen because each exercises a different residue class:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">sites</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-three-wavenumbers-of-a-particle.md</code></td>
+<td style="text-align: right;">$119$</td>
+<td>the article is $\tilde K_\Phi=\tilde P_\Phi/\hbar$; every class appears</td>
+</tr>
+<tr>
+<td><code>the-path-integral-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$59$</td>
+<td>$S/\hbar$ in the exponent, $30$ times: the prose and the display forms of one idea</td>
+</tr>
+<tr>
+<td><code>the-dirac-oscillator-in-biquaternionic-form.md</code></td>
+<td style="text-align: right;">$74$</td>
+<td>measure, ladder and spin in one article, so the $h^{3}$, $h^{n}$ and $h/(4\pi)$ forms are seen together</td>
+</tr>
+</tbody>
+</table></div>
+<p>Stage 2 closes when the three articles contain no <code>\hbar</code>, every exponent carries its $2\pi$, and no fraction is nested deeper than one.</p>
+<p><strong>Stage 3, the canonicaliser over the tree.</strong> One run, $6\,859$ sites in $403$ of the $678$ articles, then checks 0 to 4. The driver is in §<em>The Script</em> and its test is recorded in §<em>The Blind Replace, Tested</em>: $5\,877$ spans through KaTeX, $0$ unparseable before, $0$ after, $0$ regressions, $0$ commands lost, and a second run that changes nothing. The bulk step is known to be safe before it is run.</p>
+<p><strong>Stage 4, the read pass</strong>, $1\,513$ sites in running text, $397$ of them a bare <code>$\hbar$</code> in a sentence that has to be rewritten as a sentence. It is a reading of the page, not a repair, and it is done last so that no editorial decision can be overwritten by a later machine pass.</p>
+<h2 id="18-the-checks">18. The Checks</h2>
+<p>Run in this order, from the repository root, and record each result in the report. Checks 0 to 4 are mechanical; 5 is a browser page.</p>
+<pre><code class="language-sh"># 0. the pass's one hard invariant, scoped to *.md
+grep -rn '\\hbar' articles_physics/*.md                     # 0 lines
+
+# 1. no private symbol introduced, no constant set to one, no stale lambda_m
+grep -rn 'hslash\|hbarprime' articles_physics/*.md           # 0 lines
+grep -rn 'h\s*=\s*2\pi' articles_physics/*.md               # 0 lines -- the old hbar=1
+grep -rn 'frac{h}{2\pi}\s*=\s*1' articles_physics/*.md      # 0 lines -- same, blind form
+grep -rn 'h\s*=\s*1\b' articles_physics/*.md                # 0 lines -- a setting that was never allowed
+for t in varpi; do echo &quot;$t $(grep -rho $t /tmp/pre/*.md | wc -l) $(grep -rho $t articles_physics/*.md | wc -l)&quot;; done   # 108 108
+grep -rn 'lambda_m\s*=\s*1/k_m\|reduced Compton' articles_physics/*.md   # 28 lines before step 5, 0 after
+
+# 2. no unfolded shape survives
+grep -rn 'frac{\\frac{h' articles_physics/*.md               # 0 lines, rule 4
+grep -rn 'frac{h}{2\\pi}\s*\^' articles_physics/*.md         # 0 lines, rule 5
+grep -rn '(2\\pi\s*frac{h}{2\\pi}' articles_physics/*.md     # 0 lines, rule 1
+grep -rn 'frac{h}{2\\pi}\s*\\omega' articles_physics/*.md    # 0 lines, rule 3
+
+# 3. nothing was lost: commands, and spans
+python3 _reserve/py/audit-commands.py /tmp/pre                   # lost commands: 0
+python3 - &lt;&lt;'EOS'
+import glob, re
+def n(r):
+    d = i = 0
+    for f in glob.glob(r + '/*.md'):
+        s = open(f).read()
+        d += len(re.findall(r'\$\$.+?\$\$', s, re.S))
+        s = re.sub(r'\$\$.+?\$\$', ' ', s, flags=re.S)
+        i += len(re.findall(r'\$[^$]+\$', s))
+    return d, i
+print(n('/tmp/pre'), n('articles_physics'))                   # (14509, 162795) twice
+EOS
+
+# 4. the pass is idempotent
+python3 _reserve/py/rewrite-physics.py articles_physics          # files to write 0, sites 0
+</code></pre>
+<p><strong>Check 0 is the only one that can fail the pass on its own</strong>, and it is scoped to <code>*.md</code> on purpose. Ten extensionless files sit in <code>articles_physics/</code> as stale duplicates of articles that also exist as <code>.md</code>; they carry $81$ sites, <code>build.py</code> never reads them, and they are out of scope (§<em>The Inventory</em>). The unscoped <code>grep -rn '\\hbar' articles_physics/</code> therefore ends at $81$ and says nothing about the pass.</p>
+<p><strong>Check 1 gives $63$ lines if written as <code>hslash|varpi|hbarprime</code>.</strong> <code>\varpi</code> is not a symbol for $h/2\pi$: it is the frequency of the subluminal solution in <code>subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>, $108$ occurrences, and it predates the pass. The check is therefore that the count is unchanged, not that it is zero. A new symbol for $h/2\pi$ would show up as a <code>varpi</code> count that went up, or as <code>\hslash</code>, <code>\hbarprime</code>, or a macro definition.</p>
+<p><strong>Check 2's four patterns are the four shapes the canonicaliser folds</strong>, and each is written against the shape rather than the rule number, so a failed rule is found by the grep that should have emptied. The <code>(2\pi</code> pattern is written for basic regular expressions, where <code>(</code> is literal; with <code>grep -E</code> it needs <code>\(</code>.</p>
+<p><strong>Check 3 is the one that caught the real defects.</strong> It compares the multiset of <code>\command</code> tokens in a span before and after, ignoring <code>\hbar</code>, <code>\omega</code> and <code>\pi</code>, which the rules are entitled to delete. Any other command that disappears means a boundary was drawn wrong: a <code>\big</code> eaten by a denominator, a <code>\tilde</code> detached from its argument, a <code>\in</code> absorbed into a product. On the pilot it found five, all fixed; on the full tree of 2026-11-23 it finds none. The span count is its companion — $14\,509$ display and $162\,795$ inline, identical before and after — because a rule that swallowed a <code>$$</code> would change the count without losing a command.</p>
+<p><strong>Check 5, the KaTeX gate.</strong> In a browser, open <code>_reserve/rewrite-gate.html</code> rebuilt against the tree the pass produced. Expected line, verbatim:</p>
+<pre><code>5890 spans  |  before OK 5890 / fail 0  |  after OK 5890 / fail 0  |  regressions 0
+</code></pre>
+<p><strong>Check 6 is a reading of twenty spans, and it is not optional.</strong> Open the pass's <code>/tmp/post</code>, take the twenty spans listed by <code>python3 _reserve/py/rewrite-physics.py</code> in its per-file tally order from the five heaviest files, and read the before and the after side by side. This is the only check that looks at meaning, and on 2026-11-23 it is the one that found the two defects of §<em>The Blind Replace, Tested</em>. Record the twenty spans in the report, each as a pair.</p>
+<p><strong>What is not checked, because it cannot be.</strong> No grep distinguishes a good $\dfrac{h}{2\pi}$ from a bad one; only a reader can. What the machine proves is that nothing was lost, nothing fails to parse, the span count did not move, and the pass cannot run twice. It cannot prove the page reads well, and pretending otherwise is how a corpus acquires two conventions.</p>
+<h2 id="19-rollback">19. Rollback</h2>
+<p><code>cp -a /tmp/pre/. articles_physics/</code>, which restores every file the pass could have touched. There is no git in the pass (§<em>Where the Sub-agent Must Not Improvise</em>, item 8), the tree was already dirty before step 0, and <code>/tmp/pre</code> is the only clean reference. One article can be restored the same way: <code>cp /tmp/pre/&lt;article&gt;.md articles_physics/</code>. The pass never creates or deletes a file.</p>
+<h2 id="20-the-report">20. The Report</h2>
+<p><code>_reserve/migration-h-report.md</code>, in the manner of the potent report. It carries, as numbers and not as prose: the file and site counts the dry run printed; the ten-class tally; the seven check results, each with the command that produced it; the KaTeX gate line verbatim ($5\,877$ spans, $0$ / $0$ / $0$); the spans the canonicaliser refused, if any, which are the <code>forbidden</code> lines of the driver and must be none; the $16$ repaired shortcut sites, each with its old and new text, from §<em>The Forbidden Shortcut</em>; the $397$ bare-<code>$\hbar$</code> sentences, marked done or left; the $\lambda_m$ repair with $386.159\ \mathrm{fm}$ and $2.425\,631\ \mathrm{pm}$ side by side; and <em>Questions Left Open</em>, which is empty or is a list.</p>
+<p><strong>The report is the only file the pass writes outside <code>articles_physics/</code></strong>, and it is written after the checks, not during.</p>
+<h2 id="21-open-items">21. Open Items</h2>
+<p><strong>D1 is closed.</strong> Option A, in two layers: the blind replacement as the invariant, and the canonicaliser as the cosmetic folding, both tested in §<em>The Blind Replace, Tested</em>. The cost of that choice was $3\,274$ sites correct but uncomfortable to read; after folding, $0$ remain. The $2\pi$ on the page is the point of the exercise, and the tests show nothing is ever wrong.</p>
+<p><strong>D2, the maths corpus, is closed differently.</strong> It held no Planck $h$ to migrate: $280$ of its $283$ sites were the deformation parameter and are now $h_{\mathrm{def}}$; the three that remain are the Planck constant and stay (§<em>The Maths Corpus, Closed</em>).</p>
+<p><strong>The sites that set $\hbar=1$.</strong> A pre-existing violation of the corpus's own shortcut rule, found by this pass: $16$ in prose and in displays, and <strong>the pass does not repair them</strong>. $\hbar=1$ and $h=2\pi$ are one equation, so a substitution would preserve the defect and hide it; they were repaired by hand on 2026-11-23 in units of $mc$, $mc^2$ and $1/k_m$ (§<em>The Forbidden Shortcut</em>), and the engine now refuses any span that still sets a constant to one. The fact that they existed for so long is the argument for writing the prohibition down.</p>
+<p><strong>The canonicaliser is a filter, not a rule.</strong> It is validated on a pristine copy of <code>HEAD</code> and it always has the blind form to fall back on, so a mis-drawn boundary costs a storey, never a value. Its one real risk is the boundary between a numerator and a denominator, and the command audit of check 3 is the test for it.</p>
+<p><strong>The internal notes.</strong> $16$ files, $279$ sites, and the $5$ tilde-nu sites of the Yukawa note. Out of scope here and named for the next pass.</p>
+<p><strong>The three-wavenumbers article.</strong> Its first section is built on the division by $\hbar$ that carries $k_m$, $k_{t}^{\prime}$ and $\tilde K_\Phi$. After the pass those three are divisions by $h$ and a $2\pi$, and the section says so; the arithmetic is identical and the prose is not. That rewriting is a separate task, recorded at the head of the article's report entry.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One constant, one letter, and the $2\pi$ written out where a radian is meant.</strong> The pass replaces <code>\hbar</code> by $\dfrac{h}{2\pi}$ at 6 859 sites in 403 physics articles, folds the result into one storey where the algebra allows it, and leaves nothing that fails to parse.</p>
+<ul>
+<li>The decision is D1, Option A: literal elimination in two layers — the blind replacement as the invariant, the canonicaliser as cosmetic folding. It was run on a copy of the live tree before the file was called ready: 5 877 spans, KaTeX $0$ failures before and after, $0$ commands lost.</li>
+<li>The maths corpus is closed and holds no Planck $h$: 280 of its 283 sites were the deformation parameter and are now $h_{\mathrm{def}}$, and the three Planck sites are named.</li>
+<li>The inventory is measured, not estimated: 405 files at <code>HEAD</code>, 403 in scope, 426 prose sites and 1 079 in table cells; 148 files carry a bare <code>$\hbar$</code> in a sentence that must be rewritten.</li>
+<li>Ten prohibitions are fixed before the first edit, and four of them are the ones an agent breaks: no private symbol, no unit declaration, no hand-patched display, no git.</li>
+<li>The $\lambda_m$ defect is repaired in the same pass: the corpus calls $\hbar/(mc)$ a wavelength, and it is 386.159 fm against 2.425 631 pm.</li>
+<li>Sixteen sites that set $\hbar=1$ were repaired by hand before the pass, because $\hbar=1$ and $h=2\pi$ are one equation and a substitution would hide the defect.</li>
+<li>Six checks close the pass, and the sixth is a reading of twenty spans: no grep tells a good $\dfrac{h}{2\pi}$ from a bad one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

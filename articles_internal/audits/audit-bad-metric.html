@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration of the Bad Metric: One Metric, One Gradient, One d&#x27;Alembertian — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A task template, run one article at a time. The census is measured and the appendix that lists the articles is written; each run…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-of-the-bad-metric-one-metric-one-gradient-one-dalembertian"><strong>Migration of the Bad Metric: One Metric, One Gradient, One d'Alembertian</strong></h1>
+<p><em>Status of this file.</em> <strong>A task template, run one article at a time.</strong> The census is measured and the appendix that lists the articles is written; each run takes one article off that list and produces one edited file. At the census the corpus wrote the two spellings 421 times in 136 articles, and the last full pass, after the 99 grade D articles were migrated, measures 373 occurrences in 32 articles, every one of them grade A, B or C.</p>
+<p><em>What the file is for.</em> It is the instruction a migrating agent follows for its one article: what the target displays are, how to classify every hit, what each role's edit is, what not to touch, and the checks that close the file. Read the traps of §12 before the first edit; they are the record of what went wrong when they were not read.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>One metric, one gradient, one d'Alembertian, and nothing replaces the retired object.</strong> The arithmetic is unchanged because every sign it carried moves into the $i$ that is already inside the coordinate.</li>
+<li><strong>One file in place, one edited file.</strong> Another article with the same defect is reported with its file and line, not touched.</li>
+<li><strong>No paragraph about the retired object, in any tense, in any article.</strong> Its history belongs in the commit message and in the report, and nowhere in the corpus.</li>
+<li><strong>A sign that came from the metric must land in one of four honest places, or the run stops and reports.</strong> Inventing a factor, or reintroducing a $g$ under another name, is worse than an unfinished article.</li>
+<li><strong>The structural greps of §15 read zero</strong>, and the ones that cannot be run to zero are compared before and after, line by line.</li>
+</ol>
+<p><strong>The decision, in one paragraph.</strong> The corpus keeps one metric, $\delta_{\mu\nu}=(1,1,1,1)$, and its name is the <strong>unit metric</strong>. It is diagonal, all four coefficients $+1$, and it is the same in the $\mathbb{B}$ frame and on the two sectors. The second metric, $g_{\mu\nu}[\mathbb{M}_-]=\operatorname{diag}(-1,1,1,1)$, is retired, and so are the literal tuple $(-1,1,1,1)$, the bracket $g[\mathbb{B}]$ that existed only to be distinguished from it, and the two bases that carry an $i$ inside a unit. Every sign that object was carrying moves into the $i$ that is already inside the coordinate.</p>
+<h2 id="1-the-scope-and-why-it-is-not-the-gradient-articles">1. The Scope, and Why It Is Not “the Gradient Articles”</h2>
+<p>Measured on the two published collections, physics and mathematics: 421
+occurrences of the two spellings, in 136 articles. The four internal reference
+drafts add 45 more, so the whole corpus is 466. The list of the 136, one row per
+article, with a link and the number of occurrences and the grade that decides
+the phase, is the appendix of <em>The Optional Metric: One Metric or Two, and the
+Name of the One That Stays</em>. Take your article from that list; do not rebuild
+the list.</p>
+<p>91 of the 136 write the gradient somewhere and 45 never write it, so a sweep
+limited to the articles that display a gradient leaves 45 articles, 123
+occurrences, naming a metric the other 91 no longer use. The 45 internal
+occurrences are not migration targets: those drafts describe the migration, and
+their quoted forms must stay quoted.</p>
+<p>Per article, the work is almost never about the gradient. The roles are:</p>
+<p>role                              articles
+  a d'Alembertian                   69
+  a clause naming both frames       36
+  a kinetic term, contracted        15
+  the literal tuple                 14
+  the material basis                12
+  a Gram matrix                     11
+  an interval                        6
+  the change-of-frame matrix         4</p>
+<p>One article can hold six of those at once. The list of the 136 articles that
+write the symbol, with a link to each and its grade, is the appendix of <em>The
+Optional Metric</em>, item 2 below. The per-role split, with the role of the symbol
+in each and the edit that follows, is a table in the inventory article, item 3.
+Find your article in both before you start, and use its rows as your checklist.</p>
+<h2 id="2-read-first-in-this-order">2. Read First, in This Order</h2>
+<ol>
+<li>PLAN.md</li>
+<li>articles_internal/the-optional-metric-and-its-removal.md
+   Why the second metric goes, and the appendix that lists all 136 articles
+   that write it. Each row is one task, and its first cell is a whole
+   instruction naming two paths: this file and the file to edit. Your row is the
+   one whose second path is the file you were given. The row also gives the
+   grade, which fixes the phase, and the occurrence count, which tells you how
+   long the report will be. If your article has no row, you have the wrong
+   article. Two pairs of rows are twins, and a twin pair is one task with two
+   files; the appendix says which, and trap 9 says what to do.</li>
+<li>articles_internal/the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.md
+   The three target displays, verbatim, are in the section "The Goal of the
+   Migration". The role table is in the section "The Migration", Phase 1. Do
+   not retype the displays from memory: copy them from that file.</li>
+<li>articles_maths/matrix-representations-conventions.md, the sentence "No index
+   is raised or lowered: the metric is the sign vector inside the product, not
+   a tensor in the display." That rule is older than this migration and it is
+   not optional.</li>
+<li>articles_maths/operator-and-calculus-conventions.md, the sentence "A
+   contraction is a form, never an index." Same rule, other words.</li>
+<li>articles_physics/frame-and-metric-conventions.md, rules 7 and 8. There is a second,
+   near-identical file, articles_maths/frame-and-metric-conventions.md; if it is in your
+   scope, edit both identically and say so in your report.</li>
+<li>The article you are migrating.</li>
+</ol>
+<h2 id="3-the-target-one-metric-one-gradient-three-displays">3. The Target: One Metric, One Gradient, Three Displays</h2>
+<p>One metric, one gradient, one d'Alembertian, three displays.</p>
+<p>gradient          $\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}$
+  d'Alembertian     $\Box=\sum_\mu\partial^2_{Q_\mu}$
+  metric            $\delta_{\mu\nu}=(1,1,1,1)$
+  units             $e_t,\vec e_x,\vec e_y,\vec e_z$ in every frame
+  coefficients      $Q_\mu=q_\mu+iq'_\mu$, written out in full
+                    $Q_t=ct+ict'$ and $Q_k=x_k+ix'_k$
+  names             $q_t=ct$, $q'_t=ct'$, $q_k=x_k$, $q'_k=x'_k$</p>
+<p>A reading is a substitution of the four $Q_\mu$ for real parameters, written
+where the display changes coordinate. After the display there is nothing: no
+bar, no metric subscript, no variant letter.</p>
+<h2 id="4-the-writing-character-for-character">4. The Writing, Character for Character</h2>
+<p>Two shapes are never written, and both are easy to write by accident, because
+a textbook writes them this way.</p>
+<p>write                         never write
+  $\partial/\partial ict'$      $\frac{1}{ic}\partial/\partial t'$
+  $\partial/\partial ix'_k$     $\frac{1}{i}\partial/\partial x'_k$
+  $\partial/\partial ict'$      $\partial/\partial(ict')$
+  $Q_t=ct+ict'$                 $Q_t=c(t+it')$</p>
+<p>One reason covers all four: the $i$ and the $c$ are part of the variable, so the
+object differentiated is a single symbol and its square is a single sign. A
+coefficient pulled to the front, or a bracketed argument, is a second object to
+track, and it is the object that decays into a metric by the foot of the page.</p>
+<h2 id="5-the-two-sector-readings-and-the-one-thing-not-to-expand">5. The Two Sector Readings, and the One Thing Not to Expand</h2>
+<p>$Q_t=ct+ict'$ is the general coefficient. The two sectors are its two
+projections, not two conventions: the material reading is $Q_t=ict'$, which is
+the general coefficient at $q_t=0$, and the informational reading is $Q_t=ct$,
+which is the same coefficient at $q'_t=0$. The corpus writes $ict'$ 701 times
+and $ct+ict'$ 7 times, so the sector form is the normal one.</p>
+<p>A display that is already in a sector KEEPS its sector form. Do not expand
+$ict'$ into $ct+ict'$ because a table above calls the latter the full writing:
+the expansion adds a real time, the interval gains $+c^2t^2$, and the display
+stops being the substitution it was. Expand only where the article is defining
+the general coefficient and does not already do so. The table is the definition;
+the article's displays are readings of it.</p>
+<p>Whether the $i$ must be ADDED is a property of the LINE, not of the article:
+135 of the 136 already write a complex coefficient somewhere, so a file test
+tells you nothing. At the occurrence, two cases. If the display already carries
+$ict'$ or $ix'_k$, the migration removes a symbol and the arithmetic is
+untouched. If it carries a real time, $x_0=ct'$, the $i$ is new: every sign the
+metric was carrying has to be produced by it, and the arithmetic changes. Read
+the line before you decide that your article is of the easy kind.</p>
+<p>The three displays, copied character for character from the inventory article.
+Material:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial ict'}+\vec e_x\frac{\partial}{\partial x}+\vec e_y\frac{\partial}{\partial y}+\vec e_z\frac{\partial}{\partial z},\\[2pt]
+\Box&=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}.
+\end{aligned}
+$$</p>
+<p>Informational:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial ct}+\vec e_x\frac{\partial}{\partial ix'}+\vec e_y\frac{\partial}{\partial iy'}+\vec e_z\frac{\partial}{\partial iz'},\\[2pt]
+\Box&=+\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\frac{\partial^2}{\partial x'^2}-\frac{\partial^2}{\partial y'^2}-\frac{\partial^2}{\partial z'^2}.
+\end{aligned}
+$$</p>
+<p>Complex, which is the definition and not a substitution:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},\\[2pt]
+\Box&=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}.
+\end{aligned}
+$$</p>
+<p>The all-real case is the informational display at $t=\tau$ and $x'_k=-ix_k$. It
+needs no display of its own and no mark.</p>
+<h2 id="6-the-rule-that-decides-every-display">6. The Rule That Decides Every Display</h2>
+<p>The gradient keeps the $i$; the d'Alembertian has already used it.</p>
+<p>In the gradient the $i$ stays INSIDE the variable the derivative is taken with
+respect to, and is never pulled out as a coefficient:</p>
+<p>$\partial/\partial ict'$     not $(1/ic)\partial/\partial t'$
+                              not $\partial/\partial(ict')$
+  $\partial/\partial ix'_k$    not $(1/i)\partial/\partial x'_k$
+                              not $\partial/\partial(ix'_k)$
+  $\partial/\partial x_k$      the direction is real, no $i$ anywhere</p>
+<p>No parentheses. The variable is $ict'$, not $(ict')$. Write
+$\partial/\partial ict'$ and $\partial/\partial ix'_k$ exactly.</p>
+<p>The d'Alembertian is the square of that operator, so $(1/i)^2=-1$ has already
+been applied and what is printed is a real sign. The minus of $\Box$ therefore
+sits on exactly the directions that carried an $i$: one, the time, in the
+material reading; three, the space, in the informational reading; none in the
+all-real case; and in the complex reading it is still inside
+$\partial^2_{Q_\mu}$, because $Q_\mu$ is still complex.</p>
+<p>No sign comes from $\delta_{\mu\nu}$. If a display needs a sign and no
+direction carries an $i$, the sign is wrong, not the metric.</p>
+<h2 id="7-step-1-inventory-before-editing">7. Step 1: Inventory Before Editing</h2>
+<p>Record file and line for every hit, and the sentence the hit lives in. Do not
+start rewriting until the list is complete.</p>
+<p>A  indexed, 246 occ, 31 articles          (was 312 / 67)
+     g_{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]
+  B  bare, 3 occ, 3 articles                 (was 105 / 89)
+     g[\s<em>\mathbb{M}_-\s</em>]
+  C  the tuple, 28 occ, 20 articles          (was 56 / 22)
+     (\s<em>-\s</em>1\s<em>,\s</em>1\s<em>,\s</em>1\s<em>,\s</em>1\s<em>)
+  D  the other tuple, 361 occ, 171 articles  (was 353 / 170), USUALLY THE WEIGHT - see trap 4
+     (\s</em>+?1\s<em>,\s</em>-\s<em>1\s</em>,\s<em>-\s</em>1\s<em>,\s</em>-\s<em>1\s</em>)
+  E  raised index, 2 occ, 2 articles         (was 8 / 4)
+     g\^{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]
+  F  material basis, 8 occ, 7 articles       (unchanged)
+     (\s<em>ie_t\s</em>,\s<em>\vec e_x
+  G  informational basis, 5 occ, 4 articles   (unchanged)
+     (\s</em>e_t\s<em>,\s</em>i\vec e_x
+  H  change of frame, 0 occ, 0 articles      (was 5 / 2) - CLOSED, see trap 10
+     \Lambda\^{?\mathsf T}?\s<em>g[\s</em>\mathbb{B}\s<em>]
+  I  the identity metric, 1 occ, 1 article   (was 4 / 3)
+     g_{?\mu\nu}?[\s</em>\mathbb{B}\s<em>]
+  J  eta, 7 occ, 4 articles                  (was 1 / 1)
+     \eta_{\mu\nu}
+  K  a Lorentz signature, 98 occ, 60 articles (was 100 / 61), two spellings
+     \(operatorname|mathrm){diag}\s</em>(\s*-1</p>
+<p>The counts in the right margin are the measurement of the last full pass, made
+on the two published collections after the 99 grade D articles were migrated.
+The earlier numbers, where they differed, are in the parentheses. The corpus is
+not what it was when this file was written: the bracket occurrences have fallen
+from 421 in 136 articles to 373 in 32, every one of them in grade A, B or C, and
+$g[\\mathbb{B}]$ has fallen to zero except for one mention. That one is at
+<code>articles_physics/the-trace-anomaly-in-biquaternionic-form.md:125</code>, in a grade C
+article not yet migrated, and it is a live task rather than a defect.</p>
+<p>The rows tell you which pattern is common. They are not your article's
+numbers: run the greps and write down what you get. If your count and the row
+disagree, your count is the one to report.</p>
+<p>grep -nE 'g_{?[^]}]{0,12}?[\s<em>\mathbb{(M|B)[^]]</em>]|g[\s<em>\mathbb{M[^]]</em>]' ARTICLE
+  grep -nE 'g\^{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]' ARTICLE
+  grep -nE '(\s<em>ie_t\s</em>,\s<em>\vec e_x|(\s</em>e_t\s<em>,\s</em>i\vec e_x' ARTICLE
+  grep -nE '\(operatorname|mathrm){diag}(\s*-1' ARTICLE
+  grep -nE 'metric|signature|raise|lower' ARTICLE     # the prose, separately</p>
+<p>The prose pass is not optional. A sentence that says "the metric carries the
+sign", "raise the index", "the signature is mostly minus" or "the interval is
+$x_0^2-\vec x^2$" survives every grep above and will be false when you are done.</p>
+<h2 id="8-step-2-classify-every-hit-by-role">8. Step 2: Classify Every Hit by Role</h2>
+<p>The symbol is not one object. Ask, for each hit, which of these ten it is.
+Never classify from the grep; classify from the sentence.</p>
+<ol>
+<li>INTERVAL. $g x x$ written out as a quadratic form, or the sentence that
+    names the interval and then the tuple. 6 articles.</li>
+<li>GRAM MATRIX. The pairing of the frame units, usually defined as
+    $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_\natural$ and evaluated to
+    $\operatorname{diag}(-1,1,1,1)$. 11 articles.</li>
+<li>CHANGE OF FRAME. $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$,
+    or the same equation with the transpose on the other side. Frame and Metric
+    Conventions printed it BOTH ways. 0 articles left: the equation is gone from
+    the corpus, so this role is closed and no longer appears in a task. It stays
+    in the list because trap 10 records why the equation was false as printed.</li>
+<li>DEFINITION OF $\Box$. The hyperbolic operator written as a contraction. 69
+    of the 136 mention a $\Box$; 15 write it as the product
+    $\tilde\nabla\tilde\nabla^{\natural}$, 37 write it as a sum of second
+    derivatives, and the rest mention it without defining it.</li>
+<li>KINETIC TERM. A Lagrangian or a worldline action contracting $dx/d\tau$
+    with the metric. 15 articles.</li>
+<li>MATERIAL BASIS. $\varepsilon_\mu=(ie_t,\vec e_x,\vec e_y,\vec e_z)$, or the
+    same four written inline in a frame table. 12 articles.</li>
+<li>INFORMATIONAL BASIS. $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$. 5 of those same
+    articles.</li>
+<li>THE CLAUSE. One sentence, repeated in 36 articles: "The frame belongs to
+    the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not
+    to the array." The symbol there is doing no work; it is a name in a list.</li>
+<li>A MENTION OF THE LITERATURE. "the standard convention is $(-1,1,1,1)$".
+    Kept. It is a statement about other people's papers.</li>
+<li>THE STALE PREMISE. A sentence that separates the two frames in a way that
+    only the retired object made true: "in this frame the squares split", "one
+    generator is singled out by its sign", "the metric each frame carries", "up
+    to one overall sign", "the two tuples". No $g$ stands in these sentences, so
+    no grep of Step 5a finds them. They are the commonest residue, because the
+    symbol was deleted from the display and the claim around it was left.</li>
+</ol>
+<h2 id="9-step-3-the-edits-one-role-at-a-time">9. Step 3: The Edits, One Role at a Time</h2>
+<ol>
+<li>
+<p>INTERVAL. Rule 8 of Frame and Metric Conventions reads "In the $\mathbb{M}_-$ frame the
+   interval is $x_0^2-\vec x^2$ and the metric is $(-1,1,1,1)$", and eleven
+   words later "A two-index display of the interval carries the minus of that
+   frame, $-x_0^2+x_1^2+x_2^2+x_3^2=\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]x_\mu x_\nu$".
+   The second is right. Replace both with one sentence: the interval is
+   $-c^2t'^2+x^2+y^2+z^2$ and the minus is the square of the $i$ in $Q_t=ict'$.
+   No SECOND metric enters it, and the sign is not borrowed from the first: the
+   one metric, $\delta_{\mu\nu}$, may be written wherever it is the metric in
+   use, as in $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$, which is the same
+   interval with the coefficients shown. What is forbidden is a second array, a
+   shortened tuple standing for a signature, and a display that takes a sign
+   from $g$ instead of from the $i$.</p>
+</li>
+<li>
+<p>GRAM MATRIX. Retire the matrix, keep the fact. One sentence per article: the
+   units are $e_t,\vec e_x,\vec e_y,\vec e_z$ and the natural form on them is
+   $\delta_{\mu\nu}$. The minus the Gram matrix used to show was
+   $\varepsilon_0=ie_t$ squared, and that $i$ is now in $Q_t=ict'$. Delete the
+   matrix from the notation table and from every display.</p>
+</li>
+<li>
+<p>CHANGE OF FRAME. Delete the equation. $Q_t=ict'$ IS the change of frame, and
+   it is written once, in the sentence that states the substitution. The matrix
+   equation says the same thing in the language of a second metric.</p>
+</li>
+<li>
+<p>DEFINITION OF $\Box$. Every contraction becomes
+   $\Box=\sum_\mu\partial^2_{Q_\mu}$ with the substitution stated in the same
+   section. Where the article wrote $\Box=\tilde\nabla\tilde\nabla^{\natural}$,
+   keep the product: it is the definition and it is correct. What must go is any
+   claim that the product equals a trace with a metric, or that the sign comes
+   from $g$.</p>
+</li>
+<li>
+<p>KINETIC TERM. Write the contracted quadratic form out in the real
+   coordinates, with the signs made explicit by the $i$. A worldline term</p>
+<p>$\frac{1}{4}\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\frac{dx_\mu}{d\tau}\frac{dx_\nu}{d\tau}$</p>
+</li>
+</ol>
+<p>becomes</p>
+<pre><code> $\frac{1}{4}\left(-c^2\dot t'^2+\dot x^2+\dot y^2+\dot z^2\right)$
+</code></pre>
+<p>which is the same number as $\frac{1}{4}\sum_\mu\dot Q_\mu^2$ with
+   $Q_t=ict'$. Check the sign by squaring: $\dot Q_t=ic\dot t'$, so
+   $\dot Q_t^2=-c^2\dot t'^2$. Keep one of the two forms, and say which.</p>
+<p>6, 7. THE BASES. Move the $i$ out of the unit and into the coordinate:
+   $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ becomes $e_t,\vec e_x,\vec e_y,\vec e_z$
+   with $Q_t=ict'$; $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ becomes the same units
+   with $Q_k=ix'_k$. Read every line you touch: if the coordinate on that line
+   already carries an $i$, you are about to write it twice. Half of this role is
+   de-duplication, not substitution.</p>
+<ol>
+<li>
+<p>THE CLAUSE. Replace "the frame belongs to the coordinate and to the metric,
+   $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$" with "the frame belongs to the
+   coordinate, not to the array." The rest of the sentence usually survives
+   untouched. Nothing more is said about where the metric may appear: the
+   notation table names it and the product table multiplies by it,
+   $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, so a rule about
+   its appearances would be a rule about prose and not about the object.</p>
+</li>
+<li>
+<p>THE LITERATURE. Leave it. Add nothing.</p>
+</li>
+<li>
+<p>THE STALE PREMISE. Read the touched paragraph whole and ask what the deleted
+   object used to separate here. If the answer is "the two frames", and the
+   paragraph still asserts a difference, rewrite it or delete it. A display that
+   is now identical in both frames must not stand under a lead-in that names one
+   of them, and a sign that is now the square of an $i$ must not be attributed to
+   a generator being "singled out". Concretely: "The squares split. In this
+   frame" becomes "The squares do not depend on the frame", or the lead-in goes.</p>
+</li>
+</ol>
+<h2 id="10-when-the-article-is-the-definition">10. When the Article Is the Definition</h2>
+<p>Some of the 136 do not use the symbol; they define it. All of grade A does,
+and the two conventions articles do it as their subject. The rules above still
+apply, but they leave a hole: an article can be described entirely in terms of
+the object being retired, and deleting the object deletes the article.</p>
+<p>The object goes anyway, and the article stays. Five decisions, in order.</p>
+<ol>
+<li>NO PARAGRAPH ABOUT THE OBJECT. The ban is absolute. Do not describe it, do
+   not name it, do not say an earlier version gave the frame one, and do not
+   mark anything as retired. No paragraph, in any tense, in any article, with
+   numbers or in words. This is a prohibition, not a preference, and it has no
+   exception anywhere in this file.</li>
+</ol>
+<p>Why: such a paragraph is a changelog entry printed inside a published
+   article. It repeats the one symbol the rest of the article has just removed,
+   so the article still names the object it is retiring, in the place a reader
+   is most likely to copy from. A rule that asks for one paragraph per article
+   produces it 136 times, and each copy is a licence for the next agent to
+   write another. The history of the migration belongs in the commit message and
+   in your report to the corpus owner, and nowhere in the corpus.</p>
+<p>One article, <em>The Optional Metric</em>, names the object once for the whole
+   corpus. Every other article is silent about it, including the grade A
+   conventions articles. A reader who arrives holding the old symbol is served
+   by the sentence the article already has to carry: the interval is
+   $-c^2t'^2+x^2+y^2+z^2$, and its one minus is the square of the $i$ in
+   $Q_t=ict'$. Say that, and stop.
+2. Every rule that referred to the object is rewritten around the coordinate.
+   "The frame carries its metric" becomes "the frame carries its coordinate".
+   Count them before you start and name them in the report: in Frame and Metric Conventions
+   it is rules 2, 4, 5, 7 and 8 out of eight, and rule 3 survives untouched.
+3. A row whose only content is the retired metric is deleted from a table; a row
+   whose content is the interval keeps its coefficients and loses the word
+   metric. Do not delete a row that also carries a number you would lose.
+4. Do not merge the article into another, do not rename it, do not shorten its
+   scope. The migration changes notation, not the shape of the corpus.
+5. Do not leave a display of the retired object "for continuity". A display is
+   what the next article copies.</p>
+<p>If the article's thesis is the object's existence, say so in the report under a
+heading of its own, and stop. Do not settle an editorial question that belongs
+to the author of the series. The notation edit is still made; the thesis is
+flagged, not rewritten.</p>
+<h2 id="11-the-order-inside-an-article">11. The Order Inside an Article</h2>
+<p>Settle the signs first; classify every $\Box$ second; rewrite the displays
+third; the bases fourth; the tuples and the clauses fifth; the raised indices
+last. Each step is the acceptance test of the next. A different order produces
+an article that passes its own greps and is wrong.</p>
+<h2 id="12-traps-found-in-practice">12. Traps Found in Practice</h2>
+<ol>
+<li>
+<p>The doubled sign. Rule 8 prints the interval twice with opposite signs, and
+   the first printing is the typo. An edit driven by the first sentence copies
+   the typo into every interval it touches. Settle it before you start.</p>
+</li>
+<li>
+<p>$\Box$ is defined twice, and the two definitions disagree once the
+   coefficient is real. 15 articles write the product, 37 write the sum of
+   second derivatives, 87 write neither. They agree while $Q_t$ is complex,
+   because the product carries the weight. They disagree in sign on the time
+   term if the coefficient is made real. Classify each article, then unify.</p>
+</li>
+<li>
+<p>The raised index is already a violation and this migration did not create it.
+   This trap is about $g^{\mu\nu}$ and nothing else. The corpus has its own
+   raising rule for the gamma label, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$,
+   written 126 times in 30 articles and stated as rule 3 of Frame and Metric Conventions.
+   That rule is not in scope: an agent that reads "no index is raised" as a
+   licence to delete $\gamma^\mu$ breaks every article it touches, including
+   the conventions it was told to obey.
+   Matrix Representations Conventions: "No index is raised or lowered." Do not
+   rename the inverse: write the contraction out low, as
+   $\sum_{\mu\nu}G_{\mu\nu}\partial_{x_\mu}\partial_{x_\nu}$ with
+   $G=(g(x)^{-1})$, or as the sum over $Q$ where the frame is flat. If the
+   article means the genuine inverse of a dynamical metric (the
+   Laplace-Beltrami operator of the curved-spacetime article is one), write it
+   low with $G_{\mu\nu}$ and flag the decision; do not silently drop a term. In
+   the optional-metric article the four raised indices are in a comparison table
+   describing the REJECTED route: they may stay only there, visibly marked as
+   the rejected form, never in a display of a result.</p>
+</li>
+<li>
+<p>The tuple $(1,-1,-1,-1)$ is usually the weight, not a metric. It appears 361
+   times in 171 articles as $\varepsilon=(1,-1,-1,-1)$, the plain weight of
+   $\tilde\nabla^{\natural}$; 346 of the 361 are in the compact spelling, in
+   166 articles. It is not a metric, it does not go, and it does not appear in
+   a gradient display. Only $(-1,1,1,1)$ is the second metric.</p>
+</li>
+<li>
+<p>Two objects called epsilon. Some articles write the material basis as
+   $\varepsilon_\mu=(ie_t,\vec e_x,\vec e_y,\vec e_z)$; the conventions write
+   the weight with the same glyph, in
+   $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial_{Q_\mu}$
+   with $\varepsilon=(1,-1,-1,-1)$ (Operator and Calculus Conventions, 176 and
+   184). Same glyph, two objects. When you retire the basis, do not delete the
+   weight, and report the collision rather than renaming either one on your own
+   authority.</p>
+</li>
+<li>
+<p>Three lookalikes that are not the target.</p>
+</li>
+<li>the dynamical $g_{\mu\nu}(x)$ of the gravity articles, 14 occurrences in 5
+     articles. A field, not a frame convention. Untouched.</li>
+<li>$g[\mathbb{B}]$, 98 occurrences in 88 articles, indexed or bare. It is
+     the same object as $\delta_{\mu\nu}$, and it GOES. A name that is an
+     alias for the one metric is a second name for the one object, which is
+     the redundancy this migration removes. A bracket names a frame, and a
+     frame is named on the coordinate: replace $g_{\mu\nu}[\mathbb{B}]$ or
+     $g[\mathbb{B}]$ by $\delta_{\mu\nu}$, or delete it where the sentence
+     already reads on $Q_\mu$. Every article that writes $g[\mathbb{B}]$ also
+     writes $g[\mathbb{M}_-]$, so the article census does not change; only the
+     work inside each row grows. The one danger: an article that writes $Q_\mu$
+     for a coordinate it calls the $\mathbb{M}_-$ frame loses its only frame
+     marker when the bracket goes. Check that the coordinate letter matches the
+     frame before you delete, and report the article if it does not.</li>
+<li>
+<p>$\varepsilon$ as the weight, above.
+   Check these before and after, and report that the counts are unchanged.</p>
+</li>
+<li>
+<p>The Clifford anticommutator is the one place where the minus is not an $i$.
+   Rule 8 prints $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$.
+   After the migration the object carrying the sign is the WEIGHT, not a metric:
+   $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. Check it
+   against the squares the article itself prints. Frame and Metric Conventions prints
+   $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$, and with those the identity holds:
+   $2\varepsilon_0=+2$ against $2\gamma_0^2=+2$, and $2\varepsilon_1=-2$ against
+   $2\gamma_1^2=-2$. Do not carry a sign from one article to another: some print
+   $\gamma_0^2=-I_4$ instead, and there the weight enters as $-\varepsilon$.</p>
+</li>
+<li>
+<p>The sentence that survives the grep. Search the prose separately for
+   "metric", "signature", "raise", "lower", "carries the sign". The greps find
+   the mathematics; only reading finds the claim about it.</p>
+</li>
+<li>
+<p>Two articles, one title, and they are ONE task. Two pairs of the 136 are
+   twins: articles_physics/frame-and-metric-conventions.md with
+   articles_maths/frame-and-metric-conventions.md, and the two
+   matrix-representations-conventions.md. If your article has a twin, the
+   instruction you were given names both files, and you edit both identically
+   in one pass. Read them side by side before the first edit: they are
+   near-identical, not identical, and a paragraph present in one may be absent
+   from the other. Do not "harmonise" them beyond the notation. Report the pair
+   as one edit with two paths, and if the two files disagree on a fact, report
+   the disagreement instead of choosing.</p>
+</li>
+<li>
+<p>CLOSED, KEPT FOR THE RECORD. The change-of-frame matrix was printed for the
+   other sector, and the equation around it was false as printed. The equation
+   has since been deleted and occurrence H reads 0; the arithmetic below still
+   explains why deleting it was right and repairing it would not have been.
+   The arithmetic, as it stood:
+   $\Lambda=\operatorname{diag}(1,-i,-i,-i)$ with
+   $\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}=g[\mathbb{M}_-]$. Conjugate it:
+   $\operatorname{diag}(1,1,1,1)$ under $\Lambda$ becomes
+   $\operatorname{diag}(1,-1,-1,-1)$, which is the plain weight $\varepsilon$,
+   not $(-1,1,1,1)$. And $Q=\Lambda x$ returns $Q_t=x_0$, a real time, so the
+   matrix printed is the INFORMATIONAL change of frame; the material one is
+   $\operatorname{diag}(i,1,1,1)$, which gives $Q_t=ix_0$. The equation was
+   deleted rather than repaired because $Q_t=ict'$ is the change of frame and
+   needs no matrix, so the error leaves the site either way. Name it in the
+   report anyway: a reader who checks a deleted line finds the arithmetic and
+   finds no note. Do not "fix" the matrix and keep the equation; that keeps
+   the second metric alive under a new name.</p>
+</li>
+</ol>
+<h2 id="13-step-4-do-not-fake-what-the-change-cannot-do">13. Step 4: Do Not Fake What the Change Cannot Do</h2>
+<p>A sign that used to come from the metric now has to come from somewhere. There
+are exactly four honest places for it:
+  - inside the variable, as the $i$ of $ict'$ or $ix'_k$, when it is a
+    derivative's sign, which is the gradient;
+  - already squared, as a real sign on the term, when it is the d'Alembertian;
+  - the weight $\varepsilon$, when the object is a Clifford algebra element;
+  - explicit real coordinates written out, when it is a quadratic form.
+If none of the four applies, you have found an object whose sign came from the
+metric and has no home. Stop, and report it. Do not invent a factor, do not
+reintroduce a $g$ under another name, and do not change a physical prediction to
+make the algebra close.</p>
+<h2 id="14-step-4b-read-the-paragraph-not-the-sentence">14. Step 4b: Read the Paragraph, Not the Sentence</h2>
+<p>A substitution is applied to a string; this migration is applied to a paragraph.
+After the edits, read every paragraph you touched from its first word to its
+last, and ask one question: what did the deleted object use to distinguish here?
+If the paragraph still asserts that distinction, it is wrong, even though every
+grep passes. Then run, on the whole article,</p>
+<p>grep -nE 'in this frame|in the other frame|singled out|squares split|up to one overall sign|differs by|each frame carries'</p>
+<p>and justify or delete every hit. This is the only check that finds role 10.</p>
+<h2 id="15-step-5-verify">15. Step 5: Verify</h2>
+<p>a) Structural greps. Every count must be ZERO, except the last, which must be
+   unchanged; the reason is with the pattern. None of these patterns matches
+   $\delta_{\mu\nu}$, and a $\delta_{\mu\nu}$ written in a display is not a hit:
+   writing the one metric where it is the metric in use is what the article
+   is allowed to do, and the migration neither asks for it nor forbids it.</p>
+<p>There is no exempt paragraph and no exempt line: the retired-object paragraph
+   is forbidden outright (decision 1 of "When the article is the definition"), so
+   no hit of the first pattern is ever permitted. A hit on it is one of two
+   things, and you must say which: a live use of the object that the migration
+   missed, or the forbidden paragraph. Both are deletions. A report that explains
+   a hit as "the required retirement paragraph" has misread this file.
+     grep -nE 'g_{?\mu\nu}?[\s<em>\mathbb{M}_-\s</em>]|g[\s<em>\mathbb{M}_-\s</em>]'
+     grep -nE 'g_{?\mu\nu}?[\s<em>\mathbb{B}\s</em>]|g[\s<em>\mathbb{B}\s</em>]'   -&gt; must be empty
+     grep -nE '\bg(<em>{\mu\nu})?\s<em>=\s</em>(\mathrm|\operatorname){diag}|g\s<em>=\s</em>(\s<em>-\s</em>1'
+       The bracket is the symbol's printed form, not the object's only form. A
+       metric written under a plain name, $g=\operatorname{diag}(-1,1,1,1)$ or
+       $g=(-1,1,1,1)$, is the same object and is invisible to the three patterns
+       above. Each hit is one of two: the FRAME metric, which goes, or the
+       dynamical metric of a gravity or thermal article, which stays. Say which,
+       by line. A hit you cannot classify is a live use, not a false positive.
+     grep -nE 'g\^{?\mu\nu}?[\s*\mathbb{M}</em>-\s<em>]'
+       The pattern must be anchored on $g$ and on the retired bracket. Bare
+       $\^{\\mu\\nu}$ is not a hit: it is $F_{\\mu\\nu}F^{\\mu\\nu}$,
+       $T_\lambda{}^{\mu\nu}$, the generator $C^{\mu\nu}$, and the inverse of a
+       dynamical metric in the Laplace-Beltrami operator, which trap 3 keeps.
+     grep -nE '(\s</em>-\s<em>1\s</em>,\s<em>1\s</em>,\s<em>1\s</em>,\s<em>1\s</em>)'
+       A mention of another author's convention is the one exception, and it is
+       role 9: kept, listed by line in the report, not counted as residue.
+     grep -nE '(\s<em>ie_t\s</em>,\s<em>\vec e_x'
+       A material BASIS is a list of four units with the $i$ on the time slot.
+       The bare $i\\vec e_k$ is the boost generator $K_k$ and appears in
+       $\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; it is not a basis
+       and does not go. The anchored pattern matches the basis only.
+     grep -nE '(\s</em>[-+]\s<em>,\s</em>[-+]\s<em>,\s</em>[-+]\s<em>,\s</em>[-+]\s*)'
+       This one is NOT run to zero, because three legitimate families match it:
+       a literature signature, which role 9 keeps, $(+,-,-,-)$ and $(-,+,+,+)$;
+       a conjugation table, $(+,+,-,-)$ and $(+,-,+,-)$; and the signature of a
+       dynamical metric. Run it BEFORE the edits and AFTER, and the two lists
+       must be the same length and differ only in the lines you touched. The
+       check it really performs is the one that catches the wrong repair: a hit
+       that is four signs and no $1$s, standing where the article used to write
+       $(-1,1,1,1)$, is a tuple shortened instead of replaced by the interval.
+       An interval written as a sum of squares does not match the pattern at
+       all.
+   The literal tuple goes, and NOTHING REPLACES IT. This is the one place where
+   the obvious repair is the wrong one. The tuple is a signature, and a
+   signature is the retired object with its 1s erased: writing
+   $(-,+,+,+)$ in place of $(-1,1,1,1)$ keeps the frame carrying a pattern of
+   signs, which is the thing being removed, and it buys nothing, because the
+   pattern is already visible in the interval written out. So a tuple that
+   carried a frame's signature is replaced by the INTERVAL, $-x_0^2+x_1^2+$\
+   $x_2^2+x_3^2$, or by the sum, $\sum_\mu Q_\mu^2$, or by the words "one
+   minus, the square of the $i$". Never by a shorter tuple.</p>
+<p>Two tuples survive, and only two:
+   - $\varepsilon=(1,-1,-1,-1)$, the plain weight, which is a property of the
+     multiplication and not of a frame (trap 4).
+   - the signature of the dynamical $g_{\mu\nu}(x)$ in the gravity articles,
+     where $g$ is a field (trap 6).</p>
+<p>A table cell that held a frame's tuple holds the interval instead. If a row
+   cannot be written without a tuple, the row was about the metric and the row
+   goes.</p>
+<p>b) The writing. Every derivative variable must carry its own $i$ and $c$, and
+   no coefficient stands in front of a derivative:
+     grep -nE '\partial\s<em>(\s</em>(ic|i|[ctQ])'   -&gt; must be empty
+     grep -nE '\frac{1}{ic}|\frac{1}{i}|(\s<em>1/ic\s</em>)'
+                                                -&gt; allowed only in a sentence
+                                                   that names them as rejected
+     grep -nE 'c\s<em>(\s</em>t\s*+|Q_t *= <em>c\s</em>('  -&gt; must be empty
+   The third pattern is the one that survives review, because $Q_t=c(t+it')$
+   is correct arithmetic and the wrong writing. It stood in four places in
+   three corpus files until this migration; the count is now zero, and it is
+   zero because it was corrected, not because it was never there.
+c) The displays. The three target displays are the spelling of the inventory
+   article, and the check compares what can be compared: the four-term gradient
+   of each reading, and the d'Alembertian of each reading. Whitespace is
+   removed on both sides, and the comparison starts at $e_t$, so an article
+   that writes $\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}=e_t\cdots$ is
+   recognised.</p>
+<pre><code>python3 - &lt;&lt;'PY'
+import re, pathlib
+inv = pathlib.Path('articles_internal/the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.md').read_text()
+goal = inv.split('## The Goal of the Migration')[1].split('## The Migration')[0]
+art = re.sub(r'\s+', '', pathlib.Path('ARTICLE').read_text())
+blocks = [b for b in re.findall(r'\$\$(.*?)\$\$', goal, re.S) if 'aligned' in b]
+print('displays found:', len(blocks), '(must be 3)')
+for name, b in zip(['complex', 'material', 'informational'], blocks):
+    body = b.replace('\\begin{aligned}', '').replace('\\end{aligned}', '')
+    parts = [re.sub(r'\s+', '', q).lstrip('&amp;') for q in body.split('\\\\')]
+    parts = [q for q in parts if '=' in q][:2]
+    grad = parts[0][parts[0].index('e_t'):]
+    print(f'{name:14s} gradient: {grad in art}  dAlembertian: {parts[1] in art}')
+PY
+</code></pre>
+<p>Three displays must be found; five blocks otherwise sit in that section and
+   two of them are not targets. Read the two columns differently.
+   A <code>gradient: True</code> on one reading is the acceptance condition for a migrated
+   article that displays a gradient: it means the four terms are written with
+   the $i$ inside the variable, in that reading's spelling. One True is the
+   normal result, because an article takes one reading.
+   <code>dAlembertian: False</code> is common and is not a defect by itself. The corpus
+   writes the same operator as $\sum_\mu\partial^2_{Q_\mu}$, or as
+   $-\frac{1}{c^2}\partial^2_{t'}+\Delta$, or as
+   $\Box=\tilde\nabla^{\natural}\tilde\nabla$ with the factors reversed, and all
+   three are correct. That column is there to catch the article that prints the
+   box twice with opposite signs on the time term (trap 2). The signs themselves
+   are tested by (b) and (f), not here.
+   If both columns are <code>False</code> on all three readings, the article displays no
+   gradient in any reading. Record that, and let (b), (d) and (f) carry the
+   check.
+d) The mathematics, by machine, not by argument. Each reading maps one real
+   coordinate to one complex coefficient, so $d/dQ=(dQ/dq)^{-1}d/dq$ and the
+   check is exact:</p>
+<pre><code>python3 - &lt;&lt;'PY'
+import sympy as sp
+c, t, tp, x, y, z = sp.symbols('c t tprime x y z', real=True)
+f = sp.Function('f')
+R = {
+  'material':      ([tp, x, y, z], [sp.I*c*tp, x, y, z],
+                    sp.Derivative(f(tp,x,y,z),tp,2)/(-c**2)
+                    + sp.Derivative(f(tp,x,y,z),x,2)
+                    + sp.Derivative(f(tp,x,y,z),y,2)
+                    + sp.Derivative(f(tp,x,y,z),z,2)),
+  'informational': ([t, x, y, z], [c*t, sp.I*x, sp.I*y, sp.I*z],
+                    sp.Derivative(f(t,x,y,z),t,2)/c**2
+                    - sp.Derivative(f(t,x,y,z),x,2)
+                    - sp.Derivative(f(t,x,y,z),y,2)
+                    - sp.Derivative(f(t,x,y,z),z,2)),
+}
+for name, (coords, Q, printed) in R.items():
+    field = f(*coords)
+    total = sum(sp.diff(field, q, 2)/sp.diff(Qq, q)**2 for q, Qq in zip(coords, Q))
+    print(name, sp.simplify(total - printed))
+PY
+</code></pre>
+<p>Both must print $0$. The complex reading is not checked this way and does not
+   need to be: it is the definition, with nothing substituted.
+e) The typesetting. Every $...$ and $$...$$ must parse:
+     node -e '
+     const k=require("/tmp/katex.min.js"),fs=require("fs");
+     const md=fs.readFileSync(process.argv[1],"utf8");
+     const r=(t,d)=&gt;{try{k.renderToString(t,{displayMode:d,throwOnError:true,strict:"ignore"});return 1}catch(e){console.log("FAIL",e.message.slice(0,120));return 0}};
+     let n=0,b=0;
+     for(const m of md.matchAll(/\$\$([\s\S]<em>?)\$\$/g)){n++;b+=!r(m[1],1)}
+     for(const m of md.replace(/\$\$[\s\S]</em>?\$\$/g,"").matchAll(/(?&lt;!\$)\$([^$\n]+?)\$(?!\$)/g)){n++;b+=!r(m[1],0)}
+     console.log("formulas",n,"failures",b,"even",(md.match(/\$/g)||[]).length%2==0);
+     ' ARTICLE
+   Read the note below before you trust a failure here.
+f) The alignment test, which is the real one. A display is aligned when the
+   substitution alone turns it into another of the three, with no sign borrowed
+   from a metric. Put the substitution into the left side by hand and compare
+   with what is printed. The real-metric route fails this test on one line and
+   only one, $+\frac{1}{c^2}\partial^2_{t'}$ instead of
+   $-\frac{1}{c^2}\partial^2_{t'}$; that sign is the whole of what the second
+   metric was buying, and if your article now needs it, you are not finished.
+g) Re-read the article once, at speed, for claims that are now false: "the
+   metric follows from the substitution", "the metric carries the minus", "the
+   signature is mostly minus", "raise the index to contract", "the weight is the
+   negative of the metric". Each is a sentence the greps cannot see.
+h) Re-check every number you did not change, by the check you would have used
+   before. This migration changes notation and must not change a result.</p>
+<h2 id="16-on-the-katex-check">16. On the KaTeX Check</h2>
+<p>The site renders with throwOnError: false and errorColor '#c00': a formula that
+fails is printed in red and the page still builds. So this check is stricter
+than production on purpose. Red text in a migrated article is a defect that no
+build log reports, and the reader sees it as a broken line.</p>
+<p>The site also defines three macros in article_template.html: \slashed, \boxed
+and \fbox. The checker does not load them, so a failure that names one of those
+is not an article failure. Add them and rerun:</p>
+<p>const macros = {'\slashed':'\not{#1}',
+                  '\boxed':'\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+                  '\fbox':'\fcolorbox{black}{transparent}{$\\displaystyle #1$}'};</p>
+<p>The failures that are real are three: an unclosed brace, an unclosed
+\begin{aligned}, and a stray $ inside a display block. Each is created by a
+careless edit, and each is invisible until the page is opened.</p>
+<h2 id="17-the-rules-of-the-run">17. The Rules of the Run</h2>
+<ul>
+<li>Edit the one file in place. No variants, no backups, no "fixed" copies.</li>
+<li>Do not touch another article, even with the same defect. Report it, with file
+  and line, and let the next agent take it.</li>
+<li>Do not rename $\delta_{\mu\nu}$, do not introduce a new symbol for the metric,
+  and do not introduce a new mark of any kind. The point of the migration is
+  fewer names, not more.</li>
+<li>Write the square of the gradient as $\tilde\nabla\tilde\nabla^\natural$.
+  No second metric may enter it, neither $g_{\mu\nu}[\mathbb{M}_-]$ nor
+  $\eta_{\mu\nu}$; the unit metric $\delta_{\mu\nu}$ may be written wherever
+  it is the metric in use, inside a gradient display or anywhere else.</li>
+<li>Keep the article's structure, voice and length unless a section exists only to
+  house the retired object; if so, delete it, and remove its Further Reading and
+  notation-table entries with it.</li>
+<li>Do not commit, do not push, do not write a memory file or a plan file.</li>
+<li>If the article's mathematics genuinely needs the second metric (a curved
+  background, a signature that is not $(1,1,1,1)$, a metric with off-diagonal
+  terms), stop and say so. That is a decision for the corpus owner, not for you.</li>
+</ul>
+<h2 id="18-the-report-format">18. The Report Format</h2>
+<p>REPORT FORMAT
+0. Role audit, first, one line per occurrence: line number, role (1-10 above),
+   and the replacement applied. This goes first because it is the part the greps
+   cannot check and a reader cannot recover it from the diff.
+1. Inventory: occurrence count, lines, split by role.
+2. Edits applied: old form -&gt; new form, one line each, with line numbers.
+3. Deletions: sections and index entries removed, with the reason.
+4. Sign changes: old -&gt; new and the reason; name the place the sign moved to
+   (the $i$, the square, the weight, or the coordinates written out).
+5. Verification: each check of Step 5, with the command and its output.
+6. Untouched and confirmed untouched: the dynamical $g(x)$, the weight
+   $\varepsilon$ and the literature mentions, with before and after counts;
+   and $g[\mathbb{B}]$ at zero.
+7. Open items: anything you could not do under these rules, stated as a question
+   for the corpus owner, not as a workaround you took.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One metric, one gradient, one d'Alembertian, three displays.</strong> The second metric is retired, the tuple is retired with it, and every sign it carried lands in the $i$ of $Q_t=ict'$ or $Q_k=ix'_k$, in the square that follows, in the weight $\varepsilon$, or in coordinates written out.</p>
+<ul>
+<li>The scope is 136 articles, and it is not the gradient articles: 91 write a gradient and 45 never do, so a sweep limited to the gradient leaves 45 articles naming a metric the other 91 no longer use.</li>
+<li>The work is almost never about the gradient. Ten roles split it: a d'Alembertian in 69 articles, the two-frame clause in 36, a kinetic term in 15, the literal tuple in 14, the material basis in 12, a Gram matrix in 11, an interval in 6, the change of frame in 4 before it was deleted.</li>
+<li>Five steps, in order: inventory, classify by role, edit one role at a time, do not fake the sign, verify. Two extra rules bind them: never fabricate a sign, and read the paragraph rather than the sentence.</li>
+<li>Ten traps are on the record, and four of them cost a pass: the doubled sign in rule 8, $\Box$ defined twice with opposite time signs, $g^{\mu\nu}$ confused with the gamma label's raising rule, and $(1,-1,-1,-1)$ mistaken for a metric when it is the weight in 346 of 361 sites.</li>
+<li>Twelve verification checks, of which the ones that matter are the structural greps, the writing patterns that must be empty, the three target displays, the symbolic derivative test that prints $0$, and the alignment test that fails on exactly one line if the second metric has survived under a new name.</li>
+<li>A report in eighteen lines of substance, beginning with the role audit because it is the part a diff cannot recover.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>the unit metric, the only metric of the corpus</td>
+</tr>
+<tr>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$, $(-1,1,1,1)$</td>
+<td>the retired second metric and its tuple; nothing replaces them</td>
+</tr>
+<tr>
+<td>$g[\mathbb{B}]$</td>
+<td>an alias of $\delta_{\mu\nu}$, retired with the bracket</td>
+</tr>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>the complex coefficient, $Q_t=ct+ict'$ and $Q_k=x_k+ix'_k$</td>
+</tr>
+<tr>
+<td>$Q_t=ict'$, $Q_t=ct$</td>
+<td>the material reading and the informational reading, both substitutions of the general coefficient</td>
+</tr>
+<tr>
+<td>$\partial/\partial ict'$</td>
+<td>the derivative's variable, with the $i$ inside and no parentheses</td>
+</tr>
+<tr>
+<td>$\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>the square of the gradient, the definition of $\Box$</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the weight of $\tilde\nabla^{\natural}$, kept, and not a metric</td>
+</tr>
+<tr>
+<td>$\gamma^\mu=-\varepsilon_\mu\gamma_\mu$</td>
+<td>the one raising rule of the corpus, outside this migration</td>
+</tr>
+<tr>
+<td>roles 1–10</td>
+<td>the classification of every hit, §8</td>
+</tr>
+<tr>
+<td>traps 1–10</td>
+<td>the record of what went wrong, §12</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

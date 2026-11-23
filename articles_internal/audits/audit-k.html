@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration $k$: The Space Index in the Physics Corpus — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A plan, complete and measured, not executed. No article has been touched: the counters pass today and the baseline is taken, but the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-math0-the-space-index-in-the-physics-corpus"><strong>Migration $k$: The Space Index in the Physics Corpus</strong></h1>
+<p><em>Status of this file.</em> <strong>A plan, complete and measured, not executed.</strong> No article has been touched: the counters pass today and the baseline is taken, but the ten passes of §8 have not been run.</p>
+<p><em>What the file is for.</em> It moves the space index from $\eta$ to $k$ in the physics and internal corpora, so that a physics subscript and a maths subscript become the same string. It is a whitelist and a set of decisions, because a global substitution of <code>\eta</code> by <code>k</code> corrupts the Minkowski metric, the shear viscosity and the 't Hooft symbols.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Never run a global <code>eta → k</code>.</strong> Every conversion is a pattern from §4 or a family from §7, applied to one letter or one word at a time.</li>
+<li><strong>The whitelist is exhaustive.</strong> A form not in §4 is either a name of §5 or a family of §7, and it stays.</li>
+<li><strong><code>articles_external</code> is read-only, in every pass, without exception.</strong> Its $\eta$ are quotations of other authors and none of them is an index.</li>
+<li><strong>The maths corpus is the reference, not a target.</strong> It is never edited; it is what the physics corpus is being aligned to.</li>
+<li><strong>Copy both trees before pass 1.</strong> <code>PLAN.md</code> forbids git, so there is no undo, and the copy is kept until <code>--post</code> reports 37/37.</li>
+</ol>
+<h2 id="1-the-rule-stated-once">1. The Rule, Stated Once</h2>
+<p>The physics corpus aligns on the maths rule, without exception:</p>
+<blockquote>
+<p>The space index runs over the three space letters, $\sum_{k\in\{x,y,z\}}$.
+— <em>Operator and Calculus Conventions</em> (maths)</p>
+<p>The space index is $\eta$, and $\nu$ is never an index. … no bare $k$ is a space index and no bare $k$ is a wave number.
+— <em>Physics Units and Common Elements Conventions</em>, §<em>A caution on $\nu$</em></p>
+</blockquote>
+<p>The second sentence is repealed. After the migration, in the physics corpus:</p>
+<ul>
+<li>the space index is $k$, running over $x,y,z$;</li>
+<li>the basis is $\vec e_k$;</li>
+<li>the sum is $\sum_{k\in\{x,y,z\}}$, spelled out with its set, as the maths rule requires;</li>
+<li>$\eta$ is no longer an index. It keeps the six scalar and array jobs listed in §4.</li>
+</ul>
+<p>The maths corpus is not edited. It is the reference.</p>
+<h2 id="2-why-this-is-a-slot-rename-not-a-ban-on-the-letter">2. Why This Is a Slot Rename, Not a Ban on the Letter</h2>
+<p>$\eta$ holds two incompatible jobs in the physics corpus today. It is the space index in $\vec e_\eta$, and it is the Minkowski metric in $\eta_{\imath\jmath}$. Both appear in the same articles. Moving the index off $\eta$ fixes that overload as a side effect. The letter $\eta$ then means one thing only: the metric, plus the scalars of §4.</p>
+<h2 id="3-the-size-of-the-change">3. The Size of the Change</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>physics</th>
+<th>internal</th>
+<th>external</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>articles</td>
+<td>678</td>
+<td>92</td>
+<td>891</td>
+</tr>
+<tr>
+<td>containing <code>\eta</code></td>
+<td>457</td>
+<td>31</td>
+<td>41</td>
+</tr>
+<tr>
+<td><code>\eta</code> occurrences</td>
+<td>8 519</td>
+<td>217</td>
+<td>161</td>
+</tr>
+<tr>
+<td><code>\eta</code> in a direct subscript slot, $X_\eta$</td>
+<td>6 050</td>
+<td>112</td>
+<td>7</td>
+</tr>
+<tr>
+<td>declaring $\eta=x,y,z$</td>
+<td>25</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>explicit index uses, $\vec e_\eta$ + $\sum_\eta$ + $\partial_\eta$</td>
+<td>3 128</td>
+<td>47</td>
+<td><strong>0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>So two thirds of the physics corpus is touched, and the change is not one grep. The internal corpus is touched too, lightly: 47 explicit index tokens in 13 articles. The external corpus is not touched at all; §11 says why.</p>
+<h2 id="4-what-converts-the-whitelist">4. What Converts: The Whitelist</h2>
+<p>Every form below has an exact maths counterpart on its right. This is the whole point of the migration: after it, one string equals one string across the two corpora.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Physics today</th>
+<th>Count</th>
+<th>Physics after</th>
+<th>Maths counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\vec e_\eta</code>, <code>\vec e_{\eta}</code></td>
+<td>2 089</td>
+<td><code>\vec e_k</code></td>
+<td><code>\vec e_k</code> 744</td>
+</tr>
+<tr>
+<td><code>\sum_\eta</code>, with its braced, limited and set-valued variants</td>
+<td>867</td>
+<td><code>\sum_{k\in\{x,y,z\}}</code></td>
+<td>34</td>
+</tr>
+<tr>
+<td><code>\partial_\eta</code></td>
+<td>172</td>
+<td><code>\partial_k</code></td>
+<td><code>\partial_k</code> (8)</td>
+</tr>
+<tr>
+<td><code>e_\eta</code>, <code>\bar e_\eta</code> (not the vector unit)</td>
+<td>21</td>
+<td><code>e_k</code></td>
+<td><code>e_k</code></td>
+</tr>
+<tr>
+<td><code>\gamma_\eta</code></td>
+<td>108</td>
+<td><code>\gamma_k</code></td>
+<td><code>\gamma_k</code> (89)</td>
+</tr>
+<tr>
+<td><code>\sigma_\eta</code></td>
+<td>178</td>
+<td><code>\sigma_k</code></td>
+<td><code>\sigma_k</code> (257)</td>
+</tr>
+<tr>
+<td><code>\epsilon_{ij\eta}</code></td>
+<td>142</td>
+<td><code>\epsilon_{ijk}</code></td>
+<td><code>\epsilon_{ijk}</code> (16)</td>
+</tr>
+<tr>
+<td><code>\varepsilon_{ij\eta}</code></td>
+<td>34</td>
+<td><code>\varepsilon_{ijk}</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>\epsilon_{j\eta l}</code></td>
+<td>28</td>
+<td><code>\epsilon_{jkl}</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>\delta_{j\eta}</code>, <code>\delta_{a\eta}</code></td>
+<td>93</td>
+<td><code>\delta_{jk}</code>, <code>\delta_{ak}</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>S_{\Psi,\eta}</code> (spin projection)</td>
+<td>235</td>
+<td><code>S_{\Psi,k}</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>e_\eta^2=-e_t</code>, <code>e_\eta^{2}=-e_t</code></td>
+<td>201</td>
+<td><code>e_k^2=-e_t</code></td>
+<td>110</td>
+</tr>
+<tr>
+<td>$\eta=x,y,z$ declarations</td>
+<td>25 articles</td>
+<td>$k=x,y,z$</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>\eta_{\eta l}</code> (metric, spatial slot)</td>
+<td>2</td>
+<td><code>\eta_{kl}</code></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity line is the clearest case. The corpus writes $\vec e_\eta^2=-e_t$ 307 times in physics and $\vec e_k^2=-e_t$ 158 times in maths. It is one identity written two ways.</p>
+<p><strong>The mixed subscripts are the core of the pass.</strong> 458 physics subscripts carry $\eta$ beside another spatial letter, and they are the reason the migration is not cosmetic: two spatial slots written with two letters must collapse into one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subscript today</th>
+<th>Count</th>
+<th>Reading</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_{j\eta}</code></td>
+<td>198</td>
+<td>two spatial slots</td>
+<td><code>_{jk}</code></td>
+</tr>
+<tr>
+<td><code>_{j\eta l}</code></td>
+<td>91</td>
+<td>three spatial slots</td>
+<td><code>_{jkl}</code></td>
+</tr>
+<tr>
+<td><code>_{i\eta}</code></td>
+<td>35</td>
+<td>two spatial slots</td>
+<td><code>_{ik}</code></td>
+</tr>
+<tr>
+<td><code>_{\Psi,\eta,\lambda\jmath}</code></td>
+<td>24</td>
+<td>label, space, 4-D</td>
+<td><code>_{\Psi,k,\lambda\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{i\vec e_\eta}</code></td>
+<td>17</td>
+<td>slot of a basis element</td>
+<td><code>_{i\vec e_k}</code></td>
+</tr>
+<tr>
+<td><code>_{j\eta 0}</code>, <code>_{j, \eta}</code>, <code>_{i\eta l}</code></td>
+<td>21</td>
+<td>space with time or comma</td>
+<td><code>_{jk0}</code>, <code>_{j,k}</code>, <code>_{ikl}</code></td>
+</tr>
+<tr>
+<td><code>_{\imath\eta}</code>, <code>_{\eta\jmath}</code>, <code>_{\imath \eta}</code></td>
+<td>16</td>
+<td>a 4-D letter beside a space letter</td>
+<td><code>_{\imath k}</code>, <code>_{k\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{j&lt;\eta}</code>, <code>_{5\imath\eta}</code>, <code>_{\eta\ne j}</code></td>
+<td>11</td>
+<td>inequalities and labels</td>
+<td>prose rule</td>
+</tr>
+<tr>
+<td>rest</td>
+<td>45</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The first three rows, 324 tokens, are the pass. In every one of them $\eta$ and a plain $i$ or $j$ stand for the same kind of slot, and after the migration they stand for the same letter. That is what "align the physics with the maths" means concretely: $\delta_{j\eta}$ and $\delta_{ij}$ and $\delta_{jk}$ become one spelling.</p>
+<p>Beyond the table, 3 073 tokens sit on 38 further letters. The heaviest are $r_\eta$ 247, $p_\eta$ 247, $R_\eta$ 192, $A_\eta$ 179, $D_\eta$ 129, $q_\eta$ 123, $Q_\eta$ 120, $\pi_\eta$ 113, $x_\eta$ 68. Each becomes the same letter with a $k$: $p_k$, $A_k$, $\pi_k$.</p>
+<h2 id="5-what-must-not-convert">5. What Must Not Convert</h2>
+<p>The whitelist is a whitelist and not "every $\eta$". These are $\eta$ in other jobs. About 160 tokens.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Form</th>
+<th>Count</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minkowski metric</td>
+<td><code>\eta_{\imath\jmath}</code>, <code>\eta_{\imath\imath}</code>, <code>\eta_{\jmath\jmath}</code>, <code>\eta_{\imath\jmath a}</code></td>
+<td>32</td>
+<td>$\eta_{\imath\jmath}=\mathrm{diag}(-1,+1,+1,+1)$</td>
+</tr>
+<tr>
+<td>shear viscosity</td>
+<td><code>\eta_{\mathrm{sh}}</code>, <code>\eta_{\mathrm{shr}}</code></td>
+<td>36</td>
+<td>$2\eta_{\mathrm{shr}}S_{ij}$</td>
+</tr>
+<tr>
+<td>inner conjugation</td>
+<td><code>\eta_C</code>, <code>\eta_T</code></td>
+<td>28</td>
+<td>$F\mapsto\eta_C F^{\dagger}\eta_C^{-1}$</td>
+</tr>
+<tr>
+<td>polarization</td>
+<td><code>\eta_P</code></td>
+<td>19</td>
+<td></td>
+</tr>
+<tr>
+<td>small parameters</td>
+<td><code>\eta_1</code>, <code>\eta_2</code>, <code>\eta_f</code>, <code>\eta_r</code>, <code>\eta_a</code></td>
+<td>34</td>
+<td>$\eta_2=\theta\eta$, $\lvert\theta\rvert\ll1$</td>
+</tr>
+<tr>
+<td>’t Hooft symbols</td>
+<td><code>\eta_{ab}</code>, <code>\eta_{ac}</code>, <code>\eta_{4\eta a}</code>, <code>\eta_{j\eta a}</code></td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>metric with 4d slots</td>
+<td><code>\eta_{\lambda\lambda}</code></td>
+<td>1</td>
+<td>see D4</td>
+</tr>
+</tbody>
+</table></div>
+<p>Deleting or converting these breaks the physics. The migration must be applied pattern by pattern, from §3, never as a global <code>eta → k</code>.</p>
+<h2 id="6-the-collision-math56-is-already-occupied">6. The Collision: $k$ Is Already Occupied</h2>
+<p>$k$ is not free. It also carries a countable family, and the maths corpus carries the same overload: there $k$ is the space index in $\vec e_k$ and the base field in $k$-algebra, in 357 files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Count</th>
+<th>Articles</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bare <code>$k$</code></td>
+<td>217</td>
+<td>83</td>
+<td>rank, dimension, "for every $k$"</td>
+</tr>
+<tr>
+<td><code>$k$-th</code></td>
+<td>101</td>
+<td>49</td>
+<td>ordinal</td>
+</tr>
+<tr>
+<td><code>\sum_k</code></td>
+<td>79</td>
+<td>34</td>
+<td>sum over a family (or over space)</td>
+</tr>
+<tr>
+<td><code>\vec e_k</code></td>
+<td>78</td>
+<td>16</td>
+<td><strong>already the space index — conforms after the migration</strong></td>
+</tr>
+<tr>
+<td><code>2k</code></td>
+<td>53</td>
+<td>27</td>
+<td>arithmetic</td>
+</tr>
+<tr>
+<td><code>T^{(k)}</code></td>
+<td>27</td>
+<td>2</td>
+<td>tensor rank</td>
+</tr>
+<tr>
+<td><code>\omega_k</code></td>
+<td>26</td>
+<td>11</td>
+<td>mode frequency</td>
+</tr>
+<tr>
+<td><code>\lambda_k</code></td>
+<td>23</td>
+<td>2</td>
+<td>exponent</td>
+</tr>
+<tr>
+<td><code>U(k)</code></td>
+<td>17</td>
+<td>3</td>
+<td>dimension</td>
+</tr>
+<tr>
+<td><code>A_k</code></td>
+<td>12</td>
+<td>5</td>
+<td>mode weight</td>
+</tr>
+<tr>
+<td>$\lvert k\rangle$</td>
+<td>4</td>
+<td>3</td>
+<td>Fock level</td>
+</tr>
+<tr>
+<td><code>x_k</code></td>
+<td>3</td>
+<td>2</td>
+<td>lattice site</td>
+</tr>
+<tr>
+<td><code>\rho_{kk}</code></td>
+<td>2</td>
+<td>2</td>
+<td>population</td>
+</tr>
+</tbody>
+</table></div>
+<p>Five of these are marked and cannot be confused with an index: $T^{(k)}$ (superscript), $U(k)$ (argument), $2k$ (arithmetic), $\lvert k\rangle$ (ket), $k$-th (prose). They stay.</p>
+<p>The ambiguous cases are not one problem but five families, and each has a word available.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Today</th>
+<th>Count</th>
+<th>Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode weight</td>
+<td>$A_k$</td>
+<td>13</td>
+<td>weight of mode $k$, in $\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$</td>
+</tr>
+<tr>
+<td>mode frequency</td>
+<td>$\omega_k$</td>
+<td>25</td>
+<td>$\omega_k$ for a mode whose wave vector is $\vec\nu_\Phi$</td>
+</tr>
+<tr>
+<td>lattice site</td>
+<td>$x_k$</td>
+<td>6</td>
+<td>$k$-th slice of the time-sliced integral</td>
+</tr>
+<tr>
+<td>Fock level</td>
+<td>$\lvert k\rangle$, $\rho_{kk}$</td>
+<td>4 + 2</td>
+<td>occupation of level $k$</td>
+</tr>
+<tr>
+<td>wave-number component</td>
+<td>$k_\eta$</td>
+<td>32</td>
+<td>$\partial/\partial r_\eta\mapsto ik_\eta$ in the Fourier articles</td>
+</tr>
+</tbody>
+</table></div>
+<p>The letter $n$ is not the answer, and my earlier D1 was wrong to say it was. $n$ is already taken twice over: $\omega_n=(2n+1)\pi/\beta$ is the Matsubara order, 118 sites in physics and 208 in maths, and $\lambda_n$ is 18 in physics and 195 in maths. A family moved onto $n$ collides with both.</p>
+<h2 id="7-the-decisions-the-long-subscript">7. The Decisions: The Long Subscript</h2>
+<p>Six rules, then the calls. The rules are the house style of this corpus already, not a new invention: <code>\mathrm</code> in a subscript runs at $\omega_{\mathrm{\ldots}}$ 129, $A_{\mathrm{\ldots}}$ 211, $x_{\mathrm{\ldots}}$ 67, $k_{\mathrm{\ldots}}$ 44, $\rho_{\mathrm{\ldots}}$ 1 584.</p>
+<p><strong>R1.</strong> A space slot is $k$, one letter, and it is the only single letter that stands for a direction.
+<strong>R2.</strong> Every other count is a word, not a letter: $A_{\mathrm{mode},m}$, $\omega_{\mathrm{mode},m}$, $x_{\mathrm{site},n}$, $\rho_{\mathrm{Fock},n}$. The word names the family; the running letter after the comma carries no meaning and cannot collide.
+<strong>R3.</strong> Two slots of different kinds are separated by a comma: $h_{t,k}$, $\nu_{\Phi,k}$, $S_{\Psi,k}$.
+<strong>R4.</strong> Two spatial slots are written solid, with no comma: $\delta_{jk}$, $\epsilon_{jkl}$.
+<strong>R5.</strong> A name stays a word: $\eta_{\mathrm{sh}}$, $\eta_C$, $\Xi_{\mathrm{sp},L}$, $\Gamma_{\mathrm{mod}}$.
+<strong>R6.</strong> A ket keeps its letter, with the family word outside if the reading is not the Fock level: $\lvert n\rangle$, $\lvert n\rangle_{\mathrm{Fock}}$.</p>
+<p>The ten families, each with its exact count. These are the only ten; anything else that carries a $k$ is marked or is a direction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Family</th>
+<th>Today</th>
+<th>Count</th>
+<th>Target</th>
+<th>Precedent in this corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>mode weight</td>
+<td>$A_k$</td>
+<td>12</td>
+<td>$A_{\mathrm{mode},m}$</td>
+<td><code>\mathrm{mode}</code> already used 9 times</td>
+</tr>
+<tr>
+<td>2</td>
+<td>mode frequency</td>
+<td>$\omega_k$</td>
+<td>26</td>
+<td>$\omega_{\mathrm{mode},m}$</td>
+<td>same word, same slot</td>
+</tr>
+<tr>
+<td>3</td>
+<td>slice index</td>
+<td>$x_k$, $dx_k$, $x_{k+1}$</td>
+<td>3 + 2 + 1</td>
+<td>$x_{\mathrm{site},n}$</td>
+<td><code>\mathrm{site}</code> free, names the slice</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Fock level</td>
+<td>$\lvert k\rangle$</td>
+<td>4</td>
+<td>$\lvert n\rangle$</td>
+<td>21 $\lvert n\rangle$ already in physics</td>
+</tr>
+<tr>
+<td>5</td>
+<td>population</td>
+<td>$\rho_{kk}$</td>
+<td>2</td>
+<td>$\rho_{\mathrm{Fock},n}$</td>
+<td><code>\mathrm{Fock}</code> used once</td>
+</tr>
+<tr>
+<td>6</td>
+<td>wave-number component</td>
+<td>$k_\eta$</td>
+<td>21</td>
+<td>$\nu_{\Phi,k}$</td>
+<td>$\nu_{\Phi,x},\nu_{\Phi,y},\nu_{\Phi,z}$ already in the conventions</td>
+</tr>
+<tr>
+<td>7</td>
+<td>sum over a family</td>
+<td>$\sum_k$</td>
+<td>79</td>
+<td>$\sum_{\mathrm{modes}}$</td>
+<td>a word, no running letter, no collision</td>
+</tr>
+<tr>
+<td>8</td>
+<td>tensor rank, dimension</td>
+<td>$T^{(k)}$, $\mathrm{U}(k)$</td>
+<td>44</td>
+<td>unchanged</td>
+<td>superscript or argument, never a slot</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Lyapunov direction</td>
+<td>$\lambda_k$</td>
+<td>23</td>
+<td>unchanged</td>
+<td>$k$ is a real direction: $\sum_k\lambda_k$, $\lambda_k\vec{u_s}_k^2$</td>
+</tr>
+<tr>
+<td>10</td>
+<td>basis-name coefficient</td>
+<td>$k_\eta$</td>
+<td>11</td>
+<td>unchanged</td>
+<td>$\eta$ names a basis element: $k_\alpha\vec q+k_\beta\vec q^*+k_\zeta N+k_\eta\bar N$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three words are banned as labels, and the reason is arithmetic, not taste. <code>\mathrm{phy}</code> and <code>\mathrm{phys}</code> are 0 and 8: a truncation is not a word this corpus uses, so write the full word. <code>\mathrm{mod}</code> is 283 in physics and 269 in maths and already means "modified" or "modular", so it cannot mean "mode": write <code>\mathrm{mode}</code>.</p>
+<p>The internal corpus adds two corrections, and they are why it is not a copy of the physics pass.</p>
+<p>$k$ there is sometimes a genuine component: $\langle x,y\rangle=\sum\bar x_ky_k$ and $q_k=x_k$, 3 tokens. Those stay $x_k$, because after the pass $k$ is the space index and that is exactly what they are.</p>
+<p>$\lambda_k$ there is the Gell-Mann family, $i\lambda_k$ for the eight matrices, 5 tokens, with $\sum_k\lambda_k=\operatorname{tr}X$. That is a family label, not a direction, and the same string means a direction in physics. Recommended: $\lambda_{\mathrm{GM},m}$. It is the only place where the two corpora disagree on what $k$ means, so it is worth a sentence in the internal article.</p>
+<p><strong>D1 — withdrawn.</strong> The family label does not move to $n$ and does not move anywhere. Each family gets its word, by R2. This is cheaper than D1 was: 46 tokens gain a word instead of 43 tokens changing letter, and nothing new is occupied.</p>
+<p><strong>D2 — plain letters for three spatial slots, dotless for four.</strong> $\epsilon_{ij\eta}\to\epsilon_{ijk}$ (142), $\varepsilon_{ij\eta}\to\varepsilon_{ijk}$ (34), $\epsilon_{j\eta l}\to\epsilon_{jkl}$ (28), $\delta_{j\eta}\to\delta_{jk}$ (93), and the 458 mixed subscripts collapse to one letter: $_{j\eta}\to_{jk}$ (198), $_{j\eta l}\to_{jkl}$ (91), $_{i\eta}\to_{ik}$ (35). Four slots stay dotless, $\epsilon_{\imath\jmath\rho\sigma}$ (109). Arity decides, not taste.</p>
+<p><strong>D3 — no $\lambda$ in any index slot.</strong> The twelve spellings that carry it, 124 tokens, all resolve to $\epsilon_{ijk}$ or $\epsilon_{\imath\jmath\rho\sigma}$.</p>
+<p><strong>D4 — $\eta_{\lambda\lambda}\to\eta_{\rho\rho}$.</strong> One token, a metric with two 4-D slots. Never $k$.</p>
+<p><strong>D5 — $k_\eta\to\nu_{\Phi,k}$, not $k_k$.</strong> $k_\eta$ is a wave number: the Fourier articles write $\partial/\partial r_\eta\mapsto ik_\eta$. The convention paragraph says a wave number is $\nu$ and gives the component spelling as $\nu_{\Phi,\imath}$, "with $\nu_{\Phi,x},\nu_{\Phi,y},\nu_{\Phi,z}$ the three components of $\vec\nu_\Phi$". So $k_k$ would break two rules at once, the one that bans $k$ as a wave number and the one that makes a component a $\nu$. 21 tokens in the seven Fourier articles. The 11 tokens in <em>The Chiral Algebra…</em> are coefficients named after a basis element, $k_\alpha\vec q+k_\beta\vec q^*+k_\zeta N+k_\eta\bar N$, and they stay.</p>
+<p><strong>D6 — $h_{0\eta}\to h_{t,k}$, with the comma.</strong> The time slot is $t$ (the corpus writes $h_{t\ldots}$ 73 against $h_{0\ldots}$ 28), and R3 puts a comma between the two kinds. Eight tokens in physics, four in internal. The same display in $F$ mixes $0$ and $t$ ($F_{0\eta}$ 18, $F_{t\eta}$ 12) and becomes $F_{t,k}$.</p>
+<p><strong>D7 — the internal corpus keeps its four names.</strong> 217 tokens, 31 articles, one family changes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Site</th>
+<th>Call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\eta_j\to\eta_k$</td>
+<td><em>The Rotations…</em>, 2 tokens</td>
+<td>convert: $\eta$ is a frame vector there, so $\eta_t,\eta_k$ matches $e_t,\vec e_k$</td>
+</tr>
+<tr>
+<td>$\eta_t,\eta_x,\eta_y,\eta_z$</td>
+<td>same, 6 tokens</td>
+<td>untouched: $t,x,y,z$ are already the letters</td>
+</tr>
+<tr>
+<td>$\eta=e/(mc^2)$</td>
+<td><em>How Takabayasi…</em>, 3 tokens</td>
+<td>keep: that article's notation table already lists it beside $\eta_{\imath\jmath}$, lines 462 and 481</td>
+</tr>
+<tr>
+<td>$\eta=10^{-4}$, admixture</td>
+<td><em>The Two Integrals…</em>, 4 tokens</td>
+<td>keep: a scalar amplitude, no slot</td>
+</tr>
+<tr>
+<td>$\eta_C=i\gamma_2$</td>
+<td><em>The Non-Hermitian Adjoint…</em>, 1 token</td>
+<td>keep: a name</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>D8 — the external corpus is not touched, ever.</strong> 161 tokens, zero indices, all quotations of other authors.</p>
+<p><strong>D9 — $\lambda_k$ is not touched.</strong> 23 tokens, 22 of them in <em>The Lyapunov Exponent…</em>, where $k$ is the direction: $\sum_k\lambda_k$, and $\lambda_k\vec{u_s}_k^2$ in the weighted average. That is the exponent along direction $k$, which is what R1 says a $k$ subscript means. The one token in the conventions paragraph is the sentence being rewritten in pass 1.</p>
+<h2 id="8-the-execution-order-ten-passes">8. The Execution Order: Ten Passes</h2>
+<p>Ten passes. After each, <code>python3 /tmp/k-migration/check-k.py --post</code> must improve and never regress a row.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pass</th>
+<th>Files</th>
+<th>Tokens</th>
+<th>Exact source → target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. conventions</td>
+<td>3</td>
+<td>3</td>
+<td>the three sentences that declare $\eta$ the index</td>
+</tr>
+<tr>
+<td>2. basis</td>
+<td>330 + 13</td>
+<td>2 089 + 28</td>
+<td><code>\vec e_\eta</code> → <code>\vec e_k</code></td>
+</tr>
+<tr>
+<td>3. sums</td>
+<td>193 + 6</td>
+<td>867 + 13</td>
+<td><code>\sum_\eta</code> → <code>\sum_{k\in\{x,y,z\}}</code></td>
+</tr>
+<tr>
+<td>4. derivatives</td>
+<td>40 + 5</td>
+<td>172 + 6</td>
+<td><code>\partial_\eta</code> → <code>\partial_k</code></td>
+</tr>
+<tr>
+<td>5. components</td>
+<td>330</td>
+<td>3 073</td>
+<td>one host letter per pass, so a mistake is one letter wide</td>
+</tr>
+<tr>
+<td>6. signs and deltas</td>
+<td>80</td>
+<td>239 + 458</td>
+<td>three slots plain <code>ijk</code>, four slots dotless <code>ıȷρσ</code></td>
+</tr>
+<tr>
+<td>7. fractions and metrics</td>
+<td>40</td>
+<td>4</td>
+<td><code>\eta_{\eta l}</code> → <code>\eta_{k l}</code>, <code>\eta_{\lambda\lambda}</code> → <code>\eta_{\rho\rho}</code></td>
+</tr>
+<tr>
+<td>8. family words</td>
+<td>45</td>
+<td>46 + 79</td>
+<td>families 1–5 and 7 of §6</td>
+</tr>
+<tr>
+<td>9. wave-number components</td>
+<td>7</td>
+<td>21</td>
+<td><code>k_\eta</code> → <code>\nu_{\Phi,k}</code>; the 11 names stay</td>
+</tr>
+<tr>
+<td>10. pages and internal names</td>
+<td>3 + 1</td>
+<td>7 + 2</td>
+<td>the menus, then $\eta_j\to\eta_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Passes 2 to 9 run on <code>articles_physics</code> first, then on <code>articles_internal</code>, where the same patterns apply with the two corrections of §6: internal $x_k$ stays, internal $\lambda_k$ becomes $\lambda_{\mathrm{GM},m}$.</p>
+<p>Nothing runs as a global <code>eta → k</code>. Every pass is a pattern from §3 or a family from §6, applied to one letter or one word at a time.</p>
+<h2 id="9-the-verification-37-gates">9. The Verification: 37 Gates</h2>
+<p>The gates are exact integers, and they live in a script, not in a comment. <code>/tmp/k-migration/check-k.py</code> holds 37 rows; each row is a labelled regex, a corpus, a count before and a count after.</p>
+<pre><code class="language-bash">python3 /tmp/k-migration/check-k.py --pre    # 37/37 must match, today
+python3 /tmp/k-migration/check-k.py --post   # 37/37 must match, after the last pass
+</code></pre>
+<p><code>--pre</code> passes now. That is the guarantee: the baseline is measured, not asserted, and a single drift stops the run with <code>FAIL</code> on the row. The arithmetic links the two columns: a retired form drops to 0, its target gains every token of its source, and a kept form is identical in both columns.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\vec e_\eta</code></td>
+<td>2 089</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>\vec e_k</code></td>
+<td>78</td>
+<td>2 167</td>
+</tr>
+<tr>
+<td><code>\sum_\eta</code></td>
+<td>867</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>\sum_{k\in\{x,y,z\}}</code></td>
+<td>0</td>
+<td>867</td>
+</tr>
+<tr>
+<td><code>\partial_\eta</code></td>
+<td>172</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>\partial_k</code></td>
+<td>8</td>
+<td>180</td>
+</tr>
+<tr>
+<td><code>\epsilon_{...\eta...}</code></td>
+<td>239</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>A_k</code> / <code>A_{\mathrm{mode}}</code></td>
+<td>12 / 0</td>
+<td>0 / 12</td>
+</tr>
+<tr>
+<td><code>\omega_k</code> / <code>\omega_{\mathrm{mode}}</code></td>
+<td>26 / 0</td>
+<td>0 / 26</td>
+</tr>
+<tr>
+<td><code>x_k</code>, <code>dx_k</code>, <code>x_{k+1}</code> / <code>x_{\mathrm{site}}</code></td>
+<td>6 / 0</td>
+<td>0 / 6</td>
+</tr>
+<tr>
+<td><code>\rho_{kk}</code> / <code>\rho_{\mathrm{Fock}}</code></td>
+<td>2 / 0</td>
+<td>0 / 2</td>
+</tr>
+<tr>
+<td><code>\lvert k\rangle</code> / <code>\lvert n\rangle</code></td>
+<td>4 / 21</td>
+<td>0 / 25</td>
+</tr>
+<tr>
+<td><code>k_\eta</code> (component) / <code>\nu_{\Phi,k}</code></td>
+<td>21 / 0</td>
+<td>0 / 21</td>
+</tr>
+<tr>
+<td><code>k_\eta</code> (name)</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>\lambda_k</code> physics</td>
+<td>23</td>
+<td>23</td>
+</tr>
+<tr>
+<td><code>\eta_{\imath\jmath}</code></td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><code>\eta_{\mathrm{sh...}}</code></td>
+<td>36</td>
+<td>36</td>
+</tr>
+<tr>
+<td>internal <code>\vec e_\eta</code> → <code>\vec e_k</code></td>
+<td>28 → 168</td>
+<td>0 → 196</td>
+</tr>
+<tr>
+<td>internal <code>\sum_\eta</code></td>
+<td>13</td>
+<td>0</td>
+</tr>
+<tr>
+<td>internal <code>\partial_\eta</code> → <code>\partial_k</code></td>
+<td>6 → 1</td>
+<td>0 → 7</td>
+</tr>
+<tr>
+<td>internal <code>\eta_j</code> → <code>\eta_k</code></td>
+<td>2 → 0</td>
+<td>0 → 2</td>
+</tr>
+<tr>
+<td>internal <code>\eta=e/(mc^2)</code>, <code>\eta_C</code></td>
+<td>1, 1</td>
+<td>1, 1</td>
+</tr>
+<tr>
+<td>internal <code>\lambda_k</code></td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>external <code>\eta</code></td>
+<td>161</td>
+<td>161</td>
+</tr>
+<tr>
+<td>pages <code>\vec e_\eta</code></td>
+<td>7</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two checks stay manual, because no regex reads a thesis: no display may mix $\vec e_k$ with $\vec e_\eta$, and no article may use $k$ as a direction and as a family label in the same display. Both are caught by reading the 20-article sample that the KaTeX check already touches.</p>
+<h2 id="10-the-risks">10. The Risks</h2>
+<p>The migration is not reversible by one command: it is a rename of one slot of one letter, applied to 6 050 tokens in 457 articles, and its correctness depends on a per-pattern whitelist. A global substitution of <code>\eta</code> by <code>k</code> corrupts the Minkowski metric, the shear viscosity and the ’t Hooft symbols, and is not an acceptable shortcut.</p>
+<p>It also forces D1. After step 5 the letter $k$ names two things in physics, a direction in space and a countable family, exactly as it already does in maths where it is both the space index and the base field. The migration can align with maths on the index and copy maths on the overload, or align on the index and repair the overload in both corpora. That second choice is a second migration and is out of scope here.</p>
+<h2 id="11-the-internal-corpus">11. The Internal Corpus</h2>
+<p><code>articles_internal</code> is included in the migration. It is 92 articles, 31 carry $\eta$, 217 tokens, and it inherits the physics conventions without restating them: no internal article declares the space index. It converts as the physics corpus does, with three names that it does not.</p>
+<p><strong>What converts — 46 explicit tokens and about 100 components.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Count</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\vec e_\eta</code>, <code>\vec e_{\eta}</code></td>
+<td>28 (26 unbraced)</td>
+<td>13 articles</td>
+</tr>
+<tr>
+<td><code>\sum_\eta</code>, <code>\sum_{\eta}</code>, <code>\sum_{\eta=1}^{3}</code>, <code>\sum_{\eta=x,y,z}</code></td>
+<td>13</td>
+<td>6 articles</td>
+</tr>
+<tr>
+<td><code>\partial_\eta</code></td>
+<td>5</td>
+<td>the two-integrals, the eikonal inventory</td>
+</tr>
+<tr>
+<td><code>\pi_\eta</code>, <code>E_\eta</code>, <code>H_\eta</code>, <code>q_\eta</code>, <code>p_\eta</code>, <code>\bar h_{\eta\eta}</code>, <code>\tilde S_{\Psi,\eta}</code>, <code>\gamma_\eta</code>, <code>\Gamma_\eta</code>, <code>R_\eta</code></td>
+<td>~100</td>
+<td>throughout</td>
+</tr>
+</tbody>
+</table></div>
+<p>The internal corpus also carries tensors whose time slot is written $0$: $h_{0\eta}$, $h_{\eta l}$, $\Pi_{i\eta}$, $P_{ij,\eta l}$. The spatial slot converts; the $0$ does not. See D6.</p>
+<p><strong>What does not convert — 4 distinct names, 14 tokens.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Form</th>
+<th>Site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the charge-to-mass ratio $\eta=e/(mc^{2})$</td>
+<td><code>-\eta F_{\imath\jmath}</code>, <code>\eta=e/(mc^2)</code></td>
+<td><em>How Takabayasi Built the Dirac Fluid</em>, lines 129, 132, 481</td>
+</tr>
+<tr>
+<td>the frame vector $\eta$</td>
+<td><code>\eta_t\eta_x\eta_y\eta_z</code>, <code>\eta_j\Omega=-\Omega\eta_j</code>, <code>\mathrm{Ad}^{\alpha}_{\Omega}(\eta)=-\eta</code></td>
+<td><em>The Rotations, the Boosts and the Groups</em>, 17 tokens</td>
+</tr>
+<tr>
+<td>the admixture amplitude $\eta=10^{-4}$</td>
+<td><code>2\eta\cos(\Delta\nu x)</code>, <code>2\pi^{2}\eta^{2}(\Delta\nu)^{2}</code></td>
+<td><em>The Two Integrals…</em>, lines 276–284</td>
+</tr>
+<tr>
+<td>the conjugation matrix $\eta_C$</td>
+<td><code>\eta_C=i\gamma_2</code></td>
+<td><em>The Non-Hermitian Adjoint…</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these are worse than the physics ones.</p>
+<p>In <em>How Takabayasi Built the Dirac Fluid</em> the same article writes $\eta=e/(mc^{2})$ at line 129 and the metric $\eta_{\imath\jmath}=\mathrm{diag}(+1,-1,-1,-1)$ at line 462. The letter already means two things inside one file, and the migration neither causes nor fixes that. It must leave both.</p>
+<p>In <em>The Rotations, the Boosts and the Groups</em> the letter $\eta$ is a <em>vector of the envelope</em>, and $\eta_j$ is its $j$-th member. Converting $\eta_j$ to $\eta_k$ would be correct for the index and would leave a vector whose space parts are labelled $k$ while its name is $\eta$. The honest fix is to rename the vector, for example to $u$ or $\ell$, and then write $u_j$. That is a name change inside an article, and it is not in scope unless you add it as a decision.</p>
+<p><strong>The internal corpus is already half-migrated on the letters.</strong> 142 plain $i$/$j$ subscript tokens, <code>\delta_{ij}</code> 18, <code>\epsilon_{ijk}</code> 6. It is the only corpus where the old plain spellings and the new dotless ones sit next to a space index that is still $\eta$. The $k$ pass must not convert those plain spellings; they belong to D2.</p>
+<h2 id="12-the-external-corpus-is-excluded">12. The External Corpus Is Excluded</h2>
+<p><code>articles_external</code> holds 891 articles, 41 carry $\eta$, 161 tokens, and <strong>not one of them is a space index</strong>: no $\vec e_\eta$, no $\sum_\eta$, no $\partial_\eta$, no sign symbol with $\eta$ in a slot. What the 161 tokens are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Example</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minkowski or extra-dimensional metric</td>
+<td>$\eta^{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>Gresnigt, Blanke, Do we understand the internal space</td>
+</tr>
+<tr>
+<td>meson $\eta$, $\eta'$</td>
+<td>$m_\eta$, $\eta\to\gamma\gamma$</td>
+<td>Takabayasi, Gherghetta</td>
+</tr>
+<tr>
+<td>a coupling or scan parameter</td>
+<td>$\eta=0.21$, $\xi=\lambda M/\eta m$</td>
+<td>Aulakh</td>
+</tr>
+<tr>
+<td>conformal time</td>
+<td>$ds^{2}=a^{2}(\eta)(d\eta^{2}-d\vec x^{2})$</td>
+<td>Addazi</td>
+</tr>
+<tr>
+<td>an efficiency</td>
+<td>$\eta=W/Q_{in}$</td>
+<td>Visser, heat engines</td>
+</tr>
+<tr>
+<td>a noise or source field</td>
+<td>$\eta(\vec x,t)$</td>
+<td>Visser, effective potential</td>
+</tr>
+<tr>
+<td>an auxiliary vector with $\xi$</td>
+<td>$\xi_\mu$, $\eta_\mu$</td>
+<td>Takabayasi, relativistic mechanics</td>
+</tr>
+</tbody>
+</table></div>
+<p>These are other authors' papers, quoted. Their typography is not ours to change, and none of them conflicts with the new rule, because none of them uses $\eta$ as an index. Migrating them would be an edit to a quotation and would break the citation.</p>
+<p>The rule for the agent is one line: <code>articles_external</code> is read-only, in every pass, without exception.</p>
+<h2 id="13-how-to-run-it">13. How to Run It</h2>
+<p>The plan is complete. The counters pass. Nothing else needs a decision.</p>
+<pre><code class="language-bash">python3 /tmp/k-migration/check-k.py --pre      # 37/37, the baseline
+cp -a articles_physics articles_internal /tmp/k-backup/
+python3 /tmp/k-migration/check-k.py --post     # after each pass, must reach 37/37
+</code></pre>
+<p>The ten passes are §7. The whitelist is §3. The families are §6. The retirements are §4. The corpus boundaries are §10 and §11. The only judgement left inside a pass is buried in the prose, and each such case is named where it occurs: 79 $\sum_k$, the 458 mixed subscripts, the 11 $k_\eta$ names, and internal $\lambda_k$.</p>
+<p><strong>What to expect from the first run.</strong> Passes 2 to 4 are mechanical and should clear 3 128 tokens without a single manual read. Passes 5 and 6 are the long tail. Passes 8 and 9 are 46 tokens in 45 files and are the only ones where a wrong call is plausible rather than impossible.</p>
+<p><strong>The one risk that is not about notation.</strong> <code>PLAN.md</code> forbids git. There is no undo. Copy the trees before pass 1 and keep the copy until <code>--post</code> reports 37/37.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One slot, two corpora, one whitelist.</strong> The space index is $k$, running over $x,y,z$; $\eta$ keeps the metric and the scalars, and the maths corpus is the reference that decides the spelling.</p>
+<ul>
+<li>6 050 $\eta$ stand in a direct subscript slot in 457 physics articles, out of 8 519 occurrences; 3 128 are explicit index uses, and 458 are mixed subscripts that collapse to one letter.</li>
+<li>The whitelist of §4 gives every conversion an exact maths counterpart, so that after the pass one string equals one string across the two corpora.</li>
+<li>The keep-list of §5 is what a global substitution destroys: the Minkowski metric, the shear viscosity, the inner conjugation, the polarization, five small parameters and the 't Hooft symbols, about 160 tokens.</li>
+<li>$k$ is already occupied by ten families, and D1 is withdrawn: each family takes a word, not a letter, because $n$ collides with the Matsubara order and the letters are all spent.</li>
+<li>Ten passes, 37 gate rows, and a baseline that already reads 37/37; the judgement is confined to 46 tokens in 45 files.</li>
+<li>The external corpus is never touched: 161 tokens, none of them an index, all of them quotations.</li>
+<li>The pass is not reversible, and the only protection is a copy of both trees taken before pass 1.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the space index, running over $x,y,z$; never a family label after the pass</td>
+</tr>
+<tr>
+<td>$\vec e_k$</td>
+<td>the basis vector of the space direction $k$</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>after the pass: the Minkowski metric, a viscosity, a conjugation, a polarization, a small parameter</td>
+</tr>
+<tr>
+<td>$\eta_{\mathrm{sh}}$</td>
+<td>the shear viscosity, a name and not a slot</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{mode},m}$</td>
+<td>a family weight: the word names the family, the letter after the comma carries no meaning</td>
+</tr>
+<tr>
+<td>$\nu_{\Phi,k}$</td>
+<td>the wave-number component along $k$</td>
+</tr>
+<tr>
+<td>$\lambda_{\mathrm{GM},m}$</td>
+<td>the Gell-Mann family, internal corpus only</td>
+</tr>
+<tr>
+<td>37/37</td>
+<td>the gate count that must hold before and after every pass</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

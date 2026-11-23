@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Nu: The Wavenumber $\nu$ and the Element $\tilde\Upsilon$ — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Decided and measured, not yet executed. The decision is fixed and the census is taken; the order of operations of §10 has not been…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-nu-the-wavenumber-math0-and-the-element-math1"><strong>Migration Nu: The Wavenumber $\nu$ and the Element $\tilde\Upsilon$</strong></h1>
+<p><em>Status of this file.</em> <strong>Decided and measured, not yet executed.</strong> The decision is fixed and the census is taken; the order of operations of §10 has not been run. Counts are as of the day of measurement, on <code>articles_physics</code> with 678 articles.</p>
+<p><em>What the file is for.</em> It is the whole bookkeeping of one substitution, $k=2\pi\nu$. The substitution is one line; everything else here exists because the naive version of it, a search-and-replace that leaves the $2\pi$ alone, produces a corpus wrong by $2\pi$ in every exponent and by $4\pi^{2}$ in every d'Alembertian, and renders perfectly while doing so.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>This is a change of unit, not a rename.</strong> Every $k$ becomes $2\pi\nu$, and the $2\pi$ moves from one side of the equation to the other. It is never deleted.</li>
+<li><strong>After the migration, a $2\pi$ next to a $\nu$ marks an angle, a derivative or an angular frequency, and nothing else.</strong> A $2\pi$ in a pure definition is a missed simplification; a missing $2\pi$ in a phase is a factor error.</li>
+<li><strong>A wavenumber is never bare.</strong> Every $\nu$ carries a subscript, and a roman subscript means the neutrino.</li>
+<li><strong>The keep-list of §5 is read before the first edit.</strong> $k_B$, the integer $k$, $\kappa$ outside the Cauchy shift, and the kaons do not migrate.</li>
+<li><strong>Numbers are recomputed, not re-lettered.</strong> The numeric test of §11, to $10^{-12}$ relative, is the only one that catches a missing $2\pi$.</li>
+</ol>
+<h2 id="1-the-decision">1. The Decision</h2>
+<p>The letter $k$ loses the role of wavenumber everywhere in the corpus. The wavenumber becomes $\nu=k/2\pi=1/\lambda$, the number of wavelengths per unit length, the <em>spectroscopic wavenumber</em> and the spatial frequency. The wave-number biquaternion $\tilde K_{\Phi}$ becomes $\tilde\Upsilon_{\Phi}$ and is defined by division by $h$ alone,</p>
+<p>$$
+\tilde\Upsilon_{\Phi}:=\frac{\tilde P_{\Phi}}{h},
+$$</p>
+<p>instead of $\tilde K_{\Phi}=\frac{2\pi\tilde P_{\Phi}}{h}$.</p>
+<p><strong>This is a change of unit and not a rename.</strong> Every $k$ in the corpus equals $2\pi\nu$, so every formula keeps its value only if the $2\pi$ is put back where it belongs. A search-and-replace that maps <code>k_m</code> to <code>\nu_m</code> and leaves the $2\pi$ alone produces a corpus wrong by $2\pi$ in the exponent and by $4\pi^{2}$ in the d'Alembertian, and it will render perfectly while doing so. The whole content of this file is the bookkeeping that prevents that.</p>
+<p><strong>Why the change pays.</strong> With $h$ in the corpus and not $\hbar$, the new definition is exact in one symbol: $\nu=p/h$ and $\tilde\Upsilon_{\Phi}=\tilde P_{\Phi}/h$. The wavelength becomes a plain reciprocal, $\lambda=1/\nu$, the Compton wavelength becomes $1/\nu_m$ with no $2\pi$ in sight, and the corpus stops carrying two incompatible readings of $k$: an angle per unit length in one section and a count of waves per unit length in another. The $2\pi$ survives only where an angle, a derivative or an angular frequency is meant, which is exactly where the factor is physical.</p>
+<p>The cost is explicit and is paid in one place: the <em>radian</em> reading. The corpus's own "distance per radian", $1/k_m=386.159\ \mathrm{fm}$ for the electron, becomes $1/(2\pi\nu_m)$, and the Zitterbewegung amplitude becomes $1/(4\pi\nu_m)$. Both are still $\mathsf{L}$, both are still correct, and both now show why the $2\pi$ sits there.</p>
+<h2 id="2-the-substitution-rule-in-one-line">2. The Substitution Rule, in One Line</h2>
+<p>One line generates the entire map:</p>
+<p>$$
+k=2\pi\nu,\qquad \tilde K_{\Phi}=2\pi\tilde\Upsilon_{\Phi}.
+$$</p>
+<p>Substitute, then simplify. Because most definitions carry $2\pi$ in the numerator, the substitution cancels it there, and the $2\pi$ reappears on the other side of the equation. The rule for auditing the result is one sentence:</p>
+<blockquote>
+<p><strong>After the migration, every $2\pi$ next to a $\nu$ marks an angle, a derivative, or an angular frequency, and nothing else.</strong></p>
+</blockquote>
+<p>A $2\pi$ beside a $\nu$ in a pure definition, $2\pi\nu_m=mc/h$, is a missed simplification. A missing $2\pi$ in $\tilde\nabla_\Phi\tilde\Xi=2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi$ is a factor error by $2\pi$ in every phase of the series.</p>
+<h2 id="3-the-target-letters-and-the-three-hazards">3. The Target Letters, and the Three Hazards</h2>
+<p>Both are free, measured on <code>articles_physics</code>, <code>articles_internal</code> and <code>articles_maths</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>now</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\Upsilon</code></td>
+<td>0 occurrences in the three corpora</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>\nu</code></td>
+<td>208, every one $\nu_{\mathrm{neu}}$, the neutrino</td>
+<td>free for the wavenumber, but never bare</td>
+</tr>
+<tr>
+<td><code>\upsilon</code></td>
+<td>138, the Lanczos coordinates $\zeta,\eta,\upsilon$</td>
+<td>occupied, and a visual twin of $\nu$</td>
+</tr>
+<tr>
+<td><code>\tilde K</code></td>
+<td>1 329</td>
+<td>to be retired</td>
+</tr>
+<tr>
+<td><code>K_L</code>, <code>K_S</code>, <code>K_0</code></td>
+<td>53 and 26, kaons and a kernel</td>
+<td>stay</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why $\Upsilon$.</strong> It is the only capital Greek letter the corpus has not spent, it joins the family that already carries elements, $\tilde\Xi$, $\tilde\Phi$, $\tilde\Psi$, and it frees $K$ for the three objects that share it today: the kaons $K_L$ and $K_S$, the free kernel $K_0$, and the Kähler structure in the mathematical articles.</p>
+<p><strong>KaTeX.</strong> Verified before writing this file: $\tilde\Upsilon_{\Phi}$, $\vec{\tilde\nu}_{\Phi}$, $\tilde\nu_t'$, $\nu_m=\frac{mc}{h}$, $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$, $\Box_\Phi-4\pi^{2}\nu_m^{2}$, $\lambda_C=\frac{1}{\nu_m}$ and $\theta=2\pi(\vec{\tilde\nu}_{\Phi}\cdot\vec r_{\Phi}-\tilde\nu_t'r_t')$ all compile. <code>\Upsilon</code> is a plain token, so <code>\tilde\Upsilon_\Phi</code> works unbraced exactly as <code>\tilde K_\Phi</code> does; brace it anyway, for the same reason as the index pass.</p>
+<p><strong>Three hazards, all typographic and all real.</strong></p>
+<ol>
+<li><strong>$\nu$ and $\upsilon$ are near-twins</strong> in a serif math font. The 138 Lanczos $\upsilon$ sites are one article; the wavenumber $\nu$ will be in 325. The guard is the subscript: a wavenumber is never bare.</li>
+<li><strong>$\nu$ and $\nu_{\mathrm{neu}}$.</strong> The neutrino keeps its $\mathrm{neu}$ label throughout. The rule: <em>a roman subscript means the neutrino, a plain or italic subscript means a wavenumber.</em> $\nu_m$ is a mass wave number; $\nu_{\mathrm{neu}}$ is a particle.</li>
+<li><strong>$\Upsilon$ and $Y$, and the $\Upsilon$ meson.</strong> The corpus mentions neither quarkonium nor the $\Upsilon$ resonance today. If it ever does, the element is distinguishable by the tilde and the sector subscript.</li>
+</ol>
+<h2 id="4-the-census">4. The Census</h2>
+<p>Measured on <code>articles_physics</code>, 678 articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>tokens</th>
+<th>files</th>
+<th>destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde K$ (the element)</td>
+<td>1 329</td>
+<td>84</td>
+<td>$\tilde\Upsilon$</td>
+</tr>
+<tr>
+<td>$k_m$, $k_{m_e}$, $k_{m_i}$</td>
+<td>4 186</td>
+<td>259</td>
+<td>$\nu_m$, $\nu_{m_e}$</td>
+</tr>
+<tr>
+<td>$k_{\Phi}$, $\lvert\vec k_{\Phi}\rvert$</td>
+<td>2 725</td>
+<td>172</td>
+<td>$\nu_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\vec k$</td>
+<td>1 561</td>
+<td>150</td>
+<td>$\vec\nu$</td>
+</tr>
+<tr>
+<td>$k_t'$</td>
+<td>906</td>
+<td>76</td>
+<td>$\nu_t'$</td>
+</tr>
+<tr>
+<td>$k_{\imath}$, $k_{\jmath}$, $k_\eta$, $k_i$</td>
+<td>178</td>
+<td>36</td>
+<td>$\nu_{\imath}$, $\nu_{\jmath}$, $\nu_\eta$</td>
+</tr>
+<tr>
+<td>$k_{\mathrm{s}}$ (root of a quadratic), $k_{\mathrm{eu}}$, $k_{\mathrm{hel}}$</td>
+<td>182</td>
+<td>15</td>
+<td>$\nu$ with the same labels</td>
+</tr>
+<tr>
+<td>bare $k$ in math</td>
+<td>231 + 1 686</td>
+<td>257</td>
+<td><strong>case by case</strong>, see below</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>2 261</td>
+<td>151</td>
+<td>only the Cauchy shift migrates</td>
+</tr>
+<tr>
+<td>$k_v$ (electroweak scale as a wave number)</td>
+<td>20</td>
+<td>1</td>
+<td>$\nu_v$, in <code>articles_internal</code></td>
+</tr>
+<tr>
+<td>$k_f$ (Koide's coefficient)</td>
+<td>6</td>
+<td>1</td>
+<td>unchanged, dimensionless</td>
+</tr>
+</tbody>
+</table></div>
+<p>The wavenumber families in the first seven rows total <strong>10 944 token occurrences in 332 files</strong>. The vector $\vec k_{\Phi}$ and its modulus $k_{\Phi}$ are counted one each, so the number of distinct sites is smaller than the row sum; the file count is the number that matters, and 332 of the 678 articles carry a wave number.</p>
+<h2 id="5-what-must-not-migrate">5. What Must Not Migrate</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>count</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k_B$, $k_BT$</td>
+<td>361</td>
+<td>Boltzmann constant, $2\pi\rho c k_B$, $e^{-E/k_BT}$</td>
+</tr>
+<tr>
+<td>$k$ as an integer index</td>
+<td>9 named sites, many more in sums</td>
+<td>Fourier mode, summation label, $\{i,j,k\}$ of the quaternion</td>
+</tr>
+<tr>
+<td>$k$ inside $\mathfrak{k}$, $\mathfrak{su}(2)$ etc.</td>
+<td>—</td>
+<td>Lie algebra, a fraktur letter and not a Latin $k$</td>
+</tr>
+<tr>
+<td>$k$ as a dimensionless parameter, $k=\tfrac13$</td>
+<td>—</td>
+<td>a fit coefficient, not a wave number</td>
+</tr>
+<tr>
+<td>$k_f$</td>
+<td>6</td>
+<td>Koide's shape coefficient, $\sqrt{3Q-1}$</td>
+</tr>
+<tr>
+<td>$k_B$, $k_0$ as kernel labels</td>
+<td>26</td>
+<td>$K_0$ the free kernel of a propagator</td>
+</tr>
+<tr>
+<td>$K_L$, $K_S$, $K^{*}$</td>
+<td>53</td>
+<td>kaons</td>
+</tr>
+<tr>
+<td>$\kappa$ outside $\kappa=-ik_m$</td>
+<td>most of 2 261</td>
+<td>curvature, coupling, the Cauchy shift's neighbours</td>
+</tr>
+<tr>
+<td>$\lambda$, $\omega$, $\Gamma$</td>
+<td>—</td>
+<td>not wave numbers, and unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bare $k$ is the only family that cannot be done by rule. Measured contexts: the quaternion units $i,j,k$, integer summation labels, the Lie algebra $\mathfrak{k}$, a dimensionless fit parameter, and one running scale in <code>the-renormalization-group-in-biquaternionic-form.md</code>. That last one is a momentum scale and stays a momentum.</p>
+<h2 id="6-the-pattern-map">6. The Pattern Map</h2>
+<p>Every row is a formula shape that occurs in <code>the-three-wavenumbers-of-a-particle.md</code> and is copied by the rest of the corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>now</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the element</td>
+<td>$\tilde K_{\Phi}=\frac{2\pi\tilde P_{\Phi}}{h}$</td>
+<td>$\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$</td>
+</tr>
+<tr>
+<td>its coefficients</td>
+<td>$\tilde K_{\Phi}=ik_t'e_t+\vec k_{\Phi}$</td>
+<td>$\tilde\Upsilon_{\Phi}=i\nu_t'e_t+\vec\nu_{\Phi}$</td>
+</tr>
+<tr>
+<td>the mass</td>
+<td>$k_m=\frac{2\pi mc}{h}$</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
+</tr>
+<tr>
+<td>the momentum</td>
+<td>$\vec k_{\Phi}=\frac{2\pi\vec p_{\Phi}}{h}$, $k_{\Phi}=\lvert\vec k_{\Phi}\rvert$</td>
+<td>$\vec\nu_{\Phi}=\frac{\vec p_{\Phi}}{h}$, $\nu_{\Phi}=\lvert\vec\nu_{\Phi}\rvert$</td>
+</tr>
+<tr>
+<td>the energy</td>
+<td>$k_t'=\frac{2\pi E}{hc}$</td>
+<td>$\nu_t'=\frac{E}{hc}$</td>
+</tr>
+<tr>
+<td>the norm</td>
+<td>$-\langle\tilde K_{\Phi}\rangle_{\natural}=k_m^{2}$</td>
+<td>$-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_m^{2}$</td>
+</tr>
+<tr>
+<td>the shell</td>
+<td>$k_t'^{2}=k_{\Phi}^{2}+k_m^{2}$</td>
+<td>$\nu_t'^{2}=\nu_{\Phi}^{2}+\nu_m^{2}$</td>
+</tr>
+<tr>
+<td>the ratios</td>
+<td>$\frac{k_t'}{k_m}=\gamma$, $\frac{k_{\Phi}}{k_t'}=\beta$</td>
+<td>unchanged in form</td>
+</tr>
+<tr>
+<td>the Compton wavelength</td>
+<td>$\lambda_C=\frac{2\pi}{k_m}=2.426\ \mathrm{pm}$</td>
+<td>$\lambda_C=\frac{1}{\nu_m}=2.426\ \mathrm{pm}$</td>
+</tr>
+<tr>
+<td>the length per radian</td>
+<td>$\frac{1}{k_m}=386.159\ \mathrm{fm}$</td>
+<td>$\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$</td>
+</tr>
+<tr>
+<td>the Zitterbewegung amplitude</td>
+<td>$\frac{1}{2k_m}$</td>
+<td>$\frac{1}{4\pi\nu_m}$</td>
+</tr>
+<tr>
+<td>the rest frequency</td>
+<td>$\omega_C=c\,k_m$</td>
+<td>$\omega_C=2\pi c\,\nu_m$, with $f=c\,\nu_m$ named for the first time</td>
+</tr>
+<tr>
+<td>the derivative</td>
+<td>$\tilde\nabla_\Phi\tilde\Xi=i\tilde K_{\Phi}\tilde\Xi$</td>
+<td>$\tilde\nabla_\Phi\tilde\Xi=2\pi i\tilde\Upsilon_{\Phi}\tilde\Xi$</td>
+</tr>
+<tr>
+<td>the d'Alembertian</td>
+<td>$\Box_\Phi\tilde\Xi=k_m^{2}\tilde\Xi$</td>
+<td>$\Box_\Phi\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$</td>
+</tr>
+<tr>
+<td>the massive operator</td>
+<td>$\Box_\Phi-k_m^{2}$</td>
+<td>$\Box_\Phi-4\pi^{2}\nu_m^{2}$</td>
+</tr>
+<tr>
+<td>the exponent</td>
+<td>$\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$</td>
+<td>$2\pi\,\mathrm{Sc}(\tilde\Upsilon_{\Phi}\tilde R_{\Phi}^{\natural})$</td>
+</tr>
+<tr>
+<td>the phase</td>
+<td>$\theta=\frac{2\pi p\cdot x}{h}=\omega r_t'-\vec k_{\Phi}\cdot\vec r_{\Phi}$</td>
+<td>$\theta=2\pi\left(\vec\nu_{\Phi}\cdot\vec r_{\Phi}-\nu_t'r_t'\right)$</td>
+</tr>
+<tr>
+<td>the Cauchy shift</td>
+<td>$\kappa=-ik_m$</td>
+<td>$\kappa=-2\pi i\nu_m$</td>
+</tr>
+<tr>
+<td>the massless case</td>
+<td>$k_m=0$</td>
+<td>$\nu_m=0$</td>
+</tr>
+<tr>
+<td>the Yukawa range</td>
+<td>$1/k_m$</td>
+<td>$\frac{1}{2\pi\nu_m}$</td>
+</tr>
+<tr>
+<td>the non-relativistic criterion</td>
+<td>$k_{\Phi}\ll k_m$</td>
+<td>$\nu_{\Phi}\ll\nu_m$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Note the pattern: the five rows marked <em>unchanged</em> are homogeneous in $k$, so $\nu$ drops straight in. Every row that gains a factor gains it because an angle, a derivative or an angular frequency is present.</p>
+<h2 id="7-the-prose-that-inverts">7. The Prose That Inverts</h2>
+<p>Three passages do not survive re-lettering. They currently state the opposite of the new convention and must be rewritten, not searched and replaced.</p>
+<ol>
+<li><strong>§The dimensions.</strong> "All three are inverse lengths" stays. But $\frac{h}{2\pi}$ is no longer one of the factors: it is $h$, and the dimension line becomes $\frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-1}}{\mathsf{M}\mathsf{L}^{2}\mathsf{T}^{-1}}=\mathsf{L}^{-1}$ with $h$ in the denominator. The check is the same and the arithmetic changes.</li>
+<li><strong>§Why $\frac{h}{2\pi}$ and not $h$.</strong> The heading inverts. The series now uses $h$, the reduced wave number is $2\pi\nu$, and the sentence "the ordinary wave number is $k_{\Phi}/(2\pi)$" becomes "the angular wave number is $2\pi\nu_{\Phi}$". Every claim in the passage is true after the swap and false before it.</li>
+<li><strong>§What a Wave Number Is.</strong> "It counts radians per unit length" is no longer the reading of the symbol: the symbol now counts waves per unit length, and radians per unit length is $2\pi\nu$. The sentence "the ordinary wave number, the count of turns per metre, is $k_{\Phi}/(2\pi)$" becomes "the angular form, radians per metre, is $2\pi\nu_{\Phi}$". The four readings survive; their order swaps.</li>
+</ol>
+<p>The article's title, <em>The Three Wavenumbers of a Particle</em>, stays correct and becomes more literal.</p>
+<h2 id="8-the-numeric-tables">8. The Numeric Tables</h2>
+<p>Values change, so every table that quotes a $k$ is recomputed and not re-lettered. There are 78 sites in 7 files with $\mathrm{m^{-1}}$ and 5 with $\mathrm{m^{-2}}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>now</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>electron $k_m$</td>
+<td>$2.589605\times10^{12}\ \mathrm{m^{-1}}$</td>
+<td>$\nu_m=4.121484\times10^{11}\ \mathrm{m^{-1}}$</td>
+</tr>
+<tr>
+<td>electron $1/k_m$</td>
+<td>$386.159\ \mathrm{fm}$</td>
+<td>$\frac{1}{2\pi\nu_m}=386.159\ \mathrm{fm}$</td>
+</tr>
+<tr>
+<td>electron $\lambda_C$</td>
+<td>$2.426\ \mathrm{pm}$</td>
+<td>$\frac{1}{\nu_m}=2.426\ \mathrm{pm}$</td>
+</tr>
+<tr>
+<td>electron $\omega_C$</td>
+<td>$c\,k_m=7.7634\times10^{20}\ \mathrm{s^{-1}}$</td>
+<td>$2\pi c\,\nu_m=7.7634\times10^{20}\ \mathrm{s^{-1}}$, and $f=c\,\nu_m=1.2356\times10^{20}\ \mathrm{Hz}$</td>
+</tr>
+<tr>
+<td>at $1\ \mathrm{MeV}$</td>
+<td>$k_t'=5.0677\times10^{12}$, $k_{\Phi}=4.3561\times10^{12}\ \mathrm{m^{-1}}$</td>
+<td>$\nu_t'=8.0655\times10^{11}$, $\nu_{\Phi}=6.9330\times10^{11}\ \mathrm{m^{-1}}$</td>
+</tr>
+<tr>
+<td>the shell, in $\mathrm{m^{-2}}$</td>
+<td>$-2.568\times10^{25}+1.898\times10^{25}=-6.70\times10^{24}$</td>
+<td>$-6.505\times10^{23}+4.806\times10^{23}=-1.699\times10^{23}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the check that the whole migration is arithmetically consistent: $k^{2}$ becomes $4\pi^{2}\nu^{2}$, a factor $39.478$, and $6.70\times10^{24}/39.478=1.697\times10^{23}$.</p>
+<h2 id="9-the-declaration-lines">9. The Declaration Lines</h2>
+<p>The definition lives in one article and is quoted everywhere else. It must migrate first.</p>
+<ul>
+<li><code>the-three-wavenumbers-of-a-particle.md</code> — the definition, the dimension line, the four readings, the notation table. Every other article copies a shape from here.</li>
+<li><code>operator-and-calculus-conventions.md</code> — the line "with $k_m=\frac{2\pi mc}{h}$ the mass wave number, the inverse of the mass length", which becomes "with $\nu_m=\frac{mc}{h}$ the mass wave number, the number of waves per unit length".</li>
+<li><code>physics-units-and-common-elements-conventions.md</code> — the notation table, 170 wavenumber tokens.</li>
+<li><code>algebra-and-element-conventions.md</code> — the metric and the element conventions.</li>
+<li><code>articles_internal/the-yukawa-coupling-in-wave-numbers.md</code> — the only place that defines $k_v$, $w_i$, $u_i$, $\omega_i$. Careful: its $\omega_i$ is a normalised amplitude and not an angular frequency, and its $k_v$ is a scale-bearing wave number that becomes $\nu_v$.</li>
+</ul>
+<p>The new sentence to write, once, in the definition article:</p>
+<blockquote>
+<p>The wave number is $\nu=k/2\pi=1/\lambda$, the number of wavelengths per unit length, the spectroscopic wave number; the angular form $k=2\pi\nu$ is the one that enters phases and derivatives, and it is written only where those appear.</p>
+</blockquote>
+<h2 id="10-the-order-of-operations">10. The Order of Operations</h2>
+<ol>
+<li><code>the-three-wavenumbers-of-a-particle.md</code> alone. It is 558 tokens, the largest file, and it is the source of every shape. Nothing else starts until it is done and rendered.</li>
+<li>The three convention articles: <code>operator-and-calculus-conventions.md</code>, <code>physics-units-and-common-elements-conventions.md</code>, <code>algebra-and-element-conventions.md</code>.</li>
+<li>The ten heaviest consumers, 1 730 tokens: the five <code>wave-particle-duality-*</code> articles, <code>the-klein-gordon-equation-in-biquaternionic-form.md</code>, <code>klein-gordon-from-the-dirac-square-in-biquaternionic-form.md</code>, <code>the-proca-equation-massive-spin-1-in-biquaternionic-form.md</code>, <code>scalar-pair-creation-in-biquaternionic-form.md</code>, and the Lippmann–Schwinger article.</li>
+<li>The remaining 318 files of <code>articles_physics</code>, by descending token count, in batches of about 40.</li>
+<li><code>articles_internal</code> last, because it defines derived objects, $w_i$, $u_i$, $\omega_i$, from the wave number that step 1 fixed.</li>
+</ol>
+<h2 id="11-the-tests">11. The Tests</h2>
+<p><strong>Numeric invariance.</strong> One script, run before and after each batch, on two particles: the electron at rest and the electron at $1\ \mathrm{MeV}$. It prints, from the migrated text alone: $\nu_m$, $\nu_t'$, $\nu_{\Phi}$, $\lambda_C$, $1/(2\pi\nu_m)$, $2\pi c\nu_m$, the d'Alembertian eigenvalue $4\pi^{2}\nu_m^{2}$, and the phase over a fixed displacement. Every number must equal the value computed from the pre-migration text to $10^{-12}$ relative. This is the only test that catches a missing $2\pi$, and it is the one that matters.</p>
+<p><strong>The $2\pi$ audit.</strong> Count <code>2\pi</code> corpus-wide. It is 6 227 today. The count must stay within a few per cent and must not fall: a fall means $2\pi$ factors were deleted rather than moved. A rise of exactly the number of wavelength sites is expected, since $\lambda_C=2\pi/k_m$ loses its factor while $1/k_m$ gains one.</p>
+<p><strong>Structural.</strong> $\tilde K$ 0; <code>k_m</code>, <code>k_\Phi</code>, <code>k_t</code>, <code>\vec k</code> 0 outside the keep-list; <code>\Upsilon</code> at least 1 329; every <code>\nu</code> followed by a subscript; <code>k_B</code> still 361; bare integer <code>$k$</code> unchanged.</p>
+<p><strong>Render.</strong> The KaTeX gate: 177 350 spans, 14 failures, the same 14 as the untouched baseline.</p>
+<p><strong>Dimension.</strong> Nothing changes dimension in this pass. $\nu$ is $\mathsf{L}^{-1}$ exactly as $k$ was; only its value changes, by $2\pi$. A span that ends with $\nu$ in $\mathsf{L}$ or $\mathsf{L}^{2}$ is an error introduced by the edit.</p>
+<h2 id="12-the-checks">12. The Checks</h2>
+<p>Count with <code>-o</code>, so a line carrying three tokens counts three times; locate with <code>-n</code> and drop the <code>-o</code>.</p>
+<pre><code class="language-bash"># the element is retired
+grep -rhoP '\\tilde\s*\{?K\}?' articles_physics --include='*.md' | wc -l             # want 0
+# the coefficients are retired
+grep -rhoP '(?&lt;![a-zA-Z\\])k_\{?(m|\\Phi|t)(?![a-zA-Z])' articles_physics --include='*.md' | wc -l  # want 0
+grep -rhoP '\\vec\{?\s*k\s*\}?' articles_physics --include='*.md' | wc -l            # want 0
+# the new letter is present and never bare
+grep -rhoP '\\nu(?![a-zA-Z])(?!_)' articles_physics --include='*.md' | wc -l            # want 0
+grep -rhoP '\\Upsilon' articles_physics --include='*.md' | wc -l                        # want &gt;= 1329
+# the keep-list is untouched
+grep -rhoP '(?&lt;![a-zA-Z\\])k_\{?B' articles_physics --include='*.md' | wc -l           # want 361
+# where the mistakes will be: a 2pi beside a nu
+grep -rnoP '2\\pi\s*\\nu' articles_physics --include='*.md' | head                   # read each one
+</code></pre>
+<h2 id="13-the-open-questions-two-settled-and-four-open">13. The Open Questions, Two Settled and Four Open</h2>
+<ol>
+<li><strong>Tilde or no tilde on $\nu$.</strong> The spectroscopic letter is $\tilde\nu$, and the source the change is taken from writes it that way. The corpus's tilde means "element of the algebra", $\tilde\Xi$, $\tilde K$, $\tilde Q$, so a tilded scalar breaks that convention while fixing the collision with the neutrino. This file recommends the untilded $\nu$ with a mandatory subscript, and records $\tilde\nu$ as the alternative if the source's glyph wins.</li>
+<li><strong>$\bar\lambda_m$ — settled, and settled against the symbol.</strong> The barred length is dropped. It is neither a wavelength nor a symbol: the wavelength is the full turn, $\lambda_m=1/\nu_m=h/(mc)$, and one radian of the phase is the quotient $\lambda_m/(2\pi)=1/(2\pi\nu_m)$, written out where a radian is meant. No barred letter, no "reduced" adjective, no named length for the quotient. The rule is recorded in <em>Physics Units and Common Elements Conventions</em>, §<em>No reduced length, no reduced constant</em>, and every site in the internal tree and in the physics corpus was rewritten to it. The same ban covers the constant: $\frac{h}{2\pi}$ stays a factor written out, and it is never called the reduced Planck constant.</li>
+<li><strong>$\kappa=-ik_m$.</strong> One site in the shift of the Cauchy theory. It is a wave number and must take the $2\pi$. The other 2 260 $\kappa$ are curvature or coupling and stay.</li>
+<li><strong>$k_{\mathrm{eu}}$ and $k_{\mathrm{hel}}$.</strong> Euclidean momentum and helicity are wave numbers by dimension and by use, so the rule says they migrate. Their labels are Latin and the pattern is less obvious to a reader; they are 88 sites in a handful of articles.</li>
+<li><strong>The running scale in the renormalization-group article.</strong> One site, a momentum scale and not a wave number. It stays $k$ or it becomes $\mu$, and the choice belongs to that article.</li>
+<li><strong>Whether the corpus keeps the word "reduced" at all — settled: no.</strong> The angular form $2\pi\nu$ is not called the reduced wave number; it is the same number with the angle written out. The adjective is gone from the wave-number, length and constant vocabulary, and the plain words are <em>angular wave number</em>, <em>wavelength</em>, <em>one radian of the phase</em>, <em>the action of one radian</em>. The only survivors are the standard terms of other subjects: <em>reduced phase space</em>, <em>reduced density matrix</em>, <em>reduced trace</em>, <em>reduced matrix element</em>.</li>
+</ol>
+<h2 id="14-what-this-pass-depends-on">14. What This Pass Depends On</h2>
+<p>The index migration is finished: <code>\imath</code> 19 603, <code>\jmath</code> 8 592, 0 unbraced dotless subscripts, 0 spans mixing the old and new index letters. Without it $\nu$ would still be carrying the index role and this pass would be impossible. The two passes are independent in every other respect: the index pass changed letters in slots, this one changes a unit.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One substitution, one bookkeeping, one test that catches everything.</strong> $k=2\pi\nu$ is a change of unit; the $2\pi$ moves, and the audit is the record of where it moved to.</p>
+<ul>
+<li>10 944 wavenumber tokens in 332 of the 678 physics articles, plus 1 329 tokens of the element $\tilde K$ in 84 files, which becomes $\tilde\Upsilon_{\Phi}=\tilde P_{\Phi}/h$.</li>
+<li>The keep-list is the safety of the pass: $k_B$ 361 sites, the integer $k$, the kaons, $K_0$, and 2 260 of the 2 261 $\kappa$.</li>
+<li>The pattern map is 21 shapes taken from one article and copied by the corpus; the rows that gain a factor are exactly the rows that carry an angle, a derivative or an angular frequency.</li>
+<li>Three passages state the opposite of the new convention and are rewritten, not searched and replaced; one heading inverts with them.</li>
+<li>Every table that quotes a $k$ is recomputed: 78 sites in 7 files with $\mathrm{m^{-1}}$, 5 with $\mathrm{m^{-2}}$, and the shell row is the arithmetic proof, a factor 39.478 in $k^{2}$.</li>
+<li>The tests are numeric ($10^{-12}$ relative, two particles), the $2\pi$ count (6 227 today, allowed to rise by the number of wavelength sites and never to fall), structural, render, and dimensional.</li>
+<li>Two of the six open questions are already settled against the tilded and the reducible spellings; the remaining four are listed in §13 for the author.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu=k/2\pi=1/\lambda$</td>
+<td>the spectroscopic wavenumber: waves per unit length, never bare</td>
+</tr>
+<tr>
+<td>$k=2\pi\nu$</td>
+<td>the angular form, which enters phases and derivatives only</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon_{\Phi}=\tilde P_{\Phi}/h$</td>
+<td>the wave-number biquaternion, replacing $\tilde K_{\Phi}=2\pi\tilde P_{\Phi}/h$</td>
+</tr>
+<tr>
+<td>$\nu_m=mc/h$</td>
+<td>the mass wavenumber; its reciprocal is the Compton wavelength</td>
+</tr>
+<tr>
+<td>$\nu_{\mathrm{neu}}$</td>
+<td>the neutrino, which keeps its roman label</td>
+</tr>
+<tr>
+<td>$\kappa=-2\pi i\nu_m$</td>
+<td>the Cauchy shift, the only $\kappa$ that migrates</td>
+</tr>
+<tr>
+<td>$2\pi$</td>
+<td>after the pass: the mark of an angle, a derivative or an angular frequency</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

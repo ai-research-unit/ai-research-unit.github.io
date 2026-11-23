@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: Unit Declarations, and the Tool That Finds Them — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A tool and its audit, frozen here as one document. The listing of §11 is the whole program, verbatim, and the runnable copy sits at…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-unit-declarations-and-the-tool-that-finds-them"><strong>Audit: Unit Declarations, and the Tool That Finds Them</strong></h1>
+<p><em>Status of this file.</em> <strong>A tool and its audit, frozen here as one document.</strong> The listing of §11 is the whole program, verbatim, and the runnable copy sits at <code>_reserve/py/detect-unit-declarations.py</code> (the docstring's older path, <code>_reserve/detect-unit-declarations</code>, was never created). The self-test prints <code>21 / 21 cases</code>, and that is the check that accepts the copy.</p>
+<p><em>What the file is for.</em> It finds the chains of physical constants set to one — <code>$\hbar=1$</code>, <code>$c=\hbar=m=1$</code>, <code>$G=c=\hbar=k_B=1$</code> — reports each with its file and line, and offers a repair that cannot write the defect back.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>A declaration is a chain, and it is found by splitting the span at <code>=</code>.</strong> Detection is exact and cheap; nothing is inferred from a glyph.</li>
+<li><strong>A declaration is not repaired by substitution.</strong> It is repaired by arithmetic on the displays that follow, so <code>--apply</code> rewrites only a span whose whole content is the chain, and only into a unit statement.</li>
+<li><strong>A chain inside a larger expression is refused, and the refusal is printed.</strong> The tool does not guess the surrounding arithmetic.</li>
+<li><strong>A quoted form is not a violation.</strong> The conventions article is made of quotations of the prohibited form, and the window test of §8 keeps them out of the report.</li>
+<li><strong>The exit code is the gate.</strong> <code>1</code> when a site is found, <code>0</code> when there is none.</li>
+</ol>
+<h2 id="1-what-a-unit-declaration-is">1. What a Unit Declaration Is</h2>
+<p>A <em>unit declaration</em> is a chain of physical constants set to one:</p>
+<p>$$
+\hbar=1 \qquad \hbar=k_B=1 \qquad \hbar=c=k_B=1
+$$
+$$
+c=\hbar=m=1 \qquad m=\hbar=\omega=1 \qquad G=c=\hbar=k_B=1 \qquad \hbar=m=k_t'=1
+$$</p>
+<p>Each is the same statement as $h=2\pi$, and the corpus conventions forbid it. The declaration hides the conversion inside a chain of equality signs, so a blind glyph substitution turns <code>\hbar</code> into <code>\frac{h}{2\pi}=1</code>, which is the forbidden form written out. The tool exists to catch the shape before and after a migration.</p>
+<h2 id="2-why-a-substitution-cannot-repair-it">2. Why a Substitution Cannot Repair It</h2>
+<p>The defect is not a spelling. <code>$\hbar=1$</code> is a physical statement — the action is measured in units of $\hbar$ — and the repair is a choice of scale written into every display that used it, in units the corpus allows: $mc$, $mc^2$, $1/k_m$, $\hbar\omega$, $k_BT$, $\hbar/(2m\omega)$. A machine that substituted would produce $\frac{h}{2\pi}=1$, which sets a constant to one under a longer name.</p>
+<p>So <code>--apply</code> does one narrow thing: it rewrites a span whose whole content is the chain into the equivalent unit statement, <code>$\hbar$ taken as the unit</code>, which never sets a constant to one and never states a false equation. The arithmetic that used the declaration is then restored by hand, and the tool says so when it has patched.</p>
+<h2 id="3-the-nineteen-atoms-and-the-four-that-stand-alone">3. The Nineteen Atoms, and the Four That Stand Alone</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>atom</th>
+<th>written in the patch</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>hbar</code></td>
+<td><code>\hbar</code></td>
+<td>hard</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>h</code></td>
+<td><code>h</code></td>
+<td>hard</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>kB</code></td>
+<td><code>k_B</code></td>
+<td>hard</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>mu0</code></td>
+<td><code>\mu_0</code></td>
+<td>hard</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>G</code></td>
+<td><code>G</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>eps0</code></td>
+<td><code>\epsilon_0</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>c</code></td>
+<td><code>c</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>m</code></td>
+<td><code>m</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>omega</code></td>
+<td><code>\omega</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>T</code></td>
+<td><code>T</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>e</code></td>
+<td><code>e</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>q</code></td>
+<td><code>q</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>kappa</code></td>
+<td><code>\kappa</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>varkappa</code></td>
+<td><code>\varkappa</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>mu</code></td>
+<td><code>\mu</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>varepsilon</code></td>
+<td><code>\varepsilon</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>epsilon</code></td>
+<td><code>\epsilon</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>nu</code></td>
+<td><code>\nu</code></td>
+<td>soft</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><code>rho</code></td>
+<td><code>\rho</code></td>
+<td>soft</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four hard atoms stand alone.</strong> <code>hbar</code>, <code>h</code>, <code>kB</code> and <code>mu0</code> have no second reading in the corpus, so setting one of them to one is a declaration by itself.</p>
+<p><strong>The fifteen soft atoms are also values, labels or indices somewhere.</strong> <code>c</code> is a constant and also a coefficient; <code>m</code> is a mass and also a label; <code>\mu</code> is a constant, an index and a measure. Each is flagged only beside another constant, unless <code>--strict</code> finds it in a sentence about units.</p>
+<h2 id="4-the-aliases">4. The Aliases</h2>
+<p>Nineteen names, but more spellings, and every spelling has to canonicalise to one name:</p>
+<ul>
+<li><code>\hbar</code>, <code>\hslash</code> and the bare glyph <code>ℏ</code> are all <code>hbar</code>.</li>
+<li><code>k_B</code> and <code>K_B</code> are <code>kB</code>; <code>\epsilon_0</code> and <code>\varepsilon_0</code> are <code>eps0</code>; <code>\omega</code> and <code>\Omega</code> are <code>omega</code>.</li>
+<li>Face modifiers are stripped before the lookup: <code>\left</code>, <code>\right</code>, <code>\big</code>, <code>\Big</code>, <code>\bigg</code>, <code>\Bigg</code>, their <code>l</code> and <code>r</code> forms, and <code>\displaystyle</code>.</li>
+<li>Font commands are stripped too: <code>\mathrm</code>, <code>\text</code>, <code>\rm</code>, <code>\mathit</code>, <code>\mathsf</code>, <code>\mathcal</code>.</li>
+<li>Spacing is stripped: <code>\,</code>, <code>\;</code>, <code>\!</code>, <code>\:</code>, <code>\quad</code>, <code>\qquad</code> and <code>\</code>.</li>
+<li>Braces, spaces and line breaks go, and a leading <code>_</code> or <code>^</code> goes with them.</li>
+</ul>
+<h2 id="5-detection-split-at-the-equals-sign">5. Detection: Split at the Equals Sign</h2>
+<p>The span is cut at every <code>=</code> into pieces, and a <em>run</em> is the pieces just before a bare <code>1</code>. A run is kept when it has at least two members and at least one of them is a known atom.</p>
+<p><code>atomish</code> decides how far back the walk may go: a piece of thirty characters or fewer that canonicalises to an atom, or whose part after a <code>|</code> or <code>&amp;</code> does, can be crossed. A piece containing a backslash other than an atom stops the walk (<code>\frac{h}{2\pi}</code> is not a chain member), and so does a piece containing an operator.</p>
+<p><strong>A raw glyph outside math is always a finding.</strong> The bare <code>ℏ</code> is scanned in the text as well as in the spans, because a copy that lost its delimiters is exactly the case a migration leaves behind.</p>
+<h2 id="6-the-policy-when-a-run-is-a-declaration">6. The Policy: When a Run Is a Declaration</h2>
+<p>A run is a declaration when any of three conditions holds:</p>
+<ol>
+<li>it contains a hard atom;</li>
+<li>it contains two or more known atoms;</li>
+<li>it contains one known atom and <code>--strict</code> is set and the surrounding sentence says <em>units</em>, <em>setting</em>, <em>set</em>, <em>conventions</em>, <em>adopt</em>, <em>choose</em>, <em>prints</em>, <em>printed</em> or <em>source</em>, within 120 characters before and 80 after.</li>
+</ol>
+<p>Nothing else is reported. <code>$\kappa=1$</code>, <code>$m=1$</code>, <code>$\mu=1$</code>, <code>$c^2=1$</code>, <code>$P_{\mathrm{id}}=1$</code>, <code>$n=1$</code> and <code>$x=y=1$</code> stay silent, and the self-test holds each of them to that.</p>
+<h2 id="7-patching-whole-span-only">7. Patching: Whole-Span Only</h2>
+<p><code>--apply</code> rewrites a site only when the span, stripped, is exactly the chain and every member is a known atom or a simple symbol — a piece with no backslash, no bar and no ampersand, such as <code>k_t'</code>, <code>E</code> or <code>r</code>.</p>
+<p>The rewrite is a sentence, not a formula:</p>
+<ul>
+<li>one member: <code>$\hbar$ taken as the unit</code>;</li>
+<li>two members: <code>$\hbar$ and $k_B$ taken as the units</code>;</li>
+<li>more: <code>$\hbar$, $c$ and $k_B$ taken as the units</code>.</li>
+</ul>
+<p><strong>A bar, a prefix or a fraction means refusal.</strong> <code>\Big|_{\hbar=c=k_B=1}</code> is a site to look at, not a site to rewrite: the restriction carries meaning the tool cannot see. Refused sites are printed with file and line, and the count of them is printed beside the count of patches.</p>
+<h2 id="8-the-quotation-rule">8. The Quotation Rule</h2>
+<p>An article that states the prohibition quotes the prohibited form, and the conventions article is made of such quotations. So a hit is dropped from the report when the text within 260 characters before and 140 after it carries one of: <em>not allowed</em>, <em>is a defect</em>, <em>defect in</em>, <em>forbidden</em>, <em>never</em>, <em>may not</em>, <em>prohibit…</em>, <em>violation</em>, <em>banned</em>, <em>the shortcut</em>, <em>must not</em>, <em>illegal</em>.</p>
+<p>The window is deliberately wide: a table row that quotes the forbidden shape usually carries its verdict in the row above or in the sentence that introduces the table.</p>
+<h2 id="9-the-command-line-and-the-exit-code-as-a-gate">9. The Command Line, and the Exit Code as a Gate</h2>
+<pre><code>python3 _reserve/py/detect-unit-declarations.py articles_physics
+python3 _reserve/py/detect-unit-declarations.py articles_physics --strict
+python3 _reserve/py/detect-unit-declarations.py articles_physics --apply
+python3 _reserve/py/detect-unit-declarations.py --self-test
+</code></pre>
+<p><code>--json</code> prints one object: <code>sites</code>, <code>patched</code>, <code>refused</code>, and the per-site <code>report</code>. The default run prints the sites as <code>file:line</code> and the chain as written.</p>
+<p><strong>The exit status is <code>1</code> when a site is found and <code>0</code> when there is none</strong>, so the default run is usable as a gate in a hook or a CI step. <code>--self-test</code> returns its own status: <code>0</code> when all cases pass.</p>
+<h2 id="10-the-self-test-twenty-one-cases">10. The Self-Test: Twenty-One Cases</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th style="text-align: right;">cases</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chains that flag and patch</td>
+<td style="text-align: right;">11</td>
+<td><code>flag=True patch=True</code></td>
+</tr>
+<tr>
+<td>the barred chain <code>\Big\|_{\hbar=c=k_B=1}</code></td>
+<td style="text-align: right;">1</td>
+<td><code>flag=True patch=False</code></td>
+</tr>
+<tr>
+<td>look-alikes that must stay silent</td>
+<td style="text-align: right;">9</td>
+<td><code>flag=False patch=False</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The eleven that patch are <code>\hbar=1</code>, <code>\hbar=m=1</code>, <code>\hbar=k_B=1</code>, <code>\hbar=c=k_B=1</code>, <code>c=\hbar=m=1</code>, <code>m=\hbar=\omega=1</code>, <code>G=c=\hbar=k_B=1</code>, <code>\hbar=m=k_t'=1</code>, <code>m=c=1</code>, <code>k_B=1</code> and <code>\hbar=m=c=1</code>. The nine silent ones are <code>\kappa=1</code>, <code>m=1</code>, <code>\mu=1</code>, <code>c^2=1</code>, <code>\sigma^2=\hbar/(2m\omega)</code>, <code>\frac{h}{2\pi}=m</code>, <code>P_{\mathrm{id}}=1</code>, <code>n=1</code> and <code>x=y=1</code>.</p>
+<p>The last two rows are the ones that matter: <code>\sigma^2=\hbar/(2m\omega)</code> and <code>\frac{h}{2\pi}=m</code> are constants in a formula, and a detector keyed on the glyph rather than on the chain would flag both.</p>
+<h2 id="11-the-listing">11. The Listing</h2>
+<pre><code class="language-python">#!/usr/bin/env python3
+&quot;&quot;&quot;Detect and patch unit declarations in a corpus of Markdown articles.
+
+A *unit declaration* is a chain of physical constants set to one:
+
+    $\\hbar=1$          $\\hbar=k_B=1$        $\\hbar=c=k_B=1$
+    $c=\\hbar=m=1$      $m=\\hbar=\\omega=1$   $G=c=\\hbar=k_B=1$
+    $\\hbar=m=k_t'=1$
+
+Each of these is the same statement as $h=2\\pi$, and the corpus conventions
+forbid it.  The declaration hides the conversion inside a chain of equality
+signs, so a blind glyph substitution turns it into `\\frac{h}{2\\pi}=1`, which
+is the forbidden form written out.  This tool exists to catch the shape before
+and after a migration.
+
+    python3 _reserve/detect-unit-declarations articles_physics
+    python3 _reserve/detect-unit-declarations articles_physics --strict
+    python3 _reserve/detect-unit-declarations articles_physics --apply
+    python3 _reserve/detect-unit-declarations --self-test
+
+Detection is exact and cheap: every math span is split at `=`, and a run of
+constant atoms that ends in a bare `1` is reported with its file, line and the
+chain as written.
+
+Patching is deliberately narrow, and this is the point of the tool.  A
+declaration cannot be repaired by substitution: the repair is arithmetic on
+the displays that follow, and a machine that substituted would write the
+defect back in the form the migration exists to remove.  So `--apply` rewrites
+only a span whose whole content is the chain, and rewrites it into the
+equivalent unit statement -- `$\\hbar$ taken as the unit` -- which never sets a
+constant to one and never states a false equation.  A chain embedded in a
+larger expression is reported as *refused*: it needs the surrounding
+arithmetic restored by hand, and the tool says so rather than guessing.
+
+Exit status is 1 when a site is found and 0 when there is none, so the default
+run is usable as a gate in a hook or a CI step.
+&quot;&quot;&quot;
+import argparse
+import glob
+import json
+import pathlib
+import re
+import sys
+
+# ---------------------------------------------------------------- the atoms
+
+ONE = '1'
+
+# name -&gt; (latex written in the patch, weight)
+# weight 'hard': setting it to one is a declaration on its own.
+# weight 'soft': the symbol is also a value, a label or an index somewhere in
+#                the corpus, so it is flagged only beside another constant.
+CONST = {
+    'hbar': (r'\hbar', 'hard'),
+    'h': ('h', 'hard'),
+    'kB': (r'k_B', 'hard'),
+    'G': ('G', 'soft'),
+    'eps0': (r'\epsilon_0', 'soft'),
+    'mu0': (r'\mu_0', 'hard'),
+    'c': ('c', 'soft'),
+    'm': ('m', 'soft'),
+    'omega': (r'\omega', 'soft'),
+    'T': ('T', 'soft'),
+    'e': ('e', 'soft'),
+    'q': ('q', 'soft'),
+    'kappa': (r'\kappa', 'soft'),
+    'varkappa': (r'\varkappa', 'soft'),
+    'mu': (r'\mu', 'soft'),
+    'varepsilon': (r'\varepsilon', 'soft'),
+    'epsilon': (r'\epsilon', 'soft'),
+    'nu': (r'\nu', 'soft'),
+    'rho': (r'\rho', 'soft'),
+}
+
+NORMAL = {
+    '\\hbar': 'hbar', '\\hslash': 'hbar', '\u210f': 'hbar', 'h': 'h',
+    'k_B': 'kB', 'K_B': 'kB',
+    'G': 'G',
+    '\\epsilon_0': 'eps0', '\\varepsilon_0': 'eps0',
+    '\\mu_0': 'mu0',
+    'c': 'c', 'm': 'm',
+    '\\omega': 'omega', '\\Omega': 'omega',
+    'T': 'T', 'e': 'e', 'q': 'q',
+    '\\kappa': 'kappa', '\\varkappa': 'varkappa',
+    '\\mu': 'mu', '\\varepsilon': 'varepsilon', '\\epsilon': 'epsilon',
+    '\\nu': 'nu', '\\rho': 'rho',
+}
+
+STRIP = re.compile(r'\\(?:left|right|bigl|bigr|Bigl|Bigr|big|Big|bigg|Bigg'
+                   r'|displaystyle)(?![A-Za-z])')
+FONT = re.compile(r'\\(?:mathrm|text|rm|mathit|mathsf|mathcal)(?![A-Za-z])')
+SPACE = re.compile(r'\\[,;!:]|\\q?quad|\\ ')
+
+
+def canon(atom):
+    &quot;&quot;&quot;Canonical constant name for one side of an `=`, or None.&quot;&quot;&quot;
+    s = atom.replace('\u210f', '\\hbar')
+    s = STRIP.sub('', s)
+    s = FONT.sub('', s)
+    s = SPACE.sub('', s)
+    s = s.replace('{', '').replace('}', '').replace(' ', '').replace('\n', '')
+    s = s.lstrip('_^')
+    if s in ('1', '+1'):
+        return ONE
+    return NORMAL.get(s)
+
+
+def atomish(atom):
+    &quot;&quot;&quot;True when the piece could be one member of a chain (so a walk may cross it).&quot;&quot;&quot;
+    t = atom.strip()
+    if not t or len(t) &gt; 30:
+        return False
+    if canon(t) is not None:
+        return True
+    # a piece like \Big|_{\hbar}: the chain starts after the bar
+    if canon(re.split(r'[|&amp;]', t)[-1]) is not None:
+        return True
+    if '\\' in t:                        # \frac{h}{2\pi} and the like
+        return False
+    if re.search(r'[+\-*/&lt;&gt;]', t.replace('^', '')):
+        return False
+    return bool(re.fullmatch(r&quot;[A-Za-z0-9\\{}_,'^.|\\ ]+&quot;, t))
+
+
+# ------------------------------------------------------------ the math spans
+
+def spans(s):
+    out = [(m.start(1), m.end(1)) for m in re.finditer(r'\$\$(.+?)\$\$', s, re.S)]
+    masked = re.sub(r'\$\$(.+?)\$\$', lambda m: ' ' * len(m.group(0)), s, flags=re.S)
+    out += [(m.start() + 1, m.end() - 1)
+            for m in re.finditer(r'(?&lt;!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)', masked, re.S)]
+    return sorted(out)
+
+
+def wide(text, a, b):
+    &quot;&quot;&quot;The span with its delimiters, so a replacement can drop them.&quot;&quot;&quot;
+    if text[a - 2:a] == '$$' and text[b:b + 2] == '$$':
+        return a - 2, b + 2
+    return a - 1, b + 1
+
+
+def pieces(body):
+    out, prev = [], 0
+    for m in re.finditer('=', body):
+        out.append((body[prev:m.start()], prev, m.start()))
+        prev = m.end()
+    out.append((body[prev:], prev, len(body)))
+    return out
+
+
+def chains(body):
+    &quot;&quot;&quot;Yield (start, end, names, run) for every run of constants ending in 1.&quot;&quot;&quot;
+    pcs = pieces(body)
+    seen = set()
+    for j, (txt, _, _) in enumerate(pcs):
+        if canon(txt) != ONE:
+            continue
+        i = j - 1
+        while i &gt;= 0 and atomish(pcs[i][0]):
+            i -= 1
+        i += 1
+        run = pcs[i:j + 1]
+        if len(run) &lt; 2:
+            continue
+        names = [canon(t) for t, _, _ in run[:-1]]
+        if not any(n in CONST for n in names):
+            continue
+        start, stop = run[0][1], run[-1][2]
+        if (start, stop) in seen:
+            continue
+        seen.add((start, stop))
+        yield start, stop, names, run
+
+
+def declaration(names, strict_ok=False):
+    &quot;&quot;&quot;The policy: a hard constant alone, or any two constants, or a lone
+    constant when the sentence itself is about units.&quot;&quot;&quot;
+    hard = any(CONST.get(n, ('', ''))[1] == 'hard' for n in names)
+    known = [n for n in names if n in CONST]
+    return hard or len(known) &gt;= 2 or (strict_ok and bool(known))
+
+
+def simple(atom):
+    &quot;&quot;&quot;An unknown atom a unit statement can still name: k_t', E, r, ...&quot;&quot;&quot;
+    t = atom.strip()
+    return bool(t) and '\\' not in t and '|' not in t and '&amp;' not in t \
+        and bool(re.fullmatch(r&quot;[A-Za-z0-9_,'^ ]+&quot;, t))
+
+
+def patchable(names, run, body, chain):
+    &quot;&quot;&quot;Only a span that is the plain chain may be rewritten, and only when every
+    atom is a known constant or a simple symbol.  A bar, a prefix or a fraction
+    means the surrounding arithmetic carries meaning the tool cannot see.&quot;&quot;&quot;
+    if body.strip() != chain:
+        return False
+    return all(n in CONST or simple(txt) for n, (txt, _, _) in zip(names, run[:-1]))
+
+
+def render(names, run):
+    &quot;&quot;&quot;The unit statement that replaces a chain, as Markdown text.&quot;&quot;&quot;
+    parts = []
+    for name, (txt, _, _) in zip(names, run[:-1]):
+        parts.append('$%s$' % (CONST[name][0] if name in CONST else txt.strip()))
+    if len(parts) == 1:
+        return '%s taken as the unit' % parts[0]
+    if len(parts) == 2:
+        return '%s and %s taken as the units' % tuple(parts)
+    return '%s and %s taken as the units' % (', '.join(parts[:-1]), parts[-1])
+
+
+# ------------------------------------------------------------------ context
+
+CONTEXT = re.compile(r'\b(?:units?|setting|set|conventions?|adopt|choose|'
+                     r'prints?|printed|source)\b', re.I)
+
+# An article that states the prohibition quotes the prohibited form.  A quoted
+# form is documentation, not a violation, and the conventions article is made
+# of such quotations.
+BAN = re.compile(r'(?i)\b(?:not allowed|is a defect|defect in|forbidden|never|'
+                 r'may not|prohibit\w*|violation|banned|the shortcut|'
+                 r'must not|illegal)\b')
+
+
+def quoted(text, a, b):
+    lo, hi = max(0, a - 260), min(len(text), b + 140)
+    return bool(BAN.search(text[lo:hi]))
+
+
+def context_flags(text, a, b):
+    &quot;&quot;&quot;--strict: a lone soft constant counts when the sentence says 'units'.&quot;&quot;&quot;
+    lo = max(0, a - 120)
+    hi = min(len(text), b + 80)
+    return bool(CONTEXT.search(text[lo:hi]))
+
+
+# -------------------------------------------------------------------- main
+
+def scan(path, strict=False):
+    text = path.read_text()
+    hits = []
+    for a, b in spans(text):
+        body = text[a:b]
+        for start, stop, names, run in chains(body):
+            if not declaration(names, strict and context_flags(text, a, b)):
+                continue
+            hits.append({
+                'file': path.name,
+                'line': text[:a].count('\n') + 1,
+                'span': wide(text, a, b),
+                'chain': body[start:stop].strip(),
+                'body': body,
+                'names': names,
+                'run': run,
+                'offset': (a + start, a + stop),
+                'raw': False,
+                'quoted': quoted(text, a, b),
+            })
+    # a raw glyph outside math is always a finding
+    for m in re.finditer('\u210f', text):
+        if not any(a &lt;= m.start() &lt; b for a, b in spans(text)):
+            hits.append({
+                'file': path.name,
+                'line': text[:m.start()].count('\n') + 1,
+                'span': None, 'chain': '\u210f', 'body': '',
+                'names': ['hbar'], 'run': [], 'offset': (m.start(), m.start() + 1),
+                'raw': True,
+                'quoted': False,
+            })
+    return text, hits
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
+    ap.add_argument('root', nargs='?', default='articles_physics')
+    ap.add_argument('--apply', action='store_true',
+                    help='rewrite whole-span chains into unit statements')
+    ap.add_argument('--strict', action='store_true',
+                    help='also flag a lone soft constant in a sentence about units')
+    ap.add_argument('--json', action='store_true')
+    ap.add_argument('--self-test', action='store_true')
+    args = ap.parse_args(argv)
+
+    if args.self_test:
+        return self_test()
+
+    paths = [pathlib.Path(p) for p in sorted(glob.glob(args.root + '/*.md'))]
+    if not paths:
+        print('no .md files under', args.root)
+        return 0
+
+    total = patched = 0
+    refused = []
+    report = []
+    for path in paths:
+        text, hits = scan(path, args.strict)
+        if not hits:
+            continue
+        hits = [h for h in hits if not h['quoted']]
+        total += len(hits)
+        report.extend({'file': h['file'], 'line': h['line'],
+                       'chain': h['chain'], 'raw': h['raw']}
+                      for h in hits)
+        if not args.apply:
+            continue
+        edits = []
+        for h in hits:
+            body = h['body']
+            if h['span'] is None or not patchable(h['names'], h['run'], body, h['chain']):
+                refused.append('%s:%d  %s' % (h['file'], h['line'], h['chain']))
+                continue
+            edits.append((h['span'][0], h['span'][1],
+                          render(h['names'], h['run'])))
+        if edits:
+            for a, b, new in sorted(edits, reverse=True):
+                text = text[:a] + new + text[b:]
+            path.write_text(text)
+            patched += len(edits)
+
+    if args.json:
+        print(json.dumps({'sites': total, 'patched': patched,
+                          'refused': refused, 'report': report}, indent=2))
+    else:
+        print('sites found:', total)
+        for r in report:
+            print('  %s:%d  %s' % (r['file'], r['line'],
+                                   r['chain'] if r['raw'] else '$%s$' % r['chain']))
+        if args.apply:
+            print('patched     :', patched)
+            print('refused     :', len(refused))
+            for x in refused:
+                print('  ', x)
+            if patched:
+                print('\nthe arithmetic that used the declaration is still to be '
+                      'restored by hand in the patched files')
+    return 1 if total else 0
+
+
+# --------------------------------------------------------------- self-test
+
+CASES = [
+    # (span, shold_flag, shold_patch)
+    (r'\hbar=1', True, True),
+    (r'\hbar=m=1', True, True),
+    (r'\hbar=k_B=1', True, True),
+    (r'\hbar=c=k_B=1', True, True),
+    (r'c=\hbar=m=1', True, True),
+    (r'm=\hbar=\omega=1', True, True),
+    (r'G=c=\hbar=k_B=1', True, True),
+    (r&quot;\hbar=m=k_t'=1&quot;, True, True),
+    (r'm=c=1', True, True),
+    (r'k_B=1', True, True),
+    (r'\hbar=m=c=1', True, True),
+    # look-alikes that must stay silent
+    (r'\kappa=1', False, False),
+    (r'm=1', False, False),
+    (r'\mu=1', False, False),
+    (r'c^2=1', False, False),
+    (r'\sigma^2=\hbar/(2m\omega)', False, False),
+    (r'\frac{h}{2\pi}=m', False, False),
+    (r'P_{\mathrm{id}}=1', False, False),
+    (r'n=1', False, False),
+    (r'x=y=1', False, False),
+    (r'\Big|_{\hbar=c=k_B=1}', True, False),
+]
+
+
+def self_test():
+    bad = 0
+    for span, flag, patch in CASES:
+        hits = [h for h in chains(span) if declaration(h[2])]
+        got_flag = bool(hits)
+        got_patch = got_flag and patchable(hits[0][2], hits[0][3], span,
+                                          span[hits[0][0]:hits[0][1]].strip())
+        ok = got_flag == flag and got_patch == patch
+        if not ok:
+            bad += 1
+        print('%s  %-34s flag=%-5s patch=%-5s%s'
+              % ('ok  ' if ok else 'FAIL', span, got_flag, got_patch,
+                 '' if ok else '   expected flag=%s patch=%s' % (flag, patch)))
+    print('\n%d / %d cases' % (len(CASES) - bad, len(CASES)))
+    return 1 if bad else 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
+</code></pre>
+<h2 id="summary">Summary</h2>
+<p><strong>One chain, one split at the equals sign, one exit code.</strong> A unit declaration is a chain of physical constants set to one; the tool finds every chain, names its file and line, and refuses the repairs it cannot justify.</p>
+<ul>
+<li>Detection splits the math span at <code>=</code> and reads the atoms: nineteen of them, four hard and the rest soft, with the aliases of §4 folded in.</li>
+<li>The repair is arithmetic on the displays that follow, never a substitution. <code>--apply</code> rewrites a span only when the whole span is the chain, and only into a unit statement; a chain inside a larger expression is refused and the refusal is printed.</li>
+<li>Quotation is not violation: a hit is dropped when the surrounding 260 characters before and 140 after carry one of the verdict words, which is what keeps the conventions article out of its own report.</li>
+<li>The exit code is the gate: <code>1</code> when a site is found, <code>0</code> when there is none, so the default run drops into a hook or a CI step unchanged.</li>
+<li>The self-test is twenty-one cases: eleven that flag and patch, one barred chain that flags and is refused, and nine look-alikes that must stay silent, among them $\sigma^2=\hbar/(2m\omega)$ and $\frac{h}{2\pi}=m$.</li>
+<li>§11 prints the program verbatim; the runnable copy is <code>_reserve/py/detect-unit-declarations.py</code>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

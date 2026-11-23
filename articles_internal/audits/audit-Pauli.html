@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration $axf$: Removing the Pauli Chain as a Tool, in Three Levels — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A working instruction, not a record. It tells an editor how to rewrite one article so that it never uses the Pauli chain as a tool…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-math0-removing-the-pauli-chain-as-a-tool-in-three-levels"><strong>Migration $axf$: Removing the Pauli Chain as a Tool, in Three Levels</strong></h1>
+<p><em>Status of this file.</em> <strong>A working instruction, not a record.</strong> It tells an editor how to rewrite one article so that it never <em>uses</em> the Pauli chain as a tool, and then simplifies its equations in three passes: cells instead of arrays, then biquaternion objects instead of matrices.</p>
+<p><em>The reason of the migration is stated elsewhere</em>, in <code>articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.md</code>. This file does not restate that reason; it enforces it.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Read all seventeen conventions files before writing.</strong> There is no shortlist. A fact you did not look for is a fact you will restate.</li>
+<li><strong>Cite a convention, never develop it.</strong> A body paragraph that restates or derives a convention is deleted and replaced by a pointer, however correct it is.</li>
+<li><strong>Naming is allowed, using is forbidden.</strong> The article is about these objects, so it may name them; no forbidden object may appear in a formula that states a result, and no later step may depend on one.</li>
+<li><strong>Enter the chain only by the subject test.</strong> The chain object must be the grammatical subject and the sentence must be unwritable without it.</li>
+<li><strong>Verify before reporting, from a script in <code>/tmp</code>.</strong> Thirteen checks, each reported by number.</li>
+</ol>
+<h2 id="1-the-task-and-the-article-it-is-written-for">1. The Task, and the Article It Is Written For</h2>
+<p>Repository: <code>/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/</code>.</p>
+<p>Rewrite one article so that it never uses the nine chain concepts as tools, then simplify its equations in three passes: cells instead of arrays, then biquaternion objects instead of matrices.</p>
+<p>For this article the owned topics you will meet are:</p>
+<ul>
+<li>the four units and the coefficient basis, from <em>Algebra and Element</em>, both copies;</li>
+<li>the two slots, the four family letters, the strata and $C_\Pi$, from <em>Operator Family</em>;</li>
+<li>the derivative, the gradient, the two sides, $\mathbb D$ and $\Box$, from <em>Operator and Calculus</em>, both copies;</li>
+<li>the coordinate, the metric and the frame cells $\gamma_\mu[\mathbb M_-]$, from <em>Frame</em>, both copies;</li>
+<li>the four forms and their norms, from <em>Product and Form</em>;</li>
+<li>the sixteen cells, the conjugation $C_\Pi$ and the pau display, from <em>Matrix Representations</em>, both copies.</li>
+</ul>
+<h2 id="2-read-first-all-seventeen-conventions-files">2. Read First: All Seventeen Conventions Files</h2>
+<p><code>PLAN.md</code>, then the article, then <strong>all seventeen</strong> conventions files. Read them very carefully and completely, manually, one by one. There is no shortlist.</p>
+<p><code>articles_maths/</code></p>
+<ul>
+<li><code>algebra-and-element-conventions.md</code></li>
+<li><code>frame-and-metric-conventions.md</code></li>
+<li><code>index-notation-and-corpus-conventions.md</code></li>
+<li><code>matrix-representations-conventions.md</code></li>
+<li><code>norm-and-unitary-conventions.md</code></li>
+<li><code>operator-and-calculus-conventions.md</code></li>
+<li><code>operator-family-conventions.md</code></li>
+<li><code>product-and-form-conventions.md</code></li>
+<li><code>special-element-and-peirce-conventions.md</code></li>
+</ul>
+<p><code>articles_physics/</code></p>
+<ul>
+<li><code>algebra-and-element-conventions.md</code></li>
+<li><code>frame-and-metric-conventions.md</code></li>
+<li><code>matrix-representations-conventions.md</code></li>
+<li><code>norm-and-pairing-conventions.md</code></li>
+<li><code>operator-and-calculus-conventions.md</code></li>
+<li><code>product-and-form-conventions.md</code></li>
+<li><code>special-element-conventions.md</code></li>
+<li><code>unit-index-and-notation-conventions.md</code></li>
+</ul>
+<h2 id="3-house-rules">3. House Rules</h2>
+<p>No git, no <code>build.py</code>, no subagents, no scratch files inside the repository — verify from <code>/tmp</code> and delete afterwards. Read the conventions before writing. Recompute every claim on at most 100 elements. Never sleep or poll.</p>
+<h2 id="4-conventions-are-cited-not-developed">4. Conventions Are Cited, Not Developed</h2>
+<p>The series fixes each convention once, in the files of §2. A body paragraph that restates or derives one is deleted and replaced by a pointer, however correct it is and however short. This holds for the unit, the form of an action, the composition of two actions, the generators of the frame, the coordinate and the metric, the d'Alembertian, the Dirac operator and its side, the trace, the conjugation, the sectors, and the two displays.</p>
+<ul>
+<li>A symbol that any of the seventeen files defines is that file's symbol. The article may name it and use it; it may not define it, derive it, or print its formula. The test is mechanical: grep the symbol in the seventeen files, and a hit in a definition or in a notation table means the article cites it.</li>
+<li>An article defines only what no conventions file owns.</li>
+<li>When the article needs a derived form, derive it from its own objects in the body, at the place of use, and say that it is a derived form.</li>
+</ul>
+<h2 id="5-naming-versus-using">5. Naming Versus Using</h2>
+<p>Naming is allowed and often required: the article is about these objects. Using is forbidden: no forbidden object may appear in a formula that states a result, and no later step may depend on one.</p>
+<h2 id="6-forbidden-as-tools-the-notation">6. Forbidden as Tools: The Notation</h2>
+<ol>
+<li>The Pauli matrices, and the image of the algebra into two-by-two arrays.</li>
+<li>The regular matrices in the Pauli display.</li>
+<li>The five gammas as arrays outside the closing block.</li>
+<li>The declared unit as a silent default.</li>
+<li>The two projectors of that unit.</li>
+<li>The fourfold split, its adapted basis and its scale.</li>
+<li>The two-dimensional space of the older literature.</li>
+<li>The column of two components, and the block split of that column.</li>
+<li>The Clifford algebra.</li>
+</ol>
+<h2 id="7-forbidden-as-tools-the-names">7. Forbidden as Tools: The Names</h2>
+<p>"Spinor", "bispinor" and "spinor space" are forbidden as names for the field of the article. The word names the older literature's object, which is the column of an ideal, so it carries the ideal with it. Three forms are forbidden outright: "spinor space", "spinor index", and "spinor representation" as a claim about this algebra. See §14 for the subject test that replaces the word.</p>
+<h2 id="8-forbidden-as-machinery-the-idempotent">8. Forbidden as Machinery: The Idempotent</h2>
+<p>An idempotent is forbidden when it is used to split the algebra, to generate an ideal, to select a column, to grade an operator, to excuse a rank-one qualifier, or to write a block. See §9 item 6 for the one use that stays.</p>
+<h2 id="9-allowed-in-order-of-preference">9. Allowed, in Order of Preference</h2>
+<ol>
+<li>An element of $\mathbb B$ and a product of elements, $aQb$, with no operator symbol.</li>
+<li>A cell $L_aR_b$, only when the operator itself is the subject.</li>
+<li>The units $e_t,e_x,e_y,e_z$; the structure constants; the conjugation $C_\Pi$.</li>
+<li>Determinant, trace, spectrum, rank, signed permutations, diagonal entries.</li>
+<li>An array, only where the array itself is the object of the sentence.</li>
+<li>An idempotent, only where the idempotent is what the sentence is about: a pure state, a projector of a measurement, or a spectral projector of a Hermitian element read as an observable. This is the quantum-mechanical use, and it is the one exception to the idempotent rule.</li>
+</ol>
+<h2 id="10-the-subject-test">10. The Subject Test</h2>
+<p>Enter the chain only where the chain object is the grammatical subject of the sentence and the sentence cannot be written without it. Declaring the object to be "the subject of the section" is not the test.</p>
+<p>A Pauli array, a root, a Peirce basis, an ideal and a block fail the test whenever the sentence can name the element instead. An idempotent passes only as a state, by the three tests of §11. A spinor never passes: the word names a carrier, and the carrier of this article is $\mathbb B$.</p>
+<h2 id="11-the-idempotent-state-or-device">11. The Idempotent, State or Device</h2>
+<p>The corpus's notation table gives one row for two things: "an idempotent or a pure state of the biquaternion layer, and the minimal left ideal it generates". An article carries the first half of that row and never the second. <strong>That split of the corpus's own row is a decision of this instruction, not a reading of the corpus</strong>, and it is recorded here in those words.</p>
+<p>Three tests decide which half a sentence is using.</p>
+<ol>
+<li><strong>The direction test.</strong> A state idempotent carries a direction the state or the apparatus supplies, written as a symbol: $\pi(u)=\tfrac12(e_t+iu)$, with $u$ declared where it enters. A device idempotent imports the default unit: it is written with $e_z$ and nothing in the physics asked for $e_z$.</li>
+<li><strong>The deletion test.</strong> Delete the words after "and the ideal it generates" and read the sentence again. If it still says what it said, the idempotent was the object. If it collapses, the ideal was the object and the idempotent was the device.</li>
+<li><strong>The carrier test.</strong> If a column, a block, a tensor factor or a Peirce basis follows the idempotent, the idempotent was a device. A state needs one element and no second carrier. "Rank-one" is not a carrier: it is admissible where it names the rank of the element read as an operator, and it is the device's tell only where it is used to bring a column in behind it, as in "rank one, hence a column".</li>
+</ol>
+<p>The observable is the same rule. A Hermitian element is an observable, and the idempotents of its spectrum are its outcomes. Write the element and its spectrum. Do not write the spectral projectors as a block, and do not write the observable as an array.</p>
+<h2 id="12-level-1-remove-the-chain-as-a-tool">12. Level 1: Remove the Chain as a Tool</h2>
+<p>Apply the three levels in this order, and verify between them with the checks of §17.</p>
+<p><strong>Level 1</strong> states the axis as a property of the basis and nothing else.</p>
+<ul>
+<li>An operator is diagonal in a basis when each basis element is carried into a multiple of itself.</li>
+<li>In the coefficient basis the diagonal cells are the four squares, $e_te_t$, $e_xe_x$, $e_ye_y$, $e_ze_z$, and that set is unchanged by any permutation of the three spatial units.</li>
+<li>In a frame built on a declared unit $u$ the diagonal cells are four others: $e_te_t$, $e_tu$, $ue_t$, $uu$. The declared unit appears twice, time appears twice, the other two spatial units appear in none, and the set therefore changes when the units are permuted.</li>
+<li>Write the second row with $u$, not with $e_z$, so that no unit is privileged by the notation of the article itself.</li>
+<li>A state is an element of $\mathbb B$.</li>
+<li>Chirality is the label, two values, nothing else; see §14.</li>
+<li>The change of display is $C_\Pi$ conjugation, keeping trace, determinant, spectrum, rank and every product.</li>
+</ul>
+<p>The argument closes here. No root, no projector, no split, no column is needed to say that the second row names the unit.</p>
+<h2 id="13-level-2-cells-instead-of-arrays">13. Level 2: Cells Instead of Arrays</h2>
+<p><strong>Level 2</strong> turns every matrix equation into a cell equation.</p>
+<ul>
+<li>A cell with a $t$ slot collapses, because $e_t$ is the unit.</li>
+<li>Two of the five frame cells are single multipliers: $iR_{e_x}$ and $-iR_{e_z}$.</li>
+<li>An array may stay only where the array is the object: a comparison of two displays, the table of the sixteen cells, a sentence making the axis visible.</li>
+<li>Delete every sentence whose only content is which entry is nonzero.</li>
+</ul>
+<h2 id="14-level-3-biquaternion-objects-no-matrices">14. Level 3: Biquaternion Objects, No Matrices</h2>
+<p><strong>Level 3</strong> is the default target.</p>
+<ul>
+<li>Nothing is written $L_aR_b$. An action is written out: $Q\to aQb$.</li>
+<li>$e_t$ is the unit of the algebra: $e_tQ=Qe_t=Q$. Never $L_{e_t}=R_{e_t}=I$, which introduces two operators to say that 1 is 1.</li>
+<li>A state is a biquaternion. No column, no matrix product.</li>
+<li>Chirality is the subscript, and it takes two values. An element is $L$ or $R$:</li>
+</ul>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>the element is written</th>
+<th>its value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L$</td>
+<td>$Q_L$</td>
+<td>minus one</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>$Q_R$</td>
+<td>plus one</td>
+</tr>
+</tbody>
+</table></div>
+<p>That is the whole definition. Do not write a formula for it. No map symbol, no square, no trace, no spectrum, no projector of the chirality half-sum, no half-sum splitting formula, no multiplication by a unit. Name the value; do not compute it. This bar is about the value; the measurement projector of §9 item 6 is a different object and stays.</p>
+<p>$L$ is the minus value, which is the Dirac convention already in the corpus: in the display where the chirality cell is diagonal the $L$ part is the upper block, and that is $\psi_L$. Write $\psi_L,\psi_R$ in a physics article and $Q_L,Q_R$ in a maths one. Nothing is renamed.</p>
+<ul>
+<li>The two values are exactly two, and only the zero element is both.</li>
+<li>The subscript is not reserved to states. It belongs to the object, so a general element, a product, a unit and a state all carry it.</li>
+<li>A product takes the letter of its right factor. Left multiplication keeps the letter. State these two facts in words if the article needs them.</li>
+<li>Do not write "sign", "parity", "grade", "handedness" or "chirality" for the value: the value is $L$ or $R$.</li>
+<li>The field is an element. Never call it a spinor. The test is the grammatical subject: if the subject of the sentence is the field of this article, the word spinor is wrong. Wrong: "the spinor is the column", "the spinor norm", "the spinor space", "the null spinor". Right: "the field", "the element $\Psi$", "the part $\Psi_L$", "the norm of the element", "the zero divisor". One sentence may still name the older object where the older object is the subject, as in "the spinor of the older literature is that column". That sentence belongs in the closing block, never in a formula, and never as a definition of the field.</li>
+<li>"Bipotential", "bispinor" and "spinorial" are outside the vocabulary. If a source uses them, the source's word is reported in quotation, not adopted.</li>
+<li>Do not use a superscript $L$ or $R$: that is the regular matrix.</li>
+<li>The three uses of the letters stay apart: $L_a$ and $R_b$ name an element and label an operator; $M_4^L$ and $M_4^R$ carry a superscript and label an array; $Q_L$, $Q_R$, $\psi_L$, $\psi_R$ label the element.</li>
+</ul>
+<h2 id="15-stop-rules">15. Stop Rules</h2>
+<p>Do not simplify past a step you can verify. Keep one array per display where the article exists to compare displays. If Level 3 would remove an identity the reader needs, keep the Level 2 form and say so in the report.</p>
+<h2 id="16-keep-and-do-not-touch">16. Keep, and Do Not Touch</h2>
+<ul>
+<li>The closing comparison block of <em>The AXF Matrices: Axis-Free, Integer Entries</em>, from §<em>The Dictionary</em> to §<em>The Rules of Use</em>, which by rule prints $\mathrm{pau}$ beside $\mathrm{axf}$; the rewrite stops at its door.</li>
+<li>The title, the menu entry in <code>physics.md</code>, and every cited article title.</li>
+<li>Every section whose sentences use no forbidden object as a tool, and the <em>Summary</em>.</li>
+</ul>
+<p><em>The section names were checked against the article on 2026-11-23.</em> Five names that an earlier draft of this list carried resolve to no heading anywhere in the corpus: <em>Three Ways to Write the Same Operator</em>, <em>Where the Gamma Formalism Remains the Right Tool</em>, <em>The Defect</em>, <em>The Axis-Free Display</em> and <em>What Changes and What Does Not</em>. The article's headings are <em>The Source Table</em>, <em>The Results in Brief</em>, <em>The Operator Behind the Array</em>, <em>The Interpretations</em>, <em>Why the Pauli and the Gamma Displays Are Refused</em>, <em>The Limits</em> and the <em>Summary</em>; the closing block is §<em>Migrating from the Pauli Framework</em>. A name that finds no heading is a stale instruction, and the named article is what decides.</p>
+<h2 id="17-verify-before-reporting">17. Verify Before Reporting</h2>
+<p>Run these from a script in <code>/tmp</code>. Checks 1 to 4 test the algebra, checks 5, 5b, 6 and 12 test the page, and checks 7 to 10 test the conventions you rely on — they are not statements the article must make.</p>
+<ol>
+<li><strong>Diagonal cells.</strong> 4 in the coefficient basis, the four squares; 4 in a frame built on $u$, namely $e_te_t$, $e_tu$, $ue_t$, $uu$. Repeat for $u=x,y,z$.</li>
+<li><strong>The arrays.</strong> All sixteen coefficient-basis arrays are real, determinant 1, norm 2, orthogonal; only eight arrays of the other display are real.</li>
+<li><strong>The conjugation.</strong> $\det C_\Pi=-\tfrac14$, $C^\dagger C=I/2$, $C^{-1}=2C^\dagger$.</li>
+<li><strong>The identities.</strong> Every rewritten identity equals the original: 3 generic biquaternions, both sides, <code>allclose</code>, at most 100 evaluations.</li>
+<li><strong>The glyph census of the body</strong>, everything before the closing block: zero <code>pmatrix</code>, zero <code>gamma_</code>, zero <code>sigma_</code>, zero <code>Upsilon</code>, zero "ideal", zero "Clifford", zero "spinor", zero "bispinor", zero "bipotential", zero "Peirce", zero "idempotent" outside the state exception — all case-insensitive, all counted as whole words. Exemptions, each reported with its line: $C_\Pi$, a word inside a cited article title, and an idempotent that passed the three tests.
+5b. <strong>The idempotent audit.</strong> List every occurrence of "idempotent", "projector" and "rank-one" in the body with the line, and mark each one state or device. Then apply the deletion test and the carrier test to each state. A device listed in the report is a failed migration.</li>
+<li><strong>Operator symbols per section of the body.</strong> A Level 3 section has zero <code>L_{</code> and zero <code>R_{</code>, except a cell the section is about, and except the chirality cell named once where chirality is the subject. The forbidden pattern is exactly $L_{e_t}=R_{e_t}=I$.</li>
+<li><strong>Two values.</strong> The conventions state two values and no more: 100 generic elements split uniquely with only zero common; a third value is a failure.</li>
+<li><strong>The product law</strong> on 100 pairs: the letter is the letter of the right factor.</li>
+<li><strong>Left multiplication</strong> keeps the letter, on 100 random left factors.</li>
+<li><strong>Right multiplication:</strong> the two units that preserve, the two that exchange.</li>
+<li><strong>The page.</strong> No new broken <code>.html</code> link, and every cited title still resolves.</li>
+<li><strong>No restatement of a convention in the body.</strong> Grep for "the series conventions", "the unit is", "compose by substitution", "an operator of its own", "anticommute pairwise". Then take every symbol the body defines and grep it in the seventeen conventions files: a hit in a definition or a notation table is a violation unless the body only names it. Report the symbol, the file that owns it, and the sentence.</li>
+</ol>
+<h2 id="18-the-report-format">18. The Report Format</h2>
+<p>Report any blocking difficulty; the sections replaced; each replacement sentence with the fact that supports it; the level reached on each section, 1, 2 or 3; the thirteen check results; and any claim you could not restate without a forbidden object. Do not invent a replacement; list it instead. For each idempotent kept, give its line, its three test results, and the direction symbol the state carries.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One article, three levels, one test.</strong> The Pauli chain is allowed as a name and forbidden as a tool; the subject test is what separates the two, and the levels apply it in increasing severity.</p>
+<ul>
+<li>Nine notation items are forbidden as tools, three names are forbidden outright, and the idempotent is forbidden as machinery except as a state.</li>
+<li>The idempotent is split on a decision of this instruction, not on a reading of the corpus: the state half stays, the ideal half goes, and three tests decide which half a sentence uses.</li>
+<li>Level 1 states the axis as a property of the basis; Level 2 turns arrays into cells; Level 3 writes the action out as $Q\to aQb$ and the chirality as a subscript with two values.</li>
+<li>The letters are fixed: $L$ is minus, $R$ is plus, a product takes the letter of its right factor, and the value is never computed.</li>
+<li>Thirteen checks hold the result, four on the algebra and nine on the page and on the conventions.</li>
+<li>Stop where you can verify, and keep the Level 2 form rather than remove an identity the reader needs.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb B$</td>
+<td>the biquaternion algebra; the carrier of the article</td>
+</tr>
+<tr>
+<td>$e_t,e_x,e_y,e_z$</td>
+<td>the four units; $e_t$ is the identity</td>
+</tr>
+<tr>
+<td>$Q\to aQb$</td>
+<td>an action written out, with no operator symbol</td>
+</tr>
+<tr>
+<td>$L_aR_b$</td>
+<td>a cell; allowed only when the operator is the subject</td>
+</tr>
+<tr>
+<td>$Q_L$, $Q_R$</td>
+<td>the two values of the chirality subscript; minus and plus</td>
+</tr>
+<tr>
+<td>$C_\Pi$</td>
+<td>the conjugation that changes the display and keeps trace, determinant, spectrum, rank</td>
+</tr>
+<tr>
+<td>$\pi(u)=\tfrac12(e_t+iu)$</td>
+<td>a state idempotent carrying the direction $u$</td>
+</tr>
+<tr>
+<td>the subject test</td>
+<td>the chain object must be the grammatical subject and the sentence unwritable without it</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

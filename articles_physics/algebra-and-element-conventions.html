@@ -96,9 +96,9 @@ i^2 = -1.
 $$</p>
 <p>Everything that follows turns on how each complex coefficient is split, so the split is fixed here, at the outset. Writing every coefficient as a real part plus $i$ times a real part,</p>
 <p>$$
-R_t = h_t + ir'_t, \qquad R_x = r_x + ih'_x, \qquad R_y = r_y + ih'_y, \qquad R_z = r_z + ih'_z, \qquad r_{\imath}, r'_{\imath} \in \mathbb{R},
+Q_t = q_t + iq'_t, \qquad Q_x = q_x + iq'_x, \qquad Q_y = q_y + iq'_y, \qquad Q_z = q_z + iq'_z, \qquad q_{\imath}, q'_{\imath} \in \mathbb{R},
 $$</p>
-<p>replaces the four complex coefficients of the point by <strong>eight real parameters</strong>: $r_{\imath}$ is the real part of $R_{\imath}$, the coefficient of $e_{\imath}$, and $r'_{\imath}$ its imaginary part, the coefficient of $ie_{\imath}$, so the prime marks the parameter that carries the $i$. <strong>The prime stays on the parameter letter and the slot goes into the subscript</strong>: the coefficient is written $r'_t$, never the old $t'$ written as a superscript on the slot, because the prime qualifies the parameter and not the slot. The four coefficients are lengths and no factor stands on any of them: the temporal slot is a length like the three spatial ones, so $h_t$ and $r'_t$ are lengths, and $R_x, R_y, R_z$ are read the same way. The generic element of the mathematics keeps its own coefficient letters, $\tilde Q=\sum_{\imath} Q_{\imath} e_{\imath}$ with $Q_{\imath}=q_{\imath}+iq'_{\imath}$, and those letters carry no physical reading; the position letter is $R$ and its parameters are $r$ and $r'$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
+<p>replaces the four complex coefficients of the point by <strong>eight real parameters</strong>: $q_{\imath}$ is the real part of $Q_{\imath}$, the coefficient of $e_{\imath}$, and $q'_{\imath}$ its imaginary part, the coefficient of $ie_{\imath}$, so the prime marks the parameter that carries the $i$. <strong>The prime stays on the parameter letter and the slot goes into the subscript</strong>: the coefficient is written $q'_t$, never the old $t'$ written as a superscript on the slot, because the prime qualifies the parameter and not the slot. The four coefficients are lengths and no factor stands on any of them: the temporal slot is a length like the three spatial ones, so $q_t$ and $q'_t$ are lengths, and $Q_x, Q_y, Q_z$ are read the same way. The eight parameters are generic, and their physical readings are these, stated once: the informational time is $q_t=h_t$, the material time is $q'_t=r'_t$, the material space is $q_{\imath}=r_{\imath}$ and the informational space is $q'_{\imath}=h'_{\imath}$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
 <p>One structural fact governs the whole series, so it is worth isolating. The scalar unit $i$ is central: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a <em>central</em> phase $\exp(i\theta_{\mathrm{pha}})$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde\nabla_\Phi$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.</p>
 <p>The central phase is carried by the first coordinate. The phase is the angle $\theta_{\mathrm{cen}}$, carried by the unit complex number $\exp(i\theta_{\mathrm{cen}})$ multiplying $e_t$, and it acts on an element by left multiplication, $\tilde Q\mapsto\exp(i\theta_{\mathrm{cen}})e_t\tilde Q=\exp(i\theta_{\mathrm{cen}})\tilde Q$. On the coefficients this is $Q_t\mapsto\exp(i\theta_{\mathrm{cen}})Q_t$ and, with the same factor, $Q_x\mapsto\exp(i\theta_{\mathrm{cen}})Q_x$, $Q_y\mapsto\exp(i\theta_{\mathrm{cen}})Q_y$, $Q_z\mapsto\exp(i\theta_{\mathrm{cen}})Q_z$. The first line is the definition: the phase acts on $Q_t$, the coefficient of $e_t$, the first coordinate of the element, and there it rotates the two parameters $q_t$ and $q'_t$ of the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The other three coordinates follow, with the same factor, because the multiplication is $\mathbb{C}$-linear and $e_t$ is the unit. The action is therefore fixed by its value on one coordinate, and there is no second choice to make. The element carries one complex structure, $J=L_{ie_t}$, of which the phase is the exponential, $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$; a second complex structure exists in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and in no element of $\mathbb{B}$.</p>
 <p>A statement about the phase is a statement about the first coordinate and its forced extension. It is never a statement about one summand of a decomposition of the carrier. The words <em>on one half</em>, <em>on the other half</em> and <em>on both halves</em> are not written of the phase, because the element is not a sum of halves.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p>$$
 \tilde Q = Q_t e_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z = \sum_{\imath\in\{t,x,y,z\}} Q_{\imath} e_{\imath} ,
 $$</p>
-<p>with $e_{\imath}$ the unit of the direction $\mu$ — the arrowless $e_t$ at ${\imath} = t$ and the arrowed $\vec e_{\imath}$ at $\mu = x, y, z$. The three vector units close on the scalar unit and on one another,</p>
+<p>with $e_{\imath}$ the unit of the direction $\imath$ — the arrowless $e_t$ at ${\imath} = t$ and the arrowed $\vec e_{\imath}$ at $\imath = x, y, z$. The three vector units close on the scalar unit and on one another,</p>
 <p>$$
 e_t = 1, \qquad \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t , \qquad \vec e_x \vec e_y = -\vec e_y \vec e_x = \vec e_z ,
 $$</p>
@@ -126,7 +126,7 @@ $$</p>
 <p>The replacement of Hamilton's $i, j, k$ by the base rests on three reasons:</p>
 <ul>
 <li>The letters $i$ and $j$ are already taken. Hamilton's $i, j, k$ collides with the complex $i$, kept for the central imaginary, and with the hyperbolic unit $j$, so a vector unit written with either letter would be misread.</li>
-<li>The base names the directions of spacetime. The labels $t, x, y, z$ name the four directions of spacetime, so the base states the physics directly, and $e_{\imath}$ remains an acceptable notation in mathematics, the unit along the axis $\mu$.</li>
+<li>The base names the directions of spacetime. The labels $t, x, y, z$ name the four directions of spacetime, so the base states the physics directly, and $e_{\imath}$ remains an acceptable notation in mathematics, the unit along the axis $\imath$.</li>
 <li>The base spends no digit. The labels carry no digit, so every digit stays free to count the generic objects: $Q_1, Q_2$, $\tilde Q_1, \tilde Q_2$ and $\tilde q_1, \tilde q_2$.</li>
 </ul>
 <h2 id="the-elements-and-their-coefficients">The Elements and their Coefficients</h2>
@@ -228,12 +228,12 @@ $$</p>
 <p>$$
 \tilde Q=\sum_{\imath\in\{t,x,y,z\}}Q_{\imath} e_{\imath},
 $$</p>
-<p>with $e_t$ at ${\imath}=t$ and $\vec e_{\imath}$ at $\mu=x,y,z$. The same rule reads a quaternion, $\tilde q=\sum_{\imath} q_{\imath} e_{\imath}$. The label names the unit, not the time coordinate: the material time is $r'_t$ and the informational time is $t$.</p>
+<p>with $e_t$ at ${\imath}=t$ and $\vec e_{\imath}$ at $\imath=x,y,z$. The same rule reads a quaternion, $\tilde q=\sum_{\imath} q_{\imath} e_{\imath}$. The label names the unit, not the time coordinate: the material time is $r'_t$ and the informational time is $t$.</p>
 <p>The coefficient prime marks the slot that carries the $i$. Each complex coefficient is a real part plus $i$ times a real part,</p>
 <p>$$
-R_{\imath} = r_{\imath} + ir'_{\imath}, \qquad r_{\imath}, r'_{\imath} \in \mathbb{R}, \qquad \mu \in \{t, x, y, z\},
+Q_{\imath} = q_{\imath} + iq'_{\imath}, \qquad q_{\imath}, q'_{\imath} \in \mathbb{R}, \qquad \imath \in \{t, x, y, z\},
 $$</p>
-<p>with the four coefficients in one unit, $R_t = h_t + ir'_t$, so $r_{\imath}$ multiplies $e_{\imath}$ and $r'_{\imath}$ multiplies $ie_{\imath}$, the same rule for the four slots:</p>
+<p>so $q_{\imath}$ multiplies $e_{\imath}$ and $q'_{\imath}$ multiplies $ie_{\imath}$, the same rule for the four slots:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -246,31 +246,31 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$R_t$</td>
-<td>$h_t$</td>
+<td>$Q_t$</td>
+<td>$q_t$</td>
 <td>$e_t$</td>
-<td>$r'_t$</td>
+<td>$q'_t$</td>
 <td>$ie_t$</td>
 </tr>
 <tr>
-<td>$R_x$</td>
-<td>$r_x$</td>
+<td>$Q_x$</td>
+<td>$q_x$</td>
 <td>$\vec e_x$</td>
-<td>$h'_x$</td>
+<td>$q'_x$</td>
 <td>$i\vec e_x$</td>
 </tr>
 <tr>
-<td>$R_y$</td>
-<td>$r_y$</td>
+<td>$Q_y$</td>
+<td>$q_y$</td>
 <td>$\vec e_y$</td>
-<td>$h'_y$</td>
+<td>$q'_y$</td>
 <td>$i\vec e_y$</td>
 </tr>
 <tr>
-<td>$R_z$</td>
-<td>$r_z$</td>
+<td>$Q_z$</td>
+<td>$q_z$</td>
 <td>$\vec e_z$</td>
-<td>$h'_z$</td>
+<td>$q'_z$</td>
 <td>$i\vec e_z$</td>
 </tr>
 </tbody>
@@ -285,7 +285,7 @@ $$</p>
 <p>A logarithm carries the glyph of its element and the subscript $\log$. The logarithm is a solution of the exponential equation in the same algebra, not an object of a new kind, so it carries the glyph of the element and the subscript, and the definition reads $\exp(\tilde Q_{\log}) = \tilde Q$. The glyph is $\tilde Q_{\log}$ in this algebra, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\breve Q_{\log}$ in the reduced biquaternions, and $Q_{\log}$ in the complex, split-complex and dual ones. The subscript is a word, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$. The subscript is dropped when the logarithm is written as an operator, $\log\tilde Q$ or $\operatorname{Log}\tilde Q$. The coordinates of a logarithm follow the coefficient rule: in the complex, split-complex and dual layers, $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case, and the prime marks the imaginary coordinate alone. The logarithm of a real number is the ordinary real logarithm, written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.</p>
 <h2 id="the-reserved-letters">The Reserved Letters</h2>
 <p><strong>Five letters carry five roles, and each is spent once.</strong> An angle is $\theta$, a scale is $\varrho$, a wave number is $\nu$, a wavelength is $\lambda$, and an eigenvalue is $\eta$. None of the five carries a second sense, and no other scalar borrows one of them. A scalar that is none of the five takes $\digamma$ with a subscript that names its sense.</p>
-<h3 id="the-angle-math364">The Angle: $\theta$</h3>
+<h3 id="the-angle-math362">The Angle: $\theta$</h3>
 <p><strong>An angle is real, and it is written $\theta$.</strong> The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.</p>
 <p>The central phase is the real argument. $\exp(i\theta_{\mathrm{cen}})e_t=\exp(i\theta_{\mathrm{cen}} J)$ with $\theta_{\mathrm{cen}}$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.</p>
 <p>The boost factor is the imaginary argument. The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\exp(\vec U\theta)$ at the imaginary argument $\theta=-i\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret <code>rpd</code>, so that no second letter is spent on it. The sign carries the direction of the boost and the magnitude is the rapidity. A purely imaginary angle is written $i\theta_{\mathrm{rpd}}$ where it is used, and the $\theta_{\mathrm{rpd}}$ inside stays real.</p>
@@ -296,13 +296,13 @@ $$</p>
 <p>The formula does not change between the rotation and the boost; only the value put in the slot changes.</p>
 <p>The rotor's angle is $\theta_{\mathrm{axr}}$. For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.</p>
 <p>The letter carries no second role. The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.</p>
-<h3 id="the-scale-math396">The Scale: $\varrho$</h3>
+<h3 id="the-scale-math394">The Scale: $\varrho$</h3>
 <p><strong>The glyph $\varrho$ carries a scale and nothing else.</strong> A polar decomposition writes an element as a positive real scale times a unit element, $\tilde\Xi=\varrho\,\tilde u$ with $\varrho=\lVert\tilde\Xi\rVert\ge0$ and $\lVert\tilde u\rVert=1$, and the amplitude of a wave is the same letter read as a magnitude. A subscript names which scale: $\varrho_{\mathrm{num}}$ the number density of a fluid, $\varrho_{\mathrm{chg}}$ the charge density, $\varrho_{\mathrm{ifm}}$ the coefficient of an indefinite form. The letter never carries an angle, a wave number, a wavelength or an eigenvalue.</p>
-<h3 id="the-wavenumber-math404">The Wavenumber: $\nu$</h3>
-<p><strong>The glyph $\nu$ carries a wave number and nothing else.</strong> The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; and never a mass.</p>
-<h3 id="the-wavelength-math413">The Wavelength: $\lambda$</h3>
+<h3 id="the-wavenumber-math402">The Wavenumber: $\nu$</h3>
+<p><strong>The glyph $\nu$ carries a wave number and nothing else.</strong> The wave number is the number of turns per unit length, $\nu=k/2\pi=1/\lambda$, and a particle has three of them, $\nu_m$, $\nu_{\Phi}$ and $\nu_t^{\prime}$. The letter is never an index, because the space index is $k$; never a frequency in hertz, which is $f$ or $\omega$; never a mass; and never a particle species, the neutrino carrying the field letter and the role subscript, $\xi_{\mathrm{neu}}$.</p>
+<h3 id="the-wavelength-math412">The Wavelength: $\lambda$</h3>
 <p><strong>The glyph $\lambda$ carries a wavelength and nothing else.</strong> It is the reciprocal of the wave number, $\lambda=1/\nu$, written $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$ for the three of a particle. The letter never carries an eigenvalue, a coupling, a scale factor or a parameter of a family; those are $\eta$, $\digamma_{\mathrm{qtc}}$, $\digamma_{\mathrm{scl}}$ and $\digamma_{\mathrm{prm}}$.</p>
-<h3 id="the-eigenvalue-math423">The Eigenvalue: $\eta$</h3>
+<h3 id="the-eigenvalue-math422">The Eigenvalue: $\eta$</h3>
 <p><strong>The glyph $\eta$ carries an eigenvalue and nothing else.</strong> The spectrum is $\eta$, $\eta_\pm$, $\eta_{1,2}$, $\eta_1\dots\eta_N$, $\eta_i$ or $\eta_n$ according to how many there are, the characteristic equation is $\eta^{2}-2Q_t\eta+N=0$, and the conjugate eigenvalue is $\bar\eta$. A spectral parameter is an eigenvalue and keeps the letter. The letter is never an index, never a scale and never an indefinite form.</p>
 <h2 id="the-remarkable-subspaces-of-biquaternions">The Remarkable Subspaces of Biquaternions</h2>
 <p>The eight real parameters of a general element group into <strong>remarkable subspaces</strong>: the centre, the vector subspace, the two halves of the coefficient split, and the two sectors. Each is cut out by a conjugation:</p>
@@ -348,11 +348,11 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-basis-the-parameters-and-the-coordinates">The Basis, the Parameters and the Coordinates</h3>
-<p>There is one alphabet, and it is the position letter. The parameters are the coordinates, so the dictionary that once mapped one set of letters onto another is not restated: it is deleted. The slot names the coordinate, the prime marks the half of the coefficient that carries the $i$, and $c$ is the conversion between the length coordinate and the second, quoted only where a clock is read. The eight real parameters are therefore read as</p>
+<p>There is one alphabet, and it is the Q family. The parameters are the coordinates, so the dictionary that once mapped one set of letters onto another is not restated: it is deleted. The slot names the coordinate, the prime marks the half of the coefficient that carries the $i$, and $c$ is the conversion between the length coordinate and the second, quoted only where a clock is read. The eight real parameters are therefore read as</p>
 <p>$$
-(h_t,\ r_x,\ r_y,\ r_z) \quad \text{and} \quad (r'_t,\ h'_x,\ h'_y,\ h'_z),
+(q_t,\ q_x,\ q_y,\ q_z) \quad \text{and} \quad (q'_t,\ q'_x,\ q'_y,\ q'_z),
 $$</p>
-<p>the unprimed set the real halves and the primed set the imaginary halves, with the four coefficients $R_t = h_t + ir'_t$, $R_x = r_x + ih'_x$, $R_y = r_y + ih'_y$, $R_z = r_z + ih'_z$. The material temporal coordinate is $r'_t$ and the material space is $r_x, r_y, r_z$; the informational temporal coordinate is $h_t$ and the informational space is $h'_x, h'_y, h'_z$. All eight are lengths, and the speed of light is not in the element: it is the conversion $t'=r'_t/c$ between the length coordinate and the second, $c=1/\sqrt{\epsilon\mu}$ in a medium and $c_0$ in vacuum.</p>
+<p>the unprimed set the real halves and the primed set the imaginary halves, with the four coefficients $Q_t = q_t+iq'_t$, $Q_x = q_x+iq'_x$, $Q_y = q_y+iq'_y$, $Q_z = q_z+iq'_z$. The physical reading names the same eight and adds no letter of its own: the material temporal coordinate is $q'_t=r'_t$ and the material space is $q_\imath=r_\imath$; the informational temporal coordinate is $q_t=h_t$ and the informational space is $q'_\imath=h'_\imath$. All eight are lengths, and the speed of light is not in the element: it is the conversion $t'=r'_t/c$ between the length coordinate and the second, $c=1/\sqrt{\epsilon\mu}$ in a medium and $c_0$ in vacuum.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -370,48 +370,48 @@ $$</p>
 <td>The centre</td>
 <td>Complex time sector</td>
 <td>$e_t,\ ie_t$</td>
-<td>$h_t,\ r'_t$</td>
-<td>$h_t,\ i r'_t$</td>
+<td>$q_t,\ q'_t$</td>
+<td>$q_t,\ i q'_t$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{V}$</td>
 <td>Vector</td>
 <td>Complex space sector</td>
 <td>$\vec e_x,\ \vec e_y,\ \vec e_z,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$r_x,\ r_y,\ r_z,\ h'_x,\ h'_y,\ h'_z$</td>
-<td>$r_x,\ r_y,\ r_z,\ i h'_x,\ i h'_y,\ i h'_z$</td>
+<td>$q_x,\ q_y,\ q_z,\ q'_x,\ q'_y,\ q'_z$</td>
+<td>$q_x,\ q_y,\ q_z,\ i q'_x,\ i q'_y,\ i q'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{H}$</td>
 <td>Quaternion</td>
 <td>Real sector</td>
 <td>$e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$</td>
-<td>$h_t,\ r_x,\ r_y,\ r_z$</td>
-<td>$h_t,\ r_x,\ r_y,\ r_z$</td>
+<td>$q_t,\ q_x,\ q_y,\ q_z$</td>
+<td>$q_t,\ q_x,\ q_y,\ q_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{iH}$</td>
 <td>Antiquaternion</td>
 <td>Imaginary sector</td>
 <td>$ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$r'_t,\ h'_x,\ h'_y,\ h'_z$</td>
-<td>$i r'_t,\ i h'_x,\ i h'_y,\ i h'_z$</td>
+<td>$q'_t,\ q'_x,\ q'_y,\ q'_z$</td>
+<td>$i q'_t,\ i q'_x,\ i q'_y,\ i q'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian</td>
 <td>Informational sector</td>
 <td>$e_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$h_t,\ h'_x,\ h'_y,\ h'_z$</td>
-<td>$h_t,\ i h'_x,\ i h'_y,\ i h'_z$</td>
+<td>$q_t,\ q'_x,\ q'_y,\ q'_z$</td>
+<td>$q_t,\ i q'_x,\ i q'_y,\ i q'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian</td>
 <td>Material sector</td>
 <td>$ie_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$</td>
-<td>$r'_t,\ r_x,\ r_y,\ r_z$</td>
-<td>$i r'_t,\ r_x,\ r_y,\ r_z$</td>
+<td>$q'_t,\ q_x,\ q_y,\ q_z$</td>
+<td>$i q'_t,\ q_x,\ q_y,\ q_z$</td>
 </tr>
 </tbody>
 </table></div>
@@ -486,10 +486,10 @@ $$</p>
 <p>the Hermitian subspace with the anti-Hermitian one; without qualification, <em>the sectors</em> in this series are these two, and the relativistic articles are written in terms of this split. The element splits a second time, across the coefficient slots,</p>
 <p>$$
 \tilde Q = \tilde H_\Psi + \tilde R_\Phi,\qquad
-\tilde H_\Psi = h_t\,e_t + i\bigl(h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z\bigr),\qquad
-\tilde R_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z.
+\tilde H_\Psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr),\qquad
+\tilde R_\Phi = i q'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z.
 $$</p>
-<p>$\tilde H_\Psi$ is the <strong>informational part</strong>: it takes the real scalar slot with the imaginary vector slots. $\tilde R_\Phi$ is the <strong>material part</strong>: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $r'_t$ and the three informational spaces $h'_\imath$; the unprimed set holds the informational time $h_t$ and the three material spaces $r_\imath$.</p>
+<p>$\tilde H_\Psi$ is the <strong>informational part</strong>: it takes the real scalar slot with the imaginary vector slots. $\tilde R_\Phi$ is the <strong>material part</strong>: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $q'_t=r'_t$ and the three informational spaces $q'_\imath=h'_\imath$; the unprimed set holds the informational time $q_t=h_t$ and the three material spaces $q_\imath=r_\imath$.</p>
 <p>The two letters are reserved for the two sectors. $\Phi$ marks the material sector and $\Psi$ the informational one, and each letter serves twice: as the subscript of the sector itself, $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, and as the sector label of every glyph whose sector is fixed. No other object in the series may take either letter for any other purpose. Each subscript is the label of the sector its element lives in, since $\tilde R_\Phi\in\mathbb{B}_{\Phi}$ and $\tilde H_\Psi\in\mathbb{B}_{\Psi}$, so the subscript and the sector cannot drift apart. The capitals are held free for exactly this use, and the rest of the Greek set is in service, so a half named with any other letter would collide with a symbol already in use.</p>
 <p>A glyph with a fixed sector carries it first. The sector is the coarsest label, so it stands before the role and the index: $\tilde S_{\Psi,\mathrm{tot},k}$ reads sector, role, index, and $\tilde\Lambda_{\Phi,\mathrm{ret}}$ reads sector, role. The label does not pass into the coefficients, for the reason given below for $\tilde H_\Psi$ and $\tilde R_\Phi$: $\tilde J_\Phi$ keeps the components $J_{\jmath}$. The label is idempotent — for an element already in a sector, $\tfrac12(\tilde Q\pm\tilde Q^{*})$ returns the element itself, so $\tilde P_\Phi=\tilde P$ is a theorem and not a new axiom. A glyph whose sector depends on its value takes no label: $\tilde Q$, $\tilde U$ and $\tilde F$ carry none, and the reader computes the sector from that same line. The mnemonic survives the capital: $\Phi$ opens the word <em>physics</em> and $\Psi$ is the letter a quantum state is written with. <strong>The definitions are the authority</strong>: the halves are the $\pm1$ eigenspaces of the Hermitian conjugation,</p>
 <p>$$
@@ -514,9 +514,9 @@ $$</p>
 \qquad
 \langle i\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*} .
 $$</p>
-<p>The multiplication acts on the whole element. It is never applied to one coefficient, and a map that multiplies the time coefficient alone is the Wick coefficient map $W$ of <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>, not this one. It is multiplicative in the sense $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, which is what lets it be applied to an equation; it is not an algebra homomorphism, since $(i\tilde X)(i\tilde Y)=-\tilde X\tilde Y$, and neither sector is a subalgebra.</p>
+<p>The multiplication acts on the whole element. It is never applied to one coefficient, and a map that multiplies the time coefficient alone is the Wick coefficient map $W$ of <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>, not this one. It is multiplicative in the sense $i(\tilde Q_1\tilde Q_2)=(i\tilde Q_1)\tilde Q_2=\tilde Q_1(i\tilde Q_2)$, which is what lets it be applied to an equation; it is not an algebra homomorphism, since $(i\tilde Q_1)(i\tilde Q_2)=-\tilde Q_1\tilde Q_2$, and neither sector is a subalgebra.</p>
 <p>The direction of the multiplication is a convention. Multiplication by $+i$ and by $-i$ give the same pair of readings with the labels exchanged, and the series uses $-i$ for the direction from an object to its observable, the sign that makes the scalar part of a four-momentum positive. The comparison with the Wick coefficient map is in <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>; the gradient and its slices are in <em>Operator and Calculus Conventions</em>.</p>
-<p>The glyph of the observable. The informational half is $\tilde H_\Psi$, and its coefficients are the position letters,</p>
+<p>The glyph of the observable. The informational half is $\tilde H_\Psi$, and its coefficients are the informational letters,</p>
 <p>$$
 \tilde H_\Psi = h_t\,e_t + i\vec h_\Psi, \qquad \vec h_\Psi = h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z ,
 $$</p>
@@ -581,7 +581,7 @@ $$</p>
 <p>Each of the four marks has a fixed space, and each of these is one of the <strong>remarkable subspaces</strong> of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in <em>The Remarkable Subspaces</em> above.</p>
 <h2 id="summary">Summary</h2>
 <p>The base conventions are one object read in order. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\imath^2=-e_t$, over complex coefficients; the scalar unit $i$ is central, and multiplication by it is one map whose restrictions are read in <em>Special Element Conventions</em>. The element is written with its case and its tilde, and its coefficients $Q_{\imath}=q_{\imath}+iq'_{\imath}$ split it into a quaternion part and an antiquaternion part.</p>
-<p>The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. Multiplication by $i$ is the bijection between the two sectors, and it fixes the names of the two readings, the material reading on $\mathbb{B}_{\Phi}$ and the informational reading on $\mathbb{B}_{\Psi}$. <strong>There is no dictionary</strong>, because there is nothing to map: the parameters are the coordinates, $(h_t,\ i r'_t)$ on the time slot and $(r_x,r_y,r_z)$ with $(i h'_x,i h'_y,i h'_z)$ on the space slots, and the only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.</p>
+<p>The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. Multiplication by $i$ is the bijection between the two sectors, and it fixes the names of the two readings, the material reading on $\mathbb{B}_{\Phi}$ and the informational reading on $\mathbb{B}_{\Psi}$. <strong>There is no dictionary</strong>, because there is nothing to map: the parameters are the coordinates, $(q_t,\ i q'_t)$ on the time slot and $(q_x,q_y,q_z)$ with $(i q'_x,i q'_y,i q'_z)$ on the space slots, and the physical reading names them once, $q_t=h_t$, $q'_t=r'_t$, $q_\imath=r_\imath$, $q'_\imath=h'_\imath$. The only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.</p>
 <p>The angle is real and is one letter: $\theta$, with a subscript naming it, the $i$ of a rotation sitting in the exponential; the central phase is the real argument and the boost is the imaginary one, $i\theta_{\mathrm{rpd}}$. The rest of the conventions is in the eight companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, and physical units and common elements — each stated after the one it depends on.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -618,7 +618,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\nu$; $\nu_m$, $\nu_{\Phi}$, $\nu_t^{\prime}$</td>
-<td>The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index and never a frequency in hertz (§<em>The Reserved Letters</em>)</td>
+<td>The wave number, $\nu=k/2\pi=1/\lambda$; the three of a particle; never an index, never a frequency in hertz, and never a particle species — the neutrino is $\xi_{\mathrm{neu}}$ (§<em>The Reserved Letters</em>)</td>
 </tr>
 <tr>
 <td>$\lambda$; $\lambda_m$, $\lambda_{\Phi}$, $\lambda_t$</td>
@@ -646,7 +646,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec q$</td>
-<td>Position, the pure quaternion $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
+<td>A pure element of the quaternion layer, $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the position is the pure biquaternion $\vec r_\Phi=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{C} = \{Q_t e_t\}$</td>
@@ -670,7 +670,7 @@ $$</p>
 </tr>
 <tr>
 <td>$i\,\cdot$</td>
-<td>Multiplication by the central $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ and $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; multiplicative in the sense $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y$</td>
+<td>Multiplication by the central $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ and $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; multiplicative in the sense $i(\tilde Q_1\tilde Q_2)=(i\tilde Q_1)\tilde Q_2$</td>
 </tr>
 <tr>
 <td>material reading; informational reading</td>

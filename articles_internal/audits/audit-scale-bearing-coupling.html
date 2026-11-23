@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detecting a Scale-Bearing Coupling: One Test, Six Signatures, Seven Traps, Twenty-Three Articles — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A working rule, kept in articles_internal/instructions. This file is a detection manual, not a published page. It states how to find…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="detecting-a-scale-bearing-coupling-one-test-six-signatures-seven-traps-twenty-three-articles"><strong>Detecting a Scale-Bearing Coupling: One Test, Six Signatures, Seven Traps, Twenty-Three Articles</strong></h1>
+<p><em>Status of this file.</em> <strong>A working rule, kept in <code>articles_internal/instructions</code>.</strong> This file is a detection manual, not a published page. It states how to find the sentences that carry a scale-bearing coupling, how to tell a real one from a lookalike, and where the physics corpus actually has them. <strong>It prints no strength value</strong>, only the shape of the sentences that do, so it obeys the rule it teaches.</p>
+<p><em>Where the subject is defined.</em> <code>articles_internal/the-coupling-sector-of-the-fourth-colour-model.md</code> §0 defines it, and <code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code> is the published boundary. This file adds the one thing neither of those has: a procedure that a reader can run over a folder.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The test is one question: can the sentence drop the scale?</strong> Everything else in this file is that question applied.</li>
+<li><strong>The unit of detection is the sentence, and the unit of repair is the paragraph that contains it.</strong> An article is not in a category; each of its sentences is.</li>
+<li><strong>A signature is evidence, and the verdict is the sentence.</strong> S1 alone is a hit; S5 with S2 is a hit; two of S2, S3, S4, S6 are a hit; S3 and S6 alone are not.</li>
+<li><strong>Classify before repairing, and never delete the scale while keeping the sentence.</strong> "$g_4=g_L$" with its "at $M_U$" removed is not a repair; it is a sentence that fails the test and no longer shows why.</li>
+<li><strong>No strength value is printed anywhere in this file</strong>, and §7 checks it against that claim.</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The test is one question: can the sentence drop the scale?</strong> Everything else in this file is that question applied.</p>
+<p><strong>A value, a boundary condition at a scale, a running, a matching, and a ratio called exact are one object seen five ways.</strong> None of them can be written without naming an energy. That is what unites them, and it is also why the algebra cannot adjudicate them: an object that cannot be stated without a scale is not an object the algebra has an opinion about.</p>
+<ul>
+<li><strong>A value needs a scale.</strong> $\alpha_s$ alone means nothing; $\alpha_s(M_Z)$ is a number.</li>
+<li><strong>A boundary condition is a scale statement.</strong> "$g_4=g_L$ at $M_{PS}$" carries the scale inside the sentence.</li>
+<li><strong>A running is two scales and the path between them.</strong></li>
+<li><strong>A matching is two descriptions at one scale.</strong></li>
+<li><strong>A ratio is exact only because two couplings were set equal at one scale.</strong></li>
+</ul>
+<p><strong>The technical synonym is "renormalised coupling", and the synonym is not an improvement.</strong> A renormalisation condition <em>is</em> a boundary condition at a scale, so the phrase is exact and unhelpful: it names the apparatus rather than the defect. <strong>Scale-bearing</strong> is the plain word, and it is the one in use.</p>
+<p><strong>Three categories follow.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th>test</th>
+<th>where it lives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>structural coupling</strong></td>
+<td>can drop the scale: a symbol multiplying a generator, a trace normalisation</td>
+<td>everywhere, untouched</td>
+</tr>
+<tr>
+<td><strong>scale-bearing coupling</strong></td>
+<td>cannot drop the scale</td>
+<td>the flagged article only</td>
+</tr>
+<tr>
+<td><strong>measured coupling</strong></td>
+<td>external data</td>
+<td>stays where it is used, marked as data</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the middle row is the dangerous one, in one sentence.</strong> A structural coupling is decided by the algebra, so an error in it is caught by a trace identity. A scale-bearing coupling is decided by nothing in the algebra — it is either imposed or measured — so an error in it is invisible until an experiment, and it moves when the scale moves. That is why they must be quarantined and not merely labelled.</p>
+<p><strong>What this file is for.</strong> A rule stated in prose is a rule nobody applies uniformly. So this file gives six mechanical signatures, the false positives each one produces, the census of the whole physics folder, and four repairs. <strong>The census is the part that makes it a rule rather than an opinion</strong>: it says which articles trip the signatures, and it says what each one is allowed to keep.</p>
+<h2 id="1-the-test-and-the-fourth-category-it-does-not-have">1. The Test, and the Fourth Category It Does Not Have</h2>
+<p><strong>The corpus already names the classes twice, in two vocabularies, and the two are the same classification.</strong> A reader who learns one and then meets the other will think there are four categories. There are three.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>this file</th>
+<th><code>the-data-boundary</code></th>
+<th><code>the-coupling-sector</code> §0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>structural</td>
+<td>structural</td>
+<td>structural coupling</td>
+</tr>
+<tr>
+<td><strong>scale-bearing</strong></td>
+<td><strong>claim</strong></td>
+<td><strong>scale-bearing coupling</strong></td>
+</tr>
+<tr>
+<td>measured</td>
+<td>data</td>
+<td>measured coupling</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two vocabularies divide the same space, and neither is more correct.</strong> The boundary page uses "claim" because its question is permission: may <em>this article</em> assert a value. The coupling-sector note uses "scale-bearing" because its question is diagnosis: <em>why</em> is this sentence not checkable. <strong>Detection wants the diagnostic word</strong>, because the diagnostic word names the reason.</p>
+<p><strong>The category that does not exist, and is often invented.</strong> A measured value at a named scale is not a fourth kind. It is one sentence carrying two properties: it is scale-bearing, and its value comes from outside. <strong>The distinction does work only when the question is permission</strong> — a measured number is permitted in an article whose subject is the measurement, and a scale-bearing number with no measurement behind it is not permitted anywhere outside the flagged article. For detection, both are hits, and the first move after a hit is to ask which of the two it is.</p>
+<p><strong>The test is applied to one sentence, not to one article.</strong> An article is not in a category; each of its sentences is. A geometry article can contain one scale-bearing sentence in §8 while the other ninety per cent is arithmetic. <strong>So the unit of detection is the sentence, and the unit of repair is the paragraph that contains it.</strong></p>
+<h2 id="2-the-five-forms-as-five-sentence-shapes">2. The Five Forms, as Five Sentence Shapes</h2>
+<p><strong>Detection is easier when the forms are written as shapes rather than as descriptions.</strong> Each shape below is a sentence pattern; each one fails the test for the same reason and by a different mechanism.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>the shape</th>
+<th>where the scale sits</th>
+<th>corpus example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>value</strong></td>
+<td>a coupling with a scale in its argument</td>
+<td>in the parentheses</td>
+<td>$\alpha_s(M_Z)$, $\alpha^{-1}(M_Z)$, $g_R(M_C)$</td>
+</tr>
+<tr>
+<td><strong>boundary condition</strong></td>
+<td>two couplings joined by $=$, with a scale in the predicate</td>
+<td>after "at"</td>
+<td>$g_4=g_L=g_R$ at $M_U$</td>
+</tr>
+<tr>
+<td><strong>running</strong></td>
+<td>a coupling at one scale expressed through another, with a logarithm of the ratio</td>
+<td>in the log and in both endpoints</td>
+<td>$\alpha^{-1}(\mu)=\alpha^{-1}(M_Z)-\tfrac{b}{2\pi}\ln(\mu/M_Z)$</td>
+</tr>
+<tr>
+<td><strong>matching</strong></td>
+<td>two couplings of different groups related at one threshold</td>
+<td>in "at the threshold"</td>
+<td>$\tfrac{1}{g_Y^2}=\tfrac{1}{g_R^2}+\tfrac{1}{4g_{B-L}^2}$ at $M_R$</td>
+</tr>
+<tr>
+<td><strong>exact ratio</strong></td>
+<td>a ratio declared exact, with the reason being an equality of couplings</td>
+<td>in the <em>unstated</em> premise</td>
+<td>$\sin^2\theta_W=\tfrac38$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first four announce their scale. The fifth hides it, and it is the one that survives every mechanical scan.</strong> The equation $\sin^2\theta_W=\tfrac38$ contains no energy, no logarithm and no "at". <strong>What makes it scale-bearing is a premise the sentence does not print</strong>: the ratio is $\tfrac38$ only where the two $\mathrm{SU}(2)$ couplings are equal, and that equality holds at one scale. Put in one line, the sentence is <em>"$\sin^2\theta_W=\tfrac38$ at the scale where $g_L=g_R$"</em>, and the scale is back.</p>
+<p><strong>That is why the test is about the sentence's <em>premises</em> and not only its symbols.</strong> A reader who greps for scales will find four of the five forms and miss the fifth every time.</p>
+<h2 id="3-the-six-signatures-what-to-grep-and-what-each-proves">3. The Six Signatures: What to Grep, and What Each Proves</h2>
+<p><strong>Six mechanical signatures, in order of how much they prove.</strong> A signature is evidence, not a verdict. The rule for using them is at the end of the section.</p>
+<p><strong>S1 — a scale inside a coupling's argument.</strong> This is the strongest single signal, because the syntax is unambiguous: a coupling symbol, a bracket, and a scale inside the bracket.</p>
+<pre><code>(g_\{?[A-Za-z0-9-]+\}?|\\alpha(?:_\{?[A-Za-z0-9]{1,3}\}?)?|\\lambda)\s*\(\s*(M_\{?[A-Za-z]\}?|m_[A-Za-z]\w*|Q\^2|q\^2|\\mu)
+</code></pre>
+<p><strong>S2 — a scale in a predicate.</strong> Weaker, because a scale in a predicate may belong to a mass or a chain rather than to a coupling. The signature is the preposition, not the scale.</p>
+<pre><code>(at|to|above|below)\s+\$?(the\s+)?(scale\s+)?\$?M_\{?[A-Za-z]\}?
+</code></pre>
+<p><strong>S3 — an explicit energy unit.</strong> The weakest of the linguistic signals and the most reliable of the numeric ones: a number followed by an energy unit is a scale that has been written down. It marks a <em>value</em>, which is either measured or a claim.</p>
+<pre><code>[0-9][0-9.^{}]*\$?\s*(\\text\{\s*)?(GeV|TeV|MeV)
+</code></pre>
+<p><strong>S4 — running language.</strong> A derivative with respect to scale, a one-loop coefficient, a logarithm of a ratio, or the phrase "the running of the ... coupling".</p>
+<pre><code>(\\beta[-_]?function|beta[- ]function|one-loop (coefficient|slope)|running of (the|a) (strong|gauge|coupling)|runs?[^.]{0,25}coupling)
+</code></pre>
+<p><strong>S5 — an equality between coupling symbols.</strong> A bare $g_4=g_L$ is the signature of a boundary condition whose scale is in the next clause or in the previous sentence. It is the signature that most often has the scale deleted and forgotten.</p>
+<pre><code>g_4\s*=\s*g_L|g_L\s*=\s*g_R\s*=\s*g_4|g_L\s*=\s*g_R
+</code></pre>
+<p><strong>S6 — exactness claimed for a ratio.</strong> The word "exact", or "exactly", within a sentence that also contains a trigonometric or a numeric fraction. This is the only signature that finds the fifth form.</p>
+<pre><code>(exact(ly)?)[^.]{0,120}(\\sin|\\theta_W|\\tfrac|\\frac)
+</code></pre>
+<p><strong>The rule for using them, which is what makes this a procedure rather than a list of greps.</strong></p>
+<ol>
+<li><strong>S1 alone is a hit.</strong> No further evidence is needed; the sentence has a scale in a coupling, so the article is carrying a coupling statement.</li>
+<li><strong>S5 plus S2 is a hit.</strong> An equality and a predicate together are a boundary condition.</li>
+<li><strong>Two of S2, S3, S4, S6 are a hit.</strong> One is an accident of subject matter; two rarely are.</li>
+<li><strong>S3 alone is not a hit.</strong> Masses, bounds and decay constants carry energy units and are not couplings.</li>
+<li><strong>S6 alone is not a hit.</strong> "Exactly" is common in mathematics. It is a hit only when a coupling equality is the reason.</li>
+<li><strong>A hit is classified before it is repaired.</strong> The next question is never "how do I delete this" but "is this measured or imposed".</li>
+</ol>
+<h2 id="4-seven-false-positives-and-the-four-false-negatives-that-matter-more">4. Seven False Positives, and the Four False Negatives That Matter More</h2>
+<p><strong>A detection rule that fires on lookalikes is worse than no rule, because its rejections train a reader to ignore it.</strong> Seven lookalikes occur in this corpus, and each is real and auditable.</p>
+<p><strong>FP1 — $g_L=g_R$ as group elements, not as couplings.</strong> This is the expensive one. The string appears in seven articles and means a <em>coupling</em> in one of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>occurrences</th>
+<th>what the equality means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code></td>
+<td>8</td>
+<td>the diagonal subgroup $\mathrm{SU}(2)_V=\{g_L=g_R\}$, elements of a group</td>
+</tr>
+<tr>
+<td><code>the-one-coupling-that-returns-the-standard-model</code></td>
+<td>3</td>
+<td><strong>the coupling condition: a boundary condition at a scale</strong></td>
+</tr>
+<tr>
+<td><code>the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant</code></td>
+<td>2</td>
+<td>constant unit quaternions $g_L,g_R$, elements</td>
+</tr>
+<tr>
+<td><code>the-breaking-chain-and-the-boson-spectrum</code></td>
+<td>2</td>
+<td>a pointer to the flagged article, not a statement</td>
+</tr>
+<tr>
+<td><code>the-nonlinear-sigma-model-in-biquaternionic-form</code></td>
+<td>1</td>
+<td>group elements</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-nonlinear-sigma-model</code></td>
+<td>1</td>
+<td>the diagonal $g_L=g_R=g_V$, a group element</td>
+</tr>
+<tr>
+<td><code>the-fourth-colour-left-right-model</code></td>
+<td>1</td>
+<td>a pointer to the flagged article, naming the case that fails</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The discriminator is the type of the symbol, and it is decidable.</strong> If $g_L$ is a group element, then $g_L=g_R$ defines a subgroup and survives every rescaling of any coupling. If $g_L$ is a coupling, then $g_L=g_R$ is a statement about a running and holds at one scale. <strong>The test: is the thing being multiplied by a generator, or is it multiplying one?</strong> Custodial symmetry multiplies; a coupling multiplies a generator. <strong>So the fix is to read one line of context — the sentence that says what $g$ acts on.</strong></p>
+<p><strong>FP2 — a scale that belongs to a mass, a chain or a bound.</strong> "$\mathrm{SU}(4)$ breaks at $M_C$" and "$M_X\gtrsim$ some floor" both trip S2. Neither is a coupling statement. The chain fixes a stabiliser; the bound is a measured null result. <strong>The discriminator: does the scale attach to a coupling, or to a particle?</strong></p>
+<p><strong>FP3 — "running" as an ordinary verb.</strong> Fluids run, indices run, parameters of a differential equation run. The corpus has an article on the running of a condensate and several on flows. <strong>The discriminator: is the subject a coupling?</strong></p>
+<p><strong>FP4 — $\ln$ and $\log$ in thermodynamics.</strong> Entropy, free energy and the thermal circle all carry logarithms of ratios, and none of those ratios is a ratio of scales of a coupling. <strong>The discriminator: is the argument of the log an energy ratio, or a partition function?</strong></p>
+<p><strong>FP5 — $\beta$ as a velocity, an angle, or a matrix.</strong> The corpus uses $\beta$ for $v/c$, for an angle in the CKM parameterisation, and for a beta coefficient. Only the last is running. <strong>The discriminator: is there a derivative with respect to $\ln\mu$?</strong></p>
+<p><strong>FP6 — "coupling" used for a structure.</strong> Self-coupling, minimal coupling, strong coupling as a regime, an anomalous coupling, Yukawa <em>normalisations</em>. The word survives in about two dozen menu comments for exactly this reason, and none of those uses is a scale-bearing value. <strong>The discriminator: is the word naming a strength, or a vertex?</strong></p>
+<p><strong>FP7 — "exactly" in ordinary mathematics.</strong> A trace identity is exact. An eigenvalue count is exact. Those are the corpus's best sentences and they must not be flagged. <strong>The discriminator: is the exactness caused by two couplings being set equal?</strong></p>
+<p><strong>The false negatives matter more, because nothing catches them.</strong> Four occur here, and each has an article behind it.</p>
+<ul>
+<li><strong>A hidden premise.</strong> $\sin^2\theta_W=\tfrac38$ with no scale printed. Only S6, read by a human, finds it.</li>
+<li><strong>A ratio with a coupling in it.</strong> $M_X=\sqrt2\,(g_4/g_R)\,M_{W_R}$ contains no scale argument and no logarithm, but the ratio $g_4/g_R$ is evaluated wherever the matching puts it. <strong>A symbol that moves with the scale counts as a scale.</strong></li>
+<li><strong>A mass equality standing in for a Yukawa condition.</strong> $m_d=m_e$ at a scale is a Yukawa boundary condition wearing mass symbols. The scale is in the sentence, the coupling is not, and the reader who greps for $g$ finds nothing.</li>
+<li><strong>A scale named in words.</strong> "at low energies", "in the infrared", "at high scales", "in the ultraviolet". No symbol, no unit, no predicate — and the sentence fails the test just the same.</li>
+</ul>
+<p><strong>The lesson of the four.</strong> Mechanical signatures find the sentences that write the scale down. <strong>The corpus's worst cases are the sentences that leave it out</strong>, and only the question catches those: <em>which energy would I have to name to make this true?</em></p>
+<h2 id="5-the-census-where-the-corpus-actually-has-them">5. The Census: Where the Corpus Actually Has Them</h2>
+<p><strong>The scan was run over all $672$ articles in <code>articles_physics</code>.</strong> Six signatures, five counts each, cross-tabulated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>signatures tripped</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$598$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$51$</td>
+</tr>
+<tr>
+<td>$\ge 2$</td>
+<td>$23$</td>
+</tr>
+<tr>
+<td>$\ge 3$</td>
+<td>$12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The shape of that distribution is the finding.</strong> $598$ clean articles, and then a long thin tail: $23$ articles carry two or more independent marks of a scale-bearing statement. <strong>The corpus is not uniformly contaminated and it is not clean; it has a small, identifiable set of articles where couplings live, and everything else is arithmetic.</strong></p>
+<p><strong>By single signature, over the whole folder.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>signature</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S3, an explicit energy unit</td>
+<td>$57$</td>
+</tr>
+<tr>
+<td>S4, running language</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td>S2, a scale in a predicate</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>S1, a scale in a coupling's argument</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>S5, an equality between couplings</td>
+<td>$7$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The twelve articles that trip three or more.</strong> The third column is the classification after reading, not after grepping.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>signatures</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-one-coupling-that-returns-the-standard-model</code></td>
+<td>S1 $9$, S2 $16$, S5 $5$, S3 $11$, S4 $1$</td>
+<td><strong>the flagged article</strong>; all five forms, by design</td>
+</tr>
+<tr>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>S1 $17$, S3 $62$, S2 $4$, S4 $15$</td>
+<td>data: the running <em>is</em> the subject</td>
+</tr>
+<tr>
+<td><code>hadron-structure-from-qcd-the-bound-state-problem</code></td>
+<td>S1 $3$, S3 $83$, S4 $3$</td>
+<td>data: measured spectrum</td>
+</tr>
+<tr>
+<td><code>the-landau-pole-triviality-and-vacuum-stability</code></td>
+<td>S1 $6$, S3 $95$, S2 $2$, S4 $3$</td>
+<td>data: coefficients computed, strengths measured</td>
+</tr>
+<tr>
+<td><code>charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it</code></td>
+<td>S1 $2$, S3 $16$, S2 $2$</td>
+<td>data: the floor comes from a measured null result</td>
+</tr>
+<tr>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u</code></td>
+<td>S1 $9$, S3 $17$, S2 $2$</td>
+<td>data: a comparison with precision data</td>
+</tr>
+<tr>
+<td><code>jets-the-qcd-cross-section-and-the-infrared-structure</code></td>
+<td>S1 $2$, S3 $33$, S2 $2$</td>
+<td>data: measured and computed QCD rates</td>
+</tr>
+<tr>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code></td>
+<td>S1 $3$, S3 $43$, S2 $2$</td>
+<td>data: measured Yukawa inputs, marked as such</td>
+</tr>
+<tr>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling</code></td>
+<td>S1 $5$, S3 $10$, S2 $2$</td>
+<td><strong>the second claim article</strong> of the boundary page</td>
+</tr>
+<tr>
+<td><code>the-breaking-chain-and-the-boson-spectrum</code></td>
+<td>S2 $9$, S5 $2$, S3 $1$</td>
+<td>pointer: §8 names the coupling article and restates nothing</td>
+</tr>
+<tr>
+<td><code>the-fourth-colour-left-right-model</code></td>
+<td>S3 $6$, S2 $2$, S5 $1$</td>
+<td>pointer: the equal-coupling case named and sent away</td>
+</tr>
+<tr>
+<td><code>the-scalar-sector-and-the-leptoquark-bounds</code></td>
+<td>S1 $1$, S3 $15$, S2 $4$</td>
+<td><strong>the closest call</strong>; see below</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the twelve are the permitted claim articles</strong> — the one-coupling article for gauge couplings, and the Weinberg-angle article for the ratio. <strong>One is the closest call in the corpus</strong>, and it is worth naming rather than smoothing over: the scalar-sector article boxes $M_X=\sqrt2\,(g_4/g_R)\,M_{W_R}$, which is a mass ratio whose coefficient is a ratio of couplings. Nothing in the sentence names a scale; the ratio moves whenever the matching moves. <strong>It is scale-bearing by the symbol-clause of §4 and it is not in the flagged article.</strong> The reason it survives is that the article uses the ratio as a free parameter and never evaluates it, so the statement is structural <em>given the row</em> — and §3 of the coupling note is where the value is discussed. <strong>A reader who wants a single item on this list to examine should take this one.</strong></p>
+<p><strong>The nine remaining split into seven data articles and two pointers.</strong> <strong>The pointer form is the corpus's own repair</strong>: two articles say, in one sentence, that the equation lives in the flagged article, and then do not write it. That is the pattern §6 recommends, and it already exists in the corpus.</p>
+<p><strong>What the census does not cover.</strong> The internal notes are outside this scan and are where the density is highest: <code>the-coupling-sector-of-the-fourth-colour-model</code> is a <em>record of</em> coupling statements and carries a ledger banner saying so. The rule for internal notes is the banner, not the census.</p>
+<h2 id="6-the-four-repairs">6. The Four Repairs</h2>
+<p><strong>A hit is not a fault until it is classified, and each class has one repair.</strong> The choice is mechanical once the class is known.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>repair</th>
+<th>corpus example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>structural after all</strong></td>
+<td>none; fix the signature's precision, not the sentence</td>
+<td>the custodial $\mathrm{SU}(2)_V$, which is a group</td>
+</tr>
+<tr>
+<td><strong>measured</strong></td>
+<td>keep, and mark: the value, the scheme, the scale, the source</td>
+<td>the sixteen data articles of the boundary page</td>
+</tr>
+<tr>
+<td><strong>scale-bearing, and the article is not the flagged one</strong></td>
+<td><strong>point</strong>: state that the equation lives in the flagged article, print no equation and no number</td>
+<td><code>the-breaking-chain</code> §8, <code>the-fourth-colour-left-right-model</code> §"Where the Equal-Coupling Case Departs"</td>
+</tr>
+<tr>
+<td><strong>scale-bearing, and the article is the flagged one</strong></td>
+<td>keep, and say which of the five forms it is</td>
+<td>the flagged article's own section 4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pointer is the repair that keeps a geometric article readable without letting a number in.</strong> Its shape is three sentences and the corpus already has it: the statement, the classification ("that is a scale-bearing coupling, it is a prediction, and it fails against the measured angle"), and the address. <strong>What a pointer may not do is paraphrase the equation.</strong> "The couplings meet at one scale" is still a scale statement, and the reader who wants it will follow the link.</p>
+<p><strong>A fifth repair exists and should be used sparingly: convert to the counting form.</strong> A coupling equality can sometimes be restated as a count, where it becomes structural. The one-bidoublet defect is the model: <em>one matrix for two sectors, so proportional spectra</em> is a counting statement, and it survives without any value, while "$m_d=m_e$ at a scale" does not. <strong>Convert when the content is a count. Do not convert when the content is a number</strong>, because the conversion then hides the number rather than removing it.</p>
+<p><strong>What no repair may do.</strong> It may not delete the scale and keep the sentence. "$g_4=g_L$" with the "at $M_U$" removed is not a repair; it is a sentence that fails the test and no longer shows why.</p>
+<h2 id="7-the-checks">7. The Checks</h2>
+<p><strong>Each row is a claim this file makes, the check that decides it, and the result.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the test separates three categories</td>
+<td>the two existing vocabularies tabulated</td>
+<td>they coincide, three classes not four</td>
+</tr>
+<tr>
+<td>the five forms are one object</td>
+<td>each form read for what makes it scale-dependent</td>
+<td>all five fail the test for the same reason</td>
+</tr>
+<tr>
+<td>the census is complete</td>
+<td>all $672$ physics articles scanned, five signatures each</td>
+<td>$598$ clean, $51$ single, $23$ at two or more</td>
+</tr>
+<tr>
+<td>the tail is thin</td>
+<td>the distribution $598/51/11/8/3/1$</td>
+<td>$23$ articles carry two or more marks</td>
+</tr>
+<tr>
+<td>the strongest lookalike is quantified</td>
+<td>$g_L=g_R$ counted per article</td>
+<td>seven articles, one coupling statement</td>
+</tr>
+<tr>
+<td>every hit is classified</td>
+<td>the twelve at three or more read</td>
+<td>$2$ claim, $7$ data, $2$ pointer, $1$ closest call</td>
+</tr>
+<tr>
+<td>the pointer form exists in the corpus</td>
+<td>the two pointer articles read</td>
+<td>two, consistent in shape</td>
+</tr>
+<tr>
+<td>the count closes</td>
+<td>$2+7+2+1$ against the twelve</td>
+<td>$12$, every article in exactly one class</td>
+</tr>
+<tr>
+<td>the rule finds the fifth form</td>
+<td>S6 tested on the exact-ratio sentence</td>
+<td>found only by S6, confirmed by hand</td>
+</tr>
+<tr>
+<td>the file obeys its own rule</td>
+<td>the file searched for a printed strength</td>
+<td>none; energies appear only as symbols and shapes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>One test: can the sentence drop the scale.</strong> If it can, the statement is structural and the algebra will catch an error in it. If it cannot, the statement is either measured or imposed, nothing in the algebra will catch an error, and it moves when the scale moves.</p>
+<p><strong>Three categories, named twice.</strong> Structural, scale-bearing, measured; the same three as structural, claim, data. Detection should use the diagnostic word, because the diagnostic word names the reason.</p>
+<p><strong>Five forms, one defect.</strong> A value, a boundary condition, a running, a matching, and an exact ratio are all rewritings of "at this scale". The fifth hides the scale in an unstated premise, and it is the one a grep cannot find.</p>
+<p><strong>Six signatures, and a rule for using them.</strong> S1 alone is a hit; S5 with S2 is a hit; two of S2, S3, S4, S6 are a hit; S3 and S6 alone are not. A signature is evidence, and the verdict is the sentence.</p>
+<p><strong>Seven lookalikes, and the expensive one is $g_L=g_R$.</strong> The string is in seven physics articles and means a coupling in one. The discriminator is whether the symbol multiplies a generator or is multiplied by one.</p>
+<p><strong>The census.</strong> $598$ of $672$ articles are clean; $23$ carry two or more marks; $12$ carry three or more. Two of the twelve are the permitted claim articles, seven are data, two are pointers, and one is the closest call: $M_X=\sqrt2\,(g_4/g_R)M_{W_R}$.</p>
+<p><strong>Four repairs, and one rule about all of them.</strong> Classify, then repair: leave a structural statement alone, mark a measured one, point away from a scale-bearing one, and never delete the scale while keeping the sentence.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale-bearing</td>
+<td>the class of coupling statements that cannot be written without a named energy</td>
+</tr>
+<tr>
+<td>structural</td>
+<td>decided by the algebra; checkable by a trace identity; no scale</td>
+</tr>
+<tr>
+<td>measured</td>
+<td>the value comes from outside the theory; permitted where the subject is the measurement</td>
+</tr>
+<tr>
+<td>claim</td>
+<td>the boundary page's word for scale-bearing, used where the question is permission</td>
+</tr>
+<tr>
+<td>S1–S6</td>
+<td>the six mechanical signatures of §3</td>
+</tr>
+<tr>
+<td>FP1–FP7</td>
+<td>the seven false positives of §4</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/the-coupling-sector-of-the-fourth-colour-model.md</code> §0, for the definition, the five forms and the three categories.</li>
+<li><code>articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md</code>, for the same classification written as a permission rule, with the claim register and the data register.</li>
+<li><code>articles_internal/the-coupling-sector-of-the-fourth-colour-model.md</code> §11, for the ledger sorted by this test rather than by derivation.</li>
+<li><code>PLAN.md</code>, rule on gauge couplings, for the binding statement that one coupling has one home.</li>
+<li><code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code>, for the flagged article that carries all five forms.</li>
+<li><code>articles_physics/the-fourth-colour-left-right-model.md</code>, §"Why the Corpus Adopts This Group, and Where the Equal-Coupling Case Departs From It", for the pointer repair in one paragraph.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

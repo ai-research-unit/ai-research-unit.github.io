@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repairing the Overbolded Articles: The Five Operations, the Bold That Stays, and the Hundred and Thirty-One Files — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Planned and measured, not executed. The damage is counted and the files are listed in §8; no article has been repaired. The numbers…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="repairing-the-overbolded-articles-the-five-operations-the-bold-that-stays-and-the-hundred-and-thirty-one-files"><strong>Repairing the Overbolded Articles: The Five Operations, the Bold That Stays, and the Hundred and Thirty-One Files</strong></h1>
+<p><em>Status of this file.</em> <strong>Planned and measured, not executed.</strong> The damage is counted and the files are listed in §8; no article has been repaired. The numbers: 131 files, 611 874 words, 10 604 bold spans.</p>
+<p><em>What the file is for.</em> It repairs one fault, proliferation of bold, without touching the physics. It fixes what earns bold, the five operations that remove the rest, the order of the batch, and the eleven checks that accept a repaired file.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The fault is proliferation, not bold.</strong> Bold stays and marks four things: a definition, the one result a section proves, a no-go, a sign or an inequality.</li>
+<li><strong>One reader, one article.</strong> No script edits an article; a script measures, and its measurement is the acceptance test.</li>
+<li><strong>The opener goes and the sentence beneath it stays word for word.</strong> The bolded sentence summarises the sentence under it, and the sentence under it is the better prose.</li>
+<li><strong>No partial pass.</strong> An article left at $8$ per cent bold with its announcements in place is not half repaired.</li>
+<li><strong>Three of the eleven checks guard against silent loss</strong>: the numeric multiset, the word band of $-10$ to $0$ per cent, and a named replacement for every deleted sentence.</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>The fault is proliferation, not bold. A healthy article in this corpus carries bold for a definition, for the result a section exists to prove, for a no-go, for a sign. A damaged article carries bold on the first sentence of nearly every paragraph, so the emphasis marks nothing.</p>
+<p>The repair keeps bold and removes the proliferation. It does not aim at zero. The target is the profile the corpus already has in its undamaged files.</p>
+<p>The pass is manual. One reader, one article, reading and removing. No script edits an article. A script measures, and its measurement is the acceptance test.</p>
+<h2 id="1-what-the-two-numbers-show">1. What the Two Numbers Show</h2>
+<p>Two measurements are taken on one file. The bold share is the characters inside a bold span, after the title line, divided by the characters of the rest of the file. The title line is excluded because the corpus template renders it bold by construction. The opener share is the number of prose paragraphs beginning with a bold span, divided by the number of prose paragraphs.</p>
+<p>The $540$ undamaged physics articles and the $131$ damaged ones separate on both numbers.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Articles</th>
+<th>Bold share, median</th>
+<th>Paragraphs opening bolded</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Undamaged</td>
+<td>$540$</td>
+<td>$3.6$ per cent</td>
+<td>$0.4$ per cent</td>
+</tr>
+<tr>
+<td>Damaged</td>
+<td>$131$</td>
+<td>$10$ to $63$ per cent</td>
+<td>$73$ to $95$ per cent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The distribution over all $672$ files:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bold share</th>
+<th>Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$0$–$2$ per cent</td>
+<td>$138$</td>
+</tr>
+<tr>
+<td>$2$–$5$ per cent</td>
+<td>$285$</td>
+</tr>
+<tr>
+<td>$5$–$10$ per cent</td>
+<td>$112$</td>
+</tr>
+<tr>
+<td>$10$–$15$ per cent</td>
+<td>$55$</td>
+</tr>
+<tr>
+<td>$15$–$20$ per cent</td>
+<td>$53$</td>
+</tr>
+<tr>
+<td>$20$–$30$ per cent</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td>above $30$ per cent</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The opener share is the number that names the damage. High bold with a low opener share is an article that emphasises too much. High bold with a high opener share is an article built out of announcements, and that is what the $131$ files are.</p>
+<p>The $10\,604$ spans of the damaged set, by position:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>full bolded sentence at the head of a paragraph</td>
+<td>$5\,344$</td>
+</tr>
+<tr>
+<td>short bolded label at the head of a paragraph</td>
+<td>$1\,883$</td>
+</tr>
+<tr>
+<td>span inside a sentence</td>
+<td>$3\,377$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mass of the damage is the first row. The article narrates its own findings before stating them.</p>
+<h2 id="2-what-earns-bold-and-what-loses-it">2. What Earns Bold, and What Loses It</h2>
+<p>Bold stays on four things.</p>
+<ul>
+<li>A definition, at the point the section introduces it.</li>
+<li>The one result the section exists to prove.</li>
+<li>A no-go, a denial, or a statement of what is not claimed.</li>
+<li>A sign or an inequality the argument turns on.</li>
+</ul>
+<p>Bold comes off everything else. The test is one question: does the span mark the single thing this paragraph or this section exists to establish? If the answer is no, the bold goes.</p>
+<p>The resulting profile: a $5\,000$-word article ends with $5$ to $10$ spans, not $100$. Bold share $1$ to $4$ per cent of the body. At most one bolded paragraph opener in a <code>##</code> section, and none in the Introduction.</p>
+<h2 id="3-the-five-operations">3. The Five Operations</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Operation</th>
+<th>Applies to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Delete the bolded summary sentence, keep the sentence beneath it word for word</td>
+<td>a paragraph opener the next sentence repeats</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Remove the two asterisks only, keep the sentence</td>
+<td>an opener that carries a fact the paragraph does not repeat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Remove the two asterisks only, keep the word</td>
+<td>a span inside a sentence, unless it is a sign, an inequality or a denial</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Repair the grammar the removal broke</td>
+<td>a paragraph starting in lower case, an orphan fragment</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Rewrite a pure-apparatus line in the author's own words</td>
+<td>section numbering written as prose, a status line, a revision line</td>
+</tr>
+</tbody>
+</table></div>
+<p>Operation 1 is the bulk of the work and the delicate one. The bolded sentence summarises the sentence under it, and the sentence under it is the better prose. Deleting the summary loses nothing. Deleting the sentence under it loses the article.</p>
+<p>An example, from <code>the-lagrangian-and-the-coupled-proca-equation-in-momentum-space</code>:</p>
+<blockquote>
+<p><strong>The second finding is that the constraint is a determination and not a residue.</strong> The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the gauge symmetry, so the constraint is imposed and not left over.</p>
+</blockquote>
+<p>Repaired by operation 1:</p>
+<blockquote>
+<p>The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the gauge symmetry, so the constraint is imposed and not left over.</p>
+</blockquote>
+<p>A case for operation 2, where the bolded sentence is the only statement of its fact:</p>
+<blockquote>
+<p><strong>The constant $J_c$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density.</strong></p>
+</blockquote>
+<p>The sentence stays. The asterisks come off.</p>
+<p>Operation 5 is the only one that rewrites, and it rewrites apparatus only. "This entry carries I.10.as to I.10.bd." becomes a sentence naming those results, in the author's words. Physics is not reworded.</p>
+<h2 id="4-what-the-pass-does-not-do">4. What the Pass Does Not Do</h2>
+<p>No sentence is reworded for style. No claim is reordered. No objection is added. No provenance sentence is removed. The word "framework" stays. The word "corpus" stays where it names the corpus. A pointer to the reader stays. A coupling statement outside its own article is not this pass's business. Triplication across body, notation table and summary is the author's arrangement.</p>
+<p>No label becomes a <code>###</code> heading. The corpus holds $1\,883$ short bolded labels at paragraph heads, and turning them into headings builds a new article rather than repairing one.</p>
+<p>No title is changed. The title line renders bold by construction and is excluded from every count in this file.</p>
+<p>No partial pass. An article left at $8$ per cent bold with its announcements in place is not half repaired.</p>
+<p>No git, no push, no deploy. The pass leaves the working tree modified and the author reads the diff.</p>
+<h2 id="5-the-procedure-one-article-at-a-time">5. The Procedure, One Article at a Time</h2>
+<p>Step 0. Print the path and the first heading, and check them against the request. Two articles in this corpus share a title and differ by one directory.</p>
+<p>Step 1. Copy the file to a scratch directory outside the repository. Record on the copy: words, display blocks, table rows, the multiset of numeric tokens, the link count, the bold share, the opener share.</p>
+<p>Step 2. Read the article once without editing.</p>
+<p>Step 3. Walk the paragraphs in order and decide, span by span, which of the five operations applies. This is the only step that cannot be skipped or scripted.</p>
+<p>Step 4. Apply the operations in file order.</p>
+<p>Step 5. Run the acceptance test.</p>
+<p>Step 6. Read the most-edited paragraphs once more for grammar.</p>
+<p>Step 7. Record the row in the pass log: bold share before and after, spans deleted, spans kept with the reason each survivor kept its bold.</p>
+<h2 id="6-the-acceptance-test-eleven-checks">6. The Acceptance Test: Eleven Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Pass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bold share of the body</td>
+<td>$1$ to $4$ per cent</td>
+</tr>
+<tr>
+<td>bolded paragraph openers</td>
+<td>at most one per <code>##</code> section, none in the Introduction</td>
+</tr>
+<tr>
+<td>every surviving span</td>
+<td>a definition, a key result, a no-go, or a sign</td>
+</tr>
+<tr>
+<td>dollar-sign parity</td>
+<td>even on every line</td>
+</tr>
+<tr>
+<td>display blocks</td>
+<td>equal to the copy</td>
+</tr>
+<tr>
+<td>table rows</td>
+<td>equal to the copy</td>
+</tr>
+<tr>
+<td>numeric tokens</td>
+<td>every token of the copy present, or its sentence named in the log</td>
+</tr>
+<tr>
+<td>links</td>
+<td>every target resolves</td>
+</tr>
+<tr>
+<td>section skeleton</td>
+<td>title, <code>## Introduction</code>, thematic sections, <code>## Summary</code>, <code>## Summary of Notation</code>, <code>## Further Reading</code></td>
+</tr>
+<tr>
+<td>word count</td>
+<td>between $-10$ and $0$ per cent of the copy</td>
+</tr>
+<tr>
+<td>deleted sentences</td>
+<td>each has a named replacement, or carried nothing</td>
+</tr>
+</tbody>
+</table></div>
+<p>The word band is tighter than a cleaning pass because this pass deletes summary sentences, not arguments. A file that loses more than $10$ per cent has lost content.</p>
+<p>The numeric check runs on the multiset of tokens, not on a total, because a substituted number and a deleted number both pass a total.</p>
+<h2 id="7-the-order-of-the-batch">7. The Order of the Batch</h2>
+<p>By damage class, not by filename.</p>
+<p>The pilot is <code>the-spin-one-anti-hermitian-subspace</code>: $63$ per cent bold, $9\,416$ words, $73$ per cent of paragraphs opening bolded, and a carrier introduction, so its voice sets the rest.</p>
+<p>Then the series, where the files are near-clones and the first repair settles the pattern: the Proca group, the Dirac group, the Klein–Gordon group, the Schrödinger group, the non-quantum limits.</p>
+<p>Then the fluid family, then thermodynamics and relativity, then the reading-and-algebra group.</p>
+<p>The cost is a reading hour per $3\,000$ words, more for the first file of a series and less for the fifth.</p>
+<h2 id="8-the-files-that-need-the-pass">8. The Files That Need the Pass</h2>
+<p>Every physics article whose body bold share is $10$ per cent or more: $131$ files, $611\,874$ words, $10\,604$ spans. Columns: bold share of body characters, spans, words, and paragraphs opening with a bold span over prose paragraphs.</p>
+<p>Grouped by the <code>##</code> section of <code>physics.md</code>, ordered by the size of the group.</p>
+<h3 id="biquaternion-relativistic-quantum-hydrodynamics">Biquaternion Relativistic Quantum Hydrodynamics</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-massless-fluid-where-the-label-and-value-charts-both-fail</code></td>
+<td>The Algebra of the Reading</td>
+<td>23.2%</td>
+<td>181</td>
+<td>7122</td>
+<td>90/106</td>
+</tr>
+<tr>
+<td><code>the-charged-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>21.1%</td>
+<td>121</td>
+<td>6185</td>
+<td>60/80</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-charged-spin-half-fluid</code></td>
+<td>Particles of spin 1/2</td>
+<td>18.7%</td>
+<td>46</td>
+<td>2597</td>
+<td>25/36</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-charged-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>18.7%</td>
+<td>45</td>
+<td>2607</td>
+<td>23/35</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>18.3%</td>
+<td>42</td>
+<td>2339</td>
+<td>23/35</td>
+</tr>
+<tr>
+<td><code>the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not</code></td>
+<td>Particles of spin 1/2</td>
+<td>17.9%</td>
+<td>100</td>
+<td>6114</td>
+<td>51/73</td>
+</tr>
+<tr>
+<td><code>the-clebsch-potentials-and-the-rank-of-the-vorticity</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>17.2%</td>
+<td>53</td>
+<td>3626</td>
+<td>43/50</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-spin-half-fluid</code></td>
+<td>Particles of spin 1/2</td>
+<td>16.9%</td>
+<td>72</td>
+<td>3986</td>
+<td>44/49</td>
+</tr>
+<tr>
+<td><code>the-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>16.9%</td>
+<td>109</td>
+<td>7250</td>
+<td>69/87</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-charged-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>16.8%</td>
+<td>67</td>
+<td>3140</td>
+<td>40/52</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-charged-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>16.4%</td>
+<td>32</td>
+<td>2069</td>
+<td>18/29</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-charged-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>16.4%</td>
+<td>62</td>
+<td>3212</td>
+<td>41/51</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>16.4%</td>
+<td>42</td>
+<td>2793</td>
+<td>26/39</td>
+</tr>
+<tr>
+<td><code>the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size</code></td>
+<td>The Algebra of the Reading</td>
+<td>16.3%</td>
+<td>117</td>
+<td>5545</td>
+<td>68/97</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-spin-half-fluid-one-mode-occupies-one-bracket-of-four</code></td>
+<td>Particles of spin 1/2</td>
+<td>16.3%</td>
+<td>40</td>
+<td>2547</td>
+<td>24/37</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-charged-spin-half-fluid</code></td>
+<td>Particles of spin 1/2</td>
+<td>16.1%</td>
+<td>66</td>
+<td>3400</td>
+<td>45/52</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-spin-one-fluid</code></td>
+<td>Particles of spin 1 and above</td>
+<td>15.9%</td>
+<td>66</td>
+<td>3287</td>
+<td>43/54</td>
+</tr>
+<tr>
+<td><code>the-charged-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>15.3%</td>
+<td>85</td>
+<td>5997</td>
+<td>49/72</td>
+</tr>
+<tr>
+<td><code>the-non-uniqueness-of-the-spin-half-fluid</code></td>
+<td>The Algebra of the Reading</td>
+<td>15.1%</td>
+<td>45</td>
+<td>3262</td>
+<td>41/46</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-charged-schrodinger-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>15.0%</td>
+<td>40</td>
+<td>2465</td>
+<td>23/37</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-schrodinger-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>14.2%</td>
+<td>47</td>
+<td>3182</td>
+<td>28/45</td>
+</tr>
+<tr>
+<td><code>the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone</code></td>
+<td>The Algebra of the Reading</td>
+<td>14.1%</td>
+<td>46</td>
+<td>3303</td>
+<td>46/56</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>14.0%</td>
+<td>61</td>
+<td>3415</td>
+<td>41/56</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-charged-schrodinger-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>13.5%</td>
+<td>54</td>
+<td>2991</td>
+<td>37/46</td>
+</tr>
+<tr>
+<td><code>the-fluid-wave-correspondence-which-constant-each-field-carries</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>13.0%</td>
+<td>47</td>
+<td>4232</td>
+<td>41/52</td>
+</tr>
+<tr>
+<td><code>the-spin-zero-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>12.8%</td>
+<td>97</td>
+<td>7462</td>
+<td>75/91</td>
+</tr>
+<tr>
+<td><code>the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10</code></td>
+<td>The Algebra of the Reading</td>
+<td>12.4%</td>
+<td>42</td>
+<td>3005</td>
+<td>41/56</td>
+</tr>
+<tr>
+<td><code>the-reverse-madelung-map-fluid-to-nonlinear-wave</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>12.3%</td>
+<td>50</td>
+<td>4400</td>
+<td>47/69</td>
+</tr>
+<tr>
+<td><code>the-one-dimensional-reverse-map-characteristics-kdv-hopf</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>11.9%</td>
+<td>33</td>
+<td>2385</td>
+<td>27/44</td>
+</tr>
+<tr>
+<td><code>spin-velocity-locking-on-the-degenerate-sector</code></td>
+<td>The Algebra of the Reading</td>
+<td>11.6%</td>
+<td>37</td>
+<td>2906</td>
+<td>34/48</td>
+</tr>
+<tr>
+<td><code>the-spin-half-energy-momentum-tensor</code></td>
+<td>Particles of spin 1/2</td>
+<td>11.3%</td>
+<td>53</td>
+<td>4651</td>
+<td>49/64</td>
+</tr>
+<tr>
+<td><code>the-spin-half-fluid-and-the-takabayasi-correspondence</code></td>
+<td>Particles of spin 1/2</td>
+<td>11.3%</td>
+<td>86</td>
+<td>7156</td>
+<td>72/85</td>
+</tr>
+<tr>
+<td><code>superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>10.7%</td>
+<td>30</td>
+<td>2262</td>
+<td>25/38</td>
+</tr>
+<tr>
+<td><code>the-current-algebra</code></td>
+<td>The Algebra of the Reading</td>
+<td>10.6%</td>
+<td>42</td>
+<td>3867</td>
+<td>38/53</td>
+</tr>
+<tr>
+<td><code>the-vorticity-form-and-the-irrotational-condition</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>10.6%</td>
+<td>28</td>
+<td>2478</td>
+<td>26/40</td>
+</tr>
+<tr>
+<td><code>the-euler-and-continuity-equations-in-biquaternionic-form</code></td>
+<td>The Fluid Layer: Ordinary Fluid Mechanics</td>
+<td>10.1%</td>
+<td>35</td>
+<td>3081</td>
+<td>31/45</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-schrodinger-fluid</code></td>
+<td>Particles of spin 0</td>
+<td>10.0%</td>
+<td>58</td>
+<td>4012</td>
+<td>43/60</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativistic-quantum-theory">Biquaternion Relativistic Quantum Theory</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1 and above</td>
+<td>27.4%</td>
+<td>96</td>
+<td>3909</td>
+<td>46/59</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1 and above</td>
+<td>26.8%</td>
+<td>90</td>
+<td>3938</td>
+<td>42/51</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1 and above</td>
+<td>24.8%</td>
+<td>76</td>
+<td>3623</td>
+<td>42/53</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-proca-equation-in-momentum-space</code></td>
+<td>Particles of spin 1 and above</td>
+<td>24.6%</td>
+<td>113</td>
+<td>5044</td>
+<td>63/77</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1 and above</td>
+<td>23.8%</td>
+<td>81</td>
+<td>4159</td>
+<td>43/54</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-momentum-space</code></td>
+<td>Particles of spin 1/2</td>
+<td>23.3%</td>
+<td>144</td>
+<td>6756</td>
+<td>86/110</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>23.1%</td>
+<td>64</td>
+<td>3165</td>
+<td>35/41</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-three-positions-of-one-zero</code></td>
+<td>Particles of spin 1 and above</td>
+<td>23.0%</td>
+<td>139</td>
+<td>7618</td>
+<td>75/102</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1 and above</td>
+<td>22.7%</td>
+<td>80</td>
+<td>4086</td>
+<td>46/61</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-proca-equation-in-momentum-space</code></td>
+<td>Particles of spin 1 and above</td>
+<td>22.3%</td>
+<td>100</td>
+<td>4462</td>
+<td>55/68</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1 and above</td>
+<td>21.1%</td>
+<td>74</td>
+<td>3646</td>
+<td>39/58</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1 and above</td>
+<td>20.5%</td>
+<td>80</td>
+<td>4224</td>
+<td>45/59</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1 and above</td>
+<td>18.7%</td>
+<td>66</td>
+<td>3802</td>
+<td>46/65</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation-in-momentum-space</code></td>
+<td>Particles of spin 0</td>
+<td>18.2%</td>
+<td>97</td>
+<td>5088</td>
+<td>61/70</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-weight-of-a-level-set</code></td>
+<td>Particles of spin 1 and above</td>
+<td>18.2%</td>
+<td>104</td>
+<td>6769</td>
+<td>67/74</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-galilean-limit</code></td>
+<td>Particles of spin 1 and above</td>
+<td>17.5%</td>
+<td>103</td>
+<td>7117</td>
+<td>63/97</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>15.9%</td>
+<td>57</td>
+<td>3191</td>
+<td>40/45</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>15.4%</td>
+<td>72</td>
+<td>4967</td>
+<td>50/62</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>14.4%</td>
+<td>56</td>
+<td>3452</td>
+<td>41/48</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>14.3%</td>
+<td>66</td>
+<td>3619</td>
+<td>36/49</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1/2</td>
+<td>14.1%</td>
+<td>50</td>
+<td>3303</td>
+<td>37/42</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-dirac-equation-in-momentum-space</code></td>
+<td>Particles of spin 1/2</td>
+<td>13.8%</td>
+<td>71</td>
+<td>4257</td>
+<td>52/66</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>13.6%</td>
+<td>70</td>
+<td>4315</td>
+<td>45/60</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-count-of-degrees-of-freedom</code></td>
+<td>Particles of spin 1 and above</td>
+<td>13.4%</td>
+<td>92</td>
+<td>5883</td>
+<td>66/80</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-momentum-space</code></td>
+<td>Particles of spin 0</td>
+<td>11.5%</td>
+<td>81</td>
+<td>5290</td>
+<td>67/75</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1/2</td>
+<td>11.5%</td>
+<td>55</td>
+<td>3890</td>
+<td>43/50</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>11.4%</td>
+<td>60</td>
+<td>3828</td>
+<td>36/55</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 1/2</td>
+<td>11.2%</td>
+<td>37</td>
+<td>3280</td>
+<td>31/46</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 1/2</td>
+<td>10.9%</td>
+<td>36</td>
+<td>2776</td>
+<td>28/36</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-charge-conservation</code></td>
+<td>Particles of spin 1 and above</td>
+<td>10.6%</td>
+<td>53</td>
+<td>4458</td>
+<td>47/81</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativity">Biquaternion Relativity</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-spin-one-anti-hermitian-subspace</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>63.3%</td>
+<td>113</td>
+<td>9416</td>
+<td>101/138</td>
+</tr>
+<tr>
+<td><code>the-partition-two-invariants-and-four-regimes</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>19.4%</td>
+<td>184</td>
+<td>9126</td>
+<td>184/184</td>
+</tr>
+<tr>
+<td><code>the-wigner-rotation-in-a-single-state-and-in-a-traced-pair</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>17.5%</td>
+<td>44</td>
+<td>2636</td>
+<td>30/35</td>
+</tr>
+<tr>
+<td><code>the-vacuum-and-the-nilpotent-ladder</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>17.3%</td>
+<td>196</td>
+<td>10296</td>
+<td>196/198</td>
+</tr>
+<tr>
+<td><code>the-rest-frame-and-the-exceptional-point</code></td>
+<td>The Lorentz Transformation on the Material Sector</td>
+<td>16.7%</td>
+<td>199</td>
+<td>10488</td>
+<td>199/222</td>
+</tr>
+<tr>
+<td><code>the-quadratic-map-and-the-singular-sets</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>15.8%</td>
+<td>137</td>
+<td>8405</td>
+<td>70/109</td>
+</tr>
+<tr>
+<td><code>curies-law-for-the-bloch-radius</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>15.7%</td>
+<td>54</td>
+<td>3028</td>
+<td>37/42</td>
+</tr>
+<tr>
+<td><code>inverse-temperature-as-a-rapidity</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>15.4%</td>
+<td>65</td>
+<td>4059</td>
+<td>48/54</td>
+</tr>
+<tr>
+<td><code>the-massless-regime</code></td>
+<td>The Lorentz Transformation on the Material Sector</td>
+<td>15.2%</td>
+<td>199</td>
+<td>10760</td>
+<td>197/226</td>
+</tr>
+<tr>
+<td><code>the-k-norm-and-the-indefinite-structure</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>15.2%</td>
+<td>158</td>
+<td>11350</td>
+<td>158/162</td>
+</tr>
+<tr>
+<td><code>the-spectrum-and-the-two-modes</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>14.8%</td>
+<td>116</td>
+<td>6128</td>
+<td>116/126</td>
+</tr>
+<tr>
+<td><code>the-wigner-angle-of-two-boosts</code></td>
+<td>The Lorentz Transformation</td>
+<td>14.4%</td>
+<td>44</td>
+<td>3248</td>
+<td>35/42</td>
+</tr>
+<tr>
+<td><code>idempotents-ideals-and-observables</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>14.3%</td>
+<td>108</td>
+<td>5245</td>
+<td>105/113</td>
+</tr>
+<tr>
+<td><code>the-n-norm-mass-angle-and-the-cone</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>14.2%</td>
+<td>156</td>
+<td>10002</td>
+<td>148/157</td>
+</tr>
+<tr>
+<td><code>impurity-in-a-boosted-frame</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>14.2%</td>
+<td>51</td>
+<td>3514</td>
+<td>38/44</td>
+</tr>
+<tr>
+<td><code>the-h-norm-amplitude-and-frame</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>14.1%</td>
+<td>140</td>
+<td>9197</td>
+<td>138/150</td>
+</tr>
+<tr>
+<td><code>the-region-of-mass-in-motion</code></td>
+<td>The Lorentz Transformation on the Material Sector</td>
+<td>13.9%</td>
+<td>178</td>
+<td>10495</td>
+<td>178/228</td>
+</tr>
+<tr>
+<td><code>the-gibbs-path-is-not-a-group-orbit</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>13.7%</td>
+<td>60</td>
+<td>4616</td>
+<td>51/58</td>
+</tr>
+<tr>
+<td><code>four-vectors-and-the-interval</code></td>
+<td>The Lorentz Transformation on the Material Sector</td>
+<td>13.2%</td>
+<td>162</td>
+<td>11645</td>
+<td>162/180</td>
+</tr>
+<tr>
+<td><code>bures-isometries-of-the-bloch-ball</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>12.7%</td>
+<td>47</td>
+<td>4455</td>
+<td>42/50</td>
+</tr>
+<tr>
+<td><code>the-four-products-composition-probability-causality-and-gauge</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>12.5%</td>
+<td>117</td>
+<td>6981</td>
+<td>109/119</td>
+</tr>
+<tr>
+<td><code>wave-particle-duality-and-the-fourier-transform</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>11.9%</td>
+<td>82</td>
+<td>7310</td>
+<td>75/88</td>
+</tr>
+<tr>
+<td><code>the-lorentz-group-on-the-bloch-ball</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>11.7%</td>
+<td>54</td>
+<td>5294</td>
+<td>49/56</td>
+</tr>
+<tr>
+<td><code>the-modules-what-the-algebra-acts-on</code></td>
+<td>The Biquaternion Universe and Its Objects</td>
+<td>11.5%</td>
+<td>105</td>
+<td>6129</td>
+<td>105/120</td>
+</tr>
+<tr>
+<td><code>states-observables-and-the-born-weight</code></td>
+<td>The Lorentz Transformation on the Informational Sector</td>
+<td>10.6%</td>
+<td>206</td>
+<td>15270</td>
+<td>190/235</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativistic-quantum-thermodynamics">Biquaternion Relativistic Quantum Thermodynamics</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>29.1%</td>
+<td>110</td>
+<td>3776</td>
+<td>56/59</td>
+</tr>
+<tr>
+<td><code>spin-conservation-and-the-frenkel-condition</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>27.3%</td>
+<td>109</td>
+<td>4328</td>
+<td>56/62</td>
+</tr>
+<tr>
+<td><code>spin-hydrodynamics-in-biquaternionic-form</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>24.4%</td>
+<td>89</td>
+<td>3857</td>
+<td>43/55</td>
+</tr>
+<tr>
+<td><code>the-two-fluid-model-in-biquaternionic-form</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>24.4%</td>
+<td>116</td>
+<td>4913</td>
+<td>53/70</td>
+</tr>
+<tr>
+<td><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code></td>
+<td>The Ledger</td>
+<td>21.5%</td>
+<td>126</td>
+<td>4923</td>
+<td>63/69</td>
+</tr>
+<tr>
+<td><code>the-local-thermal-state-of-a-fluid</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>19.9%</td>
+<td>87</td>
+<td>4743</td>
+<td>44/59</td>
+</tr>
+<tr>
+<td><code>the-local-entropy-current</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>19.7%</td>
+<td>78</td>
+<td>4229</td>
+<td>41/54</td>
+</tr>
+<tr>
+<td><code>equilibrium-partition-function-in-a-moving-frame</code></td>
+<td>Temperature and the State</td>
+<td>18.7%</td>
+<td>80</td>
+<td>4625</td>
+<td>37/56</td>
+</tr>
+<tr>
+<td><code>the-equation-of-state-in-biquaternion-form</code></td>
+<td>The Fluid at a Point, and Transport</td>
+<td>18.2%</td>
+<td>84</td>
+<td>4363</td>
+<td>39/56</td>
+</tr>
+<tr>
+<td><code>relativistic-wigner-function-and-quantum-kinetics</code></td>
+<td>Temperature and the State</td>
+<td>13.5%</td>
+<td>61</td>
+<td>5125</td>
+<td>42/64</td>
+</tr>
+<tr>
+<td><code>the-wigner-function-in-biquaternionic-form</code></td>
+<td>Temperature and the State</td>
+<td>12.8%</td>
+<td>67</td>
+<td>5149</td>
+<td>40/66</td>
+</tr>
+<tr>
+<td><code>curved-spacetime-kms-and-modular-flow</code></td>
+<td>Locality and the Modular Structure</td>
+<td>10.6%</td>
+<td>48</td>
+<td>4365</td>
+<td>33/47</td>
+</tr>
+<tr>
+<td><code>covariant-local-equilibrium-and-tolman-temperature</code></td>
+<td>Locality and the Modular Structure</td>
+<td>10.2%</td>
+<td>59</td>
+<td>5298</td>
+<td>37/62</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-non-relativistic-approximation-of-quantum-theory">Biquaternion Non Relativistic Approximation of Quantum Theory</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>21.6%</td>
+<td>94</td>
+<td>3171</td>
+<td>54/61</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>19.6%</td>
+<td>92</td>
+<td>3333</td>
+<td>54/63</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation-in-momentum-space</code></td>
+<td>Particles of spin 0</td>
+<td>18.5%</td>
+<td>112</td>
+<td>4021</td>
+<td>67/78</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>16.8%</td>
+<td>93</td>
+<td>4096</td>
+<td>62/72</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-schrodinger-equation-in-momentum-space</code></td>
+<td>Particles of spin 0</td>
+<td>16.6%</td>
+<td>109</td>
+<td>4523</td>
+<td>71/84</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation-in-the-non-quantum-limit</code></td>
+<td>Particles of spin 0</td>
+<td>15.5%</td>
+<td>76</td>
+<td>3523</td>
+<td>41/56</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit</code></td>
+<td>Particles of spin 0</td>
+<td>14.5%</td>
+<td>79</td>
+<td>4094</td>
+<td>51/66</td>
+</tr>
+<tr>
+<td><code>the-coupled-schrodinger-equation-in-the-non-quantum-limit</code></td>
+<td>Particles of spin 0</td>
+<td>14.3%</td>
+<td>49</td>
+<td>2695</td>
+<td>39/55</td>
+</tr>
+<tr>
+<td><code>the-fourier-transform-and-the-schrodinger-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>14.0%</td>
+<td>70</td>
+<td>3534</td>
+<td>52/60</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>14.0%</td>
+<td>49</td>
+<td>2997</td>
+<td>36/47</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-form</code></td>
+<td>Particles of spin 0</td>
+<td>12.0%</td>
+<td>42</td>
+<td>3073</td>
+<td>33/48</td>
+</tr>
+<tr>
+<td><code>the-path-integral-and-the-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+<td>Particles of spin 0</td>
+<td>11.8%</td>
+<td>46</td>
+<td>3573</td>
+<td>38/46</td>
+</tr>
+<tr>
+<td><code>covariant-qubit-channels</code></td>
+<td>Focus on informational aspects</td>
+<td>11.1%</td>
+<td>42</td>
+<td>3116</td>
+<td>35/42</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativistic-non-quantum-approximation">Biquaternion Relativistic Non Quantum Approximation</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-proca-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 1 and above origin: effects and non-quantum limits</td>
+<td>21.7%</td>
+<td>64</td>
+<td>2400</td>
+<td>35/48</td>
+</tr>
+<tr>
+<td><code>the-coupled-proca-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 1 and above origin: effects and non-quantum limits</td>
+<td>20.5%</td>
+<td>69</td>
+<td>2282</td>
+<td>39/44</td>
+</tr>
+<tr>
+<td><code>the-coupled-dirac-equation-in-the-non-quantum-limit</code></td>
+<td>Spin ½ origin: effects and non-quantum limits</td>
+<td>19.8%</td>
+<td>66</td>
+<td>2343</td>
+<td>37/48</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-the-non-quantum-limit</code></td>
+<td>Spin ½ origin: effects and non-quantum limits</td>
+<td>19.7%</td>
+<td>80</td>
+<td>3171</td>
+<td>39/45</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-proca-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 1 and above origin: effects and non-quantum limits</td>
+<td>19.6%</td>
+<td>79</td>
+<td>3135</td>
+<td>42/54</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-proca-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 1 and above origin: effects and non-quantum limits</td>
+<td>19.3%</td>
+<td>78</td>
+<td>3057</td>
+<td>41/53</td>
+</tr>
+<tr>
+<td><code>the-dirac-equation-in-the-non-quantum-limit</code></td>
+<td>Spin ½ origin: effects and non-quantum limits</td>
+<td>18.9%</td>
+<td>81</td>
+<td>3404</td>
+<td>45/56</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 0 origin: effects and non-quantum limits</td>
+<td>18.4%</td>
+<td>88</td>
+<td>3486</td>
+<td>44/59</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 0 origin: effects and non-quantum limits</td>
+<td>17.9%</td>
+<td>88</td>
+<td>3819</td>
+<td>48/62</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-dirac-equation-in-the-non-quantum-limit</code></td>
+<td>Spin ½ origin: effects and non-quantum limits</td>
+<td>17.6%</td>
+<td>79</td>
+<td>3555</td>
+<td>42/55</td>
+</tr>
+<tr>
+<td><code>the-coupled-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 0 origin: effects and non-quantum limits</td>
+<td>17.6%</td>
+<td>67</td>
+<td>2641</td>
+<td>43/58</td>
+</tr>
+<tr>
+<td><code>the-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+<td>Spin 0 origin: effects and non-quantum limits</td>
+<td>16.5%</td>
+<td>64</td>
+<td>2895</td>
+<td>43/55</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-universe">Biquaternion Universe</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Shelf</th>
+<th>Bold</th>
+<th>Spans</th>
+<th>Words</th>
+<th>Openers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-mass-shell-and-the-scalar-part</code></td>
+<td>Structural &amp; Algebraic Results</td>
+<td>16.0%</td>
+<td>53</td>
+<td>2904</td>
+<td>39/44</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>One fault, five operations, eleven checks.</strong> Bold has multiplied, and the repair keeps it where it marks something and removes it everywhere else.</p>
+<p>The fault is proliferation. Bold stays, and it marks four things: a definition, the one result a section proves, a no-go, a sign.</p>
+<ul>
+<li>Two numbers find the damage and test the repair. The bold share separates the $540$ undamaged files, at $3.6$ per cent, from the $131$ damaged ones, at $10$ to $63$. The opener share separates them further: $0.4$ per cent of paragraphs open bolded in a healthy article, $73$ to $95$ per cent in a damaged one.</li>
+<li>Five operations repair a file. Delete the bolded summary sentence and keep the sentence under it. Strip the asterisks from an opener that carries its own fact. Strip the asterisks from a word inside a sentence. Repair the grammar the removal broke. Rewrite a line of pure apparatus in the author's words.</li>
+<li>The pass is manual because the choice among the five is a reading decision, taken ten thousand times. A script measures; it never writes.</li>
+<li>The acceptance test is eleven checks, and three of them guard against silent loss: the numeric multiset, the word band of $-10$ to $0$ per cent, and the rule that every deleted sentence has a named replacement.</li>
+<li>The pilot is the worst file in the corpus, and the series follow, because near-clones let the first repair settle the pattern.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>audit-cleaning.md</code>. The sibling pass over single articles, and the list of workshop prose this pass does not touch.</li>
+<li><code>audit-damaged-formulas.md</code>. The mechanical pass over broken mathematics, and why it still ends with a reading.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

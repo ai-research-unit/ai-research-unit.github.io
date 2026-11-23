@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator — Biquaternion Universe</title>
+  <title>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator over $\mathbb{R}$ — Biquaternion Universe</title>
   <meta name="description" content="The upper triangular matrices contain no nonzero antisymmetric matrix, so the antisymmetric part of is zero and the antisymmetric part of a general matrix…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-antisymmetric-part-inside-math0-the-radical-as-the-commutator"><strong>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</strong></h1>
+        <h1 id="the-antisymmetric-part-inside-math0-the-radical-as-the-commutator-over-math1"><strong>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator over $\mathbb{R}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The upper triangular matrices contain no nonzero antisymmetric matrix, so the antisymmetric part of $UT_n$ is zero and the antisymmetric part of a general matrix is its strictly lower triangular part; the trace form on $UT_n$ is degenerate, and its radical is exactly the commutator subalgebra $[UT_n,UT_n]=n_+$, of dimension $n(n-1)/2$.</strong></p>
 <p>The article computes the intersection of the two spaces, the dimensions of the splitting, the rank of the trace form on the triangular algebra, and proves that the radical of that form is the commutator subalgebra and that it is nilpotent. It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> for the notation and <em>The Two Halves: Symmetric and Antisymmetric</em> for the two halves, and it defers the companion statement that $UT_n$ is a linear model of $\operatorname{Sym}_n$ to <em>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</em>.</p>
@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p>and the projection has rank $n(n-1)/2$, the dimension of the antisymmetric half.</p>
 <p><strong>The antisymmetric part leaves the triangular half in both directions.</strong> The projection $\pi_-$ carries an upper triangular matrix to a genuinely antisymmetric one, which has entries above the diagonal as well, so it is in neither $n_+$ nor $n_-$; the two strictly triangular halves are exchanged by the transpose with a sign, and the antisymmetric part averages the two. The only upper triangular matrices whose antisymmetric part vanishes are the diagonal ones, which is the kernel $h$.</p>
-<h2 id="the-trace-form-on-math44-is-degenerate">The Trace Form on $UT_n$ Is Degenerate</h2>
+<h2 id="the-trace-form-on-math45-is-degenerate">The Trace Form on $UT_n$ Is Degenerate</h2>
 <p><strong>The trace of a product of two upper triangular matrices depends only on the diagonals.</strong> For $X,Y\in UT_n$ the product $XY$ is upper triangular and its diagonal entries are $(XY)_{ii}=X_{ii}Y_{ii}$, so</p>
 <p>$$
 \operatorname{tr}(XY)=\sum_{i=1}^{n}X_{ii}Y_{ii}.
@@ -120,7 +120,7 @@ $$</p>
 <p>and this is the content of the title: the radical of the invariant form on the triangular algebra is the commutator, not a proper subspace of it.</p>
 <p><strong>The radical is a two-sided ideal.</strong> For $X\in n_+$ and $U,V\in UT_n$, the product $UXV$ is upper triangular with a zero diagonal, so it lies in $n_+$. Hence $UT_n\,n_+\,UT_n\subseteq n_+$, and the radical is an ideal, as it must be for the radical of an invariant form on an algebra.</p>
 <p><strong>The radical is nilpotent.</strong> Every product of $n$ strictly upper triangular matrices is zero, because each factor raises the index by at least one and there is no room above the diagonal after $n$ steps. So $n_+^{n}=0$, and $n_+$ is a nilpotent ideal of index $n$.</p>
-<h2 id="the-derived-series-of-math90">The Derived Series of $UT_n$</h2>
+<h2 id="the-derived-series-of-math91">The Derived Series of $UT_n$</h2>
 <p><strong>The derived series descends inside $n_+$ and stops at zero.</strong> Write $n_+^{(1)}=n_+$ and $n_+^{(k+1)}=[n_+^{(k)},n_+^{(k)}]$. The $k$-th space consists of the upper triangular matrices whose entries vanish on the first $2^{k-1}-1$ superdiagonals, so</p>
 <p>$$
 \dim n_+^{(2)}=\frac{(n-1)(n-2)}{2},
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>The trace form on $M_n$ is nondegenerate and the one on $UT_n$ is not.</strong> On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ is nondegenerate with inertia $(n(n+1)/2,n(n-1)/2)$; on the subspace $UT_n$ the restriction has rank $n$ and radical $n_+$. So the degeneration appears exactly when the algebra is replaced by a triangular half of it, and its size is the dimension of the commutator.</p>
 <p><strong>The antisymmetric half is nondegenerate and the triangular half is not.</strong> On $\operatorname{Skew}_n$ the form is negative definite, hence nondegenerate; on $UT_n$ it is degenerate with the maximal possible radical for a Borel. The two complementary subspaces of the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$ therefore behave in opposite ways for the same form: one is definite, the other is maximally degenerate.</p>
 <p><strong>The two halved decompositions are not the same decomposition.</strong> The splitting by the transpose is $M_n=\operatorname{Sym}_n\oplus\operatorname{Skew}_n$, with both summands nondegenerate for the trace form; the splitting by triangularity is $M_n=UT_n\oplus\operatorname{Skew}_n$, with one summand degenerate. So the antisymmetric half is a complement of two different spaces, and only one of the two complements is itself nondegenerate.</p>
-<h2 id="the-numbers-at-math125-math126-and-math127">The Numbers at $n=2$, $n=3$ and $n=4$</h2>
+<h2 id="the-numbers-at-math126-math127-and-math128">The Numbers at $n=2$, $n=3$ and $n=4$</h2>
 <p><strong>The count is uniform.</strong> The table is</p>
 <p>$$
 \begin{array}{c|cccc}
@@ -187,8 +187,8 @@ $$</p>
 <li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the Borel and nilpotent subalgebras and the role of the radical.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the triangular factorisations and the trace of a product.</li>
 <li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$</a>, for the three pieces used here.</li>
-<li><a href="utn-as-the-complement-of-the-antisymmetric-part-over-r.html">$UT_n$ as the Complement of the Antisymmetric Part</a>, for the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$.</li>
-<li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the half that $UT_n$ misses.</li>
+<li><a href="utn-as-the-complement-of-the-antisymmetric-part.html">$UT_n$ as the Complement of the Antisymmetric Part</a>, for the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$.</li>
+<li><a href="the-two-halves-symmetric-and-antisymmetric.html">The Two Halves: Symmetric and Antisymmetric</a>, for the half that $UT_n$ misses.</li>
 </ul>
       </div>
     </main>

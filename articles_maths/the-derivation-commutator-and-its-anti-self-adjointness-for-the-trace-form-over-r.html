@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form — Biquaternion Universe</title>
+  <title>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form over $\mathbb{R}$ — Biquaternion Universe</title>
   <meta name="description" content="Every derivation of is inner,, the space of derivations is of dimension, and every one of them is anti-self-adjoint for the trace form; for the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-derivation-math0-and-its-anti-self-adjointness-for-the-trace-form"><strong>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</strong></h1>
+        <h1 id="the-derivation-math0-and-its-anti-self-adjointness-for-the-trace-form-over-math1"><strong>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form over $\mathbb{R}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every derivation of $M_n(\mathbb{R})$ is inner, $D_A(X)=[A,X]$, the space of derivations is $\mathfrak{sl}_n(\mathbb{R})$ of dimension $n^{2}-1$, and every one of them is anti-self-adjoint for the trace form; for the Hilbert–Schmidt form the anti-Hermitian derivations are exactly those with $A$ antisymmetric and the self-adjoint ones exactly those with $A$ symmetric.</strong></p>
 <p>The article defines the map $D_A$, proves the Leibniz rule, computes the kernel and the dimension, proves the anti-self-adjointness for the trace form and classifies the anti-Hermitian and self-adjoint derivations for the Hilbert–Schmidt form. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em> for the trace form and <em>The Hilbert–Schmidt Form</em> of the complex series for the definite form, and it defers the Lie-theoretic reading to <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em>.</p>
@@ -143,7 +143,7 @@ $$</p>
 <p><em>Proof.</em> The series for $e^{A}Xe^{-A}$ is $\sum_{j,k}\frac{1}{j!k!}A^{j}X(-A)^{k}$, and collecting the terms with $j+k=m$ gives $\frac{1}{m!}(\operatorname{ad}A)^{m}(X)$ by the binomial theorem applied to the two commuting operators of left and right multiplication. Measured on $100$ random pairs at $n=4$, the two sides agreed to $10^{-8}$ in every case.</p>
 <p><strong>Consequence: the image of the exponential is the identity component of the automorphism group.</strong> Every $e^{A}$ is invertible with inverse $e^{-A}$, so the conjugation is an automorphism, and every automorphism of the identity component of $\mathrm{PGL}_n(\mathbb{R})$ arises this way. So the inner derivations integrate to the inner automorphisms, and the exponential is surjective onto the identity component.</p>
 <p><strong>The kernel is the scalars and the Lie algebra is $\mathfrak{sl}_n$.</strong> $D_A=0$ iff $A$ is a scalar, so the map $\mathfrak{gl}_n\to\operatorname{Der}$ has the one-dimensional kernel $\mathbb{R}\mathrm{I}$, and the induced map $\mathfrak{sl}_n(\mathbb{R})\to\operatorname{Der}$ is an isomorphism. The scalar direction is the direction of the centre of $\mathrm{GL}_n(\mathbb{R})$, and it is invisible to the conjugation.</p>
-<h2 id="the-case-math150">The Case $n=2$</h2>
+<h2 id="the-case-math151">The Case $n=2$</h2>
 <p><strong>At $n=2$ the derivations are three-dimensional.</strong> $\operatorname{Der}M_2(\mathbb{R})\cong\mathfrak{sl}_2(\mathbb{R})$, of dimension $3$, and it is isomorphic to $\mathfrak{so}(2,1)$ as a real Lie algebra. The operator space $M_2(\mathbb{R})$ has dimension $4$, and the derivations are the traceless part.</p>
 <p><strong>The trace-form anti-self-adjointness is total and the Hilbert–Schmidt one is not.</strong> Every $D_A$ on $M_2(\mathbb{R})$ is anti-self-adjoint for $\operatorname{tr}(XY)$, whose inertia is $(3,1)$, so the derivations sit inside $\mathfrak{so}(3,1)$; for the Hilbert–Schmidt form only the antisymmetric $A$ give anti-Hermitian derivations, and those form the one-dimensional subspace of the rotations. So the definite form separates the rotation direction from the two stretch directions, and the invariant form does not.</p>
 <p><strong>The anti-Hermitian derivation at $n=2$ is a complex structure on the symmetric half.</strong> The element $A=J$ gives $D_J$, which maps $\operatorname{Sym}_2$ to $\operatorname{Skew}_2$; on the traceless part of $\operatorname{Sym}_2$ one has $D_J^{2}=-4$, and $D_J^{2}=0$ on the scalars, so $D_J/2$ is a complex structure on the two-dimensional traceless part. The conjugation $e^{tJ}$ is the circle of rotations, and its derivative is $D_J$.</p>
@@ -188,7 +188,7 @@ $$</p>
 <ul>
 <li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the theorem that the derivations of a central simple algebra are inner.</li>
 <li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (AMS, 1998), for the derivation algebras of the classical algebras and their involutions.</li>
-<li><a href="the-trace-form-and-its-signature-on-the-two-halves.html">The Trace Form and Its Inertia on the Two Halves</a>, for the invariant form and its signs.</li>
+<li><a href="the-trace-form-and-its-inertia-on-the-two-halves.html">The Trace Form and Its Inertia on the Two Halves</a>, for the invariant form and its signs.</li>
 <li><a href="the-hilbert-schmidt-form.html">The Hilbert–Schmidt Form</a>, for the definite form and its failure of invariance.</li>
 <li><a href="the-lie-algebra-skew-n-and-so-n-over-r.html">The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</a>, for the bracket used in the Leibniz rule.</li>
 </ul>

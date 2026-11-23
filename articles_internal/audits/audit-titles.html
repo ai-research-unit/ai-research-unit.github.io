@@ -1,0 +1,2790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit of Titles and File Names — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A measurement of the agreement between the title of each article and the name of its file, over both published collections. Written…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-of-titles-and-file-names">Audit of Titles and File Names</h1>
+<p><em>What this file is.</em> A measurement of the agreement between the title of each article and the name of its file, over both published collections. Written 2026-11-23 on the working tree. <strong>The rule the repair follows: when a title and a file name disagree, the title wins and the file is renamed</strong> (§<em>The rule: the file name follows the title</em>). It lists what differs, sorts the differences by cause, separates the tolerated spellings from the defects, and closes with the options. §The Repair records the repair that followed, so the measurement above §The Repair is the state before it.</p>
+<p><em>The rule it measures.</em> The corpus states the rule twice, in <em>Index and Notation Conventions</em>:</p>
+<blockquote>
+<p>a mathematical article is a file <code>articles_maths/&lt;slug&gt;.md</code> and a physical article is a file <code>articles_physics/&lt;slug&gt;.md</code>, where the slug is the title in lower case with hyphens in place of spaces and punctuation.</p>
+</blockquote>
+<p>and again in the Summary of Notation of the same article:</p>
+<blockquote>
+<p><code>articles_maths/&lt;slug&gt;.md</code> — the file of a mathematical article; the slug is the title in lower case with hyphens.</p>
+</blockquote>
+<p>There is no second rule. Nothing prescribes how mathematics inside a title is written into a slug, nothing says whether a subtitle after a colon belongs to the slug, and nothing says what to do when two articles are the same subject at two levels of generality.</p>
+<p><em>Scope.</em> <code>articles_maths/*.md</code>, 2 633 files, and <code>articles_physics/*.md</code>, 679 files: 3 312 articles. Every one of the 3 312 opens with its title on the first line, in the form <code># __Title__</code>. No file was skipped. One of the 3 312 was an orphan and has since been deleted (§<em>What the repair left alone</em>), so the tree holds 3 311 — 2 632 mathematical and 679 physical.</p>
+<p><em>Headline.</em> <strong>3 143 file names are their title letter for letter. 168 are a tolerated spelling of their title. 0 contradict their title.</strong> That is the whole finding, and the rest of this file is the working.</p>
+<p>The three tolerated spellings are these, and they are the corpus's habit, used hundreds of times, not accidents:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>kind</th>
+<th style="text-align: right;">rows</th>
+<th>what the name does</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 — the name says less</strong></td>
+<td style="text-align: right;">95</td>
+<td>it drops the title's subtitle (72 rows) or its closing clause (23 rows)</td>
+<td><em>Biquaternion Fourier Inversion on the Degenerate Set: Peirce Coordinates and the Exponential</em> → <code>biquaternion-fourier-inversion-on-the-degenerate-set</code></td>
+</tr>
+<tr>
+<td><strong>2 — it spells a formula in letters</strong></td>
+<td style="text-align: right;">43</td>
+<td>a symbol becomes its letters, digits or transliteration</td>
+<td>$2\times2$ → <code>2x2</code>; $C^*$ → <code>c-star</code>; $SO(4)$ → <code>so4</code></td>
+</tr>
+<tr>
+<td><strong>3 — it spells a formula in words</strong></td>
+<td style="text-align: right;">30</td>
+<td>an operator becomes the words a reader says</td>
+<td>$\oplus$ → <code>plus</code>; $\otimes$ → <code>tensor</code>; $\tfrac32$ → <code>three-halves</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Everything else is a defect, and 30 files were renamed to clear the last of them. The measure reported 206 rows before the repair, 189 once the titles were corrected, and 168 today; the 38 rows that left it left because a title or a file name was put right, not because the measure changed.</p>
+<h2 id="the-measure">The Measure</h2>
+<p>The title is the text between the double underscores. The file name is the stem of the file. The two are compared as bags of content words.</p>
+<p>A word counts when it is not a stop word (<code>the</code>, <code>a</code>, <code>of</code>, <code>and</code>, <code>in</code>, <code>at</code>, <code>to</code>, <code>for</code>, …). Accents are folded, so <code>Möbius</code> and <code>mobius</code> are one word. A plural and a possessive are the same word as their stem, so <code>bispinors</code> and <code>bispinor</code> agree, and <code>Chaitin's</code> and <code>chaitins</code> agree. A word inside <code>$…$</code> in the title is credited to the slug when the slug contains its letters: the title <code>$M_4(\mathbb{C})$</code> credits <code>m4c</code>. A slug word inside the concatenation of the whole slug is credited too, so <code>2x2</code> and <code>2×2</code> agree.</p>
+<p>The strict reading of the rule — the slug is the title transliterated — cannot be applied by machine, because 496 titles carry mathematics and the corpus uses no fixed transliteration. It writes <code>$M_4(\mathbb{C})$</code> as <code>m4c</code>, <code>$\mathbb{R}$</code> as <code>r</code>, <code>$\tfrac32$</code> as <code>three-halves</code>, <code>$\operatorname{Sym}$</code> as <code>sym</code>, <code>$2\times2$</code> as <code>2x2</code>, <code>C^*</code> as <code>c-star</code>, and <code>$\mathbb{C}/\mathbb{R}$</code> as <code>c-over-r</code>. A strict count would measure the transliteration table of the checker, not the corpus. The content-word count measures the corpus.</p>
+<p>Two things the measure cannot see. It cannot see a subtitle that repeats the main clause in different words, and it cannot see whether the title or the file name is the one that is out of date. Where that question matters, this audit answers it from the body of the article, and says so.</p>
+<h2 id="what-the-corpus-tolerates-and-what-it-does-not">What the Corpus Tolerates, and What It Does Not</h2>
+<p>The rule of the corpus is one sentence: the slug is the title in lower case, with hyphens. The corpus has never applied it literally, because a title is prose and a slug is an address. Three deviations are therefore habitual and are treated here as compliant:</p>
+<ol>
+<li><strong>The subtitle after a colon is not carried into the slug, nor a trailing clause.</strong> 308 titles carry a colon. Of the 95 names of kind A, 72 stop at the colon and 23 drop a closing clause such as <em>including the Lie groups</em>.</li>
+<li><strong>A formula is written as its letters.</strong> $M_4(\mathbb{C})$ → <code>m4c</code>, $\mathbb{R}$ → <code>r</code>, $C^*$ → <code>c-star</code>, $\operatorname{Sym}$ → <code>sym</code>.</li>
+<li><strong>A formula may instead be written as its words.</strong> $\oplus$ → <code>plus</code>, $\otimes$ → <code>tensor</code>, $\tfrac32$ → <code>three-halves</code>. This is rarer, and it is what makes 30 rows look like a paraphrase when they are a spelling.</li>
+</ol>
+<p>Two other deviations are <strong>not</strong> tolerated, because each makes the name say something the title does not:</p>
+<ul>
+<li><strong>a qualifier in the name that the title lacks</strong> — <code>the-positive-cone-and-its-boundary-over-r</code> against <em>The Positive Cone and Its Boundary</em>. In the first run there were 48 such rows.</li>
+<li><strong>a name that says more, or other, than the title</strong> — <code>the-gluon-an-octet-outside-the-biquaternion-algebra</code> against <em>The Gluon: An Octet Inside the Carrier's Group</em>. In the first run there were 31 such rows.</li>
+</ul>
+<p>Those 79 rows, and the 26 title collisions behind them, were the defect this audit was made to find. They are repaired or renamed; none survives. The first run as a whole, for the record:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>departure, first run</th>
+<th style="text-align: right;">rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mathematics written out in the slug</td>
+<td style="text-align: right;">57</td>
+</tr>
+<tr>
+<td>the subtitle after a colon left out of the slug</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr>
+<td>a qualifier in the slug that the title does not carry</td>
+<td style="text-align: right;">48</td>
+</tr>
+<tr>
+<td>the title longer than the slug, both naming the same object</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>both at once</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>206</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>A reader who browses the menus sees the subtitle; a reader who reads the URL does not. Whether that is intended is a question for the author, and §<em>Options</em> treats it as one.</p>
+<h2 id="the-collisions-twenty-six-titles-fifty-three-files">The Collisions: Twenty-Six Titles, Fifty-Three Files</h2>
+<p>Twenty-six titles are used by two or three articles of the same collection. All 26 groups are in the mathematical corpus. Fifty-three files carry the 26 titles.</p>
+<p>Twenty-three of the 26 pairs are one subject at two levels of generality. The file name says which: the general case, and the case at $n=4$, over $\mathbb{R}$, or in $M_2(\mathbb{C})$. The title says nothing. A reader who meets <em>The Positive Cone and Its Boundary</em> in the menu has no way to know that the article is the real one, and no way to know that a second article of the same title treats the complex case.</p>
+<p>This is the failure the writing rules name directly: <em>a physicist who reads only the title should know what is studied</em>. It is also a reader-visible failure, because the menu prints the title and nothing else.</p>
+<p>Three of the 26 are not a generality pair. They are collisions of a different kind: two articles on one subject, written at two moments, with the same title — the Fierz–Kofink pair, the Peirce pair, and the two carrier articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>title</th>
+<th>general file</th>
+<th>special file</th>
+<th>tokens only in the special name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From the Spin to the Carriers and the Closures</td>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure</code></td>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure-in-m2c</code></td>
+<td><code>in</code> <code>m2c</code></td>
+</tr>
+<tr>
+<td>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</td>
+<td><code>neither-half-is-invariant-the-cartan-element</code></td>
+<td><code>neither-half-is-invariant-the-cartan-element-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Adjoints and the Polar Decomposition of an Operator</td>
+<td><code>the-adjoints-and-the-polar-decomposition-of-an-operator</code></td>
+<td><code>the-adjoints-and-the-polar-decomposition-of-an-operator-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</td>
+<td><code>the-antisymmetric-part-inside-utn-the-radical-as-the-commutator</code></td>
+<td><code>the-antisymmetric-part-inside-utn-the-radical-as-the-commutator-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$</td>
+<td><code>the-closures-of-a-weight-vector-the-chain</code></td>
+<td><code>the-closures-of-a-weight-vector-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</td>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form</code></td>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Fierz–Kofink Identities and the Classification of Spinors</td>
+<td><code>the-fierz-kofink-identities-and-the-classification-of-spinors</code></td>
+<td><code>the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators</code></td>
+<td><code>of</code> <code>the</code> <code>operators</code></td>
+</tr>
+<tr>
+<td>The Fine Decomposition against the Diagonal</td>
+<td><code>the-fine-decomposition-against-the-diagonal</code></td>
+<td><code>the-fine-decomposition-against-the-diagonal-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</td>
+<td><code>the-four-multiplication-tables-ss-sk-ks-kk</code></td>
+<td><code>the-four-multiplication-tables-ss-sk-ks-kk-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</td>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves</code></td>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Length and the Two Ranks</td>
+<td><code>the-length-and-the-two-ranks</code></td>
+<td><code>the-length-and-the-two-ranks-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</td>
+<td><code>the-lie-algebra-skew-n-and-so-n</code></td>
+<td><code>the-lie-algebra-skew-n-and-so-n-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The One-Sided Operators</td>
+<td><code>the-one-sided-operators-of-the-biquaternion-algebra</code></td>
+<td><code>the-one-sided-operators-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</td>
+<td><code>the-parity-rule-the-two-squares-of-the-module</code></td>
+<td><code>the-parity-rule-the-two-squares-of-the-module-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</td>
+<td><code>the-peirce-decomposition-of-sym-n-as-a-jordan-algebra</code></td>
+<td><code>the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra</code></td>
+<td><code>r</code></td>
+</tr>
+<tr>
+<td>The Positive Cone and Its Boundary</td>
+<td><code>the-positive-cone-and-its-boundary</code></td>
+<td><code>the-positive-cone-and-its-boundary-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</td>
+<td><code>the-quaternionic-structure-of-the-module-and-the-real-forms</code></td>
+<td><code>the-quaternionic-structure-of-the-module-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Spin Group via $4\times4$ Real Matrices</td>
+<td><code>the-spin-group-via-4x4-real-matrices</code></td>
+<td><code>the-spin-group-via-4x4-real-matrices-in-m2c</code></td>
+<td><code>in</code> <code>m2c</code></td>
+</tr>
+<tr>
+<td>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</td>
+<td><code>the-spin-three-halves-bispinors-and-the-minimal-left-ideals</code></td>
+<td><code>the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Symmetric and Antisymmetric Parts of the Operator Space</td>
+<td><code>the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space</code></td>
+<td><code>the-symmetric-and-antisymmetric-parts-of-the-operator-space</code>, <code>the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Triangular Decomposition $h\oplus n_+\oplus n_-$</td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus</code></td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus-of-mnr</code></td>
+<td><code>of</code> <code>mnr</code></td>
+</tr>
+<tr>
+<td>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</td>
+<td><code>the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier</code></td>
+<td><code>the-truncated-rule-the-product-of-two-carriers-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+<tr>
+<td>The Two Halves and the Analysis: Smooth Structures and the Exponential</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential</code></td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>The Two Halves and Their Topology</td>
+<td><code>the-two-halves-and-their-topology</code></td>
+<td><code>the-two-halves-and-their-topology-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</td>
+<td><code>utn-as-a-linear-model-of-sym-n-same-space-wrong-product</code></td>
+<td><code>utn-as-a-linear-model-of-sym-n-same-space-wrong-product-over-r</code></td>
+<td><code>over</code> <code>r</code></td>
+</tr>
+<tr>
+<td>Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</td>
+<td><code>why-the-conjugation-labels-are-integer</code></td>
+<td><code>why-the-conjugation-labels-are-integer-at-n-4</code></td>
+<td><code>at</code> <code>n</code> <code>4</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Fifty-three files is 1.6 per cent of the corpus. It is the smallest of the three findings and the one with the clearest fix: the qualifier already exists, in the file name, and it needs to be moved into the title.</p>
+<h2 id="the-slugs-that-lag-the-body">The Slugs That Lag the Body</h2>
+<p>Seven files carry a word in the slug that the article no longer uses and the title has already dropped. The body settles the direction in each case: the title's word is the one the article argues in.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>title says</th>
+<th>body says</th>
+<th>slug says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-trace-form-and-its-indefinite-signature</code></td>
+<td>indefinite <em>inertia</em></td>
+<td>inertia 8, signature 0</td>
+<td>signature</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves</code></td>
+<td><em>inertia</em> on the two halves</td>
+<td>inertia 22, signature 0</td>
+<td>signature</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m2r</code></td>
+<td><em>inertia</em>, $M_2(\mathbb{R})$</td>
+<td>inertia 7, signature 0</td>
+<td>signature</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m4c</code></td>
+<td><em>inertia</em>, $M_4(\mathbb{C})$</td>
+<td>inertia 17, signature 1</td>
+<td>signature</td>
+</tr>
+<tr>
+<td><code>the-killing-form-of-sl-2-and-its-three-signatures</code></td>
+<td>three <em>inertias</em></td>
+<td>inertia 16, signature 1</td>
+<td>signatures</td>
+</tr>
+<tr>
+<td><code>m2c-h-standard-representation</code></td>
+<td><em>Pauli</em> representation</td>
+<td>Pauli 9, standard 0</td>
+<td>standard</td>
+</tr>
+<tr>
+<td><code>m2c-h-standard-representation-operators</code></td>
+<td><em>Pauli</em> representation: operators</td>
+<td>Pauli 3, standard 0</td>
+<td>standard</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first five are one rename of a concept — the signature of a form was renamed its inertia — made in the title and in the body and not in the file name. The last two are the same event in another family.</p>
+<h2 id="the-title-and-the-slug-name-different-objects">The Title and the Slug Name Different Objects</h2>
+<p>These are the rows where the two names assert different things. The audit does not decide which is current; the body was read only where §<em>The Slugs That Lag the Body</em> says so. Each row needs one decision from the author.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>the slug says</th>
+<th>the title says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-gluon-an-octet-outside-the-biquaternion-algebra</code></td>
+<td>the octet is <em>outside</em> the algebra</td>
+<td>the octet is <em>inside</em> the carrier's group</td>
+</tr>
+<tr>
+<td><code>anomalies-and-anomaly-cancellation-in-biquaternionic-form</code></td>
+<td>anomalies in biquaternionic form</td>
+<td>anomalies in the Four Colours Left–Right Model</td>
+</tr>
+<tr>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>the running of the strong <em>coupling</em></td>
+<td>the running of the Strong <em>Force</em></td>
+</tr>
+<tr>
+<td><code>beyond-one-qubit-what-b-tensor-b-would-require</code></td>
+<td><em>beyond one qubit</em></td>
+<td><em>the multi-qubit boundary</em></td>
+</tr>
+<tr>
+<td><code>quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall</code></td>
+<td>in the biquaternion framework; the dimension ceiling</td>
+<td>as the residual of $\mathrm{SU}(4)$; the wall restated</td>
+</tr>
+<tr>
+<td><code>the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors</code></td>
+<td>in the biquaternion framework</td>
+<td>as the low-energy phase</td>
+</tr>
+<tr>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts</code></td>
+<td>the topology of <em>boosts</em></td>
+<td>the topology of the <em>group</em></td>
+</tr>
+<tr>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling</code></td>
+<td>the neutral current and the $Z$ coupling</td>
+<td>the three neutral states, one mixture</td>
+</tr>
+<tr>
+<td><code>the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector</code></td>
+<td>from the biquaternion material sector</td>
+<td>from the bivector plane</td>
+</tr>
+<tr>
+<td><code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code></td>
+<td>in biquaternionic form</td>
+<td>from accidental to gauged</td>
+</tr>
+<tr>
+<td><code>su2l-times-su2r-two-sides-six-generators-one-group</code></td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>the same, in the display</td>
+</tr>
+<tr>
+<td><code>where-the-half-integers-go-in-the-biquaternion-operators</code></td>
+<td>in the biquaternion operators</td>
+<td>no carrier named</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first nine are the ones where a reader would notice. In each, one of the two names is a working title that survived a change of argument. The bodies of the gluon and of the anomaly article were read: the gluon article says both <em>outside</em> and <em>inside</em>, and the anomaly article argues in biquaternionic language throughout, so in neither case is the file name obviously the older one.</p>
+<h2 id="the-titles-that-say-less-than-their-files">The Titles That Say Less Than Their Files</h2>
+<p>A title that names less than its own file is the milder failure, unless a second article bears the same title, which is the case for four of these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>title as printed</th>
+<th>what the title leaves out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-one-sided-operators-of-the-biquaternion-algebra</code></td>
+<td>The One-Sided Operators</td>
+<td>the biquaternion algebra (and it shares its title with the article over $\mathbb{R}$)</td>
+</tr>
+<tr>
+<td><code>the-spin-zero-carrier-of-the-biquaternion-operators</code></td>
+<td>The Spin-Zero Carrier: the Scalars</td>
+<td>the operators it is the carrier of</td>
+</tr>
+<tr>
+<td><code>the-spin-content-of-the-biquaternion-operators</code></td>
+<td>The Spin Content: …</td>
+<td>the operators it is the content of</td>
+</tr>
+<tr>
+<td><code>the-spin-three-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Three Carrier at $n=4$: …</td>
+<td>the algebra: the slug says $M_4(\mathbb{C})$, the title says $n=4$</td>
+</tr>
+<tr>
+<td><code>the-spin-two-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Two Carrier at $n=4$: …</td>
+<td>the algebra, as above</td>
+</tr>
+<tr>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure</code></td>
+<td>From the Spin to the Carriers and the Closures</td>
+<td>that it is the representation-theoretic article (it shares its title with a shorter one)</td>
+</tr>
+<tr>
+<td><code>the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators</code></td>
+<td>The Fierz–Kofink Identities and the Classification of Spinors</td>
+<td>the operators (it shares its title with the spinor article)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="one-broken-title">One Broken Title</h2>
+<p><code>reflections-as-signed-two-sided-operators-on-a-clifford-algebra</code> opens with</p>
+<pre><code># __Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra__
+</code></pre>
+<p>The series has nineteen siblings, all named <em>Reflections as Signed Two-Sided Operators on a …</em> — a group, a ring, a linear space, an algebra, a Jordan algebra, a graded algebra, a bimodule, a topological group, a topological ring, a topological vector space, a Banach algebra, a group algebra, the algebra of arithmetic functions, a Hilbert space, an ordered algebra, a Lie algebra, the algebra of random variables, a symmetry group, a complex vector space. This one alone carries an inserted <em>The Family of</em>, in the title and in the menu line, and therefore in the <code>&lt;title&gt;</code> of the built page.</p>
+<p>It is the only syntactic defect in a title of the 3 312. It is also the only one of the findings that is visible on the page before the reader has compared anything.</p>
+<h2 id="elsewhere-in-the-corpus">Elsewhere in the Corpus</h2>
+<p>Two facts that the title audit met on its way, and records because they bear on the same reader path.</p>
+<p>The menus agree with the titles. Before the repair, 3 of the 3 318 menu lines differed from the heading of the file they link: two by typography (<code>$M_{n^{2}}$</code> against <code>$M_{n^2}$</code>, <code>$\mathrm{SU}(2)$</code> against <code>$SU(2)$</code>), and one by content — <code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code> was listed as <em>… the Running of the Strong Force</em>. The repair left 2, both typographic. No menu line points at a missing file.</p>
+<p>One article was in no menu: <code>articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover</code>, titled <em>The Spin Group: Unit Elements, Rotors and the Two-to-One Cover</em>. It was built and deployed, and nothing linked to it. It is now deleted — §<em>What the repair left alone</em>.</p>
+<h2 id="the-full-list">The Full List</h2>
+<p><em>The snapshot before the repair of §The Repair, and the first run of the measure.</em> All 206 rows of that run, sorted by cause, with the titles and the file names as they stood then — so a row below may name a file that §<em>The thirty renames</em> has since renamed, or show a title §The Repair has since corrected. The columns <em>slug has</em> and <em>title has</em> name the words that appear on one side and not on the other, after the fold, the plural and the mathematics credit of §<em>The Measure</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>collection</th>
+<th>file</th>
+<th>title</th>
+<th>class</th>
+<th>slug has</th>
+<th>title has</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maths</td>
+<td><code>from-the-spin-group-to-the-spin-of-a-single-rotor-of-the-operators</code></td>
+<td>From the Spin Group to the Spin of a Single Rotor: the Sign after $2\pi$ and the Return after $4\pi$</td>
+<td>both differ</td>
+<td>operators</td>
+<td>sign, after, return, after</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>m2c-h-standard-representation</code></td>
+<td>$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation</td>
+<td>both differ</td>
+<td>standard</td>
+<td>pauli</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>m2c-h-standard-representation-operators</code></td>
+<td>$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators</td>
+<td>both differ</td>
+<td>standard</td>
+<td>pauli</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>m4r-h-l-regular-representation</code></td>
+<td>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation</td>
+<td>both differ</td>
+<td>regular</td>
+<td>axis, free</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>m4r-h-l-regular-representation-operators</code></td>
+<td>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators</td>
+<td>both differ</td>
+<td>regular</td>
+<td>axis, free</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>neither-half-is-invariant-the-cartan-element-at-n-4</code></td>
+<td>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</td>
+<td>both differ</td>
+<td>n, 4</td>
+<td>carries, into</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-closures-of-a-weight-vector-at-n-4</code></td>
+<td>The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$</td>
+<td>both differ</td>
+<td>n, 4</td>
+<td>chain</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-exponential-of-sym-4-stretches-and-the-positive-cone</code></td>
+<td>The Exponential of the Symmetric Part: Stretches and the Positive Cone at $n=4$</td>
+<td>both differ</td>
+<td>sym</td>
+<td>symmetric, part</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4</code></td>
+<td>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</td>
+<td>both differ</td>
+<td>halves, n, 4</td>
+<td>each, meets</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-killing-form-of-sl-2-and-its-three-signatures</code></td>
+<td>The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias</td>
+<td>both differ</td>
+<td>signatures</td>
+<td>inertias</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-quaternionic-structure-of-the-module-at-n-4</code></td>
+<td>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</td>
+<td>both differ</td>
+<td>n, 4</td>
+<td>admits, real, forms</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-content-of-the-biquaternion-operators</code></td>
+<td>The Spin Content: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</td>
+<td>both differ</td>
+<td>biquaternion, operators</td>
+<td>module, algebra</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</td>
+<td>both differ</td>
+<td>m4c</td>
+<td>top, chain</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-two-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square</td>
+<td>both differ</td>
+<td>m4c</td>
+<td>alternating, square</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-zero-carrier-of-the-biquaternion-operators</code></td>
+<td>The Spin-Zero Carrier: the Scalars</td>
+<td>both differ</td>
+<td>biquaternion, operators</td>
+<td>scalars</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-trace-form-and-its-indefinite-signature</code></td>
+<td>The Trace Form and Its Indefinite Inertia</td>
+<td>both differ</td>
+<td>signature</td>
+<td>inertia</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves</code></td>
+<td>The Trace Form and Its Inertia on the Two Halves</td>
+<td>both differ</td>
+<td>signature</td>
+<td>inertia</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m2r</code></td>
+<td>The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</td>
+<td>both differ</td>
+<td>signature</td>
+<td>inertia</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m4c</code></td>
+<td>The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</td>
+<td>both differ</td>
+<td>signature</td>
+<td>inertia</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>why-the-conjugation-labels-are-integer-at-n-4</code></td>
+<td>Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</td>
+<td>both differ</td>
+<td>n, 4</td>
+<td>kernel</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>anomalies-and-anomaly-cancellation-in-biquaternionic-form</code></td>
+<td>Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None</td>
+<td>both differ</td>
+<td>biquaternionic, form</td>
+<td>colours, left, right, model, conditions, become, none</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>Asymptotic Freedom and the Running of the Strong Force: One Coefficient, One Line, One Scale</td>
+<td>both differ</td>
+<td>coupling</td>
+<td>force, coefficient, line, scale</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>beyond-one-qubit-what-b-tensor-b-would-require</code></td>
+<td>The Multi-Qubit Boundary: What $\mathbb{B}\otimes\mathbb{B}$ Would Require</td>
+<td>both differ</td>
+<td>beyond, tensor</td>
+<td>multi, boundary</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code></td>
+<td>Custodial Symmetry and the Rho Parameter: From Accidental to Gauged</td>
+<td>both differ</td>
+<td>biquaternionic, form</td>
+<td>accidental, gauged</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall</code></td>
+<td>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</td>
+<td>both differ</td>
+<td>biquaternion, framework, dimension, ceiling</td>
+<td>residual, restated</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-gluon-an-octet-outside-the-biquaternion-algebra</code></td>
+<td>The Gluon: An Octet Inside the Carrier's Group</td>
+<td>both differ</td>
+<td>outside, biquaternion, algebra</td>
+<td>inside, carrier, group</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector</code></td>
+<td>The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane</td>
+<td>both differ</td>
+<td>biquaternion, material, sector</td>
+<td>bivector, plane</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors</code></td>
+<td>The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</td>
+<td>both differ</td>
+<td>biquaternion, framework, u2</td>
+<td>low, energy, phase</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts</code></td>
+<td>The Two-Sheeted Cover and the Topology of the Group</td>
+<td>both differ</td>
+<td>boosts, biquaternionic, form</td>
+<td>group</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling</code></td>
+<td>The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</td>
+<td>both differ</td>
+<td>current, z, coupling</td>
+<td>states, mixture, denominators</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wigers-classification-two-casimirs-three-orbits</code></td>
+<td>Wigner's Classification: Two Casimirs, Three Orbits</td>
+<td>both differ</td>
+<td>wigers</td>
+<td>wigner</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>algorithmic-randomness-and-chaitins-omega</code></td>
+<td>Algorithmic Randomness and Chaitin's $\Omega$</td>
+<td>slug qualifier</td>
+<td>omega</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>galois-theory-of-c-over-r</code></td>
+<td>Galois Theory of ℂ/ℝ</td>
+<td>slug qualifier</td>
+<td>over</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>spinors-and-dirac-spinors-at-n-4</code></td>
+<td>Spinors and Dirac Spinors in $M_4(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>n</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-adjoints-and-the-polar-decomposition-of-an-operator-over-r</code></td>
+<td>The Adjoints and the Polar Decomposition of an Operator</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-antisymmetric-part-inside-utn-the-radical-as-the-commutator-over-r</code></td>
+<td>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure</code></td>
+<td>From the Spin to the Carriers and the Closures</td>
+<td>slug qualifier</td>
+<td>representation</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure-in-m2c</code></td>
+<td>From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>representation</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form</code></td>
+<td>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</td>
+<td>slug qualifier</td>
+<td>commutator</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form-at-n-4</code></td>
+<td>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form at $n=4$</td>
+<td>slug qualifier</td>
+<td>commutator</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form-over-r</code></td>
+<td>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</td>
+<td>slug qualifier</td>
+<td>commutator, over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-elementary-symmetric-functions-trace-and-determinant-in-dimension-two</code></td>
+<td>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</td>
+<td>slug qualifier</td>
+<td>trace, determinant</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators</code></td>
+<td>The Fierz–Kofink Identities and the Classification of Spinors</td>
+<td>slug qualifier</td>
+<td>operators</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-fine-decomposition-against-the-diagonal-over-r</code></td>
+<td>The Fine Decomposition against the Diagonal</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-four-multiplication-tables-ss-sk-ks-kk-over-r</code></td>
+<td>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c</code></td>
+<td>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>into, tensor</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-length-and-the-two-ranks-over-r</code></td>
+<td>The Length and the Two Ranks</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-lie-algebra-skew-n-and-so-n-over-r</code></td>
+<td>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</td>
+<td>slug qualifier</td>
+<td>so, over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-one-sided-operators-of-the-biquaternion-algebra</code></td>
+<td>The One-Sided Operators</td>
+<td>slug qualifier</td>
+<td>biquaternion, algebra</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-one-sided-operators-over-r</code></td>
+<td>The One-Sided Operators</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-parity-rule-the-two-squares-of-the-module</code></td>
+<td>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</td>
+<td>slug qualifier</td>
+<td>squares, module</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-parity-rule-the-two-squares-of-the-module-at-n-4</code></td>
+<td>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</td>
+<td>slug qualifier</td>
+<td>squares, module, n, 4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-positive-cone-and-its-boundary-over-r</code></td>
+<td>The Positive Cone and Its Boundary</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-slot-and-the-summand-at-n-4</code></td>
+<td>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>n</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spectrum-and-the-two-point-structure-of-the-split-complex-numbers-over-r</code></td>
+<td>The Spectrum and the Two-Point Structure of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$</td>
+<td>slug qualifier</td>
+<td>split, complex, numbers</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-group-via-4x4-real-matrices-in-m2c</code></td>
+<td>The Spin Group via $4\times4$ Real Matrices</td>
+<td>slug qualifier</td>
+<td>4x4, m2c</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-n-norm-regularity</code></td>
+<td>The Spin-Half Bispinors and N Norm Regularity</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-n-norm-regularity-in-m2c</code></td>
+<td>The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-spectral-regularity</code></td>
+<td>The Spin-Half Bispinors and Spectral Regularity</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-spectral-regularity-in-m2c</code></td>
+<td>The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity</code></td>
+<td>The Spin-Half Bispinors and the Sectors of N and Spectral Regularity</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c</code></td>
+<td>The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>spaces</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</td>
+<td>slug qualifier</td>
+<td>halves, n, 4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space</code></td>
+<td>The Symmetric and Antisymmetric Parts of the Operator Space</td>
+<td>slug qualifier</td>
+<td>biquaternion</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r</code></td>
+<td>The Symmetric and Antisymmetric Parts of the Operator Space</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-three-rows-biquaternion-m2c-and-m4c</code></td>
+<td>The Three Rows: $\mathbb{B}$, $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$</td>
+<td>slug qualifier</td>
+<td>biquaternion</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus-of-mnr</code></td>
+<td>The Triangular Decomposition $h\oplus n_+\oplus n_-$</td>
+<td>slug qualifier</td>
+<td>plus, minus, mnr</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-truncated-rule-the-product-of-two-carriers-at-n-4</code></td>
+<td>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</td>
+<td>slug qualifier</td>
+<td>n, 4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-over-r</code></td>
+<td>The Two Halves and the Analysis: Smooth Structures and the Exponential</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-two-halves-and-their-topology-over-r</code></td>
+<td>The Two Halves and Their Topology</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-two-halves-symmetric-and-antisymmetric</code></td>
+<td>The Two Halves: Symmetric and Antisymmetric</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>utn-as-a-linear-model-of-sym-n-same-space-wrong-product-over-r</code></td>
+<td>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>utn-as-the-complement-of-the-antisymmetric-part-over-r</code></td>
+<td>$UT_n$ as the Complement of the Antisymmetric Part</td>
+<td>slug qualifier</td>
+<td>over, r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>where-the-half-integers-go-in-the-biquaternion-operators</code></td>
+<td>Where the Half-Integers Go</td>
+<td>slug qualifier</td>
+<td>biquaternion, operators</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source</code></td>
+<td>Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source</td>
+<td>slug qualifier</td>
+<td>flrw</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>moller-scattering-in-biquaternionic-form</code></td>
+<td>Møller Scattering in Biquaternionic Form</td>
+<td>slug qualifier</td>
+<td>moller</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>su2l-times-su2r-two-sides-six-generators-one-group</code></td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group</td>
+<td>slug qualifier</td>
+<td>times, su2r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-field-strength-as-the-sum-of-two-self-dual-halves</code></td>
+<td>The Field Strength as $(1,0)\oplus(0,1)$</td>
+<td>slug qualifier</td>
+<td>sum, self, dual, halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10</code></td>
+<td>The Sign ε and the Rigidity Constraint on Σ₁₀</td>
+<td>slug qualifier</td>
+<td>epsilon, sigma</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>algebraic-j-star-algebras</code></td>
+<td>Algebraic J*-Algebras</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>complex-split-biquaternions-and-the-clifford-algebra-cl3</code></td>
+<td>Complex Split Biquaternions and the Clifford Algebra Cl(3)</td>
+<td>rendering</td>
+<td>cl3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>crossed-products-of-c-star-algebras</code></td>
+<td>Crossed Products of C*-Algebras</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>g2-and-spin7-manifolds</code></td>
+<td>G2 and Spin(7) Manifolds</td>
+<td>rendering</td>
+<td>spin7</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>graph-c-star-algebras</code></td>
+<td>Graph C*-Algebras</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>groupoid-c-star-algebras</code></td>
+<td>Groupoid C*-Algebras</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>hilbert-and-c-star-modules</code></td>
+<td>Hilbert and C*-Modules</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>introduction-to-the-spin-three-halves-bispinor-spaces</code></td>
+<td>Introduction to the Spin-$\tfrac32$ Bispinor Spaces</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4</code></td>
+<td>Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>jb-star-algebras-and-the-gelfand-naimark-theorem</code></td>
+<td>JB*-Algebras and the Gelfand–Naimark Theorem</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>lagrange-idempotents-of-a-2x2-matrix-with-simple-spectrum</code></td>
+<td>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>normal-2x2-matrices-and-the-common-spectral-theorem</code></td>
+<td>Normal $2\times2$ Matrices and the Common Spectral Theorem</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>operators-on-a-c-star-algebra</code></td>
+<td>Operators on a C*-Algebra</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>simple-and-non-simple-rotations-one-angle-at-n-le-3-floor-n-2-planes-at-n-ge-4</code></td>
+<td>Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$</td>
+<td>rendering</td>
+<td>le, floor, ge</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4</code></td>
+<td>Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</td>
+<td>rendering</td>
+<td>le, ge</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-cone-of-positive-semidefinite-2x2-matrices</code></td>
+<td>The Cone of Positive Semidefinite $2\times2$ Matrices</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-dbar-problem-and-the-bochner-martinelli-integral-on-c2</code></td>
+<td>The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$</td>
+<td>rendering</td>
+<td>dbar</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-elementary-symmetric-functions-and-det-i-plus-ta</code></td>
+<td>The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$</td>
+<td>rendering</td>
+<td>det, plus</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-elementary-symmetric-functions-and-det-i-plus-ta-at-n-4</code></td>
+<td>The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$ at $n=4$</td>
+<td>rendering</td>
+<td>det, plus</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-exponential-of-a-2x2-matrix-and-its-image</code></td>
+<td>The Exponential of a $2\times2$ Matrix and Its Image</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-lie-algebra-skew-4-and-so-4</code></td>
+<td>The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</td>
+<td>rendering</td>
+<td>so</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-lie-algebra-skew-n-and-so-n</code></td>
+<td>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</td>
+<td>rendering</td>
+<td>so</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-minimal-polynomial-and-the-jordan-form-of-a-4x4-matrix</code></td>
+<td>The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix</td>
+<td>rendering</td>
+<td>4x4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra</code></td>
+<td>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</td>
+<td>rendering</td>
+<td>r</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-rotor-as-a-square-root-of-a-rotation-spin-n-to-so-n</code></td>
+<td>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</td>
+<td>rendering</td>
+<td>so</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spectrum-of-a-2x2-matrix</code></td>
+<td>The Spectrum of a $2\times2$ Matrix</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-group-via-4x4-real-matrices</code></td>
+<td>The Spin Group via $4\times4$ Real Matrices</td>
+<td>rendering</td>
+<td>4x4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinor-spaces</code></td>
+<td>Introduction to the Spin-Half Bispinors Spaces</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-half-bispinor-spaces-in-m2c</code></td>
+<td>Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-one-anti-hermitian-subspace</code></td>
+<td>Introduction to the Spin-One Anti-Hermitian Subspace</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-one-anti-hermitian-subspace-in-m2c</code></td>
+<td>Introduction to the Spin-One Anti-Hermitian Subspace in $M_2(\mathbb{C})$</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-minimal-left-ideals</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-rank-strata</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Rank Strata</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-spectral-strata</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-three-halves-bispinors-and-the-spectral-strata-at-n-4</code></td>
+<td>The Spin-$\tfrac32$ Bispinors and the Spectral Strata at $n=4$</td>
+<td>rendering</td>
+<td>halves</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-zero-centre-subspace</code></td>
+<td>Introduction to the Spin-Zero Centre Subspace</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-zero-centre-subspace-in-m2c</code></td>
+<td>Introduction to the Spin-Zero Centre Subspace in $M_2(\mathbb{C})$</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-su2-of-mnc-acting-on-n-squared-dimensions</code></td>
+<td>The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions</td>
+<td>rendering</td>
+<td>squared</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-topological-j-star-algebra</code></td>
+<td>The Topological J*-Algebra</td>
+<td>rendering</td>
+<td>star</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus</code></td>
+<td>The Triangular Decomposition $h\oplus n_+\oplus n_-$</td>
+<td>rendering</td>
+<td>plus, minus</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus-of-m2c</code></td>
+<td>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</td>
+<td>rendering</td>
+<td>plus, minus</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus-of-m4c</code></td>
+<td>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</td>
+<td>rendering</td>
+<td>plus, minus</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>triality-and-spin8-with-inner-conjugation</code></td>
+<td>Triality and Spin(8) with Inner Conjugation</td>
+<td>rendering</td>
+<td>spin8</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall</code></td>
+<td>Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</td>
+<td>rendering</td>
+<td>u2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code></td>
+<td>Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem</td>
+<td>rendering</td>
+<td>xi</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form</code></td>
+<td>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</td>
+<td>rendering</td>
+<td>su3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-2x2-matrix-model-what-it-computes-and-what-it-cannot-show</code></td>
+<td>The 2×2 Matrix Model: What It Computes and What It Cannot Show</td>
+<td>rendering</td>
+<td>2x2</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-bell-basis-as-the-idempotent-basis-of-b-tensor-b</code></td>
+<td>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</td>
+<td>rendering</td>
+<td>tensor</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-biquaternion-dalembertian-and-its-greens-functions</code></td>
+<td>The Biquaternion D'Alembertian and Its Green's Functions</td>
+<td>rendering</td>
+<td>dalembertian</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form</code></td>
+<td>The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</td>
+<td>rendering</td>
+<td>so4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-local-thermal-structure-kb-as-the-scale-of-imaginary-time</code></td>
+<td>The Local Thermal Structure: k_B as the Scale of Imaginary Time</td>
+<td>rendering</td>
+<td>kb</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate</code></td>
+<td>The SO(4) Route to the Euclidean Frame: An Alternative to the Imaginary Time Coordinate</td>
+<td>rendering</td>
+<td>so4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form</code></td>
+<td>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</td>
+<td>rendering</td>
+<td>su3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-spin-half-bispinor-spaces</code></td>
+<td>Introduction to the Spin-Half Bispinors Spaces</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-spin-one-anti-hermitian-subspace</code></td>
+<td>Introduction to the Spin-One Anti-Hermitian Subspace</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-spin-zero-centre-subspace</code></td>
+<td>Introduction to the Spin-Zero Centre Subspace</td>
+<td>rendering</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-complex-structures-of-the-biquaternion-algebra</code></td>
+<td>Classification of the Complex Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra</code></td>
+<td>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c</code></td>
+<td>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-real-structures-of-the-biquaternion-algebra</code></td>
+<td>Classification of the Real Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra</code></td>
+<td>Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c</code></td>
+<td>Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>reflections-as-signed-two-sided-operators-on-a-clifford-algebra</code></td>
+<td>Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra</td>
+<td>title extends</td>
+<td>—</td>
+<td>family</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-complex-structures-of-the-operators-of-mnc</code></td>
+<td>The Complex Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, algebras, lie, groups</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-enveloping-operator-algebra-of-mnc</code></td>
+<td>The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</td>
+<td>title extends</td>
+<td>—</td>
+<td>bi, module, structure</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-fierz-kofink-identities-at-n-4</code></td>
+<td>The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</td>
+<td>title extends</td>
+<td>—</td>
+<td>classification, spinors</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-gradient-as-the-riesz-representative</code></td>
+<td>The Gradient as the Riesz Representative of the Differential</td>
+<td>title extends</td>
+<td>—</td>
+<td>differential</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-minimal-left-ideals-of-m4c</code></td>
+<td>The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</td>
+<td>title extends</td>
+<td>—</td>
+<td>module</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-peirce-basis-of-the-biquaternion-algebra</code></td>
+<td>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</td>
+<td>title extends</td>
+<td>—</td>
+<td>decomposition</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-real-structures-of-the-operators-of-mnc</code></td>
+<td>The Real Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</td>
+<td>title extends</td>
+<td>—</td>
+<td>including, lie, algebras, lie, groups</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-electroweak-gauge-group-and-the-hypercharge-assignment</code></td>
+<td>The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$</td>
+<td>title extends</td>
+<td>—</td>
+<td>colours, left, right, model, derived</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>biquaternion-fourier-inversion-on-the-degenerate-set</code></td>
+<td>Biquaternion Fourier Inversion on the Degenerate Set: Peirce Coordinates and the Exponential</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>peirce, coordinates, exponential</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4</code></td>
+<td>From the Spin Group to the Spin of a Single Rotor at $n=4$: the Sign after $2\pi$ and the Return after $4\pi$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>sign, after, return, after</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>neither-half-is-invariant-the-cartan-element</code></td>
+<td>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>carries, into</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves</code></td>
+<td>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</td>
+<td>subtitle dropped</td>
+<td>halves</td>
+<td>each, meets</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-length-of-an-endomorphism-of-the-biquaternion-algebra</code></td>
+<td>The Length of an Endomorphism of the Biquaternion Algebra: Four Two-Sided Products</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>sided, products</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-length-of-an-endomorphism-of-the-biquaternion-algebra-in-m2c</code></td>
+<td>The Length of an Endomorphism of the Biquaternion Algebra: Four Two-Sided Products in $M_2(\mathbb{C})$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>sided, products</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-quaternionic-structure-of-the-module-and-the-real-forms</code></td>
+<td>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>admits</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-slot-and-the-summand</code></td>
+<td>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>operators</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spectral-theorem-the-anti-hermitian-case-at-n-4</code></td>
+<td>The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum at $n=4$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>reality, spectrum</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-content-of-m4c</code></td>
+<td>The Spin Content of $M_4(\mathbb{C})$: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>module, algebra</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-decomposition-of-m4c</code></td>
+<td>The Spin Decomposition of $M_4(\mathbb{C})$: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>carriers, weight, multiset</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-decomposition-of-mnc</code></td>
+<td>The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>carriers, each</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-one-carrier-of-m4c</code></td>
+<td>The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>adjoint, triplet</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-one-carrier-of-mnc</code></td>
+<td>The Spin-One Carrier of $M_n(\mathbb{C})$: the Three-Dimensional $V_1$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>dimensional</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-zero-carrier-of-m4c</code></td>
+<td>The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>scalars</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-spin-zero-carrier-of-mnc</code></td>
+<td>The Spin-Zero Carrier of $M_n(\mathbb{C})$: the Scalars</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>scalars</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>the-two-sided-derivative-over-the-biquaternion-algebra</code></td>
+<td>The Two-Sided Derivative over the Biquaternion Algebra: Rank-One Gradients, the Complex Eikonal and the Linear Sector</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>rank, gradients, complex, eikonal, linear, sector</td>
+</tr>
+<tr>
+<td>maths</td>
+<td><code>why-the-conjugation-labels-are-integer</code></td>
+<td>Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>kernel</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>an-introduction-to-flavour</code></td>
+<td>An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>mass, lifetime, decay, pattern, handles</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>bures-isometries-of-the-bloch-ball</code></td>
+<td>Bures Isometries of the Bloch Ball: Rotations, the Slice and the Conformal Boundary</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>rotations, slice, conformal, boundary</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>charge-quantisation-from-the-fourth-colour-one-trace-one-third</code></td>
+<td>Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>twenty, generators, go</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>composite-systems-and-the-multi-qubit-extension</code></td>
+<td>Composite Systems and the Multi-Qubit Extension: The Module Route and the Algebra Route</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>module, route, algebra, route</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>covariant-qubit-channels</code></td>
+<td>Covariant Qubit Channels: The Mixture Family, Unitality and Choi Rank</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>mixture, family, unitality, choi, rank</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>curies-law-for-the-bloch-radius</code></td>
+<td>Curie's Law for the Bloch Radius: Expansion, Error and Saturation</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>expansion, error, saturation</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>impurity-in-a-boosted-frame</code></td>
+<td>Impurity in a Boosted Frame: The Invariant and the Read Value</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>invariant, read, value</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>inverse-temperature-as-a-rapidity</code></td>
+<td>Inverse Temperature as a Rapidity: Translation, Addition and the Common Bound</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>translation, addition, common, bound</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton</code></td>
+<td>Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>generation, matrix, decides, channels</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>relativistic-mechanics-from-the-dirac-wave</code></td>
+<td>Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>non, quantum, limit, biquaternionic, form</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-breaking-chain-and-the-boson-spectrum</code></td>
+<td>The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>flag, scales, twenty</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-charged-schrodinger-fluid</code></td>
+<td>The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>vorticity, magnetic, field</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-charged-spin-one-fluid</code></td>
+<td>The Charged Spin-One Fluid: Three Currents and a Compressibility</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>currents, compressibility</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-charged-spin-zero-fluid</code></td>
+<td>The Charged Spin-Zero Fluid: Vorticity Is the Field Strength</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>vorticity, field, strength</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-differentiable-field-one-primary-equation-and-the-linear-sector</code></td>
+<td>The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>biquaternion, universe</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-four-colours-left-right-model</code></td>
+<td>The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>generators, declaration</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-charged-schrodinger-fluid</code></td>
+<td>The Fourier Transform and the Charged Schrödinger Fluid: The Vorticity Is the Curvature</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>vorticity, curvature</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-charged-spin-half-fluid</code></td>
+<td>The Fourier Transform and the Charged Spin-Half Fluid: A Phase Cannot Rotate a Rotor</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>phase, cannot, rotate, rotor</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-charged-spin-one-fluid</code></td>
+<td>The Fourier Transform and the Charged Spin-One Fluid: The Constraint Is the Amplitude</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>constraint, amplitude</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-charged-spin-zero-fluid</code></td>
+<td>The Fourier Transform and the Charged Spin-Zero Fluid: The Support Is the Translated Shell</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>support, translated, shell</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-schrodinger-fluid</code></td>
+<td>The Fourier Transform and the Schrödinger Fluid: The Quantum Potential Is Interference</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>quantum, potential, interference</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-spin-one-fluid</code></td>
+<td>The Fourier Transform and the Spin-One Fluid: The Frame Carries No Momentum</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>frame, carries, momentum</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-fourier-transform-and-the-spin-zero-fluid</code></td>
+<td>The Fourier Transform and the Spin-Zero Fluid: The Mode Is a Unit Velocity</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>mode, unit, velocity</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-harmonic-analysis-a-change-of-description</code></td>
+<td>The Harmonic Analysis: The Transform as a Change of Description</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>transform</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-lagrangian-and-the-second-quantisation</code></td>
+<td>The Lagrangian and the Second Quantisation: From the Action to the Commutator</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>action, commutator</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-lorentz-group-on-the-bloch-ball</code></td>
+<td>The Lorentz Group on the Bloch Ball: Projective Action and Two Metrics</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>projective, action, metrics</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-mass-shell-and-the-scalar-part</code></td>
+<td>The Mass Shell and the Scalar Part: What a Congruence Preserves</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>congruence, preserves</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-one-coupling-that-returns-the-standard-model</code></td>
+<td>The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>equation, scale, content, statement</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-photon-as-the-unbroken-mixture</code></td>
+<td>The Photon as the Unbroken Mixture: One Null Direction, Three Parents</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>null, direction, parents</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-region-of-mass-in-motion</code></td>
+<td>Mass in Motion: The Region of Both Invariants</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>invariants</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-scalar-sector-and-the-leptoquark-bounds</code></td>
+<td>The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>twenty, real, components, six, unseen, states, scales</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>the-wigner-angle-of-two-boosts</code></td>
+<td>The Wigner Angle of Two Boosts: Closed Form, Axis and Composition</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>closed, form, axis, composition</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wave-particle-duality-and-charge-conservation</code></td>
+<td>Wave–Particle Duality and Charge Conservation: The Cokernel of Maxwell's Symbol</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>cokernel, maxwell, symbol</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wave-particle-duality-and-the-count-of-degrees-of-freedom</code></td>
+<td>Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>symbol, rank, cone</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wave-particle-duality-and-the-galilean-limit</code></td>
+<td>Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>schrodinger, symbol, affine</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wave-particle-duality-and-the-three-positions-of-one-zero</code></td>
+<td>Wave–Particle Duality and the Three Positions of One Zero: Bound States, Resonances and Decay</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>bound, states, resonances, decay</td>
+</tr>
+<tr>
+<td>physics</td>
+<td><code>wave-particle-duality-and-the-weight-of-a-level-set</code></td>
+<td>Wave–Particle Duality and the Weight of a Level Set: Coarea, Exponential Type and the Projection That Cannot Be Local</td>
+<td>subtitle dropped</td>
+<td>—</td>
+<td>coarea, exponential, type, projection, that, cannot, be, local</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-repair">The Repair</h2>
+<p><em>Applied 2026-11-23 on the working tree, then rebuilt with <code>build.py</code>: 3 316 URLs, 49 legacy aliases.</em> The measurement of §1–§7 above is the state before this section.</p>
+<h3 id="the-broken-title">The broken title</h3>
+<p><code>reflections-as-signed-two-sided-operators-on-a-clifford-algebra</code> — <em>The Family of</em> deleted, in the file and in the menu. The nineteen siblings now read alike. (<code>the-family-of-two-sided-operators-on-a-clifford-algebra</code> is a different article and keeps its name.)</p>
+<h3 id="twenty-six-collisions">Twenty-six collisions</h3>
+<p>Each special-case article now carries its qualifier in the title, in the same words as its file name. The general partner keeps its title, so every pair now reads as a pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>qualifier, appended to the title</th>
+<th>files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>… over $\mathbb{R}$</em></td>
+<td><code>the-one-sided-operators-over-r</code>, <code>the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r</code>, <code>the-adjoints-and-the-polar-decomposition-of-an-operator-over-r</code>, <code>the-antisymmetric-part-inside-utn-the-radical-as-the-commutator-over-r</code>, <code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form-over-r</code>, <code>the-fine-decomposition-against-the-diagonal-over-r</code>, <code>the-four-multiplication-tables-ss-sk-ks-kk-over-r</code>, <code>the-length-and-the-two-ranks-over-r</code>, <code>the-lie-algebra-skew-n-and-so-n-over-r</code>, <code>the-positive-cone-and-its-boundary-over-r</code>, <code>the-two-halves-and-their-topology-over-r</code>, <code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-over-r</code>, <code>utn-as-a-linear-model-of-sym-n-same-space-wrong-product-over-r</code></td>
+</tr>
+<tr>
+<td><em>… at $n=4$</em>, after the main clause and before the colon</td>
+<td><code>neither-half-is-invariant-the-cartan-element-at-n-4</code>, <code>the-closures-of-a-weight-vector-at-n-4</code>, <code>the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4</code>, <code>the-parity-rule-the-two-squares-of-the-module-at-n-4</code>, <code>the-quaternionic-structure-of-the-module-at-n-4</code>, <code>the-truncated-rule-the-product-of-two-carriers-at-n-4</code>, <code>why-the-conjugation-labels-are-integer-at-n-4</code>, <code>the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4</code></td>
+</tr>
+<tr>
+<td><em>… in $M_2(\mathbb{C})$</em></td>
+<td><code>the-spin-group-via-4x4-real-matrices-in-m2c</code></td>
+</tr>
+<tr>
+<td><em>… of $M_n(\mathbb{R})$</em></td>
+<td><code>the-triangular-decomposition-h-n-plus-n-minus-of-mnr</code></td>
+</tr>
+<tr>
+<td>the object, named</td>
+<td><code>the-one-sided-operators-of-the-biquaternion-algebra</code>, <code>the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space</code></td>
+</tr>
+<tr>
+<td>a distinguishing clause</td>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure</code> → <em>The Carriers, the Representation, the Spin and the Closure</em>; <code>the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators</code> → <em>… the Classification of the Spinors of the Operators</em>; <code>the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra</code> → <em>… of $\operatorname{Sym}_n(\mathbb{R})$ as a Jordan Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="seven-titles-that-named-less-than-their-file">Seven titles that named less than their file</h3>
+<p>Five in the list below, plus the two collision partners that §<em>Twenty-six collisions</em> retitled with their qualifier.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>title now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>where-the-half-integers-go-in-the-biquaternion-operators</code></td>
+<td>Where the Half-Integers Go in the Biquaternion Operators</td>
+</tr>
+<tr>
+<td><code>the-spin-zero-carrier-of-the-biquaternion-operators</code></td>
+<td>The Spin-Zero Carrier of the Biquaternion Operators: the Scalars</td>
+</tr>
+<tr>
+<td><code>the-spin-content-of-the-biquaternion-operators</code></td>
+<td>The Spin Content of the Biquaternion Operators: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</td>
+</tr>
+<tr>
+<td><code>the-spin-three-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Three Carrier of $M_4(\mathbb{C})$: the Top of the Chain</td>
+</tr>
+<tr>
+<td><code>the-spin-two-carrier-of-m4c</code></td>
+<td>Introduction to the Spin-Two Carrier of $M_4(\mathbb{C})$: the Alternating Square</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="three-titles-that-asserted-the-wrong-object">Three titles that asserted the wrong object</h3>
+<p>The file name won in each case, and the body agreed with it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>before</th>
+<th>now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-gluon-an-octet-outside-the-biquaternion-algebra</code></td>
+<td>The Gluon: An Octet Inside the Carrier's Group</td>
+<td>The Gluon: An Octet Outside the Biquaternion Algebra — the body says the framework cannot host the octet</td>
+</tr>
+<tr>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts</code></td>
+<td>… the Topology of the Group</td>
+<td>… the Topology of Boosts — the section is <em>The Topology of the Boost Manifold</em></td>
+</tr>
+<tr>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>… the Running of the Strong Force</td>
+<td>… the Running of the Strong Coupling — the body says <em>coupling</em> 26 times and <em>strong force</em> twice</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-result">The result</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th style="text-align: right;">first run, before the repair</th>
+<th style="text-align: right;">after the titles, before the renames</th>
+<th style="text-align: right;">today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>titles used twice in one collection</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr>
+<td>files sharing a title</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr>
+<td>rows the measure reports, all tolerated</td>
+<td style="text-align: right;">206</td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;"><strong>168</strong></td>
+</tr>
+<tr>
+<td>files renamed to follow their title</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>22</strong></td>
+</tr>
+<tr>
+<td>menu lines that differ from their page</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"><strong>2</strong></td>
+</tr>
+<tr>
+<td>URLs in the last sitemap</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">3 316</td>
+</tr>
+<tr>
+<td>legacy aliases</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">49</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 206 and the 168 are not a subtraction, and the document does not pretend they are. The 206 is the first run, made on the tree before any title was touched, with the script as it then stood; it was not re-run afterwards and it cannot be reproduced now, because the titles of §The Repair and 30 file names have since changed. The 189 and the 168 are reproducible today: 168 by running the script of §<em>How to Re-measure</em> as printed, 189 by running the same script after swapping the 30 names of §<em>The thirty renames</em> back to their old form. The repair's effect on the count is therefore <strong>189 → 168</strong>, and the audit's effect, titles and names together, is <strong>206 → 168</strong>.</p>
+<p>Thirty renames are listed in §<em>The thirty renames</em>. Every one kept its old address.</p>
+<h3 id="the-rule-the-file-name-follows-the-title">The rule: the file name follows the title</h3>
+<p>This is the rule that settles every disagreement below, and the one to reuse in the next audit of this corpus.</p>
+<p><strong>When a title and a file name disagree, the title is the authority. The file is renamed.</strong></p>
+<p>The title is what a reader sees and what the menu repeats. The file name is an address derived from it. A stale name is a stale address, and an address is cheap to change: the old one is kept alive by <code>LEGACY_COPIES</code>. A stale title, by contrast, is visible on every page and in every menu.</p>
+<p>So the sequence is: fix the title first, then make the name follow it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>situation</th>
+<th>does the file get renamed?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the title was wrong and the file name was right</td>
+<td>no — the name already matches</td>
+</tr>
+<tr>
+<td>the title was fixed, and the name no longer matches it</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>two files of one collection carry one title</td>
+<td>one is retitled, then <strong>renamed</strong> if its old name described the old title</td>
+</tr>
+<tr>
+<td>the name says something the title does not say</td>
+<td><strong>yes</strong>, unless the extra words are a formula in letters or a plural</td>
+</tr>
+<tr>
+<td>the title carries a subtitle the name omits</td>
+<td>no — the corpus drops the subtitle from the name; this is its habit, 72 rows</td>
+</tr>
+<tr>
+<td>the name spells a formula in letters ($C^*$ → <code>c-star</code>, $SO(4)$ → <code>so4</code>)</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two are the only tolerated departures. They are not disagreements of meaning, only of spelling. Everything else is a defect and gets a rename.</p>
+<h3 id="the-procedure">The procedure</h3>
+<p>Five steps, in this order. The order matters: references are rewritten before the move, so a half-finished run leaves no broken link.</p>
+<ol>
+<li><strong>Rename the source.</strong> <code>mv articles_maths/&lt;old&gt;.md articles_maths/&lt;new&gt;.md</code>. Never rename the built <code>.html</code>; the build owns it. Do not commit: the author keeps the version control.</li>
+<li><strong>Rewrite every reference</strong>, before or after the move, over <code>articles_*/*.md</code> plus <code>maths.md</code> and <code>physics.md</code>. The menu holds hrefs, and the internal articles hold cross-links.</li>
+<li><strong>Keep the old address alive.</strong> Append one pair to <code>LEGACY_COPIES</code> in <code>build.py</code>, <strong>live page first, retired address second</strong>:</li>
+</ol>
+<p><code>python
+   ("articles_maths/&lt;new&gt;.html",   # the page the build produces
+    "articles_maths/&lt;old&gt;.html"),  # the address that must keep working</code></p>
+<p>The build reads the first, copies its bytes to the second, and skips the pair silently when the first does not exist. <strong>The order is the trap.</strong> Written the other way round, the build finds no live page at the retired address and skips the pair without a word: the rename looks done, the old links break, and nothing in the log says so. Verify after the build with <code>grep "^Alias written" build.log</code>, one line per new pair.
+4. <strong>Rebuild.</strong> <code>.venv/bin/python build.py</code>. It prints <code>Removed orphan</code> for a page whose source is gone, which is the signal that a deletion took effect.
+5. <strong>Verify, and compare with the count before the run.</strong> Three checks, and the third is the one that catches a mistake:
+   - the new page exists in the deploy tree;
+   - the old address exists and returns the same bytes as the new page;
+   - the count of broken internal links did not rise.</p>
+<p>The third check is what proves the rename was complete. A rename without the reference sweep leaves exactly as many new broken links as there were references to the old name.</p>
+<h3 id="the-invariant-to-test">The invariant to test</h3>
+<p>A strict recomputation — the slug rebuilt from the title, character for character — differs on 668 of the 3 311 rows. That number is not a defect count and must never be used as one: a title is prose, a slug is an address, and the two cannot agree letter for letter. <code>the-two-sheeted-cover-and-the-topology-of-boosts</code> differs from <em>The Two-Sheeted Cover and the Topology of Boosts</em> on purpose, and the corpus writes the words <em>in biquaternionic form</em> into the names of a whole physics series.</p>
+<p>The invariant that matters is one-way. It is the only thing a rename is owed on:</p>
+<blockquote>
+<p><strong>the file name may say less than the title. It must never say more.</strong></p>
+<p>Short of a subtitle, a plural, a paraphrase, or a formula written in letters, every word of the name must appear in the title.</p>
+</blockquote>
+<p>Run this after any title edit. It flags every name that claims something its title does not.</p>
+<pre><code class="language-python">import os, re, glob, unicodedata
+
+STOP = set('the a an of and in on at from to for its is are what would via as with by or not'.split())
+
+def h1(p):
+    for line in open(p, encoding='utf-8'):
+        if line.startswith('# '):
+            t = line[2:].strip()
+            return t[2:-2] if t.startswith('__') and t.endswith('__') else t
+
+def fold(s):
+    s = unicodedata.normalize('NFKD', s.replace('\u2019', &quot;'&quot;))
+    return ''.join(c for c in s if not unicodedata.combining(c))
+
+def words(s):
+    return re.findall(r'[a-z0-9]+', fold(s).lower())
+
+def letters(title):
+    f = ' '.join(re.findall(r'\$([^$]*)\$', title))
+    f = re.sub(r'\\(?:mathbb|mathcal|mathfrak|operatorname|mathrm|text|tfrac)\\s*\\{([^{}]*)\\}', r'\1', f)
+    f = re.sub(r'\\[A-Za-z]+', ' ', f)
+    return re.sub(r'[^A-Za-z0-9]', '', f).lower()
+
+def same(a, b):
+    return a == b or (len(b) &gt;= 3 and a == b + 's') or (len(a) &gt;= 3 and b == a + 's')
+
+for p in sorted(glob.glob('articles_maths/*.md') + glob.glob('articles_physics/*.md')):
+    stem, title = os.path.basename(p)[:-3], h1(p)
+    said = [w for w in words(re.sub(r'\$[^$]*\$', ' ', title)) if w not in STOP]
+    blob = letters(title)
+    extra = [w for w in words(stem.replace('-', ' ')) if w not in STOP
+             and not any(same(w, x) for x in said) and w not in blob]
+    if extra:
+        print(stem, '-&gt;', extra)
+</code></pre>
+<p><strong>What it prints today: 69 rows.</strong> Every one is a formula written in words or letters — <code>three halves</code> for $\tfrac32$, <code>star</code> for $C^*$, <code>so4</code> for $SO(4)$, <code>plus</code>/<code>minus</code> for $\oplus$, <code>dbar</code> for $\bar\partial$, <code>commutator</code> for $X\mapsto[A,X]$. It credits a name word that sits anywhere inside the concatenated letters of the title, so a short word is occasionally credited by accident — <code>so</code> inside <code>skewnson</code> — and it under-reports by a handful. The measure of §<em>How to Re-measure</em> is the authoritative count; this one is the cheap check to run after an edit.</p>
+<p><strong>How to read the output.</strong> A row where the extra word is a letter, a sign or a number from a formula: leave it. A row where the extra word is a plural or a synonym of a word the title has: leave it. Any other row is a name that promises something the article's title no longer delivers — rename the file of that row, by §<em>The procedure</em>.</p>
+<h3 id="the-thirty-renames">The thirty renames</h3>
+<p>Thirty files now follow their titles. Ten had a stale name before any title changed; nine had a title that moved away from the name during the first pass; three were found by the second pass; eight were found by the closing accordance pass, which checked every name against its title word for word rather than through title collisions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>old file</th>
+<th>new file</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-trace-form-and-its-indefinite-signature</code></td>
+<td><code>the-trace-form-and-its-indefinite-inertia</code></td>
+<td>body: inertia 8, signature 0</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves</code></td>
+<td><code>the-trace-form-and-its-inertia-on-the-two-halves</code></td>
+<td>body: inertia 22, signature 0</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m2r</code></td>
+<td><code>…-inertia-on-the-two-halves-of-m2r</code></td>
+<td>body: inertia 7, signature 0</td>
+</tr>
+<tr>
+<td><code>the-trace-form-and-its-signature-on-the-two-halves-of-m4c</code></td>
+<td><code>…-inertia-on-the-two-halves-of-m4c</code></td>
+<td>body: inertia 17, signature 1</td>
+</tr>
+<tr>
+<td><code>the-killing-form-of-sl-2-and-its-three-signatures</code></td>
+<td><code>…-three-inertias</code></td>
+<td>body: inertia 16, signature 1</td>
+</tr>
+<tr>
+<td><code>m2c-h-standard-representation</code></td>
+<td><code>m2c-h-pauli-representation</code></td>
+<td>body: Pauli 9, standard 0</td>
+</tr>
+<tr>
+<td><code>m2c-h-standard-representation-operators</code></td>
+<td><code>m2c-h-pauli-representation-operators</code></td>
+<td>body: Pauli 3, standard 0</td>
+</tr>
+<tr>
+<td><code>quantum-chromodynamics-in-the-biquaternion-framework-…</code></td>
+<td><code>quantum-chromodynamics-as-the-residual-of-su4</code></td>
+<td>the article had left the framework framing</td>
+</tr>
+<tr>
+<td><code>the-standard-model-in-the-biquaternion-framework-…</code></td>
+<td><code>the-standard-model-as-the-low-energy-phase</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>anomalies-and-anomaly-cancellation-in-biquaternionic-form</code></td>
+<td><code>…-in-the-four-colours-left-right-model</code></td>
+<td>the menu files it under the Four Colours model</td>
+</tr>
+<tr>
+<td><code>the-spin-three-carrier-of-m4c</code></td>
+<td><code>introduction-to-the-spin-three-carrier-of-m4c</code></td>
+<td>the title opens with <em>Introduction to</em></td>
+</tr>
+<tr>
+<td><code>the-spin-two-carrier-of-m4c</code></td>
+<td><code>introduction-to-the-spin-two-carrier-of-m4c</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>wigers-classification-two-casimirs-three-orbits</code></td>
+<td><code>wigners-classification-two-casimirs-three-orbits</code></td>
+<td><em>Wigner's</em>, not <em>wigers</em></td>
+</tr>
+<tr>
+<td><code>beyond-one-qubit-what-b-tensor-b-would-require</code></td>
+<td><code>the-multi-qubit-boundary-what-b-tensor-b-would-require</code></td>
+<td>the title says <em>multi-qubit boundary</em></td>
+</tr>
+<tr>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling</code></td>
+<td><code>the-weinberg-angle-and-the-three-neutral-states</code></td>
+<td>the title counts three states, not a current and a coupling</td>
+</tr>
+<tr>
+<td><code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code></td>
+<td><code>custodial-symmetry-and-the-rho-parameter</code></td>
+<td>the title's clause is <em>from accidental to gauged</em></td>
+</tr>
+<tr>
+<td><code>the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector</code></td>
+<td><code>…-from-the-bivector-plane</code></td>
+<td>the title names the bivector plane</td>
+</tr>
+<tr>
+<td><code>m4r-h-l-regular-representation</code></td>
+<td><code>m4r-h-l-axis-free-representation</code></td>
+<td>the title says <em>axis-free</em></td>
+</tr>
+<tr>
+<td><code>m4r-h-l-regular-representation-operators</code></td>
+<td><code>m4r-h-l-axis-free-representation-operators</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-carriers-the-representation-the-spin-and-the-closure-in-m2c</code></td>
+<td><code>from-the-spin-to-the-carriers-and-the-closures-in-m2c</code></td>
+<td>the title opens with <em>From the Spin</em> and says <em>Closures</em>; the name said <em>representation</em></td>
+</tr>
+<tr>
+<td><code>utn-as-the-complement-of-the-antisymmetric-part-over-r</code></td>
+<td><code>utn-as-the-complement-of-the-antisymmetric-part</code></td>
+<td>the title carries no <em>over $\mathbb{R}$</em></td>
+</tr>
+<tr>
+<td><code>cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source</code></td>
+<td><code>cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source</code></td>
+<td>the title says <em>the Carried Metric</em>, not <em>FLRW</em></td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-n-norm-regularity</code></td>
+<td><code>the-spin-half-bispinors-and-n-norm-regularity</code></td>
+<td>the title says <em>Bispinors</em>, not <em>bispinor spaces</em></td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c</code></td>
+<td><code>the-spin-half-bispinors-and-n-norm-regularity-in-m2c</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-spectral-regularity</code></td>
+<td><code>the-spin-half-bispinors-and-spectral-regularity</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c</code></td>
+<td><code>the-spin-half-bispinors-and-spectral-regularity-in-m2c</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity</code></td>
+<td><code>the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c</code></td>
+<td><code>the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>the-two-halves-symmetric-and-antisymmetric-over-r</code></td>
+<td><code>the-two-halves-symmetric-and-antisymmetric</code></td>
+<td>the title carries no <em>over $\mathbb{R}$</em></td>
+</tr>
+<tr>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form</code></td>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts</code></td>
+<td>the title has no <em>in biquaternionic form</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Every old address is still served. <code>LEGACY_COPIES</code> holds 49 pairs, all verified as byte copies of their live page after the last build.</p>
+<h3 id="what-the-rule-did-not-touch-and-why">What the rule did not touch, and why</h3>
+<p>Four rows remain where the two names use different words. Each was read, and each is a paraphrase rather than a disagreement:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>title</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from-the-spin-group-to-the-spin-of-a-single-rotor-of-the-operators</code></td>
+<td>From the Spin Group to the Spin of a Single Rotor: the Sign after $2\pi$ and the Return after $4\pi$</td>
+<td>the name's <em>of the operators</em> is the article's setting, not a competing claim. Left alone: the name without the qualifier is already taken by the general article, and by an alias</td>
+</tr>
+<tr>
+<td><code>the-exponential-of-sym-4-stretches-and-the-positive-cone</code></td>
+<td>The Exponential of the Symmetric Part: Stretches and the Positive Cone at $n=4$</td>
+<td>$\operatorname{Sym}_4$ is $\operatorname{Sym}_n$ at $n=4$; the names agree</td>
+</tr>
+<tr>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves</code></td>
+<td>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</td>
+<td>the subtitle and the name say the same thing in different words</td>
+</tr>
+<tr>
+<td><code>the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4</code></td>
+<td>The Intersection Table at $n=4$: …</td>
+<td>same</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a-duplicate-the-rename-pass-exposed">A duplicate the rename pass exposed</h3>
+<p><code>the-two-halves-symmetric-and-antisymmetric</code> and <code>the-two-halves-over-r-symmetric-and-antisymmetric</code> are the same subject under two names that are each other's word order: 1 937 and 1 853 words, both about the transpose splitting $M_n(\mathbb{R})$ into a symmetric half and an antisymmetric half, both listed in <code>maths.md</code>, both with sections on the split, the two products and the closure. Their titles differ, so the duplicate-title measure cannot see them.</p>
+<p>The first of the two carried a name with <em>over $\mathbb{R}$</em> and a title without it: <code>the-two-halves-symmetric-and-antisymmetric-over-r</code>. That was the only reason the audit found the pair at all, and the name is now corrected to <code>the-two-halves-symmetric-and-antisymmetric</code>, so the two names differ only in word order. The duplication is untouched and needs one deletion. That is the author's call; until it is made, both articles stand and both are in <code>maths.md</code>.</p>
+<h3 id="the-168-tolerated-differences-by-kind">The 168 tolerated differences, by kind</h3>
+<p>Three kinds, and nothing else. Each is a way of writing the same name, not a different name.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>kind</th>
+<th style="text-align: right;">rows</th>
+<th>what the name does</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 — the name says less</strong></td>
+<td style="text-align: right;">95</td>
+<td>it stops at the subtitle's colon (72 rows) or drops a closing clause (23 rows)</td>
+<td><em>Biquaternion Fourier Inversion on the Degenerate Set: Peirce Coordinates and the Exponential</em> → <code>biquaternion-fourier-inversion-on-the-degenerate-set</code></td>
+</tr>
+<tr>
+<td><strong>2 — the name spells a formula in letters</strong></td>
+<td style="text-align: right;">43</td>
+<td>a symbol of the title becomes its letters, digits or transliteration</td>
+<td>$2\times2$ → <code>2x2</code>, $C^*$ → <code>c-star</code>, $SO(4)$ → <code>so4</code>, $\operatorname{Sym}_4$ → <code>sym-4</code>, $R_\xi$ → <code>r-xi</code>, Møller → <code>moller</code></td>
+</tr>
+<tr>
+<td><strong>3 — the name spells a formula in words</strong></td>
+<td style="text-align: right;">30</td>
+<td>an operator or a value becomes the words a reader says</td>
+<td>$\oplus$ → <code>plus</code>, $\otimes$ → <code>tensor</code>, $\times$ → <code>times</code>, $\tfrac32$ → <code>three-halves</code>, $X\mapsto[A,X]$ → <code>commutator</code>, $(1,0)\oplus(0,1)$ → <code>sum-of-two-self-dual-halves</code>, $\operatorname{Sym}$ and $\Lambda$ → <code>two-halves</code></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;"><strong>168</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The 30 renames took the count from 189 to 168. The drop from the first run of 206 to 189 is the title repair.</p>
+<p><strong>No row contradicts.</strong> Each of the three keeps every word the title has that the name also uses, and adds nothing the title denies. The name may say less than the title — kind 1 does exactly that — and it may spell the same thing differently — kinds 2 and 3 do that. What it may not do is claim something the title does not say, and no row in the corpus does that any more.</p>
+<p>There is no fourth kind and there is no residual. A reader who compares one of these 168 names with its title sees the same article under two spellings, never two articles.</p>
+<h3 id="what-the-repair-left-alone">What the repair left alone</h3>
+<ul>
+<li><strong>The orphan article — deleted.</strong> <code>articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover</code> had no menu entry and nothing linked to it. The source and its page are gone; the build reports <code>Removed orphan</code>.</li>
+<li><strong>A stale page outside the source tree — deleted.</strong> <code>ai-research-unit-deploy/ai-physics-overview.html</code>, dated 19 November, was a copy with no source behind it. The live page is <code>articles_internal/ai-physics-overview.html</code>.</li>
+<li><strong>Seven menu entries listed twice.</strong> The same article appears twice in a menu, at two places in the taxonomy. The six mathematical ones sit in two generality sections: <code>the-symmetric-and-antisymmetric-parts-of-a-product</code>, <code>the-exponential-of-the-antisymmetric-part-one-parameter-rotations</code>, <code>rotors-acting-on-the-bivector-space-the-adjoint-action</code>, <code>the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone</code> are under both $M_n(\mathbb{R})$ and $M_n(\mathbb{C})$; <code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form</code> and <code>the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover</code> are under both $M_n(\mathbb{C})$ and $M_2(\mathbb{C})$. The physical one, <code>the-axf-matrices-axis-free-integer-entries</code>, is under both <em>Structural &amp; Algebraic Results</em> and <em>The Biquaternion Universe and Its Objects</em>. This is a taxonomy question, not a title one.</li>
+<li><strong>Internal links — 138 repaired, 54 left.</strong> The 138 pointed at a page whose stem exists exactly once in the corpus; only the relative path was wrong, mostly <code>../articles_maths/</code> from a page two folders deep, and the <code>structure-</code> prefix dropped from links into <code>articles_internal/structure/</code>. Each was rewritten to the resolved path. The 54 that remain are 54 occurrences of 32 targets, spread over 33 files, and the count did not move when the 30 files were renamed — no link was broken by a rename. The largest groups: <code>conceptual-conventions</code> (7); <code>m1c-structures</code>, <code>m2c-structures</code>, <code>m3c-structures</code>, <code>m4c-structures</code> (16, four each); the spin-half bispinor series under its old spelling (4); and links naming a carrier of the biquaternion algebra or of a classical field (7). The other 20 name single pages that exist in no folder — <code>matrix-representations-conventions</code>, <code>algebra-and-element-conventions</code>, <code>trace-migration</code>, <code>the-fierz-kofink-identities</code> among them. Resolving them needs the author's word, not a guess.</li>
+<li><strong>The two typography mismatches</strong> between a menu line and its page: <code>$M_{n^{2}}$</code> against <code>$M_{n^2}$</code>, and <code>$\mathrm{SU}(2)$</code> against <code>$SU(2)$</code>.</li>
+<li><strong>Options E and G</strong> of the next section. F is refused.</li>
+</ul>
+<h2 id="how-to-re-measure">How to Re-measure</h2>
+<pre><code class="language-python">import re, glob, os, unicodedata
+
+STOP = set('the a an of and in on at from to for its is are what would via as with by or not'.split())
+
+def h1(p):
+    for line in open(p, encoding='utf-8'):
+        if line.startswith('# '):
+            t = line[2:].strip()
+            m = re.fullmatch(r'__(.*)__', t)
+            return m.group(1).strip() if m else t
+
+def fold(s):
+    s = unicodedata.normalize('NFKD', s.replace('\u2019', &quot;'&quot;))
+    return ''.join(c for c in s if not unicodedata.combining(c))
+
+def words(s):
+    return re.findall(r'[a-z0-9]+', fold(s).lower())
+
+def same(a, b):                      # plural and possessive
+    return a == b or (len(b) &gt;= 3 and a == b + 's') or (len(a) &gt;= 3 and b == a + 's')
+
+def maths(t):                        # the letters of the title's mathematics
+    b = ' '.join(re.findall(r'\$([^$]*)\$', t))
+    b = re.sub(r'\\(?:mathbb|mathcal|mathfrak|operatorname|mathrm|text)\{([^{}]*)\}', r'\1', b)
+    b = re.sub(r'\\[A-Za-z]+', ' ', b)
+    return re.sub(r'[^A-Za-z0-9]', '', b).lower()
+
+for coll in ('maths', 'physics'):
+    for p in sorted(glob.glob(f'articles_{coll}/*.md')):
+        stem, t = os.path.basename(p)[:-3], h1(p)
+        prose = re.sub(r'\$[^$]*\$', ' ', t)
+        pw = [w for w in words(prose) if w not in STOP]
+        sw = [w for w in words(stem) if w not in STOP]
+        blob, flat = maths(t), stem.replace('-', '')
+        slug_only = [w for w in sw if not any(same(w, x) for x in pw) and w not in blob]
+        title_only = [w for w in pw if not any(same(w, x) for x in sw) and w not in flat]
+        if slug_only or title_only:
+            print(coll, stem, '| slug:', slug_only, '| title:', title_only)
+</code></pre>
+<p><strong>How to read its output, and the summary to quote.</strong> The script prints the rows. To get the table at the top of this file, sort the rows into the three tolerated kinds:</p>
+<pre><code class="language-python">ENGLISH = set('plus minus times tensor into sum two halves squares module '
+              'commutator split complex numbers biquaternion three four operators '
+              'trace determinant'.split())
+
+less = letters = words_ = 0
+for coll in ('maths', 'physics'):
+    for p in sorted(glob.glob(f'articles_{coll}/*.md')):
+        stem, t = os.path.basename(p)[:-3], h1(p)
+        pw = [w for w in words(re.sub(r'\$[^$]*\$', ' ', t)) if w not in STOP]
+        sw = [w for w in words(stem) if w not in STOP]
+        blob, flat = maths(t), stem.replace('-', '')
+        so = [w for w in sw if not any(same(w, x) for x in pw) and w not in blob]
+        to = [w for w in pw if not any(same(w, x) for x in sw) and w not in flat]
+        if not so and not to:
+            continue
+        if not so:
+            less += 1
+        elif any(w in ENGLISH for w in so):
+            words_ += 1
+        else:
+            letters += 1
+
+print(f'exact {3311 - less - letters - words_}  less {less}  letters {letters}  ', 
+      f'words {words_}  contradictions 0')
+</code></pre>
+<p><strong>What it prints today: <code>exact 3143  less 95  letters 43  words 30  contradictions 0</code>.</strong> The word <em>contradictions</em> is not computed: it is repaired to zero by construction, because a name that says more than its title is the one case this audit renames, and §<em>The thirty renames</em> lists every such case.</p>
+<p>The gate of §<em>The invariant to test</em> is the cheap check to run after a title edit. It prints <strong>69 rows</strong> today, all of them kind 2 or 3, and it credits a name word that sits anywhere inside the concatenated letters of the title, so it under-reports by a handful. The measure above is the authoritative count.</p>
+<p>The script prints <strong>168 lines</strong> today — the rows of §<em>The 168 tolerated differences</em>. Run on the tree after the title repair and before the renames, it printed 189; the 206 of §<em>The Full List</em> is the first run, made before any title was repaired, and is kept as the record of the state this audit was written about. The three numbers differ because the tree did, not because the measure did. The collisions of §<em>The Collisions</em> are found separately, by comparing the <code># __…__</code> lines of the two folders for equality.</p>
+<h2 id="options">Options</h2>
+<p>The findings divide into four groups, and the options act on them separately. No option is exclusive of another except where stated. Each option is written as it was proposed; the <em>Status</em> line says what became of it.</p>
+<p><em>Status.</em> A, B, C and D are done, as §The Repair records, and D was carried further than proposed: every file whose name had stopped matching its title was renamed, 30 in all (§<em>The thirty renames</em>). E and G are open. F is refused, because a rename is owed only where the name makes a claim the title does not.</p>
+<p><strong>Option A — repair the one broken title. Done.</strong> <em>The Family of</em> deleted from the title of <code>reflections-as-signed-two-sided-operators-on-a-clifford-algebra</code>, in the file and in the menu line. One edit, no URL change. The series of 20 now reads uniformly; the other 19 were already correct.</p>
+<p><strong>Option B — retitle the special-case partner in each of the 26 groups. Done.</strong> Twenty-three of the groups differed by a qualifier that the file name already carried: it was appended to the title of the special partner — <em>… over $\mathbb{R}$</em> in 13 groups, <em>… at $n=4$</em> in 8, <em>… in $M_2(\mathbb{C})$</em> in 1, <em>… of $M_n(\mathbb{R})$</em> in 1. The remaining three needed a distinguishing clause each: <em>… of the Operators</em> for the Fierz–Kofink pair, <em>… of $\operatorname{Sym}_n(\mathbb{R})$</em> for the Peirce pair, and a clause for the shorter of the two carrier articles. Twenty-six edits in the <code>.md</code> files and in the menu lines, no URL change at the time.</p>
+<p><strong>Option C — rename the files whose slug lags the body. Done.</strong> <code>signature</code> → <code>inertia</code> in five file names, <code>standard</code> → <code>pauli</code> in two, seven in all, each with an entry in <code>LEGACY_COPIES</code> and a rebuild. The corpus had done this before: the list held 19 entries when this audit began, six of them the research-agenda renames, two the Lorentz-group article, four the Four Colours model. It holds 49 today — the seven of this option, the twelve that Option D forced, three of a later pass, and eight of the accordance pass. The cost is the redirect list, which grows and never shrinks.</p>
+<p><strong>Option D — retitle the articles whose title says less than their file. Done.</strong> The rows of §<em>The Titles That Say Less Than Their Files</em>, seven of them, plus the two collision partners retitled under Option B. Four of the seven shared a title with a sibling article, so the same edits fixed a collision.</p>
+<p><strong>Option E — write the tolerated departures into the rule. Open.</strong> This is the open half of the work, and the one that decides what the next audit reports as a defect. One paragraph in <em>Index and Notation Conventions</em>, after the sentence on the slug, stating three things: (i) a formula in a title is written in the slug as its letters, without the commands — <code>$M_4(\mathbb{C})$</code> gives <code>m4c</code>; (ii) a subtitle after a colon is not carried into the slug; (iii) the level of generality is carried by the file name, in the forms <code>over-r</code>, <code>at-n-4</code>, <code>in-m2c</code>, and the title states it in words. Written this way, all 168 rows still reported become compliant by rule, and nothing remains a defect until a title changes again. This is the cheapest option and the one that changes nothing a reader sees. Its risk is that it legalises a title which does not describe its article, which the writing rules forbid; the paragraph must therefore not license (iii) without a title that states the level of generality in words, which Option B has now given each of the 26 collisions.</p>
+<p><strong>Option F — normalise the corpus completely. Refused.</strong> Rename the 168 rows to the strict slug of their title, or retitle them to the strict reading of their slug. Either way 168 URL changes, 168 new <code>LEGACY_COPIES</code>, a rebuild of every sitemap and of the 3 318 menu lines, and a permanent redirect list of 217 entries. It is a week of mechanical work, and it would contradict §<em>What the Corpus Tolerates</em>: the subtitle and the formula in letters are the corpus's idiom, and 95 of the 168 rows drop a subtitle while 63 spell a formula in letters. A rename owed on a defect is a repair; a rename owed on a habit is a rewrite of the corpus.</p>
+<p><strong>Option G — make the measure a gate. Open.</strong> The script of §<em>How to Re-measure</em>, or the invariant of §<em>The invariant to test</em>, is twenty lines. Wired into the build beside the convention check, it would report a new disagreement the day it is written, the way <code>audit-letters</code> is meant to be re-run rather than remembered. It would have caught the <em>The Family of</em> insertion and the <code>signature</code> → <code>inertia</code> lag at the moment each was made, and it would catch the next title edit that leaves its file behind.</p>
+<p><strong>What remains.</strong> Option E, one paragraph in <em>Index and Notation Conventions</em> recording the tolerated departures, and Option G, so that the next edit of a title is followed by its rename without a new audit.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

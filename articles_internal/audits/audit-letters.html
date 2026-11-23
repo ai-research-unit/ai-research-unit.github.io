@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit of the Letters — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. One row per glyph, with its sense and its count, for the two published collections. Written 2026-11-23 on the working tree. It is a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-of-the-letters">Audit of the Letters</h1>
+<p><em>What this file is.</em> One row per glyph, with its sense and its count, for the two published collections. Written 2026-11-23 on the working tree. It is a measurement, not a rule. Where a row disagrees with a rule of the conventions articles, the row is evidence and the rule is a claim, and the gap is listed in §<em>The Gaps</em>.</p>
+<p><em>Scope.</em> <code>articles_maths/*.md</code>, 2 633 files, and <code>articles_physics/*.md</code>, 679 files. Only the math delimiters are read, <code>$…$</code> and <code>$$…$$</code>; prose is not counted. A word inside a display is not counted letter by letter: the contents of <code>\mathrm{…}</code>, <code>\text{…}</code>, <code>\operatorname{…}</code>, <code>\mathbb{…}</code>, <code>\mathcal{…}</code> and their kin are excluded, so that <code>\mathrm{opp}</code> adds no <code>p</code>. Such a group is counted only when it is a subscript, and then as a <strong>label</strong> (§<em>The Labels</em>). 1 218 067 glyph occurrences in total.</p>
+<p><em>How the counts are made.</em> One occurrence is one glyph between two math delimiters. Each occurrence is filed under the mark that follows it: bare, then a subscript, a superscript, or one of the stacked marks <code>\vec</code>, <code>\tilde</code>, <code>\bar</code>, <code>\hat</code>, <code>\breve</code>, <code>\check</code>. The filed marks are then read as senses, and the <strong>number in parentheses after a sense is the number of occurrences assigned to it</strong>, both corpora together; the columns to the left give the split between the two collections. So $c^2$ is filed under the speed of light, $e_x$ under the four units, $\lambda_i$ under the eigenvalue.</p>
+<p><em>What the reading costs.</em> The assignment of a mark to a sense is an interpretation, not a datum: a subscript may carry two senses, and a bare letter may be generic or may be a named object. A mark that names no new object — a power, an inverse, an adjoint, an index that carries no meaning of its own — is pooled at the end of the row as <code>other markings</code>, so every row reconciles with its two totals. The counts are therefore exact, the senses approximate.</p>
+<p><em>What is not here.</em> The blackboard letters <code>\mathbb{B}</code>, <code>\mathbb{R}</code>, <code>\mathbb{C}</code>, <code>\mathbb{H}</code>, <code>\mathbb{F}</code>, <code>\mathbb{Z}</code>, <code>\mathbb{N}</code>, <code>\mathbb{K}</code>, and the calligraphic ones, are objects of their own, tabulated in <em>Algebra and Element Conventions</em>, §<em>Summary of Notation</em>. The 526 upright labels are in §<em>The Labels</em>. The three alphabets that are not LaTeX commands are in §<em>The Unicode Letters</em>.</p>
+<h2 id="the-five-reserved-letters">The Five Reserved Letters</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>role</th>
+<th style="text-align: right;">maths</th>
+<th style="text-align: right;">physics</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\theta</code></td>
+<td>angle</td>
+<td style="text-align: right;">7 836</td>
+<td style="text-align: right;">10 189</td>
+<td>one sense; the label split (<code>rpd</code>, <code>pha</code>, <code>axr</code>) names the kind of angle, not another object</td>
+</tr>
+<tr>
+<td><code>\varrho</code></td>
+<td>scale</td>
+<td style="text-align: right;">2 794</td>
+<td style="text-align: right;">2 948</td>
+<td>one sense</td>
+</tr>
+<tr>
+<td><code>\nu</code></td>
+<td>wave number</td>
+<td style="text-align: right;">5 050</td>
+<td style="text-align: right;">8 643</td>
+<td>one sense in physics; the maths corpus also uses it for a measure and a morphism</td>
+</tr>
+<tr>
+<td><code>\lambda</code></td>
+<td>wavelength</td>
+<td style="text-align: right;">20 161</td>
+<td style="text-align: right;">188</td>
+<td><strong>violated in maths</strong>: the letter is the eigenvalue there, 20 161 sites</td>
+</tr>
+<tr>
+<td><code>\eta</code></td>
+<td>eigenvalue</td>
+<td style="text-align: right;">1 401</td>
+<td style="text-align: right;">993</td>
+<td>one sense, zero violations after the patch of 2026-11-23</td>
+</tr>
+</tbody>
+</table></div>
+<p>The five are the only letters with a written rule. Every other row below describes use. A row with two senses is a place where the corpus is read by context and by subscript, and the conventions articles do not say so.</p>
+<h2 id="latin-lowercase">Latin Lowercase</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th style="text-align: right;">maths</th>
+<th style="text-align: right;">physics</th>
+<th>sense, with its approximate occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a</code></td>
+<td style="text-align: right;">28 008</td>
+<td style="text-align: right;">4 107</td>
+<td>a generic element of a ring, algebra or group (23 138); a vector, $\vec a$ (430); other markings (8 547)</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td style="text-align: right;">14 380</td>
+<td style="text-align: right;">1 895</td>
+<td>a second generic element; an entry $b(x,y)$ of a bilinear form (12 969); a vector, $\vec b$ (275); other markings (3 031)</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td style="text-align: right;">7 208</td>
+<td style="text-align: right;">6 398</td>
+<td>a vector, $\vec c$ (102); the speed of light, $c$, $c^2$, $c_0$ (6 392); a generic constant or coefficient, in the maths corpus (7 112)</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td style="text-align: right;">5 499</td>
+<td style="text-align: right;">2 581</td>
+<td>the differential $d$; a dimension (6 879); a vector, $\vec d$ (79); other markings (1 122)</td>
+</tr>
+<tr>
+<td><code>e</code></td>
+<td style="text-align: right;">37 393</td>
+<td style="text-align: right;">29 446</td>
+<td>the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ (46 163); Euler's number, in $e^{i\theta}$ (1 646); the elementary charge $e^{\pm}$ (40); a basis coefficient $e_\imath$ (9 878); a bare $e$, a generic unit (2 989); other markings (6 123)</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td style="text-align: right;">15 535</td>
+<td style="text-align: right;">1 126</td>
+<td>a generic function $f(x)$ (13 667); a named function slot, $f_{\mathrm{ax}}$, $f_{\mathrm{refl}}$ (43); other markings (2 951)</td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td style="text-align: right;">9 075</td>
+<td style="text-align: right;">1 592</td>
+<td>the metric coefficient $g_{\imath\jmath}$ (140); a coupling constant $g$ (8 615); other markings (1 912)</td>
+</tr>
+<tr>
+<td><code>h</code></td>
+<td style="text-align: right;">5 554</td>
+<td style="text-align: right;">5 051</td>
+<td>the Planck constant $h$ (7 767); the informational time $h_t$, a length (470); the Hermitian part $\tilde h_\Psi$ (868); a named map, $h_{\mathrm{def}}$ (197); other markings (1 303)</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td style="text-align: right;">16 231</td>
+<td style="text-align: right;">13 791</td>
+<td>the imaginary unit (29 424); an index, in the maths corpus (471); other markings (127)</td>
+</tr>
+<tr>
+<td><code>j</code></td>
+<td style="text-align: right;">7 150</td>
+<td style="text-align: right;">1 692</td>
+<td>the second imaginary unit of the split and reduced layers (7 734); a second index (480); a vector $\vec j$ (128); other markings (500)</td>
+</tr>
+<tr>
+<td><code>k</code></td>
+<td style="text-align: right;">10 724</td>
+<td style="text-align: right;">2 401</td>
+<td>a field $k$ (12 021); a vector index $k$ (264); a vector $\vec k$ (3); other markings (837)</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td style="text-align: right;">1 181</td>
+<td style="text-align: right;">987</td>
+<td>a length, a line, or an orbital index (2 100); other markings (68)</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td style="text-align: right;">7 916</td>
+<td style="text-align: right;">3 855</td>
+<td>a mass (10 089); a field slot, $m_{\mathrm{fld}}$ (81); other markings (1 601)</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td style="text-align: right;">23 343</td>
+<td style="text-align: right;">1 940</td>
+<td>a count, a natural number or an index (23 615); a normal vector $\vec n$ (438); a named slot, $n_{\mathrm{mag}}$, $n_{\mathrm{rot}}$ (147); other markings (1 083)</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">53</td>
+<td>little-$o$ of an asymptotic expansion (160); other markings (6)</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td style="text-align: right;">7 407</td>
+<td style="text-align: right;">4 943</td>
+<td>a momentum $\vec p$ (1 994); a prime ideal, or the $p$ of $p$-adic (5 490); a named slot, $p_{\mathrm{th}}$ (98); other markings (4 768)</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td style="text-align: right;">29 247</td>
+<td style="text-align: right;">3 115</td>
+<td>the generic element $q$ of the Q family (23 196); a space coordinate $q_\imath$ (4 346); other markings (4 820)</td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td style="text-align: right;">6 065</td>
+<td style="text-align: right;">11 940</td>
+<td>a space coordinate $r_\imath$ (3 883); a radius, a ring element or a remainder (11 513); other markings (2 609)</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td style="text-align: right;">6 886</td>
+<td style="text-align: right;">3 683</td>
+<td>a spin, $\tilde S$ and its scalar $s$ (8 522); an entropy, $s_{\mathrm{ent}}$ (56); a total, $s_{\mathrm{tot}}$ (360); other markings (1 631)</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td style="text-align: right;">10 951</td>
+<td style="text-align: right;">2 826</td>
+<td>time, and the temporal slot $t$ (12 003); other markings (1 774)</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td style="text-align: right;">15 436</td>
+<td style="text-align: right;">8 948</td>
+<td>a unit element of a polar decomposition (13 579); a velocity $u_{\mathrm b}$ (964); a coordinate $u_{\mathrm r}$ (2 648); a component $u_x$ (902); other markings (6 291)</td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td style="text-align: right;">10 043</td>
+<td style="text-align: right;">3 431</td>
+<td>a velocity or a coefficient $v$ (11 036); other markings (2 438)</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td style="text-align: right;">3 900</td>
+<td style="text-align: right;">894</td>
+<td>a generic element $w$ or a weight (3 986); a frequency slot, $w_{\mathrm{fl}}$ (56); other markings (752)</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td style="text-align: right;">44 895</td>
+<td style="text-align: right;">3 993</td>
+<td>a space coordinate $x$ (41 100); other markings (7 788)</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td style="text-align: right;">17 076</td>
+<td style="text-align: right;">2 174</td>
+<td>a second space coordinate $y$ (17 642); other markings (1 608)</td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td style="text-align: right;">6 294</td>
+<td style="text-align: right;">2 177</td>
+<td>a third space coordinate, or a complex variable $z$ (7 394); other markings (1 077)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="latin-uppercase">Latin Uppercase</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th style="text-align: right;">maths</th>
+<th style="text-align: right;">physics</th>
+<th>sense, with its approximate occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td style="text-align: right;">27 799</td>
+<td style="text-align: right;">5 965</td>
+<td>an operator, a matrix or an algebra (22 747); a vector potential $\vec A$ (1 086); a component $A_\imath$, or the material part $A_\Phi$ (1 552); other markings (8 379)</td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td style="text-align: right;">10 100</td>
+<td style="text-align: right;">3 197</td>
+<td>an algebra or a magnetic field (8 875); a vector $\vec B$ (1 026); a component $B_\imath$ (95); other markings (3 301)</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td style="text-align: right;">4 859</td>
+<td style="text-align: right;">1 307</td>
+<td>a set, a curve or a capacitance (3 419); a count, $C_{\infty}$ and $C_n$ (261); other markings (2 486)</td>
+</tr>
+<tr>
+<td><code>D</code></td>
+<td style="text-align: right;">4 499</td>
+<td style="text-align: right;">1 839</td>
+<td>a differential operator $D$ (3 683); a component $D_\imath$ (708); other markings (1 947)</td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td style="text-align: right;">8 253</td>
+<td style="text-align: right;">4 257</td>
+<td>energy (4 916); a matrix unit $E_{ij}$ (2 496); a vector $\vec E$ (1 409); other markings (3 689)</td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td style="text-align: right;">6 456</td>
+<td style="text-align: right;">4 584</td>
+<td>a field strength, a functor or a force (7 488); a vector $\vec F$ (444); a function slot, $F_{\mathrm{fn}}$ (371); a component $F_{\imath\jmath}$ (361); other markings (2 376)</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td style="text-align: right;">9 313</td>
+<td style="text-align: right;">1 498</td>
+<td>a group, a propagator or Newton's constant (8 712); a function slot, $G_{\mathrm{fn}}$ (196); other markings (1 903)</td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td style="text-align: right;">7 755</td>
+<td style="text-align: right;">4 340</td>
+<td>a Hamiltonian, a Hilbert space or a Heaviside step (7 071); the Hermitian part $\tilde H_\Psi$ (1 576); a named space, $H_{\mathrm{modular}}$ (119); other markings (3 329)</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td style="text-align: right;">6 250</td>
+<td style="text-align: right;">1 193</td>
+<td>the identity $I_n$, an interval or an index set (6 688); other markings (755)</td>
+</tr>
+<tr>
+<td><code>J</code></td>
+<td style="text-align: right;">3 455</td>
+<td style="text-align: right;">2 301</td>
+<td>a complex structure, a current or a Bessel function (3 002); a component $J_\Phi$ (749); an optimal value, $J_{\mathrm{opt}}$ (79); other markings (1 926)</td>
+</tr>
+<tr>
+<td><code>K</code></td>
+<td style="text-align: right;">5 851</td>
+<td style="text-align: right;">436</td>
+<td>a field $K$, a kernel or a kaon (4 293); a component $K_\imath$ (387); other markings (1 607)</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td style="text-align: right;">13 081</td>
+<td style="text-align: right;">2 983</td>
+<td>left multiplication $L_a$ (2 474); a Lagrangian, an angular momentum or a length (4 598); the axis-free frame and the Pauli frame, $L_{\mathrm{axf}}$, $L_{\mathrm{pau}}$ (1 170); an orbital slot, $L_{\mathrm{orb}}$ (168); other markings (7 654)</td>
+</tr>
+<tr>
+<td><code>M</code></td>
+<td style="text-align: right;">13 662</td>
+<td style="text-align: right;">2 532</td>
+<td>a matrix $M_n$, a module or a manifold (12 178); a Kraus operator, $M_{\mathrm{kraus}}$ (461); a modular slot, $M_{\mathrm{mod}}$ (185); other markings (3 370)</td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td style="text-align: right;">5 254</td>
+<td style="text-align: right;">2 228</td>
+<td>a norm, a number or a normaliser (6 442); other markings (1 040)</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td style="text-align: right;">806</td>
+<td style="text-align: right;">319</td>
+<td>the orthogonal group, or big-$O$ of an expansion (1 038); other markings (87)</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td style="text-align: right;">5 734</td>
+<td style="text-align: right;">2 622</td>
+<td>a projector or a projection (4 324); a momentum $\tilde P_\Phi$ (949); other markings (3 083)</td>
+</tr>
+<tr>
+<td><code>Q</code></td>
+<td style="text-align: right;">55 244</td>
+<td style="text-align: right;">15 430</td>
+<td>the generic element of the series, $\tilde Q$, $\vec Q$, $Q_\imath$ (32 940); a coefficient $Q_1$, $Q_2$, $Q_3$ (17 698); a component $Q_t$, $Q_x$, $Q_y$, $Q_z$ (6 594); other markings (13 442)</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td style="text-align: right;">11 224</td>
+<td style="text-align: right;">5 850</td>
+<td>right multiplication $R_a$ (1 008); a ring, a radius or a remainder (8 659); the material part $R_\Phi$ (742); a space index $R_\imath$ (1 651); other markings (5 014)</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td style="text-align: right;">8 672</td>
+<td style="text-align: right;">4 517</td>
+<td>an action, a spin or an entropy (6 095); a spin component $S_{\Psi,k}$ (1 034); an entry $S_1$, $S_2$, $S_3$ (2 201); other markings (3 859)</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td style="text-align: right;">10 808</td>
+<td style="text-align: right;">1 589</td>
+<td>a tensor, a transpose, a period or a temperature (9 577); an entry $T_{ij}$ (652); other markings (2 168)</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td style="text-align: right;">5 250</td>
+<td style="text-align: right;">5 543</td>
+<td>a unitary element, or a potential (5 248); a Lorentz slot, $U_{\mathrm{lor}}$ (740); a Wigner slot, $U_{\mathrm{Wig}}$ (117); a boost component $U_{\Psi,\mathrm b}$ (1 802); other markings (2 886)</td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td style="text-align: right;">9 340</td>
+<td style="text-align: right;">2 051</td>
+<td>a vector space, a potential or a volume (7 828); a component $V_0$, $V_1$, $V_2$ (1 246); the four-velocity $V_\Phi$ (437); other markings (1 880)</td>
+</tr>
+<tr>
+<td><code>W</code></td>
+<td style="text-align: right;">2 560</td>
+<td style="text-align: right;">978</td>
+<td>work, the $W$ boson or a Wigner function (2 413); a kinetic slot, $W_{\mathrm{kinetic}}$ (34); other markings (1 091)</td>
+</tr>
+<tr>
+<td><code>X</code></td>
+<td style="text-align: right;">18 868</td>
+<td style="text-align: right;">1 517</td>
+<td>a topological space, or a generic space (16 237); a component $X_n$, $X_1$ (679); other markings (3 469)</td>
+</tr>
+<tr>
+<td><code>Y</code></td>
+<td style="text-align: right;">5 353</td>
+<td style="text-align: right;">485</td>
+<td>a hypercharge or a Bessel function (5 238); other markings (600)</td>
+</tr>
+<tr>
+<td><code>Z</code></td>
+<td style="text-align: right;">2 321</td>
+<td style="text-align: right;">927</td>
+<td>a partition function, the $Z$ boson or an atomic number (2 748); other markings (500)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="greek-lowercase">Greek Lowercase</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th style="text-align: right;">maths</th>
+<th style="text-align: right;">physics</th>
+<th>sense, with its approximate occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\alpha</code></td>
+<td style="text-align: right;">26 767</td>
+<td style="text-align: right;">2 672</td>
+<td>a generic scalar, or a multi-index in maths (26 452); other markings (2 987)</td>
+</tr>
+<tr>
+<td><code>\beta</code></td>
+<td style="text-align: right;">3 851</td>
+<td style="text-align: right;">3 521</td>
+<td>a second generic scalar, or $\beta=v/c$ (6 524); a velocity slot, $\beta_{\mathrm{vel}}$ (77); other markings (771)</td>
+</tr>
+<tr>
+<td><code>\gamma</code></td>
+<td style="text-align: right;">4 015</td>
+<td style="text-align: right;">5 197</td>
+<td>gamma matrices $\gamma_\imath$ (2 914); the Lorentz factor (4 586); other markings (1 712)</td>
+</tr>
+<tr>
+<td><code>\delta</code></td>
+<td style="text-align: right;">5 662</td>
+<td style="text-align: right;">3 486</td>
+<td>the Kronecker delta (1 477); a variation or a Dirac delta (5 425); other markings (2 246)</td>
+</tr>
+<tr>
+<td><code>\epsilon</code></td>
+<td style="text-align: right;">1 610</td>
+<td style="text-align: right;">2 886</td>
+<td>the Levi-Civita symbol (390); a small parameter, or permittivity (3 473); other markings (633)</td>
+</tr>
+<tr>
+<td><code>\varepsilon</code></td>
+<td style="text-align: right;">5 637</td>
+<td style="text-align: right;">2 777</td>
+<td>a small parameter (5 397); the Levi-Civita symbol $\varepsilon_{\imath\jmath}$ (1 363); a Fock slot, $\varepsilon_{\mathrm{fop}}$ (199); other markings (1 455)</td>
+</tr>
+<tr>
+<td><code>\zeta</code></td>
+<td style="text-align: right;">6 198</td>
+<td style="text-align: right;">1 249</td>
+<td>a complex variable or a damping ratio (5 916); a state label or a shifted variable, $\zeta_+$, $\zeta_-$ (264); other markings (1 267)</td>
+</tr>
+<tr>
+<td><code>\eta</code></td>
+<td style="text-align: right;">1 401</td>
+<td style="text-align: right;">993</td>
+<td>the eigenvalue, reserved (2 080); other markings (314)</td>
+</tr>
+<tr>
+<td><code>\theta</code></td>
+<td style="text-align: right;">7 836</td>
+<td style="text-align: right;">10 189</td>
+<td>the angle, reserved (6 680); a named angle, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{axr}}$ (10 433); other markings (912)</td>
+</tr>
+<tr>
+<td><code>\vartheta</code></td>
+<td style="text-align: right;">434</td>
+<td style="text-align: right;">352</td>
+<td>a named angle or a theta function, $\vartheta_{\mathrm{fld}}$, $\vartheta_{\mathrm{chb}}$ (767); other markings (19)</td>
+</tr>
+<tr>
+<td><code>\iota</code></td>
+<td style="text-align: right;">1 566</td>
+<td style="text-align: right;">25</td>
+<td>an inclusion or a comparison map (1 530); other markings (61)</td>
+</tr>
+<tr>
+<td><code>\kappa</code></td>
+<td style="text-align: right;">1 204</td>
+<td style="text-align: right;">2 016</td>
+<td>a curvature or a coupling (2 636); a named curvature, $\kappa_{\mathrm{kin}}$ (69); other markings (515)</td>
+</tr>
+<tr>
+<td><code>\varkappa</code></td>
+<td style="text-align: right;">526</td>
+<td style="text-align: right;">535</td>
+<td>a Lyapunov exponent or a curvature (958); other markings (103)</td>
+</tr>
+<tr>
+<td><code>\lambda</code></td>
+<td style="text-align: right;">20 161</td>
+<td style="text-align: right;">188</td>
+<td>the eigenvalue: $\lambda_i$, $\lambda_\pm$, $\lambda_k$ (20 161); the wavelength, in physics (188)</td>
+</tr>
+<tr>
+<td><code>\mu</code></td>
+<td style="text-align: right;">13 323</td>
+<td style="text-align: right;">2 017</td>
+<td>the space index, in maths (13 076); permeability, the muon, or a measure (398); other markings (1 866)</td>
+</tr>
+<tr>
+<td><code>\nu</code></td>
+<td style="text-align: right;">5 050</td>
+<td style="text-align: right;">8 643</td>
+<td>the wave number, $\nu_m$ (7 117); a frequency $\nu_t$ (983); a measure or a morphism, in maths (4 632); other markings (961)</td>
+</tr>
+<tr>
+<td><code>\xi</code></td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">3 282</td>
+<td>the field $\xi$, real and complex (2 030); a scale slot, $\xi_{\mathrm{scl}}$ (380); a neutrino slot, $\xi_{\mathrm{neu}}$ (196); a Fock slot, $\xi_{\mathrm{fop}}$ (167); other markings (640)</td>
+</tr>
+<tr>
+<td><code>\omicron</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">734</td>
+<td>the electrostatic potential, $\omicron_{\mathrm{pot}}$ (491); a Higgs component, $\omicron_{\mathrm{hgs}}$ (158); an angle, $\omicron_{\mathrm{ang}}$ (69); other markings (17)</td>
+</tr>
+<tr>
+<td><code>\pi</code></td>
+<td style="text-align: right;">13 165</td>
+<td style="text-align: right;">12 342</td>
+<td>the number $\pi$ (21 845); the idempotent $\tilde\Pi_{\mathrm{id}}$ (841); the nilpotent $\tilde\Pi_{\mathrm{nil}}$ (316); a projection $\Pi_\pm$ (194); other markings (2 311)</td>
+</tr>
+<tr>
+<td><code>\varpi</code></td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">405</td>
+<td>the twistor spinor, $\varpi_{\mathrm{twz}}$ (59); a coupling slot, $\varpi_{\mathrm{cpl}}$ (241); a bare $\varpi$, the symplectic form (121); other markings (72)</td>
+</tr>
+<tr>
+<td><code>\rho</code></td>
+<td style="text-align: right;">7 664</td>
+<td style="text-align: right;">4 998</td>
+<td>a density, $\rho_{\mathrm{num}}$ (8 334); a representation, in maths (1 332); a charge slot, $\rho_{\mathrm{chg}}$ (141); a regulator slot, $\rho_{\mathrm{reg}}$ (79); other markings (2 776)</td>
+</tr>
+<tr>
+<td><code>\varrho</code></td>
+<td style="text-align: right;">2 794</td>
+<td style="text-align: right;">2 948</td>
+<td>the scale, reserved (4 447); other markings (1 295)</td>
+</tr>
+<tr>
+<td><code>\sigma</code></td>
+<td style="text-align: right;">20 694</td>
+<td style="text-align: right;">3 118</td>
+<td>the Pauli matrices $\sigma_a$ (3 818); a cross-section, a covariance or an entropy (16 758); other markings (3 236)</td>
+</tr>
+<tr>
+<td><code>\varsigma</code></td>
+<td style="text-align: right;">4 370</td>
+<td style="text-align: right;">473</td>
+<td>a conjugation or a sign map (4 619); other markings (224)</td>
+</tr>
+<tr>
+<td><code>\tau</code></td>
+<td style="text-align: right;">4 723</td>
+<td style="text-align: right;">1 511</td>
+<td>proper time, a lifetime or the tau lepton (5 338); other markings (896)</td>
+</tr>
+<tr>
+<td><code>\upsilon</code></td>
+<td style="text-align: right;">197</td>
+<td style="text-align: right;">440</td>
+<td>a placeholder index, $\upsilon_{\mathrm{idx}}$ (341); a Rindler time, $\upsilon_{\mathrm{rnd}}$ (98); a coordinate slot, $\upsilon_{\mathrm{crd}}$ (84); other markings (114)</td>
+</tr>
+<tr>
+<td><code>\phi</code></td>
+<td style="text-align: right;">1 862</td>
+<td style="text-align: right;">228</td>
+<td>a potential, a golden ratio or a rotation angle (1 726); other markings (364)</td>
+</tr>
+<tr>
+<td><code>\varphi</code></td>
+<td style="text-align: right;">6 195</td>
+<td style="text-align: right;">1</td>
+<td>the Euler totient, or a generic map (5 467); other markings (729)</td>
+</tr>
+<tr>
+<td><code>\chi</code></td>
+<td style="text-align: right;">2 802</td>
+<td style="text-align: right;">290</td>
+<td>a character, a susceptibility or an Euler characteristic (2 468); other markings (624)</td>
+</tr>
+<tr>
+<td><code>\psi</code></td>
+<td style="text-align: right;">1 823</td>
+<td style="text-align: right;">342</td>
+<td>a wavefunction or a small angle (1 949); other markings (216)</td>
+</tr>
+<tr>
+<td><code>\omega</code></td>
+<td style="text-align: right;">7 706</td>
+<td style="text-align: right;">4 405</td>
+<td>an angular frequency, a solid angle or a domain (9 681); other markings (2 430)</td>
+</tr>
+<tr>
+<td><code>\digamma</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1 937</td>
+<td>the unnamed scalar, its sense in the subscript (1 942)</td>
+</tr>
+<tr>
+<td><code>\ell</code></td>
+<td style="text-align: right;">3 720</td>
+<td style="text-align: right;">672</td>
+<td>a length, a line, or the index $\ell$ (2 932); other markings (1 460)</td>
+</tr>
+<tr>
+<td><code>\imath</code></td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">26 429</td>
+<td>the space index (25 883); other markings (663)</td>
+</tr>
+<tr>
+<td><code>\jmath</code></td>
+<td style="text-align: right;">261</td>
+<td style="text-align: right;">8 192</td>
+<td>the second space index (8 411); other markings (42)</td>
+</tr>
+<tr>
+<td><code>\aleph</code></td>
+<td style="text-align: right;">128</td>
+<td style="text-align: right;">0</td>
+<td>the cardinal $\aleph_0$ (116); other markings (12)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="greek-uppercase">Greek Uppercase</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th style="text-align: right;">maths</th>
+<th style="text-align: right;">physics</th>
+<th>sense, with its approximate occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\Gamma</code></td>
+<td style="text-align: right;">3 941</td>
+<td style="text-align: right;">1 674</td>
+<td>gamma matrices $\Gamma_\imath$ (670); the Gamma function, a decay width or a graph (4 303); other markings (642)</td>
+</tr>
+<tr>
+<td><code>\Delta</code></td>
+<td style="text-align: right;">3 659</td>
+<td style="text-align: right;">761</td>
+<td>the Laplacian $\Delta_\Phi$ (898); a difference, a discriminant or the $\Delta$ baryon (2 705); an operator slot, $\Delta_{\bar\partial}$ (83); other markings (734)</td>
+</tr>
+<tr>
+<td><code>\Theta</code></td>
+<td style="text-align: right;">589</td>
+<td style="text-align: right;">416</td>
+<td>a map or an involution, or a theta function (915); other markings (90)</td>
+</tr>
+<tr>
+<td><code>\Lambda</code></td>
+<td style="text-align: right;">3 876</td>
+<td style="text-align: right;">874</td>
+<td>the cosmological constant, or the exterior power $\Lambda^k$ (3 952); other markings (798)</td>
+</tr>
+<tr>
+<td><code>\Xi</code></td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">4 030</td>
+<td>the element of the algebra, $\tilde\Xi=\Xi_te_t+\vec\Xi$ (2 776); other markings (1 315)</td>
+</tr>
+<tr>
+<td><code>\Pi</code></td>
+<td style="text-align: right;">15 025</td>
+<td style="text-align: right;">6 045</td>
+<td>the idempotent $\tilde\Pi_{\mathrm{id}}$ and the nilpotent $\tilde\Pi_{\mathrm{nil}}$ (13 041); a projection $\Pi_\pm$ (5 739); a bare $\Pi$, a product (1 471); other markings (819)</td>
+</tr>
+<tr>
+<td><code>\Sigma</code></td>
+<td style="text-align: right;">4 801</td>
+<td style="text-align: right;">989</td>
+<td>a sum, a covariance or a Pauli-basis entry (3 814); a generator $\Sigma^\alpha$ (726); a spin tensor $\Sigma_\Psi$ (119); other markings (1 131)</td>
+</tr>
+<tr>
+<td><code>\Upsilon</code></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1 349</td>
+<td>the wave-number element $\tilde\Upsilon_\Phi$ (1 326); other markings (23)</td>
+</tr>
+<tr>
+<td><code>\Phi</code></td>
+<td style="text-align: right;">4 965</td>
+<td style="text-align: right;">24 773</td>
+<td>the material sector $\Phi$, and the algebra $\mathbb{B}_\Phi$ (28 521); other markings (1 217)</td>
+</tr>
+<tr>
+<td><code>\Psi</code></td>
+<td style="text-align: right;">1 020</td>
+<td style="text-align: right;">13 092</td>
+<td>the informational sector $\Psi$, a state, a wavefunction (14 065); other markings (47)</td>
+</tr>
+<tr>
+<td><code>\Omega</code></td>
+<td style="text-align: right;">5 971</td>
+<td style="text-align: right;">1 172</td>
+<td>a solid angle, a curvature or a domain (5 511); a Lorentz-transform slot, $\Omega_{\mathrm{LT}}$ (46); other markings (1 586)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-labels">The Labels</h2>
+<p>526 distinct upright labels occur, always in the form <code>_{\mathrm{…}}</code>. The letter says the object, the label says which one, and the label is where the corpus's discipline actually lives. The thirty most frequent, with the sense read from the corpus:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>label</th>
+<th style="text-align: right;">count</th>
+<th>sense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td style="text-align: right;">10 633</td>
+<td>idempotent, a potent element</td>
+</tr>
+<tr>
+<td><code>nil</code></td>
+<td style="text-align: right;">3 686</td>
+<td>nilpotent</td>
+</tr>
+<tr>
+<td><code>pha</code></td>
+<td style="text-align: right;">3 018</td>
+<td>phase</td>
+</tr>
+<tr>
+<td><code>rpd</code></td>
+<td style="text-align: right;">2 768</td>
+<td>rapidity, the boost angle</td>
+</tr>
+<tr>
+<td><code>num</code></td>
+<td style="text-align: right;">1 091</td>
+<td>number, as in a number density</td>
+</tr>
+<tr>
+<td><code>axf</code></td>
+<td style="text-align: right;">1 065</td>
+<td>axis-free, the frame of the matrices</td>
+</tr>
+<tr>
+<td><code>fop</code></td>
+<td style="text-align: right;">939</td>
+<td>Fock operator</td>
+</tr>
+<tr>
+<td><code>gco</code></td>
+<td style="text-align: right;">894</td>
+<td>the geometric-common potential of the coupled flow</td>
+</tr>
+<tr>
+<td><code>axr</code></td>
+<td style="text-align: right;">802</td>
+<td>the axis of a rotation</td>
+</tr>
+<tr>
+<td><code>lor</code></td>
+<td style="text-align: right;">744</td>
+<td>Lorentz</td>
+</tr>
+<tr>
+<td><code>gau</code></td>
+<td style="text-align: right;">682</td>
+<td>gauge</td>
+</tr>
+<tr>
+<td><code>ts</code></td>
+<td style="text-align: right;">652</td>
+<td>tessarine, the intrinsic conjugation of the layer</td>
+</tr>
+<tr>
+<td><code>scl</code></td>
+<td style="text-align: right;">612</td>
+<td>scale, on an idempotent</td>
+</tr>
+<tr>
+<td><code>fn</code></td>
+<td style="text-align: right;">572</td>
+<td>function, the free glyph</td>
+</tr>
+<tr>
+<td><code>pau</code></td>
+<td style="text-align: right;">511</td>
+<td>Pauli, the Pauli frame of the matrices</td>
+</tr>
+<tr>
+<td><code>pot</code></td>
+<td style="text-align: right;">498</td>
+<td>potential</td>
+</tr>
+<tr>
+<td><code>kraus</code></td>
+<td style="text-align: right;">461</td>
+<td>Kraus operator</td>
+</tr>
+<tr>
+<td><code>tot</code></td>
+<td style="text-align: right;">441</td>
+<td>total, the sum of a part</td>
+</tr>
+<tr>
+<td><code>opp</code></td>
+<td style="text-align: right;">382</td>
+<td>opposite algebra</td>
+</tr>
+<tr>
+<td><code>crd</code></td>
+<td style="text-align: right;">370</td>
+<td>coordinate</td>
+</tr>
+<tr>
+<td><code>dua</code></td>
+<td style="text-align: right;">328</td>
+<td>dual angle</td>
+</tr>
+<tr>
+<td><code>pwp</code></td>
+<td style="text-align: right;">323</td>
+<td>the plane-wave phase</td>
+</tr>
+<tr>
+<td><code>cen</code></td>
+<td style="text-align: right;">314</td>
+<td>central</td>
+</tr>
+<tr>
+<td><code>spt</code></td>
+<td style="text-align: right;">294</td>
+<td>split, the temporal slot</td>
+</tr>
+<tr>
+<td><code>phb</code></td>
+<td style="text-align: right;">291</td>
+<td>phase, the second of the two</td>
+</tr>
+<tr>
+<td><code>hpa</code></td>
+<td style="text-align: right;">286</td>
+<td>the Hermitian part</td>
+</tr>
+<tr>
+<td><code>azm</code></td>
+<td style="text-align: right;">272</td>
+<td>azimuth</td>
+</tr>
+<tr>
+<td><code>vac</code></td>
+<td style="text-align: right;">250</td>
+<td>vacuum</td>
+</tr>
+<tr>
+<td><code>cpl</code></td>
+<td style="text-align: right;">248</td>
+<td>coupling</td>
+</tr>
+<tr>
+<td><code>fld</code></td>
+<td style="text-align: right;">230</td>
+<td>field</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-unicode-letters">The Unicode Letters</h2>
+<p>A third alphabet is written outside LaTeX, as literal code points. It bypasses every check the corpus runs on <code>\command</code> glyphs, and it is the largest defect found in this pass.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>code point</th>
+<th>character</th>
+<th style="text-align: right;">sites</th>
+<th style="text-align: right;">files</th>
+<th>sense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U+03DA</td>
+<td><code>Ϛ</code></td>
+<td style="text-align: right;">3 160</td>
+<td style="text-align: right;">135</td>
+<td>the state, <code>\tilde{Ϛ}_\Psi</code>; documented in <em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>U+03D9</td>
+<td><code>ϙ</code></td>
+<td style="text-align: right;">2 940</td>
+<td style="text-align: right;">142</td>
+<td>the coupling charge, the <code>ϙ</code> of the gauge principle and of <code>2\pi iϙ/h</code></td>
+</tr>
+<tr>
+<td>U+039E</td>
+<td><code>Ξ</code></td>
+<td style="text-align: right;">9 808</td>
+<td style="text-align: right;">268</td>
+<td>the element <code>Ξ</code>, <code>\tilde\Xi=\Xi_te_t+\vec\Xi</code></td>
+</tr>
+<tr>
+<td>U+0396</td>
+<td><code>Ζ</code></td>
+<td style="text-align: right;">2 978</td>
+<td style="text-align: right;">181</td>
+<td>the pure root, <code>\vec{Ζ}</code> and <code>\tilde{Ζ}_{\mathrm{ad}}</code>, maths</td>
+</tr>
+<tr>
+<td>U+03D8</td>
+<td><code>Ϙ</code></td>
+<td style="text-align: right;">452</td>
+<td style="text-align: right;">36</td>
+<td>the Noether charge, <code>Ϙ=\int j_0\,d^{m-1}x</code></td>
+</tr>
+<tr>
+<td>U+03DB</td>
+<td><code>ϛ</code></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td>the same coupling charge as <code>ϙ</code>, written with the other stigma</td>
+</tr>
+<tr>
+<td>U+03BE</td>
+<td><code>ξ</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td>the field, where <code>\xi</code> belongs</td>
+</tr>
+<tr>
+<td>U+03D1</td>
+<td><code>ϑ</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td>the gauge angle, where <code>\theta_{\mathrm{gau}}</code> belongs</td>
+</tr>
+<tr>
+<td>U+03C7</td>
+<td><code>χ</code></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td>the character <code>χ^{(2,1)}_{(3)}</code>, where <code>\chi</code> belongs</td>
+</tr>
+<tr>
+<td>U+00C5</td>
+<td><code>Å</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>one author's initial, one unit</td>
+</tr>
+</tbody>
+</table></div>
+<p>Four of them compete with a command for the same object: <code>Ξ</code> with <code>\Xi</code> in 14 files, <code>ξ</code> with <code>\xi</code>, <code>ϑ</code> with <code>\theta</code>, <code>χ</code> with <code>\chi</code>. Two compete with each other: <code>ϙ</code> and <code>ϛ</code> are one charge in <em>The Path Integral and the Coupled Klein-Gordon Equation</em> and its Schrödinger twin.</p>
+<h2 id="the-gaps">The Gaps</h2>
+<ol>
+<li><strong>λ has two lives.</strong> In physics, 188 sites, the wavelength, as the rule says. In maths, 20 161 sites, the eigenvalue: <code>\lambda_i</code>, <code>\lambda_\pm</code>, <code>\lambda_k</code>, the roots of a characteristic polynomial. The rule is written in both conventions articles and enforced in one. Either the maths corpus moves to <code>\eta</code>, or the rule is scoped to physics and the maths corpus gets a line of its own.</li>
+<li><strong>ν is a measure in maths.</strong> 5 050 sites there, and the reserved role is not claimed in that corpus.</li>
+<li><strong>μ is the space index in maths.</strong> 13 323 sites, against 2 017 in physics, where <code>\imath</code> is the index. Two index letters, one per corpus, and neither file states the other's choice.</li>
+<li><strong>h carries two objects in physics.</strong> The Planck constant, bare, and the informational time <code>h_t</code>, a length. One letter, two senses, separated only by the subscript; both rows exist in <em>Physics Units and Common Elements Conventions</em>.</li>
+<li><strong>e carries three.</strong> The four units, 46 163 sites, the bulk of 66 839; Euler's number in <code>e^{i\theta}</code>; the elementary charge <code>e^{\pm}</code>. The first is told by the subscript, the second by the exponent, the third by the context.</li>
+<li><strong>i and ı are two letters for one job.</strong> The imaginary unit is <code>i</code> everywhere; the index is <code>i</code> in the maths corpus and <code>\imath</code> in physics, 26 429 sites against 117.</li>
+<li><strong>ι is used where the rule forbids it.</strong> <em>Index and Notation Conventions</em> says the letter carries no meaning and that a display introducing it is a defect. It occurs 25 times in physics, all as the Clifford map <code>\iota_{\mathrm{Cl}}</code>, and 1 566 times in maths.</li>
+<li><strong>ο is undocumented.</strong> 734 sites, all in physics, and no table of the conventions lists it: the electrostatic potential <code>\omicron_{\mathrm{pot}}</code>, the Higgs components <code>\omicron^\pm_{\mathrm{hgs}}</code>, an angle <code>\omicron_{\mathrm{ang}}</code>.</li>
+<li><strong>ϖ has two homes.</strong> The twistor spinor <code>\varpi_{\mathrm{twz}}</code> and the Cartan weight <code>\varpi_{\mathrm{wgt}}</code>, told apart by the label alone.</li>
+<li><strong>φ and ϕ are split by corpus.</strong> <code>\varphi</code> is the Euler totient in maths, 6 195 sites, and occurs once in physics; <code>\phi</code> is the potential in physics and a rotation angle in maths. Neither file states which.</li>
+</ol>
+<h2 id="how-to-re-measure">How to Re-measure</h2>
+<pre><code class="language-python">import glob, re, collections
+files = glob.glob('articles_maths/*.md') + glob.glob('articles_physics/*.md')
+span = re.compile(r'\$\$?(.+?)\$\$?', re.S)
+count = collections.Counter()
+for f in files:
+    for m in span.finditer(open(f, encoding='utf-8').read()):
+        body = re.sub(r'\\(?:mathrm|text|operatorname|mathbb|mathcal)\{[^{}]*\}', '', m.group(1))
+        for g in re.finditer(r'\\([A-Za-z]+)|(?&lt;![A-Za-z\\])([A-Za-z])(?![A-Za-z])', body):
+            count[g.group(1) or g.group(2)] += 1
+print(count.most_common(40))
+</code></pre>
+<p>The masking line removes upright and blackboard groups before the letters are counted, which is what keeps <code>o</code> and <code>p</code> out of <code>\mathrm{opp}</code>. Nested groups are masked to one level only; the tables above were built with a brace-matching pass that goes deeper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

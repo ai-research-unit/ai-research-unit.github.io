@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Cell: From the Cell Operator to the Corpus Gradient — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A working instruction, proved on one article. It tells an editor how to take one article that uses a cell operator — a product of a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-cell-from-the-cell-operator-to-the-corpus-gradient"><strong>Migration Cell: From the Cell Operator to the Corpus Gradient</strong></h1>
+<p><em>Status of this file.</em> <strong>A working instruction, proved on one article.</strong> It tells an editor how to take one article that uses a cell operator — a product $L_aR_b$ of a left and a right multiplication — and rewrite every derivative in it as the corpus gradient, leaving one edited file and changing nothing else. The numbers in §6 and §8 are measured on the article it was first run on, <em>The Spectral Triple of the Algebra</em>, where the rewrite touched 183 lines of 555 and changed no verified number.</p>
+<p><em>What the file is not.</em> It is not a licence to sweep the corpus. One article per run, one file edited, and every other site found is reported rather than repaired.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Inventory before editing.</strong> Pass 1A and pass 1B of §3 and §4 both run before a single line is rewritten.</li>
+<li><strong>Never classify from a grep.</strong> The grep proposes candidates; the definition decides. This is stated once and it is the rule the whole pass rests on.</li>
+<li><strong>Never introduce a new letter for the gradient.</strong> The conventions' $\tilde\nabla$, $\tilde\nabla^\natural$ and $\Box$ are the only spellings.</li>
+<li><strong>Never fake what the gradient cannot do.</strong> No one-field first-order massive equation, and no claim that $\tilde\nabla^2=\Box$.</li>
+<li><strong>Verify by computation, not by argument.</strong> Every number touched is recomputed and reported as a number.</li>
+</ol>
+<h2 id="1-the-task-and-the-article-that-is-gone">1. The Task, and the Article That Is Gone</h2>
+<p>Rewrite one article that uses a cell operator ($L_aR_b$ products) so that every derivative is the corpus gradient. Produce one edited file. Change nothing else.</p>
+<p>The article <em>The Gradient, the D'Alembertian and the Cell Operator</em> is retired: it was deleted from <code>articles_physics</code> and from the menu. Do not read it, do not cite it, and do not restore it. The gradient and the d'Alembertian are in items 2 and 5 of §2 and in <em>The Biquaternion D'Alembertian and Its Green's Functions</em>; the cell operator has no home article any more, which is the point of the migration.</p>
+<h2 id="2-read-first-in-this-order">2. Read First, in This Order</h2>
+<ol>
+<li><code>PLAN.md</code>.</li>
+<li><code>articles_physics/operator-and-calculus-conventions.md</code>.</li>
+<li><code>articles_physics/algebra-and-element-conventions.md</code>.</li>
+<li><code>articles_physics/matrix-representations-conventions.md</code>, only the $L$ and $R$ definitions.</li>
+<li>The article you are rewriting.</li>
+</ol>
+<h2 id="3-pass-1a-what-is-written">3. Pass 1A: What Is Written</h2>
+<p>List every occurrence of the offending operator with file and line:</p>
+<pre><code>grep -nE 'L_\{|R_\{' ARTICLE
+grep -nE '\^\{\\mathrm\{(axf|pau)\}\}' ARTICLE     # corpus marker for a cell display
+grep -nE 'cells?\b' ARTICLE                        # prose admission
+grep -nE '\\gamma_[0-9]' ARTICLE                   # gamma realisation of cells
+</code></pre>
+<p>For each hit, record which equation it belongs to, what it computes, and whether the surrounding prose depends on it being a cell — "the cells anticommute", "$\mathrm{End}_{\mathbb C}(\mathbb B)$ has dimension sixteen", "the four exist there".</p>
+<p>Do not start rewriting until this list is complete.</p>
+<p><strong>Calibration, measured on this corpus.</strong> 411 physics articles, 2 362 maths articles; 110 physics files contain both <code>L_{</code> and <code>R_{</code>, and 100 carry the axf marker; 285 files say "cell" somewhere; 121 print a gamma subscripted by a number. The same grep over <code>articles_maths</code> hits 366 files and is nearly all noise: there $L$ and $R$ are the ordinary left and right multiplications of a general algebra, checked in <code>adjoints-in-a-commutative-involutive-algebra.md</code>, which uses $L_a$ with $L_a^\dagger=L_{\sigma(a)}$ and no second side.</p>
+<p><strong>Consequence.</strong> Never classify from the grep. The grep only proposes candidates. Classify by the definition, in pass 1B.</p>
+<h2 id="4-pass-1b-what-was-renamed">4. Pass 1B: What Was Renamed</h2>
+<p><strong>Why this pass exists.</strong> A cell is a product of one left and one right multiplication, and a product can be renamed. The grep of §3 finds the ones still written as products; the renamed ones survive it untouched. In the spectral triple article the grep for "cell" found the prose and the honest operators, and every genuine two-sided cell was hidden behind a glyph: $E_4$, $E_k$, $C$, $\gamma_\mu[\cdot]$. Nothing in the equations said $L$ or $R$.</p>
+<p>So the search has two passes. 1A finds what is written. 1B finds what was renamed. Do both; 1A alone will report the article clean when it is not.</p>
+<p>A name is a hidden cell when its definition puts one element on the left and one on the right:</p>
+<pre><code>grep -nE '=[^$]{0,24}L_\{' ARTICLE | grep -E 'R_\{'
+</code></pre>
+<p><strong>Aliases actually found in this corpus</strong>, glyph on the left, $LR$ product on the right. The definitions are quoted from the articles, not paraphrased:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>definition</th>
+<th>frame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$iC_\mu$</td>
+<td>$-L_{e_\mu}R_{e_k(\mu)}$</td>
+<td>Euclidean</td>
+</tr>
+<tr>
+<td>$c_\mu$</td>
+<td>$L_{ie_\mu}R_{e_\nu(\mu)}$</td>
+<td>Majorana</td>
+</tr>
+<tr>
+<td>$\Gamma_k$</td>
+<td>$iL_{e_k}R_{e_y}$</td>
+<td>gamma</td>
+</tr>
+<tr>
+<td>$G_k$</td>
+<td>$iL_{e_k}R_{e_y}$</td>
+<td>the same, another article</td>
+</tr>
+<tr>
+<td>$S_{ab}$</td>
+<td>$\tfrac14[iL_{e_a}R_{\cdot},iL_{e_b}R_{\cdot}]$</td>
+<td>spin, a commutator of cells</td>
+</tr>
+<tr>
+<td>$S_{0k}$</td>
+<td>$\tfrac{i}{2}L_{e_k}R_{e_z}$</td>
+<td>spin</td>
+</tr>
+<tr>
+<td>$U$, $Q$, $B$</td>
+<td>rotation and boost operators</td>
+<td>frame</td>
+</tr>
+<tr>
+<td>$V^{\mathrm{vol}}$</td>
+<td>$-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
+<td>chirality</td>
+</tr>
+<tr>
+<td>$E_4$, $E_k$, $C$, $\chi$, $P$, $\gamma_\mu[\cdot]$</td>
+<td>the spectral triple article</td>
+<td>spectral triple</td>
+</tr>
+</tbody>
+</table></div>
+<p>The list is not closed. Any glyph is a candidate, and the more an article uses one, the more likely it is a cell.</p>
+<p><strong>Read the first three definitions again and note what is wrong with two of them.</strong> $c_0=R_{ie_x}$ and $\Gamma_t=iR_{e_x}$ carry one element, not two, and an article calls them frame cells anyway. The false cell whose second element is $e_t$ is the commonest shape of all, because $e_t$ is the identity. Expect to find it in the notation table, already asserted, in any article that uses a frame.</p>
+<h2 id="5-the-four-questions">5. The Four Questions</h2>
+<p>For every operator symbol in the article that is neither one of the four units nor a scalar, ask in this order.</p>
+<p><strong>Q1. Element or map?</strong> Can it be multiplied into the algebra, as $\chi F$ is? If it acts on a field and the product with the field is written as an action and never as a product, it is a map, and a map on the algebra is a sum of cells.</p>
+<p><strong>Q2. Which side?</strong> Compute the commutator with the eight elementary actions $L_{e_\mu}$ and $R_{e_\mu}$. All four $[\cdot,R_{e_\mu}]=0$ gives a left action. All four $[\cdot,L_{e_\mu}]=0$ gives a right action. Neither gives a genuine two-sided cell. Both gives a central element, which is a scalar and has nothing to migrate.</p>
+<p><strong>Q3. Which element?</strong> A single left action is $L_b$ and a single right action is $R_b$. Find $b$ and write the action out: $\psi\to b\psi$, or $\psi\to\psi b$.</p>
+<p><strong>Q4. Is the second element dead?</strong> $L_{e_t}$ is the identity of the algebra, so $L_{e_t}R_b=R_b$. Two of the eight operators of the spectral triple article collapse this way, and what had been written as a cell was a single right action. Correct the definition; do not preserve the shape.</p>
+<h2 id="6-the-fingerprint-eight-numbers-that-decide">6. The Fingerprint: Eight Numbers That Decide</h2>
+<p>Measured on the spectral triple article. Operators as $4\times4$ arrays on $\mathbb B$, units in the order $e_t,e_x,e_y,e_z$; entries are $\max|[\cdot,L_{e_\mu}]|$ and $\max|[\cdot,R_{e_\mu}]|$.</p>
+<pre><code>-i R_ez         L 0 0 0 0    R 0 2 2 0    right action
+i R_ez          L 0 0 0 0    R 0 2 2 0    right action
+-L_ez           L 0 2 2 0    R 0 0 0 0    left action
+i R_ex          L 0 0 0 0    R 0 0 2 2    right action
+-L_ex R_ey      L 0 0 2 2    R 0 2 0 2    TWO-SIDED
+-L_ez R_ey      L 0 2 2 0    R 0 2 0 2    TWO-SIDED
+i L_et R_ex     L 0 0 0 0    R 0 0 2 2    right action (L_et dead)
+-i L_et R_ez    L 0 0 0 0    R 0 2 2 0    right action (L_et dead)
+</code></pre>
+<p>Eight numbers decide every case. To reproduce them on another article, use the quaternion multiplication of the corpus and</p>
+<pre><code class="language-python">def fp(M):
+    return ([abs((M@L(a)-L(a)@M)).max() for a in range(4)],
+            [abs((M@R(a)-R(a)@M)).max() for a in range(4)])
+# L(0)=R(0)=identity, L(1..3), R(1..3) from e_x,e_y,e_z
+</code></pre>
+<h2 id="7-the-traps-found-in-practice">7. The Traps Found in Practice</h2>
+<p><strong>Side flip.</strong> $-iR_{e_z}$ and $-L_{e_z}$ are different operators, and a charge-conjugation claim is usually made about one of them only. In the spectral triple article $\chi$ and $C$ differ exactly this way, and the transposition signs differ with them — $(-,-,+,-)$ for $C$. Check the side before reusing a sentence that was written about the other one.</p>
+<p><strong>Dead first element.</strong> See Q4. It is the commonest silent degeneration.</p>
+<p><strong>Glyph collision.</strong> $\mathbb D$ is the pair operator on $\mathbb B+\mathbb B$ in <em>Operator and Calculus Conventions</em> and must not be reassigned to a cell. Check every glyph against the notation table of the conventions before using its usual meaning.</p>
+<p><strong>Frame bracket, and what it does not mean.</strong> $X[\mathbb M_-]$ is a <strong>frame label</strong> defined in <em>Frame and Metric Conventions</em>: the object $X$ read in the material frame, not $X$ restricted to the subspace $\mathbb M_-$. The distinction is not pedantry. Tested on the sector itself, $\mathbb M_-=\mathbb C e_-$ with $e_-=(1-i\vec e_z)/2$: $C=-L_{\vec e_z}$, $\chi=-iR_{\vec e_z}$ and $\gamma_5=-iR_{\vec e_z}$ keep the sector, while $E_1$, $E_2$, $E_3$, $C_\mu$ and all four $\gamma_\mu$ send $e_-$ out of it, residual $0.5$. So the bracket cannot be read as a restriction, and it must not be deleted for being one. What is wrong in the articles is the other thing: the frame image $\gamma_\mu[\mathbb M_-]$ is <strong>defined</strong> as a two-sided cell, and that definition is in the conventions themselves.</p>
+<p><strong>Two meanings of the same bracket.</strong> $\gamma_\mu[\mathbb M_-]$ with a Greek index is the Clifford image; $\gamma_a[\mathbb M_-]$ with a Latin index is the Lorentz factor of particle $a$, a scalar, as in $d\tau_a=dt'/\gamma_a[\mathbb M_-]$. Same glyph, same bracket, different object. Do not migrate the second one and do not renumber it.</p>
+<p><strong>Prose admission is not a definition.</strong> An article may say once that it is "written in cells" and then never show one. That single sentence is the strongest signal in the corpus and is worth grepping on its own.</p>
+<h2 id="8-the-cost-of-one-article">8. The Cost of One Article</h2>
+<p>Per article: list every operator glyph, answer Q1 to Q4, then decide per glyph whether it is a single side (write the action out), two-sided (keep it, but name both elements), or not a map at all (a matrix, keep it as a matrix and say so).</p>
+<p>In the spectral triple article that was eight glyphs, six reducible and two genuinely two-sided, and the rewrite touched 183 lines of 555 without changing a single verified number.</p>
+<h2 id="9-step-2-the-gradient-replaces-the-operator">9. Step 2: The Gradient Replaces the Operator</h2>
+<p>$$\tilde\nabla=e_t\frac{d}{dQ_t}+e_x\frac{d}{dQ_x}+e_y\frac{d}{dQ_y}+e_z\frac{d}{dQ_z},$$</p>
+<p>$$\tilde\nabla^\natural=\sum_\mu\epsilon_\mu e_\mu\frac{d}{dQ_\mu},\qquad \Box=\tilde\nabla\tilde\nabla^\natural=\frac{d^2}{dQ_t^2}+\Delta_Q,$$</p>
+<p>and on the material sector $\Delta-c^{-2}d^2/dt'^2$. Define these once, explicitly, in the introduction or the notation table. Never introduce a new letter for the gradient.</p>
+<h2 id="10-step-3-the-translation-table">10. Step 3: The Translation Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the source's form</th>
+<th>the corpus form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$dF=0$</td>
+<td>$\tilde\nabla\tilde F=0$</td>
+</tr>
+<tr>
+<td>$iR_{e_x}d/dQ_0$</td>
+<td>the $e_t$ term of $\tilde\nabla$, with $d/dQ_t=-(i/c)d/dt'$</td>
+</tr>
+<tr>
+<td>$iL_{e_k}R_{e_y}d/dQ_k$</td>
+<td>$\vec e_k\,d/dQ_k$, for $k=x,y,z$</td>
+</tr>
+<tr>
+<td>$d\psi\,\omega$</td>
+<td>$(\tilde\nabla\psi)(-\vec e_z)$</td>
+</tr>
+<tr>
+<td>$d\cdot J$</td>
+<td>$\langle\tilde\nabla,\tilde J\rangle$, written as an explicit contraction</td>
+</tr>
+<tr>
+<td>plane wave: symbol $\tilde K=k_0-i\vec k$</td>
+<td>$\tilde Kf=0$ and $\tilde K^\natural\tilde K=k_0^2-\lvert\vec k\rvert^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>State the source's own equation as "the source's own equation" and translate once. Do not display the cell form anywhere, not even quoted.</p>
+<h2 id="11-step-4-do-not-fake-what-the-gradient-cannot-do">11. Step 4: Do Not Fake What the Gradient Cannot Do</h2>
+<p>The cell operator existed to give one first-order operator with scalar square, so that a single field could carry a mass. In the algebra $\tilde\nabla^2$ is not scalar, because $e_t$ commutes with the spatial units and mixed derivatives add. Therefore:</p>
+<ul>
+<li>the free equation stays first order, one field: $\tilde\nabla\tilde F=0$;</li>
+<li>the massive equation becomes the chiral pair
+$$\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R.$$</li>
+</ul>
+<p>Say this explicitly in the text. Do not write a one-field first-order massive equation, and do not claim $\tilde\nabla^2=\Box$. Delete any prose that argued from the cells' anticommutation or from the dimension of $\mathrm{End}_{\mathbb C}(\mathbb B)$.</p>
+<h2 id="12-step-5-keep-quoted-source-notation-fixed-and-flagged">12. Step 5: Keep Quoted Source Notation, Fixed and Flagged</h2>
+<p>Keep the source's letters where they are part of a quoted result, but define them in the biquaternion algebra: $\omega=-\vec e_z$, $\omega^2=-e_t$, the pseudoscalar. The source's "$i$" <strong>is</strong> $\omega$, not the corpus's central $i$. Say so once, keep $\omega$ for it, and keep the central $i$ free. Watch both traps:</p>
+<ul>
+<li><strong>symbol collision:</strong> $\mathbb D$ means the pair operator on $\mathbb B+\mathbb B$ in <em>Operator and Calculus Conventions</em>. It is not the cell operator, and it is not reassigned.</li>
+<li><strong>side error:</strong> the source's spin plane acts on the right, $\psi\to-\psi\vec e_z$. The left action $-e_z\psi$ is a different element. Check the side in every occurrence.</li>
+</ul>
+<h2 id="13-step-6-signs-that-depended-on-the-old-frame">13. Step 6: Signs That Depended on the Old Frame</h2>
+<p>Raised-index frames give the negative of the Cartesian curl and gradient. After switching to $\tilde\nabla$, recompute every sign that was justified by "the source's convention". A Beltrami case: $\mathrm{curl}\vec W=+\Omega\vec W$ in the corpus's gradient, while the source prints a minus. Keep the honest sign and one sentence explaining the difference.</p>
+<h2 id="14-step-7-delete-what-was-pure-cell-construction">14. Step 7: Delete What Was Pure Cell Construction</h2>
+<p>If a whole section — a gamma-matrix realisation, an $\mathrm{End}_{\mathbb C}(\mathbb B)$ discussion — exists only to house the cells, delete it and say in the report that you did. Remove its entries from Further Reading and from the notation table. Do not leave dangling cross-references or §-pointers to deleted sections.</p>
+<h2 id="15-step-8-verify">15. Step 8: Verify</h2>
+<p><strong>(a)</strong> <code>grep -nE 'R_\{|L_\{|L_\{e_t|frame cell|gamma_' ARTICLE</code> must be empty.</p>
+<p><strong>(b)</strong> <code>grep -noE '\\partial[^/]' ARTICLE</code>: only $d/dQ$, $d/dt'$, $d/dx$ and the like may remain. No $\partial F$, no $\partial\psi$, no $\partial\cdot J$.</p>
+<p><strong>(c)</strong> Count delimiters: display-math pairs even, inline <code>$</code> even, braces balanced.</p>
+<p><strong>(d)</strong> Re-verify every numeric or algebraic claim you touched, by direct computation, not by argument. The example that matters: for several null $k$, left multiplication by $\tilde K$ on the six bivector components has rank 4, kernel dimension 2, and $f^2=0$ on the whole kernel. Report the numbers.</p>
+<p><strong>(e)</strong> Re-read the article once for leftover claims that are now false.</p>
+<p><strong>(f)</strong> Close the hidden-$LR$ audit. Every operator symbol left in the article is one of: an element of the algebra, an action written as $\psi\to\ldots$, or a matrix declared to be one. No glyph is an undefined map. Show this as a list, one line per symbol, in the report.</p>
+<p><strong>(g)</strong> Re-run Q2 on each operator whose side the text asserts, and confirm the sides still agree with the fingerprint. A pass that changed a definition without rechecking the sentences that call it "left" or "right" leaves the prose inverted.</p>
+<p><strong>(h)</strong> Confirm that no bracket of the form $G[\cdot]$, if one survives, is glossed as a restriction to a subspace. It is not one.</p>
+<h2 id="16-the-rules-of-the-edit">16. The Rules of the Edit</h2>
+<ul>
+<li>Edit the one file in place. Do not create variants, backups or "fixed" copies.</li>
+<li>Do not touch any other article, even if it has the same problem. Report it.</li>
+<li>Do not commit, do not push, do not write any memory or plan file.</li>
+<li>Keep the article's structure, voice and length unless a section must go.</li>
+<li>State in the report what you replaced, what you deleted, which signs you changed, and what you verified numerically.</li>
+</ul>
+<h2 id="17-the-report-format">17. The Report Format</h2>
+<ol>
+<li><strong>The hidden-$LR$ audit.</strong> One line per operator symbol, with its fingerprint and its verdict: element, left, right, two-sided, or matrix. This goes first, because it is the part the grep cannot check and the reader cannot verify from the diff.</li>
+<li><strong>Inventory.</strong> Number of cell occurrences, files, lines, split into the ones written as products and the ones found only by pass 1B.</li>
+<li><strong>Translation applied.</strong> Old form to new form, one line each.</li>
+<li><strong>Deletions.</strong> Sections and index entries removed, with the reason.</li>
+<li><strong>Sign changes.</strong> Old to new, with the reason.</li>
+<li><strong>Verification.</strong> Each check of §15 and its result.</li>
+<li><strong>Open items.</strong> Anything you could not fix under the conventions, stated as an open item.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>One article, two passes, one operator family.</strong> A cell is a product of a left and a right multiplication; the article is clean only when every such product is either written out as an action or replaced by the gradient.</p>
+<ul>
+<li>The grep finds what is written, never what was renamed. 110 physics files contain both <code>L_{</code> and <code>R_{</code>, 100 carry the axf marker, 285 say "cell", and 121 print a numbered gamma — and the renamed cells survive all four greps.</li>
+<li>Four questions decide every glyph: element or map, which side, which element, and whether the second element is $e_t$ and therefore dead.</li>
+<li>Eight numbers settle the side: the commutator fingerprint against $L_{e_\mu}$ and $R_{e_\mu}$.</li>
+<li>The traps are named and each has been met: the side flip, the dead first element, the $\mathbb D$ collision, the frame bracket that is not a restriction, the Greek and Latin $\gamma[\mathbb M_-]$, and the prose admission that is not a definition.</li>
+<li>The gradient has a fixed spelling, and the mass is the chiral pair. Nothing is faked.</li>
+<li>One verified run: eight glyphs, six reducible, two genuinely two-sided, 183 lines of 555 touched, no number changed.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$, $R_a$</td>
+<td>left and right multiplication by $a$ on the algebra</td>
+</tr>
+<tr>
+<td>a cell</td>
+<td>a product $L_aR_b$; two-sided when both factors act</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>the identity of the algebra; $L_{e_t}$ is dead</td>
+</tr>
+<tr>
+<td>$\tilde\nabla$, $\tilde\nabla^\natural$, $\Box$</td>
+<td>the corpus gradient, its natural adjoint, and the d'Alembertian</td>
+</tr>
+<tr>
+<td>$\omega=-\vec e_z$</td>
+<td>the pseudoscalar; the source's "$i$"</td>
+</tr>
+<tr>
+<td>$X[\mathbb M_-]$</td>
+<td>the frame label: $X$ read in the material frame, not a restriction</td>
+</tr>
+<tr>
+<td>the fingerprint</td>
+<td>the eight commutator maxima that name the side</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

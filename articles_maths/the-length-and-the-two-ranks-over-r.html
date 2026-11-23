@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Length and the Two Ranks — Biquaternion Universe</title>
+  <title>The Length and the Two Ranks over $\mathbb{R}$ — Biquaternion Universe</title>
   <meta name="description" content="The length of an operator is the least number of two-sided operators whose sum it is, and it is a rank: the rank of the operator written in the basis of…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-length-and-the-two-ranks"><strong>The Length and the Two Ranks</strong></h1>
+        <h1 id="the-length-and-the-two-ranks-over-math0"><strong>The Length and the Two Ranks over $\mathbb{R}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The length of an operator is the least number of two-sided operators whose sum it is, and it is a rank: the rank of the operator written in the basis of the $n^{2}$ matrix-unit two-sided operators.</strong> So an operator carries two ranks. The first is the rank of the map on $\mathbb{R}^{n^{2}}$. The second is the length. The two are the ranks of two matrices that differ by a partial transposition, and neither bounds the other beyond the inequality $\text{length}\ge\operatorname{rank}/n^{2}$.</p>
 <p>The article defines the length, proves that it equals the rank of the coefficient matrix, computes it for the identity operator, for the transpose and for the two-sided operators, gives the bound $\ell(T)\le n^{2}$ with equality on the complement of a hypersurface, and compares the count with the complex case. It assumes <em>The Two-Sided Operators and the Real Segre Cone</em> for the bilinear map $(A,B)\mapsto T_{A,B}$, its cone and its rank formula, and it defers the topology of the operator space to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
@@ -165,7 +165,7 @@ $$</p>
 <p>inside $\mathbb{R}^{n^{4}}$. At $k=n^{2}-1$ the dimension is $(n^{2}-1)(n^{2}+1)=n^{4}-1$, a hypersurface, defined by $\det c=0$. So a generic operator has length exactly $n^{2}$: the length is maximal exactly when $\det c\ne0$.</p>
 <p><strong>The generic value is the maximum.</strong> The polynomial $\det c$ is not identically zero, since the transpose has $\det c=1$. Hence the complement of the hypersurface is a nonempty open set, dense in the operator space, and every operator in it has length $n^{2}$.</p>
 <p><strong>The strata are the strata of a determinantal variety.</strong> The operators of length at most $k$ have dimension $k(2n^{2}-k)$, and the operators of length exactly $k$ have dimension $k(2n^{2}-k)-(k-1)(2n^{2}-k+1)=2n^{2}-2k+1$. At $k=1$ this is $2n^{2}-1$, the dimension of the Segre cone, and at $k=n^{2}$ it is $1$, the open cone of the operators of full length.</p>
-<h2 id="the-length-over-math163">The Length over $\mathbb{C}$</h2>
+<h2 id="the-length-over-math164">The Length over $\mathbb{C}$</h2>
 <p><strong>The length does not change under complexification.</strong> The coefficient matrix of $T$ has real entries, and the rank of a real matrix is the same whether it is read over $\mathbb{R}$ or over $\mathbb{C}$: the rank is the largest order of a nonvanishing minor, and the minors are the same real polynomials. So $\ell_{\mathbb{C}}(T)=\ell_{\mathbb{R}}(T)$ for every real operator $T$, and the two-sided operators over $\mathbb{C}$ have length one as well.</p>
 <p><strong>What changes is the geometry of the cone, not the count.</strong> Over $\mathbb{C}$ the Segre cone has the same dimension $2n^{2}-1$ and the same rank-one locus, but the cone is the complex cone of a complex variety, and the real points of the rank-one locus are the products of real lines, as in <em>The Two-Sided Operators and the Real Segre Cone</em>.</p>
 <p><strong>The count is a count of tensors.</strong> The algebra $\operatorname{End}(M_n)$ is $M_n\otimes M_n^{\mathrm{op}}$, so a decomposition of $T$ into two-sided operators is a decomposition of a tensor into pure tensors. For a two-way tensor the least number of pure tensors is the rank of the tensor as a matrix, in any basis, and that number is the same over $\mathbb{R}$ and over $\mathbb{C}$.</p>

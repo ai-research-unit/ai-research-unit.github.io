@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: A Mass Written in an Energy Unit, Explicit or Implicit — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. An audit procedure, and the record of one run of it. It measures, classifies and reports. It repairs nothing by itself. The order in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-a-mass-written-in-an-energy-unit-explicit-or-implicit"><strong>Audit: A Mass Written in an Energy Unit, Explicit or Implicit</strong></h1>
+<p><em>Status of this file.</em> An audit procedure, and the record of one run of it. It measures, classifies and reports. It repairs nothing by itself. The order in which a repair is done is §<em>Guidance to Solve the Issue</em>, and the five rules below bind anyone who acts on this file.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Audit before writing.</strong> Produce the candidate list of §5 and the counts of §6 before a single line is rewritten.</li>
+<li><strong>Never convert an energy.</strong> A rest energy $m_ic^{2}$, a width $\Gamma$, a cutoff, a temperature $k_BT$, a momentum $p_ic$, a centre-of-mass energy $\sqrt{s}$, an energy release $Q$, a kinetic energy, and the conversion $hc$ are legal in electronvolts and stay.</li>
+<li><strong>Never produce a kilogram</strong>, except where a denominator is being defined, once.</li>
+<li><strong>Never write a fraction before the anchor article.</strong> In a corpus read from the top, a denominator used before it is defined is a forward reference, and no later page repairs it.</li>
+<li><strong>Never report a file as done without the gate output beside it.</strong> "Done" is a list of line numbers and a set of empty gates, not a sentence.</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The defect has two spellings.</strong> The explicit one prints the divisor and the constant: $m_e=0.511\ \mathrm{MeV}/c^{2}$. The implicit one deletes both: $m_e=0.511\ \mathrm{MeV}$. They are the same error, and the second is the one the corpus uses everywhere. This audit covers those two spellings, their square and their root, and nothing else.</p>
+<p><strong>The claim.</strong> A mass printed as a number of electronvolts is not a shorthand. It is the assertion $c=1$, made invisibly, and it is false. The corpus states one rule, <em>a mass is written in a unit that contains no constant</em>, and this file finds every place the rule is broken in <code>articles_physics/</code> and in <code>articles_internal/</code>.</p>
+<p><strong>Why the defect returns, and it does return.</strong> Three reasons, none of them carelessness. The writing is shorter than the legal one. Every external source prints it: a mass in MeV is what the Particle Data Group gives, and a transcription keeps the number and drops the meaning of the unit. And the digits are right, so a reader who checks the arithmetic finds nothing wrong, because nothing in the arithmetic is wrong, only the dimension.</p>
+<p><strong>The one-line test.</strong> Ask what the number is a number <em>of</em>. If the answer is a mass and the unit is an energy, the line is a defect. If the answer is an energy, the line is legal, whatever symbol stands beside it.</p>
+<p><strong>What the audit returns.</strong> A list of files and line numbers, a classification of each line against five shapes and one header form, the counts of §6, the fifteen gates of §8 (thirteen commands and two read by eye), and the repair order of §9.</p>
+<p><strong>The two things this file is not.</strong> It is not a licence to tidy the corpus: a legal energy rewritten is a new defect. It is not a one-time migration: the same scan is re-run whenever the author asks whether the defect has come back, and the answer is the count, not an impression.</p>
+<h2 id="1-the-problem-in-plain-words">1. The Problem, in Plain Words</h2>
+<p><strong>A mass and an energy differ by one constant.</strong> $[\text{energy}]=[\text{mass}]\,\mathrm{L}^{2}\mathrm{T}^{-2}$, and the constant is $c^{2}$. In SI, $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$ and $1\ \mathrm{eV}/c^{2}=1.782\,662\times10^{-36}\ \mathrm{kg}$. The two quantities are one number only where $c$ has been set to one.</p>
+<p><strong>So an electronvolt mass is a deleted conversion.</strong> The line $m_e=0.511\ \mathrm{MeV}$ expands to $m_e=0.511\times10^{6}\times1.602\,176\,634\times10^{-19}\ \mathrm{J}$, which is an energy, which is not the mass. Read as a conversion, it is the statement $1\ \mathrm{kg}=8.9876\times10^{16}\ \mathrm{J}$ used as if it were an identity of units. The number $0.511$ is correct for $m_ec^{2}$ and wrong for $m_e$.</p>
+<p><strong>What it costs, in three places.</strong></p>
+<ul>
+<li><strong>Comparison.</strong> Nine masses in MeV compare as nine powers of ten, and a nine-row table becomes a nine-row exercise in exponents. Nine fractions $n_i=m_i/E_{\mathrm{vev}}$ compare at a glance, and $n_Z=0.3704$ says what the table is for.</li>
+<li><strong>Dimension.</strong> A mass squared quoted in $\mathrm{eV^{2}}$ is an energy squared, so the formula that consumes it has absorbed $c^{4}$ without showing it.</li>
+<li><strong>Roots.</strong> A root of a mass in an energy unit is a half power of an energy: $\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$ carries the label of a mass and the dimension of a square root of a rest energy.</li>
+</ul>
+<p><strong>What is not the defect, and the list is longer than the defect.</strong> A rest energy $m_ec^{2}=0.511\ \mathrm{MeV}$; a decay width $\Gamma=2.085\ \mathrm{GeV}$; a cutoff $\Lambda=1.8\times10^{41}\ \mathrm{GeV}$; a temperature $k_BT=159.5\ \mathrm{GeV}$; a momentum $p_ic=100\ \mathrm{MeV}$; a centre-of-mass energy $\sqrt{s}=91.2\ \mathrm{GeV}$; an energy release $Q=1.31\ \mathrm{MeV}$; a binding energy, an uncertainty, a bound; the conversion $hc=1.239\,841\,98\times10^{-6}\ \mathrm{eV\,m}$; and the number $1.267$ of the oscillation phase. Every one of these is an energy, a momentum or a number, and every one is legal in electronvolts. The first job of the audit is to separate them from the masses, and the separation is by hand.</p>
+<p><strong>Why the symbol does not decide.</strong> The same letter carries a mass in one line and a cutoff in the next: $M_{\mathrm{Pl}}$ is a scale, $m_b$ is a mass. A scan that keys on the letter will misread half the corpus; a scan that keys on the unit only, and leaves the reading to the eye, will not.</p>
+<h2 id="2-the-legal-writings-and-the-refused-ones">2. The Legal Writings and the Refused Ones</h2>
+<p><strong>Five writings, three legal and two refused.</strong> The anchor article defines $E_{\mathrm{vev}}=246.22\ \mathrm{GeV}=246\,220\ \mathrm{MeV}=2.4622\times10^{11}\ \mathrm{eV}$, which is the divisor for the fraction and which is an energy in its own right.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>writing</th>
+<th>dimension</th>
+<th>where the constant is</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n_e=m_e/E_{\mathrm{vev}}=2.075\times10^{-6}$</td>
+<td>none</td>
+<td>nowhere: the units cancel</td>
+<td><strong>the default</strong></td>
+</tr>
+<tr>
+<td>$m_e=9.109\,383\,7\times10^{-31}\ \mathrm{kg}$</td>
+<td>mass</td>
+<td>nowhere</td>
+<td>legal, <strong>definition only</strong>, once</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{vev}}=246.22\ \mathrm{GeV}$</td>
+<td>energy</td>
+<td>nowhere</td>
+<td>legal: it is an energy, and it names the divisor</td>
+</tr>
+<tr>
+<td>$m_e=0.511\ \mathrm{MeV}$</td>
+<td>energy</td>
+<td>$c$, invisibly</td>
+<td><strong>refused</strong></td>
+</tr>
+<tr>
+<td>$m_e=0.511\ \mathrm{MeV}/c^{2}$</td>
+<td>mass</td>
+<td>$c$, inside the unit label</td>
+<td><strong>refused</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the fourth row is refused.</strong> Its dimension is an energy and its symbol is a mass. The missing factor is not an oversight: it is the declaration $c=1$, made at the one place where the number looks right.</p>
+<p><strong>Why the fifth row is refused although its dimension is right.</strong> $1\ \mathrm{eV}/c^{2}=1.782\,662\times10^{-36}\ \mathrm{kg}$, exact, and the conversion is correct. The objection is that the conversion is not on the page: the constant sits inside the unit label, where no reader expands it and no gate can measure it, and the spelling that drops it is one deletion away in the same cell. The corpus therefore carries one unit of mass, the kilogram, one unit of energy, the joule with its electronvolt multiple, and no unit whose definition is a quotient of the two.</p>
+<p><strong>Why the ratio is the default.</strong> Divide two masses and the unit cancels before a number appears. Nothing is left for a constant to hide in, nothing can be expanded, and no neighbouring keystroke can silently introduce one. The fraction is a pure number, and a number is right or wrong on its face.</p>
+<p><strong>Why the kilogram is nevertheless printed once.</strong> A ratio needs a denominator, and a denominator must be some mass in some unit. The kilogram is worth printing exactly where a scale is introduced — in the anchor article for $m_{\mathrm{vev}}$, and in the conventions table for $m_p$ — and nowhere else. A table of nine masses in kilograms forces nine powers of ten on a reader who wants a comparison.</p>
+<h2 id="3-five-shapes-and-the-header-form">3. Five Shapes, and the Header Form</h2>
+<p><strong>The defect is a line, not a token.</strong> The shapes below cover what the corpus contains, and each is the same defect in a different costume: a mass given the unit of an energy (A, B, C), a root given a half power of an energy (D), a mass squared given the unit of an energy squared (E), or a unit label that carries $c$ (F).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>shape</th>
+<th>how it looks</th>
+<th>where it lives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>a table column headed by a mass symbol, cells in MeV or GeV</td>
+<td>the mass ledgers</td>
+</tr>
+<tr>
+<td>B</td>
+<td>prose naming a mass and giving it a number of electronvolts</td>
+<td>the narrative articles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>an assignment, $m_X$ or $M_X$ equal to a number of electronvolts</td>
+<td>the parameter tables and the prose around them</td>
+</tr>
+<tr>
+<td>D</td>
+<td>a root of a mass with the unit $\mathrm{eV}^{1/2}$</td>
+<td>the ladder table and one internal note</td>
+</tr>
+<tr>
+<td>E</td>
+<td>a mass squared, in $\mathrm{eV}^{2}$ or $\mathrm{GeV}^{2}$</td>
+<td>the neutrino articles and the hierarchy article</td>
+</tr>
+<tr>
+<td>F</td>
+<td>a column headed $(\mathrm{MeV}/c^{2})$, a unit label with $c$ inside</td>
+<td>one legacy table</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Examples, taken from the corpus as it stands.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>shape</th>
+<th>the line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>$M_H=125.09$ GeV</td>
+</tr>
+<tr>
+<td>B</td>
+<td>the current masses of the two up quarks and the down quark in the proton total $9.0$ MeV</td>
+</tr>
+<tr>
+<td>C</td>
+<td>$2m_u+m_d=2(2.16)+4.67=8.99\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>$\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$\delta m^{2}_{21}=7.42\times10^{-5}\ \mathrm{eV}^{2}$</td>
+</tr>
+<tr>
+<td>F</td>
+<td>a column headed Barut's formula $(\mathrm{MeV}/c^{2})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A bare root of a mass in the kilogram is not a shape.</strong> $\mathrm{kg}^{1/2}$ is a derived unit containing no constant, and it is admitted. Only shape D is refused, because the energy unit inside the radical is the hidden $c$.</p>
+<p><strong>Shape E is a mass, not an energy.</strong> $[\mathrm{eV^{2}}]=[\text{energy}^{2}]$, and a mass squared needs $c^{4}$. It is the same rule one dimension up.</p>
+<p><strong>Shape F is the quietest one.</strong> No number is wrong in that table; the header has already performed a division by $c^{2}$ and hidden it. It is the writing refused on grounds of the label alone, and it is the one a scan for numbers will never find.</p>
+<h2 id="4-the-region-rule">4. The Region Rule</h2>
+<p><strong><code>physics.md</code> is read from the top</strong>, so every article is read before or after <a href="../../articles_physics/vacuum-value-normalization-energy-mass-wave-number-and-length.html">Vacuum Value Normalization</a>. The principle does not move between the two regions. The denominators available do.</p>
+<p><strong>After the anchor: the fraction is the writing.</strong> $n_i=m_i/m_{\mathrm{vev}}$ is legal, and every mass table uses it. The anchor article itself prints $m_{\mathrm{vev}}$ in the kilogram, once, so that the fraction has a denominator. No later article needs a kilogram and none receives one as a repair.</p>
+<p><strong>Before the anchor: the article supplies a local denominator.</strong> A mass is written as a ratio of two masses both named on the page, $m_e/m_p=5.446\,170\times10^{-4}$, or in the kilogram where a denominator is being defined, once. $m_{\mathrm{vev}}$, $E_{\mathrm{vev}}$, the fraction $n_i$ and a link to the anchor are <strong>defects</strong> in this region, of the same kind as an electronvolt mass: each names a quantity the reader has not met.</p>
+<p><strong>Measured on 2026-11-23.</strong> The menu carries $396$ article links before the anchor entry and $283$ after it. The ratio is not a detail: six tenths of the corpus cannot use the fraction at all, and a pass that writes it there has replaced one unresolvable reference with another.</p>
+<h2 id="5-the-audit-two-corpora-one-command">5. The Audit: Two Corpora, One Command</h2>
+<p><strong>Scope.</strong> <code>articles_physics/*.md</code> (679 files) and <code>articles_internal/**/*.md</code> (93 files, the <code>instructions/</code> folder excluded). <code>articles_maths/</code> has no electronvolt mass and is not scanned. The menus are read for the region rule and are otherwise untouched.</p>
+<p><strong>The normalisation, and why it is the first step.</strong> The same unit is written at least four ways in the corpus: <code>eV</code> inside math, <code>\mathrm{eV}</code>, <code>eV$^{2}$</code> with the exponent outside the span, and <code>\mathrm{eV}^2</code> with no braces. A pattern that matches one of them misses the rest, and an earlier census missed sites for exactly this reason. The scan therefore strips the delimiters first and matches after.</p>
+<p><strong>The scan.</strong> Save as <code>/tmp/vev_audit.py</code> and run from the repository root.</p>
+<pre><code class="language-python">import re, pathlib
+
+def norm(s):
+    for a, b in (('\\mathrm{', ''), ('\\text{', ''), ('$', ''), ('\\!', ''),
+                 ('\\,', ''), ('\\;', ''), ('\\ ', ' '), ('{', ''), ('}', ''), ('\\', '')):
+        s = s.replace(a, b)
+    return s.replace('×', 'x').replace('−', '-')
+
+EV     = r'(?:T|G|M|k|m|u|n|p)?eV\b'
+NUM    = r'-?[0-9][0-9.,]*(?:\s*(?:x|times)\s*10\^?-?[0-9]+)?'
+MSYM   = r'(?:tilde )?[mM](?:_[A-Za-z0-9]+)?'
+ASSIGN = re.compile(r'(?&lt;![A-Za-z])' + MSYM + r'[^|]{0,40}?' + NUM + r'\s*' + EV)
+BAD    = re.compile(r'(c\^?2|/c\b|amma|sqrt s|k_B|T_|Q\^)')
+CELL   = re.compile(NUM + r'\s*' + EV)
+SQ     = re.compile(r'eV\^?2\b|eV\^1/2')
+
+def files(sub):
+    return sorted(p for p in pathlib.Path(sub).rglob('*.md') if 'instructions' not in p.parts)
+
+def mass_headed(cell):
+    n = norm(cell)
+    if 'mass' in n.lower() and 'energy' not in n.lower():
+        return True
+    return re.search(r'(?:tilde )?[mM](?:_[A-Za-z0-9]+)?\s*$', n.strip()) is not None
+
+def scan(sub):
+    hits, sq = {}, {}
+    for p in files(sub):
+        L = p.read_text(encoding='utf-8', errors='replace').split('\n')
+        for i, raw in enumerate(L, 1):
+            if SQ.search(norm(raw)):
+                sq.setdefault(str(p), []).append(i)
+        i = 0
+        while i &lt; len(L):
+            if L[i].startswith('|'):
+                j = i
+                while j &lt; len(L) and L[j].startswith('|'):
+                    j += 1
+                block = L[i:j]
+                head = [c.strip() for c in block[0].strip().strip('|').split('|')]
+                cols = [k for k, c in enumerate(head) if mass_headed(c)]
+                for r in range(2, len(block)):
+                    cells = [c.strip() for c in block[r].strip().strip('|').split('|')]
+                    for k in cols:
+                        if k &lt; len(cells) and CELL.search(norm(cells[k])) and not BAD.search(norm(cells[k])):
+                            hits.setdefault(str(p), []).append(i + r + 1)
+                            break
+                i = j
+                continue
+            n = norm(L[i])
+            for m in ASSIGN.finditer(n):
+                if not BAD.search(n[m.start():m.end()]):
+                    hits.setdefault(str(p), []).append(i + 1)
+                    break
+            i += 1
+    return hits, sq
+
+for sub in ('articles_physics', 'articles_internal'):
+    h, sq = scan(sub)
+    print(f'== {sub}: candidate lines {sum(len(v) for v in h.values())} in {len(h)} files')
+    print(f'   shape D/E candidates {sum(len(v) for v in sq.values())} in {len(sq)} files')
+    for k, v in sorted(h.items(), key=lambda kv: -len(kv[1])):
+        print(f'   {len(v):3d} {k}: {&quot;, &quot;.join(map(str, v))}')
+</code></pre>
+<p><strong>What the scan returns, and what it does not.</strong> It returns <strong>candidate lines</strong>. It does not return defects. Three things defeat it, and each is a real form in this corpus.</p>
+<ol>
+<li>A mass named only in words, with no symbol: "the electron rest energy is $0.511$ MeV" is an energy and legal, while "the mass of the electron, $0.511$ MeV" is a defect the pattern may miss.</li>
+<li>A symbol other than $m$ or $M$: a reduced mass written $\mu=68.6176$ MeV is caught only because the same line carries $m_1$ and $m_2$. On its own it would be missed.</li>
+<li>A display whose mass and unit sit on different lines, or a table whose header names the mass in words while the cells are numbers.</li>
+</ol>
+<p><strong>The three dedicated greps.</strong> They reach the shapes no pattern can classify.</p>
+<pre><code class="language-bash">grep -rn 'eV}\^{1/2}\|eV\^{1/2}\|eV\$\^{1/2}' articles_physics/*.md articles_internal/*.md
+grep -rn 'eV}\^2\|eV}\^{2}\|eV\$\^{2}\|eV\^2' articles_physics/*.md articles_internal/*.md
+grep -rn 'eV}/c\^2\|eV}/c\^{2}\|MeV/c\^2' articles_physics/*.md articles_internal/*.md
+</code></pre>
+<p><strong>Measured on 2026-11-23.</strong> The first returns twenty lines in four files: three real cells in <code>the-excitation-ladder-theory-of-flavour</code>, fourteen in <code>flavour-research</code>, and one line each in the conventions article and the anchor article that <strong>name</strong> the form in order to forbid it. The second returns eighteen lines, of which the mass-squared ones are the shape-E sites of §6 and the rest are $Q^{2}$, $E^{2}$ and $\Lambda^{2}$, which are legal. The third returns three lines in one file, <code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code>, a legacy table whose header carries the refused label.</p>
+<p><strong>A line that names the defect is legal.</strong> The conventions article and the anchor article must be able to write $\mathrm{eV}^{1/2}$ and $\mathrm{MeV}/c^{2}$ in order to refuse them. Every gate of §8 therefore reports those two files and stops there. A scan that repairs them has destroyed the rule it is enforcing.</p>
+<h2 id="6-the-census-of-2026-11-23">6. The Census of 2026-11-23</h2>
+<p><strong>Counted in candidate lines, one line per file line.</strong> An earlier census of this question counted <strong>sites</strong>, where a site is one table cell or one assignment. The two counts are not comparable and both are true: the same population is $141$ sites and $254$ candidate lines, because a prose paragraph carries two or three sites and a table row carries one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>files</th>
+<th>files with a candidate</th>
+<th>candidate lines</th>
+<th>shape D/E candidates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics</code></td>
+<td>679</td>
+<td>49</td>
+<td>198</td>
+<td>47 in 18 files</td>
+</tr>
+<tr>
+<td><code>articles_internal</code></td>
+<td>93</td>
+<td>10</td>
+<td>56</td>
+<td>15 in 1 file</td>
+</tr>
+<tr>
+<td><strong>both</strong></td>
+<td><strong>772</strong></td>
+<td><strong>59</strong></td>
+<td><strong>254</strong></td>
+<td><strong>62 in 19 files</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The heaviest physics files.</strong> They set the order of the repair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>file</th>
+<th>lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>hadron-structure-from-qcd-the-bound-state-problem</code></td>
+<td>19</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses</code></td>
+<td>14</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>12</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>the-landau-pole-triviality-and-vacuum-stability</code></td>
+<td>9</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>exercise-the-relativistic-kinematics-of-a-two-body-decay</code></td>
+<td>8</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>the-hierarchy-problem-and-naturalness</code></td>
+<td>8</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code></td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code></td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The internal notes are in scope, and four of them carry most of the load.</strong> <code>internal-note-the-four-colours-left-right-model</code> has 22 candidate lines, <code>flavour-research</code> 11, <code>the-coupling-sector-of-the-four-colours-model</code> 10 and <code>eight-masses-from-four-numbers</code> 3; six more carry one to three each. The notes are not in the reading order of <code>physics.md</code>, so the region rule is applied to them by hand, with one question per note: <em>does this note assume the anchor?</em> A note that states a coupling in electronvolts assumes nothing and takes a ratio over a mass it already names; a note written against the anchor article takes the fraction.</p>
+<p><strong>Seventeen sites of shape D, in two files.</strong> Three cells in the excitation-ladder table and fourteen in <code>flavour-research</code>. It is the smallest shape and the only one that involves a root, and it is why no root rule is needed at large: the offending unit occurs nowhere else.</p>
+<p><strong>Shape E is the open item.</strong> The mass-squared lines are <code>the-pmns-matrix-and-lepton-mixing</code>:109, 110, the phase display at 129 and the prose at 141; <code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code>:400; <code>the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form</code>:171, 212; and <code>the-hierarchy-problem-and-naturalness</code>:321, a $\delta m_H^{2}$ in $\mathrm{GeV}^{2}$. The fraction is added <strong>beside</strong> the electronvolt value in the oscillation articles, because the number $1.267$ is defined in those units and the phase formula is stated there.</p>
+<p><strong>State of the tree, and what is already done.</strong> Seven physics articles carry the fraction, and their residue is legal: <code>the-landau-pole-triviality-and-vacuum-stability</code>, <code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code>, <code>the-hierarchy-problem-and-naturalness</code>, <code>the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form</code>, <code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code>, <code>what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron</code> and <code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code>. Their remaining candidates are cutoffs ($\Lambda_{\mathrm{Landau}}$, $M_{\mathrm{Pl}}$, compositeness scales), energies ($E_{\mathrm{sph}}$, $T_c$), one mass squared of shape E, and three lines where a mass symbol stands twenty characters from an unrelated energy. They are read, recorded as legal, and not reopened.</p>
+<p><strong>The one frozen note.</strong> <code>articles_internal/the-yukawa-coupling-in-wave-numbers.md</code> is frozen by the author. It is scanned, its candidate is reported, and it is not repaired. A later reader must not mistake the remainder for an oversight of the audit.</p>
+<h2 id="7-classifying-a-hit">7. Classifying a Hit</h2>
+<p><strong>Four questions, asked in this order, and the first answer that fits decides.</strong></p>
+<ol>
+<li><strong>Is the symbol a mass, or a scale?</strong> $\Lambda$, $M_{\mathrm{Pl}}$, $f$, $T$, $E$, $Q$, $s$, $\Gamma$ and $p$ denote scales, energies and momenta: legal. Only a symbol that denotes a rest mass, a current-quark mass, a pole mass or a mass-matrix entry is in scope.</li>
+<li><strong>Is there a $c$ on the page?</strong> $m_ec^{2}$ and $m_i/c$ are an energy and a momentum, and both are legal. A unit label that contains $c^{2}$ is shape F and a defect of the label.</li>
+<li><strong>Is the unit inside a root?</strong> $\mathrm{eV}^{1/2}$ is shape D and a defect. $\mathrm{kg}^{1/2}$, $\mathrm{J}^{1/2}$ and $\sqrt{s}$ are legal.</li>
+<li><strong>Is the unit squared and the quantity a mass?</strong> A mass squared in $\mathrm{eV^{2}}$ or $\mathrm{GeV^{2}}$ is shape E. A momentum squared $Q^{2}$, a cutoff squared $\Lambda^{2}$ and an energy squared $E^{2}$ are legal.</li>
+</ol>
+<p><strong>The false positives the audit actually produced.</strong> They are recorded so that the next run is faster, not so that the scan is trusted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>why it is legal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda_{\mathrm{Landau}}=1.8\times10^{41}$ GeV</td>
+<td>a cutoff, not a mass</td>
+</tr>
+<tr>
+<td>$\Lambda_{\mathrm{stable}}=996$ GeV $=8.0\,m_H$</td>
+<td>a scale, with a mass named twenty characters away</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{sph}}=9.0$ TeV</td>
+<td>an energy</td>
+</tr>
+<tr>
+<td>$T_c=159.5$ GeV</td>
+<td>a temperature</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}=5.79\times10^{15}\ \mathrm{eV}^{2}$</td>
+<td>a cutoff squared</td>
+</tr>
+<tr>
+<td>$Q^{2}$ in $\mathrm{GeV}^{2}$</td>
+<td>a momentum squared, nine lines of the parton article</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The false negatives, which matter more.</strong> A mass with no symbol; a mass under the letter $\mu$; a mass in a table whose header names the mass in words; a mass written across a line break inside a display. The eye is the instrument and the scan is the index, and a report that lists only the scan's output has not audited the file.</p>
+<p><strong>A legal line becomes a defect when it is repaired.</strong> A pass that turns $E_{\mathrm{sph}}=9.0$ TeV into a fraction has destroyed a legal line and produced a meaningless one, because $9.0/246.22$ is not the sphaleron energy in any unit. The repair applies to a mass and to nothing else.</p>
+<p><strong>The one-line test for a finished line.</strong> Ask what it prints. A number that is a mass divided by a mass is right. A mass in the kilogram is right only where the denominator is being defined. A mass in a unit with a $c$ in it was not repaired.</p>
+<h2 id="8-the-gates">8. The Gates</h2>
+<p><strong>A gate is a regression detector, not a discovery tool.</strong> It answers <em>has the defect come back?</em>, not <em>where is it now?</em> That is §5 and the eye. Run the gates after each file, and record the output.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>gate</th>
+<th>command</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>a mass assigned an electronvolt number (shape C)</td>
+<td><code>grep -rlE '\$[mM]_[^$]{0,30}=[^$]{0,12}[0-9][0-9.,]*[[:space:]]*\$?[[:space:]]*(\\mathrm\{)?[TGMk]?eV' articles_physics/*.md</code></td>
+<td>26 files and 36 lines at the baseline; every mass line falls, every scale line such as $M_{\mathrm{Pl}}$ stays</td>
+</tr>
+<tr>
+<td>2</td>
+<td>no electronvolt mass divided by $c^{2}$</td>
+<td><code>grep -rn -e 'eV}/c\^2' -e 'eV}/c\^{2}' articles_physics/*.md articles_internal/*.md</code></td>
+<td>one file, the legacy table of shape F</td>
+</tr>
+<tr>
+<td>3</td>
+<td>no half power of an energy unit</td>
+<td><code>grep -rn -e 'mathrm{eV}\^{1/2}' -e 'mathrm{MeV}\^{1/2}' -e 'mathrm{GeV}\^{1/2}' -e 'mathrm{keV}\^{1/2}' articles_physics/*.md articles_internal/*.md</code></td>
+<td>the two rule-bearing articles and the two files of shape D</td>
+</tr>
+<tr>
+<td>4</td>
+<td>no electronvolt mass squared</td>
+<td><code>grep -rnE 'eV}\^\{?2\}?' articles_physics/*.md articles_internal/*.md</code></td>
+<td>the shape-E lines of §6, and nothing else</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the anchor survives</td>
+<td><code>grep -rl 'mathrm{vev}' articles_physics/*.md</code></td>
+<td>the anchor and every article that uses a fraction</td>
+</tr>
+<tr>
+<td>6</td>
+<td>nothing is set to one</td>
+<td><code>grep -rn 'c[[:space:]]*=[[:space:]]*1\b' articles_physics/*.md</code></td>
+<td>no output</td>
+</tr>
+<tr>
+<td>7</td>
+<td>the displays still parse</td>
+<td>the KaTeX gate of <code>_reserve</code></td>
+<td>$0$ failures</td>
+</tr>
+<tr>
+<td>8</td>
+<td>the census falls</td>
+<td>§5, re-run</td>
+<td>$198$ in the physics corpus, and never higher</td>
+</tr>
+<tr>
+<td>9</td>
+<td>no anchor symbol before the anchor</td>
+<td><code>grep -l 'mathrm{vev}' articles_physics/*.md</code>, filtered by menu position</td>
+<td>no output</td>
+</tr>
+<tr>
+<td>10</td>
+<td>no forward link before the anchor</td>
+<td><code>grep -l 'vacuum-value-normalization' articles_physics/*.md</code>, filtered by menu position</td>
+<td>no output</td>
+</tr>
+<tr>
+<td>11</td>
+<td>a root of a mass carries kg or a fraction</td>
+<td><code>grep -rn '\\sqrt{m' articles_physics/*.md</code></td>
+<td>radicands are $m_i$ in kg, $n_i$, or a ratio; none is an energy</td>
+</tr>
+<tr>
+<td>12</td>
+<td>a kilogram appears only at a definition</td>
+<td><code>grep -rn 'mathrm{kg}' articles_physics/*.md</code></td>
+<td>17 lines: the anchor's definitions, the conventions table, and physical masses in the base unit such as a $10^{12}$ kg black hole; no repair output in the kilogram</td>
+</tr>
+<tr>
+<td>13</td>
+<td>every fraction prints its divisor</td>
+<td><code>grep -rn 'n_[A-Za-z0-9{}\\]*\s*=' articles_physics/*.md articles_internal/*.md</code></td>
+<td>each article that uses $n_i$ states $E_{\mathrm{vev}}$ or $m_{\mathrm{vev}}$ in the same article</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Gates 9 and 10 are the region gates, and they are the ones that stop a fraction creeping upstream.</strong> A fraction in the pre-anchor region is not a style defect, it is a forward reference, and in a corpus read from the top a forward reference is the one error no later page repairs.</p>
+<p><strong>Gate 14 is the eye gate on homogeneity, and it has no command.</strong> Each rewritten display is read for one dimension per side and one dimension per term of a sum, and for a number where a number is required: the argument of a logarithm, an exponential, a sine, a power. Three lines per equation, written out in the report. A pass that cannot write the dimension of a line has not checked it.</p>
+<p><strong>Gate 15 is the tolerance on roots, read once at the end.</strong> A root is admitted when its radicand is a mass, a mass ratio or a fraction: $\sqrt{m_e}$ in the kilogram, $\sqrt{n_e}$, $\sqrt{s}$ are all legal. It is refused when the radicand carries an energy unit, because that unit is the hidden $c$. The gate records the cases of each kind in the files the pass touched.</p>
+<p><strong>The baseline moves once, and then it is a ceiling.</strong> The first run after a repair records the new number; every later run must be at or below it. A run that rises has introduced a token, and the file that rose is the file that was edited.</p>
+<h2 id="9-guidance-to-solve-the-issue">9. Guidance to Solve the Issue</h2>
+<p><strong>Step 0 — measure, and write nothing yet.</strong> Run §5 on both corpora and save the output. The list is the work: a repair without the list has no baseline and no way to prove that the count fell.</p>
+<p><strong>Step 1 — settle the denominator story before touching an article.</strong> The anchor exists and defines $E_{\mathrm{vev}}$. Confirm three things and change nothing until they hold: the anchor precedes every mass table in the menu; the conventions table prints $m_p$ in the kilogram once; and no article after the anchor prints a kilogram except in a sentence that defines a scale.</p>
+<p><strong>Step 2 — repair in the order of §6, heaviest first, one file at a time.</strong> The heaviest file settles the recipe, and a recipe tried first on a three-line prose site is a recipe tried where it cannot fail. Run the gates after each file: a pass over fifty files that fails gate 8 at the end has to be bisected, while a pass that gates each file knows which file did it.</p>
+<p><strong>Step 3 — the conversion is one division, in the unit the source already uses.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source unit</th>
+<th>divisor</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GeV</td>
+<td>$246.22$</td>
+<td>$M_H=125.09$ GeV gives $n_H=0.5080$</td>
+</tr>
+<tr>
+<td>MeV</td>
+<td>$246\,220$</td>
+<td>$0.511$ MeV gives $n_e=2.075\times10^{-6}$</td>
+</tr>
+<tr>
+<td>eV</td>
+<td>$2.4622\times10^{11}$</td>
+<td>$0.05$ eV gives $n_\nu=2.03\times10^{-13}$</td>
+</tr>
+<tr>
+<td>$\mathrm{eV^{2}}$</td>
+<td>$6.0624\times10^{22}$</td>
+<td>$7.42\times10^{-5}\ \mathrm{eV^{2}}$ gives $\delta n^{2}_{21}=1.224\times10^{-27}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The identity that makes this one division and not three.</strong> A ratio of masses is a ratio of energies,</p>
+<p>$$
+n_i=\frac{m_i}{m_{\mathrm{vev}}}=\frac{E_i/c^{2}}{E_{\mathrm{vev}}/c^{2}}=\frac{E_i}{E_{\mathrm{vev}}},
+$$</p>
+<p>so the same power of $c$ cancels above and below, and the operator writes no $c^{2}$, no kilogram and no conversion factor. A Higgs at $125.09$ GeV is $n_H=0.5080$; a $b$ quark at $4.18$ GeV is $n_b=1.698\times10^{-2}$; a $Z$ at $91.1876$ GeV is $n_Z=0.3704$.</p>
+<p><strong>Step 4 — the shape-by-shape one-liner.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>shape</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>a cell $2.22$ MeV under a header $m_u$</td>
+<td>$n_u=9.02\times10^{-6}$ under a header $m_u/E_{\mathrm{vev}}$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>"a light Higgs near $125$ GeV"</td>
+<td>"a light Higgs near $n_H=0.5080$"</td>
+</tr>
+<tr>
+<td>C</td>
+<td>$M_W=80.377$ GeV</td>
+<td>$n_W=0.3264$</td>
+</tr>
+<tr>
+<td>D</td>
+<td>$\sqrt{m_e}=0.714\,842\ \mathrm{MeV}^{1/2}$</td>
+<td>$\sqrt{n_e}=1.4406\times10^{-3}$</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$\delta m^{2}_{21}=7.42\times10^{-5}\ \mathrm{eV}^{2}$</td>
+<td>$\delta n^{2}_{21}=1.224\times10^{-27}$, beside the electronvolt value</td>
+</tr>
+<tr>
+<td>F</td>
+<td>a header $(\mathrm{MeV}/c^{2})$</td>
+<td>a header $m_i/m_{\mathrm{vev}}$, cells as fractions</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>In the pre-anchor region the same shapes take a local denominator.</strong> A table there takes one kilogram entry for the scale it divides by and a ratio column for the rest, because a fraction over $m_{\mathrm{vev}}$ would name a quantity the reader has not met yet.</p>
+<p><strong>Step 5 — the six traps, each of which has been met.</strong></p>
+<ol>
+<li><strong>Converting an energy.</strong> $\Lambda_{\mathrm{Landau}}$, $E_{\mathrm{sph}}$, $T_c$ and $\sqrt{s}$ are energies, and a fraction of one is meaningless. The audit exists to protect them.</li>
+<li><strong>Producing a kilogram.</strong> $M_W=1.433\times10^{-25}$ kg is arithmetically correct and is the wrong output: a mass in the base unit where a comparison was asked for. Gate 12 catches it.</li>
+<li><strong>Writing a fraction before the anchor.</strong> It is a forward reference, and the repair has replaced one defect with another. Gates 9 and 10 catch it.</li>
+<li><strong>Leaving a root under an energy.</strong> A table where $m_e$ became $n_e$ and $\sqrt{m_e}$ stayed $\mathrm{MeV}^{1/2}$ is internally inconsistent. Gate 3 catches it.</li>
+<li><strong>Renaming a symbol without moving the dimension.</strong> $m_{\mathrm{vev}}=246.22$ GeV is still a mass in an energy unit. The letter is renamed and the dimension moves with it: $E_{\mathrm{vev}}=246.22$ GeV, or $m_{\mathrm{vev}}=4.389\,27\times10^{-25}$ kg, never a hybrid of the two.</li>
+<li><strong>Declaring a file done.</strong> A report that says "migrated" without the gate output is not a report. The acceptable sentence is: the file, the line numbers rewritten, the gates that returned their expected value, and the candidates read and found legal.</li>
+</ol>
+<p><strong>Step 6 — the definition of done, as a checklist.</strong></p>
+<ul>
+<li>Gates 1 to 4 return only the files listed in §8: the two rule-bearing articles, the two files of shape D, the shape-E lines, and the one legacy label.</li>
+<li>Gates 9 and 10 return nothing.</li>
+<li>Gate 8 returns a number at or below the baseline, and the report records the fall.</li>
+<li>Gate 12 returns a list of definitional kilograms, each with a line number and a reason.</li>
+<li>Every repaired article carries a one-or-two-sentence <strong>Units</strong> note near the top: masses are fractions of $E_{\mathrm{vev}}=246.22$ GeV, and energies, widths, cutoffs, temperatures and running scales remain in electronvolts.</li>
+<li>The shape-E lines are recorded as an open item, and no fraction replaces the electronvolt value without standing beside it.</li>
+</ul>
+<p><strong>Step 7 — the internal notes go last, and they go by question.</strong> They are the author's working files, and a recipe that fails on a published article is repaired while a recipe that fails on a working note is a wasted morning. Order them heaviest first, and settle each with the single question of §6: does this note assume the anchor?</p>
+<p><strong>Step 8 — report, and stop.</strong> The report is one line per site and one paragraph per file, in the form: file, line, shape, before, after, the dimension of the two sides, verdict. The audit ends when the checklist of Step 6 holds and the report is written. Anything else — a tidier corpus, a different notation, a symbol renamed for elegance — is outside this file, and an agent that does it has answered a question it was not asked.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One defect, one rule, one test.</strong> A mass in a unit that contains a constant is a false equality, and the test is to ask what the number is a number of.</p>
+<ul>
+<li>The defect appears in five shapes and one header: a table cell, a sentence, an assignment, a root of an energy, a mass squared, and a unit label with $c$ inside. The explicit and the implicit spelling are the same defect.</li>
+<li>The repair is one division by $E_{\mathrm{vev}}=246.22\ \mathrm{GeV}$, because a ratio of masses is a ratio of energies and the $c^{2}$ cancels above and below.</li>
+<li>The output is a pure number, $n_i=m_i/m_{\mathrm{vev}}$; the kilogram appears only where a denominator is defined, and then once.</li>
+<li>The region decides the denominator and never the principle: before the anchor a ratio over a named mass, after it the fraction over $E_{\mathrm{vev}}$.</li>
+<li>The scan of §5 returns $254$ candidate lines in $59$ files across both corpora, of which $62$ are shape D or E. Every candidate is classified by eye, and the legal energies are the majority.</li>
+<li>Fifteen gates hold the line. The two region gates keep the fraction from creeping upstream, and gate 12 keeps the kilogram at the definition.</li>
+<li>The audit is finished when the checklist of Step 6 holds and the report is written, and not before.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{\mathrm{vev}}=246.22\ \mathrm{GeV}$</td>
+<td>the divisor: $246\,220$ MeV, $2.4622\times10^{11}$ eV</td>
+</tr>
+<tr>
+<td>$m_{\mathrm{vev}}=4.389\,27\times10^{-25}\ \mathrm{kg}$</td>
+<td>the same quantity as a mass, printed once in the anchor</td>
+</tr>
+<tr>
+<td>$n_i=m_i/m_{\mathrm{vev}}=E_i/E_{\mathrm{vev}}$</td>
+<td>the fraction, a pure number, the output of the repair</td>
+</tr>
+<tr>
+<td>$m_p=1.672\,621\,923\,69\times10^{-27}\ \mathrm{kg}$</td>
+<td>the pre-anchor denominator, printed once in the conventions table</td>
+</tr>
+<tr>
+<td>shape A</td>
+<td>a mass-symbol table column with electronvolt cells</td>
+</tr>
+<tr>
+<td>shape B</td>
+<td>a mass sentence with an electronvolt number</td>
+</tr>
+<tr>
+<td>shape C</td>
+<td>a mass assignment with an electronvolt number</td>
+</tr>
+<tr>
+<td>shape D</td>
+<td>a root of a mass with the unit $\mathrm{eV}^{1/2}$</td>
+</tr>
+<tr>
+<td>shape E</td>
+<td>a mass squared in $\mathrm{eV^{2}}$ or $\mathrm{GeV^{2}}$</td>
+</tr>
+<tr>
+<td>shape F</td>
+<td>a unit label that contains $c^{2}$</td>
+</tr>
+<tr>
+<td>candidate line</td>
+<td>a line the scan of §5 returns; not a verdict</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../../articles_physics/vacuum-value-normalization-energy-mass-wave-number-and-length.html">Vacuum Value Normalization: Energy, Mass, Wave Number and Length</a>, the anchor: the definition of $E_{\mathrm{vev}}$, of $m_{\mathrm{vev}}$ and of the fraction.</li>
+<li><a href="../../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, the rule in words, the table of base units, and the statement about roots.</li>
+<li><a href="audit-scale-bearing-coupling.html">Detecting a Scale-Bearing Coupling: One Test, Six Signatures, Seven Traps</a>, the same audit method applied to another family of defects.</li>
+<li><a href="../../articles_physics/hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD: The Bound-State Problem</a>, the heaviest file of the census, where the current-quark masses make the defect visible.</li>
+<li><a href="../../articles_physics/the-pmns-matrix-and-lepton-mixing.html">The PMNS Matrix and Lepton Mixing</a>, the shape-E sites and the phase formula stated in $\mathrm{eV^{2}}$.</li>
+<li><a href="../../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>, three of the seventeen shape-D cells.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

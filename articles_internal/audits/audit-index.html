@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration Index, Executed: The Dotless Letters $\imath$ and $\jmath$ — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Executed, and measured. The index role has moved from to, and the corpus now holds 19 603 \imath, 8 592 \jmath and a residue of 233…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-index-executed-the-dotless-letters-math0-and-math1"><strong>Migration Index, Executed: The Dotless Letters $\imath$ and $\jmath$</strong></h1>
+<p><em>Status of this file.</em> <strong>Executed, and measured.</strong> The index role has moved from $\mu,\nu$ to $\imath,\jmath$, and the corpus now holds 19 603 <code>\imath</code>, 8 592 <code>\jmath</code> and a residue of 233 bare <code>\mu</code> that a human reads. Measured on <code>articles_physics</code>: 678 <code>.md</code> files, 177 350 math spans.</p>
+<p><em>What this file is for.</em> It holds the decision, the census, the guards, the batch order and the checks, so that a later reader can verify the same invariants in the same order and can see which sites were deliberately left greek.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>A letter is an index when it labels a slot, and a quantity otherwise.</strong> Parentheses, a square, a roman subscript, or a $\vec H$ beside it marks a quantity, and the greek letter stays.</li>
+<li><strong>A dotless letter in a sub- or superscript is always braced.</strong> <code>Q_{\imath}</code> renders; <code>Q_\imath</code> raises <em>Got function as subscript</em>.</li>
+<li><strong>A symbol standing alone is never dotless.</strong> $i$ is the imaginary unit, $\vec j$ is the current; both keep their dots.</li>
+<li><strong>Substitute tokens, never substrings.</strong> <code>_{\mu\nu}</code> is two tokens and becomes <code>_{\imath\jmath}</code>; the outer braces stay.</li>
+<li><strong>Every batch closes on the checks of §10</strong>, and the KaTeX failure count stays at its baseline of 14. A batch that raises it has introduced a double subscript.</li>
+</ol>
+<h2 id="1-the-decision">1. The Decision</h2>
+<p>The index role moves from $\mu,\nu$ to two dotless letters, $\imath$ (<code>\imath</code>) and $\jmath$ (<code>\jmath</code>). The greek letters keep every other role they hold. Nothing else in the corpus changes: the algebra, the grid labels, the sector labels, and the neutrino $\nu_{\mathrm{neu}}$ are untouched.</p>
+<p>The reason is not typography. $\nu$ was already forced to one role in the previous pass, and $\mu$ was left holding two roles inside the same equation family: the index of $F_{\mu\nu}$ and the permeability of $\vec B=\mu\vec H$. A reader separates them by position alone, which is the failure mode the $\nu$ pass removed. Two dotless letters carry no physical meaning in this corpus, so an index cannot be mistaken for a quantity.</p>
+<h2 id="2-the-target-letters-and-the-one-rule-they-obey">2. The Target Letters, and the One Rule They Obey</h2>
+<p>Both letters are free. Measured on the physics corpus: <code>\imath</code> 0 occurrences, <code>\jmath</code> 0 occurrences. The purge that produced this count replaced $\bar{\imath}$ by $\bar{i}$ (1 site), the modular conjugation $\jmath$ by $\gimel_{\mathrm{mod}}$ (6 sites, with $\jmath'$ to $\gimel_{\mathrm{mod}}'$), and the current $\vec{\jmath}$ by $\vec j$ (18 sites). Three files were touched, and KaTeX reported the same 14 pre-existing failures before and after.</p>
+<p>KaTeX decides how they are written. <code>\imath</code> and <code>\jmath</code> expand to <code>\html@mathml{\@imath}{ı}</code>, a function with no arguments, so a <em>bare</em> dotless letter cannot take a subscript: <code>Q_\imath</code> raises <em>Got function <code>\html@mathml</code> with no arguments as subscript</em>. A braced letter renders: <code>Q_{\imath}</code> and <code>F_{\imath\jmath}</code> are fine, and so is <code>\imath_x</code> when ı is the base. The rule is therefore absolute: <strong>a dotless letter that sits in a sub- or superscript is always written inside braces.</strong> Unbraced <code>_\mu</code> is 12 749 of the 16 022 unbraced greek sites, so this is most of the mechanical work, and it is the one rule a rewrite cannot skip.</p>
+<p>The hazard is one dot. $i$ is the imaginary unit, 697 occurrences of $e^{i\theta}$; $\vec j$ is the current density, 246 occurrences. Two rules keep them apart. First, a dotless letter in a slot is braced, so it is always written <code>_{\imath}</code>, never <code>_\imath</code> and never bare in a formula. Second, a bare <code>\imath</code> or <code>\jmath</code> appears only inside a prose index list, $(\imath,\jmath)$ or $\imath\ne\jmath$, where the pairing already says what the letter is. A symbol standing alone is written $i$ or $\vec j$, and those are never dotless.</p>
+<h2 id="3-the-census">3. The Census</h2>
+<p>Measured on <code>articles_physics</code>, 678 articles, 177 350 math spans.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>$\mu$</th>
+<th>$\nu$</th>
+<th>where it must go</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index of a tensor, derivative, gamma matrix, commutator, sum, basis operator</td>
+<td>18 866</td>
+<td>4 474</td>
+<td>$\imath$, $\jmath$</td>
+</tr>
+<tr>
+<td>index mentioned in running prose, $(\mu,\nu)$, $\mu\neq\nu$</td>
+<td>355</td>
+<td>256</td>
+<td>$\imath$, $\jmath$</td>
+</tr>
+<tr>
+<td>neutrino</td>
+<td>—</td>
+<td>66 bases, 90 subscripts</td>
+<td>unchanged, $\nu_{\mathrm{neu}}$</td>
+</tr>
+<tr>
+<td>permeability</td>
+<td>1 006</td>
+<td>—</td>
+<td>unchanged, $\mu$</td>
+</tr>
+<tr>
+<td>mass, running scale, chemical potential, moment</td>
+<td>1 509</td>
+<td>—</td>
+<td>unchanged, $\mu$</td>
+</tr>
+<tr>
+<td>outside math delimiters</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The index total is 23 340 tokens. They sit in 513 files: 510 carry an index $\mu$ and 293 an index $\nu$, and the union is 513. A further 53 files carry $\mu$ or $\nu$ only in a quantity role and are left untouched. Of the 678 articles in <code>articles_physics</code>, 566 contain at least one of the two letters and 112 contain neither.</p>
+<h2 id="4-what-must-not-migrate">4. What Must Not Migrate</h2>
+<p>These are $\mu$ as a quantity. Each count is the number of occurrences in the physics corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>count</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sqrt{\mu}$</td>
+<td>577</td>
+<td>permeability, $c=1/\sqrt{\epsilon\mu}$</td>
+</tr>
+<tr>
+<td>$\mu^2$</td>
+<td>539</td>
+<td>Proca mass, $(\Box_\Phi-\mu^2)\tilde A$</td>
+</tr>
+<tr>
+<td>$\mu$ inside parentheses, $\epsilon,\mu$</td>
+<td>261</td>
+<td>permeability pair</td>
+</tr>
+<tr>
+<td>$\mu_0$</td>
+<td>156</td>
+<td>vacuum permeability</td>
+</tr>
+<tr>
+<td>$\mu\vec{H}$</td>
+<td>91</td>
+<td>constitutive law</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>33</td>
+<td>chemical potential</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{spn}}$</td>
+<td>31</td>
+<td>spin chemical potential</td>
+</tr>
+<tr>
+<td>$\mu^{-1}$</td>
+<td>19</td>
+<td>inverse length</td>
+</tr>
+<tr>
+<td>$\mu_B$</td>
+<td>17</td>
+<td>Bohr magneton</td>
+</tr>
+<tr>
+<td>$\mu_r$</td>
+<td>13</td>
+<td>relative permeability</td>
+</tr>
+<tr>
+<td>$g^2(\mu)$</td>
+<td>1</td>
+<td>running coupling at scale $\mu$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the blocker. A $\mu$ inside a superscript can be a scale, as in $^{-8\pi^2/(b_0g^2(\mu))}$, and the shape alone does not say so. <strong>The migration is therefore contextual, not a regular expression over subscripts.</strong> The rule is: a $\mu$ or a $\nu$ becomes an index letter when it labels a slot, and stays greek when it names a quantity. Parentheses, a square, a roman subscript, or a $\vec H$ beside it marks a quantity.</p>
+<h2 id="5-the-pattern-map">5. The Pattern Map</h2>
+<p>Measured over the physics corpus. The braced groups containing $\mu$ or $\nu$ number 8 068 occurrences in 400 distinct shapes. The superscripts are 20 occurrences in 9 shapes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>shape</th>
+<th>count</th>
+<th>target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_{\mu\nu}</code></td>
+<td>2 814</td>
+<td><code>_{\imath\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{\Phi,\mu}</code></td>
+<td>370</td>
+<td><code>_{\Phi,\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu,\nu}</code></td>
+<td>247</td>
+<td><code>_{\imath,\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mathrm{spt}(\mu)}</code></td>
+<td>212</td>
+<td><code>_{\mathrm{spt}(\imath)}</code></td>
+</tr>
+<tr>
+<td><code>_{\mathrm{gco},\Phi,\mu}</code></td>
+<td>212</td>
+<td><code>_{\mathrm{gco},\Phi,\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\Phi,\nu}</code></td>
+<td>191</td>
+<td><code>_{\Phi,\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu\nu\rho\sigma}</code></td>
+<td>149</td>
+<td><code>_{\imath\jmath\rho\sigma}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu\nu\lambda}</code></td>
+<td>142</td>
+<td><code>_{\imath\jmath\lambda}</code></td>
+</tr>
+<tr>
+<td><code>_{\mathrm{axf},e_\mu}</code></td>
+<td>102</td>
+<td><code>_{\mathrm{axf},e_\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu a}</code></td>
+<td>96</td>
+<td><code>_{\imath a}</code></td>
+</tr>
+<tr>
+<td><code>_{2\mu}</code></td>
+<td>90</td>
+<td><code>_{2\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\lambda\nu}</code></td>
+<td>89</td>
+<td><code>_{\lambda\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{\lambda\mu\nu}</code></td>
+<td>88</td>
+<td><code>_{\lambda\imath\jmath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu\mu}</code></td>
+<td>81</td>
+<td><code>_{\imath\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\nu\mu}</code></td>
+<td>78</td>
+<td><code>_{\jmath\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\nu\rho}</code></td>
+<td>73</td>
+<td><code>_{\jmath\rho}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu\in\{t,x,y,z\}}</code></td>
+<td>72</td>
+<td><code>_{\imath\in\{t,x,y,z\}}</code></td>
+</tr>
+<tr>
+<td><code>^{\mu}</code> and <code>^{\ \mu}</code></td>
+<td>9</td>
+<td><code>^{\imath}</code></td>
+</tr>
+<tr>
+<td><code>_{\mu e}</code></td>
+<td>33</td>
+<td><code>_{\imath e}</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The unbraced subscript is the majority of the work: 12 749 occurrences of <code>_\mu</code> or <code>^\mu</code> and 3 273 of <code>_\nu</code> or <code>^\nu</code>. The braced groups are 8 068 occurrences in 400 shapes, and the superscripts are 20 occurrences in 9 shapes. Five rules cover the whole corpus.</p>
+<ol>
+<li>A bare <code>_\mu</code>, <code>^\mu</code>, <code>_\nu</code>, <code>^\nu</code> becomes <code>_{\imath}</code>, <code>^{\imath}</code>, <code>_{\jmath}</code>, <code>^{\jmath}</code>: the braces are added, because KaTeX rejects an unbraced dotless subscript.</li>
+<li>Inside a braced group, $\mu$ and $\nu$ are substituted as tokens, never as substrings: <code>_{\mu\nu}</code> is two tokens and becomes <code>_{\imath\jmath}</code>, and the outer braces stay as they are.</li>
+<li>A group that names a quantity keeps its greek token: <code>_{\mu_{\mathrm{chm}}}</code> and <code>^{-8\pi^2/(b_0g^2(\mu))}</code> are not touched.</li>
+<li>A doubled letter stays doubled: <code>_{\mu\mu}</code> is a genuine contraction and becomes <code>_{\imath\imath}</code>.</li>
+<li>A superscript keeps its binding: <code>Q_\mu^2</code> is $Q_{\imath}^{\,2}$ with the square on $Q$, not a property of the letter, and becomes <code>Q_{\imath}^2</code>. The quantity form $\mu^2$, the Proca mass, is bare and is not touched.</li>
+</ol>
+<h2 id="6-the-declaration-lines">6. The Declaration Lines</h2>
+<p>Three sentences in the corpus state what the index letters are. They are edited in the same pass, and they are the only prose that must change beyond the 611 index mentions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>line to change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>operator-and-calculus-conventions.md</code></td>
+<td><code>A contraction is a form, never an index.</code> — the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ becomes $\delta_{\imath\jmath}$</td>
+</tr>
+<tr>
+<td><code>operator-and-calculus-conventions.md</code></td>
+<td><code>\sum_{\mu\in\{t,x,y,z\}}</code> becomes <code>\sum_{\imath\in\{t,x,y,z\}}</code></td>
+</tr>
+<tr>
+<td><code>matrix-representations-conventions.md</code></td>
+<td><code>the pair $(\mu,\nu)$ names one basis two-sided operator</code> becomes $(\imath,\jmath)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each of the three also gains one sentence naming the two dotless letters as the index family, so the reader meets the rule before meeting the glyph.</p>
+<h2 id="7-the-label-assignments">7. The Label Assignments</h2>
+<p>Nine sites write $\mu=t$ and nine write $\mu\in\{x,y,z\}$. These are index assignments over the corpus basis, so they migrate: $\imath=t$, $\imath\in\{x,y,z\}$. The basis letters $t,x,y,z$ are unchanged, since they are the algebra's own units and not index letters.</p>
+<h2 id="8-the-order-of-operations">8. The Order of Operations</h2>
+<p>Six batches, taken by rank of index load so that each batch is verifiable on its own and the heaviest reading is done first, when the rules are still being checked.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>batch</th>
+<th>files</th>
+<th>tokens</th>
+<th>cumulative</th>
+<th>what it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>10</td>
+<td>4 246</td>
+<td>18 %</td>
+<td>the ten heaviest: <code>linearized-gravity-in-biquaternionic-form</code> 571, <code>dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields</code> 557, <code>curved-spacetime-and-the-biquaternion-framework</code> 480, <code>the-yang-mills-equation-in-biquaternionic-form</code> 478</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15</td>
+<td>3 661</td>
+<td>34 %</td>
+<td><code>an-external-construction-of-space-from-quaternionic-spinors</code> 316, <code>gauge-curvature-and-the-bianchi-identity</code> 298, <code>matrix-representations-conventions</code> 297, <code>the-covariant-derivative-and-gauge-connection</code> 286</td>
+</tr>
+<tr>
+<td>3</td>
+<td>25</td>
+<td>3 737</td>
+<td>50 %</td>
+<td><code>gravitational-waves-in-biquaternionic-form</code> 192, <code>gauge-fixing-in-the-electroweak-theory</code> 187, <code>triality-and-the-ding-construction</code> 185, <code>wilson-loops-in-biquaternionic-form</code> 183</td>
+</tr>
+<tr>
+<td>4</td>
+<td>50</td>
+<td>4 508</td>
+<td>69 %</td>
+<td><code>the-lagrangian-and-the-w-and-z-bosons</code> 124, <code>the-stueckelberg-mechanism-in-biquaternionic-form</code> 124, <code>canonical-quantization-of-the-biquaternion-proca-field</code> 120</td>
+</tr>
+<tr>
+<td>5</td>
+<td>150</td>
+<td>5 579</td>
+<td>93 %</td>
+<td><code>covariant-local-equilibrium-and-tolman</code> 70, <code>the-conformal-anomaly</code> 70, <code>the-index-theorem-and-the-zero-mode-count</code> 70</td>
+</tr>
+<tr>
+<td>6</td>
+<td>263</td>
+<td>1 609</td>
+<td>100 %</td>
+<td>the tail, every file with one to nine index tokens</td>
+</tr>
+</tbody>
+</table></div>
+<p>Batch 2 is the one that carries the conventions articles, and it is deliberately early: <code>matrix-representations-conventions.md</code> is where the pair $(\mu,\nu)$ is named, so the reader's first convention article already carries the finished alphabet.</p>
+<p>The batch order does not follow the physics. It follows the risk: the ten heaviest files hold 18 % of the tokens and most of the exotic shapes, so a rule that is wrong shows up in batch 1 rather than in the tail.</p>
+<h2 id="9-the-tests">9. The Tests</h2>
+<p>The pass was run on a copy before anything else was touched, and the copy is the evidence. Seven invariants are compared between the original and the copy, over <code>articles_physics/*.md</code> only, because the directory also holds extension-less duplicates that are not corpus articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\mu_0</code></td>
+<td>156</td>
+<td>156</td>
+</tr>
+<tr>
+<td><code>sqrt{\mu}</code></td>
+<td>567</td>
+<td>567</td>
+</tr>
+<tr>
+<td><code>\mu\vec H</code></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>\mu_{\mathrm{chm}}</code> and <code>\mu_{\mathrm{spn}}</code></td>
+<td>71</td>
+<td>71</td>
+</tr>
+<tr>
+<td><code>\mu_B</code></td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td>muon mass <code>m_\mu</code></td>
+<td>48</td>
+<td>48</td>
+</tr>
+<tr>
+<td>neutrino <code>\nu_{\mathrm{neu}}</code></td>
+<td>208</td>
+<td>208</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pass is done and the corpus holds 19 603 <code>\imath</code> and 8 592 <code>\jmath</code>: 28 195 dotless letters, against 27 895 greek tokens that sit in a slot in the original. The difference is 300, and it is the prose index lists, $(\mu,\nu)$ and $\mu\ne\nu$, which carry no sub- or superscript.</p>
+<p>The first full pass left 104 greek tokens in a slot. All but the 49 muon masses were one shape the classifier had wrongly protected: $\varepsilon_\mu$ and $\epsilon_\mu$, the metric signature per basis direction, which is an index and not the permittivity. The permittivity guard now fires only on a bare $\epsilon\mu$, so $\sqrt{\epsilon\mu}$ is still untouched while $\sum_\mu\varepsilon_\mu J_\mu$ becomes $\sum_{\imath}\varepsilon_{\imath}J_{\imath}$. Thirteen files changed on the second pass, and the count went from 28 140 to 28 195.</p>
+<p>The KaTeX gate on the copy reads 177 350 spans with 177 336 passing and 14 failing, the same 14 as the untouched corpus. The bracing rule is what buys this: the first trial, which wrote <code>_\imath</code> unbraced, failed 6 811 spans.</p>
+<p>One shape is left deliberately. A <code>$\mu$</code> standing alone in a sentence stays greek, because the same span names the permeability, the chemical potential and the running scale, and the span alone does not tell them apart. Those sites are 233 before and 233 after, and they are the residue a human reads. The neighbouring conditions go with them: $\sqrt{\epsilon\mu}$ 345 sites and $\mu\ne0$ 8 sites are permeability, and the only two <code>\mu\ne0</code> that migrated are the ones written $\Xi_\mu\ne0$, where the letter sits in a slot and is an index.</p>
+<h2 id="10-the-checks">10. The Checks</h2>
+<p>Each batch closes on these, and none of them is allowed to be approximate.</p>
+<pre><code>grep -rhoP '\\imath' articles_physics --include='*.md' | wc -l
+grep -rhoP '\\jmath' articles_physics --include='*.md' | wc -l
+grep -rhoP '[_^]\\imath(?![a-zA-Z])' articles_physics --include='*.md' | wc -l   # expect 0: braces required
+grep -rhoP '[_^]\\jmath(?![a-zA-Z])' articles_physics --include='*.md' | wc -l   # expect 0
+grep -rhoP '\\mu_0' articles_physics --include='*.md' | wc -l                    # expect 156
+grep -rhoP 'sqrt\{\\mu\}' articles_physics --include='*.md' | wc -l             # expect 567
+grep -rhoP '[$]\\mu[$]' articles_physics --include='*.md' | wc -l              # expect 233
+</code></pre>
+<p>The <code>--include='*.md'</code> is not cosmetic. The directory also holds extension-less duplicates of about a dozen articles, and a bare <code>grep -r</code> counts them twice.</p>
+<p>The KaTeX gate renders every math span with <code>throwOnError</code>. Its baseline is 14 failures, all pre-existing double subscripts in <code>bogoliubov-transformations-in-biquaternionic-form.md</code> and <code>idempotents-ideals-and-observables.md</code>. A batch that raises the count above 14 has introduced a double subscript, which is what a careless rewrite of <code>_{\mu\mu}</code> or <code>_{2\mu}</code> produces.</p>
+<h2 id="11-the-open-questions">11. The Open Questions</h2>
+<p>Two, both for the author.</p>
+<p>The first is the declaration sentence. The corpus now needs one line that says the index family is $\imath,\jmath$ and that a bare dotless letter is not written. It belongs in <code>operator-and-calculus-conventions.md</code> beside the contraction rule, but the article has no index-family sentence today, so the wording is a new statement rather than an edit.</p>
+<p>The second is the residue. A $\mu$ that is a running scale inside an exponent, in $g^2(\mu)$, is the one shape a mechanical pass could break, and there is one such site. The pass now recognises it and leaves it greek, so the site is not at risk; but it is worth a line in the article that uses it, since the reader will meet a $\mu$ in an exponent among a corpus of $\imath$.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One letter, two roles, one rule.</strong> $\mu$ held the index and the permeability at once, and the reader separated them by position alone. Two dotless letters carry no quantity in this corpus, so the index cannot be mistaken for one.</p>
+<ul>
+<li>The migration is contextual, not a regular expression: 23 340 index tokens in the census table, 611 index mentions in prose, and 1 006 permeabilities, 1 509 masses and scales, and 208 neutrino spellings that stay greek.</li>
+<li>The mechanical weight is the unbraced subscript: 12 749 <code>_\mu</code> or <code>^\mu</code> and 3 273 <code>_\nu</code> or <code>^\nu</code>, all of which gain braces.</li>
+<li>The corpus now holds 28 195 dotless letters against 27 895 greek tokens that sat in a slot; the difference of 300 is the prose index lists.</li>
+<li>Seven invariants are compared before and after in §9 and none moves: <code>\mu_0</code> 156, <code>sqrt{\mu}</code> 567, <code>\mu\vec H</code> 1, the chemical potentials 71, <code>\mu_B</code> 17, the muon mass 48, the neutrino 208.</li>
+<li>The KaTeX gate reads 14 failures, the same 14 as the untouched corpus, and the bracing rule is what buys it: the unbraced trial failed 6 811 spans.</li>
+<li><strong>Two counts of the same population appear in this file: 23 340 index tokens in §3 and 27 895 greek slot tokens in §9. They are not equal, and the difference is not explained here. Re-measuring the pre-pass slot count is the first item of any re-run.</strong></li>
+<li>The residue is named, not hidden: 233 bare <code>$\mu$</code> in a sentence, 345 <code>\sqrt{\epsilon\mu}</code>, 8 <code>\mu\ne0</code>, and one running scale in an exponent.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\imath$, $\jmath$</td>
+<td>the index letters: <code>\imath</code>, <code>\jmath</code>, always braced in a slot</td>
+</tr>
+<tr>
+<td>$\nu_{\mathrm{neu}}$</td>
+<td>the neutrino, which keeps its greek letter</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>the permeability of $\vec B=\mu\vec H$, the chemical potential, the running scale, the muon</td>
+</tr>
+<tr>
+<td>$\varepsilon_\mu$</td>
+<td>the metric signature per basis direction: an index, not the permittivity</td>
+</tr>
+<tr>
+<td>the residue</td>
+<td>the 233 bare <code>$\mu$</code> spans that a human reads</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

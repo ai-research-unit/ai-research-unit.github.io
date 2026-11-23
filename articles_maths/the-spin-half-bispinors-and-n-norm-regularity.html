@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Half Bispinors and N Norm Regularity — Biquaternion Universe</title>
+  <meta name="description" content="The spin-half carrier is the plane, and its closures are the two spinor spaces and their sum. This article computes the norm on all of them, and the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-half-bispinors-and-n-norm-regularity"><strong>The Spin-Half Bispinors and N Norm Regularity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the $N$ norm on all of them, and the answer is the extreme one.</p>
+<p>On the plane the norm vanishes identically. Not at one point, not on a line: at every point. The plane is a null plane, and every element of it is norm-degenerate. The same holds for the whole spinor space that contains it, since the norm is multiplicative and the idempotent has norm zero. So the carrier of spin one half is the one carrier on which the predicate fails everywhere, and the failure is structural rather than accidental.</p>
+<p>The bispinor read repairs the situation, and the repair is exact. The algebra is the direct sum of the two spinor spaces, each of them null, and the norm of a sum is twice the polar pairing of its two components. So the norm is not lost on the bispinor space: it becomes a pairing between the two halves. An element is norm-regular exactly when its two components pair nontrivially, and no element of a single spinor space is norm-regular at all.</p>
+<p>The companion article is <em>The Spin-Half Bispinors and Spectral Regularity</em>, where the second predicate is computed and the answer is the opposite: the plane is spectrally regular away from the origin. The two predicates are independent, and this pair of articles is where the independence is sharpest. The spaces themselves are <em>Introduction to the Spin-Half Bispinors Spaces</em>. The norm and the predicate are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p>Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex. A unit real axis is written $\vec u_{\mathrm r}$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.</p>
+<h2 id="the-norm-and-the-predicate">The Norm and the Predicate</h2>
+<p><strong>Definition (the $N$ norm).</strong> For $\tilde Q=Q_te_t+\vec Q$ put</p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}.
+$$</p>
+<p>It is a complex-valued quadratic form, it is multiplicative, and it vanishes exactly on the elements without an inverse. The polar form is</p>
+<p>$$
+B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr),
+$$</p>
+<p>symmetric and complex-bilinear, so that $N(X+Y)=N(X)+N(Y)+2B(X,Y)$ for all $X,Y$.</p>
+<p><strong>Definition (the predicate).</strong> An element is <strong>norm-regular</strong> when $N\neq0$ and <strong>norm-degenerate</strong> when $N=0$. The zero locus is the <strong>null cone</strong> $\mathcal N=\{N=0\}$.</p>
+<h2 id="the-norm-of-the-idempotent">The Norm of the Idempotent</h2>
+<p><strong>Theorem.</strong> For the idempotent $\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$,</p>
+<p>$$
+N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr)=0 .
+$$</p>
+<p><em>Proof.</em> The coordinates are $Q_t=\tfrac12$ and $Q_k=\tfrac i2 u_k$, so</p>
+<p>$$
+N=\tfrac14+\sum_k\Bigl(\tfrac i2u_k\Bigr)^{2}=\tfrac14-\tfrac14\sum_k u_k^{2}=\tfrac14\bigl(1-\lvert\vec u_{\mathrm r}\rvert^{2}\bigr),
+$$</p>
+<p>and the axis is of unit length.</p>
+<p><strong>Remark (an idempotent of norm zero).</strong> An idempotent satisfies $P^{2}=P$, hence $N(P)^{2}=N(P)$ by multiplicativity, so its norm is $0$ or $1$. The two idempotents of an axis are the case $0$. The consequence is that the norm cannot see an idempotent at all, and this is the first sign that the spin-half spaces are null by construction.</p>
+<h2 id="the-plane-is-null">The Plane Is Null</h2>
+<p><strong>Theorem.</strong> For every complex $\lambda$,</p>
+<p>$$
+N\bigl(\lambda\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
+$$</p>
+<p><strong>Corollary (every element of the carrier is norm-degenerate).</strong> The intersection of the plane with the null cone is the plane:</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})\subseteq\mathcal N .
+$$</p>
+<p>So the carrier of spin one half contains no norm-regular element, and the origin is not an exception in this: the statement excludes nothing.</p>
+<p><strong>Remark (the cancellation).</strong> The norm of an element is the sum of the squares of its four coordinates, and on the plane those four squares cancel exactly. The scalar coordinate contributes $\tfrac14\lambda^{2}$ and the three vector coordinates contribute $-\tfrac14\lambda^{2}$, and the cancellation is the unit length of the axis written as an identity. On the centre there was one square and no partner to cancel it, and that is the whole difference between the two carriers.</p>
+<h2 id="the-spinor-space-is-null">The Spinor Space Is Null</h2>
+<p><strong>Theorem.</strong> For every element $X$ of the algebra,</p>
+<p>$$
+N\bigl(X\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=N(X)\,N\bigl(\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\bigr)=0 .
+$$</p>
+<p><strong>Corollary.</strong> The spinor space $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})$ lies in the null cone, and so does $S_-(\vec u_{\mathrm r})$.</p>
+<p><strong>Remark (the closure does not repair the nullity).</strong> The first closure adds two real dimensions to the plane, and it adds them inside the null cone. This is worth stating because the closure does repair the invariance: the plane is not invariant under the whole group and the spinor space is. The two notions of closure are independent, and here one is repaired and the other is not.</p>
+<h2 id="the-isotropic-dimension">The Isotropic Dimension</h2>
+<p><strong>Definition (isotropic).</strong> A subspace $W$ is <strong>isotropic</strong> for $N$ when $N$ vanishes on it, and <strong>totally isotropic</strong> when in addition the polar form vanishes on it in both arguments.</p>
+<p><strong>Proposition.</strong> The spinor spaces are totally isotropic: $N$ vanishes on $S_\pm$ and $B$ vanishes on $S_\pm\times S_\pm$.</p>
+<p><em>Proof.</em> The norm vanishes by the theorem above, and the polar form vanishes because $B(X,Y)=\tfrac12(N(X+Y)-N(X)-N(Y))$ with all three terms zero for $X,Y$ in the same spinor space.</p>
+<p><strong>Theorem (the isotropic dimension is at most half).</strong> If $W\subseteq\mathbb{B}$ is isotropic for a nondegenerate $N$, then $\dim_\mathbb{C}W\le\tfrac12\dim_\mathbb{C}\mathbb{B}=2$, that is $\dim_\mathbb{R}W\le4$.</p>
+<p><em>Proof.</em> For an isotropic $W$ one has $W\subseteq W^{\perp}$ for the polar form. The form is nondegenerate, so $\dim W^{\perp}=\dim\mathbb{B}-\dim W$, and the inclusion gives $\dim W\le\dim\mathbb{B}-\dim W$.</p>
+<p><strong>Corollary (the spinor spaces are maximal).</strong> Each spinor space is isotropic of real dimension $4=\tfrac12\dim_\mathbb{R}\mathbb{B}$, hence maximal. The plane is isotropic of real dimension $2$ and is not maximal; the two extra dimensions of the ideal are what the first closure adds.</p>
+<p><strong>Remark (the three isotropic spaces).</strong> The plane is totally isotropic as well, since $B(\lambda\tilde\Pi_{\mathrm{id},+},\mu\tilde\Pi_{\mathrm{id},+})=\lambda\mu N(\tilde\Pi_{\mathrm{id},+})=0$. What separates the plane from the spinor spaces is not the total isotropy but the dimension: the plane has real dimension $2$ and the spinor spaces $4$, and only the second is maximal.</p>
+<h2 id="the-bispinor-read">The Bispinor Read</h2>
+<p><strong>Theorem (the norm is the pairing).</strong> Let $X=X_{+}+X_{-}$ with $X_{\pm}\in S_{\pm}(\vec u_{\mathrm r})$. Then</p>
+<p>$$
+N(X)=2B(X_{+},X_{-}).
+$$</p>
+<p><em>Proof.</em> The norm is quadratic with polar form $B$, so $N(X_{+}+X_{-})=N(X_{+})+N(X_{-})+2B(X_{+},X_{-})$, and the two pure terms vanish because each spinor space is null.</p>
+<p><strong>Corollary (the norm sees only the mixed part).</strong> An element of a bispinor space is norm-regular exactly when its two components pair nontrivially:</p>
+<p>$$
+N(X)\neq0\iff B(X_{+},X_{-})\neq0 .
+$$</p>
+<p><strong>Theorem (the pairing is nondegenerate).</strong> The form $B$ restricted to $S_+\times S_-$ is nondegenerate: if $X_{+}\in S_+$ satisfies $B(X_{+},Y_{-})=0$ for every $Y_{-}\in S_-$, then $X_{+}=0$.</p>
+<p><em>Proof.</em> For such an $X_+$ and for arbitrary $Y=Y_++Y_-$ one has $B(X_+,Y)=B(X_+,Y_-)=0$, since $B$ vanishes on $S_+\times S_+$. The form $B$ is nondegenerate on $\mathbb{B}$, so $X_+=0$.</p>
+<p><strong>Remark (the two spinor spaces are dual).</strong> The display says that the norm, restricted to a bispinor space, is the duality pairing of the two spinor spaces. In a basis of the first and a dual basis of the second the pairing is the identity, up to the factor two, and no other information enters the norm. The spinor spaces carry no norm of their own; what they carry is a pairing with each other.</p>
+<h2 id="the-pairing-and-the-axis">The Pairing and the Axis</h2>
+<p><strong>The infinity is harmless here.</strong> The family of bispinor spaces is indexed by the axis, and the pairing moves with the axis, since both spinor spaces move. Every statement of this article holds at every axis, and the article writes the axis as a parameter for that reason.</p>
+<p><strong>The pairing is symmetric.</strong> The form $B$ is symmetric, so $B(X_+,X_-)=B(X_-,X_+)$ and the exchange of the two names does not change the value. There is no sign to track here, in contrast with the alternating forms of the exterior algebra. What the exchange does change is the order of the two components in the sum, which is nothing.</p>
+<h2 id="the-three-carriers-compared">The Three Carriers Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>norm on it</th>
+<th>null locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$\lambda^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$0$</td>
+<td>the whole plane</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$\lvert\vec v\rvert^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the carrier sits.</strong> Every nonzero element of the plane is norm-degenerate and, as the companion article shows, spectrally regular. So the plane away from the origin lies in the sector $\Sigma_{01}$, the sector of the null and spectrally regular elements. The centre lies in $\Sigma_{10}$ and the vector part in $\Sigma_{11}$. The sector $\Sigma_{00}$, in which both predicates fail, is met by no carrier except at the origin.</p>
+<h2 id="summary">Summary</h2>
+<p>The norm of the idempotent is zero, and by multiplicativity the norm vanishes on the plane, on both spinor spaces, and on every element of a single ideal. The plane is an isotropic plane of real dimension $2$, the spinor spaces are maximal isotropic subspaces of real dimension $4$, and the isotropic dimension of the algebra is at most half of $8$. On a bispinor space the norm becomes the pairing of the two spinor spaces, $N(X_++X_-)=2B(X_+,X_-)$, and it is nondegenerate. So no element of a single spinor space is norm-regular, and norm regularity inside the spin-half family is a two-sided notion.</p>
+<h2 id="the-boxed-summary">The Boxed Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the point</th>
+<th>in plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the carrier</td>
+<td>The spin-half carrier is a complex line inside the algebra, and its closure is an ideal.</td>
+</tr>
+<tr>
+<td>the key element</td>
+<td>The element that generates the plane has zero norm, and the norm respects products.</td>
+</tr>
+<tr>
+<td>what follows</td>
+<td>The norm vanishes on the whole plane, on the whole ideal that plane generates, and on the other ideal as well.</td>
+</tr>
+<tr>
+<td>the answer</td>
+<td>No element of a single ideal is norm-regular. Not one.</td>
+</tr>
+<tr>
+<td>the geometry</td>
+<td>The plane is an isotropic plane of real dimension two. Each ideal is a maximal isotropic subspace of real dimension four, which is half of the algebra.</td>
+</tr>
+<tr>
+<td>the whole algebra</td>
+<td>On the whole algebra the norm is the pairing of the two halves, so it is nonzero exactly when the two halves pair.</td>
+</tr>
+<tr>
+<td>the moral</td>
+<td>Norm regularity in the spin-half family is a two-sided notion. One half on its own never supplies it.</td>
+</tr>
+<tr>
+<td>against the other carriers</td>
+<td>On the centre and on the vector part the norm separates points. On the plane and on the ideals it separates nothing.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real, of dimension $8$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the $N$ norm, complex-valued and multiplicative</td>
+</tr>
+<tr>
+<td>$B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$</td>
+<td>the polar form of the norm</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone</td>
+</tr>
+<tr>
+<td>norm-regular</td>
+<td>$N\neq0$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>the two idempotents of the axis, a Peirce basis</td>
+</tr>
+<tr>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$</td>
+<td>the spinor plane, $\dim_\mathbb{R}=2$, null</td>
+</tr>
+<tr>
+<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
+<td>the spinor spaces, $\dim_\mathbb{R}=4$, maximal isotropic</td>
+</tr>
+<tr>
+<td>$S_+\oplus S_-=\mathbb{B}$</td>
+<td>a bispinor space, $\dim_\mathbb{R}=8$</td>
+</tr>
+<tr>
+<td>isotropic</td>
+<td>$N$ vanishes on the subspace</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors Spaces</a>, for the plane, the two spinor spaces and the family of bispinor spaces</li>
+<li><a href="the-spin-half-bispinors-and-spectral-regularity.html">The Spin-Half Bispinors and Spectral Regularity</a>, for the other predicate on the same spaces</li>
+<li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the idempotents as the generators of the ideals</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the norm, its multiplicativity and its zero locus</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the definitions of the two predicates and the four sectors</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the sector in which the plane away from the origin lies</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the idempotents and the splitting of the algebra</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the three carriers taken together</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

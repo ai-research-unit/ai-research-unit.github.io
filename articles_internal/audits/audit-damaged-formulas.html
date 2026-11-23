@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Executed: 498 failing formulas, now none. 376 in the physics articles, 122 in the mathematics articles and the internal notes. The…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="repairing-the-formulas-six-silent-faults-and-two-mechanical-passes"><strong>Repairing the Formulas: Six Silent Faults and Two Mechanical Passes</strong></h1>
+<p><em>Status of this file.</em> <strong>Executed: 498 failing formulas, now none.</strong> 376 in the physics articles, 122 in the mathematics articles and the internal notes. The one surviving record is a mention of the display delimiter inside a code span; it is not a formula and it renders as text.</p>
+<p><em>What the file is for.</em> It is the procedure of the two passes that cleared them: the four mechanical repairs of a parse failure, the second pass over the class that never raises one, and the checks that accept a folder as repaired.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>A formula is checked by rendering it with <code>throwOnError: true</code>, never by reading it.</strong> The build reports nothing: <code>throwOnError: false</code> and <code>errorColor: '#c00'</code> are the template's settings, so a broken formula is dark red on a page that exits zero.</li>
+<li><strong>The rescan is the only certificate, and its number is zero.</strong> A pass that ends at a lower count is an unfinished pass.</li>
+<li><strong>The pass restores the notation the article already intended.</strong> It does not rewrite mathematics, and where it cannot decide it reports to the author instead of choosing.</li>
+<li><strong>Delimiter parity comes before formulas</strong>, and it is repeated after every structural edit, because one stray display delimiter derails every later block of the file.</li>
+<li><strong>The row count is a second instrument.</strong> A matrix whose rows are separated by one backslash parses without complaint and renders as one row, so a scan that reaches zero is not yet a pass.</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> A broken formula in this corpus is invisible to the build. The page is written, the article is served, and the reader sees the offending source in dark red where the mathematics should be. Nothing reports it, so nothing gets fixed until someone opens the page.</p>
+<p><strong>The scale.</strong> The corpus holds about eight hundred thousand math regions. The census at the time of the pass is this one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>folder</th>
+<th>articles</th>
+<th>math regions</th>
+<th>of which display</th>
+<th>failing snippets at the first scan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics</code></td>
+<td>$628$</td>
+<td>$169\,377$</td>
+<td>$14\,093$</td>
+<td>$376$ in $55$ files</td>
+</tr>
+<tr>
+<td><code>articles_maths</code></td>
+<td>$2\,464$</td>
+<td>$610\,118$</td>
+<td>$31\,549$</td>
+<td>$122$ with the internal notes</td>
+</tr>
+<tr>
+<td><code>articles_internal</code></td>
+<td>$53$</td>
+<td>$25\,809$</td>
+<td>$1\,263$</td>
+<td>counted with the mathematics</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pass cleared them.</strong> The final scan of the three folders reports $0$ failing snippets in the physics articles, $0$ in the mathematics articles, and $1$ in the internal notes. That last record is a mention of the display delimiter inside a code span. It is not a formula and it renders as text.</p>
+<p><strong>Most of the work is one fault repeated.</strong> Of the $376$ physics records, $366$ are one of four mechanical faults: a script written twice, a command fused to its argument, an operator used as a script without braces, or a control character standing where a command begins. The remaining $10$ need a reading of the formula. §<em>The Four Faults That Need Reading</em> names them.</p>
+<p><strong>A sixth class produces no record at all.</strong> Every count above is a count of formulas KaTeX refused to parse. A formula it parses into the wrong picture leaves no record, and the corpus carried one such class in number: $90$ lines in $52$ display blocks of $33$ articles, each a matrix whose rows were separated by a single backslash. The matrix rendered, in dark type and without a complaint, as one long row. §<em>The Separator That Lost a Backslash</em> gives the detector and the repair. The class is why a scan that ends at zero is not yet a pass.</p>
+<p><strong>What the pass does not do.</strong> It does not rewrite mathematics. It restores the notation the article already intended, and it says where it cannot decide. The distinction is the subject of §<em>The Objection, and the Four Parts of the Answer</em>.</p>
+<p><strong>The organisation.</strong> §<em>What the Reader Sees When a Formula Fails</em> gives the renderer facts a repairer must reproduce. §<em>The Delimiters, and the Four Ways a Formula Escapes</em> gives the four ways a formula escapes the renderer entirely. §<em>The Scanner</em> builds the detector. §<em>The Census</em> tabulates the faults. §<em>The Merge Rule: A Script Written Twice</em>, §<em>The Lost Space: Two Tokens Fused into One Command</em>, §<em>The Superscript on Nothing</em> and §<em>The Control Character: A Command Stored as Bytes</em> give the four mechanical repairs of the first pass. §<em>The Separator That Lost a Backslash</em> gives the fifth, which belongs to a second pass because its fault never reaches the parser as an error. §<em>The Four Faults That Need Reading</em> lists what a script must not touch. §<em>The Order of the Passes</em> and §<em>The Checks</em> give the procedure and its acceptance test. §<em>The Objection, and the Four Parts of the Answer</em> answers the one serious objection. §<em>Summary</em> closes.</p>
+<h2 id="1-what-the-reader-sees-when-a-formula-fails">1. What the Reader Sees When a Formula Fails</h2>
+<p><strong>The renderer is KaTeX 0.16.9, loaded from a CDN.</strong> <code>article_template.html</code> loads the stylesheet, the library and the auto-render extension, all three at that version, and calls <code>renderMathInElement</code> on the body.</p>
+<p><strong>The failure is silent by construction.</strong> The options are <code>throwOnError: false</code> and <code>errorColor: '#c00'</code>. KaTeX prints the source it could not parse in dark red, in place of the formula, and carries on with the rest of the page. There is no console message, no build warning, and no exit code. A repairer cannot find a fault by building the site.</p>
+<p><strong>Three macros are declared, and one of them is not KaTeX's.</strong> <code>\slashed</code> is defined as <code>\not{#1}</code>. <code>\boxed</code> and <code>\fbox</code> are redefined through <code>\fcolorbox</code>, with a black frame and a transparent background, so that a boxed equation gets a border and no fill. The redefinition passes its argument in display style, and that detail is what makes a boxed fraction keep its size. A scanner that omits these declarations reports a false failure on every slashed symbol. A scanner that keeps <code>\boxed</code> native reports no failure, because KaTeX has its own; the difference is cosmetic and not a fault.</p>
+<p><strong>A fourth patch is a string replacement, and it moves the error positions.</strong> <code>fixStigmaTilde()</code> rewrites every <code>\tilde{Ϛ}</code> into <code>\tilde{\text{Ϛ}\vphantom{H}}</code> before rendering. On version 0.16.9 the plain form renders without the patch, so a scanner can leave it out. If a scanner applies it, every position reported after the first stigma indexes the patched string and not the source. §<em>The Scanner</em> records what that costs.</p>
+<p><strong>The one sentence to carry away.</strong> A formula is checked by rendering it with <code>throwOnError: true</code>, never by reading it.</p>
+<h2 id="2-the-delimiters-and-the-four-ways-a-formula-escapes">2. The Delimiters, and the Four Ways a Formula Escapes</h2>
+<p><strong>Two delimiters are enabled, and only two.</strong> Auto-render is configured with the display pair and the inline pair. Nothing else is a delimiter. The LaTeX openers written with a backslash and a bracket, and the ones written with a backslash and a parenthesis, are not enabled: $648$ openers of the second kind stand in $7$ mathematics articles, and none of them is ever typeset. A repairer who meets them cannot fix them with the scanner of §<em>The Scanner</em>, because the scanner sees no math there at all. Converting them is a content pass of its own, not a repair.</p>
+<p><strong>The build protects math before Markdown runs, with one regular expression.</strong> <code>build.py</code> replaces every region with a placeholder, converts the Markdown, and restores the regions verbatim. A region is a run bounded by the display delimiter, or two single dollar signs on one line with no dollar sign and no line break between them. Four consequences follow, and each one has been observed in the corpus.</p>
+<p><strong>First, inline math cannot span a line break.</strong> The inline pattern excludes a newline. A region opened on one line and closed on the next is left unprotected, Markdown then eats its underscores and braces, and the reader sees fragments. A repairer must check the dollar-sign parity line by line, not file by file.</p>
+<p><strong>Second, display pairing is file-global and blind.</strong> The display pattern is non-greedy but unbounded: a stray display delimiter pairs with the next one anywhere below it, and everything between becomes one display block. Prose included. <code>exercise-plane-wave-propagation-in-a-medium.md</code> carried three prose sentences inside display blocks, and every later pairing in that file was shifted by the same three.</p>
+<p><strong>Third, nothing protects a code fence.</strong> Protection runs before Markdown, so a fence is not a shield. Two display delimiters inside a fence are taken as one display block, and the placeholder then swallows the fence. Verified on a four-line sample: the fence disappears. This article writes the display delimiter in words for that reason.</p>
+<p><strong>Fourth, a table cell is safe.</strong> Because the region is replaced before Markdown, a vertical bar inside a formula in a table cell does not split the cell. That is why the conventions allow a bare bar in a formula and never outside one.</p>
+<h2 id="3-the-scanner">3. The Scanner</h2>
+<p><strong>The detector is a render with <code>throwOnError: true</code> and the template's macros.</strong> Four steps suffice. Read the file as UTF-8. Split it on the display delimiter: the odd pieces are display math, the even pieces are text. In each text piece, pair the single dollar signs in order, and report a piece with an odd count as an unbalanced delimiter at that line. Render every snippet with <code>katex.renderToString</code> and report the file, the line, the message and $60$ characters of context on each side of the reported position.</p>
+<p><strong>Export the failing snippet, not just its message.</strong> The repair is written by reading the snippet. A table of messages alone cannot be acted on, because the same message names a merge in one place and a brace in another.</p>
+<p><strong>Read the reported position against the string you rendered.</strong> During this pass the scanner patched the stigma before rendering, so every position after the first stigma in a snippet was off by the length of the patch. Thirty-five records reported a correct message at a position that pointed at the wrong brace, and one automated merge landed on the wrong subscript. The fix is to render the string as written. If a stigma genuinely fails in some future version, patch a copy and translate the positions back before editing anything.</p>
+<p><strong>Merge, re-render, repeat.</strong> One snippet may hold three faults. After each repair the snippet is rendered again: either it passes, or it fails with the next fault, or it fails with a different class, which is the signal to stop and read. The loop stops on the first of the three.</p>
+<h2 id="4-the-census">4. The Census</h2>
+<p><strong>The first physics scan is one table.</strong> The classes are listed with the repair that clears them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>records</th>
+<th>source before</th>
+<th>source after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>script written twice</td>
+<td>$320$</td>
+<td><code>\tilde E_{\Phi}_\mu</code></td>
+<td><code>\tilde E_{\Phi,\mu}</code></td>
+</tr>
+<tr>
+<td>command fused to its argument</td>
+<td>$29$</td>
+<td><code>\lVertE</code></td>
+<td><code>\lVert E</code></td>
+</tr>
+<tr>
+<td>operator with no argument as a script</td>
+<td>$9$</td>
+<td><code>\vec B_\tilde\nabla…</code></td>
+<td><code>\vec B_{\tilde\nabla…}</code></td>
+</tr>
+<tr>
+<td>control character in the command</td>
+<td>$8$</td>
+<td>tab then <code>ilde</code></td>
+<td><code>\tilde</code></td>
+</tr>
+<tr>
+<td>delimiter and structure</td>
+<td>$10$</td>
+<td><code>\left(</code> with no <code>\right)</code></td>
+<td>a matched pair</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mathematics articles add four classes of their own.</strong> A nested operator that was comma-merged (<code>G_\Box_\Phi</code>), a macro whose argument lost its brace (<code>\bar\mathrm{Sd}</code>), a prime followed by an exponent (<code>e^{i\theta}'</code>), and a runaway chain of empty groups left by a bad substitution.</p>
+<p><strong>A sixth class is counted apart, because its record is a picture and not a message.</strong> A display block whose rows are separated by a single backslash parses without error, so the scanner of §<em>The Scanner</em> returns nothing for it. The count came from a second detector: $52$ blocks in $33$ articles, holding $90$ separators that lost a backslash. The environments were <code>aligned</code> in $36$, <code>pmatrix</code> in $14$, <code>cases</code> in $1$ and <code>array</code> in $1$. The largest single carrier was <em>Matrix Representations and Conventions</em>, with $13$ lines in $4$ blocks. §<em>The Separator That Lost a Backslash</em> gives the repair.</p>
+<p><strong>The frequencies are the argument for a script.</strong> A fault that occurs $320$ times is not a lapse of attention; it is what an editor produces when it treats a label as two scripts. The repair is therefore also a rule: one object carries one subscript, and its parts are separated by a comma.</p>
+<h2 id="5-the-merge-rule-a-script-written-twice">5. The Merge Rule: A Script Written Twice</h2>
+<p><strong>A script written twice is the corpus's dominant fault.</strong> The notation writes a label and a component as two subscripts on one symbol, as in <code>\tilde E_{\Phi}_\mu</code>, and KaTeX stops at the second one with <em>Double subscript</em>. The repair joins them.</p>
+<p><strong>The join is a comma by default.</strong>
+$$
+\tilde E_{\Phi,\mu}=\partial_\mu\tilde E_\Phi,\qquad
+\tilde S_{\Psi,\pm}^{\natural}=-\tilde S_{\Psi,\pm},\qquad
+\tilde U_{\Psi,\mathrm b,y}\in\mathbb{B}_{\Psi}.
+$$
+The first form names the element and the index that reads it, the second names the sector and the sign, the third names the sector, the factor and the axis. In each the two scripts are two labels of one object, and the comma is the separator the corpus already uses between them.</p>
+<p><strong>One case nests instead of joining.</strong> When the first script is a differential operator, the second is its argument and the pair is one object:
+$$
+G_{\Box_\Phi},\qquad \sigma_{\Delta_\Phi},\qquad \tilde\nabla_{\mathrm{gco}},\qquad \partial_\Phi .
+$$
+A comma here would read as a list of two subscripts and would be wrong: $\Box_\Phi$ is an operator, and $G$ is its Green function. The discriminator is mechanical. The operators are <code>\Box</code>, <code>\Delta</code>, <code>\nabla</code> and <code>\partial</code>; when the first script is one of them, nest.</p>
+<p><strong>The script may be a superscript.</strong> <code>\tilde S_{\Psi}^{\natural}_\pm</code> carries a superscript and two subscripts. Only the two subscripts merge; the decoration stays where it is. The general statement is that a symbol takes at most one subscript and at most one superscript, and the merge is applied to the repeated one alone.</p>
+<p><strong>One merge is a brace, not a comma.</strong> <code>\bar\mathrm{Sd}</code> fails with <em>Unexpected end of input in a macro argument</em>, because <code>\bar</code> took one token and <code>\mathrm</code> is looking for its group. The repair is <code>\bar{\mathrm{Sd}}</code>. The signal is the message: a <em>double</em> script means a comma, a <em>missing argument</em> means a brace, and the two are never interchangeable.</p>
+<p><strong>The merge is checked by re-rendering and by reading one neighbour.</strong> A merge that renders is not yet a merge that is right. The check on meaning is one sentence in the same article that writes the same object in full. If the article nowhere writes it in full, the merge is reported to the author instead of applied.</p>
+<h2 id="6-the-lost-space-two-tokens-fused-into-one-command">6. The Lost Space: Two Tokens Fused into One Command</h2>
+<p><strong>A space that disappeared fuses two tokens into one command.</strong> <code>\lVertE</code> reads as a single control word, KaTeX looks it up, and reports <em>Undefined control sequence</em>. The repair is the space: <code>\lVert E</code>.</p>
+<p><strong>The split is chosen, not guessed.</strong> The rule that works is to take the longest prefix that is a defined command and check that the remainder begins a new token. <code>\lVertE</code> splits at <code>\lVert</code>, leaving <code>E</code>, a vector. <code>\Box_\PhiG</code> splits at <code>\Box_\Phi</code>, leaving <code>G</code>, the Green function. <code>\wedgeA</code> splits at <code>\wedge</code>, leaving <code>A</code>, a form.</p>
+<p><strong>Three splits need the sentence.</strong> <code>\rVerte</code> is <code>\rVert</code> followed by the exponential that carries the phase. <code>\lambdaiR</code> is <code>\lambda</code> followed by the mode label <code>iR</code>. <code>\cdoti</code> is <code>\cdot</code> followed by the imaginary unit. Each is confirmed by the surrounding formula and not by the split alone.</p>
+<p><strong>The census of the class.</strong> Eleven sites of <code>\lVertE</code>, six of <code>\lVertH</code>, three of <code>\rVerte</code>, two each of <code>\lambdaiR</code> and <code>\PhiG</code>, one each of <code>\lVertv</code>, <code>\lVertA</code>, <code>\intk</code>, <code>\Phif</code> and <code>\cdoti</code>.</p>
+<p><strong>A space before a command matters where a name ends in a letter.</strong> <code>\lVert</code> and <code>\rVert</code> are the common carriers here, because the norm bar is written next to the object it measures and the two are easy to run together. The same fault appears once in the mathematics on <code>\bar</code>: <code>\barA</code> for <code>\bar A</code>.</p>
+<h2 id="7-the-superscript-on-nothing">7. The Superscript on Nothing</h2>
+<p><strong>A space cannot take a superscript, and KaTeX 0.16 says so obscurely.</strong> <code>\;^{*}</code> fails with <em>Got group of unknown type: 'internal'</em>, which names an internal node and not the space. The repair is an empty group: <code>{}^{*}</code> takes the script and is invisible.</p>
+<p><strong>Two sites in the corpus, one in each form.</strong> The involution of the tensor square was written <code>\sigma_1=\;^{*}\otimes\mathrm{id}</code>; the transpose was written <code>\operatorname{adj}=\,^{\mathsf T}</code>. Both are the same fault and both take the same repair.</p>
+<p><strong>A prime is a superscript, so a prime followed by an exponent collides.</strong> <code>e^{i\theta}'^{2}</code> fails with <em>Double superscript</em>. The convention forbids <code>q'_0^2</code> for the same reason. The repair separates the two scripts with an empty group:
+$$
+e^{i\theta_{\mathrm{pha}}}{}^{2},\qquad e^{i\theta}{}'^{2}.
+$$
+Both forms render, and the second keeps the prime visibly on the group. Five sites in the mathematics articles took this repair.</p>
+<p><strong>Do not delete the prime.</strong> The prime distinguishes the second root from the first in the polar decomposition, and dropping it to make the formula render destroys the statement. The empty group is the repair; removal is not.</p>
+<h2 id="8-the-control-character-a-command-stored-as-bytes">8. The Control Character: A Command Stored as Bytes</h2>
+<p><strong>Some commands were stored as bytes, not as letters.</strong> A tab followed by <code>ilde</code> is <code>\tilde</code> with its backslash and its <code>t</code> replaced by one character. The same happened to <code>\frac</code> (form feed), <code>\varrho</code> (vertical tab), <code>\breve</code> and <code>\begin</code> (backspace).</p>
+<p><strong>The cause is a string escape.</strong> In a replacement string, <code>\t</code>, <code>\f</code>, <code>\v</code> and <code>\b</code> are control characters and not letters. Any script that builds TeX through such a string corrupts every formula it touches. The writer of the script sees a correct formula on screen and a broken one in the file.</p>
+<p><strong>The detector is a byte scan.</strong> Read each file as bytes and report every byte below $32$ other than $9$, $10$ and $13$. The scan is one line, it costs nothing, and it catches a fault that defeats every rule of this article, because the text looks right until the bytes are read.</p>
+<p><strong>The repair is the letter.</strong> Tab becomes <code>\t</code>, form feed becomes <code>\f</code>, vertical tab becomes <code>\v</code>, backspace becomes <code>\b</code>. Eight physics records come from one article, the Lorentz rotor, where $20$ bytes were corrupted into tabs, vertical tabs and one form feed. Five records in two files on the mathematics side come from a backspace, in <code>\breve</code> and in <code>\begin</code>.</p>
+<p><strong>Scan first, repair second.</strong> The byte scan comes before every other pass, because control characters break the pairing of braces and the splitting of scripts, and a scanner that reads them as whitespace reports one fault five times.</p>
+<h2 id="9-the-separator-that-lost-a-backslash">9. The Separator That Lost a Backslash</h2>
+<p><strong>This fault is silent twice over: it raises no error and it turns nothing red.</strong> A matrix whose rows are separated by one backslash parses. The backslash standing before the line break is the command for a space, the environment receives no separator, and the entries meant for two rows arrive as one. The page is served, the matrix is drawn as a single row, and the scan of §<em>The Scanner</em> reports nothing, because <code>throwOnError</code> has no complaint to make. Every instrument of the first pass is blind to this class by construction.</p>
+<p><strong>The two forms differ by one character.</strong> The first row is written <code>Q_t-Q_z &amp; -Q_x-iQ_y\</code> in the broken form and <code>Q_t-Q_z &amp; -Q_x-iQ_y\\</code> in the repaired one, and the second is what the display below carries.</p>
+<p>$$
+\begin{pmatrix}
+Q_t-Q_z & -Q_x-iQ_y\\
+-Q_x+iQ_y & Q_t+Q_z
+\end{pmatrix}
+$$</p>
+<p><strong>Three facts combine to hide it.</strong> A backslash before a line break is a legal command, so the parse succeeds. An environment accepts any number of entries per row and neither pads nor complains, so the structure does not object. And the damage is a wide row rather than a wrong glyph, so no character in the page is unfamiliar and the eye that has not been told what shape the matrix should have reads past it.</p>
+<p><strong>The cause is a string that halves a backslash.</strong> This is the sibling of §<em>The Control Character: A Command Stored as Bytes</em>, and the two faults come from one habit. A replacement string is not raw, so <code>\\</code> in the script's source is one backslash and <code>\\\\</code> is two; a script written with the first where it needed the second halves every separator it writes, exactly as <code>\t</code> written where <code>\\t</code> was meant turns a command into a tab. The control character changes a glyph; this one removes a character and leaves everything else in place, which is why it survives a build, a scan and a reading of the source.</p>
+<p><strong>The census, on the state before the pass.</strong> Thirty-three articles carried the fault, in $52$ display blocks and $90$ lines. The environments were <code>aligned</code> in $36$ blocks, <code>pmatrix</code> in $14$, <code>cases</code> in $1$ and <code>array</code> in $1$. <em>Matrix Representations and Conventions</em> carried $13$ of the lines in $4$ blocks, and the exercise on quantum channels and the article on left-right symmetric fermions carried $6$ each. Two of the blocks, holding $4$ lines, stood in <em>The Newman–Penrose Formalism in Biquaternionic Form</em> and were read and repaired by hand while that article was under review; the remaining $86$ lines in $50$ blocks of $32$ articles are the mechanical pass.</p>
+<p><strong>The detector is a row count, and it is not a parse.</strong> For each display block that contains an environment, count the separators the source declares — every <code>\\</code>, with or without a bracket argument — and count the rows the renderer produces, which is the number of <code>&lt;mtr</code> elements in the returned HTML. A block whose rendered count is below its declared count is fused. A count above is not a fault: a block holding two environments, or a matrix inside an aligned block, legitimately produces more rows than it declares separators, and the pass reports the deficit alone.</p>
+<p><strong>The one false positive to expect.</strong> A <code>\\</code> at the top level of a display, before or after an environment, is a line break and is legal. It is counted as a declared separator, the renderer honours it without a <code>&lt;mtr</code>, and the block is flagged although it is correct. One record survived the corpus pass: <code>\tilde Q\ \longmapsto\\</code> standing immediately before a matrix in <em>The Lorentz Group as Biquaternion Norm Automorphisms</em>. The repair is to read the block and dismiss the record. Counting per environment would remove the false positive at the cost of a parser for the environment tree, which one record does not justify.</p>
+<p><strong>The repair is mechanical.</strong> On every line of a display block that contains an environment and whose last character is a backslash not preceded by another, append one backslash. Nothing else moves: no entry, no brace, no bracket argument. The block is re-rendered at once and its row count is recomputed; after the pass the counts must be equal or above, and the deficit must be zero.</p>
+<p><strong>The guard is the length of the trailing run, not the last character.</strong> The pass acts on a run of exactly one backslash. A run of two is already a separator and is left alone, which makes the pass idempotent: a second run changes nothing. A longer odd run is a separator followed by a space and is reported for reading rather than repaired, because the author's intent there is not mechanical. There were none in the corpus.</p>
+<p><strong>The pass leaves two classes alone on purpose.</strong> A display block with no environment is not read, because a trailing backslash there is a space and the author may have wanted one: sixteen such lines stand in the physics articles, all chains and conjunctions written across source lines, and all of them render as intended. And a line outside a display block is not read at all, since a lone backslash in prose or in an inline formula is a space, not a row.</p>
+<p><strong>The pass was verified on the whole corpus.</strong> The $14\,145$ display blocks of the physics folder were re-rendered under <code>throwOnError: true</code>, $354$ of them carrying at least one environment, and no block was left with a deficit; the mathematics and internal folders were scanned for the class and carried none. The rescan of §<em>The Order of the Passes</em> is unchanged at zero, which is the expected outcome and not the check: this class never had a nonzero count there to begin with.</p>
+<h2 id="10-the-four-faults-that-need-reading">10. The Four Faults That Need Reading</h2>
+<p><strong>A delimiter pair with one side missing.</strong> <code>\exp\left(i\theta_{\mathrm{gau}}),</code> fails, and the message asks for <code>\right</code>. The repair is the closing delimiter. The scanner reports the failure at end of input, so the position is useless and the reading is the whole job.</p>
+<p><strong>Matrix rows separated by a space instead of a double backslash.</strong> <code>\begin{pmatrix}1&amp;2&amp;3&amp;4\ 5&amp;6&amp;7&amp;8…</code> puts the whole matrix on one row, and the failure appears at the first backslash. The repair is <code>\\</code> between the rows. The scanner cannot see the intent; the four-by-four shape of the entries gives it.</p>
+<p><strong>Prose inside a display block.</strong> Three display blocks in one exercise contained a sentence each, and the blocks around them were closed in the wrong places. The repair is to close the display before the sentence and reopen it after. The repairer must count the delimiters again after the edit, because every later block in the file shifted.</p>
+<p><strong>A LaTeX array inside a display, used as a table.</strong> One article built a four-column table with <code>\begin{array}</code> and <code>\hline</code> inside a row. It fails, and the message says that <code>\hline</code> is valid only inside an array environment; moved out of the row, it breaks in another way. The conventions are explicit: tables are Markdown, never LaTeX array. The repair is a Markdown table in place of the display, with the cells in math.</p>
+<p><strong>The common feature.</strong> In all four the scanner localises the fault and not the repair. Each one is written out by hand and re-rendered on the spot.</p>
+<h2 id="11-the-order-of-the-passes">11. The Order of the Passes</h2>
+<p><strong>Pass zero is the byte scan.</strong> It runs on the three folders and repairs the control characters. Nothing else is attempted until it reports zero.</p>
+<p><strong>Pass one is the delimiter census.</strong> For each file, count the display delimiters and check the parity, then check the single-dollar parity line by line. A file with an odd count is inspected at the last unpaired site, and the structural repair is made before any formula is touched. A file repaired for structure is re-censused, because the repair moves every later block.</p>
+<p><strong>Pass two is the scanner.</strong> It produces one record per failing snippet with its file, line, message and source.</p>
+<p><strong>Pass three is the automated repair, in four steps.</strong> Scripts first, because they are $320$ of the $376$ and the rule is the safest. Spaces second, because the split test is local. Superscripts on nothing third. Braces fourth. Each step re-renders its own snippet and stops on a change of class.</p>
+<p><strong>Pass four is by hand.</strong> The records that remain after pass three are the ten of the delimiter and structure class, listed in §<em>The Four Faults That Need Reading</em>, and the handful of splits that need the sentence.</p>
+<p><strong>Pass five is the rescan.</strong> Its count must be zero. A pass is not finished at a lower count.</p>
+<p><strong>The separator pass stands outside that chain.</strong> It cannot join pass three, because its fault never reaches the scanner's output. It runs over every display block of whatever folder it is given, failing or not, and its acceptance is a deficit count rather than an error count. Because it is guarded by the length of the trailing run it is idempotent, so it may be rerun after any structural edit that changes the shape of a display block.</p>
+<h2 id="12-the-checks">12. The Checks</h2>
+<p><strong>The scan is the acceptance test, and its number is zero.</strong> The one record that survives is named and dismissed: a mention of the display delimiter inside a code span is not a formula, and <code>trace-migration.md</code> carries the only one.</p>
+<p><strong>The row count is the second acceptance test, and its number is a zero deficit.</strong> Render every display block that carries an environment and compare the rows produced with the separators declared. The check is one pass over the corpus, and it finds the class that §<em>The Scanner</em> cannot see. It reports one expected false positive, named in §<em>The Separator That Lost a Backslash</em>, and a reader dismisses it once and for good.</p>
+<p><strong>The delimiter audit uses the site's own expression.</strong> Protect each file with <code>build.py</code>'s pattern and count the delimiters that survive. Expect none, apart from mentions in code spans. This check catches the file that renders today and breaks tomorrow, which the KaTeX scan alone does not.</p>
+<p><strong>The proof-end grep must return zero.</strong> The plan states the command, and this pass stripped three marks that survived it: two in the tensor product article and one in the entanglement article.</p>
+<p><strong>Three sites are read in the rendered page, one per class.</strong> A merge, a split and a structural repair. The scan certifies syntax; the eye certifies that the formula now says what the sentence says it says.</p>
+<p><strong>No scratch file stays in the repository.</strong> The scanner, the repair script and the test samples live in a temporary directory outside the repository and are deleted when the pass ends. The repository holds the repaired articles and this note.</p>
+<h2 id="13-the-objection-and-the-four-parts-of-the-answer">13. The Objection, and the Four Parts of the Answer</h2>
+<p><strong>The objection is that an automated substitution changes mathematics.</strong> A script that merges <code>\tilde E_{\Phi}_\mu</code> into <code>\tilde E_{\Phi,\mu}</code> decides that the sector label and the index are two labels of one object. In another formula the same characters could mean the component of a frame element, and the merge would then be wrong.</p>
+<p><strong>The answer has four parts.</strong> The comma is the separator the corpus already writes between a sector and an index, and $320$ sites use that convention. The one case where the two scripts are not labels, the operator, is excluded by a stated discriminator. The merge is checked against one neighbouring sentence that writes the object in full. And the sites that carry meaning rather than punctuation are repaired by hand: <code>\lambdaiR</code>, the split of <code>\Box_\Phi G</code>, the brace of <code>\bar{\mathrm{Sd}}</code>.</p>
+<p><strong>The objection is right about one thing.</strong> The rescan certifies syntax and nothing else. A formula can render and be false. That is why the pass is followed by the reading of three sites per class, and why the census is reviewed before the automated step runs rather than after.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus had $498$ failing formulas and has none.</strong> The count is $376$ in the physics articles, measured on the first scan, and $122$ in the mathematics articles and the internal notes.</p>
+<p><strong>Four classes hold $366$ of the $376$, and four rules clear them.</strong> A script written twice takes a comma, or a nesting when the first script is a differential operator. A command fused to its argument takes a space, chosen by the longest defined prefix. An operator that carries a script without braces takes them. A control character takes its letter back. The fifth class, delimiter and structure, holds the last $10$ and is repaired by reading. Two rules serve the mathematics articles: an empty group carries a script that a space cannot carry, and the same empty group separates a prime from an exponent that follows it.</p>
+<p><strong>The detector is a render, not a reading.</strong> KaTeX at 0.16.9 with <code>throwOnError: true</code> and the template's three macros. The build never reports a fault, so a scanner is the only instrument.</p>
+<p><strong>One class is invisible to the render check and needs a second instrument.</strong> A matrix whose rows are separated by a single backslash parses as one row: no message, no red type, and a wrong picture. $90$ lines in $52$ blocks of $33$ articles carried it. The detector compares the rows a block declares with the rows it renders, and the repair appends one backslash where the trailing run is exactly one.</p>
+<p><strong>The delimiters fail before the formulas do.</strong> One stray display delimiter derails the rest of a file, and a code fence does not protect one. The parity check comes before the formula check, and it is repeated after every structural edit.</p>
+<p><strong>Four faults cannot be automated.</strong> A missing <code>\right</code>, a matrix with its rows fused, prose inside a display, and a LaTeX array used as a table. Each is read, repaired and re-rendered on the spot.</p>
+<p><strong>The last pass is a rescan, and its number is zero.</strong> Anything else is an unfinished pass.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MATH_RE</code></td>
+<td>the build's protection pattern: the display pair, or the inline pair without a line break</td>
+</tr>
+<tr>
+<td>display delimiter</td>
+<td>the pair of dollar signs that opens and closes a display block, written in words here because a literal pair in this note would be eaten by the build</td>
+</tr>
+<tr>
+<td>silent failure</td>
+<td>a faulty formula rendered in <code>#c00</code> by KaTeX with <code>throwOnError: false</code>, reported nowhere</td>
+</tr>
+<tr>
+<td>record</td>
+<td>one failing snippet: file, line, message, source</td>
+</tr>
+<tr>
+<td>merge</td>
+<td>the repair of a script written twice, by a comma or by a nesting</td>
+</tr>
+<tr>
+<td>nesting</td>
+<td>the repair of <code>G_\Box_\Phi</code> into <code>G_{\Box_\Phi}</code>, taken when the first script is <code>\Box</code>, <code>\Delta</code>, <code>\nabla</code> or <code>\partial</code></td>
+</tr>
+<tr>
+<td>lost space</td>
+<td>a space between a command and its argument that disappeared, fusing two tokens</td>
+</tr>
+<tr>
+<td>empty group</td>
+<td>the pair of braces <code>{}</code> that carries a script a space cannot carry</td>
+</tr>
+<tr>
+<td>control character</td>
+<td>a byte below $32$, other than tab, newline and carriage return, standing where a backslash and a letter belong</td>
+</tr>
+<tr>
+<td>row separator</td>
+<td>the <code>\\</code> that ends a row inside an environment, with or without a bracket argument</td>
+</tr>
+<tr>
+<td>fused row</td>
+<td>a block rendered with fewer rows than the separators it declares</td>
+</tr>
+<tr>
+<td>row-count check</td>
+<td>the comparison of declared separators with the <code>&lt;mtr</code> elements of the rendered HTML, the only detector of a fused row</td>
+</tr>
+<tr>
+<td>stigma patch</td>
+<td>the template's replacement of <code>\tilde{Ϛ}</code> by <code>\tilde{\text{Ϛ}\vphantom{H}}</code>, which moves every reported error position after it</td>
+</tr>
+<tr>
+<td>rescan</td>
+<td>the final scan, whose count must be zero</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="trace-migration.md">The Trace Migration: The Purge of the Informational Trace</a>, internal, for the other mechanical pass of this corpus and the shape of its census.</li>
+<li><a href="the-trace-is-a-matrix-notion.md">The Trace Is a Matrix Notion</a>, internal, for the short reading of a symbol that the corpus also had to repair.</li>
+<li><a href="../../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane Wave Propagation in a Medium</a>, for the article where three prose sentences sat inside display blocks and shifted the whole file's pairing.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations and Conventions</a>, for the thirteen fused rows of the matrix conventions, the largest single carrier of the class.</li>
+<li><a href="../../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a>, for the eight records where a command was stored as a control character.</li>
+<li><a href="../../articles_physics/the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html">The Multi-Qubit Split I: The Antilinear Obstruction and the Corner Collapse</a>, for the superscript on a space, in the involution $\sigma_1={}^{*}\otimes\mathrm{id}$.</li>
+<li><a href="../../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html">The Complete Polar Decomposition of an $n$-Regular Biquaternion</a>, for the prime followed by an exponent and the empty group that separates them.</li>
+<li><a href="../../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path Integral Anomaly in Biquaternionic Form</a>, for the LaTeX array that became a Markdown table.</li>
+<li><a href="../../articles_maths/the-tensor-product-of-two-biquaternion-algebras.html">The Tensor Product of Two Biquaternion Algebras</a>, for the proof-end marks that the plan's grep expects to find absent.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

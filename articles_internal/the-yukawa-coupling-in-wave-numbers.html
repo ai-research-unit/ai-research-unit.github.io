@@ -76,9 +76,9 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The claim.</strong> The Yukawa coupling is the one number of the flavour sector that carries no dimension, and there is exactly one way of writing it in which its dimensionlessness is visible on the page: as the quotient of two wave numbers. This note fixes that writing, names the three dimensionless objects it produces, and says where the square root that Koide's relation requires actually comes from.</p>
 <p><strong>What is being repaired.</strong> Koide's relation is printed as a ratio between a sum of masses and the square of a sum of square roots of masses. The numerator carries a unit of mass; the denominator carries the square of the square root of a unit of mass; and the ratio of the two is a pure number only because the unit cancels. That cancellation is correct but invisible, and a reader who asks what one square root of a mass <em>is</em> gets no answer from the printed formula. The answer is that a square root of a mass is nothing on its own. It becomes something when it is divided by another square root of a mass, and that quotient is what the formula is really built from.</p>
-<p><strong>What this note does, in four steps.</strong> It writes the mass as a wave number, once, and then uses nothing else. It shows that the Yukawa coupling is a quotient of two such wave numbers, hence dimensionless and scale-bearing at the same time. It separates the two objects that both deserve the name <em>amplitude</em> and shows that they are reciprocal, which is why the ladder's square root and the quantised field's square root are not the same object. And it writes Koide's relation, the ladder and the phase in that variable, so that no square root of a dimensioned quantity is taken anywhere.</p>
+<p><strong>What this note does, in four steps.</strong> It writes the mass as a wave number and the field as a mode sum, once, and then uses nothing else: the amplitude becomes a coefficient on the page and not a symbol. It shows that the Yukawa coupling is a quotient of two such wave numbers, hence dimensionless and scale-bearing at the same time. It separates the three objects that deserve the name <em>amplitude</em> and shows that two of them are reciprocal, which is why the ladder's square root and the quantised field's square root are not the same object. And it writes Koide's relation, the ladder and the phase in that variable, so that no square root of a dimensioned quantity is taken anywhere.</p>
 <p><strong>What this note does not do.</strong> It derives nothing. Every number below is measured, and the three questions the writing exposes — why the amplitude spread is one, what the phase is, and whether the relation survives being read at one wave number — are left open, in §<em>What This Note Leaves Open</em>.</p>
-<h2 id="1-the-conversion-made-once-and-used-thereafter">1. The Conversion, Made Once and Used Thereafter</h2>
+<h2 id="1-the-conversion-and-the-waveform-made-once-and-used-thereafter">1. The Conversion and the Waveform, Made Once and Used Thereafter</h2>
 <p><strong>The definition.</strong> The mass of a particle is read in this note as a wave number,</p>
 <p>$$
 \nu_{m} := \frac{m\,c}{h},
@@ -126,14 +126,30 @@ $$</p>
 $$</p>
 <p>This one number is the whole of the electroweak scale in what follows. Every Yukawa statement below is a ratio to it, and it never appears in any other form.</p>
 <p><strong>Why a wave number and not a mass.</strong> Three reasons, and the third is the one that matters here. A wave number is the coefficient the equations already carry: the gradient multiplies by $2\pi i\tilde\Upsilon_{\Phi}$, the mass term of the operator is $2\pi\nu_m$, and a derivative returns an inverse length. A wave number is what the algebra's norm gives: the biquaternion norm of the momentum is $-\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=\nu_{m}^{2}$, so $\nu_m$ is already the square root of an invariant of the algebra. And a ratio of two wave numbers is a pure number with no unit at all, which is the only kind of number a theory can predict.</p>
-<p><strong>The amplitude, by the same rule.</strong> The canonical mode amplitude of one quantum is fixed by the wave number alone, and the corpus's form is $\sqrt{\frac{h}{2\pi}\,c/(2E)}$; on the mass shell</p>
+<p><strong>The field the amplitude belongs to.</strong> The amplitude is the coefficient of a waveform, so the waveform is written once here. The corpus's scalar field is central-valued, $\tilde\Xi=\xi\,e_t$, and it obeys the Klein–Gordon equation in wave numbers,</p>
 <p>$$
-A=\sqrt{\frac{h\,c}{4\pi E}}\ \propto\ \nu_{m}^{-1/2},
-\qquad
-[A]=\mathsf{L}^{1/2},
+\left(\Box_\Phi-4\pi^{2}\nu_{m}^{2}\right)\tilde\Xi=0 .
 $$</p>
-<p>so the absolute amplitude carries a half dimension and only the quotient of two amplitudes is a pure number. This is the second and last place where the two constants of the note appear; the amplitude is then used in this form only, in §<em>Two Amplitudes, Mutually Reciprocal</em>.</p>
-<p><strong>The declaration.</strong> From this point to the end of the note, the symbols for the mass, for the action and for the speed of light do not appear. Every dimensioned quantity is a wave number of dimension $\mathsf{L}^{-1}$, and every dimensionless quantity is a quotient of two of them. The only letters that survive are the symbols of the units in which the wave numbers are quoted, the metre and the second; a unit symbol is not a quantity and carries no physics. <strong>The one warning.</strong> $\nu_{m}$ is a wave number, of dimension $\mathsf{L}^{-1}$; it is <strong>not</strong> dimensionless. Writing it in $\mathrm{m^{-1}}$ and calling it a pure number would be the error this note exists to avoid. The dimensionless objects are ratios of it, and they are the subject of §<em>The Three Dimensionless Objects</em>.</p>
+<p>A plane wave $\tilde\Xi=\xi_0\exp(-i\theta_{\mathrm{pwp}})\,e_t$ solves it when its phase and its wave numbers satisfy</p>
+<p>$$
+\theta_{\mathrm{pwp}}=2\pi\left(\nu_t^{\prime}r_t^{\prime}-\vec\nu_\Phi\cdot\vec r\right),
+\qquad
+\nu_t^{\prime\,2}=\nu_\Phi^{2}+\nu_m^{2},
+$$</p>
+<p>which is the triangle of <a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>. The mass wave number is the rest-frame value of the energy wave number and nothing else.</p>
+<p><strong>The amplitude is the coefficient of the mode.</strong> The quantised field is the mode sum</p>
+<p>$$
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^{3}p}{h^{3}}\,\sqrt{\frac{h\,c}{4\pi E_{\vec p}}}
+\left(a_{\vec p}\exp(-i\theta_{\mathrm{pwp}})+b_{\vec p}^{\dagger}\exp(+i\theta_{\mathrm{pwp}})\right),
+$$</p>
+<p>and the square root is the amplitude. It is not a free choice. The measure $d^{3}p/h^{3}$ carries $\mathsf{L}^{-3}$ and the commutator $[a_{\vec p},a_{\vec p^{\prime}}^{\dagger}]=h^{3}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ makes the ladder operator carry $\mathsf{L}^{3/2}$, so the field carries $\mathsf{L}^{-1}$ only if the amplitude supplies the remaining $\mathsf{L}^{1/2}$; and it does, since $[h\,c/E]=\mathsf{L}$ and $-\tfrac32+\tfrac12=-1$. <strong>One quantum of one wave number is the cosine</strong></p>
+<p>$$
+A_i\cos\left(2\pi\nu_{m_i}r_t^{\prime}\right),
+\qquad
+A_i=\frac{1}{\sqrt{4\pi\nu_{m_i}}},
+$$</p>
+<p>so at rest the amplitude is the exact inverse square root of the mass wave number, with no constant left over. Off rest the same rule gives $A=(4\pi\nu_t^{\prime})^{-1/2}$: the amplitude is fixed by the energy wave number, and $\nu_{m_i}$ replaces it exactly in the rest frame. $[A]=\mathsf{L}^{1/2}$, and only a quotient of two amplitudes is a pure number. This is the last place in the note where the two constants appear; the amplitude is then used in this form only, in §<em>Three Amplitudes, One Reciprocal Pair</em>.</p>
+<p><strong>The declaration.</strong> From this point to the end of the note, the symbols for the mass, for the energy, for the action and for the speed of light do not appear. Every dimensioned quantity is a wave number of dimension $\mathsf{L}^{-1}$ or a root of one, and every dimensionless quantity is a quotient of two of them. The only letters that survive are the symbols of the units in which the wave numbers are quoted, the metre and the second; a unit symbol is not a quantity and carries no physics. <strong>The one warning.</strong> $\nu_{m}$ is a wave number, of dimension $\mathsf{L}^{-1}$; it is <strong>not</strong> dimensionless. Writing it in $\mathrm{m^{-1}}$ and calling it a pure number would be the error this note exists to avoid. The dimensionless objects are ratios of it, and they are the subject of §<em>The Three Dimensionless Objects</em>.</p>
 <h2 id="2-the-coupling-is-a-quotient">2. The Coupling Is a Quotient</h2>
 <p><strong>The matrix in wave numbers.</strong> The Yukawa sector writes a mass matrix as a dimensionless matrix times the electroweak scale. Read in wave numbers the same line is exact and carries a dimension on each side:</p>
 <p>$$
@@ -153,6 +169,11 @@ y_{i}=\frac{\sqrt2\,\nu_{m_i}}{\nu_{v}},
 K_{f}^{\mathrm{diag}}=\frac{\nu_{v}}{\sqrt2}\,\mathrm{diag}\left(y_{1},y_{2},y_{3}\right),
 $$</p>
 <p><strong>This is the object of the note.</strong> $y_i$ is a quotient of two wave numbers, $\nu_{m_i}$ and $\nu_v$, both of dimension $\mathsf{L}^{-1}$; the quotient has no dimension, and it is the number the Lagrangian carries. Nothing is approximated and nothing is set to one.</p>
+<p><strong>The entry and the vertex are not the same number.</strong> The coupling the matrix carries is $y_i$; the vertex at which the scalar fluctuation $\xi$ attaches to the fermion bilinear is $y_i/\sqrt2$, and it is a quotient of two wave numbers on its own:</p>
+<p>$$
+\frac{\nu_{m_i}}{\nu_v}=\frac{y_i}{\sqrt2} .
+$$</p>
+<p>The matrix is $K_f=Y_f\nu_v/\sqrt2$, so the factor $\sqrt2$ is the doublet normalisation and not a second coupling. Four numbers are therefore one number: the mass matrix entry, the doublet coupling $y_i$, the physical vertex, and the quotient of two wave numbers. The note writes $y_i$ because it is the entry the matrix carries before the breaking.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -186,18 +207,18 @@ $$</p>
 </table></div>
 <p><strong>Three readings of the same table.</strong> [MEASURED] The span is the hierarchy: $y_t/y_e=\nu_{m_t}/\nu_{m_e}=3.38\times10^{5}$, and the ratio of the two wave numbers is the ratio of the two couplings because $\nu_v$ cancels. [ALGEBRA] The top sits at $y_t=0.9919$, which is one to within one per cent; the corpus's Yukawa table states this and attributes it to an infrared fixed point of the renormalisation-group equation, and that attribution is the literature's, not this note's. [ALGEBRA] The electron sits at $y_e=2.94\times10^{-6}$, and the three charged leptons span three and a half orders while all three remain far below the unit amplitude.</p>
 <p><strong>Why the quotient is the natural object and the mass is not.</strong> A mass needs a unit, and a unit is a choice. The quotient of two wave numbers needs no unit at all. Whatever a flavour theory predicts, it predicts quotients: a mass alone is not a prediction, because the unit it is quoted in is unobservable. That is the count of <a href="../articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>: one unit is arbitrary and the physical content is eighteen dimensionless numbers, of which nine are the Yukawa entries.</p>
-<h2 id="3-two-amplitudes-mutually-reciprocal">3. Two Amplitudes, Mutually Reciprocal</h2>
-<p><strong>The word <em>amplitude</em> names two different objects here, and they are reciprocal.</strong> A note that writes a square root of a mass must say which one it means, and the corpus's ladder and the corpus's quantisation are on opposite sides of the division.</p>
-<p><strong>The first: the field's mode amplitude.</strong> By §1 the canonical mode amplitude is fixed by the wave number alone, and it goes as the inverse square root of it:</p>
+<h2 id="3-three-amplitudes-one-reciprocal-pair">3. Three Amplitudes, One Reciprocal Pair</h2>
+<p><strong>The word <em>amplitude</em> names three different objects here, and two of them are reciprocal.</strong> A note that writes a square root of a mass must say which one it means, and the corpus's ladder and the corpus's quantisation are on opposite sides of the division. The third is the one printed in textbooks, and it is neither.</p>
+<p><strong>The first: the field's mode amplitude.</strong> §<em>The Conversion and the Waveform</em> fixed it exactly in the rest frame, and it is the inverse square root of the wave number:</p>
 <p>$$
-A_{i}\propto \nu_{m_i}^{-1/2},
+A_{i}=\frac{1}{\sqrt{4\pi\nu_{m_i}}},
 \qquad
 [A_{i}]=\mathsf{L}^{1/2},
 \qquad
 \frac{A_{i}}{A_{j}}=\sqrt{\frac{\nu_{m_j}}{\nu_{m_i}}} .
 $$</p>
-<p>[ALGEBRA] The absolute amplitude carries a half dimension, $\mathsf{L}^{1/2}$, and that half dimension is legitimate: the field it multiplies carries $\mathsf{L}^{-3/2}$ and the pair carries an inverse length. The ratio of two amplitudes is a pure number, and it is the observable. [ALGEBRA] The measured ratios are $A_\mu/A_e=1/14.3794=0.069544$ and $A_\tau/A_e=1/58.9680=0.016958$.</p>
-<p><strong>The second: the Yukawa amplitude.</strong> The coupling's own square root is the amplitude for the rung to emit or absorb the scalar, and it goes the other way:</p>
+<p>[ALGEBRA] The half dimension is legitimate: the measure carries $\mathsf{L}^{-3}$, the ladder operator $\mathsf{L}^{3/2}$, the amplitude $\mathsf{L}^{1/2}$, and the three sum to the field's $\mathsf{L}^{-1}$. The ratio of two amplitudes is a pure number, and its square is the ratio of two number densities. [ALGEBRA] The measured ratios are $A_\mu/A_e=1/14.3794=0.069544$ and $A_\tau/A_e=1/58.9680=0.016958$.</p>
+<p><strong>The second: the Yukawa amplitude.</strong> The ladder's variable is the square root of the doublet coupling, and it goes the other way:</p>
 <p>$$
 s_{i}:=\sqrt{y_{i}}=\left(\frac{\sqrt2\,\nu_{m_i}}{\nu_{v}}\right)^{1/2},
 \qquad
@@ -205,6 +226,7 @@ s_{i}:=\sqrt{y_{i}}=\left(\frac{\sqrt2\,\nu_{m_i}}{\nu_{v}}\right)^{1/2},
 \qquad
 \frac{s_{i}}{s_{j}}=\sqrt{\frac{\nu_{m_i}}{\nu_{m_j}}}=\frac{A_{j}}{A_{i}} .
 $$</p>
+<p>The vertex of §<em>The Coupling Is a Quotient</em> has its own root, $\sqrt{y_i/\sqrt2}=s_i/2^{1/4}=(\nu_{m_i}/\nu_v)^{1/2}$; the ladder's variable is $s_i$ because its square is the entry the matrix carries, and the two differ by the fixed factor $2^{1/4}$ and by nothing else.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -231,7 +253,44 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two are reciprocal, and the product is fixed.</strong> $A_i\,s_i\propto \nu_{m_i}^{-1/2}\nu_{m_i}^{1/2}=1$, so a statement in one amplitude is a statement in the other with every ratio inverted. The ladder of <a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a> uses the second, because its rule is that energies go as the square of an amplitude and its variable is therefore the coupling's root; the quantisation uses the first, because the measure fixes the mode amplitude and its squared modulus is the number density.</p>
+<p><strong>The third: the printed root.</strong> The object a textbook writes as the square root of a mass is $\sqrt{\nu_{m_i}}$, the root of a wave number, of dimension $\mathsf{L}^{-1/2}$. It is neither of the two above, and it is the one the title calls the square root that is not a mass. The three are one number read three ways:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>amplitude</th>
+<th>definition</th>
+<th>dimension</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sqrt{\nu_{m_i}}$</td>
+<td>the root of the wave number</td>
+<td>$\mathsf{L}^{-1/2}$</td>
+<td>the printed square root of a mass; meaningless alone</td>
+</tr>
+<tr>
+<td>$s_{i}=\sqrt{y_{i}}$</td>
+<td>the root of the coupling</td>
+<td>$1$</td>
+<td>the ladder's variable</td>
+</tr>
+<tr>
+<td>$A_{i}=(4\pi\nu_{m_i})^{-1/2}$</td>
+<td>the mode coefficient at rest</td>
+<td>$\mathsf{L}^{1/2}$</td>
+<td>the waveform's coefficient</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two are reciprocal, and the product is fixed.</strong> [ALGEBRA] The two definitions give $A_i^{2}=1/(4\pi\nu_{m_i})$ and $s_i^{2}=\sqrt2\,\nu_{m_i}/\nu_v$, hence</p>
+<p>$$
+A_{i}\,s_{i}=\sqrt{\frac{\sqrt2}{4\pi\nu_v}},
+\qquad
+\frac{s_{i}}{\sqrt{\nu_{m_i}}}=\sqrt{\frac{\sqrt2}{\nu_v}} .
+$$</p>
+<p>The first is the same for every rung, of dimension $\mathsf{L}^{1/2}$; the second is a constant of the same dimension. The reciprocity is therefore an identity and not a proportionality, so a statement in one amplitude is a statement in the other with every ratio inverted. The ladder of <a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a> uses the second, because its rule is that energies go as the square of an amplitude and its variable is therefore the coupling's root; the quantisation uses the first, because the measure fixes the mode amplitude and its squared modulus is the number density.</p>
 <p><strong>What this settles about the square root.</strong> The object that has a meaning is $s_i$, the square root of a dimensionless coupling; its absolute value is a pure number once $\nu_{v}$ is fixed. The object that has no meaning on its own is $\sqrt{\nu_{m_i}}$, of dimension $\mathsf{L}^{-1/2}$, and the object printed in textbooks, the square root of a mass in the square root of a unit of mass, is neither of these until it is divided by another one. <strong>Koide's relation is a statement about the $s_i$ and about nothing else</strong>, and §<em>Koide in Wave Numbers</em> writes it that way.</p>
 <h2 id="4-koide-in-wave-numbers">4. Koide in Wave Numbers</h2>
 <p><strong>The relation, in the variable that makes it dimensionless.</strong> With the three wave numbers of one tower,</p>
@@ -281,7 +340,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>What each one is.</strong> $w_i$ is the ratio of two wave numbers: the spectrum with the electron as the unit. $u_i$ is $A_e/A_i$, the ratio of two field amplitudes with the electron as the unit, by §<em>Two Amplitudes, Mutually Reciprocal</em>; it is also $s_i/s_e$, the ratio of the two Yukawa amplitudes. $\omega_i$ removes the last free number, the scale, and keeps only the shape.</p>
+<p><strong>What each one is.</strong> $w_i$ is the ratio of two wave numbers: the spectrum with the electron as the unit. $u_i$ is $A_e/A_i$, the ratio of two field amplitudes with the electron as the unit, by §<em>Three Amplitudes, One Reciprocal Pair</em>; it is also $s_i/s_e$, the ratio of the two Yukawa amplitudes. $\omega_i$ removes the last free number, the scale, and keeps only the shape.</p>
 <p><strong>Koide in the normalised amplitude.</strong> [ALGEBRA] With $\omega_i$ the relation has no free parameter and no unit anywhere:</p>
 <p>$$
 \sum_i\omega_i=3,
@@ -336,17 +395,26 @@ $$</p>
 <p><strong>The shape has two coordinates and Koide fixes one.</strong> [ALGEBRA] The normalised triple is a cosine of fixed modulation on a circle of three sites:</p>
 <p>$$
 \omega_i=1+\sqrt2\,\cos\!\left(\delta+\frac{2\pi i}{3}\right),
-\qquad i=0,1,2,
+\qquad i=1,2,3,
 \qquad
 \sum_i\omega_i=3,
 \qquad
 \sum_i\left(\omega_i-1\right)^{2}=2.9999446 .
 $$</p>
-<p>The modulation amplitude is $\sqrt2$ and it is Koide: any other amplitude would give another $Q$, and $\sum_i\left(\omega_i-1\right)^{2}=2R^{2}$ with $R$ that amplitude, so the measured $2.9999446$ is $3$ to five parts in $10^{5}$. [MEASURED] The phase is</p>
+<p>The modulation amplitude is $\sqrt2$ and it is Koide: with a coefficient $R$ in place of $\sqrt2$ the sum of squares is $\tfrac32R^{2}$, so the measured $2.9999446$ gives $R=\sqrt{2\times2.9999446/3}=1.414200$ against $\sqrt2=1.414214$, two parts in $10^{5}$.</p>
+<p><strong>The convention, stated once.</strong> $i=1$ is the electron, so the electron carries the argument $\delta+120^{\circ}$. [MEASURED] The phase is</p>
 <p>$$
-\delta=132.73^{\circ},
+\delta=12.7328^{\circ},
+\qquad
+\delta+120^{\circ}=132.7328^{\circ},
 $$</p>
-<p>obtained by fitting the three normalised amplitudes, with a residual of $2\times10^{-9}$; the corpus's own reconstruction of the same triple quotes $132.732^{\circ}$, and the two agree. [ALGEBRA] The coordinates $\left(1-0.9596489,\ 1-0.4197742,\ 1+1.3794231\right)$ are the three values of one cosine, so the triple is a point on a circle and not a curve.</p>
+<p>and it is not fitted. Three numbers determine it in closed form,</p>
+<p>$$
+\tan\delta=\frac{\sqrt3\left(\omega_\mu-\omega_e\right)}{2\omega_\tau-\omega_\mu-\omega_e}
+=\frac{0.9351}{4.1383}=0.22596 ,
+$$</p>
+<p>which is the corpus's formula read in the normalised amplitudes; relabelling the rungs shifts $\delta$ by $120^{\circ}$, so the number means nothing without the convention. [ALGEBRA] The coordinates $\left(1-0.9596489,\ 1-0.4197742,\ 1+1.3794231\right)$ are the three values of one cosine, so the triple is a point on a circle and not a curve.</p>
+<p><strong>What the reconstruction costs.</strong> [ALGEBRA] The cosine returns the three normalised amplitudes to $1.3\times10^{-5}$ in $\omega_i$, which is the same nine parts per million by which Koide misses $2/3$; the residual is the Koide violation and not a separate error. The corpus's <a href="flavour-research.html">Flavour Research</a>, §14.11, quotes the same pair, $\delta=12.73282^{\circ}$ and the first-rung argument $132.7328^{\circ}$, and the two agree.</p>
 <p><strong>What this makes the open question.</strong> Koide is one condition on a two-parameter shape, so it leaves exactly one number free, and that number is the phase. A mechanism that produces $Q=2/3$ produces the modulation and says nothing about $\delta$; a mechanism that produces $\delta$ produces the whole triple. The corpus records the same conclusion for $N=3$ in <a href="flavour-research.html">Flavour Research</a>, §16 and §17, where the coefficient $k$ and the phase $\delta$ are the two shape coordinates and $k=1$ is Koide.</p>
 <h2 id="8-the-coupling-is-scale-bearing-and-the-scale-is-a-wave-number">8. The Coupling Is Scale-Bearing, and the Scale Is a Wave Number</h2>
 <p><strong>The test, in the new variable.</strong> A coupling statement cannot drop its scale. In wave numbers the scale is itself a wave number, $\nu_{\mathrm{rg}}$, at which the coupling is read, and the test is one question: can the sentence drop $\nu_{\mathrm{rg}}$? [MEASURED] The bottom Yukawa shows why the answer is no:</p>
@@ -379,7 +447,7 @@ $$</p>
 <p>Four questions, in decreasing order of sharpness.</p>
 <ol>
 <li><strong>Why is the spread equal to the mean?</strong> [OPEN] Koide is $\sigma_s/\bar s=1$, one number, and nothing in the corpus produces it. In the new variable the question is sharp: why is the normalised Yukawa amplitude on the sphere's diagonal at $45^{\circ}$?</li>
-<li><strong>What is the phase?</strong> [OPEN] $\delta=132.73^{\circ}$ is fitted and unexplained, and it is the only free coordinate left once Koide is imposed.</li>
+<li><strong>What is the phase?</strong> [OPEN] $\delta=12.7328^{\circ}$ is obtained in closed form and unexplained, and it is the only free coordinate left once Koide is imposed.</li>
 <li><strong>Does the relation survive one common $\nu_{\mathrm{rg}}$?</strong> [OPEN] The three leptons are read at three wave numbers; the mixture is untested here.</li>
 <li><strong>Does the condition hold for quarks?</strong> [PUBLISHED] The literature's coefficient is $k\approx1.08$ for the down type and $k\approx1.25$ for the up type, at $\nu_{\mathrm{rg}}=1.6130\times10^{15}\ \mathrm{m^{-1}}$, so the leptons are the only tower with $k=1$. Whatever fixes $k=1$ is either lepton-specific or a property of the pole wave numbers, and this note cannot tell which.</li>
 </ol>
@@ -476,8 +544,28 @@ $$</p>
 </tr>
 <tr>
 <td>the phase</td>
-<td>least-squares fit of the normalised triple</td>
-<td>$132.73^{\circ}$, residual $2\times10^{-9}$</td>
+<td>closed form $\tan\delta$ from the three normalised amplitudes</td>
+<td>$12.7328^{\circ}$; the electron's argument $132.7328^{\circ}$</td>
+</tr>
+<tr>
+<td>the cosine reconstruction</td>
+<td>$\max_i\lvert 1+\sqrt2\cos(\delta+2\pi i/3)-\omega_i\rvert$</td>
+<td>$1.3\times10^{-5}$</td>
+</tr>
+<tr>
+<td>the amplitude at rest</td>
+<td>$A_e=(4\pi\nu_{m_e})^{-1/2}$</td>
+<td>$4.3941\times10^{-7}\ \mathrm{m^{1/2}}$</td>
+</tr>
+<tr>
+<td>the printed root</td>
+<td>$\sqrt{\nu_{m_e}}$</td>
+<td>$6.4199\times10^{5}\ \mathrm{m^{-1/2}}$</td>
+</tr>
+<tr>
+<td>the amplitude product</td>
+<td>$A_i\,s_i$ at the three rungs</td>
+<td>$7.5279\times10^{-10}\ \mathrm{m^{1/2}}$, equal for all three</td>
 </tr>
 <tr>
 <td>the bottom coupling at two wave numbers</td>
@@ -508,6 +596,18 @@ $$</p>
 <td>The electroweak scale read as a wave number, $1.9859\times10^{17}\ \mathrm{m^{-1}}$; the only scale of the note; defined in §1</td>
 </tr>
 <tr>
+<td>$\tilde\Xi=\xi\,e_t$</td>
+<td>The corpus's scalar field, central-valued; the field the amplitude multiplies; defined in §1</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pwp}}$</td>
+<td>The plane-wave phase, $2\pi(\nu_t^{\prime}r_t^{\prime}-\vec\nu_\Phi\cdot\vec r)$; real, in radians; defined in §1</td>
+</tr>
+<tr>
+<td>$E_{\vec p}$</td>
+<td>The mode energy; it fixes the amplitude before the conversion, and it appears nowhere else</td>
+</tr>
+<tr>
 <td>$Y_{f}$, $K_{f}=\dfrac{Y_{f}\nu_{v}}{\sqrt2}$</td>
 <td>The Yukawa matrix, dimensionless; the mass matrix read as wave numbers, $\mathsf{L}^{-1}$</td>
 </tr>
@@ -516,8 +616,12 @@ $$</p>
 <td>The Yukawa coupling of one rung; a quotient of two wave numbers, hence dimensionless; scale-bearing</td>
 </tr>
 <tr>
-<td>$A_{i}\propto \nu_{m_i}^{-1/2}$</td>
-<td>The field's mode amplitude; $\mathsf{L}^{1/2}$; its ratio is the observable $A_i/A_j=\sqrt{\nu_{m_j}/\nu_{m_i}}$</td>
+<td>$y_{i}/\sqrt2=\nu_{m_i}/\nu_{v}$</td>
+<td>The physical vertex, the quotient the scalar fluctuation multiplies; the doublet coupling $y_i$ divided by $\sqrt2$</td>
+</tr>
+<tr>
+<td>$A_{i}=(4\pi\nu_{m_i})^{-1/2}$</td>
+<td>The field's mode amplitude at rest; $\mathsf{L}^{1/2}$; its ratio is $A_i/A_j=\sqrt{\nu_{m_j}/\nu_{m_i}}$ and its square is a density ratio</td>
 </tr>
 <tr>
 <td>$s_{i}=\sqrt{y_{i}}$</td>
@@ -545,7 +649,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\delta$</td>
-<td>The phase of the three-site cosine; measured $132.73^{\circ}$; the one coordinate Koide leaves free</td>
+<td>The phase of the three-site cosine, $12.7328^{\circ}$ with the electron at $i=1$ (its argument is $\delta+120^{\circ}$); the one coordinate Koide leaves free</td>
 </tr>
 <tr>
 <td>$\nu_{\mathrm{rg}}$</td>

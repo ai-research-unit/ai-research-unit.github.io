@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Amplitude: The Coefficient, the Scale, the Polar Factor and the Probability — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The corpus writes the word amplitude for four different objects, and each one is told apart from the others by what its square is. The four are…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-amplitude-the-coefficient-the-scale-the-polar-factor-and-the-probability"><strong>The Amplitude: The Coefficient, the Scale, the Polar Factor and the Probability</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The corpus writes the word <em>amplitude</em> for four different objects, and each one is told apart from the others by what its square is. The four are the constant coefficient of a wave form, the positive scale of the polar word, the positive factor of a polar decomposition, and the transition amplitude of a scattering channel. Their squares are, in order, a normalisation fixed by the measure, a number density, a norm, and a probability obtained through the Hermitian pairing. One word, four squares.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>glyph</th>
+<th>the object</th>
+<th>its square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coefficient</td>
+<td>$\tilde Q_{\mathrm{amp}}$</td>
+<td>the constant element multiplying $e^{i\theta}$</td>
+<td>the measure it is integrated against</td>
+</tr>
+<tr>
+<td>the scale</td>
+<td>$\varrho$</td>
+<td>the positive modulus in $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U\tilde u$</td>
+<td>the number density, $\rho_{\mathrm{num}}=\varrho^{2}$</td>
+</tr>
+<tr>
+<td>the polar factor</td>
+<td>$\tilde Q_H=\tilde A_{\Phi}$</td>
+<td>$(\tilde Q\tilde Q^{*})^{1/2}$, positive semidefinite</td>
+<td>the Hermitian form $H$, itself a squared length, and $\lvert N\rvert$</td>
+</tr>
+<tr>
+<td>the transition amplitude</td>
+<td>the kernel, $\tilde{\mathcal S}_{\Psi}$</td>
+<td>the element that carries one state to another</td>
+<td>the Born weight, through $2\,\mathrm{Sc}(\cdots)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the word is dangerous.</strong> A swap between two of the four changes a number by a factor that is not one. The coefficient and the scale differ by the normalisation of the field. The polar factor and the probability differ by a square root. The transition amplitude and the probability differ by two matrix insertions and a trace. The conventions of the corpus forbid the shortcut $h$ at $2\pi$ precisely because the shortcut is, in the mode sector, a wrong amplitude; the amplitude is where the deletion of $h$ shows as a number.</p>
+<p><strong>What this article decides.</strong> It fixes each of the four objects with the definition the corpus already writes, states the equation that carries it, states the context in which the corpus uses it, and gives the one test that identifies it. It names the four traps and the factor each trap costs. It does not derive anything new: the four are already in the corpus, and the article separates them.</p>
+<p><strong>The four contexts.</strong> The coefficient belongs to a single wave form written as a display. The scale belongs to the polar form of a field equation. The polar factor belongs to the decomposition theory of the algebra and to the S-matrix. The transition amplitude belongs to the path integral and to the scattering channel. The four contexts are named in §<em>Where Each One Is Written</em>.</p>
+<p><strong>What was recomputed.</strong> The two identities of the polar factor, $H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$, on one hundred random complex $2\times2$ matrices, worst deviations $2.7\times10^{-15}$ and $1.3\times10^{-14}$, with the quotient unitary to $1.8\times10^{-14}$; the Born weight $\sin^{2}\frac{\theta_{\mathrm{rat}}}{2}=\tfrac12(1-\cos\theta_{\mathrm{rat}})=0.141044665$ at $\theta_{\mathrm{rat}}=0.77$ and the mixed-state weight $0.643582134$; the truncation weights $a^{2}=0.36$ kept and $1-a^{2}=0.64$ lost at $a=0.6$; and the equality of the two mode amplitudes, $\sqrt{\frac{hc}{4\pi E_{\vec p}}}$ and $\sqrt{\frac{c}{2\omega_{\nu_{\Phi}}}}$, to a relative $1.4\times10^{-16}$ at $500\ \mathrm{nm}$, with the square equal to the invariant measure.</p>
+<h2 id="the-field-wave-form">The Field Wave Form</h2>
+<p><strong>A wave form is a pair.</strong> It is a coefficient times an exponent. The corpus writes the plane wave of momentum $\tilde P_\Phi$ as</p>
+<p>$$
+\tilde{\Xi}_{\tilde P_\Phi}(\tilde R_\Phi)=\tilde Q_{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde\Upsilon_{\Phi}\tilde R_\Phi^{\natural})\big),
+\qquad
+\tilde\Upsilon_{\Phi}=\frac{\tilde P_\Phi}{h},
+$$</p>
+<p>so that the exponent is a pure number. The first factor is the amplitude in the narrowest sense of the corpus: a constant element, of the dimension of the field, carrying no dependence on the coordinates. The second factor is the wave form proper, and it carries all of the dependence.</p>
+<p><strong>The argument is dimensionful until the momentum is divided.</strong> The corpus writes the plane-wave angle $\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}$, and it states the rule that a display writing $\exp(-ip\cdot x)$ over a dimensionful $p\cdot x$ has set $h$ to $2\pi$ at that place. The same rule governs the algebra-valued exponent $\operatorname{Sc}(\tilde\Upsilon_{\Phi}\tilde R_\Phi^{\natural})$: the four-momentum is divided by $h$ before the scalar part is taken. The exponent is an angle, and an angle is a number.</p>
+<p><strong>Two angles, one form.</strong> The corpus keeps two plane-wave angles: $\theta_{\mathrm{pwp}}$ in the momentum notation and $\theta_{\mathrm{pwt}}$ in the frequency notation, the second written so that an inverse time multiplies a length only after division by $c$. An article uses one of the two and says which. A display that mixes them is a factor $c$ that no longer shows.</p>
+<p><strong>A constant coefficient is the plane-wave case.</strong> In the ansatz above the amplitude is a single element $\tilde w$ in the Dirac article and $\tilde Q_{\mathrm{amp}}$ in the LSZ article, and the equation for it is algebraic,</p>
+<p>$$
+\mathcal{D}(\tilde{\mathcal P})\tilde w=m\tilde w ,
+$$</p>
+<p>not differential. That is the whole content of the plane-wave assumption: the derivative falls on the exponent, and what is left is a mass-shell condition on the constant.</p>
+<p><strong>A packet replaces the constant by a function.</strong> When the field is a superposition of plane waves, the coefficient becomes a function of the momentum, and the wave form is the integral of the product. The amplitude is then a distribution on the momentum shell, and the object that carries the physics is the pair (distribution, measure). The corpus treats this case in the free-particle article. Nothing in the four readings below changes: the amplitude is still what the exponent does not carry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor of the wave form</th>
+<th>what it is</th>
+<th>what it carries</th>
+<th>what fixes it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coefficient</td>
+<td>$\tilde Q_{\mathrm{amp}}$, an element</td>
+<td>the size and the polarisation</td>
+<td>the measure, §<em>Reading One</em></td>
+</tr>
+<tr>
+<td>the exponent</td>
+<td>$\operatorname{Sc}(\tilde\Upsilon\tilde R^{\natural})=\theta_{\mathrm{pwp}}$</td>
+<td>the momentum, the phase, the interference</td>
+<td>the dispersion, which is the equation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="reading-one-the-coefficient-and-its-measure">Reading One: The Coefficient and Its Measure</h2>
+<p><strong>The coefficient is not free.</strong> The conventions state the rule in one sentence: an amplitude is fixed by the measure it is integrated against. With the measure $\frac{d^{3}p}{h^{3}}$ the mode amplitude is</p>
+<p>$$
+A_{\vec p}=\sqrt{\frac{hc}{4\pi E_{\vec p}}} ,
+$$</p>
+<p>and with the wave-number measure $d^{3}\nu_{\Phi}$ it is</p>
+<p>$$
+A_{\nu}=\sqrt{\frac{c}{2\omega_{\nu_{\Phi}}}} .
+$$</p>
+<p><strong>The two are one object.</strong> The bridges $p=h\,\nu_{\Phi}$ and $E_{\vec p}=h f_{\mathrm{frq},\nu_{\Phi}}$ convert either display into the other, because $\omega_{\nu_{\Phi}}=2\pi f_{\mathrm{frq},\nu_{\Phi}}$. At $500\ \mathrm{nm}$ the two displays give $1.994711\times10^{-4}$ each, a relative difference $1.4\times10^{-16}$, and the square is $\frac{hc}{4\pi E_{\vec p}}$ exactly: $3.978874\times10^{-8}$. The amplitude is one object read against two measures.</p>
+<p><strong>The test.</strong> Square the coefficient and compare the result with the measure. If the square is not the measure, the amplitude belongs to the other measure, or a constant of the conversion is missing.</p>
+<p><strong>The defect the conventions name.</strong> A mode amplitude written $\frac{1}{\sqrt{2E_{\vec p}}}$ has set $h$ to $2\pi$ at that place. The two displays differ by $\sqrt{\frac{hc}{2\pi}}$, a constant of the conversion and not a normalisation the field can absorb. This is the commonest wrong amplitude in the literature and the reason the conventions keep the rule.</p>
+<p><strong>Why the field forces it.</strong> The scalar field of the corpus carries a dimension of inverse length, and the amplitude must supply the $\frac{h}{2\pi}c$ that turns an energy into a length. The invariant measure $\frac{d^{3}p}{h^{3}}\frac{hc}{4\pi E_{\vec p}}$ is the squared modulus of the amplitude, and that identity is what makes the coefficient an amplitude rather than a convention.</p>
+<h2 id="reading-two-the-scale-and-the-amplitude-equation">Reading Two: The Scale and the Amplitude Equation</h2>
+<p><strong>The polar word.</strong> Every element of the algebra off the zero-divisor cone is written in four factors,</p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+$$</p>
+<p>with $\varrho>0$, a phase in $(-\pi/2,\pi/2]$, a boost and a rotor. The first factor is the scale, and the corpus calls the equation for it <em>the amplitude equation</em>.</p>
+<p><strong>Its square is the density.</strong> The number density of the polar form is $\rho_{\mathrm{num}}=\varrho^{2}$, and the transport equation of the pair is the continuity equation for that density. The amplitude equation is not a continuity statement: it is the mass shell written in the mechanical momentum. The pair is one mass shell for $\varrho$ and one conservation law for $\varrho^{2}$.</p>
+<p><strong>The action is even in the scale.</strong> Each term of the action in polar variables is quadratic in the scale, either as $\varrho^{2}$ or as $\lvert\vec\nabla_\Phi\varrho\rvert^{2}$; the four terms are $-\frac{h}{2\pi}\varrho^{2}\dot\theta_{\mathrm{pha}}$, $-\frac{hc}{8\pi^{2}\nu_m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$, $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\varrho\rvert^{2}$ and $-\varrho^{2}V_{\mathrm{op}}$. The sign of $\varrho$ therefore enters nothing. That is why $\varrho>0$ is a condition of the word and not a physical statement: the algebra sees $\varrho^{2}$ and the sign is a choice of representative.</p>
+<p><strong>The test.</strong> Ask whether the object appears only squared. If it does, it is the scale, and only its square is physical. If it appears linearly, it is a coefficient or an amplitude of a decomposition, and its square is a different object.</p>
+<p><strong>A caution on the glyph.</strong> The scale is $\varrho$, the varrho of the polar articles. The state of the informational sector is $\tilde{Ϛ}_{\Psi}$, the upper-case stigma. The two glyphs are different letters and the conventions keep them apart. A display that writes the state as $\varrho$ has renamed the density of the field as the state of the system.</p>
+<h2 id="reading-three-the-polar-factor-and-the-cartan-amplitude">Reading Three: The Polar Factor and the Cartan Amplitude</h2>
+<p><strong>The decomposition.</strong> Every element has the pair</p>
+<p>$$
+\tilde Q=\tilde Q_H\,\tilde Q_0,
+\qquad
+\tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2}\ge0,
+\qquad
+\tilde Q_0=\tilde Q_H^{+}\tilde Q ,
+$$</p>
+<p>with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The first factor is the amplitude of the decomposition and the second is the frame. The polar factor carries the norm: $H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$, and off the cone the frame's own value is fixed, $H(\tilde Q_0)=1$ independently of $\tilde Q$.</p>
+<p><strong>The two identities.</strong> On one hundred random complex $2\times2$ matrices the reconstruction $\tilde Q_H$ reproduces $H$ to $2.7\times10^{-15}$ and the modulus $\lvert N\rvert$ to $1.3\times10^{-14}$, and the quotient is unitary to $1.8\times10^{-14}$. The amplitude keeps the size and the frame keeps the orientation, and nothing is lost in the split.</p>
+<p><strong>The scattering case.</strong> The S-matrix has the same pairing, $\tilde{\mathcal S}_{\Psi}=\tilde A_{\Phi}\tilde Q_0$, with $\tilde A_{\Phi}$ the Cartan amplitude, written $\tilde Q_H$ in the decomposition article. For a star-unitary element the amplitude is trivial:</p>
+<p>$$
+\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*}=e_t
+\qquad\Longrightarrow\qquad
+\tilde A_{\Phi}=e_t .
+$$</p>
+<p>Unitarity is the statement that the amplitude carries only phase.</p>
+<p><strong>The truncated case.</strong> When probability leaves the one-mode sector the element is $\tilde{\mathcal S}_{\Psi}=\tilde\Pi_{\mathrm{id},+}+a\,\tilde\Pi_{\mathrm{id},-}$ with $0<a<1$, the amplitude is $\tilde A_{\Phi}=\tilde\Pi_{\mathrm{id},+}+a\,\tilde\Pi_{\mathrm{id},-}$, and the lost probability is $1-a^{2}$. At $a=0.6$ the amplitude keeps $a^{2}=0.36$ of the weight and loses $0.64$. The amplitude multiplies the state; the probability is its square.</p>
+<p><strong>The clearest case.</strong> The resonance pole carries $\tilde A_{\Phi}=\exp\!\left(-\frac{\Gamma t}{2\frac{h}{2\pi}}\right)$. The amplitude halves the exponent and the probability does not: the square is $\exp\!\left(-\frac{\Gamma t}{\frac{h}{2\pi}}\right)$. A reader who takes the amplitude for the probability doubles the lifetime. This is the smallest example in which the two readings differ by a factor of two in an exponent and not in a coefficient.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that the Hermitian norm is the Euclidean norm on $\mathbb{C}^{4}$ and therefore carries no physics. The objection is right about the formula and wrong about the consequence. The norm is Euclidean, and that is why it is the probability amplitude: an amplitude is an element of a Hilbert space, its norm is the square root of a sum of squared moduli, and the group that preserves that norm is the unitary group and nothing larger. The physics of the amplitude is not the mass; it is the size of the state.</p>
+<h2 id="reading-four-the-transition-amplitude-and-the-born-pairing">Reading Four: The Transition Amplitude and the Born Pairing</h2>
+<p><strong>The amplitude is an element, and the probability is a pairing.</strong> For an initial state $\tilde{Ϛ}_{\Psi,i}$ normalised by $\langle\tilde{Ϛ}_{\Psi,i},e_t\rangle_{*}=\tfrac12$ and a final pure state $\tilde\Pi_{\mathrm{id},f}$, the transition probability is</p>
+<p>$$
+\boxed{\;P_{i\to f}=2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id},f}\,\tilde{\mathcal S}_{\Psi}\,\tilde{Ϛ}_{\Psi,i}\,\tilde{\mathcal S}_{\Psi}^{*}\right)\;}
+$$</p>
+<p>That is the Born rule of the informational sector read on the scattering channel. The amplitude $\tilde{\mathcal S}_{\Psi}$ does not square to a number by itself: it is an element, and the number comes from two insertions and a scalar part.</p>
+<p><strong>The check.</strong> For a rotation of the two-state space by the real angle $\theta_{\mathrm{rat}}$, the formula gives $\sin^{2}\frac{\theta_{\mathrm{rat}}}{2}=\tfrac12(1-\cos\theta_{\mathrm{rat}})$, which at $\theta_{\mathrm{rat}}=0.77$ is $0.141044665$; a mixed initial state $\tfrac12(e_t+0.4\,i\vec u_{\mathrm p})$ gives $0.643582134$, matching $\tfrac12(1+0.4\cos\theta_{\mathrm{rat}})$. The element formula and the geometry of the Bloch ball agree to machine precision.</p>
+<p><strong>The path-integral case.</strong> The kernel of the path integral is the same object in a different context: it is the amplitude for a system to go from one state to another, an element of the algebra in general, and its physical content is the probability it gives when contracted with informational states. The Born rule is the normalised Hermitian form on that sector, and the kernel is not a probability.</p>
+<p><strong>The one place the square is a theorem.</strong> The optical theorem states that the diagonal element of $2\,\mathrm{Im}\,T$ in an initial state equals the squared norm of $T$ applied to that state. That is the place in the corpus where the amplitude squared is an identity rather than an interpretation, and it is an identity because unitarity ties the imaginary part of the amplitude to the modulus squared of its off-diagonal part.</p>
+<p><strong>The test.</strong> Ask whether the object is already a number. If it is an element, the probability needs the pairing; if it is a number, it is a weight and the amplitude is its square root. The Born weight is never the amplitude, and the amplitude is never the weight.</p>
+<h2 id="the-tests-and-the-four-traps">The Tests, and the Four Traps</h2>
+<p><strong>One table of tests.</strong> Each reading answers a different question, and the question identifies it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer identifies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>does it multiply $e^{i\theta}$ and depend on the coordinates?</td>
+<td>the wave form's exponent</td>
+</tr>
+<tr>
+<td>is it a constant element with the dimension of the field?</td>
+<td>the coefficient $\tilde Q_{\mathrm{amp}}$</td>
+</tr>
+<tr>
+<td>does the action contain it only squared?</td>
+<td>the scale $\varrho$</td>
+</tr>
+<tr>
+<td>is it positive semidefinite and invariant under both-sided star-unitary multiplication?</td>
+<td>the polar factor $\tilde Q_H=\tilde A_{\Phi}$</td>
+</tr>
+<tr>
+<td>is it an element that acts on a state, with a probability only after a pairing?</td>
+<td>the transition amplitude</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Trap one: squaring a coefficient.</strong> The coefficient is not a probability. Its square is the measure, and the measure is what makes an integral a number. Squaring it against a different measure gives a density in the wrong variable.</p>
+<p><strong>Trap two: dropping the conversion.</strong> The mode amplitude carries $\sqrt{\frac{hc}{4\pi E_{\vec p}}}$ and not $\frac{1}{\sqrt{2E_{\vec p}}}$. The two differ by $\sqrt{\frac{hc}{2\pi}}$, and the difference is exactly the shortcut the conventions forbid.</p>
+<p><strong>Trap three: reading the polar factor as a weight.</strong> The Cartan amplitude of a star-unitary S-matrix is $e_t$, and that is not the statement that the probability is one; it is the statement that the amplitude is pure phase. In the truncated case the amplitude is $a$ and the weight is $a^{2}$.</p>
+<p><strong>Trap four: reading the amplitude equation as a probability equation.</strong> The amplitude equation of the polar pair is the mass shell for $\varrho$; the continuity equation is the transport equation for $\varrho^{2}$. A reader who takes the amplitude equation for a conservation law has dropped the square and with it the density.</p>
+<p><strong>The strongest objection.</strong> The four readings are one object under four names, and the article is bookkeeping. The answer is that they are distinguished by what each is invariant under, and the table is not empty.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>its value is unchanged by</th>
+<th>its value is changed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coefficient</td>
+<td>nothing: the measure fixes it</td>
+<td>a change of the measure</td>
+</tr>
+<tr>
+<td>the scale</td>
+<td>a rotation of the frame and a flip of the sign of $\varrho$</td>
+<td>a rescaling of the field</td>
+</tr>
+<tr>
+<td>the polar factor</td>
+<td>both-sided star-unitary multiplication</td>
+<td>nothing, by construction</td>
+</tr>
+<tr>
+<td>the transition amplitude</td>
+<td>a global phase applied to both states</td>
+<td>a truncation of the channel</td>
+</tr>
+</tbody>
+</table></div>
+<p>An object that is invariant under the largest compact group is not the same object as one that is fixed by a measure, and a computation that swaps them is wrong by a factor, not by a convention.</p>
+<h2 id="where-each-one-is-written">Where Each One Is Written</h2>
+<p><strong>The coefficient.</strong> The conventions bind $\tilde Q_{\mathrm{amp}}$ as the constant amplitude of the central-phase plane wave, and the LSZ article uses it for the external leg. The same reading appears as $\digamma_{\mathrm{amp}}$ in the null-field article, where the energy density is $\lvert\digamma_{\mathrm{amp}}\rvert^{2}$.</p>
+<p><strong>The scale.</strong> The polar articles write $\varrho$, name the amplitude equation, and give the four-factor word; $\rho_{\mathrm{num}}=\varrho^{2}$ is the density.</p>
+<p><strong>The polar factor.</strong> The decomposition articles write $\tilde Q_H$; the S-matrix article writes $\tilde A_{\Phi}$ for the same factor and says why the letter changes.</p>
+<p><strong>The transition amplitude.</strong> The path-integral and quantum articles write the kernel; the S-matrix article writes $\tilde{\mathcal S}_{\Psi}$ and the Born weight.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>reading</th>
+<th>glyph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>the coefficient of the external wave form</td>
+<td>$\tilde Q_{\mathrm{amp}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a></td>
+<td>the coefficient, the measure, the plane-wave angle</td>
+<td>$\tilde Q_{\mathrm{amp}}$, $A_{\vec p}$, $\theta_{\mathrm{pwp}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a></td>
+<td>the scale, the amplitude equation, the density</td>
+<td>$\varrho$, $\rho_{\mathrm{num}}=\varrho^{2}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-h-norm-amplitude-and-frame.html">The H Norm: Amplitude and Frame</a></td>
+<td>the polar factor</td>
+<td>$\tilde Q_H$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td>the Cartan amplitude, the Born weight</td>
+<td>$\tilde A_{\Phi}$, $P_{i\to f}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a></td>
+<td>the transition amplitude</td>
+<td>the kernel</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a></td>
+<td>the coefficient of a null field</td>
+<td>$\digamma_{\mathrm{amp}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Four objects, one word.</strong> The coefficient is fixed by the measure, the scale by the field's own modulus, the polar factor by the decomposition, and the transition amplitude by the scattering channel.</p>
+<ul>
+<li>The wave form is the pair (coefficient, exponent), and the exponent is a pure number because the four-momentum is divided by $h$.</li>
+<li>The coefficient squares to the measure: $\frac{hc}{4\pi E_{\vec p}}$ against $\frac{d^{3}p}{h^{3}}$, and the wave-number display is the same object to a relative $1.4\times10^{-16}$.</li>
+<li>The scale squares to the density, $\rho_{\mathrm{num}}=\varrho^{2}$, and the action is even in the scale, so $\varrho>0$ is a convention of the word.</li>
+<li>The polar factor keeps the norm, $H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$, and for a star-unitary element it is the identity.</li>
+<li>The transition amplitude is an element, and the probability is its Born pairing, $2\,\mathrm{Sc}(\tilde\Pi\tilde{\mathcal S}\tilde{Ϛ}\tilde{\mathcal S}^{*})$, checked at $0.141044665$ and $0.643582134$.</li>
+<li>The four traps cost a factor each: the measure, $\sqrt{\frac{hc}{2\pi}}$ for the conversion, $a^{2}$ for the truncation, and $\varrho^{2}$ for the density.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi_{\tilde P_\Phi}(\tilde R_\Phi)=\tilde Q_{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde\Upsilon_{\Phi}\tilde R_\Phi^{\natural})\big)$</td>
+<td>the plane wave as a coefficient times an exponent</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon_{\Phi}=\tilde P_\Phi/h$</td>
+<td>the four-momentum divided by $h$, so the exponent is a number</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pwp}}=\frac{2\pi p\cdot x}{h}$</td>
+<td>the plane-wave angle in the momentum notation</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pwt}}$</td>
+<td>the plane-wave angle in the frequency notation</td>
+</tr>
+<tr>
+<td>$A_{\vec p}=\sqrt{\frac{hc}{4\pi E_{\vec p}}}$</td>
+<td>the mode amplitude against the measure $\frac{d^{3}p}{h^{3}}$</td>
+</tr>
+<tr>
+<td>$A_{\nu}=\sqrt{\frac{c}{2\omega_{\nu_{\Phi}}}}$</td>
+<td>the same amplitude against $d^{3}\nu_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>the polar word; $\varrho>0$ is the scale</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\varrho^{2}$</td>
+<td>the number density, the square of the scale</td>
+</tr>
+<tr>
+<td>$\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$</td>
+<td>the polar pair; $\tilde Q_H$ is the amplitude</td>
+</tr>
+<tr>
+<td>$\tilde{\mathcal S}_{\Psi}=\tilde A_{\Phi}\tilde Q_0$</td>
+<td>the S-matrix pairing; $\tilde A_{\Phi}=\tilde Q_H$ is the Cartan amplitude</td>
+</tr>
+<tr>
+<td>$P_{i\to f}=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},f}\tilde{\mathcal S}_{\Psi}\tilde{Ϛ}_{\Psi,i}\tilde{\mathcal S}_{\Psi}^{*})$</td>
+<td>the Born weight, the square of the transition amplitude</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}_{\Psi}$</td>
+<td>the state of the informational sector; not $\varrho$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the mode amplitude and the measure, the plane-wave angle, and the rule against setting $h$ to $2\pi$.</li>
+<li><a href="../articles_physics/the-h-norm-amplitude-and-frame.html">The H Norm: Amplitude and Frame</a>, for the polar pair, the two norm identities, and the answer to the objection that the norm is Euclidean.</li>
+<li><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a>, for the Cartan amplitude, the truncated channel, and the Born rule.</li>
+<li><a href="../articles_physics/the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the amplitude equation, the transport equation, and $\rho_{\mathrm{num}}=\varrho^{2}$.</li>
+<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit</a>, for the plane-wave ansatz and the algebraic equation for the constant coefficient.</li>
+<li><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html">The Unstable State and the Complex Energy Pole in Biquaternionic Form</a>, for the resonance amplitude and its square.</li>
+<li><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>, for the external-leg amplitude $\tilde Q_{\mathrm{amp}}$.</li>
+<li><a href="wave-forms.html">Imaginary-Exponential Wave Forms in the Physics Corpus</a>, for the inventory of the exponents and which of them are physical.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migration $hm$, Executed: The Planck Constant and the Mass on Opposite Sides of a Fraction — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A record, not a plan. The migration was executed on 2026-11-23 on the author&#x27;s instruction &quot;launch the migration&quot;. The previous…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="migration-math0-executed-the-planck-constant-and-the-mass-on-opposite-sides-of-a-fraction"><strong>Migration $hm$, Executed: The Planck Constant and the Mass on Opposite Sides of a Fraction</strong></h1>
+<p><em>Status of this file.</em> <strong>A record, not a plan.</strong> The migration was executed on 2026-11-23 on the author's instruction "launch the migration". The previous version of this file proposed the circulation family only and refused the kinetic and magneton families; that decision is withdrawn. The target is now $\nu_m$ for every fraction in which $h$ and $m$ stand on opposite sides. Measured on <code>articles_physics</code>: 678 <code>.md</code> files, 177 391 math spans.</p>
+<p><em>What this file is for.</em> A reader who wants to know what was changed, what was deliberately left, and what a second pass would cost. It is also the checklist for anyone who touches the same fractions again.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Migrate only when $Q=-P$.</strong> Write the fraction as $h^{P}m^{Q}$ times a rest. When the exponents cancel the mass disappears into $\nu_m$; when they do not, no spelling in $\nu_m$ alone removes it, and the site stays.</li>
+<li><strong>Never replace the right side of a definition of $\nu_m$.</strong> The guard that skips every span to the right of $\nu_m=$ is what keeps the corpus from printing $\nu_m=\nu_m$.</li>
+<li><strong>Never rewrite the mass-length identity</strong> $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$ where it is printed as one fact. It is a bridge, not a pair.</li>
+<li><strong>Rewrite inside math spans only.</strong> Prose that names a formula keeps its wording.</li>
+<li><strong>Measure before and after</strong>, on the same three numbers: the $\nu_m$ count, the detector count, and the KaTeX failure count. A pass reported without them is not a pass.</li>
+</ol>
+<h2 id="1-the-rule-in-three-identities">1. The Rule, in Three Identities</h2>
+<p>Three identities carry the whole migration. They are exact, not approximate.</p>
+<p>$$\frac{mc}{h}=\nu_m,\qquad \frac{h}{mc}=\frac{1}{\nu_m},\qquad \frac{h}{m}=\frac{c}{\nu_m}.$$</p>
+<p>Every rewrite below is one of these three, or the same identity multiplied by a factor that does not involve $h$ or $m$.</p>
+<p>The migration is only possible where the mass exponent is the negative of the Planck exponent. Write the fraction as $h^{P}m^{Q}$ times a rest. When $Q=-P$ the mass disappears and the result is $(c/\nu_m)^{P}$ times the rest. When $Q\ne-P$ the mass survives and no spelling in $\nu_m$ alone can remove it; those sites are left and listed below.</p>
+<h2 id="2-what-was-applied-twenty-rules-354-replacements">2. What Was Applied: Twenty Rules, 354 Replacements</h2>
+<p>Twenty rules, 354 replacements, 97 files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rule</th>
+<th>before</th>
+<th>after</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-rest</td>
+<td>$\dfrac{2\pi mc^{2}}{h}$</td>
+<td>$2\pi c\,\nu_m$</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>A-mc</td>
+<td>$\dfrac{mc}{h}$</td>
+<td>$\nu_m$</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>A-2pimc</td>
+<td>$\dfrac{2\pi mc}{h}$</td>
+<td>$2\pi\nu_m$</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>A-beta</td>
+<td>$\dfrac{\beta mc}{h}$</td>
+<td>$\beta\nu_m$</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>D-2pimw</td>
+<td>$\dfrac{2\pi m\omega}{h}$</td>
+<td>$\dfrac{2\pi\omega\nu_m}{c}$</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>H-2pimc</td>
+<td>$\dfrac{h}{2\pi mc}$</td>
+<td>$\dfrac{1}{2\pi\nu_m}$</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr>
+<td>H-2pim</td>
+<td>$\dfrac{h}{2\pi m}$</td>
+<td>$\dfrac{c}{2\pi\nu_m}$</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>H-mc</td>
+<td>$\dfrac{h}{mc}$</td>
+<td>$\dfrac{1}{\nu_m}$</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>G-hn</td>
+<td>$\dfrac{h\,n}{m}$</td>
+<td>$\dfrac{c\,n}{\nu_m}$</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>G-h</td>
+<td>$\dfrac{h}{m}$</td>
+<td>$\dfrac{c}{\nu_m}$</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>G-bare</td>
+<td>$h/m$</td>
+<td>$c/\nu_m$</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>F-8</td>
+<td>$\dfrac{h^{2}}{8\pi^{2}m}$</td>
+<td>$\dfrac{hc}{8\pi^{2}\nu_m}$</td>
+<td style="text-align: right;">147</td>
+</tr>
+<tr>
+<td>F-16</td>
+<td>$\dfrac{h^{2}}{16\pi^{2}m}$</td>
+<td>$\dfrac{hc}{16\pi^{2}\nu_m}$</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>F-32</td>
+<td>$\dfrac{h^{2}}{32\pi^{2}m}$</td>
+<td>$\dfrac{hc}{32\pi^{2}\nu_m}$</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>F-2pi2</td>
+<td>$\dfrac{h^{2}}{(2\pi)^{2}m}$</td>
+<td>$\dfrac{hc}{(2\pi)^{2}\nu_m}$</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td>F-nest</td>
+<td>$\dfrac{h^{2}}{4\pi^{2}}\Big/2m$</td>
+<td>$\dfrac{hc}{8\pi^{2}\nu_m}$</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>I-hq</td>
+<td>$\dfrac{h\,q}{4\pi m}$</td>
+<td>$\dfrac{q\,c}{4\pi\nu_m}$</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>I-hvarkappa</td>
+<td>$\dfrac{h\varkappa}{4\pi m}$</td>
+<td>$\dfrac{\varkappa c}{4\pi\nu_m}$</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>I-eh</td>
+<td>$\dfrac{e h}{4\pi m}$</td>
+<td>$\dfrac{e c}{4\pi\nu_m}$</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>I-ih</td>
+<td>$\dfrac{i h}{4\pi m}$</td>
+<td>$\dfrac{i c}{4\pi\nu_m}$</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>I-h4</td>
+<td>$\dfrac{h}{4\pi i\,m}$</td>
+<td>$\dfrac{c}{4\pi i\nu_m}$</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>I-h</td>
+<td>$\dfrac{h}{4\pi m}$</td>
+<td>$\dfrac{c}{4\pi\nu_m}$</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>B-sqrtE</td>
+<td>$\dfrac{\sqrt{2mE}}{h}$</td>
+<td>$\sqrt{2\,\nu_m\,\nu_t^{\prime}}$</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rules were applied inside math spans only, never in prose.</p>
+<h2 id="3-what-was-protected-and-why-each-guard-exists">3. What Was Protected, and Why Each Guard Exists</h2>
+<p><strong>The definition.</strong> $\nu_m=\frac{mc}{h}$ appears 328 times. Replacing the right side would have produced $\nu_m=\nu_m$. The guard skipped every fraction that stands to the right of a definition of $\nu_m$; all 328 are intact. The same guard protects the mass-length identity $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$, which the corpus prints deliberately as one fact in six places.</p>
+<p><strong>The mass length.</strong> Two sites wrote this identity backwards, with $\nu_m$ where the length belongs:</p>
+<ul>
+<li><code>the-curved-dirac-operator-and-its-square.md:257</code> read $\nu_m=\frac{h}{2\pi mc}$ under the label "mass length";</li>
+<li><code>the-biquaternion-dalembertian-and-its-greens-functions.md:453</code> read "whose coefficient is $\nu_m=\frac{h}{2\pi mc}$".</li>
+</ul>
+<p>Both are wrong by a factor $2\pi$ and by inversion. They now read $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$.</p>
+<p><strong>Two bridges.</strong> Two displays compare the two spellings of one number, $\frac{hc}{8\pi^{2}\nu_m}=\frac{h^{2}}{8\pi^{2}m}$ in <em>The Three Wavenumbers of a Particle</em> and $\frac{2\pi mc^{2}}{h}=2\pi c\,\nu_m$ in <em>The Klein-Gordon Equation</em>. Blind application collapsed each into $A=A$; both were restored.</p>
+<p><strong>Two redundant chains.</strong> The circulation quantum was written $\kappa_1=\frac{h}{m}=\frac{2\pi c}{2\pi\nu_m}$, which the migration made into a tautology. It now reads $\kappa_1=\frac{c}{\nu_m}$, and the table row reads $\kappa_1=c/\nu_m$. The discarded term also carried a pre-existing error: it printed $2\pi c/\nu_m$ where $c/\nu_m$ was meant.</p>
+<h2 id="4-the-measurement-after">4. The Measurement After</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th style="text-align: right;">before</th>
+<th style="text-align: right;">after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_m$ occurrences</td>
+<td style="text-align: right;">4 167</td>
+<td style="text-align: right;">4 519</td>
+</tr>
+<tr>
+<td>h–m opposed fractions (detector)</td>
+<td style="text-align: right;">1 025</td>
+<td style="text-align: right;">678</td>
+</tr>
+<tr>
+<td>math spans rendered</td>
+<td style="text-align: right;">177 387</td>
+<td style="text-align: right;">177 391</td>
+</tr>
+<tr>
+<td>KaTeX failures</td>
+<td style="text-align: right;">177</td>
+<td style="text-align: right;">177</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 678 remaining pairs are the definition, the compound shapes that keep the mass, and the species masses; the mathematics corpus contributes none.</p>
+<h2 id="5-what-remains-and-why">5. What Remains, and Why</h2>
+<p>678 pairs in 642 spans and 240 files. Five kinds.</p>
+<ul>
+<li><strong>The definition, 336 pairs.</strong> $\nu_m=\frac{mc}{h}$ and the mass-length identity $1/(2\pi\nu_m)=\frac{h}{2\pi mc}$. Not migration sites: one is the notation, the other is a bridge that the corpus prints on purpose.</li>
+<li><strong>The kinetic coefficient with the mass squared or with extra factors, 103 pairs.</strong> $\frac{h^{2}\,4\pi^{2}\nu_{\Phi}^{2}}{8\pi^{2}m}$, $\frac{h^{2}}{8\pi^{2}m^{2}c^{2}L^{2}}$, $\frac{n^{2}\pi^{2}h^{2}}{8\pi^{2}mL^{2}}$. The bare $\frac{h^{2}}{8\pi^{2}m}$ is gone; what is left carries another factor in the numerator or a second power of the mass. $h^{2}/m^{2}$ needs $\nu_m^{2}$ but leaves $1/c^{2}$, and $h^{2}/m$ leaves an $h$. A rewrite exists, $h^{2}/(8\pi^{2}m\,X)=hc/(8\pi^{2}\nu_m X)$, but it is compound and cosmetic.</li>
+<li><strong>The mass length and the species masses, 65 pairs.</strong> $\frac{h}{2\pi m_e c}$ and its siblings, six sites. Writing $\nu_{m_e}$ would extend the notation: the conventions table has the spelling, the articles do not use it.</li>
+<li><strong>Fractions nested inside a fraction, 74 pairs.</strong> $\frac{\frac{h^{2}}{4\pi^{2}}}{2m}$ (15), $\frac{\frac{h^{2}}{4\pi^{2}}}{m}$ (10), $\frac{\frac{h^{2}}{4\pi^{2}}\Delta_\Phi}{2m}$ (8), $\frac{m\kappa^{2}}{2(h^{2}/4\pi^{2})n^{2}}$ (6), $\frac{m\omega}{2(h/2\pi)}$ (4). The nested numerator is where the $2\pi$ lives; flattening it is a rewrite of the whole expression, not a substitution.</li>
+<li><strong>Roots and leftover masses, 53 pairs.</strong> $\frac{\sqrt{2m(E-V_0)}}{h}$ needs a symbol for $(E-V_0)/(hc)$, and none exists. $\frac{h\varkappa}{4\pi m}$ and $\frac{h\,q}{8\pi m^{2}c^{2}}$ keep a mass that the ratio cannot absorb.</li>
+</ul>
+<h2 id="6-the-verification">6. The Verification</h2>
+<ul>
+<li><strong>Render.</strong> 177 391 spans through KaTeX 0.16.9 with <code>throwOnError</code>. 177 failures before, 177 after, the same 177: double subscripts and missing glyphs that predate this pass. No new failure.</li>
+<li><strong>Structure.</strong> Dollar parity and brace balance unchanged in all 678 files.</li>
+<li><strong>Numbers.</strong> The twenty identities were checked on 200 random draws each, $m$ from $10^{-30}$ to $10^{-26}\,\mathrm{kg}$. Worst relative error $4.9\times10^{-16}$.</li>
+<li><strong>Definitions.</strong> 328 definition spans intact; <code>\nu_m=\nu_m</code> count is zero.</li>
+</ul>
+<h2 id="7-the-unresolved-hazard">7. The Unresolved Hazard</h2>
+<p>A second editor was writing in the same tree during this pass. Between 12:32 and 12:41, 37 files changed for reasons that are not this migration: prose rewrites in <em>The Three Wavenumbers of a Particle</em> (which number is quoted, $386.159\ \mathrm{fm}$ against $2.426\ \mathrm{pm}$), a $2\pi$ restored in a phase difference, and four new bridges $1/(2\pi\nu_m)=\frac{h}{2\pi m\,c}$ in other articles. Those edits are kept, not reverted, and they agree in direction with this migration. But a restore of the corpus from a snapshot taken at 12:32 ran while they were being made, so any edit written in that two-minute window is gone. The author should confirm that nothing was written there.</p>
+<p>The working tree cannot be rolled back to its state before this pass with <code>git checkout</code>: the tree already carried uncommitted work from earlier migrations. The only isolated copy is <code>/tmp/hm/backup_physics</code>, taken at 12:32.</p>
+<h2 id="8-what-would-extend-it-and-who-decides">8. What Would Extend It, and Who Decides</h2>
+<p>Three things are ready and need one word each.</p>
+<ol>
+<li><strong>The compounds.</strong> $\frac{h^{2}}{8\pi^{2}m\,X}\to\frac{hc}{8\pi^{2}\nu_m X}$ covers 102 more pairs by one general rule, and $\nu_{m_e}$ covers 87 once the species subscript is accepted in the articles.</li>
+<li><strong>A symbol for a shifted energy.</strong> $\nu_{W}\equiv W/(hc)$ would absorb the mass from all 25 roots.</li>
+<li><strong>The mathematics corpus.</strong> No site: its two hits are a quadrature step and a summation index.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>One defect, one substitution, one guard.</strong> A fraction with $h$ above and $m$ below is a length or a frequency written without its $c$; the substitution $\nu_m=mc/h$ removes the mass, and only an exponent that cancels makes the substitution possible.</p>
+<ul>
+<li>Twenty rules, 354 replacements, 97 files; 1 025 pairs before, 678 after, and 177 391 math spans rendered with the same 177 failures before and after.</li>
+<li>The guards are the substance. The 328 definition spans, the six mass-length bridges, the two comparison displays and the two redundant chains are what a blind pass destroys, and each is named in §3.</li>
+<li>Of the 678 remaining pairs, five kinds are named in §5: the definition (336), the compound kinetic shapes (103), the species masses (65), the nested fractions (74), and the roots and leftover masses (53).</li>
+<li><strong>Those five kinds account for 631 of the 678 pairs. The residue of 47 is not classified in this file, and re-measuring it is the first item of any later pass.</strong></li>
+<li>The one open risk is not mathematical: §7 records a two-minute window in which a restore ran while a second editor was writing.</li>
+<li>Three extensions are ready and each needs one word: the compound rule (102 pairs), the species subscript $\nu_{m_e}$ (87), and the shifted-energy symbol $\nu_W$ (25 roots).</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_m=mc/h$</td>
+<td>the mass frequency: the number of mass lengths per unit time</td>
+</tr>
+<tr>
+<td>$1/\nu_m=h/(mc)$</td>
+<td>the mass length, printed as $1/(2\pi\nu_m)=h/(2\pi mc)$ when the $2\pi$ is reduced</td>
+</tr>
+<tr>
+<td>$\nu_t'$</td>
+<td>the time frequency that appears in the kinetic rule B-sqrtE</td>
+</tr>
+<tr>
+<td>$h^{P}m^{Q}$</td>
+<td>the exponent form of a fraction; the migration needs $Q=-P$</td>
+</tr>
+<tr>
+<td>the detector</td>
+<td>the count of $h$–$m$ opposed fractions, 1 025 before and 678 after</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

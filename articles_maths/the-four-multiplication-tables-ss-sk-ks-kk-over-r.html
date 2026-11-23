@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ — Biquaternion Universe</title>
+  <title>The Four Multiplication Tables over $\mathbb{R}$: $SS$, $SK$, $KS$, $KK$ — Biquaternion Universe</title>
   <meta name="description" content="Every product of two real matrices splits into two pieces, a symmetric one and an antisymmetric one, and each of the four pairings,,, contributes to both…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-four-multiplication-tables-math0-math1-math2-math3"><strong>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</strong></h1>
+        <h1 id="the-four-multiplication-tables-over-math0-math1-math2-math3-math4"><strong>The Four Multiplication Tables over $\mathbb{R}$: $SS$, $SK$, $KS$, $KK$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every product of two real matrices splits into two pieces, a symmetric one and an antisymmetric one, and each of the four pairings $SS$, $SK$, $KS$, $KK$ contributes to both pieces by different formulas; the table is the multiplication table of the two halves read in the two projections.</strong></p>
 <p>The article computes the four tables, states which piece of each product is a commutator and which an anticommutator, and identifies the two products that stay where they start: the square of an antisymmetric matrix is symmetric and negative semidefinite, and the square of a symmetric matrix keeps a symmetric part and an antisymmetric part. It assumes <em>The Symmetric and Antisymmetric Parts of a Product</em> for the two projection formulas, and it defers the algebra structure of the symmetric half to <em>The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$</em> and the Lie structure of the antisymmetric half to <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em>.</p>
@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p>So the product $SS'$ is symmetric exactly when the factors commute; the product $SK$ is symmetric exactly when $SK=-KS$; and $KK'$ is symmetric exactly when $K,K'$ anticommute.</p>
 <p><strong>Consequence: the four tables are not four independent objects.</strong> The third is the transpose of the second with a sign, so $KS$ contributes exactly what $SK$ contributes, read on the other factor. This is why the two halves over $\mathbb{R}$ carry three tables and not four, and why the two-sided operator of <em>The Symmetric and Antisymmetric Parts of a Product</em> is the natural way to write them.</p>
-<h2 id="the-tables-math35-and-math36">The Tables $SS$ and $KK$</h2>
+<h2 id="the-tables-math36-and-math37">The Tables $SS$ and $KK$</h2>
 <p><strong>The product of two symmetric matrices splits as an anticommutator and a commutator.</strong> With $S,S'\in\operatorname{Sym}_n$,</p>
 <p>$$
 SS'=\underbrace{\tfrac12(SS'+S'S)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(SS'-S'S)}_{\in\operatorname{Skew}_n}.
@@ -108,7 +108,7 @@ $$</p>
 $$</p>
 <p>and $-KK^{\mathsf T}$ is negative semidefinite with kernel $\ker K$. So the map $K\mapsto K^{2}$ leaves the antisymmetric half and lands in the closed cone of the symmetric half. Measured on $100$ random antisymmetric matrices at each of $n=2,3,4$, all $300$ squares were symmetric and negative semidefinite.</p>
 <p><strong>Consequence: $KK$ is not closed in $K$ but its square is closed in $S$.</strong> The product $KK'$ has an antisymmetric part in general, and that part is the commutator $\tfrac12[K,K']$; the square has no antisymmetric part at all. So the antisymmetric half is closed under the square only up to the bracket, and the bracket of two antisymmetric matrices is again antisymmetric, as <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em> records.</p>
-<h2 id="the-tables-math65-and-math66">The Tables $SK$ and $KS$</h2>
+<h2 id="the-tables-math66-and-math67">The Tables $SK$ and $KS$</h2>
 <p><strong>The mixed product splits by an anticommutator and a commutator of the two different halves.</strong> With $S\in\operatorname{Sym}_n$ and $K\in\operatorname{Skew}_n$,</p>
 <p>$$
 SK=\underbrace{\tfrac12(SK-KS)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(SK+KS)}_{\in\operatorname{Skew}_n},
@@ -137,7 +137,7 @@ $$</p>
 <p>and the first two are equalities for $n\ge2$ while the third is an equality only for $n\ge3$: at $n=2$ the anti-Hermitian half is one-dimensional and abelian, so $[K,K']=0$ and $KK'$ stays in $S$.</p>
 <p><strong>Consequence: the two halves are not subalgebras of $M_n$.</strong> Neither is closed under the product of the algebra, so neither inherits an associative structure. Each inherits a different one: $S$ is closed under the anticommutator and $K$ under the commutator, which is the content of <em>The Two Halves: Symmetric and Antisymmetric</em>.</p>
 <p><strong>The commutator and the anticommutator are exchanged by the two tables.</strong> In $SS'$ the commutator is the antisymmetric part; in $KK'$ the commutator is the antisymmetric part as well; in $SK$ the commutator is the symmetric part. So the answer to the question "which product is the bracket" depends on the pair of halves, and the mixed table is the one that reverses the answer.</p>
-<h2 id="the-case-math119">The Case $n=2$</h2>
+<h2 id="the-case-math120">The Case $n=2$</h2>
 <p><strong>At $n=2$ the four tables are explicit.</strong> Write $S=\begin{pmatrix}a&b\\ b&c\end{pmatrix}$ and $K=\begin{pmatrix}0&d\\ -d&0\end{pmatrix}$. Then</p>
 <p>$$
 SK=\begin{pmatrix}-bd&ad\\ -cd&bd\end{pmatrix},\qquad \pi_+(SK)=\begin{pmatrix}-bd&\tfrac12(ad-cd)\\ \tfrac12(ad-cd)&bd\end{pmatrix},\qquad \pi_-(SK)=\begin{pmatrix}0&\tfrac12(ad+cd)\\ -\tfrac12(ad+cd)&0\end{pmatrix},
@@ -187,7 +187,7 @@ $$</p>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the two-sided Peirce decomposition and the products between the corners.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the symmetric and antisymmetric decompositions and the trace identities.</li>
 <li><a href="the-symmetric-and-antisymmetric-parts-of-a-product.html">The Symmetric and Antisymmetric Parts of a Product</a>, for the projection formulas used here.</li>
-<li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the two halves and their products.</li>
+<li><a href="the-two-halves-symmetric-and-antisymmetric.html">The Two Halves: Symmetric and Antisymmetric</a>, for the two halves and their products.</li>
 <li><a href="the-two-halves-as-orthogonal-complements-for-the-trace-form.html">The Two Halves as Orthogonal Complements for the Trace Form</a>, for the block structure of the trace form.</li>
 </ul>
       </div>

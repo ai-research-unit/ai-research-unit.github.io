@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Spin-Two Carrier of $M_4(\mathbb{C})$: the Alternating Square — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carrier of label two is the alternating square of the module, of dimension five. The article identifies it, computes its weights and its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-spin-two-carrier-of-math0-the-alternating-square"><strong>Introduction to the Spin-Two Carrier of $M_4(\mathbb{C})$: the Alternating Square</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carrier of label two is the alternating square of the module, of dimension five. The article identifies it, computes its weights and its Casimir, and explains its place in the parity rule.</p>
+<p><strong>The order of the article.</strong> The first section identifies the carrier as the alternating square. The second computes the weights and the weight string. The third computes the Casimir and the spectrum. The fourth reads the carrier as a space of forms and locates its Hermitian slice. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</em> and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em>. The row at order two is <em>Introduction to the Spin-One Carrier of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> $V_2=\Lambda^{2}V_{3/2}$, of complex dimension five, with weights $\pm2,\pm1,0$, Casimir six, and a determinant equal to the square of the trace form over sixteen.</p>
+<p><strong>Boundaries.</strong> The article introduces the carrier; its trace form, rank strata and spectral strata are treated in the following articles.</p>
+<h2 id="the-alternating-square">The Alternating Square</h2>
+<p><strong>Proposition.</strong> $V_2=\Lambda^{2}\mathbb{C}^{4}$, of complex dimension five, and it is the isotypic component of label two.</p>
+<p><em>Proof.</em> The alternating square of the module has dimension $\binom{4}{2}=6$ and decomposes as $V_2\oplus V_0$, of dimensions $5+1$; the label-two piece is the alternating square minus the invariant form, which is the line of scalars.</p>
+<p><strong>Corollary.</strong> The complement of $V_2$ in $\Lambda^{2}$ is the line of the invariant alternating form, that is $V_0$.</p>
+<p><em>Proof.</em> The parity rule.</p>
+<p><strong>Corollary.</strong> The carrier is the image of the map $u\wedge v\mapsto uv-vu$ up to the identification with the algebra.</p>
+<p><em>Proof.</em> The commutator of two rank-one matrices is alternating.</p>
+<p><strong>The reading.</strong> The quintet is the alternating square of the spinors, and the invariant form is the line removed from it.</p>
+<h2 id="the-weights">The Weights</h2>
+<p><strong>Proposition.</strong> The weights of the carrier are $+2,+1,0,-1,-2$, and a weight basis is $E_{02},E_{01},E_{00}-E_{11},E_{10},E_{20}$ up to normalisation.</p>
+<p><em>Proof.</em> The alternating square of the weight string $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ gives the differences $m_i+m_j$ for $i<j$, that is $3,2,1,0,1,2$ with the pairs, and the label-two piece keeps $2,1,0$.</p>
+<p><strong>Corollary.</strong> The carrier is multiplicity-free: each of its five weights occurs once.</p>
+<p><em>Proof.</em> The weights displayed are distinct.</p>
+<p><strong>Corollary.</strong> The highest weight vector has weight two and the lowest weight two, so the string is symmetric.</p>
+<p><em>Proof.</em> The weight string.</p>
+<p><strong>The reading.</strong> The quintet has the weight string $2,1,0,-1,-2$, which is the string of the label two.</p>
+<h2 id="the-casimir">The Casimir</h2>
+<p><strong>Proposition.</strong> The Casimir acts on $V_2$ by the eigenvalue six, and the projector onto the carrier is the Lagrange polynomial of the Casimir vanishing on the other three eigenvalues.</p>
+<p><em>Proof.</em> The Casimir eigenvalue on $V_k$ is $k(k+1)$, which gives $6$ for $k=2$; the Lagrange polynomial $\prod_{l\neq6}(C-l)/(6-l)$ over $l\in\{0,2,12\}$ is the projector.</p>
+<p><strong>Corollary.</strong> The trace of the projector is five, and the projector is idempotent.</p>
+<p><em>Proof.</em> The rank of a projector is the dimension of its image.</p>
+<p><strong>Corollary.</strong> The carrier is the eigenspace of the Casimir with eigenvalue six, and it is invariant.</p>
+<p><em>Proof.</em> The Casimir commutes with the action.</p>
+<p><strong>The reading.</strong> The label is recovered from the Casimir eigenvalue by $k(k+1)=6$, which has the positive root $k=2$.</p>
+<h2 id="the-space-of-forms">The Space of Forms</h2>
+<p><strong>Proposition.</strong> Under the identification of $\mathbb{C}^{4}$ with the space of binary cubics, the carrier $V_2$ is the space of alternating two-forms modulo the invariant one, of dimension five, and it is isomorphic to the space of traceless symmetric $3\times3$ matrices over the reals.</p>
+<p><em>Proof.</em> The alternating forms on a four-dimensional space form a six-dimensional space; the invariant form spans a line; the quotient is five-dimensional; the real form of the quintet is the traceless symmetric square of the three-dimensional representation.</p>
+<p><strong>Corollary.</strong> The carrier's Hermitian slice is five-real-dimensional, and a general Hermitian element has the spectrum $\pm a$ twice.</p>
+<p><em>Proof.</em> The numerical spectrum $2.817,2.817,-2.817,-2.817$ and the determinant formula which forces $\alpha=\beta$.</p>
+<p><strong>Corollary.</strong> The quintet is the carrier whose Hermitian elements are the closest to being reflections.</p>
+<p><em>Proof.</em> The spectrum $\pm a$ twice.</p>
+<p><strong>The reading.</strong> The quintet is a space of forms with a degenerate Hermitian spectrum, and its real form is the space of traceless symmetric tensors.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the parity article.</strong> That article proves the splitting; this one studies the summand of label two.</p>
+<p><strong>Against the trace form article.</strong> The form on the quintet is computed there, with the Gram matrix in the weight basis.</p>
+<p><strong>Against the biquaternion row.</strong> At order two there is no carrier of label two: the algebra is four-real-dimensional and its carriers are labels one and zero.</p>
+<h2 id="the-quintet-in-coordinates">The Quintet in Coordinates</h2>
+<p><strong>The highest weight vector.</strong> The projection of $E_{02}$ onto the carrier is $E_{02}+E_{13}$: the unit $E_{02}$ is not itself in the carrier, because the weight-two space of the algebra is two-dimensional, spanned by $E_{02}$ and $E_{13}$, and the carrier contributes one dimension to it. The element $E_{02}+E_{13}$ is nilpotent of rank two, since the two units have no product in either order.</p>
+<p><strong>The weight-zero vector.</strong> The projection of the traceless diagonal element $E_{00}-E_{11}$ is $\tfrac12\operatorname{diag}(1,-1,-1,1)$, of trace zero and rank four, with the spectrum $\{\tfrac12,\tfrac12,-\tfrac12,-\tfrac12\}$. It is an invertible element of a carrier whose extreme weight vectors are nilpotent, so the two kinds of element are not separated by the weight.</p>
+<p><strong>The determinant.</strong> Since the characteristic polynomial is $(\lambda^{2}-q/4)^{2}$, the determinant is $q^{2}/16$ and the trace of the square is $q$; the two invariants are not independent, and the carrier has a single spectral parameter. The numerical check gives $\det X-(q/2)^{2}=0$ to machine precision on random elements.</p>
+<p><strong>The reading.</strong> The quintet is generated by two kinds of element, the nilpotent weight vectors and the invertible weight-zero element, and the sign of the invariant quadratic form separates them.</p>
+<h2 id="the-carrier-and-its-dual">The Carrier and Its Dual</h2>
+<p><strong>The dual of the carrier.</strong> The dual of the quintet is the carrier itself, because the trace form pairs the alternating square with itself and is nondegenerate; the pairing is alternating, since the trace form on two alternating tensors is symmetric in the exchange and the two-form description adds the sign.</p>
+<p><strong>The alternating square at order two.</strong> At order two the alternating square of the module is one-dimensional, spanned by the alternating form, and the carrier is the line of the multiples of that form; the whole construction degenerates to a single carrier, which is the reason the row at order two has only one nontrivial carrier.</p>
+<h2 id="the-check-of-the-split">The Check of the Split</h2>
+<p><strong>The two squares.</strong> The tensor square of the module splits into the symmetric and alternating parts of dimensions ten and six, and the quintet is the even part of the alternating piece; the check is $5+1=6$ and $7+3=10$, with the totals summing to sixteen.</p>
+<h2 id="the-projective-carrier">The Projective Carrier</h2>
+<p><strong>The quadric.</strong> The carrier is five-dimensional and its projective space is four-dimensional; the isotropic cone of the trace form cuts the projective space in a quadric of dimension three, and the quadric carries the rank-two elements, one direction for each point.</p>
+<h2 id="summary">Summary</h2>
+<p>The carrier of label two is the alternating square of the module minus the invariant form, of complex dimension five, with weights $2,1,0,-1,-2$ and Casimir eigenvalue six. Its projector is a Lagrange polynomial in the Casimir, and its Hermitian slice has the spectrum $\pm a$ twice.</p>
+<p>The carrier is the space of alternating forms modulo the invariant one, and its real form is the space of traceless symmetric three-by-three matrices.</p>
+<p><strong>The place in the corpus.</strong> The quintet is the carrier of the alternating square, and its single spectral parameter is the shadow of the fact that the alternating square at order two is one-dimensional; the comparison of the two orders is the clearest illustration of how much structure the doubling of the module adds.</p>
+<p><strong>The reading.</strong> The quintet is the middle carrier, between the triplet of the copy and the septet of the top, and its projective quadric is the smallest picture in which the three-parameter behaviour of the algebra begins.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_2=\Lambda^{2}V_{3/2}/V_0$</td>
+<td>the quintet</td>
+</tr>
+<tr>
+<td>$2,1,0,-1,-2$</td>
+<td>its weights</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>its Casimir eigenvalue</td>
+</tr>
+<tr>
+<td>$\pm a$ twice</td>
+<td>the Hermitian spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the splitting.</li>
+<li><a href="the-spin-two-carrier-and-the-trace-form-at-n-4.html">The Spin-Two Carrier and the Trace Form at $n=4$</a>, for the form.</li>
+<li><a href="the-spin-two-carrier-and-the-rank-strata-at-n-4.html">The Spin-Two Carrier and the Rank Strata at $n=4$</a>, for the ranks.</li>
+<li><a href="introduction-to-the-spin-one-carrier-of-the-biquaternion-algebra.html">Introduction to the Spin-One Carrier of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$</a>, for the weights.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

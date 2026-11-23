@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias — Biquaternion Universe</title>
+  <meta name="description" content="The Killing form of is four times the trace form, and its inertia is on the split real form, on the compact form and on the complex form read over the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-killing-form-of-math0-and-its-three-inertias"><strong>The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Killing form of $\mathfrak{sl}_2$ is four times the trace form, and its inertia is $(2,1)$ on the split real form, $(0,3)$ on the compact form $\mathfrak{su}(2)$ and $(3,3)$ on the complex form read over the reals.</strong></p>
+<p>The article defines the Killing form, proves the formula $K(X,Y)=4\operatorname{tr}(XY)$ on the traceless matrices, computes the Gram matrix in the basis $H,E,F$ with eigenvalues $-4,4,8$, computes the negative definite form of $\mathfrak{su}(2)$ in the basis $i\sigma_{k}/2$ with eigenvalues $-2,-2,-2$, computes the form of $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$ with the inertia $(3,3)$, and explains what the three signs mean. It assumes <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>, <em>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</em> and <em>The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<p>It defers the Hilbert–Schmidt form to <em>The Hilbert–Schmidt Form at $n=2$</em> and the four forms with their norms to <em>The Four Forms and Their Algebraic Norms at $n=2$</em>.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>Definition.</strong> The <strong>Killing form</strong> of a Lie algebra is $K(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$, the trace of the product of the two adjoint operators.</p>
+<p><strong>Proposition.</strong> The form is symmetric and invariant: $K([X,Y],Z)+K(Y,[X,Z])=0$.</p>
+<p><strong>Proof.</strong> A trace of a product is symmetric in the two factors, which gives the symmetry; the invariance is the cyclicity of the trace applied to $\operatorname{ad}_{[X,Y]}=[\operatorname{ad}_X,\operatorname{ad}_Y]$.</p>
+<p><strong>Corollary.</strong> The radical of the form is an ideal, and the form is nondegenerate exactly when the algebra is semisimple over a field of characteristic zero.</p>
+<p><strong>Proof.</strong> Invariance makes the radical stable under the adjoint action, and the criterion of Cartan says that a Lie algebra is semisimple exactly when its Killing form is nondegenerate.</p>
+<p><strong>At order two the algebra is small enough to compute the form by hand.</strong> The adjoint representation is three-dimensional on $\mathfrak{sl}_2$, so the form is a $3\times3$ matrix of traces of products of $3\times3$ matrices.</p>
+<h2 id="the-formula-on-the-traceless-matrices">The Formula on the Traceless Matrices</h2>
+<p><strong>Theorem.</strong> On $\mathfrak{sl}_2(\mathbb{C})$ the Killing form is</p>
+<p>$$
+K(X,Y)=4\operatorname{tr}(XY).
+$$</p>
+<p><strong>Proof.</strong> The adjoint representation of $\mathfrak{sl}_2$ is the fundamental representation tensored with its dual, so its character is $\chi(X)\overline{\chi(Y)}$ and $\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)=2n\operatorname{tr}(XY)$ with $n=2$ for the two-dimensional fundamental representation, which gives the constant $4$.</p>
+<p><strong>Corollary.</strong> The Killing form is four times the trace form, so it vanishes on the scalars, and on the traceless matrices it inherits the splitting of the trace form.</p>
+<p><strong>Proof.</strong> The two forms agree up to the constant, and the trace form was computed in <em>The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<p><strong>Corollary.</strong> In the basis $H=\sigma_{3}$, $E=E_{12}$, $F=E_{21}$ the Gram matrix of the Killing form is</p>
+<p>$$
+\begin{pmatrix}8&0&0\\ 0&0&4\\ 0&4&0\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> $4\operatorname{tr}(H^{2})=8$ and $4\operatorname{tr}(EF)=4$, while the other pairings vanish.</p>
+<h2 id="the-split-form">The Split Form</h2>
+<p><strong>Theorem.</strong> The eigenvalues of the Killing form of $\mathfrak{sl}_2(\mathbb{R})$ are $-4$, $4$ and $8$, so its inertia is $(2,1)$.</p>
+<p><strong>Proof.</strong> The characteristic polynomial of the displayed matrix is $(8-\lambda)(\lambda^{2}-16)$, whose roots are $8$, $4$ and $-4$; two are positive and one is negative.</p>
+<p><strong>Corollary.</strong> The form is positive definite on the traceless symmetric plane and negative definite on the antisymmetric line, so the two halves of the algebra separate by the sign of the form.</p>
+<p><strong>Proof.</strong> $K(\sigma_{3},\sigma_{3})=K(\sigma_{1},\sigma_{1})=8$ and $K(J,J)=4\operatorname{tr}(J^{2})=-8$.</p>
+<p><strong>Corollary.</strong> $\mathfrak{sl}_2(\mathbb{R})$ is semisimple but not compact, and its Killing form is nondegenerate and indefinite.</p>
+<p><strong>Proof.</strong> The form is nondegenerate because its three eigenvalues are nonzero, and it is indefinite because the signs differ; the compact algebras are exactly those with a negative definite Killing form.</p>
+<h2 id="the-compact-form">The Compact Form</h2>
+<p><strong>Theorem.</strong> In the basis $X_{1}=i\sigma_{1}/2$, $X_{2}=i\sigma_{2}/2$, $X_{3}=i\sigma_{3}/2$ of $\mathfrak{su}(2)$ the Killing form is $-2$ times the identity, so its eigenvalues are $-2,-2,-2$ and its inertia is $(0,3)$.</p>
+<p><strong>Proof.</strong> $4\operatorname{tr}(X_{j}X_{k})=4\cdot(-\tfrac14\cdot2\delta_{jk})=-2\delta_{jk}$, since $\operatorname{tr}(\sigma_{j}\sigma_{k})=2\delta_{jk}$ and the two factors of $i$ give $-1$.</p>
+<p><strong>Corollary.</strong> The form is negative definite, and $\mathfrak{su}(2)$ is a compact real form of $\mathfrak{sl}_2$.</p>
+<p><strong>Proof.</strong> Every eigenvalue is negative; and a real form whose Killing form is negative definite is compact by the criterion of Cartan.</p>
+<p><strong>Corollary.</strong> The two real forms have opposite signs, and the passage from one to the other multiplies the form by $-1$ on the traceless part.</p>
+<p><strong>Proof.</strong> The values $8$ and $-2$ differ in sign, and the basis change from $H$ to $X_{3}$ is the multiplication by $i/2$, which changes the real form.</p>
+<p><strong>The compact form is the one of the unitary matrices.</strong> The anti-Hermitian traceless matrices form the Lie algebra of $\mathrm{SU}(2)$, which is diffeomorphic to the sphere $S^{3}$ and hence compact.</p>
+<p><strong>Proof.</strong> $\mathrm{SU}(2)$ is the group of unitary two-by-two matrices of determinant one, and its Lie algebra is the space of traceless anti-Hermitian matrices.</p>
+<h2 id="the-complex-form-over-the-reals">The Complex Form over the Reals</h2>
+<p><strong>Theorem.</strong> Read over the reals, $\mathfrak{sl}_2(\mathbb{C})$ has dimension $6$ and its Killing form has the eigenvalues $-8,-4,-4,4,4,8$, with inertia $(3,3)$.</p>
+<p><strong>Proof.</strong> A real basis is $H,E,F,iH,iE,iF$. The real part of the form sends a pair of real matrices $(A,B)$ to $4\bigl(\operatorname{tr}(A^{2})-\operatorname{tr}(B^{2})\bigr)$, and the Gram matrix of that quadratic form in the six-element basis has the characteristic polynomial with the roots $-8,-4,-4,4,4,8$.</p>
+<p><strong>Corollary.</strong> The real part is the difference of two trace forms, positive of inertia $(2,1)$ on the traceless real matrices and negative of inertia $(1,2)$ on the imaginary ones.</p>
+<p><strong>Proof.</strong> On the traceless matrices of $M_2(\mathbb{R})$ the trace form has inertia $(2,1)$, as computed in the section on the split form, and the minus sign reverses the two counts.</p>
+<p><strong>Corollary.</strong> The three inertias $(2,1)$, $(0,3)$ and $(3,3)$ come from the two real forms and from the complex form read over the reals, and the complex form is not the complexification of either form read on the real algebra alone.</p>
+<p><strong>Proof.</strong> The first two inertias are those of the two real forms; the third is that of the complex algebra with the real part of the complex bilinear form, which mixes the two real directions instead of adding their inertias.</p>
+<h2 id="what-the-three-signs-mean">What the Three Signs Mean</h2>
+<p><strong>Proposition.</strong> The sign of the Killing form measures the compactness of the real form: negative definite for the compact one, indefinite for the split one.</p>
+<p><strong>Proof.</strong> Cartan's criterion states that a real semisimple Lie algebra is compact exactly when its Killing form is negative definite, and the two computations above give the two cases.</p>
+<p><strong>Corollary.</strong> The compact form has no nonzero nilpotent element in its image under the trace form, while the split form has the nilpotent line of the strictly triangular matrices.</p>
+<p><strong>Proof.</strong> On $\mathfrak{su}(2)$ the form is $-2$ times the identity, so every nonzero element has a nonzero square length; on $\mathfrak{sl}_2(\mathbb{R})$ the element $E_{12}$ is nilpotent and is isotropic for the form.</p>
+<p><strong>Corollary.</strong> The trace form of the algebra and the Killing form of the traceless part are proportional, so the sign difference between the two real forms is visible already in the elementary trace.</p>
+<p><strong>Proof.</strong> $K=4\operatorname{tr}$ on the traceless part, and the trace form has inertia $(3,1)$ on the real algebra with the traceless part of inertia $(2,1)$ and the antisymmetric line negative.</p>
+<h2 id="summary">Summary</h2>
+<p>The Killing form of $\mathfrak{sl}_2$ is $K(X,Y)=4\operatorname{tr}(XY)$. In the basis $H,E,F$ of the split form its Gram matrix is $\begin{pmatrix}8&0&0\\ 0&0&4\\ 0&4&0\end{pmatrix}$ with eigenvalues $-4,4,8$ and inertia $(2,1)$, positive on the traceless symmetric plane and negative on the antisymmetric line.</p>
+<p>On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form is $-2$ times the identity with eigenvalues $-2,-2,-2$ and inertia $(0,3)$, so the form is negative definite and the algebra is compact. On $\mathfrak{sl}_2(\mathbb{C})$ read over the reals the eigenvalues are $-8,-4,-4,4,4,8$ with inertia $(3,3)$, the complexification of the two real forms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K(X,Y)$</td>
+<td>$\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$, the Killing form</td>
+</tr>
+<tr>
+<td>$H,E,F$</td>
+<td>$\sigma_{3}$, $E_{12}$, $E_{21}$, the basis of the split form</td>
+</tr>
+<tr>
+<td>$X_{k}$</td>
+<td>$i\sigma_{k}/2$, the basis of $\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X$</td>
+<td>the operator $Y\mapsto[X,Y]$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(XY)$</td>
+<td>the trace form, proportional to $K$ on the traceless part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Geometric Analysis</em> (AMS, 2001), for the Killing form, its inertia and the compactness criterion.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for the real forms of $\mathfrak{sl}_2$ and their Cartan decompositions.</li>
+<li><a href="the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html">The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</a>, for the trace form that the Killing form multiplies by four.</li>
+<li><a href="the-lie-algebra-skew-2-one-dimension-hence-abelian.html">The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</a>, for the antisymmetric line on which the form is negative.</li>
+<li><a href="the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</a>, for the adjoint operators whose traces define the form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning Rules: Removing the Workshop and Keeping the Physics — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Executed once, and written from that pass. The rules below were distilled after one cleaning of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cleaning-rules-removing-the-workshop-and-keeping-the-physics"><strong>Cleaning Rules: Removing the Workshop and Keeping the Physics</strong></h1>
+<p><em>Status of this file.</em> <strong>Executed once, and written from that pass.</strong> The rules below were distilled after one cleaning of <code>articles_internal/internal-note-the-fourth-colour-left-right-model.md</code>, which removed 6 403 words, every bold marker, and twelve of its thirty-two tables without touching an equation. The numbers are in §11, and they are the only evidence that the pass was mechanical rather than editorial.</p>
+<p><em>What the file is for.</em> It is the checklist for the next cleaning: what to remove, what to keep, what to verify, and in what order. It is a pass over one file, not a licence to sweep the corpus.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>Confirm the target before the first edit.</strong> Print the path and the first heading; never infer the file from a title. Two articles in this repository share a title and differ by one directory.</li>
+<li><strong>Every equation survives, byte for byte.</strong> A cleaning is not a rewrite, not a summary and not a shortening.</li>
+<li><strong>Zero bold in the finished file</strong>, checked both on the Markdown and on the built page.</li>
+<li><strong>Never repair the physics.</strong> A symbol that looks wrong is reported, not changed.</li>
+<li><strong>Never add a sentence that was not there.</strong> A cleaning that improves the argument has stopped being a cleaning.</li>
+</ol>
+<h2 id="1-what-a-cleaning-is">1. What a Cleaning Is</h2>
+<p>A cleaning is the pass that takes one finished article and removes from it everything that belongs to the workshop rather than to the physics: migration bookkeeping, status and tier labels, file names, revision history, self-criticism, addresses to the reader about the writing, and bold lead-ins.</p>
+<p>A cleaning is not a rewrite, not a summary and not a shortening. It removes noise and keeps the physics. The test is mechanical: put the old file and the new file side by side, and every equation, every number, every table that states a claim, and every step of every argument must still be there.</p>
+<p>The one line that decides a hard case: <strong>an argument about the model stays; an argument about the note's own drafting goes.</strong> "The strip is legitimate because the equality was conditional on parity" is physics. "This note did not use that reason until the file was recovered" is drafting.</p>
+<h2 id="2-the-three-ways-to-get-it-wrong">2. The Three Ways to Get It Wrong</h2>
+<ol>
+<li><strong>Cleaning the wrong file.</strong> On 2026-11-21 an instruction naming <code>articles_internal/internal-note-the-fourth-colour-left-right-model.md</code> was carried out on <code>articles_physics/the-fourth-colour-left-right-model.md</code>. Two files had to be restored from git. The cause is that the two articles share a title and differ by one directory. The cure is in step 1 of the procedure: print the path and the first heading, and never infer the target from a title.</li>
+<li><strong>Cleaning the physics away.</strong> Removing a bold lead-in is safe. Removing the sentence under it because it "reads like commentary" is not. The bold comes off the sentence; the sentence stays.</li>
+<li><strong>Leaving the noise in.</strong> A pass that removes two thirds of the bold and keeps the rest is not finished. The end state is exact: zero <code>**</code> in the file and a zero bold share in the built page. Partial cleaning is worse than none, because the next reader cannot tell whether a surviving sentence survived on purpose.</li>
+</ol>
+<h2 id="3-what-counts-as-workshop-prose">3. What Counts as Workshop Prose</h2>
+<p>Remove, in every form:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>what it looks like</th>
+<th>the tell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status and tier labels</td>
+<td>"built?", "not yet", "yes", "merged", "never written", "done", "phase 2"</td>
+<td>the row answers a question about the project, not about nature</td>
+</tr>
+<tr>
+<td>file bookkeeping</td>
+<td>backticked paths, "the file is withdrawn", "the rename is complete", "alias", "sitemap prints 3138 urls", "the citation resolves"</td>
+<td>it names a <code>.md</code> or <code>.html</code> file, or a build artefact</td>
+</tr>
+<tr>
+<td>migration machinery</td>
+<td>"the four rules", "the dictionary", "the work list", "what changes in article X", "article-by-article plan"</td>
+<td>it instructs a future editor</td>
+</tr>
+<tr>
+<td>register, boundary, ledger, frame-scorecard as bookkeeping</td>
+<td>"the ledger shows", "the register records", "the boundary is respected"</td>
+<td>the noun refers to the corpus's own accounting, not to a physical object or a gauge-invariant statement</td>
+</tr>
+<tr>
+<td>revision history</td>
+<td>"an earlier draft said", "this note did not use it until", "the file was recovered", "the author reversed"</td>
+<td>it narrates the writing</td>
+</tr>
+<tr>
+<td>self-criticism and apology</td>
+<td>"the honest form of the statement", "stated fairly, because it deserves that", "this is where a reader expects a dodge", "the sentence that must not be written"</td>
+<td>the subject is the note's honesty, not the model</td>
+</tr>
+<tr>
+<td>addresses to the reader</td>
+<td>"we now turn to", "the next section will", "as the reader will see"</td>
+<td>it manages the reading instead of stating a fact</td>
+</tr>
+<tr>
+<td>bold lead-ins</td>
+<td><code>**1.1 The group and the content.**</code></td>
+<td>see the bold rule below</td>
+</tr>
+<tr>
+<td>cross-references to removed sections</td>
+<td><code>§7.4</code>, <code>§8.4a</code>, <code>§12.6</code></td>
+<td>the target no longer exists</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these need judgement, and the judgement is narrow.</p>
+<ul>
+<li><strong>The confirmation and legitimacy arguments stay.</strong> A section that argues the model is not in conflict with experiment, or that dropping an assumption is legitimate rather than convenient, is physics. What goes is the sentence that reports on that argument ("both are stated as what they are").</li>
+<li><strong>A table stays if its rows carry physics.</strong> A verdict column reading <em>confirmed</em>, <em>consistent</em>, <em>not contradicted</em> stays, because it states what the model says about a measurement. A verdict column reading <em>keep</em>, <em>withdraw</em>, <em>relabel</em> goes, because it states what an editor should do.</li>
+</ul>
+<h2 id="4-what-is-physics">4. What Is Physics</h2>
+<p>Keep, without exception:</p>
+<ul>
+<li><strong>Every display equation, byte for byte.</strong> Not re-typeset, not re-ordered, not "tidied". If a symbol looks wrong, it is still not a cleaning edit; report it instead.</li>
+<li><strong>Every table row that carries a number, a claim, a bound or a model comparison</strong>, with its header row.</li>
+<li><strong>Every definition and every derivation step.</strong> A derivation that a cleaning pass finds redundant is still a derivation.</li>
+<li><strong>Every number with its premise.</strong> A bound quoted as $10^{6}$ must still say $b_{B-L}=12$ and "one-loop" wherever it said so before.</li>
+<li><strong>The section structure</strong>, minus the sections that are pure bookkeeping.</li>
+</ul>
+<h2 id="5-the-bold-rule">5. The Bold Rule</h2>
+<ul>
+<li><strong>Zero <code>**</code> in the finished file.</strong> This is the single mechanical target of the pass.</li>
+<li><strong>The title keeps whatever form the file already has.</strong> <code># Title</code> stays; <code># __Title__</code> stays. A cleaning never changes the title's markup, because <code>build.py</code> reads the first heading with <code>re.match(r"#\s*__(.+?)__\s*$", s)</code> and a title that loses its underscores changes the page title.</li>
+<li><strong>A bold lead-in becomes a plain sentence, and the paragraph continues.</strong> <code>**1.1 The group and the content.** The gauge group is</code> becomes <code>1.1 The group and the content. The gauge group is</code>. The label is kept because it is the section's number; only the weight goes.</li>
+<li><strong>A bold phrase inside a sentence loses the asterisks and keeps the words.</strong> If the emphasis was carrying a claim — <code>**with** $Y=T_{3R}+\tfrac12(B-L)$</code> — the claim must survive in plain words, so rewrite the clause rather than stripping it: "and with $Y=T_{3R}+\tfrac12(B-L)$".</li>
+<li><strong>Italic is allowed sparingly</strong>, for a quoted rule or a quoted verdict, never as a substitute for bold emphasis.</li>
+<li><strong>Nothing inside <code>$...$</code> is touched.</strong> <code>build.py</code> protects math with a regex before Markdown conversion, so <code>_</code> and <code>*</code> inside math never became bold; keep them exactly as they are.</li>
+</ul>
+<h2 id="6-the-procedure-step-by-step">6. The Procedure, Step by Step</h2>
+<p><strong>Step 1 — Confirm the target, before any edit.</strong></p>
+<pre><code class="language-bash">cd /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit
+f=&lt;the path named in the instruction&gt;
+ls -la &quot;$f"; head -3 "$f&quot;; git ls-files --error-unmatch &quot;$f&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo tracked || echo &quot;NOT tracked&quot;
+</code></pre>
+<p>The first heading must match the article the instruction names. If it does not, stop and ask.</p>
+<p><strong>Step 2 — Back up the original.</strong></p>
+<ul>
+<li>Tracked by git: nothing to do; <code>git show HEAD:$f</code> is the copy.</li>
+<li><strong>Not tracked: archive it to <code>_reserve/others/&lt;name&gt;.7z</code> now.</strong> <code>articles_internal/</code> and <code>_reserve/</code> are gitignored (<code>.gitignore</code> lines 19–20), so files there have no history. The house form is a 7z holding one file:</li>
+</ul>
+<pre><code class="language-bash">cp &quot;$f&quot; /tmp/orig.md
+( cd _reserve/others &amp;&amp; cp /tmp/orig.md &quot;$(basename "$f&quot;)&quot; &amp;&amp; 7z a -t7z -y &quot;$(basename "$f&quot;).7z&quot; &quot;$(basename "$f&quot;)&quot; &amp;&amp; rm &quot;$(basename "$f&quot;)&quot; )
+7z l &quot;_reserve/others/$(basename "$f&quot;).7z&quot; | tail -3   # asserts the size is the original's
+</code></pre>
+<p>The archive holds <strong>the version you replaced</strong>, not the version you wrote. A pass that archives its own output has lost the original.</p>
+<p><strong>Step 3 — Take the skeleton.</strong></p>
+<pre><code class="language-bash">python3 - &lt;&lt;'PY'
+import re
+t=open('&lt;file&gt;').read()
+print(&quot;words&quot;,len(t.split()),&quot;| bold&quot;,t.count('**'),&quot;| eq&quot;,len(re.findall(r'\$\$(.*?)\$\$',t,re.S)))
+print(&quot;\n&quot;.join(l for l in t.split('\n') if l.startswith('#')))
+PY
+</code></pre>
+<p>Copy the list of display equations to a scratch file. That list is the acceptance test in step 5, and it must be taken <strong>before</strong> the first edit.</p>
+<p><strong>Step 4 — Rewrite in parts, outside the repository.</strong></p>
+<p>Write <code>/tmp/p1.md</code>, <code>/tmp/p2.md</code>, … and concatenate. Three reasons: a 14,000-word single write cannot be reviewed in one read; a part can be checked against the original section by section; and nothing half-finished ever touches the live file.</p>
+<p>Rewrite rules for the prose:</p>
+<ol>
+<li><strong>Keep the sentence, change its dress.</strong> Most of the work is <code>**X.** Y</code> → <code>X. Y</code>. Do not paraphrase Y.</li>
+<li><strong>Delete whole sentences only when the subject is the writing</strong>, and then delete the whole sentence, never half of it.</li>
+<li><strong>Delete a whole table only when every row is workshop.</strong> A table that mixes physics rows and bookkeeping rows is rebuilt with the physics rows; the alternative — deleting it — loses numbers.</li>
+<li><strong>Do not merge sections and do not reorder them</strong>, except for the renumbering below.</li>
+<li><strong>Do not add a sentence that was not there.</strong> A cleaning that improves the argument has stopped being a cleaning.</li>
+</ol>
+<p><strong>Step 5 — Verify before installing.</strong> Run the check block in the next section. A failure in equation parity or in a physics table row means the part is wrong; fix it before concatenating, not after.</p>
+<p><strong>Step 6 — Install, build, measure.</strong></p>
+<pre><code class="language-bash">cp /tmp/clean.md &quot;$f&quot;
+.venv/bin/python build.py | tail -5
+</code></pre>
+<p>The output goes to <code>/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy/</code>, not next to the source (<code>DEPLOY</code> in <code>build.py</code>, line 13). Measure the bold share on the deployed file, not on the Markdown, because the Markdown cannot tell you what survived per word.</p>
+<p><strong>Step 7 — Report in one table.</strong> Words before and after, bold before and after, equations, tables, rows. Numbers, not adjectives.</p>
+<h2 id="7-renumbering">7. Renumbering</h2>
+<p>Removing a section renumbers every section after it, and a stale <code>§</code> reference is the one defect that reads as physics while pointing nowhere. Renumber in the same pass, then check that every reference resolves.</p>
+<p>The 2026-11-21 pass removed <code>§7.5</code> (the withdrawn-file record) and <code>§8</code> (the migration), so:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>§1</code>–<code>§7</code></td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td><code>§7.5</code></td>
+<td>gone, its physics rows folded into <code>§7.4</code></td>
+</tr>
+<tr>
+<td><code>§8</code></td>
+<td>gone</td>
+</tr>
+<tr>
+<td><code>§9 The Checks</code></td>
+<td><code>§8 The Checks</code></td>
+</tr>
+<tr>
+<td><code>§10</code></td>
+<td><code>§9</code></td>
+</tr>
+<tr>
+<td><code>§11</code></td>
+<td><code>§10</code></td>
+</tr>
+<tr>
+<td><code>§12</code></td>
+<td><code>§11</code></td>
+</tr>
+<tr>
+<td><code>§8.7</code>, <code>§12.4</code>, <code>§12.6</code>, <code>§7.4d</code> in prose</td>
+<td>deleted with their subject</td>
+</tr>
+</tbody>
+</table></div>
+<p>Renumber subsection labels in the body text too (<code>**10.1**</code> → <code>10.1</code>), and re-check the references afterwards; they are the part that fails silently.</p>
+<h2 id="8-the-verification-commands">8. The Verification Commands</h2>
+<p>Run all of it on the assembled <code>/tmp/clean.md</code>, then again after installing.</p>
+<p>```python
+import re
+src = open('/tmp/orig.md').read()          # the backup from step 2
+new = open('/tmp/clean.md').read()
+norm = lambda s: re.sub(r'\s+', '', s)</p>
+<h1 id="1-every-display-equation-survives-modulo-whitespace">1. every display equation survives, modulo whitespace</h1>
+<p>se, ne = re.findall(r'\$\$(.<em>?)\$\$', src, re.S), re.findall(r'\$\$(.</em>?)\$\$', new, re.S)
+hn = [norm(x) for x in ne]
+print("eq", len(se), "-&gt;", len(ne), "| missing:", [i+1 for i,x in enumerate(se) if norm(x) not in hn])</p>
+<h1 id="2-math-delimiters-balanced-buildpy-does-not-parse-math-an-odd-math17-even-newcountmath18count-and-count-are-both-even">2. math delimiters balanced (build.py does not parse math: an odd $$ breaks the page silently)
+print("$$ even:", new.count('$$') % 2 == 0, "| $ even:", new.count('$') % 2 == 0)
+
+# 3. table rows: identical counts per table, and the lost rows are only workshop rows
+def tabs(t):
+    out, cur = [], []
+    for l in t.split('\n'):
+        if l.startswith('|'): cur.append(l)
+        elif cur: out.append(cur); cur = []
+    return out + ([cur] if cur else [])
+print("tables", len(tabs(src)), "->", len(tabs(new)), "| rows", sum(map(len,tabs(src))), "->", sum(map(len,tabs(new))))
+nrows = {norm(l) for l in new.split('\n') if l.startswith('|')}
+for r in (l for l in src.split('\n') if l.startswith('|')):
+    if norm(r) not in nrows: print("  lost:", r[:90])
+# The list is not a loss list. A row whose bold verdict was stripped, or whose
+# wording was rewritten, also fails a verbatim match. Read each entry against
+# the table it came from and ask whether its numbers survived; the per-table
+# row count above is what proves a table was not lost.
+
+# 4. no dangling cross-reference
+have = set(re.findall(r'^(\d+\.\d+) ', new, re.M))
+print("dangling:", [r for r in set(re.findall(r'§(\d+\.\d+)', new)) if r not in have])
+
+# 5. table columns consistent
+cur = None
+for i, l in enumerate(new.split('\n'), 1):
+    if l.startswith('|'):
+        c = l.count('|')
+        if cur is None: cur = c
+        elif c != cur: print("  col mismatch", i, l[:70])
+    else: cur = None
+
+# 6. the mechanical target
+print("bold:", new.count('**'), "| words:", len(new.split()))
+print("workshop words left:", {w: new.lower().count(w) for w in
+      ['migration','ledger','flagged','tier','revision','honest','sitemap','.md`','alias'] if new.lower().count(w)})
+```
+
+And on the built page:
+
+```python
+import re
+h = open('/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy/<path>.html').read()
+words = len(re.sub(r'<[^>]+>', ' ', h).split())
+bold = sum(len(re.sub(r'<[^>]+>', ' ', t).split()) for _, t in re.findall(r'<(strong|b)>(.*?)</\1>', h, re.S))
+print(f"words {words} | bold words {bold} | {100*bold/words:.1f}%")
+```
+
+Two things that look like faults and are not: the built HTML still contains `$` and `\mathrm`, because KaTeX renders client-side from `auto-render.min.js`; and the built page's word count cannot be compared with the Markdown's, because display math and table cells tokenise differently — compare the built page before the pass with the built page after it, and the Markdown with the Markdown.
+
+## 9. What Not to Do
+
+- Do not re-typeset an equation, "fix" a symbol, or change an index order. Report it; do not repair it.
+- Do not delete a table for its header. Rebuild it if its rows carry numbers.
+- Do not merge two sections because they now read alike.
+- Do not rebuild the deploy tree by hand; `build.py` writes it, and hand copies are what the next build deletes.
+- Do not commit or push. `articles_internal/` is gitignored, so a commit would not contain the file anyway; and a cleaning is not a publication.
+- Do not leave the scratch parts (`/tmp/p*.md`) as a second copy of the article. Delete them once the file is installed.
+
+## 10. The Checks Before the File Is Closed
+
+- The file at the installed path opens with the heading the instruction named, and it is the file the instruction named — not its namesake one directory away.
+- If the file is untracked, `_reserve/others/<name>.7z` exists and holds the **original** size.
+- `grep -c '\*\*'` prints 0, and the title's markup is unchanged.
+- Equation count is unchanged and every equation matches the original modulo whitespace.
+- Every table that was physics is still there with the same row count, and every lost row is a workshop row.
+- Every `§x.y` reference resolves to a subsection that exists in the cleaned file.
+- Every table row has the same number of columns as its header.
+- `$$<code>count and</code>$` count are both even.</h1>
+<ul>
+<li>The build runs without error, and the built page's bold share is 0%.</li>
+<li>No sentence states how the cleaning was done, what was removed, or what an editor should think of it.</li>
+<li>No number lost its premise ($b_{B-L}=12$, "one-loop", "minimal content").</li>
+<li>Nothing was added that the original did not say.</li>
+</ul>
+<h2 id="11-the-record-of-one-pass">11. The Record of One Pass</h2>
+<p>The rules above were written after one pass, and the numbers belong in the record because they are the only evidence that the pass was mechanical rather than editorial.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td><code>articles_internal/internal-note-the-fourth-colour-left-right-model.md</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td>words</td>
+<td>14,749</td>
+<td>8,346</td>
+</tr>
+<tr>
+<td><code>**</code> markers</td>
+<td>many</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bold share of the built page</td>
+<td>39%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>display equations</td>
+<td>18</td>
+<td>18, all verbatim</td>
+</tr>
+<tr>
+<td>tables</td>
+<td>32</td>
+<td>20</td>
+</tr>
+<tr>
+<td>table rows</td>
+<td>302</td>
+<td>173 (129 fewer; 118 survivors byte-identical, 55 edited in place)</td>
+</tr>
+<tr>
+<td>sections</td>
+<td>12 + summary</td>
+<td>10 + summary</td>
+</tr>
+</tbody>
+</table></div>
+<p>Removed: <code>§7.5</code> (withdrawn-file record), <code>§8</code> (migration: four rules, dictionary, article plan, rename tables, work list, verification), the eleven-check table, the five-citation table, every "sentence that must not be written", every self-assessment paragraph, every backticked path, and every bold lead-in.</p>
+<p>Kept: the group and content, the chain, the containment proof, the strip, the running tables and the edge condition, the failure table, the fourteen-row confirmation table, the Pati–Salam and left–right comparisons, the four predictions, the seven misreadings, the checks table, the two confirmations, the legitimacy argument, the synchronised variant with its six equations and three tables.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One file, one pass, one mechanical target.</strong> A cleaning removes what belongs to the workshop and keeps what belongs to the physics, and the only number that proves it is the bold count, which must read zero.</p>
+<ul>
+<li>The three failures are named because each has happened: the wrong file, the physics cleaned away, and the partial pass.</li>
+<li>The line that decides a hard case: an argument about the model stays, an argument about the note's own drafting goes.</li>
+<li>Nine classes of workshop prose are listed with their tell, and two of them need judgement: the confirmation argument stays, the verdict column that tells an editor what to do goes.</li>
+<li>Every display equation, every table row carrying a number or a claim, every derivation step and every number with its premise is kept without exception.</li>
+<li>Seven steps: confirm, back up, take the skeleton, rewrite in parts outside the repository, verify, install and build, report in one table of numbers.</li>
+<li>A stale § reference is the one defect that reads as physics while pointing nowhere, so renumbering happens in the same pass.</li>
+<li>One verified pass: 14 749 words to 8 346, bold from 39 % to 0 %, 18 equations intact, 32 tables to 20, 302 rows to 173.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

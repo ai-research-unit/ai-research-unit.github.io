@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Operators — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the Operators block of the maths category Biquaternions: forty articles in the subsections The Endomorphism Algebra…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-operators"><strong>Internal Summary of the Biquaternion Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the <em>Operators</em> block of the maths category <em>Biquaternions</em>: <strong>forty articles</strong> in the subsections <em>The Endomorphism Algebra</em> (1), <em>Operators of the Biquaternion Algebra</em> (7), <em>Adjoint Pairs of Operators</em> (3), <em>Matrix Operator Representations</em> (3), <em>The Structures of Operators</em> (3), <em>Operators on the Four Sectors</em> (5), <em>Rotors, Spins, Carriers and Closures</em> (4), and the three spin subspaces (4 + 6 + 4). It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named at the end of its section.</p>
+<p><strong>What the category does.</strong> It takes the one algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and asks what its own linear maps are, how they compose, how they decompose, how they classify over $\mathbb{R}$ and over $\mathbb{C}$, and which of them carry a spin. It <em>develops</em> the operator calculus: the two regular families, their transposition, the two-sided products, the four adjoints, the SVD, the three lattices of the operator algebra. It <em>imports</em> the Fierz–Kofink identities and Lounesto's six classes. It <em>refuses</em> a spectral theorem on the indefinite form, a pin group inside the two-sided family, and a decision between the physical left and right actions.</p>
+<p><strong>The single structural fact: the ladder, and the cone is not a subspace.</strong></p>
+<p>$$
+\boxed{\;\underbrace{1}_{\text{scalars}}\;\subset\;\underbrace{4}_{L(\mathbb{B}),\ R(\mathbb{B})}\;\subset\;\underbrace{7}_{\text{two-sided cone}}\;\subset\;\underbrace{16}_{\operatorname{End}_{\mathbb{C}}(\mathbb{B})}\;,\qquad \mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong \operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The numbers $1,4,7,16$ are $4+4-1=7$ and $4+4+9=16$: the two one-sided families are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$ that meet exactly in the scalars and commute element by element. The two-sided operators are the products $L_{\tilde Q}R_{\tilde Q_2}$, and they fill a <strong>cone and not a subspace</strong>: eight parameters modulo the scaling $(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$ give seven, the family is closed under composition, and $\mathrm{id}+L_{\vec e_x}R_{\vec e_x}$ is not a product. The linear sum $L+R$ is a seven-dimensional subspace and is <em>not a subalgebra</em>. The enveloping algebra therefore does not decompose: the missing nine dimensions are exactly the tensor part $\mathfrak{sl}_2\otimes\mathfrak{sl}_2$.</p>
+<p><strong>The one-sentence version.</strong> A left multiplication is a homomorphism, a right multiplication an anti-homomorphism, they commute and meet in the scalars, so every two-sided operator is a composite of the two families and never a new primitive; the whole ambient space is their linear span plus a nine-dimensional tensor part.</p>
+<p><strong>How to use it.</strong> Read §1 to §7 for the spine, §12 to §14 for the classification (the three densest articles), §15 to §17 for the sectors, §18 to §22 for the spins. The four numbers $16,7,4,1$ were checked numerically on random and degenerate parameters; the SVD weight identities on five random elements; the rank set $\{0,1,2,4\}$ on generic and zero-divisor parameters.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Articles</th>
+<th>What it settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Endomorphism Algebra</td>
+<td>1</td>
+<td>the ambient space and the two fields</td>
+</tr>
+<tr>
+<td>Operators of the Biquaternion Algebra</td>
+<td>7</td>
+<td>the two families, the transposition, the cone, the envelope</td>
+</tr>
+<tr>
+<td>Adjoint Pairs of Operators</td>
+<td>3</td>
+<td>four adjoints, one operator, which pair preserves the sectors</td>
+</tr>
+<tr>
+<td>Matrix Operator Representations</td>
+<td>3</td>
+<td>the three frames, the coefficient matrix, the length</td>
+</tr>
+<tr>
+<td>The Structures of Operators</td>
+<td>3</td>
+<td>real forms, three lattices, two complexifications</td>
+</tr>
+<tr>
+<td>Operators on the Four Sectors</td>
+<td>5</td>
+<td>the two predicates, the regular and the degenerate sector</td>
+</tr>
+<tr>
+<td>Rotors, Spins, Carriers and Closures</td>
+<td>4</td>
+<td>from $S^3$ to the three carriers</td>
+</tr>
+<tr>
+<td>Spin-Zero, Spin-Half, Spin-One Subspaces</td>
+<td>14</td>
+<td>the carriers and their closures against the predicates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-ambient-algebra-and-the-three-fields">1. The Ambient Algebra and the Three Fields</h2>
+<p><strong>The object.</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is the algebra of $\mathbb{C}$-linear maps of the carrier into itself, under composition. A choice of basis identifies it with $M_4(\mathbb{C})$; the identification depends on the basis, and the trace, the determinant, the spectrum and the rank do not.</p>
+<p>$$
+\dim_{\mathbb{C}}\operatorname{End}_{\mathbb{C}}(\mathbb{B})=16,\qquad
+\dim_{\mathbb{R}}\operatorname{End}_{\mathbb{R}}(\mathbb{B})=64,\qquad
+\dim_{\mathbb{R}}\operatorname{End}_{\mathbb{C}}(\mathbb{B})=32 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The third number is the first read over $\mathbb{R}$, and it is $32$ and not $64$ because $\mathbb{C}$-linearity is one real equation per direction: the complex-linear maps are the fixed set of the real structure commuting with multiplication by $i$. A reader who confuses the two ambient algebras gets every real-form count of §12 and §14 wrong.</p>
+<p><strong>The three subobjects, and the trap.</strong> $\operatorname{Aut}(\mathbb{B})=PGL_2(\mathbb{C})$, of complex dimension three; the derivations are all inner, $\operatorname{ad}_{\tilde Q}(x)=\tilde Qx-x\tilde Q$, a subspace of complex dimension three; the dimensions agree because one is the tangent space of the other, and one object is a group while the other is a subspace.</p>
+<p>$$
+D=\operatorname{diag}(1,-1,-1,-1),\qquad \operatorname{tr}D=-2,\qquad \det D=-1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $D$, the quaternion conjugation, is the one conjugation of the algebra that is $\mathbb{C}$-linear, so it lies <em>inside</em> the ambient algebra and outside the automorphism group. The coefficient bar and the Hermitian star are conjugate-linear, hence outside. That single line fixes which of the four adjoints of §8 can be written as an operator identity and which only as a real-linear one.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-endomorphisms-of-the-biquaternion-algebra.md</code></p>
+<h2 id="2-the-four-products-and-the-four-readings">2. The Four Products and the Four Readings</h2>
+<p><strong>The four products.</strong> One multiplication rule with a conjugation inserted independently into the two slots.</p>
+<p>$$
+\tilde Q_1\tilde Q_2,\qquad \tilde Q_1^{\natural}\tilde Q_2,\qquad \tilde Q_1\tilde Q_2^{*},\qquad \tilde Q_1^{\natural}\tilde Q_2^{*}.
+$$</p>
+<p><strong>The pairings they decide.</strong></p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}),
+$$</p>
+<p>with Gram matrices $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$, $\mathrm{E}$ in the unit basis.</p>
+<p><strong>The non-trivial claim, and the sentence to quote.</strong> <em>The products decide the pairing and the adjoint; they do not decide the operator.</em> The four share the multiplication table of the units and differ only in which involution sits in which slot, so what they fix is the <em>name</em> of an operator family and its adjoint, not whether an element acts as a rotation or as a reflection. An operator needs an element <em>and</em> an insertion, and whether the sign sits in the parameter or in the argument is a convention; the corpus fixes it as $\natural$, with sign vector $(1,-1,-1,-1)$. The theorem "a reflection needs the sign" is a theorem; <em>which</em> map plays the sign is not.</p>
+<p><strong>The evidence, on one element.</strong></p>
+<p>$$
+\operatorname{diag}(1,1,-1,-1),\qquad \operatorname{diag}(-1,-1,1,1),\qquad
+L_{\tilde Q_4}R_{\tilde Q_4^{-1}}\big|_{V}=-\rho_{\tilde Q_4},\quad L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}\big|_{V}=\rho_{\tilde Q_4}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the four-dimensional algebra both operators have determinant $+1$: rotation and reflection are read on the <em>vector subspace</em>, never on $\mathbb{B}$. And the plain product gives <em>minus</em> the reflection, so one insertion is forced by the algebra and not merely preferred.</p>
+<p><strong>The four adjoints are decided here.</strong></p>
+<p>$$
+(L_{\tilde Q_4})^{\approx}=R_{\tilde Q_4},\quad (L_{\tilde Q_4})^{*}=L_{\tilde Q_4^{*}},\quad (L_{\tilde Q_4})^{N}=L_{\tilde Q_4^{\natural}},\quad (L_{\tilde Q_4})^{\natural*}=R_{\bar{\tilde Q_4}} .
+$$</p>
+<p><strong>Source.</strong> <code>articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.md</code></p>
+<h2 id="3-chirality-is-the-side">3. Chirality Is the Side</h2>
+<p><strong>The definition.</strong> Operator chirality is the side on which an operator multiplies: $L(a)$ on the left, $R(b)$ on the right. It names no frame, no axis and no basis.</p>
+<p><strong>The non-trivial claim, and the warning.</strong> The natural route through a basis operator $-iR_u$ with $u^2=-e_t$ is <em>correct and misordered</em>: it produces an operator and then reads a chirality off it. That operator is a pure right multiplier, so it has a chirality itself, and an object that has a chirality cannot be what chirality means. The sides come first; the basis operator is one example of one of them. Operator chirality is also not <em>spinor</em> chirality, which is an eigenvalue and needs an axis.</p>
+<p>$$
+\sigma=\Xi\tau\Xi^{-1},\qquad \Xi(a\otimes b)=L_aR_b,\qquad \sigma(L_a)=R_a .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The exchange of the sides is the flip transported through the structure isomorphism, so it is intrinsic and not a choice. It squares to the identity, reverses products, exchanges the two images, fixes the scalars, preserves rank and length, and is <strong>not inner</strong>. It is the adjoint of the trace form, and in a diagonalising basis it is the transpose through a sign matrix.</p>
+<p><strong>The two eigenspaces.</strong> The fixed part of $\sigma$ is a <strong>ten</strong>-dimensional Jordan algebra and the negated part a <strong>six</strong>-dimensional Lie algebra, the symmetric and the exterior square. The second side-exchanger is the quaternion conjugation, $\natural L(a)\natural=R(a^{\natural})$, which differs from $\sigma$ by conjugating and reversing the parameters; the sign in which the two differ is the origin of every phase the corpus obtains from a change of side.</p>
+<p><strong>Source.</strong> <code>articles_maths/operator-chirality-on-the-biquaternion-algebra.md</code></p>
+<h2 id="4-the-two-one-sided-families">4. The Two One-Sided Families</h2>
+<p><strong>The objects.</strong></p>
+<p>$$
+L_{\tilde Q}(X)=\tilde QX,\qquad R_{\tilde Q}(X)=X\tilde Q,\qquad L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2},\qquad R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> $L$ is a representation and $R$ an anti-representation, and the reversal is the whole content of the second law: the images are $\mathbb{B}$ and $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four. The repair $\tilde Q\mapsto R_{\tilde Q^{\natural}}$ is a representation; the article keeps the anti-representation, because that reversal is what the two-sided law of §6 inherits and why $\mathrm{opp}$ appears in §7.</p>
+<p><strong>Injectivity, and why the unit is the whole proof.</strong> $L_{\tilde Q}(e_t)=\tilde Q$ and $R_{\tilde Q}(e_t)=\tilde Q$, so both maps are injective and each family is a copy of the algebra, not a quotient.</p>
+<p><strong>Kernel, image, rank, inverse.</strong></p>
+<p>$$
+\ker L_{\tilde Q}=\operatorname{Ann}_r(\tilde Q),\quad \operatorname{im}L_{\tilde Q}=\tilde Q\mathbb{B},\qquad
+\operatorname{rank}L_{\tilde Q}\in\{4,2,0\},\qquad \det L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The rank takes <em>three</em> values and no others: four for an invertible element, two for a nonzero zero divisor, zero for zero. There is no intermediate case, because finite dimension makes injective equivalent to invertible, so the operator picture and the algebraic picture agree exactly and "$L_{\tilde Q}$ almost invertible" is empty. The kernel is nonzero exactly on the zero-divisor cone.</p>
+<p><strong>The two families together.</strong></p>
+<p>$$
+L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q},\qquad L(\mathbb{B})'=R(\mathbb{B}),\qquad R(\mathbb{B})'=L(\mathbb{B}),\qquad L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm{I}_4 .
+$$</p>
+<p><strong>The exchange $S$, in the two frames.</strong></p>
+<p>$$
+S_{\mathrm{pau}}=\mathsf{P},\qquad S_{\mathrm{axf}}=\operatorname{diag}(1,1,-1,1),\qquad
+R_{\mathrm{pau}}(\tilde Q)=\mathsf{P}\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf{T}}\mathsf{P}^{-1},\qquad R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf{T}}D .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The exchange itself and the matrix that conjugates the transpose are <strong>two different matrices</strong>: $S_{\mathrm{axf}}=\operatorname{diag}(1,1,-1,1)$ is the exchange, $D=\operatorname{diag}(1,-1,-1,-1)$ is the quaternion conjugation. In the Peirce frame the exchange is a permutation and the right matrix is the transpose of the left one; in the coefficient frame the exchange is a reflection and the <em>transpose implements the quaternion conjugation instead</em>. Reading $D$ as the exchange is the trap. The two frames disagree about which involution the transpose carries: that is the trap, and it is why the exchange is defined abstractly in §3 and only displayed here.</p>
+<p><strong>Source.</strong> <code>articles_maths/operators-acting-on-one-side.md</code></p>
+<h2 id="5-the-transposition-of-the-two-sides">5. The Transposition of the Two Sides</h2>
+<p>$$
+L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural,\qquad\qquad R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Every right multiplication is a conjugated left multiplication, and the parameter is <strong>carried</strong>: it is $\natural(\tilde Q)$ and not $\tilde Q$. The mechanism is the reversal: the outer conjugation meets the product $\tilde Q\natural(X)$, reverses it, moves $\tilde Q$ across the other factor and puts it through $\natural$. Only an antimultiplicative map transposes the families, and no such map can keep the parameter. That is the single sentence that stops a wrong conversion.</p>
+<p><strong>The single involution.</strong></p>
+<p>$$
+\mathsf{K}(F)=\natural F\natural,\qquad \mathsf{K}^2=\mathrm{id},\qquad \mathsf{K}(FG)=\mathsf{K}(F)\mathsf{K}(G).
+$$</p>
+<p><strong>The non-trivial claim.</strong> Because $\mathsf{K}$ preserves products and is involutive, an equation may be converted factor by factor, transformed on both sides, and remain equivalent. The orbit collapses to one operator exactly at the centre; off the centre the exchange is genuine.</p>
+<p><strong>The error, measured.</strong></p>
+<p>$$
+R_{\tilde Q}-\natural L_{\tilde Q}\natural=R_{2\vec Q}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The natural wrong identity is not merely false: its failure is a right multiplication by twice the vector part, so it vanishes exactly on the centre. The parameter of a conversion is unique — the left parameter is forced to be the image of the right one.</p>
+<p><strong>The name.</strong> The exchange is exactly the reversal of the two factors inside the conjugation; the genuine transpose of the plain form exchanges the sides as well and <em>keeps</em> the parameter; the conjugation exchanges them and <em>carries</em> it. The two agree on the operator and differ on the price, and the pair of identities is that agreement.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-transposition-of-the-two-sides.md</code></p>
+<h2 id="6-the-two-sided-operators-and-the-cone">6. The Two-Sided Operators and the Cone</h2>
+<p><strong>The object and its law.</strong></p>
+<p>$$
+L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde QX\tilde Q_2,\qquad
+L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_3}R_{\tilde Q_4}=L_{\tilde Q\tilde Q_3}R_{\tilde Q_4\tilde Q_2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The <em>second</em> slot is reversed. That one reversal, and not the first, is why $\mathbb{B}_{\mathrm{opp}}$ and not $\mathbb{B}$ appears in the enveloping algebra. The family contains the one-sided operators at the boundary cases $\tilde Q_2=e_t$ and $\tilde Q=e_t$.</p>
+<p><strong>The cone.</strong></p>
+<p>$$
+8\ \text{parameters}-1\ \text{scaling}=7=\dim_{\mathbb{C}}\text{cone},\qquad \mathrm{id}+L_{\vec e_x}R_{\vec e_x}\ \text{is not a product}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The family is closed under composition and <strong>not under addition</strong>. It is therefore a cone with the zero operator as vertex, not a subspace; its <em>span</em> is the whole sixteen, which the generation theorem proves on sixteen basis operators $e_{\imath}[\,]e_{\jmath}$.</p>
+<p><strong>The plain adjoint on the cone.</strong></p>
+<p>$$
+(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q},\qquad
+\text{self-adjoint}\iff \tilde Q_2=\lambda\tilde Q .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The self-adjoint members are the scalar multiples of the diagonal operators, and <strong>no nonzero two-sided operator is anti-self-adjoint</strong>: the antisymmetric part of the family is empty, so there is no anti-Hermitian sector here. The isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q}$ with $\tilde Q_2\tilde Q=\pm e_t$, of complex dimension three; the multiplicative members are the inner automorphisms. Since the quadratic form is not multiplicative, the family contains <strong>no pin group</strong>, and the reflections lie outside it.</p>
+<p><strong>Source.</strong> <code>articles_maths/operators-acting-on-two-sides.md</code></p>
+<h2 id="7-the-enveloping-algebra-and-the-bi-module">7. The Enveloping Algebra and the Bi-module</h2>
+<p>$$
+\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}},\qquad
+(\tilde Q_1\otimes\tilde Q_{\mathrm{opp},2})\cdot\tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2,\qquad
+\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The action is faithful and <em>exhausts</em> the $\mathbb{C}$-linear operators: the two-sided operators of the corpus are exactly the elementary tensors, and the abstract question "which action is the matter representation" becomes "which tensor factor a degree of freedom uses". Both factors are present, of the same algebraic type, and commuting.</p>
+<p><strong>The Conway basis and its composition.</strong></p>
+<p>$$
+(a[\,]b)(\tilde Q_3)=a\tilde Q_3b,\qquad (a[\,]b)\circ(c[\,]d)=(ac)[\,](db).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The composition rule contracts the inner indices, the reverse of matrix multiplication in the second factor; that is the same reversal as §6, written in the enveloping algebra. The sixteen $e_n[\,]e_m$ are an orthogonal basis of the ambient space, and the three classical functions $A\{a\}$, $D\{d\}$, $S\{s\}$ are its antisymmetric, diagonal and symmetric parts.</p>
+<p><strong>The Peirce corners of the envelope.</strong></p>
+<p>$$
+E_{ik}\mathbb{B}^{\mathrm e}E_{jl}=(\tilde\Pi_{\mathrm{id},i}\mathbb{B}\tilde\Pi_{\mathrm{id},j})\otimes(\tilde\Pi_{\mathrm{id},l}\mathbb{B}\tilde\Pi_{\mathrm{id},k})_{\mathrm{opp}}=\mathbb{C}\,(\Lambda_{ij}\otimes\Lambda_{\mathrm{opp},lk}),
+$$</p>
+<p>sixteen one-dimensional corners. The reversal of the second index pair in that display is again the composition reversal.</p>
+<p><strong>The double centraliser.</strong></p>
+<p>$$
+\{T:T L_a=L_aT\ \forall a\}=\{R_b\},\qquad \{T:T R_b=R_bT\ \forall b\}=\{L_a\},\qquad \{T:\text{commutes with all}\}=\mathbb{C}\cdot\mathrm{I}_4 .
+$$</p>
+<p><strong>The three objects called matrix.</strong> $\mathsf{M}_2(\tilde Q)$ (the $2\times2$ element matrix), $[T]_{\mathcal{B}}$ (the $4\times4$ operator matrix) and $c(T)$ (the $4\times4$ coefficient matrix) are distinct, and conflating them is the defect of the older literature. Over $\mathbb{R}$ the two-sided map has a <strong>32-dimensional kernel</strong>, exactly the redundancy of the central $i$, which is why the result is stated over $\mathbb{C}$.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md</code></p>
+<h2 id="8-the-four-adjoints-and-the-five-families">8. The Four Adjoints and the Five Families</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>adjoint</th>
+<th>mark</th>
+<th>form</th>
+<th>Gram</th>
+<th>$(L_{\tilde Q})^{\bullet}$</th>
+<th>$(R_{\tilde Q})^{\bullet}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain bilinear</td>
+<td>$\approx$</td>
+<td>$\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>$\mathrm{E}$</td>
+<td>$R_{\tilde Q}$</td>
+<td>$L_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>quaternionic</td>
+<td>$\natural$</td>
+<td>$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$L_{\tilde Q^{\natural}}$</td>
+<td>$R_{\tilde Q^{\natural}}$</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$*$</td>
+<td>$\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$L_{\tilde Q^{*}}$</td>
+<td>$R_{\tilde Q^{*}}$</td>
+</tr>
+<tr>
+<td>Krein</td>
+<td>$\natural*$</td>
+<td>$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$</td>
+<td>$\mathrm{E}$</td>
+<td>$R_{\bar{\tilde Q}}$</td>
+<td>$L_{\bar{\tilde Q}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The non-trivial claim.</strong> Two columns decide the whole subject. The plain bilinear and the Krein adjoints <strong>exchange the side</strong>; the quaternionic and Hermitian adjoints <strong>keep it</strong>. The plain bilinear and quaternionic adjoints carry <strong>no bar</strong>; the Hermitian and Krein adjoints carry one. Every "Hermitian pair" article of §9 is one row of this table.</p>
+<p><strong>The calculus of the plain adjoint.</strong></p>
+<p>$$
+(F^{\approx})^{\approx}=F,\qquad (F\circ G)^{\approx}=G^{\approx}\circ F^{\approx},\qquad
+\overline{F}^{\approx}=\mathrm{E}F^{*}\mathrm{E},\qquad F^{*}=F^{-1}\ \text{on the unitaries}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The last identity is the collapse that makes the indefinite and the definite adjoint agree on the norm-one slice, and it is the reason a Lorentzian statement and a unitary statement can be written with the same symbol without error.</p>
+<p><strong>The five named families.</strong> <em>Plain Bilinear Pair</em>, <em>Quaternionic Pair</em>, <em>Hermitian Pair</em>, <em>Signed Hermitian Pair</em>, <em>Krein Pair</em> — the word <em>signed</em> names one operation in all of them, the insertion of $\natural$.</p>
+<p><strong>The sector criterion, and it is the sharp line of the block.</strong> Of the five families only the <strong>Hermitian pair</strong> preserves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ for every parameter. The criterion is $\tilde Q_3=\lambda\tilde Q_6^{*}$ with $\lambda$ <strong>real</strong>; the other four meet it only on proper subvarieties. A one-sided operator preserves a sector only for a real scalar, which is exactly why the sectors belong to the two-sided action.</p>
+<p><strong>Source.</strong> <code>articles_maths/adjoint-pair-of-l-and-r-operators.md</code></p>
+<h2 id="9-the-hermitian-pairs-on-one-side-and-on-two">9. The Hermitian Pairs, on One Side and on Two</h2>
+<p><strong>The one-side pair, and the mass.</strong></p>
+<p>$$
+(L_{\tilde Q})^{\natural}=L_{\tilde Q^{\natural}},\qquad L_{\tilde Q}L_{\tilde Q^{\natural}}=\langle\tilde Q\rangle_{\natural}\,\mathrm{id}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Staying on one side composes to a <strong>central scalar</strong>, and that scalar is the passage from two first-order conditions to one second-order operator: the mass. Read on two components, the off-diagonal array with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$ squares to $\langle\tilde Q\rangle_{\natural}\mathrm{id}$; with $\tilde Q$ the gradient the display is the chiral pair and the square is Klein–Gordon. The same construction with $*$ instead of $\natural$ composes to the Hermitian <em>element</em> $\tilde Q\tilde Q^{*}$ and not to a scalar, which is why the corpus keeps the two pairs apart.</p>
+<p><strong>The moving pair, and the transposition that rewrites it.</strong></p>
+<p>$$
+R_{\tilde Q^{*}}=*^{-1}L_{\tilde Q}*,\qquad L_{\tilde Q}*^{-1}L_{\tilde Q}*=\mathrm{Sd}_{\tilde Q},\qquad
+\tilde Q\tilde X=\tilde Y,\quad \tilde Q\tilde X^{*}=\tilde Z^{*}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Replacing the right actor by its transpose turns the two-side pair into two <em>left</em> multiplications by the same element, at the price of one anti-automorphism on the unknown and one on the data. The product is the two-sided operator again: the two placements differ in the reading, not in the composite.</p>
+<p><strong>The two-side pair.</strong></p>
+<p>$$
+\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad
+\mathrm{Hp}_{\tilde Q}\mathrm{Hp}_{\tilde Q_2}=\mathrm{Hp}_{\tilde Q\tilde Q_2},\qquad
+\text{defect}=e_t-\tilde Q^{*}\tilde Q .
+$$</p>
+<p><strong>The non-trivial claim.</strong> It is a <strong>real</strong> cone of real dimension <strong>seven</strong>, the graph of the involution inside the complex seven-dimensional cone: the phase of the parameter cancels, and a complex rescaling acts by the square of the modulus. The defect vanishes exactly on the central multiples of real unit quaternions, so the Hermitian pair is an automorphism only there.</p>
+<p><strong>The rigidity.</strong></p>
+<p>$$
+T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}\iff T(\mathbb{B}_{\Psi})\subseteq\mathbb{B}_{\Psi}\iff TJ=JT,\qquad J(\tilde X)=\tilde X^{*};
+\qquad
+L_{\tilde A}R_{\tilde B}\ \text{preserves}\ \mathbb{B}_{\Phi}\iff \tilde B=\lambda\tilde A^{*},\ \lambda\in\mathbb{R},
+$$</p>
+<p>with the <em>same</em> $\lambda$ preserving $\mathbb{B}_{\Psi}$. The argument of $\lambda$ decides the fate: real keeps both halves, purely imaginary swaps them, mixed destroys both. The Hermitian pair is the case $\lambda=1$, which is why it needs no hypothesis.</p>
+<p><strong>The span.</strong> Writing $\mathrm{Hp}_{\tilde Q}=\sum_{{\imath}{\jmath}}a_{\imath}\bar a_{\jmath} M_{{\imath}{\jmath}}$ with $M_{{\imath}{\jmath}}=L_{e_{\imath}}R_{e_{\jmath}^{*}}$, the coefficient matrix $aa^{\dagger}$ is Hermitian of rank one, and the sixteen $\mathrm{Hp}_{e_{\imath}}$, $\mathrm{Hp}_{e_{\imath}+e_{\jmath}}$, $\mathrm{Hp}_{e_{\imath}+ie_{\jmath}}$ are a real basis of $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$, of real dimension <strong>sixteen</strong> (forty-eight without $\mathbb{C}$-linearity). Every sector-preserving map is a real combination of sixteen Hermitian pairs.</p>
+<p><strong>The spectrum and the image.</strong></p>
+<p>$$
+\operatorname{spec}\mathrm{Hp}_{\tilde Q}=\{\lambda_i\bar\lambda_j\},\qquad
+\ker=\mathrm{U}(1),\qquad \operatorname{im}|_{\text{invertibles}}=CO^{+}(1,3),\qquad \text{slice } \varrho=1:\ SO^{+}(1,3).
+$$</p>
+<p><strong>Source.</strong> <code>articles_maths/the-hermitian-pair-of-operators-acting-on-one-side.md</code>, <code>articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.md</code></p>
+<h2 id="10-the-svd-and-the-weights">10. The SVD and the Weights</h2>
+<p>$$
+F=\sum_{k=1}^{4}\rho_k\,\mathcal P_{\tilde U_k,\tilde V_k},\qquad \rho_1\ge\rho_2\ge\rho_3\ge\rho_4\ge0,\qquad F(\tilde V_k)=\rho_k\tilde U_k,\qquad
+\mathcal P_{\tilde U_1,\tilde U_2}(\tilde X)=\tilde U_1\langle\tilde X,\tilde U_2\rangle_{*} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Four terms is the <em>complex dimension of the algebra</em>, so the bound is not a property of the map; the content is that four always suffice and that the weights and the two orthonormal families can be chosen at once. The decomposition is proved here, not quoted.</p>
+<p><strong>The operator form, and the algebra form.</strong></p>
+<p>$$
+F=\mathcal U\Sigma\mathcal V^{*},\quad W\Sigma=\Sigma Z;\qquad
+F=\Bigl(\sum_{k\le4}\mathcal P_{\tilde U_k,e_k}\Bigr)\Bigl(\sum_{k\le4}\rho_k\mathcal P_{e_k,e_k}\Bigr)\Bigl(\sum_{k\le4}\mathcal P_{e_k,\tilde V_k}\Bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The middle factor is the scale <em>in the basis of the units</em>, and $\sum_k\mathcal P_{e_k,e_k}=\mathrm{I}_4$. So the three factors are sums of four atoms with no array anywhere, and the freedom of the pair is a phase per term plus a unitary mixing inside each group of equal weights.</p>
+<p><strong>The identities.</strong></p>
+<p>$$
+\rho_1\rho_2\rho_3\rho_4=\lvert\det F\rvert,\qquad \rho_1^{2}+\rho_2^{2}+\rho_3^{2}+\rho_4^{2}=\lVert F\rVert^{2},\qquad \rho_1=\lVert F\rVert_{\mathrm{op}},
+$$</p>
+<p>and for a one-sided operator, with the pair repeated twice,</p>
+<p>$$
+\rho_1^{2}+\rho_2^{2}=2\langle\tilde Q,\tilde Q\rangle_{*},\qquad \rho_1\rho_2=\lvert N(\tilde Q)\rvert .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The weights of a left multiplier are the two algebraic norms of the element <em>read backwards</em>: the Hermitian norm gives the sum of squares, the quaternionic norm gives the product. So the two norms of the algebra are the two symmetric functions of one pair, and no third invariant exists. Both identities were checked numerically on random elements, with the singular-value pattern $(\rho_1,\rho_1,\rho_2,\rho_2)$.</p>
+<p><strong>The two-sided operator.</strong></p>
+<p>$$
+L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde U_1}R_{\tilde U_2}\,L_{\tilde H_1}R_{\tilde H_2},\qquad \bigl\lvert L_{\tilde Q_1}R_{\tilde Q_2}\bigr\rvert=L_{\tilde H_1}R_{\tilde H_2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Each multiplier is decomposed with its unitary <em>away</em> from the middle, so the two unitaries form a unitary operator and the two Hermitian factors a positive one. The weights are the four products of the two pairs, so the rank is $0,1,2$ or $4$ and <strong>never 3</strong>, and the two middle weights are equal. The value set $\{0,1,2,4\}$ was checked numerically, including on zero-divisor parameters.</p>
+<p><strong>The product against the atom.</strong> A two-sided operator with two zero-divisor multipliers has rank one; conversely, an elementary endomorphism $\mathcal P_{\tilde U,\tilde V}$ is a product only when <strong>both</strong> its vectors are zero divisors. Hence the generic atom is not a product, and a product atom carries two normalisations at once, orthonormal for the form and degenerate for the algebra. The source records the product family as four-dimensional inside the six of all rank-one endomorphisms; that count was not rechecked here and is recorded, not established.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.md</code></p>
+<h2 id="11-the-three-matrix-models">11. The Three Matrix Models</h2>
+<p><strong>The axis-free model.</strong> Every one of the sixteen $L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}}$ is a <strong>real signed permutation matrix</strong> — four nonzero entries, one per row and column, each $0,\pm1$ — and the sixteen are orthogonal of Hilbert–Schmidt norm two. Their real span is $M_4(\mathbb{R})$: the axis-free frame is the one in which the real structure of the operator algebra is visible.</p>
+<p><strong>The stitch and the copies.</strong></p>
+<p>$$
+R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf{T}}D,\quad D=\operatorname{diag}(1,-1,-1,-1);\qquad
+\mathbb{B}_L=\{L_{\mathrm{axf}}(\tilde Q)\},\quad \mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde Q_2)\},\quad \mathbb{B}_L\cap\mathbb{B}_R=\text{scalars}.
+$$</p>
+<p><strong>The Pauli model, and the Kronecker trap.</strong></p>
+<p>$$
+\mathbb{B}_L=\{\mathrm{I}_2\otimes A\},\qquad \mathbb{B}_R=\{B^{\mathsf{T}}\otimes\mathrm{I}_2\},\qquad
+L_{\tilde Q}R_{\tilde Q_2}=\mathsf{M}_2(\tilde Q_2)^{\mathsf{T}}\otimes\mathsf{M}_2(\tilde Q).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The $4\times4$ operator is a Kronecker product of two $2\times2$ matrices, and the Kronecker product of two $4\times4$ matrices is $16\times16$ and is <em>not</em> the operator. This is the second most frequent false identity of the block.</p>
+<p><strong>The compressed model.</strong></p>
+<p>$$
+\operatorname{vec}(AYB)=(B^{\mathsf{T}}\otimes A)\operatorname{vec}(Y);\qquad
+(A,B)(C,D)=(AC,DB),\qquad (A,B)^{-1}=(A^{-1},B^{-1}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> On $M_2(\mathbb{C})$ a one-sided operator is one matrix, a two-sided operator is a <strong>pair</strong> unique up to $(\lambda A,\lambda^{-1}B)$, and a general endomorphism is a sum of at most four pairs — the transpose is a sum of four pairs and no fewer. An invertible pair is an automorphism exactly when $B=A^{-1}$, the inner automorphisms $PGL_2(\mathbb{C})$.</p>
+<p><strong>The coefficient matrix and the length.</strong></p>
+<p>$$
+c_{{\imath}{\jmath}}=\tfrac14\operatorname{Tr}\bigl((L_{\mathrm{axf},e_{\imath}}R_{\mathrm{axf},e_{\jmath}})^{\mathsf{T}}M\bigr),\qquad
+\ell(M)=\operatorname{rank}c(M)\in\{0,1,2,3,4\},\qquad \text{a product}\iff \operatorname{rank}c(M)\le1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $c(M)$ is the coordinate matrix of $M$ in the sixteen operators and is <strong>not</strong> the matrix $M$; it is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It turns "is a product" into a rank condition and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The length is the coefficient rank; every matrix is a sum of at most four products and a generic matrix needs four.</p>
+<p><strong>The independence, and the frame.</strong></p>
+<p>$$
+\text{matrix rank } E_{11}=1,\qquad \ell(E_{11})=4 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Matrix rank and length are independent; and a change of the element basis sends $c$ to a <strong>congruence</strong>, so the length survives every basis. In the Peirce frame the sixteen matrix units are monomial matrices, each a single product: the shortest matrices of their size.</p>
+<p><strong>The legacy frame.</strong></p>
+<p>$$
+P_\pm=L_{\mathrm{pau},e_t/2}R_{\mathrm{pau},e_t\pm i\beta\delta},\qquad iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta},
+$$</p>
+<p>with the five frame operators generated by a pair $(\beta,\delta)$ of orthogonal spatial directions. Nothing selects the pair: the normal form is a slice through the set of frames, not a conjugacy class. The left regular model <strong>cannot hold the Dirac algebra</strong>.</p>
+<p><strong>Source.</strong> <code>articles_maths/m4c-axis-free-representation-operators.md</code>, <code>articles_maths/m4c-pauli-representation-operators.md</code>, <code>articles_maths/m2c-pauli-representation-operators.md</code></p>
+<h2 id="12-the-two-operator-algebras-and-the-real-forms">12. The Two Operator Algebras and the Real Forms</h2>
+<p>$$
+\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C}),\quad \dim_{\mathbb{C}}=16;\qquad
+\mathcal{E}_{\mathbb{R}}=\operatorname{End}_{\mathbb{R}}(\mathbb{B})\cong M_8(\mathbb{R}),\quad \dim_{\mathbb{R}}=64 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $\mathcal{E}_{\mathbb{C}}$ is the complex-linear <em>part</em> of $\mathcal{E}_{\mathbb{R}}$, of real dimension thirty-two, not a summand. Everything in §12 to §14 is a statement about which of the two algebras carries a given notion of "real structure".</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>real form</th>
+<th>realisation</th>
+<th>trace-form inertia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4(\mathbb{R})$ split</td>
+<td>fixed set of the entrywise conjugation</td>
+<td>$(10,6)$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{H})$ quaternionic</td>
+<td>fixed set of the quaternionic conjugation</td>
+<td>$(6,10)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The non-trivial claim.</strong> There are exactly <strong>two</strong>, by Wedderburn and Frobenius at dimension sixteen, and the separation is the trace form: the inertias $(10,6)$ and $(6,10)$ are exchanged and not equal, so the two forms are non-isomorphic over $\mathbb{R}$ but isomorphic over $\mathbb{C}$. The word "compact" is a <strong>misnomer</strong> at the operator level; the pair of words used is <em>split</em> and <em>quaternionic</em>.</p>
+<p><strong>No complex structure on $\mathcal{E}_{\mathbb{R}}$.</strong></p>
+<p>$$
+Z(\mathcal{E}_{\mathbb{R}})=\mathbb{R},\qquad \text{no unital map }\mathbb{C}\to\mathbb{R};\qquad
+\mathcal{E}_{\mathbb{R},\mathbb{C}}=\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> A non-central copy of $\mathbb{C}$ inside $M_8(\mathbb{R})$ does <strong>not</strong> count as a complex structure: a complex structure on an algebra must be central, because it must commute with the algebra and be unital. This is the correction the source paper needs, and it is why the complexification is taken instead of a complex form.</p>
+<p><strong>The Lie layer, and the count that matters.</strong></p>
+<p>$$
+\mathfrak{gl}(4,\mathbb{C})\ \text{has six real forms}:\ \mathfrak{gl}(4,\mathbb{R}),\ \mathfrak{u}(4),\ \mathfrak{u}(3,1),\ \mathfrak{u}(2,2),\ \mathfrak{gl}(2,\mathbb{H}),\ \mathfrak{gl}(4,\mathbb{C})_{\mathbb{R}},
+$$</p>
+<p>of which <strong>only two</strong> are the Lie algebras of real forms of the <em>associative</em> algebra: the split and the quaternionic. $\mathfrak{u}(4)$ is excluded because a product of skew-Hermitian matrices is skew-Hermitian only when they commute. A model that guesses the compact form at the operator level has guessed an object with no associative model.</p>
+<p><strong>The distinguished subspaces.</strong></p>
+<p>$$
+L(\mathbb{B})'=R(\mathbb{B}),\quad R(\mathbb{B})'=L(\mathbb{B}),\quad (L\cup R)'=\mathbb{C}\mathrm{I}_4,\qquad
+(L+R)\oplus\mathfrak{m},\quad \dim_{\mathbb{C}}(L+R)=7,\quad \mathfrak{m}=\mathfrak{sl}_2\otimes\mathfrak{sl}_2,\ \dim=9 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $\mathfrak{m}$ is a module over $L(\mathfrak{sl}_2)\oplus R(\mathfrak{sl}_2)$ and is <strong>neither an associative nor a Lie subalgebra</strong>: the missing nine dimensions are the two-sided operators with both parameters scalar-free, and they close under nothing. The images of the six remarkable subspaces under $L$ keep the same dimensions <em>and the same statuses</em>: two subalgebras, two Lie subalgebras, two neither.</p>
+<p><strong>The Jordan layer.</strong> A third lattice, with real forms $M_4(\mathbb{R})^{+}$, $M_2(\mathbb{H})^{+}$ and the Hermitian $H_4(\mathbb{C})$, the last with <strong>no associative real form above it</strong>, and $L(\mathbb{B}_{\Psi})\subset H_4(\mathbb{C})$ as a subspace and not a subalgebra — the operator-level shadow of the observables.</p>
+<p><strong>The pass from the element level is not injective.</strong></p>
+<p>$$
+\mathcal{E}(\mathbb{H})\cong\mathcal{E}(M_2(\mathbb{R}))\cong M_4(\mathbb{R}) .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Both element-level real forms generate the <em>same</em> split operator form, so the passage loses information; what remembers the element form is the pair of images $(\iota_L,\iota_R)$, not the span. The witness is $R_{\vec e_x}$, fixed by the induced compact structure and carried to $-R_{\vec e_x}$ by the split one. And the quaternionic operator form is <strong>not</strong> a two-sided span at all: it is the endomorphism ring of $\mathbb{B}$ as a right $\mathbb{H}$-module, $\mathcal{E}^{\mathbb{H}}=\operatorname{End}_{\mathbb{H}}(\mathbb{B})\cong M_2(\mathbb{H})$, with $\mathcal{E}^{\mathbb{H}}\cap\mathcal{E}_{\mathbb{C}}=L(\mathbb{B})$.</p>
+<p><strong>Source.</strong> <code>articles_maths/classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.md</code></p>
+<h2 id="13-the-three-lattices-of-each-real-form">13. The Three Lattices of Each Real Form</h2>
+<p><strong>The associative lattice, and the two dictionaries.</strong></p>
+<p>$$
+\text{embeds in }M_4(\mathbb{R})\iff \sum_i m_in_id_i=4\ \Rightarrow\ 17\ \text{semisimple types};\qquad
+\text{embeds in }M_2(\mathbb{H})\iff \sum_i n_i\le2\ \Rightarrow\ 12\ \text{types}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two criteria differ because the division algebras differ: $M_4(\mathbb{R})$ needs a faithful module of real dimension four, $M_2(\mathbb{H})$ needs one of quaternionic dimension two, equivalently real dimension eight. Consequences: $M_4(\mathbb{R})\subset M_2(\mathbb{H})$ fails, $M_3(\mathbb{R})\subset M_2(\mathbb{H})$ fails, but the chain $M_2(\mathbb{R})\subset M_2(\mathbb{C})\subset M_2(\mathbb{H})$ holds. The unital subalgebras are <strong>not</strong> classified exhaustively; the article says so.</p>
+<p><strong>The Lie lattice, separated by the Killing form.</strong></p>
+<p>$$
+K_{\mathfrak{sl}(4,\mathbb{R})}\sim(9,6),\qquad K_{\mathfrak{sl}(2,\mathbb{H})}\sim(5,10),\qquad
+\mathfrak{sl}(2,\mathbb{H})=\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1).
+$$</p>
+<p><strong>The non-trivial claim.</strong> $\mathfrak{sl}(4,\mathbb{R})$ is <strong>simple</strong>, of dimension fifteen and intrinsic Killing inertia $(9,6)$; $\mathfrak{sp}(2,\mathbb{R})$ carries $(6,4)$ and the three real forms of $\mathfrak{so}(4,\mathbb{C})$ carry $(0,6)$, $(3,3)$, $(4,2)$. Maximality of $\mathfrak{sl}(4,\mathbb{R})$ in $\mathfrak{gl}(4,\mathbb{R})$ is proved by the unique invariant form, and there is <strong>no copy of $\mathfrak{gl}(2,\mathbb{H})$ inside $\mathfrak{sl}(4,\mathbb{R})$</strong>. In the quaternionic form the two $C_2$'s are $\mathfrak{sp}(2)$ and $\mathfrak{sp}(1,1)$, of dimension ten, with a parabolic of dimension eleven; the restricted roots are $A_3$ against $BC_1$.</p>
+<p><strong>The base inside a real form.</strong></p>
+<p>$$
+L(\mathbb{B}),\ R(\mathbb{B})\ \text{are commuting copies of }M_2(\mathbb{C});\qquad
+\text{what lives in a real form is the space of real points }L(B_j\cap A_0),
+$$</p>
+<p>with intersection tables $1,3,2,2,3,1$ and $1,3,4,0,1,3$. <strong>The non-trivial claim.</strong> The base is a <em>complex</em> object, so a real form does not contain it: it contains the real points of it. A section that writes $L(\mathbb{B})\subset M_4(\mathbb{R})$ has written a false inclusion.</p>
+<p><strong>The Jordan lattice.</strong> Three real forms per layer, and the associative lattice is a <strong>sublattice</strong> of the Jordan one: every associative subalgebra is a Jordan subalgebra, never conversely. $H_4(\mathbb{R})$ and $H_2(\mathbb{H})$ are maximal by the generation test, and every subspace stabiliser is a Jordan subalgebra.</p>
+<p><strong>The groups.</strong></p>
+<p>$$
+\mathfrak{sl}(4,\mathbb{R}):\ 5\ \text{connected groups};\qquad \mathfrak{sl}(2,\mathbb{H}):\ 2;\qquad
+SL(2,\mathbb{H})\cong Spin(5,1)\ \text{simply connected};\qquad SL(4,\mathbb{R})\ \text{not}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The discrete central subgroup of a cover is <strong>extra data invisible to the algebra</strong>: the algebra gives the Lie algebra and the lattice, and the fundamental group of the quotient is not readable from it. The covers $SL(2,\mathbb{C})\to SO^{+}(3,1)$, $Spin(4)\to SO(4)$, $SL(2,\mathbb{H})\to SO^{+}(5,1)$ are the three the block uses.</p>
+<p><strong>The comparison.</strong> Neither the Lie, nor the associative, nor the Jordan lattice of one real form is isomorphic to that of the other. What a real structure determines: the form, the Lie and Jordan types, the stable subalgebras. What it does not: the element form, the frame of the six subspaces, the non-semisimple part, the group, the analysis.</p>
+<p><strong>Source.</strong> <code>articles_maths/classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra.md</code></p>
+<h2 id="14-the-two-complexifications">14. The Two Complexifications</h2>
+<p>$$
+\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C}),\quad \dim_{\mathbb{C}}=32;\qquad
+\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C}),\quad \dim_{\mathbb{C}}=64 .
+$$</p>
+<p><strong>The non-trivial claim, and it is the finding of the article.</strong> The two are <strong>different algebras</strong>: the first repeats the element-level pattern exactly (two central idempotents, trivial Peirce decomposition, five real structures, four real algebras), the second is a new simple object with a new classification (two real forms). Writing "the complexification" in the singular is the error the article corrects.</p>
+<p><strong>The isomorphism that produces the first.</strong></p>
+<p>$$
+\Phi(A\otimes z)=(zA,\bar zA),\qquad \Phi(A\otimes1)=(A,A),\qquad \Phi(A\otimes i)=(iA,-iA),\qquad z*(U,V)=(zU,\bar zV).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The transported complex structure makes the second summand the <strong>conjugate copy</strong>; it is absorbed by the transpose of the first summand, and it is why the two real algebras $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ and $M_2(\mathbb{H})\oplus M_4(\mathbb{R})$ are exchanged by the swap and are not two new structures.</p>
+<p><strong>The four real algebras of the sum.</strong></p>
+<p>$$
+M_4(\mathbb{R})^{\oplus2},\quad M_2(\mathbb{H})^{\oplus2},\quad M_4(\mathbb{R})\oplus M_2(\mathbb{H}),\quad M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}},
+$$</p>
+<p>with trace-form inertias $(20,12)$, $(12,20)$, $(16,16)$, $(16,16)$. <strong>The non-trivial claim.</strong> The trace column gives $(16,16)$ <strong>twice</strong>, so it does not separate the last two; the <strong>Killing</strong> column does, and that is why both forms are computed. The diagonal correspondence $A_0\mapsto A_0\oplus A_0$ is injective from two real forms into four real algebras and is <strong>not</strong> a classification.</p>
+<p><strong>The Killing inertias of the four.</strong></p>
+<p>$$
+(18,12),\qquad(10,20),\qquad(14,16),\qquad(15,15),
+$$</p>
+<p>each summing to thirty on the traceless part of the thirty-two-dimensional algebra, with a two-dimensional radical: $\operatorname{ad}_{\mathrm{I}}=0$ makes the centre null and orthogonal to everything. The slanted form has Killing inertia $(15,15)$ because realification obeys $K_{\mathbb{R}}(X,Y)=2\operatorname{Re}K_{\mathbb{C}}(X,Y)$ and <strong>not</strong> a doubling of the split inertia — the trap of this article.</p>
+<p><strong>The two real forms of the simple algebra.</strong></p>
+<p>$$
+M_8(\mathbb{R})\ (36,28),\qquad M_4(\mathbb{H})\ (28,36),\qquad k^{2}\dim D=64 .
+$$</p>
+<p><strong>The Peirce contrast.</strong></p>
+<p>$$
+A_{12}=A_{21}=0\ \text{(trivial, from the central idempotents)},\qquad
+\text{the non-central cut of the ambient algebra has blocks } 1,3,3,9 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two Peirce decompositions are not the same decomposition: the central idempotents of the sum cut nothing, while the non-central idempotents of $\mathbb{B}$ cut $9+3+3+1=16$. Confusing them is the fourth trap of the classification group.</p>
+<p><strong>The three structural theorems.</strong> Goursat's for the sums (products, graphs, fibre products), the module dictionary for the simple algebras, and the product and exchange constructions for the Jordan forms. The fibre product by the trace is a Lie subalgebra of dimension thirty-one that the associative layer <strong>cannot</strong> form.</p>
+<p><strong>Source.</strong> <code>articles_maths/classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra.md</code></p>
+<h2 id="15-the-four-sectors-and-the-two-predicates">15. The Four Sectors and the Two Predicates</h2>
+<p><strong>The three operators of the polar word.</strong></p>
+<p>$$
+L_{\tilde Q},\qquad R_{\tilde Q},\qquad \mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},\qquad \tilde Q=\tilde Q_H\tilde Q_0 .
+$$</p>
+<p><strong>The non-trivial claim, and the rule that organises everything after it.</strong> The two predicates are independent and they decide different things. $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ decides <strong>everything global</strong>: rank, invertibility, image, kernel, faithfulness. $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ decides <strong>only the eigenvalue count and the Jordan type</strong>. A reader who uses $B^{2}$ to predict a rank has used the wrong predicate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$N$</th>
+<th>$B^{2}$</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\neq0$</td>
+<td>$\neq0$</td>
+<td>invertible, two distinct eigenvalues</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\neq0$</td>
+<td>$=0$</td>
+<td>invertible, one repeated eigenvalue</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$=0$</td>
+<td>$\neq0$</td>
+<td>zero divisor, two eigenvalues</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$=0$</td>
+<td>$=0$</td>
+<td>zero divisor, one eigenvalue, defect</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The doubling rule.</strong></p>
+<p>$$
+\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0},\qquad \lvert\mathrm{Sd}_{\tilde Q}\rvert=\mathrm{Sd}_{\tilde Q_H}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Every quantity of the element is squared by the two-sided operator: the scale by $\varrho^{2}$, the singular value by $4a^{2}$, the norm by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$. The one-sided operator scales by $\varrho$ and not $\varrho^{2}$, and that factor of two is the whole difference between the one-slot and the two-slot reading.</p>
+<p><strong>Source.</strong> <code>articles_maths/introduction-to-the-operators-on-the-four-sectors.md</code></p>
+<h2 id="16-one-sided-and-two-sided-on-the-n-regular-sector">16. One-Sided and Two-Sided on the N-Regular Sector</h2>
+<p><strong>The one-sided operator, in the real splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$.</strong></p>
+<p>$$
+L_{\tilde Q}=\begin{pmatrix}D_{\tilde Q}&O_{\tilde Q}\\O_{\tilde Q}&D_{\tilde Q}\end{pmatrix},\qquad
+D_{\tilde Q}=\tfrac12(\tilde Q\,\cdot+\cdot\,\tilde Q^{*}),\qquad O_{\tilde Q}=\tfrac12(\tilde Q\,\cdot-\cdot\,\tilde Q^{*}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The diagonal block preserves the two sectors and the off-diagonal block exchanges them, so the operator carries its own Cartan decomposition: $D$ is the Hermitian part, $O$ the anti-Hermitian one. A central factor acts by $\operatorname{Re}(c)$ on $D$ and $i\operatorname{Im}(c)$ on $O$.</p>
+<p><strong>The phase of $\pi/2$ is the exchange, and it is a reflection.</strong></p>
+<p>$$
+J(\tilde X)=i\tilde X,\qquad J(\mathbb{B}_{\Phi})=\mathbb{B}_{\Psi},\quad J(\mathbb{B}_{\Psi})=\mathbb{B}_{\Phi},\quad J^{2}=-\mathrm{id},\qquad
+(a,\vec b)\mapsto(-a,\vec b).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The pure central phase of $\pi/2$ is exactly the <strong>time reflection</strong>, an improper isometry of $g=a^{2}-\lvert\vec b\rvert^{2}$, and it is why the complex structure $i$ of the algebra is a geometric operator and not a scalar: it exchanges the material and informational halves. The complex norm changes sign under it, because the two sectors carry opposite signs in $\langle\cdot\rangle_{\natural}$. For a general phase the sectors are reached at $\theta_{\mathrm{pha}}\equiv0$ and $\pi/2$ modulo $\pi$, and nowhere else.</p>
+<p><strong>The wall $B^{2}=0$.</strong></p>
+<p>$$
+\tilde Q=Q_t(e_t+\vec\Pi_{\mathrm{nil}}),\qquad L_{\vec\Pi_{\mathrm{nil}}}^{2}=0,\qquad L_{\tilde Q}=Q_t(\mathrm{I}+L_{\vec\Pi_{\mathrm{nil}}}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the wall the operator is unipotent: one repeated eigenvalue, and on the Jordan part of the wall two blocks of size two. That is the <em>only</em> change the wall makes; the rank stays four and the kernel stays zero.</p>
+<p><strong>The two-sided operator on the sector.</strong></p>
+<p>$$
+\mathrm{Sd}_{\tilde Q}=\varrho^{2}\,\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}},\qquad \mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id},\qquad
+\operatorname{spec}\mathrm{Sd}_{\tilde Q}=\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The <strong>phase does nothing</strong>: the whole $U(1)$-orbit of an element has one two-sided operator. That is why the two-sided operator is a representation of the <em>conformal</em> Lorentz group and not of the full group of invertibles, and why the polar word carries a phase although the vector action cannot see it. The spectrum is the four products and not the two eigenvalues — the operator is the two-slot operator, $\Delta_{\mathrm{rep}}\otimes\bar\Delta_{\mathrm{rep}}$. Verified numerically.</p>
+<p><strong>The image, the kernel, the slice.</strong></p>
+<p>$$
+\operatorname{im}\mathrm{Sd}=CO^{+}(1,3),\qquad \ker\mathrm{Sd}=\mathrm{U}(1),\qquad \varrho=1:\ SO^{+}(1,3),\qquad SL(2,\mathbb{C})\to SO^{+}(1,3)\ \text{double cover}.
+$$</p>
+<p><strong>On the wall, two-sided.</strong></p>
+<p>$$
+\mathsf{N}=\mathrm{Sd}_{e_t+\vec\Pi_{\mathrm{nil}}}-I=A+B+AB,\quad A=L_{\vec\Pi_{\mathrm{nil}}},\ B=R_{\vec\Pi_{\mathrm{nil}}^{*}},\qquad
+\mathsf{N}^{2}=2AB,\quad \mathsf{N}^{3}=0,\quad \operatorname{rank}\mathsf{N}=2,\quad \operatorname{rank}\mathsf{N}^{2}=1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> One Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$; the fixed subspace is two-dimensional, spanned by a spacelike vector and a null vector. The one-sided operator on the same wall has two blocks of size two, so the two-sided operator has the <em>coarser</em> Jordan type: coalescence, not refinement.</p>
+<p><strong>Source.</strong> <code>articles_maths/one-sided-operators-on-the-n-regular-sector.md</code>, <code>articles_maths/two-sided-operators-on-the-n-regular-sector.md</code></p>
+<h2 id="17-the-null-cone">17. The Null Cone</h2>
+<p><strong>The polar pair survives where the word does not.</strong></p>
+<p>$$
+\tilde Q=\tilde Q_H\tilde Q_0,\qquad \tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2},\qquad \tilde Q_0=\tilde Q_H^{+}\tilde Q,
+$$</p>
+<p>with $\tilde Q_H$ Hermitian positive semidefinite of <strong>rank one</strong> and $\tilde Q_0$ a partial isometry. The modulus–unit decomposition and the four-factor word do not exist on the cone.</p>
+<p><strong>The scalar collapse.</strong></p>
+<p>$$
+L_{\tilde Q}=2a\,L_{\tilde Q_0},\qquad R_{\tilde Q}=2a\,R_{\tilde Q_0},\qquad
+\mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0},\qquad (2a)^{2}=4a^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The one-sided singular value $2a$ is repeated twice and its <em>square</em> is the two-sided scale. This is the doubling rule of §15 in its degenerate form, and it is exact: the operator is a scalar times a partial isometry, never zero unless the element is zero.</p>
+<p><strong>The two strata of the cone.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\Sigma_{01}$: $\tilde Q=c\tilde\Pi_{\mathrm{id}}$</th>
+<th>$\Sigma_{00}$: $\tilde\Pi_{\mathrm{nil}}=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert$, $\vec A\cdot\vec B=0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one-sided rank</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>one-sided spectrum</td>
+<td>$\{c,0\}$, multiplicities $2,2$</td>
+<td>$\{0\}$, algebraic $4$, geometric $2$</td>
+</tr>
+<tr>
+<td>one-sided Jordan</td>
+<td>diagonal</td>
+<td>$J_2(0)\oplus J_2(0)$</td>
+</tr>
+<tr>
+<td>two-sided rank</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>two-sided spectrum</td>
+<td>$\{\lvert c\rvert^{2},0\}$, $1,3$</td>
+<td>$\{0\}$, algebraic $4$, geometric $3$</td>
+</tr>
+<tr>
+<td>two-sided Jordan</td>
+<td>diagonal</td>
+<td>$J_2(0)\oplus0\oplus0$</td>
+</tr>
+<tr>
+<td>two-sided kernel</td>
+<td>a hyperplane</td>
+<td>a hyperplane</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The non-trivial claim.</strong> On the whole cone the one-sided operators have rank two and a two-dimensional <strong>totally isotropic</strong> image (a left ideal for $L$, a right ideal for $R$), and the two-sided operator has rank <strong>one</strong>, image a single null line, kernel of dimension three. The strata change the Jordan type and nothing else.</p>
+<p><strong>The two planes, and the mirror.</strong></p>
+<p>$$
+\operatorname{im}L_{\tilde\Pi_{\mathrm{nil}}}=\ker L_{\tilde\Pi_{\mathrm{nil}}}=\mathbb{C}\tilde\Pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},+},\qquad
+\operatorname{im}R_{\tilde\Pi_{\mathrm{nil}}}=\ker R_{\tilde\Pi_{\mathrm{nil}}}=\mathbb{C}\tilde\Pi_{\mathrm{nil}}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-},\qquad
+\text{they meet in }\mathbb{C}\tilde\Pi_{\mathrm{nil}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> For a nilpotent the image <em>equals</em> the kernel — the operator is square-zero — and the only asymmetry left is the idempotent $\tilde\Pi_{\mathrm{id},\pm}$. The intersection of the two planes is the line of the element, so the two operators remember the element and forget the axis.</p>
+<p><strong>The exponentials, and the flow that leaves the cone.</strong></p>
+<p>$$
+\exp(tL_{\tilde Q})=\mathrm{I}+(e^{tc}-1)L_{\tilde\Pi_{\mathrm{id}}},\qquad \exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi_{\mathrm{id}}\ \in\Sigma_{11}\ (t\neq0);
+$$</p>
+<p>$$
+\exp(tL_{\tilde\Pi_{\mathrm{nil}}})=\mathrm{I}+tL_{\tilde\Pi_{\mathrm{nil}}},\qquad \exp(t\tilde\Pi_{\mathrm{nil}})=e_t+t\tilde\Pi_{\mathrm{nil}}\ \in\Sigma_{10}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The operator exponential cannot leave the cone, but the <em>element</em> exponential does: a nilpotent flows to an invertible element with $B^{2}=0$, and an idempotent multiple flows to an invertible element with $B^{2}\neq0$. So "zero divisor" is not preserved by the group flow, while "singular operator" is. That pair is the sharpest statement in the sector group about what the two levels do and do not share.</p>
+<p><strong>The chain on the nilpotent.</strong></p>
+<p>$$
+\tilde\Pi_{\mathrm{id},-}\mapsto 4a^{2}\tilde\Pi_{\mathrm{id},+}\mapsto 0 .
+$$</p>
+<p><strong>Source.</strong> <code>articles_maths/one-sided-operators-on-the-n-degenerate-sector.md</code>, <code>articles_maths/two-sided-operators-on-the-n-degenerate-sector.md</code></p>
+<h2 id="18-the-spin-group-in-real-matrices">18. The Spin Group in Real Matrices</h2>
+<p><strong>The object, and the refusal.</strong></p>
+<p>$$
+\mathrm{Spin}(3)=S^{3}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\},\qquad \dim_{\mathbb{R}}=3;\qquad \text{the spin group is not } SU(2).
+$$</p>
+<p><strong>The non-trivial claim.</strong> $SU(2)$ is one <em>display</em> of $S^{3}$, and mistaking the display for the object produces the belief that the group has a preferred axis. The left regular display is $L:\mathrm{Spin}(3)\to SO_R(4)_{\mathrm{left}}\subset SO(4)$, the $\jmath$-th column being the coordinate column of $\tilde qe_{\jmath}$.</p>
+<p><strong>The theorem that forces the difference.</strong></p>
+<p>$$
+\text{a real diagonal antisymmetric matrix is zero};\qquad
+J_z=\operatorname{diag}(-i,i)\ \text{marks the axis }\vec e_z.
+$$</p>
+<p><strong>The non-trivial claim.</strong> No generator of the real display can be diagonal, while the complex display has exactly one, and that one marks an axis. The mark is a choice of complex structure on $\mathbb{H}$, that is a point of $S^{2}$: different choices give conjugate displays, and the real display makes no choice at all. So the absence of a preferred axis is a <em>theorem about displays</em>, not an aesthetic preference.</p>
+<p><strong>The two isoclinic copies.</strong></p>
+<p>$$
+\mathfrak{so}(4)=\mathfrak{g}_L\oplus\mathfrak{g}_R,\quad 3+3=6,\qquad \mathfrak{g}_L\cap\mathfrak{g}_R=\{\pm\mathrm{I}_4\},\qquad
+\operatorname{spec}L(\tilde q)=\{e^{i\theta},e^{-i\theta}\}\ \text{with multiplicity two}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Each generator is two copies of one $2\times2$ rotation and the two invariant planes turn by the <em>same</em> angle: the left action on $\mathbb{R}^{4}$ is <strong>irreducible</strong>, and the splitting $\mathbf{1}\oplus\mathbf{3}$ belongs to the conjugation action, not to the left one. A reader who decomposes $\mathbb{R}^{4}$ under the left action has decomposed under the wrong action.</p>
+<p><strong>The exponential.</strong></p>
+<p>$$
+\exp:\mathfrak{g}_L\to SO_R(4)_{\mathrm{left}}\ \text{is surjective},\qquad \ker=\{\text{spheres of radius }2\pi k\},\qquad S^{3}_{\pi}\mapsto-\mathrm{I}_4 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The kernel of the exponential and the kernel of the covering are different objects at the same value $-\mathrm{I}_4$: the first is a sphere, the second is $\{\pm1\}$. The block uses both and never conflates them.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-spin-group-via-4x4-real-matrices.md</code></p>
+<h2 id="19-spin-one-half-the-pair-and-the-three-carriers">19. Spin One Half, the Pair, and the Three Carriers</h2>
+<p><strong>The forcing.</strong> A one-sided multiplication is multiplicative only for the unit, since $R(XY)$ carries one factor $R$ and $(RX)(RY)$ carries two. Conjugation $\Theta(X)=RXR^{-1}$ is multiplicative for every invertible $R$; therefore a two-sided product is <strong>forced</strong>, and it is the only inner-type action available.</p>
+<p><strong>The Casimir.</strong></p>
+<p>$$
+L_k^{2}=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z,\qquad \mathbf{J}^{2}=\sum_kJ_k^{2}=-\tfrac34\mathrm{I}_4,\qquad H_k=iJ_k:\ \mathbf{H}^{2}=+\tfrac34\mathrm{I}_4 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $s(s+1)=\tfrac34$ gives $s=\tfrac12$ on the irreducible carrier, and the weights $\pm\tfrac12$ confirm it. The real dimension is $4$ where $2s+1=2$ because the carrier is quaternionic; the factor of two in the dimension is not a second spin.</p>
+<p><strong>The pair.</strong></p>
+<p>$$
+S^{3}_L\times S^{3}_R\ \text{on}\ \mathbb{H},\qquad \tfrac12\otimes\tfrac12=0\oplus1,\qquad
+\mathbf{J}^{2}_{\mathrm{tot}}=2(\mathrm{I}-Q),\qquad \operatorname{spec}_{\mathbb{H}}\{0,2\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The total Casimir is $2(\mathrm{I}-Q)$ with $Q$ the projection onto the singlet: $0$ once and $2$ three times on $\mathbb{H}$, and $0$ four times and $2$ twelve times on $\mathbb{H}\otimes\mathbb{H}$. The projection commutes with the total generators and <strong>not</strong> with either factor alone — that is the precise sense in which $0\oplus1$ belongs to the pair and not to the single rotor. A full turn is $-1$ on the single carrier and $+1$ on both pair carriers.</p>
+<p><strong>The two marks coincide only on the rotor sphere.</strong></p>
+<p>$$
+\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}\ \text{is an automorphism}\iff N(\tilde Q)=1;\qquad \tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}\ \text{on the rotor sphere}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the rotor sphere the $\natural$-operator and the $*$-operator are the same operator; on the boost sector $\natural$ is still the inverse, since a boost has norm one, and the operator that fails there is the $*$-operator. That is why the corpus's spin is written with $\natural$ and not with $*$.</p>
+<p><strong>The three carriers and the four closure rules.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>action</th>
+<th>weights</th>
+<th>$s$</th>
+<th>$2s+1$</th>
+<th>full turn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed line $\mathbb{R}e_t$</td>
+<td>$1$</td>
+<td>trivial</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$2$</td>
+<td>$L_u$</td>
+<td>$\{\pm\tfrac12\}$</td>
+<td>$\tfrac12$</td>
+<td>$2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$3$</td>
+<td>$\operatorname{Ad}_u$</td>
+<td>$\{\pm1,0\}$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>closure</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>property the rule adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed line</td>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>being a complex subspace</td>
+</tr>
+<tr>
+<td>spinor plane</td>
+<td>spinor space $S_+\cong\mathbb{C}^{2}$</td>
+<td>$4$</td>
+<td>none: invariance under the whole group</td>
+</tr>
+<tr>
+<td>spinor space</td>
+<td>a bispinor space</td>
+<td>$8$</td>
+<td>containing both members of the Peirce pair</td>
+</tr>
+<tr>
+<td>vector part</td>
+<td>anti-Hermitian space $\mathbb{B}_\Phi$</td>
+<td>$4$</td>
+<td>being the whole eigenspace of the conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The non-trivial claim.</strong> There are <strong>three</strong> carriers and <strong>four</strong> closure rules: the four rules are not one rule applied four times. And the plane is not invariant under the whole group — the smallest invariant real subspace containing it is $S_+$, of dimension four — so the first closure is forced and is not a convenience.</p>
+<p><strong>Why the anti-Hermitian half, and not the Hermitian one.</strong> The involution identity $(XY)^{*}=Y^{*}X^{*}$ gives, on $\mathbb{B}_\Phi$,</p>
+<p>$$
+[\mathbb{B}_\Phi,\mathbb{B}_\Phi]\subseteq\mathbb{B}_\Phi,\qquad \mathbb{B}_\Phi=\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two halves carry the <em>same module</em> (multiplication by $i$ is an isomorphism commuting with every conjugation), so the module cannot decide between them. What decides is the Lie algebra: only $\mathbb{B}_\Phi$ closes under the bracket, because the extra minus sign of two anti-Hermitian factors cancels. Sector-invariance alone does not select the half; the bracket does.</p>
+<p><strong>Source.</strong> <code>articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.md</code>, <code>articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-carriers-the-representation-the-spin-and-the-closure.md</code></p>
+<h2 id="20-the-spin-zero-centre-subspace">20. The Spin-Zero Centre Subspace</h2>
+<p><strong>The carrier.</strong> $\mathbb{R}e_t$, of real dimension one; closure $\mathbb{C}e_t$, of real dimension two; trivial action, zero generator, spectrum $\{0\}$, full turn $+1$.</p>
+<p>$$
+N(\lambda e_t)=\lambda^{2},\qquad \operatorname{Re}N\ \text{has inertia } (1,1),\qquad \text{isotropic lines } \mathbb{R}(e_t\pm ie_t),\qquad N=\pm2i\ \text{there}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The complex norm is nondegenerate on the centre (only the origin is null) while its <strong>real part</strong> is indefinite of inertia $(1,1)$ with two isotropic lines. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one real form and not about the norm. This is the trap of the whole spin-zero group in one line.</p>
+<p><strong>The spectral answer, and it is the opposite extreme.</strong></p>
+<p>$$
+\operatorname{spec}(\lambda e_t)=\{\lambda\}\ \text{with multiplicity two},\qquad B^{2}=0\ \text{identically}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Every central element is spectrally degenerate and no nonzero one is norm-degenerate: the two predicates are as far apart as they can be, because their difference is $N-B^{2}=Q_t^{2}$, which at the centre is the whole norm. The double eigenvalue is a <em>multiplicity of the space</em> and not a defect of the element: the minimal polynomial has degree one.</p>
+<p><strong>The sectors.</strong></p>
+<p>$$
+\mathbb{C}^{\times}e_t\subset\Sigma_{10},\qquad 0\in\Sigma_{00},\qquad \mathbb{C}e_t\cap\Sigma_{11}=\varnothing,\qquad \mathbb{C}e_t\cap\Sigma_{01}=\varnothing .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The four sectors collapse to two, and the intersection with $\Sigma_{10}$ is exactly the <em>scalar stratum</em> of that sector: no central element is a Jordan element. The punctured centre is a subgroup of the invertibles lying inside a single sector, which no other carrier supplies.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-spin-zero-centre-subspace.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.md</code></p>
+<h2 id="21-the-spin-half-family-and-the-fierzkofink-identities">21. The Spin-Half Family and the Fierz–Kofink Identities</h2>
+<p><strong>The three levels.</strong></p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u_{\mathrm r})\ (2),\qquad
+S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}(\vec u_{\mathrm r})\ (4),\qquad
+\mathbb{B}=S_+\oplus S_-\ (8),
+$$</p>
+<p>nested, $\Sigma\subset S_+\subset\mathbb{B}$.</p>
+<p><strong>The non-trivial claim, and the sharpest statement of the whole block.</strong></p>
+<p>$$
+N\equiv0\ \text{on the plane and on each ideal};\qquad B^{2}=-\tfrac{\lambda^{2}}{4}\ \text{on the plane};\qquad \operatorname{spec}(\lambda\tilde\Pi_{\mathrm{id},+})=\{0,\lambda\}.
+$$</p>
+<p>The plane is <strong>null everywhere and spectrally regular away from the origin</strong>. So the two predicates are independent: neither implies the other, and a carrier can sit at one extreme for one and at the other extreme for the other. The spinor space is a <strong>maximal isotropic</strong> subspace of real dimension four, and inside it the degenerate locus is the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$ of <strong>square-zero</strong> elements.</p>
+<p><strong>The bispinor read.</strong></p>
+<p>$$
+N(X_++X_-)=2B(X_+,X_-).
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the bispinor space the norm becomes a <em>pairing between the two halves</em>: the first index of the sector asks whether the components pair at all, the second asks whether $B^{2}$ survives. That is why all four sectors occur there and only two on each closure. The witnesses are $e_t+2\vec e_x$, $e_t$, $\tilde\Pi_{\mathrm{id},+}$, $\vec u_2-i\vec u_3$.</p>
+<p><strong>The family, and the axis.</strong></p>
+<p>$$
+\text{one plane per axis},\quad \text{two spinor spaces per axis},\quad \text{one bispinor space per axis up to sign};\qquad \text{family indexed by } \mathbb{R}P^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> A bispinor space is <strong>not a subspace</strong>: as a set every member is $\mathbb{B}$. The family is a family of <em>decompositions</em> of one space, and nothing singles one out. Writing "the bispinor space" is the error; writing "a bispinor space" is correct.</p>
+<p><strong>The exchange.</strong></p>
+<p>$$
+\text{the two parts are exchanged on the right by a real unit vector } \perp \vec u_{\mathrm r},\ \text{left-linear, squaring to } -1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> No left multiplication crosses the two ideals; the exchange is a <em>right</em> multiplication. It preserves the norm and <strong>not</strong> $B^{2}$, so it moves elements between sectors. The exchanges form a single complex line spanned by the corner element of the axis, so one complex number times a fixed exchange is the whole coupling datum — no array and no Clebsch–Gordan table is needed.</p>
+<p><strong>The Fierz–Kofink layer, imported and checked.</strong></p>
+<p>$$
+J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0,\qquad
+J_{\imath} K_{\jmath}-J_{\jmath} K_{\imath}=\omega S_{{\imath}{\jmath}}+\sigma\tilde S_{{\imath}{\jmath}},
+$$</p>
+<p>$$
+Z=4\psi\psi^{\dagger}\,iR_{\vec e_x},\qquad Z^2=4\sigma Z,\qquad \psi=\frac{Z\zeta}{4\psi^{\dagger}iR_{\vec e_x}\zeta}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The sixteen bilinear covariants are not independent: the identities force exactly <strong>six</strong> classes — three regular ($\sigma$ or $\omega$ nonzero) and three singular (flag-dipole, flagpole, dipole). <em>The flag-dipole is the type that the usual list of Dirac, real and chiral spinors does not exhaust.</em> All six were verified non-empty by explicit representatives; $Z$ is rank one, so every aggregate identity collapses on the scalar in the middle, and the boomerang recovers the spinor. This layer is <strong>imported</strong> from Lounesto and Fauser and transcribed into the corpus's signs; it is not derived here, and the internal two-dimensional Fierz identity it completes is a different statement.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-spin-half-bispinor-spaces.md</code>, <code>articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.md</code>, <code>articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.md</code>, <code>articles_maths/the-spin-half-bispinors-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-half-bispinors-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.md</code></p>
+<h2 id="22-the-spin-one-anti-hermitian-subspace">22. The Spin-One Anti-Hermitian Subspace</h2>
+<p><strong>The carrier and its closure.</strong></p>
+<p>$$
+\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z,\qquad
+\overline{\mathfrak{k}}=\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k},\qquad
+\operatorname{spec}=\{+1,-1,0\},\qquad \tfrac12\vec u_{\mathrm r}\ \text{acts by } \vec u_{\mathrm r}\times .
+$$</p>
+<p><strong>The norm, and the three possible answers side by side.</strong></p>
+<p>$$
+N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}\quad\text{on the closure, inertia }(3,1);\qquad
+N(\vec v)=\lvert\vec v\rvert^{2}\quad\text{on the carrier, positive definite}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The closure is indefinite, with a null cone of real dimension three and two nappes, while the carrier is positive definite and meets the cone only at the origin. The indefiniteness comes <em>entirely</em> from the extra negative line $\mathbb{R}(ie_t)$: the splitting is orthogonal for the polar form, so the norm of a sum is the sum of the norms of the parts. This is the third of the three possible answers, the middle one.</p>
+<p><strong>The spectrum, and why it is imaginary.</strong></p>
+<p>$$
+\operatorname{spec}(i\lambda+\vec v)=i(\lambda\pm\lvert\vec v\rvert),\qquad
+\operatorname{spec}(\vec v)=\pm i\lvert\vec v\rvert,\qquad B^{2}=\lvert\vec v\rvert^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Both eigenvalues are purely imaginary and symmetric about $i\lambda$; the carrier's pair is symmetric about the origin. The anti-Hermitian condition forces this, so the symmetry is not a coordinate accident. The degenerate locus of the closure is exactly the line $\mathbb{R}(ie_t)$, and the degenerate and null loci are <strong>disjoint except at the origin</strong> — a sharper statement than the carrier comparison.</p>
+<p><strong>The sectors.</strong></p>
+<p>$$
+\vec v\neq0:\ \Sigma_{11};\qquad \mathbb{R}(ie_t)\setminus\{0\}:\ \Sigma_{10};\qquad \text{null cone}\setminus\{0\}:\ \Sigma_{01};\qquad 0:\ \Sigma_{00}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the carrier the two predicates are <strong>one function</strong>, since $N-B^{2}=Q_t^{2}$ and $Q_t=0$ there, so the carrier meets only $\Sigma_{11}$ and $\Sigma_{00}$. On the closure all four occur, and it is the only proper closure in the block that meets all four. The reason is geometric: two real quadratic forms on four coordinates, each cutting a cone, and the four sectors are the four combinations of side and side.</p>
+<p><strong>The one exclusion.</strong></p>
+<p>$$
+(i\lambda+\vec v)^{2}=-(\lambda^{2}+\lvert\vec v\rvert^{2})e_t+2i\lambda\vec v=0\iff \lambda=\vec v=0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The anti-Hermitian closure contains <strong>no nonzero square-zero element</strong>, so the degenerate plane that appears inside a spinor space has no analogue here, and the intersection with $\Sigma_{10}$ is central elements alone, that is the scalar stratum.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-spin-one-anti-hermitian-subspace.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.md</code></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The block in nine formulas.</strong></p>
+<p>$$
+L_{\tilde Q}(X)=\tilde QX,\quad R_{\tilde Q}(X)=X\tilde Q,\quad \mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q},
+$$</p>
+<p>$$
+\dim(L+R)=4+4-1=7,\quad \dim\text{cone}=8-1=7,\quad \dim\operatorname{End}_{\mathbb{C}}=16,\quad \mathfrak{m}=\mathfrak{sl}_2\otimes\mathfrak{sl}_2,\ \dim 9,
+$$</p>
+<p>$$
+L_{\tilde Q}=\natural R_{\natural(\tilde Q)}\natural,\qquad \mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C}),\qquad (a[\,]b)\circ(c[\,]d)=(ac)[\,](db),
+$$</p>
+<p>$$
+\operatorname{spec}\mathrm{Sd}_{\tilde Q}=\{\lambda_i\bar\lambda_j\},\quad \rho_1\rho_2=\lvert N(\tilde Q)\rvert,\quad \rho_1^{2}+\rho_2^{2}=2\langle\tilde Q,\tilde Q\rangle_{*},\quad \operatorname{rank}\mathrm{Sd}\in\{0,1,2,4\},
+$$</p>
+<p>$$
+\mathcal{E}_{\mathbb{C}}\cong M_4(\mathbb{C})\ (16),\quad \mathcal{E}_{\mathbb{R}}\cong M_8(\mathbb{R})\ (64),\quad M_4(\mathbb{R})\ (10,6),\quad M_2(\mathbb{H})\ (6,10),
+$$</p>
+<p>$$
+J^2=\sigma^2+\omega^2,\quad J\cdot K=0,\quad \mathbf{J}^2=-\tfrac34\mathrm{I}_4,\quad \tfrac12\otimes\tfrac12=0\oplus1,\quad 2s+1=\dim_{\mathbb{R}},
+$$</p>
+<p>$$
+N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2},\qquad N(X_++X_-)=2B(X_+,X_-),\qquad N(\lambda e_t)=\lambda^{2}.
+$$</p>
+<p><strong>Five results to keep.</strong> The one-sided families span seven of sixteen dimensions and their linear sum is not a subalgebra. $L$ is a homomorphism and $R$ an anti-homomorphism, and one involution makes them one family at the price of a carried parameter. The two-sided family is a seven-dimensional cone, closed under composition and not under addition, and every matrix is a sum of at most four of its members. The two-sided operator doubles every quantity of the element and cancels the central phase. The two predicates are independent: $N$ decides the rank, $B^{2}$ decides the Jordan type.</p>
+<p><strong>Seven refusals.</strong> No spectral theorem on the indefinite form: the SVD exists because the Hermitian form is definite, and on the Krein form singular values can vanish without the operator doing so. No pin group: reflections lie outside the two-sided family and no nonzero member is anti-self-adjoint. No decision between rotation and reflection by the product: the insertion is a convention, the reflection theorem is not. No compact operator form: $\mathfrak{u}(4)$ is the Lie algebra of no real form of the associative algebra. No injective passage from the element level to the operator level: both element forms give $M_4(\mathbb{R})$. No distinguished bispinor space: the family is a family of decompositions indexed by $\mathbb{R}P^{2}$. No decision between the physical left and right actions: both are present, of the same type, and the algebraic half alone is closed.</p>
+<p><strong>One warning about the ledger.</strong> The operator calculus is <em>established</em>; the Fierz–Kofink identities and the six spinor classes are <em>imported</em> and transcribed; the four-dimensional count of the rank-one product family is <em>recorded</em> and was not rechecked here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left and right regular multiplication</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
+<td>sandwich $\tilde Q\tilde X\tilde Q^{*}$, the Hermitian pair</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde Q}$</td>
+<td>the same operator, named as a pair</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\mathrm e}$</td>
+<td>enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_{\mathbb{C}}$, $\mathcal{E}_{\mathbb{R}}$</td>
+<td>complex and real endomorphism algebras, $M_4(\mathbb{C})$, $M_8(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}$</td>
+<td>the nine-dimensional complement $\mathfrak{sl}_2\otimes\mathfrak{sl}_2$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell(M)$</td>
+<td>coefficient matrix and length (coefficient rank)</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>exchange of the two sides, $\Xi\tau\Xi^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathsf{K}$</td>
+<td>the transposition involution $F\mapsto\natural F\natural$</td>
+</tr>
+<tr>
+<td>$\approx,\natural,*,{\natural*}$</td>
+<td>plain bilinear, quaternionic, Hermitian, Krein adjoint</td>
+</tr>
+<tr>
+<td>$N=\langle\cdot\rangle_{\natural}$</td>
+<td>quaternionic norm $Q_t^{2}+B^{2}$</td>
+</tr>
+<tr>
+<td>$B^{2}$</td>
+<td>vector form $Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
+<td>$\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$</td>
+<td>sectors of $(N\neq0,B^{2}\neq0)$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm{id},\pm}$</td>
+<td>Peirce idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>Hermitian and anti-Hermitian halves</td>
+</tr>
+<tr>
+<td>$\tilde Q_H,\tilde Q_0$</td>
+<td>polar pair, Hermitian modulus and partial isometry</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>Reading order.</strong> §1 to §7 for the spine; §12 to §14 for the classification, which is the densest and the most error-prone; §15 to §17 for the sectors, where the two predicates are separated; §18 to §22 for the spins, ending with the carrier tables of §19.</p>
+<p><strong>Traps to read before writing.</strong> The four adjoints are not four theories but one table with two exchange columns (§8). The transpose implements the quaternion conjugation in the coefficient frame and the exchange in the Peirce frame (§4). The Kronecker product of two $4\times4$ matrices is not the operator (§11). The complexification is two different algebras and is not written in the singular (§14). A real form of the operator algebra contains the <em>real points</em> of the base and not the base (§13). A bispinor space is a decomposition, not a subspace (§21). The element exponential leaves the null cone while the operator exponential cannot (§17).</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
